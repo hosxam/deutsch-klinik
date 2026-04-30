@@ -1,0 +1,23 @@
+{
+  "_comment": "Curriculum map per level. Defines which grammar topics, vocab units, etc belong to each level.",
+  "A1": {
+    "grammarTopics": ["Articles", "Verb: Sein", "Verb: Haben", "Present Tense Regular", "Present Tense Irregular", "Negation", "Word Order", "Questions", "Accusative Basics", "Modal Verbs"],
+    "vocabUnits": ["Greetings", "Family", "Body", "Food", "Work", "Numbers", "Colors"]
+  },
+  "A2": {
+    "grammarTopics": ["Perfect Tense", "Dative", "Two-Way Prepositions", "Comparative/Superlative", "Separable Verbs", "Reflexive Verbs", "Subordinate Clauses", "Modal Verbs Past", "Genitive Basics", "Word Order TMP"],
+    "vocabUnits": ["Travel", "Health", "Housing", "Appointments", "Medicine", "Body Advanced", "Emotions"]
+  },
+  "B1": {
+    "grammarTopics": ["Relative Clauses", "Infinitive with zu", "Passive Basics", "Konjunktiv II", "Indirect Questions", "Connectors", "All Cases Mixed", "Adjective Endings", "Past Tense Written", "Comparisons"],
+    "vocabUnits": ["Workplace", "Medical", "Communication", "Daily Life", "Medical Conditions"]
+  },
+  "B2": {
+    "grammarTopics": ["Advanced Passive", "Nominalization", "Participle Constructions", "Connectors Advanced", "N-Deklination", "Future II", "Complex Connectors", "Modal Verb Meanings", "Double Connectors", "Verb Fixed Prepositions"],
+    "vocabUnits": ["Advanced Medical", "Society", "Research", "Discussion", "Formal", "Abstract"]
+  },
+  "C1": {
+    "grammarTopics": ["Nominal Style", "Complex Sentence Transformation", "Advanced Relative", "Irreale Wünsche", "Modal Participles", "Passive Alternatives", "Indirect Speech", "Complex Prepositions", "Wortbildung", "Text Cohesion"],
+    "vocabUnits": ["Academic", "Idioms", "Formal Writing", "Medical C1", "Abstract", "Argumentation"]
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "_comment": "Grammar exercises per level. Add new questions following the same format. Each question has id, level, unit, type (fill-blank|mcq|drag-word|sentence-correction|case-select|article-select|conjugation), prompt, options (for mcq), answer, and explanation.",
+  "A1": [
+    {
+      "id": "A1_gr_1",
+      "unit": "Articles",
+      "type": "article-select",
+      "prompt": "___ Hund ist braun.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": "Der",
+      "explanation": "Hund is masculine (der Hund), nominative case."
+    },
+    {
+      "id": "A1_gr_2",
+      "unit": "Articles",
+      "type": "article-select",
+      "prompt": "___ Katze schläft.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": "Die",
+      "explanation": "Katze is feminine (die Katze), nominative case."
+    },
+    {
+      "id": "A1_gr_3",
+      "unit": "Articles",
+      "type": "article-select",
+      "prompt": "___ Kind spielt.",
+      "options": ["Der", "Die", "Das", "Dem"],
+      "answer": "Das",
+      "explanation": "Kind is neuter (das Kind), nominative case."
+    },
+    {
+      "id": "A1_gr_4",
+      "unit": "Verb: Sein",
+      "type": "fill-blank",
+      "prompt": "Ich ___ ein Arzt.",
+      "answer": "bin",
+      "explanation": "Sein conjugation: ich bin."
+    },
+    {
+      "id": "A1_gr_5",
+      "unit": "Verb: Sein",
+      "type": "fill-blank",
+      "prompt": "Du ___ sehr freundlich.",
+      "answer": "bist",
+      "explanation": "Sein conjugation: du bist."
+    },
+    {
+      "id": "A1_gr_6",
+      "unit": "Verb: Sein",
+      "type": "fill-blank",
+      "prompt": "Er ___ in der Klinik.",
+      "answer": "ist",
+      "explanation": "Sein conjugation: er/sie/es ist."
+    },
+    {
+      "id": "A1_gr_7",
+      "unit": "Verb: Haben",
+      "type": "fill-blank",
+      "prompt": "Wir ___ einen Termin.",
+      "answer": "haben",
+      "explanation": "Haben conjugation: wir haben."
+    },
+    {
+      "id": "A1_gr_8",
+      "unit": "Verb: Haben",
+      "type": "fill-blank",
+      "prompt": "___ du einen Bruder?",
+      "answer": "Hast",
+      "explanation": "Haben conjugation: du hast."
+    },
+    {
+      "id": "A1_gr_9",
+      "unit": "Negation",
+      "type": "mcq",
+      "prompt": "Ich habe ___ Auto.",
+      "options": ["nicht", "kein", "keine", "nein"],
+      "answer": "kein",
+      "explanation": "Kein negates a noun without an article. Auto is neuter -> kein."
+    },
+    {
+      "id": "A1_gr_10",
+      "unit": "Negation",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ richtig.",
+      "answer": "nicht",
+      "explanation": "Nicht negates adjectives and verbs."
+    },
+    {
+      "id": "A1_gr_11",
+      "unit": "Word Order",
+      "type": "sentence-correction",
+      "prompt": "Correct the word order: 'Ich bin heute im Krankenhaus.'",
+      "answer": "Ich bin heute im Krankenhaus.",
+      "explanation": "This sentence is actually correct. Subject, verb, then time, then place."
+    },
+    {
+      "id": "A1_gr_12",
+      "unit": "Questions",
+      "type": "fill-blank",
+      "prompt": "___ kommst du? (where do you come from)",
+      "answer": "Woher",
+      "explanation": "Woher asks for origin."
+    },
+    {
+      "id": "A1_gr_13",
+      "unit": "Present Tense Regular",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (arbeiten) in einem Krankenhaus.",
+      "answer": "arbeite",
+      "explanation": "arbeiten -> ich arbeite (stem + e)."
+    },
+    {
+      "id": "A1_gr_14",
+      "unit": "Present Tense Regular",
+      "type": "fill-blank",
+      "prompt": "Der Patient ___ (warten) auf den Arzt.",
+      "answer": "wartet",
+      "explanation": "warten -> er/sie wartet (stem + t)."
+    },
+    {
+      "id": "A1_gr_15",
+      "unit": "Present Tense Irregular",
+      "type": "fill-blank",
+      "prompt": "Er ___ (sprechen) Deutsch.",
+      "answer": "spricht",
+      "explanation": "sprechen is irregular: er spricht (e -> i)."
+    },
+    {
+      "id": "A1_gr_16",
+      "unit": "Accusative Basics",
+      "type": "article-select",
+      "prompt": "Ich sehe ___ Mann.",
+      "options": ["der", "die", "das", "den"],
+      "answer": "den",
+      "explanation": "After sehen (accusative), der -> den."
+    },
+    {
+      "id": "A1_gr_17",
+      "unit": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (können) Deutsch lernen.",
+      "answer": "kann",
+      "explanation": "können -> ich kann (modal verb, stem changes)."
+    },
+    {
+      "id": "A1_gr_18",
+      "unit": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "___ du morgen kommen? (können)",
+      "options": ["Kannst", "Kannt", "Könnst", "Kann"],
+      "answer": "Kannst"
+    },
+    {
+      "id": "A1_gr_19",
+      "unit": "Numbers",
+      "type": "fill-blank",
+      "prompt": "Write in German: 22",
+      "answer": "zweiundzwanzig",
+      "explanation": "22 = zwei + und + zwanzig."
+    },
+    {
+      "id": "A1_gr_20",
+      "unit": "Numbers",
+      "type": "fill-blank",
+      "prompt": "Write in German: 47",
+      "answer": "siebenundvierzig",
+      "explanation": "47 = sieben + und + vierzig."
+    }
+  ],
+  "A2": [
+    {
+      "id": "A2_gr_1",
+      "unit": "Perfect Tense",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (haben) heute gearbeitet.",
+      "answer": "habe",
+      "explanation": "Perfekt with haben: ich habe + Partizip II."
+    },
+    {
+      "id": "A2_gr_2",
+      "unit": "Perfect Tense",
+      "type": "fill-blank",
+      "prompt": "Er ___ (sein) nach Hause gegangen.",
+      "answer": "ist",
+      "explanation": "Perfekt with sein for movement: er ist gegangen."
+    },
+    {
+      "id": "A2_gr_3",
+      "unit": "Dative",
+      "type": "article-select",
+      "prompt": "Ich helfe ___ Mann.",
+      "options": ["der", "die", "das", "dem"],
+      "answer": "dem",
+      "explanation": "helfen takes dative: der -> dem."
+    },
+    {
+      "id": "A2_gr_4",
+      "unit": "Dative",
+      "type": "article-select",
+      "prompt": "Wir danken ___ Ärztin.",
+      "options": ["der", "die", "das", "dem"],
+      "answer": "der",
+      "explanation": "danken takes dative: die -> der."
+    },
+    {
+      "id": "A2_gr_5",
+      "unit": "Two-Way Prepositions",
+      "type": "fill-blank",
+      "prompt": "Das Buch liegt auf ___ Tisch. (dative = location)",
+      "options": ["der", "die", "das", "dem"],
+      "answer": "dem"
+    },
+    {
+      "id": "A2_gr_6",
+      "unit": "Two-Way Prepositions",
+      "type": "fill-blank",
+      "prompt": "Ich lege das Buch auf ___ Tisch. (accusative = direction)",
+      "options": ["der", "die", "das", "den"],
+      "answer": "den"
+    },
+    {
+      "id": "A2_gr_7",
+      "unit": "Comparative",
+      "type": "fill-blank",
+      "prompt": "Deutsch ist ___ (schwer) als Englisch.",
+      "answer": "schwerer",
+      "explanation": "Comparative: adjective + er."
+    },
+    {
+      "id": "A2_gr_8",
+      "unit": "Superlative",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (teuer) Hotel in der Stadt.",
+      "answer": "das teuerste",
+      "explanation": "Superlative: am + adjective + sten, or der/die/das + adjective + ste."
+    },
+    {
+      "id": "A2_gr_9",
+      "unit": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (aufstehen) um sieben Uhr.",
+      "answer": "stehe auf",
+      "explanation": "Aufstehen: prefix goes to end in main clause."
+    },
+    {
+      "id": "A2_gr_10",
+      "unit": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Er ___ (einkaufen) heute.",
+      "answer": "kauft ein",
+      "explanation": "einkaufen -> er kauft ein."
+    },
+    {
+      "id": "A2_gr_11",
+      "unit": "Subordinate Clauses weil",
+      "type": "fill-blank",
+      "prompt": "Ich bleibe zu Hause, weil ich krank ___.",
+      "options": ["bin", "ist", "bist", "sein"],
+      "answer": "bin"
+    },
+    {
+      "id": "A2_gr_12",
+      "unit": "Subordinate Clauses dass",
+      "type": "sentence-correction",
+      "prompt": "Correct: 'Ich denke dass er kommt morgen.'",
+      "answer": "Ich denke, dass er morgen kommt.",
+      "explanation": "In subordinate clauses, the conjugated verb goes to the end."
+    },
+    {
+      "id": "A2_gr_13",
+      "unit": "Reflexive Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich wasche ___ (mir/mich) die Hände.",
+      "options": ["mir", "mich", "sich", "mein"],
+      "answer": "mir"
+    },
+    {
+      "id": "A2_gr_14",
+      "unit": "Reflexive Verbs",
+      "type": "fill-blank",
+      "prompt": "Er setzt ___.",
+      "options": ["ihn", "ihm", "sich", "sein"],
+      "answer": "sich"
+    },
+    {
+      "id": "A2_gr_15",
+      "unit": "Modal Verbs Past",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (müssen) gestern arbeiten.",
+      "options": ["musste", "muss", "gemusst", "müsste"],
+      "answer": "musste"
+    },
+    {
+      "id": "A2_gr_16",
+      "unit": "Modal Verbs Past",
+      "type": "fill-blank",
+      "prompt": "Sie ___ (können) nicht kommen.",
+      "options": ["konnte", "konntest", "kann", "gekonnt"],
+      "answer": "konnte"
+    },
+    {
+      "id": "A2_gr_17",
+      "unit": "Interrogatives",
+      "type": "fill-blank",
+      "prompt": "___ Uhr ist es?",
+      "options": ["Wann", "Wie viel", "Wie", "Wieviel"],
+      "answer": "Wie viel"
+    },
+    {
+      "id": "A2_gr_18",
+      "unit": "Prepositions",
+      "type": "fill-blank",
+      "prompt": "Ich warte ___ den Bus.",
+      "options": ["für", "auf", "an", "bei"],
+      "answer": "auf"
+    },
+    {
+      "id": "A2_gr_19",
+      "unit": "Genitive Basics",
+      "type": "article-select",
+      "prompt": "Das ist das Auto ___ Chefs.",
+      "options": ["der", "die", "das", "des"],
+      "answer": "des"
+    },
+    {
+      "id": "A2_gr_20",
+      "unit": "Word Order Time Manner Place",
+      "type": "sentence-correction",
+      "prompt": "Correct: 'Ich fahre mit dem Auto morgen nach Berlin.'",
+      "answer": "Ich fahre morgen mit dem Auto nach Berlin.",
+      "explanation": "Time (morgen) before manner (mit dem Auto) before place (nach Berlin)."
+    }
+  ],
+  "B1": [
+    {
+      "id": "B1_gr_1",
+      "unit": "Relative Clauses",
+      "type": "fill-blank",
+      "prompt": "Der Mann, ___ (who) hier arbeitet, ist Arzt.",
+      "options": ["der", "den", "dem", "dessen"],
+      "answer": "der"
+    },
+    {
+      "id": "B1_gr_2",
+      "unit": "Relative Clauses",
+      "type": "fill-blank",
+      "prompt": "Die Frau, ___ (whom) ich kenne, kommt aus Berlin.",
+      "options": ["der", "die", "den", "das"],
+      "answer": "die"
+    },
+    {
+      "id": "B1_gr_3",
+      "unit": "Infinitive with zu",
+      "type": "fill-blank",
+      "prompt": "Ich versuche, Deutsch ___ (lernen).",
+      "answer": "zu lernen",
+      "explanation": "Infinitive with zu: zu + infinitive at end."
+    },
+    {
+      "id": "B1_gr_4",
+      "unit": "Passive Basics",
+      "type": "fill-blank",
+      "prompt": "Der Patient ___ (behandeln - passive present).",
+      "answer": "wird behandelt",
+      "explanation": "Passiv Präsens: werden + Partizip II."
+    },
+    {
+      "id": "B1_gr_5",
+      "unit": "Passive Basics",
+      "type": "fill-blank",
+      "prompt": "Die Operation ___ (durchführen - passive present).",
+      "answer": "wird durchgeführt",
+      "explanation": "Separable verb: wird + Partizip II (durchgeführt)."
+    },
+    {
+      "id": "B1_gr_6",
+      "unit": "Konjunktiv II Basics",
+      "type": "fill-blank",
+      "prompt": "Wenn ich mehr Zeit ___ (haben), würde ich reisen.",
+      "options": ["habe", "hätte", "haben würde", "hatte"],
+      "answer": "hätte"
+    },
+    {
+      "id": "B1_gr_7",
+      "unit": "Konjunktiv II höflich",
+      "type": "fill-blank",
+      "prompt": "___ (können) Sie mir bitte helfen?",
+      "answer": "Könnten",
+      "explanation": "Könnten is the polite Konjunktiv II form."
+    },
+    {
+      "id": "B1_gr_8",
+      "unit": "Indirect Questions",
+      "type": "sentence-correction",
+      "prompt": "Correct: 'Er fragt wo ist der Bahnhof.'",
+      "answer": "Er fragt, wo der Bahnhof ist.",
+      "explanation": "Indirect questions have verb at end."
+    },
+    {
+      "id": "B1_gr_9",
+      "unit": "Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (however) er kommt trotzdem.",
+      "options": ["Obwohl", "Trotzdem", "Weil", "Denn"],
+      "answer": "Trotzdem"
+    },
+    {
+      "id": "B1_gr_10",
+      "unit": "Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (although) es regnet, gehe ich spazieren.",
+      "options": ["Obwohl", "Trotzdem", "Weil", "Denn"],
+      "answer": "Obwohl"
+    },
+    {
+      "id": "B1_gr_11",
+      "unit": "All Cases Mixed",
+      "type": "article-select",
+      "prompt": "Ich gebe ___ Patient ein Rezept. (dative)",
+      "options": ["der", "die", "das", "dem"],
+      "answer": "dem"
+    },
+    {
+      "id": "B1_gr_12",
+      "unit": "All Cases Mixed",
+      "type": "article-select",
+      "prompt": "Das Zimmer ___ Patienten ist sauber. (genitive)",
+      "options": ["der", "die", "das", "des"],
+      "answer": "des"
+    },
+    {
+      "id": "B1_gr_13",
+      "unit": "Reported Speech",
+      "type": "fill-blank",
+      "prompt": "Er sagt, er ___ (sein) müde.",
+      "options": ["ist", "sei", "war", "wäre"],
+      "answer": "sei"
+    },
+    {
+      "id": "B1_gr_14",
+      "unit": "um...zu / damit",
+      "type": "fill-blank",
+      "prompt": "Ich lerne Deutsch, ___ (um) in Deutschland zu arbeiten.",
+      "answer": "um",
+      "explanation": "um...zu + infinitive expresses purpose."
+    },
+    {
+      "id": "B1_gr_15",
+      "unit": "Adjective Endings Nominative",
+      "type": "fill-blank",
+      "prompt": "Der ___ (groß) Mann.",
+      "answer": "große",
+      "explanation": "After der-words: adjective ends in -e in nominative."
+    },
+    {
+      "id": "B1_gr_16",
+      "unit": "Adjective Endings Accusative",
+      "type": "fill-blank",
+      "prompt": "Ich sehe den ___ (alt) Mann.",
+      "answer": "alten",
+      "explanation": "After den (accusative masculine): adjective ends in -en."
+    },
+    {
+      "id": "B1_gr_17",
+      "unit": "Past Tense Written",
+      "type": "fill-blank",
+      "prompt": "Der Arzt ___ (untersuchen) den Patienten.",
+      "options": ["untersuchte", "hat untersucht", "untersucht", "untersuchst"],
+      "answer": "untersuchte"
+    },
+    {
+      "id": "B1_gr_18",
+      "unit": "Past Tense Written",
+      "type": "fill-blank",
+      "prompt": "Es ___ (sein) einmal ein König.",
+      "answer": "war"
+    },
+    {
+      "id": "B1_gr_19",
+      "unit": "Pronouns",
+      "type": "fill-blank",
+      "prompt": "Kannst du ___ (to me) das Buch geben?",
+      "options": ["mich", "mir", "ich", "mein"],
+      "answer": "mir"
+    },
+    {
+      "id": "B1_gr_20",
+      "unit": "Comparisons als wie",
+      "type": "mcq",
+      "prompt": "Er ist größer ___ sein Bruder.",
+      "options": ["als", "wie", "dann", "denn"],
+      "answer": "als",
+      "explanation": "Als is used for inequality comparisons (bigger than)."
+    }
+  ],
+  "B2": [
+    {
+      "id": "B2_gr_1",
+      "unit": "Advanced Passive",
+      "type": "fill-blank",
+      "prompt": "Hier ___ viel Deutsch ___ (sprechen - passive).",
+      "answer": "wird gesprochen"
+    },
+    {
+      "id": "B2_gr_2",
+      "unit": "Passive with Modal",
+      "type": "fill-blank",
+      "prompt": "Die Tür ___ geöffnet werden (müssen).",
+      "answer": "muss",
+      "explanation": "Modal + passive: modal + Partizip II + werden."
+    },
+    {
+      "id": "B2_gr_3",
+      "unit": "Nominalization",
+      "type": "fill-blank",
+      "prompt": "anstatt ___ (to analyze) -> anstatt der Analyse",
+      "answer": "zu analysieren",
+      "explanation": "Verb -> nominalization: das + verb stem + ung."
+    },
+    {
+      "id": "B2_gr_4",
+      "unit": "Participle Constructions",
+      "type": "sentence-correction",
+      "prompt": "Correct to participle: 'Der Mann, der weint, ist traurig.' -> 'Der ___ Mann ist traurig.'",
+      "answer": "weinende",
+      "explanation": "Active participle: Partizip I (weinend) + adjective ending."
+    },
+    {
+      "id": "B2_gr_5",
+      "unit": "Participle Constructions",
+      "type": "sentence-correction",
+      "prompt": "Correct to participle: 'Das Buch, das gelesen wurde.' -> 'Das ___ Buch.'",
+      "answer": "gelesene",
+      "explanation": "Passive participle: Partizip II + adjective ending."
+    },
+    {
+      "id": "B2_gr_6",
+      "unit": "Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (during) des Gesprächs hat er nichts gesagt.",
+      "options": ["Während", "Weil", "Obwohl", "Trotz"],
+      "answer": "Während"
+    },
+    {
+      "id": "B2_gr_7",
+      "unit": "Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (despite) des Regens gingen wir spazieren.",
+      "options": ["Trotz", "Obwohl", "Wegen", "Bei"],
+      "answer": "Trotz"
+    },
+    {
+      "id": "B2_gr_8",
+      "unit": "N-Deklination",
+      "type": "fill-blank",
+      "prompt": "Ich kenne den ___ (Patient).",
+      "answer": "Patienten",
+      "explanation": "Masculine N-nouns add -n in accusative."
+    },
+    {
+      "id": "B2_gr_9",
+      "unit": "N-Deklination",
+      "type": "fill-blank",
+      "prompt": "Das ist das Auto des ___ (Kollege).",
+      "answer": "Kollegen"
+    },
+    {
+      "id": "B2_gr_10",
+      "unit": "Extended Infinitive",
+      "type": "sentence-correction",
+      "prompt": "Correct: 'Er hat versucht um sein Ziel zu erreichen es zu machen.'",
+      "answer": "Er hat versucht, sein Ziel zu erreichen, indem er es machte.",
+      "explanation": "Extended infinitives need commas and proper structure."
+    },
+    {
+      "id": "B2_gr_11",
+      "unit": "Future II",
+      "type": "fill-blank",
+      "prompt": "Bis nächste Woche ___ ich die Arbeit ___ (Future II: machen).",
+      "answer": "werde gemacht haben",
+      "explanation": "Future II: werden + Partizip II + haben/sein."
+    },
+    {
+      "id": "B2_gr_12",
+      "unit": "Complex Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (in view of) der Lage müssen wir handeln.",
+      "options": ["Angesichts", "Trotz", "Wegen", "Während"],
+      "answer": "Angesichts"
+    },
+    {
+      "id": "B2_gr_13",
+      "unit": "Subjunctive I Report",
+      "type": "fill-blank",
+      "prompt": "Die Zeitung schreibt, die Regierung ___ (haben) beschlossen.",
+      "answer": "habe",
+      "explanation": "Indirect speech uses Konjunktiv I."
+    },
+    {
+      "id": "B2_gr_14",
+      "unit": "Modal Verb Meanings",
+      "type": "mcq",
+      "prompt": "Sie ___ Ärztin sein (I assume she is).",
+      "options": ["soll", "will", "muss", "darf"],
+      "answer": "will",
+      "explanation": "Will + infinitive can mean 'claims to be' or 'presumably is'."
+    },
+    {
+      "id": "B2_gr_15",
+      "unit": "Double Connectors",
+      "type": "fill-blank",
+      "prompt": "___ mehr er übt, ___ besser wird er.",
+      "options": ["Je...desto", "Wenn...dann", "Nicht nur...sondern auch", "Weder...noch"],
+      "answer": "Je...desto"
+    },
+    {
+      "id": "B2_gr_16",
+      "unit": "Double Connectors",
+      "type": "fill-blank",
+      "prompt": "Er kann ___ lesen ___ schreiben.",
+      "options": ["weder...noch", "entweder...oder", "je...desto", "nicht nur...sondern auch"],
+      "answer": "weder...noch"
+    },
+    {
+      "id": "B2_gr_17",
+      "unit": "Genitive Prepositions",
+      "type": "fill-blank",
+      "prompt": "___ (outside) der Stadt gibt es einen Wald.",
+      "options": ["Außerhalb", "Innerhalb", "Während", "Trotz"],
+      "answer": "Außerhalb"
+    },
+    {
+      "id": "B2_gr_18",
+      "unit": "Verb Fixed Prepositions",
+      "type": "fill-blank",
+      "prompt": "Ich warte ___ (for) den Bus.",
+      "options": ["auf", "an", "bei", "über"],
+      "answer": "auf"
+    },
+    {
+      "id": "B2_gr_19",
+      "unit": "Verb Fixed Prepositions",
+      "type": "fill-blank",
+      "prompt": "Er denkt ___ (about) seine Zukunft.",
+      "options": ["an", "über", "auf", "von"],
+      "answer": "an"
+    },
+    {
+      "id": "B2_gr_20",
+      "unit": "Complex Passive",
+      "type": "fill-blank",
+      "prompt": "Hier ___ (sollen + bauen - passive).",
+      "answer": "soll gebaut werden",
+      "explanation": "sollen + passive in present: sollen + Partizip II + werden."
+    }
+  ],
+  "C1": [
+    {
+      "id": "C1_gr_1",
+      "unit": "Nominal Style",
+      "type": "sentence-correction",
+      "prompt": "Replace verb with noun: 'Weil er ankam, begann die Besprechung.'",
+      "answer": "Aufgrund seiner Ankunft begann die Besprechung.",
+      "explanation": "Nominal style turns clauses into preposition + noun phrases."
+    },
+    {
+      "id": "C1_gr_2",
+      "unit": "Nominal Style",
+      "type": "fill-blank",
+      "prompt": "___ (Because of the delay) des Fluges kamen wir zu spät.",
+      "options": ["Aufgrund der Verspätung", "Weil die Verspätung", "Dank der Verspätung", "Trotz der Verspätung"],
+      "answer": "Aufgrund der Verspätung"
+    },
+    {
+      "id": "C1_gr_3",
+      "unit": "Complex Sentence Transformation",
+      "type": "sentence-correction",
+      "prompt": "Transform: 'Wenn man das berücksichtigt, ist die Lösung klar.' -> '___ dessen ist die Lösung klar.'",
+      "answer": "Unter Berücksichtigung",
+      "explanation": "Prepositional nominal phrase replacing conditional clause."
+    },
+    {
+      "id": "C1_gr_4",
+      "unit": "Advanced Relative with Preposition",
+      "type": "fill-blank",
+      "prompt": "Das ist etwas, ___ (about which) wir sprechen müssen.",
+      "options": ["worüber", "über das", "darüber", "wovon"],
+      "answer": "worüber"
+    },
+    {
+      "id": "C1_gr_5",
+      "unit": "Advanced Relative with Preposition",
+      "type": "fill-blank",
+      "prompt": "Der Mann, ___ (with whom) ich spreche, ist Chefarzt.",
+      "options": ["mit dem", "womit", "damit", "wem"],
+      "answer": "mit dem"
+    },
+    {
+      "id": "C1_gr_6",
+      "unit": "Irreale Wünsche",
+      "type": "fill-blank",
+      "prompt": "Wenn ich doch mehr Zeit ___ (have - Konjunktiv II).",
+      "answer": "hätte",
+      "explanation": "Irrealis wish: wenn + Konjunktiv II."
+    },
+    {
+      "id": "C1_gr_7",
+      "unit": "Modal Participles",
+      "type": "fill-blank",
+      "prompt": "Der ___ (zu behandeln - modal passive) Patient wartet.",
+      "answer": "zu behandelnde",
+      "explanation": "zu + infinitive as modal adjective: 'the patient who needs to be treated'."
+    },
+    {
+      "id": "C1_gr_8",
+      "unit": "Modal Participles",
+      "type": "fill-blank",
+      "prompt": "Ein ___ (leicht zu lösen) Problem.",
+      "answer": "leicht zu lösendes",
+      "explanation": "zu + infinitive extended adjective."
+    },
+    {
+      "id": "C1_gr_9",
+      "unit": "Connectors Academic",
+      "type": "fill-blank",
+      "prompt": "___ (namely) die Studie zeigt deutliche Ergebnisse.",
+      "options": ["Nämlich", "Also", "Denn", "Folglich"],
+      "answer": "Nämlich"
+    },
+    {
+      "id": "C1_gr_10",
+      "unit": "Connectors Academic",
+      "type": "fill-blank",
+      "prompt": "___ (insofar as) die Ergebnisse zeigen, ist die These bestätigt.",
+      "options": ["Insofern", "Soweit", "Trotzdem", "Folglich"],
+      "answer": "Insofern"
+    },
+    {
+      "id": "C1_gr_11",
+      "unit": "Passive Alternatives",
+      "type": "sentence-correction",
+      "prompt": "Replace passive with active alternative: 'Das wird von vielen bezweifelt.'",
+      "answer": "Daran zweifeln viele.",
+      "explanation": "Use active verb instead of passive construction."
+    },
+    {
+      "id": "C1_gr_12",
+      "unit": "Gerundive",
+      "type": "fill-blank",
+      "prompt": "Die ___ (durchzuführen) Maßnahmen sind dringend.",
+      "answer": "durchzuführenden",
+      "explanation": "Gerundive: zu + infinitive + d adjective ending = necessity."
+    },
+    {
+      "id": "C1_gr_13",
+      "unit": "Indirect Speech Shift",
+      "type": "fill-blank",
+      "prompt": "Sie behauptet, sie ___ (sei/ist/war) die Beste.",
+      "options": ["sei", "ist", "war", "wäre"],
+      "answer": "sei",
+      "explanation": "Konjunktiv I for indirect speech when present tense."
+    },
+    {
+      "id": "C1_gr_14",
+      "unit": "Complex Prepositions",
+      "type": "fill-blank",
+      "prompt": "___ (In view of) der Sachlage müssen wir handeln.",
+      "options": ["Angesichts", "Trotz", "Wegen", "Innerhalb"],
+      "answer": "Angesichts"
+    },
+    {
+      "id": "C1_gr_15",
+      "unit": "C1 Connectors",
+      "type": "fill-blank",
+      "prompt": "Die Studie ist relevant, ___ (insofar as) sie neue Erkenntnisse liefert.",
+      "options": ["insofern als", "weil", "denn", "obwohl"],
+      "answer": "insofern als"
+    },
+    {
+      "id": "C1_gr_16",
+      "unit": "C1 Connectors",
+      "type": "fill-blank",
+      "prompt": "___ (what is more), ist die Methode kosteneffizient.",
+      "options": ["Zudem", "Obwohl", "Trotzdem", "Allerdings"],
+      "answer": "Zudem"
+    },
+    {
+      "id": "C1_gr_17",
+      "unit": "Wortbildung",
+      "type": "fill-blank",
+      "prompt": "Noun from 'entscheiden' (to decide): die ___",
+      "answer": "Entscheidung",
+      "explanation": "-ung nominalization of verb stem."
+    },
+    {
+      "id": "C1_gr_18",
+      "unit": "Wortbildung",
+      "type": "fill-blank",
+      "prompt": "Adjective from 'Zweifel' (doubt): ___ (doubtful)",
+      "answer": "zweifelhaft",
+      "explanation": "-haft suffix creates adjectives from nouns."
+    },
+    {
+      "id": "C1_gr_19",
+      "unit": "Mood / Register",
+      "type": "mcq",
+      "prompt": "Which is the most formal version?",
+      "options": ["Bitte senden Sie mir die Unterlagen.", "Schick mir die Unterlagen.", "Ich will die Unterlagen.", "Gib mir die Unterlagen."],
+      "answer": "Bitte senden Sie mir die Unterlagen.",
+      "explanation": "'Bitte senden Sie...' is the most formal (Sie + full verb)."
+    },
+    {
+      "id": "C1_gr_20",
+      "unit": "Text Cohesion",
+      "type": "fill-blank",
+      "prompt": "___ (in addition) zu den genannten Aspekten ist auch die Finanzierung wichtig.",
+      "options": ["Des Weiteren", "Deswegen", "Dagegen", "Dadurch"],
+      "answer": "Des Weiteren",
+      "explanation": "Des Weiteren is used in academic texts to add a point."
+    }
+  ]
+}

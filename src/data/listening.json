@@ -1,0 +1,158 @@
+{
+  "_comment": "Listening exercises per level. Uses browser SpeechSynthesis API. Add more by following the format. Each has id, level, title, script (what the 'speaker' says), questions, and transcript (shown after answering).",
+  "A1": [
+    {
+      "id": "A1_listen_1",
+      "title": "Telefonansage - Sprechstunde",
+      "script": "Willkommen bei der Praxis Dr. Meier. Unsere Sprechzeiten sind: Montag bis Freitag von 8 bis 12 Uhr und von 14 bis 17 Uhr. Mittwochnachmittag ist geschlossen. Für Notfälle rufen Sie bitte 112 an.",
+      "questions": [
+        {"id": "lq1", "type": "mcq", "question": "Wann hat die Praxis mittags Pause?", "options": ["Von 12 bis 13 Uhr", "Von 12 bis 14 Uhr", "Von 13 bis 14 Uhr", "Keine Pause"], "answer": "Von 12 bis 14 Uhr"},
+        {"id": "lq2", "type": "true-false", "question": "Am Mittwochnachmittag ist die Praxis geschlossen.", "answer": "true"},
+        {"id": "lq3", "type": "mcq", "question": "Welche Nummer soll man bei Notfällen anrufen?", "options": ["110", "112", "114", "116 117"], "answer": "112"}
+      ]
+    },
+    {
+      "id": "A1_listen_2",
+      "title": "Vorstellung - Patient",
+      "script": "Guten Tag. Ich heiße Ahmed Hassan. Ich bin 28 Jahre alt und komme aus dem Sudan. Ich wohne in Frankfurt. Ich spreche ein bisschen Deutsch und arbeite in einem Restaurant.",
+      "questions": [
+        {"id": "lq4", "type": "mcq", "question": "Wie alt ist Ahmed?", "options": ["25", "28", "30", "32"], "answer": "28"},
+        {"id": "lq5", "type": "mcq", "question": "Wo arbeitet Ahmed?", "options": ["In einem Krankenhaus", "In einem Restaurant", "In einer Schule", "In einem Büro"], "answer": "In einem Restaurant"}
+      ]
+    },
+    {
+      "id": "A1_listen_3",
+      "title": "Anmeldung an der Rezeption",
+      "script": "Guten Morgen. Ich habe einen Termin bei Dr. Müller um 10 Uhr. Mein Name ist Klara Schmidt. Ich bin zum ersten Mal hier. Ich habe Rückenschmerzen seit drei Tagen.",
+      "questions": [
+        {"id": "lq6", "type": "true-false", "question": "Klara Schmidt war schon einmal in dieser Praxis.", "answer": "false", "explanation": "Sie sagt: 'Ich bin zum ersten Mal hier.'"},
+        {"id": "lq7", "type": "mcq", "question": "Seit wann hat Klara Rückenschmerzen?", "options": ["Seit einem Tag", "Seit drei Tagen", "Seit einer Woche", "Seit einem Monat"], "answer": "Seit drei Tagen"}
+      ]
+    }
+  ],
+  "A2": [
+    {
+      "id": "A2_listen_1",
+      "title": "Arzttermin verschieben",
+      "script": "Sprechstundenhilfe: Praxis Dr. Weber, guten Tag.\nPatientin: Guten Tag, hier spricht Frau Becker. Ich habe einen Termin für morgen um 9 Uhr, aber ich kann leider nicht kommen. Kann ich den Termin verschieben?\nSprechstundenhilfe: Ja, gerne. Passt es am Freitag um 10 Uhr?\nPatientin: Ja, Freitag um 10 Uhr ist perfekt.\nSprechstundenhilfe: Okay, ich trage Sie ein. Auf Wiederhören.\nPatientin: Vielen Dank! Auf Wiederhören.",
+      "questions": [
+        {"id": "lq8", "type": "mcq", "question": "Warum ruft Frau Becker an?", "options": ["Sie möchte einen neuen Termin", "Sie möchte den Termin verschieben", "Sie hat Schmerzen", "Sie möchte die Praxis wechseln"], "answer": "Sie möchte den Termin verschieben"},
+        {"id": "lq9", "type": "true-false", "question": "Der neue Termin ist am Freitag um 9 Uhr.", "answer": "false"},
+        {"id": "lq10", "type": "mcq", "question": "Wann war der ursprüngliche Termin?", "options": ["Heute um 9 Uhr", "Morgen um 9 Uhr", "Freitag um 10 Uhr", "Gestern um 10 Uhr"], "answer": "Morgen um 9 Uhr"}
+      ]
+    },
+    {
+      "id": "A2_listen_2",
+      "title": "Wetterbericht",
+      "script": "Das Wetter für morgen: Am Morgen ist es bewölkt bei 12 Grad. Am Nachmittag kommt die Sonne raus und es wird 20 Grad warm. Am Abend kann es regnen. Nehmen Sie einen Regenschirm mit!",
+      "questions": [
+        {"id": "lq11", "type": "mcq", "question": "Wie warm wird es am Nachmittag?", "options": ["12 Grad", "15 Grad", "20 Grad", "25 Grad"], "answer": "20 Grad"},
+        {"id": "lq12", "type": "true-false", "question": "Am Abend kann es regnen.", "answer": "true"}
+      ]
+    },
+    {
+      "id": "A2_listen_3",
+      "title": "Durchsage am Bahnhof",
+      "script": "Achtung, eine Durchsage: Der ICE 715 nach München von Gleis 7 hat 15 Minuten Verspätung. Grund ist eine Signalstörung. Wir bitten um Verständnis.",
+      "questions": [
+        {"id": "lq13", "type": "mcq", "question": "Wie viel Verspätung hat der Zug?", "options": ["5 Minuten", "10 Minuten", "15 Minuten", "20 Minuten"], "answer": "15 Minuten"},
+        {"id": "lq14", "type": "true-false", "question": "Der Zug fährt von Gleis 7.", "answer": "true"}
+      ]
+    }
+  ],
+  "B1": [
+    {
+      "id": "B1_listen_1",
+      "title": "Radiosendung - Gesundheitsvorsorge",
+      "script": "Herzlich willkommen zu unserer Sendung 'Gesund und Fit'. Heute sprechen wir über Hautkrebsvorsorge. Jeder zweite Deutsche erkrankt im Laufe seines Lebens an Hautkrebs. Dabei ist die Früherkennung entscheidend. Ab 35 Jahren übernimmt die Krankenkasse alle zwei Jahre einen kostenlosen Hautkrebsscreening-Termin beim Hautarzt. Wir empfehlen, dieses Angebot unbedingt wahrzunehmen.",
+      "questions": [
+        {"id": "lq15", "type": "mcq", "question": "Wie viele Deutsche erkranken an Hautkrebs?", "options": ["Jeder dritte", "Jeder zweite", "Jeder vierte", "Jeder zehnte"], "answer": "Jeder zweite"},
+        {"id": "lq16", "type": "true-false", "question": "Ab 25 Jahren gibt es einen kostenlosen Hautkrebsscreening.", "answer": "false", "explanation": "Das Screening ist ab 35 Jahren."},
+        {"id": "lq17", "type": "mcq", "question": "Wie oft kann man das Screening machen?", "options": ["Jedes Jahr", "Alle zwei Jahre", "Alle fünf Jahre", "Einmal im Leben"], "answer": "Alle zwei Jahre"}
+      ]
+    },
+    {
+      "id": "B1_listen_2",
+      "title": "Arzt-Patienten-Gespräch",
+      "script": "Arzt: Guten Tag Herr Braun, was führt Sie zu mir?\nPatient: Guten Tag Herr Doktor, ich habe seit einer Woche starke Schmerzen im rechten Knie. Beim Treppensteigen ist es besonders schlimm.\nArzt: Haben Sie sich in letzter Zeit verletzt?\nPatient: Nein, die Schmerzen sind ohne Unfall gekommen.\nArzt: Dann machen wir erstmal ein Röntgenbild und schauen uns das Knie genauer an.",
+      "questions": [
+        {"id": "lq18", "type": "mcq", "question": "Seit wann hat Herr Braun Schmerzen?", "options": ["Seit einem Tag", "Seit drei Tagen", "Seit einer Woche", "Seit einem Monat"], "answer": "Seit einer Woche"},
+        {"id": "lq19", "type": "true-false", "question": "Die Schmerzen kamen nach einem Unfall.", "answer": "false"},
+        {"id": "lq20", "type": "mcq", "question": "Was wird der Arzt als nächstes tun?", "options": ["Eine Überweisung ausstellen", "Ein Röntgenbild machen", "Eine Spritze geben", "Eine Operation planen"], "answer": "Ein Röntgenbild machen"}
+      ]
+    },
+    {
+      "id": "B1_listen_3",
+      "title": "Nachrichten - Impfkampagne",
+      "script": "Die Gesundheitsministerin hat heute eine neue Impfkampagne gestartet. Ziel ist es, die Impfquote gegen Grippe zu erhöhen. Besonders ältere Menschen und chronisch Kranke sollen von der Kampagne profitieren. Die Impfung ist in allen Arztpraxen und einigen Apotheken kostenlos erhältlich. Die Kampagne läuft bis Dezember.",
+      "questions": [
+        {"id": "lq21", "type": "mcq", "question": "Was ist das Ziel der neuen Kampagne?", "options": ["Weniger Medikamente verschreiben", "Die Impfquote gegen Grippe erhöhen", "Mehr Ärzte einstellen", "Krankenhäuser modernisieren"], "answer": "Die Impfquote gegen Grippe erhöhen"},
+        {"id": "lq22", "type": "true-false", "question": "Die Impfung ist nur in Arztpraxen erhältlich.", "answer": "false", "explanation": "Die Impfung ist auch in einigen Apotheken erhältlich."}
+      ]
+    }
+  ],
+  "B2": [
+    {
+      "id": "B2_listen_1",
+      "title": "Vortrag: Antibiotikaresistenzen",
+      "script": "Guten Abend, meine Damen und Herren. Ich freue mich, heute über eines der drängendsten Probleme der modernen Medizin zu sprechen: Antibiotikaresistenzen. Die Weltgesundheitsorganisation warnt: Wenn wir nicht handeln, könnten bis 2050 jährlich zehn Millionen Menschen an resistenten Keimen sterben. Die Hauptursache ist der übermäßige Einsatz von Antibiotika, sowohl in der Humanmedizin als auch in der Tiermast. Deutschland hat den Antibiotikaverbrauch in den letzten Jahren um 15 Prozent gesenkt, aber das reicht nicht. Wir brauchen dringend neue Wirkstoffe und einen verantwortungsvolleren Umgang mit den vorhandenen Ressourcen.",
+      "questions": [
+        {"id": "lq23", "type": "mcq", "question": "Wie viele Menschen könnten bis 2050 sterben?", "options": ["Eine Million", "Fünf Millionen", "Zehn Millionen", "Fünfzig Millionen"], "answer": "Zehn Millionen"},
+        {"id": "lq24", "type": "true-false", "question": "Der Antibiotikaverbrauch in Deutschland ist gestiegen.", "answer": "false"},
+        {"id": "lq25", "type": "mcq", "question": "Um wie viel Prozent wurde der Verbrauch gesenkt?", "options": ["5%", "10%", "15%", "20%"], "answer": "15%"}
+      ]
+    },
+    {
+      "id": "B2_listen_2",
+      "title": "Diskussion: Bürgerversicherung",
+      "script": "Moderator: Heute diskutieren wir über die Einführung einer Bürgerversicherung. Frau Dr. Schmidt von der Gesundheitsökonomie, was sind die Hauptargumente dafür?\nDr. Schmidt: Die Bürgerversicherung würde alle Bürger einschließen, unabhängig vom Einkommen. Das schafft Solidarität und senkt Verwaltungskosten.\nModerator: Herr Weber von der Ärztekammer, Ihre Meinung?\nHerr Weber: Die Bürgerversicherung könnte zu längeren Wartezeiten führen und die Wahlfreiheit der Patienten einschränken. Wir brauchen mehr Wettbewerb, nicht weniger.",
+      "questions": [
+        {"id": "lq26", "type": "mcq", "question": "Was ist ein Argument von Dr. Schmidt für die Bürgerversicherung?", "options": ["Mehr Wettbewerb", "Solidarität und niedrigere Verwaltungskosten", "Kürzere Wartezeiten", "Mehr private Krankenhäuser"], "answer": "Solidarität und niedrigere Verwaltungskosten"},
+        {"id": "lq27", "type": "mcq", "question": "Was befürchtet Herr Weber?", "options": ["Höhere Kosten", "Längere Wartezeiten und weniger Wahlfreiheit", "Weniger Ärzte", "Schlechtere Medikamente"], "answer": "Längere Wartezeiten und weniger Wahlfreiheit"}
+      ]
+    },
+    {
+      "id": "B2_listen_3",
+      "title": "Vorstellung einer Studie",
+      "script": "Ich möchte Ihnen die Ergebnisse einer randomisierten kontrollierten Studie vorstellen. Wir haben 500 Patienten mit Kniearthrose in zwei Gruppen eingeteilt. Die erste Gruppe erhielt Physiotherapie, die zweite Gruppe eine Kortisoninjektion. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine signifikant bessere Schmerzreduktion und Funktionsverbesserung. Die Injektionsgruppe hatte kurzfristig weniger Schmerzen, aber der Effekt ließ nach drei Monaten nach.",
+      "questions": [
+        {"id": "lq28", "type": "mcq", "question": "Wie viele Patienten nahmen an der Studie teil?", "options": ["100", "250", "500", "1000"], "answer": "500"},
+        {"id": "lq29", "type": "mcq", "question": "Welche Behandlung war nach 6 Monaten effektiver?", "options": ["Kortisoninjektion", "Physiotherapie", "Beide gleich", "Keine von beiden"], "answer": "Physiotherapie"},
+        {"id": "lq30", "type": "true-false", "question": "Die Kortisoninjektion hatte einen langanhaltenden Effekt.", "answer": "false"}
+      ]
+    }
+  ],
+  "C1": [
+    {
+      "id": "C1_listen_1",
+      "title": "Interview: Digitalisierung im Krankenhaus",
+      "script": "Moderator: Der Chefarzt der Orthopädie, Professor Wagner, ist heute bei uns. Herr Professor, wie digital arbeitet Ihre Klinik?\nProf. Wagner: Wir haben vor zwei Jahren ein neues Krankenhausinformationssystem eingeführt. Die Patientenakten sind jetzt vollständig digital. Das hat die Arbeitsabläufe deutlich verbessert. Allerdings gibt es noch Probleme mit der Schnittstelle zu den Praxen.\nModerator: Welche Vorteile sehen Sie für Ihre Patienten?\nProf. Wagner: Die größte Verbesserung ist die Verfügbarkeit von Daten. Wenn ein Patient notfallmäßig kommt, haben wir sofort Zugriff auf Vorerkrankungen, Medikation und Allergien. Das rettet im Zweifel Leben. Gleichzeitig müssen wir die Datensicherheit gewährleisten, was eine ständige Herausforderung darstellt.",
+      "questions": [
+        {"id": "lq31", "type": "mcq", "question": "Seit wann ist die Klinik digital?", "options": ["Seit einem Jahr", "Seit zwei Jahren", "Seit fünf Jahren", "Seit sechs Monaten"], "answer": "Seit zwei Jahren"},
+        {"id": "lq32", "type": "true-false", "question": "Die Digitalisierung hat alle Probleme gelöst.", "answer": "false"},
+        {"id": "lq33", "type": "mcq", "question": "Was ist der größte Vorteil der Digitalisierung für Patienten?", "options": ["Schnellere Untersuchungen", "Verfügbarkeit von Daten im Notfall", "Weniger Wartezeit", "Günstigere Behandlung"], "answer": "Verfügbarkeit von Daten im Notfall"}
+      ]
+    },
+    {
+      "id": "C1_listen_2",
+      "title": "Vortrag: Medizintourismus",
+      "script": "Der Medizintourismus hat in den letzten Jahren weltweit zugenommen. Patienten reisen ins Ausland, um dort Behandlungen zu erhalten, die im Heimatland zu teuer oder nicht verfügbar sind. Deutschland ist eines der Hauptzielländer, besonders für Patientinnen und Patienten aus dem Nahen Osten und Russland. Die Behandlungsschwerpunkte liegen in der Orthopädie, Onkologie und Kardiologie. Die deutsche Gesundheitswirtschaft erwirtschaftet damit jährlich mehrere Milliarden Euro. Kritisch anzumerken ist, dass der Medizintourismus zu einer Zweiklassenmedizin führen kann, wenn lokale Patienten von Ressourcen verdrängt werden.",
+      "questions": [
+        {"id": "lq34", "type": "mcq", "question": "Was sind die Hauptzielländer des Medizintourismus?", "options": ["USA und Kanada", "Deutschland und andere Länder", "Nur Deutschland", "Asiatische Länder"], "answer": "Deutschland und andere Länder"},
+        {"id": "lq35", "type": "mcq", "question": "In welchen Bereichen ist Deutschland besonders gefragt?", "options": ["Zahnmedizin und Augenheilkunde", "Orthopädie, Onkologie und Kardiologie", "Psychiatrie und Neurologie", "Dermatologie und Pädiatrie"], "answer": "Orthopädie, Onkologie und Kardiologie"},
+        {"id": "lq36", "type": "true-false", "question": "Der Medizintourismus birgt keine Risiken für die lokale Gesundheitsversorgung.", "answer": "false"}
+      ]
+    },
+    {
+      "id": "C1_listen_3",
+      "title": "Podiumsdiskussion: Approbation für ausländische Ärzte",
+      "script": "Podiumsmoderator: In Deutschland arbeiten über 50.000 ausländische Ärzte. Der Prozess der Anerkennung ist jedoch langwierig. Frau Dr. Öztürk, Sie haben selbst diesen Weg durchlaufen.\nDr. Öztürk: Ja, ich bin aus der Türkei gekommen. Der bürokratische Aufwand war enorm. Ich musste jede Urkunde übersetzen und beglaubigen lassen. Die Fachsprachprüfung war die größte Hürde, obwohl ich schon C1 hatte. Der Ablauf ist: Dokumente einreichen, Äquivalenz prüfen, Kenntnisprüfung ablegen und dann die Approbation beantragen.\nModerator: Was würden Sie verbessern?\nDr. Öztürk: Die Anerkennung sollte digitaler und transparenter werden. Viele Ärzte geben auf, weil sie nicht wissen, wie lange der Prozess dauert oder wo sie genau stehen.",
+      "questions": [
+        {"id": "lq37", "type": "mcq", "question": "Wie viele ausländische Ärzte arbeiten in Deutschland?", "options": ["Über 10.000", "Über 30.000", "Über 50.000", "Über 100.000"], "answer": "Über 50.000"},
+        {"id": "lq38", "type": "mcq", "question": "Was war für Dr. Öztürk die größte Hürde?", "options": ["Die Dokumentenbeschaffung", "Die Fachsprachprüfung", "Die Wohnungssuche", "Die Visumbeantragung"], "answer": "Die Fachsprachprüfung"},
+        {"id": "lq39", "type": "true-false", "question": "Dr. Öztürk findet den Anerkennungsprozess gut strukturiert.", "answer": "false"},
+        {"id": "lq40", "type": "mcq", "question": "Was schlägt Dr. Öztürk zur Verbesserung vor?", "options": ["Weniger Ärzte aus dem Ausland", "Digitalisierung und mehr Transparenz", "Kürzere Prüfungen", "Mehr Sprachkurse"], "answer": "Digitalisierung und mehr Transparenz"}
+      ]
+    }
+  ]
+}

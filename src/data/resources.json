@@ -1,0 +1,44 @@
+{
+  "_comment": "Official resources for German learning. Categorized for easy browsing.",
+  "categories": [
+    {
+      "name": "Official Goethe Exam Training",
+      "color": "#8b5cf6",
+      "items": [
+        {"name": "Goethe Exam Training A1-C2", "url": "https://www.goethe.de/en/spr/prf/ueb.html", "description": "Official practice materials for all Goethe exam levels."},
+        {"name": "Goethe C1 Exam Training", "url": "https://www.goethe.de/en/spr/prf/ueb/pc1.html", "description": "Specific practice for the Goethe C1 exam format."},
+        {"name": "Goethe A1 Practice (UAE)", "url": "https://www.goethe.de/ins/ae/en/spr/prf/gzsd1/ueb.html", "description": "A1 Start Deutsch 1 practice materials from the UAE Goethe Institute."},
+        {"name": "Goethe B1 Practice (Munich)", "url": "https://www.goethe.de/ins/mm/en/spr/prf/gzb1/ueb.html", "description": "B1 exam practice materials."},
+        {"name": "Goethe C1 Dubai Info", "url": "https://www.goethe.de/ins/ae/en/spr/prf/gzc1.cfm", "description": "C1 exam information for the Goethe Institute in Dubai."}
+      ]
+    },
+    {
+      "name": "Free Practice & Community",
+      "color": "#10b981",
+      "items": [
+        {"name": "Goethe Free Practice A1-C2", "url": "https://www.goethe.de/en/spr/ueb.html", "description": "Dozens of free German exercises for all levels."},
+        {"name": "Deutsch für dich", "url": "https://www.goethe.de/prj/dfd/en/home.cfm", "description": "Free community platform with exercises and language partners."},
+        {"name": "Goethe Onleihe (Digital Library)", "url": "https://www.goethe.de/en/kul/bib/onl.html", "description": "Free digital library with eBooks, audiobooks and magazines in German."}
+      ]
+    },
+    {
+      "name": "Structured Learning Courses",
+      "color": "#f59e0b",
+      "items": [
+        {"name": "DW Learn German", "url": "https://learngerman.dw.com/", "description": "Free structured courses from A1 to C1 by Deutsche Welle."},
+        {"name": "Nicos Weg (DW)", "url": "https://learngerman.dw.com/en/nicos-weg/c-36519789", "description": "Video-based German course A1-B1. Highly recommended for self-study."},
+        {"name": "DW Learn German App", "url": "https://play.google.com/store/apps/details?id=com.dw.learngerman", "description": "Official DW app for learning on mobile."},
+        {"name": "vhs-Lernportal", "url": "https://www.vhs-lernportal.de/", "description": "Free German courses A1-B2 from the German Adult Education Association."},
+        {"name": "vhs Deutschkurse", "url": "https://www.vhs-lernportal.de/deutsch", "description": "Direct link to the German courses on the vhs portal."}
+      ]
+    },
+    {
+      "name": "Assessment & Testing",
+      "color": "#ef4444",
+      "items": [
+        {"name": "Goethe Official Exam Training", "url": "https://www.goethe.de/en/spr/prf/ueb.html", "description": "Official test format practice and sample exams."},
+        {"name": "Sprachschule Aktiv Level Test", "url": "https://www.sprachschule-aktiv-muenchen.de/en/german-test-online/", "description": "Free online placement test A1-C2."}
+      ]
+    }
+  ]
+}

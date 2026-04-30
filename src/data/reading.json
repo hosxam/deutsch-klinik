@@ -1,0 +1,160 @@
+{
+  "_comment": "Reading exercises per level. Each has id, level, title, text, questions (array of {id, type, question, options, answer, explanation}). Add more by following the format.",
+  "A1": [
+    {
+      "id": "A1_read_1",
+      "title": "Ein Tag im Krankenhaus",
+      "text": "Herr Müller ist Patient. Er hat Schmerzen im Bein. Der Arzt untersucht Herrn Müller. Die Schwester bringt ein Medikament. Herr Müller nimmt die Tablette. Danach geht es ihm besser.",
+      "questions": [
+        {"id": "qr1", "type": "true-false", "question": "Herr Müller ist ein Arzt.", "answer": "false", "explanation": "Herr Müller ist Patient, nicht Arzt."},
+        {"id": "qr2", "type": "true-false", "question": "Herr Müller hat Schmerzen im Bein.", "answer": "true", "explanation": "Der Text sagt: 'Er hat Schmerzen im Bein.'"},
+        {"id": "qr3", "type": "mcq", "question": "Was bringt die Schwester?", "options": ["Ein Buch", "Ein Medikament", "Ein Glas Wasser", "Eine Spritze"], "answer": "Ein Medikament", "explanation": "Die Schwester bringt ein Medikament."}
+      ]
+    },
+    {
+      "id": "A1_read_2",
+      "title": "Meine Familie",
+      "text": "Ich heiße Anna und bin 25 Jahre alt. Ich wohne in Berlin. Meine Mutter ist Ärztin. Mein Vater ist Lehrer. Ich habe einen Bruder. Er studiert Medizin. Wir sind eine kleine Familie.",
+      "questions": [
+        {"id": "qr4", "type": "mcq", "question": "Wie alt ist Anna?", "options": ["20", "25", "30", "35"], "answer": "25", "explanation": "Der Text sagt: 'Ich heiße Anna und bin 25 Jahre alt.'"},
+        {"id": "qr5", "type": "true-false", "question": "Annas Mutter ist Lehrerin.", "answer": "false", "explanation": "Ihre Mutter ist Ärztin, nicht Lehrerin."}
+      ]
+    },
+    {
+      "id": "A1_read_3",
+      "title": "Beim Arzt",
+      "text": "Guten Tag, Herr Doktor. Ich heiße Peter und habe Husten. Die Nase läuft. Ich fühle mich schwach. Der Arzt sagt: 'Bleiben Sie im Bett und trinken Sie viel Tee.'",
+      "questions": [
+        {"id": "qr6", "type": "mcq", "question": "Was hat Peter?", "options": ["Kopfschmerzen", "Husten", "Fieber", "Halsschmerzen"], "answer": "Husten", "explanation": "Peter sagt: 'Ich habe Husten.'"},
+        {"id": "qr7", "type": "true-false", "question": "Der Arzt sagt, Peter soll viel Kaffee trinken.", "answer": "false", "explanation": "Der Arzt sagt: 'Trinken Sie viel Tee.'"}
+      ]
+    }
+  ],
+  "A2": [
+    {
+      "id": "A2_read_1",
+      "title": "Ein Wochenendausflug",
+      "text": "Letztes Wochenende bin ich mit meiner Freundin nach München gefahren. Wir haben den Bahnhof um 8 Uhr erreicht und sind um 8:30 Uhr abgefahren. Die Fahrt hat 3 Stunden gedauert. In München haben wir den Marienplatz besucht und leckeres Essen gegessen. Abends sind wir wieder nach Hause gefahren.",
+      "questions": [
+        {"id": "qr8", "type": "mcq", "question": "Wann sind sie abgefahren?", "options": ["Um 8 Uhr", "Um 8:30 Uhr", "Um 11 Uhr", "Um 9 Uhr"], "answer": "Um 8:30 Uhr", "explanation": "Der Text sagt: '...sind um 8:30 Uhr abgefahren.'"},
+        {"id": "qr9", "type": "true-false", "question": "Die Fahrt nach München hat 5 Stunden gedauert.", "answer": "false", "explanation": "Die Fahrt hat 3 Stunden gedauert."},
+        {"id": "qr10", "type": "mcq", "question": "Was haben sie in München gemacht?", "options": ["Ein Museum besucht", "Den Marienplatz besucht", "Geschwommen", "Gearbeitet"], "answer": "Den Marienplatz besucht"}
+      ]
+    },
+    {
+      "id": "A2_read_2",
+      "title": "Eine E-Mail an den Vermieter",
+      "text": "Betreff: Reparatur in der Wohnung\n\nSehr geehrter Herr Schmidt,\n\nich wohne in der Hauptstraße 12, Wohnung 3B. Die Heizung in meinem Zimmer funktioniert nicht. Es ist sehr kalt. Können Sie bitte einen Handwerker schicken?\n\nMit freundlichen Grüßen\nMaria Weber",
+      "questions": [
+        {"id": "qr11", "type": "mcq", "question": "Was ist das Problem?", "options": ["Der Strom ist aus", "Die Heizung funktioniert nicht", "Ein Fenster ist kaputt", "Die Tür ist defekt"], "answer": "Die Heizung funktioniert nicht"},
+        {"id": "qr12", "type": "true-false", "question": "Maria wohnt in der Hauptstraße.", "answer": "true"}
+      ]
+    },
+    {
+      "id": "A2_read_3",
+      "title": "Im Wartezimmer",
+      "text": "Im Wartezimmer sitzen fünf Patienten. Frau Klein wartet schon eine Stunde. Sie hat einen Termin um 10 Uhr, aber der Arzt hat Verspätung. Herr Braun liest eine Zeitschrift. Frau Schmidt telefoniert. Plötzlich ruft die Sprechstundenhilfe: 'Frau Klein, bitte kommen Sie rein.'",
+      "questions": [
+        {"id": "qr13", "type": "true-false", "question": "Frau Klein wartet schon zwei Stunden.", "answer": "false", "explanation": "Sie wartet eine Stunde."},
+        {"id": "qr14", "type": "mcq", "question": "Was macht Herr Braun?", "options": ["Er telefoniert", "Er liest eine Zeitschrift", "Er schläft", "Er isst"], "answer": "Er liest eine Zeitschrift"}
+      ]
+    }
+  ],
+  "B1": [
+    {
+      "id": "B1_read_1",
+      "title": "Gesundheitsreform in Deutschland",
+      "text": "Die deutsche Regierung hat eine neue Gesundheitsreform vorgestellt. Die Reform soll die Kosten im Gesundheitssystem senken und gleichzeitig die Versorgung verbessern. Kritiker sagen jedoch, dass die Reform zu langen Wartezeiten führen könnte. Ärzteverbände fordern mehr Investitionen in die Prävention. Die Reform tritt nächstes Jahr in Kraft.",
+      "questions": [
+        {"id": "qr15", "type": "mcq", "question": "Was soll die Gesundheitsreform erreichen?", "options": ["Mehr Ärzte einstellen", "Kosten senken und Versorgung verbessern", "Krankenhäuser schließen", "Medikamente verbilligen"], "answer": "Kosten senken und Versorgung verbessern"},
+        {"id": "qr16", "type": "true-false", "question": "Alle sind mit der Reform zufrieden.", "answer": "false", "explanation": "Kritiker sehen Probleme mit langen Wartezeiten."},
+        {"id": "qr17", "type": "mcq", "question": "Was fordern die Ärzteverbände?", "options": ["Höhere Gehälter", "Mehr Investitionen in Prävention", "Kürzere Arbeitszeiten", "Mehr Medikamente"], "answer": "Mehr Investitionen in Prävention"}
+      ]
+    },
+    {
+      "id": "B1_read_2",
+      "title": "Berufung: Arzt oder Ärztin",
+      "text": "Immer weniger junge Menschen in Deutschland entscheiden sich für den Arztberuf. Die Arbeitsbedingungen in Krankenhäusern sind oft schwierig: lange Arbeitszeiten, viel Bürokratie und hoher Druck. Dabei wäre der Bedarf an Ärzten groß. Besonders auf dem Land fehlen Mediziner. Viele Kliniken suchen händeringend nach Personal. Die Politik versucht mit finanziellen Anreizen gegenzusteuern.",
+      "questions": [
+        {"id": "qr18", "type": "mcq", "question": "Warum entscheiden sich weniger junge Menschen für den Arztberuf?", "options": ["Weil das Gehalt zu niedrig ist", "Wegen schwieriger Arbeitsbedingungen", "Weil das Studium zu lang ist", "Weil es zu viele Ärzte gibt"], "answer": "Wegen schwieriger Arbeitsbedingungen"},
+        {"id": "qr19", "type": "true-false", "question": "In Städten gibt es genug Ärzte.", "answer": "false", "explanation": "Der Text sagt: 'Besonders auf dem Land fehlen Mediziner.'"},
+        {"id": "qr20", "type": "heading-match", "question": "Choose the best heading for this text:", "options": ["Der Arztberuf wird beliebter", "Ärztemangel in Deutschland", "Neue Behandlungsmethoden", "Krankenhäuser schließen"], "answer": "Ärztemangel in Deutschland"}
+      ]
+    },
+    {
+      "id": "B1_read_3",
+      "title": "Fit durch den Alltag",
+      "text": "Regelmäßige Bewegung ist wichtig für die Gesundheit. Experten empfehlen mindestens 30 Minuten Bewegung pro Tag. Das muss kein intensiver Sport sein. Schon Spazierengehen oder Treppensteigen hilft. Viele Menschen sitzen zu lange im Büro. Das kann zu Rückenschmerzen und anderen Problemen führen. Ärzte raten zu mehr Bewegung im Alltag.",
+      "questions": [
+        {"id": "qr21", "type": "true-false", "question": "Experten empfehlen eine Stunde Bewegung pro Tag.", "answer": "false", "explanation": "Es werden 30 Minuten empfohlen."},
+        {"id": "qr22", "type": "mcq", "question": "Was kann langes Sitzen verursachen?", "options": ["Kopfschmerzen", "Rückenschmerzen", "Fieber", "Allergien"], "answer": "Rückenschmerzen"}
+      ]
+    }
+  ],
+  "B2": [
+    {
+      "id": "B2_read_1",
+      "title": "Telemedizin: Chancen und Risiken",
+      "text": "Die Telemedizin hat in den letzten Jahren stark an Bedeutung gewonnen. Besonders während der Pandemie wurden viele Arzt-Patienten-Kontakte digital abgewickelt. Befürworter loben die Zeitersparnis und die Möglichkeit, auch in ländlichen Gebieten Fachärzte zu konsultieren. Kritiker weisen jedoch auf die fehlende körperliche Untersuchung hin. Bei bestimmten Erkrankungen sei eine persönliche Vorstellung unerlässlich. Die Zukunft wird zeigen, in welchen Bereichen sich die Telemedizin dauerhaft etablieren kann.",
+      "questions": [
+        {"id": "qr23", "type": "mcq", "question": "Was ist ein Vorteil der Telemedizin?", "options": ["Sie ist billiger", "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten", "Sie ersetzt alle Arztbesuche", "Sie ist sicherer"], "answer": "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten"},
+        {"id": "qr24", "type": "true-false", "question": "Alle Ärzte unterstützen die Telemedizin uneingeschränkt.", "answer": "false", "explanation": "Kritiker weisen auf die fehlende körperliche Untersuchung hin."},
+        {"id": "qr25", "type": "opinion-match", "question": "Was ist die Meinung des Autors?", "options": ["Telemedizin ist immer die beste Lösung", "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist", "Telemedizin sollte verboten werden", "Jeder sollte Telemedizin nutzen"], "answer": "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"}
+      ]
+    },
+    {
+      "id": "B2_read_2",
+      "title": "Organspende: Eine ethische Debatte",
+      "text": "Die Diskussion um die Organspende wird in Deutschland kontrovers geführt. Aktuell gilt die Entscheidungslösung: Nur wer explizit zustimmt, ist Organspender. Die Widerspruchslösung würde bedeuten, dass jeder automatisch Organspender ist, der nicht widerspricht. Befürworter der Widerspruchslösung argumentieren, dass mehr Organe verfügbar wären und weniger Patienten auf Wartelisten sterben würden. Gegner sehen darin einen Eingriff in die Selbstbestimmung des Einzelnen.",
+      "questions": [
+        {"id": "qr26", "type": "mcq", "question": "Was ist die aktuelle Regelung bei Organspenden?", "options": ["Widerspruchslösung", "Entscheidungslösung", "Jeder ist automatisch Spender", "Organspende ist verboten"], "answer": "Entscheidungslösung"},
+        {"id": "qr27", "type": "true-false", "question": "Die Widerspruchslösung würde mehr Organe verfügbar machen.", "answer": "true"},
+        {"id": "qr28", "type": "mcq", "question": "Was kritisieren Gegner der Widerspruchslösung?", "options": ["Zu viele Operationen", "Eingriff in die Selbstbestimmung", "Zu hohe Kosten", "Mangel an Ärzten"], "answer": "Eingriff in die Selbstbestimmung"}
+      ]
+    },
+    {
+      "id": "B2_read_3",
+      "title": "Künstliche Intelligenz in der Medizin",
+      "text": "Künstliche Intelligenz verändert die Medizin grundlegend. Algorithmen können bereits Röntgenbilder analysieren, Diagnosen vorschlagen und Behandlungspläne optimieren. Eine Studie des Deutschen Krebsforschungszentrums zeigt, dass KI bei der Erkennung von Hautkrebs eine Genauigkeit von über 95 Prozent erreicht. Ärzte betonen jedoch, dass KI die ärztliche Erfahrung nicht ersetzen, sondern nur ergänzen kann. Die ethische Verantwortung bleibt beim Menschen.",
+      "questions": [
+        {"id": "qr29", "type": "mcq", "question": "Welche Genauigkeit erreicht KI bei Hautkrebserkennung?", "options": ["Über 80%", "Über 90%", "Über 95%", "100%"], "answer": "Über 95%"},
+        {"id": "qr30", "type": "true-false", "question": "KI kann Ärzte komplett ersetzen.", "answer": "false", "explanation": "Der Text sagt: KI kann die ärztliche Erfahrung ergänzen, nicht ersetzen."}
+      ]
+    }
+  ],
+  "C1": [
+    {
+      "id": "C1_read_1",
+      "title": "Das deutsche Gesundheitssystem im Wandel",
+      "text": "Das deutsche Gesundheitssystem gilt als eines der leistungsfähigsten der Welt, steht jedoch vor erheblichen Herausforderungen. Der demografische Wandel führt zu einer zunehmenden Anzahl älterer Patienten mit chronischen Erkrankungen. Gleichzeitig steigen die Kosten für innovative Behandlungsmethoden und Medikamente. Die Politik steht vor der schwierigen Aufgabe, eine flächendeckende Versorgung von hoher Qualität zu gewährleisten, ohne das System finanziell zu überlasten. Experten fordern eine stärkere Fokussierung auf Prävention und eine Digitalisierung der Prozesse, um Effizienzreserven zu heben.",
+      "questions": [
+        {"id": "qr31", "type": "mcq", "question": "Was ist eine der Herausforderungen des deutschen Gesundheitssystems?", "options": ["Zu viele Ärzte", "Demografischer Wandel mit mehr älteren Patienten", "Zu wenige Krankenhäuser", "Mangel an Medikamenten"], "answer": "Demografischer Wandel mit mehr älteren Patienten"},
+        {"id": "qr32", "type": "true-false", "question": "Die Kosten für neue Behandlungen sind gesunken.", "answer": "false", "explanation": "Der Text sagt, die Kosten steigen."},
+        {"id": "qr33", "type": "opinion-match", "question": "Was fordern Experten?", "options": ["Weniger Patienten", "Mehr Prävention und Digitalisierung", "Schließung von Krankenhäusern", "Weniger Medikamente"], "answer": "Mehr Prävention und Digitalisierung"},
+        {"id": "qr34", "type": "gap-fill", "question": "Das System muss ___ werden.", "options": ["reformiert", "reformieren", "reformierende", "Reform"], "answer": "reformiert"}
+      ]
+    },
+    {
+      "id": "C1_read_2",
+      "title": "Ethische Fragen am Lebensende",
+      "text": "Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unterscheiden zwischen aktiver und passiver Sterbehilfe sowie der Hilfe beim Suizid. Während passive Sterbehilfe in Deutschland unter bestimmten Umständen zulässig ist, bleibt die aktive Sterbehilfe strafbar. Das Bundesverfassungsgericht hat 2020 das Recht auf selbstbestimmtes Sterben gestärkt. Kritiker befürchten einen Dammbruch, während Befürworter die Patientenautonomie in den Vordergrund stellen. Für Ärzte stellt sich die Frage nach der Vereinbarkeit von ethischer Überzeugung und rechtlichen Vorgaben.",
+      "questions": [
+        {"id": "qr35", "type": "mcq", "question": "Was hat das Bundesverfassungsgericht 2020 entschieden?", "options": ["Sterbehilfe ist grundsätzlich verboten", "Recht auf selbstbestimmtes Sterben gestärkt", "Aktive Sterbehilfe ist erlaubt", "Keine Entscheidung getroffen"], "answer": "Recht auf selbstbestimmtes Sterben gestärkt"},
+        {"id": "qr36", "type": "true-false", "question": "Aktive Sterbehilfe ist in Deutschland unter bestimmten Umständen erlaubt.", "answer": "false"},
+        {"id": "qr37", "type": "gap-fill", "question": "Passive Sterbehilfe ist unter ___ Umständen zulässig.", "options": ["allen", "bestimmten", "keinen", "keinerlei"], "answer": "bestimmten"},
+        {"id": "qr38", "type": "mcq", "question": "Welches Argument nennen Befürworter der Sterbehilfe?", "options": ["Kostensenkung", "Patientenautonomie", "Ärztemangel", "Religiöse Überzeugungen"], "answer": "Patientenautonomie"}
+      ]
+    },
+    {
+      "id": "C1_read_3",
+      "title": "Fachkräftemangel im Gesundheitswesen",
+      "text": "Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschärft. Besonders betroffen sind die Pflege und der ärztliche Dienst in ländlichen Regionen. Die Bundesregierung hat diverse Maßnahmen ergriffen, darunter erleichterte Zuwanderungsregelungen für medizinisches Fachpersonal aus dem Ausland. Kritiker monieren, dass diese Maßnahmen nicht ausreichen. Gleichzeitig steigt die Arbeitsbelastung für das vorhandene Personal, was wiederum zu höheren Abwanderungsquoten führt. Ein Teufelskreis, der nur durch strukturelle Reformen durchbrochen werden kann.",
+      "questions": [
+        {"id": "qr39", "type": "mcq", "question": "Welche Regionen sind besonders vom Fachkräftemangel betroffen?", "options": ["Großstädte", "Ländliche Regionen", "Nur der Norden", "Nur der Osten"], "answer": "Ländliche Regionen"},
+        {"id": "qr40", "type": "true-false", "question": "Alle Maßnahmen der Regierung werden von Kritikern als ausreichend angesehen.", "answer": "false"},
+        {"id": "qr41", "type": "opinion-match", "question": "Was bedeutet 'Teufelskreis' in diesem Kontext?", "options": ["Ein Kreislauf, der sich positiv verstärkt", "Eine negative Spirale von Arbeitsbelastung und Abwanderung", "Ein Gesetz der Regierung", "Eine neue Behandlungsmethode"], "answer": "Eine negative Spirale von Arbeitsbelastung und Abwanderung"},
+        {"id": "qr42", "type": "gap-fill", "question": "Die Regierung hat ___ Zuwanderungsregelungen erlassen.", "options": ["verschärfte", "erleichterte", "abgeschaffte", "komplizierte"], "answer": "erleichterte"}
+      ]
+    }
+  ]
+}
