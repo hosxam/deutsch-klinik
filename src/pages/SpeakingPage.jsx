@@ -2,7 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { getState, updateState } from '../utils/store';
 import speakingData from '../data/speaking.json';
-import { Mic, Square, Clock, Lightbulb } from 'lucide-react';
+import { Mic, Square, Clock, Lightbulb, Copy, ClipboardCheck } from 'lucide-react';
+import LevelLock from '../components/LevelLock';
 
 export default function SpeakingPage() {
   const { levelId } = useParams();
@@ -14,6 +15,8 @@ export default function SpeakingPage() {
   const [prepTimer, setPrepTimer] = useState(null);
   const [talkTimer, setTalkTimer] = useState(null);
   const [recordings, setRecordings] = useState([]);
+  const [showAiPrompt, setShowAiPrompt] = useState(false);
+  const [aiCopied, setAiCopied] = useState(false);
   const mediaRecorder = useRef(null);
   const audioChunks = useRef([]);
 
@@ -80,14 +83,17 @@ export default function SpeakingPage() {
 
   if (prompts.length === 0) {
     return (
+      <LevelLock levelId={levelId}>
       <div className="text-center py-12">
         <p style={{ color: 'var(--text-muted)' }}>No speaking tasks for {levelId}</p>
         <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
       </div>
+      </LevelLock>
     );
   }
 
   return (
+    <LevelLock levelId={levelId}>
     <div className="max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
@@ -162,11 +168,28 @@ export default function SpeakingPage() {
 
       {phase === 'done' && (
         <div className="mt-4 text-center">
+          <div className="mb-3">
+            <button onClick={() => setShowAiPrompt(!showAiPrompt)} className="text-xs px-3 py-1.5 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
+              {showAiPrompt ? 'Hide' : 'Copy prompt for AI correction'}
+            </button>
+            {showAiPrompt && (
+              <div className="mt-2 rounded-xl p-3 text-left" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid #8b5cf6' }}>
+                <textarea readOnly value={`I practiced this German speaking task. Identify grammar mistakes, vocabulary mistakes, and sentence structure problems based on the topic. My level is ${levelId}. The task was: ${prompt.prompt}. My spoken answer would be about: ${prompt.tips || ''}. Please give me a corrected sample response at A2 level.`} rows={5}
+                  className="w-full p-2 rounded-lg text-xs outline-none resize-none"
+                  style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }} />
+                <button onClick={() => { navigator.clipboard.writeText(`I practiced this German speaking task. Identify grammar mistakes, vocabulary mistakes, and sentence structure problems based on the topic. My level is ${levelId}. The task was: ${prompt.prompt}. My spoken answer would be about: ${prompt.tips || ''}. Please give me a corrected sample response at A2 level.`); setAiCopied(true); setTimeout(() => setAiCopied(false), 2000); }}
+                  className="mt-1 text-xs px-3 py-1.5 rounded-lg flex items-center gap-1" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+                  {aiCopied ? <><ClipboardCheck size={12} /> Copied!</> : <><Copy size={12} /> Copy to clipboard</>}
+                </button>
+              </div>
+            )}
+          </div>
           <Link to={`/level/${levelId}`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
             Back to Level
           </Link>
         </div>
       )}
     </div>
+    </LevelLock>
   );
 }

@@ -1,24 +1,37 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  getState, getMistakesByLevel, getWeakTopics, getDueVocabWords,
-  recordVocabAnswer, recordAnswer,
+  getState, getMistakesByLevel, getMistakeNotebookItems, getWeakTopics,
+  getDueVocabWords, recordVocabAnswer, recordAnswer,
+  markMistakeMastered, clearMistakeByIndex,
 } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
-import levelsData from '../data/levels.json';
 import {
   AlertTriangle, X, Check, RefreshCw, BookOpen, Filter,
   ChevronDown, ChevronUp, RotateCcw, Brain,
+  Star, Trash2, ClipboardCheck,
 } from 'lucide-react';
 
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
 
+const skillOptions = [
+  { value: 'all', label: 'All Skills' },
+  { value: 'grammar', label: 'Grammar' },
+  { value: 'reading', label: 'Reading' },
+  { value: 'listening', label: 'Listening' },
+  { value: 'vocab', label: 'Vocabulary' },
+  { value: 'exam', label: 'Exam' },
+  { value: 'mistake-retry', label: 'Retry' },
+];
+
 export default function MistakeNotebookPage() {
   const [state, setState] = useState(getState());
   const [filterLevel, setFilterLevel] = useState('all');
+  const [filterSkill, setFilterSkill] = useState('all');
   const [retryAnswers, setRetryAnswers] = useState({});
   const [retryResults, setRetryResults] = useState({});
-  const [activeTab, setActiveTab] = useState('mistakes'); // mistakes | vocab | weak
+  const [retryCorrectCount, setRetryCorrectCount] = useState(0);
+  const [activeTab, setActiveTab] = useState('mistakes');
   const [expandedMistake, setExpandedMistake] = useState(null);
 
   useEffect(() => {
@@ -26,17 +39,41 @@ export default function MistakeNotebookPage() {
     return () => clearInterval(i);
   }, []);
 
-  // Mistakes data
-  const allMistakes = {};
   const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+  // Mistakes data using the unified getMistakeNotebookItems
+  const allMistakes = {};
   levels.forEach(l => {
     const ms = getMistakesByLevel(l) || [];
     if (ms.length > 0) allMistakes[l] = ms;
   });
 
-  const filteredMistakes = filterLevel === 'all'
-    ? allMistakes
-    : { [filterLevel]: allMistakes[filterLevel] || [] };
+  const mistakeness = {};
+  levels.forEach(l => {
+    mistakeness[l] = getMistakesByLevel(l)?.length || 0;
+  });
+
+  // Get filtered items using store function
+  const filteredItems = getMistakeNotebookItems(filterLevel, filterSkill);
+
+  // Skill counts
+  const skillCounts = {};
+  levels.forEach(l => {
+    const ms = getMistakesByLevel(l) || [];
+    ms.forEach(m => {
+      const skill = m.skill || m.topic || 'general';
+      if (!skillCounts[skill]) skillCounts[skill] = 0;
+      skillCounts[skill]++;
+    });
+  });
+
+  // Group filtered by level for display
+  const groupByLevel = {};
+  filteredItems.forEach(m => {
+    const lvl = m.level;
+    if (!groupByLevel[lvl]) groupByLevel[lvl] = [];
+    groupByLevel[lvl].push(m);
+  });
 
   // Weak topics
   const weakTopics = getWeakTopics() || [];
@@ -55,7 +92,6 @@ export default function MistakeNotebookPage() {
 
   const handleVocabReview = (wordId, correct) => {
     recordVocabAnswer(wordId, correct);
-    // Refresh state
     setState({ ...getState() });
   };
 
@@ -68,7 +104,13 @@ export default function MistakeNotebookPage() {
     if (!answer) return;
     const correct = answer.toLowerCase().trim() === mistake.correctAnswer.toLowerCase().trim();
     setRetryResults(prev => ({ ...prev, [mistakeKey]: correct }));
-    recordAnswer(mistake.level, 'mistake-retry', mistake.correctAnswer, answer, 'mistakeNotebook');
+    if (correct) setRetryCorrectCount(c => c + 1);
+    recordAnswer(mistake.level, 'mistake-retry-' + mistakeKey, answer, mistake.correctAnswer, 'mistakeNotebook', correct, 'mistake-retry');
+    setState({ ...getState() });
+  };
+
+  const handleMarkMastered = (level, idx) => {
+    markMistakeMastered(level, idx);
     setState({ ...getState() });
   };
 
@@ -99,7 +141,22 @@ export default function MistakeNotebookPage() {
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#8b5cf6' }}>{totalDue}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Vocab Due</div>
         </div>
+        <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
+          <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#3bff9e' }}>{retryCorrectCount}</div>
+          <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Retries Correct</div>
+        </div>
       </div>
+
+      {/* Skill counts mini display */}
+      {Object.keys(skillCounts).length > 0 && (
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '12px' }}>
+          {Object.entries(skillCounts).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([skill, count]) => (
+            <div key={skill} style={{ padding: '4px 10px', borderRadius: '9999px', fontSize: '11px', backgroundColor: 'rgba(255,51,85,0.08)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.2)' }}>
+              {skill}: {count} mistakes
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Tabs */}
       <div style={{ display: 'flex', gap: '4px', marginBottom: '16px', borderBottom: '1px solid var(--border)' }}>
@@ -134,8 +191,8 @@ export default function MistakeNotebookPage() {
       {/* Tab: Mistakes */}
       {activeTab === 'mistakes' && (
         <div>
-          {/* Level filter */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+          {/* Filters */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
             <Filter size={14} style={{ color: 'var(--text-muted)' }} />
             <select
               value={filterLevel}
@@ -148,18 +205,31 @@ export default function MistakeNotebookPage() {
             >
               <option value="all">All Levels</option>
               {levels.map(l => (
-                <option key={l} value={l}>{l} ({allMistakes[l]?.length || 0})</option>
+                <option key={l} value={l}>{l} ({mistakeness[l] || 0})</option>
+              ))}
+            </select>
+            <select
+              value={filterSkill}
+              onChange={e => setFilterSkill(e.target.value)}
+              style={{
+                padding: '6px 12px', borderRadius: '6px', fontSize: '13px',
+                backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+                color: 'var(--text-primary)', outline: 'none',
+              }}
+            >
+              {skillOptions.map(opt => (
+                <option key={opt.value} value={opt.value}>{opt.label} {opt.value !== 'all' && skillCounts[opt.value] ? `(${skillCounts[opt.value]})` : ''}</option>
               ))}
             </select>
           </div>
 
-          {Object.keys(filteredMistakes).length === 0 ? (
+          {Object.keys(groupByLevel).length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
               <Check size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No mistakes recorded yet. Keep practicing!</p>
+              <p>No mistakes found with current filters. Keep practicing!</p>
             </div>
           ) : (
-            Object.entries(filteredMistakes).map(([level, mistakes]) => (
+            Object.entries(groupByLevel).map(([level, mistakes]) => (
               <div key={level} style={{ marginBottom: '20px' }}>
                 <h3 style={{
                   fontSize: '15px', fontWeight: 'bold', marginBottom: '10px',
@@ -173,6 +243,9 @@ export default function MistakeNotebookPage() {
                   {mistakes.map((mistake, idx) => {
                     const key = level + '_' + idx;
                     const isExpanded = expandedMistake === key;
+                    // Find actual index in the store's incorrectAnswers array
+                    const storeMistakes = getMistakesByLevel(level) || [];
+                    const actualIdx = storeMistakes.indexOf(mistake);
                     return (
                       <div key={key} style={{
                         borderRadius: '10px', padding: '14px 16px',
@@ -195,6 +268,11 @@ export default function MistakeNotebookPage() {
                                 Correct: <strong>{mistake.correctAnswer || 'N/A'}</strong>
                               </span>
                             </div>
+                            {mistake.skill && (
+                              <span style={{ fontSize: '10px', padding: '1px 6px', borderRadius: '4px', marginTop: '4px', display: 'inline-block', backgroundColor: 'rgba(139,92,246,0.1)', color: '#8b5cf6' }}>
+                                {mistake.skill}
+                              </span>
+                            )}
                           </div>
                           <div style={{ color: 'var(--text-muted)', flexShrink: 0 }}>
                             {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -203,6 +281,7 @@ export default function MistakeNotebookPage() {
 
                         {isExpanded && (
                           <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
+                            {/* Retry section */}
                             <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
                               Try again:
                             </p>
@@ -230,20 +309,55 @@ export default function MistakeNotebookPage() {
                                     opacity: retryAnswers[key] ? 1 : 0.5,
                                   }}
                                 >
+                                  <RefreshCw size={12} style={{ display: 'inline', marginRight: '4px' }} />
                                   Check
                                 </button>
                               )}
                             </div>
                             {retryResults[key] !== undefined && (
                               <div style={{
-                                marginTop: '8px', fontSize: '13px', fontWeight: '600',
-                                display: 'flex', alignItems: 'center', gap: '6px',
+                                marginTop: '8px', padding: '8px', borderRadius: '6px', fontSize: '13px',
+                                backgroundColor: retryResults[key] ? 'rgba(59,255,158,0.1)' : 'rgba(255,51,85,0.1)',
                                 color: retryResults[key] ? '#3bff9e' : '#ff3355',
+                                fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px',
                               }}>
-                                {retryResults[key] ? <Check size={14} /> : <X size={14} />}
-                                {retryResults[key] ? ' Correct!' : ` Correct: ${mistake.correctAnswer}`}
+                                {retryResults[key] ? <Check size={16} /> : <X size={16} />}
+                                {retryResults[key] ? 'Correct this time!' : 'Still incorrect. Keep practicing!'}
                               </div>
                             )}
+
+                            {/* Mark as mastered */}
+                            <div style={{ marginTop: '12px', display: 'flex', gap: '8px' }}>
+                              <button
+                                onClick={() => {
+                                  if (actualIdx >= 0) handleMarkMastered(level, actualIdx);
+                                }}
+                                style={{
+                                  padding: '6px 12px', borderRadius: '6px', border: '1px solid #3bff9e',
+                                  backgroundColor: 'transparent', color: '#3bff9e',
+                                  fontSize: '11px', fontWeight: '600', cursor: 'pointer',
+                                  display: 'flex', alignItems: 'center', gap: '4px',
+                                }}
+                              >
+                                <Star size={12} /> Mark as mastered
+                              </button>
+                              <button
+                                onClick={() => {
+                                  if (actualIdx >= 0) {
+                                    clearMistakeByIndex(level, actualIdx);
+                                    setState({ ...getState() });
+                                  }
+                                }}
+                                style={{
+                                  padding: '6px 12px', borderRadius: '6px', border: '1px solid #ff3355',
+                                  backgroundColor: 'transparent', color: '#ff3355',
+                                  fontSize: '11px', fontWeight: '600', cursor: 'pointer',
+                                  display: 'flex', alignItems: 'center', gap: '4px',
+                                }}
+                              >
+                                <Trash2 size={12} /> Remove
+                              </button>
+                            </div>
                           </div>
                         )}
                       </div>
@@ -262,44 +376,42 @@ export default function MistakeNotebookPage() {
           {weakTopics.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
               <Check size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No weak topics identified. Great work!</p>
+              <p>No weak topics found. Keep up the good work!</p>
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {weakTopics.map((wt, idx) => (
+              {weakTopics.map((topic, idx) => (
                 <div key={idx} style={{
                   padding: '14px 16px', borderRadius: '10px',
-                  backgroundColor: 'var(--bg-card)',
-                  border: '1px solid var(--border)',
-                  display: 'flex', alignItems: 'center', gap: '12px',
+                  backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
                 }}>
-                  <div style={{
-                    width: '32px', height: '32px', borderRadius: '8px',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: wt.status === 'weak' ? 'rgba(255,51,85,0.1)' : 'rgba(245,158,11,0.1)',
-                    color: wt.status === 'weak' ? '#ff3355' : '#f59e0b',
-                    fontSize: '13px', fontWeight: 'bold',
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div>
+                      <span style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-primary)' }}>
+                        {topic.topic}
+                      </span>
+                      <span style={{
+                        fontSize: '11px', marginLeft: '8px', padding: '1px 6px', borderRadius: '4px',
+                        backgroundColor: topic.status === 'weak' ? 'rgba(255,51,85,0.1)' : 'rgba(245,158,11,0.1)',
+                        color: topic.status === 'weak' ? '#ff3355' : '#f59e0b',
+                      }}>
+                        {topic.status}
+                      </span>
+                    </div>
+                    <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+                      Score: {topic.score || 'N/A'}
+                    </span>
+                  </div>
+                  {topic.level && (
+                    <div style={{ fontSize: '11px', marginTop: '4px', color: levelColors[topic.level] || 'var(--text-muted)' }}>
+                      Level: {topic.level}
+                    </div>
+                  )}
+                  <Link to={`/level/${topic.level || 'A1'}/grammar`} style={{
+                    display: 'inline-block', marginTop: '8px', padding: '4px 10px', borderRadius: '6px',
+                    fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: 'var(--accent)',
+                    textDecoration: 'none', fontWeight: '600',
                   }}>
-                    {idx + 1}
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-primary)' }}>
-                      {wt.topic}
-                    </div>
-                    <div style={{
-                      fontSize: '12px', color: wt.status === 'weak' ? '#ff3355' : '#f59e0b',
-                    }}>
-                      {wt.status === 'weak' ? 'Needs attention' : 'Improving'}
-                    </div>
-                  </div>
-                  <Link
-                    to={`/level/${wt.topic?.charAt?.(0) || 'A1'}`}
-                    style={{
-                      padding: '6px 12px', borderRadius: '6px', fontSize: '12px',
-                      backgroundColor: 'var(--bg-hover)', color: 'var(--accent)',
-                      textDecoration: 'none', fontWeight: '600',
-                    }}
-                  >
                     Practice
                   </Link>
                 </div>
@@ -325,11 +437,11 @@ export default function MistakeNotebookPage() {
               {vocabItems.map((word, idx) => (
                 <div key={word.id || idx} style={{
                   padding: '14px 16px', borderRadius: '10px',
-                  backgroundColor: 'var(--bg-card)',
-                  border: '1px solid var(--border)',
+                  backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
                 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                     <div>
+                      {word.article && <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginRight: '4px' }}>{word.article}</span>}
                       <span style={{ fontSize: '16px', fontWeight: '700', color: 'var(--text-primary)' }}>
                         {word.word || word.german}
                       </span>
@@ -345,9 +457,11 @@ export default function MistakeNotebookPage() {
                       {word.level}
                     </span>
                   </div>
-                  <p style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
-                    {word.example}
-                  </p>
+                  {word.example && (
+                    <p style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
+                      "{word.example}"
+                    </p>
+                  )}
                   <div style={{ display: 'flex', gap: '8px' }}>
                     <button
                       onClick={() => handleVocabReview(word.id, true)}

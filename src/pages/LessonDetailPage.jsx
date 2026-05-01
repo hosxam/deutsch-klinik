@@ -1,11 +1,12 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, completeLesson, recordAnswer, getCompletedLessons } from '../utils/store';
-import allLessonsData from '../data/germanLessonsNew.json';
+import allLessonsData from '../data/germanLessons.json';
 import {
   ArrowLeft, ArrowRight, CheckCircle, Circle, BookOpen, Check, X,
   Volume2, Star, Lightbulb, ChevronRight, Award,
 } from 'lucide-react';
+import LevelLock from '../components/LevelLock';
 
 const allLessons = allLessonsData;
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
@@ -33,6 +34,7 @@ export default function LessonDetailPage() {
 
   if (!lesson) {
     return (
+      <LevelLock levelId={levelId}>
       <div style={{ color: 'var(--text-muted)', textAlign: 'center', padding: '48px 0' }}>
         Lesson not found.
         <br />
@@ -40,6 +42,7 @@ export default function LessonDetailPage() {
           Back to lessons
         </Link>
       </div>
+      </LevelLock>
     );
   }
 
@@ -76,6 +79,7 @@ export default function LessonDetailPage() {
     : true;
 
   return (
+    <LevelLock levelId={levelId}>
     <div>
       <Link
         to={`/level/${levelId}/lessons`}
@@ -332,5 +336,6 @@ export default function LessonDetailPage() {
         </Link>
       </div>
     </div>
+    </LevelLock>
   );
 }

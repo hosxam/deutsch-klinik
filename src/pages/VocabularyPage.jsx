@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
+import LevelLock from '../components/LevelLock';
 import { Shuffle, BookMarked, CheckCircle, XCircle, Brain } from 'lucide-react';
 
 export default function VocabularyPage() {
@@ -25,11 +26,13 @@ export default function VocabularyPage() {
 
   if (words.length === 0) {
     return (
+      <LevelLock levelId={levelId}>
       <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '600px', margin: '0 auto' }}>
         <p style={{ color: 'var(--text-muted)' }}>No vocabulary yet for {levelId}</p>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>Add words to germanVocabulary.json with level field set to {levelId}</p>
         <Link to={`/level/${levelId}`} style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem', marginTop: '1rem', display: 'inline-block' }}>Back</Link>
       </div>
+      </LevelLock>
     );
   }
 
@@ -71,6 +74,7 @@ export default function VocabularyPage() {
     const word = words[currentIndex];
     const mastery = getVocabMastery(`${levelId}_${word.id}`);
     return (
+      <LevelLock levelId={levelId}>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
           <div>
@@ -120,6 +124,7 @@ export default function VocabularyPage() {
           ))}
         </div>
       </div>
+    </LevelLock>
     );
   }
 
@@ -127,6 +132,7 @@ export default function VocabularyPage() {
   if (mode === 'quiz') {
     if (quizDone) {
       return (
+        <LevelLock levelId={levelId}>
         <div style={{ maxWidth: '600px', margin: '2rem auto', textAlign: 'center', padding: '0 1rem' }}>
           <div style={s.card}>
             <CheckCircle size={40} color="#22c55e" />
@@ -138,11 +144,13 @@ export default function VocabularyPage() {
             </div>
           </div>
         </div>
+        </LevelLock>
       );
     }
 
     const word = words[currentIndex];
     return (
+      <LevelLock levelId={levelId}>
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
           <span style={s.tag}>Quiz Mode</span>
@@ -168,6 +176,7 @@ export default function VocabularyPage() {
           )}
         </div>
       </div>
+      </LevelLock>
     );
   }
 }

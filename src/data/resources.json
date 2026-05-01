@@ -1,44 +1,54 @@
-{
-  "_comment": "Official resources for German learning. Categorized for easy browsing.",
-  "categories": [
-    {
-      "name": "Official Goethe Exam Training",
-      "color": "#8b5cf6",
-      "items": [
-        {"name": "Goethe Exam Training A1-C2", "url": "https://www.goethe.de/en/spr/prf/ueb.html", "description": "Official practice materials for all Goethe exam levels."},
-        {"name": "Goethe C1 Exam Training", "url": "https://www.goethe.de/en/spr/prf/ueb/pc1.html", "description": "Specific practice for the Goethe C1 exam format."},
-        {"name": "Goethe A1 Practice (UAE)", "url": "https://www.goethe.de/ins/ae/en/spr/prf/gzsd1/ueb.html", "description": "A1 Start Deutsch 1 practice materials from the UAE Goethe Institute."},
-        {"name": "Goethe B1 Practice (Munich)", "url": "https://www.goethe.de/ins/mm/en/spr/prf/gzb1/ueb.html", "description": "B1 exam practice materials."},
-        {"name": "Goethe C1 Dubai Info", "url": "https://www.goethe.de/ins/ae/en/spr/prf/gzc1.cfm", "description": "C1 exam information for the Goethe Institute in Dubai."}
-      ]
-    },
-    {
-      "name": "Free Practice & Community",
-      "color": "#10b981",
-      "items": [
-        {"name": "Goethe Free Practice A1-C2", "url": "https://www.goethe.de/en/spr/ueb.html", "description": "Dozens of free German exercises for all levels."},
-        {"name": "Deutsch für dich", "url": "https://www.goethe.de/prj/dfd/en/home.cfm", "description": "Free community platform with exercises and language partners."},
-        {"name": "Goethe Onleihe (Digital Library)", "url": "https://www.goethe.de/en/kul/bib/onl.html", "description": "Free digital library with eBooks, audiobooks and magazines in German."}
-      ]
-    },
-    {
-      "name": "Structured Learning Courses",
-      "color": "#f59e0b",
-      "items": [
-        {"name": "DW Learn German", "url": "https://learngerman.dw.com/", "description": "Free structured courses from A1 to C1 by Deutsche Welle."},
-        {"name": "Nicos Weg (DW)", "url": "https://learngerman.dw.com/en/nicos-weg/c-36519789", "description": "Video-based German course A1-B1. Highly recommended for self-study."},
-        {"name": "DW Learn German App", "url": "https://play.google.com/store/apps/details?id=com.dw.learngerman", "description": "Official DW app for learning on mobile."},
-        {"name": "vhs-Lernportal", "url": "https://www.vhs-lernportal.de/", "description": "Free German courses A1-B2 from the German Adult Education Association."},
-        {"name": "vhs Deutschkurse", "url": "https://www.vhs-lernportal.de/deutsch", "description": "Direct link to the German courses on the vhs portal."}
-      ]
-    },
-    {
-      "name": "Assessment & Testing",
-      "color": "#ef4444",
-      "items": [
-        {"name": "Goethe Official Exam Training", "url": "https://www.goethe.de/en/spr/prf/ueb.html", "description": "Official test format practice and sample exams."},
-        {"name": "Sprachschule Aktiv Level Test", "url": "https://www.sprachschule-aktiv-muenchen.de/en/german-test-online/", "description": "Free online placement test A1-C2."}
-      ]
-    }
+[{
+  "name": "Official Goethe Exam Training",
+  "color": "#8b5cf6",
+  "items": [
+    { "name": "Goethe-Institut Practice Materials", "url": "https://www.goethe.de/en/spr/kup/prf.html", "description": "Official Goethe exam preparation materials for all levels A1-C1. Download sample tests." },
+    { "name": "Goethe C1 Exam Info", "url": "https://www.goethe.de/en/spr/kup/prf/prf/gc1.html", "description": "Complete overview of the Goethe C1 exam structure, scoring, and requirements." },
+    { "name": "FSP Fachsprachprüfung Info", "url": "https://www.bundesaerztekammer.de/themen/aerzte/aus-weiter-fortbildung/weiterbildung/fachsprachpruefung", "description": "German Medical Board info on the FSP (Fachsprachprüfung) for international doctors." }
   ]
-}
+}, {
+  "name": "Structured Learning Courses",
+  "color": "#10b981",
+  "items": [
+    { "name": "DW Nicos Weg (A1-B1)", "url": "https://learngerman.dw.com/en/nicos-weg/c-36519749", "description": "Free high-quality video-based course from Deutsche Welle. Covers A1-B1 with exercises and grammar." },
+    { "name": "DW Deutsch lernen", "url": "https://learngerman.dw.com/en/overview", "description": "All DW German courses in one place. From beginner to advanced, all free." },
+    { "name": "VHS Lernportal (A1-C1)", "url": "https://www.vhs-lernportal.de/", "description": "Free courses from the German Adult Education Association. Structured by CEFR level." },
+    { "name": "Nicos Weg B1", "url": "https://learngerman.dw.com/en/b1/s-132067", "description": "Continue learning with Nicos Weg at B1 level. Real-world dialogues and grammar." },
+    { "name": "Easy German YouTube", "url": "https://www.youtube.com/@EasyGerman", "description": "Street interviews with subtitles in German and English. Great for listening at A2-C1." }
+  ]
+}, {
+  "name": "Free Practice & Community",
+  "color": "#14b8a6",
+  "items": [
+    { "name": "DW Top-Thema mit Vokabeln", "url": "https://learngerman.dw.com/en/top-thema-mit-vokabeln/c-39905614", "description": "Weekly news articles with vocabulary lists. B2-C1 level. Great for reading and vocab." },
+    { "name": "DW Das sagt man so!", "url": "https://learngerman.dw.com/en/das-sagt-man-so/c-39905615", "description": "German idioms and expressions explained in context. B1-C1 level." },
+    { "name": "VHS Lernportal exercises", "url": "https://www.vhs-lernportal.de/wws/9.php#/deutsch", "description": "Additional exercises for grammar and vocab at all levels." },
+    { "name": "Reddit German Community", "url": "https://www.reddit.com/r/German/", "description": "Active community for learners. Post questions, get corrections, share resources." },
+    { "name": "Discord German Learning Servers", "url": "https://discord.me/german", "description": "Real-time voice and text practice with other learners and native speakers." }
+  ]
+}, {
+  "name": "Vocab Building & Review",
+  "color": "#f59e0b",
+  "items": [
+    { "name": "AnkiWeb Shared Decks", "url": "https://ankiweb.net/shared/decks/german", "description": "Community-created German vocabulary decks for Anki (spaced repetition). Search for Goethe vocab." },
+    { "name": "Goethe Vocabulary Lists (PDF)", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A1_Wortliste.pdf", "description": "Official A1 vocab list from Goethe. Search for A2-C1 versions too." },
+    { "name": "Memrise German Courses", "url": "https://www.memrise.com/courses/english/german/", "description": "Flashcard-based learning with spaced repetition. Has Goethe-specific vocab sets." }
+  ]
+}, {
+  "name": "Medical German Resources",
+  "color": "#ef4444",
+  "items": [
+    { "name": "Goethe Medizin Deutsch", "url": "https://www.goethe.de/de/spr/kup/prf/prf/gmd.html", "description": "Goethe certificate for medical German (A2-C1 level). Official info and sample tests." },
+    { "name": "FSP Medical German Sample", "url": "https://www.bundesaerztekammer.de/fileadmin/user_upload/_old-files/downloads/Fachsprachpruefung_Muster.pdf", "description": "Sample FSP test for international doctors. Includes doctor-patient dialogues." },
+    { "name": "Arbeitsagentur Medical German", "url": "https://www.arbeitsagentur.de/bildung/weiterbildung/medizinisches-deutsch", "description": "Government-funded medical German courses. Check eligibility for free courses." },
+    { "name": "Medical German on Easy German", "url": "https://www.youtube.com/playlist?list=PLkIPlsIMkEKJ7nBc4SvJ9Sxi_R6Kz9fHw", "description": "Medical German vocabulary and doctor-patient conversations on Easy German." }
+  ]
+}, {
+  "name": "Assessment & Testing",
+  "color": "#ff6b00",
+  "items": [
+    { "name": "Goethe Exam Schedule", "url": "https://www.goethe.de/en/spr/kup/prf.html", "description": "Find exam dates and registration for Goethe exams in your region." },
+    { "name": "Telc German Exams", "url": "https://www.telc.net/en/language-examinations/german.html", "description": "Alternative to Goethe exams. Recognized for university admission and work." },
+    { "name": "ÖSD Exams", "url": "https://www.osd.at/en/", "description": "Austrian German language exams. Also recognized in Germany and Switzerland." }
+  ]
+}]

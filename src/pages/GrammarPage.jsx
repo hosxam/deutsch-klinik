@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, updateLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel } from '../utils/store';
 import grammarData from '../data/grammar.json';
+import LevelLock from '../components/LevelLock';
 import { CheckCircle, XCircle, AlertTriangle, RotateCcw, BookOpen } from 'lucide-react';
 
 const typeLabels = {
@@ -15,7 +16,7 @@ const typeLabels = {
 
 export default function GrammarPage() {
   const { levelId } = useParams();
-  const exercises = grammarData.filter(e => e.level === levelId) || [];
+  const exercises = grammarData[levelId] || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(null);
@@ -37,11 +38,13 @@ export default function GrammarPage() {
 
   if (!ex) {
     return (
-      <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '800px', margin: '0 auto' }}>
-        <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '1rem' }}>No exercises for {levelId} yet</h2>
-        <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>Add exercises to germanGrammar.json for this level.</p>
-        <Link to={`/level/${levelId}`} style={{ padding: '0.5rem 1rem', borderRadius: '8px', background: 'var(--bg-hover)', color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem' }}>Back to Level</Link>
-      </div>
+      <LevelLock levelId={levelId}>
+        <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '1rem' }}>No exercises for {levelId} yet</h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>Add exercises to grammar.json for this level.</p>
+          <Link to={`/level/${levelId}`} style={{ padding: '0.5rem 1rem', borderRadius: '8px', background: 'var(--bg-hover)', color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem' }}>Back to Level</Link>
+        </div>
+      </LevelLock>
     );
   }
 
@@ -96,6 +99,7 @@ export default function GrammarPage() {
 
   if (completed) {
     return (
+      <LevelLock levelId={levelId}>
       <div style={{ maxWidth: '600px', margin: '2rem auto', textAlign: 'center', padding: '0 1rem' }}>
         <div style={s.card}>
           <CheckCircle size={40} style={{ color: '#22c55e', marginBottom: '1rem' }} />
@@ -120,10 +124,12 @@ export default function GrammarPage() {
           </div>
         )}
       </div>
+      </LevelLock>
     );
   }
 
   return (
+    <LevelLock levelId={levelId}>
     <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -147,42 +153,27 @@ export default function GrammarPage() {
         </span>
         <p style={{ fontSize: '1.1rem', lineHeight: 1.6, margin: '1rem 0' }}>{ex.prompt}</p>
 
-        {ex.type === 'fill-blank' && (
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
-            {(ex.options || []).map(opt => (
-              <button key={opt} style={{
-                padding: '0.5rem 1rem', borderRadius: '8px', border: showResult
-                  ? opt.toLowerCase() === ex.answer.toLowerCase() ? '2px solid #22c55e'
-                  : userAnswer === opt ? '2px solid #ef4444' : '1px solid var(--border)'
-                  : '1px solid var(--border)',
-                background: showResult && opt.toLowerCase() === ex.answer.toLowerCase() ? 'rgba(34,197,94,0.1)'
-                  : showResult && userAnswer === opt ? 'rgba(239,68,68,0.1)'
-                  : 'var(--bg-secondary)',
-                color: 'var(--text-primary)', cursor: showResult ? 'default' : 'pointer', fontSize: '0.9rem',
-              }}
-                disabled={!!showResult} onClick={() => { setUserAnswer(opt); handleAnswer(opt); }}>
-                {opt}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {ex.type === 'multiple-choice' && (
+{['fill-blank', 'mcq', 'multiple-choice', 'article-select', 'conjugation', 'case-select', 'drag-word'].includes(ex.type) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
-            {(ex.options || []).map((opt, idx) => (
-              <button key={idx} style={{
-                padding: '0.75rem', borderRadius: '8px', border: showResult
-                  ? idx === ex.answer ? '2px solid #22c55e' : userAnswer === opt ? '2px solid #ef4444' : '1px solid var(--border)'
-                  : userAnswer === opt ? '2px solid var(--accent)' : '1px solid var(--border)',
-                background: showResult && idx === ex.answer ? 'rgba(34,197,94,0.1)'
-                  : showResult && userAnswer === opt ? 'rgba(239,68,68,0.1)'
-                  : userAnswer === opt ? 'rgba(0,240,255,0.08)' : 'var(--bg-secondary)',
-                color: 'var(--text-primary)', cursor: showResult ? 'default' : 'pointer', textAlign: 'left', fontSize: '0.95rem',
-              }}
-                disabled={!!showResult} onClick={() => { setUserAnswer(opt); handleAnswer(opt); }}>
-                {opt}
-              </button>
-            ))}
+            {(ex.options || []).map((opt, idx) => {
+              const correctAnswer = typeof ex.answer === 'number' ? ex.options[ex.answer] : ex.answer;
+              const isSelected = userAnswer === opt;
+              const isCorrectOption = opt.toLowerCase() === (correctAnswer||'').toLowerCase();
+              return (
+                <button key={idx} style={{
+                  padding: '0.75rem', borderRadius: '8px', border: showResult
+                    ? isCorrectOption ? '2px solid #22c55e' : isSelected ? '2px solid #ef4444' : '1px solid var(--border)'
+                    : isSelected ? '2px solid var(--accent)' : '1px solid var(--border)',
+                  background: showResult && isCorrectOption ? 'rgba(34,197,94,0.1)'
+                    : showResult && isSelected ? 'rgba(239,68,68,0.1)'
+                    : isSelected ? 'rgba(0,240,255,0.08)' : 'var(--bg-secondary)',
+                  color: 'var(--text-primary)', cursor: showResult ? 'default' : 'pointer', textAlign: 'left', fontSize: '0.95rem',
+                }}
+                  disabled={!!showResult} onClick={() => { setUserAnswer(opt); handleAnswer(opt); }}>
+                  {opt}
+                </button>
+              );
+            })}
           </div>
         )}
 
@@ -192,7 +183,24 @@ export default function GrammarPage() {
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
                 width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
-                  ? userAnswer.trim().toLowerCase() === ex.answer.toLowerCase() ? '2px solid #22c55e' : '2px solid #ef4444'
+                  ? userAnswer.trim().toLowerCase() === (typeof ex.answer === 'string' ? ex.answer.toLowerCase() : '')
+                    ? '2px solid #22c55e' : '2px solid #ef4444'
+                  : '1px solid var(--border)',
+                background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
+              }} disabled={!!showResult} />
+            <button style={{ ...s.btnPrimary, marginTop: '0.5rem' }} disabled={!!showResult || !userAnswer.trim()}
+              onClick={() => handleAnswer(userAnswer)}>Check</button>
+          </div>
+        )}
+
+        {ex.type === 'sentence-correction' && (
+          <div style={{ marginTop: '0.75rem' }}>
+            <input type="text" placeholder="Type the correct sentence..."
+              value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
+              style={{
+                width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
+                  ? userAnswer.trim().toLowerCase() === (typeof ex.answer === 'string' ? ex.answer.toLowerCase() : '')
+                    ? '2px solid #22c55e' : '2px solid #ef4444'
                   : '1px solid var(--border)',
                 background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
               }} disabled={!!showResult} />
@@ -227,5 +235,6 @@ export default function GrammarPage() {
         </div>
       )}
     </div>
+    </LevelLock>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getState, updateState, updateStreak, getLevelProgress, getReadinessScores, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
+import allLessonsData from '../data/germanLessons.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap } from 'lucide-react';
 
 const skillIcons = {
@@ -12,6 +13,8 @@ const skillIcons = {
   writing: PenTool,
   speaking: Mic,
 };
+
+const allLessons = allLessonsData;
 
 export default function Dashboard() {
   const [state, setState] = useState(getState());
@@ -24,18 +27,49 @@ export default function Dashboard() {
     generateDailyTasks(s);
   }, []);
 
+  const checkTodayActivity = (items) => {
+    if (!items || !items.length) return false;
+    const today = new Date().toISOString().split('T')[0];
+    return items.some(item => {
+      if (typeof item === 'string') return item.startsWith(today);
+      if (item.date) return item.date.startsWith(today);
+      return false;
+    });
+  };
+
   const generateDailyTasks = (s) => {
     const level = s.currentLevel;
     const prog = s.levels[level] || {};
+    const today = new Date().toISOString().split('T')[0];
     const tasks = [];
-    
-    tasks.push({ id: 'grammar', label: '10 Grammar Questions', done: (prog.grammar && prog.grammar.length > 0) });
-    tasks.push({ id: 'vocab', label: '20 Vocabulary Flashcards', done: (prog.vocab && prog.vocab.length > 0) });
-    tasks.push({ id: 'reading', label: '1 Reading Exercise', done: (prog.reading && prog.reading.length > 0) });
-    tasks.push({ id: 'listening', label: '1 Listening Exercise', done: (prog.listening && prog.listening.length > 0) });
-    tasks.push({ id: 'writing', label: '1 Writing Prompt', done: (s.writings && s.writings.filter(w => w.level === level).length > 0) });
-    tasks.push({ id: 'speaking', label: '1 Speaking Task', done: (s.speakingRecordings[level] && s.speakingRecordings[level].length > 0) });
-    
+
+    const completedLessons = s.completedLessons[level] || [];
+    const levelLessons = allLessons.filter(l => l.level === level);
+    const nextLesson = levelLessons.find(l => !completedLessons.includes(l.id));
+
+    if (nextLesson) {
+      tasks.push({
+        id: 'lesson',
+        label: `Complete Lesson: ${nextLesson.title}`,
+        done: completedLessons.includes(nextLesson.id),
+        link: `/level/${level}/lessons/${nextLesson.id}`,
+      });
+    } else if (levelLessons.length) {
+      tasks.push({
+        id: 'lesson',
+        label: 'All lessons complete! Take the exam.',
+        done: true,
+        link: `/level/${level}/exam`,
+      });
+    }
+
+    tasks.push({ id: 'grammar', label: '10 Grammar Questions', done: checkTodayActivity(prog.grammar), link: `/level/${level}/grammar` });
+    tasks.push({ id: 'vocab', label: '20 Vocabulary Flashcards', done: checkTodayActivity(prog.vocab), link: `/level/${level}/vocabulary` });
+    tasks.push({ id: 'reading', label: '1 Reading Exercise', done: checkTodayActivity(prog.reading), link: `/level/${level}/reading` });
+    tasks.push({ id: 'listening', label: '1 Listening Exercise', done: checkTodayActivity(prog.listening), link: `/level/${level}/listening` });
+    tasks.push({ id: 'writing', label: '1 Writing Prompt', done: (s.writings || []).filter(w => w.level === level && w.date?.startsWith(today)).length > 0, link: `/level/${level}/writing` });
+    tasks.push({ id: 'speaking', label: '1 Speaking Task', done: (s.speakingRecordings[level] || []).filter(r => r.date?.startsWith(today)).length > 0, link: `/level/${level}/speaking` });
+
     setTodayTasks(tasks);
   };
 
@@ -60,7 +94,10 @@ export default function Dashboard() {
             <h1 className="text-2xl md:text-3xl font-bold" style={{ color: 'var(--accent)' }}>
               ⭐ Deutsch Klinik C1 Trainer
             </h1>
-            <p className="mt-1" style={{ color: 'var(--text-secondary)' }}>
+            <p className="mt-1 text-sm" style={{ color: 'var(--text-secondary)' }}>
+              Your central study hub. It organizes daily learning, tracks progress, stores mistakes, and connects lessons with practice. Use it alongside Goethe-Institut materials, native content, and live correction.
+            </p>
+            <p className="mt-2 font-semibold" style={{ color: 'var(--text-secondary)' }}>
               {currentLevelData?.description || 'Learn German from A1 to C1'}
             </p>
           </div>
@@ -86,28 +123,31 @@ export default function Dashboard() {
           <StatCard icon={Target} label="Med German" value={state.medicalUnlocked ? 'Unlocked' : 'Locked'} accent={state.medicalUnlocked ? '#3bff9e' : '#54587a'} />
         </div>
 
-        {/* Right: Daily Tasks */}
+        {/* Right: Daily Study Plan */}
         <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
-            <Zap size={16} /> Daily Tasks ({state.currentLevel})
+            <Zap size={16} /> Today's Study Plan ({state.currentLevel})
           </h2>
           <div className="space-y-2">
             {todayTasks.map(task => (
               <div key={task.id} className="flex items-center gap-2 text-sm" style={{ color: task.done ? '#3bff9e' : 'var(--text-secondary)' }}>
-                <div className="w-4 h-4 rounded-full flex items-center justify-center text-xs" style={{
+                <div className="w-4 h-4 rounded-full flex items-center justify-center text-xs flex-shrink-0" style={{
                   backgroundColor: task.done ? 'rgba(59,255,158,0.15)' : 'var(--bg-hover)',
                   border: `1px solid ${task.done ? '#3bff9e' : 'var(--text-muted)'}`,
                   color: task.done ? '#3bff9e' : 'transparent',
                 }}>
                   {task.done ? '✓' : ''}
                 </div>
-                {task.label}
+                {task.link ? (
+                  <Link to={task.link} className="hover:underline" style={{ color: task.done ? '#3bff9e' : 'var(--text-secondary)' }}>
+                    {task.label}
+                  </Link>
+                ) : (
+                  <span>{task.label}</span>
+                )}
               </div>
             ))}
           </div>
-          <Link to={`/level/${state.currentLevel}`} className="mt-4 flex items-center gap-1 text-xs font-semibold" style={{ color: 'var(--accent)' }}>
-            Go to level <ChevronRight size={14} />
-          </Link>
         </div>
       </div>
 
@@ -194,7 +234,7 @@ export default function Dashboard() {
           const total = (p.grammar?.length || 0) + (p.vocab?.length || 0) + (p.quizzes?.length || 0) + (p.reading?.length || 0) + (p.listening?.length || 0);
           const exam = state.exams[lvl.id];
           const unlocked = state.currentLevel === lvl.id || (() => { if (!lvl.requires) return true; const e = state.exams[lvl.requires]; return e && e.passed; })() || false;
-          
+
           return (
             <Link key={lvl.id} to={`/level/${lvl.id}`} className="rounded-xl p-4 transition-all hover:scale-[1.02]" style={{
               backgroundColor: 'var(--bg-card)',
@@ -203,7 +243,7 @@ export default function Dashboard() {
             }}>
               <div className="flex items-center justify-between mb-3">
                 <span className="font-bold" style={{ color: lvl.color }}>{lvl.id}</span>
-                {exam?.passed ? <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(59,255,158,0.15)', color: '#3bff9e' }}>Passed ✓</span> : 
+                {exam?.passed ? <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(59,255,158,0.15)', color: '#3bff9e' }}>Passed ✓</span> :
                  total > 0 ? <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(0,240,255,0.1)', color: 'var(--accent)' }}>In Progress</span> : null}
               </div>
               <div className="h-2 rounded-full mb-2" style={{ backgroundColor: 'var(--bg-hover)' }}>

@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import listeningData from '../data/listening.json';
+import LevelLock from '../components/LevelLock';
 import { Play, Square, Volume2, Mic } from 'lucide-react';
 
 export default function ListeningPage() {
@@ -53,10 +54,12 @@ export default function ListeningPage() {
 
   if (exercises.length === 0) {
     return (
+      <LevelLock levelId={levelId}>
       <div className="text-center py-12">
         <p style={{ color: 'var(--text-muted)' }}>No listening exercises for {levelId}</p>
         <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
       </div>
+      </LevelLock>
     );
   }
 
@@ -114,6 +117,7 @@ export default function ListeningPage() {
   };
 
   return (
+    <LevelLock levelId={levelId}>
     <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
@@ -242,5 +246,6 @@ export default function ListeningPage() {
         </div>
       )}
     </div>
+    </LevelLock>
   );
 }

@@ -166,7 +166,7 @@ export function getCompletedLessons(level) {
 
 // ===== ANSWER TRACKING =====
 
-export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic, isCorrect) {
+export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic, isCorrect, skill) {
   // Track incorrect answers
   if (!isCorrect) {
     if (!state.incorrectAnswers[level]) {
@@ -177,6 +177,7 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
       userAnswer,
       correctAnswer,
       topic,
+      skill: skill || topic || 'general',
       date: new Date().toISOString(),
     });
 
@@ -369,6 +370,32 @@ export function getMistakesByTopic(topic) {
 
 export function getMistakesByLevel(level) {
   return state.incorrectAnswers[level] || [];
+}
+
+export function getMistakeNotebookItems(levelFilter, skillFilter) {
+  let items = [];
+  const levels = levelFilter === 'all' ? ['A1','A2','B1','B2','C1'] : [levelFilter];
+  levels.forEach(l => {
+    const ms = state.incorrectAnswers[l] || [];
+    ms.forEach(m => {
+      items.push({ ...m, level: l });
+    });
+  });
+  if (skillFilter && skillFilter !== 'all') {
+    items = items.filter(m => (m.skill || m.topic || 'general').toLowerCase().includes(skillFilter.toLowerCase()));
+  }
+  return items;
+}
+
+export function clearMistakeByIndex(level, index) {
+  if (state.incorrectAnswers[level]) {
+    state.incorrectAnswers[level].splice(index, 1);
+    saveState(state);
+  }
+}
+
+export function markMistakeMastered(level, index) {
+  clearMistakeByIndex(level, index);
 }
 
 // ===== EXAM UNLOCK CHECK =====

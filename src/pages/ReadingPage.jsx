@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import readingData from '../data/reading.json';
+import LevelLock from '../components/LevelLock';
 
 export default function ReadingPage() {
   const { levelId } = useParams();
@@ -15,10 +16,12 @@ export default function ReadingPage() {
 
   if (exercises.length === 0) {
     return (
+      <LevelLock levelId={levelId}>
       <div className="text-center py-12">
         <p style={{ color: 'var(--text-muted)' }}>No reading exercises for {levelId}</p>
         <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
       </div>
+      </LevelLock>
     );
   }
 

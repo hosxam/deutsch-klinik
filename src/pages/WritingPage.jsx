@@ -2,6 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, updateState } from '../utils/store';
 import writingData from '../data/writing.json';
+import LevelLock from '../components/LevelLock';
+import { Copy, ClipboardCheck } from 'lucide-react';
 
 export default function WritingPage() {
   const { levelId } = useParams();
@@ -12,6 +14,8 @@ export default function WritingPage() {
   const [timerActive, setTimerActive] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [pastWritings, setPastWritings] = useState([]);
+  const [showAiPrompt, setShowAiPrompt] = useState(false);
+  const [aiCopied, setAiCopied] = useState(false);
 
   const prompt = prompts[currentIndex];
 
@@ -53,15 +57,18 @@ export default function WritingPage() {
 
   if (prompts.length === 0) {
     return (
+      <LevelLock levelId={levelId}>
       <div className="text-center py-12">
         <p style={{ color: 'var(--text-muted)' }}>No writing prompts for {levelId}</p>
         <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
       </div>
+      </LevelLock>
     );
   }
 
   if (submitted) {
     return (
+      <LevelLock levelId={levelId}>
       <div className="max-w-2xl mx-auto text-center py-8">
         <div className="text-5xl mb-4">✍️</div>
         <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Submitted!</h2>
@@ -81,6 +88,24 @@ export default function WritingPage() {
           ))}
         </div>
 
+        {/* AI Correction section */}
+        <div className="mt-4">
+          <button onClick={() => setShowAiPrompt(!showAiPrompt)} className="text-xs px-3 py-1.5 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
+            {showAiPrompt ? 'Hide' : 'Copy prompt for AI correction'}
+          </button>
+          {showAiPrompt && (
+            <div className="mt-2 rounded-xl p-3" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid #8b5cf6' }}>
+              <textarea readOnly value={`Correct my German answer. Identify grammar mistakes, vocabulary mistakes, sentence structure problems, and give me a corrected version. My level is ${levelId}. The task was: ${prompt.prompt}. My answer is: ${text}.`} rows={5}
+                className="w-full p-2 rounded-lg text-xs outline-none resize-none"
+                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }} />
+              <button onClick={() => { navigator.clipboard.writeText(`Correct my German answer. Identify grammar mistakes, vocabulary mistakes, sentence structure problems, and give me a corrected version. My level is ${levelId}. The task was: ${prompt.prompt}. My answer is: ${text}.`); setAiCopied(true); setTimeout(() => setAiCopied(false), 2000); }}
+                className="mt-1 text-xs px-3 py-1.5 rounded-lg flex items-center gap-1" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+                {aiCopied ? <><ClipboardCheck size={12} /> Copied!</> : <><Copy size={12} /> Copy to clipboard</>}
+              </button>
+            </div>
+          )}
+        </div>
+
         <div className="flex gap-3 justify-center">
           <button onClick={() => { setText(''); setSubmitted(false); setTimer(0); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
             Try Again
@@ -90,10 +115,12 @@ export default function WritingPage() {
           </Link>
         </div>
       </div>
+      </LevelLock>
     );
   }
 
   return (
+    <LevelLock levelId={levelId}>
     <div className="max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
@@ -153,5 +180,6 @@ export default function WritingPage() {
         </div>
       )}
     </div>
+    </LevelLock>
   );
 }
