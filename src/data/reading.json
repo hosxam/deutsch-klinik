@@ -627,46 +627,52 @@
       "level": "A1"
     },
     {
+      "id": "A1_read_17",
       "lessonId": "A1_lesson_17",
-      "title": "Im Zoo",
-      "text": "Die Klasse 2a macht einen Ausflug in den Zoo. Die Kinder sehen viele Tiere. Da sind Loewen, Affen und Elefanten. Die Elefanten sind sehr gross. Die Affen sind lustig. Die Kinder lachen viel. Der Zoobesuch kostet 5 Euro pro Kind.",
+      "title": "Reise nach Berlin",
+      "text": "Lisa und ihre Familie fahren nach Berlin. Sie fahren mit dem Zug. Der Zug fahrt um 8 Uhr ab. Sie kommen um 12 Uhr in Berlin an. Lisa freut sich auf den Zoo und das Museum.",
       "questions": [
         {
-          "id": "qr_A1_r17_1",
+          "id": "qr17_1",
           "type": "true-false",
-          "question": "Die Kinder sehen nur Loewen.",
+          "question": "Lisa fahrt mit dem Bus nach Berlin.",
           "answer": "false",
-          "explanation": "Sie sehen Loewen, Affen und Elefanten."
+          "explanation": "Der Text sagt: \"Sie fahren mit dem Zug.\""
         },
         {
-          "id": "qr_A1_r17_2",
-          "type": "mcq",
-          "question": "Welche Tiere sind lustig?",
-          "options": [
-            "Die Loewen",
-            "Die Elefanten",
-            "Die Affen",
-            "Die Voegel"
-          ],
-          "answer": "Die Affen",
-          "explanation": "Die Affen sind lustig."
+          "id": "qr17_2",
+          "type": "true-false",
+          "question": "Der Zug fahrt um 8 Uhr ab.",
+          "answer": "true",
+          "explanation": "Der Text sagt: \"Der Zug fahrt um 8 Uhr ab.\""
         },
         {
-          "id": "qr_A1_r17_3",
+          "id": "qr17_3",
           "type": "mcq",
-          "question": "Wie viel kostet der Zoobesuch pro Kind?",
+          "question": "Wann kommen sie in Berlin an?",
           "options": [
-            "3 Euro",
-            "4 Euro",
-            "5 Euro",
-            "6 Euro"
+            "Um 8 Uhr",
+            "Um 10 Uhr",
+            "Um 12 Uhr",
+            "Um 14 Uhr"
           ],
-          "answer": "5 Euro",
-          "explanation": "Der Zoobesuch kostet 5 Euro pro Kind."
+          "answer": "Um 12 Uhr",
+          "explanation": "Der Text sagt: \"Sie kommen um 12 Uhr in Berlin an.\""
+        },
+        {
+          "id": "qr17_4",
+          "type": "mcq",
+          "question": "Worauf freut sich Lisa?",
+          "options": [
+            "Auf das Hotel",
+            "Auf den Zoo und das Museum",
+            "Auf das Restaurant",
+            "Auf den Bahnhof"
+          ],
+          "answer": "Auf den Zoo und das Museum",
+          "explanation": "Der Text sagt: \"Lisa freut sich auf den Zoo und das Museum.\""
         }
-      ],
-      "id": "A1_read_17",
-      "level": "A1"
+      ]
     },
     {
       "lessonId": "A1_lesson_18",
@@ -1807,44 +1813,51 @@
     },
     {
       "id": "A1_read_47",
-      "title": "Cafe Bluemchen",
-      "text": "Herzlich willkommen im Cafe Bluemchen!\n\nWir haben frische Kuchen und Kaffee fuer Sie.\n\nUnsere Spezialitaeten:\n- Hausgemachter Apfelkuchen: 3,50 Euro\n- Cappuccino: 3,00 Euro\n- Heisse Schokolade: 2,80 Euro\n- Kaeskuchen: 3,80 Euro\n\nWLAN Passwort: cafe2025\n\nZahlung: Bar oder Karte\nBitte bezahlen Sie an der Kasse.",
+      "lessonId": "A1_lesson_22",
+      "title": "Termin absagen",
+      "text": "Herr Schmidt hat einen Termin bei Dr. Klein am Mittwoch um 10 Uhr. Er kann nicht kommen. Er ruft in der Praxis an. Er sagt: \"Guten Tag, ich muss meinen Termin am Mittwoch absagen. Ich bin krank. Kann ich einen neuen Termin am Freitag bekommen?\" Die Sprechstundenhilfe sagt: \"Ja, am Freitag um 11 Uhr geht es.\"",
       "questions": [
         {
-          "id": "qr237",
-          "type": "mcq",
-          "question": "Was kostet der Cappuccino?",
-          "options": [
-            "2,50 Euro",
-            "2,80 Euro",
-            "3,00 Euro",
-            "3,50 Euro"
-          ],
-          "answer": "3,00 Euro",
-          "explanation": "Der Text sagt: 'Cappuccino: 3,00 Euro.'"
-        },
-        {
-          "id": "qr238",
+          "id": "qr47_1",
           "type": "true-false",
-          "question": "Man kann mit Karte bezahlen.",
-          "answer": "true",
-          "explanation": "Der Text sagt: 'Zahlung: Bar oder Karte.'"
+          "question": "Herr Schmidt hat einen Termin am Dienstag.",
+          "answer": "false",
+          "explanation": "Der Termin ist am Mittwoch, nicht am Dienstag."
         },
         {
-          "id": "qr239",
+          "id": "qr47_2",
+          "type": "true-false",
+          "question": "Herr Schmidt ruft in der Praxis an.",
+          "answer": "true",
+          "explanation": "Der Text sagt: \"Er ruft in der Praxis an.\""
+        },
+        {
+          "id": "qr47_3",
           "type": "mcq",
-          "question": "Was ist das WLAN Passwort?",
+          "question": "Warum kann Herr Schmidt nicht kommen?",
           "options": [
-            "cafe2024",
-            "cafe2025",
-            "bluemchen",
-            "kaffee"
+            "Er hat Urlaub",
+            "Er ist krank",
+            "Er hat keine Zeit",
+            "Er ist im Urlaub"
           ],
-          "answer": "cafe2025",
-          "explanation": "Der Text sagt: 'WLAN Passwort: cafe2025.'"
+          "answer": "Er ist krank",
+          "explanation": "Herr Schmidt sagt: \"Ich bin krank.\""
+        },
+        {
+          "id": "qr47_4",
+          "type": "mcq",
+          "question": "Wann bekommt Herr Schmidt den neuen Termin?",
+          "options": [
+            "Am Mittwoch um 10 Uhr",
+            "Am Freitag um 11 Uhr",
+            "Am Donnerstag um 10 Uhr",
+            "Am Freitag um 10 Uhr"
+          ],
+          "answer": "Am Freitag um 11 Uhr",
+          "explanation": "Die Sprechstundenhilfe sagt: \"Am Freitag um 11 Uhr geht es.\""
         }
-      ],
-      "lessonId": "A1_lesson_22"
+      ]
     },
     {
       "id": "A1_read_48",
