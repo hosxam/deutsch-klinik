@@ -6,7 +6,7 @@ import { RefreshCw, ThumbsUp, ThumbsDown } from 'lucide-react';
 
 export default function FlashcardPage() {
   const { levelId } = useParams();
-  const words = [...(vocabData[levelId] || [])].sort(() => Math.random() - 0.5);
+  const [words] = useState(() => [...(vocabData[levelId] || [])].sort(() => Math.random() - 0.5));
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(false);
@@ -29,7 +29,6 @@ export default function FlashcardPage() {
       setFlipped(false);
     } else {
       setDone(true);
-      // Save flashcard session
       const state = getState();
       if (!state.flashcards) state.flashcards = {};
       const today = new Date().toISOString().split('T')[0];
@@ -74,7 +73,6 @@ export default function FlashcardPage() {
         <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{index + 1}/{words.length}</span>
       </div>
 
-      {/* Flashcard */}
       <div
         onClick={() => setFlipped(!flipped)}
         className="rounded-xl p-10 text-center cursor-pointer transition-all min-h-[200px] flex items-center justify-center"

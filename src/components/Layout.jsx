@@ -1,7 +1,7 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { getState, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, GraduationCap, Home, BookOpen, ExternalLink, Stethoscope, ChevronRight } from 'lucide-react';
+import { Menu, X, Sun, Moon, GraduationCap, Home, BookOpen, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, BookMarked, AlertTriangle } from 'lucide-react';
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -61,6 +61,26 @@ export default function Layout() {
                 }}
               >
                 <Stethoscope size={14} /> Medical
+              </Link>
+              <Link
+                to="/c1-readiness"
+                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
+                style={{
+                  backgroundColor: location.pathname === '/c1-readiness' ? 'var(--bg-hover)' : 'transparent',
+                  color: location.pathname === '/c1-readiness' ? 'var(--accent)' : 'var(--text-secondary)',
+                }}
+              >
+                <ClipboardCheck size={14} /> C1 Ready
+              </Link>
+              <Link
+                to="/mistake-notebook"
+                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
+                style={{
+                  backgroundColor: location.pathname === '/mistake-notebook' ? 'var(--bg-hover)' : 'transparent',
+                  color: location.pathname === '/mistake-notebook' ? '#ffaa33' : 'var(--text-secondary)',
+                }}
+              >
+                <AlertTriangle size={14} /> Mistakes
               </Link>
             </div>
 

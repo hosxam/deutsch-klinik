@@ -1,0 +1,382 @@
+[
+  {
+    "level": "B2",
+    "unit": "B2_unit_1",
+    "id": "B2_lesson_1",
+    "title": "Wirtschaft: Maerkte und Trends",
+    "objective": "Discuss economic trends using advanced passive forms and nominalization.",
+    "explanation": "At B2 level, use Vorgangspassiv (werden + Partizip II) and Zustandspassiv (sein + Partizip II). The state passive describes a resulting state. Nominalization converts verbs to nouns: 'importieren' becomes 'der Import', 'wachsen' becomes 'das Wachstum'.",
+    "examples": [
+      "Die Aktienkurse sind gestiegen. (Zustandspassiv)",
+      "Die Preise werden jedes Jahr erhoeht. (Vorgangspassiv)",
+      "Der Import von Rohstoffen nimmt zu.",
+      "Das Wirtschaftswachstum ist beeindruckend.",
+      "Die Inflation wird von vielen Faktoren beeinflusst."
+    ],
+    "vocabulary": [
+      { "word": "die Wirtschaft", "translation": "economy", "example": "Die Wirtschaft waechst langsam." },
+      { "word": "der Markt", "translation": "market", "example": "Der Markt ist global." },
+      { "word": "die Inflation", "translation": "inflation", "example": "Die Inflation steigt." },
+      { "word": "das Wachstum", "translation": "growth", "example": "Das Wirtschaftswachstum betraegt 2%." },
+      { "word": "der Import", "translation": "import", "example": "Der Import von Oel ist teuer." }
+    ],
+    "grammarFocus": "Vorgangspassiv vs Zustandspassiv: 'Die Tuer wird geoeffnet' (process) vs 'Die Tuer ist geoeffnet' (state). Nominalization: Verb to Nomen (exportieren -> der Export, investieren -> die Investition).",
+    "guidedPractice": [
+      { "prompt": "Vorgangspassiv: 'The prices are increased.'", "answer": "Die Preise werden erhoeht." },
+      { "prompt": "Zustandspassiv: 'The door is open (state).'", "answer": "Die Tuer ist geoeffnet." },
+      { "prompt": "Nominalize 'wachsen' (to grow).", "answer": "das Wachstum" },
+      { "prompt": "Nominalize 'investieren'.", "answer": "die Investition" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 sentences using nominalization (das Wachstum, der Import, die Entwicklung).", "type": "writing" },
+      { "prompt": "Write a short economic analysis (80 words) using both passive forms.", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'Die Inflation ist in diesem Jahr um 2% gestiegen. Die Preise werden weiter steigen.'",
+    "readingTask": "Read: 'Der globale Markt wird von mehreren Faktoren beeinflusst. Die Nachfrage nach Rohstoffen ist gestiegen.'",
+    "speakingTask": "Record yourself describing an economic trend in your country. Use passive and nominalization.",
+    "writingTask": "Write a paragraph analyzing a current economic trend using nominalization and both passives.",
+    "reviewSummary": "You learned economic vocabulary, Vorgangspassiv vs Zustandspassiv, and nominalization."
+  },
+  {
+    "level": "B2",
+    "unit": "B2_unit_2",
+    "id": "B2_lesson_2",
+    "title": "Wissenschaft: Forschung und Ethik",
+    "objective": "Discuss scientific topics using reported speech (Konjunktiv I).",
+    "explanation": "Konjunktiv I is used for reported speech (indirect speech) in formal German. 'Er sagt, er komme morgen' (He says he's coming tomorrow). Used in news reporting and academic writing. Often substituted by wuerde + infinitive in spoken German.",
+    "examples": [
+      "Der Forscher sagt, die Ergebnisse seien vielversprechend.",
+      "Die Studie behauptet, dass der Klimawandel beschleunigt werde.",
+      "Der Arzt meint, der Patient habe sich erholt.",
+      "Die Wissenschaftler glauben, die Entdeckung sei bedeutend.",
+      "Er fragt, ob die Forschung ethischen Standards entspreche."
+    ],
+    "vocabulary": [
+      { "word": "die Forschung", "translation": "research", "example": "Die Forschung macht Fortschritte." },
+      { "word": "die Studie", "translation": "study", "example": "Die Studie zeigt neue Ergebnisse." },
+      { "word": "die Entdeckung", "translation": "discovery", "example": "Die Entdeckung ist bahnbrechend." },
+      { "word": "die Ethik", "translation": "ethics", "example": "Die Ethik spielt eine wichtige Rolle." },
+      { "word": "der Wissenschaftler", "translation": "scientist", "example": "Der Wissenschaftler forscht an Krebs." }
+    ],
+    "grammarFocus": "Konjunktiv I: ich sei, du seiest, er/sie/es sei; ich habe, du habest, er/sie/es habe; ich werde, du werdest, er/sie/es werde.",
+    "guidedPractice": [
+      { "prompt": "Report: Er sagt 'Ich bin muede' -> Er sagt, er __ muede.", "answer": "sei" },
+      { "prompt": "Report: Sie sagt 'Ich habe keine Zeit' -> Sie sagt, sie ___ keine Zeit.", "answer": "habe" },
+      { "prompt": "Report: 'Die Forschung macht Fortschritte' -> Er sagt, die Forschung __ Fortschritte.", "answer": "mache" },
+      { "prompt": "Report: 'Wir werden die Studie veroeffentlichen' -> Sie sagen, sie ___ die Studie veroeffentlichen.", "answer": "werden" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 reported speech sentences about a scientific article.", "type": "writing" },
+      { "prompt": "Convert 5 direct quotes from a news article into indirect speech.", "type": "grammar" }
+    ],
+    "listeningTask": "Read aloud: 'Der Wissenschaftler berichtet, die Ergebnisse der Studie seien ueberraschend.'",
+    "readingTask": "Read: 'Eine neue Studie zeigt, dass der Klimawandel schneller voranschreite als erwartet.'",
+    "speakingTask": "Record a 1-minute report summarizing a news item using Konjunktiv I.",
+    "writingTask": "Write a short news report summarizing a scientific discovery. Use at least 3 Konjunktiv I constructions.",
+    "reviewSummary": "You learned scientific vocabulary, Konjunktiv I for reported speech, and how to report research findings."
+  },
+  {
+    "level": "B2",
+    "unit": "B2_unit_3",
+    "id": "B2_lesson_3",
+    "title": "Politik: Systeme und Debatten",
+    "objective": "Describe political systems, express nuanced arguments, use extended participial phrases.",
+    "explanation": "Extended participial phrases (erweiterte Partizipialattribute) are a hallmark of formal German. Instead of 'Der Politiker, der gestern sprach' use 'Der gestern sprechende Politiker'. These phrases pack information compactly.",
+    "examples": [
+      "Die gestern verabschiedete Reform ist umstritten.",
+      "Der seit Jahren anhaltende Konflikt muss geloest werden.",
+      "Die von der Regierung vorgeschlagenen Massnahmen sind weitreichend.",
+      "Der im Parlament diskutierte Gesetzesentwurf wurde abgelehnt.",
+      "Die fuer naechstes Jahr geplanten Wahlen sind wichtig."
+    ],
+    "vocabulary": [
+      { "word": "die Regierung", "translation": "government", "example": "Die Regierung verabschiedet ein neues Gesetz." },
+      { "word": "das Parlament", "translation": "parliament", "example": "Das Parlament debattiert ueber die Reform." },
+      { "word": "die Reform", "translation": "reform", "example": "Die Reform ist umstritten." },
+      { "word": "der Gesetzesentwurf", "translation": "draft law", "example": "Der Gesetzesentwurf wurde angenommen." },
+      { "word": "die Massnahme", "translation": "measure", "example": "Die Massnahmen sind notwendig." }
+    ],
+    "grammarFocus": "Extended participial phrases: Partizip I (present: der sprechende Politiker) or Partizip II (past: die verabschiedete Reform) + extensions before the noun.",
+    "guidedPractice": [
+      { "prompt": "Shorten: 'Die Reform, die gestern verabschiedet wurde'", "answer": "Die gestern verabschiedete Reform" },
+      { "prompt": "Shorten: 'Der Konflikt, der seit Jahren anhaelt'", "answer": "Der seit Jahren anhaltende Konflikt" },
+      { "prompt": "Shorten: 'Der Politiker, der gestern sprach'", "answer": "Der gestern sprechende Politiker" },
+      { "prompt": "Shorten: 'Die Wahlen, die fuer naechstes Jahr geplant sind'", "answer": "Die fuer naechstes Jahr geplanten Wahlen" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 sentences using extended participial phrases about political topics.", "type": "writing" },
+      { "prompt": "Convert 5 relative clauses into participial phrases.", "type": "grammar" }
+    ],
+    "listeningTask": "Read aloud: 'Der von der Opposition kritisierte Gesetzesentwurf wurde im Parlament diskutiert.'",
+    "readingTask": "Read: 'Die von der Regierung vorgeschlagenen Massnahmen zur Senkung der CO2-Emissionen sind weitreichend.'",
+    "speakingTask": "Record a 1-minute political commentary using at least 3 extended participial phrases.",
+    "writingTask": "Write a political analysis paragraph (100 words) using extended participial attributes.",
+    "reviewSummary": "You learned political vocabulary, extended participial phrases, and condensing information in formal German."
+  },
+  {
+    "level": "B2",
+    "unit": "B2_unit_4",
+    "id": "B2_lesson_4",
+    "title": "Literatur: Analyse und Interpretation",
+    "objective": "Analyze literary texts, express interpretations, and use literary terminology.",
+    "explanation": "Literary analysis requires specific vocabulary: 'Der Autor thematisiert...' (The author addresses...), 'Das Werk handelt von...' (The work is about...). Use Praesens for discussing literature (historical present).",
+    "examples": [
+      "Der Roman handelt von der Suche nach Identitaet.",
+      "Die Autorin thematisiert gesellschaftliche Konflikte.",
+      "Die Metapher des Meeres symbolisiert die Freiheit.",
+      "Die Erzaehlperspektive beeinflusst die Leserwahrnehmung.",
+      "Das Werk ist in drei Teile gegliedert."
+    ],
+    "vocabulary": [
+      { "word": "der Roman", "translation": "novel", "example": "Der Roman spielt im 19. Jahrhundert." },
+      { "word": "die Erzaehlung", "translation": "story/narrative", "example": "Die Erzaehlung ist sehr spannend." },
+      { "word": "die Metapher", "translation": "metaphor", "example": "Die Metapher ist sehr bildhaft." },
+      { "word": "der Autor", "translation": "author", "example": "Der Autor schreibt ueber die Liebe." },
+      { "word": "interpretieren", "translation": "to interpret", "example": "Wie interpretieren Sie diese Stelle?" }
+    ],
+    "grammarFocus": "Historical present: Always use Praesens when discussing the plot, themes, or actions in a literary work. 'Der Protagonist verlaesst seine Heimat und sucht ein neues Leben.'",
+    "guidedPractice": [
+      { "prompt": "Complete: Der Roman ___ von der Liebe. (is about)", "answer": "handelt" },
+      { "prompt": "Say 'The author addresses social conflicts.'", "answer": "Der Autor thematisiert gesellschaftliche Konflikte." },
+      { "prompt": "Complete: Die Metapher ___ die Freiheit. (symbolizes)", "answer": "symbolisiert" },
+      { "prompt": "Say 'The work is divided into three parts.'", "answer": "Das Werk ist in drei Teile gegliedert." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a short literary analysis of a book or film you know (80 words).", "type": "writing" },
+      { "prompt": "Identify 3 metaphors in a German poem and explain their meaning.", "type": "creative" }
+    ],
+    "listeningTask": "Read aloud: 'Der Roman spielt im Nachkriegsdeutschland und handelt von einem jungen Mann, der seine Identitaet sucht.'",
+    "readingTask": "Read: 'Die Autorin verwendet die Metapher des Gartens, um die Entwicklung der Hauptfigur darzustellen.'",
+    "speakingTask": "Record a 1-minute analysis of a book or film you know. Use literary terminology.",
+    "writingTask": "Write an analysis paragraph (100 words) about a literary work using appropriate terminology.",
+    "reviewSummary": "You learned literary vocabulary, historical present tense, and how to analyze texts."
+  },
+  {
+    "level": "B2",
+    "unit": "B2_unit_5",
+    "id": "B2_lesson_5",
+    "title": "Migration und Vielfalt",
+    "objective": "Discuss migration and diversity using modal verbs for subjective meaning and connectors.",
+    "explanation": "Modal verbs can express subjective meaning (speculation, assumption). 'Er muss zu Hause sein' (He must be at home - assumption). 'Sie kann die Wahrheit sagen' (She might be telling the truth). Use 'duerfte' for probability and 'mag' for possibility.",
+    "examples": [
+      "Er muss schon angekommen sein. - He must have already arrived.",
+      "Sie duerfte recht haben. - She is probably right.",
+      "Das mag stimmen, aber ich bin nicht sicher.",
+      "Die Integration kann herausfordernd sein.",
+      "Kulturelle Vielfalt sollte als Bereicherung gesehen werden."
+    ],
+    "vocabulary": [
+      { "word": "die Migration", "translation": "migration", "example": "Die Migration ist ein globales Thema." },
+      { "word": "die Integration", "translation": "integration", "example": "Integration braucht Zeit." },
+      { "word": "die Vielfalt", "translation": "diversity", "example": "Vielfalt ist eine Staerke." },
+      { "word": "die Gesellschaft", "translation": "society", "example": "Die Gesellschaft wird vielfaeltiger." },
+      { "word": "die Bereicherung", "translation": "enrichment", "example": "Kulturen bereichern unser Leben." }
+    ],
+    "grammarFocus": "Modal verbs for subjective meaning: muessen (must be), koennen (could be), duerften (probably), moegen (may). Infinitive at end + haben for past assumptions: 'Er muss gewusst haben.'",
+    "guidedPractice": [
+      { "prompt": "Express assumption: 'He must be home.'", "answer": "Er muss zu Hause sein." },
+      { "prompt": "Express probability: 'She is probably right.'", "answer": "Sie duerfte recht haben." },
+      { "prompt": "Past assumption: 'He must have known.'", "answer": "Er muss gewusst haben." },
+      { "prompt": "Say 'Diversity should be seen as enrichment.'", "answer": "Vielfalt sollte als Bereicherung gesehen werden." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 sentences about migration using subjective modal verbs.", "type": "writing" },
+      { "prompt": "Write a paragraph about benefits of cultural diversity (80 words).", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'In einer globalisierten Welt ist Migration normal. Kulturen mischen sich und neue Identitaeten entstehen.'",
+    "readingTask": "Read: 'Deutschland ist ein Einwanderungsland. Ueber 20% der Bevoelkerung haben einen Migrationshintergrund.'",
+    "speakingTask": "Record yourself discussing the benefits of diversity in society (1 minute).",
+    "writingTask": "Write an opinion piece (120 words) on integration challenges and opportunities.",
+    "reviewSummary": "You learned migration vocabulary, subjective modal meanings, and discussing diversity."
+  },
+  {
+    "level": "C1",
+    "unit": "C1_unit_1",
+    "id": "C1_lesson_1",
+    "title": "Akademische Diskurse fuehren",
+    "objective": "Lead academic discussions, use advanced connectors, and write formal arguments.",
+    "explanation": "Academic German requires sophisticated connectors: 'insofern' (insofar as), 'demzufolge' (consequently), 'in Anbetracht dessen' (in view of this), 'nichtsdestotrotz' (nevertheless). Use nominal style and formal register. Write in third person or impersonal 'man'.",
+    "examples": [
+      "In Anbetracht der aktuellen Forschungslage ist diese These fragwuerdig.",
+      "Demzufolge muss die Methodik ueberdacht werden.",
+      "Insofern die Datenlage dies zulaesst, lassen sich folgende Schluesse ziehen.",
+      "Nichtsdestotrotz bleibt die Frage nach der Validitaet offen.",
+      "Es ist davon auszugehen, dass weitere Studien notwendig sind."
+    ],
+    "vocabulary": [
+      { "word": "die These", "translation": "thesis/hypothesis", "example": "Diese These ist umstritten." },
+      { "word": "die Methodik", "translation": "methodology", "example": "Die Methodik der Studie ist solide." },
+      { "word": "die Validitaet", "translation": "validity", "example": "Die Validitaet der Ergebnisse muss geprueft werden." },
+      { "word": "der Diskurs", "translation": "discourse", "example": "Der akademische Diskurs erfordert Praezision." },
+      { "word": "die Schlussfolgerung", "translation": "conclusion", "example": "Die Schlussfolgerung ist logisch." }
+    ],
+    "grammarFocus": "Advanced connectors: insofern, demzufolge, in Anbetracht dessen, nichtsdestotrotz, dahingehend. Impersonal constructions: 'Es ist anzunehmen, dass...', 'Es bleibt zu fragen, ob...'",
+    "guidedPractice": [
+      { "prompt": "Say 'Consequently, the methodology must be reconsidered.'", "answer": "Demzufolge muss die Methodik ueberdacht werden." },
+      { "prompt": "Complete: ___ der Datenlage ist die These fragwuerdig. (In view of)", "answer": "In Anbetracht" },
+      { "prompt": "Say 'Nevertheless, the question remains open.'", "answer": "Nichtsdestotrotz bleibt die Frage offen." },
+      { "prompt": "Use impersonal: 'One can assume that...'", "answer": "Es ist anzunehmen, dass..." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a short academic abstract (100 words) using advanced connectors.", "type": "writing" },
+      { "prompt": "Rewrite a simple argument in formal academic register.", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'In Anbetracht der vorliegenden Ergebnisse ist die Hypothese als bestaetigt anzusehen. Demzufolge ergeben sich neue Forschungsfragen.'",
+    "readingTask": "Read: 'Die Studie kommt zu dem Schluss, dass der Faktor X signifikant ist. Insofern die Stichprobengroesse ausreichend war, sind die Ergebnisse generalisierbar.'",
+    "speakingTask": "Record a 2-minute academic presentation on a research topic. Use formal register.",
+    "writingTask": "Write an academic argument (150 words) using 5+ advanced connectors.",
+    "reviewSummary": "You learned academic vocabulary, advanced connectors, and formal register for academic writing."
+  },
+  {
+    "level": "C1",
+    "unit": "C1_unit_2",
+    "id": "C1_lesson_2",
+    "title": "Recht und Ethik diskutieren",
+    "objective": "Discuss legal and ethical issues using differential subjunctive and formal argumentation.",
+    "explanation": "The differential subjunctive distinguishes Konjunktiv I (reported speech) from Konjunktiv II (unreal situations). In legal contexts, Konjunktiv II is used for hypothetical cases. 'Wenn dies der Fall waere, muesste das Gericht anders entscheiden.'",
+    "examples": [
+      "Wenn dies der Fall waere, muesste anders entschieden werden.",
+      "Das Gericht koennte zu dem Schluss kommen, dass die Klage abzuweisen sei.",
+      "Angenommen, der Sachverhalt stellte sich anders dar...",
+      "Es waere zu praefen, ob die Vorschrift anwendbar ist.",
+      "Selbst wenn die Rechtslage eindeutig waere, bleiben ethische Fragen."
+    ],
+    "vocabulary": [
+      { "word": "das Recht", "translation": "law/right", "example": "Das Recht auf freie Meinungsaeusserung ist grundlegend." },
+      { "word": "das Gericht", "translation": "court", "example": "Das Gericht faellt ein Urteil." },
+      { "word": "die Klage", "translation": "lawsuit", "example": "Die Klage wurde abgewiesen." },
+      { "word": "das Urteil", "translation": "judgment/verdict", "example": "Das Urteil ist rechtskraeftig." },
+      { "word": "die Vorschrift", "translation": "regulation", "example": "Die Vorschrift muss eingehalten werden." }
+    ],
+    "grammarFocus": "Differential subjunctive: KI for reported opinions ('Das Gericht meine...'), KII for hypotheticals ('Wenn die Lage anders waere...'). Combined: 'Er sagte, selbst wenn das Recht klar sei, bleibe die Ethik.'",
+    "guidedPractice": [
+      { "prompt": "Hypothetical: 'If this were the case, the court would decide differently.'", "answer": "Wenn dies der Fall waere, wuerde das Gericht anders entscheiden." },
+      { "prompt": "Reported: 'The court says the claim is dismissed.'", "answer": "Das Gericht sagt, die Klage sei abgewiesen." },
+      { "prompt": "Complete: ___ die Rechtslage eindeutig waere, bleiben ethische Fragen. (Even if)", "answer": "Selbst wenn" },
+      { "prompt": "Say 'It would be worth checking whether the regulation is applicable.'", "answer": "Es waere zu pruefen, ob die Vorschrift anwendbar ist." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a legal analysis of a hypothetical case (120 words).", "type": "writing" },
+      { "prompt": "Create 5 sentences mixing KI and KII in legal contexts.", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'Angenommen, der Sachverhalt stellte sich anders dar. Das Gericht muesste dann neu entscheiden.'",
+    "readingTask": "Read: 'Das Bundesverfassungsgericht hat geurteilt, dass das Gesetz verfassungskonform sei. Dennoch bleiben ethische Bedenken.'",
+    "speakingTask": "Record a 2-minute discussion of an ethical dilemma using the subjunctive.",
+    "writingTask": "Write a legal opinion (150 words) using differential subjunctive.",
+    "reviewSummary": "You learned legal vocabulary, differential subjunctive, and formal legal argumentation."
+  },
+  {
+    "level": "C1",
+    "unit": "C1_unit_3",
+    "id": "C1_lesson_3",
+    "title": "Medizin und Gesundheitssystem",
+    "objective": "Discuss healthcare systems and medical ethics using C1-level vocabulary and structures.",
+    "explanation": "Healthcare discussions require formal vocabulary. Use extended noun phrases and compound words. 'Die gesetzliche Krankenversicherung' (statutory health insurance), 'der medizinische Fortschritt' (medical progress). Discuss pros/cons using complex sentence structures.",
+    "examples": [
+      "Das deutsche Gesundheitssystem basiert auf dem Solidaritaetsprinzip.",
+      "Der medizinische Fortschritt wirft ethische Fragen auf.",
+      "Die Patientenversorgung steht vor grossen Herausforderungen.",
+      "Die Digitalisierung im Gesundheitswesen schreitet voran.",
+      "Eine Grundeinscheidung zwischen Praevention und Kuration ist erforderlich."
+    ],
+    "vocabulary": [
+      { "word": "die Krankenversicherung", "translation": "health insurance", "example": "Die gesetzliche Krankenversicherung deckt die Kosten." },
+      { "word": "die Patientenversorgung", "translation": "patient care", "example": "Die Patientenversorgung hat Prioritaet." },
+      { "word": "die Praevention", "translation": "prevention", "example": "Praevention ist besser als Behandlung." },
+      { "word": "die Digitalisierung", "translation": "digitalization", "example": "Die Digitalisierung veraendert die Medizin." },
+      { "word": "die Kuration", "translation": "curative treatment", "example": "Kuration und Praevention muessen ausbalanciert sein." }
+    ],
+    "grammarFocus": "Complex nominal groups: Article + adjective(s) + noun (die gesetzliche Krankenversicherung). Extended participial attributes: 'Der in der Notaufnahme behandelte Patient...'",
+    "guidedPractice": [
+      { "prompt": "Translate 'the German healthcare system'", "answer": "Das deutsche Gesundheitssystem" },
+      { "prompt": "Say 'Medical progress raises ethical questions.'", "answer": "Der medizinische Fortschritt wirft ethische Fragen auf." },
+      { "prompt": "Complete: '___ ist besser als Behandlung. (Prevention)'", "answer": "Praevention" },
+      { "prompt": "Say 'Digitalization in healthcare is progressing.'", "answer": "Die Digitalisierung im Gesundheitswesen schreitet voran." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a comparison of two healthcare systems (120 words).", "type": "writing" },
+      { "prompt": "Create a list of 10 medical compound words with their meanings.", "type": "vocabulary" }
+    ],
+    "listeningTask": "Read aloud: 'Das deutsche Gesundheitssystem gilt als eines der besten weltweit. Die gesetzliche Krankenversicherung deckt die meisten Leistungen ab.'",
+    "readingTask": "Read: 'Die Digitalisierung im Gesundheitswesen bietet Chancen aber auch Risiken. Die elektronische Patientenakte soll die Versorgung verbessern.'",
+    "speakingTask": "Record a 2-minute discussion of healthcare challenges in your country.",
+    "writingTask": "Write a position paper (150 words) on digitalization in healthcare.",
+    "reviewSummary": "You learned healthcare vocabulary, complex nominal groups, and discussing medical systems."
+  },
+  {
+    "level": "C1",
+    "unit": "C1_unit_4",
+    "id": "C1_lesson_4",
+    "title": "Globalisierung und Nachhaltigkeit",
+    "objective": "Analyze global issues and sustainability using figurative language and idioms.",
+    "explanation": "C1 speakers use idioms and figurative language naturally. 'Das Fass zum Ueberlaufen bringen' (to be the last straw), 'den Nagel auf den Kopf treffen' (to hit the nail on the head). Use these to add nuance to discussions of global challenges.",
+    "examples": [
+      "Die Globalisierung ist ein zweischneidiges Schwert.",
+      "Der Klimawandel bringt das Fass zum Ueberlaufen.",
+      "Nachhaltigkeit ist in aller Munde, aber was steckt dahinter?",
+      "Wir duerfen nicht langer die Augen vor der Realitaet verschliessen.",
+      "Die Zeit drueckt - wir muessen jetzt handeln."
+    ],
+    "vocabulary": [
+      { "word": "die Globalisierung", "translation": "globalization", "example": "Die Globalisierung hat Vor- und Nachteile." },
+      { "word": "die Nachhaltigkeit", "translation": "sustainability", "example": "Nachhaltigkeit ist ein wichtiges Ziel." },
+      { "word": "die Ressource", "translation": "resource", "example": "Ressourcen sind begrenzt." },
+      { "word": "der Klimawandel", "translation": "climate change", "example": "Der Klimawandel ist eine globale Herausforderung." },
+      { "word": "die Massnahme", "translation": "measure", "example": "Wir brauchen konkrete Massnahmen." }
+    ],
+    "grammarFocus": "Idiomatic expressions and figurative language: 'ein zweischneidiges Schwert' (double-edged sword), 'in aller Munde sein' (to be on everyone's lips), 'die Augen verschliessen' (to turn a blind eye). Use with appropriate register.",
+    "guidedPractice": [
+      { "prompt": "Idiom: 'to be the last straw' in German", "answer": "Das Fass zum Ueberlaufen bringen" },
+      { "prompt": "Say 'Globalization is a double-edged sword.'", "answer": "Die Globalisierung ist ein zweischneidiges Schwert." },
+      { "prompt": "Idiom: 'to hit the nail on the head'", "answer": "Den Nagel auf den Kopf treffen" },
+      { "prompt": "Say 'We can no longer close our eyes to reality.'", "answer": "Wir koennen nicht langer die Augen vor der Realitaet verschliessen." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write an analysis of a global issue using 3+ German idioms.", "type": "writing" },
+      { "prompt": "Create a list of 10 German idioms with example sentences.", "type": "vocabulary" }
+    ],
+    "listeningTask": "Read aloud: 'Die Globalisierung hat die Welt kleiner gemacht, aber auch neue Probleme geschaffen. Nachhaltigkeit ist heute in aller Munde.'",
+    "readingTask": "Read: 'Der Klimawandel ist eine existenzielle Bedrohung. Experten warnen, dass die Zeit drueckt.'",
+    "speakingTask": "Record a 2-minute speech on sustainability using idiomatic expressions.",
+    "writingTask": "Write an opinion essay (180 words) on balancing economic growth and sustainability.",
+    "reviewSummary": "You learned sustainability vocabulary, German idioms, and how to use figurative language naturally."
+  },
+  {
+    "level": "C1",
+    "unit": "C1_unit_5",
+    "id": "C1_lesson_5",
+    "title": "Rhetorik und kreatives Schreiben",
+    "objective": "Use rhetorical devices and write persuasively in formal and creative contexts.",
+    "explanation": "Rhetorical devices (rhetorische Mittel) elevate writing: Alliteration, Metapher, rhetorische Frage, Antithese, Dreierfigur (rule of three). Use these in formal presentations, essays, and creative writing. Vary sentence length for rhythm and emphasis.",
+    "examples": [
+      "Rhetorische Frage: Ist das etwa die Zukunft, die wir wollen?",
+      "Antithese: Nicht die Starken, sondern die Schwachen brauchen unseren Schutz.",
+      "Dreierfigur: Freiheit, Gleichheit, Bruederlichkeit.",
+      "Alliteration: Milde Macht und maessiges Mass.",
+      "Metapher: Die Wellen der Globalisierung schwappen ueber alle Grenzen."
+    ],
+    "vocabulary": [
+      { "word": "die Rhetorik", "translation": "rhetoric", "example": "Gute Rhetorik ueberzeugt." },
+      { "word": "die Metapher", "translation": "metaphor", "example": "Die Metapher macht den Text lebendig." },
+      { "word": "die Alliteration", "translation": "alliteration", "example": "Alliteration ist ein Stilmittel." },
+      { "word": "die Antithese", "translation": "antithesis", "example": "Die Antithese schafft Kontraste." },
+      { "word": "die rhetorische Frage", "translation": "rhetorical question", "example": "Rhetorische Fragen regen zum Nachdenken an." }
+    ],
+    "grammarFocus": "Stylistic devices in German writing. Vary sentence structure: short punchy sentences for emphasis, long complex sentences for explanation. Use nominalization for formal tone, verbs for dynamic tone.",
+    "guidedPractice": [
+      { "prompt": "Create a rhetorical question about the environment.", "answer": "Ist das die Welt, die wir unseren Kindern hinterlassen wollen?" },
+      { "prompt": "Create an antithesis about freedom vs security.", "answer": "Mehr Freiheit bedeutet manchmal weniger Sicherheit." },
+      { "prompt": "Create a Dreierfigur about values.", "answer": "Respekt, Toleranz und Verantwortung." },
+      { "prompt": "Write an alliteration about fairness.", "answer": "Faire Forderungen fuer eine friedliche Zukunft." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a persuasive speech (200 words) using at least 5 rhetorical devices.", "type": "writing" },
+      { "prompt": "Analyze the rhetorical devices in a famous German speech.", "type": "creative" }
+    ],
+    "listeningTask": "Read aloud a persuasive passage with rhetorical questions and emphasis.",
+    "readingTask": "Read a German political speech excerpt and identify 3 rhetorical devices.",
+    "speakingTask": "Record a 3-minute persuasive speech on a topic of your choice. Use rhetorical devices.",
+    "writingTask": "Write a persuasive essay (200 words) using rhetorical questions, antithesis, and Dreierfigur.",
+    "reviewSummary": "You learned rhetorical devices (Alliteration, Metapher, Antithese, Dreierfigur, rhetorische Frage) and how to write persuasively."
+  }
+]

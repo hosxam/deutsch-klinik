@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import listeningData from '../data/listening.json';
-import { Play, Square, Volume2 } from 'lucide-react';
+import { Play, Square, Volume2, Mic } from 'lucide-react';
 
 export default function ListeningPage() {
   const { levelId } = useParams();
@@ -12,10 +12,44 @@ export default function ListeningPage() {
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [playing, setPlaying] = useState(false);
+  const [paused, setPaused] = useState(false);
   const [showTranscript, setShowTranscript] = useState(false);
-  const synthRef = useRef(null);
+  const [voices, setVoices] = useState([]);
+  const [selectedVoice, setSelectedVoice] = useState(null);
+  const utteranceRef = useRef(null);
 
   const ex = exercises[currentEx];
+
+  // Load available German voices
+  const [voiceKey, setVoiceKey] = useState(0);
+  useEffect(() => {
+    const loadVoices = () => {
+      const all = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('de'));
+      if (all.length > 0) {
+        setVoices(all);
+        const preferred = all.find(v => v.name.includes('Google') || v.name.includes('Microsoft'));
+        setSelectedVoice(prev => prev || preferred || all[0]);
+      }
+    };
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    return () => { window.speechSynthesis.onvoiceschanged = null; };
+  }, [voiceKey]);
+
+  const refreshVoices = () => {
+    setVoiceKey(k => k + 1);
+    setVoices([]);
+    // Force voices to reload
+    window.speechSynthesis.getVoices();
+  };
+
+  useEffect(() => {
+    return () => {
+      if (utteranceRef.current) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, [currentEx]);
 
   if (exercises.length === 0) {
     return (
@@ -27,22 +61,42 @@ export default function ListeningPage() {
   }
 
   const speak = () => {
-    if (synthRef.current) {
+    if (utteranceRef.current) {
       window.speechSynthesis.cancel();
     }
     const utterance = new SpeechSynthesisUtterance(ex.script);
     utterance.lang = 'de-DE';
-    utterance.rate = levelId === 'A1' ? 0.7 : levelId === 'A2' ? 0.8 : levelId === 'B1' ? 0.9 : 1.0;
+    utterance.rate = levelId === 'A1' ? 0.6 : levelId === 'A2' ? 0.7 : levelId === 'B1' ? 0.8 : 0.9;
     utterance.pitch = 1;
-    utterance.onend = () => setPlaying(false);
-    synthRef.current = utterance;
+
+    if (selectedVoice) {
+      utterance.voice = selectedVoice;
+    }
+
+    utteranceRef.current = utterance;
+    utterance.onend = () => {
+      setPlaying(false);
+      setPaused(false);
+    };
     setPlaying(true);
+    setPaused(false);
     window.speechSynthesis.speak(utterance);
+  };
+
+  const pausePlay = () => {
+    if (paused) {
+      window.speechSynthesis.resume();
+      setPaused(false);
+    } else {
+      window.speechSynthesis.pause();
+      setPaused(true);
+    }
   };
 
   const stop = () => {
     window.speechSynthesis.cancel();
     setPlaying(false);
+    setPaused(false);
   };
 
   const handleAnswer = (qId, ans) => {
@@ -65,7 +119,7 @@ export default function ListeningPage() {
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
         <div className="flex gap-2">
           {exercises.map((_, i) => (
-            <button key={i} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); setShowTranscript(false); }}
+            <button key={i} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); setShowTranscript(false); setPlaying(false); setPaused(false); }}
               className="w-8 h-8 rounded-lg text-xs font-semibold"
               style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
@@ -76,18 +130,48 @@ export default function ListeningPage() {
 
       <div className="rounded-xl p-6 mb-4 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <h2 className="font-semibold mb-2" style={{ color: 'var(--accent)' }}>{ex.title}</h2>
-        {playing ? (
-          <button onClick={stop} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ff3355', color: '#fff' }}>
-            <Square size={16} /> Stop
+
+        {/* Voice selector */}
+        <div className="flex items-center justify-center gap-2 mb-4">
+          <Mic size={14} style={{ color: 'var(--text-muted)' }} />
+          {voices.length > 0 ? (
+            <select
+              value={selectedVoice?.name || ''}
+              onChange={(e) => setSelectedVoice(voices.find(v => v.name === e.target.value) || voices[0])}
+              className="text-xs px-2 py-1 rounded outline-none"
+              style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
+            >
+              {voices.map(v => (
+                <option key={v.name} value={v.name}>{v.name}</option>
+              ))}
+            </select>
+          ) : (
+            <span className="text-xs" style={{ color: '#ffaa33' }}>No German voices detected &mdash; </span>
+          )}
+          <button onClick={refreshVoices} className="text-xs px-2 py-1 rounded" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+            Reload voices
           </button>
-        ) : (
-          <button onClick={speak} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
-            <Play size={16} /> Play Audio
-          </button>
-        )}
+        </div>
+
+        <div className="flex justify-center gap-3">
+          {!playing ? (
+            <button onClick={speak} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+              <Play size={16} /> Play Audio
+            </button>
+          ) : (
+            <>
+              <button onClick={pausePlay} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
+                {paused ? <Play size={16} /> : <Volume2 size={16} />} {paused ? 'Resume' : 'Pause'}
+              </button>
+              <button onClick={stop} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ff3355', color: '#fff' }}>
+                <Square size={16} /> Stop
+              </button>
+            </>
+          )}
+        </div>
         <div className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
           <Volume2 size={12} className="inline mr-1" />
-          Uses browser speech synthesis. Volume may vary.
+          Try different voices from the dropdown. For the best quality, install a German TTS voice on your device (Settings &gt; Accessibility &gt; Text-to-speech).
         </div>
       </div>
 

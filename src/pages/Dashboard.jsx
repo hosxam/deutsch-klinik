@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getState, updateState, updateStreak, getLevelProgress } from '../utils/store';
+import { getState, updateState, updateStreak, getLevelProgress, getReadinessScores, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
-import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, Play, BookOpen, Mic, Headphones, PenTool, FileText } from 'lucide-react';
+import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap } from 'lucide-react';
 
 const skillIcons = {
   grammar: BookOpen,
@@ -38,6 +38,10 @@ export default function Dashboard() {
     
     setTodayTasks(tasks);
   };
+
+  const readiness = getReadinessScores();
+  const totalLessonsCompleted = ['A1','A2','B1','B2','C1'].reduce((acc, lvl) => acc + getCompletedLessons(lvl).length, 0);
+  const mistakesCount = Object.keys(state.mistakeNotebook || {}).length;
 
   const totalCompleted = levelsData.levels.reduce((acc, lvl) => {
     const p = state.levels[lvl.id] || {};
@@ -105,6 +109,81 @@ export default function Dashboard() {
             Go to level <ChevronRight size={14} />
           </Link>
         </div>
+      </div>
+
+      {/* Lessons + Mistake Notebook Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+        <Link to={`/level/${state.currentLevel}/lessons`} className="rounded-xl p-4 flex items-center gap-3 transition-all hover:scale-[1.01]" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(0,240,255,0.1)' }}>
+            <GraduationCap size={20} style={{ color: 'var(--accent)' }} />
+          </div>
+          <div className="flex-1">
+            <div className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>Structured Lessons</div>
+            <div className="text-xs" style={{ color: 'var(--text-muted)' }}>{totalLessonsCompleted} lessons completed</div>
+          </div>
+          <ChevronRight size={16} style={{ color: 'var(--text-muted)' }} />
+        </Link>
+        <Link to="/mistake-notebook" className="rounded-xl p-4 flex items-center gap-3 transition-all hover:scale-[1.01]" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,170,51,0.1)' }}>
+            <BookMarked size={20} style={{ color: '#ffaa33' }} />
+          </div>
+          <div className="flex-1">
+            <div className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Mistake Notebook</div>
+            <div className="text-xs" style={{ color: 'var(--text-muted)' }}>{mistakesCount} mistakes to review</div>
+          </div>
+          <ChevronRight size={16} style={{ color: 'var(--text-muted)' }} />
+        </Link>
+      </div>
+
+      {/* C1 Readiness Card */}
+      <div className="rounded-xl p-5 mb-6" style={{ background: 'linear-gradient(135deg, rgba(139,92,246,0.08), rgba(0,240,255,0.08))', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <h2 className="font-bold flex items-center gap-2" style={{ color: 'var(--accent)' }}>
+              <ClipboardCheck size={20} /> C1 Readiness
+            </h2>
+            <p className="text-sm mt-1" style={{ color: 'var(--text-secondary)' }}>
+              {readiness && readiness.completed
+                ? `Overall score: ${readiness.overall}% (last assessed ${new Date(readiness.lastUpdated).toLocaleDateString('en-GB')})`
+                : 'Not yet assessed. Check your readiness for the Goethe C1 exam.'}
+            </p>
+          </div>
+          <div className="flex gap-2">
+            {readiness && readiness.completed && (
+              <div className="flex items-center gap-2">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold" style={{
+                  border: `3px solid ${readiness.overall >= 80 ? '#3bff9e' : readiness.overall >= 60 ? '#ffd700' : '#ff3355'}`,
+                  color: readiness.overall >= 80 ? '#3bff9e' : readiness.overall >= 60 ? '#ffd700' : '#ff3355',
+                }}>
+                  {readiness.overall}%
+                </div>
+              </div>
+            )}
+            <Link to="/c1-readiness" className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
+              {readiness && readiness.completed ? 'View Report' : 'Take Assessment'}
+            </Link>
+          </div>
+        </div>
+
+        {/* Skill mini-bars */}
+        {readiness && readiness.completed && (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+            {['reading', 'listening', 'writing', 'speaking', 'grammar', 'vocabulary', 'timeManagement'].slice(0, 7).map(skill => (
+              <div key={skill} className="text-center">
+                <div className="text-xs capitalize mb-1" style={{ color: 'var(--text-muted)' }}>{skill}</div>
+                <div className="h-1.5 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                  <div className="h-full rounded-full" style={{
+                    width: `${readiness[skill] || 0}%`,
+                    backgroundColor: readiness[skill] >= 80 ? '#3bff9e' : readiness[skill] >= 60 ? '#ffd700' : '#ff3355',
+                  }} />
+                </div>
+                <div className="text-xs font-bold mt-0.5" style={{
+                  color: readiness[skill] >= 80 ? '#3bff9e' : readiness[skill] >= 60 ? '#ffd700' : '#ff3355',
+                }}>{readiness[skill] || 0}%</div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Level Progress Cards */}

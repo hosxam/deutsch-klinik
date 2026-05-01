@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import LevelPage from './pages/LevelPage';
@@ -13,10 +13,14 @@ import ResourcesPage from './pages/ResourcesPage';
 import MedicalPage from './pages/MedicalPage';
 import PlacementTest from './pages/PlacementTest';
 import FlashcardPage from './pages/FlashcardPage';
+import C1ReadinessPage from './pages/C1ReadinessPage';
+import LessonsPage from './pages/LessonsPage';
+import LessonDetailPage from './pages/LessonDetailPage';
+import MistakeNotebookPage from './pages/MistakeNotebookPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -29,11 +33,15 @@ export default function App() {
           <Route path="level/:levelId/writing" element={<WritingPage />} />
           <Route path="level/:levelId/speaking" element={<SpeakingPage />} />
           <Route path="level/:levelId/exam" element={<ExamPage />} />
+          <Route path="level/:levelId/lessons" element={<LessonsPage />} />
+          <Route path="level/:levelId/lessons/:lessonId" element={<LessonDetailPage />} />
           <Route path="resources" element={<ResourcesPage />} />
           <Route path="medical" element={<MedicalPage />} />
           <Route path="placement-test" element={<PlacementTest />} />
+          <Route path="c1-readiness" element={<C1ReadinessPage />} />
+          <Route path="mistake-notebook" element={<MistakeNotebookPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

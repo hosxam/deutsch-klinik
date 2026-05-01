@@ -1,0 +1,2605 @@
+{
+  "vocabulary": [
+    {
+      "id": "med_v_1",
+      "category": "Anatomy",
+      "german": "der Korper",
+      "english": "body",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_2",
+      "category": "Anatomy",
+      "german": "der Kopf",
+      "english": "head",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_3",
+      "category": "Anatomy",
+      "german": "das Gesicht",
+      "english": "face",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_4",
+      "category": "Anatomy",
+      "german": "das Auge",
+      "english": "eye",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_5",
+      "category": "Anatomy",
+      "german": "die Nase",
+      "english": "nose",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_6",
+      "category": "Anatomy",
+      "german": "der Mund",
+      "english": "mouth",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_7",
+      "category": "Anatomy",
+      "german": "das Ohr",
+      "english": "ear",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_8",
+      "category": "Anatomy",
+      "german": "der Hals",
+      "english": "neck",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_9",
+      "category": "Anatomy",
+      "german": "die Schulter",
+      "english": "shoulder",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_10",
+      "category": "Anatomy",
+      "german": "der Arm",
+      "english": "arm",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_11",
+      "category": "Anatomy",
+      "german": "der Ellenbogen",
+      "english": "elbow",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_12",
+      "category": "Anatomy",
+      "german": "das Handgelenk",
+      "english": "wrist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_13",
+      "category": "Anatomy",
+      "german": "die Hand",
+      "english": "hand",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_14",
+      "category": "Anatomy",
+      "german": "der Finger",
+      "english": "finger",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_15",
+      "category": "Anatomy",
+      "german": "der Daumen",
+      "english": "thumb",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_16",
+      "category": "Anatomy",
+      "german": "die Brust",
+      "english": "chest",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_17",
+      "category": "Anatomy",
+      "german": "der Rucken",
+      "english": "back",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_18",
+      "category": "Anatomy",
+      "german": "die Wirbelsaule",
+      "english": "spine",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_19",
+      "category": "Anatomy",
+      "german": "das Bein",
+      "english": "leg",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_20",
+      "category": "Anatomy",
+      "german": "das Knie",
+      "english": "knee",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_21",
+      "category": "Anatomy",
+      "german": "der Knochel",
+      "english": "ankle",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_22",
+      "category": "Anatomy",
+      "german": "der Fuss",
+      "english": "foot",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_23",
+      "category": "Anatomy",
+      "german": "der Bauch",
+      "english": "belly",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_24",
+      "category": "Anatomy",
+      "german": "das Becken",
+      "english": "pelvis",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_25",
+      "category": "Anatomy",
+      "german": "die Huffte",
+      "english": "hip",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_26",
+      "category": "Anatomy",
+      "german": "der Oberschenkel",
+      "english": "thigh",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_27",
+      "category": "Anatomy",
+      "german": "der Kiefer",
+      "english": "jaw",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_28",
+      "category": "Anatomy",
+      "german": "der Zahn",
+      "english": "tooth",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_29",
+      "category": "Anatomy",
+      "german": "die Zunge",
+      "english": "tongue",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_30",
+      "category": "Anatomy",
+      "german": "die Lippe",
+      "english": "lip",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_31",
+      "category": "Anatomy",
+      "german": "die Stirn",
+      "english": "forehead",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_32",
+      "category": "Anatomy",
+      "german": "die Wange",
+      "english": "cheek",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_33",
+      "category": "Anatomy",
+      "german": "das Kinn",
+      "english": "chin",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_34",
+      "category": "Anatomy",
+      "german": "das Schlusselbein",
+      "english": "collarbone",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_35",
+      "category": "Anatomy",
+      "german": "die Rippe",
+      "english": "rib",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_36",
+      "category": "Anatomy",
+      "german": "das Brustbein",
+      "english": "sternum",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_37",
+      "category": "Symptoms",
+      "german": "der Schmerz",
+      "english": "pain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_38",
+      "category": "Symptoms",
+      "german": "die Schwellung",
+      "english": "swelling",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_39",
+      "category": "Symptoms",
+      "german": "das Fieber",
+      "english": "fever",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_40",
+      "category": "Symptoms",
+      "german": "der Husten",
+      "english": "cough",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_41",
+      "category": "Symptoms",
+      "german": "der Schnupfen",
+      "english": "runny nose",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_42",
+      "category": "Symptoms",
+      "german": "die Ubelkeit",
+      "english": "nausea",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_43",
+      "category": "Symptoms",
+      "german": "das Erbrechen",
+      "english": "vomiting",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_44",
+      "category": "Symptoms",
+      "german": "der Durchfall",
+      "english": "diarrhea",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_45",
+      "category": "Symptoms",
+      "german": "die Verstopfung",
+      "english": "constipation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_46",
+      "category": "Symptoms",
+      "german": "der Schwindel",
+      "english": "dizziness",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_47",
+      "category": "Symptoms",
+      "german": "die Kopfschmerzen",
+      "english": "headache",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_48",
+      "category": "Symptoms",
+      "german": "die Ruckenschmerzen",
+      "english": "back pain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_49",
+      "category": "Symptoms",
+      "german": "die Bauchschmerzen",
+      "english": "stomach pain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_50",
+      "category": "Symptoms",
+      "german": "die Halsschmerzen",
+      "english": "sore throat",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_51",
+      "category": "Symptoms",
+      "german": "die Atemnot",
+      "english": "shortness of breath",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_52",
+      "category": "Symptoms",
+      "german": "die Mudigkeit",
+      "english": "fatigue",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_53",
+      "category": "Symptoms",
+      "german": "der Juckreiz",
+      "english": "itching",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_54",
+      "category": "Symptoms",
+      "german": "der Hautausschlag",
+      "english": "rash",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_55",
+      "category": "Symptoms",
+      "german": "die Blutung",
+      "english": "bleeding",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_56",
+      "category": "Symptoms",
+      "german": "der Bluterguss",
+      "english": "bruise",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_57",
+      "category": "Symptoms",
+      "german": "der Bruch",
+      "english": "fracture",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_58",
+      "category": "Symptoms",
+      "german": "die Verstauchung",
+      "english": "sprain",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_59",
+      "category": "Symptoms",
+      "german": "die Entzundung",
+      "english": "inflammation",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_60",
+      "category": "Symptoms",
+      "german": "die Infektion",
+      "english": "infection",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_61",
+      "category": "Symptoms",
+      "german": "die Allergie",
+      "english": "allergy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_62",
+      "category": "Symptoms",
+      "german": "der Schlaganfall",
+      "english": "stroke",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_63",
+      "category": "Symptoms",
+      "german": "der Herzinfarkt",
+      "english": "heart attack",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_64",
+      "category": "Symptoms",
+      "german": "der Blutdruck",
+      "english": "blood pressure",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_65",
+      "category": "Diagnostics",
+      "german": "die Diagnose",
+      "english": "diagnosis",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_66",
+      "category": "Diagnostics",
+      "german": "die Untersuchung",
+      "english": "examination",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_67",
+      "category": "Diagnostics",
+      "german": "der Bluttest",
+      "english": "blood test",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_68",
+      "category": "Diagnostics",
+      "german": "das Rontgen",
+      "english": "X-ray",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_69",
+      "category": "Diagnostics",
+      "german": "das CT",
+      "english": "CT scan",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_70",
+      "category": "Diagnostics",
+      "german": "das MRT",
+      "english": "MRI",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_71",
+      "category": "Diagnostics",
+      "german": "der Ultraschall",
+      "english": "ultrasound",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_72",
+      "category": "Diagnostics",
+      "german": "das EKG",
+      "english": "ECG",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_73",
+      "category": "Diagnostics",
+      "german": "die Biopsie",
+      "english": "biopsy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_74",
+      "category": "Diagnostics",
+      "german": "die Urinprobe",
+      "english": "urine sample",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_75",
+      "category": "Diagnostics",
+      "german": "die Blutprobe",
+      "english": "blood sample",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_76",
+      "category": "Diagnostics",
+      "german": "die Impfung",
+      "english": "vaccination",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_77",
+      "category": "Diagnostics",
+      "german": "die Vorsorgeuntersuchung",
+      "english": "checkup",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_78",
+      "category": "Diagnostics",
+      "german": "die Operation",
+      "english": "surgery",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_79",
+      "category": "Diagnostics",
+      "german": "die Narkose",
+      "english": "anesthesia",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_80",
+      "category": "Diagnostics",
+      "german": "der Verband",
+      "english": "bandage",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_81",
+      "category": "Diagnostics",
+      "german": "die Naht",
+      "english": "suture",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_82",
+      "category": "Diagnostics",
+      "german": "der Gips",
+      "english": "cast",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_83",
+      "category": "Diagnostics",
+      "german": "die Schiene",
+      "english": "splint",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_84",
+      "category": "Diagnostics",
+      "german": "die Krucken",
+      "english": "crutches",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_85",
+      "category": "Treatments",
+      "german": "das Medikament",
+      "english": "medication",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_86",
+      "category": "Treatments",
+      "german": "die Tablette",
+      "english": "pill",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_87",
+      "category": "Treatments",
+      "german": "die Kapsel",
+      "english": "capsule",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_88",
+      "category": "Treatments",
+      "german": "die Salbe",
+      "english": "ointment",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_89",
+      "category": "Treatments",
+      "german": "die Creme",
+      "english": "cream",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_90",
+      "category": "Treatments",
+      "german": "die Tropfen",
+      "english": "drops",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_91",
+      "category": "Treatments",
+      "german": "das Spray",
+      "english": "spray",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_92",
+      "category": "Treatments",
+      "german": "die Injektion",
+      "english": "injection",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_93",
+      "category": "Treatments",
+      "german": "die Infusion",
+      "english": "IV",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_94",
+      "category": "Treatments",
+      "german": "die Spritze",
+      "english": "shot",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_95",
+      "category": "Treatments",
+      "german": "das Schmerzmittel",
+      "english": "painkiller",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_96",
+      "category": "Treatments",
+      "german": "die Physiotherapie",
+      "english": "physiotherapy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_97",
+      "category": "Treatments",
+      "german": "die Massage",
+      "english": "massage",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_98",
+      "category": "Communication",
+      "german": "der Arzt",
+      "english": "doctor",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_99",
+      "category": "Communication",
+      "german": "die Arztin",
+      "english": "doctor f",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_100",
+      "category": "Communication",
+      "german": "der Patient",
+      "english": "patient",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_101",
+      "category": "Communication",
+      "german": "die Patientin",
+      "english": "patient f",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_102",
+      "category": "Communication",
+      "german": "der Facharzt",
+      "english": "specialist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_103",
+      "category": "Communication",
+      "german": "der Hausarzt",
+      "english": "GP",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_104",
+      "category": "Communication",
+      "german": "der Chirurg",
+      "english": "surgeon",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_105",
+      "category": "Communication",
+      "german": "der Kardiologe",
+      "english": "cardiologist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_106",
+      "category": "Communication",
+      "german": "der Orthopade",
+      "english": "orthopedist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_107",
+      "category": "Communication",
+      "german": "der Neurologe",
+      "english": "neurologist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_108",
+      "category": "Communication",
+      "german": "der Kinderarzt",
+      "english": "pediatrician",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_109",
+      "category": "Communication",
+      "german": "der Augenarzt",
+      "english": "ophthalmologist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_110",
+      "category": "Communication",
+      "german": "der Zahnarzt",
+      "english": "dentist",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_111",
+      "category": "Communication",
+      "german": "das Krankenhaus",
+      "english": "hospital",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_112",
+      "category": "Communication",
+      "german": "die Klinik",
+      "english": "clinic",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_113",
+      "category": "Communication",
+      "german": "die Praxis",
+      "english": "practice",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_114",
+      "category": "Communication",
+      "german": "die Notaufnahme",
+      "english": "ER",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_115",
+      "category": "Communication",
+      "german": "die Station",
+      "english": "ward",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_116",
+      "category": "Communication",
+      "german": "die Intensivstation",
+      "english": "ICU",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_117",
+      "category": "Communication",
+      "german": "der Operationssaal",
+      "english": "OR",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_118",
+      "category": "Communication",
+      "german": "die Apotheke",
+      "english": "pharmacy",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_119",
+      "category": "Communication",
+      "german": "die Uberweisung",
+      "english": "referral",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_120",
+      "category": "Communication",
+      "german": "die Krankschreibung",
+      "english": "sick note",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_121",
+      "category": "Communication",
+      "german": "die Versicherungskarte",
+      "english": "insurance card",
+      "partOfSpeech": "noun"
+    },
+    {
+      "id": "med_v_122",
+      "category": "Medical Verbs",
+      "german": "untersuchen",
+      "english": "to examine",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_123",
+      "category": "Medical Verbs",
+      "german": "diagnostizieren",
+      "english": "to diagnose",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_124",
+      "category": "Medical Verbs",
+      "german": "behandeln",
+      "english": "to treat",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_125",
+      "category": "Medical Verbs",
+      "german": "operieren",
+      "english": "to operate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_126",
+      "category": "Medical Verbs",
+      "german": "verschreiben",
+      "english": "to prescribe",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_127",
+      "category": "Medical Verbs",
+      "german": "einnehmen",
+      "english": "to take (medication)",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_128",
+      "category": "Medical Verbs",
+      "german": "spritzen",
+      "english": "to inject",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_129",
+      "category": "Medical Verbs",
+      "german": "impfen",
+      "english": "to vaccinate",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_130",
+      "category": "Medical Verbs",
+      "german": "uberweisen",
+      "english": "to refer",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_131",
+      "category": "Medical Verbs",
+      "german": "entlassen",
+      "english": "to discharge",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_132",
+      "category": "Medical Verbs",
+      "german": "bluten",
+      "english": "to bleed",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_133",
+      "category": "Medical Verbs",
+      "german": "heilen",
+      "english": "to heal",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_134",
+      "category": "Medical Verbs",
+      "german": "verbinden",
+      "english": "to bandage",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_135",
+      "category": "Medical Verbs",
+      "german": "rontgen",
+      "english": "to X-ray",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_136",
+      "category": "Medical Verbs",
+      "german": "betäuben",
+      "english": "to anesthetize",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "med_v_137",
+      "category": "Medical Verbs",
+      "german": "desinfizieren",
+      "english": "to disinfect",
+      "partOfSpeech": "verb"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "med_d_1",
+      "level": "B1",
+      "title": "Erster Patientenkontakt V1",
+      "context": "GP visit V1",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V1)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_2",
+      "level": "B1",
+      "title": "Erster Patientenkontakt V2",
+      "context": "GP visit V2",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V2)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_3",
+      "level": "B1",
+      "title": "Erster Patientenkontakt V3",
+      "context": "GP visit V3",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V3)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_4",
+      "level": "B1",
+      "title": "Erster Patientenkontakt V4",
+      "context": "GP visit V4",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V4)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_5",
+      "level": "B1",
+      "title": "Erster Patientenkontakt V5",
+      "context": "GP visit V5",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V5)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_6",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V6",
+      "context": "GP visit V6",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V6)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_7",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V7",
+      "context": "GP visit V7",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V7)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_8",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V8",
+      "context": "GP visit V8",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V8)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_9",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V9",
+      "context": "GP visit V9",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V9)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_10",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V10",
+      "context": "GP visit V10",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V10)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_11",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V11",
+      "context": "GP visit V11",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V11)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_12",
+      "level": "B2",
+      "title": "Erster Patientenkontakt V12",
+      "context": "GP visit V12",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V12)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_13",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V13",
+      "context": "GP visit V13",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V13)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_14",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V14",
+      "context": "GP visit V14",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V14)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_15",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V15",
+      "context": "GP visit V15",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V15)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_16",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V16",
+      "context": "GP visit V16",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V16)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_17",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V17",
+      "context": "GP visit V17",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V17)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_18",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V18",
+      "context": "GP visit V18",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V18)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_19",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V19",
+      "context": "GP visit V19",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V19)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_20",
+      "level": "C1",
+      "title": "Erster Patientenkontakt V20",
+      "context": "GP visit V20",
+      "patientLine": "Guten Morgen Herr Doktor ich habe Kopfschmerzen. (V20)",
+      "expectedDoctorResponse": "Guten Morgen setzen Sie sich seit wann haben Sie die Schmerzen? (angepasst)",
+      "keyPhrases": [
+        "Seit wann",
+        "Wo tut es weh"
+      ],
+      "vocabulary": [
+        "Kopfschmerz",
+        "Untersuchung"
+      ]
+    },
+    {
+      "id": "med_d_21",
+      "level": "B1",
+      "title": "Schmerzen beschreiben V1",
+      "context": "Back pain V1",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V1)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_22",
+      "level": "B1",
+      "title": "Schmerzen beschreiben V2",
+      "context": "Back pain V2",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V2)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_23",
+      "level": "B1",
+      "title": "Schmerzen beschreiben V3",
+      "context": "Back pain V3",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V3)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_24",
+      "level": "B1",
+      "title": "Schmerzen beschreiben V4",
+      "context": "Back pain V4",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V4)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_25",
+      "level": "B1",
+      "title": "Schmerzen beschreiben V5",
+      "context": "Back pain V5",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V5)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_26",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V6",
+      "context": "Back pain V6",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V6)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_27",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V7",
+      "context": "Back pain V7",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V7)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_28",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V8",
+      "context": "Back pain V8",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V8)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_29",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V9",
+      "context": "Back pain V9",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V9)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_30",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V10",
+      "context": "Back pain V10",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V10)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_31",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V11",
+      "context": "Back pain V11",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V11)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_32",
+      "level": "B2",
+      "title": "Schmerzen beschreiben V12",
+      "context": "Back pain V12",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V12)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_33",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V13",
+      "context": "Back pain V13",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V13)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_34",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V14",
+      "context": "Back pain V14",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V14)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_35",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V15",
+      "context": "Back pain V15",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V15)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_36",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V16",
+      "context": "Back pain V16",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V16)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_37",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V17",
+      "context": "Back pain V17",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V17)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_38",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V18",
+      "context": "Back pain V18",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V18)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_39",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V19",
+      "context": "Back pain V19",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V19)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_40",
+      "level": "C1",
+      "title": "Schmerzen beschreiben V20",
+      "context": "Back pain V20",
+      "patientLine": "Mein Rucken tut sehr weh ich kann mich kaum bewegen. (V20)",
+      "expectedDoctorResponse": "Haben Sie sich schwer gehoben in letzter Zeit? (angepasst)",
+      "keyPhrases": [
+        "Starke Schmerzen",
+        "Bewegung"
+      ],
+      "vocabulary": [
+        "Ruckenschmerz",
+        "Schonung"
+      ]
+    },
+    {
+      "id": "med_d_41",
+      "level": "B1",
+      "title": "Allergien V1",
+      "context": "Allergy V1",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V1)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_42",
+      "level": "B1",
+      "title": "Allergien V2",
+      "context": "Allergy V2",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V2)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_43",
+      "level": "B1",
+      "title": "Allergien V3",
+      "context": "Allergy V3",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V3)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_44",
+      "level": "B1",
+      "title": "Allergien V4",
+      "context": "Allergy V4",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V4)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_45",
+      "level": "B1",
+      "title": "Allergien V5",
+      "context": "Allergy V5",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V5)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_46",
+      "level": "B2",
+      "title": "Allergien V6",
+      "context": "Allergy V6",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V6)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_47",
+      "level": "B2",
+      "title": "Allergien V7",
+      "context": "Allergy V7",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V7)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_48",
+      "level": "B2",
+      "title": "Allergien V8",
+      "context": "Allergy V8",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V8)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_49",
+      "level": "B2",
+      "title": "Allergien V9",
+      "context": "Allergy V9",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V9)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_50",
+      "level": "B2",
+      "title": "Allergien V10",
+      "context": "Allergy V10",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V10)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_51",
+      "level": "B2",
+      "title": "Allergien V11",
+      "context": "Allergy V11",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V11)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_52",
+      "level": "B2",
+      "title": "Allergien V12",
+      "context": "Allergy V12",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V12)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_53",
+      "level": "C1",
+      "title": "Allergien V13",
+      "context": "Allergy V13",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V13)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_54",
+      "level": "C1",
+      "title": "Allergien V14",
+      "context": "Allergy V14",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V14)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_55",
+      "level": "C1",
+      "title": "Allergien V15",
+      "context": "Allergy V15",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V15)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_56",
+      "level": "C1",
+      "title": "Allergien V16",
+      "context": "Allergy V16",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V16)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_57",
+      "level": "C1",
+      "title": "Allergien V17",
+      "context": "Allergy V17",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V17)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_58",
+      "level": "C1",
+      "title": "Allergien V18",
+      "context": "Allergy V18",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V18)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_59",
+      "level": "C1",
+      "title": "Allergien V19",
+      "context": "Allergy V19",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V19)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_60",
+      "level": "C1",
+      "title": "Allergien V20",
+      "context": "Allergy V20",
+      "patientLine": "Ich plotzlich Hautausschlag bekommen es juckt uberall. (V20)",
+      "expectedDoctorResponse": "Haben Sie etwas Neues gegessen oder neues Medikament? (angepasst)",
+      "keyPhrases": [
+        "Allergie gegen",
+        "Medikament"
+      ],
+      "vocabulary": [
+        "Allergie",
+        "Hautausschlag"
+      ]
+    },
+    {
+      "id": "med_d_61",
+      "level": "B1",
+      "title": "Rezept V1",
+      "context": "Prescription V1",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V1)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_62",
+      "level": "B1",
+      "title": "Rezept V2",
+      "context": "Prescription V2",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V2)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_63",
+      "level": "B1",
+      "title": "Rezept V3",
+      "context": "Prescription V3",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V3)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_64",
+      "level": "B1",
+      "title": "Rezept V4",
+      "context": "Prescription V4",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V4)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_65",
+      "level": "B1",
+      "title": "Rezept V5",
+      "context": "Prescription V5",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V5)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_66",
+      "level": "B2",
+      "title": "Rezept V6",
+      "context": "Prescription V6",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V6)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_67",
+      "level": "B2",
+      "title": "Rezept V7",
+      "context": "Prescription V7",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V7)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_68",
+      "level": "B2",
+      "title": "Rezept V8",
+      "context": "Prescription V8",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V8)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_69",
+      "level": "B2",
+      "title": "Rezept V9",
+      "context": "Prescription V9",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V9)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_70",
+      "level": "B2",
+      "title": "Rezept V10",
+      "context": "Prescription V10",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V10)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_71",
+      "level": "B2",
+      "title": "Rezept V11",
+      "context": "Prescription V11",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V11)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_72",
+      "level": "B2",
+      "title": "Rezept V12",
+      "context": "Prescription V12",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V12)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_73",
+      "level": "C1",
+      "title": "Rezept V13",
+      "context": "Prescription V13",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V13)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_74",
+      "level": "C1",
+      "title": "Rezept V14",
+      "context": "Prescription V14",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V14)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_75",
+      "level": "C1",
+      "title": "Rezept V15",
+      "context": "Prescription V15",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V15)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_76",
+      "level": "C1",
+      "title": "Rezept V16",
+      "context": "Prescription V16",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V16)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_77",
+      "level": "C1",
+      "title": "Rezept V17",
+      "context": "Prescription V17",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V17)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_78",
+      "level": "C1",
+      "title": "Rezept V18",
+      "context": "Prescription V18",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V18)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_79",
+      "level": "C1",
+      "title": "Rezept V19",
+      "context": "Prescription V19",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V19)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_80",
+      "level": "C1",
+      "title": "Rezept V20",
+      "context": "Prescription V20",
+      "patientLine": "Konnten Sie mir ein Rezept fur meine Tabletten ausstellen? (V20)",
+      "expectedDoctorResponse": "Selbstverstandlich wie oft nehmen Sie die Tabletten? (angepasst)",
+      "keyPhrases": [
+        "Brauche Rezept fur",
+        "Dosierung"
+      ],
+      "vocabulary": [
+        "Rezept",
+        "Tablette",
+        "Dosierung"
+      ]
+    },
+    {
+      "id": "med_d_81",
+      "level": "B1",
+      "title": "Krankschreibung V1",
+      "context": "Sick note V1",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V1)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_82",
+      "level": "B1",
+      "title": "Krankschreibung V2",
+      "context": "Sick note V2",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V2)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_83",
+      "level": "B1",
+      "title": "Krankschreibung V3",
+      "context": "Sick note V3",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V3)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_84",
+      "level": "B1",
+      "title": "Krankschreibung V4",
+      "context": "Sick note V4",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V4)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_85",
+      "level": "B1",
+      "title": "Krankschreibung V5",
+      "context": "Sick note V5",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V5)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_86",
+      "level": "B2",
+      "title": "Krankschreibung V6",
+      "context": "Sick note V6",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V6)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_87",
+      "level": "B2",
+      "title": "Krankschreibung V7",
+      "context": "Sick note V7",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V7)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_88",
+      "level": "B2",
+      "title": "Krankschreibung V8",
+      "context": "Sick note V8",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V8)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_89",
+      "level": "B2",
+      "title": "Krankschreibung V9",
+      "context": "Sick note V9",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V9)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_90",
+      "level": "B2",
+      "title": "Krankschreibung V10",
+      "context": "Sick note V10",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V10)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_91",
+      "level": "B2",
+      "title": "Krankschreibung V11",
+      "context": "Sick note V11",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V11)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_92",
+      "level": "B2",
+      "title": "Krankschreibung V12",
+      "context": "Sick note V12",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V12)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_93",
+      "level": "C1",
+      "title": "Krankschreibung V13",
+      "context": "Sick note V13",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V13)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_94",
+      "level": "C1",
+      "title": "Krankschreibung V14",
+      "context": "Sick note V14",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V14)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_95",
+      "level": "C1",
+      "title": "Krankschreibung V15",
+      "context": "Sick note V15",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V15)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_96",
+      "level": "C1",
+      "title": "Krankschreibung V16",
+      "context": "Sick note V16",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V16)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_97",
+      "level": "C1",
+      "title": "Krankschreibung V17",
+      "context": "Sick note V17",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V17)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_98",
+      "level": "C1",
+      "title": "Krankschreibung V18",
+      "context": "Sick note V18",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V18)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_99",
+      "level": "C1",
+      "title": "Krankschreibung V19",
+      "context": "Sick note V19",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V19)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    },
+    {
+      "id": "med_d_100",
+      "level": "C1",
+      "title": "Krankschreibung V20",
+      "context": "Sick note V20",
+      "patientLine": "Ich fuhle mich sehr krank und kann nicht arbeiten. (V20)",
+      "expectedDoctorResponse": "Ich untersuche Sie Sie haben Fieber und eine Erkaltung. (angepasst)",
+      "keyPhrases": [
+        "Krankschreibung",
+        "Zu Hause bleiben"
+      ],
+      "vocabulary": [
+        "Krankschreibung",
+        "Fieber",
+        "Erkaltung"
+      ]
+    }
+  ]
+}

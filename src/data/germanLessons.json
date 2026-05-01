@@ -1,0 +1,375 @@
+[
+  {
+    "level": "A1",
+    "unit": "A1_unit_1",
+    "id": "A1_lesson_1",
+    "title": "Begruessungen und Vorstellungen",
+    "objective": "Learn to greet people, introduce yourself and others, and say goodbye in German.",
+    "explanation": "In German, greetings vary by region and time of day. The formal 'Sie' is used with strangers, colleagues, and authorities, while 'du' is used with friends, family, and children.",
+    "examples": [
+      "Guten Morgen! - Good morning!",
+      "Hallo, ich heisse Anna. - Hello, my name is Anna.",
+      "Freut mich, dich kennenzulernen! - Nice to meet you!",
+      "Auf Wiedersehen! - Goodbye (formal).",
+      "Tschuess! - Bye (informal)."
+    ],
+    "vocabulary": [
+      { "word": "Hallo", "translation": "hello", "example": "Hallo, wie geht es dir?" },
+      { "word": "Guten Morgen", "translation": "good morning", "example": "Guten Morgen, Herr Mueller!" },
+      { "word": "Guten Abend", "translation": "good evening", "example": "Guten Abend, Frau Schmidt." },
+      { "word": "Tschuess", "translation": "bye", "example": "Tschuess, bis morgen!" },
+      { "word": "der Name", "translation": "name", "example": "Mein Name ist Peter." }
+    ],
+    "grammarFocus": "Present tense of 'sein' (to be): ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
+    "guidedPractice": [
+      { "prompt": "Translate: 'Good morning, Mr. Schulz.'", "answer": "Guten Morgen, Herr Schulz." },
+      { "prompt": "Complete: 'Ich ___ Anna.' (am)", "answer": "bin" },
+      { "prompt": "Formal 'Goodbye' is ___", "answer": "Auf Wiedersehen" },
+      { "prompt": "How do you ask 'What is your name?' (formal)?", "answer": "Wie heissen Sie?" },
+      { "prompt": "Translate: 'Nice to meet you.' (formal)", "answer": "Freut mich, Sie kennenzulernen." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a short dialogue introducing yourself to a new classmate.", "type": "writing" },
+      { "prompt": "List 5 different greetings in German and when to use them.", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'Hallo, ich heisse Lukas. Ich komme aus Berlin. Und du? Wie heisst du?'",
+    "readingTask": "Read: 'Maria sagt: Guten Morgen! Ich bin Maria. Wer bist du? Paul sagt: Hallo Maria, ich bin Paul. Freut mich!'",
+    "speakingTask": "Record yourself introducing yourself in German.",
+    "writingTask": "Write 3 sentences: introduce yourself, say where you're from, ask someone their name.",
+    "reviewSummary": "Today you learned: greetings, how to introduce yourself, and the formal vs informal distinction."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_1",
+    "id": "A1_lesson_2",
+    "title": "Das Alphabet und die Zahlen",
+    "objective": "Learn the German alphabet, numbers 0-100, and how to spell your name.",
+    "explanation": "The German alphabet has 26 letters plus Ae, Oe, Ue, and ss. Numbers 1-20 are unique; from 21: einundzwanzig (ones-and-tens).",
+    "examples": [
+      "Buchstabiere bitte: M-U-E-L-L-E-R.",
+      "Wie schreibt man das?",
+      "Meine Telefonnummer ist 0176 123 456.",
+      "Einundzwanzig (21), zweiunddreissig (32)"
+    ],
+    "vocabulary": [
+      { "word": "der Buchstabe", "translation": "letter (alphabet)", "example": "Das A ist der erste Buchstabe." },
+      { "word": "buchstabieren", "translation": "to spell", "example": "Koennen Sie das bitte buchstabieren?" },
+      { "word": "die Zahl", "translation": "number", "example": "Die Zahl 100 heisst hundert." },
+      { "word": "null", "translation": "zero", "example": "Meine Nummer hat zwei Nullen." },
+      { "word": "die Telefonnummer", "translation": "phone number", "example": "Meine Telefonnummer ist 030 123456." }
+    ],
+    "grammarFocus": "Numbers: 0 null, 1 eins, 2 zwei ... 20 zwanzig, 21 einundzwanzig. Letter ss = doppel-s.",
+    "guidedPractice": [
+      { "prompt": "What is 27 in German?", "answer": "siebenundzwanzig" },
+      { "prompt": "Spell your own surname in German.", "answer": "(practice)" },
+      { "prompt": "What special letters does German have?", "answer": "Ae, Oe, Ue, ss" },
+      { "prompt": "Translate '58'", "answer": "achtundfuenfzig" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write the numbers 1-20 in German.", "type": "writing" },
+      { "prompt": "Spell 5 German cities in German.", "type": "speaking" }
+    ],
+    "listeningTask": "Read aloud: 3, 17, 25, 44, 68, 92.",
+    "readingTask": "Read: 'Meine Telefonnummer ist 030 - 44 55 66 77.'",
+    "speakingTask": "Say your phone number, house number, and age in German.",
+    "writingTask": "Write 5 numbers in digits and words: 14, 33, 47, 52, 89.",
+    "reviewSummary": "You learned the German alphabet (26 + Ae Oe Ue ss), how to spell, and numbers 0-100."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_3",
+    "title": "Meine Familie",
+    "objective": "Describe your family members, use possessive articles, and talk about age.",
+    "explanation": "Family vocabulary uses possessive articles: mein/meine (my), dein/deine (your), sein/seine (his), ihr/ihre (her). Articles change with gender.",
+    "examples": [
+      "Mein Vater heisst Klaus.",
+      "Meine Mutter ist 45 Jahre alt.",
+      "Hast du Geschwister?",
+      "Ich habe eine Schwester und einen Bruder."
+    ],
+    "vocabulary": [
+      { "word": "der Vater", "translation": "father", "example": "Mein Vater arbeitet als Lehrer." },
+      { "word": "die Mutter", "translation": "mother", "example": "Meine Mutter kocht sehr gut." },
+      { "word": "der Bruder", "translation": "brother", "example": "Mein Bruder ist 10 Jahre alt." },
+      { "word": "die Schwester", "translation": "sister", "example": "Meine Schwester studiert Medizin." },
+      { "word": "die Geschwister", "translation": "siblings", "example": "Ich habe zwei Geschwister." }
+    ],
+    "grammarFocus": "Possessive articles: mein/meine, dein/deine, sein/seine, ihr/ihre. Nominative case.",
+    "guidedPractice": [
+      { "prompt": "Translate 'my mother'", "answer": "meine Mutter" },
+      { "prompt": "Translate 'his brother'", "answer": "sein Bruder" },
+      { "prompt": "Complete: 'Ich habe eine ___.' (sister)", "answer": "Schwester" },
+      { "prompt": "Do you have siblings? (informal)", "answer": "Hast du Geschwister?" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 sentences about your family using possessive articles.", "type": "writing" },
+      { "prompt": "Draw a family tree and label all members in German.", "type": "creative" }
+    ],
+    "listeningTask": "Read aloud: 'In meiner Familie gibt es vier Personen.'",
+    "readingTask": "Read: 'Anna hat eine grosse Familie. Ihr Vater ist Arzt. Ihre Mutter ist Hausfrau.'",
+    "speakingTask": "Describe your family in 3-4 sentences. Record yourself.",
+    "writingTask": "Write a paragraph about your family: names, ages, professions.",
+    "reviewSummary": "You learned family vocabulary, possessive articles, and family discussion."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_4",
+    "title": "Im Restaurant",
+    "objective": "Order food and drinks, understand a menu, and pay the bill.",
+    "explanation": "Use 'Ich moechte...' (I would like) or 'Ich haette gern...'. 'möchten' is a special modal verb.",
+    "examples": [
+      "Ich moechte einen Kaffee, bitte.",
+      "Haben Sie vegetarische Gerichte?",
+      "Die Rechnung, bitte!",
+      "Was empfehlen Sie?",
+      "Es hat gut geschmeckt!"
+    ],
+    "vocabulary": [
+      { "word": "das Essen", "translation": "food", "example": "Das Essen ist sehr lecker." },
+      { "word": "das Getraenk", "translation": "drink", "example": "Ich moechte ein Getraenk." },
+      { "word": "der Kaffee", "translation": "coffee", "example": "Einen Kaffee mit Milch, bitte." },
+      { "word": "die Rechnung", "translation": "bill", "example": "Die Rechnung, bitte!" },
+      { "word": "bestellen", "translation": "to order", "example": "Wir moechten bestellen." }
+    ],
+    "grammarFocus": "Verb 'moechten': ich moechte, du moechtest. Accusative: einen Kaffee (m), eine Cola (f), ein Wasser (n).",
+    "guidedPractice": [
+      { "prompt": "Order a coffee politely.", "answer": "Ich moechte einen Kaffee, bitte." },
+      { "prompt": "Ask for the bill.", "answer": "Die Rechnung, bitte!" },
+      { "prompt": "Translate 'I would like a water.'", "answer": "Ich moechte ein Wasser." },
+      { "prompt": "Ask 'What do you recommend?'", "answer": "Was empfehlen Sie?" }
+    ],
+    "independentPractice": [
+      { "prompt": "Create a dialogue between customer and waiter.", "type": "writing" },
+      { "prompt": "List 5 things you can order in a cafe.", "type": "vocabulary" }
+    ],
+    "listeningTask": "Read aloud: 'Guten Abend. Ich moechte einen Tisch fuer zwei Personen.'",
+    "readingTask": "Menu: Suppe 4,50 Euro, Schnitzel 12,80 Euro, Salat 6,90 Euro.",
+    "speakingTask": "Role-play ordering a meal (greeting, order, pay).",
+    "writingTask": "Write a restaurant review (3-4 sentences).",
+    "reviewSummary": "You learned restaurant vocabulary, 'moechten', and dining phrases."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_5",
+    "title": "Nach dem Weg fragen",
+    "objective": "Ask for and give directions, understand basic location prepositions.",
+    "explanation": "Use 'Entschuldigung, wo ist ...?' or 'Wie komme ich zu ...?' Key words: geradeaus, links, rechts.",
+    "examples": [
+      "Entschuldigung, wo ist der Bahnhof?",
+      "Gehen Sie geradeaus, dann links.",
+      "Wie komme ich zum Museum?",
+      "Es ist an der Ecke."
+    ],
+    "vocabulary": [
+      { "word": "der Bahnhof", "translation": "train station", "example": "Der Bahnhof ist um die Ecke." },
+      { "word": "geradeaus", "translation": "straight ahead", "example": "Gehen Sie geradeaus." },
+      { "word": "links", "translation": "left", "example": "Biegen Sie links ab." },
+      { "word": "rechts", "translation": "right", "example": "Das Museum ist rechts." },
+      { "word": "die Ampel", "translation": "traffic light", "example": "An der Ampel rechts." }
+    ],
+    "grammarFocus": "Prepositions with dative: zu + dem = zum, bei + dem = beim.",
+    "guidedPractice": [
+      { "prompt": "Ask where the train station is.", "answer": "Entschuldigung, wo ist der Bahnhof?" },
+      { "prompt": "Say 'Go straight, then left.'", "answer": "Gehen Sie geradeaus, dann links." },
+      { "prompt": "How to get to the museum?", "answer": "Wie komme ich zum Museum?" },
+      { "prompt": "Say 'It's on the corner.'", "answer": "Es ist an der Ecke." }
+    ],
+    "independentPractice": [
+      { "prompt": "Draw a simple map and write directions from A to B.", "type": "creative" },
+      { "prompt": "Write a dialogue asking for and giving directions.", "type": "writing" }
+    ],
+    "listeningTask": "Read aloud: 'Wie komme ich zum Bahnhof? Gehen Sie geradeaus, dann rechts.'",
+    "readingTask": "Read: 'Der Supermarkt ist nicht weit. Gehen Sie geradeaus.'",
+    "speakingTask": "Give directions from your home to the nearest shop.",
+    "writingTask": "Write directions from the station to the city center.",
+    "reviewSummary": "You learned how to ask for and give directions using location prepositions."
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_1",
+    "id": "A2_lesson_1",
+    "title": "Perfekt: Ueber die Vergangenheit sprechen",
+    "objective": "Form and use the Perfekt tense to talk about past events.",
+    "explanation": "Perfekt uses haben/sein + past participle. Most verbs use haben; motion/state change verbs use sein. Regular: ge-stamm-t.",
+    "examples": [
+      "Ich habe gestern einen Film gesehen.",
+      "Wir sind nach Berlin gefahren.",
+      "Hast du das Buch gelesen?",
+      "Sie ist um 8 Uhr aufgestanden."
+    ],
+    "vocabulary": [
+      { "word": "gestern", "translation": "yesterday", "example": "Gestern war ich im Kino." },
+      { "word": "gemacht", "translation": "done", "example": "Ich habe die Arbeit gemacht." },
+      { "word": "gesehen", "translation": "seen", "example": "Hast du den Film gesehen?" },
+      { "word": "gefahren", "translation": "traveled", "example": "Wir sind nach Hause gefahren." },
+      { "word": "gelesen", "translation": "read", "example": "Ich habe das Buch gelesen." }
+    ],
+    "grammarFocus": "Perfekt: haben/sein + Partizip II. Verb at position 2, participle at end. sein: motion verbs (fahren, kommen, gehen).",
+    "guidedPractice": [
+      { "prompt": "Complete: Ich ___ einen Kaffee getrunken.", "answer": "habe" },
+      { "prompt": "Complete: Wir ___ nach Muenchen gefahren.", "answer": "sind" },
+      { "prompt": "Translate 'I bought bread.'", "answer": "Ich habe Brot gekauft." },
+      { "prompt": "Participle of 'lesen'?", "answer": "gelesen" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write 5 sentences about yesterday using Perfekt.", "type": "writing" },
+      { "prompt": "List 5 verbs with haben, 5 with sein.", "type": "grammar" }
+    ],
+    "listeningTask": "Read aloud: 'Gestern bin ich um 7 Uhr aufgestanden. Ich habe gefruehstueckt.'",
+    "readingTask": "Read: 'Am Wochenende habe ich meine Oma besucht. Wir haben Kuchen gegessen.'",
+    "speakingTask": "Tell what you did last weekend using Perfekt.",
+    "writingTask": "Write 8 sentences about your last vacation using Perfekt.",
+    "reviewSummary": "You learned Perfekt tense: haben/sein + past participle."
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_2",
+    "id": "A2_lesson_2",
+    "title": "Beim Arzt: Koerper und Gesundheit",
+    "objective": "Describe symptoms, name body parts, basic doctor conversation.",
+    "explanation": "Use 'Ich habe...' for symptoms, 'Mir tut ... weh' for pain. Accusative for body parts, dative for conditions.",
+    "examples": [
+      "Ich habe Kopfschmerzen.",
+      "Mir tut der Ruecken weh.",
+      "Ich bin seit drei Tagen krank.",
+      "Haben Sie Fieber?"
+    ],
+    "vocabulary": [
+      { "word": "der Kopf", "translation": "head", "example": "Mir tut der Kopf weh." },
+      { "word": "der Ruecken", "translation": "back", "example": "Ich habe Rueckenschmerzen." },
+      { "word": "das Fieber", "translation": "fever", "example": "Ich habe 38 Grad Fieber." },
+      { "word": "die Schmerzen", "translation": "pain", "example": "Ich habe starke Schmerzen." },
+      { "word": "das Medikament", "translation": "medication", "example": "Das Medikament hilft." }
+    ],
+    "grammarFocus": "Accusative with haben, Dative with wehtun: Mir tut der Kopf weh.",
+    "guidedPractice": [
+      { "prompt": "Say 'I have a headache.'", "answer": "Ich habe Kopfschmerzen." },
+      { "prompt": "Say 'My back hurts.'", "answer": "Mir tut der Ruecken weh." },
+      { "prompt": "Ask 'Do you have a fever?'", "answer": "Haben Sie Fieber?" },
+      { "prompt": "Say 'I've been sick for 2 days.'", "answer": "Ich bin seit zwei Tagen krank." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a doctor-patient dialogue.", "type": "writing" },
+      { "prompt": "Label 10 body parts in German.", "type": "creative" }
+    ],
+    "listeningTask": "Read aloud: 'Guten Tag, Herr Doktor. Mir tut der Hals weh.'",
+    "readingTask": "Read: 'Der Arzt fragt: Wo tut es weh?'",
+    "speakingTask": "Role-play at the doctor: describe your symptoms.",
+    "writingTask": "Write a sick note to your boss.",
+    "reviewSummary": "You learned body parts, describing symptoms, and doctor visit vocabulary."
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_3",
+    "id": "A2_lesson_3",
+    "title": "Einkaufen: Kleidung und Farben",
+    "objective": "Shop for clothes, describe items by color/size, compare prices.",
+    "explanation": "Use 'Ich suche...' (I'm looking for...), 'Haben Sie...?' Colors take adjective endings matching noun gender.",
+    "examples": [
+      "Ich suche ein blaues Kleid.",
+      "Haben Sie das in Groesse M?",
+      "Das ist zu teuer.",
+      "Kann ich das anprobieren?"
+    ],
+    "vocabulary": [
+      { "word": "das Kleid", "translation": "dress", "example": "Das rote Kleid gefaellt mir." },
+      { "word": "die Hose", "translation": "pants", "example": "Die Hose ist zu gross." },
+      { "word": "das Hemd", "translation": "shirt", "example": "Ich moechte ein weisses Hemd." },
+      { "word": "die Groesse", "translation": "size", "example": "Welche Groesse haben Sie?" },
+      { "word": "anprobieren", "translation": "to try on", "example": "Kann ich das anprobieren?" }
+    ],
+    "grammarFocus": "Adjective endings: ein blaues Kleid (n), eine rote Hose (f). Comparisons: guenstig - guenstiger - am guenstigsten.",
+    "guidedPractice": [
+      { "prompt": "Say 'I'm looking for a blue dress.'", "answer": "Ich suche ein blaues Kleid." },
+      { "prompt": "Ask 'Do you have this in size M?'", "answer": "Haben Sie das in Groesse M?" },
+      { "prompt": "Say 'That's too expensive.'", "answer": "Das ist zu teuer." },
+      { "prompt": "Ask to try on.", "answer": "Kann ich das anprobieren?" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a shopping dialogue.", "type": "writing" },
+      { "prompt": "List 10 clothing items with articles.", "type": "vocabulary" }
+    ],
+    "listeningTask": "Read aloud: 'Ich suche eine warme Jacke in Groesse L.'",
+    "readingTask": "Read: 'Das schwarze Kleid kostet 89 Euro.'",
+    "speakingTask": "Describe an outfit you're wearing. Record.",
+    "writingTask": "Write about shopping for a specific item.",
+    "reviewSummary": "You learned shopping, colors, sizes, and adjective endings."
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_4",
+    "id": "A2_lesson_4",
+    "title": "Mein Arbeitstag",
+    "objective": "Describe daily work routine using separable prefix verbs and modals.",
+    "explanation": "Separable prefix verbs: prefix moves to the end. Modal verbs: main verb infinitive at clause end.",
+    "examples": [
+      "Ich stehe um 7 Uhr auf.",
+      "Ich muss heute arbeiten.",
+      "Kannst du mir helfen?",
+      "Die Arbeit faengt um 9 Uhr an."
+    ],
+    "vocabulary": [
+      { "word": "aufstehen", "translation": "to get up", "example": "Ich stehe frueh auf." },
+      { "word": "anfangen", "translation": "to start", "example": "Der Kurs faengt um 10 Uhr an." },
+      { "word": "einkaufen", "translation": "to shop", "example": "Ich kaufe am Samstag ein." },
+      { "word": "die Arbeit", "translation": "work", "example": "Die Arbeit ist interessant." },
+      { "word": "der Kollege", "translation": "colleague", "example": "Mein Kollege hilft mir." }
+    ],
+    "grammarFocus": "Separable prefix: prefix at end. Modal: modal at position 2, infinitive at end.",
+    "guidedPractice": [
+      { "prompt": "Complete: Ich ___ um 6 Uhr ___. (aufstehen)", "answer": "stehe ... auf" },
+      { "prompt": "Say 'I have to work today.'", "answer": "Ich muss heute arbeiten." },
+      { "prompt": "Der Kurs ___ um 9 Uhr ___. (anfangen)", "answer": "faengt ... an" },
+      { "prompt": "Say 'Can you help me?'", "answer": "Kannst du mir helfen?" }
+    ],
+    "independentPractice": [
+      { "prompt": "Write your daily routine (8 sentences) with separable verbs.", "type": "writing" },
+      { "prompt": "Make 5 modal verb sentences.", "type": "grammar" }
+    ],
+    "listeningTask": "Read aloud: 'Ich stehe um 6:30 auf, fruehstuecke und fahre zur Arbeit.'",
+    "readingTask": "Read: 'Maria muss Ueberstunden machen. Sie kann nicht zum Sport gehen.'",
+    "speakingTask": "Describe a typical work day. Use 3 separable verbs.",
+    "writingTask": "Write an email about your work schedule.",
+    "reviewSummary": "You learned separable verbs (aufstehen, anfangen) and modal verbs."
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_5",
+    "id": "A2_lesson_5",
+    "title": "Feste feiern: Geburtstag und Traditionen",
+    "objective": "Talk about celebrations, give presents, describe German traditions.",
+    "explanation": "'Alles Gute zum Geburtstag!' is the standard birthday wish. Germans give gifts and celebrate with family.",
+    "examples": [
+      "Alles Gute zum Geburtstag!",
+      "Ich schenke dir ein Buch.",
+      "Wir feiern Weihnachten mit der Familie.",
+      "Herzlichen Glueckwunsch!"
+    ],
+    "vocabulary": [
+      { "word": "der Geburtstag", "translation": "birthday", "example": "Wann hast du Geburtstag?" },
+      { "word": "feiern", "translation": "to celebrate", "example": "Wir feiern am Samstag." },
+      { "word": "das Geschenk", "translation": "gift", "example": "Das Geschenk ist fuer dich." },
+      { "word": "schenken", "translation": "to give as gift", "example": "Ich schenke ihr Blumen." },
+      { "word": "die Tradition", "translation": "tradition", "example": "Das ist eine deutsche Tradition." }
+    ],
+    "grammarFocus": "Dative with 'schenken': Ich schenke dir (dat) ein Buch (acc). 'Zum' = zu + dem.",
+    "guidedPractice": [
+      { "prompt": "Say 'Happy birthday!'", "answer": "Alles Gute zum Geburtstag!" },
+      { "prompt": "Say 'I give you flowers.'", "answer": "Ich schenke dir Blumen." },
+      { "prompt": "Ask 'When is your birthday?' (formal)", "answer": "Wann haben Sie Geburtstag?" },
+      { "prompt": "We celebrate with family.", "answer": "Wir feiern mit der Familie." }
+    ],
+    "independentPractice": [
+      { "prompt": "Write a birthday invitation.", "type": "writing" },
+      { "prompt": "Describe a celebration in your culture.", "type": "creative" }
+    ],
+    "listeningTask": "Read aloud: 'Liebe Anna, ich lade dich zu meinem Geburtstag ein.'",
+    "readingTask": "Read: 'In Deutschland feiert man Weihnachten am 24. Dezember.'",
+    "speakingTask": "Describe your favorite celebration. Record.",
+    "writingTask": "Write a thank-you note for a birthday gift.",
+    "reviewSummary": "You learned celebration vocabulary, dative with 'schenken', and traditions."
+  }
+]

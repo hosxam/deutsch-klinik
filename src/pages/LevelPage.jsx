@@ -1,9 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getState, getLevelProgress, isExamUnlocked } from '../utils/store';
+import { getState, getLevelProgress, isExamUnlocked, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
 import lessonsData from '../data/curriculum.json';
-import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked } from 'lucide-react';
+import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap, ListChecks } from 'lucide-react';
 
 const skills = [
   { key: 'grammar', label: 'Grammar', icon: BookOpen, color: '#00f0ff', desc: 'Articles, cases, tenses, syntax' },
@@ -28,6 +28,8 @@ export default function LevelPage() {
     return () => clearInterval(interval);
   }, []);
 
+  const completedLessons = getCompletedLessons(levelId);
+
   if (!levelData) {
     return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
   }
@@ -44,6 +46,34 @@ export default function LevelPage() {
           <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{levelData.description}</p>
         </div>
       </div>
+
+      {/* Structured Lessons Card */}
+      <Link to={`/level/${levelId}/lessons`} className="rounded-xl p-5 mb-6 flex items-center gap-4 transition-all hover:scale-[1.01] group" style={{
+        background: `linear-gradient(135deg, ${levelData.color}15, var(--bg-card))`,
+        border: `1px solid ${completedLessons.length > 0 ? levelData.color : 'var(--border)'}`,
+      }}>
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: `${levelData.color}20` }}>
+          <GraduationCap size={26} style={{ color: levelData.color }} />
+        </div>
+        <div className="flex-1">
+          <div className="font-semibold flex items-center gap-2" style={{ color: levelData.color }}>
+            Structured Lessons
+            <ChevronRight size={16} />
+          </div>
+          <p className="text-xs mt-1" style={{ color: 'var(--text-secondary)' }}>
+            {completedLessons.length} lessons completed &middot; Follow a step-by-step curriculum from start to exam-ready
+          </p>
+        </div>
+        <div className="text-center flex-shrink-0">
+          <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{
+            border: `2px solid ${completedLessons.length > 0 ? levelData.color : 'var(--text-muted)'}`,
+            color: completedLessons.length > 0 ? levelData.color : 'var(--text-muted)',
+          }}>
+            {completedLessons.length}
+          </div>
+          <div className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>done</div>
+        </div>
+      </Link>
 
       {/* Skill Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
