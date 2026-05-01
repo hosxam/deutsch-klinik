@@ -982,6 +982,966 @@
         "Können Sie bitte ...?",
         "Ich möchte schlafen."
       ]
+    },
+    {
+      "id": "A2_speak_11",
+      "title": "Sich vorstellen",
+      "prompt": "Stellen Sie sich vor. Sagen Sie Ihren Namen, Alter, wo Sie wohnen, was Sie machen und was Ihre Hobbys sind.",
+      "instructions": "Sprechen Sie für mindestens 30 Sekunden. Erwähnen Sie: Name, Alter, Wohnort, Beruf/Studium, Hobbys.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Beginnen Sie mit \"Ich heiße...\" und sprechen Sie ruhig und deutlich.",
+      "usefulPhrases": [
+        "Ich heiße ...",
+        "Ich wohne in ...",
+        "Von Beruf bin ich ...",
+        "In meiner Freizeit ...",
+        "Mein Hobby ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_12",
+      "title": "Mein Tagesablauf",
+      "prompt": "Beschreiben Sie einen normalen Tag. Was machen Sie morgens, mittags und abends?",
+      "instructions": "Sagen Sie: Wann Sie aufstehen, was Sie frühstücken, was Sie tagsüber machen, wann Sie schlafen gehen.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Uhrzeiten: um 7 Uhr, um 12 Uhr. Benutzen Sie Verben im Präsens.",
+      "usefulPhrases": [
+        "Ich stehe um ... Uhr auf.",
+        "Dann frühstücke ich.",
+        "Um ... Uhr gehe ich zur Arbeit.",
+        "Abends ...",
+        "Um ... Uhr gehe ich ins Bett."
+      ]
+    },
+    {
+      "id": "A2_speak_13",
+      "title": "Letztes Wochenende",
+      "prompt": "Erzählen Sie von Ihrem letzten Wochenende. Was haben Sie gemacht?",
+      "instructions": "Erwähnen Sie: Wo Sie waren, mit wem, was Sie gemacht haben, ob es Ihnen gefallen hat. Benutzen Sie Perfekt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Perfekt ist wichtig: ich bin gegangen, ich habe gesehen, ich war. Struktur: Samstag + Sonntag.",
+      "usefulPhrases": [
+        "Am Samstag bin ich ...",
+        "Ich habe ... gemacht.",
+        "Das war schön, weil ...",
+        "Am Sonntag war ich ...",
+        "Nächstes Wochenende ..."
+      ]
+    },
+    {
+      "id": "A2_speak_14",
+      "title": "Eine Reise planen",
+      "prompt": "Sie planen eine Reise. Wohin möchten Sie reisen? Wie reisen Sie? Was nehmen Sie mit?",
+      "instructions": "Sagen Sie: das Ziel, das Verkehrsmittel, die Dauer, die Aktivitäten, das Gepäck.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"ich möchte/reise/fliege/fahre\". Erwähnen Sie 3-4 Details.",
+      "usefulPhrases": [
+        "Ich möchte nach ... reisen.",
+        "Ich fahre mit dem ...",
+        "Ich bleibe ... Tage.",
+        "Ich möchte ... besuchen.",
+        "Ich nehme ... mit."
+      ]
+    },
+    {
+      "id": "A2_speak_15",
+      "title": "Problem im Hotel",
+      "prompt": "Sie sind in einem Hotel und haben ein Problem. Rufen Sie an der Rezeption an und erklären Sie das Problem.",
+      "instructions": "Nennen Sie: Ihr Name, Ihr Zimmer, das Problem (Kaputte Dusche, zu laut, kein warmes Wasser), und was Sie möchten.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Seien Sie höflich: \"Entschuldigung\", \"Können Sie bitte...\"",
+      "usefulPhrases": [
+        "Guten Tag, mein Name ist ...",
+        "Ich bin in Zimmer ...",
+        "Es gibt ein Problem: ...",
+        "Können Sie bitte ...?",
+        "Vielen Dank für Ihre Hilfe."
+      ]
+    },
+    {
+      "id": "A2_speak_16",
+      "title": "Umtausch im Geschäft",
+      "prompt": "Sie haben ein Kleidungsstück gekauft, das nicht passt. Gehen Sie zurück ins Geschäft und möchten es umtauschen.",
+      "instructions": "Sagen Sie: Was Sie gekauft haben, warum es nicht passt (zu groß/klein), was Sie stattdessen möchten.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Ich möchte ... umtauschen.\" Zeigen Sie den Kassenbon.",
+      "usefulPhrases": [
+        "Guten Tag, ich möchte etwas umtauschen.",
+        "Ich habe gestern ... gekauft.",
+        "Das ist zu ...",
+        "Haben Sie das in ... Größe?",
+        "Hier ist der Kassenbon."
+      ]
+    },
+    {
+      "id": "A2_speak_17",
+      "title": "Reklamation im Restaurant",
+      "prompt": "Sie sind in einem Restaurant. Das Essen ist kalt und der Service war langsam. Beschweren Sie sich höflich.",
+      "instructions": "Erklären Sie: Was Sie bestellt haben, das Problem, was Sie möchten (neues Essen, Rabatt, mit dem Chef sprechen).",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Bleiben Sie höflich. Sagen Sie \"Es tut mir leid, aber...\"",
+      "usefulPhrases": [
+        "Entschuldigung, aber ...",
+        "Ich habe ... bestellt.",
+        "Das Essen ist ...",
+        "Können Sie bitte ...?",
+        "Ich möchte mit dem Chef sprechen."
+      ]
+    },
+    {
+      "id": "A2_speak_18",
+      "title": "Meine Arbeit",
+      "prompt": "Erzählen Sie von Ihrer Arbeit oder Ihrem Studium. Was machen Sie? Welche Aufgaben haben Sie?",
+      "instructions": "Sagen Sie: Ihren Beruf/Ihr Studienfach, die Arbeitszeiten, Ihre Aufgaben, was Ihnen gefällt/nicht gefällt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Benutzen Sie \"Ich arbeite als ...\" oder \"Ich studiere ...\" und beschreiben Sie Ihren typischen Arbeitstag.",
+      "usefulPhrases": [
+        "Ich arbeite als ...",
+        "Ich arbeite von ... bis ...",
+        "Meine Aufgaben sind ...",
+        "Mir gefällt, dass ...",
+        "Nicht so gut finde ich ..."
+      ]
+    },
+    {
+      "id": "A2_speak_19",
+      "title": "Im Sprachkurs",
+      "prompt": "Sie besuchen einen Deutschkurs. Erzählen Sie von Ihrem Kurs.",
+      "instructions": "Sagen Sie: Wo der Kurs ist, wann, wer der Lehrer ist, wer die anderen Kursteilnehmer sind, was Sie lernen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Sprechen Sie über Ihre Mitschüler und über Ihre Fortschritte.",
+      "usefulPhrases": [
+        "Mein Deutschkurs ist bei ...",
+        "Der Kurs ist ... Mal pro Woche.",
+        "Unser Lehrer/unsere Lehrerin ...",
+        "Im Kurs sind ... Teilnehmer.",
+        "Ich lerne gerade ..."
+      ]
+    },
+    {
+      "id": "A2_speak_20",
+      "title": "Meine Wohnung",
+      "prompt": "Beschreiben Sie Ihre Wohnung oder Ihr Haus.",
+      "instructions": "Sagen Sie: Wo die Wohnung ist, wie viele Zimmer, welche Möbel, was Ihnen gefällt, was Sie vermissen.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Präpositionen: in der Nähe von, gegenüber, neben. Beschreiben Sie Ihr Lieblingszimmer.",
+      "usefulPhrases": [
+        "Ich wohne in ...",
+        "Meine Wohnung hat ... Zimmer.",
+        "Im Wohnzimmer steht ...",
+        "In der Küche gibt es ...",
+        "Am besten gefällt mir ..."
+      ]
+    },
+    {
+      "id": "A2_speak_21",
+      "title": "Beim Arzt",
+      "prompt": "Sie sind beim Arzt und müssen Ihre Symptome beschreiben.",
+      "instructions": "Sagen Sie: Was Ihnen fehlt, seit wann, ob Sie Schmerzen haben, was Sie schon dagegen gemacht haben.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Körperteile: Kopf, Bauch, Rücken. Sagen Sie \"Ich habe ...\" oder \"Mir tut ... weh.\"",
+      "usefulPhrases": [
+        "Guten Tag, Herr Doktor.",
+        "Ich habe ...",
+        "Seit ... habe ich Schmerzen.",
+        "Mir tut der/die/das ... weh.",
+        "Haben Sie eine Empfehlung?"
+      ]
+    },
+    {
+      "id": "A2_speak_22",
+      "title": "In der Apotheke",
+      "prompt": "Sie gehen in die Apotheke und möchten ein Medikament gegen Kopfschmerzen oder Erkältung kaufen.",
+      "instructions": "Erklären Sie: Was Sie haben, ob Sie ein Rezept haben, ob Sie schon etwas genommen haben, welche Form Sie möchten (Tabletten, Saft, Tropfen).",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Fragen Sie nach der Dosierung und ob es Nebenwirkungen gibt.",
+      "usefulPhrases": [
+        "Guten Tag, ich brauche etwas gegen ...",
+        "Haben Sie ein Medikament für ...?",
+        "Wie oft soll ich das nehmen?",
+        "Gibt es Nebenwirkungen?",
+        "Vielen Dank für die Beratung."
+      ]
+    },
+    {
+      "id": "A2_speak_23",
+      "title": "Meine Familie",
+      "prompt": "Erzählen Sie von Ihrer Familie.",
+      "instructions": "Sagen Sie: Wie groß Ihre Familie ist, wer Ihre Familienmitglieder sind, wie alt sie sind, was sie machen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Possessivartikel: mein, meine, unser. Erwähnen Sie 3-4 Personen.",
+      "usefulPhrases": [
+        "Ich habe eine große/kleine Familie.",
+        "Mein Vater/meine Mutter ...",
+        "Ich habe einen Bruder/eine Schwester.",
+        "Mein Bruder ist ... Jahre alt.",
+        "Wir machen gern zusammen ..."
+      ]
+    },
+    {
+      "id": "A2_speak_24",
+      "title": "Eine Einladung",
+      "prompt": "Sie laden einen Freund/eine Freundin zu einer Party oder einem Essen ein.",
+      "instructions": "Sagen Sie: Wann die Party ist, wo, was es gibt, wen Sie einladen, ob der Freund etwas mitbringen soll.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Seien Sie freundlich: \"Ich möchte dich einladen...\"",
+      "usefulPhrases": [
+        "Ich möchte dich zu ... einladen.",
+        "Die Party ist am ... um ... Uhr.",
+        "Kannst du ... mitbringen?",
+        "Ich freue mich auf dich!",
+        "Kannst du bitte Bescheid sagen?"
+      ]
+    },
+    {
+      "id": "A2_speak_25",
+      "title": "Wetter und Freizeit",
+      "prompt": "Welches Wetter mögen Sie? Was machen Sie bei schönem und bei schlechtem Wetter?",
+      "instructions": "Beschreiben Sie: Ihr Lieblingswetter, was Sie draußen machen, was Sie drinnen machen.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Nutzen Sie \"wenn\": Wenn es regnet, ... Wenn die Sonne scheint, ...",
+      "usefulPhrases": [
+        "Am liebsten mag ich Wetter mit ...",
+        "Wenn das Wetter schön ist, ...",
+        "Bei Regen bleibe ich zu Hause und ...",
+        "Im Sommer ...",
+        "Im Winter ..."
+      ]
+    },
+    {
+      "id": "A2_speak_26",
+      "title": "Meine Hobbys",
+      "prompt": "Erzählen Sie von Ihren Hobbys und Freizeitaktivitäten.",
+      "instructions": "Sagen Sie: Welche Hobbys Sie haben, wie oft, mit wem, und warum es Ihnen gefällt.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Nutzen Sie \"gern\", \"am liebsten\", \"einmal pro Woche\". Vergleichen Sie: Kochen gefällt mir besser als...",
+      "usefulPhrases": [
+        "Mein Hobby ist ...",
+        "Ich ... gern, weil ...",
+        "Das mache ich ... Mal pro Woche.",
+        "Am liebsten ...",
+        "Früher habe ich ... gemacht."
+      ]
+    },
+    {
+      "id": "A2_speak_27",
+      "title": "Problem mit Technik",
+      "prompt": "Ihr Computer oder Ihr Internet funktioniert nicht. Rufen Sie den Technik-Support an.",
+      "instructions": "Erklären Sie: Was für ein Gerät, das Problem, seit wann, was Sie schon versucht haben.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Bleiben Sie ruhig. Beschreiben Sie genau, was passiert.",
+      "usefulPhrases": [
+        "Mein ... funktioniert nicht.",
+        "Seit gestern ...",
+        "Ich habe schon ... versucht.",
+        "Können Sie mir helfen?",
+        "Was soll ich jetzt machen?"
+      ]
+    },
+    {
+      "id": "A2_speak_28",
+      "title": "Termin vereinbaren",
+      "prompt": "Sie rufen im Büro an und möchten einen Termin mit Ihrem Vorgesetzten vereinbaren.",
+      "instructions": "Sagen Sie: Ihren Namen, den Grund, Ihre Verfügbarkeit, und fragen Sie nach einem passenden Termin.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Geben Sie mehrere Terminvorschläge.",
+      "usefulPhrases": [
+        "Guten Tag, hier spricht ...",
+        "Ich möchte gern einen Termin bei ...",
+        "Geht es am Montag um ...?",
+        "Oder am Dienstag ...?",
+        "Vielen Dank!"
+      ]
+    },
+    {
+      "id": "A2_speak_29",
+      "title": "Beschwerde über einen Service",
+      "prompt": "Sie haben einen Service (z.B. Lieferung, Handyvertrag) und sind nicht zufrieden. Beschweren Sie sich telefonisch.",
+      "instructions": "Nennen Sie: Den Service, das Problem, was Sie schon versucht haben, was Sie möchten (Geld zurück, Rabatt, Lösung).",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Bleiben Sie höflich, aber deutlich. Nennen Sie Ihr Kunden-/Vertragsnummer.",
+      "usefulPhrases": [
+        "Mein Name ist ...",
+        "Meine Kundennummer ist ...",
+        "Ich bin unzufrieden mit ...",
+        "Das Problem ist ...",
+        "Ich möchte ..."
+      ]
+    },
+    {
+      "id": "A2_speak_30",
+      "title": "Meine Meinung",
+      "prompt": "Was ist besser: große Stadt oder kleine Stadt? Geben Sie Ihre Meinung und Gründe.",
+      "instructions": "Sagen Sie: Ihre Meinung, 2-3 Gründe, ein Beispiel, und fragen Sie die andere Person nach ihrer Meinung.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Ich finde, dass...\", \"Meiner Meinung nach...\", \"weil\".",
+      "usefulPhrases": [
+        "Ich finde ... besser, weil ...",
+        "Meiner Meinung nach ...",
+        "Ein Vorteil ist ...",
+        "Ein Nachteil ist ...",
+        "Was meinst du?"
+      ]
+    },
+    {
+      "id": "A2_speak_31",
+      "title": "Vergleiche anstellen",
+      "prompt": "Vergleichen Sie zwei Städte oder zwei Länder, die Sie kennen.",
+      "instructions": "Sagen Sie: die Groesse, das Wetter, das Essen, die Menschen, die Kosten. Benutzen Sie Komparative (größer, schöner, teurer).",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Beginnen Sie mit \"Im Vergleich zu ...\". Nutzen Sie \"als\": ... ist größer als ...",
+      "usefulPhrases": [
+        "Im Vergleich zu ...",
+        "... ist größer/kleiner/schöner als ...",
+        "In ... gibt es mehr/weniger ...",
+        "Der Unterschied ist ...",
+        "Mir gefällt ... besser, weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_32",
+      "title": "Wegbeschreibung",
+      "prompt": "Sie sind Tourist und fragen nach dem Weg zum Bahnhof oder zum Museum.",
+      "instructions": "Fragen Sie: Wie Sie zu Fuß oder mit dem Bus hinkommen, wie lange es dauert, ob es weit ist.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Können Sie mir sagen, wo ... ist?\" und \"Gehen Sie geradeaus/dann links/rechts.\"",
+      "usefulPhrases": [
+        "Entschuldigung, wo ist ...?",
+        "Wie komme ich zu ...?",
+        "Ist das weit von hier?",
+        "Gehen Sie geradeaus, dann ...",
+        "Vielen Dank für die Hilfe!"
+      ]
+    },
+    {
+      "id": "A2_speak_33",
+      "title": "Notruf",
+      "prompt": "Sie sehen einen Unfall auf der Straße. Rufen Sie den Notruf an (110 Polizei oder 112 Rettungsdienst).",
+      "instructions": "Sagen Sie: Wo der Unfall ist, was passiert ist, ob jemand verletzt ist, wie viele Personen betroffen sind.",
+      "prepTime": 30,
+      "talkTime": 60,
+      "tips": "Bleiben Sie ruhig. Sagen Sie zuerst den Ort! Warten Sie auf Rückfragen.",
+      "usefulPhrases": [
+        "Hier ist ein Notfall!",
+        "Der Unfall ist in ...",
+        "Es gibt ... Verletzte.",
+        "Ein Auto/ein Fahrrad ...",
+        "Kommen Sie bitte schnell!"
+      ]
+    },
+    {
+      "id": "A2_speak_34",
+      "title": "Einkaufen für Kleidung",
+      "prompt": "Sie gehen einkaufen und möchten ein neues Kleidungsstueck kaufen. Sprechen Sie mit der Verkäuferin.",
+      "instructions": "Sagen Sie: Was Sie suchen, welche Farbe und Groesse, ob Sie es anprobieren können, Ihre Meinung.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Fragen Sie nach der Groesse und ob es die Farbe auch in einer anderen Groesse gibt.",
+      "usefulPhrases": [
+        "Ich suche ...",
+        "Haben Sie das in ...?",
+        "Kann ich das anprobieren?",
+        "Die Farbe gefällt mir/nicht.",
+        "Ich nehme es!/Ich lasse es."
+      ]
+    },
+    {
+      "id": "A2_speak_35",
+      "title": "Bestellen im Restaurant",
+      "prompt": "Sie sind in einem Restaurant. Bestellen Sie Essen und Getraenke.",
+      "instructions": "Sagen Sie: Was Sie als Vorspeise/Hauptgericht/Nachtisch möchten, was Sie trinken möchten, ob Sie Allergien haben.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie nach Empfehlungen: \"Was können Sie empfehlen?\"",
+      "usefulPhrases": [
+        "Könnte ich bitte die Karte sehen?",
+        "Ich möchte ... als Vorspeise.",
+        "Als Hauptgericht ...",
+        "Dazu möchte ich ... trinken.",
+        "Können Sie etwas empfehlen?"
+      ]
+    },
+    {
+      "id": "A2_speak_36",
+      "title": "Arzttermin telefonisch vereinbaren",
+      "prompt": "Sie rufen in der Arztpraxis an und möchten einen Termin.",
+      "instructions": "Sagen Sie: Ihren Namen, Ihre Symptome, ob Sie schon Patient dort sind, wann Sie Zeit haben.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Haben Sie Ihre Versicherungskarte bereit. Fragen Sie, was Sie zum Termin mitbringen müssen.",
+      "usefulPhrases": [
+        "Guten Tag, ich möchte einen Termin.",
+        "Mein Name ist ...",
+        "Ich habe ...",
+        "Passt es am ... um ...?",
+        "Was muss ich mitbringen?"
+      ]
+    },
+    {
+      "id": "A2_speak_37",
+      "title": "Auf der Post",
+      "prompt": "Sie sind auf der Post und möchten ein Paket verschicken.",
+      "instructions": "Sagen Sie: Wohin das Paket geht, was drin ist, wie schnell es ankommen soll (Standard/Express), ob es versichert sein soll.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie nach den Kosten und der Lieferzeit.",
+      "usefulPhrases": [
+        "Guten Tag, ich möchte ein Paket verschicken.",
+        "Das Paket geht nach ...",
+        "Welche Versandarten gibt es?",
+        "Wie viel kostet das?",
+        "Wie lange dauert der Versand?"
+      ]
+    },
+    {
+      "id": "A2_speak_38",
+      "title": "Auf der Bank",
+      "prompt": "Sie gehen zur Bank und möchten ein Konto eröffnen oder eine Frage zu Ihrem Konto stellen.",
+      "instructions": "Sagen Sie: Was Sie möchten, ob Sie schon Kunde sind, welche Dokumente Sie haben.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Bringen Sie Ihren Ausweis mit. Fragen Sie nach den Kosten und Bedingungen.",
+      "usefulPhrases": [
+        "Guten Tag, ich möchte ein Konto eröffnen.",
+        "Welche Unterlagen brauche ich?",
+        "Gibt es monatliche Kosten?",
+        "Ich habe noch eine Frage ...",
+        "Vielen Dank für die Auskunft."
+      ]
+    },
+    {
+      "id": "A2_speak_39",
+      "title": "Ein Bild beschreiben",
+      "prompt": "Stellen Sie sich vor, Sie sehen ein Foto. Beschreiben Sie, was Sie sehen.",
+      "instructions": "Sagen Sie: Wer oder was zu sehen ist, wo die Personen sind, was sie machen, welche Farben und Dinge Sie sehen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Benutzen Sie \"Im Vordergrund/Hintergrund\", \"links/rechts\", \"oben/unten\" und \"Es gibt/es sind\".",
+      "usefulPhrases": [
+        "Auf dem Bild sehe ich ...",
+        "Im Vordergrund ist ...",
+        "Links/rechts sieht man ...",
+        "Die Personen sind ...",
+        "Die Stimmung ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_40",
+      "title": "Letzten Urlaub beschreiben",
+      "prompt": "Erzählen Sie von Ihrem letzten Urlaub oder einer schönen Reise.",
+      "instructions": "Sagen Sie: Wann und wohin, mit wem, wo Sie übernachtet haben, was Sie gemacht haben, was am besten war.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Perfekt: ich bin gefahren, wir haben besucht.",
+      "usefulPhrases": [
+        "Letzten Sommer bin ich nach ... gefahren.",
+        "Ich war mit ... unterwegs.",
+        "Wir haben in ... gewohnt.",
+        "Am besten war ...",
+        "Nächstes Jahr möchte ich ..."
+      ]
+    },
+    {
+      "id": "A2_speak_41",
+      "title": "Zukunftspläne",
+      "prompt": "Was möchten Sie in Zukunft machen?",
+      "instructions": "Sagen Sie: Ihre Pläne für nächstes Jahr, für die nächsten 5 Jahre, was Sie lernen/erreichen möchten.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"ich möchte\", \"ich werde\", \"ich hoffe, dass...\"",
+      "usefulPhrases": [
+        "Nächstes Jahr möchte ich ...",
+        "Ich hoffe, dass ...",
+        "In 5 Jahren ...",
+        "Ich möchte ... lernen.",
+        "Mein großer Traum ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_42",
+      "title": "Sich entschuldigen",
+      "prompt": "Sie haben einen Termin vergessen oder kommen zu spät. Entschuldigen Sie sich und erklären Sie den Grund.",
+      "instructions": "Sagen Sie: Warum Sie zu spät sind/warum Sie den Termin vergessen haben, dass es Ihnen leid tut, und machen Sie einen neuen Vorschlag.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Seien Sie ehrlich und hoeflich. Sagen Sie \"Es tut mir sehr leid.\"",
+      "usefulPhrases": [
+        "Es tut mir sehr leid!",
+        "Ich habe leider ...",
+        "Ich hatte ein Problem: ...",
+        "Können wir einen neuen Termin machen?",
+        "Wann passt es Ihnen?"
+      ]
+    },
+    {
+      "id": "A2_speak_43",
+      "title": "Um Hilfe bitten",
+      "prompt": "Sie haben ein Problem auf der Straße (Sie haben sich verlaufen, Ihr Auto ist kaputt). Bitten Sie eine fremde Person um Hilfe.",
+      "instructions": "Erklären Sie: Was passiert ist, was Sie brauchen, und bedanken Sie sich.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie hoeflich: \"Können Sie mir bitte helfen?\"",
+      "usefulPhrases": [
+        "Entschuldigung, können Sie mir helfen?",
+        "Ich habe mich verlaufen.",
+        "Ich suche ...",
+        "Können Sie mir sagen, wie ich zu ... komme?",
+        "Vielen, vielen Dank!"
+      ]
+    },
+    {
+      "id": "A2_speak_44",
+      "title": "Gesundheit und Fitness",
+      "prompt": "Erzählen Sie, was Sie für Ihre Gesundheit und Fitness tun.",
+      "instructions": "Sagen Sie: Ob Sie Sport machen, was für Sport, wie oft, was Sie essen, ob Sie genug schlafen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Ich sollte mehr ...\" und \"Es ist wichtig, dass ...\"",
+      "usefulPhrases": [
+        "Ich mache ... Sport.",
+        "Ich treibe ... Mal pro Woche Sport.",
+        "Ich versuche, gesund zu essen.",
+        "Am wichtigsten ist ...",
+        "Ich möchte mehr ... machen."
+      ]
+    },
+    {
+      "id": "A2_speak_45",
+      "title": "Ein Problem beschreiben",
+      "prompt": "Beschreiben Sie ein Problem in Ihrer Wohnung (Heizung kaputt, Wasser tropft, Fenster dicht). Rufen Sie den Hausmeister an.",
+      "instructions": "Sagen Sie: Was genau kaputt ist, seit wann, in welchem Zimmer, ob es dringend ist.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Seien Sie spezifisch. Beschreiben Sie genau: \"Das Wasser tropft aus dem Wasserhahn in der Küche.\"",
+      "usefulPhrases": [
+        "Guten Tag, hier ist ... aus Wohnung ...",
+        "Ich habe ein Problem mit ...",
+        "Seit ... funktioniert ... nicht.",
+        "Können Sie jemanden vorbeischicken?",
+        "Wann kommt der Techniker?"
+      ]
+    },
+    {
+      "id": "A2_speak_46",
+      "title": "Freizeitpark oder Museum",
+      "prompt": "Sie waren in einem Freizeitpark oder Museum. Erzählen Sie von Ihrem Besuch.",
+      "instructions": "Sagen Sie: Wann Sie dort waren, mit wem, was Sie gesehen/gemacht haben, was Ihnen am besten gefallen hat.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Perfekt. Erwaehnen Sie 3 Highlights.",
+      "usefulPhrases": [
+        "Letzte Woche war ich im ...",
+        "Der Eintritt hat ... gekostet.",
+        "Am besten gefallen hat mir ...",
+        "Wir haben ... gesehen/gemacht.",
+        "Ich möchte nochmal hingehen, weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_47",
+      "title": "Geschenk kaufen",
+      "prompt": "Sie möchten ein Geschenk für einen Freund/eine Freundin kaufen. Besprechen Sie die Ideen mit einem Verkäufer.",
+      "instructions": "Sagen Sie: Für wen das Geschenk ist, der Anlass, Ihre Ideen, das Budget.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Fragen Sie nach Vorschlägen: \"Was können Sie empfehlen?\"",
+      "usefulPhrases": [
+        "Ich suche ein Geschenk für ...",
+        "Der Anlass ist ...",
+        "Mein Budget ist ...",
+        "Haben Sie eine Idee?",
+        "Das ist perfekt, vielen Dank!"
+      ]
+    },
+    {
+      "id": "A2_speak_48",
+      "title": "Tier beschreiben",
+      "prompt": "Haben Sie ein Haustier oder möchten Sie eins? Erzählen Sie davon.",
+      "instructions": "Sagen Sie: Welches Tier, wie es heißt, wie es aussieht, was es mag, wer sich kümmert.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Nutzen Sie Adjektive: klein, groß, süß, frech, ruhig.",
+      "usefulPhrases": [
+        "Ich habe einen/eine ...",
+        "Er/Sie heißt ...",
+        "Er/Sie ist ... Jahre alt.",
+        "Am liebsten macht er/sie ...",
+        "Ein Haustier ist ... weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_49",
+      "title": "Deutsche Traditionen",
+      "prompt": "Welche deutschen Traditionen oder Feste kennen Sie? Erzählen Sie von einem Fest.",
+      "instructions": "Sagen Sie: Welches Fest, wann es ist, was man macht, was man isst/trinkt, ob es so etwas in Ihrem Land auch gibt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Sprechen Sie über Weihnachten, Ostern, Oktoberfest oder Geburtstag in Deutschland.",
+      "usefulPhrases": [
+        "Ein bekanntes Fest in Deutschland ist ...",
+        "Es findet im ... statt.",
+        "Die Menschen ...",
+        "In meinem Land feiern wir ...",
+        "Der Unterschied ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_50",
+      "title": "Kurzpraesentation: Meine Stadt",
+      "prompt": "Stellen Sie Ihre Stadt oder Ihr Dorf vor.",
+      "instructions": "Sagen Sie: Wo es liegt, wie groß, was es zu sehen gibt, was man dort machen kann, ob es Ihnen gefällt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Es gibt\", \"Man kann\", \"Besonders schön ist\".",
+      "usefulPhrases": [
+        "Meine Stadt heißt ...",
+        "Sie liegt in ...",
+        "Es gibt einen/eine/ein ...",
+        "Man kann ... besuchen/machen.",
+        "Mir gefällt ... am besten."
+      ]
+    },
+    {
+      "id": "A2_speak_51",
+      "title": "Vergleiche anstellen",
+      "prompt": "Vergleichen Sie zwei Staedte oder zwei Laender, die Sie kennen.",
+      "instructions": "Sagen Sie: die Groesse, das Wetter, das Essen, die Menschen, die Kosten. Benutzen Sie Komparative (groesser, schoener, teurer).",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Beginnen Sie mit \"Im Vergleich zu ...\". Nutzen Sie \"als\": ... ist groesser als ...",
+      "usefulPhrases": [
+        "Im Vergleich zu ...",
+        "... ist groesser/kleiner/schoener als ...",
+        "In ... gibt es mehr/weniger ...",
+        "Der Unterschied ist ...",
+        "Mir gefaellt ... besser, weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_52",
+      "title": "Wegbeschreibung",
+      "prompt": "Sie sind Tourist und fragen nach dem Weg zum Bahnhof oder zum Museum.",
+      "instructions": "Fragen Sie: Wie Sie zu Fuss oder mit dem Bus hinkommen, wie lange es dauert, ob es weit ist.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Koennen Sie mir sagen, wo ... ist?\" und \"Gehen Sie geradeaus/dann links/rechts.\"",
+      "usefulPhrases": [
+        "Entschuldigung, wo ist ...?",
+        "Wie komme ich zu ...?",
+        "Ist das weit von hier?",
+        "Gehen Sie geradeaus, dann ...",
+        "Vielen Dank fuer die Hilfe!"
+      ]
+    },
+    {
+      "id": "A2_speak_53",
+      "title": "Notruf",
+      "prompt": "Sie sehen einen Unfall auf der Strasse. Rufen Sie den Notruf an (110 Polizei oder 112 Rettungsdienst).",
+      "instructions": "Sagen Sie: Wo der Unfall ist, was passiert ist, ob jemand verletzt ist, wie viele Personen betroffen sind.",
+      "prepTime": 30,
+      "talkTime": 60,
+      "tips": "Bleiben Sie ruhig. Sagen Sie zuerst den Ort! Warten Sie auf Rueckfragen.",
+      "usefulPhrases": [
+        "Hier ist ein Notfall!",
+        "Der Unfall ist in ...",
+        "Es gibt ... Verletzte.",
+        "Ein Auto/ein Fahrrad ...",
+        "Kommen Sie bitte schnell!"
+      ]
+    },
+    {
+      "id": "A2_speak_54",
+      "title": "Einkaufen fuer Kleidung",
+      "prompt": "Sie gehen einkaufen und moechten ein neues Kleidungsstueck kaufen. Sprechen Sie mit der Verkaeuferin.",
+      "instructions": "Sagen Sie: Was Sie suchen, welche Farbe und Groesse, ob Sie es anprobieren koennen, Ihre Meinung.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Fragen Sie nach der Groesse und ob es die Farbe auch in einer anderen Groesse gibt.",
+      "usefulPhrases": [
+        "Ich suche ...",
+        "Haben Sie das in ...?",
+        "Kann ich das anprobieren?",
+        "Die Farbe gefaellt mir/nicht.",
+        "Ich nehme es!/Ich lasse es."
+      ]
+    },
+    {
+      "id": "A2_speak_55",
+      "title": "Bestellen im Restaurant",
+      "prompt": "Sie sind in einem Restaurant. Bestellen Sie Essen und Getraenke.",
+      "instructions": "Sagen Sie: Was Sie als Vorspeise/Hauptgericht/Nachtisch moechten, was Sie trinken moechten, ob Sie Allergien haben.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie nach Empfehlungen: \"Was koennen Sie empfehlen?\"",
+      "usefulPhrases": [
+        "Koente ich bitte die Karte sehen?",
+        "Ich moechte ... als Vorspeise.",
+        "Als Hauptgericht ...",
+        "Dazu moechte ich ... trinken.",
+        "Koennen Sie etwas empfehlen?"
+      ]
+    },
+    {
+      "id": "A2_speak_56",
+      "title": "Arzttermin telefonisch vereinbaren",
+      "prompt": "Sie rufen in der Arztpraxis an und moechten einen Termin.",
+      "instructions": "Sagen Sie: Ihren Namen, Ihre Symptome, ob Sie schon Patient dort sind, wann Sie Zeit haben.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Haben Sie Ihre Versicherungskarte bereit. Fragen Sie, was Sie zum Termin mitbringen muessen.",
+      "usefulPhrases": [
+        "Guten Tag, ich moechte einen Termin.",
+        "Mein Name ist ...",
+        "Ich habe ...",
+        "Passt es am ... um ...?",
+        "Was muss ich mitbringen?"
+      ]
+    },
+    {
+      "id": "A2_speak_57",
+      "title": "Auf der Post",
+      "prompt": "Sie sind auf der Post und moechten ein Paket verschicken.",
+      "instructions": "Sagen Sie: Wohin das Paket geht, was drin ist, wie schnell es ankommen soll (Standard/Express), ob es versichert sein soll.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie nach den Kosten und der Lieferzeit.",
+      "usefulPhrases": [
+        "Guten Tag, ich moechte ein Paket verschicken.",
+        "Das Paket geht nach ...",
+        "Welche Versandarten gibt es?",
+        "Wie viel kostet das?",
+        "Wie lange dauert der Versand?"
+      ]
+    },
+    {
+      "id": "A2_speak_58",
+      "title": "Auf der Bank",
+      "prompt": "Sie gehen zur Bank und moechten ein Konto eroeffnen oder eine Frage zu Ihrem Konto stellen.",
+      "instructions": "Sagen Sie: Was Sie moechten, ob Sie schon Kunde sind, welche Dokumente Sie haben.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Bringen Sie Ihren Ausweis mit. Fragen Sie nach den Kosten und Bedingungen.",
+      "usefulPhrases": [
+        "Guten Tag, ich moechte ein Konto eroeffnen.",
+        "Welche Unterlagen brauche ich?",
+        "Gibt es monatliche Kosten?",
+        "Ich habe noch eine Frage ...",
+        "Vielen Dank fuer die Auskunft."
+      ]
+    },
+    {
+      "id": "A2_speak_59",
+      "title": "Ein Bild beschreiben",
+      "prompt": "Stellen Sie sich vor, Sie sehen ein Foto. Beschreiben Sie, was Sie sehen.",
+      "instructions": "Sagen Sie: Wer oder was zu sehen ist, wo die Personen sind, was sie machen, welche Farben und Dinge Sie sehen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Benutzen Sie \"Im Vordergrund/Hintergrund\", \"links/rechts\", \"oben/unten\" und \"Es gibt/es sind\".",
+      "usefulPhrases": [
+        "Auf dem Bild sehe ich ...",
+        "Im Vordergrund ist ...",
+        "Links/rechts sieht man ...",
+        "Die Personen sind ...",
+        "Die Stimmung ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_60",
+      "title": "Letzten Urlaub beschreiben",
+      "prompt": "Erzaehlen Sie von Ihrem letzten Urlaub oder einer schoenen Reise.",
+      "instructions": "Sagen Sie: Wann und wohin, mit wem, wo Sie uebernachtet haben, was Sie gemacht haben, was am besten war.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Perfekt: ich bin gefahren, wir haben besucht.",
+      "usefulPhrases": [
+        "Letzten Sommer bin ich nach ... gefahren.",
+        "Ich war mit ... unterwegs.",
+        "Wir haben in ... gewohnt.",
+        "Am besten war ...",
+        "Naechstes Jahr moechte ich ..."
+      ]
+    },
+    {
+      "id": "A2_speak_61",
+      "title": "Zukunftsplaene",
+      "prompt": "Was moechten Sie in Zukunft machen?",
+      "instructions": "Sagen Sie: Ihre Plaene fuer naechstes Jahr, fuer die naechsten 5 Jahre, was Sie lernen/erreichen moechten.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"ich moechte\", \"ich werde\", \"ich hoffe, dass...\"",
+      "usefulPhrases": [
+        "Naechstes Jahr moechte ich ...",
+        "Ich hoffe, dass ...",
+        "In 5 Jahren ...",
+        "Ich moechte ... lernen.",
+        "Mein grosser Traum ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_62",
+      "title": "Sich entschuldigen",
+      "prompt": "Sie haben einen Termin vergessen oder kommen zu spaet. Entschuldigen Sie sich und erklaeren Sie den Grund.",
+      "instructions": "Sagen Sie: Warum Sie zu spaet sind/warum Sie den Termin vergessen haben, dass es Ihnen leid tut, und machen Sie einen neuen Vorschlag.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Seien Sie ehrlich und hoeflich. Sagen Sie \"Es tut mir sehr leid.\"",
+      "usefulPhrases": [
+        "Es tut mir sehr leid!",
+        "Ich habe leider ...",
+        "Ich hatte ein Problem: ...",
+        "Koennen wir einen neuen Termin machen?",
+        "Wann passt es Ihnen?"
+      ]
+    },
+    {
+      "id": "A2_speak_63",
+      "title": "Um Hilfe bitten",
+      "prompt": "Sie haben ein Problem auf der Strasse (Sie haben sich verlaufen, Ihr Auto ist kaputt). Bitten Sie eine fremde Person um Hilfe.",
+      "instructions": "Erklaeren Sie: Was passiert ist, was Sie brauchen, und bedanken Sie sich.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Fragen Sie hoeflich: \"Koennen Sie mir bitte helfen?\"",
+      "usefulPhrases": [
+        "Entschuldigung, koennen Sie mir helfen?",
+        "Ich habe mich verlaufen.",
+        "Ich suche ...",
+        "Koennen Sie mir sagen, wie ich zu ... komme?",
+        "Vielen, vielen Dank!"
+      ]
+    },
+    {
+      "id": "A2_speak_64",
+      "title": "Gesundheit und Fitness",
+      "prompt": "Erzaehlen Sie, was Sie fuer Ihre Gesundheit und Fitness tun.",
+      "instructions": "Sagen Sie: Ob Sie Sport machen, was fuer Sport, wie oft, was Sie essen, ob Sie genug schlafen.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Ich sollte mehr ...\" und \"Es ist wichtig, dass ...\"",
+      "usefulPhrases": [
+        "Ich mache ... Sport.",
+        "Ich treibe ... Mal pro Woche Sport.",
+        "Ich versuche, gesund zu essen.",
+        "Am wichtigsten ist ...",
+        "Ich moechte mehr ... machen."
+      ]
+    },
+    {
+      "id": "A2_speak_65",
+      "title": "Ein Problem beschreiben",
+      "prompt": "Beschreiben Sie ein Problem in Ihrer Wohnung (Heizung kaputt, Wasser tropft, Fenster dicht). Rufen Sie den Hausmeister an.",
+      "instructions": "Sagen Sie: Was genau kaputt ist, seit wann, in welchem Zimmer, ob es dringend ist.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Seien Sie spezifisch. Beschreiben Sie genau: \"Das Wasser tropft aus dem Wasserhahn in der Kueche.\"",
+      "usefulPhrases": [
+        "Guten Tag, hier ist ... aus Wohnung ...",
+        "Ich habe ein Problem mit ...",
+        "Seit ... funktioniert ... nicht.",
+        "Koennen Sie jemanden vorbeischicken?",
+        "Wann kommt der Techniker?"
+      ]
+    },
+    {
+      "id": "A2_speak_66",
+      "title": "Freizeitpark oder Museum",
+      "prompt": "Sie waren in einem Freizeitpark oder Museum. Erzaehlen Sie von Ihrem Besuch.",
+      "instructions": "Sagen Sie: Wann Sie dort waren, mit wem, was Sie gesehen/gemacht haben, was Ihnen am besten gefallen hat.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Nutzen Sie Perfekt. Erwaehnen Sie 3 Highlights.",
+      "usefulPhrases": [
+        "Letzte Woche war ich im ...",
+        "Der Eintritt hat ... gekostet.",
+        "Am besten gefallen hat mir ...",
+        "Wir haben ... gesehen/gemacht.",
+        "Ich moechte nochmal hingehen, weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_67",
+      "title": "Geschenk kaufen",
+      "prompt": "Sie moechten ein Geschenk fuer einen Freund/eine Freundin kaufen. Besprechen Sie die Ideen mit einem Verkaeufer.",
+      "instructions": "Sagen Sie: Fuer wen das Geschenk ist, der Anlass, Ihre Ideen, das Budget.",
+      "prepTime": 45,
+      "talkTime": 90,
+      "tips": "Fragen Sie nach Vorschlaegen: \"Was koennen Sie empfehlen?\"",
+      "usefulPhrases": [
+        "Ich suche ein Geschenk fuer ...",
+        "Der Anlass ist ...",
+        "Mein Budget ist ...",
+        "Haben Sie eine Idee?",
+        "Das ist perfekt, vielen Dank!"
+      ]
+    },
+    {
+      "id": "A2_speak_68",
+      "title": "Tier beschreiben",
+      "prompt": "Haben Sie ein Haustier oder moechten Sie eins? Erzaehlen Sie davon.",
+      "instructions": "Sagen Sie: Welches Tier, wie es heisst, wie es aussieht, was es mag, wer sich kuemmert.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Nutzen Sie Adjektive: klein, gross, suess, frech, ruhig.",
+      "usefulPhrases": [
+        "Ich habe einen/eine ...",
+        "Er/Sie heisst ...",
+        "Er/Sie ist ... Jahre alt.",
+        "Am liebsten macht er/sie ...",
+        "Ein Haustier ist ... weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_69",
+      "title": "Deutsche Traditionen",
+      "prompt": "Welche deutschen Traditionen oder Feste kennen Sie? Erzaehlen Sie von einem Fest.",
+      "instructions": "Sagen Sie: Welches Fest, wann es ist, was man macht, was man isst/trinkt, ob es so etwas in Ihrem Land auch gibt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Sprechen Sie ueber Weihnachten, Ostern, Oktoberfest oder Geburtstag in Deutschland.",
+      "usefulPhrases": [
+        "Ein bekanntes Fest in Deutschland ist ...",
+        "Es findet im ... statt.",
+        "Die Menschen ...",
+        "In meinem Land feiern wir ...",
+        "Der Unterschied ist ..."
+      ]
+    },
+    {
+      "id": "A2_speak_70",
+      "title": "Kurzpraesentation: Meine Stadt",
+      "prompt": "Stellen Sie Ihre Stadt oder Ihr Dorf vor.",
+      "instructions": "Sagen Sie: Wo es liegt, wie gross, was es zu sehen gibt, was man dort machen kann, ob es Ihnen gefaellt.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Nutzen Sie \"Es gibt\", \"Man kann\", \"Besonders schoen ist\".",
+      "usefulPhrases": [
+        "Meine Stadt heisst ...",
+        "Sie liegt in ...",
+        "Es gibt einen/eine/ein ...",
+        "Man kann ... besuchen/machen.",
+        "Mir gefaellt ... am besten."
+      ]
     }
   ],
   "B1": [

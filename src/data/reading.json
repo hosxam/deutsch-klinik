@@ -2054,6 +2054,2006 @@
           "answer": "Er liest eine Zeitschrift"
         }
       ]
+    },
+    {
+      "id": "A2_read_4",
+      "title": "Termin beim Arzt",
+      "text": "Sehr geehrte Frau Schmidt,\n\nvielen Dank fuer Ihre Terminanfrage. Wir bieten Ihnen einen Termin am Mittwoch, den 15. Mai um 10:30 Uhr an. Bitte bringen Sie Ihre Versicherungskarte und einen gültigen Ausweis mit. Wenn Sie den Termin nicht wahrnehmen koennen, sagen Sie bitte mindestens 24 Stunden vorher Bescheid.\n\nMit freundlichen Gruessen,\nPraxis Dr. Müller",
+      "questions": [
+        {
+          "id": "qr401",
+          "type": "mcq",
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Am Montag, den 13. Mai",
+            "Am Mittwoch, den 15. Mai",
+            "Am Freitag, den 17. Mai",
+            "Am Dienstag, den 14. Mai"
+          ],
+          "answer": "Am Mittwoch, den 15. Mai",
+          "explanation": "Der Termin ist am Mittwoch, den 15. Mai um 10:30 Uhr."
+        },
+        {
+          "id": "qr402",
+          "type": "true-false",
+          "question": "Man muss einen Ausweis mitbringen.",
+          "answer": "true",
+          "explanation": "Bitte bringen Sie Ihre Versicherungskarte und einen gueltigen Ausweis mit."
+        },
+        {
+          "id": "qr403",
+          "type": "mcq",
+          "question": "Was soll man tun, wenn man den Termin nicht wahrnehmen kann?",
+          "options": [
+            "Nichts tun",
+            "24 Stunden vorher Bescheid sagen",
+            "Eine Woche vorher anrufen",
+            "Am selben Tag absagen"
+          ],
+          "answer": "24 Stunden vorher Bescheid sagen",
+          "explanation": "Sagen Sie bitte mindestens 24 Stunden vorher Bescheid."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_5",
+      "title": "Wohnungsanzeige",
+      "text": "2-Zimmer-Wohnung in München-Mitte zu vermieten:\n\nDie Wohnung liegt im 3. Stock und hat einen Balkon. Sie ist 55 Quadratmeter gross und hat eine Einbauküche. Die Kaltmiete betraegt 850 Euro, plus 120 Euro Nebenkosten. Die Kaution ist 1.700 Euro. Die Wohnung ist ab 1. Juni frei. Besichtigungstermin nach Vereinbarung. Telefon: 089/1234567",
+      "questions": [
+        {
+          "id": "qr404",
+          "type": "mcq",
+          "question": "Wie gross ist die Wohnung?",
+          "options": [
+            "45 Quadratmeter",
+            "55 Quadratmeter",
+            "65 Quadratmeter",
+            "75 Quadratmeter"
+          ],
+          "answer": "55 Quadratmeter",
+          "explanation": "Die Wohnung ist 55 Quadratmeter gross."
+        },
+        {
+          "id": "qr405",
+          "type": "true-false",
+          "question": "Die Wohnung hat einen Balkon.",
+          "answer": "true",
+          "explanation": "Die Wohnung hat einen Balkon."
+        },
+        {
+          "id": "qr406",
+          "type": "mcq",
+          "question": "Wie hoch ist die Kaution?",
+          "options": [
+            "850 Euro",
+            "970 Euro",
+            "1.700 Euro",
+            "2.000 Euro"
+          ],
+          "answer": "1.700 Euro",
+          "explanation": "Die Kaution ist 1.700 Euro."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_6",
+      "title": "Zugverspaetung",
+      "text": "Durchsage am Bahnhof:\n\nAchtung, liebe Fahrgaeste! Der ICE 724 nach Frankfurt mit Abfahrt um 14:15 Uhr hat voraussichtlich 20 Minuten Verspaetung. Grund ist eine technische Stoerung auf der Strecke. Der Zug faehrt jetzt um 14:35 Uhr ab Gleis 5. Wir bitten um Entschuldigung. Anschlusszuege in Frankfurt werden nicht erreicht. Bitte informieren Sie sich am Service-Point ueber Alternativverbindungen.",
+      "questions": [
+        {
+          "id": "qr407",
+          "type": "mcq",
+          "question": "Wohin faehrt der ICE 724?",
+          "options": [
+            "Nach Hamburg",
+            "Nach Frankfurt",
+            "Nach Berlin",
+            "Nach Muenchen"
+          ],
+          "answer": "Nach Frankfurt",
+          "explanation": "Der ICE 724 nach Frankfurt..."
+        },
+        {
+          "id": "qr408",
+          "type": "mcq",
+          "question": "Wie viel Verspaetung hat der Zug?",
+          "options": [
+            "10 Minuten",
+            "20 Minuten",
+            "30 Minuten",
+            "15 Minuten"
+          ],
+          "answer": "20 Minuten",
+          "explanation": "Der Zug hat 20 Minuten Verspaetung."
+        },
+        {
+          "id": "qr409",
+          "type": "true-false",
+          "question": "Der Zug faehrt von Gleis 3.",
+          "answer": "false",
+          "explanation": "Der Zug faehrt jetzt um 14:35 Uhr ab Gleis 5."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_7",
+      "title": "Hotelbestätigung",
+      "text": "Hotel Sonnenhof – Buchungsbestaetigung\n\nSehr geehrter Herr Wagner,\n\nvielen Dank fuer Ihre Buchung. Sie haben vom 3. bis 7. September ein Einzelzimmer mit Fruehstueck reserviert. Der Gesamtpreis betraegt 420 Euro. Der Check-in ist ab 14:00 Uhr, der Check-out am Abreisetag bis 11:00 Uhr. Bitte beachten Sie: Kostenloses WLAN ist im ganzen Haus verfuegbar. Haustiere sind nicht erlaubt.\n\nMit freundlichen Gruessen,\nHotel Sonnenhof",
+      "questions": [
+        {
+          "id": "qr410",
+          "type": "mcq",
+          "question": "Wie viele Naechte bleibt Herr Wagner?",
+          "options": [
+            "3 Naechte",
+            "4 Naechte",
+            "5 Naechte",
+            "6 Naechte"
+          ],
+          "answer": "4 Naechte",
+          "explanation": "Vom 3. bis 7. September sind 4 Naechte."
+        },
+        {
+          "id": "qr411",
+          "type": "true-false",
+          "question": "Das Fruehstueck ist im Preis enthalten.",
+          "answer": "true",
+          "explanation": "Ein Einzelzimmer mit Fruehstueck."
+        },
+        {
+          "id": "qr412",
+          "type": "mcq",
+          "question": "Was ist im Hotel nicht erlaubt?",
+          "options": [
+            "Rauchen",
+            "Haustiere",
+            "Besuch",
+            "Parken"
+          ],
+          "answer": "Haustiere",
+          "explanation": "Haustiere sind nicht erlaubt."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_8",
+      "title": "Kursankuendigung",
+      "text": "Volkshochschule Frankfurt – Deutschkurs A2\n\nStart: 10. April bis 12. Juni 2025\nUnterricht: montags und mittwochs von 18:00 bis 20:00 Uhr\nOrt: Raum 210, VHS-Zentrum, Hauptstrasse 45\nKosten: 280 Euro (ermaeßigt 180 Euro mit Nachweis)\nAnmeldung: bis 3. April im Buero oder online unter www.vhs-frankfurt.de\nBitte bringen Sie am ersten Tag einen Stift und ein Heft mit.",
+      "questions": [
+        {
+          "id": "qr413",
+          "type": "mcq",
+          "question": "Wann findet der Kurs statt?",
+          "options": [
+            "Montag und Freitag",
+            "Montag und Mittwoch",
+            "Dienstag und Donnerstag",
+            "Mittwoch und Freitag"
+          ],
+          "answer": "Montag und Mittwoch",
+          "explanation": "Der Unterricht ist montags und mittwochs."
+        },
+        {
+          "id": "qr414",
+          "type": "true-false",
+          "question": "Der Kurs kostet 280 Euro.",
+          "answer": "true",
+          "explanation": "Die Kosten betragen 280 Euro."
+        },
+        {
+          "id": "qr415",
+          "type": "mcq",
+          "question": "Was soll man am ersten Tag mitbringen?",
+          "options": [
+            "Ein Buch",
+            "Einen Stift und ein Heft",
+            "Einen Computer",
+            "Ein Woerterbuch"
+          ],
+          "answer": "Einen Stift und ein Heft",
+          "explanation": "Bitte bringen Sie am ersten Tag einen Stift und ein Heft mit."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_9",
+      "title": "Restaurant Bewertung",
+      "text": "Ich war gestern mit meiner Familie im Restaurant 'Zum goldenen Loewen' essen. Das Essen war sehr lecker. Ich hatte die Zwiebelsuppe und dann Schnitzel mit Pommes. Die Portionen waren gross und der Preis war fair. Das Personal war freundlich, aber wir haben 30 Minuten auf unser Essen gewartet. Das Restaurant ist sehr zu empfehlen, aber man sollte reservieren, weil es oft voll ist. Note: 4 von 5 Sternen.",
+      "questions": [
+        {
+          "id": "qr416",
+          "type": "mcq",
+          "question": "Was hat die Person gegessen?",
+          "options": [
+            "Salat und Fisch",
+            "Zwiebelsuppe und Schnitzel",
+            "Nudeln und Salat",
+            "Suppe und Dessert"
+          ],
+          "answer": "Zwiebelsuppe und Schnitzel",
+          "explanation": "Ich hatte die Zwiebelsuppe und dann Schnitzel mit Pommes."
+        },
+        {
+          "id": "qr417",
+          "type": "true-false",
+          "question": "Das Essen kam sehr schnell.",
+          "answer": "false",
+          "explanation": "Wir haben 30 Minuten auf unser Essen gewartet."
+        },
+        {
+          "id": "qr418",
+          "type": "mcq",
+          "question": "Was empfiehlt die Person?",
+          "options": [
+            "Nicht hingehen",
+            "Zu reservieren",
+            "Frueher zu kommen",
+            "Ein anderes Restaurant suchen"
+          ],
+          "answer": "Zu reservieren",
+          "explanation": "Man sollte reservieren, weil es oft voll ist."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_10",
+      "title": "E-Mail an den Vermieter",
+      "text": "Betreff: Heizung kaputt\n\nSehr geehrter Herr Schuster,\n\nich wohne in der Mozartstrasse 12, Wohnung 5. Seit gestern funktioniert die Heizung in meiner Wohnung nicht mehr. Es ist sehr kalt und ich habe kleine Kinder. Koennen Sie bitte einen Techniker schicken? Ich bin morgen ab 14 Uhr zu Hause.\n\nVielen Dank!\n\nMit freundlichen Gruessen,\nAyse Yilmaz",
+      "questions": [
+        {
+          "id": "qr419",
+          "type": "mcq",
+          "question": "Was ist kaputt?",
+          "options": [
+            "Die Kueche",
+            "Die Heizung",
+            "Das Fenster",
+            "Der Wasserhahn"
+          ],
+          "answer": "Die Heizung",
+          "explanation": "Seit gestern funktioniert die Heizung nicht mehr."
+        },
+        {
+          "id": "qr420",
+          "type": "true-false",
+          "question": "Frau Yilmaz hat ein kleines Kind.",
+          "answer": "false",
+          "explanation": "Sie hat kleine Kinder (Plural: mehr als ein Kind)."
+        },
+        {
+          "id": "qr421",
+          "type": "mcq",
+          "question": "Wann ist Frau Yilmaz zu Hause?",
+          "options": [
+            "Am Vormittag",
+            "Ab 14 Uhr",
+            "Den ganzen Tag",
+            "Am Abend"
+          ],
+          "answer": "Ab 14 Uhr",
+          "explanation": "Ich bin morgen ab 14 Uhr zu Hause."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_11",
+      "title": "Apotheken-Information",
+      "text": "Einnahmehinweise zu Ihrem Medikament:\n\nNehmen Sie eine Tablette taeglich nach dem Fruehstueck mit einem Glas Wasser ein. Die Tablette sollte nicht zerkaut werden. Bewahren Sie das Medikament bei Raumtemperatur und vor Licht geschuetzt auf. Sollten Sie eine Tablette vergessen haben, nehmen Sie sie ein, sobald Sie daran denken. Wenn es aber fast Zeit fuer die naechste Dosis ist, lassen Sie die vergessene Tablette aus. Nehmen Sie nicht die doppelte Menge.",
+      "questions": [
+        {
+          "id": "qr422",
+          "type": "mcq",
+          "question": "Wie oft soll man die Tablette nehmen?",
+          "options": [
+            "Zweimal taeglich",
+            "Einmal taeglich",
+            "Dreimal taeglich",
+            "Jeden zweiten Tag"
+          ],
+          "answer": "Einmal taeglich",
+          "explanation": "Nehmen Sie eine Tablette taeglich ein."
+        },
+        {
+          "id": "qr423",
+          "type": "true-false",
+          "question": "Man soll die Tablette zerkaeuen.",
+          "answer": "false",
+          "explanation": "Die Tablette sollte nicht zerkaet werden."
+        },
+        {
+          "id": "qr424",
+          "type": "mcq",
+          "question": "Was soll man tun, wenn man eine Tablette vergessen hat?",
+          "options": [
+            "Die doppelte Menge nehmen",
+            "Nichts tun",
+            "Einnehmen, sobald man daran denkt",
+            "Bis zum naechsten Tag warten"
+          ],
+          "answer": "Einnehmen, sobald man daran denkt",
+          "explanation": "Nehmen Sie sie ein, sobald Sie daran denken, ausser es ist fast Zeit fuer die naechste."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_12",
+      "title": "Einladung zur Geburtstagsfeier",
+      "text": "Hallo zusammen,\n\nich werde am 20. Juli 30 Jahre alt und moechte mit euch feiern! Die Party findet bei mir zu Hause statt (Musterstrasse 8, 3. Stock). Beginn ist um 19 Uhr. Fuer Getraenke und Grillfleisch ist gesorgt. Bitte bringt etwas zum Essen oder einen Salat mit. Ich freue mich auf euch!\n\nLiebe Gruesse,\nLukas",
+      "questions": [
+        {
+          "id": "qr425",
+          "type": "mcq",
+          "question": "Wann ist die Geburtstagsfeier?",
+          "options": [
+            "Am 20. Juni",
+            "Am 20. Juli",
+            "Am 30. Juli",
+            "Am 12. Juli"
+          ],
+          "answer": "Am 20. Juli",
+          "explanation": "Die Party ist am 20. Juli."
+        },
+        {
+          "id": "qr426",
+          "type": "true-false",
+          "question": "Die Gaeste sollen etwas zu essen mitbringen.",
+          "answer": "true",
+          "explanation": "Bitte bringt etwas zum Essen oder einen Salat mit."
+        },
+        {
+          "id": "qr427",
+          "type": "mcq",
+          "question": "Wo findet die Feier statt?",
+          "options": [
+            "In einem Restaurant",
+            "Bei Lukas zu Hause",
+            "In einem Park",
+            "In einer Halle"
+          ],
+          "answer": "Bei Lukas zu Hause",
+          "explanation": "Die Party findet bei mir zu Hause statt (Musterstrasse 8)."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_13",
+      "title": "Oeffnungszeiten Aushang",
+      "text": "Aushang: Aenderung der Oeffnungszeiten\n\nLiebe Kunden,\n\nab dem 1. Juni haben wir neue Oeffnungszeiten:\nMontag bis Freitag: 9:00 bis 18:00 Uhr\nSamstag: 9:00 bis 14:00 Uhr\nSonntag: geschlossen\nMittagspause taeglich von 13:00 bis 14:00 Uhr\n\nIhr Team vom Marktplatz-Apotheke",
+      "questions": [
+        {
+          "id": "qr428",
+          "type": "mcq",
+          "question": "An welchem Tag ist die Apotheke geschlossen?",
+          "options": [
+            "Am Samstag",
+            "Am Sonntag",
+            "Am Montag",
+            "Am Mittwoch"
+          ],
+          "answer": "Am Sonntag",
+          "explanation": "Sonntag: geschlossen."
+        },
+        {
+          "id": "qr429",
+          "type": "true-false",
+          "question": "Am Samstag ist die Apotheke bis 18 Uhr offen.",
+          "answer": "false",
+          "explanation": "Samstag: 9:00 bis 14:00 Uhr."
+        },
+        {
+          "id": "qr430",
+          "type": "mcq",
+          "question": "Wann ist Mittagspause?",
+          "options": [
+            "12:00 bis 13:00",
+            "13:00 bis 14:00",
+            "14:00 bis 15:00",
+            "12:00 bis 14:00"
+          ],
+          "answer": "13:00 bis 14:00",
+          "explanation": "Mittagspause taeglich von 13:00 bis 14:00 Uhr."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_14",
+      "title": "Stornierung einer Bestellung",
+      "text": "Betreff: Stornierung Bestellung 48723\n\nSehr geehrte Damen und Herren,\n\nhiermit moechte ich meine Bestellung Nr. 48723 vom 10. April stornieren. Es handelt sich um ein blaues Kleid in Groesse M. Die Bestellung habe ich bereits erhalten, aber es passt mir leider nicht. Laut Ihrer Webseite kann man Artikel innerhalb von 14 Tagen zurueckschicken. Wie kann ich das Kleid zuruecksenden?\n\nMit freundlichen Gruessen,\nSarah Fischer",
+      "questions": [
+        {
+          "id": "qr431",
+          "type": "mcq",
+          "question": "Was moechte Frau Fischer?",
+          "options": [
+            "Ein neues Kleid bestellen",
+            "Ihre Bestellung stornieren",
+            "Die Groesse aendern",
+            "Eine Reklamation einreichen"
+          ],
+          "answer": "Ihre Bestellung stornieren",
+          "explanation": "Sie moechte die Bestellung stornieren."
+        },
+        {
+          "id": "qr432",
+          "type": "true-false",
+          "question": "Frau Fischer kann den Artikel nicht zurueckgeben.",
+          "answer": "false",
+          "explanation": "Man kann Artikel innerhalb von 14 Tagen zurueckschicken."
+        },
+        {
+          "id": "qr433",
+          "type": "mcq",
+          "question": "Warum will Frau Fischer das Kleid zurueckgeben?",
+          "options": [
+            "Es ist kaputt",
+            "Es passt nicht",
+            "Es gefaellt ihr nicht",
+            "Es ist zu teuer"
+          ],
+          "answer": "Es passt nicht",
+          "explanation": "Es passt mir leider nicht."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_15",
+      "title": "Jobausschreibung",
+      "text": "Stellenangebot: Verkaeufer/in (m/w/d)\n\nDie Firma MediaShop GmbH sucht ab 1. September eine/n freundliche/n Verkaeufer/in fuer unseren Laden in der Innenstadt.\n\nIhre Aufgaben:\n– Beratung von Kunden\n– Kassiervorgaenge\n– Warenpraesentation\n\nWas wir bieten:\n– 30 Stunden pro Woche\n– Bezahlung: 14 Euro pro Stunde\n– 30 Tage Urlaub\n\nBewerbung bitte an: bewerbung@mediashop.de",
+      "questions": [
+        {
+          "id": "qr434",
+          "type": "mcq",
+          "question": "Wieviel Stunden arbeitet man pro Woche?",
+          "options": [
+            "20 Stunden",
+            "30 Stunden",
+            "35 Stunden",
+            "40 Stunden"
+          ],
+          "answer": "30 Stunden",
+          "explanation": "30 Stunden pro Woche."
+        },
+        {
+          "id": "qr435",
+          "type": "true-false",
+          "question": "Die Bezahlung betraegt 14 Euro pro Stunde.",
+          "answer": "true",
+          "explanation": "Bezahlung: 14 Euro pro Stunde."
+        },
+        {
+          "id": "qr436",
+          "type": "mcq",
+          "question": "Wohin soll man die Bewerbung schicken?",
+          "options": [
+            "Per Post",
+            "Per E-Mail",
+            "Persoenlich vorbeibringen",
+            "Telefonisch"
+          ],
+          "answer": "Per E-Mail",
+          "explanation": "Bewerbung an: bewerbung@mediashop.de"
+        }
+      ]
+    },
+    {
+      "id": "A2_read_16",
+      "title": "Ausweisverlust",
+      "text": "Hinweis: Verlorener Personalausweis\n\nAm 25. April habe ich meinen Personalausweis in der S-Bahn Linie S3 zwischen Hauptbahnhof und Messe verloren. Der Ausweis ist auf den Namen Anna Klein ausgestellt. Falls jemand den Ausweis gefunden hat, bitte melden Sie sich unter folgender Telefonnummer: 0176/98765432. Vielen Dank!\n\nFundbuero der Stadt: Oeffnungszeiten: Mo–Fr 9–16 Uhr, Rathaus, Zimmer 112",
+      "questions": [
+        {
+          "id": "qr437",
+          "type": "mcq",
+          "question": "Wo hat Anna Klein ihren Ausweis verloren?",
+          "options": [
+            "Im Bus",
+            "In der S-Bahn",
+            "Im Rathaus",
+            "Im Supermarkt"
+          ],
+          "answer": "In der S-Bahn",
+          "explanation": "In der S-Bahn Linie S3 zwischen Hauptbahnhof und Messe."
+        },
+        {
+          "id": "qr438",
+          "type": "true-false",
+          "question": "Der Ausweis wurde am 25. April verloren.",
+          "answer": "true",
+          "explanation": "Am 25. April habe ich meinen Personalausweis verloren."
+        },
+        {
+          "id": "qr439",
+          "type": "mcq",
+          "question": "Wo ist das Fundbuero?",
+          "options": [
+            "Im Bahnhof",
+            "Im Rathaus",
+            "In der Messehalle",
+            "Im Kaufhaus"
+          ],
+          "answer": "Im Rathaus",
+          "explanation": "Fundbuero: Rathaus, Zimmer 112."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_17",
+      "title": "Mietvertrag Auszug",
+      "text": "Auszug aus dem Mietvertrag:\n\n1. Die monatliche Miete betraegt 720 Euro, zu zahlen bis zum 3. Werktag jedes Monats.\n2. Die Kaution betraegt 2.160 Euro und ist vor Einzug zu zahlen.\n3. Renovierungen sind nach 5 Jahren Mietdauer vom Mieter durchzufuehren.\n4. Haustiere sind nur mit schriftlicher Erlaubnis des Vermieters erlaubt.\n5. Untervermietung ist nicht gestattet.\n6. Die Kuendigungsfrist betraegt 3 Monate.",
+      "questions": [
+        {
+          "id": "qr440",
+          "type": "mcq",
+          "question": "Bis wann muss die Miete bezahlt werden?",
+          "options": [
+            "Bis zum 1. des Monats",
+            "Bis zum 3. Werktag",
+            "Bis zum 10. des Monats",
+            "Bis zum Monatsende"
+          ],
+          "answer": "Bis zum 3. Werktag",
+          "explanation": "Zu zahlen bis zum 3. Werktag jedes Monats."
+        },
+        {
+          "id": "qr441",
+          "type": "true-false",
+          "question": "Untervermietung ist erlaubt.",
+          "answer": "false",
+          "explanation": "Untervermietung ist nicht gestattet."
+        },
+        {
+          "id": "qr442",
+          "type": "mcq",
+          "question": "Wie lang ist die Kuendigungsfrist?",
+          "options": [
+            "1 Monat",
+            "2 Monate",
+            "3 Monate",
+            "6 Monate"
+          ],
+          "answer": "3 Monate",
+          "explanation": "Die Kuendigungsfrist betraegt 3 Monate."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_18",
+      "title": "Wettervorhersage",
+      "text": "Wettervorhersage fuer morgen, 12. Mai:\n\nAm Morgen ist es bedeckt und es regnet zeitweise. Die Temperatur liegt bei 12 Grad. Am Nachmittag reisst die Wolkendecke auf und es wird sonnig. Die Hoechsttemperatur liegt bei 19 Grad. Am Abend sind vereinzelt Schauer moeglich. Der Wind weht schwach bis maessig aus Suedwest. Rechnen Sie mit einem durchschnittlichen Tag fuer diese Jahreszeit. Die Luftfeuchtigkeit betraegt 65 Prozent.",
+      "questions": [
+        {
+          "id": "qr443",
+          "type": "mcq",
+          "question": "Wie ist das Wetter am Morgen?",
+          "options": [
+            "Sonnig",
+            "Bedeckt mit Regen",
+            "Schoen und warm",
+            "Neblig"
+          ],
+          "answer": "Bedeckt mit Regen",
+          "explanation": "Am Morgen ist es bedeckt und es regnet."
+        },
+        {
+          "id": "qr444",
+          "type": "true-false",
+          "question": "Die Hoechsttemperatur liegt bei 19 Grad.",
+          "answer": "true",
+          "explanation": "Die Hoechsttemperatur liegt bei 19 Grad."
+        },
+        {
+          "id": "qr445",
+          "type": "mcq",
+          "question": "Aus welcher Richtung kommt der Wind?",
+          "options": [
+            "Nordost",
+            "Suedwest",
+            "Nordwest",
+            "Suedost"
+          ],
+          "answer": "Suedwest",
+          "explanation": "Der Wind weht schwach bis maessig aus Suedwest."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_19",
+      "title": "Rechnung vom Handyvertrag",
+      "text": "Rechnung: April 2025\n\nMobilfunkvertrag – Max Mustermann – Kundennummer: 7890123\n\nGrundgebuehr: 19,99 Euro\nDatenvolumen 10 GB: inklusive\nTelefonie & SMS (Flat): inklusive\nZusaetzliche Kosten: 4,50 Euro (Roaming in der EU)\nGesamtbetrag: 24,49 Euro\n\nZahlungsziel: 15. Mai 2025\n\nBei Fragen zu Ihrer Rechnung rufen Sie uns an unter: 0800/123456 (kostenlos).",
+      "questions": [
+        {
+          "id": "qr446",
+          "type": "mcq",
+          "question": "Wie hoch ist die Grundgebuehr?",
+          "options": [
+            "14,99 Euro",
+            "19,99 Euro",
+            "24,49 Euro",
+            "29,99 Euro"
+          ],
+          "answer": "19,99 Euro",
+          "explanation": "Die Grundgebuehr betraegt 19,99 Euro."
+        },
+        {
+          "id": "qr447",
+          "type": "true-false",
+          "question": "Der Gesamtbetrag ist bis zum 15. Mai zu zahlen.",
+          "answer": "true",
+          "explanation": "Zahlungsziel: 15. Mai 2025."
+        },
+        {
+          "id": "qr448",
+          "type": "mcq",
+          "question": "Wofuer fallen zusaetzliche Kosten an?",
+          "options": [
+            "Mehr Datenvolumen",
+            "Roaming in der EU",
+            "Telefonie",
+            "SMS"
+          ],
+          "answer": "Roaming in der EU",
+          "explanation": "Zusaetzliche Kosten: 4,50 Euro (Roaming in der EU)."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_20",
+      "title": "Sportprogramm",
+      "text": "Fitnessstudio 'Active Life' – Kursprogramm April\n\nMontag:\n17:00 – 18:00 Yoga (Raum 1)\n18:30 – 19:30 Spinning (Raum 2)\n\nDienstag:\n17:00 – 18:00 Pilates (Raum 1)\n18:00 – 19:00 Boxen (Raum 3)\n\nMittwoch:\n17:00 – 18:30 Schwimmen (Hallenbad)\n19:00 – 20:00 Zumba (Raum 1)\n\nDonnerstag:\n18:00 – 19:00 Krafttraining (Raum 2)\n\nFreitag:\n17:00 – 18:00 Entspannungskurs (Raum 1)\n\nSamstag/Sonntag: kein Kursprogramm\n\nAnmeldung: bis 30 Minuten vor Kursbeginn an der Rezeption.",
+      "questions": [
+        {
+          "id": "qr449",
+          "type": "mcq",
+          "question": "Wann findet Schwimmen statt?",
+          "options": [
+            "Montag 17:00",
+            "Mittwoch 17:00",
+            "Dienstag 18:00",
+            "Freitag 17:00"
+          ],
+          "answer": "Mittwoch 17:00",
+          "explanation": "Mittwoch: 17:00 – 18:30 Schwimmen (Hallenbad)."
+        },
+        {
+          "id": "qr450",
+          "type": "mcq",
+          "question": "Welcher Kurs ist am Dienstag um 18 Uhr?",
+          "options": [
+            "Yoga",
+            "Pilates",
+            "Boxen",
+            "Spinning"
+          ],
+          "answer": "Boxen",
+          "explanation": "Dienstag: 18:00 – 19:00 Boxen (Raum 3)."
+        },
+        {
+          "id": "qr451",
+          "type": "true-false",
+          "question": "Am Wochenende gibt es Kurse.",
+          "answer": "false",
+          "explanation": "Samstag/Sonntag: kein Kursprogramm."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_21",
+      "title": "Beschwerde beim Nachbarn",
+      "text": "Lieber Herr Müller,\n\nich moechte Sie freundlich an die Hausordnung erinnern. Die Ruhezeiten sind von 22:00 bis 7:00 Uhr und von 13:00 bis 15:00 Uhr (Mittagsruhe). Gestern haben Sie bis nach 23:00 Uhr laute Musik gehoert und ich konnte nicht schlafen. Ich habe am naechsten Morgen einen wichtigen Termin. Ich bitte Sie, die Ruhezeiten einzuhalten.\n\nMit freundlichen Gruessen,\nIhre Nachbarin aus Wohnung 4",
+      "questions": [
+        {
+          "id": "qr452",
+          "type": "mcq",
+          "question": "Wann ist Mittagsruhe?",
+          "options": [
+            "12:00 bis 14:00",
+            "13:00 bis 15:00",
+            "14:00 bis 16:00",
+            "12:00 bis 13:00"
+          ],
+          "answer": "13:00 bis 15:00",
+          "explanation": "Mittagsruhe: 13:00 bis 15:00 Uhr."
+        },
+        {
+          "id": "qr453",
+          "type": "true-false",
+          "question": "Gestern war bis 23 Uhr laute Musik zu hoeren.",
+          "answer": "true",
+          "explanation": "Sie haben bis nach 23:00 Uhr laute Musik gehoert."
+        },
+        {
+          "id": "qr454",
+          "type": "mcq",
+          "question": "Warum konnte die Nachbarin nicht schlafen?",
+          "options": [
+            "Weil es zu heiss war",
+            "Wegen der lauten Musik",
+            "Weil sie krank war",
+            "Wegen der Strasse"
+          ],
+          "answer": "Wegen der lauten Musik",
+          "explanation": "Sie haben laute Musik gehoert und ich konnte nicht schlafen."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_22",
+      "title": "Oeffentliche Bibliothek",
+      "text": "Herzlich willkommen in der Stadtbibliothek Koeln!\n\nUnsere Angebote:\n– Ausleihe von Buechern, Zeitschriften, DVDs und Hörbuechern\n– Kostenloses WLAN und Computer-Arbeitsplaetze\n– Lesecafe mit Getraenken und Snacks\n\nMitgliedschaft:\nJahresbeitrag: 25 Euro (Erwachsene), 15 Euro (Schueler/Studenten mit Ausweis)\nKinder unter 12 Jahren: kostenlos\n\nAusleihfrist: 4 Wochen (Buecher), 2 Wochen (DVDs)\nVerlaengerung: bis zu 3 Mal pro Medium, wenn kein anderer Kunde es vorgemerkt hat\n\nOeffnungszeiten:\nDi–Fr: 10–19 Uhr, Sa: 10–15 Uhr, So/Mo: geschlossen",
+      "questions": [
+        {
+          "id": "qr455",
+          "type": "mcq",
+          "question": "Was kostet die Mitgliedschaft fuer einen Erwachsenen?",
+          "options": [
+            "15 Euro pro Jahr",
+            "20 Euro pro Jahr",
+            "25 Euro pro Jahr",
+            "30 Euro pro Jahr"
+          ],
+          "answer": "25 Euro pro Jahr",
+          "explanation": "Jahresbeitrag: 25 Euro (Erwachsene)."
+        },
+        {
+          "id": "qr456",
+          "type": "true-false",
+          "question": "Buecher kann man 4 Wochen ausleihen.",
+          "answer": "true",
+          "explanation": "Ausleihfrist: 4 Wochen (Buecher)."
+        },
+        {
+          "id": "qr457",
+          "type": "mcq",
+          "question": "An welchem Tag ist die Bibliothek geschlossen?",
+          "options": [
+            "Mittwoch",
+            "Freitag",
+            "Sonntag",
+            "Samstag"
+          ],
+          "answer": "Sonntag",
+          "explanation": "So/Mo: geschlossen."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_23",
+      "title": "Paketankuendigung",
+      "text": "Sehr geehrte Frau Weber,\n\nIhr Paket (Sendungsnummer: DE123456789DE) wird voraussichtlich am Freitag, den 23. Mai zwischen 10:00 und 14:00 Uhr zugestellt. Falls Sie nicht zu Hause sein sollten, haben Sie folgende Moeglichkeiten:\n\n1. Das Paket bei einem Nachbarn abgeben lassen\n2. Einen Zustellort (z.B. Balkon oder Garage) festlegen\n3. Die Sendung an eine Packstation umleiten\n4. Einen neuen Zustelltermin vereinbaren\n\nBitte nutzen Sie die Sendungsverfolgung auf unserer Webseite, um den Status Ihrer Lieferung zu sehen.\n\nIhr DHL-Team",
+      "questions": [
+        {
+          "id": "qr458",
+          "type": "mcq",
+          "question": "Wann wird das Paket voraussichtlich zugestellt?",
+          "options": [
+            "Am 22. Mai",
+            "Am 23. Mai",
+            "Am 25. Mai",
+            "Am 30. Mai"
+          ],
+          "answer": "Am 23. Mai",
+          "explanation": "Am Freitag, den 23. Mai."
+        },
+        {
+          "id": "qr459",
+          "type": "true-false",
+          "question": "Man kann das Paket an eine Packstation umleiten.",
+          "answer": "true",
+          "explanation": "Die Sendung an eine Packstation umleiten."
+        },
+        {
+          "id": "qr460",
+          "type": "mcq",
+          "question": "Was soll man nutzen, um den Status zu sehen?",
+          "options": [
+            "Die Telefonhotline",
+            "Die Webseite",
+            "Die App",
+            "Die Filiale"
+          ],
+          "answer": "Die Webseite",
+          "explanation": "Nutzen Sie die Sendungsverfolgung auf unserer Webseite."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_24",
+      "title": "Busfahrplan Aenderung",
+      "text": "Wichtige Aenderung: Buslinie 51\n\nLiebe Fahrgaeste,\n\nwegen Bauarbeiten in der Hauptstrasse aendert sich ab Montag, den 6. Mai, die Strecke der Buslinie 51. Die Haltestelle 'Marktplatz' entfaellt und wird durch die Haltestelle 'Kirchweg' ersetzt. Die Abfahrtszeiten bleiben gleich. Die Bauarbeiten dauern voraussichtlich bis zum 30. Juni. Wir bitten um Ihr Verstaendnis.\n\nIhr Nahverkehrsbetrieb",
+      "questions": [
+        {
+          "id": "qr461",
+          "type": "mcq",
+          "question": "Warum aendert sich die Strecke?",
+          "options": [
+            "Wegen einer Veranstaltung",
+            "Wegen Bauarbeiten",
+            "Wegen schlechtem Wetter",
+            "Wegen Personalmangel"
+          ],
+          "answer": "Wegen Bauarbeiten",
+          "explanation": "Wegen Bauarbeiten in der Hauptstrasse."
+        },
+        {
+          "id": "qr462",
+          "type": "true-false",
+          "question": "Die Haltestelle Marktplatz entfaellt.",
+          "answer": "true",
+          "explanation": "Die Haltestelle Marktplatz entfaellt."
+        },
+        {
+          "id": "qr463",
+          "type": "mcq",
+          "question": "Bis wann dauern die Bauarbeiten?",
+          "options": [
+            "Bis zum 6. Mai",
+            "Bis zum 30. Mai",
+            "Bis zum 30. Juni",
+            "Bis zum 6. Juli"
+          ],
+          "answer": "Bis zum 30. Juni",
+          "explanation": "Voraussichtlich bis zum 30. Juni."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_25",
+      "title": "Freundschaftsanfrage",
+      "text": "Hallo Max,\n\nwie geht es dir? Wir haben uns auf der Sprachreise in Berlin kennen gelernt. Ich hoffe, es geht dir gut. Ich moechte dich gerne am Wochenende in Hamburg besuchen. Passt es dir am Samstag oder Sonntag? Ich bin mit dem Zug da und koennte dich auch vom Bahnhof abholen, wenn du Zeit hast. Freue mich auf deine Antwort!\n\nLiebe Gruesse,\nJean-Pierre aus Frankreich",
+      "questions": [
+        {
+          "id": "qr464",
+          "type": "mcq",
+          "question": "Wo haben sich die beiden kennen gelernt?",
+          "options": [
+            "In Hamburg",
+            "In Berlin",
+            "In Frankfurt",
+            "In Muenchen"
+          ],
+          "answer": "In Berlin",
+          "explanation": "Auf der Sprachreise in Berlin kennen gelernt."
+        },
+        {
+          "id": "qr465",
+          "type": "true-false",
+          "question": "Jean-Pierre moechte Max in Hamburg besuchen.",
+          "answer": "true",
+          "explanation": "Ich moechte dich am Wochenende in Hamburg besuchen."
+        },
+        {
+          "id": "qr466",
+          "type": "mcq",
+          "question": "Woher kommt Jean-Pierre?",
+          "options": [
+            "Aus der Schweiz",
+            "Aus Frankreich",
+            "Aus Italien",
+            "Aus Oesterreich"
+          ],
+          "answer": "Aus Frankreich",
+          "explanation": "Jean-Pierre aus Frankreich."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_26",
+      "title": "Kindergeburtstag",
+      "text": "Einladung zum 8. Geburtstag von Lina!\n\nWann: Samstag, 14. Juni 2025, 14:00 bis 17:30 Uhr\nWo: Im Kinderspielzentrum 'Abenteuerland', Parkstrasse 22\n\nProgramm:\n– Klettern und Toben in der Spielhalle\n– Bastelstation (bitte alte Kleidung anziehen!)\n– Gemeinsames Essen: Pizza und Kuchen\n– Pinata-Schlagen\n\nBitte bis zum 7. Juni zurueckmelden, ob ihr kommen koennt. Jedes Kind bringt bitte eine Kleinigkeit zu trinken mit. Die Eltern sind herzlich willkommen, sich im Cafe nebenan zu treffen.\n\nWir freuen uns auf euch!\nLinas Familie",
+      "questions": [
+        {
+          "id": "qr467",
+          "type": "mcq",
+          "question": "Wie alt wird Lina?",
+          "options": [
+            "7 Jahre",
+            "8 Jahre",
+            "9 Jahre",
+            "10 Jahre"
+          ],
+          "answer": "8 Jahre",
+          "explanation": "Zum 8. Geburtstag von Lina."
+        },
+        {
+          "id": "qr468",
+          "type": "mcq",
+          "question": "Was sollen die Kinder anziehen?",
+          "options": [
+            "Schicke Kleider",
+            "Alte Kleidung",
+            "Badekleidung",
+            "Warme Kleidung"
+          ],
+          "answer": "Alte Kleidung",
+          "explanation": "Bastelstation (bitte alte Kleidung anziehen!)."
+        },
+        {
+          "id": "qr469",
+          "type": "true-false",
+          "question": "Die Eltern sind nicht eingeladen.",
+          "answer": "false",
+          "explanation": "Die Eltern sind herzlich willkommen, sich im Cafe nebenan zu treffen."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_27",
+      "title": "Anmeldung beim Einwohnermeldeamt",
+      "text": "Information: Wohnsitzanmeldung\n\nWenn Sie in Deutschland umziehen, muessen Sie sich innerhalb von 14 Tagen beim Einwohnermeldeamt anmelden. Das ist gesetzlich vorgeschrieben. Vereinbaren Sie vorher einen Termin online unter www.amt-frankfurt.de.\n\nSie brauchen:\n– Ihren Personalausweis oder Reisepass\n– Die Wohnungsgeberbestaetigung (vom Vermieter unterschrieben)\n– Evtl. Ihre Geburtsurkunde (fuer Familienangehoerige)\n\nDie Anmeldung ist kostenlos. Das Amt ist montags bis donnerstags von 8 bis 16 Uhr und freitags von 8 bis 13 Uhr geoeffnet.",
+      "questions": [
+        {
+          "id": "qr470",
+          "type": "mcq",
+          "question": "Innerhalb von wie vielen Tagen muss man sich anmelden?",
+          "options": [
+            "7 Tagen",
+            "14 Tagen",
+            "30 Tagen",
+            "90 Tagen"
+          ],
+          "answer": "14 Tagen",
+          "explanation": "Muessen Sie sich innerhalb von 14 Tagen anmelden."
+        },
+        {
+          "id": "qr471",
+          "type": "true-false",
+          "question": "Die Anmeldung kostet 10 Euro.",
+          "answer": "false",
+          "explanation": "Die Anmeldung ist kostenlos."
+        },
+        {
+          "id": "qr472",
+          "type": "mcq",
+          "question": "Was braucht man fuer die Anmeldung unbedingt?",
+          "options": [
+            "Einen Mietvertrag",
+            "Die Wohnungsgeberbestaetigung",
+            "Eine Bankbescheinigung",
+            "Ein Passfoto"
+          ],
+          "answer": "Die Wohnungsgeberbestaetigung",
+          "explanation": "Die Wohnungsgeberbestaetigung (vom Vermieter unterschrieben)."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_28",
+      "title": "Reisetagebuch",
+      "text": "Liebes Tagebuch,\n\ngestern bin ich mit dem Schiff nach Helgoland gefahren. Die Ueberfahrt hat zweieinhalb Stunden gedauert. Das Wetter war wunderschoen und ich habe Delphine gesehen! Auf der Insel bin ich zuerst zur Langen Anna gegangen, das ist eine bekannte Felsformation. Danach habe ich ein Fischbroetchen gegessen und in der Sonne gesessen. Ich habe viele Fotos gemacht. Es war ein perfekter Tag!\n\nMorgen fahre ich weiter nach Cuxhaven. Ich freue mich schon.",
+      "questions": [
+        {
+          "id": "qr473",
+          "type": "mcq",
+          "question": "Wie ist die Person nach Helgoland gefahren?",
+          "options": [
+            "Mit dem Zug",
+            "Mit dem Schiff",
+            "Mit dem Flugzeug",
+            "Mit dem Auto"
+          ],
+          "answer": "Mit dem Schiff",
+          "explanation": "Ich bin mit dem Schiff nach Helgoland gefahren."
+        },
+        {
+          "id": "qr474",
+          "type": "true-false",
+          "question": "Die Person hat Delphine gesehen.",
+          "answer": "true",
+          "explanation": "Ich habe Delphine gesehen."
+        },
+        {
+          "id": "qr475",
+          "type": "mcq",
+          "question": "Wohin faahrt die Person morgen?",
+          "options": [
+            "Nach Hamburg",
+            "Nach Cuxhaven",
+            "Nach Bremen",
+            "Nach Sylt"
+          ],
+          "answer": "Nach Cuxhaven",
+          "explanation": "Morgen fahre ich weiter nach Cuxhaven."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_29",
+      "title": "Kursanmeldung Bestaetigung",
+      "text": "Vielen Dank fuer Ihre Anmeldung zum Yoga-Kurs (Anfaenger).\n\nKursdetails:\nKurs-Nr.: YG-2025-42\nStart: 5. Mai 2025\nZeit: Montag 18:00 – 19:30 Uhr\nOrt: VHS-Zentrum, Raum 105\nKursleiterin: Frau Schubert\n\nBitte bringen Sie bequeme Kleidung und eine Gymnastikmatte mit. Handtuch und Getraenk nicht vergessen! Der Kurs kostet 95 Euro fuer 10 Termine. Bitte ueberweisen Sie den Betrag bis zum 28. April auf das Konto: DE12 3456 7890 1234 5678 90.\n\nMit freundlichen Gruessen,\nIhr VHS-Team",
+      "questions": [
+        {
+          "id": "qr2901",
+          "type": "mcq",
+          "question": "Welcher Kurs wurde gebucht?",
+          "options": [
+            "Pilates",
+            "Yoga",
+            "Schwimmen",
+            "Zumba"
+          ],
+          "answer": "Yoga",
+          "explanation": "Danke fuer Ihre Anmeldung zum Yoga-Kurs."
+        },
+        {
+          "id": "qr2902",
+          "type": "mcq",
+          "question": "Wie viel kostet der Kurs?",
+          "options": [
+            "75 Euro",
+            "85 Euro",
+            "95 Euro",
+            "105 Euro"
+          ],
+          "answer": "95 Euro",
+          "explanation": "Der Kurs kostet 95 Euro fuer 10 Termine."
+        },
+        {
+          "id": "qr2903",
+          "type": "true-false",
+          "question": "Der Kurs findet dienstags statt.",
+          "answer": "false",
+          "explanation": "Montag 18:00 – 19:30 Uhr."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_30",
+      "title": "Praxis-Information",
+      "text": "Herzlich willkommen in der Zahnarztpraxis Dr. Schneider!\n\nWir bitten Sie, bei Ihrem ersten Besuch 15 Minuten vor dem Termin zu erscheinen, um das Anmeldeformular auszufuellen.\n\nBitte bringen Sie mit:\n– Ihre Versichertenkarte\n– Einen gültigen Ausweis\n– Eine Liste Ihrer aktuellen Medikamente\n– Fruehere Roentgenbilder (falls vorhanden)\n\nZahlungsarten: Wir akzeptieren Bar, EC-Karte und Kreditkarte.\n\nNotfallsprechstunde: Mo–Fr 8–9 Uhr ohne Termin.\nBei starken Schmerzen rufen Sie uns bitte an: 0711/987654",
+      "questions": [
+        {
+          "id": "qr2904",
+          "type": "mcq",
+          "question": "Wie frueh soll man beim ersten Besuch kommen?",
+          "options": [
+            "5 Minuten",
+            "10 Minuten",
+            "15 Minuten",
+            "30 Minuten"
+          ],
+          "answer": "15 Minuten",
+          "explanation": "15 Minuten vor dem Termin erscheinen."
+        },
+        {
+          "id": "qr2905",
+          "type": "true-false",
+          "question": "Man kann mit Kreditkarte bezahlen.",
+          "answer": "true",
+          "explanation": "Wir akzeptieren Bar, EC-Karte und Kreditkarte."
+        },
+        {
+          "id": "qr2906",
+          "type": "mcq",
+          "question": "Wann ist die Notfallsprechstunde?",
+          "options": [
+            "Mo–Fr 7–8 Uhr",
+            "Mo–Fr 8–9 Uhr",
+            "Mo–Fr 9–10 Uhr",
+            "Mo–Fr 12–13 Uhr"
+          ],
+          "answer": "Mo–Fr 8–9 Uhr",
+          "explanation": "Notfallsprechstunde: Mo–Fr 8–9 Uhr."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_31",
+      "title": "Anleitung fuer ein Geraet",
+      "text": "Kurzanleitung: Kaffeemaschine Modell CM-200\n\nVor dem ersten Gebrauch: Den Wassertank mit kaltem Wasser fuellen und einmal ohne Kaffee durchlaufen lassen.\n\nTaegliche Benutzung:\n1. Wassertank mit frischem Wasser befuellen.\n2. Kaffeepulver in den Filter geben (ein Messloeffel pro Tasse).\n3. Tasse unter den Auslauf stellen.\n4. Ein-/Aus-Taste druecken.\n5. Nach dem Bruehvorgang die Kanne entnehmen.\n\nReinigung: Taeglich den Filter und die Kanne mit warmem Wasser ausspuelen. Alle vier Wochen das Geraet mit Entkalker reinigen.\n\nWichtiger Hinweis: Das Geraet nie ohne Wasser einschalten.",
+      "questions": [
+        {
+          "id": "qr2907",
+          "type": "mcq",
+          "question": "Wie viel Kaffeepulver soll man pro Tasse nehmen?",
+          "options": [
+            "Einen halben Messloeffel",
+            "Einen Messloeffel",
+            "Zwei Messloeffel",
+            "Drei Messloeffel"
+          ],
+          "answer": "Einen Messloeffel",
+          "explanation": "Ein Messloeffel pro Tasse."
+        },
+        {
+          "id": "qr2908",
+          "type": "true-false",
+          "question": "Man soll das Geraet alle vier Wochen entkalken.",
+          "answer": "true",
+          "explanation": "Alle vier Wochen das Geraet mit Entkalker reinigen."
+        },
+        {
+          "id": "qr2909",
+          "type": "mcq",
+          "question": "Was darf man niemals tun?",
+          "options": [
+            "Zu viel Kaffee nehmen",
+            "Ohne Wasser einschalten",
+            "Kalten Kaffee trinken",
+            "Den Filter ausspuelen"
+          ],
+          "answer": "Ohne Wasser einschalten",
+          "explanation": "Das Geraet nie ohne Wasser einschalten."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_32",
+      "title": "Kinoprogramm",
+      "text": "Kino City – Programm vom 10. bis 16. Mai\n\nSaal 1: 'Der letzte Sommer' – Komödie – 14:30, 17:00, 20:00 Uhr\nSaal 2: 'Planet der Zukunft' – Dokumentation, ab 12 Jahren – 15:00, 18:00 Uhr\nSaal 3: 'Nacht in Paris' – Liebesfilm – 16:30, 19:30, 22:00 Uhr\n\nEintrittspreise:\nErwachsene: 11,50 Euro\nErmäßigt (Schüler/Studenten/Senioren): 8,00 Euro\nKinder unter 6 Jahren: 5,00 Euro\n\nDienstag: Alle Filme zum ermäßigten Preis!\nPopcorn-Set (grosses Popcorn + 2 Getränke): 9,00 Euro",
+      "questions": [
+        {
+          "id": "qr2910",
+          "type": "mcq",
+          "question": "Welcher Film laeuft in Saal 1?",
+          "options": [
+            "Eine Dokumentation",
+            "Eine Komödie",
+            "Ein Liebesfilm",
+            "Ein Thriller"
+          ],
+          "answer": "Eine Komödie",
+          "explanation": "Saal 1: Der letzte Sommer – Komödie."
+        },
+        {
+          "id": "qr2911",
+          "type": "true-false",
+          "question": "Am Dienstag sind alle Filme billiger.",
+          "answer": "true",
+          "explanation": "Dienstag: Alle Filme zum ermäßigten Preis."
+        },
+        {
+          "id": "qr2912",
+          "type": "mcq",
+          "question": "Was kostet ein Popcorn-Set?",
+          "options": [
+            "7,00 Euro",
+            "8,00 Euro",
+            "9,00 Euro",
+            "11,50 Euro"
+          ],
+          "answer": "9,00 Euro",
+          "explanation": "Popcorn-Set: 9,00 Euro."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_33",
+      "title": "Ruecktritt vom Vertrag",
+      "text": "Sehr geehrte Damen und Herren,\n\nhiermit widerrufe ich meinen Vertrag (Vertragsnummer: F-87234), den ich am 2. April 2025 abgeschlossen habe. Ich habe den Vertrag innerhalb der 14-taegigen Widerrufsfrist gekündigt.\n\nBitte bestätigen Sie mir den Eingang dieses Widerrufs und die Rueckzahlung der bereits gezahlten 49,90 Euro auf mein Konto (IBAN: DE76 5432 1098 7654 3210 00).\n\nFalls Sie weitere Informationen benötigen, erreichen Sie mich unter: info@example.com oder telefonisch unter 030/12345678.\n\nMit freundlichen Gruessen,\nThomas Neumann",
+      "questions": [
+        {
+          "id": "qr2913",
+          "type": "mcq",
+          "question": "Was moechte Herr Neumann?",
+          "options": [
+            "Einen neuen Vertrag abschliessen",
+            "Seinen Vertrag widerrufen",
+            "Seine Adresse aendern",
+            "Eine Rechnung bezahlen"
+          ],
+          "answer": "Seinen Vertrag widerrufen",
+          "explanation": "Hiermit widerrufe ich meinen Vertrag."
+        },
+        {
+          "id": "qr2914",
+          "type": "mcq",
+          "question": "Wie viel Geld hat Herr Neumann bereits gezahlt?",
+          "options": [
+            "29,90 Euro",
+            "39,90 Euro",
+            "49,90 Euro",
+            "59,90 Euro"
+          ],
+          "answer": "49,90 Euro",
+          "explanation": "Rueckzahlung der bereits gezahlten 49,90 Euro."
+        },
+        {
+          "id": "qr2915",
+          "type": "true-false",
+          "question": "Der Vertrag wurde vor mehr als 14 Tagen abgeschlossen.",
+          "answer": "false",
+          "explanation": "Der Vertrag wurde am 2. April 2025 abgeschlossen und er widerruft innerhalb der 14-taegigen Frist."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_34",
+      "title": "Speisekarte",
+      "text": "Cafe zur Sonne – Speisekarte\n\nFruehstueck (bis 11:30 Uhr):\n– Kleines Fruehstueck: zwei Brötchen, Butter, Marmelade + Heissgetraenk: 4,50 Euro\n– Grosses Fruehstueck: zwei Brötchen, Butter, Marmelade, Ei, Kaese, Wurst + Heissgetraenk: 7,90 Euro\n– Muesli mit Joghurt und frischem Obst: 5,50 Euro\n\nMittagstisch (11:30 – 14:30 Uhr):\n– Tagessuppe mit Brot: 4,20 Euro\n– Salatteller mit Dressing: 6,80 Euro\n– Currywurst mit Pommes: 7,20 Euro\n\nGetraenke:\n– Kaffee (verschiedene Sorten): 2,80 Euro\n– Tee: 2,50 Euro\n– Apfelsaft: 3,20 Euro\n– Mineralwasser: 2,40 Euro\n\nHausgemachter Kuchen: 3,50 Euro pro Stueck",
+      "questions": [
+        {
+          "id": "qr2916",
+          "type": "mcq",
+          "question": "Bis wann gibt es Fruehstueck?",
+          "options": [
+            "Bis 10:00 Uhr",
+            "Bis 11:00 Uhr",
+            "Bis 11:30 Uhr",
+            "Bis 12:00 Uhr"
+          ],
+          "answer": "Bis 11:30 Uhr",
+          "explanation": "Fruehstueck bis 11:30 Uhr."
+        },
+        {
+          "id": "qr2917",
+          "type": "mcq",
+          "question": "Was kostet das kleine Fruehstueck?",
+          "options": [
+            "4,50 Euro",
+            "5,50 Euro",
+            "7,20 Euro",
+            "7,90 Euro"
+          ],
+          "answer": "4,50 Euro",
+          "explanation": "Kleines Fruehstueck: 4,50 Euro."
+        },
+        {
+          "id": "qr2918",
+          "type": "true-false",
+          "question": "Hausgemachter Kuchen kostet 3,50 Euro.",
+          "answer": "true",
+          "explanation": "Hausgemachter Kuchen: 3,50 Euro pro Stueck."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_35",
+      "title": "Warnung vor Betrug",
+      "text": "Wichtige Information der Polizei:\n\nAktuell sind betruegerische Anrufe von falschen Polizeibeamten im Umlauf. Die Anrufer behaupten, dass in Ihrer Nahe eingebrochen wurde und Sie Ihre Wertsachen in Sicherheit bringen sollen. Geben Sie am Telefon niemals:\n– Ihre Kontodaten\n– Ihre PIN oder Passwoerter\n– Wo Sie Ihr Geld oder Ihren Schmuck aufbewahren\n\nDie Polizei ruft Sie niemals an und fordert Geld oder Wertsachen. Wenn Sie einen solchen Anruf erhalten: Legen Sie sofort auf! Rufen Sie anschliessend Ihre oertliche Polizeidienststelle unter der offiziellen Nummer an.\n\nIm Notfall: 110",
+      "questions": [
+        {
+          "id": "qr2919",
+          "type": "mcq",
+          "question": "Wovor warnt die Polizei?",
+          "options": [
+            "Vor Einbruechen",
+            "Vor betruegerischen Anrufen",
+            "Vor Taschendieben",
+            "Vor Verkehrskontrollen"
+          ],
+          "answer": "Vor betruegerischen Anrufen",
+          "explanation": "Betruegerische Anrufe von falschen Polizeibeamten."
+        },
+        {
+          "id": "qr2920",
+          "type": "true-false",
+          "question": "Die Polizei ruft manchmal an und fordert Geld.",
+          "answer": "false",
+          "explanation": "Die Polizei ruft Sie niemals an und fordert Geld."
+        },
+        {
+          "id": "qr2921",
+          "type": "mcq",
+          "question": "Was soll man tun, wenn man so einen Anruf bekommt?",
+          "options": [
+            "Die Daten geben",
+            "Sofort auflegen",
+            "Zur Bank gehen",
+            "Die Polizei zurueckrufen"
+          ],
+          "answer": "Sofort auflegen",
+          "explanation": "Legen Sie sofort auf."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_36",
+      "title": "Elternbrief der Schule",
+      "text": "Liebe Eltern,\n\nam Freitag, den 23. Mai, findet unser jaehrliches Schulfest statt. Das Fest beginnt um 14:00 Uhr und endet um 18:00 Uhr. Es gibt verschiedene Staende mit Essen, Spielen und einer Tombola.\n\nWir brauchen noch Hilfe! Wer kann einen Kuchen backen oder einen Stand betreuen? Bitte melden Sie sich bis zum 16. Mai bei der Klassenlehrerin, Frau Dr. Hoffmann (E-Mail: hoffmann@schule.de).\n\nDie Kinder koennen an diesem Tag normale Kleidung tragen, keine Schuluniform.\n\nWir freuen uns auf ein schoenes Fest!\n\nMit freundlichen Gruessen,\nDas Lehrerteam",
+      "questions": [
+        {
+          "id": "qr2922",
+          "type": "mcq",
+          "question": "Wann findet das Schulfest statt?",
+          "options": [
+            "Am 16. Mai",
+            "Am 23. Mai",
+            "Am 30. Mai",
+            "Am 14. Mai"
+          ],
+          "answer": "Am 23. Mai",
+          "explanation": "Am Freitag, den 23. Mai."
+        },
+        {
+          "id": "qr2923",
+          "type": "true-false",
+          "question": "Die Kinder sollen Schuluniform tragen.",
+          "answer": "false",
+          "explanation": "Die Kinder koennen normale Kleidung tragen, keine Schuluniform."
+        },
+        {
+          "id": "qr2924",
+          "type": "mcq",
+          "question": "Bis wann sollen sich Helfer melden?",
+          "options": [
+            "Bis zum 23. Mai",
+            "Bis zum 16. Mai",
+            "Bis zum 14. Mai",
+            "Bis zum 30. Mai"
+          ],
+          "answer": "Bis zum 16. Mai",
+          "explanation": "Bitte melden Sie sich bis zum 16. Mai."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_37",
+      "title": "Garantie-Information",
+      "text": "Garantiekarte – Elektro-Geraet: Staubsauger 'CleanPro X200'\n\nHersteller: HaushaltsTechnik GmbH, Industriestrasse 15, 50670 Koeln\nKaufdatum: ___________________\n\nGarantiezeit: 2 Jahre ab Kaufdatum.\nDie Garantie deckt Material- und Herstellungsfehler. Nicht von der Garantie gedeckt sind:\n– Normale Abnutzung (z.B. verschlissene Borsten)\n– Schaeden durch falsche Benutzung\n– Reparaturen durch nicht autorisierte Werkstaetten\n– Transportschaeden\n\nBei einem Defekt: Bitte kontaktieren Sie unseren Kundenservice unter 0800/567890 oder per E-Mail an service@haushaltstechnik.de. Bewahren Sie den Kassenbon auf! Ohne Kassenbon koennen wir die Garantie nicht anerkennen.",
+      "questions": [
+        {
+          "id": "qr2925",
+          "type": "mcq",
+          "question": "Wie lange ist die Garantiezeit?",
+          "options": [
+            "1 Jahr",
+            "2 Jahre",
+            "3 Jahre",
+            "5 Jahre"
+          ],
+          "answer": "2 Jahre",
+          "explanation": "Garantiezeit: 2 Jahre ab Kaufdatum."
+        },
+        {
+          "id": "qr2926",
+          "type": "true-false",
+          "question": "Die Garantie deckt Transportschaeden.",
+          "answer": "false",
+          "explanation": "Transportschaeden sind nicht von der Garantie gedeckt."
+        },
+        {
+          "id": "qr2927",
+          "type": "mcq",
+          "question": "Was muss man fuer die Garantie unbedingt aufbewahren?",
+          "options": [
+            "Die Verpackung",
+            "Den Kassenbon",
+            "Die Bedienungsanleitung",
+            "Die Garantiekarte allein"
+          ],
+          "answer": "Den Kassenbon",
+          "explanation": "Bewahren Sie den Kassenbon auf! Ohne Kassenbon keine Garantie."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_38",
+      "title": "Gesucht: Mitbewohner",
+      "text": "Mitbewohner/in gesucht!\n\nIch heisse Felix, bin 27 Jahre alt und arbeite als Softwareentwickler. Ich suche ab 1. Juni eine/n Mitbewohner/in fuer meine 3-Zimmer-Wohnung in Berlin-Neukoelln.\n\nDas freie Zimmer ist 16 Quadratmeter gross, hat ein grosses Fenster und ist moebliert (Bett, Schreibtisch, Schrank). Die Wohnung hat eine grosse Kueche mit Essbereich, ein Tageslichtbad und einen Balkon.\n\nKosten: 450 Euro warm (inkl. Strom, Wasser, Internet). Kaution: 900 Euro.\n\nIch bin ein ruhiger und ordentlicher Mensch. Ich rauche nicht. Ich habe eine Katze. Haustiere sind daher nicht erwuenscht.\n\nWenn du interessiert bist, schreib mir eine Nachricht fuer eine Besichtigung: felix@email.de",
+      "questions": [
+        {
+          "id": "qr2928",
+          "type": "mcq",
+          "question": "Wie gross ist das freie Zimmer?",
+          "options": [
+            "12 Quadratmeter",
+            "16 Quadratmeter",
+            "20 Quadratmeter",
+            "25 Quadratmeter"
+          ],
+          "answer": "16 Quadratmeter",
+          "explanation": "Das freie Zimmer ist 16 Quadratmeter gross."
+        },
+        {
+          "id": "qr2929",
+          "type": "true-false",
+          "question": "Die Miete betraegt 450 Euro warm.",
+          "answer": "true",
+          "explanation": "Kosten: 450 Euro warm."
+        },
+        {
+          "id": "qr2930",
+          "type": "mcq",
+          "question": "Welches Haustier hat Felix?",
+          "options": [
+            "Einen Hund",
+            "Eine Katze",
+            "Einen Hamster",
+            "Einen Vogel"
+          ],
+          "answer": "Eine Katze",
+          "explanation": "Ich habe eine Katze."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_39",
+      "title": "Stadtfest Programm",
+      "text": "Koelner Stadtfest – Samstag, 7. Juni\n\nProgramm:\n\n10:00 – 12:00 Uhr: Flohmarkt auf dem Alter Markt\n12:00 – 14:00 Uhr: Internationales Essen – probieren Sie Gerichte aus 20 Laendern\n14:00 – 15:30 Uhr: Strassentheater und Clowns (fuer Kinder)\n15:30 – 16:30 Uhr: Live-Musik: Die Stadtkapelle spielt auf dem Rathausplatz\n16:30 – 18:00 Uhr: Sportwettkaempfe (Fussball, Volleyball, Tauziehen)\n18:30 – 20:00 Uhr: Konzert der Band 'RheinSound'\n20:30 Uhr: Feuerwerk am Rheinufer\n\nAlle Veranstaltungen sind kostenlos! Das Fest findet bei jedem Wetter statt.",
+      "questions": [
+        {
+          "id": "qr2931",
+          "type": "mcq",
+          "question": "Wann beginnt der Flohmarkt?",
+          "options": [
+            "Um 12:00 Uhr",
+            "Um 10:00 Uhr",
+            "Um 14:00 Uhr",
+            "Um 15:30 Uhr"
+          ],
+          "answer": "Um 10:00 Uhr",
+          "explanation": "10:00 – 12:00 Uhr: Flohmarkt auf dem Alter Markt."
+        },
+        {
+          "id": "qr2932",
+          "type": "true-false",
+          "question": "Der Eintritt kostet 5 Euro.",
+          "answer": "false",
+          "explanation": "Alle Veranstaltungen sind kostenlos."
+        },
+        {
+          "id": "qr2933",
+          "type": "mcq",
+          "question": "Was findet um 20:30 Uhr statt?",
+          "options": [
+            "Ein Konzert",
+            "Eine Sportveranstaltung",
+            "Ein Feuerwerk",
+            "Ein Theaterstueck"
+          ],
+          "answer": "Ein Feuerwerk",
+          "explanation": "20:30 Uhr: Feuerwerk am Rheinufer."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_40",
+      "title": "E-Mail wegen Nachbarschaftshilfe",
+      "text": "Hallo Frau Schmidt,\n\nam Samstag, den 17. Mai, bin ich von 10 bis 16 Uhr auf einer Hochzeit. Koennten Sie waerend dieser Zeit meine Katze fuettern und nach ihr sehen? Ich wohne direkt gegenueber, Hausnummer 23, Erdgeschoss. Der Schluessel ist bei der Nachbarin von Wohnung 1, Frau Mueller. Sie kennt Bescheid.\n\nFutter und Wasser sind in der Kueche vorbereitet. Das Katzenklo muessten Sie nicht reinigen, das mache ich am Abend.\n\nIch weiss, das ist kurzfristig, aber mir faellt leider niemand anders ein. Ich wuerde mich sehr freuen!\n\nViele Gruesse,\nHerr Baumann, Wohnung 4",
+      "questions": [
+        {
+          "id": "qr2934",
+          "type": "mcq",
+          "question": "Warum schreibt Herr Baumann?",
+          "options": [
+            "Er sucht eine neue Wohnung",
+            "Er bittet um Nachbarschaftshilfe",
+            "Er beschwert sich ueber Laerm",
+            "Er moechte etwas verkaufen"
+          ],
+          "answer": "Er bittet um Nachbarschaftshilfe",
+          "explanation": "Er bittet Frau Schmidt, seine Katze zu fuettern."
+        },
+        {
+          "id": "qr2935",
+          "type": "true-false",
+          "question": "Der Schluessel ist bei Frau Mueller.",
+          "answer": "true",
+          "explanation": "Der Schluessel ist bei der Nachbarin von Wohnung 1, Frau Mueller."
+        },
+        {
+          "id": "qr2936",
+          "type": "mcq",
+          "question": "Warum braucht Herr Baumann Hilfe?",
+          "options": [
+            "Er ist krank",
+            "Er ist auf einer Hochzeit",
+            "Er muss verreisen",
+            "Er arbeitet"
+          ],
+          "answer": "Er ist auf einer Hochzeit",
+          "explanation": "Ich bin am Samstag auf einer Hochzeit."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_41",
+      "title": "Dauerhafter Parkplatz",
+      "text": "Vermietung: Tiefgaragenstellplatz in Hamburg-Eimsbuettel\n\nAb sofort zu vermieten: Ein Stellplatz in einer sicheren Tiefgarage in der Eppendorfer Landstrasse 42, Naehe U-Bahn-Station 'Hudtwalckerstrasse'.\n\nDetails:\n– Breite: 2,50 Meter, Laenge: 5,00 Meter (auch fuer SUVs geeignet)\n– Elektrisches Rolltor mit Fernbedienung\n– Video-Ueberwachung\n– Nur 2 Minuten zur U-Bahn\n\nMiete: 120 Euro pro Monat (zuzueglich 20 Euro Nebenkosten fuer Strom und Reinigung)\nKaution: 240 Euro\nMindestmietdauer: 6 Monate\n\nBesichtigung nach Vereinbarung.\nKontakt: Herr Wagner, 040/1234567",
+      "questions": [
+        {
+          "id": "qr2937",
+          "type": "mcq",
+          "question": "Wie hoch ist die monatliche Miete?",
+          "options": [
+            "100 Euro",
+            "120 Euro",
+            "140 Euro",
+            "240 Euro"
+          ],
+          "answer": "120 Euro",
+          "explanation": "Miete: 120 Euro pro Monat."
+        },
+        {
+          "id": "qr2938",
+          "type": "true-false",
+          "question": "Der Stellplatz ist video-ueberwacht.",
+          "answer": "true",
+          "explanation": "Video-Ueberwachung."
+        },
+        {
+          "id": "qr2939",
+          "type": "mcq",
+          "question": "Wie lang ist die Mindestmietdauer?",
+          "options": [
+            "3 Monate",
+            "6 Monate",
+            "12 Monate",
+            "24 Monate"
+          ],
+          "answer": "6 Monate",
+          "explanation": "Mindestmietdauer: 6 Monate."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_42",
+      "title": "Information zur Muelltrennung",
+      "text": "So trennen Sie Ihren Muell richtig – ein Leitfaden:\n\nRestmuell (schwarze Tonne): Alles, was nicht recycelt werden kann: Hygieneartikel, Staubsaugerbeutel, kaputtes Spielzeug, Zigarettenkippen\n\nPapier (blaue Tonne): Zeitungen, Zeitschriften, Briefpapier, Kartonagen, Buero-Papier. Nicht: Getraenkekartons (gehoeren in den Gelben Sack).\n\nBioabfall (braune Tonne): Obst- und Gemuesereste, Eierschalen, Kaffeesatz, Gartenabfaelle. Keine Plastiktueten!\n\nGelber Sack/ Gelbe Tonne: Leichte Verpackungen: Plastikflaschen, Joghurtbecher, Konservendosen, Tetrapaks. Bitte alles sauber und leer entsorgen.\n\nGlas (Glascontainer): Nach Farben trennen: Weiss, Gruen, Braun. Bitte nur zwischen 7 und 20 Uhr einwerfen (Lärmschutz!). Deckel vorher entfernen.\n\nSperrmuell: Nach Terminvereinbarung – anrufen unter 0800/123456.",
+      "questions": [
+        {
+          "id": "qr2940",
+          "type": "mcq",
+          "question": "Wohin gehoert Kaffeesatz?",
+          "options": [
+            "In den Restmuell",
+            "In die Biotonne",
+            "In den Gelben Sack",
+            "Ins Altglas"
+          ],
+          "answer": "In die Biotonne",
+          "explanation": "Bioabfall: Kaffeesatz."
+        },
+        {
+          "id": "qr2941",
+          "type": "true-false",
+          "question": "Glascontainer duerfen nur zwischen 7 und 20 Uhr benutzt werden.",
+          "answer": "true",
+          "explanation": "Bitte nur zwischen 7 und 20 Uhr einwerfen (Laermschutz)."
+        },
+        {
+          "id": "qr2942",
+          "type": "mcq",
+          "question": "Was gehoert in den Gelben Sack?",
+          "options": [
+            "Zeitungen",
+            "Gartenabfaelle",
+            "Joghurtbecher",
+            "Hygieneartikel"
+          ],
+          "answer": "Joghurtbecher",
+          "explanation": "Gelber Sack: Plastikflaschen, Joghurtbecher, Konservendosen."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_43",
+      "title": "Museumsinformation",
+      "text": "Deutsches Museum – Besucherinformation\n\nOeffnungszeiten:\nTaeglich von 9:00 bis 17:00 Uhr (letzter Einlass: 16:30 Uhr)\nMontags geschlossen\n\nEintrittspreise:\nErwachsene: 14 Euro\nErmäßigt: 8 Euro\nKinder unter 6 Jahren: kostenlos\nFamilienkarte (2 Erwachsene + Kinder bis 14 Jahre): 28 Euro\n\nAudioguide: 3 Euro (verfuegbar auf Deutsch, Englisch, Franzoesisch, Spanisch)\n\nAktuelle Sonderausstellung bis 30. Juni: 'Wunder der Technik'\n\nFotografieren ohne Blitz ist erlaubt. Essen und Trinken sind in den Ausstellungsraeumen nicht erlaubt. Es gibt ein Museumscafe im Erdgeschoss.\n\nBitte folgen Sie den markierten Wegen und fassen Sie keine Exponate an.",
+      "questions": [
+        {
+          "id": "qr2943",
+          "type": "mcq",
+          "question": "Wann ist das Museum geschlossen?",
+          "options": [
+            "Am Dienstag",
+            "Am Montag",
+            "Am Wochenende",
+            "An Feiertagen"
+          ],
+          "answer": "Am Montag",
+          "explanation": "Montags geschlossen."
+        },
+        {
+          "id": "qr2944",
+          "type": "true-false",
+          "question": "Fotografieren mit Blitz ist erlaubt.",
+          "answer": "false",
+          "explanation": "Fotografieren ohne Blitz ist erlaubt."
+        },
+        {
+          "id": "qr2945",
+          "type": "mcq",
+          "question": "Was kostet die Familienkarte?",
+          "options": [
+            "14 Euro",
+            "22 Euro",
+            "28 Euro",
+            "35 Euro"
+          ],
+          "answer": "28 Euro",
+          "explanation": "Familienkarte: 28 Euro."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_44",
+      "title": "Ausfall des Schwimmbads",
+      "text": "Wichtige Information: Hallenbad geschlossen\n\nDas Stadtbad Mitte bleibt von Montag, 19. Mai bis Freitag, 30. Mai wegen Wartungsarbeiten geschlossen. In dieser Zeit werden die Filteranlagen und die Heizung repariert.\n\nAlternativen in der Naehe:\n– Stadtbad Nord (Oeffnungszeiten: taeglich 7–21 Uhr)\n– Freibad Sued (Oeffnungszeiten bei gutem Wetter: 10–19 Uhr, ab 25. Mai geoeffnet)\n\nBereits gekaufte Eintrittskarten bleiben gueltig und koennen in den anderen Baedern oder nach der Wiedereroeffnung genutzt werden.\n\nBei Fragen wenden Sie sich bitte an das Buero: 0621/98765 oder info@staedtischebaeder.de\n\nWir bitten um Ihr Verstaendnis.",
+      "questions": [
+        {
+          "id": "qr2946",
+          "type": "mcq",
+          "question": "Warum ist das Bad geschlossen?",
+          "options": [
+            "Wegen Personalmangel",
+            "Wegen Wartungsarbeiten",
+            "Wegen schlechtem Wetter",
+            "Wegen Ferien"
+          ],
+          "answer": "Wegen Wartungsarbeiten",
+          "explanation": "Wegen Wartungsarbeiten: Filteranlagen und Heizung repariert."
+        },
+        {
+          "id": "qr2947",
+          "type": "true-false",
+          "question": "Das Bad ist vom 19. bis 30. Mai geschlossen.",
+          "answer": "true",
+          "explanation": "Von Montag, 19. Mai bis Freitag, 30. Mai geschlossen."
+        },
+        {
+          "id": "qr2948",
+          "type": "mcq",
+          "question": "Was passiert mit bereits gekauften Karten?",
+          "options": [
+            "Sie sind ungueltig",
+            "Sie bleiben gueltig in anderen Baedern",
+            "Sie werden zurueckgezahlt",
+            "Sie werden verlaengert"
+          ],
+          "answer": "Sie bleiben gueltig in anderen Baedern",
+          "explanation": "Bereits gekaufte Eintrittskarten bleiben gueltig und koennen in den anderen Baedern genutzt werden."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_45",
+      "title": "Abmahnung vom Vermieter",
+      "text": "Betreff: Abmahnung wegen Verstoss gegen die Hausordnung\n\nSehr geehrte Frau Yilmaz,\n\nleider muessen wir Sie erneut auf die Hausordnung hinweisen. In den letzten Wochen haben sich mehrere Nachbarn ueber laute Musik und laute Gespraeche in Ihrer Wohnung nach 22:00 Uhr beschwert. Die Nachtruhe beginnt um 22:00 Uhr und endet um 7:00 Uhr.\n\nDieses Schreiben ist eine offizielle Abmahnung. Sollten weitere Beschwerden eingehen, sehen wir uns gezwungen, das Mietverhaeltnis zu beenden.\n\nBitte nehmen Sie die Ruecksicht auf Ihre Mitmieter ernst.\n\nMit freundlichen Gruessen,\nHausverwaltung Schmidt GmbH",
+      "questions": [
+        {
+          "id": "qr2949",
+          "type": "mcq",
+          "question": "Warum bekommt Frau Yilmaz eine Abmahnung?",
+          "options": [
+            "Weil sie die Miete nicht bezahlt hat",
+            "Wegen Verstoss gegen die Hausordnung",
+            "Weil sie ein Haustier hat",
+            "Weil sie renoviert hat"
+          ],
+          "answer": "Wegen Verstoss gegen die Hausordnung",
+          "explanation": "Abmahnung wegen Verstoss gegen die Hausordnung."
+        },
+        {
+          "id": "qr2950",
+          "type": "true-false",
+          "question": "Die Nachtruhe beginnt um 22:00 Uhr.",
+          "answer": "true",
+          "explanation": "Die Nachtruhe beginnt um 22:00 Uhr."
+        },
+        {
+          "id": "qr2951",
+          "type": "mcq",
+          "question": "Was passiert bei weiteren Beschwerden?",
+          "options": [
+            "Sie bekommt eine zweite Abmahnung",
+            "Das Mietverhaeltnis kann beendet werden",
+            "Sie muss eine Strafe zahlen",
+            "Sie muss umziehen"
+          ],
+          "answer": "Das Mietverhaeltnis kann beendet werden",
+          "explanation": "Sehen wir uns gezwungen, das Mietverhaeltnis zu beenden."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_46",
+      "title": "Urlaubsgruesse",
+      "text": "Liebe Oma und lieber Opa!\n\nGruesse aus Italien! Wir sind gestern gut angekommen. Die Reise war lang (8 Stunden im Auto), aber es hat sich gelohnt. Unser Hotel ist direkt am Strand. Das Zimmer ist gross und sauber. Das Fruehstuecksbuffet ist riesig! Gestern waren wir in der Altstadt bummeln und haben leckeres Eis gegessen. Heute gehen wir schnorcheln. Das Wasser ist klar und warm.\n\nDas Wetter ist perfekt: 28 Grad und viel Sonne. Wir bleiben noch eine Woche.\n\nGanz liebe Gruesse,\nEure Lisa und Tom",
+      "questions": [
+        {
+          "id": "qr2952",
+          "type": "mcq",
+          "question": "Wie lange war die Autofahrt?",
+          "options": [
+            "4 Stunden",
+            "6 Stunden",
+            "8 Stunden",
+            "10 Stunden"
+          ],
+          "answer": "8 Stunden",
+          "explanation": "Die Reise war lang (8 Stunden im Auto)."
+        },
+        {
+          "id": "qr2953",
+          "type": "true-false",
+          "question": "Das Hotel liegt direkt am Strand.",
+          "answer": "true",
+          "explanation": "Unser Hotel ist direkt am Strand."
+        },
+        {
+          "id": "qr2954",
+          "type": "mcq",
+          "question": "Wie ist das Wetter?",
+          "options": [
+            "20 Grad und Regen",
+            "25 Grad und bedeckt",
+            "28 Grad und sonnig",
+            "30 Grad und windig"
+          ],
+          "answer": "28 Grad und sonnig",
+          "explanation": "28 Grad und viel Sonne."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_47",
+      "title": "Rueckmeldung zum Sprachkurs",
+      "text": "Feedback-Formular: Deutschkurs A2\n\nName: Maria Garcia\nKursort: Goethe-Institut Bremen\nKurszeitraum: Januar bis Maerz 2025\n\n1. Wie zufrieden sind Sie mit dem Kurs insgesamt?\nSehr zufrieden. Die Lehrerin war kompetent und der Unterricht war abwechslungsreich.\n\n2. Was hat Ihnen besonders gut gefallen?\nDie Gruppenarbeit und die Rollenspiele haben mir sehr geholfen. Wir haben viel gesprochen.\n\n3. Was koennte verbessert werden?\nMehr Grammatikuebungen waeren gut. Auch mehr Hoeraufgaben waeren hilfreich.\n\n4. Wuerden Sie den Kurs weiterempfehlen?\nJa, auf jeden Fall.\n\n5. Weitere Anmerkungen:\nDie Kursmaterialien waren sehr gut. Der Preis war angemessen.",
+      "questions": [
+        {
+          "id": "qr2955",
+          "type": "mcq",
+          "question": "Wie lange hat der Kurs gedauert?",
+          "options": [
+            "Zwei Monate",
+            "Drei Monate",
+            "Vier Monate",
+            "Fuenf Monate"
+          ],
+          "answer": "Drei Monate",
+          "explanation": "Januar bis Maerz 2025 – drei Monate."
+        },
+        {
+          "id": "qr2956",
+          "type": "true-false",
+          "question": "Maria wuerde den Kurs nicht weiterempfehlen.",
+          "answer": "false",
+          "explanation": "Ja, auf jeden Fall weiterempfehlen."
+        },
+        {
+          "id": "qr2957",
+          "type": "mcq",
+          "question": "Was wuenscht sich Maria mehr?",
+          "options": [
+            "Mehr Hausaufgaben",
+            "Mehr Grammatikuebungen und Hoeraufgaben",
+            "Mehr Tests",
+            "Mehr Freizeitaktivitaeten"
+          ],
+          "answer": "Mehr Grammatikuebungen und Hoeraufgaben",
+          "explanation": "Mehr Grammatikuebungen und Hoeraufgaben waeren hilfreich."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_48",
+      "title": "Fitnessstudio Kuendigung",
+      "text": "Betreff: Kuendigung meines Mitgliedsvertrags\n\nSehr geehrte Damen und Herren,\n\nhiermit kündige ich meinen Mitgliedsvertrag beim Fitnessstudio 'Active Body' (Mitgliedsnummer: AB-87543) zum naechstmoeglichen Zeitpunkt.\n\nVertragsbeginn: 1. Oktober 2024\nMindestlaufzeit: 12 Monate\nGekuendigt wird daher zum: 30. September 2025\n\nBitte bestaetigen Sie den Kuendigungseingang und das Datum, zu dem die Mitgliedschaft endet. Bitte teilen Sie mir auch mit, wie ich meine hinterlegten Bankdaten löschen lassen kann.\n\nSollte ich noch eine offene Zahlung haben, teilen Sie mir bitte den Betrag mit.\n\nMit freundlichen Gruessen,\nSabine Wolf",
+      "questions": [
+        {
+          "id": "qr2958",
+          "type": "mcq",
+          "question": "Was moechte Sabine Wolf?",
+          "options": [
+            "Die Mitgliedschaft verlaengern",
+            "Die Mitgliedschaft kuendigen",
+            "Ein neues Abo abschliessen",
+            "Das Studio wechseln"
+          ],
+          "answer": "Die Mitgliedschaft kuendigen",
+          "explanation": "Hiermit kündige ich meinen Mitgliedsvertrag."
+        },
+        {
+          "id": "qr2959",
+          "type": "true-false",
+          "question": "Die Mindestlaufzeit betraegt 12 Monate.",
+          "answer": "true",
+          "explanation": "Mindestlaufzeit: 12 Monate."
+        },
+        {
+          "id": "qr2960",
+          "type": "mcq",
+          "question": "Wann endet die Mitgliedschaft?",
+          "options": [
+            "Am 30. Juni 2025",
+            "Am 30. September 2025",
+            "Am 31. Dezember 2025",
+            "Am 1. Oktober 2025"
+          ],
+          "answer": "Am 30. September 2025",
+          "explanation": "Zum: 30. September 2025."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_49",
+      "title": "Warnung vor Glatteis",
+      "text": "Amtliche Wetterwarnung: Glatteis am Morgen\n\nDer Deutsche Wetterdienst warnt fuer morgen, den 12. Januar, vor Glatteis in Nordrhein-Westfalen. In den fruehen Morgenstunden ist mit gefrierendem Regen zu rechnen. Strassen und Gehwege koennen sehr glatt sein.\n\nBitte seien Sie vorsichtig:\n– Fahren Sie nur, wenn es unbedingt noetig ist\n– Passen Sie Ihre Geschwindigkeit an\n– Tragen Sie rutschfeste Schuhe\n– Halten Sie ausreichend Abstand zum vorausfahrenden Fahrzeug\n– Rechnen Sie mit Verzoegerungen im oeffentlichen Nahverkehr\n\nDie Warnung gilt voraussichtlich bis 10:00 Uhr. Danach steigen die Temperaturen ueber null Grad.",
+      "questions": [
+        {
+          "id": "qr2961",
+          "type": "mcq",
+          "question": "Wovor warnt der Wetterdienst?",
+          "options": [
+            "Vor starkem Wind",
+            "Vor Glatteis",
+            "Vor Schnee",
+            "Vor Ueberschwemmungen"
+          ],
+          "answer": "Vor Glatteis",
+          "explanation": "Warnung vor Glatteis in Nordrhein-Westfalen."
+        },
+        {
+          "id": "qr2962",
+          "type": "true-false",
+          "question": "Die Warnung gilt bis 10:00 Uhr.",
+          "answer": "true",
+          "explanation": "Voraussichtlich bis 10:00 Uhr."
+        },
+        {
+          "id": "qr2963",
+          "type": "mcq",
+          "question": "Was empfiehlt der Wetterdienst?",
+          "options": [
+            "Zu Hause bleiben",
+            "Nur mit Winterreifen fahren",
+            "Nur bei Notwendigkeit zu fahren",
+            "Oeffentliche Verkehrsmittel zu nutzen"
+          ],
+          "answer": "Nur bei Notwendigkeit zu fahren",
+          "explanation": "Fahren Sie nur, wenn es unbedingt noetig ist."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_50",
+      "title": "Einladung zum Vorstellungsgespraech",
+      "text": "Sehr geehrter Herr Becker,\n\nvielen Dank fuer Ihre Bewerbung als Verkaeufer bei MediaShop GmbH.\n\nWir moechten Sie gerne zu einem Vorstellungsgespraech einladen.\n\nTermin: Dienstag, 20. Mai 2025 um 14:00 Uhr\nOrt: MediaShop GmbH, Hauptstrasse 100, 2. Stock, Raum 204\nDauer: ca. 45 Minuten\n\nBitte bringen Sie mit:\n– Einen gültigen Ausweis\n– Zeugnisse und Referenzen\n– Ausgefuellten Bewerbungsfragebogen (siehe Anhang)\n\nBitte bestaetigen Sie den Termin bis zum 15. Mai per E-Mail an: bewerbung@mediashop.de. Falls der Termin Ihnen nicht passt, nennen Sie bitte Alternativtermine.\n\nMit freundlichen Gruessen,\nMediaShop GmbH\nPersonalabteilung",
+      "questions": [
+        {
+          "id": "qr2964",
+          "type": "mcq",
+          "question": "Wie lange dauert das Gespraech?",
+          "options": [
+            "30 Minuten",
+            "45 Minuten",
+            "60 Minuten",
+            "90 Minuten"
+          ],
+          "answer": "45 Minuten",
+          "explanation": "Dauer: ca. 45 Minuten."
+        },
+        {
+          "id": "qr2965",
+          "type": "mcq",
+          "question": "Bis wann soll der Termin bestaetigt werden?",
+          "options": [
+            "Bis zum 20. Mai",
+            "Bis zum 15. Mai",
+            "Bis zum 14. Mai",
+            "Bis zum 10. Mai"
+          ],
+          "answer": "Bis zum 15. Mai",
+          "explanation": "Bitte bestaetigen Sie den Termin bis zum 15. Mai."
+        },
+        {
+          "id": "qr2966",
+          "type": "true-false",
+          "question": "Herr Becker soll Zeugnisse mitbringen.",
+          "answer": "true",
+          "explanation": "Bitte bringen Sie Zeugnisse und Referenzen mit."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_51",
+      "title": "Sperrmuell Abholung",
+      "text": "Ankuendigung: Sperrmuellabholung\n\nDie Stadt Frankfurt bietet zweimal pro Jahr eine kostenlose Sperrmuellabholung fuer Privathaushalte an. Der naechste Termin ist am Samstag, 14. Juni.\n\nWas wird abgeholt:\n– Moebel (Schoenke, Tische, Stuehle, Betten usw.)\n– Teppiche\n– Matratzen\n– Grosse Elektrogeraete (Kuehlschraenke, Waschmaschinen)\n\nNicht abgeholt werden:\n– Bauschutt\n– Reifen\n– Gefaehrliche Stoffe (Farben, Lacke, Chemikalien)\n– Biomuell\n\nIhre Gegenstaende muessen bis 6:00 Uhr am Abholtag gut sichtbar am Strassenrand stehen. Bitte stellen Sie keine Gegenstaende vor dem Vortag raus. Pro Haushalt koennen maximal 3 Kubikmeter Sperrmuell angemeldet werden.",
+      "questions": [
+        {
+          "id": "qr2967",
+          "type": "mcq",
+          "question": "Wann ist der naechste Sperrmuelltermin?",
+          "options": [
+            "Am 7. Juni",
+            "Am 14. Juni",
+            "Am 21. Juni",
+            "Am 28. Juni"
+          ],
+          "answer": "Am 14. Juni",
+          "explanation": "Am Samstag, 14. Juni."
+        },
+        {
+          "id": "qr2968",
+          "type": "true-false",
+          "question": "Pro Haushalt duerfen maximal 3 Kubikmeter Sperrmuell angemeldet werden.",
+          "answer": "true",
+          "explanation": "Maximal 3 Kubikmeter Sperrmuell pro Haushalt."
+        },
+        {
+          "id": "qr2969",
+          "type": "mcq",
+          "question": "Was wird nicht abgeholt?",
+          "options": [
+            "Matratzen",
+            "Bauschutt",
+            "Tische",
+            "Kuehlschraenke"
+          ],
+          "answer": "Bauschutt",
+          "explanation": "Bauschutt wird nicht abgeholt."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_52",
+      "title": "E-Mail an den Kursleiter",
+      "text": "Betreff: Frage zu den Hausaufgaben\n\nSehr geehrter Herr Dr. Wagner,\n\nich besuche Ihren A2-Deutschkurs bei der VHS und habe eine Frage zu den Hausaufgaben von letzter Woche.\n\nAufgabe 4 auf Seite 27 im Buch: Ich bin mir nicht sicher, ob ich bei Satz 3 und Satz 5 die richtige Form von 'weil' verwendet habe. Ich habe geschrieben:\n\nSatz 3: 'Ich lerne Deutsch, weil ich in Deutschland arbeiten moechte.'\nSatz 5: 'Er kommt nicht, weil er krank ist.'\n\nIst das korrekt? Ausserdem habe ich das Arbeitsblatt uebers Wetter nicht gefunden. Koennen Sie mir eine Kopie schicken?\n\nVielen Dank fuer Ihre Hilfe!\n\nMit freundlichen Gruessen,\nAnna Petrova",
+      "questions": [
+        {
+          "id": "qr2970",
+          "type": "mcq",
+          "question": "Welchen Kurs besucht Anna?",
+          "options": [
+            "B1-Deutschkurs",
+            "A2-Deutschkurs",
+            "A1-Deutschkurs",
+            "Konversationskurs"
+          ],
+          "answer": "A2-Deutschkurs",
+          "explanation": "Ihren A2-Deutschkurs bei der VHS."
+        },
+        {
+          "id": "qr2971",
+          "type": "true-false",
+          "question": "Anna hat eine Frage zu den Hausaufgaben von letzter Woche.",
+          "answer": "true",
+          "explanation": "Eine Frage zu den Hausaufgaben von letzter Woche."
+        },
+        {
+          "id": "qr2972",
+          "type": "mcq",
+          "question": "Was fehlt Anna ausserdem?",
+          "options": [
+            "Das Lehrbuch",
+            "Das Arbeitsblatt zum Wetter",
+            "Die Vokabelliste",
+            "Die Grammatikuebersicht"
+          ],
+          "answer": "Das Arbeitsblatt zum Wetter",
+          "explanation": "Das Arbeitsblatt uebers Wetter habe ich nicht gefunden."
+        }
+      ]
+    },
+    {
+      "id": "A2_read_53",
+      "title": "Absage Bewerbung",
+      "text": "Sehr geehrte Frau Lehmann,\n\nvielen Dank fuer Ihre Bewerbung als Buchhalterin bei der Steuerkanzlei Müller & Partner.\n\nWir haben Ihre Unterlagen sorgfältig geprueft. Leider muessen wir Ihnen mitteilen, dass wir uns für eine andere Kandidatin entschieden haben. Die Entscheidung ist uns nicht leicht gefallen, da Sie ueber gute Qualifikationen verfuegen.\n\nWir wuenschen Ihnen für Ihre weitere berufliche Zukunft alles Gute und viel Erfolg.\n\nBewahren Sie Ihre Bewerbungsunterlagen auf – vielleicht passt es ja ein anderes Mal.\n\nMit freundlichen Gruessen,\nPersonalabteilung\nMüller & Partner",
+      "questions": [
+        {
+          "id": "qr2973",
+          "type": "mcq",
+          "question": "Warum schreibt die Kanzlei Frau Lehmann?",
+          "options": [
+            "Um sie zu einem Gespraech einzuladen",
+            "Um ihre Bewerbung abzulehnen",
+            "Um nach weiteren Unterlagen zu fragen",
+            "Um ihr einen Vertrag anzubieten"
+          ],
+          "answer": "Um ihre Bewerbung abzulehnen",
+          "explanation": "Leider muessen wir Ihnen mitteilen, dass wir uns fuer eine andere Kandidatin entschieden haben."
+        },
+        {
+          "id": "qr2974",
+          "type": "true-false",
+          "question": "Frau Lehmann bekommt eine Absage.",
+          "answer": "true",
+          "explanation": "Es ist eine Absage."
+        },
+        {
+          "id": "qr2975",
+          "type": "mcq",
+          "question": "Was wuenscht die Kanzlei Frau Lehmann am Ende?",
+          "options": [
+            "Eine baldige Rueckmeldung",
+            "Viel Erfolg und alles Gute",
+            "Bewerbung erneut einzureichen",
+            "Sich auf andere Stellen zu bewerben"
+          ],
+          "answer": "Viel Erfolg und alles Gute",
+          "explanation": "Wir wuenschen Ihnen alles Gute und viel Erfolg."
+        }
+      ]
     }
   ],
   "B1": [

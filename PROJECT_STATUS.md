@@ -94,7 +94,7 @@ These are strict and must be followed for all future content generation:
 | `listening.json` | Object: `{A1: [...], A2: [...], ...}` | Listening scripts by level. Each has: id, level, title, script, questions (with id, type, question, options, answer), lessonId |
 | `writing.json` | Object: `{A1: [...], A2: [...], ...}` | Writing prompts by level. Each has: id, title, prompt, instructions, wordLimit, tips, rubric, rubricKeys, lessonId |
 | `speaking.json` | Object: `{A1: [...], A2: [...], ...}` | Speaking prompts by level. Each has: id, title, prompt, prepTime, talkTime, instructions, tips, usefulPhrases |
-| `exams.json` | Object: `{A1: [exam1, exam2, ...], A2: {...}, B1: {...}, ...}` | A1 is an array of 5 exam dicts (multi-exam). A2-C1 are single dicts. Each exam has: Lesen, Hören, Schreiben, Sprechen sections with tasks and rubrics |
+| `exams.json` | Object: `{A1: [exam1, exam2, ...], A2: [exam1, exam2, ...], B1: {...}, ...}` | A1 + A2 are arrays of 5 exam dicts each (multi-exam). B1-C1 are single dicts. Each exam has: Lesen, Hören, Schreiben, Sprechen sections with tasks and rubrics |
 | `resources.json` | Flat array | 18 external resource links with category, title, url, description |
 | `levels.json` | Object: `{A1: {...}, A2: {...}, ...}` | Level metadata with requirements for unlocking exams |
 
@@ -147,33 +147,37 @@ These are strict and must be followed for all future content generation:
 
 ## 9. Next Recommended Development Step
 
-Start A2 using the same **controlled batch method** used for A1.
+A2 curriculum is now **COMPLETE** for all 8 skill areas. Next step: **B1 expansion** if desired, following the same controlled batch method.
 
-**Recommended sequence:**
-1. A2 vocabulary (batches of max 50 words)
-2. A2 grammar (batches of max 40 exercises)
-3. A2 speaking (batches of max 20 prompts)
-4. A2 reading (batches of max 25 exercises)
-5. A2 listening (batches of max 25 exercises)
-6. A2 writing (batches of max 25 prompts)
-7. A2 exams
-8. A2 full audit
+## 10. A2 Current Status (as of 2026-05-01)
 
-## 10. A2 Workflow Reminder
+A2 vocabulary is now COMPLETE at 500 clean unique words.
 
-Before generating any A2 content:
+### A2 Content Counts
 
-1. **Audit existing A2 data first** - Check counts, quality, existing IDs
-2. **Check A2 lessons** - If A2 lessons are missing or insufficient (fewer than 25), stop and report before generating vocabulary
-3. **Add in batches** - Max 50 words, 40 grammar exercises, 20 speaking prompts, 25 reading/listening/writing per batch
-4. **Validate after every batch:**
-   - Parse JSON successfully
-   - Print new entry count
-   - Run duplicate normalization check
-   - Audit noun articles/plurals
-   - Verify lessonIds
-5. **Run `npm run build` after every batch**
-6. **Do NOT proceed if errors exist** in the current batch
-7. **Preserve UTF-8 encoding** - Always use `encoding="utf-8"` and `ensure_ascii=False` in Python
-8. **No fake labels** - Never add parenthetical style variants
-9. **Use real JSON null** - Not string "null"
+| Area | Current | Target | Status |
+|------|---------|--------|--------|
+| Lessons | 25 | 25 | Done |
+| Vocabulary | 500 | 480-500 | Done |
+| Grammar | 200 | 200 | Done |
+| Reading | 53 | 50 | Done |
+| Listening | 50 | 50 | Done |
+| Writing | 50 | 50 | Done |
+| Speaking | 70 | 50 | Done |
+| Exams | 5 | 5 | Done |
+
+### A2 Vocabulary Verification
+
+- **Total entries:** 500
+- **Unique normalized:** 500 (no duplicates)
+- **Missing required fields:** 0
+- **Nouns without article:** 0
+- **String "null" values:** 0
+- **Bad lessonIds:** 0
+- **Encoding errors:** 0
+- **npm run build:** Passed
+- **Deployment:** Published to gh-pages
+
+All A2 targets reached. Next: B1 expansion.
+
+

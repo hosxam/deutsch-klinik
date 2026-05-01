@@ -1372,6 +1372,326 @@
       "instructions": "Machen Sie 2-3 Vorschläge.",
       "wordLimit": 60,
       "tips": "Hast du Lust, am Samstag ins Kino zu gehen? Oder lieber spazieren?"
+    },
+    {
+      "id": "A2_write_11",
+      "title": "Kursrueckmeldung",
+      "prompt": "Sie haben einen A2-Deutschkurs besucht. Schreiben Sie eine kurze Rueckmeldung an die Kursleiterin.",
+      "instructions": "Erwaehnen Sie: was Ihnen gefallen hat, was Sie gelernt haben, einen Verbesserungsvorschlag.",
+      "wordLimit": 60,
+      "tips": "Sehr geehrte Frau ... , der Kurs hat mir sehr gut gefallen, weil ... Ein Verbesserungsvorschlag waere ... Mit freundlichen Gruessen"
+    },
+    {
+      "id": "A2_write_12",
+      "title": "Krankmeldung per E-Mail",
+      "prompt": "Sie sind krank und koennen nicht zur Arbeit kommen. Schreiben Sie eine E-Mail an Ihren Chef.",
+      "instructions": "Sagen Sie: dass Sie krank sind, seit wann, wann Sie voraussichtlich wiederkommen, ob Sie Aufgaben abgeben muessen.",
+      "wordLimit": 70,
+      "tips": "Betreff: Krankmeldung. Sehr geehrter Herr ..., ich bin seit ... krank. Voraussichtlich bin ich ab ... wieder da. Mit freundlichen Gruessen"
+    },
+    {
+      "id": "A2_write_13",
+      "title": "Wohnungsbewerbung",
+      "prompt": "Sie haben eine Wohnungsanzeige gesehen und moechten sich bewerben. Schreiben Sie eine kurze Nachricht an den Vermieter.",
+      "instructions": "Stellen Sie sich vor, sagen Sie, warum Sie die Wohnung moechten, nennen Sie Ihren Beruf und dass Sie ein regelmassiges Einkommen haben.",
+      "wordLimit": 80,
+      "tips": "Sehr geehrte/r ..., ich interessiere mich fuer die Wohnung in ... Ich bin ... Jahre alt und arbeite als ... Ich habe ein regelmassiges Einkommen."
+    },
+    {
+      "id": "A2_write_14",
+      "title": "Entschuldigung fuer Verspaetung",
+      "prompt": "Sie kommen 30 Minuten zu spaet zu einem Termin. Schreiben Sie vorher eine kurze Nachricht.",
+      "instructions": "Entschuldigen Sie sich, nennen Sie den Grund fuer die Verspaetung, sagen Sie, wann Sie ungefaehr kommen.",
+      "wordLimit": 50,
+      "tips": "Entschuldigung fuer die Verspaetung. Ich stecke im Stau. Ich bin in ca. 30 Minuten da."
+    },
+    {
+      "id": "A2_write_15",
+      "title": "Urlaub beantragen",
+      "prompt": "Sie moechten naechsten Monat eine Woche Urlaub nehmen. Schreiben Sie eine E-Mail an Ihren Vorgesetzten.",
+      "instructions": "Nennen Sie den gewuenschten Zeitraum, den Grund (z.B. Reise/Familie) und fragen Sie, ob es Ihnen passt.",
+      "wordLimit": 70,
+      "tips": "Betreff: Urlaubsantrag. Sehr geehrte/r ..., ich moechte gern vom ... bis ... Urlaub nehmen. Ich moechte ... Mit freundlichen Gruessen"
+    },
+    {
+      "id": "A2_write_16",
+      "title": "Paket Ruecksendung",
+      "prompt": "Sie haben ein Paket erhalten, aber der Inhalt ist kaputt. Schreiben Sie eine E-Mail an den Online-Shop.",
+      "instructions": "Nennen Sie Bestellnummer, das Problem, und was Sie erwarten (Rueckerstattung oder Ersatz).",
+      "wordLimit": 70,
+      "tips": "Betreff: Reklamation Bestellung Nr. ... Leider ist der Artikel kaputt. Bitte senden Sie mir einen Ersatz."
+    },
+    {
+      "id": "A2_write_17",
+      "title": "Nachricht an den Mitbewohner",
+      "prompt": "Sie mussen ein paar Tage verreisen. Schreiben Sie eine Nachricht an Ihren Mitbewohner.",
+      "instructions": "Sagen Sie, wie lange Sie weg sind, ob er/sie etwas fuer Sie erledigen kann (z.B. Pflanze giessen, Post holen), und bedanken Sie sich.",
+      "wordLimit": 60,
+      "tips": "Hallo ..., ich bin von ... bis ... nicht da. Kannst du bitte ... Danke dir!"
+    },
+    {
+      "id": "A2_write_18",
+      "title": "Bewerbung fuer ein Praktikum",
+      "prompt": "Sie moechten sich fuer ein Praktikum in einer Firma bewerben. Schreiben Sie eine kurze Bewerbungs-E-Mail.",
+      "instructions": "Stellen Sie sich vor, sagen Sie, warum Sie das Praktikum machen moechten, und wann Sie verfuegbar sind.",
+      "wordLimit": 80,
+      "tips": "Betreff: Bewerbung Praktikum. Sehr geehrte Damen und Herren, hiermit bewerbe ich mich fuer ein Praktikum. Ich bin ... und studiere/arbeite als ..."
+    },
+    {
+      "id": "A2_write_19",
+      "title": "Beschwerde uebern laermigen Nachbarn",
+      "prompt": "Ihr Nachbar macht jeden Abend laute Musik. Schreiben Sie einen hoeflichen Zettel.",
+      "instructions": "Sagen Sie, dass die Musik zu laut ist, wann die Ruhezeiten sind, und bitten Sie um Ruecksicht.",
+      "wordLimit": 60,
+      "tips": "Liebe/r Nachbar/in, leider ist die Musik abends sehr laut. Die Ruhezeit beginnt um 22 Uhr. Koennten Sie bitte ... Danke!"
+    },
+    {
+      "id": "A2_write_20",
+      "title": "Nachricht an den Vermieter (Reparatur)",
+      "prompt": "In Ihrer Wohnung tropft der Wasserhahn in der Kueche. Schreiben Sie eine Nachricht an den Vermieter.",
+      "instructions": "Beschreiben Sie das Problem, seit wann, in welchem Raum, und fragen Sie nach einem Termin fuer den Techniker.",
+      "wordLimit": 70,
+      "tips": "Betreff: Reparatur Wasserhahn. Sehr geehrte/r ..., der Wasserhahn in der Kueche tropft seit ... Koennen Sie bitte einen Techniker schicken?"
+    },
+    {
+      "id": "A2_write_21",
+      "title": "Einladung zu einer Party",
+      "prompt": "Sie planen eine kleine Party und moechten Ihren Freund/Ihre Freundin einladen. Schreiben Sie eine Einladung.",
+      "instructions": "Nennen Sie: Anlass, Datum, Uhrzeit, Ort, was mitgebracht werden soll.",
+      "wordLimit": 60,
+      "tips": "Hallo ..., ich feiere am ... um ... Uhr eine Party. Bring doch bitte ... mit. Ich freue mich auf dich!"
+    },
+    {
+      "id": "A2_write_22",
+      "title": "Anmeldung fuer einen Kurs",
+      "prompt": "Sie moechten einen Kochkurs an der VHS besuchen. Schreiben Sie eine Anmelde-E-Mail.",
+      "instructions": "Nennen Sie den Kurs, Ihren Namen, Ihre Adresse und fragen Sie nach den Zahlungsmodalitaeten.",
+      "wordLimit": 60,
+      "tips": "Betreff: Anmeldung Kochkurs. Sehr geehrte Damen und Herren, hiermit melde ich mich fuer den Kurs ... an. Mein Name ist ..."
+    },
+    {
+      "id": "A2_write_23",
+      "title": "Rueckfrage zu einer Rechnung",
+      "prompt": "Sie haben eine Rechnung bekommen, aber Sie denken, der Betrag ist zu hoch. Schreiben Sie eine E-Mail.",
+      "instructions": "Nennen Sie die Rechnungsnummer, sagen Sie, was Ihrer Meinung nach falsch ist, und bitten Sie um Ueberpruefung.",
+      "wordLimit": 70,
+      "tips": "Betreff: Frage zur Rechnung Nr. ... ich habe eine Rechnung ueber ... Euro erhalten, aber der Betrag scheint mir zu hoch. Bitte ueberpruefen Sie."
+    },
+    {
+      "id": "A2_write_24",
+      "title": "Tagebucheintrag: Ein besonderer Tag",
+      "prompt": "Schreiben Sie einen kurzen Tagebucheintrag ueber einen besonderen Tag in dieser Woche.",
+      "instructions": "Schreiben Sie: was passiert ist, wie Sie sich gefuehlt haben, warum der Tag besonders war.",
+      "wordLimit": 80,
+      "tips": "Liebes Tagebuch, heute war ein besonderer Tag, weil ... Ich habe ... gefuehlt. Am besten war ..."
+    },
+    {
+      "id": "A2_write_25",
+      "title": "Feedback an den Sprachlehrer",
+      "prompt": "Geben Sie Ihrem Sprachlehrer ein kurzes Feedback nach dem ersten Monat.",
+      "instructions": "Sagen Sie: wie der Unterricht Ihnen gefaellt, was Ihnen hilft, was Sie sich mehr wuenschen.",
+      "wordLimit": 60,
+      "tips": "Liebe/r ... , der Unterricht gefaellt mir sehr gut. Besonders hilfreich finde ich ... Ich wuensche mir mehr ..."
+    },
+    {
+      "id": "A2_write_26",
+      "title": "Fragen zu einer Hotelbuchung",
+      "prompt": "Sie haben ein Hotel fuer Ihren Urlaub gebucht, haben aber noch ein paar Fragen. Schreiben Sie dem Hotel.",
+      "instructions": "Fragen Sie: ob ein Parkplatz verfuegbar ist, ob Fruehstueck im Preis ist, ob Sie ein Babybett bekommen koennen.",
+      "wordLimit": 70,
+      "tips": "Betreff: Fragen zur Buchung Nr. ... Sehr geehrte Damen und Herren, ist ein Parkplatz verfuegbar? Ist Fruehstueck im Preis enthalten?"
+    },
+    {
+      "id": "A2_write_27",
+      "title": "Formular: Fundsache melden",
+      "prompt": "Sie haben einen Regenschirm in der Bibliothek gefunden. Schreiben Sie eine kurze Nachricht an das Fundbuero.",
+      "instructions": "Beschreiben Sie den Gegenstand, wo und wann Sie ihn gefunden haben, und geben Sie Ihre Kontaktdaten an.",
+      "wordLimit": 60,
+      "tips": "Guten Tag, ich habe am ... in der Bibliothek einen schwarzen Regenschirm gefunden. Bei Rueckmeldung bitte unter ..."
+    },
+    {
+      "id": "A2_write_28",
+      "title": "Verabredung absagen",
+      "prompt": "Sie haben sich mit einem Freund zum Kaffee verabredet, muessen aber leider absagen. Schreiben Sie eine Nachricht.",
+      "instructions": "Entschuldigen Sie sich, nennen Sie den Grund, und schlagen Sie einen neuen Termin vor.",
+      "wordLimit": 50,
+      "tips": "Hallo ..., es tut mir leid, aber ich muss unsere Verabredung leider absagen. Ich habe ... Passt es dir stattdessen am ...?"
+    },
+    {
+      "id": "A2_write_29",
+      "title": "Wochenende beschreiben",
+      "prompt": "Schreiben Sie ueber Ihr letztes Wochenende. Was haben Sie gemacht?",
+      "instructions": "Schreiben Sie mindestens 4 Saetze im Perfekt: was Sie am Samstag und Sonntag gemacht haben.",
+      "wordLimit": 70,
+      "tips": "Am Samstag bin ich ... Am Sonntag habe ich ... Das Wochenende war ..., weil ..."
+    },
+    {
+      "id": "A2_write_30",
+      "title": "Ueber ein Hobby schreiben",
+      "prompt": "Beschreiben Sie Ihr Lieblingshobby und erklaeren Sie, warum Sie es gern machen.",
+      "instructions": "Nennen Sie: was Ihr Hobby ist, seit wann Sie es machen, wie oft, und warum es Ihnen Spass macht.",
+      "wordLimit": 80,
+      "tips": "Mein Lieblingshobby ist ... Ich mache es seit ... Jahren. Es macht mir Spass, weil ..."
+    },
+    {
+      "id": "A2_write_31",
+      "title": "Busfahrplan erklaeren",
+      "prompt": "Sie erklaeren einem Touristen, wie die Buslinie 33 zum Museum faehrt.",
+      "instructions": "Schreiben Sie die Wegbeschreibung: wo einsteigen, wo aussteigen, wie lange die Fahrt dauert.",
+      "wordLimit": 50,
+      "tips": "Sie nehmen den Bus 33 ab der Haltestelle ... Fahren Sie bis ... Steigen Sie an der Haltestelle ... aus."
+    },
+    {
+      "id": "A2_write_32",
+      "title": "Im Restaurant empfehlen",
+      "prompt": "Ihr Freund ist in einem Restaurant und weiss nicht, was er bestellen soll. Schreiben Sie eine Empfehlung.",
+      "instructions": "Empfehlen Sie ein Gericht, nennen Sie den Preis, sagen Sie, warum es gut ist.",
+      "wordLimit": 50,
+      "tips": "Ich empfehle dir das Schnitzel. Es kostet 11,90 Euro und schmeckt sehr gut."
+    },
+    {
+      "id": "A2_write_33",
+      "title": "Handyrechnung erklaeren",
+      "prompt": "Sie haben eine unerwartete Handyrechnung bekommen. Schreiben Sie an den Kundenservice.",
+      "instructions": "Nennen Sie Ihre Kundennummer, erklaeren Sie das Problem und fragen Sie nach einer Erklaerung.",
+      "wordLimit": 70,
+      "tips": "Betreff: Frage zu meiner Rechnung. Meine Kundennummer ist ... Ich habe eine Rechnung ueber ... bekommen, aber ich verstehe die Kosten nicht."
+    },
+    {
+      "id": "A2_write_34",
+      "title": "Kindergeburtstag einladen",
+      "prompt": "Sie laden die Eltern eines Freundes Ihres Kindes zum Kindergeburtstag ein.",
+      "instructions": "Nennen Sie Datum, Uhrzeit, Ort, Programm und was das Kind mitbringen soll.",
+      "wordLimit": 70,
+      "tips": "Liebe ..., mein Kind feiert am ... um ... Uhr seinen Geburtstag im ... Bitte bringen Sie ... mit."
+    },
+    {
+      "id": "A2_write_35",
+      "title": "Stadt vorstellen",
+      "prompt": "Stellen Sie Ihre Stadt oder Ihr Dorf in einem kurzen Text vor.",
+      "instructions": "Nennen Sie die Groesse, die Lage, was es zu sehen gibt, und ob es Ihnen gefaellt.",
+      "wordLimit": 80,
+      "tips": "Meine Stadt heisst ... und liegt in ... Sie hat etwa ... Einwohner. Besonders schoen ist ... Mir gefaellt ..."
+    },
+    {
+      "id": "A2_write_36",
+      "title": "Geschenkidee beschreiben",
+      "prompt": "Sie suchen ein Geschenk fuer einen Freund. Beschreiben Sie Ihre Idee und warum sie gut passt.",
+      "instructions": "Nennen Sie den Anlass, die Person, die Geschenkidee, und warum sie gut ist.",
+      "wordLimit": 60,
+      "tips": "Mein Freund hat bald Geburtstag. Ich moechte ihm ein ... schenken, weil er ... mag. Es kostet circa ..."
+    },
+    {
+      "id": "A2_write_37",
+      "title": "Vorschlag fuer einen Ausflug",
+      "prompt": "Machen Sie Ihrer Familie einen Vorschlag fuer einen Wochenendausflug.",
+      "instructions": "Nennen Sie: wohin, wann, was man dort machen kann, warum es eine gute Idee ist.",
+      "wordLimit": 70,
+      "tips": "Ich schlage vor, am Wochenende nach ... zu fahren. Dort koennen wir ... Das ist eine gute Idee, weil ..."
+    },
+    {
+      "id": "A2_write_38",
+      "title": "Termin bestaetigen",
+      "prompt": "Sie haben einen Termin beim Arzt bekommen. Schreiben Sie eine kurze Bestsatigung.",
+      "instructions": "Bestaetigen Sie den Termin, nennen Sie Datum und Uhrzeit, und fragen Sie, ob Sie etwas mitbringen muessen.",
+      "wordLimit": 50,
+      "tips": "Sehr geehrte Praxis, hiermit bestaetige ich meinen Termin am ... um ... Muss ich etwas mitbringen? Mit freundlichen Gruessen"
+    },
+    {
+      "id": "A2_write_39",
+      "title": "Einkaufsliste und Plan",
+      "prompt": "Sie planen eine kleine Party und schreiben eine Einkaufsliste und Aufgaben fuer Ihren Mitbewohner.",
+      "instructions": "Schreiben Sie: was gekauft werden muss, wer was macht, und bis wann alles fertig sein soll.",
+      "wordLimit": 70,
+      "tips": "Einkaufsliste: ... Koenntest du bitte ... kaufen? Ich mache ... Alles sollte bis ... fertig sein."
+    },
+    {
+      "id": "A2_write_40",
+      "title": "Nach dem Weg fragen",
+      "prompt": "Sie haben sich in einer fremden Stadt verlaufen. Schreiben Sie einen kurzen Dialog, wie Sie nach dem Weg fragen.",
+      "instructions": "Schreiben Sie eine hoefliche Frage, nennen Sie Ihr Ziel, und bedanken Sie sich.",
+      "wordLimit": 50,
+      "tips": "Entschuldigung, koennen Sie mir bitte sagen, wie ich zum Bahnhof komme? Vielen Dank!"
+    },
+    {
+      "id": "A2_write_41",
+      "title": "Vergleich zweier Staedte",
+      "prompt": "Vergleichen Sie zwei Staedte, die Sie kennen.",
+      "instructions": "Vergleichen Sie Groesse, Wetter, Essen, Kosten. Benutzen Sie Komparative.",
+      "wordLimit": 80,
+      "tips": "... ist groesser als ... In ... ist das Wetter besser. Das Essen in ... ist schmackhafter. Die Kosten sind in ... hoeher."
+    },
+    {
+      "id": "A2_write_42",
+      "title": "Reisebericht schreiben",
+      "prompt": "Schreiben Sie ueber eine schoene Reise, die Sie gemacht haben.",
+      "instructions": "Schreiben Sie wohin, mit wem, was Sie gesehen und gemacht haben. Nutzen Sie Perfekt.",
+      "wordLimit": 80,
+      "tips": "Letztes Jahr bin ich nach ... gefahren. Ich bin mit ... gefahren. Wir haben ... besichtigt. Es war ..."
+    },
+    {
+      "id": "A2_write_43",
+      "title": "Um Hilfe bitten (E-Mail)",
+      "prompt": "Sie brauchen Hilfe bei einer Aufgabe im Deutschkurs. Schreiben Sie eine E-Mail an einen Mitschueler.",
+      "instructions": "Stellen Sie sich vor, erklaeren Sie das Problem, und fragen Sie, ob er/sie helfen kann.",
+      "wordLimit": 60,
+      "tips": "Hallo ..., ich bin ... aus dem A2-Kurs. Ich habe ein Problem mit ... Kannst du mir bitte helfen?"
+    },
+    {
+      "id": "A2_write_44",
+      "title": "Tier beschreiben",
+      "prompt": "Beschreiben Sie Ihr Haustier oder ein Tier, das Sie gern haben moechten.",
+      "instructions": "Nennen Sie Art, Name, Aussehen, Charakter, und was es gern macht.",
+      "wordLimit": 70,
+      "tips": "Ich habe einen Hund. Er heisst ... und ist ... Jahre alt. Er ist ... und mag am liebsten ..."
+    },
+    {
+      "id": "A2_write_45",
+      "title": "Anleitung: Etwas kochen",
+      "prompt": "Schreiben Sie eine kurze Anleitung, wie man Ihr Lieblingsgericht kocht.",
+      "instructions": "Schreiben Sie Schritt fuer Schritt. Nennen Sie die Zutaten zuerst.",
+      "wordLimit": 80,
+      "tips": "Zutaten: ... Schritt 1: ... Schritt 2: ... Schritt 3: ... Guten Appetit!"
+    },
+    {
+      "id": "A2_write_46",
+      "title": "Mein Traumjob",
+      "prompt": "Schreiben Sie ueber Ihren Traumjob. Was moechten Sie werden und warum?",
+      "instructions": "Nennen Sie den Beruf, warum er Sie interessiert, was man dafuer braucht, und ob Sie schon etwas dafuer tun.",
+      "wordLimit": 80,
+      "tips": "Mein Traumjob ist ... Der Beruf interessiert mich, weil ... Man braucht dafuer ... Ich lerne bereits ..."
+    },
+    {
+      "id": "A2_write_47",
+      "title": "Nachrichten auf dem Anrufbeantworter",
+      "prompt": "Sie rufen bei einem Freund an, aber er geht nicht ran. Hinterlassen Sie eine Nachricht auf dem Anrufbeantworter.",
+      "instructions": "Sagen Sie: wer anruft, warum, und dass er zurueckrufen soll.",
+      "wordLimit": 40,
+      "tips": "Hallo ..., hier ist ... Ruf mich bitte zurueck wegen ... Meine Nummer ist ..."
+    },
+    {
+      "id": "A2_write_48",
+      "title": "Lob und Kritik",
+      "prompt": "Schreiben Sie eine kurze Nachricht an Ihren Kursleiter: was Ihnen gefaellt und was Sie anders machen wuerden.",
+      "instructions": "Erwaehnen Sie mindestens einen positiven Punkt und einen Verbesserungsvorschlag.",
+      "wordLimit": 70,
+      "tips": "Sehr geehrte/r ..., der Kurs gefaellt mir gut, besonders ... Ein Vorschlag waere mehr ... Mit freundlichen Gruessen"
+    },
+    {
+      "id": "A2_write_49",
+      "title": "Fragen zur Wohnungsbesichtigung",
+      "prompt": "Sie haben einen Besichtigungstermin fuer eine Wohnung. Schreiben Sie eine Nachricht mit Fragen an den Vermieter vor der Besichtigung.",
+      "instructions": "Fragen Sie nach: Kaltmiete, Nebenkosten, Heizungsart, ob eine Einbaukueche da ist, ob Haustiere erlaubt sind.",
+      "wordLimit": 80,
+      "tips": "Hallo, ich habe einen Termin zur Besichtigung. Vorab ein paar Fragen: Wie hoch sind die Nebenkosten? Ist eine Einbaukueche vorhanden? Sind Haustiere erlaubt?"
+    },
+    {
+      "id": "A2_write_50",
+      "title": "Deutsche Tradition beschreiben",
+      "prompt": "Welche deutsche Tradition oder welches Fest kennen Sie? Beschreiben Sie es kurz.",
+      "instructions": "Nennen Sie den Namen, wann es stattfindet, was man macht, was isst/trinkt.",
+      "wordLimit": 80,
+      "tips": "Ein bekanntes deutsches Fest ist ... Es findet im/am ... statt. Die Menschen ... Man isst ... und trinkt ..."
     }
   ],
   "B1": [
