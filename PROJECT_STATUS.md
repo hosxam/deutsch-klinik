@@ -12,10 +12,7 @@
 
 ## 2. Current Completed State
 
-A1 is structurally complete and verified. All content has been deployed.
-
-### A1 Final Counts
-
+### A1 (Complete)
 | Area | Count |
 |------|-------|
 | Lessons | 25 |
@@ -27,11 +24,35 @@ A1 is structurally complete and verified. All content has been deployed.
 | Speaking | 50 prompts |
 | Exams | 5 full Goethe-style practice exams |
 
-### Non-A1 Content Present
-- A2-C1: Lessons data exists (25 per level, 100 non-A1 total)
-- A2-C1: Grammar, reading, listening, writing, speaking data may exist in varying states (not audited for completeness)
-- Other levels are NOT guaranteed to be complete
-- All other levels are effectively placeholders until explicitly expanded
+### A2 (Complete)
+| Area | Count |
+|------|-------|
+| Lessons | 25 |
+| Vocabulary | 500 clean unique words |
+| Grammar | 200 exercises |
+| Reading | 53 exercises |
+| Listening | 50 exercises |
+| Writing | 50 prompts |
+| Speaking | 70 prompts |
+| Exams | 5 full Goethe-style practice exams |
+
+### B1 (Partially Complete)
+| Area | Count | Status |
+|------|-------|--------|
+| Lessons | 25 | Done |
+| Vocabulary | 679 | Done |
+| Grammar | 250 | Done |
+| Reading | 60 | Done |
+| Listening | 60 | Done |
+| Writing | 50 | Done |
+| Speaking | 50 | Done |
+| Exams | 1 dict | Incomplete, needs 5 |
+
+### B2 (Placeholder)
+All content is original shell/fake data. Needs full expansion.
+
+### C1 (Placeholder)
+All content is original shell/fake data. Needs full expansion.
 
 ## 3. Major Bugs Fixed
 
@@ -131,8 +152,8 @@ These are strict and must be followed for all future content generation:
 ## 7. Build / Deploy Status
 
 - **Last confirmed build:** Passed
-- **Latest bundle hash:** `index-CTBLMemW.js`
-- **Bundle size:** ~1,637 KB JS / 328 KB gzipped
+- **Latest bundle hash:** `index-D0MTcZ4L.js`
+- **Bundle size:** ~2,222 KB JS / 510 KB gzipped
 - **Deployment method:** `npm run deploy` (builds then pushes dist/ to gh-pages branch)
 - **CDN caveat:** GitHub Pages CDN may take 1-2 minutes to propagate new bundle. Hard refresh (Ctrl+F5) usually resolves stale cache.
 - **No code splitting:** Monolithic bundle kept intentionally; Vite 8 Rolldown chunk hash mismatches caused 404 errors on GitHub Pages during code-split attempt.
@@ -145,39 +166,37 @@ These are strict and must be followed for all future content generation:
 - **Backup chain files (`.pre_batch`, `.batch2`-`.batch7`):** May still exist. These are backup snapshots of germanVocabulary.json at various stages. Do not delete unless intentionally cleaning backups.
 - **No other cleanup needed**
 
-## 9. Next Recommended Development Step
+## 9. B1 Details (as of 2026-05-01)
 
-A2 curriculum is now **COMPLETE** for all 8 skill areas. Next step: **B1 expansion** if desired, following the same controlled batch method.
+### B1 Incomplete Items
+- **Exams:** 1 dict (needs expansion to 5 full practice exams)
 
-## 10. A2 Current Status (as of 2026-05-01)
-
-A2 vocabulary is now COMPLETE at 500 clean unique words.
-
-### A2 Content Counts
-
-| Area | Current | Target | Status |
-|------|---------|--------|--------|
-| Lessons | 25 | 25 | Done |
-| Vocabulary | 500 | 480-500 | Done |
-| Grammar | 200 | 200 | Done |
-| Reading | 53 | 50 | Done |
-| Listening | 50 | 50 | Done |
-| Writing | 50 | 50 | Done |
-| Speaking | 70 | 50 | Done |
-| Exams | 5 | 5 | Done |
-
-### A2 Vocabulary Verification
-
-- **Total entries:** 500
-- **Unique normalized:** 500 (no duplicates)
+### B1 Vocabulary
+- **Total entries:** 679
+- **Unique normalized:** 679 (no duplicates)
 - **Missing required fields:** 0
-- **Nouns without article:** 0
-- **String "null" values:** 0
 - **Bad lessonIds:** 0
 - **Encoding errors:** 0
-- **npm run build:** Passed
-- **Deployment:** Published to gh-pages
 
-All A2 targets reached. Next: B1 expansion.
+### B1 Grammar
+- **Exercises:** 250
+- **Duplicate IDs:** 0
 
+### B1 Reading
+- **Exercises:** 60
+- **Duplicate IDs:** 0
+- **Missing answers:** 0
+- **Broken lessonIds:** 0
 
+### B1 Listening
+- **Exercises:** 60
+- **Duplicate IDs:** 0
+- **Missing answers:** 0
+
+### B1 Writing
+- **Prompts:** 50
+- **Duplicate IDs:** 0
+
+### B1 Speaking
+- **Prompts:** 50
+- **Duplicate IDs:** 0
