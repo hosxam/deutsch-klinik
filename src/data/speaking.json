@@ -1,63 +1,1443 @@
 {
   "_comment": "Speaking prompts per level. Each has id, level, title, prompt (task description), instructions, prepTime (seconds), talkTime (seconds), tips, usefulPhrases. Add more by following the format.",
   "A1": [
-    {"id": "A1_speak_1", "title": "Sich vorstellen", "prompt": "Stellen Sie sich vor: Name, Alter, Herkunft, Beruf.", "instructions": "Sprechen Sie 30-45 Sekunden.", "prepTime": 30, "talkTime": 45, "tips": "Nennen Sie: Name, Alter, wo Sie wohnen, was Sie beruflich machen.", "usefulPhrases": ["Ich heiße ...", "Ich komme aus ...", "Ich wohne in ...", "Ich bin Arzt."]},
-    {"id": "A1_speak_2", "title": "Buchstabieren", "prompt": "Buchstabieren Sie Ihren Namen und Ihren Wohnort.", "instructions": "Sagen Sie langsam jeden Buchstaben.", "prepTime": 15, "talkTime": 30, "tips": "Sprechen Sie deutlich. A - B - C ...", "usefulPhrases": ["Mein Name ist ...", "Das buchstabiere ich: ...", "Ich wohne in ..."]},
-    {"id": "A1_speak_3", "title": "Zahlen und Telefonnummer", "prompt": "Sagen Sie Ihre Telefonnummer und Ihr Alter.", "instructions": "Sprechen Sie jede Zahl einzeln.", "prepTime": 15, "talkTime": 30, "tips": "Sagen Sie: 'Meine Telefonnummer ist ...'", "usefulPhrases": ["Meine Telefonnummer ist ...", "Ich bin ... Jahre alt."]},
-    {"id": "A1_speak_4", "title": "Einen Gegenstand beschreiben", "prompt": "Beschreiben Sie einen Gegenstand in Ihrem Zimmer.", "instructions": "Sagen Sie: Was es ist, welche Farbe, wo es steht.", "prepTime": 30, "talkTime": 45, "tips": "Das ist ein Tisch. Er ist braun. Er steht am Fenster.", "usefulPhrases": ["Das ist ein/e ...", "Er/Sie/Es ist ... (Farbe)", "Er/Sie/Es steht/liegt ..."]},
-    {"id": "A1_speak_5", "title": "Essen und Trinken", "prompt": "Was essen und trinken Sie gern?", "instructions": "Nennen Sie 3 Dinge.", "prepTime": 30, "talkTime": 45, "tips": "Ich esse gern ... Ich trinke gern ...", "usefulPhrases": ["Ich esse gern ...", "Ich trinke gern ...", "Am liebsten mag ich ..."]},
-    {"id": "A1_speak_6", "title": "Mein Tag", "prompt": "Beschreiben Sie einen typischen Tagesablauf.", "instructions": "Nennen Sie 3 Aktivitäten.", "prepTime": 30, "talkTime": 45, "tips": "Um 7 Uhr stehe ich auf. Dann frühstücke ich.", "usefulPhrases": ["Um ... Uhr ... ich", "Dann ...", "Danach ..."]},
-    {"id": "A1_speak_7", "title": "Einfache Frage stellen", "prompt": "Stellen Sie 2 Fragen an Ihren Gesprächspartner.", "instructions": "Fragen Sie nach Name, Herkunft oder Beruf.", "prepTime": 20, "talkTime": 30, "tips": "Woher kommen Sie? Was machen Sie beruflich?", "usefulPhrases": ["Woher kommen Sie?", "Was machen Sie?", "Wie heißen Sie?"]},
-    {"id": "A1_speak_8", "title": "Wetter beschreiben", "prompt": "Beschreiben Sie das Wetter heute.", "instructions": "Sagen Sie 2-3 Sätze.", "prepTime": 20, "talkTime": 30, "tips": "Heute ist es sonnig. Es ist 25 Grad warm.", "usefulPhrases": ["Heute ist es ...", "Die Sonne scheint.", "Es regnet.", "Es ist kalt/warm."]},
-    {"id": "A1_speak_9", "title": "In der Praxis", "prompt": "Sagen Sie der Sprechstundenhilfe, dass Sie Schmerzen haben.", "instructions": "Nennen Sie Ihren Namen und wo es wehtut.", "prepTime": 20, "talkTime": 30, "tips": "Guten Tag, ich bin ... und habe Schmerzen im ...", "usefulPhrases": ["Guten Tag, ich bin ...", "Ich habe Schmerzen im ...", "Können Sie mir helfen?"]},
-    {"id": "A1_speak_10", "title": "Verabschiedung", "prompt": "Verabschieden Sie sich von Ihrem Arzt.", "instructions": "Sagen Sie Danke und Tschüss.", "prepTime": 10, "talkTime": 20, "tips": "Vielen Dank, Herr Doktor. Auf Wiedersehen!", "usefulPhrases": ["Vielen Dank.", "Auf Wiedersehen.", "Tschüss", "Bis zum nächsten Mal."]}
+    {
+      "id": "A1_speak_1",
+      "title": "Sich vorstellen",
+      "prompt": "Stellen Sie sich vor: Name, Alter, Herkunft, Beruf.",
+      "instructions": "Sprechen Sie 30-45 Sekunden.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "tips": "Nennen Sie: Name, Alter, wo Sie wohnen, was Sie beruflich machen.",
+      "usefulPhrases": [
+        "Ich heiße ...",
+        "Ich komme aus ...",
+        "Ich wohne in ...",
+        "Ich bin Arzt."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_2",
+      "title": "Buchstabieren",
+      "prompt": "Buchstabieren Sie Ihren Namen und Ihren Wohnort.",
+      "instructions": "Sagen Sie langsam jeden Buchstaben.",
+      "prepTime": 15,
+      "talkTime": 30,
+      "tips": "Sprechen Sie deutlich. A - B - C ...",
+      "usefulPhrases": [
+        "Mein Name ist ...",
+        "Das buchstabiere ich: ...",
+        "Ich wohne in ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_3",
+      "title": "Zahlen und Telefonnummer",
+      "prompt": "Sagen Sie Ihre Telefonnummer und Ihr Alter.",
+      "instructions": "Sprechen Sie jede Zahl einzeln.",
+      "prepTime": 15,
+      "talkTime": 30,
+      "tips": "Sagen Sie: 'Meine Telefonnummer ist ...'",
+      "usefulPhrases": [
+        "Meine Telefonnummer ist ...",
+        "Ich bin ... Jahre alt."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_4",
+      "title": "Einen Gegenstand beschreiben",
+      "prompt": "Beschreiben Sie einen Gegenstand in Ihrem Zimmer.",
+      "instructions": "Sagen Sie: Was es ist, welche Farbe, wo es steht.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "tips": "Das ist ein Tisch. Er ist braun. Er steht am Fenster.",
+      "usefulPhrases": [
+        "Das ist ein/e ...",
+        "Er/Sie/Es ist ... (Farbe)",
+        "Er/Sie/Es steht/liegt ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_5",
+      "title": "Essen und Trinken",
+      "prompt": "Was essen und trinken Sie gern?",
+      "instructions": "Nennen Sie 3 Dinge.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "tips": "Ich esse gern ... Ich trinke gern ...",
+      "usefulPhrases": [
+        "Ich esse gern ...",
+        "Ich trinke gern ...",
+        "Am liebsten mag ich ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_6",
+      "title": "Mein Tag",
+      "prompt": "Beschreiben Sie einen typischen Tagesablauf.",
+      "instructions": "Nennen Sie 3 Aktivitäten.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "tips": "Um 7 Uhr stehe ich auf. Dann frühstücke ich.",
+      "usefulPhrases": [
+        "Um ... Uhr ... ich",
+        "Dann ...",
+        "Danach ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_7",
+      "title": "Einfache Frage stellen",
+      "prompt": "Stellen Sie 2 Fragen an Ihren Gesprächspartner.",
+      "instructions": "Fragen Sie nach Name, Herkunft oder Beruf.",
+      "prepTime": 20,
+      "talkTime": 30,
+      "tips": "Woher kommen Sie? Was machen Sie beruflich?",
+      "usefulPhrases": [
+        "Woher kommen Sie?",
+        "Was machen Sie?",
+        "Wie heißen Sie?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_8",
+      "title": "Wetter beschreiben",
+      "prompt": "Beschreiben Sie das Wetter heute.",
+      "instructions": "Sagen Sie 2-3 Sätze.",
+      "prepTime": 20,
+      "talkTime": 30,
+      "tips": "Heute ist es sonnig. Es ist 25 Grad warm.",
+      "usefulPhrases": [
+        "Heute ist es ...",
+        "Die Sonne scheint.",
+        "Es regnet.",
+        "Es ist kalt/warm."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_9",
+      "title": "In der Praxis",
+      "prompt": "Sagen Sie der Sprechstundenhilfe, dass Sie Schmerzen haben.",
+      "instructions": "Nennen Sie Ihren Namen und wo es wehtut.",
+      "prepTime": 20,
+      "talkTime": 30,
+      "tips": "Guten Tag, ich bin ... und habe Schmerzen im ...",
+      "usefulPhrases": [
+        "Guten Tag, ich bin ...",
+        "Ich habe Schmerzen im ...",
+        "Können Sie mir helfen?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_10",
+      "title": "Verabschiedung",
+      "prompt": "Verabschieden Sie sich von Ihrem Arzt.",
+      "instructions": "Sagen Sie Danke und Tschüss.",
+      "prepTime": 10,
+      "talkTime": 20,
+      "tips": "Vielen Dank, Herr Doktor. Auf Wiedersehen!",
+      "usefulPhrases": [
+        "Vielen Dank.",
+        "Auf Wiedersehen.",
+        "Tschüss",
+        "Bis zum nächsten Mal."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_11",
+      "title": "Meine Familie",
+      "prompt": "Erzahlen Sie von Ihrer Familie. Wie viele Personen? Wer sind sie?",
+      "instructions": "Sprechen Sie 45-60 Sekunden. Nennen Sie Eltern, Geschwister.",
+      "tips": "Sagen Sie: 'Ich habe ...' oder 'Meine Familie hat ... Personen.'",
+      "prepTime": 30,
+      "talkTime": 60,
+      "usefulPhrases": [
+        "Ich habe einen Bruder.",
+        "Ich habe eine Schwester.",
+        "Meine Mutter heibt ...",
+        "Mein Vater arbeitet als ...",
+        "Wir wohnen zusammen."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_12",
+      "title": "Mein Beruf / Mein Studium",
+      "prompt": "Was machen Sie beruflich? Oder: Was studieren Sie?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Nennen Sie Ihren Beruf oder Ihr Studienfach.",
+      "tips": "Benutzen Sie: 'Ich bin ...' oder 'Ich arbeite als ...' oder 'Ich studiere ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich bin Arzt.",
+        "Ich arbeite als Ingenieur.",
+        "Ich studiere Medizin.",
+        "Ich gehe zur Schule.",
+        "Mein Beruf ist ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_13",
+      "title": "Mein Morgen",
+      "prompt": "Was machen Sie am Morgen? Beschreiben Sie Ihren typischen Morgen.",
+      "instructions": "Sprechen Sie 45-60 Sekunden. Nennen Sie 3-4 Aktivitaten.",
+      "tips": "Sagen Sie: 'Ich wache auf ... Ich putze meine Zähne ... Ich fruhstucke ...'",
+      "prepTime": 30,
+      "talkTime": 60,
+      "usefulPhrases": [
+        "Ich wache um 7 Uhr auf.",
+        "Ich putze meine Zahne.",
+        "Ich dusche.",
+        "Ich fruhstucke.",
+        "Ich gehe zur Arbeit / zur Schule."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_14",
+      "title": "Mein Abend",
+      "prompt": "Was machen Sie am Abend nach der Arbeit oder Schule?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Was essen Sie? Was machen Sie dann?",
+      "tips": "Verwenden Sie: 'Ich komme nach Hause ... Ich esse ... Ich sehe fern ... Ich gehe ins Bett.'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich komme um 18 Uhr nach Hause.",
+        "Ich koche das Abendessen.",
+        "Ich esse mit meiner Familie.",
+        "Ich lese ein Buch.",
+        "Ich gehe um 22 Uhr ins Bett."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_15",
+      "title": "Was mochten Sie trinken?",
+      "prompt": "Was trinken Sie gern? Tee, Kaffee, Saft, Wasser?",
+      "instructions": "Sprechen Sie 30 Sekunden. Was trinken Sie morgens, mittags, abends?",
+      "tips": "Benutzen Sie: 'Ich trinke gern ...' oder 'Ich mag ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich trinke gern Kaffee.",
+        "Ich mag Tee mit Zucker.",
+        "Ich trinke Wasser.",
+        "Ich trinke keinen Alkohol.",
+        "Ein Glas Saft, bitte."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_16",
+      "title": "Auf dem Markt / Im Supermarkt",
+      "prompt": "Was kaufen Sie ein? Nennen Sie 3-4 Lebensmittel.",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Sagen Sie, was Sie kaufen und wie viel.",
+      "tips": "Sagen Sie: 'Ich kaufe ...' Nennen Sie Obst, Gemuse oder Brot.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich kaufe Apfel.",
+        "Ich mochte Brot.",
+        "Wie viel kostet der Kase?",
+        "Das ist zu teuer.",
+        "Ich bezahle an der Kasse."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_17",
+      "title": "Nach Preisen fragen",
+      "prompt": "Fragen Sie nach Preisen: ein Brot, eine Milch, ein Kilo Apfel.",
+      "instructions": "Uben Sie: 'Was kostet ... Wie viel kostet ...'",
+      "tips": "Fragen Sie hochlich: 'Entschuldigung, was kostet ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Was kostet das Brot?",
+        "Wie viel kostet die Milch?",
+        "Das kostet 2 Euro.",
+        "Haben Sie etwas Gunstigeres?",
+        "Das ist billig."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_18",
+      "title": "Nach dem Weg fragen",
+      "prompt": "Fragen Sie nach dem Weg zur nachsten Apotheke.",
+      "instructions": "Uben Sie: 'Entschuldigung, wo ist ...' oder 'Wie komme ich zu ...'",
+      "tips": "Horen Sie genau zu. Die Antwort kann sein: 'Gehen Sie geradeaus ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Entschuldigung, wo ist die Apotheke?",
+        "Wie komme ich zum Bahnhof?",
+        "Gehen Sie geradeaus.",
+        "Biegen Sie links ab.",
+        "Es ist um die Ecke."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_19",
+      "title": "Das Wetter heute",
+      "prompt": "Beschreiben Sie das Wetter. Ist es schon, kalt, regnerisch?",
+      "instructions": "Sprechen Sie 30 Sekunden. Sagen Sie die Temperatur: 'Es ist 25 Grad.'",
+      "tips": "Sie konnen sagen: 'Es ist sonnig ... Es regnet ... Es ist kalt ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Die Sonne scheint.",
+        "Es regnet.",
+        "Es ist kalt heute.",
+        "Die Temperatur ist 20 Grad.",
+        "Es ist windig."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_20",
+      "title": "Meine Hobbys",
+      "prompt": "Was machen Sie in Ihrer Freizeit? Nennen Sie 2-3 Hobbys.",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Wie oft machen Sie Ihre Hobbys?",
+      "tips": "Benutzen Sie: 'Ich ... gern' oder 'In meiner Freizeit ...'",
+      "prepTime": 20,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich lese gern Bucher.",
+        "Ich spiele FuBball.",
+        "Ich schwimme gern.",
+        "Ich hore Musik.",
+        "Am Wochenende gehe ich spazieren."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_21",
+      "title": "Sport und Bewegung",
+      "prompt": "Machen Sie Sport? Welchen Sport mochten Sie?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Wie oft machen Sie Sport?",
+      "tips": "Benutzen Sie: 'Ich mache ...' oder 'Ich spiele ...'",
+      "prepTime": 20,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich mache Yoga.",
+        "Ich gehe ins Fitnessstudio.",
+        "Ich spiele Tennis.",
+        "Ich jogge jeden Morgen.",
+        "Sport macht Spa?."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_22",
+      "title": "Termin beim Arzt",
+      "prompt": "Sie sind krank. Rufen Sie in der Praxis an und machen Sie einen Termin.",
+      "instructions": "Ein kurzes Telefonat: Nennen Sie Ihren Namen und Ihr Problem.",
+      "tips": "Sagen Sie: 'Ich mochte einen Termin ...' oder 'Ich habe Schmerzen ...'",
+      "prepTime": 30,
+      "talkTime": 60,
+      "usefulPhrases": [
+        "Guten Tag, ich mochte einen Termin.",
+        "Ich habe Husten.",
+        "Ich habe Fieber.",
+        "Wann kann ich kommen?",
+        "Vielen Dank."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_23",
+      "title": "An der Rezeption",
+      "prompt": "Sie sind im Krankenhaus. Was sagen Sie an der Rezeption?",
+      "instructions": "Sprechen Sie 30-45 Sekunden: Name, Versicherung, Grund.",
+      "tips": "Sagen Sie Ihren Namen und warum Sie da sind.",
+      "prepTime": 20,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Guten Tag, ich bin Patient.",
+        "Mein Name ist ...",
+        "Ich habe eine Uberweisung.",
+        "Ich bin krankenversichert.",
+        "Wo ist die Notaufnahme?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_24",
+      "title": "Meine Symptome",
+      "prompt": "Beschreiben Sie: Was tut weh? Seit wann haben Sie Schmerzen?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Nennen Sie 2-3 Symptome.",
+      "tips": "Sagen Sie: 'Ich habe Kopfschmerzen ... Mein Rucken tut weh ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich habe Kopfschmerzen.",
+        "Der Hals tut weh.",
+        "Ich habe Husten.",
+        "Ich habe Schnupfen.",
+        "Seit drei Tagen."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_25",
+      "title": "In der Apotheke",
+      "prompt": "Sie brauchen Medikamente. Fragen Sie in der Apotheke.",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Was haben Sie? Was brauchen Sie?",
+      "tips": "Fragen Sie: 'Haben Sie etwas gegen ...?' oder 'Ich brauche ...'",
+      "prepTime": 20,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Haben Sie etwas gegen Husten?",
+        "Ich brauche Schmerztabletten.",
+        "Gibt es ein Rezeptfrei?",
+        "Wie oft soll ich das nehmen?",
+        "Danke fur Ihre Hilfe."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_26",
+      "title": "Was tut weh?",
+      "prompt": "Zeigen und sagen Sie: Welcher Korperteil tut weh?",
+      "instructions": "Sprechen Sie 30 Sekunden. Nennen Sie mindestens zwei Korperteile.",
+      "tips": "Sagen Sie: 'Mein ... tut weh' oder 'Ich habe Schmerzen im ...'",
+      "prepTime": 15,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Mein Kopf tut weh.",
+        "Der Rucken tut weh.",
+        "Mein Bauch tut weh.",
+        "Ich habe Schmerzen im Bein.",
+        "Die Hand tut weh."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_27",
+      "title": "Uhrzeiten und Termine",
+      "prompt": "Sagen Sie: Wie spat ist es? Nennen Sie 3 verschiedene Uhrzeiten.",
+      "instructions": "Sagen Sie: 'Es ist 14 Uhr ... Es ist halb drei ...'",
+      "tips": "Uben Sie ganze Stunden und halbe Stunden.",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Es ist 9 Uhr.",
+        "Es ist halb vier.",
+        "Es ist Viertel nach sieben.",
+        "Der Termin ist um 10 Uhr.",
+        "Ich habe um 15 Uhr Zeit."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_28",
+      "title": "Termin verschieben",
+      "prompt": "Sie konnen nicht zum Termin kommen. Sagen Sie Bescheid.",
+      "instructions": "Sprechen Sie 30 Sekunden: Entschuldigen Sie sich und nennen Sie einen neuen Termin.",
+      "tips": "Sagen Sie: 'Es tut mir leid ... Ich kann am ... nicht kommen. Geht es am ... ?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Es tut mir leid.",
+        "Ich kann morgen nicht kommen.",
+        "Konnen wir den Termin verschieben?",
+        "Geht es am Freitag?",
+        "Um 14 Uhr passt es besser."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_29",
+      "title": "Im Notfall",
+      "prompt": "Was sagen Sie im Notfall? Sie brauchen Hilfe.",
+      "instructions": "Sprechen Sie 20-30 Sekunden. Rufen Sie Hilfe. Sagen Sie, was passiert ist.",
+      "tips": "Wichtige Worter: 'Hilfe! ... Notarzt ... Krankenwagen ... Unfall ...'",
+      "prepTime": 15,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Hilfe!",
+        "Rufen Sie den Notarzt!",
+        "Es gibt einen Unfall.",
+        "Ich brauche einen Krankenwagen.",
+        "Hier ist die Adresse: ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_30",
+      "title": "Sich vorstellen (ausfuhrlich)",
+      "prompt": "Stellen Sie sich ausfuhrlich vor: Name, Alter, Herkunft, Beruf, Familie, Wohnort, Hobbys.",
+      "instructions": "Sprechen Sie 60-90 Sekunden. Verbinden Sie alles zu einem kurzen Vortrag.",
+      "tips": "Das ist eine typische A1 Prufungsaufgabe. Uben Sie flussig zu sprechen.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "usefulPhrases": [
+        "Ich heibe ... und bin ... Jahre alt.",
+        "Ich komme aus ...",
+        "Ich wohne in ...",
+        "Von Beruf bin ich ...",
+        "In meiner Freizeit ..."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_31",
+      "title": "Meine Wohnung / Mein Haus",
+      "prompt": "Beschreiben Sie Ihre Wohnung oder Ihr Haus. Wie viele Zimmer?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Nennen Sie die Raume.",
+      "tips": "Sagen Sie: 'Ich wohne in einer Wohnung ... Es gibt ... Zimmer.'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich wohne in einer Wohnung.",
+        "Es gibt drei Zimmer.",
+        "Das Wohnzimmer ist grob.",
+        "Die Kuche ist klein.",
+        "Mein Schlafzimmer ist gemutlich."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_32",
+      "title": "Mobel in meinem Zimmer",
+      "prompt": "Welche Mobel haben Sie in Ihrem Zimmer?",
+      "instructions": "Sprechen Sie 30 Sekunden. Nennen Sie 3-4 Mobelstucke.",
+      "tips": "Sagen Sie: 'In meinem Zimmer gibt es ...' oder 'Ich habe einen Tisch ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich habe einen Tisch.",
+        "Es gibt einen Stuhl.",
+        "Das Bett ist grob.",
+        "Im Zimmer ist ein Schrank.",
+        "Der Teppich ist blau."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_33",
+      "title": "Farben",
+      "prompt": "Welche Farben mogen Sie? Beschreiben Sie 2-3 Gegenstande mit Farben.",
+      "instructions": "Sprechen Sie 30 Sekunden. Sagen Sie: 'Mein Auto ist blau ...'",
+      "tips": "Farben auf Deutsch: rot, blau, grun, gelb, schwarz, weib, braun, grau.",
+      "prepTime": 15,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Mein Auto ist rot.",
+        "Ich mag die Farbe Blau.",
+        "Die Wand ist weib.",
+        "Meine Tasche ist schwarz.",
+        "Das Gras ist grun."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_34",
+      "title": "Essen und Kochen",
+      "prompt": "Was essen Sie gern? Was kochen Sie?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Nennen Sie 3-4 Lieblingsspeisen.",
+      "tips": "Benutzen Sie: 'Ich esse gern ...' oder 'Ich mag ...' oder 'Ich koche ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich esse gern Pizza.",
+        "Ich mag Spaghetti.",
+        "Meine Mutter kocht gut.",
+        "Ich esse viel Obst.",
+        "Zum Fruhstuck esse ich Brot."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_35",
+      "title": "Kleidung kaufen",
+      "prompt": "Sie kaufen Kleidung. Welche Kleidung suchen Sie?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Fragen Sie nach Grobe und Farbe.",
+      "tips": "Sagen Sie: 'Ich suche einen Pullover ... in Grobe M ... Haben Sie das in Blau?'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich suche ein Hemd.",
+        "Haben Sie das in Grobe L?",
+        "Die Hose gefallt mir.",
+        "Darf ich es anprobieren?",
+        "Ich mochte noch ein T-Shirt."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_36",
+      "title": "Mit dem Bus fahren",
+      "prompt": "Sie fahren mit dem Bus. Fragen Sie nach dem richtigen Bus.",
+      "instructions": "Sprechen Sie 30 Sekunden. Fragen Sie nach der Haltestelle.",
+      "tips": "Sagen Sie: 'Welcher Bus fahrt zum Bahnhof? ... Wo ist die Bushaltestelle?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Welcher Bus fahrt zum Bahnhof?",
+        "Wo ist die Haltestelle?",
+        "Fahrt dieser Bus zum Markt?",
+        "Eine Fahrkarte, bitte.",
+        "Ich muss am Marktplatz aussteigen."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_37",
+      "title": "Im Restaurant",
+      "prompt": "Sie sind im Restaurant. Bestellen Sie etwas zu essen.",
+      "instructions": "Sprechen Sie 30 Sekunden: BegruBung, Bestellung, Frage nach der Rechnung.",
+      "tips": "Benutzen Sie: 'Ich mochte ...' oder 'Fur mich bitte ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Einen Tisch fur zwei Personen, bitte.",
+        "Ich mochte eine Pizza.",
+        "Fur mich bitte einen Salat.",
+        "Die Speisekarte, bitte.",
+        "Die Rechnung, bitte."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_38",
+      "title": "Einladung zum Geburtstag",
+      "prompt": "Laden Sie einen Freund zu Ihrer Geburtstagsfeier ein.",
+      "instructions": "Sprechen Sie 30 Sekunden: Wann, wo, was gibt es?",
+      "tips": "Sagen Sie: 'Ich habe am ... Geburtstag. Kommst du zu meiner Party?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich habe am Samstag Geburtstag.",
+        "Kommst du zu meiner Party?",
+        "Die Party ist um 18 Uhr.",
+        "Es gibt Kuchen und Getranke.",
+        "Ich freue mich auf dich!"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_39",
+      "title": "Tagesablauf mit Uhrzeiten",
+      "prompt": "Beschreiben Sie Ihren Tagesablauf mit Uhrzeiten.",
+      "instructions": "Sprechen Sie 45-60 Sekunden: Von morgens bis abends mit Uhrzeit.",
+      "tips": "Verbinden Sie: 'Um 7 Uhr wache ich auf. Um 8 Uhr fruhstucke ich. Um 9 Uhr ...'",
+      "prepTime": 30,
+      "talkTime": 60,
+      "usefulPhrases": [
+        "Um 7 Uhr wache ich auf.",
+        "Um 8 Uhr fruhstucke ich.",
+        "Um 9 Uhr beginnt die Arbeit.",
+        "Um 12 Uhr esse ich zu Mittag.",
+        "Um 22 Uhr gehe ich ins Bett."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_40",
+      "title": "Am Wochenende",
+      "prompt": "Was machen Sie am Wochenende?",
+      "instructions": "Sprechen Sie 30-45 Sekunden. Nennen Sie 3 Aktivitaten am Wochenende.",
+      "tips": "Benutzen Sie: 'Am Samstag ...' und 'Am Sonntag ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Am Samstag gehe ich einkaufen.",
+        "Ich treffe Freunde.",
+        "Am Sonntag schlafe ich lang.",
+        "Wir gehen spazieren.",
+        "Am Wochenende habe ich frei."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_41",
+      "title": "Haustiere",
+      "prompt": "Haben Sie ein Haustier? Beschreiben Sie es.",
+      "instructions": "Sprechen Sie 30 Sekunden. Grobe, Farbe, Name, was es mag.",
+      "tips": "Sagen Sie: 'Ich habe einen Hund ... Er heibt ... Er mag ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich habe einen Hund.",
+        "Meine Katze heibt Mietze.",
+        "Der Hund ist braun und weib.",
+        "Er mag spazieren gehen.",
+        "Das Haustier ist klein und nett."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_42",
+      "title": "Eine Person beschreiben",
+      "prompt": "Beschreiben Sie einen Freund oder ein Familienmitglied. Wie sieht er/sie aus?",
+      "instructions": "Sprechen Sie 30-45 Sekunden: Grobe, Haare, Augen, Charakter.",
+      "tips": "Sagen Sie: 'Meine Freundin ist grob ... Sie hat blonde Haare ... Sie ist nett.'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Mein Bruder ist grob.",
+        "Sie hat braune Augen.",
+        "Er hat kurze Haare.",
+        "Meine Mutter ist freundlich.",
+        "Er ist lustig und klug."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_43",
+      "title": "Eine Wohnung suchen",
+      "prompt": "Sie suchen eine Wohnung. Fragen Sie nach der Miete und den Zimmern.",
+      "instructions": "Sprechen Sie 30 Sekunden: Grobe, Zimmeranzahl, Miete.",
+      "tips": "Fragen Sie: 'Wie viel kostet die Miete? ... Wie viele Zimmer?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich suche eine Wohnung.",
+        "Wie viele Zimmer hat die Wohnung?",
+        "Was kostet die Miete?",
+        "Gibt es einen Balkon?",
+        "Ist die Wohnung mogbliert?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_44",
+      "title": "Komplimente machen",
+      "prompt": "Machen Sie einem Freund oder einer Freundin ein Kompliment.",
+      "instructions": "Sprechen Sie 20 Sekunden. Sagen Sie etwas Nettes.",
+      "tips": "Einfache Komplimente: 'Dein Kleid ist schon ... Das Essen schmeckt gut ...'",
+      "prepTime": 10,
+      "talkTime": 20,
+      "usefulPhrases": [
+        "Dein Kleid ist schon.",
+        "Das Essen schmeckt sehr gut.",
+        "Du siehst gut aus.",
+        "Tolle Arbeit!",
+        "Du bist sehr freundlich."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_45",
+      "title": "Ein kurzes Telefongesprach",
+      "prompt": "Sie rufen einen Freund an. Was sagen Sie?",
+      "instructions": "Sprechen Sie 30 Sekunden: Begrubung, Frage, Verabschiedung.",
+      "tips": "Am Telefon: 'Hallo ... Hier ist ... Kann ich bitte ... sprechen?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Hallo, hier ist ...",
+        "Kann ich bitte mit ... sprechen?",
+        "Mochtest du ins Kino gehen?",
+        "Ja, gerne.",
+        "Tschuss, bis morgen!"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_46",
+      "title": "Einen Gegenstand verloren",
+      "prompt": "Sie haben etwas verloren. Fragen Sie an der Information.",
+      "instructions": "Sprechen Sie 30 Sekunden: Was haben Sie verloren? Wo?",
+      "tips": "Sagen Sie: 'Ich habe meine Tasche verloren ... Haben Sie eine gefunden?'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich habe meine Tasche verloren.",
+        "Haben Sie einen Schlussel gefunden?",
+        "Wo ist das Fundburo?",
+        "Mein Handy ist weg.",
+        "Kann ich bitte suchen?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_47",
+      "title": "Im Hotel",
+      "prompt": "Sie kommen im Hotel an. Was sagen Sie an der Rezeption?",
+      "instructions": "Sprechen Sie 30 Sekunden: Reservierung, Zimmer, Schussel, Frubstuck.",
+      "tips": "Sagen Sie: 'Ich habe ein Zimmer reserviert ... fur zwei Nachte ...'",
+      "prepTime": 20,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Ich habe ein Zimmer reserviert.",
+        "Mein Name ist ...",
+        "Fur zwei Nachte, bitte.",
+        "Gibt es Frubstuck?",
+        "Wo ist mein Zimmer?"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_48",
+      "title": "Auf der Post",
+      "prompt": "Sie sind auf der Post. Sie wollen ein Paket schicken.",
+      "instructions": "Sprechen Sie 30 Sekunden: Wohin? Was? Wie viel kostet es?",
+      "tips": "Sagen Sie: 'Ich mochte ein Paket schicken ... nach Agypten ...'",
+      "prepTime": 20,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Ich mochte ein Paket schicken.",
+        "Das Paket geht nach ...",
+        "Wie viel kostet das?",
+        "Wie lange dauert es?",
+        "Ich mochte bitte eine Briefmarke."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_49",
+      "title": "Beim Abendessen",
+      "prompt": "Sie sind zu Gast beim Abendessen. Sagen Sie, dass es schmeckt.",
+      "instructions": "Sprechen Sie 20-30 Sekunden: Danke sagen, das Essen loben.",
+      "tips": "Hoflich sein: 'Das Essen schmeckt sehr gut ... Danke fur die Einladung.'",
+      "prepTime": 10,
+      "talkTime": 30,
+      "usefulPhrases": [
+        "Das Essen schmeckt sehr gut.",
+        "Danke fur die Einladung.",
+        "Alles ist sehr lecker.",
+        "Kann ich helfen?",
+        "Ich bin satt. Danke."
+      ],
+      "level": "A1"
+    },
+    {
+      "id": "A1_speak_50",
+      "title": "Plane machen",
+      "prompt": "Machen Sie einen Plan mit einem Freund. Was machen Sie morgen?",
+      "instructions": "Sprechen Sie 30-45 Sekunden: Fragen, vorschlagen, zustimmen.",
+      "tips": "Benutzen Sie: 'Wollen wir ... Gehen wir ... Mochtest du ...'",
+      "prepTime": 30,
+      "talkTime": 45,
+      "usefulPhrases": [
+        "Wollen wir ins Kino gehen?",
+        "Gehen wir morgen schwimmen?",
+        "Das ist eine gute Idee.",
+        "Um wie viel Uhr treffen wir uns?",
+        "Bis morgen!"
+      ],
+      "level": "A1"
+    }
   ],
   "A2": [
-    {"id": "A2_speak_1", "title": "Einkäufe planen", "prompt": "Sie planen mit einem Freund einen Einkauf für eine Party.", "instructions": "Machen Sie Vorschläge, fragen Sie nach Meinung, einigen Sie sich.", "prepTime": 60, "talkTime": 90, "tips": "Fragen Sie: 'Was brauchen wir?' Machen Sie Vorschläge: 'Wir könnten ... kaufen.'", "usefulPhrases": ["Was brauchen wir?", "Ich schlage vor, ...", "Einverstanden?", "Gute Idee!"]},
-    {"id": "A2_speak_2", "title": "Über Hobbys sprechen", "prompt": "Erzählen Sie von Ihren Hobbys.", "instructions": "Sagen Sie: Was Sie machen, wie oft, warum es Ihnen gefällt.", "prepTime": 45, "talkTime": 60, "tips": "In meiner Freizeit ... Das mache ich gern, weil ...", "usefulPhrases": ["In meiner Freizeit ...", "Ich ... gern, weil ...", "Einmal pro Woche ..."]},
-    {"id": "A2_speak_3", "title": "Eine Verabredung treffen", "prompt": "Sie möchten mit einem Kollegen etwas unternehmen. Fragen Sie ihn.", "instructions": "Fragen Sie nach Zeit, Ort, Aktivität.", "prepTime": 45, "talkTime": 60, "tips": "Hast du am Samstag Zeit? Wollen wir ins Kino gehen?", "usefulPhrases": ["Hast du am ... Zeit?", "Wollen wir ...?", "Um wie viel Uhr?", "Wo treffen wir uns?"]},
-    {"id": "A2_speak_4", "title": "Beim Arzt - Schmerzen beschreiben", "prompt": "Beschreiben Sie einem Arzt Ihre Schmerzen.", "instructions": "Wo tut es weh, seit wann, wie stark?", "prepTime": 45, "talkTime": 60, "tips": "Ich habe seit ... Schmerzen im ... Die Schmerzen sind stark.", "usefulPhrases": ["Ich habe Schmerzen im ...", "Seit ... Tagen/Wochen", "Die Schmerzen sind stark/schwach.", "Es tut weh, wenn ich ..."]},
-    {"id": "A2_speak_5", "title": "Nach dem Weg fragen", "prompt": "Fragen Sie nach dem Weg zum nächsten Krankenhaus.", "instructions": "Stellen Sie die Frage, wiederholen Sie die Antwort.", "prepTime": 30, "talkTime": 45, "tips": "Entschuldigung, wo ist das nächste Krankenhaus?", "usefulPhrases": ["Entschuldigung, wo ist ...?", "Wie komme ich zu ...?", "Ist es weit?", "Vielen Dank für die Auskunft."]},
-    {"id": "A2_speak_6", "title": "Urlaubspläne", "prompt": "Erzählen Sie von Ihrem letzten Urlaub.", "instructions": "Wohin, mit wem, was haben Sie gemacht?", "prepTime": 60, "talkTime": 90, "tips": "Letztes Jahr bin ich nach ... gefahren. Ich war dort mit ...", "usefulPhrases": ["Letztes Jahr bin ich nach ... gefahren.", "Ich war mit ...", "Wir haben ... besucht.", "Es war schön, weil ..."]},
-    {"id": "A2_speak_7", "title": "Im Restaurant", "prompt": "Sie sind im Restaurant. Bestellen Sie Essen.", "instructions": "Fragen Sie nach der Karte, bestellen Sie, fragen Sie nach der Rechnung.", "prepTime": 45, "talkTime": 60, "tips": "Ich möchte bitte ... bestellen. Die Rechnung bitte.", "usefulPhrases": ["Die Karte bitte.", "Ich möchte ... bestellen.", "Kann ich ... haben?", "Die Rechnung bitte."]},
-    {"id": "A2_speak_8", "title": "Wohnung beschreiben", "prompt": "Beschreiben Sie Ihre Wohnung.", "instructions": "Wie viele Zimmer, welche Möbel, wo wohnen Sie?", "prepTime": 45, "talkTime": 60, "tips": "Ich wohne in einer ...-Zimmer-Wohnung. Es gibt ein Wohnzimmer, ...", "usefulPhrases": ["Meine Wohnung hat ... Zimmer.", "Es gibt ein/e ...", "Das Wohnzimmer ist ...", "In der Küche gibt es ..."]},
-    {"id": "A2_speak_9", "title": "Über Familie sprechen", "prompt": "Erzählen Sie von Ihrer Familie.", "instructions": "Wie viele Personen, was machen sie?", "prepTime": 45, "talkTime": 60, "tips": "Meine Familie hat ... Personen. Mein Vater arbeitet als ...", "usefulPhrases": ["Meine Familie hat ... Personen.", "Mein/Meine ... arbeitet als ...", "Wir wohnen in ..."]},
-    {"id": "A2_speak_10", "title": "Ein Problem schildern", "prompt": "Ihr Nachbar macht laute Musik. Sprechen Sie mit ihm.", "instructions": "Beschreiben Sie das Problem, bitten Sie um Ruhe.", "prepTime": 45, "talkTime": 60, "tips": "Entschuldigung, die Musik ist sehr laut. Können Sie bitte leiser machen?", "usefulPhrases": ["Entschuldigung, ...", "Die Musik ist sehr laut.", "Können Sie bitte ...?", "Ich möchte schlafen."]}
+    {
+      "id": "A2_speak_1",
+      "title": "Einkäufe planen",
+      "prompt": "Sie planen mit einem Freund einen Einkauf für eine Party.",
+      "instructions": "Machen Sie Vorschläge, fragen Sie nach Meinung, einigen Sie sich.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Fragen Sie: 'Was brauchen wir?' Machen Sie Vorschläge: 'Wir könnten ... kaufen.'",
+      "usefulPhrases": [
+        "Was brauchen wir?",
+        "Ich schlage vor, ...",
+        "Einverstanden?",
+        "Gute Idee!"
+      ]
+    },
+    {
+      "id": "A2_speak_2",
+      "title": "Über Hobbys sprechen",
+      "prompt": "Erzählen Sie von Ihren Hobbys.",
+      "instructions": "Sagen Sie: Was Sie machen, wie oft, warum es Ihnen gefällt.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "In meiner Freizeit ... Das mache ich gern, weil ...",
+      "usefulPhrases": [
+        "In meiner Freizeit ...",
+        "Ich ... gern, weil ...",
+        "Einmal pro Woche ..."
+      ]
+    },
+    {
+      "id": "A2_speak_3",
+      "title": "Eine Verabredung treffen",
+      "prompt": "Sie möchten mit einem Kollegen etwas unternehmen. Fragen Sie ihn.",
+      "instructions": "Fragen Sie nach Zeit, Ort, Aktivität.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Hast du am Samstag Zeit? Wollen wir ins Kino gehen?",
+      "usefulPhrases": [
+        "Hast du am ... Zeit?",
+        "Wollen wir ...?",
+        "Um wie viel Uhr?",
+        "Wo treffen wir uns?"
+      ]
+    },
+    {
+      "id": "A2_speak_4",
+      "title": "Beim Arzt - Schmerzen beschreiben",
+      "prompt": "Beschreiben Sie einem Arzt Ihre Schmerzen.",
+      "instructions": "Wo tut es weh, seit wann, wie stark?",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Ich habe seit ... Schmerzen im ... Die Schmerzen sind stark.",
+      "usefulPhrases": [
+        "Ich habe Schmerzen im ...",
+        "Seit ... Tagen/Wochen",
+        "Die Schmerzen sind stark/schwach.",
+        "Es tut weh, wenn ich ..."
+      ]
+    },
+    {
+      "id": "A2_speak_5",
+      "title": "Nach dem Weg fragen",
+      "prompt": "Fragen Sie nach dem Weg zum nächsten Krankenhaus.",
+      "instructions": "Stellen Sie die Frage, wiederholen Sie die Antwort.",
+      "prepTime": 30,
+      "talkTime": 45,
+      "tips": "Entschuldigung, wo ist das nächste Krankenhaus?",
+      "usefulPhrases": [
+        "Entschuldigung, wo ist ...?",
+        "Wie komme ich zu ...?",
+        "Ist es weit?",
+        "Vielen Dank für die Auskunft."
+      ]
+    },
+    {
+      "id": "A2_speak_6",
+      "title": "Urlaubspläne",
+      "prompt": "Erzählen Sie von Ihrem letzten Urlaub.",
+      "instructions": "Wohin, mit wem, was haben Sie gemacht?",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Letztes Jahr bin ich nach ... gefahren. Ich war dort mit ...",
+      "usefulPhrases": [
+        "Letztes Jahr bin ich nach ... gefahren.",
+        "Ich war mit ...",
+        "Wir haben ... besucht.",
+        "Es war schön, weil ..."
+      ]
+    },
+    {
+      "id": "A2_speak_7",
+      "title": "Im Restaurant",
+      "prompt": "Sie sind im Restaurant. Bestellen Sie Essen.",
+      "instructions": "Fragen Sie nach der Karte, bestellen Sie, fragen Sie nach der Rechnung.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Ich möchte bitte ... bestellen. Die Rechnung bitte.",
+      "usefulPhrases": [
+        "Die Karte bitte.",
+        "Ich möchte ... bestellen.",
+        "Kann ich ... haben?",
+        "Die Rechnung bitte."
+      ]
+    },
+    {
+      "id": "A2_speak_8",
+      "title": "Wohnung beschreiben",
+      "prompt": "Beschreiben Sie Ihre Wohnung.",
+      "instructions": "Wie viele Zimmer, welche Möbel, wo wohnen Sie?",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Ich wohne in einer ...-Zimmer-Wohnung. Es gibt ein Wohnzimmer, ...",
+      "usefulPhrases": [
+        "Meine Wohnung hat ... Zimmer.",
+        "Es gibt ein/e ...",
+        "Das Wohnzimmer ist ...",
+        "In der Küche gibt es ..."
+      ]
+    },
+    {
+      "id": "A2_speak_9",
+      "title": "Über Familie sprechen",
+      "prompt": "Erzählen Sie von Ihrer Familie.",
+      "instructions": "Wie viele Personen, was machen sie?",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Meine Familie hat ... Personen. Mein Vater arbeitet als ...",
+      "usefulPhrases": [
+        "Meine Familie hat ... Personen.",
+        "Mein/Meine ... arbeitet als ...",
+        "Wir wohnen in ..."
+      ]
+    },
+    {
+      "id": "A2_speak_10",
+      "title": "Ein Problem schildern",
+      "prompt": "Ihr Nachbar macht laute Musik. Sprechen Sie mit ihm.",
+      "instructions": "Beschreiben Sie das Problem, bitten Sie um Ruhe.",
+      "prepTime": 45,
+      "talkTime": 60,
+      "tips": "Entschuldigung, die Musik ist sehr laut. Können Sie bitte leiser machen?",
+      "usefulPhrases": [
+        "Entschuldigung, ...",
+        "Die Musik ist sehr laut.",
+        "Können Sie bitte ...?",
+        "Ich möchte schlafen."
+      ]
+    }
   ],
   "B1": [
-    {"id": "B1_speak_1", "title": "Präsentation: Mein Weg zur Medizin", "prompt": "Erzählen Sie, warum Sie Arzt geworden sind.", "instructions": "Sprechen Sie 2 Minuten über Ihre Motivation und Ihren Werdegang.", "prepTime": 90, "talkTime": 120, "tips": "Struktur: Einleitung - warum Medizin - Ihre Erfahrungen - Zukunftspläne.", "usefulPhrases": ["Schon seit meiner Kindheit wollte ich ..., weil ...", "Während meines Studiums habe ich ...", "Besonders interessiert mich ...", "In Zukunft möchte ich ..."]},
-    {"id": "B1_speak_2", "title": "Umfrage: Gesund leben", "prompt": "Diskutieren Sie mit einem Partner: Was bedeutet gesund leben?", "instructions": "Tauschen Sie Ideen aus, stimmen Sie zu oder widersprechen Sie.", "prepTime": 60, "talkTime": 120, "tips": "Nennen Sie: Ernährung, Bewegung, Schlaf. Fragen Sie den Partner.", "usefulPhrases": ["Was bedeutet für dich gesund leben?", "Ich finde, dass ... wichtig ist.", "Da stimme ich dir zu.", "Das sehe ich anders, weil ..."]},
-    {"id": "B1_speak_3", "title": "Beschwerde im Hotel", "prompt": "Sie haben ein Problem im Hotel. Beschweren Sie sich an der Rezeption.", "instructions": "Nennen Sie das Problem, sagen Sie, was Sie erwarten.", "prepTime": 60, "talkTime": 90, "tips": "Seien Sie höflich aber bestimmt. Nennen Sie: Zimmernummer, Problem, Wunsch.", "usefulPhrases": ["Guten Tag, ich bin im Zimmer ...", "Leider funktioniert ... nicht.", "Können Sie bitte ...?", "Ich erwarte, dass ..."]},
-    {"id": "B1_speak_4", "title": "Einen Kurs empfehlen", "prompt": "Ihr Freund möchte einen Deutschkurs machen. Empfehlen Sie ihm einen.", "instructions": "Erklären Sie Ihre Empfehlung mit Gründen.", "prepTime": 60, "talkTime": 90, "tips": "Ich empfehle dir Kurs X, weil ...", "usefulPhrases": ["Ich empfehle dir ..., weil ...", "Ein Vorteil ist, dass ...", "Außerdem ...", "Im Vergleich zu ... ist dieser Kurs ..."]},
-    {"id": "B1_speak_5", "title": "Gemeinsam planen: Klinikausflug", "prompt": "Planen Sie mit Kollegen einen Ausflug für die ganze Abteilung.", "instructions": "Diskutieren Sie Ziele, Termine und Aktivitäten. Einigen Sie sich.", "prepTime": 90, "talkTime": 150, "tips": "Machen Sie Vorschläge, fragen Sie nach Meinungen, finden Sie einen Kompromiss.", "usefulPhrases": ["Ich schlage vor, dass ...", "Was hältst du von ...?", "Eine gute Alternative wäre ...", "Sind wir uns einig, dass ...?"]},
-    {"id": "B1_speak_6", "title": "Präsentation: Meine Stadt", "prompt": "Stellen Sie Ihre Heimatstadt vor.", "instructions": "Sprechen Sie über Lage, Sehenswürdigkeiten, was man dort machen kann.", "prepTime": 90, "talkTime": 120, "tips": "Meine Stadt heißt ... Sie liegt in ...", "usefulPhrases": ["Meine Stadt heißt ... und liegt in ...", "Besonders bekannt ist ...", "Man kann dort ...", "Was ich an meiner Stadt mag, ist ..."]},
-    {"id": "B1_speak_7", "title": "Diskussion: Erfahrungen als Arzt", "prompt": "Tauschen Sie sich mit einem Kollegen über Ihre ersten Erfahrungen als Arzt aus.", "instructions": "Erzählen Sie von Ihren Erfahrungen, fragen Sie den Kollegen.", "prepTime": 60, "talkTime": 120, "tips": "Meine ersten Wochen als Arzt waren ...", "usefulPhrases": ["Meine ersten Erfahrungen waren ...", "Besonders herausfordernd war ...", "Am meisten gelernt habe ich ...", "Wie waren deine Erfahrungen?"]},
-    {"id": "B1_speak_8", "title": "Eine Operation erklären", "prompt": "Erklären Sie einem Patienten eine geplante Knie-Operation.", "instructions": "Sagen Sie: Was passiert, wie lange es dauert, was danach kommt.", "prepTime": 90, "talkTime": 120, "tips": "Verwenden Sie einfache Worte. Der Patient soll es verstehen.", "usefulPhrases": ["Bei der Operation wird ...", "Der Eingriff dauert etwa ...", "Nach der Operation müssen Sie ...", "Haben Sie noch Fragen?"]},
-    {"id": "B1_speak_9", "title": "Pro und Contra: Stadtleben", "prompt": "Sprechen Sie 2 Minuten über Vor- und Nachteile vom Leben in der Stadt.", "instructions": "Nennen Sie mindestens 2 Vorteile und 2 Nachteile.", "prepTime": 60, "talkTime": 120, "tips": "Einerseits ... andererseits ...", "usefulPhrases": ["Ein Vorteil des Stadtlebens ist ...", "Ein Nachteil ist jedoch ...", "Im Vergleich dazu ...", " Ich persönlich bevorzuge ..., weil ..."]},
-    {"id": "B1_speak_10", "title": "Zukunftspläne", "prompt": "Erzählen Sie von Ihren Plänen für die nächsten 5 Jahre.", "instructions": "Sprechen Sie über Beruf, Weiterbildung und persönliche Ziele.", "prepTime": 60, "talkTime": 120, "tips": "In fünf Jahren möchte ich ...", "usefulPhrases": ["In fünf Jahren möchte ich ...", "Mein Ziel ist es, ...", "Um das zu erreichen, muss ich ...", "Ich hoffe, dass ..."]}
+    {
+      "id": "B1_speak_1",
+      "title": "Präsentation: Mein Weg zur Medizin",
+      "prompt": "Erzählen Sie, warum Sie Arzt geworden sind.",
+      "instructions": "Sprechen Sie 2 Minuten über Ihre Motivation und Ihren Werdegang.",
+      "prepTime": 90,
+      "talkTime": 120,
+      "tips": "Struktur: Einleitung - warum Medizin - Ihre Erfahrungen - Zukunftspläne.",
+      "usefulPhrases": [
+        "Schon seit meiner Kindheit wollte ich ..., weil ...",
+        "Während meines Studiums habe ich ...",
+        "Besonders interessiert mich ...",
+        "In Zukunft möchte ich ..."
+      ]
+    },
+    {
+      "id": "B1_speak_2",
+      "title": "Umfrage: Gesund leben",
+      "prompt": "Diskutieren Sie mit einem Partner: Was bedeutet gesund leben?",
+      "instructions": "Tauschen Sie Ideen aus, stimmen Sie zu oder widersprechen Sie.",
+      "prepTime": 60,
+      "talkTime": 120,
+      "tips": "Nennen Sie: Ernährung, Bewegung, Schlaf. Fragen Sie den Partner.",
+      "usefulPhrases": [
+        "Was bedeutet für dich gesund leben?",
+        "Ich finde, dass ... wichtig ist.",
+        "Da stimme ich dir zu.",
+        "Das sehe ich anders, weil ..."
+      ]
+    },
+    {
+      "id": "B1_speak_3",
+      "title": "Beschwerde im Hotel",
+      "prompt": "Sie haben ein Problem im Hotel. Beschweren Sie sich an der Rezeption.",
+      "instructions": "Nennen Sie das Problem, sagen Sie, was Sie erwarten.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Seien Sie höflich aber bestimmt. Nennen Sie: Zimmernummer, Problem, Wunsch.",
+      "usefulPhrases": [
+        "Guten Tag, ich bin im Zimmer ...",
+        "Leider funktioniert ... nicht.",
+        "Können Sie bitte ...?",
+        "Ich erwarte, dass ..."
+      ]
+    },
+    {
+      "id": "B1_speak_4",
+      "title": "Einen Kurs empfehlen",
+      "prompt": "Ihr Freund möchte einen Deutschkurs machen. Empfehlen Sie ihm einen.",
+      "instructions": "Erklären Sie Ihre Empfehlung mit Gründen.",
+      "prepTime": 60,
+      "talkTime": 90,
+      "tips": "Ich empfehle dir Kurs X, weil ...",
+      "usefulPhrases": [
+        "Ich empfehle dir ..., weil ...",
+        "Ein Vorteil ist, dass ...",
+        "Außerdem ...",
+        "Im Vergleich zu ... ist dieser Kurs ..."
+      ]
+    },
+    {
+      "id": "B1_speak_5",
+      "title": "Gemeinsam planen: Klinikausflug",
+      "prompt": "Planen Sie mit Kollegen einen Ausflug für die ganze Abteilung.",
+      "instructions": "Diskutieren Sie Ziele, Termine und Aktivitäten. Einigen Sie sich.",
+      "prepTime": 90,
+      "talkTime": 150,
+      "tips": "Machen Sie Vorschläge, fragen Sie nach Meinungen, finden Sie einen Kompromiss.",
+      "usefulPhrases": [
+        "Ich schlage vor, dass ...",
+        "Was hältst du von ...?",
+        "Eine gute Alternative wäre ...",
+        "Sind wir uns einig, dass ...?"
+      ]
+    },
+    {
+      "id": "B1_speak_6",
+      "title": "Präsentation: Meine Stadt",
+      "prompt": "Stellen Sie Ihre Heimatstadt vor.",
+      "instructions": "Sprechen Sie über Lage, Sehenswürdigkeiten, was man dort machen kann.",
+      "prepTime": 90,
+      "talkTime": 120,
+      "tips": "Meine Stadt heißt ... Sie liegt in ...",
+      "usefulPhrases": [
+        "Meine Stadt heißt ... und liegt in ...",
+        "Besonders bekannt ist ...",
+        "Man kann dort ...",
+        "Was ich an meiner Stadt mag, ist ..."
+      ]
+    },
+    {
+      "id": "B1_speak_7",
+      "title": "Diskussion: Erfahrungen als Arzt",
+      "prompt": "Tauschen Sie sich mit einem Kollegen über Ihre ersten Erfahrungen als Arzt aus.",
+      "instructions": "Erzählen Sie von Ihren Erfahrungen, fragen Sie den Kollegen.",
+      "prepTime": 60,
+      "talkTime": 120,
+      "tips": "Meine ersten Wochen als Arzt waren ...",
+      "usefulPhrases": [
+        "Meine ersten Erfahrungen waren ...",
+        "Besonders herausfordernd war ...",
+        "Am meisten gelernt habe ich ...",
+        "Wie waren deine Erfahrungen?"
+      ]
+    },
+    {
+      "id": "B1_speak_8",
+      "title": "Eine Operation erklären",
+      "prompt": "Erklären Sie einem Patienten eine geplante Knie-Operation.",
+      "instructions": "Sagen Sie: Was passiert, wie lange es dauert, was danach kommt.",
+      "prepTime": 90,
+      "talkTime": 120,
+      "tips": "Verwenden Sie einfache Worte. Der Patient soll es verstehen.",
+      "usefulPhrases": [
+        "Bei der Operation wird ...",
+        "Der Eingriff dauert etwa ...",
+        "Nach der Operation müssen Sie ...",
+        "Haben Sie noch Fragen?"
+      ]
+    },
+    {
+      "id": "B1_speak_9",
+      "title": "Pro und Contra: Stadtleben",
+      "prompt": "Sprechen Sie 2 Minuten über Vor- und Nachteile vom Leben in der Stadt.",
+      "instructions": "Nennen Sie mindestens 2 Vorteile und 2 Nachteile.",
+      "prepTime": 60,
+      "talkTime": 120,
+      "tips": "Einerseits ... andererseits ...",
+      "usefulPhrases": [
+        "Ein Vorteil des Stadtlebens ist ...",
+        "Ein Nachteil ist jedoch ...",
+        "Im Vergleich dazu ...",
+        " Ich persönlich bevorzuge ..., weil ..."
+      ]
+    },
+    {
+      "id": "B1_speak_10",
+      "title": "Zukunftspläne",
+      "prompt": "Erzählen Sie von Ihren Plänen für die nächsten 5 Jahre.",
+      "instructions": "Sprechen Sie über Beruf, Weiterbildung und persönliche Ziele.",
+      "prepTime": 60,
+      "talkTime": 120,
+      "tips": "In fünf Jahren möchte ich ...",
+      "usefulPhrases": [
+        "In fünf Jahren möchte ich ...",
+        "Mein Ziel ist es, ...",
+        "Um das zu erreichen, muss ich ...",
+        "Ich hoffe, dass ..."
+      ]
+    }
   ],
   "B2": [
-    {"id": "B2_speak_1", "title": "Vortrag: Patientensicherheit", "prompt": "Halten Sie einen kurzen Vortrag über Patientensicherheit im Krankenhaus.", "instructions": "Nennen Sie Maßnahmen, Herausforderungen und Ihre Meinung.", "prepTime": 120, "talkTime": 180, "tips": "Struktur: Einleitung - Hauptteil - Schlussfolgerung.", "usefulPhrases": ["Patientensicherheit ist ein zentrales Thema ...", "Zu den wichtigsten Maßnahmen gehören ...", "Eine Herausforderung ist ...", "Zusammenfassend lässt sich sagen ..."]},
-    {"id": "B2_speak_2", "title": "Diskussion: Work-Life-Balance für Ärzte", "prompt": "Diskutieren Sie: Ist eine gute Work-Life-Balance für Ärzte überhaupt möglich?", "instructions": "Argumentieren Sie, hören Sie zu, reagieren Sie.", "prepTime": 90, "talkTime": 180, "tips": "Das ist ein wichtiges Thema. Meiner Meinung nach ...", "usefulPhrases": ["Meiner Ansicht nach ...", "Das mag stimmen, aber ...", "Ein Gegenargument ist ...", "Wie siehst du das?"]},
-    {"id": "B2_speak_3", "title": "Debatte: Gesundheitsreform", "prompt": "Debattieren Sie: Sollte Deutschland mehr Geld ins Gesundheitssystem investieren?", "instructions": "Vertreten Sie Ihre Position klar, widerlegen Sie Gegenargumente.", "prepTime": 120, "talkTime": 180, "tips": "Ich vertrete die Position, dass ...", "usefulPhrases": ["Ich bin der Überzeugung, dass ...", "Dagegen spricht, dass ...", "Ein starkes Argument für ... ist ...", "Das kann ich nicht nachvollziehen, weil ..."]},
-    {"id": "B2_speak_4", "title": "Präsentation: Neue OP-Methode", "prompt": "Stellen Sie Ihrem Team eine neue minimalinvasive OP-Methode vor.", "instructions": "Beschreiben Sie die Methode, Vorteile, Ergebnisse.", "prepTime": 120, "talkTime": 180, "tips": "Ich möchte Ihnen heute eine neue Methode vorstellen.", "usefulPhrases": ["Ich möchte Ihnen heute ... vorstellen.", "Bei dieser Methode handelt es sich um ...", "Die Vorteile liegen in ...", "Erste Ergebnisse zeigen ..."]},
-    {"id": "B2_speak_5", "title": "Diskussion: Klinik vs. Praxis", "prompt": "Diskutieren Sie mit einem Kollegen: Arbeit im Krankenhaus oder eigene Praxis?", "instructions": "Vergleichen Sie Vor- und Nachteile beider Optionen.", "prepTime": 90, "talkTime": 180, "tips": "Im Krankenhaus hat man ... In der Praxis ist ...", "usefulPhrases": ["Im Krankenhaus arbeitet man eher im Team.", "In der eigenen Praxis hat man mehr Freiheit.", "Was spricht deiner Meinung nach für ...?", "Ich tendiere zu ..."]},
-    {"id": "B2_speak_6", "title": "Fachvortrag: Osteoporose", "prompt": "Halten Sie einen kurzen Vortrag über Osteoporose.", "instructions": "Sprechen Sie über Definition, Risikofaktoren, Diagnostik, Therapie.", "prepTime": 120, "talkTime": 180, "tips": "Osteoporose ist eine systemische Skeletterkrankung.", "usefulPhrases": ["Osteoporose ist definiert als ...", "Zu den Risikofaktoren zählen ...", "Die Diagnostik erfolgt mittels ...", "Therapeutisch kommen ... zum Einsatz."]},
-    {"id": "B2_speak_7", "title": "Diskussion: Digitalisierung", "prompt": "Diskutieren Sie: Verbessert die Digitalisierung die Arzt-Patienten-Beziehung?", "instructions": "Nennen Sie Vor- und Nachteile der Digitalisierung.", "prepTime": 90, "talkTime": 180, "tips": "Einerseits ermöglicht die Digitalisierung ...", "usefulPhrases": ["Durch die Digitalisierung können wir ...", "Bedenklich finde ich jedoch ...", "Ein Beispiel: ...", "Letztlich kommt es auf die Umsetzung an."]},
-    {"id": "B2_speak_8", "title": "Fallvorstellung", "prompt": "Stellen Sie einen fiktiven orthopädischen Fall vor.", "instructions": "Beschreiben Sie: Patient, Symptome, Diagnostik, Therapie.", "prepTime": 120, "talkTime": 180, "tips": "Es handelt sich um einen 45-jährigen Patienten mit ...", "usefulPhrases": ["Es handelt sich um ...", "Der Patient klagt über ...", "In der Bildgebung zeigt sich ...", "Wir entschieden uns für ..."]},
-    {"id": "B2_speak_9", "title": "Vortrag: Nachhaltigkeit", "prompt": "Halten Sie einen Vortrag über Nachhaltigkeit in der Chirurgie.", "instructions": "Nennen Sie Problemfelder, Lösungsansätze.", "prepTime": 120, "talkTime": 180, "tips": "Die Chirurgie produziert große Mengen Müll.", "usefulPhrases": ["Ein großes Problem ist ...", "Ein Lösungsansatz wäre ...", "Studien zeigen, dass ...", "Wir sollten ..."]},
-    {"id": "B2_speak_10", "title": "Diskussion: Teamarbeit", "prompt": "Diskutieren Sie: Was macht ein gutes OP-Team aus?", "instructions": "Nennen Sie Eigenschaften, Beispiele, Ihre Erfahrungen.", "prepTime": 90, "talkTime": 180, "tips": "In einem guten Team ist Kommunikation entscheidend.", "usefulPhrases": ["Kommunikation ist der Schlüssel.", "Jeder im Team hat eine klare Rolle.", "Vertrauen ist wichtig, weil ...", "Aus meiner Erfahrung ..."]}
+    {
+      "id": "B2_speak_1",
+      "title": "Vortrag: Patientensicherheit",
+      "prompt": "Halten Sie einen kurzen Vortrag über Patientensicherheit im Krankenhaus.",
+      "instructions": "Nennen Sie Maßnahmen, Herausforderungen und Ihre Meinung.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Struktur: Einleitung - Hauptteil - Schlussfolgerung.",
+      "usefulPhrases": [
+        "Patientensicherheit ist ein zentrales Thema ...",
+        "Zu den wichtigsten Maßnahmen gehören ...",
+        "Eine Herausforderung ist ...",
+        "Zusammenfassend lässt sich sagen ..."
+      ]
+    },
+    {
+      "id": "B2_speak_2",
+      "title": "Diskussion: Work-Life-Balance für Ärzte",
+      "prompt": "Diskutieren Sie: Ist eine gute Work-Life-Balance für Ärzte überhaupt möglich?",
+      "instructions": "Argumentieren Sie, hören Sie zu, reagieren Sie.",
+      "prepTime": 90,
+      "talkTime": 180,
+      "tips": "Das ist ein wichtiges Thema. Meiner Meinung nach ...",
+      "usefulPhrases": [
+        "Meiner Ansicht nach ...",
+        "Das mag stimmen, aber ...",
+        "Ein Gegenargument ist ...",
+        "Wie siehst du das?"
+      ]
+    },
+    {
+      "id": "B2_speak_3",
+      "title": "Debatte: Gesundheitsreform",
+      "prompt": "Debattieren Sie: Sollte Deutschland mehr Geld ins Gesundheitssystem investieren?",
+      "instructions": "Vertreten Sie Ihre Position klar, widerlegen Sie Gegenargumente.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Ich vertrete die Position, dass ...",
+      "usefulPhrases": [
+        "Ich bin der Überzeugung, dass ...",
+        "Dagegen spricht, dass ...",
+        "Ein starkes Argument für ... ist ...",
+        "Das kann ich nicht nachvollziehen, weil ..."
+      ]
+    },
+    {
+      "id": "B2_speak_4",
+      "title": "Präsentation: Neue OP-Methode",
+      "prompt": "Stellen Sie Ihrem Team eine neue minimalinvasive OP-Methode vor.",
+      "instructions": "Beschreiben Sie die Methode, Vorteile, Ergebnisse.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Ich möchte Ihnen heute eine neue Methode vorstellen.",
+      "usefulPhrases": [
+        "Ich möchte Ihnen heute ... vorstellen.",
+        "Bei dieser Methode handelt es sich um ...",
+        "Die Vorteile liegen in ...",
+        "Erste Ergebnisse zeigen ..."
+      ]
+    },
+    {
+      "id": "B2_speak_5",
+      "title": "Diskussion: Klinik vs. Praxis",
+      "prompt": "Diskutieren Sie mit einem Kollegen: Arbeit im Krankenhaus oder eigene Praxis?",
+      "instructions": "Vergleichen Sie Vor- und Nachteile beider Optionen.",
+      "prepTime": 90,
+      "talkTime": 180,
+      "tips": "Im Krankenhaus hat man ... In der Praxis ist ...",
+      "usefulPhrases": [
+        "Im Krankenhaus arbeitet man eher im Team.",
+        "In der eigenen Praxis hat man mehr Freiheit.",
+        "Was spricht deiner Meinung nach für ...?",
+        "Ich tendiere zu ..."
+      ]
+    },
+    {
+      "id": "B2_speak_6",
+      "title": "Fachvortrag: Osteoporose",
+      "prompt": "Halten Sie einen kurzen Vortrag über Osteoporose.",
+      "instructions": "Sprechen Sie über Definition, Risikofaktoren, Diagnostik, Therapie.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Osteoporose ist eine systemische Skeletterkrankung.",
+      "usefulPhrases": [
+        "Osteoporose ist definiert als ...",
+        "Zu den Risikofaktoren zählen ...",
+        "Die Diagnostik erfolgt mittels ...",
+        "Therapeutisch kommen ... zum Einsatz."
+      ]
+    },
+    {
+      "id": "B2_speak_7",
+      "title": "Diskussion: Digitalisierung",
+      "prompt": "Diskutieren Sie: Verbessert die Digitalisierung die Arzt-Patienten-Beziehung?",
+      "instructions": "Nennen Sie Vor- und Nachteile der Digitalisierung.",
+      "prepTime": 90,
+      "talkTime": 180,
+      "tips": "Einerseits ermöglicht die Digitalisierung ...",
+      "usefulPhrases": [
+        "Durch die Digitalisierung können wir ...",
+        "Bedenklich finde ich jedoch ...",
+        "Ein Beispiel: ...",
+        "Letztlich kommt es auf die Umsetzung an."
+      ]
+    },
+    {
+      "id": "B2_speak_8",
+      "title": "Fallvorstellung",
+      "prompt": "Stellen Sie einen fiktiven orthopädischen Fall vor.",
+      "instructions": "Beschreiben Sie: Patient, Symptome, Diagnostik, Therapie.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Es handelt sich um einen 45-jährigen Patienten mit ...",
+      "usefulPhrases": [
+        "Es handelt sich um ...",
+        "Der Patient klagt über ...",
+        "In der Bildgebung zeigt sich ...",
+        "Wir entschieden uns für ..."
+      ]
+    },
+    {
+      "id": "B2_speak_9",
+      "title": "Vortrag: Nachhaltigkeit",
+      "prompt": "Halten Sie einen Vortrag über Nachhaltigkeit in der Chirurgie.",
+      "instructions": "Nennen Sie Problemfelder, Lösungsansätze.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Die Chirurgie produziert große Mengen Müll.",
+      "usefulPhrases": [
+        "Ein großes Problem ist ...",
+        "Ein Lösungsansatz wäre ...",
+        "Studien zeigen, dass ...",
+        "Wir sollten ..."
+      ]
+    },
+    {
+      "id": "B2_speak_10",
+      "title": "Diskussion: Teamarbeit",
+      "prompt": "Diskutieren Sie: Was macht ein gutes OP-Team aus?",
+      "instructions": "Nennen Sie Eigenschaften, Beispiele, Ihre Erfahrungen.",
+      "prepTime": 90,
+      "talkTime": 180,
+      "tips": "In einem guten Team ist Kommunikation entscheidend.",
+      "usefulPhrases": [
+        "Kommunikation ist der Schlüssel.",
+        "Jeder im Team hat eine klare Rolle.",
+        "Vertrauen ist wichtig, weil ...",
+        "Aus meiner Erfahrung ..."
+      ]
+    }
   ],
   "C1": [
-    {"id": "C1_speak_1", "title": "Vortrag: Präzisionsmedizin", "prompt": "Halten Sie einen Vortrag über die Zukunft der Präzisionsmedizin in der Orthopädie.", "instructions": "Strukturieren Sie: Einleitung, aktueller Stand, Perspektiven, kritische Würdigung.", "prepTime": 180, "talkTime": 240, "tips": "Beginnen Sie mit einer provokativen These. Nutzen Sie Fachvokabular.", "usefulPhrases": ["Die Präzisionsmedizin revolutioniert derzeit ...", "Im Gegensatz zur konventionellen Medizin ...", "Hervorzuheben ist ...", "Kritisch anzumerken bleibt jedoch ..."]},
-    {"id": "C1_speak_2", "title": "Diskussion: Ethische Fragen der Gentechnik", "prompt": "Diskutieren Sie: Wo liegen die ethischen Grenzen der Gentechnik in der Medizin?", "instructions": "Entwickeln Sie eine differenzierte Position, gehen Sie auf Gegenargumente ein.", "prepTime": 180, "talkTime": 240, "tips": "Die Gentechnik wirft grundlegende ethische Fragen auf.", "usefulPhrases": ["Einerseits bietet die Gentechnik enorme Chancen ...", "Andererseits dürfen wir die Risiken nicht ignorieren.", "Aus ethischer Perspektive stellt sich die Frage ...", "Mir scheint, dass ..."]},
-    {"id": "C1_speak_3", "title": "Vortrag: Gesundheitsökonomie", "prompt": "Halten Sie einen Vortrag über die Kostenexplosion im Gesundheitswesen.", "instructions": "Analysieren Sie Ursachen, nennen Sie Lösungsansätze, bewerten Sie.", "prepTime": 180, "talkTime": 240, "tips": "Struktur: Problem - Ursachen - Lösungen - Ausblick.", "usefulPhrases": ["Die Kosten im Gesundheitswesen steigen kontinuierlich.", "Ursächlich hierfür sind ...", "Ein vielversprechender Ansatz ist ...", "Abschließend lässt sich festhalten ..."]},
-    {"id": "C1_speak_4", "title": "Diskussion: Ärztliche Schweigepflicht", "prompt": "Diskutieren Sie: Wo endet die ärztliche Schweigepflicht bei Gefährdung Dritter?", "instructions": "Wägen Sie ab zwischen Schweigepflicht und Schutz Dritter.", "prepTime": 180, "talkTime": 240, "tips": "Die ärztliche Schweigepflicht ist ein hohes Gut.", "usefulPhrases": ["Grundsätzlich gilt die ärztliche Schweigepflicht.", "In Ausnahmefällen kann sie jedoch aufgehoben werden.", "Das Spannungsfeld besteht zwischen ...", "Eine Abwägung muss ..."]},
-    {"id": "C1_speak_5", "title": "Vortrag: Fehlerkultur in der Medizin", "prompt": "Halten Sie einen Vortrag über Fehlerkultur und Patientensicherheit.", "instructions": "Analysieren Sie: Bedeutung, Barrieren, Verbesserungsvorschläge.", "prepTime": 180, "talkTime": 240, "tips": "Eine offene Fehlerkultur ist entscheidend.", "usefulPhrases": ["Medizinische Fehler sind die dritthäufigste Todesursache.", "Eine offene Fehlerkultur bedeutet ...", "Hemmnisse sind ...", "Zur Verbesserung schlage ich vor ..."]},
-    {"id": "C1_speak_6", "title": "Selbstständige Präsentation wählen", "prompt": "Wählen Sie ein selbstgewähltes Thema aus der Medizin. Präsentieren Sie es.", "instructions": "Strukturieren Sie frei. Nutzen Sie Fachtermini. Diskutieren Sie im Anschluss.", "prepTime": 180, "talkTime": 240, "tips": "Melden Sie Ihr Thema. Bleiben Sie sachlich.", "usefulPhrases": ["Mein heutiges Thema ist ...", "Ich habe mich für dieses Thema entschieden, weil ...", "Dazu möchte ich drei Aspekte beleuchten.", "Vielen Dank für Ihre Aufmerksamkeit."]},
-    {"id": "C1_speak_7", "title": "Debatte: Import von Ärzten", "prompt": "Debattieren Sie: Sollte Deutschland aktiv Ärzte aus dem Ausland anwerben?", "instructions": "Vertreten Sie Ihre Position. Reagieren Sie auf Gegenargumente.", "prepTime": 180, "talkTime": 240, "tips": "Ich befürworte/lehne ab, weil ...", "usefulPhrases": ["Die Anwerbung ausländischer Ärzte ist notwendig, weil ...", "Dem ist entgegenzuhalten, dass ...", "Ein differenzierter Blick zeigt ...", "Letztlich kommt es auf die Rahmenbedingungen an."]},
-    {"id": "C1_speak_8", "title": "Diskussion: Palliativmedizin", "prompt": "Diskutieren Sie: Ist Palliativmedizin eine vernachlässigte Disziplin?", "instructions": "Nehmen Sie Stellung nennen Sie Entwicklung und Herausforderungen.", "prepTime": 180, "talkTime": 240, "tips": "Die Palliativmedizin hat in den letzten Jahren an Bedeutung gewonnen.", "usefulPhrases": ["Die Palliativmedizin hat sich zu einer eigenständigen Disziplin entwickelt.", "Leider wird sie noch immer ...", "Dabei ist sie für die Patientenversorgung ...", "Ich plädiere für ..."]},
-    {"id": "C1_speak_9", "title": "Vortrag: Interkulturelle Kompetenz", "prompt": "Halten Sie einen Vortrag über interkulturelle Kompetenz in der Arzt-Patienten-Beziehung.", "instructions": "Erklären Sie Bedeutung, Herausforderungen, Beispiele.", "prepTime": 180, "talkTime": 240, "tips": "In einer multikulturellen Gesellschaft ist interkulturelle Kompetenz unverzichtbar.", "usefulPhrases": ["Interkulturelle Kompetenz bedeutet ...", "Eine zentrale Herausforderung ist ...", "Ein Beispiel aus meiner Praxis ...", "Um dies zu erreichen, sollten wir ..."]},
-    {"id": "C1_speak_10", "title": "Übergabe eines Patienten (Arztbrief)", "prompt": "Stellen Sie einen orthopädischen Patienten im Rahmen einer Schichtübergabe vor.", "instructions": "Präsentieren Sie: Diagnose, bisherige Behandlung, weiteres Vorgehen.", "prepTime": 120, "talkTime": 180, "tips": "Patient XYZ, 55 Jahre, Zustand nach Hüft-TEP. Wichtig zu wissen ...", "usefulPhrases": ["Ich übergebe Herrn/Frau ..., geboren am ...", "Aufgenommen wurde der Patient wegen ...", "Bisher durchgeführt wurden ...", "Im weiteren Verlauf ist geplant ..."]}
+    {
+      "id": "C1_speak_1",
+      "title": "Vortrag: Präzisionsmedizin",
+      "prompt": "Halten Sie einen Vortrag über die Zukunft der Präzisionsmedizin in der Orthopädie.",
+      "instructions": "Strukturieren Sie: Einleitung, aktueller Stand, Perspektiven, kritische Würdigung.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Beginnen Sie mit einer provokativen These. Nutzen Sie Fachvokabular.",
+      "usefulPhrases": [
+        "Die Präzisionsmedizin revolutioniert derzeit ...",
+        "Im Gegensatz zur konventionellen Medizin ...",
+        "Hervorzuheben ist ...",
+        "Kritisch anzumerken bleibt jedoch ..."
+      ]
+    },
+    {
+      "id": "C1_speak_2",
+      "title": "Diskussion: Ethische Fragen der Gentechnik",
+      "prompt": "Diskutieren Sie: Wo liegen die ethischen Grenzen der Gentechnik in der Medizin?",
+      "instructions": "Entwickeln Sie eine differenzierte Position, gehen Sie auf Gegenargumente ein.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Die Gentechnik wirft grundlegende ethische Fragen auf.",
+      "usefulPhrases": [
+        "Einerseits bietet die Gentechnik enorme Chancen ...",
+        "Andererseits dürfen wir die Risiken nicht ignorieren.",
+        "Aus ethischer Perspektive stellt sich die Frage ...",
+        "Mir scheint, dass ..."
+      ]
+    },
+    {
+      "id": "C1_speak_3",
+      "title": "Vortrag: Gesundheitsökonomie",
+      "prompt": "Halten Sie einen Vortrag über die Kostenexplosion im Gesundheitswesen.",
+      "instructions": "Analysieren Sie Ursachen, nennen Sie Lösungsansätze, bewerten Sie.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Struktur: Problem - Ursachen - Lösungen - Ausblick.",
+      "usefulPhrases": [
+        "Die Kosten im Gesundheitswesen steigen kontinuierlich.",
+        "Ursächlich hierfür sind ...",
+        "Ein vielversprechender Ansatz ist ...",
+        "Abschließend lässt sich festhalten ..."
+      ]
+    },
+    {
+      "id": "C1_speak_4",
+      "title": "Diskussion: Ärztliche Schweigepflicht",
+      "prompt": "Diskutieren Sie: Wo endet die ärztliche Schweigepflicht bei Gefährdung Dritter?",
+      "instructions": "Wägen Sie ab zwischen Schweigepflicht und Schutz Dritter.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Die ärztliche Schweigepflicht ist ein hohes Gut.",
+      "usefulPhrases": [
+        "Grundsätzlich gilt die ärztliche Schweigepflicht.",
+        "In Ausnahmefällen kann sie jedoch aufgehoben werden.",
+        "Das Spannungsfeld besteht zwischen ...",
+        "Eine Abwägung muss ..."
+      ]
+    },
+    {
+      "id": "C1_speak_5",
+      "title": "Vortrag: Fehlerkultur in der Medizin",
+      "prompt": "Halten Sie einen Vortrag über Fehlerkultur und Patientensicherheit.",
+      "instructions": "Analysieren Sie: Bedeutung, Barrieren, Verbesserungsvorschläge.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Eine offene Fehlerkultur ist entscheidend.",
+      "usefulPhrases": [
+        "Medizinische Fehler sind die dritthäufigste Todesursache.",
+        "Eine offene Fehlerkultur bedeutet ...",
+        "Hemmnisse sind ...",
+        "Zur Verbesserung schlage ich vor ..."
+      ]
+    },
+    {
+      "id": "C1_speak_6",
+      "title": "Selbstständige Präsentation wählen",
+      "prompt": "Wählen Sie ein selbstgewähltes Thema aus der Medizin. Präsentieren Sie es.",
+      "instructions": "Strukturieren Sie frei. Nutzen Sie Fachtermini. Diskutieren Sie im Anschluss.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Melden Sie Ihr Thema. Bleiben Sie sachlich.",
+      "usefulPhrases": [
+        "Mein heutiges Thema ist ...",
+        "Ich habe mich für dieses Thema entschieden, weil ...",
+        "Dazu möchte ich drei Aspekte beleuchten.",
+        "Vielen Dank für Ihre Aufmerksamkeit."
+      ]
+    },
+    {
+      "id": "C1_speak_7",
+      "title": "Debatte: Import von Ärzten",
+      "prompt": "Debattieren Sie: Sollte Deutschland aktiv Ärzte aus dem Ausland anwerben?",
+      "instructions": "Vertreten Sie Ihre Position. Reagieren Sie auf Gegenargumente.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Ich befürworte/lehne ab, weil ...",
+      "usefulPhrases": [
+        "Die Anwerbung ausländischer Ärzte ist notwendig, weil ...",
+        "Dem ist entgegenzuhalten, dass ...",
+        "Ein differenzierter Blick zeigt ...",
+        "Letztlich kommt es auf die Rahmenbedingungen an."
+      ]
+    },
+    {
+      "id": "C1_speak_8",
+      "title": "Diskussion: Palliativmedizin",
+      "prompt": "Diskutieren Sie: Ist Palliativmedizin eine vernachlässigte Disziplin?",
+      "instructions": "Nehmen Sie Stellung nennen Sie Entwicklung und Herausforderungen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Die Palliativmedizin hat in den letzten Jahren an Bedeutung gewonnen.",
+      "usefulPhrases": [
+        "Die Palliativmedizin hat sich zu einer eigenständigen Disziplin entwickelt.",
+        "Leider wird sie noch immer ...",
+        "Dabei ist sie für die Patientenversorgung ...",
+        "Ich plädiere für ..."
+      ]
+    },
+    {
+      "id": "C1_speak_9",
+      "title": "Vortrag: Interkulturelle Kompetenz",
+      "prompt": "Halten Sie einen Vortrag über interkulturelle Kompetenz in der Arzt-Patienten-Beziehung.",
+      "instructions": "Erklären Sie Bedeutung, Herausforderungen, Beispiele.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "In einer multikulturellen Gesellschaft ist interkulturelle Kompetenz unverzichtbar.",
+      "usefulPhrases": [
+        "Interkulturelle Kompetenz bedeutet ...",
+        "Eine zentrale Herausforderung ist ...",
+        "Ein Beispiel aus meiner Praxis ...",
+        "Um dies zu erreichen, sollten wir ..."
+      ]
+    },
+    {
+      "id": "C1_speak_10",
+      "title": "Übergabe eines Patienten (Arztbrief)",
+      "prompt": "Stellen Sie einen orthopädischen Patienten im Rahmen einer Schichtübergabe vor.",
+      "instructions": "Präsentieren Sie: Diagnose, bisherige Behandlung, weiteres Vorgehen.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "Patient XYZ, 55 Jahre, Zustand nach Hüft-TEP. Wichtig zu wissen ...",
+      "usefulPhrases": [
+        "Ich übergebe Herrn/Frau ..., geboren am ...",
+        "Aufgenommen wurde der Patient wegen ...",
+        "Bisher durchgeführt wurden ...",
+        "Im weiteren Verlauf ist geplant ..."
+      ]
+    }
   ]
 }

@@ -6,28 +6,1710 @@
       "title": "Telefonansage - Sprechstunde",
       "script": "Willkommen bei der Praxis Dr. Meier. Unsere Sprechzeiten sind: Montag bis Freitag von 8 bis 12 Uhr und von 14 bis 17 Uhr. Mittwochnachmittag ist geschlossen. Für Notfälle rufen Sie bitte 112 an.",
       "questions": [
-        {"id": "lq1", "type": "mcq", "question": "Wann hat die Praxis mittags Pause?", "options": ["Von 12 bis 13 Uhr", "Von 12 bis 14 Uhr", "Von 13 bis 14 Uhr", "Keine Pause"], "answer": "Von 12 bis 14 Uhr"},
-        {"id": "lq2", "type": "true-false", "question": "Am Mittwochnachmittag ist die Praxis geschlossen.", "answer": "true"},
-        {"id": "lq3", "type": "mcq", "question": "Welche Nummer soll man bei Notfällen anrufen?", "options": ["110", "112", "114", "116 117"], "answer": "112"}
-      ]
+        {
+          "id": "lq1",
+          "type": "mcq",
+          "question": "Wann hat die Praxis mittags Pause?",
+          "options": [
+            "Von 12 bis 13 Uhr",
+            "Von 12 bis 14 Uhr",
+            "Von 13 bis 14 Uhr",
+            "Keine Pause"
+          ],
+          "answer": "Von 12 bis 14 Uhr"
+        },
+        {
+          "id": "lq2",
+          "type": "true-false",
+          "question": "Am Mittwochnachmittag ist die Praxis geschlossen.",
+          "answer": "true"
+        },
+        {
+          "id": "lq3",
+          "type": "mcq",
+          "question": "Welche Nummer soll man bei Notfällen anrufen?",
+          "options": [
+            "110",
+            "112",
+            "114",
+            "116 117"
+          ],
+          "answer": "112"
+        }
+      ],
+      "lessonId": "A1_lesson_16",
+      "level": "A1"
     },
     {
       "id": "A1_listen_2",
       "title": "Vorstellung - Patient",
-      "script": "Guten Tag. Ich heiße Ahmed Hassan. Ich bin 28 Jahre alt und komme aus dem Sudan. Ich wohne in Frankfurt. Ich spreche ein bisschen Deutsch und arbeite in einem Restaurant.",
+      "script": "Guten Tag. Ich heiÃŸe Ahmed Hassan. Ich bin 28 Jahre alt und komme aus dem Sudan. Ich wohne in Frankfurt. Ich spreche ein bisschen Deutsch und arbeite in einem Restaurant.",
       "questions": [
-        {"id": "lq4", "type": "mcq", "question": "Wie alt ist Ahmed?", "options": ["25", "28", "30", "32"], "answer": "28"},
-        {"id": "lq5", "type": "mcq", "question": "Wo arbeitet Ahmed?", "options": ["In einem Krankenhaus", "In einem Restaurant", "In einer Schule", "In einem Büro"], "answer": "In einem Restaurant"}
-      ]
+        {
+          "id": "lq4",
+          "type": "mcq",
+          "question": "Wie alt ist Ahmed?",
+          "options": [
+            "25",
+            "28",
+            "30",
+            "32"
+          ],
+          "answer": "28"
+        },
+        {
+          "id": "lq5",
+          "type": "mcq",
+          "question": "Wo arbeitet Ahmed?",
+          "options": [
+            "In einem Krankenhaus",
+            "In einem Restaurant",
+            "In einer Schule",
+            "In einem Büro"
+          ],
+          "answer": "In einem Restaurant"
+        }
+      ],
+      "lessonId": "A1_lesson_19",
+      "level": "A1"
     },
     {
       "id": "A1_listen_3",
       "title": "Anmeldung an der Rezeption",
       "script": "Guten Morgen. Ich habe einen Termin bei Dr. Müller um 10 Uhr. Mein Name ist Klara Schmidt. Ich bin zum ersten Mal hier. Ich habe Rückenschmerzen seit drei Tagen.",
       "questions": [
-        {"id": "lq6", "type": "true-false", "question": "Klara Schmidt war schon einmal in dieser Praxis.", "answer": "false", "explanation": "Sie sagt: 'Ich bin zum ersten Mal hier.'"},
-        {"id": "lq7", "type": "mcq", "question": "Seit wann hat Klara Rückenschmerzen?", "options": ["Seit einem Tag", "Seit drei Tagen", "Seit einer Woche", "Seit einem Monat"], "answer": "Seit drei Tagen"}
-      ]
+        {
+          "id": "lq6",
+          "type": "true-false",
+          "question": "Klara Schmidt war schon einmal in dieser Praxis.",
+          "answer": "false",
+          "explanation": "Sie sagt: 'Ich bin zum ersten Mal hier.'"
+        },
+        {
+          "id": "lq7",
+          "type": "mcq",
+          "question": "Seit wann hat Klara Rückenschmerzen?",
+          "options": [
+            "Seit einem Tag",
+            "Seit drei Tagen",
+            "Seit einer Woche",
+            "Seit einem Monat"
+          ],
+          "answer": "Seit drei Tagen"
+        }
+      ],
+      "lessonId": "A1_lesson_18",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_4",
+      "title": "Im Restaurant bestellen",
+      "script": "Kellner: Guten Abend. Moechten Sie bestellen? Gast: Ja, ich moechte bitte die Tagessuppe und dann ein Schnitzel mit Pommes. Kellner: Moechten Sie etwas trinken? Gast: Ein grosses Wasser, bitte. Kellner: Sehr gern. Kommt sofort.",
+      "questions": [
+        {
+          "id": "lq_A1_4_1",
+          "type": "mcq",
+          "question": "Was bestellt der Gast als Vorspeise?",
+          "options": [
+            "Einen Salat",
+            "Die Tagessuppe",
+            "Brot",
+            "Nichts"
+          ],
+          "answer": "Die Tagessuppe"
+        },
+        {
+          "id": "lq_A1_4_2",
+          "type": "true-false",
+          "question": "Der Gast bestellt ein kleines Wasser.",
+          "answer": "false",
+          "explanation": "Er bestellt ein grosses Wasser."
+        }
+      ],
+      "id": "A1_listen_4",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_5",
+      "title": "Nach dem Weg fragen",
+      "script": "Entschuldigung, koennen Sie mir helfen? Ich suche den Bahnhof. Gehen Sie hier geradeaus bis zur Ampel. Dann rechts. Nach 100 Metern sehen Sie den Bahnhof auf der linken Seite. Vielen Dank!",
+      "questions": [
+        {
+          "id": "lq_A1_5_1",
+          "type": "mcq",
+          "question": "Was sucht die Person?",
+          "options": [
+            "Das Krankenhaus",
+            "Den Bahnhof",
+            "Das Museum",
+            "Die Post"
+          ],
+          "answer": "Den Bahnhof"
+        },
+        {
+          "id": "lq_A1_5_2",
+          "type": "true-false",
+          "question": "Der Bahnhof ist nach 100 Metern auf der rechten Seite.",
+          "answer": "false",
+          "explanation": "Der Bahnhof ist auf der linken Seite."
+        }
+      ],
+      "id": "A1_listen_5",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_6",
+      "title": "Wecker und Termine",
+      "script": "Hallo, hier ist Ihre Terminerinnerung. Sie haben morgen um 9:30 Uhr einen Termin bei Dr. Mueller in der Praxis am Marktplatz. Bitte bringen Sie Ihre Versichertenkarte mit. Auf Wiederhoeren.",
+      "questions": [
+        {
+          "id": "lq_A1_6_1",
+          "type": "mcq",
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Um 8:30 Uhr",
+            "Um 9:00 Uhr",
+            "Um 9:30 Uhr",
+            "Um 10:00 Uhr"
+          ],
+          "answer": "Um 9:30 Uhr"
+        },
+        {
+          "id": "lq_A1_6_2",
+          "type": "mcq",
+          "question": "Was soll der Patient mitbringen?",
+          "options": [
+            "Ein Rezept",
+            "Die Versichertenkarte",
+            "Geld",
+            "Einen Ausweis"
+          ],
+          "answer": "Die Versichertenkarte"
+        }
+      ],
+      "id": "A1_listen_6",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_7",
+      "title": "Sprechstundenplan",
+      "script": "Sprechstunden Dr. Weber: Montag und Dienstag von 9 bis 12 Uhr und von 14 bis 17 Uhr. Mittwoch und Freitag von 9 bis 13 Uhr. Donnerstag ist keine Sprechstunde. Samstag und Sonntag geschlossen.",
+      "questions": [
+        {
+          "id": "lq_A1_7_1",
+          "type": "mcq",
+          "question": "Wann hat Dr. Weber montags Sprechstunde?",
+          "options": [
+            "Nur vormittags",
+            "Von 9 bis 12 und 14 bis 17 Uhr",
+            "Von 8 bis 16 Uhr",
+            "Ganztags"
+          ],
+          "answer": "Von 9 bis 12 und 14 bis 17 Uhr"
+        },
+        {
+          "id": "lq_A1_7_2",
+          "type": "true-false",
+          "question": "Am Donnerstag ist Sprechstunde.",
+          "answer": "false",
+          "explanation": "Donnerstag ist keine Sprechstunde."
+        }
+      ],
+      "id": "A1_listen_7",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_8",
+      "title": "Hobbys erfragen",
+      "script": "Therapeutin: Was machen Sie gern in Ihrer Freizeit? Patient: Ich spiele Fussball und gehe schwimmen. Therapeutin: Das ist gut fuer die Gesundheit. Wie oft machen Sie Sport? Patient: Zweimal pro Woche.",
+      "questions": [
+        {
+          "id": "lq_A1_8_1",
+          "type": "mcq",
+          "question": "Welche Hobbys hat der Patient?",
+          "options": [
+            "Lesen und Malen",
+            "Fussball und Schwimmen",
+            "Kochen und Backen",
+            "Tanzen und Singen"
+          ],
+          "answer": "Fussball und Schwimmen"
+        },
+        {
+          "id": "lq_A1_8_2",
+          "type": "mcq",
+          "question": "Wie oft macht der Patient Sport?",
+          "options": [
+            "Einmal pro Woche",
+            "Zweimal pro Woche",
+            "Dreimal pro Woche",
+            "Jeden Tag"
+          ],
+          "answer": "Zweimal pro Woche"
+        }
+      ],
+      "id": "A1_listen_8",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_9",
+      "title": "Einkaufsliste fuer den Patienten",
+      "script": "Herr Doktor, ich brauche eine neue Einkaufsliste. Bitte kaufen Sie: Milch, Vollkornbrot, Aepfel, Bananen, Karotten und Haehnchenbrust. Trinken Sie viel Wasser und keinen Zucker. Das ist wichtig fuer Ihre Gesundheit.",
+      "questions": [
+        {
+          "id": "lq_A1_9_1",
+          "type": "true-false",
+          "question": "Der Patient soll Zucker trinken.",
+          "answer": "false",
+          "explanation": "Er soll keinen Zucker trinken."
+        },
+        {
+          "id": "lq_A1_9_2",
+          "type": "mcq",
+          "question": "Welches Obst soll der Patient kaufen?",
+          "options": [
+            "Trauben und Birnen",
+            "Aepfel und Bananen",
+            "Orangen",
+            "Erdbeeren"
+          ],
+          "answer": "Aepfel und Bananen"
+        }
+      ],
+      "id": "A1_listen_9",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_10",
+      "title": "Empfehlung im Cafe",
+      "script": "Herzlich willkommen im Cafe 'Sonnenschein'. Unsere Empfehlung heute: Cappuccino mit hausgemachtem Apfelkuchen. Oder probieren Sie unseren neuen Fruechtetee. Dazu gibt es frische Waffeln mit Sahne.",
+      "questions": [
+        {
+          "id": "lq_A1_10_1",
+          "type": "mcq",
+          "question": "Was ist die Empfehlung des Cafes?",
+          "options": [
+            "Cappuccino mit Apfelkuchen",
+            "Milchkaffee",
+            "Eiskaffee",
+            "Schokolade"
+          ],
+          "answer": "Cappuccino mit Apfelkuchen"
+        },
+        {
+          "id": "lq_A1_10_2",
+          "type": "true-false",
+          "question": "Das Cafe bietet auch Waffeln mit Sahne an.",
+          "answer": "true",
+          "explanation": "Dazu gibt es frische Waffeln mit Sahne."
+        }
+      ],
+      "id": "A1_listen_10",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_11",
+      "title": "Wettervorhersage",
+      "script": "Das Wetter fuer morgen: Der Tag beginnt sonnig bei 18 Grad. Am Mittag gibt es Wolken und es wird 22 Grad warm. Am Nachmittag koennen Sie Regen. Die Nacht bleibt trocken bei 14 Grad.",
+      "questions": [
+        {
+          "id": "lq_A1_11_1",
+          "type": "mcq",
+          "question": "Wie warm wird es am Mittag?",
+          "options": [
+            "18 Grad",
+            "20 Grad",
+            "22 Grad",
+            "24 Grad"
+          ],
+          "answer": "22 Grad"
+        },
+        {
+          "id": "lq_A1_11_2",
+          "type": "true-false",
+          "question": "Am Nachmittag kann es regnen.",
+          "answer": "true",
+          "explanation": "Am Nachmittag koennen Sie Regen."
+        }
+      ],
+      "id": "A1_listen_11",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_12",
+      "title": "Kleidungsempfehlung",
+      "script": "Guten Tag, kann ich Ihnen helfen? Ich suche eine warme Jacke. Wir haben schoene Jacken in Rot, Blau und Schwarz. Die rote Jacke kostet 60 Euro. Sie ist aus Wolle und sehr warm. Ich probiere sie gern an.",
+      "questions": [
+        {
+          "id": "lq_A1_12_1",
+          "type": "mcq",
+          "question": "Welche Jacke moechte der Kunde?",
+          "options": [
+            "Eine leichte Jacke",
+            "Eine warme Jacke",
+            "Eine Regenjacke",
+            "Eine Lederjacke"
+          ],
+          "answer": "Eine warme Jacke"
+        },
+        {
+          "id": "lq_A1_12_2",
+          "type": "mcq",
+          "question": "Welche Farben gibt es?",
+          "options": [
+            "Nur Blau",
+            "Rot, Blau und Schwarz",
+            "Gelb und Gruen",
+            "Weiss und Grau"
+          ],
+          "answer": "Rot, Blau und Schwarz"
+        }
+      ],
+      "id": "A1_listen_12",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_13",
+      "title": "Familienanamnese",
+      "script": "Arzt: Gibt es in Ihrer Familie Krankheiten? Patient: Mein Vater hat Bluthochdruck. Meine Mutter hat Diabetes. Meine Grosseltern waren gesund. Arzt: Okay, das ist wichtig zu wissen. Wir machen zur Sicherheit einen Bluttest.",
+      "questions": [
+        {
+          "id": "lq_A1_13_1",
+          "type": "mcq",
+          "question": "Welche Krankheit hat der Vater?",
+          "options": [
+            "Diabetes",
+            "Bluthochdruck",
+            "Asthma",
+            "Allergien"
+          ],
+          "answer": "Bluthochdruck"
+        },
+        {
+          "id": "lq_A1_13_2",
+          "type": "true-false",
+          "question": "Der Arzt macht einen Bluttest.",
+          "answer": "true",
+          "explanation": "Wir machen zur Sicherheit einen Bluttest."
+        }
+      ],
+      "id": "A1_listen_13",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_14",
+      "title": "Wohnung fuer den Arztbesuch",
+      "script": "Sprechstundenhilfe: Ihre neue Adresse, bitte? Patient: Ich wohne jetzt in der GoethestraÃŸe 15, Wohnung 4, im zweiten Stock. Sprechstundenhilfe: Und Ihre Telefonnummer? Patient: 0176-12345678.",
+      "questions": [
+        {
+          "id": "lq_A1_14_1",
+          "type": "mcq",
+          "question": "In welcher StraÃŸe wohnt der Patient?",
+          "options": [
+            "SchillerstraÃŸe",
+            "GoethestraÃŸe",
+            "Berliner Allee",
+            "HauptstraÃŸe"
+          ],
+          "answer": "GoethestraÃŸe"
+        },
+        {
+          "id": "lq_A1_14_2",
+          "type": "true-false",
+          "question": "Der Patient wohnt im ersten Stock.",
+          "answer": "false",
+          "explanation": "Er wohnt im zweiten Stock."
+        }
+      ],
+      "id": "A1_listen_14",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_15",
+      "title": "Tagesablauf - Ernährungsberatung",
+      "script": "Eroeffnungszeiten Praxis Dr. Klein: Montag bis Freitag von 8 bis 18 Uhr. Mittagspause von 13 bis 14 Uhr. Samstag von 9 bis 12 Uhr nur fuer Notfälle. Sonntag geschlossen. Termine nur nach Vereinbarung.",
+      "questions": [
+        {
+          "id": "lq_A1_15_1",
+          "type": "mcq",
+          "question": "Bis wann hat die Praxis montags bis freitags geoeffnet?",
+          "options": [
+            "Bis 16 Uhr",
+            "Bis 17 Uhr",
+            "Bis 18 Uhr",
+            "Bis 20 Uhr"
+          ],
+          "answer": "Bis 18 Uhr"
+        },
+        {
+          "id": "lq_A1_15_2",
+          "type": "true-false",
+          "question": "Samstags ist die Praxis fuer Notfälle von 9 bis 12 Uhr geoeffnet.",
+          "answer": "true"
+        }
+      ],
+      "id": "A1_listen_15",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_16",
+      "title": "Koerperliche Untersuchung",
+      "script": "Arzt: Atmen Sie bitte tief ein. Und wieder aus. Gut. Jetzt husten Sie bitte einmal. Patient: *hustet* Arzt: Danke. Ich hoere Ihr Herz und Ihre Lunge ab. Alles in Ordnung. Machen Sie bitte den Mund weit auf. Ich schaue in den Hals.",
+      "questions": [
+        {
+          "id": "lq_A1_16_1",
+          "type": "mcq",
+          "question": "Was soll der Patient zuerst machen?",
+          "options": [
+            "Husten",
+            "Tief einatmen",
+            "Den Mund oeffnen",
+            "Die Augen schliessen"
+          ],
+          "answer": "Tief einatmen",
+          "explanation": "Der Arzt sagt: Atmen Sie bitte tief ein."
+        },
+        {
+          "id": "lq_A1_16_2",
+          "type": "true-false",
+          "question": "Der Arzt untersucht Herz und Lunge.",
+          "answer": "true",
+          "explanation": "Ich hoere Ihr Herz und Ihre Lunge ab."
+        }
+      ],
+      "id": "A1_listen_16",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_17",
+      "title": "Tierallergie",
+      "script": "Patient: Ich habe Husten und die Nase laeuft, immer wenn ich bei meiner Freundin bin. Sie hat eine Katze. Arzt: Das klingt nach einer Allergie. Wir machen einen Allergietest. Vermeiden Sie vorerst den Kontakt mit Katzen.",
+      "questions": [
+        {
+          "id": "lq_A1_17_1",
+          "type": "mcq",
+          "question": "Wann hat der Patient Symptome?",
+          "options": [
+            "Beim Sport",
+            "Wenn er bei der Freundin ist",
+            "Nach dem Essen",
+            "Morgens"
+          ],
+          "answer": "Wenn er bei der Freundin ist"
+        },
+        {
+          "id": "lq_A1_17_2",
+          "type": "true-false",
+          "question": "Der Patient soll mehr Kontakt mit Katzen haben.",
+          "answer": "false",
+          "explanation": "Vermeiden Sie vorerst den Kontakt mit Katzen."
+        }
+      ],
+      "id": "A1_listen_17",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_18",
+      "title": "Krankenhausadresse",
+      "script": "Das Staedtische Krankenhaus befindet sich in der ParkstraÃŸe 25. Sie erreichen uns mit der Buslinie 14, Haltestelle 'Krankenhaus'. Parkplätze sind hinter dem Gebaeude. Die Notaufnahme ist rund um die Uhr geoeffnet.",
+      "questions": [
+        {
+          "id": "lq_A1_18_1",
+          "type": "mcq",
+          "question": "Mit welcher Buslinie erreicht man das Krankenhaus?",
+          "options": [
+            "Linie 10",
+            "Linie 12",
+            "Linie 14",
+            "Linie 18"
+          ],
+          "answer": "Linie 14"
+        },
+        {
+          "id": "lq_A1_18_2",
+          "type": "true-false",
+          "question": "Die Notaufnahme ist nur tagsueber geoeffnet.",
+          "answer": "false",
+          "explanation": "Die Notaufnahme ist rund um die Uhr geoeffnet."
+        }
+      ],
+      "id": "A1_listen_18",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_19",
+      "title": "Vorstellung beim Arzt",
+      "script": "Patient: Guten Tag, ich bin zum ersten Mal hier. Mein Name ist Ahmed Ali. Arzt: Schoen, dass Sie da sind, Herr Ali. Ich bin Dr. Fischer. Erzaehlen Sie, was Ihnen fehlt. Patient: Ich habe seit einer Woche Rueckenschmerzen.",
+      "questions": [
+        {
+          "id": "lq_A1_19_1",
+          "type": "mcq",
+          "question": "Wie heisst der Patient?",
+          "options": [
+            "Ahmed Fischer",
+            "Ahmed Ali",
+            "Herr Doktor",
+            "Dr. Ali"
+          ],
+          "answer": "Ahmed Ali"
+        },
+        {
+          "id": "lq_A1_19_2",
+          "type": "mcq",
+          "question": "Was hat der Patient?",
+          "options": [
+            "Kopfschmerzen",
+            "Rueckenschmerzen",
+            "Fieber",
+            "Halsschmerzen"
+          ],
+          "answer": "Rueckenschmerzen"
+        }
+      ],
+      "id": "A1_listen_19",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_20",
+      "title": "Im Cafe waehrend der Pause",
+      "script": "Schwester Maria: Ich mache jetzt Pause. Ich gehe ins Cafe gegenueber. Chefarzt: Gut, Sie haben es verdient. Bestellen Sie mir einen Kaffee? Schwester Maria: Ja, gern. Mit Milch und Zucker? Chefarzt: Ja, bitte. Danke!",
+      "questions": [
+        {
+          "id": "lq_A1_20_1",
+          "type": "true-false",
+          "question": "Schwester Maria macht Pause.",
+          "answer": "true"
+        },
+        {
+          "id": "lq_A1_20_2",
+          "type": "mcq",
+          "question": "Was soll die Schwester dem Chefarzt bestellen?",
+          "options": [
+            "Einen Tee",
+            "Einen Kaffee",
+            "Ein Wasser",
+            "Einen Saft"
+          ],
+          "answer": "Einen Kaffee"
+        }
+      ],
+      "id": "A1_listen_20",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_21",
+      "title": "Zum Arzt mit dem Bus",
+      "script": "Sprechstundenhilfe: Wie kommen Sie zu uns? Patient: Ich nehme den Bus 33 bis Haltestelle 'Marktplatz' und laufe dann fuenf Minuten. Sprechstundenhilfe: Gut. Bitte kommen Sie 10 Minuten vor Ihrem Termin, um das Formular auszufuellen.",
+      "questions": [
+        {
+          "id": "lq_A1_21_1",
+          "type": "mcq",
+          "question": "Welchen Bus nimmt der Patient?",
+          "options": [
+            "Bus 22",
+            "Bus 33",
+            "Bus 44",
+            "Bus 55"
+          ],
+          "answer": "Bus 33"
+        },
+        {
+          "id": "lq_A1_21_2",
+          "type": "true-false",
+          "question": "Der Patient soll 10 Minuten vor dem Termin kommen.",
+          "answer": "true",
+          "explanation": "Bitte kommen Sie 10 Minuten vor Ihrem Termin."
+        }
+      ],
+      "id": "A1_listen_21",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_22",
+      "title": "Termin absagen per Telefon",
+      "script": "Patient: Guten Tag, hier spricht Klaus Wagner. Ich habe einen Termin morgen um 11 Uhr, kann aber leider nicht kommen. Koennte ich auf naechste Woche verschieben? Sprechstundenhilfe: Ja, passt es am Mittwoch um 14 Uhr? Patient: Ja, sehr gern.",
+      "questions": [
+        {
+          "id": "lq_A1_22_1",
+          "type": "mcq",
+          "question": "Warum ruft der Patient an?",
+          "options": [
+            "Er ist krank",
+            "Er moechte den Termin verschieben",
+            "Er moechte ein Rezept",
+            "Er hat eine Frage"
+          ],
+          "answer": "Er moechte den Termin verschieben"
+        },
+        {
+          "id": "lq_A1_22_2",
+          "type": "true-false",
+          "question": "Der neue Termin ist am Mittwoch um 14 Uhr.",
+          "answer": "true",
+          "explanation": "Passt es am Mittwoch um 14 Uhr?"
+        }
+      ],
+      "id": "A1_listen_22",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_23",
+      "title": "GeburtstagsgrüÃŸe aus der Praxis",
+      "script": "Hier ist die Praxis Dr. Schneider mit einer besonderen Nachricht: Wir gratulieren unserem Patienten Herrn Mueller herzlich zum 70. Geburtstag! Wir wuenschen Ihnen alles Gute, Gesundheit und viel Freude im neuen Lebensjahr.",
+      "questions": [
+        {
+          "id": "lq_A1_23_1",
+          "type": "mcq",
+          "question": "Was feiert Herr Mueller?",
+          "options": [
+            "Seinen 60. Geburtstag",
+            "Seinen 65. Geburtstag",
+            "Seinen 70. Geburtstag",
+            "Seinen 75. Geburtstag"
+          ],
+          "answer": "Seinen 70. Geburtstag"
+        },
+        {
+          "id": "lq_A1_23_2",
+          "type": "true-false",
+          "question": "Die Praxis wuenscht Herrn Mueller Gesundheit.",
+          "answer": "true",
+          "explanation": "Wir wuenschen Ihnen Gesundheit."
+        }
+      ],
+      "id": "A1_listen_23",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_24",
+      "title": "Rechnungen und Zahlen",
+      "script": "Sprechstundenhilfe: Ihre Rechnung fuer heute: 25 Euro fuer die Untersuchung und 15 Euro fuer das Medikament. Das macht zusammen 40 Euro. Patient: Kann ich mit Karte zahlen? Sprechstundenhilfe: Ja, natuÌˆrlich. Bitte sehr.",
+      "questions": [
+        {
+          "id": "lq_A1_24_1",
+          "type": "mcq",
+          "question": "Wie viel kostet die Untersuchung?",
+          "options": [
+            "15 Euro",
+            "20 Euro",
+            "25 Euro",
+            "40 Euro"
+          ],
+          "answer": "25 Euro"
+        },
+        {
+          "id": "lq_A1_24_2",
+          "type": "true-false",
+          "question": "Der Patient kann mit Karte zahlen.",
+          "answer": "true",
+          "explanation": "Ja, natuerlich."
+        }
+      ],
+      "id": "A1_listen_24",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_25",
+      "title": "Aufklaerung vor der Untersuchung",
+      "script": "Schwester: Guten Morgen, Herr Schmidt. Ich kläre Sie ueber die morgige Untersuchung auf. Bitte kommen Sie nüchtern, das heisst: nichts essen ab 22 Uhr und nichts trinken ab 6 Uhr morgens. Die Untersuchung dauert etwa 30 Minuten.",
+      "questions": [
+        {
+          "id": "lq_A1_25_1",
+          "type": "true-false",
+          "question": "Der Patient darf ab 22 Uhr nichts mehr essen.",
+          "answer": "true",
+          "explanation": "Bitte kommen Sie nuechtern: nichts essen ab 22 Uhr."
+        },
+        {
+          "id": "lq_A1_25_2",
+          "type": "mcq",
+          "question": "Wie lange dauert die Untersuchung?",
+          "options": [
+            "15 Minuten",
+            "20 Minuten",
+            "30 Minuten",
+            "45 Minuten"
+          ],
+          "answer": "30 Minuten"
+        }
+      ],
+      "id": "A1_listen_25",
+      "level": "A1"
+    },
+    {
+      "id": "A1_listen_26",
+      "level": "A1",
+      "title": "Sich vorstellen",
+      "script": "Hallo. Ich heisse Julia Mueller. Ich bin 28 Jahre alt. Ich komme aus Oesterreich, aus Wien. Ich wohne jetzt in Berlin. Ich bin Deutschlehrerin. Ich arbeite an einer Sprachschule. Ich mag meinen Job.",
+      "questions": [
+        {
+          "id": "lq152",
+          "type": "mcq",
+          "question": "Wie alt ist Julia?",
+          "options": [
+            "26",
+            "28",
+            "30",
+            "32"
+          ],
+          "answer": "28"
+        },
+        {
+          "id": "lq153",
+          "type": "true-false",
+          "question": "Julia kommt aus Deutschland.",
+          "answer": "false"
+        },
+        {
+          "id": "lq154",
+          "type": "mcq",
+          "question": "Was ist Julia von Beruf?",
+          "options": [
+            "Arztin",
+            "Lehrerin",
+            "Apothekerin",
+            "Ingenieurin"
+          ],
+          "answer": "Lehrerin"
+        }
+      ],
+      "lessonId": "A1_lesson_1"
+    },
+    {
+      "id": "A1_listen_27",
+      "level": "A1",
+      "title": "Telefonnummer auf dem Anrufbeantworter",
+      "script": "Sie sind verbunden mit der Praxis Dr. Schneider. Unsere Telefonnummer ist: 0 3 0 - 8 7 6 5 4 3 2. Sie erreichen uns montags bis freitags von 8 bis 17 Uhr. Fuer Notfaelle waehlen Sie bitte den Notruf 1 1 2.",
+      "questions": [
+        {
+          "id": "lq155",
+          "type": "mcq",
+          "question": "Welche Telefonnummer hat die Praxis?",
+          "options": [
+            "030-8765432",
+            "030-7654321",
+            "030-9876543",
+            "030-1234567"
+          ],
+          "answer": "030-8765432"
+        },
+        {
+          "id": "lq156",
+          "type": "true-false",
+          "question": "Fuer Notfaelle waehlt man 110.",
+          "answer": "false"
+        },
+        {
+          "id": "lq157",
+          "type": "true-false",
+          "question": "Die Praxis hat samstags geoeffnet.",
+          "answer": "false"
+        }
+      ],
+      "lessonId": "A1_lesson_2"
+    },
+    {
+      "id": "A1_listen_28",
+      "level": "A1",
+      "title": "Adresse der neuen Praxis",
+      "script": "Wir sind umgezogen! Unsere neue Adresse ist: Bahnhofstrasse 25, 10115 Berlin. Der Eingang ist auf der Rueckseite des Gebaeudes. Der naechste Bus ist die Linie 142, Haltestelle Bahnhofstrasse.",
+      "questions": [
+        {
+          "id": "lq158",
+          "type": "true-false",
+          "question": "Die neue Adresse ist Bahnhofstrasse 25.",
+          "answer": "true"
+        },
+        {
+          "id": "lq159",
+          "type": "mcq",
+          "question": "Wo ist der Eingang?",
+          "options": [
+            "Auf der Vorderseite",
+            "Auf der Rueckseite",
+            "Im Keller",
+            "Im 1. Stock"
+          ],
+          "answer": "Auf der Rueckseite"
+        },
+        {
+          "id": "lq160",
+          "type": "mcq",
+          "question": "Welcher Bus faehrt zur Praxis?",
+          "options": [
+            "Linie 100",
+            "Linie 142",
+            "Linie 200",
+            "Linie 15"
+          ],
+          "answer": "Linie 142"
+        }
+      ],
+      "lessonId": "A1_lesson_3"
+    },
+    {
+      "id": "A1_listen_29",
+      "level": "A1",
+      "title": "Termin vereinbaren",
+      "script": "Sprechstundenhilfe: Praxis Dr. Weber, guten Tag. Sie moechten einen Termin? Termin morgen um 9:30 Uhr bei Dr. Weber. Der naechste freie Termin ist um 9:30 Uhr. Passt das? Gut. Dann morgen um 9:30 Uhr. Bitte bringen Sie Ihre Versicherungskarte mit. Auf Wiederhoeren.",
+      "questions": [
+        {
+          "id": "lq161",
+          "type": "mcq",
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Heute",
+            "Morgen",
+            "Uebermorgen",
+            "Am Montag"
+          ],
+          "answer": "Morgen"
+        },
+        {
+          "id": "lq162",
+          "type": "mcq",
+          "question": "Um wie viel Uhr ist der Termin?",
+          "options": [
+            "9:00 Uhr",
+            "9:30 Uhr",
+            "10:00 Uhr",
+            "10:30 Uhr"
+          ],
+          "answer": "9:30 Uhr"
+        },
+        {
+          "id": "lq163",
+          "type": "true-false",
+          "question": "Der Patient soll die Versicherungskarte mitbringen.",
+          "answer": "true"
+        }
+      ],
+      "lessonId": "A1_lesson_4"
+    },
+    {
+      "id": "A1_listen_30",
+      "level": "A1",
+      "title": "Termin absagen",
+      "script": "Anrufbeantworter der Praxis Dr. Mueller. Sie haben einen Termin fuer Mittwoch, den 15. Mai um 14:15 Uhr bei Dr. Mueller. Bitte sagen Sie ab, wenn Sie nicht kommen koennen. Sie koennen uns auch eine E-Mail schreiben an: info at praxis-mueller dot de.",
+      "questions": [
+        {
+          "id": "lq164",
+          "type": "true-false",
+          "question": "Der Termin ist am Mittwoch.",
+          "answer": "true"
+        },
+        {
+          "id": "lq165",
+          "type": "mcq",
+          "question": "Wie kann man den Termin absagen?",
+          "options": [
+            "Nur telefonisch",
+            "Per Brief",
+            "Per E-Mail oder Telefon",
+            "Nur persoenlich"
+          ],
+          "answer": "Per E-Mail oder Telefon"
+        },
+        {
+          "id": "lq166",
+          "type": "mcq",
+          "question": "Wie ist die E-Mail-Adresse?",
+          "options": [
+            "info@praxis-mueller.de",
+            "info@dr-mueller.de",
+            "kontakt@praxis-mueller.de",
+            "mueller@praxis.de"
+          ],
+          "answer": "info@praxis-mueller.de"
+        }
+      ],
+      "lessonId": "A1_lesson_5"
+    },
+    {
+      "id": "A1_listen_31",
+      "level": "A1",
+      "title": "An der Anmeldung",
+      "script": "Sprechstundenhilfe: Guten Morgen, wie heissen Sie? Patient: Ich heisse Peter Braun. Ich habe einen Termin um 10:00 Uhr. Sprechstundenhilfe: Einen Moment bitte. Ja, Herr Braun, Termin um 10:00 Uhr bei Frau Dr. Klein. Nehmen Sie bitte im Wartezimmer Platz. Es dauert etwa 10 Minuten. Patient: Vielen Dank.",
+      "questions": [
+        {
+          "id": "lq167",
+          "type": "true-false",
+          "question": "Der Patient heisst Peter Braun.",
+          "answer": "true"
+        },
+        {
+          "id": "lq168",
+          "type": "mcq",
+          "question": "Wann hat der Patient den Termin?",
+          "options": [
+            "Um 9:00 Uhr",
+            "Um 10:00 Uhr",
+            "Um 11:00 Uhr",
+            "Um 14:00 Uhr"
+          ],
+          "answer": "Um 10:00 Uhr"
+        },
+        {
+          "id": "lq169",
+          "type": "true-false",
+          "question": "Der Patient muss 30 Minuten warten.",
+          "answer": "false"
+        }
+      ],
+      "lessonId": "A1_lesson_6"
+    },
+    {
+      "id": "A1_listen_32",
+      "level": "A1",
+      "title": "In der Apotheke",
+      "script": "Apotheker: Guten Tag, was kann ich fuer Sie tun? Kunde: Ich brauche etwas gegen Husten. Apotheker: Haben Sie ein Rezept? Kunde: Ja, hier bitte. Apotheker: Einen Moment bitte. Hier ist Ihr Medikament. Es kostet 7,50 Euro. Dreimal taeglich einen Messloeffel. Kunde: Vielen Dank.",
+      "questions": [
+        {
+          "id": "lq170",
+          "type": "mcq",
+          "question": "Was braucht der Kunde?",
+          "options": [
+            "Etwas gegen Kopfschmerzen",
+            "Etwas gegen Husten",
+            "Etwas gegen Fieber",
+            "Etwas gegen Allergien"
+          ],
+          "answer": "Etwas gegen Husten"
+        },
+        {
+          "id": "lq171",
+          "type": "mcq",
+          "question": "Wie viel kostet das Medikament?",
+          "options": [
+            "5,50 Euro",
+            "6,50 Euro",
+            "7,50 Euro",
+            "8,50 Euro"
+          ],
+          "answer": "7,50 Euro"
+        },
+        {
+          "id": "lq172",
+          "type": "true-false",
+          "question": "Der Kunde hat ein Rezept.",
+          "answer": "true"
+        }
+      ],
+      "lessonId": "A1_lesson_7"
+    },
+    {
+      "id": "A1_listen_33",
+      "level": "A1",
+      "title": "Beim Arzt - Symptome",
+      "script": "Arzt: Guten Tag, Herr Schmidt. Was fehlt Ihnen? Patient: Ich habe seit drei Tagen Husten und Schnupfen. Und ich fuehle mich muede. Arzt: Haben Sie Fieber? Patient: Ja, gestern hatte ich 38,5 Grad. Arzt: Dann untersuche ich Sie jetzt kurz.",
+      "questions": [
+        {
+          "id": "lq173",
+          "type": "true-false",
+          "question": "Der Patient hat Husten und Schnupfen.",
+          "answer": "true"
+        },
+        {
+          "id": "lq174",
+          "type": "mcq",
+          "question": "Seit wann hat der Patient die Symptome?",
+          "options": [
+            "Seit einem Tag",
+            "Seit zwei Tagen",
+            "Seit drei Tagen",
+            "Seit einer Woche"
+          ],
+          "answer": "Seit drei Tagen"
+        },
+        {
+          "id": "lq175",
+          "type": "mcq",
+          "question": "Welche Temperatur hatte der Patient gestern?",
+          "options": [
+            "37,5 Grad",
+            "38,0 Grad",
+            "38,5 Grad",
+            "39,0 Grad"
+          ],
+          "answer": "38,5 Grad"
+        }
+      ],
+      "lessonId": "A1_lesson_8"
+    },
+    {
+      "id": "A1_listen_34",
+      "level": "A1",
+      "title": "Durchsage im Bahnhof",
+      "script": "Achtung, eine Durchsage: Der Regionalzug RE5 nach Leipzig von Gleis 2 hat 10 Minuten Verspaetung. Abfahrt ist jetzt um 14:45 Uhr. Grund: technische Stoerung. Wir bitten um Entschuldigung. Der Zug nach Hamburg auf Gleis 4 faehrt planmaessig um 15:00 Uhr.",
+      "questions": [
+        {
+          "id": "lq176",
+          "type": "mcq",
+          "question": "Wohin faehrt der verspaetete Zug?",
+          "options": [
+            "Nach Hamburg",
+            "Nach Leipzig",
+            "Nach Berlin",
+            "Nach Muenchen"
+          ],
+          "answer": "Nach Leipzig"
+        },
+        {
+          "id": "lq177",
+          "type": "mcq",
+          "question": "Wie viel Verspaetung hat der Zug?",
+          "options": [
+            "5 Minuten",
+            "10 Minuten",
+            "15 Minuten",
+            "20 Minuten"
+          ],
+          "answer": "10 Minuten"
+        },
+        {
+          "id": "lq178",
+          "type": "mcq",
+          "question": "Um wie viel Uhr faehrt der Zug jetzt?",
+          "options": [
+            "14:35 Uhr",
+            "14:45 Uhr",
+            "14:50 Uhr",
+            "15:00 Uhr"
+          ],
+          "answer": "14:45 Uhr"
+        }
+      ],
+      "lessonId": "A1_lesson_9"
+    },
+    {
+      "id": "A1_listen_35",
+      "level": "A1",
+      "title": "Beim Einkaufen",
+      "script": "Verkauferin: Guten Tag. Kann ich Ihnen helfen? Kunde: Ja, ich suche eine warme Jacke. Verkauferin: Welche Groesse? Kunde: Groesse M. Verkauferin: Hier ist eine schwarze Jacke fuer 49,90 Euro. Kunde: Die gefaellt mir. Kann ich sie anprobieren? Verkauferin: Ja, natuerlich. Die Umkleidekabine ist dort hinten.",
+      "questions": [
+        {
+          "id": "lq179",
+          "type": "mcq",
+          "question": "Was sucht der Kunde?",
+          "options": [
+            "Einen Mantel",
+            "Eine Jacke",
+            "Einen Pullover",
+            "Schuhe"
+          ],
+          "answer": "Eine Jacke"
+        },
+        {
+          "id": "lq180",
+          "type": "mcq",
+          "question": "Welche Groesse braucht der Kunde?",
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "answer": "M"
+        },
+        {
+          "id": "lq181",
+          "type": "true-false",
+          "question": "Die Jacke kostet 59,90 Euro.",
+          "answer": "false"
+        }
+      ],
+      "lessonId": "A1_lesson_10"
+    },
+    {
+      "id": "A1_listen_36",
+      "level": "A1",
+      "title": "Im Cafe",
+      "script": "Kellner: Guten Tag, was darf es sein? Gast: Ich haette gern einen Kaffee und ein Stueck Apfelkuchen. Kellner: Kommt sofort. Das macht 6,00 Euro zusammen. Gast: Hier sind 10 Euro. Kellner: Und 4 Euro zurueck. Vielen Dank. Gast: Danke, auf Wiederhoeren.",
+      "questions": [
+        {
+          "id": "lq182",
+          "type": "mcq",
+          "question": "Was bestellt der Gast?",
+          "options": [
+            "Tee und Kuchen",
+            "Kaffee und Kuchen",
+            "Kaffee und ein Brot",
+            "Eine heisse Schokolade"
+          ],
+          "answer": "Kaffee und Kuchen"
+        },
+        {
+          "id": "lq183",
+          "type": "mcq",
+          "question": "Wie viel kostet alles zusammen?",
+          "options": [
+            "4,00 Euro",
+            "5,00 Euro",
+            "6,00 Euro",
+            "7,00 Euro"
+          ],
+          "answer": "6,00 Euro"
+        },
+        {
+          "id": "lq184",
+          "type": "true-false",
+          "question": "Der Gast bekommt 4 Euro Wechselgeld zurueck.",
+          "answer": "true"
+        }
+      ],
+      "lessonId": "A1_lesson_11"
+    },
+    {
+      "id": "A1_listen_37",
+      "level": "A1",
+      "title": "Tisch reservieren",
+      "script": "Restaurant Zur Lindenbaum am Apparat. Guten Abend. Sie moechten einen Tisch reservieren? Fuer zwei Personen am Samstag um 19:00 Uhr. Ihr Name bitte? Frau Schulz. Tisch fuer zwei Personen am Samstag um 19:00 Uhr. Perfekt. Vielen Dank fuer Ihre Reservierung. Auf Wiederhoeren.",
+      "questions": [
+        {
+          "id": "lq185",
+          "type": "mcq",
+          "question": "Fuer wie viele Personen ist die Reservierung?",
+          "options": [
+            "Eine Person",
+            "Zwei Personen",
+            "Drei Personen",
+            "Vier Personen"
+          ],
+          "answer": "Zwei Personen"
+        },
+        {
+          "id": "lq186",
+          "type": "mcq",
+          "question": "Wann ist die Reservierung?",
+          "options": [
+            "Am Freitag",
+            "Am Samstag",
+            "Am Sonntag",
+            "Am Montag"
+          ],
+          "answer": "Am Samstag"
+        },
+        {
+          "id": "lq187",
+          "type": "mcq",
+          "question": "Um wie viel Uhr ist der Tisch reserviert?",
+          "options": [
+            "18:00 Uhr",
+            "19:00 Uhr",
+            "20:00 Uhr",
+            "21:00 Uhr"
+          ],
+          "answer": "19:00 Uhr"
+        }
+      ],
+      "lessonId": "A1_lesson_12"
+    },
+    {
+      "id": "A1_listen_38",
+      "level": "A1",
+      "title": "Wettervorhersage",
+      "script": "Das Wetter fuer morgen: Am Morgen regnet es. Nehmen Sie einen Regenschirm mit. Am Nachmittag wird es sonnig. Die Temperatur steigt auf 20 Grad. Am Abend ist es bewolkt, aber es bleibt trocken. Der Wind ist schwach. Ein guter Tag fuer einen Spaziergang.",
+      "questions": [
+        {
+          "id": "lq188",
+          "type": "true-false",
+          "question": "Am Morgen regnet es.",
+          "answer": "true"
+        },
+        {
+          "id": "lq189",
+          "type": "mcq",
+          "question": "Wie warm wird es am Nachmittag?",
+          "options": [
+            "15 Grad",
+            "18 Grad",
+            "20 Grad",
+            "22 Grad"
+          ],
+          "answer": "20 Grad"
+        },
+        {
+          "id": "lq190",
+          "type": "true-false",
+          "question": "Am Abend gibt es starken Wind.",
+          "answer": "false"
+        }
+      ],
+      "lessonId": "A1_lesson_13"
+    },
+    {
+      "id": "A1_listen_39",
+      "level": "A1",
+      "title": "Ansage - Uhrzeit und Datum",
+      "script": "Hier ist die Zeitansage. Nach dem Signal ist es genau: Donnerstag, der fuenfzehnte Mai, vierzehn Uhr dreissig. Punkt 14:30 Uhr. Wetter: sonnig bei 21 Grad. Naechste Zeitansage in zwei Stunden.",
+      "questions": [
+        {
+          "id": "lq191",
+          "type": "mcq",
+          "question": "Welcher Wochentag ist heute?",
+          "options": [
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag"
+          ],
+          "answer": "Donnerstag"
+        },
+        {
+          "id": "lq192",
+          "type": "mcq",
+          "question": "Wie spaet ist es?",
+          "options": [
+            "14:00 Uhr",
+            "14:15 Uhr",
+            "14:30 Uhr",
+            "15:00 Uhr"
+          ],
+          "answer": "14:30 Uhr"
+        },
+        {
+          "id": "lq193",
+          "type": "mcq",
+          "question": "Der wievielte Mai ist heute?",
+          "options": [
+            "Der 5.",
+            "Der 10.",
+            "Der 15.",
+            "Der 20."
+          ],
+          "answer": "Der 15."
+        }
+      ],
+      "lessonId": "A1_lesson_14"
+    },
+    {
+      "id": "A1_listen_40",
+      "level": "A1",
+      "title": "Einladung zum Geburtstag",
+      "script": "Hallo Lisa, hier ist Anna. Ich moechte dich zu meinem Geburtstag einladen. Meine Party ist am Samstag, den 20. Mai. Sie beginnt um 18:00 Uhr bei mir zu Hause. Es gibt Kuchen, Pizza und Getraenke. Du kannst gerne einen Freund mitbringen. Bitte sag mir bis Freitag Bescheid. Ich freue mich auf dich!",
+      "questions": [
+        {
+          "id": "lq194",
+          "type": "mcq",
+          "question": "Wann ist die Geburtstagsparty?",
+          "options": [
+            "Am 15. Mai",
+            "Am 20. Mai",
+            "Am 25. Mai",
+            "Am 30. Mai"
+          ],
+          "answer": "Am 20. Mai"
+        },
+        {
+          "id": "lq195",
+          "type": "mcq",
+          "question": "Um wie viel Uhr beginnt die Party?",
+          "options": [
+            "16:00 Uhr",
+            "17:00 Uhr",
+            "18:00 Uhr",
+            "19:00 Uhr"
+          ],
+          "answer": "18:00 Uhr"
+        },
+        {
+          "id": "lq196",
+          "type": "true-false",
+          "question": "Lisa soll bis Freitag Bescheid sagen.",
+          "answer": "true"
+        }
+      ],
+      "lessonId": "A1_lesson_15"
+    },
+    {
+      "id": "A1_listen_41",
+      "level": "A1",
+      "title": "Informationen zum Deutschkurs",
+      "script": "Herzlich willkommen zum Deutschkurs A1. Der Kurs beginnt am Montag, den 3. Juni. Der Unterricht ist von 9:00 bis 12:15 Uhr, montags bis freitags. Der Kursort ist Raum 204, VHS Berlin. Bitte bringen Sie ein Heft, einen Stift und das Kursbuch mit. Bei Fragen fragen Sie bitte Ihre Kursleiterin, Frau Fischer.",
+      "questions": [
+        {
+          "id": "lq197",
+          "type": "mcq",
+          "question": "Wann beginnt der Deutschkurs?",
+          "options": [
+            "Am 1. Juni",
+            "Am 3. Juni",
+            "Am 5. Juni",
+            "Am 10. Juni"
+          ],
+          "answer": "Am 3. Juni"
+        },
+        {
+          "id": "lq198",
+          "type": "mcq",
+          "question": "Wie lange dauert der Unterricht taeglich?",
+          "options": [
+            "2 Stunden",
+            "3 Stunden",
+            "3 Stunden 15 Minuten",
+            "4 Stunden"
+          ],
+          "answer": "3 Stunden 15 Minuten"
+        },
+        {
+          "id": "lq199",
+          "type": "true-false",
+          "question": "Die Kursleiterin heisst Frau Fischer.",
+          "answer": "true"
+        }
+      ],
+      "lessonId": "A1_lesson_16"
+    },
+    {
+      "id": "A1_listen_42",
+      "level": "A1",
+      "title": "Arbeitsplan Durchsage",
+      "script": "Achtung, eine wichtige Information fuer alle Mitarbeiter: Der Arbeitsplan fuer naechste Woche ist online. Frau Schneider arbeitet von Montag bis Mittwoch Fruehschicht von 6:00 bis 14:00 Uhr. Herr Braun hat Donnerstag und Freitag Spaetschicht von 14:00 bis 22:00 Uhr. Am Wochenende hat die Praxis geschlossen.",
+      "questions": [
+        {
+          "id": "lq200",
+          "type": "true-false",
+          "question": "Frau Schneider hat Fruehschicht.",
+          "answer": "true"
+        },
+        {
+          "id": "lq201",
+          "type": "mcq",
+          "question": "Wann arbeitet Herr Braun spaet?",
+          "options": [
+            "Am Montag und Dienstag",
+            "Am Dienstag und Mittwoch",
+            "Am Donnerstag und Freitag",
+            "Am Samstag und Sonntag"
+          ],
+          "answer": "Am Donnerstag und Freitag"
+        },
+        {
+          "id": "lq202",
+          "type": "mcq",
+          "question": "Wie lange dauert die Fruehschicht?",
+          "options": [
+            "6 Stunden",
+            "8 Stunden",
+            "10 Stunden",
+            "12 Stunden"
+          ],
+          "answer": "8 Stunden"
+        }
+      ],
+      "lessonId": "A1_lesson_17"
+    },
+    {
+      "id": "A1_listen_43",
+      "level": "A1",
+      "title": "Hotel Check-in",
+      "script": "Rezeption: Guten Abend, willkommen im Hotel Central. Gast: Guten Abend, ich habe ein Zimmer reserviert. Rezeption: Ihr Name bitte? Gast: Thomas Wagner. Rezeption: Ein Einzelzimmer fuer drei Naechte. Richtig. Zimmer 305 im dritten Stock. Das Fruehstueck gibt es von 7:00 bis 10:00 Uhr im Restaurant. Gast: Vielen Dank.",
+      "questions": [
+        {
+          "id": "lq203",
+          "type": "true-false",
+          "question": "Der Gast heisst Thomas Wagner.",
+          "answer": "true"
+        },
+        {
+          "id": "lq204",
+          "type": "mcq",
+          "question": "In welchem Stock ist das Zimmer?",
+          "options": [
+            "Im 1. Stock",
+            "Im 2. Stock",
+            "Im 3. Stock",
+            "Im 4. Stock"
+          ],
+          "answer": "Im 3. Stock"
+        },
+        {
+          "id": "lq205",
+          "type": "mcq",
+          "question": "Wann gibt es Fruehstueck?",
+          "options": [
+            "Von 6:00 bis 9:00",
+            "Von 7:00 bis 10:00",
+            "Von 8:00 bis 11:00",
+            "Von 7:30 bis 9:30"
+          ],
+          "answer": "Von 7:00 bis 10:00"
+        }
+      ],
+      "lessonId": "A1_lesson_18"
+    },
+    {
+      "id": "A1_listen_44",
+      "level": "A1",
+      "title": "Nach dem Weg fragen",
+      "script": "Tourist: Entschuldigung, wo ist die Stadtbibliothek? Passant: Die Bibliothek? Gehen Sie hier geradeaus bis zur naechsten Kreuzung. Dann biegen Sie rechts in die Goethestraffe. Nach 200 Metern sehen Sie das Museum. Die Bibliothek ist gegenueber vom Museum. Tourist: Vielen Dank!",
+      "questions": [
+        {
+          "id": "lq206",
+          "type": "mcq",
+          "question": "Was sucht der Tourist?",
+          "options": [
+            "Das Museum",
+            "Die Bibliothek",
+            "Das Krankenhaus",
+            "Den Bahnhof"
+          ],
+          "answer": "Die Bibliothek"
+        },
+        {
+          "id": "lq207",
+          "type": "true-false",
+          "question": "Die Bibliothek ist gegenueber vom Museum.",
+          "answer": "true"
+        },
+        {
+          "id": "lq208",
+          "type": "mcq",
+          "question": "In welche Strasse biegt der Tourist ein?",
+          "options": [
+            "Hauptstrasse",
+            "Schulstrasse",
+            "Goethestraffe",
+            "Bahnhofstrasse"
+          ],
+          "answer": "Goethestraffe"
+        }
+      ],
+      "lessonId": "A1_lesson_19"
+    },
+    {
+      "id": "A1_listen_45",
+      "level": "A1",
+      "title": "Fundsache melden",
+      "script": "Guten Tag. Ich bin gestern mit dem Bus 142 gefahren und habe meinen Rucksack verloren. Er ist blau. Inhalt: ein Buch, ein Heft und ein Portemonnaie mit 20 Euro. Ich war gestern um 16 Uhr an der Haltestelle Hauptbahnhof. Koennen Sie mir helfen?",
+      "questions": [
+        {
+          "id": "lq209",
+          "type": "mcq",
+          "question": "Was hat der Kunde verloren?",
+          "options": [
+            "Einen Schirm",
+            "Einen Rucksack",
+            "Eine Tasche",
+            "Ein Handy"
+          ],
+          "answer": "Einen Rucksack"
+        },
+        {
+          "id": "lq210",
+          "type": "true-false",
+          "question": "Der Rucksack ist schwarz.",
+          "answer": "false"
+        },
+        {
+          "id": "lq211",
+          "type": "mcq",
+          "question": "Mit welchem Bus ist der Kunde gefahren?",
+          "options": [
+            "Bus 100",
+            "Bus 142",
+            "Bus 200",
+            "Bus 15"
+          ],
+          "answer": "Bus 142"
+        }
+      ],
+      "lessonId": "A1_lesson_20"
+    },
+    {
+      "id": "A1_listen_46",
+      "level": "A1",
+      "title": "Notruf - Erste Hilfe",
+      "script": "Notrufzentrale, was ist passiert? Anrufer: Ein Unfall. Ein Mann liegt auf der Strasse. Notruf: Ihre Adresse bitte? Anrufer: Hauptstrasse 50 in Berlin-Mitte. Notruf: Warten Sie einen Moment. Der Krankenwagen kommt sofort. Bleiben Sie beim Patienten. Notruf 112 ist immer kostenlos.",
+      "questions": [
+        {
+          "id": "lq212",
+          "type": "mcq",
+          "question": "Welche Nummer ruft man im Notfall?",
+          "options": [
+            "110",
+            "112",
+            "115",
+            "116117"
+          ],
+          "answer": "112"
+        },
+        {
+          "id": "lq213",
+          "type": "true-false",
+          "question": "Der Unfall ist in der Hauptstrasse 50.",
+          "answer": "true"
+        },
+        {
+          "id": "lq214",
+          "type": "mcq",
+          "question": "Was soll der Anrufer tun?",
+          "options": [
+            "Nach Hause gehen",
+            "Beim Patienten bleiben",
+            "Den Bus nehmen",
+            "Ins Krankenhaus laufen"
+          ],
+          "answer": "Beim Patienten bleiben"
+        }
+      ],
+      "lessonId": "A1_lesson_21"
+    },
+    {
+      "id": "A1_listen_47",
+      "level": "A1",
+      "title": "Krankenhaus Besuchszeiten Ansage",
+      "script": "Willkommen im Krankenhaus St. Josef. Die Besuchszeiten sind taeglich von 14:00 bis 19:00 Uhr. Es duerfen maximal zwei Besucher pro Patient kommen. Bitte desinfizieren Sie Ihre Haende am Eingang. Die Cafeteria im Erdgeschoss hat von 8:00 bis 20:00 Uhr geoeffnet.",
+      "questions": [
+        {
+          "id": "lq215",
+          "type": "mcq",
+          "question": "Bis wann sind die Besuchszeiten?",
+          "options": [
+            "17:00 Uhr",
+            "18:00 Uhr",
+            "19:00 Uhr",
+            "20:00 Uhr"
+          ],
+          "answer": "19:00 Uhr"
+        },
+        {
+          "id": "lq216",
+          "type": "true-false",
+          "question": "Es duerfen maximal 3 Besucher pro Patient kommen.",
+          "answer": "false"
+        },
+        {
+          "id": "lq217",
+          "type": "mcq",
+          "question": "Wo ist die Cafeteria?",
+          "options": [
+            "Im 1. Stock",
+            "Im Erdgeschoss",
+            "Im Keller",
+            "Im 2. Stock"
+          ],
+          "answer": "Im Erdgeschoss"
+        }
+      ],
+      "lessonId": "A1_lesson_22"
+    },
+    {
+      "id": "A1_listen_48",
+      "level": "A1",
+      "title": "Ansage im Wartezimmer",
+      "script": "Achtung, eine Durchsage. Frau Sonja Meier wird gebeten, in das Behandlungszimmer 2 zu kommen. Herr Dr. Weber wartet dort. Und Herr Klaus Braun, bitte gehen Sie zum Behandlungszimmer 1. Die naechsten Patienten sind: Frau Schulz und Herr Fischer. Bitte haben Sie noch etwas Geduld.",
+      "questions": [
+        {
+          "id": "lq218",
+          "type": "mcq",
+          "question": "Wer wird in Behandlungszimmer 2 gerufen?",
+          "options": [
+            "Herr Braun",
+            "Frau Meier",
+            "Herr Mueller",
+            "Frau Schulz"
+          ],
+          "answer": "Frau Meier"
+        },
+        {
+          "id": "lq219",
+          "type": "true-false",
+          "question": "Herr Braun soll in Behandlungszimmer 1.",
+          "answer": "true"
+        },
+        {
+          "id": "lq220",
+          "type": "mcq",
+          "question": "Welcher Arzt wartet in Behandlungszimmer 2?",
+          "options": [
+            "Dr. Mueller",
+            "Dr. Klein",
+            "Dr. Weber",
+            "Dr. Fischer"
+          ],
+          "answer": "Dr. Weber"
+        }
+      ],
+      "lessonId": "A1_lesson_23"
+    },
+    {
+      "id": "A1_listen_49",
+      "level": "A1",
+      "title": "Mein Tagesablauf",
+      "script": "Hallo, ich bin Lena. Ich stehe jeden Tag um 6:30 Uhr auf. Dann dusche ich und fruehstuecke um 7:00 Uhr. Um 8:00 Uhr gehe ich zur Arbeit. Ich arbeite in einer Apotheke. Um 12:30 Uhr mache ich Mittagspause. Um 17:00 Uhr bin ich zu Hause. Um 19:00 Uhr koche ich Abendessen. Um 22:30 Uhr gehe ich ins Bett.",
+      "questions": [
+        {
+          "id": "lq221",
+          "type": "mcq",
+          "question": "Wann steht Lena auf?",
+          "options": [
+            "Um 6:00 Uhr",
+            "Um 6:30 Uhr",
+            "Um 7:00 Uhr",
+            "Um 7:30 Uhr"
+          ],
+          "answer": "Um 6:30 Uhr"
+        },
+        {
+          "id": "lq222",
+          "type": "true-false",
+          "question": "Lena arbeitet in einer Apotheke.",
+          "answer": "true"
+        },
+        {
+          "id": "lq223",
+          "type": "mcq",
+          "question": "Wann geht Lena ins Bett?",
+          "options": [
+            "Um 21:30 Uhr",
+            "Um 22:00 Uhr",
+            "Um 22:30 Uhr",
+            "Um 23:00 Uhr"
+          ],
+          "answer": "Um 22:30 Uhr"
+        }
+      ],
+      "lessonId": "A1_lesson_24"
+    },
+    {
+      "id": "A1_listen_50",
+      "level": "A1",
+      "title": "Plane fuer das Wochenende",
+      "script": "Tom: Hallo Lisa, hast du schon Plaene fuer das Wochenende? Lisa: Ja, am Samstag gehe ich ins Schwimmbad. Und du? Tom: Am Samstag spiele ich Fussball. Lisa: Und am Sonntag? Tom: Am Sonntag besuche ich meine Oma. Lisa: Das klingt schoen. Vielleicht koennen wir naechste Woche etwas zusammen machen.",
+      "questions": [
+        {
+          "id": "lq224",
+          "type": "mcq",
+          "question": "Was macht Lisa am Samstag?",
+          "options": [
+            "Fussball spielen",
+            "Ins Schwimmbad gehen",
+            "Ihre Oma besuchen",
+            "Einkaufen"
+          ],
+          "answer": "Ins Schwimmbad gehen"
+        },
+        {
+          "id": "lq225",
+          "type": "true-false",
+          "question": "Tom spielt am Samstag Fussball.",
+          "answer": "true"
+        },
+        {
+          "id": "lq226",
+          "type": "mcq",
+          "question": "Was macht Tom am Sonntag?",
+          "options": [
+            "Er geht ins Kino",
+            "Er besucht seine Oma",
+            "Er lernt Deutsch",
+            "Er arbeitet"
+          ],
+          "answer": "Er besucht seine Oma"
+        }
+      ],
+      "lessonId": "A1_lesson_25"
     }
   ],
   "A2": [
@@ -36,9 +1718,36 @@
       "title": "Arzttermin verschieben",
       "script": "Sprechstundenhilfe: Praxis Dr. Weber, guten Tag.\nPatientin: Guten Tag, hier spricht Frau Becker. Ich habe einen Termin für morgen um 9 Uhr, aber ich kann leider nicht kommen. Kann ich den Termin verschieben?\nSprechstundenhilfe: Ja, gerne. Passt es am Freitag um 10 Uhr?\nPatientin: Ja, Freitag um 10 Uhr ist perfekt.\nSprechstundenhilfe: Okay, ich trage Sie ein. Auf Wiederhören.\nPatientin: Vielen Dank! Auf Wiederhören.",
       "questions": [
-        {"id": "lq8", "type": "mcq", "question": "Warum ruft Frau Becker an?", "options": ["Sie möchte einen neuen Termin", "Sie möchte den Termin verschieben", "Sie hat Schmerzen", "Sie möchte die Praxis wechseln"], "answer": "Sie möchte den Termin verschieben"},
-        {"id": "lq9", "type": "true-false", "question": "Der neue Termin ist am Freitag um 9 Uhr.", "answer": "false"},
-        {"id": "lq10", "type": "mcq", "question": "Wann war der ursprüngliche Termin?", "options": ["Heute um 9 Uhr", "Morgen um 9 Uhr", "Freitag um 10 Uhr", "Gestern um 10 Uhr"], "answer": "Morgen um 9 Uhr"}
+        {
+          "id": "lq8",
+          "type": "mcq",
+          "question": "Warum ruft Frau Becker an?",
+          "options": [
+            "Sie möchte einen neuen Termin",
+            "Sie möchte den Termin verschieben",
+            "Sie hat Schmerzen",
+            "Sie möchte die Praxis wechseln"
+          ],
+          "answer": "Sie möchte den Termin verschieben"
+        },
+        {
+          "id": "lq9",
+          "type": "true-false",
+          "question": "Der neue Termin ist am Freitag um 9 Uhr.",
+          "answer": "false"
+        },
+        {
+          "id": "lq10",
+          "type": "mcq",
+          "question": "Wann war der ursprüngliche Termin?",
+          "options": [
+            "Heute um 9 Uhr",
+            "Morgen um 9 Uhr",
+            "Freitag um 10 Uhr",
+            "Gestern um 10 Uhr"
+          ],
+          "answer": "Morgen um 9 Uhr"
+        }
       ]
     },
     {
@@ -46,8 +1755,24 @@
       "title": "Wetterbericht",
       "script": "Das Wetter für morgen: Am Morgen ist es bewölkt bei 12 Grad. Am Nachmittag kommt die Sonne raus und es wird 20 Grad warm. Am Abend kann es regnen. Nehmen Sie einen Regenschirm mit!",
       "questions": [
-        {"id": "lq11", "type": "mcq", "question": "Wie warm wird es am Nachmittag?", "options": ["12 Grad", "15 Grad", "20 Grad", "25 Grad"], "answer": "20 Grad"},
-        {"id": "lq12", "type": "true-false", "question": "Am Abend kann es regnen.", "answer": "true"}
+        {
+          "id": "lq11",
+          "type": "mcq",
+          "question": "Wie warm wird es am Nachmittag?",
+          "options": [
+            "12 Grad",
+            "15 Grad",
+            "20 Grad",
+            "25 Grad"
+          ],
+          "answer": "20 Grad"
+        },
+        {
+          "id": "lq12",
+          "type": "true-false",
+          "question": "Am Abend kann es regnen.",
+          "answer": "true"
+        }
       ]
     },
     {
@@ -55,8 +1780,24 @@
       "title": "Durchsage am Bahnhof",
       "script": "Achtung, eine Durchsage: Der ICE 715 nach München von Gleis 7 hat 15 Minuten Verspätung. Grund ist eine Signalstörung. Wir bitten um Verständnis.",
       "questions": [
-        {"id": "lq13", "type": "mcq", "question": "Wie viel Verspätung hat der Zug?", "options": ["5 Minuten", "10 Minuten", "15 Minuten", "20 Minuten"], "answer": "15 Minuten"},
-        {"id": "lq14", "type": "true-false", "question": "Der Zug fährt von Gleis 7.", "answer": "true"}
+        {
+          "id": "lq13",
+          "type": "mcq",
+          "question": "Wie viel Verspätung hat der Zug?",
+          "options": [
+            "5 Minuten",
+            "10 Minuten",
+            "15 Minuten",
+            "20 Minuten"
+          ],
+          "answer": "15 Minuten"
+        },
+        {
+          "id": "lq14",
+          "type": "true-false",
+          "question": "Der Zug fährt von Gleis 7.",
+          "answer": "true"
+        }
       ]
     }
   ],
@@ -66,9 +1807,37 @@
       "title": "Radiosendung - Gesundheitsvorsorge",
       "script": "Herzlich willkommen zu unserer Sendung 'Gesund und Fit'. Heute sprechen wir über Hautkrebsvorsorge. Jeder zweite Deutsche erkrankt im Laufe seines Lebens an Hautkrebs. Dabei ist die Früherkennung entscheidend. Ab 35 Jahren übernimmt die Krankenkasse alle zwei Jahre einen kostenlosen Hautkrebsscreening-Termin beim Hautarzt. Wir empfehlen, dieses Angebot unbedingt wahrzunehmen.",
       "questions": [
-        {"id": "lq15", "type": "mcq", "question": "Wie viele Deutsche erkranken an Hautkrebs?", "options": ["Jeder dritte", "Jeder zweite", "Jeder vierte", "Jeder zehnte"], "answer": "Jeder zweite"},
-        {"id": "lq16", "type": "true-false", "question": "Ab 25 Jahren gibt es einen kostenlosen Hautkrebsscreening.", "answer": "false", "explanation": "Das Screening ist ab 35 Jahren."},
-        {"id": "lq17", "type": "mcq", "question": "Wie oft kann man das Screening machen?", "options": ["Jedes Jahr", "Alle zwei Jahre", "Alle fünf Jahre", "Einmal im Leben"], "answer": "Alle zwei Jahre"}
+        {
+          "id": "lq15",
+          "type": "mcq",
+          "question": "Wie viele Deutsche erkranken an Hautkrebs?",
+          "options": [
+            "Jeder dritte",
+            "Jeder zweite",
+            "Jeder vierte",
+            "Jeder zehnte"
+          ],
+          "answer": "Jeder zweite"
+        },
+        {
+          "id": "lq16",
+          "type": "true-false",
+          "question": "Ab 25 Jahren gibt es einen kostenlosen Hautkrebsscreening.",
+          "answer": "false",
+          "explanation": "Das Screening ist ab 35 Jahren."
+        },
+        {
+          "id": "lq17",
+          "type": "mcq",
+          "question": "Wie oft kann man das Screening machen?",
+          "options": [
+            "Jedes Jahr",
+            "Alle zwei Jahre",
+            "Alle fünf Jahre",
+            "Einmal im Leben"
+          ],
+          "answer": "Alle zwei Jahre"
+        }
       ]
     },
     {
@@ -76,9 +1845,36 @@
       "title": "Arzt-Patienten-Gespräch",
       "script": "Arzt: Guten Tag Herr Braun, was führt Sie zu mir?\nPatient: Guten Tag Herr Doktor, ich habe seit einer Woche starke Schmerzen im rechten Knie. Beim Treppensteigen ist es besonders schlimm.\nArzt: Haben Sie sich in letzter Zeit verletzt?\nPatient: Nein, die Schmerzen sind ohne Unfall gekommen.\nArzt: Dann machen wir erstmal ein Röntgenbild und schauen uns das Knie genauer an.",
       "questions": [
-        {"id": "lq18", "type": "mcq", "question": "Seit wann hat Herr Braun Schmerzen?", "options": ["Seit einem Tag", "Seit drei Tagen", "Seit einer Woche", "Seit einem Monat"], "answer": "Seit einer Woche"},
-        {"id": "lq19", "type": "true-false", "question": "Die Schmerzen kamen nach einem Unfall.", "answer": "false"},
-        {"id": "lq20", "type": "mcq", "question": "Was wird der Arzt als nächstes tun?", "options": ["Eine Überweisung ausstellen", "Ein Röntgenbild machen", "Eine Spritze geben", "Eine Operation planen"], "answer": "Ein Röntgenbild machen"}
+        {
+          "id": "lq18",
+          "type": "mcq",
+          "question": "Seit wann hat Herr Braun Schmerzen?",
+          "options": [
+            "Seit einem Tag",
+            "Seit drei Tagen",
+            "Seit einer Woche",
+            "Seit einem Monat"
+          ],
+          "answer": "Seit einer Woche"
+        },
+        {
+          "id": "lq19",
+          "type": "true-false",
+          "question": "Die Schmerzen kamen nach einem Unfall.",
+          "answer": "false"
+        },
+        {
+          "id": "lq20",
+          "type": "mcq",
+          "question": "Was wird der Arzt als nächstes tun?",
+          "options": [
+            "Eine Ãœberweisung ausstellen",
+            "Ein Röntgenbild machen",
+            "Eine Spritze geben",
+            "Eine Operation planen"
+          ],
+          "answer": "Ein Röntgenbild machen"
+        }
       ]
     },
     {
@@ -86,8 +1882,25 @@
       "title": "Nachrichten - Impfkampagne",
       "script": "Die Gesundheitsministerin hat heute eine neue Impfkampagne gestartet. Ziel ist es, die Impfquote gegen Grippe zu erhöhen. Besonders ältere Menschen und chronisch Kranke sollen von der Kampagne profitieren. Die Impfung ist in allen Arztpraxen und einigen Apotheken kostenlos erhältlich. Die Kampagne läuft bis Dezember.",
       "questions": [
-        {"id": "lq21", "type": "mcq", "question": "Was ist das Ziel der neuen Kampagne?", "options": ["Weniger Medikamente verschreiben", "Die Impfquote gegen Grippe erhöhen", "Mehr Ärzte einstellen", "Krankenhäuser modernisieren"], "answer": "Die Impfquote gegen Grippe erhöhen"},
-        {"id": "lq22", "type": "true-false", "question": "Die Impfung ist nur in Arztpraxen erhältlich.", "answer": "false", "explanation": "Die Impfung ist auch in einigen Apotheken erhältlich."}
+        {
+          "id": "lq21",
+          "type": "mcq",
+          "question": "Was ist das Ziel der neuen Kampagne?",
+          "options": [
+            "Weniger Medikamente verschreiben",
+            "Die Impfquote gegen Grippe erhöhen",
+            "Mehr Ã„rzte einstellen",
+            "Krankenhäuser modernisieren"
+          ],
+          "answer": "Die Impfquote gegen Grippe erhöhen"
+        },
+        {
+          "id": "lq22",
+          "type": "true-false",
+          "question": "Die Impfung ist nur in Arztpraxen erhältlich.",
+          "answer": "false",
+          "explanation": "Die Impfung ist auch in einigen Apotheken erhältlich."
+        }
       ]
     }
   ],
@@ -95,30 +1908,106 @@
     {
       "id": "B2_listen_1",
       "title": "Vortrag: Antibiotikaresistenzen",
-      "script": "Guten Abend, meine Damen und Herren. Ich freue mich, heute über eines der drängendsten Probleme der modernen Medizin zu sprechen: Antibiotikaresistenzen. Die Weltgesundheitsorganisation warnt: Wenn wir nicht handeln, könnten bis 2050 jährlich zehn Millionen Menschen an resistenten Keimen sterben. Die Hauptursache ist der übermäßige Einsatz von Antibiotika, sowohl in der Humanmedizin als auch in der Tiermast. Deutschland hat den Antibiotikaverbrauch in den letzten Jahren um 15 Prozent gesenkt, aber das reicht nicht. Wir brauchen dringend neue Wirkstoffe und einen verantwortungsvolleren Umgang mit den vorhandenen Ressourcen.",
+      "script": "Guten Abend, meine Damen und Herren. Ich freue mich, heute über eines der drängendsten Probleme der modernen Medizin zu sprechen: Antibiotikaresistenzen. Die Weltgesundheitsorganisation warnt: Wenn wir nicht handeln, könnten bis 2050 jährlich zehn Millionen Menschen an resistenten Keimen sterben. Die Hauptursache ist der übermäÃŸige Einsatz von Antibiotika, sowohl in der Humanmedizin als auch in der Tiermast. Deutschland hat den Antibiotikaverbrauch in den letzten Jahren um 15 Prozent gesenkt, aber das reicht nicht. Wir brauchen dringend neue Wirkstoffe und einen verantwortungsvolleren Umgang mit den vorhandenen Ressourcen.",
       "questions": [
-        {"id": "lq23", "type": "mcq", "question": "Wie viele Menschen könnten bis 2050 sterben?", "options": ["Eine Million", "Fünf Millionen", "Zehn Millionen", "Fünfzig Millionen"], "answer": "Zehn Millionen"},
-        {"id": "lq24", "type": "true-false", "question": "Der Antibiotikaverbrauch in Deutschland ist gestiegen.", "answer": "false"},
-        {"id": "lq25", "type": "mcq", "question": "Um wie viel Prozent wurde der Verbrauch gesenkt?", "options": ["5%", "10%", "15%", "20%"], "answer": "15%"}
+        {
+          "id": "lq23",
+          "type": "mcq",
+          "question": "Wie viele Menschen könnten bis 2050 sterben?",
+          "options": [
+            "Eine Million",
+            "Fünf Millionen",
+            "Zehn Millionen",
+            "Fünfzig Millionen"
+          ],
+          "answer": "Zehn Millionen"
+        },
+        {
+          "id": "lq24",
+          "type": "true-false",
+          "question": "Der Antibiotikaverbrauch in Deutschland ist gestiegen.",
+          "answer": "false"
+        },
+        {
+          "id": "lq25",
+          "type": "mcq",
+          "question": "Um wie viel Prozent wurde der Verbrauch gesenkt?",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "answer": "15%"
+        }
       ]
     },
     {
       "id": "B2_listen_2",
       "title": "Diskussion: Bürgerversicherung",
-      "script": "Moderator: Heute diskutieren wir über die Einführung einer Bürgerversicherung. Frau Dr. Schmidt von der Gesundheitsökonomie, was sind die Hauptargumente dafür?\nDr. Schmidt: Die Bürgerversicherung würde alle Bürger einschließen, unabhängig vom Einkommen. Das schafft Solidarität und senkt Verwaltungskosten.\nModerator: Herr Weber von der Ärztekammer, Ihre Meinung?\nHerr Weber: Die Bürgerversicherung könnte zu längeren Wartezeiten führen und die Wahlfreiheit der Patienten einschränken. Wir brauchen mehr Wettbewerb, nicht weniger.",
+      "script": "Moderator: Heute diskutieren wir über die Einführung einer Bürgerversicherung. Frau Dr. Schmidt von der Gesundheitsökonomie, was sind die Hauptargumente dafür?\nDr. Schmidt: Die Bürgerversicherung würde alle Bürger einschlieÃŸen, unabhängig vom Einkommen. Das schafft Solidarität und senkt Verwaltungskosten.\nModerator: Herr Weber von der Ã„rztekammer, Ihre Meinung?\nHerr Weber: Die Bürgerversicherung könnte zu längeren Wartezeiten führen und die Wahlfreiheit der Patienten einschränken. Wir brauchen mehr Wettbewerb, nicht weniger.",
       "questions": [
-        {"id": "lq26", "type": "mcq", "question": "Was ist ein Argument von Dr. Schmidt für die Bürgerversicherung?", "options": ["Mehr Wettbewerb", "Solidarität und niedrigere Verwaltungskosten", "Kürzere Wartezeiten", "Mehr private Krankenhäuser"], "answer": "Solidarität und niedrigere Verwaltungskosten"},
-        {"id": "lq27", "type": "mcq", "question": "Was befürchtet Herr Weber?", "options": ["Höhere Kosten", "Längere Wartezeiten und weniger Wahlfreiheit", "Weniger Ärzte", "Schlechtere Medikamente"], "answer": "Längere Wartezeiten und weniger Wahlfreiheit"}
+        {
+          "id": "lq26",
+          "type": "mcq",
+          "question": "Was ist ein Argument von Dr. Schmidt für die Bürgerversicherung?",
+          "options": [
+            "Mehr Wettbewerb",
+            "Solidarität und niedrigere Verwaltungskosten",
+            "Kürzere Wartezeiten",
+            "Mehr private Krankenhäuser"
+          ],
+          "answer": "Solidarität und niedrigere Verwaltungskosten"
+        },
+        {
+          "id": "lq27",
+          "type": "mcq",
+          "question": "Was befürchtet Herr Weber?",
+          "options": [
+            "Höhere Kosten",
+            "Längere Wartezeiten und weniger Wahlfreiheit",
+            "Weniger Ã„rzte",
+            "Schlechtere Medikamente"
+          ],
+          "answer": "Längere Wartezeiten und weniger Wahlfreiheit"
+        }
       ]
     },
     {
       "id": "B2_listen_3",
       "title": "Vorstellung einer Studie",
-      "script": "Ich möchte Ihnen die Ergebnisse einer randomisierten kontrollierten Studie vorstellen. Wir haben 500 Patienten mit Kniearthrose in zwei Gruppen eingeteilt. Die erste Gruppe erhielt Physiotherapie, die zweite Gruppe eine Kortisoninjektion. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine signifikant bessere Schmerzreduktion und Funktionsverbesserung. Die Injektionsgruppe hatte kurzfristig weniger Schmerzen, aber der Effekt ließ nach drei Monaten nach.",
+      "script": "Ich möchte Ihnen die Ergebnisse einer randomisierten kontrollierten Studie vorstellen. Wir haben 500 Patienten mit Kniearthrose in zwei Gruppen eingeteilt. Die erste Gruppe erhielt Physiotherapie, die zweite Gruppe eine Kortisoninjektion. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine signifikant bessere Schmerzreduktion und Funktionsverbesserung. Die Injektionsgruppe hatte kurzfristig weniger Schmerzen, aber der Effekt lieÃŸ nach drei Monaten nach.",
       "questions": [
-        {"id": "lq28", "type": "mcq", "question": "Wie viele Patienten nahmen an der Studie teil?", "options": ["100", "250", "500", "1000"], "answer": "500"},
-        {"id": "lq29", "type": "mcq", "question": "Welche Behandlung war nach 6 Monaten effektiver?", "options": ["Kortisoninjektion", "Physiotherapie", "Beide gleich", "Keine von beiden"], "answer": "Physiotherapie"},
-        {"id": "lq30", "type": "true-false", "question": "Die Kortisoninjektion hatte einen langanhaltenden Effekt.", "answer": "false"}
+        {
+          "id": "lq28",
+          "type": "mcq",
+          "question": "Wie viele Patienten nahmen an der Studie teil?",
+          "options": [
+            "100",
+            "250",
+            "500",
+            "1000"
+          ],
+          "answer": "500"
+        },
+        {
+          "id": "lq29",
+          "type": "mcq",
+          "question": "Welche Behandlung war nach 6 Monaten effektiver?",
+          "options": [
+            "Kortisoninjektion",
+            "Physiotherapie",
+            "Beide gleich",
+            "Keine von beiden"
+          ],
+          "answer": "Physiotherapie"
+        },
+        {
+          "id": "lq30",
+          "type": "true-false",
+          "question": "Die Kortisoninjektion hatte einen langanhaltenden Effekt.",
+          "answer": "false"
+        }
       ]
     }
   ],
@@ -126,11 +2015,38 @@
     {
       "id": "C1_listen_1",
       "title": "Interview: Digitalisierung im Krankenhaus",
-      "script": "Moderator: Der Chefarzt der Orthopädie, Professor Wagner, ist heute bei uns. Herr Professor, wie digital arbeitet Ihre Klinik?\nProf. Wagner: Wir haben vor zwei Jahren ein neues Krankenhausinformationssystem eingeführt. Die Patientenakten sind jetzt vollständig digital. Das hat die Arbeitsabläufe deutlich verbessert. Allerdings gibt es noch Probleme mit der Schnittstelle zu den Praxen.\nModerator: Welche Vorteile sehen Sie für Ihre Patienten?\nProf. Wagner: Die größte Verbesserung ist die Verfügbarkeit von Daten. Wenn ein Patient notfallmäßig kommt, haben wir sofort Zugriff auf Vorerkrankungen, Medikation und Allergien. Das rettet im Zweifel Leben. Gleichzeitig müssen wir die Datensicherheit gewährleisten, was eine ständige Herausforderung darstellt.",
+      "script": "Moderator: Der Chefarzt der Orthopädie, Professor Wagner, ist heute bei uns. Herr Professor, wie digital arbeitet Ihre Klinik?\nProf. Wagner: Wir haben vor zwei Jahren ein neues Krankenhausinformationssystem eingeführt. Die Patientenakten sind jetzt vollständig digital. Das hat die Arbeitsabläufe deutlich verbessert. Allerdings gibt es noch Probleme mit der Schnittstelle zu den Praxen.\nModerator: Welche Vorteile sehen Sie für Ihre Patienten?\nProf. Wagner: Die gröÃŸte Verbesserung ist die Verfügbarkeit von Daten. Wenn ein Patient notfallmäÃŸig kommt, haben wir sofort Zugriff auf Vorerkrankungen, Medikation und Allergien. Das rettet im Zweifel Leben. Gleichzeitig müssen wir die Datensicherheit gewährleisten, was eine ständige Herausforderung darstellt.",
       "questions": [
-        {"id": "lq31", "type": "mcq", "question": "Seit wann ist die Klinik digital?", "options": ["Seit einem Jahr", "Seit zwei Jahren", "Seit fünf Jahren", "Seit sechs Monaten"], "answer": "Seit zwei Jahren"},
-        {"id": "lq32", "type": "true-false", "question": "Die Digitalisierung hat alle Probleme gelöst.", "answer": "false"},
-        {"id": "lq33", "type": "mcq", "question": "Was ist der größte Vorteil der Digitalisierung für Patienten?", "options": ["Schnellere Untersuchungen", "Verfügbarkeit von Daten im Notfall", "Weniger Wartezeit", "Günstigere Behandlung"], "answer": "Verfügbarkeit von Daten im Notfall"}
+        {
+          "id": "lq31",
+          "type": "mcq",
+          "question": "Seit wann ist die Klinik digital?",
+          "options": [
+            "Seit einem Jahr",
+            "Seit zwei Jahren",
+            "Seit fünf Jahren",
+            "Seit sechs Monaten"
+          ],
+          "answer": "Seit zwei Jahren"
+        },
+        {
+          "id": "lq32",
+          "type": "true-false",
+          "question": "Die Digitalisierung hat alle Probleme gelöst.",
+          "answer": "false"
+        },
+        {
+          "id": "lq33",
+          "type": "mcq",
+          "question": "Was ist der gröÃŸte Vorteil der Digitalisierung für Patienten?",
+          "options": [
+            "Schnellere Untersuchungen",
+            "Verfügbarkeit von Daten im Notfall",
+            "Weniger Wartezeit",
+            "Günstigere Behandlung"
+          ],
+          "answer": "Verfügbarkeit von Daten im Notfall"
+        }
       ]
     },
     {
@@ -138,20 +2054,85 @@
       "title": "Vortrag: Medizintourismus",
       "script": "Der Medizintourismus hat in den letzten Jahren weltweit zugenommen. Patienten reisen ins Ausland, um dort Behandlungen zu erhalten, die im Heimatland zu teuer oder nicht verfügbar sind. Deutschland ist eines der Hauptzielländer, besonders für Patientinnen und Patienten aus dem Nahen Osten und Russland. Die Behandlungsschwerpunkte liegen in der Orthopädie, Onkologie und Kardiologie. Die deutsche Gesundheitswirtschaft erwirtschaftet damit jährlich mehrere Milliarden Euro. Kritisch anzumerken ist, dass der Medizintourismus zu einer Zweiklassenmedizin führen kann, wenn lokale Patienten von Ressourcen verdrängt werden.",
       "questions": [
-        {"id": "lq34", "type": "mcq", "question": "Was sind die Hauptzielländer des Medizintourismus?", "options": ["USA und Kanada", "Deutschland und andere Länder", "Nur Deutschland", "Asiatische Länder"], "answer": "Deutschland und andere Länder"},
-        {"id": "lq35", "type": "mcq", "question": "In welchen Bereichen ist Deutschland besonders gefragt?", "options": ["Zahnmedizin und Augenheilkunde", "Orthopädie, Onkologie und Kardiologie", "Psychiatrie und Neurologie", "Dermatologie und Pädiatrie"], "answer": "Orthopädie, Onkologie und Kardiologie"},
-        {"id": "lq36", "type": "true-false", "question": "Der Medizintourismus birgt keine Risiken für die lokale Gesundheitsversorgung.", "answer": "false"}
+        {
+          "id": "lq34",
+          "type": "mcq",
+          "question": "Was sind die Hauptzielländer des Medizintourismus?",
+          "options": [
+            "USA und Kanada",
+            "Deutschland und andere Länder",
+            "Nur Deutschland",
+            "Asiatische Länder"
+          ],
+          "answer": "Deutschland und andere Länder"
+        },
+        {
+          "id": "lq35",
+          "type": "mcq",
+          "question": "In welchen Bereichen ist Deutschland besonders gefragt?",
+          "options": [
+            "Zahnmedizin und Augenheilkunde",
+            "Orthopädie, Onkologie und Kardiologie",
+            "Psychiatrie und Neurologie",
+            "Dermatologie und Pädiatrie"
+          ],
+          "answer": "Orthopädie, Onkologie und Kardiologie"
+        },
+        {
+          "id": "lq36",
+          "type": "true-false",
+          "question": "Der Medizintourismus birgt keine Risiken für die lokale Gesundheitsversorgung.",
+          "answer": "false"
+        }
       ]
     },
     {
       "id": "C1_listen_3",
-      "title": "Podiumsdiskussion: Approbation für ausländische Ärzte",
-      "script": "Podiumsmoderator: In Deutschland arbeiten über 50.000 ausländische Ärzte. Der Prozess der Anerkennung ist jedoch langwierig. Frau Dr. Öztürk, Sie haben selbst diesen Weg durchlaufen.\nDr. Öztürk: Ja, ich bin aus der Türkei gekommen. Der bürokratische Aufwand war enorm. Ich musste jede Urkunde übersetzen und beglaubigen lassen. Die Fachsprachprüfung war die größte Hürde, obwohl ich schon C1 hatte. Der Ablauf ist: Dokumente einreichen, Äquivalenz prüfen, Kenntnisprüfung ablegen und dann die Approbation beantragen.\nModerator: Was würden Sie verbessern?\nDr. Öztürk: Die Anerkennung sollte digitaler und transparenter werden. Viele Ärzte geben auf, weil sie nicht wissen, wie lange der Prozess dauert oder wo sie genau stehen.",
+      "title": "Podiumsdiskussion: Approbation für ausländische Ã„rzte",
+      "script": "Podiumsmoderator: In Deutschland arbeiten über 50.000 ausländische Ã„rzte. Der Prozess der Anerkennung ist jedoch langwierig. Frau Dr. Ã–ztürk, Sie haben selbst diesen Weg durchlaufen.\nDr. Ã–ztürk: Ja, ich bin aus der Türkei gekommen. Der bürokratische Aufwand war enorm. Ich musste jede Urkunde übersetzen und beglaubigen lassen. Die Fachsprachprüfung war die gröÃŸte Hürde, obwohl ich schon C1 hatte. Der Ablauf ist: Dokumente einreichen, Ã„quivalenz prüfen, Kenntnisprüfung ablegen und dann die Approbation beantragen.\nModerator: Was würden Sie verbessern?\nDr. Ã–ztürk: Die Anerkennung sollte digitaler und transparenter werden. Viele Ã„rzte geben auf, weil sie nicht wissen, wie lange der Prozess dauert oder wo sie genau stehen.",
       "questions": [
-        {"id": "lq37", "type": "mcq", "question": "Wie viele ausländische Ärzte arbeiten in Deutschland?", "options": ["Über 10.000", "Über 30.000", "Über 50.000", "Über 100.000"], "answer": "Über 50.000"},
-        {"id": "lq38", "type": "mcq", "question": "Was war für Dr. Öztürk die größte Hürde?", "options": ["Die Dokumentenbeschaffung", "Die Fachsprachprüfung", "Die Wohnungssuche", "Die Visumbeantragung"], "answer": "Die Fachsprachprüfung"},
-        {"id": "lq39", "type": "true-false", "question": "Dr. Öztürk findet den Anerkennungsprozess gut strukturiert.", "answer": "false"},
-        {"id": "lq40", "type": "mcq", "question": "Was schlägt Dr. Öztürk zur Verbesserung vor?", "options": ["Weniger Ärzte aus dem Ausland", "Digitalisierung und mehr Transparenz", "Kürzere Prüfungen", "Mehr Sprachkurse"], "answer": "Digitalisierung und mehr Transparenz"}
+        {
+          "id": "lq37",
+          "type": "mcq",
+          "question": "Wie viele ausländische Ã„rzte arbeiten in Deutschland?",
+          "options": [
+            "Ãœber 10.000",
+            "Ãœber 30.000",
+            "Ãœber 50.000",
+            "Ãœber 100.000"
+          ],
+          "answer": "Ãœber 50.000"
+        },
+        {
+          "id": "lq38",
+          "type": "mcq",
+          "question": "Was war für Dr. Ã–ztürk die gröÃŸte Hürde?",
+          "options": [
+            "Die Dokumentenbeschaffung",
+            "Die Fachsprachprüfung",
+            "Die Wohnungssuche",
+            "Die Visumbeantragung"
+          ],
+          "answer": "Die Fachsprachprüfung"
+        },
+        {
+          "id": "lq39",
+          "type": "true-false",
+          "question": "Dr. Ã–ztürk findet den Anerkennungsprozess gut strukturiert.",
+          "answer": "false"
+        },
+        {
+          "id": "lq40",
+          "type": "mcq",
+          "question": "Was schlägt Dr. Ã–ztürk zur Verbesserung vor?",
+          "options": [
+            "Weniger Ã„rzte aus dem Ausland",
+            "Digitalisierung und mehr Transparenz",
+            "Kürzere Prüfungen",
+            "Mehr Sprachkurse"
+          ],
+          "answer": "Digitalisierung und mehr Transparenz"
+        }
       ]
     }
   ]

@@ -7,7 +7,7 @@ import { Shuffle, BookMarked, CheckCircle, XCircle, Brain } from 'lucide-react';
 
 export default function VocabularyPage() {
   const { levelId } = useParams();
-  const words = vocabData.filter(w => w.level === levelId) || [];
+  const words = (vocabData[levelId] || []);
   const [mode, setMode] = useState('browse');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);

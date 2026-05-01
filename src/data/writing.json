@@ -1,63 +1,1623 @@
 {
   "_comment": "Writing prompts per level. Each has id, level, title, prompt (task description), instructions, wordLimit, tips. Add more by following the format.",
   "A1": [
-    {"id": "A1_write_1", "title": "Anmeldeformular", "prompt": "Stellen Sie sich vor: Sie gehen zum Arzt. Füllen Sie ein fiktives Anmeldeformular aus. Schreiben Sie: Ihren Namen, Adresse, Geburtsdatum, Telefonnummer.", "instructions": "Schreiben Sie in Stichpunkten.", "wordLimit": 40, "tips": "Schreiben Sie: Name: ... Adresse: ... Geburtsdatum: ... Telefonnummer: ..."},
-    {"id": "A1_write_2", "title": "Einfache Vorstellung", "prompt": "Stellen Sie sich vor. Schreiben Sie 3-4 Sätze über sich.", "instructions": "Wer sind Sie? Wo wohnen Sie? Was machen Sie?", "wordLimit": 50, "tips": "Ich heiße ... Ich wohne in ... Ich bin Arzt/Ärztin."},
-    {"id": "A1_write_3", "title": "Termin vereinbaren", "prompt": "Schreiben Sie eine kurze Nachricht an die Praxis, um einen Termin zu vereinbaren.", "instructions": "Sagen Sie: Ihren Namen, warum Sie kommen wollen, und einen Wunschtermin.", "wordLimit": 50, "tips": "Guten Tag, ich bin ... Ich möchte einen Termin, weil ..."},
-    {"id": "A1_write_4", "title": "Meine Familie", "prompt": "Schreiben Sie 3 Sätze über Ihre Familie.", "instructions": "Wie viele Personen? Was machen sie?", "wordLimit": 50, "tips": "Meine Familie hat ... Personen. Meine Mutter ist ..."},
-    {"id": "A1_write_5", "title": "Meine Hobbys", "prompt": "Schreiben Sie, was Sie in Ihrer Freizeit gerne machen.", "instructions": "Nennen Sie 2-3 Hobbys.", "wordLimit": 40, "tips": "Ich mag ... In meiner Freizeit ..."},
-    {"id": "A1_write_6", "title": "Wie geht es Ihnen?", "prompt": "Schreiben Sie, wie es Ihnen heute geht und warum.", "instructions": "Schreiben Sie 2 Sätze.", "wordLimit": 30, "tips": "Mir geht es gut/schlecht, weil ..."},
-    {"id": "A1_write_7", "title": "Einladung", "prompt": "Laden Sie einen Freund zu Ihrer Geburtstagsfeier ein.", "instructions": "Schreiben Sie: Wann, wo und wie spät.", "wordLimit": 30, "tips": "Liebe/r ..., ich lade dich ein zu meinem Geburtstag am ... um ... Uhr."},
-    {"id": "A1_write_8", "title": "Kurze Wegbeschreibung", "prompt": "Beschreiben Sie den Weg vom Bahnhof zum Krankenhaus.", "instructions": "Benutzen Sie: geradeaus, links, rechts.", "wordLimit": 40, "tips": "Gehen Sie geradeaus. Dann links. Das Krankenhaus ist rechts."},
-    {"id": "A1_write_9", "title": "Lebensmittel einkaufen", "prompt": "Schreiben Sie eine kurze Einkaufsliste.", "instructions": "Schreiben Sie 5 Dinge, die Sie kaufen möchten.", "wordLimit": 20, "tips": "Milch, Brot, Äpfel, ..."},
-    {"id": "A1_write_10", "title": "Das Wetter", "prompt": "Beschreiben Sie das Wetter heute.", "instructions": "Schreiben Sie 2 Sätze.", "wordLimit": 30, "tips": "Heute ist es ... Die Sonne scheint / Es regnet."}
+    {
+      "id": "A1_write_1",
+      "title": "Anmeldeformular",
+      "prompt": "Stellen Sie sich vor: Sie gehen zum Arzt. Füllen Sie ein fiktives Anmeldeformular aus. Schreiben Sie: Ihren Namen, Adresse, Geburtsdatum, Telefonnummer.",
+      "instructions": "Schreiben Sie in Stichpunkten.",
+      "wordLimit": 40,
+      "tips": "Schreiben Sie: Name: ... Adresse: ... Geburtsdatum: ... Telefonnummer: ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_18"
+    },
+    {
+      "id": "A1_write_2",
+      "title": "Einfache Vorstellung",
+      "prompt": "Stellen Sie sich vor. Schreiben Sie 3-4 Sätze über sich.",
+      "instructions": "Wer sind Sie? Wo wohnen Sie? Was machen Sie?",
+      "wordLimit": 50,
+      "tips": "Ich heiÃŸe ... Ich wohne in ... Ich bin Arzt/Ã„rztin.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_19"
+    },
+    {
+      "id": "A1_write_3",
+      "title": "Termin vereinbaren",
+      "prompt": "Schreiben Sie eine kurze Nachricht an die Praxis, um einen Termin zu vereinbaren.",
+      "instructions": "Sagen Sie: Ihren Namen, warum Sie kommen wollen, und einen Wunschtermin.",
+      "wordLimit": 50,
+      "tips": "Guten Tag, ich bin ... Ich möchte einen Termin, weil ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_16"
+    },
+    {
+      "id": "A1_write_4",
+      "title": "Meine Familie",
+      "prompt": "Schreiben Sie 3 Sätze über Ihre Familie.",
+      "instructions": "Wie viele Personen? Was machen sie?",
+      "wordLimit": 50,
+      "tips": "Meine Familie hat ... Personen. Meine Mutter ist ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_25"
+    },
+    {
+      "id": "A1_write_5",
+      "title": "Meine Hobbys",
+      "prompt": "Schreiben Sie, was Sie in Ihrer Freizeit gerne machen.",
+      "instructions": "Nennen Sie 2-3 Hobbys.",
+      "wordLimit": 40,
+      "tips": "Ich mag ... In meiner Freizeit ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_22"
+    },
+    {
+      "id": "A1_write_6",
+      "title": "Wie geht es Ihnen?",
+      "prompt": "Schreiben Sie, wie es Ihnen heute geht und warum.",
+      "instructions": "Schreiben Sie 2 Sätze.",
+      "wordLimit": 30,
+      "tips": "Mir geht es gut/schlecht, weil ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_8"
+    },
+    {
+      "id": "A1_write_7",
+      "title": "Einladung",
+      "prompt": "Laden Sie einen Freund zu Ihrer Geburtstagsfeier ein.",
+      "instructions": "Schreiben Sie: Wann, wo und wie spät.",
+      "wordLimit": 30,
+      "tips": "Liebe/r ..., ich lade dich ein zu meinem Geburtstag am ... um ... Uhr.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_4"
+    },
+    {
+      "id": "A1_write_8",
+      "title": "Kurze Wegbeschreibung",
+      "prompt": "Beschreiben Sie den Weg vom Bahnhof zum Krankenhaus.",
+      "instructions": "Benutzen Sie: geradeaus, links, rechts.",
+      "wordLimit": 40,
+      "tips": "Gehen Sie geradeaus. Dann links. Das Krankenhaus ist rechts.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_15"
+    },
+    {
+      "id": "A1_write_9",
+      "title": "Lebensmittel einkaufen",
+      "prompt": "Schreiben Sie eine kurze Einkaufsliste.",
+      "instructions": "Schreiben Sie 5 Dinge, die Sie kaufen möchten.",
+      "wordLimit": 20,
+      "tips": "Milch, Brot, Ã„pfel, ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_9"
+    },
+    {
+      "id": "A1_write_10",
+      "title": "Das Wetter",
+      "prompt": "Beschreiben Sie das Wetter heute.",
+      "instructions": "Schreiben Sie 2 Sätze.",
+      "wordLimit": 30,
+      "tips": "Heute ist es ... Die Sonne scheint / Es regnet.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_3"
+    },
+    {
+      "lessonId": "A1_lesson_11",
+      "title": "Das Wetter beschreiben",
+      "prompt": "Beschreiben Sie das Wetter in Ihrer Stadt heute.",
+      "instructions": "Schreiben Sie: Wie ist das Wetter? Wie viel Grad? Scheint die Sonne oder regnet es?",
+      "wordLimit": 40,
+      "tips": "Heute ist es ... Grad. Die Sonne scheint / Es regnet. Der Himmel ist ...",
+      "id": "A1_write_11",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_12",
+      "title": "Meine Lieblingsfarbe",
+      "prompt": "Schreiben Sie ueber Ihre Lieblingsfarbe. Was ist Ihre Lieblingsfarbe? Welche Kleidung in dieser Farbe haben Sie?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 40,
+      "tips": "Meine Lieblingsfarbe ist ... Ich habe einen ... in ...",
+      "id": "A1_write_12",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_13",
+      "title": "Meine Familie vorstellen",
+      "prompt": "Stellen Sie Ihre Familie vor. Wie viele Personen? Wer sind sie? Was machen sie?",
+      "instructions": "Schreiben Sie 4 Saetze ueber Ihre Familie.",
+      "wordLimit": 60,
+      "tips": "Meine Familie hat ... Personen. Mein Vater ist ... Meine Mutter arbeitet als ...",
+      "id": "A1_write_13",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_14",
+      "title": "Mein Zimmer",
+      "prompt": "Beschreiben Sie Ihr Zimmer. Welche Moebel sind da? Welche Farben?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 50,
+      "tips": "Mein Zimmer ist ... Da ist ein ... Die Wände sind ...",
+      "id": "A1_write_14",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_15",
+      "title": "Mein typischer Tag",
+      "prompt": "Beschreiben Sie Ihren typischen Tagesablauf. Wann stehen Sie auf? Was machen Sie tagsueber? Wann gehen Sie ins Bett?",
+      "instructions": "Schreiben Sie 5 Saetze.",
+      "wordLimit": 80,
+      "tips": "Ich stehe um ... auf. Dann ... Um ... Uhr gehe ich zur Arbeit. Um ... Uhr esse ich zu Abend.",
+      "id": "A1_write_15",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_16",
+      "title": "Beim Arzt - Symptome beschreiben",
+      "prompt": "Sie sind beim Arzt. Beschreiben Sie Ihre Symptome. Was tut weh? Seit wann?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 50,
+      "tips": "Ich habe ... seit ... Tagen. Mein ... tut weh. Ich fühle mich ...",
+      "id": "A1_write_16",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_17",
+      "title": "Mein Lieblingstier",
+      "prompt": "Schreiben Sie ueber Ihr Lieblingstier. Wie heisst es? Welche Farbe hat es? Was mag es?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 40,
+      "tips": "Mein Lieblingstier ist ... Es ist ... und hat ... Es mag ...",
+      "id": "A1_write_17",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_18",
+      "title": "Meine Stadt",
+      "prompt": "Schreiben Sie ueber Ihre Stadt oder Ihr Dorf. Was gibt es? Was gefaellt Ihnen?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 50,
+      "tips": "Ich wohne in ... Es gibt einen ... und einen ... Mir gefaellt ...",
+      "id": "A1_write_18",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_19",
+      "title": "E-Mail an einen neuen Freund",
+      "prompt": "Schreiben Sie eine kurze E-Mail an einen neuen Freund. Stellen Sie sich vor.",
+      "instructions": "Schreiben Sie: Wer Sie sind, wo Sie wohnen, was Sie gern machen.",
+      "wordLimit": 60,
+      "tips": "Hallo ...! Ich heisse ... und wohne in ... Ich mag ...",
+      "id": "A1_write_19",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_20",
+      "title": "Im Cafe bestellen",
+      "prompt": "Sie sind im Cafe. Schreiben Sie, was Sie bestellen.",
+      "instructions": "Nennen Sie: Was Sie trinken und was Sie essen moechten.",
+      "wordLimit": 30,
+      "tips": "Ich moechte bitte einen ... und ein ...",
+      "id": "A1_write_20",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_21",
+      "title": "Mit dem Bus zur Arbeit",
+      "prompt": "Beschreiben Sie Ihren Weg zur Arbeit oder zur Schule. Welches Verkehrsmittel? Wie lange?",
+      "instructions": "Schreiben Sie 3 Saetze.",
+      "wordLimit": 50,
+      "tips": "Ich fahre mit dem ... zur Arbeit. Die Fahrt dauert ... Minuten.",
+      "id": "A1_write_21",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_22",
+      "title": "Telefonnotiz",
+      "prompt": "Sie bekommen einen Anruf von der Arztpraxis. Schreiben Sie die Nachricht auf.",
+      "instructions": "Schreiben Sie: Wer angerufen hat, warum, und was Sie tun sollen.",
+      "wordLimit": 50,
+      "tips": "Die Praxis Dr. ... hat angerufen. Ihr Termin am ... um ... Uhr wurde verschoben auf ...",
+      "id": "A1_write_22",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_23",
+      "title": "Einladung zum Geburtstag",
+      "prompt": "Schreiben Sie eine Einladung zu Ihrer Geburtstagsparty.",
+      "instructions": "Schreiben Sie: Wann, wo, wie spaet und was es gibt.",
+      "wordLimit": 40,
+      "tips": "Ich lade dich ein zu meinem Geburtstag am ... um ... Uhr bei mir zu Hause. Es gibt ...",
+      "id": "A1_write_23",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_24",
+      "title": "Einkaufsliste",
+      "prompt": "Sie gehen einkaufen. Schreiben Sie eine Einkaufsliste mit 5 Dingen.",
+      "instructions": "Schreiben Sie: Was Sie kaufen und wie viel (Menge).",
+      "wordLimit": 30,
+      "tips": "1 Liter Milch, 2 Aepfel, 500 Gramm Mehl, ...",
+      "id": "A1_write_24",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "lessonId": "A1_lesson_25",
+      "title": "Meine Schule / mein Kurs",
+      "prompt": "Schreiben Sie ueber Ihren Deutschkurs oder Ihre Schule.",
+      "instructions": "Schreiben Sie 3 Saetze. Wo lernen Sie? Wer ist Ihr Lehrer? Was lernen Sie?",
+      "wordLimit": 50,
+      "tips": "Ich lerne Deutsch in ... Mein Lehrer heisst ... Wir lernen ...",
+      "id": "A1_write_25",
+      "level": "A1",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
+        "vocabularyUse": "Angemessener Wortschatz",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt)",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung",
+        "appropriateRegister": "Angemessene Hoeflichkeitsform (Sie/du)"
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ]
+    },
+    {
+      "id": "A1_write_26",
+      "level": "A1",
+      "title": "Kurze Vorstellung",
+      "prompt": "Stellen Sie sich kurz vor. Schreiben Sie: Wie heissen Sie? Wie alt sind Sie? Woher kommen Sie? Wo wohnen Sie? Was machen Sie beruflich?",
+      "instructions": "Schreiben Sie 3-5 vollstaendige Saetze.",
+      "wordLimit": 40,
+      "tips": "Schreiben Sie: Ich heisse ... Ich bin ... Jahre alt. Ich komme aus ... Ich wohne in ... Ich bin ... von Beruf.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_1"
+    },
+    {
+      "id": "A1_write_27",
+      "level": "A1",
+      "title": "E-Mail an die Sprachschule",
+      "prompt": "Sie moechten einen Deutschkurs besuchen. Schreiben Sie eine kurze E-Mail an die Volkshochschule. Fragen Sie: Wann beginnt der Kurs? Wie viel kostet er? Wann ist der Unterricht?",
+      "instructions": "Schreiben Sie eine formelle E-Mail mit Anrede und Grussformel. 4-6 Saetze.",
+      "wordLimit": 60,
+      "tips": "Schreiben Sie: Sehr geehrte Damen und Herren, ... Ich moechte ... Fragen: Wann ...? Wie viel ...? Mit freundlichen Gruessen, ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_2"
+    },
+    {
+      "id": "A1_write_28",
+      "level": "A1",
+      "title": "Termin beim Arzt buchen",
+      "prompt": "Sie haben Rueckenschmerzen. Rufen Sie in der Praxis an und schreiben Sie eine Nachricht fuer die Terminbuchung. Sagen Sie: Wer Sie sind. Warum Sie einen Termin brauchen. Wann Sie Zeit haben.",
+      "instructions": "Schreiben Sie eine kurze Notiz mit 3-4 Informationen.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Mein Name ist ... Ich habe ... Koennte ich am ... kommen?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_3"
+    },
+    {
+      "id": "A1_write_29",
+      "level": "A1",
+      "title": "Termin absagen",
+      "prompt": "Sie haben einen Termin beim Arzt am Freitag. Sie koennen leider nicht kommen. Sagen Sie dem Arzt ab. Schreiben Sie: Wann der Termin ist. Warum Sie nicht kommen koennen. Ob Sie einen neuen Termin moechten.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Entschuldigen Sie sich.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Guten Tag, ... Leider kann ich am ... nicht kommen, weil ... Kann ich einen neuen Termin am ... haben?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_4"
+    },
+    {
+      "id": "A1_write_30",
+      "level": "A1",
+      "title": "Termin verschieben",
+      "prompt": "Sie haben einen Termin fuer Montag um 14:00 Uhr. Sie arbeiten an dem Tag. Schreiben Sie eine Nachricht und fragen Sie nach einem anderen Termin am Dienstag oder Mittwoch.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Schreiben Sie freundlich.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Hallo, ... Ich habe einen Termin am ... um ... Ich arbeite an dem Tag. Haben Sie am ... oder ... einen Termin frei?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_5"
+    },
+    {
+      "id": "A1_write_31",
+      "level": "A1",
+      "title": "Nachricht an einen Freund",
+      "prompt": "Schreiben Sie eine kurze Nachricht an Ihre Freundin Anna. Fragen Sie: Wie geht es ihr? Was macht sie am Wochenende? Ob sie mit Ihnen ins Kino gehen moechte?",
+      "instructions": "Schreiben Sie 4-5 Saetze. Benutzen Sie du.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Hallo Anna, ... Wie geht es dir? ... Am Wochenende ... Moechtest du ...?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_6"
+    },
+    {
+      "id": "A1_write_32",
+      "level": "A1",
+      "title": "Geburtstagseinladung",
+      "prompt": "Sie haben am Samstag Geburtstag. Schreiben Sie eine Einladung an einen Freund. Sagen Sie: Wann die Party ist. Wo die Party ist. Wann die Party beginnt. Was es zu essen und trinken gibt.",
+      "instructions": "Schreiben Sie 5-6 Saetze. Schreiben Sie freundlich.",
+      "wordLimit": 70,
+      "tips": "Schreiben Sie: Liebe/r ..., Ich lade dich herzlich zu meinem Geburtstag ein! ... Am ... um ... Bei mir zu Hause ... Es gibt ... Bitte sag mir bis ... Bescheid.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_7"
+    },
+    {
+      "id": "A1_write_33",
+      "level": "A1",
+      "title": "Antwort auf Einladung",
+      "prompt": "Ihr Freund Tom hat Sie zu seiner Geburtstagsparty eingeladen. Schreiben Sie eine Antwort. Sagen Sie: Danke fuer die Einladung. Ob Sie kommen koennen. Was Sie mitbringen.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Antworten Sie auf die Einladung.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Hallo Tom, ... Vielen Dank fuer die Einladung! Ich komme gerne. ... Ich bringe ... mit.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_8"
+    },
+    {
+      "id": "A1_write_34",
+      "level": "A1",
+      "title": "Nach dem Weg fragen",
+      "prompt": "Sie sind am Bahnhof und suchen das Krankenhaus. Schreiben Sie eine kurze Nachricht, um nach dem Weg zu fragen. Fragen Sie: Wie komme ich zum Krankenhaus? Wie lange dauert es zu Fuss? Gibt es einen Bus?",
+      "instructions": "Schreiben Sie 3-4 Fragen. Benutzen Sie Hoeflichkeitsform.",
+      "wordLimit": 40,
+      "tips": "Schreiben Sie: Entschuldigung, ... Wie komme ich zum ...? Wie weit ist es? ... Welcher Bus fahert dort hin? Vielen Dank.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_9"
+    },
+    {
+      "id": "A1_write_35",
+      "level": "A1",
+      "title": "Oeffnungszeiten erfragen",
+      "prompt": "Sie moechten zur Apotheke gehen. Schreiben Sie eine kurze Nachricht und fragen Sie nach den Oeffnungszeiten. Fragen Sie auch: Ob die Apotheke am Samstag geoeffnet hat? Ob es einen Notdienst gibt?",
+      "instructions": "Schreiben Sie 3-4 Saetze oder Fragen.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Guten Tag, ... Wann hat die Apotheke geoeffnet? ... Hat samstags geoeffnet? ... Gibt es einen Notdienst? ... Vielen Dank.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_10"
+    },
+    {
+      "id": "A1_write_36",
+      "level": "A1",
+      "title": "Nachricht an den Vermieter",
+      "prompt": "Sie haben eine Wohnung gefunden. Schreiben Sie eine kurze Nachricht an den Vermieter. Fragen Sie: Ist die Wohnung noch frei? Ab wann kann man einziehen? Wie hoch ist die Kaution? Kann man die Wohnung besichtigen?",
+      "instructions": "Schreiben Sie 4-5 Saetze. Schreiben Sie formell.",
+      "wordLimit": 70,
+      "tips": "Schreiben Sie: Sehr geehrte/r ..., Ich habe Ihre Anzeige gesehen. ... Ist die Wohnung noch frei? ... Ab wann kann ich einziehen? ... Wie hoch ist die Kaution? ... Mit freundlichen Gruessen, ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_11"
+    },
+    {
+      "id": "A1_write_37",
+      "level": "A1",
+      "title": "Einkaufsliste schreiben",
+      "prompt": "Sie gehen einkaufen. Schreiben Sie eine Einkaufsliste fuer die Woche. Schreiben Sie 8-10 Dinge, die Sie kaufen wollen. Schreiben Sie auch die Menge (z.B. 1 Liter, 500g, 2 Stueck).",
+      "instructions": "Schreiben Sie eine Liste mit Stichpunkten.",
+      "wordLimit": 30,
+      "tips": "Schreiben Sie: - 1 Liter Milch, - 2 Aepfel, - 500g Butter, - 1 Brot, - Kaese, - 6 Eier, - ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_12"
+    },
+    {
+      "id": "A1_write_38",
+      "level": "A1",
+      "title": "Mein Tagesablauf",
+      "prompt": "Schreiben Sie ueber Ihren typischen Tag. Beschreiben Sie: Wann stehen Sie auf? Was fruehstuecken Sie? Wann gehen Sie zur Arbeit/Schule? Wann essen Sie zu Mittag? Wann kochen Sie Abendessen? Wann gehen Sie ins Bett?",
+      "instructions": "Schreiben Sie 6-8 Saetze. Benutzen Sie Uhrzeiten.",
+      "wordLimit": 80,
+      "tips": "Schreiben Sie: Ich stehe um ... Uhr auf. Um ... Uhr fruehstuecke ich. Danach ... Um ... Uhr gehe ich zur Arbeit. Um ... Uhr ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_13"
+    },
+    {
+      "id": "A1_write_39",
+      "level": "A1",
+      "title": "Meine Familie",
+      "prompt": "Stellen Sie Ihre Familie vor. Schreiben Sie: Wie viele Personen sind in Ihrer Familie? Wie heissen sie? Wie alt sind sie? Was machen sie beruflich?",
+      "instructions": "Schreiben Sie 5-6 Saetze.",
+      "wordLimit": 70,
+      "tips": "Schreiben Sie: Meine Familie hat ... Personen. Das sind ... Mein Vater heisst ... und ist ... Jahre alt. Meine Mutter ... Ich habe einen Bruder/eine Schwester ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_14"
+    },
+    {
+      "id": "A1_write_40",
+      "level": "A1",
+      "title": "Mein Beruf / Mein Studium",
+      "prompt": "Schreiben Sie ueber Ihren Beruf oder Ihr Studium. Beschreiben Sie: Was machen Sie? Wo arbeiten/studieren Sie? Seit wann? Gefaellt es Ihnen? Was sind Ihre Aufgaben?",
+      "instructions": "Schreiben Sie 5-6 Saetze.",
+      "wordLimit": 70,
+      "tips": "Schreiben Sie: Ich bin ... von Beruf / Ich studiere ... Ich arbeite bei / an der ... Meine Aufgaben sind ... Der Beruf gefaellt mir, weil ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_15"
+    },
+    {
+      "id": "A1_write_41",
+      "level": "A1",
+      "title": "Anfrage in der Apotheke",
+      "prompt": "Sie haben Husten. Schreiben Sie eine kurze Nachricht an die Apotheke. Sagen Sie: Welche Symptome Sie haben. Ob Sie ein Medikament brauchen. Fragen Sie nach dem Preis.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Schreiben Sie hoeflich.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Guten Tag, ... Ich habe Husten und ... Brauchen Sie ein Rezept oder gibt es ein Medikament ohne Rezept? Wie viel kostet es?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_16"
+    },
+    {
+      "id": "A1_write_42",
+      "level": "A1",
+      "title": "Symptome beschreiben",
+      "prompt": "Sie fuehlen sich krank. Schreiben Sie eine kurze Beschreibung fuer den Arzt. Sagen Sie: Welche Symptome Sie haben. Seit wann. Haben Sie Fieber? Welche Temperatur?",
+      "instructions": "Schreiben Sie 4-5 Saetze.",
+      "wordLimit": 60,
+      "tips": "Schreiben Sie: Seit ... Tagen habe ich ... Ich habe auch ... und ... Meine Temperatur ist ... Grad. Ich fuehle mich ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_17"
+    },
+    {
+      "id": "A1_write_43",
+      "level": "A1",
+      "title": "Anmeldebogen ausfuellen",
+      "prompt": "Sie sind in der Praxis. Fuellen Sie einen kurzen Anmeldebogen aus. Schreiben Sie: Ihren vollstaendigen Namen. Ihre Adresse. Ihr Geburtsdatum. Ihre Telefonnummer. Ihre Versicherung.",
+      "instructions": "Schreiben Sie in Stichpunkten oder kurzen Saetzen.",
+      "wordLimit": 40,
+      "tips": "Schreiben Sie: Name: ... Adresse: ... Geburtsdatum: ... Telefon: ... Versicherung: ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_18"
+    },
+    {
+      "id": "A1_write_44",
+      "level": "A1",
+      "title": "Hotelzimmer reservieren",
+      "prompt": "Sie wollen naechste Woche nach Berlin reisen. Schreiben Sie eine kurze E-Mail an ein Hotel. Fragen Sie: Ist ein Einzelzimmer frei? Wie viel kostet es? Gibt es Fruehstueck? Koennen Sie ab dem 15. Mai einchecken?",
+      "instructions": "Schreiben Sie 4-5 Saetze. Schreiben Sie formell.",
+      "wordLimit": 70,
+      "tips": "Schreiben Sie: Sehr geehrte Damen und Herren, ... Ich moechte ein Einzelzimmer vom ... bis ... reservieren. ... Wie viel kostet das Zimmer pro Nacht? ... Ist Fruehstueck inklusive? ... Mit freundlichen Gruessen, ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_19"
+    },
+    {
+      "id": "A1_write_45",
+      "level": "A1",
+      "title": "Tisch reservieren im Restaurant",
+      "prompt": "Sie wollen am Samstag mit einem Freund essen gehen. Schreiben Sie eine Nachricht an das Restaurant und reservieren Sie einen Tisch. Sagen Sie: Fuer wie viele Personen. An welchem Tag. Um wie viel Uhr. Ihr Name.",
+      "instructions": "Schreiben Sie 3-4 Saetze.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Guten Tag, ... Ich moechte einen Tisch fuer ... Personen am ... um ... Uhr reservieren. ... Mein Name ist ... Vielen Dank.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_20"
+    },
+    {
+      "id": "A1_write_46",
+      "level": "A1",
+      "title": "Mein Wochenende",
+      "prompt": "Schreiben Sie, was Sie am letzten Wochenende gemacht haben. Beschreiben Sie: Was haben Sie am Samstag gemacht? Was haben Sie am Sonntag gemacht? Hat es Ihnen gefallen?",
+      "instructions": "Schreiben Sie 5-6 Saetze. Benutzen Sie die Vergangenheit (Perfekt oder Praeteritum von haben/sein).",
+      "wordLimit": 80,
+      "tips": "Schreiben Sie: Am Samstag bin ich ... gegangen. ... habe ich ... gemacht. Am Sonntag habe ich ... Das Wochenende war ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_21"
+    },
+    {
+      "id": "A1_write_47",
+      "level": "A1",
+      "title": "Das Wetter beschreiben",
+      "prompt": "Schreiben Sie ueber das Wetter heute und morgen. Beschreiben Sie: Wie ist das Wetter heute? Wie wird das Wetter morgen sein? Welche Kleidung ziehen Sie an?",
+      "instructions": "Schreiben Sie 4-5 Saetze.",
+      "wordLimit": 60,
+      "tips": "Schreiben Sie: Heute scheint die Sonne / regnet es. Die Temperatur ist ... Grad. Morgen wird es ... Ich ziehe eine Jacke / einen Pullover an, weil ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_22"
+    },
+    {
+      "id": "A1_write_48",
+      "level": "A1",
+      "title": "Fundsache melden",
+      "prompt": "Sie haben Ihren Rucksack im Bus verloren. Schreiben Sie eine Nachricht an das Fundbuero. Beschreiben Sie: Wo und wann haben Sie ihn verloren? Wie sieht der Rucksack aus? Was ist drin? Ihre Kontaktdaten.",
+      "instructions": "Schreiben Sie 5-6 Saetze.",
+      "wordLimit": 80,
+      "tips": "Schreiben Sie: Sehr geehrte Damen und Herren, ... Ich habe am ... im Bus ... meinen Rucksack verloren. ... Er ist ... und hat ... Farbe. ... Inhalt: ... Bitte rufen Sie mich an unter ... Mit freundlichen Gruessen, ...",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_23"
+    },
+    {
+      "id": "A1_write_49",
+      "level": "A1",
+      "title": "Dankeschoen sagen",
+      "prompt": "Ihr Freund Thomas hat Ihnen bei einem Umzug geholfen. Schreiben Sie ihm eine kurze Nachricht. Bedanken Sie sich. Sagen Sie, dass die Hilfe sehr nett war. Vielleicht einladen zum Kaffee als Dank.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Benutzen Sie du.",
+      "wordLimit": 50,
+      "tips": "Schreiben Sie: Hallo Thomas, ... Vielen Dank fuer deine Hilfe beim Umzug! ... Ohne dich haette ich das nicht geschafft. ... Hast du am Wochenende Zeit fuer einen Kaffee?",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_24"
+    },
+    {
+      "id": "A1_write_50",
+      "level": "A1",
+      "title": "Entschuldigungsnachricht",
+      "prompt": "Sie hatten gestern einen Termin bei der Ärztin, aber Sie sind nicht gekommen. Schreiben Sie eine Entschuldigung. Sagen Sie: Entschuldigung fuer das Nichtkommen. Der Grund. Ob Sie einen neuen Termin moechten.",
+      "instructions": "Schreiben Sie 3-4 Saetze. Entschuldigen Sie sich hoeflich.",
+      "wordLimit": 60,
+      "tips": "Schreiben Sie: Guten Tag, ... Ich moechte mich entschuldigen, dass ich gestern nicht zum Termin gekommen bin. ... Ich war leider krank. ... Kann ich einen neuen Termin bekommen? ... Vielen Dank.",
+      "rubric": {
+        "taskCompletion": "Vollstaendigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
+        "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
+        "vocabularyUse": "Angemessener Wortschatz und Wortwahl.",
+        "wordOrder": "Satzstellung (Subjekt-Verb-Objekt, Position von Zeit- und Ortsangaben).",
+        "spellingCapitalization": "Rechtschreibung und Grossschreibung (Nomen, Satzanfang, Sie/du).",
+        "appropriateRegister": "Angemessene Hoefflichkeitsform (Sie/du) und Ton."
+      },
+      "rubricKeys": [
+        "taskCompletion",
+        "grammarAccuracy",
+        "vocabularyUse",
+        "wordOrder",
+        "spellingCapitalization",
+        "appropriateRegister"
+      ],
+      "lessonId": "A1_lesson_25"
+    }
   ],
   "A2": [
-    {"id": "A2_write_1", "title": "Terminabsage", "prompt": "Sie können Ihren Arzttermin nicht einhalten. Schreiben Sie eine kurze E-Mail an die Praxis.", "instructions": "Entschuldigen Sie sich, nennen Sie den ursprünglichen Termin, schlagen Sie einen neuen vor.", "wordLimit": 60, "tips": "Sehr geehrte Damen und Herren, leider kann ich meinen Termin am ... nicht wahrnehmen. Können wir auf ... verschieben? Mit freundlichen Grüßen"},
-    {"id": "A2_write_2", "title": "Einladung zum Abendessen", "prompt": "Laden Sie einen Kollegen zum Abendessen ein.", "instructions": "Schreiben Sie eine kurze E-Mail mit Datum, Uhrzeit und Ort.", "wordLimit": 60, "tips": "Lieber Kollege, ich lade Sie zum Abendessen am ... um ... Uhr im Restaurant ... ein."},
-    {"id": "A2_write_3", "title": "Kurze Entschuldigung", "prompt": "Schreiben Sie eine Entschuldigung an Ihren Chef, warum Sie gestern nicht zur Arbeit kommen konnten.", "instructions": "Nennen Sie den Grund und entschuldigen Sie sich.", "wordLimit": 50, "tips": "Sehr geehrter Herr ..., leider konnte ich gestern nicht kommen, weil ich krank war."},
-    {"id": "A2_write_4", "title": "Hotelbuchung", "prompt": "Sie möchten ein Hotelzimmer in Berlin buchen. Schreiben Sie eine kurze Anfrage.", "instructions": "Fragen Sie nach: Preis, Verfügbarkeit, Frühstück.", "wordLimit": 60, "tips": "Guten Tag, ich möchte ein Einzelzimmer vom ... bis zum ... buchen. Wie viel kostet es?"},
-    {"id": "A2_write_5", "title": "Beschwerde über Lärm", "prompt": "Schreiben Sie eine kurze Beschwerde an Ihren Vermieter. Der Nachbar macht nachts laute Musik.", "instructions": "Beschreiben Sie das Problem und bitten Sie um Lösung.", "wordLimit": 60, "tips": "Sehr geehrter Herr ..., seit einer Woche höre ich nachts laute Musik von der Wohnung nebenan."},
-    {"id": "A2_write_6", "title": "Geschenkempfehlung", "prompt": "Ihr Freund hat Geburtstag. Welches Geschenk empfehlen Sie? Schreiben Sie eine kurze Nachricht.", "instructions": "Nennen Sie das Geschenk und warum.", "wordLimit": 50, "tips": "Ich empfehle dir ein Buch, weil du gern liest."},
-    {"id": "A2_write_7", "title": "Eine Reise beschreiben", "prompt": "Beschreiben Sie Ihre letzte Reise.", "instructions": "Wohin sind Sie gefahren? Was haben Sie gemacht? Wie war es?", "wordLimit": 70, "tips": "Letzten Monat bin ich nach München gefahren. Ich habe den Marienplatz besucht."},
-    {"id": "A2_write_8", "title": "Über eine Verletzung berichten", "prompt": "Sie haben sich beim Sport verletzt. Schreiben Sie dem Arzt, was passiert ist.", "instructions": "Wann, wo und wie ist es passiert?", "wordLimit": 60, "tips": "Gestern beim Fußball bin ich umgeknickt. Mein Knöchel tut weh."},
-    {"id": "A2_write_9", "title": "Nachrichten hinterlassen", "prompt": "Hinterlassen Sie Ihrem Mitbewohner eine kurze Nachricht.", "instructions": "Sagen Sie: Wo Sie sind, wann Sie zurückkommen, ob er etwas erledigen soll.", "wordLimit": 40, "tips": "Bin beim Einkaufen. Komme um 18 Uhr zurück. Kannst du die Wäsche aufhängen?"},
-    {"id": "A2_write_10", "title": "Ein Wochenende planen", "prompt": "Schreiben Sie Ihrem Freund, was Sie am Wochenende gemeinsam unternehmen können.", "instructions": "Machen Sie 2-3 Vorschläge.", "wordLimit": 60, "tips": "Hast du Lust, am Samstag ins Kino zu gehen? Oder lieber spazieren?"}
+    {
+      "id": "A2_write_1",
+      "title": "Terminabsage",
+      "prompt": "Sie können Ihren Arzttermin nicht einhalten. Schreiben Sie eine kurze E-Mail an die Praxis.",
+      "instructions": "Entschuldigen Sie sich, nennen Sie den ursprünglichen Termin, schlagen Sie einen neuen vor.",
+      "wordLimit": 60,
+      "tips": "Sehr geehrte Damen und Herren, leider kann ich meinen Termin am ... nicht wahrnehmen. Können wir auf ... verschieben? Mit freundlichen GrüÃŸen"
+    },
+    {
+      "id": "A2_write_2",
+      "title": "Einladung zum Abendessen",
+      "prompt": "Laden Sie einen Kollegen zum Abendessen ein.",
+      "instructions": "Schreiben Sie eine kurze E-Mail mit Datum, Uhrzeit und Ort.",
+      "wordLimit": 60,
+      "tips": "Lieber Kollege, ich lade Sie zum Abendessen am ... um ... Uhr im Restaurant ... ein."
+    },
+    {
+      "id": "A2_write_3",
+      "title": "Kurze Entschuldigung",
+      "prompt": "Schreiben Sie eine Entschuldigung an Ihren Chef, warum Sie gestern nicht zur Arbeit kommen konnten.",
+      "instructions": "Nennen Sie den Grund und entschuldigen Sie sich.",
+      "wordLimit": 50,
+      "tips": "Sehr geehrter Herr ..., leider konnte ich gestern nicht kommen, weil ich krank war."
+    },
+    {
+      "id": "A2_write_4",
+      "title": "Hotelbuchung",
+      "prompt": "Sie möchten ein Hotelzimmer in Berlin buchen. Schreiben Sie eine kurze Anfrage.",
+      "instructions": "Fragen Sie nach: Preis, Verfügbarkeit, Frühstück.",
+      "wordLimit": 60,
+      "tips": "Guten Tag, ich möchte ein Einzelzimmer vom ... bis zum ... buchen. Wie viel kostet es?"
+    },
+    {
+      "id": "A2_write_5",
+      "title": "Beschwerde über Lärm",
+      "prompt": "Schreiben Sie eine kurze Beschwerde an Ihren Vermieter. Der Nachbar macht nachts laute Musik.",
+      "instructions": "Beschreiben Sie das Problem und bitten Sie um Lösung.",
+      "wordLimit": 60,
+      "tips": "Sehr geehrter Herr ..., seit einer Woche höre ich nachts laute Musik von der Wohnung nebenan."
+    },
+    {
+      "id": "A2_write_6",
+      "title": "Geschenkempfehlung",
+      "prompt": "Ihr Freund hat Geburtstag. Welches Geschenk empfehlen Sie? Schreiben Sie eine kurze Nachricht.",
+      "instructions": "Nennen Sie das Geschenk und warum.",
+      "wordLimit": 50,
+      "tips": "Ich empfehle dir ein Buch, weil du gern liest."
+    },
+    {
+      "id": "A2_write_7",
+      "title": "Eine Reise beschreiben",
+      "prompt": "Beschreiben Sie Ihre letzte Reise.",
+      "instructions": "Wohin sind Sie gefahren? Was haben Sie gemacht? Wie war es?",
+      "wordLimit": 70,
+      "tips": "Letzten Monat bin ich nach München gefahren. Ich habe den Marienplatz besucht."
+    },
+    {
+      "id": "A2_write_8",
+      "title": "Ãœber eine Verletzung berichten",
+      "prompt": "Sie haben sich beim Sport verletzt. Schreiben Sie dem Arzt, was passiert ist.",
+      "instructions": "Wann, wo und wie ist es passiert?",
+      "wordLimit": 60,
+      "tips": "Gestern beim FuÃŸball bin ich umgeknickt. Mein Knöchel tut weh."
+    },
+    {
+      "id": "A2_write_9",
+      "title": "Nachrichten hinterlassen",
+      "prompt": "Hinterlassen Sie Ihrem Mitbewohner eine kurze Nachricht.",
+      "instructions": "Sagen Sie: Wo Sie sind, wann Sie zurückkommen, ob er etwas erledigen soll.",
+      "wordLimit": 40,
+      "tips": "Bin beim Einkaufen. Komme um 18 Uhr zurück. Kannst du die Wäsche aufhängen?"
+    },
+    {
+      "id": "A2_write_10",
+      "title": "Ein Wochenende planen",
+      "prompt": "Schreiben Sie Ihrem Freund, was Sie am Wochenende gemeinsam unternehmen können.",
+      "instructions": "Machen Sie 2-3 Vorschläge.",
+      "wordLimit": 60,
+      "tips": "Hast du Lust, am Samstag ins Kino zu gehen? Oder lieber spazieren?"
+    }
   ],
   "B1": [
-    {"id": "B1_write_1", "title": "Formelle E-Mail - Praktikumsbewerbung", "prompt": "Sie möchten ein Praktikum in einer orthopädischen Klinik in Deutschland machen. Schreiben Sie eine formelle Bewerbungs-E-Mail.", "instructions": "Stellen Sie sich vor, nennen Sie Ihre Qualifikationen, erklären Sie Ihr Interesse.", "wordLimit": 150, "tips": "Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um ein Praktikum ... Ich bin Arzt mit Erfahrung in ..."},
-    {"id": "B1_write_2", "title": "Ein Forum-Beitrag", "prompt": "In einem Online-Forum wird gefragt: 'Ist es schwer, als ausländischer Arzt in Deutschland zu arbeiten?' Schreiben Sie Ihre Meinung.", "instructions": "Geben Sie Ihre Meinung, nennen Sie 2-3 Argumente.", "wordLimit": 120, "tips": "Meiner Meinung nach ... Einerseits ..., andererseits ..."},
-    {"id": "B1_write_3", "title": "Beschwerdebrief", "prompt": "Sie haben im Restaurant schlecht gegessen. Schreiben Sie eine Beschwerde.", "instructions": "Beschreiben Sie das Problem, sagen Sie, was Sie erwarten.", "wordLimit": 100, "tips": "Sehr geehrte Damen und Herren, am ... habe ich bei Ihnen gegessen. Leider war ..."},
-    {"id": "B1_write_4", "title": "Erfahrungsbericht", "prompt": "Schreiben Sie über Ihre Erfahrungen als Arzt in der Orthopädie.", "instructions": "Was haben Sie gelernt? Was war besonders? Was war schwierig?", "wordLimit": 150, "tips": "In meiner Zeit in der Orthopädie habe ich gelernt, dass ... Besonders interessant war ..."},
-    {"id": "B1_write_5", "title": "Einen Freund beraten", "prompt": "Ihr Freund hat Rückenschmerzen und fragt Sie um Rat. Schreiben Sie ihm eine Nachricht.", "instructions": "Geben Sie 2-3 Ratschläge.", "wordLimit": 100, "tips": "Ich empfehle dir, einen Orthopäden aufzusuchen. Du solltest auch ..."},
-    {"id": "B1_write_6", "title": "Danke sagen", "prompt": "Schreiben Sie einem Kollegen, der Ihnen bei einer schwierigen Operation geholfen hat, eine Dankes-E-Mail.", "instructions": "Bedanken Sie sich, nennen Sie den konkreten Grund, bieten Sie Hilfe an.", "wordLimit": 100, "tips": "Lieber Kollege, ich möchte mich herzlich für deine Hilfe bei der Operation gestern bedanken."},
-    {"id": "B1_write_7", "title": "Pro und Contra: Homeoffice", "prompt": "Schreiben Sie einen kurzen Text über die Vor- und Nachteile von Homeoffice für Ärzte.", "instructions": "Nennen Sie zwei Vorteile und zwei Nachteile.", "wordLimit": 120, "tips": "Ein Vorteil von Homeoffice ist ... Ein Nachteil ist jedoch ..."},
-    {"id": "B1_write_8", "title": "Informeller Brief", "prompt": "Schreiben Sie einem Freund, warum Sie nach Deutschland ziehen möchten.", "instructions": "Erzählen Sie von Ihren Plänen und Träumen.", "wordLimit": 100, "tips": "Lieber ..., ich habe mich entschieden, nach Deutschland zu gehen. Ich möchte dort Orthopäde werden."},
-    {"id": "B1_write_9", "title": "Zusammenfassung eines Artikels", "prompt": "Fassen Sie folgenden Satz zusammen: 'Die WHO empfiehlt mindestens 150 Minuten Bewegung pro Woche für Erwachsene.'", "instructions": "Schreiben Sie den Satz in Ihren eigenen Worten.", "wordLimit": 40, "tips": "Laut WHO sollten Erwachsene sich pro Woche mindestens 150 Minuten bewegen."},
-    {"id": "B1_write_10", "title": "Eine Idee vorschlagen", "prompt": "Ihre Klinik möchte die Patientenversorgung verbessern. Machen Sie einen Vorschlag.", "instructions": "Beschreiben Sie Ihre Idee und begründen Sie sie.", "wordLimit": 120, "tips": "Ich schlage vor, dass wir ... Dies wäre vorteilhaft, weil ..."}
+    {
+      "id": "B1_write_1",
+      "title": "Formelle E-Mail - Praktikumsbewerbung",
+      "prompt": "Sie möchten ein Praktikum in einer orthopädischen Klinik in Deutschland machen. Schreiben Sie eine formelle Bewerbungs-E-Mail.",
+      "instructions": "Stellen Sie sich vor, nennen Sie Ihre Qualifikationen, erklären Sie Ihr Interesse.",
+      "wordLimit": 150,
+      "tips": "Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um ein Praktikum ... Ich bin Arzt mit Erfahrung in ..."
+    },
+    {
+      "id": "B1_write_2",
+      "title": "Ein Forum-Beitrag",
+      "prompt": "In einem Online-Forum wird gefragt: 'Ist es schwer, als ausländischer Arzt in Deutschland zu arbeiten?' Schreiben Sie Ihre Meinung.",
+      "instructions": "Geben Sie Ihre Meinung, nennen Sie 2-3 Argumente.",
+      "wordLimit": 120,
+      "tips": "Meiner Meinung nach ... Einerseits ..., andererseits ..."
+    },
+    {
+      "id": "B1_write_3",
+      "title": "Beschwerdebrief",
+      "prompt": "Sie haben im Restaurant schlecht gegessen. Schreiben Sie eine Beschwerde.",
+      "instructions": "Beschreiben Sie das Problem, sagen Sie, was Sie erwarten.",
+      "wordLimit": 100,
+      "tips": "Sehr geehrte Damen und Herren, am ... habe ich bei Ihnen gegessen. Leider war ..."
+    },
+    {
+      "id": "B1_write_4",
+      "title": "Erfahrungsbericht",
+      "prompt": "Schreiben Sie über Ihre Erfahrungen als Arzt in der Orthopädie.",
+      "instructions": "Was haben Sie gelernt? Was war besonders? Was war schwierig?",
+      "wordLimit": 150,
+      "tips": "In meiner Zeit in der Orthopädie habe ich gelernt, dass ... Besonders interessant war ..."
+    },
+    {
+      "id": "B1_write_5",
+      "title": "Einen Freund beraten",
+      "prompt": "Ihr Freund hat Rückenschmerzen und fragt Sie um Rat. Schreiben Sie ihm eine Nachricht.",
+      "instructions": "Geben Sie 2-3 Ratschläge.",
+      "wordLimit": 100,
+      "tips": "Ich empfehle dir, einen Orthopäden aufzusuchen. Du solltest auch ..."
+    },
+    {
+      "id": "B1_write_6",
+      "title": "Danke sagen",
+      "prompt": "Schreiben Sie einem Kollegen, der Ihnen bei einer schwierigen Operation geholfen hat, eine Dankes-E-Mail.",
+      "instructions": "Bedanken Sie sich, nennen Sie den konkreten Grund, bieten Sie Hilfe an.",
+      "wordLimit": 100,
+      "tips": "Lieber Kollege, ich möchte mich herzlich für deine Hilfe bei der Operation gestern bedanken."
+    },
+    {
+      "id": "B1_write_7",
+      "title": "Pro und Contra: Homeoffice",
+      "prompt": "Schreiben Sie einen kurzen Text über die Vor- und Nachteile von Homeoffice für Ã„rzte.",
+      "instructions": "Nennen Sie zwei Vorteile und zwei Nachteile.",
+      "wordLimit": 120,
+      "tips": "Ein Vorteil von Homeoffice ist ... Ein Nachteil ist jedoch ..."
+    },
+    {
+      "id": "B1_write_8",
+      "title": "Informeller Brief",
+      "prompt": "Schreiben Sie einem Freund, warum Sie nach Deutschland ziehen möchten.",
+      "instructions": "Erzählen Sie von Ihren Plänen und Träumen.",
+      "wordLimit": 100,
+      "tips": "Lieber ..., ich habe mich entschieden, nach Deutschland zu gehen. Ich möchte dort Orthopäde werden."
+    },
+    {
+      "id": "B1_write_9",
+      "title": "Zusammenfassung eines Artikels",
+      "prompt": "Fassen Sie folgenden Satz zusammen: 'Die WHO empfiehlt mindestens 150 Minuten Bewegung pro Woche für Erwachsene.'",
+      "instructions": "Schreiben Sie den Satz in Ihren eigenen Worten.",
+      "wordLimit": 40,
+      "tips": "Laut WHO sollten Erwachsene sich pro Woche mindestens 150 Minuten bewegen."
+    },
+    {
+      "id": "B1_write_10",
+      "title": "Eine Idee vorschlagen",
+      "prompt": "Ihre Klinik möchte die Patientenversorgung verbessern. Machen Sie einen Vorschlag.",
+      "instructions": "Beschreiben Sie Ihre Idee und begründen Sie sie.",
+      "wordLimit": 120,
+      "tips": "Ich schlage vor, dass wir ... Dies wäre vorteilhaft, weil ..."
+    }
   ],
   "B2": [
-    {"id": "B2_write_1", "title": "Argumentative Essay: Tierversuche", "prompt": "Sollten Tierversuche in der medizinischen Forschung erlaubt sein? Schreiben Sie einen argumentativen Text.", "instructions": "Nennen Sie Pro- und Contra-Argumente, geben Sie Ihre Meinung.", "wordLimit": 200, "tips": "In der medizinischen Forschung sind Tierversuche ein kontroverses Thema. Einerseits ..., andererseits ..."},
-    {"id": "B2_write_2", "title": "Formelle Beschwerde an die Krankenkasse", "prompt": "Ihre Krankenkasse hat eine Behandlung nicht übernommen. Schreiben Sie einen formellen Widerspruch.", "instructions": "Beziehen Sie sich auf Ihren Antrag, nennen Sie die Gründe für den Widerspruch.", "wordLimit": 180, "tips": "Sehr geehrte Damen und Herren, mit Bezug auf Ihr Schreiben vom ... lege ich Widerspruch ein."},
-    {"id": "B2_write_3", "title": "Diskussionsbeitrag: Digitalisierung im Gesundheitswesen", "prompt": "In einem Fachforum wird über die Digitalisierung im Gesundheitswesen diskutiert. Schreiben Sie Ihren Beitrag.", "instructions": "Nehmen Sie Stellung, nennen Sie Vorteile und Risiken.", "wordLimit": 200, "tips": "Die Digitalisierung bietet enorme Chancen, birgt aber auch Risiken. Aus meiner Erfahrung ..."},
-    {"id": "B2_write_4", "title": "Essay: Prävention statt Behandlung", "prompt": "Warum ist Prävention im Gesundheitswesen so wichtig? Schreiben Sie einen Essay.", "instructions": "Argumentieren Sie mit Beispielen.", "wordLimit": 220, "tips": "Prävention ist kosteneffizienter als Behandlung. Zum Beispiel können durch Impfungen schwere Erkrankungen vermieden werden."},
-    {"id": "B2_write_5", "title": "Bewerbung auf eine Stelle", "prompt": "Bewerben Sie sich als Assistenzarzt in einer deutschen orthopädischen Klinik.", "instructions": "Schreiben Sie ein formelles Bewerbungsschreiben mit Lebenslauf-Ergänzung.", "wordLimit": 250, "tips": "Sehr geehrte Damen und Herren, als motivierter Arzt mit Erfahrung in der Orthopädie bewerbe ich mich ..."},
-    {"id": "B2_write_6", "title": "Leserbrief", "prompt": "In der Zeitung stand, dass die Wartezeiten in Krankenhäusern zu lang sind. Schreiben Sie einen Leserbrief.", "instructions": "Nehmen Sie Stellung und schlagen Sie Lösungen vor.", "wordLimit": 180, "tips": "In Bezug auf den Artikel 'Lange Wartezeiten in Kliniken' möchte ich Folgendes anmerken."},
-    {"id": "B2_write_7", "title": "Zusammenfassung", "prompt": "Fassen Sie folgenden Text zusammen: 'Künstliche Intelligenz kann Radiologen bei der Bildanalyse unterstützen, aber nicht ersetzen. Die Technologie erreicht in Studien eine hohe Genauigkeit, jedoch fehlt die klinische Erfahrung des Menschen.'", "instructions": "Fassen Sie den Text kurz und präzise zusammen.", "wordLimit": 50, "tips": "Der Text besagt, dass KI Radiologen unterstützen, aber nicht ersetzen kann."},
-    {"id": "B2_write_8", "title": "Diskussionsbeitrag: Ärztemangel", "prompt": "In einem Forum wird gefragt: 'Wie kann der Ärztemangel auf dem Land gelöst werden?' Schreiben Sie Ihre Meinung.", "instructions": "Nennen Sie 2-3 Lösungsvorschläge und begründen Sie.", "wordLimit": 200, "tips": "Meiner Ansicht nach könnte der Ärztemangel auf dem Land durch finanzielle Anreize gelöst werden."},
-    {"id": "B2_write_9", "title": "Fachtext: Osteoporose-Prävention", "prompt": "Schreiben Sie einen kurzen Informationstext über Osteoporose-Prävention für Patienten.", "instructions": "Erklären Sie Ursachen, Risikofaktoren und Präventionsmaßnahmen.", "wordLimit": 200, "tips": "Osteoporose ist eine Knochenerkrankung, die durch ... gekennzeichnet ist. Zur Prävention empfehlen sich ..."},
-    {"id": "B2_write_10", "title": "Brief an den Chefarzt", "prompt": "Sie möchten eine neue Behandlungsmethode in Ihrer Abteilung vorschlagen. Schreiben Sie einen formellen Brief an den Chefarzt.", "instructions": "Beschreiben Sie die Methode, nennen Sie Vorteile, erwähnen Sie mögliche Nachteile.", "wordLimit": 220, "tips": "Sehr geehrter Herr Chefarzt, ich möchte Ihnen eine neue Behandlungsmethode vorstellen, die ..."}
+    {
+      "id": "B2_write_1",
+      "title": "Argumentative Essay: Tierversuche",
+      "prompt": "Sollten Tierversuche in der medizinischen Forschung erlaubt sein? Schreiben Sie einen argumentativen Text.",
+      "instructions": "Nennen Sie Pro- und Contra-Argumente, geben Sie Ihre Meinung.",
+      "wordLimit": 200,
+      "tips": "In der medizinischen Forschung sind Tierversuche ein kontroverses Thema. Einerseits ..., andererseits ..."
+    },
+    {
+      "id": "B2_write_2",
+      "title": "Formelle Beschwerde an die Krankenkasse",
+      "prompt": "Ihre Krankenkasse hat eine Behandlung nicht übernommen. Schreiben Sie einen formellen Widerspruch.",
+      "instructions": "Beziehen Sie sich auf Ihren Antrag, nennen Sie die Gründe für den Widerspruch.",
+      "wordLimit": 180,
+      "tips": "Sehr geehrte Damen und Herren, mit Bezug auf Ihr Schreiben vom ... lege ich Widerspruch ein."
+    },
+    {
+      "id": "B2_write_3",
+      "title": "Diskussionsbeitrag: Digitalisierung im Gesundheitswesen",
+      "prompt": "In einem Fachforum wird über die Digitalisierung im Gesundheitswesen diskutiert. Schreiben Sie Ihren Beitrag.",
+      "instructions": "Nehmen Sie Stellung, nennen Sie Vorteile und Risiken.",
+      "wordLimit": 200,
+      "tips": "Die Digitalisierung bietet enorme Chancen, birgt aber auch Risiken. Aus meiner Erfahrung ..."
+    },
+    {
+      "id": "B2_write_4",
+      "title": "Essay: Prävention statt Behandlung",
+      "prompt": "Warum ist Prävention im Gesundheitswesen so wichtig? Schreiben Sie einen Essay.",
+      "instructions": "Argumentieren Sie mit Beispielen.",
+      "wordLimit": 220,
+      "tips": "Prävention ist kosteneffizienter als Behandlung. Zum Beispiel können durch Impfungen schwere Erkrankungen vermieden werden."
+    },
+    {
+      "id": "B2_write_5",
+      "title": "Bewerbung auf eine Stelle",
+      "prompt": "Bewerben Sie sich als Assistenzarzt in einer deutschen orthopädischen Klinik.",
+      "instructions": "Schreiben Sie ein formelles Bewerbungsschreiben mit Lebenslauf-Ergänzung.",
+      "wordLimit": 250,
+      "tips": "Sehr geehrte Damen und Herren, als motivierter Arzt mit Erfahrung in der Orthopädie bewerbe ich mich ..."
+    },
+    {
+      "id": "B2_write_6",
+      "title": "Leserbrief",
+      "prompt": "In der Zeitung stand, dass die Wartezeiten in Krankenhäusern zu lang sind. Schreiben Sie einen Leserbrief.",
+      "instructions": "Nehmen Sie Stellung und schlagen Sie Lösungen vor.",
+      "wordLimit": 180,
+      "tips": "In Bezug auf den Artikel 'Lange Wartezeiten in Kliniken' möchte ich Folgendes anmerken."
+    },
+    {
+      "id": "B2_write_7",
+      "title": "Zusammenfassung",
+      "prompt": "Fassen Sie folgenden Text zusammen: 'Künstliche Intelligenz kann Radiologen bei der Bildanalyse unterstützen, aber nicht ersetzen. Die Technologie erreicht in Studien eine hohe Genauigkeit, jedoch fehlt die klinische Erfahrung des Menschen.'",
+      "instructions": "Fassen Sie den Text kurz und präzise zusammen.",
+      "wordLimit": 50,
+      "tips": "Der Text besagt, dass KI Radiologen unterstützen, aber nicht ersetzen kann."
+    },
+    {
+      "id": "B2_write_8",
+      "title": "Diskussionsbeitrag: Ã„rztemangel",
+      "prompt": "In einem Forum wird gefragt: 'Wie kann der Ã„rztemangel auf dem Land gelöst werden?' Schreiben Sie Ihre Meinung.",
+      "instructions": "Nennen Sie 2-3 Lösungsvorschläge und begründen Sie.",
+      "wordLimit": 200,
+      "tips": "Meiner Ansicht nach könnte der Ã„rztemangel auf dem Land durch finanzielle Anreize gelöst werden."
+    },
+    {
+      "id": "B2_write_9",
+      "title": "Fachtext: Osteoporose-Prävention",
+      "prompt": "Schreiben Sie einen kurzen Informationstext über Osteoporose-Prävention für Patienten.",
+      "instructions": "Erklären Sie Ursachen, Risikofaktoren und PräventionsmaÃŸnahmen.",
+      "wordLimit": 200,
+      "tips": "Osteoporose ist eine Knochenerkrankung, die durch ... gekennzeichnet ist. Zur Prävention empfehlen sich ..."
+    },
+    {
+      "id": "B2_write_10",
+      "title": "Brief an den Chefarzt",
+      "prompt": "Sie möchten eine neue Behandlungsmethode in Ihrer Abteilung vorschlagen. Schreiben Sie einen formellen Brief an den Chefarzt.",
+      "instructions": "Beschreiben Sie die Methode, nennen Sie Vorteile, erwähnen Sie mögliche Nachteile.",
+      "wordLimit": 220,
+      "tips": "Sehr geehrter Herr Chefarzt, ich möchte Ihnen eine neue Behandlungsmethode vorstellen, die ..."
+    }
   ],
   "C1": [
-    {"id": "C1_write_1", "title": "C1 Forum: Soziale Medien und Gesundheit", "prompt": "In einem Online-Forum wird diskutiert: 'Beeinflussen soziale Medien die Gesundheit junger Menschen negativ?' Schreiben Sie Ihre Stellungnahme.", "instructions": "Beziehen Sie klar Position. Nennen Sie Argumente und Gegenargumente. Fassen Sie zusammen.", "wordLimit": 250, "tips": "In der aktuellen Debatte um soziale Medien und Gesundheit lassen sich sowohl positive als auch negative Aspekte identifizieren."},
-    {"id": "C1_write_2", "title": "Formelle Beschwerde: Behandlungsfehler", "prompt": "Sie haben als Patient einen vermuteten Behandlungsfehler erlebt. Schreiben Sie eine formelle Beschwerde an die Ärztekammer.", "instructions": "Sachlich bleiben, Fakten nennen, um Prüfung bitten.", "wordLimit": 250, "tips": "Sehr geehrte Damen und Herren, hiermit möchte ich einen Vorfall vom ... zur Prüfung melden."},
-    {"id": "C1_write_3", "title": "Stellungnahme: Organspende", "prompt": "Sollte Deutschland die Widerspruchslösung bei Organspenden einführen? Nehmen Sie Stellung.", "instructions": "Erörtern Sie Pro und Contra, entwickeln Sie eine differenzierte Position.", "wordLimit": 300, "tips": "Die Frage nach der Einführung der Widerspruchslösung wird kontrovers diskutiert."},
-    {"id": "C1_write_4", "title": "Antwort auf einen offenen Brief", "prompt": "Die Klinikleitung schreibt einen offenen Brief über geplante Kürzungen. Antworten Sie im Namen des Ärzteteams.", "instructions": "Formell, sachlich, mit konkreten Vorschlägen.", "wordLimit": 280, "tips": "Sehr geehrte Klinikleitung, wir beziehen uns auf Ihren offenen Brief vom ... und möchten Folgendes anmerken."},
-    {"id": "C1_write_5", "title": "Zusammenfassung und Stellungnahme", "prompt": "Fassen Sie die Kernaussagen zusammen und nehmen Sie Stellung: 'Die Krankenhausreform sieht vor, dass kleine Kliniken geschlossen werden, um die Versorgungsqualität zu erhöhen. Kritiker befürchten längere Anfahrtswege.'", "instructions": "Zusammenfassen und eigene Position formulieren.", "wordLimit": 200, "tips": "Der Text thematisiert die geplante Krankenhausreform. Während die Befürworter ... argumentieren Gegner ..."},
-    {"id": "C1_write_6", "title": "LC1 Formal: Projektvorschlag", "prompt": "Sie möchten ein Forschungsprojekt zur minimalinvasiven Hüftchirurgie initiieren. Schreiben Sie einen formellen Projektvorschlag.", "instructions": "Beschreiben Sie Ziel, Methode, erwartete Ergebnisse.", "wordLimit": 280, "tips": "Das geplante Forschungsprojekt hat zum Ziel, die Ergebnisse der minimalinvasiven Hüftchirurgie zu evaluieren."},
-    {"id": "C1_write_7", "title": "Leserkommentar: KI in der Medizin", "prompt": "Schreiben Sie einen Leserkommentar zu einem Artikel über künstliche Intelligenz in der Radiologie.", "instructions": "Beziehen Sie sich auf den Artikel, ergänzen Sie Ihre Perspektive als Arzt.", "wordLimit": 200, "tips": "Als Arzt, der täglich mit radiologischen Befunden arbeitet, möchte ich zum Artikel 'KI in der Radiologie' Folgendes anmerken."},
-    {"id": "C1_write_8", "title": "Erörterung: Nachhaltigkeit im Krankenhaus", "prompt": "Wie kann ein Krankenhaus nachhaltiger werden? Schreiben Sie eine Erörterung.", "instructions": "Erörtern Sie mehrere Aspekte (Müll, Energie, Beschaffung).", "wordLimit": 300, "tips": "Die Nachhaltigkeit im Krankenhausbetrieb gewinnt zunehmend an Bedeutung. Ein zentraler Ansatzpunkt ist ..."},
-    {"id": "C1_write_9", "title": "Formelle E-Mail: Kooperationsanfrage", "prompt": "Sie möchten mit einer deutschen Universitätsklinik auf dem Gebiet der Osteoporose-Forschung kooperieren. Schreiben Sie eine formelle E-Mail.", "instructions": "Stellen Sie sich vor, nennen Sie Ihre Forschungsergebnisse, schlagen Sie eine Kooperation vor.", "wordLimit": 250, "tips": "Sehr geehrter Herr Professor ..., ich bin Arzt am NMC Royal Hospital in Dubai und beschäftige mich mit ..."},
-    {"id": "C1_write_10", "title": "Diskussionsbeitrag: Integration ausländischer Ärzte", "prompt": "In einem Fachforum wird diskutiert: 'Wie kann die Integration ausländischer Ärzte in Deutschland verbessert werden?'", "instructions": "Nehmen Sie als Betroffener Stellung, nennen Sie persönliche Erfahrungen und Vorschläge.", "wordLimit": 250, "tips": "Als ausländischer Arzt, der selbst den Integrationsprozess durchläuft, möchte ich folgende Aspekte ansprechen."}
+    {
+      "id": "C1_write_1",
+      "title": "C1 Forum: Soziale Medien und Gesundheit",
+      "prompt": "In einem Online-Forum wird diskutiert: 'Beeinflussen soziale Medien die Gesundheit junger Menschen negativ?' Schreiben Sie Ihre Stellungnahme.",
+      "instructions": "Beziehen Sie klar Position. Nennen Sie Argumente und Gegenargumente. Fassen Sie zusammen.",
+      "wordLimit": 250,
+      "tips": "In der aktuellen Debatte um soziale Medien und Gesundheit lassen sich sowohl positive als auch negative Aspekte identifizieren."
+    },
+    {
+      "id": "C1_write_2",
+      "title": "Formelle Beschwerde: Behandlungsfehler",
+      "prompt": "Sie haben als Patient einen vermuteten Behandlungsfehler erlebt. Schreiben Sie eine formelle Beschwerde an die Ã„rztekammer.",
+      "instructions": "Sachlich bleiben, Fakten nennen, um Prüfung bitten.",
+      "wordLimit": 250,
+      "tips": "Sehr geehrte Damen und Herren, hiermit möchte ich einen Vorfall vom ... zur Prüfung melden."
+    },
+    {
+      "id": "C1_write_3",
+      "title": "Stellungnahme: Organspende",
+      "prompt": "Sollte Deutschland die Widerspruchslösung bei Organspenden einführen? Nehmen Sie Stellung.",
+      "instructions": "Erörtern Sie Pro und Contra, entwickeln Sie eine differenzierte Position.",
+      "wordLimit": 300,
+      "tips": "Die Frage nach der Einführung der Widerspruchslösung wird kontrovers diskutiert."
+    },
+    {
+      "id": "C1_write_4",
+      "title": "Antwort auf einen offenen Brief",
+      "prompt": "Die Klinikleitung schreibt einen offenen Brief über geplante Kürzungen. Antworten Sie im Namen des Ã„rzteteams.",
+      "instructions": "Formell, sachlich, mit konkreten Vorschlägen.",
+      "wordLimit": 280,
+      "tips": "Sehr geehrte Klinikleitung, wir beziehen uns auf Ihren offenen Brief vom ... und möchten Folgendes anmerken."
+    },
+    {
+      "id": "C1_write_5",
+      "title": "Zusammenfassung und Stellungnahme",
+      "prompt": "Fassen Sie die Kernaussagen zusammen und nehmen Sie Stellung: 'Die Krankenhausreform sieht vor, dass kleine Kliniken geschlossen werden, um die Versorgungsqualität zu erhöhen. Kritiker befürchten längere Anfahrtswege.'",
+      "instructions": "Zusammenfassen und eigene Position formulieren.",
+      "wordLimit": 200,
+      "tips": "Der Text thematisiert die geplante Krankenhausreform. Während die Befürworter ... argumentieren Gegner ..."
+    },
+    {
+      "id": "C1_write_6",
+      "title": "LC1 Formal: Projektvorschlag",
+      "prompt": "Sie möchten ein Forschungsprojekt zur minimalinvasiven Hüftchirurgie initiieren. Schreiben Sie einen formellen Projektvorschlag.",
+      "instructions": "Beschreiben Sie Ziel, Methode, erwartete Ergebnisse.",
+      "wordLimit": 280,
+      "tips": "Das geplante Forschungsprojekt hat zum Ziel, die Ergebnisse der minimalinvasiven Hüftchirurgie zu evaluieren."
+    },
+    {
+      "id": "C1_write_7",
+      "title": "Leserkommentar: KI in der Medizin",
+      "prompt": "Schreiben Sie einen Leserkommentar zu einem Artikel über künstliche Intelligenz in der Radiologie.",
+      "instructions": "Beziehen Sie sich auf den Artikel, ergänzen Sie Ihre Perspektive als Arzt.",
+      "wordLimit": 200,
+      "tips": "Als Arzt, der täglich mit radiologischen Befunden arbeitet, möchte ich zum Artikel 'KI in der Radiologie' Folgendes anmerken."
+    },
+    {
+      "id": "C1_write_8",
+      "title": "Erörterung: Nachhaltigkeit im Krankenhaus",
+      "prompt": "Wie kann ein Krankenhaus nachhaltiger werden? Schreiben Sie eine Erörterung.",
+      "instructions": "Erörtern Sie mehrere Aspekte (Müll, Energie, Beschaffung).",
+      "wordLimit": 300,
+      "tips": "Die Nachhaltigkeit im Krankenhausbetrieb gewinnt zunehmend an Bedeutung. Ein zentraler Ansatzpunkt ist ..."
+    },
+    {
+      "id": "C1_write_9",
+      "title": "Formelle E-Mail: Kooperationsanfrage",
+      "prompt": "Sie möchten mit einer deutschen Universitätsklinik auf dem Gebiet der Osteoporose-Forschung kooperieren. Schreiben Sie eine formelle E-Mail.",
+      "instructions": "Stellen Sie sich vor, nennen Sie Ihre Forschungsergebnisse, schlagen Sie eine Kooperation vor.",
+      "wordLimit": 250,
+      "tips": "Sehr geehrter Herr Professor ..., ich bin Arzt am NMC Royal Hospital in Dubai und beschäftige mich mit ..."
+    },
+    {
+      "id": "C1_write_10",
+      "title": "Diskussionsbeitrag: Integration ausländischer Ã„rzte",
+      "prompt": "In einem Fachforum wird diskutiert: 'Wie kann die Integration ausländischer Ã„rzte in Deutschland verbessert werden?'",
+      "instructions": "Nehmen Sie als Betroffener Stellung, nennen Sie persönliche Erfahrungen und Vorschläge.",
+      "wordLimit": 250,
+      "tips": "Als ausländischer Arzt, der selbst den Integrationsprozess durchläuft, möchte ich folgende Aspekte ansprechen."
+    }
   ]
 }

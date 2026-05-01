@@ -18,6 +18,8 @@ import LessonsPage from './pages/LessonsPage';
 import LessonDetailPage from './pages/LessonDetailPage';
 import MistakeNotebookPage from './pages/MistakeNotebookPage';
 import ErrorBoundary from './components/ErrorBoundary';
+import TestPage from './pages/TestPage';
+import TestDataPage from './pages/TestDataPage';
 
 export default function App() {
   return (
@@ -42,6 +44,8 @@ export default function App() {
             <Route path="placement-test" element={<PlacementTest />} />
             <Route path="c1-readiness" element={<C1ReadinessPage />} />
             <Route path="mistake-notebook" element={<MistakeNotebookPage />} />
+            <Route path="test" element={<TestPage />} />
+            <Route path="test-data" element={<TestDataPage />} />
           </Route>
         </Routes>
       </HashRouter>

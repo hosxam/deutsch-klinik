@@ -1,43 +1,608 @@
 {
   "_comment": "Full Goethe-style practice exams per level. Each contains Lesen, Hören, Schreiben, and Sprechen sections. Questions are original but format follows Goethe exam style. Add more exams by following the structure.",
   "exams": {
-    "A1": {
-      "id": "exam_A1",
-      "name": "Goethe A1 Practice Exam (Fit in Deutsch)",
-      "passScore": 75,
-      "sections": {
-        "Lesen": {
-          "timeLimit": 25,
-          "tasks": [
-            {"id": "A1_ex_lesen_1", "type": "true-false", "question": "Lesen Sie die Anzeige: 'Praxis Dr. Müller - Mo-Fr 8-18 Uhr, Sa 9-12 Uhr.' Die Praxis hat samstags geöffnet.", "answer": "true"},
-            {"id": "A1_ex_lesen_2", "type": "true-false", "question": "Der Text sagt: 'Bitte bringen Sie Ihre Versicherungskarte mit.' Sie brauchen Ihre Versicherungskarte nicht.", "answer": "false"},
-            {"id": "A1_ex_lesen_3", "type": "mcq", "question": "Anzeige: 'Zahnarztpraxis Dr. Weber sucht Sprechstundenhilfe - Teilzeit - Erfahrung erwünscht.' Was wird gesucht?", "options": ["Ein Zahnarzt", "Eine Sprechstundenhilfe", "Ein Patient", "Ein Reinigungskraft"], "answer": "Eine Sprechstundenhilfe"},
-            {"id": "A1_ex_lesen_4", "type": "true-false", "question": "Schild im Bus: 'Neben dem Fahrer ist kein Platz für Kinderwagen.' Kinderwagen dürfen neben dem Fahrer stehen.", "answer": "false"},
-            {"id": "A1_ex_lesen_5", "type": "heading-match", "question": "Welche Überschrift passt? 'In der Praxis arbeiten drei Ärzte und fünf Schwestern. Täglich kommen etwa 50 Patienten.'", "options": ["Eine große Praxis", "Ein kleines Krankenhaus", "Eine Apotheke", "Ein Fitnessstudio"], "answer": "Eine große Praxis"}
-          ]
-        },
-        "Hören": {
-          "timeLimit": 20,
-          "tasks": [
-            {"id": "A1_ex_horen_1", "type": "mcq", "question": "Sprechstundenhilfe: 'Ihr Termin ist am Dienstag, dem 15. März, um 14:30 Uhr.' Wann ist der Termin?", "options": ["Dienstag, 15. März, 14:30", "Donnerstag, 15. März, 14:30", "Dienstag, 5. März, 14:30", "Dienstag, 15. März, 16:30"], "answer": "Dienstag, 15. März, 14:30"},
-            {"id": "A1_ex_horen_2", "type": "true-false", "question": "Durchsage: 'Der Zug nach Berlin fährt ab Gleis 5.' Der Zug nach Berlin fährt ab Gleis 5.", "answer": "true"},
-            {"id": "A1_ex_horen_3", "type": "mcq", "question": "Patient: 'Ich habe seit drei Tagen Fieber und Husten.' Was hat der Patient?", "options": ["Kopfschmerzen", "Fieber und Husten", "Rückenschmerzen", "Bauchschmerzen"], "answer": "Fieber und Husten"}
-          ]
-        },
-        "Schreiben": {
-          "timeLimit": 20,
-          "tasks": [
-            {"id": "A1_ex_schreiben_1", "prompt": "Sie sind krank. Schreiben Sie eine kurze E-Mail an Ihren Chef. Sagen Sie: - Sie sind krank - Sie können heute nicht kommen - Wann Sie vielleicht wieder kommen können", "wordLimit": 40}
-          ]
-        },
-        "Sprechen": {
-          "prepTime": 30,
-          "tasks": [
-            {"id": "A1_ex_sprech_1", "prompt": "Stellen Sie sich vor. Sagen Sie: - Wie Sie heißen - Wo Sie wohnen - Was Sie beruflich machen", "talkTime": 60}
-          ]
+    "A1": [
+      {
+        "id": "A1_exam_01",
+        "name": "A1 Practice Exam 1 - Basics",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "A1_ex_l1_1",
+                "type": "mcq",
+                "question": "Lesen Sie die Anzeige: 'Praxis Dr. Müller - Mo-Fr 8-18 Uhr, Sa 9-12 Uhr. Sonntag geschlossen.' An welchem Tag hat die Praxis geschlossen?",
+                "options": [
+                  "Montag",
+                  "Samstag",
+                  "Sonntag",
+                  "Freitag"
+                ],
+                "answer": "Sonntag"
+              },
+              {
+                "id": "A1_ex_l1_2",
+                "type": "true-false",
+                "question": "Schild im Bus: 'Einfache Fahrt 2,80 Euro. Kinder unter 6 Jahren fahren kostenlos.' Ein Kind unter 6 Jahren muss bezahlen.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l1_3",
+                "type": "mcq",
+                "question": "Text: 'Hallo Anna, wie geht es dir? Ich bin jetzt in Berlin. Das Wetter ist schön. Viele Grüße, Maria.' Wer ist in Berlin?",
+                "options": [
+                  "Anna",
+                  "Maria",
+                  "Tom",
+                  "Lisa"
+                ],
+                "answer": "Maria"
+              },
+              {
+                "id": "A1_ex_l1_4",
+                "type": "true-false",
+                "question": "Speisekarte: 'Apfelkuchen 3,50 Euro, Kaffee 2,50 Euro, Tee 2,00 Euro.' Der Apfelkuchen kostet 3,50 Euro.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_l1_5",
+                "type": "mcq",
+                "question": "Anzeige: 'Wohnung in München zu vermieten. 2 Zimmer, 55 qm, 850 Euro warm.' Wie groß ist die Wohnung?",
+                "options": [
+                  "35 qm",
+                  "45 qm",
+                  "55 qm",
+                  "65 qm"
+                ],
+                "answer": "55 qm"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_h1_1",
+                "type": "mcq",
+                "question": "Sprechstundenhilfe: 'Ihr Termin ist am Dienstag, dem 15. Mai, um 10:30 Uhr.' Wann ist der Termin?",
+                "options": [
+                  "Dienstag, 15. Mai, 10:30",
+                  "Donnerstag, 15. Mai, 10:30",
+                  "Dienstag, 5. Mai, 10:30",
+                  "Dienstag, 15. Mai, 14:30"
+                ],
+                "answer": "Dienstag, 15. Mai, 10:30"
+              },
+              {
+                "id": "A1_ex_h1_2",
+                "type": "true-false",
+                "question": "Durchsage: 'Der Zug nach Hamburg fährt ab Gleis 4.' Der Zug nach Hamburg fährt ab Gleis 4.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_h1_3",
+                "type": "mcq",
+                "question": "Apotheker: 'Das Medikament kostet 7,50 Euro. Nehmen Sie dreimal täglich einen Messlöffel.' Wie oft nehmen Sie das Medikament?",
+                "options": [
+                  "Einmal täglich",
+                  "Zweimal täglich",
+                  "Dreimal täglich",
+                  "Viermal täglich"
+                ],
+                "answer": "Dreimal täglich"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_w1_1",
+                "prompt": "Sie sind krank. Schreiben Sie eine kurze E-Mail an Ihren Chef. Sagen Sie: Sie sind krank, Sie können heute nicht kommen, Wann Sie vielleicht wieder kommen können.",
+                "wordLimit": 40
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 30,
+            "tasks": [
+              {
+                "id": "A1_ex_s1_1",
+                "prompt": "Stellen Sie sich vor. Sagen Sie: Wie Sie heißen, Wie alt Sie sind, Wo Sie wohnen.",
+                "talkTime": 60
+              },
+              {
+                "id": "A1_ex_s1_2",
+                "prompt": "Sprechen Sie über Ihre Familie. Sagen Sie: Wie viele Personen, Wer sind sie, Was machen sie.",
+                "talkTime": 60
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "A1_exam_02",
+        "name": "A1 Practice Exam 2 - Daily Life",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "A1_ex_l2_1",
+                "type": "mcq",
+                "question": "Öffnungszeiten: 'Supermarkt Frisch: Mo-Sa 7-21 Uhr, So geschlossen. Apotheke: Mo-Fr 8:30-18:30, Sa 9-14 Uhr.' Bis wann hat der Supermarkt samstags geöffnet?",
+                "options": [
+                  "18:30",
+                  "19:00",
+                  "20:00",
+                  "21:00"
+                ],
+                "answer": "21:00"
+              },
+              {
+                "id": "A1_ex_l2_2",
+                "type": "true-false",
+                "question": "E-Mail: 'Lieber Tom, ich lade dich zu meinem Geburtstag ein. Am Samstag um 18 Uhr bei mir zu Hause. Liebe Grüße, Sarah.' Die Party ist am Sonntag.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l2_3",
+                "type": "mcq",
+                "question": "Hinweis: 'Bitte melden Sie sich an der Anmeldung. Nehmen Sie im Wartezimmer Platz.' Was sollen Patienten zuerst machen?",
+                "options": [
+                  "Im Wartezimmer Platz nehmen",
+                  "Sich an der Anmeldung melden",
+                  "Nach Hause gehen",
+                  "Den Arzt rufen"
+                ],
+                "answer": "Sich an der Anmeldung melden"
+              },
+              {
+                "id": "A1_ex_l2_4",
+                "type": "true-false",
+                "question": "Fahrplan: 'Bus 142: Hauptbahnhof 9:00, Stadtmitte 9:10, Marktplatz 9:20.' Der Bus braucht 20 Minuten vom Hauptbahnhof zum Marktplatz.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_l2_5",
+                "type": "mcq",
+                "question": "Text: 'Lisa steht um 6:30 Uhr auf. Um 7:15 Uhr frühstückt sie. Um 8:00 Uhr geht sie zur Arbeit. Um 17:00 Uhr geht sie nach Hause.' Wann frühstückt Lisa?",
+                "options": [
+                  "Um 6:30",
+                  "Um 7:00",
+                  "Um 7:15",
+                  "Um 8:00"
+                ],
+                "answer": "Um 7:15"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_h2_1",
+                "type": "mcq",
+                "question": "Durchsage: 'Achtung, der Regionalzug RE5 nach Leipzig hat 10 Minuten Verspätung. Abfahrt jetzt um 14:45 Uhr.' Wohin fährt der Zug?",
+                "options": [
+                  "Nach Hamburg",
+                  "Nach Berlin",
+                  "Nach Leipzig",
+                  "Nach München"
+                ],
+                "answer": "Nach Leipzig"
+              },
+              {
+                "id": "A1_ex_h2_2",
+                "type": "true-false",
+                "question": "Arzt: 'Sie haben kein Fieber. Nehmen Sie dieses Medikament dreimal täglich.' Der Patient hat Fieber.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_h2_3",
+                "type": "mcq",
+                "question": "Verkäuferin: 'Die Jacke kostet 49,90 Euro. Die Umkleidekabine ist dort hinten.' Was möchte der Kunde anprobieren?",
+                "options": [
+                  "Einen Pullover",
+                  "Eine Jacke",
+                  "Schuhe",
+                  "Eine Hose"
+                ],
+                "answer": "Eine Jacke"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_w2_1",
+                "prompt": "Schreiben Sie eine kurze Einladung zu Ihrem Geburtstag. Sagen Sie: Wann die Party ist, Wo sie ist, Was es zu essen gibt.",
+                "wordLimit": 50
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 30,
+            "tasks": [
+              {
+                "id": "A1_ex_s2_1",
+                "prompt": "Erzählen Sie von Ihrem Tagesablauf. Sagen Sie: Wann Sie aufstehen, Was Sie morgens machen, Was Sie abends machen.",
+                "talkTime": 90
+              },
+              {
+                "id": "A1_ex_s2_2",
+                "prompt": "Fragen Sie Ihren Partner: 'Was machst du am Wochenende?' und antworten Sie auf seine/ihre Frage.",
+                "talkTime": 60
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "A1_exam_03",
+        "name": "A1 Practice Exam 3 - Shopping & Food",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "A1_ex_l3_1",
+                "type": "mcq",
+                "question": "Speisekarte: 'Fruhstucksteller 5,50 Euro, Marmeladenbrot 2,00 Euro, Ruhrei mit Brot 4,50 Euro, Kaffee 2,50 Euro.' Was kostet das Fruhstucksteller?",
+                "options": [
+                  "2,00 Euro",
+                  "4,50 Euro",
+                  "5,50 Euro",
+                  "2,50 Euro"
+                ],
+                "answer": "5,50 Euro"
+              },
+              {
+                "id": "A1_ex_l3_2",
+                "type": "true-false",
+                "question": "Kassenbon: 'Milch 1,29 Euro, Brot 2,49 Euro, Butter 1,89 Euro. Summe: 5,67 Euro.' Der Kunde hat 5,67 Euro bezahlt.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_l3_3",
+                "type": "mcq",
+                "question": "Angebot: 'Wassermelone statt 3,49 Euro nur 1,99 Euro. Huhnchenbrust statt 5,99 Euro nur 4,49 Euro.' Was kostet die Wassermelone im Angebot?",
+                "options": [
+                  "3,49 Euro",
+                  "2,99 Euro",
+                  "1,99 Euro",
+                  "4,49 Euro"
+                ],
+                "answer": "1,99 Euro"
+              },
+              {
+                "id": "A1_ex_l3_4",
+                "type": "true-false",
+                "question": "Schild: 'Zahlung: Bar oder Karte. Bitte bezahlen Sie an der Kasse.' Man kann nur bar bezahlen.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l3_5",
+                "type": "mcq",
+                "question": "Text: 'Ich brauche: 1 Liter Milch, 2 Apfel, 500g Butter, 1 Brot, 6 Eier.' Wie viele Apfel kauft die Person?",
+                "options": [
+                  "1",
+                  "2",
+                  "3",
+                  "6"
+                ],
+                "answer": "2"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_h3_1",
+                "type": "mcq",
+                "question": "Kellner: 'Guten Tag, was darf es sein?' Gast: 'Ich hatte gern einen Kaffee und ein Stuck Apfelkuchen.' Kellner: 'Das macht 6,00 Euro.' Was bestellt der Gast?",
+                "options": [
+                  "Tee und Kuchen",
+                  "Kaffee und Kuchen",
+                  "Kaffee und Brot",
+                  "Heiße Schokolade"
+                ],
+                "answer": "Kaffee und Kuchen"
+              },
+              {
+                "id": "A1_ex_h3_2",
+                "type": "true-false",
+                "question": "Kunde: 'Ich suche eine warme Jacke in Große M.' Verkauferin: 'Hier ist eine schwarze Jacke fur 49,90 Euro.' Der Kunde sucht eine Jacke.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_h3_3",
+                "type": "mcq",
+                "question": "Durchsage: 'Der Zug nach Berlin fahrt in 5 Minuten ab Gleis 3.' In wie vielen Minuten fahrt der Zug?",
+                "options": [
+                  "3 Minuten",
+                  "5 Minuten",
+                  "10 Minuten",
+                  "15 Minuten"
+                ],
+                "answer": "5 Minuten"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_w3_1",
+                "prompt": "Schreiben Sie eine Einkaufsliste fur die Woche. Schreiben Sie 6-8 Dinge mit Mengen.",
+                "wordLimit": 30
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 30,
+            "tasks": [
+              {
+                "id": "A1_ex_s3_1",
+                "prompt": "Sie sind im Restaurant. Bestellen Sie etwas zu essen und zu trinken.",
+                "talkTime": 60
+              },
+              {
+                "id": "A1_ex_s3_2",
+                "prompt": "Sprechen Sie uber Ihr Lieblingsessen. Sagen Sie: Was Sie gern essen, Was Sie nicht gern essen, Was Sie gut kochen konnen.",
+                "talkTime": 60
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "A1_exam_04",
+        "name": "A1 Practice Exam 4 - Health & Appointments",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "A1_ex_l4_1",
+                "type": "mcq",
+                "question": "Text: 'Ihr Termin bei Dr. Weber ist am Mittwoch, den 15. Mai um 10:30 Uhr. Bitte bringen Sie Ihre Versicherungskarte mit.' Was sollen Sie mitbringen?",
+                "options": [
+                  "Einen Ausweis",
+                  "Die Versicherungskarte",
+                  "Ein Rezept",
+                  "Bargeld"
+                ],
+                "answer": "Die Versicherungskarte"
+              },
+              {
+                "id": "A1_ex_l4_2",
+                "type": "true-false",
+                "question": "Aushang: 'Besuchszeiten: Montag bis Sonntag 14:00-19:00 Uhr. Maximal 2 Besucher pro Patient.' Es durfen 3 Besucher kommen.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l4_3",
+                "type": "mcq",
+                "question": "Anmeldebogen: 'Patient: Klaus Weber. Beschwerden: Husten, Halsschmerzen, Fieber 38,2 Grad. Seit 3 Tagen.' Wie lange hat der Patient die Beschwerden?",
+                "options": [
+                  "Seit 1 Tag",
+                  "Seit 2 Tagen",
+                  "Seit 3 Tagen",
+                  "Seit einer Woche"
+                ],
+                "answer": "Seit 3 Tagen"
+              },
+              {
+                "id": "A1_ex_l4_4",
+                "type": "true-false",
+                "question": "Sprechzeiten: 'Mo-Fr 8-17 Uhr, Sa 9-13 Uhr, So geschlossen.' Die Praxis hat sonntags geschlossen.",
+                "answer": "true"
+              },
+              {
+                "id": "A1_ex_l4_5",
+                "type": "mcq",
+                "question": "Hinweis: 'Notdienst: Taglich ab 18:30 bis 8:00 Uhr am nachsten Morgen.' Wann beginnt der Notdienst?",
+                "options": [
+                  "Um 8:00 Uhr",
+                  "Um 17:00 Uhr",
+                  "Um 18:30 Uhr",
+                  "Um 20:00 Uhr"
+                ],
+                "answer": "Um 18:30 Uhr"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_h4_1",
+                "type": "mcq",
+                "question": "Sprechstundenhilfe: 'Guten Morgen, wie heißen Sie?' Patient: 'Ich heiße Peter Braun. Ich habe einen Termin um 10:00 Uhr.' Wie heißt der Patient?",
+                "options": [
+                  "Peter Braun",
+                  "Peter Schulz",
+                  "Klaus Weber",
+                  "Thomas Wagner"
+                ],
+                "answer": "Peter Braun"
+              },
+              {
+                "id": "A1_ex_h4_2",
+                "type": "true-false",
+                "question": "Apotheker: 'Hier ist Ihr Medikament. Es kostet 7,50 Euro. Dreimal taglich einen Messloffel.' Das Medikament kostet 8,50 Euro.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_h4_3",
+                "type": "mcq",
+                "question": "Ansage: 'Frau Sonja Meier wird gebeten, in das Behandlungszimmer 2 zu kommen.' Wer wird gerufen?",
+                "options": [
+                  "Herr Braun",
+                  "Frau Meier",
+                  "Herr Muller",
+                  "Frau Schulz"
+                ],
+                "answer": "Frau Meier"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_w4_1",
+                "prompt": "Sie haben einen Termin beim Arzt und mussen absagen. Schreiben Sie eine kurze Nachricht. Sagen Sie: Wann der Termin war, Warum Sie nicht kommen konnen, Ob Sie einen neuen Termin mochten.",
+                "wordLimit": 50
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 30,
+            "tasks": [
+              {
+                "id": "A1_ex_s4_1",
+                "prompt": "Sie sind beim Arzt. Sagen Sie: Was Ihnen fehlt, Seit wann Sie die Symptome haben, Was der Arzt machen soll.",
+                "talkTime": 60
+              },
+              {
+                "id": "A1_ex_s4_2",
+                "prompt": "Sie sind in der Apotheke. Fragen Sie: Nach einem Medikament gegen Husten, Nach dem Preis, Wie oft Sie es nehmen sollen.",
+                "talkTime": 60
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "A1_exam_05",
+        "name": "A1 Practice Exam 5 - Directions & Travel",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "A1_ex_l5_1",
+                "type": "mcq",
+                "question": "Wegbeschreibung: 'Gehen Sie geradeaus bis zur Kreuzung. Biegen Sie links in die Bahnhofstraße. Die Bibliothek ist auf der rechten Seite.' In welche Straße biegen Sie?",
+                "options": [
+                  "Hauptstraße",
+                  "Schulstraße",
+                  "Bahnhofstraße",
+                  "Marktstraße"
+                ],
+                "answer": "Bahnhofstraße"
+              },
+              {
+                "id": "A1_ex_l5_2",
+                "type": "true-false",
+                "question": "Hotelinfo: 'Fruhstuck 7-10 Uhr im Restaurant (1. Stock). Check-in ab 14 Uhr. Check-out bis 11 Uhr.' Das Fruhstuck ist im Erdgeschoss.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l5_3",
+                "type": "mcq",
+                "question": "Post: 'Standardbrief (bis 20g): 0,85 Euro. Paket (bis 2 kg): 5,99 Euro.' Was kostet ein Standardbrief?",
+                "options": [
+                  "0,75 Euro",
+                  "0,85 Euro",
+                  "1,00 Euro",
+                  "5,99 Euro"
+                ],
+                "answer": "0,85 Euro"
+              },
+              {
+                "id": "A1_ex_l5_4",
+                "type": "true-false",
+                "question": "Schild: 'Fundburo: Raum 103, Erdgeschoss. Geöffnet 7-22 Uhr.' Das Fundburo ist im 1. Stock.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_l5_5",
+                "type": "mcq",
+                "question": "Text: 'Hotel Stadt Berlin. WLAN kostenlos. Rezeption 24 Stunden besetzt. Telefon: 030 987654.' Was kostet WLAN?",
+                "options": [
+                  "5 Euro pro Tag",
+                  "10 Euro pro Tag",
+                  "Kostenlos",
+                  "2 Euro pro Stunde"
+                ],
+                "answer": "Kostenlos"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_h5_1",
+                "type": "mcq",
+                "question": "Rezeption: 'Guten Abend, willkommen im Hotel Central. Ihr Zimmer ist Nummer 305 im dritten Stock. Fruhstuck von 7 bis 10 Uhr.' In welchem Stock ist das Zimmer?",
+                "options": [
+                  "Im 1. Stock",
+                  "Im 2. Stock",
+                  "Im 3. Stock",
+                  "Im 4. Stock"
+                ],
+                "answer": "Im 3. Stock"
+              },
+              {
+                "id": "A1_ex_h5_2",
+                "type": "true-false",
+                "question": "Tourist: 'Entschuldigung, wo ist die Stadtbibliothek?' Passant: 'Gehen Sie geradeaus, dann rechts in die Goethestraße. Die Bibliothek ist gegenuber vom Museum.' Die Bibliothek ist neben dem Museum.",
+                "answer": "false"
+              },
+              {
+                "id": "A1_ex_h5_3",
+                "type": "mcq",
+                "question": "Notruf: 'Notrufzentrale, was ist passiert?' Anrufer: 'Ein Unfall auf der Hauptstraße 50.' Notruf: 'Der Krankenwagen kommt sofort.' Welche Nummer hat der Anrufer gewahlt?",
+                "options": [
+                  "110",
+                  "112",
+                  "115",
+                  "116117"
+                ],
+                "answer": "112"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 20,
+            "tasks": [
+              {
+                "id": "A1_ex_w5_1",
+                "prompt": "Sie wollen ein Hotelzimmer reservieren. Schreiben Sie eine kurze E-Mail. Fragen Sie nach: Einem Einzelzimmer fur 3 Nachte, Dem Preis, Ob Fruhstuck inklusive ist.",
+                "wordLimit": 60
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 30,
+            "tasks": [
+              {
+                "id": "A1_ex_s5_1",
+                "prompt": "Fragen Sie nach dem Weg zur Bibliothek. Ihr Partner gibt Ihnen die Antwort. Wechseln Sie dann die Rollen.",
+                "talkTime": 60
+              },
+              {
+                "id": "A1_ex_s5_2",
+                "prompt": "Erzahlen Sie von Ihrem letzten Urlaub oder Wochenende. Sagen Sie: Wo Sie waren, Mit wem, Was Sie gemacht haben.",
+                "talkTime": 90
+              }
+            ]
+          }
         }
       }
-    },
+    ],
     "A2": {
       "id": "exam_A2",
       "name": "Goethe A2 Practice Exam",
@@ -46,31 +611,109 @@
         "Lesen": {
           "timeLimit": 30,
           "tasks": [
-            {"id": "A2_ex_lesen_1", "type": "mcq", "question": "E-Mail: 'Liebe Anna, ich komme am Samstag mit dem Zug um 14 Uhr an. Kannst du mich am Bahnhof abholen? Deine Maria.' Was erwartet Maria von Anna?", "options": ["Essen kochen", "Am Bahnhof abholen", "Ein Hotel buchen", "Ein Taxi rufen"], "answer": "Am Bahnhof abholen"},
-            {"id": "A2_ex_lesen_2", "type": "true-false", "question": "Anzeige: 'Wohnung zu vermieten: 2 Zimmer, 65 qm, 800 Euro warm, ab 1. Mai.' Die Wohnung hat 3 Zimmer.", "answer": "false"},
-            {"id": "A2_ex_lesen_3", "type": "heading-match", "question": "Welche Überschrift passt? 'Das Konzert beginnt um 20 Uhr. Einlass ist ab 19 Uhr. Karten kosten 25 Euro an der Abendkasse.'", "options": ["Kinoprogramm", "Konzertankündigung", "Theaterstück", "Museumsführung"], "answer": "Konzertankündigung"},
-            {"id": "A2_ex_lesen_4", "type": "mcq", "question": "Notiz: 'Milch, Brot, Eier, Äpfel - nicht vergessen! Und bitte die Rechnung bezahlen!' Was soll die Person tun?", "options": ["Nur einkaufen", "Einkaufen und Rechnung bezahlen", "Nur die Rechnung bezahlen", "Zur Bank gehen"], "answer": "Einkaufen und Rechnung bezahlen"},
-            {"id": "A2_ex_lesen_5", "type": "true-false", "question": "Text: 'Frau Meier arbeitet seit zehn Jahren als Krankenschwester im St. Joseph Krankenhaus.' Frau Meier arbeitet im Krankenhaus.", "answer": "true"}
+            {
+              "id": "A2_ex_lesen_1",
+              "type": "mcq",
+              "question": "E-Mail: 'Liebe Anna, ich komme am Samstag mit dem Zug um 14 Uhr an. Kannst du mich am Bahnhof abholen? Deine Maria.' Was erwartet Maria von Anna?",
+              "options": [
+                "Essen kochen",
+                "Am Bahnhof abholen",
+                "Ein Hotel buchen",
+                "Ein Taxi rufen"
+              ],
+              "answer": "Am Bahnhof abholen"
+            },
+            {
+              "id": "A2_ex_lesen_2",
+              "type": "true-false",
+              "question": "Anzeige: 'Wohnung zu vermieten: 2 Zimmer, 65 qm, 800 Euro warm, ab 1. Mai.' Die Wohnung hat 3 Zimmer.",
+              "answer": "false"
+            },
+            {
+              "id": "A2_ex_lesen_3",
+              "type": "heading-match",
+              "question": "Welche Überschrift passt? 'Das Konzert beginnt um 20 Uhr. Einlass ist ab 19 Uhr. Karten kosten 25 Euro an der Abendkasse.'",
+              "options": [
+                "Kinoprogramm",
+                "Konzertankündigung",
+                "Theaterstück",
+                "Museumsführung"
+              ],
+              "answer": "Konzertankündigung"
+            },
+            {
+              "id": "A2_ex_lesen_4",
+              "type": "mcq",
+              "question": "Notiz: 'Milch, Brot, Eier, Äpfel - nicht vergessen! Und bitte die Rechnung bezahlen!' Was soll die Person tun?",
+              "options": [
+                "Nur einkaufen",
+                "Einkaufen und Rechnung bezahlen",
+                "Nur die Rechnung bezahlen",
+                "Zur Bank gehen"
+              ],
+              "answer": "Einkaufen und Rechnung bezahlen"
+            },
+            {
+              "id": "A2_ex_lesen_5",
+              "type": "true-false",
+              "question": "Text: 'Frau Meier arbeitet seit zehn Jahren als Krankenschwester im St. Joseph Krankenhaus.' Frau Meier arbeitet im Krankenhaus.",
+              "answer": "true"
+            }
           ]
         },
         "Hören": {
           "timeLimit": 20,
           "tasks": [
-            {"id": "A2_ex_horen_1", "type": "mcq", "question": "Patient: 'Seit einer Woche habe ich Schmerzen im linken Knie. Beim Treppensteigen ist es besonders schlimm.' Seit wann hat der Patient Schmerzen?", "options": ["Seit einem Tag", "Seit drei Tagen", "Seit einer Woche", "Seit einem Monat"], "answer": "Seit einer Woche"},
-            {"id": "A2_ex_horen_2", "type": "true-false", "question": "Telefonansage: 'Unsere Praxis bleibt vom 24. bis 28. Dezember geschlossen.' Die Praxis ist im Dezember geschlossen.", "answer": "true"},
-            {"id": "A2_ex_horen_3", "type": "mcq", "question": "Freundin sagt: 'Komm doch um 19 Uhr. Wir essen dann zusammen.' Um wie viel Uhr soll man kommen?", "options": ["17 Uhr", "18 Uhr", "19 Uhr", "20 Uhr"], "answer": "19 Uhr"}
+            {
+              "id": "A2_ex_horen_1",
+              "type": "mcq",
+              "question": "Patient: 'Seit einer Woche habe ich Schmerzen im linken Knie. Beim Treppensteigen ist es besonders schlimm.' Seit wann hat der Patient Schmerzen?",
+              "options": [
+                "Seit einem Tag",
+                "Seit drei Tagen",
+                "Seit einer Woche",
+                "Seit einem Monat"
+              ],
+              "answer": "Seit einer Woche"
+            },
+            {
+              "id": "A2_ex_horen_2",
+              "type": "true-false",
+              "question": "Telefonansage: 'Unsere Praxis bleibt vom 24. bis 28. Dezember geschlossen.' Die Praxis ist im Dezember geschlossen.",
+              "answer": "true"
+            },
+            {
+              "id": "A2_ex_horen_3",
+              "type": "mcq",
+              "question": "Freundin sagt: 'Komm doch um 19 Uhr. Wir essen dann zusammen.' Um wie viel Uhr soll man kommen?",
+              "options": [
+                "17 Uhr",
+                "18 Uhr",
+                "19 Uhr",
+                "20 Uhr"
+              ],
+              "answer": "19 Uhr"
+            }
           ]
         },
         "Schreiben": {
           "timeLimit": 30,
           "tasks": [
-            {"id": "A2_ex_schreiben_1", "prompt": "Sie haben einen Arzttermin vergessen. Schreiben Sie eine E-Mail an die Praxis. - Entschuldigen Sie sich - Nennen Sie den ursprünglichen Termin - Bitten Sie um einen neuen Termin", "wordLimit": 60}
+            {
+              "id": "A2_ex_schreiben_1",
+              "prompt": "Sie haben einen Arzttermin vergessen. Schreiben Sie eine E-Mail an die Praxis. - Entschuldigen Sie sich - Nennen Sie den ursprünglichen Termin - Bitten Sie um einen neuen Termin",
+              "wordLimit": 60
+            }
           ]
         },
         "Sprechen": {
           "prepTime": 60,
           "tasks": [
-            {"id": "A2_ex_sprech_1", "prompt": "Erzählen Sie von Ihrem letzten Urlaub. - Wohin sind Sie gefahren? - Mit wem? - Was haben Sie gemacht? - Wie war es?", "talkTime": 90}
+            {
+              "id": "A2_ex_sprech_1",
+              "prompt": "Erzählen Sie von Ihrem letzten Urlaub. - Wohin sind Sie gefahren? - Mit wem? - Was haben Sie gemacht? - Wie war es?",
+              "talkTime": 90
+            }
           ]
         }
       }
@@ -83,32 +726,120 @@
         "Lesen": {
           "timeLimit": 45,
           "tasks": [
-            {"id": "B1_ex_lesen_1", "type": "mcq", "question": "Text: 'Immer mehr deutsche Krankenhäuser haben wirtschaftliche Probleme. Besonders kleine Häuser auf dem Land sind betroffen. Die Politik diskutiert über Reformen.' Was ist das Problem?", "options": ["Zu viele Patienten", "Wirtschaftliche Probleme der Krankenhäuser", "Zu viele Ärzte", "Moderne Technik"], "answer": "Wirtschaftliche Probleme der Krankenhäuser"},
-            {"id": "B1_ex_lesen_2", "type": "true-false", "question": "Text: 'Die gesetzliche Krankenversicherung deckt die Kosten für Vorsorgeuntersuchungen ab. Private Zusatzversicherungen bieten darüber hinaus Leistungen an.' Alle Vorsorgeuntersuchungen werden von der gesetzlichen Krankenversicherung bezahlt.", "answer": "false"},
-            {"id": "B1_ex_lesen_3", "type": "heading-match", "question": "Welche Überschrift passt? 'Mehrere Studien zeigen, dass regelmäßige Bewegung das Risiko für Herz-Kreislauf-Erkrankungen senkt. Die Weltgesundheitsorganisation empfiehlt mindestens 150 Minuten Bewegung pro Woche.'", "options": ["Risiken des Sports", "Bewegung schützt das Herz", "Neue Medikamente", "Krankenhäuser schließen"], "answer": "Bewegung schützt das Herz"},
-            {"id": "B1_ex_lesen_4", "type": "mcq", "question": "Text: 'Die Fachsprachprüfung prüft die Deutschkenntnisse von ausländischen Ärzten. Sie besteht aus einem Patientengespräch, einer Befundbesprechung und der Dokumentation.' Wie viele Teile hat die Prüfung?", "options": ["Zwei", "Drei", "Vier", "Fünf"], "answer": "Drei"},
-            {"id": "B1_ex_lesen_5", "type": "gap-fill", "question": "Die Krankenkasse ___ die Kosten für die Behandlung.", "options": ["übernimmt", "übernehmen", "übernommen", "Übernahme"], "answer": "übernimmt"}
+            {
+              "id": "B1_ex_lesen_1",
+              "type": "mcq",
+              "question": "Text: 'Immer mehr deutsche Krankenhäuser haben wirtschaftliche Probleme. Besonders kleine Häuser auf dem Land sind betroffen. Die Politik diskutiert über Reformen.' Was ist das Problem?",
+              "options": [
+                "Zu viele Patienten",
+                "Wirtschaftliche Probleme der Krankenhäuser",
+                "Zu viele Ärzte",
+                "Moderne Technik"
+              ],
+              "answer": "Wirtschaftliche Probleme der Krankenhäuser"
+            },
+            {
+              "id": "B1_ex_lesen_2",
+              "type": "true-false",
+              "question": "Text: 'Die gesetzliche Krankenversicherung deckt die Kosten für Vorsorgeuntersuchungen ab. Private Zusatzversicherungen bieten darüber hinaus Leistungen an.' Alle Vorsorgeuntersuchungen werden von der gesetzlichen Krankenversicherung bezahlt.",
+              "answer": "false"
+            },
+            {
+              "id": "B1_ex_lesen_3",
+              "type": "heading-match",
+              "question": "Welche Überschrift passt? 'Mehrere Studien zeigen, dass regelmäßige Bewegung das Risiko für Herz-Kreislauf-Erkrankungen senkt. Die Weltgesundheitsorganisation empfiehlt mindestens 150 Minuten Bewegung pro Woche.'",
+              "options": [
+                "Risiken des Sports",
+                "Bewegung schützt das Herz",
+                "Neue Medikamente",
+                "Krankenhäuser schließen"
+              ],
+              "answer": "Bewegung schützt das Herz"
+            },
+            {
+              "id": "B1_ex_lesen_4",
+              "type": "mcq",
+              "question": "Text: 'Die Fachsprachprüfung prüft die Deutschkenntnisse von ausländischen Ärzten. Sie besteht aus einem Patientengespräch, einer Befundbesprechung und der Dokumentation.' Wie viele Teile hat die Prüfung?",
+              "options": [
+                "Zwei",
+                "Drei",
+                "Vier",
+                "Fünf"
+              ],
+              "answer": "Drei"
+            },
+            {
+              "id": "B1_ex_lesen_5",
+              "type": "gap-fill",
+              "question": "Die Krankenkasse ___ die Kosten für die Behandlung.",
+              "options": [
+                "übernimmt",
+                "übernehmen",
+                "übernommen",
+                "Übernahme"
+              ],
+              "answer": "übernimmt"
+            }
           ]
         },
         "Hören": {
           "timeLimit": 25,
           "tasks": [
-            {"id": "B1_ex_horen_1", "type": "mcq", "question": "Radiosendung: 'Die neue Grippeschutzimpfung ist ab Oktober in allen Arztpraxen verfügbar. Besonders Risikogruppen wird die Impfung empfohlen.' Wann ist die Impfung verfügbar?", "options": ["Ab August", "Ab September", "Ab Oktober", "Ab November"], "answer": "Ab Oktober"},
-            {"id": "B1_ex_horen_2", "type": "true-false", "question": "Arzt: 'Nehmen Sie das Medikament zweimal täglich, morgens und abends.' Das Medikament soll einmal täglich genommen werden.", "answer": "false"},
-            {"id": "B1_ex_horen_3", "type": "mcq", "question": "Patient: 'Nach der Operation hatte ich starke Schmerzen, aber die Physiotherapie hilft mir sehr.' Was hilft dem Patienten?", "options": ["Die Medikamente", "Die Physiotherapie", "Die Operation", "Der Arzt"], "answer": "Die Physiotherapie"}
+            {
+              "id": "B1_ex_horen_1",
+              "type": "mcq",
+              "question": "Radiosendung: 'Die neue Grippeschutzimpfung ist ab Oktober in allen Arztpraxen verfügbar. Besonders Risikogruppen wird die Impfung empfohlen.' Wann ist die Impfung verfügbar?",
+              "options": [
+                "Ab August",
+                "Ab September",
+                "Ab Oktober",
+                "Ab November"
+              ],
+              "answer": "Ab Oktober"
+            },
+            {
+              "id": "B1_ex_horen_2",
+              "type": "true-false",
+              "question": "Arzt: 'Nehmen Sie das Medikament zweimal täglich, morgens und abends.' Das Medikament soll einmal täglich genommen werden.",
+              "answer": "false"
+            },
+            {
+              "id": "B1_ex_horen_3",
+              "type": "mcq",
+              "question": "Patient: 'Nach der Operation hatte ich starke Schmerzen, aber die Physiotherapie hilft mir sehr.' Was hilft dem Patienten?",
+              "options": [
+                "Die Medikamente",
+                "Die Physiotherapie",
+                "Die Operation",
+                "Der Arzt"
+              ],
+              "answer": "Die Physiotherapie"
+            }
           ]
         },
         "Schreiben": {
           "timeLimit": 45,
           "tasks": [
-            {"id": "B1_ex_schreiben_1", "prompt": "In einem Online-Forum diskutieren Ärzte über die Arbeit in Deutschland. Schreiben Sie einen Beitrag zum Thema: 'Was sind die größten Herausforderungen für ausländische Ärzte in Deutschland?'", "wordLimit": 120}
+            {
+              "id": "B1_ex_schreiben_1",
+              "prompt": "In einem Online-Forum diskutieren Ärzte über die Arbeit in Deutschland. Schreiben Sie einen Beitrag zum Thema: 'Was sind die größten Herausforderungen für ausländische Ärzte in Deutschland?'",
+              "wordLimit": 120
+            }
           ]
         },
         "Sprechen": {
           "prepTime": 90,
           "tasks": [
-            {"id": "B1_ex_sprech_1", "prompt": "Präsentation: 'Meine Motivation, in Deutschland als Orthopäde zu arbeiten.'", "talkTime": 120},
-            {"id": "B1_ex_sprech_2", "prompt": "Diskussion mit einem Partner: 'Vor- und Nachteile des deutschen Gesundheitssystems.'", "talkTime": 120}
+            {
+              "id": "B1_ex_sprech_1",
+              "prompt": "Präsentation: 'Meine Motivation, in Deutschland als Orthopäde zu arbeiten.'",
+              "talkTime": 120
+            },
+            {
+              "id": "B1_ex_sprech_2",
+              "prompt": "Diskussion mit einem Partner: 'Vor- und Nachteile des deutschen Gesundheitssystems.'",
+              "talkTime": 120
+            }
           ]
         }
       }
@@ -121,32 +852,120 @@
         "Lesen": {
           "timeLimit": 60,
           "tasks": [
-            {"id": "B2_ex_lesen_1", "type": "mcq", "question": "Text: 'Die Debatte um die Bürgerversicherung wird hitzig geführt. Während Befürworter mehr Solidarität im System fordern, warnen Gegner vor Einheitsmedizin und langen Wartezeiten.' Welche Position wird im Text dargestellt?", "options": ["Nur die Befürworter", "Nur die Gegner", "Beide Positionen", "Eine neutrale Position"], "answer": "Beide Positionen"},
-            {"id": "B2_ex_lesen_2", "type": "true-false", "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.", "answer": "true"},
-            {"id": "B2_ex_lesen_3", "type": "opinion-match", "question": "Text: 'Der Autor argumentiert, dass die Digitalisierung im Gesundheitswesen nicht nur Chancen, sondern auch Risiken birgt. Der Datenschutz müsse oberste Priorität haben.' Was ist die Hauptaussage des Autors?", "options": ["Digitalisierung ist immer positiv", "Datenschutz ist bei Digitalisierung entscheidend", "Digitalisierung ist zu teuer", "Digitalisierung sollte verboten werden"], "answer": "Datenschutz ist bei Digitalisierung entscheidend"},
-            {"id": "B2_ex_lesen_4", "type": "mcq", "question": "Text: 'Die Zulassung als Facharzt für Orthopädie und Unfallchirurgie setzt eine mindestens sechsjährige Weiterbildungszeit voraus.' Wie lange dauert die Weiterbildung?", "options": ["4 Jahre", "5 Jahre", "6 Jahre", "7 Jahre"], "answer": "6 Jahre"},
-            {"id": "B2_ex_lesen_5", "type": "gap-fill", "question": "Die Studie zeigt, dass ___ Maßnahmen dringend erforderlich sind.", "options": ["weitreichende", "weitreichender", "weitreichenden", "weitreichend"], "answer": "weitreichende"}
+            {
+              "id": "B2_ex_lesen_1",
+              "type": "mcq",
+              "question": "Text: 'Die Debatte um die Bürgerversicherung wird hitzig geführt. Während Befürworter mehr Solidarität im System fordern, warnen Gegner vor Einheitsmedizin und langen Wartezeiten.' Welche Position wird im Text dargestellt?",
+              "options": [
+                "Nur die Befürworter",
+                "Nur die Gegner",
+                "Beide Positionen",
+                "Eine neutrale Position"
+              ],
+              "answer": "Beide Positionen"
+            },
+            {
+              "id": "B2_ex_lesen_2",
+              "type": "true-false",
+              "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
+              "answer": "true"
+            },
+            {
+              "id": "B2_ex_lesen_3",
+              "type": "opinion-match",
+              "question": "Text: 'Der Autor argumentiert, dass die Digitalisierung im Gesundheitswesen nicht nur Chancen, sondern auch Risiken birgt. Der Datenschutz müsse oberste Priorität haben.' Was ist die Hauptaussage des Autors?",
+              "options": [
+                "Digitalisierung ist immer positiv",
+                "Datenschutz ist bei Digitalisierung entscheidend",
+                "Digitalisierung ist zu teuer",
+                "Digitalisierung sollte verboten werden"
+              ],
+              "answer": "Datenschutz ist bei Digitalisierung entscheidend"
+            },
+            {
+              "id": "B2_ex_lesen_4",
+              "type": "mcq",
+              "question": "Text: 'Die Zulassung als Facharzt für Orthopädie und Unfallchirurgie setzt eine mindestens sechsjährige Weiterbildungszeit voraus.' Wie lange dauert die Weiterbildung?",
+              "options": [
+                "4 Jahre",
+                "5 Jahre",
+                "6 Jahre",
+                "7 Jahre"
+              ],
+              "answer": "6 Jahre"
+            },
+            {
+              "id": "B2_ex_lesen_5",
+              "type": "gap-fill",
+              "question": "Die Studie zeigt, dass ___ Maßnahmen dringend erforderlich sind.",
+              "options": [
+                "weitreichende",
+                "weitreichender",
+                "weitreichenden",
+                "weitreichend"
+              ],
+              "answer": "weitreichende"
+            }
           ]
         },
         "Hören": {
           "timeLimit": 30,
           "tasks": [
-            {"id": "B2_ex_horen_1", "type": "mcq", "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Frauen sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?", "options": ["Männer", "Frauen", "Kinder", "Junge Erwachsene"], "answer": "Frauen"},
-            {"id": "B2_ex_horen_2", "type": "true-false", "question": "Diskussion: 'Kritiker der Schulmedizin argumentieren, dass Naturheilverfahren zu wenig erforscht sind.' Kritiker finden Naturheilverfahren gut erforscht.", "answer": "false"},
-            {"id": "B2_ex_horen_3", "type": "mcq", "question": "Interview: 'Professor Müller von der Charité erklärt, dass die roboterassistierte Chirurgie die Präzision erhöht, aber auch teurer ist.' Was ist ein Nachteil der roboterassistierten Chirurgie?", "options": ["Weniger präzise", "Höhere Kosten", "Längere OP-Zeiten", "Mehr Komplikationen"], "answer": "Höhere Kosten"}
+            {
+              "id": "B2_ex_horen_1",
+              "type": "mcq",
+              "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Frauen sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?",
+              "options": [
+                "Männer",
+                "Frauen",
+                "Kinder",
+                "Junge Erwachsene"
+              ],
+              "answer": "Frauen"
+            },
+            {
+              "id": "B2_ex_horen_2",
+              "type": "true-false",
+              "question": "Diskussion: 'Kritiker der Schulmedizin argumentieren, dass Naturheilverfahren zu wenig erforscht sind.' Kritiker finden Naturheilverfahren gut erforscht.",
+              "answer": "false"
+            },
+            {
+              "id": "B2_ex_horen_3",
+              "type": "mcq",
+              "question": "Interview: 'Professor Müller von der Charité erklärt, dass die roboterassistierte Chirurgie die Präzision erhöht, aber auch teurer ist.' Was ist ein Nachteil der roboterassistierten Chirurgie?",
+              "options": [
+                "Weniger präzise",
+                "Höhere Kosten",
+                "Längere OP-Zeiten",
+                "Mehr Komplikationen"
+              ],
+              "answer": "Höhere Kosten"
+            }
           ]
         },
         "Schreiben": {
           "timeLimit": 60,
           "tasks": [
-            {"id": "B2_ex_schreiben_1", "prompt": "In einem Fachforum wird die Frage diskutiert: 'Sollten Ärzte verpflichtet werden, regelmäßig an Fortbildungen teilzunehmen?' Schreiben Sie Ihre Stellungnahme (ca. 200 Wörter).", "wordLimit": 200}
+            {
+              "id": "B2_ex_schreiben_1",
+              "prompt": "In einem Fachforum wird die Frage diskutiert: 'Sollten Ärzte verpflichtet werden, regelmäßig an Fortbildungen teilzunehmen?' Schreiben Sie Ihre Stellungnahme (ca. 200 Wörter).",
+              "wordLimit": 200
+            }
           ]
         },
         "Sprechen": {
           "prepTime": 120,
           "tasks": [
-            {"id": "B2_ex_sprech_1", "prompt": "Halten Sie einen Vortrag über 'Die Bedeutung der Frührehabilitation nach orthopädischen Eingriffen.'", "talkTime": 180},
-            {"id": "B2_ex_sprech_2", "prompt": "Diskutieren Sie: 'Sollte die Klinik, in der Sie arbeiten, mehr in Prävention investieren?'", "talkTime": 180}
+            {
+              "id": "B2_ex_sprech_1",
+              "prompt": "Halten Sie einen Vortrag über 'Die Bedeutung der Frührehabilitation nach orthopädischen Eingriffen.'",
+              "talkTime": 180
+            },
+            {
+              "id": "B2_ex_sprech_2",
+              "prompt": "Diskutieren Sie: 'Sollte die Klinik, in der Sie arbeiten, mehr in Prävention investieren?'",
+              "talkTime": 180
+            }
           ]
         }
       }
@@ -159,32 +978,120 @@
         "Lesen": {
           "timeLimit": 70,
           "tasks": [
-            {"id": "C1_ex_lesen_1", "type": "mcq", "question": "Text: 'Die Implementierung von Telemedizinlösungen in der Regelversorgung scheitert bislang nicht an technischen, sondern an regulatorischen Hürden. Während die technischen Voraussetzungen in den meisten Kliniken gegeben sind, fehlt es an einheitlichen Standards für die Datenübertragung und Vergütungsmodellen.' Woran scheitert die Telemedizin derzeit hauptsächlich?", "options": ["An der Technik", "An regulatorischen Hürden", "Am Personalmangel", "Am Patientendesinteresse"], "answer": "An regulatorischen Hürden"},
-            {"id": "C1_ex_lesen_2", "type": "opinion-match", "question": "Text: 'Der Autor gelangt zu der Überzeugung, dass das deutsche Gesundheitssystem zwar exzellente medizinische Ergebnisse vorweisen kann, jedoch dringend strukturelle Reformen benötigt, um auch zukünftig finanzierbar zu bleiben.' Welche Haltung vertritt der Autor?", "options": ["Das System ist perfekt", "Das System braucht Reformen für die Zukunft", "Das System ist nicht reformierbar", "Das System sollte privatisiert werden"], "answer": "Das System braucht Reformen für die Zukunft"},
-            {"id": "C1_ex_lesen_3", "type": "true-false", "question": "Text: 'Entgegen der weitverbreiteten Annahme, dass die stationäre Behandlung grundsätzlich überlegen sei, belegen neuere Studien, dass ambulante Operationen bei bestimmten Indikationen vergleichbare Ergebnisse erzielen.' Ambulante Operationen sind bei bestimmten Indikationen genauso gut wie stationäre.", "answer": "true"},
-            {"id": "C1_ex_lesen_4", "type": "gap-fill", "question": "___ der fortschreitenden Digitalisierung müssen auch die Datenschutzbestimmungen angepasst werden.", "options": ["Angesichts", "Trotz", "Wegen", "Während"], "answer": "Angesichts"},
-            {"id": "C1_ex_lesen_5", "type": "mcq", "question": "Text: 'Die kontrovers geführte Diskussion um die Einführung der Widerspruchslösung bei der Organspende offenbart ein ethisches Dilemma zwischen der Autonomie des Einzelnen und dem Gemeinwohl.' Worum geht es in der Diskussion?", "options": ["Organspende und Ethik", "Organspende und Kosten", "Organspende und Medizin", "Organspende und Religion"], "answer": "Organspende und Ethik"}
+            {
+              "id": "C1_ex_lesen_1",
+              "type": "mcq",
+              "question": "Text: 'Die Implementierung von Telemedizinlösungen in der Regelversorgung scheitert bislang nicht an technischen, sondern an regulatorischen Hürden. Während die technischen Voraussetzungen in den meisten Kliniken gegeben sind, fehlt es an einheitlichen Standards für die Datenübertragung und Vergütungsmodellen.' Woran scheitert die Telemedizin derzeit hauptsächlich?",
+              "options": [
+                "An der Technik",
+                "An regulatorischen Hürden",
+                "Am Personalmangel",
+                "Am Patientendesinteresse"
+              ],
+              "answer": "An regulatorischen Hürden"
+            },
+            {
+              "id": "C1_ex_lesen_2",
+              "type": "opinion-match",
+              "question": "Text: 'Der Autor gelangt zu der Überzeugung, dass das deutsche Gesundheitssystem zwar exzellente medizinische Ergebnisse vorweisen kann, jedoch dringend strukturelle Reformen benötigt, um auch zukünftig finanzierbar zu bleiben.' Welche Haltung vertritt der Autor?",
+              "options": [
+                "Das System ist perfekt",
+                "Das System braucht Reformen für die Zukunft",
+                "Das System ist nicht reformierbar",
+                "Das System sollte privatisiert werden"
+              ],
+              "answer": "Das System braucht Reformen für die Zukunft"
+            },
+            {
+              "id": "C1_ex_lesen_3",
+              "type": "true-false",
+              "question": "Text: 'Entgegen der weitverbreiteten Annahme, dass die stationäre Behandlung grundsätzlich überlegen sei, belegen neuere Studien, dass ambulante Operationen bei bestimmten Indikationen vergleichbare Ergebnisse erzielen.' Ambulante Operationen sind bei bestimmten Indikationen genauso gut wie stationäre.",
+              "answer": "true"
+            },
+            {
+              "id": "C1_ex_lesen_4",
+              "type": "gap-fill",
+              "question": "___ der fortschreitenden Digitalisierung müssen auch die Datenschutzbestimmungen angepasst werden.",
+              "options": [
+                "Angesichts",
+                "Trotz",
+                "Wegen",
+                "Während"
+              ],
+              "answer": "Angesichts"
+            },
+            {
+              "id": "C1_ex_lesen_5",
+              "type": "mcq",
+              "question": "Text: 'Die kontrovers geführte Diskussion um die Einführung der Widerspruchslösung bei der Organspende offenbart ein ethisches Dilemma zwischen der Autonomie des Einzelnen und dem Gemeinwohl.' Worum geht es in der Diskussion?",
+              "options": [
+                "Organspende und Ethik",
+                "Organspende und Kosten",
+                "Organspende und Medizin",
+                "Organspende und Religion"
+              ],
+              "answer": "Organspende und Ethik"
+            }
           ]
         },
         "Hören": {
           "timeLimit": 40,
           "tasks": [
-            {"id": "C1_ex_horen_1", "type": "mcq", "question": "Vortrag: 'Die Genomeditierung mittels CRISPR-Cas9 hat das Potenzial, genetisch bedingte Erkrankungen zu heilen. Allerdings sind die ethischen Implikationen dieser Technologie noch nicht abschließend geklärt. Insbesondere die Möglichkeit der Keimbahnveränderung wird kontrovers diskutiert.' Was wird in der Diskussion besonders kritisch gesehen?", "options": ["Die Kosten der Technologie", "Die Keimbahnveränderung", "Die fehlende Wirksamkeit", "Die fehlende Zulassung"], "answer": "Die Keimbahnveränderung"},
-            {"id": "C1_ex_horen_2", "type": "true-false", "question": "Podiumsdiskussion: 'Befürworter der Präzisionsmedizin argumentieren, dass individuelle Therapieansätze die Behandlungsergebnisse verbessern. Gegner verweisen auf die hohen Kosten.' Gegner der Präzisionsmedizin nennen die Kosten als Argument.", "answer": "true"},
-            {"id": "C1_ex_horen_3", "type": "mcq", "question": "Interview: 'Der Gesundheitsökonom empfiehlt eine stärkere Verzahnung von ambulanter und stationärer Versorgung. Dadurch ließen sich Überkapazitäten abbauen und die Effizienz steigern. Allerdings fordert dies ein Umdenken aller Beteiligten.' Was ist die Empfehlung des Gesundheitsökonomen?", "options": ["Mehr Krankenhäuser bauen", "Ambulante und stationäre Versorgung verzahnen", "Weniger Ärzte ausbilden", "Mehr ins Ausland verweisen"], "answer": "Ambulante und stationäre Versorgung verzahnen"}
+            {
+              "id": "C1_ex_horen_1",
+              "type": "mcq",
+              "question": "Vortrag: 'Die Genomeditierung mittels CRISPR-Cas9 hat das Potenzial, genetisch bedingte Erkrankungen zu heilen. Allerdings sind die ethischen Implikationen dieser Technologie noch nicht abschließend geklärt. Insbesondere die Möglichkeit der Keimbahnveränderung wird kontrovers diskutiert.' Was wird in der Diskussion besonders kritisch gesehen?",
+              "options": [
+                "Die Kosten der Technologie",
+                "Die Keimbahnveränderung",
+                "Die fehlende Wirksamkeit",
+                "Die fehlende Zulassung"
+              ],
+              "answer": "Die Keimbahnveränderung"
+            },
+            {
+              "id": "C1_ex_horen_2",
+              "type": "true-false",
+              "question": "Podiumsdiskussion: 'Befürworter der Präzisionsmedizin argumentieren, dass individuelle Therapieansätze die Behandlungsergebnisse verbessern. Gegner verweisen auf die hohen Kosten.' Gegner der Präzisionsmedizin nennen die Kosten als Argument.",
+              "answer": "true"
+            },
+            {
+              "id": "C1_ex_horen_3",
+              "type": "mcq",
+              "question": "Interview: 'Der Gesundheitsökonom empfiehlt eine stärkere Verzahnung von ambulanter und stationärer Versorgung. Dadurch ließen sich Überkapazitäten abbauen und die Effizienz steigern. Allerdings fordert dies ein Umdenken aller Beteiligten.' Was ist die Empfehlung des Gesundheitsökonomen?",
+              "options": [
+                "Mehr Krankenhäuser bauen",
+                "Ambulante und stationäre Versorgung verzahnen",
+                "Weniger Ärzte ausbilden",
+                "Mehr ins Ausland verweisen"
+              ],
+              "answer": "Ambulante und stationäre Versorgung verzahnen"
+            }
           ]
         },
         "Schreiben": {
           "timeLimit": 75,
           "tasks": [
-            {"id": "C1_ex_schreiben_1", "prompt": "In einem medizinischen Fachforum wird diskutiert: 'Sollte die Allgemeinmedizin in Deutschland aufgewertet werden, um den Hausärztemangel zu bekämpfen?' Nehmen Sie als Arzt Stellung. Gehen Sie auf verschiedene Aspekte ein und entwickeln Sie eine differenzierte Position.", "wordLimit": 300}
+            {
+              "id": "C1_ex_schreiben_1",
+              "prompt": "In einem medizinischen Fachforum wird diskutiert: 'Sollte die Allgemeinmedizin in Deutschland aufgewertet werden, um den Hausärztemangel zu bekämpfen?' Nehmen Sie als Arzt Stellung. Gehen Sie auf verschiedene Aspekte ein und entwickeln Sie eine differenzierte Position.",
+              "wordLimit": 300
+            }
           ]
         },
         "Sprechen": {
           "prepTime": 180,
           "tasks": [
-            {"id": "C1_ex_sprech_1", "prompt": "Halten Sie einen Vortrag zum Thema: 'Herausforderungen und Chancen der interkulturellen Kommunikation im Krankenhaus' (ca. 4 Minuten).", "talkTime": 240},
-            {"id": "C1_ex_sprech_2", "prompt": "Diskutieren Sie mit Ihrem Gesprächspartner: 'Sollte die medizinische Ausbildung in Deutschland reformiert werden?' Gehen Sie auf unterschiedliche Standpunkte ein und entwickeln Sie eine eigene Position.", "talkTime": 240}
+            {
+              "id": "C1_ex_sprech_1",
+              "prompt": "Halten Sie einen Vortrag zum Thema: 'Herausforderungen und Chancen der interkulturellen Kommunikation im Krankenhaus' (ca. 4 Minuten).",
+              "talkTime": 240
+            },
+            {
+              "id": "C1_ex_sprech_2",
+              "prompt": "Diskutieren Sie mit Ihrem Gesprächspartner: 'Sollte die medizinische Ausbildung in Deutschland reformiert werden?' Gehen Sie auf unterschiedliche Standpunkte ein und entwickeln Sie eine eigene Position.",
+              "talkTime": 240
+            }
           ]
         }
       }

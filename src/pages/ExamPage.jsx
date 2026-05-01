@@ -9,8 +9,11 @@ import { Volume2, Pause, Eye, EyeOff } from 'lucide-react';
 export default function ExamPage() {
   const { levelId } = useParams();
   const levelData = levelsData.levels.find(l => l.id === levelId);
-  const exam = examsData.exams[levelId];
-  const [phase, setPhase] = useState('intro');
+  const rawExam = examsData.exams[levelId];
+
+  const [examList, setExamList] = useState(null);
+  const [selectedExamIdx, setSelectedExamIdx] = useState(0);
+  const [phase, setPhase] = useState('select');
   const [currentSection, setCurrentSection] = useState(0);
   const [answers, setAnswers] = useState({});
   const [timer, setTimer] = useState(0);
@@ -20,6 +23,20 @@ export default function ExamPage() {
   const [showTranscript, setShowTranscript] = useState({});
 
   const unlocked = isExamUnlocked(levelId, levelData);
+
+  // Normalise: handle both single-exam dict and multi-exam list
+  useEffect(() => {
+    if (!rawExam) return;
+    if (Array.isArray(rawExam)) {
+      setExamList(rawExam);
+      setSelectedExamIdx(0);
+    } else {
+      setExamList(null);
+    }
+  }, [rawExam]);
+
+  // The current exam object (single dict, or selected from list)
+  const exam = Array.isArray(rawExam) ? rawExam[selectedExamIdx] : rawExam;
   const sections = exam?.sections ? Object.entries(exam.sections) : [];
   const sectionKeys = Object.keys(exam?.sections || {});
 
@@ -31,12 +48,12 @@ export default function ExamPage() {
     return () => clearInterval(interval);
   }, [timerActive]);
 
-  if (!exam || !unlocked) {
+  if (!rawExam || !unlocked) {
     return (
       <LevelLock levelId={levelId}>
       <div className="text-center py-12">
         <h2 className="text-xl font-bold mb-4" style={{ color: 'var(--text-muted)' }}>
-          {!exam ? 'Exam not available' : 'Exam is locked'}
+          {!rawExam ? 'Exam not available' : 'Exam is locked'}
         </h2>
         <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
           {!unlocked ? 'Complete all requirements for this level first.' : ''}
@@ -47,7 +64,8 @@ export default function ExamPage() {
     );
   }
 
-  const startExam = () => {
+  const startExam = (idx) => {
+    if (examList && idx !== undefined) setSelectedExamIdx(idx);
     setPhase('active');
     setCurrentSection(0);
     setAnswers({});
@@ -133,10 +151,49 @@ export default function ExamPage() {
     return null;
   };
 
+  // Exam selection phase (multi-exam levels like A1)
+  if (phase === 'select' && examList) {
+    return (
+      <LevelLock levelId={levelId}>
+      <div className="max-w-xl mx-auto text-center py-8">
+        <div className="flex items-center justify-between mb-6">
+          <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+        </div>
+        <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--accent)' }}>A1 Practice Exams</h2>
+        <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>Goethe-style practice exams</p>
+        <div className="space-y-3">
+          {examList.map((ex, idx) => (
+            <button key={ex.id} onClick={() => startExam(idx)}
+              className="w-full text-left p-4 rounded-xl"
+              style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+              <div className="font-semibold text-sm">{ex.name}</div>
+              <div className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+                {Object.entries(ex.sections).map(([sk, sv]) =>
+                  `${sk} (${sv.tasks?.length || 1})`
+                ).join(' | ')}
+              </div>
+              <div className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+                Passing score: {ex.passScore}% | Time: ~60 min
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+      </LevelLock>
+    );
+  }
+
   if (phase === 'intro') {
     return (
       <LevelLock levelId={levelId}>
       <div className="max-w-xl mx-auto text-center py-8">
+        <div className="flex items-center justify-between mb-6">
+          {examList ? (
+            <button onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
+          ) : (
+            <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+          )}
+        </div>
         <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--accent)' }}>{exam.name}</h2>
         <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>Level {levelId} - Goethe-style practice exam</p>
         <div className="grid grid-cols-2 gap-3 mb-6">
@@ -151,7 +208,7 @@ export default function ExamPage() {
           })}
         </div>
         <p className="text-sm mb-4" style={{ color: 'var(--text-muted)' }}>Passing score: {exam.passScore}%</p>
-        <button onClick={startExam} className="px-8 py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+        <button onClick={() => startExam(selectedExamIdx)} className="px-8 py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
           Start Exam
         </button>
       </div>
@@ -163,6 +220,13 @@ export default function ExamPage() {
     return (
       <LevelLock levelId={levelId}>
       <div className="max-w-xl mx-auto text-center py-8">
+        <div className="flex items-center justify-between mb-6">
+          {examList ? (
+            <button onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
+          ) : (
+            <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+          )}
+        </div>
         <div className="text-5xl mb-4">{overallScore >= exam.passScore ? '\u{1F389}' : '\u{1F4AA}'}</div>
         <h2 className="text-2xl font-bold mb-2" style={{ color: overallScore >= exam.passScore ? '#3bff9e' : '#ffaa33' }}>
           {overallScore >= exam.passScore ? 'Passed!' : 'Not quite'}
@@ -177,12 +241,21 @@ export default function ExamPage() {
           ))}
         </div>
         <div className="flex gap-3 justify-center">
-          <button onClick={startExam} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+          <button onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+            Review Exam
+          </button>
+          <button onClick={() => startExam(selectedExamIdx)} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
             Retake
           </button>
-          <Link to={`/level/${levelId}`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
-            Back to Level
-          </Link>
+          {examList ? (
+            <button onClick={() => setPhase('select')} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+              More Exams
+            </button>
+          ) : (
+            <Link to={`/level/${levelId}`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+              Back to Level
+            </Link>
+          )}
         </div>
       </div>
     </LevelLock>
@@ -193,7 +266,14 @@ export default function ExamPage() {
     <LevelLock levelId={levelId}>
     <div className="max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-4">
-        <div className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>{sectionKey}</div>
+        <div className="flex items-center gap-2">
+          {examList && (
+            <button onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="text-xs px-2 py-1 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
+              &larr; Exam Menu
+            </button>
+          )}
+          <div className="text-sm font-semibold" style={{ color: 'var(--accent)' }}>{sectionKey}</div>
+        </div>
         <div className="flex items-center gap-3">
           <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
             {currentSection + 1}/{sectionKeys.length}

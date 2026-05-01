@@ -6,28 +6,1962 @@
       "title": "Ein Tag im Krankenhaus",
       "text": "Herr Müller ist Patient. Er hat Schmerzen im Bein. Der Arzt untersucht Herrn Müller. Die Schwester bringt ein Medikament. Herr Müller nimmt die Tablette. Danach geht es ihm besser.",
       "questions": [
-        {"id": "qr1", "type": "true-false", "question": "Herr Müller ist ein Arzt.", "answer": "false", "explanation": "Herr Müller ist Patient, nicht Arzt."},
-        {"id": "qr2", "type": "true-false", "question": "Herr Müller hat Schmerzen im Bein.", "answer": "true", "explanation": "Der Text sagt: 'Er hat Schmerzen im Bein.'"},
-        {"id": "qr3", "type": "mcq", "question": "Was bringt die Schwester?", "options": ["Ein Buch", "Ein Medikament", "Ein Glas Wasser", "Eine Spritze"], "answer": "Ein Medikament", "explanation": "Die Schwester bringt ein Medikament."}
-      ]
+        {
+          "id": "qr1",
+          "type": "true-false",
+          "question": "Herr Müller ist ein Arzt.",
+          "answer": "false",
+          "explanation": "Herr Müller ist Patient, nicht Arzt."
+        },
+        {
+          "id": "qr2",
+          "type": "true-false",
+          "question": "Herr Müller hat Schmerzen im Bein.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Er hat Schmerzen im Bein.'"
+        },
+        {
+          "id": "qr3",
+          "type": "mcq",
+          "question": "Was bringt die Schwester?",
+          "options": [
+            "Ein Buch",
+            "Ein Medikament",
+            "Ein Glas Wasser",
+            "Eine Spritze"
+          ],
+          "answer": "Ein Medikament",
+          "explanation": "Die Schwester bringt ein Medikament."
+        }
+      ],
+      "lessonId": "A1_lesson_16"
     },
     {
       "id": "A1_read_2",
       "title": "Meine Familie",
-      "text": "Ich heiße Anna und bin 25 Jahre alt. Ich wohne in Berlin. Meine Mutter ist Ärztin. Mein Vater ist Lehrer. Ich habe einen Bruder. Er studiert Medizin. Wir sind eine kleine Familie.",
+      "text": "Ich heiÃŸe Anna und bin 25 Jahre alt. Ich wohne in Berlin. Meine Mutter ist Ã„rztin. Mein Vater ist Lehrer. Ich habe einen Bruder. Er studiert Medizin. Wir sind eine kleine Familie.",
       "questions": [
-        {"id": "qr4", "type": "mcq", "question": "Wie alt ist Anna?", "options": ["20", "25", "30", "35"], "answer": "25", "explanation": "Der Text sagt: 'Ich heiße Anna und bin 25 Jahre alt.'"},
-        {"id": "qr5", "type": "true-false", "question": "Annas Mutter ist Lehrerin.", "answer": "false", "explanation": "Ihre Mutter ist Ärztin, nicht Lehrerin."}
-      ]
+        {
+          "id": "qr4",
+          "type": "mcq",
+          "question": "Wie alt ist Anna?",
+          "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ],
+          "answer": "25",
+          "explanation": "Der Text sagt: 'Ich heiÃŸe Anna und bin 25 Jahre alt.'"
+        },
+        {
+          "id": "qr5",
+          "type": "true-false",
+          "question": "Annas Mutter ist Lehrerin.",
+          "answer": "false",
+          "explanation": "Ihre Mutter ist Ã„rztin, nicht Lehrerin."
+        }
+      ],
+      "lessonId": "A1_lesson_3"
     },
     {
       "id": "A1_read_3",
       "title": "Beim Arzt",
-      "text": "Guten Tag, Herr Doktor. Ich heiße Peter und habe Husten. Die Nase läuft. Ich fühle mich schwach. Der Arzt sagt: 'Bleiben Sie im Bett und trinken Sie viel Tee.'",
+      "text": "Guten Tag, Herr Doktor. Ich heiÃŸe Peter und habe Husten. Die Nase läuft. Ich fühle mich schwach. Der Arzt sagt: 'Bleiben Sie im Bett und trinken Sie viel Tee.'",
       "questions": [
-        {"id": "qr6", "type": "mcq", "question": "Was hat Peter?", "options": ["Kopfschmerzen", "Husten", "Fieber", "Halsschmerzen"], "answer": "Husten", "explanation": "Peter sagt: 'Ich habe Husten.'"},
-        {"id": "qr7", "type": "true-false", "question": "Der Arzt sagt, Peter soll viel Kaffee trinken.", "answer": "false", "explanation": "Der Arzt sagt: 'Trinken Sie viel Tee.'"}
-      ]
+        {
+          "id": "qr6",
+          "type": "mcq",
+          "question": "Was hat Peter?",
+          "options": [
+            "Kopfschmerzen",
+            "Husten",
+            "Fieber",
+            "Halsschmerzen"
+          ],
+          "answer": "Husten",
+          "explanation": "Peter sagt: 'Ich habe Husten.'"
+        },
+        {
+          "id": "qr7",
+          "type": "true-false",
+          "question": "Der Arzt sagt, Peter soll viel Kaffee trinken.",
+          "answer": "false",
+          "explanation": "Der Arzt sagt: 'Trinken Sie viel Tee.'"
+        }
+      ],
+      "lessonId": "A1_lesson_16"
+    },
+    {
+      "lessonId": "A1_lesson_4",
+      "title": "Im Restaurant",
+      "text": "Peter und Maria gehen ins Restaurant. Der Kellner bringt die Speisekarte. Peter bestellt Pizza. Maria bestellt Salat. Sie trinken Wasser. Das Essen schmeckt gut. Peter zahlt 15 Euro.",
+      "questions": [
+        {
+          "id": "qr_A1_r4_1",
+          "type": "true-false",
+          "question": "Peter bestellt Salat.",
+          "answer": "false",
+          "explanation": "Peter bestellt Pizza, Maria bestellt Salat."
+        },
+        {
+          "id": "qr_A1_r4_2",
+          "type": "mcq",
+          "question": "Was trinken sie?",
+          "options": [
+            "Bier",
+            "Wasser",
+            "Cola",
+            "Saft"
+          ],
+          "answer": "Wasser",
+          "explanation": "Sie trinken Wasser."
+        },
+        {
+          "id": "qr_A1_r4_3",
+          "type": "true-false",
+          "question": "Peter zahlt 15 Euro.",
+          "answer": "true",
+          "explanation": "Der Text sagt: Peter zahlt 15 Euro."
+        }
+      ],
+      "id": "A1_read_4",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_5",
+      "title": "Nach dem Weg fragen",
+      "text": "Herr Klein sucht das Krankenhaus. Er fragt eine Frau: 'Entschuldigung, wo ist das Krankenhaus?' Die Frau sagt: 'Gehen Sie geradeaus. Dann links. Das Krankenhaus ist nach 200 Metern rechts.' Herr Klein sagt: 'Vielen Dank!'",
+      "questions": [
+        {
+          "id": "qr_A1_r5_1",
+          "type": "mcq",
+          "question": "Was sucht Herr Klein?",
+          "options": [
+            "Den Bahnhof",
+            "Das Krankenhaus",
+            "Das Restaurant",
+            "Die Schule"
+          ],
+          "answer": "Das Krankenhaus",
+          "explanation": "Herr Klein fragt nach dem Krankenhaus."
+        },
+        {
+          "id": "qr_A1_r5_2",
+          "type": "true-false",
+          "question": "Herr Klein fragt einen Mann.",
+          "answer": "false",
+          "explanation": "Er fragt eine Frau."
+        },
+        {
+          "id": "qr_A1_r5_3",
+          "type": "mcq",
+          "question": "Was sagt die Frau?",
+          "options": [
+            "Gehen Sie rechts.",
+            "Gehen Sie geradeaus, dann links.",
+            "Gehen Sie zurück.",
+            "Bleiben Sie hier."
+          ],
+          "answer": "Gehen Sie geradeaus, dann links.",
+          "explanation": "Die Frau sagt: Gehen Sie geradeaus, dann links."
+        }
+      ],
+      "id": "A1_read_5",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_6",
+      "title": "Die Uhrzeit",
+      "text": "Der Wecker klingelt um 6:30 Uhr. Herr Schmidt steht auf. Um 7:00 Uhr fruehstueckt er. Um 7:30 Uhr geht er zur Arbeit. Um 12:00 Uhr macht er Mittagspause. Um 17:00 Uhr kommt er nach Hause. Um 22:00 Uhr geht er ins Bett.",
+      "questions": [
+        {
+          "id": "qr_A1_r6_1",
+          "type": "mcq",
+          "question": "Wann klingelt der Wecker?",
+          "options": [
+            "Um 6:00 Uhr",
+            "Um 6:30 Uhr",
+            "Um 7:00 Uhr",
+            "Um 7:30 Uhr"
+          ],
+          "answer": "Um 6:30 Uhr",
+          "explanation": "Der Wecker klingelt um 6:30 Uhr."
+        },
+        {
+          "id": "qr_A1_r6_2",
+          "type": "true-false",
+          "question": "Herr Schmidt fruehstueckt um 7:30 Uhr.",
+          "answer": "false",
+          "explanation": "Er fruehstueckt um 7:00 Uhr."
+        },
+        {
+          "id": "qr_A1_r6_3",
+          "type": "mcq",
+          "question": "Wann kommt er nach Hause?",
+          "options": [
+            "Um 15:00 Uhr",
+            "Um 16:00 Uhr",
+            "Um 17:00 Uhr",
+            "Um 18:00 Uhr"
+          ],
+          "answer": "Um 17:00 Uhr",
+          "explanation": "Um 17:00 Uhr kommt er nach Hause."
+        }
+      ],
+      "id": "A1_read_6",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_7",
+      "title": "Die Wochentage",
+      "text": "Montag, Dienstag und Mittwoch arbeitet Anna im Buero. Donnerstag hat sie Deutschkurs. Freitag geht sie einkaufen. Samstag besucht sie ihre Familie. Sonntag ruht sie sich aus. Anna mag den Sonntag am liebsten.",
+      "questions": [
+        {
+          "id": "qr_A1_r7_1",
+          "type": "mcq",
+          "question": "Wann hat Anna Deutschkurs?",
+          "options": [
+            "Montag",
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag"
+          ],
+          "answer": "Donnerstag",
+          "explanation": "Donnerstag hat sie Deutschkurs."
+        },
+        {
+          "id": "qr_A1_r7_2",
+          "type": "true-false",
+          "question": "Anna geht freitags einkaufen.",
+          "answer": "true",
+          "explanation": "Freitag geht sie einkaufen."
+        },
+        {
+          "id": "qr_A1_r7_3",
+          "type": "mcq",
+          "question": "Welchen Tag mag Anna am liebsten?",
+          "options": [
+            "Samstag",
+            "Sonntag",
+            "Montag",
+            "Freitag"
+          ],
+          "answer": "Sonntag",
+          "explanation": "Anna mag den Sonntag am liebsten."
+        }
+      ],
+      "id": "A1_read_7",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_8",
+      "title": "Hobbys und Freizeit",
+      "text": "Mein Name ist Lukas und ich habe drei Hobbys: Ich lese gerne Buecher. Ich spiele Fussball. Und ich hoere Musik. Am Samstag spiele ich mit Freunden Fussball. Am Abend lese ich ein Buch oder hoere Musik.",
+      "questions": [
+        {
+          "id": "qr_A1_r8_1",
+          "type": "mcq",
+          "question": "Wie viele Hobbys hat Lukas?",
+          "options": [
+            "Zwei",
+            "Drei",
+            "Vier",
+            "Fuenf"
+          ],
+          "answer": "Drei",
+          "explanation": "Lukas hat drei Hobbys."
+        },
+        {
+          "id": "qr_A1_r8_2",
+          "type": "true-false",
+          "question": "Lukas spielt am Sonntag Fussball.",
+          "answer": "false",
+          "explanation": "Er spielt am Samstag Fussball."
+        },
+        {
+          "id": "qr_A1_r8_3",
+          "type": "mcq",
+          "question": "Was macht Lukas am Abend?",
+          "options": [
+            "Er schreibt Briefe",
+            "Er kocht",
+            "Er liest oder hoert Musik",
+            "Er schlaeft"
+          ],
+          "answer": "Er liest oder hoert Musik",
+          "explanation": "Am Abend liest er ein Buch oder hoert Musik."
+        }
+      ],
+      "id": "A1_read_8",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_9",
+      "title": "Im Supermarkt einkaufen",
+      "text": "Maria geht in den Supermarkt. Sie kauft Milch, Brot, Aepfel und Kaese. Sie braucht auch Butter und Eier. An der Kasse zahlt sie 12 Euro 50. Die Verkaeuferin gibt ihr 2 Euro 50 Wechselgeld zurueck.",
+      "questions": [
+        {
+          "id": "qr_A1_r9_1",
+          "type": "true-false",
+          "question": "Maria kauft Milch und Brot.",
+          "answer": "true",
+          "explanation": "Sie kauft Milch, Brot, Aepfel und Kaese."
+        },
+        {
+          "id": "qr_A1_r9_2",
+          "type": "mcq",
+          "question": "Wie viel bezahlt Maria?",
+          "options": [
+            "10 Euro",
+            "12 Euro 50",
+            "15 Euro",
+            "20 Euro"
+          ],
+          "answer": "12 Euro 50",
+          "explanation": "Sie zahlt 12 Euro 50."
+        },
+        {
+          "id": "qr_A1_r9_3",
+          "type": "mcq",
+          "question": "Was gibt die Verkaeuferin Maria zurueck?",
+          "options": [
+            "Geld",
+            "Wechselgeld",
+            "Eine Tüte",
+            "Einen Bon"
+          ],
+          "answer": "Wechselgeld",
+          "explanation": "Die Verkaeuferin gibt ihr 2 Euro 50 Wechselgeld zurueck."
+        }
+      ],
+      "id": "A1_read_9",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_10",
+      "title": "Im Restaurant bestellen",
+      "text": "Herr und Frau Mueller sitzen im Restaurant 'Zur Sonne'. Der Kellner kommt. Herr Mueller sagt: 'Ich moechte ein Schnitzel mit Pommes.' Frau Mueller sagt: 'Fuer mich einen gemischten Salat.' Der Kellner bringt das Essen nach 20 Minuten.",
+      "questions": [
+        {
+          "id": "qr_A1_r10_1",
+          "type": "mcq",
+          "question": "Wie heisst das Restaurant?",
+          "options": [
+            "Zur Sonne",
+            "Zum Mond",
+            "Zur Linde",
+            "Am See"
+          ],
+          "answer": "Zur Sonne",
+          "explanation": "Das Restaurant heisst 'Zur Sonne'."
+        },
+        {
+          "id": "qr_A1_r10_2",
+          "type": "true-false",
+          "question": "Herr Mueller bestellt einen Salat.",
+          "answer": "false",
+          "explanation": "Herr Mueller bestellt ein Schnitzel mit Pommes."
+        },
+        {
+          "id": "qr_A1_r10_3",
+          "type": "mcq",
+          "question": "Wie lange dauert es bis zum Essen?",
+          "options": [
+            "10 Minuten",
+            "20 Minuten",
+            "30 Minuten",
+            "40 Minuten"
+          ],
+          "answer": "20 Minuten",
+          "explanation": "Der Kellner bringt das Essen nach 20 Minuten."
+        }
+      ],
+      "id": "A1_read_10",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_11",
+      "title": "Das Wetter",
+      "text": "Heute ist das Wetter schoen. Die Sonne scheint. Es sind 22 Grad. Der Himmel ist blau. Keine Wolken. Morgen wird es regnen. Dann sind nur 15 Grad. Am Wochenende wird es wieder sonnig und warm.",
+      "questions": [
+        {
+          "id": "qr_A1_r11_1",
+          "type": "true-false",
+          "question": "Heute scheint die Sonne.",
+          "answer": "true",
+          "explanation": "Die Sonne scheint."
+        },
+        {
+          "id": "qr_A1_r11_2",
+          "type": "mcq",
+          "question": "Wie warm ist es heute?",
+          "options": [
+            "15 Grad",
+            "20 Grad",
+            "22 Grad",
+            "25 Grad"
+          ],
+          "answer": "22 Grad",
+          "explanation": "Es sind 22 Grad."
+        },
+        {
+          "id": "qr_A1_r11_3",
+          "type": "true-false",
+          "question": "Am Wochenende regnet es.",
+          "answer": "false",
+          "explanation": "Am Wochenende wird es wieder sonnig und warm."
+        }
+      ],
+      "id": "A1_read_11",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_12",
+      "title": "Farben und Kleidung",
+      "text": "Lisa kauft neue Kleidung. Sie sucht ein rotes Kleid. Der Verkaeufer sagt: 'Das rote Kleid kostet 40 Euro.' Lisa probiert das Kleid an. Es passt gut. Sie kauft auch einen blauen Hut fuer 15 Euro und gelbe Schuhe.",
+      "questions": [
+        {
+          "id": "qr_A1_r12_1",
+          "type": "mcq",
+          "question": "Welches Kleid sucht Lisa?",
+          "options": [
+            "Ein blaues",
+            "Ein rotes",
+            "Ein gruenes",
+            "Ein gelbes"
+          ],
+          "answer": "Ein rotes",
+          "explanation": "Sie sucht ein rotes Kleid."
+        },
+        {
+          "id": "qr_A1_r12_2",
+          "type": "true-false",
+          "question": "Das Kleid kostet 40 Euro.",
+          "answer": "true",
+          "explanation": "Der Verkaeufer sagt: 'Das rote Kleid kostet 40 Euro.'"
+        },
+        {
+          "id": "qr_A1_r12_3",
+          "type": "mcq",
+          "question": "Was kauft Lisa ausser dem Kleid?",
+          "options": [
+            "Eine Hose",
+            "Einen Hut und Schuhe",
+            "Eine Jacke",
+            "Eine Tasche"
+          ],
+          "answer": "Einen Hut und Schuhe",
+          "explanation": "Sie kauft einen blauen Hut und gelbe Schuhe."
+        }
+      ],
+      "id": "A1_read_12",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_13",
+      "title": "Mein Bruder und ich",
+      "text": "Ich habe einen Bruder. Er heisst Max und ist 10 Jahre alt. Max geht in die Schule. Er mag Mathe und Sport. Ich bin 15 und gehe in die 9. Klasse. Nach der Schule spielen wir zusammen Fussball. Max ist mein bester Freund.",
+      "questions": [
+        {
+          "id": "qr_A1_r13_1",
+          "type": "mcq",
+          "question": "Wie alt ist Max?",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "15"
+          ],
+          "answer": "10",
+          "explanation": "Max ist 10 Jahre alt."
+        },
+        {
+          "id": "qr_A1_r13_2",
+          "type": "true-false",
+          "question": "Max mag Mathe und Sport.",
+          "answer": "true",
+          "explanation": "Er mag Mathe und Sport."
+        },
+        {
+          "id": "qr_A1_r13_3",
+          "type": "mcq",
+          "question": "Was machen die Brüder nach der Schule?",
+          "options": [
+            "Sie lernen",
+            "Sie spielen Fussball",
+            "Sie essen",
+            "Sie schlafen"
+          ],
+          "answer": "Sie spielen Fussball",
+          "explanation": "Nach der Schule spielen sie zusammen Fussball."
+        }
+      ],
+      "id": "A1_read_13",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_14",
+      "title": "Meine Wohnung",
+      "text": "Ich wohne in einer kleinen Wohnung in Berlin. Die Wohnung hat drei Zimmer: ein Wohnzimmer, ein Schlafzimmer und eine Kueche. Das Badezimmer ist klein. Mein Lieblingsplatz ist der Balkon. Dort trinke ich morgens Kaffee.",
+      "questions": [
+        {
+          "id": "qr_A1_r14_1",
+          "type": "true-false",
+          "question": "Die Wohnung hat fuenf Zimmer.",
+          "answer": "false",
+          "explanation": "Die Wohnung hat drei Zimmer."
+        },
+        {
+          "id": "qr_A1_r14_2",
+          "type": "mcq",
+          "question": "Was ist der Lieblingsplatz?",
+          "options": [
+            "Das Wohnzimmer",
+            "Der Balkon",
+            "Die Kueche",
+            "Das Schlafzimmer"
+          ],
+          "answer": "Der Balkon",
+          "explanation": "Sein Lieblingsplatz ist der Balkon."
+        },
+        {
+          "id": "qr_A1_r14_3",
+          "type": "mcq",
+          "question": "Was macht er morgens auf dem Balkon?",
+          "options": [
+            "Er fruehstueckt",
+            "Er trinkt Kaffee",
+            "Er liest",
+            "Er telefoniert"
+          ],
+          "answer": "Er trinkt Kaffee",
+          "explanation": "Dort trinke ich morgens Kaffee."
+        }
+      ],
+      "id": "A1_read_14",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_15",
+      "title": "Mein Tagesablauf",
+      "text": "Ich stehe um 6:00 Uhr auf. Ich dusche und ziehe mich an. Um 6:45 Uhr fruehstuecke ich. Ich esse Brot mit Kaese und trinke Tee. Um 7:15 Uhr gehe ich zur Arbeit. Ich arbeite von 8:00 bis 17:00 Uhr. Um 18:30 Uhr koche ich Abendessen. Um 22:00 Uhr gehe ich ins Bett.",
+      "questions": [
+        {
+          "id": "qr_A1_r15_1",
+          "type": "mcq",
+          "question": "Wann steht die Person auf?",
+          "options": [
+            "Um 5:30 Uhr",
+            "Um 6:00 Uhr",
+            "Um 6:30 Uhr",
+            "Um 7:00 Uhr"
+          ],
+          "answer": "Um 6:00 Uhr",
+          "explanation": "Ich stehe um 6:00 Uhr auf."
+        },
+        {
+          "id": "qr_A1_r15_2",
+          "type": "true-false",
+          "question": "Zum Fruehstueck isst er Brot mit Kaese.",
+          "answer": "true",
+          "explanation": "Ich esse Brot mit Kaese und trinke Tee."
+        },
+        {
+          "id": "qr_A1_r15_3",
+          "type": "mcq",
+          "question": "Wann kocht er Abendessen?",
+          "options": [
+            "Um 17:00 Uhr",
+            "Um 18:00 Uhr",
+            "Um 18:30 Uhr",
+            "Um 19:00 Uhr"
+          ],
+          "answer": "Um 18:30 Uhr",
+          "explanation": "Um 18:30 Uhr koche ich Abendessen."
+        }
+      ],
+      "id": "A1_read_15",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_16",
+      "title": "Beim Arzt - Untersuchung",
+      "text": "Frau Weber ist beim Arzt. Sie hat Kopfschmerzen und Fieber. Der Arzt misst die Temperatur: 38,5 Grad. Er hoert das Herz ab. Er sagt: 'Sie haben eine Erkältung. Bleiben Sie drei Tage zu Hause.' Er gibt ihr ein Rezept fuer Hustensaft.",
+      "questions": [
+        {
+          "id": "qr_A1_r16_1",
+          "type": "mcq",
+          "question": "Was hat Frau Weber?",
+          "options": [
+            "Kopfschmerzen und Fieber",
+            "Rueckenschmerzen",
+            "Halsschmerzen",
+            "Bauchschmerzen"
+          ],
+          "answer": "Kopfschmerzen und Fieber",
+          "explanation": "Sie hat Kopfschmerzen und Fieber."
+        },
+        {
+          "id": "qr_A1_r16_2",
+          "type": "true-false",
+          "question": "Frau Weber hat 39 Grad Fieber.",
+          "answer": "false",
+          "explanation": "Sie hat 38,5 Grad Fieber."
+        },
+        {
+          "id": "qr_A1_r16_3",
+          "type": "mcq",
+          "question": "Was soll Frau Weber tun?",
+          "options": [
+            "Zur Arbeit gehen",
+            "Im Bett bleiben",
+            "Spazieren gehen",
+            "Sport machen"
+          ],
+          "answer": "Im Bett bleiben",
+          "explanation": "Der Arzt sagt: Bleiben Sie drei Tage zu Hause."
+        }
+      ],
+      "id": "A1_read_16",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_17",
+      "title": "Im Zoo",
+      "text": "Die Klasse 2a macht einen Ausflug in den Zoo. Die Kinder sehen viele Tiere. Da sind Loewen, Affen und Elefanten. Die Elefanten sind sehr gross. Die Affen sind lustig. Die Kinder lachen viel. Der Zoobesuch kostet 5 Euro pro Kind.",
+      "questions": [
+        {
+          "id": "qr_A1_r17_1",
+          "type": "true-false",
+          "question": "Die Kinder sehen nur Loewen.",
+          "answer": "false",
+          "explanation": "Sie sehen Loewen, Affen und Elefanten."
+        },
+        {
+          "id": "qr_A1_r17_2",
+          "type": "mcq",
+          "question": "Welche Tiere sind lustig?",
+          "options": [
+            "Die Loewen",
+            "Die Elefanten",
+            "Die Affen",
+            "Die Voegel"
+          ],
+          "answer": "Die Affen",
+          "explanation": "Die Affen sind lustig."
+        },
+        {
+          "id": "qr_A1_r17_3",
+          "type": "mcq",
+          "question": "Wie viel kostet der Zoobesuch pro Kind?",
+          "options": [
+            "3 Euro",
+            "4 Euro",
+            "5 Euro",
+            "6 Euro"
+          ],
+          "answer": "5 Euro",
+          "explanation": "Der Zoobesuch kostet 5 Euro pro Kind."
+        }
+      ],
+      "id": "A1_read_17",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_18",
+      "title": "Meine Stadt",
+      "text": "Ich wohne in Muenchen. Muenchen ist eine schoene Stadt. Es gibt viele Parks und ein grosses Museum. Der Marienplatz ist sehr bekannt. Man kann gut einkaufen und essen gehen. Die U-Bahn ist schnell und sauber. Ich wohne gern in Muenchen.",
+      "questions": [
+        {
+          "id": "qr_A1_r18_1",
+          "type": "mcq",
+          "question": "In welcher Stadt wohnt die Person?",
+          "options": [
+            "Berlin",
+            "Muenchen",
+            "Hamburg",
+            "Koeln"
+          ],
+          "answer": "Muenchen",
+          "explanation": "Ich wohne in Muenchen."
+        },
+        {
+          "id": "qr_A1_r18_2",
+          "type": "true-false",
+          "question": "In Muenchen gibt es keinen Park.",
+          "answer": "false",
+          "explanation": "Es gibt viele Parks in Muenchen."
+        },
+        {
+          "id": "qr_A1_r18_3",
+          "type": "mcq",
+          "question": "Wie ist die U-Bahn in Muenchen?",
+          "options": [
+            "Langsam und alt",
+            "Schnell und sauber",
+            "Teuer",
+            "Immer voll"
+          ],
+          "answer": "Schnell und sauber",
+          "explanation": "Die U-Bahn ist schnell und sauber."
+        }
+      ],
+      "id": "A1_read_18",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_19",
+      "title": "Neue Nachbarn",
+      "text": "Herr und Frau Koenig sind neu in der Stadt. Sie besuchen ihre Nachbarn. Frau Koenig sagt: 'Guten Tag, wir sind Ihre neuen Nachbarn. Ich heisse Anna Koenig und das ist mein Mann Thomas.' Der Nachbar sagt: 'Hallo! Ich bin Herr Mueller. Schoen, Sie kennenzulernen.'",
+      "questions": [
+        {
+          "id": "qr_A1_r19_1",
+          "type": "mcq",
+          "question": "Wer ist neu in der Stadt?",
+          "options": [
+            "Herr Mueller",
+            "Herr und Frau Koenig",
+            "Die Kinder",
+            "Der Arzt"
+          ],
+          "answer": "Herr und Frau Koenig",
+          "explanation": "Herr und Frau Koenig sind neu."
+        },
+        {
+          "id": "qr_A1_r19_2",
+          "type": "true-false",
+          "question": "Frau Koenig heisst Anna.",
+          "answer": "true",
+          "explanation": "Ich heisse Anna Koenig."
+        },
+        {
+          "id": "qr_A1_r19_3",
+          "type": "mcq",
+          "question": "Wie heisst der Nachbar?",
+          "options": [
+            "Herr Schmidt",
+            "Herr Mueller",
+            "Herr Koenig",
+            "Herr Weber"
+          ],
+          "answer": "Herr Mueller",
+          "explanation": "Der Nachbar sagt: Ich bin Herr Mueller."
+        }
+      ],
+      "id": "A1_read_19",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_20",
+      "title": "Im Cafe",
+      "text": "Sarah und Tom sind im Cafe 'Am Markt'. Sarah bestellt einen Cappuccino und ein Stueck Kuchen. Tom bestellt einen Tee und ein Croissant. Der Cappuccino kostet 3 Euro 50. Der Kuchen kostet 4 Euro. Sie bleiben eine Stunde und reden.",
+      "questions": [
+        {
+          "id": "qr_A1_r20_1",
+          "type": "true-false",
+          "question": "Tom bestellt Cappuccino.",
+          "answer": "false",
+          "explanation": "Tom bestellt Tee und ein Croissant."
+        },
+        {
+          "id": "qr_A1_r20_2",
+          "type": "mcq",
+          "question": "Was kostet der Cappuccino?",
+          "options": [
+            "2 Euro 50",
+            "3 Euro",
+            "3 Euro 50",
+            "4 Euro"
+          ],
+          "answer": "3 Euro 50",
+          "explanation": "Der Cappuccino kostet 3 Euro 50."
+        },
+        {
+          "id": "qr_A1_r20_3",
+          "type": "true-false",
+          "question": "Sarah und Tom bleiben zwei Stunden.",
+          "answer": "false",
+          "explanation": "Sie bleiben eine Stunde."
+        }
+      ],
+      "id": "A1_read_20",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_21",
+      "title": "Mit dem Bus zur Arbeit",
+      "text": "Herr Braun faehrt jeden Tag mit dem Bus zur Arbeit. Er steigt um 7:15 Uhr an der Haltestelle 'Marktplatz' ein. Die Fahrt dauert 25 Minuten. Er steigt an der Haltestelle 'Krankenhaus' aus. Dann geht er fuenf Minuten zu Fuss. Das Busticket kostet 2 Euro 80.",
+      "questions": [
+        {
+          "id": "qr_A1_r21_1",
+          "type": "mcq",
+          "question": "Wann steigt Herr Braun in den Bus?",
+          "options": [
+            "Um 7:00 Uhr",
+            "Um 7:15 Uhr",
+            "Um 7:30 Uhr",
+            "Um 7:45 Uhr"
+          ],
+          "answer": "Um 7:15 Uhr",
+          "explanation": "Er steigt um 7:15 Uhr ein."
+        },
+        {
+          "id": "qr_A1_r21_2",
+          "type": "true-false",
+          "question": "Die Busfahrt dauert 25 Minuten.",
+          "answer": "true",
+          "explanation": "Die Fahrt dauert 25 Minuten."
+        },
+        {
+          "id": "qr_A1_r21_3",
+          "type": "mcq",
+          "question": "Was kostet das Busticket?",
+          "options": [
+            "1 Euro 80",
+            "2 Euro 50",
+            "2 Euro 80",
+            "3 Euro"
+          ],
+          "answer": "2 Euro 80",
+          "explanation": "Das Busticket kostet 2 Euro 80."
+        }
+      ],
+      "id": "A1_read_21",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_22",
+      "title": "Ein Telefonat",
+      "text": "Das Telefon klingelt. Frau Mueller nimmt ab: 'Hallo, hier ist Petra Mueller.' Eine Stimme sagt: 'Guten Tag, Frau Mueller. Hier ist die Praxis Dr. Schneider. Ich rufe wegen Ihres Termins an.' Frau Mueller sagt: 'Ah ja, vielen Dank. Ich komme morgen um 10 Uhr.'",
+      "questions": [
+        {
+          "id": "qr_A1_r22_1",
+          "type": "mcq",
+          "question": "Wer ruft Frau Mueller an?",
+          "options": [
+            "Ihr Mann",
+            "Die Praxis Dr. Schneider",
+            "Ihre Tochter",
+            "Ein Freund"
+          ],
+          "answer": "Die Praxis Dr. Schneider",
+          "explanation": "Hier ist die Praxis Dr. Schneider."
+        },
+        {
+          "id": "qr_A1_r22_2",
+          "type": "true-false",
+          "question": "Frau Mueller hat morgen um 10 Uhr einen Termin.",
+          "answer": "true",
+          "explanation": "Ich komme morgen um 10 Uhr."
+        },
+        {
+          "id": "qr_A1_r22_3",
+          "type": "mcq",
+          "question": "Warum ruft die Praxis an?",
+          "options": [
+            "Wegen einer Rechnung",
+            "Wegen des Termins",
+            "Wegen einer Untersuchung",
+            "Wegen eines Rezepts"
+          ],
+          "answer": "Wegen des Termins",
+          "explanation": "Ich rufe wegen Ihres Termins an."
+        }
+      ],
+      "id": "A1_read_22",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_23",
+      "title": "Geburtstagsfeier",
+      "text": "Klara hat am 5. Mai Geburtstag. Sie wird 8 Jahre alt. Sie feiert mit ihrer Familie und Freunden. Es gibt Kuchen, Luftballons und Geschenke. Klara bekommt ein neues Fahrrad von ihren Eltern. Alle singen 'Happy Birthday'. Klara freut sich sehr.",
+      "questions": [
+        {
+          "id": "qr_A1_r23_1",
+          "type": "mcq",
+          "question": "Wann hat Klara Geburtstag?",
+          "options": [
+            "Am 3. Mai",
+            "Am 5. Mai",
+            "Am 8. Mai",
+            "Am 10. Mai"
+          ],
+          "answer": "Am 5. Mai",
+          "explanation": "Klara hat am 5. Mai Geburtstag."
+        },
+        {
+          "id": "qr_A1_r23_2",
+          "type": "true-false",
+          "question": "Klara wird 10 Jahre alt.",
+          "answer": "false",
+          "explanation": "Sie wird 8 Jahre alt."
+        },
+        {
+          "id": "qr_A1_r23_3",
+          "type": "mcq",
+          "question": "Was bekommt Klara von ihren Eltern?",
+          "options": [
+            "Ein Buch",
+            "Ein Fahrrad",
+            "Einen Hund",
+            "Einen Kuchen"
+          ],
+          "answer": "Ein Fahrrad",
+          "explanation": "Klara bekommt ein neues Fahrrad."
+        }
+      ],
+      "id": "A1_read_23",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_24",
+      "title": "Zahlen und Rechnen",
+      "text": "Im Matheunterricht lernen die Kinder Zahlen. Die Lehrerin fragt: 'Was ist drei plus fuenf?' Tim meldet sich: 'Drei plus fuenf ist acht.' Die Lehrerin fragt weiter: 'Was ist zwoelf minus vier?' Sara sagt: 'Zwoelf minus vier ist acht.' Alle Kinder rechnen gut mit.",
+      "questions": [
+        {
+          "id": "qr_A1_r24_1",
+          "type": "mcq",
+          "question": "Was ist drei plus fuenf?",
+          "options": [
+            "Sieben",
+            "Acht",
+            "Neun",
+            "Zehn"
+          ],
+          "answer": "Acht",
+          "explanation": "Drei plus fuenf ist acht."
+        },
+        {
+          "id": "qr_A1_r24_2",
+          "type": "true-false",
+          "question": "Sara sagt, zwoelf minus vier ist sechs.",
+          "answer": "false",
+          "explanation": "Sara sagt, zwoelf minus vier ist acht."
+        },
+        {
+          "id": "qr_A1_r24_3",
+          "type": "mcq",
+          "question": "Was lernen die Kinder?",
+          "options": [
+            "Lesen",
+            "Schreiben",
+            "Rechnen",
+            "Zeichnen"
+          ],
+          "answer": "Rechnen",
+          "explanation": "Im Matheunterricht lernen sie rechnen."
+        }
+      ],
+      "id": "A1_read_24",
+      "level": "A1"
+    },
+    {
+      "lessonId": "A1_lesson_25",
+      "title": "In der Schule",
+      "text": "Die Schule beginnt um 8:00 Uhr. Die Schueler sind in der Klasse 1b. Frau Maier ist die Lehrerin. Heute lernen sie das Alphabet. Die Kinder sagen die Buchstaben von A bis Z. Nach der Pause malen sie ein Bild. Um 12:00 Uhr ist die Schule zu Ende.",
+      "questions": [
+        {
+          "id": "qr_A1_r25_1",
+          "type": "true-false",
+          "question": "Die Schule beginnt um 8:00 Uhr.",
+          "answer": "true",
+          "explanation": "Die Schule beginnt um 8:00 Uhr."
+        },
+        {
+          "id": "qr_A1_r25_2",
+          "type": "mcq",
+          "question": "Wer ist die Lehrerin?",
+          "options": [
+            "Frau Schmidt",
+            "Frau Maier",
+            "Frau Weber",
+            "Frau Mueller"
+          ],
+          "answer": "Frau Maier",
+          "explanation": "Frau Maier ist die Lehrerin."
+        },
+        {
+          "id": "qr_A1_r25_3",
+          "type": "true-false",
+          "question": "Nach der Pause turnen die Kinder.",
+          "answer": "false",
+          "explanation": "Nach der Pause malen sie ein Bild."
+        }
+      ],
+      "id": "A1_read_25",
+      "level": "A1"
+    },
+    {
+      "id": "A1_read_26",
+      "title": "Mein Name ist Lukas",
+      "text": "Hallo! Ich heisse Lukas. Ich bin 22 Jahre alt. Ich komme aus Muenchen. Ich wohne in Koeln. Von Beruf bin ich Krankenpfleger. Ich mag meinen Beruf sehr.",
+      "questions": [
+        {
+          "id": "qr174",
+          "type": "true-false",
+          "question": "Lukas ist 22 Jahre alt.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Ich bin 22 Jahre alt.'"
+        },
+        {
+          "id": "qr175",
+          "type": "true-false",
+          "question": "Lukas kommt aus Koeln.",
+          "answer": "false",
+          "explanation": "Lukas kommt aus Muenchen, er wohnt in Koeln."
+        },
+        {
+          "id": "qr176",
+          "type": "mcq",
+          "question": "Was ist Lukas von Beruf?",
+          "options": [
+            "Arzt",
+            "Krankenpfleger",
+            "Lehrer",
+            "Ingenieur"
+          ],
+          "answer": "Krankenpfleger",
+          "explanation": "Der Text sagt: 'Von Beruf bin ich Krankenpfleger.'"
+        }
+      ],
+      "lessonId": "A1_lesson_1"
+    },
+    {
+      "id": "A1_read_27",
+      "title": "Eine E-Mail von Maria",
+      "text": "Lieber Tom,\n\nwie geht es dir? Mir geht es gut. Ich bin jetzt in Berlin. Das Wetter ist schoen. Ich besuche meine Freundin Lisa. Wir gehen morgen ins Museum.\n\nViele Gruesse,\nMaria",
+      "questions": [
+        {
+          "id": "qr177",
+          "type": "true-false",
+          "question": "Maria ist in Berlin.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Ich bin jetzt in Berlin.'"
+        },
+        {
+          "id": "qr178",
+          "type": "mcq",
+          "question": "Was machen Maria und Lisa morgen?",
+          "options": [
+            "Schwimmen",
+            "Ins Museum gehen",
+            "Einkaufen",
+            "Kochen"
+          ],
+          "answer": "Ins Museum gehen",
+          "explanation": "Der Text sagt: 'Wir gehen morgen ins Museum.'"
+        },
+        {
+          "id": "qr179",
+          "type": "true-false",
+          "question": "Das Wetter ist schlecht.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Das Wetter ist schoen.'"
+        }
+      ],
+      "lessonId": "A1_lesson_2"
+    },
+    {
+      "id": "A1_read_28",
+      "title": "Terminbestaetigung",
+      "text": "Sehr geehrte Frau Schulz,\n\nvielen Dank fuer Ihre Terminanfrage. Ihr Termin bei Dr. Weber ist am Mittwoch, den 15. Mai um 10:30 Uhr. Bitte bringen Sie Ihre Versicherungskarte mit. Die Adresse ist: Hauptstrasse 12, 2. Stock.\n\nMit freundlichen Gruessen,\nIhre Praxis Dr. Weber",
+      "questions": [
+        {
+          "id": "qr180",
+          "type": "mcq",
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Am Montag",
+            "Am Mittwoch",
+            "Am Freitag",
+            "Am Samstag"
+          ],
+          "answer": "Am Mittwoch",
+          "explanation": "Der Termin ist am Mittwoch, den 15. Mai."
+        },
+        {
+          "id": "qr181",
+          "type": "mcq",
+          "question": "Was soll Frau Schulz mitbringen?",
+          "options": [
+            "Einen Ausweis",
+            "Die Versicherungskarte",
+            "Ein Rezept",
+            "Ein Foto"
+          ],
+          "answer": "Die Versicherungskarte",
+          "explanation": "Der Text sagt: 'Bitte bringen Sie Ihre Versicherungskarte mit.'"
+        },
+        {
+          "id": "qr182",
+          "type": "true-false",
+          "question": "Die Praxis ist im 2. Stock.",
+          "answer": "true",
+          "explanation": "Die Adresse ist Hauptstrasse 12, 2. Stock."
+        }
+      ],
+      "lessonId": "A1_lesson_3"
+    },
+    {
+      "id": "A1_read_29",
+      "title": "Hinweis in der Praxis",
+      "text": "Willkommen in der Praxis Dr. Mueller!\n\nUnsere Sprechzeiten:\nMontag bis Freitag: 8:00 - 17:00 Uhr\nSamstag: 9:00 - 13:00 Uhr\nSonntag: geschlossen\n\nBitte melden Sie sich an der Anmeldung. Nehmen Sie bitte im Wartezimmer Platz.",
+      "questions": [
+        {
+          "id": "qr183",
+          "type": "true-false",
+          "question": "Die Praxis hat samstags bis 13:00 Uhr geoeffnet.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Samstag: 9:00 - 13:00 Uhr.'"
+        },
+        {
+          "id": "qr184",
+          "type": "mcq",
+          "question": "Wann ist die Praxis geschlossen?",
+          "options": [
+            "Am Montag",
+            "Am Samstag",
+            "Am Sonntag",
+            "Am Freitag"
+          ],
+          "answer": "Am Sonntag",
+          "explanation": "Der Text sagt: 'Sonntag: geschlossen.'"
+        },
+        {
+          "id": "qr185",
+          "type": "true-false",
+          "question": "Patienten sollen sich an der Anmeldung melden.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Bitte melden Sie sich an der Anmeldung.'"
+        }
+      ],
+      "lessonId": "A1_lesson_4"
+    },
+    {
+      "id": "A1_read_30",
+      "title": "Oeffnungszeiten der Apotheke",
+      "text": "Apotheke am Marktplatz\n\nOeffnungszeiten:\nMontag - Freitag: 8:00 - 18:30 Uhr\nSamstag: 8:00 - 14:00 Uhr\n\nNotdienst: Taeglich ab 18:30 Uhr bis 8:00 Uhr am naechsten Morgen.\nAdresse: Marktplatz 5, 10115 Berlin\nTelefon: 030 123456",
+      "questions": [
+        {
+          "id": "qr186",
+          "type": "mcq",
+          "question": "Bis wann hat die Apotheke samstags geoeffnet?",
+          "options": [
+            "14:00 Uhr",
+            "16:00 Uhr",
+            "18:30 Uhr",
+            "20:00 Uhr"
+          ],
+          "answer": "14:00 Uhr",
+          "explanation": "Der Text sagt: 'Samstag: 8:00 - 14:00 Uhr.'"
+        },
+        {
+          "id": "qr187",
+          "type": "true-false",
+          "question": "Die Apotheke hat einen Notdienst.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Notdienst: Taeglich ab 18:30 Uhr.'"
+        },
+        {
+          "id": "qr188",
+          "type": "mcq",
+          "question": "Wie ist die Telefonnummer?",
+          "options": [
+            "030 654321",
+            "030 123456",
+            "030 789012",
+            "030 345678"
+          ],
+          "answer": "030 123456",
+          "explanation": "Die Telefonnummer ist 030 123456."
+        }
+      ],
+      "lessonId": "A1_lesson_5"
+    },
+    {
+      "id": "A1_read_31",
+      "title": "Speisekarte Cafe Sonnenschein",
+      "text": "Cafe Sonnenschein - Speisekarte\n\nFruehstueck:\n- Fruehstuecksteller: 5,50 Euro\n- Marmeladenbrot: 2,00 Euro\n- Ruehrei mit Brot: 4,50 Euro\n\nGetraenke:\n- Kaffee: 2,50 Euro\n- Tee: 2,00 Euro\n- Orangensaft: 3,00 Euro\n\nKuchen:\n- Apfelkuchen: 3,50 Euro\n- Schokoladenkuchen: 3,50 Euro",
+      "questions": [
+        {
+          "id": "qr189",
+          "type": "mcq",
+          "question": "Was kostet der Kaffee?",
+          "options": [
+            "2,00 Euro",
+            "2,50 Euro",
+            "3,00 Euro",
+            "3,50 Euro"
+          ],
+          "answer": "2,50 Euro",
+          "explanation": "Der Kaffee kostet 2,50 Euro."
+        },
+        {
+          "id": "qr190",
+          "type": "true-false",
+          "question": "Der Apfelkuchen kostet 3,50 Euro.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Apfelkuchen: 3,50 Euro.'"
+        },
+        {
+          "id": "qr191",
+          "type": "mcq",
+          "question": "Was kostet das Ruehrei mit Brot?",
+          "options": [
+            "4,50 Euro",
+            "5,50 Euro",
+            "3,50 Euro",
+            "2,50 Euro"
+          ],
+          "answer": "4,50 Euro",
+          "explanation": "Der Text sagt: 'Ruehrei mit Brot: 4,50 Euro.'"
+        }
+      ],
+      "lessonId": "A1_lesson_6"
+    },
+    {
+      "id": "A1_read_32",
+      "title": "Fahrplan Bus 142",
+      "text": "Bus 142 - Hauptbahnhof zum Marktplatz\n\nHaltestellen:\nHauptbahnhof: 9:00\nStadtmitte: 9:10\nMarktplatz: 9:20\n\nFahrkarten:\nEinzelfahrt: 2,80 Euro\nTageskarte: 5,50 Euro\nMonatskarte: 49,00 Euro\n\nKinder unter 6 Jahren fahren kostenlos.",
+      "questions": [
+        {
+          "id": "qr192",
+          "type": "mcq",
+          "question": "Wie lange faehrt der Bus vom Hauptbahnhof zum Marktplatz?",
+          "options": [
+            "10 Minuten",
+            "15 Minuten",
+            "20 Minuten",
+            "30 Minuten"
+          ],
+          "answer": "20 Minuten",
+          "explanation": "Abfahrt 9:00, Ankunft 9:20 = 20 Minuten."
+        },
+        {
+          "id": "qr193",
+          "type": "true-false",
+          "question": "Die Monatskarte kostet 49 Euro.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Monatskarte: 49,00 Euro.'"
+        },
+        {
+          "id": "qr194",
+          "type": "true-false",
+          "question": "Kinder unter 6 Jahren muessen keine Fahrkarte kaufen.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Kinder unter 6 Jahren fahren kostenlos.'"
+        }
+      ],
+      "lessonId": "A1_lesson_7"
+    },
+    {
+      "id": "A1_read_33",
+      "title": "Das Wetter am Wochenende",
+      "text": "Wettervorhersage fuer Samstag und Sonntag:\n\nSamstag: Die Sonne scheint. Es ist warm. Temperatur: 22 Grad. Kein Regen.\n\nSonntag: Es regnet am Morgen. Am Nachmittag wird es sonnig. Temperatur: 18 Grad.\n\nAm Montag: Regen und Wind. Temperatur: 15 Grad.",
+      "questions": [
+        {
+          "id": "qr195",
+          "type": "true-false",
+          "question": "Am Samstag scheint die Sonne.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Samstag: Die Sonne scheint.'"
+        },
+        {
+          "id": "qr196",
+          "type": "mcq",
+          "question": "Wie warm ist es am Sonntag?",
+          "options": [
+            "15 Grad",
+            "18 Grad",
+            "20 Grad",
+            "22 Grad"
+          ],
+          "answer": "18 Grad",
+          "explanation": "Der Text sagt: 'Sonntag: Temperatur: 18 Grad.'"
+        },
+        {
+          "id": "qr197",
+          "type": "mcq",
+          "question": "Wie ist das Wetter am Montag?",
+          "options": [
+            "Sonnig",
+            "Regen und Wind",
+            "Schnee",
+            "Nebel"
+          ],
+          "answer": "Regen und Wind",
+          "explanation": "Der Text sagt: 'Am Montag: Regen und Wind.'"
+        }
+      ],
+      "lessonId": "A1_lesson_8"
+    },
+    {
+      "id": "A1_read_34",
+      "title": "Kassenbon Supermarkt",
+      "text": "SUPERMARKT FRISCH & GUENSTIG\n\nFiliale Berlin-Mitte\n\n1x Milch (1 Liter): 1,29 Euro\n1x Brot (Vollkorn): 2,49 Euro\n2x Apfel (1 kg): 2,98 Euro\n1x Butter: 1,89 Euro\n1x Kaese (200g): 3,49 Euro\n\nSumme: 12,14 Euro\nBezahlt mit Karte: 12,14 Euro\n\nVielen Dank fuer Ihren Einkauf!\nSamstag, 12. April 2025",
+      "questions": [
+        {
+          "id": "qr198",
+          "type": "mcq",
+          "question": "Wie viel kostet das Brot?",
+          "options": [
+            "1,29 Euro",
+            "2,49 Euro",
+            "2,98 Euro",
+            "3,49 Euro"
+          ],
+          "answer": "2,49 Euro",
+          "explanation": "Der Text sagt: 'Brot (Vollkorn): 2,49 Euro.'"
+        },
+        {
+          "id": "qr199",
+          "type": "true-false",
+          "question": "Der Kunde hat mit Karte bezahlt.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Bezahlt mit Karte: 12,14 Euro.'"
+        },
+        {
+          "id": "qr200",
+          "type": "mcq",
+          "question": "Was kostet alles zusammen?",
+          "options": [
+            "10,14 Euro",
+            "11,14 Euro",
+            "12,14 Euro",
+            "13,14 Euro"
+          ],
+          "answer": "12,14 Euro",
+          "explanation": "Die Summe ist 12,14 Euro."
+        }
+      ],
+      "lessonId": "A1_lesson_9"
+    },
+    {
+      "id": "A1_read_35",
+      "title": "Wohnung in Muenchen zu vermieten",
+      "text": "Schoene 2-Zimmer-Wohnung in Muenchen-Schwabing zu vermieten.\n\nGroesse: 55 qm\nZimmer: 2 (Wohnzimmer, Schlafzimmer), Kueche, Bad, Balkon\nMiete: 850 Euro warm (inkl. Nebenkosten)\nKaution: 1700 Euro\nVerfuegbar: ab 1. Juni\n\nBesichtigung: Samstag, 10:00 - 12:00 Uhr\nTelefon: 089 789012",
+      "questions": [
+        {
+          "id": "qr201",
+          "type": "mcq",
+          "question": "Wie viele Zimmer hat die Wohnung?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "2",
+          "explanation": "Der Text sagt: 'Zimmer: 2.'"
+        },
+        {
+          "id": "qr202",
+          "type": "true-false",
+          "question": "Die Wohnung hat einen Balkon.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Balkon' in der Zimmerliste."
+        },
+        {
+          "id": "qr203",
+          "type": "mcq",
+          "question": "Wie hoch ist die Kaution?",
+          "options": [
+            "850 Euro",
+            "1000 Euro",
+            "1500 Euro",
+            "1700 Euro"
+          ],
+          "answer": "1700 Euro",
+          "explanation": "Der Text sagt: 'Kaution: 1700 Euro.'"
+        }
+      ],
+      "lessonId": "A1_lesson_10"
+    },
+    {
+      "id": "A1_read_36",
+      "title": "Familie Schmidt",
+      "text": "Die Familie Schmidt wohnt in Hamburg. Herr Schmidt ist 45 Jahre alt und arbeitet als Busfahrer. Frau Schmidt ist 42 und arbeitet in einer Apotheke. Sie haben zwei Kinder: Jonas ist 10 und Emma ist 7. Die Familie hat einen kleinen Hund namens Bello. Am Wochenende gehen sie zusammen in den Park.",
+      "questions": [
+        {
+          "id": "qr204",
+          "type": "true-false",
+          "question": "Herr Schmidt ist Busfahrer.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Herr Schmidt arbeitet als Busfahrer.'"
+        },
+        {
+          "id": "qr205",
+          "type": "mcq",
+          "question": "Wie alt ist Emma?",
+          "options": [
+            "7",
+            "10",
+            "12",
+            "15"
+          ],
+          "answer": "7",
+          "explanation": "Der Text sagt: 'Emma ist 7.'"
+        },
+        {
+          "id": "qr206",
+          "type": "mcq",
+          "question": "Was macht die Familie am Wochenende?",
+          "options": [
+            "Ins Kino gehen",
+            "In den Park gehen",
+            "Einkaufen",
+            "Verreisen"
+          ],
+          "answer": "In den Park gehen",
+          "explanation": "Der Text sagt: 'Am Wochenende gehen sie in den Park.'"
+        }
+      ],
+      "lessonId": "A1_lesson_11"
+    },
+    {
+      "id": "A1_read_37",
+      "title": "Ein Tag von Lisa",
+      "text": "Lisa steht um 6:30 Uhr auf. Sie duscht und zieht sich an. Um 7:15 Uhr fruehstueckt sie. Sie isst Brot mit Kaese und trinkt Kaffee. Um 8:00 Uhr geht sie zur Arbeit. Sie arbeitet in einer Praxis. Um 12:30 Uhr macht sie Mittagspause. Sie isst in der Kantine. Um 17:00 Uhr geht sie nach Hause. Um 19:00 Uhr kocht sie Abendessen. Um 22:00 Uhr geht sie ins Bett.",
+      "questions": [
+        {
+          "id": "qr207",
+          "type": "mcq",
+          "question": "Wann steht Lisa auf?",
+          "options": [
+            "Um 6:00 Uhr",
+            "Um 6:30 Uhr",
+            "Um 7:00 Uhr",
+            "Um 7:30 Uhr"
+          ],
+          "answer": "Um 6:30 Uhr",
+          "explanation": "Der Text sagt: 'Lisa steht um 6:30 Uhr auf.'"
+        },
+        {
+          "id": "qr208",
+          "type": "true-false",
+          "question": "Lisa arbeitet in einer Praxis.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Sie arbeitet in einer Praxis.'"
+        },
+        {
+          "id": "qr209",
+          "type": "mcq",
+          "question": "Was macht Lisa um 19:00 Uhr?",
+          "options": [
+            "Fruehstueckt",
+            "Geht nach Hause",
+            "Kocht Abendessen",
+            "Geht ins Bett"
+          ],
+          "answer": "Kocht Abendessen",
+          "explanation": "Der Text sagt: 'Um 19:00 Uhr kocht sie Abendessen.'"
+        }
+      ],
+      "lessonId": "A1_lesson_12"
+    },
+    {
+      "id": "A1_read_38",
+      "title": "Deutschkurs A1",
+      "text": "Volkshochschule (VHS) Berlin\n\nDeutschkurs A1 - Anfaenger\nKursbeginn: Montag, 5. Mai\nKursende: Freitag, 27. Juni\nUnterrichtszeiten: Montag bis Freitag, 9:00 - 12:15 Uhr\nKursort: VHS Berlin, Zimmer 204\nKursleiter: Herr Fischer\nKosten: 200 Euro\n\nBitte bringen Sie ein Heft und einen Stift mit.",
+      "questions": [
+        {
+          "id": "qr210",
+          "type": "mcq",
+          "question": "Wann beginnt der Deutschkurs?",
+          "options": [
+            "Am 1. Mai",
+            "Am 5. Mai",
+            "Am 10. Mai",
+            "Am 15. Mai"
+          ],
+          "answer": "Am 5. Mai",
+          "explanation": "Der Text sagt: 'Kursbeginn: Montag, 5. Mai.'"
+        },
+        {
+          "id": "qr211",
+          "type": "true-false",
+          "question": "Der Kurs kostet 200 Euro.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Kosten: 200 Euro.'"
+        },
+        {
+          "id": "qr212",
+          "type": "mcq",
+          "question": "Wer ist der Kursleiter?",
+          "options": [
+            "Frau Mueller",
+            "Herr Schmidt",
+            "Herr Fischer",
+            "Frau Weber"
+          ],
+          "answer": "Herr Fischer",
+          "explanation": "Der Text sagt: 'Kursleiter: Herr Fischer.'"
+        }
+      ],
+      "lessonId": "A1_lesson_13"
+    },
+    {
+      "id": "A1_read_39",
+      "title": "Arbeitsplan Mai",
+      "text": "Arbeitsplan fuer Mai - Pfleger Thomas\n\nWoche 1 (5.-9. Mai): Fruehschicht (6:00 - 14:00 Uhr)\nWoche 2 (12.-16. Mai): Spaetschicht (14:00 - 22:00 Uhr)\nWoche 3 (19.-23. Mai): Nachtschicht (22:00 - 6:00 Uhr)\nWoche 4 (26.-30. Mai): Fruehschicht (6:00 - 14:00 Uhr)\n\nWochenende: frei\nFeiertage: 1. Mai (frei), 29. Mai (frei)",
+      "questions": [
+        {
+          "id": "qr213",
+          "type": "mcq",
+          "question": "Wann arbeitet Thomas in Woche 1?",
+          "options": [
+            "Fruehschicht",
+            "Spaetschicht",
+            "Nachtschicht",
+            "Frei"
+          ],
+          "answer": "Fruehschicht",
+          "explanation": "Der Text sagt: 'Woche 1: Fruehschicht.'"
+        },
+        {
+          "id": "qr214",
+          "type": "true-false",
+          "question": "Am 1. Mai hat Thomas frei.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Feiertage: 1. Mai (frei).'"
+        },
+        {
+          "id": "qr215",
+          "type": "mcq",
+          "question": "Wie lang ist die Spaetschicht?",
+          "options": [
+            "6 Stunden",
+            "8 Stunden",
+            "10 Stunden",
+            "12 Stunden"
+          ],
+          "answer": "8 Stunden",
+          "explanation": "Von 14:00 bis 22:00 Uhr sind 8 Stunden."
+        }
+      ],
+      "lessonId": "A1_lesson_14"
+    },
+    {
+      "id": "A1_read_40",
+      "title": "Einladung zum Geburtstag",
+      "text": "Liebe Anna,\n\nich lade dich herzlich zu meinem Geburtstag ein!\n\nWann: Samstag, 10. Mai\nUhrzeit: 18:00 Uhr\nWo: Bei mir zu Hause, Muehlerstrasse 23\n\nEs gibt Kuchen, Pizza und Getraenke. Ich freue mich auf dich!\n\nBitte sag mir bis Donnerstag Bescheid, ob du kommen kannst.\n\nLiebe Gruesse,\nSarah",
+      "questions": [
+        {
+          "id": "qr216",
+          "type": "true-false",
+          "question": "Die Party ist am Freitag.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Samstag, 10. Mai.'"
+        },
+        {
+          "id": "qr217",
+          "type": "mcq",
+          "question": "Wann soll Anna Bescheid sagen?",
+          "options": [
+            "Bis Mittwoch",
+            "Bis Donnerstag",
+            "Bis Freitag",
+            "Bis Samstag"
+          ],
+          "answer": "Bis Donnerstag",
+          "explanation": "Der Text sagt: 'Bitte sag mir bis Donnerstag Bescheid.'"
+        },
+        {
+          "id": "qr218",
+          "type": "true-false",
+          "question": "Es gibt Kuchen, Pizza und Getraenke.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Es gibt Kuchen, Pizza und Getraenke.'"
+        }
+      ],
+      "lessonId": "A1_lesson_15"
+    },
+    {
+      "id": "A1_read_41",
+      "title": "Hotel Stadt Berlin",
+      "text": "Hotel Stadt Berlin\n\nWillkommen! Informationen fuer unsere Gaeste:\n\nFruehstueck: 7:00 - 10:00 Uhr im Restaurant (1. Stock)\nCheck-in: ab 14:00 Uhr\nCheck-out: bis 11:00 Uhr\n\nZimmerausstattung:\n- Telefon\n- TV\n- WLAN (kostenlos)\n- Bad mit Dusche\n\nRezeption: 24 Stunden besetzt\nTelefon: 030 987654",
+      "questions": [
+        {
+          "id": "qr219",
+          "type": "true-false",
+          "question": "Das Fruehstueck ist von 7:00 bis 10:00 Uhr.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Fruehstueck: 7:00 - 10:00 Uhr.'"
+        },
+        {
+          "id": "qr220",
+          "type": "mcq",
+          "question": "Bis wann ist der Check-out?",
+          "options": [
+            "10:00 Uhr",
+            "11:00 Uhr",
+            "12:00 Uhr",
+            "14:00 Uhr"
+          ],
+          "answer": "11:00 Uhr",
+          "explanation": "Der Text sagt: 'Check-out: bis 11:00 Uhr.'"
+        },
+        {
+          "id": "qr221",
+          "type": "mcq",
+          "question": "Was kostet WLAN im Hotel?",
+          "options": [
+            "5 Euro pro Tag",
+            "10 Euro pro Tag",
+            "Kostenlos",
+            "2 Euro pro Stunde"
+          ],
+          "answer": "Kostenlos",
+          "explanation": "Der Text sagt: 'WLAN (kostenlos).'"
+        }
+      ],
+      "lessonId": "A1_lesson_16"
+    },
+    {
+      "id": "A1_read_42",
+      "title": "Weg zur Bibliothek",
+      "text": "So finden Sie die Stadtbibliothek:\n\nSie sind am Hauptbahnhof. Gehen Sie geradeaus bis zur Kreuzung. Biegen Sie links in die Bahnhofstrasse. Gehen Sie 200 Meter geradeaus. Die Bibliothek ist auf der rechten Seite, neben dem Cafe.\n\nOeffnungszeiten:\nMontag - Freitag: 10:00 - 19:00 Uhr\nSamstag: 10:00 - 14:00 Uhr\nSonntag: geschlossen",
+      "questions": [
+        {
+          "id": "qr222",
+          "type": "true-false",
+          "question": "Die Bibliothek ist neben einem Cafe.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Die Bibliothek ist auf der rechten Seite, neben dem Cafe.'"
+        },
+        {
+          "id": "qr223",
+          "type": "mcq",
+          "question": "In welche Strasse biegen Sie ein?",
+          "options": [
+            "Hauptstrasse",
+            "Bahnhofstrasse",
+            "Marktstrasse",
+            "Schulstrasse"
+          ],
+          "answer": "Bahnhofstrasse",
+          "explanation": "Der Text sagt: 'Biegen Sie links in die Bahnhofstrasse.'"
+        },
+        {
+          "id": "qr224",
+          "type": "true-false",
+          "question": "Die Bibliothek hat sonntags geoeffnet.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Sonntag: geschlossen.'"
+        }
+      ],
+      "lessonId": "A1_lesson_17"
+    },
+    {
+      "id": "A1_read_43",
+      "title": "Ihr Termin bei Dr. Klein",
+      "text": "Sehr geehrter Herr Braun,\n\nIhr Termin bei Dr. Klein wurde bestaetigt.\n\nDatum: Donnerstag, 22. Mai\nUhrzeit: 14:45 Uhr\nAdresse: Goethestraffe 45, 80336 Muenchen\n\nBitte kommen Sie 10 Minuten frueher. Bringen Sie Ihre Versicherungskarte und Ihren Terminpass mit. Die Sprechstunde kostet nichts.\n\nBei Verhinderung bitte 24 Stunden vorher absagen.\n\nMit freundlichen Gruessen,\nIhre Praxis Dr. Klein",
+      "questions": [
+        {
+          "id": "qr225",
+          "type": "mcq",
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Am Dienstag",
+            "Am Mittwoch",
+            "Am Donnerstag",
+            "Am Freitag"
+          ],
+          "answer": "Am Donnerstag",
+          "explanation": "Der Text sagt: 'Donnerstag, 22. Mai.'"
+        },
+        {
+          "id": "qr226",
+          "type": "true-false",
+          "question": "Der Termin kostet 10 Euro.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Die Sprechstunde kostet nichts.'"
+        },
+        {
+          "id": "qr227",
+          "type": "mcq",
+          "question": "Bis wann soll Herr Braun absagen?",
+          "options": [
+            "12 Stunden vorher",
+            "24 Stunden vorher",
+            "48 Stunden vorher",
+            "Eine Woche vorher"
+          ],
+          "answer": "24 Stunden vorher",
+          "explanation": "Der Text sagt: '24 Stunden vorher absagen.'"
+        }
+      ],
+      "lessonId": "A1_lesson_18"
+    },
+    {
+      "id": "A1_read_44",
+      "title": "Anmeldebogen Praxis Dr. Klein",
+      "text": "Praxis Dr. Klein - Anmeldebogen\n\nPatient: Klaus Weber\nGeburtsdatum: 15.03.1980\n\nBeschwerden (seit 3 Tagen):\n- Husten\n- Halsschmerzen\n- Leichtes Fieber (38,2 Grad)\n\nAllergien: Keine\nMedikamente: Keine\n\nBlutdruck: 130/85\nVersicherung: AOK",
+      "questions": [
+        {
+          "id": "qr228",
+          "type": "mcq",
+          "question": "Wie lange hat Klaus Weber die Beschwerden?",
+          "options": [
+            "Seit 1 Tag",
+            "Seit 2 Tagen",
+            "Seit 3 Tagen",
+            "Seit einer Woche"
+          ],
+          "answer": "Seit 3 Tagen",
+          "explanation": "Der Text sagt: 'Beschwerden (seit 3 Tagen).'"
+        },
+        {
+          "id": "qr229",
+          "type": "true-false",
+          "question": "Klaus Weber hat Allergien.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Allergien: Keine.'"
+        },
+        {
+          "id": "qr230",
+          "type": "mcq",
+          "question": "Welche Versicherung hat Klaus Weber?",
+          "options": [
+            "TK",
+            "AOK",
+            "DAK",
+            "Barmer"
+          ],
+          "answer": "AOK",
+          "explanation": "Der Text sagt: 'Versicherung: AOK.'"
+        }
+      ],
+      "lessonId": "A1_lesson_19"
+    },
+    {
+      "id": "A1_read_45",
+      "title": "Fundbuero - Gefunden!",
+      "text": "Fundbuero Berlin Hauptbahnhof\n\nGefunden am 10. Mai:\n- Eine schwarze Geldboerse mit 20 Euro und einer EC-Karte\n- Ein blauer Rucksack mit einem Buch und einem Heft\n- Ein silberner Schluesselbund\n\nDiese Gegenstaende koennen Sie im Fundbuero abholen (Raum 103, Erdgeschoss).\nOeffnungszeiten: 7:00 - 22:00 Uhr\nBitte bringen Sie Ihren Ausweis mit.",
+      "questions": [
+        {
+          "id": "qr231",
+          "type": "mcq",
+          "question": "Wo ist das Fundbuero?",
+          "options": [
+            "Im 1. Stock",
+            "Im Erdgeschoss",
+            "Im 2. Stock",
+            "Im Keller"
+          ],
+          "answer": "Im Erdgeschoss",
+          "explanation": "Der Text sagt: 'Raum 103, Erdgeschoss.'"
+        },
+        {
+          "id": "qr232",
+          "type": "true-false",
+          "question": "In der Geldboerse ist eine EC-Karte.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Eine schwarze Geldboerse mit 20 Euro und einer EC-Karte.'"
+        },
+        {
+          "id": "qr233",
+          "type": "true-false",
+          "question": "Das Fundbuero hat bis 20:00 Uhr geoeffnet.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Oeffnungszeiten: 7:00 - 22:00 Uhr.'"
+        }
+      ],
+      "lessonId": "A1_lesson_20"
+    },
+    {
+      "id": "A1_read_46",
+      "title": "Angebote diese Woche",
+      "text": "Supermarkt GUENSTIG PREIS - Angebote gueltig bis Samstag\n\nWassermelone (Stueck): statt 3,49 Euro nur 1,99 Euro\nJoghurt (4er-Pack): statt 2,49 Euro nur 1,79 Euro\nHaehnchenbrust (500g): statt 5,99 Euro nur 4,49 Euro\nToilettenpapier (8 Rollen): statt 4,99 Euro nur 3,49 Euro\n\nOeffnungszeiten:\nMontag - Samstag: 7:00 - 21:00 Uhr\nSonntag: geschlossen",
+      "questions": [
+        {
+          "id": "qr234",
+          "type": "mcq",
+          "question": "Was kostet die Wassermelone im Angebot?",
+          "options": [
+            "1,79 Euro",
+            "1,99 Euro",
+            "2,49 Euro",
+            "3,49 Euro"
+          ],
+          "answer": "1,99 Euro",
+          "explanation": "Der Text sagt: 'Wassermelone: statt 3,49 Euro nur 1,99 Euro.'"
+        },
+        {
+          "id": "qr235",
+          "type": "true-false",
+          "question": "Das Toilettenpapier kostet 3,49 Euro.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Toilettenpapier: statt 4,99 Euro nur 3,49 Euro.'"
+        },
+        {
+          "id": "qr236",
+          "type": "true-false",
+          "question": "Der Supermarkt hat sonntags geoeffnet.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Sonntag: geschlossen.'"
+        }
+      ],
+      "lessonId": "A1_lesson_21"
+    },
+    {
+      "id": "A1_read_47",
+      "title": "Cafe Bluemchen",
+      "text": "Herzlich willkommen im Cafe Bluemchen!\n\nWir haben frische Kuchen und Kaffee fuer Sie.\n\nUnsere Spezialitaeten:\n- Hausgemachter Apfelkuchen: 3,50 Euro\n- Cappuccino: 3,00 Euro\n- Heisse Schokolade: 2,80 Euro\n- Kaeskuchen: 3,80 Euro\n\nWLAN Passwort: cafe2025\n\nZahlung: Bar oder Karte\nBitte bezahlen Sie an der Kasse.",
+      "questions": [
+        {
+          "id": "qr237",
+          "type": "mcq",
+          "question": "Was kostet der Cappuccino?",
+          "options": [
+            "2,50 Euro",
+            "2,80 Euro",
+            "3,00 Euro",
+            "3,50 Euro"
+          ],
+          "answer": "3,00 Euro",
+          "explanation": "Der Text sagt: 'Cappuccino: 3,00 Euro.'"
+        },
+        {
+          "id": "qr238",
+          "type": "true-false",
+          "question": "Man kann mit Karte bezahlen.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Zahlung: Bar oder Karte.'"
+        },
+        {
+          "id": "qr239",
+          "type": "mcq",
+          "question": "Was ist das WLAN Passwort?",
+          "options": [
+            "cafe2024",
+            "cafe2025",
+            "bluemchen",
+            "kaffee"
+          ],
+          "answer": "cafe2025",
+          "explanation": "Der Text sagt: 'WLAN Passwort: cafe2025.'"
+        }
+      ],
+      "lessonId": "A1_lesson_22"
+    },
+    {
+      "id": "A1_read_48",
+      "title": "Aushang in der Postfiliale",
+      "text": "DEUTSCHE POST - Wichtige Informationen\n\nOeffnungszeiten:\nMontag - Freitag: 8:30 - 18:00 Uhr\nSamstag: 9:00 - 13:00 Uhr\n\nBriefporto (Inland):\n- Standardbrief (bis 20g): 0,85 Euro\n- Kompaktbrief (bis 50g): 1,00 Euro\n- Grossbrief (bis 500g): 1,80 Euro\n\nPaket (bis 2 kg): 5,99 Euro\nPaket (bis 5 kg): 7,49 Euro\nPaket (bis 10 kg): 9,99 Euro\n\nBitte beachten Sie: Ab 18:00 Uhr keine Paketannahme mehr.",
+      "questions": [
+        {
+          "id": "qr240",
+          "type": "mcq",
+          "question": "Was kostet ein Standardbrief?",
+          "options": [
+            "0,75 Euro",
+            "0,85 Euro",
+            "1,00 Euro",
+            "1,80 Euro"
+          ],
+          "answer": "0,85 Euro",
+          "explanation": "Der Text sagt: 'Standardbrief: 0,85 Euro.'"
+        },
+        {
+          "id": "qr241",
+          "type": "true-false",
+          "question": "Die Post hat freitags bis 18:00 Uhr geoeffnet.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Montag - Freitag: 8:30 - 18:00 Uhr.'"
+        },
+        {
+          "id": "qr242",
+          "type": "mcq",
+          "question": "Bis zu welchem Gewicht kostet ein Paket 5,99 Euro?",
+          "options": [
+            "Bis 1 kg",
+            "Bis 2 kg",
+            "Bis 5 kg",
+            "Bis 10 kg"
+          ],
+          "answer": "Bis 2 kg",
+          "explanation": "Der Text sagt: 'Paket (bis 2 kg): 5,99 Euro.'"
+        }
+      ],
+      "lessonId": "A1_lesson_23"
+    },
+    {
+      "id": "A1_read_49",
+      "title": "Sportverein Fit und Gesund",
+      "text": "Sportverein Fit und Gesund e.V.\n\nKursangebot fuer Mitglieder:\n\nMontag: Yoga (17:00 - 18:00 Uhr) - Raum 1\nDienstag: Schwimmen (18:00 - 19:30 Uhr) - Hallenbad\nMittwoch: Fussball (17:00 - 18:30 Uhr) - Sportplatz\nDonnerstag: Tanzen (19:00 - 20:00 Uhr) - Raum 2\nFreitag: Krafttraining (16:00 - 17:30 Uhr) - Fitnessraum\n\nMonatsbeitrag: 25 Euro\nProbetraining: Kostenlos (1 Woche)\n\nAdresse: Sportstrasse 10, 10115 Berlin",
+      "questions": [
+        {
+          "id": "qr243",
+          "type": "true-false",
+          "question": "Yoga ist montags um 17:00 Uhr.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Montag: Yoga (17:00 - 18:00 Uhr).'"
+        },
+        {
+          "id": "qr244",
+          "type": "mcq",
+          "question": "Wie viel kostet der Monatsbeitrag?",
+          "options": [
+            "15 Euro",
+            "20 Euro",
+            "25 Euro",
+            "30 Euro"
+          ],
+          "answer": "25 Euro",
+          "explanation": "Der Text sagt: 'Monatsbeitrag: 25 Euro.'"
+        },
+        {
+          "id": "qr245",
+          "type": "true-false",
+          "question": "Das Probetraining kostet 10 Euro.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Probetraining: Kostenlos (1 Woche).'"
+        }
+      ],
+      "lessonId": "A1_lesson_24"
+    },
+    {
+      "id": "A1_read_50",
+      "title": "Besuchszeiten Krankenhaus St. Josef",
+      "text": "Krankenhaus St. Josef - Besucherinformationen\n\nBesuchszeiten:\nMontag bis Sonntag: 14:00 - 19:00 Uhr\n\nBitte beachten Sie:\n- Maximal 2 Besucher pro Patient gleichzeitig\n- Bitte desinfizieren Sie Ihre Haende am Eingang\n- Besuchen Sie keine anderen Patientenzimmer\n- Keine Blumen auf der Intensivstation\n- Kinder unter 12 Jahren nur mit Erwachsenen\n\nCafeteria: 8:00 - 20:00 Uhr (Erdgeschoss)\nParkplatz: 2 Euro pro Stunde",
+      "questions": [
+        {
+          "id": "qr246",
+          "type": "true-false",
+          "question": "Die Besuchszeit ist von 14:00 bis 19:00 Uhr.",
+          "answer": "true",
+          "explanation": "Der Text sagt: 'Besuchszeiten: 14:00 - 19:00 Uhr.'"
+        },
+        {
+          "id": "qr247",
+          "type": "mcq",
+          "question": "Wie viele Besucher duerfen gleichzeitig kommen?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": "2",
+          "explanation": "Der Text sagt: 'Maximal 2 Besucher pro Patient gleichzeitig.'"
+        },
+        {
+          "id": "qr248",
+          "type": "mcq",
+          "question": "Was muessen Besucher am Eingang machen?",
+          "options": [
+            "Anmelden",
+            "Die Haende desinfizieren",
+            "Einen Mundschutz anziehen",
+            "Bezahlen"
+          ],
+          "answer": "Die Haende desinfizieren",
+          "explanation": "Der Text sagt: 'Bitte desinfizieren Sie Ihre Haende am Eingang.'"
+        }
+      ],
+      "lessonId": "A1_lesson_25"
     }
   ],
   "A2": [
@@ -36,18 +1970,63 @@
       "title": "Ein Wochenendausflug",
       "text": "Letztes Wochenende bin ich mit meiner Freundin nach München gefahren. Wir haben den Bahnhof um 8 Uhr erreicht und sind um 8:30 Uhr abgefahren. Die Fahrt hat 3 Stunden gedauert. In München haben wir den Marienplatz besucht und leckeres Essen gegessen. Abends sind wir wieder nach Hause gefahren.",
       "questions": [
-        {"id": "qr8", "type": "mcq", "question": "Wann sind sie abgefahren?", "options": ["Um 8 Uhr", "Um 8:30 Uhr", "Um 11 Uhr", "Um 9 Uhr"], "answer": "Um 8:30 Uhr", "explanation": "Der Text sagt: '...sind um 8:30 Uhr abgefahren.'"},
-        {"id": "qr9", "type": "true-false", "question": "Die Fahrt nach München hat 5 Stunden gedauert.", "answer": "false", "explanation": "Die Fahrt hat 3 Stunden gedauert."},
-        {"id": "qr10", "type": "mcq", "question": "Was haben sie in München gemacht?", "options": ["Ein Museum besucht", "Den Marienplatz besucht", "Geschwommen", "Gearbeitet"], "answer": "Den Marienplatz besucht"}
+        {
+          "id": "qr8",
+          "type": "mcq",
+          "question": "Wann sind sie abgefahren?",
+          "options": [
+            "Um 8 Uhr",
+            "Um 8:30 Uhr",
+            "Um 11 Uhr",
+            "Um 9 Uhr"
+          ],
+          "answer": "Um 8:30 Uhr",
+          "explanation": "Der Text sagt: '...sind um 8:30 Uhr abgefahren.'"
+        },
+        {
+          "id": "qr9",
+          "type": "true-false",
+          "question": "Die Fahrt nach München hat 5 Stunden gedauert.",
+          "answer": "false",
+          "explanation": "Die Fahrt hat 3 Stunden gedauert."
+        },
+        {
+          "id": "qr10",
+          "type": "mcq",
+          "question": "Was haben sie in München gemacht?",
+          "options": [
+            "Ein Museum besucht",
+            "Den Marienplatz besucht",
+            "Geschwommen",
+            "Gearbeitet"
+          ],
+          "answer": "Den Marienplatz besucht"
+        }
       ]
     },
     {
       "id": "A2_read_2",
       "title": "Eine E-Mail an den Vermieter",
-      "text": "Betreff: Reparatur in der Wohnung\n\nSehr geehrter Herr Schmidt,\n\nich wohne in der Hauptstraße 12, Wohnung 3B. Die Heizung in meinem Zimmer funktioniert nicht. Es ist sehr kalt. Können Sie bitte einen Handwerker schicken?\n\nMit freundlichen Grüßen\nMaria Weber",
+      "text": "Betreff: Reparatur in der Wohnung\n\nSehr geehrter Herr Schmidt,\n\nich wohne in der HauptstraÃŸe 12, Wohnung 3B. Die Heizung in meinem Zimmer funktioniert nicht. Es ist sehr kalt. Können Sie bitte einen Handwerker schicken?\n\nMit freundlichen GrüÃŸen\nMaria Weber",
       "questions": [
-        {"id": "qr11", "type": "mcq", "question": "Was ist das Problem?", "options": ["Der Strom ist aus", "Die Heizung funktioniert nicht", "Ein Fenster ist kaputt", "Die Tür ist defekt"], "answer": "Die Heizung funktioniert nicht"},
-        {"id": "qr12", "type": "true-false", "question": "Maria wohnt in der Hauptstraße.", "answer": "true"}
+        {
+          "id": "qr11",
+          "type": "mcq",
+          "question": "Was ist das Problem?",
+          "options": [
+            "Der Strom ist aus",
+            "Die Heizung funktioniert nicht",
+            "Ein Fenster ist kaputt",
+            "Die Tür ist defekt"
+          ],
+          "answer": "Die Heizung funktioniert nicht"
+        },
+        {
+          "id": "qr12",
+          "type": "true-false",
+          "question": "Maria wohnt in der HauptstraÃŸe.",
+          "answer": "true"
+        }
       ]
     },
     {
@@ -55,8 +2034,25 @@
       "title": "Im Wartezimmer",
       "text": "Im Wartezimmer sitzen fünf Patienten. Frau Klein wartet schon eine Stunde. Sie hat einen Termin um 10 Uhr, aber der Arzt hat Verspätung. Herr Braun liest eine Zeitschrift. Frau Schmidt telefoniert. Plötzlich ruft die Sprechstundenhilfe: 'Frau Klein, bitte kommen Sie rein.'",
       "questions": [
-        {"id": "qr13", "type": "true-false", "question": "Frau Klein wartet schon zwei Stunden.", "answer": "false", "explanation": "Sie wartet eine Stunde."},
-        {"id": "qr14", "type": "mcq", "question": "Was macht Herr Braun?", "options": ["Er telefoniert", "Er liest eine Zeitschrift", "Er schläft", "Er isst"], "answer": "Er liest eine Zeitschrift"}
+        {
+          "id": "qr13",
+          "type": "true-false",
+          "question": "Frau Klein wartet schon zwei Stunden.",
+          "answer": "false",
+          "explanation": "Sie wartet eine Stunde."
+        },
+        {
+          "id": "qr14",
+          "type": "mcq",
+          "question": "Was macht Herr Braun?",
+          "options": [
+            "Er telefoniert",
+            "Er liest eine Zeitschrift",
+            "Er schläft",
+            "Er isst"
+          ],
+          "answer": "Er liest eine Zeitschrift"
+        }
       ]
     }
   ],
@@ -64,30 +2060,103 @@
     {
       "id": "B1_read_1",
       "title": "Gesundheitsreform in Deutschland",
-      "text": "Die deutsche Regierung hat eine neue Gesundheitsreform vorgestellt. Die Reform soll die Kosten im Gesundheitssystem senken und gleichzeitig die Versorgung verbessern. Kritiker sagen jedoch, dass die Reform zu langen Wartezeiten führen könnte. Ärzteverbände fordern mehr Investitionen in die Prävention. Die Reform tritt nächstes Jahr in Kraft.",
+      "text": "Die deutsche Regierung hat eine neue Gesundheitsreform vorgestellt. Die Reform soll die Kosten im Gesundheitssystem senken und gleichzeitig die Versorgung verbessern. Kritiker sagen jedoch, dass die Reform zu langen Wartezeiten führen könnte. Ã„rzteverbände fordern mehr Investitionen in die Prävention. Die Reform tritt nächstes Jahr in Kraft.",
       "questions": [
-        {"id": "qr15", "type": "mcq", "question": "Was soll die Gesundheitsreform erreichen?", "options": ["Mehr Ärzte einstellen", "Kosten senken und Versorgung verbessern", "Krankenhäuser schließen", "Medikamente verbilligen"], "answer": "Kosten senken und Versorgung verbessern"},
-        {"id": "qr16", "type": "true-false", "question": "Alle sind mit der Reform zufrieden.", "answer": "false", "explanation": "Kritiker sehen Probleme mit langen Wartezeiten."},
-        {"id": "qr17", "type": "mcq", "question": "Was fordern die Ärzteverbände?", "options": ["Höhere Gehälter", "Mehr Investitionen in Prävention", "Kürzere Arbeitszeiten", "Mehr Medikamente"], "answer": "Mehr Investitionen in Prävention"}
+        {
+          "id": "qr15",
+          "type": "mcq",
+          "question": "Was soll die Gesundheitsreform erreichen?",
+          "options": [
+            "Mehr Ã„rzte einstellen",
+            "Kosten senken und Versorgung verbessern",
+            "Krankenhäuser schlieÃŸen",
+            "Medikamente verbilligen"
+          ],
+          "answer": "Kosten senken und Versorgung verbessern"
+        },
+        {
+          "id": "qr16",
+          "type": "true-false",
+          "question": "Alle sind mit der Reform zufrieden.",
+          "answer": "false",
+          "explanation": "Kritiker sehen Probleme mit langen Wartezeiten."
+        },
+        {
+          "id": "qr17",
+          "type": "mcq",
+          "question": "Was fordern die Ã„rzteverbände?",
+          "options": [
+            "Höhere Gehälter",
+            "Mehr Investitionen in Prävention",
+            "Kürzere Arbeitszeiten",
+            "Mehr Medikamente"
+          ],
+          "answer": "Mehr Investitionen in Prävention"
+        }
       ]
     },
     {
       "id": "B1_read_2",
-      "title": "Berufung: Arzt oder Ärztin",
-      "text": "Immer weniger junge Menschen in Deutschland entscheiden sich für den Arztberuf. Die Arbeitsbedingungen in Krankenhäusern sind oft schwierig: lange Arbeitszeiten, viel Bürokratie und hoher Druck. Dabei wäre der Bedarf an Ärzten groß. Besonders auf dem Land fehlen Mediziner. Viele Kliniken suchen händeringend nach Personal. Die Politik versucht mit finanziellen Anreizen gegenzusteuern.",
+      "title": "Berufung: Arzt oder Ã„rztin",
+      "text": "Immer weniger junge Menschen in Deutschland entscheiden sich für den Arztberuf. Die Arbeitsbedingungen in Krankenhäusern sind oft schwierig: lange Arbeitszeiten, viel Bürokratie und hoher Druck. Dabei wäre der Bedarf an Ã„rzten groÃŸ. Besonders auf dem Land fehlen Mediziner. Viele Kliniken suchen händeringend nach Personal. Die Politik versucht mit finanziellen Anreizen gegenzusteuern.",
       "questions": [
-        {"id": "qr18", "type": "mcq", "question": "Warum entscheiden sich weniger junge Menschen für den Arztberuf?", "options": ["Weil das Gehalt zu niedrig ist", "Wegen schwieriger Arbeitsbedingungen", "Weil das Studium zu lang ist", "Weil es zu viele Ärzte gibt"], "answer": "Wegen schwieriger Arbeitsbedingungen"},
-        {"id": "qr19", "type": "true-false", "question": "In Städten gibt es genug Ärzte.", "answer": "false", "explanation": "Der Text sagt: 'Besonders auf dem Land fehlen Mediziner.'"},
-        {"id": "qr20", "type": "heading-match", "question": "Choose the best heading for this text:", "options": ["Der Arztberuf wird beliebter", "Ärztemangel in Deutschland", "Neue Behandlungsmethoden", "Krankenhäuser schließen"], "answer": "Ärztemangel in Deutschland"}
+        {
+          "id": "qr18",
+          "type": "mcq",
+          "question": "Warum entscheiden sich weniger junge Menschen für den Arztberuf?",
+          "options": [
+            "Weil das Gehalt zu niedrig ist",
+            "Wegen schwieriger Arbeitsbedingungen",
+            "Weil das Studium zu lang ist",
+            "Weil es zu viele Ã„rzte gibt"
+          ],
+          "answer": "Wegen schwieriger Arbeitsbedingungen"
+        },
+        {
+          "id": "qr19",
+          "type": "true-false",
+          "question": "In Städten gibt es genug Ã„rzte.",
+          "answer": "false",
+          "explanation": "Der Text sagt: 'Besonders auf dem Land fehlen Mediziner.'"
+        },
+        {
+          "id": "qr20",
+          "type": "heading-match",
+          "question": "Choose the best heading for this text:",
+          "options": [
+            "Der Arztberuf wird beliebter",
+            "Ã„rztemangel in Deutschland",
+            "Neue Behandlungsmethoden",
+            "Krankenhäuser schlieÃŸen"
+          ],
+          "answer": "Ã„rztemangel in Deutschland"
+        }
       ]
     },
     {
       "id": "B1_read_3",
       "title": "Fit durch den Alltag",
-      "text": "Regelmäßige Bewegung ist wichtig für die Gesundheit. Experten empfehlen mindestens 30 Minuten Bewegung pro Tag. Das muss kein intensiver Sport sein. Schon Spazierengehen oder Treppensteigen hilft. Viele Menschen sitzen zu lange im Büro. Das kann zu Rückenschmerzen und anderen Problemen führen. Ärzte raten zu mehr Bewegung im Alltag.",
+      "text": "RegelmäÃŸige Bewegung ist wichtig für die Gesundheit. Experten empfehlen mindestens 30 Minuten Bewegung pro Tag. Das muss kein intensiver Sport sein. Schon Spazierengehen oder Treppensteigen hilft. Viele Menschen sitzen zu lange im Büro. Das kann zu Rückenschmerzen und anderen Problemen führen. Ã„rzte raten zu mehr Bewegung im Alltag.",
       "questions": [
-        {"id": "qr21", "type": "true-false", "question": "Experten empfehlen eine Stunde Bewegung pro Tag.", "answer": "false", "explanation": "Es werden 30 Minuten empfohlen."},
-        {"id": "qr22", "type": "mcq", "question": "Was kann langes Sitzen verursachen?", "options": ["Kopfschmerzen", "Rückenschmerzen", "Fieber", "Allergien"], "answer": "Rückenschmerzen"}
+        {
+          "id": "qr21",
+          "type": "true-false",
+          "question": "Experten empfehlen eine Stunde Bewegung pro Tag.",
+          "answer": "false",
+          "explanation": "Es werden 30 Minuten empfohlen."
+        },
+        {
+          "id": "qr22",
+          "type": "mcq",
+          "question": "Was kann langes Sitzen verursachen?",
+          "options": [
+            "Kopfschmerzen",
+            "Rückenschmerzen",
+            "Fieber",
+            "Allergien"
+          ],
+          "answer": "Rückenschmerzen"
+        }
       ]
     }
   ],
@@ -97,9 +2166,37 @@
       "title": "Telemedizin: Chancen und Risiken",
       "text": "Die Telemedizin hat in den letzten Jahren stark an Bedeutung gewonnen. Besonders während der Pandemie wurden viele Arzt-Patienten-Kontakte digital abgewickelt. Befürworter loben die Zeitersparnis und die Möglichkeit, auch in ländlichen Gebieten Fachärzte zu konsultieren. Kritiker weisen jedoch auf die fehlende körperliche Untersuchung hin. Bei bestimmten Erkrankungen sei eine persönliche Vorstellung unerlässlich. Die Zukunft wird zeigen, in welchen Bereichen sich die Telemedizin dauerhaft etablieren kann.",
       "questions": [
-        {"id": "qr23", "type": "mcq", "question": "Was ist ein Vorteil der Telemedizin?", "options": ["Sie ist billiger", "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten", "Sie ersetzt alle Arztbesuche", "Sie ist sicherer"], "answer": "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten"},
-        {"id": "qr24", "type": "true-false", "question": "Alle Ärzte unterstützen die Telemedizin uneingeschränkt.", "answer": "false", "explanation": "Kritiker weisen auf die fehlende körperliche Untersuchung hin."},
-        {"id": "qr25", "type": "opinion-match", "question": "Was ist die Meinung des Autors?", "options": ["Telemedizin ist immer die beste Lösung", "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist", "Telemedizin sollte verboten werden", "Jeder sollte Telemedizin nutzen"], "answer": "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"}
+        {
+          "id": "qr23",
+          "type": "mcq",
+          "question": "Was ist ein Vorteil der Telemedizin?",
+          "options": [
+            "Sie ist billiger",
+            "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten",
+            "Sie ersetzt alle Arztbesuche",
+            "Sie ist sicherer"
+          ],
+          "answer": "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten"
+        },
+        {
+          "id": "qr24",
+          "type": "true-false",
+          "question": "Alle Ã„rzte unterstützen die Telemedizin uneingeschränkt.",
+          "answer": "false",
+          "explanation": "Kritiker weisen auf die fehlende körperliche Untersuchung hin."
+        },
+        {
+          "id": "qr25",
+          "type": "opinion-match",
+          "question": "Was ist die Meinung des Autors?",
+          "options": [
+            "Telemedizin ist immer die beste Lösung",
+            "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist",
+            "Telemedizin sollte verboten werden",
+            "Jeder sollte Telemedizin nutzen"
+          ],
+          "answer": "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"
+        }
       ]
     },
     {
@@ -107,18 +2204,62 @@
       "title": "Organspende: Eine ethische Debatte",
       "text": "Die Diskussion um die Organspende wird in Deutschland kontrovers geführt. Aktuell gilt die Entscheidungslösung: Nur wer explizit zustimmt, ist Organspender. Die Widerspruchslösung würde bedeuten, dass jeder automatisch Organspender ist, der nicht widerspricht. Befürworter der Widerspruchslösung argumentieren, dass mehr Organe verfügbar wären und weniger Patienten auf Wartelisten sterben würden. Gegner sehen darin einen Eingriff in die Selbstbestimmung des Einzelnen.",
       "questions": [
-        {"id": "qr26", "type": "mcq", "question": "Was ist die aktuelle Regelung bei Organspenden?", "options": ["Widerspruchslösung", "Entscheidungslösung", "Jeder ist automatisch Spender", "Organspende ist verboten"], "answer": "Entscheidungslösung"},
-        {"id": "qr27", "type": "true-false", "question": "Die Widerspruchslösung würde mehr Organe verfügbar machen.", "answer": "true"},
-        {"id": "qr28", "type": "mcq", "question": "Was kritisieren Gegner der Widerspruchslösung?", "options": ["Zu viele Operationen", "Eingriff in die Selbstbestimmung", "Zu hohe Kosten", "Mangel an Ärzten"], "answer": "Eingriff in die Selbstbestimmung"}
+        {
+          "id": "qr26",
+          "type": "mcq",
+          "question": "Was ist die aktuelle Regelung bei Organspenden?",
+          "options": [
+            "Widerspruchslösung",
+            "Entscheidungslösung",
+            "Jeder ist automatisch Spender",
+            "Organspende ist verboten"
+          ],
+          "answer": "Entscheidungslösung"
+        },
+        {
+          "id": "qr27",
+          "type": "true-false",
+          "question": "Die Widerspruchslösung würde mehr Organe verfügbar machen.",
+          "answer": "true"
+        },
+        {
+          "id": "qr28",
+          "type": "mcq",
+          "question": "Was kritisieren Gegner der Widerspruchslösung?",
+          "options": [
+            "Zu viele Operationen",
+            "Eingriff in die Selbstbestimmung",
+            "Zu hohe Kosten",
+            "Mangel an Ã„rzten"
+          ],
+          "answer": "Eingriff in die Selbstbestimmung"
+        }
       ]
     },
     {
       "id": "B2_read_3",
       "title": "Künstliche Intelligenz in der Medizin",
-      "text": "Künstliche Intelligenz verändert die Medizin grundlegend. Algorithmen können bereits Röntgenbilder analysieren, Diagnosen vorschlagen und Behandlungspläne optimieren. Eine Studie des Deutschen Krebsforschungszentrums zeigt, dass KI bei der Erkennung von Hautkrebs eine Genauigkeit von über 95 Prozent erreicht. Ärzte betonen jedoch, dass KI die ärztliche Erfahrung nicht ersetzen, sondern nur ergänzen kann. Die ethische Verantwortung bleibt beim Menschen.",
+      "text": "Künstliche Intelligenz verändert die Medizin grundlegend. Algorithmen können bereits Röntgenbilder analysieren, Diagnosen vorschlagen und Behandlungspläne optimieren. Eine Studie des Deutschen Krebsforschungszentrums zeigt, dass KI bei der Erkennung von Hautkrebs eine Genauigkeit von über 95 Prozent erreicht. Ã„rzte betonen jedoch, dass KI die ärztliche Erfahrung nicht ersetzen, sondern nur ergänzen kann. Die ethische Verantwortung bleibt beim Menschen.",
       "questions": [
-        {"id": "qr29", "type": "mcq", "question": "Welche Genauigkeit erreicht KI bei Hautkrebserkennung?", "options": ["Über 80%", "Über 90%", "Über 95%", "100%"], "answer": "Über 95%"},
-        {"id": "qr30", "type": "true-false", "question": "KI kann Ärzte komplett ersetzen.", "answer": "false", "explanation": "Der Text sagt: KI kann die ärztliche Erfahrung ergänzen, nicht ersetzen."}
+        {
+          "id": "qr29",
+          "type": "mcq",
+          "question": "Welche Genauigkeit erreicht KI bei Hautkrebserkennung?",
+          "options": [
+            "Ãœber 80%",
+            "Ãœber 90%",
+            "Ãœber 95%",
+            "100%"
+          ],
+          "answer": "Ãœber 95%"
+        },
+        {
+          "id": "qr30",
+          "type": "true-false",
+          "question": "KI kann Ã„rzte komplett ersetzen.",
+          "answer": "false",
+          "explanation": "Der Text sagt: KI kann die ärztliche Erfahrung ergänzen, nicht ersetzen."
+        }
       ]
     }
   ],
@@ -128,32 +2269,147 @@
       "title": "Das deutsche Gesundheitssystem im Wandel",
       "text": "Das deutsche Gesundheitssystem gilt als eines der leistungsfähigsten der Welt, steht jedoch vor erheblichen Herausforderungen. Der demografische Wandel führt zu einer zunehmenden Anzahl älterer Patienten mit chronischen Erkrankungen. Gleichzeitig steigen die Kosten für innovative Behandlungsmethoden und Medikamente. Die Politik steht vor der schwierigen Aufgabe, eine flächendeckende Versorgung von hoher Qualität zu gewährleisten, ohne das System finanziell zu überlasten. Experten fordern eine stärkere Fokussierung auf Prävention und eine Digitalisierung der Prozesse, um Effizienzreserven zu heben.",
       "questions": [
-        {"id": "qr31", "type": "mcq", "question": "Was ist eine der Herausforderungen des deutschen Gesundheitssystems?", "options": ["Zu viele Ärzte", "Demografischer Wandel mit mehr älteren Patienten", "Zu wenige Krankenhäuser", "Mangel an Medikamenten"], "answer": "Demografischer Wandel mit mehr älteren Patienten"},
-        {"id": "qr32", "type": "true-false", "question": "Die Kosten für neue Behandlungen sind gesunken.", "answer": "false", "explanation": "Der Text sagt, die Kosten steigen."},
-        {"id": "qr33", "type": "opinion-match", "question": "Was fordern Experten?", "options": ["Weniger Patienten", "Mehr Prävention und Digitalisierung", "Schließung von Krankenhäusern", "Weniger Medikamente"], "answer": "Mehr Prävention und Digitalisierung"},
-        {"id": "qr34", "type": "gap-fill", "question": "Das System muss ___ werden.", "options": ["reformiert", "reformieren", "reformierende", "Reform"], "answer": "reformiert"}
+        {
+          "id": "qr31",
+          "type": "mcq",
+          "question": "Was ist eine der Herausforderungen des deutschen Gesundheitssystems?",
+          "options": [
+            "Zu viele Ã„rzte",
+            "Demografischer Wandel mit mehr älteren Patienten",
+            "Zu wenige Krankenhäuser",
+            "Mangel an Medikamenten"
+          ],
+          "answer": "Demografischer Wandel mit mehr älteren Patienten"
+        },
+        {
+          "id": "qr32",
+          "type": "true-false",
+          "question": "Die Kosten für neue Behandlungen sind gesunken.",
+          "answer": "false",
+          "explanation": "Der Text sagt, die Kosten steigen."
+        },
+        {
+          "id": "qr33",
+          "type": "opinion-match",
+          "question": "Was fordern Experten?",
+          "options": [
+            "Weniger Patienten",
+            "Mehr Prävention und Digitalisierung",
+            "SchlieÃŸung von Krankenhäusern",
+            "Weniger Medikamente"
+          ],
+          "answer": "Mehr Prävention und Digitalisierung"
+        },
+        {
+          "id": "qr34",
+          "type": "gap-fill",
+          "question": "Das System muss ___ werden.",
+          "options": [
+            "reformiert",
+            "reformieren",
+            "reformierende",
+            "Reform"
+          ],
+          "answer": "reformiert"
+        }
       ]
     },
     {
       "id": "C1_read_2",
       "title": "Ethische Fragen am Lebensende",
-      "text": "Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unterscheiden zwischen aktiver und passiver Sterbehilfe sowie der Hilfe beim Suizid. Während passive Sterbehilfe in Deutschland unter bestimmten Umständen zulässig ist, bleibt die aktive Sterbehilfe strafbar. Das Bundesverfassungsgericht hat 2020 das Recht auf selbstbestimmtes Sterben gestärkt. Kritiker befürchten einen Dammbruch, während Befürworter die Patientenautonomie in den Vordergrund stellen. Für Ärzte stellt sich die Frage nach der Vereinbarkeit von ethischer Überzeugung und rechtlichen Vorgaben.",
+      "text": "Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unterscheiden zwischen aktiver und passiver Sterbehilfe sowie der Hilfe beim Suizid. Während passive Sterbehilfe in Deutschland unter bestimmten Umständen zulässig ist, bleibt die aktive Sterbehilfe strafbar. Das Bundesverfassungsgericht hat 2020 das Recht auf selbstbestimmtes Sterben gestärkt. Kritiker befürchten einen Dammbruch, während Befürworter die Patientenautonomie in den Vordergrund stellen. Für Ã„rzte stellt sich die Frage nach der Vereinbarkeit von ethischer Ãœberzeugung und rechtlichen Vorgaben.",
       "questions": [
-        {"id": "qr35", "type": "mcq", "question": "Was hat das Bundesverfassungsgericht 2020 entschieden?", "options": ["Sterbehilfe ist grundsätzlich verboten", "Recht auf selbstbestimmtes Sterben gestärkt", "Aktive Sterbehilfe ist erlaubt", "Keine Entscheidung getroffen"], "answer": "Recht auf selbstbestimmtes Sterben gestärkt"},
-        {"id": "qr36", "type": "true-false", "question": "Aktive Sterbehilfe ist in Deutschland unter bestimmten Umständen erlaubt.", "answer": "false"},
-        {"id": "qr37", "type": "gap-fill", "question": "Passive Sterbehilfe ist unter ___ Umständen zulässig.", "options": ["allen", "bestimmten", "keinen", "keinerlei"], "answer": "bestimmten"},
-        {"id": "qr38", "type": "mcq", "question": "Welches Argument nennen Befürworter der Sterbehilfe?", "options": ["Kostensenkung", "Patientenautonomie", "Ärztemangel", "Religiöse Überzeugungen"], "answer": "Patientenautonomie"}
+        {
+          "id": "qr35",
+          "type": "mcq",
+          "question": "Was hat das Bundesverfassungsgericht 2020 entschieden?",
+          "options": [
+            "Sterbehilfe ist grundsätzlich verboten",
+            "Recht auf selbstbestimmtes Sterben gestärkt",
+            "Aktive Sterbehilfe ist erlaubt",
+            "Keine Entscheidung getroffen"
+          ],
+          "answer": "Recht auf selbstbestimmtes Sterben gestärkt"
+        },
+        {
+          "id": "qr36",
+          "type": "true-false",
+          "question": "Aktive Sterbehilfe ist in Deutschland unter bestimmten Umständen erlaubt.",
+          "answer": "false"
+        },
+        {
+          "id": "qr37",
+          "type": "gap-fill",
+          "question": "Passive Sterbehilfe ist unter ___ Umständen zulässig.",
+          "options": [
+            "allen",
+            "bestimmten",
+            "keinen",
+            "keinerlei"
+          ],
+          "answer": "bestimmten"
+        },
+        {
+          "id": "qr38",
+          "type": "mcq",
+          "question": "Welches Argument nennen Befürworter der Sterbehilfe?",
+          "options": [
+            "Kostensenkung",
+            "Patientenautonomie",
+            "Ã„rztemangel",
+            "Religiöse Ãœberzeugungen"
+          ],
+          "answer": "Patientenautonomie"
+        }
       ]
     },
     {
       "id": "C1_read_3",
       "title": "Fachkräftemangel im Gesundheitswesen",
-      "text": "Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschärft. Besonders betroffen sind die Pflege und der ärztliche Dienst in ländlichen Regionen. Die Bundesregierung hat diverse Maßnahmen ergriffen, darunter erleichterte Zuwanderungsregelungen für medizinisches Fachpersonal aus dem Ausland. Kritiker monieren, dass diese Maßnahmen nicht ausreichen. Gleichzeitig steigt die Arbeitsbelastung für das vorhandene Personal, was wiederum zu höheren Abwanderungsquoten führt. Ein Teufelskreis, der nur durch strukturelle Reformen durchbrochen werden kann.",
+      "text": "Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschärft. Besonders betroffen sind die Pflege und der ärztliche Dienst in ländlichen Regionen. Die Bundesregierung hat diverse MaÃŸnahmen ergriffen, darunter erleichterte Zuwanderungsregelungen für medizinisches Fachpersonal aus dem Ausland. Kritiker monieren, dass diese MaÃŸnahmen nicht ausreichen. Gleichzeitig steigt die Arbeitsbelastung für das vorhandene Personal, was wiederum zu höheren Abwanderungsquoten führt. Ein Teufelskreis, der nur durch strukturelle Reformen durchbrochen werden kann.",
       "questions": [
-        {"id": "qr39", "type": "mcq", "question": "Welche Regionen sind besonders vom Fachkräftemangel betroffen?", "options": ["Großstädte", "Ländliche Regionen", "Nur der Norden", "Nur der Osten"], "answer": "Ländliche Regionen"},
-        {"id": "qr40", "type": "true-false", "question": "Alle Maßnahmen der Regierung werden von Kritikern als ausreichend angesehen.", "answer": "false"},
-        {"id": "qr41", "type": "opinion-match", "question": "Was bedeutet 'Teufelskreis' in diesem Kontext?", "options": ["Ein Kreislauf, der sich positiv verstärkt", "Eine negative Spirale von Arbeitsbelastung und Abwanderung", "Ein Gesetz der Regierung", "Eine neue Behandlungsmethode"], "answer": "Eine negative Spirale von Arbeitsbelastung und Abwanderung"},
-        {"id": "qr42", "type": "gap-fill", "question": "Die Regierung hat ___ Zuwanderungsregelungen erlassen.", "options": ["verschärfte", "erleichterte", "abgeschaffte", "komplizierte"], "answer": "erleichterte"}
+        {
+          "id": "qr39",
+          "type": "mcq",
+          "question": "Welche Regionen sind besonders vom Fachkräftemangel betroffen?",
+          "options": [
+            "GroÃŸstädte",
+            "Ländliche Regionen",
+            "Nur der Norden",
+            "Nur der Osten"
+          ],
+          "answer": "Ländliche Regionen"
+        },
+        {
+          "id": "qr40",
+          "type": "true-false",
+          "question": "Alle MaÃŸnahmen der Regierung werden von Kritikern als ausreichend angesehen.",
+          "answer": "false"
+        },
+        {
+          "id": "qr41",
+          "type": "opinion-match",
+          "question": "Was bedeutet 'Teufelskreis' in diesem Kontext?",
+          "options": [
+            "Ein Kreislauf, der sich positiv verstärkt",
+            "Eine negative Spirale von Arbeitsbelastung und Abwanderung",
+            "Ein Gesetz der Regierung",
+            "Eine neue Behandlungsmethode"
+          ],
+          "answer": "Eine negative Spirale von Arbeitsbelastung und Abwanderung"
+        },
+        {
+          "id": "qr42",
+          "type": "gap-fill",
+          "question": "Die Regierung hat ___ Zuwanderungsregelungen erlassen.",
+          "options": [
+            "verschärfte",
+            "erleichterte",
+            "abgeschaffte",
+            "komplizierte"
+          ],
+          "answer": "erleichterte"
+        }
       ]
     }
   ]

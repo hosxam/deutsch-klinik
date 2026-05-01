@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
-import resources from '../data/resources.json';
 import { ExternalLink, ArrowLeft, BookOpen, GraduationCap, Target, Globe } from 'lucide-react';
+import rawResources from '../data/resources.json';
+const resources = Array.isArray(rawResources)
+  ? { categories: rawResources }
+  : rawResources;
 
 const categoryIcons = {
   'Official Goethe Exam Training': GraduationCap,
@@ -10,6 +13,22 @@ const categoryIcons = {
 };
 
 export default function ResourcesPage() {
+  const categories = resources?.categories || [];
+
+  if (!categories.length) {
+    return (
+      <div>
+        <div className="flex items-center gap-3 mb-6">
+          <Link to="/" style={{ color: 'var(--accent)' }}><ArrowLeft size={20} /></Link>
+          <h1 className="text-xl font-bold" style={{ color: 'var(--accent)' }}>Official Resources</h1>
+        </div>
+        <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--text-muted)' }}>
+          No resources available yet.
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="flex items-center gap-3 mb-6">
@@ -18,7 +37,7 @@ export default function ResourcesPage() {
       </div>
 
       <div className="space-y-6">
-        {resources.categories.map(cat => {
+        {categories.map(cat => {
           const Icon = categoryIcons[cat.name] || ExternalLink;
           return (
             <div key={cat.name} className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>

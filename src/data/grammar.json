@@ -3,7 +3,6 @@
   "A1": [
     {
       "id": "A1_gr_1",
-      "unit": "Articles",
       "type": "article-select",
       "prompt": "___ Hund ist braun.",
       "options": [
@@ -13,13 +12,14 @@
         "Den"
       ],
       "answer": "Der",
-      "explanation": "Hund is masculine (der Hund), nominative case."
+      "explanation": "Hund is masculine (der Hund), nominative case.",
+      "level": "A1",
+      "topic": "Articles"
     },
     {
       "id": "A1_gr_2",
-      "unit": "Articles",
       "type": "article-select",
-      "prompt": "___ Katze schlÃ¤ft.",
+      "prompt": "___ Katze schläft.",
       "options": [
         "Der",
         "Die",
@@ -27,11 +27,12 @@
         "Den"
       ],
       "answer": "Die",
-      "explanation": "Katze is feminine (die Katze), nominative case."
+      "explanation": "Katze is feminine (die Katze), nominative case.",
+      "level": "A1",
+      "topic": "Articles"
     },
     {
       "id": "A1_gr_3",
-      "unit": "Articles",
       "type": "article-select",
       "prompt": "___ Kind spielt.",
       "options": [
@@ -41,51 +42,57 @@
         "Dem"
       ],
       "answer": "Das",
-      "explanation": "Kind is neuter (das Kind), nominative case."
+      "explanation": "Kind is neuter (das Kind), nominative case.",
+      "level": "A1",
+      "topic": "Articles"
     },
     {
       "id": "A1_gr_4",
-      "unit": "Verb: Sein",
       "type": "fill-blank",
       "prompt": "Ich ___ ein Arzt.",
       "answer": "bin",
-      "explanation": "Sein conjugation: ich bin."
+      "explanation": "Sein conjugation: ich bin.",
+      "level": "A1",
+      "topic": "sein"
     },
     {
       "id": "A1_gr_5",
-      "unit": "Verb: Sein",
       "type": "fill-blank",
       "prompt": "Du ___ sehr freundlich.",
       "answer": "bist",
-      "explanation": "Sein conjugation: du bist."
+      "explanation": "Sein conjugation: du bist.",
+      "level": "A1",
+      "topic": "sein"
     },
     {
       "id": "A1_gr_6",
-      "unit": "Verb: Sein",
       "type": "fill-blank",
       "prompt": "Er ___ in der Klinik.",
       "answer": "ist",
-      "explanation": "Sein conjugation: er/sie/es ist."
+      "explanation": "Sein conjugation: er/sie/es ist.",
+      "level": "A1",
+      "topic": "sein"
     },
     {
       "id": "A1_gr_7",
-      "unit": "Verb: Haben",
       "type": "fill-blank",
       "prompt": "Wir ___ einen Termin.",
       "answer": "haben",
-      "explanation": "Haben conjugation: wir haben."
+      "explanation": "Haben conjugation: wir haben.",
+      "level": "A1",
+      "topic": "haben"
     },
     {
       "id": "A1_gr_8",
-      "unit": "Verb: Haben",
       "type": "fill-blank",
       "prompt": "___ du einen Bruder?",
       "answer": "Hast",
-      "explanation": "Haben conjugation: du hast."
+      "explanation": "Haben conjugation: du hast.",
+      "level": "A1",
+      "topic": "haben"
     },
     {
       "id": "A1_gr_9",
-      "unit": "Negation",
       "type": "mcq",
       "prompt": "Ich habe ___ Auto.",
       "options": [
@@ -95,59 +102,66 @@
         "nein"
       ],
       "answer": "kein",
-      "explanation": "Kein negates a noun without an article. Auto is neuter -> kein."
+      "explanation": "Kein negates a noun without an article. Auto is neuter -> kein.",
+      "level": "A1",
+      "topic": "nicht vs kein"
     },
     {
       "id": "A1_gr_10",
-      "unit": "Negation",
       "type": "fill-blank",
       "prompt": "Das ist ___ richtig.",
       "answer": "nicht",
-      "explanation": "Nicht negates adjectives and verbs."
+      "explanation": "Nicht negates adjectives and verbs.",
+      "level": "A1",
+      "topic": "nicht vs kein"
     },
     {
       "id": "A1_gr_11",
-      "unit": "Word Order",
       "type": "sentence-correction",
       "prompt": "Correct the word order: 'Ich bin heute im Krankenhaus.'",
       "answer": "Ich bin heute im Krankenhaus.",
-      "explanation": "This sentence is actually correct. Subject, verb, then time, then place."
+      "explanation": "This sentence is actually correct. Subject, verb, then time, then place.",
+      "level": "A1",
+      "topic": "Word Order"
     },
     {
       "id": "A1_gr_12",
-      "unit": "Questions",
       "type": "fill-blank",
       "prompt": "___ kommst du? (where do you come from)",
       "answer": "Woher",
-      "explanation": "Woher asks for origin."
+      "explanation": "Woher asks for origin.",
+      "level": "A1",
+      "topic": "W-Questions"
     },
     {
       "id": "A1_gr_13",
-      "unit": "Present Tense Regular",
       "type": "fill-blank",
       "prompt": "Ich ___ (arbeiten) in einem Krankenhaus.",
       "answer": "arbeite",
-      "explanation": "arbeiten -> ich arbeite (stem + e)."
+      "explanation": "arbeiten -> ich arbeite (stem + e).",
+      "level": "A1",
+      "topic": "Regular Present Tense"
     },
     {
       "id": "A1_gr_14",
-      "unit": "Present Tense Regular",
       "type": "fill-blank",
       "prompt": "Der Patient ___ (warten) auf den Arzt.",
       "answer": "wartet",
-      "explanation": "warten -> er/sie wartet (stem + t)."
+      "explanation": "warten -> er/sie wartet (stem + t).",
+      "level": "A1",
+      "topic": "Regular Present Tense"
     },
     {
       "id": "A1_gr_15",
-      "unit": "Present Tense Irregular",
       "type": "fill-blank",
       "prompt": "Er ___ (sprechen) Deutsch.",
       "answer": "spricht",
-      "explanation": "sprechen is irregular: er spricht (e -> i)."
+      "explanation": "sprechen is irregular: er spricht (e -> i).",
+      "level": "A1",
+      "topic": "Irregular Present Tense"
     },
     {
       "id": "A1_gr_16",
-      "unit": "Accusative Basics",
       "type": "article-select",
       "prompt": "Ich sehe ___ Mann.",
       "options": [
@@ -157,134 +171,156 @@
         "den"
       ],
       "answer": "den",
-      "explanation": "After sehen (accusative), der -> den."
+      "explanation": "After sehen (accusative), der -> den.",
+      "level": "A1",
+      "topic": "Accusative Case"
     },
     {
       "id": "A1_gr_17",
-      "unit": "Modal Verbs",
       "type": "fill-blank",
-      "prompt": "Ich ___ (kÃ¶nnen) Deutsch lernen.",
+      "prompt": "Ich ___ (können) Deutsch lernen.",
       "answer": "kann",
-      "explanation": "kÃ¶nnen -> ich kann (modal verb, stem changes)."
+      "explanation": "können -> ich kann (modal verb, stem changes).",
+      "level": "A1",
+      "topic": "Modal Verbs"
     },
     {
       "id": "A1_gr_18",
-      "unit": "Modal Verbs",
       "type": "fill-blank",
-      "prompt": "___ du morgen kommen? (kÃ¶nnen)",
+      "prompt": "___ du morgen kommen? (können)",
       "options": [
         "Kannst",
         "Kannt",
-        "KÃ¶nnst",
+        "Könnst",
         "Kann"
       ],
-      "answer": "Kannst"
+      "answer": "Kannst",
+      "level": "A1",
+      "topic": "Modal Verbs",
+      "explanation": "Modalverb: du form of koennen is kannst. Kannst du morgen kommen?"
     },
     {
       "id": "A1_gr_19",
-      "unit": "Numbers",
       "type": "fill-blank",
       "prompt": "Write in German: 22",
       "answer": "zweiundzwanzig",
-      "explanation": "22 = zwei + und + zwanzig."
+      "explanation": "22 = zwei + und + zwanzig.",
+      "level": "A1",
+      "topic": "Numbers"
     },
     {
       "id": "A1_gr_20",
-      "unit": "Numbers",
       "type": "fill-blank",
       "prompt": "Write in German: 47",
       "answer": "siebenundvierzig",
-      "explanation": "47 = sieben + und + vierzig."
+      "explanation": "47 = sieben + und + vierzig.",
+      "level": "A1",
+      "topic": "Numbers"
     },
     {
       "id": "A1_gr_121",
-      "unit": "sein",
+      "level": "A1",
+      "topic": "sein",
       "type": "fill-blank",
-      "prompt": "Ich ___ Student.",
+      "prompt": "Das Wetter ___ heute nicht gut.",
       "options": null,
-      "answer": "bin",
-      "explanation": "Exercise: sein"
+      "answer": "ist",
+      "explanation": "Das Wetter ist singular, so ist is correct with sein."
     },
     {
       "id": "A1_gr_122",
-      "unit": "Greetings",
+      "level": "A1",
+      "topic": "W-Questions",
       "type": "fill-blank",
-      "prompt": "Translate: 'How are you?' (formal)",
+      "prompt": "___ heiBt deine Schwester? (what)",
       "options": null,
-      "answer": "Wie geht es Ihnen?",
-      "explanation": "Exercise: Greetings"
+      "answer": "Wie",
+      "explanation": "Wie heiBt... asks for a name. Wie heiBt deine Schwester?"
     },
     {
       "id": "A1_gr_123",
-      "unit": "Food",
+      "level": "A1",
+      "topic": "Word Order",
       "type": "fill-blank",
-      "prompt": "What is 'die Milch' in English?",
+      "prompt": "Richtig stellen: (gehen / heute / wir / ins Kino)",
       "options": null,
-      "answer": "milk",
-      "explanation": "Exercise: Food"
+      "answer": "Wir gehen heute ins Kino.",
+      "explanation": "Verb is 2nd position: Wir (1st) gehen (2nd) heute (3rd) ins Kino."
     },
     {
       "id": "A1_gr_124",
-      "unit": "People",
+      "level": "A1",
+      "topic": "Accusative Case",
       "type": "fill-blank",
-      "prompt": "What is 'child' in German?",
+      "prompt": "Ich sehe ___ (der) Lehrer.",
       "options": null,
-      "answer": "das Kind",
-      "explanation": "Exercise: People"
+      "answer": "den",
+      "explanation": "Der Lehrer -> accusative: den Lehrer. Ich sehe den Lehrer."
     },
     {
       "id": "A1_gr_125",
-      "unit": "Articles",
-      "type": "fill-blank",
-      "prompt": "Correct article for 'Frau'",
-      "options": null,
-      "answer": "die",
-      "explanation": "Exercise: Articles"
+      "level": "A1",
+      "topic": "Definite Articles",
+      "type": "mcq",
+      "prompt": "Was ist der richtige Artikel fur \"Mann\"?",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "Mann is masculine, so the correct article is der."
     },
     {
       "id": "A1_gr_126",
-      "unit": "haben",
+      "level": "A1",
+      "topic": "Modal Verbs",
       "type": "fill-blank",
-      "prompt": "Translate 'I have a book.'",
+      "prompt": "Er ___ (wollen) Arzt werden.",
       "options": null,
-      "answer": "Ich habe ein Buch.",
-      "explanation": "Exercise: haben"
+      "answer": "will",
+      "explanation": "Er will Arzt werden. (wollen - er form: will + infinitive at end)"
     },
     {
       "id": "A1_gr_127",
-      "unit": "Verbs",
+      "level": "A1",
+      "topic": "Separable Verbs",
       "type": "fill-blank",
-      "prompt": "Translate 'to go' to German",
+      "prompt": "Ich ___ um 6 Uhr ___ (aufwachen).",
       "options": null,
-      "answer": "gehen",
-      "explanation": "Exercise: Verbs"
+      "answer": "wache ... auf",
+      "explanation": "Aufwachen: prefix auf goes to end. Ich wache um 6 Uhr auf."
     },
     {
       "id": "A1_gr_128",
-      "unit": "Articles",
+      "level": "A1",
+      "topic": "Negative Articles",
       "type": "fill-blank",
-      "prompt": "Correct article for 'Kind'",
+      "prompt": "Sie hat ___ Geld. (no money)",
       "options": null,
-      "answer": "das",
-      "explanation": "Exercise: Articles"
+      "answer": "kein",
+      "explanation": "Geld is neuter, so kein. Sie hat kein Geld."
     },
     {
       "id": "A1_gr_129",
-      "unit": "haben",
+      "level": "A1",
+      "topic": "Imperatives",
       "type": "fill-blank",
-      "prompt": "Er ___ einen Hund.",
+      "prompt": "___ (gehen) Sie geradeaus! (formal)",
       "options": null,
-      "answer": "hat",
-      "explanation": "Exercise: haben"
+      "answer": "Gehen",
+      "explanation": "Formal imperative: Gehen Sie geradeaus! (verb + Sie + rest)"
     },
     {
       "id": "A1_gr_130",
-      "unit": "School",
+      "level": "A1",
+      "topic": "Personal Pronouns",
       "type": "fill-blank",
-      "prompt": "What is 'der Bleistift'?",
+      "prompt": "___ spielen FuBball. (we)",
       "options": null,
-      "answer": "pencil",
-      "explanation": "Exercise: School"
+      "answer": "Wir",
+      "explanation": "Wir is the pronoun for we. Wir spielen FuBball."
     },
     {
       "id": "A1_ex_1",
@@ -395,6 +431,1686 @@
       "options": [],
       "explanation": "The correct answer is: pencil",
       "section": "Mixed Exercises"
+    },
+    {
+      "id": "A1_gr_131",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Ich ___ aus Deutschland.",
+      "answer": "bin",
+      "explanation": "Ich uses bin with sein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_133",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Er ___ mein Bruder.",
+      "answer": "ist",
+      "explanation": "Er/sie/es uses ist with sein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_134",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Wir ___ im Kino.",
+      "answer": "sind",
+      "explanation": "Wir uses sind with sein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_135",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Ihr ___ sehr nett.",
+      "answer": "seid",
+      "explanation": "Ihr uses seid with sein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_136",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Sie ___ aus Spanien.",
+      "answer": "sind",
+      "explanation": "Sie (plural/formal) uses sind with sein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_137",
+      "topic": "sein",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Das ___ ein Buch.'",
+      "options": [
+        "ist",
+        "bist",
+        "bin",
+        "sind"
+      ],
+      "answer": "ist",
+      "explanation": "Das is singular, so it uses ist.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_138",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Meine Eltern ___ zu Hause.",
+      "answer": "sind",
+      "explanation": "Meine Eltern (they) uses sind.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_139",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Ich ___ einen Hund.",
+      "answer": "habe",
+      "explanation": "Ich uses habe with haben.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_140",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Du ___ eine Frage.",
+      "answer": "hast",
+      "explanation": "Du uses hast with haben.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_141",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Er ___ einen Bruder.",
+      "answer": "hat",
+      "explanation": "Er uses hat with haben.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_142",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Wir ___ ein Auto.",
+      "answer": "haben",
+      "explanation": "Wir uses haben (infinitive stays).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_143",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Ihr ___ viele Bucher.",
+      "answer": "habt",
+      "explanation": "Ihr uses habt with haben.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_144",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Sie ___ eine Katze.",
+      "answer": "hat",
+      "explanation": "Sie (singular) uses hat.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_145",
+      "topic": "haben",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Meine Schwester ___ ein Haus.'",
+      "options": [
+        "habe",
+        "hast",
+        "hat",
+        "haben"
+      ],
+      "answer": "hat",
+      "explanation": "Meine Schwester = sie (she), so hat is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_146",
+      "topic": "haben",
+      "type": "fill-blank",
+      "prompt": "Die Kinder ___ einen Ball.",
+      "answer": "haben",
+      "explanation": "Die Kinder (they) uses haben.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_147",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (spielen) FuBball.",
+      "answer": "spiele",
+      "explanation": "Ich uses spiel + e for regular verbs.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_148",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Du ___ (lernen) Deutsch.",
+      "answer": "lernst",
+      "explanation": "Du uses lern + st.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_149",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Er ___ (arbeiten) im Buro.",
+      "answer": "arbeitet",
+      "explanation": "Er uses arbeit + et (t-stem verbs add e).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_150",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Wir ___ (wohnen) in Berlin.",
+      "answer": "wohnen",
+      "explanation": "Wir uses the infinitive: wohnen.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_151",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Ihr ___ (tanzen) gern.",
+      "answer": "tanzt",
+      "explanation": "Ihr uses tanz + t.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_152",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Sie ___ (kaufen) ein Geschenk.",
+      "answer": "kauft",
+      "explanation": "Sie (singular) uses kauf + t.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_153",
+      "topic": "Regular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Die Studenten ___ (lernen) viel.",
+      "answer": "lernen",
+      "explanation": "Die Studenten (they) uses the infinitive.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_154",
+      "topic": "Regular Present Tense",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Er ___ (machen) die Hausaufgaben.'",
+      "options": [
+        "macht",
+        "mache",
+        "machst",
+        "machen"
+      ],
+      "answer": "macht",
+      "explanation": "Er uses mach + t.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_155",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (fahren) nach Berlin.",
+      "answer": "fahre",
+      "explanation": "Irregular: fahren keeps a in Ich form.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_156",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Du ___ (fahren) nach Hause.",
+      "answer": "fahrst",
+      "explanation": "Irregular: du fahrst (a stays in du form).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_157",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Er ___ (fahren) mit dem Bus.",
+      "answer": "fahrt",
+      "explanation": "Irregular: a changes to a in er/sie/es.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_158",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (lesen) ein Buch.",
+      "answer": "lese",
+      "explanation": "Irregular: lesen - Ich lese (e stays).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_159",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Du ___ (lesen) die Zeitung.",
+      "answer": "liest",
+      "explanation": "Irregular: du liest (e changes to ie).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_160",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Er ___ (lesen) gern.",
+      "answer": "liest",
+      "explanation": "Irregular: er liest (e changes to ie).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_161",
+      "topic": "Irregular Present Tense",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (sehen) den Film.",
+      "answer": "sehe",
+      "explanation": "Irregular: sehen - Ich sehe.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_162",
+      "topic": "Irregular Present Tense",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Du ___ (sprechen) Englisch.'",
+      "options": [
+        "sprichst",
+        "sprecht",
+        "sprechest",
+        "sprechen"
+      ],
+      "answer": "sprichst",
+      "explanation": "Irregular: du sprichst (e to i change).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_163",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ bin mude. (I)",
+      "answer": "Ich",
+      "explanation": "Ich is the pronoun for I.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_164",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ bist mein Freund. (you - informal)",
+      "answer": "Du",
+      "explanation": "Du is the informal singular you.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_165",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ ist Lehrerin. (she)",
+      "answer": "Sie",
+      "explanation": "Sie is the pronoun for she.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_166",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ wohnen in Koln. (they)",
+      "answer": "Sie",
+      "explanation": "Sie (capital S) is they in German.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_167",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ seid lustig. (you all)",
+      "answer": "Ihr",
+      "explanation": "Ihr is the plural you (informal).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_168",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ haben ein Problem. (we)",
+      "answer": "Wir",
+      "explanation": "Wir means we.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_169",
+      "topic": "Personal Pronouns",
+      "type": "mcq",
+      "prompt": "Welches Pronomen? '___ kommt aus Berlin.' (er/sie)",
+      "options": [
+        "Er",
+        "Sie",
+        "Es",
+        "Alle sind richtig"
+      ],
+      "answer": "Alle sind richtig",
+      "explanation": "Er (he), Sie (she), and Es (it) are all correct - context decides.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_170",
+      "topic": "Personal Pronouns",
+      "type": "fill-blank",
+      "prompt": "___ trinkst Wasser. (you informal)",
+      "answer": "Du",
+      "explanation": "Du is the second person singular pronoun.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_132",
+      "topic": "sein",
+      "type": "fill-blank",
+      "prompt": "Das Wetter ___ schon heute.",
+      "answer": "ist",
+      "explanation": "Das Wetter (the weather) is singular neuter, so ist is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_171",
+      "topic": "Definite Articles",
+      "type": "mcq",
+      "prompt": "___ Tisch (table) ist neu.",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Den"
+      ],
+      "answer": "Der",
+      "explanation": "Tisch is masculine, so der is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_172",
+      "topic": "Definite Articles",
+      "type": "mcq",
+      "prompt": "___ Blume ist schon.",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Den"
+      ],
+      "answer": "Die",
+      "explanation": "Blume is feminine, so die is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_173",
+      "topic": "Definite Articles",
+      "type": "mcq",
+      "prompt": "___ Kind spielt drauBen.",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Den"
+      ],
+      "answer": "Das",
+      "explanation": "Kind is neuter, so das is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_174",
+      "topic": "Definite Articles",
+      "type": "fill-blank",
+      "prompt": "___ Hund (the dog) ist braun.",
+      "answer": "Der",
+      "explanation": "Hund is masculine, so der is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_175",
+      "topic": "Definite Articles",
+      "type": "fill-blank",
+      "prompt": "___ Sonne (the sun) scheint.",
+      "answer": "Die",
+      "explanation": "Sonne is feminine, so die is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_176",
+      "topic": "Definite Articles",
+      "type": "fill-blank",
+      "prompt": "___ Wasser ist kalt.",
+      "answer": "Das",
+      "explanation": "Wasser is neuter, so das is correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_177",
+      "topic": "Indefinite Articles",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ Hund. (a)",
+      "answer": "ein",
+      "explanation": "Hund is masculine, so ein (not eine).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_178",
+      "topic": "Indefinite Articles",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ Katze. (a)",
+      "answer": "eine",
+      "explanation": "Katze is feminine, so eine.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_179",
+      "topic": "Indefinite Articles",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ Auto. (a)",
+      "answer": "ein",
+      "explanation": "Auto is neuter, so ein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_180",
+      "topic": "Indefinite Articles",
+      "type": "mcq",
+      "prompt": "Er hat ___ Bruder.",
+      "options": [
+        "ein",
+        "eine",
+        "einen",
+        "einer"
+      ],
+      "answer": "einen",
+      "explanation": "Bruder is masculine, and it is accusative (direct object), so einen.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_181",
+      "topic": "Indefinite Articles",
+      "type": "mcq",
+      "prompt": "Sie kauft ___ Tasche.",
+      "options": [
+        "ein",
+        "eine",
+        "einen",
+        "einer"
+      ],
+      "answer": "eine",
+      "explanation": "Tasche is feminine, accusative: eine Tasche.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_182",
+      "topic": "Negative Articles",
+      "type": "fill-blank",
+      "prompt": "Ich habe ___ Hund. (no)",
+      "answer": "keinen",
+      "explanation": "Hund is masculine accusative: keinen.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_183",
+      "topic": "Negative Articles",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ Blume. (not a)",
+      "answer": "keine",
+      "explanation": "Blume is feminine: keine.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_184",
+      "topic": "Negative Articles",
+      "type": "fill-blank",
+      "prompt": "Er hat ___ Buch. (no)",
+      "answer": "kein",
+      "explanation": "Buch is neuter: kein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_185",
+      "topic": "Negative Articles",
+      "type": "fill-blank",
+      "prompt": "Wir haben ___ Zeit. (no)",
+      "answer": "keine",
+      "explanation": "Zeit is feminine: keine.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_186",
+      "topic": "Negative Articles",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Das ist ___ Tisch.' (not a)",
+      "options": [
+        "kein",
+        "keine",
+        "keinen",
+        "keiner"
+      ],
+      "answer": "kein",
+      "explanation": "Tisch is masculine nominative: kein.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_187",
+      "topic": "nicht vs kein",
+      "type": "fill-blank",
+      "prompt": "Er arbeitet ___ sonntags. (not on Sundays)",
+      "answer": "nicht",
+      "explanation": "nicht negates verbs/adverbs/adjectives, kein negates nouns.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_188",
+      "topic": "nicht vs kein",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ Apfel. (not an apple)",
+      "answer": "kein",
+      "explanation": "kein negates the noun Apfel.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_189",
+      "topic": "nicht vs kein",
+      "type": "fill-blank",
+      "prompt": "Ich mag Kaffee ___. (not)",
+      "answer": "nicht",
+      "explanation": "nicht comes after the verb when negating the action/object.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_190",
+      "topic": "nicht vs kein",
+      "type": "fill-blank",
+      "prompt": "Sie hat ___ Schwester. (no sister)",
+      "answer": "keine",
+      "explanation": "keine negates the feminine noun Schwester.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_191",
+      "topic": "nicht vs kein",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Er ist ___ Arzt.' (not a doctor)",
+      "options": [
+        "nicht",
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "answer": "kein",
+      "explanation": "kein negates the profession noun Arzt.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_192",
+      "topic": "nicht vs kein",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Ich bin ___ mude.' (not tired)",
+      "options": [
+        "kein",
+        "nicht",
+        "keine",
+        "keinen"
+      ],
+      "answer": "nicht",
+      "explanation": "nicht negates the adjective mude.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_193",
+      "topic": "Word Order",
+      "type": "fill-blank",
+      "prompt": "Ich ___ heute ___ (gehen / ins Kino).",
+      "answer": "gehe ... ins Kino",
+      "explanation": "Verb is 2nd position: Ich gehe heute ins Kino.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_194",
+      "topic": "Word Order",
+      "type": "mcq",
+      "prompt": "Richtig oder falsch? 'Heute gehe ich ins Kino.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "When a time phrase starts the sentence, the verb stays 2nd. Heute (1st) gehe (2nd) ich (3rd).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_195",
+      "topic": "Word Order",
+      "type": "mcq",
+      "prompt": "Richtig oder falsch? 'Ich ins Kino gehe heute.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "falsch",
+      "explanation": "The verb gehe must be in 2nd position: Ich gehe heute ins Kino.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_196",
+      "topic": "Word Order",
+      "type": "fill-blank",
+      "prompt": "Morgen ___ (fahren) wir nach Berlin.",
+      "answer": "fahren",
+      "explanation": "Verb 2nd position after time expression. Morgen (1st) fahren (2nd).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_197",
+      "topic": "Word Order",
+      "type": "fill-blank",
+      "prompt": "___ du gern im Park? (spielen)",
+      "answer": "Spielst",
+      "explanation": "Questions start with verb. Verb is 1st position.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_198",
+      "topic": "Word Order",
+      "type": "mcq",
+      "prompt": "Richtig? 'Ich habe heute keine Zeit.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "Correct: Ich (1st) habe (2nd) heute (3rd) keine Zeit.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_199",
+      "topic": "Yes/No Questions",
+      "type": "fill-blank",
+      "prompt": "___ du aus Deutschland? (come)",
+      "answer": "Kommst",
+      "explanation": "Yes/no questions start with the verb: Kommst du aus Deutschland?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_200",
+      "topic": "Yes/No Questions",
+      "type": "fill-blank",
+      "prompt": "___ ihr Hunger? (have)",
+      "answer": "Habt",
+      "explanation": "Ihr form: Habt ihr Hunger?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_201",
+      "topic": "Yes/No Questions",
+      "type": "mcq",
+      "prompt": "Bilde die Frage: '___ Sie Frau Muller?'",
+      "options": [
+        "Sind",
+        "Ist",
+        "Haben",
+        "Seid"
+      ],
+      "answer": "Sind",
+      "explanation": "Sind Sie Frau Muller? (formal Sie uses sind).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_202",
+      "topic": "Yes/No Questions",
+      "type": "mcq",
+      "prompt": "Was ist die richtige Frage? 'Er heiBt Max.'",
+      "options": [
+        "HeiBt er Max?",
+        "Er heiBt Max?",
+        "Max er heiBt?",
+        "HeiBt Max er?"
+      ],
+      "answer": "HeiBt er Max?",
+      "explanation": "Verb first, then subject: HeiBt er Max?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_203",
+      "topic": "Yes/No Questions",
+      "type": "fill-blank",
+      "prompt": "___ das dein Buch? (is)",
+      "answer": "Ist",
+      "explanation": "Ist das dein Buch? Verb first in yes/no questions.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_204",
+      "topic": "Yes/No Questions",
+      "type": "fill-blank",
+      "prompt": "___ du morgen Zeit? (have)",
+      "answer": "Hast",
+      "explanation": "Hast du morgen Zeit?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_205",
+      "topic": "W-Questions",
+      "type": "fill-blank",
+      "prompt": "___ heiBen Sie? (what)",
+      "answer": "Wie",
+      "explanation": "Wie heiBen Sie? (What is your name?)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_206",
+      "topic": "W-Questions",
+      "type": "fill-blank",
+      "prompt": "___ wohnst du? (where)",
+      "answer": "Wo",
+      "explanation": "Wo wohnst du? (Where do you live?)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_207",
+      "topic": "W-Questions",
+      "type": "mcq",
+      "prompt": "___ kommt er? (from where)",
+      "options": [
+        "Wo",
+        "Wohin",
+        "Woher",
+        "Wann"
+      ],
+      "answer": "Woher",
+      "explanation": "Woher asks about origin (from where).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_208",
+      "topic": "W-Questions",
+      "type": "fill-blank",
+      "prompt": "___ alt bist du? (how)",
+      "answer": "Wie",
+      "explanation": "Wie alt bist du? (How old are you?)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_209",
+      "topic": "W-Questions",
+      "type": "mcq",
+      "prompt": "___ Uhr ist es? (what time)",
+      "options": [
+        "Was",
+        "Wie viel",
+        "Wann",
+        "Welche"
+      ],
+      "answer": "Wie viel",
+      "explanation": "Wie viel Uhr ist es? (What time is it?)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_210",
+      "topic": "W-Questions",
+      "type": "fill-blank",
+      "prompt": "___ machst du? (what)",
+      "answer": "Was",
+      "explanation": "Was machst du? (What are you doing?)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_211",
+      "topic": "Accusative Case",
+      "type": "fill-blank",
+      "prompt": "Ich sehe ___ (der) Mann.",
+      "answer": "den",
+      "explanation": "Der Mann -> accusative: den Mann.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_212",
+      "topic": "Accusative Case",
+      "type": "fill-blank",
+      "prompt": "Er hat ___ (die) Blume.",
+      "answer": "die",
+      "explanation": "Die Blume stays die in accusative.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_213",
+      "topic": "Accusative Case",
+      "type": "fill-blank",
+      "prompt": "Sie kauft ___ (das) Buch.",
+      "answer": "das",
+      "explanation": "Das Buch stays das in accusative.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_214",
+      "topic": "Accusative Case",
+      "type": "mcq",
+      "prompt": "Ich habe ___ Hund.",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "den"
+      ],
+      "answer": "den",
+      "explanation": "Hund is masculine, accusative direct object: den Hund.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_215",
+      "topic": "Accusative Case",
+      "type": "fill-blank",
+      "prompt": "Wir besuchen ___ (der) Arzt.",
+      "answer": "den",
+      "explanation": "Der Arzt -> accusative: den Arzt.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_216",
+      "topic": "Accusative Case",
+      "type": "mcq",
+      "prompt": "Richtig? 'Ich sehe das Mädchen.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "Das Mädchen is neuter, stays das in accusative. Correct.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_217",
+      "topic": "Accusative Case",
+      "type": "fill-blank",
+      "prompt": "Er trinkt ___ (die) Milch.",
+      "answer": "die",
+      "explanation": "Die Milch stays die in accusative (feminine no change).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_218",
+      "topic": "Accusative Case",
+      "type": "mcq",
+      "prompt": "Was ist der Akkusativ von 'der Tisch'?",
+      "options": [
+        "der Tisch",
+        "den Tisch",
+        "dem Tisch",
+        "des Tisches"
+      ],
+      "answer": "den Tisch",
+      "explanation": "Masculine der changes to den in accusative.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_219",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (können) schwimmen.",
+      "answer": "kann",
+      "explanation": "Modal: kann + infinitive at end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_220",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Du ___ (müssen) lernen.",
+      "answer": "musst",
+      "explanation": "Du musst + infinitive lernen at end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_221",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Er ___ (wollen) nach Hause gehen.",
+      "answer": "will",
+      "explanation": "Er will + infinitive gehen at end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_222",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (möchten) einen Kaffee.",
+      "answer": "möchte",
+      "explanation": "Ich möchte (I would like) behaves like a modal.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_223",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Wir ___ (dürfen) hier parken.",
+      "answer": "dürfen",
+      "explanation": "Wir dürfen + infinitive parken.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_224",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "Ihr ___ (sollen) pünktlich sein.",
+      "answer": "sollt",
+      "explanation": "Ihr sollt + infinitive sein at end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_225",
+      "topic": "Modal Verbs",
+      "type": "mcq",
+      "prompt": "Richtig? 'Ich kann gut singen.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "Correct: Ich kann + infinitive singen at end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_226",
+      "topic": "Modal Verbs",
+      "type": "fill-blank",
+      "prompt": "___ (können) du mir helfen?",
+      "answer": "Kannst",
+      "explanation": "Du form: Kannst du mir helfen?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_227",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (my) Buch.",
+      "answer": "mein",
+      "explanation": "Mein for neuter nominative: mein Buch.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_228",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (my) Mutter.",
+      "answer": "meine",
+      "explanation": "Meine for feminine: meine Mutter.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_229",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (your, informal) Hund.",
+      "answer": "dein",
+      "explanation": "Dein for masculine: dein Hund.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_230",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (his) Schwester.",
+      "answer": "seine",
+      "explanation": "Seine for feminine: seine Schwester.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_231",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (her) Auto.",
+      "answer": "ihr",
+      "explanation": "Ihr for neuter: ihr Auto.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_232",
+      "topic": "Possessive Adjectives",
+      "type": "mcq",
+      "prompt": "___ (my) Eltern wohnen in Berlin.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Meinen",
+        "Meines"
+      ],
+      "answer": "Meine",
+      "explanation": "Eltern is plural, so meine.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_233",
+      "topic": "Possessive Adjectives",
+      "type": "fill-blank",
+      "prompt": "Das ist ___ (our) Haus.",
+      "answer": "unser",
+      "explanation": "Unser for neuter: unser Haus.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_234",
+      "topic": "Possessive Adjectives",
+      "type": "mcq",
+      "prompt": "___ (her) Bruder heiBt Max.",
+      "options": [
+        "Ihre",
+        "Ihr",
+        "Ihren",
+        "Ihrer"
+      ],
+      "answer": "Ihr",
+      "explanation": "Bruder is masculine, so ihr (her).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_235",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Der Tisch -> die ___ (tables)",
+      "answer": "Tische",
+      "explanation": "Most masculine nouns add -e: der Tisch -> die Tische.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_236",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Die Blume -> die ___ (flowers)",
+      "answer": "Blumen",
+      "explanation": "Feminine nouns often add -(e)n: die Blume -> die Blumen.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_237",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Das Kind -> die ___ (children)",
+      "answer": "Kinder",
+      "explanation": "Neuter nouns often add -er: das Kind -> die Kinder.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_238",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Der Apfel -> die ___ (apples)",
+      "answer": "Äpfel",
+      "explanation": "Many masculine nouns add Umlaut: der Apfel -> die Äpfel.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_239",
+      "topic": "Plural Forms",
+      "type": "mcq",
+      "prompt": "Plural of 'der Bus'?",
+      "options": [
+        "Busse",
+        "Buse",
+        "Bussen",
+        "Busser"
+      ],
+      "answer": "Busse",
+      "explanation": "Der Bus -> die Busse (adds -e).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_240",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Bruder -> ___ (brothers, two or more)",
+      "answer": "Brüder",
+      "explanation": "Umlaut + nothing: der Bruder -> die Brüder.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_241",
+      "topic": "Plural Forms",
+      "type": "fill-blank",
+      "prompt": "Das Auge -> die ___ (eyes)",
+      "answer": "Augen",
+      "explanation": "Das Auge -> die Augen (adds -n).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_242",
+      "topic": "Plural Forms",
+      "type": "mcq",
+      "prompt": "Plural of 'die Mutter'?",
+      "options": [
+        "Mutter",
+        "Mütter",
+        "Muttern",
+        "Mutteren"
+      ],
+      "answer": "Mütter",
+      "explanation": "Die Mutter -> die Mütter (Umlaut, no ending).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_243",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "3 + 5 = ___",
+      "answer": "acht",
+      "explanation": "Drei plus funf ist acht.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_244",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "Es ist ___ Uhr. (2:00)",
+      "answer": "zwei",
+      "explanation": "Zwei Uhr = 2 o'clock.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_245",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "Es ist Viertel nach ___. (3:15)",
+      "answer": "drei",
+      "explanation": "15 minutes past 3 = Viertel nach drei.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_246",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "Es ist halb ___. (5:30)",
+      "answer": "sechs",
+      "explanation": "Halb sechs = 5:30 (half to six). Note: halb is half TO the hour.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_247",
+      "topic": "Numbers and Time",
+      "type": "mcq",
+      "prompt": "Wie viel Uhr ist es? 8:45",
+      "options": [
+        "Viertel nach acht",
+        "Viertel vor neun",
+        "Halb acht",
+        "Acht Uhr fünfundvierzig"
+      ],
+      "answer": "Viertel vor neun",
+      "explanation": "15 minutes before 9 = Viertel vor neun.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_248",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "Schreibe: 22 (zweiund___)",
+      "answer": "zwanzig",
+      "explanation": "Zweiundzwanzig = 22.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_249",
+      "topic": "Numbers and Time",
+      "type": "fill-blank",
+      "prompt": "Es ist zehn Minuten nach ___. (10:10)",
+      "answer": "zehn",
+      "explanation": "10:10 = zehn Minuten nach zehn.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_250",
+      "topic": "Numbers and Time",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Es ist ___.' (12:00)",
+      "options": [
+        "zwolf Uhr",
+        "null Uhr",
+        "Mittag",
+        "Alle sind richtig"
+      ],
+      "answer": "Alle sind richtig",
+      "explanation": "12:00 can be zwolf Uhr, null Uhr, or Mittag.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_251",
+      "topic": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Ich ___ um 8 Uhr ___ (aufstehen).",
+      "answer": "stehe ... auf",
+      "explanation": "Aufstehen: prefix auf goes to the end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_252",
+      "topic": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Er ___ dich ___ (anrufen).",
+      "answer": "ruft ... an",
+      "explanation": "Anrufen: Er ruft dich an.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_253",
+      "topic": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Wir ___ morgen ___ (abfahren).",
+      "answer": "fahren ... ab",
+      "explanation": "Abfahren: Wir fahren morgen ab.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_254",
+      "topic": "Separable Verbs",
+      "type": "mcq",
+      "prompt": "Richtig? 'Ich mache das Licht an.' (anschalten)",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "falsch",
+      "explanation": "Anschalten: prefix an goes to end. 'Ich schalte das Licht an.'",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_255",
+      "topic": "Separable Verbs",
+      "type": "fill-blank",
+      "prompt": "Du ___ das Fenster ___ (aufmachen).",
+      "answer": "machst ... auf",
+      "explanation": "Aufmachen: Du machst das Fenster auf.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_256",
+      "topic": "Separable Verbs",
+      "type": "mcq",
+      "prompt": "Wo steht 'ein' bei 'einkaufen'? 'Ich ___ Brot ___'",
+      "options": [
+        "kaufe ... ein",
+        "ein ... kaufe",
+        "kauf ... eine",
+        "einkaufe ..."
+      ],
+      "answer": "kaufe ... ein",
+      "explanation": "Einkaufen: prefix ein goes to the end of the sentence.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_257",
+      "topic": "Prepositions of Place",
+      "type": "fill-blank",
+      "prompt": "Das Buch liegt ___ dem Tisch. (on)",
+      "answer": "auf",
+      "explanation": "Auf dem Tisch = on the table.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_258",
+      "topic": "Prepositions of Place",
+      "type": "fill-blank",
+      "prompt": "Die Katze sitzt ___ dem Stuhl. (on)",
+      "answer": "auf",
+      "explanation": "Auf dem Stuhl = on the chair.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_259",
+      "topic": "Prepositions of Place",
+      "type": "fill-blank",
+      "prompt": "Der Stuhl steht ___ dem Tisch. (next to)",
+      "answer": "neben",
+      "explanation": "Neben dem Tisch = next to the table.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_260",
+      "topic": "Prepositions of Place",
+      "type": "mcq",
+      "prompt": "Das Bild hangt ___ der Wand. (on, vertical)",
+      "options": [
+        "auf",
+        "an",
+        "in",
+        "neben"
+      ],
+      "answer": "an",
+      "explanation": "An der Wand = on the wall (vertical surface). Auf = horizontal (table).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_261",
+      "topic": "Prepositions of Place",
+      "type": "fill-blank",
+      "prompt": "Wir wohnen ___ Berlin. (in)",
+      "answer": "in",
+      "explanation": "In Berlin = in Berlin (city/town).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_262",
+      "topic": "Prepositions of Place",
+      "type": "mcq",
+      "prompt": "Das Auto steht ___ dem Haus. (in front of)",
+      "options": [
+        "hinter",
+        "vor",
+        "neben",
+        "auf"
+      ],
+      "answer": "vor",
+      "explanation": "Vor dem Haus = in front of the house.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_263",
+      "topic": "Imperatives",
+      "type": "fill-blank",
+      "prompt": "___ (sein) leise! (to one friend)",
+      "answer": "Sei",
+      "explanation": "Sei leise! (du imperative: verb stem + no ending)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_264",
+      "topic": "Imperatives",
+      "type": "fill-blank",
+      "prompt": "___ (kommen) her! (to one friend)",
+      "answer": "Komm",
+      "explanation": "Komm her! (du imperative: verb stem)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_265",
+      "topic": "Imperatives",
+      "type": "fill-blank",
+      "prompt": "___ (spielen) mit mir! (to one friend)",
+      "answer": "Spiel",
+      "explanation": "Spiel mit mir! (du imperative)",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_266",
+      "topic": "Imperatives",
+      "type": "fill-blank",
+      "prompt": "___ (gehen) Sie nach links! (formal)",
+      "answer": "Gehen",
+      "explanation": "Formal imperative uses Sie + infinitive: Gehen Sie.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_267",
+      "topic": "Imperatives",
+      "type": "mcq",
+      "prompt": "Richtig? 'Seid leise!' (to a group of friends)",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "Seid leise! is correct for ihr (group informal).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_268",
+      "topic": "Imperatives",
+      "type": "fill-blank",
+      "prompt": "___ (nehmen) Sie bitte Platz! (formal)",
+      "answer": "Nehmen",
+      "explanation": "Nehmen Sie Platz! (formal imperative).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_269",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (heiBen) Anna.",
+      "answer": "heiBe",
+      "explanation": "Ich heiBe Anna.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_270",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Er ___ (trinken) Wasser.",
+      "answer": "trinkt",
+      "explanation": "Er trinkt Wasser (regular verb).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_271",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Ihr ___ (gehen) nach Hause.'",
+      "options": [
+        "geht",
+        "gehen",
+        "gehst",
+        "gehe"
+      ],
+      "answer": "geht",
+      "explanation": "Ihr geht = you all go.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_272",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Du ___ (tanzen) sehr gut.",
+      "answer": "tanzt",
+      "explanation": "Du tanzt (regular, t-stem).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_273",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Wir ___ (kochen) heute Abend.",
+      "answer": "kochen",
+      "explanation": "Wir kochen (plural stays infinitive).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_274",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "'Es regnet.' What is the subject?",
+      "options": [
+        "Es",
+        "Regnet",
+        "Kein Subjekt",
+        "-t ending"
+      ],
+      "answer": "Es",
+      "explanation": "Es is the subject (it is raining).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_275",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "___ (haben) ihr Geschwister?",
+      "answer": "Habt",
+      "explanation": "Habt ihr Geschwister?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_276",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Mein Bruder ___ (sein) 15 Jahre alt.",
+      "answer": "ist",
+      "explanation": "Mein Bruder ist 15 Jahre alt.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_277",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Wir ___ (müssen) heute arbeiten.",
+      "answer": "müssen",
+      "explanation": "Wir mussen heute arbeiten.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_278",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Was ist richtig? 'Das ist ___ interessantes Buch.'",
+      "options": [
+        "ein",
+        "eine",
+        "einen",
+        "kein"
+      ],
+      "answer": "ein",
+      "explanation": "Buch is neuter: ein interessantes Buch.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_279",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "___ (können) du mir sagen, wie spat es ist?",
+      "answer": "Kannst",
+      "explanation": "Kannst du mir sagen...?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_280",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Wo ist der Fehler? 'Ich habe ein Katze.'",
+      "options": [
+        "Ich",
+        "habe",
+        "ein",
+        "Katze"
+      ],
+      "answer": "ein",
+      "explanation": "Katze is feminine: Ich habe eine Katze.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_281",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Ich ___ (heiBen) Max und komme aus Berlin.",
+      "answer": "heiBe",
+      "explanation": "Ich heiBe Max - heiBen conjugated for ich.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_282",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Richtig? \"Er hat kein Zeit.\"",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "falsch",
+      "explanation": "Zeit is feminine, so it should be keine Zeit.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_283",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "___ du morgen frueh ___ (aufstehen)?",
+      "answer": "Stehst ... auf",
+      "explanation": "Du form of aufstehen: prefix auf goes to the end.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_284",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Der Arzt ___ den Patienten. (untersuchen)",
+      "answer": "untersucht",
+      "explanation": "Er untersucht den Patienten (regular verb).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_285",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Plural von \"das Haus\"?",
+      "options": [
+        "Hause",
+        "Haeuser",
+        "Hausen",
+        "Haus"
+      ],
+      "answer": "Haeuser",
+      "explanation": "Das Haus -> die Haeuser (Umlaut + -er).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_286",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "___ (fahren) du mit dem Zug?",
+      "answer": "Faehrst",
+      "explanation": "Du faehrst (irregular: a -> ae in du/er forms).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_287",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "\"Wohin gehst du?\" What does Wohin ask?",
+      "options": [
+        "where to",
+        "where from",
+        "when",
+        "why"
+      ],
+      "answer": "where to",
+      "explanation": "Wohin = where to. Woher = where from.",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_288",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "Meine Mutter ___ (arbeiten) in einer Klinik.",
+      "answer": "arbeitet",
+      "explanation": "Sie arbeitet (t-stem verb: arbeit + et).",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_289",
+      "topic": "Mixed Review",
+      "type": "fill-blank",
+      "prompt": "___ (sein) ihr schon fertig?",
+      "answer": "Seid",
+      "explanation": "Ihr seid -> Seid ihr schon fertig?",
+      "level": "A1"
+    },
+    {
+      "id": "A1_gr_290",
+      "topic": "Mixed Review",
+      "type": "mcq",
+      "prompt": "Richtig oder falsch? 'Ich moechte einen Kaffee.'",
+      "options": [
+        "richtig",
+        "falsch"
+      ],
+      "answer": "richtig",
+      "explanation": "Correct: Ich moechte einen Kaffee.",
+      "level": "A1"
     }
   ],
   "A2": [
@@ -525,7 +2241,7 @@
       "id": "A2_gr_13",
       "unit": "Reflexive Verbs",
       "type": "fill-blank",
-      "prompt": "Ich wasche ___ (mir/mich) die HÃ¤nde.",
+      "prompt": "Ich wasche ___ (mir/mich) die Hände.",
       "options": [
         "mir",
         "mich",
@@ -551,12 +2267,12 @@
       "id": "A2_gr_15",
       "unit": "Modal Verbs Past",
       "type": "fill-blank",
-      "prompt": "Ich ___ (mÃ¼ssen) gestern arbeiten.",
+      "prompt": "Ich ___ (müssen) gestern arbeiten.",
       "options": [
         "musste",
         "muss",
         "gemusst",
-        "mÃ¼sste"
+        "müsste"
       ],
       "answer": "musste"
     },
@@ -564,7 +2280,7 @@
       "id": "A2_gr_16",
       "unit": "Modal Verbs Past",
       "type": "fill-blank",
-      "prompt": "Sie ___ (kÃ¶nnen) nicht kommen.",
+      "prompt": "Sie ___ (können) nicht kommen.",
       "options": [
         "konnte",
         "konntest",
@@ -592,7 +2308,7 @@
       "type": "fill-blank",
       "prompt": "Ich warte ___ den Bus.",
       "options": [
-        "fÃ¼r",
+        "für",
         "auf",
         "an",
         "bei"
@@ -662,36 +2378,36 @@
       "type": "fill-blank",
       "prompt": "Der Patient ___ (behandeln - passive present).",
       "answer": "wird behandelt",
-      "explanation": "Passiv PrÃ¤sens: werden + Partizip II."
+      "explanation": "Passiv Präsens: werden + Partizip II."
     },
     {
       "id": "B1_gr_5",
       "unit": "Passive Basics",
       "type": "fill-blank",
-      "prompt": "Die Operation ___ (durchfÃ¼hren - passive present).",
-      "answer": "wird durchgefÃ¼hrt",
-      "explanation": "Separable verb: wird + Partizip II (durchgefÃ¼hrt)."
+      "prompt": "Die Operation ___ (durchführen - passive present).",
+      "answer": "wird durchgeführt",
+      "explanation": "Separable verb: wird + Partizip II (durchgeführt)."
     },
     {
       "id": "B1_gr_6",
       "unit": "Konjunktiv II Basics",
       "type": "fill-blank",
-      "prompt": "Wenn ich mehr Zeit ___ (haben), wÃ¼rde ich reisen.",
+      "prompt": "Wenn ich mehr Zeit ___ (haben), würde ich reisen.",
       "options": [
         "habe",
-        "hÃ¤tte",
-        "haben wÃ¼rde",
+        "hätte",
+        "haben würde",
         "hatte"
       ],
-      "answer": "hÃ¤tte"
+      "answer": "hätte"
     },
     {
       "id": "B1_gr_7",
-      "unit": "Konjunktiv II hÃ¶flich",
+      "unit": "Konjunktiv II höflich",
       "type": "fill-blank",
-      "prompt": "___ (kÃ¶nnen) Sie mir bitte helfen?",
-      "answer": "KÃ¶nnten",
-      "explanation": "KÃ¶nnten is the polite Konjunktiv II form."
+      "prompt": "___ (können) Sie mir bitte helfen?",
+      "answer": "Könnten",
+      "explanation": "Könnten is the polite Konjunktiv II form."
     },
     {
       "id": "B1_gr_8",
@@ -757,12 +2473,12 @@
       "id": "B1_gr_13",
       "unit": "Reported Speech",
       "type": "fill-blank",
-      "prompt": "Er sagt, er ___ (sein) mÃ¼de.",
+      "prompt": "Er sagt, er ___ (sein) müde.",
       "options": [
         "ist",
         "sei",
         "war",
-        "wÃ¤re"
+        "wäre"
       ],
       "answer": "sei"
     },
@@ -807,7 +2523,7 @@
       "id": "B1_gr_18",
       "unit": "Past Tense Written",
       "type": "fill-blank",
-      "prompt": "Es ___ (sein) einmal ein KÃ¶nig.",
+      "prompt": "Es ___ (sein) einmal ein König.",
       "answer": "war"
     },
     {
@@ -827,7 +2543,7 @@
       "id": "B1_gr_20",
       "unit": "Comparisons als wie",
       "type": "mcq",
-      "prompt": "Er ist grÃ¶ÃŸer ___ sein Bruder.",
+      "prompt": "Er ist gröÃŸer ___ sein Bruder.",
       "options": [
         "als",
         "wie",
@@ -850,7 +2566,7 @@
       "id": "B2_gr_2",
       "unit": "Passive with Modal",
       "type": "fill-blank",
-      "prompt": "Die TÃ¼r ___ geÃ¶ffnet werden (mÃ¼ssen).",
+      "prompt": "Die Tür ___ geöffnet werden (müssen).",
       "answer": "muss",
       "explanation": "Modal + passive: modal + Partizip II + werden."
     },
@@ -882,14 +2598,14 @@
       "id": "B2_gr_6",
       "unit": "Connectors",
       "type": "fill-blank",
-      "prompt": "___ (during) des GesprÃ¤chs hat er nichts gesagt.",
+      "prompt": "___ (during) des Gesprächs hat er nichts gesagt.",
       "options": [
-        "WÃ¤hrend",
+        "Während",
         "Weil",
         "Obwohl",
         "Trotz"
       ],
-      "answer": "WÃ¤hrend"
+      "answer": "Während"
     },
     {
       "id": "B2_gr_7",
@@ -931,7 +2647,7 @@
       "id": "B2_gr_11",
       "unit": "Future II",
       "type": "fill-blank",
-      "prompt": "Bis nÃ¤chste Woche ___ ich die Arbeit ___ (Future II: machen).",
+      "prompt": "Bis nächste Woche ___ ich die Arbeit ___ (Future II: machen).",
       "answer": "werde gemacht haben",
       "explanation": "Future II: werden + Partizip II + haben/sein."
     },
@@ -939,12 +2655,12 @@
       "id": "B2_gr_12",
       "unit": "Complex Connectors",
       "type": "fill-blank",
-      "prompt": "___ (in view of) der Lage mÃ¼ssen wir handeln.",
+      "prompt": "___ (in view of) der Lage müssen wir handeln.",
       "options": [
         "Angesichts",
         "Trotz",
         "Wegen",
-        "WÃ¤hrend"
+        "Während"
       ],
       "answer": "Angesichts"
     },
@@ -974,7 +2690,7 @@
       "id": "B2_gr_15",
       "unit": "Double Connectors",
       "type": "fill-blank",
-      "prompt": "___ mehr er Ã¼bt, ___ besser wird er.",
+      "prompt": "___ mehr er übt, ___ besser wird er.",
       "options": [
         "Je...desto",
         "Wenn...dann",
@@ -1004,7 +2720,7 @@
       "options": [
         "AuÃŸerhalb",
         "Innerhalb",
-        "WÃ¤hrend",
+        "Während",
         "Trotz"
       ],
       "answer": "AuÃŸerhalb"
@@ -1018,7 +2734,7 @@
         "auf",
         "an",
         "bei",
-        "Ã¼ber"
+        "über"
       ],
       "answer": "auf"
     },
@@ -1029,7 +2745,7 @@
       "prompt": "Er denkt ___ (about) seine Zukunft.",
       "options": [
         "an",
-        "Ã¼ber",
+        "über",
         "auf",
         "von"
       ],
@@ -1057,35 +2773,35 @@
       "id": "C1_gr_2",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "___ (Because of the delay) des Fluges kamen wir zu spÃ¤t.",
+      "prompt": "___ (Because of the delay) des Fluges kamen wir zu spät.",
       "options": [
-        "Aufgrund der VerspÃ¤tung",
-        "Weil die VerspÃ¤tung",
-        "Dank der VerspÃ¤tung",
-        "Trotz der VerspÃ¤tung"
+        "Aufgrund der Verspätung",
+        "Weil die Verspätung",
+        "Dank der Verspätung",
+        "Trotz der Verspätung"
       ],
-      "answer": "Aufgrund der VerspÃ¤tung"
+      "answer": "Aufgrund der Verspätung"
     },
     {
       "id": "C1_gr_3",
       "unit": "Complex Sentence Transformation",
       "type": "sentence-correction",
-      "prompt": "Transform: 'Wenn man das berÃ¼cksichtigt, ist die LÃ¶sung klar.' -> '___ dessen ist die LÃ¶sung klar.'",
-      "answer": "Unter BerÃ¼cksichtigung",
+      "prompt": "Transform: 'Wenn man das berücksichtigt, ist die Lösung klar.' -> '___ dessen ist die Lösung klar.'",
+      "answer": "Unter Berücksichtigung",
       "explanation": "Prepositional nominal phrase replacing conditional clause."
     },
     {
       "id": "C1_gr_4",
       "unit": "Advanced Relative with Preposition",
       "type": "fill-blank",
-      "prompt": "Das ist etwas, ___ (about which) wir sprechen mÃ¼ssen.",
+      "prompt": "Das ist etwas, ___ (about which) wir sprechen müssen.",
       "options": [
-        "worÃ¼ber",
-        "Ã¼ber das",
-        "darÃ¼ber",
+        "worüber",
+        "über das",
+        "darüber",
         "wovon"
       ],
-      "answer": "worÃ¼ber"
+      "answer": "worüber"
     },
     {
       "id": "C1_gr_5",
@@ -1102,10 +2818,10 @@
     },
     {
       "id": "C1_gr_6",
-      "unit": "Irreale WÃ¼nsche",
+      "unit": "Irreale Wünsche",
       "type": "fill-blank",
       "prompt": "Wenn ich doch mehr Zeit ___ (have - Konjunktiv II).",
-      "answer": "hÃ¤tte",
+      "answer": "hätte",
       "explanation": "Irrealis wish: wenn + Konjunktiv II."
     },
     {
@@ -1120,8 +2836,8 @@
       "id": "C1_gr_8",
       "unit": "Modal Participles",
       "type": "fill-blank",
-      "prompt": "Ein ___ (leicht zu lÃ¶sen) Problem.",
-      "answer": "leicht zu lÃ¶sendes",
+      "prompt": "Ein ___ (leicht zu lösen) Problem.",
+      "answer": "leicht zu lösendes",
       "explanation": "zu + infinitive extended adjective."
     },
     {
@@ -1130,18 +2846,18 @@
       "type": "fill-blank",
       "prompt": "___ (namely) die Studie zeigt deutliche Ergebnisse.",
       "options": [
-        "NÃ¤mlich",
+        "Nämlich",
         "Also",
         "Denn",
         "Folglich"
       ],
-      "answer": "NÃ¤mlich"
+      "answer": "Nämlich"
     },
     {
       "id": "C1_gr_10",
       "unit": "Connectors Academic",
       "type": "fill-blank",
-      "prompt": "___ (insofar as) die Ergebnisse zeigen, ist die These bestÃ¤tigt.",
+      "prompt": "___ (insofar as) die Ergebnisse zeigen, ist die These bestätigt.",
       "options": [
         "Insofern",
         "Soweit",
@@ -1162,8 +2878,8 @@
       "id": "C1_gr_12",
       "unit": "Gerundive",
       "type": "fill-blank",
-      "prompt": "Die ___ (durchzufÃ¼hren) MaÃŸnahmen sind dringend.",
-      "answer": "durchzufÃ¼hrenden",
+      "prompt": "Die ___ (durchzuführen) MaÃŸnahmen sind dringend.",
+      "answer": "durchzuführenden",
       "explanation": "Gerundive: zu + infinitive + d adjective ending = necessity."
     },
     {
@@ -1175,7 +2891,7 @@
         "sei",
         "ist",
         "war",
-        "wÃ¤re"
+        "wäre"
       ],
       "answer": "sei",
       "explanation": "Konjunktiv I for indirect speech when present tense."
@@ -1184,7 +2900,7 @@
       "id": "C1_gr_14",
       "unit": "Complex Prepositions",
       "type": "fill-blank",
-      "prompt": "___ (In view of) der Sachlage mÃ¼ssen wir handeln.",
+      "prompt": "___ (In view of) der Sachlage müssen wir handeln.",
       "options": [
         "Angesichts",
         "Trotz",

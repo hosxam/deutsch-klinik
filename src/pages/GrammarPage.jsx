@@ -138,10 +138,10 @@ export default function GrammarPage() {
           <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{levelId} | {exercises.length} exercises</span>
         </div>
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-          <span style={s.tag}>{currentIndex + 1}/{exercises.length}</span>
-          <span style={s.tag} style={{ background: 'rgba(0,240,255,0.1)', color: 'var(--accent)' }}>Score: {score}</span>
+          <span style={s.tag()}>{currentIndex + 1}/{exercises.length}</span>
+          <span style={s.tag()} style={{ background: 'rgba(0,240,255,0.1)', color: 'var(--accent)' }}>Score: {score}</span>
           {mistakes.length > 0 && (
-            <span style={s.tag} style={{ background: 'rgba(234,179,8,0.15)', color: '#eab308' }}>{mistakes.length} mistakes</span>
+            <span style={s.tag()} style={{ background: 'rgba(234,179,8,0.15)', color: '#eab308' }}>{mistakes.length} mistakes</span>
           )}
         </div>
       </div>
