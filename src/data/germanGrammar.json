@@ -2429,6 +2429,734 @@
         "___ Kind spielt.",
         "Das"
       ]
+    },
+    {
+      "id": "A1_g151",
+      "level": "A1",
+      "lessonId": "A1_lesson_1",
+      "topic": "Verb Sein",
+      "question": "Ich ___ aus Deutschland.",
+      "options": [
+        "ist",
+        "bist",
+        "seid"
+      ],
+      "correctAnswer": "bin",
+      "explanation": "Use \"bin\" with the pronoun \"ich\" (I am from Germany)."
+    },
+    {
+      "id": "A1_g152",
+      "level": "A1",
+      "lessonId": "A1_lesson_1",
+      "topic": "Verb Sein",
+      "question": "Sie (pl.) ___ sehr freundlich.",
+      "options": [
+        "ist",
+        "bin",
+        "seid"
+      ],
+      "correctAnswer": "sind",
+      "explanation": "Use \"sind\" with \"Sie\" (formal you/they, plural) meaning \"You (all) are very friendly.\""
+    },
+    {
+      "id": "A1_g153",
+      "level": "A1",
+      "lessonId": "A1_lesson_3",
+      "topic": "Verb Haben",
+      "question": "Mein Bruder ___ einen Hund.",
+      "options": [
+        "hast",
+        "habe",
+        "habt"
+      ],
+      "correctAnswer": "hat",
+      "explanation": "Use \"hat\" with third-person singular subjects like \"mein Bruder\" (my brother has a dog)."
+    },
+    {
+      "id": "A1_g154",
+      "level": "A1",
+      "lessonId": "A1_lesson_25",
+      "topic": "Verb Haben",
+      "question": "Wir ___ viele Hausaufgaben.",
+      "options": [
+        "habt",
+        "hat",
+        "hast"
+      ],
+      "correctAnswer": "haben",
+      "explanation": "Use \"haben\" with the pronoun \"wir\" (we have a lot of homework)."
+    },
+    {
+      "id": "A1_g155",
+      "level": "A1",
+      "lessonId": "A1_lesson_8",
+      "topic": "Regular Verbs Present Tense",
+      "question": "Ich ___ (spielen) Fußball am Samstag.",
+      "options": [
+        "spielt",
+        "spielst",
+        "spielen"
+      ],
+      "correctAnswer": "spiele",
+      "explanation": "For \"ich\", remove -en and add -e: ich spiel-e (I play soccer on Saturday)."
+    },
+    {
+      "id": "A1_g156",
+      "level": "A1",
+      "lessonId": "A1_lesson_14",
+      "topic": "Regular Verbs Present Tense",
+      "question": "Meine Mutter ___ (kochen) jeden Abend.",
+      "options": [
+        "koche",
+        "kochst",
+        "kochen"
+      ],
+      "correctAnswer": "kocht",
+      "explanation": "For \"er/sie/es\", remove -en and add -t: sie koch-t (My mother cooks every evening)."
+    },
+    {
+      "id": "A1_g157",
+      "level": "A1",
+      "lessonId": "A1_lesson_25",
+      "topic": "Regular Verbs Present Tense",
+      "question": "Ihr ___ (arbeiten) zu viel.",
+      "options": [
+        "arbeite",
+        "arbeitst",
+        "arbeiten"
+      ],
+      "correctAnswer": "arbeitet",
+      "explanation": "For verbs ending in -ten, the \"du\" and \"er/sie/es\" forms add -et: ihr arbeit-et (You all work too much)."
+    },
+    {
+      "id": "A1_g158",
+      "level": "A1",
+      "lessonId": "A1_lesson_8",
+      "topic": "Regular Verbs Present Tense",
+      "question": "Die Kinder ___ (tanzen) im Park.",
+      "options": [
+        "tanze",
+        "tanzt",
+        "tanze"
+      ],
+      "correctAnswer": "tanzen",
+      "explanation": "For \"sie\" (they/plural), the infinitive stays: sie tanz-en (The children dance in the park)."
+    },
+    {
+      "id": "A1_g159",
+      "level": "A1",
+      "lessonId": "A1_lesson_21",
+      "topic": "Irregular Verbs Present Tense",
+      "question": "Er ___ (fahren) mit dem Bus zur Arbeit.",
+      "options": [
+        "fahrt",
+        "fahrst",
+        "fahren"
+      ],
+      "correctAnswer": "fährt",
+      "explanation": "Strong verbs change the stem vowel in du and er/sie/es forms: fahren -> er fährt (He takes the bus to work)."
+    },
+    {
+      "id": "A1_g160",
+      "level": "A1",
+      "lessonId": "A1_lesson_8",
+      "topic": "Irregular Verbs Present Tense",
+      "question": "Du ___ (lesen) ein Buch.",
+      "options": [
+        "lest",
+        "lese",
+        "lesen"
+      ],
+      "correctAnswer": "liest",
+      "explanation": "Lesen is irregular: du liest (you read / are reading a book). The stem changes from e to ie."
+    },
+    {
+      "id": "A1_g161",
+      "level": "A1",
+      "lessonId": "A1_lesson_1",
+      "topic": "Personal Pronouns",
+      "question": "___ (we) wohnen in München.",
+      "options": [
+        "Sie",
+        "Ihr",
+        "Du"
+      ],
+      "correctAnswer": "Wir",
+      "explanation": "\"Wir\" is the nominative first-person plural pronoun meaning \"we\" (We live in Munich)."
+    },
+    {
+      "id": "A1_g162",
+      "level": "A1",
+      "lessonId": "A1_lesson_18",
+      "topic": "Personal Pronouns",
+      "question": "Kommst ___ (you, informal singular) aus Berlin?",
+      "options": [
+        "ihr",
+        "sie",
+        "Sie"
+      ],
+      "correctAnswer": "du",
+      "explanation": "\"Du\" is the informal singular pronoun \"you\" when talking to one person you know well."
+    },
+    {
+      "id": "A1_g163",
+      "level": "A1",
+      "lessonId": "A1_lesson_14",
+      "topic": "Indefinite Articles",
+      "question": "Das ist ___ (a) Tisch.",
+      "options": [
+        "eine",
+        "einer",
+        "einen"
+      ],
+      "correctAnswer": "ein",
+      "explanation": "\"Tisch\" is masculine, so we use \"ein\" (a) before it: ein Tisch (a table)."
+    },
+    {
+      "id": "A1_g164",
+      "level": "A1",
+      "lessonId": "A1_lesson_20",
+      "topic": "Indefinite Articles",
+      "question": "Ich möchte ___ (a) Cola, bitte.",
+      "options": [
+        "ein",
+        "einer",
+        "einen"
+      ],
+      "correctAnswer": "eine",
+      "explanation": "\"Cola\" is feminine, so we use \"eine\" (a) before it: eine Cola (a cola)."
+    },
+    {
+      "id": "A1_g165",
+      "level": "A1",
+      "lessonId": "A1_lesson_25",
+      "topic": "Indefinite Articles",
+      "question": "Das ist ___ (a) Kind aus meiner Klasse.",
+      "options": [
+        "eine",
+        "einen",
+        "einer"
+      ],
+      "correctAnswer": "ein",
+      "explanation": "\"Kind\" is neuter, so we use \"ein\" (a) before it: ein Kind (a child)."
+    },
+    {
+      "id": "A1_g166",
+      "level": "A1",
+      "lessonId": "A1_lesson_3",
+      "topic": "Negative Articles kein/keine",
+      "question": "Ich habe ___ (no) Bruder.",
+      "options": [
+        "kein",
+        "keine",
+        "keiner"
+      ],
+      "correctAnswer": "keinen",
+      "explanation": "In the accusative, masculine \"kein\" becomes \"keinen\": Ich habe keinen Bruder (I have no brother)."
+    },
+    {
+      "id": "A1_g167",
+      "level": "A1",
+      "lessonId": "A1_lesson_25",
+      "topic": "Negative Articles kein/keine",
+      "question": "Das ist ___ (not a) gute Idee.",
+      "options": [
+        "kein",
+        "keinen",
+        "keiner"
+      ],
+      "correctAnswer": "keine",
+      "explanation": "\"Idee\" is feminine, so we use \"keine\": keine gute Idee (not a good idea)."
+    },
+    {
+      "id": "A1_g168",
+      "level": "A1",
+      "lessonId": "A1_lesson_14",
+      "topic": "nicht vs kein",
+      "question": "Das ist mein Buch, ___ deins.",
+      "options": [
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "correctAnswer": "nicht",
+      "explanation": "Use \"nicht\" to negate verbs, adjectives, or specific parts of a sentence, not nouns. Here it negates \"deins\"."
+    },
+    {
+      "id": "A1_g169",
+      "level": "A1",
+      "lessonId": "A1_lesson_10",
+      "topic": "nicht vs kein",
+      "question": "Ich trinke ___ Kaffee, nur Tee.",
+      "options": [
+        "nicht",
+        "keine",
+        "kein"
+      ],
+      "correctAnswer": "keinen",
+      "explanation": "Use \"kein\" (keinen in accusative masculine) to negate a noun: ich trinke keinen Kaffee (I drink no coffee/dont drink coffee)."
+    },
+    {
+      "id": "A1_g170",
+      "level": "A1",
+      "lessonId": "A1_lesson_15",
+      "topic": "Word Order in Statements",
+      "question": "___ (Today) gehe ich ins Kino.",
+      "options": [
+        "Ich gehe heute",
+        "Gehe ich heute",
+        "Heute ich gehe"
+      ],
+      "correctAnswer": "Heute",
+      "explanation": "In German, the verb stays in second position. If you start with \"heute\" (time), the subject moves after the verb: Heute gehe ich (Today I go to the cinema)."
+    },
+    {
+      "id": "A1_g171",
+      "level": "A1",
+      "lessonId": "A1_lesson_15",
+      "topic": "Word Order in Statements",
+      "question": "Jeden Tag ___ ich um sieben Uhr auf.",
+      "options": [
+        "aufstehe",
+        "steht",
+        "aufsteht"
+      ],
+      "correctAnswer": "stehe",
+      "explanation": "In a main clause with a separable verb, the prefix goes to the end and the verb stem is in second position: Jeden Tag stehe ich ... auf (Every day I get up at seven)."
+    },
+    {
+      "id": "A1_g172",
+      "level": "A1",
+      "lessonId": "A1_lesson_11",
+      "topic": "Word Order in Statements",
+      "question": "Im Winter ___ es sehr kalt.",
+      "options": [
+        "es ist",
+        "ist es",
+        "wird"
+      ],
+      "correctAnswer": "ist",
+      "explanation": "The verb stays in second position after the time phrase: Im Winter ist es sehr kalt (In winter it is very cold)."
+    },
+    {
+      "id": "A1_g173",
+      "level": "A1",
+      "lessonId": "A1_lesson_1",
+      "topic": "Yes/No Questions",
+      "question": "___ du Deutsch? (Do you speak German?)",
+      "options": [
+        "Sprich",
+        "Sprechen",
+        "Sprecht"
+      ],
+      "correctAnswer": "Sprichst",
+      "explanation": "In yes/no questions, the verb comes first: Sprichst du Deutsch? (Do you speak German?)."
+    },
+    {
+      "id": "A1_g174",
+      "level": "A1",
+      "lessonId": "A1_lesson_15",
+      "topic": "Yes/No Questions",
+      "question": "___ ihr morgen Zeit? (Do you all have time tomorrow?)",
+      "options": [
+        "Haben",
+        "Hast",
+        "Habe"
+      ],
+      "correctAnswer": "Habt",
+      "explanation": "The verb comes first in yes/no questions: Habt ihr morgen Zeit? (Do you all have time tomorrow?)."
+    },
+    {
+      "id": "A1_g175",
+      "level": "A1",
+      "lessonId": "A1_lesson_10",
+      "topic": "Yes/No Questions",
+      "question": "___ Sie einen Tisch fuer zwei Personen?",
+      "options": [
+        "Habt",
+        "Hast",
+        "Hat"
+      ],
+      "correctAnswer": "Haben",
+      "explanation": "With formal \"Sie\", use the infinitive form \"haben\" in first position: Haben Sie einen Tisch? (Do you have a table for two?)."
+    },
+    {
+      "id": "A1_g176",
+      "level": "A1",
+      "lessonId": "A1_lesson_18",
+      "topic": "W-Questions",
+      "question": "___ (Where) wohnst du?",
+      "options": [
+        "Was",
+        "Wer",
+        "Wie"
+      ],
+      "correctAnswer": "Wo",
+      "explanation": "\"Wo\" means \"where\" and is used to ask about a place or location: Wo wohnst du? (Where do you live?)."
+    },
+    {
+      "id": "A1_g177",
+      "level": "A1",
+      "lessonId": "A1_lesson_8",
+      "topic": "W-Questions",
+      "question": "___ (What) machst du am Wochenende?",
+      "options": [
+        "Wer",
+        "Wo",
+        "Wie"
+      ],
+      "correctAnswer": "Was",
+      "explanation": "\"Was\" means \"what\" and is used to ask about activities or things: Was machst du? (What are you doing?)."
+    },
+    {
+      "id": "A1_g178",
+      "level": "A1",
+      "lessonId": "A1_lesson_23",
+      "topic": "W-Questions",
+      "question": "___ (When) hast du Geburtstag?",
+      "options": [
+        "Wer",
+        "Wo",
+        "Was"
+      ],
+      "correctAnswer": "Wann",
+      "explanation": "\"Wann\" means \"when\" and asks about time or dates: Wann hast du Geburtstag? (When is your birthday?)."
+    },
+    {
+      "id": "A1_g179",
+      "level": "A1",
+      "lessonId": "A1_lesson_18",
+      "topic": "Accusative Case Basics",
+      "question": "Ich sehe ___ (a / the) Mann.",
+      "options": [
+        "ein",
+        "eine",
+        "der"
+      ],
+      "correctAnswer": "einen",
+      "explanation": "In the accusative case, the masculine indefinite article changes: ein -> einen. Ich sehe einen Mann (I see a man)."
+    },
+    {
+      "id": "A1_g180",
+      "level": "A1",
+      "lessonId": "A1_lesson_9",
+      "topic": "Accusative Case Basics",
+      "question": "Er kauft ___ (a) Blume fuer seine Mutter.",
+      "options": [
+        "einen",
+        "ein",
+        "der"
+      ],
+      "correctAnswer": "eine",
+      "explanation": "Feminine articles dont change in accusative: eine Blume (a flower) stays the same as nominative."
+    },
+    {
+      "id": "A1_g181",
+      "level": "A1",
+      "lessonId": "A1_lesson_22",
+      "topic": "Modal Verb können",
+      "question": "Ich ___ (can) dir helfen.",
+      "options": [
+        "könne",
+        "könnt",
+        "kannst"
+      ],
+      "correctAnswer": "kann",
+      "explanation": "\"Können\" is a modal verb. For \"ich\", use the irregular form \"kann\" without -en: Ich kann dir helfen (I can help you)."
+    },
+    {
+      "id": "A1_g182",
+      "level": "A1",
+      "lessonId": "A1_lesson_21",
+      "topic": "Modal Verb können",
+      "question": "Du ___ (can) hier parken.",
+      "options": [
+        "kann",
+        "könnt",
+        "können"
+      ],
+      "correctAnswer": "kannst",
+      "explanation": "For \"du\", add -st to kann-: Du kannst hier parken (You can park here)."
+    },
+    {
+      "id": "A1_g183",
+      "level": "A1",
+      "lessonId": "A1_lesson_6",
+      "topic": "Modal Verb müssen",
+      "question": "Wir ___ (must) um acht Uhr da sein.",
+      "options": [
+        "müsst",
+        "muss",
+        "musst"
+      ],
+      "correctAnswer": "müssen",
+      "explanation": "Wir müssen = we must. Modal verbs are irregular: ich muss, du musst, wir/sie/Sie müssen."
+    },
+    {
+      "id": "A1_g184",
+      "level": "A1",
+      "lessonId": "A1_lesson_20",
+      "topic": "Modal Verb möchten",
+      "question": "Ich ___ (would like) einen Kaffee, bitte.",
+      "options": [
+        "möchtest",
+        "möchtet",
+        "möchten"
+      ],
+      "correctAnswer": "möchte",
+      "explanation": "\"Möchten\" is the subjunctive form of \"mögen\" and is very common in polite requests. For ich: ich möchte (I would like)."
+    },
+    {
+      "id": "A1_g185",
+      "level": "A1",
+      "lessonId": "A1_lesson_10",
+      "topic": "Modal Verb können",
+      "question": "___ (Can) ich die Rechnung haben?",
+      "options": [
+        "Können",
+        "Kannst",
+        "Könnt"
+      ],
+      "correctAnswer": "Kann",
+      "explanation": "In yes/no questions with modal verbs, the modal goes first: Kann ich die Rechnung haben? (Can I have the bill?)."
+    },
+    {
+      "id": "A1_g186",
+      "level": "A1",
+      "lessonId": "A1_lesson_16",
+      "topic": "Modal Verb müssen",
+      "question": "Der Arzt sagt, ich ___ mehr Wasser trinken.",
+      "options": [
+        "müssen",
+        "musst",
+        "müsst"
+      ],
+      "correctAnswer": "muss",
+      "explanation": "For \"ich\" with müssen: ich muss. Der Arzt sagt, ich muss mehr Wasser trinken (The doctor says I must drink more water)."
+    },
+    {
+      "id": "A1_g187",
+      "level": "A1",
+      "lessonId": "A1_lesson_3",
+      "topic": "Possessive Adjectives",
+      "question": "Das ist ___ (my) Mutter.",
+      "options": [
+        "mein",
+        "meiner",
+        "meines"
+      ],
+      "correctAnswer": "meine",
+      "explanation": "With feminine nouns (Mutter), use \"meine\": meine Mutter (my mother)."
+    },
+    {
+      "id": "A1_g188",
+      "level": "A1",
+      "lessonId": "A1_lesson_3",
+      "topic": "Possessive Adjectives",
+      "question": "Wie heißt ___ (your, informal) Frau?",
+      "options": [
+        "dein",
+        "deiner",
+        "deines"
+      ],
+      "correctAnswer": "deine",
+      "explanation": "With feminine nouns (Frau), use \"deine\": deine Frau (your wife)."
+    },
+    {
+      "id": "A1_g189",
+      "level": "A1",
+      "lessonId": "A1_lesson_3",
+      "topic": "Possessive Adjectives",
+      "question": "Das ist ___ (his) Hund.",
+      "options": [
+        "seine",
+        "seinen",
+        "seins"
+      ],
+      "correctAnswer": "sein",
+      "explanation": "With masculine nouns (Hund), use \"sein\": sein Hund (his dog). \"Sein\" is the base form for masculine/neuter nominative."
+    },
+    {
+      "id": "A1_g190",
+      "level": "A1",
+      "lessonId": "A1_lesson_17",
+      "topic": "Plural Forms",
+      "question": "Im Zoo gibt es viele ___ (Tier).",
+      "options": [
+        "Tier",
+        "Tiers",
+        "Tieren"
+      ],
+      "correctAnswer": "Tiere",
+      "explanation": "Many German nouns add -e in the plural: das Tier -> die Tiere (the animals)."
+    },
+    {
+      "id": "A1_g191",
+      "level": "A1",
+      "lessonId": "A1_lesson_9",
+      "topic": "Plural Forms",
+      "question": "Drei ___ (Apfel) kosten zwei Euro.",
+      "options": [
+        "Apfeln",
+        "Apfels",
+        "Aepfel"
+      ],
+      "correctAnswer": "Äpfel",
+      "explanation": "Many masculine nouns with the vowels a/o/u add an umlaut in the plural: der Apfel -> die Äpfel (the apples)."
+    },
+    {
+      "id": "A1_g192",
+      "level": "A1",
+      "lessonId": "A1_lesson_6",
+      "topic": "Numbers and Time",
+      "question": "Es ist ___ Uhr. (2:00)",
+      "options": [
+        "zweite",
+        "zweimal",
+        "zwölf"
+      ],
+      "correctAnswer": "zwei",
+      "explanation": "For telling time: Es ist zwei Uhr (It is two o'clock). Use the basic number."
+    },
+    {
+      "id": "A1_g193",
+      "level": "A1",
+      "lessonId": "A1_lesson_6",
+      "topic": "Numbers and Time",
+      "question": "Es ist Viertel nach ___. (3:15)",
+      "options": [
+        "dreißig",
+        "dritte",
+        "dreimal"
+      ],
+      "correctAnswer": "drei",
+      "explanation": "\"Viertel nach\" means \"quarter past\": Viertel nach drei = 3:15 (quarter past three)."
+    },
+    {
+      "id": "A1_g194",
+      "level": "A1",
+      "lessonId": "A1_lesson_21",
+      "topic": "Numbers and Time",
+      "question": "___ Euro kostet das Ticket. (Thirty)",
+      "options": [
+        "Dreizehn",
+        "Drei",
+        "Dreihundert"
+      ],
+      "correctAnswer": "Dreißig",
+      "explanation": "\"Dreißig\" means thirty (30): Dreißig Euro kostet das Ticket (The ticket costs 30 euros)."
+    },
+    {
+      "id": "A1_g195",
+      "level": "A1",
+      "lessonId": "A1_lesson_15",
+      "topic": "Separable Verbs",
+      "question": "Ich ___ um sechs Uhr ___. (aufstehen)",
+      "options": [
+        "aufstehe ... ",
+        "steh ... auf",
+        "aufstehen"
+      ],
+      "correctAnswer": "stehe ... auf",
+      "explanation": "In a main clause, the prefix separates and goes to the end: Ich stehe um sechs Uhr auf (I get up at six o'clock)."
+    },
+    {
+      "id": "A1_g196",
+      "level": "A1",
+      "lessonId": "A1_lesson_9",
+      "topic": "Separable Verbs",
+      "question": "Wir ___ im Supermarkt ___. (einkaufen)",
+      "options": [
+        "einkaufen ... ",
+        "kauft ... ein",
+        "kauf ... ein"
+      ],
+      "correctAnswer": "kaufen ... ein",
+      "explanation": "\"Einkaufen\" is a separable verb: Wir kaufen im Supermarkt ein (We shop at the supermarket). The prefix \"ein\" goes to the end."
+    },
+    {
+      "id": "A1_g197",
+      "level": "A1",
+      "lessonId": "A1_lesson_22",
+      "topic": "Separable Verbs",
+      "question": "___ du mich morgen ___? (anrufen)",
+      "options": [
+        "Anrufst ... ",
+        "Ruf ... an",
+        "Anrufen"
+      ],
+      "correctAnswer": "Rufst ... an",
+      "explanation": "\"Anrufen\" (to call) is separable: Rufst du mich morgen an? (Will you call me tomorrow?). In questions, the verb goes first and the prefix goes last."
+    },
+    {
+      "id": "A1_g198",
+      "level": "A1",
+      "lessonId": "A1_lesson_14",
+      "topic": "Prepositions of Place",
+      "question": "Das Buch liegt ___ dem Tisch. (on)",
+      "options": [
+        "in",
+        "neben",
+        "vor"
+      ],
+      "correctAnswer": "auf",
+      "explanation": "\"Auf\" means \"on top of\" a horizontal surface: Das Buch liegt auf dem Tisch (The book is on the table)."
+    },
+    {
+      "id": "A1_g199",
+      "level": "A1",
+      "lessonId": "A1_lesson_18",
+      "topic": "Prepositions of Place",
+      "question": "Die Schule ist ___ der Kirche. (next to)",
+      "options": [
+        "auf",
+        "in",
+        "vor"
+      ],
+      "correctAnswer": "neben",
+      "explanation": "\"Neben\" means \"next to/beside\": Die Schule ist neben der Kirche (The school is next to the church)."
+    },
+    {
+      "id": "A1_g200",
+      "level": "A1",
+      "lessonId": "A1_lesson_14",
+      "topic": "Prepositions of Place",
+      "question": "Der Hund sitzt ___ dem Haus. (in front of)",
+      "options": [
+        "hinter",
+        "neben",
+        "auf"
+      ],
+      "correctAnswer": "vor",
+      "explanation": "\"Vor\" means \"in front of\": Der Hund sitzt vor dem Haus (The dog is sitting in front of the house)."
+    },
+    {
+      "id": "A1_g201",
+      "level": "A1",
+      "lessonId": "A1_lesson_10",
+      "topic": "Imperatives (Commands)",
+      "question": "___ (Please sit down), Herr Müller! (sich setzen - formal)",
+      "options": [
+        "Setz dich",
+        "Setzt euch",
+        "Setzen dich"
+      ],
+      "correctAnswer": "Setzen Sie sich",
+      "explanation": "For formal commands (Sie), the verb comes first and \"Sie\" follows: Setzen Sie sich! (Sit down!)."
+    },
+    {
+      "id": "A1_g202",
+      "level": "A1",
+      "lessonId": "A1_lesson_5",
+      "topic": "Imperatives (Commands)",
+      "question": "___ (Go) nach Hause! (gehen - informal, to one person)",
+      "options": [
+        "Geht",
+        "Gehen",
+        "Gehe"
+      ],
+      "correctAnswer": "Geh",
+      "explanation": "For informal singular commands, use the du-form without -st: Geh nach Hause! (Go home!)."
     }
   ],
   "A2": [
