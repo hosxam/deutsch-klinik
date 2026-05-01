@@ -1,13 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, getCompletedLessons } from '../utils/store';
-import lessonsA from '../data/germanLessons.json';
-import lessonsB from '../data/germanLessonsB1.json';
-import lessonsC from '../data/germanLessonsBC.json';
+import allLessonsData from '../data/germanLessonsNew.json';
 import unitsData from '../data/germanUnits.json';
 import { BookOpen, CheckCircle, Circle, ArrowLeft, BarChart3 } from 'lucide-react';
 
-const allLessons = [...lessonsA, ...lessonsB, ...lessonsC];
+const allLessons = allLessonsData;
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
 
 export default function LessonsPage() {
