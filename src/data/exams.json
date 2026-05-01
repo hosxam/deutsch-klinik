@@ -1205,132 +1205,638 @@
         }
       }
     ],
-    "B1": {
-      "id": "exam_B1",
-      "name": "Goethe B1 Practice Exam (Zertifikat Deutsch)",
-      "passScore": 75,
-      "sections": {
-        "Lesen": {
-          "timeLimit": 45,
-          "tasks": [
-            {
-              "id": "B1_ex_lesen_1",
-              "type": "mcq",
-              "question": "Text: 'Immer mehr deutsche Krankenhäuser haben wirtschaftliche Probleme. Besonders kleine Häuser auf dem Land sind betroffen. Die Politik diskutiert über Reformen.' Was ist das Problem?",
-              "options": [
-                "Zu viele Patienten",
-                "Wirtschaftliche Probleme der Krankenhäuser",
-                "Zu viele Ärzte",
-                "Moderne Technik"
-              ],
-              "answer": "Wirtschaftliche Probleme der Krankenhäuser"
-            },
-            {
-              "id": "B1_ex_lesen_2",
-              "type": "true-false",
-              "question": "Text: 'Die gesetzliche Krankenversicherung deckt die Kosten für Vorsorgeuntersuchungen ab. Private Zusatzversicherungen bieten darüber hinaus Leistungen an.' Alle Vorsorgeuntersuchungen werden von der gesetzlichen Krankenversicherung bezahlt.",
-              "answer": "false"
-            },
-            {
-              "id": "B1_ex_lesen_3",
-              "type": "heading-match",
-              "question": "Welche Überschrift passt? 'Mehrere Studien zeigen, dass regelmäßige Bewegung das Risiko für Herz-Kreislauf-Erkrankungen senkt. Die Weltgesundheitsorganisation empfiehlt mindestens 150 Minuten Bewegung pro Woche.'",
-              "options": [
-                "Risiken des Sports",
-                "Bewegung schützt das Herz",
-                "Neue Medikamente",
-                "Krankenhäuser schließen"
-              ],
-              "answer": "Bewegung schützt das Herz"
-            },
-            {
-              "id": "B1_ex_lesen_4",
-              "type": "mcq",
-              "question": "Text: 'Die Fachsprachprüfung prüft die Deutschkenntnisse von ausländischen Ärzten. Sie besteht aus einem Patientengespräch, einer Befundbesprechung und der Dokumentation.' Wie viele Teile hat die Prüfung?",
-              "options": [
-                "Zwei",
-                "Drei",
-                "Vier",
-                "Fünf"
-              ],
-              "answer": "Drei"
-            },
-            {
-              "id": "B1_ex_lesen_5",
-              "type": "gap-fill",
-              "question": "Die Krankenkasse ___ die Kosten für die Behandlung.",
-              "options": [
-                "übernimmt",
-                "übernehmen",
-                "übernommen",
-                "Übernahme"
-              ],
-              "answer": "übernimmt"
-            }
-          ]
-        },
-        "Hören": {
-          "timeLimit": 25,
-          "tasks": [
-            {
-              "id": "B1_ex_horen_1",
-              "type": "mcq",
-              "question": "Radiosendung: 'Die neue Grippeschutzimpfung ist ab Oktober in allen Arztpraxen verfügbar. Besonders Risikogruppen wird die Impfung empfohlen.' Wann ist die Impfung verfügbar?",
-              "options": [
-                "Ab August",
-                "Ab September",
-                "Ab Oktober",
-                "Ab November"
-              ],
-              "answer": "Ab Oktober"
-            },
-            {
-              "id": "B1_ex_horen_2",
-              "type": "true-false",
-              "question": "Arzt: 'Nehmen Sie das Medikament zweimal täglich, morgens und abends.' Das Medikament soll einmal täglich genommen werden.",
-              "answer": "false"
-            },
-            {
-              "id": "B1_ex_horen_3",
-              "type": "mcq",
-              "question": "Patient: 'Nach der Operation hatte ich starke Schmerzen, aber die Physiotherapie hilft mir sehr.' Was hilft dem Patienten?",
-              "options": [
-                "Die Medikamente",
-                "Die Physiotherapie",
-                "Die Operation",
-                "Der Arzt"
-              ],
-              "answer": "Die Physiotherapie"
-            }
-          ]
-        },
-        "Schreiben": {
-          "timeLimit": 45,
-          "tasks": [
-            {
-              "id": "B1_ex_schreiben_1",
-              "prompt": "In einem Online-Forum diskutieren Ärzte über die Arbeit in Deutschland. Schreiben Sie einen Beitrag zum Thema: 'Was sind die größten Herausforderungen für ausländische Ärzte in Deutschland?'",
-              "wordLimit": 120
-            }
-          ]
-        },
-        "Sprechen": {
-          "prepTime": 90,
-          "tasks": [
-            {
-              "id": "B1_ex_sprech_1",
-              "prompt": "Präsentation: 'Meine Motivation, in Deutschland als Orthopäde zu arbeiten.'",
-              "talkTime": 120
-            },
-            {
-              "id": "B1_ex_sprech_2",
-              "prompt": "Diskussion mit einem Partner: 'Vor- und Nachteile des deutschen Gesundheitssystems.'",
-              "talkTime": 120
-            }
-          ]
+    "B1": [
+      {
+        "id": "B1_exam_1",
+        "name": "Goethe B1 Practice Exam 1 - Arbeit und Bildung",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex1_les_1",
+                "type": "mcq",
+                "question": "Text: 'Immer mehr Unternehmen in Deutschland bieten ihren Mitarbeitern flexible Arbeitszeiten an. Eine Studie zeigt, dass 70 Prozent der Angestellten Homeoffice-Möglichkeiten nutzen möchten. Besonders junge Arbeitnehmer legen Wert auf eine gute Work-Life-Balance.' Was wuenschen sich junge Arbeitnehmer besonders?",
+                "options": [
+                  "Ein hohes Gehalt",
+                  "Eine gute Work-Life-Balance",
+                  "Einen kurzen Arbeitsweg",
+                  "Eine grosse Firma"
+                ],
+                "answer": "Eine gute Work-Life-Balance"
+              },
+              {
+                "id": "B1_ex1_les_2",
+                "type": "true-false",
+                "question": "Text: 'Die Ausbildung zum Industriekaufmann dauert in der Regel drei Jahre. Die Berufsschule besuchen die Auszubildenden an ein bis zwei Tagen pro Woche. Eine Verkuerzung der Ausbildung auf zweieinhalb Jahre ist bei guten Leistungen moeglich.' Die Ausbildung zum Industriekaufmann dauert immer drei Jahre.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex1_les_3",
+                "type": "heading-match",
+                "question": "Welche Ueberschrift passt? 'Das Bundesministerium fuer Bildung und Forschung vergibt jedes Jahr Stipendien an besonders begabte Studierende aus dem In- und Ausland. Die Bewerbungsfrist endet am 31. Maerz.'",
+                "options": [
+                  "Studiengebuehren steigen",
+                  "Stipendien fuer begabte Studierende",
+                  "Neue Universitaet eroeffnet",
+                  "Auslandssemester beliebt"
+                ],
+                "answer": "Stipendien fuer begabte Studierende"
+              },
+              {
+                "id": "B1_ex1_les_4",
+                "type": "gap-fill",
+                "question": "Fuer die Bewerbung ___ Sie Ihre Zeugnisse und einen Lebenslauf ein.",
+                "options": [
+                  "reichen",
+                  "reicht",
+                  "reichte",
+                  "gereicht"
+                ],
+                "answer": "reichen"
+              },
+              {
+                "id": "B1_ex1_les_5",
+                "type": "mcq",
+                "question": "Text: 'Herr Mueller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespraech musste er Fragen zu seiner Berufserfahrung, seinen Staerken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.' Was gehoert NICHT zu den Fragen im Vorstellungsgespraech?",
+                "options": [
+                  "Berufserfahrung",
+                  "Staerken und Schwachen",
+                  "Gehaltsvorstellungen",
+                  "Familienstand"
+                ],
+                "answer": "Familienstand"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "B1_ex1_hor_1",
+                "type": "mcq",
+                "question": "Telefonansage der Agentur fuer Arbeit: 'Guten Tag, Sie sind verbunden mit der Agentur fuer Arbeit in Muenchen. Unsere Oeffnungszeiten sind Montag bis Freitag von 8 bis 16 Uhr. Mittwochs sind wir bis 18 Uhr fuer Sie da. Fuer die Vereinbarung eines persoenlichen Gespraechstermins druecken Sie bitte die 1. Fuer Fragen zu Ihrem Arbeitslosengeld druecken Sie die 2. Fuer Informationen zu Weiterbildungsmoeglichkeiten druecken Sie die 3.' Bis wann ist die Agentur am Mittwoch geoeffnet?",
+                "options": [
+                  "Bis 16 Uhr",
+                  "Bis 17 Uhr",
+                  "Bis 18 Uhr",
+                  "Bis 20 Uhr"
+                ],
+                "answer": "Bis 18 Uhr"
+              },
+              {
+                "id": "B1_ex1_hor_2",
+                "type": "true-false",
+                "question": "Arbeitskollegin: 'Ich habe mich fuer die Fortbildung naechste Woche angemeldet. Sie findet von Montag bis Mittwoch in der Hauptverwaltung statt. Es sind noch zwei Plaetze frei, falls du auch kommen moechtest.' Die Fortbildung findet an vier Tagen statt.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex1_hor_3",
+                "type": "mcq",
+                "question": "Werbung im Radio: 'Sie moechten sich beruflich veraendern? Die Abendschule bietet Kurse in den Bereichen IT, Buchhaltung und Sprachen an. Der naechste Kurs beginnt am 1. April. Informieren Sie sich jetzt kostenlos und unverbindlich unter der Nummer 0800-54321.' Welche Bereiche bietet die Abendschule an?",
+                "options": [
+                  "Medizin, Technik und Sprachen",
+                  "IT, Buchhaltung und Sprachen",
+                  "IT, Design und Buchhaltung",
+                  "Sprachen, Journalismus und IT"
+                ],
+                "answer": "IT, Buchhaltung und Sprachen"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex1_sch_1",
+                "prompt": "Sie haben eine Stellenanzeige gesehen und moechten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an die Personalabteilung. - Nennen Sie die Stelle, auf die Sie sich bewerben - Erlaeutern Sie Ihre Qualifikationen - Fragen Sie nach dem weiteren Bewerbungsprozess",
+                "wordLimit": 120
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 90,
+            "tasks": [
+              {
+                "id": "B1_ex1_spr_1",
+                "prompt": "Praesentation: \"Mein Traumberuf - was ich dafuer tun muss.\" Stellen Sie Ihren Traumberuf vor und erklaeren Sie, welche Schritte fuer die Verwirklichung notwendig sind.",
+                "talkTime": 120
+              },
+              {
+                "id": "B1_ex1_spr_2",
+                "prompt": "Diskussion mit einem Partner: \"Sollten alle jungen Menschen eine Berufsausbildung machen oder direkt studieren? Vor- und Nachteile beider Wege.\"",
+                "talkTime": 120
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B1_exam_2",
+        "name": "Goethe B1 Practice Exam 2 - Gesundheit und Versicherung",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex2_les_1",
+                "type": "mcq",
+                "question": "Text: 'Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehoeren die aerztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshoehe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.' Wie wird der Beitrag zur Krankenversicherung berechnet?",
+                "options": [
+                  "Nach dem Alter",
+                  "Nach dem Einkommen",
+                  "Nach der Groesse der Familie",
+                  "Nach dem Wohnort"
+                ],
+                "answer": "Nach dem Einkommen"
+              },
+              {
+                "id": "B1_ex2_les_2",
+                "type": "true-false",
+                "question": "Text: 'Die private Krankenversicherung ist fuer Selbststaendige und Behoerdenmitarbeiter eine Alternative zur gesetzlichen Versicherung. Die Beitraege sind altersabhaengig und koennen steigen.' Die private Krankenversicherung ist fuer alle Arbeitnehmer die beste Wahl.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex2_les_3",
+                "type": "heading-match",
+                "question": "Welche Ueberschrift passt? 'Neue Studien zeigen, dass regelmaessiger Sport das Risiko fuer Herz-Kreislauf-Erkrankungen um bis zu 40 Prozent senken kann. Die Weltgesundheitsorganisation empfiehlt Erwachsenen mindestens 150 Minuten moderate Bewegung pro Woche.'",
+                "options": [
+                  "Gefaahren des Leistungssports",
+                  "Bewegung beugt Herzkrankheiten vor",
+                  "Neue Medikamente fuer das Herz",
+                  "Krankenhaeuser im Vergleich"
+                ],
+                "answer": "Bewegung beugt Herzkrankheiten vor"
+              },
+              {
+                "id": "B1_ex2_les_4",
+                "type": "gap-fill",
+                "question": "Vor einer Operation ___ der Arzt eine ausfuehrliche Aufklaerung durchfuehren.",
+                "options": [
+                  "muss",
+                  "musste",
+                  "muessen",
+                  "gemusst"
+                ],
+                "answer": "muss"
+              },
+              {
+                "id": "B1_ex2_les_5",
+                "type": "mcq",
+                "question": "Text: 'Im deutschen Gesundheitssystem haben Patienten die freie Arztwahl. Das bedeutet, sie koennen selbst entscheiden, zu welchem Arzt sie gehen. Allerdings ist fuer den Besuch eines Facharztes meist eine Ueberweisung vom Hausarzt erforderlich.' Wann braucht man eine Ueberweisung?",
+                "options": [
+                  "Fuer jeden Arztbesuch",
+                  "Fuer den Besuch beim Hausarzt",
+                  "Fuer den Besuch beim Facharzt",
+                  "Fuer den Notfall"
+                ],
+                "answer": "Fuer den Besuch beim Facharzt"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "B1_ex2_hor_1",
+                "type": "mcq",
+                "question": "Arzthelferin am Telefon: 'Guten Tag, Praxis Dr. Weber. Sie haben einen Termin fuer die Vorsorgeuntersuchung am Mittwoch, den 15. Juni um 10 Uhr. Bitte bringen Sie Ihre Versichertenkarte und den ausgefuellten Fragebogen mit.' Welchen Termin hat der Patient?",
+                "options": [
+                  "Montag, 13. Juni um 10 Uhr",
+                  "Dienstag, 14. Juni um 11 Uhr",
+                  "Mittwoch, 15. Juni um 10 Uhr",
+                  "Donnerstag, 16. Juni um 9 Uhr"
+                ],
+                "answer": "Mittwoch, 15. Juni um 10 Uhr"
+              },
+              {
+                "id": "B1_ex2_hor_2",
+                "type": "true-false",
+                "question": "Apotheker: 'Ihr Rezept ist fertig. Sie bekommen die Antibiotika fuer sieben Tage. Nehmen Sie bitte taeglich eine Tablette nach dem Essen. Bei Nebenwirkungen melden Sie sich bitte umgehend bei Ihrem Arzt.' Das Medikament soll vor dem Essen eingenommen werden.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex2_hor_3",
+                "type": "mcq",
+                "question": "Durchsage im Wartezimmer: 'Aufmerksamkeit bitte. Herr Schmidt, bitte gehen Sie zu Zimmer 3. Frau Mueller wartet bereits seit 15 Minuten - Frau Mueller bitte zu Zimmer 1. Und Patienten, die nur ein Rezept brauchen, wenden sich bitte an das Personal an der Anmeldung.' Wer soll zu Zimmer 3 gehen?",
+                "options": [
+                  "Frau Mueller",
+                  "Herr Schmidt",
+                  "Der Apotheker",
+                  "Der Arzt"
+                ],
+                "answer": "Herr Schmidt"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex2_sch_1",
+                "prompt": "Sie haben einen Arzttermin aus terminlichen Gruenden nicht wahrnehmen koennen. Schreiben Sie eine E-Mail an die Arztpraxis. - Entschuldigen Sie sich fuer das Nichterscheinen - Nennen Sie Datum und Uhrzeit des vereinbarten Termins - Bitten Sie um einen neuen Termin",
+                "wordLimit": 120
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 90,
+            "tasks": [
+              {
+                "id": "B1_ex2_spr_1",
+                "prompt": "Praesentation: \"Meine Erfahrungen mit dem deutschen Gesundheitssystem.\" Sprechen Sie ueber positive und negative Aspekte.",
+                "talkTime": 120
+              },
+              {
+                "id": "B1_ex2_spr_2",
+                "prompt": "Diskussion mit einem Partner: \"Sollte die Krankenversicherung auch alternative Heilmethoden wie Akupunktur oder Homoeopathie bezahlen? Vor- und Nachteile.\"",
+                "talkTime": 120
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B1_exam_3",
+        "name": "Goethe B1 Practice Exam 3 - Wohnen und Miete",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex3_les_1",
+                "type": "mcq",
+                "question": "Text: 'Die Mietpreise in deutschen Grossstaedten sind in den letzten Jahren stark gestiegen. In Muenchen, Frankfurt und Stuttgart liegt der Quadratmeterpreis fuer eine Neubauwohnung oft ueber 20 Euro. Viele Menschen ziehen deshalb ins Umland, wo die Mieten guenstiger sind.' Warum ziehen viele Menschen ins Umland?",
+                "options": [
+                  "Weil die Arbeit dort ist",
+                  "Weil die Mieten guenstiger sind",
+                  "Weil die Schulen besser sind",
+                  "Weil das Wetter besser ist"
+                ],
+                "answer": "Weil die Mieten guenstiger sind"
+              },
+              {
+                "id": "B1_ex3_les_2",
+                "type": "true-false",
+                "question": "Text: 'Bei der Wohnungssuche sollten Mieter auf folgende Punkte achten: die Hoehe der Kaution (maximal drei Nettokaltmieten), die Betriebskosten und die Kuendigungsfrist. Ein Mietvertrag muss schriftlich abgeschlossen werden.' Die Kaution darf maximal zwei Nettokaltmieten betragen.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex3_les_3",
+                "type": "heading-match",
+                "question": "Welche Ueberschrift passt? 'Wegen eines Wasserrohrbruchs muss das gesamte Treppenhaus saniert werden. Die Bauarbeiten dauern voraussichtlich zwei Wochen. Waehrend dieser Zeit kann der Aufzug nicht benutzt werden. Wir bitten um Ihr Verstaendnis. Ihre Hausverwaltung'",
+                "options": [
+                  "Aufzug defekt",
+                  "Wasserrohrbruch im Treppenhaus",
+                  "Neue Heizung eingebaut",
+                  "Balkon gesperrt"
+                ],
+                "answer": "Wasserrohrbruch im Treppenhaus"
+              },
+              {
+                "id": "B1_ex3_les_4",
+                "type": "gap-fill",
+                "question": "Der Vermieter ___ die Wohnung vor der Uebergabe noch renovieren.",
+                "options": [
+                  "lassen",
+                  "laesst",
+                  "liess",
+                  "gelassen"
+                ],
+                "answer": "laesst"
+              },
+              {
+                "id": "B1_ex3_les_5",
+                "type": "mcq",
+                "question": "Text: 'In einem Mietshaus gibt es bestimmte Regelungen. Von 22 bis 6 Uhr gilt Nachtruhe. An Sonn- und Feiertagen ist das Bohten von Teppichen und laute Musik nicht erlaubt. Haustiere brauchen die Erlaubnis des Vermieters.' Wann beginnt die Nachtruhe?",
+                "options": [
+                  "Um 20 Uhr",
+                  "Um 21 Uhr",
+                  "Um 22 Uhr",
+                  "Um 23 Uhr"
+                ],
+                "answer": "Um 22 Uhr"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "B1_ex3_hor_1",
+                "type": "mcq",
+                "question": "Makler am Telefon: 'Guten Tag, hier ist Immobilien Schmidt. Ich habe eine interessante Wohnung fuer Sie. Sie liegt im Stadtteil Schwabing, hat drei Zimmer, 75 Quadratmeter und kostet 1200 Euro warm. Die Wohnung ist ab 1. September frei. Wenn Sie Interesse haben, koennen wir morgen einen Besichtigungstermin vereinbaren.' Wann ist die Wohnung frei?",
+                "options": [
+                  "Ab 1. August",
+                  "Ab 1. September",
+                  "Ab 1. Oktober",
+                  "Ab 1. November"
+                ],
+                "answer": "Ab 1. September"
+              },
+              {
+                "id": "B1_ex3_hor_2",
+                "type": "true-false",
+                "question": "Nachbarin: 'Haben Sie auch den Brief von der Hausverwaltung gelesen? Naechste Woche wird die Heizungsanlage gewartet. Am Dienstag bleibt die Heizung von 9 bis 15 Uhr aus. Am Mittwoch sind die Handwerker noch einmal da, aber dann nur fuer zwei Stunden am Vormittag.' Am Mittwoch sind die Handwerker fuer den ganzen Tag da.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex3_hor_3",
+                "type": "mcq",
+                "question": "Vermieter: 'Ich rufe wegen der Nebenkostenabrechnung an. Sie bekommen von mir noch eine Gutschrift von 150 Euro, weil Sie im letzten Jahr weniger Heizung verbraucht haben als erwartet. Die Abrechnung lege ich Ihnen heute in den Briefkasten.' Was bekommt der Mieter vom Vermieter?",
+                "options": [
+                  "Eine Nachzahlung von 150 Euro",
+                  "Eine Gutschrift von 150 Euro",
+                  "Eine neue Heizung",
+                  "Eine Wohnungsbesichtigung"
+                ],
+                "answer": "Eine Gutschrift von 150 Euro"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex3_sch_1",
+                "prompt": "In Ihrer Wohnung ist die Heizung defekt. Schreiben Sie eine E-Mail an Ihren Vermieter. - Beschreiben Sie das Problem - Nennen Sie, seit wann die Heizung kaputt ist - Bitten Sie um schnelle Reparatur - Fragen Sie, ob ein Handwerker vorbeikommen kann",
+                "wordLimit": 120
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 90,
+            "tasks": [
+              {
+                "id": "B1_ex3_spr_1",
+                "prompt": "Praesentation: \"Meine Traumwohnung.\" Beschreiben Sie, wo die Wohnung liegt, wie sie aussieht und was Ihnen besonders wichtig ist.",
+                "talkTime": 120
+              },
+              {
+                "id": "B1_ex3_spr_2",
+                "prompt": "Diskussion mit einem Partner: \"Ist es besser, zur Miete zu wohnen oder eine eigene Wohnung zu kaufen? Vor- und Nachteile beider Moeglichkeiten.\"",
+                "talkTime": 120
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B1_exam_4",
+        "name": "Goethe B1 Practice Exam 4 - Reisen und Verkehr",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex4_les_1",
+                "type": "mcq",
+                "question": "Text: 'Die Deutsche Bahn hat ein neues Ticketmodell eingefuehrt. Das Deutschlandticket kostet 49 Euro im Monat und gilt im gesamten oeffentlichen Nahverkehr, also Bussen, Strassenbahnen, U-Bahnen und Regionalzuegen. Nicht gueltig ist es in ICE- und IC-Zuegen.' Wo gilt das Deutschlandticket NICHT?",
+                "options": [
+                  "Im Bus",
+                  "In der Strassenbahn",
+                  "Im Regionalzug",
+                  "Im ICE"
+                ],
+                "answer": "Im ICE"
+              },
+              {
+                "id": "B1_ex4_les_2",
+                "type": "true-false",
+                "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abfluege ueber Terminal 2 abgewickelt. Terminal 1 wird fuer sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abfluege sind aktuell ueber Terminal 1.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex4_les_3",
+                "type": "heading-match",
+                "question": "Welche Ueberschrift passt? 'In vielen deutschen Staedten gibt es Carsharing-Angebote. Nutzer koennen Fahrzeuge per App buchen und pro Minute oder Stunde bezahlen. Eine Studie zeigt, dass Carsharing den oeffentlichen Nahverkehr sinnvoll ergaenzt.'",
+                "options": [
+                  "Autokauf wird billiger",
+                  "Carsharing als Ergaenzung",
+                  "Fahrradfahren wird gefaehrlicher",
+                  "Neue Parkhaeuser geplant"
+                ],
+                "answer": "Carsharing als Ergaenzung"
+              },
+              {
+                "id": "B1_ex4_les_4",
+                "type": "gap-fill",
+                "question": "Der Zuge ___ um 9 Uhr 15 von Gleis 5 ab.",
+                "options": [
+                  "fahrt",
+                  "faehrt",
+                  "gefahren",
+                  "Fahrt"
+                ],
+                "answer": "faehrt"
+              },
+              {
+                "id": "B1_ex4_les_5",
+                "type": "mcq",
+                "question": "Text: 'Eine Hotelbuchung in Hamburg: Check-in ab 15 Uhr, Check-out bis 11 Uhr. Das Fruehstuecksbuffet kostet 18 Euro pro Person. Parkplaetze sind gegen Gebuehr von 12 Euro pro Tag vorhanden. Hunde sind gegen eine Gebuehr von 20 Euro pro Nacht erlaubt.' Wie viel kostet das Fruehstueck?",
+                "options": [
+                  "12 Euro pro Person",
+                  "15 Euro pro Person",
+                  "18 Euro pro Person",
+                  "20 Euro pro Person"
+                ],
+                "answer": "18 Euro pro Person"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "B1_ex4_hor_1",
+                "type": "mcq",
+                "question": "Bahnhofsdurchsage: 'Achtung, Achtung am Bahnsteig 3. Der ICE 782 nach Berlin mit Abfahrt um 14 Uhr 24 hat voraussichtlich 20 Minuten Verspaetung. Grund ist eine technische Stoerung. Wir bitten um Entschuldigung. Der folgende Regionalzug nach Frankfurt hat planmaessige Abfahrt um 14 Uhr 45 von Gleis 2.' Wie viel Verspaetung hat der ICE?",
+                "options": [
+                  "10 Minuten",
+                  "15 Minuten",
+                  "20 Minuten",
+                  "30 Minuten"
+                ],
+                "answer": "20 Minuten"
+              },
+              {
+                "id": "B1_ex4_hor_2",
+                "type": "true-false",
+                "question": "Reisebueroangestellte: 'Wir haben ein tolles Angebot fuer eine Woche an der Ostsee. Der Preis beinhaltet Hin- und Rueckfahrt mit dem Zug, sieben Uebernachtungen mit Fruehstueck und eine Stadtfuehrung. Der Aufenthalt kostet 499 Euro pro Person im Doppelzimmer.' Die Stadtfuehrung ist nicht im Preis enthalten.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex4_hor_3",
+                "type": "mcq",
+                "question": "Freundin per Sprachnachricht: 'Ich habe ein Problem mit meiner Urlaubsbuchung. Ich habe ein Hotel in Wien reserviert, aber versehentlich den falschen Reisezeitraum angegeben. Die Buchung laeuft auf den 3. bis 10. Juli, aber ich brauche den 10. bis 17. Juli. Kannst du mir helfen, die Buchung zu stornieren?' Was hat die Freundin falsch gemacht?",
+                "options": [
+                  "Den falschen Hotelnamen angegeben",
+                  "Die falsche Stadt gebucht",
+                  "Den falschen Reisezeitraum angegeben",
+                  "Die falsche Personenzahl angegeben"
+                ],
+                "answer": "Den falschen Reisezeitraum angegeben"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex4_sch_1",
+                "prompt": "Sie haben einen Urlaub gebucht, muessen aber aus persoenlichen Gruenden stornieren. Schreiben Sie eine E-Mail an das Reisebuero. - Nennen Sie Ihre Buchungsnummer und den Reisezeitraum - Erlaeutern Sie den Grund fuer die Stornierung - Fragen Sie nach den Stornierungsgebuehren und einer moeglichen Umbuchung",
+                "wordLimit": 120
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 90,
+            "tasks": [
+              {
+                "id": "B1_ex4_spr_1",
+                "prompt": "Praesentation: \"Meine letzte Reise oder mein schoenster Urlaub.\" Erzaehlen Sie, wohin die Reise ging, mit wem Sie unterwegs waren und was besonders schoen oder interessant war.",
+                "talkTime": 120
+              },
+              {
+                "id": "B1_ex4_spr_2",
+                "prompt": "Diskussion mit einem Partner: \"Sollte Fliegen teurer werden, um die Umwelt zu schonen? Vor- und Nachteile von hoheren Flugpreisen fuer die Gesellschaft.\"",
+                "talkTime": 120
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B1_exam_5",
+        "name": "Goethe B1 Practice Exam 5 - Umwelt und Medien",
+        "passScore": 60,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex5_les_1",
+                "type": "mcq",
+                "question": "Text: 'Deutschland moechte bis 2045 klimaneutral sein. Dafuer werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte koennen einen Beitrag leisten: Energiesparen, Muelltrennung und die Nutzung oeffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.' Was ist kein Beitrag zum Klimaschutz fuer Privathaushalte?",
+                "options": [
+                  "Energiesparen",
+                  "Muelltrennung",
+                  "Oeffentliche Verkehrsmittel nutzen",
+                  "Ein eigenes Auto kaufen"
+                ],
+                "answer": "Ein eigenes Auto kaufen"
+              },
+              {
+                "id": "B1_ex5_les_2",
+                "type": "true-false",
+                "question": "Text: 'In Deutschland wird Müll streng getrennt. Bioabfall kommt in die braune Tonne, Papier in die blaue Tonne, Verpackungen in die gelbe Tonne und Restmüll in die schwarze Tonne. Glas wird nach Farben getrennt in Containern gesammelt.' Glas wird in der gelben Tonne entsorgt.",
+                "answer": "false"
+              },
+              {
+                "id": "B1_ex5_les_3",
+                "type": "heading-match",
+                "question": "Welche Ueberschrift passt? 'Laut einer aktuellen Umfrage informieren sich 65 Prozent der Deutschen taeglich ueber soziale Medien ueber das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsaechlich Online-Nachrichten.'",
+                "options": [
+                  "Fernsehen wird beliebter",
+                  "Junge Menschen lesen mehr Buecher",
+                  "Soziale Medien als Hauptnachrichtenquelle",
+                  "Zeitungen im Aufschwung"
+                ],
+                "answer": "Soziale Medien als Hauptnachrichtenquelle"
+              },
+              {
+                "id": "B1_ex5_les_4",
+                "type": "gap-fill",
+                "question": "Um die Umwelt zu schuetzen, ___ wir weniger Plastik verwenden.",
+                "options": [
+                  "sollte",
+                  "sollten",
+                  "sollen",
+                  "soll"
+                ],
+                "answer": "sollten"
+              },
+              {
+                "id": "B1_ex5_les_5",
+                "type": "mcq",
+                "question": "Text: 'Fake News sind ein wachsendes Problem im Internet. Eine Studie zeigt, dass sich falsche Informationen viel schneller verbreiten als wahre Nachrichten. Experten empfehlen, Nachrichten immer kritisch zu pruefen und verschiedene Quellen zu vergleichen, bevor man sie weiterleitet.' Was empfehlen Experten?",
+                "options": [
+                  "Gar keine Nachrichten mehr zu lesen",
+                  "Nachrichten kritisch zu pruefen",
+                  "Nur soziale Medien zu nutzen",
+                  "Fake News zu ignorieren"
+                ],
+                "answer": "Nachrichten kritisch zu pruefen"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 25,
+            "tasks": [
+              {
+                "id": "B1_ex5_hor_1",
+                "type": "mcq",
+                "question": "Radiomeldung: 'In dieser Woche startet die Stadt Frankfurt eine neue Umweltkampagne. Buergerinnen und Buerger sind aufgerufen, an einer Baumpflanzaktion im Stadtpark teilzunehmen. Die Aktion findet am Samstag, den 20. Mai von 10 bis 16 Uhr statt. Werkzeug und Setzlinge werden kostenlos zur Verfuegung gestellt.' Wann findet die Baumpflanzaktion statt?",
+                "options": [
+                  "Am Freitag, den 19. Mai",
+                  "Am Samstag, den 20. Mai",
+                  "Am Sonntag, den 21. Mai",
+                  "Am Montag, den 22. Mai"
+                ],
+                "answer": "Am Samstag, den 20. Mai"
+              },
+              {
+                "id": "B1_ex5_hor_2",
+                "type": "true-false",
+                "question": "Radiointerview: 'Unser Gast ist Frau Dr. Hoffmann von der Umweltbehoerde. Sie erklaert: Seit Einfuehrung des Pfandsystems auf Einwegflaschen ist der Anteil der recycelten Flaschen von 72 auf 94 Prozent gestiegen. Das zeigt, dass finanzielle Anreize wirken.' Das Pfandsystem hat das Recycling von Flaschen verbessert.",
+                "answer": "true"
+              },
+              {
+                "id": "B1_ex5_hor_3",
+                "type": "mcq",
+                "question": "Fernsehbericht: 'Eine neue App fuer Buergermeldungen erobert die deutschen Stadte. Mit der App koennen Buerger Schlaglocher, kaputte Strassenlaternen oder illegale Müllablagerungen direkt ans Ordnungsamt melden. In Berlin wurde die App bereits 50.000 Mal genutzt.' Wofuer kann die App genutzt werden?",
+                "options": [
+                  "Fuer Restaurantbewertungen",
+                  "Fuer die Meldung von Stadte-Problemen",
+                  "Fuer die Buchung von oeffentlichen Verkehrsmitteln",
+                  "Fuer die Bezahlung von Steuern"
+                ],
+                "answer": "Fuer die Meldung von Stadte-Problemen"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 45,
+            "tasks": [
+              {
+                "id": "B1_ex5_sch_1",
+                "prompt": "In Ihrer Stadt soll ein neues Einkaufszentrum auf einem bisherigen Park gebaut werden. Schreiben Sie einen Leserbrief an die lokale Zeitung. - Nennen Sie Ihre Meinung zu dem Projekt - Geben Sie Gruende fuer Ihre Meinung - Machen Sie einen Alternativvorschlag",
+                "wordLimit": 120
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 90,
+            "tasks": [
+              {
+                "id": "B1_ex5_spr_1",
+                "prompt": "Praesentation: \"Was ich fuer die Umwelt tue.\" Beschreiben Sie, welche Massnahmen Sie in Ihrem Alltag umsetzen und was man noch verbessern koennte.",
+                "talkTime": 120
+              },
+              {
+                "id": "B1_ex5_spr_2",
+                "prompt": "Diskussion mit einem Partner: \"Soziale Medien: Fluch oder Segen fuer die Gesellschaft? Sprechen Sie ueber die Vor- und Nachteile von Plattformen wie Instagram, TikTok und Facebook.\"",
+                "talkTime": 120
+              }
+            ]
+          }
         }
       }
-    },
+    ],
     "B2": {
       "id": "exam_B2",
       "name": "Goethe B2 Practice Exam",
