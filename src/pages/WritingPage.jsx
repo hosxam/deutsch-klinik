@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { getState, updateState } from '../utils/store';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
-import { Copy, ClipboardCheck } from 'lucide-react';
+import { Copy, ClipboardCheck, Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle } from 'lucide-react';
+import { correctWriting, isCorrectionEnabled } from '../utils/aiCorrection';
 
 export default function WritingPage() {
   const { levelId } = useParams();
@@ -16,6 +17,9 @@ export default function WritingPage() {
   const [pastWritings, setPastWritings] = useState([]);
   const [showAiPrompt, setShowAiPrompt] = useState(false);
   const [aiCopied, setAiCopied] = useState(false);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState('');
+  const [aiResult, setAiResult] = useState(null);
 
   const prompt = prompts[currentIndex];
 
@@ -89,8 +93,144 @@ export default function WritingPage() {
         </div>
 
         {/* AI Correction section */}
-        <div className="mt-4">
-          <button onClick={() => setShowAiPrompt(!showAiPrompt)} className="text-xs px-3 py-1.5 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
+        <div className="mt-6">
+          {/* AI Correction button */}
+          {isCorrectionEnabled() ? (
+            <button
+              onClick={async () => {
+                setAiLoading(true);
+                setAiError('');
+                setAiResult(null);
+                try {
+                  const result = await correctWriting({
+                    level: levelId,
+                    task: prompt.prompt,
+                    userAnswer: text,
+                  });
+                  setAiResult(result);
+                } catch (err) {
+                  setAiError(err.message);
+                } finally {
+                  setAiLoading(false);
+                }
+              }}
+              disabled={aiLoading}
+              className="w-full py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
+              style={{ backgroundColor: '#8b5cf6', color: '#fff', opacity: aiLoading ? 0.7 : 1 }}
+            >
+              {aiLoading ? (
+                <><Loader2 size={18} className="animate-spin" /> Analyzing...</>
+              ) : (
+                <><Sparkles size={18} /> Get AI Correction</>
+              )}
+            </button>
+          ) : (
+            <div className="rounded-xl p-4 mb-3 text-sm" style={{ backgroundColor: 'rgba(251,191,36,0.1)', border: '1px solid #fbbf24' }}>
+              <p className="flex items-center gap-2" style={{ color: '#fbbf24' }}>
+                <AlertCircle size={16} />
+                Live AI correction is not configured yet. Use Copy Prompt instead.
+              </p>
+            </div>
+          )}
+
+          {/* AI Error */}
+          {aiError && (
+            <div className="rounded-xl p-4 mb-3 text-sm" style={{ backgroundColor: 'rgba(255,51,85,0.1)', border: '1px solid #ff3355' }}>
+              <p className="flex items-center gap-2" style={{ color: '#ff3355' }}>
+                <XCircle size={16} />
+                {aiError}
+              </p>
+            </div>
+          )}
+
+          {/* AI Result Panel */}
+          {aiResult && (
+            <div className="rounded-xl p-5 mb-4 text-left" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid #8b5cf6' }}>
+              {/* Score */}
+              {aiResult.score !== null && (
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-3xl font-bold" style={{ color: aiResult.score >= 7 ? '#3bff9e' : aiResult.score >= 4 ? '#fbbf24' : '#ff3355' }}>
+                    {aiResult.score}/10
+                  </div>
+                  <div className="text-sm" style={{ color: 'var(--text-secondary)' }}>Overall Score</div>
+                </div>
+              )}
+
+              {/* Rubric */}
+              {aiResult.rubric && (
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2" style={{ color: '#8b5cf6' }}>Rubric Breakdown</h4>
+                  <div className="space-y-1.5">
+                    {Object.entries(aiResult.rubric).map(([key, val]) => (
+                      <div key={key} className="text-xs p-2 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                        <span className="font-medium capitalize" style={{ color: 'var(--accent)' }}>{key.replace(/([A-Z])/g, ' $1').trim()}:</span>{' '}
+                        <span style={{ color: 'var(--text-secondary)' }}>{val}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Mistakes */}
+              {aiResult.mistakes.length > 0 && (
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-2" style={{ color: '#ff3355' }}>Mistakes ({aiResult.mistakes.length})</h4>
+                  <div className="space-y-2">
+                    {aiResult.mistakes.map((m, i) => (
+                      <div key={i} className="text-xs p-3 rounded-lg" style={{ backgroundColor: 'rgba(255,51,85,0.06)' }}>
+                        <div className="flex items-start gap-2">
+                          <span className="line-through" style={{ color: '#ff3355' }}>{m.original}</span>
+                          <CheckCircle2 size={14} className="mt-0.5" style={{ color: '#3bff9e' }} />
+                          <span style={{ color: '#3bff9e' }}>{m.corrected}</span>
+                        </div>
+                        {m.explanation && (
+                          <div className="mt-1" style={{ color: 'var(--text-muted)' }}>{m.explanation}</div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Corrected Version */}
+              {aiResult.correctedVersion && (
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-1" style={{ color: '#3bff9e' }}>Corrected Version</h4>
+                  <div className="text-sm p-3 rounded-lg whitespace-pre-wrap" style={{ backgroundColor: 'rgba(59,255,158,0.06)', color: 'var(--text-primary)' }}>
+                    {aiResult.correctedVersion}
+                  </div>
+                </div>
+              )}
+
+              {/* Improved Version */}
+              {aiResult.improvedVersion && (
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold mb-1" style={{ color: '#8b5cf6' }}>Improved Version</h4>
+                  <div className="text-sm p-3 rounded-lg whitespace-pre-wrap" style={{ backgroundColor: 'rgba(139,92,246,0.06)', color: 'var(--text-primary)' }}>
+                    {aiResult.improvedVersion}
+                  </div>
+                </div>
+              )}
+
+              {/* Flashcards */}
+              {aiResult.flashcards.length > 0 && (
+                <div>
+                  <h4 className="text-sm font-semibold mb-2" style={{ color: 'var(--accent)' }}>Flashcards from Mistakes ({aiResult.flashcards.length})</h4>
+                  <div className="space-y-1.5">
+                    {aiResult.flashcards.map((fc, i) => (
+                      <div key={i} className="text-xs p-3 rounded-lg flex justify-between" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                        <span style={{ color: 'var(--accent)' }}>{fc.front}</span>
+                        <span style={{ color: 'var(--text-secondary)' }}>{fc.back}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Copy prompt (existing fallback) */}
+          <button onClick={() => setShowAiPrompt(!showAiPrompt)} className="text-xs px-3 py-1.5 rounded-lg mt-2" style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
             {showAiPrompt ? 'Hide' : 'Copy prompt for AI correction'}
           </button>
           {showAiPrompt && (
