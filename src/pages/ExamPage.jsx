@@ -344,7 +344,17 @@ export default function ExamPage() {
     if (sectionKey === 'Schreiben') {
       return (
         <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-          <p className="text-sm mb-4">{tasks[0]?.prompt || 'Writing task'}</p>
+          <p className="text-sm mb-2">{tasks[0]?.prompt || 'Writing task'}</p>
+          <div className="text-xs mb-4 p-3 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}>
+            <div className="font-semibold mb-1" style={{ color: 'var(--accent)' }}>Checklist</div>
+            <ul className="space-y-0.5 list-disc pl-4">
+              <li>Answer the task fully</li>
+              <li>Use simple correct sentences</li>
+              <li>Include greeting and closing if it is a message/email</li>
+              <li>Stay near the word limit</li>
+              <li>Check verb position and capitalization</li>
+            </ul>
+          </div>
           <textarea className="w-full h-48 p-4 rounded-lg text-sm outline-none resize-none"
             style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
             placeholder="Write your response..."
@@ -362,7 +372,17 @@ export default function ExamPage() {
       <div className="space-y-4">
         {tasks.map(task => (
           <div key={task.id} className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-            <p className="text-sm mb-3">{task.question}</p>
+            <p className="text-sm mb-3">{task.prompt || task.question}</p>
+            {task.talkTime && (
+              <p className="text-xs mb-2" style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                Talk time: ~{task.talkTime} seconds
+              </p>
+            )}
+            {sectionKey === 'Sprechen' && (
+              <p className="text-xs mb-2 p-2 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-secondary)' }}>
+                {task.instructions || 'Prepare briefly, then speak in simple German.'}
+              </p>
+            )}
             {renderTaskButtons(task)}
           </div>
         ))}
