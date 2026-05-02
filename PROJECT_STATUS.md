@@ -94,7 +94,8 @@ These are strict and must be followed for all future content generation:
 | **Grammar Exercises** | Topic-filtered MCQ exercises with explanations |
 | **Reading Exercises** | Goethe-style texts with comprehension questions (MCQ + true-false) |
 | **Listening Exercises** | TTS-based audio playback with voice selector, comprehension questions |
-| **Writing Prompts** | Timed writing with rubric, AI correction copy-to-clipboard button |
+| **Writing Prompts** | Timed writing with rubric, AI correction (live via Groq API proxied through Cloudflare Worker), plus copy-prompt fallback |
+| **AI Writing Correction** | Live via Cloudflare Worker endpoint at `deutsch-klinik-ai-correction.deutsch-klinik.workers.dev`, using Groq API (secret stored as `GROQ_API_KEY` environment variable, never in code). Frontend reads `VITE_AI_CORRECTION_ENDPOINT` from `.env.local` at build time. Shows score/10, rubric breakdown, mistakes table, corrected version, improved version, and flashcards from mistakes. Falls back gracefully to the copy-prompt workflow when endpoint is not configured. |
 | **Speaking Prompts** | Timed speaking with preparation phase, tip section, useful phrases |
 | **Exams** | Multi-exam support for A1 (5 exams), exam selector screen with Lesen/Hören/Schreiben/Sprechen sections |
 | **Mistake Notebook** | Filterable by skill/level, mark mastered, SM-2 spaced review |
@@ -151,11 +152,11 @@ These are strict and must be followed for all future content generation:
 
 ## 7. Build / Deploy Status
 
-- **Last confirmed build:** Passed (2026-05-02)
-- **Latest bundle hash:** `index-BN73CJqF.js`
-- **Bundle size:** ~2,222 KB JS / 510 KB gzipped
+- **Last confirmed build:** Passed (2026-05-03)
+- **Latest bundle hash:** `index-B_raImpq.js`
+- **Bundle size:** ~2,222 KB JS / ~510 KB gzipped
 - **Deployment method:** `npm run deploy` (builds then pushes dist/ to gh-pages branch)
-- **CDN caveat:** GitHub Pages CDN may take 1-2 minutes to propagate new bundle. Hard refresh (Ctrl+F5) usually resolves stale cache.
+- **CDN caveat:** GitHub Pages CDN may take 1-2 minutes to propagate new bundle (test with raw.githubusercontent.com/gh-pages to confirm actual content).
 - **No code splitting:** Monolithic bundle kept intentionally; Vite 8 Rolldown chunk hash mismatches caused 404 errors on GitHub Pages during code-split attempt.
 - **Build command:** `npx vite build`
 
