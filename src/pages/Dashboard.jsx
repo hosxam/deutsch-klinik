@@ -135,8 +135,8 @@ export default function Dashboard() {
     const today = new Date().toISOString().split('T')[0];
     return items.some(item => {
       if (typeof item === 'string') return item.startsWith(today);
-      if (item.date) return item.date.startsWith(today);
-      return false;
+      const dateValue = item.date || item.completedAt || item.timestamp || item.createdAt;
+      return dateValue && String(dateValue).startsWith(today);
     });
   };
 

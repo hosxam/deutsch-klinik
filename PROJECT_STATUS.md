@@ -36,7 +36,7 @@
 | Speaking | 70 prompts |
 | Exams | 5 full Goethe-style practice exams |
 
-### B1 (Partially Complete)
+### B1 (Complete)
 | Area | Count | Status |
 |------|-------|--------|
 | Lessons | 25 | Done |
@@ -46,7 +46,7 @@
 | Listening | 60 | Done |
 | Writing | 50 | Done |
 | Speaking | 50 | Done |
-| Exams | 1 dict | Incomplete, needs 5 |
+| Exams | 5 full Goethe-style exams | Done |
 
 ### B2 (Placeholder)
 All content is original shell/fake data. Needs full expansion.
@@ -159,14 +159,28 @@ These are strict and must be followed for all future content generation:
 - **No code splitting:** Monolithic bundle kept intentionally; Vite 8 Rolldown chunk hash mismatches caused 404 errors on GitHub Pages during code-split attempt.
 - **Build command:** `npx vite build`
 
-## 8. Cleanup Status
+## 8. Recent Fixes (2026-05-02)
+
+### Dashboard Daily Task Reset
+- `checkTodayActivity` hardened to check `entry.date || entry.completedAt || entry.timestamp || entry.createdAt` against today's date
+- Ensures tasks like grammar/vocab reset daily instead of staying completed forever
+- Verified all skill pages (Grammar, Vocabulary, Reading, Listening, Writing, Speaking) write `{ date: new Date().toISOString(), ... }` into `state.levels[level][key]` arrays, matching `checkTodayActivity`
+
+### B1 Exam Status Correction
+- PROJECT_STATUS.md was wrong: B1 already has 5 full Goethe-style exams, not 1 dict
+- All 5 B1 exams have Lesen (5 tasks), Horen (3 tasks), Schreiben (1 prompt), Sprechen (2 parts)
+- Themes: Arbeit und Bildung, Gesundheit und Versicherung, Wohnen und Miete, Reisen und Verkehr, Umwelt und Medien
+- ExamPage.jsx already handles multi-exam arrays for all levels via `Array.isArray()` detection
+
+## 9. Cleanup Status
 
 - **Temporary Python/JS scripts in project root:** DELETED (all `_prefix` and `check_*` files removed)
 - **Scripts directory preserved:** Tools in `scripts/` remain (batch generators, audit tools, format validators)
-- **Backup chain files (`.pre_batch`, `.batch2`-`.batch7`):** May still exist. These are backup snapshots of germanVocabulary.json at various stages. Do not delete unless intentionally cleaning backups.
+- **Backup chain files (`.pre_batch`, `.batch2`-`.batch7`):** All deleted (2026-05-02). Leftover from vocabulary batch expansion; caused FSP duplicate ID issues.
+- **FSP batch files (fspListening_batch5.json, fspListening_batch5_part2.json, fspReading-batch5.json, fspWritingBatch1.mjs):** All deleted. These contained 42 duplicate IDs overlapping main FSP data files.
 - **No other cleanup needed**
 
-## 9. Medical FSP Module (Complete as of 2026-05-02)
+## 10. Medical FSP Module (Complete as of 2026-05-02)
 
 ### FSP Hub Route
 - **Path:** `#/medical-fsp` -> `MedicalFSPHubPage.jsx`
@@ -233,10 +247,10 @@ Each exam includes:
 | `fspGrammar.json` | id, topic, question, options, answer, explanation |
 | `fspExams.json` | id, title, case, part1_patientConversation, part2_documentation, part3_doctorDoctorConversation, terminology, rubric, tags |
 
-## 10. B1 Details (as of 2026-05-01)
+## 11. B1 Details (as of 2026-05-02)
 
 ### B1 Incomplete Items
-- **Exams:** 1 dict (needs expansion to 5 full practice exams)
+- **Exams:** None. 5 full Goethe-style practice exams, all with Lesen (5), Horen (3), Schreiben (1), Sprechen (2)
 
 ### B1 Vocabulary
 - **Total entries:** 679
