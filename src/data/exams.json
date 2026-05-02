@@ -1837,132 +1837,638 @@
         }
       }
     ],
-    "B2": {
-      "id": "exam_B2",
-      "name": "Goethe B2 Practice Exam",
-      "passScore": 75,
-      "sections": {
-        "Lesen": {
-          "timeLimit": 60,
-          "tasks": [
-            {
-              "id": "B2_ex_lesen_1",
-              "type": "mcq",
-              "question": "Text: 'Die Debatte um die Bürgerversicherung wird hitzig geführt. Während Befürworter mehr Solidarität im System fordern, warnen Gegner vor Einheitsmedizin und langen Wartezeiten.' Welche Position wird im Text dargestellt?",
-              "options": [
-                "Nur die Befürworter",
-                "Nur die Gegner",
-                "Beide Positionen",
-                "Eine neutrale Position"
-              ],
-              "answer": "Beide Positionen"
-            },
-            {
-              "id": "B2_ex_lesen_2",
-              "type": "true-false",
-              "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
-              "answer": "true"
-            },
-            {
-              "id": "B2_ex_lesen_3",
-              "type": "opinion-match",
-              "question": "Text: 'Der Autor argumentiert, dass die Digitalisierung im Gesundheitswesen nicht nur Chancen, sondern auch Risiken birgt. Der Datenschutz müsse oberste Priorität haben.' Was ist die Hauptaussage des Autors?",
-              "options": [
-                "Digitalisierung ist immer positiv",
-                "Datenschutz ist bei Digitalisierung entscheidend",
-                "Digitalisierung ist zu teuer",
-                "Digitalisierung sollte verboten werden"
-              ],
-              "answer": "Datenschutz ist bei Digitalisierung entscheidend"
-            },
-            {
-              "id": "B2_ex_lesen_4",
-              "type": "mcq",
-              "question": "Text: 'Die Zulassung als Facharzt für Orthopädie und Unfallchirurgie setzt eine mindestens sechsjährige Weiterbildungszeit voraus.' Wie lange dauert die Weiterbildung?",
-              "options": [
-                "4 Jahre",
-                "5 Jahre",
-                "6 Jahre",
-                "7 Jahre"
-              ],
-              "answer": "6 Jahre"
-            },
-            {
-              "id": "B2_ex_lesen_5",
-              "type": "gap-fill",
-              "question": "Die Studie zeigt, dass ___ Maßnahmen dringend erforderlich sind.",
-              "options": [
-                "weitreichende",
-                "weitreichender",
-                "weitreichenden",
-                "weitreichend"
-              ],
-              "answer": "weitreichende"
-            }
-          ]
-        },
-        "Hören": {
-          "timeLimit": 30,
-          "tasks": [
-            {
-              "id": "B2_ex_horen_1",
-              "type": "mcq",
-              "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Frauen sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?",
-              "options": [
-                "Männer",
-                "Frauen",
-                "Kinder",
-                "Junge Erwachsene"
-              ],
-              "answer": "Frauen"
-            },
-            {
-              "id": "B2_ex_horen_2",
-              "type": "true-false",
-              "question": "Diskussion: 'Kritiker der Schulmedizin argumentieren, dass Naturheilverfahren zu wenig erforscht sind.' Kritiker finden Naturheilverfahren gut erforscht.",
-              "answer": "false"
-            },
-            {
-              "id": "B2_ex_horen_3",
-              "type": "mcq",
-              "question": "Interview: 'Professor Müller von der Charité erklärt, dass die roboterassistierte Chirurgie die Präzision erhöht, aber auch teurer ist.' Was ist ein Nachteil der roboterassistierten Chirurgie?",
-              "options": [
-                "Weniger präzise",
-                "Höhere Kosten",
-                "Längere OP-Zeiten",
-                "Mehr Komplikationen"
-              ],
-              "answer": "Höhere Kosten"
-            }
-          ]
-        },
-        "Schreiben": {
-          "timeLimit": 60,
-          "tasks": [
-            {
-              "id": "B2_ex_schreiben_1",
-              "prompt": "In einem Fachforum wird die Frage diskutiert: 'Sollten Ärzte verpflichtet werden, regelmäßig an Fortbildungen teilzunehmen?' Schreiben Sie Ihre Stellungnahme (ca. 200 Wörter).",
-              "wordLimit": 200
-            }
-          ]
-        },
-        "Sprechen": {
-          "prepTime": 120,
-          "tasks": [
-            {
-              "id": "B2_ex_sprech_1",
-              "prompt": "Halten Sie einen Vortrag über 'Die Bedeutung der Frührehabilitation nach orthopädischen Eingriffen.'",
-              "talkTime": 180
-            },
-            {
-              "id": "B2_ex_sprech_2",
-              "prompt": "Diskutieren Sie: 'Sollte die Klinik, in der Sie arbeiten, mehr in Prävention investieren?'",
-              "talkTime": 180
-            }
-          ]
+    "B2": [
+      {
+        "id": "exam_B2",
+        "name": "Goethe B2 Practice Exam",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_lesen_1",
+                "type": "mcq",
+                "question": "Text: 'Die Debatte um die Bürgerversicherung wird hitzig geführt. Während Befürworter mehr Solidarität im System fordern, warnen Gegner vor Einheitsmedizin und langen Wartezeiten.' Welche Position wird im Text dargestellt?",
+                "options": [
+                  "Nur die Befürworter",
+                  "Nur die Gegner",
+                  "Beide Positionen",
+                  "Eine neutrale Position"
+                ],
+                "answer": "Beide Positionen"
+              },
+              {
+                "id": "B2_ex_lesen_2",
+                "type": "true-false",
+                "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
+                "answer": "true"
+              },
+              {
+                "id": "B2_ex_lesen_3",
+                "type": "opinion-match",
+                "question": "Text: 'Der Autor argumentiert, dass die Digitalisierung im Gesundheitswesen nicht nur Chancen, sondern auch Risiken birgt. Der Datenschutz müsse oberste Priorität haben.' Was ist die Hauptaussage des Autors?",
+                "options": [
+                  "Digitalisierung ist immer positiv",
+                  "Datenschutz ist bei Digitalisierung entscheidend",
+                  "Digitalisierung ist zu teuer",
+                  "Digitalisierung sollte verboten werden"
+                ],
+                "answer": "Datenschutz ist bei Digitalisierung entscheidend"
+              },
+              {
+                "id": "B2_ex_lesen_4",
+                "type": "mcq",
+                "question": "Text: 'Die Zulassung als Facharzt für Orthopädie und Unfallchirurgie setzt eine mindestens sechsjährige Weiterbildungszeit voraus.' Wie lange dauert die Weiterbildung?",
+                "options": [
+                  "4 Jahre",
+                  "5 Jahre",
+                  "6 Jahre",
+                  "7 Jahre"
+                ],
+                "answer": "6 Jahre"
+              },
+              {
+                "id": "B2_ex_lesen_5",
+                "type": "gap-fill",
+                "question": "Die Studie zeigt, dass ___ Maßnahmen dringend erforderlich sind.",
+                "options": [
+                  "weitreichende",
+                  "weitreichender",
+                  "weitreichenden",
+                  "weitreichend"
+                ],
+                "answer": "weitreichende"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "B2_ex_horen_1",
+                "type": "mcq",
+                "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Frauen sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?",
+                "options": [
+                  "Männer",
+                  "Frauen",
+                  "Kinder",
+                  "Junge Erwachsene"
+                ],
+                "answer": "Frauen"
+              },
+              {
+                "id": "B2_ex_horen_2",
+                "type": "true-false",
+                "question": "Diskussion: 'Kritiker der Schulmedizin argumentieren, dass Naturheilverfahren zu wenig erforscht sind.' Kritiker finden Naturheilverfahren gut erforscht.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_horen_3",
+                "type": "mcq",
+                "question": "Interview: 'Professor Müller von der Charité erklärt, dass die roboterassistierte Chirurgie die Präzision erhöht, aber auch teurer ist.' Was ist ein Nachteil der roboterassistierten Chirurgie?",
+                "options": [
+                  "Weniger präzise",
+                  "Höhere Kosten",
+                  "Längere OP-Zeiten",
+                  "Mehr Komplikationen"
+                ],
+                "answer": "Höhere Kosten"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_schreiben_1",
+                "prompt": "In einem Fachforum wird die Frage diskutiert: 'Sollten Ärzte verpflichtet werden, regelmäßig an Fortbildungen teilzunehmen?' Schreiben Sie Ihre Stellungnahme (ca. 200 Wörter).",
+                "wordLimit": 200
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "B2_ex_sprech_1",
+                "prompt": "Halten Sie einen Vortrag über 'Die Bedeutung der Frührehabilitation nach orthopädischen Eingriffen.'",
+                "talkTime": 180
+              },
+              {
+                "id": "B2_ex_sprech_2",
+                "prompt": "Diskutieren Sie: 'Sollte die Klinik, in der Sie arbeiten, mehr in Prävention investieren?'",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B2_exam_02",
+        "name": "Goethe B2 Practice Exam 2 - Digital Healthcare & Communication",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_l2_1",
+                "type": "mcq",
+                "question": "Text: 'Die Telemedizin hat in den letzten Jahren stark zugenommen. Besonders in ländlichen Regionen ermöglicht sie eine bessere medizinische Versorgung. Allerdings fehlt vielen älteren Patienten der Zugang zu digitalen Endgeräten.' Welche Aussage trifft auf den Text zu?",
+                "options": [
+                  "Telemedizin wird nur in Städten genutzt",
+                  "Telemedizin hilft besonders auf dem Land",
+                  "Ältere Patienten haben alle digitalen Zugang",
+                  "Telemedizin ist gesetzlich verboten"
+                ],
+                "answer": "Telemedizin hilft besonders auf dem Land"
+              },
+              {
+                "id": "B2_ex_l2_2",
+                "type": "true-false",
+                "question": "Text: 'Patientenverfügungen geben dem Patienten das Recht, medizinische Behandlungen abzulehnen. Sie müssen schriftlich verfasst und von einem Zeugen unterschrieben werden.' Eine Patientenverfügung kann auch mündlich gültig sein.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_l2_3",
+                "type": "mcq",
+                "question": "Text: 'Eine Studie des Robert Koch-Instituts zeigt, dass die Zahl der Krankenhausinfektionen durch gezielte Hygienemaßnahmen um 30 Prozent gesenkt werden konnte. Besonders wirksam waren Schulungen des Pflegepersonals.' Wie wurden die Infektionen reduziert?",
+                "options": [
+                  "Durch neue Medikamente",
+                  "Durch Hygienemaßnahmen und Schulungen",
+                  "Durch mehr Personal",
+                  "Durch kürzere Aufenthalte"
+                ],
+                "answer": "Durch Hygienemaßnahmen und Schulungen"
+              },
+              {
+                "id": "B2_ex_l2_4",
+                "type": "opinion-match",
+                "question": "Text: 'Der Chefarzt betont in seiner Rede: Eine offene Kommunikation zwischen Ärzten und Pflegekräften ist der Schlüssel zur Patientensicherheit. Hierarchisches Denken gefährdet dagegen die Behandlungsqualität.' Was ist die Hauptaussage des Chefarztes?",
+                "options": [
+                  "Hierarchien sind wichtig für die Klinik",
+                  "Offene Kommunikation verbessert die Patientensicherheit",
+                  "Pflegekräfte sollten mehr Entscheidungen treffen",
+                  "Ärzte sind für die Sicherheit allein verantwortlich"
+                ],
+                "answer": "Offene Kommunikation verbessert die Patientensicherheit"
+              },
+              {
+                "id": "B2_ex_l2_5",
+                "type": "gap-fill",
+                "question": "Die Dokumentation der Behandlung muss ___ erfolgen, um rechtlichen Anforderungen zu genügen.",
+                "options": [
+                  "vollständig und zeitnah",
+                  "vollständige und zeitnahe",
+                  "vollständiger und zeitnaher",
+                  "vollständiges und zeitnahes"
+                ],
+                "answer": "vollständig und zeitnah"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "B2_ex_h2_1",
+                "type": "mcq",
+                "question": "Durchsage: 'Die elektronische Patientenakte wird ab dem 1. Januar für alle gesetzlich Versicherten eingeführt. Patienten können der Nutzung widersprechen. Die Daten werden verschlüsselt gespeichert.' Wann wird die elektronische Patientenakte eingeführt?",
+                "options": [
+                  "Am 1. Dezember",
+                  "Am 1. Januar",
+                  "Am 1. Februar",
+                  "Am 1. März"
+                ],
+                "answer": "Am 1. Januar"
+              },
+              {
+                "id": "B2_ex_h2_2",
+                "type": "true-false",
+                "question": "Ansprache: 'Das Qualitätsmanagement in unserer Klinik wird regelmäßig überprüft. In diesem Jahr liegt der Fokus auf der Reduzierung von Wartezeiten in der Notaufnahme.' Im Fokus steht die Verbesserung der Operationsabläufe.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_h2_3",
+                "type": "mcq",
+                "question": "Patientenberatung: 'Nach Ihrer Knieoperation sollten Sie mindestens sechs Wochen eine Thromboseprophylaxe durchführen. Das bedeutet tägliche Spritzen und regelmäßiges Bewegen des Beins. Vermeiden Sie in den ersten zwei Wochen langes Sitzen.' Wie lange dauert die Thromboseprophylaxe mindestens?",
+                "options": [
+                  "Zwei Wochen",
+                  "Vier Wochen",
+                  "Sechs Wochen",
+                  "Acht Wochen"
+                ],
+                "answer": "Sechs Wochen"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_w2_1",
+                "prompt": "In einem Online-Forum für medizinisches Fachpersonal wird diskutiert: 'Wie kann die Kommunikation zwischen verschiedenen Berufsgruppen im Krankenhaus verbessert werden?' Schreiben Sie Ihre Stellungnahme (ca. 200 Wörter). Gehen Sie auf konkrete Maßnahmen wie Teambesprechungen, digitale Kommunikationsmittel und Feedback-Kultur ein.",
+                "wordLimit": 200
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "B2_ex_s2_1",
+                "prompt": "Halten Sie einen Vortrag über 'Die Rolle der Patientensicherheit im klinischen Alltag.' Gehen Sie auf Risikofaktoren, Maßnahmen zur Verbesserung und Ihre eigenen Erfahrungen ein.",
+                "talkTime": 180
+              },
+              {
+                "id": "B2_ex_s2_2",
+                "prompt": "Diskutieren Sie: 'Sollten alle Arztpraxen verpflichtet sein, Videosprechstunden anzubieten?' Nennen Sie Vor- und Nachteile und begründen Sie Ihre Meinung.",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B2_exam_03",
+        "name": "Goethe B2 Practice Exam 3 - Public Health & Prevention",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_l3_1",
+                "type": "mcq",
+                "question": "Text: 'Feinstaubbelastung in deutschen Städten ist ein wachsendes Gesundheitsrisiko. Studien belegen einen Zusammenhang zwischen hoher Feinstaubkonzentration und Atemwegserkrankungen. Besonders gefährdet sind Kinder und ältere Menschen.' Welche Bevölkerungsgruppe ist besonders gefährdet?",
+                "options": [
+                  "Junge Erwachsene",
+                  "Sportler",
+                  "Kinder und ältere Menschen",
+                  "Menschen auf dem Land"
+                ],
+                "answer": "Kinder und ältere Menschen"
+              },
+              {
+                "id": "B2_ex_l3_2",
+                "type": "true-false",
+                "question": "Text: 'Die gesetzlichen Krankenkassen bieten inzwischen viele Präventionskurse an. Dazu gehören Rückenkurse, Ernährungsberatung und Stressbewältigung. Versicherte erhalten einen Zuschuss von bis zu 150 Euro pro Kurs.' Präventionskurse werden von den Krankenkassen komplett bezahlt.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_l3_3",
+                "type": "mcq",
+                "question": "Text: 'Impfungen gehören zu den wirksamsten Maßnahmen der öffentlichen Gesundheit. Die Ständige Impfkommission empfiehlt die Grippeschutzimpfung für Risikogruppen. Die Durchimpfungsrate in Deutschland liegt jedoch unter dem europäischen Durchschnitt.' Was wird über die Grippeschutzimpfung gesagt?",
+                "options": [
+                  "Sie wird von allen gemacht",
+                  "Sie wird nur für Risikogruppen empfohlen",
+                  "Sie ist in Deutschland Pflicht",
+                  "Sie ist unwirksam"
+                ],
+                "answer": "Sie wird nur für Risikogruppen empfohlen"
+              },
+              {
+                "id": "B2_ex_l3_4",
+                "type": "gap-fill",
+                "question": "Präventionsmaßnahmen im Betrieb können dazu beitragen, krankheitsbedingte ___ zu reduzieren.",
+                "options": [
+                  "Ausfallzeiten",
+                  "Ausfallzeite",
+                  "Ausfallzeit",
+                  "Ausfallzeitens"
+                ],
+                "answer": "Ausfallzeiten"
+              },
+              {
+                "id": "B2_ex_l3_5",
+                "type": "opinion-match",
+                "question": "Text: 'Eine Expertin fordert: Statt immer mehr Medikamente zu verschreiben, sollte die Gesundheitspolitik viel stärker auf Prävention setzen. Bewegung, gesunde Ernährung und Stressabbau sind die besten Medikamente unserer Zeit.' Was ist die Hauptforderung der Expertin?",
+                "options": [
+                  "Mehr Medikamente verschreiben",
+                  "Weniger Bewegung im Alltag",
+                  "Mehr Prävention statt Medikamente",
+                  "Mehr Stress im Beruf"
+                ],
+                "answer": "Mehr Prävention statt Medikamente"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "B2_ex_h3_1",
+                "type": "mcq",
+                "question": "Vortrag: 'Die gesetzliche Krankenversicherung in Deutschland finanziert sich durch Beiträge von Arbeitnehmern und Arbeitgebern. Der allgemeine Beitragssatz liegt bei 14,6 Prozent des Bruttogehalts. Hinzu kommt ein kassenindividueller Zusatzbeitrag.' Wie hoch ist der allgemeine Beitragssatz zur gesetzlichen Krankenversicherung?",
+                "options": [
+                  "12,6 Prozent",
+                  "14,6 Prozent",
+                  "16,4 Prozent",
+                  "18,2 Prozent"
+                ],
+                "answer": "14,6 Prozent"
+              },
+              {
+                "id": "B2_ex_h3_2",
+                "type": "true-false",
+                "question": "Interview: 'Klimawandel und Gesundheit hängen eng zusammen. Höhere Temperaturen führen zu mehr Hitzetoten, aber auch zu einer Ausbreitung von Infektionskrankheiten. Das Gesundheitswesen muss sich auf diese Veränderungen einstellen.' Der Klimawandel hat keine Auswirkungen auf die Gesundheit.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_h3_3",
+                "type": "mcq",
+                "question": "Bericht: 'Die Betriebliche Gesundheitsförderung gewinnt an Bedeutung. Immer mehr Unternehmen bieten ihren Mitarbeitern Fitnesskurse, ergonomische Arbeitsplätze und Stressmanagement-Workshops an. Eine Studie zeigt, dass diese Maßnahmen die Produktivität um bis zu 12 Prozent steigern.' Was ist kein Beispiel für betriebliche Gesundheitsförderung?",
+                "options": [
+                  "Fitnesskurse",
+                  "Ergonomische Arbeitsplätze",
+                  "Gehaltserhöhungen",
+                  "Stressmanagement-Workshops"
+                ],
+                "answer": "Gehaltserhöhungen"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_w3_1",
+                "prompt": "In Ihrer Gemeinde soll ein neues Gesundheitszentrum gebaut werden, das sich auf Prävention konzentriert. Schreiben Sie einen formellen Brief an den Bürgermeister. Nennen Sie die Vorteile eines solchen Zentrums, schlagen Sie konkrete Angebote vor und bitten Sie um Unterstützung (ca. 200 Wörter).",
+                "wordLimit": 200
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "B2_ex_s3_1",
+                "prompt": "Halten Sie einen Vortrag über 'Die Bedeutung von Präventionsmaßnahmen im Gesundheitswesen.' Gehen Sie auf Impfungen, Vorsorgeuntersuchungen und Gesundheitsförderung am Arbeitsplatz ein.",
+                "talkTime": 180
+              },
+              {
+                "id": "B2_ex_s3_2",
+                "prompt": "Diskutieren Sie: 'Sollte die Stadt mehr in umweltfreundliche Verkehrsmittel investieren, um die Gesundheit der Bevölkerung zu fördern?' Begründen Sie Ihre Meinung mit Beispielen.",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B2_exam_04",
+        "name": "Goethe B2 Practice Exam 4 - Migration & Health System",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_l4_1",
+                "type": "mcq",
+                "question": "Text: 'Die Integration ausländischer Ärzte in das deutsche Gesundheitssystem ist eine wichtige Aufgabe. Vor der Berufszulassung müssen sie einen Kenntnisstand nachweisen. Dazu gehören Sprachkenntnisse auf B2-Niveau und eine Gleichwertigkeitsprüfung des Medizinstudiums.' Was müssen ausländische Ärzte vor der Zulassung nachweisen?",
+                "options": [
+                  "Nur Sprachkenntnisse",
+                  "Sprachkenntnisse und Gleichwertigkeitsprüfung",
+                  "Nur die Gleichwertigkeitsprüfung",
+                  "Fünf Jahre Berufserfahrung"
+                ],
+                "answer": "Sprachkenntnisse und Gleichwertigkeitsprüfung"
+              },
+              {
+                "id": "B2_ex_l4_2",
+                "type": "true-false",
+                "question": "Text: 'Die Ausbildung zur Pflegefachkraft dauert in Deutschland drei Jahre und erfolgt an Pflegeschulen sowie in Krankenhäusern. Seit 2020 gibt es eine generalistische Ausbildung, die alle Pflegebereiche umfasst.' Die Ausbildung zur Pflegefachkraft ist seit 2020 generalistisch.",
+                "answer": "true"
+              },
+              {
+                "id": "B2_ex_l4_3",
+                "type": "mcq",
+                "question": "Text: 'Die private Krankenversicherung richtet sich an Selbstständige, Beamte und Angestellte mit einem Jahreseinkommen über der Versicherungspflichtgrenze. Sie bietet oft umfangreichere Leistungen als die gesetzliche Krankenversicherung.' Wer kann sich privat krankenversichern?",
+                "options": [
+                  "Alle Angestellten",
+                  "Nur Selbstständige",
+                  "Personen mit Einkommen über der Versicherungspflichtgrenze",
+                  "Nur Beamte"
+                ],
+                "answer": "Personen mit Einkommen über der Versicherungspflichtgrenze"
+              },
+              {
+                "id": "B2_ex_l4_4",
+                "type": "gap-fill",
+                "question": "Die Beantragung einer Kostenerstattung bei der Krankenkasse erfordert das korrekte ___ von Formularen.",
+                "options": [
+                  "Ausfüllen",
+                  "Ausfülle",
+                  "Ausgefüllte",
+                  "Ausfüllens"
+                ],
+                "answer": "Ausfüllen"
+              },
+              {
+                "id": "B2_ex_l4_5",
+                "type": "opinion-match",
+                "question": "Text: 'Der Klinikdirektor argumentiert: Die interkulturelle Kompetenz wird in der medizinischen Ausbildung noch zu wenig vermittelt. Angesichts einer multikulturellen Gesellschaft müssen angehende Ärzte lernen, sensibel mit kulturellen Unterschieden umzugehen.' Was kritisiert der Klinikdirektor?",
+                "options": [
+                  "Zu viele ausländische Patienten",
+                  "Mangelnde interkulturelle Ausbildung",
+                  "Die multikulturelle Gesellschaft",
+                  "Die hohen Kosten im Gesundheitswesen"
+                ],
+                "answer": "Mangelnde interkulturelle Ausbildung"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "B2_ex_h4_1",
+                "type": "mcq",
+                "question": "Radiobeitrag: 'Das Medizinstudium in Deutschland dauert mindestens sechs Jahre und drei Monate. Es endet mit dem Staatsexamen. Danach folgt die fünfjährige Facharztausbildung. Insgesamt dauert der Weg zum Facharzt also etwa elf Jahre.' Wie lange dauert die Facharztausbildung?",
+                "options": [
+                  "Drei Jahre",
+                  "Fünf Jahre",
+                  "Sechs Jahre",
+                  "Elf Jahre"
+                ],
+                "answer": "Fünf Jahre"
+              },
+              {
+                "id": "B2_ex_h4_2",
+                "type": "true-false",
+                "question": "Anmeldung: 'Guten Tag, ich möchte mich als neuer Patient anmelden. Ich bin gesetzlich versichert bei der Techniker Krankenkasse. Ich brauche einen Termin für die allgemeine Untersuchung.' Der Patient ist privat versichert.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_h4_3",
+                "type": "mcq",
+                "question": "Vortrag: 'Interkulturelle Kommunikation im Krankenhaus ist eine Herausforderung. Sprachbarrieren, unterschiedliche Krankheitskonzepte und religiöse Überzeugungen beeinflussen die Arzt-Patienten-Beziehung. Dolmetscherdienste können helfen, sind aber nicht immer verfügbar.' Was kann laut Vortrag bei Sprachbarrieren helfen?",
+                "options": [
+                  "Mehr Zeit für die Behandlung",
+                  "Dolmetscherdienste",
+                  "Weniger Patienten",
+                  "Standardisierte Fragebögen"
+                ],
+                "answer": "Dolmetscherdienste"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_w4_1",
+                "prompt": "Sie arbeiten in einer Klinik, die ein Mentorenprogramm für ausländische Ärzte einführen möchte. Schreiben Sie einen Vorschlag an die Klinikleitung. Beschreiben Sie die Ziele des Programms, nennen Sie konkrete Maßnahmen und erklären Sie den Nutzen für die Klinik (ca. 200 Wörter).",
+                "wordLimit": 200
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "B2_ex_s4_1",
+                "prompt": "Halten Sie einen Vortrag über 'Die Herausforderungen und Chancen der Integration ausländischer Pflegekräfte im deutschen Gesundheitssystem.'",
+                "talkTime": 180
+              },
+              {
+                "id": "B2_ex_s4_2",
+                "prompt": "Diskutieren Sie: 'Sollte das deutsche Gesundheitssystem mehr in die Ausbildung von Pflegekräften investieren?' Begründen Sie Ihre Meinung.",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "B2_exam_05",
+        "name": "Goethe B2 Practice Exam 5 - Ethics & Technology",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_l5_1",
+                "type": "mcq",
+                "question": "Text: 'Ethische Fragen in der Medizin gewinnen an Bedeutung. Besonders kontrovers diskutiert wird die Organspende. In Deutschland gilt die Entscheidungslösung: Jeder kann seine Bereitschaft zur Organspende erklären. Kritiker fordern die Widerspruchslösung, bei der jeder als Spender gilt, der nicht widerspricht.' Was gilt in Deutschland bei der Organspende?",
+                "options": [
+                  "Die Widerspruchslösung",
+                  "Die Entscheidungslösung",
+                  "Die Pflicht zur Spende",
+                  "Ein generelles Verbot"
+                ],
+                "answer": "Die Entscheidungslösung"
+              },
+              {
+                "id": "B2_ex_l5_2",
+                "type": "true-false",
+                "question": "Text: 'Die medizinische Rehabilitation ist ein wichtiger Bestandteil des Gesundheitssystems. Sie zielt darauf ab, die Teilhabe der Patienten am gesellschaftlichen Leben wiederherzustellen. Die Rentenversicherung trägt in der Regel die Kosten.' Die medizinische Rehabilitation wird von der Rentenversicherung finanziert.",
+                "answer": "true"
+              },
+              {
+                "id": "B2_ex_l5_3",
+                "type": "mcq",
+                "question": "Text: 'Künstliche Intelligenz revolutioniert die Radiologie. Algorithmen können Tumore oft schneller erkennen als das menschliche Auge. Dennoch bleibt der Arzt für die Diagnose und Aufklärung des Patienten verantwortlich. Die KI dient als Assistenzsystem, nicht als Entscheider.' Welche Rolle hat die KI in der Radiologie?",
+                "options": [
+                  "Sie ersetzt den Arzt",
+                  "Sie trifft finale Diagnosen",
+                  "Sie dient als Assistenzsystem",
+                  "Sie ist nicht zugelassen"
+                ],
+                "answer": "Sie dient als Assistenzsystem"
+              },
+              {
+                "id": "B2_ex_l5_4",
+                "type": "gap-fill",
+                "question": "Die Einwilligung des Patienten in eine medizinische Behandlung muss ___ auf Basis einer umfassenden Aufklärung erfolgen.",
+                "options": [
+                  "freiwillig",
+                  "freiwillige",
+                  "freiwilliger",
+                  "freiwilligen"
+                ],
+                "answer": "freiwillig"
+              },
+              {
+                "id": "B2_ex_l5_5",
+                "type": "opinion-match",
+                "question": "Text: 'Der Datenschutzbeauftragte der Klinik warnt: Die zunehmende Digitalisierung von Patientendaten erfordert strenge Sicherheitsmaßnahmen. Ein Datenleck könnte katastrophale Folgen haben. Deshalb müssen alle Mitarbeiter regelmäßig in Datenschutz geschult werden.' Was ist die Hauptforderung des Datenschutzbeauftragten?",
+                "options": [
+                  "Digitalisierung stoppen",
+                  "Mitarbeiter in Datenschutz schulen",
+                  "Patientendaten löschen",
+                  "Weniger Patienten behandeln"
+                ],
+                "answer": "Mitarbeiter in Datenschutz schulen"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "B2_ex_h5_1",
+                "type": "mcq",
+                "question": "Experteninterview: 'Die Digitalisierung bietet enorme Chancen für die Rehabilitation. Patienten können durch Apps und Wearables ihr Training zu Hause fortsetzen. Telerehabilitation wird immer wichtiger. Eine Studie zeigt, dass die Erfolgsraten vergleichbar mit stationären Programmen sind.' Wie ist der Erfolg von Telerehabilitation?",
+                "options": [
+                  "Weniger erfolgreich als stationäre Programme",
+                  "Vergleichbar mit stationären Programmen",
+                  "Deutlich besser als stationäre Programme",
+                  "Nicht ausreichend erforscht"
+                ],
+                "answer": "Vergleichbar mit stationären Programmen"
+              },
+              {
+                "id": "B2_ex_h5_2",
+                "type": "true-false",
+                "question": "Ansprache: 'Der Ethikrat unserer Klinik tagt jeden ersten Mittwoch im Monat. Er berät zu schwierigen medizinethischen Fragen wie Therapiebegrenzung oder Patientenverfügungen.' Der Ethikrat tagt jeden Freitag.",
+                "answer": "false"
+              },
+              {
+                "id": "B2_ex_h5_3",
+                "type": "mcq",
+                "question": "Fortbildung: 'Der Datenschutz im Krankenhaus umfasst verschiedene Bereiche. Dazu gehören die verschlüsselte Speicherung von Patientendaten, Zugriffsberechtigungen für Mitarbeiter und die Aufbewahrungsfrist von Akten. Ein Verstoß kann mit hohen Bußgeldern geahndet werden.' Was ist kein Bereich des Datenschutzes im Krankenhaus?",
+                "options": [
+                  "Verschlüsselte Speicherung",
+                  "Zugriffsberechtigungen",
+                  "Patientenaufklärung",
+                  "Aufbewahrungsfristen"
+                ],
+                "answer": "Patientenaufklärung"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "B2_ex_w5_1",
+                "prompt": "In Ihrer Klinik soll eine neue Software für die elektronische Patientenakte eingeführt werden. Einige Kollegen sind skeptisch. Schreiben Sie eine E-Mail an Ihre Kollegen. Erklären Sie die Vorteile der neuen Software, gehen Sie auf Bedenken zum Datenschutz ein und laden Sie zu einer Informationsveranstaltung ein (ca. 200 Wörter).",
+                "wordLimit": 200
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "B2_ex_s5_1",
+                "prompt": "Halten Sie einen Vortrag über 'Ethische Aspekte der Organspende in Deutschland.' Gehen Sie auf die aktuelle Gesetzeslage, die Debatte um die Widerspruchslösung und Ihre persönliche Meinung ein.",
+                "talkTime": 180
+              },
+              {
+                "id": "B2_ex_s5_2",
+                "prompt": "Diskutieren Sie: 'Sollten Patientendaten für die medizinische Forschung genutzt werden dürfen?' Berücksichtigen Sie Aspekte des Datenschutzes und des medizinischen Fortschritts.",
+                "talkTime": 180
+              }
+            ]
+          }
         }
       }
-    },
+    ],
     "C1": {
       "id": "exam_C1",
       "name": "Goethe C1 Practice Exam",

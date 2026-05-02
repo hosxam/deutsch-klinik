@@ -5881,7 +5881,9 @@
           ],
           "answer": "15%"
         }
-      ]
+      ],
+      "lessonId": "B2_lesson_7",
+      "level": "B2"
     },
     {
       "id": "B2_listen_2",
@@ -5912,7 +5914,9 @@
           ],
           "answer": "Längere Wartezeiten und weniger Wahlfreiheit"
         }
-      ]
+      ],
+      "lessonId": "B2_lesson_16",
+      "level": "B2"
     },
     {
       "id": "B2_listen_3",
@@ -5949,6 +5953,1841 @@
           "question": "Die Kortisoninjektion hatte einen langanhaltenden Effekt.",
           "answer": "false"
         }
+      ],
+      "lessonId": "B2_lesson_22",
+      "level": "B2"
+    },
+    {
+      "id": "B2_listen_4",
+      "lessonId": "B2_lesson_8",
+      "level": "B2",
+      "title": "Durchsage: Kommunikation in der Klinik",
+      "script": "Guten Morgen, liebe Kolleginnen und Kollegen. Wir haben festgestellt, dass es in letzter Zeit vermehrt zu Missverstaendnissen zwischen den Stationen gekommen ist. Bitte denken Sie daran, alle wichtigen Informationen zur Patientenuebergabe schriftlich zu dokumentieren und bei der Uebergabe persoenlich zu besprechen. Ab naechster Woche bieten wir einen Workshop zur effektiven Kommunikation an. Die Teilnahme ist fuer alle Pflegekraefte und Aerzte der Inneren Medizin verpflichtend.",
+      "questions": [
+        {
+          "id": "b2l4a",
+          "type": "true-false",
+          "question": "Die Durchsage betrifft nur Aerzte.",
+          "answer": "false"
+        },
+        {
+          "id": "b2l4b",
+          "type": "mcq",
+          "question": "Was ist das Problem in der Klinik?",
+          "options": [
+            "Zu wenig Personal",
+            "Missverstaendnisse zwischen Stationen",
+            "Zu viele Patienten",
+            "Defekte Geraete"
+          ],
+          "answer": "Missverstaendnisse zwischen Stationen"
+        },
+        {
+          "id": "b2l4c",
+          "type": "mcq",
+          "question": "Fuer wen ist der Workshop verpflichtend?",
+          "options": [
+            "Alle Mitarbeiter des Krankenhauses",
+            "Pflegekraefte und Aerzte der Inneren Medizin",
+            "Nur die Pflegekraefte",
+            "Nur die Aerzte"
+          ],
+          "answer": "Pflegekraefte und Aerzte der Inneren Medizin"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_5",
+      "lessonId": "B2_lesson_2",
+      "level": "B2",
+      "title": "Studienberatung fuer Medizinstudenten",
+      "script": "Herzlich willkommen zur Studienberatung. Ich bin Frau Dr. Weber von der Fachschaft Medizin. Viele von Ihnen fragen sich, wie sie sich am besten auf die anstehenden Pruefungen vorbereiten koennen. Mein wichtigster Tipp: Planen Sie feste Lernzeiten ein und bilden Sie Lerngruppen. Untersuchungen zeigen, dass Studierende in Gruppen effektiver lernen als allein. Nutzen Sie auch die digitalen Angebote der Bibliothek. Die Online-Datenbanken sind rund um die Uhr verfuegbar. Vergessen Sie nicht, regelmaessig Pausen zu machen. Ihr Gehirn braucht Erholung, um Gelerntes zu verarbeiten.",
+      "questions": [
+        {
+          "id": "b2l5a",
+          "type": "mcq",
+          "question": "Was ist Frau Dr. Webers wichtigster Tipp?",
+          "options": [
+            "Mehr Buecher lesen",
+            "Feste Lernzeiten und Lerngruppen",
+            "Weniger schlafen",
+            "Allein lernen"
+          ],
+          "answer": "Feste Lernzeiten und Lerngruppen"
+        },
+        {
+          "id": "b2l5b",
+          "type": "true-false",
+          "question": "Die Online-Datenbanken sind rund um die Uhr verfuegbar.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l5c",
+          "type": "mcq",
+          "question": "Warum sind Pausen wichtig?",
+          "options": [
+            "Weil das Gehirn Erholung braucht",
+            "Weil man sonst zu muede wird",
+            "Weil die Bibliothek schliesst",
+            "Weil der Koerper Schlaf braucht"
+          ],
+          "answer": "Weil das Gehirn Erholung braucht"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_6",
+      "lessonId": "B2_lesson_12",
+      "level": "B2",
+      "title": "Anweisung zur Patientenidentifikation",
+      "script": "Achtung, wichtige Sicherheitsinformation. Ab sofort muessen alle Patienten vor jeder Medikamentengabe mit zwei Identifikationsmerkmalen ueberprueft werden. Fragen Sie den Patienten nach seinem Namen und Geburtsdatum und vergleichen Sie die Angaben mit dem Armband. Bei bewusstlosen Patienten verwenden Sie ausschliesslich das Armband. Dieses Verfahren reduziert das Risiko von Medikationsfehlern erheblich. Bei Unstimmigkeiten informieren Sie sofort den Stationsarzt. Wir moechten in diesem Monat keine Zwischenfaelle mehr melden.",
+      "questions": [
+        {
+          "id": "b2l6a",
+          "type": "mcq",
+          "question": "Wie viele Identifikationsmerkmale muessen geprueft werden?",
+          "options": [
+            "Eins",
+            "Zwei",
+            "Drei",
+            "Vier"
+          ],
+          "answer": "Zwei"
+        },
+        {
+          "id": "b2l6b",
+          "type": "true-false",
+          "question": "Bei bewusstlosen Patienten wird ausschliesslich das Armband verwendet.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l6c",
+          "type": "mcq",
+          "question": "Was sollen Mitarbeiter bei Unstimmigkeiten tun?",
+          "options": [
+            "Nichts tun",
+            "Den Stationsarzt informieren",
+            "Den Patienten entlassen",
+            "Das Medikament trotzdem geben"
+          ],
+          "answer": "Den Stationsarzt informieren"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_7",
+      "lessonId": "B2_lesson_21",
+      "level": "B2",
+      "title": "Morgenbesprechung auf der Station",
+      "script": "Guten Morgen, meine Damen und Herren. Hier die wichtigsten Informationen fuer die Fruehschicht. Wir haben heute 28 Patienten auf der Station, zwei Neuaufnahmen sind fuer heute Vormittag angemeldet. Frau Mueller auf Zimmer 12 wird heute entlassen. Bitte bereiten Sie die Entlassungspapiere vor. Herr Schmidt auf Zimmer 8 hat eine erhoehte Temperatur, hier ist eine Blutkultur abzunehmen. Die Visite beginnt heute um neun Uhr. Nach der Visite findet eine Fortbildung zur Wundversorgung statt, Beginn zehn Uhr im Konferenzraum.",
+      "questions": [
+        {
+          "id": "b2l7a",
+          "type": "mcq",
+          "question": "Wie viele Patienten sind auf der Station?",
+          "options": [
+            "22",
+            "25",
+            "28",
+            "30"
+          ],
+          "answer": "28"
+        },
+        {
+          "id": "b2l7b",
+          "type": "true-false",
+          "question": "Frau Mueller auf Zimmer 12 wird heute entlassen.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l7c",
+          "type": "mcq",
+          "question": "Um wie viel Uhr beginnt die Fortbildung?",
+          "options": [
+            "Acht Uhr",
+            "Neun Uhr",
+            "Zehn Uhr",
+            "Elf Uhr"
+          ],
+          "answer": "Zehn Uhr"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_8",
+      "lessonId": "B2_lesson_16",
+      "level": "B2",
+      "title": "Telefonansage: Terminbuchung online",
+      "script": "Sie sind verbunden mit der Praxis Dres. Wagner und Kollegen. Unsere aktuellen Wartezeiten betragen etwa 15 Minuten. Wir weisen darauf hin, dass Sie Termine auch bequem online ueber unsere Webseite buchen koennen. Dafuer benoetigen Sie Ihre Versichertenkarte mit der persoenlichen Zugangsnummer. Falls Sie einen Termin nicht wahrnehmen koennen, sagen Sie bitte spaetestens 24 Stunden vorher ab. Andernfalls berechnen wir eine Ausfallgebuehr von 25 Euro. Fuer akute Notfaelle waehlen Sie bitte den Notruf 112.",
+      "questions": [
+        {
+          "id": "b2l8a",
+          "type": "mcq",
+          "question": "Wie lange betraegt die aktuelle Wartezeit?",
+          "options": [
+            "5 Minuten",
+            "10 Minuten",
+            "15 Minuten",
+            "20 Minuten"
+          ],
+          "answer": "15 Minuten"
+        },
+        {
+          "id": "b2l8b",
+          "type": "true-false",
+          "question": "Termine koennen online ueber die Webseite gebucht werden.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l8c",
+          "type": "mcq",
+          "question": "Wie viel kostet die Ausfallgebuehr?",
+          "options": [
+            "10 Euro",
+            "15 Euro",
+            "20 Euro",
+            "25 Euro"
+          ],
+          "answer": "25 Euro"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_9",
+      "lessonId": "B2_lesson_10",
+      "level": "B2",
+      "title": "Radiobericht: Krankenversicherung fuer Existenzgruender",
+      "script": "Immer mehr Existenzgruender in Deutschland stehen vor der Frage: Welche Krankenversicherung ist die richtige? Unser Gesundheitsexperte erklaert: Wer sich selbststaendig macht, muss sich innerhalb von drei Monaten entscheiden. Die gesetzliche Versicherung ist fuer viele eine gute Wahl, weil die Beitraege vom Einkommen abhaengen. Die private Versicherung bietet oft mehr Leistungen, ist aber langfristig teurer. Experten raten, vor der Entscheidung einen unabhaengigen Versicherungsberater aufzusuchen.",
+      "questions": [
+        {
+          "id": "b2l9a",
+          "type": "mcq",
+          "question": "Wie viel Zeit haben Existenzgruender fuer die Entscheidung?",
+          "options": [
+            "Einen Monat",
+            "Zwei Monate",
+            "Drei Monate",
+            "Sechs Monate"
+          ],
+          "answer": "Drei Monate"
+        },
+        {
+          "id": "b2l9b",
+          "type": "true-false",
+          "question": "Experten raten, einen Versicherungsberater aufzusuchen.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l9c",
+          "type": "mcq",
+          "question": "Warum ist die gesetzliche Versicherung fuer viele eine gute Wahl?",
+          "options": [
+            "Weil sie billiger ist",
+            "Weil die Beitraege vom Einkommen abhaengen",
+            "Weil sie alle Leistungen abdeckt",
+            "Weil sie einfacher ist"
+          ],
+          "answer": "Weil die Beitraege vom Einkommen abhaengen"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_10",
+      "lessonId": "B2_lesson_3",
+      "level": "B2",
+      "title": "Vortrag: Gesundheitspolitik in Deutschland",
+      "script": "Meine Damen und Herren, ich moechte Ihnen heute einen Ueberblick ueber die Gesundheitspolitik in Deutschland geben. Der Gesundheitsfonds, der 2009 eingefuehrt wurde, buendelt die Beitragszahlungen aller Versicherten und verteilt sie an die Krankenkassen. Ein Problem ist der demografische Wandel: Immer mehr aeltere Menschen brauchen medizinische Versorgung, waehrend weniger junge Menschen Beitraege zahlen. Die Politik sucht nach Loesungen, um das System zukunftssicher zu machen. Dazu gehoeren mehr Investitionen in die Praevention und der Ausbau der digitalen Gesundheitsangebote.",
+      "questions": [
+        {
+          "id": "b2l10a",
+          "type": "mcq",
+          "question": "Seit wann gibt es den Gesundheitsfonds?",
+          "options": [
+            "1999",
+            "2005",
+            "2009",
+            "2015"
+          ],
+          "answer": "2009"
+        },
+        {
+          "id": "b2l10b",
+          "type": "true-false",
+          "question": "Der demografische Wandel belastet das Gesundheitssystem.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l10c",
+          "type": "mcq",
+          "question": "Was ist eine Loesung fuer die Zukunft des Gesundheitssystems?",
+          "options": [
+            "Weniger Krankenhaeuser",
+            "Investitionen in Praevention und digitale Angebote",
+            "Hoehere Steuern",
+            "Weniger Versicherte"
+          ],
+          "answer": "Investitionen in Praevention und digitale Angebote"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_11",
+      "lessonId": "B2_lesson_16",
+      "level": "B2",
+      "title": "Podcast: Die elektronische Patientenakte",
+      "script": "Herzlich willkommen zu unserem Gesundheitspodcast. Heute geht es um die elektronische Patientenakte, kurz ePA. Seit 2021 koennen alle gesetzlich Versicherten in Deutschland eine ePA einrichten. Die ePA speichert Befunde, Medikationsplaene und Impfungen an einem zentralen Ort. Der grosse Vorteil: Im Notfall haben alle behandelnden Aerzte sofort Zugriff auf wichtige Daten. Allerdings gibt es Datenschutzbedenken. Versicherte entscheiden selbst, wer welche Daten einsehen darf. Die Krankenkassen sind verpflichtet, ueber die Funktionsweise zu informieren.",
+      "questions": [
+        {
+          "id": "b2l11a",
+          "type": "mcq",
+          "question": "Seit wann koennen Versicherte eine ePA einrichten?",
+          "options": [
+            "2019",
+            "2020",
+            "2021",
+            "2022"
+          ],
+          "answer": "2021"
+        },
+        {
+          "id": "b2l11b",
+          "type": "mcq",
+          "question": "Was speichert die ePA?",
+          "options": [
+            "Nur Impfungen",
+            "Befunde, Medikationsplaene und Impfungen",
+            "Nur Rezepte",
+            "Nur Krankschreibungen"
+          ],
+          "answer": "Befunde, Medikationsplaene und Impfungen"
+        },
+        {
+          "id": "b2l11c",
+          "type": "true-false",
+          "question": "Jeder Arzt darf alle Daten in der ePA ohne Einschraenkung einsehen.",
+          "answer": "false"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_12",
+      "lessonId": "B2_lesson_9",
+      "level": "B2",
+      "title": "Vortrag: Gesunde Ernaehrung im Alltag",
+      "script": "Guten Abend. Ich bin Oekotrophologin Julia Meier und halte heute einen Vortrag zum Thema gesunde Ernaehrung. Viele Menschen denken, gesund essen sei kompliziert und teuer. Dabei sind die Grundregeln einfach: Essen Sie bunt und abwechslungsreich. Greifen Sie zu saisonalem Obst und Gemuese. Vollkornprodukte sollten auf Ihrem Speiseplan stehen. Trinken Sie ausreichend, am besten Wasser oder ungesuessten Tee. Vermeiden Sie stark verarbeitete Lebensmittel. Mein Tipp: Planen Sie Ihre Mahlzeiten fuer die Woche im Voraus. Das spart Zeit und Geld und hilft, ungesunde Spontankaeufe zu vermeiden.",
+      "questions": [
+        {
+          "id": "b2l12a",
+          "type": "mcq",
+          "question": "Was empfiehlt die Expertin zum Thema Ernaehrung?",
+          "options": [
+            "Nur teure Lebensmittel kaufen",
+            "Bunt und abwechslungsreich essen",
+            "Nur Fleisch essen",
+            "Auf Kohlenhydrate verzichten"
+          ],
+          "answer": "Bunt und abwechslungsreich essen"
+        },
+        {
+          "id": "b2l12b",
+          "type": "true-false",
+          "question": "Stark verarbeitete Lebensmittel sollten vermieden werden.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l12c",
+          "type": "mcq",
+          "question": "Welchen Tipp gibt die Expertin fuer die Woche?",
+          "options": [
+            "Taeglich frisch kochen",
+            "Mahlzeiten im Voraus planen",
+            "Im Restaurant essen",
+            "Fertiggerichte kaufen"
+          ],
+          "answer": "Mahlzeiten im Voraus planen"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_13",
+      "lessonId": "B2_lesson_18",
+      "level": "B2",
+      "title": "Radiobeitrag: Stadtklima und Gesundheit",
+      "script": "In deutschen Staedten wird es immer heisser. Das hat direkte Auswirkungen auf die Gesundheit der Bewohner. Besonders aeltere Menschen und Kinder leiden unter Hitzewellen. Die Stadtverwaltung in Freiburg hat ein neues Projekt gestartet: Auf mehreren Daechem wurden begruente Flaschen angelegt. Sie kuehlen die Umgebung und verbessern die Luftqualitaet. Erste Messungen zeigen, dass die Temperatur auf begruenten Daechem bis zu fuenf Grad niedriger ist als auf herkoemmlichen Daechem. Das Projekt soll auf andere Staedte ausgeweitet werden.",
+      "questions": [
+        {
+          "id": "b2l13a",
+          "type": "mcq",
+          "question": "Wer leidet besonders unter Hitzewellen?",
+          "options": [
+            "Junge Erwachsene",
+            "Aeltere Menschen und Kinder",
+            "Sportler",
+            "Touristen"
+          ],
+          "answer": "Aeltere Menschen und Kinder"
+        },
+        {
+          "id": "b2l13b",
+          "type": "mcq",
+          "question": "Wie viel Grad kuehler ist es auf begruenten Daechem?",
+          "options": [
+            "Bis zu 2 Grad",
+            "Bis zu 5 Grad",
+            "Bis zu 8 Grad",
+            "Bis zu 10 Grad"
+          ],
+          "answer": "Bis zu 5 Grad"
+        },
+        {
+          "id": "b2l13c",
+          "type": "true-false",
+          "question": "Das Projekt in Freiburg soll auf andere Staedte ausgeweitet werden.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_14",
+      "lessonId": "B2_lesson_10",
+      "level": "B2",
+      "title": "Radiobeitrag: Wohnungsmarkt in Muenchen",
+      "script": "Der Wohnungsmarkt in Muenchen bleibt angespannt. Die Mietpreise sind in den letzten fuenf Jahren um durchschnittlich 20 Prozent gestiegen. Besonders betroffen sind Familien und Studierende. Die Stadt hat ein neues Foerderprogramm gestartet: Bauwillige, die Sozialwohnungen errichten, erhalten zinsguenstige Darlehen. Auch der Bau von Studierendenwohnheimen wird gefoerdert. Laut einer Studie der Stadtverwaltung fehlen in Muenchen mindestens 10000 bezahlbare Wohnungen. Die Nachfrage wird in den kommenden Jahren weiter steigen.",
+      "questions": [
+        {
+          "id": "b2l14a",
+          "type": "mcq",
+          "question": "Um wie viel Prozent sind die Mietpreise in Muenchen gestiegen?",
+          "options": [
+            "10 Prozent",
+            "15 Prozent",
+            "20 Prozent",
+            "25 Prozent"
+          ],
+          "answer": "20 Prozent"
+        },
+        {
+          "id": "b2l14b",
+          "type": "mcq",
+          "question": "Was bekommen Bauwillige fuer den Bau von Sozialwohnungen?",
+          "options": [
+            "Steuerfreiheit",
+            "Zinsguenstige Darlehen",
+            "Grundstuecke geschenkt",
+            "Hoehere Mieten"
+          ],
+          "answer": "Zinsguenstige Darlehen"
+        },
+        {
+          "id": "b2l14c",
+          "type": "true-false",
+          "question": "In Muenchen fehlen mindestens zehntausend bezahlbare Wohnungen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_15",
+      "lessonId": "B2_lesson_18",
+      "level": "B2",
+      "title": "Durchsage: Aenderungen im Nahverkehr",
+      "script": "Achtung Fahrgaeste, eine Durchsage der Verkehrsbetriebe. Ab dem ersten Juni kommt es zu Aenderungen im Fahrplan. Die Linie 7 wird im 10-Minuten-Takt verkehren. Die Haltestelle Hauptbahnhof Sued wird fuer drei Wochen geschlossen, nutzen Sie bitte die Ersatzhaltestelle am Theaterplatz. Die neuen Fahrplaene liegen an allen Haltestellen aus und sind auch online abrufbar. Wir bitten um Ihr Verstaendnis fuer die Bauarbeiten.",
+      "questions": [
+        {
+          "id": "b2l15a",
+          "type": "mcq",
+          "question": "Im welchen Takt wird die Linie 7 verkehren?",
+          "options": [
+            "Im 5-Minuten-Takt",
+            "Im 10-Minuten-Takt",
+            "Im 15-Minuten-Takt",
+            "Im 20-Minuten-Takt"
+          ],
+          "answer": "Im 10-Minuten-Takt"
+        },
+        {
+          "id": "b2l15b",
+          "type": "true-false",
+          "question": "Die Haltestelle Hauptbahnhof Sued wird fuer drei Wochen geschlossen.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l15c",
+          "type": "mcq",
+          "question": "Wo liegen die neuen Fahrplaene aus?",
+          "options": [
+            "Nur online",
+            "An allen Haltestellen und online",
+            "Nur am Hauptbahnhof",
+            "Nur in der App"
+          ],
+          "answer": "An allen Haltestellen und online"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_16",
+      "lessonId": "B2_lesson_8",
+      "level": "B2",
+      "title": "Infoabend: Pflegeausbildung",
+      "script": "Herzlich willkommen zum Infoabend ueber die Ausbildung in der Pflege. Ich bin Herr Dr. Schneider, Pflegedirektor des Klinikums. Die Ausbildung zur Pflegefachkraft dauert drei Jahre und erfolgt im dualen System. Sie arbeiten in der Klinik und besuchen die Berufsschule. Die Verguetung betraegt im ersten Jahr rund 1200 Euro brutto. Nach der Ausbildung haben Sie hervorragende Berufsaussichten. Der Pflegeberuf bietet viele Spezialisierungsmoeglichkeiten, zum Beispiel in der Intensivpflege oder in der Palliativversorgung.",
+      "questions": [
+        {
+          "id": "b2l16a",
+          "type": "mcq",
+          "question": "Wie lange dauert die Pflegeausbildung?",
+          "options": [
+            "Zwei Jahre",
+            "Drei Jahre",
+            "Vier Jahre",
+            "Fuenf Jahre"
+          ],
+          "answer": "Drei Jahre"
+        },
+        {
+          "id": "b2l16b",
+          "type": "mcq",
+          "question": "Wie hoch ist die Verguetung im ersten Jahr etwa?",
+          "options": [
+            "800 Euro",
+            "1000 Euro",
+            "1200 Euro",
+            "1500 Euro"
+          ],
+          "answer": "1200 Euro"
+        },
+        {
+          "id": "b2l16c",
+          "type": "true-false",
+          "question": "Die Pflegeausbildung bietet nur wenige Spezialisierungsmoeglichkeiten.",
+          "answer": "false"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_17",
+      "lessonId": "B2_lesson_14",
+      "level": "B2",
+      "title": "Betriebliches Gesundheitsmanagement",
+      "script": "Liebe Mitarbeiterinnen und Mitarbeiter, unser Krankenhaus fuehrt ein neues Programm zur Gesundheitsfoerderung ein. Wir moechten die Work-Life-Balance verbessern und Stress reduzieren. Ab naechstem Monat bieten wir jeden Dienstag und Donnerstag Yoga-Kurse an. Ausserdem koennen Sie kostenlos an einem Rueckentraining teilnehmen. Fuer alle, die lieber allein trainieren, haben wir eine Kooperation mit dem Fitnessstudio CityFit, dort erhalten Sie zehn Prozent Rabatt mit Ihrem Mitarbeiterausweis. Melden Sie sich bis zum Ende der Woche im Personalbuero an.",
+      "questions": [
+        {
+          "id": "b2l17a",
+          "type": "mcq",
+          "question": "Welche Tage bieten die Yoga-Kurse an?",
+          "options": [
+            "Montag und Mittwoch",
+            "Dienstag und Donnerstag",
+            "Mittwoch und Freitag",
+            "Samstag und Sonntag"
+          ],
+          "answer": "Dienstag und Donnerstag"
+        },
+        {
+          "id": "b2l17b",
+          "type": "true-false",
+          "question": "Das Rueckentraining ist kostenlos.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l17c",
+          "type": "mcq",
+          "question": "Wie viel Rabatt gibt es im Fitnessstudio CityFit?",
+          "options": [
+            "Fuenf Prozent",
+            "Zehn Prozent",
+            "Fuenfzehn Prozent",
+            "Zwanzig Prozent"
+          ],
+          "answer": "Zehn Prozent"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_18",
+      "lessonId": "B2_lesson_11",
+      "level": "B2",
+      "title": "Interview: Integration von gefluechteten Aerzten",
+      "script": "Heute spreche ich mit Dr. Ahmed Al-Khatib, einem Arzt aus Syrien, der seit zwei Jahren in Deutschland arbeitet. Dr. Al-Khatib, wie war Ihr Weg in den deutschen Arbeitsmarkt? \"Die groesste Huerde war die Anerkennung meines Studiums. Ich musste mehrere Pruefungen ablegen und einen Sprachkurs auf C1-Niveau absolvieren. Das hat etwa anderthalb Jahre gedauert. Inzwischen arbeite ich in einer Praxis in Berlin-Kreuzberg und fuehle mich sehr wohl. Mein Tipp fuer andere gefluechtete Aerzte: Geben Sie nicht auf, der Aufwand lohnt sich.\"",
+      "questions": [
+        {
+          "id": "b2l18a",
+          "type": "mcq",
+          "question": "Welches Sprachniveau musste Dr. Al-Khatib erreichen?",
+          "options": [
+            "B1",
+            "B2",
+            "C1",
+            "C2"
+          ],
+          "answer": "C1"
+        },
+        {
+          "id": "b2l18b",
+          "type": "true-false",
+          "question": "Die Anerkennung seines Studiums dauerte etwa anderthalb Jahre.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l18c",
+          "type": "mcq",
+          "question": "Was ist Dr. Al-Khatibs Tipp fuer andere gefluechtete Aerzte?",
+          "options": [
+            "Zurueck ins Heimatland gehen",
+            "Nicht aufgeben, der Aufwand lohnt sich",
+            "Einen anderen Beruf waehlen",
+            "Nur in der Pflege arbeiten"
+          ],
+          "answer": "Nicht aufgeben, der Aufwand lohnt sich"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_19",
+      "lessonId": "B2_lesson_16",
+      "level": "B2",
+      "title": "Radiobericht: Datenschutz im Gesundheitswesen",
+      "script": "Das Thema Datenschutz gewinnt im Gesundheitswesen weiter an Bedeutung. Ein aktueller Bericht des Bundesdatenschutzbeauftragten zeigt: Im vergangenen Jahr gab es in Deutschland ueber 200 gemeldete Datenpannen in Krankenhaeusern und Arztpraxen. In den meisten Faellen handelte es sich um versehentliche Weitergabe von Patientendaten. Experten empfehlen dringend, alle Mitarbeiter regelmaessig im Datenschutz zu schulen. Ab 2026 soll ein neues IT-Sicherheitsgesetz strengere Auflagen fuer Kliniken vorsehen.",
+      "questions": [
+        {
+          "id": "b2l19a",
+          "type": "mcq",
+          "question": "Wie viele Datenpannen gab es im vergangenen Jahr im Gesundheitswesen?",
+          "options": [
+            "Ueber 50",
+            "Ueber 100",
+            "Ueber 200",
+            "Ueber 500"
+          ],
+          "answer": "Ueber 200"
+        },
+        {
+          "id": "b2l19b",
+          "type": "mcq",
+          "question": "Was war die haeufigste Ursache fuer Datenpannen?",
+          "options": [
+            "Hackerangriffe",
+            "Versehentliche Weitergabe von Patientendaten",
+            "Gestohlene Geraete",
+            "Papierakten verloren"
+          ],
+          "answer": "Versehentliche Weitergabe von Patientendaten"
+        },
+        {
+          "id": "b2l19c",
+          "type": "true-false",
+          "question": "Ab 2026 soll ein neues IT-Sicherheitsgesetz strengere Auflagen vorsehen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_20",
+      "lessonId": "B2_lesson_13",
+      "level": "B2",
+      "title": "Podcast: Social Media in der Arztpraxis",
+      "script": "Herzlich willkommen zu unserem Praxispodcast. Heute fragen wir: Sollten Aerzte soziale Medien nutzen? Die Meinungen gehen auseinander. Viele Kollegen sind auf LinkedIn und Instagram aktiv, um ueber Gesundheitsthemen aufzuklaeren. Eine Studie zeigt, dass ueber 40 Prozent der Patienten vor dem Praxisbesuch online recherchieren. Allerdings gibt es Risiken: Falschinformationen verbreiten sich schnell, und die Schweigepflicht muss beachtet werden. Die Aerztekammer empfiehlt daher, dienstliche von privaten Inhalten strikt zu trennen.",
+      "questions": [
+        {
+          "id": "b2l20a",
+          "type": "mcq",
+          "question": "Wie viel Prozent der Patienten recherchieren vor dem Praxisbesuch online?",
+          "options": [
+            "20 Prozent",
+            "30 Prozent",
+            "40 Prozent",
+            "50 Prozent"
+          ],
+          "answer": "40 Prozent"
+        },
+        {
+          "id": "b2l20b",
+          "type": "true-false",
+          "question": "Die Aerztekammer empfiehlt, dienstliche und private Inhalte zu trennen.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l20c",
+          "type": "mcq",
+          "question": "Welches Risiko wird im Podcast genannt?",
+          "options": [
+            "Zeitverschwendung",
+            "Falschinformationen und Verletzung der Schweigepflicht",
+            "Zu viele Follower",
+            "Negative Kommentare"
+          ],
+          "answer": "Falschinformationen und Verletzung der Schweigepflicht"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_21",
+      "lessonId": "B2_lesson_9",
+      "level": "B2",
+      "title": "Interview: Ehrenamt im Hospiz",
+      "script": "Ich spreche heute mit Frau Schubert, die seit fuenf Jahren ehrenamtlich in einem Hospiz arbeitet. Frau Schubert, was hat Sie zu diesem Ehrenamt bewogen? \"Ich hatte eine persoenliche Erfahrung mit dem Tod meines Vaters und wollte etwas zurueckgeben. Im Hospiz begleite ich schwerkranke Menschen in ihrer letzten Lebensphase. Das ist nicht immer einfach, aber es ist sehr erfuellend.\" Welche Voraussetzungen braucht man? \"Man sollte einfuehlsam sein und gut zuhoeren koennen. Die Ausbildung umfasst einen Vorbereitungskurs von 100 Stunden und regelmaessige Supervision.\"",
+      "questions": [
+        {
+          "id": "b2l21a",
+          "type": "mcq",
+          "question": "Wie lange arbeitet Frau Schubert schon ehrenamtlich im Hospiz?",
+          "options": [
+            "Zwei Jahre",
+            "Drei Jahre",
+            "Vier Jahre",
+            "Fuenf Jahre"
+          ],
+          "answer": "Fuenf Jahre"
+        },
+        {
+          "id": "b2l21b",
+          "type": "mcq",
+          "question": "Wie viele Stunden umfasst der Vorbereitungskurs?",
+          "options": [
+            "50 Stunden",
+            "80 Stunden",
+            "100 Stunden",
+            "120 Stunden"
+          ],
+          "answer": "100 Stunden"
+        },
+        {
+          "id": "b2l21c",
+          "type": "true-false",
+          "question": "Die Arbeit im Hospiz beschreibt Frau Schubert als nicht einfach, aber erfuellend.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_22",
+      "lessonId": "B2_lesson_7",
+      "level": "B2",
+      "title": "Debatte: Patientenautonomie am Lebensende",
+      "script": "Guten Abend und herzlich willkommen zu unserer Podiumsdiskussion. Das heutige Thema: Patientenautonomie am Lebensende. Sollte jeder Patient das Recht haben, ueber lebensverlaengernde Massnahmen selbst zu entscheiden? Unsere erste Gespraechspartnerin, Professorin Dr. Weiss von der Universitaet Heidelberg, vertritt die Position, dass die Patientenverfuegung ein zentrales Instrument der Selbstbestimmung ist. Sie ermoeglicht dem Patienten, fuer den Fall seiner Entscheidungsunfaehigkeit Vorsorge zu treffen. Kritiker weisen jedoch darauf hin, dass viele Menschen keine Patientenverfuegung haben, obwohl sie wichtig waere.",
+      "questions": [
+        {
+          "id": "b2l22a",
+          "type": "mcq",
+          "question": "Was ist das Thema der Podiumsdiskussion?",
+          "options": [
+            "Organspende",
+            "Patientenautonomie am Lebensende",
+            "Sterbehilfe",
+            "Schmerztherapie"
+          ],
+          "answer": "Patientenautonomie am Lebensende"
+        },
+        {
+          "id": "b2l22b",
+          "type": "true-false",
+          "question": "Professorin Dr. Weiss vertritt die Meinung, dass Patientenverfuegungen wichtig fuer die Selbstbestimmung sind.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l22c",
+          "type": "mcq",
+          "question": "Was kritisieren Gegner der aktuellen Regelung?",
+          "options": [
+            "Patientenverfuegungen sind zu teuer",
+            "Viele Menschen haben keine Patientenverfuegung",
+            "Patientenverfuegungen sind ungueltig",
+            "Aerzte ignorieren Patientenverfuegungen"
+          ],
+          "answer": "Viele Menschen haben keine Patientenverfuegung"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_23",
+      "lessonId": "B2_lesson_21",
+      "level": "B2",
+      "title": "Vortrag: Ambulante Rehabilitation nach Hüft-OP",
+      "script": "Guten Tag, ich moechte Ihnen heute die Moeglichkeiten der ambulanten Rehabilitation vorstellen. Viele Patienten bevorzugen nach einer Hueftoperation die ambulante Reha, weil sie zu Hause bleiben koennen. Die Behandlung umfasst in der Regel zwei- bis dreimal pro Woche Physiotherapie und Ergotherapie ueber einen Zeitraum von sechs bis acht Wochen. Die Krankenkasse uebernimmt die Kosten. Voraussetzung ist, dass die Wohnung barrierefrei ist und eine Bezugsperson zur Verfuegung steht. Ziel der Reha ist es, die Beweglichkeit wiederherzustellen und den Patienten in den Alltag zurueckzufuehren.",
+      "questions": [
+        {
+          "id": "b2l23a",
+          "type": "mcq",
+          "question": "Wie oft pro Woche findet die ambulante Rehabilitation statt?",
+          "options": [
+            "Einmal pro Woche",
+            "Zwei- bis dreimal pro Woche",
+            "Vier- bis fuenfmal pro Woche",
+            "Taeglich"
+          ],
+          "answer": "Zwei- bis dreimal pro Woche"
+        },
+        {
+          "id": "b2l23b",
+          "type": "mcq",
+          "question": "Wie lange dauert die ambulante Reha in der Regel?",
+          "options": [
+            "Zwei bis vier Wochen",
+            "Vier bis sechs Wochen",
+            "Sechs bis acht Wochen",
+            "Acht bis zehn Wochen"
+          ],
+          "answer": "Sechs bis acht Wochen"
+        },
+        {
+          "id": "b2l23c",
+          "type": "true-false",
+          "question": "Die Wohnung muss fuer die ambulante Reha barrierefrei sein.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_24",
+      "lessonId": "B2_lesson_3",
+      "level": "B2",
+      "title": "Radiobeitrag: Krebsvorsorge in Deutschland",
+      "script": "In Deutschland nehmen immer weniger Menschen an Krebsvorsorgeuntersuchungen teil. Das zeigt eine aktuelle Studie der Deutschen Krebshilfe. Besonders betroffen sind die Darmspiegelung und der Hautkrebsscreening. Viele Menschen haben Angst vor den Untersuchungen oder wissen gar nicht, dass sie Anspruch darauf haben. Die Krankenkassen zahlen die wichtigsten Vorsorgeuntersuchungen ab einem bestimmten Alter vollstaendig. Experten empfehlen, die Termine zur Vorsorge direkt im Kalender zu notieren, sobald die Einladung der Krankenkasse kommt.",
+      "questions": [
+        {
+          "id": "b2l24a",
+          "type": "mcq",
+          "question": "Was zeigt die aktuelle Studie?",
+          "options": [
+            "Immer mehr Menschen gehen zur Vorsorge",
+            "Immer weniger Menschen nehmen an der Vorsorge teil",
+            "Alle Menschen gehen zur Vorsorge",
+            "Die Vorsorge ist kostenpflichtig"
+          ],
+          "answer": "Immer weniger Menschen nehmen an der Vorsorge teil"
+        },
+        {
+          "id": "b2l24b",
+          "type": "mcq",
+          "question": "Welche Untersuchungen sind besonders betroffen?",
+          "options": [
+            "Blutdruckmessung und Sehtest",
+            "Darmspiegelung und Hautkrebsscreening",
+            "Röntgen und Ultraschall",
+            "Hörtest und Allergietest"
+          ],
+          "answer": "Darmspiegelung und Hautkrebsscreening"
+        },
+        {
+          "id": "b2l24c",
+          "type": "true-false",
+          "question": "Die Krankenkasse zahlt die Vorsorgeuntersuchungen nicht.",
+          "answer": "false"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_25",
+      "lessonId": "B2_lesson_22",
+      "level": "B2",
+      "title": "Apothekendurchsage: Richtige Medikamenteneinnahme",
+      "script": "Guten Tag, liebe Kunden. Hier eine Information zur richtigen Einnahme von Medikamenten. Bitte beachten Sie die Hinweise auf dem Beipackzettel. Nehmen Sie Medikamente immer genau nach Absprache mit Ihrem Arzt ein. Veraendern Sie niemals eigenmaechtig die Dosierung. Falls Sie mehrere Medikamente gleichzeitig einnehmen, fragen Sie Ihren Apotheker nach moeglichen Wechselwirkungen. Lagern Sie Medikamente kuehl, trocken und ausserhalb der Reichweite von Kindern. Bei Fragen kommen Sie einfach zu uns ins Beratungszimmer.",
+      "questions": [
+        {
+          "id": "b2l25a",
+          "type": "mcq",
+          "question": "Wo stehen die Hinweise zur Medikamenteneinnahme?",
+          "options": [
+            "Auf der Verpackung",
+            "Auf dem Beipackzettel",
+            "Auf einem extra Zettel",
+            "In der Arztpraxis"
+          ],
+          "answer": "Auf dem Beipackzettel"
+        },
+        {
+          "id": "b2l25b",
+          "type": "true-false",
+          "question": "Man darf die Dosierung eigenmaechtig veraendern.",
+          "answer": "false"
+        },
+        {
+          "id": "b2l25c",
+          "type": "mcq",
+          "question": "Wie sollen Medikamente gelagert werden?",
+          "options": [
+            "Warm und feucht",
+            "Kuehl, trocken und kindersicher",
+            "Im Kuehlschrank ohne Verpackung",
+            "Im Badezimmerschrank"
+          ],
+          "answer": "Kuehl, trocken und kindersicher"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_26",
+      "lessonId": "B2_lesson_8",
+      "level": "B2",
+      "title": "Rollenspiel: Arzt-Patienten-Gespraech",
+      "script": "Guten Morgen, Herr Richter, setzen Sie sich. Was kann ich fuer Sie tun? \"Herr Doktor, ich habe seit drei Wochen starke Rueckenschmerzen. Besonders morgens nach dem Aufstehen.\" Haben Sie schon etwas dagegen unternommen? \"Ich habe Wärmepflaster ausprobiert, aber die helfen nur kurz.\" Dann werden wir das genauer untersuchen. Ich gebe Ihnen erstmal ein Rezept fuer entzuendungshemmende Salbe. Ausserdem ueberweise ich Sie zur Physiotherapie. Wenn die Schmerzen nach zwei Wochen nicht besser werden, machen wir ein MRT.",
+      "questions": [
+        {
+          "id": "b2l26a",
+          "type": "mcq",
+          "question": "Seit wann hat Herr Richter Rueckenschmerzen?",
+          "options": [
+            "Seit einer Woche",
+            "Seit zwei Wochen",
+            "Seit drei Wochen",
+            "Seit einem Monat"
+          ],
+          "answer": "Seit drei Wochen"
+        },
+        {
+          "id": "b2l26b",
+          "type": "true-false",
+          "question": "Der Patient hat bereits Waermepflaster ausprobiert.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l26c",
+          "type": "mcq",
+          "question": "Was bekommt der Patient vom Arzt?",
+          "options": [
+            "Ein Rezept fuer Schmerztabletten",
+            "Ein Rezept fuer Salbe und eine Ueberweisung",
+            "Eine sofortige Operation",
+            "Krankengymnastik nur"
+          ],
+          "answer": "Ein Rezept fuer Salbe und eine Ueberweisung"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_27",
+      "lessonId": "B2_lesson_1",
+      "level": "B2",
+      "title": "Workshop: Die perfekte Bewerbungsmappe",
+      "script": "Herzlich willkommen zum Workshop Berufseinstieg im Gesundheitswesen. Heute zeige ich Ihnen, wie eine erfolgreiche Bewerbungsmappe aussieht. Das Anschreiben sollte maximal eine Seite lang sein und auf die Stelle zugeschnitten werden. Vermeiden Sie Floskeln wie \"Hiermit bewerbe ich mich\". Der Lebenslauf kommt in tabellarischer Form und ohne Luecken. Fuegen Sie relevante Zeugnisse und Nachweise bei. Ganz wichtig: Lassen Sie die Unterlagen von einer zweiten Person Korrektur lesen. Rechtschreibfehler sind ein haeufiger Ablehnungsgrund.",
+      "questions": [
+        {
+          "id": "b2l27a",
+          "type": "mcq",
+          "question": "Wie lang sollte das Anschreiben maximal sein?",
+          "options": [
+            "Eine halbe Seite",
+            "Eine Seite",
+            "Zwei Seiten",
+            "Drei Seiten"
+          ],
+          "answer": "Eine Seite"
+        },
+        {
+          "id": "b2l27b",
+          "type": "true-false",
+          "question": "Der Lebenslauf soll in tabellarischer Form sein.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l27c",
+          "type": "mcq",
+          "question": "Was ist ein haeufiger Ablehnungsgrund?",
+          "options": [
+            "Zu viele Zeugnisse",
+            "Rechtschreibfehler",
+            "Zu lange Berufserfahrung",
+            "Farbige Bewerbungen"
+          ],
+          "answer": "Rechtschreibfehler"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_28",
+      "lessonId": "B2_lesson_4",
+      "level": "B2",
+      "title": "Vorbereitungskurs: Das Vorstellungsgespraech",
+      "script": "Herzlich willkommen zu unserem Kurs zur Vorbereitung auf das Vorstellungsgespraech. Ich bin Ihr Trainer und gebe Ihnen heute die wichtigsten Tipps. Bereiten Sie sich gut vor: Informieren Sie sich ueber das Krankenhaus, bei dem Sie sich bewerben. Ueben Sie typische Fragen, zum Beispiel: \"Was sind Ihre Staerken und Schwaechen?\" Wichtig ist auch die Koerpersprache: Sitzen Sie aufrecht, schauen Sie Ihrem Gespraechspartner in die Augen. Stellen Sie am Ende eigene Fragen, das zeigt Interesse. Und vergessen Sie nicht: Das Gespraech ist keine Pruefung, sondern ein Kennenlernen auf Augenhöhe.",
+      "questions": [
+        {
+          "id": "b2l28a",
+          "type": "mcq",
+          "question": "Was ist ein wichtiger Vorbereitungstipp?",
+          "options": [
+            "Nichts ueber das Krankenhaus wissen",
+            "Sich ueber das Krankenhaus informieren",
+            "Alte Bewerbung wiederverwenden",
+            "Zu spaet kommen"
+          ],
+          "answer": "Sich ueber das Krankenhaus informieren"
+        },
+        {
+          "id": "b2l28b",
+          "type": "mcq",
+          "question": "Was wird zur Koerpersprache empfohlen?",
+          "options": [
+            "Auf den Boden schauen",
+            "Aufrecht sitzen und Augenkontakt halten",
+            "Die Arme verschraenken",
+            "Auf dem Stuhl wippen"
+          ],
+          "answer": "Aufrecht sitzen und Augenkontakt halten"
+        },
+        {
+          "id": "b2l28c",
+          "type": "true-false",
+          "question": "Das Vorstellungsgespraech ist eine Pruefung.",
+          "answer": "false"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_29",
+      "lessonId": "B2_lesson_21",
+      "level": "B2",
+      "title": "Aufnahmeinterview: Entlassungsplanung",
+      "script": "Guten Tag, Frau Dr. Bauer vom Entlassungsmanagement. Ich moechte mit Ihnen den Ablauf nach Ihrem Krankenhausaufenthalt besprechen. Sie werden voraussichtlich am Freitag entlassen. Brauchen Sie zu Hause Unterstützung? \"Ja, ich wohne alleine und habe Probleme beim Treppensteigen.\" Dann organisieren wir einen Pflegedienst, der zweimal taeglich vorbeikommt. Auch eine Haushaltshilfe koennen wir beantragen. Ausserdem bekommen Sie einen Reha-Sport verschrieben. Die Unterlagen gebe ich Ihnen am Entlassungstag. Haben Sie noch Fragen? \"Nein, das klingt gut, vielen Dank.\"",
+      "questions": [
+        {
+          "id": "b2l29a",
+          "type": "mcq",
+          "question": "An welchem Tag wird die Patientin voraussichtlich entlassen?",
+          "options": [
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag"
+          ],
+          "answer": "Freitag"
+        },
+        {
+          "id": "b2l29b",
+          "type": "true-false",
+          "question": "Die Patientin wohnt alleine und hat Probleme beim Treppensteigen.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l29c",
+          "type": "mcq",
+          "question": "Was wird fuer die Patientin organisiert?",
+          "options": [
+            "Ein Pflegedienst und Reha-Sport",
+            "Ein Pflegeheimplatz",
+            "Eine Operation",
+            "Nur Medikamente"
+          ],
+          "answer": "Ein Pflegedienst und Reha-Sport"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_30",
+      "lessonId": "B2_lesson_12",
+      "level": "B2",
+      "title": "Aufklaerungsgespraech: Einwilligung zur OP",
+      "script": "Guten Tag, Herr Schmidt. Ich bin Oberarzt Dr. Wagner. Ich moechte Sie ueber den bevorstehenden Eingriff aufklaeren. Bei Ihnen wird eine Kniearthroskopie durchgefuehrt. Das ist ein minimalinvasiver Eingriff, bei dem wir durch zwei kleine Schnitte das Kniegelenk untersuchen und reparieren. Die OP dauert etwa 45 Minuten. Wie bei jedem Eingriff gibt es Risiken: Infektionen, Nachblutungen oder Thrombosen. Die Wahrscheinlichkeit ist aber gering. Haben Sie die Aufklaerungsbroschuere gelesen? \"Ja, habe ich.\" Gut, dann unterschreiben Sie bitte hier die Einwilligungserklaerung.",
+      "questions": [
+        {
+          "id": "b2l30a",
+          "type": "mcq",
+          "question": "Um welchen Eingriff handelt es sich?",
+          "options": [
+            "Eine Hüft-OP",
+            "Eine Kniearthroskopie",
+            "Eine Wirbelsaeulen-OP",
+            "Eine Schulter-OP"
+          ],
+          "answer": "Eine Kniearthroskopie"
+        },
+        {
+          "id": "b2l30b",
+          "type": "mcq",
+          "question": "Wie lange dauert die OP etwa?",
+          "options": [
+            "20 Minuten",
+            "30 Minuten",
+            "45 Minuten",
+            "60 Minuten"
+          ],
+          "answer": "45 Minuten"
+        },
+        {
+          "id": "b2l30c",
+          "type": "true-false",
+          "question": "Die Wahrscheinlichkeit von Komplikationen ist gering.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_31",
+      "lessonId": "B2_lesson_14",
+      "level": "B2",
+      "title": "Moderation: Teamkonflikt auf der Station",
+      "script": "Ich begruesse Sie zur Teamsitzung der Station Beta. Wir muessen ein Problem besprechen, das in den letzten Wochen immer wieder aufgetreten ist. Zwischen der Frueh- und Spaetschicht gibt es Spannungen, weil Uebergaben nicht richtig funktionieren. Die Fruehschicht sagt, sie habe keine Zeit fuer ausfuehrliche Berichte. Die Spaetschicht fuehlt sich schlecht informiert. Mein Vorschlag: Wir fuehren ein standardisiertes Uebergabeprotokoll ein. Das dauert fuenf Minuten, sorgt aber fuer Klarheit und weniger Fehler. Sind alle einverstanden? Dann probieren wir das ab naechster Woche aus.",
+      "questions": [
+        {
+          "id": "b2l31a",
+          "type": "mcq",
+          "question": "Wo gibt es Spannungen?",
+          "options": [
+            "Zwischen Aerzten und Pflege",
+            "Zwischen Frueh- und Spaetschicht",
+            "Zwischen Chirurgie und Innerer Medizin",
+            "Zwischen Verwaltung und Pflege"
+          ],
+          "answer": "Zwischen Frueh- und Spaetschicht"
+        },
+        {
+          "id": "b2l31b",
+          "type": "true-false",
+          "question": "Die Fruehschicht hat laut eigener Aussage keine Zeit fuer ausfuehrliche Berichte.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l31c",
+          "type": "mcq",
+          "question": "Was wird als Loesung vorgeschlagen?",
+          "options": [
+            "Mehr Personal einstellen",
+            "Ein standardisiertes Uebergabeprotokoll",
+            "Die Spaetschicht abschaffen",
+            "Weniger Patienten aufnehmen"
+          ],
+          "answer": "Ein standardisiertes Uebergabeprotokoll"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_32",
+      "lessonId": "B2_lesson_2",
+      "level": "B2",
+      "title": "Fachvortrag: Zusammenfassung einer Studie",
+      "script": "Ich moechte Ihnen heute die Ergebnisse einer aktuellen Studie aus dem New England Journal of Medicine vorstellen. Die Studie untersuchte die Wirksamkeit eines neuen Wirkstoffs gegen Migraene. In einer randomisierten kontrollierten Studie mit 1200 Patienten zeigte der Wirkstoff eine signifikante Reduktion der Migraeneta-ge um durchschnittlich 60 Prozent. Die Nebenwirkungen waren mild und beschraenkten sich auf Muedigkeit leichten Schwindel. Die Forscher betonen, dass weitere Studien noetig sind, um die Langzeitwirkungen zu untersuchen.",
+      "questions": [
+        {
+          "id": "b2l32a",
+          "type": "mcq",
+          "question": "Wie viele Patienten nahmen an der Studie teil?",
+          "options": [
+            "500",
+            "900",
+            "1200",
+            "2000"
+          ],
+          "answer": "1200"
+        },
+        {
+          "id": "b2l32b",
+          "type": "mcq",
+          "question": "Um wie viel Prozent wurden die Migraeneta-ge reduziert?",
+          "options": [
+            "40 Prozent",
+            "50 Prozent",
+            "60 Prozent",
+            "70 Prozent"
+          ],
+          "answer": "60 Prozent"
+        },
+        {
+          "id": "b2l32c",
+          "type": "true-false",
+          "question": "Eine weitere Studie ist nicht notwendig.",
+          "answer": "false"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_33",
+      "lessonId": "B2_lesson_16",
+      "level": "B2",
+      "title": "Gesundheitspodcast: Die besten Health-Apps",
+      "script": "Herzlich willkommen zu einer neuen Folge unseres Digital-Health-Podcasts. Heute testen wir drei Gesundheits-Apps. Die erste App heisst \"MediTracker\" und hilft bei der Medikamenteneinnahme. Sie erinnert an die Einnahme und dokumentiert, ob Tabletten genommen wurden. Die zweite App \"SleepWell\" ueberwacht die Schlafqualitaet. Das Highlight ist aber \"BlutCheck\". Die App analysiert mit der Handykamera den Blutdruck. Nicht so genau wie ein richtiges Geraet, sagt der Hersteller, aber gut fuer den Ueberblick. Alle drei Apps sind kostenlos im App Store erhaeltlich.",
+      "questions": [
+        {
+          "id": "b2l33a",
+          "type": "mcq",
+          "question": "Was kann die App MediTracker?",
+          "options": [
+            "Blutdruck messen",
+            "An die Medikamenteneinnahme erinnern und dokumentieren",
+            "Den Schlaf ueberwachen",
+            "Termine verwalten"
+          ],
+          "answer": "An die Medikamenteneinnahme erinnern und dokumentieren"
+        },
+        {
+          "id": "b2l33b",
+          "type": "true-false",
+          "question": "Die App BlutCheck misst den Blutdruck mit der Handykamera.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l33c",
+          "type": "mcq",
+          "question": "Was kosten die drei Apps?",
+          "options": [
+            "Sie kosten alle Geld",
+            "Sie sind kostenlos",
+            "Zwei sind kostenlos",
+            "Nur die erste ist kostenlos"
+          ],
+          "answer": "Sie sind kostenlos"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_34",
+      "lessonId": "B2_lesson_21",
+      "level": "B2",
+      "title": "Unterweisung: Hygieneplan der Klinik",
+      "script": "Guten Morgen, ich begruesse Sie zur jaehrlichen Hygieneschulung. Das ist fuer alle Mitarbeiter, die direkt mit Patienten arbeiten, verpflichtend. Die wichtigste Massnahme bleibt die Haendedesinfektion vor und nach jedem Patientenkontakt. Bitte beachten Sie: Kein Schmuck an Haenden und Unterarmen. Tragen Sie bei jedem Patientenkontakt Einmalhandschuhe. Antibiotikaresistente Keime nehmen zu, deshalb ist die Einhaltung der Hygieneregeln wichtiger denn je. Nach der Schulung gibt es einen kurzen Test. Wer besteht, bekommt eine Bescheinigung.",
+      "questions": [
+        {
+          "id": "b2l34a",
+          "type": "mcq",
+          "question": "Fuer wen ist die Hygieneschulung verpflichtend?",
+          "options": [
+            "Nur Aerzte",
+            "Nur Pflegekraefte",
+            "Alle Mitarbeiter mit direktem Patientenkontakt",
+            "Nur neue Mitarbeiter"
+          ],
+          "answer": "Alle Mitarbeiter mit direktem Patientenkontakt"
+        },
+        {
+          "id": "b2l34b",
+          "type": "mcq",
+          "question": "Was ist die wichtigste Hygienemassnahme?",
+          "options": [
+            "Desinfektion der Geraete",
+            "Haendedesinfektion vor und nach Patientenkontakt",
+            "Schutzkittel tragen",
+            "Fusssohlen desinfizieren"
+          ],
+          "answer": "Haendedesinfektion vor und nach Patientenkontakt"
+        },
+        {
+          "id": "b2l34c",
+          "type": "true-false",
+          "question": "Nach der Schulung gibt es einen kurzen Test.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_35",
+      "lessonId": "B2_lesson_14",
+      "level": "B2",
+      "title": "Infoabend: Gesund im Schichtdienst",
+      "script": "Guten Abend und herzlich willkommen zum Vortrag Gesund im Schichtdienst. Ich bin Schlafmediziner Dr. Nowak. Schichtarbeit belastet den Koerper, besonders den Schlaf-Wach-Rhythmus. Meine Empfehlungen: Halten Sie auch am freien Tag einen regelmaessigen Schlafrhythmus ein. Dunkeln Sie Ihr Schlafzimmer komplett ab. Vermeiden Sie schwere Mahlzeiten vor dem Schlafengehen und trinken Sie nach 14 Uhr keinen Kaffee mehr. Wichtig: Bei anhaltenden Schlafstoerungen suchen Sie einen Arzt auf. Das ist kein Zeichen von Schwaeche.",
+      "questions": [
+        {
+          "id": "b2l35a",
+          "type": "mcq",
+          "question": "Was belastet Schichtarbeit besonders?",
+          "options": [
+            "Den Blutdruck",
+            "Den Schlaf-Wach-Rhythmus",
+            "Die Verdauung",
+            "Das Sehvermoegen"
+          ],
+          "answer": "Den Schlaf-Wach-Rhythmus"
+        },
+        {
+          "id": "b2l35b",
+          "type": "true-false",
+          "question": "Man sollte nach 14 Uhr keinen Kaffee mehr trinken.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l35c",
+          "type": "mcq",
+          "question": "Wie sollen anhaltende Schlafstoerungen behandelt werden?",
+          "options": [
+            "Mit Schlafmitteln aus der Apotheke",
+            "Durch einen Arztbesuch",
+            "Durch mehr Sport",
+            "Durch frueheres Zubettgehen"
+          ],
+          "answer": "Durch einen Arztbesuch"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_36",
+      "lessonId": "B2_lesson_12",
+      "level": "B2",
+      "title": "Telefonat: Patientenbeschwerde",
+      "script": "Guten Tag, Beschwerdemanagement des Klinikums, mein Name ist Schubert. \"Guten Tag, ich bin Frau Krueger. Mein Vater war letzte Woche bei Ihnen auf Station zehn. Ich bin sehr unzufrieden.\" Was war das Problem? \"Niemand hat uns ueber die Entlassung informiert. Wir wurden voellig ueberrascht, als er ploetzlich zu Hause stand.\" Das tut mir leid. Normalerweise bekommen Angehoerige am Tag vor der Entlassung einen Anruf. Ich werde den Vorfall an die Stationsleitung weiterleiten. \"Danke, das moechte ich.\"",
+      "questions": [
+        {
+          "id": "b2l36a",
+          "type": "mcq",
+          "question": "Worueber beschwert sich Frau Krueger?",
+          "options": [
+            "Ueber das Essen",
+            "Ueber die fehlende Information zur Entlassung",
+            "Ueber die Wartezeit",
+            "Ueber die Reinigung"
+          ],
+          "answer": "Ueber die fehlende Information zur Entlassung"
+        },
+        {
+          "id": "b2l36b",
+          "type": "mcq",
+          "question": "Normalerweise bekommen Angehoerige wann einen Anruf?",
+          "options": [
+            "Am Tag der Entlassung",
+            "Am Tag vor der Entlassung",
+            "Eine Woche vorher",
+            "Gar nicht"
+          ],
+          "answer": "Am Tag vor der Entlassung"
+        },
+        {
+          "id": "b2l36c",
+          "type": "true-false",
+          "question": "Der Mitarbeiter leitet den Vorfall an die Stationsleitung weiter.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_37",
+      "lessonId": "B2_lesson_16",
+      "level": "B2",
+      "title": "Anleitung: Blutdruckmessgeraet bedienen",
+      "script": "Willkommen zur Einweisung in das neue Blutdruckmessgeraet Modell Meditec 3000. Bitte legen Sie die Manschette etwa zwei Zentimeter oberhalb der Ellenbeuge an. Die Manschette sollte fest sitzen, aber nicht einschnueren. Druecken Sie dann die Starttaste. Das Geraet pumpt automatisch auf und zeigt nach etwa 30 Sekunden den Blutdruck an. Wichtig: Messen Sie immer am selben Arm und zur selben Tageszeit. Fuehren Sie vor der Messung keine anstrengenden Taetigkeiten aus. Bei Fehlermeldung E4 ist die Manschette nicht richtig angebracht.",
+      "questions": [
+        {
+          "id": "b2l37a",
+          "type": "mcq",
+          "question": "Wo wird die Manschette angebracht?",
+          "options": [
+            "Am Handgelenk",
+            "Zwei Zentimeter oberhalb der Ellenbeuge",
+            "Am Oberarm oben",
+            "Am Unterarm"
+          ],
+          "answer": "Zwei Zentimeter oberhalb der Ellenbeuge"
+        },
+        {
+          "id": "b2l37b",
+          "type": "true-false",
+          "question": "Das Geraet zeigt nach etwa 30 Sekunden den Blutdruck an.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l37c",
+          "type": "mcq",
+          "question": "Was bedeutet die Fehlermeldung E4?",
+          "options": [
+            "Batterie leer",
+            "Manschette nicht richtig angebracht",
+            "Blutdruck zu hoch",
+            "Geraet defekt"
+          ],
+          "answer": "Manschette nicht richtig angebracht"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_38",
+      "lessonId": "B2_lesson_10",
+      "level": "B2",
+      "title": "Ablehnungsbescheid der Krankenkasse",
+      "script": "Guten Tag, hier spricht Frau Lorenz von der AOK. Ich habe Ihren Antrag auf Kostenuebernahme fuer die Reha geprueft. Leider muss ich Ihnen mitteilen, dass wir die Kosten nicht uebernehmen koennen. Die Begruendung: Die beantragte Reha-Einrichtung ist nicht in unserem Vertragsnetz. Bitte lassen Sie sich von Ihrem Hausarzt eine Verordnung fuer eine Vertragseinrichtung ausstellen. Sie haben ab Erhalt dieses Bescheids vier Wochen Zeit, Widerspruch einzulegen. Moechten Sie, dass ich Ihnen die Details zuschicke?",
+      "questions": [
+        {
+          "id": "b2l38a",
+          "type": "mcq",
+          "question": "Warum uebernimmt die Krankenkasse die Kosten nicht?",
+          "options": [
+            "Die Reha ist nicht noetig",
+            "Die Einrichtung ist nicht im Vertragsnetz",
+            "Der Antrag war zu spaet",
+            "Die Versicherung wurde gekuendigt"
+          ],
+          "answer": "Die Einrichtung ist nicht im Vertragsnetz"
+        },
+        {
+          "id": "b2l38b",
+          "type": "mcq",
+          "question": "Wie viel Zeit hat der Patient fuer einen Widerspruch?",
+          "options": [
+            "Zwei Wochen",
+            "Drei Wochen",
+            "Vier Wochen",
+            "Sechs Wochen"
+          ],
+          "answer": "Vier Wochen"
+        },
+        {
+          "id": "b2l38c",
+          "type": "true-false",
+          "question": "Der Arzt muss eine Verordnung fuer eine Vertragseinrichtung ausstellen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_39",
+      "lessonId": "B2_lesson_6",
+      "level": "B2",
+      "title": "Sicherheitsunterweisung: Arbeiten im Labor",
+      "script": "Herzlich willkommen zur Sicherheitsunterweisung fuer das medizinische Labor. Bitte beachten Sie folgende Regeln: Tragen Sie immer einen Laborkittel und geschlossene Schuhe. Essen und Trinken ist im Labor strengstens verboten. Arbeiten Sie mit infektiösem Material nur unter der Sicherheitswerkbank. Nach der Arbeit desinfizieren Sie Ihre Arbeitsflaeche. Alle Abfaelle muessen getrennt entsorgt werden: Restmuell, Glas und Spitzenbehaelter. Bei einem Unfall benachrichtigen Sie sofort den Labormanager und betätigen Sie die Notdusche.",
+      "questions": [
+        {
+          "id": "b2l39a",
+          "type": "mcq",
+          "question": "Was ist im Labor strengstens verboten?",
+          "options": [
+            "Telefonieren",
+            "Essen und Trinken",
+            "Lautes Reden",
+            "Allein arbeiten"
+          ],
+          "answer": "Essen und Trinken"
+        },
+        {
+          "id": "b2l39b",
+          "type": "true-false",
+          "question": "Arbeiten mit infektioesem Material sind unter der Sicherheitswerkbank erlaubt.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l39c",
+          "type": "mcq",
+          "question": "Was soll man bei einem Unfall tun?",
+          "options": [
+            "Warten, bis jemand kommt",
+            "Den Labormanager informieren und die Notdusche betätigen",
+            "Selbst weggehen",
+            "Die Polizei rufen"
+          ],
+          "answer": "Den Labormanager informieren und die Notdusche betätigen"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_40",
+      "lessonId": "B2_lesson_20",
+      "level": "B2",
+      "title": "Personalgespraech: Psychische Belastung am Arbeitsplatz",
+      "script": "Guten Tag, Herr Saenger, danke, dass Sie gekommen sind. Unser Betriebsarzt hat mir Ihre Krankschreibung gezeigt. Sechs Wochen wegen Burnout, das ist eine lange Zeit. \"Ja, ich habe lange versucht, weiterzuarbeiten, aber es ging nicht mehr.\" Das verstehe ich. Wir bieten allen Mitarbeitern ein vertrauliches Gespraech mit der psychologischen Beratungsstelle an. Ausserdem koennen Sie staerker von der flexiblen Arbeitszeitregelung profitieren. Und ganz wichtig: Wir besprechen nach Ihrer Rueckkehr gemeinsam, wie wir Ihre Aufgaben besser verteilen koennen.",
+      "questions": [
+        {
+          "id": "b2l40a",
+          "type": "mcq",
+          "question": "Wie lange ist Herr Saenger krankgeschrieben?",
+          "options": [
+            "Zwei Wochen",
+            "Vier Wochen",
+            "Sechs Wochen",
+            "Acht Wochen"
+          ],
+          "answer": "Sechs Wochen"
+        },
+        {
+          "id": "b2l40b",
+          "type": "true-false",
+          "question": "Die Klinik bietet ein Gespraech mit der psychologischen Beratungsstelle an.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l40c",
+          "type": "mcq",
+          "question": "Was wird nach der Rueckkehr besprochen?",
+          "options": [
+            "Ob Herr Saenger gekuendigt wird",
+            "Wie die Aufgaben besser verteilt werden",
+            "Ob die Arbeitszeit reduziert wird",
+            "Ob ein Arbeitsplatzwechsel noetig ist"
+          ],
+          "answer": "Wie die Aufgaben besser verteilt werden"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_41",
+      "lessonId": "B2_lesson_9",
+      "level": "B2",
+      "title": "Beratungsgespraech: Ernaehrung bei Diabetes",
+      "script": "Guten Tag, Frau Weiss, ich bin Ihre Ernaehrungsberaterin. Sie haben neu diagnostizierten Diabetes Typ 2. Keine Sorge, mit der richtigen Ernaehrung koennen Sie viel erreichen. Wichtig ist: Essen Sie regelmaessig, drei Hauptmahlzeiten pro Tag. Vermeiden Sie zuckerhaltige Getraenke und stark verarbeitete Lebensmittel. Setzen Sie auf Vollkornprodukte, Gemuese und mageres Eiweiss. Notieren Sie zwei Wochen lang, was Sie essen, dann sehen wir gemeinsam, wo wir ansetzen koennen. Bewegung ist auch wichtig: 30 Minuten Spaziergang taeglich wirken Wunder.",
+      "questions": [
+        {
+          "id": "b2l41a",
+          "type": "mcq",
+          "question": "Wie viele Hauptmahlzeiten werden empfohlen?",
+          "options": [
+            "Zwei",
+            "Drei",
+            "Vier",
+            "Fuenf"
+          ],
+          "answer": "Drei"
+        },
+        {
+          "id": "b2l41b",
+          "type": "mcq",
+          "question": "Was sollen die Patienten zwei Wochen lang notieren?",
+          "options": [
+            "Die Blutzuckerwerte",
+            "Was sie essen",
+            "Das Gewicht",
+            "Den Blutdruck"
+          ],
+          "answer": "Was sie essen"
+        },
+        {
+          "id": "b2l41c",
+          "type": "true-false",
+          "question": "30 Minuten taeglicher Spaziergang wird empfohlen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_42",
+      "lessonId": "B2_lesson_3",
+      "level": "B2",
+      "title": "Arztvortrag: Impfempfehlungen fuer Erwachsene",
+      "script": "Guten Abend, meine Damen und Herren. Heute geht es um Impfungen fuer Erwachsene. Viele denken, Impfungen seien nur fuer Kinder wichtig. Das ist nicht richtig. Die Staendige Impfkommission empfiehlt allen Erwachsenen ab 60 Jahren eine Grippeimpfung und eine Impfung gegen Pneumokokken. Alle fuenf Jahre sollte der Tetanus- und Diphtherie-Schutz aufgefrischt werden. Die Impfung gegen FSME wird fuer Menschen empfohlen, die in Risikogebieten wohnen oder dorthin reisen. Lassen Sie Ihren Impfausweis regelmaessig vom Hausarzt ueberpruefen.",
+      "questions": [
+        {
+          "id": "b2l42a",
+          "type": "mcq",
+          "question": "Ab welchem Alter wird die Grippeimpfung empfohlen?",
+          "options": [
+            "Ab 50",
+            "Ab 55",
+            "Ab 60",
+            "Ab 65"
+          ],
+          "answer": "Ab 60"
+        },
+        {
+          "id": "b2l42b",
+          "type": "mcq",
+          "question": "Wie oft sollte der Tetanus- und Diphtherie-Schutz aufgefrischt werden?",
+          "options": [
+            "Jedes Jahr",
+            "Alle drei Jahre",
+            "Alle fuenf Jahre",
+            "Alle zehn Jahre"
+          ],
+          "answer": "Alle fuenf Jahre"
+        },
+        {
+          "id": "b2l42c",
+          "type": "true-false",
+          "question": "Die FSME-Impfung wird fuer Menschen in Risikogebieten empfohlen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_43",
+      "lessonId": "B2_lesson_5",
+      "level": "B2",
+      "title": "Patienteninfo: Videosprechstunde",
+      "script": "Herzlich willkommen zur Videosprechstunde der Praxis Dres. Hoffmann. Sie haben heute einen Termin per Video. Bitte achten Sie auf folgende Punkte: Sorgen Sie fuer eine ruhige Umgebung und eine gute Internetverbindung. Halten Sie Ihre Versicherungskarte und eine Liste Ihrer aktuellen Medikamente bereit. Die Videosprechstunde ersetzt nicht den persoenlichen Arztbesuch, ist aber sehr gut geeignet fuer Verlaufskontrollen und Folgerezepte. Nach dem Gespraech erhalten Sie ein Rezept per Post oder elektronisch. Bei technischen Problemen waehlen Sie bitte die Praxisnummer.",
+      "questions": [
+        {
+          "id": "b2l43a",
+          "type": "mcq",
+          "question": "Was soll der Patient bereithalten?",
+          "options": [
+            "Das letzte Rezept",
+            "Die Versicherungskarte und eine Medikamentenliste",
+            "Einen Impfpass",
+            "Eine Ueberweisung"
+          ],
+          "answer": "Die Versicherungskarte und eine Medikamentenliste"
+        },
+        {
+          "id": "b2l43b",
+          "type": "true-false",
+          "question": "Die Videosprechstunde ersetzt den persoenlichen Arztbesuch komplett.",
+          "answer": "false"
+        },
+        {
+          "id": "b2l43c",
+          "type": "mcq",
+          "question": "Wie erhaelt der Patient das Rezept?",
+          "options": [
+            "Nur per Post",
+            "Per Post oder elektronisch",
+            "Nur elektronisch",
+            "Muss es selbst abholen"
+          ],
+          "answer": "Per Post oder elektronisch"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_44",
+      "lessonId": "B2_lesson_7",
+      "level": "B2",
+      "title": "Sitzung: Ethikkommission der Universitaetsklinik",
+      "script": "Ich eroeffne die Sitzung der Ethikkommission. Wir besprechen heute den Antrag zur Studie ueber ein neues Medikament gegen Alzheimer. Die Studie umfasst 200 Patienten ueber 65 Jahre. Wichtige ethische Fragen: Ist die Einwilligung der Patienten gewaehrleistet, auch bei beginnender Demenz? Der Antragsteller schlaegt vor, dass ein Betreuer zustimmen muss, falls der Patient nicht mehr einwilligungsfaehig ist. Die Kommission wird zudem die Datenschutzmassnahmen pruefen. Wir stimmen in 30 Minuten ab. Ich bitte um eine sachliche Diskussion.",
+      "questions": [
+        {
+          "id": "b2l44a",
+          "type": "mcq",
+          "question": "Wie viele Patienten sind in der geplanten Studie?",
+          "options": [
+            "100",
+            "150",
+            "200",
+            "300"
+          ],
+          "answer": "200"
+        },
+        {
+          "id": "b2l44b",
+          "type": "mcq",
+          "question": "Was schlaegt der Antragsteller bei nicht einwilligungsfaehigen Patienten vor?",
+          "options": [
+            "Die Studie abbrechen",
+            "Dass ein Betreuer zustimmen muss",
+            "Aeltere Patienten ausschliessen",
+            "Nur gesunde Probanden nehmen"
+          ],
+          "answer": "Dass ein Betreuer zustimmen muss"
+        },
+        {
+          "id": "b2l44c",
+          "type": "true-false",
+          "question": "Die Kommission wird in 30 Minuten abstimmen.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_45",
+      "lessonId": "B2_lesson_21",
+      "level": "B2",
+      "title": "Entlassungsgespraech mit der Pflegefachkraft",
+      "script": "Guten Morgen, Frau Hoffmann, ich bin Schwester Sabine und werde mit Ihnen das Entlassungsgespraech fuehren. Sie duerfen heute nach Hause. Ich gebe Ihnen alle wichtigen Informationen. Sie bekommen einen Medikamentenplan, auf dem genau steht, welche Tabletten Sie wann nehmen muessen. Die naechste Kontrolle beim Hausarzt ist in zwei Wochen. Bitte vergessen Sie nicht, dort einen Termin zu machen. Falls Sie Fragen haben, koennen Sie uns taeglich zwischen acht und sechzehn Uhr anrufen. Hier ist der Entlassungsbrief fuer Ihren Hausarzt.",
+      "questions": [
+        {
+          "id": "b2l45a",
+          "type": "mcq",
+          "question": "Wann ist die naechste Kontrolle beim Hausarzt?",
+          "options": [
+            "In einer Woche",
+            "In zwei Wochen",
+            "In drei Wochen",
+            "In einem Monat"
+          ],
+          "answer": "In zwei Wochen"
+        },
+        {
+          "id": "b2l45b",
+          "type": "true-false",
+          "question": "Die Patientin bekommt einen Medikamentenplan.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l45c",
+          "type": "mcq",
+          "question": "Wann koennen Patienten anrufen, wenn sie Fragen haben?",
+          "options": [
+            "Rund um die Uhr",
+            "Von acht bis zweiundzwanzig Uhr",
+            "Von acht bis sechzehn Uhr",
+            "Nur an Wochentagen"
+          ],
+          "answer": "Von acht bis sechzehn Uhr"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_46",
+      "lessonId": "B2_lesson_2",
+      "level": "B2",
+      "title": "Ankuendigung: Deutscher Aerztekongress",
+      "script": "Sehr geehrte Damen und Herren, ich darf Ihnen den diesjaehrigen Deutschen Aerztekongress ankündigen. Er findet vom 15. bis 17. Oktober in der Messe Berlin statt. Schwerpunktthemen sind diesmal die Digitalisierung in der Medizin und der aerztliche Nachwuchs. Es werden ueber 5000 Teilnehmer aus dem gesamten deutschsprachigen Raum erwartet. Fruehbucher erhalten bis zum 31. Juli einen Rabatt von 20 Prozent. Studierende der Medizin zahlen einen ermaessigten Beitrag von 80 Euro. Weitere Informationen finden Sie auf unserer Webseite.",
+      "questions": [
+        {
+          "id": "b2l46a",
+          "type": "mcq",
+          "question": "Wann findet der Deutsche Aerztekongress statt?",
+          "options": [
+            "Vom 10. bis 12. September",
+            "Vom 15. bis 17. Oktober",
+            "Vom 20. bis 22. November",
+            "Vom 5. bis 7. Dezember"
+          ],
+          "answer": "Vom 15. bis 17. Oktober"
+        },
+        {
+          "id": "b2l46b",
+          "type": "mcq",
+          "question": "Wie viel betraegt der Fruehbucherrabatt?",
+          "options": [
+            "10 Prozent",
+            "15 Prozent",
+            "20 Prozent",
+            "25 Prozent"
+          ],
+          "answer": "20 Prozent"
+        },
+        {
+          "id": "b2l46c",
+          "type": "true-false",
+          "question": "Medizinstudierende zahlen einen ermaessigten Beitrag.",
+          "answer": "true"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_47",
+      "lessonId": "B2_lesson_12",
+      "level": "B2",
+      "title": "Durchsage: Besuchsregeln fuer Besucher",
+      "script": "Achtung, eine Durchsage fuer alle Besucher der Klinik. Bitte beachten Sie unsere aktuellen Besuchsregeln. Die Besuchszeit ist taeglich von 14 bis 19 Uhr. Es duerfen maximal zwei Besucher gleichzeitig am Bett eines Patienten sein. Bitte fuehren Sie keine lauten Gespraeche auf den Fluren. Besucher mit Husten Schnupfen oder Fieber duerfen die Station nicht betreten. Vor Betreten und Verlassen der Station desinfizieren Sie bitte Ihre Haende. Kinder unter sechs Jahren duerfen nur in Begleitung eines Erwachsenen auf die Station.",
+      "questions": [
+        {
+          "id": "b2l47a",
+          "type": "mcq",
+          "question": "Wie lange dauert die Besuchszeit taeglich?",
+          "options": [
+            "Von 10 bis 16 Uhr",
+            "Von 14 bis 19 Uhr",
+            "Von 15 bis 18 Uhr",
+            "Von 12 bis 20 Uhr"
+          ],
+          "answer": "Von 14 bis 19 Uhr"
+        },
+        {
+          "id": "b2l47b",
+          "type": "true-false",
+          "question": "Es duerfen maximal vier Besucher gleichzeitig am Bett sein.",
+          "answer": "false"
+        },
+        {
+          "id": "b2l47c",
+          "type": "mcq",
+          "question": "Wer darf die Station nicht betreten?",
+          "options": [
+            "Besucher ohne Ausweis",
+            "Besucher mit Husten, Schnupfen oder Fieber",
+            "Besucher ueber 70 Jahre",
+            "Besucher aus dem Ausland"
+          ],
+          "answer": "Besucher mit Husten, Schnupfen oder Fieber"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_48",
+      "lessonId": "B2_lesson_3",
+      "level": "B2",
+      "title": "Radiospot: Organspendeaktion",
+      "script": "Dieser Beitrag wird Ihnen praesentiert von der Deutschen Stiftung Organtransplantation. Wissen Sie, dass in Deutschland ueber achttausend Menschen auf ein Spenderorgan warten? Taeglich sterben drei von ihnen, weil nicht genug Organe verfuegbar sind. Dabei kann jeder ab 16 Jahren einen Organspendeausweis ausfuellen. Sie koennen den Ausweis online bestellen oder in Ihrer Arztpraxis abholen. Tragen Sie Ihre Entscheidung mit sich – das kann im Ernstfall Leben retten. Informieren Sie sich auch Ihre Familie ueber Ihren Willen. Es geht um Solidaritaet.",
+      "questions": [
+        {
+          "id": "b2l48a",
+          "type": "mcq",
+          "question": "Wie viele Menschen warten in Deutschland auf ein Spenderorgan?",
+          "options": [
+            "Ueber dreitausend",
+            "Ueber fuenftausend",
+            "Ueber achttausend",
+            "Ueber zehntausend"
+          ],
+          "answer": "Ueber achttausend"
+        },
+        {
+          "id": "b2l48b",
+          "type": "true-false",
+          "question": "Taeglich sterben drei Menschen, weil nicht genug Organe verfuegbar sind.",
+          "answer": "true"
+        },
+        {
+          "id": "b2l48c",
+          "type": "mcq",
+          "question": "Ab welchem Alter kann man einen Organspendeausweis ausfuellen?",
+          "options": [
+            "Ab 14 Jahren",
+            "Ab 16 Jahren",
+            "Ab 18 Jahren",
+            "Ab 21 Jahren"
+          ],
+          "answer": "Ab 16 Jahren"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_49",
+      "lessonId": "B2_lesson_8",
+      "level": "B2",
+      "title": "Stellenanzeige: Assistenzarzt gesucht",
+      "script": "Das Staedtische Klinikum Muenchen sucht zum naechstmoeglichen Zeitpunkt einen Assistenzarzt fuer die Innere Medizin. Die Stelle ist zunaechst auf zwei Jahre befristet mit der Option auf Verlaengerung. Wir bieten eine strukturierte Weiterbildung mit Rotation durch alle Fachbereiche, moderne Arbeitsplaetze und eine faire Verguetung nach Tarif. Voraussetzungen sind ein abgeschlossenes Medizinstudium und die Approbation. Erste klinische Erfahrung ist von Vorteil, aber nicht zwingend erforderlich. Initiativbewerbungen sind jederzeit willkommen. Wir freuen uns auf Ihre Unterlagen.",
+      "questions": [
+        {
+          "id": "b2l49a",
+          "type": "mcq",
+          "question": "Wie lange ist die Stelle zunaechst befristet?",
+          "options": [
+            "Ein Jahr",
+            "18 Monate",
+            "Zwei Jahre",
+            "Drei Jahre"
+          ],
+          "answer": "Zwei Jahre"
+        },
+        {
+          "id": "b2l49b",
+          "type": "true-false",
+          "question": "Erste klinische Erfahrung ist zwingend erforderlich.",
+          "answer": "false"
+        },
+        {
+          "id": "b2l49c",
+          "type": "mcq",
+          "question": "Was bietet das Klinikum?",
+          "options": [
+            "Ein Auto zur Verfuegung",
+            "Einen Dienstwagen",
+            "Strukturierte Weiterbildung und faire Verguetung",
+            "Eine Wohnung"
+          ],
+          "answer": "Strukturierte Weiterbildung und faire Verguetung"
+        }
+      ]
+    },
+    {
+      "id": "B2_listen_50",
+      "lessonId": "B2_lesson_25",
+      "level": "B2",
+      "title": "Workshop: Interkulturelle Kompetenz",
+      "script": "Herzlich willkommen zum Workshop Interkulturelle Kompetenz im Krankenhaus. Ich bin Ihre Trainerin Frau Yilmaz. Wir arbeiten heute an drei Zielen: Erstens, Verstaendnis fuer kulturelle Unterschiede entwickeln. Zweitens, typische Missverstaendnisse erkennen und drittens, praktische Loesungen finden. Ein Beispiel: In manchen Kulturen ist es unueblich, dass eine Aerztin allein behandelt. Loesung: Fragen Sie den Patienten hoeflich nach seinen Wuenschen. Wir ueben gleich in Rollenspielen. Bitte haben Sie keine Scheu, Fehler zu machen. Der erste Schritt ist das Bewusstsein fuer die Unterschiede.",
+      "questions": [
+        {
+          "id": "b2l50a",
+          "type": "mcq",
+          "question": "Wie viele Ziele hat der Workshop?",
+          "options": [
+            "Zwei",
+            "Drei",
+            "Vier",
+            "Fuenf"
+          ],
+          "answer": "Drei"
+        },
+        {
+          "id": "b2l50b",
+          "type": "mcq",
+          "question": "Was ist eine praktische Loesung bei kulturellen Unterschieden?",
+          "options": [
+            "Nur maennliche Aerzte einsetzen",
+            "Den Patienten nach seinen Wuenschen fragen",
+            "Standardisiert behandeln",
+            "Keine auslaendischen Patienten aufnehmen"
+          ],
+          "answer": "Den Patienten nach seinen Wuenschen fragen"
+        },
+        {
+          "id": "b2l50c",
+          "type": "true-false",
+          "question": "Im Workshop wird in Rollenspielen geuebt.",
+          "answer": "true"
+        }
       ]
     }
   ],
@@ -5956,7 +7795,7 @@
     {
       "id": "C1_listen_1",
       "title": "Interview: Digitalisierung im Krankenhaus",
-      "script": "Moderator: Der Chefarzt der Orthopädie, Professor Wagner, ist heute bei uns. Herr Professor, wie digital arbeitet Ihre Klinik?\nProf. Wagner: Wir haben vor zwei Jahren ein neues Krankenhausinformationssystem eingeführt. Die Patientenakten sind jetzt vollständig digital. Das hat die Arbeitsabläufe deutlich verbessert. Allerdings gibt es noch Probleme mit der Schnittstelle zu den Praxen.\nModerator: Welche Vorteile sehen Sie für Ihre Patienten?\nProf. Wagner: Die gröÃŸte Verbesserung ist die Verfügbarkeit von Daten. Wenn ein Patient notfallmäÃŸig kommt, haben wir sofort Zugriff auf Vorerkrankungen, Medikation und Allergien. Das rettet im Zweifel Leben. Gleichzeitig müssen wir die Datensicherheit gewährleisten, was eine ständige Herausforderung darstellt.",
+      "script": "Moderator: Der Chefarzt der Orthopädie, Professor Wagner, ist heute bei uns. Herr Professor, wie digital arbeitet Ihre Klinik?\nProf. Wagner: Wir haben vor zwei Jahren ein neues Krankenhausinformationssystem eingeführt. Die Patientenakten sind jetzt vollständig digital. Das hat die Arbeitsabläufe deutlich verbessert. Allerdings gibt es noch Probleme mit der Schnittstelle zu den Praxen.\nModerator: Welche Vorteile sehen Sie für Ihre Patienten?\nProf. Wagner: Die größte Verbesserung ist die Verfügbarkeit von Daten. Wenn ein Patient notfallmäßig kommt, haben wir sofort Zugriff auf Vorerkrankungen, Medikation und Allergien. Das rettet im Zweifel Leben. Gleichzeitig müssen wir die Datensicherheit gewährleisten, was eine ständige Herausforderung darstellt.",
       "questions": [
         {
           "id": "lq31",
@@ -5979,7 +7818,7 @@
         {
           "id": "lq33",
           "type": "mcq",
-          "question": "Was ist der gröÃŸte Vorteil der Digitalisierung für Patienten?",
+          "question": "Was ist der größte Vorteil der Digitalisierung für Patienten?",
           "options": [
             "Schnellere Untersuchungen",
             "Verfügbarkeit von Daten im Notfall",
@@ -5988,7 +7827,9 @@
           ],
           "answer": "Verfügbarkeit von Daten im Notfall"
         }
-      ]
+      ],
+      "level": "C1",
+      "lessonId": "C1_lesson_3"
     },
     {
       "id": "C1_listen_2",
@@ -6025,29 +7866,31 @@
           "question": "Der Medizintourismus birgt keine Risiken für die lokale Gesundheitsversorgung.",
           "answer": "false"
         }
-      ]
+      ],
+      "level": "C1",
+      "lessonId": "C1_lesson_6"
     },
     {
       "id": "C1_listen_3",
-      "title": "Podiumsdiskussion: Approbation für ausländische Ã„rzte",
-      "script": "Podiumsmoderator: In Deutschland arbeiten über 50.000 ausländische Ã„rzte. Der Prozess der Anerkennung ist jedoch langwierig. Frau Dr. Ã–ztürk, Sie haben selbst diesen Weg durchlaufen.\nDr. Ã–ztürk: Ja, ich bin aus der Türkei gekommen. Der bürokratische Aufwand war enorm. Ich musste jede Urkunde übersetzen und beglaubigen lassen. Die Fachsprachprüfung war die gröÃŸte Hürde, obwohl ich schon C1 hatte. Der Ablauf ist: Dokumente einreichen, Ã„quivalenz prüfen, Kenntnisprüfung ablegen und dann die Approbation beantragen.\nModerator: Was würden Sie verbessern?\nDr. Ã–ztürk: Die Anerkennung sollte digitaler und transparenter werden. Viele Ã„rzte geben auf, weil sie nicht wissen, wie lange der Prozess dauert oder wo sie genau stehen.",
+      "title": "Podiumsdiskussion: Approbation für ausländische Ärzte",
+      "script": "Podiumsmoderator: In Deutschland arbeiten über 50.000 ausländische Ärzte. Der Prozess der Anerkennung ist jedoch langwierig. Frau Dr. Öztürk, Sie haben selbst diesen Weg durchlaufen.\nDr. Öztürk: Ja, ich bin aus der Türkei gekommen. Der bürokratische Aufwand war enorm. Ich musste jede Urkunde übersetzen und beglaubigen lassen. Die Fachsprachprüfung war die größte Hürde, obwohl ich schon C1 hatte. Der Ablauf ist: Dokumente einreichen, Äquivalenz prüfen, Kenntnisprüfung ablegen und dann die Approbation beantragen.\nModerator: Was würden Sie verbessern?\nDr. Öztürk: Die Anerkennung sollte digitaler und transparenter werden. Viele Ärzte geben auf, weil sie nicht wissen, wie lange der Prozess dauert oder wo sie genau stehen.",
       "questions": [
         {
           "id": "lq37",
           "type": "mcq",
-          "question": "Wie viele ausländische Ã„rzte arbeiten in Deutschland?",
+          "question": "Wie viele ausländische Ärzte arbeiten in Deutschland?",
           "options": [
-            "Ãœber 10.000",
-            "Ãœber 30.000",
-            "Ãœber 50.000",
-            "Ãœber 100.000"
+            "Über 10.000",
+            "Über 30.000",
+            "Über 50.000",
+            "Über 100.000"
           ],
-          "answer": "Ãœber 50.000"
+          "answer": "ÿber 50.000"
         },
         {
           "id": "lq38",
           "type": "mcq",
-          "question": "Was war für Dr. Ã–ztürk die gröÃŸte Hürde?",
+          "question": "Was war für Dr. Öztürk die größte Hürde?",
           "options": [
             "Die Dokumentenbeschaffung",
             "Die Fachsprachprüfung",
@@ -6059,22 +7902,24 @@
         {
           "id": "lq39",
           "type": "true-false",
-          "question": "Dr. Ã–ztürk findet den Anerkennungsprozess gut strukturiert.",
+          "question": "Dr. Öztürk findet den Anerkennungsprozess gut strukturiert.",
           "answer": "false"
         },
         {
           "id": "lq40",
           "type": "mcq",
-          "question": "Was schlägt Dr. Ã–ztürk zur Verbesserung vor?",
+          "question": "Was schlägt Dr. Öztürk zur Verbesserung vor?",
           "options": [
-            "Weniger Ã„rzte aus dem Ausland",
+            "Weniger Ärzte aus dem Ausland",
             "Digitalisierung und mehr Transparenz",
             "Kürzere Prüfungen",
             "Mehr Sprachkurse"
           ],
           "answer": "Digitalisierung und mehr Transparenz"
         }
-      ]
+      ],
+      "level": "C1",
+      "lessonId": "C1_lesson_3"
     }
   ]
 }

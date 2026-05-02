@@ -12961,7 +12961,10 @@
       "type": "sentence-correction",
       "prompt": "Replace verb with noun: 'Weil er ankam, begann die Besprechung.'",
       "answer": "Aufgrund seiner Ankunft begann die Besprechung.",
-      "explanation": "Nominal style turns clauses into preposition + noun phrases."
+      "explanation": "Nominal style turns clauses into preposition + noun phrases.",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "topic": "Nominal Style"
     },
     {
       "id": "C1_gr_2",
@@ -12974,7 +12977,10 @@
         "Dank der Verspätung",
         "Trotz der Verspätung"
       ],
-      "answer": "Aufgrund der Verspätung"
+      "answer": "Aufgrund der Verspätung",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "topic": "Nominal Style"
     },
     {
       "id": "C1_gr_3",
@@ -12982,7 +12988,10 @@
       "type": "sentence-correction",
       "prompt": "Transform: 'Wenn man das berücksichtigt, ist die Lösung klar.' -> '___ dessen ist die Lösung klar.'",
       "answer": "Unter Berücksichtigung",
-      "explanation": "Prepositional nominal phrase replacing conditional clause."
+      "explanation": "Prepositional nominal phrase replacing conditional clause.",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "topic": "Sentence Transformation"
     },
     {
       "id": "C1_gr_4",
@@ -12995,7 +13004,10 @@
         "darüber",
         "wovon"
       ],
-      "answer": "worüber"
+      "answer": "worüber",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Advanced Relatives"
     },
     {
       "id": "C1_gr_5",
@@ -13008,7 +13020,10 @@
         "damit",
         "wem"
       ],
-      "answer": "mit dem"
+      "answer": "mit dem",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Advanced Relatives"
     },
     {
       "id": "C1_gr_6",
@@ -13016,7 +13031,10 @@
       "type": "fill-blank",
       "prompt": "Wenn ich doch mehr Zeit ___ (have - Konjunktiv II).",
       "answer": "hätte",
-      "explanation": "Irrealis wish: wenn + Konjunktiv II."
+      "explanation": "Irrealis wish: wenn + Konjunktiv II.",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Irrealis Wishes"
     },
     {
       "id": "C1_gr_7",
@@ -13024,7 +13042,10 @@
       "type": "fill-blank",
       "prompt": "Der ___ (zu behandeln - modal passive) Patient wartet.",
       "answer": "zu behandelnde",
-      "explanation": "zu + infinitive as modal adjective: 'the patient who needs to be treated'."
+      "explanation": "zu + infinitive as modal adjective: 'the patient who needs to be treated'.",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Modal Participles"
     },
     {
       "id": "C1_gr_8",
@@ -13032,7 +13053,10 @@
       "type": "fill-blank",
       "prompt": "Ein ___ (leicht zu lösen) Problem.",
       "answer": "leicht zu lösendes",
-      "explanation": "zu + infinitive extended adjective."
+      "explanation": "zu + infinitive extended adjective.",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Modal Participles"
     },
     {
       "id": "C1_gr_9",
@@ -13045,7 +13069,10 @@
         "Denn",
         "Folglich"
       ],
-      "answer": "Nämlich"
+      "answer": "Nämlich",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "Academic Connectors"
     },
     {
       "id": "C1_gr_10",
@@ -13058,7 +13085,10 @@
         "Trotzdem",
         "Folglich"
       ],
-      "answer": "Insofern"
+      "answer": "Insofern",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "Academic Connectors"
     },
     {
       "id": "C1_gr_11",
@@ -13066,15 +13096,21 @@
       "type": "sentence-correction",
       "prompt": "Replace passive with active alternative: 'Das wird von vielen bezweifelt.'",
       "answer": "Daran zweifeln viele.",
-      "explanation": "Use active verb instead of passive construction."
+      "explanation": "Use active verb instead of passive construction.",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "topic": "Passive Alternatives"
     },
     {
       "id": "C1_gr_12",
       "unit": "Gerundive",
       "type": "fill-blank",
-      "prompt": "Die ___ (durchzuführen) MaÃŸnahmen sind dringend.",
+      "prompt": "Die ___ (durchzuführen) Maßnahmen sind dringend.",
       "answer": "durchzuführenden",
-      "explanation": "Gerundive: zu + infinitive + d adjective ending = necessity."
+      "explanation": "Gerundive: zu + infinitive + d adjective ending = necessity.",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "topic": "Gerundive"
     },
     {
       "id": "C1_gr_13",
@@ -13088,7 +13124,10 @@
         "wäre"
       ],
       "answer": "sei",
-      "explanation": "Konjunktiv I for indirect speech when present tense."
+      "explanation": "Konjunktiv I for indirect speech when present tense.",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "topic": "Indirect Speech"
     },
     {
       "id": "C1_gr_14",
@@ -13101,7 +13140,10 @@
         "Wegen",
         "Innerhalb"
       ],
-      "answer": "Angesichts"
+      "answer": "Angesichts",
+      "level": "C1",
+      "lessonId": "C1_lesson_2",
+      "topic": "Complex Prepositions"
     },
     {
       "id": "C1_gr_15",
@@ -13114,7 +13156,10 @@
         "denn",
         "obwohl"
       ],
-      "answer": "insofern als"
+      "answer": "insofern als",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "C1 Connectors"
     },
     {
       "id": "C1_gr_16",
@@ -13127,7 +13172,10 @@
         "Trotzdem",
         "Allerdings"
       ],
-      "answer": "Zudem"
+      "answer": "Zudem",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "C1 Connectors"
     },
     {
       "id": "C1_gr_17",
@@ -13135,7 +13183,10 @@
       "type": "fill-blank",
       "prompt": "Noun from 'entscheiden' (to decide): die ___",
       "answer": "Entscheidung",
-      "explanation": "-ung nominalization of verb stem."
+      "explanation": "-ung nominalization of verb stem.",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "topic": "Word Formation"
     },
     {
       "id": "C1_gr_18",
@@ -13143,7 +13194,10 @@
       "type": "fill-blank",
       "prompt": "Adjective from 'Zweifel' (doubt): ___ (doubtful)",
       "answer": "zweifelhaft",
-      "explanation": "-haft suffix creates adjectives from nouns."
+      "explanation": "-haft suffix creates adjectives from nouns.",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "topic": "Word Formation"
     },
     {
       "id": "C1_gr_19",
@@ -13157,7 +13211,10 @@
         "Gib mir die Unterlagen."
       ],
       "answer": "Bitte senden Sie mir die Unterlagen.",
-      "explanation": "'Bitte senden Sie...' is the most formal (Sie + full verb)."
+      "explanation": "'Bitte senden Sie...' is the most formal (Sie + full verb).",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "Mood and Register"
     },
     {
       "id": "C1_gr_20",
@@ -13171,7 +13228,10 @@
         "Dadurch"
       ],
       "answer": "Des Weiteren",
-      "explanation": "Des Weiteren is used in academic texts to add a point."
+      "explanation": "Des Weiteren is used in academic texts to add a point.",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "topic": "Text Cohesion"
     }
   ]
 }
