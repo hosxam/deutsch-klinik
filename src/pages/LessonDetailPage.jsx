@@ -326,6 +326,80 @@ export default function LessonDetailPage() {
         ) : <div />}
       </div>
 
+      {/* Continue practicing this lesson */}
+      {levelId && (
+        <div style={{
+          borderRadius: '10px', padding: '16px 20px', marginTop: '20px', marginBottom: '16px',
+          backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+        }}>
+          <h3 style={{ fontSize: '14px', fontWeight: '700', color: 'var(--accent)', marginBottom: '12px' }}>
+            Continue practicing this lesson
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <Link
+              to={`/level/${levelId}/grammar`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Practice Grammar <ArrowRight size={16} />
+            </Link>
+            <Link
+              to={`/level/${levelId}/vocabulary`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Review Flashcards <ArrowRight size={16} />
+            </Link>
+            <Link
+              to={`/level/${levelId}/reading`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Practice Reading <ArrowRight size={16} />
+            </Link>
+            <Link
+              to={`/level/${levelId}/listening`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Practice Listening <ArrowRight size={16} />
+            </Link>
+            <Link
+              to={`/level/${levelId}/writing`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Writing Practice <ArrowRight size={16} />
+            </Link>
+            <Link
+              to={`/level/${levelId}/speaking`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
+                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
+              }}
+            >
+              Speaking Practice <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      )}
+
       {/* Back to all lessons */}
       <div style={{ textAlign: 'center', marginTop: '16px' }}>
         <Link
