@@ -151,8 +151,8 @@ These are strict and must be followed for all future content generation:
 
 ## 7. Build / Deploy Status
 
-- **Last confirmed build:** Passed
-- **Latest bundle hash:** `index-D0MTcZ4L.js`
+- **Last confirmed build:** Passed (2026-05-02)
+- **Latest bundle hash:** `index-BN73CJqF.js`
 - **Bundle size:** ~2,222 KB JS / 510 KB gzipped
 - **Deployment method:** `npm run deploy` (builds then pushes dist/ to gh-pages branch)
 - **CDN caveat:** GitHub Pages CDN may take 1-2 minutes to propagate new bundle. Hard refresh (Ctrl+F5) usually resolves stale cache.
@@ -166,7 +166,74 @@ These are strict and must be followed for all future content generation:
 - **Backup chain files (`.pre_batch`, `.batch2`-`.batch7`):** May still exist. These are backup snapshots of germanVocabulary.json at various stages. Do not delete unless intentionally cleaning backups.
 - **No other cleanup needed**
 
-## 9. B1 Details (as of 2026-05-01)
+## 9. Medical FSP Module (Complete as of 2026-05-02)
+
+### FSP Hub Route
+- **Path:** `#/medical-fsp` -> `MedicalFSPHubPage.jsx`
+- **All sub-routes:** vocabulary, anamnese, cases, presentations, writing, listening, reading, grammar, exams
+
+### FSP Dataset Counts
+
+| Dataset | Count | Status |
+|---------|-------|--------|
+| `fspVocabulary.json` | 100 | Complete |
+| `fspAnamnese.json` | 100 | Complete |
+| `fspCases.json` | 100 | Complete |
+| `fspWriting.json` | 100 | Complete |
+| `fspPresentations.json` | 100 | Complete |
+| `fspListening.json` | 100 | Complete |
+| `fspReading.json` | 100 | Complete |
+| `fspGrammar.json` | 100 | Complete |
+| `fspExams.json` | 10 | Complete |
+| **Total** | **810** | **All complete** |
+
+### Data Quality
+
+- **Duplicate IDs across all FSP datasets:** 0 (810 unique IDs)
+- **Missing required fields:** 0 (every item has all schema-required keys)
+- **Placeholder content:** None ("ToDo" regex false positive = substring of `doctorToDoctorPhrase` field name)
+- **Encoding:** All valid UTF-8 JSON
+- **Build:** Passes cleanly
+- **Deployment:** Published to GitHub Pages
+
+### FSP Exam Themes (exam_001 through exam_010)
+
+1. Brustschmerz / ACS (Kardiologie)
+2. Akutes Abdomen / Appendizitis (Chirurgie)
+3. Dyspnoe / Pneumonie vs. Lungenembolie (Pneumologie)
+4. Kopfschmerz / Migrane mit neurologischen Red Flags (Neurologie)
+5. Ruckenschmerz / Cauda-equina-Syndrom (Neurochirurgie)
+6. Diabeteskomplikation / Ketoazidose (Diabetologie)
+7. Hypertensive Krise (Kardiologie)
+8. Postoperative Nachblutung (Chirurgie)
+9. Padiatrisches Fieber (Padiatrie)
+10. Psychiatrischer Notfall / Suizidgedanken (Psychiatrie)
+
+### Exam Structure (per FSPExamPage.jsx renderer)
+Each exam includes:
+- `id`, `title`, `case` (clinical vignette)
+- `part1_patientConversation` (setting, patientRole, doctorTasks, mustAsk, redFlags, usefulPhrases)
+- `part2_documentation` (task, requiredSections, keyInformation, modelOutline)
+- `part3_doctorDoctorConversation` (task, handoverStructure ISBAR, expectedSummary, differentials, plan)
+- `terminology` (string array)
+- `rubric` (6 keys: historyTaking, patientCommunication, medicalLogic, documentation, doctorToDoctorCommunication, germanAccuracy)
+- `tags`
+
+### FSP Data Schemas
+
+| File | Keys per item |
+|------|---------------|
+| `fspVocabulary.json` | id, level, word, article, plural, translation, layExplanation, example, exampleTranslation, patientFriendlyPhrase, doctorToDoctorPhrase, category, tags |
+| `fspAnamnese.json` | id, category, doctorQuestion, simpleEnglish, patientPossibleAnswer, followUpQuestions, notes, tags |
+| `fspCases.json` | id, title, setting, patientRole, doctorTasks, mustAsk, redFlags, usefulPhrases, doctorToDoctorSummary, scoringRubric, tags |
+| `fspWriting.json` | id, caseTitle, task, patientData, history, examFindings, diagnostics, assessment, treatment, dischargePlan, expectedStructure, usefulPhrases, modelAnswer |
+| `fspPresentations.json` | id, caseTitle, rawPatientInfo, task, expectedPresentationOrder, modelPresentation, usefulPhrases, commonMistakes, rubric, tags |
+| `fspListening.json` | id, title, type, script, questions, answers, transcriptHiddenByDefault, vocabularyFocus, tags |
+| `fspReading.json` | id, title, type, text, questions, answers, vocabularyFocus, tags |
+| `fspGrammar.json` | id, topic, question, options, answer, explanation |
+| `fspExams.json` | id, title, case, part1_patientConversation, part2_documentation, part3_doctorDoctorConversation, terminology, rubric, tags |
+
+## 10. B1 Details (as of 2026-05-01)
 
 ### B1 Incomplete Items
 - **Exams:** 1 dict (needs expansion to 5 full practice exams)

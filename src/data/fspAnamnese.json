@@ -1,0 +1,1760 @@
+[
+  {
+    "id": "ana_001",
+    "category": "Begrüßung",
+    "doctorQuestion": "Guten Morgen, Herr Müller. Ich bin Frau Dr. Weber. Setzen Sie sich doch bitte. Wie kann ich Ihnen helfen?",
+    "simpleEnglish": "Good morning Mr. Muller. I'm Dr. Weber. Please have a seat. How can I help you?",
+    "patientPossibleAnswer": "Guten Morgen, Frau Doktor. Ich habe Schmerzen in der Brust.",
+    "followUpQuestions": [
+      "Darf ich Ihnen noch ein paar Fragen zu Ihren Beschwerden stellen?",
+      "Sind Sie zum ersten Mal bei uns in der Praxis?"
+    ],
+    "notes": "Always introduce yourself and greet the patient formally. Use 'Sie' unless the patient is a child. The 'Praxis' context assumes outpatient.",
+    "tags": [
+      "begrüßung",
+      "introduction",
+      "formal"
+    ]
+  },
+  {
+    "id": "ana_002",
+    "category": "Begrüßung",
+    "doctorQuestion": "Hallo, ich bin der Pfleger hier auf Station. Ich werde Sie heute versorgen. Wie geht es Ihnen?",
+    "simpleEnglish": "Hello, I'm the nurse on this ward. I'll be taking care of you today. How are you feeling?",
+    "patientPossibleAnswer": "Ganz gut, aber die Schmerzen sind noch da.",
+    "followUpQuestions": [
+      "Haben Sie heute schon etwas gegessen?",
+      "Haben Sie gut geschlafen?"
+    ],
+    "notes": "Nurses also take histories in German hospitals. 'Pfleger' / 'Pflegekraft' is common.",
+    "tags": [
+      "begrüßung",
+      "nurse",
+      "ward"
+    ]
+  },
+  {
+    "id": "ana_003",
+    "category": "Begrüßung",
+    "doctorQuestion": "Guten Tag, mein Name ist Dr. Schmidt. Ich bin der zuständige Stationsarzt. Darf ich mich zu Ihnen setzen?",
+    "simpleEnglish": "Good day, my name is Dr. Schmidt. I'm the ward doctor responsible for you. May I sit down with you?",
+    "patientPossibleAnswer": "Ja, gerne. Danke, dass Sie kommen.",
+    "followUpQuestions": [
+      "Wie geht es Ihnen heute im Vergleich zu gestern?",
+      "Haben Sie Fragen zu Ihrer Behandlung?"
+    ],
+    "notes": "In hospital settings, ward doctors introduce themselves clearly. Asking to sit shows respect and puts the patient at ease.",
+    "tags": [
+      "begrüßung",
+      "ward doctor",
+      "station"
+    ]
+  },
+  {
+    "id": "ana_004",
+    "category": "Begrüßung",
+    "doctorQuestion": "Schön, dass Sie da sind. Nehmen Sie bitte Platz. Ich bin Frau Dr. Koch und werde heute Ihr Erstgespräch mit Ihnen führen.",
+    "simpleEnglish": "Nice to have you here. Please take a seat. I'm Dr. Koch and I'll be conducting your initial consultation today.",
+    "patientPossibleAnswer": "Vielen Dank. Ich bin ein bisschen nervös.",
+    "followUpQuestions": [
+      "Das brauchen Sie nicht zu sein. Wir besprechen alles in Ruhe.",
+      "Haben Sie schon einmal so ein Gespräch geführt?"
+    ],
+    "notes": "'Erstgespräch' is common in outpatient clinics and psychiatric contexts. Reassure the patient.",
+    "tags": [
+      "begrüßung",
+      "first visit",
+      "outpatient"
+    ]
+  },
+  {
+    "id": "ana_005",
+    "category": "Begrüßung",
+    "doctorQuestion": "Guten Tag, ich bin der Medizinstudent im Praktikum. Darf ich Ihnen unter Aufsicht von Frau Dr. Weber ein paar Fragen stellen?",
+    "simpleEnglish": "Good day, I'm the medical student on placement. May I ask you a few questions under the supervision of Dr. Weber?",
+    "patientPossibleAnswer": "Ja, klar. Fragen Sie nur.",
+    "followUpQuestions": [
+      "Sind Sie damit einverstanden, dass der Student das Gespräch führt?",
+      "Haben Sie schon Erfahrung mit Studentengesprächen?"
+    ],
+    "notes": "Medical students must identify themselves as such and mention supervision. Patients have the right to refuse.",
+    "tags": [
+      "begrüßung",
+      "student",
+      "supervision"
+    ]
+  },
+  {
+    "id": "ana_006",
+    "category": "Identifikation",
+    "doctorQuestion": "Darf ich zunächst Ihre Personalien aufnehmen? Wie ist Ihr vollständiger Name?",
+    "simpleEnglish": "May I first take down your personal details? What is your full name?",
+    "patientPossibleAnswer": "Ja, mein Name ist Klaus-Peter Schneider.",
+    "followUpQuestions": [
+      "Und Ihr Geburtsdatum?",
+      "Und Ihre Adresse, bitte?"
+    ],
+    "notes": "Always confirm patient identity before proceeding. In FSP, this is a standard step in history-taking.",
+    "tags": [
+      "identifikation",
+      "name",
+      "identity"
+    ]
+  },
+  {
+    "id": "ana_007",
+    "category": "Identifikation",
+    "doctorQuestion": "Können Sie mir bitte Ihr Geburtsdatum und Ihr Alter sagen?",
+    "simpleEnglish": "Could you please tell me your date of birth and age?",
+    "patientPossibleAnswer": "Ich bin am 14. März 1978 geboren, also 48 Jahre alt.",
+    "followUpQuestions": [
+      "Und wo wohnen Sie?",
+      "Sind Sie hier in der Stadt gemeldet?"
+    ],
+    "notes": "In FSP, birth date confirmation is a patient safety step. Ask even if you have the chart.",
+    "tags": [
+      "identifikation",
+      "age",
+      "birth date"
+    ]
+  },
+  {
+    "id": "ana_008",
+    "category": "Identifikation",
+    "doctorQuestion": "Ich brauche für die Unterlagen noch Ihre Krankenversicherungsdaten. Bei welcher Krankenkasse sind Sie versichert?",
+    "simpleEnglish": "I need your health insurance details for the records. Which health insurance are you with?",
+    "patientPossibleAnswer": "Ich bin bei der AOK versichert.",
+    "followUpQuestions": [
+      "Haben Sie Ihre Versichertenkarte dabei?",
+      "Sind Sie privat oder gesetzlich versichert?"
+    ],
+    "notes": "Insurance details are essential in German clinical settings. Either the doctor or the administrative staff may ask.",
+    "tags": [
+      "identifikation",
+      "insurance",
+      "administration"
+    ]
+  },
+  {
+    "id": "ana_009",
+    "category": "Hauptbeschwerde",
+    "doctorQuestion": "Was führt Sie heute zu mir? Was ist Ihr Hauptproblem?",
+    "simpleEnglish": "What brings you to me today? What is your main problem?",
+    "patientPossibleAnswer": "Ich habe seit gestern starke Kopfschmerzen und mir ist übel.",
+    "followUpQuestions": [
+      "Seit wann haben Sie diese Beschwerden?",
+      "Hatten Sie das schon einmal?"
+    ],
+    "notes": "The classic opening for the chief complaint. Stay open-ended. Let the patient tell their story first.",
+    "tags": [
+      "hauptbeschwerde",
+      "chief complaint",
+      "open question"
+    ]
+  },
+  {
+    "id": "ana_010",
+    "category": "Hauptbeschwerde",
+    "doctorQuestion": "Was genau bereitet Ihnen momentan die größten Probleme?",
+    "simpleEnglish": "What exactly is causing you the most trouble right now?",
+    "patientPossibleAnswer": "Am meisten stört mich, dass ich kaum Luft bekomme, wenn ich Treppen steige.",
+    "followUpQuestions": [
+      "Seit wann geht das?",
+      "Haben Sie das in Ruhe auch?"
+    ],
+    "notes": "This phrasing gently prioritizes the patient's main concern. Useful for patients with multiple symptoms.",
+    "tags": [
+      "hauptbeschwerde",
+      "prioritizing"
+    ]
+  },
+  {
+    "id": "ana_011",
+    "category": "Hauptbeschwerde",
+    "doctorQuestion": "Können Sie mir mit Ihren eigenen Worten schildern, was passiert ist?",
+    "simpleEnglish": "Can you describe in your own words what happened?",
+    "patientPossibleAnswer": "Ich war beim Gärtnern und plötzlich hat es im Rücken gezwickt.",
+    "followUpQuestions": [
+      "Was haben Sie genau gemacht, als der Schmerz anfing?",
+      "Konnten Sie sich danach noch bewegen?"
+    ],
+    "notes": "'Mit eigenen Worten' is a patient-friendly phrase that invites narrative. Good for acute presentations.",
+    "tags": [
+      "hauptbeschwerde",
+      "narrative"
+    ]
+  },
+  {
+    "id": "ana_012",
+    "category": "Hauptbeschwerde",
+    "doctorQuestion": "Seit wann bestehen Ihre Beschwerden genau?",
+    "simpleEnglish": "Exactly since when have your symptoms been present?",
+    "patientPossibleAnswer": "So etwa seit drei Tagen, aber heute ist es viel schlimmer geworden.",
+    "followUpQuestions": [
+      "Hatten Sie die Beschwerden schon einmal?",
+      "Haben Sie etwas unternommen dagegen?"
+    ],
+    "notes": "Always get a clear timeline. 'Seit wann' is essential in every anamnesis.",
+    "tags": [
+      "hauptbeschwerde",
+      "timeline"
+    ]
+  },
+  {
+    "id": "ana_013",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Haben Sie die Beschwerden zum ersten Mal oder kennen Sie das schon?",
+    "simpleEnglish": "Are you having these symptoms for the first time or do you know them already?",
+    "patientPossibleAnswer": "Das hatte ich noch nie. So etwas ist mir zum ersten Mal passiert.",
+    "followUpQuestions": [
+      "Gab es in der Vergangenheit ähnliche Beschwerden?",
+      "Haben Sie früher schon einmal wegen der gleichen Sache einen Arzt aufgesucht?"
+    ],
+    "notes": "Distinguishing first episode from recurrence is clinically important.",
+    "tags": [
+      "aktuelle anamnese",
+      "first episode",
+      "recurrence"
+    ]
+  },
+  {
+    "id": "ana_014",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Haben Sie in den letzten Tagen etwas unternommen, um die Beschwerden zu lindern?",
+    "simpleEnglish": "Have you done anything in the past few days to relieve the symptoms?",
+    "patientPossibleAnswer": "Ich habe eine Schmerztablette genommen, aber die hat nicht geholfen.",
+    "followUpQuestions": [
+      "Welches Medikament haben Sie genommen?",
+      "Wie viel haben Sie genommen?",
+      "Hat es etwas gebracht?"
+    ],
+    "notes": "Check what self-medication the patient has tried before presenting. Important for medication history.",
+    "tags": [
+      "aktuelle anamnese",
+      "self-medication",
+      "relief"
+    ]
+  },
+  {
+    "id": "ana_015",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Waren Sie deswegen schon bei einem anderen Arzt?",
+    "simpleEnglish": "Have you already seen another doctor about this?",
+    "patientPossibleAnswer": "Ja, mein Hausarzt hat mich überwiesen. Er meinte, ich solle ins Krankenhaus.",
+    "followUpQuestions": [
+      "Was hat der Arzt gesagt?",
+      "Welche Untersuchungen wurden schon gemacht?"
+    ],
+    "notes": "Important in FSP to determine what prior medical assessment has occurred.",
+    "tags": [
+      "aktuelle anamnese",
+      "prior visit",
+      "referral"
+    ]
+  },
+  {
+    "id": "ana_016",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Haben Sie Fieber gemessen? Falls ja, wie hoch war die Temperatur?",
+    "simpleEnglish": "Have you taken your temperature? If yes, how high was it?",
+    "patientPossibleAnswer": "Ja, gestern Abend hatte ich 38,5 Grad Fieber.",
+    "followUpQuestions": [
+      "Hatten Sie Schüttelfrost?",
+      "Seit wann haben Sie Fieber?"
+    ],
+    "notes": "Fever history is basic but essential. Women may have slightly higher baseline temperatures.",
+    "tags": [
+      "aktuelle anamnese",
+      "fever",
+      "temperature"
+    ]
+  },
+  {
+    "id": "ana_017",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Wie ist der Verlauf Ihrer Beschwerden? Sind sie besser, gleich oder schlechter geworden?",
+    "simpleEnglish": "How has the course of your symptoms been? Have they improved, stayed the same, or worsened?",
+    "patientPossibleAnswer": "Eigentlich wird es von Tag zu Tag schlimmer.",
+    "followUpQuestions": [
+      "Seit wann bemerken Sie die Verschlechterung?",
+      "Gibt es etwas, das die Beschwerden bessert oder verschlechtert?"
+    ],
+    "notes": "Documenting the trajectory is key. 'Progredienter Verlauf' or 'gleichbleibend' are standard chart entries.",
+    "tags": [
+      "aktuelle anamnese",
+      "course",
+      "progression"
+    ]
+  },
+  {
+    "id": "ana_018",
+    "category": "Schmerzbeschreibung",
+    "doctorQuestion": "Wo genau tut es weh? Können Sie mir die Stelle zeigen?",
+    "simpleEnglish": "Where exactly does it hurt? Can you show me the spot?",
+    "patientPossibleAnswer": "Hier vorne in der Brust, ungefähr in der Mitte.",
+    "followUpQuestions": [
+      "Zeigen Sie bitte mit einem Finger auf die schmerzende Stelle.",
+      "Strahlte der Schmerz in andere Regionen aus?"
+    ],
+    "notes": "Let the patient point. One finger localization is more precise than gesturing. In FSP, this demonstrates you can elicit quality of pain.",
+    "tags": [
+      "schmerzbeschreibung",
+      "localization",
+      "pointing"
+    ]
+  },
+  {
+    "id": "ana_019",
+    "category": "Schmerzbeschreibung",
+    "doctorQuestion": "Wie fühlt sich der Schmerz an? Ist er stechend, drückend, brennend oder eher dumpf?",
+    "simpleEnglish": "What does the pain feel like? Is it stabbing, pressing, burning, or rather dull?",
+    "patientPossibleAnswer": "Eher drückend, wie wenn jemand auf meiner Brust sitzt.",
+    "followUpQuestions": [
+      "Tritt der Schmerz anfallsweise auf oder ist er dauerhaft?",
+      "Pocht er im Takt Ihres Herzschlags?"
+    ],
+    "notes": "Offer categories but don't lead too strongly. The patient's spontaneous description is most valuable.",
+    "tags": [
+      "schmerzbeschreibung",
+      "quality",
+      "character"
+    ]
+  },
+  {
+    "id": "ana_020",
+    "category": "Schmerzbeschreibung",
+    "doctorQuestion": "Auf einer Skala von 1 bis 10, wobei 1 kaum spürbar und 10 der stärkste vorstellbare Schmerz ist: Wie stark sind Ihre Schmerzen jetzt?",
+    "simpleEnglish": "On a scale of 1 to 10, where 1 is barely noticeable and 10 is the worst imaginable pain, how strong is your pain right now?",
+    "patientPossibleAnswer": "Im Moment etwa eine 6. Auf dem Höhepunkt war es eine 9.",
+    "followUpQuestions": [
+      "Und wie stark war der Schmerz auf dem Höhepunkt?",
+      "Haben Sie nach der Einnahme von Schmerzmitteln nachgefragt?"
+    ],
+    "notes": "NRS (Numeric Rating Scale) is standard. Follow up with worst and best scores.",
+    "tags": [
+      "schmerzbeschreibung",
+      "severity",
+      "NRS"
+    ]
+  },
+  {
+    "id": "ana_021",
+    "category": "Schmerzbeschreibung",
+    "doctorQuestion": "Seit wann haben Sie die Schmerzen genau? Haben sie plötzlich angefangen oder sind sie langsam gekommen?",
+    "simpleEnglish": "Exactly since when do you have the pain? Did it start suddenly or gradually?",
+    "patientPossibleAnswer": "Es hat gestern Nachmittag plötzlich angefangen, ganz ohne Vorwarnung.",
+    "followUpQuestions": [
+      "Können Sie sich an einen konkreten Auslöser erinnern?",
+      "Hatten Sie solche Schmerzen schon einmal?"
+    ],
+    "notes": "Sudden onset suggests vascular or acute events (e.g., dissection, thrombosis). Gradual onset suggests inflammation or chronic processes.",
+    "tags": [
+      "schmerzbeschreibung",
+      "onset",
+      "acute"
+    ]
+  },
+  {
+    "id": "ana_022",
+    "category": "Schmerzbeschreibung",
+    "doctorQuestion": "Strahlten die Schmerzen in andere Körperteile aus, zum Beispiel in die Arme, den Kiefer oder den Rücken?",
+    "simpleEnglish": "Did the pain radiate to other parts of your body, for example into your arms, jaw, or back?",
+    "patientPossibleAnswer": "Ja, in den linken Arm. Und auch ein bisschen in den Kiefer.",
+    "followUpQuestions": [
+      "In welchen Arm genau?",
+      "Bis wohin genau strahlt es aus?"
+    ],
+    "notes": "Radiation is key in cardiac, pancreatic, and neurological pain. Chest pain radiating to left arm and jaw is classic for MI.",
+    "tags": [
+      "schmerzbeschreibung",
+      "radiation",
+      "cardiac"
+    ]
+  },
+  {
+    "id": "ana_023",
+    "category": "Begleitsymptome",
+    "doctorQuestion": "Hatten Sie neben den Hauptbeschwerden noch andere Symptome, wie zum Beispiel Übelkeit, Schwindel oder Schwitzen?",
+    "simpleEnglish": "Did you have any other symptoms besides the main complaints, such as nausea, dizziness, or sweating?",
+    "patientPossibleAnswer": "Ja, mir war übel und ich habe stark geschwitzt, obwohl mir kalt war.",
+    "followUpQuestions": [
+      "Haben Sie sich übergeben müssen?",
+      "War der Schweiß kalt oder warm?"
+    ],
+    "notes": "Cold sweat plus nausea are classic vagal symptoms associated with MI, pain shock, or vasovagal episodes.",
+    "tags": [
+      "begleitsymptome",
+      "nausea",
+      "sweating"
+    ]
+  },
+  {
+    "id": "ana_024",
+    "category": "Begleitsymptome",
+    "doctorQuestion": "Hatten Sie dabei das Gefühl, dass Ihnen schwindelig oder schwarz vor Augen wird?",
+    "simpleEnglish": "Did you feel dizzy or like things were going black in front of your eyes during the episode?",
+    "patientPossibleAnswer": "Ja, kurzzeitig wurde mir schwarz vor Augen, aber dann ging es wieder.",
+    "followUpQuestions": [
+      "Wie lange hat das angefahren?",
+      "Sind Sie deswegen gestürzt?"
+    ],
+    "notes": "Syncope or presyncope requires prompt attention. Clarify duration and whether there was a fall.",
+    "tags": [
+      "begleitsymptome",
+      "syncope",
+      "dizziness"
+    ]
+  },
+  {
+    "id": "ana_025",
+    "category": "Begleitsymptome",
+    "doctorQuestion": "Hatten Sie in letzter Zeit ungewollt Gewicht verloren oder hatten Sie Nachtschweiß?",
+    "simpleEnglish": "Have you unintentionally lost weight recently or had night sweats?",
+    "patientPossibleAnswer": "Ja, ich habe in den letzten drei Monaten etwa fünf Kilo abgenommen.",
+    "followUpQuestions": [
+      "Haben Sie bewusst weniger gegessen?",
+      "Muss der Nachtschweiß die Kleidung wechseln?"
+    ],
+    "notes": "B-symptoms (weight loss, night sweats, fever) are red flags requiring further investigation.",
+    "tags": [
+      "begleitsymptome",
+      "B-symptoms",
+      "weight loss",
+      "night sweats"
+    ]
+  },
+  {
+    "id": "ana_026",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie bekannte Vorerkrankungen? Leiden Sie zum Beispiel an Bluthochdruck, Diabetes oder Asthma?",
+    "simpleEnglish": "Do you have known pre-existing conditions? For example, do you suffer from high blood pressure, diabetes, or asthma?",
+    "patientPossibleAnswer": "Ja, ich habe Bluthochdruck und Asthma. Diabetes habe ich nicht.",
+    "followUpQuestions": [
+      "Seit wann besteht der Bluthochdruck?",
+      "Welche Medikamente nehmen Sie dagegen ein?",
+      "Ist der Asthma medikamentös eingestellt?"
+    ],
+    "notes": "Always ask about the three most common chronic conditions first. Then ask if there are others.",
+    "tags": [
+      "vorerkrankungen",
+      "hypertension",
+      "diabetes",
+      "asthma"
+    ]
+  },
+  {
+    "id": "ana_027",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Wurde bei Ihnen schon einmal eine Herzerkrankung oder ein Schlaganfall diagnostiziert?",
+    "simpleEnglish": "Have you ever been diagnosed with heart disease or a stroke?",
+    "patientPossibleAnswer": "Ja, ich hatte vor zwei Jahren einen leichten Schlaganfall. Die Durchblutung ist wieder gut.",
+    "followUpQuestions": [
+      "Welche Folgen hat der Schlaganfall hinterlassen?",
+      "Nehmen Sie Blutverdünner?",
+      "Wurde eine Ursache gefunden?"
+    ],
+    "notes": "Cardiovascular and cerebrovascular history is essential. If yes, ask about anticoagulation and residual deficits.",
+    "tags": [
+      "vorerkrankungen",
+      "cardiac",
+      "stroke",
+      "cerebrovascular"
+    ]
+  },
+  {
+    "id": "ana_028",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie eine Nierenerkrankung oder Lebererkrankung?",
+    "simpleEnglish": "Do you have any kidney or liver disease?",
+    "patientPossibleAnswer": "Nein, weder noch. Das wurde zumindest noch nie festgestellt.",
+    "followUpQuestions": [
+      "Wurden Ihre Nieren- oder Leberwerte in letzter Zeit kontrolliert?",
+      "Hatten Sie schon einmal eine Nierenbeckenentzündung oder Gelbsucht?"
+    ],
+    "notes": "Important for medication dosing. Many drugs are renally or hepatically cleared.",
+    "tags": [
+      "vorerkrankungen",
+      "renal",
+      "hepatic",
+      "medication safety"
+    ]
+  },
+  {
+    "id": "ana_029",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie eine bekannte Schilddrüsenerkrankung?",
+    "simpleEnglish": "Do you have a known thyroid condition?",
+    "patientPossibleAnswer": "Ja, ich habe eine Schilddrüsenunterfunktion. Ich nehme L-Thyroxin.",
+    "followUpQuestions": [
+      "Seit wann besteht die Schilddrüsenunterfunktion?",
+      "Wie ist die Dosierung?",
+      "Werden die Werte regelmäßig kontrolliert?"
+    ],
+    "notes": "Thyroid disease is common, especially in women. Always ask about medication and monitoring.",
+    "tags": [
+      "vorerkrankungen",
+      "thyroid",
+      "hypothyroidism"
+    ]
+  },
+  {
+    "id": "ana_030",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Sind bei Ihnen psychische Erkrankungen wie Depressionen oder Angststörungen bekannt?",
+    "simpleEnglish": "Do you have any known mental health conditions such as depression or anxiety disorders?",
+    "patientPossibleAnswer": "Ja, ich habe seit mehreren Jahren eine Depression. Die Behandlung läuft gut.",
+    "followUpQuestions": [
+      "Welche Behandlung erhalten Sie?",
+      "Nehmen Sie Antidepressiva?",
+      "Sind Sie in psychotherapeutischer Behandlung?"
+    ],
+    "notes": "Mental health history is relevant for many physical presentations. Ask sensitively. Normalize the question.",
+    "tags": [
+      "vorerkrankungen",
+      "mental health",
+      "depression",
+      "anxiety"
+    ]
+  },
+  {
+    "id": "ana_031",
+    "category": "Operationen",
+    "doctorQuestion": "Wurden Sie schon einmal operiert? Wenn ja, welche Operationen hatten Sie?",
+    "simpleEnglish": "Have you ever had surgery? If yes, which operations have you had?",
+    "patientPossibleAnswer": "Ja, mir wurde vor fünf Jahren die Gallenblase entfernt.",
+    "followUpQuestions": [
+      "In welchem Jahr war die Operation?",
+      "Gab es Komplikationen?",
+      "Sind Sie damals gut aus der Narkose aufgewacht?"
+    ],
+    "notes": "Surgical history should include year, indication, complications, and anesthesia tolerance.",
+    "tags": [
+      "operationen",
+      "surgery",
+      "history"
+    ]
+  },
+  {
+    "id": "ana_032",
+    "category": "Operationen",
+    "doctorQuestion": "Hatten Sie schon einmal eine Operation in Vollnarkose?",
+    "simpleEnglish": "Have you ever had surgery under general anesthesia?",
+    "patientPossibleAnswer": "Ja, bei der Gallenblasen-OP. Das war die einzige.",
+    "followUpQuestions": [
+      "Haben Sie die Narkose gut vertragen?",
+      "Gab es Probleme mit der Narkose?"
+    ],
+    "notes": "Anesthesia tolerance is important for future procedures. Ask separately if no surgeries listed.",
+    "tags": [
+      "operationen",
+      "anesthesia",
+      "complications"
+    ]
+  },
+  {
+    "id": "ana_033",
+    "category": "Operationen",
+    "doctorQuestion": "Wurden bei Ihnen schon einmal Endoskopien durchgeführt, zum Beispiel eine Magenspiegelung oder Darmspiegelung?",
+    "simpleEnglish": "Have you ever had any endoscopic procedures, for example a gastroscopy or colonoscopy?",
+    "patientPossibleAnswer": "Ja, eine Darmspiegelung vor drei Jahren. Es wurden ein paar Polypen entfernt.",
+    "followUpQuestions": [
+      "Was war der Befund?",
+      "Wurden Polypen gefunden und entfernt?",
+      "Wann war die letzte Vorsorgeuntersuchung?"
+    ],
+    "notes": "Endoscopies count as procedures in the anamnesis. Important for cancer screening and gastroenterological history.",
+    "tags": [
+      "operationen",
+      "endoscopy",
+      "colonoscopy",
+      "gastroscopy"
+    ]
+  },
+  {
+    "id": "ana_034",
+    "category": "Operationen",
+    "doctorQuestion": "Haben Sie Implantate oder künstliche Gelenke?",
+    "simpleEnglish": "Do you have any implants or artificial joints?",
+    "patientPossibleAnswer": "Ja, ich habe ein künstliches Hüftgelenk rechts seit zwei Jahren.",
+    "followUpQuestions": [
+      "Wurde die Hüft-OP gut vertragen?",
+      "Sind Sie darüber in der Nachsorge?"
+    ],
+    "notes": "Implants are relevant for MRI safety, infection risk, and anticoagulation decisions.",
+    "tags": [
+      "operationen",
+      "implants",
+      "joint replacement",
+      "MRI safety"
+    ]
+  },
+  {
+    "id": "ana_035",
+    "category": "Medikamente",
+    "doctorQuestion": "Welche Medikamente nehmen Sie regelmäßig ein? Bitte nennen Sie mir alle, auch pflanzliche und rezeptfreie.",
+    "simpleEnglish": "Which medications do you take regularly? Please name all of them, including herbal and over-the-counter ones.",
+    "patientPossibleAnswer": "Ich nehme täglich Ramipril 5 mg gegen den Blutdruck und bei Bedarf Ibuprofen bei Kopfschmerzen.",
+    "followUpQuestions": [
+      "Seit wann nehmen Sie Ramipril?",
+      "Wie oft nehmen Sie Ibuprofen?",
+      "Nehmen Sie noch andere Schmerzmittel?"
+    ],
+    "notes": "Ask about all medications including OTC. 'Bei Bedarf' (as needed) medications are often forgotten by patients.",
+    "tags": [
+      "medikamente",
+      "medication list",
+      "chronic medication"
+    ]
+  },
+  {
+    "id": "ana_036",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie blutverdünnende Medikamente, zum Beispiel Marcumar, Xarelto oder Aspirin?",
+    "simpleEnglish": "Do you take any blood-thinning medications, for example Marcumar, Xarelto, or Aspirin?",
+    "patientPossibleAnswer": "Ja, ich nehme Aspirin 100 mg täglich wegen meiner Herzkrankheit.",
+    "followUpQuestions": [
+      "Seit wann nehmen Sie den Blutverdünner?",
+      "Welche Dosierung genau?",
+      "Wurde Ihnen das vom Kardiologen verordnet?"
+    ],
+    "notes": "Anticoagulants are critical for bleeding risk assessment. Always ask about dosage and prescribing specialist.",
+    "tags": [
+      "medikamente",
+      "anticoagulation",
+      "blood thinner"
+    ]
+  },
+  {
+    "id": "ana_037",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie Antibiotika oder Kortison?",
+    "simpleEnglish": "Are you taking any antibiotics or cortisone?",
+    "patientPossibleAnswer": "Nein, nichts dergleichen im Moment.",
+    "followUpQuestions": [
+      "Haben Sie in den letzten Wochen Antibiotika genommen?",
+      "Nehmen Sie Kortison als Spray oder Tablette?"
+    ],
+    "notes": "Recent antibiotics affect microbiological diagnostics. Steroids affect immune status. Specify route for steroids.",
+    "tags": [
+      "medikamente",
+      "antibiotics",
+      "steroids",
+      "cortisone"
+    ]
+  },
+  {
+    "id": "ana_038",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie die Pille oder andere Hormonpräparate?",
+    "simpleEnglish": "Are you taking the pill or other hormonal preparations?",
+    "patientPossibleAnswer": "Ja, ich nehme die Pille zur Verhütung.",
+    "followUpQuestions": [
+      "Welche Pille genau?",
+      "Seit wann nehmen Sie sie?",
+      "Hatten Sie schon einmal Thrombosen?"
+    ],
+    "notes": "Hormonal contraception is relevant for thrombosis risk. Ask in all women of reproductive age.",
+    "tags": [
+      "medikamente",
+      "contraception",
+      "hormones",
+      "women's health"
+    ]
+  },
+  {
+    "id": "ana_039",
+    "category": "Medikamente",
+    "doctorQuestion": "Haben Sie Ihre Medikamente heute schon eingenommen?",
+    "simpleEnglish": "Have you already taken your medication today?",
+    "patientPossibleAnswer": "Ja, ich habe alles wie gewohnt eingenommen.",
+    "followUpQuestions": [
+      "Welche Medikamente waren das genau?",
+      "Um welche Uhrzeit nehmen Sie sie normalerweise?"
+    ],
+    "notes": "Always confirm today's medication intake. In emergency settings, this may affect treatment decisions.",
+    "tags": [
+      "medikamente",
+      "today's medication",
+      "adherence"
+    ]
+  },
+  {
+    "id": "ana_040",
+    "category": "Allergien",
+    "doctorQuestion": "Haben Sie bekannte Allergien, insbesondere gegen Medikamente oder bestimmte Nahrungsmittel?",
+    "simpleEnglish": "Do you have any known allergies, particularly to medications or certain foods?",
+    "patientPossibleAnswer": "Ich bin allergisch gegen Penicillin. Das weiß ich seit einer Reaktion vor zehn Jahren.",
+    "followUpQuestions": [
+      "Welche Reaktion hatten Sie genau?",
+      "Wissen Sie, ob Sie andere Antibiotika vertragen?"
+    ],
+    "notes": "Medication allergies are the most critical. Document the reaction type (rash, anaphylaxis).",
+    "tags": [
+      "allergien",
+      "drug allergy",
+      "penicillin"
+    ]
+  },
+  {
+    "id": "ana_041",
+    "category": "Allergien",
+    "doctorQuestion": "Sind Sie allergisch gegen Pflaster oder Latex?",
+    "simpleEnglish": "Are you allergic to bandages or latex?",
+    "patientPossibleAnswer": "Das weiß ich nicht. Ich hatte noch nie Probleme damit.",
+    "followUpQuestions": [
+      "Hatten Sie schon einmal Hautausschlag durch Pflaster?",
+      "Vertragen Sie Latexhandschuhe?"
+    ],
+    "notes": "Important for surgical, wound care, and examination contexts. Latex allergy is increasingly common.",
+    "tags": [
+      "allergien",
+      "latex",
+      "adhesive",
+      "contact allergy"
+    ]
+  },
+  {
+    "id": "ana_042",
+    "category": "Allergien",
+    "doctorQuestion": "Haben Sie Heuschnupfen, Neurodermitis oder andere allergische Erkrankungen?",
+    "simpleEnglish": "Do you have hay fever, eczema, or other allergic conditions?",
+    "patientPossibleAnswer": "Ja, ich habe Heuschnupfen im Frühjahr.",
+    "followUpQuestions": [
+      "Nehmen Sie etwas dagegen?",
+      "Haben Sie Asthmabeschwerden im Rahmen der Allergie?"
+    ],
+    "notes": "Atopic conditions (hay fever, asthma, eczema) often co-exist. Important for overall allergic history.",
+    "tags": [
+      "allergien",
+      "hay fever",
+      "atopic",
+      "allergy"
+    ]
+  },
+  {
+    "id": "ana_043",
+    "category": "Allergien",
+    "doctorQuestion": "Vertragen Sie Jod? Hatten Sie schon einmal Kontrastmittel bei einer CT- oder MRT-Untersuchung?",
+    "simpleEnglish": "Do you tolerate iodine? Have you ever had contrast medium during a CT or MRI examination?",
+    "patientPossibleAnswer": "Ja, ich hatte schon Kontrastmittel. Das war kein Problem.",
+    "followUpQuestions": [
+      "Wissen Sie, ob jemals eine allergische Reaktion auf Kontrastmittel dokumentiert wurde?"
+    ],
+    "notes": "Iodine/contrast allergy is essential before imaging. This is a common FSP question.",
+    "tags": [
+      "allergien",
+      "iodine",
+      "contrast medium",
+      "imaging"
+    ]
+  },
+  {
+    "id": "ana_044",
+    "category": "Familienanamnese",
+    "doctorQuestion": "Gibt es in Ihrer Familie Erkrankungen, die gehäuft vorkommen, wie zum Beispiel Bluthochdruck, Diabetes oder Herzerkrankungen?",
+    "simpleEnglish": "Are there any conditions that run in your family, such as high blood pressure, diabetes, or heart disease?",
+    "patientPossibleAnswer": "Mein Vater hatte Bluthochdruck und ist mit 62 an einem Herzinfarkt gestorben.",
+    "followUpQuestions": [
+      "In welchem Alter traten die Erkrankungen bei Ihren Familienmitgliedern auf?",
+      "Gibt es Krebserkrankungen in der Familie?"
+    ],
+    "notes": "Family history should include cardiovascular disease, diabetes, cancer, and autoimmune disorders. Include age of onset for family members.",
+    "tags": [
+      "familienanamnese",
+      "cardiovascular",
+      "genetic risk"
+    ]
+  },
+  {
+    "id": "ana_045",
+    "category": "Familienanamnese",
+    "doctorQuestion": "Sind bei Ihren Eltern oder Geschwistern Krebserkrankungen bekannt?",
+    "simpleEnglish": "Are there any known cancer diagnoses among your parents or siblings?",
+    "patientPossibleAnswer": "Ja, meine Mutter hatte Brustkrebs mit 50. Sie ist geheilt.",
+    "followUpQuestions": [
+      "Welche Krebsart genau?",
+      "In welchem Alter?",
+      "Gibt es erbliche Krebserkrankungen in der Familie?"
+    ],
+    "notes": "Cancer family history may warrant genetic counseling. Specify type and age of diagnosis.",
+    "tags": [
+      "familienanamnese",
+      "cancer",
+      "genetic"
+    ]
+  },
+  {
+    "id": "ana_046",
+    "category": "Familienanamnese",
+    "doctorQuestion": "Haben Ihre Eltern oder Geschwister eine Autoimmunerkrankung, zum Beispiel Rheuma, Morbus Crohn oder Multiple Sklerose?",
+    "simpleEnglish": "Do your parents or siblings have an autoimmune disease, for example rheumatism, Crohn's disease, or multiple sclerosis?",
+    "patientPossibleAnswer": "Soweit ich weiß, hat niemand in der Familie so etwas.",
+    "followUpQuestions": [
+      "Gibt es in der Familie rheumatische Erkrankungen?",
+      "Ist jemand in der Familie an chronisch-entzündlichen Darmerkrankungen erkrankt?"
+    ],
+    "notes": "Autoimmune conditions often have a genetic component. Worth asking even if no known cases.",
+    "tags": [
+      "familienanamnese",
+      "autoimmune",
+      "rheumatism"
+    ]
+  },
+  {
+    "id": "ana_047",
+    "category": "Familienanamnese",
+    "doctorQuestion": "Gibt es in Ihrer Familie erbliche Erkrankungen, wie zum Beispiel Bluterkrankheit oder Muskelschwund?",
+    "simpleEnglish": "Are there any hereditary diseases in your family, such as hemophilia or muscular dystrophy?",
+    "patientPossibleAnswer": "Nicht, dass ich wüsste. In unserer Familie ist niemand an so etwas erkrankt.",
+    "followUpQuestions": [
+      "Wurde bei Ihnen jemals ein Gentest durchgeführt?",
+      "Gibt es Verwandte mit bekannten Erbkrankheiten?"
+    ],
+    "notes": "Inherited diseases cover hemophilia, hemoglobinopathies, metabolic disorders, and neuromuscular conditions.",
+    "tags": [
+      "familienanamnese",
+      "hereditary",
+      "genetic disorder"
+    ]
+  },
+  {
+    "id": "ana_048",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Leben Sie allein oder mit jemandem zusammen?",
+    "simpleEnglish": "Do you live alone or with someone?",
+    "patientPossibleAnswer": "Ich wohne mit meiner Frau und den zwei Kindern zusammen.",
+    "followUpQuestions": [
+      "Haben Sie zu Hause Unterstützung? Wer kümmert sich um Sie, wenn Sie krank sind?",
+      "Haben Sie Angehörige, die im Notfall helfen können?"
+    ],
+    "notes": "Living situation affects discharge planning and home care. Key for social anamnesis.",
+    "tags": [
+      "sozialanamnese",
+      "living situation",
+      "support"
+    ]
+  },
+  {
+    "id": "ana_049",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Haben Sie eine Pflegestufe oder sind Sie als schwerbehindert eingestuft?",
+    "simpleEnglish": "Do you have a care level or are you registered as severely disabled?",
+    "patientPossibleAnswer": "Nein, ich bin selbstständig und brauche keine Pflege.",
+    "followUpQuestions": [
+      "Haben Sie bereits einen Pflegegrad beantragt?",
+      "Nutzen Sie Hilfsmittel wie Rollator oder Gehstock?"
+    ],
+    "notes": "Pflegestufe/Pflegegrad and Schwerbehinderung are relevant for assessing functional status and social support needs.",
+    "tags": [
+      "sozialanamnese",
+      "care level",
+      "disability"
+    ]
+  },
+  {
+    "id": "ana_050",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Wie ist Ihre Wohnsituation? Gibt es Treppen in Ihrer Wohnung oder haben Sie einen Fahrstuhl?",
+    "simpleEnglish": "How is your housing situation? Are there stairs in your apartment or do you have an elevator?",
+    "patientPossibleAnswer": "Wir wohnen im dritten Stock ohne Fahrstuhl.",
+    "followUpQuestions": [
+      "Ist die Wohnung barrierefrei?",
+      "Gibt es eine Toilette und Dusche auf derselben Etage?"
+    ],
+    "notes": "Home environment affects mobility and discharge planning. Especially important after surgery or stroke.",
+    "tags": [
+      "sozialanamnese",
+      "housing",
+      "accessibility",
+      "stairs"
+    ]
+  },
+  {
+    "id": "ana_051",
+    "category": "Nikotin",
+    "doctorQuestion": "Rauchen Sie? Wenn ja, was rauchen Sie und wie viel am Tag?",
+    "simpleEnglish": "Do you smoke? If yes, what do you smoke and how much per day?",
+    "patientPossibleAnswer": "Ja, ich rauche Zigaretten, etwa 20 am Tag.",
+    "followUpQuestions": [
+      "Seit wie vielen Jahren rauchen Sie?",
+      "Haben Sie schon einmal versucht aufzuhören?"
+    ],
+    "notes": "Essential part of every anamnesis. Calculate pack-years (Packs pro Jahr).",
+    "tags": [
+      "nikotin",
+      "smoking",
+      "pack years"
+    ]
+  },
+  {
+    "id": "ana_052",
+    "category": "Nikotin",
+    "doctorQuestion": "Haben Sie früher geraucht? Wenn ja, wann haben Sie aufgehört?",
+    "simpleEnglish": "Did you used to smoke? If yes, when did you quit?",
+    "patientPossibleAnswer": "Ja, früher habe ich geraucht, aber vor fünf Jahren habe ich aufgehört.",
+    "followUpQuestions": [
+      "Wie viel haben Sie damals geraucht?",
+      "Warum haben Sie aufgehört?"
+    ],
+    "notes": "Ex-smokers still carry elevated risk. Document duration and cessation date.",
+    "tags": [
+      "nikotin",
+      "ex-smoker",
+      "cessation"
+    ]
+  },
+  {
+    "id": "ana_053",
+    "category": "Nikotin",
+    "doctorQuestion": "Sind Sie in Ihrem Alltag oder Beruf Tabakrauch ausgesetzt, zum Beispiel passiv?",
+    "simpleEnglish": "Are you exposed to tobacco smoke in your daily life or at work, for example passively?",
+    "patientPossibleAnswer": "Nein, da habe ich kaum Kontakt mit Rauch.",
+    "followUpQuestions": [
+      "Rauchen Mitbewohner oder Familienmitglieder in Ihrer Wohnung?"
+    ],
+    "notes": "Passive smoking is a genuine health risk. Always ask about household exposure.",
+    "tags": [
+      "nikotin",
+      "passive smoking",
+      "exposure"
+    ]
+  },
+  {
+    "id": "ana_054",
+    "category": "Alkohol",
+    "doctorQuestion": "Trinken Sie regelmäßig Alkohol? Wenn ja, wie viel und wie oft?",
+    "simpleEnglish": "Do you drink alcohol regularly? If yes, how much and how often?",
+    "patientPossibleAnswer": "Ja, am Wochenende trinke ich ab und zu ein oder zwei Bier.",
+    "followUpQuestions": [
+      "Trinken Sie auch unter der Woche?",
+      "Hatten Sie schon einmal das Gefühl, dass Ihr Alkoholkonsum problematisch ist?"
+    ],
+    "notes": "Ask neutrally. Record in standard drinks (ein Glas Wein, ein Bier, ein Schnaps).",
+    "tags": [
+      "alkohol",
+      "alcohol consumption",
+      "standard drinks"
+    ]
+  },
+  {
+    "id": "ana_055",
+    "category": "Alkohol",
+    "doctorQuestion": "Haben Sie jemals eine Alkoholentziehung gemacht oder wurde Ihnen schon einmal geraten, weniger zu trinken?",
+    "simpleEnglish": "Have you ever undergone alcohol detoxification or has anyone ever advised you to drink less?",
+    "patientPossibleAnswer": "Nein, das war nie ein Thema bei mir.",
+    "followUpQuestions": [
+      "Hatten Sie schon einmal Entzugserscheinungen?",
+      "Kam es schon zu gesundheitlichen Problemen durch Alkohol?"
+    ],
+    "notes": "Screening for alcohol dependence. CAGE questionnaire elements are relevant here.",
+    "tags": [
+      "alkohol",
+      "dependency",
+      "withdrawal"
+    ]
+  },
+  {
+    "id": "ana_056",
+    "category": "Alkohol",
+    "doctorQuestion": "Hatten Sie jemals einen Unfall unter Alkoholeinfluss oder sind Sie alkoholisiert Auto gefahren?",
+    "simpleEnglish": "Have you ever had an accident under the influence of alcohol or driven a car while intoxicated?",
+    "patientPossibleAnswer": "Nein, das nicht. Ich trinke ohnehin sehr selten.",
+    "followUpQuestions": [
+      "Wurde bei Ihnen jemals eine Fettleber oder Lebererkrankung festgestellt?"
+    ],
+    "notes": "Assess social and medical consequences of alcohol use. Trauma history may be relevant.",
+    "tags": [
+      "alkohol",
+      "trauma",
+      "DUIDUI"
+    ]
+  },
+  {
+    "id": "ana_057",
+    "category": "Drogen",
+    "doctorQuestion": "Nehmen Sie irgendwelche Drogen, zum Beispiel Cannabis, Kokain oder andere Substanzen?",
+    "simpleEnglish": "Do you use any drugs, for example cannabis, cocaine, or other substances?",
+    "patientPossibleAnswer": "Ja, ich rauche ab und zu Cannabis, vielleicht einmal pro Woche.",
+    "followUpQuestions": [
+      "Seit wann konsumieren Sie Cannabis?",
+      "Haben Sie schon einmal härtere Drogen probiert?"
+    ],
+    "notes": "Ask non-judgmentally. Normalize the question: 'I ask all my patients about this.'",
+    "tags": [
+      "drogen",
+      "cannabis",
+      "illegal substances"
+    ]
+  },
+  {
+    "id": "ana_058",
+    "category": "Drogen",
+    "doctorQuestion": "Haben Sie schon einmal intravenöse Drogen gespritzt?",
+    "simpleEnglish": "Have you ever injected drugs intravenously?",
+    "patientPossibleAnswer": "Nein, das habe ich nie gemacht.",
+    "followUpQuestions": [
+      "Haben Sie schon einmal Nadeln mit anderen geteilt? Ist ein Hepatitis- oder HIV-Test jemals durchgeführt worden?"
+    ],
+    "notes": "IV drug use is relevant for hepatitis, HIV, and endocarditis risk. Non-judgmental tone is critical.",
+    "tags": [
+      "drogen",
+      "IV drugs",
+      "hepatitis",
+      "HIV"
+    ]
+  },
+  {
+    "id": "ana_059",
+    "category": "Beruf",
+    "doctorQuestion": "Was sind Sie von Beruf und seit wann arbeiten Sie in diesem Bereich?",
+    "simpleEnglish": "What is your profession and how long have you been working in this field?",
+    "patientPossibleAnswer": "Ich bin Bauarbeiter, seit 25 Jahren auf dem Bau.",
+    "followUpQuestions": [
+      "Arbeiten Sie in Vollzeit oder Teilzeit?",
+      "Sind Sie körperlich oder eher sitzend tätig?"
+    ],
+    "notes": "Occupation can reveal exposure risks and physical strain. Important for musculoskeletal and respiratory history.",
+    "tags": [
+      "beruf",
+      "occupation",
+      "physical work"
+    ]
+  },
+  {
+    "id": "ana_060",
+    "category": "Beruf",
+    "doctorQuestion": "Sind Sie aktuell arbeitsfähig oder sind Sie krankgeschrieben?",
+    "simpleEnglish": "Are you currently able to work or are you on sick leave?",
+    "patientPossibleAnswer": "Ich bin seit drei Tagen krankgeschrieben. Mein Hausarzt hat mich krankgeschrieben.",
+    "followUpQuestions": [
+      "Seit wann sind Sie krankgeschrieben?",
+      "Wann ist der voraussichtliche Wiedereintritt?"
+    ],
+    "notes": "Assessing work capacity is part of the clinical picture and social anamnesis.",
+    "tags": [
+      "beruf",
+      "sick leave",
+      "work capacity"
+    ]
+  },
+  {
+    "id": "ana_061",
+    "category": "Beruf",
+    "doctorQuestion": "Sind Sie in Ihrem Beruf bestimmten Schadstoffen ausgesetzt, wie zum Beispiel Staub, Chemikalien oder Lärm?",
+    "simpleEnglish": "Are you exposed to any harmful substances in your job, such as dust, chemicals, or noise?",
+    "patientPossibleAnswer": "Ja, auf dem Bau bin ich oft Staub ausgesetzt, auch wenn ich eine Maske trage.",
+    "followUpQuestions": [
+      "Welche Schutzmaßnahmen stehen Ihnen zur Verfügung?",
+      "Wurde bei Ihnen jemals eine Berufskrankheit festgestellt?"
+    ],
+    "notes": "Occupational exposure is relevant for pulmonary, dermatological, and audiological conditions. Berufskrankheit (BK) is a specific legal category in Germany.",
+    "tags": [
+      "beruf",
+      "occupational exposure",
+      "respiratory",
+      "work safety"
+    ]
+  },
+  {
+    "id": "ana_062",
+    "category": "Reiseanamnese",
+    "doctorQuestion": "Waren Sie in den letzten Monaten im Ausland? Wenn ja, wo genau?",
+    "simpleEnglish": "Have you been abroad in the last few months? If yes, where exactly?",
+    "patientPossibleAnswer": "Ja, ich war vor drei Wochen in Ägypten im Urlaub.",
+    "followUpQuestions": [
+      "Wann genau sind Sie verreist und wann zurückgekommen?",
+      "Hatten Sie dort gesundheitliche Probleme?"
+    ],
+    "notes": "Travel history is essential for infectious disease workup. Ask about regions, duration, and symptoms during/after travel.",
+    "tags": [
+      "reiseanamnese",
+      "travel",
+      "tropical medicine"
+    ]
+  },
+  {
+    "id": "ana_063",
+    "category": "Reiseanamnese",
+    "doctorQuestion": "Haben Sie vor Ihrer Reise Impfungen erhalten oder eine Malariaprophylaxe genommen?",
+    "simpleEnglish": "Did you receive any vaccinations or take malaria prophylaxis before your trip?",
+    "patientPossibleAnswer": "Nein, ich habe mich vor der Reise nicht impfen lassen. Ich wusste nicht, dass das nötig ist.",
+    "followUpQuestions": [
+      "Welche Impfungen sind bei Ihnen dokumentiert?",
+      "Hatten Sie jemals Reisedurchfall oder Fieber nach der Rückkehr?"
+    ],
+    "notes": "Ask about pre-travel advice, vaccinations, and prophylaxis. Many patients travel without preparation.",
+    "tags": [
+      "reiseanamnese",
+      "vaccination",
+      "malaria",
+      "travel medicine"
+    ]
+  },
+  {
+    "id": "ana_064",
+    "category": "Reiseanamnese",
+    "doctorQuestion": "Haben Sie nach der Rückkehr Durchfall, Fieber oder Hautausschlag bemerkt?",
+    "simpleEnglish": "Did you notice any diarrhea, fever, or skin rash after returning?",
+    "patientPossibleAnswer": "Ja, seit der Rückkehr habe ich Durchfall, aber kein Fieber.",
+    "followUpQuestions": [
+      "Seit wann genau haben Sie Durchfall?",
+      "Ist Blut im Stuhl?",
+      "Hatten Sie Kontakt zu Tieren auf der Reise?"
+    ],
+    "notes": "Post-travel symptoms require careful characterization. Diarrhea, fever, and rash are key.",
+    "tags": [
+      "reiseanamnese",
+      "post-travel",
+      "diarrhea",
+      "rash"
+    ]
+  },
+  {
+    "id": "ana_065",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie in letzter Zeit Veränderungen Ihres Appetits oder Ihres Durstgefühls bemerkt?",
+    "simpleEnglish": "Have you noticed any changes in your appetite or thirst recently?",
+    "patientPossibleAnswer": "Ja, ich habe ständig Durst und muss nachts oft auf die Toilette.",
+    "followUpQuestions": [
+      "Seit wann haben Sie vermehrten Durst?",
+      "Haben Sie auch vermehrten Harndrang?",
+      "Wie viel trinken Sie am Tag?"
+    ],
+    "notes": "Polyuria/polydipsia are classic diabetes symptoms. Part of the system review.",
+    "tags": [
+      "system review",
+      "appetite",
+      "thirst",
+      "diabetes"
+    ]
+  },
+  {
+    "id": "ana_066",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie Probleme mit der Verdauung, wie Sodbrennen, Völlegefühl oder Blähungen?",
+    "simpleEnglish": "Do you have any digestive problems, such as heartburn, bloating, or flatulence?",
+    "patientPossibleAnswer": "Ja, nach dem Essen habe ich oft Sodbrennen. Das kenne ich schon länger.",
+    "followUpQuestions": [
+      "Seit wann besteht das Sodbrennen?",
+      "Nehmen Sie etwas dagegen?",
+      "Tritt es auch nachts im Liegen auf?"
+    ],
+    "notes": "Systematic GI review. Symptoms may point to reflux, gastritis, or functional dyspepsia.",
+    "tags": [
+      "system review",
+      "GI",
+      "reflux",
+      "digestion"
+    ]
+  },
+  {
+    "id": "ana_067",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie Probleme mit dem Stuhlgang, wie Verstopfung oder Durchfall, oder haben Sie Blut im Stuhl bemerkt?",
+    "simpleEnglish": "Do you have any problems with bowel movements, such as constipation or diarrhea, or have you noticed blood in your stool?",
+    "patientPossibleAnswer": "Eher Verstopfung. Blut habe ich noch nie bemerkt.",
+    "followUpQuestions": [
+      "Wie oft haben Sie Stuhlgang?",
+      "Haben Sie Schmerzen beim Stuhlgang?",
+      "Hatten Sie schon eine Darmspiegelung?"
+    ],
+    "notes": "Bowel habit changes and blood in stool require prompt evaluation. Red flags for colorectal pathology.",
+    "tags": [
+      "system review",
+      "bowel habits",
+      "blood in stool",
+      "GI"
+    ]
+  },
+  {
+    "id": "ana_068",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Habe ich das richtig zusammengefasst? Sie haben seit drei Tagen Schmerzen in der Brust, die in den linken Arm ausstrahlen, begleitet von Übelkeit. Ist das so korrekt?",
+    "simpleEnglish": "Did I summarize that correctly? You have had chest pain radiating to your left arm for three days, accompanied by nausea. Is that correct?",
+    "patientPossibleAnswer": "Ja, genau. Das trifft es gut.",
+    "followUpQuestions": [
+      "Habe ich etwas Wichtiges vergessen?",
+      "Gibt es noch etwas, das Sie mir mitteilen möchten?"
+    ],
+    "notes": "Summarizing and checking back is an FSP requirement. It shows you were listening and ensures accuracy.",
+    "tags": [
+      "zusammenfassung",
+      "summary",
+      "verification"
+    ]
+  },
+  {
+    "id": "ana_069",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Gibt es noch etwas, das Sie mir sagen möchten, was ich noch nicht gefragt habe?",
+    "simpleEnglish": "Is there anything else you would like to tell me that I haven't asked about yet?",
+    "patientPossibleAnswer": "Eigentlich nicht. Ich glaube, das war alles.",
+    "followUpQuestions": [
+      "Haben Sie noch Fragen an mich?",
+      "Gibt es etwas, das Sie beunruhigt?"
+    ],
+    "notes": "The final open question gives the patient space to add relevant information. Required in FSP history-taking.",
+    "tags": [
+      "zusammenfassung",
+      "closing",
+      "patient concerns"
+    ]
+  },
+  {
+    "id": "ana_070",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Darf ich Sie noch kurz körperlich untersuchen? Danach besprechen wir das weitere Vorgehen.",
+    "simpleEnglish": "May I briefly examine you physically? After that, we'll discuss the next steps.",
+    "patientPossibleAnswer": "Ja, gerne. Machen Sie bitte.",
+    "followUpQuestions": [
+      "Haben Sie Schmerzen an einer bestimmten Stelle, die ich vorsichtig untersuchen soll?"
+    ],
+    "notes": "Transition from history-taking to physical examination. Always ask permission in FSP.",
+    "tags": [
+      "zusammenfassung",
+      "examination transition",
+      "next steps"
+    ]
+  },
+  {
+    "id": "ana_071",
+    "category": "Gynäkologische Anamnese",
+    "doctorQuestion": "Wann war Ihre letzte Regelblutung? Ist der Zyklus regelmäßig?",
+    "simpleEnglish": "When was your last menstrual period? Is your cycle regular?",
+    "patientPossibleAnswer": "Meine letzte Periode war vor zwei Wochen. Der Zyklus ist regelmäßig, alle 28 Tage.",
+    "followUpQuestions": [
+      "Haben Sie Zwischenblutungen?",
+      "Haben Sie Schmerzen während der Periode?"
+    ],
+    "notes": "First question in gynecological anamnesis. LMP is essential for all women of reproductive age.",
+    "tags": [
+      "gynäkologie",
+      "menstruation",
+      "LMP",
+      "cycle"
+    ]
+  },
+  {
+    "id": "ana_072",
+    "category": "Gynäkologische Anamnese",
+    "doctorQuestion": "Besteht die Möglichkeit, dass Sie schwanger sein könnten?",
+    "simpleEnglish": "Is there any possibility you could be pregnant?",
+    "patientPossibleAnswer": "Ja, es ist möglich. Ich bin nicht sicher.",
+    "followUpQuestions": [
+      "Wann war Ihre letzte Periode?",
+      "Verhüten Sie?",
+      "Haben Sie einen Schwangerschaftstest gemacht?"
+    ],
+    "notes": "Must be asked in every applicable context. Document carefully before any imaging or medication.",
+    "tags": [
+      "gynäkologie",
+      "schwangerschaft",
+      "pregnancy",
+      "safety"
+    ]
+  },
+  {
+    "id": "ana_073",
+    "category": "Gynäkologische Anamnese",
+    "doctorQuestion": "Hatten Sie schon einmal Schwangerschaften oder Geburten? Falls ja, wie viele?",
+    "simpleEnglish": "Have you had any pregnancies or births? If yes, how many?",
+    "patientPossibleAnswer": "Ja, ich habe zwei Kinder, beide natürliche Geburten.",
+    "followUpQuestions": [
+      "Waren die Schwangerschaften komplikationslos?",
+      "Hatten Sie Fehlgeburten oder Abtreibungen?"
+    ],
+    "notes": "Document as G/P/A (Gravida/Para/Abortus). Ask sensitively.",
+    "tags": [
+      "gynäkologie",
+      "pregnancies",
+      "births",
+      "obstetrics"
+    ]
+  },
+  {
+    "id": "ana_074",
+    "category": "Gynäkologische Anamnese",
+    "doctorQuestion": "Nehmen Sie hormonelle Verhütungsmittel? Wenn ja, welche?",
+    "simpleEnglish": "Do you use hormonal contraception? If yes, which one?",
+    "patientPossibleAnswer": "Ja, ich nehme die Pille. Die Microgynon.",
+    "followUpQuestions": [
+      "Seit wann nehmen Sie die Pille?",
+      "Hatten Sie Nebenwirkungen?",
+      "Rauchen Sie zusätzlich?"
+    ],
+    "notes": "Hormonal contraception plus smoking increases thrombosis risk. Important safety question.",
+    "tags": [
+      "gynäkologie",
+      "contraception",
+      "pill",
+      "thrombosis risk"
+    ]
+  },
+  {
+    "id": "ana_075",
+    "category": "Gynäkologische Anamnese",
+    "doctorQuestion": "Hatten Sie schon auffällige PAP-Abstriche oder wurden Sie gynäkologisch schon einmal operiert?",
+    "simpleEnglish": "Have you ever had abnormal Pap smears or any gynecological surgeries?",
+    "patientPossibleAnswer": "Ja, einmal hatte ich einen auffälligen Befund, aber die Kontrolle war unauffällig.",
+    "followUpQuestions": [
+      "Wann war Ihr letzter PAP-Abstrich?",
+      "Hatten Sie eine Konisation oder andere Eingriffe?"
+    ],
+    "notes": "Cervical cancer screening history is essential. Document prior abnormal results and interventions.",
+    "tags": [
+      "gynäkologie",
+      "pap smear",
+      "cervical screening",
+      "gynecologic surgery"
+    ]
+  },
+  {
+    "id": "ana_076",
+    "category": "Pädiatrische Anamnese",
+    "doctorQuestion": "Wie war die Schwangerschaft und die Geburt Ihres Kindes? Gab es Komplikationen?",
+    "simpleEnglish": "How was the pregnancy and birth of your child? Were there any complications?",
+    "patientPossibleAnswer": "Die Schwangerschaft war normal, aber die Geburt war ein Kaiserschnitt wegen Steißlage.",
+    "followUpQuestions": [
+      "War es eine Termingeburt? Wie war der APGAR-Score?",
+      "Gab es Probleme nach der Geburt?"
+    ],
+    "notes": "Perinatal history is the foundation of pediatric anamnesis. Document gestational age, delivery mode, and APGAR.",
+    "tags": [
+      "pädiatrie",
+      "perinatal",
+      "birth",
+      "pregnancy"
+    ]
+  },
+  {
+    "id": "ana_077",
+    "category": "Pädiatrische Anamnese",
+    "doctorQuestion": "Wie ist der Impfstatus Ihres Kindes? Sind die Impfungen nach STIKO-Empfehlung erfolgt?",
+    "simpleEnglish": "What is your child's vaccination status? Have the vaccinations been given according to STIKO recommendations?",
+    "patientPossibleAnswer": "Ja, mein Kind ist nach dem Impfkalender geimpft. Alle Standardimpfungen sind gemacht.",
+    "followUpQuestions": [
+      "Welche Impfungen wurden bereits gegeben?",
+      "Gab es Impfreaktionen?",
+      "Ist die Maserimpfung erfolgt?"
+    ],
+    "notes": "Vaccination status is critical in pediatric assessment. STIKO is the German vaccination committee.",
+    "tags": [
+      "pädiatrie",
+      "vaccination",
+      "STIKO",
+      "immunization"
+    ]
+  },
+  {
+    "id": "ana_078",
+    "category": "Pädiatrische Anamnese",
+    "doctorQuestion": "Wie ist die Entwicklung Ihres Kindes? Läuft und spricht es altersgerecht?",
+    "simpleEnglish": "How is your child's development? Is he/she walking and talking age-appropriately?",
+    "patientPossibleAnswer": "Es läuft schon seit ein paar Monaten und spricht einzelne Wörter. Ich denke, es ist altersgerecht.",
+    "followUpQuestions": [
+      "Wann hat Ihr Kind angefangen zu krabbeln, zu laufen, zu sprechen?",
+      "Gab es Auffälligkeiten in der Entwicklung?"
+    ],
+    "notes": "Developmental milestones are key. Ask about motor, language, and social development milestones.",
+    "tags": [
+      "pädiatrie",
+      "development",
+      "milestones",
+      "growing"
+    ]
+  },
+  {
+    "id": "ana_079",
+    "category": "Pädiatrische Anamnese",
+    "doctorQuestion": "Ihr Kind hat Fieber. Seit wann? Hatten Sie schon einmal Fieberkrämpfe?",
+    "simpleEnglish": "Your child has a fever. Since when? Has your child ever had febrile seizures?",
+    "patientPossibleAnswer": "Seit gestern Abend. Fieberkrämpfe hatten wir noch nie.",
+    "followUpQuestions": [
+      "Wie hoch war das Fieber?",
+      "Hat das Kind Schmerzen? Trinkt es ausreichend?"
+    ],
+    "notes": "Febrile illness in children requires careful assessment. Febrile seizures are age-dependent and generally benign but frightening for parents.",
+    "tags": [
+      "pädiatrie",
+      "fever",
+      "febrile seizure",
+      "child"
+    ]
+  },
+  {
+    "id": "ana_080",
+    "category": "Sexualanamnese",
+    "doctorQuestion": "Ich frage jetzt aus medizinischen Gründen. Sind Sie sexuell aktiv?",
+    "simpleEnglish": "I am asking for medical reasons. Are you sexually active?",
+    "patientPossibleAnswer": "Ja, ich bin in einer festen Beziehung und sexuell aktiv.",
+    "followUpQuestions": [
+      "Hatten Sie ungeschützten Geschlechtsverkehr?",
+      "Besteht der Wunsch nach einer Schwangerschaft?"
+    ],
+    "notes": "Ask sexan with context. Normalize the question. Relevant for GU symptoms, abdominal pain, and family planning.",
+    "tags": [
+      "sexualanamnese",
+      "sexual activity",
+      "safe sex"
+    ]
+  },
+  {
+    "id": "ana_081",
+    "category": "Sexualanamnese",
+    "doctorQuestion": "Hatten Sie in der Vergangenheit sexuell übertragbare Infektionen?",
+    "simpleEnglish": "Have you had any sexually transmitted infections in the past?",
+    "patientPossibleAnswer": "Nein, nie. Ich wurde aber auch nie getestet.",
+    "followUpQuestions": [
+      "Möchten Sie einen Test auf sexuell übertragbare Krankheiten durchführen lassen?",
+      "Hatten Sie Symptome wie Ausfluss oder Brennen?"
+    ],
+    "notes": "STI history is relevant for GU symptoms, infertility, and certain systemic conditions.",
+    "tags": [
+      "sexualanamnese",
+      "STI",
+      "sexual health"
+    ]
+  },
+  {
+    "id": "ana_082",
+    "category": "Sexualanamnese",
+    "doctorQuestion": "Haben Sie Schmerzen beim Geschlechtsverkehr?",
+    "simpleEnglish": "Do you have pain during sexual intercourse?",
+    "patientPossibleAnswer": "Ja, in letzter Zeit habe ich Schmerzen. Das war vorher nicht so.",
+    "followUpQuestions": [
+      "Seit wann bestehen die Schmerzen?",
+      "Wo genau sind die Schmerzen lokalisiert?"
+    ],
+    "notes": "Dyspareunia can have multiple causes (endometriosis, infection, vaginismus). Ask sensitively.",
+    "tags": [
+      "sexualanamnese",
+      "dyspareunia",
+      "pain"
+    ]
+  },
+  {
+    "id": "ana_083",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie Probleme beim Wasserlassen, wie Brennen, Schmerzen oder häufigen Harndrang?",
+    "simpleEnglish": "Do you have any problems with urination, such as burning, pain, or frequent urination?",
+    "patientPossibleAnswer": "Ja, ich muss nachts mehrmals raus und es brennt beim Wasserlassen.",
+    "followUpQuestions": [
+      "Seit wann besteht das Brennen?",
+      "Haben Sie Blut im Urin bemerkt?",
+      "Hatten Sie Fieber oder Flankenschmerzen?"
+    ],
+    "notes": "Urinary symptoms are part of the system review. Important for UTIs, BPH, and urological conditions.",
+    "tags": [
+      "system review",
+      "urinary",
+      "dysuria",
+      "frequency"
+    ]
+  },
+  {
+    "id": "ana_084",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie in letzter Zeit Veränderungen an Ihrer Haut bemerkt, wie neue Muttermale, Ausschlag oder Juckreiz?",
+    "simpleEnglish": "Have you noticed any changes to your skin recently, such as new moles, rash, or itching?",
+    "patientPossibleAnswer": "Ja, ich habe einen Ausschlag an den Armen, der juckt.",
+    "followUpQuestions": [
+      "Seit wann haben Sie den Ausschlag?",
+      "Hatten Sie das schon einmal?",
+      "Haben Sie neue Pflegeprodukte verwendet?"
+    ],
+    "notes": "Skin review is part of comprehensive history. New or changing moles require dermatological evaluation.",
+    "tags": [
+      "system review",
+      "skin",
+      "rash",
+      "dermatology"
+    ]
+  },
+  {
+    "id": "ana_085",
+    "category": "System Review",
+    "doctorQuestion": "Haben Sie Schmerzen in den Gelenken oder Muskeln? Wenn ja, welche Gelenke sind betroffen?",
+    "simpleEnglish": "Do you have any pain in your joints or muscles? If yes, which joints are affected?",
+    "patientPossibleAnswer": "Ja, die Knie schmerzen, besonders beim Treppensteigen.",
+    "followUpQuestions": [
+      "Seit wann bestehen die Gelenkschmerzen?",
+      "Sind die Schmerzen belastungsabhängig?",
+      "Sind die Gelenke geschwollen?"
+    ],
+    "notes": "Joint and muscle review. Differentiate inflammatory (morning stiffness, swelling from osteoarthritis (exertional pain).",
+    "tags": [
+      "system review",
+      "joints",
+      "musculoskeletal",
+      "arthritis"
+    ]
+  },
+  {
+    "id": "ana_086",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie eine chronische Lungenerkrankung, wie zum Beispiel COPD oder Lungenfibrose?",
+    "simpleEnglish": "Do you have a chronic lung disease, such as COPD or pulmonary fibrosis?",
+    "patientPossibleAnswer": "Nein, meine Lunge war immer gesund.",
+    "followUpQuestions": [
+      "Hatten Sie schon einmal eine Lungenentzündung?",
+      "Wurde bei Ihnen jemals Asthma diagnostiziert?"
+    ],
+    "notes": "Chronic lung disease affects oxygen requirements, anesthesia risk, and prognosis.",
+    "tags": [
+      "vorerkrankungen",
+      "pulmonary",
+      "COPD",
+      "lung"
+    ]
+  },
+  {
+    "id": "ana_087",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie eine Blutgerinnungsstörung oder hatten Sie schon einmal Thrombosen oder Embolien?",
+    "simpleEnglish": "Do you have a blood clotting disorder or have you ever had thrombosis or emboli?",
+    "patientPossibleAnswer": "Nein, nie. Ich hatte noch nie Probleme mit Thrombosen.",
+    "followUpQuestions": [
+      "Gibt es in Ihrer Familie Thrombosefälle?",
+      "Wurde bei Ihnen jemals eine Thrombophilie festgestellt?"
+    ],
+    "notes": "Thrombosis history is crucial before prescribing hormonal contraception or planning surgery.",
+    "tags": [
+      "vorerkrankungen",
+      "thrombosis",
+      "coagulation",
+      "embolism"
+    ]
+  },
+  {
+    "id": "ana_088",
+    "category": "Vorerkrankungen",
+    "doctorQuestion": "Haben Sie eine chronisch-entzündliche Darmerkrankung, wie Morbus Crohn oder Colitis ulcerosa?",
+    "simpleEnglish": "Do you have a chronic inflammatory bowel disease, such as Crohn's disease or ulcerative colitis?",
+    "patientPossibleAnswer": "Ja, ich habe Morbus Crohn. Die Erkrankung ist gut eingestellt.",
+    "followUpQuestions": [
+      "Seit wann besteht die Erkrankung?",
+      "Welche Medikamente nehmen Sie?",
+      "Hatten Sie schon Operationen am Darm?"
+    ],
+    "notes": "IBD affects many organ systems beyond the GI tract. Important for immunosuppression and cancer surveillance.",
+    "tags": [
+      "vorerkrankungen",
+      "IBD",
+      "Crohn's",
+      "colitis"
+    ]
+  },
+  {
+    "id": "ana_089",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie Schilddrüsenmedikamente oder Medikamente gegen Diabetes?",
+    "simpleEnglish": "Do you take thyroid medication or diabetes medication?",
+    "patientPossibleAnswer": "Ja, L-Thyroxin 100 Mikrogramm täglich und Metformin.",
+    "followUpQuestions": [
+      "Nehmen Sie auch Insulin?",
+      "Wie sind Ihre Blutzuckerwerte aktuell?",
+      "Haben Sie die Medikamente heute genommen?"
+    ],
+    "notes": "Thyroid and diabetes meds are among the most common. Crucial to know for many clinical decisions.",
+    "tags": [
+      "medikamente",
+      "thyroid",
+      "diabetes",
+      "insulin"
+    ]
+  },
+  {
+    "id": "ana_090",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie Schmerzmittel regelmäßig ein? Wenn ja, welche und wie oft?",
+    "simpleEnglish": "Do you take pain medication regularly? If yes, which ones and how often?",
+    "patientPossibleAnswer": "Ja, ich nehme fast täglich Ibuprofen 400 mg wegen meiner Knieschmerzen.",
+    "followUpQuestions": [
+      "Seit wann nehmen Sie regelmäßig Ibuprofen?",
+      "Haben Sie schon einmal Magenschmerzen oder Sodbrennen durch Ibuprofen bemerkt?"
+    ],
+    "notes": "Regular NSAID use increases risk of GI bleeding and renal impairment. Always quantify frequency and duration.",
+    "tags": [
+      "medikamente",
+      "painkillers",
+      "NSAIDs",
+      "analgesics"
+    ]
+  },
+  {
+    "id": "ana_091",
+    "category": "Medikamente",
+    "doctorQuestion": "Nehmen Sie Medikamente gegen erhöhte Blutfette, also Cholesterinsenker?",
+    "simpleEnglish": "Do you take medication for high blood lipids, i.e., cholesterol-lowering drugs?",
+    "patientPossibleAnswer": "Ja, ich nehme Atorvastatin 20 mg abends.",
+    "followUpQuestions": [
+      "Seit wann nehmen Sie Statine?",
+      "Haben Sie die Medikamente gut vertragen?"
+    ],
+    "notes": "Statins are common cardiovascular medication. Ask about tolerance (muscle pain, liver enzymes).",
+    "tags": [
+      "medikamente",
+      "statins",
+      "cholesterol",
+      "lipids"
+    ]
+  },
+  {
+    "id": "ana_092",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Haben Sie Angehörige, die sich im Notfall um Sie kümmern können?",
+    "simpleEnglish": "Do you have relatives who can take care of you in an emergency?",
+    "patientPossibleAnswer": "Ja, meine Tochter wohnt um die Ecke. Sie kann kommen, wenn es nötig ist.",
+    "followUpQuestions": [
+      "Haben Sie einen Hausnotruf?",
+      "Sind Sie in einem Senioren- oder Pflegeheim?"
+    ],
+    "notes": "Social support network is essential for discharge planning. Especially important for elderly or disabled patients.",
+    "tags": [
+      "sozialanamnese",
+      "support network",
+      "emergency contact"
+    ]
+  },
+  {
+    "id": "ana_093",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Sind Sie Mitglied in einer Selbsthilfegruppe oder erhalten Sie psychologische Unterstützung?",
+    "simpleEnglish": "Are you a member of a support group or do you receive psychological support?",
+    "patientPossibleAnswer": "Ja, ich gehe einmal pro Woche zur Psychotherapie wegen meiner Angststörung.",
+    "followUpQuestions": [
+      "Seit wann sind Sie in Behandlung?",
+      "Wer ist Ihr Therapeut?"
+    ],
+    "notes": "Self-help groups and therapy are part of the social history. Shows coping strategies and support systems.",
+    "tags": [
+      "sozialanamnese",
+      "therapy",
+      "support group",
+      "mental health"
+    ]
+  },
+  {
+    "id": "ana_094",
+    "category": "Sozialanamnese",
+    "doctorQuestion": "Haben Sie einen Vorsorgevollmacht oder eine Patientenverfügung?",
+    "simpleEnglish": "Do you have an advance directive or a living will?",
+    "patientPossibleAnswer": "Nein, habe ich nicht. Sollte ich mir Gedanken darüber machen?",
+    "followUpQuestions": [
+      "Haben Sie mit Ihren Angehörigen über Ihre Wünsche für medizinische Notfälle gesprochen?"
+    ],
+    "notes": "Advance care planning documents are legally recognized in Germany. Important to address, especially in chronic or terminal illness.",
+    "tags": [
+      "sozialanamnese",
+      "advance directive",
+      "living will",
+      "Vorsorgevollmacht"
+    ]
+  },
+  {
+    "id": "ana_095",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Haben Sie vor Beginn der Beschwerden etwas Besonderes gegessen oder getrunken?",
+    "simpleEnglish": "Did you eat or drink anything unusual before the symptoms started?",
+    "patientPossibleAnswer": "Ja, ich war am Abend in einem Restaurant und habe Fisch gegessen.",
+    "followUpQuestions": [
+      "Hatten andere Personen, die mit Ihnen gegessen haben, auch Beschwerden?",
+      "Was genau haben Sie gegessen?"
+    ],
+    "notes": "Food history can identify food poisoning, allergic reactions, or GI triggers.",
+    "tags": [
+      "aktuelle anamnese",
+      "food",
+      "trigger",
+      "diet"
+    ]
+  },
+  {
+    "id": "ana_096",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Hatten Sie in der letzten Zeit Stress oder besondere Belastungen?",
+    "simpleEnglish": "Have you had stress or particular burdens recently?",
+    "patientPossibleAnswer": "Ja, ich hatte viel Stress auf der Arbeit. Mein Chef macht mir Druck.",
+    "followUpQuestions": [
+      "Haben Sie das Gefühl, dass der Stress mit Ihren Beschwerden zusammenhängt?",
+      "Wie schlafen Sie?"
+    ],
+    "notes": "Stress can trigger or exacerbate many conditions. Part of understanding the context of illness.",
+    "tags": [
+      "aktuelle anamnese",
+      "stress",
+      "psychological",
+      "triggers"
+    ]
+  },
+  {
+    "id": "ana_097",
+    "category": "Aktuelle Anamnese",
+    "doctorQuestion": "Haben Sie in den letzten 24 Stunden etwas eingenommen, was ich wissen sollte? Auch pflanzliche Mittel oder Nahrungsergänzungsmittel?",
+    "simpleEnglish": "Have you taken anything in the last 24 hours that I should know about? Including herbal remedies or supplements?",
+    "patientPossibleAnswer": "Nein, gar nichts. Nur meine normalen Medikamente.",
+    "followUpQuestions": [
+      "Nehmen Sie regelmäßig Vitamine oder Nahrungsergänzungsmittel?",
+      "Haben Sie pflanzliche Präparate wie Johanniskraut oder Ginkgo genommen?"
+    ],
+    "notes": "Herbal supplements can interact with medications. Johanniskraut (St. John's wort) induces CYP450 enzymes.",
+    "tags": [
+      "aktuelle anamnese",
+      "supplements",
+      "herbal",
+      "interactions"
+    ]
+  },
+  {
+    "id": "ana_098",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Ich habe mir Notizen gemacht. Darf ich Ihnen kurz zusammenfassen, was ich bis jetzt verstanden habe?",
+    "simpleEnglish": "I've taken some notes. May I briefly summarize what I've understood so far?",
+    "patientPossibleAnswer": "Ja, gerne. Das hilft mir auch, ob ich nichts vergessen habe.",
+    "followUpQuestions": [
+      "Was ich bisher verstanden habe, ist Folgendes:... Habe ich etwas falsch verstanden?",
+      "Darf ich das so dokumentieren?"
+    ],
+    "notes": "Always ask for permission before summarizing. This is an important communication skill in FSP.",
+    "tags": [
+      "zusammenfassung",
+      "summarizing",
+      "patient approval"
+    ]
+  },
+  {
+    "id": "ana_099",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Gibt es Fragen, die ich nicht gestellt habe, die aber wichtig für Sie sind?",
+    "simpleEnglish": "Are there any questions I haven't asked that are important to you?",
+    "patientPossibleAnswer": "Eigentlich haben Sie alles gefragt, was mir wichtig ist.",
+    "followUpQuestions": [
+      "Haben Sie Bedenken bezüglich der weiteren Behandlung?",
+      "Haben Sie Angst vor bestimmten Untersuchungen?"
+    ],
+    "notes": "Gives the patient the final opportunity to contribute. FSP examiners look for this.",
+    "tags": [
+      "zusammenfassung",
+      "patient questions",
+      "concerns"
+    ]
+  },
+  {
+    "id": "ana_100",
+    "category": "Zusammenfassung und Rückversicherung",
+    "doctorQuestion": "Vielen Dank für das ausführliche Gespräch. Ich werde jetzt die weitere Diagnostik einleiten. Haben Sie dazu noch Fragen?",
+    "simpleEnglish": "Thank you for this detailed conversation. I will now initiate further diagnostics. Do you have any questions about that?",
+    "patientPossibleAnswer": "Nein, vielen Dank für Ihre ausführliche Erklärung.",
+    "followUpQuestions": [
+      "Ich werde Sie über die Ergebnisse informieren, sobald sie vorliegen.",
+      "Wenn Sie zwischendurch Fragen haben, zögern Sie nicht zu fragen."
+    ],
+    "notes": "Closing the anamnesis politely sets the stage for the next clinical steps. In FSP, a clear closing is expected.",
+    "tags": [
+      "zusammenfassung",
+      "closing",
+      "next steps",
+      "patient education"
+    ]
+  }
+]

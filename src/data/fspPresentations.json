@@ -1,0 +1,3879 @@
+[
+  {
+    "id": "fsp_p_001",
+    "caseTitle": "Akute Pankreatitis",
+    "rawPatientInfo": "45-jaehriger Patient, Maennlich, 82 kg. Aufnahme gestern. Seit 2 Tagen epigastrische Schmerzen, ausstrahlend in den Rücken, Guebbelkeit, Erbrechen. Kein Fieber. Alkoholanamnese: Konsum von 60-80 g Alkohol/Tag seit 10 Jahren. Keine Gallensteinanamnese. Labor: Lipase 1.240 U/L, CRP 85 mg/L, Leukozyten 13.200. Sonografie: Pankreas geschwollen, echoarm. Keine Cholezystolithiasis. GOT/GPT leicht erhoeht (2x).",
+    "task": "Present this case of acute pancreatitis to the senior physician on call.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle Ihnen einen 45-jaehrigen Patienten mit einer akuten Pankreatitis vor, Aetiologie am ehesten alkoholisch bei langjaehrigem Konsum. Der Patient klagt seit zwei Tagen ueber epigastrische Schmerzen mit Ausstrahlung in den Ruecken, begleitend Uebelkeit und Erbrechen. Die Lipase ist mit 1.240 U/L deutlich erhoeht. Im Sono zeigt sich ein geschwollenes Pankreas, Gallensteine oder ein Gallenstau liegen nicht vor. Das CRP liegt initial bei 85 mg/L. Wir haben den Patienten auf Nahrungskarenz gesetzt, eine ausreichende Volumensubstitution eingeleitet und eine symptomatische Schmerztherapie begonnen. Wir werden heute Abend und morgen das CRP und die Lipase kontrollieren, schwerere Verlaeufe muessen wir abwarten.",
+    "usefulPhrases": [
+      "Ich stelle einen 45-jaehrigen Patienten mit akuter Pankreatitis vor.",
+      "Aktuell zeigt sich das Pankreas im Sono geschwollen und echoarm.",
+      "Differenzialdiagnostisch kommt ein billaer-genese Pankreatitis infrage, bei negativer Sonografie jedoch eher alkoholisch.",
+      "Wir planen eine konservative Therapie mit Nahrungskarenz, Infusionen und symptomatischer Schmerztherapie."
+    ],
+    "commonMistakes": [
+      "Zu viel Fokus auf Gallensteinen, obwohl Sono negativ",
+      "Alkoholkonsum erwaehnen, aber nicht werten",
+      "CRP-Anstieg als Prognosefaktor nicht vergessen",
+      "Lipase erst nach 3-5 Tagen relevant fuer Verlauf"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Internal Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_002",
+    "caseTitle": "Herzinsuffizienz Dekompensation",
+    "rawPatientInfo": "71-jaehriger Patient, Maennlich, 84 kg. Z.n. Vorderwandinfarkt 2019, chronische Herzinsuffizienz NYHA II-III. Seit einer Woche zunehmende Belastungsdyspnoe, Beinoedeme, Nykturie 3x/Nacht. Gewichtszunahme von 3 kg in 10 Tagen. RR 145/85, HF 88/min, basal feuchte Rasselgeraeusche bds., Halsvenenstauung, Beinoedeme bis Unterschenkelmitte. Labor: NT-proBNP 2.850 pg/mL. Echo: LVEF 35%, diastolische Dysfunktion Stadium II.",
+    "task": "Present this heart failure exacerbation to the cardiology attending.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 71-jaehrigen Patienten mit bekannter chronischer Herzinsuffizienz vor. In den letzten zehn Tagen hat er drei Kilogramm zugenommen, klagt ueber zunehmende Belastungsdyspnoe, Nykturie und Beinoedeme. Klinisch finden wir beidseits basale feuchte Rasselgeraeusche, eine Halsvenenstauung und Beinoedeme bis zur Unterschenkelmitte. Der NT-proBNP ist mit 2.850 pg/mL deutlich erhoeht, die Ejektionsfraktion liegt bei 35 Prozent. Wir haben die Diuretika gesteigert und wachen das Gewicht engmaschig. Sollte sich keine Besserung zeigen, denken wir an eine Therapieeskalation mit einer zusaetzlichen vasodilatierenden Therapie.",
+    "usefulPhrases": [
+      "Ich stelle einen 71-jaehrigen Patienten mit dekompensierter Herzinsuffizienz vor.",
+      "Aktuell zeigt sich eine deutliche Flüssigkeitsretention.",
+      "Wir planen eine Steigerung der Diuretika und eine Gewichtskontrolle.",
+      "Differenzialdiagnostisch muss eine Rhythmusstabilitaet und eine Ischaemie ausgeschlossen werden."
+    ],
+    "commonMistakes": [
+      "Nicht nur auf Diuretika fokussieren, sondern auch Ursache suchen",
+      "NT-proBNP und Echo-Befund beide erwaehnen",
+      "Gewicht als Verlaufsparameter nicht vergessen",
+      "Rythmusstabilitaet prüfen bei VHF"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Cardiology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_003",
+    "caseTitle": "Verdacht auf Lungenembolie",
+    "rawPatientInfo": "55-jaehrige Patientin, Weiblich, 68 kg, BMI 31. Z.n. Hueft-TEP-Implantation vor 2 Wochen. Jetzt akute Dyspnoe seit 4 Stunden, tachykard 105/min, SpO2 88% unter Raumluft, blutiger Husten. RR 135/85, AF 22/min. Kein Beinschmerz oder Wadenschwellung. EKG: SIQIII-Typ, Sinustachykardie. D-Dimer 4,5 mg/L (erhoeht). Blutgasanalyse: pO2 62 mmHg, pCO2 32 mmHg.",
+    "task": "Present this suspected pulmonary embolism to the pulmonary fellow on duty.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle Ihnen eine 55-jaehrige Patientin mit Verdacht auf Lungenembolie vor. Sie hat vor zwei Wochen eine Hueft-TEP erhalten und praesentiert sich jetzt mit akuter Dyspnoe, Tachykardie, und einem Sauerstoffabfall auf 88 Prozent unter Raumluft. Das EKG zeigt einen SIQIII-Typ, die D-Dimere sind deutlich erhoeht. Nach dem Wells-Score ergibt sich eine hohe klinische Wahrscheinlichkeit. Wir haben bereits eine CT-Angiografie angemeldet und begonnen, Sauerstoff zu geben. Bei Bestaetigung planen wir eine therapeutische Antikoagulation, voraussichtlich mit einem DOAK.",
+    "usefulPhrases": [
+      "Ich stelle eine 55-jaehrige Patientin mit akuter Dyspnoe vor.",
+      "Wegen des Hueft-TEP-Eingriffs vor zwei Wochen besteht ein erhoehtes Thromboserisiko.",
+      "Die D-Dimere sind signifikant erhoeht.",
+      "Wir planen eine CT-Angiografie zur Bestaetigung."
+    ],
+    "commonMistakes": [
+      "Nur auf D-Dimere verweisen, Symptome sind wichtiger",
+      "Wells-Score erwaehnen fuer klinische Wahrscheinlichkeit",
+      "Nicht vergessen: SAB bei Hueft-TEP in Hueftnähe",
+      "Risikostratifizierung (massiv/submassiv) ansprechen"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pulmonology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_004",
+    "caseTitle": "Akute Divertikulitis",
+    "rawPatientInfo": "62-jaehriger Patient, Maennlich, 78 kg. Seit 3 Tagen linksseitige Unterbauchschmerzen, Fieber bis 38,9 C, UEbelkeit, kein Stuhl seit 2 Tagen. Bekannte Sigmadivertikulose. Keine Uebelkeit/Erbrechen mehr. Koerperlich: Druckschmerz linker Unterbauch, leichte Abwehrspannung. Labor: Leukozyten 14.800/mcL, CRP 112 mg/L. CT Abdomen: Sigma verdickt, perikolische Fettgewebsinfiltration, kleine Abszessformation 2,5 cm parakolisch.",
+    "task": "Present this acute diverticulitis case to the attending surgeon.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 62-jaehrigen Patienten mit akuter Sigmadivertikulitis vor. Er klagt seit drei Tagen ueber linksseitige Unterbauchschmerzen und hat Fieber bis fast 39 Grad. Das CRP ist mit 112 stark erhoeht, die Leukozyten auf 14.800 angestiegen. Im CT zeigt sich das Sigma entzuendlich verbreitert mit einer perikolischen Abszessformation von 2,5 Zentimetern. Wir beginnen eine intravenoese Antibiose mit Cefuroxim und Metronidazol und werden die Entzuendungsparameter engmaschig kontrollieren. Sollte der Abszess unter Therapie groesser werden oder sich der Zustand verschlechtern, denken wir an eine CT-gesteuerte Drainage oder eine Operation.",
+    "usefulPhrases": [
+      "Ich stelle einen 62-jaehrigen Patienten mit akuter Sigmadivertikulitis vor.",
+      "Das CT zeigt bereits eine kleine Abszessformation.",
+      "Wir beginnen eine konservative Antibiose.",
+      "Bei Verschlechterung oder Abszessgroessenzunahme denke ich an eine interventionelle Drainage oder OP."
+    ],
+    "commonMistakes": [
+      "Nicht direkt chirurgisch denken, konservativer Versuch zuerst",
+      "Abszessgroeße (2,5 cm) konkret angeben",
+      "Stuhlverhalten und Darmpassage nicht vergessen",
+      "Hinweis auf gedeckte Perforation geben"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gastroenterology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_005",
+    "caseTitle": "Transiente ischaemische Attacke (TIA)",
+    "rawPatientInfo": "68-jaehriger Patient, Maennlich, 76 kg. Vor 3 Stunden Episode mit Sprachstoerung und rechtssseitiger Armschwaeche fuer ca. 45 Minuten, dann komplette Rueckbildung. Jetzt neurologisch unauffaellig. RR 155/95 beidseits. Kein Vorhofflimmern bekannt. EKG: Sinusrhythmus, keine P-Wellen-Auffaelligkeiten. CT kopf: kein frischer Infarkt, keine Blutung. Echo: kein VHF, keine Thromben. Carotis-Duplex: plaquebedingte Stenose ACI interna links ca. 50%.",
+    "task": "Present this TIA to the neurology resident.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 68-jaehrigen Patienten mit einer transitorischen ischaemischen Attacke vor. Vor drei Stunden hatte er eine Episode mit Sprachstoerung und einer Schwaeche im rechten Arm, die sich innerhalb von 45 Minuten komplett zurueckgebildet hat. Der ABCD2-Score liegt bei 4 Punkten. Das CT ist unauffaellig, ein frischer Infarkt und eine Blutung sind ausgeschlossen. In der Carotis-Duplex zeigt sich eine plaquesbedingte Stenose der linken ACI interna von etwa 50 Prozent, die nicht operationswuerdig ist. Wir beginnen eine Sekundaerprophylaxe mit ASS 100 Milligramm und stellen den Blutdruck ein. Ein Langzeit-EKG zur Rhythmusueberwachung ist ebenfalls geplant.",
+    "usefulPhrases": [
+      "Ich stelle einen 68-jaehrigen Patienten mit einer TIA vor.",
+      "Die Symptomatik hat sich komplett zurueckgebildet.",
+      "Wir haben einen ischaemischen Infarkt und eine Blutung ausgeschlossen.",
+      "Wir beginnen eine Sekundaerprophylaxe."
+    ],
+    "commonMistakes": [
+      "TIA und Schlaganfall nicht sauber trennen (Dauer <24h) gesteht aber TIA",
+      "ABCD2-Score erwaehnen",
+      "Carotis-Stenose 50% ist nicht operationswuerdig, aber relevant",
+      "Keine Lysetherapie bei TIA moeglich"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Neurology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_006",
+    "caseTitle": "Proximale Femurfraktur",
+    "rawPatientInfo": "82-jaehrige Patientin, Weiblich, 62 kg, Pflegeheim. Gestuerzt auf linker Seite beim Aufstehen aus dem Bett. Jetzt Schmerzen linkes Bein, Bein kann nicht belastet werden, Bein verkuerzt und aussenrotiert. Keine offene Wunde, kein Sensibilitaetsdefizit, periphere Pulse tastbar. Vorerkrankungen: Osteoporose, Hypertonie, Niereninsuffizienz Stadium 3, ASS 100. Roentgen: mediale Schenkelhalsfraktur links, nicht disloziert.",
+    "task": "Present this proximal femur fracture to the orthopedic consultant for OR planning.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 82-jaehrige Patientin, die sich bei einem Sturz im Pflegeheim eine mediale Schenkelhalsfraktur links zugezogen hat. Die Fraktur ist nicht disloziert, das Bein zeigt eine Aussenrotation und Verkuerzung. Bei vorbestehender Osteoporose und dem Alter der Patientin empfehle ich eine Hemiendoprothese. Die Operation sollte aufgrund der Daene der Bettlagerung innerhalb von 48 Stunden erfolgen. Die Patientin nimmt ASS 100, was wir bei geplanter OP pausieren muessen. Weiterhin besteht eine Niereninsuffizienz Stadium drei, was wir bei der Narkosefuehrung beachten muessen. Eine DVT-Prophylaxe mit NMH haben wir bereits heute eingeleitet.",
+    "usefulPhrases": [
+      "Ich stelle eine 82-jaehrige Patientin mit einer Schenkelhalsfraktur vor.",
+      "Die Fraktur ist nicht disloziert.",
+      "Angesichts des Alters und der Osteoporose denke ich an einen Gelenkkoepfchenersatz.",
+      "Eine Operation sollte moeglichst zeitnah erfolgen."
+    ],
+    "commonMistakes": [
+      "Medizinisches Risiko (Niereninsuffizienz, ASS) ansprechen",
+      "Nicht vergessen: OP innerhalb von 48h bei Schenkelhalsfraktur",
+      "DVT-Prophylaxe erwaehnen, auch bei noch OP",
+      "ASS-Pause praeoperativ erwaehnen"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Orthopedics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_007",
+    "caseTitle": "Akute Cholezystitis",
+    "rawPatientInfo": "54-jaehrige Patientin, Weiblich, 80 kg, BMI 32. Seit 24 Stunden rechtssseitige Oberbauchschmerzen, ausstrahlend in den Ruecken und die rechte Schulter, Fieber 38,5 C, UEbelkeit, Erbrechen. Mehrere aehnliche Episoden in den letzten Monaten nach fettreichen Mahlzeiten. Druckschmerz rechter Oberbauch, Murphy-Zeichen positiv. Kein Ikterus. Labor: Leukozyten 16.200, CRP 98, Bilirubin 0,8 mg/dL, GGT 82 U/L, ALP 110 U/L. Sono: Gallenblase wandverdickt auf 6 mm, multiple Steine, pericholezystische Flüssigkeit, kein Gallengangstau.",
+    "task": "Present this acute cholecystitis case to the surgical attending.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 54-jaehrige Patientin mit einer akuten Cholezystitis vor. Der Murphy ist positiv, die Gallenblase ist im Sono wandverdickt auf 6 Millimeter mit pericholezystischer Flüssigkeit und multiplen Steinen. Laborchemisch haben wir eine deutliche Entzuendungsreaktion, aber keinen Anhalt fuer eine Cholestase. Wir haben die Patientin nuchtern gesetzt, mit einer intravenoesen Antibiose mit Ceftriaxon und Metronidazol begonnen und eine Volumentherapie eingeleitet. Geplant ist eine fruehelelektive Cholezystektomie im gleichen Aufenthalt, da eine konservative Therapie bei rezidivierenden Beschwerden keine dauerhafte Loesung waere.",
+    "usefulPhrases": [
+      "Ich stelle eine 54-jaehrige Patientin mit einer akuten Cholezystitis vor.",
+      "Die Gallenblase wandverdickt, multiple Steine, pericholezystische Flüssigkeit.",
+      "Wir beginnen eine Antibiose und planen eine fruehelelektive Cholezystektomie.",
+      "Komplikationen wie Perforation oder Cholangitis muessen wir ausschließen."
+    ],
+    "commonMistakes": [
+      "Nur auf konservative Therapie fokussieren, OP-Indikation nicht vergessen",
+      "Wann dringend und wann elektiv? Klinisches Bild entscheidet",
+      "Toksich/abszediert? Gangstau? Merkmale der Komplikationen",
+      "Laborchemische Cholestase und Ikterus als Warnzeichen"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Surgery",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_008",
+    "caseTitle": "Anaphylaktischer Schock (Bienenstich)",
+    "rawPatientInfo": "28-jaehriger Patient, Maennlich, 70 kg. 15 Minuten nach Bienenstich in den rechten Unterarm aufgetreten: generalisierte Urtikaria, Juckreiz, Dyspnoe, pfeifende Atmung, Uebelkeit, Schwindel. Bei Eintreffen Rettungsdienst: RR 78/45 mmHg, HF 125/min, SpO2 85% unter Raumluft, Stridor, Haut gerotet. Keine bekannten Allergien. Keine Medikamente.",
+    "task": "Present this anaphylactic shock to the emergency physician.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 28-jaehrigen Patienten mit einem anaphylaktischen Schock Grad III nach einem Bienenstich vor. Wir haben sofort Adrenalin 0,5 Milligramm intramuskulaer in den Oberschenkel gegeben und den Patienten mit Sauerstoff versorgt. Parallel wurde ein venoeser Zugang gelegt und Volumen infundiert. Die Vitalparameter stabilisieren sich: Der Blutdruck steigt auf 100/60, die SpO2 auf 95 Prozent. Wir planen eine stationaere Ueberwachung fuer mindestens 24 Stunden wegen der Gefahr einer biphasischen Reaktion. Nach Entlassung braucht der Patient einen Adrenalin-Autoinjektor, einen Allergiepass und eine allergologische Vorstellung.",
+    "usefulPhrases": [
+      "Ich stelle einen 28-jaehrigen Patienten im anaphylaktischen Schock nach Insektenstich vor.",
+      "Wir haben Adrenalin intramuskulaer gegeben.",
+      "Der Patient erhaelt Sauerstoff und Volumen.",
+      "Nach Stabilisierung braucht er einen Allergologietermin und einen Notfallpass."
+    ],
+    "commonMistakes": [
+      "Adrenalin als erste Therapie nicht vergessen",
+      "Nicht nur Antihistaminika geben (zu langsam)",
+      "Stufenplan der Anaphylaxie-Therapie nennen",
+      "Stationaere Ueberwachung wegen moeglicher Biphasie"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Emergency Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_009",
+    "caseTitle": "Diabetische Ketoazidose",
+    "rawPatientInfo": "22-jaehrige Patientin, Weiblich, 62 kg. Bekannter Typ-1-Diabetes seit 8 Jahren. Insulinpumpe seit 2 Jahren. Seit gestern UEbelkeit, Erbrechen, Polydipsie, Polyurie. Heute morgen auffallend tiefe, schnelle Atmung, Acetongeruch. Bei Aufnahme: RR 105/60, HF 110/min, AF 28/min, BZ 480 mg/dL, venoeser pH 7,1, Bicarbonat 9 mmol/L, Base Excess -14, spuren von Beta-Hydroxybutyrat, Kalium 5,2 mmol/L, Natrium 132 mmol/L. Insulinpumpe: Batterie leer seit gestern Abend.",
+    "task": "Present this DKA case to the endocrinology fellow.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 22-jaehrige Patientin mit einer diabetischen Ketoazidose bei Typ-1-Diabetes vor. Die Insulinpumpe war offenbar leer, sodass die Basalrate ausgefallen ist. Die Patientin praesentiert sich tachykard, tachypnoisch, mit Kussmaul-Atmung und Acetongeruch. Der Blutzucker liegt bei 480 Milligramm pro Deziliter, der pH bei 7,1, das Bicarbonat bei 9. Wir haben zunaechst einen Volumenbolus von 1 Liter Kochsalz 0,9 Prozent gegeben und eine Insulinperfusor-Therapie mit 0,1 Einheiten pro Kilogramm und Stunde gestartet. Das Kalium liegt aktuell bei 5,2, wir werden es engmaschig kontrollieren und bei einem Abfall unter 5,0 substituieren. Wir planen eine stundenweise BZ-Kontrolle und eine Korrektur der Azidose.",
+    "usefulPhrases": [
+      "Ich stelle eine 22-jaehrige Patientin mit einer diabetischen Ketoazidose vor.",
+      "Die Insulinpumpe war leer, die Baseline-Therapie unterbrochen.",
+      "Wir beginnen eine standardisierte DKA-Behandlung.",
+      "Das Kalium muss engmaschig kontrolliert werden."
+    ],
+    "commonMistakes": [
+      "Azidose-Schweregrad nicht nur pH, sondern Bicarbonat nennen",
+      "Erst Fluessigkeit, dann Insulin, dann Kalium-Substitution",
+      "BZ-Senkung maximal 50-100 mg/dL pro Stunde",
+      "Hirnoedem als Komplikation erwaehnen bei Kindern/ Jugendlichen"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Endocrinology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_010",
+    "caseTitle": "Akutes Nierenversagen (CKD-Trigger)",
+    "rawPatientInfo": "74-jaehriger Patient, Maennlich, 80 kg. Chronische Niereninsuffizienz Stadium 3 (GFR 45 vor 3 Monaten). Jetzt seit 5 Tagen Durchfall und Erbrechen bei Gastroenteritis. Keine ausreichende Fluessigkeitszufuhr. Zunaechst Ibuprofen 400 mg eingenommen wegen Kopfschmerzen. Jetzt Oligurie, Muedigkeit, UEbelkeit. Blutdruck 100/55, HF 100/min, trockene Schleimhaeute. Labor: Kreatinin 3,2 mg/dL (vorher 1,6), GFR 18, Harnstoff 85 mg/dL, Kalium 5,6 mmol/L, Natrium 131 mmol/L.",
+    "task": "Present this AKI-on-CKD case to the nephrology attending.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 74-jaehrigen Patienten mit einer akuten Nierenschae digung Stadium 3 auf dem Boden einer vorbestehenden CKD Stadium 3. Ausgeloest wurde die Verschlechterung durch eine Gastroenteritis mit Durchfall und Erbrechen, dazu hat der Patient Ibuprofen eingenommen. Das Kreatinin ist von 1,6 auf 3,2 angestiegen, die GFR auf 18 abgefallen. Das Kalium liegt mit 5,6 im kritischen Bereich. Wir geben vorsichtig Volumen intravenoes, haben das Ibuprofen abgesetzt, ueberwachen den Urin und das Kalium engmaschig. Wir haben bereits ein EKG zur Kaliumkontrolle geschrieben. Sollte das Kalium weiter steigen oder eine Uraemie auftreten, denken wir an eine Dialyse.",
+    "usefulPhrases": [
+      "Ich stelle einen 74-jaehrigen Patienten mit einem akuten Nierenversagen auf dem Boden einer vorbestehenden CKD vor.",
+      "Praeziptierend waren eine Gastroenteritis, unzureichende Fluessigkeit und NSAR-Einnahme.",
+      "Das Kalium ist kritisch.",
+      "Wir muessen eine Dialyseindikation prafen."
+    ],
+    "commonMistakes": [
+      "Nicht nur Kreatinin nennen, sondern auch AKI-Stadium",
+      "NSAR als vermeidbare Ursache nennen",
+      "Flüssigkeitsmanagement und Kalium-Management getrennt besprechen",
+      "Dialyseindikation konkret benennen: K+, Uraemie, Hypervolaemie"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Nephrology/Urology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_011",
+    "caseTitle": "V.a. Extrauteringraviditaet",
+    "rawPatientInfo": "33-jaehrige Patientin, 60 kg. Letzte Regel vor 6 Wochen. Seit 3 Tagen leichte Unterbauchschmerzen rechts, jetzt stechender Schmerz, Schmierblutung. RR 105/60, HF 105/min, blass. Druckschmerz rechter Unterbauch, leichte Abwehrspannung. HCG 4.500 IU/L. Sono: keine intrauterine Fruchtanlage, re Adnexe Raumforderung 2,5 cm inhomogen, wenig freie Fluessigkeit im Douglas.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 33-jaehrige Patientin mit V.a. Extrauteringraviditaet vor. Sie ist grenzwertig: RR 105/60, HF 105. HCG 4.500, Sono ohne intrauterine Fruchtanlage, aber rechts adnexale Raumforderung und freie Fluessigkeit. DD kommt eine Corpus-luteum-Zyste infrage, aber aufgrund der Klinik gehen wir von einer EU mit beginnender Ruptur aus. Wir haben Blut fuer 2 EKs angefordert und bereiten eine diagnostische Laparoskopie vor.",
+    "usefulPhrases": [
+      "Patientin haemodynamisch grenzwertig.",
+      "EU bis zum Beweis des Gegenteils annehmen.",
+      "Sono zeigt keine intrauterine SS.",
+      "Diagnostische Laparoskopie geplant."
+    ],
+    "commonMistakes": [
+      "Haemodynamik zu spaet erwaehnen",
+      "HCG allein ohne Sono nicht ausreichend",
+      "DD Corpus-luteum-Zyste nennen",
+      "Bei V.a. Ruptur sofort OP"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gynecology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_012",
+    "caseTitle": "Asthma-Exazerbation (Kind)",
+    "rawPatientInfo": "8-jaehriger Junge, 28 kg. Asthma seit 3 Jahren, Salbutamol bei Bedarf. Seit 2 Tagen Husten, pfeifende Atmung, kann nicht in ganzen Saetzen sprechen. AF 35/min, SpO2 90% Raumluft, Einziehungen, exspiratorisches Giemen. Peak-Flow 40% des Solls. Salbutamol-Spray nur kurz wirksam.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 8-jaehrigen Jungen mit schwerer Asthma-Exazerbation vor. Er kann nicht sprechen in ganzen Saetzen, hat Einziehungen, SpO2 90%, Peak-Flow 40%. Nach dreimaligem Salbutamol keine Besserung. Wir geben Prednisolon systemisch und Sauerstoff und nehmen den Jungen stationaer auf zur engmaschigen Inhalationstherapie und Kontrolle.",
+    "usefulPhrases": [
+      "Kind zeigt mittelschwere bis schwere Exazerbation.",
+      "Peak-Flow nur 40%.",
+      "Stufentherapie nach Leitlinie beginnen.",
+      "Stationaere Aufnahme erforderlich."
+    ],
+    "commonMistakes": [
+      "Peak-Flow bei Kindern >5 Jahren wichtig",
+      "Prednisolon nicht zu spaet geben",
+      "Sprechbarkeit als Schweregrad-Indikator",
+      "Bei Kindern Zwerchfellkapazitaet beachten"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pediatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_013",
+    "caseTitle": "Akute paranoide Psychose",
+    "rawPatientInfo": "26-jaehriger Patient, 75 kg. Seit 2 Wochen verhaltensauffaellig, hoert Stimmen, fuehlt sich verfolgt. Gestern aggressive Durchbrueche gegen Familie, Polizei gebracht. Gibt Cannabis-Konsum an. Keine psychiatrische Vorgeschichte. CT Kopf o.B., Routinelabor o.B., Drogenscreening THC positiv.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 26-jaehrigen Patienten mit akuter paranoider Psychose vor, vermutlich Cannabinoid-induziert. Er hoert kommentierende Stimmen, hat paranoide Ideen. Organisch unauffaellig im CT. Wir koennen Eigen- und Fremdgefaehrdung nicht sicher ausschliessen. Wir leiten eine vorlaeufige Unterbringung nach PsychKG ein und beginnen eine antipsychotische Medikation.",
+    "usefulPhrases": [
+      "Patient wirkt psychotisch, paranoid, halluziniert.",
+      "Organische und substanzinduzierte Ursache abgeklaert.",
+      "Neuroleptische Medikation indiziert.",
+      "Stationaere Aufnahme wegen Eigen-/Fremdgefaehrdung."
+    ],
+    "commonMistakes": [
+      "Drogen nicht einfach als Ursache akzeptieren",
+      "Eigen-/Fremdgefaehrdung vorher einschaetzen",
+      "Gesetzliche Grundlage fuer Unterbringung nennen",
+      "PsychKG erwaehnen"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Psychiatry",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_014",
+    "caseTitle": "Erysipel Unterschenkel",
+    "rawPatientInfo": "56-jaehrige Patientin, 82 kg. CVI, Adipositas. Seit 2 Tagen Roetung, Schwellung, Ueberwaermung li Unterschenkel, Fieber 38,9 C. Scharf begrenzte Roetung, keine Blasen. Interdigitalekzem Zehe 4/5 li. CRP 85, Leukos 12.400. Duplex: keine TVT, keine Abszedierung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 56-jaehrige Patientin mit Erysipel des linken Unterschenkels. Scharf begrenzte Roetung, Ueberwaermung, Fieber 38,9, CRP 85. Eintrittspforte: Interdigitalekzem. TVT duplexsonografisch ausgeschlossen. Wir beginnen i.v. Penicillin G und lagern das Bein hoch. CRP-Kontrollen alle 2 Tage.",
+    "usefulPhrases": [
+      "Klassisches Erysipel li Unterschenkel.",
+      "Eintrittspforte: Interdigitalekzem.",
+      "I.v. Antibiose beginnen.",
+      "TVT duplexsonografisch ausgeschlossen."
+    ],
+    "commonMistakes": [
+      "Nicht TVT mit Erysipel verwechseln",
+      "Eintrittspforte in Zehenzwischenraeumen suchen",
+      "Begleitend TVT ausschliessen",
+      "Fieber/CRP als Therapieerfolgskontrolle"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Dermatology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_015",
+    "caseTitle": "Akute Mastoiditis",
+    "rawPatientInfo": "4-jaehriges Maedchen, 16 kg. Z.n. Otitis media rechts vor 10 Tagen, Amoxicillin 5 Tage. Jetzt wieder Fieber 39,2 C, Schmerzen hinter Ohr, Ohrmuschel abstehend. Trommelfell gerotet, vorgewoelbt. CRP 158, Leukos 18.000. CT-Felsenbein: Mastoidzellen rechts eingetruebt, kein Abszess.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle ein 4-jaehriges Maedchen mit akuter Mastoiditis rechts. Die Otitis media wurde bereits behandelt, jetzt Verschlechterung. CRP 158, CT zeigt getruebte Mastoidzellen. Wir haben parazentesiert und Abstrich genommen, beginnen i.v. Antibiose. Bei keiner Entfieberung in 24-48h denken wir an Mastoidektomie.",
+    "usefulPhrases": [
+      "Akute Mastoiditis rechts.",
+      "Entzuendungswerte stark erhoeht.",
+      "Parazentese indiziert.",
+      "OP-Indikation bei Mastoiditis prafen."
+    ],
+    "commonMistakes": [
+      "Nur Antibiose geben, OP-Indikation verpassen",
+      "Abszess/Senkungsabszess als Komplikation suchen",
+      "Parazentese nicht zu spaet machen",
+      "Bei Kindern auf Hirndruckzeichen achten"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "ENT",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_016",
+    "caseTitle": "Akutes Winkelblockglaukom",
+    "rawPatientInfo": "65-jaehrige Patientin, 72 kg. Ploetzlich rotes, schmerzhaftes re Auge, Sehverschlechterung, Uebelkeit. Visus re: Lichtschein. Hornhaut oedematoes. Pupille entrundet, mittelweit, lichtstarr. Augeninnendruck re 52 mmHg. Hyperopie +3 dpt bekannt.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 65-jaehrige Patientin mit akutem Winkelblockglaukom rechts. Rotes, schmerzhaftes Auge, Visus nur Lichtschein. IOD 52 mmHg. Wir geben Timolol und Pilocarpin Augentropfen, Acetazolamid i.v. Nach Drucksenkung ist eine YAG-Laser-Iridotomie geplant.",
+    "usefulPhrases": [
+      "Klassische Trias: rotes Auge, Schmerz, Sehverschlechterung.",
+      "IOD 52 mmHg fatal.",
+      "Sofort drucksenkend handeln.",
+      "Nach Drucksenkung YAG-Laser-Iridotomie."
+    ],
+    "commonMistakes": [
+      "Nicht auf Konjunktivitis tippen",
+      "IOD messen bei rotem Auge",
+      "Uebelkeit ist Glaukomsignal, nicht Gastro",
+      "Acetazolamid systemisch geben"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Ophthalmology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_017",
+    "caseTitle": "Bakterielle Meningitis",
+    "rawPatientInfo": "34-jaehriger Patient, 70 kg. Seit 12h Fieber 39,4, Kopfschmerzen, Nackensteifigkeit, Photophobie. GCS 14, Meningismus, Brudzinski/Kernig pos. Keine Petechien. CRP 185, Leukos 16.200, PCT 3,4. CT Kopf o.B. Liquor trueb, Zellen 1.400 (80% neutrophile), Eiweiss 1,8, Glucose 18 (BG 112). Gram: grampositive Diplokokken.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 34-jaehrigen Patienten mit bakterieller Meningitis. Fieber, Nackensteifigkeit, pathologische Meningeale Zeichen. Liquor eitrig: 1.400 Zellen, neutrophile, Eiweiss erhoeht, Glucose erniedrigt. Grampositive Diplokokken. Wir geben Ceftriaxon plus Ampicillin kalkuliert plus Dexamethason.",
+    "usefulPhrases": [
+      "Klassische bakterielle Meningitis.",
+      "Liquor eitrig.",
+      "Gram: grampositive Diplokokken.",
+      "Sofort kalkulierte Antibiose gestartet."
+    ],
+    "commonMistakes": [
+      "Nicht auf CT warten, Antibiose sofort!",
+      "Liquor prae Antibiose nur wenn CT/Patient stabil",
+      "Herpesenzephalitis in DD nennen",
+      "Kontaktprophylaxe bei Meningokokken bedenken"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Infectious Disease",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_018",
+    "caseTitle": "Delir bei Demenz",
+    "rawPatientInfo": "83-jaehriger Patient, 65 kg, Pflegeheim. Demenz (MMST 18), Hypertonie, KHK, CKD3. Seit 2 Tagen verwirrt, aggressiv, desorientiert, halluziniert. Med: Ramipril 2,5, ASS 100, Metoprolol 25. Labor: Krea 1,8, GFR 32, CRP 24, Natrium 128, Kalium 4,2.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 83-jaehrigen Patienten mit akutem Delir. Ausloeser multifaktoriell: Na 128, GFR 32, CRP 24. Wir haben EKG, Blutkulturen, Urin und Roentgen-Thorax veranlasst. Vorsichtig Volumen, Medikamente auf anticholinerge Wirkung geprueft. Reorientierung durch bekannte Bezugspersonen. Risperidon niedrig dosiert reserviert.",
+    "usefulPhrases": [
+      "Patient zeigt akutes Delir, Ursache multifaktoriell.",
+      "Ausloeser: Hyponatriämie, Niereninsuff., Infekt.",
+      "HWI und Pneumonie ausschliessen.",
+      "Reorientierung und niedrig dosierte Neuroleptika."
+    ],
+    "commonMistakes": [
+      "Nur auf Demenz schieben",
+      "Medikationsanamnese auf anticholinerge Wirkung prüfen",
+      "Fluessigkeit und CRP checken",
+      "Reorientierung vor Medikamenten"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Geriatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_019",
+    "caseTitle": "SSRI-induzierte Hyponatriämie",
+    "rawPatientInfo": "72-jaehrige Patientin, 56 kg. Vor 3 Wochen Sertralin 50 mg begonnen. Seit 3 Tagen Muedigkeit, Verwirrtheit, Schwindel. Med: Sertralin 50, Ramipril 5, HCT 12,5. Labor: Natrium 121, Kalium 3,8. TSH, Kortisol normal. Sono o.B.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 72-jaehrige Patientin mit schwerer Hyponatriämie (121). Vor 3 Wochen Sertralin begonnen, zusaetzlich HCT. Wir gehen von SSRI-induzierter SIADH aus. HCT pausiert, Sertralin pausiert, vorsichtig NaCl 0,9%. Na-Kontrolle alle 4-6h, Korrektur max. 8 mmol/L in 24h.",
+    "usefulPhrases": [
+      "Schwere Hyponatriämie.",
+      "Wahrscheinlich SSRI-induzierte SIADH plus HCT.",
+      "Natrium vorsichtig anheben.",
+      "Maximal 8 mmol/L Korrektur in 24h."
+    ],
+    "commonMistakes": [
+      "Nicht zu schnell korrigieren!",
+      "HCT ebenfalls pausieren",
+      "SSRI ohne Absetzen schwer zu korrigieren",
+      "Neurologischen Status dokumentieren"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Medication Side Effects",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_020",
+    "caseTitle": "Bridging-Antikoagulation vor OP",
+    "rawPatientInfo": "69-jaehriger Patient, 74 kg. Paroxysmales VHF, CHA2DS2-VASc 4. Bisher Apixaban 5 mg. Geplante Leistenhernien-OP. GFR 62, kein Sturz. INR 1,1. Keine VHF-bedingte TE in Vorgeschichte.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 69-jaehrigen Patienten vor Leistenhernien-OP unter Apixaban (CHA2DS2-VASc 4). Elektiver Eingriff, niedriges Blutungsrisiko, keine TE-Vorgeschichte. Wir pausieren Apixaban 24h vor OP, kein Bridging noetig. Postoperativ am naechsten Morgen wieder beginnen, falls keine Nachblutung.",
+    "usefulPhrases": [
+      "Elektive OP unter Apixaban.",
+      "Niedriges Blutungs- und TE-Risiko.",
+      "Absetzen ohne Bridging.",
+      "Apixaban 24h prae-OP pausieren, postop morgen danach wieder."
+    ],
+    "commonMistakes": [
+      "Bridging bei DOAK meist nicht noetig",
+      "CHADS-VASc vor OP-Planung nennen",
+      "Wann wieder beginnen? Timing wichtig",
+      "Regionalanaesthesie erfordert sauberes Timing"
+    ],
+    "rubric": {
+      "structure": "Complete and logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant information only, no filler?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Discharge/Follow-up",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_021",
+    "caseTitle": "Lungenembolie Rechtsherzbelastung",
+    "rawPatientInfo": "68j Patient, 78kg, Z.n. Knie-TEP 3 Wo. Akute Dyspnoe, pleuritischer Schmerz, Haemoptyse. SpO2 85%, RR 135/80, HF 110. Wells-Score 9. D-Dimer 5,8. CT-Angio: LE bds. Echo: Rechtsherzbelastung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 68j Patienten mit Lungenembolie nach Knie-TEP. Wells 9, CT LE bds, Echo Rechtsherzbelastung. Submassive LE. Therapeutische Heparinisierung, engmaschige Kontrolle der Vitalparameter. Bei Haemodynamikverschlechterung Lysetherapie erwaegen.",
+    "usefulPhrases": [
+      "Dyspnoe nach Knie-TEP, Wells hohe Wsk.",
+      "CT bestaetigt LE bds.",
+      "Echo zeigt Rechtsherzbelastung.",
+      "Therapeutische Antikoagulation beginnen."
+    ],
+    "commonMistakes": [
+      "Rechtsherzbelastung nicht nennen bei Risikostratifizierung",
+      "Massiv/submassiv LE unterscheiden",
+      "DOAK statt Heparin bei haemodynamisch stabil",
+      "Lysetherapie bei Rechtsherzbelastung erwaegen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Internal Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_022",
+    "caseTitle": "VHF Neudiagnose Frequenzkontrolle",
+    "rawPatientInfo": "66j Patient, 82kg. Herzrasen seit 2 Tagen, Dyspnoe. HF 135/min irregulaer. EKG: VHF. Echo: LA 46mm, LVEF 55%. CHA2DS2-VASc 3. TSH 1,2.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 66j Patienten mit neuem Vorhofflimmern. CHA2DS2-VASc 3. Wir beginnen Frequenzkontrolle mit Metoprolol und Antikoagulation. Bei VHF >48h keine Kardioversion ohne TEE. Rhythmuskontrolle angestrebt nach ausreichender Antikoagulation.",
+    "usefulPhrases": [
+      "Patient mit neuem VHF und rascher Ueberleitung.",
+      "CHA2DS2-VASc 3, Antikoagulation indiziert.",
+      "Frequenzkontrolle mit Betablocker.",
+      "Kardioversion nach TEE bei <48h nicht sicher."
+    ],
+    "commonMistakes": [
+      "CHA2DS2-VASc vergessen",
+      "Antikoagulation bei VHF >48h nicht starten",
+      "Kardioversion ohne TEE bei >48h",
+      "Thyreostase bei normalem TSH nicht noetig"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Cardiology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_023",
+    "caseTitle": "COPD Exazerbation hyperkapnisch",
+    "rawPatientInfo": "70j Patient, 65kg, Raucher 50PY. COPD GOLD III. Fieber, purulentes Sputum, Dyspnoe Ruhe. AF 26, SpO2 84%, pCO2 52, pH 7,33, pO2 55. CRP 120. Sputum: H.influenzae.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 70j Patienten mit schwerer COPD-Exazerbation. pCO2 52, pH 7,33. H.influenzae. Wir beginnen NIV, Prednisolon 40mg, Amoxicillin/Clavulansaeure. Inhalation mit Tiotropium und Salmeterol/Fluticason. BGA alle 2h. Nach Stabilisierung LTOT-Pruefung.",
+    "usefulPhrases": [
+      "Schwere COPD-Exazerbation, hyperkapnisch.",
+      "BGA: partiell kompensierte AZ.",
+      "H.influenzae nachgewiesen.",
+      "NIV, Prednisolon, Antibiose."
+    ],
+    "commonMistakes": [
+      "NIV-Indikation bei pH<7,35 nicht nutzen",
+      "Nur Antibiose, Inhalativa vergessen",
+      "LTOT nach Exazerbation pruefen",
+      "BGA alle 2h zur Kontrolle"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pulmonology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_024",
+    "caseTitle": "Duenndarmileus nach Sigmaresektion",
+    "rawPatientInfo": "55j Patient, 73kg, Z.n. Sigmaresektion vor 1 Jahr. Seit 12h aufgetriebener Bauch, Erbrechen, kein Wind/Stuhl. Trommelbauch, gurrende DG. Roentgen: Duenndarmspiegel, Kaliberwechsel. Laktat 2,8.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 55j Patienten mit mechanischem Ileus nach Sigmaresektion. Roentgen zeigt Duenndarmspiegel, Laktat 2,8 wirkt als Ischaemiehinweis. Magenverweilsonde gelegt, Volumenbilanz. CT Abdomen mit KM zur Ischaemiediagnostik. Operative Revision zeichnet sich ab.",
+    "usefulPhrases": [
+      "Mechanischer Duenndarmileus nach Sigmaresektion.",
+      "Roentgen: Duenndarmspiegel.",
+      "Laktat 2,8 als Ischaemiezeichen.",
+      "CT und ggf. OP."
+    ],
+    "commonMistakes": [
+      "Zu lange konservativ bei mechanischem Ileus",
+      "Laktat als Ischaemiemarker ernst nehmen",
+      "Magenverweilsonde vergessen",
+      "CT mit KM zur genauen Lokalisation"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gastroenterology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_025",
+    "caseTitle": "Hirnstamminfarkt Lysetherapie",
+    "rawPatientInfo": "60j Patient, 74kg, Hypertonie, Diabetes. Symptome seit 1,5h: Doppelbilder, Dysphagie, Ataxie. NIHSS 8. CT: hyperdenses Basilaris-Zeichen. RR 185/105. Keine Lyse-KI.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 60j Patienten mit Hirnstamminfarkt, Symptombeginn 1,5h. NIHSS 8. CT zeigt hyperdenses Basilariszeichen. RR 185/105. Ziel <185/110. Wir beginnen i.v. Lysetherapie und bereiten endovaskulaere Therapie vor.",
+    "usefulPhrases": [
+      "Hirnstamminfarkt im Zeitfenster.",
+      "NIHSS 8, CT zeigt Basilarisverschluss.",
+      "RR prae Lyse anpassen.",
+      "Lyse und ggf. endovaskulaere Therapie."
+    ],
+    "commonMistakes": [
+      "Bei Hirnstamminfarkt Lyse auch nach 4,5h erwaegen",
+      "Blutdruck vor Lyse senken, aber nicht zu stark",
+      "Endovaskulaere Therapie bei Basilarisverschluss",
+      "NIHSS alle 15-30 Min dokumentieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Neurology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_026",
+    "caseTitle": "Vordere Schulterluxation Reposition",
+    "rawPatientInfo": "24j Patient, 72kg, Handballer. Sturz auf Arm. Schulterdeformitaet, Arm in Abduktion/Aussenrotation. Roentgen: vordere Luxation. Neurovaskulaer intakt. Keine Fraktur.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 24j Patienten mit vorderer Schulterluxation. Roentgen ohne Fraktur. N.axillaris intakt. Reposition in Analgosedierung. Postreposition Roentgen und Rotatorenmanschetten-Test. Schlinge 3 Wo, dann Physio. Sportpause 6 Wo.",
+    "usefulPhrases": [
+      "Vordere Schulterluxation ohne Fraktur.",
+      "Axillaris-Funktion prae und post prüfen.",
+      "Reposition in Analgosedierung.",
+      "Nach Reposition Roentgenkontrolle."
+    ],
+    "commonMistakes": [
+      "N.axillaris vor Reposition nicht testen",
+      "Roentgen nur vor, nicht nach Reposition",
+      "Rotatorenmanschette nach Reposition testen",
+      "Sportpause 6 Wo nicht kommunizieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Orthopedics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_027",
+    "caseTitle": "Biliaere Pankreatitis ERCP",
+    "rawPatientInfo": "49j Patientin, 88kg. Gallensteine bekannt. Epigastrische Schmerzen, Erbrechen, Fieber 38,2. Sono: Steine, GHD 8mm, Pankreas geschwollen. Lipase 1.800, Bilirubin 1,4, GGT 142.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 49j Patientin mit biliaerer Pankreatitis. GHD 8mm, Bilirubin 1,4, Cholestase. ERCP mit Papillotomie und Steinextraktion geplant. Nach Rueckgang der Pankreatitis Cholezystektomie im Aufenthalt.",
+    "usefulPhrases": [
+      "Biliaere Pankreatitis mit Cholestase.",
+      "GHD 8mm, Cholestaseparameter erhoeht.",
+      "ERCP bei Cholestase indiziert.",
+      "Cholezystektomie im gleichen Aufenthalt."
+    ],
+    "commonMistakes": [
+      "Zu frueh ERCP ohne Cholestase",
+      "Nur konservativ, keine ERCP trotz Cholestase",
+      "Cholezystektomie erst Wochen spaeter",
+      "CRP als Prognosefaktor nicht checken"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Surgery",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_028",
+    "caseTitle": "Polytrauma Massivtransfusion",
+    "rawPatientInfo": "36j Patient, 80kg, Motorradunfall 80km/h. GCS 13, RR 75/palp, HF 130. FAST: Milzruptur, freie Fluessigkeit. Hb 8,2, BE -10, Laktat 5,6, INR 1,5.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 36j Patienten mit Polytrauma und haemorrhagischem Schock. FAST zeigt Milzruptur. Massivtransfusion 1:1:1. Tranexamsaeure. Notfall-Laparotomie, OP-Saal informiert.",
+    "usefulPhrases": [
+      "Polytrauma haemodynamisch instabil.",
+      "FAST: Milzruptur.",
+      "Massivtransfusion 1:1:1.",
+      "Notfall-Laparotomie."
+    ],
+    "commonMistakes": [
+      "Zu viel Kristalloide",
+      "Massivtransfusionsprotokoll zu spaet",
+      "Tranexamsaeure vergessen",
+      "Blutprodukte nicht im 1:1:1 Verhaeltnis"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Emergency Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_029",
+    "caseTitle": "Morbus Cushing Mikroadenom",
+    "rawPatientInfo": "38j Patientin, 72kg. Gewichtszunahme 15kg, Stammfettsucht, Vollmondgesicht, Striae, Hypertonie. Kortisol 28, ACTH 74. Dexamethasontest nicht supprimierbar. MRT: Mikroadenom 5mm.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 38j Patientin mit Morbus Cushing. Kortisol 28, ACTH 74, Dexa-Test pathologisch. MRT: 5mm Mikroadenom. Transsphenoidale Adenomektomie geplant. Postoperativ Kortisol-Substitution bis zur Erholung der NNR.",
+    "usefulPhrases": [
+      "Klinik und Labor passen zu Cushing.",
+      "ACTH-abhaengig, MRT zeigt Mikroadenom.",
+      "Transsphenoidale OP geplant.",
+      "Postoperativ Kortisolsubstitution."
+    ],
+    "commonMistakes": [
+      "Nicht ACTH bestimmen",
+      "CRH-Test zur Differenzierung vergessen",
+      "Nur medikamentoes behandeln",
+      "Postop NNR-Insuffizienz nicht managen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Endocrinology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_030",
+    "caseTitle": "Nephrotisches Syndrom Biopsie",
+    "rawPatientInfo": "45j Patient, 79kg. Beinoedeme, Gewicht +8kg, schaeumender Urin. Protein 8g/d, Albumin 2,1, Cholesterin 320. RR 155/95. Sono Nieren o.B.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 45j Patienten mit nephrotischem Syndrom. Proteinurie 8g/d, Albumin 2,1. ACE-Hemmer antiproteinurisch, Statin, Diuretika. Nierenbiopsie geplant. DVT-Prophylaxe mit NMH.",
+    "usefulPhrases": [
+      "Nephrotisches Syndrom mit Proteinurie 8g/d.",
+      "Hypalbuminämie, Hypercholesterinämie.",
+      "Nierenbiopsie zur histologischen Klaerung.",
+      "ACE-Hemmer, Statin, Diuretika."
+    ],
+    "commonMistakes": [
+      "Nur Proteinurie, Hypalbuminämie nicht nennen",
+      "Nierenbiopsie bei Erwachsenen nicht machen",
+      "DVT-Prophylaxe bei nephrotischem Syndrom vergessen",
+      "ACE-Hemmer nicht antiproteinurisch dosieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Nephrology/Urology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_031",
+    "caseTitle": "Endometriose Ovarialendometriom",
+    "rawPatientInfo": "29j Patientin, 57kg. Zunehmende Dysmenorrhoe, zyklusabhaengige Schmerzen, Dyspareunie. Sono: Endometriom re Ovar 3cm.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 29j Patientin mit Endometriose. Dysmenorrhoe, Endometriom re 3cm. Kinderwunsch besprochen. Laparoskopische Zystektomie und Herdabtragung geplant. Hormonelle Nachbehandlung nach OP.",
+    "usefulPhrases": [
+      "Endometriose mit Endometriom re Ovar.",
+      "Kinderwunsch frueh thematisieren.",
+      "Laparoskopische Zystektomie.",
+      "Hormonelle Therapie erwaegen."
+    ],
+    "commonMistakes": [
+      "Nur auf Ovarialzyste fokussieren",
+      "Tiefe Infiltration nicht prüfen",
+      "Kinderwunsch zu spaet ansprechen",
+      "Interdisziplinaer bei Darmbefall"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gynecology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_032",
+    "caseTitle": "Fieberkrampf erstmalig",
+    "rawPatientInfo": "1,5j Maedchen, 12kg. Fieber 39,8 (Otitis media). Generalisierter Krampf 3 Min, spontan sistiert. Liquor unauffaellig. Sono Schaedel o.B. BZ 98.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle ein 1,5j Maedchen mit erstmaligem einfachem Fieberkrampf. Krampf ca 3 Min. Liquor unauffaellig. Keine Therapie noetig. Eltern aufgeklaert, Wiederholungsrisiko ca 30%. Diazepam rektal fuer Notfall mitgegeben.",
+    "usefulPhrases": [
+      "Erstmaliger einfacher Fieberkrampf.",
+      "Krampf <5 Min, spontan sistiert.",
+      "Liquor zum Meningitisausschluss.",
+      "Eltern aufklaeren und beruhigen."
+    ],
+    "commonMistakes": [
+      "Bei Erstvorstellung Liquor vergessen",
+      "Komplex/einfach nicht unterscheiden",
+      "Antipyretika zur Krampfprophylaxe empfehlen",
+      "Diazepam rektal fuer Notfall nicht mitgeben"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pediatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_033",
+    "caseTitle": "Zwangstoerung Erstdiagnose",
+    "rawPatientInfo": "34j Patient, 68kg. Wasch- und Kontrollzwang seit 2 Jahren, Morgenhygiene 2h. Y-BOCS 28. Arbeit nicht mehr moeglich. Keine Vorbehandlung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 34j Patienten mit Zwangstoerung, Y-BOCS 28. KVT plus Sertralin bis 200mg. AU ausgestellt. Psychotherapie-Platz vermittelt. Nach 8-12 Wochen erste Effekte erwartbar.",
+    "usefulPhrases": [
+      "Mittelschwere Zwangstoerung, Y-BOCS 28.",
+      "KVT plus SSRI ist Therapie der Wahl.",
+      "SSRI hoch dosieren bis 200mg.",
+      "AU und Psychotherapie-Platz vermittelt."
+    ],
+    "commonMistakes": [
+      "Nur Medikamente, keine KVT",
+      "SSRI niedrig dosiert lassen",
+      "Erst nach 4 Wochen Effekt, tatsaechlich 8-12",
+      "Exposition nicht vernachlaessigen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Psychiatry",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_034",
+    "caseTitle": "Psoriasis vulgaris Erstdiagnose",
+    "rawPatientInfo": "31j Patient, 70kg. Rote Schuppenplaques an Ellenbogen, Knien, Kopfhaut seit 3 Mon. Juckreiz. PASI 12, BSA 15%. Keine Gelenkbeschwerden. Vater Psoriasis.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 31j Patienten mit Psoriasis, PASI 12, BSA 15%. Keine Arthritis. Topische Therapie plus Licht. Bei Nichtansprechen MTX oder Biologika. Kontrolle auf Arthritis bei jeder Vorstellung.",
+    "usefulPhrases": [
+      "Psoriasis vulgaris PASI 12.",
+      "Keine Psoriasis-Arthritis.",
+      "Topisch plus Lichttherapie.",
+      "Systemtherapie bei unzureichendem Ansprechen."
+    ],
+    "commonMistakes": [
+      "PASI nicht nennen",
+      "Psoriasis-Arthritis nicht abfragen",
+      "Nur topisch bei BSA>10% nicht ausreichend",
+      "Systemtherapie zu spaet"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Dermatology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_035",
+    "caseTitle": "Peritonsillarabszess Inzision",
+    "rawPatientInfo": "23j Patient, 72kg. Halsschmerzen, Schluckbeschwerden seit 4 Tagen, Fieber 39,1. Gepresste Sprache, Speichelfluss. Vorwoelbung re Gaumenbogen, Uvula verdrngt. CRP 145.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 23j Patienten mit Peritonsillarabszess rechts. Inzision und Drainage durchgefuehrt. Amoxicillin/Clavulansaeure plus Metronidazol i.v. Stationaer. Intervall-Tonsillektomie nach Abklingen empfohlen.",
+    "usefulPhrases": [
+      "PTA rechts nach Angina.",
+      "Vorwoelbung und Uvulaverdrngung.",
+      "Inzision und Drainage plus Antibiose.",
+      "Stationaere Aufnahme noetig."
+    ],
+    "commonMistakes": [
+      "Nur Antibiose ohne Drainage",
+      "Sono/CT zur Sicherung vergessen",
+      "Stationaer nicht aufnehmen",
+      "Interval-Tonsillektomie vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "ENT",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_036",
+    "caseTitle": "Bakterielle Konjunktivitis",
+    "rawPatientInfo": "35j Patient. Rotes Auge re seit 2 Tagen, eitriges Sekret, Lider verklebt. Visus erhalten, keine Schmerzen, Hornhaut klar.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 35j Patienten mit bakterieller Konjunktivitis. Eitriges Sekret, Visus intakt, Hornhaut klar. Gentamicin AT 5x/Tag. Keine Kontaktlinsen. Bei Nichtansprechen Hornhaut-Untersuchung.",
+    "usefulPhrases": [
+      "Bakterielle Konjunktivitis.",
+      "Keine Hornhautbeteiligung.",
+      "Topische Antibiose.",
+      "Keine Kontaktlinsen bis Abheilung."
+    ],
+    "commonMistakes": [
+      "Mit Iritis/Glaukom verwechseln",
+      "Kontaktlinsen nicht abfragen",
+      "Nur abwartende Haltung ohne Antibiose",
+      "Hornhaut nicht prafen bei roten Auge"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Ophthalmology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_037",
+    "caseTitle": "Clostridioides-difficile Kolitis",
+    "rawPatientInfo": "71j Patient, 66kg, Z.n. Ciprofloxacin vor 2 Wo. Waessrige Durchfaelle 6x/Tag, Fieber 38,6, Bauchschmerzen. Toxin positiv. Koloskopie: Pseudomembranen.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 71j Patienten mit C.difficile-Kolitis. Isolierung, orales Metronidazol, Fluessigkeit/Elektrolyte. Bei schwerem Verlauf Vancomycin oral. Rezidivprophylaxe mit Fidaxomicin falls noetig.",
+    "usefulPhrases": [
+      "C.difficile-Kolitis nach Antibiotika.",
+      "Toxin positiv, Pseudomembranen.",
+      "Isolierung und orales Metronidazol.",
+      "Bei schwerem Verlauf Vancomycin."
+    ],
+    "commonMistakes": [
+      "Nur i.v. Metronidazol (oral noetig)",
+      "Keine Isolierung",
+      "Alkohol-Haendedesinfektion gegen Sporen",
+      "Rezidivprophylaxe nicht planen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Infectious Disease",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_038",
+    "caseTitle": "Polypharmazie Sturzrisiko",
+    "rawPatientInfo": "79j Patientin, 60kg, Pflegeheim. 10 Medikamente. Schwindel seit Wochen, Stuerze 2x. RR 115/65 liegend, 90/55 stehend (Orthostase).",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 79j Patientin mit Polypharmazie-bedingtem Schwindel und Stuercen. RR-Abfall im Stehen. Zopiclon abgesetzt (Sturzrisiko!), HCT reduziert, Pantoprazol kritisch geprueft. Ziel <6 Medikamente. Medikationsplan an Hausarzt uebermittelt.",
+    "usefulPhrases": [
+      "Polypharmazie mit Orthostase und Sturzrisiko.",
+      "RR-Abfall im Stehen.",
+      "Medikamente reduzieren auf <6.",
+      "Zopiclon absetzen, HCT reduzieren."
+    ],
+    "commonMistakes": [
+      "Nur ein Medikament aendern statt Gesamtplan",
+      "Zopiclon bei Schwindel nicht absetzen",
+      "Antihypertensiva vor anderen reduzieren",
+      "Hausarzt nicht informieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Geriatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_039",
+    "caseTitle": "Lithium Intoxikation Dialyse",
+    "rawPatientInfo": "44j Patient, 70kg, bipolare Stoerung Lithium 1.200mg. Uebelkeit, Durchfall, Tremor, Dysarthrie, Gangunsicherheit. Lithium 3,2 (Ziel 0,6-1,2). GFR 30, Krea 2,1. QT-Verlangerung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 44j Patienten mit Lithium-Intoxikation. Lithium 3,2, GFR 30. Dialyse indiziert. EKG-Kontrolle bei QT-Verlangerung. Lithium abgesetzt. Psychiatrie zur Neueinstellung und Alternative involviert.",
+    "usefulPhrases": [
+      "Schwere Lithium-Intoxikation mit AKI.",
+      "Lithium 3,2, Dialyse indiziert.",
+      "QT-Verlangerung ueberwachen.",
+      "Alternative zur bipolaren Therapie einleiten."
+    ],
+    "commonMistakes": [
+      "Nur Lithium absetzen ohne Dialyse",
+      "EKG nicht kontrollieren",
+      "Psychiatrie nicht hinzuziehen",
+      "Alternative Medikation vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Medication Side Effects",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_040",
+    "caseTitle": "SIADH Entlassungsmanagement",
+    "rawPatientInfo": "75j Patientin, 55kg. Z.n. Schlaganfall, SIADH mit Na 122. Unter Fluessigkeitsrestriktion auf 133 angestiegen. Kognitiv klar. Orale Aufnahme moeglich.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 75j Patientin mit SIADH nach Schlaganfall. Na von 122 auf 133 stabil. Entlassung mit Restriktion 1L/Tag, Na-Kontrolle beim Hausarzt in 3 Tagen. Bei erneutem Abfall sofort Notaufnahme. Medikation auf SIADH-Ausloeser geprueft.",
+    "usefulPhrases": [
+      "SIADH stabilisiert, Na 133.",
+      "Restriktion 1L/Tag fortsetzen.",
+      "Hausarztkontrollen alle 3 Tage.",
+      "Bei erneutem Abfall sofortige Vorstellung."
+    ],
+    "commonMistakes": [
+      "Zu frueh entlassen vor Na-Stabilisierung",
+      "Keinen klaren Plan fuer HA mitgeben",
+      "SIADH-Ausloeser nicht identifizieren",
+      "Medikation nicht auf Ausloeser prüfen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Discharge/Follow-up",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_041",
+    "caseTitle": "Pulmonale Hypertonie Dyspnoe",
+    "rawPatientInfo": "54j Patientin, 68kg. Progrediente Belastungsdyspnoe seit 6 Mo, Muedigkeit, Synkope beim Treppensteigen. RR 110/70, HF 88, betonter P2. Echo: RVSP 62 mmHg, rechter Ventrikel dilatiert. Keine LE, keine Kollagenose. Rechtsherzkatheter bestaetigt.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 54j Patientin mit pulmonaler Hypertonie. RVSP 62, rechter Ventrikel dilatiert. LE, Kollagenosen, Shunt-Vitien ausgeschlossen. Rechtsherzkatheter bestaetigt prakapillare PH. Wir leiten eine spezifische Therapie ein und planen den 6-Minuten-Gehtest.",
+    "usefulPhrases": [
+      "Pulmonale Hypertonie mit RV-Druck 62.",
+      "Echo mit RV-Dilatation.",
+      "Sekundaere Ursachen ausgeschlossen.",
+      "Spezifische Therapie einleiten."
+    ],
+    "commonMistakes": [
+      "Nicht nach Ursache suchen (sekundaer vs primaer)",
+      "Nur Echo, Rechtsherzkatheter vermeiden",
+      "Therapie mit PDE-5-Hemmer, Endothelinantagonist",
+      "6-Minuten-Gehtest nicht vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Internal Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_042",
+    "caseTitle": "Akute Myokarditis",
+    "rawPatientInfo": "28j Patient, 72kg, sonst gesund. Nach grippalem Infekt vor 2 Wo jetzt Brustschmerz, Dyspnoe, Fieber 38,2. Troponin hs 1.850, CRP 95. EKG: diffuse ST-Hebungen, PQ-Senkung. Echo: LVEF 50%, kein Perikarderguss. MRT: Myokarditis DD.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 28j Patienten mit akuter Myokarditis nach Virusinfekt. Troponin 1.850, EKG mit diffusen ST-Hebungen. Echo: LVEF 50% ohne Erguss. Kardio-MRT bestaetigt Myokarditis. Konservativ: keine Belastung fuer 3-6 Monate, NSAR bei Perikardschmerz. Wiedervorstellung mit Echo in 3 Mo.",
+    "usefulPhrases": [
+      "Akute Myokarditis nach Virusinfekt.",
+      "Troponin erhoeht, diffuses ST-Hebungen.",
+      "MRT bestaetigt Myokarditis.",
+      "Konservative Therapie, Belastungskarenz."
+    ],
+    "commonMistakes": [
+      "Mit STEMI verwechseln",
+      "Kein MRT zur Bestaetigung",
+      "Belastung zu frueh erlauben",
+      "Sportkarenz 3-6 Mo nicht kommunizieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Cardiology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_043",
+    "caseTitle": "Pneumothorax Spontan",
+    "rawPatientInfo": "25j Patient, 68kg, grosser schlanker Habitus. Akuter linksseitiger Brustschmerz, Luftnot seit 2h. Raucher. AF 22, SpO2 95%. Klopfschall hypersonor, Atemgeraeusch li abgeschwaecht. Roentgen: grosser Pneumothorax li, ca 4cm apikal.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 25j Patienten mit Spontanpneumothorax links. Roentgen zeigt 4cm Ptx, Buelau-Drainage indiziert. Drainage in Monaldi-Position. Sog von -20 cmH2O. Nach Expansion Roe-Kontrolle. Rauchstopp empfohlen. Bei Rezidiv Pleurodese erwaegen.",
+    "usefulPhrases": [
+      "Spontanpneumothorax links bei jungem Raucher.",
+      "Roentgen: grosser Ptx 4cm.",
+      "Buelau-Drainage indiziert.",
+      "Nach Expansion Sog und Roe-Kontrolle."
+    ],
+    "commonMistakes": [
+      "Bei <2cm konservativ, bei >2cm Drainage",
+      "Nicht an erste Busse denken",
+      "Bei rezidivierendem Ptx Pleurodese",
+      "Rauchen als Risikofaktor ansprechen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pulmonology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_044",
+    "caseTitle": "Oesophagusvarizen-Blutung",
+    "rawPatientInfo": "62j Patient, 68kg, Leberzirrhose Child B, Alkoholabstinenz seit 6 Mo. Haematemesis und Melena. Hb 7,2, RR 105/65, HF 115. EKG: Sinustachykardie. Oesophagusvarizen Stadium III bekannt.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 62j Patienten mit V.a. Oesophagusvarizenblutung. Hb 7,2, tachykard. PPI-Bolus 80mg, Terlipressin, Ceftriaxon als Prophylaxe. 2 EKs. Notfall-OEGD mit Varizenligatur. Bei anhaltender Blutung Sengstaken-Sonde oder TIPS.",
+    "usefulPhrases": [
+      "Obere GI-Blutung bei Leberzirrhose.",
+      "V.a. Varizenblutung.",
+      "PPI-Bolus, Ery-Konzentrate.",
+      "Notfall-OEGD zur Ligatur."
+    ],
+    "commonMistakes": [
+      "Nur PPI geben statt Ligatur",
+      "Blutprodukte, aber keine Gerinnungsfaktoren",
+      "Antibiotikaprophylaxe bei Zirrhose vergessen",
+      "Terlipressin bei V.a. Varizenblutung nicht geben"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gastroenterology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_045",
+    "caseTitle": "Migraene mit Aura",
+    "rawPatientInfo": "32j Patientin, 62kg. Seit 10 Jahren Migraene. Jetzt Sehstoerung (Flimmerskotom) fuer 20 Min, dann Hemihypaesthesie li 15 Min, dann Kopfschmerz rechts, Uebelkeit, Fotophobie. Keine Vorerkrankungen.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 32j Patientin mit Migraene mit Aura. Flimmerskotom und Hemihypaesthesie unter 60 Min. Sumatriptan 50mg bei Aura-Beginn. Prophylaxe mit Metoprolol bei >3 Attacken pro Monat. Migraene-Kalender fuehren.",
+    "usefulPhrases": [
+      "Migraene mit Aura, typische Symptome.",
+      "Aura <60 Min, Kopfschmerz danach.",
+      "Triptan bei Beginn der Aura.",
+      "Prophylaxe bei >3 Attacken/Monat."
+    ],
+    "commonMistakes": [
+      "Mit TIA verwechseln",
+      "Aura-Dauer nicht dokumentieren",
+      "Triptanpraeparat nicht nennen",
+      "Prophylaxe erst nach Monaten empfehlen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Neurology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_046",
+    "caseTitle": "Achillessehnenruptur",
+    "rawPatientInfo": "38j Patient, 82kg, Freizeitsportler. Schmerz in der re Wade beim Springen, Gefuehl wie Schlag. Fusskoppelung rechts positiv (Thompson-Test). Roentgen: kein Knochenschaden. Sono: komplette Ruptur der Achillessehne 5cm proximal.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 38j Patienten mit Achillessehnenruptur rechts. Thompson positiv, Sono zeigt komplette Ruptur. Bei sportlich aktivem Patienten diskutieren wir die operative Versorgung mit fruehfunktioneller Nachbehandlung. Vakuum-Gipsschiene postop, schrittweise Belastung. Rezidivrisiko ca 5%.",
+    "usefulPhrases": [
+      "Achillessehnenruptur rechts, Thompson positiv.",
+      "Komplette Ruptur im Sono.",
+      "Konservativ oder OP.",
+      "Fruehfunktionelle Behandlung."
+    ],
+    "commonMistakes": [
+      "Thompson-Test nicht machen",
+      "Konservativ vs OP nicht diskutieren",
+      "Postop Mobilisation vergessen",
+      "Rezidivrisiko nicht ansprechen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Orthopedics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_047",
+    "caseTitle": "Mesenterialischaemie",
+    "rawPatientInfo": "76j Patientin, 60kg, Hypertonie, VHF. Akuter Bauchschmerz, Erbrechen, Durchfall seit 4h. Bauch weich, Schmerz disproportional zum Befund. Laktat 4,2. CT-Angio: Verschluss A.mesenterica superior 2cm nach Abgang.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 76j Patientin mit akuter Mesenterialischaemie bei VHF. Laktat 4,2, CT zeigt Verschluss der A.mesenterica superior. Wir prafen die Notfall-Angiografie mit interventioneller Lyse oder Embolektomie. Ein chirurgisches Second-Look nach 24h ist einzuplanen.",
+    "usefulPhrases": [
+      "Akuter Bauchschmerz bei VHF, V.a. Mesenterialischaemie.",
+      "Laktat 4,2, CT zeigt AMI-Verschluss.",
+      "Notfall-OP oder interventionell.",
+      "Innerhalb von 6h Revaskularisation."
+    ],
+    "commonMistakes": [
+      "Zu lange abwarten, Ischaemie irreversibel nach 6h",
+      "CT-Angio nicht machen",
+      "Nur konservativ behandeln",
+      "Second-Look-OP nicht planen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Surgery",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_048",
+    "caseTitle": "Hyperkaliaemie EKG-Veraenderungen",
+    "rawPatientInfo": "65j Patient, 70kg, CKD Stadium 4 (GFR 22). ACE-Hemmer, Spironolacton. Muskelschwaeche, Palpitationen. Kalium 6,8. EKG: hohe T-Wellen, verbreiterter QRS 120ms.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 65j Patienten mit schwerer Hyperkaliaemie von 6,8 und EKG-Veraenderungen. Zunaechst 10ml Kalziumglukonat 10% i.v. zum Herzschutz. Dann Insulin 10 IE plus Glucose 50g i.v. plus Beta-2-Agonist inhalativ. Haemodialyse vorbereitet. Kalium alle 1-2h kontrollieren.",
+    "usefulPhrases": [
+      "Schwere Hyperkaliaemie 6,8 mit EKG-Veraenderungen.",
+      "Kalziumglukonat sofort.",
+      "Insulin/Glucose, Beta-2-Agonist.",
+      "Haemodialyse vorbereiten."
+    ],
+    "commonMistakes": [
+      "EKG-Veraenderungen ignorieren",
+      "Erst Insulin, dann Kalzium (falsche Reihenfolge)",
+      "Dialyse zu spaet",
+      "Kaliumkontrolle alle 1-2h vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Emergency Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_049",
+    "caseTitle": "Hyperthyreose Morbus Basedow",
+    "rawPatientInfo": "32j Patientin, 58kg. Gewichtsverlust 8kg, Schwitzen, Herzrasen, Neurodermitis-artige Haut, endokrine Orbitopathie. TSH <0,01, fT3 12, fT4 4,8. TRAK 12 IU/L positiv. Sono: echoarm, Mehrdurchblutung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 32j Patientin mit Morbus Basedow. TSH supprimiert, fT3/fT4 erhoeht, TRAK positiv. Endokrine Orbitopathie liegt vor. Thiamazol 30mg plus Propranolol. Bei Orbitopathie ist Radiojod kontraindiziert, wir planen die Thyreoidektomie oder Langzeit-Thiamazol.",
+    "usefulPhrases": [
+      "Morbus Basedow mit manifester Hyperthyreose.",
+      "TRAK positiv, Sono typisch.",
+      "Thyreostatika einleiten.",
+      "Therapieoptionen: Medis, Radiojod, OP."
+    ],
+    "commonMistakes": [
+      "Nur Beta-Blocker, keine Thyreostatika",
+      "TRAK nicht bestimmen",
+      "Orbitopathie nicht erwaehnen",
+      "Radiojod bei Orbitopathie nicht erste Wahl"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Endocrinology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_050",
+    "caseTitle": "Harnwegsinfekt kompliziert",
+    "rawPatientInfo": "72j Patientin, 65kg, rezidivierende HWI. Jetzt Fieber 39,1, Schuettelfrost, Dysurie, Flankenschmerz li. CRP 185, Leukos 16.000, Urin: Leukozyten, Nitrit pos, Bakterien masig. Sono: Stau links, Harnleiterstein 7mm praevesikal.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 72j Patientin mit kompliziertem HWI bei Harnleiterstein 7mm. Antibiose begonnen, Urinkultur abgenommen. Urologie: Ureterorenoskopie oder ESWL zur Steinentfernung. Bei Stau ist zeitnahe Entlastung wichtig wegen Sepsisrisiko.",
+    "usefulPhrases": [
+      "Komplizierter HWI bei Harnleiterstein.",
+      "Fieber, Flankenschmerz, Stau.",
+      "Antibiose nach Resistogramm.",
+      "Urolithiasis interventionell."
+    ],
+    "commonMistakes": [
+      "Nur Antibiose, Steintherapie vergessen",
+      "Urinkultur vor Antibiose vergessen",
+      "Sonokontrolle nach Intervention",
+      "Sepsisrisiko bei Stau nicht erwaehnen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Nephrology/Urology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_051",
+    "caseTitle": "Uterusmyom Menorrhagie",
+    "rawPatientInfo": "42j Patientin, 72kg. Hypermenorrhoe seit 1 Jahr, Hb 9,2, Ferritin 8. Sono: intramurales Myom 6cm Vorderwand. Kein Kinderwunsch.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 42j Patientin mit Myom-bedingter Hypermenorrhoe und Anaemie (Hb 9,2). Intramurales Myom 6cm. Bei keinem Kinderwunsch besprechen wir Myomenukleation, Embolisation oder Hysterektomie. Eisen i.v. zur Anaemie-Korrektur.",
+    "usefulPhrases": [
+      "Myombedingte Hypermenorrhoe mit Anämie.",
+      "Intramurales Myom 6cm.",
+      "Optionen: GnRH-Analoga, Embolisation, OP.",
+      "Kein Kinderwunsch, Hysterektomie moeglich."
+    ],
+    "commonMistakes": [
+      "Nur Myom nennen, nicht Groesse",
+      "Eisenmangelanaemie nicht behandeln",
+      "Kinderwunsch nicht abfragen",
+      "Therapieoptionen nicht erklaeren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gynecology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_052",
+    "caseTitle": "Bronchiolitis RSV",
+    "rawPatientInfo": "6 Monate alter Saeugling, 7kg. Seit 2 Tagen Schnupfen, Husten, pfeifende Atmung, Trinkschwaeche. AF 55/min, SpO2 89%, Einziehungen, Nasenfluegeln, exspiratorisches Giemen. RSV-Schnelltest positiv.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 6 Monate alten Saeugling mit RSV-Bronchiolitis. AF 55, SpO2 89%, Trinkschwaeche. Wir geben Sauerstoff, unterstuetzen die Atmung. Keine bronchospasmolytische Medikation indiziert. Stationaere Aufnahme. Bei weiterem Abfall High-Flow-Sauerstoff oder CPAP.",
+    "usefulPhrases": [
+      "RSV-Bronchiolitis mit respiratorischer Insuffizienz.",
+      "AF 55, SpO2 89%, Einziehungen.",
+      "Sauerstoff und supportive Therapie.",
+      "Stationaere Aufnahme."
+    ],
+    "commonMistakes": [
+      "Nur auf Medikamente fokussieren (keine Wirksamkeit)",
+      "Sauerstoff bei SpO2<90% geben",
+      "Nicht zu viel absaugen",
+      "Bei Verschlechterung CPAP oder High-Flow"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pediatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_053",
+    "caseTitle": "Panikstoerung mit Agoraphobie",
+    "rawPatientInfo": "28j Patientin, 63kg. Wiederholte Panikattacken seit 6 Mo, begleitet von Vermeidungsverhalten, kann Wohnung nicht alleine verlassen. Herzrasen, Erstickungsgefuehl, Todesangst. Keine Suizidalitaet. Labor o.B.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 28j Patientin mit Panikstoerung und Agoraphobie. KVT mit Exposition plus Paroxetin 20mg (bis 40mg). AU ausgestellt. Expositionstherapie und Bewaeltigungsstrategien erlernen. Nach 8-12 Wo erste Effekte.",
+    "usefulPhrases": [
+      "Panikstoerung mit Agoraphobie.",
+      "Panikattacken und Vermeidung.",
+      "KVT plus SSRI.",
+      "AU und Expositionstherapie."
+    ],
+    "commonMistakes": [
+      "Nur Akutbehandlung, keine KVT",
+      "SSRI zu niedrig dosieren (20mg Paroxetin), 40 noetig",
+      "Exposition als Kern der Therapie vergessen",
+      "Somatische Ursache nicht vorher ausschliessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Psychiatry",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_054",
+    "caseTitle": "Hautabszess Incision",
+    "rawPatientInfo": "44j Patient, 88kg, Diabetes Typ 2 (HbA1c 8,5%). Schmerzhafte Schwellung am re Oberschenkel seit 4 Tagen, Fieber 38,8. 8x6cm fluktuierende Schwellung, gerotet, ueberwaermt. CRP 142, Leukos 14.500.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 44j Patienten mit Hautabszess und Diabetes. Inzision und Drainage mit Abstrich fuer Mikrobiologie. Kalkulierte Antibiose (Cefazolin, bei Allergie Clindamycin). Blutzuckereinstellung mit Insulin nach Schema. Taegliche Wundkontrolle.",
+    "usefulPhrases": [
+      "Hautabszess re Oberschenkel bei Diabetes.",
+      "Inzision und Drainage mit Abstrich.",
+      "Antibiose kalkuliert.",
+      "Blutzuckereinstellung optimieren."
+    ],
+    "commonMistakes": [
+      "Nur Antibiose ohne Drainage",
+      "MRSA-Risiko nicht abfragen",
+      "Diabetes nicht einstellen",
+      "Wundpflege nach Inzision nicht planen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Dermatology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_055",
+    "caseTitle": "Innenohrschwerhoerigkeit akut",
+    "rawPatientInfo": "48j Patient, 76kg. Ploetzliche Hoerminderung li vor 3 Tagen, Ohrgeraeusche, Druckgefuehl. Hoertest: Schallempfindungsstoerung li, 40% Sprachverstehen. Keine Schwindel.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 48j Patienten mit akuter Innenohrschwerhoerigkeit links. Hochdosierte Prednisolon-Stosstherapie eingeleitet. Hoftest in 3 Tagen zur Verlaufskontrolle. Bei Nichtansprechen ggf. Hoergeraet. Keine Garantie auf vollstaendige Rueckbildung.",
+    "usefulPhrases": [
+      "Akute einseitige Innenohrschwerhoerigkeit.",
+      "Hoertest bestaetigt.",
+      "Prednisolon-Therapie.",
+      "HNO-Kontrolle und Hoergeraet."
+    ],
+    "commonMistakes": [
+      "Nicht nur Prednisolon, Hochdosis-Therapie",
+      "Cortison oral reicht bei 60mg/Tag",
+      "Nicht abwarten, sofort therapieren",
+      "Keine Wiederholungstherapie nach 10 Tagen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "ENT",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_056",
+    "caseTitle": "Hornhautulkus",
+    "rawPatientInfo": "52j Patient, Kontaktlinsentraeger. Rotes, schmerzhaftes Auge re seit 2 Tagen, Sekret. Visus 0,3. Hornhaut: herdfoermige Truebung, Fluorescein-positiv. Spaltlampe: Hornhautinfiltrat mit Epitheldefekt.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 52j Patienten mit Hornhautulkus. Visus 0,3, Fluorescein-positiver Defekt. Wir nehmen einen Abstrich fuer Mikrobiologie und beginnen topische Antibiotika (Moxifloxacin). Kontaktlinsen sind tabu. Dringende augenaerztliche Vorstellung zur Nachkontrolle und Therapiesteuerung.",
+    "usefulPhrases": [
+      "Hornhautulkus bei Kontaktlinsen.",
+      "Fluorescein positiver Defekt.",
+      "Abstrich und Antibiose.",
+      "Notfall-Augenaerztliche Vorstellung."
+    ],
+    "commonMistakes": [
+      "Nur Antibiotikum ohne Abstrich",
+      "Kontaktlinsen nicht absetzen",
+      "Hornhautperforation als Risiko nicht nennen",
+      "Nicht dringlich an Augenarzt ueberweisen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Ophthalmology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_057",
+    "caseTitle": "Borreliose Erythema migrans",
+    "rawPatientInfo": "45j Patient, 74kg. Nach Zeckenstich vor 2 Wo jetzt rote, wandernde Hautroetung am Oberschenkel, ca 10cm Durchmesser, ringfoermig. Kein Fieber, keine Arthralgien. Borrelien-AK negativ (fruesch).",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 45j Patienten mit Erythema migrans. Doxycyclin 200mg fuer 10-14 Tage. Serologie ist noch negativ, das ist im Fruehstadium normal. Nach 6 Wochen Borrelien-AK zur Dokumentation. Bei persistierenden Symptomen oder Gelenkbeschwerden Vorstellung.",
+    "usefulPhrases": [
+      "Erythema migrans nach Zeckenstich.",
+      "Typische Hauterscheinung.",
+      "Doxycyclin 200mg/Tag.",
+      "Serologie jetzt noch negativ."
+    ],
+    "commonMistakes": [
+      "Auf Serologie warten (erst <6 Wo positiv)",
+      "Nur topische Therapie",
+      "Doxycyclin-Dauer 10-14 Tage",
+      "Zweitinfektion moeglich, aufklaeren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Infectious Disease",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_058",
+    "caseTitle": "Calciphylaxie bei Dialyse",
+    "rawPatientInfo": "68j Patienten, 60kg, seit 5 Jahren dialysepflichtig. Schmerzhafte Hautulcera an beiden Unterschenkeln, livide Verfaerbungen. Calcium 2,8, Phosphat 2,3, PTH 680. Kein Ansprechen auf Wundversorgung.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 68j Dialysepatienten mit Calciphylaxie. Calcium 2,8, Phosphat 2,3, PTH 680. Wir beginnen Natriumthiosulfat nach jeder Dialyse, Cinacalcet zur PTH-Senkung, phosphatarme Diat und calciumfreie Phosphatbinder. Wundpflege mit sterilen Verbaenden. Prognose ist ernst.",
+    "usefulPhrases": [
+      "Calciphylaxie bei dialysepflichtigem Patienten.",
+      "Calcium und Phosphat erhoeht.",
+      "Natriumthiosulfat i.v. nach Dialyse.",
+      "Calciumsenker und phosphatarme Diat."
+    ],
+    "commonMistakes": [
+      "Nur Wundversorgung",
+      "Calcium/Phosphat-Produkt nicht berechnen",
+      "Natriumthiosulfat nicht kennen",
+      "Cinacalcet zur PTH-Kontrolle einsetzen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Geriatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_059",
+    "caseTitle": "Opioid-Ueberdosierung Naloxon",
+    "rawPatientInfo": "68j Patientin, 52kg, palliativ bei Pankreaskarzinom. Morphin 30mg retard. Jetzt Bewusstseinsminderung, Miosis 1mm, AF 4/min, SpO2 82%. RR 100/60.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle eine 68j Patientin mit Opioid-Ueberdosierung. Naloxon 0,4mg titriert bis AF >10/min, dabei Schmerztherapie im Auge behalten. Naloxon-Perfusor erwaegen wegen kuerzerer HWZ. Palliativteam zur Dosisanpassung der Morphintherapie involvieren.",
+    "usefulPhrases": [
+      "Opioid-Ueberdosierung mit Atemdepression.",
+      "Miosis, AF 4/min.",
+      "Naloxon 0,4mg i.v. titrieren.",
+      "Kurze HWZ, Naloxon-Perfusor erwaegen."
+    ],
+    "commonMistakes": [
+      "Zu viel Naloxon auf einmal (Entzug und Schmerz)",
+      "Naloxon HWZ kuerzer als Morphin, wiederholen",
+      "Nicht palliativ denken, sondern Akutbehandlung",
+      "Angehoerige informieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Medication Side Effects",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_060",
+    "caseTitle": "Antikoagulation Visus OP Vorbereitung",
+    "rawPatientInfo": "74j Patient, 80kg, VHF, Apixaban. Geplante Katarakt-OP. CHA2DS2-VASc 4. Krea 1,0. Ophthalmologe: kein Bridging noetig, Apixaban nicht pausieren.",
+    "task": "Present this case to a senior doctor in German. Use structured doctor-to-doctor language.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 74j Patienten vor Katarakt-OP unter Apixaban. Chirurg bestaetigt: bei Katarakt kein Bridging noetig, Apixaban wird nicht pausiert. CHA2DS2-VASc 4. Medikation am OP-Tag wie gewohnt einnehmen. Nierenfunktion aktuell o.B.",
+    "usefulPhrases": [
+      "Katarakt-OP unter Apixaban.",
+      "Niedriges Blutungsrisiko bei Katarakt.",
+      "Apixaban nicht pausieren.",
+      "CHA2DS2-VASc nicht vergessen."
+    ],
+    "commonMistakes": [
+      "Katarakt-OP pausieren Bridging geben (nicht noetig)",
+      "Augenarzt- und Kardiologen-Absprache vergessen",
+      "Keine OP-Vorbereitung dokumentieren",
+      "Patient nicht ueber Aufklaerung informieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Discharge/Follow-up",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_061",
+    "caseTitle": "Morbus Crohn Erstmanifestation",
+    "rawPatientInfo": "27j Patient, 65kg. Durchfall, Bauchschmerzen, Gewichtsverlust 5kg. Calprotectin >600. Koloskopie: aphtoese Ulcera terminales Ileum. Histologie: Granulome.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ich stelle einen 27j Patienten mit M.Crohn Erstmanifestation. Ileocolitis mit Granulomen. Budesonid 9mg. Nach Remission Azathioprin. Rauchstopp empfohlen.",
+    "usefulPhrases": [
+      "Erstmanifestation M.Crohn.",
+      "Histologie mit Granulomen.",
+      "Budesonid oder systemische Steroide.",
+      "Remissionserhaltung mit Azathioprin."
+    ],
+    "commonMistakes": [
+      "Mit CU verwechseln",
+      "Granulome nicht erwahenen",
+      "Nur Steroide ohne remissionserhaltene Therapie",
+      "Rauchstopp nicht empfehlen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Internal Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_062",
+    "caseTitle": "Schrittmacherkontrolle",
+    "rawPatientInfo": "78j Patientin, 65kg, Z.n. VHF-Ablation, SM wegen SSS. Kontrolle: 99% Stimulation, Batterie 2,1V, Schwellen stabil. Keine Arrhythmien. Klinisch o.B.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Schrittmacherkontrolle, 78j Patientin. 99% Stimulation, Batterie 2,1V, Schwellen stabil. Keine Arrhythmien. Naechste Kontrolle in 12 Monaten.",
+    "usefulPhrases": [
+      "SM-Kontrolle unauffaellig.",
+      "99% Stimulation normal.",
+      "Batterie gut.",
+      "Naechste in 12 Mo."
+    ],
+    "commonMistakes": [
+      "Nur Batterie prüfen",
+      "Schwellen/Sensing vergessen",
+      "Arrhythmiespeicher nicht auslesen",
+      "Naechste Kontrolle nicht planen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Cardiology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_063",
+    "caseTitle": "Tuberkuloese Verdacht offen",
+    "rawPatientInfo": "34j Patient, 68kg, Hochpraevalenzland. Husten, Nachtschweiss, Gewichtsverlust 6kg, Haemoptyse. Kaverne re Oberlappen. T-SPOT pos. Sputum AFB pos.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "V.a. offene Tuberkulose. Isolierung. Viertherapie Rifampicin, INH, Pyrazinamid, Ethambutol. Meldung ans Gesundheitsamt. Kontaktpersonen-Ermittlung einleiten.",
+    "usefulPhrases": [
+      "V.a. offene TBC.",
+      "Kaverne, AFB positiv.",
+      "Isolierung und Viertherapie.",
+      "Meldung an Gesundheitsamt."
+    ],
+    "commonMistakes": [
+      "Isolierung vergessen",
+      "Nur Monotherapie",
+      "Resistogramm nicht abwarten, aber parallel",
+      "Meldepflicht nicht beachten"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pulmonology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_064",
+    "caseTitle": "Hepatitis B Reaktivierung Rituximab",
+    "rawPatientInfo": "58j Patient, 72kg, Z.n. Hepatitis B. Unter Rituximab: Transaminasenanstieg. HBsAg wieder pos, HBV-DNA 10^5. Bilirubin 1,2.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "HBV-Reaktivierung unter Rituximab. Entecavir 0,5mg. Mit Onkologie Pause von Rituximab besprechen. Nach Virussuppression Wiederaufnahme.",
+    "usefulPhrases": [
+      "HBV-Reaktivierung unter Rituximab.",
+      "HBsAg pos, HBV-DNA 10^5.",
+      "Entecavir 0,5mg.",
+      "Rituximab pausieren."
+    ],
+    "commonMistakes": [
+      "Nicht nach HBV-Status vor Rituximab fragen",
+      "Nur abwarten",
+      "Entecavir als Prophylaxe vor Rituximab vergessen",
+      "Onkologie nicht involvieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gastroenterology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_065",
+    "caseTitle": "Karotisstenose asymptomatisch",
+    "rawPatientInfo": "69j Patient, 80kg, Raucher, Hypertonie. Carotis-Duplex: Stenose ACI re 75% (NASCET). Keine Symptome.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Asymptomatische Karotisstenose 75%. ASS 100, Atorvastatin 40, RR <140/90. TEA bei Progredienz auf >80% und Lebenserwartung >5 Jahre.",
+    "usefulPhrases": [
+      "Asymptomatische Stenose 75%.",
+      "Keine ipsilateralen Symptome.",
+      "Medikamentoese Therapie.",
+      "TEA bei >80% und Lebenserwartung >5J."
+    ],
+    "commonMistakes": [
+      "Sofort OP-Indikation",
+      "NASCET/ECST nicht kennen",
+      "Medikamentoese Therapie nach Leitlinie",
+      "Restenose-Risiko nicht nennen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Neurology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_066",
+    "caseTitle": "Spinalkanalstenose lumbal",
+    "rawPatientInfo": "72j Patient, 85kg. Claudicatio spinalis nach 200m, besser beim Vorbeugen. MRT: Stenose L4/L5 mit Kaudakompression. Keine Inkontinenz.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Lumbale Spinalkanalstenose L4/L5. Physiotherapie und Schmerztherapie. Bei Progredienz oder Cauda-Syndrom dekompressive OP.",
+    "usefulPhrases": [
+      "Claudicatio spinalis.",
+      "MRT bestaetigt Stenose L4/L5.",
+      "Konservativ oder dekompressive OP.",
+      "Cauda-Syndrom beachten."
+    ],
+    "commonMistakes": [
+      "Mit pAVK verwechseln",
+      "Cauda-Symptome nicht abfragen",
+      "Nur konservativ ohne Progredienzkontrolle"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Orthopedics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_067",
+    "caseTitle": "Thoraxtrauma mit Rippenserie",
+    "rawPatientInfo": "55j Patient, Maschinenunfall. Dyspnoe, Brustschmerz. SpO2 91%, AF 26. CT: Rippenserienfraktur 3-6 re, Haemopneumothorax, Lungenkontusion.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Rippenserienfraktur 3-6 re, Haemopneumothorax. Buelau-Drainage. PCA oder thorakaler PDK. Bei respiratorischer Insuffizienz NIV oder Intubation.",
+    "usefulPhrases": [
+      "Thoraxtrauma Rippenserie re.",
+      "Haemopneumothorax.",
+      "Buelau-Drainage, Analgesie.",
+      "Ggf. NIV oder Intubation."
+    ],
+    "commonMistakes": [
+      "Drainage zu spaet",
+      "Analgesie nicht ausreichend",
+      "NIV bei Rippenserie kontrovers",
+      "Beatmung als Ultima Ratio"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Surgery",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_068",
+    "caseTitle": "CO2 Narkose hyperkapnisches Koma",
+    "rawPatientInfo": "72j Patient, COPD GOLD IV, LTOT. Verwirrtheit, Asterixis. pH 7,28, pCO2 78, pO2 68 (O2). AF 8.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "CO2-Narkose. O2 auf 1L reduzieren, NIV BiPAP. Ursachensuche: Opioide, Sedativa. LTOT-Einstellung nach Stabilisierung ueberpruefen.",
+    "usefulPhrases": [
+      "Hyperkapnisches Koma.",
+      "pCO2 78, pH 7,28.",
+      "Sauerstoff reduzieren, NIV.",
+      "Ursache suchen: Opioide? Sedativa?"
+    ],
+    "commonMistakes": [
+      "Sauerstoff erhoehen (macht schlimmer)",
+      "NIV zu spaet",
+      "BGA vor/nach vergessen",
+      "O2-Dosis nicht reduzieren"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Emergency Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_069",
+    "caseTitle": "Nebenniereninsuffizienz primaer",
+    "rawPatientInfo": "45j Patientin, 58kg. Muedigkeit, Hyperpigmentierung. Na 128, K 5,4. Kortisol 3, Synacthen 4. ACTH 240.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Primaere NNR-Insuffizienz. Hydrocortison 20-0-10mg, Fludrocortison 0,1mg. Bei Stress Dosis verdoppeln. Notfallausweis und i.m.-Hydrocortison-Notfallset.",
+    "usefulPhrases": [
+      "Primaere NNR-Insuffizienz.",
+      "Hyponatriämie, Hyperkaliaemie.",
+      "Hydrocortison plus Fludrocortison.",
+      "Notfallset und Ausweis."
+    ],
+    "commonMistakes": [
+      "Synacthen-Test nicht machen",
+      "ACTH nicht bestimmen",
+      "Mineralokortikoide vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Endocrinology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_070",
+    "caseTitle": "Blasentumor bei Mikrohaematurie",
+    "rawPatientInfo": "38j Patient. Zufallsbefund Mikrohaematurie. Zytologie: atypische Zellen. Zystoskopie: Blasentumor 2cm papillar.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Mikrohaematurie mit Blasentumor 2cm. TUR-B geplant. Nach Histologie risikoangepasste Nachsorge und ggf. intravesikale Instillation.",
+    "usefulPhrases": [
+      "Blasentumor bei Mikrohaematurie.",
+      "TUR-B zur Resektion.",
+      "Histologie und Staging.",
+      "Risikoangepasste Nachsorge."
+    ],
+    "commonMistakes": [
+      "Nur Sono, keine Zystoskopie bei Risiko",
+      "Zytologie nicht abnehmen",
+      "Keine urologische Weiterleitung",
+      "Nach TUR-B keine Nachsorge"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Nephrology/Urology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_071",
+    "caseTitle": "Ovarialtumor Aszites Verdacht Karzinom",
+    "rawPatientInfo": "55j Patientin, postmenopausal. Aufgetriebener Bauch, Gewichtszunahme. Sono: zystisch-solide Raumforderung 12cm, Aszites. CA-125 340.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "V.a. Ovarialkarzinom. CT Abdomen/Thorax zum Staging. Zytoreduktive Chirurgie und Staging. Histologie entscheidet ueber adjuvante Chemotherapie.",
+    "usefulPhrases": [
+      "V.a. Ovarialkarzinom.",
+      "12cm Tumor mit Aszites.",
+      "CA-125 erhoeht.",
+      "Operatives Staging und Debulking."
+    ],
+    "commonMistakes": [
+      "Nur Sono, kein CT",
+      "CA-125 allein nicht diagnostisch",
+      "Nur Ovarektomie ohne Staging"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gynecology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_072",
+    "caseTitle": "Ikterus prolongiert Phototherapie",
+    "rawPatientInfo": "10 Tage Saeugling, 3,2kg, gestillt. Bilirubin 18,5 (indirekt 17,8). Blutguppe 0/A. Kein Kuegelchenblut.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Ikterus bei AB0-Inkompatibilitaet. Bilirubin 18,5 mg/dL. Phototherapie nach Bhutani-Kurve. Bei Anstieg trotz Therapie Austauschtransfusion vorbereiten.",
+    "usefulPhrases": [
+      "Prolongierter Ikterus.",
+      "Bilirubin 18,5.",
+      "AB0-Inkompatibilitaet.",
+      "Phototherapie nach Bhutani-Kurve."
+    ],
+    "commonMistakes": [
+      "Nicht nach Bhutani-Kurve behandeln",
+      "Direktes/indirektes Bilirubin nicht unterscheiden",
+      "Austauschtransfusion bei Versagen vorbereiten"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pediatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_073",
+    "caseTitle": "Alkoholentzugsdelir",
+    "rawPatientInfo": "56j Patient, taeglich 120g Alkohol. Seit 3 Tagen Abstinenz. Tremor, Tachykardie, optische Halluzinationen. CIWA-Ar 28.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Alkoholentzugsdelir. Diazepam nach CIWA-Schema. Thiamin i.v. vor Glucose. Elektrolyte. Nach Stabilisierung Entwoehnungsbehandlung anbahnen.",
+    "usefulPhrases": [
+      "Alkoholentzugsdelir CIWA 28.",
+      "Benzodiazepin nach CIWA.",
+      "Thiamin vor Glucose.",
+      "Elektrolyte substituieren."
+    ],
+    "commonMistakes": [
+      "Nur Diazepam ohne CIWA-Schema",
+      "Thiamin nicht vor Glucose",
+      "Entwoehnung nach Entzug nicht anbahnen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Psychiatry",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_074",
+    "caseTitle": "Urtikaria chronisch spontan",
+    "rawPatientInfo": "36j Patientin. Seit 6 Wo Quaddeln, Juckreiz. IgE, ANA, SD-AK negativ. CU-Index erhoeht.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Chronische spontane Urtikaria. ANA, IgE, SD-AK negativ. Antihistaminika auf 4-fache Dosis. Bei Resistenz Omalizumab.",
+    "usefulPhrases": [
+      "Chronische spontane Urtikaria.",
+      "Autoimmun-DD ausgeschlossen.",
+      "Antihistaminika bis 4x Dosis.",
+      "Omalizumab bei Therapieresistenz."
+    ],
+    "commonMistakes": [
+      "Nur einfache Dosis Antihistaminika",
+      "SD-AK nicht pruefen",
+      "Keine AU ausstellen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Dermatology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_075",
+    "caseTitle": "Stimmlippenparese links",
+    "rawPatientInfo": "52j Patient, 74kg. Heisere Stimme seit Wochen, keine Schmerzen. Z.n. Schilddruesen-OP vor 5 Jahren. Laryngoskopie: Stimmlippenparese links. CT Hals: kein Tumor.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Stimmlippenparese links nach Schilddruesen-OP. CT Hals o.B. Logopaedie zur Stimmtherapie. Bei fehlender Rueckbildung Medialisierungsthyreoplastik erwaegen.",
+    "usefulPhrases": [
+      "Stimmlippenparese links.",
+      "Schilddruesen-OP in Vorgeschichte.",
+      "Laryngoskopie bestaetigt.",
+      "Therapie: Logopaedie, ggf. OP."
+    ],
+    "commonMistakes": [
+      "Nur Symptome, OP in Vorgeschichte nicht nennen",
+      "Tumor per CT nicht ausschliessen",
+      "Stimme nicht reichen, Schlucksymptome abfragen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "ENT",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_076",
+    "caseTitle": "Netzhautablosung",
+    "rawPatientInfo": "60j Patient, -6 dpt Myopie. Ploetzlicher Schatten im Gesichtsfeld, Lichtblitze, schwarze Punkte. Visus 0,1 mit Korrektur. Ophthalmoskopie: Netzhautablosung temporal oben, Foramen.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Netzhautablosung bei hoher Myopie. Ophthalmoskopie zeigt Foramen mit Ablosung. Notfallaugenarzt. Vitrektomie oder Cerclage. Bei Makula-Beteiligung schlechtere Prognose.",
+    "usefulPhrases": [
+      "Netzhautablosung bei Myopie.",
+      "Ophthalmoskopie bestaetigt.",
+      "Vitrektomie oder Cerclage.",
+      "Notfallaugenarzt."
+    ],
+    "commonMistakes": [
+      "Nur abwarten",
+      "Myopie als Risiko nicht nennen",
+      "Keine notfallmassige Vorstellung",
+      "Makula-Beteiligung nicht prüfen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Ophthalmology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_077",
+    "caseTitle": "Herpes Zoster",
+    "rawPatientInfo": "65j Patientin, 68kg, immunkompetent. Brennende, schmerzhafte Bläschen im Dermatom Th5 rechts seit 3 Tagen. Keine generalisierte Ausbreitung, kein Fieber.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Herpes Zoster Th5 rechts. Valaciclovir 1g 3x/Tag. Analgesie. Bei Zoster ophthalmicus oder generalisierter Ausbreitung i.v. Aciclovir. Post-Zoster-Neuralgie-Risiko ansprechen.",
+    "usefulPhrases": [
+      "Herpes Zoster Th5 rechts.",
+      "Schmerzhafte Bläschen im Dermatom.",
+      "Valaciclovir 1g 3x/Tag.",
+      "Analgesie nach WHO-Stufenplan."
+    ],
+    "commonMistakes": [
+      "Nur Symptome behandeln, Virostatikum vergessen",
+      "Post-Zoster-Neuralgie nicht erwahenen",
+      "Nicht immunsupprimiert? Trotzdem Virostatikum bei >50J"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Infectious Disease",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_078",
+    "caseTitle": "Dekubitus Grad 3",
+    "rawPatientInfo": "85j Patientin, 55kg, bettlagerig nach Hueftfraktur. Dekubitus am Sakrum 4x5cm, nekrotischer Belag, kein Knochen sichtbar. CRP 68, Fieber 38,2.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Dekubitus Grad 3 Sakrum. Wunddebridement, Abstrich fuer Mikrobiologie. Antibiose kalkuliert. Spezialmatratze und Positionierungswechsel alle 2h. Ernaehrungszustand optimieren, Albumin kontrollieren.",
+    "usefulPhrases": [
+      "Dekubitus Grad 3 am Sakrum.",
+      "Nekrose, Infektzeichen.",
+      "Wunddebridement und Antibiose.",
+      "Druckentlastung."
+    ],
+    "commonMistakes": [
+      "Nur Wundversorgung, keine Antibiose bei Infekt",
+      "Druckentlastung nicht priorisieren",
+      "Ernaehrungsstatus und Albumin nicht prüfen",
+      "Wunddokumentation nach Grad-System"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Geriatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_079",
+    "caseTitle": "Digoxin-Intoxikation",
+    "rawPatientInfo": "80j Patient, 62kg, VHF, Digoxin 0,125mg, CKD 3 (GFR 38). UEbelkeit, Sehstoerungen (gelb-gruenes Sehen), Bradykardie 45/min. Digoxin-Spiegel 3,8 ng/mL. Kalium 5,8.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Digoxin-Intoxikation bei CKD3. Digoxin abgesetzt. Bradykardie, Uebelkeit, Sehstoerungen. EKG: keine relevanten Rhythmusstoerungen. Bei Kammerarrhythmien Digitalis-Antikoerper. Nach Clearance Digoxin-Therapie ueberdenken.",
+    "usefulPhrases": [
+      "Digoxin-Intoxikation.",
+      "Spiegel 3,8, K 5,8.",
+      "Digoxin absetzen.",
+      "Digitalis-Antikoerper bei schwerer Intoxikation."
+    ],
+    "commonMistakes": [
+      "Nur absetzen ohne Spiegelkontrolle",
+      "EKG bei Bradykardie nicht schreiben",
+      "CKD als Risikofaktor nicht nennen",
+      "Antikoerper erst bei schwerer Intoxikation (Kammerarrhythmien)"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Medication Side Effects",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_080",
+    "caseTitle": "Antibiotika assoziierte Kolitis Nachsorge",
+    "rawPatientInfo": "70j Patient, Z.n. Clindamycin-Therapie. Durchfall seit 1 Wo, Stuhltest: C.difficile Toxin pos. Nach Metronidazol-Therapie jetzt beschwerdefrei. Stuhlfrequenz normal.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "C.difficile-Kolitis nach Clindamycin. Nach Metronidazol beschwerdefrei. Rezidivrisiko 20%. Hausarzt informiert: bei Rezidiv Vancomycin oder Fidaxomicin. Haendewaschen mit Seife fortsetzen (Alkohol unwirksam gegen Sporen).",
+    "usefulPhrases": [
+      "C.difficile-Kolitis nach Clindamycin.",
+      "Metronidazol-Therapie abgeschlossen.",
+      "Beschwerdefrei bei Entlassung.",
+      "Hausarzt bei Rezidiv Fidaxomicin oder Vancomycin."
+    ],
+    "commonMistakes": [
+      "Keine Isolierung aufgehoben bei symptomfrei",
+      "Hygieneempfehlungen nicht mitgeben",
+      "Rezidivrisiko 20% nicht erwahenen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Discharge/Follow-up",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_081",
+    "caseTitle": "Sarkoidose Hiluslymphknoten",
+    "rawPatientInfo": "42j Patient, 70kg. Dyspnoe, trockener Husten, Gelenkschmerzen. Hiluslymphknoten bds. im Roentgen. ACE erhoeht. Bronchoskopie: Epitheloidzellgranulome ohne Nekrose. Keine M.tuberculosis.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Sarkoidose Stadium I. Hiluslymphknoten bds., ACE erhoeht. Bronchoskopisch Granulome, TBC ausgeschlossen. Keine pulmonalen Symptome, wir beobachten zunaechst. Bei Symptomen Prednisolon 20mg mit Ausschleichen.",
+    "usefulPhrases": [
+      "Sarkoidose mit hiluslymphknoten.",
+      "ACE erhoeht, Granulome.",
+      "Therapie abwaertig bei Symptomen.",
+      "Prednisolon 20mg, ausschleichen ueber 6 Mo."
+    ],
+    "commonMistakes": [
+      "Mit TBC verwechseln",
+      "Granulome nicht unterscheiden (nekrotisierend/nicht)",
+      "Nur Roentgen, kein Lungenfunktionstest",
+      "Therapie nur bei Symptomen oder Organbeteiligung"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Internal Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_082",
+    "caseTitle": "Aortenstenose hochgradig",
+    "rawPatientInfo": "77j Patient, 74kg. Belastungsdyspnoe NYHA III, Angina pectoris, Synkope beim Treppensteigen. Echo: Aortenklappenoeffnung 0,8 cm2, Vmax 4,8 m/s, mittlerer Gradient 52 mmHg. LVEF 55%.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Hochgradige Aortenstenose, Vmax 4,8, Gradient 52. Klinik: Dyspnoe NYHA III, Synkope. AKE indiziert. Bei hohem OP-Risiko TAVI. Koronar-Angiografie vor Klappenersatz.",
+    "usefulPhrases": [
+      "Hochgradige Aortenstenose.",
+      "Trias: Dyspnoe, Angina, Synkope.",
+      "Aortenklappenersatz indiziert.",
+      "TAVI vs chirurgisch je nach Alter/Risiko."
+    ],
+    "commonMistakes": [
+      "Trias nicht nennen",
+      "Nur Echo ohne Symptome",
+      "TAVI-Alter nicht anpassen (nicht altersabhaengig)",
+      "LVEF trotz Stenose normal, nicht warten bis Abfall"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Cardiology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_083",
+    "caseTitle": "Pleuraerguss unklarer Genese",
+    "rawPatientInfo": "58j Patient, 66kg. Dyspnoe, Gewichtsverlust, Nachtschweiss. Roentgen: Pleuraerguss li. Punktion: exsudativ (Light-Kriterien), Lymphozyten 80%, ADA 12, Glucose normal, Zytologie: keine Tumorzellen.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Exsudativer Pleuraerguss links. Lymphozytär, ADA 12 (TBC unwahrscheinlich). Zytologie negativ. Thorakoskopie mit Pleurabiopsie zur Diagnosesicherung geplant. M. partialis pleurektomie bei benignem/ malignem Befund.",
+    "usefulPhrases": [
+      "Exsudativer Pleuraerguss, lymphozytär.",
+      "ADA 12, TBC unwahrscheinlich.",
+      "Tumorzellen negativ.",
+      "Thorakoskopie zur Diagnosesicherung."
+    ],
+    "commonMistakes": [
+      "Light-Kriterien nicht anwenden",
+      "Tuberkulose bei lymphozytärem Erguss erwaegen",
+      "Thorakoskopie zu spaet",
+      "Nur Punktion reicht bei Tumorverdacht oft nicht"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pulmonology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_084",
+    "caseTitle": "Magenfrühkarzinom Screening",
+    "rawPatientInfo": "62j Patient, Raucher, Z.n. Helicobacter-Eradikation. OEGD-Screening: 0,8 cm Läsion in der Magenschleimhaut. Histologie: fruehes Adenokarzinom, mukosa. EUS: Mukosakarzinom, Submukosa intakt. Keine Lymphknoten.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Mukosales Magenfruhkarzinom. EUS: auf Mukosa begrenzt. Endoskopische Mukosaresektion (EMR/ESD) geplant. Nach Abtragung histologische Aufarbeitung und Surveillance-Endoskopie nach 3 und 12 Mo.",
+    "usefulPhrases": [
+      "Frühes Magenkarzinom, Mukosakarzinom.",
+      "Endoskopische Resektion moeglich.",
+      "EUS bestätigt Mukosabegrenzung.",
+      "Nach Resektion Ueberwachung."
+    ],
+    "commonMistakes": [
+      "Sofort Gastrektomie empfehlen",
+      "Endoskopische Resektion nicht kennen",
+      "EUS vor Entscheidung vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gastroenterology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_085",
+    "caseTitle": "Polyneuropathie diabetisch",
+    "rawPatientInfo": "62j Patient, Typ-2-Diabetes 15J, HbA1c 9,2. Brennende Fussschmerzen nachts, Taubheitsgefuehl, Gangunsicherheit. MMT: aeussere Zehen/Knoechel, Reflexe ASR abgeschwaecht. NLG: axonal sensomotorisch.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Diabetische Polyneuropathie. NLG axonal-sensomotorisch. Therapie: BZ-Optimierung, Pregabalin 75mg 1-0-1 oder Duloxetin 60mg. Fussinspektion taeglich. Ueberweisung an DiaFu. Schuhberatung.",
+    "usefulPhrases": [
+      "Diabetische Polyneuropathie mit neuropathischen Schmerzen.",
+      "NLG bestaetigt axonal.",
+      "Blutzuckereinstellung optimieren.",
+      "Pregabalin oder Duloxetin."
+    ],
+    "commonMistakes": [
+      "Nur Symptome behandeln, Blutzucker nicht",
+      "NLG nicht machen",
+      "Opioide als erste Wahl bei neuropathischen Schmerzen",
+      "Fusskomplikationen nicht besprechen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Neurology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_086",
+    "caseTitle": "Karpaltunnelsyndrom",
+    "rawPatientInfo": "45j Patientin, 68kg. Einschlafen der Finger 1-3 nachts, Schmerzausstrahlung, positives Tinel/Hoffmann-Tinel. NLG: distal motorische Latenz verlaengert, sensible NLG N.medianus verlangsamt.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Karpaltunnelsyndrom. NLG bestaetigt mittelschwere Kompression. Nachtschiene und lokales Steroid. Bei fehlender Besserung in 4 Wo operative Dekompression. Thenaratrophie bereits angedeutet.",
+    "usefulPhrases": [
+      "Karpaltunnelsyndrom rechts.",
+      "NLG bestaetigt.",
+      "Nachtlagerungsschiene.",
+      "Operative Dekompression bei Therapieresistenz."
+    ],
+    "commonMistakes": [
+      "Nur konservativ ohne NLG",
+      "Sofort OP ohne konservativen Versuch",
+      "Thenaratrophie als Spaetzeichen nicht erkennen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Orthopedics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_087",
+    "caseTitle": "Leistenhernie Inkarzeration",
+    "rawPatientInfo": "66j Patient, 76kg. Seit 2h schmerzhafte, nicht reponible Schwellung re Leiste, Uebelkeit. Sono: inkarzerierte Leistenhernie, Duenndarmanteil, keine Perforationszeichen.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Inkarzerierte Leistenhernie rechts. Reponibel? Nein, nicht reponibel. Notfall-Herniotomie. OP-Bereitschaft informiert. Intraoperativ Darmvitalitaet prüfen. Bei Ischaemie Dammobilisation.",
+    "usefulPhrases": [
+      "Inkarzerierte Leistenhernie rechts.",
+      "Nicht reponibel.",
+      "Notfall-Herniotomie.",
+      "Darmischaemie ausschliessen."
+    ],
+    "commonMistakes": [
+      "Reponieren ohne OP-Bereitschaft",
+      "Zu lange warten auf OP",
+      "Dammobilisation bei Ischaemie nicht erkennen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Surgery",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_088",
+    "caseTitle": "Hypoglykämie schwer",
+    "rawPatientInfo": "58j Patient, 75kg, Typ-2-Diabetes, Metformin, Glibenclamid. Bewusstlos, Zuckungen. BZ 34 mg/dL. Kein Fieber. Pupillen isokor, Lichtreaktion pos. Labor: Krea 1,8, GFR 35.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Schwere Hypoglykaemie 34 mg/dL bei Glibenclamid + CKD3. 40ml Glucose 50% i.v., BZ nach 15 Min. SU abgesetzt. Stationaere Ueberwachung 24h. Diabetes-Medikation neu einstellen.",
+    "usefulPhrases": [
+      "Schwere Hypoglykämie bei SU.",
+      "BZ 34 mg/dL.",
+      "Glucose 50% i.v. oder Glukagon.",
+      "CKD als Risikofaktor fuer SU."
+    ],
+    "commonMistakes": [
+      "Nur Glucose, nicht nach Ursache suchen",
+      "Glibenclamid bei CKD als Ausloeser nicht erkennen",
+      "Nach Behandlung frueh entlassen ohne Monitoring"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Emergency Medicine",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_089",
+    "caseTitle": "Primaerer Hyperparathyreoidismus",
+    "rawPatientInfo": "52j Patientin, 68kg. Zufallsbefund Serumkalzium 2,9. Nierensteine in Anamnese, Osteoporose (T-Score -2,8). PTH 140. Sono SD: Neben SD-Zyste kaudal re. Sestamibi-Szinti fokale Mehranreicherung.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Primaerer Hyperparathyreoidismus. Kalzium 2,9, PTH 140. Nierensteine und Osteoporose. Sestamibi zeigt fokal Adenom rechts. Parathyreoidektomie indiziert. Postoperativ hungry-bone-Syndrom beachten.",
+    "usefulPhrases": [
+      "Primaerer Hyperparathyreoidismus.",
+      "Kalzium 2,9, PTH 140.",
+      "Nierensteine, Osteoporose.",
+      "Nebenschilddruesen-Adenom rechts."
+    ],
+    "commonMistakes": [
+      "Nur Kalzium nennen, nicht Folgen",
+      "Vitamin-D-Status nicht pruefen",
+      "OP erst bei schwerem Verlauf",
+      "Parathyreoidektomie als einzige kurative Therapie"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Endocrinology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_090",
+    "caseTitle": "Renale Zysten polyzystisch",
+    "rawPatientInfo": "38j Patient, 75kg, positive Familienanamnese (beide Eltern dialysepflichtig). Seit Jahren Hypertonie. Sono: multiple bilaterale Nierenzysten, Nierengrosse 15cm. Krea 1,6, GFR 44. Hb 11,5.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "ADPKD mit CKD3. Nierengrosse 15cm, multiple Zysten. RR-Einstellung mit ACE-Hemmer. Tolvaptan zur Progressionsverzoegerung diskutieren. Zerebrale Aneurysmen? MRA-Kopf Screening. Nierersatztherapie vorbereiten.",
+    "usefulPhrases": [
+      "ADPKD mit CKD3.",
+      "Multiple Zysten bds., Nieren vergroessert.",
+      "Hypertonie einstellen.",
+      "Tolvaptan erwaegen."
+    ],
+    "commonMistakes": [
+      "Nur Sono, Familienanamnese nicht erfragen",
+      "Zysteninfektion als Komplikation nicht kennen",
+      "Schlaganfall-Risiko bei Zysten (Aneurysma) nicht nennen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Nephrology/Urology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_091",
+    "caseTitle": "Harninkontinenz Belastungstyp",
+    "rawPatientInfo": "58j Patientin, 3 Spontanpartus. Unfreiwilliger Urinverlust beim Husten, Niesen, Laufen. Vorlage 3-4/Tag. Urodynamik: Belastungsinkontinenz Grad 3. Restharn 20ml. Senkungsbefund.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Belastungsinkontinenz Grad3 mit Senkung. Zunaechst Beckenbodentraining. Bei weiterem Leidensdruck TVT-Operation oder Kolporrhaphie. Kinderwunsch abgeschlossen.",
+    "usefulPhrases": [
+      "Belastungsinkontinenz Grad3.",
+      "Senkungsbefund.",
+      "Beckenboden-Training.",
+      "TVT oder Kolporrhaphie."
+    ],
+    "commonMistakes": [
+      "Nur konservativ ohne operative Option",
+      "TVT bei Senkung nicht als OP-Verfahren",
+      "Restharn nicht messen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Gynecology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_092",
+    "caseTitle": "Dehydratation Gastroenteritis",
+    "rawPatientInfo": "2j Kind, 14kg. Erbrechen, Durchfall seit 2 Tagen, Trinkverweigerung. AF 30/min, HF 140/min, eingesunkene Fontanelle, trockene Schleimhaeute, Hautspannung vermindert. Capillary refill 3 sec. BGA: pH 7,28, BE -8, Na 136, Cl 110. Keton positiv.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Dehydratation 10% KG-Verlust bei Gastroenteritis. 20ml/kg Bolus Sterofundin, dann Erhaltung. Na 136 isoton. BGA: metabolische Azidose (BE -8). Nach Bolus Wiederholung und Re-Evaluation. Bilanzierung.",
+    "usefulPhrases": [
+      "Dehydratation bei Gastroenteritis.",
+      "Eingesunkene Fontanelle.",
+      "I.v. Fluessigkeit (Sterofundin).",
+      "Ueberwachung mit Bilanzierung."
+    ],
+    "commonMistakes": [
+      "Nur orale Rehydratation bei schwerer Dehydratation",
+      "Gewichtsverlust nicht quantifizieren",
+      "Natrium nicht checken fuer Osmolalitaet"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Pediatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_093",
+    "caseTitle": "Anorexia nervosa",
+    "rawPatientInfo": "17j Patientin, 42kg, 168cm (BMI 14,5). Kalorienrestriktion seit 1 Jahr, selbstinduziertes Erbrechen. Koerperschema gestoert. Amenorrhoe. EKG: Bradykardie 44/min, QT 480ms. Labor: Na 132, K 3,0, alkalische Phosphatase erhoeht.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Anorexia nervosa, BMI 14,5. Bradykardie 44, QT 480. EKG-Ueberwachung. Refeeding-Syndrom: Phosphat, Kalium, Magnesium kontrollieren und substituieren. Stationaere psychotherapeutische Behandlung. Somatische Mitbetreuung.",
+    "usefulPhrases": [
+      "Anorexia nervosa BMI 14,5.",
+      "Bradykardie, QT-Verlangerung.",
+      "Refeeding-Syndrom beachten.",
+      "Stationaere Therapie."
+    ],
+    "commonMistakes": [
+      "Nur Gewicht behandeln, QT-Verlangerung ignorieren",
+      "Refeeding-Syndrom nicht kennen",
+      "Purin-/Phosphatkontrolle vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Psychiatry",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_094",
+    "caseTitle": "Akne conglobata",
+    "rawPatientInfo": "19j Patient, 73kg. Nodulaere, abszedierende Akne im Gesicht, auf Brust und Ruecken. Nodi bis 2cm, Fistelgaenge. Vernarbung. Bisher topisch, Doxycyclin ohne Erfolg.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Akne conglobata. Therapieresistent. Isotretinoin 0,5mg/kg, steigernd auf 1mg/kg. Vitamin-A-Saure vor Isotretinoin absetzen. Labor: Leberwerte, Lipide. Kontrazeption bei Patientinnen. Psychische Nebenwirkungen besprechen.",
+    "usefulPhrases": [
+      "Schwere Akne conglobata.",
+      "Abszedierend mit Fisteln.",
+      "Isotretinoin nach Therapieplan.",
+      "Narbenmanagement."
+    ],
+    "commonMistakes": [
+      "Isotretinoin ohne Kontrollen von Leber/Lipide",
+      "Nur topisch bei schwerer Akne",
+      "Psychische Nebenwirkungen (Depression) nicht besprechen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Dermatology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_095",
+    "caseTitle": "Morbus Meniere",
+    "rawPatientInfo": "44j Patient, 72kg. Wiederholte Schwindelattacken mit Drehschwindel, Uebelkeit, Erbrechen, Tinnitus Ohrgeraeusche li, Hoerminderung li. Attacken 2-6h. Audiometrie: Schallempfindungsstoerung li tieffrequent.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Morbus Meniere links. Drehschwindelattacken mit Hoerminderung und Tinnitus. Ausschluss andererAEtiologien. Betahistin 2x1 Tbl. Diazepam akut. Salzrestriktion. Bei Therapieresistenz intratympanales Gentamicin oder Saccusdekompression.",
+    "usefulPhrases": [
+      "M.befunde bei M.Patienten",
+      "V.a. Morbus Meniere.",
+      "Tiefton-Schwerhoerigkeit.",
+      "Betahistin, Diazepam akut.",
+      "Niedrigsalz-Diat, ggf. Gentamicin-Injektion."
+    ],
+    "commonMistakes": [
+      "Nur Betahistin, keine Daet",
+      "Schwindel nicht als Meniere erkennen",
+      "Gentamicin-Injektion als Ultima Ratio erwaegen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "ENT",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_096",
+    "caseTitle": "Grauer Star Katarakt",
+    "rawPatientInfo": "71j Patient, 80kg. Seit Monaten zunehmende Sehverschlechterung bds, Blendempfindlichkeit. Visus mit Korrektur: 0,3 re, 0,5 li. Spaltlampe: Kortikaler Katarakt > nuklear > posterior subkapsular. Augendruck normal.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Cataracta senilis bds., re staerker. Phako+IOL re geplant. Visus mit Korrektur 0,3. Aufklaerung ueber Endophthalmitis, Nachstar, Netzhautablosung. Keine Kontraindikation. Postop Augentropfen mit Dexamethason/Neomycin.",
+    "usefulPhrases": [
+      "Cataracta senilis bds.",
+      "Visus 0,3 auf besserem Auge.",
+      "Phakoemulsifikation + IOL.",
+      "Zweitaugigkeit beachten."
+    ],
+    "commonMistakes": [
+      "Keine Aufklaerung ueber OP-Risiken",
+      "Nicht pAVK oder Makulaerkrankung unterscheiden",
+      "Postoperativ Endophthalmitis-Risiko ansprechen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Ophthalmology",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_097",
+    "caseTitle": "Candida-Oesophagitis",
+    "rawPatientInfo": "45j Patient, HIV-positiv (CD4 120 Zellen/mcL), antiretrovirale Therapie. Schluckbeschwerden, retrosternale Schmerzen, weissliche Belaege im Oropharynx. OEGD: weissliche Plaques im Oesophagus. Kaliumhydroxid-Praeparat: Candida.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Candida-Oesophagitis bei HIV mit CD4 120. Fluconazol 200mg fuer 14 Tage. ART-Compliance ueberpruefen. Bei Therapieresistenz Resistogramm, ggf. Caspofungin.",
+    "usefulPhrases": [
+      "Candida-Oesophagitis bei HIV.",
+      "CD4 120.",
+      "Fluconazol 200mg/Tag.",
+      "ART-Compliance prüfen."
+    ],
+    "commonMistakes": [
+      "Nur antimykotisch ohne ART-Ueberprüfung",
+      "OEGD noetig zur Diagnose",
+      "Resistenztestung bei Fluconazol-Versagen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Infectious Disease",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_098",
+    "caseTitle": "Osteoporotische Wirbelkoerperfraktur",
+    "rawPatientInfo": "78j Patientin, 58kg, Osteoporose (T-Score -3,5). Akute Rueckenschmerzen nach Bücken, Bewegungseinschraenkung, Koerpergroesse -4cm. Roentgen/MRT: BWK 12 Deckplattenimpressionsfraktur frisch.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Osteoporotische Deckplattenimpression BWK 12. Bei akuten Schmerzen Kyphoplastie oder konservativ mit Korsett. Sekundaerprophylaxe: Kalzium 1000mg, Vitamin D 800IE, Bisphosphonat (Alendronat 70mg/Woche). Sturzprophylaxe.",
+    "usefulPhrases": [
+      "Osteoporotische Fraktur BWK12.",
+      "T-Score -3,5.",
+      "Kyphoplastie oder konservativ.",
+      "Sekundaerprophylaxe mit Bisphosphonat."
+    ],
+    "commonMistakes": [
+      "Nur Schmerztherapie ohne Frakturversorgung",
+      "Bisphosphonat bei Fraktur nicht starten",
+      "Kalzium und Vitamin D vergessen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Geriatrics",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_099",
+    "caseTitle": "Methotrexat-Intoxikation",
+    "rawPatientInfo": "63j Patient, 60kg, Psoriasis-Arthritis, MTX 15mg/Woche. Verwechslung: taegliche Einnahme statt woechenlich. Seit 5 Tagen: Uebelkeit, Ulcera im Mund, Durchfall. Labor: Leukopenie 1.200, Thrombozytopenie 45.000. Krea 2,2. Folat 2 ng/mL.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "MTX-Intoxikation durch Verwechslung. Calciumfolinat hochdosiert (50mg alle 6h). G-CSF bei Leukopenie. Haemodialyse bei Nierenversagen erwägen. Eindeutige Dosisanweisung fuer die Zukunft.",
+    "usefulPhrases": [
+      "MTX-Intoxikation bei taeglicher Einnahme.",
+      "Panzytopenie, AKI.",
+      "Calciumfolinat hochdosiert.",
+      "Haemodialyse bei Versagen."
+    ],
+    "commonMistakes": [
+      "Nur MTX absetzen, keine Folinsaeure",
+      "Panzytopenie nicht beachten",
+      "Hohe Dosis Calciumfolinat noetig (Leucovorin Rescue)"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Medication Side Effects",
+      "presentation"
+    ]
+  },
+  {
+    "id": "fsp_p_100",
+    "caseTitle": "Polymorbiditaet Nachsorge",
+    "rawPatientInfo": "83j Patient, 60kg, 6 Diagnosen: HI, CKD3, Diabetes, Hypertonie, COPD, Demenz. 12 Medikamente. Stabil, aber 2 Stuerze in 6 Mo. RR 145/85 liegend, 110/60 stehend.",
+    "task": "Present this case to a senior doctor in German.",
+    "expectedPresentationOrder": [
+      "Patient identification",
+      "Chief complaint",
+      "Relevant history",
+      "Risk factors",
+      "Findings",
+      "Assessment",
+      "Plan"
+    ],
+    "modelPresentation": "Polymorbiditaet mit Orthostase und Sturzrisiko. Antihypertensiva reduzieren. Medikationsplan: ASS 100, Atorvastatin 20, Bisoprolol 2,5, Ramipril 2,5, Metformin 500, Tiotropium. Ueberfluessige (PPI, Zopiclon) abgesetzt. Hausarzt informiert.",
+    "usefulPhrases": [
+      "Polymorbiditaet mit Sturzrisiko.",
+      "Orthostase.",
+      "Medikation reduzieren.",
+      "Hausarzt erhaelt Medikationsplan."
+    ],
+    "commonMistakes": [
+      "Jede Diagnose einzeln therapieren",
+      "Medikationsliste nicht priorisieren",
+      "Sturzrisiko nicht managen"
+    ],
+    "rubric": {
+      "structure": "Complete, logical order?",
+      "medicalLogic": "Coherent differential and justification?",
+      "conciseness": "Relevant info only?",
+      "doctorToDoctorLanguage": "Professional medical German?",
+      "germanAccuracy": "Grammar, vocabulary, fluency?"
+    },
+    "tags": [
+      "Discharge/Follow-up",
+      "presentation"
+    ]
+  }
+]

@@ -20,6 +20,16 @@ const C1ReadinessPage = lazy(() => import('./pages/C1ReadinessPage'));
 const LessonsPage = lazy(() => import('./pages/LessonsPage'));
 const LessonDetailPage = lazy(() => import('./pages/LessonDetailPage'));
 const MistakeNotebookPage = lazy(() => import('./pages/MistakeNotebookPage'));
+const MedicalFSPHubPage = lazy(() => import('./pages/MedicalFSPHubPage'));
+const FSPVocabPage = lazy(() => import('./pages/FSPVocabPage'));
+const FSPAnamnesePage = lazy(() => import('./pages/FSPAnamnesePage'));
+const FSPCasesPage = lazy(() => import('./pages/FSPCasesPage'));
+const FSPPresentationsPage = lazy(() => import('./pages/FSPPresentationsPage'));
+const FSPWritingPage = lazy(() => import('./pages/FSPWritingPage'));
+const FSPListeningPage = lazy(() => import('./pages/FSPListeningPage'));
+const FSPReadingPage = lazy(() => import('./pages/FSPReadingPage'));
+const FSPGrammarPage = lazy(() => import('./pages/FSPGrammarPage'));
+const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
 const TestPage = lazy(() => import('./pages/TestPage'));
 const TestDataPage = lazy(() => import('./pages/TestDataPage'));
 
@@ -127,6 +137,56 @@ export default function App() {
             <Route path="mistake-notebook" element={
               <Suspense fallback={<Loading />}>
                 <MistakeNotebookPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp" element={
+              <Suspense fallback={<Loading />}>
+                <MedicalFSPHubPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/vocabulary" element={
+              <Suspense fallback={<Loading />}>
+                <FSPVocabPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/anamnese" element={
+              <Suspense fallback={<Loading />}>
+                <FSPAnamnesePage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/cases" element={
+              <Suspense fallback={<Loading />}>
+                <FSPCasesPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/presentations" element={
+              <Suspense fallback={<Loading />}>
+                <FSPPresentationsPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/writing" element={
+              <Suspense fallback={<Loading />}>
+                <FSPWritingPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/listening" element={
+              <Suspense fallback={<Loading />}>
+                <FSPListeningPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/reading" element={
+              <Suspense fallback={<Loading />}>
+                <FSPReadingPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/grammar" element={
+              <Suspense fallback={<Loading />}>
+                <FSPGrammarPage />
+              </Suspense>
+            } />
+            <Route path="medical-fsp/exams" element={
+              <Suspense fallback={<Loading />}>
+                <FSPExamPage />
               </Suspense>
             } />
             <Route path="test" element={

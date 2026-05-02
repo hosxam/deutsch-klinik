@@ -1,0 +1,3102 @@
+[
+  {
+    "id": "r01",
+    "title": "Arztbrief: Aufnahme wegen akuter Pankreatitis",
+    "type": "Arztbrief excerpt",
+    "text": "Arztbrief vom 12.03.2026\n\nPatient: Herr Markus Weber, 52 Jahre alt\nDiagnose: Akute Pankreatitis bei Choledocholithiasis\n\nAufnahmegrund: Seit zwei Tagen progrediente Oberbauchschmerzen mit Ausstrahlung in den Ruecken, Uebelkeit und Erbrechen. Der Patient berichtet ueber maessigen Alkoholkonsum. Die Koerpertemperatur betrug bei Aufnahme 38,7 Grad Celsius.\n\nLaborchemisch zeigte sich eine deutliche Erhoehung der Lipase auf 980 U/l und der Amylase auf 420 U/l. Im Ultraschall wurden mehrere Gallenblasensteine sowie ein erweiterter Ductus choledochus mit einem Durchmesser von 11 mm nachgewiesen.\n\nTherapie: Der Patient wurde stationaer aufgenommen, zunaechst mit Nahrungskarenz, intravenoeser Fluessigkeitstherapie und Analgesie mit Novaminsulfon. Eine ERCP mit Papillotomie und Steinextraktion ist fuer den Folgetag geplant.",
+    "questions": [
+      "Welche Hauptdiagnose wurde bei Herrn Weber gestellt?",
+      "Welche Laborwerte waren deutlich erhoeht?",
+      "Welches Bildgebungsverfahren wurde eingesetzt?",
+      "Welche Massnahme ist fuer den Folgetag geplant?"
+    ],
+    "answers": [
+      "Akute Pankreatitis bei Choledocholithiasis",
+      "Lipase und Amylase",
+      "Ultraschall",
+      "Eine ERCP mit Papillotomie und Steinextraktion"
+    ],
+    "vocabularyFocus": [
+      "Pankreatitis",
+      "Choledocholithiasis",
+      "Lipase",
+      "ERCP",
+      "Papillotomie"
+    ],
+    "tags": [
+      "B2",
+      "Arztbrief",
+      "Pankreatitis",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r02",
+    "title": "Laborbericht: Erhoehte Entzuendungswerte",
+    "type": "Lab report explanation",
+    "text": "Laborbefund vom 15.03.2026\n\nPatientin: Frau Ingrid Schubert, 45 Jahre alt\nAuftrag: Verdacht auf rheumatische Erkrankung\n\nErgebnisse:\n- CRP: 58 mg/l (Norm < 5 mg/l) - deutlich erhoeht\n- BSG 1. Stunde: 45 mm (Norm < 20 mm) - erhoeht\n- Rheumafaktor: 78 IU/ml (Norm < 14 IU/ml) - positiv\n- Anti-CCP-Antikoerper: 42 U/ml (Norm < 7 U/ml) - positiv\n- ANA: 1:320 (Norm < 1:80) - grenzwertig positiv\n- Leukozyten: 12.500 / Mikroliter (Norm 4.000-10.000) - leicht erhoeht\n\nBeurteilung: Die Konstellation aus positivem Rheumafaktor, Anti-CCP-Antikoerpern und erhoehten Entzuendungsparametern ist hochverdaechtig auf eine rheumatoide Arthritis. Eine Ueberweisung zum Rheumatologen wird empfohlen.",
+    "questions": [
+      "Welcher Wert ist am staerksten erhoeht?",
+      "Welcher Antikoerper ist positiv und spricht spezifisch fuer rheumatoide Arthritis?",
+      "Welche Ueberweisung wird empfohlen?",
+      "Wie hoch ist der CRP-Wert der Patientin?"
+    ],
+    "answers": [
+      "CRP mit 58 mg/l (Norm unter 5 mg/l)",
+      "Anti-CCP-Antikoerper",
+      "Ueberweisung zum Rheumatologen",
+      "58 mg/l (Norm unter 5 mg/l)"
+    ],
+    "vocabularyFocus": [
+      "CRP",
+      "BSG",
+      "Rheumafaktor",
+      "Anti-CCP",
+      "rheumatoide Arthritis"
+    ],
+    "tags": [
+      "B2",
+      "Labor",
+      "Rheuma",
+      "Entzuendung"
+    ]
+  },
+  {
+    "id": "r03",
+    "title": "CT-Befund: Schaedel-Hirn-Trauma",
+    "type": "Imaging report excerpt",
+    "text": "CT-Schaedel vom 18.03.2026\n\nPatient: Herr Timo Wagner, 34 Jahre alt\nKlinische Angabe: Zustaende nach Fahrradsturz mit Helm, kurzzeitiger Bewusstseinsverlust, Uebelkeit\n\nTechnik: Natives CT des Schaedels, 5 mm Schichtdicke, axiale und koronare Rekonstruktion\n\nBefund:\n- Keine frische Fraktur der Kalotte oder der Schaedelbasis nachweisbar\n- Keine intrakranielle Blutung, kein Hygrom\n- Hirnstamm und Ventrikelsystem unauffaellig\n- Keine Mittellinienverlagerung\n- Nasennebenhoehlen und Mastoid lufthaltig\n\nBeurteilung: Unauffaelliger CT-Befund des Neurokraniums. Kein Nachweis einer frischen Schaedel-/Hirnverletzung. Bei persistierenden Beschwerden empfehlen wir eine neurologische Verlaufskontrolle.",
+    "questions": [
+      "Welches Ereignis fuehrte zur CT-Untersuchung?",
+      "Was wurde im CT gefunden?",
+      "Welche Strukturen waren unauffaellig?",
+      "Was wird bei persistierenden Beschwerden empfohlen?"
+    ],
+    "answers": [
+      "Ein Fahrradsturz mit kurzzeitigem Bewusstseinsverlust",
+      "Keine frische Schaedel-/Hirnverletzung",
+      "Hirnstamm und Ventrikelsystem",
+      "Eine neurologische Verlaufskontrolle"
+    ],
+    "vocabularyFocus": [
+      "Bewusstseinsverlust",
+      "Fraktur",
+      "intrakranielle Blutung",
+      "Kalotte",
+      "Mittellinienverlagerung"
+    ],
+    "tags": [
+      "B2",
+      "CT",
+      "Neurochirurgie",
+      "Trauma"
+    ]
+  },
+  {
+    "id": "r04",
+    "title": "Packungsbeilage: Ibuprofen 400 mg",
+    "type": "Medication leaflet excerpt",
+    "text": "GEBRAUCHSINFORMATION: Ibuprofen 400 mg Filmtabletten\n\nWirkstoff: Ibuprofen\nAnwendungsgebiete: Leichte bis maessig starke Schmerzen wie Kopfschmerzen, Zahnschmerzen, Regelschmerzen. Fieber.\n\nGegenanzeigen:\n- Ueberempfindlichkeit gegen Ibuprofen\n- Bestehende oder fruehere Magen-Darm-Geschwuere\n- Schwere Leber- oder Nierenfunktionsstoerung\n- Letztes Drittel der Schwangerschaft\n\nDosierung:\n- Erwachsene und Jugendliche ab 12 Jahren: 1 Tablette (400 mg) alle 6-8 Stunden\n- Tageshoechstdosis: 3 Tabletten (1.200 mg)\n- Einnahme nach den Mahlzeiten mit reichlich Wasser\n\nNebenwirkungen:\nHaeufig: Magen-Darm-Beschwerden, Uebelkeit, Sodbrennen\nGelegentlich: Durchfall, Blaehungen\nSelten: Magengeschwuere, Blutungen, allergische Reaktionen\n\nHinweis: Bei gleichzeitiger Einnahme von Blutverduennern oder Kortison steigt das Risiko fuer Magenblutungen. Nicht laenger als 4 Tage ohne aerztlichen Rat einnehmen.",
+    "questions": [
+      "Bei welchen Erkrankungen darf Ibuprofen nicht eingenommen werden?",
+      "Was ist die Tageshoechstdosis?",
+      "Mit welchen Medikamenten steigt das Risiko fuer Magenblutungen?",
+      "Wie lange darf Ibuprofen ohne aerztlichen Rat eingenommen werden?"
+    ],
+    "answers": [
+      "Bei Magen-Darm-Geschwueren und im letzten Drittel der Schwangerschaft",
+      "1.200 mg (3 Tabletten)",
+      "Mit Blutverduennern und Kortison",
+      "Nicht laenger als 4 Tage"
+    ],
+    "vocabularyFocus": [
+      "Packungsbeilage",
+      "Gegenanzeigen",
+      "Tageshoechstdosis",
+      "Nebenwirkungen",
+      "Wechselwirkungen"
+    ],
+    "tags": [
+      "B2",
+      "Medikament",
+      "Ibuprofen",
+      "Packungsbeilage"
+    ]
+  },
+  {
+    "id": "r05",
+    "title": "Klinikrichtlinie: Besuchszeiten und Hygiene",
+    "type": "Hospital policy",
+    "text": "HAUSORDNUNG UND BESUCHSREGELUNG\n\nStand: Januar 2026\n\nSehr geehrte Patientinnen und Patienten, liebe Angehoerige,\n\nUm einen reibungslosen Krankenhausbetrieb zu gewaehrleisten, bitten wir um Beachtung folgender Regelungen:\n\nBesuchszeiten: Taeglich von 14:00 bis 18:00 Uhr. Auf der Intensivstation ist der Besuch nach Absprache mit dem Stationspersonal auf eine Person pro Patient und 30 Minuten beschraenkt.\n\nHygienevorschriften:\n- Vor Betreten der Station: Haendedesinfektion am Eingang\n- Bei Durchfallerkrankungen oder Erkaeltungssymptomen: Besuch vermeiden\n- MRSA-positive Patienten: Schutzkittel und Handschuhe beim Besuch erforderlich\n- Auf Intensivstation: Mund-Nasen-Schutz Pflicht\n\nMitgebrachte Gegenstaende:\nWertsachen, groessere Mengen Bargeld und elektronische Geraete sollten nicht auf dem Zimmer aufbewahrt werden. Das Krankenhaus haftet nicht fuer Verlust.\n\nRauchen: Im gesamten Krankenhaus besteht Rauchverbot.",
+    "questions": [
+      "Von wann bis wann sind die Besuchszeiten auf der Normalstation?",
+      "Was muessen Besucher bei MRSA-positiven Patienten beachten?",
+      "Was ist auf der Intensivstation zur Hygiene verpflichtend?",
+      "Wofuer haftet das Krankenhaus nicht?"
+    ],
+    "answers": [
+      "Taeglich von 14:00 bis 18:00 Uhr",
+      "Schutzkittel und Handschuhe sind erforderlich",
+      "Mund-Nasen-Schutz",
+      "Fuer Verlust von Wertsachen und Bargeld"
+    ],
+    "vocabularyFocus": [
+      "Hausordnung",
+      "Hygienevorschriften",
+      "MRSA",
+      "Schutzkittel",
+      "Haendedesinfektion"
+    ],
+    "tags": [
+      "B2",
+      "Klinik",
+      "Hygiene",
+      "Besuchsregelung"
+    ]
+  },
+  {
+    "id": "r06",
+    "title": "Einwilligungserklaerung: Koloskopie",
+    "type": "Consent form",
+    "text": "EINWILLIGUNGSERKLAERUNG FUER EINE KOLOSKOPIE\n\nPatient: _________________ Datum: _________________\n\nAufklaerender Arzt: Dr. med. Christian Weber\n\nIch wurde von Dr. Weber ausfuehrlich ueber die geplante Untersuchung aufgeklaert und habe die oertliche Aufklaerungsbroschuere erhalten. Mir wurde erklaert:\n\nZweck der Untersuchung:\nDie Koloskopie dient der Untersuchung des gesamten Dickdarms mithilfe eines biegsamen Endoskops. Dabei koennen Schleimhautveraenderungen wie Polypen, Entzuendungen oder Tumore erkannt und gegebenenfalls sofort entfernt werden.\n\nDurchfuehrung:\nDie Untersuchung findet unter einer kurzen Sedierung statt. Der Patient liegt in Seitenlage. Das Endoskop wird ueber den After eingefuehrt und vorsichtig bis zum Blinddarm vorgeschoben.\n\nRisiken:\n- Haeufig: Voellgegefuehl, leichte Blaehungen nach der Untersuchung\n- Selten: Blutungen nach Polypenentfernung (unter 1 Prozent)\n- Sehr selten: Darmverletzung (Perforation, unter 0,05 Prozent)\n- Narkoserisiken: allergische Reaktion, Herz-Kreislauf-Probleme\n\nMir ist bekannt, dass ich zur Vorbereitung eine Darmreinigung durchfuehren muss und die Einnahme von Blutverduennern vorher mit dem Arzt zu besprechen ist.\n\nIch hatte ausreichend Zeit fuer Fragen und erklaere mich mit der Durchfuehrung einverstanden.",
+    "questions": [
+      "Welches Organ wird bei einer Koloskopie untersucht?",
+      "In welcher Position liegt der Patient waehrend der Untersuchung?",
+      "Welches Risiko ist sehr selten und schwerwiegend?",
+      "Welche Vorbereitung muss der Patient vor der Koloskopie durchfuehren?"
+    ],
+    "answers": [
+      "Der Dickdarm",
+      "In Seitenlage",
+      "Darmverletzung (Perforation)",
+      "Eine Darmreinigung"
+    ],
+    "vocabularyFocus": [
+      "Koloskopie",
+      "Sedierung",
+      "Polypen",
+      "Perforation",
+      "Darmreinigung"
+    ],
+    "tags": [
+      "B2",
+      "Einwilligung",
+      "Koloskopie",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r07",
+    "title": "Entlassungsbrief: Herzinsuffizienz",
+    "type": "Discharge summary",
+    "text": "ENTLASSUNGSBRIEF\n\nPatient: Frau Gisela Krause, 78 Jahre\nAufenthalt: 10.04.2026 bis 17.04.2026\nDiagnose: Dekompensierte chronische Herzinsuffizienz (NYHA III)\n\nAnamnese: Die Patientin wurde wegen zunehmender Dyspnoe, peripheren Oedemen und Gewichtszunahme von 5 kg in zwei Wochen eingewiesen.\n\nDiagnostik: Echokardiografie zeigte eine reduzierte linksventrikulaere Ejektionsfraktion von 35 Prozent. Im EKG Sinusrhythmus, keine Ischaemiezeichen.\n\nTherapie und Verlauf:\n- Stossdiurese mit Furosemid i.v., taeglich 1.200 mg, ueber 2 Tage\n- Umstellung auf Torasemid oral 20 mg taeglich\n- Gewichtsreduktion um 4 kg innerhalb von fuenf Tagen\n- Der Blutdruck ist eingestellt auf 125/80 mmHg\n\nMedikation bei Entlassung:\n- Torasemid 20 mg 1-0-0\n- Ramipril 5 mg 1-0-0\n- Bisoprolol 2,5 mg 1-0-0\n- Rivaroxaban 20 mg 1-0-0\n\nEmpfehlungen: Taegliche Gewichtskontrolle, salzarme Kost, koerperliche Schonung, Wiedervorstellung beim Kardiologen in vier Wochen.",
+    "questions": [
+      "Welche EF (Ejektionsfraktion) wurde in der Echokardiografie gemessen?",
+      "Welches Medikament wurde zur Stossdiurese verwendet?",
+      "Wie viel Gewicht hat die Patientin im Krankenhaus verloren?",
+      "Welche Ernaehrungsempfehlung wurde der Patientin mitgegeben?"
+    ],
+    "answers": [
+      "35 Prozent",
+      "Furosemid",
+      "4 kg",
+      "Salzarme Kost"
+    ],
+    "vocabularyFocus": [
+      "Herzinsuffizienz",
+      "Ejektionsfraktion",
+      "Diurese",
+      "Oedeme",
+      "Stossdiurese"
+    ],
+    "tags": [
+      "B2",
+      "Entlassung",
+      "Kardiologie",
+      "Herzinsuffizienz"
+    ]
+  },
+  {
+    "id": "r08",
+    "title": "Ueberweisungsschein: Orthopädie",
+    "type": "Referral letter",
+    "text": "Ueberweisungsschein / Aerztliche Einweisung\n\nZur Vorlage beim: Facharzt fuer Orthopaedie und Unfallchirurgie\n\nPatient: Ralf Sommer, 59 Jahre\nVersichertennummer: A123456789\n\nSehr geehrte Kollegin, sehr geehrter Kollege,\n\nich ueberweise Herrn Sommer aufgrund seit Wochen zunehmender belastungsabhaengiger Schmerzen im linken Kniegelenk. Der Patient berichtet ueber ein Knackgeraeusch bei Beugung und Streckung. Die koerperliche Untersuchung zeigt einen leichten Gelenkerguss und eine schmerzhafte Bewegungseinschraenkung.\n\nRoentgenaufnahmen des linken Kniegelenks in zwei Ebenen wurden bereits durchgefuehrt und zeigen eine mediale Gonarthrose Grad II-III. Die konservative Behandlung mit Physiotherapie und NSAR hat nur unzureichend angeschlagen.\n\nBitte pruefen Sie die Indikation fuer eine Kniegelenkspiegelung oder gegebenenfalls die Implantation einer Knie-TEP (Totalendoprothese).\n\nMit freundlichen kollegialen Gruessen\nDr. med. Stefan Lehmann, Hausarzt",
+    "questions": [
+      "Welche Untersuchung wurde bereits durchgefuehrt?",
+      "Welche Diagnose wurde mittels Roentgen gestellt?",
+      "Welche konservative Behandlung hat nicht ausreichend geholfen?",
+      "Welche operative Option soll der Orthopaede pruefen?"
+    ],
+    "answers": [
+      "Roentgenaufnahmen des linken Kniegelenks in zwei Ebenen",
+      "Mediale Gonarthrose Grad II-III",
+      "Physiotherapie und NSAR",
+      "Eine Kniegelenkspiegelung oder Knie-TEP"
+    ],
+    "vocabularyFocus": [
+      "Ueberweisung",
+      "Gonarthrose",
+      "Gelenkerguss",
+      "Endoprothese",
+      "NSAR"
+    ],
+    "tags": [
+      "B2",
+      "Ueberweisung",
+      "Knie",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r09",
+    "title": "Merkblatt: Vorbereitung zur MRT-Untersuchung",
+    "type": "Patient information sheet",
+    "text": "INFORMATIONEN ZUR MAGNETRESONANZTOMOGRAFIE (MRT)\n\nLiebe Patientin, lieber Patient,\n\nSie wurden von Ihrem Arzt zu einer MRT-Untersuchung ueberwiesen. Bitte beachten Sie folgende Hinweise:\n\nVorbereitung:\n- Sie duerfen vor der Untersuchung normal essen und trinken\n- Bitte keine Schmuckstuecke, Piercings oder Uhren tragen\n- Entfernen Sie gegebenenfalls Ihr Hoergeraet und Ihre Zahnprothese\n- Tragen Sie bequeme Kleidung ohne Metallteile\n\nWaehrend der Untersuchung:\n- Sie liegen auf einer beweglichen Liege, die in die Roehre gefahren wird\n- Die Untersuchung dauert je nach Fragestellung 20 bis 40 Minuten\n- Es ist sehr laut, Sie erhalten einen Gehoerschutz oder Kopfhoerer mit Musik\n- Sie koennen ueber eine Sprechanlage jederzeit mit dem Personal kommunizieren\n\nKontraindikationen (absolute):\n- Herzschrittmacher (nicht MRT-kompatibel)\n- Metallische Fremdkoerper im Auge\n- Cochlea-Implantat (nicht MRT-kompatibel)\n\nKontrastmittel: Falls eine Kontrastmittelgabe erforderlich ist, erhalten Sie vor der Untersuchung einen venoesen Zugang und werden ueber moegliche Nebenwirkungen aufgeklaert.",
+    "questions": [
+      "Darf der Patient vor der MRT-Untersuchung essen?",
+      "Wie lange dauert eine MRT-Untersuchung in der Regel?",
+      "Welche absolute Kontraindikation wird genannt?",
+      "Wozu dient die Sprechanlage waehrend der Untersuchung?"
+    ],
+    "answers": [
+      "Ja, normales Essen und Trinken ist erlaubt",
+      "20 bis 40 Minuten",
+      "Herzschrittmacher (nicht MRT-kompatibel)",
+      "Zur Kommunikation mit dem Personal"
+    ],
+    "vocabularyFocus": [
+      "Magnetresonanztomografie",
+      "Kontraindikation",
+      "Kontrastmittel",
+      "Gehoerschutz",
+      "Sprechanlage"
+    ],
+    "tags": [
+      "B2",
+      "MRT",
+      "Patienteninfo",
+      "Radiologie"
+    ]
+  },
+  {
+    "id": "r10",
+    "title": "Krankenkassenmitteilung: AU-Bescheinigung",
+    "type": "Insurance/admin document",
+    "text": "Techniker Krankenkasse\nServicecenter, 22305 Hamburg\n\nKundennummer: 123456789\nDatum: 20.04.2026\n\nArbeitsunfaehigkeitsbescheinigung (AU)\n\nSehr geehrte Versicherte, sehr geehrter Versicherter,\n\nwir bestaetigen den Eingang Ihrer Arbeitsunfaehigkeitsbescheinigung.\n\nVersicherte Person: Laura Schmidt\nMitgliedsnummer: 987654321\n\nZeitraum der Arbeitsunfaehigkeit: 14.04.2026 bis 25.04.2026\nAusstellende Praxis: Praxis Dr. Schubert, Allgemeinmedizin\n\nWichtige Hinweise:\n1. Ihre AU-Bescheinigung wurde elektronisch an Ihren Arbeitgeber uebermittelt.\n2. Sollte die Arbeitsunfaehigkeit ueber den 25.04.2026 hinaus andauern, lassen Sie sich bitte vor Ablauf eine Folgebescheinigung ausstellen.\n3. Das Krankengeld wird ab dem 22.04.2026 gezahlt.\n4. Bitte reichen Sie die AU spaetestens innerhalb einer Woche nach Ausstellung bei Ihrer Krankenkasse ein.",
+    "questions": [
+      "Wie wird die AU-Bescheinigung an den Arbeitgeber uebermittelt?",
+      "Ab wann wird das Krankengeld gezahlt?",
+      "Bis wann muss die AU bei der Krankenkasse eingereicht werden?",
+      "Was muss die Versicherte tun, wenn sie laenger krank ist?"
+    ],
+    "answers": [
+      "Elektronisch",
+      "Ab dem 22.04.2026",
+      "Spaetestens innerhalb einer Woche nach Ausstellung",
+      "Eine Folgebescheinigung ausstellen lassen"
+    ],
+    "vocabularyFocus": [
+      "Arbeitsunfaehigkeit",
+      "AU-Bescheinigung",
+      "Krankengeld",
+      "elektronische Uebermittlung",
+      "Entgeltfortzahlung"
+    ],
+    "tags": [
+      "B2",
+      "Krankenkasse",
+      "AU",
+      "Versicherung"
+    ]
+  },
+  {
+    "id": "r11",
+    "title": "Leitlinie: Ambulante Behandlung bei Harnwegsinfekt",
+    "type": "Clinical guideline summary",
+    "text": "S3-Leitlinie: Unkomplizierte Harnwegsinfektion bei Erwachsenen\n\nStand: Dezember 2025 (Auszug)\n\nDefinition: Eine unkomplizierte Harnwegsinfektion liegt vor bei ansonsten gesunden, nicht schwangeren Frauen mit typischen Symptomen wie Dysurie, Pollakisurie und suprapubischen Schmerzen.\n\nErregerspektrum: In 70-80 Prozent Escherichia coli, gefolgt von Klebsiella pneumoniae, Proteus mirabilis und Staphylococcus saprophyticus.\n\nDiagnostik:\n- Urin-Schnelltest (Nitrit und Leukozytenesterase)\n- Urinkultur nur bei Versagen der Ersttherapie, Rezidiven oder Schwangeren\n\nTherapie der 1. Wahl:\n- Nitrofurantoin 100 mg retard 3 x taeglich fuer 5 Tage\n- Alternative: Fosfomycin 3 g als Einmaldosis\n\nNicht empfohlen: Cotrimoxazol bei Resistenzlage ueber 20 Prozent, Fluorchinolone nur noch als Reserveantibiotikum.\n\nProphylaxe: Ausreichende Trinkmenge (mindestens 1,5 Liter pro Tag), Blaettersamenextrakt, postmenopausale Oestriol-Lokaltherapie.",
+    "questions": [
+      "Welche Bakterienart verursacht die meisten Harnwegsinfektionen?",
+      "Welches Antibiotikum wird als erste Wahl empfohlen?",
+      "Welche Alternative gibt es als Einmaldosis?",
+      "Was wird zur Prophylaxe empfohlen?"
+    ],
+    "answers": [
+      "Escherichia coli (70-80 Prozent)",
+      "Nitrofurantoin",
+      "Fosfomycin 3 g als Einmaldosis",
+      "Ausreichende Trinkmenge von mindestens 1,5 Litern pro Tag"
+    ],
+    "vocabularyFocus": [
+      "Harnwegsinfektion",
+      "Nitrofurantoin",
+      "Fosfomycin",
+      "Dysurie",
+      "Leitlinie"
+    ],
+    "tags": [
+      "B2",
+      "Leitlinie",
+      "Harnwegsinfekt",
+      "Urologie"
+    ]
+  },
+  {
+    "id": "r12",
+    "title": "Notaufnahmeprotokoll: Synkope unklarer Genese",
+    "type": "Emergency department note",
+    "text": "NOTAUFNAHME - AERZTLICHER ERSTBERICHT\n\nDatum: 22.04.2026, 14:35 Uhr\n\nPatient: Hans-Peter Gross, 66 Jahre\nEintreffart: Mit Rettungswagen\n\nVorstellungsgrund: Synkope am Arbeitsplatz ohne Fremdeinwirkung.\n\nAnamnese: Der Patient habe ploetzliches Schwitzen und Schwarzwerden vor Augen verspuert, dann sei er bewusstlos umgefallen. Ein Kollege fand ihn nach etwa fuenf Minuten. Bei Eintreffen des Rettungsdienstes war der Patient wach und orientiert.\n\nVorerkrankungen: Arterielle Hypertonie, Diabetes mellitus Typ 2, Z.n. Myokardinfarkt 2021\nMedikamente: Ramipril 5 mg, Metformin 1000 mg, ASS 100 mg\n\nKoerperliche Untersuchung:\n- Blutdruck: 100/60 mmHg (liegend), 85/55 mmHg (stehend) - orthostatische Dysregulation\n- Puls: 88/min, regelmaessig\n- EKG: Sinusrhythmus, kein ST-Strecken-Infarkt\n- Neurologie: unauffaellig\n\nBeurteilung: Synkope bei orthostatischer Dysregulation. Medikamentoese Neueinstellung bei Blutdruckschwankungen erforderlich. Der Patient bleibt auf der internistischen Observationseinheit zur 24-Stunden-Ueberwachung.",
+    "questions": [
+      "Was fuehrte zur Synkope des Patienten?",
+      "Welcher Blutdruck wurde im Stehen gemessen?",
+      "Welche Vorerkrankung hat der Patient?",
+      "Wie lange bleibt der Patient zur Ueberwachung?"
+    ],
+    "answers": [
+      "Eine orthostatische Dysregulation",
+      "85/55 mmHg",
+      "Arterielle Hypertonie, Diabetes mellitus Typ 2, Z.n. Myokardinfarkt",
+      "24 Stunden auf der internistischen Observationseinheit"
+    ],
+    "vocabularyFocus": [
+      "Synkope",
+      "orthostatische Dysregulation",
+      "Observationseinheit",
+      "Bewusstlosigkeit",
+      "Blutdruckschwankungen"
+    ],
+    "tags": [
+      "B2",
+      "Notaufnahme",
+      "Synkope",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r13",
+    "title": "Operationsbericht: Appendektomie laparoskopisch",
+    "type": "Operation report excerpt",
+    "text": "OPERATIONSBERICHT\n\nPatientin: Julia Neumann, 22 Jahre\nDatum: 25.04.2026\nOperation: Laparoskopische Appendektomie\n\nPraeoperative Diagnose: Akute Appendizitis\nPostoperative Diagnose: Akute phlegmoneuse Appendizitis\n\nOperationsverlauf:\nNach Hautdesinfektion und steriler Abdeckung wurde eine Veress-Nadel infraumbilikal eingebracht und ein Kapnoperitoneum mit 15 mmHg angelegt. Es erfolgte die Einlage einer 10 mm Optik-Trokar-Huelle infraumbilikal. Zwei weitere 5 mm Trokare wurden im rechten Unterbauch und suprapubisch platziert.\n\nBei der Inspektion zeigte sich der Appendix vermiformis geschwollen, gerotet und mit Fibrinbelag. Es bestand kein Hinweis auf eine Perforation. Der Appendix wurde mit einem linearen Klammernahrtgeraet abgesetzt, ueber den Trokarkanal in einem Bergebeutel geborgen und entfernt.\n\nBlutstillung: Sorgfaeltig, keine aktive Blutung\nVerschluss: Faszienverschluss infraumbilikal mit resorbierbaren Einzelknopfnaehten, Hautverschluss mit Hautkleber.\n\nDauer: 38 Minuten (Schnitt-Naht-Zeit)\nBlutverlust: minimal (unter 10 ml)\nKomplikationen: keine",
+    "questions": [
+      "Welche Diagnose wurde praeoperativ gestellt?",
+      "Welche OP-Technik wurde verwendet?",
+      "Wie wurde der Appendix nach der Entfernung aus der Bauchhoehle transportiert?",
+      "In welchem Zustand war der Appendix bei der Inspektion?"
+    ],
+    "answers": [
+      "Akute Appendizitis",
+      "Laparoskopisch",
+      "In einem Bergebeutel",
+      "Geschwollen, gerotet und mit Fibrinbelag"
+    ],
+    "vocabularyFocus": [
+      "Appendektomie",
+      "laparoskopisch",
+      "Kapnoperitoneum",
+      "Trokar",
+      "Klammernahrtgeraet"
+    ],
+    "tags": [
+      "B2",
+      "Operationsbericht",
+      "Appendizitis",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "r14",
+    "title": "Visitennotiz: Akute Exazerbation COPD",
+    "type": "Ward round note",
+    "text": "STATIONSVISITE - 26.04.2026\n\nPatient: Bernd Hartmann, 72 Jahre, Zimmer 402\nStation: 4A - Pneumologie\n\nAktuelle Situation:\nDer Patient wurde vor 3 Tagen mit akuter Exazerbation einer COPD Gold III bei V.a. bronchopulmonale Infektion aufgenommen. Klinisch war der Patient zuvor zunehmend dyspnoisch, mit produktivem Husten und purulentem Auswurf.\n\nHeutiger Status:\n- Bewusstsein: wach, orientiert\n- Temperatur: 37,2 Grad (ruecklaeufig, Eintritt 38,6 Grad)\n- SpO2: 94 Prozent Raumluft (Eintritt 88 Prozent)\n- Auskultation: beidseits feuchte RG\n- Blutgasanalyse: paO2 72 mmHg, paCO2 42 mmHg\n\nTherapie:\n- Antibiotika: Amoxicillin/Clavulansaeure 875/125 mg 1-1-1\n- Inhalation: Salbutamol plus Ipratropium 4 x taeglich\n- Prednisolon: 40 mg taeglich oral, Ausschleichen geplant\n- Sauerstoff: 2 l/min ueber Nasenbrille bei Bedarf\n\nPlan: Physiotherapie fuer Atemuebungen, Lungenfunktion vor Entlassung, Entlassung geplant in 4-5 Tagen.",
+    "questions": [
+      "Welche Sauerstoffsaettigung hatte der Patient bei Aufnahme?",
+      "Welches Antibiotikum bekommt der Patient?",
+      "Welche Inhalationsmedikamente erhaelt der Patient taeglich?",
+      "Welche Therapie wird nach der Entlassung umgestellt?"
+    ],
+    "answers": [
+      "88 Prozent",
+      "Amoxicillin/Clavulansaeure",
+      "Salbutamol plus Ipratropium 4 x taeglich",
+      "Von oralem Prednisolon auf inhalatives Kortison"
+    ],
+    "vocabularyFocus": [
+      "Exazerbation",
+      "COPD",
+      "purulent",
+      "dyspnoisch",
+      "Auskultation"
+    ],
+    "tags": [
+      "B2",
+      "Visite",
+      "COPD",
+      "Pneumologie"
+    ]
+  },
+  {
+    "id": "r15",
+    "title": "Pflegeuebergabe: Dekubitusversorgung",
+    "type": "Nursing handover note",
+    "text": "PFLICHTENUEBERGABE - FRUEHSCHICHT\n\nDatum: 28.04.2026, 06:30 Uhr\n\nPatient: Frau Edeltraud Koenig, 84 Jahre, Zimmer 208\n\nAktueller Zustand:\nFrau Koenig ist nach Schenkelhalsfraktur vor 14 Tae gen operiert worden. Die Mobilisation ist langsam, sie sitzt taeglich fuer 30 Minuten im Rollstuhl.\n\nDekubitus-Situation:\n- Ein Dekubitus Grad 2 am Kreuzbein, 3 x 4 cm, Wundrand rot, wenig Exsudat\n- Versorgung: Taeglicher Verband mit Hydrokolloid, Wechsel um 10:00 Uhr\n- Entlastung: 3-Stunden-Lagerung, spezielle Dekubitusmatratze\n\nErnaehrung:\n- Trinkmenge: ca. 600 ml pro Tag (zu wenig, bitte an Trinken erinnern)\n- Kostform: Weiche Kost, vorgegebene Portionen werden nur zur Haelfte gegessen\n- Gewicht: stabil bei 58 kg\n\nAusscheidung:\n- Stuhlgang: letzte Entleerung vor 2 Tagen, leichte Obstipationsneigung\n- Massnahme: Macrogol nach Bedarf, gestern gegeben\n\nWichtige Termine:\n- Heute 11:00 Uhr: Physiotherapie\n- Morgen 09:00 Uhr: Wundkontrolle durch den Arzt\n- Uebermorgen ggf. Entlassungsplanung",
+    "questions": [
+      "Welchen Dekubitus-Grad hat Frau Koenig am Kreuzbein?",
+      "Wie oft wird die Lagerung durchgefuehrt?",
+      "Welches Problem besteht bei der Ernaehrung?",
+      "Welches Abfuehrmittel bekommt die Patientin bei Bedarf?"
+    ],
+    "answers": [
+      "Dekubitus Grad 2",
+      "Alle 3 Stunden",
+      "Zu geringe Trinkmenge (ca. 600 ml pro Tag)",
+      "Macrogol"
+    ],
+    "vocabularyFocus": [
+      "Dekubitus",
+      "Hydrokolloid",
+      "Lagerung",
+      "Exsudat",
+      "Obstipation"
+    ],
+    "tags": [
+      "B2",
+      "Pflege",
+      "Dekubitus",
+      "Uebergabe"
+    ]
+  },
+  {
+    "id": "r16",
+    "title": "Reha-Empfehlung: Nach Knie-TEP",
+    "type": "Rehabilitation recommendation",
+    "text": "REHA-EMPFEHLUNG\n\nPatient: Klaus Richter, 67 Jahre\nDiagnose: Z.n. Implantation einer Knie-Totalendoprothese rechts\nDatum: 30.04.2026\n\nSehr geehrte Reha-Klinik,\n\nHerr Richter wurde am 22.04.2026 mit einer Knie-TEP rechts versorgt. Der postoperative Verlauf war komplikationslos. Der Patient ist mobil mit zwei Unterarmgehstuetzen und hat eine Beugung von 0-0-90 Grad erreicht. Die Wundverhaeltnisse sind reizlos.\n\nIndikation fuer die Reha:\nAnschlussheilbehandlung nach Knie-TEP zur Verbesserung der Beweglichkeit, des Muskelaufbaus und der Gangschule.\n\nFunktionelle Einschraenkungen:\n- Streckdefizit von 5 Grad\n- Kraftgrad M4 fuer Quadrizeps und ischiokrurale Muskulatur\n- Treppensteigen nur mit Festhalten am Gelaender moeglich\n\nReha-Ziele:\n1. Steigerung der Beugung auf 0-0-120 Grad\n2. Vollstaendige Streckfaehigkeit\n3. Sicheres Treppensteigen ohne Hilfsmittel\n4. Gangbild ohne Unterarmgehstuetzen innerhalb von 2 Wochen\n\nBelastbarkeit: Vollbelastung des rechten Beines erlaubt.\nBegleiterkrankungen: Arterielle Hypertonie, gut eingestellt mit Ramipril 5 mg.\n\nEmpfohlene Dauer: 3 Wochen stationaer.",
+    "questions": [
+      "Welche Operation hatte Herr Richter?",
+      "Welche Beugung hat der Patient aktuell erreicht?",
+      "Welches Streckdefizit besteht noch?",
+      "Wie lange soll die Reha dauern?"
+    ],
+    "answers": [
+      "Knie-Totalendoprothese rechts",
+      "0-0-90 Grad",
+      "5 Grad",
+      "3 Wochen stationaer"
+    ],
+    "vocabularyFocus": [
+      "Totalendoprothese",
+      "Beugung",
+      "Streckdefizit",
+      "Gangschule",
+      "Anschlussheilbehandlung"
+    ],
+    "tags": [
+      "B2",
+      "Reha",
+      "Knie",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r17",
+    "title": "Nachsorgebrief: Hautkrebs-Nachsorge",
+    "type": "Follow-up letter",
+    "text": "NACHSORGEBRIEF\n\nPatient: Helmut Fischer, 55 Jahre\nDiagnose: Malignes Melanom, linke Schulter, Stadium IB (pT2a, N0, M0)\nDatum: 02.05.2026\n\nSehr geehrter Herr Kollege,\n\nwir haben Herrn Fischer heute zur dermatologischen Nachsorge gesehen. Die Erstversorgung des malignen Melanoms an der linken Schulter erfolgte im Januar 2026 mit einer weiten Exzision und Sicherheitsabstand von 2 cm. Die Wundheilung war primaer.\n\nHeutiger Befund:\n- Kein Anhalt fuer Lokalrezidiv (Narbe reizlos, kein tastbarer Knoten)\n- Keine pathologischen Lymphknoten palpabel (Axilla links und rechts)\n- Narben- und Hautstatus: sonnenlichtexponierte Areale, mehrere Schaedigungsanzeichen\n\nEmpfehlungen:\n1. Naechste Nachsorgeuntersuchung in 3 Monaten\n2. Taeglicher Lichtschutz LSF 50+ auch bei bedecktem Himmel\n3. Selbstuntersuchung der Haut einmal monatlich\n4. Keine Sonnenstudios oder intensiver Sonnenbaden, auch nicht im Urlaub\n5. Sonografiekontrolle der regionaeren Lymphknoten in 6 Monaten\n\nBitte ueberweisen Sie Herrn Fischer zur naechsten Routine-Kontrolle an unsere Hautklinik.",
+    "questions": [
+      "Welche Krebsart wurde bei Herrn Fischer diagnostiziert?",
+      "Wie gross war der Sicherheitsabstand bei der Exzision?",
+      "In welchem Abstand soll die naechste Nachsorge stattfinden?",
+      "Welcher Lichtschutzfaktor wird empfohlen?"
+    ],
+    "answers": [
+      "Malignes Melanom an der linken Schulter",
+      "2 cm",
+      "In 3 Monaten",
+      "LSF 50+ auch bei bedecktem Himmel"
+    ],
+    "vocabularyFocus": [
+      "Melanom",
+      "Exzision",
+      "Nachsorge",
+      "Lichtschutz",
+      "Lokalrezidiv"
+    ],
+    "tags": [
+      "B2",
+      "Nachsorge",
+      "Hautkrebs",
+      "Dermatologie"
+    ]
+  },
+  {
+    "id": "r18",
+    "title": "Oeffentlicher Aushang: Grippeschutzimpfung",
+    "type": "Public health notice",
+    "text": "AKTION: GRIPPESCHUTZIMPFUNG 2026\n\nGesundheitsamt der Stadt Koeln\nStand: Oktober 2026\n\nLiebe Mitbuergerinnen und Mitbuerger,\n\ndie diesjaehrige Grippesaison steht bevor. Die Staendige Impfkommission (STIKO) empfiehlt die saisonale Grippeschutzimpfung folgenden Personengruppen:\n\n- Personen ab 60 Jahren\n- Schwangere ab dem 2. Drittel der Schwangerschaft\n- Personen mit chronischen Grunderkrankungen (Herz-Kreislauf, Atemwege, Nieren, Diabetes)\n- medizinisches Personal und Pflegekraefte\n- Bewohner von Alten- und Pflegeheimen\n\nDie Impfung ist kostenlos und kann bei Ihrem Hausarzt oder in teilnehmenden Apotheken durchgefuehrt werden.\n\nWichtige Informationen:\n- Optimaler Impfzeitpunkt: Oktober bis November\n- Impfschutz beginnt ca. 10 bis 14 Tage nach der Impfung\n- Die Impfung enthaelt abgetoetete Viren, eine Erkrankung durch die Impfung ist nicht moeglich\n- Nebenwirkungen: lokale Reaktionen an der Einstichstelle, selten leichte Allgemeinsymptome fuer 1-2 Tage\n- Bei akuten fieberhaften Infekten wird die Impfung verschoben",
+    "questions": [
+      "Welche Personengruppe wird als erste genannt?",
+      "Wann ist der optimale Impfzeitpunkt?",
+      "Wie lange dauert es bis zum Impfschutz?",
+      "Kann man durch die Impfung an Grippe erkranken?"
+    ],
+    "answers": [
+      "Personen ab 60 Jahren",
+      "Oktober bis November",
+      "Ca. 10 bis 14 Tage",
+      "Nein, die Impfung enthaelt abgetoetete Viren"
+    ],
+    "vocabularyFocus": [
+      "Grippeschutzimpfung",
+      "STIKO",
+      "Impfschutz",
+      "abgetoetete Viren",
+      "Nebenwirkungen"
+    ],
+    "tags": [
+      "B2",
+      "Oeffentlichkeit",
+      "Grippe",
+      "Impfung"
+    ]
+  },
+  {
+    "id": "r19",
+    "title": "Terminvorbereitung: Magenspiegelung",
+    "type": "Appointment instruction sheet",
+    "text": "VORBEREITUNG ZUR MAGENSPIEGELUNG (Oesophagogastroduodenoskopie)\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nIhr Termin zur Magenspiegelung wurde fuer den 15.05.2026 um 09:00 Uhr vereinbart. Bitte beachten Sie folgende Vorbereitungshinweise:\n\nEssen und Trinken:\n- Am Tag vor der Untersuchung: Leichte Kost zum Mittagessen, ab 18:00 Uhr nichts mehr essen\n- Am Untersuchungstag: Ab 06:00 Uhr nichts mehr trinken, auch kein Wasser\n- Kein Kaugummi, keine Bonbons am Untersuchungstag\n\nMedikamente:\n- Blutverduennende Medikamente (Marcumar, Apixaban, ASS) muessen in Absprache mit dem verschreibenden Arzt abgesetzt werden\n- Ihre anderen Medikamente duerfen Sie morgens mit einem kleinen Schluck Wasser einnehmen\n\nWas Sie mitbringen muessen:\n- Versichertenkarte und Ueberweisungsschein\n- Fruehere Befunde, falls vorhanden\n- Eine Begleitperson (da Sie nach der Untersuchung wegen der Sedierung nicht Auto fahren duerfen)\n\nNach der Untersuchung:\n- Sie bleiben ca. 30 Minuten im Aufwachraum\n- Sie duerfen bis zum naechsten Tag kein Fahrzeug fuehren\n- Sie koennen normal essen, sobald das Betaubungsspray im Rachen nachgelassen hat",
+    "questions": [
+      "Bis wann duerfen Sie vor der Magenspiegelung essen?",
+      "Was muessen Sie ganz am Untersuchungstag ab 06:00 Uhr vermeiden?",
+      "Warum benoetigen Sie eine Begleitperson?",
+      "Wie lange duerfen Sie nach der Untersuchung kein Fahrzeug fuehren?"
+    ],
+    "answers": [
+      "Am Tag vor der Untersuchung ab 18:00 Uhr nichts mehr essen",
+      "Nichts mehr trinken, auch kein Wasser",
+      "Weil Sie nach der Sedierung nicht Auto fahren duerfen",
+      "Bis zum naechsten Tag"
+    ],
+    "vocabularyFocus": [
+      "Magenspiegelung",
+      "Sedierung",
+      "Begleitperson",
+      "Blutverduenner",
+      "Aufwachraum"
+    ],
+    "tags": [
+      "B2",
+      "Termin",
+      "Magenspiegelung",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r20",
+    "title": "Patientenbeschwerde: Wartezeit in der Praxis",
+    "type": "Patient complaint letter",
+    "text": "Betreff: Beschwerde ueber unzumutbare Wartezeit in Ihrer Praxis\n\nSehr geehrte Frau Dr. Martin,\n\nam 25.04.2026 hatte ich um 14:30 Uhr einen Termin in Ihrer Praxis fuer eine Routine-Blutdruckkontrolle. Ich war puenktlich und habe an der Anmeldung eingecheckt. Trotz meines gebuchten Termins musste ich insgesamt 2 Stunden und 15 Minuten warten, bis ich aufgerufen wurde.\n\nIch moechte darauf hinweisen, dass ich als berufstaetiger Patient meine Mittagspause fuer diesen Termin geopfert habe. Die ueberlaenge Wartezeit hat dazu gefuehrt, dass ich zu spaet zurueck zur Arbeit kam. Auch habe ich keine Information oder Entschuldigung fuer die Verzoegerung erhalten.\n\nIch bin seit ueber zehn Jahren Patientin in Ihrer Praxis und war bisher zufrieden. Sollte sich an der Terminorganisation nichts aendern, werde ich mich nach einer anderen Praxis umsehen muessen.\n\nIch bitte um eine Rueckmeldung und eine Verbesserung der Terminorganisation.\n\nMit freundlichen Gruessen\nSabine Werner",
+    "questions": [
+      "Welche Uhrzeit hatte die Patientin ihren Termin?",
+      "Wie lange musste die Patientin warten?",
+      "Welche Konsequenz hatte die Wartezeit fuer die Patientin?",
+      "Was droht die Patientin an, falls sich nichts aendert?"
+    ],
+    "answers": [
+      "14:30 Uhr",
+      "2 Stunden und 15 Minuten",
+      "Sie kam zu spaet zurueck zur Arbeit",
+      "Sie wird sich nach einer anderen Praxis umsehen"
+    ],
+    "vocabularyFocus": [
+      "Beschwerde",
+      "Wartezeit",
+      "Terminorganisation",
+      "unzumutbar",
+      "Rueckmeldung"
+    ],
+    "tags": [
+      "B2",
+      "Beschwerde",
+      "Patient",
+      "Praxisorganisation"
+    ]
+  },
+  {
+    "id": "r21",
+    "title": "Arztbrief: Aufnahme bei tiefer Beinvenenthrombose",
+    "type": "Arztbrief excerpt",
+    "text": "Arztbrief vom 05.05.2026\n\nPatient: Frau Daniela Gross, 44 Jahre alt\nDiagnose: Tiefe Beinvenenthrombose (TVT) des linken Beins\n\nAufnahmegrund: Die Patientin stellte sich mit seit drei Tagen zunehmender Schwellung, Schweregefuehl und roetlicher Verfaerbung des linken Unterschenkels vor. Ein Trauma wurde verneint. Die Patientin ist beruflich als Buerokauffrau taetig mit ueberwiegend sitzender Taetigkeit. Eine Langstreckenflugreise lag vier Wochen zurueck.\n\nDiagnostik: Die Duplexsonografie des linken Beins zeigte eine Thrombose der Vena poplitea und der Vena femoralis superficialis. Die D-Dimere waren mit 4,2 mg/l (Norm < 0,5 mg/l) deutlich erhoeht.\n\nTherapie: Einleitung einer therapeutischen Antikoagulation mit Enoxaparin 1 mg pro kg Koerpergewicht zweimal taeglich s.c. Ueberlappende Einstellung auf Phenprocoumon geplant. Kompressionsversorgung Klasse 2 wurde angepasst.",
+    "questions": [
+      "Welche Diagnose wurde bei Frau Gross gestellt?",
+      "Welche Untersuchung bestaetigte die Diagnose?",
+      "Welcher Laborwert war deutlich erhoeht?",
+      "Welches Medikament wurde zur Akuttherapie eingesetzt?"
+    ],
+    "answers": [
+      "Tiefe Beinvenenthrombose des linken Beins",
+      "Duplexsonografie",
+      "Die D-Dimere mit 4,2 mg/l",
+      "Enoxaparin"
+    ],
+    "vocabularyFocus": [
+      "Thrombose",
+      "Duplexsonografie",
+      "D-Dimere",
+      "Antikoagulation",
+      "Enoxaparin"
+    ],
+    "tags": [
+      "B2",
+      "Arztbrief",
+      "Thrombose",
+      "Gefaessmedizin"
+    ]
+  },
+  {
+    "id": "r22",
+    "title": "Laborbericht: Schilddruesenwerte bei Ueberfunktion",
+    "type": "Lab report explanation",
+    "text": "Laborbefund vom 08.05.2026\n\nPatient: Herr Joerg Kaiser, 38 Jahre alt\nAuftrag: Verdacht auf Schilddruesenueberfunktion\n\nKlinische Angabe: Gewichtsverlust trotz normalen Appetits, Schwitzen, Herzklopfen, Nervositaet, Zittern der Haende seit ca. 4 Wochen.\n\nErgebnisse:\n- TSH: < 0,01 mU/l (Norm 0,4 - 4,0 mU/l) - supprimiert\n- fT3: 8,9 pmol/l (Norm 3,1 - 6,8 pmol/l) - erhoeht\n- fT4: 28,5 pmol/l (Norm 11,0 - 23,0 pmol/l) - erhoeht\n- TPO-Antikoerper: 340 IU/ml (Norm < 34 IU/ml) - stark erhoeht\n- TRAK: 12,8 IU/l (Norm < 1,5 IU/l) - deutlich positiv\n\nBeurteilung: Es liegt eine manifeste Hyperthyreose vor. Der positive TRAK und die erhoeh ten TPO-Antikoerper sprechen fuer einen Morbus Basedow. Eine Schilddruesensonografie und eine medikamentoese Einstellung mit Thyreostatika werden empfohlen.",
+    "questions": [
+      "Welcher TSH-Wert wurde gemessen?",
+      "Welche Antikoerper sind stark erhoeht?",
+      "Welche Autoimmunerkrankung der Schilddruese wird vermutet?",
+      "Welche Therapie wird empfohlen?"
+    ],
+    "answers": [
+      "TSH unter 0,01 mU/l (supprimiert)",
+      "TPO-Antikoerper (340 IU/ml)",
+      "Morbus Basedow",
+      "Medikamentoese Einstellung mit Thyreostatika"
+    ],
+    "vocabularyFocus": [
+      "Hyperthyreose",
+      "TSH",
+      "Morbus Basedow",
+      "TRAK",
+      "Thyreostatika"
+    ],
+    "tags": [
+      "B2",
+      "Labor",
+      "Schilddruese",
+      "Endokrinologie"
+    ]
+  },
+  {
+    "id": "r23",
+    "title": "Roentgen-Thorax: V.a. Pneumonie",
+    "type": "Imaging report excerpt",
+    "text": "ROENTGEN-THORAX IN ZWEI EBENEN\n\nPatient: Herr Albert Ziegler, 75 Jahre\nDatum: 10.05.2026\nFragestellung: V.a. Pneumonie bei Husten und Fieber seit 4 Tagen\n\nTechnik: Roentgen-Thorax pa und seitlich, 125 kV, automatische Belichtung\n\nBefund:\n- Im rechten Unterlappen zeigt sich eine inhomogene, flaechige Verschattung mit unscharfer Begrenzung\n- Der rechte Sinus phrenicocostalis ist leicht ergossen, minimaler Pleuraerguss\n- Das Mediastinum ist mittelstaendig und nicht verbreitert\n- Der linke Lungenfluegel ist unauffaellig belueftet, kein Infiltrat\n- Das Herz ist altersentsprechend konfiguriert, keine Staungszeichen\n- Kein Pneumothorax\n\nBeurteilung: Infiltrat im rechten Unterlappen, vereinbar mit einer lappenpneumonie. Bei klinischem Verdacht auf Pneumonie Beginn einer kalkulierten Antibiotikatherapie empfohlen.",
+    "questions": [
+      "In welchem Lungenbereich zeigt sich die Verschattung?",
+      "Was zeigt sich im rechten Sinus phrenicocostalis?",
+      "Welche Beurteilung wird gegeben?",
+      "Welche Therapie wird empfohlen?"
+    ],
+    "answers": [
+      "Im rechten Unterlappen",
+      "Ein minimaler Pleuraerguss",
+      "Infiltat im rechten Unterlappen, vereinbar mit einer Lappenpneumonie",
+      "Kalkulierte Antibiotikatherapie"
+    ],
+    "vocabularyFocus": [
+      "Pneumonie",
+      "Verschattung",
+      "Pleuraerguss",
+      "Infiltrat",
+      "Lappenpneumonie"
+    ],
+    "tags": [
+      "B2",
+      "Roentgen",
+      "Pneumonie",
+      "Radiologie"
+    ]
+  },
+  {
+    "id": "r24",
+    "title": "Packungsbeilage: Amoxicillin 500 mg",
+    "type": "Medication leaflet excerpt",
+    "text": "GEBRAUCHSINFORMATION: Amoxicillin 500 mg Hartkapseln\n\nWirkstoff: Amoxicillin-Trihydrat\nAnwendungsgebiete: Amoxicillin ist ein Antibiotikum aus der Gruppe der Aminopenicilline. Es wird angewendet bei bakteriellen Infektionen wie Mittelohrentzuendung, Mandelentzuendung, Bronchitis, Harnwegsinfektionen und Borreliose.\n\nGegenanzeigen:\n- Allergie gegen Penicillin oder andere Beta-Lactam-Antibiotika\n- Infektioese Mononukleose (Pfeiffersches Druesenfieber)\n- Schwere Nierenfunktionsstoerung (Kreatinin-Clearance unter 30 ml/min)\n\nDosierung:\n- Erwachsene und Jugendliche: 500 mg bis 1000 mg alle 8 Stunden\n- Tageshoechstdosis: 3.000 mg (6 Kapseln)\n- Einnahme unabhaengig von den Mahlzeiten\n\nBesondere Warnhinweise:\n- Bei Auftreten von schwerem Durchfall waehrend oder nach der Einnahme kann eine pseudomembranoese Kolitis vorliegen\n- Die gleichzeitige Einnahme von Methotrexat erhoeht dessen Toxizitaet\n- Antibiotika koennen die Wirkung der Antibabypille beeintraechtigen\n- Die Therapie sollte mindestens bis 2 Tage nach Abklingen der Symptome fortgefuehrt werden",
+    "questions": [
+      "Gegen welche Allergien darf Amoxicillin nicht eingenommen werden?",
+      "Wie hoch ist die Tageshoechstdosis?",
+      "Mit welchem Medikament besteht ein erhoehtes Toxizitaetsrisiko?",
+      "Welche Wirkung kann auf die Antibabypille auftreten?"
+    ],
+    "answers": [
+      "Allergie gegen Penicillin oder andere Beta-Lactam-Antibiotika",
+      "3.000 mg (6 Kapseln)",
+      "Methotrexat",
+      "Die Wirkung kann beeintraechtigt werden"
+    ],
+    "vocabularyFocus": [
+      "Amoxicillin",
+      "Antibiotikum",
+      "Penicillin",
+      "pseudomembranoese Kolitis",
+      "Toxizitaet"
+    ],
+    "tags": [
+      "B2",
+      "Medikament",
+      "Amoxicillin",
+      "Packungsbeilage"
+    ]
+  },
+  {
+    "id": "r25",
+    "title": "Klinikrichtlinie: Umgang mit Patientenverfuegungen",
+    "type": "Hospital policy",
+    "text": "KLINIKRICHTLINIE: UMGANG MIT PATIENTENVERFUEGUNGEN UND VORSORGEVOLLMACHTEN\n\nStand: Januar 2026\n\n1. Geltungsbereich:\nDiese Richtlinie gilt fuer alle Stationen und Abteilungen des Klinikums.\n\n2. Definitionen:\nEine Patientenverfuegung ist eine schriftliche, verbindliche Willenserklaerung eines einwilligungsfaehigen Volljaehrigen fuer den Fall, dass er selbst nicht mehr einwilligungsfaehig ist. Eine Vorsorgevollmacht berechtigt eine Vertrauensperson, medizinische Entscheidungen zu treffen.\n\n3. Verfahren bei Aufnahme:\n- Jeder Patient ist bei Aufnahme nach dem Vorliegen einer Patientenverfuegung oder Vorsorgevollmacht zu fragen\n- Liegt ein Dokument vor, ist eine Kopie in die Patientenakte aufzunehmen\n- Der aufnehmende Arzt dokumentiert den Inhalt im Aufnahmebogen\n\n4. Verfahren bei Entscheidungen:\n- Bei einwilligungsunfaehigen Patienten ist die Patientenverfuegung massgeblich\n- Liegt keine Patientenverfuegung vor, muss der Betreuer oder Vorsorgebevollmaechtigte hinzugezogen werden\n- Bei lebenserhaltenden Massnahmen ist bei fehlender Verfuegung das Betreuungsgericht einzuschalten\n- Alle Entscheidungen sind im Verlauf zu dokumentieren\n\n5. Besonderheiten:\n- Patientenverfuegungen sind nicht befristet und muessen regelmaessig im Behandlungsverlauf ueberprueft werden\n- Bei Widerspruch zwischen Patientenverfuegung und aktuellem Patientenwillen gilt der aktuelle Wille",
+    "questions": [
+      "Wonach muss jeder Patient bei Aufnahme gefragt werden?",
+      "Was ist zu tun, wenn ein Dokument vorliegt?",
+      "Wer muss bei fehlender Patientenverfuegung und lebenserhaltenden Massnahmen eingeschaltet werden?",
+      "Was gilt bei Widerspruch zwischen Patientenverfuegung und aktuellem Patientenwillen?"
+    ],
+    "answers": [
+      "Nach dem Vorliegen einer Patientenverfuegung oder Vorsorgevollmacht",
+      "Eine Kopie ist in die Patientenakte aufzunehmen",
+      "Das Betreuungsgericht",
+      "Der aktuelle Wille des Patienten"
+    ],
+    "vocabularyFocus": [
+      "Patientenverfuegung",
+      "Vorsorgevollmacht",
+      "Einwilligungsfaehigkeit",
+      "Betreuungsgericht",
+      "Willenserklaerung"
+    ],
+    "tags": [
+      "B2",
+      "Klinik",
+      "Richtlinie",
+      "Patientenverfuegung"
+    ]
+  },
+  {
+    "id": "r26",
+    "title": "Einwilligungserklaerung: Leistenbruch-OP",
+    "type": "Consent form",
+    "text": "EINWILLIGUNGSERKLAERUNG FUER EINE LAPAROSKOPISCHE LEISTENBRUCH-OP\n\nPatient: _________________ Datum: _________________\n\nAufklaerender Arzt: Dr. med. Anja Vollmer\n\nIch wurde ueber die geplante Operation an einem Leistenbruch aufgeklaert.\n\nDiagnose: Leistenhernie rechts\n\nOperationsmethode:\n- Minimalinvasive Operation (TEP - Total extraperitoneale Patch-Plastik)\n- Drei kleine Hautschnitte (ca. 1 cm), Einfuehren einer Kamera und Instrumente\n- Einlegen eines Kunststoffnetzes zur Verstaerkung der Bauchwand\n- Der Eingriff dauert ca. 45 Minuten in Vollnarkose\n\nRisiken und Komplikationen:\n- Haeufig: Bluterguss, Schwellung im Leistenbereich (bis 20 Prozent)\n- Gelegentlich: Taubheitsgefuehl in der Leistenregion (5 Prozent)\n- Selten: Wundinfektion, Nachblutung (unter 1 Prozent)\n- Sehr selten: Netzinfektion, Verletzung von Samenleiter oder Darm, Rezidiv (2 Prozent)\n\nNach der Operation:\n- Am gleichen Tag Entlassung moeglich (ambulante OP)\n- Kein schweres Heben (ueber 10 kg) fuer 4 Wochen\n- Sportpause fuer 6 Wochen\n- Bei Fieber oder starker Schwellung bitte sofort melden",
+    "questions": [
+      "Welche OP-Methode wird angewendet?",
+      "Wie lange dauert der Eingriff in etwa?",
+      "Wie hoch ist das Risiko fuer ein Rezidiv?",
+      "Wie lange sollen Sie kein schweres Heben ausueben?"
+    ],
+    "answers": [
+      "TEP - Total extraperitoneale Patch-Plastik (minimalinvasive)",
+      "Ca. 45 Minuten",
+      "2 Prozent",
+      "4 Wochen"
+    ],
+    "vocabularyFocus": [
+      "Leistenhernie",
+      "TEP",
+      "Patch-Plastik",
+      "minimalinvasiv",
+      "Rezidiv"
+    ],
+    "tags": [
+      "B2",
+      "Einwilligung",
+      "Chirurgie",
+      "Leistenbruch"
+    ]
+  },
+  {
+    "id": "r27",
+    "title": "Entlassungsbrief: Schlaganfall",
+    "type": "Discharge summary",
+    "text": "ENTLASSUNGSBRIEF\n\nPatient: Herr Guenter Schilling, 70 Jahre\nAufenthalt: 28.04.2026 bis 12.05.2026\nDiagnose: Ischaemischer Schlaganfall im Bereich der Arteria cerebri media links\n\nAnamnese: Der Patient wurde mit akuter Sprachstoerung (motorische Aphasie) und rechtseitiger Hemiparese eingeliefert. Die Symptome begannen zwei Stunden vor Aufnahme.\n\nDiagnostik und Akuttherapie:\n- CT-Schadel: Ausgeschlossen Blutung, fruehe Ischaemiezeichen links\n- Thrombolyse mit rt-PA 0,9 mg/kg innerhalb von 3 Stunden nach Symptombeginn\n- MRT am Folgetag: Ischaemie im Media-Teilgebiet links\n\nVerlauf:\n- Die motorische Aphasie hat sich deutlich rueckgebildet\n- Die rechtseitige Arm- und Beinparese hat sich auf ein leichtes Residuum (Kraftgrad M4) zurueckgebildet\n- Schluckstoerung: initial Sondenkost, jetzt weiche Kost ohne Aspiration moeglich\n\nMedikation bei Entlassung:\n- ASS 100 mg 1-0-0\n- Atorvastatin 40 mg 0-0-1\n- Ramipril 5 mg 1-0-0\n\nEmpfehlungen:\n- Fruehreha (neurologische Reha) fuer 4 Wochen ab naechster Woche\n- Logopaedie ambulant fortsetzen\n- Taeglich Blutdruckmessen, Zieleinstellung unter 140/90 mmHg\n- Naechste Kontrolle beim Neurologen in 6 Wochen\n- Lebensstil: mediterrane Kost, regelmaessige Bewegung",
+    "questions": [
+      "Welcher Schlaganfall-Typ wurde diagnostiziert?",
+      "Welche Akuttherapie wurde durchgefuehrt?",
+      "Welche Sprachstoerung hatte der Patient initial?",
+      "Welches Cholesterin-senkende Medikament wurde verordnet?"
+    ],
+    "answers": [
+      "Ischaemischer Schlaganfall im Bereich der Arteria cerebri media links",
+      "Thrombolyse mit rt-PA",
+      "Motorische Aphasie",
+      "Atorvastatin 40 mg"
+    ],
+    "vocabularyFocus": [
+      "Schlaganfall",
+      "Aphasie",
+      "Thrombolyse",
+      "Hemiparese",
+      "Logopaedie"
+    ],
+    "tags": [
+      "B2",
+      "Entlassung",
+      "Schlaganfall",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "r28",
+    "title": "Ueberweisung: Gastroenterologie bei Morbus Crohn",
+    "type": "Referral letter",
+    "text": "Ueberweisung zum Facharzt fuer Gastroenterologie\n\nPatient: Felix Brenner, 28 Jahre\n\nSehr geehrte Frau Dr. Naumann,\n\nich ueberweise Herrn Brenner zur weiteren Abklaerung und Therapie bei bekanntem Morbus Crohn. Herr Brenner ist seit drei Jahren an Morbus Crohn erkrankt (Ileocolitis). Aktuell klagt er seit vier Wochen ueber zunehmende Durchfaelle (4-6 Mal taeglich), krampfartige Unterbauchschmerzen und Gewichtsverlust von 4 kg.\n\nAktuelle Medikation: Mesalazin 3 g taeglich. Calciumschutz wird bereits durchgefuehrt.\n\nKoerperliche Untersuchung:\n- Abdomen: weich, Druckschmerz im rechten Unterbauch, keine Abwehrspannung\n- BMI: 19,2 (fruher 22,1)\n- Stuhl: Blutbeimengungen makroskopisch nicht sichtbar, Calprotectin im Stuhl auswaertig mit 480 mg/kg erhoeht\n\nBisher durchgefuehrte Diagnostik:\n- Koloskopie vor 8 Monaten: Aktive Entzuendung im terminalen Ileum und Colon ascendens\n- MRT-Enterografie vor 6 Monaten: Kein Hinweis auf Stenose oder Fistel\n\nBitte ueberpruefen Sie die Notwendigkeit einer Therapieeskalation auf Biologika (Anti-TNF) und planen ggf. eine erneute Koloskopie.\n\nMit freundlichem kollegialem Gruss\nDr. med. Sabine Vogel, Hausaerztin",
+    "questions": [
+      "Welche Form von Morbus Crohn hat der Patient?",
+      "Welches Symptom wird im Stuhl gemessen und ist erhoeht?",
+      "Welche Therapie bekommt der Patient aktuell?",
+      "Welche Therapieeskalation soll geprueft werden?"
+    ],
+    "answers": [
+      "Ileocolitis",
+      "Calprotectin (480 mg/kg, erhoeht)",
+      "Mesalazin 3 g taeglich",
+      "Biologika (Anti-TNF)"
+    ],
+    "vocabularyFocus": [
+      "Morbus Crohn",
+      "Calprotectin",
+      "Mesalazin",
+      "Biologika",
+      "Therapieeskalation"
+    ],
+    "tags": [
+      "B2",
+      "Ueberweisung",
+      "Morbus Crohn",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r29",
+    "title": "Merkblatt: Fasten vor Blutabnahme",
+    "type": "Patient information sheet",
+    "text": "MERKBLATT: NUECHTERNBELUTABNAHME\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nfuer Ihre bevorstehende Blutabnahme ist es erforderlich, dass Sie nuechtern erscheinen. Bitte beachten Sie folgende Hinweise:\n\nWas bedeutet nuechtern?\n- Sie duerfen 8 bis 12 Stunden vor der Blutabnahme nichts essen\n- Sie duerfen Wasser trinken (maximal 1 Glas, keine Suessungsmittel)\n- Kein Kaffee, Tee, Milch, Saft oder Alkohol\n- Nicht rauchen (Nikotin verfaelscht die Werte)\n\nWarum ist Nuechternheit wichtig?\n- Viele Laborwerte veraendern sich nach dem Essen (Glukose, Triglyceride, Cholesterin)\n- Nur im nuechternen Zustand sind die Werte mit den Referenzbereichen vergleichbar\n- Falsch hohe Werte koennen zu unnötigen Untersuchungen oder Fehlbehandlungen fuehren\n\nMedikamente:\n- Ihre taeglichen Medikamente duerfen Sie am Morgen mit einem kleinen Schluck Wasser einnehmen\n- Das gilt nicht, wenn Ihr Arzt etwas anderes angeordnet hat\n- Bei Diabetikern mit Insulin oder Tabletten: Bitte sprechen Sie vorher mit Ihrem Arzt\n\nNach der Blutabnahme:\n- Sie koennen sofort wieder normal essen und trinken\n- Lassen Sie die Druckstelle am Arm fuer einige Minuten ruhig, um Bluerguesse zu vermeiden",
+    "questions": [
+      "Wie viele Stunden vor der Blutabnahme sollten Sie nichts essen?",
+      "Welches Getraenk ist erlaubt?",
+      "Welcher Wert verfaelscht besonders durch Nikotin?",
+      "Wann koennen Sie normal essen?"
+    ],
+    "answers": [
+      "8 bis 12 Stunden vor der Blutabnahme",
+      "Wasser (maximal 1 Glas)",
+      "Die Laborwerte (Nikotin verfaelscht die Werte)",
+      "Sofort nach der Blutabnahme"
+    ],
+    "vocabularyFocus": [
+      "nuechtern",
+      "Blutabnahme",
+      "Referenzbereiche",
+      "Triglyceride",
+      "Glukose"
+    ],
+    "tags": [
+      "B2",
+      "Patienteninfo",
+      "Blutabnahme",
+      "Labor"
+    ]
+  },
+  {
+    "id": "r30",
+    "title": "Krankenkasse: Kostenuebernahme Brille",
+    "type": "Insurance/admin document",
+    "text": "AOK Rheinland/Hamburg\nServicezentrum, 40212 Duesseldorf\n\nBescheid ueber Kostenuebernahme: Sehhilfe\n\nVersicherte: Anna Schubert\nMitgliedsnummer: 123789456\nDatum: 15.05.2026\n\nSehr geehrte Versicherte,\n\nwir haben Ihren Antrag auf Kostenuebernahme fuer eine Sehhilfe (Brille) geprueft.\n\nErgebnis:\nDie Kosten werden uebernommen, da folgende medizinische Voraussetzungen vorliegen:\n- Bestehende Fehlsichtigkeit (Myopie und Astigmatismus)\n- Aerztliche Verordnung durch den Augenarzt liegt vor\n- Sehstaerke: -4,75 dpt rechts, -5,25 dpt links\n\nLeistungsumfang:\n- Festbetrag fuer das Brillengestell: 40 Euro\n- Festbetrag fuer die Glaeser: 50 Euro pro Glas\n- Gesamtfestbetrag: 130 Euro\n\nHinweise:\n1. Der Festbetrag wird direkt mit dem Optiker abgerechnet\n2. Wahlleistungen (z.B. entspiegelte Glaeser, Designer-Gestelle) gehen zu Ihren Lasten\n3. Bei Mehrkosten erhalten Sie einen Kostenvoranschlag vom Optiker\n4. Die Kostenuebernahme gilt fuer 2 Jahre\n5. Bei Aenderung der Sehstaerke um mehr als 0,5 dpt kann ein neuer Antrag gestellt werden",
+    "questions": [
+      "Welche Sehstaerke hat die Versicherte auf dem linken Auge?",
+      "Wie hoch ist der Festbetrag fuer das Brillengestell?",
+      "Wie werden Wahlleistungen wie Designer-Gestelle abgerechnet?",
+      "Wie lange gilt die Kostenuebernahme?"
+    ],
+    "answers": [
+      "-5,25 dpt",
+      "40 Euro",
+      "Sie gehen zu Lasten der Versicherten",
+      "2 Jahre"
+    ],
+    "vocabularyFocus": [
+      "Festbetrag",
+      "Sehhilfe",
+      "Wahlleistung",
+      "Astigmatismus",
+      "Kostenvoranschlag"
+    ],
+    "tags": [
+      "B2",
+      "Krankenkasse",
+      "Sehhilfe",
+      "Versicherung"
+    ]
+  },
+  {
+    "id": "r31",
+    "title": "Leitlinie: Therapie der Osteoporose",
+    "type": "Clinical guideline summary",
+    "text": "DVO-Leitlinie 2026: Prophylaxe, Diagnostik und Therapie der Osteoporose (Auszug)\n\nDefinition: Osteoporose ist eine systemische Skeletterkrankung mit verminderter Knochenmasse und erhoehtem Frakturrisiko.\n\nDiagnostik:\n- Knochendichtemessung (DXA) an LWS und proximalem Femur\n- T-Wert unter -2,5 = Osteoporose\n- T-Wert zwischen -1,0 und -2,5 = Osteopenie\n\nTherapie bei bestehender Osteoporose:\n- Basistherapie: Calcium 1.000 mg/Tag plus Vitamin D 800-1.000 IE/Tag\n- Medikamentoese Erstlinientherapie: Bisphosphonate (Alendronat 70 mg 1 x/Woche oder Zoledronat 5 mg 1 x/Jahr intravenoes)\n- Zweitlinientherapie: Denosumab 60 mg s.c. alle 6 Monate\n\nIndikation fuer Therapie:\n- Fraktur nach minimalem Trauma\n- T-Wert unter -2,5 bei Frauen ab 50 Jahren\n- T-Wert unter -2,0 bei zusaetzlichen Risikofaktoren\n\nRisikofaktoren:\n- Positive Familienanamnese (Muetterlicherseits Hueftfraktur)\n- Fruehzeitige Menopause (vor 45 Jahren)\n- Langzeittherapie mit Kortison (> 3 Monate)\n- Nikotin, Uebergewicht oder Untergewicht",
+    "questions": [
+      "Ab welchem T-Wert spricht man von Osteoporose?",
+      "Welche Basistherapie wird bei Osteoporose immer empfohlen?",
+      "Welches Medikament ist die Erstlinientherapie?",
+      "Welcher Risikofaktor ist durch Medikamente bedingt?"
+    ],
+    "answers": [
+      "T-Wert unter -2,5",
+      "Calcium 1.000 mg/Tag plus Vitamin D 800-1.000 IE/Tag",
+      "Bisphosphonate (Alendronat)",
+      "Langzeittherapie mit Kortison (ueber 3 Monate)"
+    ],
+    "vocabularyFocus": [
+      "Osteoporose",
+      "DXA",
+      "Bisphosphonate",
+      "Denosumab",
+      "Frakturrisiko"
+    ],
+    "tags": [
+      "B2",
+      "Leitlinie",
+      "Osteoporose",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r32",
+    "title": "Notaufnahmeprotokoll: Akuter Harnverhalt",
+    "type": "Emergency department note",
+    "text": "NOTAUFNAHME - AERZTLICHER ERSTBERICHT\n\nDatum: 16.05.2026, 08:15 Uhr\n\nPatient: Wilhelm Krause, 72 Jahre\nEintreffart: Eigenanreise mit Taxi\n\nVorstellungsgrund: Seit heute frueh 04:00 Uhr kann der Patient kein Wasser lassen, trotz starkem Harndrang. Letzte Miktion vor 12 Stunden.\n\nAnamnese: Der Patient berichtet ueber seit Monaten zunehmende Miktionbeschwerden mit abgeschwaechtem Harnstrahl, Nachttropfen und verstaerktem naechtlichem Harndrang (3-4 Mal pro Nacht). Eine Prostataerkrankung ist bekannt, ein PSA-Spiegel von 8,2 ng/ml wurde vor 6 Monaten gemessen. Bisher keine fachspezifische Behandlung.\n\nKoerperliche Untersuchung:\n- Abdomen: Gestaute Blase bis zwei Querfinger unterhalb des Nabels taat- und klopfschmerzhaft\n- Rectale Untersuchung: Prostata vergoessert (ca. 45 ml), glatt begrenzt, kein Knoten tastbar\n- Temperatur: 36,8 Grad Celsius\n\nMassnahmen:\n- Notfallmaessige transurethrale Katheterisierung, Foerdermenge: 900 ml klarer Urin\n- Urinstatus: unauffaellig, keine Leukozyten, keine Nitrit\n- Blutabnahme: Kreatinin 1,4 mg/dl (Norm < 1,2) - leicht erhoeht\n\nBeurteilung: Akuter Harnverhalt bei Prostatahyperplasie. Der Katheter bleibt fuer 3 Tage liegen. Ueberweisung zum Urologen zur weiteren Abklaerung und Therapie (gegebenenfalls TURP) veranlasst.",
+    "questions": [
+      "Wie lange konnte der Patient keinen Urin lassen?",
+      "Welche Menge Urin wurde ueber den Katheter entleert?",
+      "Welcher Wert war im Blut leicht erhoeht?",
+      "Wie lange bleibt der Katheter liegen?"
+    ],
+    "answers": [
+      "Seit 12 Stunden",
+      "900 ml",
+      "Kreatinin (1,4 mg/dl)",
+      "3 Tage"
+    ],
+    "vocabularyFocus": [
+      "Harnverhalt",
+      "Katheterisierung",
+      "Prostatahyperplasie",
+      "Miktion",
+      "TURP"
+    ],
+    "tags": [
+      "B2",
+      "Notaufnahme",
+      "Harnverhalt",
+      "Urologie"
+    ]
+  },
+  {
+    "id": "r33",
+    "title": "Operationsbericht: Hysterektomie",
+    "type": "Operation report excerpt",
+    "text": "OPERATIONSBERICHT\n\nPatientin: Frau Martina Lang, 48 Jahre\nDatum: 18.05.2026\nOperation: Totale laparoskopische Hysterektomie mit beidseitiger Adnektomie\n\nPraeoperative Diagnose: Symptomatisches Uterusmyom mit Hypermenorrhoe und Dysmenorrhoe. Zudem beidseitige Ovarialzysten.\nPostoperative Diagnose: s.o.\n\nOperationsverlauf:\nDie Patientin wurde in Allgemeinanakose in Steinschnittlage gelagert. Nach Desinfektion und steriler Abdeckung wurde ein Pneumoperitoneum angelegt. Ein 10 mm Trokar wurde umbilikal und drei 5 mm Trokare wurden supra-/paraumbilikal eingebracht.\n\nDie Inspektion zeigte einen vergroesserten Uterus myomatosus mit multiplen intramuralen Myomen bis zu 4 cm Durchmesser. Die Ovarien beidseits zeigten mehrere kleine Zysten. Beide Adnexe waren unauffaellig.\n\nEs erfolgte die Koagulation und Durchtrennung der Ligg. rotunda, der Tu ben und der Ligg. ovarica. Nach Blaesescheidenpraeparation wurden die Aa. uterinae koaguliert und durchtrennt. Die Kolpotomie erfolgte zirkulaer. Der Uterus wurde in morzelli erter Form ueber einen Bergebeutel geborgen. Vaginalverschluss mit Einzelknopfnaehten.\n\nBlutverlust: ca. 150 ml\nOperationsdauer: 1 Stunde 55 Minuten\nKomplikationen: Keine",
+    "questions": [
+      "Welche Operation wurde durchgefuehrt?",
+      "Welche Symptome verursachte das Uterusmyom?",
+      "Wie wurde der Uterus aus der Bauchhoehle entfernt?",
+      "Wie hoch war der Blutverlust?"
+    ],
+    "answers": [
+      "Totale laparoskopische Hysterektomie mit beidseitiger Adnektomie",
+      "Hypermenorrhoe und Dysmenorrhoe",
+      "Morzelliert in einem Bergebeutel",
+      "Ca. 150 ml"
+    ],
+    "vocabularyFocus": [
+      "Hysterektomie",
+      "Adnektomie",
+      "Uterusmyom",
+      "morzellieren",
+      "Kolpotomie"
+    ],
+    "tags": [
+      "B2",
+      "Operationsbericht",
+      "Gynaekologie",
+      "Hysterektomie"
+    ]
+  },
+  {
+    "id": "r34",
+    "title": "Visitennotiz: Pankreatitis-Verlauf",
+    "type": "Ward round note",
+    "text": "STATIONSVISITE - 20.05.2026\n\nPatient: Sebastian Henning, 44 Jahre, Zimmer 311\nStation: 3B - Gastroenterologie\n\nDiagnose: Akute oedematoese Pankreatitis bei Hypertriglyceridaemie (Triglyceride bei Aufnahme 3.200 mg/dl)\n\nAktueller Status:\n- Der Patient ist schmerzfrei bei Bedarfsmedikation mit Novaminsulfon (kein Opiat mehr noetig)\n- Kostaufbau: Seit gestern leichte Schonkost (Reis, Zwieback, Tee) wird vertragen\n- Temperatur: 37,0 Grad (afebril)\n- Stuhlgang: regelrecht\n\nLabor im Verlauf:\n- Lipase: 120 U/l (Eintritt 1.450 U/l) - deutlich fallend\n- CRP: 32 mg/l (Eintritt 180 mg/l) - ruecklaeufig\n- Triglyceride: 680 mg/dl (Eintritt 3.200 mg/dl) - deutlich gefallen unter Fibrattherapie\n\nTherapie:\n- Taegliche i.v. Fluessigkeit laeuft aus, orale Zufuhr ausreichend\n- Fenofibrat 200 mg 1-0-0 (neu eingestellt)\n- Omega-3-Fettsaeuren 2 g 1-0-1\n- Nikotinentwoehnung dringend empfohlen\n\nPlan:\n- Entlassung in 2-3 Tagen geplant\n- Ernaehrungsberatung fettarme Kost vereinbart\n- Wiedervorstellung Gastroenterologie in 6 Wochen",
+    "questions": [
+      "Was war die Ursache der Pankreatitis?",
+      "Welcher Laborwert zeigt den staerksten Rueckgang?",
+      "Welches Medikament wurde neu eingestellt?",
+      "Welcher Lebensstilfaktor wurde dringend empfohlen?"
+    ],
+    "answers": [
+      "Hypertriglyceridaemie (Triglyceride 3.200 mg/dl bei Aufnahme)",
+      "Lipase von 1.450 auf 120 U/l",
+      "Fenofibrat",
+      "Nikotinentwoehnung"
+    ],
+    "vocabularyFocus": [
+      "Pankreatitis",
+      "Hypertriglyceridaemie",
+      "Fibrat",
+      "oedematoes",
+      "Kostaufbau"
+    ],
+    "tags": [
+      "B2",
+      "Visite",
+      "Pankreatitis",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r35",
+    "title": "Pflegeuebergabe: Insulinpflichtiger Diabetiker",
+    "type": "Nursing handover note",
+    "text": "PFLICHTENUEBERGABE - SPAETSCHICHT\n\nDatum: 21.05.2026, 20:00 Uhr\n\nPatient: Friedrich Bender, 65 Jahre, Zimmer 204\nStation: 2A - Innere Medizin\n\nDiagnose: Diabetes mellitus Typ 2, Neueinstellung auf Insulin\n\nAktuelle Situation:\nPatient wurde vor 3 Tagen wegen entgleistem Blutzucker (BZ 420 mg/dl bei Aufnahme) stationaer aufgenommen. Nach oraler Therapieversagen wurde auf intensivierte Insulintherapie umgestellt.\n\nBZ-Verlauf heute:\n- 06:00 Uhr: 178 mg/dl\n- 11:00 Uhr: 204 mg/dl (vor Mittagessen)\n- 17:00 Uhr: 156 mg/dl (vor Abendessen)\n- 20:30 Uhr: 138 mg/dl\n\nInsulintherapie (ICT):\n- Basalinsulin: Lantus 18 IE um 21:00 Uhr\n- Mahlzeiteninsulin: Novorapid nach BE-Faktor (1 IE pro 2 BE)\n\nBesonderheiten:\n- Patient hat gestern um 14:00 Uhr eine Hypoglykaemie (BZ 52 mg/dl) gehabt, gut auf Traubenzucker angesprochen\n- Bitte Nachtkontrolle um 02:00 Uhr\n- Patient wurde in Insulinpens geschult, macht Injektionen selbstaendig\n\nFussstatus:\n- Fusssohlen: trockene Haut, keine Rhagaden\n- Zehen: Sensibilität mit Monofilament erhalten\n- Pulsstatus: Aa. dorsalis pedis beidseits gut tastbar\n\nMorgen: Wundberatung wegen alter Narbe am linken Fuss (Z.n. Ulcus)",
+    "questions": [
+      "Welcher Blutzucker wurde bei der Hypoglykaemie gestern gemessen?",
+      "Wie viele Einheiten Basalinsulin bekommt der Patient?",
+      "Wann wird die naechtliche BZ-Kontrolle durchgefuehrt?",
+      "Welcher Pulsstatus wurde dokumentiert?"
+    ],
+    "answers": [
+      "52 mg/dl",
+      "18 IE Lantus um 21:00 Uhr",
+      "Um 02:00 Uhr",
+      "Aa. dorsalis pedis beidseits gut tastbar"
+    ],
+    "vocabularyFocus": [
+      "Insulintherapie",
+      "Hypoglykaemie",
+      "Basalinsulin",
+      "Mahlzeiteninsulin",
+      "ICT"
+    ],
+    "tags": [
+      "B2",
+      "Pflege",
+      "Diabetes",
+      "Insulin"
+    ]
+  },
+  {
+    "id": "r36",
+    "title": "Reha-Empfehlung: Nach Herzinfarkt",
+    "type": "Rehabilitation recommendation",
+    "text": "REHA-EMPFEHLUNG\n\nPatient: Josef Adler, 58 Jahre\nDiagnose: Z.n. akutem ST-Hebungsinfarkt (STEMI) der Vorderwand\nDatum: 22.05.2026\n\nSehr geehrte Reha-Klinik,\n\nHerr Adler erlitt am 08.05.2026 einen akuten Vorderwandinfarkt. Es erfolgte eine notfallmaessige PCI der LAD mit Stentimplantation (Drug-eluting Stent). Der Verlauf war komplikationslos.\n\nAktueller Zustand:\n- LVEF: 45 Prozent (leicht eingeschraenkt)\n- Keine Angina pectoris mehr\n- NYHA II (leichte Dyspnoe bei Belastung)\n- Blutdruck: 125/80 mmHg unter Medikation\n\nIndikation fuer die Reha:\nAnschlussheilbehandlung nach akutem Myokardinfarkt und PCI.\n\nReha-Ziele:\n1. Steigerung der Belastbarkeit auf 75 Watt im Belastungs-EKG\n2. Risikofaktor-Management (Raucher, LDL 180 mg/dl)\n3. Medikamentoese Einstellung optimieren\n4. Psychokardiologische Betreuung (Angst vor erneutem Infarkt)\n5. Ernaehrungsberatung (mediterrane Kost)\n\nMedikation:\n- ASS 100 mg 1-0-0\n- Ticagrelor 90 mg 1-0-1 (fuer 12 Monate)\n- Atorvastatin 80 mg 0-0-1\n- Metoprolol 50 mg 1-0-0\n- Ramipril 5 mg 1-0-0\n\nEmpfohlene Dauer: 3 Wochen stationaer.",
+    "questions": [
+      "Welche Koronararterie wurde mit einem Stent versorgt?",
+      "Welche LVEF hat der Patient aktuell?",
+      "Welches Medikament zur Blutplttchenhemmung nimmt der Patient taeglich?",
+      "Welcher psychologische Aspekt soll in der Reha betreut werden?"
+    ],
+    "answers": [
+      "LAD (Ramus interventricularis anterior)",
+      "45 Prozent",
+      "ASS 100 mg und Ticagrelor 90 mg",
+      "Angst vor erneutem Infarkt (Psychokardiologie)"
+    ],
+    "vocabularyFocus": [
+      "Myokardinfarkt",
+      "PCI",
+      "LVEF",
+      "Ticagrelor",
+      "Psychokardiologie"
+    ],
+    "tags": [
+      "B2",
+      "Reha",
+      "Herzinfarkt",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r37",
+    "title": "Nachsorgebrief: Prostatakarzinom-Nachsorge",
+    "type": "Follow-up letter",
+    "text": "NACHSORGEBRIEF - UROLOGISCHE PRAXIS DR. OSTERTAG\n\nPatient: Erwin Becker, 68 Jahre\nDiagnose: Adenokarzinom der Prostata pT2c pN0 cM0, Gleason 7 (3+4)\nTherapie: Laparoskopische radikale Prostatektomie Mai 2025\n\nSehr geehrter Herr Kollege,\n\nwir haben Herrn Becker heute zur Regelkontrolle gesehen. Die Tumorerkrankung liegt jetzt ein Jahr zurueck.\n\nAktueller Befund:\n- Der Patient ist beschwerdefrei, kein lokales Rezidiv tastbar\n- Kontinenz: tagsueber trocken, nachts Vorlage erforderlich (1-2 Saugvorlagen)\n- Erektile Funktion: postoperativ nicht erhalten, PDE-5-Hemmer ohne Erfolg, Patient noetig zur Beratung\n\nPSA-Verlauf:\n- 08/2025: 0,03 ng/ml\n- 12/2025: 0,02 ng/ml\n- 05/2026: 0,04 ng/ml (stabil)\n\nBeurteilung: Der PSA-Wert ist stabil unter 0,1 ng/ml. Somit besteht derzeit kein Anhalt fuer ein biochemisches Rezidiv.\n\nEmpfehlungen:\n1. Naechste PSA-Kontrolle in 6 Monaten\n2. Bei PSA-Anstieg > 0,2 ng/ml MRT-Prostata und ggf. Biopsie\n3. Beckenbodentraining fortsetzen (Kontinenzverbesserung)\n4. Vorstellung in der Sprechstunde fuer sexuelle Gesundheit zur Beratung\n\nMit freundlichen kollegialen Gruessen\nDr. Bernd Ostertag, Facharzt fuer Urologie",
+    "questions": [
+      "Welche Operation wurde ein Jahr zurueck durchgefuehrt?",
+      "Welche Nebenwirkung besteht nachts noch?",
+      "Welcher PSA-Wert wurde heute gemessen?",
+      "Welche Massnahme wird bei einem PSA-Anstieg ueber 0,2 ng/ml empfohlen?"
+    ],
+    "answers": [
+      "Laparoskopische radikale Prostatektomie",
+      "Nachts ist eine Vorlage erforderlich (1-2 Saugvorlagen)",
+      "0,04 ng/ml",
+      "MRT-Prostata und ggf. Biopsie"
+    ],
+    "vocabularyFocus": [
+      "Prostata",
+      "PSA",
+      "Prostatektomie",
+      "Gleason",
+      "biochemisches Rezidiv"
+    ],
+    "tags": [
+      "B2",
+      "Nachsorge",
+      "Prostata",
+      "Urologie"
+    ]
+  },
+  {
+    "id": "r38",
+    "title": "Aushang: Lebensmittelvergiftung durch Salmonellen",
+    "type": "Public health notice",
+    "text": "Gesundheitsamt Stuttgart\nWarnung vor Lebensmittelvergiftungen\n\nStand: 20.05.2026\n\nAktuelle Haeufung von Salmonellen-Erkrankungen\n\nDas Gesundheitsamt Stuttgart informiert ueber eine haeufung von Salmonellen-bedingten Durchfallerkrankungen im Stadtgebiet. In den letzten zwei Wochen wurden 18 bestaetigte Faelle gemeldet. Ermittlungen deuten auf einen Zusammenhang mit dem Verzehr von rohen Eiprodukten hin.\n\nSymptome einer Salmonellen-Infektion:\n- Ploetzlich einsetzender Durchfall\n- Bauchschmerzen und Kraempfe\n- Uebelkeit und Erbrechen\n- Fieber (38-39 Grad Celsius)\n- Symptome beginnen 6-72 Stunden nach dem Verzehr kontaminierter Lebensmittel\n\nDauer: In der Regel 4-7 Tage.\n\nSchutzmassnahmen:\n1. Eier und Gefluegel immer durcherhitzen (mindestens 70 Grad fuer 10 Minuten)\n2. Getrennte Schneidebretter fuer rohes Fleisch und andere Lebensmittel\n3. Haendewaschen nach Kontakt mit rohem Fleisch und Eiern\n4. Kuehlkette nicht unterbrechen (maximal 7 Grad fuer Eier)\n5. Bei Durchfallerkrankungen: keine Speisenzubereitung fuer andere\n\nBesonders gefaehrdete Personengruppen:\n- Kleinkinder unter 5 Jahren\n- Menschen ueber 70 Jahre\n- Immunsupprimierte Patienten\n- Schwangere\n\nBei schwerem Verlauf oder Blut im Stuhl: Aerztliche Vorstellung anraten.",
+    "questions": [
+      "Wie viele bestaetigte Salmonellen-Faelle wurden in den letzten zwei Wochen gemeldet?",
+      "Nach welcher Zeit treten die ersten Symptome auf?",
+      "Welche Temperatur ist fuer das Durcherhitzen von Lebensmitteln empfohlen?",
+      "Welche Personengruppe ist nicht unter den besonders gefaehrdeten genannt?"
+    ],
+    "answers": [
+      "18 bestaetigte Faelle",
+      "6-72 Stunden nach dem Verzehr",
+      "Mindestens 70 Grad fuer 10 Minuten",
+      "Jugendliche (Kleinkinder unter 5, Menschen ueber 70, Immunsupprimierte, Schwangere)"
+    ],
+    "vocabularyFocus": [
+      "Salmonellen",
+      "Lebensmittelvergiftung",
+      "Durchfallerkrankung",
+      "kontaminieren",
+      "Kuehlkette"
+    ],
+    "tags": [
+      "B2",
+      "Oeffentlichkeit",
+      "Salmonellen",
+      "Hygiene"
+    ]
+  },
+  {
+    "id": "r39",
+    "title": "Vorbereitung: Schlafapnoe-Untersuchung",
+    "type": "Appointment instruction sheet",
+    "text": "VORBEREITUNG ZUR POLYSOMNOGRAFIE (SCHLAF-LABOR)\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nIhr Termin im Schlaflabor wurde fuer den 25.05.2026 um 20:00 Uhr vereinbart. Sie werden eine Nacht bei uns verbringen. Bitte folgende Hinweise beachten:\n\nMitbringen:\n- Ihren Pyjama oder Nachthemd (bequem, nicht zu warm)\n- Ihre eigenen Toilettenartikel (Zahnbuerste, etc.)\n- Taeglich benoetigte Medikamente\n- Ein Buch oder etwas zur Beschaeftigung vor dem Einschlafen\n- Falls vorhanden: Ihr eigenes Kopfkissen\n\nNicht mitbringen:\n- Keine Wertsachen\n- Kein Alkohol oder koffeinhaltige Getraenke am Untersuchungstag\n\nVorbereitung am Untersuchungstag:\n- Kein Mittagsschlaf\n- Normal fruehstuecken und zu Mittag essen\n- Ab 14:00 Uhr kein Koffein mehr (Kaffee, schwarzer Tee, Cola, Energydrinks)\n- Kein Alkohol am gesamten Tag\n- Am fruehen Abend duschen, aber keine Koerperlotion oder Creme auftreten\n\nAblauf:\n- Ankunft um 20:00 Uhr auf Station 4B (Pneumologie)\n- Eine Schlafmedizinerin erklaert Ihnen den Ablauf und bringt die Sensoren an\n- Sie schlafen in einem Einzelzimmer mit Video- und Audioueberwachung\n- Die Messung endet morgens gegen 06:30 Uhr\n- Sie erhalten ein Fruehstueck\n- Erste Ergebnisse erhalten Sie voraussichtlich beim Kontrolltermin in 4 Wochen",
+    "questions": [
+      "Wann muessen Sie im Schlaflabor ankommen?",
+      "Welches Getraenk ist ab 14:00 Uhr nicht mehr erlaubt?",
+      "Was duerfen Sie am fruehen Abend vor der Untersuchung nicht auftragen?",
+      "Wann endet die Messung?"
+    ],
+    "answers": [
+      "Um 20:00 Uhr",
+      "Koffeinhaltige Getraenke (Kaffee, Tee, Cola, Energydrinks)",
+      "Keine Koerperlotion oder Creme",
+      "Morgens gegen 06:30 Uhr"
+    ],
+    "vocabularyFocus": [
+      "Polysomnografie",
+      "Schlaflabor",
+      "koffeinhaltig",
+      "Sensor",
+      "Videoeberwachung"
+    ],
+    "tags": [
+      "B2",
+      "Termin",
+      "Schlafapnoe",
+      "Pneumologie"
+    ]
+  },
+  {
+    "id": "r40",
+    "title": "Patientenbeschwerde: Falsche Medikamention",
+    "type": "Patient complaint letter",
+    "text": "Betreff: Beschwerde ueber Medikationsfehler bei stationaerem Aufenthalt\n\nSehr geehrte Klinikleitung,\n\nmein Vater, Herr Werner Lukas (82 Jahre), war vom 05.05. bis 12.05.2026 auf Ihrer Station 3D (Geriatrie) wegen einer Harnwegsinfektion. Wir moechten einen Vorfall melden.\n\nAm 08.05.2026 stellten wir fest, dass mein Vater statt seines regelmaessigen Blutdruckmittels Ramipril 5 mg ein anderes Medikament (Enalapril) bekam. Als wir die Pflegekraft darauf ansprachen, wurde die Medikation erst nach einer Stunde korrigiert. Die Pflegekraft sagte, es sei durch einen Vertretungsarzt so verordnet worden.\n\nZwar hatte mein Vater keine gesundheitlichen Schaeden davongetragen, doch zeigt dieser Vorfall eine mangelhafte Ueberpruefung der Medikation bei stationaerer Aufnahme. Mein Vater hat eine umfangreiche Medikamentenliste, die wir bei Aufnahme abgegeben haben. Offenbar wurde diese nicht korrekt in den Systemen erfasst.\n\nWir erwarten:\n1. Eine Stellungnahme zum Vorfall\n2. Eine schriftliche Zusicherung, dass die Arzneimitteltherapiesicherheit auf Ihrer Station verbessert wird\n3. Die Ueberpruefung der Patientenaufnahme-Prozesse\n\nSollte keine zufriedenstellende Antwort erfolgen, werden wir uns an die Patientenberatungsstelle wenden.\n\nMit freundlichen Gruessen\nKarsten Lukas",
+    "questions": [
+      "Welches falsche Medikament wurde dem Vater verabreicht?",
+      "Wann fiel der Fehler auf?",
+      "Wie lange dauerte die Korrektur des Fehlers?",
+      "Was fordert der Beschwerdefuehrer als dritten Punkt?"
+    ],
+    "answers": [
+      "Enalapril statt Ramipril",
+      "Am 08.05.2026",
+      "Eine Stunde",
+      "Die Ueberpruefung der Patientenaufnahme-Prozesse"
+    ],
+    "vocabularyFocus": [
+      "Medikationsfehler",
+      "Arzneimitteltherapiesicherheit",
+      "Verordnung",
+      "Beschwerde",
+      "Stellungnahme"
+    ],
+    "tags": [
+      "B2",
+      "Beschwerde",
+      "Medikation",
+      "Patientensicherheit"
+    ]
+  },
+  {
+    "id": "r41",
+    "title": "Arztbrief: Nephrotisches Syndrom",
+    "type": "Arztbrief excerpt",
+    "text": "Arztbrief vom 25.05.2026\n\nPatient: Familie: Herr Timo Fruehauf, 34 Jahre alt\nDiagnose: Nephrotisches Syndrom bei minimal-change-Glomerulonephritis\n\nAufnahmegrund: Der Patient wurde wegen generalisierter Oedeme, Gewichtszunahme von 6 kg in 2 Wochen und schaeumendem Urin eingewiesen.\n\nDiagnostik:\n- Urinstatus: Proteinurie 8,2 g/24h (Norm < 0,15 g) - massiv\n- Serumalbumin: 1,8 g/dl (Norm 3,5-5,0 g/dl) - stark erniedrigt\n- Kreatinin: 1,0 mg/dl - normwertig\n- Nierenbiopsie: Minimal-change-Glomerulonephritis\n\nTherapie:\n- Prednisolon 60 mg taeglich als Stosstherapie\n- Furosemid 40 mg i.v. bei Oedemen\n- Gewichtsreduktion um 4 kg unter Diurese\n- Salzbeschraenkung auf 3 g/Tag\n\nPrognose: Bei minimal-change-Glomerulonephritis ist die Prognose unter Steroidtherapie gut. Ein Rueckfall ist in bis zu 30 Prozent der Faelle moeglich.",
+    "questions": [
+      "Welche Nierenerkrankung wurde diagnostiziert?",
+      "Wie hoch war die Proteinurie der Patientin?",
+      "Welches Medikament wurde als Stosstherapie eingesetzt?",
+      "Wie hoch ist die Rueckfallwahrscheinlichkeit?"
+    ],
+    "answers": [
+      "Nephrotisches Syndrom bei minimal-change-Glomerulonephritis",
+      "8,2 g/24h (Norm unter 0,15 g)",
+      "Prednisolon 60 mg taeglich",
+      "Bis zu 30 Prozent"
+    ],
+    "vocabularyFocus": [
+      "Nephrotisches Syndrom",
+      "Glomerulonephritis",
+      "Proteinurie",
+      "Serumalbumin",
+      "Nierenbiopsie"
+    ],
+    "tags": [
+      "B2",
+      "Arztbrief",
+      "Niere",
+      "Nephrologie"
+    ]
+  },
+  {
+    "id": "r42",
+    "title": "Laborbericht: Eisenmangelanaemie",
+    "type": "Lab report explanation",
+    "text": "Laborbefund vom 27.05.2026\n\nPatientin: Frau Lina Stoll, 32 Jahre\nAuftrag: Anaemie-Abklaerung bei Muedigkeit, Blasse, Konzentrationsschwaeche\n\nErgebnisse:\n- Hb: 9,2 g/dl (Norm 12,0-15,5 g/dl) - deutlich erniedrigt\n- MCV: 72 fl (Norm 80-98 fl) - mikrozytär\n- MCH: 24 pg (Norm 27-34 pg) - hypochrom\n- Ferritin: 8 ng/ml (Norm 30-150 ng/ml) - stark erniedrigt\n- Transferrin: 420 mg/dl (Norm 200-360 mg/dl) - erhoeht\n- Transferrinsaettigung: 8 Prozent (Norm 16-45 Prozent) - erniedrigt\n- CRP: normal\n\nBeurteilung: Mikrozytaere hypochrome Anaemie bei schwerem Eisenmangel. Die Ursache sollte gynäkologisch abgeklaert werden (Hinweis auf Hypermenorrhoe in der Anamnese). Thearapie: orales Eisen (Ferrosanol 100 mg 1-1-0), Vitamin C zur Resorptionsverbesserung. Kontrolle in 4 Wochen.",
+    "questions": [
+      "Welcher Hb-Wert wurde gemessen?",
+      "Welcher Eisenwert war stark erniedrigt?",
+      "Welche Ursache wird vermutet?",
+      "Welche Kombination wird zur Einnahme empfohlen?"
+    ],
+    "answers": [
+      "9,2 g/dl (deutlich erniedrigt)",
+      "Ferritin mit 8 ng/ml",
+      "Gynäkologische Ursache (Hypermenorrhoe)",
+      "Orales Eisen (Ferrosanol) plus Vitamin C"
+    ],
+    "vocabularyFocus": [
+      "Anaemie",
+      "Ferritin",
+      "mikrozytär",
+      "hypochrom",
+      "Resorptionsverbesserung"
+    ],
+    "tags": [
+      "B2",
+      "Labor",
+      "Eisenmangel",
+      "Anaemie"
+    ]
+  },
+  {
+    "id": "r43",
+    "title": "MRT-Wirbelsaeule: Bandscheibenvorfall",
+    "type": "Imaging report excerpt",
+    "text": "MRT DER LENDENWIRBELSAEULE (LWS)\n\nPatient: Karl-Heinz Gross, 55 Jahre\nDatum: 29.05.2026\nFragestellung: Seit 6 Wochen bestehende Lumboischialgie links mit Ausstrahlung in den linken Fuss\n\nTechnik: T1- und T2-gewichtete Sequenzen in sagittaler und axialer Schichtung, STIR-Sequenz\n\nBefund:\n- Regelrechte Lordose der LWS\n- Keine Fehlstellung oder ossaere Laesion\n- Bandscheibenvorfall (Protrusion und Extrusion) auf Hoehe L4/L5 mitsequestiertem Anteil nach links-lateral\n- Der Vorfall fuehrt zu einer Einengung des linken Recessus lateralis und einer Kompression der abgehenden Nervenwurzel L5\n- Keine Spinalkanalstenose\n- Bandscheibe L5/S1 mit leichter Hoehenminderung, aber ohne Prolaps\n- Facettengelenke altersentsprechend\n- Kein Oedem in den Wirbelkoerpern\n\nBeurteilung: Grosser sequestrierter Bandscheibenvorfall L4/L5 links mit Nerverwurzelkompression L5. Bei ausbleibender Besserung unter konservativer Therapie ist eine operative Versorgung (mikrochirurgische Sequestrektomie) indiziert.",
+    "questions": [
+      "Auf welcher Hoehe befindet sich der Bandscheibenvorfall?",
+      "Welche Nervenwurzel wird komprimiert?",
+      "Welche konservative Therapie sollte vor OP versucht werden?",
+      "Welche Operation wird bei ausbleibender Besserung empfohlen?"
+    ],
+    "answers": [
+      "L4/L5 mit sequestrier tem Anteil nach links-lateral",
+      "Die abgehende Nervenwurzel L5",
+      "Konservative Therapie (nicht naeher im Text benannt)",
+      "Mikrochirurgische Sequestrektomie"
+    ],
+    "vocabularyFocus": [
+      "Lumboischialgie",
+      "Bandscheibenvorfall",
+      "Sequester",
+      "Nervenwurzelkompression",
+      "Sequestrektomie"
+    ],
+    "tags": [
+      "B2",
+      "MRT",
+      "Wirbelsaeule",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r44",
+    "title": "Packungsbeilage: Metformin 1000 mg",
+    "type": "Medication leaflet excerpt",
+    "text": "GEBRAUCHSINFORMATION: Metformin 1000 mg Filmtabletten\n\nWirkstoff: Metforminhydrochlorid\nAnwendungsgebiete: Behandlung des Diabetes mellitus Typ 2, insbesondere bei Uebergewicht, wenn durch Diae t und Bewegung allein keine ausreichende Blutzuckerkontrolle erreicht wird.\n\nGegenanzeigen:\n- Ueberempfindlichkeit gegen Metformin\n- Schwere Nierenfunktionsstoerung (GFR unter 30 ml/min)\n- Akute oder chronische Stoffwechselazidose\n- Akute Erkrankungen mit Risiko einer Nierenfunktionsstoerung (Dehydratation, schwere Infektion, Schock)\n- Leberinsuffizienz\n\nDosierung:\n- Einschleichend: 1/2 Tablette 1-2 mal taeglich\n- Erhaltungsdosis: 1 Tablette (1000 mg) 1-2 mal taeglich zu den Mahlzeiten\n- Maximal: 3000 mg pro Tag\n\nBesondere Warnhinweise:\n- Laktatazidose: sehr selten (0,03 Fälle/1000 Patientenjahre), aber lebensbedrohlich\n- Bei Kontrastmitteluntersuchungen Metformin 48 Stunden vorher absetzen\n- Alkohol kann das Risiko einer Laktatazidose erhoehen\n- Vitamin-B12-Mangel bei Langzeiteinnahme: regelmässige Kontrolle empfohlen",
+    "questions": [
+      "Wann darf Metformin nicht eingenommen werden?",
+      "Wie hoch ist die maximale Tagesdosis?",
+      "Welche sehr seltene, aber lebensbedrohliche Nebenwirkung kann auftreten?",
+      "Wann sollte Metformin vor einer Kontrastmitteluntersuchung abgesetzt werden?"
+    ],
+    "answers": [
+      "Bei schwerer Nierenfunktionsstoerung (GFR unter 30 ml/min)",
+      "3.000 mg pro Tag",
+      "Laktatazidose",
+      "48 Stunden vorher"
+    ],
+    "vocabularyFocus": [
+      "Metformin",
+      "Laktatazidose",
+      "Nierenfunktion",
+      "Kontrastmittel",
+      "Vitamin-B12-Mangel"
+    ],
+    "tags": [
+      "B2",
+      "Medikament",
+      "Metformin",
+      "Diabetes"
+    ]
+  },
+  {
+    "id": "r45",
+    "title": "Klinikrichtlinie: Patientenverfuegung und Wiederbelebung",
+    "type": "Hospital policy",
+    "text": "KLINIKRICHTLINIE: DO-NOT-RESUSCITATE-(DNR)-VERFUEGUNGEN\n\nStand: Maerz 2026\n\n1. Grundsatz:\nJeder Patient hat das Recht, lebensverlaengernde Massnahmen abzulehnen, auch wenn dies seinen Tod zur Folge hat.\n\n2. Voraussetzungen fuer eine DNR-Verfuegung:\n- Schriftliche Anordnung des behandelnden Arztes nach Gespraech mit Patient oder Betreuer\n- Die Verfuegung muss von mindestens zwei Aerzten unterschrieben werden (Oberarztpflicht)\n- Die DNR-Verfuegung wird taeglich auf Aktualitaet geprueft\n\n3. Umsetzung:\n- Bei Kreislaufstillstand: keine Herzdruckmassage, keine Defibrillation, keine Intubation\n- Die medikamentoese Therapie wird fortgesetzt (keine aktive Sterbehilfe)\n- Palliativmassnahmen stehen im Vordergrund\n\n4. Ausnahmen:\n- Bei akuten, reversiblen Ereignissen (z.B. Fremdkoerperaspiration) kann reanimiert werden, wenn die DNR nicht explizit alle Massnahmen untersagt\n- DNR gilt nicht automatisch fuer operative Eingriffe - hier muss individuell entschieden werden\n\n5. Dokumentation:\n- Die Verfuegung wird im KIS (Krankenhausinformationssystem) fuer alle Behandelnden sichtbar erfasst\n- Der Aufbewahrungsort der schriftlichen Verfuegung wird dokumentiert\n- Der Patient erhaelt eine Kopie der Verfuegung",
+    "questions": [
+      "Wie viele Aerzte muessen eine DNR-Verfuegung unterschreiben?",
+      "Was umfasst die DNR-Anordnung im Kreislaufstillstand?",
+      "Gilt eine DNR automatisch fuer operative Eingriffe?",
+      "Wo wird die DNR-Verfuegung fuer alle Behandelnden sichtbar erfasst?"
+    ],
+    "answers": [
+      "Mindestens zwei Aerzte (Oberarztpflicht)",
+      "Keine Herzdruckmassage, keine Defibrillation, keine Intubation",
+      "Nein, das muss individuell entschieden werden",
+      "Im Krankenhausinformationssystem (KIS)"
+    ],
+    "vocabularyFocus": [
+      "DNR",
+      "Wiederbelebung",
+      "Reanimation",
+      "Palliativmassnahmen",
+      "KIS"
+    ],
+    "tags": [
+      "B2",
+      "Klinik",
+      "Richtlinie",
+      "Palliativmedizin"
+    ]
+  },
+  {
+    "id": "r46",
+    "title": "Einwilligung: Katarakt-OP",
+    "type": "Consent form",
+    "text": "EINWILLIGUNGSERKLAERUNG FUER EINE KATARAKT-OPERATION\n\nPatient: _________________ Datum: _________________\n\nAufklaerender Arzt: Dr. med. Anja Meissner (Fachaerztin fuer Augenheilkunde)\n\nDiagnose: Katarakt (grauer Star) am rechten Auge\n\nGeplanter Eingriff: Phakoemulsifikation mit Implantation einer Intraokularlinse\n\nOperationsmethode:\n- Der Eingriff erfolgt in oertlicher Betaubung (Tropfen und Gel) bei wachem Patienten\n- Ueber einen kleinen Schnitt (ca. 2,2 mm) am Hornhautrand wird die getruebte Linse mittels Ultraschall zerstoert und abgesaugt\n- Eine Kunstlinse wird an derselben Stelle eingesetzt\n- Dauer: ca. 15-20 Minuten\n\nRisiken und Komplikationen:\n- Haeufig: Trockene Augen, leichte Entzuendung (10-20 Prozent)\n- Gelegentlich: Hinterkapseltribung (Nachstar, 5-10 Prozent)\n- Selten: Netzhautablösung (0,2 Prozent), Endophthalmitis (0,05 Prozent)\n- Sehr selten: Linsenluxation, Glaukom, Makulaoedem\n\nNach der OP:\n- Augentropfen (Antibiotikum + Entzuendungshemmer) fuer 4 Wochen\n- Kein schweres Heben, kein Sport fuer 2 Wochen\n- Augenschild nachts fuer 1 Woche\n- Nachkontrollen: 1 Tag, 1 Woche, 1 Monat nach OP\n- Neue Brille nach ca. 4-6 Wochen",
+    "questions": [
+      "Welche Methode wird zur Entfernung der getruebten Linse verwendet?",
+      "Welche Narkoseart wird angewendet?",
+      "Welches Risiko tritt gelegentlich auf?",
+      "Wie lange muessen Augentropfen angewendet werden?"
+    ],
+    "answers": [
+      "Phakoemulsifikation (Ultraschall-Zertruemmerung)",
+      "Oertliche Betaubung (Tropfen und Gel) bei wachem Patienten",
+      "Hinterkapseltribung (Nachstar, 5-10 Prozent)",
+      "4 Wochen"
+    ],
+    "vocabularyFocus": [
+      "Katarakt",
+      "Phakoemulsifikation",
+      "Intraokularlinse",
+      "Nachstar",
+      "Endophthalmitis"
+    ],
+    "tags": [
+      "B2",
+      "Einwilligung",
+      "Augenheilkunde",
+      "Katarakt"
+    ]
+  },
+  {
+    "id": "r47",
+    "title": "Entlassungsbrief: Tiefe Beinvenenthrombose",
+    "type": "Discharge summary",
+    "text": "ENTLASSUNGSBRIEF\n\nPatient: Herr Boris Wieland, 52 Jahre\nAufenthalt: 22.05.2026 bis 30.05.2026\nDiagnose: Tiefe Beinvenenthrombose (TVT) rechts bei Thrombophilie\n\nAnamnese: Der Patient wurde mit geschwollenem, druckschmerzhaften rechten Unterschenkel nach Langstreckenflug eingeliefert. Als Ursache fand sich eine heterozygote Faktor-V-Leiden-Mutation.\n\nTherapie und Verlauf:\n- Initial: Enoxaparin s.c. in therapeutischer Dosierung ueber 5 Tage\n- Ueberlappung auf Phenprocoumon ab Tag 2\n- INR am Entlasstag: 2,4 (im therapeutischen Bereich)\n- Kompressionsversorgung Klasse 2 wurde angepasst und gut vertragen\n- Abschwellung des Beines um 4 cm Umfang\n\nMedikation bei Entlassung:\n- Phenprocoumon nach INR-Schema (aktuell 3 mg taeglich)\n- INR-Kontrollen zunaechst alle 1-2 Wochen\n\nEmpfehlungen:\n- Kompressionsstroempfe tagsueber fuer mindestens 6 Monate tragen\n- Antikoagulation fuer mindestens 3 Monate, Verlaengerung nach Risikoprofil\n- Bei ungeplanter OP oder Zahnbehandlung: Bridging mit Heparin erforderlich\n- Familienmitglieder sollten auf Thrombophilie getestet werden\n- Bewegung (Gehen) ist empfohlen, Staubecken vermeiden",
+    "questions": [
+      "Welche Gerinnungsstoerung wurde als Ursache gefunden?",
+      "Welcher INR-Wert wurde bei Entlassung gemessen?",
+      "Wie lange muessen Kompressionsstroempfe getragen werden?",
+      "Wie lange soll die Antikoagulation mindestens dauern?"
+    ],
+    "answers": [
+      "Heterozygote Faktor-V-Leiden-Mutation",
+      "2,4 (im therapeutischen Bereich)",
+      "Mindestens 6 Monate",
+      "Mindestens 3 Monate"
+    ],
+    "vocabularyFocus": [
+      "Thrombophilie",
+      "Faktor-V-Leiden",
+      "INR",
+      "Phenprocoumon",
+      "Bridging"
+    ],
+    "tags": [
+      "B2",
+      "Entlassung",
+      "Thrombose",
+      "Gerinnung"
+    ]
+  },
+  {
+    "id": "r48",
+    "title": "Ueberweisung: Dermatologie bei Ekzem",
+    "type": "Referral letter",
+    "text": "Ueberweisung an den Facharzt fuer Dermatologie\n\nPatient: Leonie Wahl, 17 Jahre\n\nSehr geehrte Frau Dr. Mohr,\n\nich ueberweise die Patientin Leonie Wahl zur dermatologischen Abklaerung. Seit ca. 8 Wochen besteht ein naessendes, juckendes Ekzem an beiden Haenden und Unterarmen. Die Erstbehandlung mit einer kortisonhaltigen Salbe (Prednicarbat) hat nur kurzfristig geholfen. Zusätzlich klagt die Patientin ueber juckende Knoten am Ruecken.\n\nAnamnese:\n- Keine bekannten Allergien\n- Kein bekanntes Asthma oder Heuschnupfen\n- Familienanamnese: Mutter mit Neurodermitis\n- Die Patientin arbeitet im Friseursalon (taeglicher Kontakt zu Chemikalien)\n\nKoerperliche Untersuchung:\n- An beiden Haenden: Erythem, Schuppung, minimale Blasenbildung an den Fingern\n- Keine Nagelveraenderungen\n- Am Ruecken: mehrere urtikarielle Plaques\n\nBitte fuehren Sie einen Epikutantest (Patchtest) auf Friseurstoffe und Duftstoffe durch.\n\nMit freundlichem kollegialem Gruss\nDr. med. Klaus Fischer, Hausarzt",
+    "questions": [
+      "Wie lange besteht das Ekzem bereits?",
+      "Welche Behandlung hat nicht ausreichend geholfen?",
+      "Welcher Berufsallergen-Kontakt wird vermutet?",
+      "Welcher Test soll durchgefuehrt werden?"
+    ],
+    "answers": [
+      "Seit ca. 8 Wochen",
+      "Kortisonhaltige Salbe (Prednicarbat)",
+      "Chemikalien im Friseursalon",
+      "Epikutantest (Patchtest) auf Friseurstoffe und Duftstoffe"
+    ],
+    "vocabularyFocus": [
+      "Ekzem",
+      "Epikutantest",
+      "Neurodermitis",
+      "Prednicarbat",
+      "urkarielle Plaques"
+    ],
+    "tags": [
+      "B2",
+      "Ueberweisung",
+      "Dermatologie",
+      "Allergie"
+    ]
+  },
+  {
+    "id": "r49",
+    "title": "Merkblatt: Gehoerschutz am Arbeitsplatz",
+    "type": "Patient information sheet",
+    "text": "MERKBLATT: GEHOERSCHUTZ AM ARBEITSPLATZ\n\nLiebe Mitarbeiterin, lieber Mitarbeiter,\n\nbei Ihrem arbeitsmedizinischen Vorsorgetermin wurde eine beginnende Laermschwerhoerigkeit festgestellt. Bitte beachten Sie die folgenden Hinweise zum Schutz Ihres Gehoers:\n\nLärm am Arbeitsplatz:\n- Ab einem Laermpegel von 85 dB(A) muss der Arbeitgeber Gehoerschutz zur Verfuegung stellen\n- Ab 90 dB(A) ist das Tragen von Gehoerschutz Pflicht\n- Typische laute Bereiche im Krankenhaus: Technikraeume, Sterilisation, OP-Bereich\n\nRichtiger Gehoerschutz:\n- Gehoerschutzstoepsel muessen richtig eingesetzt werden (Ohrkanal vor dem Einsetzen gerade ziehen)\n- Kapselgehoerschuetzer bieten den besten Schutz, sind aber weniger hygienisch ueber laengere Zeit\n- Die Daempfung muss auf den Laermpegel abgestimmt sein\n\nWichtige Warnsignale:\n- Sie muessen nach der Arbeit lauter sprechen oder hoeren Fernseher lauter\n- Sie haben ein Piepen oder Rauschen im Ohr (Tinnitus)\n- Sie verstehen Sprache in lauter Umgebung schlechter\n\nBeim Auftreten dieser Symptome: HNO-aerztliche Vorstellung und Vorstellung beim Betriebsarzt.\n\nNachsorge:\n- Regelmaessige Vorsorgeuntersuchungen (alle 2 Jahre bei Laermarbeit)\n- Wiederholungsuntersuchung beim HNO-Arzt in 6 Monaten",
+    "questions": [
+      "Ab welchem Laermpegel ist Gehoerschutz Pflicht?",
+      "Welche Art von Gehoerschutz bietet den besten Schutz?",
+      "Welches Warnsignal deutet auf eine beginnende Laermschwerhoerigkeit hin?",
+      "Wie oft finden Vorsorgeuntersuchungen bei Laermarbeit statt?"
+    ],
+    "answers": [
+      "Ab 90 dB(A)",
+      "Kapselgehoerschuetzer",
+      "Piepen oder Rauschen im Ohr (Tinnitus)",
+      "Alle 2 Jahre"
+    ],
+    "vocabularyFocus": [
+      "Laermschwerhoerigkeit",
+      "Gehoerschutz",
+      "Tinnitus",
+      "dB(A)",
+      "Daempfung"
+    ],
+    "tags": [
+      "B2",
+      "Patienteninfo",
+      "Gehoerschutz",
+      "Arbeitsmedizin"
+    ]
+  },
+  {
+    "id": "r50",
+    "title": "Krankenkasse: Kostenuebernahme Lutschertherapie",
+    "type": "Insurance/admin document",
+    "text": "DAK Gesundheit\nService-Center, 20097 Hamburg\n\nBescheid: Leistungen der medizinischen Rehabilitation\n\nVersicherter: Martin Vogel\nMitgliedsnummer: 654987123\nDatum: 01.06.2026\n\nSehr geehrter Herr Vogel,\n\nwir haben Ihren Antrag auf Kostenuebernahme einer stationaeren medizinischen Rehabilitationsmassnahme geprueft.\n\nDiagnose: Chronisches Lumbalsyndrom (ICD-10: M54.5)\n\nEntscheidung: Der Antrag wird in vollem Umfang bewilligt.\n\nBewilligter Zeitraum: 22.06.2026 bis 12.07.2026 (3 Wochen)\n\nEinrichtung: Reha-Zentrum Bad Mergentheim, Klinik fuer Orthopädie\n\nLeistungsumfang:\n- Unterkunft und Verpflegung: vollstationaer\n- Aerztliche Behandlung\n- Physiotherapie (mindestens 3 Einheiten pro Tag)\n- Medizinische Trainingstherapie\n- Rueckenschule, psychologische Betreuung bei Schmerzbewältigung\n- Sozialberatung\n\nEigenbeteiligung:\n- Sie zahlen 10 Euro pro Tag für maximal 28 Tage im Kalenderjahr\n- Befreiung ist bei geringem Einkommen möglich\n\nWeitere Hinweise:\n1. Bitte reichen Sie den Aufnahmeschein spaetestens 14 Tage vor Reha-Beginn ein\n2. Sie sind während der Reha krankgeschrieben\n3. Bitte bringen Sie bequeme Kleidung, Sportschuhe und Ihre Medikamente mit\n4. Ihr Arbeitgeber wurde über die Massnahme informiert",
+    "questions": [
+      "Ueber welchen Zeitraum erstreckt sich die bewilligte Reha?",
+      "Wie viele physiotherapeutische Einheiten sind pro Tag vorgesehen?",
+      "Welchen Eigenanteil muss der Patient pro Tag zahlen?",
+      "Bis wann muss der Aufnahmeschein eingereicht werden?"
+    ],
+    "answers": [
+      "22.06.2026 bis 12.07.2026 (3 Wochen)",
+      "Mindestens 3 Einheiten pro Tag",
+      "10 Euro pro Tag",
+      "Spaetestens 14 Tage vor Reha-Beginn"
+    ],
+    "vocabularyFocus": [
+      "Rehabilitation",
+      "Eigenbeteiligung",
+      "Lumbalsyndrom",
+      "Aufnahmeschein",
+      "Schmerzbewältigung"
+    ],
+    "tags": [
+      "B2",
+      "Krankenkasse",
+      "Reha",
+      "Ruecken"
+    ]
+  },
+  {
+    "id": "r51",
+    "title": "Leitlinie: Ambulante Behandlung der Pneumonie",
+    "type": "Clinical guideline summary",
+    "text": "S3-Leitlinie: Behandlung von erwachsenen Patienten mit ambulanter Pneumonie\n\nStand: Januar 2026 (Auszug)\n\nDefinition: Ambulant erworbene Pneumonie (CAP) ist eine akute Infektion des Lungenparenchymes, die ausserhalb des Krankenhauses erworben wurde.\n\nErregerspektrum:\n- Streptococcus pneumoniae (haeufigster Erreger, 30-40 Prozent)\n- Haemophilus influenzae\n- Mycoplasma pneumoniae (bei unter 60-Jaehrigen)\n- Legionellen, Chlamydien, Viren (Influenza, RSV, SARS-CoV-2)\n\nDiagnostik:\n- Klinik: Husten, purulenter Auswurf, Dyspnoe, Fieber, Seitenschmerz\n- Roentgen-Thorax in 2 Ebenen zur Bestaetigung\n- CRP und ggf. Procalcitonin zur Einschätzung der bakteriellen Genese\n\nTherapie der CAP (ambulant):\n- Standardtherapie: Amoxicillin 1 g 3 x taeglich oral fuer 5-7 Tage\n- Bei Penicillinallergie: Doxycyclin 200 mg am 1. Tag, dann 100 mg 1 x taeglich\n- Bei schwerer Pneumonie (CRP > 100 mg/l, Fieber > 39 Grad): Amoxicillin/Clavulansaeure 875/125 mg 3 x taeglich\n\nAufnahmekriterien fuer das Krankenhaus:\n- CRB-65-Score > 2 Punkte\n- Sauerstoffsaettigung < 90 Prozent\n- Verwirrtheit, Tachypnoe > 30/min oder systolischer RR < 90 mmHg",
+    "questions": [
+      "Welcher Erreger ist bei ambulanter Pneumonie am haeufigsten?",
+      "Welches bildgebende Verfahren bestaetigt die Diagnose?",
+      "Welches Antibiotikum ist die Standardtherapie?",
+      "Ab welcher Sauerstoffsaettigung ist eine Krankenhausaufnahme indiziert?"
+    ],
+    "answers": [
+      "Streptococcus pneumoniae (30-40 Prozent)",
+      "Roentgen-Thorax in 2 Ebenen",
+      "Amoxicillin 1 g 3 x taeglich fuer 5-7 Tage",
+      "Sauerstoffsaettigung unter 90 Prozent"
+    ],
+    "vocabularyFocus": [
+      "Pneumonie",
+      "Erreger",
+      "Procalcitonin",
+      "CRB-65-Score",
+      "ambulant"
+    ],
+    "tags": [
+      "B2",
+      "Leitlinie",
+      "Pneumonie",
+      "Infektiologie"
+    ]
+  },
+  {
+    "id": "r52",
+    "title": "Notaufnahmeprotokoll: Akute Cholangitis",
+    "type": "Emergency department note",
+    "text": "NOTAUFNAHME - INTERDISZIPLINAERE NOTAUFNAHME\n\nDatum: 02.06.2026, 23:15 Uhr\n\nPatient: Rosa Koenig, 68 Jahre\nEintreffart: Mit Rettungswagen, Notarzt\n\nVorstellungsgrund: Fieber bis 39,5 Grad, Schüttelfrost, rechtseitige Oberbauchschmerzen, Gelbfärbung der Haut seit gestern.\n\nVitalparameter:\n- Blutdruck: 100/60 mmHg\n- Puls: 110/min, tachykard\n- SpO2: 95% Raumluft\n- Temperatur: 39,2 Grad\n\nAnamnese: Bekannte Cholezystolithiasis. Keine bekannte Lebererkrankung.\n\nKoerperliche Untersuchung:\n- Abdomen: Druckschmerz rechter Oberbauch, Murphy-Zeichen positiv, leichte Abwehrspannung\n- Skleren: ikterisch verfaerbt\n- Haut: leichter Ikterus\n\nLabor:\n- Leukozyten: 18.500 / Mikroliter\n- CRP: 210 mg/l\n- Bilirubin gesamt: 4,2 mg/dl (Norm < 1,2)\n- AP: 340 U/l (Norm < 130)\n- GGT: 280 U/l\n\nSonografie Abdomen: Erweiterte intrahepatische Gallenwege, Ductus choledochus auf 14 mm erweitert, mehrere Steine im Gallenblasenfundus.\n\nBeurteilung: Akute Cholangitis bei Choledocholithiasis mit Cholestase und systemischer Inflammationsreaktion. Bei Verdacht auf beginnende Sepsis notfallmässige ERCP mit Papillotomie und Steinextraktion erforderlich.\n\nMassnahmen:\n- Breitbandantibiotika (Piperacillin/Tazobactam) nach Blutkultur\n- i.v. Flüssigkeit (Kristalloide)\n- Vorbereitung zur ERCP",
+    "questions": [
+      "Welche Symptome in der Charcot-Trias sind vorhanden?",
+      "Welcher Laborwert zeigt die Gallestauung an?",
+      "Welches bildgebende Verfahren wurde in der Notaufnahme durchgefuehrt?",
+      "Welche Antibiotikatherapie wurde begonnen?"
+    ],
+    "answers": [
+      "Fieber, rechtseitige Oberbauchschmerzen, Gelbfaerbung (Ikterus)",
+      "Bilirubin gesamt 4,2 mg/dl, AP 340 U/l, GGT 280 U/l",
+      "Sonografie Abdomen",
+      "Piperacillin/Tazobactam"
+    ],
+    "vocabularyFocus": [
+      "Cholangitis",
+      "Choledocholithiasis",
+      "Charcot-Trias",
+      "Ikterus",
+      "Cholestase"
+    ],
+    "tags": [
+      "B2",
+      "Notaufnahme",
+      "Cholangitis",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r53",
+    "title": "Operationsbericht: Hüft-TEP",
+    "type": "Operation report excerpt",
+    "text": "OPERATIONSBERICHT\n\nPatient: Georg Scheller, 74 Jahre\nDatum: 04.06.2026\nOperation: Implantation einer Hüft-Totalendoprothese rechts (zementiert)\n\nPraeoperative Diagnose: Coxarthrose rechts mit schmerzhafter Bewegungseinschraenkung\nPostoperative Diagnose: s.o.\n\nZugang: Transglutealer Zugang nach Bauer\n\nOperationsverlauf:\nNach spinaler Anästhesie wurde der Patient in Rechtseitenlage gelagert. Nach Hautdesinfektion und steriler Abdeckung erfolgte ein ca. 15 cm langer Hautschnitt ueber dem rechten Hueftgelenk. Das subkutane Fettgewebe wurde durchtrennt, die Fascia lata incidiert und der Tractus iliotibialis gespalten.\n\nDer Schenkelhals wurde mit einer oszillierenden Saege durchtrennt und der Hüftkopf entfernt. Das Acetabulum wurde mit kugeligen Fräsen bis zur blutenden Spongiosa praepariert. Nach Probegrösse wurde eine Pressfit-Pfanne mit 52 mm Durchmesser implantiert und mit zwei Spongiosaschrauben zusaetzlich fixiert. Ein Polyethylen-Inlay wurde eingesetzt.\n\nDer Femurschaft wurde aufgeraspelt und ein zementierter Schaft der Größe 12 implantiert. Nach Aushärten des Zements wurde ein Keramikkopf der Größe M aufgesetzt. Die Reposition gelang problemlos. Die Gelenkbeweglichkeit war frei, kein Impingement.\n\nBlutverlust: 400 ml\nOperationsdauer: 1 Stunde 35 Minuten\nKomplikationen: Keine\n\nChirurg: PD Dr. med. Stefan Gärtner",
+    "questions": [
+      "Ueber welchen Zugang wurde die Hüfte operiert?",
+      "Wie gross war der Blutverlust?",
+      "Welche Anästhesie-Form wurde gewählt?",
+      "Aus welchem Material besteht der Hueftkopf?"
+    ],
+    "answers": [
+      "Transglutealer Zugang nach Bauer",
+      "400 ml",
+      "Spinale Anästhesie",
+      "Keramik"
+    ],
+    "vocabularyFocus": [
+      "Coxarthrose",
+      "Hüft-TEP",
+      "transgluteal",
+      "Pressfit",
+      "Impingement"
+    ],
+    "tags": [
+      "B2",
+      "Operationsbericht",
+      "Hüfte",
+      "Orthopädie"
+    ]
+  },
+  {
+    "id": "r54",
+    "title": "Visitennotiz: Delir bei alter Patientin",
+    "type": "Ward round note",
+    "text": "STATIONSVISITE - 06.06.2026\n\nPatientin: Herta Schilling, 86 Jahre, Zimmer 218\nStation: 2C - Geriatrie\n\nDiagnosen: Akuter Verwirrtheitszustand (Delir) bei Exsikkose und Harnwegsinfektion\n\nAufnahmegrund: Die Patientin wurde von der Tochter gebracht, da sie seit zwei Tagen verwirrt, unruhig und zeitlich desorientiert sei. Sie spreche wirr, versuche aufzustehen und die Wohnung zu verlassen.\n\nHeutiger Status:\n- Vigilanz: wach, aber zeitlich und situativ desorientiert\n- CAM-Score: 4/4 (positives Delir-Screening)\n- Temperatur: 37,8 Grad\n- Blutdruck: 110/70 mmHg\n- Puls: 88/min\n- Trinkmenge: ca. 400 ml in 24h (deutlich zu wenig)\n- Urin: Leukozyten ++, Nitrit positiv\n\nTherapie:\n- i.v. Fluessigkeit (Ringer-Laktat 1000 ml/24h)\n- Antibiotika: Ciprofloxacin 400 mg i.v. 1-0-1 (nach Antibiogramm)\n- Bei Unruhe: Melperon 25 mg bei Bedarf (letzte Gabe vor 6h erfolgreich)\n- Trypsin-Chymotrypsin zur Oedemausschwemmung\n\nVerlauf:\n- Die Patientin ist heute Morgen ruhiger als gestern\n- Sie erkennt ihre Tochter wieder (war gestern nicht der Fall)\n- Trinkmenge muss weiter gesteigert werden\n\nPlan:\n- Kostaufbau (Brei, Suppe, viel Trinken anbieten)\n- Orientierungshilfen: Brille + Hoergeraet bereitstellen, Uhr und Kalender aufstellen\n- Mobilisation: Täglich 2x auf den Flur (Physiotherapie)\n- Familienbesuch in kleinen, ruhigen Zeitfenstern",
+    "questions": [
+      "Welcher CAM-Score deutet auf ein Delir hin?",
+      "Welche Infektion wurde bei der Patientin festgestellt?",
+      "Welches Medikament wird bei Unruhe gegeben?",
+      "Welche Orientierungshilfen sollen bereitgestellt werden?"
+    ],
+    "answers": [
+      "CAM-Score 4/4 (positiv)",
+      "Harnwegsinfektion (Leukozyten ++, Nitrit positiv)",
+      "Melperon 25 mg bei Bedarf",
+      "Brille, Hoergeraet, Uhr und Kalender"
+    ],
+    "vocabularyFocus": [
+      "Delir",
+      "CAM-Score",
+      "Exsikkose",
+      "Desorientierung",
+      "Melperon"
+    ],
+    "tags": [
+      "B2",
+      "Visite",
+      "Delir",
+      "Geriatrie"
+    ]
+  },
+  {
+    "id": "r55",
+    "title": "Pflegeuebergabe: Stomaversorgung",
+    "type": "Nursing handover note",
+    "text": "PFLICHTENUEBERGABE - NACHTSCHICHT\n\nDatum: 05.06.2026, 06:30 Uhr\n\nPatient: Karl-Heinz Jung, 61 Jahre, Zimmer 209\n\nDiagnose: Z.n. Anlage eines endständigen Colostomas nach Sigmaresektion bei Divertikulitis\n\nAktueller Zustand:\nDer Patient wurde vor 5 Tagen operiert. Der postoperative Verlauf ist komplikationslos. Der Patient ist wach, orientiert, Schmerzen 2/10.\n\nStoma-Situation:\n- Colostoma im linken Unterbauch, gut durchblutet, rosige Schleimhaut\n- Stomagrösse: 35 mm (oede marme Rückbildung im Gange)\n- Stoma-Bett: reizlos, kein Hautausschlag, keine Mazeration\n- Stoma-Beutel: letzter Wechsel 22:00 Uhr, halb gefuellt mit dünnbreiigem Stuhl\n- Ausstrichmenge letzte 24h: ca. 400 ml (normal fuer fruehe postoperative Phase)\n\nErnaehrung:\n- Kostaufbau: Leichte Vollkost wird vertragen (Kartoffelbrei, Reis, gekochtes Gemüse)\n- Trinkmenge: 1.200 ml (ausreichend)\n\nWichtiges:\n- Stomapflegekraft kommt heute um 10:00 Uhr zur Schulung\n- Der Patient hat Fragen zur Ernaehrung mit Stoma (blaehende Speisen)\n- Bitte auf Staerke der Naht achten, Stomaversorgung und -farbe dokumentieren\n- Morgen: Abdomen-Leeraufnahme zur Kontrolle der Darmentleerung",
+    "questions": [
+      "Welche Art von Stoma wurde angelegt?",
+      "Wie gross ist das Stoma aktuell?",
+      "Welche Kost isst der Patient aktuell?",
+      "Wann kommt die Stomapflegekraft zur Schulung?"
+    ],
+    "answers": [
+      "Ein endständiges Colostoma",
+      "35 mm",
+      "Leichte Vollkost (Kartoffelbrei, Reis, gekochtes Gemüse)",
+      "Heute um 10:00 Uhr"
+    ],
+    "vocabularyFocus": [
+      "Colostoma",
+      "Stomaversorgung",
+      "Mazeration",
+      "Sigmaresektion",
+      "Divertikulitis"
+    ],
+    "tags": [
+      "B2",
+      "Pflege",
+      "Stoma",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "r56",
+    "title": "Reha-Empfehlung: Nach Schulter-OP",
+    "type": "Rehabilitation recommendation",
+    "text": "REHA-EMPFEHLUNG\n\nPatientin: Ellen Schreiber, 54 Jahre\nDiagnose: Z.n. arthroskopischer Rotatorenmanschettenrekonstruktion rechts\nDatum: 07.06.2026\n\nSehr geehrte Reha-Einrichtung,\n\nFrau Schreiber wurde am 28.05.2026 an der rechten Schulter wegen einer kompletten Ruptur der Supraspinatussehne operiert. Die Rekonstruktion erfolgte mittels Ankernaehten.\n\nAktueller Zustand:\n- Schulterschlinge: noch fuer 4 Wochen erforderlich\n- Passive Beweglichkeit: Abduktion 60 Grad, Anteversion 80 Grad, Aussenrotation 20 Grad\n- Aktive Beweglichkeit: noch nicht freigegeben\n- Schmerzangabe: 3/10 unter Novaminsulfon so oft\n\nIndikation: Anschlussheilbehandlung nach Schulter-OP.\n\nReha-Ziele:\n1. Passive Mobilisation bis zur Schmerzgrenze unter physiotherapeutischer Anleitung\n2. Abschwellung durch Lymphdrainage\n3. Nach Schlingenabnahme in 4 Wochen: aktive Kräftigung der Rotatorenmanschette\n4. Erlernen von Alltagskompensationen (Anziehen, Haare kämmen)\n5. Berufliche Wiedereingliederung als Erzieherin (He bearbeitung mit Kindern)\n\nBegleiterkrankungen: Diabetes mellitus Typ 2, gut eingestellt.\nBelastbarkeit: Keine aktive Belastung des rechten Arms bis zur Schlingenabnahme.\n\nEmpfohlene Dauer: 4 Wochen stationaer.",
+    "questions": [
+      "Welche Sehne wurde rekonstruiert?",
+      "Wie lange muss die Patientin die Schulterschlinge noch tragen?",
+      "Welche passive Abduktion ist aktuell moeglich?",
+      "Welchen Beruf hat die Patientin?"
+    ],
+    "answers": [
+      "Supraspinatussehne (komplette Ruptur)",
+      "Noch 4 Wochen",
+      "60 Grad",
+      "Erzieherin"
+    ],
+    "vocabularyFocus": [
+      "Rotatorenmanschette",
+      "Supraspinatus",
+      "Sehnenruptur",
+      "Arthroskopie",
+      "Lymphdrainage"
+    ],
+    "tags": [
+      "B2",
+      "Reha",
+      "Schulter",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r57",
+    "title": "Nachsorgebrief: Mammakarzinom-Nachsorge",
+    "type": "Follow-up letter",
+    "text": "NACHSORGEBRIEF - BRUSTZENTRUM, SANA KLINIKUM\n\nPatientin: Brigitte Kramer, 52 Jahre\nDiagnose: Invasiv duktales Mammakarzinom links, pT1c pN0 (sn) M0, Luminal B, HER2-negativ\n\nTherapie: Brusterhaltende Therapie links (01/2026) mit Wächterlymphknotenbiopsie, gefolgt von 6 Wochen Bestrahlung\n\nSehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir haben Frau Kramer heute zur Nachsorge in unserer Spechstunde gesehen.\n\nAktueller Befund:\n- Die Patientin ist beschwerdefrei\n- Linke Brust: unauffaelliger Tastbefund, Narbe reizlos, kein Oedem\n- Linke Axilla: kein tastbarer Lymphknoten\n- Rechte Brust und Axilla: unauffaellig\n\nEndokrine Therapie:\n- Letrozol 2,5 mg taeglich (seit M‰rz 2026)\n- Wird gut vertragen, keine Hitzewallungen oder Gelenkschmerzen\n\nNaechste Kontrollen:\n- Mammographie beidseits in 12 Monaten\n- Gynae kologische Kontrolle in 6 Monaten\n- Sonographie Abdomen in 12 Monaten (bei Tamoxifen-Therapie nicht noetig)\n- Naechste Nachsorge-Vorstellung in 6 Monaten\n\nEmpfehlungen:\n- Vitamin D- und Calcium-Einnahme wegen Aromatasehemmer-Therapie\n- Taegliche Bewegung (30 Minuten, moderat)\n- Gewichtsreduktion empfohlen (BMI 29, Adipositas Grad I)\n- Psychoonkologische Mitbetreuung fortführen (Abschlussgespräch naechste Woche)",
+    "questions": [
+      "Welche Operation wurde bei Frau Kramer durchgefuehrt?",
+      "Welches endokrine Medikament nimmt die Patientin taeglich?",
+      "Wann wird die naechste Mammographie durchgefuehrt?",
+      "Warum wird Vitamin D und Calcium empfohlen?"
+    ],
+    "answers": [
+      "Brusterhaltende Therapie links mit Wächterlymphknotenbiopsie",
+      "Letrozol 2,5 mg taeglich",
+      "In 12 Monaten",
+      "Wegen der Aromatasehemmer-Therapie (Knochenschutz)"
+    ],
+    "vocabularyFocus": [
+      "Mammakarzinom",
+      "brusterhaltend",
+      "Wächterlymphknoten",
+      "Letrozol",
+      "Aromatasehemmer"
+    ],
+    "tags": [
+      "B2",
+      "Nachsorge",
+      "Brustkrebs",
+      "Onkologie"
+    ]
+  },
+  {
+    "id": "r58",
+    "title": "Aushang: Masern-Schutzimpfung",
+    "type": "Public health notice",
+    "text": "GESUNDHEITSAMT FRANKFURT AM MAIN\n\nAKTUELLER HINWEIS: MASERN IN FRANKFURT\n\nStand: 05.06.2026\n\nIm Stadtgebiet Frankfurt wurden in den letzten 4 Wochen 12 bestaetigte Masernfaelle gemeldet. Die betroffenen Personen sind ueberwiegend ungeimpfte Jugendliche und junge Erwachsene.\n\nWas sind Masern?\nEine hochansteckende Virusinfektion, die durch Truepfcheninfektion uebertragen wird. Die Ansteckungsrate liegt bei ueber 90 Prozent bei ungeschuetzten Kontaktpersonen.\n\nSymptome:\n- Fieber, Husten, Schnupfen, Bindehautentzuendung (3-5 Tage)\n- Dann typischer Hautausschlag (roetlich-braune Flecken, beginnend im Gesicht, sich ueber den gesamten Koerper ausbreitend)\n\nKomplikationen:\n- Mittelohrentzuendung (hauefig)\n- Lungenentzuendung (1-5 Prozent)\n- Masernenzephalitis (0,1 Prozent)\n- Subakute sclerosierende Panenzephalitis (SSPE) als Spaetfolge nach Jahren (extrem selten)\n\nSchutzmassnahmen:\n- Die Impfung ist der wirksamste Schutz\n- Empfohlen fuer alle ab 12 Monaten (erste Impfung) und 15-23 Monaten (zweite Impfung)\n- Nicht- oder unvollstaendig geimpfte Erwachsene ab Jahrgang 1970 sollten die Impfung nachholen\n- Die Impfung ist ueber die Krankenkasse kostenfrei\n\nBitte ueberpruefen Sie Ihren Impfstatus. Bei Unsicherheit: Hausarzt konsultieren.",
+    "questions": [
+      "Wie viele Masernfaelle wurden in den letzten 4 Wochen gemeldet?",
+      "Welche Ansteckungsrate haben Masern bei ungeschuetzten Personen?",
+      "Welche schwerwiegende Komplikation kann als Spaetfolge auftreten?",
+      "Welcher Jahrgang soll die Masernimpfung nachholen?"
+    ],
+    "answers": [
+      "12 bestaetigte Faelle",
+      "Ueber 90 Prozent",
+      "Subakute sclerosierende Panenzephalitis (SSPE)",
+      "Erwachsene ab Jahrgang 1970"
+    ],
+    "vocabularyFocus": [
+      "Masern",
+      "Impffstatus",
+      "Truepfcheninfektion",
+      "Masernenzephalitis",
+      "SSPE"
+    ],
+    "tags": [
+      "B2",
+      "Oeffentlichkeit",
+      "Masern",
+      "Impfung"
+    ]
+  },
+  {
+    "id": "r59",
+    "title": "Vorbereitung: Koloskopie",
+    "type": "Appointment instruction sheet",
+    "text": "VORBEREITUNG ZUR DARMSPIEGELUNG (KOLOSKOPIE)\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nIhr Termin zur Darmspiegelung: 14.06.2026 um 10:00 Uhr, Praxis Dr. Gross, Raum 105.\n\nDie Vorbereitung ist entscheidend fuer die Qualitaet der Untersuchung.\n\n3 Tage vor der Untersuchung:\n- Keine koernigen oder faserreichen Lebensmittel mehr (kein Vollkornbrot, kein Muesli, keine Nuesse, kein Popcorn, keine Körner)\n- Erlaubt: Weissbrot, Kartoffeln, Reis, Nudeln, Joghurt, weicher Kae se\n\n1 Tag vor der Untersuchung:\n- Nur leichte Kost zum Fruehstueck und Mittagessen\n- Ab 14:00 Uhr: Nur noch klare Fluessigkeiten (Bruhe, klarer Tee, Wasser, Limonade ohne rot)\n- 18:00 Uhr: Beginn der Darmreinigung\n\nDarmreinigung:\n- Sie erhalten 4 Beutel Moviprep\n- 18:00 Uhr: 1. Beutel in 1 Liter Wasser, innerhalb 1 Stunde trinken\n- 20:00 Uhr: 2. Beutel in 1 Liter Wasser\n- Am Untersuchungstag um 05:30 Uhr: 3. + 4. Beutel\n\nAm Untersuchungstag:\n- Ab 06:00 Uhr nichts mehr trinken\n- Keine Medikamente einnehmen (ausser vom Arzt erlaubt)\n- Blutverduenner nach Anweisung des verschreibenden Arztes absetzen\n\nBringen Sie mit:\n- Ueberweisung, Versichertenkarte\n- Medikamentenliste\n- Eine Begleitperson (Fahrverbot nach Sedierung fuer 24h)",
+    "questions": [
+      "Welche Lebensmittel sollen 3 Tage vor der Koloskopie vermieden werden?",
+      "Wann beginnt die Darmreinigung am Tag vor der Untersuchung?",
+      "Wie viel Wasser ist pro Moviprep-Beutel erforderlich?",
+      "Wie lange gilt Fahrverbot nach der Sedierung?"
+    ],
+    "answers": [
+      "Koernige und faserreiche Lebensmittel (Vollkornbrot, Muesli, Nuesse, Koerner)",
+      "18:00 Uhr",
+      "1 Liter Wasser pro Beutel",
+      "24 Stunden"
+    ],
+    "vocabularyFocus": [
+      "Darmspiegelung",
+      "Darmreinigung",
+      "Moviprep",
+      "Sedierung",
+      "Begleitperson"
+    ],
+    "tags": [
+      "B2",
+      "Termin",
+      "Koloskopie",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "r60",
+    "title": "Patientenbeschwerde: Keine Privatsphaere",
+    "type": "Patient complaint letter",
+    "text": "Betreff: Beschwerde ueber mangelnden Datenschutz im Patientenzimmer\n\nSehr geehrte Klinikleitung,\n\nich war vom 20.05. bis 25.05.2026 auf Ihrer Station 3B (Gastroenterologie) als Patient aufgenommen. Ich moechte mich ueber einen massiven Verstoss gegen meine Privatsphaere beschweren.\n\nAm 22.05.2026 wurde auf der Station eine Visite durchgefuehrt. Dabei wurden meine persoenlichen Laborwerte, meine Diagnose und meine geplante Behandlung im Gang vor dem Patientenzimmer laut besprochen. Die Tuer stand offen, und mehrere andere Patienten und Besucher konnten alles hoeren. Ich wurde nicht gefragt, ob ich mit der Besprechung an diesem Ort einverstanden bin.\n\nDarueber hinaus lag mein Entlassungsbrief mit allen personenbezogenen Daten am naechsten Tag sichtbar im Ablagefach an der Tuer, obwohl mir versichert wurde, dass solche Dokumente nur direkt dem Patienten ausgehaendigt werden.\n\nIch bitte um:\n1. Eine Stellungnahme zu diesem Vorfall\n2. Schulung des Personals zum Datenschutz\n3. Sicherstellung, dass Visiten grundsaetzlich entweder hinter geschlossener Tuer oder in einem separaten Raum stattfinden\n\nSollte keine zufriedenstellende Rueckmeldung erfolgen, werde ich mich an den Datenschutzbeauftragten des Landes wenden.\n\nMit freundlichen Gruessen\nDr. Frank Walther (Patient)\n\nAnlage: Kopie der Patienteninformation",
+    "questions": [
+      "Wo wurde das Patientengespraech gefuehrt, das der Patient beanstandet?",
+      "Welches Dokument lag sichtbar im Ablagefach?",
+      "Was fordert der Patient als zweiten Punkt?",
+      "An wen wendet sich der Patient bei fehlender Rueckmeldung?"
+    ],
+    "answers": [
+      "Im Gang vor dem Patientenzimmer bei offener Tuer",
+      "Der Entlassungsbrief",
+      "Schulung des Personals zum Datenschutz",
+      "An den Datenschutzbeauftragten des Landes"
+    ],
+    "vocabularyFocus": [
+      "Datenschutz",
+      "Privatsphaere",
+      "Visite",
+      "Entlassungsbrief",
+      "Datenschutzbeauftragter"
+    ],
+    "tags": [
+      "B2",
+      "Beschwerde",
+      "Datenschutz",
+      "Patientenrechte"
+    ]
+  },
+  {
+    "id": "r61",
+    "title": "Arztbrief: Aufnahme bei Lungenembolie",
+    "type": "Arztbrief excerpt",
+    "text": "Arztbrief vom 08.06.2026\n\nPatient: Frau Petra Simon, 58 Jahre alt\nDiagnose: Akute Lungenembolie (niedriges Risiko) bei tiefer Beinvenenthrombose rechts\n\nAufnahmegrund: Die Patientin wurde vom Notarzt mit ploetzlich aufgetretener Dyspnoe, Brustschmerz und Husten eingeliefert. Symptome begannen zwei Stunden vor Eintreffen. Die Patientin berichtet ueber eine laengere Autofahrt vor einer Woche.\n\nDiagnostik:\n- CT-Angiografie: Nachweis einer Lungenembolie segmental im rechten Unterlappen\n- Duplexsonografie: Thrombose der Vena poplitea rechts\n- Troponin: 0,02 ng/ml (Norm < 0,04), kein Hinweis auf Rechtsherzbelastung\n- D-Dimere: 5,8 mg/l (Norm < 0,5)\n\nTherapie: Therapeutische Antikoagulation mit Enoxaparin s.c., begleitende Einstellung auf Apixaban. Sauerstoff 2 l/min bei Bedarf.\n\nEmpfehlung: Nach Stabilisierung ambulante Weiterfuehrung der Antikoagulation fuer mindestens 3 Monate. Kompressionsversorgung.",
+    "questions": [
+      "Welche Hauptdiagnose wurde gestellt?",
+      "Welche bildgebende Untersuchung bestaetigte die Lungenembolie?",
+      "Welches Blutgerinnungsmedikament wird zur Langzeittherapie eingestellt?",
+      "Wie lange soll die Antikoagulation mindestens dauern?"
+    ],
+    "answers": [
+      "Akute Lungenembolie (niedriges Risiko) bei tiefer Beinvenenthrombose",
+      "CT-Angiografie",
+      "Apixaban",
+      "Mindestens 3 Monate"
+    ],
+    "vocabularyFocus": [
+      "Lungenembolie",
+      "CT-Angiografie",
+      "Antikoagulation",
+      "Apixaban",
+      "Duplexsonografie"
+    ],
+    "tags": [
+      "B2",
+      "Arztbrief",
+      "Lungenembolie",
+      "Gefaessmedizin"
+    ]
+  },
+  {
+    "id": "r62",
+    "title": "Laborbericht: Leberwerte bei Fettleber",
+    "type": "Lab report explanation",
+    "text": "Laborbefund vom 10.06.2026\n\nPatient: Herr Sven Lehmann, 45 Jahre\nAuftrag: Abklaerung erhoehter Leberwerte bei V.a. Fettlebererkrankung\n\nKlinische Angabe: Zufallsbefund bei Routinelabor, leichtes Druckgefuehl im rechten Oberbauch. Uebergewicht (BMI 32). Kein Alkoholkonsum.\n\nErgebnisse:\n- GOT (AST): 52 U/l (Norm < 35 U/l) - leicht erhoeht\n- GPT (ALT): 78 U/l (Norm < 35 U/l) - erhoeht\n- GGT: 95 U/l (Norm < 40 U/l) - erhoeht\n- AP: 85 U/l (Norm < 130 U/l) - normwertig\n- Bilirubin: 0,8 mg/dl (Norm < 1,2) - normwertig\n- HbA1c: 6,4 Prozent (Norm < 5,7) - erhoeht, Hinweis auf Praediabetes\n- Triglyceride: 280 mg/dl (Norm < 150) - erhoeht\n- Hepatitis-Serologie: negativ\n\nSonografie Abdomen: Echoarme Leber, homogen, keine Raumforderung, vermehrte Echogenitaet vereinbar mit Fettleber.\n\nBeurteilung: Nicht-alkoholische Fettlebererkrankung (NAFLD) mit milden Transaminasenerhoehungen und metabolischem Risikoprofil. Empfehlung: Gewichtsreduktion um mindestens 7 Prozent, Bewegung.",
+    "questions": [
+      "Welche Transaminase ist am staerksten erhoeht?",
+      "Welcher Blutzucker-Langzeitwert ist erhoeht?",
+      "Welche Erkrankung der Leber wird vermutet?",
+      "Welche Massnahme wird als erste empfohlen?"
+    ],
+    "answers": [
+      "GPT (ALT) mit 78 U/l",
+      "HbA1c mit 6,4 Prozent",
+      "Nicht-alkoholische Fettlebererkrankung (NAFLD)",
+      "Gewichtsreduktion um mindestens 7 Prozent"
+    ],
+    "vocabularyFocus": [
+      "Fettleber",
+      "Transaminasen",
+      "NAFLD",
+      "HbA1c",
+      "Fibroscan"
+    ],
+    "tags": [
+      "B2",
+      "Labor",
+      "Leber",
+      "Stoffwechsel"
+    ]
+  },
+  {
+    "id": "r63",
+    "title": "Knochenszintigrafie: V.a. Skelettmetastasen",
+    "type": "Imaging report excerpt",
+    "text": "KNOCHENSZINTIGRAFIE-BEFUND\n\nPatient: Herr Guenther Koch, 69 Jahre\nDatum: 12.06.2026\nFragestellung: V.a. Skelettmetastasen bei bekanntem Prostatakarzinom (Gleason 8, T3a)\n\nTechnik: Ganzkoerperszintigrafie 3 Stunden nach Injektion von 650 MBq Tc-99m-DPD. Zusaetzliche SPECT/CT des Thorax und der LWS.\n\nBefund:\n- Physiologische Mehranreicherung in Nieren und ableitenden Harnwegen\n- Keine pathologische Mehranreicherung am Schaedel, an der HWS, BWS oder den oberen Extremitaeten\n- Im Bereich der LWS: fokale Mehranreicherung in BWK 12 und LWK 3, in der SPECT/CT korrespondierend zu osteoplastischen Laesionen\n- Keine pathologischen Frakturen\n\nBeurteilung: Ganzkoerperszintigrafisch Nachweis von zwei osteoplastischen Skelettmetastasen in BWK 12 und LWK 3 bei bekanntem Prostatakarzinom. Bei Schmerzen oder Frakturgefahr Indikation zur Radiotherapie pruefen.",
+    "questions": [
+      "Welche Tumorerkrankung liegt dem Patienten zugrunde?",
+      "Wie viele Skelettmetastasen wurden gefunden?",
+      "In welchen Wirbelkoerpern befinden sich die Metastasen?",
+      "Welche Therapieoption wird bei Frakturgefahr empfohlen?"
+    ],
+    "answers": [
+      "Prostatakarzinom (Gleason 8, T3a)",
+      "Zwei",
+      "BWK 12 und LWK 3",
+      "Radiotherapie der befallenen Wirbelkoerper"
+    ],
+    "vocabularyFocus": [
+      "Knochenszintigrafie",
+      "Skelettmetastase",
+      "osteoplastisch",
+      "SPECT/CT",
+      "Radiotherapie"
+    ],
+    "tags": [
+      "B2",
+      "Szintigrafie",
+      "Prostata",
+      "Onkologie"
+    ]
+  },
+  {
+    "id": "r64",
+    "title": "Packungsbeilage: Pantoprazol 40 mg",
+    "type": "Medication leaflet excerpt",
+    "text": "GEBRAUCHSINFORMATION: Pantoprazol 40 mg magensaftresistente Tabletten\n\nWirkstoff: Pantoprazol-Natrium-Sesquihydrat\nAnwendungsgebiete: Sodbrennen, saures Aufstossen, Magengeschwuere. Behandlung der gastrooesophagealen Refluxkrankheit. In Kombination mit Antibiotika zur Eradikation von Helicobacter pylori.\n\nGegenanzeigen:\n- Ueberempfindlichkeit gegen Pantoprazol oder andere Protonenpumpenhemmer\n- Gleichzeitige Einnahme von Atazanavir\n- Schwere Leberfunktionsstoerung\n\nDosierung:\n- Erwachsene: 1 Tablette (40 mg) taeglich\n- Tablette unzerkaut und mit etwas Wasser vor dem Fruehstueck einnehmen\n\nBesondere Warnhinweise:\n- Bei Langzeitanwendung ueber 1 Jahr: erhoehtes Risiko fuer Knochenbrueche\n- Langzeittherapie kann Vitamin-B12-Mangel beguenstigen\n- Schwerer Durchfall kann auf Clostridium-difficile-Infektion hinweisen\n\nNebenwirkungen:\nHaeufig: Kopfschmerzen, Durchfall, Verstopfung, Blaehungen\nGelegentlich: Uebelkeit, Erbrechen, Schlaflosigkeit",
+    "questions": [
+      "Bei welcher Grunderkrankung darf Pantoprazol nicht eingenommen werden?",
+      "Wie soll die Tablette eingenommen werden?",
+      "Welches Risiko besteht bei Langzeitanwendung ueber 1 Jahr?",
+      "Welcher Erreger kann schweren Durchfall verursachen?"
+    ],
+    "answers": [
+      "Bei gleichzeitiger Einnahme von Atazanavir",
+      "Unzerkaut mit etwas Wasser vor dem Fruehstueck",
+      "Erhoehtes Risiko fuer Knochenbrueche",
+      "Clostridium-difficile-Infektion"
+    ],
+    "vocabularyFocus": [
+      "Pantoprazol",
+      "Protonenpumpenhemmer",
+      "Reflux",
+      "Helicobacter pylori",
+      "Clostridium difficile"
+    ],
+    "tags": [
+      "B2",
+      "Medikament",
+      "Pantoprazol",
+      "Magen"
+    ]
+  },
+  {
+    "id": "r65",
+    "title": "Klinikrichtlinie: Umgang mit multiresistenten Erregern",
+    "type": "Hospital policy",
+    "text": "KLINIKRICHTLINIE: UMGANG MIT MULTIRESISTENTEN ERREGERN (MRE)\n\nStand: Februar 2026\n\n1. Screening bei Aufnahme:\nFolgende Patienten werden bei Aufnahme auf MRSA, VRE und 3-/4-MRGN getestet:\n- Patienten mit bekanntem MRE in der Vorgeschichte\n- Patienten aus Altenheim oder Pflegeheim\n- Patienten aus Laendern mit hoher MRE-Praevalenz\n- Patienten mit wiederholten Krankenhausaufenthalten in den letzten 12 Monaten\n\n2. Isolierungsmassnahmen:\n- MRSA: Einzelzimmer mit Schleusenfunktion\n- VRE: Einzelzimmer, Schutzkittel und Handschuhe bei Patientenkontakt\n- 4-MRGN: Strenges Einzelzimmer mit Schleuse, FFP2-Maske, Schutzkittel, Handschuhe\n\n3. Entisolierung:\n- MRSA: Nach 3 negativen Abstrichen (24h Abstand)\n- 3-/4-MRGN: Mit Infektiologie besprechen\n\n4. Hygienebeauftragte taegliche Visite aller MRE-Patienten.",
+    "questions": [
+      "Welche Patienten werden bei Aufnahme routinemaessig auf MRE getestet?",
+      "Welche Schutzmassnahme gilt fuer 4-MRGN-Patienten?",
+      "Nach wie vielen negativen Abstrichen darf ein MRSA-Patient entisoliert werden?",
+      "Wie oft besucht der Hygienebeauftragte die MRE-Patienten?"
+    ],
+    "answers": [
+      "Patienten mit bekanntem MRE, aus Alten-/Pflegeheimen oder mit wiederholten KH-Aufenthalten",
+      "Strenges Einzelzimmer mit Schleuse, FFP2-Maske, Schutzkittel, Handschuhe",
+      "Nach 3 negativen Abstrichen (24h Abstand)",
+      "Taeglich"
+    ],
+    "vocabularyFocus": [
+      "MRE",
+      "MRSA",
+      "MRGN",
+      "VRE",
+      "Isolierung"
+    ],
+    "tags": [
+      "B2",
+      "Klinik",
+      "Hygiene",
+      "Infektiologie"
+    ]
+  },
+  {
+    "id": "r66",
+    "title": "Einwilligungserklaerung: Herzkatheteruntersuchung",
+    "type": "Consent form",
+    "text": "EINWILLIGUNGSERKLAERUNG FUER EINE HERZKATHETERUNTERSUCHUNG\n\nPatient: _________________ Datum: _________________\n\nAufklaerender Arzt: Dr. med. Karsten Bender, Kardiologie\n\nDiagnose: V.a. koronare Herzkrankheit bei belastungsabhaengigem Brustschmerz\n\nUntersuchung: Koronarangiografie ueber die rechte Leistenarterie\n\nAblauf:\n- Die Untersuchung erfolgt in oertlicher Betaubung\n- Ein Katheter wird ueber die Leistenarterie bis zu den Herzkranzgefaessen vorgeschoben\n- Ueber den Katheter wird Kontrastmittel gespritzt\n- Dauer: ca. 20-30 Minuten\n\nRisiken:\n- Haeufig: Bluerguss an der Punktionsstelle (3-5 Prozent)\n- Selten: Nachblutung, Gefaessverschluss (unter 1 Prozent)\n- Sehr selten: Herzinfarkt, Schlaganfall (0,1 Prozent)\n\nNach der Untersuchung:\n- Druckverband fuer 6-8 Stunden, Bettruhe fuer 12 Stunden\n- Viel trinken (mindestens 1,5 Liter)\n- Bei staerkeren Schmerzen: sofort melden\n\nFalls sich eine behandlungsbeduerftige Gefaessverengung zeigt, kann direkt eine Ballondilatation (PTCA) angeschlossen werden.",
+    "questions": [
+      "Ueber welches Blutgefaess wird der Herzkatheter eingefuehrt?",
+      "Wie lange muss der Patient nach der Untersuchung Bettruhe einhalten?",
+      "Welche Komplikation ist selten, aber schwerwiegend?",
+      "Welche Massnahme kann bei einer Gefaessverengung angeschlossen werden?"
+    ],
+    "answers": [
+      "Rechte Leistenarterie",
+      "12 Stunden",
+      "Nachblutung oder Gefaessverschluss an der Punktionsstelle",
+      "Ballondilatation (PTCA) mit Stenteinlage"
+    ],
+    "vocabularyFocus": [
+      "Herzkatheter",
+      "Koronarangiografie",
+      "Kontrastmittel",
+      "PTCA",
+      "Judkins-Technik"
+    ],
+    "tags": [
+      "B2",
+      "Einwilligung",
+      "Herzkatheter",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r67",
+    "title": "Entlassungsbrief: Asthma bronchiale",
+    "type": "Discharge summary",
+    "text": "ENTLASSUNGSBRIEF\n\nPatient: Kevin Jung, 19 Jahre\nAufenthalt: 10.06.2026 bis 14.06.2026\nDiagnose: Akuter schwerer Asthmaanfall bei bekanntem Asthma bronchiale (GINA 4)\n\nAnamnese: Der Patient wurde mit akuter schwerer Dyspnoe, exspiratorischem Stridor und Sprechdyspnoe eingeliefert. Ausloesend: Pollenexposition bei Heuschnupfen.\n\nDiagnostik und Verlauf:\n- Peak-Flow bei Aufnahme: 150 l/min (Sollwert 480 l/min, 31 Prozent)\n- SpO2: 88 Prozent Raumluft\n- Therapie: Salbutamol und Ipratropium Inhalationen, Prednisolon 50 mg i.v.\n- Innerhalb von 6 Stunden Besserung\n- Peak-Flow bei Entlassung: 410 l/min (85 Prozent)\n\nMedikation bei Entlassung:\n- Salbutamol-Dosieraerosol nach Bedarf\n- Budesonid/Formoterol 160/4,5 Mikrogramm 2 Huebe 2x taeglich\n- Montelukast 10 mg 0-0-1\n\nEmpfehlungen: Taegliches Peak-Flow-Monitoring, Allergietestung, Asthma-Schulung, Notfallplan.",
+    "questions": [
+      "Welcher Peak-Flow-Wert wurde bei Aufnahme gemessen?",
+      "Welches Medikament wurde intravenoes gegeben?",
+      "Welchen Anteil des Sollwerts erreichte der Patient bei Entlassung?",
+      "Welche Ueberwachung soll der Patient taeglich durchfuehren?"
+    ],
+    "answers": [
+      "150 l/min (31 Prozent des Sollwerts)",
+      "Prednisolon 50 mg i.v.",
+      "85 Prozent (410 l/min)",
+      "Taegliches Peak-Flow-Monitoring"
+    ],
+    "vocabularyFocus": [
+      "Asthma",
+      "Peak-Flow",
+      "Sprechdyspnoe",
+      "exspiratorischer Stridor",
+      "GINA"
+    ],
+    "tags": [
+      "B2",
+      "Entlassung",
+      "Asthma",
+      "Pneumologie"
+    ]
+  },
+  {
+    "id": "r68",
+    "title": "Ueberweisung: Kardiologie bei Vorhofflimmern",
+    "type": "Referral letter",
+    "text": "Ueberweisung zum Kardiologen\n\nPatientin: Elke Meissner, 62 Jahre\n\nSehr geehrter Herr Dr. Wagner,\n\nich ueberweise Frau Meissner zur weiteren Abklaerung von Herzrhythmusstoerungen. Die Patientin berichtet ueber seit Wochen zunehmendes Herzstolpern und Herzrasen, insbesondere nachts und in Ruhephasen.\n\nVorerkrankungen:\n- Arterielle Hypertonie, eingestellt mit Valsartan 80 mg\n- BMI 28 (Uebergewicht)\n\nAktuelle Untersuchungen:\n- 24h-Langzeit-EKG: SVES 2.340/24h, kurze Salven von Vorhofflimmern, bis zu 4 Minuten mit Kammerfrequenz bis 145/min\n- Echokardiografie: Linker Vorhof leicht dilatiert, LVEF 62 Prozent\n\nBitte ueberpruefen Sie die Indikation zur rhythmuserhaltenden Therapie oder Antikoagulation bei paroxysmalem Vorhofflimmern.\n\nDr. Helga Kurz, Hausaerztin",
+    "questions": [
+      "Welche Symptome in Ruhe beschreibt die Patientin?",
+      "Welche Rhythmusstoerung wurde bestaetigt?",
+      "Welche Kammerfrequenz wurde im Schlaf gemessen?",
+      "Welche Therapieoption soll geprueft werden?"
+    ],
+    "answers": [
+      "Herzstolpern und Herzrasen, besonders nachts und in Ruhe",
+      "Paroxysmales Vorhofflimmern",
+      "Bis zu 145/min",
+      "Rhythmusbaltende Therapie oder Antikoagulation"
+    ],
+    "vocabularyFocus": [
+      "Vorhofflimmern",
+      "paroxysmal",
+      "Langzeit-EKG",
+      "SVES",
+      "Antikoagulation"
+    ],
+    "tags": [
+      "B2",
+      "Ueberweisung",
+      "Vorhofflimmern",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r69",
+    "title": "Merkblatt: Inkontinenzversorgung",
+    "type": "Patient information sheet",
+    "text": "MERKBLATT: VERSORGUNG MIT INKONTINENZMATERIAL\n\nStand: Mai 2026\n\nIhr Arzt hat Ihnen Inkontinenzmaterial verordnet.\n\nVerordnung:\n- Das Material wird auf Rezept vom Hausarzt oder Facharzt verschrieben\n- Die Kosten werden von der Krankenkasse uebernommen\n- Sie zahlen 10 Euro pro Rezept zzgl. 10 Prozent des Rezeptbetrags\n\nArten:\n1. Einweg-Vorlagen (bei maessiger Inkontinenz)\n2. Netzhosen (zur Fixierung der Vorlage)\n3. Inkontinenzhosen fuer schwere Inkontinenz\n4. Bettunterlagen\n\nVersorgung:\n- Sanitaetshausfachberater kommt fuer die Erstberatung\n- Lieferung alle 4-6 Wochen\n\nHautpflege:\n- Material mindestens 3-4 Mal taeglich wechseln\n- Haut mit Wasser waschen und sanft abtrocknen\n- Wundschutzcreme auftragen, keine parfuemierten Produkte",
+    "questions": [
+      "Wer verordnet das Inkontinenzmaterial?",
+      "Wie hoch ist die Zuzahlung pro Rezept?",
+      "Welche Hilfsmittel sind fuer schwere Inkontinenz geeignet?",
+      "Wie oft sollte das Material mindestens gewechselt werden?"
+    ],
+    "answers": [
+      "Der Hausarzt oder Facharzt",
+      "10 Euro pro Rezept zzgl. 10 Prozent des Rezeptbetrags",
+      "Inkontinenzhosen zum Anziehen wie Unterwasche",
+      "Mindestens 3-4 Mal taeglich"
+    ],
+    "vocabularyFocus": [
+      "Inkontinenz",
+      "Hilfsmittelverordnung",
+      "Sanitaetshaus",
+      "Zuzahlung",
+      "Hautpflege"
+    ],
+    "tags": [
+      "B2",
+      "Patienteninfo",
+      "Inkontinenz",
+      "Pflege"
+    ]
+  },
+  {
+    "id": "r70",
+    "title": "Krankenkasse: Genehmigung einer Haushaltshilfe",
+    "type": "Insurance/admin document",
+    "text": "AOK Hessen\nServicezentrum, 60528 Frankfurt am Main\n\nBescheid ueber Haushaltshilfe\n\nVersicherte: Renate Fuchs\nMitgliedsnummer: 852963741\nDatum: 15.06.2026\n\nSehr geehrte Frau Fuchs,\n\nwir haben Ihren Antrag auf Kostenuebernahme einer Haushaltshilfe nach Paragraf 38 SGB V geprueft und bewilligt.\n\nVoraussetzung:\n- Der Antrag wurde aufgrund Ihres stationaeren Krankenhausaufenthalts vom 01.06. bis 12.06.2026 gestellt\n- Sie leben mit einem minderjaehrigen Kind (8 Jahre) zusammen\n- Es ist keine andere Person fuer die Haushaltsfuehrung vorhanden\n\nBewilligter Umfang:\n- Taeglich 4 Stunden Haushaltshilfe\n- Zeitraum: 12.06.2026 bis 26.06.2026 (14 Tage)\n\nLeistungserbringer:\n- Sie koennen die Haushaltshilfe selbst waehlen\n- Vorschlag der Krankenkasse: Deutsches Rotes Kreuz",
+    "questions": [
+      "Welche Rechtsgrundlage fuehrt die Krankenkasse fuer die Haushaltshilfe an?",
+      "Wie viele Stunden taeglich umfasst die bewilligte Haushaltshilfe?",
+      "Wer kann die Haushaltshilfe aussuchen?",
+      "Was passiert bei laengerem Bedarf als 14 Tage?"
+    ],
+    "answers": [
+      "Paragraf 38 SGB V",
+      "4 Stunden taeglich",
+      "Die Versicherte kann die Haushaltshilfe selbst waehlen",
+      "Ein Folge- oder Verlaengerungsantrag ist erforderlich"
+    ],
+    "vocabularyFocus": [
+      "Haushaltshilfe",
+      "SGB V",
+      "Eigenanteil",
+      "Bemessungsgrenze",
+      "Familienpflegerin"
+    ],
+    "tags": [
+      "B2",
+      "Krankenkasse",
+      "Haushaltshilfe",
+      "Versicherung"
+    ]
+  },
+  {
+    "id": "r71",
+    "title": "Leitlinie: Behandlung der unipolaren Depression",
+    "type": "Clinical guideline summary",
+    "text": "S3-Leitlinie: Unipolare Depression bei Erwachsenen\n\nStand: 2026 (Auszug)\n\nKlassifikation nach Schweregrad:\n- Leichte Episode: 2-3 Kernsymptome, Alltag noch moeglich\n- Mittelgradige Episode: 4-5 Symptome, deutliche Einschraenkung\n- Schwere Episode: Mehr als 5 Symptome, keine alltaeglichen Aktivitaeten mehr moeglich\n\nDiagnostik:\n- Strukturiertes klinisches Interview\n- Frageboegen (PHQ-9, BDI-II)\n- Ausschluss organischer Ursachen (TSH, Vitamin B12, Folsaeure, Eisen)\n\nTherapie:\n- Leichte Episode: Psychoeducation, nicht medikamentoes\n- Mittelgradige Episode: Psychotherapie ODER SSRI\n- Schwere Episode: Kombination Psychotherapie und Medikation\n\nMedikamentoese Therapie:\n- SSRI (Sertralin, Escitalopram, Citalopram) als erste Wahl\n- Einschleichen ueber 1-2 Wochen, Wirkeintritt nach 2-4 Wochen\n- Mindestens 6 Monate Erhaltungstherapie\n\nSuizidalitaet: Bei akuter Eigengefaehrdung sofortige Einweisung.",
+    "questions": [
+      "Welcher Fragebogen wird zur Schweregrad-Einschaetzung eingesetzt?",
+      "Welche Laborwerte muessen vor der Behandlung geprueft werden?",
+      "Welche Antidepressiva der ersten Wahl werden empfohlen?",
+      "Wann ist eine stationaere Einweisung erforderlich?"
+    ],
+    "answers": [
+      "PHQ-9 und BDI-II",
+      "TSH, Vitamin B12, Folsaeure, Eisen",
+      "SSRI (Sertralin, Escitalopram, Citalopram)",
+      "Bei akuter Eigengefaehrdung (Suizidalitaet)"
+    ],
+    "vocabularyFocus": [
+      "Depression",
+      "SSRI",
+      "PHQ-9",
+      "Psychotherapie",
+      "Suizidalitaet"
+    ],
+    "tags": [
+      "B2",
+      "Leitlinie",
+      "Depression",
+      "Psychiatrie"
+    ]
+  },
+  {
+    "id": "r72",
+    "title": "Notaufnahmeprotokoll: Akute Nierenkolik",
+    "type": "Emergency department note",
+    "text": "NOTAUFNAHME - AERZTLICHER ERSTBERICHT\n\nDatum: 17.06.2026, 05:30 Uhr\n\nPatient: Tobias Stein, 41 Jahre\n\nVorstellungsgrund: Seit 03:00 Uhr wellenfoermig zunehmende Schmerzen im rechten Flankenbereich mit Ausstrahlung in die Leiste.\n\nAnamnese:\n- Keine Vorerkrankungen\n- Keine vorherigen Nierensteine\n- Trinkt beruflich bedingt wenig\n\nUntersuchung:\n- Klopfschmerz rechtes Nierenlager\n- Abdomen weich, keine Abwehrspannung\n- Temperatur: 36,9 Grad\n\nLabor:\n- CRP normal\n- Urinstatus: Erythrozyten ++\n\nSonografie: Rechte Niere mit leichtem Harnstau, Stein im proximalen Ureter rechts, 7 mm.\n\nDiagnose: Akute Nierenkolik bei Ureterstein rechts.\n\nTherapie:\n- Novaminsulfon 2,5 g i.v., dann Ibuprofen 800 mg oral\n- Tamsulosin 0,4 mg zur Spontanabgangsfoerderung\n- Trinkempfehlung: mindestens 3 Liter pro Tag\n- Bei ausbleibendem Abgang in 2 Wochen: ESWL",
+    "questions": [
+      "In welche Koerperregion strahlen die Schmerzen aus?",
+      "Welcher Befund wurde im Ultraschall festgestellt?",
+      "Welches Medikament foerdert den Spontanabgang des Steins?",
+      "Welche Behandlung wird bei ausbleibendem Abgang empfohlen?"
+    ],
+    "answers": [
+      "In die Leiste und in die Genitalregion",
+      "7 mm Stein im proximalen Ureter rechts mit leichtem Harnstau",
+      "Tamsulosin 0,4 mg",
+      "ESWL (extrakorporale Stosswellenlithotripsie)"
+    ],
+    "vocabularyFocus": [
+      "Nierenkolik",
+      "Ureterstein",
+      "Harnstau",
+      "ESWL",
+      "Tamsulosin"
+    ],
+    "tags": [
+      "B2",
+      "Notaufnahme",
+      "Nierenstein",
+      "Urologie"
+    ]
+  },
+  {
+    "id": "r73",
+    "title": "Operationsbericht: Schilddruesenresektion",
+    "type": "Operation report excerpt",
+    "text": "OPERATIONSBERICHT\n\nPatientin: Frau Marie Seifert, 35 Jahre\nDatum: 19.06.2026\nOperation: Subtotale Schilddruesenresektion beidseits\n\nPraeoperative Diagnose: Struma nodosa mit Kompressionssymptomen\n\nOperationsverlauf:\nNach Hautdesinfektion und steriler Abdeckung erfolgte ein querverlaufender Kragenschnitt. Die Subkutis und Platysma wurden durchtrennt. Die Schilddruese wurde dargestellt.\n\nDer rechte Schilddruesenlappen war vergroessert (8 x 4 x 3 cm) mit mehreren Knoten bis 2,5 cm. Der linke Lappen (6 x 3 x 2 cm) mit einem Knoten von 1,5 cm.\n\nDer Nervus laryngeus recurrens beidseits wurde dargestellt und geschont. Vier Nebenschilddruesen wurden identifiziert. Nach Blutstillung erfolgte der Wundverschluss mit Einlage einer Redon-Drainage.\n\nBlutverlust: ca. 80 ml\nOperationsdauer: 1 Stunde 20 Minuten",
+    "questions": [
+      "Welcher Hautschnitt wurde gewaehlt?",
+      "Welcher Nerv wurde praepariert und geschont?",
+      "Wie viele Nebenschilddruesen wurden identifiziert?",
+      "Wie hoch war der Blutverlust?"
+    ],
+    "answers": [
+      "Ein querverlaufender Kragenschnitt",
+      "Nervus laryngeus recurrens beidseits",
+      "Vier",
+      "Ca. 80 ml"
+    ],
+    "vocabularyFocus": [
+      "Struma nodosa",
+      "Kragenschnitt",
+      "Nervus laryngeus recurrens",
+      "Nebenschilddruese",
+      "Redon-Drainage"
+    ],
+    "tags": [
+      "B2",
+      "Operationsbericht",
+      "Schilddruese",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "r74",
+    "title": "Visitennotiz: Enteritis durch Campylobacter",
+    "type": "Ward round note",
+    "text": "STATIONSVISITE - 21.06.2026\n\nPatient: Markus Keller, 33 Jahre, Zimmer 305\nStation: 3A - Infektiologie\n\nDiagnose: Akute Enteritis durch Campylobacter jejuni\n\nAktueller Status:\n- Der Patient wurde vor 2 Tagen mit waessrigen Durchfaellen (8-10 Mal taeglich), Fieber bis 39,2 Grad und krampfartigen Bauchschmerzen eingeliefert\n- Heute: Durchfallhaeufigkeit ruecklaeufig (4 Mal), Fieber 37,4 Grad\n- Blutdruck: 120/75 mmHg\n- Keine Dehydratationszeichen\n\nLabor im Verlauf:\n- CRP: 45 mg/l (Eintritt 180 mg/l)\n- Leukozyten: 9.500 (Eintritt 14.500)\n- Kalium: 3,8 mmol/l (Norm 3,5-5,1)\n\nStuhldiagnostik: Campylobacter jejuni.\nTherapie: Azithromycin 500 mg 1x taeglich fuer 3 Tage.\n\nPlan: Entlassung in 1-2 Tagen nach Symptomfreiheit. Lebensmittelhygiene besprechen (unzureichend gegartes Gefluegel als wahrscheinliche Ursache).",
+    "questions": [
+      "Welcher Erreger verursacht die Enteritis?",
+      "Welcher CRP-Wert wurde bei Aufnahme gemessen?",
+      "Welches Antibiotikum erhaelt der Patient?",
+      "Was war die wahrscheinliche Infektionsquelle?"
+    ],
+    "answers": [
+      "Campylobacter jejuni",
+      "180 mg/l",
+      "Azithromycin 500 mg 1x taeglich",
+      "Unzureichend gegartes Gefluegel"
+    ],
+    "vocabularyFocus": [
+      "Enteritis",
+      "Campylobacter",
+      "Azithromycin",
+      "Dehydratation",
+      "Lebensmittelhygiene"
+    ],
+    "tags": [
+      "B2",
+      "Visite",
+      "Enteritis",
+      "Infektiologie"
+    ]
+  },
+  {
+    "id": "r75",
+    "title": "Pflegeuebergabe: PEG-Sondenversorgung",
+    "type": "Nursing handover note",
+    "text": "PFLICHTENUEBERGABE - FRUEHSCHICHT\n\nDatum: 22.06.2026, 06:30 Uhr\n\nPatientin: Hilde Winter, 79 Jahre, Zimmer 206\nStation: 4C - Geriatrie\n\nDiagnose: Z.n. Schlaganfall mit Schluckstoerung, Ernaehrung ueber PEG-Sonde\n\nAktueller Zustand:\n- Die Patientin ist wach, aber zeitlich desorientiert\n- PEG-Sonde: Anlage vor 6 Tagen, Einstichstelle reizlos, kein Hautausschlag\n- Heutige Sondenkost: Fresubin 1.500 ml/24h ueber Ernährungspumpe, naechtliche Gabe\n\nLetzte 24 Stunden:\n- Sondenkost vertragen, letzter Rueckfluss morgens 30 ml (hell)\n- Stuhlgang: einmal, weich (normal bei Sondenkost)\n- Gewicht: stabil 62 kg\n\nPflegemassnahmen:\n- Sondenschulung der Angehoerigen beginnt heute um 14:00 Uhr durch Pflegeberatung\n- Mundpflege alle 2 Stunden (Mundtrockenheit bei Sondenernaehrung)\n- Verbandwechsel der PEG-Einstichstelle mit steriler Kompresse und Desinfektion\n\nWichtige Termine:\n- Heute 10:00 Uhr: Logopaedie (Schlucktraining)\n- Morgen: Schluckvideografie zur Prufung, ob orale Kost wieder moeglich\n- Uebermorgen: Entlassungsgespraech mit Tochter",
+    "questions": [
+      "Welche Art der Ernaehrung erhaelt die Patientin?",
+      "Wie viel Sondenkost bekommt die Patientin pro Tag?",
+      "Welche Pflegemassnahme ist wegen der Sondenernaehrung besonders wichtig?",
+      "Welche Untersuchung ist fuer morgen geplant?"
+    ],
+    "answers": [
+      "Ernaehrung ueber eine PEG-Sonde (Sondenkost)",
+      "1.500 ml/24h (Fresubin)",
+      "Mundpflege alle 2 Stunden",
+      "Schluckvideografie zur Prufung der oralen Kost"
+    ],
+    "vocabularyFocus": [
+      "PEG-Sonde",
+      "Sondenkost",
+      "Schluckstoerung",
+      "Mundpflege",
+      "Schlucktraining"
+    ],
+    "tags": [
+      "B2",
+      "Pflege",
+      "PEG",
+      "Ernaehrung"
+    ]
+  },
+  {
+    "id": "r76",
+    "title": "Reha-Empfehlung: Nach Bandscheiben-OP",
+    "type": "Rehabilitation recommendation",
+    "text": "REHA-EMPFEHLUNG\n\nPatient: Christian Wolter, 45 Jahre\nDiagnose: Z.n. mikrochirurgischer Sequestrektomie L4/L5 links\nDatum: 24.06.2026\n\nSehr geehrte Reha-Klinik,\n\nHerr Wolter wurde am 15.06.2026 an der Lendenwirbelsaeule wegen eines sequestrierten Bandscheibenvorfalls L4/L5 links operiert.\n\nAktueller Zustand:\n- Keine radikulaeren Schmerzen mehr\n- Leichte Parasthesien im Dermatom L5 links\n- Motorik: Kraftgrad M5 fuer den Quadrizeps, M4 fuer den Grosszehenheber links\n- Mobilisation: freies Gehen auf Station, Treppensteigen mit Festhalten moeglich\n\nIndikation: Anschlussheilbehandlung nach lumbaler Bandscheiben-OP.\n\nReha-Ziele:\n1. Rueckenstabilisation und Kräftigung der Rumpfmuskulatur\n2. Haltungsschulung und Rueckenschule\n3. Berufliche Wiedereingliederung als Elektriker (He bearbeitung in Zwangshaltung)\n4. Ergonomieberatung fuer den Arbeitsplatz\n5. Schmerzbewältigung bei Restparasthesien\n\nBelastbarkeit: Kein schweres Heben (> 10 kg) fuer 6 Wochen.\nKeine Wirbelsaeulenrotation fuer 4 Wochen.\n\nEmpfohlene Dauer: 3 Wochen stationaer.",
+    "questions": [
+      "Welche Operation wurde durchgefuehrt?",
+      "Welches Restgefühl besteht noch im linken Bein?",
+      "Welchen Beruf hat der Patient?",
+      "Wie lange darf der Patient keine schweren Lasten heben?"
+    ],
+    "answers": [
+      "Mikrochirurgische Sequestrektomie L4/L5 links",
+      "Leichte Parasthesien im Dermatom L5 links",
+      "Elektriker",
+      "6 Wochen (kein Heben ueber 10 kg)"
+    ],
+    "vocabularyFocus": [
+      "Sequestrektomie",
+      "Bandscheibenvorfall",
+      "Parasthesien",
+      "Rueckenschule",
+      "berufliche Wiedereingliederung"
+    ],
+    "tags": [
+      "B2",
+      "Reha",
+      "Wirbelsaeule",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "r77",
+    "title": "Nachsorgebrief: Nierentransplantation",
+    "type": "Follow-up letter",
+    "text": "NACHSORGEBRIEF - NEPHROLOGISCHE AMBULANZ\n\nPatientin: Angelika Dressler, 52 Jahre\nDiagnose: Z.n. Nierentransplantation (03.02.2026), Spender: Lebendspende (Ehemann)\nGrunderkrankung: IgA-Nephropathie\n\nSehr geehrte Frau Kollegin, sehr geehrter Herr Kollege,\n\nwir haben Frau Dressler heute zur Routine-Nachsorge gesehen.\n\nAktueller Befund:\n- Die Patientin fuehlt sich gut, keine Absto ssungszeichen\n- Blutdruck: 128/75 mmHg (unter Medikation)\n- Keine Oedeme, ausreichende Urinausscheidung (1.800 ml/24h)\n\nLabor:\n- Kreatinin: 1,2 mg/dl (stabil)\n- eGFR: 52 ml/min (stabil, CKD Stadium 3)\n- Tacrolimus-Talspiegel: 7,2 ng/ml (Zielbereich 5-10 ng/ml)\n- Harnsaure: 6,8 mg/dl (leicht erhoeht)\n\nMedikation:\n- Tacrolimus 5 mg 1-0-1\n- Mycophenolatmofetil 500 mg 1-0-1\n- Prednisolon 5 mg 1-0-0\n- Valsartan 80 mg 1-0-0\n- Cotrimoxazol 3x woechentlich zur PCP-Prophylaxe\n\nEmpfehlungen:\n1. Naechste Kontrolle in 3 Monaten mit Spiegeln\n2. Transplantatsonografie in 6 Monaten\n3. Bei Fieber ueber 38,5 Grad oder reduziertem Urin sofort vorstellen\n4. Impfungen auffrischen (influenza, Pneumokokken, COVID-19)\n5. Sonnenschutz wegen Immunsuppression",
+    "questions": [
+      "Welche Nierenerkrankung fuehrte zur Transplantation?",
+      "Welcher Tacrolimus-Talspiegel wurde heute gemessen?",
+      "In welchem CKD-Stadium befindet sich die Patientin?",
+      "Welches Medikament dient der PCP-Prophylaxe?"
+    ],
+    "answers": [
+      "IgA-Nephropathie",
+      "7,2 ng/ml (Zielbereich 5-10 ng/ml)",
+      "CKD Stadium 3 (eGFR 52 ml/min)",
+      "Cotrimoxazol 3x woechentlich"
+    ],
+    "vocabularyFocus": [
+      "Nierentransplantation",
+      "Immunsuppression",
+      "Tacrolimus",
+      "eGFR",
+      "PCP-Prophylaxe"
+    ],
+    "tags": [
+      "B2",
+      "Nachsorge",
+      "Nierentransplantation",
+      "Nephrologie"
+    ]
+  },
+  {
+    "id": "r78",
+    "title": "Aushang: FSME-Risikogebiete",
+    "type": "Public health notice",
+    "text": "GESUNDHEITSAMT FREIBURG\n\nINFORMATION: FSME - ZEKSCHUTZ IN RISIKOGEBIETEN\n\nStand: Mai 2026\n\nDie fruehjahrliche Zeckensaison hat begonnen. In Baden-Wuerttemberg sind weite Teile FSME-Risikogebiet.\n\nWas ist FSME?\nDie Fruehsommer-Meningoenzephalitis (FSME) ist eine Virusinfektion, die durch Zeckenstich uebertragen wird. Die Inkubationszeit betraegt 5-28 Tage.\n\nSymptome:\n- Erstes Stadium: Fieber, Kopfschmerzen, Muedigkeit, Gliederschmerzen (3-7 Tage)\n- Zweites Stadium: ca. 10 Prozent der Infizierten entwickeln eine Hirnhautentzuendung (Meningitis) oder Gehirnentzuendung (Enzephalitis) mit Lichtscheu, Nackensteifigkeit, neurologischen Ausfaellen\n\nSchutzmassnahmen:\n1. Impfung: Die STIKO empfiehlt die FSME-Impfung fuer alle Personen in Risikogebieten. Grundimmunisierung: 3 Impfungen (0, 1-3, 12 Monate). Auffrischung alle 5 Jahre.\n2. Koerperliche Schutzmassnahmen: Lange Kleidung, festes Schuhwerk, Zeckenschutzmittel auf Haut und Kleidung\n3. Nach Aufenthalt im Freien: Gruendliche Koerperkontrolle, Zecke sofort entfernen\n\nWichtig: Es gibt keine spezifische antivirale Therapie gegen FSME. Die Behandlung erfolgt symptomatisch. Bei neurologischen Symptomen: sofortige Krankenhauseinweisung.",
+    "questions": [
+      "Welche Krankheit wird durch Zecken uebertragen?",
+      "Wie lange ist die Inkubationszeit?",
+      "Wie viele Impfungen umfasst die Grundimmunisierung?",
+      "Wie oft muss die FSME-Impfung aufgefrischt werden?"
+    ],
+    "answers": [
+      "FSME (Fruehsommer-Meningoenzephalitis)",
+      "5-28 Tage",
+      "3 Impfungen (0, 1-3, 12 Monate)",
+      "Alle 5 Jahre"
+    ],
+    "vocabularyFocus": [
+      "FSME",
+      "Zecken",
+      "Impfung",
+      "Meningitis",
+      "Enzephalitis"
+    ],
+    "tags": [
+      "B2",
+      "Oeffentlichkeit",
+      "FSME",
+      "Impfung"
+    ]
+  },
+  {
+    "id": "r79",
+    "title": "Vorbereitung: Langzeit-Blutdruckmessung",
+    "type": "Appointment instruction sheet",
+    "text": "VORBEREITUNG: 24-STUNDEN-BLUTDRUCKMESSUNG\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nbei Ihrem naechsten Termin in unserer Praxis wird eine 24-Stunden-Blutdruckmessung durchgefuehrt. Diese Untersuchung misst Ihren Blutdruck ueber einen ganzen Tag und eine Nacht und gibt wichtige Hinweise auf Ihre Blutdruckeinstellung.\n\nTermin: 28.06.2026 um 08:00 Uhr in der Kardiologischen Praxis Dr. Fink, Raum 204.\nDauer: 24 Stunden bis 29.06.2026 um 08:00 Uhr.\n\nAblauf:\n- Eine Mitarbeiterin legt Ihnen eine Blutdruckmanschette am Oberarm an\n- Die Manschette ist mit einem Aufzeichnungsgeraet verbunden, das Sie am Guertel tragen\n- Tagsueber (08:00-22:00 Uhr) misst das Geraet alle 30 Minuten\n- Nachts (22:00-06:00 Uhr) misst es alle 60 Minuten\n- Sie fuehren ein Tagebuch ueber Aktivitaeten, Beschwerden und Schlafenszeiten\n\nVerhalten waehrend der Messung:\n- Bei jeder Messung: Arm ruhig halten und nicht bewegen\n- Normalen Taetigkeiten nachgehen (keinen Sport)\n- Duschen ist nicht moeglich (Geraet nicht wasserdicht)\n- Normal weiteressen und Medikamente wie gewohnt einnehmen\n\nRueckgabe: Am naechsten Morgen um 08:00 Uhr geben Sie das Geraet in der Praxis ab.",
+    "questions": [
+      "In welchem Intervall misst das Geraet nachts?",
+      "Wann soll der Patient ein Tagebuch fuehren?",
+      "Was muss der Patient bei jeder Messung beachten?",
+      "Ist Duschen waerend der Messung erlaubt?"
+    ],
+    "answers": [
+      "Alle 60 Minuten (22:00-06:00 Uhr)",
+      "Ueber Aktivitaeten, Beschwerden und Schlafenszeiten",
+      "Den Arm ruhig halten und nicht bewegen",
+      "Nein, das Geraet ist nicht wasserdicht"
+    ],
+    "vocabularyFocus": [
+      "Blutdruckmessung",
+      "Langzeitmessung",
+      "Manschette",
+      "Tagebuch",
+      "Hypertonie"
+    ],
+    "tags": [
+      "B2",
+      "Termin",
+      "Blutdruck",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r80",
+    "title": "Patientenbeschwerde: Nicht ernst genommen",
+    "type": "Patient complaint letter",
+    "text": "Betreff: Beschwerde - Symptome wurden nicht ernst genommen\n\nSehr geehrter Chefarzt der Notaufnahme,\n\nich moechte mich ueber die Behandlung meiner Mutter, Frau Helga Paul (73 Jahre), in Ihrer Notaufnahme am 20.06.2026 beschweren.\n\nMeine Mutter kam um 19:30 Uhr mit starken Oberbauchschmerzen, Uebelkeit und Erbrechen in die Notaufnahme. Ich als Tochter habe sie begleitet. Wir haben an der Anmeldung ca. 2 Stunden gewartet. Als wir dann endlich in einem Untersuchungszimmer waren, wurde meine Mutter von einer Aerztin untersucht, die etwa 25 Jahre alt wirkte.\n\nNach einer kurzen körperlichen Untersuchung sagte die Ärztin, es sei vermutlich eine Magen-Darm-Grippe und gab meiner Mutter ein Mittel gegen Uebelkeit. Als ich fragte, ob nicht ein Ultraschall oder Blutuntersuchung sinnvoll waere, wurde ich abgewimmelt mit den Worten \"Dafuer ist hier keine Zeit, das ist eine Virusinfektion\". Man entliess meine Mutter gegen 22:30 Uhr.\n\nZu Hause wurden die Schmerzen schlimmer. Um 01:30 Uhr fuhren wir erneut in die Notaufnahme. Diesmal wurde sofort ein Ultraschall gemacht. Diagnose: Akute Cholezystitis (Gallenblasenentzuendung) mit Steinen. Meine Mutter wurde notoperiert.\n\nIch erwarte eine Stellungnahme, warum die erste Aerztin meine Mutter ohne ausreichende Diagnostik entlassen hat und warum meine Bedenken als Angehoerige ignoriert wurden.\n\nMit freundlichen Gruessen\nSarah Paul",
+    "questions": [
+      "Wie lange mussten die Patientin und ihre Tochter in der Notaufnahme warten?",
+      "Welche Diagnose stellte die erste Aerztin?",
+      "Welche Frage der Tochter wurde abgewimmelt?",
+      "Welche korrekte Diagnose wurde beim zweiten Besuch gestellt?"
+    ],
+    "answers": [
+      "Ca. 2 Stunden",
+      "Eine Magen-Darm-Grippe (Virusinfektion)",
+      "Ob ein Ultraschall oder eine Blutuntersuchung sinnvoll waere",
+      "Akute Cholezystitis (Gallenblasenentzuendung) mit Steinen"
+    ],
+    "vocabularyFocus": [
+      "Beschwerde",
+      "Notaufnahme",
+      "Diagnose",
+      "Cholezystitis",
+      "Patientensicherheit"
+    ],
+    "tags": [
+      "B2",
+      "Beschwerde",
+      "Notaufnahme",
+      "Patientenrechte"
+    ]
+  },
+  {
+    "id": "r100",
+    "title": "Patientenbeschwerde: Zu spaete Diagnose einer Sepsis",
+    "type": "Patient complaint letter",
+    "text": "Betreff: Beschwerde ueber verzoegerte Erkennung einer Sepsis\n\nSehr geehrte Klinikleitung,\n\nich moechte mich im Namen meines Vaters, Herrn Alfred Koenig (81 Jahre), ueber die Behandlung auf Ihrer Station 4A im Juni 2026 beschweren.\n\nMein Vater wurde am 10.06.2026 mit Fieber, Verwirrtheit und einer Harnwegsinfektion in Ihre Notaufnahme eingeliefert. Er wurde auf Station 4A aufgenommen. Obwohl bereits bei Aufnahme ein erhoehtes CRP von 180 mg/l und eine Leukozytose von 16.000 vorlagen, wurde erst am 12.06.2026 eine Blutkultur abgenommen. Die Antibiotikatherapie wurde erst 8 Stunden nach Aufnahme begonnen.\n\nAm 13.06.2026 verschlechterte sich sein Zustand dramatisch. Der Blutdruck fiel auf 80/40 mmHg, er wurde tachykard und entwickelte Fieber bis 39,8 Grad. Die Blutkultur ergab Escherichia coli. Die Diagnose einer uroseptischen Sepsis wurde gestellt. Mein Vater musste fuer 4 Tage auf die Intensivstation verlegt werden.\n\nIch sehe folgende Versaeumnisse:\n1. Die Blutkultur wurde zu spaet abgenommen\n2. Die Antibiotikatherapie wurde nicht zeitgerecht begonnen\n3. Die Kriterien fuer eine beginnende Sepsis wurden uebersehen\n\nMein Vater hat sich inzwischen erholt, aber der Aufenthalt auf der Intensivstation waere vermutlich vermeidbar gewesen. Ich erwarte eine Darstellung des Falls und eine Stellungnahme, wie die fruehzeitige Erkennung einer Sepsis auf Ihrer Station ver bessert werden soll.\n\nMit freundlichen Gruessen\nDr. Robert Koenig (Sohn des Patienten)",
+    "questions": [
+      "Welche Infektion fuehrte zur Sepsis?",
+      "Welches CRP lag bereits bei Aufnahme vor?",
+      "Wann wurde die Blutkultur abgenommen?",
+      "Wohin musste der Patient verlegt werden?"
+    ],
+    "answers": [
+      "Eine Harnwegsinfektion mit Escherichia coli",
+      "180 mg/l",
+      "Erst am 12.06.2026 (2 Tage nach Aufnahme)",
+      "Auf die Intensivstation"
+    ],
+    "vocabularyFocus": [
+      "Sepsis",
+      "Urosepsis",
+      "Blutkultur",
+      "CRP",
+      "Intensivstation"
+    ],
+    "tags": [
+      "B2",
+      "Beschwerde",
+      "Sepsis",
+      "Patientensicherheit"
+    ]
+  },
+  {
+    "id": "r81",
+    "title": "Arztbrief: Aufnahme mit hypertensiver Krise",
+    "type": "Arztbrief excerpt",
+    "text": "Arztbrief vom 20.06.2026\n\nPatient: Herr Ruediger Brandt, 50 Jahre alt\nDiagnose: Hypertensive Krise bei unzureichend eingestelltem Bluthochdruck\n\nAufnahmegrund: Der Patient wurde vom Rettungsdienst mit einem Blutdruck von 220/130 mmHg, starken Kopfschmerzen, Schwindel und Nasenbluten eingeliefert. Der Patient gibt an, in den letzten Wochen sein Blutdruckmittel nicht regelmaessig eingenommen zu haben.\n\nVitalparameter bei Aufnahme:\n- Blutdruck: 220/130 mmHg\n- Puls: 98/min\n- Temperatur: 36,8 Grad Celsius\n\nLabor:\n- Kreatinin: 1,3 mg/dl (Norm < 1,2) leicht erhoeht\n- Troponin: normal\n- Urinstatus: Proteinurie +\n\nTherapie: Der Patient erhielt Urapidil 25 mg i.v. als Bolus, danach kontinuierliche Gabe ueber Perfusor. Der Blutdruck konnte innerhalb von 4 Stunden auf 155/90 mmHg gesenkt werden.\n\nEmpfehlung: Einstellung auf eine fixe Kombination aus Candesartan 16 mg und Hydrochlorothiazid 12,5 mg. Blutdrucktagesprofil in 2 Wochen. Aufklaerung ueber Therapietreue.",
+    "questions": [
+      "Welchen Blutdruck hatte der Patient bei der Aufnahme?",
+      "Welches Medikament wurde intravenoes gegeben?",
+      "Warum ist der Blutdruck so stark angestiegen?",
+      "Welche Kombinationstherapie wird empfohlen?"
+    ],
+    "answers": [
+      "220/130 mmHg",
+      "Urapidil 25 mg i.v. als Bolus",
+      "Weil der Patient sein Blutdruckmittel nicht regelmaessig eingenommen hat",
+      "Candesartan 16 mg und Hydrochlorothiazid 12,5 mg"
+    ],
+    "vocabularyFocus": [
+      "hypertensive Krise",
+      "Urapidil",
+      "Therapietreue",
+      "Candesartan",
+      "Perfusor"
+    ],
+    "tags": [
+      "B2",
+      "Arztbrief",
+      "Hypertonie",
+      "Notfallmedizin"
+    ]
+  },
+  {
+    "id": "r82",
+    "title": "Laborbericht: Nierenwerte bei akuter Nierenschaedigung",
+    "type": "Lab report explanation",
+    "text": "Laborbefund vom 22.06.2026\n\nPatient: Frau Bianka Seidel, 68 Jahre alt\nAuftrag: Abklaerung einer akuten Nierenfunktionsverschlechterung\n\nKlinische Angabe: Z.n. grosser Hueft-OP vor 5 Tagen, jetzt verminderte Urinausscheidung (ca. 300 ml/24h), Beinoedeme.\n\nErgebnisse:\n- Kreatinin: 3,8 mg/dl (Norm 0,6-1,2 mg/dl) - stark erhoeht\n- Kreatinin vor OP (08.06.): 0,9 mg/dl - Normwert\n- Harnstoff: 95 mg/dl (Norm 10-50 mg/dl) - erhoeht\n- eGFR: 14 ml/min (Norm > 90) - stark erniedrigt\n- Kalium: 5,6 mmol/l (Norm 3,5-5,1 mmol/l) - erhoeht\n- Natrium: 135 mmol/l (Norm 135-145) - normwertig\n- Harnsaure: 9,2 mg/dl (Norm < 6,0) - erhoeht\n\nUrinstatus: spezifisches Gewicht 1.010, Erythrozyten +, Protein +\n\nBeurteilung: Akute Nierenschaedigung (AKI Stadium 2 nach KDIGO) bei V.a. praerenale Genese durch perioperativen Volumenmangel und moegliche Nephrotoxizitaet von Kontrastmittel und NSAR. Empfehlung: Volumengabe, Kaliumkontrolle, Nephrologie-Konsil.",
+    "questions": [
+      "Welches Kreatinin hatte die Patientin vor der Operation?",
+      "Welche eGFR wurde gemessen?",
+      "Welcher Elektrolytwert ist erhoeht und besorgniserregend?",
+      "Welches Stadium der akuten Nierenschaedigung liegt vor?"
+    ],
+    "answers": [
+      "0,9 mg/dl",
+      "14 ml/min",
+      "Kalium mit 5,6 mmol/l",
+      "AKI Stadium 2 nach KDIGO"
+    ],
+    "vocabularyFocus": [
+      "akute Nierenschaedigung",
+      "AKI",
+      "eGFR",
+      "praerenal",
+      "KDIGO"
+    ],
+    "tags": [
+      "B2",
+      "Labor",
+      "Niere",
+      "Nephrologie"
+    ]
+  },
+  {
+    "id": "r83",
+    "title": "Echo-Befund: Herzklappenerkrankung",
+    "type": "Imaging report excerpt",
+    "text": "ECHOKARDIOGRAFIE-BEFUND\n\nPatient: Herr Robert Henning, 76 Jahre\nDatum: 24.06.2026\nFragestellung: Belastungsdyspnoe NYHA III, V.a. Aortenklappenstenose\n\nTechnik: Transthorakale Echokardiografie (TTE) mit 2D, M-Mode, Farbdoppler und CW-Doppler\n\nBefund:\n- Linker Ventrikel: konzentrische Linksherzhypertrophie, Septum 15 mm, Hinterwand 13 mm\n- LVEF: 58 Prozent (normal)\n- Rechter Ventrikel: normal gross, normale Funktion\n- Linker Vorhof: leicht dilatiert (LAVI 38 ml/m2)\n\nKlappen:\n- Aortenklappe: hochgradig verkalkt, oeffnungseingeschraenkt\n- Vmax: 4,5 m/s, mittlerer Gradient 48 mmHg, Klappenoeffnungsflaeche 0,8 cm2\n- Mitralklappe: mittelgradige Insuffizienz\n- Trikuspidalklappe: geringe Insuffizienz, systolischer Pulmonalisdruck 40 mmHg\n\nBeurteilung: Hochgradige Aortenklappenstenose (Klappenoeffnungsflaeche 0,8 cm2) mit konzentrischer Linksherzhypertrophie und mittelgradiger Mitralinsuffizienz. Indikation zur Aortenklappenimplantation (TAVI oder operativ) gegeben.",
+    "questions": [
+      "Welcher mittlere Gradient wurde ueber der Aortenklappe gemessen?",
+      "Welche LVEF hat der Patient?",
+      "Wie gross ist die Klappenoeffnungsflaeche der Aortenklappe?",
+      "Welche Therapieoption wird empfohlen?"
+    ],
+    "answers": [
+      "48 mmHg",
+      "58 Prozent",
+      "0,8 cm2",
+      "Aortenklappenimplantation (TAVI oder operativ)"
+    ],
+    "vocabularyFocus": [
+      "Aortenklappenstenose",
+      "Echokardiografie",
+      "Gradient",
+      "Klappenoeffnungsflaeche",
+      "TAVI"
+    ],
+    "tags": [
+      "B2",
+      "Echo",
+      "Herzklappe",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r84",
+    "title": "Packungsbeilage: ASS 100 mg",
+    "type": "Medication leaflet excerpt",
+    "text": "GEBRAUCHSINFORMATION: ASS 100 mg magensaftresistente Tabletten\n\nWirkstoff: Acetylsalicylsaeure\nAnwendungsgebiete: Zur Hemmung der Blutgerinnung. Vorbeugung von Herzinfarkt und Schlaganfall bei bestehenden Risikofaktoren. Nach Herzinfarkt oder Schlaganfall zur Rueckfallprophylaxe.\n\nGegenanzeigen:\n- Ueberempfindlichkeit gegen Salicylate\n- Akute Magen-Darm-Geschwuere\n- Haemorrhagische Diathese (Blutungsneigung)\n- Schwere Leber- oder Niereninsuffizienz\n- Letztes Drittel der Schwangerschaft\n- Asthmaanfaelle in der Vorgeschichte durch Salicylate\n\nDosierung:\n- Erwachsene: 1 Tablette (100 mg) taeglich, vorzugsweise nach dem Fruehstueck\n- Die Tablette unzerkaut mit etwas Wasser einnehmen\n\nWechselwirkungen:\n- Erhoehtes Blutungsrisiko bei gleichzeitiger Gabe von anderen Blutgerinnungshemmern\n- Wirkungsverstaerkung von Methotrexat, Lithium\n- Verminderte Wirkung von Blutdrucksenkern\n\nNebenwirkungen:\n- Haeufig: Sodbrennen, Magendruck\n- Gelegentlich: Magenblutungen (auch ohne Warnzeichen)\n- Selten: allergische Reaktionen, Hautausschlag",
+    "questions": [
+      "Gegen welche Allergien darf ASS 100 nicht eingenommen werden?",
+      "Wie viele Tabletten soll der Patient taeglich einnehmen?",
+      "Wann steigt das Blutungsrisiko besonders?",
+      "Welche haeufige Nebenwirkung im Magen-Darm-Trakt tritt auf?"
+    ],
+    "answers": [
+      "Ueberempfindlichkeit gegen Salicylate",
+      "1 Tablette (100 mg) taeglich",
+      "Bei gleichzeitiger Gabe von anderen Blutgerinnungshemmern",
+      "Sodbrennen und Magendruck"
+    ],
+    "vocabularyFocus": [
+      "Acetylsalicylsaeure",
+      "Blutgerinnungshemmer",
+      "Rueckfallprophylaxe",
+      "haemorrhagische Diathese",
+      "Wechselwirkungen"
+    ],
+    "tags": [
+      "B2",
+      "Medikament",
+      "ASS",
+      "Thrombozytenaggregationshemmer"
+    ]
+  },
+  {
+    "id": "r85",
+    "title": "Klinikrichtlinie: Umgang mit Sterbefaellen",
+    "type": "Hospital policy",
+    "text": "KLINIKRICHTLINIE: UMGANG MIT STERBEFAeLLEN AUF DER STATION\n\nStand: April 2026\n\n1. Feststellung des Todes:\nDer Tod wird von einem Arzt festgestellt. Der Arzt dokumentiert Todeszeitpunkt, Todesumstaende und auffaellige Befunde. Bei ungeklaerter Todesursache oder aussergewoehnlichen Umstaenden wird die Polizei und die Staatsanwaltschaft informiert.\n\n2. Versorgung des Verstorbenen:\n- Der Verstorbene wird gewaschen, angekleidet und in eine natuerrliche Position gelegt\n- Alle medizinischen Zugaenge werden entfernt\n- Die Identifikationsarmbaender bleiben am Handgelenk\n- Der Verstorbene wird mit einem Laken bedeckt\n\n3. Information der Angehoerigen:\n- Die Angehoerigen werden sofort durch den behandelnden Arzt informiert\n- Das Gespraech findet in einem separaten Raum statt\n- Den Angehoerigen wird Zeit und Raum fuer die Verabschiedung gegeben\n- Ein Seelsorger wird auf Wunsch hinzugezogen\n\n4. Formalitaeten:\n- Die Todesbescheinigung wird vom Arzt ausgefuellt (insgesamt 4 Durchschlaege)\n- Der Leichenschauschein wird an das Standesamt geschickt\n- Die Verwaltung informiert den Bestatter nach Freigabe durch die Angehoerigen\n\n5. Besonderheiten bei Organentnahme:\n- Bei Hirntod und fehlendem Widerspruch wird die DSO (Deutsche Stiftung Organtransplantation) informiert",
+    "questions": [
+      "Was macht der Arzt bei einem Todesfall als erstes?",
+      "Was bleibt am Handgelenk des Verstorbenen?",
+      "In welcher Form findet das Gespraech mit den Angehoerigen statt?",
+      "Welche Institution wird bei Hirntod kontaktiert?"
+    ],
+    "answers": [
+      "Er stellt den Tod fest und dokumentiert die Umstaende",
+      "Die Identifikationsarmbaender",
+      "In einem separaten Raum",
+      "Die Deutsche Stiftung Organtransplantation (DSO)"
+    ],
+    "vocabularyFocus": [
+      "Todesfeststellung",
+      "Leichenschau",
+      "Todesbescheinigung",
+      "Hirntod",
+      "Organtransplantation"
+    ],
+    "tags": [
+      "B2",
+      "Klinik",
+      "Richtlinie",
+      "Sterbefall"
+    ]
+  },
+  {
+    "id": "r86",
+    "title": "Einwilligungserklaerung: MRT mit Kontrastmittel",
+    "type": "Consent form",
+    "text": "EINWILLIGUNGSERKLAERUNG FUER EINE MRT-UNTERSUCHUNG MIT KONTRASTMITTEL\n\nPatient: _________________ Datum: _________________\n\nAufklaerender Arzt: Dr. med. Robert Fricke, Radiologie\n\nUntersuchung: Magnetresonanztomografie des Schaedels mit gadoliniumhaltigem Kontrastmittel\n\nZweck der Untersuchung: Darstellung von Hirntumoren, Entzuendungen oder Durchblutungsstoerungen\n\nUeber das Kontrastmittel:\n- Das Kontrastmittel enthaelt Gadolinium\n- Es wird ueber eine Vene injiziert\n- Wirkung: verstaerkter Kontrast in bestimmten Geweben\n\nRisiken des Kontrastmittels:\n- Haeufig: Warmegefuehl, metallischer Geschmack (voruebergehend)\n- Selten: allergische Reaktion (Juckreiz, Hautausschlag, Uebelkeit)\n- Sehr selten: schwere allergische Reaktion (Atemnot, Blutdruckabfall) - Haeufigkeit unter 0,01 Prozent\n- Bei Niereninsuffizienz (GFR unter 30 ml/min): Risiko einer nephrogenen systemischen Fibrose (NSF)\n\nSicherheitsfragen vor der Untersuchung:\n- Herzschrittmacher, Cochlea-Implantat, metallische Fremdkoerper?\n- Bekannte Allergien, Asthma?\n- Eingeschraenkte Nierenfunktion, Diabetes?\n- Schwangerschaft oder Stillzeit?\n\nMir wurde erklaert, dass ich vor der Untersuchung einen Fragebogen zu Sicherheitsaspekten ausfuelle.",
+    "questions": [
+      "Welches Organ wird mit der MRT untersucht?",
+      "Welche sehr seltene, aber schwere Reaktion auf das Kontrastmittel kann auftreten?",
+      "Bei welcher Nierenfunktion besteht ein Risiko fuer NSF?",
+      "Welche Fragen werden vor der MRT geklaert?"
+    ],
+    "answers": [
+      "Das Gehirn (Schaedel)",
+      "Schwere allergische Reaktion mit Atemnot und Blutdruckabfall",
+      "Bei GFR unter 30 ml/min",
+      "Nach Herzschrittmacher, Allergien, Nierenfunktion und Schwangerschaft"
+    ],
+    "vocabularyFocus": [
+      "Gadolinium",
+      "nephrogene systemische Fibrose",
+      "Kontrastmittelallergie",
+      "MRT-Sicherheit",
+      "Schrittmacher"
+    ],
+    "tags": [
+      "B2",
+      "Einwilligung",
+      "MRT",
+      "Radiologie"
+    ]
+  },
+  {
+    "id": "r87",
+    "title": "Entlassungsbrief: Guillain-Barre-Syndrom",
+    "type": "Discharge summary",
+    "text": "ENTLASSUNGSBRIEF\n\nPatient: Felix Hofer, 38 Jahre\nAufenthalt: 15.06.2026 bis 25.06.2026\nDiagnose: Guillain-Barre-Syndrom (akute inflammatorische demyelinisierende Polyneuropathie)\n\nAnamnese: Der Patient wurde mit aufsteigender Muskelschwaeche in beiden Beinen, Gefuehlsstoerungen in den Fuessen und unsicherem Gang eingewiesen. Eine Woche zuvor hatte er einen Atemwegsinfekt mit Durchfall.\n\nDiagnostik:\n- Nervenleitgeschwindigkeit: deutliche Verlaengerung der distalen Latenz, verminderte Amplitude\n- Liquor: Eiweisserhoehung auf 120 mg/dl bei normaler Zellzahl (zytoalbuminaere Dissoziation)\n- MRT Wirbelsaeule: unauffaellig\n\nTherapie und Verlauf:\n- Immunglobuline i.v. (2 g/kg Koerpergewicht ueber 5 Tage)\n- Der Patient konnte am 5. Tag wieder kurze Strecken mit einem Rollator gehen\n- Die Kraft in den Armen blieb stets erhalten\n- Keine respiratorische Insuffizienz\n\nMedikation bei Entlassung:\n- Keine Dauermedikation\n- Physiotherapie 3x woechentlich ambulant\n\nEmpfehlungen: Neurologische Verlaufskontrolle in 4 Wochen, Ergotherapie, bei neuerlicher Schwaeche oder Schluckstoerungen sofortige Vorstellung. Die Prognose ist bei frueher Therapie guenstig.",
+    "questions": [
+      "Welche Infektion ging dem Guillain-Barre-Syndrom voraus?",
+      "Welcher Laborwert im Liquor war typischerweise erhoeht?",
+      "Mit welcher Therapie wurde der Patient behandelt?",
+      "War eine respiratorische Insuffizienz aufgetreten?"
+    ],
+    "answers": [
+      "Ein Atemwegsinfekt mit Durchfall",
+      "Eiweisserhoehung auf 120 mg/dl bei normaler Zellzahl",
+      "Immunglobuline i.v. (2 g/kg ueber 5 Tage)",
+      "Nein, die Atemmuskulatur war nicht betroffen"
+    ],
+    "vocabularyFocus": [
+      "Guillain-Barre-Syndrom",
+      "Polyneuropathie",
+      "Immunglobuline",
+      "zytoalbuminaere Dissoziation",
+      "Nervenleitgeschwindigkeit"
+    ],
+    "tags": [
+      "B2",
+      "Entlassung",
+      "Guillain-Barre",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "r88",
+    "title": "Ueberweisung: Pneumologie bei Lungenrundherd",
+    "type": "Referral letter",
+    "text": "Ueberweisung an das Lungenzentrum\n\nPatient: Dieter Mann, 62 Jahre\n\nSehr geehrter Herr Prof. Dr. Nuesser,\n\nich ueberweise Herrn Mann zur weiteren Abklaerung eines Lungenrundherds im rechten Oberlappen.\n\nVorgeschichte:\n- Nikotinanamnese: 45 Packungsjahre, seit 2 Jahren Nichtraucher\n- Beruf: Frueher Asbest- und Quarzstaubexposition (Schlosser)\n- Chronischer Husten, seit 3 Monaten zunehmend\n\nBildgebung:\n- Roentgen-Thorax: Runder, etwa 2,5 cm grosser Herd im rechten Oberlappen\n- CT-Thorax (aktuell): 2,8 x 2,4 x 2,2 cm grosser, spikulierter Rundherd im Segment 3 rechts, leichte Kontrastmittelaufnahme. Keine Lymphknotenvergroesserung mediastinal. Kein Pleuraerguss.\n\nAllgemeinzustand: Gut, keine Gewichtsabnahme, keine Haemoptysen.\n\nBitte fuehren Sie eine Bronchoskopie mit transbronchialer Biopsie oder eine CT-gesteuerte Punktion durch. Ggf. PET-CT zur Stadienabklaerung.\n\nMit freundlichen kollegialen Gruessen\nDr. med. Friedhelm Reuter, Hausarzt",
+    "questions": [
+      "Welches Risikoverhalten hatte der Patient frueher?",
+      "Wie gross ist der Rundherd im CT?",
+      "Welche Berufsanamnese ist auffaellig?",
+      "Welche Untersuchung soll als naechstes durchgefuehrt werden?"
+    ],
+    "answers": [
+      "Nikotin (45 Packungsjahre)",
+      "2,8 x 2,4 x 2,2 cm",
+      "Asbest- und Quarzstaubexposition als Schlosser",
+      "Bronchoskopie mit Biopsie oder CT-gesteuerte Punktion"
+    ],
+    "vocabularyFocus": [
+      "Lungenrundherd",
+      "spikuliert",
+      "Packungsjahre",
+      "PET-CT",
+      "Bronchoskopie"
+    ],
+    "tags": [
+      "B2",
+      "Ueberweisung",
+      "Lunge",
+      "Pneumologie"
+    ]
+  },
+  {
+    "id": "r89",
+    "title": "Merkblatt: Thromboseprophylaxe nach OP",
+    "type": "Patient information sheet",
+    "text": "MERKBLATT: THROMBOSEPROPHYLAXE NACH OPERATIONEN\n\nLiebe Patientin, lieber Patient,\n\nnach einer Operation haben Sie ein erhoehtes Risiko fuer eine Beinvenenthrombose. Deshalb erhalten Sie waehrend Ihres Krankenhausaufenthalts Massnahmen zur Thromboseprophylaxe.\n\nWarum haben Sie ein erhoehtes Risiko?\n- Die Bewegungseinschraenkung nach der OP verlangsamt den Blutfluss\n- Der Eingriff selbst aktiviert die Blutgerinnung\n- Uebergewicht, vorherige Thrombosen oder Krebserkrankungen erhoehen das Risiko zusaetzlich\n\nMassnahmen:\n1. Medikamentoese Prophylaxe:\n- Injektion von niedermolekularem Heparin (z.B. Clexane 40 mg 1x taeglich s.c.)\n- Die Spritze wird in die Bauchhaut gegeben\n- Dauer: mindestens bis zur vollstaendigen Mobilisation\n\n2. Physikalische Massnahmen:\n- Fruhmobilisation (am Tag der OP aufstehen)\n- Kompressionsstroempfe (tragen bis zum abendlichen Waschen)\n- Fussgymnastik (mehrmals taeglich Fuss kreisen und anziehen)\n\n3. Allgemeine Massnahmen:\n- Ausreichend trinken (mindestens 1,5 Liter pro Tag)\n- Beine hochlagern im Sitzen\n- Enge Kleidung vermeiden\n\nWarnsignale:\n- Schwellung, Schweregefuehl oder Schmerzen in einem Bein\n- Hitzegefuehl oder roetliche Verfaerbung\n- Ploetzliche Atemnot oder Brustschmerz (Hinweis auf Lungenembolie)\n\nBei diesen Warnsignalen: sofort Aerztin oder Pflegepersonal verstaendigen.",
+    "questions": [
+      "Welches Medikament wird zur Thromboseprophylaxe gespritzt?",
+      "Wie oft sollen die Fussuebungen gemacht werden?",
+      "Wie viel soll der Patient taeglich trinken?",
+      "Welches Warnsignal koennte auf eine Lungenembolie hinweisen?"
+    ],
+    "answers": [
+      "Niedermolekulares Heparin (z.B. Clexane 40 mg)",
+      "Mehrmals taeglich",
+      "Mindestens 1,5 Liter pro Tag",
+      "Ploetzliche Atemnot oder Brustschmerz"
+    ],
+    "vocabularyFocus": [
+      "Thromboseprophylaxe",
+      "niedermolekulares Heparin",
+      "Fruhmobilisation",
+      "Kompressionsstroempfe",
+      "Lungenembolie"
+    ],
+    "tags": [
+      "B2",
+      "Patienteninfo",
+      "Thrombose",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "r90",
+    "title": "Krankenkasse: Widerspruch abgelehnt",
+    "type": "Insurance/admin document",
+    "text": "IKK classic\nService-Center, 01097 Dresden\n\nWiderspruchsbescheid\n\nVersicherter: Max Wunderlich\nMitgliedsnummer: 369258147\nDatum: 25.06.2026\n\nBetreff: Ihr Widerspruch gegen die Ablehnung der Kostenuebernahme fuer eine Liposuktion\n\nSehr geehrter Herr Wunderlich,\n\nSie haben am 10.05.2026 Widerspruch gegen unseren Bescheid vom 25.04.2026 eingelegt.\n\nWir haben Ihren Widerspruch erneut geprueft. Das Ergebnis:\n\nDer Widerspruch wird zurueckgewiesen.\n\nBegruendung:\nNach Paragraf 27b SGB V ist eine Liposuktion zur Behandlung des Lipoedems nur dann Kassenleistung, wenn folgende Voraussetzungen gemeinsam vorliegen:\n- Gesicherte Diagnose Lipoedem Stadium II oder III\n- Erfolglose konservative Therapie ueber mindestens 6 Monate\n- Dokumentierte staendige Schmerzen und Bewegungseinschraenkung\n\nBei Ihnen liegt die Diagnose Lipoedem Stadium I vor. Nach den aktuellen Leitlinien ist in diesem Stadium die konservative Therapie die Behandlung der Wahl. Die beantragte Liposuktion ist daher keine Leistung der gesetzlichen Krankenversicherung.\n\nRechtsbehelfsbelehrung:\nGegen diesen Bescheid koennen Sie innerhalb eines Monats nach Bekanntgabe Klage beim Sozialgericht Dresden einlegen.\n\nDie Klage ist schriftlich oder zur Niederschrift des Urkundsbeamten der Geschaeftsstelle einzureichen.",
+    "questions": [
+      "Welche Erkrankung wurde beim Patienten diagnostiziert?",
+      "Welches Stadium liegt nach Aktenlage vor?",
+      "Auf welcher Rechtsgrundlage beruht die Entscheidung?",
+      "Wo kann der Patient innerhalb eines Monats Klage einreichen?"
+    ],
+    "answers": [
+      "Lipoedem Stadium I",
+      "Stadium I",
+      "Paragraf 27b SGB V",
+      "Beim Sozialgericht Dresden"
+    ],
+    "vocabularyFocus": [
+      "Widerspruch",
+      "Liposuktion",
+      "Lipoedem",
+      "Rechtsbehelfsbelehrung",
+      "Sozialgericht"
+    ],
+    "tags": [
+      "B2",
+      "Krankenkasse",
+      "Widerspruch",
+      "Versicherung"
+    ]
+  },
+  {
+    "id": "r91",
+    "title": "Leitlinie: Diagnostik der tiefen Beinvenenthrombose",
+    "type": "Clinical guideline summary",
+    "text": "S2k-Leitlinie: Diagnostik der tiefen Beinvenenthrombose\n\nStand: 2026 (Auszug)\n\nVorgehen bei V.a. tiefe Beinvenenthrombose (TVT):\n\nSchritt 1: Klinische Wahrscheinlichkeit\nAnwendung des Wells-Scores. Kriterien:\n- Aktive Tumorerkrankung (+1 Punkt)\n- Parese oder kuerzliche Immobilisation (+1)\n- Bettlagerigkeit > 3 Tage oder OP < 4 Wochen (+1)\n- Schmerz an der tiefen Vene (+1)\n- Schwellung des ganzen Beins (+1)\n- Umfangsdifferenz > 3 cm (+1)\n- Eindrueckbares Oedem (+1)\n- Kollateralvenen (+1)\n- Alternative Diagnose ebenso wahrscheinlich (-2)\n\nAuswertung:\n- Wells-Score > 2 = hohe Wahrscheinlichkeit\n- Wells-Score <= 2 = geringe Wahrscheinlichkeit\n\nSchritt 2: D-Dimere (bei geringer Wahrscheinlichkeit)\n- D-Dimere negativ (< 0,5 mg/l): TVT unwahrscheinlich\n- D-Dimere positiv: Kompressionssonografie erforderlich\n\nSchritt 3: Kompressionssonografie (bei hoher Wahrscheinlichkeit oder positiven D-Dimeren)\n- Kompressibilitaet der tiefen Beinvenen\n- Fehlende Kompressibilitaet = Nachweis einer Thrombose\n\nTherapie: Bei gesicherter TVT sofort therapeutische Antikoagulation beginnen.",
+    "questions": [
+      "Welcher Score wird zur Bestimmung der klinischen Wahrscheinlichkeit verwendet?",
+      "Ab welcher Umfangsdifferenz wird ein Punkt im Wells-Score vergeben?",
+      "Wann kommt der D-Dimer-Test zum Einsatz?",
+      "Was zeigt die fehlende Kompressibilitaet in der Sonografie an?"
+    ],
+    "answers": [
+      "Der Wells-Score",
+      "Ueber 3 cm",
+      "Bei geringer klinischer Wahrscheinlichkeit",
+      "Den Nachweis einer Thrombose"
+    ],
+    "vocabularyFocus": [
+      "Wells-Score",
+      "Kompressionssonografie",
+      "D-Dimere",
+      "TVT",
+      "Immobilisation"
+    ],
+    "tags": [
+      "B2",
+      "Leitlinie",
+      "Thrombose",
+      "Gefaessmedizin"
+    ]
+  },
+  {
+    "id": "r92",
+    "title": "Notaufnahmeprotokoll: Anaphylaktischer Schock",
+    "type": "Emergency department note",
+    "text": "NOTAUFNAHME - AERZTLICHER ERSTBERICHT\n\nDatum: 27.06.2026, 14:50 Uhr\n\nPatientin: Lena Kraft, 26 Jahre\nEintreffart: Mit Rettungswagen, Notarzt\n\nVorstellungsgrund: Akute allergische Reaktion mit Atemnot nach Wespenstich in den rechten Unterarm.\n\nZeitlicher Verlauf:\n- 14:15 Uhr: Wespenstich beim Picknick\n- 14:20 Uhr: Beginnende Schwellung am Arm, Juckreiz am gesamten Koerper\n- 14:25 Uhr: Uebelkeit, Schwindel, Atemnot, Hautroetung am gesamten Koerper\n- 14:30 Uhr: Eintreffen des Notarztes\n\nVitalparameter bei Eintreffen des Notarztes:\n- Blutdruck: 85/50 mmHg\n- Puls: 120/min, tachykard\n- SpO2: 91 Prozent\n\nNotarztmassnahmen:\n- Adrenalin 0,5 mg intramuskulaer\n- Volumen: 500 ml NaCl 0,9% als Bolus\n- Prednisolon 250 mg i.v.\n- Clemastin 2 mg i.v.\n- Sauerstoff 6 l/min ueber Maske\n\nBefund in der Notaufnahme (14:50 Uhr):\n- Blutdruck: 100/60 mmHg\n- Puls: 95/min\n- SpO2: 97 Prozent unter 2 l Sauerstoff\n- Haut: Urtikaria ruecklaeufig\n- Lunge: vereinzelt Giemen\n\nDiagnose: Anaphylaktischer Schock Grad III nach Ring und Messmer (Kreislauf + Atmung + Haut) bei Wespenstichallergie.\n\nTherapie: Stationaere Ueberwachung fuer 24 Stunden. Notfallset und Allergiepass. Ueberweisung zur spezifischen Immuntherapie (Hyposensibilisierung).",
+    "questions": [
+      "Welches Insekt hat die Patientin gestochen?",
+      "Welcher Schockgrad liegt nach Ring und Messmer vor?",
+      "Welches Medikament wurde als erstes vom Notarzt gegeben?",
+      "Welche Langzeittherapie wird empfohlen?"
+    ],
+    "answers": [
+      "Eine Wespe",
+      "Grad III (Kreislauf + Atmung + Haut)",
+      "Adrenalin 0,5 mg intramuskulaer",
+      "Spezifische Immuntherapie (Hyposensibilisierung)"
+    ],
+    "vocabularyFocus": [
+      "anaphylaktischer Schock",
+      "Urtikaria",
+      "Giemen",
+      "Hyposensibilisierung",
+      "Notfallset"
+    ],
+    "tags": [
+      "B2",
+      "Notaufnahme",
+      "Allergie",
+      "Anaphylaxie"
+    ]
+  },
+  {
+    "id": "r93",
+    "title": "Operationsbericht: Leistenbruch beidseits",
+    "type": "Operation report excerpt",
+    "text": "OPERATIONSBERICHT\n\nPatient: Tobias Specht, 52 Jahre\nDatum: 29.06.2026\nOperation: Beidseitige laparoskopische Leistenhernienversorgung (TAPP)\n\nPraeoperative Diagnose: Leistenhernie rechts und links\nPostoperative Diagnose: s.o.\n\nOperationsverlauf:\nDie Operation erfolgte in Intubationsnarkose. Der Patient wurde in Rueckenlage gelagert. Nach Desinfektion und steriler Abdeckung wurde ein Pneumoperitoneum mit 14 mmHg angelegt.\n\nEine 10 mm Optik-Trokarhuelle wurde umbilikal eingebracht. Zwei 5 mm Arbeits-Trokare wurden lateral der Rektusscheiden platziert.\n\nRechtsseitig zeigte sich eine mediale Leistenhernie mit einem Bruchluck von ca. 2 cm. Der Bruchsack reponierte sich spontan. Das Peritoneum wurde von der Bauchwand abgeloest. Ein 12 x 15 cm grosses Polypropylemetz wurde eingelegt und mit Tacks fixiert. Danach wurde das Peritoneum mit Naht verschlossen.\n\nAuf der linken Seite fand sich eine laterale Leistenhernie mit einem Bruchluck von ca. 1,5 cm. Es erfolgte das gleiche Vorgehen mit Netzeinlage.\n\nBlutstillung: Sorgfaeltig, keine aktive Blutung\nBlutverlust: unter 20 ml\nOperationsdauer: 1 Stunde 10 Minuten\nKomplikationen: Keine",
+    "questions": [
+      "Welche OP-Methode wurde gewaehlt?",
+      "Was wurde zur Verstaerkung der Bauchwand eingelegt?",
+      "Welcher Zugang wurde fuer die Optik gewaehlt?",
+      "Wie lange dauerte die Operation?"
+    ],
+    "answers": [
+      "TAPP (beidseitige laparoskopische Leistenhernienversorgung)",
+      "Ein Polypropylemetz",
+      "Umbilikal (10 mm Trokar)",
+      "1 Stunde 10 Minuten"
+    ],
+    "vocabularyFocus": [
+      "TAPP",
+      "Leistenhernie",
+      "Pneumoperitoneum",
+      "Polypropylemetz",
+      "Trokar"
+    ],
+    "tags": [
+      "B2",
+      "Operationsbericht",
+      "Leistenbruch",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "r94",
+    "title": "Visitennotiz: Alkoholentzugsdelir",
+    "type": "Ward round note",
+    "text": "STATIONSVISITE - 01.07.2026\n\nPatient: Johann Nestler, 55 Jahre, Zimmer 304\nStation: 3C - Innere Medizin\n\nDiagnose: Alkoholentzugssyndrom mit Delir bei langjaehriger Alkoholabhaengigkeit\n\nAktueller Status Tag 3 der stationaeren Therapie:\n- Aufnahmegrund: Der Patient wurde nach einem Krampfanfall mit anschliessendem verwirrten Zustand eingewiesen. Der Patient gibt taeglichen Alkoholkonsum von ca. 200 g Alkohol an.\n- Heute: Patient ist wach, zeitlich noch nicht voll orientiert, Tremor der Haende deutlich ruecklaeufig\n- Puls: 88/min, Blutdruck: 135/85 mmHg\n- Schwitzen: nicht mehr kalt oder klam\n\nTherapie:\n- Clomethiazol Ausschleichschema: heute 6 Kapseln (von initial 12)\n- Vitamin B1 200 mg i.v. taeglich (Prophylaxe Wernicke-Enzephalopathie)\n- Multivitaminpraeparat oral\n- Physiotherapie und Beschaeftigungstherapie seit gestern begonnen\n\nLabor:\n- GGT: 220 U/l (erhoeht)\n- MCV: 104 fl (erhoeht, makrozytaer)\n- Vitamin B12 180 pg/ml (niedrig, grenzwertig)\n\nPlan:\n- Entlassung in 5-7 Tagen nach Abschluss des Ausschleichschemas\n- Kontaktaufnahme mit Suchtberatungsstelle\n- Sozialdienst fuer Reha-Massnahmen informieren",
+    "questions": [
+      "Welche akute Komplikation fuehrte zur stationaeren Aufnahme?",
+      "Welches Medikament wird nach Ausschleichschema gegeben?",
+      "Welches Vitamin wird zur Wernicke-Prophylaxe gegeben?",
+      "Welcher Laborwert zeigt die chronische Alkoholbelastung an?"
+    ],
+    "answers": [
+      "Ein Krampfanfall mit anschliessendem verwirrten Zustand",
+      "Clomethiazol",
+      "Vitamin B1 200 mg i.v. taeglich",
+      "GGT mit 220 U/l"
+    ],
+    "vocabularyFocus": [
+      "Alkoholentzug",
+      "Delir",
+      "Clomethiazol",
+      "Wernicke-Enzephalopathie",
+      "Suchtberatung"
+    ],
+    "tags": [
+      "B2",
+      "Visite",
+      "Alkohol",
+      "Suchtmedizin"
+    ]
+  },
+  {
+    "id": "r95",
+    "title": "Pflegeuebergabe: Antikoagulation auf Station",
+    "type": "Nursing handover note",
+    "text": "PFLICHTENUEBERGABE - FRUEHSCHICHT\n\nDatum: 02.07.2026, 06:30 Uhr\n\nPatient: Gerda Luettgen, 74 Jahre, Zimmer 215\nStation: 2B - Kardiologie\n\nDiagnose: Vorhofflimmern, Neueinstellung auf Phenprocoumon\n\nAktueller Zustand:\n- Die Patientin ist wach und orientiert\n- INR heute frueh: 1,8 (Zielbereich 2,0 - 3,0)\n- Keine Blutungszeichen, keine Haematurie\n- Blutdruck: 130/80 mmHg\n\nLetzte 24 Stunden:\n- Phenprocoumon gestern 9 mg (nach INR-Schema)\n- Enoxaparin 40 mg s.c. erneut gegeben (INR noch nicht therapeutisch)\n- BZ-Kontrollen: normal (kein Diabetes)\n- Stuhl: unauffaellig (kein Teerstuhl)\n\nWichtige Hinweise:\n- Patientin hat leichte Haematome an beiden Unterarmen nach Blutabnahmen\n- Bitte heute INR-Kontrolle um 18:00 Uhr\n- Bei INR ueber 3,5: Phenprocoumon aussetzen und Arzt informieren\n- Fallenlassen oder ungewoehnliche blaue Flecken dokumentieren\n\nAktuelle Medikation:\n- Phenprocoumon (nach INR-Schema)\n- Bisoprolol 2,5 mg 1-0-0\n- Pantoprazol 40 mg 1-0-0\n\nTermine:\n- Heute 10:00 Uhr: Aufklaerungsgespraech ueber INR-Selbstmessung",
+    "questions": [
+      "Welche INR wurde heute frueh gemessen?",
+      "Welcher INR-Wert ist therapeutisch angestrebt?",
+      "Welches Medikament wird noch taeglich gespritzt, bis die INR therapeutisch ist?",
+      "Ab welchem INR-Wert soll das Phenprocoumon ausgesetzt werden?"
+    ],
+    "answers": [
+      "1,8",
+      "2,0 bis 3,0",
+      "Enoxaparin 40 mg s.c.",
+      "Ueber 3,5"
+    ],
+    "vocabularyFocus": [
+      "INR",
+      "Phenprocoumon",
+      "Enoxaparin",
+      "Bridging",
+      "Haematome"
+    ],
+    "tags": [
+      "B2",
+      "Pflege",
+      "Antikoagulation",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "r96",
+    "title": "Reha-Empfehlung: Nach Schlaganfall",
+    "type": "Rehabilitation recommendation",
+    "text": "REHA-EMPFEHLUNG\n\nPatientin: Waltraud Schulz, 68 Jahre\nDiagnose: Z.n. ischaemischem Schlaganfall im Media-Teilgebiet rechts mit linksseitiger Hemiparese\nDatum: 03.07.2026\n\nSehr geehrte Reha-Klinik,\n\nFrau Schulz erlitt am 15.06.2026 einen Media-Infarkt rechts. Eine Thrombolyse wurde durchgefuehrt, jedoch mit unvollstaendiger Rueckbildung der Symptome.\n\nAktueller Zustand:\n- Linksseitige Hemiparese: Arm Kraftgrad M3, Bein Kraftgrad M4\n- Keine Aphasie (Sprachzentrum nicht betroffen)\n- Schluckstoerung: weiche Kost mit angepasster Konsistenz moeglich, keine Sondenkost\n- Alltag: Benoetigt Hilfe bei Koerperpflege und Anziehen\n- Depression: Patientin ist niedergeschlagen, psychologische Mitbetreuung erforderlich\n\nBildgebung: MRT-Schaedel zeigt grossen kortikalen Media-Infarkt rechts.\n\nReha-Ziele:\n1. Verbesserung der Feinmotorik der linken Hand\n2. Sicheres Gehen mit Hilfsmittel (Hausstrecke)\n3. Selbststaendigkeit bei der Koerperpflege\n4. Logopaedisches Schlucktraining fortsetzen\n5. Psychologische Begleitung der Erkrankungsverarbeitung\n\nBegleiterkrankungen: Hypertonie, Diabetes Typ 2.\n\nEmpfohlene Dauer: 4 Wochen stationaer, ggf. Verlaengerung auf 6 Wochen.",
+    "questions": [
+      "Welche Seite des Koerpers ist von der Parese betroffen?",
+      "Welchen Kraftgrad hat der linke Arm?",
+      "Welche Komplikation besteht beim Schlucken?",
+      "Welche psychische Begleiterscheinung wird beschrieben?"
+    ],
+    "answers": [
+      "Die linke Seite",
+      "M3",
+      "Schluckstoerung, weiche Kost mit angepasster Konsistenz",
+      "Depression, Niedergeschlagenheit"
+    ],
+    "vocabularyFocus": [
+      "Hemiparese",
+      "Media-Infarkt",
+      "Thrombolyse",
+      "Schlucktraining",
+      "Erkrankungsverarbeitung"
+    ],
+    "tags": [
+      "B2",
+      "Reha",
+      "Schlaganfall",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "r97",
+    "title": "Nachsorgebrief: Nach ESWL bei Nierensteinen",
+    "type": "Follow-up letter",
+    "text": "NACHSORGEBRIEF - UROLOGISCHE PRAXIS DR. STUMPF\n\nPatient: Lars Gebhardt, 44 Jahre\nDiagnose: Z.n. ESWL (extrakorporale Stosswellenlithotripsie) Nierenstein linke Niere\nDatum: 04.07.2026\n\nSehr geehrter Herr Kollege,\n\nwir haben Herrn Gebhardt heute 14 Tage nach der ESWL zur Verlaufskontrolle gesehen.\n\nAktueller Befund:\n- Der Patient ist beschwerdefrei, keine Koliken mehr\n- Keine Makrohaematurie mehr (mikroskopisch keine Erythrozyten mehr im Urin)\n- Blutdruck: 125/80 mmHg\n\nBildgebung: Sonografie der Nieren zeigt Steinfragmente bis maximal 3 mm im unteren Kelch der linken Niere, kein Harnstau.\n\nSteinanalyse: Kalziumoxalat-Monohydrat (Weddellit).\n\nEmpfehlungen:\n1. Naechste Kontrolle in 4 Wochen mit Sonografie und Urinstatus\n2. Ausreichende Trinkmenge: mindestens 2,5-3 Liter pro Tag\n3. Kochsalzarme Kost (maximal 5 g Salz pro Tag)\n4. Kein uebermaessiger Konsum von oxalathaltigen Lebensmitteln (Spinat, Rhabarber, Schokolade, Nuesse)\n5. Bei erneuten Schmerzen oder Fieber sofort vorstellen\n6. Metabolische Abklaerung (24h-Sammelurin) in 3 Monaten\n\nFalls es zu keinem vollstaendigen Abgang in 4 Wochen kommt, ist eine Ureterorenoskopie (URS) zu diskutieren.",
+    "questions": [
+      "Welche Behandlung wurde zur Zertruemmerung des Steins durchgefuehrt?",
+      "Welche Steinfragmente sind noch nachweisbar?",
+      "Aus welchem Material bestand der Stein?",
+      "Wie viel soll der Patient taeglich trinken?"
+    ],
+    "answers": [
+      "ESWL (extrakorporale Stosswellenlithotripsie)",
+      "Fragmente bis 3 mm im unteren Kelch",
+      "Kalziumoxalat-Monohydrat (Weddellit)",
+      "Mindestens 2,5 bis 3 Liter pro Tag"
+    ],
+    "vocabularyFocus": [
+      "ESWL",
+      "Steinanalyse",
+      "Kalziumoxalat",
+      "Makrohaematurie",
+      "Ureterorenoskopie"
+    ],
+    "tags": [
+      "B2",
+      "Nachsorge",
+      "Nierenstein",
+      "Urologie"
+    ]
+  },
+  {
+    "id": "r98",
+    "title": "Oeffentlicher Aushang: HIV-Testwoche",
+    "type": "Public health notice",
+    "text": "GESUNDHEITSAMT HAMBURG - PRESSEMITTEILUNG\n\nHIV-TESTWOCHE 2026: ICH LASS MICH TESTEN\n\nVom 15. bis 22. Juli 2026 findet in Hamburg die diesjaehrige HIV-Testwoche statt. Ziel der Aktion ist es, die Testbereitschaft zu erhoehen und die Zahl der unerkannten HIV-Infektionen zu senken.\n\nWarum testen lassen?\n- In Deutschland leben schaetzungsweise rund 90.800 Menschen mit HIV\n- Etwa 8.600 wissen nichts von ihrer Infektion (Dunkelziffer)\n- Eine fruehzeitig erkannte HIV-Infektion ist heute gut behandelbar\n- Die Lebenserwartung bei frueher Therapie entspricht nahezu der Normalbevoelkerung\n\nWer sollte sich testen lassen?\n- Nach ungeschuetztem Geschlechtsverkehr mit unbekanntem Partner\n- Nach Kondomunfall oder Vergewaltigung\n- Bei wiederholten fieberhaften Infekten, unklaerem Gewichtsverlust, Durchfaellen\n- Bei geplanter Schwangerschaft\n\nWo kann man sich testen lassen?\n- Bei Hausaerzten (kassenfinanziert bei Verdacht)\n- Gesundheitsamt Hamburg (anonym und kostenlos)\n- Aidshilfe Hamburg (anonym, Kosten nach Selbsteinschaetzung)\n\nMoeglichkeiten der HIV-Postexpositionsprophylaxe (PEP):\nNach einem Risikokontakt kann innerhalb von 48 Stunden eine PEP mit antiviralen Medikamenten die Infektion verhindern. Wenden Sie sich an die Notaufnahme eines Krankenhauses oder die naechste Aidshilfe.",
+    "questions": [
+      "Wie viele Menschen leben schaetzungsweise mit HIV in Deutschland?",
+      "Wie viele wissen nichts von ihrer Infektion?",
+      "Wo kann man sich anonym testen lassen?",
+      "Innerhalb welcher Zeit ist eine HIV-Postexpositionsprophylaxe wirksam?"
+    ],
+    "answers": [
+      "Rund 90.800",
+      "Etwa 8.600",
+      "Beim Gesundheitsamt or Aidshilfe",
+      "Innerhalb von 48 Stunden"
+    ],
+    "vocabularyFocus": [
+      "HIV",
+      "Testkampagne",
+      "Dunkelziffer",
+      "PEP",
+      "anonym"
+    ],
+    "tags": [
+      "B2",
+      "Oeffentlichkeit",
+      "HIV",
+      "Praev ention"
+    ]
+  },
+  {
+    "id": "r99",
+    "title": "Terminvorbereitung: Oraler Glukosetoleranztest",
+    "type": "Appointment instruction sheet",
+    "text": "VORBEREITUNG: ORALER GLUKOSETOLERANZTEST (oGTT)\n\nSehr geehrte Patientin, sehr geehrter Patient,\n\nbei Ihnen wurde ein oraler Glukosetoleranztest zur Abklaerung eines Diabetes mellitus oder einer gestoerten Glukosetoleranz verordnet.\n\nTermin: 07.07.2026 um 08:00 Uhr im Labor, Raum 001.\n\nWichtige Vorbereitung:\n- Drei Tage vor dem Test: Normale Kohlenhydratzufuhr (mindestens 150 g Kohlenhydrate pro Tag)\n- Keine strenge Diaet vor dem Test\n- Am Vorabend ab 22:00 Uhr: Nuechtern bleiben (nichts essen, nichts trinken ausser Wasser)\n- Am Morgen des Tests: Nicht rauchen, keinen Kaffee oder Tee trinken\n- Medikamente wie gewohnt einnehmen (ausser blutzuckersenkende Medikamente - bitte mit Arzt absprechen)\n\nAblauf:\n1. Blutabnahme nuechtern (Blutzucker nuchtern)\n2. Dann trinken Sie 300 ml einer Zuckerloesung (75 g Glukose) innerhalb von 5 Minuten\n3. Nach 60 und 120 Minuten wird erneut Blut abgenommen\n4. Sie bleiben waerend der gesamten Testdauer in der Praxis\n\nDauer: ca. 2,5 Stunden.\n\nBitte mitbringen: Versichertenkarte, etwas zu lesen, bequeme Kleidung.\n\nNach dem Test: Sie duerfen sofort wieder normal essen und trinken.",
+    "questions": [
+      "Wie viele Tage vor dem Test soll normal gegessen werden?",
+      "Ab wann muessen Sie nuechtern bleiben?",
+      "Was trinken Sie zu Beginn des eigentlichen Tests?",
+      "Wie oft wird nach dem Trinken Blut abgenommen?"
+    ],
+    "answers": [
+      "Drei Tage vor dem Test",
+      "Ab 22:00 Uhr am Vorabend",
+      "300 ml einer Zuckerloesung mit 75 g Glukose",
+      "Nach 60 und 120 Minuten"
+    ],
+    "vocabularyFocus": [
+      "Glukosetoleranztest",
+      "oGTT",
+      "nuechtern",
+      "Glukose",
+      "Kohlenhydrate"
+    ],
+    "tags": [
+      "B2",
+      "Termin",
+      "Diabetes",
+      "Stoffwechsel"
+    ]
+  }
+]

@@ -1,0 +1,3057 @@
+[
+  {
+    "id": "fsp_w_001",
+    "caseTitle": "Akute Dyspnoe bei COPD",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 68-jaehrigen Patienten mit akuter Dyspnoe bei bekannter COPD.",
+    "patientData": "68 Jahre, mannlich, 78 kg, BMI 27, Nichtraucher seit 5 Jahren (45 pack years)",
+    "history": "COPD GOLD III, 3 Exazerbationen im letzten Jahr. Seit 2 Tagen zunehmende Dyspnoe, purulenter Auswurf, Fieber 38.5 Grad.",
+    "examFindings": "AF 28/min, SaO2 88% (Raumluft), BS 38.6 Grad, RR 145/85. Auskultation: beidseits FEuchte RG, exspiratorisches Giemen.",
+    "diagnostics": "BGA: pH 7.32, pCO2 55, pO2 65, HCO3 27. CRP 120 mg/L. Leukozyten 14.5 G/L. Roentgen-Thorax: beidseits Infiltrate.",
+    "assessment": "AE-COP mit bakterieller Exazerbation. Respiratorische Partialinsuffizienz (Typ 1).",
+    "treatment": "Sauerstoff 2L/min ueber Nasenbrille, Prednisolon 40 mg i.v., Amoxicillin/Clavulansaeure 875/125 mg 3x/Tag, Salbutamol/Ipratropium per Vernebler.",
+    "dischargePlan": "Fortfuehrung der inhalativen Therapie, Antibiotika fuer 7 Tage, Sauerstoff-Langzeittherapie pruefen. Wiedervorstellung beim Pneumologen in 2 Wochen.",
+    "expectedStructure": [
+      "Patientendaten (Alter, Geschlecht, Gewicht)",
+      "Aktuelle Symptomatik und Vorgeschichte",
+      "Klinischer Untersuchungsbefund",
+      "Diagnostik (Labor, BGA, Bildgebung)",
+      "Diagnose",
+      "Therapie",
+      "Medikamente bei Entlassung",
+      "Empfehlungen und Wiedervorstellung"
+    ],
+    "usefulPhrases": [
+      "bei bekannter COPD",
+      "mit purulentem Auswurf",
+      "respiratorische Partialinsuffizienz",
+      "AE-COP = akute Exazerbation der COPD",
+      "Sauerstoff-Langzeittherapie"
+    ],
+    "modelAnswer": "68-jaehriger Patient mit bekannter COPD GOLD III. Aufnahme wegen akuter Dyspnoe bei bakterieller Exazerbation mit respiratorischer Partialinsuffizienz. Klinisch: AF 28/min, SaO2 88%, Fieber. BGA: pH 7.32, pCO2 55 mmHg. CRP 120 mg/L. Thorax-Roentgen: beidseitige Infiltrate. Therapie: Sauerstoff 2L/min, Prednisolon 40 mg i.v., Amoxicillin/Clavulansaeure 875/125 mg, Bronchodilatation per Vernebler. Unter Therapie klinische Besserung. Bei Entlassung: Fortfuehrung der inhalativen Therapie, Antibiotika fuer 7 Tage, pneumologische Wiedervorstellung in 2 Wochen, Sauerstoff-Langzeittherapie pruefen."
+  },
+  {
+    "id": "fsp_w_002",
+    "caseTitle": "Akutes Koronarsyndrom",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 55-jaehrigen Patienten mit akutem ST-Hebungsinfarkt.",
+    "patientData": "55 Jahre, mannlich, 82 kg, BMI 28",
+    "history": "Seit 2 Stunden retrosternaler Druck, ausstrahlend in den linken Arm, mit Dyspnoe und Uebelkeit. Nikotin 30 pack years, Hypertonie, Hyperlipidamie.",
+    "examFindings": "RR 160/95, HF 110/min, BS 36.8 Grad. Herz: 2/6 Systolikum, Lunge o.B., keine Oedeme.",
+    "diagnostics": "EKG: ST-Hebungen in V2-V5. Troponin T: 4500 ng/L. CK: 890 U/L. Koronarangiographie: proximaler RIVA-Verschluss.",
+    "assessment": "Akuter Vorderwandinfarkt bei RIVA-Verschluss.",
+    "treatment": "Priaortaet PTCA + DES RIVA. ASS 250 mg i.v., Ticagrelor 180 mg, Heparin. Clopidogrel 75 mg fuer 1 Jahr.",
+    "dischargePlan": "ASS 100 mg taeglich lebenslang, Ticagrelor 90 mg 2x/Tag fuer 12 Monate, Ramipril, Bisoprolol, Atorvastatin 40 mg. Kardiale Rehabilitation. Wiedervorstellung Kardiologie in 4 Wochen.",
+    "expectedStructure": [
+      "Aufnahmegrund und Symptomatik",
+      "Kardiovaskulaere Risikofaktoren",
+      "Klinischer Befund bei Aufnahme",
+      "EKG und Labor",
+      "Koronarangiographie-Befund",
+      "Diagnose",
+      "Akuttherapie",
+      "Medikation bei Entlassung",
+      "Weiteres Procedere"
+    ],
+    "usefulPhrases": [
+      "retrosternaler Druck",
+      "ST-Hebungsinfarkt",
+      "RIVA-Verschluss",
+      "PTCA = perkutane transluminale Koronarangioplastie",
+      "DES = Drug Eluting Stent"
+    ],
+    "modelAnswer": "55-jaehriger Patient mit akutem STEMI der Vorderwand bei RIVA-Verschluss. Kardiovaskulaere Risikofaktoren: Nikotin, Hypertonie, Hyperlipidamie. Akuttherapie: primaere PTCA mit DES-Implantation. Medikation: ASS, Ticagrelor, Ramipril, Bisoprolol, Atorvastatin. Kardiale Rehabilitation empfohlen."
+  },
+  {
+    "id": "fsp_w_003",
+    "caseTitle": "Statioenaere Aufnahme bei Pneumonie",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 76-jaehrige Patientin mit ambulanter Pneumonie.",
+    "patientData": "76 Jahre, weiblich, 65 kg, BMI 23",
+    "history": "Seit 5 Tagen Husten, Fieber bis 39 Grad, purulenter Auswurf, Dyspnoe bei Belastung. Bekannte Herzinsuffizienz NYHA II.",
+    "examFindings": "RR 140/80, HF 92/min, BS 38.7 Grad, AF 22/min, SaO2 91% (Raumluft). Auskultation: EG rechts basal.",
+    "diagnostics": "CRP 185 mg/L, Leukozyten 12.3 G/L, PCT 3.2 ng/mL. Thorax-Roentgen: Rechtsseitige Unterlappenpneumonie.",
+    "assessment": "Ambulant erworbene Pneumonie (CAP) rechts basal. CRB-65 Score 1.",
+    "treatment": "Ceuroxim 1.5 g 3x/Tag i.v. fuer 7 Tage, Prednisolon 40 mg fuer 3 Tage, Sauerstoff 2L/min, Antipyrese.",
+    "dischargePlan": "Umstellung auf orale Antibiose (Cefuroxim-Axetil), Fortfuehrung der Herzinsuffizienz-Therapie. Wiedervorstellung Pneumologie. Pneumokokken- und Grippeimpfung empfohlen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Anamnese und Vorerkrankungen",
+      "Klinischer Befund",
+      "Diagnostische Ergebnisse",
+      "Diagnose",
+      "Statioenaere Therapie",
+      "Entlassmedikation",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "ambulant erworbene Pneumonie",
+      "CRB-65 Score",
+      "purulenter Auswurf",
+      "Antibiose",
+      "Unterlappenpneumonie"
+    ],
+    "modelAnswer": "76-jaehrige Patientin mit ambulanter Pneumonie rechts basal. CRB-65 Score 1. Aufnahmebefund: Fieber, Tachypnoe, Rechtsbasale RG. CRP 185 mg/L. Therapie: Ceuroxim i.v., Prednisolon, Sauerstoff. Klinische Besserung unter Therapie. Entlassung: orale Antibiose, Impfung empfohlen."
+  },
+  {
+    "id": "fsp_w_004",
+    "caseTitle": "Chronisches Nierenversagen (CKD)",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 72-jaehrige Patientin mit chronischer Niereninsuffizienz Stadium 4.",
+    "patientData": "72 Jahre, weiblich, 68 kg, BMI 26",
+    "history": "Zunehmende Muedigkeit, Juckreiz, geschwollene Beine seit Wochen. Bekannte diabetische Nephropathie. DM Typ 2 seit 20 Jahren, Hypertonie.",
+    "examFindings": "RR 155/90, HF 80/min. Beinodeme beidseits bis Unterschenkel. Haut trocken, Kratzspuren.",
+    "diagnostics": "Kreatinin 3.8 mg/dL, eGFR 15 mL/min, Kalium 5.2 mmol/L, Hb 10.1 g/dL. Urin: Proteinurie 3.5 g/Tag. Sono-Niere: verkleinert, echoarm.",
+    "assessment": "Chronische Niereninsuffizienz Stadium 4 bei diabetischer Nephropathie. Renale Anamie. Hyperkaliämie.",
+    "treatment": "Diaetberatung (kaliumarm, phosphatarm, eiweissreduziert). Furosemid 40 mg, Erythropoetin, Kalzium-Acetat. Dialysevorbereitung (Shunt-Anlage).",
+    "dischargePlan": "Fortfuehrung der diuretischen Therapie, Erythropoetin subkutan 1x/Woche, kaliumarme Diat. Dialyse-Checkliste: Shunt-Chirurgie innerhalb 3 Monaten. Vorstellung Nephrologie in 2 Wochen.",
+    "expectedStructure": [
+      "Patientendaten und Grunderkrankung",
+      "Aktuelle Symptomatik",
+      "Klinischer Untersuchungsbefund",
+      "Labor- und Sonographiebefunde",
+      "Diagnose",
+      "Therapie und Medikation",
+      "Dialysevorbereitung",
+      "Wiedervorstellung"
+    ],
+    "usefulPhrases": [
+      "diabetische Nephropathie",
+      "eGFR = estimated GFR",
+      "renale Anamie",
+      "Hyperkaliamie",
+      "Dialyse-Shunt"
+    ],
+    "modelAnswer": "72-jaehrige Patientin mit CKD Stadium 4 bei diabetischer Nephropathie. Kreatinin 3.8 mg/dL, eGFR 15. Hyperkaliamie, renale Anamie. Therapie: Erythropoetin, Diuretika, kaliumarme Diat. Dialysevorbereitung (Shunt-Anlage) eingeleitet."
+  },
+  {
+    "id": "fsp_w_005",
+    "caseTitle": "Akute Pankreatitis",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 45-jaehrige Patientin mit akuter biliaerer Pankreatitis.",
+    "patientData": "45 Jahre, weiblich, 74 kg, BMI 27",
+    "history": "Nach fettreicher Mahlzeit starke Oberbauchschmerzen mit Ausstrahlung in den Ruecken. Uebelkeit, Erbrechen. Bekannte Gallensteine.",
+    "examFindings": "BS 37.8 Grad, RR 130/80, HF 105/min, Abdomen: Druckschmerz Epigastrium, Abwehrspannung, Darmgerausche abgeschwacht.",
+    "diagnostics": "Lipase 2400 U/L. CRP 45 mg/L. Leberwerte: GGT 180 U/L, AP 140 U/L, Bilirubin 2.1 mg/dL. Sono: Multiple Gallenblasensteine, Pankreas oedematös, freie Flüssigkeit.",
+    "assessment": "Akute biliaere Pankreatitis (Grad I nach Atlanta).",
+    "treatment": "Nulla per os, i.v.-Fluessigkeit (Ringer-Laktat 100 mL/h), Pethidin bei Schmerz, PPI. Keine Antibiotika (keine Infektionszeichen).",
+    "dischargePlan": "Beginnender Kostaufbau nach 48h (bei Rueckgang der Lipase). Elektive Cholezystektomie nach Abklingen (4-6 Wochen). Vorstellung Chirurgie.",
+    "expectedStructure": [
+      "Aufnahmedatum, Patientendaten",
+      "Aktuelle Beschwerden",
+      "Befund und Diagnostik",
+      "Diagnose",
+      "Stationarer Verlauf und Therapie",
+      "Medikamente bei Entlassung",
+      "Weitere Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "biliaere Pankreatitis",
+      "Gallenstein assoziiert",
+      "Lipase erhoeht",
+      "Nulla per os",
+      "Cholezystektomie"
+    ],
+    "modelAnswer": "45-jaehrige Patientin mit akuter biliaerer Pankreatitis (Lipase 2400 U/L) bei bekannter Cholelithiasis. Konservative Therapie: NPO, i.v.-Fluessigkeit, Analgesie. Kostaufbau nach 48h. Elektive Cholezystektomie nach Abklingen geplant."
+  },
+  {
+    "id": "fsp_w_006",
+    "caseTitle": "Harnwegsinfektion bei Pyelonephritis",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 34-jaehrige Patientin mit akuter Pyelonephritis.",
+    "patientData": "34 Jahre, weiblich, 62 kg, BMI 22",
+    "history": "Seit 2 Tagen Fieber bis 39.5 Grad, Schuttelfrost, Flankenschmerz rechts, Dysurie. Keine Vorerkrankungen.",
+    "examFindings": "BS 39.2 Grad, RR 110/70, HF 110/min. Klopfschmerz rechte Flanke. Abdomen weich.",
+    "diagnostics": "Urin: Leukozyten +++, Nitrit pos. CRP 240 mg/L. Kreatinin 0.9 mg/dL. Blutkulturen abgenommen. Sono Niere: Stau rechts Grad I.",
+    "assessment": "Akute Pyelonephritis rechts.",
+    "treatment": "Ciprofloxacin 400 mg i.v. 2x/Tag, antipyretisch, Fluessigkeit. Urinkultur lauft.",
+    "dischargePlan": "Nach 48h i.v.-Therapie Umstellung auf orales Ciprofloxacin 500 mg 2x/Tag fuer 10 Tage. Sonographiekontrolle in 4 Wochen.",
+    "expectedStructure": [
+      "Aufnahmegrund",
+      "Anamnese",
+      "Klinischer Befund",
+      "Diagnostik (Urin, Labor, Sono)",
+      "Diagnose",
+      "Therapie",
+      "Entlassungsmedikation",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Pyelonephritis",
+      "Flankenschmerz",
+      "Schuttelfrost",
+      "HWI = Harnwegsinfekt",
+      "Antibiose i.v."
+    ],
+    "modelAnswer": "34-jaehrige Patientin mit akuter Pyelonephritis rechts. Klinik: Fieber, Schuttelfrost, Flankenschmerz. CRP 240 mg/L, Urin: Leukozyten und Nitrit positiv. Therapie: Ciprofloxacin i.v., Umstellung auf oral fuer 10 Tage. Sonographiekontrolle in 4 Wochen."
+  },
+  {
+    "id": "fsp_w_007",
+    "caseTitle": "Akute Urtikaria mit Angiooedem",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 28-jaehrige Patientin mit akuter Urtikaria/Angiooedem.",
+    "patientData": "28 Jahre, weiblich, 55 kg, BMI 20",
+    "history": "30 Minuten nach Einnahme von Ibuprofen wegen Kopfschmerzen: Rote Quaddeln an Armen und Beinen, Schwellung der Lippen und Augenlider. Leichte Dyspnoe.",
+    "examFindings": "BS 37.0 Grad, RR 115/75, HF 95/min, SaO2 97%. Haut: disseminierte Urtikaria. Lippen und periorbital geschwollen. Lunge o.B.",
+    "diagnostics": "Keine wegweisenden Laborveraenderungen.",
+    "assessment": "Akute Urtikaria mit Angiooedem nach NSAR-Einnahme.",
+    "treatment": "Feniramin 4 mg, Prednisolon 250 mg i.v. Gute Besserung innerhalb 1 Stunde.",
+    "dischargePlan": "NSAR-Meidung, Allergiepass. Vorstellung Allergologie zur Testung. Alternative Schmerzmedikation: Paracetamol. Omeprazol als Magenschutz.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Ausloeser und Symptome",
+      "Befund",
+      "Diagnose",
+      "Akutmassnahmen",
+      "Empfehlungen und Allergiepass"
+    ],
+    "usefulPhrases": [
+      "Urtikaria = Nesselsucht",
+      "Angiooedem",
+      "NSAR-Intoleranz",
+      "Allergiepass",
+      "Feniramin"
+    ],
+    "modelAnswer": "28-jaehrige Patientin mit akuter Urtikaria und Angiooedem 30 min nach Ibuprofen-Einnahme. Akuttherapie: Feniramin, Prednisolon i.v., vollstaendige Rueckbildung. Allergiepass ausgestellt. Allergologische Testung empfohlen."
+  },
+  {
+    "id": "fsp_w_008",
+    "caseTitle": "Kniegelenksarthrose mit OP-Indikation",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 74-jaehrige Patientin mit Kniegelenksarthrose.",
+    "patientData": "74 Jahre, weiblich, 85 kg, BMI 31",
+    "history": "Seit Jahren zunehmende Knieschmerzen beidseits, rechts staerker. Anlaufschmerz, Treppensteigen kaum noch moeglich. Ibuprofen nicht ausreichend.",
+    "examFindings": "Rechtes Knie: mäßiger Gelenkerguss, Krepitation, Schmerz bei Flexion > 90 Grad, Bandstabil.",
+    "diagnostics": "Roentgen: Medialer Gelenkspaltverschmälerung rechts, Osteophyten. MRT: Knorpelschaden Grad IV medial, freie Gelenkkoerper.",
+    "assessment": "Gonarthrose rechts Grad IV bei Adipositas.",
+    "treatment": "Konservativ ausgeschöoft (Physiotherapie, NSAR, Hyaluronsaeure), unzureichender Erfolg.",
+    "dischargePlan": "Indikation zur Knie-TEP rechts gestellt. Gewichtsreduktion vor OP empfohlen. Aufnahme zur OP in 4 Wochen. Praeoperative Vorbereitung: Röntgen, EKG, Labor.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Aktuelle Beschwerden und Vorbehandlung",
+      "Klinischer Befund",
+      "Bildgebung",
+      "Diagnose",
+      "Bisherige Therapieversuche",
+      "OP-Planung",
+      "Praoperative Vorbereitung"
+    ],
+    "usefulPhrases": [
+      "Gonarthrose = Kniegelenksarthrose",
+      "Knie-TEP = Knie-Totalendoprothese",
+      "Gelenkspaltverschmälerung",
+      "Krepitation",
+      "Anlaufschmerz"
+    ],
+    "modelAnswer": "74-jaehrige Patientin mit Gonarthrose rechts Grad IV. Konservative Massnahmen ausgeschoepft. Indikation zur Knie-TEP gestellt. Adipositas als Risikofaktor. Gewichtsreduktion praeoperativ empfohlen. Aufnahme in 4 Wochen."
+  },
+  {
+    "id": "fsp_w_009",
+    "caseTitle": "Akute tiefe Beinvenenthrombose",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 62-jaehrige Patientin mit akuter TVT.",
+    "patientData": "62 Jahre, weiblich, 70 kg, BMI 26",
+    "history": "Seit 3 Tagen Schwellung und Schweregefuehl im linken Bein. Wade druckschmerzhaft. 8-Stunden-Flug vor 2 Wochen.",
+    "examFindings": "Linkes Bein: Umfang 3 cm grosser als rechts, Wadendruckschmerz, homans-Zeichen positiv, keine UEberwaermung.",
+    "diagnostics": "D-Dimer 3200 mg/mL. Kompressionssonographie: Thrombose der V. poplitea und V. femoralis superficialis links.",
+    "assessment": "Akute tiefe Beinvenenthrombose links (proximal).",
+    "treatment": "Enoxaparin 1 mg/kgKG s.c. 2x/Tag, Phenprocoumon (Marcumar) einschleichend, Kompressionsstrumpf Klasse II.",
+    "dischargePlan": "Marcumar-Ziele: INR 2.0-3.0 fuer 6 Monate. Enoxaparin bis INR im Zielbereich. Kompression fuer 2 Jahre. Koerperliche Bewegung. Keine Oestrogene.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Risikofaktoren",
+      "Klinischer Befund",
+      "Diagnostik (D-Dimer, Sono)",
+      "Diagnose",
+      "Akuttherapie",
+      "Langzeittherapie",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "TVT = tiefe Beinvenenthrombose",
+      "Compressionssonographie",
+      "Marcumar/Phenprocoumon",
+      "Kompressionsstrumpf",
+      "Antikoagulation"
+    ],
+    "modelAnswer": "62-jaehrige Patientin mit akuter proximaler TVT links bei Flugreise. Kompressionssonographie bestätigte Thrombose der V. poplitea et femoralis. Therapie: Enoxaparin, Marcumar, Kompression. INR-Ziel 2.0-3.0 fuer 6 Monate."
+  },
+  {
+    "id": "fsp_w_010",
+    "caseTitle": "Bandscheibenvorfall L4/L5",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 48-jaehrigen Patienten mit Bandscheibenvorfall L4/L5.",
+    "patientData": "48 Jahre, mannlich, 88 kg, BMI 29",
+    "history": "Seit 3 Tagen heftige Lumbago mit Ausstrahlung in den linken Fuss. Kribbeln im Fussruecken. Zehenheben nicht mehr moeglich.",
+    "examFindings": "LWS: Bewegungseinschränkung, Druckschmerz L4/L5 links. Nervendehnungszeichen positiv links. Zehen- und Fusheberschwaeche (Kraftgrad 3/5).",
+    "diagnostics": "MRT LWS: Medialer Bandscheibenvorfall L4/L5 links mit Einengung des Spinalnervs L5.",
+    "assessment": "Lumbale Radikulopathie L5 links bei Bandscheibenvorfall L4/L5 mit Fusheberparese.",
+    "treatment": "Konservativ: NSAR, Physiotherapie, Rueckenschule.",
+    "dischargePlan": "Bei fehlender Besserung der Parese innerhalb 48h operative Entlastung. MRT-Kontrolle. Neurochirurgische Vorstellung. Arbeitsunfaehig.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Aktuelle Symptome",
+      "Neurologischer Befund",
+      "Bildgebung",
+      "Diagnose",
+      "Therapie",
+      "Notfallkriterien"
+    ],
+    "usefulPhrases": [
+      "Lumbago = Rueckenschmerz",
+      "Radikulopathie = Nervenwurzelreizung",
+      "Fusheberparese",
+      "Nervendehnungszeichen",
+      "Cauda-equina-Syndrom"
+    ],
+    "modelAnswer": "48-jaehriger Patient mit Bandscheibenvorfall L4/L5 links. Fusheberparese (Kraftgrad 3/5), Kribbeln im L5-Dermatom. Konservative Therapie eingeleitet, bei fehlender Rueckbildung innerhalb 48h operative Entlastung. Neurochirurgie involviert."
+  },
+  {
+    "id": "fsp_w_011",
+    "caseTitle": "Akute Gastritis nach NSAR-Einnahme",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 52-jaehrige Patientin mit akuter NSAR-Gastropathie.",
+    "patientData": "52 Jahre, weiblich, 66 kg, BMI 24",
+    "history": "Seit 3 Tagen Oberbauchschmerzen, Sodbrennen, Uebelkeit. Nimmt seit 2 Wochen Ibuprofen 600 mg 3x/Tag wegen Rueckenschmerzen.",
+    "examFindings": "Epigastrium druckschmerzhaft, Abdomen weich, Darmgeraeusche regelrecht.",
+    "diagnostics": "Oesophagogastroduodenoskopie: Erythematose Gastritis im Antrum, Erosionen. H.-pylori-Schnelltest negativ.",
+    "assessment": "NSAR-induzierte akute Erosionsgastritis.",
+    "treatment": "Pausieren des Ibuprofens, Pantoprazol 40 mg 1x/Tag, Sucralfat. Alternative Schmerztherapie.",
+    "dischargePlan": "Pantoprazol fuer 4 Wochen, regelmassige Einnahme. Bei erneuter NSAR-Notwendigkeit Magenschutz. Wiedervorstellung Gastro bei Beschwerdepersistenz.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Anamnese und NSAR-Einnahme",
+      "Koerperlicher Befund",
+      "Endoskopie-Befund",
+      "Diagnose",
+      "Therapie",
+      "Medikation bei Entlassung"
+    ],
+    "usefulPhrases": [
+      "NSAR = nichtsteroidales Antirheumatikum",
+      "Gastropathie",
+      "PPI = Protonenpumpeninhibitor",
+      "Erosionsgastritis"
+    ],
+    "modelAnswer": "52-jaehrige Patientin mit NSAR-induzierter Erosionsgastritis. Nach Pausieren des Ibuprofens und Pantoprazol-Therapie Beschwerdefreiheit. Magenschutz fuer 4 Wochen."
+  },
+  {
+    "id": "fsp_w_012",
+    "caseTitle": "Diabetes mellitus Entgleisung",
+    "task": "Schreiben Sie einen Arztbrief fuer einen 60-jaehrigen Patienten mit hyperosmolarem Koma.",
+    "patientData": "60 Jahre, mannlich, 95 kg, BMI 32",
+    "history": "Seit Tagen Schwaeche, vermehrtes Durstgefühl, haeufiges Wasserlassen, Gewichtsverlust. Heute zunehmend somnolent.",
+    "examFindings": "BS 37.0, RR 100/60, HF 115/min, BZ 680 mg/dL, Sonnolenz, Exsikkose-Zeichen.",
+    "diagnostics": "BZ 680 mg/dL, Na 152, K 3.8, Kreatinin 1.8, pH 7.38, HCO3 24. BGA: keine Ketoazidose. HBA1c 11.2%.",
+    "assessment": "Hyperosmolares hyperglykaemisches Syndrom (HHS) bei neu manifestiertem DM Typ 2.",
+    "treatment": "Intensivstation, isotone Kochsalzloesung, Insulinperfusor nach Schema, Kaliumsubstitution bei Bedarf.",
+    "dischargePlan": "Umstellung auf Insulin glargin + Insulin aspart. Diabetesberatung, Schulung. Ernährungsberatung, Fussinspektion. Vorstellung Diabetologie in 1 Woche.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Aktuelle Anamnese und Vorerkrankungen",
+      "Aufnahmebefund (BS, RR, Puls, BZ, Neurologie)",
+      "Labor (BZ, Elektrolyte, BGA, HbA1c)",
+      "Diagnose",
+      "Intensivtherapie",
+      "Weitere Therapie und Entlassplan"
+    ],
+    "usefulPhrases": [
+      "HHS = hyperosmolares hyperglykaemisches Syndrom",
+      "Exsikkose",
+      "Insulinperfusor",
+      "HbA1c = Langzeitblutzucker"
+    ],
+    "modelAnswer": "60-jaehriger Patient mit HHS bei Neumanifestation DM Typ 2. BZ 680 mg/dL, Hyponatriaemie 152, keine Ketoazidose. Intensivstation: Fluessigkeit, Insulinperfusor. Einstellung auf Insulin glargin/aspart. Diabeteschulung."
+  },
+  {
+    "id": "fsp_w_013",
+    "caseTitle": "Schlaganfall (Ischaemischer Insult)",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 70-jaehrige Patientin mit akutem ischaemischen Schlaganfall.",
+    "patientData": "70 Jahre, weiblich, 63 kg, BMI 23",
+    "history": "Seit 2 Stunden Hemiparese rechts, Sprachstoerung, Mundwinkellaehmung rechts. Vorhofflimmern bekannt.",
+    "examFindings": "RR 160/90, HF irregulaer 85/min. Hemiparese rechts (Kraftgrad 2/5 Arm, 3/5 Bein), Fazialisparese rechts, senso-motorische Aphasie. NIHSS 14.",
+    "diagnostics": "CCT: keine Blutung, kein frueher Infarktnachweis. MRT-DWI: Diffusionsstoerung Media links. EKG: Vorhofflimmern. Echo: linkes Vorhofohr-Thrombus.",
+    "assessment": "Akuter ischaemischer Insult links media bei Vorhofflimmern. NIHSS 14.",
+    "treatment": "Thrombolyse (rt-PA) innerhalb 2.5 Stunden nach Symptombeginn. Keine mechanische Thrombektomie. ASS 100 mg ab Tag 1.",
+    "dischargePlan": "ASS 100 mg, Atorvastatin 40 mg, Bisoprolol 2.5 mg, Marcumar ab Tag 7 (CHADS-VASc 4). Logopaedie, Ergotherapie, Physiotherapie. Neurologische Rehabilitation.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Zeitlicher Ablauf",
+      "Neurologischer Befund (NIHSS)",
+      "Bildgebung",
+      "Diagnose",
+      "Akuttherapie (Thrombolyse)",
+      "Sekundaerpraevention",
+      "Rehabilitation"
+    ],
+    "usefulPhrases": [
+      "ischaemischer Schlaganfall",
+      "NIHSS = National Institutes of Health Stroke Scale",
+      "Thrombolyse = Lyse-Therapie",
+      "CHADS-VASc-Score",
+      "Vorhofflimmern"
+    ],
+    "modelAnswer": "70-jaehrige Patientin mit links-medialem Schlaganfall bei Vorhofflimmern. Thrombolyse innerhalb 2.5h. NIHSS 14. Sekundaerpraevention: ASS, Marcumar ab Tag 7, Statin. Rehabilitation eingeleitet."
+  },
+  {
+    "id": "fsp_w_014",
+    "caseTitle": "Cholezystitis",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 55-jaehrige Patientin mit akuter Cholezystitis.",
+    "patientData": "55 Jahre, weiblich, 82 kg, BMI 30",
+    "history": "Seit 2 Tagen rechtseitige Oberbauchschmerzen, Fieber bis 38.8, Uebelkeit. Frueher schon Gallenkoliken.",
+    "examFindings": "BS 38.5, RR 135/85, HF 95/min, Subikterus, Abdomen: Druckschmerz rechter Oberbauch, Murphy-Zeichen positiv.",
+    "diagnostics": "Leukozyten 15.2 G/L, CRP 180 mg/L, Bilirubin 2.8, GGT 220, AP 160. Sono: Gallenblasenwand verdickt (8mm), pericholezystische Fluessigkeit, Steine.",
+    "assessment": "Akute Cholezystitis bei Cholelithiasis.",
+    "treatment": "Ceftriaxon 2 g + Metronidazol 500 mg, NPO, i.v.-Fluessigkeit, PPI.",
+    "dischargePlan": "Nach Rueckgang der Entzuendungsparameter: Laparoskopische Cholezystektomie. Vorstellung Chirurgie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Anamnese und Symptome",
+      "Koerperlicher Untersuchungsbefund",
+      "Labor und Sono",
+      "Diagnose",
+      "Therapie",
+      "OP-Planung"
+    ],
+    "usefulPhrases": [
+      "Cholezystitis = Gallenblasenentzuendung",
+      "Cholelithiasis = Gallensteine",
+      "Murphy-Zeichen",
+      "Cholezystektomie"
+    ],
+    "modelAnswer": "55-jaehrige Patientin mit akuter Cholezystitis bei Cholelithiasis. Sono: verdickte Wand, Steine, pericholezystische Fluessigkeit. Antibiose. Laparoskopische Cholezystektomie nach Abklingen geplant."
+  },
+  {
+    "id": "fsp_w_015",
+    "caseTitle": "Asthma-Exazerbation bei Kind",
+    "task": "Verfassen Sie einen Arztbrief fuer ein 8-jaehriges Kind mit akuter Asthma-Exazerbation.",
+    "patientData": "8 Jahre, weiblich, 28 kg",
+    "history": "Seit 2 Tagen Husten und pfeifende Atmung. Heute Atemnot, spricht in Satzen, benoetigt den Notfallspray alle 2 Stunden.",
+    "examFindings": "AF 32/min, SaO2 91%, HF 130/min, BS 37.2. Auskultation: exspiratorisches Giemen, verlängertes Exspirium, Hilfsmuskulatur eingesetzt.",
+    "diagnostics": "BGA: pH 7.38, pCO2 35, pO2 80, HCO3 22.",
+    "assessment": "Akute schwere Asthma-Exazerbation.",
+    "treatment": "Salbutamol per Vernebler (3x innerhalb 1h), Prednisolon 2 mg/kg p.o., Sauerstoff 2L/min.",
+    "dischargePlan": "Fortfuehrung der Inhalationstherapie mit Budesonid/Formoterol. Asthma-Schulung. Peak-Flow-Protokoll. Vorstellung Pneumologie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Anamnese des Asthmas",
+      "Aktuelle Symptome und Medikation",
+      "Klinischer Befund",
+      "Diagnose",
+      "Akuttherapie",
+      "Daue-rtherapie bei Entlassung"
+    ],
+    "usefulPhrases": [
+      "Asthma-Exazerbation",
+      "Giemen = pfeifende RG",
+      "Notfallspray",
+      "Peak-Flow",
+      "Hilfsmuskulatur"
+    ],
+    "modelAnswer": "8-jaehrige Patientin mit schwerer Asthma-Exazerbation. Therapie: Salbutamol-Vernebler, Prednisolon, Sauerstoff. Besserung nach Akuttherapie. Dauertherapie: Budesonid/Formoterol. Asthmaschulung geplant."
+  },
+  {
+    "id": "fsp_w_016",
+    "caseTitle": "Depressive Episode mit Suizidgedanken",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 35-jaehrige Patientin mit mittelschwerer Depression.",
+    "patientData": "35 Jahre, weiblich, 60 kg, BMI 22",
+    "history": "Seit 8 Wochen gedrueckte Stimmung, Antriebslosigkeit, Fruherwachen, Appetitlosigkeit, Gruebeln. Fuehlt sich hoffnungslos, aber keine konkreten Suizidplaene.",
+    "examFindings": "BS und RR o.B., Affekt: gedrueckt, verlangsamt, leise Sprache. Keine psychotischen Symptome. Minimental 28/30.",
+    "diagnostics": "Labor: TSH, Vitamin B12, Vitamin D normal.",
+    "assessment": "Mittelschwere depressive Episode (ICD-10 F32.1), kein akutes Suizidrisiko.",
+    "treatment": "Stationaere psychiatrische Aufnahme, SSRI (Escitalopram 10 mg) einschleichend, Gespraechstherapie.",
+    "dischargePlan": "Escitalopram 10 mg fuer 4 Wochen, dann Evaluation. Bei gutem Ansprechen auf 20 mg. Psychotherapie fortfuehren. Suizidpraevention besprochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Psychopathologischer Befund",
+      "Suizidrisiko",
+      "Diagnose",
+      "Therapie (medikamentoes und psychotherapeutisch)",
+      "Entlassplanung"
+    ],
+    "usefulPhrases": [
+      "depressive Episode",
+      "Anhedonie = Interessenverlust",
+      "SSRI = selektiver Serotonin-Wiederaufnahmehemmer",
+      "Frueherwachen"
+    ],
+    "modelAnswer": "35-jaehrige Patientin mit mittelschwerer depressiver Episode. Keine akute Suizidalitaet. Therapie: Escitalopram 10 mg, Psychotherapie. Wiedervorstellung in 4 Wochen."
+  },
+  {
+    "id": "fsp_w_017",
+    "caseTitle": "Eisenmangelanaemie bei Hypermenorrhoe",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 33-jaehrige Patientin mit Eisenmangelanaemie.",
+    "patientData": "33 Jahre, weiblich, 58 kg, BMI 21",
+    "history": "Seit Monaten zunehmende Muedigkeit, blasse Haut, Belastungsdyspnoe. Seit Jahren starke Regelblutungen.",
+    "examFindings": "Blasse Haut und Schleimhaeute, RR 110/70, HF 95/min, leises Systolikum 2/6.",
+    "diagnostics": "Hb 8.2 g/dL, MCV 72 fl, Ferritin 8 ng/mL, Transferrinsaettigung 10%, Eisen 25 mcg/dL.",
+    "assessment": "Eisenmangelanaemie bei Hypermenorrhoe. Differenzialdiagnose: gastrointestinaler Blutverlust.",
+    "treatment": "Orale Eisensubstitution (Eisen-II-Sulfat 100 mg 2x/Tag), Vitamin C zur Resorptionssteigerung.",
+    "dischargePlan": "Eisen fuer mindestens 3 Monate. Kontrolle: Hb + Ferritin in 4 Wochen. Gynaekologische Vorstellung zur Abklaerung der Hypermenorrhoe.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Menses-Anamnese",
+      "Koerperlicher Befund",
+      "Labor (Blutbild, Ferritin, Eisen)",
+      "Diagnose",
+      "Therapie",
+      "Weitere Abklaerung"
+    ],
+    "usefulPhrases": [
+      "Eisenmangelanaemie",
+      "Ferritin = Eisenspeicher",
+      "Hypermenorrhoe = starke Regelblutung",
+      "MCV = mittleres Erythrozytenvolumen"
+    ],
+    "modelAnswer": "33-jaehrige Patientin mit Eisenmangelanaemie (Hb 8.2, Ferritin 8) bei Hypermenorrhoe. Orale Eisensubstitution. Gynaekologische Vorstellung zur Ursachenabklaerung."
+  },
+  {
+    "id": "fsp_w_018",
+    "caseTitle": "Verdacht auf Lungenembolie",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 68-jaehrige Patientin mit V.a. Lungenembolie.",
+    "patientData": "68 Jahre, weiblich, 75 kg, BMI 27",
+    "history": "Ploetzliche Atemnot und Brustschmerzen seit 3 Stunden. Vor 5 Tagen Rueckflug aus Australien (12h Flug).",
+    "examFindings": "RR 135/85, HF 105, BS 37.0, AF 24/min, SaO2 89% (Raumluft). Keine Beinschwellung.",
+    "diagnostics": "D-Dimer 4800 ng/mL. CT-Angiographie: Lungenembolie segmental links unten.",
+    "assessment": "Lungenembolie segmental links. Wells-Score 4.5 (hohe Wahrscheinlichkeit).",
+    "treatment": "Niedermolekulares Heparin (Enoxaparin 1 mg/kg s.c. 2x/Tag).",
+    "dischargePlan": "Marcumar einschleichen (INR 2.0-3.0). Antikoagulation fuer mindestens 6 Monate. Kompressionssonographie Beine. Thrombophilie-Diagnostik erwogen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Risikofaktoren und Reiseanamnese",
+      "Klinischer Befund",
+      "Diagnostik (D-Dimer, CT)",
+      "Diagnose",
+      "Therapie (Akut und Langzeit)"
+    ],
+    "usefulPhrases": [
+      "Lungenembolie",
+      "Wells-Score",
+      "D-Dimer",
+      "Antikoagulation",
+      "CT-Angiographie"
+    ],
+    "modelAnswer": "68-jaehrige Patientin mit segmentaler Lungenembolie links bei Flugreise. Therapie: Enoxaparin, Marcumar fuer 6 Monate. Thrombophilie-Diagnostik erwogen."
+  },
+  {
+    "id": "fsp_w_019",
+    "caseTitle": "Hyperthyreose bei Morbus Basedow",
+    "task": "Schreiben Sie einen Arztbrief fuer eine 30-jaehrige Patientin mit neu diagnostiziertem Morbus Basedow.",
+    "patientData": "30 Jahre, weiblich, 54 kg, BMI 19",
+    "history": "Seit Wochen Nervositaet, Zittern, Herzrasen, 6 kg Gewichtsverlust trotz Heisshunger. Hitzeintoleranz, verstaerkter Schweiss. Kloessgefuehl im Hals.",
+    "examFindings": "HF 110/min, RR 125/70, Tremor, warmer, feuchter Haut. Struma Grad Ib, weich. Leichter Exophthalmus.",
+    "diagnostics": "TSH < 0.01, fT3 8.2, fT4 3.8. TRAK 15 U/L. Sono: diffus echoarme, vergroesserte Schilddruese.",
+    "assessment": "Morbus Basedow mit manifester Hyperthyreose.",
+    "treatment": "Thiamazol 20 mg/Tag (Thyreostase), Propranolol 40 mg 1-0-1 (Symtpomkontrolle).",
+    "dischargePlan": "Thiamazol fuer 12-18 Monate, Reevaluation. TSH, fT3, fT4 nach 4 Wochen. Vorstellung Augenheilkunde bei Exophthalmus.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome der UEberfunktion",
+      "Status praesens (inkl. Hals, Augen)",
+      "Labor (TSH, fT3, fT4, TRAK)",
+      "Sono",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Morbus Basedow = Autoimmun-Hyperthyreose",
+      "TRAK = TSH-Rezeptor-Antikoerper",
+      "Thyreostase = Schilddruesenhemmung",
+      "Exophthalmus = Hervortreten der Augen"
+    ],
+    "modelAnswer": "30-jaehrige Patientin mit Morbus Basedow: TSH supprimiert, fT3/fT4 erhoeht, TRAK positiv. Struma, Exophthalmus. Thyereostase mit Thiamazol 20 mg. Vorstellung Augenheilkunde."
+  },
+  {
+    "id": "fsp_w_020",
+    "caseTitle": "Chronische Obstipation mit Risikofaktoren",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 68-jaehrige Patientin mit chronischer Obstipation.",
+    "patientData": "68 Jahre, weiblich, 64 kg, BMI 24",
+    "history": "Seit Jahren Verstopfung, Stuhlgang alle 3-4 Tage mit starkem Pressen. Laxanzienabhaengigkeit. Wenig Bewegung, geringe Trinkmenge.",
+    "examFindings": "Abdomen: weich, leichter Druckschmerz linker Unterbauch, zeitweise fühlbare Kotballen. Keine Abwehrspannung.",
+    "diagnostics": "Koloskopie vor 2 Jahren: Sigmadivertikel, sonst o.B. Sonst keine relevante Diagonstik.",
+    "assessment": "Chronische Obstipation mit Laxanzienabhaengigkeit.",
+    "treatment": "Stufenweises Laxanzienmanagement: Zunaechst Macrogol (Movicol) 1-2x/Tag, ggf. Bisacodyl als Reserve. Ballaststoffreiche Ernaehrung, Trinkprotokoll.",
+    "dischargePlan": "Macrogol fuer 4 Wochen, dann Ausschleichversuch. Taeglich 1.5-2 L trinken, 30 Min Bewegung. Probiotika erwogen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Anamnese der Obstipation",
+      "Laxanzieneinnahme",
+      "Untersuchungsbefund",
+      "Diagnose",
+      "Therapieplan"
+    ],
+    "usefulPhrases": [
+      "Obstipation = Verstopfung",
+      "Laxanzienabhaengigkeit",
+      "Macrogol = osmotisch wirkendes Laxans",
+      "Ballaststoffe"
+    ],
+    "modelAnswer": "68-jaehrige Patientin mit chronischer Obstipation und Laxanzienabhaengigkeit. Stufenweiser UUmstieg auf Macrogol. Ballaststoffe, Trinkmenge. Bewegungssteigerung."
+  },
+  {
+    "id": "fsp_w_021",
+    "caseTitle": "Pyschotische Symptome bei schizophrener Ersterkrankung",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 24-jaehrigen Patienten mit Verdacht auf Schizophrenie.",
+    "patientData": "24 Jahre, mannlich, 70 kg, BMI 22",
+    "history": "Seit Wochen zunehmender Rueckzug, misstrauisch, hoert Stimmen, fuehlt sich verfolgt. Schlafstoeung, Konzentrationsstoeung.",
+    "examFindings": "Affekt: verflacht, Misstrauen, akustische Halluzinationen. Keine akute Fremd- oder Eigengefaehrdung.",
+    "diagnostics": "Labor: Blutbild, TSH, Leberwerte, Drogenscreening o.B. CCT: unauffaellig.",
+    "assessment": "Erstmanifestation einer paranoiden Schizophrenie (ICD-10 F20.0).",
+    "treatment": "Stationaere psychiatrische Behandlung. Einleitung einer antipsychotischen Therapie mit Olanzapin 10 mg/Tag.",
+    "dischargePlan": "Olanzapin 10 mg, Einstellung auf 20 mg bei Bedarf. Psychoedukation. Wiedervorstellung Psychiatrie in 2 Wochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Psychopathologischer Befund",
+      "Ausschluss organischer Ursache",
+      "Diagnose",
+      "Medikamentoese Therapie",
+      "Psychosoziale Betreuung"
+    ],
+    "usefulPhrases": [
+      "paranoide Schizophrenie",
+      "Halluzinationen",
+      "Wahn",
+      "Antipsychotikum (Neuroleptikum)",
+      "Psychoedukation"
+    ],
+    "modelAnswer": "24-jaehriger Patient mit paranoid-schizophrener Ersterkrankung. Akustische Halluzinationen, Verfolgungswahn. Einleitung Antipsychotikum (Olanzapin). Psychoedukation. Wiedervorstellung in 2 Wochen."
+  },
+  {
+    "id": "fsp_w_022",
+    "caseTitle": "Gichtanfall bei Hyperurikamie",
+    "task": "Schreiben Sie einen Arztbrief fuer einen 52-jaehrigen Patienten mit akutem Gichtanfall.",
+    "patientData": "52 Jahre, mannlich, 92 kg, BMI 30",
+    "history": "Seit heute Nacht plötzlich starke Schmerzen im rechten Grosszehengrundgelenk. Gelenk gerötet, geschwollen, ueberwarmt.",
+    "examFindings": "RR 140/90, BS 37.2. Grosszehengrundgelenk rechts: Rötung, Schwellung, UEberwarmung, massiver Druckschmerz.",
+    "diagnostics": "Harnsaure 9.2 mg/dL. CRP 40 mg/L. Gelenkpunktion (echte Gichtkristalle).",
+    "assessment": "Akute Gichtarthritis (Podagra) bei Hyperurikaemie.",
+    "treatment": "NSAR (Diclofenac 75 mg 2x/Tag) fuer 5 Tage, Kuehlung, Schonung.",
+    "dischargePlan": "Nach Abklingen des Anfalls: Allopurinol 100 mg/Tag einschleichend. Diat: Purinarme Kost, kein Alkohol, viel Trinken. Harnsaure-Ziel < 6 mg/dL.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Akutsymptomatik",
+      "Befund",
+      "Labor (Harnsaure, CRP), Punktion",
+      "Diagnose",
+      "Akuttherapie",
+      "Dauertherapie"
+    ],
+    "usefulPhrases": [
+      "Gicht, Podagra",
+      "Hyperurikamie = erhohte Harnsaure",
+      "NSAR",
+      "Allopurinol = Harnsaeuresenker"
+    ],
+    "modelAnswer": "52-jaehriger Patient mit akutem Gichtanfall (Podagra). Harnsaure 9.2 mg/dL. Akut: Diclofenac. Nach Abklingen: Allopurinol. Diatberatung."
+  },
+  {
+    "id": "fsp_w_023",
+    "caseTitle": "Ulcus cruris bei venoser Insuffizienz",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 78-jaehrige Patientin mit Ulcus cruris venosum.",
+    "patientData": "78 Jahre, weiblich, 72 kg, BMI 27",
+    "history": "Seit 3 Monaten offene Stelle am linken Unterschenkel (Knöchelbereich). Naechtliche Wadenschmerzen, schwere Beine. Krampfadern bekannt.",
+    "examFindings": "Linker Unterschenkel: Ulcus 3x4 cm über dem Innenknochel, granulierender Grund, wenig Exsudat. Atrophie blanche, Varikosis, Knöchelödem.",
+    "diagnostics": "ABI rechts 1.1, links 1.0 (pAVK unwahrscheinlich). Duplexsonographie: Stammveneninsuffizienz V. saphena magna beidseits, Venenklappeninsuffizienz.",
+    "assessment": "Ulcus cruris venosum bei chronisch-venoeser Insuffizienz CVI Stadium C6.",
+    "treatment": "Wundversorgung (Hydrokolloidverband), Kompressionstherapie (Kompressionsstrumpf Klasse II, mehralgig).",
+    "dischargePlan": "Fortlaufende Kompressionstherapie, Wundkontrolle 1x/Woche. Bewegung (Gehen, Fusstraining) und Hochlagern. Vorstellung Hautarzt/Chirurgie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Wundanamnese und Beinsymptome",
+      "Gefaessstatus",
+      "Duplex",
+      "Diagnose",
+      "Wundversorgung",
+      "Kompression",
+      "Weitere Therapie"
+    ],
+    "usefulPhrases": [
+      "Ulcus cruris = offenes Bein",
+      "CVI = chronisch-venoese Insuffizienz",
+      "ABI = Knöchel-Arm-Index",
+      "Kompressionstherapie"
+    ],
+    "modelAnswer": "78-jaehrige Patientin mit Ulcus cruris venosum bei CVI C6. Wundversorgung und Kompressionstherapie eingeleitet. ABI unauffaellig fuer pAVK."
+  },
+  {
+    "id": "fsp_w_024",
+    "caseTitle": "Vorderer Kreuzbandriss (Sportverletzung)",
+    "task": "Schreiben Sie einen Arztbrief fuer einen 22-jaehrigen Patienten mit VKB-Ruptur.",
+    "patientData": "22 Jahre, mannlich, 80 kg, BMI 24",
+    "history": "Beim Fussballspielen ploetzlicher Schmerz im rechten Knie nach Drehung, Kniegelenkerguss. Knie instabil.",
+    "examFindings": "Rechtes Knie: Gelenkerguss (rohes Dreieck), Schonhaltung. Lachman-Test positiv, vordere Schublade positiv. Varus/Valgus stabil.",
+    "diagnostics": "Roentgen: kein knöcherner Ausgriss. MRT: Komplette VKB-Ruptur, mediale Meniskuslaesion.",
+    "assessment": "Vorderer Kreuzbandriss rechts mit medialer Meniskuslaesion.",
+    "treatment": "Ruhigstellung, Kuehlung, Hochlagern, Stabilschiene, entlastend Gehen.",
+    "dischargePlan": "Erst Muskulatur aufbauen (Physiotherapie), dann VKB-Plastik (Semitendinosus-Graft) in 6-8 Wochen. Kein Sport bis OP.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Unfallhergang und Symptome",
+      "Koerperliche Untersuchung",
+      "Bildgebung",
+      "Diagnose",
+      "Akutmassnahmen",
+      "OP-Planung"
+    ],
+    "usefulPhrases": [
+      "VKB = vorderes Kreuzband",
+      "Lachman-Test",
+      "Meniskuslaesion",
+      "Gelenkerguss"
+    ],
+    "modelAnswer": "22-jaehriger Patient mit VKB-Ruptur rechts und medialer Meniskuslaesion. Akut: Ruhigstellung, Kuehlung. OP (VKB-Plastik) in 6-8 Wochen nach Vorbereitung."
+  },
+  {
+    "id": "fsp_w_025",
+    "caseTitle": "Postoperative Wundinfektion",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 58-jaehrige Patientin mit Wundinfektion nach Knie-TEP.",
+    "patientData": "58 Jahre, weiblich, 88 kg, BMI 32",
+    "history": "Z.n. Knie-TEP rechts vor 10 Tagen. Seit 2 Tagen zunehmende Schwellung, Rötung, Schmerzen im OP-Gebiet. Fieber 38.5. Kein vorheriger Infekt.",
+    "examFindings": "Rechtes Knie: Grosse Schwellung, UEberwaermung, Rötung. Wunde: seroese Sekretion, Wundrand gerötet. Bewegungseinschraenkung. Fieber 38.6.",
+    "diagnostics": "Leukozyten 14.5, CRP 210, PCT 1.5. Wundabstrich: Gram-positive Kokken. Roentgen Knie: Prothesenlage o.B. Keine Lockerung.",
+    "assessment": "Postoperative Wundinfektion nach Knie-TEP, V.a. Protheseninfektion.",
+    "treatment": "Ceftriaxon 2g i.v. + Metronidazol. Wunddebridement. Gelenkpunktion. Ruhigstellung.",
+    "dischargePlan": "Prothesenerhaltendes Vorgehen bei fruehem Infekt. Fortfuehrung Antibiose i.v., dann p.o. Nach 2 Wochen Reevaluation. Vorstellung Infektiologie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "OP-Anamnese",
+      "Infektzeichen",
+      "Labor und Abstrich",
+      "Diagnose",
+      "Antibiose",
+      "OP",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Wundinfektion",
+      "Protheseninfekt",
+      "Debridement",
+      "Gram-positive Kokken"
+    ],
+    "modelAnswer": "58-jaehrige Patientin mit fruehem Wundinfekt nach Knie-TEP. CRP 210, Leukozytose, Gram-positive Kokken im Abstrich. Therapie: Ceftriaxon, Wunddebridement. Fortfuehrung der i.v.-Antibiose, Infektiologie involviert."
+  },
+  {
+    "id": "fsp_w_026",
+    "caseTitle": "Akute Bronchitis",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 35-jaehrigen Patienten mit akuter Bronchitis.",
+    "patientData": "35 Jahre, maennlich, 74 kg, BMI 23",
+    "history": "Seit 5 Tagen Husten, zunaechst trocken, jetzt gelblicher Auswurf. Fieber bis 38.2. Keine Dyspnoe.",
+    "examFindings": "BS 37.8, AF normal, Lunge: vesikulaeres Atemgeraeusch, vereinzelt Brummen.",
+    "diagnostics": "CRP 35 mg/L, Leukozyten 8.5. Thorax-Roentgen: kein Infiltrat.",
+    "assessment": "Akute Bronchitis, vermutlich viral.",
+    "treatment": "Symptomatisch: ACC akut, Hustenstiller bei Bedarf. Keine Antibiotika.",
+    "dischargePlan": "Symptomatische Therapie. Wiedervorstellung bei ausbleibender Besserung oder Fieber.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Verlauf",
+      "Befund",
+      "Diagnostik",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Akute Bronchitis",
+      "viraler Infekt",
+      "Husten",
+      "Raeuspern",
+      "Sputum"
+    ],
+    "modelAnswer": "35-jaehriger Patient mit akuter Bronchitis bei viralem Infekt. Symptomatische Therapie, keine Antibiose."
+  },
+  {
+    "id": "fsp_w_027",
+    "caseTitle": "Pyelonephritis in Schwangerschaft",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 28-jaehrige Schwangere (28. SSW) mit Pyelonephritis.",
+    "patientData": "28 Jahre, weiblich, 65 kg, BMI 23, Schwangerschaft 28. SSW",
+    "history": "Seit 2 Tagen Fieber 39.0, Schmerzen rechte Flanke, Dysurie, Schuttelfrost.",
+    "examFindings": "BS 38.9, RR 115/75, Klopfschmerz rechte Flanke, Abdomen gravid.",
+    "diagnostics": "CRP 180, Leukozyten 12.0, Urin: Leukos ++, Nitrit pos. Sono: Harnstau rechts Grad I.",
+    "assessment": "Akute Pyelonephritis rechts in der Schwangerschaft.",
+    "treatment": "Cefuroxim 1.5 g 3x/Tag i.v., Paracetamol bei Fieber. Tokolyse bei Wehentaetigkeit.",
+    "dischargePlan": "Nach 48h klinischer Besserung Umstellung auf orales Cefuroxim 500 mg 2x/Tag fuer 10 Tage. Sono-Kontrolle. Vorstellung Gynaekologie.",
+    "expectedStructure": [
+      "Patientendaten und SSW",
+      "HWI-Symptome",
+      "Befund",
+      "Labor und Sono",
+      "Diagnose",
+      "Therapie",
+      "Entlassplan"
+    ],
+    "usefulPhrases": [
+      "Pyelonephritis in SS",
+      "Harnstau",
+      "Schwangerschaft",
+      "Tokolyse"
+    ],
+    "modelAnswer": "Schwangere (28. SSW) mit Pyelonephritis rechts. Cefuroxim i.v., Fieber ruecklaeufig. Orale Antibiose fuer 10 Tage."
+  },
+  {
+    "id": "fsp_w_028",
+    "caseTitle": "Akute Sinusitis maxillaris",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 42-jaehrige Patientin mit akuter Sinusitis.",
+    "patientData": "42 Jahre, weiblich, 62 kg, BMI 21",
+    "history": "Seit 1 Woche Schnupfen, dann eitriger Ausfluss aus der Nase, Gesichtsschmerz rechts, Fieber 38.0, Kopfschmerzen.",
+    "examFindings": "BS 37.8, Nasenschleimhaut gerötet, eitrige Sekretion rechts. Druckschmerz Kieferhohle rechts.",
+    "diagnostics": "CRP 25. Roentgen-NNH: Verschattung Kieferhoehle rechts.",
+    "assessment": "Akute Sinusitis maxillaris rechts.",
+    "treatment": "Dekongestive Nasenspray (Otriven) fuer max. 7 Tage, Doxycyclin 200 mg/Tag fuer 7 Tage.",
+    "dischargePlan": "Doxycyclin, nasale Pflege. Bei fehlender Besserung nach 7 Tagen HNO-Vorstellung.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Verlauf",
+      "Befund",
+      "Diagnostik",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Sinusitis = Nasennebenhoehlenentzuendung",
+      "NNH-Verschattung",
+      "Kieferhoehle",
+      "Dekongestiva"
+    ],
+    "modelAnswer": "42-jaehrige Patientin mit akuter Sinusitis maxillaris rechts (NNH-Verschattung, eitrige Sekretion). Doxycyclin, Dekongestiva."
+  },
+  {
+    "id": "fsp_w_029",
+    "caseTitle": "Notfallmassnahme: Cardiogener Schock",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 66-jaehrigen Patienten mit cardiogenem Schock bei Myokardinfarkt.",
+    "patientData": "66 Jahre, maennlich, 78 kg",
+    "history": "Kollaps zu Hause. Reanimation durch Ehemann. Notarzt: Kammerflimmern, Defibrillation. EKG: ST-Hebungen.",
+    "examFindings": "Bewusstlos, HF 130, RR 80/45, SaO2 90%, Kaltschweissig. Lunge: RG basal.",
+    "diagnostics": "Troponin 8000 ng/L. Koronarangiographie: Hauptstammstenose + Dreigefasserkrankung.",
+    "assessment": "Cardiogener Schock bei akutem Vorderwandinfarkt + Kammerflimmern.",
+    "treatment": "Reanimation, IABP, PTCA + DES. Katecholamine (Noradrenalin). Beatmung.",
+    "dischargePlan": "Nach Stabilisierung: Echokardiographie, ASS + Ticagrelor, Statin, ACE-Hemmer. Kardiale Rehabilitation. ICD-Praevention erwaegen.",
+    "expectedStructure": [
+      "Reanimation und Erstversorgung",
+      "Befund",
+      "Koronarstatus",
+      "Diagnose",
+      "Intensivtherapie",
+      "Weiterer Plan"
+    ],
+    "usefulPhrases": [
+      "cardigener Schock",
+      "Katecholamine",
+      "IABP = intraaortale Ballonpumpe",
+      "Reanimation"
+    ],
+    "modelAnswer": "Patient mit cardiogenem Schock bei Vorderwandinfarkt und Kammerflimmern. Reanimation, IABP, PTCA+DES. Auf Intensivstation stabilisiert."
+  },
+  {
+    "id": "fsp_w_030",
+    "caseTitle": "Pankreaskarzinom Verdacht",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 70-jaehrigen Patienten mit Pankreaskopfkarzinom.",
+    "patientData": "70 Jahre, maennlich, 65 kg, BMI 22 (10 kg Verlust)",
+    "history": "Seit 3 Monaten schmerzloser Ikterus, Gewichtsverlust, Appetitlosigkeit, heller Stuhl, dunkler Urin. Starker Raucher.",
+    "examFindings": "Ikterische Skleren und Haut. Leber druckschmerzhaft tastbar. Bauch weich.",
+    "diagnostics": "Bilirubin 8.2, AP 280, GGT 350, CA 19-9 450. CT: Pankreaskopfkarzinom 3.5 cm, Lebermetastasen.",
+    "assessment": "Pankreaskopfkarzinom mit Lebermetastasen (Stadium IV).",
+    "treatment": "Palliative Therapie: Chemotherapie (Gemcitabin + nab-Paclitaxel), Stent bei Gallengangstenose.",
+    "dischargePlan": "Palliative Chemotherapie, Schmerztherapie, Ernaehrungsberatung. Vorstellung Onkologie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Risikofaktoren",
+      "Befund",
+      "Bildgebung und Tumorwerte",
+      "Diagnose und Stadium",
+      "Therapieplan"
+    ],
+    "usefulPhrases": [
+      "Pankreaskarzinom",
+      "CA 19-9 = Tumormarker",
+      "Ikterus = Gelbsucht",
+      "palliativ"
+    ],
+    "modelAnswer": "Patient mit Pankreaskopfkarzinom Stadium IV bei Diagnose. Palliative Chemotherapie eingeleitet."
+  },
+  {
+    "id": "fsp_w_031",
+    "caseTitle": "Lungenentzuendung bei COPD",
+    "task": "Verfassen Sie einen Arztbrief fuer 66-jaehrigen mit COPD-Pneumonie.",
+    "patientData": "66 Jahre, maennlich, 70 kg, BMI 25",
+    "history": "Seit 2 Tagen Fieber 39, purulenter Auswurf, Dyspnoe in Ruhe. COPD GOLD III, letzte Exazerbation vor 6 Monaten.",
+    "examFindings": "BS 39.2, RR 145/85, HF 105, AF 26/min, SaO2 86%. Auskultation: RG beidseits basal, Giemen.",
+    "diagnostics": "CRP 250, PCT 4.5. BGA: pH 7.34, pCO2 52, pO2 62. Thorax-CT: bilaterale Infiltrate.",
+    "assessment": "Ae-COP mit Pneumonie. Respiratorische Insuffizienz (Typ 2).",
+    "treatment": "Piperacillin/Tazobactam 4.5g 3x/Tag, Prednisolon 40 mg, Sauerstoff, Bronchodilatation.",
+    "dischargePlan": "Orale Antibiose fuer 7 weitere Tage, inhalative Dauertherapie, Sauerstoff-Langzeittherapie. RSV-Impfung empfohlen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Vorerkrankungen",
+      "Infektzeichen und Lungenstatus",
+      "Labor, BGA, Bildgebung",
+      "Diagnose",
+      "Intensivtherapie",
+      "Entlassplanung"
+    ],
+    "usefulPhrases": [
+      "Ae-COP",
+      "CAP",
+      "Piperacillin/Tazobactam",
+      "respiratorische Insuffizienz"
+    ],
+    "modelAnswer": "Patient mit Ae-COP und Pneumonie. Piperacillin/Tazobactam, Prednisolon, Sauerstoff. Resp. Insuffizienz Typ 2."
+  },
+  {
+    "id": "fsp_w_032",
+    "caseTitle": "Akute Divertikulitis",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 60-jaehrige Patientin mit akuter Divertikulitis.",
+    "patientData": "60 Jahre, weiblich, 72 kg",
+    "history": "Seit 3 Tagen linke Unterbauchschmerzen, Fieber bis 38.5, Verstopfung, Uebelkeit.",
+    "examFindings": "BS 38.2, Abdomen: Druckschmerz linker Unterbauch, Abwehrspannung, Darmgeraeusche abgeschwaecht.",
+    "diagnostics": "CRP 120, Leukozyten 14.0. CT: Sigmadivertikulitis mit perikolischer Entzuendung (Hinchey Ia).",
+    "assessment": "Akute Divertikulitis (Hinchey Ia).",
+    "treatment": "Metronidazol + Ciprofloxacin i.v., NPO, Fluessigkeit.",
+    "dischargePlan": "Nach Besserung: flüssige Kost, orale Antibiose fuer 7 Tage, Koloskopie nach 6 Wochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Schmerz- und Fieberanamnese",
+      "Befund",
+      "CT und Labor",
+      "Diagnose und Klassifikation",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Divertikulitis",
+      "Hinchey-Klassifikation",
+      "Sigma = Colon sigmoideum"
+    ],
+    "modelAnswer": "Patientin mit Sigmadivertikulitis Hinchey Ia. Metronidazol+Ciprofloxacin, NPO. Koloskopie nach 6 Wochen."
+  },
+  {
+    "id": "fsp_w_033",
+    "caseTitle": "Hypertonie-Entgleisung",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 55-jaehrige Patientin mit hypertensiver Krise.",
+    "patientData": "55 Jahre, weiblich, 85 kg, BMI 31",
+    "history": "Seit Tagen Kopfschmerzen, Sehstoerungen, Nasenbluten. RR 220/110 gemessen. Bekannte Hypertonie, nimmt Medis unregelmaessig.",
+    "examFindings": "RR 210/105, HF 95. Augenhintergrund: Fundus hypertonicus II. Herz: betonter A2-Ton.",
+    "diagnostics": "Kreatinin 1.2, Kalium 3.5. EKG: Linkshypertrophie. Echo: keine LVH.",
+    "assessment": "Hypertensive Krise ohne akute Zielorganschaeden.",
+    "treatment": "Urapidil 25 mg i.v., dann orale Einstellung.",
+    "dischargePlan": "Ramipril 5 mg + Amlodipin 5 mg. RR-Protokoll. Diabetberatung. RR-Kontrolle in 1 Woche.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und RR-Anamnese",
+      "Befund",
+      "Diagnose",
+      "Akuttherapie",
+      "Dauertherapie"
+    ],
+    "usefulPhrases": [
+      "Hypertensive Krise",
+      "Fundus hypertonicus",
+      "RR-Protokoll",
+      "ACE-Hemmer"
+    ],
+    "modelAnswer": "Patientin mit hypertensiver Krise (RR 210/105). Urapidil i.v., dann Ramipril+Amlodipin. Kontrolle in 1 Woche."
+  },
+  {
+    "id": "fsp_w_034",
+    "caseTitle": "Verdacht auf Meningitis",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 22-jaehrigen Patienten mit Meningitis-Verdacht.",
+    "patientData": "22 Jahre, maennlich, 72 kg, BMI 23",
+    "history": "Seit 12h Fieber 39.5, starke Kopfschmerzen, Nackensteifigkeit, Lichtscheu, Erbrechen. Kein Ausschlag.",
+    "examFindings": "BS 39.4, HF 110, RR 120/70. Nackensteifigkeit, Kernig-Zeichen positiv, Meningsimus. Haut: keine Petschien.",
+    "diagnostics": "CRP 150, Leukozyten 15. Liquor: trueb, Zellen 1500/mcl (90% Neutrophile), Protein 1.2 g/L, Glukose 30 mg/dL.",
+    "assessment": "Akute bakterielle Meningitis. Kein Ausschlag (kein Meningokokken-V.a.).",
+    "treatment": "Dexamethason 10 mg i.v., Ceftriaxon 4 g + Ampicillin 2 g i.v., Isolierung.",
+    "dischargePlan": "Antibiose fuer 7-10 Tage je nach Erreger. Liquorkontrolle. Impfung nach Genesung.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Meningitis-Symptome",
+      "Befund",
+      "Liquorbefund",
+      "Diagnose",
+      "Akuttherapie"
+    ],
+    "usefulPhrases": [
+      "Meningitis",
+      "Liquorpunktion",
+      "Nackensteifigkeit",
+      "Kernig-Zeichen",
+      "Antibiose"
+    ],
+    "modelAnswer": "Patient mit akuter bakterieller Meningitis. Liquor: neutrophile Pleozytose. Dexamethason, Ceftriaxon, Ampicillin."
+  },
+  {
+    "id": "fsp_w_035",
+    "caseTitle": "Akute Appendizitis",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 25-jaehrigen Patienten mit Appendizitis.",
+    "patientData": "25 Jahre, maennlich, 75 kg, BMI 23",
+    "history": "Seit 18h periumbilikale Schmerzen, dann rechter Unterbauch. Uebelkeit, Erbrechen, Appetitlosigkeit.",
+    "examFindings": "BS 37.9, Abdomen: Druckschmerz rechter Unterbauch, Abwehrspannung, McBurney-Zeichen positiv, Psoaszeichen pos.",
+    "diagnostics": "CRP 85, Leukozyten 14.5. Sono: Appendix 8mm, nicht komprimierbar, Kokarde.",
+    "assessment": "Akute Appendizitis.",
+    "treatment": "Lapaparoskopische Appendektomie, perioperativ Ceftriaxon + Metronidazol.",
+    "dischargePlan": "Stuhlgang, normaler Kostaufbau, Nahtkontrolle. Keine schweren koerperliche Aktivitaet fuer 2 Wochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Schmerz-Symptome",
+      "Befund",
+      "Sono und Labor",
+      "Diagnose",
+      "OP",
+      "Postoperativer Verlauf"
+    ],
+    "usefulPhrases": [
+      "Appendizitis = Blinddarmentzuendung",
+      "McBurney-Punkt",
+      "Appendektomie"
+    ],
+    "modelAnswer": "Patient mit akuter Appendizitis. Laparoskopische Appendektomie. Unkomplizierter Verlauf."
+  },
+  {
+    "id": "fsp_w_036",
+    "caseTitle": "Pleuraerguss bei Herzinsuffizienz",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 74-jaehrige Patientin mit Pleuraerguss bei Rechtsherzinsuffizienz.",
+    "patientData": "74 Jahre, weiblich, 80 kg, BMI 29",
+    "history": "Seit 2 Wochen zunehmende Dyspnoe, Orthopnoe, geschwollene Beine, 5 kg Gewichtszunahme. Bekannte Herzinsuffizienz NYHA III.",
+    "examFindings": "RR 150/90, HF 95, AF 24, SaO2 91%. Halsvenen gestaut, RG beidseits basal bis mittig, Beinoedeme bis Knie.",
+    "diagnostics": "NT-proBNP 5500 pg/mL. Thorax-Roentgen: Kardiomegalie, bds. Pleuraerguss. Echo: LVEF 40%, dilatatierten Ventrikel.",
+    "assessment": "Dekompensierte Herzinsuffizienz NYHA III mit Pleuraerguss.",
+    "treatment": "Furosemid 40 mg i.v., Sauerstoff, ACE-Hemmer, Pleurapunktion bei Dyspnoe.",
+    "dischargePlan": "Furosemid p.o. 40 mg, ACE-Hemmer, Beta-Blocker, Gewichtskontrolle. Kochsalzarme Diat. Kardiologische Kontrolle.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome der Dekompensation",
+      "Befund",
+      "Echo, NT-proBNP, Roentgen",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Herzinsuffizienz",
+      "NT-proBNP",
+      "Pleuraerguss",
+      "Oedeme",
+      "Dekompensation"
+    ],
+    "modelAnswer": "Patientin mit kardial dekompensierter Herzinsuffizienz NYHA III. Furosemid, ACE-Hemmer, Pleurapunktion."
+  },
+  {
+    "id": "fsp_w_037",
+    "caseTitle": "Thyreotoxische Krise",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 38-jaehrige Patientin mit thyreotoxischer Krise.",
+    "patientData": "38 Jahre, weiblich, 50 kg, BMI 18",
+    "history": "Seit 24h Fieber bis 40.0, Herzrasen, Verwirrtheit, Erbrechen, Durchfall. Bekannte Hyperthyreose, Therapie eigenmaechtig abgesetzt.",
+    "examFindings": "BS 39.8, HF 160/min irregular, RR 100/60, Bewusstseinsgetruebt. Struma, Exophthalmus.",
+    "diagnostics": "TSH < 0.01, fT3 15, fT4 5.8. EKG: Tachykardie, Vorhofflimmern.",
+    "assessment": "Thyreotoxische Krise bei Morbus Basedow. Vorhofflimmern.",
+    "treatment": "Thiamazol 60 mg p.o., Propranolol 40 mg p.o., Dexamethason 8 mg i.v., Jodid-Loesung, Intensivstation.",
+    "dischargePlan": "Thiamazol 20 mg/Tag, Betablocker. Vorstellung Nuklear-medizin fuer Radiojodtherapie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome der Krise",
+      "Befund",
+      "Schilddruesenlabor",
+      "Diagnose",
+      "Intensivtherapie"
+    ],
+    "usefulPhrases": [
+      "thyreotoxische Krise",
+      "Morbus Basedow",
+      "Thiamazol",
+      "Jodid",
+      "Vorhofflimmern"
+    ],
+    "modelAnswer": "Patientin mit thyreotoxischer Krise. Thiamazol, Jodid, Dexamethason, Betablocker. Intensivueberwachung."
+  },
+  {
+    "id": "fsp_w_038",
+    "caseTitle": "Okulare Migraene",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 32-jaehrige Patientin mit Migraene mit Aura.",
+    "patientData": "32 Jahre, weiblich, 58 kg, BMI 21",
+    "history": "Seit Jahren wiederkehrende Kopfschmerzen einseitig mit Uebelkeit, Lichtscheu. Jetzt erstmals visuelle Aura (Zickzacklinien, Skotom).",
+    "examFindings": "Neurologisch unauffaellig. Keine Paresen. Sehkraft normal.",
+    "diagnostics": "CCT: unauffaellig. MRT: unauffaellig.",
+    "assessment": "Migraene mit Aura (visuell).",
+    "treatment": "Akut: Sumatriptan 50 mg p.o. Prophylaxe: Metoprolol 50 mg.",
+    "dischargePlan": "Metoprolol 50 mg 1x/Tag. Kopfschmerztagebuch. Triggervermeidung. Neurologische Vorstellung.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Kopfschmerzcharakteristika",
+      "Aura",
+      "Bildgebung",
+      "Diagnose",
+      "Akut- und Prophylaxetherapie"
+    ],
+    "usefulPhrases": [
+      "Migraene mit Aura",
+      "Skotom = Gesichtsfeldausfall",
+      "Triptane",
+      "Metoprolol"
+    ],
+    "modelAnswer": "Patientin mit Migraene mit visueller Aura. Sumatriptan akut, Metoprolol prophylaktisch. Kopfschmerztagebuch."
+  },
+  {
+    "id": "fsp_w_039",
+    "caseTitle": "HWS-Distorsion (Schleudertrama)",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 30-jaehrigen Patienten mit HWS-Distorsion.",
+    "patientData": "30 Jahre, maennlich, 70 kg, BMI 22",
+    "history": "Vor 2 Tagen Auffahrunfall mit PKW bei 50 km/h. Seitdem Nakkenschmerzen und Bewegungseinschraenkung, Kopfschmerzen.",
+    "examFindings": "HWS: schmerzhafte Bewegungseinschraenkung, verspannte Nackenmuskulatur. Keine radikulaere Symptome. Neuro o.B.",
+    "diagnostics": "Roentgen HWS: keine Fraktur, keine Instabilitaet, physiologische Lordose aufgehoben.",
+    "assessment": "HWS-Distorsion Grad I (Schleudertrauma).",
+    "treatment": "NSAR (Diclofenac), Waerme, vorsichtige Mobilisation, keine Schonhaltung.",
+    "dischargePlan": "Fortfuehrung der Bewegungstherapie. Physiotherapie. Bei Persistenz nach 2 Wochen Vorstellung Orthopadie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Unfallhergang",
+      "Befund",
+      "Roentgen",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "HWS-Distorsion",
+      "Schleudertrauma",
+      "Nackenschmerz",
+      "Mobilisation"
+    ],
+    "modelAnswer": "HWS-Distorsion Grad I nach Auffahrunfall. Keine Fraktur. NSAR, Mobilisation, Physiotherapie."
+  },
+  {
+    "id": "fsp_w_040",
+    "caseTitle": "Akute Perikarditis",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 40-jaehrigen Mann mit akuter Perikarditis.",
+    "patientData": "40 Jahre, maennlich, 78 kg, BMI 24",
+    "history": "Seit einem Tag stechende Brustschmerzen retrosternal, im Liegen und beim Atmen staerker, sitzend besser.",
+    "examFindings": "RR 120/75, HF 95, BS 37.5. Perikardreiben auskultierbar.",
+    "diagnostics": "EKG: diffuse ST-Hebungen, PR-Senkung. CRP 65. Troponin normal. Echo: minimale Perikarderguss.",
+    "assessment": "Akute Perikarditis, vermutlich viral.",
+    "treatment": "Ibuprofen 600 mg 3x/Tag, Colchicin 0.5 mg 2x/Tag.",
+    "dischargePlan": "Ibuprofen ausschleichen ueber 2-3 Wochen, Colchicin fuer 3 Monate. Kein Sport fuer 4 Wochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Brustschmerzcharakter",
+      "Befund",
+      "EKG und Echo",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Perikarditis = Herzbeutelentzuendung",
+      "Perikardreiben",
+      "Colchicin",
+      "Ibuprofen"
+    ],
+    "modelAnswer": "Patient mit akuter Perikarditis. Ibuprofen + Colchicin. ST-Hebungen und Perikardreiben ruecklaeufig."
+  },
+  {
+    "id": "fsp_w_041",
+    "caseTitle": "Akute Pankreatitis bei Hypertriglyzeridaemie",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 38-jaehrigen Patienten mit akuter Pankreatitis bei Hypertriglyzeridaemie.",
+    "patientData": "38 Jahre, maennlich, 95 kg, BMI 32",
+    "history": "Starke epigastrische Schmerzen, Ausstrahlung in den Ruecken, Uebelkeit, Erbrechen. Bekannte Hypertriglyzeridaemie.",
+    "examFindings": "BS 37.5, RR 135/85, HF 100. Abdomen gespannt, epigastrischer Druckschmerz.",
+    "diagnostics": "Lipase 3500, Triglyzeride 4500 mg/dL. CRP 60. Sono: Pankreas oedematoes.",
+    "assessment": "Akute Pankreatitis bei Hypertriglyzeridaemie.",
+    "treatment": "NPO, i.v.-Fluessigkeit, Insulinperfusor zur Triglyzeridsenkung, ggf. Plasmapherese.",
+    "dischargePlan": "Triglyzerid-arm Diat, Fibrat (Fenofibrat). Vermeidung von Alkohol. Kontrolle der Triglyzeride.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Risikofaktor",
+      "Labor und Sono",
+      "Diagnose",
+      "Therapie",
+      "Diat",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Hypertriglyzeridaemie",
+      "Fibrat",
+      "Plasmapherese"
+    ],
+    "modelAnswer": "Patient mit Pankreatitis bei HTG. Triglyzeride 4500. NPO, Insulin, Plasmapherese. Diat, Fenofibrat."
+  },
+  {
+    "id": "fsp_w_042",
+    "caseTitle": "Chronische Niereninsuffizienz (CKD 4)",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 68-jaehrige mit CKD 4 bei diabetischer Nephropathie.",
+    "patientData": "68 Jahre, weiblich, 70 kg, BMI 26",
+    "history": "Muedigkeit, Juckreiz, Oedeme. DM Typ 2 seit 20 Jahren. Hypertonie.",
+    "examFindings": "RR 150/85. Beinoedeme. Zyanotisches Hautkolorit.",
+    "diagnostics": "Kreatinin 3.2, eGFR 18. Hb 9.8. Kalium 5.3.",
+    "assessment": "CKD Stadium 4. Renale Anaemie. Hyperkaliamie.",
+    "treatment": "Furosemid, Erythropoetin, kaliumarme Diat. Dialyse-Shunt-OP geplant.",
+    "dischargePlan": "Erythropoetin woechentlich, Furosemid, kaliumarme Diat. Shunt-Anlage in 4 Wochen.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Befund",
+      "Labor (Kreatinin, eGFR, Hb, K)",
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "CKD",
+      "eGFR",
+      "Dialyse",
+      "Shunt",
+      "Anaemie"
+    ],
+    "modelAnswer": "CKD 4 bei diabetischer Nephropathie. eGFR 18, renale Anaemie, Hyperkaliamie. Dialysevorbereitung."
+  },
+  {
+    "id": "fsp_w_043",
+    "caseTitle": "Schilddruesenknoten (Struma nodosa)",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 42-jaehrige mit Struma nodosa.",
+    "patientData": "42 Jahre, weiblich, 58 kg",
+    "history": "Klossgefuehl im Hals, Schluckbeschwerden. Keine Hormonsymptome.",
+    "examFindings": "Struma Grad II, derber Knoten rechts.",
+    "diagnostics": "TSH, fT3, fT4 normal. Sono: Knoten rechts 2.5 cm, echoarm, Mikrokalzifikationen. Szintigraphie: kalt.",
+    "assessment": "Struma nodosa rechts, kalter Knoten.",
+    "treatment": "Feinnadelpunktion des kalten Knotens.",
+    "dischargePlan": "Bei Malignonverdacht: Operation. Sonst Kontrolle in 6 Monaten.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Befund",
+      "Sono und Szinti",
+      "Diagnose",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Struma = Kroepfe",
+      "kalter Knoten = szintigraphisch inaktiv",
+      "Feinnadelpunktion"
+    ],
+    "modelAnswer": "Struma nodosa mit kaltem Knoten rechts. Punktion geplant. Bei Malignonverdacht OP."
+  },
+  {
+    "id": "fsp_w_044",
+    "caseTitle": "Asthma-Exazerbation",
+    "task": "Schreiben Sie einen Arztbrief fuer einen 42-jaehrigen mit schwerer Asthma-Exazerbation.",
+    "patientData": "42 Jahre, weiblich, 60 kg",
+    "history": "Seit 3 Tagen zunehmende Dyspnoe, pfeifende Atmung, spricht in Woertern. Bekanntes Asthma.",
+    "examFindings": "AF 30, SaO2 87%, HF 115. Exspiratorisches Giemen, verlängertes Exspirium.",
+    "diagnostics": "BGA: pH 7.36, pCO2 42, pO2 70.",
+    "assessment": "Schwere Asthma-Exazerbation.",
+    "treatment": "Salbutamol+Ipratropium per Vernebler, Prednisolon 50 mg i.v., Sauerstoff.",
+    "dischargePlan": "Prednisolon ausschleichen ueber 5 Tage. Fortfuehrung ICS/LABA. Asthmaschulung, Peakflow-Tagebuch.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Befund und BGA",
+      "Diagnose",
+      "Akuttherapie",
+      "Dauertherapie"
+    ],
+    "usefulPhrases": [
+      "Asthma-Exazerbation",
+      "ICS/LABA",
+      "Vernebler",
+      "Peakflow"
+    ],
+    "modelAnswer": "Schwere Asthma-Exazerbation. Vernebler, Prednisolon, Sauerstoff. ICS/LABA fortfuehren."
+  },
+  {
+    "id": "fsp_w_045",
+    "caseTitle": "Schlafapnoe",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 55-jaehrigen Patienten mit obstruktiver Schlafapnoe.",
+    "patientData": "55 Jahre, maennlich, 100 kg, BMI 35",
+    "history": "Starke Tagesmuedigkeit, lautes Schnarchen, Atemaussetzer. Partner berichtet. Beruf: LKW-Fahrer.",
+    "examFindings": "Uebergewicht, RR 145/90, enger Oropharynx.",
+    "diagnostics": "Polysomnographie: AHI 35/h. Naedrigen SaO2 78%.",
+    "assessment": "Obstruktive Schlafapnoe (AHI 35, schwer).",
+    "treatment": "CPAP-Therapie. Fahrtauglichkeit prufen.",
+    "dischargePlan": "CPAP-Geraet. Gewichtsreduktion. Vorstellung Schlafmedizin. Fahrverbot bis zur Einstellung.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Risikofaktor Beruf",
+      "Polysomnographie",
+      "Diagnose",
+      "CPAP, Fahrverbot"
+    ],
+    "usefulPhrases": [
+      "Schlafapnoe",
+      "AHI = Apnoe-Hypopnoe-Index",
+      "CPAP",
+      "Fahrtauglichkeit"
+    ],
+    "modelAnswer": "Patient mit schwerer OSA (AHI 35). CPAP Therapie. Fahrverbot. Gewichtsreduktion."
+  },
+  {
+    "id": "fsp_w_046",
+    "caseTitle": "Akute Nierenkolik",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 50-jaehrigen Patienten mit Nierenkolik.",
+    "patientData": "50 Jahre, maennlich, 82 kg",
+    "history": "Ploetzlicher, wellenartiger Schmerz rechte Flanke, ausstrahlend in den Unterbauch. Uebelkeit, Erbrechen.",
+    "examFindings": "RR 145/90, BS 36.8. Klopfschmerz rechte Flanke. Kein Fieber.",
+    "diagnostics": "Urin: Ery +++. Sono: Nierenstein rechtes Nierenbecken, Harnstau Grad II.",
+    "assessment": "Nierenkolik bei Ureterstein.",
+    "treatment": "Diclofenac i.v., reichlich trinken, Alfuzosin (Steinaustreibungsfoerderung).",
+    "dischargePlan": "Steinaustreibung abwarten. CT-Urogramm in 2 Wochen. Urologische Vorstellung.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Schmerz-Charakter",
+      "Befund",
+      "Sono, Urin",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Nierenkolik",
+      "Ureterstein",
+      "Harnstau",
+      "Alfuzosin"
+    ],
+    "modelAnswer": "Patient mit Nierenkolik. Ureterstein rechts. Diclofenac, Alfuzosin. Urologische Vorstellung."
+  },
+  {
+    "id": "fsp_w_047",
+    "caseTitle": "Panikattacke",
+    "task": "Verfassen Sie einen Arztbrief fuer eine 28-jaehrige mit Panikattacke.",
+    "patientData": "28 Jahre, weiblich, 55 kg",
+    "history": "Ploetzliche Angstdepressiver, Herzrasen, Hyperventilation, Todesangst. 3. Episode in 4 Wochen.",
+    "examFindings": "BS 37.0, RR 125/80, HF 110, afebril. Hyperventilation. Neurologisch o.B.",
+    "diagnostics": "ECG: Tachykardie. Troponin, Kalium, TSH normal.",
+    "assessment": "Panikattacke (F41.0).",
+    "treatment": "Beruhigung, Rueckatmung in die Haende, Aufklaerung. Akut: Lorazepam 1 mg sublingual.",
+    "dischargePlan": "SSRI (Escitalopram 10 mg) zur Prophylaxe. Psychotherapie. Notfallplan.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Ausschluss organische Ursache",
+      "Diagnose",
+      "Akutmassnahmen",
+      "Langzeittherapie"
+    ],
+    "usefulPhrases": [
+      "Panikattacke",
+      "Hyperventilation",
+      "Lorazepam",
+      "Escitalopram"
+    ],
+    "modelAnswer": "Patientin mit Panikattacke. Herz-Kreislauf o.B. Beruhigung, Lorazepam. Escitalopram fuer Prophylaxe."
+  },
+  {
+    "id": "fsp_w_048",
+    "caseTitle": "Lungenkarzinom Verdacht",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 66-jaehrigen Patienten mit Bronchialkarzinom-Verdacht.",
+    "patientData": "66 Jahre, maennlich, 60 kg, BMI 20",
+    "history": "Seit 3 Monaten Husten, Haemoptyse, Dyspnoe, 8 kg Gewichtsverlust. Starker Raucher (50 pack years).",
+    "examFindings": "AF 22, SaO2 90%. Lunge: linksseitig abgeschwaechter Atemschall. Hals: Lymphknoten supraklavikulaer links.",
+    "diagnostics": "Roentgen: Verschattung linker Oberlappen. CT: Tumor 5 cm, Mediastinallymphknoten. Biopsie: Plattenepithelkarzinom.",
+    "assessment": "Bronchialkarzinom links (Plattenepithel).",
+    "treatment": "Staging: CT Thorax/Abdomen, PET-CT, Bronchoskopie, Sono-Abdomen.",
+    "dischargePlan": "Staging abwarten, dann Tumorkonferenz. Palliative Chemotherapie/Immuntherapie je nach PD-L1.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome und Risikofaktoren",
+      "Befund",
+      "Bildgebung",
+      "Biopsie",
+      "Staging"
+    ],
+    "usefulPhrases": [
+      "Bronchialkarzinom",
+      "Haemoptyse = Bluthusten",
+      "PD-L1 = Immuntherapie-Marker",
+      "Staging"
+    ],
+    "modelAnswer": "Patient mit Bronchialkarzinom links. Staging abwarten. Tumorkonferenz zur Therapieplanung."
+  },
+  {
+    "id": "fsp_w_049",
+    "caseTitle": "Erektile Dysfunktion",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 55-jaehrigen Patienten mit erektiler Dysfunktion.",
+    "patientData": "55 Jahre, maennlich, 88 kg, BMI 29",
+    "history": "Seit Monaten Erektionsprobleme, verminderte Libido. DM Typ 2, Hypertonie, Raucher.",
+    "examFindings": "RR 145/85, Puls 75, Gynaekomastie leicht. Genital o.B., Prostata unauffällig.",
+    "diagnostics": "Testosteron 280 ng/dL (niedrig-normal). TSH, Prolaktin normal.",
+    "assessment": "Erektile Dysfunktion bei vaskulaeren Risikofaktoren.",
+    "treatment": "PDE5-Hemmer (Tadalafil 5 mg taeglich oder Sildenafil 50 mg bei Bedarf).",
+    "dischargePlan": "Tadalafil 5 mg. RR/Diabetes optimieren. Nikotinkarenz. Ggfs. Andrologie.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Risikofaktoren",
+      "Labor",
+      "Diagnose",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "ED = erektile Dysfunktion",
+      "PDE5-Hemmer",
+      "Tadalafil",
+      "Testosteron"
+    ],
+    "modelAnswer": "ED bei vaskulaeren Risiken. PDE5-Hemmer. Nikotinkarenz, RR-Optimierung."
+  },
+  {
+    "id": "fsp_w_050",
+    "caseTitle": "Harnverhalt bei BPH",
+    "task": "Verfassen Sie einen Arztbrief fuer einen 68-jaehrigen mit akutem Harnverhalt.",
+    "patientData": "68 Jahre, maennlich, 76 kg",
+    "history": "Seit 12h kann nicht Wasserlassen, schmerzhafter Unterbauch.",
+    "examFindings": "Unterbauch prall gefuellt, Druckempfindlich. Prostata vergroessert.",
+    "diagnostics": "Sono: Restharn 800 mL.",
+    "assessment": "Akuter Harnverhalt bei BPH.",
+    "treatment": "Transurethraler Dauerkatheter. Tamsulosin 0.4 mg.",
+    "dischargePlan": "Nach 48h Auslassversuch. Bei Erfolg: Tamsulosin. Bei Misserfolg: TURP.",
+    "expectedStructure": [
+      "Patientendaten",
+      "Symptome",
+      "Befund",
+      "Sono",
+      "Diagnose",
+      "Katheter",
+      "Medikation und OP"
+    ],
+    "usefulPhrases": [
+      "Harnverhalt",
+      "BPH = benigne Prostatahyperplasie",
+      "TURP",
+      "Katheter"
+    ],
+    "modelAnswer": "Patient mit akutem Harnverhalt bei BPH. Katheter. Tamsulosin. Auslassversuch in 2 Tagen."
+  },
+  {
+    "id": "fsp_w_051",
+    "caseTitle": "Diabetisches Fusssyndrom Aufnahme",
+    "patientData": "67J m 92kg",
+    "history": "Typ-2-Diabetes 14J, Polyneuropathie. Roetung Vorfuss li.",
+    "examFindings": "Roetung li Vorfuss, ueberwaermt. Pulse li abgeschwaecht.",
+    "diagnostics": "CRP64, HbA1c8,9%, Duplex pAVK",
+    "assessment": "V.a. diabetisches Fusssyndrom bei pAVK",
+    "treatment": "i.v. Antibiose Piperacillin/Tazobactam, Wundversorgung",
+    "dischargePlan": "Antibiose 10T, Kontrolle HA alle 2T",
+    "task": "Aufnahmebrief bei V.a. diabetisches Fusssyndrom",
+    "expectedStructure": [
+      "Aufnahmegrund",
+      "Jetzige Beschwerden",
+      "Diagnosen",
+      "Befunde",
+      "Therapieplan"
+    ],
+    "usefulPhrases": [
+      "Aufnahme erfolgte aufgrund von ...",
+      "Bei bekanntem Diabetes ..."
+    ],
+    "modelAnswer": "Sehr geehrte Kollegin,\n\nAufnahme des 67j. Diabetikers M.S. wegen diabetischem Fusssyndrom li. CRP64, HbA1c8,9%, pAVK. Therapie: Piperacillin/Tazobactam, taegl. Wundversorgung, Gefaesskonsil.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Aufnahmebrief",
+      "Diabetes"
+    ]
+  },
+  {
+    "id": "fsp_w_052",
+    "caseTitle": "Entlassung nach Pneumonie",
+    "patientData": "45J w 68kg",
+    "history": "CAP linker Unterlappen",
+    "examFindings": "Daempfung li basal, SpO2 91% nach 97%",
+    "diagnostics": "CRP142, Sputum Streptoc. pneum.",
+    "assessment": "Ambulant erworbene Pneumonie",
+    "treatment": "Ceftriaxon+Azithromycin 7T",
+    "dischargePlan": "Hausarzt 3T, Roentgen 4Wo",
+    "task": "Entlassungsbrief nach Pneumonie",
+    "expectedStructure": [
+      "Entlassdiagnosen",
+      "Verlauf",
+      "Medikation",
+      "Weiterbehandlung"
+    ],
+    "usefulPhrases": [
+      "Die Patientin befand sich vom ... bis ...",
+      "Bei Entlassung fieberfrei"
+    ],
+    "modelAnswer": "Entlassung Frau A.K. 45J. CAP Streptoc. pneum. Therapie: Ceftriaxon+Azithromycin 7T. Bei Entlassung fieberfrei, SpO2 97%. Hausarzt in 3T, Roentgen-Kontrolle in 4Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "Pneumonie"
+    ]
+  },
+  {
+    "id": "fsp_w_053",
+    "caseTitle": "Ueberweisung Gastro Colitis",
+    "patientData": "29J m 74kg",
+    "history": "Blutig-schleimige Durchfaelle, Gewichtsverlust",
+    "examFindings": "Druckschmerz li Unterbauch, rektal blutig",
+    "diagnostics": "Calprotectin >500, CRP38",
+    "assessment": "V.a. Colitis ulcerosa",
+    "treatment": "Mesalazin 1,5g/Tag",
+    "dischargePlan": "Gastro Vorstellung mit Koloskopie",
+    "task": "Ueberweisung an Gastro bei V.a. Colitis",
+    "expectedStructure": [
+      "Ueberweisungsgrund",
+      "Anamnese",
+      "Befunde",
+      "Fragestellung"
+    ],
+    "usefulPhrases": [
+      "Hiermit ueberweise ich ...",
+      "Bitte um ..."
+    ],
+    "modelAnswer": "Ueberweisung T.M. 29J. 3Wo blutig-schleimige Durchfaelle. Calprotectin >500, CRP38. Therapie: Mesalazin 1,5g. Bitte Koloskopie mit Stufenbiopsien.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Ueberweisung",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "fsp_w_054",
+    "caseTitle": "Konsil Neurologie MS",
+    "patientData": "32J w 63kg",
+    "history": "Optikusneuritis re, Taubheitsgefuehl li Arm. Mutter MS",
+    "examFindings": "Visus re 0,4, li Hemihypaesthesie",
+    "diagnostics": "MRT periventrikulaere Laesionen, VEP verlaengert",
+    "assessment": "V.a. schubfoermige MS",
+    "treatment": "Methylprednisolon 1g/Tag i.v.",
+    "dischargePlan": "Bitte neurologische Mitbeurteilung",
+    "task": "Konsilanforderung Neurologie bei V.a. MS",
+    "expectedStructure": [
+      "Grund",
+      "Symptomatik",
+      "Befunde",
+      "Fragestellung"
+    ],
+    "usefulPhrases": [
+      "Wir bitten um Ihre Mitbeurteilung ..."
+    ],
+    "modelAnswer": "Bitte neurologisches Konsil Frau L.S. 32J. Optikusneuritis re, positive FA. MRT mit KM-aufnehmenden Laesionen. Bitte McDonald-Kriterien pruefen, Kortison-Pulstherapie und verlaufsmodifizierende Therapie empfehlen.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Konsil",
+      "Neurologie",
+      "MS"
+    ]
+  },
+  {
+    "id": "fsp_w_055",
+    "caseTitle": "Kurzbrief Appendektomie",
+    "patientData": "22J m 70kg",
+    "history": "Seit 24h re Unterbauchschmerzen",
+    "examFindings": "Druckschmerz re, Psoas/Loslass pos.",
+    "diagnostics": "Leukos 14.500, Sono Appendix 12mm",
+    "assessment": "Akute Appendizitis",
+    "treatment": "Lap. Appendektomie",
+    "dischargePlan": "Fadenzug 8T, Schonung 2Wo",
+    "task": "Kurzbrief nach Appendektomie",
+    "expectedStructure": [
+      "Diagnose",
+      "Prozedur",
+      "Verlauf",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Stationaer vom ... bis ...",
+      "Postoperativ komplikationslos"
+    ],
+    "modelAnswer": "Kurzer Bericht R.G. 22J. Diagnose: Akute Appendizitis. Prozedur: Lap. Appendektomie. Verlauf komplikationslos. Fadenzug beim HA 8T, Schonung 2Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Kurzbrief",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "fsp_w_056",
+    "caseTitle": "Notfall Subarachnoidalblutung",
+    "patientData": "55J w 85kg",
+    "history": "Vernichtungskopfschmerz, Erbrechen, Somnolenz",
+    "examFindings": "GCS12, Meningismus, RR185/110",
+    "diagnostics": "EKG Sinustachykardie",
+    "assessment": "V.a. SAB",
+    "treatment": "O2 4L, Urapidil, Schockraum",
+    "dischargePlan": "Neurochirurgie bei Bestaetigung",
+    "task": "Notarzteinsatz bei V.a. Subarachnoidalblutung",
+    "expectedStructure": [
+      "Einsatz",
+      "Notfalldiagnose",
+      "Befund",
+      "Massnahmen"
+    ],
+    "usefulPhrases": [
+      "Notarzteinsatz um ... Uhr ...",
+      "V.a. SAB"
+    ],
+    "modelAnswer": "Einsatz 18:30 Wohnhaus. V.a. SAB. GCS12 Meningismus RR185. O2, Urapidil, Schockraumankuendigung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Emergency",
+      "Notarzt",
+      "SAB"
+    ]
+  },
+  {
+    "id": "fsp_w_057",
+    "caseTitle": "Follow-up Hueft-TEP",
+    "patientData": "73J w 80kg",
+    "history": "Z.n. Hueft-TEP re vor 6Wo",
+    "examFindings": "Flex 0-0-90, Abd 0-0-20, Wunde reizlos",
+    "diagnostics": "Roentgen: TEP korrekt",
+    "assessment": "Regelrechter Verlauf",
+    "treatment": "Ibuprofen bei Bedarf, Physio 2x/Wo",
+    "dischargePlan": "Kontrolle 3Monate",
+    "task": "Follow-up-Brief nach Hueft-TEP",
+    "expectedStructure": [
+      "OP-Datum",
+      "Verlauf",
+      "Befund",
+      "Vorgehen"
+    ],
+    "usefulPhrases": [
+      "Kontrolle am ...",
+      "Prothese regelrecht"
+    ],
+    "modelAnswer": "Follow-up Frau E.M. 73J nach Hueft-TEP re. Bewegung Flex90, Abd20. Roentgen korrekt. Physio 2x/Wo. Naechste Kontrolle in 3Monaten.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Follow-up",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "fsp_w_058",
+    "caseTitle": "AU Lumbago",
+    "patientData": "41J m 88kg Buerokraft",
+    "history": "Rueckenschmerzen nach Heben einer Kiste",
+    "examFindings": "LWS verspannt, Lasegue neg.",
+    "diagnostics": "Blutbild CRP o.B.",
+    "assessment": "Akute Lumbago",
+    "treatment": "Ibuprofen 600, Waerme, Physio",
+    "dischargePlan": "AU 02.05-06.05.2026",
+    "task": "AU-Bescheinigung bei Lumbago",
+    "expectedStructure": [
+      "Diagnose",
+      "AU-Zeitraum",
+      "Begruendung",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "AU besteht vorauss. bis ..."
+    ],
+    "modelAnswer": "AU Herr A.Sch. Lumbago M54.5. 02.05-06.05.2026. Buerotaetigkeit nicht moeglich. Ibuprofen 600, Physio.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "AU",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "fsp_w_059",
+    "caseTitle": "Patientenbrief Tonsillektomie",
+    "patientData": "26J w 55kg",
+    "history": "Z.n. ambulanter Tonsillektomie",
+    "examFindings": "Wunde reizlos, Schluck 5/10",
+    "diagnostics": "Hb13,2 INR1,0",
+    "assessment": "Z.n. Tonsillektomie",
+    "treatment": "Paracetamol+Ibuprofen",
+    "dischargePlan": "Schriftliche Anweisungen, bei Nachblutung NA",
+    "task": "Patientenbrief nach Tonsillektomie",
+    "expectedStructure": [
+      "OP",
+      "Normale Beschwerden",
+      "Verhalten",
+      "Warnsignale"
+    ],
+    "usefulPhrases": [
+      "Sie wurden operiert an ...",
+      "Bitte beachten Sie:"
+    ],
+    "modelAnswer": "Sehr geehrte Patientin, Sie wurden am 02.05.2026 an den Mandeln operiert. Normale Beschwerden: Halsschmerzen, weissliche Belaege. Weiche Kost 7T, keine heissen Speisen, Sportverbot 3Wo. Bei Bluthusten oder Fieber >38,5 Notaufnahme. AU bis 06.05.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Patientenbrief",
+      "HNO"
+    ]
+  },
+  {
+    "id": "fsp_w_060",
+    "caseTitle": "Medikationswechsel DOAK",
+    "patientData": "78J w Pflegeheim",
+    "history": "VHF, INR-Entgleisungen, Sturzrisiko",
+    "examFindings": "RR138/85, HF72 irregulaer",
+    "diagnostics": "Krea0,9 GFR>60 INR2,1",
+    "assessment": "VHF instabile INR",
+    "treatment": "Apixaban 5mg 1-0-1 bei INR<2,5",
+    "dischargePlan": "Nierenfunktion 3Monate",
+    "task": "Wechsel Marcumar auf Apixaban",
+    "expectedStructure": [
+      "Bisher",
+      "Grund",
+      "Ziel",
+      "Plan",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Umstellung auf ...",
+      "Aufklaerung Blutungszeichen"
+    ],
+    "modelAnswer": "Medikationswechsel Frau M.B. 78J. Bisher Phenprocoumon. Grund: INR-Entgleisungen. Ziel: Apixaban 5mg 1-0-1. Plan: Start bei INR<2,5. Nierenkontrolle 3Monate.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Medikationswechsel",
+      "DOAK",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_061",
+    "caseTitle": "Praeoperativ Sigmaresektion",
+    "patientData": "62J m 78kg",
+    "history": "Rezidivierende Divertikulitis, gedeckte Perforation",
+    "examFindings": "Weicher Bauch, Druckschmerz li",
+    "diagnostics": "CT gedeckte Perforation",
+    "assessment": "Z.n. Divertikulitis, OP indiziert",
+    "treatment": "Lap. Sigmaresektion",
+    "dischargePlan": "Entlassung Tag 5-7",
+    "task": "Praeoperativer Brief Sigmaresektion",
+    "expectedStructure": [
+      "Eingriff",
+      "Indikation",
+      "Risiken",
+      "Aufklaerung"
+    ],
+    "usefulPhrases": [
+      "Der geplante Eingriff ist ...",
+      "Aufklaerung erfolgte ueber ..."
+    ],
+    "modelAnswer": "Praeoperativ K.W. 62J. Eingriff: Laparoskopische Sigmaresektion. Indikation: Rezidivierende Divertikulitis mit gedeckter Perforation. Aufklaerung: Konversion, Anastomoseninsuffizienz, Stoma, Nachblutung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Praeoperativ",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "fsp_w_062",
+    "caseTitle": "Postop Knie-TEP",
+    "patientData": "68J w 75kg",
+    "history": "Knie-TEP li gestern, OP komplikationslos",
+    "examFindings": "Wunde trocken, Flex 0-0-60, Schmerz4/10",
+    "diagnostics": "Hb11,8, CRP24, Roentgen korrekt",
+    "assessment": "Postop Tag1, komplikationslos",
+    "treatment": "PCEA, Novaminsulfon, NMH",
+    "dischargePlan": "Reha beantragt, Entlassung Tag5",
+    "task": "Postoperativer Verlauf 1.Tag Knie-TEP",
+    "expectedStructure": [
+      "OP",
+      "Status",
+      "Therapie",
+      "Mobilisation",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Verlauf komplikationslos",
+      "Reha beantragt"
+    ],
+    "modelAnswer": "Postop Verlauf G.F. 68J. Knie-TEP li 01.05. Bewegung 0-0-60, Schmerz4. PCEA, Novaminsulfon, ASS100. Mobilisation an Unterarmstuetzen. CPM 0-0-60. Reha beantragt.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Postoperativ",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "fsp_w_063",
+    "caseTitle": "Chronic FU Herzinsuffizienz",
+    "patientData": "71J m 82kg",
+    "history": "HI NYHA II-III, Z.n. Vorderwandinfarkt",
+    "examFindings": "Beinoedeme++, Gewicht+1,5",
+    "diagnostics": "LVEF38%, NT-proBNP1240",
+    "assessment": "HI leicht dekompensiert",
+    "treatment": "Torasemid 10 auf 20mg",
+    "dischargePlan": "Gewicht taegl. WV 4Wo",
+    "task": "Folgebrief chronische Herzinsuffizienz",
+    "expectedStructure": [
+      "Status",
+      "Befunde",
+      "Aenderung",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Kontrolle bei bekannter ...",
+      "Dosis erhoeht"
+    ],
+    "modelAnswer": "Kontrollbericht P.R. 71J. HI NYHA II-III. Beinoedeme, Gewicht+1,5, LVEF38%. Torasemid auf 20mg erhoeht. Gewicht taegl. WV 4Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Chronic Disease",
+      "Herzinsuffizienz",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_064",
+    "caseTitle": "Ueberweisung Nierenarterienstenose",
+    "patientData": "59J m 90kg",
+    "history": "Therapierefraktare Hypertonie 4Med",
+    "examFindings": "RR158/92, Stroemungsgeraeusch peiumbilikal",
+    "diagnostics": "GFR55, Nierengroessendifferenz, Duplex Fluss beschleunigt",
+    "assessment": "V.a. Nierenarterienstenose",
+    "treatment": "Antihypertensiva fortfuehren",
+    "dischargePlan": "Nephrologie zur Angio-MRT",
+    "task": "Ueberweisung an Nephrologie",
+    "expectedStructure": [
+      "Grund",
+      "Befunde",
+      "Fragestellung",
+      "Medikamente"
+    ],
+    "usefulPhrases": [
+      "Zur Abklaerung ...",
+      "Bei therapierefraktarer Hypertonie"
+    ],
+    "modelAnswer": "Ueberweisung N.B. 59J. Therapierefraktare Hypertonie. GFR55, Nierengroessendifferenz. Angio-MRT geplant. Med: Ramipril10, Amlodipin10, HCT25, Spironolacton25.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Ueberweisung",
+      "Nephrologie",
+      "Hypertonie"
+    ]
+  },
+  {
+    "id": "fsp_w_065",
+    "caseTitle": "Entlassungsempfehlung COPD",
+    "patientData": "66J m 70kg Raucher",
+    "history": "COPD GOLD III Exazerbation",
+    "examFindings": "Aufn SpO2 88%, nach Ther 94%",
+    "diagnostics": "BGA pCO2 48, pO2 58, CRP98",
+    "assessment": "COPD-Exazerbation H.influenzae",
+    "treatment": "Prednisolon, Amoxicillin/Clav, Inhalativa optimiert",
+    "dischargePlan": "LTOT-Pruefung 4Wo, Impfungen, Reha",
+    "task": "Entlassungsbrief COPD mit Nachsorge",
+    "expectedStructure": [
+      "Aufnahme",
+      "Verlauf",
+      "Medikation",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Medikation optimiert ...",
+      "LTOT-Pruefung erforderlich"
+    ],
+    "modelAnswer": "Entlassung W.S. 66J. COPD GOLD III Exazerbation (H.influenzae). Prednisolon, Amoxicillin/Clavulansaeure, Tiotropium+Salmeterol/Fluticason. BGA 4Wo fuer LTOT. Impfungen, Rauchstopp, Reha.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsempfehlung",
+      "COPD",
+      "Pneumologie"
+    ]
+  },
+  {
+    "id": "fsp_w_066",
+    "caseTitle": "Labor/Imaging FU Struma",
+    "patientData": "48J w 62kg",
+    "history": "Zufallsbefund SD-Knoten",
+    "examFindings": "Derber Knoten re SD ca 2cm",
+    "diagnostics": "Sono TIRADS4, TSH1,2 Ca<2",
+    "assessment": "V.a. malignitaetsverdechtigen SD-Knoten",
+    "treatment": "FNP empfohlen",
+    "dischargePlan": "Kontroll-Sono 6Monate",
+    "task": "Brief zur SD-Knoten-Kontrolle",
+    "expectedStructure": [
+      "Befund",
+      "Diagnostik",
+      "Beurteilung",
+      "Vorgehen"
+    ],
+    "usefulPhrases": [
+      "TIRADS-Klassifikation ergab ..."
+    ],
+    "modelAnswer": "Kontrolle A.H. 48J. SD-Knoten re, TIRADS4, TSH1,2. FNP geplant. Sono-Kontrolle in 6Monaten.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Labor/Imaging",
+      "Schilddruese",
+      "Endokrinologie"
+    ]
+  },
+  {
+    "id": "fsp_w_067",
+    "caseTitle": "Reha-Antrag Schulter-TEP",
+    "patientData": "54J m 86kg Bauarbeiter",
+    "history": "Schulter-TEP re vor 8Wo, Bewegung eingeschraenkt",
+    "examFindings": "Flex 0-0-90, Abd 0-0-80, Kraft M4",
+    "diagnostics": "Roentgen Prothese korrekt",
+    "assessment": "Z.n. Schulter-TEP, Funktionsdefizit",
+    "treatment": "Physio 2x/Wo, Eigenuebungen",
+    "dischargePlan": "AHB 3Wo beantragt",
+    "task": "Befundbericht zur Kostenuebernahme AHB",
+    "expectedStructure": [
+      "Versicherter",
+      "Diagnose",
+      "Behandlung",
+      "Reha-Bedarf"
+    ],
+    "usefulPhrases": [
+      "Beantrage Kostenuebernahme fuer ...",
+      "Rehaziele sind ..."
+    ],
+    "modelAnswer": "Kostenuebernahme T.K. 54J Bauarbeiter. Schulter-TEP re 10.03.2026. Flex nur 90Grad, Kraft M4. AHB 3Wo erforderlich fuer berufliche Wiedereingliederung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Versicherung",
+      "Reha",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "fsp_w_068",
+    "caseTitle": "Reha-Empfehlung Schlaganfall",
+    "patientData": "63J m 74kg VHF",
+    "history": "Media-Infarkt li vor 10T, Hemiparese re",
+    "examFindings": "Arm M3 Bein M4+, Aphasie, Barthel45",
+    "diagnostics": "MRT Media-Infarkt li",
+    "assessment": "Z.n. ischaemischem Insult",
+    "treatment": "ASS100, Apixaban ab Tag14, Logopaedie/Physio/Ergo tgl",
+    "dischargePlan": "Phase-C-Reha 4Wo",
+    "task": "Reha-Empfehlung nach Schlaganfall",
+    "expectedStructure": [
+      "Funktionsstatus",
+      "Indikation",
+      "Ziele",
+      "Medikation"
+    ],
+    "usefulPhrases": [
+      "Fruehzeitige Reha dringend indiziert",
+      "Rehaziele: Verbesserung ..."
+    ],
+    "modelAnswer": "Reha L.M. 63J Z.n. Media-Infarkt li. Hemiparese ArmM3 BeinM4+, Aphasie, Barthel45. Phase-C-Reha 4Wo. Med: Apixaban5mg, ASS100, Atorvastatin40.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Reha",
+      "Schlaganfall",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "fsp_w_069",
+    "caseTitle": "Sturzereignis Dokumentation",
+    "patientData": "81J w 58kg Pflegestufe3",
+    "history": "Osteoporose, Gangunsicherheit, gestuerzt zur Toilette",
+    "examFindings": "Schuerfung li Knie, kein Frakturzeichen, GCS15",
+    "diagnostics": "Roentgen keine Fraktur, INR1,1",
+    "assessment": "Sturz ohne Frakturfolge",
+    "treatment": "Wundversorgung",
+    "dischargePlan": "Sturzprophylaxe: Lampe, Bett niedrig, Begleitung",
+    "task": "Sturzereignis-Dokumentation",
+    "expectedStructure": [
+      "Zeit/Ort",
+      "Hergang",
+      "Folgen",
+      "Prophylaxe"
+    ],
+    "usefulPhrases": [
+      "Die Patientin stuerzte um ...",
+      "Sturzprophylaxe: ..."
+    ],
+    "modelAnswer": "Sturz E.W. 81J Station 3B 02.05. 02:15. Auf Toilettengang ausgerutscht. Schuerfung li Knie, keine Fraktur. Massnahmen: Wundversorgung. Prophylaxe: Bett niedrig, Gehstock bereit, Begleitgange.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Patientensicherheit",
+      "Sturz",
+      "Geriatrie"
+    ]
+  },
+  {
+    "id": "fsp_w_070",
+    "caseTitle": "ArztoArzt Uebergabe ITS",
+    "patientData": "72J w 65kg",
+    "history": "Z.n. Reanimation bei KF, Postreanimationssyndrom",
+    "examFindings": "RASS-2, NA 0,02mcg, SpO2 97% FiO2 0,35",
+    "diagnostics": "Echo LVEF45%, Troponin2450, CT Kopf o.B.",
+    "assessment": "Postreanimationssyndrom",
+    "treatment": "Midazolam/Fentanyl, ASS100, Levetiracetam",
+    "dischargePlan": "Exit Hypothermie, MRT, EEG",
+    "task": "Arztuebergabe Intensivstation",
+    "expectedStructure": [
+      "Patient",
+      "Diagnose",
+      "Status",
+      "Therapie",
+      "Offen"
+    ],
+    "usefulPhrases": [
+      "Uebergebe Patientin mit ...",
+      "Geplant fuer heute: ..."
+    ],
+    "modelAnswer": "Uebergabe H.P. 72J ITS 214. Z.n. KF-Reanimation. Nordadrenalin 0,02. TZI abgeschlossen. Exit Hypothermie heute. Kardiales MRT, EEG geplant. Bei Krampf: 2mg Lorazepam.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "ArztoArzt",
+      "Intensiv",
+      "Reanimation"
+    ]
+  },
+  {
+    "id": "fsp_w_071",
+    "caseTitle": "Arbeitsunfaehigkeit Psychisch",
+    "patientData": "35J w 62kg Projektmanagerin",
+    "history": "Erschoept, Antriebslosigkeit, Schlafstorung seit 6Wo. Ueberlastung im Job.",
+    "examFindings": "Affekt schmal, reduzierter Antrieb, keine akute Suizidalitaet",
+    "diagnostics": "PHQ-9 18 Punkte",
+    "assessment": "V.a. mittelgradige depressive Episode",
+    "treatment": "Krankmeldung, Psychotherapie beantragt, Sertralin 50mg",
+    "dischargePlan": "AU 2Wo, Psychotherapie suchen, Hausarzt 1Wo",
+    "task": "AU-Bescheinigung bei depressiver Episode",
+    "expectedStructure": [
+      "Diagnose",
+      "AU-Dauer",
+      "Therapie",
+      "Wiedervorstellung"
+    ],
+    "usefulPhrases": [
+      "Aufgrund der psychischen Erkrankung ...",
+      "Eine psychotherapeutische Mitbehandlung ist indiziert"
+    ],
+    "modelAnswer": "AU Frau S.K. 35J. Mittelgradige depressive Episode (F32.1). AU 2 Wo. Sertralin 50 mg 1-0-0. Psychotherapie vermittelt. WV Hausarzt in 1 Wo. Bei Verschlechterung oder Suizidgedanken sofort Vorstellung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "AU",
+      "Psychiatrie",
+      "Depression"
+    ]
+  },
+  {
+    "id": "fsp_w_072",
+    "caseTitle": "Kurzbrief Sectio",
+    "patientData": "31J w 77kg",
+    "history": "Primaere Sectio bei BEL am 01.05.",
+    "examFindings": "Z.n. Sectio, Wunde reizlos, Uterus gut kontrahiert",
+    "diagnostics": "Hb 10,5 g/dL, CRP 12",
+    "assessment": "Z.n. Sectio caesarea, komplikationslos",
+    "treatment": "ASS 100, NMH, Ibuprofen bei Bedarf",
+    "dischargePlan": "Fadenzug HA 7T, Stillen erlaubt",
+    "task": "Kurzbrief nach Sectio caesarea",
+    "expectedStructure": [
+      "Diagnose",
+      "Eingriff",
+      "Verlauf",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Die Patientin wurde am ... sectioniert",
+      "Der Verlauf war komplikationslos"
+    ],
+    "modelAnswer": "Kurzbrief Frau A.G. 31J, 1. Tag nach prim. Sectio bei BEL. Wunde reizlos, Uterus gut kontrahiert. Hb10,5. Ibuprofen bei Bedarf. Stillen moeglich. Fadenzug HA 7T. Bei Fieber oder Wundroetung sofortige Vorstellung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Kurzbrief",
+      "Geburtshilfe",
+      "Sectio"
+    ]
+  },
+  {
+    "id": "fsp_w_073",
+    "caseTitle": "Onkologisches Follow-up Mammakarzinom",
+    "patientData": "52J w 68kg",
+    "history": "Mammakarzinom li, Z.n. BET + SLNB + Radiatio vor 2J. Tamoxifen. Jetzt Routinekontrolle.",
+    "examFindings": "Mamma li: Narbe reizlos, kein Tastbefund. Axilla li frei.",
+    "diagnostics": "Sono: unauffaellig. Tumormarker CA15-3 normal.",
+    "assessment": "Z.n. Mammakarzinom li, derzeit kein Anhalt auf Rezidiv",
+    "treatment": "Tamoxifen 20mg fortsetzen",
+    "dischargePlan": "Naechste Kontrolle in 6Monaten. Mammo in 1J",
+    "task": "Folgebrief nach Mammakarzinom-Nachsorge",
+    "expectedStructure": [
+      "Tumoranamnese",
+      "Aktueller Befund",
+      "Medikation",
+      "Kontrollplan"
+    ],
+    "usefulPhrases": [
+      "Bei der Nachsorgekontrolle zeigt sich ...",
+      "Die Patientin ist derzeit rezidivfrei"
+    ],
+    "modelAnswer": "Onko-Follow-up Frau C.D. 52J. Mammakarzinom li pT1c pN0, Z.n. BET+SLNB+Radiatio. Tamoxifen 20mg. Sono o.B., Tumormarker normal. Naechste Mammo in 1J, Sono in 6Mo. Therapie-Adhaerenz gut.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Follow-up",
+      "Onkologie",
+      "Mamma"
+    ]
+  },
+  {
+    "id": "fsp_w_074",
+    "caseTitle": "MRE Nachsorgebrief",
+    "patientData": "76J m 70kg",
+    "history": "Z.n. Harnwegsinfekt mit MRGN. Isolierung aufgehoben nach 3 neg. Screening-Kulturen.",
+    "examFindings": "Afebril, kein Dysurie, Urin klar",
+    "diagnostics": "3MRGN-Nachweis E.coli initial. Letztes Screening neg.",
+    "assessment": "MRE-Kolonisation (3MRGN) eradiziert",
+    "treatment": "Keine Antibiotika",
+    "dischargePlan": "Keine Isolierung noetig. Bei erneuter HW-Infektion: Resistogramm vorlegen.",
+    "task": "Arztbrief nach MRE-Sanierung",
+    "expectedStructure": [
+      "Erreger",
+      "Sanierungsverlauf",
+      "Status",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Im Verlauf zeigte sich eine Erreger-Eradikation",
+      "Bitte bei erneuter Infektion Resistogramm beachten"
+    ],
+    "modelAnswer": "MRE-Bericht H.H. 76J. Initial 3MRGN E.coli (HWI). Nach gezielter Antibiose und Sanierung 3 negative Screening-Kulturen. Isolierung aufgehoben. Bei erneuter Infektion bitte Resistogramm vorlegen und MRE-Status dokumentieren.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "MRE",
+      "Infektiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_075",
+    "caseTitle": "Verlegungsbrief Intensiv zu Normal",
+    "patientData": "68J m 80kg",
+    "history": "Z.n. Aortokoronarer Bypass-OP. Haemodynamisch stabil, katecholaminfrei.",
+    "examFindings": "RR125/70, HF82 SR, SpO2 96% Raumluft. AF 14/min, wach, orientiert.",
+    "diagnostics": "BGA pH7,4 pCO238 pO285. Hb10,2 Troponin ruecklaeufig.",
+    "assessment": "Z.n. ACVB, haemodynamisch stabil, Verlegung auf Normalstation moeglich",
+    "treatment": "ASS100, Atorvastatin40, Metoprolol25, NMH",
+    "dischargePlan": "Weiter Mobilisation, RR-Einstellung, Wundkontrolle, Naechster Hb morgen",
+    "task": "Verlegungsbrief ITS->Normalstation nach ACVB",
+    "expectedStructure": [
+      "Verlegungsgrund",
+      "Aktueller Status",
+      "Therapie",
+      "Offene Punkte"
+    ],
+    "usefulPhrases": [
+      "Der Patient wird auf die Normalstation verlegt ...",
+      "Zu ueberwachen sind ..."
+    ],
+    "modelAnswer": "Verlegung H.W. 68J, ITS->Kardiologie. Z.n. ACVB, stabil, katecholaminfrei. SpO2 96% Raumluft. Med: ASS100, Atorvastatin40, Metoprolol25, NMH. RR-Ziele <140/90. Wundkontrolle taegl. Hb-Morgenkontrolle. Bei Rhythmusstabilitaet Monitoring ueber Telemetrie.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Verlegungsbrief",
+      "Intensiv",
+      "Kardiologie",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "fsp_w_076",
+    "caseTitle": "Aufnahmebrief GI-Blutung",
+    "patientData": "65J m 72kg",
+    "history": "Haematemesis und Melena seit heute Morgen. ASS 100 wegen KHK. NSAR-Einnahme.",
+    "examFindings": "Blass, Tachykard 105/min, RR 105/65. Rektal: Melena.",
+    "diagnostics": "Hb 7,8 g/dL, MCV 82, INR 1,1, BUN/Krea 22/1,0",
+    "assessment": "V.a. obere GI-Blutung bei Ulcus ventriculi",
+    "treatment": "2 EK, PPI 80mg Bolus dann 8mg/h, ASS pausiert",
+    "dischargePlan": "Notfall-OEGD: Ulcus ventriculi Forrest Ia",
+    "task": "Notaufnahme-Arztbrief bei oberer GI-Blutung",
+    "expectedStructure": [
+      "Aufnahmegrund",
+      "Symptome",
+      "Befunde",
+      "Massnahmen",
+      "Verlauf"
+    ],
+    "usefulPhrases": [
+      "Der Patient wurde notfallmaessig aufgenommen wegen ...",
+      "Bei Aufnahme zeigte sich eine ..."
+    ],
+    "modelAnswer": "Aufnahme H.K. 65J. Haematemesis und Melena unter ASS/NSAR. Hb 7,8, Tachykard. 2 EK, PPI-Bolus 80mg. OEGD: Ulcus ventriculi Forrest Ia, NaCl/Adrenalin-Injektion+Clip. ASS pausiert. Urease-Test pos. Eradikation geplant.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Aufnahmebrief",
+      "GI-Blutung",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "fsp_w_077",
+    "caseTitle": "Entlassungsbrief Hamorrhoiden-OP",
+    "patientData": "44J m 85kg",
+    "history": "Z.n. Milligan-Morgan-Hamorrhoidektomie Grad III.",
+    "examFindings": "Wunde reizlos, kein Sickerblutung, Stuhlgang 1x tgl weich.",
+    "diagnostics": "Hb 14,1, CRP 8",
+    "assessment": "Z.n. Hamorrhoidektomie komplikationslos",
+    "treatment": "Ibuprofen 400, Laxans Macrogol, Sitzbaeder",
+    "dischargePlan": "Fadenzug HA 10T, Sitzbaeder 2x tgl 2Wo, Stuhlregulation",
+    "task": "Entlassungsbrief nach Hamorrhoidektomie",
+    "expectedStructure": [
+      "OP",
+      "Verlauf",
+      "Schmerztherapie",
+      "Ernaehrung",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Der postoperative Verlauf war komplikationslos",
+      "Eine weiche Stuhlregulation ist wichtig"
+    ],
+    "modelAnswer": "Entlassung T.S. 44J nach Hamorrhoidektomie. Verlauf komplikationslos. Stuhlgang 1x tgl. Schmerz: Ibuprofen 400, Sitzbaeder. Macrogol fuer weichen Stuhl. Fadenzug HA in 10T. Kontrolle Chirurgie in 4Wo bei Beschwerden.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "Chirurgie",
+      "Proktologie"
+    ]
+  },
+  {
+    "id": "fsp_w_078",
+    "caseTitle": "Ueberweisung Urologie Inkontinenz",
+    "patientData": "58J w 68kg",
+    "history": "Seit 2J Belastungsinkontinenz, keine Voroperationen, 2 Spontanpartus.",
+    "examFindings": "Hustentest positiv, Senkungsbefund, Restharn 30ml.",
+    "diagnostics": "Urodynamik: Belastungsinkontinenz Grad II",
+    "assessment": "V.a. Belastungsinkontinenz Grad II bei Descensus",
+    "treatment": "Becknbodentraining bisher",
+    "dischargePlan": "Bitte OP-Indikation und Descensus-OP-Klaerung",
+    "task": "Ueberweisung an Urologie bei Belastungsinkontinenz",
+    "expectedStructure": [
+      "Ueberweisungsgrund",
+      "Anamnese",
+      "Befunde",
+      "Fragestellung"
+    ],
+    "usefulPhrases": [
+      "Bitte Vorstellung zur OP-Klaerung ..."
+    ],
+    "modelAnswer": "Ueberweisung Frau R.K. 58J. Belastungsinkontinenz Grad II, Senkungsbefund. Bisher Beckenbodentraining erfolglos. Bitte OP-Klaerung (z.B. TVT, Kolporrhaphie).",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Ueberweisung",
+      "Urologie",
+      "Inkontinenz"
+    ]
+  },
+  {
+    "id": "fsp_w_079",
+    "caseTitle": "Konsil Rheuma Vaskulitis",
+    "patientData": "47J w 60kg",
+    "history": "Fieber unklarer Genese seit 2Wo, Gewichtsverlust, Nachtschweiss, Arthralgien.",
+    "examFindings": "Hauteinblutungen an den Unterschenkeln tastbar. BSG 68",
+    "diagnostics": "ANA pos 1:640, ANCA neg, CRP 124, Leukos 12.000",
+    "assessment": "V.a. Vaskulitis (kleine Gefaesse)",
+    "treatment": "Prednisolon 1mg/kg noch nicht begonnen",
+    "dischargePlan": "Bitte rheumatologische Mitbeurteilung und ggf. Hautbiopsie",
+    "task": "Konsilanforderung Rheumatologie Vaskulitis",
+    "expectedStructure": [
+      "Grund",
+      "Befunde",
+      "Verdachtsdiagnose",
+      "Frage"
+    ],
+    "usefulPhrases": [
+      "Wir bitten um rheumatologisches Konsil ...",
+      "Bei der Patientin besteht V.a. Vaskulitis"
+    ],
+    "modelAnswer": "Bitte rheumatologisches Konsil fuer Frau L.S. 47J. Fieber >2Wo, Gewichtsverlust, palpable Purpura. CRP124, ANA1:640, ANCA neg. V.a. Vaskulitis kleiner Gefaesse. Hautbiopsie geplant. Frage nach Kortison-Indikation und Diagnosesicherung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Konsil",
+      "Rheumatologie",
+      "Vaskulitis"
+    ]
+  },
+  {
+    "id": "fsp_w_080",
+    "caseTitle": "Kurzbrief Leistenhernie",
+    "patientData": "38J m 80kg",
+    "history": "Rezidivierende Leistenhernie re, jetzt Inkarzeration",
+    "examFindings": "Druckschmerz re Leiste, nicht reponibel",
+    "diagnostics": "Sono: inkarzerierte Leistenhernie",
+    "assessment": "Inkarzerierte Leistenhernie rechts",
+    "treatment": "Notfall-Herniotomie nach Shouldice",
+    "dischargePlan": "Fadenzug 10T, Schonung 4Wo, Tragen >5kg vermeiden",
+    "task": "Kurzbrief nach Herniotomie",
+    "expectedStructure": [
+      "Diagnose",
+      "OP",
+      "Verlauf",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Die Notfall-OP erfolgte um ...",
+      "Postoperativ komplikationslos"
+    ],
+    "modelAnswer": "Kurzbrief P.K. 38J. Inkarzerierte Leistenhernie re. Notfall-Herniotomie nach Shouldice. Verlauf komplikationslos. Fadenzug 10T. Schonung 4Wo, schweres Heben vermeiden.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Kurzbrief",
+      "Chirurgie",
+      "Hernie"
+    ]
+  },
+  {
+    "id": "fsp_w_081",
+    "caseTitle": "Notfall Anaphylaxie",
+    "patientData": "28J w 55kg",
+    "history": "Nach Insektenstich (Biene) ploetzlich Urtikaria, Dyspnoe, Schluckbeschwerden, Schwindel.",
+    "examFindings": "Urtikaria generalisiert, Stridor, RR80/50, HF120, SpO288%",
+    "diagnostics": "Keine",
+    "assessment": "Anaphylaktischer Schock Grad III (Insektenstich)",
+    "treatment": "Adrenalin i.m. 0,5mg, Volumen, Dimetinden/Prednisolon i.v.",
+    "dischargePlan": "Notfallpass, Adrenalin-Autoinjektor verschrieben, Allergologie-Vorstellung",
+    "task": "Notarzt-Dokumentation Anaphylaxie",
+    "expectedStructure": [
+      "Zeit",
+      "Ausloeser",
+      "Symptome",
+      "Therapie",
+      "Massnahmen"
+    ],
+    "usefulPhrases": [
+      "Nach Insektenstich ...",
+      "Bei Anaphylaxie Grad III ..."
+    ],
+    "modelAnswer": "Notfalleinsatz 02.05. 14:15 Garten. Bienenstich. Anaphylaxie Grad III. RR80/50, SpO288%, Stridor. Adrenalin 0,5mg i.m., Volumen 500ml, Dimetinden/Prednisolon. Transport unter O2. Notfallpass und Autoinjektor. Ueberweisung Allergologie.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Emergency",
+      "Anaphylaxie",
+      "Allergologie"
+    ]
+  },
+  {
+    "id": "fsp_w_082",
+    "caseTitle": "Follow-up Leberwerte NAFLD",
+    "patientData": "55J m 92kg",
+    "history": "Metabolisches Syndrom, NAFLD bekannt. Routinekontrolle. Kein Alkohol.",
+    "examFindings": "Adipositas BMI33, Leber 2cm unter Rippenbogen.",
+    "diagnostics": "GOT 48 GPT 62 GGT 78, Fibroscan F2",
+    "assessment": "NAFLD mit Fibrose F2, kompensiert",
+    "treatment": "Gewichtsreduktion empfohlen, Metformin 500mg, Vitamin E 400IE",
+    "dischargePlan": "Naechste Fibroscan in 1J, Leberwerte in 6Mo",
+    "task": "Follow-up-Brief NAFLD mit Fibrose",
+    "expectedStructure": [
+      "Ausgangsbefund",
+      "Befunde",
+      "Beurteilung",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Die NAFLD ist stabil ...",
+      "Gewichtsreduktion ist die wichtigste Massnahme"
+    ],
+    "modelAnswer": "Kontrolle P.S. 55J. NAFLD mit Fibrose F2 (stable). Leberwerte leicht erhoeht. Metformin 500mg, Vitamin E 400IE. Gewichtsreduktion um 5-10% empfohlen. Naechste Leberwerte in 6Mo, Fibroscan in 1J.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Follow-up",
+      "Leber",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "fsp_w_083",
+    "caseTitle": "AU Influenza",
+    "patientData": "34J m 76kg",
+    "history": "Fieber 39C, Husten, Gliederschmerzen seit gestern.",
+    "examFindings": "Rachen gerotet, Temperatur 38,8C, Puls 100.",
+    "diagnostics": "Influenza-Schnelltest pos.",
+    "assessment": "Akute Influenza",
+    "treatment": "Symptomatisch: Paracetamol, Ibuprofen, Bettruhe",
+    "dischargePlan": "AU 7T, bei Verschlechterung Vorstellung",
+    "task": "AU bei Influenza",
+    "expectedStructure": [
+      "Diagnose",
+      "AU-Dauer",
+      "Therapie",
+      "Wiedervorstellung"
+    ],
+    "usefulPhrases": [
+      "Die AU ist erforderlich aufgrund ...",
+      "Bei Verschlechterung ..."
+    ],
+    "modelAnswer": "AU Hr. T.F. 34J. Influenza (Schnelltest pos). AU 7T. Bettruhe, Paracetamol 500mg 1-1-1, Ibuprofen 400 bei Fieber >38,5. Bei Atemnot oder anhaltendem Fieber >5T Vorstellung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "AU",
+      "Infekt",
+      "Allgemeinmedizin"
+    ]
+  },
+  {
+    "id": "fsp_w_084",
+    "caseTitle": "Patientenbrief Diabetes Schulung",
+    "patientData": "52J m 88kg",
+    "history": "Typ-2-Diabetes neu diagnostiziert. HbA1c 8,2%.",
+    "examFindings": "Keine Komplikationen, RR135/80.",
+    "diagnostics": "HbA1c 8,2%, BZ nuchtern 160mg/dL, Cholesterin 240",
+    "assessment": "Diabetes mellitus Typ 2, neu diagnostiziert",
+    "treatment": "Metformin 500mg 1-0-1, Ernaehrungsberatung",
+    "dischargePlan": "Diabetesschulung 5xTermine vereinbart, BZ-Tagebuch fuehren",
+    "task": "Patientenbrief: Diabetes-Einleitung",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Selbstmanagement",
+      "Notfallverhalten"
+    ],
+    "usefulPhrases": [
+      "Sie haben einen neu diagnostizierten Diabetes ...",
+      "Wichtig: taegliche BZ-Kontrollen"
+    ],
+    "modelAnswer": "Sehr geehrter Herr P., bei Ihnen wurde ein Typ-2-Diabetes festgestellt. Therapie: Metformin 500mg 1-0-1. BZ taeglich messen (Ziel nuchtern <130, postprandial <180). Schulungstermine: 5x ab naechster Woche. Fusskontrolle taeglich. Bei BZ >300 oder <60 bitte Vorstellung. Naechster HbA1c in 3Mo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Patientenbrief",
+      "Diabetes",
+      "Schulung"
+    ]
+  },
+  {
+    "id": "fsp_w_085",
+    "caseTitle": "Medikationsanpassung Metformin",
+    "patientData": "52J m 88kg",
+    "history": "Diabetes Typ2, Metformin 500mg 1-0-1. BZ 165 nuchtern, HbA1c wie oben.",
+    "examFindings": "o.B.",
+    "diagnostics": "HbA1c 8,2%",
+    "assessment": "Diabetes Typ2, nicht ausreichend eingestellt",
+    "treatment": "Metformin auf 1000mg 1-0-1 erhoeht",
+    "dischargePlan": "BZ-Kontrolle taeglich, HbA1c in 3Mo",
+    "task": "Dokumentation Metformin-Dosisanpassung",
+    "expectedStructure": [
+      "Ausgangsdosis",
+      "Grund",
+      "Neue Dosis",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Aufgrund unzureichender BZ-Einstellung ...",
+      "Dosis auf ... erhoeht"
+    ],
+    "modelAnswer": "Medikationsanpassung P.S. 52J. Diabetes Typ2. Bisher: Metformin 500mg 1-0-1. BZ nuchtern 165, HbA1c 8,2%. Neu: Metformin 1000mg 1-0-1. BZ taeglich kontrollieren. HbA1c-Kontrolle in 3Mo. Bei Durchfall Dosisreduktion.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Medikationsanpassung",
+      "Diabetes",
+      "Allgemeinmedizin"
+    ]
+  },
+  {
+    "id": "fsp_w_086",
+    "caseTitle": "Praeoperativ Katarakt-OP",
+    "patientData": "74J w 64kg",
+    "history": "Visusminderung re seit 1J. Katarakt klinisch.",
+    "examFindings": "Visus re 0,25 cc, li 0,7 cc.",
+    "diagnostics": "Sono: hintere Linsentruebung re",
+    "assessment": "Cataracta senilis rechts",
+    "treatment": "Geplant: Phakoemulsifikation+IOL re in Tropicamid mydriasis",
+    "dischargePlan": "Entlassung nach 2h, Augentropfen: Dexamethason+Nepafenac",
+    "task": "Praeoperativer Brief Katarakt-OP",
+    "expectedStructure": [
+      "Eingriff",
+      "Indikation",
+      "Risiken",
+      "Medikation"
+    ],
+    "usefulPhrases": [
+      "Geplant ist eine Katarakt-OP ...",
+      "Die Aufklaerung erfolgte ueber ..."
+    ],
+    "modelAnswer": "Praeoperativ E.M. 74J. Geplant: Phako+IOL re. Indikation: Cataracta senilis, Visus 0,25. Aufklaerung: Endophthalmitis, Nachstardruck, Netzhautablosung, IOL-Fehlposition. Askulare Medis. Augentropfen postop: Dexamethason 4x, Nepafenac 3x, beides 4Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Praeoperativ",
+      "Augenheilkunde",
+      "Katarakt"
+    ]
+  },
+  {
+    "id": "fsp_w_087",
+    "caseTitle": "Postoperativer Verlauf HWS-Fusion",
+    "patientData": "52J m 78kg",
+    "history": "Z.n. ventraler HW-Spondylodese C5/6 bei Bandscheibenvorfall. OP gestern, komplikationslos.",
+    "examFindings": "Wunde reizlos, Schluckbeschwerden 3/10, keine neurologischen Ausfaelle.",
+    "diagnostics": "Hb 13,1, CRP 15",
+    "assessment": "Z.n. HW-Spondylodese C5/6, komplikationslos",
+    "treatment": "Diclofenac, Physiotherapie, Halskrause fuer 2Wo",
+    "dischargePlan": "Entlassung voraussichtlich Tag 3. Metallentfernung nicht erforderlich.",
+    "task": "Postop Verlauf HWS-Fusion 1.Tag",
+    "expectedStructure": [
+      "OP",
+      "Neurologie",
+      "Schmerz",
+      "Mobilisation"
+    ],
+    "usefulPhrases": [
+      "Postoperativ keine neurologischen Defizite ...",
+      "Halskrause fuer ..."
+    ],
+    "modelAnswer": "Postop P.R. 52J. HWS-Spondylodese C5/6. Schluckbeschwerden 3/10, Reizlos. Keine neurologischen Defizite. Halskrause fuer 2Wo, Physio ab 1.Woche. Entlassung Tag 3. Bei Schluckstoerung weiche Kost.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Postoperativ",
+      "Wirbelsaeule",
+      "Neurochirurgie"
+    ]
+  },
+  {
+    "id": "fsp_w_088",
+    "caseTitle": "Follow-up Rheumatoide Arthritis",
+    "patientData": "60J w 58kg",
+    "history": "Rheumatoide Arthritis seit 8J, Methotrexat 15mg/Woche + Folinsaeure.",
+    "examFindings": "Keine geschwollenen Gelenke, Morgensteifigkeit <15Min",
+    "diagnostics": "CRP 6, BSG 18, DAS28 2,3",
+    "assessment": "RA, geringe Krankheitsaktivitaet (DAS28 2,3)",
+    "treatment": "MTX 15mg/Woche fortsetzen, Folinsaeure",
+    "dischargePlan": "Naechste Kontrolle in 6Mo, Labor (Leber/Niere) in 3Mo",
+    "task": "Follow-up rheumatoide Arthritis mit geringer Aktivitaet",
+    "expectedStructure": [
+      "Status",
+      "Aktivitaet",
+      "Medikation",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Die RA zeigt eine geringe Aktivitaet ...",
+      "MTX wird fortgesetzt"
+    ],
+    "modelAnswer": "Follow-up M.P. 60J. RA seit 8J. DAS28 2,3 (geringe Aktivitaet). Keine Gelenkschwellungen. MTX 15mg/Wo + Folinsaeure fortsetzen. Leberwerte und Kreatinin in 3Mo. Naechste Rheuma-Kontrolle in 6Mo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Chronic Disease",
+      "Rheuma",
+      "Immunologie"
+    ]
+  },
+  {
+    "id": "fsp_w_089",
+    "caseTitle": "Ueberweisung HNO Verdacht Choanalpolyp",
+    "patientData": "45J m 82kg",
+    "history": "Einseitige Nasenatmungsbehinderung li seit 2Mo, Hypoosmie.",
+    "examFindings": "Rhinoskopie: glasiger Tumor li Nasenhaupthoehle",
+    "diagnostics": "CT: Choanalpolyp li von Sinus maxillaris ausgehend",
+    "assessment": "V.a. Choanalpolyp links",
+    "treatment": "Ueberweisung zur HNO-Abklarung und OP-Plaung",
+    "dischargePlan": "HNO zur Polypenentfernung",
+    "task": [
+      "Ueberweisungsgrund",
+      "Befunde",
+      "Verdachtsdiagnose"
+    ],
+    "expectedStructure": [
+      "Ueberweise zur weiteren Abklaerung ...",
+      "Bei V.a. Choanalpolyp"
+    ],
+    "usefulPhrases": [
+      "Ueberweise zur weiteren Abklaerung ...",
+      "Bei V.a. Choanalpolyp ..."
+    ],
+    "modelAnswer": [
+      "Ueberweisung",
+      "HNO",
+      "Polyp"
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Ueberweisung",
+      "HNO",
+      "Polyp"
+    ]
+  },
+  {
+    "id": "fsp_w_090",
+    "caseTitle": "Entlassungsbrief TIA",
+    "patientData": "70J m 75kg",
+    "history": "Vor 2T Episode von Sprachstorung und re Arm-Schwache fuer 45Min. Komplett ruecklaeufig.",
+    "examFindings": "Neurologisch unauffaellig",
+    "diagnostics": "MRT kein Infarkt, CT-Angio keine Karotisstenose, Echo VHF neu entdeckt",
+    "assessment": "Transiente ischaemische Attacke (TIA) bei neu entdecktem Vorhofflimmern",
+    "treatment": "ASS 100, Apixaban 5mg ab Tag 14, RR-Einstellung",
+    "dischargePlan": "Hausarztkontrolle 1Wo. Neurologische Kontrolle 4Wo. Apixaban-Einnahme dokumentieren.",
+    "task": "Entlassungsbrief TIA bei VHF",
+    "expectedStructure": [
+      "Diagnose",
+      "Verlauf",
+      "Medikation",
+      "Empfehlungen"
+    ],
+    "usefulPhrases": [
+      "Die TIA war voll ruecklaeufig ...",
+      "Bei neu entdecktem VHF ..."
+    ],
+    "modelAnswer": "Entlassung H.P. 70J. TIA (Sprachstorung, re Hemiparese, 45Min, voll ruecklaeufig). MRT kein Infarkt. Neu: VHF. CHA2DS2-VASc 4. Apixaban 5mg ab Tag14, ASS100 bis dahin. RR <140/90. Hausarzt 1Wo, Neurologie 4Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "TIA",
+      "Kardiologie",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "fsp_w_091",
+    "caseTitle": "Aufnahmebrief Leberdekompensation",
+    "patientData": "58J m 68kg",
+    "history": "Z.n. Leberzirrhose Child B bei Alkohol (seit 1J abstinent). Jetzt Aszites, Beinoedeme, Ikterus.",
+    "examFindings": "Ikterisch, Aszites massiv, Spider naevi, Palmarerythem.",
+    "diagnostics": "Bilirubin 4,2, INR 1,6, Albumin 2,6, MELD 16. Sono: Leberknoterig, Aszites",
+    "assessment": "Leberzirrhose Child-Pugh B, dekompensiert mit Aszites",
+    "treatment": "Spironolacton 100mg + Furosemid 20mg, Albumin 20%, Laxans",
+    "dischargePlan": "Entlassung: Gewichtsreduktion, Koerpergewicht taegl. WV Gastro in 2Wo, Abstinenz",
+    "task": "Aufnahmebrief Leberdekompensation",
+    "expectedStructure": [
+      "Aufnahmegrund",
+      "Anamnese",
+      "Befunde",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Aufnahme bei dekompensierter Leberzirrhose ...",
+      "Aszitespunktion und Diuretika"
+    ],
+    "modelAnswer": "Aufnahme M.W. 58J. Leberzirrhose Child B dekompensiert. Aszites massiv, Ikterus. MELD16. Spironolacton 100mg + Furosemid 20mg. Aszitespunktion 4L. Abstinenz bestaetigt. Gastro-Vorstellung in 2Wo. OEGD zur Varizenscreening.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Aufnahmebrief",
+      "Leber",
+      "Gastroenterologie"
+    ]
+  },
+  {
+    "id": "fsp_w_092",
+    "caseTitle": "Notfall STEMI",
+    "patientData": "61J m 85kg, Raucher, Hypertonie",
+    "history": "Brustschmerz seit 1h, ausstrahlend li Arm, Atemnot.",
+    "examFindings": "RR140/90 HF100, blass, diaphoretisch",
+    "diagnostics": "EKG: ST-Hebungen V2-V5, Troponin hs 8.500",
+    "assessment": "Akuter Vorderwand-STEMI",
+    "treatment": "ASS 500mg, Heparin 5000IE, Ticagrelor 180mg. Notfall-LHK: PCI mit DES LAD",
+    "dischargePlan": "Intensiv 48h, Echo LVEF 45%, ASS+Ticagrelor+Atorvastatin+Bisoprolol",
+    "task": "Notfalldokumentation STEMI",
+    "expectedStructure": [
+      "Zeit",
+      "Symptome",
+      "EKG",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Bei akutem STEMI ...",
+      "Sofortige PCI indiziert"
+    ],
+    "modelAnswer": "Notfall H.K. 61J. Brustschmerz 60Min. EKG: ST-Hebungen V2-V5. STEMI Vorderwand. ASS500, Heparin5000, Ticagrelor180. LHK: DES in LAD. ITS: ASS100+Ticagrelor90 1-0-1, Atorvastatin80, Bisoprolol2,5. Echo LVEF45%. RR <140/90.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Emergency",
+      "STEMI",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_093",
+    "caseTitle": "Medikationsplan Hypertonie Wechsel",
+    "patientData": "66J m 80kg",
+    "history": "Hypertonie, unter Ramipril+HCT RR noch 145/90",
+    "examFindings": "RR 142/88",
+    "diagnostics": "Krea1,0, Kalium4,1",
+    "assessment": "Hypertonie, nicht ausreichend eingestellt",
+    "treatment": "Ramipril 10mg, Amlodipin 5mg (ersetze HCT)",
+    "dischargePlan": "RR-Kontrolle 1xWo, WV in 4Wo",
+    "task": "Dokumentation Medikationswechsel Hypertonie",
+    "expectedStructure": [
+      "Bisher",
+      "Grund",
+      "Neu",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Aufgrund unzureichender RR-Einstellung ...",
+      "Wechsel von HCT auf Amlodipin"
+    ],
+    "modelAnswer": "Medplanwechsel P.G. 66J. Bisher: Ramipril10+HCT25. RR142/88. Neu: Ramipril10+Amlodipin5. HCT abgesetzt (Krea/Kalium i.O.). RR 1x/Wo messen, Ziel <135/85. WV in 4Wo.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Medikationsplan",
+      "Hypertonie",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_094",
+    "caseTitle": "Entlassungsbrief Eisenmangelanaemie",
+    "patientData": "38J w 55kg",
+    "history": "Fatigue, Dyspnoe bei Belastung. Hb 8,2 g/dL, Ferritin 12. Ausschluss GI-Blutung",
+    "examFindings": "Blasse Haut, Tachykard 95/min",
+    "diagnostics": "Hb8,2, Ferritin12, MCV72. OEGD+Koloskopie o.B. Menorrhagie bekannt.",
+    "assessment": "Eisenmangelanaemie bei Hypermenorrhoe",
+    "treatment": "Ferritin i.v. 500mg (1/2), dann oral Eisen 100mg 1-0-1",
+    "dischargePlan": "Hb-Kontrolle 4Wo, Gyn-Vorstellung zur Menorrhagie-Abklaerung",
+    "task": "Entlassungsbrief Eisenmangelanaemie",
+    "expectedStructure": [
+      "Diagnose",
+      "Ursache",
+      "Therapie",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Die Anaemie ist auf Eisenmangel zurueckzufuhren ...",
+      "Nach i.v. Eisen nun orale Substitution"
+    ],
+    "modelAnswer": "Entlassung C.D. 38J. Eisenmangelanaemie (Hb8,2, Ferritin12) bei Hypermenorrhoe. GI-Blutungsausschluss o.B. Ferritin i.v. 500mg, oral Eisen 100mg 1-0-1. Hb-Kontrolle in 4Wo. Gyn-Vorstellung zur Menorrhagie-Abklaerung, ggf. Hormonspirale oder Endometriumablation.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "Hamatologie",
+      "Anaemie"
+    ]
+  },
+  {
+    "id": "fsp_w_095",
+    "caseTitle": "Ueberweisung Dermatologie Melanom",
+    "patientData": "62J m, heller Hauttyp",
+    "history": "Neuer pigmentierter Tumor Rücken, juckt, ABCD-Regel auffaellig.",
+    "examFindings": "2cm braun-schwarzer Tumor mit Einblutung, unregelmaessig.",
+    "diagnostics": "Dermatoskopie: malignitaetsverdaechtig",
+    "assessment": "V.a. malignes Melanom",
+    "treatment": "Exzision in Toto (Sicherheitsabstand 2cm) geplant",
+    "dischargePlan": "Bitte histologische Aufarbeitung, ggf. Nachresektion und Stageing",
+    "task": "Ueberweisung Dermatologie V.a. Melanom",
+    "expectedStructure": [
+      "Befund",
+      "Verdacht",
+      "Massnahmen",
+      "Frage"
+    ],
+    "usefulPhrases": [
+      "Bitte Exzision und Histologie ..."
+    ],
+    "modelAnswer": "Ueberweisung H.R. 62J. Neuer pigmentierter Tumor Rücken, 2cm, dermatoskopisch maligomaeverdaechtig. Bitte Exzision mit Sicherheitsabstand 2cm und Histologie. Bei Melanom-Nachweis Stageing (Lymphknoten-Sono, ggf. Waechter-LK).",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Ueberweisung",
+      "Dermatologie",
+      "Melanom"
+    ]
+  },
+  {
+    "id": "fsp_w_096",
+    "caseTitle": "Verlegungsbrief Psychiatrie",
+    "patientData": "39J w 55kg",
+    "history": "Suizidgedanken bei schwerer depressiver Episode, stationaer aufgenommen. Nach Stabillisierung.",
+    "examFindings": "Affekt normalisiert, keine akute Suizidalitaet, Antrieb verbessert",
+    "diagnostics": "Keine",
+    "assessment": "Schwere depressive Episode, jetzt stabilisiert",
+    "treatment": "Sertralin 100mg, Quetiapin 25mg, Psychotherapie vereinbart",
+    "dischargePlan": "Verlegung in teilstationaere Tagesklinik",
+    "task": "Verlegungsbrief Psychiatrie Depression",
+    "expectedStructure": [
+      "Aufnahmediagnose",
+      "Verlauf",
+      "Medikation",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Nach Stabilisierung Verlegung in ...",
+      "Medikation wurde eingestellt auf ..."
+    ],
+    "modelAnswer": "Verlegung S.K. 39J. Schwere depressive Episode (F32.2). Nach 2Wo Stabilisierung: keine Suizidalitaet mehr, Antrieb verbessert. Med: Sertralin 100mg 1-0-0, Quetiapin 25mg 0-0-1. Verlegung in teilstationaere Tagesklinik. Psychotherapie vereinbart.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Verlegungsbrief",
+      "Psychiatrie",
+      "Depression"
+    ]
+  },
+  {
+    "id": "fsp_w_097",
+    "caseTitle": "Follow-up Niereninsuffizienz CKD4",
+    "patientData": "68J m 78kg",
+    "history": "CKD4 (GFR 22), Diabetes, Hypertonie. Routinekontrolle.",
+    "examFindings": "RR 132/78, keine Oedeme",
+    "diagnostics": "GFR 22, Krea 2,8, Kalium 5,1, Hb 10,5, HCO3 22",
+    "assessment": "CKD4, kompensiert, leicht hyperkaliaemisch",
+    "treatment": "Ramipril 2,5mg beibehalten, ketoanaloge Diat, NaHCO3 1g 1-1",
+    "dischargePlan": "WV 3Mo, Kalium/RR/Blutbild monatlich beim Hausarzt",
+    "task": "Follow-up CKD4 mit Hyperkaliamie",
+    "expectedStructure": [
+      "Aktuell",
+      "Labor",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Die Nierenfunktion ist stabil ...",
+      "Bei Kalium >5,5 Vorstellung"
+    ],
+    "modelAnswer": "Kontrolle F.T. 68J. CKD4 (GFR22). RR 132/78. Kalium 5,1. Ramipril2,5 beibehalten. Ketoanaloge Diat fortfuehren. NaHCO3 1g 1-1-1. Hb10,5: Epoetin-Dosis prafen. Kalium/RR/BL monatlich beim HA. WV in 3Mo. Bei Kalium >5,5 oder GFR-Abfall sofortige Vorstellung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Follow-up",
+      "Nephrologie",
+      "CKD"
+    ]
+  },
+  {
+    "id": "fsp_w_098",
+    "caseTitle": "AU Handgelenkfraktur",
+    "patientData": "29J m 76kg Handwerker",
+    "history": "Gestuerzt auf re Hand, Schmerzen Dorsalseite.",
+    "examFindings": "Schwellung re Handgelenk, Bewegungsschmerz",
+    "diagnostics": "Roentgen: distale Radiusfraktur, nicht disloziert",
+    "assessment": "Distale Radiusfraktur, nicht disloziert",
+    "treatment": "Gipsschiene fuer 4Wo, dann Physio",
+    "dischargePlan": "AU 6Wo fuer Handwerker, Kontrolle 1Wo Chirurgie",
+    "task": "AU bei distaler Radiusfraktur",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "AU-Dauer",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Die AU ist erforderlich aufgrund der Fraktur ..."
+    ],
+    "modelAnswer": "AU T.K. 29J Handwerker. Distale Radiusfraktur re, nicht disloziert. Gipsschiene 4Wo. AU 6Wo (berufliche Taetigkeit erfordert volle Handfunktion). Kontrolle Chirurgie in 1Wo. Nach Gipsabnahme Physio.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "AU",
+      "Fraktur",
+      "Orthopaedie"
+    ]
+  },
+  {
+    "id": "fsp_w_099",
+    "caseTitle": "Entlassungsbrief Epistaxis",
+    "patientData": "73J m, Hypertonie, ASS 100",
+    "history": "Starke Nasenbluten re seit heute Morgen, nicht stillbar.",
+    "examFindings": "RR165/95, aktive Blutung Locus Kiesselbach re",
+    "diagnostics": "Hb 13,1, INR1,1, Thrombozyten 220",
+    "assessment": "Epistaxis re bei hypertensiver Entgleisung unter ASS",
+    "treatment": "Nasentamponade Bellocq, RR-Senkung Urapidil, ASS pausiert",
+    "dischargePlan": "Tamponadenentfernung morgen, RR-Einstellung, ASS-Wiederbeginn nach RR-Einstellung",
+    "task": "Entlassungsbrief Epistaxis",
+    "expectedStructure": [
+      "Aufnahme",
+      "Blutungsursache",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Die Blutung wurde durch ... gestillt",
+      "ASS wurde pausiert"
+    ],
+    "modelAnswer": "Entlassung H.K. 73J. Epistaxis re bei RR165/95 unter ASS. Bellocq-Tamponade + RR-Senkung. Tamponadenentfernung morgen. ASS pausiert bis RR stabil <150/90. Hausarzt RR-Einstellung. Bei erneuter Blutung sofortige Vorstellung.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Entlassungsbrief",
+      "HNO",
+      "Epistaxis"
+    ]
+  },
+  {
+    "id": "fsp_w_100",
+    "caseTitle": "Patientenverfuegung Dokumentation",
+    "patientData": "82J w, Pflegeheim, Demenz",
+    "history": "Tochter legt Patientenverfuegung vor. Keine Reanimation, keine Intensivtherapie, nur palliative Therapie.",
+    "examFindings": "MMST 14, GCS15, keine akute Erkrankung",
+    "diagnostics": "Keine",
+    "assessment": "Vorgelegte Patientenverfuegung, rechtswirksam",
+    "treatment": "Dokumentation im Krankenblatt, Hinweisschild am Bett",
+    "dischargePlan": "Team informiert. Bei aeusserlicher Aenderung des Willens erneute Evaluation.",
+    "task": "Dokumentation Patientenverfuegung",
+    "expectedStructure": [
+      "Inhalt",
+      "Rechtliche Pruefung",
+      "Massnahmen",
+      "Information"
+    ],
+    "usefulPhrases": [
+      "Die PV wurde vorgelegt ...",
+      "Bitte im Behandlungsplan beruecksichtigen"
+    ],
+    "modelAnswer": "Dokumentation Patientenverfuegung. Patientin E.G. 82J. Keine Reanimation, keine Intensivtherapie, keine Beatmung, keine Dialyse. Palliativmassnahmen erwunscht. Dokumentiert im Krankenblatt. Team informiert. Arzthrief an Hausarzt mit Kopie PV. Bei Notfall Palliativteam informieren.",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": [
+      "Patientenverfuegung",
+      "Geriatrie",
+      "Palliativ"
+    ]
+  }
+]

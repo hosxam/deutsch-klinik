@@ -1,0 +1,518 @@
+[
+  {
+    "id": "l61",
+    "title": "Patientenmonolog: Sodbrennen und Saeuregefuehl",
+    "type": "Patient complaint monologue",
+    "script": "Guten Tag, ich heisse Klaus Weber, 44 Jahre alt. Ich komme, weil ich seit etwa zwei Monaten staendig Sodbrennen habe. Besonders nach dem Essen, vor allem wenn ich fettig oder scharf esse, kommt die Saeure hoch. Auch nachts werde ich manchmal wach, weil es im Hals brennt. Ich habe schon Antazida aus der Apotheke probiert, die helfen kurz, aber das Brennen kommt immer wieder. Frueher hatte ich das nur ab und zu, aber jetzt ist es fast taeglich. Mein Hausarzt meinte, ich solle einen Termin zur Magenspiegelung machen.",
+    "questions": [
+      {
+        "question": "Seit wann hat Herr Weber die Beschwerden?",
+        "options": [
+          "Seit ein paar Tagen",
+          "Seit etwa zwei Monaten",
+          "Seit einem halben Jahr",
+          "Seit einem Jahr"
+        ]
+      },
+      {
+        "question": "Wann treten die Beschwerden besonders auf?",
+        "options": [
+          "Morgens nach dem Aufstehen",
+          "Nach dem Essen, besonders nach fettigem oder scharfem Essen",
+          "Nur nachts",
+          "Den ganzen Tag ueber"
+        ]
+      },
+      {
+        "question": "Was hat Herr Weber bereits probiert?",
+        "options": [
+          "Verschreibungspflichtige Medikamente",
+          "Antazida aus der Apotheke",
+          "Operation",
+          "Hausmittel"
+        ]
+      },
+      {
+        "question": "Wohin hat ihn der Hausarzt ueberwiesen?",
+        "options": [
+          "Zum Kardiologen",
+          "Zum HNO-Arzt",
+          "Zur Magenspiegelung",
+          "Zum Neurologen"
+        ]
+      }
+    ],
+    "answers": [
+      "Seit etwa zwei Monaten",
+      "Nach dem Essen, besonders nach fettigem oder scharfem Essen",
+      "Antazida aus der Apotheke",
+      "Zur Magenspiegelung"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Sodbrennen",
+      "Saeure",
+      "Antazida",
+      "Magenspiegelung",
+      "Oberbauch"
+    ],
+    "tags": [
+      "B2",
+      "Sodbrennen",
+      "Gastroenterologie",
+      "Patientenmonolog"
+    ]
+  },
+  {
+    "id": "l62",
+    "title": "Arzt-Patient-Dialog: Harnwegsinfektion",
+    "type": "Doctor-patient dialogue",
+    "script": "Arzt: Guten Tag, Frau Becker. Was fehlt Ihnen?\nPatientin: Guten Tag, Herr Doktor. Ich habe seit drei Tagen Brennen beim Wasserlassen. Ich muss staendig auf die Toilette, aber es kommt immer nur ein bisschen. Und der Urin riecht komisch.\nArzt: Haben Sie auch Schmerzen im Unterleib?\nPatientin: Ja, so ein Ziehen im Unterbauch. Kein Fieber bis jetzt.\nArzt: Gut, dann machen wir einen Urintest. Bitte geben Sie eine Mittelstrahlurin-Probe ab. Ich tippe auf eine unkomplizierte Harnwegsinfektion. Bis dahin verschreibe ich Ihnen ein Breitband-Antibiotikum fuer drei Tage. Trinken Sie viel, am besten Wasser oder ungesuessten Tee, und gehen Sie regelmaessig zur Toilette, auch wenn es brennt.",
+    "questions": [
+      {
+        "question": "Seit wann hat die Patientin Beschwerden?",
+        "options": [
+          "Seit gestern",
+          "Seit drei Tagen",
+          "Seit einer Woche",
+          "Seit einem Monat"
+        ]
+      },
+      {
+        "question": "Welches Symptom beschreibt die Patientin?",
+        "options": [
+          "Fieber und Schwindel",
+          "Brennen beim Wasserlassen und staendiger Harndrang",
+          "Rueckenschmerzen",
+          "Uebelkeit und Erbrechen"
+        ]
+      },
+      {
+        "question": "Welche Untersuchung wird durchgefuehrt?",
+        "options": [
+          "Ein Ultraschall",
+          "Ein Urintest",
+          "Eine Blutuntersuchung",
+          "Ein CT"
+        ]
+      },
+      {
+        "question": "Welche Empfehlung gibt der Arzt?",
+        "options": [
+          "Wenig trinken",
+          "Viel Wasser oder Tee trinken und oft zur Toilette gehen",
+          "Kaffee trinken",
+          "Bettruhe einhalten"
+        ]
+      }
+    ],
+    "answers": [
+      "Seit drei Tagen",
+      "Brennen beim Wasserlassen und staendiger Harndrang",
+      "Ein Urintest",
+      "Viel Wasser oder Tee trinken und oft zur Toilette gehen"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Harnwegsinfektion",
+      "Urintest",
+      "Mittelstrahlurin",
+      "Antibiotikum",
+      "Harndrang"
+    ],
+    "tags": [
+      "B2",
+      "Harnwegsinfektion",
+      "Urologie",
+      "Arzt-Patient"
+    ]
+  },
+  {
+    "id": "l63",
+    "title": "Pflege-Uebergabe: Patient mit Pneumonie",
+    "type": "Nurse-doctor handover",
+    "script": "Schwester Petra: Guten Morgen, Herr Dr. Koch. Ich uebergebe den Patienten aus Zimmer 305, Herrn Fischer, 76 Jahre. Aufgenommen vor drei Tagen mit einer ambulant erworbenen Pneumonie. Unter Piperacillin-Tazobactam hat sich das CRP von 220 auf 95 gebessert. Aktuelle Vitalwerte: Temperatur 37,4, Blutdruck 115 zu 75, Puls 88, Sauerstoffsaettigung 94 Prozent unter Raumluft. Der Patient hustet noch viel, aber der Auswurf ist jetzt weiss, nicht mehr gelb. Er wirkt muede, isst aber gut. Heute Morgen hatte er leichten Durchfall, wahrscheinlich eine Nebenwirkung des Antibiotikums. Bitte pruefen Sie, ob wir auf ein anderes Antibiotikum umsteigen sollten.",
+    "questions": [
+      {
+        "question": "Mit welcher Diagnose wurde Herr Fischer aufgenommen?",
+        "options": [
+          "Harnwegsinfektion",
+          "Pneumonie",
+          "Bronchitis",
+          "Herzinfarkt"
+        ]
+      },
+      {
+        "question": "Welche Sauerstoffsaettigung hat der Patient?",
+        "options": [
+          "88 Prozent",
+          "94 Prozent",
+          "97 Prozent",
+          "100 Prozent"
+        ]
+      },
+      {
+        "question": "Welche Nebenwirkung des Antibiotikums zeigt der Patient?",
+        "options": [
+          "Hautausschlag",
+          "Leichten Durchfall",
+          "Uebelkeit",
+          "Kopfschmerzen"
+        ]
+      },
+      {
+        "question": "Um welche Ueberpruefung bittet die Schwester den Arzt?",
+        "options": [
+          "Ob der Patient entlassen werden kann",
+          "Ob das Antibiotikum gewechselt werden kann",
+          "Ob ein CT noetig ist",
+          "Ob der Patient mehr Bewegung braucht"
+        ]
+      }
+    ],
+    "answers": [
+      "Pneumonie",
+      "94 Prozent",
+      "Leichten Durchfall",
+      "Ob das Antibiotikum gewechselt werden kann"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Pneumonie",
+      "CRP",
+      "Sauerstoffsaettigung",
+      "Antibiotikum",
+      "Nebenwirkung"
+    ],
+    "tags": [
+      "B2",
+      "Pneumonie",
+      "Uebergabe",
+      "Pneumologie",
+      "Infektion"
+    ]
+  },
+  {
+    "id": "l64",
+    "title": "Aerztediskussion: Unklare Lymphknotenschwellung",
+    "type": "Doctor-doctor discussion",
+    "script": "Dr. Braun: Hallo, Kollege. Ich brauche Ihre Einschaetzung zu einem 28-jaehrigen Patienten, Herrn Yilmaz. Seit vier Wochen hat er geschwollene Lymphknoten am Hals und in den Achselhoehlen. Kein Fieber, kein Nachtschweiss, aber er fuehlt sich muede und hat in den letzten Wochen fuenf Kilo abgenommen, ohne Sport zu machen.\nDr. Schulz: Das klingt nicht gut. Hast du Labor?\nDr. Braun: Das CRP ist leicht erhoeht, die Leukozyten sind normal, die LDH ist auf 380 erhoeht. Ein CT vom Thorax und Abdomen habe ich schon veranlasst.\nDr. Schulz: Bei einem jungen Patienten mit schmerzlosen Lymphknoten, B-Symptomatik und erhoehter LDH muss man an ein Lymphom denken. Ich wuerde eine Lymphknotenbiopsie empfehlen. Am besten schickst du ihn zum Haematologen.",
+    "questions": [
+      {
+        "question": "Welche Symptome hat der Patient?",
+        "options": [
+          "Nur Husten und Fieber",
+          "Lymphknotenschwellung, Muedigkeit und Gewichtsverlust",
+          "Kopfschmerzen und Durchfall",
+          "Nur Hautausschlag"
+        ]
+      },
+      {
+        "question": "Welcher Laborwert ist erhoeht?",
+        "options": [
+          "Das Haemoglobin",
+          "Die LDH mit 380",
+          "Das Kreatinin",
+          "Die Thrombozyten"
+        ]
+      },
+      {
+        "question": "Welche Diagnose vermuten die Aerzte?",
+        "options": [
+          "Eine bakterielle Infektion",
+          "Ein Lymphom",
+          "Tuberkulose",
+          "Autoimmunerkrankung"
+        ]
+      },
+      {
+        "question": "Welche Untersuchung wird empfohlen?",
+        "options": [
+          "Eine zweite CT",
+          "Eine Lymphknotenbiopsie und Ueberweisung zum Haematologen",
+          "Eine Bluttransfusion",
+          "Eine Knochenmarkpunktion"
+        ]
+      }
+    ],
+    "answers": [
+      "Lymphknotenschwellung, Muedigkeit und Gewichtsverlust",
+      "Die LDH mit 380",
+      "Ein Lymphom",
+      "Eine Lymphknotenbiopsie und Ueberweisung zum Haematologen"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Lymphknoten",
+      "LDH",
+      "Lymphom",
+      "Biopsie",
+      "Haematologe"
+    ],
+    "tags": [
+      "B2",
+      "Lymphknoten",
+      "Haematologie",
+      "Onkologie",
+      "Aerztediskussion"
+    ]
+  },
+  {
+    "id": "l65",
+    "title": "Entlassungsinstruktionen: Nach Gallenblasen-OP",
+    "type": "Discharge instructions",
+    "script": "Schwester: Frau Schwarz, Sie werden heute nach der Gallenblasenentfernung entlassen. Ich erklaere Ihnen, was Sie zu Hause beachten muessen. Die OP wurde minimalinvasiv durchgefuehrt, also ueber kleine Schnitte. Die Pflaster an den Einstichstellen koennen Sie nach drei Tagen abnehmen. Duschen ist ab morgen erlaubt, aber bitte nicht baden oder schwimmen fuer zwei Wochen. In den ersten Tagen sollten Sie leichte Kost zu sich nehmen: Zwieback, Suppe, Reis. Vermeiden Sie fettiges Essen fuer die erste Woche. Schmerzmittel haben Sie bekommen: Ibuprofen 400 bei Bedarf, maximal dreimal taeglich.",
+    "questions": [
+      {
+        "question": "Wie wurde die Operation durchgefuehrt?",
+        "options": [
+          "Offene Chirurgie",
+          "Minimalinvasiv ueber kleine Schnitte",
+          "Lasermethode",
+          "Roboterassistiert"
+        ]
+      },
+      {
+        "question": "Wie lange soll die Patientin nicht baden oder schwimmen?",
+        "options": [
+          "Eine Woche",
+          "Zwei Wochen",
+          "Drei Wochen",
+          "Einen Monat"
+        ]
+      },
+      {
+        "question": "Welche Ernaehrung wird in den ersten Tagen empfohlen?",
+        "options": [
+          "Normale Kost",
+          "Leichte Kost, kein fettiges Essen",
+          "Nur Fluessignahrung",
+          "Viel Obst und Gemuese"
+        ]
+      },
+      {
+        "question": "Bei welchen Symptomen soll die Patientin in die Notaufnahme kommen?",
+        "options": [
+          "Bei Kopfschmerzen",
+          "Bei Fieber ueber 38,5 oder geroteten Wunden",
+          "Bei Muedigkeit",
+          "Bei leichten Schmerzen"
+        ]
+      }
+    ],
+    "answers": [
+      "Minimalinvasiv ueber kleine Schnitte",
+      "Zwei Wochen",
+      "Leichte Kost, kein fettiges Essen",
+      "Bei Fieber ueber 38,5 oder geroteten Wunden"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Gallenblase",
+      "minimalinvasiv",
+      "Entlassung",
+      "Wundversorgung",
+      "Schmerzmittel"
+    ],
+    "tags": [
+      "B2",
+      "Chirurgie",
+      "Entlassung",
+      "Gallenblase"
+    ]
+  },
+  {
+    "id": "l66",
+    "title": "Medikamentenberatung: Neueinsatz von Insulin",
+    "type": "Medication instructions",
+    "script": "Guten Morgen, Frau Kramer. Ihr Blutzucker ist trotz Metformin und Empagliflozin weiterhin zu hoch, der HbA1c liegt bei 8,9 Prozent. Wir muessen jetzt mit Insulin beginnen. Das ist kein Grund zur Sorge, es ist eine ganz normale Therapie bei fortgeschrittenem Diabetes Typ 2. Sie bekommen ein Basis-Insulin, Lantus, das Sie einmal taeglich spritzen, immer zur gleichen Zeit, am besten abends um 22 Uhr. Die Dosis startet mit 10 Einheiten. Der Pen ist fertig gefuellt. Sie spritzen in die Bauchhaut, etwa zwei Fingerbreit neben dem Bauchnabel. Wechseln Sie die Einstichstelle.",
+    "questions": [
+      {
+        "question": "Warum wird mit Insulin begonnen?",
+        "options": [
+          "Weil der Patient Metformin nicht vertraegt",
+          "Weil der Blutzucker trotz Tabletten zu hoch ist",
+          "Weil der Patient es sich wuenscht",
+          "Weil Insulin billiger ist"
+        ]
+      },
+      {
+        "question": "Wie oft soll das Insulin gespritzt werden?",
+        "options": [
+          "Zweimal taeglich",
+          "Einmal taeglich zur gleichen Zeit",
+          "Nur bei Bedarf",
+          "Vor jeder Mahlzeit"
+        ]
+      },
+      {
+        "question": "Wohin soll der Patient das Insulin spritzen?",
+        "options": [
+          "In den Oberarm",
+          "In die Bauchhaut neben dem Bauchnabel",
+          "In den Oberschenkel",
+          "In das Gesaess"
+        ]
+      },
+      {
+        "question": "Was soll der Patient bei einer Unterzuckerung tun?",
+        "options": [
+          "Warten bis es vorbeigeht",
+          "Traubenzucker nehmen oder Saft trinken",
+          "Die Insulindosis erhoehen",
+          "Schlafen gehen"
+        ]
+      }
+    ],
+    "answers": [
+      "Weil der Blutzucker trotz Tabletten zu hoch ist",
+      "Einmal taeglich zur gleichen Zeit",
+      "In die Bauchhaut neben dem Bauchnabel",
+      "Traubenzucker nehmen oder Saft trinken"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Insulin",
+      "Lantus",
+      "Pen",
+      "Unterzuckerung",
+      "HbA1c"
+    ],
+    "tags": [
+      "B2",
+      "Diabetes",
+      "Insulin",
+      "Medikamente"
+    ]
+  },
+  {
+    "id": "l67",
+    "title": "Notruf: Bewusstloser Patient auf der Strasse",
+    "type": "Emergency call",
+    "script": "Notruf 112, was ist passiert?\nAnrufer: Ich laufe auf der Strasse und da liegt ein Mann auf dem Boden. Er bewegt sich nicht.\nDisponent: Sind Sie beim Patienten?\nAnrufer: Ja.\nDisponent: Atmet er?\nAnrufer: Ich weiss nicht. Er ist ganz blass.\nDisponent: Bitte ueberpruefen Sie: Legen Sie Ihre Hand auf seine Brust und schauen Sie, ob sie sich hebt. Halten Sie Ihr Ohr an seinen Mund.\nAnrufer: Einen Moment. Ich glaube nicht. Ich hoere nichts.\nDisponent: Gut, dann beginnen Sie mit der Wiederbelebung. Der Rettungsdienst ist unterwegs. Knien Sie sich neben ihn, legen Sie Ihre Handflaechen uebereinander auf die Mitte des Brustkorbs. Druecken Sie fest durch, etwa fuenf Zentimeter tief, im Takt von 100 bis 120 Mal pro Minute.",
+    "questions": [
+      {
+        "question": "Was ist laut Anrufer mit dem Mann los?",
+        "options": [
+          "Er hat einen Herzinfarkt",
+          "Er liegt auf dem Boden und bewegt sich nicht",
+          "Er hat eine Wunde",
+          "Er hustet Blut"
+        ]
+      },
+      {
+        "question": "Was soll der Anrufer zuerst ueberpruefen?",
+        "options": [
+          "Den Puls",
+          "Ob der Patient atmet",
+          "Ob der Patient ansprechbar ist",
+          "Ob der Patient blaue Flecken hat"
+        ]
+      },
+      {
+        "question": "Wie oft pro Minute soll gedrueckt werden?",
+        "options": [
+          "60 bis 80 Mal",
+          "80 bis 100 Mal",
+          "100 bis 120 Mal",
+          "120 bis 140 Mal"
+        ]
+      },
+      {
+        "question": "Wie tief soll der Anrufer druecken?",
+        "options": [
+          "Zwei Zentimeter",
+          "Fuenf Zentimeter",
+          "Acht Zentimeter",
+          "Zehn Zentimeter"
+        ]
+      }
+    ],
+    "answers": [
+      "Er liegt auf dem Boden und bewegt sich nicht",
+      "Ob der Patient atmet",
+      "100 bis 120 Mal",
+      "Fuenf Zentimeter"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Reanimation",
+      "Wiederbelebung",
+      "Brustkorb",
+      "Rettungsdienst",
+      "bewusstlos"
+    ],
+    "tags": [
+      "B2",
+      "Notruf",
+      "Reanimation",
+      "Notfall",
+      "Rettungsdienst"
+    ]
+  },
+  {
+    "id": "l68",
+    "title": "Terminvereinbarung: Augenarzt bei Gruenem Star",
+    "type": "Appointment call",
+    "script": "Praxis Dr. Ahmed, Augenheilkunde, guten Tag.\nPatient: Guten Tag, ich soll einen Termin beim Augenarzt machen. Mein Optiker hat bei einer Routineuntersuchung einen erhoehten Augendruck festgestellt.\nSprechstundenhilfe: Das klingt nach einem Glaukom-Verdacht. Haben Sie eine Ueberweisung?\nPatient: Ja, vom Hausarzt.\nSprechstundenhilfe: Gut. Unser naechster Termin ist in zwei Wochen am Montag um 14 Uhr. Bitte kommen Sie 15 Minuten vorher, damit wir den Sehtest machen koennen. Bringen Sie Ihre alte Brille mit. Wir werden den Augendruck messen, den Sehnerv beurteilen und ein Gesichtsfeld machen. Die Untersuchung dauert etwa 45 Minuten.",
+    "questions": [
+      {
+        "question": "Warum soll der Patient zum Augenarzt?",
+        "options": [
+          "Weil er schlecht sieht",
+          "Weil ein erhoehter Augendruck festgestellt wurde",
+          "Weil er eine neue Brille braucht",
+          "Weil er Schmerzen hat"
+        ]
+      },
+      {
+        "question": "Wie lange dauert die Untersuchung etwa?",
+        "options": [
+          "15 Minuten",
+          "30 Minuten",
+          "45 Minuten",
+          "60 Minuten"
+        ]
+      },
+      {
+        "question": "Welche Untersuchungen werden durchgefuehrt?",
+        "options": [
+          "Nur Sehtest",
+          "Augendruckmessung, Sehnervbeurteilung und Gesichtsfeld",
+          "Nur Ultraschall",
+          "Nur Bluttest"
+        ]
+      },
+      {
+        "question": "Was soll der Patient am Untersuchungstag vermeiden?",
+        "options": [
+          "Kaffee zu trinken",
+          "Kontaktlinsen und Augen-Make-up",
+          "Viel zu essen",
+          "Auto zu fahren"
+        ]
+      }
+    ],
+    "answers": [
+      "Weil ein erhoehter Augendruck festgestellt wurde",
+      "45 Minuten",
+      "Augendruckmessung, Sehnervbeurteilung und Gesichtsfeld",
+      "Kontaktlinsen und Augen-Make-up"
+    ],
+    "transcriptHiddenByDefault": true,
+    "vocabularyFocus": [
+      "Augendruck",
+      "Glaukom",
+      "Gruener Star",
+      "Gesichtsfeld",
+      "Sehnerv"
+    ],
+    "tags": [
+      "B2",
+      "Augenarzt",
+      "Glaukom",
+      "Termin",
+      "Augenheilkunde"
+    ]
+  }
+]

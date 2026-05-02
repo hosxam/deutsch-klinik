@@ -73,6 +73,16 @@ export default function Layout() {
                 <ClipboardCheck size={14} /> C1 Ready
               </Link>
               <Link
+                to="/medical-fsp"
+                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
+                style={{
+                  backgroundColor: location.pathname === '/medical-fsp' ? 'var(--bg-hover)' : 'transparent',
+                  color: location.pathname === '/medical-fsp' ? '#8b5cf6' : 'var(--text-secondary)',
+                }}
+              >
+                <Stethoscope size={14} /> FSP Hub
+              </Link>
+              <Link
                 to="/mistake-notebook"
                 className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
                 style={{
@@ -113,6 +123,19 @@ export default function Layout() {
                 <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
               </Link>
             ))}
+            <Link
+              to="/medical-fsp"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 py-2 px-3 rounded-lg text-sm"
+              style={{
+                backgroundColor: location.pathname === '/medical-fsp' ? 'var(--bg-hover)' : 'transparent',
+                color: location.pathname === '/medical-fsp' ? '#8b5cf6' : 'var(--text-secondary)',
+              }}
+            >
+              <Stethoscope size={16} />
+              FSP Hub
+              <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
+            </Link>
           </div>
         )}
       </nav>
