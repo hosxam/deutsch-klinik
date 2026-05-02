@@ -151,7 +151,7 @@ export default function GrammarPage() {
         <span style={{ ...s.tag('rgba(139,92,246,0.15)'), color: 'var(--accent2)', marginBottom: '0.75rem', display: 'inline-block' }}>
           {typeLabels[ex.type] || ex.type} · {ex.topic}
         </span>
-        <p style={{ fontSize: '1.1rem', lineHeight: 1.6, margin: '1rem 0' }}>{ex.prompt}</p>
+        <p style={{ fontSize: '1.1rem', lineHeight: 1.6, margin: '1rem 0', wordBreak: 'break-word' }}>{ex.prompt}</p>
 
 {['fill-blank', 'mcq', 'multiple-choice', 'article-select', 'conjugation', 'case-select', 'drag-word'].includes(ex.type) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>

@@ -3438,6 +3438,406 @@
       "tips": "Als ausländischer Arzt, der selbst den Integrationsprozess durchläuft, möchte ich folgende Aspekte ansprechen.",
       "level": "C1",
       "lessonId": "C1_lesson_3"
+    },
+    {
+      "id": "C1_write_11",
+      "level": "C1",
+      "lessonId": "C1_lesson_2",
+      "title": "Essay: Evidenzbasierte Medizin",
+      "prompt": "In einem medizinischen Fachjournal wird die These vertreten: 'Evidenzbasierte Medizin ist der einzige Weg zu einer sicheren Patientenversorgung.' Schreiben Sie einen Essay, in dem Sie dieser These zustimmen, sie differenzieren oder widersprechen. Beziehen Sie sich auf konkrete Beispiele aus der klinischen Praxis.",
+      "instructions": "Formulieren Sie eine klare These. Nennen Sie mindestens zwei Argumente und ein Gegenargument. Zitieren Sie Studien oder Leitlinien, wo sinnvoll. Fassen Sie Ihre Position am Ende praezise zusammen.",
+      "wordLimit": 350,
+      "tips": "Nutzen Sie Nominalisierungen und Fachtermini. Vermeiden Sie extreme Formulierungen (nie, immer). Strukturieren Sie mit These-Gegenthese-Synthese."
+    },
+    {
+      "id": "C1_write_12",
+      "level": "C1",
+      "lessonId": "C1_lesson_4",
+      "title": "Formeller Brief: Krankenhausreform",
+      "prompt": "Die Bundesregierung hat eine umfassende Krankenhausreform vorgestellt. Als leitender Oberarzt einer mittelgrossen Klinik schreiben Sie einen formellen Brief an den Gesundheitsminister. Sie bewerten die geplanten Massnahmen aus der Perspektive Ihrer Klinik und schlagen konkrete Aenderungen vor.",
+      "instructions": "Formeller Brief mit korrekter Anrede und Grussformel. Nennen Sie drei konkrete Auswirkungen auf Ihre Klinik. Machen Sie mindestens einen Verbesserungsvorschlag. Bleiben Sie sachlich und konstruktiv.",
+      "wordLimit": 300,
+      "tips": "Achten Sie auf den formalen Briefstil (Sehr geehrter Herr...). Verwenden Sie Konjunktiv I fuer indirekte Anliegen. Nutzen Sie KII fuer hoefliche Vorschlaege."
+    },
+    {
+      "id": "C1_write_13",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "title": "Forschungsantrag: Zusammenfassung",
+      "prompt": "Sie planen eine klinische Studie zum Thema 'Frueherkennung von Sepsis durch Biomarker in der Notaufnahme'. Verfassen Sie die Zusammenfassung (Abstract) Ihres Forschungsantrags. Beschreiben Sie Hintergrund, Fragestellung, Methodik, erwartete Ergebnisse und klinische Relevanz.",
+      "instructions": "Strukturieren Sie das Abstract nach den ueblichen Abschnitten. Beschraenken Sie sich auf das Wesentliche. Zeigen Sie die klinische Relevanz deutlich. Nennen Sie Stichprobergroesse und geplante statistische Methoden.",
+      "wordLimit": 280,
+      "tips": "Verwenden Sie Passiv und Nominalstil (pragmatisch). Seien Sie praezise, kein Fuelle. Nutzen Sie Konnektoren wie zudem, ferner, darueber hinaus."
+    },
+    {
+      "id": "C1_write_14",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "title": "Kommentar: KI in der Radiologie",
+      "prompt": "Ein Radiologe schreibt in einem Fachblog: 'In fuenf Jahren wird KI die Bildgebung schneller und genauer machen als jeder menschliche Radiologe.' Schreiben Sie einen Kommentar aus Ihrer Sicht als Mediziner. Stimmen Sie zu, widersprechen Sie oder differenzieren Sie?",
+      "instructions": "Nehmen Sie klar Position. Beziehen Sie sich auf den Ausgangsbeitrag. Nennen Sie konkrete Vorteile und Risiken. Bleiben Sie fachlich und respektvoll.",
+      "wordLimit": 250,
+      "tips": "Nutzen Sie indirekte Rede (er behauptet, die KI sei...). Verwenden Sie Konjunktiv II zur Abschwaechung: koennte, muesste, waere. Zitieren Sie den Ausgangsbeitrag sinngemaess."
+    },
+    {
+      "id": "C1_write_15",
+      "level": "C1",
+      "lessonId": "C1_lesson_8",
+      "title": "Beschwerdeantwort: Verzoegerte Behandlung",
+      "prompt": "Ein Patient hat sich formell ueber eine viermonatige Wartezeit auf einen Operationstermin beschwert. Sie sind der Chefarzt und muessen auf diesen Beschwerdebrief antworten. Entschuldigen Sie sich, erklaeren Sie die Gruende und schlagen Sie eine Loesung vor.",
+      "instructions": "Formeller Briefstil. Entschuldigung und Verstaendnis zeigen. Sachliche Darstellung der Gruende. Konkrete Loesung anbieten. Hoefliche Schlussformel.",
+      "wordLimit": 300,
+      "tips": "Nutzen Sie KII fuer Hoeflichkeit (wir moechten uns entschuldigen, wir haetten...). Passiv vermeiden, wo nicht noetig. Keine Schuldzuweisungen. Bleiben Sie professionell."
+    },
+    {
+      "id": "C1_write_16",
+      "level": "C1",
+      "lessonId": "C1_lesson_12",
+      "title": "Positionspapier: Patientenautonomie",
+      "prompt": "In Ihrer Klinik wird ein Positionspapier zur Patientenautonomie am Lebensende erstellt. Sie sollen den Abschnitt zur Rolle des Arztes bei Therapieentscheidungen verfassen. Wie viel Einfluss sollte ein Arzt nehmen, wenn der Patient eine aus medizinischer Sicht unvernuenftige Entscheidung trifft?",
+      "instructions": "Differenzierte Darstellung. Ethische und medizinische Dimension beruecksichtigen. Konkrete Beispiele nennen. Eigene Position klar formulieren.",
+      "wordLimit": 350,
+      "tips": "Verwenden Sie Konjunktiv II fuer ethische Abwaegungen. Fachbegriffe wie Patientenverfuegung, mutmassliche Einwilligung. Struktur mit Pro/Contra."
+    },
+    {
+      "id": "C1_write_17",
+      "level": "C1",
+      "lessonId": "C1_lesson_14",
+      "title": "Ethikreflexion: Organspende",
+      "prompt": "Die Bundesregierung plant die Einfuehrung der Widerspruchsloesung bei Organspenden. Schreiben Sie eine persoenliche Reflexion ueber die ethischen Implikationen. Gehen Sie auf Selbstbestimmungsrecht, Solidaritaet und die Rolle des Staates ein.",
+      "instructions": "Persoenlich, aber fundiert. Ethische Prinzipien nennen (Autonomie, Benefizienz, Gerechtigkeit). Eigene Haltung entwickeln. Keine extremen Positionen.",
+      "wordLimit": 300,
+      "tips": "Nutzen Sie Nominalisierungen fuer Abstraktion. KII fuer hypothetische Szenarien. Anspruchsvolle Konnektoren: insofern, vielmehr, nichtsdestotrotz."
+    },
+    {
+      "id": "C1_write_18",
+      "level": "C1",
+      "lessonId": "C1_lesson_15",
+      "title": "E-Mail: Interdisziplinaere Kooperation",
+      "prompt": "Sie moechten eine interdisziplinaere Fallkonferenz zwischen der Inneren Medizin, der Chirurgie und der Radiologie einrichten. Schreiben Sie eine formelle E-Mail an die Leitungen der beteiligten Abteilungen. Beschreiben Sie Ziel, Format und geplante Haeufigkeit der Konferenz.",
+      "instructions": "Fachlich und kollegial. Konkreten Vorschlag mit Begruendung. Beruecksichtigen Sie Zeit- und Ressourcenbedarf. Bieten Sie Flexibilitaet an.",
+      "wordLimit": 280,
+      "tips": "Verwenden Sie formelle E-Mail-Strukturen (Betreff, Anrede, Grussformel). KII fuer Vorschlaege. Nominalstil fuer Effizienz."
+    },
+    {
+      "id": "C1_write_19",
+      "level": "C1",
+      "lessonId": "C1_lesson_16",
+      "title": "Zusammenfassung: Leitlinie",
+      "prompt": "Fassen Sie die wichtigsten Aenderungen der neuen S3-Leitlinie zur Behandlung des Typ-2-Diabetes zusammen. Gehen Sie auf Diagnostik, medikoese Therapie und Lebensstilinterventionen ein. Vergleichen Sie mit der vorherigen Leitlinienversion.",
+      "instructions": "Kurze Einleitung mit Kontext. Systematische Darstellung der Aenderungen. Praezise Fachsprache. Klinische Relevanz hervorheben.",
+      "wordLimit": 250,
+      "tips": "Nutzen Sie Passiv fuer Prozessbeschreibungen. Erweitere Partizipialattribute fuer Praezision. Komplexe Konnektoren: waehrend, wobei, insofern."
+    },
+    {
+      "id": "C1_write_20",
+      "level": "C1",
+      "lessonId": "C1_lesson_17",
+      "title": "Argumentation: Datenschutz in der Medizin",
+      "prompt": "Eine neue EU-Verordnung sieht strengere Datenschutzregeln fuer die medizinische Forschung vor. Kritiker bemängeln, dass dadurch wichtige Forschungsvorhaben behindert werden. Schreiben Sie eine argumentative Stellungnahme, die beide Seiten beruecksichtigt und zu einem ausgewogenen Urteil kommt.",
+      "instructions": "Beide Perspektiven fair darstellen. Konkrete Beispiele aus der Forschung. Auf Datenschutzgrundverordnung Bezug nehmen. Eigene Position begruenden.",
+      "wordLimit": 350,
+      "tips": "Nutzen Sie Passiv und Nominalisierungen. Verwenden Sie waehrend fuer Kontraste. Komplexe Satzgefuege mit obwohl, selbst wenn, dennoch."
+    },
+    {
+      "id": "C1_write_21",
+      "level": "C1",
+      "lessonId": "C1_lesson_18",
+      "title": "Abstract: Patientensicherheit",
+      "prompt": "Sie reichen einen Abstract fuer den Deutschen Kongress fuer Patientensicherheit ein. Thema: 'Implementierung eines Critical-Incident-Reporting-Systems in einer internistischen Klinik: Ergebnisse nach 18 Monaten.' Verfassen Sie ein Abstract mit Hintergrund, Methodik, Ergebnissen und Diskussion.",
+      "instructions": "Strukturieren Sie nach IMRaD (Introduction, Methods, Results, Discussion). Maximal 300 Woerter. Nennen Sie Zahlen zur Fehlerreduktion. Heben Sie die klinische Relevanz hervor.",
+      "wordLimit": 300,
+      "tips": "Verwenden Sie Nominalstil und Passiv. Praezise Zahlenangaben. Komplexe Partizipialattribute (das ueber 18 Monate implementierte System)."
+    },
+    {
+      "id": "C1_write_22",
+      "level": "C1",
+      "lessonId": "C1_lesson_19",
+      "title": "Bericht: Arbeitsbelastung im Klinikalltag",
+      "prompt": "Als AErztlicher Direktor verfassen Sie einen formellen Bericht fuer die Krankenhausgesellschaft zum Thema 'AErztliche Arbeitsbelastung und Burnout-Praevention'. Stellen Sie die aktuelle Situation dar, analysieren Sie Ursachen und schlagen Sie konkrete Massnahmen vor.",
+      "instructions": "Formeller Berichtsstil mit Einleitung, Analyse und Handlungsempfehlungen. Mindestens drei konkrete Massnahmen. Beziehen Sie sich auf Studien zur Arbeitszeit belastung.",
+      "wordLimit": 350,
+      "tips": "Nutzen Sie erweiterte Partizipialattribute und Nominalisierungen. KII fuer Handlungsempfehlungen (dies koennte durch ... erreicht werden). Fachvokabular zur Arbeitsmedizin."
+    },
+    {
+      "id": "C1_write_23",
+      "level": "C1",
+      "lessonId": "C1_lesson_20",
+      "title": "Kritische Wuerdigung: Klinische Studie",
+      "prompt": "Eine randomisierte kontrollierte Studie behauptet: 'Ein neues Antikoagulans senkt das Schlaganfallrisiko um 40 Prozent im Vergleich zu Standardtherapie.' Verfassen Sie eine kritische Wuerdigung. Bewerten Sie Studien design, Endpunkte, Limitationen und Uebertragbarkeit in den klinischen Alltag.",
+      "instructions": "Strukturierte Analyse: Methodik, statistische Signifikanz, klinische Relevanz, Limitationen. Differenziertes Urteil am Ende. Fachsprache.",
+      "wordLimit": 350,
+      "tips": "Verwenden Sie Konjunktiv I fuer die Aussagen der Autoren (die Autoren behaupten, die Studie zeige...). Passiv fuer Methodik. Nominalisierungen fuer Abstraktion."
+    },
+    {
+      "id": "C1_write_24",
+      "level": "C1",
+      "lessonId": "C1_lesson_21",
+      "title": "Stellungnahme: Aufklaerungspflicht",
+      "prompt": "Ein neues Gesetz soll die Aufklaerungspflicht vor komplexen operativen Eingriffen verstaerken. Sie sind Mitglied einer Ethikkommission und sollen eine Stellungnahme verfassen. Gehen Sie auf Patientenautonomie, Haftungsfragen und die praktische Umsetzbarkeit ein.",
+      "instructions": "Ethische und rechtliche Dimensionen beruecksichtigen. Konkrete Beispiele nennen. Praktikable Loesungen vorschlagen. Ausgewogene Position.",
+      "wordLimit": 300,
+      "tips": "Nutzen Sie KII fuer ethische Abwaegungen (man koennte argumentieren). Juristisches Fachvokabular (Einwilligungsfaehigkeit, mutmassliche Einwilligung)."
+    },
+    {
+      "id": "C1_write_25",
+      "level": "C1",
+      "lessonId": "C1_lesson_22",
+      "title": "Policy Memo: Digitale Gesundheitskompetenz",
+      "prompt": "Das Gesundheitsministerium bittet um ein Policy Memo zur Foerderung digitaler Gesundheitskompetenz in der Bevoelkerung. Analysieren Sie die aktuelle Situation, identifizieren Sie Zielgruppen mit besonderem Foerderbedarf und schlagen Sie konkrete Massnahmen vor.",
+      "instructions": "Memo-Stil: Zusammenfassung, Situationsanalyse, Handlungsoptionen, Empfehlung. Knapp und pragnannt. Evidenzbasierte Empfehlungen.",
+      "wordLimit": 280,
+      "tips": "Nominalstil fuer Praezision. Passiv fuer Prozesse. Komplexe Konnektoren: insofern, demzufolge, nichtsdestotrotz."
+    },
+    {
+      "id": "C1_write_26",
+      "level": "C1",
+      "lessonId": "C1_lesson_23",
+      "title": "Essay: Interkulturelle Kommunikation",
+      "prompt": "In Ihrer Klinik arbeiten zunehmend internationale AErzte und Pflegende. Schreiben Sie einen reflektierenden Essay ueber die Herausforderungen und Chancen interkultureller Kommunikation im klinischen Alltag. Gehen Sie auf Sprachbarrieren, unterschiedliche Behandlungserwartungen und Teambildung ein.",
+      "instructions": "Persoenliche Reflexion mit fachlicher Fundierung. Konkrete Erfahrungen einbeziehen. Theoretische Konzepte (Kultursensibilitaet, diversitaetsbewusste Medizin) nutzen.",
+      "wordLimit": 350,
+      "tips": "Vorsichtige Formulierungen mit KII. Nominalisierungen fuer Abstraktion. Persoenlich, aber nicht privat. Metaphern vermeiden."
+    },
+    {
+      "id": "C1_write_27",
+      "level": "C1",
+      "lessonId": "C1_lesson_24",
+      "title": "E-Mail: Ethikkommission",
+      "prompt": "Sie planen eine multizentrische Studie zur Wirksamkeit eines KI-gestuetzten Diagnosesystems in der Notaufnahme. Die Ethikkommission hat Rueckfragen zur Datenschutzfolgenabschaetzung. Schreiben Sie eine formelle E-Mail, in der Sie die Fragen beantworten und um eine zuegige Pruefung bitten.",
+      "instructions": "Formeller E-Mail-Stil mit Betreffzeile. Beziehen Sie sich auf das Aktenzeichen. Beantworten Sie die Rueckfragen systematisch. Bitten Sie hoeflich um beschleunigte Bearbeitung.",
+      "wordLimit": 300,
+      "tips": "KII fuer hoefliche Formulierungen. Formeller Briefstil. Fachtermini der Forschungsethik und des Datenschutzes."
+    },
+    {
+      "id": "C1_write_28",
+      "level": "C1",
+      "lessonId": "C1_lesson_25",
+      "title": "Leitlinienzusammenfassung: Antibiotic Stewardship",
+      "prompt": "Ihr Krankenhaus fuehrt ein neues Antibiotic-Stewardship-Programm ein. Fassen Sie die Kernpunkte der aktuellen S3-Leitlinie 'Antibiotikaanwendung in der Klinik' fuer die AErzteschaft zusammen. Konzentrieren Sie sich auf praxisrelevante Aspekte wie Indikationsstellung, Deeskalation und Therapiedauer.",
+      "instructions": "Praxisorientierte Zusammenfassung. Maximal 300 Woerter. Klare Handlungsempfehlungen. Tabellarische Uebersicht vermeiden, narrative Darstellung bevorzugen.",
+      "wordLimit": 300,
+      "tips": "Passiv fuer Prozesse. Waehrend fuer Kontraste. Nominalisierungen. Abkuerzungen definieren (ABS, S3, MRE)."
+    },
+    {
+      "id": "C1_write_29",
+      "level": "C1",
+      "lessonId": "C1_lesson_3",
+      "title": "Argumentation: Ressourcenverteilung",
+      "prompt": "In einer oeffentlichen Debatte wird gefordert, dass Krankenhaeuser mehr Geld in die Praevention statt in die hochspezialisierte Spitzenmedizin investieren sollen. Schreiben Sie eine argumentative Stellungnahme, die beide Positionen wuerdigt und zu einem begruendeten Urteil kommt.",
+      "instructions": "Klare Positionierung nach Abwaegung. Oekonomische, ethische und medizinische Perspektiven. Beispiele nennen. Sachlich bleiben.",
+      "wordLimit": 350,
+      "tips": "Waehrend fuer Gegensatz. Konjunktiv II fuer hypothetische Szenarien (wenn man mehr in Praevention investierte,...). Komplexe Satzgefuege."
+    },
+    {
+      "id": "C1_write_30",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "title": "Entlassungsdokumentation: Komplexer Fall",
+      "prompt": "Eine 78-jaehrige Patientin mit Diabetes mellitus Typ 2, chronischer Niereninsuffizienz im Stadium III und stattgehabtem Apoplex wird nach zweiewoechigem stationaerem Aufenthalt in die haeusliche Pflege entlassen. Verfassen Sie den Entlassungsbericht mit Epikrise, Medikationsplan und weiteren Empfehlungen.",
+      "instructions": "AErztlicher Entlassungsbrief-Stil. Anamnese, Diagnosen, durchgefuehrte Therapie, Medikation bei Entlassung, weiteres Procedere. Vollstaendig und pragnant.",
+      "wordLimit": 350,
+      "tips": "AErztliche Fachsprache. Nominalisierungen. Passiv fuer Befunde. Abkuerzungen definieren. Strukturiert nach Briefkopf, Diagnosen, Epikrise, Medikation, Empfehlungen."
+    },
+    {
+      "id": "C1_write_31",
+      "level": "C1",
+      "lessonId": "C1_lesson_2",
+      "title": "Editorial: KI-Regulierung",
+      "prompt": "Sie sind Chefredakteur einer medizinischen Fachzeitschrift. Verfassen Sie ein Editorial zur geplanten EU-Regulierung kuenstlicher Intelligenz in der Medizin. Nehmen Sie Stellung zu den Chancen und Risiken und fordern Sie konkrete Anpassungen aus aerztlicher Perspektive.",
+      "instructions": "Stellungnahme mit klarer Position. Bezug auf den aktuellen Gesetzesentwurf. Forderungen an die Politik. Fuer ein Fachpublikum schreiben.",
+      "wordLimit": 350,
+      "tips": "Indirekte Rede und KII fuer vorsichtige Bewertungen. Fachvokabular zu KI und Medizinrecht. Passivkonstruktionen fuer Objektivitaet."
+    },
+    {
+      "id": "C1_write_32",
+      "level": "C1",
+      "lessonId": "C1_lesson_4",
+      "title": "Widerspruch: Kostenerstattung",
+      "prompt": "Die Krankenkasse hat die Kostenuebernahme fuer eine von Ihnen verordnete spezielle Physiotherapie bei chronischen Rueckenschmerzen abgelehnt. Verfassen Sie einen formellen Widerspruch mit medizinischer Begruendung und Verweis auf die relevante Rechtsprechung.",
+      "instructions": "Formeller Widerspruchsbrief. Medizinische Notwendigkeit darlegen. Evidenz zitieren. Sozialrechtliche Grundlagen nennen ($13 SGB V).",
+      "wordLimit": 300,
+      "tips": "Juristische Fachsprache (Anspruchsgrundlage, Ermessensfehler). KII fuer Begruendungen. Formal korrekte Adressierung und Betreffzeile."
+    },
+    {
+      "id": "C1_write_33",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "title": "Arztbrief: Multimorbide Patientin",
+      "prompt": "Verfassen Sie einen strukturierten Arztbrief fuer eine 67-jaehrige Patientin, die nach einem Staursyndrom bei koronarer Herzkrankheit, Z. n. Bypass-OP 2019, bei bekanntem Diabetes mellitus Typ 2 und Hypertonie stationaer behandelt wurde. Der Aufenthalt dauerte 12 Tage.",
+      "instructions": "Vollstaendiger Arztbrief: Diagnosen, Anamnese, Untersuchungsbefunde, Verlauf, Epikrise, Medikation bei Entlassung, Sozialprognose. AErztliche Standardstruktur.",
+      "wordLimit": 350,
+      "tips": "AErztliche Fachabkuerzungen definieren. Befundsprache im Praeteritum. Nominalisierungen fuer Effizienz. Klares Format mit Abschnitten."
+    },
+    {
+      "id": "C1_write_34",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "title": "Literaturuebersicht: Chronischer Schmerz",
+      "prompt": "Sie bereiten eine Fortbildung zum Thema 'Multimodale Schmerztherapie bei chronischen Rueckenschmerzen' vor. Fassen Sie die aktuelle Studienlage zusammen. Gehen Sie auf pharmakologische, physiotherapeutische und psychotherapeutische Ansaetze ein.",
+      "instructions": "Strukturierte Uebersicht. Mindestens drei Therapiesaetze vergleichen. Evidenzgrade nennen. Klinische Empfehlung ableiten.",
+      "wordLimit": 350,
+      "tips": "Wissenschaftlicher Schreibstil. Konjunktiv I fuer Studienaussagen. Passiv fuer Methoden. Komplexe Konnektoren (waehrend, insofern, im Gegensatz dazu)."
+    },
+    {
+      "id": "C1_write_35",
+      "level": "C1",
+      "lessonId": "C1_lesson_8",
+      "title": "Reflexion: Umgang mit Behandlungsfehler",
+      "prompt": "Einem Kollegen ist bei einer Routineoperation ein vermeidbarer Fehler unterlaufen. Schreiben Sie eine persoenliche Reflexion ueber den angemessenen Umgang mit medizinischen Fehlern im Team. Gehen Sie auf Fehlerkultur, Offenheit gegenueber Patienten und Praeventionsmassnahmen ein.",
+      "instructions": "Persoenliche, aber professionelle Reflexion. Fehlerkultur und Patientensicherheit. Keine Schuldzuweisungen. Konkrete Vorschlaege zur Verbesserung.",
+      "wordLimit": 300,
+      "tips": "KII fuer sensible Bewertungen (man koennte argumentieren, es waere besser,...). Nominalisierungen. Abstrakte Begriffe. Zurueckhaltende, empathische Diktion."
+    },
+    {
+      "id": "C1_write_36",
+      "level": "C1",
+      "lessonId": "C1_lesson_9",
+      "title": "Positionspapier: Genommedizin",
+      "prompt": "Die Genommedizin ermoeglicht zunehmend individuelle Therapieansaetze, wirft aber auch Fragen zum Datenschutz auf. Verfassen Sie ein Positionspapier fuer eine bioethische Kommission, das den Nutzen der Genommedizin gegen die Risiken eines Datenmissbrauchs abwaegt.",
+      "instructions": "Systematische Abwaegung. Ethische Prinzipien (Autonomie, Nicht-Schaden, Gerechtigkeit). Konkrete Schutzmassnahmen vorschlagen. Klare eigene Position.",
+      "wordLimit": 350,
+      "tips": "Fachtermini der Genetik und Bioethik. KII fuer ethische Abwaegungen. Komplexe Satzgefuege mit obwohl, selbst wenn. Nominalisierungen."
+    },
+    {
+      "id": "C1_write_37",
+      "level": "C1",
+      "lessonId": "C1_lesson_10",
+      "title": "Projektantrag: Qualitaetsverbesserung",
+      "prompt": "Sie moechten ein Qualitaetsverbesserungsprojekt zur Reduktion von nosokomialen Infektionen auf Ihrer Station initiieren. Verfassen Sie einen formellen Projektantrag an die Klinikleitung. Beschreiben Sie IST-Zustand, Zielsetzung, Massnahmen, Zeitplan und erwarteten Nutzen.",
+      "instructions": "Formeller Antrag mit Einleitung, Zielsetzung, Methodik, Zeitplan, Ressourcenbedarf und erwarteten Ergebnissen. Evidenzbasierte Begruendung.",
+      "wordLimit": 350,
+      "tips": "Nominalstil und Passiv. KII fuer realistische Zielformulierungen. Fachtermini der Hygiene und Qualitaetssicherung. Ueberzeugende, aber realistische Diktion."
+    },
+    {
+      "id": "C1_write_38",
+      "level": "C1",
+      "lessonId": "C1_lesson_11",
+      "title": "Vergleich: Behandlungsleitlinien",
+      "prompt": "Vergleichen Sie die deutsche S3-Leitlinie mit der internationalen NICE-Guideline zur Behandlung des Typ-2-Diabetes. Arbeiten Sie Gemeinsamkeiten und Unterschiede in Diagnostik, Therapiezielen und medikoeser Einstellung heraus. Bewerten Sie, welche Leitlinie fuer Ihre Klinik praxisrelevanter ist.",
+      "instructions": "Systematischer Vergleich. Konkrete Unterschiede benennen. Evidenzniveaus beruecksichtigen. Begruendete Empfehlung. Fachsprache.",
+      "wordLimit": 350,
+      "tips": "Waehrend fuer Kontraste. Indirekte Rede fuer Leitlinienaussagen. Passiv fuer Methodenbeschreibung. Quantifizierende Adjektive (hoeher, niedriger, vergleichbar)."
+    },
+    {
+      "id": "C1_write_39",
+      "level": "C1",
+      "lessonId": "C1_lesson_12",
+      "title": "E-Mail: Sektorenuebergreifende Versorgung",
+      "prompt": "Ein Patient mit chronischer Herzinsuffizienz wird aus Ihrer stationaeren Behandlung entlassen. Die hausaerztliche Weiterbehandlung und die ambulante kardiologische Anbindung sind noch nicht gesichert. Verfassen Sie eine professionelle E-Mail an den Hausarzt des Patienten mit der Bitte um Uebernahme und konkreten Handlungsempfehlungen.",
+      "instructions": "Kollegiale, aber praezise E-Mail. Patientendaten (pseudonymisiert) uebermitteln. Konkrete Handlungsempfehlungen. Angebot zur Rueckfrage.",
+      "wordLimit": 280,
+      "tips": "AErztliche Fachsprache. KII fuer hoefliche Bitten. Klare Struktur mit Abschnitten. Abkuerzungen definieren. Formelle E-Mail-Konventionen."
+    },
+    {
+      "id": "C1_write_40",
+      "level": "C1",
+      "lessonId": "C1_lesson_14",
+      "title": "Essay: Empathie im Klinikalltag",
+      "prompt": "'In einer hochspezialisierten Medizin bleibt wenig Raum fuer Empathie.' Nehmen Sie zu dieser Aussage Stellung. Schreiben Sie einen Essay ueber die Bedeutung von Einfuehlungsvermoegen in der modernen Hochleistungsmedizin, ohne die Sachlichkeit und Effizienz zu vernachlaessigen.",
+      "instructions": "These klaeren, eigene Position beziehen. Argumente aus der medizinischen Forschung. Praktische Beispiele. Ausgewogenes Urteil.",
+      "wordLimit": 350,
+      "tips": "Persoenlich, aber reflektiert. Nominalisierungen fuer Abstraktion. Waehrend fuer Gegensatz. Verben der Einstellung (bezweifeln, ueberzeugen, anerkennen)."
+    },
+    {
+      "id": "C1_write_41",
+      "level": "C1",
+      "lessonId": "C1_lesson_15",
+      "title": "Stellungnahme: Sterbehilfe",
+      "prompt": "Der Bundestag beriet einen neuen Gesetzesentwurf zur Suizidassistenz. Als Mitglied der Ethikkommission der Bundeszerztekammer verfassen Sie eine formelle Stellungnahme, die die aerztliche Verantwortung, den Patientenwillen und die Grenzen der Beihilfe zur Selbsttoetung aus medizinethischer Perspektive beleuchtet.",
+      "instructions": "Formelle Stellungnahme mit Einleitung, ethischer Analyse, medizinischer Perspektive und Handlungsempfehlung. Ausgewogen und differenziert. Bezug auf geltendes Recht und aktuelle Rechtsprechung.",
+      "wordLimit": 350,
+      "tips": "KII fuer ethische Abwaegungen. Indirekte Rede fuer Gesetzesaussagen. Fachtermini: Suizidassistenz, Patientenautonomie, aerztliche Garantenstellung."
+    },
+    {
+      "id": "C1_write_42",
+      "level": "C1",
+      "lessonId": "C1_lesson_16",
+      "title": "Essay: Krankenhausprivatisierung",
+      "prompt": "In Deutschland werden zunehmend oeffentliche Krankenhaeuser privatisiert. Schreiben Sie einen Essay, der die Vor- und Nachteile dieser Entwicklung aus medizinischer, oekonomischer und gesellschaftlicher Perspektive analysiert. Gehen Sie auf Versorgungsqualitaet, Arbeitsbedingungen und Patienteninteressen ein.",
+      "instructions": "Klare These. Drei Perspektiven (medizinisch, oekonomisch, gesellschaftlich). Evidenz aus der Literatur. Ausgewogenes Fazit.",
+      "wordLimit": 350,
+      "tips": "Waehrend fuer Kontraste. KII fuer hypothetische Entwicklungen. Nominalisierungen. Anspruchsvolle Konnektoren: insofern, demgegenueber."
+    },
+    {
+      "id": "C1_write_43",
+      "level": "C1",
+      "lessonId": "C1_lesson_17",
+      "title": "Fallbericht: Orthopaedisches Trauma",
+      "prompt": "Dokumentieren Sie den Fall eines 34-jaehrigen Patienten mit einer dislozierten Sprunggelenksfraktur rechts (Weber-C-Klasse) nach Sportunfall. Beschreiben Sie Unfallmechanismus, Diagnostik, operative Versorgung mittels Plattenosteosynthese und den postoperativen Verlauf.",
+      "instructions": "Strukturierter aerztlicher Fallbericht: Anamnese, Befund, Diagnostik, Therapie, Verlauf, Epikrise. Fachsprache und messbare Parameter.",
+      "wordLimit": 350,
+      "tips": "AErztliche Fachtermini. Passiv fuer operative Schritte. Praeteritum fuer Verlauf. Nominalisierungen fuer Effizienz. Abkuerzungen definieren."
+    },
+    {
+      "id": "C1_write_44",
+      "level": "C1",
+      "lessonId": "C1_lesson_18",
+      "title": "E-Mail: Interdisziplinaere Fallkonferenz",
+      "prompt": "Sie organisieren eine interdisziplinaere Tumorkonferenz fuer einen 59-jaehrigen Patienten mit neu diagnostiziertem Pankreaskarzinom. Schreiben Sie formelle Einladungs-E-Mails an die zu beteiligenden Fachrichtungen (Chirurgie, Onkologie, Radiologie, Pathologie) mit Terminvorschlaege, Fallvorstellung und gewuenschten Beitraegen.",
+      "instructions": "Formelle E-Mail mit Betreff, Anrede, Fallvorstellung, gewuenschten Beitraegen und Terminvorschlaege. Kollegial, aber praezise. Anhang erwaehnen.",
+      "wordLimit": 300,
+      "tips": "KII fuer hoefliche Einladung. Formelle E-Mail-Struktur. Fachtermini der Tumorchirurgie. Angebot zur Terminflexibilitaet."
+    },
+    {
+      "id": "C1_write_45",
+      "level": "C1",
+      "lessonId": "C1_lesson_19",
+      "title": "Kritik: Praeventionsgesetz",
+      "prompt": "Das neue Praeventionsgesetz verpflichtet Krankenkassen zu mehr Ausgaben fuer primare Praevention. Fassen Sie die Kernpunkte zusammen und kritisieren Sie die Umsetzung aus klinischer Perspektive. Gehen Sie auf Zielgruppen, Massnahmen und Wirksamkeitskontrolle ein.",
+      "instructions": "Zusammenfassung der Gesetzesinhalte. Kritische Wuerdigung mit Fokus auf klinische Umsetzbarkeit. Evidenz zur Wirksamkeit von Praeventionsmassnahmen. Verbesserungsvorschlaege.",
+      "wordLimit": 350,
+      "tips": "Indirekte Rede fuer Gesetzesaussagen. KII fuer Kritik (dieser Ansatz koennte verbessert werden...). Passiv fuer Zusammenfassung."
+    },
+    {
+      "id": "C1_write_46",
+      "level": "C1",
+      "lessonId": "C1_lesson_20",
+      "title": "Argumentation: Impfpflicht fuer Pflegekraefte",
+      "prompt": "In der oeffentlichen Debatte wird eine Grippeimpfpflicht fuer medizinisches Personal gefordert. Schreiben Sie eine argumentative Stellungnahme, die Infektionsschutz, Berufsfreiheit und Patientenverantwortung abwaegt. Beziehen Sie sich auf ethische Prinzipien und konkrete Studien.",
+      "instructions": "Ausgewogene Abwaegung. Evidenz zur Impfquote bei medizinischem Personal. Ethische Prinzipien (Nutzen, Nicht-Schaden, Autonomie). Eigene Position.",
+      "wordLimit": 350,
+      "tips": "Waehrend fuer Gegensatz. KII fuer ethische Abwaegungen. Fachtermini (Praevention, nosokomial, Durchimpfungsrate). Komplexe Satzgefuege."
+    },
+    {
+      "id": "C1_write_47",
+      "level": "C1",
+      "lessonId": "C1_lesson_21",
+      "title": "Ethikantrag: Zusammenfassung",
+      "prompt": "Sie planen eine prospektive Beobachtungsstudie zum Einfluss der Operationszeit auf die postoperative Komplikationsrate nach kolorektalen Eingriffen. Verfassen Sie die Zusammenfassung Ihres Ethikantrags. Beschreiben Sie Zielsetzung, Methodik, Datenschutzmassnahmen und Risikobewertung fuer die Probanden.",
+      "instructions": "Strukturierte Zusammenfassung: Hintergrund, Fragestellung, Methodik, Patientenkollektiv, Datenschutz, Risiken und Nutzen. Pragma und vollstaendig.",
+      "wordLimit": 300,
+      "tips": "Wissenschaftlicher Stil. Passiv und Nominalisierungen. Fachtermini der klinischen Forschung. Datenschutzrechtliche Begriffe (Pseudonymisierung, Einwilligung)."
+    },
+    {
+      "id": "C1_write_48",
+      "level": "C1",
+      "lessonId": "C1_lesson_22",
+      "title": "Beschwerdeantwort: Kommunikationsdefizit",
+      "prompt": "Ein Patient beschwert sich, dass er vor einer geplanten Operation nicht ausreichend ueber die Risiken und Alternativen aufgeklaert wurde. Sie sind der Klinikdirektor und muessen eine formelle Antwort verfassen. Entschuldigen Sie sich, analysieren Sie den Vorgang und schlagen Sie Massnahmen zur Verbesserung vor.",
+      "instructions": "Formeller Brief. Empathie und Entschuldigung. Sachliche Darstellung des Vorgangs. Konkrete Massnahmen. Einladung zum Gespraech.",
+      "wordLimit": 300,
+      "tips": "KII fuer Hoeflichkeit. Fuer Kommunikation Analyse: Aufklaerungsstandard, patientenverstaendliche Sprache, Dokumentationspflicht. Formelle Briefkonventionen."
+    },
+    {
+      "id": "C1_write_49",
+      "level": "C1",
+      "lessonId": "C1_lesson_23",
+      "title": "Essay: Aerztemigration",
+      "prompt": "Jaehrlich verlassen tausende deutschsprachige AErztinnen und AErzte Deutschland, um im Ausland zu arbeiten. Schreiben Sie einen Essay ueber die Ursachen und Folgen dieser Entwicklung. Analysieren Sie Arbeitsbedingungen, Verguetung und berufliche Perspektiven. Schlagen Sie Massnahmen vor, um dem Fachkraeftemangel zu begegnen.",
+      "instructions": "Ursachenanalyse, Folgenabschaetzung, Handlungsempfehlungen. Evidenz aus Studien. Systemische Probleme ansprechen, aber konstruktiv bleiben.",
+      "wordLimit": 350,
+      "tips": "KII fuer Vorschlaege. Indirekte Rede fuer Studienaussagen. Waehrend fuer Kontraste. Fachtermini: Abwanderung, Fachkraeftesicherung, Work-Life-Balance."
+    },
+    {
+      "id": "C1_write_50",
+      "level": "C1",
+      "lessonId": "C1_lesson_24",
+      "title": "Verlaufsdokumentation: Postoperative Komplikation",
+      "prompt": "Ein 72-jaehriger Patient entwickelte am dritten Tag nach Hemiendoprothesen-Implantation der Huefte eine Wundinfektion mit Keimnachweis (Staphylococcus aureus, MRSA). Dokumentieren Sie den weiteren klinischen Verlauf, die eingeleiteten Massnahmen und den geplanten weiteren Procedere.",
+      "instructions": "Klinische Verlaufsdokumentation: Komplikationsbeschreibung, Diagnostik, eingeleitete Therapie, Verlauf unter Therapie, weiteres Procedere. Fachsprache und Praezision.",
+      "wordLimit": 300,
+      "tips": "AErztliche Fachsprache. Praeteritum fuer Verlauf. Passiv fuer eingeleitete Massnahmen. Klare Abschnitte. Abkuerzungen definieren (MRSA, HEP)."
     }
   ]
 }

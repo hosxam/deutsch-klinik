@@ -1,19 +1,118 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, BookMarked, CheckCircle, XCircle, Brain } from 'lucide-react';
+import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X } from 'lucide-react';
+
+// All levels available
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+// Map partOfSpeech to cleaner display categories for filtering
+const POS_GROUPS = {
+  noun: 'noun',
+  verb: 'verb',
+  adjective: 'adjective',
+  adj: 'adjective',
+  adverb: 'adverb',
+  phrase: 'phrase',
+  preposition: 'preposition',
+  'modal verb': 'other',
+  conjunction: 'other',
+  number: 'other',
+  'question word': 'other',
+};
+
+const POS_FILTERS = ['all', 'noun', 'verb', 'adjective', 'adverb', 'phrase', 'other'];
+
+// Medical keywords for the medical filter
+const MEDICAL_KEYWORDS = [
+  'medical', 'health', 'klinik', 'hospital', 'doctor', 'patient', 'pharmacy', 'apotheke',
+  'emergency', 'notfall', 'surgery', 'operation', 'orthopedics', 'orthopädie', 'diagnosis',
+  'diagnose', 'diagnostic', 'therapy', 'therapie', 'documentation', 'dokumentation', 'fsp',
+  'ethics', 'ethik', 'symptom', 'treatment', 'behandlung', 'prescription', 'rezept',
+  'medication', 'medikament', 'examination', 'untersuchung', 'ward', 'station',
+  'clinic', 'klinisch', 'nurse', 'krankenschwester', 'pflege', 'arzt', 'ärztlich',
+  'krankheit', 'disease', 'infection', 'infektion', 'injury', 'verletzung',
+  'pain', 'schmerz', 'fever', 'fieber', 'blood', 'blut', 'pressure', 'druck',
+  'heart', 'herz', 'lung', 'lunge', 'bone', 'knochen', 'muscle', 'muskel',
+  'nerve', 'nerv', 'brain', 'gehirn', 'skin', 'haut', 'cell', 'zelle',
+  'anatomy', 'anatomie', 'physiology', 'physiologie', 'pathology', 'pathologie',
+  'psychiatry', 'psychiatrie', 'psychology', 'psychologie', 'therapy', 'physio',
+  'rehabilitation', 'reha', 'vaccination', 'impfung', 'screening', 'vorsorge',
+  'imaging', 'bildgebung', 'ultraschall', 'röntgen', 'mrt', 'ct', 'ekg',
+  'endoscopy', 'endoskopie', 'biopsy', 'biopsie', 'laboratory', 'labor',
+  'pharmacology', 'pharmakologie', 'oncology', 'onkologie', 'cardiology',
+  'kardiologie', 'neurology', 'neurologie', 'pediatrics', 'pädiatrie',
+  'germ', 'keim', 'antibiotic', 'antibiotikum', 'surgery', 'chirurgie',
+  'anesthesia', 'anästhesie', 'intensive care', 'intensiv', 'icu',
+  'palliative', 'palliativ', 'hospice', 'hospiz', 'ethics committee',
+  'ethikkommission', 'informed consent', 'aufklärung', 'patient education',
+  'compliance', 'adhärenz', 'prognosis', 'prognose', 'diagnosis',
+  'differential diagnosis', 'differentialdiagnose', 'follow-up',
+  'nachsorge', 'aftercare', 'recovery', 'genesung', 'wound', 'wunde',
+  'bandage', 'verband', 'cast', 'gips', 'crutch', 'krücke', 'wheelchair',
+  'rollstuhl', 'stretcher', 'trage', 'ambulance', 'krankenwagen', 'rettung',
+  'first aid', 'erste hilfe', 'hygiene', 'hygiene', 'sterile', 'steril',
+  'disinfection', 'desinfektion', 'quarantine', 'quarantäne', 'isolation',
+  'side effect', 'nebenwirkung', 'allergy', 'allergie', 'chronic', 'chronisch',
+  'acute', 'akut', 'benign', 'gutartig', 'malignant', 'bösartig', 'tumor',
+  'cancer', 'krebs', 'diabetes', 'diabetes', 'hypertension', 'hypertonie',
+  'asthma', 'asthma', 'stroke', 'schlaganfall', 'heart attack', 'infarkt',
+  'pneumonia', 'lungenentzündung', 'fracture', 'fraktur', 'sprain',
+  'verstauchung', 'dislocation', 'luxation', 'hernia', 'hernie',
+  'appendicitis', 'blinddarmentzündung', 'ulcer', 'geschwür', 'inflammation',
+  'entzündung', 'edema', 'ödem', 'swelling', 'schwellung',
+  'public health', 'gesundheitswesen', 'health insurance', 'krankenkasse',
+  'sick note', 'krankschreibung', 'medical certificate', 'attest',
+  'discharge', 'entlassung', 'referral', 'überweisung', 'admission',
+  'aufnahme', 'chart', 'akte', 'medical record', 'krankenakte',
+  'healthcare', 'gesundheitsversorgung', 'health system', 'gesundheitssystem',
+];
+
+const wordPos = w => w.partOfSpeech || 'other';
+const wordNounArticle = w => w.article || '';
+
+// Check if a word matches the medical filter
+function isMedicalWord(word) {
+  const fields = [
+    word.word, word.translation, word.topic, word.example, word.exampleTranslation,
+    ...(word.tags || []), word.lessonId, word.category
+  ].filter(Boolean).map(f => f.toLowerCase());
+
+  const searchText = fields.join(' ');
+  return MEDICAL_KEYWORDS.some(kw => searchText.includes(kw.toLowerCase()));
+}
+
+// Smart display: extract article from word if it's baked in
+function displayWord(word) {
+  const articleMatch = word.word.match(/^(der|die|das)\s+(.+)/i);
+  if (articleMatch) {
+    return { display: articleMatch[2], article: articleMatch[1].toLowerCase() };
+  }
+  return { display: word.word, article: wordNounArticle(word) };
+}
+
+// Compute all words with level info once
+const allWords = LEVELS.flatMap(level =>
+  (vocabData[level] || []).map(w => ({ ...w, _level: level }))
+);
 
 export default function VocabularyPage() {
   const { levelId } = useParams();
-  const words = (vocabData[levelId] || []);
   const [mode, setMode] = useState('browse');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
   const [quizDone, setQuizDone] = useState(false);
+
+  // Search & filter state
+  const [search, setSearch] = useState('');
+  const [levelFilter, setLevelFilter] = useState('all');
+  const [posFilter, setPosFilter] = useState('all');
+  const [medicalOnly, setMedicalOnly] = useState(false);
+  const [lessonFilter, setLessonFilter] = useState('all');
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -24,112 +123,95 @@ export default function VocabularyPage() {
     setMode('browse');
   }, [levelId]);
 
-  if (words.length === 0) {
-    return (
-      <LevelLock levelId={levelId}>
-      <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '600px', margin: '0 auto' }}>
-        <p style={{ color: 'var(--text-muted)' }}>No vocabulary yet for {levelId}</p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>Add words to germanVocabulary.json with level field set to {levelId}</p>
-        <Link to={`/level/${levelId}`} style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem', marginTop: '1rem', display: 'inline-block' }}>Back</Link>
-      </div>
-      </LevelLock>
-    );
-  }
+  // Derive which words to show based on filters
+  const levelWords = useMemo(() => {
+    if (levelFilter === 'all') return allWords;
+    return (vocabData[levelFilter] || []).map(w => ({ ...w, _level: levelFilter }));
+  }, [levelFilter]);
 
-  const startQuiz = () => {
-    setMode('quiz');
-    setCurrentIndex(0);
-    setQuizScore(0);
-    setQuizTotal(0);
-    setShowAnswer(false);
-    setQuizDone(false);
-  };
+  const filteredWords = useMemo(() => {
+    let words = levelWords;
 
-  const handleQuizAnswer = (correct) => {
-    const word = words[currentIndex];
-    setQuizTotal(quizTotal + 1);
-    if (correct) setQuizScore(quizScore + 1);
-    setShowAnswer(true);
-    recordVocabAnswer(`${levelId}_${word.id}`, correct);
-    setTimeout(() => {
-      if (currentIndex < words.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-        setShowAnswer(false);
+    // Search filter
+    if (search.trim()) {
+      const q = search.trim().toLowerCase();
+      words = words.filter(w =>
+        w.word.toLowerCase().includes(q) ||
+        (w.translation || '').toLowerCase().includes(q) ||
+        (w.example || '').toLowerCase().includes(q) ||
+        (w.exampleTranslation || '').toLowerCase().includes(q) ||
+        (w.topic || '').toLowerCase().includes(q) ||
+        (w.tags || []).some(t => t.toLowerCase().includes(q)) ||
+        (w.article || '').toLowerCase().includes(q)
+      );
+    }
+
+    // Part of speech filter
+    if (posFilter !== 'all') {
+      if (posFilter === 'noun') {
+        words = words.filter(w => wordPos(w) === 'noun');
+      } else if (posFilter === 'verb') {
+        words = words.filter(w => wordPos(w) === 'verb');
+      } else if (posFilter === 'adjective') {
+        words = words.filter(w => wordPos(w) === 'adjective' || wordPos(w) === 'adj');
+      } else if (posFilter === 'adverb') {
+        words = words.filter(w => wordPos(w) === 'adverb');
+      } else if (posFilter === 'phrase') {
+        words = words.filter(w => wordPos(w) === 'phrase');
       } else {
-        setQuizDone(true);
-        updateLevelProgress(levelId, 'vocab', { date: new Date().toISOString(), score: quizScore + (correct ? 1 : 0), total: words.length });
+        words = words.filter(w => {
+          const p = wordPos(w);
+          return p !== 'noun' && p !== 'verb' && p !== 'adjective' && p !== 'adj' && p !== 'adverb' && p !== 'phrase';
+        });
       }
-    }, 800);
-  };
+    }
+
+    // Medical filter
+    if (medicalOnly) {
+      words = words.filter(w => isMedicalWord(w));
+    }
+
+    // Lesson filter
+    if (lessonFilter !== 'all') {
+      words = words.filter(w => w.lessonId === lessonFilter);
+    }
+
+    return words;
+  }, [levelWords, search, posFilter, medicalOnly, lessonFilter]);
+
+  // Unique lessons for the lesson filter (within selected level)
+  const lessons = useMemo(() => {
+    const set = new Set();
+    levelWords.forEach(w => { if (w.lessonId) set.add(w.lessonId); });
+    return [...set].sort();
+  }, [levelWords]);
 
   const s = {
     card: { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' },
     btn: { padding: '0.6rem 1.2rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 500 },
     btnPrimary: { padding: '0.6rem 1.2rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem' },
     tag: { display: 'inline-block', padding: '0.2rem 0.6rem', borderRadius: '9999px', fontSize: '0.75rem', background: 'var(--bg-secondary)', color: 'var(--text-secondary)' },
+    input: { width: '100%', padding: '0.6rem 0.8rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.9rem', outline: 'none' },
+    select: { padding: '0.5rem 0.6rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.8rem', outline: 'none', cursor: 'pointer', minWidth: '80px' },
+    filterBtn: (active) => ({
+      padding: '0.4rem 0.8rem', borderRadius: '6px', border: active ? '1px solid var(--accent)' : '1px solid var(--border)',
+      background: active ? 'rgba(0,240,255,0.1)' : 'var(--bg-hover)',
+      color: active ? 'var(--accent)' : 'var(--text-secondary)',
+      cursor: 'pointer', fontSize: '0.75rem', fontWeight: active ? 600 : 400,
+    }),
   };
 
-  // Browse mode
-  if (mode === 'browse') {
-    const word = words[currentIndex];
-    const mastery = getVocabMastery(`${levelId}_${word.id}`);
-    return (
-      <LevelLock levelId={levelId}>
-      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-          <div>
-            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--accent)' }}>{levelId} Vocabulary</h2>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{words.length} words</span>
-          </div>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button style={s.btn} onClick={() => setCurrentIndex(Math.floor(Math.random() * words.length))}><Shuffle size={14} style={{ marginRight: '0.4rem' }} />Random</button>
-            <button style={s.btnPrimary} onClick={startQuiz}><Brain size={14} style={{ marginRight: '0.4rem' }} />Start Quiz</button>
-          </div>
-        </div>
-
-        <div style={s.card}>
-          <div style={{ textAlign: 'center', padding: '1.5rem 0' }}>
-            <h3 style={{ fontSize: '2rem', fontWeight: 700, margin: 0 }}>{word.word}</h3>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '0.5rem 0' }}>{word.pos}</p>
-            {!showAnswer ? (
-              <button style={{ ...s.btn, marginTop: '1rem' }} onClick={() => setShowAnswer(true)}>Show Answer</button>
-            ) : (
-              <div style={{ marginTop: '1rem' }}>
-                <p style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent)' }}>{word.translation}</p>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>"{word.example}"</p>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>Topic: {word.topic}</p>
-                
-                {/* Mastery display */}
-                {mastery.mastered && <p style={{ color: '#22c55e', fontSize: '0.85rem', marginTop: '0.75rem' }}>✓ Mastered ({mastery.correct} correct)</p>}
-                {!mastery.mastered && mastery.correct + mastery.incorrect > 0 && (
-                  <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.75rem' }}>
-                    Progress: {mastery.correct} ✓ / {mastery.incorrect} ✗
-                  </p>
-                )}
-                <button style={{ ...s.btn, marginTop: '1rem' }} onClick={() => { setCurrentIndex((currentIndex + 1) % words.length); setShowAnswer(false); }}>Next Word →</button>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.25rem', flexWrap: 'wrap' }}>
-          {words.map((w, idx) => (
-            <button key={w.id} onClick={() => { setCurrentIndex(idx); setShowAnswer(false); }}
-              style={{
-                width: '2rem', height: '2rem', borderRadius: '4px', border: '1px solid var(--border)',
-                background: idx === currentIndex ? 'var(--accent)' : 'var(--bg-secondary)',
-                color: idx === currentIndex ? '#000' : 'var(--text-muted)',
-                fontSize: '0.75rem', cursor: 'pointer',
-              }}>{idx + 1}</button>
-          ))}
-        </div>
-      </div>
-    </LevelLock>
-    );
-  }
-
-  // Quiz mode
   if (mode === 'quiz') {
+    const words = (vocabData[levelId] || []);
+
+    const startQuiz = () => {
+      setCurrentIndex(0);
+      setQuizScore(0);
+      setQuizTotal(0);
+      setShowAnswer(false);
+      setQuizDone(false);
+    };
+
     if (quizDone) {
       return (
         <LevelLock levelId={levelId}>
@@ -179,4 +261,227 @@ export default function VocabularyPage() {
       </LevelLock>
     );
   }
+
+  // Browse mode with search and filters
+  const words = (vocabData[levelId] || []);
+
+  if (words.length === 0) {
+    return (
+      <LevelLock levelId={levelId}>
+      <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '600px', margin: '0 auto' }}>
+        <p style={{ color: 'var(--text-muted)' }}>No vocabulary yet for {levelId}</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>Add words to germanVocabulary.json with level field set to {levelId}</p>
+        <Link to={`/level/${levelId}`} style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem', marginTop: '1rem', display: 'inline-block' }}>Back</Link>
+      </div>
+      </LevelLock>
+    );
+  }
+
+  const handleQuizAnswer = (correct) => {
+    const word = words[currentIndex];
+    setQuizTotal(quizTotal + 1);
+    if (correct) setQuizScore(quizScore + 1);
+    setShowAnswer(true);
+    recordVocabAnswer(`${levelId}_${word.id}`, correct);
+    setTimeout(() => {
+      if (currentIndex < words.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+        setShowAnswer(false);
+      } else {
+        setQuizDone(true);
+        updateLevelProgress(levelId, 'vocab', { date: new Date().toISOString(), score: quizScore + (correct ? 1 : 0), total: words.length });
+      }
+    }, 800);
+  };
+
+  // Use the filtered list for browsing
+  const browseWords = filteredWords;
+  const totalWords = levelWords.length;
+
+  return (
+    <LevelLock levelId={levelId}>
+    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '1rem' }}>
+      {/* Header */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <div>
+          <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--accent)' }}>
+            {levelId} Vocabulary
+          </h2>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+            {words.length} words
+          </span>
+        </div>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button style={s.btn} onClick={() => setCurrentIndex(Math.floor(Math.random() * words.length))}>
+            <Shuffle size={14} style={{ marginRight: '0.4rem' }} />Random
+          </button>
+          <button style={s.btnPrimary} onClick={() => setMode('quiz')}>
+            <Brain size={14} style={{ marginRight: '0.4rem' }} />Start Quiz
+          </button>
+        </div>
+      </div>
+
+      {/* Search bar */}
+      <div style={{ marginBottom: '0.75rem' }}>
+        <div style={{ position: 'relative' }}>
+          <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+          <input
+            type="text"
+            placeholder="Search by German, English, topic, or example..."
+            value={search}
+            onChange={e => { setSearch(e.target.value); setCurrentIndex(0); }}
+            style={{ ...s.input, paddingLeft: '2.2rem' }}
+          />
+          {search && (
+            <button
+              onClick={() => setSearch('')}
+              style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}
+            >
+              <X size={16} />
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Filters row */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
+        <Filter size={14} style={{ color: 'var(--text-muted)' }} />
+
+        {/* Level filter */}
+        <select
+          value={levelFilter}
+          onChange={e => { setLevelFilter(e.target.value); setCurrentIndex(0); }}
+          style={s.select}
+        >
+          <option value="all">All Levels</option>
+          {LEVELS.map(l => (
+            <option key={l} value={l}>{l} ({(vocabData[l] || []).length})</option>
+          ))}
+        </select>
+
+        {/* Part of speech filter */}
+        <select
+          value={posFilter}
+          onChange={e => { setPosFilter(e.target.value); setCurrentIndex(0); }}
+          style={s.select}
+        >
+          {POS_FILTERS.map(p => (
+            <option key={p} value={p}>{p === 'all' ? 'All Types' : p.charAt(0).toUpperCase() + p.slice(1)}</option>
+          ))}
+        </select>
+
+        {/* Medical toggle */}
+        <button
+          onClick={() => { setMedicalOnly(!medicalOnly); setCurrentIndex(0); }}
+          style={s.filterBtn(medicalOnly)}
+        >
+          {medicalOnly ? '✓ ' : ''}Medical
+        </button>
+
+        {/* Lesson filter (only when a specific level is selected) */}
+        {levelFilter !== 'all' && lessons.length > 0 && (
+          <select
+            value={lessonFilter}
+            onChange={e => { setLessonFilter(e.target.value); setCurrentIndex(0); }}
+            style={s.select}
+          >
+            <option value="all">All Lessons</option>
+            {lessons.map(lid => (
+              <option key={lid} value={lid}>{lid}</option>
+            ))}
+          </select>
+        )}
+      </div>
+
+      {/* Result count */}
+      <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+        Showing {browseWords.length} of {totalWords} words
+        {search && ` (filtered by "${search}")`}
+        {medicalOnly && ' (medical only)'}
+      </p>
+
+      {/* No results state */}
+      {browseWords.length === 0 ? (
+        <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
+          <X size={32} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>No vocabulary found for this search/filter.</p>
+          <button
+            style={{ ...s.btn, marginTop: '1rem' }}
+            onClick={() => { setSearch(''); setPosFilter('all'); setMedicalOnly(false); setLevelFilter('all'); setLessonFilter('all'); }}
+          >
+            Clear All Filters
+          </button>
+        </div>
+      ) : (
+        <>
+          {/* Word list */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
+            {browseWords.slice(0, 100).map((word, idx) => {
+              const { display, article } = displayWord(word);
+              const isNoun = wordPos(word) === 'noun';
+              const mastery = getVocabMastery(`${word._level}_${word.id}`);
+              return (
+                <div key={word.id} style={s.card}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
+                    <div style={{ flex: 1 }}>
+                      {/* Word + article for nouns */}
+                      <div style={{ fontSize: '1.1rem', fontWeight: 700 }}>
+                        {isNoun && article && (
+                          <span style={{ color: word.article === 'der' ? '#ef4444' : word.article === 'die' ? '#3b82f6' : word.article === 'das' ? '#22c55e' : 'var(--text-muted)', fontWeight: 400, marginRight: '0.3rem' }}>
+                            {article}
+                          </span>
+                        )}
+                        <span style={{ color: 'var(--text-primary)' }}>{display}</span>
+                        {isNoun && word.plural != null && word.plural !== '' && (
+                          <span style={{ color: 'var(--text-muted)', fontWeight: 400, fontSize: '0.85rem', marginLeft: '0.3rem' }}>
+                            ({word.plural})
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Translation */}
+                      <div style={{ fontSize: '0.9rem', color: 'var(--accent)', marginTop: '0.2rem' }}>
+                        {word.translation}
+                      </div>
+
+                      {/* Example */}
+                      {word.example && word.exampleTranslation && (
+                        <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '0.3rem', fontStyle: 'italic' }}>
+                          "{word.example}" — {word.exampleTranslation}
+                        </div>
+                      )}
+
+                      {/* Topic / tags */}
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginTop: '0.4rem' }}>
+                        {word.topic && <span style={s.tag}>{word.topic}</span>}
+                        {wordPos(word) !== 'other' && <span style={{ ...s.tag, background: 'rgba(0,240,255,0.08)', color: 'var(--accent)' }}>{wordPos(word)}</span>}
+                        {word.lessonId && <span style={{ ...s.tag, background: 'rgba(139,92,246,0.08)', color: '#a78bfa' }}>{word.lessonId}</span>}
+                      </div>
+                    </div>
+
+                    {/* Mastery indicator */}
+                    <div style={{ flexShrink: 0, textAlign: 'right' }}>
+                      {mastery.mastered && <CheckCircle size={18} color="#22c55e" />}
+                      {!mastery.mastered && mastery.correct + mastery.incorrect > 0 && (
+                        <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                          ✓{mastery.correct} ✗{mastery.incorrect}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Show count at bottom too */}
+          <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+            Showing {Math.min(browseWords.length, 100)} of {browseWords.length} words
+            {browseWords.length > 100 && ' (first 100 shown)'}
+          </p>
+        </>
+      )}
+    </div>
+    </LevelLock>
+  );
 }

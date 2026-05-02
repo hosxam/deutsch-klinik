@@ -2469,131 +2469,637 @@
         }
       }
     ],
-    "C1": {
-      "id": "exam_C1",
-      "name": "Goethe C1 Practice Exam",
-      "passScore": 75,
-      "sections": {
-        "Lesen": {
-          "timeLimit": 70,
-          "tasks": [
-            {
-              "id": "C1_ex_lesen_1",
-              "type": "mcq",
-              "question": "Text: 'Die Implementierung von Telemedizinlösungen in der Regelversorgung scheitert bislang nicht an technischen, sondern an regulatorischen Hürden. Während die technischen Voraussetzungen in den meisten Kliniken gegeben sind, fehlt es an einheitlichen Standards für die Datenübertragung und Vergütungsmodellen.' Woran scheitert die Telemedizin derzeit hauptsächlich?",
-              "options": [
-                "An der Technik",
-                "An regulatorischen Hürden",
-                "Am Personalmangel",
-                "Am Patientendesinteresse"
-              ],
-              "answer": "An regulatorischen Hürden"
-            },
-            {
-              "id": "C1_ex_lesen_2",
-              "type": "opinion-match",
-              "question": "Text: 'Der Autor gelangt zu der Überzeugung, dass das deutsche Gesundheitssystem zwar exzellente medizinische Ergebnisse vorweisen kann, jedoch dringend strukturelle Reformen benötigt, um auch zukünftig finanzierbar zu bleiben.' Welche Haltung vertritt der Autor?",
-              "options": [
-                "Das System ist perfekt",
-                "Das System braucht Reformen für die Zukunft",
-                "Das System ist nicht reformierbar",
-                "Das System sollte privatisiert werden"
-              ],
-              "answer": "Das System braucht Reformen für die Zukunft"
-            },
-            {
-              "id": "C1_ex_lesen_3",
-              "type": "true-false",
-              "question": "Text: 'Entgegen der weitverbreiteten Annahme, dass die stationäre Behandlung grundsätzlich überlegen sei, belegen neuere Studien, dass ambulante Operationen bei bestimmten Indikationen vergleichbare Ergebnisse erzielen.' Ambulante Operationen sind bei bestimmten Indikationen genauso gut wie stationäre.",
-              "answer": "true"
-            },
-            {
-              "id": "C1_ex_lesen_4",
-              "type": "gap-fill",
-              "question": "___ der fortschreitenden Digitalisierung müssen auch die Datenschutzbestimmungen angepasst werden.",
-              "options": [
-                "Angesichts",
-                "Trotz",
-                "Wegen",
-                "Während"
-              ],
-              "answer": "Angesichts"
-            },
-            {
-              "id": "C1_ex_lesen_5",
-              "type": "mcq",
-              "question": "Text: 'Die kontrovers geführte Diskussion um die Einführung der Widerspruchslösung bei der Organspende offenbart ein ethisches Dilemma zwischen der Autonomie des Einzelnen und dem Gemeinwohl.' Worum geht es in der Diskussion?",
-              "options": [
-                "Organspende und Ethik",
-                "Organspende und Kosten",
-                "Organspende und Medizin",
-                "Organspende und Religion"
-              ],
-              "answer": "Organspende und Ethik"
-            }
-          ]
-        },
-        "Hören": {
-          "timeLimit": 40,
-          "tasks": [
-            {
-              "id": "C1_ex_horen_1",
-              "type": "mcq",
-              "question": "Vortrag: 'Die Genomeditierung mittels CRISPR-Cas9 hat das Potenzial, genetisch bedingte Erkrankungen zu heilen. Allerdings sind die ethischen Implikationen dieser Technologie noch nicht abschließend geklärt. Insbesondere die Möglichkeit der Keimbahnveränderung wird kontrovers diskutiert.' Was wird in der Diskussion besonders kritisch gesehen?",
-              "options": [
-                "Die Kosten der Technologie",
-                "Die Keimbahnveränderung",
-                "Die fehlende Wirksamkeit",
-                "Die fehlende Zulassung"
-              ],
-              "answer": "Die Keimbahnveränderung"
-            },
-            {
-              "id": "C1_ex_horen_2",
-              "type": "true-false",
-              "question": "Podiumsdiskussion: 'Befürworter der Präzisionsmedizin argumentieren, dass individuelle Therapieansätze die Behandlungsergebnisse verbessern. Gegner verweisen auf die hohen Kosten.' Gegner der Präzisionsmedizin nennen die Kosten als Argument.",
-              "answer": "true"
-            },
-            {
-              "id": "C1_ex_horen_3",
-              "type": "mcq",
-              "question": "Interview: 'Der Gesundheitsökonom empfiehlt eine stärkere Verzahnung von ambulanter und stationärer Versorgung. Dadurch ließen sich Überkapazitäten abbauen und die Effizienz steigern. Allerdings fordert dies ein Umdenken aller Beteiligten.' Was ist die Empfehlung des Gesundheitsökonomen?",
-              "options": [
-                "Mehr Krankenhäuser bauen",
-                "Ambulante und stationäre Versorgung verzahnen",
-                "Weniger Ärzte ausbilden",
-                "Mehr ins Ausland verweisen"
-              ],
-              "answer": "Ambulante und stationäre Versorgung verzahnen"
-            }
-          ]
-        },
-        "Schreiben": {
-          "timeLimit": 75,
-          "tasks": [
-            {
-              "id": "C1_ex_schreiben_1",
-              "prompt": "In einem medizinischen Fachforum wird diskutiert: 'Sollte die Allgemeinmedizin in Deutschland aufgewertet werden, um den Hausärztemangel zu bekämpfen?' Nehmen Sie als Arzt Stellung. Gehen Sie auf verschiedene Aspekte ein und entwickeln Sie eine differenzierte Position.",
-              "wordLimit": 300
-            }
-          ]
-        },
-        "Sprechen": {
-          "prepTime": 180,
-          "tasks": [
-            {
-              "id": "C1_ex_sprech_1",
-              "prompt": "Halten Sie einen Vortrag zum Thema: 'Herausforderungen und Chancen der interkulturellen Kommunikation im Krankenhaus' (ca. 4 Minuten).",
-              "talkTime": 240
-            },
-            {
-              "id": "C1_ex_sprech_2",
-              "prompt": "Diskutieren Sie mit Ihrem Gesprächspartner: 'Sollte die medizinische Ausbildung in Deutschland reformiert werden?' Gehen Sie auf unterschiedliche Standpunkte ein und entwickeln Sie eine eigene Position.",
-              "talkTime": 240
-            }
-          ]
+    "C1": [
+      {
+        "id": "exam_C1_01",
+        "name": "Goethe C1 Practice Exam 1 - Health System & EBM",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex1_l1",
+                "type": "mcq",
+                "question": "Text: 'Die Krankenhausreform 2025 sieht eine grundlegende Neustrukturierung der stationaeren Versorgung vor. Leistungsgruppen ersetzen das bisherige Fallpauschalensystem. Kritiker befuerchten einen Verlust der wohnortnahen Versorgung in laendlichen Regionen.' Was ist das Hauptziel der Reform?",
+                "options": [
+                  "Mehr Fallpauschalen",
+                  "Leistungsgruppen statt Fallpauschalen",
+                  "Weniger Kliniken",
+                  "Mehr Privatpatienten"
+                ],
+                "answer": "Leistungsgruppen statt Fallpauschalen"
+              },
+              {
+                "id": "C1_ex1_l2",
+                "type": "true-false",
+                "question": "Text: 'Klinische Kommunikation umfasst nicht nur das Gespraech mit Patienten, sondern auch die interprofessionelle Zusammenarbeit. Das SBAR-Konzept hat sich als Standard fuer die strukturierte Uebergabe etabliert.' Das SBAR-Konzept wird fuer die Patientenaufklaerung verwendet.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex1_l3",
+                "type": "opinion-match",
+                "question": "Text: 'Der Leitlinienautor argumentiert: Randomisierte kontrollierte Studien sind der Goldstandard der Evidenz, doch ihre Uebertragbarkeit in den klinischen Alltag ist oft eingeschraenkt. Real-World-Evidence aus Registerdaten gewinnt daher zunehmend an Bedeutung.' Was ist die Position des Autors?",
+                "options": [
+                  "RCTs sind unbrauchbar",
+                  "Real-World-Evidence ersetzt RCTs komplett",
+                  "RCTs sind Goldstandard, Real-World-Evidence ergaenzt",
+                  "Registerdaten sind unzuverlaessig"
+                ],
+                "answer": "RCTs sind Goldstandard, Real-World-Evidence ergaenzt"
+              },
+              {
+                "id": "C1_ex1_l4",
+                "type": "mcq",
+                "question": "Text: 'Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpraeferenzen.' Welche drei Komponenten gehoeren zur EBM?",
+                "options": [
+                  "Evidenz, Erfahrung, Patientenwunsch",
+                  "Evidenz, Kosten, Effizienz",
+                  "Erfahrung, Routine, Hierarchie",
+                  "Patientenwunsch, Kosten, Richtlinien"
+                ],
+                "answer": "Evidenz, Erfahrung, Patientenwunsch"
+              },
+              {
+                "id": "C1_ex1_l5",
+                "type": "gap-fill",
+                "question": "Die Implementierung neuer Leitlinien erfordert ein ___ Fortbildungskonzept fuer alle Mitarbeiter.",
+                "options": [
+                  "umfassendes",
+                  "umfassender",
+                  "umfassenden",
+                  "umfassende"
+                ],
+                "answer": "umfassendes"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "C1_ex1_h1",
+                "type": "mcq",
+                "question": "Vortrag: 'Die Einfuehrung der Leistungsgruppen wird kontrovers diskutiert. Einerseits sollen sie Fehlanreize beseitigen, andererseits fuerchten kleine Haeuser um ihr Ueberleben.' Was soll verbessert werden?",
+                "options": [
+                  "Rentabilitaet",
+                  "Behandlungsqualitaet",
+                  "Patientenzufriedenheit",
+                  "Arztdichte"
+                ],
+                "answer": "Behandlungsqualitaet"
+              },
+              {
+                "id": "C1_ex1_h2",
+                "type": "true-false",
+                "question": "Interview: 'EBM bedeutet nicht, dass Leitlinien sklavisch befolgt werden muessen. Sie sind Entscheidungshilfen, nicht Entscheidungsersatz.' Leitlinien sind in der EBM verbindliche Vorschriften.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex1_h3",
+                "type": "mcq",
+                "question": "Diskussion: 'Die Fehlerkultur muss verbessert werden. Ein CIRS waere ein erster Schritt. Fehler muessen offen angesprochen werden koennen.' Was schlaegt der Redner vor?",
+                "options": [
+                  "Mehr Fortbildungen",
+                  "CIRS-System",
+                  "Mehr Personal",
+                  "Strengere Kontrollen"
+                ],
+                "answer": "CIRS-System"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex1_w1",
+                "prompt": "In einer medizinischen Fachzeitschrift lesen Sie einen Artikel ueber die Krankenhausreform und die neue Leistungsgruppen-Systematik. Schreiben Sie einen Leserbrief. Nehmen Sie Stellung zur geplanten Reform: Chancen, Risiken und Anpassungsvorschlaege.",
+                "wordLimit": 250
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "C1_ex1_s1",
+                "prompt": "Prassentieren Sie die Vor- und Nachteile der neuen Leistungsgruppen im Krankenhauswesen aus Sicht eines Klinikarztes.",
+                "talkTime": 180
+              },
+              {
+                "id": "C1_ex1_s2",
+                "prompt": "Diskutieren Sie: Inwiefern hat die evidenzbasierte Medizin die aerztliche Praxis veraendert, und wo stoesst sie an ihre Grenzen?",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "exam_C1_02",
+        "name": "Goethe C1 Practice Exam 2 - Ethics & Resource Allocation",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex2_l1",
+                "type": "mcq",
+                "question": "Text: 'Ethische Entscheidungen am Lebensende stellen Aerzte vor Herausforderungen. Die Patientenverfuegung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfuegung muessen Angehoerige im mutmasslichen Willen entscheiden.' Was gilt bei fehlender Patientenverfuegung?",
+                "options": [
+                  "Der Arzt entscheidet allein",
+                  "Angehoerige entscheiden im mutmasslichen Willen",
+                  "Es wird immer maximal therapiert",
+                  "Das Krankenhaus entscheidet"
+                ],
+                "answer": "Angehoerige entscheiden im mutmasslichen Willen"
+              },
+              {
+                "id": "C1_ex2_l2",
+                "type": "true-false",
+                "question": "Text: 'Das Prinzip der Patientenautonomie ist im Patientenrechtegesetz verankert. Es umfasst das Recht auf informierte Einwilligung, Akteneinsicht und Zweitmeinung.' Das Patientenrechtegesetz beinhaltet kein Recht auf Zweitmeinung.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex2_l3",
+                "type": "opinion-match",
+                "question": "Text: 'Ein Gesundheitsoekonom fordert: Angesichts knapper Ressourcen muessen Priorisierungen offen und transparent diskutiert werden. Rationierung hinter verschlossenen Tueren ist ethisch nicht vertretbar.' Was fordert der Oekonom?",
+                "options": [
+                  "Rationierung im Geheimen",
+                  "Transparente Priorisierungsdiskussion",
+                  "Mehr Geld ins System pumpen",
+                  "Keine Priorisierungen"
+                ],
+                "answer": "Transparente Priorisierungsdiskussion"
+              },
+              {
+                "id": "C1_ex2_l4",
+                "type": "mcq",
+                "question": "Text: 'Die Zuteilung von Intensivbetten warf ethische Fragen auf. Die DIVI-Leitlinie definierte: klinische Erfolgsaussicht, kurzfristige Letalitaet, Patientenwille. Keine Rolle spielten Alter, Behinderung oder sozialer Status.' Welche Kriterien waren NICHT Teil der DIVI-Leitlinie?",
+                "options": [
+                  "Klinische Erfolgsaussicht",
+                  "Patientenwille",
+                  "Alter und Behinderung",
+                  "Kurzfristige Letalitaet"
+                ],
+                "answer": "Alter und Behinderung"
+              },
+              {
+                "id": "C1_ex2_l5",
+                "type": "gap-fill",
+                "question": "Die Ressourcenallokation im Gesundheitswesen ist eine ___ Herausforderung.",
+                "options": [
+                  "ethisch-oekonomische",
+                  "ethische-oekonomischer",
+                  "ethisch-oekonomischer",
+                  "ethischen-oekonomischen"
+                ],
+                "answer": "ethisch-oekonomische"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "C1_ex2_h1",
+                "type": "mcq",
+                "question": "Ethikvorlesung: 'Vier Prinzipien nach Beauchamp und Childress: Autonomie, Schadensvermeidung, Fuersorge, Gerechtigkeit.' Welches gehoert NICHT dazu?",
+                "options": [
+                  "Autonomie",
+                  "Schadensvermeidung",
+                  "Kosteneffizienz",
+                  "Gerechtigkeit"
+                ],
+                "answer": "Kosteneffizienz"
+              },
+              {
+                "id": "C1_ex2_h2",
+                "type": "true-false",
+                "question": "Patientenberatung: 'Die Verfuegung ueber das Lebensende ist Ausdruck von Autonomie. Niemand muss gegen seinen Willen behandelt werden.' Autonomie bedeutet auch, Massnahmen abzulehnen.",
+                "answer": "true"
+              },
+              {
+                "id": "C1_ex2_h3",
+                "type": "mcq",
+                "question": "Diskussion: 'Die Triage auf der ITS war traumatisch. Kriterien: Erfolgsaussicht und Patientenwille. Alter oder Behinderung waren ausgeschlossen.' Welche Kriterien waren massgeblich?",
+                "options": [
+                  "Alter und Status",
+                  "Erfolgsaussicht und Patientenwille",
+                  "Versicherungsstatus",
+                  "Angehoerigenwunsch"
+                ],
+                "answer": "Erfolgsaussicht und Patientenwille"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex2_w1",
+                "prompt": "Ihr Krankenhaus plant ein Ethikkomitee. Schreiben Sie ein Konzeptpapier an die Geschaeftsfuehrung: Notwendigkeit eines Ethikkomitees, dessen Zusammensetzung und Aufgaben.",
+                "wordLimit": 250
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "C1_ex2_s1",
+                "prompt": "Prassentieren Sie ein Fallbeispiel, in dem ethische Prinzipien in Konflikt geraten sind, und erklaeren Sie Ihre Loesung.",
+                "talkTime": 180
+              },
+              {
+                "id": "C1_ex2_s2",
+                "prompt": "Diskutieren Sie: Sollte das Alter bei der Zuteilung knapper medizinischer Ressourcen eine Rolle spielen duerfen?",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "exam_C1_03",
+        "name": "Goethe C1 Practice Exam 3 - Digital Medicine & AI",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex3_l1",
+                "type": "mcq",
+                "question": "Text: 'KI-gestuetzte Diagnosesysteme zeigen in radiologischen Studien eine mit Fachaerzten vergleichbare Sensitivitaet. Allerdings bleibt die Black-Box-Problematik: Entscheidungswege der KI sind oft nicht nachvollziehbar.' Welches Problem wird beschrieben?",
+                "options": [
+                  "Zu geringe Sensitivitaet",
+                  "Fehlende Nachvollziehbarkeit",
+                  "Zu hohe Kosten",
+                  "Mangelnde Verfuegbarkeit"
+                ],
+                "answer": "Fehlende Nachvollziehbarkeit"
+              },
+              {
+                "id": "C1_ex3_l2",
+                "type": "true-false",
+                "question": "Text: 'Die DSGVO verlangt eine ausdrueckliche Einwilligung des Patienten fuer die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.' Die DSGVO erfordert eine ausdrueckliche Einwilligung fuer Forschungsdaten.",
+                "answer": "true"
+              },
+              {
+                "id": "C1_ex3_l3",
+                "type": "opinion-match",
+                "question": "Text: 'Ein Gesundheitsinformatiker argumentiert: Die Digitalisierung wird die Rolle des Arztes veraendern vom Wissensvermittler zum Navigator durch die Informationsflut.' Wie sieht der Informatiker die zukuenftige Arzrolle?",
+                "options": [
+                  "Der Arzt wird ueberfluessig",
+                  "Der Arzt wird zum Navigator",
+                  "Die Digitalisierung aendert nichts",
+                  "Patienten brauchen keine Aerzte"
+                ],
+                "answer": "Der Arzt wird zum Navigator"
+              },
+              {
+                "id": "C1_ex3_l4",
+                "type": "mcq",
+                "question": "Text: 'Die ePA soll fuer alle gesetzlich Versicherten eingefuehrt werden. Patienten bestimmen selbst, welche Daten sichtbar sind. Aerzte muessen sie nutzen, Patienten haben Widerspruchsrecht.' Haben Patienten ein Widerspruchsrecht?",
+                "options": [
+                  "Ja",
+                  "Nein, Pflicht",
+                  "Nur privat Versicherte",
+                  "Nur bestimmte Daten"
+                ],
+                "answer": "Ja"
+              },
+              {
+                "id": "C1_ex3_l5",
+                "type": "gap-fill",
+                "question": "Die ___ von Gesundheitsdaten in der Cloud erfordert hoechste Sicherheitsstandards.",
+                "options": [
+                  "Speicherung",
+                  "Speichern",
+                  "Speicher",
+                  "Gespeicherte"
+                ],
+                "answer": "Speicherung"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "C1_ex3_h1",
+                "type": "mcq",
+                "question": "Vortrag: 'KI in der Radiologie erreicht ueber 90 Prozent Treffsicherheit bei Lungenrundherden. Dennoch duerfen Systeme nur assistieren. Die Verantwortung traegt der Radiologe.' Wer traegt die Verantwortung?",
+                "options": [
+                  "KI-Hersteller",
+                  "Radiologe",
+                  "Krankenhaustraeger",
+                  "Gesetzgeber"
+                ],
+                "answer": "Radiologe"
+              },
+              {
+                "id": "C1_ex3_h2",
+                "type": "true-false",
+                "question": "Datenschutzbelehrung: 'Die Verarbeitung Ihrer Daten zu Forschungszwecken bedarf Ihrer Einwilligung. Sie koennen jederzeit widerrufen.' Die Einwilligung kann nicht widerrufen werden.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex3_h3",
+                "type": "mcq",
+                "question": "Podcast: 'Telemedizin zeigt Potenzial in Dermatologie, Psychiatrie und Nachsorge. Herausforderung bleibt die digitale Kompetenz aelterer Patienten.' In welchen Bereichen zeigt Telemedizin Potenzial?",
+                "options": [
+                  "Chirurgie",
+                  "Dermatologie, Psychiatrie, Nachsorge",
+                  "Notfallmedizin",
+                  "Palliativmedizin"
+                ],
+                "answer": "Dermatologie, Psychiatrie, Nachsorge"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex3_w1",
+                "prompt": "Sie nehmen an einer Tagung 'Digitalisierung in der Medizin' teil. Verfassen Sie einen Bericht fuer die Klinikzeitung: KI in der Radiologie, Telemedizin, Datenschutz. Geben Sie eine persoenliche Bewertung.",
+                "wordLimit": 250
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "C1_ex3_s1",
+                "prompt": "Prassentieren Sie Chancen und Risiken von KI-gestuetzten Diagnosesystemen aus klinischer Perspektive.",
+                "talkTime": 180
+              },
+              {
+                "id": "C1_ex3_s2",
+                "prompt": "Diskutieren Sie: Fuehrt die Digitalisierung im Gesundheitswesen zu einer Entfremdung zwischen Arzt und Patient?",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "exam_C1_04",
+        "name": "Goethe C1 Practice Exam 4 - Clinical Communication & FSP",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex4_l1",
+                "type": "mcq",
+                "question": "Text: 'Der Arztbrief muss enthalten: Diagnose, durchgefuehrte Massnahmen, Entlassungsmedikation, weiteres Procedere und Epikrise.' Welcher Bestandteil gehoert NICHT zu den Pflichtangaben?",
+                "options": [
+                  "Diagnose",
+                  "Medikation",
+                  "Krankenkasse",
+                  "Epikrise"
+                ],
+                "answer": "Krankenkasse"
+              },
+              {
+                "id": "C1_ex4_l2",
+                "type": "true-false",
+                "question": "Text: 'Die FSP prueft die kommunikative Kompetenz in typischen aerztlichen Gespraechssituationen: Anamnese, Aufklaerung, Dokumentation.' Die FSP prueft ausschliesslich schriftliche Faehigkeiten.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex4_l3",
+                "type": "opinion-match",
+                "question": "Text: 'Ein Pruefer stellt fest: Die groesste Huerde in der FSP ist nicht die Grammatik, sondern die pragmatische Angemessenheit.' Was ist die groesste Herausforderung?",
+                "options": [
+                  "Grammatikfehler",
+                  "Fachwortschatz",
+                  "Situationsgerechte Kommunikation",
+                  "Sprechgeschwindigkeit"
+                ],
+                "answer": "Situationsgerechte Kommunikation"
+              },
+              {
+                "id": "C1_ex4_l4",
+                "type": "mcq",
+                "question": "Text: 'Die strukturierte Patientenuebergabe nach SBAR: Situation, Background, Assessment, Recommendation.' Wofuer steht das A?",
+                "options": [
+                  "Anamnese",
+                  "Assessment",
+                  "Anweisung",
+                  "Aufklaerung"
+                ],
+                "answer": "Assessment"
+              },
+              {
+                "id": "C1_ex4_l5",
+                "type": "gap-fill",
+                "question": "Die ___ des Arztbriefes erfolgt innerhalb von 24 Stunden nach Entlassung.",
+                "options": [
+                  "Erstellung",
+                  "Erstelle",
+                  "Erstellte",
+                  "Erstellens"
+                ],
+                "answer": "Erstellung"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "C1_ex4_h1",
+                "type": "mcq",
+                "question": "Simulation: 'Guten Tag, Herr Mueller. Ich bin Dr. Schmidt. Ich klaere Sie vor Ihrer morgigen laparoskopischen Cholezystektomie auf.' Welcher Eingriff steht bevor?",
+                "options": [
+                  "Magenspiegelung",
+                  "Gallenblasenentfernung",
+                  "Darmspiegelung",
+                  "Knieoperation"
+                ],
+                "answer": "Gallenblasenentfernung"
+              },
+              {
+                "id": "C1_ex4_h2",
+                "type": "true-false",
+                "question": "SBAR-Uebergabe: 'Situation: Patient Zimmermann, Hufteingriff gestern. Background: Z. n. Knie-TEP vor drei Jahren. Assessment: Kreislauf stabil. Recommendation: Nachblutungskontrolle.' Der Patient hatte eine Knie-TEP vor zwei Jahren.",
+                "answer": "false"
+              },
+              {
+                "id": "C1_ex4_h3",
+                "type": "mcq",
+                "question": "Telefonat: 'Ueberweisung fuer Herrn Schuster mit Verdacht auf kolorektales Karzinom zum Gastroenterologen.' Was ist der Ueberweisungsgrund?",
+                "options": [
+                  "Magenulkus",
+                  "Kolorektales Karzinom",
+                  "Vorsorge",
+                  "Zweite Meinung"
+                ],
+                "answer": "Kolorektales Karzinom"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex4_w1",
+                "prompt": "Schreiben Sie einen Arztbrief fuer einen 58-jaehrigen Patienten nach laparoskopischer Cholezystektomie: Aufnahmediagnose, OP, Verlauf, Entlassungsmedikation, Procedere.",
+                "wordLimit": 250
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "C1_ex4_s1",
+                "prompt": "Fuehren Sie eine Patientenaufklaerung vor einer laparoskopischen Cholezystektomie durch: Eingriff, Risiken, postoperatives Verhalten.",
+                "talkTime": 180
+              },
+              {
+                "id": "C1_ex4_s2",
+                "prompt": "Diskutieren Sie: Welche Rolle spielt die aerztliche Dokumentation fuer die Patientensicherheit, und welche typischen Fehler beobachten Sie?",
+                "talkTime": 180
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "exam_C1_05",
+        "name": "Goethe C1 Practice Exam 5 - Public Health & Migration",
+        "passScore": 75,
+        "sections": {
+          "Lesen": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex5_l1",
+                "type": "mcq",
+                "question": "Text: 'Der aerztliche Fachkraeftemangel ist besonders in laendlichen Regionen spuerbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplaetze.' Welche Massnahmen werden ergriffen?",
+                "options": [
+                  "Weniger Studienplaetze",
+                  "Zuwanderung und mehr Studienplaetze",
+                  "Nur hoehere Gehaelter",
+                  "Keine Massnahmen"
+                ],
+                "answer": "Zuwanderung und mehr Studienplaetze"
+              },
+              {
+                "id": "C1_ex5_l2",
+                "type": "true-false",
+                "question": "Text: 'Interdisziplinaere Versorgung bedeutet, dass verschiedene Berufsgruppen gemeinsam einen Behandlungsplan erstellen. Studien zeigen, dass dies die Behandlungsqualitaet verbessert.' Interdisziplinaere Versorgung kann die Qualitaet verbessern.",
+                "answer": "true"
+              },
+              {
+                "id": "C1_ex5_l3",
+                "type": "opinion-match",
+                "question": "Text: 'Ein Experte fuer Migrationsmedizin argumentiert: Die Integration auslaendischer Aerzte ist kein einseitiger Anpassungsprozess. Das System profitiert von unterschiedlichen Perspektiven.' Wie bewertet der Experte den Beitrag?",
+                "options": [
+                  "Als Belastung",
+                  "Als Bereicherung",
+                  "Als notwendiges Uebel",
+                  "Als voruebergehend"
+                ],
+                "answer": "Als Bereicherung"
+              },
+              {
+                "id": "C1_ex5_l4",
+                "type": "mcq",
+                "question": "Text: 'Public Health umfasst organisierte Massnahmen zur Gesundheitsfoerderung der Bevoelkerung, im Unterschied zur kurativen Medizin.' Was ist der zentrale Unterschied?",
+                "options": [
+                  "Finanzierung",
+                  "Fokus auf Bevoelkerung statt Einzelnen",
+                  "Art der Behandlung",
+                  "Ausbildungsdauer"
+                ],
+                "answer": "Fokus auf Bevoelkerung statt Einzelnen"
+              },
+              {
+                "id": "C1_ex5_l5",
+                "type": "gap-fill",
+                "question": "Die ___ des oeffentlichen Gesundheitsdienstes erfordert ausreichende personelle Ausstattung.",
+                "options": [
+                  "Leistungsfaehigkeit",
+                  "Leistungsfaehiger",
+                  "Leistungsfaehige",
+                  "Leistungsfaehig"
+                ],
+                "answer": "Leistungsfaehigkeit"
+              }
+            ]
+          },
+          "Hören": {
+            "timeLimit": 30,
+            "tasks": [
+              {
+                "id": "C1_ex5_h1",
+                "type": "mcq",
+                "question": "Radiobeitrag: 'Etwa 12 Prozent aller Aerzte haben einen auslaendischen Abschluss. Meist aus Syrien, Rumaenien, Oesterreich.' Wie viel Prozent?",
+                "options": [
+                  "8%",
+                  "10%",
+                  "12%",
+                  "15%"
+                ],
+                "answer": "12%"
+              },
+              {
+                "id": "C1_ex5_h2",
+                "type": "true-false",
+                "question": "Teambesprechung: 'Herr Mueller kommt nach Pneumonie-Behandlung in die ambulante Versorgung. Ich schlage strukturierte Entlassungsplanung vor.' Die Planung soll den Uebergang verbessern.",
+                "answer": "true"
+              },
+              {
+                "id": "C1_ex5_h3",
+                "type": "mcq",
+                "question": "Vortrag: 'Soziale Determinanten: Einkommen, Bildung, Wohnverhaeltnisse. Menschen in benachteiligten Stadtteilen leben 5-7 Jahre kurzener.' Welche Determinanten werden genannt?",
+                "options": [
+                  "Genetik",
+                  "Einkommen, Bildung, Wohnverhaeltnisse",
+                  "Medikamente",
+                  "Krankheitserreger"
+                ],
+                "answer": "Einkommen, Bildung, Wohnverhaeltnisse"
+              }
+            ]
+          },
+          "Schreiben": {
+            "timeLimit": 60,
+            "tasks": [
+              {
+                "id": "C1_ex5_w1",
+                "prompt": "In Ihrer Klinik wird eine interkulturelle Sprechstunde fuer Migranten diskutiert. Stellungnahme an die Klinikleitung: Notwendigkeit, Barrieren, Umsetzungsvorschlaege.",
+                "wordLimit": 250
+              }
+            ]
+          },
+          "Sprechen": {
+            "prepTime": 120,
+            "tasks": [
+              {
+                "id": "C1_ex5_s1",
+                "prompt": "Prassentieren Sie Herausforderungen und Chancen der Integration auslaendischer Aerzte in das deutsche Gesundheitssystem.",
+                "talkTime": 180
+              },
+              {
+                "id": "C1_ex5_s2",
+                "prompt": "Diskutieren Sie: Sollte Public Health in der medizinischen Ausbildung einen hoeheren Stellenwert bekommen?",
+                "talkTime": 180
+              }
+            ]
+          }
         }
       }
-    }
+    ]
   }
 }

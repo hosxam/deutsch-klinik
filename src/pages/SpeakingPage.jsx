@@ -108,7 +108,7 @@ export default function SpeakingPage() {
       <div className="rounded-xl p-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <div className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>Level {levelId} | Prep: {prompt.prepTime}s | Talk: {prompt.talkTime}s</div>
         <h2 className="text-lg font-bold mb-2" style={{ color: 'var(--accent)' }}>{prompt.title}</h2>
-        <p className="text-sm mb-4">{prompt.prompt}</p>
+        <p className="text-sm mb-4 break-words">{prompt.prompt}</p>
         <p className="text-xs mb-4" style={{ color: 'var(--text-secondary)' }}>{prompt.instructions}</p>
 
         {/* Tips */}

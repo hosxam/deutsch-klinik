@@ -78,11 +78,13 @@ export default function ExamPage() {
     const sectionKey = sectionKeys[currentSection];
     const section = exam.sections[sectionKey];
     const tasks = section.tasks || [];
-    let s = 0;
-    tasks.forEach(t => {
-      if (answers[t.id] === t.answer) s++;
+    // Only count gradable tasks (those with an answer field)
+    const gradableTasks = tasks.filter(t => t.answer !== undefined && t.answer !== null);
+    let score = 0;
+    gradableTasks.forEach(t => {
+      if (answers[t.id] === t.answer) score++;
     });
-    const newScores = { ...scores, [sectionKey]: { score: s, total: tasks.length } };
+    const newScores = { ...scores, [sectionKey]: { score, total: gradableTasks.length } };
     setScores(newScores);
 
     if (currentSection < sectionKeys.length - 1) {
@@ -90,9 +92,9 @@ export default function ExamPage() {
       setAnswers({});
     } else {
       setTimerActive(false);
-      const total = Object.values(newScores).reduce((acc, s) => acc + s.score, 0);
-      const maxTotal = Object.values(newScores).reduce((acc, s) => acc + s.total, 0);
-      const pct = maxTotal > 0 ? Math.round((total / maxTotal) * 100) : 0;
+      const totalCorrect = Object.values(newScores).reduce((acc, s) => acc + s.score, 0);
+      const maxPossible = Object.values(newScores).reduce((acc, s) => acc + s.total, 0);
+      const pct = maxPossible > 0 ? Math.round((totalCorrect / maxPossible) * 100) : 0;
       setOverallScore(pct);
       setPhase('result');
 
@@ -372,7 +374,7 @@ export default function ExamPage() {
       <div className="space-y-4">
         {tasks.map(task => (
           <div key={task.id} className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-            <p className="text-sm mb-3">{task.prompt || task.question}</p>
+            <p className="text-sm mb-3 break-words">{task.prompt || task.question}</p>
             {task.talkTime && (
               <p className="text-xs mb-2" style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>
                 Talk time: ~{task.talkTime} seconds

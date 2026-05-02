@@ -4045,6 +4045,686 @@
       ],
       "level": "C1",
       "lessonId": "C1_lesson_14"
+    },
+    {
+      "id": "C1_speak_11",
+      "level": "C1",
+      "lessonId": "C1_lesson_2",
+      "title": "FSP: Akutes Abdomen",
+      "prompt": "Sie arbeiten als Assistenzarzt in der Notaufnahme. Ein 45-jaehriger Patient kommt mit starken Oberbauchschmerzen, UEbelkeit und Erbrechen. Der Blutdruck ist 90/60 mmHg. Stellen Sie den Fall Ihrer Oberaerztin vor. Nennen Sie Verdachtsdiagnose, Differenzialdiagnosen und Ihr weiteres Vorgehen.",
+      "instructions": "Simulieren Sie die Vorbereitung auf die FSP-Pruefung. Struktur: Patientenvorstellung, Symptome, Befunde, Verdachtsdiagnose, DD, geplante Diagnostik, Therapie.",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "Nutzen Sie die FSP-Struktur: Vorstellung > Symptome > Untersuchungsbefunde > Diagnose > DD > Procedere. Praeteritum und Fachvokabular.",
+      "usefulPhrases": [
+        "Der Patient stellte sich mit ... in der Notaufnahme vor.",
+        "Bei der klinischen Untersuchung zeigte sich ...",
+        "Differenzialdiagnostisch kommt ... in Betracht.",
+        "Ich wuerde folgende Diagnostik einleiten: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_12",
+      "level": "C1",
+      "lessonId": "C1_lesson_4",
+      "title": "Patientenberatung: OP-Risiken",
+      "prompt": "Ein 68-jaehriger Patient mit symptomatischer Gonarthrose benoetigt eine Knie-TEP (Totalendoprothese). Er hat Angst vor dem Eingriff, insbesondere vor Narkoserisiken. Informieren Sie ihn ueber den Eingriff, die Risiken und die Alternativen in verstaendlicher Sprache.",
+      "instructions": "Einfuehlsam, aber fachlich korrekt. Aufklaerung ueber typische und seltene Komplikationen. Nennen Sie konservative Alternativen. Geben Sie Zeit fuer Fragen.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Verstaendliche Sprache, aber Fachbegriffe erklaeren. KII fuer Hoeflichkeit und Abschwaechung. Empathische Formulierungen.",
+      "usefulPhrases": [
+        "Ich kann Ihren Wunsch bestens verstehen, dass Sie ...",
+        "Zu den moeglichen Komplikationen zaheln ...",
+        "Alternativ zur Operation koennten wir auch ...",
+        "Haben Sie noch Fragen, die ich beantworten soll?"
+      ]
+    },
+    {
+      "id": "C1_speak_13",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "title": "Ethikdiskussion: Therapietreue",
+      "prompt": "Ein Patient mit Typ-2-Diabetes und Hypertonie verweigert trotz mehrfaacher Beratung die Insulin-Therapie und moechte nur mit Homaopathie behandelt werden. Diskutieren Sie die ethische Spannung zwischen Patientenautonomie und aerztlichem Behandlungsauftrag.",
+      "instructions": "Abwaegung der ethischen Prinzipien. Wie weit geht die Therapiefreiheit? Wann wird die Nichtbehandlung zur Gefahr? Differenziertes Fazit.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Nutzen Sie die vier Prinzipien der Medizinethik (Autonomie, Benefizienz, Nicht-Schaden, Gerechtigkeit). KII fuer Abwaegungen.",
+      "usefulPhrases": [
+        "Aus ethischer Perspektive stehen hier ... im Konflikt.",
+        "Einerseits respektieren wir die Autonomie des Patienten ...",
+        "Andererseits sind wir als Aerzte dem Prinzip des Nicht-Schadens verpflichtet.",
+        "Eine moegliche Loesung waere ..."
+      ]
+    },
+    {
+      "id": "C1_speak_14",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "title": "Vortrag: Evidenzbasierte Medizin",
+      "prompt": "Halten Sie einen 4-minuetigen Vortrag ueber die Bedeutung der evidenzbasierten Medizin (EbM) im klinischen Alltag. Gehen Sie auf die drei Saeulen der EbM ein: externe Evidenz, klinische Expertise und Patientenpraeferenzen. Nennen Sie konkrete Beispiele.",
+      "instructions": "Eigenstaendiger Vortrag. Einleitung mit These. Hauptteil mit drei Saeulen. Klinische Beispiele. Kritisches Fazit.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Struktur: These > Saeulen 1-3 > Praxisbeispiele > Fazit. Nominalstil. Konnektoren fuer Struktur (zunaechst, darueber hinaus, abschliessend).",
+      "usefulPhrases": [
+        "Die evidenzbasierte Medizin stuetzt sich auf drei zentrale Saeulen: ...",
+        "Externe Evidenz allein ist jedoch nicht ausreichend ...",
+        "Ein Beispiel aus der taeglichen Praxis ist ...",
+        "Zusammenfassend laesst sich festhalten, dass ..."
+      ]
+    },
+    {
+      "id": "C1_speak_15",
+      "level": "C1",
+      "lessonId": "C1_lesson_9",
+      "title": "Interdisziplinaere Uebergabe",
+      "prompt": "Sie uebergeben eine 82-jaehrige Patientin (Z. n. Humerusfraktur, Diabetes, leichte Demenz) von der Unfallchirurgie an die Geriatrie. Fassen Sie den relevanten klinischen Verlauf, den aktuellen Stand und die offenen Punkte zusammen.",
+      "instructions": "Strukturierte Uebergabe nach SBAR (Situation, Background, Assessment, Recommendation). Vollstaendig, aber pragnant.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "SBAR-Struktur. Keine irrelevanten Details. Praeteritum fuer Verlauf. Klare Handlungsempfehlungen.",
+      "usefulPhrases": [
+        "Zur Situation: Die Patientin wurde vor sechs Tagen mit einer ... aufgenommen.",
+        "Zum Hintergrund: Relevant sind ...",
+        "Meine Einschaetzung: Die Wundheilung zeigt ...",
+        "Ich empfehle folgende weitere Schritte: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_16",
+      "level": "C1",
+      "lessonId": "C1_lesson_10",
+      "title": "Rollenspiel: Diagnostische Unsicherheit",
+      "prompt": "Einem Patienten mit unklaren Oberbauchbeschwerden konnten Sie nach umfangreicher Diagnostik (Gastroskopie, Sono, CT, Labor) keine eindeutige Ursache zuordnen. Erlaeutern Sie dem Patienten die Situation und besprechen Sie das weitere Vorgehen.",
+      "instructions": "Ehrliche, aber beruhigende Kommunikation. Erklaren Sie, was bereits ausgeschlossen wurde. Skizzieren Sie den weiteren Diagnosepfad. Geben Sie realistische Erwartungen.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "KII fuer vorsichtige Formulierungen (es koennte sich um ... handeln). Verstaendliche Sprache. Was-wurde-bereits-getan-Struktur.",
+      "usefulPhrases": [
+        "Die bisherigen Untersuchungen haben leider keine eindeutige Ursache gezeigt.",
+        "Wir konnten jedoch folgende ernste Erkrankungen ausschliessen: ...",
+        "Als naechste Schritte wuerde ich vorschlagen ...",
+        "Bitte melden Sie sich, wenn ..."
+      ]
+    },
+    {
+      "id": "C1_speak_17",
+      "level": "C1",
+      "lessonId": "C1_lesson_11",
+      "title": "Diskussion: KI in der Klinik",
+      "prompt": "Ihr Krankenhaus plant die Einfuehrung eines KI-gestuetzten Entscheidungsunterstuetzungssystems in der Notaufnahme. Diskutieren Sie mit Kollegen die Chancen und Risiken. Gehen Sie auf Diagnosegenauigkeit, Arbeitsentlastung, Haftungsfragen und die Rolle des Arztes ein.",
+      "instructions": "Sachliche Diskussion auf Fachniveau. Vor- und Nachteile abwaegen. Eigene Position entwickeln. Auf Gegenargumente eingehen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Indirekte Rede fuer Kritikpunkte. KII fuer Bewertungen. Strukturierte Argumentation mit Konnektoren.",
+      "usefulPhrases": [
+        "Ein wesentlicher Vorteil von KI-Systemen liegt in ...",
+        "Kritisch anzumerken ist jedoch ...",
+        "Aus haftungsrechtlicher Sicht stellt sich die Frage ...",
+        "Ich bin ueberzeugt, dass ..."
+      ]
+    },
+    {
+      "id": "C1_speak_18",
+      "level": "C1",
+      "lessonId": "C1_lesson_15",
+      "title": "Palliativgespraech: Angehoerige",
+      "prompt": "Ein 78-jaehriger Patient mit metastasiertem Pankreaskarzinom hat sich gegen eine weitere Chemotherapie entschieden. Die Tochter ist verzweifelt und moechte, dass 'alles getan wird'. Fuehren Sie ein Gespraech mit der Tochter ueber die Palliativversorgung.",
+      "instructions": "Empathisch, aber klar. Den Willen des Patienten respektieren. Ueber Palliativmoeglichkeiten aufklaeren. Der Tochter Raum fuer Emotionen geben.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Empathische Gespraechsfuehrung. Aktives Zuhoren zeigen. KII fuer sensible Formulierungen. Fachbegriffe der Palliativmedizin erklaeren.",
+      "usefulPhrases": [
+        "Ich kann Ihre Sorge um Ihren Vater sehr gut verstehen.",
+        "Die Entscheidung Ihres Vaters verdient unseren Respekt.",
+        "Wir koennen folgende palliativmedizinische Massnahmen anbieten: ...",
+        "Wir werden Ihren Vater bestmoeglich begleiten, das verspreche ich Ihnen."
+      ]
+    },
+    {
+      "id": "C1_speak_19",
+      "level": "C1",
+      "lessonId": "C1_lesson_16",
+      "title": "Fehlergespraech: Verspaetete Diagnose",
+      "prompt": "Bei einem Patienten mit Rueckenschmerzen wurde ein Wirbelsaeulenkarzinom erst nach vier Monaten diagnostiziert, da die initiale Bildgebung nicht ausreichend befundet wurde. Sie muessen das Gespraech mit dem Patienten fuehren.",
+      "instructions": "Offenlegung nach den Kriterien der aerztlichen Fehlerkultur. Sachlich, ehrlich, entschuldigend. Welche Konsequenzen hat die Verspaetung? Weiteres Vorgehen?",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "KII fuer Abschwaechung. Keine Schuldzuweisungen. Offenheit und Transparenz. Juristische Sorgfalt in der Wortwahl.",
+      "usefulPhrases": [
+        "Ich moechte mich zunaechst bei Ihnen entschuldigen, dass ...",
+        "Im Rahmen der Qualitaetssicherung haben wir folgendes festgestellt: ...",
+        "Diese Verzoegerung hatte voraussichtlich folgende Auswirkungen: ...",
+        "Wir werden folgende Massnahmen ergreifen, um ..."
+      ]
+    },
+    {
+      "id": "C1_speak_20",
+      "level": "C1",
+      "lessonId": "C1_lesson_17",
+      "title": "Vortrag: Aerztemangel",
+      "prompt": "In Deutschland fehlen bis 2030 voraussichtlich ueber 30.000 AErzte. Halten Sie einen Vortrag ueber die Ursachen des Aerztemangels, die Folgen fuer die Patientenversorgung und moegliche Loesungsstrategien aus Ihrer Perspektive als junger Arzt.",
+      "instructions": "Ursachenanalyse. Konkrete Folgen. Eigene Erfahrungen einbringen. Loesungsvorschlaege. Kritisches, aber konstruktives Fazit.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Vortragsstruktur: Einleitung mit Problemaufriss > Ursachen > Folgen > Loesungen > Fazit. Nominalstil, Konnektoren.",
+      "usefulPhrases": [
+        "Der Aerztemangel in Deutschland hat mehrere Ursachen: ...",
+        "Die Folgen fuer die Patientenversorgung zeigen sich in ...",
+        "Ein vielversprechender Ansatz waere ...",
+        "Abschliessend moechte ich betonen, dass ..."
+      ]
+    },
+    {
+      "id": "C1_speak_21",
+      "level": "C1",
+      "lessonId": "C1_lesson_18",
+      "title": "FSP: Verdacht auf Lungenembolie",
+      "prompt": "Sie sind Assistenzarzt in der Notaufnahme. Eine 55-jaehrige Patientin mit Z. n. Knie-TEP vor 10 Tagen kommt mit akuter Dyspnoe, Tachypnoe und Thoraxschmerz. Der D-Dimer ist erhoeht. Stellen Sie den Fall Ihrer Oberaerztin vor inklusive Verdachtsdiagnose und geplantem Procedere.",
+      "instructions": "Struktur: Patientenvorstellung, Anamnese, Symptome, klinische Untersuchung, Verdachtsdiagnose, geplante Diagnostik und Therapie. Praeteritum.",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "FSP-Struktur konsequent einhalten. Fachtermini (Lungenembolie, Tachypnoe, D-Dimer). Begruendung der Diagnostik (CT-Angio, Echokardiographie).",
+      "usefulPhrases": [
+        "Die Patientin stellte sich mit ploetzlich aufgetretener Dyspnoe vor.",
+        "Als Risikofaktor ist die Immobilisation nach Knie-TEP zu nennen.",
+        "Ich vermute eine Lungenembolie und wuerde folgende Diagnostik veranlassen: ...",
+        "Therapeutisch wuerde ich zunaechst eine Antikoagulation mit ... einleiten."
+      ]
+    },
+    {
+      "id": "C1_speak_22",
+      "level": "C1",
+      "lessonId": "C1_lesson_19",
+      "title": "Patientenberatung: Antikoagulation",
+      "prompt": "Ein 70-jaehriger Patient mit Vorhofflimmern benoetigt eine dauerhafte Antikoagulation mit Apixaban. Der Patient hat Bedenken wegen Blutungsrisiken, insbesondere nachdem sein Nachbar ein Magengeschwuer unter Marcumar entwickelt hat. Klaeren Sie den Patienten auf.",
+      "instructions": "Risiken und Nutzen gegenueberstellen. Vergleich der Antikoagulanzien. Blutungszeichen erklaeren. Therapietreue foerdern.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Verstaendliche Sprache, aber Fachbegriffe erklaeren. KII fuer Hoeflichkeit. Empathie zeigen. CHA2DS2-VASc-Score und HAS-BLED erwaehnen.",
+      "usefulPhrases": [
+        "Ich verstehe Ihre Bedenken, allerdings ueberwiegt bei Vorhofflimmern der Nutzen der Blutverduennung deutlich.",
+        "Das Risiko einer schweren Blutung liegt bei ...",
+        "Neuere Gerinnungshemmer wie Apixaban haben im Vergleich zu Marcumar ...",
+        "Worauf Sie achten sollten, sind folgende Blutungszeichen: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_23",
+      "level": "C1",
+      "lessonId": "C1_lesson_20",
+      "title": "Diskussion: Ressourcenverteilung",
+      "prompt": "In Ihrer Klinik soll die Intensivstation von 12 auf 8 Betten reduziert werden. Die Chirurgie fordert den Erhalt der Betten, die Verwaltung verweist auf Kostendruck. Diskutieren Sie diese Situation mit Kollegen. Waehrend Sie das Patientenschicksal erlautern und praktische Loesungen vorschlagen.",
+      "instructions": "Sachliche, strukturierte Diskussion. Medizinische und oekonomische Perspektive beruecksichtigen. Konkrete Loesungsvorschlaege.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "KII fuer Vorschlaege. Waehrend fuer Kontraste. Konnektoren fuer Argumentation. Betriebswirtschaftliche und medizinische Fachbegriffe.",
+      "usefulPhrases": [
+        "Aus medizinischer Sicht waere eine Reduktion der Intensivbetten problematisch, weil ...",
+        "Demgegenueber steht der oekonomische Druck, dem die Verwaltung ausgesetzt ist.",
+        "Ein moeglicher Kompromiss waere ...",
+        "Ich schlage vor, zunaechst eine Auslastungsanalyse durchzufuehren, um ..."
+      ]
+    },
+    {
+      "id": "C1_speak_24",
+      "level": "C1",
+      "lessonId": "C1_lesson_21",
+      "title": "Vortrag: Wissenschaftliche Redlichkeit",
+      "prompt": "Ein Kollege aus Ihrer Abteilung hat auffaellige Daten in einer kuerzlich publizierten Studie. Es besteht der Verdacht auf wissenschaftliches Fehlverhalten. Halten Sie einen Vortrag ueber die Grundsaetze der guten wissenschaftlichen Praxis, Fehlverhalten und dessen Konsequenzen.",
+      "instructions": "Definition guter wissenschaftlicher Praxis. Formen von Fehlverhalten (Fabrication, Falsification, Plagiarism). Konsequenzen. Praeventionsmassnahmen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Struktur: Grundsaetze > Fehlverhalten > Folgen > Praevention. Konjunktiv I fuer indirekte Rede. Nominalstil fuer Abstraktion.",
+      "usefulPhrases": [
+        "Die gute wissenschaftliche Praxis stuetzt sich auf folgende Grundsaetze: ...",
+        "Unter wissenschaftlichem Fehlverhalten versteht man ...",
+        "Die Konsequenzen reichen von ... bis zu ...",
+        "Zur Praevention waere eine verpflichtende Schulung in ... sinnvoll."
+      ]
+    },
+    {
+      "id": "C1_speak_25",
+      "level": "C1",
+      "lessonId": "C1_lesson_22",
+      "title": "Angehoerigengespraech: Therapiezielaenderung",
+      "prompt": "Ein 88-jaehriger Patient mit schwerer Demenz und Z. n. Apoplex wird mit einer Aspirationspneumonie auf die Intensivstation aufgenommen. Die Kinder sind uneins: Der Sohn moechte alle Massnahmen, die Tochter moechte den Vater nicht leiden sehen. Fuehren Sie das Gespraech.",
+      "instructions": "Empathische Gespraechsfuehrung. Medizinische Prognose darlegen. Therapieziele erklaeren. Konsensfindung unterstuetzen.",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "KII fuer sensible Vorschlaege. Keine Bewertung der Positionen. Patientenverfuegung thematisieren. Palliativperspektive anbieten.",
+      "usefulPhrases": [
+        "Ich kann beide Positionen sehr gut nachvollziehen.",
+        "Aus medizinischer Sicht ist die Prognose leider ...",
+        "Eine Therapiezielaenderung wuerde bedeuten, dass wir ...",
+        "Wir koennen sicherstellen, dass Ihr Vater keine Schmerzen erleidet."
+      ]
+    },
+    {
+      "id": "C1_speak_26",
+      "level": "C1",
+      "lessonId": "C1_lesson_23",
+      "title": "Diskussion: Entlassungsmanagement",
+      "prompt": "Ein 76-jaehriger Patient nach Huft-TEP benoetigt eine Anschlussheilbehandlung (AHB). Die Sozialarbeiterin sagt, es gibt keinen freien Platz, die Physiotherapie haelt eine stationaere Reha fuer medizinisch notwendig, der Patient moechte nach Hause. Diskutieren Sie die Situation im Team.",
+      "instructions": "Verschiedene Perspektiven darstellen. Medizinische Notwendigkeit vs. Patientenwunsch vs. Ressourcen. Gemeinsame Entscheidung finden.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "SBAR-Struktur. KII fuer Vorschlaege. Fachtermini der Rehabilitation. Vermittlung zwischen Positionen.",
+      "usefulPhrases": [
+        "Aus physiotherapeutischer Sicht ist eine stationaere AHB dringend indiziert, weil ...",
+        "Das Problem der fehlenden Kapazitaeten ist uns bekannt.",
+        "Eine Alternative zur stationaeren AHB waere eine ambulante ...",
+        "Koennen wir dem Patienten folgenden Kompromiss vorschlagen: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_27",
+      "level": "C1",
+      "lessonId": "C1_lesson_24",
+      "title": "FSP: Postoperative Komplikation",
+      "prompt": "Sie haben Nachtdienst. Ein 62-jaehriger Patient wurde vor vier Stunden appendektomiert und hat jetzt akut einsetzende Unterbauchschmerzen, einen Hb-Abfall von 2 g/dL und einen Blutdruck von 85/50 mmHg. Sie vermuten eine Nachblutung. Uebergeben Sie den Fall Ihrer Oberaerztin.",
+      "instructions": "Akute Vorstellung nach SBAR. Situation, Background, Assessment, Recommendation. Dringlichkeit kommunizieren.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "SBAR-Dringlichkeitsstruktur. Praeteritum. Klare Handlungsaufforderung. Relevante Vitalparameter nennen.",
+      "usefulPhrases": [
+        "Ich rufe wegen einer akuten Versphaecterung bei einem postoperativen Patienten an.",
+        "Der Patient wurde vor vier Stunden appendektomiert und hat jetzt ...",
+        "Ich vermute eine Nachblutung aufgrund des Hb-Abfalls und des Blutdruckabfalls.",
+        "Ich empfehle eine sofortige Sono-Kontrolle und die Vorbereitung des OPs."
+      ]
+    },
+    {
+      "id": "C1_speak_28",
+      "level": "C1",
+      "lessonId": "C1_lesson_25",
+      "title": "Ethikdiskussion: Genetische Zufallsbefunde",
+      "prompt": "Bei einer genetischen Diagnostik zur Klaerung einer familiären Hypercholesterinamie wird zufaellig eine Praedisposition fuer die Huntington-Krankheit gefunden. Der Patient hat nicht nach diesem Risiko gefragt. Diskutieren Sie, ob Sie den Zufallsbefund mitteilen muessen.",
+      "instructions": "Ethische Prinzipien abwaegen. Rechtliche Lage darstellen. Patientenwille vs. Informationspflicht. Differenziertes Fazit.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Indirekte Rede fuer Rechtslage. KII fuer ethische Abwaegungen. Genetische Fachtermini.",
+      "usefulPhrases": [
+        "Aus ethischer Sicht kollidieren hier das Recht auf Nichtwissen mit der aerztlichen Informationspflicht.",
+        "Das Gendiagnostikgesetz schreibt vor, dass ...",
+        "Eine moegliche Vorgehensweise waere, den Patienten zu fragen, ob er ...",
+        "Ich wuerde mich in diesem Fall fuer ... entscheiden, weil ..."
+      ]
+    },
+    {
+      "id": "C1_speak_29",
+      "level": "C1",
+      "lessonId": "C1_lesson_1",
+      "title": "Vortrag: Burnout-Praevention",
+      "prompt": "Studien zeigen, dass ueber 40 Prozent der AErzte in Deutschland Symptome eines Burnouts aufweisen. Halten Sie einen Vortrag vor jungen Kollegen ueber Ursachen, Warnsignale und Praeventionsstrategien des aerztlichen Burnouts.",
+      "instructions": "Problemdarstellung. Ursachenanalyse. Warnsignale. Praeventionsstrategien auf individueller und systemischer Ebene. Persoenliche Erfahrung einbringen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Vortragsstruktur mit klarem roten Faden. Verstaendliche Sprache. Persoenliche Ebene nicht vergessen. Konstruktiver Ausblick.",
+      "usefulPhrases": [
+        "Burnout ist unter AErzten alarmierend verbreitet: ...",
+        "Zu den Hauptursachen zailaht ...",
+        "Erste Warnsignale sind ...",
+        "Auf persoenlicher Ebene hilft mir ..."
+      ]
+    },
+    {
+      "id": "C1_speak_30",
+      "level": "C1",
+      "lessonId": "C1_lesson_3",
+      "title": "Rollenspiel: Patientenbeschwerde",
+      "prompt": "Ein Patient beschwert sich persoenlich bei Ihnen, dass er nach einer ambulanten Behandlung keine verstaendliche Aufklaerung erhalten hat und sich ueber die Wartezeit von drei Stunden aergert. Reagieren Sie angemessen auf die Beschwerde.",
+      "instructions": "Empathie zeigen. Beschwerde ernst nehmen. Kommunikationsdefizit analysieren. Konkrete Besserung zusagen. Professionelle Distanz wahren.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Aktives Zuhoren. KII fuer Hoeflichkeit und Entschuldigung. Keine Rechtfertigungen. Loesungsorientiert.",
+      "usefulPhrases": [
+        "Ich kann Ihren Aerger sehr gut verstehen und moechte mich dafuer entschuldigen, dass ...",
+        "Ich werde den Vorgang intern prufen und Ihnen innerhalb von ... eine Rueckmeldung geben.",
+        "Was die Aufklaerung betrifft, moechte ich Ihnen die Gelegenheit geben, alle offenen Fragen zu klaeren.",
+        "Wir werden aus diesem Vorfall lernen und ..."
+      ]
+    },
+    {
+      "id": "C1_speak_31",
+      "level": "C1",
+      "lessonId": "C1_lesson_2",
+      "title": "FSP: Akuter Thoraxschmerz",
+      "prompt": "Ein 58-jaehriger Patient mit Diabetes und Hypertonie kommt mit akutem Thoraxschmerz, der seit 30 Minuten besteht, in die Notaufnahme. Der Blutdruck ist 150/90 mmHg, das EKG zeigt ST-Hebungen in II, III und aVF. Stellen Sie den Fall Ihrer Oberaerztin vor.",
+      "instructions": "Strukturierte Fallvorstellung: Patient, Symptome, Vitalparameter, EKG-Befund, Verdachtsdiagnose, DD, geplante Akuttherapie. FSP-Stil.",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "FSP-Struktur. Zeitkritische Dringlichkeit kommunizieren. Praeteritum. Klares Procedere.",
+      "usefulPhrases": [
+        "Der Patient stellte sich mit akutem Thoraxschmerz vor, der seit 30 Minuten besteht.",
+        "Im EKG zeigen sich ST-Hebungen in den inferioren Ableitungen.",
+        "Ich vermute einen akuten inferioren Myokardinfarkt.",
+        "Ich wuerde eine sofortige Koronarangiographie veranlassen und ..."
+      ]
+    },
+    {
+      "id": "C1_speak_32",
+      "level": "C1",
+      "lessonId": "C1_lesson_4",
+      "title": "Patientenberatung: Therapieverweigerung",
+      "prompt": "Ein 52-jaehriger Patient mit einem friih diagnostizierten Nierenzellkarzinom lehnt die empfohlene Nephrektomie ab und moechte alternative Methoden ausprobieren. Sie respektieren seine Entscheidung, moechten ihn aber ueber die Konsequenzen aufklaeren.",
+      "instructions": "Respektvoll, aber klar. Prognose mit und ohne OP erlaeutern. Alternative Methoden fachlich bewerten. Angebot einer Zweitmeinung.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "KII fuer sensible Formulierungen. Verstaendliche Sprache. Kein Druck, aber deutliche Worte. Patientenautonomie respektieren.",
+      "usefulPhrases": [
+        "Ich respektiere Ihre Entscheidung, moechte Sie aber bitten, folgende Informationen zu beruecksichtigen: ...",
+        "Ohne Operation liegt die prognostizierte Ueberlebensrate bei ...",
+        "Zu den von Ihnen genannten Alternativen kann ich Ihnen folgende Einschaetzung geben: ...",
+        "Ich wuerde Ihnen dringend empfehlen, vor Ihrer Entscheidung eine Zweitmeinung einzuholen."
+      ]
+    },
+    {
+      "id": "C1_speak_33",
+      "level": "C1",
+      "lessonId": "C1_lesson_5",
+      "title": "Diskussion: Evidenzhierarchie",
+      "prompt": "Ein Kollege zitiert in der Morgenbesprechung eine Fallserie als Beleg fuer eine Therapieentscheidung. Sie widersprechen, da es randomisierte kontrollierte Studien zum Thema gibt. Diskutieren Sie die Evidenzhierarchie und die Bedeutung verschiedener Studientypen fuer die klinische Entscheidungsfindung.",
+      "instructions": "Sachliche, kollegiale Diskussion. Evidenzpyramide. Kritik an methodischen Schwachstellen. Klinische Relevanz verschiedener Studientypen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Indirekte Rede fuer Kollegen-Zitat. KII fuer Hoeflichkeit. Fachtermini der Evidence-based Medicine. Konnektoren fuer Argumentation.",
+      "usefulPhrases": [
+        "Ich moechte kurz auf die methodische Qualitaet der zitierten Studie eingehen.",
+        "Auf der Evidenzpyramide sind Fallserien auf der Stufe ... angesiedelt.",
+        "Im Vergleich dazu haben randomisierte kontrollierte Studien den Vorteil, dass ...",
+        "Fuer die klinische Entscheidung waere es meiner Ansicht nach sinnvoller, ..."
+      ]
+    },
+    {
+      "id": "C1_speak_34",
+      "level": "C1",
+      "lessonId": "C1_lesson_6",
+      "title": "Rollenspiel: Inzidenteller Zufallsbefund",
+      "prompt": "Bei einer routinemaessigen CT-Untersuchung wegen Verdacht auf Nierensteine wurde zufaellig ein solitaerer Lungenrundherd entdeckt. Der Patient ist besorgt. Erlaeutern Sie den Befund, die naechsten diagnostischen Schritte und die Wahrscheinlichkeit einer Boesartigkeit.",
+      "instructions": "Verstaendliche, aber ehrliche Aufklaerung. Wahrscheinlichkeiten nennen. Weitere Diagnostik (CT-Verlauf, PET-CT, Biopsie) erlaeutern. Verunsicherung auffangen.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Emitterung stoẞen nicht durch Uebermaẞ an Informationen. Fachbegriffe erklaeren. Klaren Fahrplan geben. Raum fuer Fragen lassen.",
+      "usefulPhrases": [
+        "Wir haben bei der CT-Untersuchung einen Zufallsbefund entdeckt, der nichts mit Nierensteinen zu tun hat.",
+        "Es handelt sich um einen Lungenrundherd. Das klingt zunaechst beunruhigend, aber die meisten dieser Herde sind gutartig.",
+        "Um sicherzugehen, wuerde ich folgende weitere Untersuchungen empfehlen: ...",
+        "Wir werden Sie selbstverstaendlich durch den gesamten Prozess begleiten."
+      ]
+    },
+    {
+      "id": "C1_speak_35",
+      "level": "C1",
+      "lessonId": "C1_lesson_7",
+      "title": "Interdisziplinaere Besprechung: Geriatrie",
+      "prompt": "Eine 84-jaehrige Patientin mit multiplen Vorerkrankungen (Herzinsuffizienz, Niereninsuffizienz, Osteoporose, beginnende Demenz) wurde nach einem Huftnahen Bruch operiert. Besprechen Sie im Team die weitere Versorgung: Rehabilitation, Medikationsmanagement, Sturzprophylaxe.",
+      "instructions": "SBAR-Struktur. Komplexitaet reduzieren. Klare Handlungsempfehlungen fuer jede Disziplin. Geriatrisches Assessment erwahnen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Interdisziplinaere Perspektive. Fachtermini der Geriatrie. Pragnanz. KII fuer Vorschlaege.",
+      "usefulPhrases": [
+        "Aus internistischer Sicht ist zunaechst die kardiale Fuhrung zu optimieren, weil ...",
+        "Fuer die Sturzprophylaxe waere ein geriatrisches Assessment mit ... sinnvoll.",
+        "Ich schlage vor, die Medikation auf potentiell inadquate Wirkstoffe zu prufen.",
+        "Die physiotherapeutische Mobilisation sollte ..."
+      ]
+    },
+    {
+      "id": "C1_speak_36",
+      "level": "C1",
+      "lessonId": "C1_lesson_9",
+      "title": "Vortrag: Qualitaetsindikatoren",
+      "prompt": "Halten Sie einen Vortrag ueber die Bedeutung von Qualitaetsindikatoren im Krankenhaus. Gehen Sie auf administrative und medizinische Indikatoren ein, erklaeren Sie deren Aussagekraft und Grenzen. Beziehen Sie sich auf konkrete Beispiele aus Ihrem Klinikalltag.",
+      "instructions": "Vortragsstruktur mit Einleitung, Hauptteil und Fazit. Beispiele aus der Praxis. Kritische Wuerdigung des Indikatorensystems.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Vortragsstil. Nominalisierungen. Konnektoren. Fachtermini der Qualitaetssicherung (QSR, QI, AQUA).",
+      "usefulPhrases": [
+        "Qualitaetsindikatoren dienen dazu, die Versorgungsqualitaet messbar zu machen.",
+        "Ein Beispiel aus unserem Haus ist der Indikator ...",
+        "Die Aussagekraft von Qualitaetsindikatoren wird jedoch eingeschraenkt durch ...",
+        "Zusammenfassend laesst sich sagen, dass Qualitaetsmessung sinnvoll, aber nicht selbsterklaerend ist."
+      ]
+    },
+    {
+      "id": "C1_speak_37",
+      "level": "C1",
+      "lessonId": "C1_lesson_10",
+      "title": "Ethikdiskussion: Screening-Ueberdiagnostik",
+      "prompt": "Ein neues Screening-Programm zur Frueherkennung von Prostatakarzinomen mittels PSA-Test fuehrt zu einer hohen Rate von Ueberdiagnosen und Uebertherapien. Diskutieren Sie den Nutzen des Screenings gegen die Risiken der Ueberdiagnostik.",
+      "instructions": "Ethische Prinzipien abwaegen. Nutzen des Screenings fuer die Bevoelkerung vs. individuelle Belastung. Differenziertes Fazit.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Zahlen und Fakten nennen (Number needed to screen). Indirekte Rede fuer Leitlinien. KII fuer Bewertungen.",
+      "usefulPhrases": [
+        "Das PSA-Screening reduziert die Prostatakrebs-Mortalitaet um ...",
+        "Dem steht eine erhebliche Ueberdiagnoserate von ... gegenueber.",
+        "Das ethische Dilemma besteht darin, dass ...",
+        "Meiner Meinung nach sollte die Entscheidung ..."
+      ]
+    },
+    {
+      "id": "C1_speak_38",
+      "level": "C1",
+      "lessonId": "C1_lesson_11",
+      "title": "Angehoerigengespraech: Delir",
+      "prompt": "Ein 80-jaehriger Patient hat nach einer Huft-OP ein postoperatives Delir entwickelt. Er ist verwirrt, aggressiv und versucht aus dem Bett zu steigen. Die Tochter ist verunsichert. Sie muessen die Situation erklaeren und Massnahmen (Fixierung, Medikation) mit den Angehoerigen besprechen.",
+      "instructions": "Delir als voruebergehenden Zustand erklaeren. Ursachen und Behandlung. Sicherheitsmassnahmen begruenden. Beruhigende, fachlich fundierte Gespraechsfuehrung.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Empathie und Fachlichkeit verbinden. Delir als passager erklaeren. Fixierung als letzte Massnahme darstellen. Verstaendliche Sprache.",
+      "usefulPhrases": [
+        "Ihr Vater leidet unter einem postoperativen Delir. Das ist ein voruebergehender Verwirrtheitszustand, der nach grossen Operationen haeufiger vorkommt.",
+        "Die Unruhe laesst sich in der Regel mit Medikamenten gut behandeln.",
+        "Aus Sicherheitsgruenden muessen wir leider voruebergehend ...",
+        "Wir prufen taeglich, ob die Massnahmen noch notwendig sind."
+      ]
+    },
+    {
+      "id": "C1_speak_39",
+      "level": "C1",
+      "lessonId": "C1_lesson_12",
+      "title": "Diskussion: Interessenkonflikte",
+      "prompt": "Ein Pharmaunternehmen sponsert eine Studie in Ihrer Klinik zur Wirksamkeit eines neuen Antihypertensivums. Der Hauptpruefer erhaelt ein hohes Honorar. Diskutieren Sie mit Kollegen, ob dieser Interessenkonflikt die Glaubwuerdigkeit der Studie beeintraechtigt.",
+      "instructions": "Sachliche Diskussion. Verschiedene Arten von Interessenkonflikten (finanziell, akademisch). Massnahmen zur Transparenz. Eigene Position.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Fachtermini der Forschungsethik. Indirekte Rede. KII fuer Bewertungen. Differenzierte Argumentation.",
+      "usefulPhrases": [
+        "Interessenkonflikte sind in der medizinischen Forschung weit verbreitet.",
+        "Finanzielle Verflechtungen koennen die Objektivitaet beeinflussen, auch wenn ...",
+        "Transparenz ist der wichtigste Schutz vor Verzerrungen: ...",
+        "Ich waere dafuer, dass wir als Klinik eine klare Richtlinie zu Interessenkonflikten etablieren."
+      ]
+    },
+    {
+      "id": "C1_speak_40",
+      "level": "C1",
+      "lessonId": "C1_lesson_13",
+      "title": "FSP: Verdacht auf Sepsis",
+      "prompt": "Ein 72-jaehriger Patient mit Z. n. Harnwegsinfekt vor einer Woche kommt mit Fieber (39.5 Grad C), Tachykardie (110/min), Hypotension (85/50 mmHg) und einem CRP von 180 mg/L. Sie vermuten eine uroseptische Genese. Uebergeben Sie den Fall an die Intensivstation.",
+      "instructions": "Akute Vorstellung mit SBAR. Dringlichkeit deutlich machen. QSOFA-Kriterien nennen. Bereits eingeleitete Massnahmen. Anforderung von ITS-Kapazitaet.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "SBAR-fuer-Dringlichkeit. QSOFA-Kriterien. Klare Anforderung. Praeteritum und Fachsprache.",
+      "usefulPhrases": [
+        "Ich melde einen septischen Patienten zur Uebernahme auf die Intensivstation.",
+        "Der Patient erfuellt zwei von drei qSOFA-Kriterien: ...",
+        "Ich habe bereits folgende Massnahmen eingeleitet: ...",
+        "Ich bitte um Uebernahme und Einleitung der fokussierten Sepsis-Therapie."
+      ]
+    },
+    {
+      "id": "C1_speak_41",
+      "level": "C1",
+      "lessonId": "C1_lesson_15",
+      "title": "FSP: Akutes neurologisches Defizit",
+      "prompt": "Ein 66-jaehriger Patient mit Vorhofflimmern und arterieller Hypertonie wird mit akuter Hemiparese rechts und Sprechstoerung in die Notaufnahme gebracht. Der Symptombeginn liegt 90 Minuten zurueck. Stellen Sie den Fall Ihrer Oberaerztin vor.",
+      "instructions": "Strukturierte FSP-Vorstellung. Zeitkritische Symptomatik. NIHSS-Score oder klinische Beschreibung. Zeitfenster fuer Lyse. CT-Indikation.",
+      "prepTime": 180,
+      "talkTime": 300,
+      "tips": "FSP-Struktur mit Dringlichkeit. Zeitangaben prazise. NIHSS-Vokabular. Klare Forderung nach CT und Lyse-Pruefung.",
+      "usefulPhrases": [
+        "Der Patient wurde mit akuter Hemiparese rechts und Aphasie eingeliefert.",
+        "Der Symptombeginn war vor ca. 90 Minuten, sodass das Lyse-Zeitfenster noch offen ist.",
+        "Ich habe bereits ein CT Schaedel veranlasst, um eine Blutung auszuschliessen.",
+        "Bei Ausschluss einer intrakraniellen Blutung wuerde ich die Lyse-Therapie einleiten."
+      ]
+    },
+    {
+      "id": "C1_speak_42",
+      "level": "C1",
+      "lessonId": "C1_lesson_16",
+      "title": "Patientenberatung: Reha nach Huft-OP",
+      "prompt": "Ein 72-jaehriger Patient steht vor der Implantation einer Huft-TEP. Er erwartet, dass er nach zwei Wochen wieder Golf spielen kann. Klaeren Sie ihn ueber den realistischen Heilungsverlauf, die Rehabilitationsdauer und die Belastungsgrenzen auf.",
+      "instructions": "Realistische Erwartungen setzen. Phase der Rehabilitation erklaeren (stationaer, ambulant). Belastungsaufbau. Komplikationsmoeglichkeiten. Positive, aber ehrliche Perspektive.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Empathie, aber Realitaetssinn. Heilungsphasen in verstaendlicher Sprache. KII fuer vorsichtige Prognosen.",
+      "usefulPhrases": [
+        "Ich freue mich, dass Sie nach der OP wieder aktiv sein moechten.",
+        "Der Heilungsverlauf nach einer Huft-TEP gliedert sich in mehrere Phasen: ...",
+        "Golf waere fruehestens nach drei bis vier Monaten wieder realistisch.",
+        "Wichtig ist, dass Sie die Belastung langsam steigern und die Physiotherapie konsequent durchfuehren."
+      ]
+    },
+    {
+      "id": "C1_speak_43",
+      "level": "C1",
+      "lessonId": "C1_lesson_17",
+      "title": "Vortrag: Patient-Reported Outcomes",
+      "prompt": "Halten Sie einen Vortrag ueber die Bedeutung von Patient-Reported Outcome Measures (PROMs) in der klinischen Forschung und Qualitaetssicherung. Erklaren Sie, was PROMs sind, welche Instrumente es gibt und warum sie die klassischen klinischen Endpunkte erganzen.",
+      "instructions": "Definition und Abgrenzung. Instrumente (EQ-5D, SF-36, etc.). Vorteile und Grenzen. Implementierung im Klinikalltag.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Wissenschaftlicher Vortragsstil. Fachtermini. Vor- und Nachteile abwaegen. Praxisbeispiele nennen.",
+      "usefulPhrases": [
+        "Patient-Reported Outcome Measures erfassen die gesundheitsbezogene Lebensqualitaet aus Patientensicht.",
+        "Im Gegensatz zu klassischen klinischen Endpunkten ...",
+        "Zu den haeufig verwendeten Instrumenten gehoeren ...",
+        "In unserem Haus haben wir PROMs wie folgt implementiert: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_44",
+      "level": "C1",
+      "lessonId": "C1_lesson_18",
+      "title": "Rollenspiel: Datenschutz in der Forschung",
+      "prompt": "Ein Patient soll in eine klinische Studie zu Biomarkern bei Herzkrankheiten eingeschlossen werden. Er macht sich Sorgen um den Datenschutz und moechte wissen, was mit seinen Daten passiert. Klaeren Sie ihn auf.",
+      "instructions": "Verstaendliche Darstellung der Datenschutzmassnahmen. Pseudonymisierung erklaeren. Einwilligungserklaerung erlaeutern. Recht auf Widerruf.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "Verstaendliche Sprache fuer juristische Begriffe. Einwilligungsfaehigkeit sichern. Vertrauensbildende Formulierungen.",
+      "usefulPhrases": [
+        "Ihre Daten werden selbstverstaendlich nach den strengen Regeln der Datenschutzgrundverordnung behandelt.",
+        "Pseudonymisierung bedeutet, dass Ihre persoenlichen Identifikationsmerkmale ...",
+        "Sie haben jederzeit das Recht, Ihre Einwilligung zurueckzuziehen, ohne dass Ihnen Nachteile entstehen.",
+        "Die Studie wurde von der Ethikkommission geprueft und genehmigt."
+      ]
+    },
+    {
+      "id": "C1_speak_45",
+      "level": "C1",
+      "lessonId": "C1_lesson_19",
+      "title": "Diskussion: Sektorenuebergreifende Versorgung",
+      "prompt": "Ein Patient mit chronischer Herzinsuffizienz wird regelmaessig wiederaufgenommen, weil die ambulante Fuhrung nicht ausreichend ist. Diskutieren Sie im Team, wie die Koordination zwischen stationaerer, ambulanteer und pflegerischer Versorgung verbessert werden kann.",
+      "instructions": "Problemanalyse. Schnittstellenproblematik. Konkrete Loesungsvorschlaege (Ueberleitungsbogen, Case Management, digitale Plattformen).",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Systemische Perspektive. KII fuer Vorschlaege. Fachtermini der Versorgungsforschung. Praktische Umsetzbarkeit betonen.",
+      "usefulPhrases": [
+        "Das Problem der Wiedereinweisungen bei Herzinsuffizienz hat mehrere Ursachen: ...",
+        "Eine moegliche Loesung waere die Einfuehrung eines strukturierten Entlassungsmanagements.",
+        "Die elektronische Patientenakte koennte hier die Kommunikation zwischen den Sektoren verbessern.",
+        "Ich schlage vor, ein Case-Management zu etablieren, das ..."
+      ]
+    },
+    {
+      "id": "C1_speak_46",
+      "level": "C1",
+      "lessonId": "C1_lesson_20",
+      "title": "Ethikdiskussion: Palliative Sedierung",
+      "prompt": "Ein Patient im Terminalstadium eines Prostatakarzinoms leidet unter unertraeglichen tumorbedingten Schmerzen, die mit konventionellen Massnahmen nicht beherrschbar sind. Die Tochter bittet um tiefe Sedierung bis zum Tod. Diskutieren Sie die ethische Zulaessigkeit.",
+      "instructions": "Palliative Sedierung vs. aktive Sterbehilfe abgrenzen. Medizinische Indikation. Ethische Prinzipien. Rechtliche Rahmenbedingungen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Paläsive Sedierung ist keine Euthanasie. KII fuer sensible Bewertungen. Juristische Fachbegriffe. Empathische Differenziertheit.",
+      "usefulPhrases": [
+        "Die palliative Sedierung unterscheidet sich grundlegend von der aktiven Sterbehilfe: ...",
+        "Medizinisch ist die Sedierung indiziert, wenn ...",
+        "Ethisch ist die Massnahme vertretbar, weil das Prinzip der Leidensminderung ...",
+        "Wir werden die Sedierung stets unter sorgfaeltiger Kontrolle durchfuehren und regelmaessig prufen."
+      ]
+    },
+    {
+      "id": "C1_speak_47",
+      "level": "C1",
+      "lessonId": "C1_lesson_21",
+      "title": "Angehoerigengespraech: Postoperative Komplikation",
+      "prompt": "Ein 45-jaehriger Patient hat nach einer laparoskopischen Cholezystektomie eine Gallengangsverletzung erlitten. Er musste notfallmaessig revidiert werden. Die Ehefrau wartet bereits seit Stunden. Informieren Sie sie ueber den Verlauf und die Prognose.",
+      "instructions": "Ehrlich, aber nicht angstmachend. Komplikation erklaeren. Bereits durchgefuehrte Massnahmen. Weiterer Verlauf und Prognose.",
+      "prepTime": 120,
+      "talkTime": 240,
+      "tips": "KII fuer vorsichtige Prognosen. Keine Beschonigung, aber auch keine Panik. Vertrauensbildend. Raum fuer Fragen.",
+      "usefulPhrases": [
+        "Ich muss Ihnen mitteilen, dass es bei der Operation Ihres Mannes zu einer Komplikation gekommen ist.",
+        "Die Gallenwege wurden waehrend des Eingriffs verletzt, sodass eine zweite Operation notwendig wurde.",
+        "Der Eingriff ist gut verlaufen, und Ihr Mann befindet sich aktuell auf der Intensivstation.",
+        "Die weiteren Schritte sind: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_48",
+      "level": "C1",
+      "lessonId": "C1_lesson_22",
+      "title": "Diskussion: Medizinstudium-Reform",
+      "prompt": "Der neue Masterplan Medizinstudium 2030 sieht eine staerkere Praxisorientierung und mehr Kommunikationstraining vor. Diskutieren Sie mit Kollegen, ob diese Reform ausreicht, um die Herausforderungen des aerztlichen Berufs zu bewältigen.",
+      "instructions": "Aktuelle Defizite im Medizinstudium benennen. Reforminhalte bewerten. Eigene Erfahrungen einbringen. Weitere Verbesserungen vorschlagen.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "KII fuer Bewertungen. Indirekte Rede fuer Reforminhalte. Persoenliche Erfahrungen als junger Arzt. Konstruktive Kritik.",
+      "usefulPhrases": [
+        "Der Masterplan sieht unter anderem vor, dass ...",
+        "In meiner eigenen Ausbildung habe ich defizitaer erlebt, dass ...",
+        "Positiv an der Reform ist ...",
+        "Was meiner Ansicht nach noch fehlt, ist ..."
+      ]
+    },
+    {
+      "id": "C1_speak_49",
+      "level": "C1",
+      "lessonId": "C1_lesson_23",
+      "title": "Vortrag: Partizipative Entscheidungsfindung",
+      "prompt": "Halten Sie einen Vortrag ueber das Konzept der partizipativen Entscheidungsfindung (Shared Decision-Making) bei komplexen Therapieentscheidungen, am Beispiel der Prostatakarzinom-Therapie unter Beruecksichtigung von Patientenpraeferenzen.",
+      "instructions": "Definition und Prinzipien. Beispiel Prostatakarzinom (Operation, Bestrahlung, Active Surveillance). Barrieren und Foerderfaktoren. Klinische Umsetzung.",
+      "prepTime": 180,
+      "talkTime": 240,
+      "tips": "Vortragsstil mit klarem Beispiel. Nominalisierungen. Struktur: Theorie > Beispiel > Praxis. Patientenzentrierte Sprache.",
+      "usefulPhrases": [
+        "Shared Decision-Making bedeutet, dass Arzt und Patient gemeinsam auf Augenhöhe entscheiden.",
+        "Am Beispiel des lokal begrenzten Prostatakarzinoms wird die Komplexitaet deutlich: ...",
+        "Die Rolle des Arztes ist es, die evidenzbasierten Optionen zu erlaeutern.",
+        "In der Praxis hat sich folgendes Vorgehen bewaehrt: ..."
+      ]
+    },
+    {
+      "id": "C1_speak_50",
+      "level": "C1",
+      "lessonId": "C1_lesson_8",
+      "title": "FSP: Polytrauma Uebergabe",
+      "prompt": "Ein 28-jaehriger Patient wurde nach einem Motorradunfall mit Verdacht auf Milzruptur, Beckenfraktur und offener Unterschenkelfraktur in den Schockraum eingeliefert. Nach erfolgter Stabilisierung und Notfall-OP muessen Sie den Patienten auf die Intensivstation verlegen.",
+      "instructions": "SBAR-Uebergabe an die Intensivstation. Primare Diagnosen, durchgefuehrte Massnahmen, aktuelle Vitalparameter, offene Punkte.",
+      "prepTime": 120,
+      "talkTime": 180,
+      "tips": "SBAR-Struktur. Prioritaeten setzen. Praeteritum fuer durchgefuehrte Massnahmen. Klare Anforderungen an die ITS.",
+      "usefulPhrases": [
+        "Ich melde einen polytraumatisierten Patienten zur Uebernahme auf die Intensivstation.",
+        "Diagnosen: Milzruptur (Z. n. Splenektomie), Beckenfraktur, offene Unterschenkelfraktur rechts.",
+        "Vitalparameter aktuell: Blutdruck ..., Herzfrequenz ..., unter ...",
+        "Offene Punkte: sekundaere Versorgung der Unterschenkelfraktur in ... und haemodynamisches Monitoring."
+      ]
     }
   ]
 }

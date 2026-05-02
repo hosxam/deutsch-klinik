@@ -1387,7 +1387,7 @@
       "word": "Frühstück",
       "translation": "breakfast",
       "article": "das",
-      "plural": "",
+      "plural": null,
       "example": "das Frühstück ist ein wichtiger Begriff.",
       "exampleTranslation": "das Frühstück is an important term.",
       "tags": [
@@ -1690,7 +1690,7 @@
       "level": "A1",
       "word": "Alter",
       "article": "das",
-      "plural": null,
+      "plural": "Alter",
       "translation": "age",
       "lessonId": "A1_lesson_1",
       "partOfSpeech": "noun",
@@ -4714,7 +4714,7 @@
       "level": "A1",
       "word": "Sonne",
       "article": "die",
-      "plural": null,
+      "plural": "Sonnen",
       "translation": "sun",
       "lessonId": "A1_lesson_11",
       "partOfSpeech": "noun",
@@ -7178,7 +7178,7 @@
       "level": "A1",
       "word": "der Rettungsdienst",
       "article": "der",
-      "plural": null,
+      "plural": "Rettungsdienste",
       "translation": "ambulance service",
       "lessonId": "A1_lesson_18",
       "partOfSpeech": "noun",
@@ -13713,7 +13713,7 @@
       "word": "Hunger",
       "translation": "hunger",
       "article": "der",
-      "plural": null,
+      "plural": "Hunger",
       "example": "Hast du Hunger?",
       "exampleTranslation": "Are you hungry?",
       "tags": [
@@ -13985,7 +13985,7 @@
       "word": "Nebel",
       "translation": "fog",
       "article": "der",
-      "plural": null,
+      "plural": "Nebel",
       "example": "Heute Morgen ist starker Nebel.",
       "exampleTranslation": "This morning there is heavy fog.",
       "tags": [
@@ -14001,7 +14001,7 @@
       "word": "Hagel",
       "translation": "hail",
       "article": "der",
-      "plural": null,
+      "plural": "Hagel",
       "example": "Der Hagel hat die Autos beschädigt.",
       "exampleTranslation": "The hail damaged the cars.",
       "tags": [
@@ -16213,7 +16213,7 @@
       "lessonId": "B1_lesson_2",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Klimawandel",
       "tags": [
         "b1",
         "environment"
@@ -18553,7 +18553,7 @@
       "lessonId": "B1_lesson_14",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Stroeme",
       "tags": [
         "b1",
         "housing"
@@ -29141,7 +29141,7 @@
       "lessonId": "B2_lesson_10",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Klimawandel",
       "tags": [
         "b2",
         "environment"
@@ -32116,7 +32116,7 @@
       "lessonId": "B2_lesson_9",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Wandel",
       "tags": [
         "b2",
         "history"
@@ -32303,7 +32303,7 @@
       "lessonId": "B2_lesson_20",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Rettungsdienste",
       "tags": [
         "b2",
         "safety"
@@ -34037,7 +34037,7 @@
       "lessonId": "B2_lesson_22",
       "partOfSpeech": "noun",
       "article": "das",
-      "plural": null,
+      "plural": "Verhalten",
       "tags": [
         "b2",
         "psychology"
@@ -34275,7 +34275,7 @@
       "lessonId": "B2_lesson_11",
       "partOfSpeech": "noun",
       "article": "das",
-      "plural": null,
+      "plural": "Gebirge",
       "tags": [
         "b2",
         "geography"
@@ -34530,7 +34530,7 @@
       "lessonId": "B2_lesson_1",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Stroeme",
       "tags": [
         "b2",
         "energy"
@@ -38539,7 +38539,7 @@
       "translation": "exclusion",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Ausschuesse",
       "example": "Der Ausschluss anderer Ursachen erfolgte durch bildgebende Verfahren.",
       "exampleTranslation": "The exclusion of other causes was done through imaging.",
       "tags": [
@@ -38875,7 +38875,7 @@
       "translation": "p-value",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "p-Werte",
       "example": "Ein p-Wert unter 0,05 wurde als statistisch signifikant betrachtet.",
       "exampleTranslation": "A p-value below 0.05 was considered statistically significant.",
       "tags": [
@@ -40362,7 +40362,7 @@
       "translation": "volume depletion",
       "partOfSpeech": "noun",
       "article": "der",
-      "plural": null,
+      "plural": "Volumenmangel",
       "example": "Der Volumenmangel wurde durch Infusionstherapie ausgeglichen.",
       "exampleTranslation": "The volume depletion was compensated by infusion therapy.",
       "tags": [

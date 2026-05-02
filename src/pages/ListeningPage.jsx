@@ -124,7 +124,7 @@ export default function ListeningPage() {
         <div className="flex gap-2">
           {exercises.map((_, i) => (
             <button key={i} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); setShowTranscript(false); setPlaying(false); setPaused(false); }}
-              className="w-8 h-8 rounded-lg text-xs font-semibold"
+              className="w-11 h-11 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
               style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
             </button>
@@ -193,7 +193,7 @@ export default function ListeningPage() {
                 <div className="grid grid-cols-1 gap-1">
                   {q.options.map(opt => (
                     <button key={opt} onClick={() => !submitted && handleAnswer(q.id, opt)}
-                      className="text-left px-3 py-2 rounded-lg text-sm"
+                      className="text-left px-3 py-3 rounded-lg text-sm"
                       style={{
                         backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)',
                         color: userAns === opt ? '#fff' : 'var(--text-primary)',
@@ -207,7 +207,7 @@ export default function ListeningPage() {
                 <div className="flex gap-2">
                   {['true', 'false'].map(opt => (
                     <button key={opt} onClick={() => !submitted && handleAnswer(q.id, opt)}
-                      className="px-4 py-2 rounded-lg text-sm"
+                      className="px-4 py-3 rounded-lg text-sm"
                       style={{
                         backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)',
                         color: userAns === opt ? '#fff' : 'var(--text-secondary)',

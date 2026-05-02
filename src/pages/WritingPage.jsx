@@ -135,7 +135,7 @@ export default function WritingPage() {
       <div className="rounded-xl p-5 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <div className="text-xs mb-1" style={{ color: 'var(--text-muted)' }}>Prompt {currentIndex + 1}/{prompts.length}</div>
         <h2 className="font-bold mb-2" style={{ color: 'var(--accent)' }}>{prompt.title}</h2>
-        <p className="text-sm mb-2">{prompt.prompt}</p>
+        <p className="text-sm mb-2 break-words">{prompt.prompt}</p>
         <p className="text-xs" style={{ color: 'var(--text-secondary)' }}>{prompt.instructions}</p>
         <div className="flex gap-2 mt-2">
           <span className="text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>Target: ~{prompt.wordLimit} words</span>
