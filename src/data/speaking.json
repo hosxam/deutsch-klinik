@@ -1228,17 +1228,17 @@
     {
       "id": "A2_speak_23",
       "title": "Meine Familie",
-      "prompt": "Erzählen Sie von Ihrer Familie.",
-      "instructions": "Sagen Sie: Wie groß Ihre Familie ist, wer Ihre Familienmitglieder sind, wie alt sie sind, was sie machen.",
+      "prompt": "Sie waren beim Arzt. Beschreiben Sie, was passiert ist.",
+      "instructions": "Sagen Sie: Wann und wo der Termin war, was der Arzt gesagt hat, ob Sie ein Rezept bekommen haben, wie es Ihnen jetzt geht.",
       "prepTime": 45,
       "talkTime": 90,
-      "tips": "Nutzen Sie Possessivartikel: mein, meine, unser. Erwähnen Sie 3-4 Personen.",
+      "tips": "Nutzen Sie Perfekt: ich bin gegangen, der Arzt hat gesagt. Fragen Sie bei Unsicherheit nach.",
       "usefulPhrases": [
-        "Ich habe eine große/kleine Familie.",
-        "Mein Vater/meine Mutter ...",
-        "Ich habe einen Bruder/eine Schwester.",
-        "Mein Bruder ist ... Jahre alt.",
-        "Wir machen gern zusammen ..."
+        "Ich war gestern beim Arzt.",
+        "Der Arzt hat gesagt, dass ...",
+        "Ich habe ein Rezept bekommen.",
+        "Mir geht es schon besser.",
+        "Ich muss in einer Woche wiederkommen."
       ]
     },
     {
@@ -1692,17 +1692,17 @@
     {
       "id": "A2_speak_52",
       "title": "Wegbeschreibung",
-      "prompt": "Sie sind Tourist und fragen nach dem Weg zum Bahnhof oder zum Museum.",
-      "instructions": "Fragen Sie: Wie Sie zu Fuss oder mit dem Bus hinkommen, wie lange es dauert, ob es weit ist.",
-      "prepTime": 45,
-      "talkTime": 90,
-      "tips": "Nutzen Sie \"Koennen Sie mir sagen, wo ... ist?\" und \"Gehen Sie geradeaus/dann links/rechts.\"",
+      "prompt": "Sie können heute nicht zum Unterricht/zur Arbeit kommen. Hinterlassen Sie eine Nachricht.",
+      "instructions": "Sagen Sie: Wer Sie sind, warum Sie nicht kommen können, ob Sie einen Termin für morgen haben.",
+      "prepTime": 30,
+      "talkTime": 60,
+      "tips": "Entschuldigen Sie sich zuerst. Einfache Sätze reichen. Wichtig: Grund nennen.",
       "usefulPhrases": [
-        "Entschuldigung, wo ist ...?",
-        "Wie komme ich zu ...?",
-        "Ist das weit von hier?",
-        "Gehen Sie geradeaus, dann ...",
-        "Vielen Dank fuer die Hilfe!"
+        "Guten Morgen, hier spricht ...",
+        "Ich kann heute leider nicht kommen, weil ...",
+        "Ich bin krank/Mein Kind ist krank.",
+        "Morgen komme ich wieder.",
+        "Vielen Dank für Ihr Verständnis."
       ]
     },
     {
@@ -1740,17 +1740,17 @@
     {
       "id": "A2_speak_55",
       "title": "Bestellen im Restaurant",
-      "prompt": "Sie sind in einem Restaurant. Bestellen Sie Essen und Getraenke.",
-      "instructions": "Sagen Sie: Was Sie als Vorspeise/Hauptgericht/Nachtisch moechten, was Sie trinken moechten, ob Sie Allergien haben.",
+      "prompt": "Erzählen Sie von einem Ausflug oder Wochenendtrip.",
+      "instructions": "Sagen Sie: Wohin Sie gefahren sind, mit wem, was Sie dort gemacht haben, ob es Ihnen gefallen hat.",
       "prepTime": 45,
-      "talkTime": 60,
-      "tips": "Fragen Sie nach Empfehlungen: \"Was koennen Sie empfehlen?\"",
+      "talkTime": 90,
+      "tips": "Nutzen Sie Perfekt (bin gefahren, haben besucht). Beschreiben Sie 2-3 Aktivitäten.",
       "usefulPhrases": [
-        "Koente ich bitte die Karte sehen?",
-        "Ich moechte ... als Vorspeise.",
-        "Als Hauptgericht ...",
-        "Dazu moechte ich ... trinken.",
-        "Koennen Sie etwas empfehlen?"
+        "Letztes Wochenende bin ich nach ... gefahren.",
+        "Wir waren mit dem Auto/Zug da.",
+        "Zuerst haben wir ... gemacht.",
+        "Das Wetter war leider/schön.",
+        "Ich möchte nächstes Mal wieder hinfahren."
       ]
     },
     {
@@ -1804,17 +1804,17 @@
     {
       "id": "A2_speak_59",
       "title": "Ein Bild beschreiben",
-      "prompt": "Stellen Sie sich vor, Sie sehen ein Foto. Beschreiben Sie, was Sie sehen.",
-      "instructions": "Sagen Sie: Wer oder was zu sehen ist, wo die Personen sind, was sie machen, welche Farben und Dinge Sie sehen.",
+      "prompt": "Vergleichen Sie zwei Wohnungen: eine in der Stadt und eine auf dem Land.",
+      "instructions": "Sagen Sie: Welche Wohnung ist größer/teurer, wo liegt sie, was ist besser/schlechter, welche nehmen Sie.",
       "prepTime": 45,
       "talkTime": 90,
-      "tips": "Benutzen Sie \"Im Vordergrund/Hintergrund\", \"links/rechts\", \"oben/unten\" und \"Es gibt/es sind\".",
+      "tips": "Nutzen Sie Komparativ: größer, billiger, ruhiger. Begründen Sie Ihre Wahl.",
       "usefulPhrases": [
-        "Auf dem Bild sehe ich ...",
-        "Im Vordergrund ist ...",
-        "Links/rechts sieht man ...",
-        "Die Personen sind ...",
-        "Die Stimmung ist ..."
+        "Die Wohnung in der Stadt ist teurer.",
+        "Die Wohnung auf dem Land ist ruhiger.",
+        "Die Stadtwohnung hat einen Balkon.",
+        "Die Landwohnung ist größer.",
+        "Ich nehme die Wohnung auf dem Land, weil ..."
       ]
     },
     {
@@ -1900,17 +1900,17 @@
     {
       "id": "A2_speak_65",
       "title": "Ein Problem beschreiben",
-      "prompt": "Beschreiben Sie ein Problem in Ihrer Wohnung (Heizung kaputt, Wasser tropft, Fenster dicht). Rufen Sie den Hausmeister an.",
-      "instructions": "Sagen Sie: Was genau kaputt ist, seit wann, in welchem Zimmer, ob es dringend ist.",
-      "prepTime": 60,
+      "prompt": "Beschreiben Sie, was Sie gestern gemacht haben von morgens bis abends.",
+      "instructions": "Sagen Sie: Wann Sie aufgestanden sind, was Sie gegessen haben, was Sie gearbeitet/gelernt haben, was Sie abends gemacht haben.",
+      "prepTime": 45,
       "talkTime": 90,
-      "tips": "Seien Sie spezifisch. Beschreiben Sie genau: \"Das Wasser tropft aus dem Wasserhahn in der Kueche.\"",
+      "tips": "Perfekt ist hier perfekt! Zeitangaben helfen: morgens, mittags, nachmittags, abends.",
       "usefulPhrases": [
-        "Guten Tag, hier ist ... aus Wohnung ...",
-        "Ich habe ein Problem mit ...",
-        "Seit ... funktioniert ... nicht.",
-        "Koennen Sie jemanden vorbeischicken?",
-        "Wann kommt der Techniker?"
+        "Gestern bin ich um 7 Uhr aufgestanden.",
+        "Zum Frühstück habe ich ... gegessen.",
+        "Danach bin ich zur Arbeit gegangen.",
+        "Mittags hatte ich eine Pause.",
+        "Abends habe ich ferngesehen/bin ich ins Kino gegangen."
       ]
     },
     {
@@ -1980,17 +1980,17 @@
     {
       "id": "A2_speak_70",
       "title": "Kurzpraesentation: Meine Stadt",
-      "prompt": "Stellen Sie Ihre Stadt oder Ihr Dorf vor.",
-      "instructions": "Sagen Sie: Wo es liegt, wie gross, was es zu sehen gibt, was man dort machen kann, ob es Ihnen gefaellt.",
-      "prepTime": 60,
-      "talkTime": 90,
-      "tips": "Nutzen Sie \"Es gibt\", \"Man kann\", \"Besonders schoen ist\".",
+      "prompt": "Sie sind in der Apotheke und brauchen Hilfe. Fragen Sie den Apotheker.",
+      "instructions": "Sagen Sie: Was Ihnen fehlt (Kopfschmerzen, Husten, etc.), ob Sie ein Medikament empfehlen können, wie oft Sie es nehmen sollen, was es kostet.",
+      "prepTime": 30,
+      "talkTime": 60,
+      "tips": "Höflich fragen: Können Sie mir bitte helfen? Symptome einfach beschreiben.",
       "usefulPhrases": [
-        "Meine Stadt heisst ...",
-        "Sie liegt in ...",
-        "Es gibt einen/eine/ein ...",
-        "Man kann ... besuchen/machen.",
-        "Mir gefaellt ... am besten."
+        "Guten Tag, können Sie mir bitte helfen?",
+        "Ich habe starke Kopfschmerzen.",
+        "Welches Medikament empfehlen Sie?",
+        "Wie oft soll ich es nehmen?",
+        "Was kostet das?"
       ]
     }
   ],
