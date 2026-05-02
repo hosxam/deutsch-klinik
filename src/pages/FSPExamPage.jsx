@@ -88,6 +88,7 @@ export default function FSPExamPage() {
   var [saved, setSaved] = useState(null);
   var [attempts, setAttempts] = useState({});
   var [done, setDone] = useState({});
+  var [introDone, setIntroDone] = useState({});
   var [c2, setC2] = useState({});
   var [recording, setRecording] = useState(false);
   var [hasRec, setHasRec] = useState(false);
@@ -132,8 +133,8 @@ export default function FSPExamPage() {
     var a = getAttempt(ex.id);
     if (a && !a.completedAt) setSaved(a);
     setActiveExam(ex);
-    setStage(0); setResponses({ 1: '', 2: '', 3: '' });
-    setScores({}); setTotalScore(0); setRevealed({}); setDone({}); setC2({}); setAudioUrl('');
+    setStage(1); setResponses({ 1: '', 2: '', 3: '' });
+    setScores({}); setTotalScore(0); setRevealed({}); setDone({}); setIntroDone({}); setC2({}); setAudioUrl('');
     setView('exam');
   }
 
@@ -146,6 +147,7 @@ export default function FSPExamPage() {
     setTotalScore(a.totalScore || 0);
     setRevealed({ 1: !!(a.scores && a.scores.stage1), 2: !!(a.scores && a.scores.stage2), 3: !!(a.scores && a.scores.stage3) });
     setDone({ 1: !!(a.scores && a.scores.stage1), 2: !!(a.scores && a.scores.stage2), 3: !!(a.scores && a.scores.stage3) });
+    setIntroDone({ 1: !!(a.scores && a.scores.stage1), 2: !!(a.scores && a.scores.stage2), 3: !!(a.scores && a.scores.stage3) });
     setC2(a.c2 || {});
     setAudioUrl(a.audioUrl || '');
     var rs = 1;
@@ -156,7 +158,7 @@ export default function FSPExamPage() {
     setSaved(null);
   }
 
-  function discardSaved() { setSaved(null); }
+  function discardSaved() { setSaved(null); setIntroDone({}); }
 
   function scoreS1() {
     if (!activeExam) return 0;
@@ -227,8 +229,8 @@ export default function FSPExamPage() {
   }
 
   function restart() {
-    setStage(0); setResponses({ 1: '', 2: '', 3: '' });
-    setScores({}); setTotalScore(0); setRevealed({}); setDone({}); setC2({}); setAudioUrl('');
+    setStage(1); setResponses({ 1: '', 2: '', 3: '' });
+    setScores({}); setTotalScore(0); setRevealed({}); setDone({}); setIntroDone({}); setC2({}); setAudioUrl('');
   }
 
   function toList() {
@@ -398,13 +400,13 @@ export default function FSPExamPage() {
   }
 
   // === STAGE 1: Intro ===
-  if (stage === 1 && !done[1] && !revealed[1]) {
+  if (stage === 1 && !done[1] && !introDone[1]) {
     return (
       <div className="max-w-lg mx-auto">
         <button onClick={toList} className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
           <ChevronLeft size={14} /> All Exams
         </button>
-        <StageIntro num={1} onStart={function() { setStage(1); }} />
+        <StageIntro num={1} onStart={function() { setIntroDone(function(d) { var n = {}; for (var k in d) n[k] = d[k]; n[1] = true; return n; }); }} />
       </div>
     );
   }
@@ -520,13 +522,13 @@ export default function FSPExamPage() {
   }
 
   // === STAGE 2: Intro ===
-  if (stage === 2 && !done[2] && !revealed[2]) {
+  if (stage === 2 && !done[2] && !introDone[2]) {
     return (
       <div className="max-w-lg mx-auto">
         <button onClick={toList} className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
           <ChevronLeft size={14} /> All Exams
         </button>
-        <StageIntro num={2} onStart={function() { setStage(2); }} />
+        <StageIntro num={2} onStart={function() { setIntroDone(function(d) { var n = {}; for (var k in d) n[k] = d[k]; n[2] = true; return n; }); }} />
       </div>
     );
   }
@@ -627,13 +629,13 @@ export default function FSPExamPage() {
   }
 
   // === STAGE 3: Intro ===
-  if (stage === 3 && !done[3] && !revealed[3]) {
+  if (stage === 3 && !done[3] && !introDone[3]) {
     return (
       <div className="max-w-lg mx-auto">
         <button onClick={toList} className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
           <ChevronLeft size={14} /> All Exams
         </button>
-        <StageIntro num={3} onStart={function() { setStage(3); }} />
+        <StageIntro num={3} onStart={function() { setIntroDone(function(d) { var n = {}; for (var k in d) n[k] = d[k]; n[3] = true; return n; }); }} />
       </div>
     );
   }
