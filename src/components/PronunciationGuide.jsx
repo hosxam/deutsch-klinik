@@ -35,12 +35,17 @@ export default function PronunciationGuide({ guide, fallbackText, accentColor })
 
   useEffect(() => {
     // Ensure voices are loaded (they load async in Chrome)
-    if (TTS_AVAILABLE && !voicesLoaded.current) {
+    if (!TTS_AVAILABLE) return;
+    if (!voicesLoaded.current) {
       window.speechSynthesis.getVoices();
-      window.speechSynthesis.onvoiceschanged = () => {
-        voicesLoaded.current = true;
-      };
     }
+    const handler = () => {
+      voicesLoaded.current = true;
+    };
+    window.speechSynthesis.addEventListener('voiceschanged', handler);
+    return () => {
+      window.speechSynthesis.removeEventListener('voiceschanged', handler);
+    };
   }, []);
 
   if (!guide) {

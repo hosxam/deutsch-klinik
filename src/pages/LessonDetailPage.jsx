@@ -1,10 +1,11 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { getState, completeLesson, recordAnswer, getCompletedLessons } from '../utils/store';
+import { useState, useEffect, useMemo } from 'react';
+import { getState, completeLesson, recordAnswer, getCompletedLessons, isLessonCompleted } from '../utils/store';
 import allLessonsData from '../data/germanLessons.json';
 import {
   ArrowLeft, ArrowRight, CheckCircle, Circle, BookOpen, Check, X,
-  Volume2, Star, Lightbulb, ChevronRight, Award,
+  Volume2, Star, Lightbulb, ChevronRight, Award, ListChecks,
+  RotateCcw, Sparkles, BookMarked, Headphones, MessageSquare, Pencil,
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
 import PronunciationGuide from '../components/PronunciationGuide';
@@ -12,6 +13,64 @@ import pronunciationGuides from '../data/pronunciationGuides.json' assert { type
 
 const allLessons = allLessonsData;
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
+
+const CHECKLIST_ICONS = {
+  explanation: Lightbulb,
+  vocabulary: Star,
+  grammar: BookOpen,
+  examples: BookMarked,
+  practice: Pencil,
+  listening: Headphones,
+  reading: BookMarked,
+  writing: Pencil,
+  speaking: MessageSquare,
+};
+
+function ChecklistItem({ icon: Icon, label, done, onClick, color }) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        display: 'flex', alignItems: 'center', gap: '10px', width: '100%',
+        padding: '10px 12px', borderRadius: '8px', border: 'none',
+        background: done ? 'rgba(59,255,158,0.08)' : 'var(--bg-hover)',
+        color: done ? '#3bff9e' : 'var(--text-secondary)',
+        cursor: onClick ? 'pointer' : 'default',
+        fontSize: '13px', textAlign: 'left',
+        transition: 'background 0.2s, color 0.2s',
+      }}
+    >
+      {done
+        ? <CheckCircle size={16} color="#3bff9e" />
+        : <Icon size={16} style={{ opacity: 0.6 }} />
+      }
+      <span style={{ flex: 1 }}>{label}</span>
+      {done && <span style={{ fontSize: '11px', color: '#3bff9e' }}>Done</span>}
+    </button>
+  );
+}
+
+function PracticeLink({ to, icon: Icon, label, sub, color }) {
+  return (
+    <Link
+      to={to}
+      style={{
+        display: 'flex', alignItems: 'center', gap: '10px',
+        padding: '11px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: '500',
+        backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)',
+        textDecoration: 'none', border: '1px solid var(--border)',
+        transition: 'background 0.15s',
+      }}
+    >
+      <Icon size={16} style={{ color: color || 'var(--accent)', flexShrink: 0 }} />
+      <div style={{ flex: 1 }}>
+        <div>{label}</div>
+        {sub && <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '1px' }}>{sub}</div>}
+      </div>
+      <ArrowRight size={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
+    </Link>
+  );
+}
 
 export default function LessonDetailPage() {
   const { levelId, lessonId } = useParams();
@@ -24,6 +83,14 @@ export default function LessonDetailPage() {
   const [lessonCompleted, setLessonCompleted] = useState(false);
   const [showReview, setShowReview] = useState(false);
 
+  // Checklist state - UI-only, tracks what user has interacted with
+  const [checklist, setChecklist] = useState(() => {
+    try {
+      const raw = localStorage.getItem('dk_lesson_checklist_' + lessonId);
+      return raw ? JSON.parse(raw) : {};
+    } catch { return {}; }
+  });
+
   const completed = getCompletedLessons(levelId);
   const isDone = completed.includes(lessonId);
 
@@ -33,6 +100,57 @@ export default function LessonDetailPage() {
     setShowReview(false);
     setLessonCompleted(isDone);
   }, [lessonId, isDone]);
+
+  // Persist checklist
+  useEffect(() => {
+    try {
+      localStorage.setItem('dk_lesson_checklist_' + lessonId, JSON.stringify(checklist));
+    } catch {}
+  }, [checklist, lessonId]);
+
+  const levelLessons = useMemo(() =>
+    allLessons.filter(l => l.level === levelId).sort((a, b) => {
+      const numA = parseInt(a.id.match(/(\d+)$/)?.[1] || '0', 10);
+      const numB = parseInt(b.id.match(/(\d+)$/)?.[1] || '0', 10);
+      return numA - numB;
+    }),
+    [levelId]
+  );
+  const currentIdx = levelLessons.findIndex(l => l.id === lessonId);
+  const prevLesson = currentIdx > 0 ? levelLessons[currentIdx - 1] : null;
+  const nextLesson = currentIdx < levelLessons.length - 1 ? levelLessons[currentIdx + 1] : null;
+
+  const hasExercises = lesson?.guidedPractice?.length > 0;
+  const allAttempted = hasExercises
+    ? lesson.guidedPractice.every((_, i) => results[i] !== undefined)
+    : true;
+  const isAllCorrect = hasExercises
+    ? lesson.guidedPractice.every((_, i) => results[i] === true)
+    : false;
+
+  const toggleChecklist = (key) => {
+    setChecklist(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const totalChecklistItems = (() => {
+    let count = 0;
+    if (lesson.explanation) count++;
+    if (lesson.vocabulary?.length > 0) count++;
+    if (lesson.grammarFocus) count++;
+    if (lesson.examples?.length > 0) count++;
+    if (lesson.guidedPractice?.length > 0) count++;
+    return count;
+  })();
+  const doneChecklistItems = (() => {
+    let count = 0;
+    if (lesson.explanation && checklist.explanation) count++;
+    if (lesson.vocabulary?.length > 0 && checklist.vocabulary) count++;
+    if (lesson.grammarFocus && checklist.grammar) count++;
+    if (lesson.examples?.length > 0 && checklist.examples) count++;
+    if (lesson.guidedPractice?.length > 0 && checklist.practice) count++;
+    return count;
+  })();
+  const checklistProgress = totalChecklistItems > 0 ? Math.round(doneChecklistItems / totalChecklistItems * 100) : 0;
 
   if (!lesson) {
     return (
@@ -48,11 +166,6 @@ export default function LessonDetailPage() {
     );
   }
 
-  const levelLessons = allLessons.filter(l => l.level === levelId).sort((a, b) => a.id.localeCompare(b.id));
-  const currentIdx = levelLessons.findIndex(l => l.id === lessonId);
-  const prevLesson = currentIdx > 0 ? levelLessons[currentIdx - 1] : null;
-  const nextLesson = currentIdx < levelLessons.length - 1 ? levelLessons[currentIdx + 1] : null;
-
   const handleAnswer = (idx, answer) => {
     setUserAnswers(prev => ({ ...prev, [idx]: answer }));
   };
@@ -63,6 +176,8 @@ export default function LessonDetailPage() {
     const isCorrect = userAnswers[idx].toLowerCase().trim() === exercise.answer.toLowerCase().trim();
     setResults(prev => ({ ...prev, [idx]: isCorrect }));
     recordAnswer(levelId, lessonId, exercise.answer, userAnswers[idx], 'guidedPractice');
+    // Auto-check practice checklist item
+    if (!checklist.practice) toggleChecklist('practice');
   };
 
   const handleComplete = () => {
@@ -71,14 +186,15 @@ export default function LessonDetailPage() {
     setShowReview(true);
   };
 
-  const isAllCorrect = lesson.guidedPractice
-    ? lesson.guidedPractice.every((_, i) => results[i] === true)
-    : false;
+  const handleReviewLesson = () => {
+    setLessonCompleted(false);
+    setShowReview(false);
+    setUserAnswers({});
+    setResults({});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-  // Check if all exercises attempted
-  const allAttempted = lesson.guidedPractice
-    ? lesson.guidedPractice.every((_, i) => results[i] !== undefined)
-    : true;
+  if (!lesson) return null;
 
   return (
     <LevelLock levelId={levelId}>
@@ -101,8 +217,14 @@ export default function LessonDetailPage() {
             fontSize: '11px', fontWeight: '700', padding: '2px 8px', borderRadius: '4px',
             backgroundColor: color + '20', color,
           }}>{levelId}</span>
-          {isDone && (
-            <span style={{ fontSize: '11px', color }}>✓ Completed</span>
+          {lessonCompleted && (
+            <span style={{
+              fontSize: '11px', display: 'inline-flex', alignItems: 'center', gap: '4px',
+              color: '#3bff9e', background: 'rgba(59,255,158,0.1)', padding: '2px 8px',
+              borderRadius: '4px', fontWeight: '600',
+            }}>
+              <CheckCircle size={12} /> Completed
+            </span>
           )}
         </div>
         <h1 style={{ fontSize: '22px', fontWeight: 'bold', color: 'var(--text-primary)', marginBottom: '4px' }}>
@@ -111,9 +233,139 @@ export default function LessonDetailPage() {
         <p style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>{lesson.objective}</p>
       </div>
 
+      {/* Completed Banner */}
+      {lessonCompleted && (
+        <div style={{
+          borderRadius: '12px', padding: '20px 24px', marginBottom: '20px',
+          background: 'linear-gradient(135deg, rgba(59,255,158,0.12), rgba(59,255,158,0.04))',
+          border: '1px solid rgba(59,255,158,0.3)',
+          textAlign: 'center',
+        }}>
+          <Sparkles size={28} color="#3bff9e" style={{ marginBottom: '8px' }} />
+          <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#3bff9e', marginBottom: '4px' }}>
+            Lesson completed!
+          </h2>
+          <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '14px' }}>
+            Great work on {lesson.title}. Here is what to do next.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
+            <button
+              onClick={handleReviewLesson}
+              style={{
+                padding: '9px 18px', borderRadius: '8px', border: '1px solid rgba(59,255,158,0.3)',
+                background: 'rgba(59,255,158,0.08)', color: '#3bff9e',
+                cursor: 'pointer', fontSize: '13px', fontWeight: '600',
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+              }}
+            >
+              <RotateCcw size={14} /> Review this lesson
+            </button>
+            {nextLesson && (
+              <Link
+                to={`/level/${levelId}/lessons/${nextLesson.id}`}
+                style={{
+                  padding: '9px 18px', borderRadius: '8px', border: 'none',
+                  background: `linear-gradient(135deg, ${color}, ${color}cc)`,
+                  color: '#fff', cursor: 'pointer', fontSize: '13px', fontWeight: '700',
+                  textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px',
+                }}
+              >
+                Next: {nextLesson.title} <ArrowRight size={14} />
+              </Link>
+            )}
+            {!nextLesson && (
+              <Link
+                to={`/level/${levelId}/exam`}
+                style={{
+                  padding: '9px 18px', borderRadius: '8px', border: 'none',
+                  background: `linear-gradient(135deg, ${color}, ${color}cc)`,
+                  color: '#fff', cursor: 'pointer', fontSize: '13px', fontWeight: '700',
+                  textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px',
+                }}
+              >
+                Take {levelId} Exam <ArrowRight size={14} />
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Lesson Checklist */}
+      <div style={{
+        borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
+        backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+          <h3 style={{ fontSize: '13px', fontWeight: '700', color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <ListChecks size={15} /> Lesson Checklist
+          </h3>
+          <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+            {doneChecklistItems}/{totalChecklistItems}
+          </span>
+        </div>
+        {totalChecklistItems > 0 && (
+          <div style={{
+            width: '100%', height: '4px', borderRadius: '2px',
+            background: 'var(--bg-hover)', marginBottom: '10px', overflow: 'hidden',
+          }}>
+            <div style={{
+              width: checklistProgress + '%', height: '100%',
+              borderRadius: '2px', background: `linear-gradient(90deg, ${color}, #3bff9e)`,
+              transition: 'width 0.3s ease',
+            }} />
+          </div>
+        )}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+          {lesson.explanation && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.explanation} label="Read the explanation"
+              done={checklist.explanation} color={color}
+              onClick={() => {
+                toggleChecklist('explanation');
+                setTimeout(() => document.getElementById('section-explanation')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
+          {lesson.vocabulary?.length > 0 && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.vocabulary} label="Study the vocabulary"
+              done={checklist.vocabulary} color={color}
+              onClick={() => toggleChecklist('vocabulary')}
+            />
+          )}
+          {lesson.grammarFocus && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.grammar} label="Review grammar focus"
+              done={checklist.grammar} color={color}
+              onClick={() => toggleChecklist('grammar')}
+            />
+          )}
+          {lesson.examples?.length > 0 && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.examples} label="Read the examples"
+              done={checklist.examples} color={color}
+              onClick={() => toggleChecklist('examples')}
+            />
+          )}
+          {lesson.guidedPractice?.length > 0 && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.practice} label="Complete guided practice"
+              done={results !== undefined && hasExercises
+                ? lesson.guidedPractice.every((_, i) => results[i] !== undefined)
+                : checklist.practice}
+              color={color}
+              onClick={() => {
+                if (!checklist.practice) toggleChecklist('practice');
+                setTimeout(() => document.getElementById('section-guided-practice')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
+        </div>
+      </div>
+
       {/* Explanation */}
       {lesson.explanation && (
-        <div style={{
+        <div id="section-explanation" style={{
           borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
@@ -126,7 +378,7 @@ export default function LessonDetailPage() {
 
       {/* Examples */}
       {lesson.examples && lesson.examples.length > 0 && (
-        <div style={{
+        <div id="section-examples" style={{
           borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
@@ -144,7 +396,7 @@ export default function LessonDetailPage() {
 
       {/* Grammar Focus */}
       {lesson.grammarFocus && (
-        <div style={{
+        <div id="section-grammar" style={{
           borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
@@ -157,7 +409,7 @@ export default function LessonDetailPage() {
 
       {/* Vocabulary */}
       {lesson.vocabulary && lesson.vocabulary.length > 0 && (
-        <div style={{
+        <div id="section-vocabulary" style={{
           borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
@@ -176,12 +428,21 @@ export default function LessonDetailPage() {
               </div>
             ))}
           </div>
+          <Link
+            to={`/level/${levelId}/vocabulary`}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '10px',
+              fontSize: '13px', color: 'var(--accent)', textDecoration: 'none',
+            }}
+          >
+            Practice these words <ChevronRight size={14} />
+          </Link>
         </div>
       )}
 
       {/* Guided Practice */}
       {lesson.guidedPractice && lesson.guidedPractice.length > 0 && (
-        <div style={{
+        <div id="section-guided-practice" style={{
           borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
@@ -273,17 +534,18 @@ export default function LessonDetailPage() {
         {!lessonCompleted && (
           <button
             onClick={handleComplete}
+            disabled={!allAttempted}
             style={{
-              padding: '12px 32px', borderRadius: '8px', border: 'none', cursor: 'pointer',
-              background: `linear-gradient(135deg, ${color}, ${color}cc)`,
-              color: '#fff', fontSize: '15px', fontWeight: '700',
+              padding: '12px 32px', borderRadius: '8px', border: 'none', cursor: allAttempted ? 'pointer' : 'not-allowed',
+              background: allAttempted ? `linear-gradient(135deg, ${color}, ${color}cc)` : 'var(--bg-hover)',
+              color: allAttempted ? '#fff' : 'var(--text-muted)',
+              fontSize: '15px', fontWeight: '700',
               display: 'flex', alignItems: 'center', gap: '8px',
               opacity: allAttempted ? 1 : 0.6,
             }}
-            disabled={!allAttempted}
           >
             <CheckCircle size={18} />
-            {allAttempted ? 'Mark Lesson Complete' : 'Complete all exercises first'}
+            {allAttempted ? 'Mark Lesson Complete' : hasExercises ? 'Complete all exercises first' : 'Mark Lesson Complete'}
           </button>
         )}
         {lessonCompleted && (
@@ -299,7 +561,7 @@ export default function LessonDetailPage() {
       </div>
 
       {/* Navigation */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', marginTop: '8px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', gap: '12px', marginTop: '8px', flexWrap: 'wrap' }}>
         {prevLesson ? (
           <Link
             to={`/level/${levelId}/lessons/${prevLesson.id}`}
@@ -313,7 +575,7 @@ export default function LessonDetailPage() {
             <ArrowLeft size={16} /> {prevLesson.title}
           </Link>
         ) : <div />}
-        {nextLesson ? (
+        {nextLesson && !lessonCompleted ? (
           <Link
             to={`/level/${levelId}/lessons/${nextLesson.id}`}
             style={{
@@ -325,7 +587,7 @@ export default function LessonDetailPage() {
           >
             {nextLesson.title} <ArrowRight size={16} />
           </Link>
-        ) : <div />}
+        ) : !nextLesson ? <div /> : null}
       </div>
 
       {/* Pronunciation Guide - A1/A2 only */}
@@ -346,69 +608,45 @@ export default function LessonDetailPage() {
           backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
         }}>
           <h3 style={{ fontSize: '14px', fontWeight: '700', color: 'var(--accent)', marginBottom: '12px' }}>
-            Continue practicing this lesson
+            {lessonCompleted ? 'Recommended next steps' : 'Continue practicing this lesson'}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <Link
+            <PracticeLink
               to={`/level/${levelId}/grammar`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Practice Grammar <ArrowRight size={16} />
-            </Link>
-            <Link
+              icon={BookOpen} label="Practice Grammar"
+              sub="Reinforce grammar concepts from this lesson"
+              color={color}
+            />
+            <PracticeLink
               to={`/level/${levelId}/vocabulary`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Review Flashcards <ArrowRight size={16} />
-            </Link>
-            <Link
+              icon={BookMarked} label="Review Flashcards"
+              sub="Study vocabulary with spaced repetition"
+              color={color}
+            />
+            <PracticeLink
               to={`/level/${levelId}/reading`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Practice Reading <ArrowRight size={16} />
-            </Link>
-            <Link
+              icon={BookOpen} label="Practice Reading"
+              sub="Build comprehension with level-appropriate texts"
+              color={color}
+            />
+            <PracticeLink
               to={`/level/${levelId}/listening`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Practice Listening <ArrowRight size={16} />
-            </Link>
-            <Link
+              icon={Headphones} label="Practice Listening"
+              sub="Improve listening comprehension"
+              color={color}
+            />
+            <PracticeLink
               to={`/level/${levelId}/writing`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Writing Practice <ArrowRight size={16} />
-            </Link>
-            <Link
+              icon={Pencil} label="Writing Practice"
+              sub="Practice written expression"
+              color={color}
+            />
+            <PracticeLink
               to={`/level/${levelId}/speaking`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '10px 14px', borderRadius: '8px', fontSize: '14px', fontWeight: '500',
-                backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', textDecoration: 'none',
-              }}
-            >
-              Speaking Practice <ArrowRight size={16} />
-            </Link>
+              icon={MessageSquare} label="Speaking Practice"
+              sub="Practice spoken communication"
+              color={color}
+            />
           </div>
         </div>
       )}

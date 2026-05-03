@@ -1,90 +1,117 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X, Hash } from 'lucide-react';
+import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X, Hash, RotateCcw } from 'lucide-react';
 
-// All levels available
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
-// Map partOfSpeech to cleaner display categories for filtering
 const POS_GROUPS = {
-  noun: 'noun',
-  verb: 'verb',
-  adjective: 'adjective',
-  adj: 'adjective',
-  adverb: 'adverb',
-  phrase: 'phrase',
-  preposition: 'preposition',
-  'modal verb': 'other',
-  conjunction: 'other',
-  number: 'other',
-  'question word': 'other',
+  noun: 'noun', verb: 'verb', adjective: 'adjective', adj: 'adjective',
+  adverb: 'adverb', phrase: 'phrase', preposition: 'preposition',
+  'modal verb': 'other', conjunction: 'other', number: 'other', 'question word': 'other',
 };
 
 const POS_FILTERS = ['all', 'noun', 'verb', 'adjective', 'adverb', 'phrase', 'other'];
+const FILTERS_LS_KEY = 'deutsch_klinik_vocab_filters';
 
-// Medical keywords for the medical filter
+function loadSavedFilters() {
+  try {
+    const raw = localStorage.getItem(FILTERS_LS_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (typeof parsed !== 'object' || parsed === null) return null;
+    return parsed;
+  } catch { return null; }
+}
+function saveFilters(filters) {
+  try { localStorage.setItem(FILTERS_LS_KEY, JSON.stringify(filters)); } catch {}
+}
+function clearSavedFilters() {
+  try { localStorage.removeItem(FILTERS_LS_KEY); } catch {}
+}
+
 const MEDICAL_KEYWORDS = [
-  'medical', 'health', 'klinik', 'hospital', 'doctor', 'patient', 'pharmacy', 'apotheke',
-  'emergency', 'notfall', 'surgery', 'operation', 'orthopedics', 'orthopädie', 'diagnosis',
-  'diagnose', 'diagnostic', 'therapy', 'therapie', 'documentation', 'dokumentation', 'fsp',
-  'ethics', 'ethik', 'symptom', 'treatment', 'behandlung', 'prescription', 'rezept',
-  'medication', 'medikament', 'examination', 'untersuchung', 'ward', 'station',
-  'clinic', 'klinisch', 'nurse', 'krankenschwester', 'pflege', 'arzt', 'ärztlich',
-  'krankheit', 'disease', 'infection', 'infektion', 'injury', 'verletzung',
-  'pain', 'schmerz', 'fever', 'fieber', 'blood', 'blut', 'pressure', 'druck',
-  'heart', 'herz', 'lung', 'lunge', 'bone', 'knochen', 'muscle', 'muskel',
-  'nerve', 'nerv', 'brain', 'gehirn', 'skin', 'haut', 'cell', 'zelle',
-  'anatomy', 'anatomie', 'physiology', 'physiologie', 'pathology', 'pathologie',
-  'psychiatry', 'psychiatrie', 'psychology', 'psychologie', 'therapy', 'physio',
-  'rehabilitation', 'reha', 'vaccination', 'impfung', 'screening', 'vorsorge',
-  'imaging', 'bildgebung', 'ultraschall', 'röntgen', 'mrt', 'ct', 'ekg',
-  'endoscopy', 'endoskopie', 'biopsy', 'biopsie', 'laboratory', 'labor',
-  'pharmacology', 'pharmakologie', 'oncology', 'onkologie', 'cardiology',
-  'kardiologie', 'neurology', 'neurologie', 'pediatrics', 'pädiatrie',
-  'germ', 'keim', 'antibiotic', 'antibiotikum', 'surgery', 'chirurgie',
-  'anesthesia', 'anästhesie', 'intensive care', 'intensiv', 'icu',
-  'palliative', 'palliativ', 'hospice', 'hospiz', 'ethics committee',
-  'ethikkommission', 'informed consent', 'aufklärung', 'patient education',
-  'compliance', 'adhärenz', 'prognosis', 'prognose', 'diagnosis',
-  'differential diagnosis', 'differentialdiagnose', 'follow-up',
-  'nachsorge', 'aftercare', 'recovery', 'genesung', 'wound', 'wunde',
-  'bandage', 'verband', 'cast', 'gips', 'crutch', 'krücke', 'wheelchair',
-  'rollstuhl', 'stretcher', 'trage', 'ambulance', 'krankenwagen', 'rettung',
-  'first aid', 'erste hilfe', 'hygiene', 'hygiene', 'sterile', 'steril',
-  'disinfection', 'desinfektion', 'quarantine', 'quarantäne', 'isolation',
-  'side effect', 'nebenwirkung', 'allergy', 'allergie', 'chronic', 'chronisch',
-  'acute', 'akut', 'benign', 'gutartig', 'malignant', 'bösartig', 'tumor',
-  'cancer', 'krebs', 'diabetes', 'diabetes', 'hypertension', 'hypertonie',
-  'asthma', 'asthma', 'stroke', 'schlaganfall', 'heart attack', 'infarkt',
-  'pneumonia', 'lungenentzündung', 'fracture', 'fraktur', 'sprain',
-  'verstauchung', 'dislocation', 'luxation', 'hernia', 'hernie',
-  'appendicitis', 'blinddarmentzündung', 'ulcer', 'geschwür', 'inflammation',
-  'entzündung', 'edema', 'ödem', 'swelling', 'schwellung',
-  'public health', 'gesundheitswesen', 'health insurance', 'krankenkasse',
-  'sick note', 'krankschreibung', 'medical certificate', 'attest',
-  'discharge', 'entlassung', 'referral', 'überweisung', 'admission',
-  'aufnahme', 'chart', 'akte', 'medical record', 'krankenakte',
-  'healthcare', 'gesundheitsversorgung', 'health system', 'gesundheitssystem',
+  'medical','health','klinik','hospital','doctor','patient','pharmacy','apotheke',
+  'emergency','notfall','surgery','operation','orthopedics','orthopädie','diagnosis',
+  'diagnose','diagnostic','therapy','therapie','documentation','dokumentation','fsp',
+  'ethics','ethik','symptom','treatment','behandlung','prescription','rezept',
+  'medication','medikament','examination','untersuchung','ward','station',
+  'clinic','klinisch','nurse','krankenschwester','pflege','arzt','ärztlich',
+  'krankheit','disease','infection','infektion','injury','verletzung',
+  'pain','schmerz','fever','fieber','blood','blut','pressure','druck',
+  'heart','herz','lung','lunge','bone','knochen','muscle','muskel',
+  'nerve','nerv','brain','gehirn','skin','haut','cell','zelle',
+  'anatomy','anatomie','physiology','physiologie','pathology','pathologie',
+  'psychiatry','psychiatrie','psychology','psychologie','therapy','physio',
+  'rehabilitation','reha','vaccination','impfung','screening','vorsorge',
+  'imaging','bildgebung','ultraschall','röntgen','mrt','ct','ekg',
+  'endoscopy','endoskopie','biopsy','biopsie','laboratory','labor',
+  'pharmacology','pharmakologie','oncology','onkologie','cardiology',
+  'kardiologie','neurology','neurologie','pediatrics','pädiatrie',
+  'germ','keim','antibiotic','antibiotikum','surgery','chirurgie',
+  'anesthesia','anästhesie','intensive care','intensiv','icu',
+  'palliative','palliativ','hospice','hospiz','ethics committee',
+  'ethikkommission','informed consent','aufklärung','patient education',
+  'compliance','adhärenz','prognosis','prognose','diagnosis',
+  'differential diagnosis','differentialdiagnose','follow-up',
+  'nachsorge','aftercare','recovery','genesung','wound','wunde',
+  'bandage','verband','cast','gips','crutch','krücke','wheelchair',
+  'rollstuhl','stretcher','trage','ambulance','krankenwagen','rettung',
+  'first aid','erste hilfe','hygiene','hygiene','sterile','steril',
+  'disinfection','desinfektion','quarantine','quarantäne','isolation',
+  'side effect','nebenwirkung','allergy','allergie','chronic','chronisch',
+  'acute','akut','benign','gutartig','malignant','bösartig','tumor',
+  'cancer','krebs','diabetes','diabetes','hypertension','hypertonie',
+  'asthma','asthma','stroke','schlaganfall','heart attack','infarkt',
+  'pneumonia','lungenentzündung','fracture','fraktur','sprain',
+  'verstauchung','dislocation','luxation','hernia','hernie',
+  'appendicitis','blinddarmentzündung','ulcer','geschwür','inflammation',
+  'entzündung','edema','ödem','swelling','schwellung',
+  'public health','gesundheitswesen','health insurance','krankenkasse',
+  'sick note','krankschreibung','medical certificate','attest',
+  'discharge','entlassung','referral','überweisung','admission',
+  'aufnahme','chart','akte','medical record','krankenakte',
+  'healthcare','gesundheitsversorgung','health system','gesundheitssystem',
 ];
 
-const wordPos = w => w.partOfSpeech || 'other';
-const wordNounArticle = w => w.article || '';
+function wordPos(w) {
+  return w.partOfSpeech || 'other';
+}
 
-// Check if a word matches the medical filter
+function wordNounArticle(w) {
+  return w.article || '';
+}
+
 function isMedicalWord(word) {
   const fields = [
     word.word, word.translation, word.topic, word.example, word.exampleTranslation,
     ...(word.tags || []), word.lessonId, word.category
   ].filter(Boolean).map(f => f.toLowerCase());
-
   const searchText = fields.join(' ');
   return MEDICAL_KEYWORDS.some(kw => searchText.includes(kw.toLowerCase()));
 }
 
-// Smart display: extract article from word if it's baked in
+function isConnectorWord(word) {
+  const pos = wordPos(word);
+  return pos === 'conjunction' || pos === 'preposition' || pos === 'adverb' || pos === 'phrase';
+}
+
+function isFormalWord(word) {
+  const tags = (word.tags || []).map(t => t.toLowerCase());
+  const fields = [word.word, word.translation, word.topic].filter(Boolean).map(f => f.toLowerCase());
+  const combined = [...tags, ...fields].join(' ');
+  return /formal|formell|officious|amtlich|bürokratisch|behörde|official|schriftlich|gehoben/.test(combined);
+}
+
+function isExamWord(word) {
+  const tags = (word.tags || []).map(t => t.toLowerCase());
+  const fields = [word.word, word.translation, word.topic].filter(Boolean).map(f => f.toLowerCase());
+  const combined = [...tags, ...fields].join(' ');
+  return /exam|prüfung|test|fsp|goethe|telc|ösd|b1|b2|c1|a1|a2|important|wichtig|common|häufig|key|schlüssel/.test(combined);
+}
+
 function displayWord(word) {
   const articleMatch = word.word.match(/^(der|die|das)\s+(.+)/i);
   if (articleMatch) {
@@ -93,10 +120,15 @@ function displayWord(word) {
   return { display: word.word, article: wordNounArticle(word) };
 }
 
-// Compute all words with level info once
 const allWords = LEVELS.flatMap(level =>
   (vocabData[level] || []).map(w => ({ ...w, _level: level }))
 );
+
+function validateFilter(key, value, allowed) {
+  if (value === undefined || value === null) return false;
+  if (allowed && !allowed.includes(value)) return false;
+  return true;
+}
 
 export default function VocabularyPage() {
   const { levelId } = useParams();
@@ -112,9 +144,26 @@ export default function VocabularyPage() {
   const [search, setSearch] = useState('');
   const [levelFilter, setLevelFilter] = useState('all');
   const [posFilter, setPosFilter] = useState('all');
-  const [medicalOnly, setMedicalOnly] = useState(false);
   const [lessonFilter, setLessonFilter] = useState('all');
+  const [quickFilter, setQuickFilter] = useState(null);
+  const [masteryFilter, setMasteryFilter] = useState('all');
+  const [filtersLoaded, setFiltersLoaded] = useState(false);
 
+  // Load saved filters from localStorage on mount
+  useEffect(() => {
+    const saved = loadSavedFilters();
+    if (saved) {
+      if (validateFilter('search', saved.search)) setSearch(saved.search);
+      if (validateFilter('levelFilter', saved.levelFilter, [...LEVELS, 'all'])) setLevelFilter(saved.levelFilter);
+      if (validateFilter('posFilter', saved.posFilter, POS_FILTERS)) setPosFilter(saved.posFilter);
+      if (validateFilter('lessonFilter', saved.lessonFilter)) setLessonFilter(saved.lessonFilter);
+      if (validateFilter('quickFilter', saved.quickFilter)) setQuickFilter(saved.quickFilter);
+      if (validateFilter('masteryFilter', saved.masteryFilter, ['all', 'unseen', 'weak', 'mastered'])) setMasteryFilter(saved.masteryFilter);
+    }
+    setFiltersLoaded(true);
+  }, []);
+
+  // Reset state when levelId changes
   useEffect(() => {
     setCurrentIndex(0);
     setShowAnswer(false);
@@ -124,12 +173,27 @@ export default function VocabularyPage() {
     setMode('browse');
   }, [levelId]);
 
-  // Derive which words to show based on filters
+  // Save filters to localStorage when they change (only after initial load)
+  useEffect(() => {
+    if (!filtersLoaded) return;
+    saveFilters({ search, levelFilter, posFilter, lessonFilter, quickFilter, masteryFilter });
+  }, [search, levelFilter, posFilter, lessonFilter, quickFilter, masteryFilter, filtersLoaded]);
+
+  // Derive which words to show based on level filter
   const levelWords = useMemo(() => {
     if (levelFilter === 'all') return allWords;
     return (vocabData[levelFilter] || []).map(w => ({ ...w, _level: levelFilter }));
   }, [levelFilter]);
 
+  // Validate lesson filter when level changes
+  const validLessonFilter = useMemo(() => {
+    const lessonsSet = new Set();
+    levelWords.forEach(w => { if (w.lessonId) lessonsSet.add(w.lessonId); });
+    if (lessonFilter !== 'all' && !lessonsSet.has(lessonFilter)) return 'all';
+    return lessonFilter;
+  }, [lessonFilter, levelWords]);
+
+  // Filtered words based on all active filters
   const filteredWords = useMemo(() => {
     let words = levelWords;
 
@@ -167,18 +231,39 @@ export default function VocabularyPage() {
       }
     }
 
-    // Medical filter
-    if (medicalOnly) {
+    // Quick filter (mutually exclusive categories)
+    if (quickFilter === 'medical') {
       words = words.filter(w => isMedicalWord(w));
+    } else if (quickFilter === 'nouns') {
+      words = words.filter(w => wordPos(w) === 'noun');
+    } else if (quickFilter === 'verbs') {
+      words = words.filter(w => wordPos(w) === 'verb');
+    } else if (quickFilter === 'connectors') {
+      words = words.filter(w => isConnectorWord(w));
+    } else if (quickFilter === 'formal') {
+      words = words.filter(w => isFormalWord(w));
+    } else if (quickFilter === 'exam') {
+      words = words.filter(w => isExamWord(w));
+    }
+
+    // Mastery filter
+    if (masteryFilter !== 'all') {
+      words = words.filter(w => {
+        const mastery = getVocabMastery(`${w._level}_${w.id}`);
+        if (masteryFilter === 'unseen') return mastery.correct === 0 && mastery.incorrect === 0;
+        if (masteryFilter === 'weak') return mastery.incorrect > mastery.correct;
+        if (masteryFilter === 'mastered') return mastery.mastered;
+        return true;
+      });
     }
 
     // Lesson filter
-    if (lessonFilter !== 'all') {
-      words = words.filter(w => w.lessonId === lessonFilter);
+    if (validLessonFilter !== 'all') {
+      words = words.filter(w => w.lessonId === validLessonFilter);
     }
 
     return words;
-  }, [levelWords, search, posFilter, medicalOnly, lessonFilter]);
+  }, [levelWords, search, posFilter, quickFilter, masteryFilter, validLessonFilter]);
 
   // Unique lessons for the lesson filter (within selected level)
   const lessons = useMemo(() => {
@@ -186,6 +271,44 @@ export default function VocabularyPage() {
     levelWords.forEach(w => { if (w.lessonId) set.add(w.lessonId); });
     return [...set].sort();
   }, [levelWords]);
+
+  // Quick filter counts
+  const quickFilterCounts = useMemo(() => {
+    return {
+      nouns: levelWords.filter(w => wordPos(w) === 'noun').length,
+      verbs: levelWords.filter(w => wordPos(w) === 'verb').length,
+      medical: levelWords.filter(w => isMedicalWord(w)).length,
+      connectors: levelWords.filter(w => isConnectorWord(w)).length,
+      formal: levelWords.filter(w => isFormalWord(w)).length,
+      exam: levelWords.filter(w => isExamWord(w)).length,
+    };
+  }, [levelWords]);
+
+  const clearAllFilters = useCallback(() => {
+    setSearch('');
+    setLevelFilter('all');
+    setPosFilter('all');
+    setLessonFilter('all');
+    setQuickFilter(null);
+    setMasteryFilter('all');
+    clearSavedFilters();
+  }, []);
+
+  const hasActiveFilters = search || levelFilter !== 'all' || posFilter !== 'all' || lessonFilter !== 'all' || quickFilter || masteryFilter !== 'all';
+
+  const activeFilterLabels = useMemo(() => {
+    const labels = [];
+    if (levelFilter !== 'all') labels.push(`Level: ${levelFilter}`);
+    if (posFilter !== 'all') labels.push(`Type: ${posFilter}`);
+    if (quickFilter) {
+      const qfLabels = { nouns: 'Nouns', verbs: 'Verbs', medical: 'Medical', connectors: 'Connectors', formal: 'Formal', exam: 'Exam' };
+      labels.push(qfLabels[quickFilter] || quickFilter);
+    }
+    if (masteryFilter !== 'all') labels.push(`Mastery: ${masteryFilter}`);
+    if (lessonFilter !== 'all') labels.push(`Lesson: ${lessonFilter}`);
+    if (search) labels.push(`"${search}"`);
+    return labels;
+  }, [levelFilter, posFilter, quickFilter, masteryFilter, lessonFilter, search]);
 
   const s = {
     card: { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' },
@@ -202,6 +325,7 @@ export default function VocabularyPage() {
     }),
   };
 
+  // Quiz mode
   if (mode === 'quiz') {
     const words = (vocabData[levelId] || []);
 
@@ -263,9 +387,10 @@ export default function VocabularyPage() {
     );
   }
 
-  // Browse mode with search and filters
+  // Browse mode
   const words = (vocabData[levelId] || []);
 
+  // Empty vocab check
   if (words.length === 0) {
     return (
       <LevelLock levelId={levelId}>
@@ -347,7 +472,7 @@ export default function VocabularyPage() {
         </div>
       </div>
 
-      {/* Filters row */}
+      {/* Filter dropdowns row */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
         <Filter size={14} style={{ color: 'var(--text-muted)' }} />
 
@@ -374,18 +499,22 @@ export default function VocabularyPage() {
           ))}
         </select>
 
-        {/* Medical toggle */}
-        <button
-          onClick={() => { setMedicalOnly(!medicalOnly); setCurrentIndex(0); }}
-          style={s.filterBtn(medicalOnly)}
+        {/* Mastery filter */}
+        <select
+          value={masteryFilter}
+          onChange={e => { setMasteryFilter(e.target.value); setCurrentIndex(0); }}
+          style={s.select}
         >
-          {medicalOnly ? '✓ ' : ''}Medical
-        </button>
+          <option value="all">All Mastery</option>
+          <option value="unseen">Unseen</option>
+          <option value="weak">Weak</option>
+          <option value="mastered">Mastered</option>
+        </select>
 
         {/* Lesson filter (only when a specific level is selected) */}
         {levelFilter !== 'all' && lessons.length > 0 && (
           <select
-            value={lessonFilter}
+            value={validLessonFilter}
             onChange={e => { setLessonFilter(e.target.value); setCurrentIndex(0); }}
             style={s.select}
           >
@@ -395,13 +524,52 @@ export default function VocabularyPage() {
             ))}
           </select>
         )}
+
+        {/* Reset filters button */}
+        {hasActiveFilters && (
+          <button
+            onClick={clearAllFilters}
+            style={{ ...s.btn, color: '#ef4444', borderColor: '#ef4444', display: 'flex', alignItems: 'center', gap: '0.25rem' }}
+          >
+            <RotateCcw size={14} /> Reset
+          </button>
+        )}
       </div>
+
+      {/* Quick filter buttons */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '0.75rem' }}>
+        {[
+          { key: 'nouns', label: 'Nouns', count: quickFilterCounts.nouns },
+          { key: 'verbs', label: 'Verbs', count: quickFilterCounts.verbs },
+          { key: 'medical', label: 'Medical', count: quickFilterCounts.medical },
+          { key: 'connectors', label: 'Connectors', count: quickFilterCounts.connectors },
+          { key: 'formal', label: 'Formal', count: quickFilterCounts.formal },
+          { key: 'exam', label: 'Exam', count: quickFilterCounts.exam },
+        ].map(qf => (
+          <button
+            key={qf.key}
+            onClick={() => { setQuickFilter(quickFilter === qf.key ? null : qf.key); setCurrentIndex(0); }}
+            style={s.filterBtn(quickFilter === qf.key)}
+          >
+            {qf.label}
+            <span style={{ marginLeft: '0.3rem', opacity: 0.6, fontSize: '0.7rem' }}>{qf.count}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Active filter labels */}
+      {activeFilterLabels.length > 0 && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '0.75rem', alignItems: 'center' }}>
+          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Active filters:</span>
+          {activeFilterLabels.map((label, i) => (
+            <span key={i} style={{ ...s.tag, background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', fontSize: '0.7rem' }}>{label}</span>
+          ))}
+        </div>
+      )}
 
       {/* Result count */}
       <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
         Showing {browseWords.length} of {totalWords} words
-        {search && ` (filtered by "${search}")`}
-        {medicalOnly && ' (medical only)'}
       </p>
 
       {/* No results state */}
@@ -409,10 +577,7 @@ export default function VocabularyPage() {
         <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
           <X size={32} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>No vocabulary found for this search/filter.</p>
-          <button
-            style={{ ...s.btn, marginTop: '1rem' }}
-            onClick={() => { setSearch(''); setPosFilter('all'); setMedicalOnly(false); setLevelFilter('all'); setLessonFilter('all'); }}
-          >
+          <button style={{ ...s.btn, marginTop: '1rem' }} onClick={clearAllFilters}>
             Clear All Filters
           </button>
         </div>

@@ -146,21 +146,43 @@ export function getLevelProgress(level, key) {
 
 // ===== LESSON TRACKING =====
 
+/**
+ * Extract lesson IDs from a mixed array of strings and { id, completedAt } objects.
+ */
+function getLessonIds(arr) {
+  if (!Array.isArray(arr)) return [];
+  return arr.map(item => (typeof item === 'string' ? item : item?.id)).filter(Boolean);
+}
+
 export function completeLesson(level, lessonId) {
   if (!state.completedLessons[level]) {
     state.completedLessons[level] = [];
   }
-  if (!state.completedLessons[level].includes(lessonId)) {
-    state.completedLessons[level].push(lessonId);
+  const ids = getLessonIds(state.completedLessons[level]);
+  if (!ids.includes(lessonId)) {
+    state.completedLessons[level].push({
+      id: lessonId,
+      completedAt: new Date().toISOString(),
+    });
   }
   saveState(state);
 }
 
 export function isLessonCompleted(level, lessonId) {
-  return state.completedLessons[level]?.includes(lessonId) || false;
+  const arr = state.completedLessons[level];
+  if (!Array.isArray(arr)) return false;
+  return arr.some(item => (typeof item === 'string' ? item : item?.id) === lessonId);
 }
 
 export function getCompletedLessons(level) {
+  return getLessonIds(state.completedLessons[level]);
+}
+
+/**
+ * Get full completed lesson records (strings or objects) for a given level.
+ * Used by components that need timestamps.
+ */
+export function getRawCompletedLessons(level) {
   return state.completedLessons[level] || [];
 }
 

@@ -1,21 +1,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { getState, updateState, updateStreak, getLevelProgress, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked } from '../utils/store';
+import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked } from '../utils/store';
+import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, getWeeklyActiveCount, getBestWeeklyActivity, getMostRecentActivity, getActivityRoute, formatRelativeTime, getLocalDateKey } from '../utils/activityStreak';
 import levelsData from '../data/levels.json';
 import allLessonsData from '../data/germanLessons.json';
 import germanVocabulary from '../data/germanVocabulary.json';
 import grammarData from '../data/grammar.json';
-import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight } from 'lucide-react';
-import StudyGoalTracker from '../components/StudyGoalTracker';
-
-const skillIcons = {
-  grammar: BookOpen,
-  vocabulary: BookOpen,
-  reading: FileText,
-  listening: Headphones,
-  writing: PenTool,
-  speaking: Mic,
-};
+import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
+import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 
 const allLessons = allLessonsData;
 
@@ -43,46 +35,23 @@ export default function Dashboard() {
   const [todayTasks, setTodayTasks] = useState([]);
 
   useEffect(() => {
-    updateStreak();
     const s = getState();
     setState({ ...s });
     generateDailyTasks(s);
   }, []);
 
-  // === Unlocked level detection ===
-  const activeLevel = useMemo(() => {
-    // Check C1 down to A1 -- find the highest level that is unlocked
-    const order = ['A1','A2','B1','B2','C1'];
-    for (let i = order.length - 1; i >= 0; i--) {
-      if (isLevelUnlocked(order[i], levelsData.levels)) {
-        return order[i];
-      }
-    }
-    return 'A1';
-  }, [state.exams]);
-
-  // === Highest passed level ===
-  const highestPassedLevel = useMemo(() => {
-    const order = ['A1','A2','B1','B2','C1'];
-    for (let i = order.length - 1; i >= 0; i--) {
-      if (state.exams[order[i]]?.passed) return order[i];
-    }
-    return null;
-  }, [state.exams]);
-
-  // === Current study level (active unlocked, or the one being worked on) ===
   const studyLevel = state.currentLevel;
 
   // === Next incomplete lesson ===
   const nextLesson = useMemo(() => {
-    const completed = state.completedLessons?.[studyLevel] || [];
+    const completed = getCompletedLessons(studyLevel);
     const levelLessons = allLessons.filter(l => l.level === studyLevel);
     return levelLessons.find(l => !completed.includes(l.id)) || null;
   }, [state.completedLessons, studyLevel]);
 
   // === All lessons done for current level? ===
   const allLessonsDone = useMemo(() => {
-    const completed = state.completedLessons?.[studyLevel] || [];
+    const completed = getCompletedLessons(studyLevel);
     const levelLessons = allLessons.filter(l => l.level === studyLevel);
     return levelLessons.length > 0 && levelLessons.every(l => completed.includes(l.id));
   }, [state.completedLessons, studyLevel]);
@@ -101,16 +70,9 @@ export default function Dashboard() {
     return getDueVocabWords(ids).length;
   }, [studyLevel, state.vocabularyMastery]);
 
-  // === Grammar progress ===
-  const grammarProgress = useMemo(() => {
-    const prog = state.levels[studyLevel];
-    if (!prog || !prog.grammar) return 0;
-    return Math.min(prog.grammar.length, GRAMMAR_COUNT[studyLevel]);
-  }, [state.levels, studyLevel]);
-
   // === Lesson progress ===
   const lessonProgress = useMemo(() => {
-    const completed = state.completedLessons?.[studyLevel] || [];
+    const completed = getCompletedLessons(studyLevel);
     const total = allLessons.filter(l => l.level === studyLevel).length;
     return { completed: completed.length, total };
   }, [state.completedLessons, studyLevel]);
@@ -127,6 +89,45 @@ export default function Dashboard() {
 
   // === Mistake count ===
   const mistakesCount = Object.keys(state.mistakeNotebook || {}).length;
+
+  // === Mistake Review Card data ===
+  const mistakeReviewData = useMemo(() => {
+    const notebook = state.mistakeNotebook || {};
+    const total = Object.keys(notebook).length;
+
+    // Count by level
+    const byLevel = {};
+    // Count recent (last 7 days)
+    let recentCount = 0;
+    const now = Date.now();
+    const sevenDays = 7 * 24 * 60 * 60 * 1000;
+
+    for (const entry of Object.values(notebook)) {
+      if (!entry) continue;
+      const level = entry.level;
+      if (level && typeof level === 'string') {
+        byLevel[level] = (byLevel[level] || 0) + 1;
+      }
+      try {
+        const dateVal = entry.date;
+        if (dateVal) {
+          const ts = new Date(dateVal).getTime();
+          if (!isNaN(ts) && now - ts < sevenDays) {
+            recentCount++;
+          }
+        }
+      } catch {}
+    }
+
+    // Most common level
+    let topLevel = null;
+    let topCount = 0;
+    for (const [lvl, cnt] of Object.entries(byLevel)) {
+      if (cnt > topCount) { topLevel = lvl; topCount = cnt; }
+    }
+
+    return { total, recentCount, topLevel, topCount, hasMistakes: total > 0 };
+  }, [state.mistakeNotebook]);
 
   // === Today's skill based on day of week ===
   const todaySkill = DAY_SKILL[new Date().getDay()];
@@ -147,7 +148,7 @@ export default function Dashboard() {
     const today = new Date().toISOString().split('T')[0];
     const tasks = [];
 
-    const completedLessons = s.completedLessons[level] || [];
+    const completedLessons = getCompletedLessons(level);
     const levelLessons = allLessons.filter(l => l.level === level);
     const next = levelLessons.find(l => !completedLessons.includes(l.id));
 
@@ -199,7 +200,6 @@ export default function Dashboard() {
   }, 0);
 
   const currentLevelData = levelsData.levels.find(l => l.id === state.currentLevel);
-  const weakestSkill = Object.entries(state.weakAreas[state.currentLevel] || {}).find(([_, v]) => v)?.[0] || 'none';
 
   // Level unlock progress
   const levelData = levelsData.levels.find(l => l.id === studyLevel);
@@ -213,8 +213,636 @@ export default function Dashboard() {
   const writingDone = (state.writings || []).filter(w => w.level === studyLevel).length;
   const speakingDone = (state.speakingRecordings[studyLevel]?.length || 0);
 
+  // === Recompute streak with full memo data ===
+  const activityDatesSet = useMemo(() => collectActivityDates(state), [state]);
+  const currentStreak = useMemo(() => calculateCurrentStreak(activityDatesSet), [activityDatesSet]);
+  const last7Days = useMemo(() => getLast7DaysActivity(activityDatesSet), [activityDatesSet]);
+  const weeklyActiveCount = useMemo(() => getWeeklyActiveCount(activityDatesSet), [activityDatesSet]);
+  const bestWeekly = useMemo(() => getBestWeeklyActivity(activityDatesSet), [activityDatesSet]);
+  const activeToday = useMemo(() => activityDatesSet.has(getLocalDateKey()), [activityDatesSet]);
+
+  // === Resume Last Activity ===
+  const recentActivity = useMemo(() => getMostRecentActivity(state), [state]);
+  const resumeRoute = useMemo(() => getActivityRoute(recentActivity, studyLevel), [recentActivity, studyLevel]);
+  // Target level from study goal, fallback to current level
+  const targetLevel = useMemo(() => {
+    try {
+      const goal = getStudyGoal();
+      if (goal && goal.targetLevel && goal.targetLevel !== 'Medical FSP') {
+        return goal.targetLevel;
+      }
+    } catch {}
+    return studyLevel;
+  }, [state, studyLevel]);
+
+  // === Current Level Overview data ===
+  const displayLevel = useMemo(() => {
+    try {
+      const goal = getStudyGoal();
+      if (goal && goal.targetLevel && goal.targetLevel !== 'Medical FSP') {
+        return goal.targetLevel;
+      }
+    } catch {}
+    return state.currentLevel || 'A1';
+  }, [state, state.currentLevel]);
+
+  const overallPct = useMemo(() => {
+    const lessonsCompleted = getCompletedLessons(displayLevel).length;
+    const totalLessons = allLessons.filter(l => l.level === displayLevel).length;
+    const prog = state.levels[displayLevel] || {};
+    const grammarCount = (prog.grammar?.length || 0);
+    const vocabCount = (prog.vocab?.length || 0);
+    const readingCount = (prog.reading?.length || 0);
+    const listeningCount = (prog.listening?.length || 0);
+    const writingCount = (state.writings || []).filter(w => w.level === displayLevel).length;
+    const speakingCount = (state.speakingRecordings[displayLevel]?.length || 0);
+
+    const done = lessonsCompleted + grammarCount + vocabCount + readingCount + listeningCount + writingCount + speakingCount;
+    const max = Math.max(totalLessons + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingCount + listeningCount + writingCount + speakingCount, 1);
+    return Math.min(Math.round((done / max) * 100), 100);
+  }, [state, displayLevel]);
+
+  // === Level overview counts ===
+  const overviewData = useMemo(() => {
+    const lessonsCompleted = getCompletedLessons(displayLevel).length;
+    const totalLessons = allLessons.filter(l => l.level === displayLevel).length;
+    const prog = state.levels[displayLevel] || {};
+
+    return {
+      lessons: { done: lessonsCompleted, total: totalLessons },
+      grammar: { done: (prog.grammar?.length || 0), total: GRAMMAR_COUNT[displayLevel] || 0 },
+      vocab: { done: (prog.vocab?.length || 0), total: VOCAB_COUNT[displayLevel] || 0 },
+      reading: { done: (prog.reading?.length || 0), total: null },
+      listening: { done: (prog.listening?.length || 0), total: null },
+    };
+  }, [state, displayLevel]);
+
+  // === Weakest area determination ===
+  const weakestArea = useMemo(() => {
+    const d = overviewData;
+    const areas = [];
+
+    if (d.lessons.total > 0) {
+      const pct = (d.lessons.done / d.lessons.total) * 100;
+      areas.push({ key: 'lessons', pct, done: d.lessons.done, total: d.lessons.total });
+    }
+    if (d.grammar.total > 0) {
+      const pct = (d.grammar.done / d.grammar.total) * 100;
+      areas.push({ key: 'grammar', pct, done: d.grammar.done, total: d.grammar.total });
+    }
+    if (d.vocab.total > 0) {
+      const pct = (d.vocab.done / d.vocab.total) * 100;
+      areas.push({ key: 'vocab', pct, done: d.vocab.done, total: d.vocab.total });
+    }
+    // reading/listening: no total, treat done===0 as incomplete (pct=0) / done>=1 as complete (pct=100)
+    areas.push({ key: 'reading', pct: d.reading.done > 0 ? 100 : 0, done: d.reading.done, total: null });
+    areas.push({ key: 'listening', pct: d.listening.done > 0 ? 100 : 0, done: d.listening.done, total: null });
+
+    areas.sort((a, b) => a.pct - b.pct);
+
+
+    const weakest = areas[0];
+    if (!weakest) return null;
+
+    // If everything is at 100%, return 'exam'
+    const allDone = areas.every(a => a.pct >= 100);
+    if (allDone) return { key: 'exam', label: 'Practice Weakest Area', routePart: 'exam' };
+
+    const routeMap = { lessons: 'lessons', grammar: 'grammar', vocab: 'vocabulary', reading: 'reading', listening: 'listening' };
+    const labelMap = { lessons: 'Lessons', grammar: 'Grammar', vocab: 'Vocabulary', reading: 'Reading', listening: 'Listening' };
+
+    return {
+      key: weakest.key,
+      label: `Practice ${labelMap[weakest.key] || 'Weakest Area'}`,
+      routePart: routeMap[weakest.key] || '',
+    };
+  }, [overviewData]);
+
+  const weakestRoute = useMemo(() => {
+    if (!weakestArea) return `/level/${displayLevel}`;
+    if (weakestArea.key === 'exam') return `/level/${displayLevel}/exam`;
+    return `/level/${displayLevel}/${weakestArea.routePart}`;
+  }, [weakestArea, displayLevel]);
+
+  // === Recommended Next Session ===
+  const recommendedSession = useMemo(() => {
+    // Priority 1: recent mistakes
+    if (mistakesCount > 0) {
+      return {
+        label: 'Review mistakes',
+        route: '/mistake-notebook',
+        duration: 10,
+        reason: 'You have mistakes waiting for review.',
+      };
+    }
+
+    // Priority 2: weakest area
+    if (weakestArea && weakestArea.key !== 'exam') {
+      const name = weakestArea.label.replace('Practice ', '');
+      return {
+        label: `Practice ${name}`,
+        route: weakestRoute,
+        duration: weakestArea.key === 'reading' || weakestArea.key === 'listening' ? 15
+          : weakestArea.key === 'writing' || weakestArea.key === 'speaking' ? 20
+          : weakestArea.key === 'exam' ? 30
+          : 10,
+        reason: `${name} is currently your lowest progress area.`,
+      };
+    }
+
+    // Priority 3: incomplete lessons
+    if (!allLessonsDone && nextLesson) {
+      return {
+        label: 'Continue lessons',
+        route: `/level/${displayLevel}/lessons`,
+        duration: 15,
+        reason: 'You still have unfinished lessons in this level.',
+      };
+    }
+
+    // Priority 4: exam
+    return {
+      label: 'Try mock exam',
+      route: `/level/${displayLevel}/exam`,
+      duration: 30,
+      reason: 'Your core areas look complete enough to test yourself.',
+    };
+  }, [mistakesCount, weakestArea, weakestRoute, allLessonsDone, nextLesson, displayLevel]);
+
+  // === Dashboard settings export/import ===
+  const ALLOWED_SETTINGS_KEYS = ['deutsch_klinik_dashboard_collapsed', 'deutsch_klinik_session_starts', 'deutsch_klinik_study_goal', 'deutsch_klinik_vocab_filters'];
+  const [settingsMessage, setSettingsMessage] = useState(null);
+
+  // === Progress backup ===
+  const PROGRESS_KEY = 'deutsch_klinik_state';
+  const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [clearConfirmText, setClearConfirmText] = useState('');
+  const [progressMessage, setProgressMessage] = useState(null);
+  const [allExportMessage, setAllExportMessage] = useState(null);
+  const [progressStagedData, setProgressStagedData] = useState(null);
+  const [progressConfirmText, setProgressConfirmText] = useState('');
+  const [progressNeedsRefresh, setProgressNeedsRefresh] = useState(false);
+  const [fullImportData, setFullImportData] = useState(null);
+  const [fullImportChecks, setFullImportChecks] = useState({});
+  const [fullImportMessage, setFullImportMessage] = useState(null);
+  const [fullImportFileSize, setFullImportFileSize] = useState(null);
+  const [fullImportNeedsRefresh, setFullImportNeedsRefresh] = useState(false);
+  const [fullImportProgressConfirmText, setFullImportProgressConfirmText] = useState('');
+
+  const exportProgress = () => {
+    try {
+      const val = localStorage.getItem(PROGRESS_KEY);
+      if (val === null) {
+        setProgressMessage({ text: 'No progress data found.', isError: true });
+        return;
+      }
+      const data = { [PROGRESS_KEY]: val };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'deutsch-klinik-progress-backup.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      setProgressMessage({ text: 'Progress backup exported.', isError: false });
+      setProgressNeedsRefresh(false);
+    } catch {
+      setProgressMessage({ text: 'Export failed.', isError: true });
+    }
+  };
+
+  const importProgress = (e) => {
+    const file = e.target?.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+          setProgressMessage({ text: 'Invalid backup file.', isError: true });
+          setProgressNeedsRefresh(false);
+          return;
+        }
+        if (PROGRESS_KEY in parsed) {
+          setProgressStagedData(parsed[PROGRESS_KEY]);
+          setProgressConfirmText('');
+          setProgressNeedsRefresh(false);
+          setProgressMessage(null);
+        } else {
+          setProgressMessage({ text: 'No progress data found in file.', isError: true });
+          setProgressNeedsRefresh(false);
+        }
+      } catch {
+        setProgressMessage({ text: 'Invalid JSON file.', isError: true });
+        setProgressNeedsRefresh(false);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
+
+  const confirmProgressImport = () => {
+    if (progressConfirmText !== 'RESTORE' || progressStagedData === null) return;
+    try {
+      localStorage.setItem(PROGRESS_KEY, progressStagedData);
+      setProgressMessage({ text: 'Progress backup imported. Refresh the page to reload progress.', isError: false });
+      setProgressNeedsRefresh(true);
+    } catch {
+      setProgressMessage({ text: 'Failed to write progress data.', isError: true });
+      setProgressNeedsRefresh(false);
+    }
+    setProgressStagedData(null);
+    setProgressConfirmText('');
+  };
+
+  const cancelProgressImport = () => {
+    setProgressStagedData(null);
+    setProgressConfirmText('');
+    setProgressNeedsRefresh(false);
+    setProgressMessage(null);
+  };
+
+  const clearProgress = () => {
+    if (clearConfirmText !== 'CLEAR') return;
+    try {
+      localStorage.removeItem(PROGRESS_KEY);
+      setProgressMessage({ text: 'Progress cleared. Refresh the page to reload progress.', isError: false });
+      setProgressNeedsRefresh(true);
+      setShowClearConfirm(false);
+      setClearConfirmText('');
+    } catch {
+      setProgressMessage({ text: 'Failed to clear progress.', isError: true });
+    }
+  };
+
+  const exportAllData = () => {
+    const ALL_KEYS = [PROGRESS_KEY, ...ALLOWED_SETTINGS_KEYS];
+    const data = {
+      exportedAt: new Date().toISOString(),
+      app: 'Deutsch Klinik',
+      backupType: 'full',
+      backupVersion: 1,
+    };
+    let foundAny = false;
+    for (const key of ALL_KEYS) {
+      try {
+        const val = localStorage.getItem(key);
+        if (val !== null) {
+          data[key] = val;
+          foundAny = true;
+        }
+      } catch {}
+    }
+    if (!foundAny) {
+      setAllExportMessage({ text: 'No data found to export.', isError: true });
+      return;
+    }
+    try {
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'deutsch-klinik-full-backup.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      setAllExportMessage({ text: 'All data exported.', isError: false });
+    } catch {
+      setAllExportMessage({ text: 'Export failed.', isError: true });
+    }
+  };
+
+  const FULL_BACKUP_KEYS = ['deutsch_klinik_state', 'deutsch_klinik_dashboard_collapsed', 'deutsch_klinik_session_starts', 'deutsch_klinik_study_goal', 'deutsch_klinik_vocab_filters'];
+  const FULL_BACKUP_INTERNAL_MAP = {
+    deutsch_klinik_state: 'Restore progress',
+    deutsch_klinik_dashboard_collapsed: 'Restore dashboard layout',
+    deutsch_klinik_session_starts: 'Restore recent sessions',
+    deutsch_klinik_study_goal: 'Restore study goal',
+    deutsch_klinik_vocab_filters: 'Restore vocabulary filters',
+  };
+
+  const handleFullImportFile = (e) => {
+    const file = e.target?.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+          setFullImportMessage({ text: 'Invalid JSON file.', isError: true });
+          setFullImportData(null);
+          return;
+        }
+        if (parsed.app !== 'Deutsch Klinik' || parsed.backupType !== 'full') {
+          setFullImportMessage({ text: 'Not a valid Deutsch Klinik full backup.', isError: true });
+          setFullImportData(null);
+          return;
+        }
+        if ('backupVersion' in parsed && parsed.backupVersion !== 1) {
+          setFullImportMessage({ text: 'Unsupported backup version.', isError: true });
+          setFullImportData(null);
+          return;
+        }
+        const detected = {};
+        for (const key of FULL_BACKUP_KEYS) {
+          if (key in parsed) {
+            detected[key] = true;
+          }
+        }
+        if (Object.keys(detected).length === 0) {
+          setFullImportMessage({ text: 'No recognizable data found in file.', isError: true });
+          setFullImportData(null);
+          return;
+        }
+        setFullImportData(parsed);
+        setFullImportFileSize(file?.size || ev.target.result.length);
+        setFullImportChecks(detected);
+        setFullImportMessage(null);
+        setFullImportProgressConfirmText('');
+      } catch {
+        setFullImportMessage({ text: 'Invalid JSON file.', isError: true });
+        setFullImportData(null);
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
+
+  const confirmFullImport = () => {
+    if (!fullImportData) return;
+    let writtenCount = 0;
+    for (const key of FULL_BACKUP_KEYS) {
+      if (fullImportChecks[key] && key in fullImportData) {
+        try {
+          localStorage.setItem(key, fullImportData[key]);
+          writtenCount++;
+        } catch {}
+      }
+    }
+    if (writtenCount > 0) {
+      const progressRestored = fullImportChecks['deutsch_klinik_state'] && 'deutsch_klinik_state' in fullImportData;
+      const restoredLabels = [];
+      for (const key of FULL_BACKUP_KEYS) {
+        if (fullImportChecks[key] && key in fullImportData) {
+          const short = FULL_BACKUP_INTERNAL_MAP[key] ? FULL_BACKUP_INTERNAL_MAP[key].replace('Restore ', '') : key;
+          restoredLabels.push(short.toLowerCase());
+        }
+      }
+      if (progressRestored) {
+        setFullImportMessage({ text: `Full backup restored: ${restoredLabels.join(', ')}. Refresh the page to reload progress.`, isError: false });
+        setFullImportNeedsRefresh(true);
+      } else {
+        setFullImportMessage({ text: `Dashboard settings restored: ${restoredLabels.join(', ')}.`, isError: false });
+        setFullImportNeedsRefresh(false);
+      }
+      setSessionRefresh(n => n + 1);
+      if (fullImportChecks['deutsch_klinik_dashboard_collapsed']) {
+        try {
+          const raw = localStorage.getItem('deutsch_klinik_dashboard_collapsed');
+          if (raw) {
+            const p = JSON.parse(raw);
+            setCollapsed({ recentSessions: !!p.recentSessions, studyStreak: !!p.studyStreak, mistakeReview: !!p.mistakeReview, quickActions: !!p.quickActions, weakAreas: !!p.weakAreas });
+          }
+        } catch {}
+      }
+    } else {
+      setFullImportMessage({ text: 'No items were selected for restore.', isError: true });
+    }
+    setFullImportData(null);
+    setFullImportChecks({});
+    setFullImportFileSize(null);
+    setFullImportNeedsRefresh(false);
+    setFullImportProgressConfirmText('');
+  };
+
+  const cancelFullImport = () => {
+    setFullImportData(null);
+    setFullImportFileSize(null);
+    setFullImportNeedsRefresh(false);
+    setFullImportProgressConfirmText('');
+    setFullImportChecks({});
+    setFullImportMessage(null);
+  };
+
+  const exportSettings = () => {
+    const data = {};
+    for (const key of ALLOWED_SETTINGS_KEYS) {
+      try {
+        const val = localStorage.getItem(key);
+        if (val !== null) data[key] = val;
+      } catch {}
+    }
+    try {
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'deutsch-klinik-dashboard-settings.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      setSettingsMessage({ text: 'Dashboard settings exported.', isError: false });
+    } catch {
+      setSettingsMessage({ text: 'Export failed.', isError: true });
+    }
+  };
+
+  const importSettings = (e) => {
+    const file = e.target?.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+          setSettingsMessage({ text: 'Invalid settings file.', isError: true });
+          return;
+        }
+        let importedCount = 0;
+        for (const key of ALLOWED_SETTINGS_KEYS) {
+          if (key in parsed) {
+            try {
+              localStorage.setItem(key, parsed[key]);
+              importedCount++;
+            } catch {}
+          }
+        }
+        if (importedCount > 0) {
+          setSessionRefresh(n => n + 1);
+          setCollapsed(getDefaultCollapsed());
+          const names = [];
+          for (const key of ALLOWED_SETTINGS_KEYS) {
+            if (key in parsed) {
+              const short = key.replace('deutsch_klinik_', '').replace(/_/g, ' ');
+              names.push(short);
+            }
+          }
+          setSettingsMessage({ text: `Dashboard settings imported: ${names.join(', ')}.`, isError: false });
+        } else {
+          setSettingsMessage({ text: 'No recognizable settings found in file.', isError: true });
+        }
+      } catch {
+        setSettingsMessage({ text: 'Invalid JSON file.', isError: true });
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
+
+  const clearSettings = () => {
+    let clearedCount = 0;
+    for (const key of ALLOWED_SETTINGS_KEYS) {
+      try {
+        if (localStorage.getItem(key) !== null) {
+          localStorage.removeItem(key);
+          clearedCount++;
+        }
+      } catch {}
+    }
+    setSessionRefresh(n => n + 1);
+    setCollapsed({ recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false });
+    setSettingsMessage({ text: `Dashboard settings cleared: ${clearedCount} key(s).`, isError: false });
+  };
+
+  const getDefaultCollapsed = () => ({ recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false });
+
+  // === Collapsed state for secondary cards ===
+  const [collapsed, setCollapsed] = useState(() => {
+    try {
+      const raw = localStorage.getItem('deutsch_klinik_dashboard_collapsed');
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+          return {
+            recentSessions: !!parsed.recentSessions,
+            studyStreak: !!parsed.studyStreak,
+            mistakeReview: !!parsed.mistakeReview,
+            quickActions: !!parsed.quickActions,
+            weakAreas: !!parsed.weakAreas,
+          };
+        }
+      }
+    } catch {}
+    return { recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false };
+  });
+
+  const toggleCollapsed = (key) => {
+    setCollapsed(prev => {
+      const next = { ...prev, [key]: !prev[key] };
+      try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(next)); } catch {}
+      return next;
+    });
+  };
+
+  const expandAll = () => {
+    const all = getDefaultCollapsed();
+    setCollapsed(all);
+    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch {}
+  };
+
+  const collapseAll = () => {
+    const all = { recentSessions: true, studyStreak: true, mistakeReview: true, quickActions: true, weakAreas: true };
+    setCollapsed(all);
+    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch {}
+  };
+
+  const resetLayout = () => {
+    try { localStorage.removeItem('deutsch_klinik_dashboard_collapsed'); } catch {}
+    setCollapsed(getDefaultCollapsed());
+  };
+
+  // === Recent Sessions from localStorage ===
+  const [sessionRefresh, setSessionRefresh] = useState(0);
+
+  const recentSessions = useMemo(() => {
+    try {
+      const raw = localStorage.getItem('deutsch_klinik_session_starts');
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.slice(-3).reverse();
+    } catch {
+      return [];
+    }
+  }, [sessionRefresh]);
+
+  const logSessionStart = (session) => {
+    try {
+      const raw = localStorage.getItem('deutsch_klinik_session_starts');
+      let records = [];
+      if (raw) {
+        try { records = JSON.parse(raw); } catch { records = []; }
+        if (!Array.isArray(records)) records = [];
+      }
+      records.push({
+        id: `${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        type: session.label.toLowerCase().replace(/\s+/g, '_'),
+        level: displayLevel,
+        route: session.route,
+        title: session.label,
+        estimatedMinutes: session.duration,
+        startedAt: new Date().toISOString(),
+      });
+      if (records.length > 50) records = records.slice(-50);
+      localStorage.setItem('deutsch_klinik_session_starts', JSON.stringify(records));
+      setSessionRefresh(n => n + 1);
+    } catch {}
+  };
+
   return (
     <div>
+      {/* Today's Study Plan */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <h2 className="text-base font-bold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
+          <ListOrdered size={18} /> Today's Study Plan
+        </h2>
+        <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
+          Suggested order for {targetLevel} &middot; Complete each step to stay on track
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <StudyPlanButton
+            step={1} label="Continue Lessons"
+            to={nextLesson ? `/level/` + targetLevel + `/lessons/` + nextLesson.id : `/level/` + targetLevel + `/lessons`}
+            icon={GraduationCap} accent={levelColors[targetLevel] || 'var(--accent)'}
+            desc={nextLesson ? nextLesson.title : 'Browse all lessons'}
+          />
+          <StudyPlanButton
+            step={2} label="Practice Vocabulary"
+            to={`/level/` + targetLevel + `/vocabulary`}
+            icon={BookOpen} accent="#3bff9e"
+            desc={dueVocabCount > 0 ? dueVocabCount + ' due for review' : 'Flashcards & filters'}
+          />
+          <StudyPlanButton
+            step={3} label="Practice Grammar"
+            to={`/level/` + targetLevel + `/grammar`}
+            icon={BarChart3} accent="#f59e0b"
+            desc={grammarDone + '/' + grammarTarget + ' exercises done'}
+          />
+          <StudyPlanButton
+            step={4} label="Listening Practice"
+            to={`/level/` + targetLevel + `/listening`}
+            icon={Headphones} accent="#06b6d4"
+            desc="Improve listening comprehension"
+          />
+          <StudyPlanButton
+            step={5} label="Writing Practice"
+            to={`/level/` + targetLevel + `/writing`}
+            icon={PenTool} accent="#ec4899"
+            desc="Practice written expression"
+          />
+          <StudyPlanButton
+            step={6} label="Speaking Practice"
+            to={`/level/` + targetLevel + `/speaking`}
+            icon={MessageSquare} accent="#f97316"
+            desc="Practice spoken communication"
+          />
+          <StudyPlanButton
+            step={7} label="Medical FSP"
+            to="/medical-fsp"
+            icon={FlaskConical} accent="#ef4444"
+            desc="Medical German exam prep"
+          />
+        </div>
+      </div>
+
       {/* Hero section */}
       <div className="rounded-xl p-6 md:p-8 mb-6" style={{ background: 'linear-gradient(135deg, rgba(0,240,255,0.08), rgba(139,92,246,0.08))', border: '1px solid var(--border)' }}>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -243,7 +871,7 @@ export default function Dashboard() {
       {/* Stats row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-3">
-          <StatCard icon={Zap} label="Streak" value={`${state.streak.count} days`} accent="#ff6b00" />
+          <StatCard icon={Zap} label="Streak" value={`${currentStreak} day${currentStreak === 1 ? '' : 's'}`} accent="#ff6b00" />
           <StatCard icon={BarChart3} label="Current Level" value={studyLevel} accent="var(--accent)" />
           <StatCard icon={Award} label="Total Completed" value={totalCompleted.toString()} accent="#3bff9e" />
           <StatCard icon={TrendingUp} label="Weekly Focus" value={todaySkill.name} accent="#ff3355" />
@@ -279,8 +907,397 @@ export default function Dashboard() {
         </div>
       </div>
 
+
+
+      {/* Resume Last Activity */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
+          <TrendingUp size={18} /> Resume Last Activity
+        </h2>
+        {recentActivity ? (
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+            <div className="flex-1">
+              <div className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
+                {recentActivity.type === 'grammar' && '📝 Grammar'}
+                {recentActivity.type === 'vocab' && '📚 Vocabulary'}
+                {recentActivity.type === 'reading' && '📖 Reading'}
+                {recentActivity.type === 'listening' && '🎧 Listening'}
+                {recentActivity.type === 'writing' && '✍️ Writing'}
+                {recentActivity.type === 'speaking' && '🎤 Speaking'}
+                {recentActivity.type === 'exam' && '📋 Exam'}
+                {recentActivity.type === 'mistakes' && '📓 Mistake Review'}
+                {recentActivity.type === 'lesson' && '📘 Lesson'}
+                {recentActivity.level ? ` (${recentActivity.level})` : ''}
+              </div>
+              {recentActivity.date && (
+                <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
+                  {formatRelativeTime(recentActivity.date)}
+                </div>
+              )}
+            </div>
+            <Link
+              to={resumeRoute}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors flex-shrink-0"
+              style={{ backgroundColor: 'var(--accent)', color: '#000' }}
+            >
+              Continue <ChevronRight size={16} />
+            </Link>
+          </div>
+        ) : (
+          <div>
+            <p className="text-sm mb-3" style={{ color: 'var(--text-muted)' }}>
+              No recent activity yet. Start with a lesson or practice exercise.
+            </p>
+            <Link
+              to={`/level/${studyLevel}/lessons`}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              style={{ backgroundColor: 'var(--accent)', color: '#000' }}
+            >
+              Go to Lessons <ArrowRight size={16} />
+            </Link>
+          </div>
+        )}
+      </div>
+
+      {/* Current Level Overview Card */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: levelColors[displayLevel] || 'var(--accent)' }}>
+          <Target size={18} /> Current Level Overview
+        </h2>
+        <div className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
+          Level: <span className="font-bold" style={{ color: levelColors[displayLevel] || 'var(--accent)' }}>{displayLevel}</span>
+          <span className="ml-2">Overall: <span className="font-bold" style={{ color: 'var(--accent)' }}>{overallPct}%</span></span>
+        </div>
+
+        {/* Progress bars */}
+        <div className="space-y-2 mb-4">
+          <ProgressBarCompact label="Lessons" done={overviewData.lessons.done} total={overviewData.lessons.total} color={levelColors[displayLevel] || 'var(--accent)'} />
+          <ProgressBarCompact label="Grammar" done={overviewData.grammar.done} total={overviewData.grammar.total} color="#f59e0b" />
+          <ProgressBarCompact label="Vocab" done={overviewData.vocab.done} total={overviewData.vocab.total} color="#3bff9e" />
+          <ProgressBarCompact label="Reading" done={overviewData.reading.done} total={overviewData.reading.total} color="#06b6d4" />
+          <ProgressBarCompact label="Listening" done={overviewData.listening.done} total={overviewData.listening.total} color="#ec4899" />
+        </div>
+
+        {/* Readiness text */}
+        <div className="mb-4 text-xs" style={{ color: overallPct >= 80 ? 'var(--accent)' : overallPct >= 50 ? '#f59e0b' : 'var(--text-muted)' }}>
+          {overallPct >= 80
+            ? 'You are close to exam-ready. Try a mock exam.'
+            : overallPct >= 50
+              ? 'Good progress. Strengthen weak areas before the mock exam.'
+              : 'Focus on lessons and core practice first.'}
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-wrap gap-2">
+          <Link
+            to={`/level/${displayLevel}`}
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+            style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
+          >
+            View Level <ChevronRight size={16} />
+          </Link>
+          <Link
+            to={`/level/${displayLevel}/lessons`}
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+            style={{ backgroundColor: levelColors[displayLevel] || 'var(--accent)', color: '#000' }}
+          >
+            Continue Lessons <ArrowRight size={16} />
+          </Link>
+          {weakestArea && (
+            <Link
+              to={weakestRoute}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              style={{ backgroundColor: 'rgba(255,51,85,0.12)', border: '1px solid rgba(255,51,85,0.3)', color: '#ff3355' }}
+            >
+              <Crosshair size={14} /> {weakestArea.label}
+            </Link>
+          )}
+          {overallPct >= 80 && weakestArea?.key !== 'exam' && (
+            <Link
+              to={`/level/${displayLevel}/exam`}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              style={{ backgroundColor: '#8b5cf6', color: '#fff' }}
+            >
+              <ClipboardCheck size={14} /> Try Mock Exam
+            </Link>
+          )}
+        </div>
+      </div>
+
+      {/* Study Goal Tracker */}
+      <div className="mb-6">
+        <StudyGoalTracker />
+      </div>
+
+      {/* Recommended Next Session */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: '#8b5cf6' }}>
+          <Lightbulb size={18} /> Recommended Next Session
+        </h2>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <div className="flex-1">
+            <div className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
+              {recommendedSession.label}
+            </div>
+            <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
+              {recommendedSession.reason} (est. {recommendedSession.duration} min)
+            </div>
+          </div>
+          <Link
+            to={recommendedSession.route}
+            onClick={() => logSessionStart(recommendedSession)}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors flex-shrink-0"
+            style={{ backgroundColor: '#8b5cf6', color: '#fff' }}
+          >
+            Start Session <Play size={16} />
+          </Link>
+        </div>
+      </div>
+
+      {/* Recent Sessions */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#8b5cf6' }}>
+            <Clock size={18} /> Recent Sessions
+          </h2>
+          <div className="flex items-center gap-1.5">
+            <button type="button" onClick={() => toggleCollapsed('recentSessions')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+              <ChevronDown size={16} style={{ transform: collapsed.recentSessions ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+            </button>
+            {recentSessions.length > 0 && (
+              <button
+                type="button"
+                onClick={() => {
+                  localStorage.removeItem('deutsch_klinik_session_starts');
+                  setSessionRefresh(n => n + 1);
+                }}
+                className="text-xs px-2.5 py-1 rounded transition-colors"
+                style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+              >
+                Clear
+              </button>
+            )}
+          </div>
+        </div>
+        {!collapsed.recentSessions && (
+        recentSessions.length > 0 ? (
+        <div className="space-y-2">
+          {recentSessions.slice(0, 3).map((s, i) => {
+            const timeAgo = formatRelativeTime(s.startedAt);
+            return (
+              <Link
+                key={s.id || i}
+                to={s.route || '#'}
+                className="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:scale-[1.01]"
+                style={{ backgroundColor: 'var(--bg-hover)' }}
+              >
+                <div
+                  className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0"
+                  style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6' }}
+                >
+                  {i + 1}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-semibold truncate" style={{ color: 'var(--text-primary)' }}>
+                    {s.title || 'Session'}
+                  </div>
+                  <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-muted)' }}>
+                    {s.level && <span>{s.level}</span>}
+                    {s.estimatedMinutes && <span>{s.estimatedMinutes} min</span>}
+                    <span>{timeAgo}</span>
+                  </div>
+                </div>
+                <ChevronRight size={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
+              </Link>
+            );
+          })}
+        </div>
+        ) : (
+        <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+          No sessions started yet.
+        </p>
+        ))}
+      </div>
+
+      {/* --- Daily Tasks / Progress Tracking divider --- */}
+      <div className="relative mb-6">
+        <div className="absolute inset-0 flex items-center"><div className="w-full" style={{ borderTop: '1px solid var(--border)' }}></div></div>
+        <div className="relative flex justify-center items-center gap-2"><span className="px-3 text-xs font-semibold" style={{ backgroundColor: 'var(--bg-page)', color: 'var(--text-muted)' }}>Progress Overview</span>
+          <button type="button" onClick={expandAll} className="text-xs px-2 py-0.5 rounded transition-colors" style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-page)', border: '1px solid var(--border)' }}>Expand all</button>
+          <button type="button" onClick={collapseAll} className="text-xs px-2 py-0.5 rounded transition-colors" style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-page)', border: '1px solid var(--border)' }}>Collapse all</button>
+          <button type="button" onClick={resetLayout} className="text-xs px-2 py-0.5 rounded transition-colors" style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-page)', border: '1px solid var(--border)' }}>Reset layout</button>
+        </div>
+      </div>
+
+      {/* Study Streak Card */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ff6b00' }}>
+            <Flame size={18} /> Study Streak
+          </h2>
+          <button type="button" onClick={() => toggleCollapsed('studyStreak')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+            <ChevronDown size={16} style={{ transform: collapsed.studyStreak ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+          </button>
+        </div>
+        {!collapsed.studyStreak && (<>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          {/* Streak count */}
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <div
+              className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold"
+              style={{
+                backgroundColor: currentStreak > 0 ? 'rgba(255,107,0,0.15)' : 'var(--bg-hover)',
+                border: `3px solid ${currentStreak > 0 ? '#ff6b00' : 'var(--text-muted)'}`,
+                color: currentStreak > 0 ? '#ff6b00' : 'var(--text-muted)',
+              }}
+            >
+              {currentStreak}
+            </div>
+            <div>
+              <div className="text-sm font-bold" style={{ color: currentStreak > 0 ? '#ff6b00' : 'var(--text-muted)' }}>
+                {currentStreak === 1 ? '1 day' : `${currentStreak} days`}
+              </div>
+              <div className="text-xs" style={{ color: 'var(--text-muted)' }}>current streak</div>
+            </div>
+          </div>
+
+          {/* Activity today + weekly summary */}
+          <div className="flex flex-wrap gap-4 sm:gap-6">
+            <div>
+              <div
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold"
+                style={{
+                  backgroundColor: activeToday ? 'rgba(59,255,158,0.12)' : 'var(--bg-hover)',
+                  color: activeToday ? '#3bff9e' : 'var(--text-muted)',
+                  border: `1px solid ${activeToday ? 'rgba(59,255,158,0.3)' : 'var(--border)'}`,
+                }}
+              >
+                {activeToday ? 'Active today' : 'No activity today'}
+              </div>
+            </div>
+            <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
+              <span style={{ color: '#ff6b00', fontWeight: 600 }}>{weeklyActiveCount}</span>/7 days this week
+              <span className="ml-2">
+                Best: <span style={{ color: '#3bff9e', fontWeight: 600 }}>{bestWeekly}</span> days
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* 7-day activity row */}
+        <div className="mt-4">
+          <div className="flex items-end gap-1.5 sm:gap-2.5 justify-center sm:justify-start">
+            {last7Days.map((day) => (
+              <div key={day.dateKey} className="flex flex-col items-center gap-1">
+                <div
+                  className="w-7 h-7 sm:w-8 sm:h-8 rounded-md flex items-center justify-center text-xs font-bold transition-colors"
+                  style={{
+                    backgroundColor: day.active
+                      ? day.isToday
+                        ? 'rgba(255,107,0,0.25)'
+                        : 'rgba(59,255,158,0.15)'
+                      : 'var(--bg-hover)',
+                    border: `1px solid ${
+                      day.isToday
+                        ? '#ff6b00'
+                        : day.active
+                          ? 'rgba(59,255,158,0.3)'
+                          : 'var(--border)'
+                    }`,
+                    color: day.active
+                      ? day.isToday
+                        ? '#ff6b00'
+                        : '#3bff9e'
+                      : 'var(--text-muted)',
+                  }}
+                >
+                  {day.active ? (day.isToday ? '⚡' : '✓') : '·'}
+                </div>
+                <span
+                  className="text-[10px] font-medium"
+                  style={{
+                    color: day.isToday ? '#ff6b00' : 'var(--text-muted)',
+                  }}
+                >
+                  {day.dayLabel}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+        </>)}
+      </div>
+
+      {/* Mistake Review Card */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ffaa33' }}>
+            <BookMarked size={18} /> Mistake Review
+          </h2>
+          <button type="button" onClick={() => toggleCollapsed('mistakeReview')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+            <ChevronDown size={16} style={{ transform: collapsed.mistakeReview ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+          </button>
+        </div>
+        {!collapsed.mistakeReview ? (
+          mistakeReviewData.hasMistakes ? (
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div
+                className="w-14 h-14 rounded-xl flex items-center justify-center text-lg font-bold"
+                style={{ backgroundColor: 'rgba(255,170,51,0.12)', color: '#ffaa33', border: '2px solid rgba(255,170,51,0.25)' }}
+              >
+                {mistakeReviewData.total}
+              </div>
+              <div>
+                <div className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
+                  {mistakeReviewData.total} {mistakeReviewData.total === 1 ? 'mistake' : 'mistakes'}
+                </div>
+                {mistakeReviewData.recentCount > 0 && (
+                  <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                    {mistakeReviewData.recentCount} in last 7 days
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              {mistakeReviewData.topLevel && (
+                <div className="text-xs px-2.5 py-1 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
+                  Most: {mistakeReviewData.topLevel} ({mistakeReviewData.topCount})
+                </div>
+              )}
+              <Link
+                to="/mistake-notebook"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+                style={{ backgroundColor: '#ffaa33', color: '#000' }}
+              >
+                Review Mistakes <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+            No mistakes recorded. Keep up the good work!
+          </p>
+        )
+        ) : (
+          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+            {mistakeReviewData.hasMistakes ? `${mistakeReviewData.total} mistakes` : 'No mistakes recorded.'}
+          </p>
+        )}
+      </div>
+
       {/* Quick Action Buttons row */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 mb-6">
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#8b5cf6' }}>
+            <Zap size={16} /> Quick Actions
+          </h2>
+          <button type="button" onClick={() => toggleCollapsed('quickActions')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+            <ChevronDown size={16} style={{ transform: collapsed.quickActions ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+          </button>
+        </div>
+        {!collapsed.quickActions && (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
         <ActionButton
           to={nextLesson ? `/level/${studyLevel}/lessons/${nextLesson.id}` : `/level/${studyLevel}/lessons`}
           icon={GraduationCap}
@@ -306,17 +1323,13 @@ export default function Dashboard() {
           accent="#ff3355"
         />
         <ActionButton
-          to="/mistake-notebook"
-          icon={BookMarked}
-          label={`Mistakes${mistakesCount > 0 ? ` (${mistakesCount})` : ''}`}
-          accent="#ffaa33"
-        />
-        <ActionButton
           to={allLessonsDone || examReady ? `/level/${studyLevel}/exam` : `/level/${studyLevel}`}
           icon={ClipboardCheck}
           label={allLessonsDone || examReady ? 'Exam' : 'Level Page'}
           accent="#8b5cf6"
         />
+      </div>
+        )}
       </div>
 
       {/* Next Lesson + Progress section */}
@@ -405,10 +1418,17 @@ export default function Dashboard() {
 
       {/* Weak Areas */}
       <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: '#ff3355' }}>
-          <AlertTriangle size={16} /> Weak Areas
-        </h2>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ff3355' }}>
+            <AlertTriangle size={16} /> Weak Areas
+          </h2>
+          <button type="button" onClick={() => toggleCollapsed('weakAreas')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+            <ChevronDown size={16} style={{ transform: collapsed.weakAreas ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+          </button>
+        </div>
+        {!collapsed.weakAreas ? (<>
         {weakTopics.length > 0 ? (
+          <div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {weakTopics.map((topic, i) => {
               const total = topic.correct + topic.incorrect;
@@ -428,23 +1448,29 @@ export default function Dashboard() {
               );
             })}
           </div>
+          {weakTopics.length > 0 && (
+            <div className="mt-3 text-right">
+              <Link to="/mistake-notebook" className="text-xs hover:underline" style={{ color: 'var(--accent)' }}>
+                View all mistakes and weak areas →
+              </Link>
+            </div>
+          )}
+          </div>
         ) : (
           <div className="flex items-center gap-2 text-sm" style={{ color: 'var(--text-muted)' }}>
             <CheckCircle size={14} style={{ color: '#3bff9e' }} />
             No weak areas yet. Keep studying and they'll appear here.
           </div>
         )}
-        {weakTopics.length > 0 && (
-          <div className="mt-3 text-right">
-            <Link to="/mistake-notebook" className="text-xs hover:underline" style={{ color: 'var(--accent)' }}>
-              View all mistakes and weak areas →
-            </Link>
-          </div>
+        </>) : (
+          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+            {weakTopics.length > 0 ? `${weakTopics.length} weak areas` : 'No weak areas'}
+          </p>
         )}
       </div>
 
-      {/* Lessons + Mistake Notebook Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+      {/* Lessons Card */}
+      <div className="grid grid-cols-1 gap-3 mb-6">
         <Link to={`/level/${studyLevel}/lessons`} className="rounded-xl p-4 flex items-center gap-3 transition-all hover:scale-[1.01]" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(0,240,255,0.1)' }}>
             <GraduationCap size={20} style={{ color: 'var(--accent)' }} />
@@ -455,21 +1481,13 @@ export default function Dashboard() {
           </div>
           <ChevronRight size={16} style={{ color: 'var(--text-muted)' }} />
         </Link>
-        <Link to="/mistake-notebook" className="rounded-xl p-4 flex items-center gap-3 transition-all hover:scale-[1.01]" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-          <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255,170,51,0.1)' }}>
-            <BookMarked size={20} style={{ color: '#ffaa33' }} />
-          </div>
-          <div className="flex-1">
-            <div className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Mistake Notebook</div>
-            <div className="text-xs" style={{ color: 'var(--text-muted)' }}>{mistakesCount} mistakes to review</div>
-          </div>
-          <ChevronRight size={16} style={{ color: 'var(--text-muted)' }} />
-        </Link>
+
       </div>
 
-      {/* Study Goal Tracker */}
-      <div className="mb-6">
-        <StudyGoalTracker />
+      {/* --- Level Overview divider --- */}
+      <div className="relative mb-6">
+        <div className="absolute inset-0 flex items-center"><div className="w-full" style={{ borderTop: '1px solid var(--border)' }}></div></div>
+        <div className="relative flex justify-center"><span className="px-3 text-xs font-semibold" style={{ backgroundColor: 'var(--bg-page)', color: 'var(--text-muted)' }}>Level & Exam</span></div>
       </div>
 
       {/* C1 Readiness Card */}
@@ -552,7 +1570,265 @@ export default function Dashboard() {
           );
         })}
       </div>
+
+      {/* Dashboard Settings */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
+            <Settings size={16} /> Dashboard Settings
+          </h2>
+        </div>
+        <p className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
+          UI settings only. Layout, sessions, study goal, vocab filters.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <button type="button" onClick={exportSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>Export settings</button>
+          <label className="text-xs px-3 py-1.5 rounded transition-colors cursor-pointer" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
+            Import settings
+            <input type="file" accept=".json" className="hidden" onChange={importSettings} />
+          </label>
+          <button type="button" onClick={clearSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: '#ff3355', backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.3)' }}>Clear dashboard settings</button>
+        </div>
+        {settingsMessage && (
+          <p className="text-xs mt-2" style={{ color: settingsMessage.isError ? '#ff3355' : '#3bff9e' }}>{settingsMessage.text}</p>
+        )}
+      </div>
+
+      {/* Progress Backup */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid rgba(255,170,51,0.3)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ffaa33' }}>
+            <AlertTriangle size={16} /> Progress Backup
+          </h2>
+        </div>
+        <p className="text-xs mb-3" style={{ color: '#ffaa33' }}>
+          Affects real study progress. Lessons, grammar, vocabulary, exams, mistakes.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-3">
+          <button type="button" onClick={exportProgress} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>Export progress</button>
+          <label className="text-xs px-3 py-1.5 rounded transition-colors cursor-pointer" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
+            Import progress
+            <input type="file" accept=".json" className="hidden" onChange={importProgress} />
+          </label>
+          <button type="button" onClick={() => setShowClearConfirm(true)} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: '#ff3355', backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.3)' }}>Clear progress</button>
+        </div>
+        <div className="flex flex-wrap gap-2 mb-3">
+          <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
+            Full backup can include both progress and UI settings.
+          </p>
+          <button type="button" onClick={exportAllData} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: '#8b5cf6', backgroundColor: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.3)' }}>Export all data</button>
+          <label className="text-xs px-3 py-1.5 rounded transition-colors cursor-pointer" style={{ color: '#8b5cf6', backgroundColor: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.3)' }}>
+            Import full backup
+            <input type="file" accept=".json" className="hidden" onChange={handleFullImportFile} />
+          </label>
+        </div>
+        {allExportMessage && (
+          <p className="text-xs mb-2" style={{ color: allExportMessage.isError ? '#ff3355' : '#3bff9e' }}>{allExportMessage.text}</p>
+        )}
+        {fullImportMessage && !fullImportData && (
+          <div className="flex items-center gap-2 mb-2">
+            <p className="text-xs" style={{ color: fullImportMessage.isError ? '#ff3355' : '#3bff9e' }}>{fullImportMessage.text}</p>
+            {fullImportNeedsRefresh && (
+              <button
+                type="button"
+                onClick={() => window.location.reload()}
+                className="text-xs px-2 py-1 rounded transition-colors"
+                style={{ backgroundColor: '#8b5cf6', color: '#fff', border: 'none' }}
+              >
+                Refresh now
+              </button>
+            )}
+          </div>
+        )}
+        {fullImportData && (
+          <div className="rounded-lg p-3 mb-2" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid rgba(139,92,246,0.2)' }}>
+            {/* File preview */}
+            <div className="text-xs mb-3 space-y-0.5" style={{ color: 'var(--text-muted)' }}>
+              <div>Backup version: {'backupVersion' in fullImportData ? fullImportData.backupVersion : 'legacy'}</div>
+              <div>Exported: {(() => {
+                try {
+                  const d = new Date(fullImportData.exportedAt);
+                  if (!isNaN(d.getTime())) return d.toLocaleString();
+                  return 'Unknown export date';
+                } catch { return 'Unknown export date'; }
+              })()}</div>
+              <div>Keys detected: {FULL_BACKUP_KEYS.filter(k => k in fullImportData).length}</div>
+              <div style={{ color: 'deutsch_klinik_state' in fullImportData ? '#ffaa33' : 'var(--text-muted)' }}>
+                Progress: {'deutsch_klinik_state' in fullImportData ? 'Included' : 'Not included'}
+              </div>
+              <div>UI settings: {FULL_BACKUP_KEYS.filter(k => k !== 'deutsch_klinik_state' && k in fullImportData).length > 0 ? 'Included' : 'Not included'}</div>
+              <div>File size: {fullImportFileSize ? (fullImportFileSize / 1024).toFixed(1) + ' KB' : 'Unknown'}</div>
+            </div>
+            <p className="text-xs font-semibold mb-2" style={{ color: '#8b5cf6' }}>Select what to restore:</p>
+            {FULL_BACKUP_KEYS.map(key => {
+              if (!(key in fullImportData)) return null;
+              return (
+                <label key={key} className="flex items-center gap-2 mb-1.5 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={!!fullImportChecks[key]}
+                    onChange={() => { setFullImportChecks(prev => ({ ...prev, [key]: !prev[key] })); setFullImportProgressConfirmText(''); }}
+                    className="rounded"
+                    style={{ accentColor: '#8b5cf6' }}
+                  />
+                  <span className="text-xs" style={{ color: 'var(--text-primary)' }}>{FULL_BACKUP_INTERNAL_MAP[key] || key}</span>
+                  {key === 'deutsch_klinik_state' && (
+                    <span className="text-xs" style={{ color: '#ff3355' }}>(overwrites real progress)</span>
+                  )}
+                </label>
+              );
+            })}
+            {fullImportChecks['deutsch_klinik_state'] && (
+              <div className="rounded p-2 mt-1 mb-2" style={{ backgroundColor: 'rgba(255,51,85,0.06)', border: '1px solid rgba(255,51,85,0.2)' }}>
+                <p className="text-xs mb-1" style={{ color: '#ff3355' }}>Type RESTORE to confirm progress overwrite:</p>
+                <input
+                  type="text"
+                  value={fullImportProgressConfirmText}
+                  onChange={(e) => setFullImportProgressConfirmText(e.target.value)}
+                  placeholder="RESTORE"
+                  className="w-full text-xs px-2 py-1.5 rounded"
+                  style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}
+                />
+              </div>
+            )}
+            <div className="flex gap-2 mt-2">
+              <button
+                type="button"
+                onClick={confirmFullImport}
+                disabled={(() => {
+                  const anyChecked = Object.values(fullImportChecks).some(v => v);
+                  const needConfirm = fullImportChecks['deutsch_klinik_state'];
+                  return !anyChecked || (needConfirm && fullImportProgressConfirmText !== 'RESTORE');
+                })()}
+                className="text-xs px-3 py-1.5 rounded transition-colors disabled:opacity-40"
+                style={{ backgroundColor: '#8b5cf6', color: '#fff', border: 'none' }}
+              >
+                Confirm
+              </button>
+              <button
+                type="button"
+                onClick={cancelFullImport}
+                className="text-xs px-3 py-1.5 rounded transition-colors"
+                style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+        {showClearConfirm && (
+          <div className="rounded-lg p-3 mb-2" style={{ backgroundColor: 'rgba(255,51,85,0.06)', border: '1px solid rgba(255,51,85,0.2)' }}>
+            <p className="text-xs mb-2" style={{ color: '#ff3355' }}>Type CLEAR to confirm:</p>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={clearConfirmText}
+                onChange={(e) => setClearConfirmText(e.target.value)}
+                placeholder="CLEAR"
+                className="flex-1 text-xs px-2 py-1.5 rounded"
+                style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}
+              />
+              <button
+                type="button"
+                onClick={clearProgress}
+                disabled={clearConfirmText !== 'CLEAR'}
+                className="text-xs px-3 py-1.5 rounded disabled:opacity-40 transition-colors"
+                style={{ backgroundColor: clearConfirmText === 'CLEAR' ? '#ff3355' : 'var(--bg-hover)', color: clearConfirmText === 'CLEAR' ? '#fff' : 'var(--text-muted)', border: '1px solid rgba(255,51,85,0.3)' }}
+              >
+                Confirm
+              </button>
+              <button
+                type="button"
+                onClick={() => { setShowClearConfirm(false); setClearConfirmText(''); }}
+                className="text-xs px-3 py-1.5 rounded transition-colors"
+                style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+        {progressStagedData && (
+          <div className="rounded-lg p-3 mb-2" style={{ backgroundColor: 'rgba(255,51,85,0.06)', border: '1px solid rgba(255,51,85,0.2)' }}>
+            <p className="text-xs mb-1" style={{ color: '#ff3355' }}>
+              This will overwrite real study progress.
+            </p>
+            <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
+              Type RESTORE to confirm:
+            </p>
+            <div className="flex gap-2 mb-2">
+              <input
+                type="text"
+                value={progressConfirmText}
+                onChange={(e) => setProgressConfirmText(e.target.value)}
+                placeholder="RESTORE"
+                className="flex-1 text-xs px-2 py-1.5 rounded"
+                style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}
+              />
+              <button
+                type="button"
+                onClick={confirmProgressImport}
+                disabled={progressConfirmText !== 'RESTORE'}
+                className="text-xs px-3 py-1.5 rounded disabled:opacity-40 transition-colors"
+                style={{ backgroundColor: progressConfirmText === 'RESTORE' ? '#ff3355' : 'var(--bg-hover)', color: progressConfirmText === 'RESTORE' ? '#fff' : 'var(--text-muted)', border: '1px solid rgba(255,51,85,0.3)' }}
+              >
+                Confirm Import
+              </button>
+              <button
+                type="button"
+                onClick={cancelProgressImport}
+                className="text-xs px-3 py-1.5 rounded transition-colors"
+                style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+        {progressMessage && (
+          <div className="flex items-center gap-2 mt-2">
+            <p className="text-xs" style={{ color: progressMessage.isError ? '#ff3355' : '#3bff9e' }}>{progressMessage.text}</p>
+            {progressNeedsRefresh && !progressMessage.isError && (
+              <button
+                type="button"
+                onClick={() => window.location.reload()}
+                className="text-xs px-2 py-1 rounded transition-colors"
+                style={{ backgroundColor: '#8b5cf6', color: '#fff', border: 'none' }}
+              >
+                Refresh now
+              </button>
+            )}
+          </div>
+        )}
+      </div>
     </div>
+  );
+}
+
+const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
+
+function StudyPlanButton({ step, label, to, icon: Icon, accent, desc }) {
+  return (
+    <Link
+      to={to}
+      className="rounded-xl p-4 flex items-center gap-3 transition-all hover:scale-[1.02]"
+      style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+    >
+      <div
+        className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0"
+        style={{ backgroundColor: accent + '20', color: accent }}
+      >
+        {step}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="text-sm font-semibold flex items-center gap-1.5" style={{ color: 'var(--text-primary)' }}>
+          <Icon size={14} style={{ color: accent }} />
+          <span>{label}</span>
+        </div>
+        <div className="text-xs truncate mt-0.5" style={{ color: 'var(--text-muted)' }}>{desc}</div>
+      </div>
+      <ChevronRight size={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
+    </Link>
   );
 }
 
@@ -576,6 +1852,21 @@ function ActionButton({ to, icon: Icon, label, accent }) {
       <Icon size={18} style={{ color: accent }} />
       <span className="text-xs font-semibold" style={{ color: 'var(--text-secondary)' }}>{label}</span>
     </Link>
+  );
+}
+
+function ProgressBarCompact({ label, done, total, color }) {
+  const pct = total > 0 ? Math.min(Math.round((done / total) * 100), 100) : 0;
+  return (
+    <div className="flex items-center gap-2">
+      <span className="text-xs w-14 flex-shrink-0" style={{ color: 'var(--text-muted)' }}>{label}</span>
+      <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
+        <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: color }} />
+      </div>
+      <span className="text-xs font-semibold w-14 text-right" style={{ color }}>
+        {done}{total != null ? `/${total}` : ''}
+      </span>
+    </div>
   );
 }
 
