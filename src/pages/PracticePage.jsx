@@ -6,6 +6,7 @@ import LevelLock from '../components/LevelLock';
 import {
   Hash, Shuffle, CheckCircle, XCircle, ArrowLeft, ArrowRight,
   RefreshCw, List, Filter, BookMarked, Beaker,
+  ClipboardCopy, Download,
 } from 'lucide-react';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -587,6 +588,62 @@ export default function PracticePage() {
   // Review mistakes only mode
   const [reviewingMistakes, setReviewingMistakes] = useState(false);
 
+  const modeLabelForExport = PRACTICE_MODES.find(m => m.key === mode)?.label || mode;
+  const topicLabelForExport = selectedTopic === 'all' ? 'All topics' : selectedTopic;
+
+  const csvEscape = (v) => {
+    if (v == null || v === '') return '';
+    const s = String(v);
+    if (s.includes(',') || s.includes('"') || s.includes('\n')) {
+      return '"' + s.replace(/"/g, '""') + '"';
+    }
+    return s;
+  };
+
+  const copyMistakesToClipboard = () => {
+    const lines = mistakes.map(m => {
+      const q = m.question;
+      const sw = q.sourceWord;
+      const parts = ['Word: ' + (q.word || '-'), 'Your answer: ' + m.userAnswer, 'Correct answer: ' + m.correctAnswer];
+      if (q.translation) parts.push('Translation: ' + q.translation);
+      if (q.article) parts.push('Article: ' + q.article);
+      if (q.plural) parts.push('Plural: ' + q.plural);
+      if (sw && sw.example) parts.push('Example: ' + sw.example);
+      return parts.join(', ');
+    });
+    const text = 'Mode: ' + modeLabelForExport + ', Level: ' + selectedLevel + ', Topic: ' + topicLabelForExport + '\n\n' + lines.join('\n');
+    navigator.clipboard.writeText(text);
+  };
+
+  const downloadMistakesCsv = () => {
+    const header = 'mode,level,topic,question,userAnswer,correctAnswer,word,article,plural,translation,example';
+    const rows = mistakes.map(m => {
+      const q = m.question;
+      const sw = q.sourceWord;
+      return [
+        csvEscape(modeLabelForExport),
+        csvEscape(selectedLevel),
+        csvEscape(topicLabelForExport),
+        csvEscape(q.word || ''),
+        csvEscape(m.userAnswer),
+        csvEscape(m.correctAnswer),
+        csvEscape(q.word || ''),
+        csvEscape(q.article || ''),
+        csvEscape(q.plural || ''),
+        csvEscape(q.translation || ''),
+        csvEscape(sw && sw.example || ''),
+      ].join(',');
+    });
+    const csv = header + '\n' + rows.join('\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'mistakes_' + selectedLevel + '_' + mode + '_' + new Date().toISOString().slice(0,10) + '.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const startMistakeReview = () => {
     const qs = mistakes.map(m => m.question);
     const shuffled = shuffleArray(qs);
@@ -697,9 +754,38 @@ export default function PracticePage() {
             {/* Mistakes list */}
             {mistakes.length > 0 && (
               <div style={{ marginTop: '1rem', textAlign: 'left' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
+                <div style={{
+                  display: 'flex', alignItems: 'center', gap: '0.5rem',
+                  marginBottom: '0.6rem', justifyContent: 'space-between',
+                }}>
                   <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#ef4444' }}>
                     Mistakes ({mistakes.length})
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.35rem' }}>
+                    <button
+                      title="Copy mistakes"
+                      onClick={copyMistakesToClipboard}
+                      style={{
+                        background: 'transparent', border: '1px solid var(--border)',
+                        borderRadius: '6px', padding: '0.3rem 0.5rem', cursor: 'pointer',
+                        color: 'var(--text-muted)', display: 'flex', alignItems: 'center',
+                        fontSize: '0.75rem', gap: '0.25rem', lineHeight: 1,
+                      }}
+                    >
+                      <ClipboardCopy size={12} /> Copy
+                    </button>
+                    <button
+                      title="Download CSV"
+                      onClick={downloadMistakesCsv}
+                      style={{
+                        background: 'transparent', border: '1px solid var(--border)',
+                        borderRadius: '6px', padding: '0.3rem 0.5rem', cursor: 'pointer',
+                        color: 'var(--text-muted)', display: 'flex', alignItems: 'center',
+                        fontSize: '0.75rem', gap: '0.25rem', lineHeight: 1,
+                      }}
+                    >
+                      <Download size={12} /> CSV
+                    </button>
                   </div>
                 </div>
                 <div style={{ maxHeight: '260px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
