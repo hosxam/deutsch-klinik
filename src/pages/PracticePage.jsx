@@ -55,9 +55,25 @@ function stripLeadingArticle(word) {
   return word.replace(/^(der|die|das)\s+/i, '').trim();
 }
 
-// Generate article questions from words that have article field
-function getArticleQuestions(level) {
+// Get unique topics from a level's words, sorted alphabetically
+function getTopics(level) {
   const words = vocabData[level] || [];
+  const topics = new Set();
+  words.forEach(w => {
+    if (w.topic && w.topic.trim()) topics.add(w.topic.trim());
+  });
+  return [...topics].sort();
+}
+
+// Filter a word array by topic (empty string or 'all' means no filter)
+function filterByTopic(words, topic) {
+  if (!topic || topic === 'all') return words;
+  return words.filter(w => (w.topic || '').trim().toLowerCase() === topic.toLowerCase());
+}
+
+// Generate article questions from words that have article field
+function getArticleQuestions(level, topic) {
+  const words = filterByTopic(vocabData[level] || [], topic);
   return words
     .filter(w => w.article && w.article.trim())
     .map((w, idx) => {
@@ -77,8 +93,8 @@ function getArticleQuestions(level) {
 }
 
 // Generate plural questions from words that have plural field
-function getPluralQuestions(level) {
-  const words = vocabData[level] || [];
+function getPluralQuestions(level, topic) {
+  const words = filterByTopic(vocabData[level] || [], topic);
   return words
     .filter(w => w.plural && w.plural.trim())
     .map((w, idx) => {
@@ -97,26 +113,28 @@ function getPluralQuestions(level) {
     });
 }
 
+// Check if a word has a real sentence example (not just word: translation)
+function hasRealExample(w) {
+  const ex = (w.example || '').trim();
+  if (!ex) return false;
+  const idx = ex.indexOf(':');
+  if (idx > 0) {
+    const before = ex.substring(0, idx).trim().toLowerCase();
+    const after = ex.substring(idx + 1).trim().toLowerCase();
+    const strippedBefore = stripLeadingArticle(before);
+    const strippedWord = stripLeadingArticle(w.word.toLowerCase());
+    const isJustDef = (before === w.word.toLowerCase() || strippedBefore === strippedWord || before === ((w.article || '') + ' ' + w.word).trim().toLowerCase()) &&
+                      (after === (w.translation || '').toLowerCase() || !w.exampleTranslation);
+    if (isJustDef) return false;
+  }
+  return true;
+}
+
 // Generate fill-in-the-blank questions from words with example field
-function getFillBlankQuestions(level) {
-  const words = vocabData[level] || [];
+function getFillBlankQuestions(level, topic) {
+  const words = filterByTopic(vocabData[level] || [], topic);
   return words
-    .filter(w => {
-      const ex = (w.example || '').trim();
-      if (!ex) return false;
-      // Must be a real sentence, not just word: translation
-      const idx = ex.indexOf(':');
-      if (idx > 0) {
-        const before = ex.substring(0, idx).trim().toLowerCase();
-        const after = ex.substring(idx + 1).trim().toLowerCase();
-        const strippedBefore = stripLeadingArticle(before);
-        const strippedWord = stripLeadingArticle(w.word.toLowerCase());
-        const isJustDef = (before === w.word.toLowerCase() || strippedBefore === strippedWord || before === ((w.article || '') + ' ' + w.word).trim().toLowerCase()) &&
-                          (after === (w.translation || '').toLowerCase() || !w.exampleTranslation);
-        if (isJustDef) return false;
-      }
-      return true;
-    })
+    .filter(w => hasRealExample(w))
     .map((w, idx) => {
       const ex = (w.example || '').trim();
       const wordClean = stripLeadingArticle(w.word);
@@ -177,7 +195,11 @@ export default function PracticePage() {
 
   // Level filter state
   const [selectedLevel, setSelectedLevel] = useState(levelId);
+  const [selectedTopic, setSelectedTopic] = useState('all');
   const [questionCount, setQuestionCount] = useState(20);
+
+  // Available topics for the selected level
+  const availableTopics = useMemo(() => getTopics(selectedLevel), [selectedLevel]);
 
   const s = {
     card: { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' },
@@ -192,25 +214,11 @@ export default function PracticePage() {
 
   // Mode selector
   if (!mode) {
-    // Check question availability per level & mode
-    const levelWords = vocabData[selectedLevel] || [];
-    const articleCount = levelWords.filter(w => w.article && w.article.trim()).length;
-    const pluralCount = levelWords.filter(w => w.plural && w.plural.trim()).length;
-    const fillCount = levelWords.filter(w => {
-      const ex = (w.example || '').trim();
-      if (!ex) return false;
-      const idx = ex.indexOf(':');
-      if (idx > 0) {
-        const before = ex.substring(0, idx).trim().toLowerCase();
-        const after = ex.substring(idx + 1).trim().toLowerCase();
-        const strippedBefore = stripLeadingArticle(before);
-        const strippedWord = stripLeadingArticle(w.word.toLowerCase());
-        const isJustDef = (before === w.word.toLowerCase() || strippedBefore === strippedWord) &&
-                          (after === (w.translation || '').toLowerCase() || !w.exampleTranslation);
-        if (isJustDef) return false;
-      }
-      return true;
-    }).length;
+    // Check question availability per level & topic & mode
+    const topicWords = filterByTopic(vocabData[selectedLevel] || [], selectedTopic);
+    const articleCount = topicWords.filter(w => w.article && w.article.trim()).length;
+    const pluralCount = topicWords.filter(w => w.plural && w.plural.trim()).length;
+    const fillCount = topicWords.filter(w => hasRealExample(w)).length;
 
     const modeAvailability = {
       article: articleCount,
@@ -234,15 +242,29 @@ export default function PracticePage() {
             Choose a practice mode to get started.
           </p>
 
-          {/* Level + count selector */}
+          {/* Level + topic + count selector */}
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <select
               value={selectedLevel}
-              onChange={e => setSelectedLevel(e.target.value)}
+              onChange={e => {
+                setSelectedLevel(e.target.value);
+                setSelectedTopic('all');
+              }}
               style={s.select}
             >
               {LEVELS.map(l => (
                 <option key={l} value={l}>{l} ({(vocabData[l] || []).length} words)</option>
+              ))}
+            </select>
+
+            <select
+              value={selectedTopic}
+              onChange={e => setSelectedTopic(e.target.value)}
+              style={{ ...s.select, minWidth: '130px' }}
+            >
+              <option value="all">All topics</option>
+              {availableTopics.map(t => (
+                <option key={t} value={t}>{t}</option>
               ))}
             </select>
 
@@ -329,11 +351,11 @@ export default function PracticePage() {
   const startPractice = useCallback(() => {
     let qs = [];
     if (mode === 'article') {
-      qs = getArticleQuestions(selectedLevel);
+      qs = getArticleQuestions(selectedLevel, selectedTopic);
     } else if (mode === 'plural') {
-      qs = getPluralQuestions(selectedLevel);
+      qs = getPluralQuestions(selectedLevel, selectedTopic);
     } else if (mode === 'fillblank') {
-      qs = getFillBlankQuestions(selectedLevel);
+      qs = getFillBlankQuestions(selectedLevel, selectedTopic);
     }
 
     qs = shuffleArray(qs);
@@ -347,7 +369,7 @@ export default function PracticePage() {
     setQuizDone(false);
     setMistakes([]);
     setSessionResults([]);
-  }, [mode, selectedLevel, questionCount]);
+  }, [mode, selectedLevel, selectedTopic, questionCount]);
 
   // Auto-start on mode select
   const questionsReady = questions.length > 0;
@@ -355,9 +377,9 @@ export default function PracticePage() {
   if (!questionsReady) {
     // Generate on first render
     const qs = (() => {
-      if (mode === 'article') return getArticleQuestions(selectedLevel);
-      if (mode === 'plural') return getPluralQuestions(selectedLevel);
-      if (mode === 'fillblank') return getFillBlankQuestions(selectedLevel);
+      if (mode === 'article') return getArticleQuestions(selectedLevel, selectedTopic);
+      if (mode === 'plural') return getPluralQuestions(selectedLevel, selectedTopic);
+      if (mode === 'fillblank') return getFillBlankQuestions(selectedLevel, selectedTopic);
       return [];
     })();
 
