@@ -6,6 +6,7 @@ import allLessonsData from '../data/germanLessons.json';
 import germanVocabulary from '../data/germanVocabulary.json';
 import grammarData from '../data/grammar.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight } from 'lucide-react';
+import StudyGoalTracker from '../components/StudyGoalTracker';
 
 const skillIcons = {
   grammar: BookOpen,
@@ -464,6 +465,11 @@ export default function Dashboard() {
           </div>
           <ChevronRight size={16} style={{ color: 'var(--text-muted)' }} />
         </Link>
+      </div>
+
+      {/* Study Goal Tracker */}
+      <div className="mb-6">
+        <StudyGoalTracker />
       </div>
 
       {/* C1 Readiness Card */}

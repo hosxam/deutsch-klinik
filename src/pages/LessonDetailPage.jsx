@@ -7,6 +7,8 @@ import {
   Volume2, Star, Lightbulb, ChevronRight, Award,
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
+import PronunciationGuide from '../components/PronunciationGuide';
+import pronunciationGuides from '../data/pronunciationGuides.json' assert { type: 'json' };
 
 const allLessons = allLessonsData;
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
@@ -325,6 +327,17 @@ export default function LessonDetailPage() {
           </Link>
         ) : <div />}
       </div>
+
+      {/* Pronunciation Guide - A1/A2 only */}
+      {(levelId === 'A1' || levelId === 'A2') && (
+        <div className="mt-4 mb-2">
+          <PronunciationGuide
+            guide={pronunciationGuides[lessonId]}
+            accentColor={color}
+            fallbackText="Pronunciation guide coming soon for this lesson."
+          />
+        </div>
+      )}
 
       {/* Continue practicing this lesson */}
       {levelId && (
