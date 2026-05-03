@@ -8,6 +8,7 @@ import germanVocabulary from '../data/germanVocabulary.json';
 import grammarData from '../data/grammar.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
+import AuthPanel from '../components/AuthPanel';
 
 const allLessons = allLessonsData;
 
@@ -1592,6 +1593,11 @@ export default function Dashboard() {
         {settingsMessage && (
           <p className="text-xs mt-2" style={{ color: settingsMessage.isError ? '#ff3355' : '#3bff9e' }}>{settingsMessage.text}</p>
         )}
+      </div>
+
+      {/* Cloud Sync */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <AuthPanel />
       </div>
 
       {/* Progress Backup */}

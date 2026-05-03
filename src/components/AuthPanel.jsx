@@ -1,0 +1,392 @@
+import { useState, useEffect, useCallback } from 'react';
+import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
+import { getState } from '../utils/store';
+import {
+  User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
+  Loader2, CloudOff, KeyRound, Mail
+} from 'lucide-react';
+
+const PROGRESS_KEY = 'deutsch_klinik_state';
+const SETTINGS_KEYS = [
+  'deutsch_klinik_study_goal',
+  'deutsch_klinik_vocab_filters',
+  'deutsch_klinik_dashboard_collapsed',
+];
+
+function getLocalSettings() {
+  const settings = {};
+  for (const key of SETTINGS_KEYS) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) settings[key] = JSON.parse(raw);
+    } catch {
+      // skip corrupted keys
+    }
+  }
+  return settings;
+}
+
+function getLocalProgress() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function setLocalProgress(progress) {
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+  } catch (e) {
+    console.warn('Failed to write local progress.', e);
+  }
+}
+
+function setLocalSettings(settings) {
+  if (!settings || typeof settings !== 'object') return;
+  for (const key of Object.keys(settings)) {
+    if (SETTINGS_KEYS.includes(key)) {
+      try {
+        localStorage.setItem(key, JSON.stringify(settings[key]));
+      } catch {
+        // skip
+      }
+    }
+  }
+}
+
+export default function AuthPanel() {
+  const [session, setSession] = useState(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState('');
+  const [syncStatus, setSyncStatus] = useState('');
+  const [cloudData, setCloudData] = useState(null);
+  const [conflict, setConflict] = useState(null);
+
+  const enabled = isSupabaseEnabled();
+
+  // Clear message after 5s
+  const flash = useCallback((msg) => {
+    setMessage(msg);
+    if (msg) setTimeout(() => setMessage(''), 5000);
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
+    supabase.auth.getSession().then(({ data: { session: s } }) => {
+      setSession(s);
+    });
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, s) => {
+      setSession(s);
+      if (!s) {
+        setCloudData(null);
+        setConflict(null);
+        setSyncStatus('');
+      }
+    });
+    return () => subscription?.unsubscribe();
+  }, [enabled]);
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage('');
+    try {
+      const { error } = await supabase.auth.signUp({ email, password });
+      if (error) flash(error.message);
+      else flash('Check your email for confirmation link.');
+    } catch (err) {
+      flash(err.message);
+    }
+    setLoading(false);
+  };
+
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage('');
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) flash(error.message);
+      else {
+        setSession(data.session);
+        setEmail('');
+        setPassword('');
+        // Check for cloud progress after sign-in
+        setTimeout(() => checkCloudProgress(), 500);
+      }
+    } catch (err) {
+      flash(err.message);
+    }
+    setLoading(false);
+  };
+
+  const handleSignOut = async () => {
+    setLoading(true);
+    await supabase.auth.signOut();
+    setSession(null);
+    setCloudData(null);
+    setConflict(null);
+    setSyncStatus('');
+    setLoading(false);
+  };
+
+  async function checkCloudProgress() {
+    if (!session?.user?.id) return;
+    setSyncStatus('Checking cloud...');
+    const { data, error } = await supabase
+      .from('user_progress')
+      .select('*')
+      .eq('user_id', session.user.id)
+      .maybeSingle();
+    if (error) {
+      setSyncStatus('Error checking cloud.');
+      return;
+    }
+    if (data) {
+      setCloudData(data);
+      const local = getLocalProgress();
+      if (local && Object.keys(local).length > 0) {
+        setConflict({ cloud: data, local });
+        setSyncStatus('Conflict found. Choose what to keep.');
+      } else {
+        setSyncStatus('Cloud progress found. Download or replace?');
+      }
+    } else {
+      setCloudData(null);
+      const local = getLocalProgress();
+      if (local && Object.keys(local).length > 0) {
+        setSyncStatus('No cloud progress yet. Upload your local data?');
+      } else {
+        setSyncStatus('No progress to sync yet.');
+      }
+    }
+  }
+
+  async function handleUpload() {
+    if (!session?.user?.id) return;
+    setLoading(true);
+    setMessage('');
+
+    const progress = getLocalProgress();
+    if (!progress) {
+      flash('No local progress found to upload.');
+      setLoading(false);
+      return;
+    }
+
+    const settings = getLocalSettings();
+    const { error } = await supabase
+      .from('user_progress')
+      .upsert({
+        user_id: session.user.id,
+        progress,
+        settings,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'user_id' });
+
+    if (error) {
+      flash('Upload failed: ' + error.message);
+    } else {
+      flash('Progress uploaded successfully.');
+      setSyncStatus('Local progress uploaded to cloud.');
+      setConflict(null);
+    }
+    setLoading(false);
+  }
+
+  async function handleDownload() {
+    if (!cloudData) return;
+    if (!window.confirm('Download cloud progress? This will overwrite your current local progress.')) {
+      return;
+    }
+
+    setLoading(true);
+    setMessage('');
+
+    if (cloudData.progress && typeof cloudData.progress === 'object') {
+      setLocalProgress(cloudData.progress);
+    }
+    if (cloudData.settings && typeof cloudData.settings === 'object') {
+      setLocalSettings(cloudData.settings);
+    }
+
+    flash('Cloud progress downloaded. Refresh page to reload progress.');
+    setSyncStatus('Cloud progress downloaded to local.');
+    setConflict(null);
+    setLoading(false);
+  }
+
+  // Conflict resolution actions
+  async function handleKeepLocal() {
+    await handleUpload();
+  }
+
+  function handleReplaceWithCloud() {
+    if (!cloudData?.progress) return;
+    setLocalProgress(cloudData.progress);
+    if (cloudData.settings) setLocalSettings(cloudData.settings);
+    flash('Cloud progress applied. Refresh page to reload progress.');
+    setSyncStatus('Using cloud progress locally.');
+    setConflict(null);
+  }
+
+  // If Supabase is not configured
+  if (!enabled) {
+    return (
+      <div className="border border-gray-700 rounded-lg p-4 bg-gray-850 text-sm">
+        <div className="flex items-center gap-2 text-gray-400">
+          <CloudOff size={16} />
+          <span>Cloud sync is not configured.</span>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="border border-gray-700 rounded-lg p-4 bg-gray-850 text-sm">
+      {/* Signed in state */}
+      {session ? (
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-green-400">
+              <User size={16} />
+              <span className="font-medium truncate max-w-[180px]">{session.user.email}</span>
+            </div>
+            <button
+              onClick={handleSignOut}
+              disabled={loading}
+              className="flex items-center gap-1 px-2 py-1 text-xs text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded transition-colors"
+            >
+              <LogOut size={14} />
+              Sign Out
+            </button>
+          </div>
+
+          {/* Sync status */}
+          <div className="flex items-center gap-2 text-gray-400 text-xs">
+            {syncStatus.includes('Checking') && <Loader2 size={14} className="animate-spin" />}
+            {syncStatus.includes('Error') && <AlertTriangle size={14} className="text-yellow-400" />}
+            {syncStatus.includes('uploaded') || syncStatus.includes('downloaded') || syncStatus.includes('applied') ? (
+              <CheckCircle size={14} className="text-green-400" />
+            ) : null}
+            <span>{syncStatus || 'Not checked yet.'}</span>
+            {syncStatus && syncStatus !== 'Checking cloud...' && !syncStatus.includes('Conflict') && (
+              <button onClick={checkCloudProgress} className="text-blue-400 hover:text-blue-300 underline ml-1">
+                Refresh
+              </button>
+            )}
+          </div>
+
+          {/* Conflict resolution */}
+          {conflict && (
+            <div className="border border-yellow-600 bg-yellow-900/20 rounded p-3 space-y-2">
+              <div className="flex items-center gap-1 text-yellow-400 text-xs font-medium">
+                <AlertTriangle size={14} />
+                Cloud and local data differ
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={handleKeepLocal}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors"
+                >
+                  <Upload size={14} />
+                  Keep local & upload
+                </button>
+                <button
+                  onClick={handleReplaceWithCloud}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-amber-600 hover:bg-amber-500 text-white rounded transition-colors"
+                >
+                  <Download size={14} />
+                  Use cloud data
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Manual sync buttons */}
+          {!conflict && (
+            <div className="flex flex-wrap gap-2 pt-1">
+              <button
+                onClick={handleUpload}
+                disabled={loading}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50"
+              >
+                {loading ? <Loader2 size={14} className="animate-spin" /> : <Upload size={14} />}
+                Upload local progress
+              </button>
+              {cloudData && (
+                <button
+                  onClick={handleDownload}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-amber-600 hover:bg-amber-500 text-white rounded transition-colors disabled:opacity-50"
+                >
+                  {loading ? <Loader2 size={14} className="animate-spin" /> : <Download size={14} />}
+                  Download cloud progress
+                </button>
+              )}
+            </div>
+          )}
+
+          {message && <p className="text-xs text-gray-300">{message}</p>}
+        </div>
+      ) : (
+        /* Signed out state - login form */
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 text-gray-300 font-medium">
+            <KeyRound size={16} />
+            <span>Cloud Sync</span>
+          </div>
+          <p className="text-xs text-gray-400">Sign in to sync your progress across devices.</p>
+          <form onSubmit={handleSignIn} className="space-y-2">
+            <div className="relative">
+              <Mail size={14} className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full pl-7 pr-2 py-1.5 text-xs bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                required
+              />
+            </div>
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-2 py-1.5 text-xs bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+              required
+              minLength={6}
+            />
+            <div className="flex gap-2">
+              <button
+                type="submit"
+                disabled={loading}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50"
+              >
+                {loading ? <Loader2 size={14} className="animate-spin" /> : <LogIn size={14} />}
+                Sign In
+              </button>
+              <button
+                type="button"
+                onClick={handleSignUp}
+                disabled={loading}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-700 hover:bg-gray-600 text-gray-200 rounded transition-colors disabled:opacity-50"
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
+          {message && <p className="text-xs text-gray-300">{message}</p>}
+        </div>
+      )}
+    </div>
+  );
+}
