@@ -103,6 +103,12 @@ function loadState() {
 function saveState(state) {
   try {
     localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    // Notify listeners that progress changed (for Supabase auto-sync etc.)
+    try {
+      window.dispatchEvent(new CustomEvent('deutsch-klinik-progress-changed', { detail: { timestamp: Date.now() } }));
+    } catch (e) {
+      // Event dispatch is best-effort
+    }
   } catch (e) {
     console.warn('Failed to save state.', e);
   }

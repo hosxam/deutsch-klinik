@@ -1,9 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
 import { getState } from '../utils/store';
 import {
   User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
-  Loader2, CloudOff, KeyRound, Mail
+  Loader2, CloudOff, KeyRound, Mail, RefreshCw
 } from 'lucide-react';
 
 const PROGRESS_KEY = 'deutsch_klinik_state';
@@ -57,6 +57,116 @@ function setLocalSettings(settings) {
   }
 }
 
+/**
+ * Quick hash of serialized progress + settings to detect real changes.
+ */
+function computeSnapshotHash() {
+  const progress = getLocalProgress();
+  const settings = getLocalSettings();
+  const raw = JSON.stringify({ p: progress, s: settings });
+  let hash = 0;
+  for (let i = 0; i < raw.length; i++) {
+    const chr = raw.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash;
+}
+
+/**
+ * Debounced auto-sync: listens for progress changes and uploads after a quiet period.
+ * Tracks last uploaded hash; skips if nothing changed since last upload.
+ */
+function useAutoSync(session, conflict, isManualOperation) {
+  const timerRef = useRef(null);
+  const lastUploadedHashRef = useRef(null);
+  const [autoSyncState, setAutoSyncState] = useState('idle'); // idle | saving | saved | failed
+
+  const doUpload = useCallback(async () => {
+    if (!session?.user?.id) return;
+    if (conflict) return; // don't auto-sync if conflict is pending
+
+    const progress = getLocalProgress();
+    if (!progress) return;
+
+    const currentHash = computeSnapshotHash();
+    if (currentHash === lastUploadedHashRef.current) return; // nothing changed
+
+    setAutoSyncState('saving');
+    const settings = getLocalSettings();
+    const { error } = await supabase
+      .from('user_progress')
+      .upsert({
+        user_id: session.user.id,
+        progress,
+        settings,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'user_id' });
+
+    if (error) {
+      setAutoSyncState('failed');
+    } else {
+      lastUploadedHashRef.current = currentHash;
+      setAutoSyncState('saved');
+      // Clear "saved" after a few seconds
+      setTimeout(() => {
+        setAutoSyncState(prev => prev === 'saved' ? 'idle' : prev);
+      }, 4000);
+    }
+  }, [session, conflict]);
+
+  // Listen for progress-changed events
+  useEffect(() => {
+    if (!session?.user?.id || conflict) {
+      setAutoSyncState('idle');
+      return;
+    }
+
+    const handler = () => {
+      // Debounce: reset timer on each event
+      if (timerRef.current) clearTimeout(timerRef.current);
+      timerRef.current = setTimeout(() => {
+        doUpload();
+      }, 3000);
+    };
+
+    window.addEventListener('deutsch-klinik-progress-changed', handler);
+    return () => {
+      window.removeEventListener('deutsch-klinik-progress-changed', handler);
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [session, conflict, doUpload]);
+
+  // Clear saved state after manual upload
+  useEffect(() => {
+    if (isManualOperation) {
+      // After manual upload completes, update hash so auto-sync doesn't re-upload
+      lastUploadedHashRef.current = computeSnapshotHash();
+      setAutoSyncState('idle');
+    }
+  }, [isManualOperation]);
+
+  return autoSyncState;
+}
+
+function autoSyncStatusLabel(state) {
+  switch (state) {
+    case 'saving': return 'Saving...';
+    case 'saved': return 'Saved to cloud';
+    case 'failed': return 'Auto-sync failed';
+    default: return null;
+  }
+}
+
+function autoSyncStatusColor(state) {
+  switch (state) {
+    case 'saving': return 'text-blue-400';
+    case 'saved': return 'text-green-400';
+    case 'failed': return 'text-yellow-400';
+    default: return 'text-gray-500';
+  }
+}
+
 export default function AuthPanel() {
   const [session, setSession] = useState(null);
   const [email, setEmail] = useState('');
@@ -66,8 +176,10 @@ export default function AuthPanel() {
   const [syncStatus, setSyncStatus] = useState('');
   const [cloudData, setCloudData] = useState(null);
   const [conflict, setConflict] = useState(null);
+  const [isManualOp, setIsManualOp] = useState(false);
 
   const enabled = isSupabaseEnabled();
+  const autoSyncState = useAutoSync(session, conflict, isManualOp);
 
   // Clear message after 5s
   const flash = useCallback((msg) => {
@@ -116,7 +228,6 @@ export default function AuthPanel() {
         setSession(data.session);
         setEmail('');
         setPassword('');
-        // Check for cloud progress after sign-in
         setTimeout(() => checkCloudProgress(), 500);
       }
     } catch (err) {
@@ -154,7 +265,7 @@ export default function AuthPanel() {
         setConflict({ cloud: data, local });
         setSyncStatus('Conflict found. Choose what to keep.');
       } else {
-        setSyncStatus('Cloud progress found. Download or replace?');
+        setSyncStatus('Cloud progress found. Download available.');
       }
     } else {
       setCloudData(null);
@@ -169,6 +280,7 @@ export default function AuthPanel() {
 
   async function handleUpload() {
     if (!session?.user?.id) return;
+    setIsManualOp(true);
     setLoading(true);
     setMessage('');
 
@@ -176,6 +288,7 @@ export default function AuthPanel() {
     if (!progress) {
       flash('No local progress found to upload.');
       setLoading(false);
+      setIsManualOp(false);
       return;
     }
 
@@ -197,6 +310,7 @@ export default function AuthPanel() {
       setConflict(null);
     }
     setLoading(false);
+    setIsManualOp(false);
   }
 
   async function handleDownload() {
@@ -267,6 +381,19 @@ export default function AuthPanel() {
             </button>
           </div>
 
+          {/* Auto-sync status bar */}
+          {autoSyncState !== 'idle' && (
+            <div className={`flex items-center gap-2 text-xs ${autoSyncStatusColor(autoSyncState)}`}>
+              {autoSyncState === 'saving' && <Loader2 size={14} className="animate-spin" />}
+              {autoSyncState === 'saved' && <CheckCircle size={14} />}
+              {autoSyncState === 'failed' && <AlertTriangle size={14} />}
+              <span>{autoSyncStatusLabel(autoSyncState)}</span>
+              {autoSyncState === 'failed' && (
+                <span className="text-gray-500">(local progress saved)</span>
+              )}
+            </div>
+          )}
+
           {/* Sync status */}
           <div className="flex items-center gap-2 text-gray-400 text-xs">
             {syncStatus.includes('Checking') && <Loader2 size={14} className="animate-spin" />}
@@ -277,7 +404,7 @@ export default function AuthPanel() {
             <span>{syncStatus || 'Not checked yet.'}</span>
             {syncStatus && syncStatus !== 'Checking cloud...' && !syncStatus.includes('Conflict') && (
               <button onClick={checkCloudProgress} className="text-blue-400 hover:text-blue-300 underline ml-1">
-                Refresh
+                <RefreshCw size={12} className="inline" /> Refresh
               </button>
             )}
           </div>
