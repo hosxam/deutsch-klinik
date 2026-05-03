@@ -125,3 +125,6 @@ This prevents accidentally adding the same word twice at the same level.
 - C1 expanded from 501 to 1,169 (target was 1,000).
 - Added broad coverage of academic, political, economic, and cultural vocabulary beyond the existing medical-heavy C1 set.
 - Batch merge, import, and build all passed successfully.
+
+### Next Recommended Task
+Expand B1 vocabulary next to at least 1,000 words (currently 678).
