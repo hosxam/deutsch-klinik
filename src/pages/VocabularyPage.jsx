@@ -1,9 +1,9 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
 import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X } from 'lucide-react';
+import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X, Hash } from 'lucide-react';
 
 // All levels available
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -100,6 +100,7 @@ const allWords = LEVELS.flatMap(level =>
 
 export default function VocabularyPage() {
   const { levelId } = useParams();
+  const navigate = useNavigate();
   const [mode, setMode] = useState('browse');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -314,6 +315,9 @@ export default function VocabularyPage() {
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           <button style={s.btn} onClick={() => setCurrentIndex(Math.floor(Math.random() * words.length))}>
             <Shuffle size={14} style={{ marginRight: '0.4rem' }} />Random
+          </button>
+          <button style={s.btnPrimary} onClick={() => navigate(`/level/${levelId}/vocabulary/practice`)}>
+            <Hash size={14} style={{ marginRight: '0.4rem' }} />Practice
           </button>
           <button style={s.btnPrimary} onClick={() => setMode('quiz')}>
             <Brain size={14} style={{ marginRight: '0.4rem' }} />Start Quiz

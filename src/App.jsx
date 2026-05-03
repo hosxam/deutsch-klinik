@@ -20,6 +20,7 @@ const C1ReadinessPage = lazy(() => import('./pages/C1ReadinessPage'));
 const LessonsPage = lazy(() => import('./pages/LessonsPage'));
 const LessonDetailPage = lazy(() => import('./pages/LessonDetailPage'));
 const MistakeNotebookPage = lazy(() => import('./pages/MistakeNotebookPage'));
+const PracticePage = lazy(() => import('./pages/PracticePage'));
 const MedicalFSPHubPage = lazy(() => import('./pages/MedicalFSPHubPage'));
 const FSPVocabPage = lazy(() => import('./pages/FSPVocabPage'));
 const FSPAnamnesePage = lazy(() => import('./pages/FSPAnamnesePage'));
@@ -77,6 +78,11 @@ export default function App() {
             <Route path="level/:levelId/vocabulary/flashcards" element={
               <Suspense fallback={<Loading />}>
                 <FlashcardPage />
+              </Suspense>
+            } />
+            <Route path="level/:levelId/vocabulary/practice" element={
+              <Suspense fallback={<Loading />}>
+                <PracticePage />
               </Suspense>
             } />
             <Route path="level/:levelId/reading" element={
