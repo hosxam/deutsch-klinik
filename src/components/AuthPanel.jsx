@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
-import { getState } from '../utils/store';
 import {
   User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
   Loader2, CloudOff, KeyRound, Mail, RefreshCw
@@ -116,9 +115,13 @@ function useAutoSync(session, conflict, isManualOperation) {
   }, [session, conflict]);
 
   // Listen for progress-changed events
+  const syncEnabled = !!(session?.user?.id && !conflict);
+
+  // Set up event listener when sync is active
   useEffect(() => {
-    if (!session?.user?.id || conflict) {
-      setAutoSyncState('idle');
+    if (!syncEnabled) {
+      // Reset state asynchronously via microtask to avoid cascading render
+      queueMicrotask(() => setAutoSyncState('idle'));
       return;
     }
 
@@ -135,14 +138,15 @@ function useAutoSync(session, conflict, isManualOperation) {
       window.removeEventListener('deutsch-klinik-progress-changed', handler);
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [session, conflict, doUpload]);
+  }, [syncEnabled, doUpload]);
 
   // Clear saved state after manual upload
   useEffect(() => {
     if (isManualOperation) {
       // After manual upload completes, update hash so auto-sync doesn't re-upload
       lastUploadedHashRef.current = computeSnapshotHash();
-      setAutoSyncState('idle');
+      // Reset asynchronously to avoid cascading render
+      queueMicrotask(() => setAutoSyncState('idle'));
     }
   }, [isManualOperation]);
 
