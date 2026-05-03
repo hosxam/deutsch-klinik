@@ -198,6 +198,7 @@ export default function PracticePage() {
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [topicSearch, setTopicSearch] = useState('');
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
+  const [topicHighlightedIndex, setTopicHighlightedIndex] = useState(0);
   const [questionCount, setQuestionCount] = useState(20);
 
   // Available topics for the selected level
@@ -264,6 +265,7 @@ export default function PracticePage() {
                 setSelectedTopic('all');
                 setTopicSearch('');
                 setTopicDropdownOpen(false);
+                setTopicHighlightedIndex(0);
               }}
               style={s.select}
             >
@@ -281,17 +283,30 @@ export default function PracticePage() {
                 onChange={e => {
                   setTopicSearch(e.target.value);
                   setTopicDropdownOpen(true);
+                  setTopicHighlightedIndex(0);
                 }}
                 onFocus={() => setTopicDropdownOpen(true)}
                 onBlur={() => setTimeout(() => setTopicDropdownOpen(false), 180)}
                 onKeyDown={e => {
-                  if (e.key === 'Enter' && filteredTopicOptions.length > 0) {
-                    const first = filteredTopicOptions[0];
-                    setSelectedTopic(first === 'All topics' ? 'all' : first);
-                    setTopicSearch(first === 'All topics' ? '' : first);
+                  const opts = filteredTopicOptions;
+                  if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    setTopicDropdownOpen(true);
+                    setTopicHighlightedIndex(prev => Math.min(prev + 1, opts.length - 1));
+                  } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    setTopicDropdownOpen(true);
+                    setTopicHighlightedIndex(prev => Math.max(prev - 1, 0));
+                  } else if (e.key === 'Enter') {
+                    if (opts.length === 0) return;
+                    const idx = Math.min(topicHighlightedIndex, opts.length - 1);
+                    const selected = opts[idx];
+                    setSelectedTopic(selected === 'All topics' ? 'all' : selected);
+                    setTopicSearch(selected === 'All topics' ? '' : selected);
+                    setTopicDropdownOpen(false);
+                  } else if (e.key === 'Escape') {
                     setTopicDropdownOpen(false);
                   }
-                  if (e.key === 'Escape') setTopicDropdownOpen(false);
                 }}
                 style={{
                   padding: '0.5rem 1.6rem 0.5rem 0.6rem',
@@ -311,6 +326,7 @@ export default function PracticePage() {
                     setSelectedTopic('all');
                     setTopicSearch('');
                     setTopicDropdownOpen(false);
+                    setTopicHighlightedIndex(0);
                   }}
                   style={{
                     position: 'absolute', right: '4px', top: '50%', transform: 'translateY(-50%)',
@@ -336,28 +352,32 @@ export default function PracticePage() {
                     <div style={{ padding: '0.5rem 0.75rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
                       No topics match
                     </div>
-                  ) : filteredTopicOptions.map(t => (
-                    <button
-                      key={t}
-                      onClick={() => {
-                        const value = t === 'All topics' ? 'all' : t;
-                        setSelectedTopic(value);
-                        setTopicSearch(t === 'All topics' ? '' : t);
-                        setTopicDropdownOpen(false);
-                      }}
-                      style={{
-                        display: 'block', width: '100%', textAlign: 'left',
-                        padding: '0.45rem 0.75rem', fontSize: '0.85rem',
-                        background: (t === 'All topics' && selectedTopic === 'all') || (t === selectedTopic) ? 'var(--bg-hover)' : 'transparent',
-                        color: 'var(--text-primary)',
-                        border: 'none', cursor: 'pointer',
-                      }}
-                      onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-hover)'}
-                      onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
-                    >
-                      {t}
-                    </button>
-                  ))}
+                  ) : filteredTopicOptions.map((t, idx) => {
+                    const isHighlighted = idx === topicHighlightedIndex;
+                    const isActive = (t === 'All topics' && selectedTopic === 'all') || (t === selectedTopic);
+                    return (
+                      <button
+                        key={t}
+                        onClick={() => {
+                          const value = t === 'All topics' ? 'all' : t;
+                          setSelectedTopic(value);
+                          setTopicSearch(t === 'All topics' ? '' : t);
+                          setTopicDropdownOpen(false);
+                        }}
+                        onMouseEnter={() => setTopicHighlightedIndex(idx)}
+                        style={{
+                          display: 'block', width: '100%', textAlign: 'left',
+                          padding: '0.45rem 0.75rem', fontSize: '0.85rem',
+                          background: isHighlighted ? 'var(--bg-hover)' : isActive ? 'var(--bg-secondary)' : 'transparent',
+                          color: 'var(--text-primary)',
+                          border: 'none', cursor: 'pointer',
+                          outline: 'none',
+                        }}
+                      >
+                        {t}
+                      </button>
+                    );
+                  })}
                 </div>
               )}
             </div>
