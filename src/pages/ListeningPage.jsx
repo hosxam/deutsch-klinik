@@ -3,9 +3,18 @@ import { useState, useEffect, useRef } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import listeningData from '../data/listening.json';
 import LevelLock from '../components/LevelLock';
-import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle } from 'lucide-react';
+import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle, FileAudio } from 'lucide-react';
 
 const TTS_AVAILABLE = typeof window !== 'undefined' && 'speechSynthesis' in window;
+
+// Resolve audio file path to an absolute URL using Vite's BASE_URL
+// Supports relative paths (e.g. "audio/listening/file.mp3") and already-absolute paths.
+const resolveAudioPath = (path) => {
+  if (path && path.startsWith('http')) return path;
+  const base = typeof import.meta !== 'undefined' ? import.meta.env.BASE_URL || '/' : '/';
+  const cleanBase = base.endsWith('/') ? base : base + '/';
+  return path && !path.startsWith(cleanBase) ? cleanBase + path.replace(/^\//, '') : path || '';
+};
 
 export default function ListeningPage() {
   const { levelId } = useParams();
@@ -20,10 +29,17 @@ export default function ListeningPage() {
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(null);
   const [slowMode, setSlowMode] = useState(false);
+  const [audioError, setAudioError] = useState(false);
+  const [audioDuration, setAudioDuration] = useState(0);
+  const [audioCurrentTime, setAudioCurrentTime] = useState(0);
   const utteranceRef = useRef(null);
+  const audioRef = useRef(null);
   const submittedRef = useRef(false);
 
   const ex = exercises[currentEx];
+
+  // Whether this exercise has an audio file
+  const hasAudio = ex && typeof ex.audio === 'string' && ex.audio.length > 0 && !audioError;
 
   // Load available German voices
   useEffect(() => {
@@ -44,11 +60,15 @@ export default function ListeningPage() {
     };
   }, []);
 
-  // Cancel speech on exercise change
+  // Cancel speech and stop audio on exercise change
   useEffect(() => {
     return () => {
       if (utteranceRef.current) {
         window.speechSynthesis.cancel();
+      }
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
       }
     };
   }, [currentEx]);
@@ -58,26 +78,99 @@ export default function ListeningPage() {
     if (utteranceRef.current) {
       window.speechSynthesis.cancel();
     }
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = null;
+    }
     setCurrentEx(idx);
     setAnswers({});
     setSubmitted(false);
     setShowTranscript(false);
     setPlaying(false);
     setPaused(false);
+    setAudioError(false);
+    setAudioDuration(0);
+    setAudioCurrentTime(0);
     submittedRef.current = false;
   };
 
-  if (exercises.length === 0) {
-    return (
-      <LevelLock levelId={levelId}>
-      <div className="text-center py-12">
-        <p style={{ color: 'var(--text-muted)' }}>No listening exercises for {levelId}</p>
-        <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
-      </div>
-      </LevelLock>
-    );
-  }
+  // Handle audio file errors
+  const handleAudioError = () => {
+    setAudioError(true);
+    setPlaying(false);
+    setPaused(false);
+  };
 
+  // Audio file playback
+  const playAudio = (rate) => {
+    if (!ex || !ex.audio) return;
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = null;
+    }
+    const audioUrl = resolveAudioPath(ex.audio);
+    const audio = new Audio(audioUrl);
+    audio.playbackRate = rate || 1;
+    audioRef.current = audio;
+
+    audio.onloadedmetadata = () => {
+      setAudioDuration(audio.duration);
+    };
+
+    audio.ontimeupdate = () => {
+      setAudioCurrentTime(audio.currentTime);
+    };
+
+    audio.onended = () => {
+      setPlaying(false);
+      setPaused(false);
+      setAudioCurrentTime(0);
+    };
+
+    audio.onerror = () => {
+      handleAudioError();
+    };
+
+    setPlaying(true);
+    setPaused(false);
+    audio.play().catch(() => {
+      handleAudioError();
+    });
+  };
+
+  const pauseAudio = () => {
+    if (!audioRef.current) return;
+    audioRef.current.pause();
+    setPaused(true);
+  };
+
+  const resumeAudio = () => {
+    if (!audioRef.current) return;
+    audioRef.current.play().catch(() => {
+      handleAudioError();
+    });
+    setPaused(false);
+  };
+
+  const stopAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current = null;
+    }
+    setPlaying(false);
+    setPaused(false);
+    setAudioCurrentTime(0);
+  };
+
+  const formatTime = (seconds) => {
+    if (!seconds || isNaN(seconds)) return '0:00';
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m}:${s.toString().padStart(2, '0')}`;
+  };
+
+  // TTS playback
   const speak = (rateOverride) => {
     if (utteranceRef.current) {
       window.speechSynthesis.cancel();
@@ -106,6 +199,14 @@ export default function ListeningPage() {
   };
 
   const handlePlay = () => {
+    if (hasAudio) {
+      if (paused) {
+        resumeAudio();
+        return;
+      }
+      playAudio(slowMode ? 0.75 : 1);
+      return;
+    }
     if (!TTS_AVAILABLE) return;
     if (paused) {
       window.speechSynthesis.resume();
@@ -116,16 +217,30 @@ export default function ListeningPage() {
   };
 
   const handleSlowPlay = () => {
+    if (hasAudio) return;
     if (!TTS_AVAILABLE) return;
     speak(0.5);
   };
 
   const handleReplay = () => {
+    if (hasAudio) {
+      stopAudio();
+      playAudio(1);
+      return;
+    }
     if (!TTS_AVAILABLE) return;
     speak();
   };
 
   const pausePlay = () => {
+    if (hasAudio) {
+      if (paused) {
+        resumeAudio();
+      } else if (playing) {
+        pauseAudio();
+      }
+      return;
+    }
     if (!TTS_AVAILABLE) return;
     if (paused) {
       window.speechSynthesis.resume();
@@ -137,6 +252,10 @@ export default function ListeningPage() {
   };
 
   const stop = () => {
+    if (hasAudio) {
+      stopAudio();
+      return;
+    }
     if (!TTS_AVAILABLE) return;
     window.speechSynthesis.cancel();
     setPlaying(false);
@@ -163,15 +282,18 @@ export default function ListeningPage() {
 
   if (!ex) return null;
 
-  // Show transcript pre-submit when TTS is unavailable (no audio fallback)
+  // Show transcript pre-submit when both TTS and audio files are unavailable
   useEffect(() => {
-    if (!TTS_AVAILABLE && !submitted) {
+    if (!TTS_AVAILABLE && !hasAudio && !submitted) {
       setShowTranscript(true);
     }
-  }, [currentEx, submitted]);
+  }, [currentEx, submitted, hasAudio]);
 
   // Determine if any answer has been selected
   const allAnswered = ex.questions.every(q => answers[q.id] !== undefined);
+
+  // Audio source indicator text
+  const sourceLabel = hasAudio ? 'Audio file' : (TTS_AVAILABLE ? 'Browser voice' : 'Unavailable');
 
   return (
     <LevelLock levelId={levelId}>
@@ -194,22 +316,93 @@ export default function ListeningPage() {
       <div className="rounded-xl p-6 mb-4 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <h2 className="font-semibold mb-2" style={{ color: 'var(--accent)' }}>{ex.title}</h2>
 
-        {/* Instructions */}
-        <div className="text-xs mb-4 px-3 py-2 rounded-lg inline-block" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
-          {TTS_AVAILABLE ? 'Listen carefully. Answer the questions below after listening.' : 'Audio not available. Read the transcript and answer the questions below.'} {submitted ? 'Transcript is now available below.' : ''}
+        {/* Source indicator */}
+        <div className="flex items-center justify-center gap-1.5 mb-3">
+          {hasAudio ? (
+            <FileAudio size={13} style={{ color: '#8b5cf6' }} />
+          ) : (
+            <Mic size={13} style={{ color: 'var(--text-muted)' }} />
+          )}
+          <span className="text-xs" style={{ color: hasAudio ? '#8b5cf6' : 'var(--text-muted)' }}>
+            {sourceLabel}
+          </span>
         </div>
 
-        {!TTS_AVAILABLE ? (
-          /* Fallback for unsupported browsers */
+        {/* Instructions */}
+        <div className="text-xs mb-4 px-3 py-2 rounded-lg inline-block" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
+          {hasAudio || TTS_AVAILABLE ? 'Listen carefully. Answer the questions below after listening.' : 'Audio not available. Read the transcript and answer the questions below.'} {submitted ? 'Transcript is now available below.' : ''}
+        </div>
+
+        {!TTS_AVAILABLE && !hasAudio ? (
+          /* Fallback for no audio at all */
           <div className="p-4 rounded-lg mb-3" style={{ backgroundColor: 'rgba(255,170,51,0.08)', border: '1px solid rgba(255,170,51,0.3)' }}>
             <p className="text-sm font-medium mb-2" style={{ color: '#ffaa33' }}>Audio not available</p>
             <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
               Your browser does not support speech synthesis. The transcript is shown below instead.
             </p>
           </div>
+        ) : hasAudio ? (
+          <>
+            {/* Audio file controls */}
+            <div className="flex flex-col items-center gap-3 mb-3">
+              {/* Progress bar */}
+              {audioDuration > 0 && (
+                <div className="w-full max-w-xs h-1.5 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                  <div className="h-full rounded-full transition-all" style={{ width: `${(audioCurrentTime / audioDuration) * 100}%`, backgroundColor: '#8b5cf6' }} />
+                </div>
+              )}
+              <div className="flex items-center gap-2">
+                {!playing ? (
+                  <button onClick={handlePlay} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#8b5cf6', color: '#fff' }}>
+                    <Play size={16} /> {submitted ? 'Replay Audio' : 'Play Audio'}
+                  </button>
+                ) : (
+                  <>
+                    <button onClick={pausePlay} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
+                      {paused ? <Play size={16} /> : <Volume2 size={16} />} {paused ? 'Resume' : 'Pause'}
+                    </button>
+                    <button onClick={stop} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ef4444', color: '#fff' }}>
+                      <Square size={16} /> Stop
+                    </button>
+                  </>
+                )}
+
+                {/* Speed toggle for audio files */}
+                {!playing && (
+                  <button
+                    onClick={() => { setSlowMode(s => !s); }}
+                    className="px-4 py-3 rounded-lg inline-flex items-center gap-2 text-sm"
+                    style={{
+                      backgroundColor: slowMode ? 'rgba(139,92,246,0.15)' : 'var(--bg-hover)',
+                      color: slowMode ? '#8b5cf6' : 'var(--text-secondary)',
+                      border: `1px solid ${slowMode ? '#8b5cf6' : 'var(--border)'}`,
+                    }}
+                    title={slowMode ? 'Switch to normal speed' : 'Play at 0.75x speed'}
+                  >
+                    <Volume2 size={14} /> {slowMode ? 'Normal (1x)' : 'Slow (0.75x)'}
+                  </button>
+                )}
+              </div>
+              {/* Time display */}
+              <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                {audioDuration > 0 ? `${formatTime(audioCurrentTime)} / ${formatTime(audioDuration)}` : ''}
+                {!playing && !paused && !slowMode && ' Speed: 1x'}
+                {!playing && !paused && slowMode && ' Speed: 0.75x'}
+              </div>
+            </div>
+
+            {/* Replay button (after submission) */}
+            {submitted && (
+              <div className="mt-3">
+                <button onClick={handleReplay} className="px-4 py-2 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: '#8b5cf6', border: '1px solid var(--border)' }}>
+                  <Play size={14} /> Replay Audio
+                </button>
+              </div>
+            )}
+          </>
         ) : (
           <>
-            {/* Voice selector and controls */}
+            {/* Voice selector and controls (TTS path) */}
             <div className="flex items-center justify-center gap-2 mb-4 flex-wrap">
               <Mic size={14} style={{ color: 'var(--text-muted)' }} />
               {voices.length > 0 ? (
@@ -238,7 +431,7 @@ export default function ListeningPage() {
               </button>
             </div>
 
-            {/* Main playback controls */}
+            {/* Main playback controls (TTS) */}
             <div className="flex justify-center gap-3 flex-wrap">
               {!playing ? (
                 <button onClick={handlePlay} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
@@ -255,7 +448,7 @@ export default function ListeningPage() {
                 </>
               )}
 
-              {/* Slow mode toggle */}
+              {/* Slow mode toggle (TTS) */}
               {!playing && (
                 <button
                   onClick={() => { setSlowMode(s => !s); }}
