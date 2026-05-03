@@ -144,6 +144,9 @@ All three modes generate questions directly from `src/data/germanVocabulary.json
 - Try Again reshuffles and replays the full mode.
 - Back to mode selection button returns to the mode picker.
 - Mistakes-only sessions show a visible "Mistakes only" badge in the question bar.
+- Results screen supports Copy mistakes (readable text summary with session metadata).
+- Results screen supports Download mistakes CSV (exports mode, level, topic, question, userAnswer, correctAnswer, word, article, plural, translation, example).
+- Export buttons appear only when mistakes exist.
 - Progress recorded via `recordVocabAnswer` and `updateLevelProgress` in `store.js`.
 - Level-lock gated via `LevelLock` component.
 
