@@ -111,8 +111,8 @@ This prevents accidentally adding the same word twice at the same level.
 | A2    | 501   |
 | B1    | 678   |
 | B2    | 1,071 |
-| C1    | 501   |
-| **Total** | **3,248** |
+| C1    | 1,169 |
+| **Total** | **3,916** |
 
 ### B2 Expansion
 - Added 204 new B2 words to reach 1,071 (target was 1,034).
@@ -120,5 +120,8 @@ This prevents accidentally adding the same word twice at the same level.
 - Vocabulary is added through CSV batch pipeline only.
 - Do not manually edit `src/data/germanVocabulary.json`.
 
-### Next Recommended Task
-Expand C1 vocabulary next, but only after committing the current B2 work.
+### C1 Expansion
+- Generated 683 candidates, added 668 new C1 words (15 duplicates skipped).
+- C1 expanded from 501 to 1,169 (target was 1,000).
+- Added broad coverage of academic, political, economic, and cultural vocabulary beyond the existing medical-heavy C1 set.
+- Batch merge, import, and build all passed successfully.
