@@ -196,10 +196,23 @@ export default function PracticePage() {
   // Level filter state
   const [selectedLevel, setSelectedLevel] = useState(levelId);
   const [selectedTopic, setSelectedTopic] = useState('all');
+  const [topicSearch, setTopicSearch] = useState('');
+  const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [questionCount, setQuestionCount] = useState(20);
 
   // Available topics for the selected level
   const availableTopics = useMemo(() => getTopics(selectedLevel), [selectedLevel]);
+
+  // Filtered topic options for the searchable dropdown
+  const filteredTopicOptions = useMemo(() => {
+    const results = ['All topics'];
+    const q = topicSearch.toLowerCase().trim();
+    if (!q) return [...results, ...availableTopics];
+    availableTopics.forEach(t => {
+      if (t.toLowerCase().includes(q)) results.push(t);
+    });
+    return results;
+  }, [topicSearch, availableTopics]);
 
   const s = {
     card: { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' },
@@ -249,6 +262,8 @@ export default function PracticePage() {
               onChange={e => {
                 setSelectedLevel(e.target.value);
                 setSelectedTopic('all');
+                setTopicSearch('');
+                setTopicDropdownOpen(false);
               }}
               style={s.select}
             >
@@ -257,16 +272,95 @@ export default function PracticePage() {
               ))}
             </select>
 
-            <select
-              value={selectedTopic}
-              onChange={e => setSelectedTopic(e.target.value)}
-              style={{ ...s.select, minWidth: '130px' }}
-            >
-              <option value="all">All topics</option>
-              {availableTopics.map(t => (
-                <option key={t} value={t}>{t}</option>
-              ))}
-            </select>
+            {/* Searchable topic selector */}
+            <div style={{ position: 'relative', flex: '1 1 auto', minWidth: '140px', maxWidth: '240px' }}>
+              <input
+                type="text"
+                placeholder="Search topic..."
+                value={topicSearch}
+                onChange={e => {
+                  setTopicSearch(e.target.value);
+                  setTopicDropdownOpen(true);
+                }}
+                onFocus={() => setTopicDropdownOpen(true)}
+                onBlur={() => setTimeout(() => setTopicDropdownOpen(false), 180)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' && filteredTopicOptions.length > 0) {
+                    const first = filteredTopicOptions[0];
+                    setSelectedTopic(first === 'All topics' ? 'all' : first);
+                    setTopicSearch(first === 'All topics' ? '' : first);
+                    setTopicDropdownOpen(false);
+                  }
+                  if (e.key === 'Escape') setTopicDropdownOpen(false);
+                }}
+                style={{
+                  padding: '0.5rem 1.6rem 0.5rem 0.6rem',
+                  fontSize: '0.85rem',
+                  width: '100%',
+                  borderRadius: '8px',
+                  border: '1px solid var(--border)',
+                  background: 'var(--bg-hover)',
+                  color: 'var(--text-primary)',
+                  outline: 'none',
+                }}
+              />
+              {/* Clear button when topic is selected */}
+              {selectedTopic !== 'all' && (
+                <button
+                  onClick={() => {
+                    setSelectedTopic('all');
+                    setTopicSearch('');
+                    setTopicDropdownOpen(false);
+                  }}
+                  style={{
+                    position: 'absolute', right: '4px', top: '50%', transform: 'translateY(-50%)',
+                    background: 'none', border: 'none', cursor: 'pointer',
+                    color: 'var(--text-muted)', fontSize: '0.8rem', padding: '2px 6px',
+                  }}
+                  title="Clear topic filter"
+                >
+                  X
+                </button>
+              )}
+              {topicDropdownOpen && (
+                <div style={{
+                  position: 'absolute', top: '100%', left: 0, right: 0,
+                  zIndex: 50, marginTop: '2px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '8px',
+                  maxHeight: '200px', overflowY: 'auto',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                }}>
+                  {filteredTopicOptions.length === 0 ? (
+                    <div style={{ padding: '0.5rem 0.75rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                      No topics match
+                    </div>
+                  ) : filteredTopicOptions.map(t => (
+                    <button
+                      key={t}
+                      onClick={() => {
+                        const value = t === 'All topics' ? 'all' : t;
+                        setSelectedTopic(value);
+                        setTopicSearch(t === 'All topics' ? '' : t);
+                        setTopicDropdownOpen(false);
+                      }}
+                      style={{
+                        display: 'block', width: '100%', textAlign: 'left',
+                        padding: '0.45rem 0.75rem', fontSize: '0.85rem',
+                        background: (t === 'All topics' && selectedTopic === 'all') || (t === selectedTopic) ? 'var(--bg-hover)' : 'transparent',
+                        color: 'var(--text-primary)',
+                        border: 'none', cursor: 'pointer',
+                      }}
+                      onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-hover)'}
+                      onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                    >
+                      {t}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Questions:</span>
             <select
