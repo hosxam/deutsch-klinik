@@ -132,6 +132,7 @@ All three modes generate questions directly from `src/data/germanVocabulary.json
 ### Shared Features
 - Level filter (A1-C1) with question count selector (10/20/30/50).
 - Searchable topic filter: text input with dropdown that filters available topics by typed text. Selecting a topic refines all mode card counts and question generation.
+- Topic selector supports full keyboard navigation: Arrow Down (next option), Arrow Up (previous option), Enter (select highlighted), Escape (close dropdown). Mouse hover also syncs with the highlighted option.
 - Topic filter works with all three practice modes (Article, Plural, Fill in the Blank).
 - Mode card counts update based on selected level and topic.
 - Changing level resets topic to All topics.
@@ -143,7 +144,6 @@ All three modes generate questions directly from `src/data/germanVocabulary.json
 - Level-lock gated via `LevelLock` component.
 
 ### Current Limitations
-- Topic selector does not yet support arrow-key navigation (Enter selects the first filtered option).
 - No spaced repetition scheduling -- only basic correct/incorrect tracking.
 - Fill-in-the-blank uses simple regex word-boundary matching. May misidentify the blank target in edge cases (compound words, irregular inflections). Could be improved later with lemmatization or position-based detection.
 - Article practice only tests der/die/das -- entries with other determiners are skipped.
