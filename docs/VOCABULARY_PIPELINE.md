@@ -32,6 +32,7 @@ Consuming pages:
 - `FlashcardPage.jsx` -- flashcard review
 - `MistakeNotebookPage.jsx` -- review incorrect answers
 - `Dashboard.jsx` -- progress overview
+- `PracticePage.jsx` -- article, plural, and fill-in-the-blank practice
 
 New words added to the CSV automatically appear in all of these after importing.
 
@@ -96,12 +97,61 @@ This prevents accidentally adding the same word twice at the same level.
 | `data/vocabulary_master.csv` | Permanent master vocabulary |
 | `data/new_vocabulary_batch.csv` | Temporary batch import file |
 
+## Vocabulary Practice Modes
+
+Three practice modes are now available at:
+
+**`src/pages/PracticePage.jsx`**
+
+Route: `level/:levelId/vocabulary/practice`
+
+Connected from the Practice button in `src/pages/VocabularyPage.jsx`.
+
+All three modes generate questions directly from `src/data/germanVocabulary.json` at runtime. They do not use separate word lists or hardcoded datasets.
+
+### 1. Article Practice
+- Tests noun article knowledge (der/die/das).
+- Shows the word, user taps one of three color-coded article buttons.
+- Generates questions only from entries with a non-empty `article` field.
+- Available: ~3,455 entries across A1-C1.
+
+### 2. Plural Practice
+- Tests plural form knowledge.
+- Shows article + word, user types the plural form.
+- Generates questions only from entries with a non-empty `plural` field.
+- Accepts answers with or without the leading article.
+- Available: ~2,481 entries across A1-C1.
+
+### 3. Fill in the Blank
+- Tests vocabulary in context.
+- Shows a German sentence from the `example` field with the target word replaced by `_____`. User types the missing word.
+- Generates questions only from entries with a real sentence example (not just `word: translation` format).
+- Uses case-insensitive regex word-boundary matching to find the target word in the example sentence.
+- Available: ~4,106 entries across A1-C1.
+
+### Shared Features
+- Level filter (A1-C1) with question count selector (10/20/30/50).
+- Mode selector showing available question counts per level.
+- Per-question feedback (correct/incorrect with correct answer shown).
+- Progress bar, score tracking, and hint panel.
+- Results screen with mistake review (your answer vs. correct answer).
+- Try Again to reshuffle and replay the same mode.
+- Progress recorded via `recordVocabAnswer` and `updateLevelProgress` in `store.js`.
+- Level-lock gated via `LevelLock` component.
+
+### Current Limitations
+- No topic/skill/subtopic filtering -- all eligible words in a level are included.
+- No spaced repetition scheduling -- only basic correct/incorrect tracking.
+- Fill-in-the-blank uses simple regex word-boundary matching. May misidentify the blank target in edge cases (compound words, irregular inflections). Could be improved later with lemmatization or position-based detection.
+- Article practice only tests der/die/das -- entries with other determiners are skipped.
+
 ## Important
 
 - Do not edit `src/data/germanVocabulary.json` by hand. It is always regenerated.
 - Do not edit `data/vocabulary_master.csv` manually unless you know what you are doing. Use the batch import workflow.
 - All existing IDs in the master CSV are preserved during merges.
 - New rows without IDs get IDs in the `A1_vNNN` format, continuing from the highest existing ID for that level.
+- Practice modes should always use the central vocabulary data. Do not create separate article/plural/fill-in-the-blank datasets.
 
 ## Current Vocabulary Status (2026-05-03)
 
