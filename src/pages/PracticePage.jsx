@@ -413,6 +413,7 @@ export default function PracticePage() {
                     setQuizDone(false);
                     setMistakes([]);
                     setSessionResults([]);
+                    setReviewingMistakes(false);
                   }}
                   disabled={count === 0}
                   style={{
@@ -483,6 +484,7 @@ export default function PracticePage() {
     setQuizDone(false);
     setMistakes([]);
     setSessionResults([]);
+    setReviewingMistakes(false);
   }, [mode, selectedLevel, selectedTopic, questionCount]);
 
   // Auto-start on mode select
@@ -582,61 +584,131 @@ export default function PracticePage() {
     }
   };
 
+  // Review mistakes only mode
+  const [reviewingMistakes, setReviewingMistakes] = useState(false);
+
+  const startMistakeReview = () => {
+    const qs = mistakes.map(m => m.question);
+    const shuffled = shuffleArray(qs);
+    setQuestions(shuffled);
+    setCurrentIndex(0);
+    setScore(0);
+    setTotalAnswered(0);
+    setResult(null);
+    setUserAnswer('');
+    setShowHint(false);
+    setQuizDone(false);
+    setMistakes([]);
+    setSessionResults([]);
+    setReviewingMistakes(true);
+  };
+
+  // Helper to render mistake card details
+  const renderMistakeCard = (m, idx) => {
+    const q = m.question;
+    const sw = q.sourceWord;
+    const fields = [];
+    if (q.word) fields.push({ label: 'Word', value: q.word });
+    if (q.article) fields.push({ label: 'Article', value: q.article });
+    if (q.translation) fields.push({ label: 'Translation', value: q.translation });
+    if (q.plural) fields.push({ label: 'Plural', value: q.plural });
+    if (sw?.example) fields.push({ label: 'Example', value: sw.example });
+
+    return (
+      <div key={idx} style={{
+        background: 'rgba(239,68,68,0.06)', borderRadius: '10px',
+        padding: '0.75rem 0.9rem', fontSize: '0.82rem',
+        border: '1px solid rgba(239,68,68,0.2)',
+        textAlign: 'left',
+      }}>
+        <div style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.35rem', fontSize: '0.9rem' }}>
+          {q.word}
+        </div>
+        {fields.length > 0 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem 0.6rem', marginBottom: '0.35rem' }}>
+            {fields.map(f => (
+              <span key={f.label} style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>
+                {f.label}: {f.value}
+              </span>
+            ))}
+          </div>
+        )}
+        <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.35rem', flexWrap: 'wrap' }}>
+          <span>
+            You: <span style={{ color: '#ef4444', fontWeight: 500 }}>{m.userAnswer}</span>
+          </span>
+          <span>
+            Correct: <span style={{ color: '#22c55e', fontWeight: 500 }}>{m.correctAnswer}</span>
+          </span>
+        </div>
+      </div>
+    );
+  };
+
   // Results screen
   if (quizDone) {
+    const incorrect = totalAnswered - score;
     const percentage = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
     const grade = percentage >= 90 ? 'Excellent!' : percentage >= 70 ? 'Good job!' : percentage >= 50 ? 'Keep practicing!' : 'Needs more work';
     const gradeColor = percentage >= 90 ? '#22c55e' : percentage >= 70 ? '#a78bfa' : percentage >= 50 ? '#f59e0b' : '#ef4444';
+    const modeLabel = PRACTICE_MODES.find(m => m.key === mode)?.label || mode;
+    const topicLabel = selectedTopic === 'all' ? 'All topics' : selectedTopic;
 
     return (
       <LevelLock levelId={selectedLevel}>
-        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '1rem', textAlign: 'center' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto', padding: '1rem' }}>
           <div style={s.card}>
-            <CheckCircle size={40} color={gradeColor} />
-            <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: gradeColor, marginTop: '0.75rem' }}>
-              {grade}
-            </h2>
-            <div style={{ margin: '1rem 0' }}>
-              <p style={{ fontSize: '2rem', fontWeight: 800, color: gradeColor }}>{score}/{totalAnswered}</p>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                {Math.round(percentage)}% correct
-              </p>
+            {/* Grade icon + text */}
+            <div style={{ textAlign: 'center' }}>
+              {percentage >= 70 ? (
+                <CheckCircle size={42} color={gradeColor} />
+              ) : (
+                <XCircle size={42} color={gradeColor} />
+              )}
+              <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: gradeColor, marginTop: '0.5rem', marginBottom: '0.25rem' }}>
+                {grade}
+              </h2>
             </div>
 
-            {/* Mode config */}
-            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
-              <span style={s.tag}>{PRACTICE_MODES.find(m => m.key === mode)?.label || mode}</span>
+            {/* Stats row */}
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', margin: '0.75rem 0 0.5rem', flexWrap: 'wrap' }}>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 800, color: gradeColor }}>{score}</div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Correct</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 800, color: incorrect > 0 ? '#ef4444' : 'var(--text-muted)' }}>{incorrect}</div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Incorrect</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--accent)' }}>{percentage}%</div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Score</div>
+              </div>
+            </div>
+
+            {/* Session info tags */}
+            <div style={{ display: 'flex', gap: '0.4rem', justifyContent: 'center', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
+              <span style={s.tag}>{modeLabel}</span>
               <span style={s.tag}>{selectedLevel}</span>
+              <span style={s.tag}>{topicLabel}</span>
+              <span style={s.tag}>{totalAnswered} questions</span>
             </div>
 
             {/* Mistakes list */}
             {mistakes.length > 0 && (
               <div style={{ marginTop: '1rem', textAlign: 'left' }}>
-                <p style={{ fontSize: '0.85rem', fontWeight: 600, color: '#ef4444', marginBottom: '0.5rem' }}>
-                  Mistakes ({mistakes.length}):
-                </p>
-                <div style={{ maxHeight: '200px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  {mistakes.map((m, i) => (
-                    <div key={i} style={{
-                      background: 'rgba(239,68,68,0.08)', borderRadius: '8px',
-                      padding: '0.5rem 0.75rem', fontSize: '0.8rem', border: '1px solid rgba(239,68,68,0.2)',
-                    }}>
-                      <div style={{ color: 'var(--text-primary)' }}>
-                        <span style={{ fontWeight: 600 }}>{m.question.word}</span>
-                        {m.question.translation && <span style={{ color: 'var(--text-muted)', marginLeft: '0.3rem' }}>({m.question.translation})</span>}
-                      </div>
-                      <div>
-                        Your answer: <span style={{ color: '#ef4444' }}>{m.userAnswer}</span>
-                      </div>
-                      <div>
-                        Correct: <span style={{ color: '#22c55e' }}>{m.correctAnswer}</span>
-                      </div>
-                    </div>
-                  ))}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#ef4444' }}>
+                    Mistakes ({mistakes.length})
+                  </div>
+                </div>
+                <div style={{ maxHeight: '260px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  {mistakes.map((m, i) => renderMistakeCard(m, i))}
                 </div>
               </div>
             )}
 
+            {/* Action buttons */}
             <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap' }}>
               <button style={s.btn} onClick={() => setMode(null)}>
                 <List size={14} style={{ marginRight: '0.3rem' }} />Modes
@@ -644,6 +716,14 @@ export default function PracticePage() {
               <button style={s.btnPrimary} onClick={startPractice}>
                 <RefreshCw size={14} style={{ marginRight: '0.3rem' }} />Try Again
               </button>
+              {mistakes.length > 0 && (
+                <button
+                  style={{ ...s.btnDanger, borderColor: '#ef4444' }}
+                  onClick={startMistakeReview}
+                >
+                  <BookMarked size={14} style={{ marginRight: '0.3rem' }} />Review Mistakes ({mistakes.length})
+                </button>
+              )}
               <Link to={`/level/${selectedLevel}/vocabulary`}>
                 <button style={s.btn}>
                   <ArrowLeft size={14} style={{ marginRight: '0.3rem' }} />Vocabulary
@@ -683,6 +763,11 @@ export default function PracticePage() {
               {modeInfo.label}
             </span>
             <span style={s.tag}>{selectedLevel}</span>
+            {reviewingMistakes && (
+              <span style={{ ...s.tag, background: 'rgba(239,68,68,0.12)', color: '#ef4444' }}>
+                <BookMarked size={11} style={{ marginRight: '0.2rem', display: 'inline' }} />Mistakes only
+              </span>
+            )}
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
