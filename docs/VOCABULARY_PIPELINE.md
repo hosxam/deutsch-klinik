@@ -138,8 +138,12 @@ All three modes generate questions directly from `src/data/germanVocabulary.json
 - Changing level resets topic to All topics.
 - Per-question feedback (correct/incorrect with correct answer shown).
 - Progress bar, score tracking, and hint panel.
-- Results screen with mistake review (your answer vs. correct answer).
-- Try Again to reshuffle and replay the same mode.
+- Results screen shows final score, percentage, correct count, incorrect count, selected mode, selected level, selected topic, and question count.
+- Mistakes list displays original question, user answer, correct answer, German word, translation, article, plural, and example sentence (when available).
+- Review Mistakes button starts a new practice session using only the mistaken questions.
+- Try Again reshuffles and replays the full mode.
+- Back to mode selection button returns to the mode picker.
+- Mistakes-only sessions show a visible "Mistakes only" badge in the question bar.
 - Progress recorded via `recordVocabAnswer` and `updateLevelProgress` in `store.js`.
 - Level-lock gated via `LevelLock` component.
 
