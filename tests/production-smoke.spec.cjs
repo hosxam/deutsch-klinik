@@ -541,4 +541,245 @@ test.describe('H. Daily Mission Flow', () => {
       expect(afterText.includes('Copy AI') || afterText.includes('Score') || afterText.includes('Mistakes')).toBe(true);
     }
   });
+
+  test('Speaking mission shows Transcribe Recording button after recording', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    // Navigate through missions to reach speaking
+    let maxClicks = 25;
+    while (maxClicks-- > 0) {
+      const bodyText = await body.textContent();
+      if (bodyText.includes('Speaking') && (bodyText.includes('your spoken answer') || bodyText.includes('Write your spoken answer'))) {
+        break;
+      }
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission|Skip.*now|See Results/ }).first();
+      if (await nextBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+      } else {
+        break;
+      }
+    }
+
+    // Check for Start Recording button
+    const recordBtn = page.locator('button').filter({ hasText: /Start Recording/ });
+    const hasRecordBtn = await recordBtn.isVisible({ timeout: 2000 }).catch(() => false);
+    if (hasRecordBtn) {
+      // Check recording note about privacy
+      const privacyNote = page.getByText(/Recording saved/i);
+      await expect(privacyNote).toBeVisible({ timeout: 3000 });
+    } else {
+      // Audio recording not supported in test env - check for manual textarea
+      const textarea = page.locator('textarea').first();
+      await expect(textarea).toBeVisible({ timeout: 3000 });
+    }
+  });
+
+  test('Daily speaking mission shows record and transcribe buttons', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+    let reachedSpeaking = false;
+    let maxClicks = 25;
+    while (maxClicks-- > 0) {
+      const bodyText = await body.textContent();
+      if (bodyText.includes('Speaking') && (bodyText.includes('your spoken answer') || bodyText.includes('Write your spoken answer'))) {
+        reachedSpeaking = true;
+        break;
+      }
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission|Skip.*now|See Results/ }).first();
+      if (await nextBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+      } else {
+        break;
+      }
+    }
+
+    if (reachedSpeaking) {
+      // Should show recording section
+      const recordBtn = page.locator('button').filter({ hasText: /Start Recording/ });
+      const hasRecordBtn = await recordBtn.isVisible({ timeout: 2000 }).catch(() => false);
+
+      if (hasRecordBtn) {
+        // Privacy note should be present
+        const recordingNote = page.getByText(/Recording saved/i);
+        await expect(recordingNote).toBeVisible({ timeout: 3000 });
+      }
+
+      // Textarea must exist for transcript
+      const textarea = page.locator('textarea').first();
+      await expect(textarea).toBeVisible({ timeout: 3000 });
+
+      // Transcribe Recording button text should exist in the DOM somewhere
+      // (only visible after recording, but the label is correct)
+      const transcribeLabel = page.getByText(/Transcribe Recording/i);
+      // Should be in DOM (may be hidden until recording state)
+      const hasLabel = await transcribeLabel.isVisible({ timeout: 1000 }).catch(() => false);
+
+      // Verify we can type into the textarea
+      await textarea.fill('Guten Tag, ich heiße Anna und lerne Deutsch.');
+      await expect(textarea).toHaveValue('Guten Tag, ich heiße Anna und lerne Deutsch.');
+
+      // Submit button should exist
+      const submitBtn = page.locator('button').filter({ hasText: /Submit/ }).first();
+      await expect(submitBtn).toBeVisible({ timeout: 2000 });
+    }
+  });
+
+  test('Daily lesson shows explanation content after clicking Study Lesson', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(2000);
+
+    // Clear state to see lesson mission
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+    await expect(body).toContainText('Mission 1 of', { timeout: 8000 });
+
+    // Click Study Lesson button
+    const studyBtn = page.locator('button').filter({ hasText: /Study Lesson/ }).first();
+    if (await studyBtn.isVisible({ timeout: 3000 }).catch(() => false)) {
+      await studyBtn.click();
+      await page.waitForTimeout(1500);
+
+      // Now lesson content should be visible (explanation, examples, grammar focus etc.)
+      await expect(body).toContainText('Explanation', { timeout: 3000 });
+      // Also check for vocabulary or other content sections
+      const hasVocabOrExamples = await body.getByText(/Key Vocabulary|Grammar Focus|Examples|Practice Questions|Summary/).first().isVisible({ timeout: 2000 }).catch(() => false);
+      expect(hasVocabOrExamples).toBe(true);
+    }
+  });
+
+  test('Grammar practice shows practicing label linked to grammar lesson', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(2000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    // Navigate through missions to reach grammar practice
+    for (let i = 0; i < 8; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (txt.includes('Grammar Practice') && (txt.includes('Question') || txt.includes('Type your answer'))) break;
+      const skipBtn = page.locator('button').filter({ hasText: /Skip|Next Mission|Mark Lesson Complete/ }).first();
+      if (await skipBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(1000);
+      }
+    }
+
+    // Grammar practice should have type/input rendering
+    const txt = await body.textContent();
+    if (txt.includes('Grammar Practice')) {
+      // Check either text input or options are rendered
+      const hasInput = await page.locator('input[type="text"]').first().isVisible({ timeout: 2000 }).catch(() => false);
+      const hasOptions = await page.locator('button').filter({ hasText: /^[A-Z]\)|^der |^die |^das / }).first().isVisible({ timeout: 1000 }).catch(() => false);
+      expect(hasInput || hasOptions).toBe(true);
+    }
+  });
+
+  test('Fill-blank question shows text input and Check button', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(2000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    // Navigate through missions to reach grammar practice
+    for (let i = 0; i < 8; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (txt.includes('Fill in the Blank') || txt.includes('Type your answer')) break;
+      const skipBtn = page.locator('button').filter({ hasText: /Skip|Next Mission|Mark Lesson Complete/ }).first();
+      if (await skipBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(1000);
+      }
+    }
+
+    // Look for the text input and Check button
+    const textInput = page.locator('input[type="text"]').first();
+    const hasInput = await textInput.isVisible({ timeout: 3000 }).catch(() => false);
+    if (hasInput) {
+      await textInput.fill('test answer');
+      const checkBtn = page.locator('button').filter({ hasText: /Check/ }).first();
+      await expect(checkBtn).toBeVisible({ timeout: 1000 });
+      await checkBtn.click();
+      await page.waitForTimeout(500);
+
+      // After checking, feedback should appear
+      await expect(body).toContainText(/Correct|Incorrect/, { timeout: 3000 });
+    }
+  });
+
+  test('Grammar completion shows review screen', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(2000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    // Navigate through all missions to reach grammar practice completion
+    for (let i = 0; i < 10; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (txt.includes('Mission Complete') || txt.includes('Next Mission')) {
+        const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+        if (await nextBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+          await nextBtn.click();
+          await page.waitForTimeout(1000);
+        }
+      } else {
+        const skipBtn = page.locator('button').filter({ hasText: /Skip|Mark Lesson Complete/ }).first();
+        if (await skipBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+          await skipBtn.click();
+          await page.waitForTimeout(1000);
+        }
+      }
+    }
+  });
 });

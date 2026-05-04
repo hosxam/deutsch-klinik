@@ -13,6 +13,7 @@ import grammarCurriculum from '../data/grammarCurriculum.json';
 import vocabData from '../data/germanVocabulary.json';
 import readingData from '../data/reading.json';
 import listeningData from '../data/listening.json';
+import germanLessons from '../data/germanLessons.json';
 import writingData from '../data/writing.json';
 import speakingData from '../data/speaking.json';
 import dashboardSummary from '../data/dashboardSummary.json';
@@ -24,7 +25,7 @@ import {
   Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
   Volume2, MessageSquare, Quote, BookMarked, ListOrdered
 } from 'lucide-react';
-import { correctWriting, correctSpeaking, isCorrectionEnabled } from '../utils/aiCorrection';
+import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 
 function normalizeAnswer(str) {
   return (str || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '');
@@ -67,6 +68,9 @@ const TYPE_LABELS = {
   'article-select': 'Article Selection',
   conjugation: 'Conjugation',
   'case-select': 'Case Selection',
+  'sentence-correction': 'Sentence Correction',
+  'sentence-reorder': 'Sentence Reorder',
+  mixed: 'Mixed Exercise',
 };
 
 const SESSION_KEY = 'deutsch_klinik_daily_session';
@@ -176,6 +180,8 @@ export default function DailyMissionPage() {
   const [speakingPrompt, setSpeakingPrompt] = useState(null);
   const [spRecBlob, setSpRecBlob] = useState(null);
   const [spRecState, setSpRecState] = useState('idle');
+  const [spTranscriptionLoading, setSpTranscriptionLoading] = useState(false);
+  const [spTranscriptionError, setSpTranscriptionError] = useState(null);
   const [spIsListening, setSpIsListening] = useState(false);
   const spRecognitionRef = useRef(null);
   const spSpeechSupported = typeof window !== 'undefined' &&
@@ -186,6 +192,8 @@ export default function DailyMissionPage() {
   const [gcDone, setGcDone] = useState(false);
   const [gcLesson, setGcLesson] = useState(null);
   const [gcTopicLinks, setGcTopicLinks] = useState([]);
+  const [gWrongList, setGWrongList] = useState([]);
+  const [gReviewMode, setGReviewMode] = useState(false);
   const [wtCopied, setWtCopied] = useState(false);
   const [spCopied, setSpCopied] = useState(false);
   // AI correction state for writing
@@ -252,8 +260,7 @@ export default function DailyMissionPage() {
     const cm = getCm();
     if (cm?.nextLesson?.id) {
       try {
-        const lessons = require('./data/germanLessons.json');
-        const found = Array.isArray(lessons) ? lessons.find(l => l.id === cm.nextLesson.id) : null;
+        const found = Array.isArray(germanLessons) ? germanLessons.find(l => l.id === cm.nextLesson.id) : null;
         if (found) setFullLesson(found);
       } catch(e) {}
     }
@@ -303,7 +310,9 @@ export default function DailyMissionPage() {
     const existing = (state.levels?.[lvl]?.grammar || []).filter((x) => x !== ex.id);
     updateLevelProgress(lvl, 'grammar', [ex.id, ...existing]);
     setGr({ userAnswer: ans, answer: ex.answer, correct });
-    if (correct) setGc((c) => c + 1);
+    if (correct) { setGc((c) => c + 1); } else {
+      setGWrongList((prev) => [...prev, { prompt: ex.prompt, userAnswer: ans, correctAnswer: ex.answer, explanation: ex.explanation || '' }]);
+    }
     setGw((w) => w + 1);
     refresh();
   };
@@ -347,16 +356,24 @@ export default function DailyMissionPage() {
       selected = shuffleArray(unmastered).slice(0, count).map((x) => x.id);
     }
 
+    // Store the practicing topic label
+    const gcCompletedIds = getCompletedGrammarLessons(lvl);
+    let topicLabel = '';
+    if (gcCompletedIds.length > 0 && topicPreferred.length > 0) {
+      const lastGc = (grammarCurriculum[lvl] || []).find(g => g.id === gcCompletedIds[gcCompletedIds.length - 1]);
+      if (lastGc) topicLabel = lastGc.title;
+    }
+
     if (selected.length === 0) {
       const fallback = shuffleArray(all).slice(0, Math.min(cm.target, all.length)).map((x) => x.id);
       setGq(fallback);
       const ld = loadSession(lvl) || sesh;
-      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: fallback } });
+      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: fallback }, grammarPracticeTopic: topicLabel });
       return;
     }
     setGq(selected);
     const ld = loadSession(lvl) || sesh;
-    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: selected } });
+    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: selected }, grammarPracticeTopic: topicLabel });
   }, [initDone, mi]);
 
   const hVa = (sel, correct) => {
@@ -578,6 +595,7 @@ export default function DailyMissionPage() {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const mediaRecorder = new MediaRecorder(stream);
       const chunks = [];
+      window.__dmpChunks = chunks;
       mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
       mediaRecorder.onstop = () => {
         const blob = new Blob(chunks, { type: 'audio/webm' });
@@ -596,6 +614,21 @@ export default function DailyMissionPage() {
     if (window.__dmpRecorder) {
       window.__dmpRecorder.stop();
       window.__dmpRecorder = null;
+    }
+  };
+
+  const transcribeRecording = async () => {
+    if (spRecState !== 'done') return;
+    setSpTranscriptionLoading(true);
+    setSpTranscriptionError(null);
+    try {
+      const blob = new Blob(window.__dmpChunks || [], { type: 'audio/webm' });
+      const result = await transcribeAudio(blob);
+      setSpText(result.transcript);
+    } catch (err) {
+      setSpTranscriptionError(err.message);
+    } finally {
+      setSpTranscriptionLoading(false);
     }
   };
   const hSp = async () => {
@@ -960,30 +993,82 @@ export default function DailyMissionPage() {
       {cm.type === 'grammar' && (() => {
         const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
         if (!ex && gq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading grammar...</p></div>;
+        const gcCompletedIds = getCompletedGrammarLessons(lvl);
+        let practicingTopic = sesh?.grammarPracticeTopic || '';
+        if (!practicingTopic && gcCompletedIds.length > 0) {
+          const lastGc = (grammarCurriculum[lvl] || []).find(g => g.id === gcCompletedIds[gcCompletedIds.length - 1]);
+          if (lastGc) practicingTopic = lastGc.title;
+        }
         if (!ex && gq.length === 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Selecting questions...</p></div>;
         if (gw >= gq.length && gq.length > 0) {
           const wr = gw - gc;
           return (
-            <div style={{ ...sCard, textAlign: 'center' }}>
-              <BarChart3 size={36} style={{ color: '#f59e0b', marginBottom: '0.75rem' }} />
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>Grammar Mission Complete</h3>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: gc >= gq.length * 0.7 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{gc}/{gq.length}</div>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {gc} | Wrong: {wr}</p>
-              <button style={sBp} onClick={() => { advance('grammar', { total: gq.length, correct: gc, wrong: wr }); setGi(0); setGq([]); setGw(0); setGc(0); setGr(null); setGa(''); }}>Next Mission <ChevronRight size={16} /></button>
+            <div style={sCard}>
+              {!gReviewMode ? (
+                <div style={{ textAlign: 'center' }}>
+                  <BarChart3 size={36} style={{ color: '#f59e0b', marginBottom: '0.75rem' }} />
+                  <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>Grammar Mission Complete</h3>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 800, color: gc >= gq.length * 0.7 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{gc}/{gq.length}</div>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {gc} | Wrong: {wr}</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+                    {gWrongList.length > 0 && (
+                      <button style={{ ...sBtn, width: '100%', maxWidth: '250px' }} onClick={() => setGReviewMode(true)}>
+                        <FileText size={14} /> Review Mistakes ({gWrongList.length})
+                      </button>
+                    )}
+                    <button style={sBp} onClick={() => { advance('grammar', { total: gq.length, correct: gc, wrong: wr }); setGi(0); setGq([]); setGw(0); setGc(0); setGr(null); setGa(''); setGWrongList([]); setGReviewMode(false); }}>Next Mission <ChevronRight size={16} /></button>
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--accent)' }}>Mistake Review</h3>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{gc}/{gq.length} correct</span>
+                  </div>
+                  {gWrongList.length === 0 ? (
+                    <p style={{ color: '#22c55e', textAlign: 'center', padding: '1rem' }}>No mistakes. Great job!</p>
+                  ) : (
+                    gWrongList.map((item, i) => (
+                      <div key={i} style={{ background: 'rgba(239,68,68,0.08)', padding: '0.7rem', borderRadius: '8px', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
+                        <p style={{ fontWeight: 500, marginBottom: '0.3rem', color: 'var(--text-primary)' }}>{item.prompt}</p>
+                        <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.15rem' }}>Your answer: <strong>{item.userAnswer}</strong></p>
+                        <p style={{ color: '#22c55e', fontSize: '0.85rem', marginBottom: '0.15rem' }}>Correct: <strong>{item.correctAnswer}</strong></p>
+                        {item.explanation && <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontStyle: 'italic' }}>{item.explanation}</p>}
+                      </div>
+                    ))
+                  )}
+                  <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5rem' }}>
+                    <button style={sBp} onClick={() => setGReviewMode(false)}><ChevronLeft size={14} /> Back to Summary</button>
+                  </div>
+                </div>
+              )}
             </div>
           );
         }
         const hasAns = gr !== null;
+        const textTypes = ['fill-blank', 'sentence-correction', 'sentence-reorder', 'mixed', 'fill-in-the-blank', 'gap-fill'];
+        const optionTypes = ['mcq', 'article-select', 'case-select', 'conjugation'];
+        // Defensive: check if exercise actually has options; if not, always render text input
+        const hasOptions = Array.isArray(ex.options) && ex.options.length > 0;
+        const isTextType = !hasOptions;
+        const typeColor = isTextType ? 'rgba(59,130,246,0.15)' : optionTypes.includes(ex.type) ? 'rgba(16,185,129,0.15)' : 'rgba(245,158,11,0.15)';
         return (
           <div style={sCard}>
+            {practicingTopic && (
+              <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
+                <span style={{ padding: '0.15rem 0.5rem', borderRadius: '4px', background: 'rgba(168,85,247,0.12)', color: '#a855f7', fontSize: '0.75rem', fontWeight: 600 }}>
+                  Practicing: {practicingTopic}
+                </span>
+              </div>
+            )}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-              <span style={tag(ex.type === 'fill-blank' ? 'rgba(59,130,246,0.15)' : ex.type === 'article-select' ? 'rgba(16,185,129,0.15)' : 'rgba(245,158,11,0.15)')}>
+              <span style={tag(typeColor)}>
                 {(TYPE_LABELS[ex.type] || ex.type)} &middot; {(ex.topic || 'General')}
               </span>
               <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Question {gw + 1} of {gq.length}</span>
             </div>
             <p style={{ fontSize: '1rem', fontWeight: 500, marginBottom: '1rem', lineHeight: '1.5' }}>{ex.prompt}</p>
-            {ex.type === 'fill-blank' ? (
+            {isTextType ? (
               <div>
                 <input type='text' style={{ width: '100%', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box' }} value={ga} onChange={(e) => setGa(e.target.value)} placeholder='Type your answer...' disabled={hasAns} onKeyDown={(e) => { if (e.key === 'Enter' && !hasAns && ga.trim()) hGa(ga.trim()); }} />
                 {!hasAns && <button style={{ ...sBp, marginTop: '0.5rem' }} onClick={() => { if (ga.trim()) hGa(ga.trim()); }} disabled={!ga.trim()}><CheckCircle size={14} /> Check</button>}
@@ -1002,6 +1087,7 @@ export default function DailyMissionPage() {
                   <span style={{ fontWeight: 600, color: gr.correct ? '#22c55e' : '#ef4444', fontSize: '0.9rem' }}>{gr.correct ? 'Correct!' : 'Incorrect'}</span>
                 </div>
                 {!gr.correct && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Correct answer: <strong style={{ color: '#22c55e' }}>{gr.answer}</strong></p>}
+                {ex.explanation && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic', marginTop: '0.3rem' }}>{ex.explanation}</p>}
                 <div style={{ marginTop: '0.5rem' }}>
                   <button style={sBp} onClick={hGn}>{gw >= gq.length ? 'See Results' : 'Next Question'} <ChevronRight size={14} /></button>
                 </div>
@@ -1552,6 +1638,23 @@ export default function DailyMissionPage() {
                     <div style={{ marginTop: '0.5rem' }}>
                       <audio controls src={spRecBlob} style={{ width: '100%', height: '36px' }} />
                       <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>Recording saved. You can also type your answer below.</p>
+                    </div>
+                  )}
+                  {spRecState === 'done' && spRecBlob && (
+                    <div className="mt-2 flex gap-2 items-center">
+                      <button
+                        onClick={transcribeRecording}
+                        disabled={spTranscriptionLoading}
+                        style={{ ...sBp, fontSize: '0.8rem' }}>
+                        {spTranscriptionLoading ? (
+                          <><RefreshCw size={14} style={{ animation: 'dmp-spin 1s linear infinite' }} /> Transcribing...</>
+                        ) : (
+                          <><Sparkles size={14} /> Transcribe Recording (Whisper AI)</>
+                        )}
+                      </button>
+                      {spTranscriptionError && (
+                        <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>{spTranscriptionError}</span>
+                      )}
                     </div>
                   )}
                 </div>

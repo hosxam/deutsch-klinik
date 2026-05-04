@@ -127,3 +127,51 @@ async function callBackend(endpoint, body) {
 
   return data;
 }
+
+/**
+ * Transcribe audio using Cloudflare Workers AI Whisper.
+ * Sends multipart/form-data to the Worker (no keys in frontend).
+ */
+export async function transcribeAudio(audioBlob) {
+  const endpoint = import.meta.env.VITE_AI_SPEAKING_ENDPOINT || import.meta.env.VITE_AI_CORRECTION_ENDPOINT || '';
+  if (!endpoint) {
+    throw new Error('AI transcription is not configured.');
+  }
+
+  const formData = new FormData();
+  formData.append('type', 'transcription');
+  formData.append('audio', audioBlob, 'speaking.webm');
+  formData.append('language', 'de');
+
+  let response;
+  try {
+    response = await fetch(endpoint, {
+      method: 'POST',
+      body: formData,
+    });
+  } catch (err) {
+    throw new Error('Could not reach the transcription service. Check your connection.');
+  }
+
+  if (!response.ok) {
+    let detail = '';
+    try {
+      const errBody = await response.json();
+      detail = errBody.error || '';
+    } catch {}
+    throw new Error(`Transcription service returned an error (${response.status}). ${detail}`.trim());
+  }
+
+  let data;
+  try {
+    data = await response.json();
+  } catch {
+    throw new Error('Invalid response from transcription service.');
+  }
+
+  if (!data.transcript) {
+    throw new Error('Transcription service returned no transcript.');
+  }
+
+  return { transcript: data.transcript };
+}

@@ -8,7 +8,7 @@ import {
   Play, StopCircle, Volume2, FileText, MessageSquare
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
-import { correctSpeaking, isSpeakingCorrectionEnabled } from '../utils/aiCorrection';
+import { correctSpeaking, isSpeakingCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 
 export default function SpeakingPage() {
   const { levelId } = useParams();
@@ -193,6 +193,26 @@ export default function SpeakingPage() {
   const stopAudioRecording = () => {
     if (mediaRecorder.current && mediaRecorder.current.state === 'recording') {
       mediaRecorder.current.stop();
+    }
+  };
+
+  // --- AI Transcription ---
+  const [transcriptionLoading, setTranscriptionLoading] = useState(false);
+  const [transcriptionError, setTranscriptionError] = useState(null);
+
+  const transcribeRecording = async () => {
+    if (!audioUrl) return;
+    setTranscriptionLoading(true);
+    setTranscriptionError(null);
+    try {
+      // Recreate blob from the audio chunks
+      const blob = new Blob(audioChunks.current, { type: 'audio/webm' });
+      const result = await transcribeAudio(blob);
+      setTranscript(result.transcript);
+    } catch (err) {
+      setTranscriptionError(err.message);
+    } finally {
+      setTranscriptionLoading(false);
     }
   };
 
@@ -410,6 +430,26 @@ export default function SpeakingPage() {
                 <AlertCircle size={12} className="inline mr-1" />
                 Audio recording is not supported in this browser.
               </p>
+            )}
+
+            {/* --- AI Transcription Button --- */}
+            {audioRecorderState === 'recorded' && audioUrl && (
+              <div className="mt-3">
+                <button
+                  onClick={transcribeRecording}
+                  disabled={transcriptionLoading}
+                  className="flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg"
+                  style={{ backgroundColor: 'rgba(59,255,158,0.1)', color: '#3bff9e', border: '1px solid #3bff9e' }}>
+                  {transcriptionLoading ? (
+                    <><Loader2 size={12} className="animate-spin" /> Transcribing...</>
+                  ) : (
+                    <><Sparkles size={12} /> Transcribe Recording (Whisper AI)</>
+                  )}
+                </button>
+                {transcriptionError && (
+                  <p className="mt-1 text-xs" style={{ color: '#ff3355' }}>{transcriptionError}</p>
+                )}
+              </div>
             )}
           </div>
 

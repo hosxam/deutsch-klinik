@@ -1,122 +1,173 @@
-# AI Correction Backend
+# AI Backend Endpoint Contract
 
-## Overview
+The Deutsch Klinik app uses a Cloudflare Worker as its AI backend. The Worker handles three request types: writing correction, speaking feedback, and audio transcription.
 
-The app uses a **Cloudflare Worker** for AI-powered writing correction and speaking feedback. The Worker is hosted at:
+## Deployed Worker URL
 
 ```
 https://deutsch-klinik-ai-correction.deutsch-klinik.workers.dev
 ```
 
-The frontend never exposes any API keys. All AI requests go through this single proxy endpoint which holds the API key server-side.
+## Endpoint Contract
 
-## Configuration
-
-Two environment variables configure the endpoints in `.env.local`:
+### Single endpoint handles all three types:
 
 ```
-VITE_AI_CORRECTION_ENDPOINT=https://deutsch-klinik-ai-correction.deutsch-klinik.workers.dev
-VITE_AI_SPEAKING_ENDPOINT=https://deutsch-klinik-ai-correction.deutsch-klinik.workers.dev
+POST /
+Content-Type: application/json       (for writing/speaking)
+Content-Type: multipart/form-data     (for transcription)
 ```
 
-Both currently point to the same Worker URL. The code supports separate endpoints for future separation. If only `VITE_AI_CORRECTION_ENDPOINT` is set, speaking falls back to it.
+## 1. Writing Correction
 
-## Frontend Integration
-
-### aiCorrection.js (`src/utils/aiCorrection.js`)
-
-Two main functions:
-
-- **`correctWriting({ level, task, userAnswer })`** — Sends writing text for AI correction.
-- **`correctSpeaking({ level, task, transcript })`** — Sends speaking transcript for AI feedback.
-
-Helper functions:
-
-- **`isCorrectionEnabled()`** — Returns true if `VITE_AI_CORRECTION_ENDPOINT` is set.
-- **`isSpeakingCorrectionEnabled()`** — Returns true if either speaking or writing endpoint is set.
-
-## API
-
-### Writing Correction
-
-**Request** (POST):
+### Request
 
 ```json
 {
   "type": "writing",
-  "level": "A1|A2|B1|B2|C1",
-  "task": "Writing prompt/task description",
-  "userAnswer": "User's written text"
+  "level": "B1",
+  "task": "Write an email to your doctor...",
+  "userAnswer": "Sehr geehrte Frau Dr. Schmidt..."
 }
 ```
 
-**Response**:
+### Response
 
 ```json
 {
-  "score": 0-10,
-  "rubric": { "grammar": 8, "vocabulary": 7, "organization": 9, "task_fulfillment": 9 },
-  "mistakes": [{ "original": "...", "correction": "...", "explanation": "..." }],
-  "correctedVersion": "Full corrected text",
-  "improvedVersion": "Text rewritten at slightly higher CEFR level",
-  "flashcards": [{ "front": "German phrase", "back": "English translation" }]
+  "score": 7,
+  "rubric": {
+    "grammar": "good",
+    "vocabulary": "adequate",
+    "structure": "good",
+    "taskCompletion": "complete"
+  },
+  "mistakes": [
+    {
+      "original": "Ich haben",
+      "corrected": "Ich habe",
+      "explanation": "Subject-verb agreement: 'Ich' takes 'habe' (1st person singular)"
+    }
+  ],
+  "correctedVersion": "Full corrected version of the text...",
+  "improvedVersion": "Improved version at CEFR B1...",
+  "flashcards": [
+    { "german": "der Termin", "english": "the appointment" }
+  ]
 }
 ```
 
-### Speaking Feedback
+## 2. Speaking Feedback
 
-**Request** (POST):
+### Request
 
 ```json
 {
   "type": "speaking",
-  "level": "A1|A2|B1|B2|C1",
-  "task": "Speaking prompt/task",
-  "transcript": "User's spoken answer transcript"
+  "level": "B1",
+  "task": "Describe your symptoms to a doctor",
+  "transcript": "Ich habe seit zwei Tagen Kopfschmerzen..."
 }
 ```
 
-**Response**:
+### Response
 
 ```json
 {
-  "score": 0-10,
-  "rubric": { "pronunciation": 7, "grammar": 8, "fluency": 6, "vocabulary": 7 },
-  "mistakes": [{ "original": "...", "correction": "...", "explanation": "..." }],
-  "betterPhrases": ["More natural phrase 1", "More natural phrase 2"],
-  "correctedTranscript": "Corrected version of their spoken answer",
-  "strongerAnswer": "A sample stronger answer at their level",
-  "phrasesToMemorize": ["Phrase 1", "Phrase 2"]
+  "score": 6,
+  "rubric": {
+    "fluency": "adequate",
+    "grammar": "good",
+    "vocabulary": "adequate",
+    "pronunciation": "good"
+  },
+  "mistakes": [
+    {
+      "original": "Ich hat",
+      "corrected": "Ich habe",
+      "explanation": "'Ich' takes 'habe'"
+    }
+  ],
+  "betterPhrases": [
+    {
+      "original": "mein Kopf tut weh",
+      "better": "Ich habe Kopfschmerzen",
+      "explanation": "More natural and idiomatic"
+    }
+  ],
+  "correctedTranscript": "Full corrected transcript...",
+  "strongerAnswer": "Improved sample answer...",
+  "phrasesToMemorize": [
+    { "german": "Ich leide unter...", "english": "I suffer from..." }
+  ]
 }
 ```
 
-## Audio Recording
+## 3. Audio Transcription (Whisper)
 
-Audio recording uses the browser's **MediaRecorder API**. Audio files stay local — they are never uploaded to the Worker.
+### Request
 
-## Browser Speech Recognition
+```
+POST /
+Content-Type: multipart/form-data
 
-Both `SpeakingPage.jsx` and `DailyMissionPage.jsx` support **Web Speech API** for transcription:
+Fields:
+- type: "transcription" (string)
+- audio: <blob>         (file, filename "speaking.webm")
+- language: "de"        (optional, defaults to "de")
+```
 
-- Uses `window.SpeechRecognition || window.webkitSpeechRecognition`
-- German language (`de-DE`)
-- Start/Stop buttons for controlling transcription
-- Editable textarea so users can correct transcription errors
-- Privacy note: "Your transcript is sent for AI feedback only when you click Get AI Speaking Feedback"
-- Fallback: "Speech recognition is not supported in this browser. Type or paste your transcript instead."
+### Response
 
-## Future Options
+```json
+{
+  "transcript": "Ich habe seit zwei Tagen Kopfschmerzen und fühle mich sehr schwach."
+}
+```
 
-The Worker does **not** support audio upload or server-side transcription. To add it:
+### Error Response
 
-- Add a `/transcribe` endpoint to the Worker using Whisper (via OpenAI or a self-hosted model)
-- The frontend would send audio blob to the Worker, get back a transcript, then the user can review/edit before sending for AI feedback
-- MediaRecorder produces webm/opus by default — compatibility check needed for Whisper input format
+```json
+{
+  "error": "Whisper transcription failed: ..."
+}
+```
 
-## Security Notes
+## Worker Source
 
-- No API keys exist in frontend code or env vars committed to git
-- `.env.local` is gitignored
-- The Worker URL is public but only accepts POST with valid JSON
-- The Worker itself holds the OpenAI (or other AI provider) API key server-side
-- Never expose API keys in frontend code or commit them to the repo
+Located in `worker/index.js` with `worker/wrangler.toml`.
+
+### Deploy
+
+```bash
+cd worker
+npx wrangler deploy
+```
+
+### Required Binding
+
+```toml
+[ai]
+binding = "AI"
+```
+
+The `AI` binding enables access to Cloudflare Workers AI models:
+- `@cf/openai/whisper` (transcription)
+- `@cf/meta/llama-3.3-70b-instruct-fp8-fast` (writing/speaking feedback)
+
+## Frontend Integration
+
+All calls go through `src/utils/aiCorrection.js`:
+
+| Function | Method | Content-Type |
+|----------|--------|-------------|
+| `correctWriting()` | JSON POST | `application/json` |
+| `correctSpeaking()` | JSON POST | `application/json` |
+| `transcribeAudio()` | FormData POST | `multipart/form-data` |
+
+## Security
+
+- No API keys are exposed in the frontend
+- The Worker URL is configured via Vite environment variables
+- Audio recordings stay in the browser until user clicks "Transcribe"
+- Transcripts are user-editable before being sent for AI feedback
