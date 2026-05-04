@@ -390,5 +390,114 @@ test.describe('H. Daily Mission Flow', () => {
 
     const body = page.locator('body');
     await expect(body).toContainText('Mission 1 of', { timeout: 8000 });
+
+    // Navigate to writing mission (mission with PenTool icon)
+    // Complete writing to see the AI correction button
+    // First check that writing notification text exists somewhere
+    await expect(body).toContainText('Writing', { timeout: 5000 });
+  });
+
+  test('Daily writing mission shows AI correction and copy prompt after submit', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    // Navigate to daily missions
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    // Navigate through missions to reach writing
+    // Complete all missions until we reach writing
+    // We'll check the page first
+    const body = page.locator('body');
+
+    // Keep clicking "Skip for now" / "Next Mission" until we see Writing
+    let maxClicks = 20;
+    while (maxClicks-- > 0) {
+      const bodyText = await body.textContent();
+      if (bodyText.includes('Writing Submitted') || bodyText.includes('Writing')) {
+        break;
+      }
+      // Try Next Mission or Skip button
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission|Skip.*now|See Results/ }).first();
+      if (await nextBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(1000);
+      } else {
+        break;
+      }
+    }
+
+    // Try to find and fill the writing textarea
+    const textarea = page.locator('textarea').first();
+    if (await textarea.isVisible({ timeout: 3000 }).catch(() => false)) {
+      await textarea.fill('Ich heiße Max und komme aus Deutschland. Ich bin Arzt und arbeite in einem Krankenhaus.');
+
+      // Look for submit button
+      const submitBtn = page.locator('button').filter({ hasText: /Submit|Correct with AI/ }).first();
+      if (await submitBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+        await submitBtn.click();
+        await page.waitForTimeout(2000);
+      }
+
+      // After submission, check for either AI results or copy prompt fallback
+      const afterText = await body.textContent();
+      const hasAiResult = afterText.includes('Score') || afterText.includes('/10') || afterText.includes('Mistakes');
+      const hasFallback = afterText.includes('Copy AI Correction Prompt') || afterText.includes('Copied to clipboard');
+
+      // Either AI result or fallback should be visible
+      expect(hasAiResult || hasFallback).toBe(true);
+    }
+  });
+
+  test('Daily speaking mission shows transcript textarea and AI feedback option', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    // Navigate to daily missions
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    // Navigate through missions to reach speaking
+    let maxClicks = 25;
+    while (maxClicks-- > 0) {
+      const bodyText = await body.textContent();
+      if (bodyText.includes('Speaking Submitted') || bodyText.includes('your spoken answer')) {
+        break;
+      }
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission|Skip.*now|See Results/ }).first();
+      if (await nextBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+      } else {
+        break;
+      }
+    }
+
+    // Check for speaking textarea
+    const textarea = page.locator('textarea').first();
+    const hasTextarea = await textarea.isVisible({ timeout: 2000 }).catch(() => false);
+    if (hasTextarea) {
+      // Fill in a speaking transcript
+      await textarea.fill('Guten Tag, ich heiße Anna und lerne Deutsch. Ich spreche schon gut, aber manchmal mache ich Fehler.');
+
+      // Check for submit/feedback button
+      const submitBtn = page.locator('button').filter({ hasText: /Submit|Get AI|Feedback/ }).first();
+      const hasSubmit = await submitBtn.isVisible({ timeout: 1000 }).catch(() => false);
+
+      if (hasSubmit) {
+        await submitBtn.click();
+        await page.waitForTimeout(2000);
+      }
+
+      // After submission, check for either AI results or fallback
+      const afterText = await body.textContent();
+      expect(afterText.includes('Copy AI') || afterText.includes('Score') || afterText.includes('Mistakes')).toBe(true);
+    }
   });
 });

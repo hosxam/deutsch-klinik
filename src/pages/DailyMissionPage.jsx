@@ -18,8 +18,11 @@ import levelsData from '../data/levels.json';
 import LevelLock from '../components/LevelLock';
 import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
-  SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight
+  SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight,
+  Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
+  Volume2, MessageSquare, Quote
 } from 'lucide-react';
+import { correctWriting, correctSpeaking, isCorrectionEnabled } from '../utils/aiCorrection';
 
 function normalizeAnswer(str) {
   return (str || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '');
@@ -169,6 +172,16 @@ export default function DailyMissionPage() {
   const [lrnTTS, setLrnTTS] = useState(false);
   const [wtCopied, setWtCopied] = useState(false);
   const [spCopied, setSpCopied] = useState(false);
+  // AI correction state for writing
+  const [wtAiResult, setWtAiResult] = useState(null);
+  const [wtAiLoading, setWtAiLoading] = useState(false);
+  const [wtAiError, setWtAiError] = useState(null);
+  // AI correction state for speaking
+  const [spAiResult, setSpAiResult] = useState(null);
+  const [spAiLoading, setSpAiLoading] = useState(false);
+  const [spAiError, setSpAiError] = useState(null);
+  const [spAiEnabled, setSpAiEnabled] = useState(() => isCorrectionEnabled());
+
 
   const refresh = useCallback(() => setLS({ ...getState() }), []);
 
@@ -431,7 +444,7 @@ export default function DailyMissionPage() {
     const prompt = 'I am learning German at CEFR level ' + lvl + '. Please review my German writing and provide feedback.\n\nTASK: ' + (item?.prompt || 'Writing task') + '\nINSTRUCTIONS: ' + (item?.instructions || '') + '\n\nMY WRITING:\n' + written + '\n\nPlease provide:\n1. A corrected version of my text\n2. Grammar mistakes: For each mistake, show the original phrase, the correction, and a short explanation in English\n3. Vocabulary suggestions: Any better word choices\n4. Overall feedback: 2-3 sentences about what I did well and what to improve\n5. A simplified version at A2 level (if my writing is B1 or above)\n\nPlease keep your feedback encouraging and focus on the most important improvements.';
     try { navigator.clipboard.writeText(prompt); } catch(e) {}
   };
-  const hWt = () => {
+  const hWt = async () => {
     const cs = getState();
     const items = writingData[lvl] || [];
     const ni = (cs.writings || []).filter((w) => w.level === lvl).length;
@@ -442,6 +455,23 @@ export default function DailyMissionPage() {
       setLS({ ...cs, writings: ws2 });
     }
     setWritingPrompt(item || null);
+    // Try AI correction
+    if (isCorrectionEnabled() && wtText.trim()) {
+      setWtAiLoading(true);
+      setWtAiError(null);
+      try {
+        const result = await correctWriting({
+          level: lvl,
+          task: (item?.prompt || '') + (item?.instructions ? ' -- ' + item.instructions : ''),
+          userAnswer: wtText
+        });
+        setWtAiResult(result);
+      } catch (e) {
+        setWtAiError(e.message || 'AI correction unavailable');
+        setWtAiResult(null);
+      }
+      setWtAiLoading(false);
+    }
     setWtDone(true);
   };
   const hWtSk = () => advance('writing', { skipped: true });
@@ -480,7 +510,7 @@ export default function DailyMissionPage() {
       window.__dmpRecorder = null;
     }
   };
-  const hSp = () => {
+  const hSp = async () => {
     const cs = getState();
     const items = speakingData[lvl] || [];
     const ni = (cs.speakingRecordings?.[lvl]?.length || 0);
@@ -491,6 +521,23 @@ export default function DailyMissionPage() {
       setLS({ ...cs, speakingRecordings: { ...(cs.speakingRecordings || {}), [lvl]: recs } });
     }
     setSpeakingPrompt(item || null);
+    // Try AI speaking feedback
+    if (isCorrectionEnabled() && spText.trim()) {
+      setSpAiLoading(true);
+      setSpAiError(null);
+      try {
+        const result = await correctSpeaking({
+          level: lvl,
+          task: item?.prompt || 'Speaking task',
+          transcript: spText
+        });
+        setSpAiResult(result);
+      } catch (e) {
+        setSpAiError(e.message || 'AI feedback unavailable');
+        setSpAiResult(null);
+      }
+      setSpAiLoading(false);
+    }
     setSpDone(true);
   };
   const hSpSk = () => advance('speaking', { skipped: true });
@@ -596,7 +643,7 @@ export default function DailyMissionPage() {
   const sos = { display: 'block', width: '100%', padding: '0.7rem 1rem', marginBottom: '0.4rem', borderRadius: '8px', border: '2px solid var(--accent)', background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' };
 
   return (
-    <LevelLock levelId={lvl}>
+    <LevelLock levelId={lvl}><style>{'@keyframes dmp-spin{to{transform:rotate(360deg)}}'}</style>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
         {/* Header */}
         <div style={{ marginBottom: '1rem' }}>
@@ -813,348 +860,643 @@ export default function DailyMissionPage() {
         );
       })()}
 
-      {/* ───── LISTENING MISSION ───── */}
-      {cm.type === 'listening' && !lrnDone && (() => {
-        const items = listeningData[lvl] || [];
-        const ni = state.levels?.[lvl]?.listening?.length || 0;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        const qs = item?.questions || [];
-        if (!item || items.length === 0) {
-          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
-            <Headphones size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No listening exercises available for {lvl} yet.</p>
-            <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
-          </div></div>;
-        }
-        const qIdx = lrq;
-        const q = qs[qIdx];
-        if (lrq >= qs.length) return null;
-        if (!q) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading question...</p></div>;
-        
-        const qHasAns = lra[String(qIdx)] !== undefined;
-        const qUserAns = lra[String(qIdx)];
-        const qCorrect = lrcorr[String(qIdx)];
-        
-        const optBtn = (ov) => ({
-          ...(qHasAns
-            ? (String(ov) === String(q.answer)
-                ? { ...sos, borderColor: '#22c55e', color: '#22c55e', background: 'rgba(34,197,94,0.08)' }
-                : String(qUserAns) === String(ov)
-                  ? { ...so, borderColor: '#ef4444', color: '#ef4444', background: 'rgba(239,68,68,0.08)' }
-                  : so)
-            : (qUserAns === ov ? sos : so))
-        });
-        
-        return (
-          <div style={sCard}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)' }}>{item.title}</h3>
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Q {qIdx + 1} of {qs.length}</span>
+      
+
+      {/* LISTENING MISSION */}
+      {cm.type === 'listening' && !lrnDone && (
+        <div style={sCard}>
+          {!listeningItem || (listeningItem.questions || []).length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+              <Headphones size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No listening exercises available for {lvl} yet.</p>
+              <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-            {ttsAvailable && (
-              <div style={{ marginBottom: '0.75rem' }}>
-                <button style={{ ...sBtn, fontSize: '0.8rem' }} onClick={() => { window.speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(item.script); u.lang = 'de-DE'; u.rate = 0.85; window.speechSynthesis.speak(u); }}>
-                  <Volume2 size={14} /> Read Aloud
+          ) : (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
+                {listeningItem.title}
+              </h3>
+
+              {/* TTS Read Aloud */}
+              <div style={{ marginBottom: '1rem' }}>
+                <button
+                  style={lrnTTS ? { background: 'var(--bg-secondary)', border: '1px solid var(--border)', color: 'var(--text-muted)', cursor: 'not-allowed', padding: '0.5rem 0.9rem', borderRadius: '8px', fontWeight: 600, fontSize: '0.8rem', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', opacity: 0.6 } : { ...sBtn }}
+                  onClick={hLrnTTS}
+                  disabled={lrnTTS}
+                >
+                  {lrnTTS ? (
+                    <><Square size={14} /> Speaking...</>
+                  ) : (
+                    <><Volume2 size={14} /> Read Script Aloud (TTS)</>
+                  )}
                 </button>
+                {ttsAvailable && (
+                  <button
+                    style={{ ...sBtn, marginLeft: '0.5rem' }}
+                    onClick={() => { window.speechSynthesis.cancel(); setLrnTTS(false); }}
+                  >
+                    <Square size={14} /> Stop
+                  </button>
+                )}
               </div>
-            )}
-            <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)', fontStyle: 'italic', lineHeight: '1.5' }}>
-              &quot;{item.script}&quot;
-            </div>
-            <div style={{ marginBottom: '0.75rem' }}>
-              <p style={{ fontSize: '0.9rem', fontWeight: 500, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>{q.question}</p>
-              {q.type === 'true-false' ? (
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {['true', 'false'].map((v) => (
-                    <button key={v} style={optBtn(v)} onClick={() => { if (!qHasAns) hLrnA(qIdx, v); }} disabled={qHasAns}>
-                      {v === 'true' ? 'True' : 'False'}
-                    </button>
-                  ))}
-                </div>
-              ) : (
-                <div>
-                  {(q.options || []).map((o, i) => (
-                    <button key={i} style={optBtn(o)} onClick={() => { if (!qHasAns) hLrnA(qIdx, o); }} disabled={qHasAns}>
-                      {o}
-                    </button>
-                  ))}
-                </div>
-              )}
-              {qHasAns && (
-                <div style={{ marginTop: '0.75rem', padding: '0.6rem', borderRadius: '6px', background: qCorrect ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)', textAlign: 'center' }}>
-                  <div style={{ fontSize: '0.9rem', fontWeight: 700, color: qCorrect ? '#22c55e' : '#ef4444', marginBottom: '0.3rem' }}>
-                    {qCorrect ? 'Correct!' : 'Incorrect'}
+
+              {/* Script block */}
+              <div style={{
+                background: 'rgba(6, 182, 212, 0.06)', borderRadius: '8px',
+                padding: '1rem', marginBottom: '1rem',
+                border: '1px solid rgba(6, 182, 212, 0.15)',
+                maxHeight: '200px', overflowY: 'auto'
+              }}>
+                <p style={{ fontSize: '0.88rem', color: 'var(--text-primary)', lineHeight: 1.6, margin: 0, whiteSpace: 'pre-wrap' }}>
+                  {listeningItem.script}
+                </p>
+              </div>
+
+              {/* Questions */}
+              {(listeningItem.questions || []).length > 0 && (() => {
+                const qs = listeningItem.questions;
+                if (lrq >= qs.length) return null;
+                const q = qs[lrq];
+                const ans = lra?.[lrq];
+                const correct = lrcorr?.[lrq];
+                return (
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                      <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.4rem', borderRadius: '4px', background: 'rgba(6, 182, 212, 0.15)', color: '#06b6d4', fontWeight: 600 }}>
+                        {q.type === 'true-false' ? 'True/False' : 'Multiple Choice'}
+                      </span>
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{lrq + 1} of {qs.length}</span>
+                    </div>
+                    <p style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.5 }}>
+                      {q.question}
+                    </p>
+                    {ans !== undefined ? (
+                      <div style={{
+                        padding: '0.6rem 0.8rem', borderRadius: '8px',
+                        background: correct ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)',
+                        marginBottom: '0.75rem', fontSize: '0.85rem'
+                      }}>
+                        {correct ? (
+                          <span style={{ color: '#22c55e', fontWeight: 600 }}><CheckCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Correct!</span>
+                        ) : (
+                          <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer}</span>
+                        )}
+                      </div>
+                    ) : (
+                      <div>
+                        {(q.options || []).map((opt, i) => (
+                          <button
+                            key={i}
+                            style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                            onClick={() => hLrnA(lrq, opt)}
+                          >
+                            {opt}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+                      {ans === undefined && (
+                        <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
+                      )}
+                    </div>
                   </div>
-                  {!qCorrect && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Correct answer: {q.answer}</p>}
-                  {qCorrect && qIdx + 1 >= qs.length && (
-                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => setLrnDone(true)}>See Results <ChevronRight size={14} /></button>
-                  )}
-                  {!qCorrect && (
-                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => {
-                      setLrc(prev => prev + 1);
-                      if (qIdx + 1 < qs.length) setLrq(qIdx + 1);
-                      else setLrnDone(true);
-                    }}>{qIdx + 1 < qs.length ? 'Next Question' : 'See Results'} <ChevronRight size={14} /></button>
-                  )}
+                );
+              })()}
+              {(!listeningItem.questions || listeningItem.questions.length === 0) && (
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <button style={sBp} onClick={() => { updateLevelProgress(lvl, 'listening', [listeningItem.id, ...(state.levels?.[lvl]?.listening || [])]); completeListening(lvl); refresh(); setLrnDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
+                  <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
                 </div>
               )}
             </div>
-          </div>
-        );
-      })()}
+          )}
+        </div>
+      )}
       {cm.type === 'listening' && lrnDone && (() => {
-        const items = listeningData[lvl] || [];
-        const ni = state.levels?.[lvl]?.listening?.length || 0;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        const qs = item?.questions || [];
-        const wrong = qs.length - lrc;
+        const qs = listeningItem?.questions || [];
+        const total = qs.length;
+        const correct = Object.values(lrcorr || {}).filter(Boolean).length;
+        const wrong = total - correct;
         return (
           <div style={{ ...sCard, textAlign: 'center' }}>
             <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>{item?.title || 'Listening Complete'}</h3>
-            <div style={{ fontSize: '1.5rem', fontWeight: 800, color: lrc >= qs.length * 0.6 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{lrc}/{qs.length}</div>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {lrc} | Wrong: {wrong}</p>
-            <button style={sBp} onClick={hLrnN}>Next Mission <ChevronRight size={16} /></button>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>Listening Complete!</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+              {correct} / {total} correct
+            </p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+              {wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}
+            </p>
+            <button style={sBp} onClick={hLrnN}>
+              Next Mission <ChevronRight size={16} />
+            </button>
           </div>
         );
       })()}
 
-      {/* ───── READING MISSION ───── */}
-      {cm.type === 'reading' && !rdDone && (() => {
-        const items = readingData[lvl] || [];
-        const ni = state.levels?.[lvl]?.reading?.length || 0;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        const qs = item?.questions || [];
-        if (!item || items.length === 0) {
-          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
-            <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No reading exercises available for {lvl} yet.</p>
-            <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
-          </div></div>;
-        }
-        const qIdx = rrq;
-        const q = qs[qIdx];
-        if (rrq >= qs.length) return null;
-        if (!q) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading question...</p></div>;
-        
-        const qHasAns = rra[String(qIdx)] !== undefined;
-        const qUserAns = rra[String(qIdx)];
-        const qCorrect = rrcorr[String(qIdx)];
-        
-        const optBtn = (ov) => ({
-          ...(qHasAns
-            ? (String(ov) === String(q.answer)
-                ? { ...sos, borderColor: '#22c55e', color: '#22c55e', background: 'rgba(34,197,94,0.08)' }
-                : String(qUserAns) === String(ov)
-                  ? { ...so, borderColor: '#ef4444', color: '#ef4444', background: 'rgba(239,68,68,0.08)' }
-                  : so)
-            : (qUserAns === ov ? sos : so))
-        });
-        
-        return (
-          <div style={sCard}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)' }}>{item.title}</h3>
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Q {qIdx + 1} of {qs.length}</span>
+      {/* READING MISSION */}
+      {cm.type === 'reading' && !rdDone && (
+        <div style={sCard}>
+          {!readingItem || (readingItem.questions || []).length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+              <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No reading exercises available for {lvl} yet.</p>
+              <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-            <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-              {item.passage}
-            </div>
-            <div style={{ marginBottom: '0.75rem' }}>
-              <p style={{ fontSize: '0.9rem', fontWeight: 500, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>{q.question}</p>
-              {q.type === 'true-false' ? (
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {['true', 'false'].map((v) => (
-                    <button key={v} style={optBtn(v)} onClick={() => { if (!qHasAns) hRdA(qIdx, v); }} disabled={qHasAns}>
-                      {v === 'true' ? 'True' : 'False'}
-                    </button>
-                  ))}
-                </div>
-              ) : (
-                <div>
-                  {(q.options || []).map((o, i) => (
-                    <button key={i} style={optBtn(o)} onClick={() => { if (!qHasAns) hRdA(qIdx, o); }} disabled={qHasAns}>
-                      {o}
-                    </button>
-                  ))}
-                </div>
-              )}
-              {qHasAns && (
-                <div style={{ marginTop: '0.75rem', padding: '0.6rem', borderRadius: '6px', background: qCorrect ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)', textAlign: 'center' }}>
-                  <div style={{ fontSize: '0.9rem', fontWeight: 700, color: qCorrect ? '#22c55e' : '#ef4444', marginBottom: '0.3rem' }}>
-                    {qCorrect ? 'Correct!' : 'Incorrect'}
+          ) : (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
+                {readingItem.title}
+              </h3>
+
+              {/* Reading passage */}
+              <div style={{
+                background: 'rgba(139, 92, 246, 0.06)', borderRadius: '8px',
+                padding: '1rem', marginBottom: '1rem',
+                border: '1px solid rgba(139, 92, 246, 0.15)',
+                maxHeight: '250px', overflowY: 'auto'
+              }}>
+                <p style={{ fontSize: '0.88rem', color: 'var(--text-primary)', lineHeight: 1.7, margin: 0, whiteSpace: 'pre-wrap' }}>
+                  {readingItem.text}
+                </p>
+              </div>
+
+              {/* Questions */}
+              {(readingItem.questions || []).length > 0 && (() => {
+                const qs = readingItem.questions;
+                if (rrq >= qs.length) return null;
+                const q = qs[rrq];
+                const ans = rra?.[rrq];
+                const correct = rrcorr?.[rrq];
+                return (
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                      <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.4rem', borderRadius: '4px', background: 'rgba(139, 92, 246, 0.15)', color: '#8b5cf6', fontWeight: 600 }}>
+                        {q.type === 'true-false' ? 'True/False' : 'Multiple Choice'}
+                      </span>
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{rrq + 1} of {qs.length}</span>
+                    </div>
+                    <p style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--text-primary)', marginBottom: '0.75rem', lineHeight: 1.5 }}>
+                      {q.question}
+                    </p>
+                    {ans !== undefined ? (
+                      <div>
+                        <div style={{
+                          padding: '0.6rem 0.8rem', borderRadius: '8px',
+                          background: correct ? 'rgba(34, 197, 94, 0.1)' : 'rgba(239, 68, 68, 0.1)',
+                          marginBottom: '0.5rem', fontSize: '0.85rem'
+                        }}>
+                          {correct ? (
+                            <span style={{ color: '#22c55e', fontWeight: 600 }}><CheckCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Correct!</span>
+                          ) : (
+                            <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer}</span>
+                          )}
+                        </div>
+                        {q.explanation && (
+                          <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '0.75rem', fontStyle: 'italic' }}>
+                            {q.explanation}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div>
+                        {(q.options || []).map((opt, i) => (
+                          <button
+                            key={i}
+                            style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                            onClick={() => hRdA(rrq, opt)}
+                          >
+                            {opt}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+                      {ans === undefined && (
+                        <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
+                      )}
+                    </div>
                   </div>
-                  {!qCorrect && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Correct answer: {q.answer}</p>}
-                  {qCorrect && qIdx + 1 >= qs.length && (
-                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => setRdDone(true)}>See Results <ChevronRight size={14} /></button>
-                  )}
-                  {!qCorrect && (
-                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => {
-                      setRrc(prev => prev + 1);
-                      if (qIdx + 1 < qs.length) setRrq(qIdx + 1);
-                      else setRdDone(true);
-                    }}>{qIdx + 1 < qs.length ? 'Next Question' : 'See Results'} <ChevronRight size={14} /></button>
-                  )}
+                );
+              })()}
+              {(!readingItem.questions || readingItem.questions.length === 0) && (
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <button style={sBp} onClick={() => { updateLevelProgress(lvl, 'reading', [readingItem.id, ...(state.levels?.[lvl]?.reading || [])]); completeReading(lvl); refresh(); setRdDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
+                  <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
                 </div>
               )}
             </div>
-          </div>
-        );
-      })()}
+          )}
+        </div>
+      )}
       {cm.type === 'reading' && rdDone && (() => {
-        const items = readingData[lvl] || [];
-        const ni = state.levels?.[lvl]?.reading?.length || 0;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        const qs = item?.questions || [];
-        const wrong = qs.length - rrc;
+        const qs = readingItem?.questions || [];
+        const total = qs.length;
+        const correct = Object.values(rrcorr || {}).filter(Boolean).length;
+        const wrong = total - correct;
         return (
           <div style={{ ...sCard, textAlign: 'center' }}>
             <FileText size={36} style={{ color: '#8b5cf6', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.5rem' }}>{item?.title || 'Reading Complete'}</h3>
-            <div style={{ fontSize: '1.5rem', fontWeight: 800, color: rrc >= qs.length * 0.6 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{rrc}/{qs.length}</div>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {rrc} | Wrong: {wrong}</p>
-            <button style={sBp} onClick={hRdN}>Next Mission <ChevronRight size={16} /></button>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.5rem' }}>Reading Complete!</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+              {correct} / {total} correct
+            </p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+              {wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}
+            </p>
+            <button style={sBp} onClick={hRdN}>
+              Next Mission <ChevronRight size={16} />
+            </button>
           </div>
         );
       })()}
 
-      {/* ───── WRITING MISSION ───── */}
-      {cm.type === 'writing' && !wtDone && (() => {
-        const items = writingData[lvl] || [];
-        const ni = (getState().writings || []).filter((w) => w.level === lvl).length;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        if (!item || items.length === 0) {
-          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
-            <PenTool size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No writing tasks available for {lvl} yet.</p>
-            <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
-          </div></div>;
-        }
-        return (
-          <div style={sCard}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{item.title}</h3>
-            {item.instructions && (
-              <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {item.instructions}
-              </div>
-            )}
-            <div style={{ background: 'rgba(236,72,153,0.08)', padding: '0.7rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
-              <strong style={{ color: '#ec4899' }}>Prompt: </strong>
-              <span style={{ color: 'var(--text-secondary)' }}>{item.prompt}</span>
-            </div>
-            {item.wordLimit && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>Word limit: {item.wordLimit} words</p>}
-            {item.tips && <p style={{ fontSize: '0.8rem', color: '#10b981', marginBottom: '0.5rem' }}>Tip: {item.tips}</p>}
-            <textarea
-              style={{ width: '100%', minHeight: '140px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
-              value={wtText}
-              onChange={(e) => setWtText(e.target.value)}
-              placeholder={'Write your ' + lvl + '-level German response here...'}
-            />
-            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
-              <button style={sBp} onClick={hWt} disabled={!wtText.trim()}><CheckCircle size={16} /> Submit Writing</button>
+      {/* WRITING MISSION */}
+      {cm.type === 'writing' && !wtDone && (
+        <div style={sCard}>
+          {!writingItem ? (
+            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+              <PenTool size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No writing tasks available for {lvl} yet.</p>
               <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-          </div>
-        );
-      })()}
+          ) : (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                {writingItem.title}
+              </h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.5 }}>
+                {writingItem.prompt}
+              </p>
+              {writingItem.instructions && (
+                <div style={{ background: 'rgba(236, 72, 153, 0.06)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  <strong>Instructions:</strong> {writingItem.instructions}
+                </div>
+              )}
+              {writingItem.wordLimit && (
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                  Word limit: {writingItem.wordLimit} words
+                </p>
+              )}
+              {(writingItem.tips || []).length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.25rem' }}>Tips:</p>
+                  <ul style={{ margin: 0, paddingLeft: '1.2rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                    {writingItem.tips.slice(0, 4).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
+                  </ul>
+                </div>
+              )}
+              <textarea
+                style={{ width: '100%', minHeight: '120px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
+                value={wtText}
+                onChange={(e) => setWtText(e.target.value)}
+                placeholder='Write your response in German...'
+              />
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+                <button style={sBp} onClick={hWt} disabled={!wtText.trim()}><CheckCircle size={16} /> Submit Writing</button>
+                <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
       {cm.type === 'writing' && wtDone && (() => {
+        const wr = wtAiResult;
+        const loading = wtAiLoading;
+        const err = wtAiError;
         const items = writingData[lvl] || [];
         const ni = (getState().writings || []).filter((w) => w.level === lvl).length - 1;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const item = ni >= 0 && ni < items.length ? items[ni] : null;
         return (
-          <div style={{ ...sCard, textAlign: 'center' }}>
-            <PenTool size={36} style={{ color: '#ec4899', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.5rem' }}>Writing Submitted!</h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your writing has been saved for review.</p>
-            <button style={{ ...sBp, marginBottom: '0.5rem' }} onClick={handleCopyPrompt}><Copy size={14} /> Copy AI Correction Prompt</button>
-            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Paste this into ChatGPT or Claude to get corrections on your writing.</p>
-            <button style={sBp} onClick={hWtN}>Next Mission <ChevronRight size={16} /></button>
+          <div style={sCard}>
+            <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+              <PenTool size={36} style={{ color: '#ec4899', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.25rem' }}>Writing Submitted!</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your writing has been saved for review.</p>
+            </div>
+
+            {/* AI Correction Result */}
+            {loading && (
+              <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--bg-secondary)', borderRadius: '8px', marginBottom: '1rem' }}>
+                <RefreshCw size={24} style={{ color: 'var(--accent)', animation: 'dmp-spin 1s linear infinite', marginBottom: '0.5rem' }} />
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Correcting your writing with AI...</p>
+              </div>
+            )}
+
+            {err && !loading && (
+              <div style={{ padding: '0.75rem', borderRadius: '8px', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', marginBottom: '1rem', textAlign: 'center' }}>
+                <AlertCircle size={16} style={{ color: '#ef4444', marginBottom: '0.25rem', display: 'inline' }} />
+                <p style={{ fontSize: '0.8rem', color: '#ef4444' }}>AI correction unavailable. You can still copy the correction prompt below.</p>
+              </div>
+            )}
+
+            {wr && !loading && (
+              <div style={{ background: 'var(--bg-secondary)', borderRadius: '8px', padding: '1rem', marginBottom: '1rem' }}>
+                {/* Score */}
+                {wr.score !== null && (
+                  <div style={{ textAlign: 'center', marginBottom: '0.75rem' }}>
+                    <div style={{ fontSize: '1.8rem', fontWeight: 800, color: wr.score >= 7 ? '#22c55e' : wr.score >= 4 ? '#f59e0b' : '#ef4444' }}>{wr.score}/10</div>
+                  </div>
+                )}
+
+                {/* Rubric */}
+                {wr.rubric && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.4rem' }}>Assessment</p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                      {Object.entries(wr.rubric).map(([key, val]) => (
+                        <span key={key} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', fontSize: '0.75rem', background: val === 'good' || val === 'complete' ? 'rgba(34,197,94,0.1)' : val === 'basic' ? 'rgba(245,158,11,0.1)' : 'rgba(239,68,68,0.1)', color: val === 'good' || val === 'complete' ? '#22c55e' : val === 'basic' ? '#f59e0b' : '#ef4444' }}>{key}: {val}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Mistakes */}
+                {wr.mistakes && wr.mistakes.length > 0 && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ef4444', marginBottom: '0.4rem' }}>Mistakes ({wr.mistakes.length})</p>
+                    {wr.mistakes.map((m, i) => (
+                      <div key={i} style={{ padding: '0.4rem 0.6rem', marginBottom: '0.3rem', borderRadius: '6px', background: 'rgba(239,68,68,0.05)', fontSize: '0.8rem' }}>
+                        {m.original && <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>"{m.original}"</div>}
+                        {m.corrected && <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>"{m.corrected}"</div>}
+                        {m.explanation && <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>{m.explanation}</div>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Corrected Version */}
+                {wr.correctedVersion && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#22c55e', marginBottom: '0.3rem' }}>Corrected Version</p>
+                    <div style={{ padding: '0.5rem 0.7rem', borderRadius: '6px', background: 'rgba(34,197,94,0.05)', fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: '1.5' }}>{wr.correctedVersion}</div>
+                  </div>
+                )}
+
+                {/* Improved Version */}
+                {wr.improvedVersion && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.3rem' }}>Improved Version</p>
+                    <div style={{ padding: '0.5rem 0.7rem', borderRadius: '6px', background: 'rgba(139,92,246,0.05)', fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: '1.5' }}>{wr.improvedVersion}</div>
+                  </div>
+                )}
+
+                {/* Flashcards */}
+                {wr.flashcards && wr.flashcards.length > 0 && (
+                  <div>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--accent)', marginBottom: '0.3rem' }}>Flashcards from Mistakes ({wr.flashcards.length})</p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                      {wr.flashcards.map((fc, i) => (
+                        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.3rem 0.6rem', borderRadius: '4px', background: 'var(--bg-primary)', fontSize: '0.8rem' }}>
+                          <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{fc.front || fc.german}</span>
+                          <span style={{ color: 'var(--text-muted)' }}>{fc.back || fc.english}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Copy prompt fallback */}
+            <div style={{ textAlign: 'center' }}>
+              <button
+                style={{ padding: '0.5rem 0.9rem', borderRadius: '8px', border: wtCopied ? '2px solid #3bff9e' : '1px solid var(--border)', background: wtCopied ? 'rgba(59, 255, 158, 0.1)' : 'var(--bg-secondary)', color: wtCopied ? '#3bff9e' : 'var(--text-primary)', cursor: 'pointer', fontWeight: 600, fontSize: '0.8rem', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', marginBottom: '0.5rem' }}
+                onClick={hWtCopy}
+                disabled={wtCopied}
+              >
+                {wtCopied ? <><ClipboardCheck size={16} /> Copied to clipboard!</> : <><Copy size={16} /> Copy AI Correction Prompt</>}
+              </button>
+              <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+                <ShieldCheck size={12} style={{ display: 'inline', marginRight: '0.2rem', verticalAlign: 'middle' }} />
+                Do not submit sensitive personal or medical information.
+              </p>
+              <button style={sBp} onClick={hWtN}>Next Mission <ChevronRight size={16} /></button>
+            </div>
           </div>
         );
       })()}
 
-      {/* ───── SPEAKING MISSION ───── */}
-      {cm.type === 'speaking' && !spDone && (() => {
-        const items = speakingData[lvl] || [];
-        const ni = (getState().speakingRecordings?.[lvl]?.length || 0);
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
-        if (!item || items.length === 0) {
-          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
-            <Mic size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No speaking tasks available for {lvl} yet.</p>
-            <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
-          </div></div>;
-        }
-        return (
-          <div style={sCard}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{item.title}</h3>
-            {item.instructions && (
-              <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {item.instructions}
-              </div>
-            )}
-            <div style={{ background: 'rgba(249,115,22,0.08)', padding: '0.7rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
-              <strong style={{ color: '#f97316' }}>Prompt: </strong>
-              <span style={{ color: 'var(--text-secondary)' }}>{item.prompt}</span>
-            </div>
-            {item.prepTime && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>Preparation time: {item.prepTime}</p>}
-            {item.talkTime && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>Speaking time: {item.talkTime}</p>}
-            {item.tips && <p style={{ fontSize: '0.8rem', color: '#10b981', marginBottom: '0.3rem' }}>Tip: {item.tips}</p>}
-            {item.usefulPhrases?.length > 0 && (
-              <div style={{ marginBottom: '0.5rem' }}>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>Useful phrases:</p>
-                <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
-                  {item.usefulPhrases.slice(0, 4).map((p, i) => (
-                    <span key={i} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', fontSize: '0.75rem', background: 'rgba(249,115,22,0.1)', color: '#f97316' }}>{p}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-            {/* Recording */}
-            <div style={{ marginBottom: '0.5rem' }}>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.4rem' }}>Record your response:</p>
-              {spRecState === 'idle' && (
-                <button style={sBtn} onClick={startRecording}><Play size={14} /> Start Recording</button>
-              )}
-              {spRecState === 'recording' && (
-                <div>
-                  <span style={{ display: 'inline-block', color: '#ef4444', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>Recording...</span>
-                  <button style={{ ...sBtn, borderColor: '#ef4444', color: '#ef4444' }} onClick={stopRecording}>Stop Recording</button>
-                </div>
-              )}
-              {spRecState === 'done' && spRecBlob && (
-                <div>
-                  <audio src={spRecBlob} controls style={{ width: '100%', marginBottom: '0.3rem' }} />
-                  <p style={{ fontSize: '0.75rem', color: '#22c55e' }}>Recording saved</p>
-                </div>
-              )}
-              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.3rem' }}>Or type your response below:</p>
-            </div>
-            <textarea
-              style={{ width: '100%', minHeight: '100px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
-              value={spText}
-              onChange={(e) => setSpText(e.target.value)}
-              placeholder={'Type your ' + lvl + '-level response here...'}
-            />
-            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
-              <button style={sBp} onClick={hSp} disabled={!spText.trim() && spRecState !== 'done'}><CheckCircle size={16} /> Submit Response</button>
+      {/* SPEAKING MISSION */}
+      {cm.type === 'speaking' && !spDone && (
+        <div style={sCard}>
+          {!speakingItem ? (
+            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+              <Mic size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No speaking tasks available for {lvl} yet.</p>
               <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-          </div>
-        );
-      })()}
+          ) : (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                {speakingItem.title}
+              </h3>
+              <p style={{ fontSize: '0.88rem', color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.5 }}>
+                {speakingItem.prompt}
+              </p>
+              {speakingItem.instructions && (
+                <div style={{ background: 'rgba(249, 115, 22, 0.06)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  <strong>Instructions:</strong> {speakingItem.instructions}
+                </div>
+              )}
+              <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                {speakingItem.prepTime && <span>Prep time: {speakingItem.prepTime}</span>}
+                {speakingItem.talkTime && <span>Talk time: {speakingItem.talkTime}</span>}
+              </div>
+
+              {(speakingItem.tips || []).length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>
+                    <Lightbulb size={12} style={{ display: 'inline', marginRight: '0.2rem', verticalAlign: 'middle' }} />
+                    Tips
+                  </p>
+                  <ul style={{ margin: 0, paddingLeft: '1.2rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                    {speakingItem.tips.slice(0, 3).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
+                  </ul>
+                </div>
+              )}
+
+              {(speakingItem.usefulPhrases || []).length > 0 && (
+                <div style={{ marginBottom: '0.75rem', background: 'rgba(249, 115, 22, 0.04)', padding: '0.5rem 0.8rem', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>Useful Phrases:</p>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                    {speakingItem.usefulPhrases.slice(0, 5).map((ph, i) => (
+                      <span key={i} style={{ background: 'var(--bg-secondary)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.78rem' }}>{ph}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {ttsAvailable && typeof MediaRecorder !== 'undefined' && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  {spRecState === 'idle' && (
+                    <button style={sBp} onClick={hSpStartRec}><Mic size={14} /> Start Recording</button>
+                  )}
+                  {spRecState === 'recording' && (
+                    <button style={{ ...sBp, background: '#ef4444', color: '#fff' }} onClick={hSpStopRec}>
+                      <Square size={14} /> Stop Recording
+                    </button>
+                  )}
+                  {spRecState !== 'idle' && spRecState !== 'recording' && spRecBlob && (
+                    <div style={{ marginTop: '0.5rem' }}>
+                      <audio controls src={spRecBlob} style={{ width: '100%', height: '36px' }} />
+                      <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>Recording saved. You can also type your answer below.</p>
+                    </div>
+                  )}
+                </div>
+              )}
+              {(!ttsAvailable || typeof MediaRecorder === 'undefined') && (
+                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                  Audio recording is not available in your browser. Please type your response below.
+                </p>
+              )}
+
+              <textarea
+                style={{ width: '100%', minHeight: '100px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
+                value={spText}
+                onChange={(e) => setSpText(e.target.value)}
+                placeholder='Write your spoken answer or paste your transcription here.'
+              />
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+                <button style={sBp} onClick={hSp} disabled={!spText.trim()}><CheckCircle size={16} /> Submit Response</button>
+                <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
       {cm.type === 'speaking' && spDone && (() => {
+        const sr = spAiResult;
+        const loading = spAiLoading;
+        const err = spAiError;
         const items = speakingData[lvl] || [];
         const ni = (getState().speakingRecordings?.[lvl]?.length || 0) - 1;
-        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const item = ni >= 0 && ni < items.length ? items[ni] : null;
         return (
-          <div style={{ ...sCard, textAlign: 'center' }}>
-            <Mic size={36} style={{ color: '#f97316', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#f97316', marginBottom: '0.5rem' }}>Speaking Submitted!</h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your speaking response has been saved.</p>
-            <button style={{ ...sBp, marginBottom: '0.5rem' }} onClick={handleSpCopyPrompt}><Copy size={14} /> Copy AI Feedback Prompt</button>
-            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Paste this into ChatGPT or Claude to get corrections on your spoken German.</p>
-            <button style={sBp} onClick={hSpN}>Next Mission <ChevronRight size={16} /></button>
+          <div style={sCard}>
+            <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+              <Mic size={36} style={{ color: '#f97316', marginBottom: '0.5rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>Speaking Submitted!</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your speaking response has been saved for review.</p>
+            </div>
+
+            {/* AI Speaking Feedback */}
+            {loading && (
+              <div style={{ textAlign: 'center', padding: '1rem', background: 'var(--bg-secondary)', borderRadius: '8px', marginBottom: '1rem' }}>
+                <RefreshCw size={24} style={{ color: 'var(--accent)', animation: 'dmp-spin 1s linear infinite', marginBottom: '0.5rem' }} />
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Analyzing your speaking with AI...</p>
+              </div>
+            )}
+
+            {err && !loading && (
+              <div style={{ padding: '0.75rem', borderRadius: '8px', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)', marginBottom: '1rem', textAlign: 'center' }}>
+                <AlertCircle size={16} style={{ color: '#ef4444', marginBottom: '0.25rem', display: 'inline' }} />
+                <p style={{ fontSize: '0.8rem', color: '#ef4444' }}>AI feedback unavailable. You can still copy the speaking feedback prompt below.</p>
+              </div>
+            )}
+
+            {sr && !loading && (
+              <div style={{ background: 'var(--bg-secondary)', borderRadius: '8px', padding: '1rem', marginBottom: '1rem' }}>
+                {/* Score */}
+                {sr.score !== null && (
+                  <div style={{ textAlign: 'center', marginBottom: '0.75rem' }}>
+                    <div style={{ fontSize: '1.8rem', fontWeight: 800, color: sr.score >= 7 ? '#22c55e' : sr.score >= 4 ? '#f59e0b' : '#ef4444' }}>{sr.score}/10</div>
+                  </div>
+                )}
+
+                {/* Rubric */}
+                {sr.rubric && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.4rem' }}>Assessment</p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                      {Object.entries(sr.rubric).map(([key, val]) => (
+                        <span key={key} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', fontSize: '0.75rem', background: val === 'good' || val === 'complete' || val === 'fully completed' || val === 'mostly correct' ? 'rgba(34,197,94,0.1)' : val === 'basic' || val === 'simple' ? 'rgba(245,158,11,0.1)' : 'rgba(239,68,68,0.1)', color: val === 'good' || val === 'complete' || val === 'fully completed' || val === 'mostly correct' ? '#22c55e' : val === 'basic' || val === 'simple' ? '#f59e0b' : '#ef4444' }}>{key}: {val}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Mistakes */}
+                {sr.mistakes && sr.mistakes.length > 0 && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ef4444', marginBottom: '0.4rem' }}>Mistakes ({sr.mistakes.length})</p>
+                    {sr.mistakes.map((m, i) => (
+                      <div key={i} style={{ padding: '0.4rem 0.6rem', marginBottom: '0.3rem', borderRadius: '6px', background: 'rgba(239,68,68,0.05)', fontSize: '0.8rem' }}>
+                        {m.original && <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>"{m.original}"</div>}
+                        {m.corrected && <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>"{m.corrected}"</div>}
+                        {m.explanation && <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>{m.explanation}</div>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Better Phrases */}
+                {sr.betterPhrases && sr.betterPhrases.length > 0 && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.3rem' }}>Better Phrases</p>
+                    {sr.betterPhrases.map((bp, i) => (
+                      <div key={i} style={{ padding: '0.4rem 0.6rem', marginBottom: '0.25rem', borderRadius: '6px', background: 'rgba(139,92,246,0.05)', fontSize: '0.8rem' }}>
+                        <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>"{bp.original}"</div>
+                        <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>"{bp.better}"</div>
+                        {bp.explanation && <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem' }}>{bp.explanation}</div>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Corrected Transcript */}
+                {sr.correctedTranscript && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#22c55e', marginBottom: '0.3rem' }}>Corrected Transcript</p>
+                    <div style={{ padding: '0.5rem 0.7rem', borderRadius: '6px', background: 'rgba(34,197,94,0.05)', fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: '1.5' }}>{sr.correctedTranscript}</div>
+                  </div>
+                )}
+
+                {/* Stronger Answer */}
+                {sr.strongerAnswer && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f97316', marginBottom: '0.3rem' }}>Stronger Answer</p>
+                    <div style={{ padding: '0.5rem 0.7rem', borderRadius: '6px', background: 'rgba(249,115,22,0.05)', fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: '1.5' }}>{sr.strongerAnswer}</div>
+                  </div>
+                )}
+
+                {/* Phrases to Memorize */}
+                {sr.phrasesToMemorize && sr.phrasesToMemorize.length > 0 && (
+                  <div>
+                    <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--accent)', marginBottom: '0.3rem' }}>Phrases to Memorize ({sr.phrasesToMemorize.length})</p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                      {sr.phrasesToMemorize.map((p, i) => (
+                        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.3rem 0.6rem', borderRadius: '4px', background: 'var(--bg-primary)', fontSize: '0.8rem' }}>
+                          <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{p.german}</span>
+                          <span style={{ color: 'var(--text-muted)' }}>{p.english}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Copy prompt fallback */}
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                <MessageSquare size={12} style={{ display: 'inline', marginRight: '0.2rem', verticalAlign: 'middle' }} />
+                Recording is saved locally for practice. Automatic AI feedback uses your typed/pasted transcript, not the audio recording.
+              </p>
+              <button
+                style={{ padding: '0.5rem 0.9rem', borderRadius: '8px', border: spCopied ? '2px solid #3bff9e' : '1px solid var(--border)', background: spCopied ? 'rgba(59, 255, 158, 0.1)' : 'var(--bg-secondary)', color: spCopied ? '#3bff9e' : 'var(--text-primary)', cursor: 'pointer', fontWeight: 600, fontSize: '0.8rem', display: 'inline-flex', alignItems: 'center', gap: '0.35rem', marginBottom: '0.5rem' }}
+                onClick={hSpCopy}
+                disabled={spCopied}
+              >
+                {spCopied ? <><ClipboardCheck size={16} /> Copied to clipboard!</> : <><Copy size={16} /> Copy AI Speaking Feedback Prompt</>}
+              </button>
+              <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+                <ShieldCheck size={12} style={{ display: 'inline', marginRight: '0.2rem', verticalAlign: 'middle' }} />
+                Do not submit sensitive personal or medical information.
+              </p>
+              <button style={sBp} onClick={hSpN}>Next Mission <ChevronRight size={16} /></button>
+            </div>
           </div>
         );
       })()}
