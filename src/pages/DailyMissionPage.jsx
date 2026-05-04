@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress,
@@ -176,6 +176,10 @@ export default function DailyMissionPage() {
   const [speakingPrompt, setSpeakingPrompt] = useState(null);
   const [spRecBlob, setSpRecBlob] = useState(null);
   const [spRecState, setSpRecState] = useState('idle');
+  const [spIsListening, setSpIsListening] = useState(false);
+  const spRecognitionRef = useRef(null);
+  const spSpeechSupported = typeof window !== 'undefined' &&
+    (window.SpeechRecognition || window.webkitSpeechRecognition);
   const [ttsAvailable] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window);
   const [lrnTTS, setLrnTTS] = useState(false);
   const [gcStart, setGcStart] = useState(false);
@@ -451,6 +455,35 @@ export default function DailyMissionPage() {
     setTimeout(() => setWtCopied(false), 2500);
   };
 
+  // Speaking speech recognition (browser-native, no audio upload)
+  const startSpTranscription = () => {
+    if (!spSpeechSupported) return;
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'de-DE';
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.onresult = (event) => {
+      let full = '';
+      for (let i = 0; i < event.results.length; i++) {
+        full += event.results[i][0].transcript;
+      }
+      setSpText(full);
+    };
+    recognition.onerror = () => setSpIsListening(false);
+    recognition.onend = () => setSpIsListening(false);
+    spRecognitionRef.current = recognition;
+    recognition.start();
+    setSpIsListening(true);
+  };
+
+  const stopSpTranscription = () => {
+    if (spRecognitionRef.current) {
+      try { spRecognitionRef.current.stop(); } catch {}
+    }
+    setSpIsListening(false);
+  };
+
   const hSpCopy = () => {
     handleSpCopyPrompt();
     setSpCopied(true);
@@ -698,7 +731,7 @@ export default function DailyMissionPage() {
   const sos = { display: 'block', width: '100%', padding: '0.7rem 1rem', marginBottom: '0.4rem', borderRadius: '8px', border: '2px solid var(--accent)', background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' };
 
   return (
-    <LevelLock levelId={lvl}><style>{'@keyframes dmp-spin{to{transform:rotate(360deg)}}'}</style>
+    <LevelLock levelId={lvl}><style>{'@keyframes dmp-spin{to{transform:rotate(360deg)}}@keyframes dmp-pulse{0%,100%{opacity:1}50%{opacity:0.4}}'}</style>
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
         {/* Header */}
         <div style={{ marginBottom: '1rem' }}>
@@ -1526,6 +1559,35 @@ export default function DailyMissionPage() {
               {(!ttsAvailable || typeof MediaRecorder === 'undefined') && (
                 <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
                   Audio recording is not available in your browser. Please type your response below.
+                </p>
+              )}
+
+              {/* Speech-to-Text: browser-native transcription */}
+              {spSpeechSupported ? (
+                <div style={{ marginBottom: '0.75rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                  {!spIsListening ? (
+                    <button style={{ ...sBp, fontSize: '0.8rem' }} onClick={startSpTranscription}>
+                      <Volume2 size={14} /> Start Transcription
+                    </button>
+                  ) : (
+                    <button style={{ ...sBp, background: '#ef4444', color: '#fff', fontSize: '0.8rem' }} onClick={stopSpTranscription}>
+                      <Square size={14} /> Stop Transcription
+                    </button>
+                  )}
+                  {spIsListening && (
+                    <span style={{ fontSize: '0.75rem', color: '#ef4444', animation: 'dmp-pulse 1s infinite' }}>
+                      Listening...
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                  Speech recognition is not supported in this browser. You can type or paste your transcript.
+                </p>
+              )}
+              {spIsListening && (
+                <p style={{ fontSize: '0.7rem', color: '#8b5cf6', marginBottom: '0.5rem' }}>
+                  Speaking in German. Your transcript is sent for AI feedback only when you click Submit Response.
                 </p>
               )}
 

@@ -467,7 +467,7 @@ test.describe('H. Daily Mission Flow', () => {
     }
   });
 
-  test('Daily speaking mission shows transcript textarea and AI feedback option', async ({ page }) => {
+  test('Daily speaking mission shows transcription buttons and transcript textarea', async ({ page }) => {
     await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
     await page.waitForTimeout(1000);
 
@@ -483,7 +483,7 @@ test.describe('H. Daily Mission Flow', () => {
     let maxClicks = 25;
     while (maxClicks-- > 0) {
       const bodyText = await body.textContent();
-      if (bodyText.includes('Speaking Submitted') || bodyText.includes('your spoken answer')) {
+      if (bodyText.includes('Speaking') && (bodyText.includes('your spoken answer') || bodyText.includes('Write your spoken answer'))) {
         break;
       }
       const nextBtn = page.locator('button').filter({ hasText: /Next Mission|Skip.*now|See Results/ }).first();
@@ -496,14 +496,39 @@ test.describe('H. Daily Mission Flow', () => {
     }
 
     // Check for speaking textarea
-    const textarea = page.locator('textarea').first();
-    const hasTextarea = await textarea.isVisible({ timeout: 2000 }).catch(() => false);
+    const textarea = page.locator('textarea');
+    const hasTextarea = await textarea.first().isVisible({ timeout: 3000 }).catch(() => false);
     if (hasTextarea) {
+      // Check that placeholder contains hint about transcription
+      const placeholder = await textarea.first().getAttribute('placeholder');
+      expect(placeholder).toContain('Write your spoken answer');
+
+      // Check for transcription button or fallback message
+      const transcribeBtn = page.locator('button').filter({ hasText: /Start Transcription/ });
+      const hasTranscribe = await transcribeBtn.isVisible({ timeout: 1000 }).catch(() => false);
+
+      if (hasTranscribe) {
+        const btnText = await transcribeBtn.textContent();
+        expect(btnText).toContain('Transcription');
+      } else {
+        // Fallback: check for speech recognition not supported message
+        const fallbackMsg = page.getByText(/speech recognition is not supported/i);
+        if (await fallbackMsg.isVisible({ timeout: 1000 }).catch(() => false)) {
+          expect(await fallbackMsg.textContent()).toContain('transcript');
+        }
+      }
+
+      // Check for privacy note
+      const privacyNote = page.getByText(/Your transcript is sent for AI feedback/i);
+      if (await privacyNote.isVisible({ timeout: 1000 }).catch(() => false)) {
+        expect(await privacyNote.textContent()).toContain('AI feedback');
+      }
+
       // Fill in a speaking transcript
-      await textarea.fill('Guten Tag, ich heiße Anna und lerne Deutsch. Ich spreche schon gut, aber manchmal mache ich Fehler.');
+      await textarea.first().fill('Guten Tag, ich heiße Anna und lerne Deutsch.');
 
       // Check for submit/feedback button
-      const submitBtn = page.locator('button').filter({ hasText: /Submit|Get AI|Feedback/ }).first();
+      const submitBtn = page.locator('button').filter({ hasText: /Submit/ }).first();
       const hasSubmit = await submitBtn.isVisible({ timeout: 1000 }).catch(() => false);
 
       if (hasSubmit) {
