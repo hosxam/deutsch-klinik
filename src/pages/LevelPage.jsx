@@ -81,6 +81,16 @@ export default function LevelPage() {
           const doneCount = getLevelProgress(levelId, skill.key === 'vocabulary' ? 'vocab' : skill.key).length;
           const isVocab = skill.key === 'vocabulary';
           const path = isVocab ? `/level/${levelId}/vocabulary` : `/level/${levelId}/${skill.key}`;
+          // Map skill key to the appropriate levels.json target field
+          const targetFieldMap = {
+            grammar: 'grammarUnits',
+            vocabulary: 'vocabularyUnits',
+            reading: 'minReadingTests',
+            listening: 'minListeningTests',
+            writing: 'minWritingTasks',
+            speaking: 'minSpeakingTasks',
+          };
+          const target = levelData[targetFieldMap[skill.key]] || 10;
           
           return (
             <Link key={skill.key} to={path} className="rounded-xl p-4 transition-all hover:scale-[1.02] group" style={{
@@ -97,7 +107,7 @@ export default function LevelPage() {
               </div>
               <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-muted)' }}>
                 <div className="h-1.5 flex-1 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
-                  <div className="h-full rounded-full" style={{ width: `${Math.min((doneCount / 20) * 100, 100)}%`, backgroundColor: skill.color }} />
+                  <div className="h-full rounded-full" style={{ width: `${Math.min((doneCount / target) * 100, 100)}%`, backgroundColor: skill.color }} />
                 </div>
                 {doneCount} done
               </div>
@@ -149,10 +159,10 @@ export default function LevelPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
           <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
           <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
-          <Requirement label="Mini Quizzes" current={prog.quizzes?.length || 0} target={3} />
           <Requirement label="Writing Tasks" current={(state.writings || []).filter(w => w.level === levelId).length} target={levelData.minWritingTasks} />
           <Requirement label="Speaking Tasks" current={(state.speakingRecordings[levelId] || []).length} target={levelData.minSpeakingTasks} />
           <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
+          <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
         </div>
       </div>
     </div>

@@ -434,17 +434,13 @@ export function isExamUnlocked(level, levelData) {
 
   const grammarDone = (prog.grammar && prog.grammar.length >= levelData.grammarUnits) || false;
   const vocabDone = (prog.vocab && prog.vocab.length >= levelData.vocabularyUnits) || false;
-  const quizScores = prog.quizzes || [];
-  const avgQuizScore = quizScores.length > 0 
-    ? quizScores.reduce((a, b) => a + b.score, 0) / quizScores.length * 100
-    : 0;
-  const quizzesPass = avgQuizScore >= levelData.miniQuizzesMinScore;
   const writingsDone = (state.writings || []).filter(w => w.level === level).length >= levelData.minWritingTasks;
   const speakingDone = (state.speakingRecordings[level] || []).length >= levelData.minSpeakingTasks;
   const listeningDone = (prog.listening || []).length >= levelData.minListeningTests;
   const readingDone = (prog.reading || []).length >= levelData.minReadingTests;
 
-  return grammarDone && vocabDone && quizzesPass && writingsDone && speakingDone && listeningDone && readingDone;
+  const lessonsCompleted = (state.completedLessons[level] || []).length;
+  return grammarDone && vocabDone && lessonsCompleted >= 10 && writingsDone && speakingDone && listeningDone && readingDone;
 }
 
 // ===== LEVEL UNLOCK CHECK =====
