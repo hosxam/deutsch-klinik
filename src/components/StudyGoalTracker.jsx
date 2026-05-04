@@ -26,6 +26,7 @@ export function getStudyGoal() {
       targetLevel: parsed.targetLevel || 'B2',
       targetDate: parsed.targetDate || '',
       dailyMinutes: typeof parsed.dailyMinutes === 'number' ? parsed.dailyMinutes : 30,
+      planType: parsed.planType || 'exam',
     };
   } catch {
     return null;
@@ -337,7 +338,7 @@ function estimateGoalStatus(state, goal) {
 export default function StudyGoalTracker() {
   const [goal, setGoal] = useState(null);
   const [editing, setEditing] = useState(false);
-  const [form, setForm] = useState({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30 });
+  const [form, setForm] = useState({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30, planType: 'exam' });
   const [showForm, setShowForm] = useState(false);
 
   const state = getState();
@@ -357,6 +358,7 @@ export default function StudyGoalTracker() {
         targetLevel: saved.targetLevel || 'B2',
         targetDate: saved.targetDate || '',
         dailyMinutes: saved.dailyMinutes || 30,
+        planType: saved.planType || 'exam',
       });
     }
   }, []);
@@ -366,6 +368,7 @@ export default function StudyGoalTracker() {
       targetLevel: form.targetLevel || 'B2',
       targetDate: form.targetDate || '',
       dailyMinutes: Math.max(1, Number(form.dailyMinutes) || 30),
+      planType: form.planType || 'exam',
     };
     saveStudyGoal(newGoal);
     setGoal(newGoal);
@@ -378,7 +381,7 @@ export default function StudyGoalTracker() {
     setGoal(null);
     setEditing(false);
     setShowForm(true);
-    setForm({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30 });
+    setForm({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30, planType: 'exam' });
   };
 
   const handleEdit = () => {
@@ -504,6 +507,30 @@ export default function StudyGoalTracker() {
               }}
             />
           </div>
+          <div>
+            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Plan Type</label>
+            <div className="flex gap-2">
+              {[
+                { value: 'exam', label: 'Exam Unlock', desc: 'Minimum requirements to unlock exam', color: '#06b6d4' },
+                { value: 'full', label: 'Full Mastery', desc: 'Complete all content in the level', color: '#8b5cf6' },
+              ].map(p => (
+                <button
+                  key={p.value}
+                  type="button"
+                  onClick={() => setForm({ ...form, planType: p.value })}
+                  className="flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all"
+                  style={{
+                    backgroundColor: form.planType === p.value ? p.color : 'var(--bg-hover)',
+                    color: form.planType === p.value ? '#000' : 'var(--text-muted)',
+                    border: `1px solid ${form.planType === p.value ? p.color : 'var(--border)'}`,
+                  }}
+                >
+                  <span className="block">{p.label}</span>
+                  <span className="block text-[10px] font-normal mt-0.5" style={{ opacity: 0.75 }}>{p.desc}</span>
+                </button>
+              ))}
+            </div>
+          </div>
           <button
             onClick={handleSave}
             className="w-full py-2 rounded-lg text-sm font-semibold transition-colors"
@@ -587,10 +614,14 @@ export default function StudyGoalTracker() {
           </div>
 
           {/* Goal info grid */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
               <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Target</div>
               <div className="text-sm font-bold" style={{ color: 'var(--accent)' }}>{goal.targetLevel}</div>
+            </div>
+            <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
+              <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Plan</div>
+              <div className="text-sm font-bold" style={{ color: '#8b5cf6' }}>{goal.planType === 'exam' ? 'Exam Unlock' : 'Full Mastery'}</div>
             </div>
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
               <div className="text-xs" style={{ color: 'var(--text-muted)' }}>

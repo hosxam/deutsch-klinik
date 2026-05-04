@@ -1,6 +1,6 @@
 import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
-import { getState, updateLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
+import { getState, updateLevelProgress, setLevelProgress, getLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
 import grammarData from '../data/grammar.json';
 import LevelLock from '../components/LevelLock';
 import { CheckCircle, XCircle, AlertTriangle, RotateCcw, BookOpen } from 'lucide-react';
@@ -87,11 +87,16 @@ export default function GrammarPage() {
     // 3. Track mistakes in the notebook (incorrect answers) and topic weakness
     recordAnswer(levelId, ex.id, ans, ex.answer, ex.topic || ex.type, correct, 'grammar');
 
-    // 4. Periodically update level progress (every 3rd answer on this exercise)
-    const mastery = getGrammarMastery(ex.id);
-    const total = mastery.correct + mastery.incorrect;
-    if (total > 0 && total % 3 === 0) {
-      updateLevelProgress(levelId, 'grammar', { date: new Date().toISOString(), exerciseId: ex.id, correct: mastery.correct, total });
+    // 4. Update level progress for exam unlock on EVERY answer (deduplicate by exercise ID)
+    const existing = getLevelProgress(levelId, 'grammar');
+    const existingIdx = existing.findIndex(e => e.exerciseId === ex.id);
+    const newEntry = { date: new Date().toISOString(), exerciseId: ex.id, correct: getGrammarMastery(ex.id).correct, total: getGrammarMastery(ex.id).correct + getGrammarMastery(ex.id).incorrect };
+    if (existingIdx >= 0) {
+      const updated = [...existing];
+      updated[existingIdx] = newEntry;
+      setLevelProgress(levelId, 'grammar', updated);
+    } else {
+      updateLevelProgress(levelId, 'grammar', newEntry);
     }
   };
 

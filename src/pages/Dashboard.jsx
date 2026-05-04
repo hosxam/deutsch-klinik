@@ -36,6 +36,85 @@ const VOCAB_COUNT = dashboardSummary.vocabCounts;
 // Count grammar entries per level (from summary)
 const GRAMMAR_COUNT = dashboardSummary.grammarCounts;
 
+const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
+
+const DAILY_LIMITS_DEFAULT = {
+  grammar: 10,
+  vocab: 20,
+  lesson: 1,
+  reading: 1,
+  listening: 1,
+  writing: 1,
+  speaking: 1,
+};
+
+const DAILY_LIMITS_MIN = {
+  grammar: 5,
+  vocab: 10,
+  lesson: 1,
+  reading: 1,
+  listening: 1,
+  writing: 1,
+  speaking: 1,
+};
+
+const DAILY_LIMITS_MAX = {
+  grammar: 25,
+  vocab: 50,
+  lesson: 3,
+  reading: 3,
+  listening: 3,
+  writing: 2,
+  speaking: 2,
+};
+
+/** Compute dynamic daily limits from the user's goal. Returns { grammar, vocab }. */
+function computeDailyLimitsFor(levelId, state) {
+  const goal = getStudyGoal();
+  if (!goal || !goal.targetDate || !goal.targetLevel) return { grammar: 10, vocab: 20 };
+
+  const today = new Date();
+  const targetDate = new Date(goal.targetDate);
+  const daysRemaining = Math.max(1, Math.ceil((targetDate - today) / (1000 * 60 * 60 * 24)));
+  const targetLevelIdx = LEVEL_ORDER[goal.targetLevel];
+  if (targetLevelIdx === undefined) return { grammar: 10, vocab: 20 };
+
+  const planType = goal.planType || 'exam';
+  const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+  // Calculate totals up to target level
+  let grammarTotal = 0;
+  let vocabTotal = 0;
+  for (let i = 0; i <= targetLevelIdx; i++) {
+    const lvl = LEVELS[i];
+    const lvlData = levelsData.levels.find(l => l.id === lvl);
+    if (planType === 'exam' && lvlData) {
+      grammarTotal += lvlData.grammarUnits || 10;
+      vocabTotal += lvlData.vocabularyUnits || 10;
+    } else {
+      grammarTotal += GRAMMAR_COUNT[lvl] || 200;
+      vocabTotal += VOCAB_COUNT[lvl] || 500;
+    }
+  }
+
+  // What's completed across all levels up to target
+  let grammarDone = 0;
+  let vocabDone = 0;
+  for (let i = 0; i <= targetLevelIdx; i++) {
+    const lvl = LEVELS[i];
+    grammarDone += (state.levels?.[lvl]?.grammar?.length || 0);
+    vocabDone += (state.levels?.[lvl]?.vocab?.length || 0);
+  }
+
+  const grammarRemaining = Math.max(0, grammarTotal - grammarDone);
+  const vocabRemaining = Math.max(0, vocabTotal - vocabDone);
+
+  const grammar = Math.min(25, Math.max(5, Math.ceil(grammarRemaining / daysRemaining)));
+  const vocab = Math.min(50, Math.max(10, Math.ceil(vocabRemaining / daysRemaining)));
+
+  return { grammar, vocab };
+}
+
 export default function Dashboard() {
   const [state, setState] = useState(getState());
   const [todayTasks, setTodayTasks] = useState([]);
@@ -234,9 +313,11 @@ export default function Dashboard() {
             link = `/level/${level}/lessons`;
           }
         } else if (area.id === 'grammar') {
-          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=5`;
+          const lims = computeDailyLimitsFor(level, s);
+          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=${lims.grammar}`;
         } else if (area.id === 'vocab') {
-          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=10`;
+          const lims = computeDailyLimitsFor(level, s);
+          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=${lims.vocab}`;
         } else {
           link = `/level/${level}/${area.linkSuffix}`;
         }
@@ -875,7 +956,7 @@ export default function Dashboard() {
           />
           <StudyPlanButton
             step={3} label="Practice Grammar"
-            to={`/level/` + targetLevel + `/grammar?daily=1&limit=5`}
+            to={`/level/` + targetLevel + `/grammar?daily=1&limit=${computeDailyLimitsFor(targetLevel, state).grammar}`}
             icon={BarChart3} accent="#f59e0b"
             desc={grammarDone + '/' + grammarTarget + ' exercises done'}
           />
@@ -1412,7 +1493,7 @@ export default function Dashboard() {
           accent="#3bff9e"
         />
         <ActionButton
-          to={`/level/${studyLevel}/grammar?daily=1&limit=5`}
+          to={`/level/${studyLevel}/grammar?daily=1&limit=${computeDailyLimitsFor(studyLevel, state).grammar}`}
           icon={BarChart3}
           label="Grammar"
           accent="#f59e0b"

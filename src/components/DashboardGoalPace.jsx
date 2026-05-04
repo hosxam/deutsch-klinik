@@ -267,7 +267,8 @@ export default function DashboardGoalPace() {
           )}
 
           {/* Goal summary grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+            <MetricBox label="Plan" value={goal.planType === 'full' ? 'Full Mastery' : 'Exam Unlock'} color="#8b5cf6" />
             <MetricBox label="Target Level" value={paceData.targetLevel} color={levelColors[paceData.targetLevel] || 'var(--accent)'} />
             <MetricBox label="Current Level" value={paceData.currentLevel} color={levelColors[paceData.currentLevel] || 'var(--accent)'} />
             <MetricBox label="Target Date" value={paceData.targetDate} color="var(--accent)" />
@@ -277,6 +278,53 @@ export default function DashboardGoalPace() {
               color={isOverdue ? '#ff3355' : paceData.daysRemaining <= 7 ? '#ffd700' : '#3bff9e'}
             />
           </div>
+
+          {/* Daily mission limits & pace label */}
+          {goal && goal.targetDate && (
+            <div className="rounded-lg p-3" style={{ backgroundColor: 'var(--bg-hover)' }}>
+              <div className="flex items-center justify-between mb-1.5">
+                <span className="text-xs font-semibold" style={{ color: 'var(--text-muted)' }}>Daily Mission Targets</span>
+                <span className="text-xs px-2 py-0.5 rounded-full font-semibold" style={{
+                  backgroundColor: (() => {
+                    const maxPerDay = Math.max(paceData.grammarPerDay || 0, paceData.vocabPerDay || 0, paceData.lessonsPerDay || 0);
+                    if (maxPerDay < 5) return 'rgba(59,255,158,0.15)';
+                    if (maxPerDay < 20) return 'rgba(255,215,0,0.15)';
+                    return 'rgba(255,51,85,0.15)';
+                  })(),
+                  color: (() => {
+                    const maxPerDay = Math.max(paceData.grammarPerDay || 0, paceData.vocabPerDay || 0, paceData.lessonsPerDay || 0);
+                    if (maxPerDay < 5) return '#3bff9e';
+                    if (maxPerDay < 20) return '#ffd700';
+                    return '#ff3355';
+                  })(),
+                }}>
+                  {(() => {
+                    const maxPerDay = Math.max(paceData.grammarPerDay || 0, paceData.vocabPerDay || 0, paceData.lessonsPerDay || 0);
+                    if (maxPerDay < 5) return 'Light';
+                    if (maxPerDay < 20) return 'Moderate';
+                    return 'Intense';
+                  })()}
+                </span>
+              </div>
+              <div className="grid grid-cols-3 gap-2 text-center">
+                <div>
+                  <div className="text-lg font-bold" style={{ color: '#06b6d4' }}>{Math.ceil(paceData.lessonsPerDay)}</div>
+                  <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Lessons/day</div>
+                </div>
+                <div>
+                  <div className="text-lg font-bold" style={{ color: '#3bff9e' }}>{Math.ceil(paceData.vocabPerDay)}</div>
+                  <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Vocab/day</div>
+                </div>
+                <div>
+                  <div className="text-lg font-bold" style={{ color: '#f59e0b' }}>{Math.ceil(paceData.grammarPerDay)}</div>
+                  <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Grammar/day</div>
+                </div>
+              </div>
+              <div className="text-[10px] mt-1 text-center" style={{ color: 'var(--text-muted)' }}>
+                Dashboard mission links use these limits
+              </div>
+            </div>
+          )}
 
           {/* Progress section */}
           <div className="space-y-2">
