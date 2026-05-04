@@ -312,12 +312,8 @@ export default function Dashboard() {
           } else {
             link = `/level/${level}/lessons`;
           }
-        } else if (area.id === 'grammar') {
-          const lims = computeDailyLimitsFor(level, s);
-          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=${lims.grammar}`;
-        } else if (area.id === 'vocab') {
-          const lims = computeDailyLimitsFor(level, s);
-          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=${lims.vocab}`;
+        } else if (area.id === 'grammar' || area.id === 'vocab' || area.id === 'listening' || area.id === 'reading' || area.id === 'writing' || area.id === 'speaking') {
+          link = `/level/${level}/daily`;
         } else {
           link = `/level/${level}/${area.linkSuffix}`;
         }
@@ -950,31 +946,31 @@ export default function Dashboard() {
           />
           <StudyPlanButton
             step={2} label="Practice Vocabulary"
-            to={`/level/` + targetLevel + `/vocabulary`}
+            to={`/level/` + targetLevel + `/daily`}
             icon={BookOpen} accent="#3bff9e"
             desc={dueVocabCount > 0 ? dueVocabCount + ' due for review' : 'Flashcards & filters'}
           />
           <StudyPlanButton
             step={3} label="Practice Grammar"
-            to={`/level/` + targetLevel + `/grammar?daily=1&limit=${computeDailyLimitsFor(targetLevel, state).grammar}`}
+            to={`/level/` + targetLevel + `/daily`}
             icon={BarChart3} accent="#f59e0b"
             desc={grammarDone + '/' + grammarTarget + ' exercises done'}
           />
           <StudyPlanButton
             step={4} label="Listening Practice"
-            to={`/level/` + targetLevel + `/listening`}
+            to={`/level/` + targetLevel + `/daily`}
             icon={Headphones} accent="#06b6d4"
             desc="Improve listening comprehension"
           />
           <StudyPlanButton
             step={5} label="Writing Practice"
-            to={`/level/` + targetLevel + `/writing`}
+            to={`/level/` + targetLevel + `/daily`}
             icon={PenTool} accent="#ec4899"
             desc="Practice written expression"
           />
           <StudyPlanButton
             step={6} label="Speaking Practice"
-            to={`/level/` + targetLevel + `/speaking`}
+            to={`/level/` + targetLevel + `/daily`}
             icon={MessageSquare} accent="#f97316"
             desc="Practice spoken communication"
           />
@@ -1005,8 +1001,8 @@ export default function Dashboard() {
             <Link to="/placement-test" className="px-4 py-2 rounded-lg text-sm font-semibold text-white" style={{ background: 'linear-gradient(135deg, var(--accent), var(--accent2))' }}>
               <Target size={16} className="inline mr-1.5" />Placement Test
             </Link>
-            <Link to={`/level/${studyLevel}`} className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
-              <Play size={16} className="inline mr-1.5" />Start Today's Practice
+            <Link to={`/level/${studyLevel}/daily`} className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
+              <Play size={16} className="inline mr-1.5" />Start Today's Plan
             </Link>
           </div>
         </div>

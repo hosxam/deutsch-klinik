@@ -330,3 +330,68 @@ test.describe('G. Existing task type regression', () => {
     watcher.assertNoErrors();
   });
 });
+
+
+/* H. Daily Mission Flow */
+test.describe('H. Daily Mission Flow', () => {
+
+  test('Dashboard has Start Today Plan button', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ });
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+
+    const href = await startBtn.getAttribute('href');
+    expect(href).toContain('/daily');
+  });
+
+  test('Daily page loads mission header', async ({ page }) => {
+    await page.goto(LIVE_URL + '/#/level/A1/daily', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+    await expect(body).toContainText("Today's Plan", { timeout: 5000 });
+    await expect(body).toContainText('Mission 1 of', { timeout: 3000 });
+  });
+
+  test('Grammar mission shows limited questions', async ({ page }) => {
+    await page.goto(LIVE_URL + '/#/level/A1/daily', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+
+    for (let i = 0; i < 5; i++) {
+      const txt = await body.textContent();
+      if (txt.includes('Grammar Practice')) break;
+      const skipBtn = page.locator('button').filter({ hasText: /Skip/ }).first();
+      if (await skipBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(1000);
+      }
+    }
+
+    const questionText = await body.textContent();
+    expect(questionText).toContain('Question');
+
+    const match = questionText.match(/Question \d+ of (\d+)/);
+    if (match) {
+      const total = parseInt(match[1]);
+      expect(total).toBeLessThanOrEqual(25);
+    }
+  });
+
+  test('Dashboard navigate to daily flow', async ({ page }) => {
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today's? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const body = page.locator('body');
+    await expect(body).toContainText("Today's Plan", { timeout: 5000 });
+  });
+});

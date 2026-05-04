@@ -17,6 +17,7 @@ const MedicalPage = lazy(() => import('./pages/MedicalPage'));
 const PlacementTest = lazy(() => import('./pages/PlacementTest'));
 const FlashcardPage = lazy(() => import('./pages/FlashcardPage'));
 const C1ReadinessPage = lazy(() => import('./pages/C1ReadinessPage'));
+const DailyMissionPage = lazy(() => import('./pages/DailyMissionPage'));
 const LessonsPage = lazy(() => import('./pages/LessonsPage'));
 const LessonDetailPage = lazy(() => import('./pages/LessonDetailPage'));
 const MistakeNotebookPage = lazy(() => import('./pages/MistakeNotebookPage'));
@@ -113,6 +114,11 @@ export default function App() {
             <Route path="level/:levelId/lessons" element={
               <Suspense fallback={<Loading />}>
                 <LessonsPage />
+              </Suspense>
+            } />
+            <Route path="level/:levelId/daily" element={
+              <Suspense fallback={<Loading />}>
+                <DailyMissionPage />
               </Suspense>
             } />
             <Route path="level/:levelId/lessons/:lessonId" element={
