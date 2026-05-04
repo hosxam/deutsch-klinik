@@ -128,6 +128,7 @@ export default function DailyMissionPage() {
   const [initDone, setInitDone] = useState(false);
   const [lsStart, setLsStart] = useState(false);
   const [lsDone, setLsDone] = useState(false);
+  const [fullLesson, setFullLesson] = useState(null);
   const [gi, setGi] = useState(0);
   const [gq, setGq] = useState([]);
   const [ga, setGa] = useState('');
@@ -146,6 +147,28 @@ export default function DailyMissionPage() {
   const [spDone, setSpDone] = useState(false);
   const [spText, setSpText] = useState('');
   const [compShow, setCompShow] = useState(false);
+
+  // Listening question state
+  const [lrq, setLrq] = useState(0);
+  const [lrc, setLrc] = useState(0);
+  const [lra, setLra] = useState({});
+  const [lrcorr, setLrcorr] = useState({});
+
+  // Reading question state
+  const [rrq, setRrq] = useState(0);
+  const [rrc, setRrc] = useState(0);
+  const [rra, setRra] = useState({});
+  const [rrcorr, setRrcorr] = useState({});
+
+  // Writing/speaking state
+  const [writingPrompt, setWritingPrompt] = useState(null);
+  const [speakingPrompt, setSpeakingPrompt] = useState(null);
+  const [spRecBlob, setSpRecBlob] = useState(null);
+  const [spRecState, setSpRecState] = useState('idle');
+  const [ttsAvailable] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window);
+  const [lrnTTS, setLrnTTS] = useState(false);
+  const [wtCopied, setWtCopied] = useState(false);
+  const [spCopied, setSpCopied] = useState(false);
 
   const refresh = useCallback(() => setLS({ ...getState() }), []);
 
@@ -196,7 +219,17 @@ export default function DailyMissionPage() {
       setMi(up.currentMission);
     }
   };
-  const hLs = () => setLsStart(true);
+  const hLs = () => {
+    const cm = getCm();
+    if (cm?.nextLesson?.id) {
+      try {
+        const lessons = require('./data/germanLessons.json');
+        const found = Array.isArray(lessons) ? lessons.find(l => l.id === cm.nextLesson.id) : null;
+        if (found) setFullLesson(found);
+      } catch(e) {}
+    }
+    setLsStart(true);
+  };
   const hLsk = () => advance('lesson', { skipped: true });
   const hLc = () => {
     const cm = getCm();
@@ -292,34 +325,112 @@ export default function DailyMissionPage() {
     if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: selected } });
   }, [initDone, mi]);
 
-  const hLrn = () => {
+  const hLrnSk = () => advance('listening', { skipped: true });
+  const hLrnN = () => {
+    setLrq(0); setLrc(0); setLra({}); setLrcorr({});
+    advance('listening', {});
+  };
+  const hLrnA = (qIdx, answer) => {
     const items = listeningData[lvl] || [];
     const ni = state.levels?.[lvl]?.listening?.length || 0;
     const item = items[ni];
-    if (item) {
+    if (!item) return;
+    const q = item.questions?.[qIdx];
+    if (!q) return;
+    const correct = q.type === 'true-false'
+      ? String(answer).toLowerCase() === String(q.answer).toLowerCase()
+      : String(answer).toLowerCase().trim() === String(q.answer).toLowerCase().trim();
+    setLra(prev => ({ ...prev, [qIdx]: answer }));
+    setLrcorr(prev => ({ ...prev, [qIdx]: correct }));
+    if (correct) setLrc(c => c + 1);
+    if (qIdx + 1 < (item.questions?.length || 0)) {
+      setLrq(qIdx + 1);
+    } else {
+      const totalQ = item.questions.length;
+      const allCorrect = lrc + (correct ? 1 : 0);
       const existing = (state.levels?.[lvl]?.listening || []).filter((x) => x !== item.id);
       updateLevelProgress(lvl, 'listening', [item.id, ...existing]);
+      const cs = getState();
+      const ld = cs.levels || {};
+      const ll = ld[lvl] || {};
+      updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: allCorrect, total: totalQ, date: new Date().toISOString() } } } } });
       refresh();
+      setLrnDone(true);
     }
-    setLrnDone(true);
   };
-  const hLrnSk = () => advance('listening', { skipped: true });
-  const hLrnN = () => advance('listening', {});
 
-  const hRd = () => {
+  const hLrnTTS = () => {
+    if (!ttsAvailable) return;
+    const items = listeningData[lvl] || [];
+    const ni = state.levels?.[lvl]?.listening?.length || 0;
+    const item = items[ni];
+    if (!item || !item.script) return;
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(item.script);
+    utter.lang = 'de-DE';
+    utter.rate = 0.85;
+    utter.onstart = () => setLrnTTS(true);
+    utter.onend = () => setLrnTTS(false);
+    window.speechSynthesis.speak(utter);
+  };
+
+  const hWtCopy = () => {
+    handleCopyPrompt();
+    setWtCopied(true);
+    setTimeout(() => setWtCopied(false), 2500);
+  };
+
+  const hSpCopy = () => {
+    handleSpCopyPrompt();
+    setSpCopied(true);
+    setTimeout(() => setSpCopied(false), 2500);
+  };
+
+  const hSpStartRec = startRecording;
+  const hSpStopRec = stopRecording;
+
+  const hRdSk = () => advance('reading', { skipped: true });
+  const hRdN = () => {
+    setRrq(0); setRrc(0); setRra({}); setRrcorr({});
+    advance('reading', {});
+  };
+  const hRdA = (qIdx, answer) => {
     const items = readingData[lvl] || [];
     const ni = state.levels?.[lvl]?.reading?.length || 0;
     const item = items[ni];
-    if (item) {
+    if (!item) return;
+    const q = item.questions?.[qIdx];
+    if (!q) return;
+    const correct = q.type === 'true-false'
+      ? String(answer).toLowerCase() === String(q.answer).toLowerCase()
+      : String(answer).toLowerCase().trim() === String(q.answer).toLowerCase().trim();
+    setRra(prev => ({ ...prev, [qIdx]: answer }));
+    setRrcorr(prev => ({ ...prev, [qIdx]: correct }));
+    if (correct) setRrc(c => c + 1);
+    if (qIdx + 1 < (item.questions?.length || 0)) {
+      setRrq(qIdx + 1);
+    } else {
+      const totalQ = item.questions.length;
+      const allCorrect = rrc + (correct ? 1 : 0);
       const existing = (state.levels?.[lvl]?.reading || []).filter((x) => x !== item.id);
       updateLevelProgress(lvl, 'reading', [item.id, ...existing]);
+      const cs = getState();
+      const ld = cs.levels || {};
+      const ll = ld[lvl] || {};
+      updateState({ levels: { ...ld, [lvl]: { ...ll, readingResults: { ...(ll.readingResults || {}), [item.id]: { completed: true, correct: allCorrect, total: totalQ, date: new Date().toISOString() } } } } });
       refresh();
+      setRdDone(true);
     }
-    setRdDone(true);
   };
-  const hRdSk = () => advance('reading', { skipped: true });
-  const hRdN = () => advance('reading', {});
 
+  const handleCopyPrompt = () => {
+    const items = writingData[lvl] || [];
+    const ni = (getState().writings || []).filter((w) => w.level === lvl).length - 1;
+    const item = ni >= 0 && ni < items.length ? items[ni] : null;
+    const written = wtText;
+    const prompt = 'I am learning German at CEFR level ' + lvl + '. Please review my German writing and provide feedback.\n\nTASK: ' + (item?.prompt || 'Writing task') + '\nINSTRUCTIONS: ' + (item?.instructions || '') + '\n\nMY WRITING:\n' + written + '\n\nPlease provide:\n1. A corrected version of my text\n2. Grammar mistakes: For each mistake, show the original phrase, the correction, and a short explanation in English\n3. Vocabulary suggestions: Any better word choices\n4. Overall feedback: 2-3 sentences about what I did well and what to improve\n5. A simplified version at A2 level (if my writing is B1 or above)\n\nPlease keep your feedback encouraging and focus on the most important improvements.';
+    try { navigator.clipboard.writeText(prompt); } catch(e) {}
+  };
   const hWt = () => {
     const cs = getState();
     const items = writingData[lvl] || [];
@@ -330,25 +441,60 @@ export default function DailyMissionPage() {
       updateState({ writings: ws2 });
       setLS({ ...cs, writings: ws2 });
     }
+    setWritingPrompt(item || null);
     setWtDone(true);
   };
   const hWtSk = () => advance('writing', { skipped: true });
-  const hWtN = () => { setWtText(''); advance('writing', {}); };
+  const hWtN = () => { setWtText(''); setWritingPrompt(null); advance('writing', {}); };
 
+  const handleSpCopyPrompt = () => {
+    const items = speakingData[lvl] || [];
+    const ni = (getState().speakingRecordings?.[lvl]?.length || 0) - 1;
+    const item = ni >= 0 && ni < items.length ? items[ni] : null;
+    const spoken = spText;
+    const prompt = 'I am learning German at CEFR level ' + lvl + '. This is my spoken response to a speaking task. Please review my spoken German and provide feedback.\n\nTASK: ' + (item?.prompt || 'Speaking task') + '\nINSTRUCTIONS: ' + (item?.instructions || '') + '\n\nMY SPOKEN RESPONSE (SCRIPT):\n' + spoken + '\n\nPlease provide:\n1. A corrected version of my script\n2. Grammar mistakes with corrections and explanations\n3. Pronunciation notes (any difficult sounds, word stress)\n4. Natural alternative phrasings a native speaker would use\n5. Overall feedback: 2-3 sentences about what I did well and what to improve\n\nKeep your feedback encouraging.';
+    try { navigator.clipboard.writeText(prompt); } catch(e) {}
+  };
+  const startRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mediaRecorder = new MediaRecorder(stream);
+      const chunks = [];
+      mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'audio/webm' });
+        setSpRecBlob(URL.createObjectURL(blob));
+        setSpRecState('done');
+        stream.getTracks().forEach(t => t.stop());
+      };
+      mediaRecorder.start();
+      setSpRecState('recording');
+      window.__dmpRecorder = mediaRecorder;
+    } catch(e) {
+      console.warn('Microphone access denied:', e);
+    }
+  };
+  const stopRecording = () => {
+    if (window.__dmpRecorder) {
+      window.__dmpRecorder.stop();
+      window.__dmpRecorder = null;
+    }
+  };
   const hSp = () => {
     const cs = getState();
     const items = speakingData[lvl] || [];
     const ni = (cs.speakingRecordings?.[lvl]?.length || 0);
     const item = items[ni];
     if (item) {
-      const recs = [...(cs.speakingRecordings?.[lvl] || []), { id: item.id, title: item.title, script: spText, date: new Date().toISOString() }];
+      const recs = [...(cs.speakingRecordings?.[lvl] || []), { id: item.id, title: item.title, script: spText, recordingUrl: spRecBlob, date: new Date().toISOString() }];
       updateState({ speakingRecordings: { ...(cs.speakingRecordings || {}), [lvl]: recs } });
       setLS({ ...cs, speakingRecordings: { ...(cs.speakingRecordings || {}), [lvl]: recs } });
     }
+    setSpeakingPrompt(item || null);
     setSpDone(true);
   };
   const hSpSk = () => advance('speaking', { skipped: true });
-  const hSpN = () => { setSpText(''); advance('speaking', {}); };
+  const hSpN = () => { setSpText(''); setSpRecBlob(null); setSpRecState('idle'); setSpeakingPrompt(null); advance('speaking', {}); };
 
   // ─── COMPLETION SCREEN ───
   if (compShow) {
@@ -434,6 +580,12 @@ export default function DailyMissionPage() {
   const meta = getMeta();
   const cm = getCm();
 
+  // Current mission items from data
+  const listeningItem = cm.type === 'listening' ? getNextListening(lvl) : null;
+  const readingItem = cm.type === 'reading' ? getNextReading(lvl) : null;
+  const writingItem = cm.type === 'writing' ? getNextWriting(lvl) : null;
+  const speakingItem = cm.type === 'speaking' ? getNextSpeaking(lvl) : null;
+
   // Style objects
   const sCard = { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' };
   const sBtn = { padding: '0.6rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' };
@@ -477,28 +629,56 @@ export default function DailyMissionPage() {
             ) : (
               <div>
                 <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>{cm.nextLesson?.title || 'Lesson'}</h3>
-                {cm.nextLesson?.explanation && (
+                {fullLesson?.explanation && (
                   <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
                     <strong style={{ color: 'var(--accent)' }}>Explanation:</strong>
-                    <p style={{ marginTop: '0.3rem', color: 'var(--text-secondary)' }}>{cm.nextLesson.explanation}</p>
+                    <p style={{ marginTop: '0.3rem', color: 'var(--text-secondary)' }}>{fullLesson.explanation}</p>
                   </div>
                 )}
-                {cm.nextLesson?.examples?.length > 0 && (
+                {fullLesson?.examples?.length > 0 && (
                   <div style={{ marginBottom: '0.75rem' }}>
                     <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Examples:</strong>
                     <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
-                      {cm.nextLesson.examples.slice(0, 5).map((e, i) => <li key={i}>{e}</li>)}
+                      {fullLesson.examples.slice(0, 6).map((e, i) => <li key={i}>{e}</li>)}
                     </ul>
                   </div>
                 )}
-                {cm.nextLesson?.grammarFocus && (
+                {fullLesson?.grammarFocus && (
                   <div style={{ background: 'rgba(245,158,11,0.1)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
-                    <strong style={{ color: '#f59e0b' }}>Grammar Focus: </strong><span style={{ color: 'var(--text-secondary)' }}>{cm.nextLesson.grammarFocus}</span>
+                    <strong style={{ color: '#f59e0b' }}>Grammar Focus: </strong><span style={{ color: 'var(--text-secondary)' }}>{fullLesson.grammarFocus}</span>
                   </div>
                 )}
-                {cm.nextLesson?.reviewSummary && (
+                {/* Vocabulary */}
+                {fullLesson?.vocabulary?.length > 0 && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Key Vocabulary:</strong>
+                    <div style={{ marginTop: '0.3rem', fontSize: '0.85rem' }}>
+                      {fullLesson.vocabulary.slice(0, 6).map((v, i) => (
+                        <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.25rem 0.4rem', background: i % 2 === 0 ? 'var(--bg-secondary)' : 'transparent', borderRadius: '4px', marginBottom: '0.15rem' }}>
+                          <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{v.word}</span>
+                          <span style={{ color: 'var(--text-secondary)' }}>{v.translation}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {/* Guided Practice */}
+                {fullLesson?.guidedPractice?.length > 0 && (
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Practice Questions:</strong>
+                    <div style={{ marginTop: '0.3rem', fontSize: '0.85rem' }}>
+                      {fullLesson.guidedPractice.slice(0, 3).map((p, i) => (
+                        <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(59,130,246,0.08)', borderRadius: '6px', marginBottom: '0.3rem' }}>
+                          <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{p.prompt}</p>
+                          <p style={{ color: '#059669', fontStyle: 'italic' }}>Answer: {p.answer}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {fullLesson?.reviewSummary && (
                   <div style={{ background: 'rgba(16,185,129,0.1)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
-                    <strong style={{ color: '#10b981' }}>Summary: </strong><span style={{ color: 'var(--text-secondary)' }}>{cm.nextLesson.reviewSummary}</span>
+                    <strong style={{ color: '#10b981' }}>Summary: </strong><span style={{ color: 'var(--text-secondary)' }}>{fullLesson.reviewSummary}</span>
                   </div>
                 )}
                 <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
@@ -633,159 +813,351 @@ export default function DailyMissionPage() {
         );
       })()}
 
-      {/* LISTENING */}
-      {cm.type === 'listening' && !lrnDone && (
-        <div style={sCard}>
-          {(listeningData[lvl] || []).length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-              <Headphones size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No listening exercises available for {lvl} yet.</p>
-              <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
+      {/* ───── LISTENING MISSION ───── */}
+      {cm.type === 'listening' && !lrnDone && (() => {
+        const items = listeningData[lvl] || [];
+        const ni = state.levels?.[lvl]?.listening?.length || 0;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const qs = item?.questions || [];
+        if (!item || items.length === 0) {
+          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
+            <Headphones size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No listening exercises available for {lvl} yet.</p>
+            <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
+          </div></div>;
+        }
+        const qIdx = lrq;
+        const q = qs[qIdx];
+        if (lrq >= qs.length) return null;
+        if (!q) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading question...</p></div>;
+        
+        const qHasAns = lra[String(qIdx)] !== undefined;
+        const qUserAns = lra[String(qIdx)];
+        const qCorrect = lrcorr[String(qIdx)];
+        
+        const optBtn = (ov) => ({
+          ...(qHasAns
+            ? (String(ov) === String(q.answer)
+                ? { ...sos, borderColor: '#22c55e', color: '#22c55e', background: 'rgba(34,197,94,0.08)' }
+                : String(qUserAns) === String(ov)
+                  ? { ...so, borderColor: '#ef4444', color: '#ef4444', background: 'rgba(239,68,68,0.08)' }
+                  : so)
+            : (qUserAns === ov ? sos : so))
+        });
+        
+        return (
+          <div style={sCard}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)' }}>{item.title}</h3>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Q {qIdx + 1} of {qs.length}</span>
             </div>
-          ) : (
-            <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
-                {(listeningData[lvl]?.[state.levels?.[lvl]?.listening?.length || 0])?.title || 'Listening Exercise'}
-              </h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-                {(listeningData[lvl]?.[state.levels?.[lvl]?.listening?.length || 0])?.description || 'Complete the next available listening exercise.'}
-              </p>
-              <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {(listeningData[lvl]?.[state.levels?.[lvl]?.listening?.length || 0])?.instructions || 'Read the transcript or listen to the audio, then answer the questions.'}
+            {ttsAvailable && (
+              <div style={{ marginBottom: '0.75rem' }}>
+                <button style={{ ...sBtn, fontSize: '0.8rem' }} onClick={() => { window.speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(item.script); u.lang = 'de-DE'; u.rate = 0.85; window.speechSynthesis.speak(u); }}>
+                  <Volume2 size={14} /> Read Aloud
+                </button>
               </div>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <button style={sBp} onClick={hLrn}><CheckCircle size={16} /> Mark Complete</button>
-                <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
-              </div>
+            )}
+            <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)', fontStyle: 'italic', lineHeight: '1.5' }}>
+              &quot;{item.script}&quot;
             </div>
-          )}
-        </div>
-      )}
-      {cm.type === 'listening' && lrnDone && (
-        <div style={{ ...sCard, textAlign: 'center' }}>
-          <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
-          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>Listening Complete!</h3>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Listening exercise completed for {lvl}.</p>
-          <button style={sBp} onClick={hLrnN}>Next Mission <ChevronRight size={16} /></button>
-        </div>
-      )}
+            <div style={{ marginBottom: '0.75rem' }}>
+              <p style={{ fontSize: '0.9rem', fontWeight: 500, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>{q.question}</p>
+              {q.type === 'true-false' ? (
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {['true', 'false'].map((v) => (
+                    <button key={v} style={optBtn(v)} onClick={() => { if (!qHasAns) hLrnA(qIdx, v); }} disabled={qHasAns}>
+                      {v === 'true' ? 'True' : 'False'}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div>
+                  {(q.options || []).map((o, i) => (
+                    <button key={i} style={optBtn(o)} onClick={() => { if (!qHasAns) hLrnA(qIdx, o); }} disabled={qHasAns}>
+                      {o}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {qHasAns && (
+                <div style={{ marginTop: '0.75rem', padding: '0.6rem', borderRadius: '6px', background: qCorrect ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)', textAlign: 'center' }}>
+                  <div style={{ fontSize: '0.9rem', fontWeight: 700, color: qCorrect ? '#22c55e' : '#ef4444', marginBottom: '0.3rem' }}>
+                    {qCorrect ? 'Correct!' : 'Incorrect'}
+                  </div>
+                  {!qCorrect && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Correct answer: {q.answer}</p>}
+                  {qCorrect && qIdx + 1 >= qs.length && (
+                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => setLrnDone(true)}>See Results <ChevronRight size={14} /></button>
+                  )}
+                  {!qCorrect && (
+                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => {
+                      setLrc(prev => prev + 1);
+                      if (qIdx + 1 < qs.length) setLrq(qIdx + 1);
+                      else setLrnDone(true);
+                    }}>{qIdx + 1 < qs.length ? 'Next Question' : 'See Results'} <ChevronRight size={14} /></button>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })()}
+      {cm.type === 'listening' && lrnDone && (() => {
+        const items = listeningData[lvl] || [];
+        const ni = state.levels?.[lvl]?.listening?.length || 0;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const qs = item?.questions || [];
+        const wrong = qs.length - lrc;
+        return (
+          <div style={{ ...sCard, textAlign: 'center' }}>
+            <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>{item?.title || 'Listening Complete'}</h3>
+            <div style={{ fontSize: '1.5rem', fontWeight: 800, color: lrc >= qs.length * 0.6 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{lrc}/{qs.length}</div>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {lrc} | Wrong: {wrong}</p>
+            <button style={sBp} onClick={hLrnN}>Next Mission <ChevronRight size={16} /></button>
+          </div>
+        );
+      })()}
 
-      {/* READING */}
-      {cm.type === 'reading' && !rdDone && (
-        <div style={sCard}>
-          {(readingData[lvl] || []).length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-              <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No reading exercises available for {lvl} yet.</p>
-              <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
+      {/* ───── READING MISSION ───── */}
+      {cm.type === 'reading' && !rdDone && (() => {
+        const items = readingData[lvl] || [];
+        const ni = state.levels?.[lvl]?.reading?.length || 0;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const qs = item?.questions || [];
+        if (!item || items.length === 0) {
+          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
+            <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No reading exercises available for {lvl} yet.</p>
+            <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
+          </div></div>;
+        }
+        const qIdx = rrq;
+        const q = qs[qIdx];
+        if (rrq >= qs.length) return null;
+        if (!q) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading question...</p></div>;
+        
+        const qHasAns = rra[String(qIdx)] !== undefined;
+        const qUserAns = rra[String(qIdx)];
+        const qCorrect = rrcorr[String(qIdx)];
+        
+        const optBtn = (ov) => ({
+          ...(qHasAns
+            ? (String(ov) === String(q.answer)
+                ? { ...sos, borderColor: '#22c55e', color: '#22c55e', background: 'rgba(34,197,94,0.08)' }
+                : String(qUserAns) === String(ov)
+                  ? { ...so, borderColor: '#ef4444', color: '#ef4444', background: 'rgba(239,68,68,0.08)' }
+                  : so)
+            : (qUserAns === ov ? sos : so))
+        });
+        
+        return (
+          <div style={sCard}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)' }}>{item.title}</h3>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Q {qIdx + 1} of {qs.length}</span>
             </div>
-          ) : (
-            <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
-                {(readingData[lvl]?.[state.levels?.[lvl]?.reading?.length || 0])?.title || 'Reading Exercise'}
-              </h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-                {(readingData[lvl]?.[state.levels?.[lvl]?.reading?.length || 0])?.description || 'Complete the next available reading exercise.'}
-              </p>
-              <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {(readingData[lvl]?.[state.levels?.[lvl]?.reading?.length || 0])?.instructions || 'Read the text and answer the comprehension questions.'}
-              </div>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <button style={sBp} onClick={hRd}><CheckCircle size={16} /> Mark Complete</button>
-                <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
-              </div>
+            <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              {item.passage}
             </div>
-          )}
-        </div>
-      )}
-      {cm.type === 'reading' && rdDone && (
-        <div style={{ ...sCard, textAlign: 'center' }}>
-          <FileText size={36} style={{ color: '#8b5cf6', marginBottom: '0.75rem' }} />
-          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.5rem' }}>Reading Complete!</h3>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Reading exercise completed for {lvl}.</p>
-          <button style={sBp} onClick={hRdN}>Next Mission <ChevronRight size={16} /></button>
-        </div>
-      )}
+            <div style={{ marginBottom: '0.75rem' }}>
+              <p style={{ fontSize: '0.9rem', fontWeight: 500, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>{q.question}</p>
+              {q.type === 'true-false' ? (
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {['true', 'false'].map((v) => (
+                    <button key={v} style={optBtn(v)} onClick={() => { if (!qHasAns) hRdA(qIdx, v); }} disabled={qHasAns}>
+                      {v === 'true' ? 'True' : 'False'}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div>
+                  {(q.options || []).map((o, i) => (
+                    <button key={i} style={optBtn(o)} onClick={() => { if (!qHasAns) hRdA(qIdx, o); }} disabled={qHasAns}>
+                      {o}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {qHasAns && (
+                <div style={{ marginTop: '0.75rem', padding: '0.6rem', borderRadius: '6px', background: qCorrect ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)', textAlign: 'center' }}>
+                  <div style={{ fontSize: '0.9rem', fontWeight: 700, color: qCorrect ? '#22c55e' : '#ef4444', marginBottom: '0.3rem' }}>
+                    {qCorrect ? 'Correct!' : 'Incorrect'}
+                  </div>
+                  {!qCorrect && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.3rem' }}>Correct answer: {q.answer}</p>}
+                  {qCorrect && qIdx + 1 >= qs.length && (
+                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => setRdDone(true)}>See Results <ChevronRight size={14} /></button>
+                  )}
+                  {!qCorrect && (
+                    <button style={{ ...sBp, marginTop: '0.3rem' }} onClick={() => {
+                      setRrc(prev => prev + 1);
+                      if (qIdx + 1 < qs.length) setRrq(qIdx + 1);
+                      else setRdDone(true);
+                    }}>{qIdx + 1 < qs.length ? 'Next Question' : 'See Results'} <ChevronRight size={14} /></button>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })()}
+      {cm.type === 'reading' && rdDone && (() => {
+        const items = readingData[lvl] || [];
+        const ni = state.levels?.[lvl]?.reading?.length || 0;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        const qs = item?.questions || [];
+        const wrong = qs.length - rrc;
+        return (
+          <div style={{ ...sCard, textAlign: 'center' }}>
+            <FileText size={36} style={{ color: '#8b5cf6', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.5rem' }}>{item?.title || 'Reading Complete'}</h3>
+            <div style={{ fontSize: '1.5rem', fontWeight: 800, color: rrc >= qs.length * 0.6 ? '#22c55e' : '#f59e0b', marginBottom: '0.5rem' }}>{rrc}/{qs.length}</div>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {rrc} | Wrong: {wrong}</p>
+            <button style={sBp} onClick={hRdN}>Next Mission <ChevronRight size={16} /></button>
+          </div>
+        );
+      })()}
 
-      {/* WRITING */}
-      {cm.type === 'writing' && !wtDone && (
-        <div style={sCard}>
-          {(writingData[lvl] || []).length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-              <PenTool size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No writing tasks available for {lvl} yet.</p>
+      {/* ───── WRITING MISSION ───── */}
+      {cm.type === 'writing' && !wtDone && (() => {
+        const items = writingData[lvl] || [];
+        const ni = (getState().writings || []).filter((w) => w.level === lvl).length;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        if (!item || items.length === 0) {
+          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
+            <PenTool size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No writing tasks available for {lvl} yet.</p>
+            <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
+          </div></div>;
+        }
+        return (
+          <div style={sCard}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{item.title}</h3>
+            {item.instructions && (
+              <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                {item.instructions}
+              </div>
+            )}
+            <div style={{ background: 'rgba(236,72,153,0.08)', padding: '0.7rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: '#ec4899' }}>Prompt: </strong>
+              <span style={{ color: 'var(--text-secondary)' }}>{item.prompt}</span>
+            </div>
+            {item.wordLimit && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>Word limit: {item.wordLimit} words</p>}
+            {item.tips && <p style={{ fontSize: '0.8rem', color: '#10b981', marginBottom: '0.5rem' }}>Tip: {item.tips}</p>}
+            <textarea
+              style={{ width: '100%', minHeight: '140px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
+              value={wtText}
+              onChange={(e) => setWtText(e.target.value)}
+              placeholder={'Write your ' + lvl + '-level German response here...'}
+            />
+            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+              <button style={sBp} onClick={hWt} disabled={!wtText.trim()}><CheckCircle size={16} /> Submit Writing</button>
               <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-          ) : (
-            <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-                {(writingData[lvl]?.[(getState().writings || []).filter(w => w.level === lvl).length])?.title || 'Writing Task'}
-              </h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>
-                {(writingData[lvl]?.[(getState().writings || []).filter(w => w.level === lvl).length])?.prompt || 'Write a response to complete this task.'}
-              </p>
-              <textarea
-                style={{ width: '100%', minHeight: '120px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
-                value={wtText}
-                onChange={(e) => setWtText(e.target.value)}
-                placeholder='Type your response here...'
-              />
-              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
-                <button style={sBp} onClick={hWt} disabled={!wtText.trim()}><CheckCircle size={16} /> Submit Writing</button>
-                <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-      {cm.type === 'writing' && wtDone && (
-        <div style={{ ...sCard, textAlign: 'center' }}>
-          <PenTool size={36} style={{ color: '#ec4899', marginBottom: '0.75rem' }} />
-          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.5rem' }}>Writing Submitted!</h3>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your writing has been saved for review.</p>
-          <button style={sBp} onClick={hWtN}>Next Mission <ChevronRight size={16} /></button>
-        </div>
-      )}
+          </div>
+        );
+      })()}
+      {cm.type === 'writing' && wtDone && (() => {
+        const items = writingData[lvl] || [];
+        const ni = (getState().writings || []).filter((w) => w.level === lvl).length - 1;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        return (
+          <div style={{ ...sCard, textAlign: 'center' }}>
+            <PenTool size={36} style={{ color: '#ec4899', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.5rem' }}>Writing Submitted!</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your writing has been saved for review.</p>
+            <button style={{ ...sBp, marginBottom: '0.5rem' }} onClick={handleCopyPrompt}><Copy size={14} /> Copy AI Correction Prompt</button>
+            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Paste this into ChatGPT or Claude to get corrections on your writing.</p>
+            <button style={sBp} onClick={hWtN}>Next Mission <ChevronRight size={16} /></button>
+          </div>
+        );
+      })()}
 
-      {/* SPEAKING */}
-      {cm.type === 'speaking' && !spDone && (
-        <div style={sCard}>
-          {(speakingData[lvl] || []).length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-              <Mic size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No speaking tasks available for {lvl} yet.</p>
+      {/* ───── SPEAKING MISSION ───── */}
+      {cm.type === 'speaking' && !spDone && (() => {
+        const items = speakingData[lvl] || [];
+        const ni = (getState().speakingRecordings?.[lvl]?.length || 0);
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        if (!item || items.length === 0) {
+          return <div style={sCard}><div style={{ textAlign: 'center', padding: '1rem 0' }}>
+            <Mic size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>No speaking tasks available for {lvl} yet.</p>
+            <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
+          </div></div>;
+        }
+        return (
+          <div style={sCard}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{item.title}</h3>
+            {item.instructions && (
+              <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                {item.instructions}
+              </div>
+            )}
+            <div style={{ background: 'rgba(249,115,22,0.08)', padding: '0.7rem 0.8rem', borderRadius: '6px', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: '#f97316' }}>Prompt: </strong>
+              <span style={{ color: 'var(--text-secondary)' }}>{item.prompt}</span>
+            </div>
+            {item.prepTime && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>Preparation time: {item.prepTime}</p>}
+            {item.talkTime && <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>Speaking time: {item.talkTime}</p>}
+            {item.tips && <p style={{ fontSize: '0.8rem', color: '#10b981', marginBottom: '0.3rem' }}>Tip: {item.tips}</p>}
+            {item.usefulPhrases?.length > 0 && (
+              <div style={{ marginBottom: '0.5rem' }}>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>Useful phrases:</p>
+                <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+                  {item.usefulPhrases.slice(0, 4).map((p, i) => (
+                    <span key={i} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', fontSize: '0.75rem', background: 'rgba(249,115,22,0.1)', color: '#f97316' }}>{p}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {/* Recording */}
+            <div style={{ marginBottom: '0.5rem' }}>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.4rem' }}>Record your response:</p>
+              {spRecState === 'idle' && (
+                <button style={sBtn} onClick={startRecording}><Play size={14} /> Start Recording</button>
+              )}
+              {spRecState === 'recording' && (
+                <div>
+                  <span style={{ display: 'inline-block', color: '#ef4444', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.3rem' }}>Recording...</span>
+                  <button style={{ ...sBtn, borderColor: '#ef4444', color: '#ef4444' }} onClick={stopRecording}>Stop Recording</button>
+                </div>
+              )}
+              {spRecState === 'done' && spRecBlob && (
+                <div>
+                  <audio src={spRecBlob} controls style={{ width: '100%', marginBottom: '0.3rem' }} />
+                  <p style={{ fontSize: '0.75rem', color: '#22c55e' }}>Recording saved</p>
+                </div>
+              )}
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.3rem' }}>Or type your response below:</p>
+            </div>
+            <textarea
+              style={{ width: '100%', minHeight: '100px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
+              value={spText}
+              onChange={(e) => setSpText(e.target.value)}
+              placeholder={'Type your ' + lvl + '-level response here...'}
+            />
+            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+              <button style={sBp} onClick={hSp} disabled={!spText.trim() && spRecState !== 'done'}><CheckCircle size={16} /> Submit Response</button>
               <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
             </div>
-          ) : (
-            <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-                {(speakingData[lvl]?.[(state.speakingRecordings?.[lvl]?.length || 0)])?.title || 'Speaking Task'}
-              </h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>
-                {(speakingData[lvl]?.[(state.speakingRecordings?.[lvl]?.length || 0)])?.prompt || 'Record your response to complete this task.'}
-              </p>
-              <textarea
-                style={{ width: '100%', minHeight: '120px', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
-                value={spText}
-                onChange={(e) => setSpText(e.target.value)}
-                placeholder='Type your response here...'
-              />
-              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
-                <button style={sBp} onClick={hSp} disabled={!spText.trim()}><CheckCircle size={16} /> Submit Script</button>
-                <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-      {cm.type === 'speaking' && spDone && (
-        <div style={{ ...sCard, textAlign: 'center' }}>
-          <Mic size={36} style={{ color: '#f97316', marginBottom: '0.75rem' }} />
-          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#f97316', marginBottom: '0.5rem' }}>Speaking Submitted!</h3>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your speaking script has been saved for review.</p>
-          <button style={sBp} onClick={hSpN}>Next Mission <ChevronRight size={16} /></button>
-        </div>
-      )}
+          </div>
+        );
+      })()}
+      {cm.type === 'speaking' && spDone && (() => {
+        const items = speakingData[lvl] || [];
+        const ni = (getState().speakingRecordings?.[lvl]?.length || 0) - 1;
+        const item = (ni >= 0 && ni < items.length) ? items[ni] : null;
+        return (
+          <div style={{ ...sCard, textAlign: 'center' }}>
+            <Mic size={36} style={{ color: '#f97316', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#f97316', marginBottom: '0.5rem' }}>Speaking Submitted!</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Your speaking response has been saved.</p>
+            <button style={{ ...sBp, marginBottom: '0.5rem' }} onClick={handleSpCopyPrompt}><Copy size={14} /> Copy AI Feedback Prompt</button>
+            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Paste this into ChatGPT or Claude to get corrections on your spoken German.</p>
+            <button style={sBp} onClick={hSpN}>Next Mission <ChevronRight size={16} /></button>
+          </div>
+        );
+      })()}
     </div>
   </LevelLock>
 );
