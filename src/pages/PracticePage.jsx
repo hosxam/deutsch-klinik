@@ -227,6 +227,103 @@ export default function PracticePage() {
     tag: { display: 'inline-block', padding: '0.2rem 0.6rem', borderRadius: '9999px', fontSize: '0.75rem', background: 'var(--bg-secondary)', color: 'var(--text-secondary)' },
   };
 
+  // Generate questions when starting
+  const startPractice = useCallback(() => {
+    let qs = [];
+    if (mode === 'article') {
+      qs = getArticleQuestions(selectedLevel, selectedTopic);
+    } else if (mode === 'plural') {
+      qs = getPluralQuestions(selectedLevel, selectedTopic);
+    } else if (mode === 'fillblank') {
+      qs = getFillBlankQuestions(selectedLevel, selectedTopic);
+    }
+
+    qs = shuffleArray(qs);
+    setQuestions(qs.slice(0, questionCount));
+    setCurrentIndex(0);
+    setScore(0);
+    setTotalAnswered(0);
+    setResult(null);
+    setUserAnswer('');
+    setShowHint(false);
+    setQuizDone(false);
+    setMistakes([]);
+    setSessionResults([]);
+    setReviewingMistakes(false);
+  }, [mode, selectedLevel, selectedTopic, questionCount]);
+
+  // Review mistakes only mode
+  const [reviewingMistakes, setReviewingMistakes] = useState(false);
+
+  const questionsReady = questions.length > 0;
+  const currentQ = questionsReady ? questions[currentIndex] : null;
+  const totalQ = questions.length;
+  const isMultiChoiceArticle = mode === 'article';
+
+  const handleSubmitAnswer = () => {
+    if (result) return;
+
+    let isCorrect = false;
+    const normalizedUser = normalizeAnswer(userAnswer);
+    const normalizedCorrect = normalizeAnswer(currentQ.answer);
+
+    if (isMultiChoiceArticle) {
+      isCorrect = userAnswer.toLowerCase() === currentQ.answer;
+    } else {
+      isCorrect = normalizedUser === normalizedCorrect ||
+                  normalizedUser === normalizedCorrect.replace(/^die\s+/i, '') ||
+                  normalizedUser === normalizedCorrect.replace(/^der\s+/i, '') ||
+                  normalizedUser === normalizedCorrect.replace(/^das\s+/i, '');
+    }
+
+    setResult(isCorrect ? 'correct' : 'wrong');
+    setScore(prev => isCorrect ? prev + 1 : prev);
+    setTotalAnswered(prev => prev + 1);
+
+    if (!isCorrect) {
+      setMistakes(prev => [...prev, {
+        question: currentQ,
+        userAnswer,
+        correctAnswer: currentQ.answer,
+      }]);
+    }
+
+    setSessionResults(prev => [...prev, { id: currentQ.id, correct: isCorrect }]);
+
+    const sourceWord = currentQ.sourceWord;
+    if (sourceWord && sourceWord.id) {
+      const wordId = `${sourceWord._level || selectedLevel}_${sourceWord.id}`;
+      recordVocabAnswer(wordId, isCorrect);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentIndex < totalQ - 1) {
+      setCurrentIndex(prev => prev + 1);
+      setUserAnswer('');
+      setResult(null);
+      setShowHint(false);
+    } else {
+      setQuizDone(true);
+      updateLevelProgress(selectedLevel, 'vocab', {
+        date: new Date().toISOString(),
+        score,
+        total: totalQ,
+        mode,
+      });
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !result) {
+      if (userAnswer.trim()) {
+        handleSubmitAnswer();
+      }
+    } else if (e.key === 'Enter' && result) {
+      handleNext();
+    }
+  };
+
   // Mode selector
   if (!mode) {
     // Check question availability per level & topic & mode
@@ -463,34 +560,7 @@ export default function PracticePage() {
     );
   }
 
-  // Generate questions when starting
-  const startPractice = useCallback(() => {
-    let qs = [];
-    if (mode === 'article') {
-      qs = getArticleQuestions(selectedLevel, selectedTopic);
-    } else if (mode === 'plural') {
-      qs = getPluralQuestions(selectedLevel, selectedTopic);
-    } else if (mode === 'fillblank') {
-      qs = getFillBlankQuestions(selectedLevel, selectedTopic);
-    }
-
-    qs = shuffleArray(qs);
-    setQuestions(qs.slice(0, questionCount));
-    setCurrentIndex(0);
-    setScore(0);
-    setTotalAnswered(0);
-    setResult(null);
-    setUserAnswer('');
-    setShowHint(false);
-    setQuizDone(false);
-    setMistakes([]);
-    setSessionResults([]);
-    setReviewingMistakes(false);
-  }, [mode, selectedLevel, selectedTopic, questionCount]);
-
   // Auto-start on mode select
-  const questionsReady = questions.length > 0;
-
   if (!questionsReady) {
     // Generate on first render
     const qs = (() => {
@@ -514,79 +584,6 @@ export default function PracticePage() {
       );
     }
   }
-
-  const currentQ = questions[currentIndex];
-  const totalQ = questions.length;
-  const isMultiChoiceArticle = mode === 'article';
-
-  const handleSubmitAnswer = () => {
-    if (result) return; // already answered
-
-    let isCorrect = false;
-    const normalizedUser = normalizeAnswer(userAnswer);
-    const normalizedCorrect = normalizeAnswer(currentQ.answer);
-
-    if (isMultiChoiceArticle) {
-      isCorrect = userAnswer.toLowerCase() === currentQ.answer;
-    } else {
-      isCorrect = normalizedUser === normalizedCorrect ||
-                  normalizedUser === normalizedCorrect.replace(/^die\s+/i, '') ||
-                  normalizedUser === normalizedCorrect.replace(/^der\s+/i, '') ||
-                  normalizedUser === normalizedCorrect.replace(/^das\s+/i, '');
-    }
-
-    setResult(isCorrect ? 'correct' : 'wrong');
-    setScore(prev => isCorrect ? prev + 1 : prev);
-    setTotalAnswered(prev => prev + 1);
-
-    if (!isCorrect) {
-      setMistakes(prev => [...prev, {
-        question: currentQ,
-        userAnswer,
-        correctAnswer: currentQ.answer,
-      }]);
-    }
-
-    setSessionResults(prev => [...prev, { id: currentQ.id, correct: isCorrect }]);
-
-    // Record in vocabulary mastery using the source word's ID
-    const sourceWord = currentQ.sourceWord;
-    if (sourceWord && sourceWord.id) {
-      const wordId = `${sourceWord._level || selectedLevel}_${sourceWord.id}`;
-      recordVocabAnswer(wordId, isCorrect);
-    }
-  };
-
-  const handleNext = () => {
-    if (currentIndex < totalQ - 1) {
-      setCurrentIndex(prev => prev + 1);
-      setUserAnswer('');
-      setResult(null);
-      setShowHint(false);
-    } else {
-      // Practice done
-      setQuizDone(true);
-      updateLevelProgress(selectedLevel, 'vocab', {
-        date: new Date().toISOString(),
-        score,
-        total: totalQ,
-        mode,
-      });
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && !result) {
-      if (userAnswer.trim()) {
-        handleSubmitAnswer();
-      }
-    } else if (e.key === 'Enter' && result) {
-      handleNext();
-    }
-  };
-
-  // Review mistakes only mode
-  const [reviewingMistakes, setReviewingMistakes] = useState(false);
 
   const modeLabelForExport = PRACTICE_MODES.find(m => m.key === mode)?.label || mode;
   const topicLabelForExport = selectedTopic === 'all' ? 'All topics' : selectedTopic;
