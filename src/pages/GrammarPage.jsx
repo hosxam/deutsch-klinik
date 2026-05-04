@@ -1,9 +1,14 @@
-import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { getState, updateLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel } from '../utils/store';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
+import { useState, useEffect, useMemo } from 'react';
+import { getState, updateLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
 import grammarData from '../data/grammar.json';
 import LevelLock from '../components/LevelLock';
 import { CheckCircle, XCircle, AlertTriangle, RotateCcw, BookOpen } from 'lucide-react';
+
+/** Normalize a typed answer for comparison: trim whitespace, lowercase, remove trailing punctuation */
+function normalizeAnswer(str) {
+  return (str || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '');
+}
 
 const typeLabels = {
   'fill-blank': 'Fill in the Blank',
@@ -16,7 +21,19 @@ const typeLabels = {
 
 export default function GrammarPage() {
   const { levelId } = useParams();
-  const exercises = grammarData[levelId] || [];
+  const [searchParams] = useSearchParams();
+  const isDaily = searchParams.get('daily') === '1';
+  const dailyLimit = parseInt(searchParams.get('limit') || '5', 10);
+
+  // In daily mode, show only the first incomplete exercises up to the limit
+  const exercises = useMemo(() => {
+    const all = grammarData[levelId] || [];
+    if (!isDaily) return all;
+    // Find the first N exercises that haven't been mastered yet
+    const incomplete = all.filter(ex => !getGrammarMastery(ex.id).mastered);
+    return incomplete.length > 0 ? incomplete.slice(0, dailyLimit) : all.slice(0, dailyLimit);
+  }, [levelId, isDaily, dailyLimit]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(null);
@@ -48,17 +65,29 @@ export default function GrammarPage() {
     );
   }
 
+  // Shared answer handler for both MCQ and fill-blank
   const handleAnswer = (ans) => {
     if (showResult) return;
-    const correct = ans.trim().toLowerCase() === ex.answer.trim().toLowerCase();
+    // Use normalizeAnswer for fill-blank input, exact match for option-based types
+    const correct = (ex.type === 'fill-blank' || ex.type === 'sentence-reorder' || ex.type === 'sentence-correction')
+      ? normalizeAnswer(ans) === normalizeAnswer(ex.answer)
+      : ans.trim().toLowerCase() === ex.answer.trim().toLowerCase();
+
+    // 1. Update local UI state
     setShowResult(correct ? 'correct' : 'wrong');
     if (correct) setScore(score + 1);
     if (quizMode) {
       setQuizTotal(quizTotal + 1);
       if (correct) setQuizScore(quizScore + 1);
     }
-    // Track in store
+
+    // 2. Track grammar mastery (both correct and incorrect)
     recordGrammarAnswer(ex.id, correct);
+
+    // 3. Track mistakes in the notebook (incorrect answers) and topic weakness
+    recordAnswer(levelId, ex.id, ans, ex.answer, ex.topic || ex.type, correct, 'grammar');
+
+    // 4. Periodically update level progress (every 3rd answer on this exercise)
     const mastery = getGrammarMastery(ex.id);
     const total = mastery.correct + mastery.incorrect;
     if (total > 0 && total % 3 === 0) {
@@ -103,7 +132,9 @@ export default function GrammarPage() {
       <div style={{ maxWidth: '600px', margin: '2rem auto', textAlign: 'center', padding: '0 1rem' }}>
         <div style={s.card}>
           <CheckCircle size={40} style={{ color: '#22c55e', marginBottom: '1rem' }} />
-          <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)' }}>Grammar Completed!</h2>
+          <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)' }}>
+            {isDaily ? 'Daily Mission Complete!' : 'Grammar Completed!'}
+          </h2>
           <p style={{ fontSize: '2rem', fontWeight: 800, color: '#22c55e', margin: '1rem 0' }}>{score}/{exercises.length}</p>
           <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button style={s.btn} onClick={reset}><RotateCcw size={14} style={{ marginRight: '0.4rem' }} />Try Again</button>
@@ -134,8 +165,12 @@ export default function GrammarPage() {
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
         <div>
-          <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--accent)' }}>Grammar Exercises</h2>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{levelId} | {exercises.length} exercises</span>
+          <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--accent)' }}>
+            {isDaily ? 'Daily Grammar Mission' : 'Grammar Exercises'}
+          </h2>
+          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+            {isDaily ? `${exercises.length} questions for today` : `${levelId} | ${exercises.length} exercises`}
+          </span>
         </div>
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
           <span style={s.tag()}>{currentIndex + 1}/{exercises.length}</span>
@@ -153,7 +188,23 @@ export default function GrammarPage() {
         </span>
         <p style={{ fontSize: '1.1rem', lineHeight: 1.6, margin: '1rem 0', wordBreak: 'break-word' }}>{ex.prompt}</p>
 
-{['fill-blank', 'mcq', 'multiple-choice', 'article-select', 'conjugation', 'case-select', 'drag-word'].includes(ex.type) && (
+{['fill-blank'].includes(ex.type) && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
+            <input type="text" placeholder="Type your answer..."
+              value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
+              style={{
+                width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
+                  ? normalizeAnswer(userAnswer) === normalizeAnswer(ex.answer)
+                    ? '2px solid #22c55e' : '2px solid #ef4444'
+                  : '1px solid var(--border)',
+                background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
+              }} disabled={!!showResult} />
+            <button style={{ ...s.btnPrimary, marginTop: '0.5rem' }} disabled={!!showResult || !userAnswer.trim()}
+              onClick={() => handleAnswer(userAnswer)}>Check</button>
+          </div>
+        )}
+
+        {['mcq', 'multiple-choice', 'article-select', 'conjugation', 'case-select', 'drag-word'].includes(ex.type) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
             {(ex.options || []).map((opt, idx) => {
               const correctAnswer = typeof ex.answer === 'number' ? ex.options[ex.answer] : ex.answer;

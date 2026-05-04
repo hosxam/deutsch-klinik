@@ -233,6 +233,10 @@ export default function Dashboard() {
           } else {
             link = `/level/${level}/lessons`;
           }
+        } else if (area.id === 'grammar') {
+          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=5`;
+        } else if (area.id === 'vocab') {
+          link = `/level/${level}/${area.linkSuffix}?daily=1&limit=10`;
         } else {
           link = `/level/${level}/${area.linkSuffix}`;
         }
@@ -871,7 +875,7 @@ export default function Dashboard() {
           />
           <StudyPlanButton
             step={3} label="Practice Grammar"
-            to={`/level/` + targetLevel + `/grammar`}
+            to={`/level/` + targetLevel + `/grammar?daily=1&limit=5`}
             icon={BarChart3} accent="#f59e0b"
             desc={grammarDone + '/' + grammarTarget + ' exercises done'}
           />
@@ -1408,7 +1412,7 @@ export default function Dashboard() {
           accent="#3bff9e"
         />
         <ActionButton
-          to={`/level/${studyLevel}/grammar`}
+          to={`/level/${studyLevel}/grammar?daily=1&limit=5`}
           icon={BarChart3}
           label="Grammar"
           accent="#f59e0b"

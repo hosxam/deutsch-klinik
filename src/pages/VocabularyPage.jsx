@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
@@ -133,7 +133,14 @@ function validateFilter(key, value, allowed) {
 export default function VocabularyPage() {
   const { levelId } = useParams();
   const navigate = useNavigate();
-  const [mode, setMode] = useState('browse');
+  const [searchParams] = useSearchParams();
+  const isDaily = searchParams.get('daily') === '1';
+  const dailyLimit = parseInt(searchParams.get('limit') || '10', 10);
+
+  // In daily mode, start in practice mode with a limited set of words
+  const initialMode = isDaily ? 'quiz' : 'browse';
+
+  const [mode, setMode] = useState(initialMode);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
@@ -170,7 +177,7 @@ export default function VocabularyPage() {
     setQuizDone(false);
     setQuizScore(0);
     setQuizTotal(0);
-    setMode('browse');
+    setMode(isDaily ? 'quiz' : 'browse');
   }, [levelId]);
 
   // Save filters to localStorage when they change (only after initial load)
@@ -327,7 +334,11 @@ export default function VocabularyPage() {
 
   // Quiz mode
   if (mode === 'quiz') {
-    const words = (vocabData[levelId] || []);
+    const allLevelWords = vocabData[levelId] || [];
+    // In daily mode, pick dailyLimit words; otherwise use all words
+    const words = isDaily
+      ? [...allLevelWords].sort(() => Math.random() - 0.5).slice(0, Math.min(dailyLimit, allLevelWords.length))
+      : allLevelWords;
 
     const startQuiz = () => {
       setCurrentIndex(0);
@@ -343,11 +354,19 @@ export default function VocabularyPage() {
         <div style={{ maxWidth: '600px', margin: '2rem auto', textAlign: 'center', padding: '0 1rem' }}>
           <div style={s.card}>
             <CheckCircle size={40} color="#22c55e" />
-            <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)', marginTop: '0.75rem' }}>Quiz Complete!</h2>
+            <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)', marginTop: '0.75rem' }}>
+              {isDaily ? 'Daily Mission Complete!' : 'Quiz Complete!'}
+            </h2>
             <p style={{ fontSize: '2rem', fontWeight: 800, color: '#22c55e', margin: '0.5rem 0' }}>{quizScore}/{quizTotal}</p>
             <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center' }}>
-              <button style={s.btn} onClick={() => { setMode('browse'); setCurrentIndex(0); }}>Browse Words</button>
-              <button style={s.btnPrimary} onClick={startQuiz}>Try Again</button>
+              {isDaily ? (
+                <Link to="/" style={{ ...s.btnPrimary, textDecoration: 'none' }}>Back to Dashboard</Link>
+              ) : (
+                <>
+                  <button style={s.btn} onClick={() => { setMode('browse'); setCurrentIndex(0); }}>Browse Words</button>
+                  <button style={s.btnPrimary} onClick={startQuiz}>Try Again</button>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -360,7 +379,7 @@ export default function VocabularyPage() {
       <LevelLock levelId={levelId}>
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-          <span style={s.tag}>Quiz Mode</span>
+          <span style={s.tag}>{isDaily ? 'Daily Vocabulary Mission' : 'Quiz Mode'}</span>
           <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{currentIndex + 1}/{words.length} | Score: {quizScore}/{quizTotal}</span>
         </div>
         <div style={s.card}>
