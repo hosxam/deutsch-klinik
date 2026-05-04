@@ -6444,7 +6444,7 @@
     {
       "id": "B2_read_1",
       "title": "Telemedizin: Chancen und Risiken",
-      "text": "Die Telemedizin hat in den letzten Jahren stark an Bedeutung gewonnen. Besonders während der Pandemie wurden viele Arzt-Patienten-Kontakte digital abgewickelt. Befürworter loben die Zeitersparnis und die Möglichkeit, auch in ländlichen Gebieten Fachärzte zu konsultieren. Kritiker weisen jedoch auf die fehlende körperliche Untersuchung hin. Bei bestimmten Erkrankungen sei eine persönliche Vorstellung unerlässlich. Die Zukunft wird zeigen, in welchen Bereichen sich die Telemedizin dauerhaft etablieren kann.",
+      "text": "Die Telemedizin hat in den letzten Jahren, insbesondere aufgrund der Corona-Pandemie, enorm an Bedeutung gewonnen, sodass immer mehr Arzt-Patienten-Kontakte digital abgewickelt werden. Befuerworter loben die erhebliche Zeitersparnis, die dadurch entsteht, dass Patienten weite Anfahrtswege vermeiden koennen, sowie die Moeglichkeit, auch in laendlichen Regionen mit geringer Arztdichte Facharzte zu konsultieren. Kritiker hingegen weisen auf die fehlende koerperliche Untersuchung hin, die bei bestimmten Erkrankungen unerlaesslich sei. Man koennte argumentieren, dass die Telemedizin dort sinnvoll ist, wo es um Verlaufskontrollen oder Beratungsgespraeche geht, waehrend bei akuten Beschwerden der persoenliche Arztbesuch unverzichtbar bleibt. Die elektronische Patientenakte und verschluesselte Videodienste tragen zur Sicherheit bei, obwohl Datenschutzbedenken nicht vollstaendig ausgeraeumt werden konnten. Die Zukunft wird zeigen, in welchen Bereichen sich die Telemedizin dauerhaft etablieren kann, wobei eine Kombination aus digitaler und persoenlicher Behandlung vielversprechend erscheint.",
       "questions": [
         {
           "id": "qr23",
@@ -6456,7 +6456,8 @@
             "Sie ersetzt alle Arztbesuche",
             "Sie ist sicherer"
           ],
-          "answer": "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten"
+          "answer": "Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten",
+          "explanation": "Die richtige Antwort ist: Sie spart Zeit und ermöglicht Konsultationen in ländlichen Gebieten"
         },
         {
           "id": "qr24",
@@ -6467,7 +6468,7 @@
         },
         {
           "id": "qr25",
-          "type": "opinion-match",
+          "type": "mcq",
           "question": "Was ist die Meinung des Autors?",
           "options": [
             "Telemedizin ist immer die beste Lösung",
@@ -6475,7 +6476,8 @@
             "Telemedizin sollte verboten werden",
             "Jeder sollte Telemedizin nutzen"
           ],
-          "answer": "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"
+          "answer": "Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist",
+          "explanation": "Die richtige Antwort ist: Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"
         }
       ],
       "lessonId": "B2_lesson_16"
@@ -6483,7 +6485,7 @@
     {
       "id": "B2_read_2",
       "title": "Organspende: Eine ethische Debatte",
-      "text": "Die Diskussion um die Organspende wird in Deutschland kontrovers geführt. Aktuell gilt die Entscheidungslösung: Nur wer explizit zustimmt, ist Organspender. Die Widerspruchslösung würde bedeuten, dass jeder automatisch Organspender ist, der nicht widerspricht. Befürworter der Widerspruchslösung argumentieren, dass mehr Organe verfügbar wären und weniger Patienten auf Wartelisten sterben würden. Gegner sehen darin einen Eingriff in die Selbstbestimmung des Einzelnen.",
+      "text": "Die Diskussion um die Organspende wird in Deutschland kontrovers gefuehrt, wobei ethische, medizinische und rechtliche Aspekte gleichermassen eine Rolle spielen. Aktuell gilt die Entscheidungsloesung: Nur wer explizit zustimmt, darf als Organspender gelten. Die Widerspruchsloesung hingegen wuerde bedeuten, dass jeder automatisch Organspender ist, der nicht ausdruecklich widerspricht. Befuerworter der Widerspruchsloesung argumentieren, dass auf diese Weise deutlich mehr Organe verfuegbar waeren und weniger Patienten auf den langen Wartelisten sterben wuerden. Gegner sehen darin jedoch einen unzulaessigen Eingriff in die Selbstbestimmung des Einzelnen, da die Entscheidung ueber den eigenen Koerper jedem Menschen selbst ueberlassen bleiben muesse. Man koennte einwenden, dass beide Positionen berechtigte Anliegen vertreten, sodass ein gesellschaftlicher Kompromiss gefunden werden muss. In Oesterreich, wo die Widerspruchsloesung bereits praktiziert wird, konnte eine hoehere Spenderrate verzeichnet werden.",
       "questions": [
         {
           "id": "qr26",
@@ -6495,13 +6497,15 @@
             "Jeder ist automatisch Spender",
             "Organspende ist verboten"
           ],
-          "answer": "Entscheidungslösung"
+          "answer": "Entscheidungslösung",
+          "explanation": "Die richtige Antwort ist: Entscheidungslösung"
         },
         {
           "id": "qr27",
           "type": "true-false",
           "question": "Die Widerspruchslösung würde mehr Organe verfügbar machen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "qr28",
@@ -6513,7 +6517,8 @@
             "Zu hohe Kosten",
             "Mangel an Ã„rzten"
           ],
-          "answer": "Eingriff in die Selbstbestimmung"
+          "answer": "Eingriff in die Selbstbestimmung",
+          "explanation": "Die richtige Antwort ist: Eingriff in die Selbstbestimmung"
         }
       ],
       "lessonId": "B2_lesson_7"
@@ -6521,7 +6526,7 @@
     {
       "id": "B2_read_3",
       "title": "Künstliche Intelligenz in der Medizin",
-      "text": "Künstliche Intelligenz verändert die Medizin grundlegend. Algorithmen können bereits Röntgenbilder analysieren, Diagnosen vorschlagen und Behandlungspläne optimieren. Eine Studie des Deutschen Krebsforschungszentrums zeigt, dass KI bei der Erkennung von Hautkrebs eine Genauigkeit von über 95 Prozent erreicht. Ã„rzte betonen jedoch, dass KI die ärztliche Erfahrung nicht ersetzen, sondern nur ergänzen kann. Die ethische Verantwortung bleibt beim Menschen.",
+      "text": "Kuenstliche Intelligenz veraendert die Medizin grundlegend, indem sie voellig neue Moeglichkeiten in der Diagnostik und Therapieplanung eroeffnet. Algorithmen koennen bereits Roentgenbilder analysieren, Diagnosen vorschlagen und individuelle Behandlungssplaene optimieren, wobei sie oft Muster erkennen, die dem menschlichen Auge verborgen bleiben. Eine vielzitierte Studie des Deutschen Krebsforschungszentrums zeigt, dass KI bei der Erkennung von Hautkrebs eine beeindruckende Genauigkeit von ueber 95 Prozent erreicht. Aerzte betonen jedoch, dass KI die aerztliche Erfahrung und das klinische Urteilsvermoegen nicht ersetzen, sondern lediglich ergaenzen kann. Es ist fraglich, ob Maschinen jemals die empathische Komponente der Medizin abbilden koennen. Die ethische Verantwortung fuer Behandlungsentscheidungen bleibt daher beim Menschen, weshalb KI-Systeme lediglich als Assistenzsysteme eingesetzt werden sollten. Einerseits ermoeglicht KI schnellere und praezisere Diagnosen, andererseits bestehen Risiken durch fehlerhafte Algorithmen.",
       "questions": [
         {
           "id": "qr29",
@@ -6533,7 +6538,8 @@
             "Ãœber 95%",
             "100%"
           ],
-          "answer": "Ãœber 95%"
+          "answer": "Ãœber 95%",
+          "explanation": "Die richtige Antwort ist: Ãœber 95%"
         },
         {
           "id": "qr30",
@@ -6549,7 +6555,7 @@
       "id": "B2_read_4",
       "lessonId": "B2_lesson_8",
       "title": "Kommunikation am Arbeitsplatz",
-      "text": "Eine gute Kommunikation am Arbeitsplatz ist fuer den Erfolg eines Unternehmens entscheidend. Missverstaendnisse zwischen Kollegen oder zwischen Arzt und Patient koennen schwerwiegende Folgen haben. In der Medizin ist eine klare und eindeutige Kommunikation besonders wichtig. Studien zeigen, dass viele Behandlungsfehler auf Kommunikationsprobleme zurueckzufuehren sind. Deshalb legen immer mehr Kliniken Wert auf Schulungen zur Gespraechsfuehrung. Auch die Dokumentation von Patientengespraechen wird verbessert.",
+      "text": "Eine gute Kommunikation am Arbeitsplatz ist fuer den Erfolg eines Unternehmens entscheidend, wobei Missverstaendnisse zwischen Kollegen oder zwischen Arzt und Patient schwerwiegende Folgen haben koennen. In der Medizin, wo Entscheidungen oft unter Zeitdruck getroffen werden muessen, ist eine klare und eindeutige Kommunikation besonders wichtig, sodass alle Beteiligten genau verstehen, was gemeint ist. Wissenschaftliche Studien belegen, dass ein erheblicher Teil der Behandlungsfehler auf Kommunikationsprobleme zurueckzufuehren ist, was die Notwendigkeit gezielter Massnahmen unterstreicht. Deshalb legen immer mehr Kliniken Wert auf Schulungen zur Gespraechsfuehrung, die sowohl die verbale als auch die nonverbale Kommunikation umfassen. Auch die sorgfaeltige Dokumentation von Patientengespraechen wird verbessert, indem standardisierte Vorlagen und digitale Systeme zum Einsatz kommen. Einerseits muessen Informationen schnell ausgetauscht werden, andererseits darf die Genauigkeit nicht darunter leiden. Teamkommunikation, bei der Hierarchien keine Rolle spielen sollten, traegt wesentlich zur Patientensicherheit bei.",
       "questions": [
         {
           "id": "b2r4a",
@@ -6568,7 +6574,8 @@
           "id": "b2r4b",
           "type": "true-false",
           "question": "Viele Behandlungsfehler sind auf Kommunikationsprobleme zurueckzufuehren.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r4c",
@@ -6580,7 +6587,8 @@
             "Sie verkuerzen die Arbeitszeit",
             "Sie schaffen Hierarchien ab"
           ],
-          "answer": "Sie bieten Schulungen zur Gespraechsfuehrung an"
+          "answer": "Sie bieten Schulungen zur Gespraechsfuehrung an",
+          "explanation": "Die richtige Antwort ist: Sie bieten Schulungen zur Gespraechsfuehrung an"
         }
       ]
     },
@@ -6588,7 +6596,7 @@
       "id": "B2_read_5",
       "lessonId": "B2_lesson_2",
       "title": "Lernstrategien fuer Medizinstudenten",
-      "text": "Das Medizinstudium gilt als eines der anspruchsvollsten Studiengaenge. Gute Lernstrategien sind daher entscheidend. Erfolgreiche Studierende nutzen verschiedene Methoden: aktives Wiederholen, Arbeiten in Lerngruppen und das Erklaeren von Zusammenhaengen. Auch digitale Karteikarten und Online-Plattformen werden immer beliebter. Die Faehigkeit, Informationen zu strukturieren und Prioritaeten zu setzen, ist wichtiger als reines Auswendiglernen. Viele Universitaeten bieten Kurse zum wissenschaftlichen Arbeiten an.",
+      "text": "Das Medizinstudium gilt als einer der anspruchsvollsten Studiengaenge, da ungeheure Mengen an Fachwissen in vergleichsweise kurzer Zeit aufgenommen werden muessen. Gute Lernstrategien sind daher fuer den Erfolg entscheidend, wobei reines Auswendiglernen nicht ausreicht. Erfolgreiche Studierende nutzen verschiedene Methoden, darunter aktives Wiederholen, Arbeiten in Lerngruppen, in denen Zusammenhaenge diskutiert werden, sowie das Erklaeren von komplexen Sachverhalten im eigenen Wortlaut. Auch digitale Karteikarten, Lernplattformen und Podcasts werden immer beliebter, weil sie zeitlich und oertlich flexibles Lernen ermoeglichen. Die Faehigkeit, Informationen zu strukturieren und Prioritaeten zu setzen, ist wichtiger als die blosse Menge des Gelernten. Man koennte sagen, dass qualitativ hochwertiges Lernen der Quantitaet vorzuziehen ist. Viele Universitaeten bieten daher Kurse zur Lernmethodik an, die den Studierenden helfen sollen, effizienter zu lernen. Zudem wird empfohlen, regelmaessige Pausen einzuplanen und ausreichend zu schlafen.",
       "questions": [
         {
           "id": "b2r5a",
@@ -6607,7 +6615,8 @@
           "id": "b2r5b",
           "type": "true-false",
           "question": "Das Medizinstudium gilt als anspruchsvoll.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r5c",
@@ -6619,7 +6628,8 @@
             "Viele Buecher zu lesen",
             "Alle Vorlesungen zu besuchen"
           ],
-          "answer": "Die Faehigkeit zu strukturieren und Prioritaeten zu setzen"
+          "answer": "Die Faehigkeit zu strukturieren und Prioritaeten zu setzen",
+          "explanation": "Die richtige Antwort ist: Die Faehigkeit zu strukturieren und Prioritaeten zu setzen"
         }
       ]
     },
@@ -6627,7 +6637,7 @@
       "id": "B2_read_6",
       "lessonId": "B2_lesson_12",
       "title": "Patientensicherheit im Krankenhaus",
-      "text": "Die Patientensicherheit hat in deutschen Krankenhaeusern oberste Prioritaet. Massnahmen wie die Checkliste fuer Operationen und die korrekte Patientenidentifikation sind Standard. Das CIRS-System (Critical Incident Reporting System) erlaubt es Mitarbeitern, Beinahefehler anonym zu melden. Aus diesen Meldungen werden Verbesserungen abgeleitet. Die Weltgesundheitsorganisation hat neun Ziele fuer die Patientensicherheit definiert. Dazu gehoeren die Vermeidung von Infektionen und die sichere Medikamentengabe.",
+      "text": "Die Patientensicherheit hat in deutschen Krankenhaeusern oberste Prioritaet, weshalb umfangreiche Massnahmen ergriffen werden, um Risiken zu minimieren. Instrumente wie die chirurgische Checkliste fuer Operationen, die korrekte Patientenidentifikation mittels Armband und die standardisierte Medikamentenvergabe sind heute selbstverstaendlicher Standard in jeder Klinik. Das CIRS-System, ein Critical Incident Reporting System, erlaubt es Mitarbeitern aller Hierarchieebenen, Beinahefehler anonym zu melden, ohne dass sie disziplinarische Konsequenzen befuerchten muessen. Aus diesen Meldungen werden systematisch Verbesserungen abgeleitet, indem die Ursachen analysiert und praeventive Massnahmen entwickelt werden. Die Weltgesundheitsorganisation hat insgesamt neun internationale Ziele fuer die Patientensicherheit definiert, zu denen unter anderem die Vermeidung von Krankenhausinfektionen, die sichere Medikamentengabe und die korrekte Patientenidentifikation gehoeren. Es ist fraglich, ob diese Ziele ohne das Engagement aller Mitarbeiter erreicht werden koennen.",
       "questions": [
         {
           "id": "b2r6a",
@@ -6646,7 +6656,8 @@
           "id": "b2r6b",
           "type": "true-false",
           "question": "Die Weltgesundheitsorganisation hat neun Ziele fuer die Patientensicherheit definiert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r6c",
@@ -6658,7 +6669,8 @@
             "Laengere Arbeitszeiten",
             "Mehr Medikamente"
           ],
-          "answer": "Checkliste fuer Operationen und Patientenidentifikation"
+          "answer": "Checkliste fuer Operationen und Patientenidentifikation",
+          "explanation": "Die richtige Antwort ist: Checkliste fuer Operationen und Patientenidentifikation"
         }
       ]
     },
@@ -6666,7 +6678,7 @@
       "id": "B2_read_7",
       "lessonId": "B2_lesson_21",
       "title": "Der Alltag auf einer Krankenstation",
-      "text": "Der Arbeitsalltag auf einer Krankenstation beginnt frueh. Die Fruehschicht startet meist um sechs Uhr mit der Uebergabe von der Nachtschicht. Danach folgen die Visite, bei der der Arzt den Zustand der Patienten beurteilt. Pflegekraefte teilen Medikamente aus, wechseln Verbaende und dokumentieren den Zustand der Patienten. Zwischendurch kommen neue Patienten hinzu oder werden entlassen. Der Tag ist oft hektisch und erfordert gute Organisation und Teamarbeit.",
+      "text": "Der Arbeitsalltag auf einer Krankenstation beginnt frueh und ist von straffen Zeitplaenen und wechselnden Anforderungen gepraegt. Die Fruehschicht startet meist um sechs Uhr mit der Uebergabe von der Nachtschicht, bei der wichtige Informationen zu den Patienten weitergegeben werden. Im Anschluss folgt die Visite, bei der der Arzt den aktuellen Zustand der Patienten beurteilt und die weitere Behandlung festlegt. Pflegekraefte teilen Medikamente aus, wechseln Verbaende, messen Vitalzeichen und dokumentieren sorgfaeltig den Zustand jedes Patienten. Zwischendurch kommen neue Patienten auf die Station oder werden nach abgeschlossener Behandlung entlassen, sodass staendige Flexibilitaet gefordert ist. Der Tag ist oft hektisch und erfordert hervorragende Organisation, Teamarbeit und die Faehigkeit, Prioritaeten zu setzen. Man koennte argumentieren, dass die Pflegekraefte das Rueckgrat des Krankenhauses bilden, da sie den engsten Kontakt zu den Patienten haben.",
       "questions": [
         {
           "id": "b2r7a",
@@ -6678,13 +6690,15 @@
             "Um sieben Uhr",
             "Um acht Uhr"
           ],
-          "answer": "Um sechs Uhr"
+          "answer": "Um sechs Uhr",
+          "explanation": "Die richtige Antwort ist: Um sechs Uhr"
         },
         {
           "id": "b2r7b",
           "type": "true-false",
           "question": "Die Visite dient dazu, den Zustand der Patienten zu beurteilen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r7c",
@@ -6696,7 +6710,8 @@
             "Koerperliche Kraft",
             "Technisches Wissen"
           ],
-          "answer": "Gute Organisation und Teamarbeit"
+          "answer": "Gute Organisation und Teamarbeit",
+          "explanation": "Die richtige Antwort ist: Gute Organisation und Teamarbeit"
         }
       ]
     },
@@ -6704,7 +6719,7 @@
       "id": "B2_read_8",
       "lessonId": "B2_lesson_16",
       "title": "Terminvergabesysteme in der Praxis",
-      "text": "Viele Arztpraxen haben inzwischen auf digitale Terminvergabesysteme umgestellt. Patienten koennen online Termine buchen und erhalten automatische Erinnerungen per E-Mail oder SMS. Das reduziert die Zahl der nicht wahrgenommenen Termine. Einige Praxen bieten auch Videosprechstunden an. Allerdings haben aeltere Patienten manchmal Schwierigkeiten mit der digitalen Terminvergabe. Deshalb bieten die meisten Praxen weiterhin auch telefonische Terminvereinbarungen an.",
+      "text": "Viele Arztpraxen haben inzwischen auf digitale Terminvergabesysteme umgestellt, wodurch der administrative Aufwand erheblich reduziert werden konnte. Patienten koennen bequem von zu Hause aus online Termine buchen, die gewuenschte Uhrzeit auswaehlen und erhalten automatische Erinnerungen per E-Mail oder SMS, was die Zahl der nicht wahrgenommenen Termine deutlich verringert. Einige Praxen bieten zusaetzlich Videosprechstunden an, sodass Patienten fuer bestimmte Anliegen nicht einmal die Praxis aufsuchen muessen. Allerdings haben aeltere Patienten, die mit digitalen Technologien weniger vertraut sind, manchmal Schwierigkeiten mit der Online-Terminvergabe. Deshalb bieten die meisten Praxen weiterhin auch die telefonische Terminvereinbarung an, um niemanden auszuschliessen. Ein guter Kompromiss scheint die Kombination beider Systeme zu sein, ergaenzt durch die Moeglichkeit, in dringenden Faellen ohne Termin zu kommen.",
       "questions": [
         {
           "id": "b2r8a",
@@ -6723,7 +6738,8 @@
           "id": "b2r8b",
           "type": "true-false",
           "question": "Alle Praxen bieten nur noch digitale Terminvergabe an.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r8c",
@@ -6735,7 +6751,8 @@
             "Sie funktioniert oft nicht",
             "Sie ist zu langsam"
           ],
-          "answer": "Aeltere Patienten haben manchmal Probleme damit"
+          "answer": "Aeltere Patienten haben manchmal Probleme damit",
+          "explanation": "Die richtige Antwort ist: Aeltere Patienten haben manchmal Probleme damit"
         }
       ]
     },
@@ -6743,7 +6760,7 @@
       "id": "B2_read_9",
       "lessonId": "B2_lesson_10",
       "title": "Die gesetzliche Krankenversicherung verstehen",
-      "text": "Die gesetzliche Krankenversicherung (GKV) ist das Fundament des deutschen Gesundheitssystems. Etwa 90 Prozent der Bevoelkerung sind gesetzlich versichert. Der Beitrag richtet sich nach dem Einkommen und wird zur Haelfte vom Arbeitgeber bezahlt. Die GKV bietet einen umfassenden Leistungskatalog. Dazu gehoeren Arztbesuche, Krankenhausaufenthalte und Medikamente. Fuer bestimmte Leistungen wie das Zahnersatz gibt es Zuzahlungen. Versicherte sollten sich ueber ihren Versicherungsschutz informieren.",
+      "text": "Die gesetzliche Krankenversicherung (GKV) ist das Fundament des deutschen Gesundheitssystems, in dem etwa 90 Prozent der Bevoelkerung versichert sind. Der Beitrag, der sich nach dem Einkommen richtet, wird zur Haelfte vom Arbeitgeber getragen, sodass die finanzielle Belastung fuer die Versicherten begrenzt bleibt. Die GKV bietet einen umfassenden Leistungskatalog, zu dem Arztbesuche, Krankenhausaufenthalte, Medikamente sowie Vorsorge- und Rehabilitationsmassnahmen gehoeren. Fuer bestimmte Leistungen, etwa den Zahnersatz oder Heilmittel, sind Zuzahlungen erforderlich, die jedoch gesetzlich gedeckelt sind. Versicherte sollten sich ueber ihren individuellen Versicherungsschutz informieren, da nicht alle Leistungen in gleichem Umfang uebernommen werden. Man koennte einwenden, dass das System aufgrund der alternden Bevoelkerung zunehmend unter finanziellem Druck steht. Einerseits profitieren Versicherte von der Solidargemeinschaft, andererseits steigen die Beitragssaetze kontinuierlich an.",
       "questions": [
         {
           "id": "b2r9a",
@@ -6755,13 +6772,15 @@
             "Etwa 90 Prozent",
             "Etwa 95 Prozent"
           ],
-          "answer": "Etwa 90 Prozent"
+          "answer": "Etwa 90 Prozent",
+          "explanation": "Die richtige Antwort ist: Etwa 90 Prozent"
         },
         {
           "id": "b2r9b",
           "type": "true-false",
           "question": "Der Arbeitgeber zahlt die Haelfte des Krankenversicherungsbeitrags.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r9c",
@@ -6773,7 +6792,8 @@
             "Fuer Zahnersatz",
             "Fuer Medikamente"
           ],
-          "answer": "Fuer Zahnersatz"
+          "answer": "Fuer Zahnersatz",
+          "explanation": "Die richtige Antwort ist: Fuer Zahnersatz"
         }
       ]
     },
@@ -6781,7 +6801,7 @@
       "id": "B2_read_10",
       "lessonId": "B2_lesson_3",
       "title": "Oeffentliche Gesundheitsvorsorge",
-      "text": "Die oeffentliche Gesundheitsvorsorge ist eine Aufgabe des Staates. Dazu gehoeren Impfprogramme, Aufklaerungskampagnen und die Ueberwachung von Infektionskrankheiten. Das Robert Koch-Institut uebernimmt in Deutschland diese Aufgaben. In den letzten Jahren hat die Bedeutung der oeffentlichen Gesundheit zugenommen. Die COVID-19-Pandemie hat gezeigt, wie wichtig ein starkes Gesundheitssystem ist. Experten fordern mehr Investitionen in die Praevention und die Gesundheitsaufklaerung.",
+      "text": "Die oeffentliche Gesundheitsvorsorge ist eine zentrale Aufgabe des Staates, deren Bedeutung durch die Corona-Pandemie noch einmal deutlich geworden ist. Zu ihren Kernaufgaben gehoeren Impfprogramme zur Verhinderung von Infektionskrankheiten, flaechendeckende Aufklaerungskampagnen zu Gesundheitsthemen sowie die systematische Ueberwachung von Infektionskrankheiten, um Ausbrueche fruehzeitig zu erkennen. Das Robert Koch-Institut uebernimmt in Deutschland diese Aufgaben auf hoechstem wissenschaftlichem Niveau und arbeitet dabei eng mit den Gesundheitsaemtern der Laender und Kommunen zusammen. In den letzten Jahren hat die Bedeutung der oeffentlichen Gesundheit weiter zugenommen, da neue Bedrohungen wie Pandemien, Antibiotikaresistenzen und die gesundheitlichen Folgen des Klimawandels hinzugekommen sind. Experten fordern daher mehr Investitionen in die Praevention, die Gesundheitsaufklaerung und den oeffentlichen Gesundheitsdienst. Einerseits wurden aus der Pandemie Lehren gezogen, andererseits fehlt es vielerorts noch an Personal und digitaler Infrastruktur.",
       "questions": [
         {
           "id": "b2r10a",
@@ -6793,13 +6813,15 @@
             "Nur die Krankenhausverwaltung",
             "Nur die Arzneimittelzulassung"
           ],
-          "answer": "Impfprogramme, Aufklaerungskampagnen und Ueberwachung von Infektionen"
+          "answer": "Impfprogramme, Aufklaerungskampagnen und Ueberwachung von Infektionen",
+          "explanation": "Die richtige Antwort ist: Impfprogramme, Aufklaerungskampagnen und Ueberwachung von Infektionen"
         },
         {
           "id": "b2r10b",
           "type": "true-false",
           "question": "Das Robert Koch-Institut uebernimmt Aufgaben der oeffentlichen Gesundheit.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r10c",
@@ -6811,7 +6833,8 @@
             "Weniger staatliche Kontrolle",
             "Mehr Privatisierung"
           ],
-          "answer": "Mehr Investitionen in Praevention und Gesundheitsaufklaerung"
+          "answer": "Mehr Investitionen in Praevention und Gesundheitsaufklaerung",
+          "explanation": "Die richtige Antwort ist: Mehr Investitionen in Praevention und Gesundheitsaufklaerung"
         }
       ]
     },
@@ -6819,7 +6842,7 @@
       "id": "B2_read_11",
       "lessonId": "B2_lesson_16",
       "title": "Digitalisierung in der Pflegedokumentation",
-      "text": "Die Digitalisierung hat auch die Pflegedokumentation erfasst. Frueher wurden alle Informationen auf Papier festgehalten. Heute nutzen viele Pflegeeinrichtungen elektronische Dokumentationssysteme. Die Pflegekraefte erfassen Vitaldaten, durchgefuehrte Massnahmen und den Zustand der Patienten digital. Das spart Zeit und reduziert Fehler. Allerdings kritisieren einige Pflegekraefte, dass die Arbeit am Computer die Zeit mit den Patienten verringert. Ein guter Ausgleich zwischen Digitalisierung und persoenlicher Zuwendung ist wichtig.",
+      "text": "Die Digitalisierung hat laengst auch die Pflegedokumentation erfasst, die frueher ausschliesslich auf Papier erfolgte und viel Zeit in Anspruch nahm. Heute nutzen immer mehr Pflegeeinrichtungen elektronische Dokumentationssysteme, bei denen die Pflegekraefte Vitaldaten, durchgefuehrte Massnahmen, Medikamentengaben und den aktuellen Zustand der Patienten digital erfassen. Dies spart nicht nur wertvolle Zeit, sondern reduziert auch Fehler, die bei der handschriftlichen Dokumentation durch Unleserlichkeit oder unvollstaendige Eintraege entstehen koennen. Allerdings kritisieren einige Pflegekraefte, dass die vermehrte Arbeit am Computer die wertvolle Zeit mit den Patienten verringert, was dem eigentlichen Pflegeauftrag widerspreche. Ein guter Ausgleich zwischen Digitalisierung und persoenlicher Zuwendung ist daher von grosser Bedeutung. Zudem muessen hohe Datenschutzstandards eingehalten werden, um sensible Patientendaten zu schuetzen.",
       "questions": [
         {
           "id": "b2r11a",
@@ -6831,13 +6854,15 @@
             "Sie ist einfacher zu lernen",
             "Sie ersetzt das Pflegepersonal"
           ],
-          "answer": "Sie spart Zeit und reduziert Fehler"
+          "answer": "Sie spart Zeit und reduziert Fehler",
+          "explanation": "Die richtige Antwort ist: Sie spart Zeit und reduziert Fehler"
         },
         {
           "id": "b2r11b",
           "type": "true-false",
           "question": "Einige Pflegekraefte kritisieren, dass die Digitalisierung die Zeit mit Patienten verringert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r11c",
@@ -6849,7 +6874,8 @@
             "Weniger Pflegekraefte",
             "Mehr Computer"
           ],
-          "answer": "Ein guter Ausgleich zwischen Digitalisierung und persoenlicher Zuwendung"
+          "answer": "Ein guter Ausgleich zwischen Digitalisierung und persoenlicher Zuwendung",
+          "explanation": "Die richtige Antwort ist: Ein guter Ausgleich zwischen Digitalisierung und persoenlicher Zuwendung"
         }
       ]
     },
@@ -6857,7 +6883,7 @@
       "id": "B2_read_12",
       "lessonId": "B2_lesson_9",
       "title": "Ernaehrung und Lebensstil",
-      "text": "Eine ausgewogene Ernaehrung ist die Grundlage fuer Gesundheit. Die Deutsche Gesellschaft fuer Ernaehrung empfiehlt, taeglich Obst und Gemuese zu essen, ausreichend zu trinken und auf stark verarbeitete Lebensmittel zu verzichten. Viele Menschen ernaehren sich jedoch ungesund. Die Folgen sind Uebergewicht, Diabetes und Herz-Kreislauf-Erkrankungen. In der medizinischen Ausbildung wird das Thema Ernaehrungsberatung immer wichtiger. Aerzte sollten ihre Patienten zu einem gesunden Lebensstil motivieren koennen.",
+      "text": "Eine ausgewogene Ernaehrung ist die Grundlage fuer lebenslange Gesundheit, wobei die Deutsche Gesellschaft fuer Ernaehrung konkrete Empfehlungen gibt. Demnach sollten taeglich fuenf Portionen Obst und Gemuese gegessen, ausreichend Wasser oder ungesuesster Tee getrunken und stark verarbeitete Lebensmittel mit hohem Zucker- und Fettgehalt gemieden werden. Leider ernaehren sich viele Menschen in Deutschland ungesund, indem sie zu viel Fleisch, Fertiggerichte und Suessigkeiten konsumieren. Die besorgniserregenden Folgen sind Uebergewicht, Diabetes Typ 2 und Herz-Kreislauf-Erkrankungen, die zu den haeufigsten Todesursachen zaehlen. In der medizinischen Ausbildung wird das Thema Ernaehrungsberatung daher immer wichtiger, da Aerzte ihre Patienten zu einem gesunden Lebensstil motivieren koennen sollten. Bewegung kommt neben der Ernaehrung eine entscheidende Bedeutung zu, wobei bereits 30 Minuten Spaziergang taeglich positive Effekte haben.",
       "questions": [
         {
           "id": "b2r12a",
@@ -6869,13 +6895,15 @@
             "Auf Kohlenhydrate verzichten",
             "Drei Mahlzeiten pro Tag"
           ],
-          "answer": "Taeglich Obst, Gemuese und ausreichend trinken"
+          "answer": "Taeglich Obst, Gemuese und ausreichend trinken",
+          "explanation": "Die richtige Antwort ist: Taeglich Obst, Gemuese und ausreichend trinken"
         },
         {
           "id": "b2r12b",
           "type": "true-false",
           "question": "Uebergewicht und Diabetes sind Folgen ungesunder Ernaehrung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r12c",
@@ -6887,7 +6915,8 @@
             "Sie ist der wichtigste Bereich",
             "Sie ist optional"
           ],
-          "answer": "Sie wird immer wichtiger"
+          "answer": "Sie wird immer wichtiger",
+          "explanation": "Die richtige Antwort ist: Sie wird immer wichtiger"
         }
       ]
     },
@@ -6895,7 +6924,7 @@
       "id": "B2_read_13",
       "lessonId": "B2_lesson_18",
       "title": "Umwelt und Gesundheit",
-      "text": "Die Umwelt hat einen grossen Einfluss auf die Gesundheit. Luftverschmutzung in Staedten kann Atemwegserkrankungen verursachen. Laermbelastung erhoeht das Risiko fuer Herz-Kreislauf-Probleme. Gleichzeitig foerdern gruene Flaschen in der Stadt die Bewegung und das Wohlbefinden. Die Weltgesundheitsorganisation betont den Zusammenhang zwischen Umwelt- und Gesundheitsschutz. Kommunen versuchen, durch umweltfreundliche Verkehrspolitik und mehr Begruenung die Lebensqualitaet zu verbessern.",
+      "text": "Die Umwelt hat einen erheblichen Einfluss auf die Gesundheit der Bevoelkerung, wobei die Zusammenhaenge in den letzten Jahren immer besser erforscht wurden. Luftverschmutzung in Staedten, die vor allem durch Autoverkehr und Industrie verursacht wird, kann chronische Atemwegserkrankungen wie Asthma und Bronchitis hervorrufen oder verschlimmern. Auch Laermbelastung, etwa durch Strassenverkehr oder Baustellen, erhoeht nachweislich das Risiko fuer Herz-Kreislauf-Probleme. Gleichzeitig foerdern Gruenflaechen in der Stadt wie Parks und Gaerten die koerperliche Bewegung und das psychische Wohlbefinden der Anwohner. Die Weltgesundheitsorganisation betont den engen Zusammenhang zwischen Umwelt- und Gesundheitsschutz und fordert daher strengere Grenzwerte fuer Schadstoffe. Kommunen versuchen zunehmend, durch Umweltzonen und Dachbegruenung die Lebensqualitaet zu verbessern, obwohl solche Massnahmen oft kostspielig sind.",
       "questions": [
         {
           "id": "b2r13a",
@@ -6907,13 +6936,15 @@
             "Hautausschlag",
             "Allergien"
           ],
-          "answer": "Atemwegserkrankungen"
+          "answer": "Atemwegserkrankungen",
+          "explanation": "Die richtige Antwort ist: Atemwegserkrankungen"
         },
         {
           "id": "b2r13b",
           "type": "true-false",
           "question": "Gruene Flaschen in der Stadt foerdern die Bewegung und das Wohlbefinden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r13c",
@@ -6925,7 +6956,8 @@
             "Durch hoehere Steuern",
             "Durch weniger Parks"
           ],
-          "answer": "Durch umweltfreundliche Verkehrspolitik und Begruenung"
+          "answer": "Durch umweltfreundliche Verkehrspolitik und Begruenung",
+          "explanation": "Die richtige Antwort ist: Durch umweltfreundliche Verkehrspolitik und Begruenung"
         }
       ]
     },
@@ -6933,7 +6965,7 @@
       "id": "B2_read_14",
       "lessonId": "B2_lesson_10",
       "title": "Wohnungssuche in deutschen Grossstaedten",
-      "text": "Die Wohnungssuche in deutschen Grossstaedten ist fuer viele Menschen eine Herausforderung. Die Mietpreise sind in den letzten Jahren stark gestiegen. Besonders in Muenchen, Frankfurt und Berlin ist bezahlbarer Wohnraum knapp. Bei der Wohnungsbesichtigung muessen Interessenten oft Unterlagen wie Gehaltsnachweise und Schufa-Auskunft vorlegen. Vermieter achten auf ein geregeltes Einkommen und eine positive Bonitaet. Viele Staedte foerdern den Bau von Sozialwohnungen, um dem Wohnungsmangel entgegenzuwirken.",
+      "text": "Die Wohnungssuche in deutschen Grossstaedten stellt fuer viele Menschen, insbesondere fuer Studierende und Berufseinsteiger, eine enorme Herausforderung dar. Die Mietpreise sind in den letzten Jahren in vielen Ballungszentren drastisch gestiegen, sodass bezahlbarer Wohnraum immer knapper wird. Besonders in Muenchen, Frankfurt am Main und Berlin muessen Interessenten mit hohen Quadratmeterpreisen rechnen und oft lange nach einer passenden Wohnung suchen. Bei der Wohnungsbesichtigung muessen Bewerber in der Regel umfangreiche Unterlagen vorlegen, darunter Gehaltsnachweise, die Schufa-Auskunft sowie eine Mietschuldenfreiheitsbescheinigung. Vermieter achten besonders auf ein geregeltes Arbeitseinkommen und eine positive Bonitaet, was fuer Menschen mit befristeten Arbeitsvertraegen problematisch sein kann. Viele Staedte foerdern daher den Bau von Sozialwohnungen und fuehren Mietpreisbremsen ein, um dem Wohnungsmangel entgegenzuwirken.",
       "questions": [
         {
           "id": "b2r14a",
@@ -6945,13 +6977,15 @@
             "Koeln, Stuttgart und Leipzig",
             "Dresden, Duesseldorf und Dortmund"
           ],
-          "answer": "Muenchen, Frankfurt und Berlin"
+          "answer": "Muenchen, Frankfurt und Berlin",
+          "explanation": "Die richtige Antwort ist: Muenchen, Frankfurt und Berlin"
         },
         {
           "id": "b2r14b",
           "type": "true-false",
           "question": "Vermieter verlangen oft Gehaltsnachweise und eine Schufa-Auskunft.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r14c",
@@ -6963,7 +6997,8 @@
             "Sie erhoehen die Steuern",
             "Sie begrenzen die Einwohnerzahl"
           ],
-          "answer": "Sie foerdern den Bau von Sozialwohnungen"
+          "answer": "Sie foerdern den Bau von Sozialwohnungen",
+          "explanation": "Die richtige Antwort ist: Sie foerdern den Bau von Sozialwohnungen"
         }
       ],
       "level": "B2"
@@ -6972,7 +7007,7 @@
       "id": "B2_read_15",
       "lessonId": "B2_lesson_18",
       "title": "Oeffentlicher Nahverkehr in der Stadt",
-      "text": "Der oeffentliche Nahverkehr (OePNV) ist das Rueckgrat der Mobilitaet in deutschen Staedten. Busse und Bahnen verbinden die Stadtteile miteinander und ermoeglichen ein Leben ohne Auto. Viele Staedte investieren in den Ausbau des OePNV und senken die Ticketpreise, um mehr Menschen zum Umstieg zu bewegen. Das 49-Euro-Ticket des Bundes macht den Nahverkehr noch attraktiver. Kritiker bemängeln jedoch, dass die Zuverlaessigkeit besonders in laendlichen Gebieten nicht ausreicht.",
+      "text": "Der oeffentliche Nahverkehr, kurz OePNV, ist das Rueckgrat der Mobilitaet in deutschen Staedten, da Busse und Bahnen die verschiedenen Stadtteile miteinander verbinden und ein Leben ohne eigenes Auto ermoeglichen. Angesichts des Klimawandels investieren viele Staedte massiv in den Ausbau des OePNV und senken gleichzeitig die Ticketpreise, um mehr Menschen zum Umstieg vom Auto auf Bus und Bahn zu bewegen. Das deutschlandweite 49-Euro-Ticket macht den Nahverkehr finanziell noch attraktiver. Kritiker bemaengeln jedoch, dass die Taktung und Zuverlaessigkeit besonders in laendlichen Gebieten nicht ausreicht, sodass der Umstieg fuer viele Pendler unattraktiv bleibt. Einerseits ist der OePNV in den Innenstaedten gut ausgebaut, andererseits klaffen erhebliche Luecken in der Flaeche. Es bleibt abzuwarten, ob die angekuendigten Milliardeninvestitionen wie geplant umgesetzt werden, um das Angebot zu verbessern und mehr Fahrgaeste zu gewinnen. In vielen Staedten wird zudem ueber den Bau neuer Strassenbahnlinien und den Ausbau des Radverkehrs diskutiert.",
       "questions": [
         {
           "id": "b2r15a",
@@ -6984,13 +7019,15 @@
             "Ein Ticket nur fuer Berlin",
             "Ein Studententicket"
           ],
-          "answer": "Ein bundesweites Nahverkehrsticket"
+          "answer": "Ein bundesweites Nahverkehrsticket",
+          "explanation": "Die richtige Antwort ist: Ein bundesweites Nahverkehrsticket"
         },
         {
           "id": "b2r15b",
           "type": "true-false",
           "question": "Der oeffentliche Nahverkehr ermoeglicht ein Leben ohne Auto.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r15c",
@@ -7002,7 +7039,8 @@
             "Die vielen Haltestellen",
             "Die Sauberkeit"
           ],
-          "answer": "Die mangelnde Zuverlaessigkeit in laendlichen Gebieten"
+          "answer": "Die mangelnde Zuverlaessigkeit in laendlichen Gebieten",
+          "explanation": "Die richtige Antwort ist: Die mangelnde Zuverlaessigkeit in laendlichen Gebieten"
         }
       ],
       "level": "B2"
@@ -7011,7 +7049,7 @@
       "id": "B2_read_16",
       "lessonId": "B2_lesson_8",
       "title": "Ausbildung zum Medizinischen Fachangestellten",
-      "text": "Die Ausbildung zum Medizinischen Fachangestellten (MFA) dauert in der Regel drei Jahre. Sie findet im dualen System statt: Die Auszubildenden arbeiten in einer Arztpraxis und gehen an bestimmten Tagen in die Berufsschule. Zu den Aufgaben gehoeren die Terminvergabe, die Patientenbetreuung, das Assistieren bei Untersuchungen und die Abrechnung mit Krankenkassen. Nach der Ausbildung gibt es vielfaeltige Weiterbildungsmoeglichkeiten, zum Beispiel zur Fachwirtin im Gesundheitswesen oder zum Studium der Medizin.",
+      "text": "Die Ausbildung zum Medizinischen Fachangestellten, kurz MFA, dauert in der Regel drei Jahre und zaehlt zu den beliebtesten Ausbildungsberufen im Gesundheitswesen. Sie findet im dualen System statt, sodass die Auszubildenden einerseits praktisch in einer Arztpraxis oder einem Krankenhaus arbeiten und andererseits an bestimmten Tagen die Berufsschule besuchen, um theoretisches Wissen zu erwerben. Zu den vielfaeltigen Aufgaben gehoert nicht nur die Terminvergabe und Patientenbetreuung, sondern auch das Assistieren bei medizinischen Untersuchungen und Behandlungen, die Durchfuehrung von Labortests sowie die Abrechnung mit den Krankenkassen. Nach erfolgreichem Abschluss der Ausbildung eroeffnen sich zahlreiche Weiterbildungsmoeglichkeiten, beispielsweise zur Fachwirtin im Gesundheitswesen oder zum Studium der Medizin. Aufgrund des Fachkraeftemangels werden gut ausgebildete MFA dringend gesucht.",
       "questions": [
         {
           "id": "b2r16a",
@@ -7023,13 +7061,15 @@
             "Vier Jahre",
             "Fuenf Jahre"
           ],
-          "answer": "Drei Jahre"
+          "answer": "Drei Jahre",
+          "explanation": "Die richtige Antwort ist: Drei Jahre"
         },
         {
           "id": "b2r16b",
           "type": "true-false",
           "question": "Die Ausbildung findet im dualen System statt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r16c",
@@ -7041,7 +7081,8 @@
             "Durchfuehrung von Operationen",
             "Abrechnung mit Krankenkassen"
           ],
-          "answer": "Durchfuehrung von Operationen"
+          "answer": "Durchfuehrung von Operationen",
+          "explanation": "Die richtige Antwort ist: Durchfuehrung von Operationen"
         }
       ],
       "level": "B2"
@@ -7050,7 +7091,7 @@
       "id": "B2_read_17",
       "lessonId": "B2_lesson_14",
       "title": "Work-Life-Balance im Gesundheitswesen",
-      "text": "Die Work-Life-Balance ist im Gesundheitswesen oft schwierig. Schichtdienst, Wochenendarbeit und Bereitschaftsdienste belasten die Beschaeftigten. Viele Kliniken haben deshalb flexible Arbeitszeitmodelle eingefuehrt. Teilzeit, Jobsharing und Homeoffice fuer Verwaltungstaetigkeiten werden angeboten. Auch betriebliche Gesundheitsfoerderung wie Yoga-Kurse und Ruheräume fuer Mitarbeiter gewinnen an Bedeutung. Eine gute Work-Life-Balance reduziert nicht nur den Stress, sondern verbessert auch die Patientenversorgung.",
+      "text": "Die Work-Life-Balance ist im Gesundheitswesen fuer viele Beschaeftigte eine grosse Herausforderung, da Schichtdienst, Wochenendarbeit und Bereitschaftsdienste den Alltag bestimmen. Der staendige Wechsel zwischen Frueh-, Spaet- und Nachtschicht belastet den Koerper und erschwert die Planung von Freizeitaktivitaeten. Viele Kliniken haben deshalb flexible Arbeitszeitmodelle eingefuehrt, die den individuellen Beduerfnissen der Mitarbeiter besser gerecht werden. Teilzeitmodelle, Jobsharing und Homeoffice fuer Verwaltungstaetigkeiten werden zunehmend angeboten. Auch betriebliche Gesundheitsfoerderung gewinnt an Bedeutung: Yoga-Kurse, Ruehraeume fuer die Erholung zwischen den Schichten und Fitnessangebote sind Beispiele dafuer. Eine gute Work-Life-Balance reduziert nicht nur den Stress, sondern verbessert nachweislich auch die Qualitaet der Patientenversorgung. Einerseits steigen die Anforderungen, andererseits muessen die Arbeitsbedingungen verbessert werden.",
       "questions": [
         {
           "id": "b2r17a",
@@ -7062,13 +7103,15 @@
             "Die langen Urlaubszeiten",
             "Die vielen Fortbildungen"
           ],
-          "answer": "Schichtdienst, Wochenendarbeit und Bereitschaftsdienste"
+          "answer": "Schichtdienst, Wochenendarbeit und Bereitschaftsdienste",
+          "explanation": "Die richtige Antwort ist: Schichtdienst, Wochenendarbeit und Bereitschaftsdienste"
         },
         {
           "id": "b2r17b",
           "type": "true-false",
           "question": "Teilzeit und Jobsharing werden in Kliniken angeboten.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r17c",
@@ -7080,7 +7123,8 @@
             "Bessere Patientenversorgung",
             "Mehr Betten"
           ],
-          "answer": "Bessere Patientenversorgung"
+          "answer": "Bessere Patientenversorgung",
+          "explanation": "Die richtige Antwort ist: Bessere Patientenversorgung"
         }
       ],
       "level": "B2"
@@ -7089,7 +7133,7 @@
       "id": "B2_read_18",
       "lessonId": "B2_lesson_11",
       "title": "Integration von Migranten in den Arbeitsmarkt",
-      "text": "Die Integration von Migranten in den deutschen Arbeitsmarkt ist ein wichtiges gesellschaftliches Ziel. Viele zugewanderte Menschen haben qualifizierte Abschluesse, die in Deutschland nicht automatisch anerkannt werden. Das Verfahren der Anerkennung ist oft langwierig und kompliziert. Fuer aerztliche Berufe ist die Approbation erforderlich. Sprachkurse und berufliche Weiterbildungsprogramme helfen Migranten, sich auf dem deutschen Arbeitsmarkt zu etablieren. Unternehmen profitieren von der kulturellen Vielfalt ihrer Mitarbeiter.",
+      "text": "Die Integration von Migranten in den deutschen Arbeitsmarkt ist ein wichtiges gesellschaftliches Ziel, von dem sowohl die Zugewanderten als auch die Wirtschaft profitieren. Viele der nach Deutschland gekommenen Menschen haben qualifizierte Hochschulabschluesse oder Berufsausbildungen, die jedoch nicht automatisch anerkannt werden. Das Verfahren der Anerkennung auslaendischer Berufsqualifikationen ist oft langwierig und buerokratisch, was dazu fuehrt, dass gut ausgebildete Fachkraefte zunaechst unter ihrem Niveau arbeiten muessen. Insbesondere fuer die Ausuebung aerztlicher Berufe ist die Approbation erforderlich, die umfangreiche Nachweise und teilweise eine Kenntnispruefung verlangt. Spezielle Sprachkurse und berufliche Weiterbildungsprogramme helfen Migranten dabei, sich auf dem deutschen Arbeitsmarkt zu etablieren. Einerseits ist der buerokratische Aufwand notwendig, andererseits sollte das Verfahren beschleunigt werden.",
       "questions": [
         {
           "id": "b2r18a",
@@ -7101,13 +7145,15 @@
             "Die geringen Gehaelter",
             "Der Mangel an Sprachkursen"
           ],
-          "answer": "Die langwierige Anerkennung von Abschluessen"
+          "answer": "Die langwierige Anerkennung von Abschluessen",
+          "explanation": "Die richtige Antwort ist: Die langwierige Anerkennung von Abschluessen"
         },
         {
           "id": "b2r18b",
           "type": "true-false",
           "question": "Fuer aerztliche Berufe ist die Approbation erforderlich.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r18c",
@@ -7119,7 +7165,8 @@
             "Durch weniger Steuern",
             "Durch laengere Arbeitszeiten"
           ],
-          "answer": "Durch kulturelle Vielfalt der Mitarbeiter"
+          "answer": "Durch kulturelle Vielfalt der Mitarbeiter",
+          "explanation": "Die richtige Antwort ist: Durch kulturelle Vielfalt der Mitarbeiter"
         }
       ],
       "level": "B2"
@@ -7128,7 +7175,7 @@
       "id": "B2_read_19",
       "lessonId": "B2_lesson_16",
       "title": "Patientendaten und Datenschutz",
-      "text": "Der Schutz von Patientendaten ist ein zentrales Thema im Gesundheitswesen. Mit der Einfuehrung der elektronischen Patientenakte werden sensible Daten digital gespeichert. Die Datenschutz-Grundverordnung (DSGVO) der Europaeischen Union regelt den Umgang mit personenbezogenen Daten. Patienten haben das Recht zu erfahren, welche Daten gespeichert sind und wer darauf zugreifen darf. Krankenhaeuser muessen hohe Sicherheitsstandards einhalten, um Datenlecks zu vermeiden. Cyberangriffe auf Krankenhaeuser sind in den letzten Jahren haeufiger geworden.",
+      "text": "Der Schutz von Patientendaten ist ein zentrales Thema im modernen Gesundheitswesen, dessen Bedeutung mit der fortschreitenden Digitalisierung weiter zunimmt. Mit der Einfuehrung der elektronischen Patientenakte werden sensible medizinische Daten zunehmend digital gespeichert und zwischen verschiedenen Leistungserbringern ausgetauscht. Die Datenschutz-Grundverordnung der Europaeischen Union regelt den Umgang mit diesen personenbezogenen Daten auf hoechstem Schutzniveau. Patienten haben nach der DSGVO das Recht zu erfahren, welche ihrer Daten zu welchem Zweck gespeichert sind und wer darauf Zugriff erhalten hat. Krankenhaeuser und Praxen muessen daher hohe Sicherheitsstandards einhalten, um Datenlecks zuverlaessig zu verhindern. Cyberangriffe auf Krankenhaeuser, bei denen Erpressersoftware die IT-Systeme lahmlegt, sind in den letzten Jahren haeufiger geworden. Einerseits ermoeglicht die Digitalisierung eine effizientere Behandlung, andererseits steigen die Risiken fuer Datenschutzverletzungen.",
       "questions": [
         {
           "id": "b2r19a",
@@ -7140,13 +7187,15 @@
             "Die Patientenakte-Verordnung",
             "Die Sozialgesetzgebung"
           ],
-          "answer": "Die Datenschutz-Grundverordnung (DSGVO)"
+          "answer": "Die Datenschutz-Grundverordnung (DSGVO)",
+          "explanation": "Die richtige Antwort ist: Die Datenschutz-Grundverordnung (DSGVO)"
         },
         {
           "id": "b2r19b",
           "type": "true-false",
           "question": "Cyberangriffe auf Krankenhaeuser sind seltener geworden.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r19c",
@@ -7158,7 +7207,8 @@
             "Das Recht auf Bezahlung",
             "Das Recht auf Weitergabe aller Daten"
           ],
-          "answer": "Das Recht zu erfahren, welche Daten gespeichert sind"
+          "answer": "Das Recht zu erfahren, welche Daten gespeichert sind",
+          "explanation": "Die richtige Antwort ist: Das Recht zu erfahren, welche Daten gespeichert sind"
         }
       ],
       "level": "B2"
@@ -7167,7 +7217,7 @@
       "id": "B2_read_20",
       "lessonId": "B2_lesson_13",
       "title": "Soziale Medien in der Medizin",
-      "text": "Soziale Medien spielen eine wachsende Rolle in der Medizin. Viele Aerzte und Kliniken nutzen Plattformen wie Instagram oder LinkedIn, um ueber Gesundheitsthemen zu informieren. Patientenforen bieten Austausch zu Erkrankungen und Behandlungen. Allerdings gibt es Risiken: Falschinformationen verbreiten sich schnell. Medizinisches Personal sollte bei der Nutzung sozialer Medien die Berufsordnung und die Schweigepflicht beachten. Einige Kliniken haben daher Richtlinien zur Social-Media-Nutzung fuer ihre Mitarbeiter erstellt.",
+      "text": "Soziale Medien spielen im Gesundheitswesen eine zunehmend wichtige Rolle, wobei sowohl Chancen als auch Risiken zu beachten sind. Viele Aerzte und Kliniken nutzen Plattformen wie Instagram, LinkedIn oder Facebook, um die Oeffentlichkeit ueber Gesundheitsthemen aufzuklaeren, Praeventionsmassnahmen zu bewerben oder ueber neue Behandlungsmethoden zu informieren. Patientenforen bieten Betroffenen zudem die Moeglichkeit zum Austausch ueber Erkrankungen und Behandlungserfahrungen. Allerdings gibt es auch erhebliche Risiken: Falschinformationen und medizinische Mythen verbreiten sich in sozialen Netzwerken mit erschreckender Geschwindigkeit, was zu gefaehrlichem Fehlverhalten fuehren kann. Medizinisches Personal sollte bei der Nutzung sozialer Medien daher stets die Berufsordnung, die aerztliche Schweigepflicht und die Datenschutzbestimmungen beachten. Einige Kliniken haben Richtlinien zur Social-Media-Nutzung fuer ihre Mitarbeiter erstellt.",
       "questions": [
         {
           "id": "b2r20a",
@@ -7179,13 +7229,15 @@
             "Zum Verkauf von Medikamenten",
             "Nicht erlaubt"
           ],
-          "answer": "Zur Aufklaerung ueber Gesundheitsthemen"
+          "answer": "Zur Aufklaerung ueber Gesundheitsthemen",
+          "explanation": "Die richtige Antwort ist: Zur Aufklaerung ueber Gesundheitsthemen"
         },
         {
           "id": "b2r20b",
           "type": "true-false",
           "question": "In Patientenforen koennen sich Betroffene zu Erkrankungen austauschen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r20c",
@@ -7197,7 +7249,8 @@
             "Auf taegliche Beitraege",
             "Auf Werbepartnerschaften"
           ],
-          "answer": "Auf die Berufsordnung und Schweigepflicht"
+          "answer": "Auf die Berufsordnung und Schweigepflicht",
+          "explanation": "Die richtige Antwort ist: Auf die Berufsordnung und Schweigepflicht"
         }
       ],
       "level": "B2"
@@ -7206,7 +7259,7 @@
       "id": "B2_read_21",
       "lessonId": "B2_lesson_9",
       "title": "Ehrenamt im Rettungsdienst",
-      "text": "Der Rettungsdienst in Deutschland ist ohne ehrenamtliche Helfer nicht denkbar. Organisationen wie das Deutsche Rote Kreuz, die Johanniter und die Malteser sind auf freiwillige Mitarbeiter angewiesen. Ehrenamtliche absolvieren eine Grundausbildung in Erster Hilfe und werden fuer den Sanitaetsdienst geschult. Sie sind bei Grossveranstaltungen, Unfaellen und Naturkatastrophen im Einsatz. Viele junge Menschen sammeln auf diese Weise erste Erfahrungen im Gesundheitswesen. Die Arbeit ist anspruchsvoll, aber auch sehr erfuellend.",
+      "text": "Der Rettungsdienst in Deutschland waere ohne die engagierten ehrenamtlichen Helfer nicht in seiner jetzigen Form denkbar, da der hauptamtliche Dienst allein die Versorgung nicht flaechendeckend gewaehrleisten koennte. Organisationen wie das Deutsche Rote Kreuz, die Johanniter-Unfall-Hilfe und der Malteser Hilfsdienst sind auf freiwillige Mitarbeiter angewiesen, die einen erheblichen Teil ihrer Freizeit fuer den Dienst am Naechsten opfern. Die ehrenamtlichen Helfer absolvieren zunaechst eine fundierte Grundausbildung in Erster Hilfe und werden anschliessend speziell fuer den Sanitaetsdienst geschult. Sie kommen bei Grossveranstaltungen wie Sportevents oder Konzerten, bei Verkehrsunfaellen und auch bei Naturkatastrophen zum Einsatz. Viele junge Menschen sammeln auf diese Weise erste praktische Erfahrungen im Gesundheitswesen. Die Arbeit ist anspruchsvoll, koerperlich und psychisch fordernd, aber auch sehr erfuellend. Man koennte sagen, dass das Ehrenamt im Rettungsdienst eine unverzichtbare Saeule des Gesundheitswesens darstellt.",
       "questions": [
         {
           "id": "b2r21a",
@@ -7218,17 +7271,19 @@
             "Die Krankenkassen",
             "Die Ministerien"
           ],
-          "answer": "Das Rote Kreuz, die Johanniter und die Malteser"
+          "answer": "Das Rote Kreuz, die Johanniter und die Malteser",
+          "explanation": "Die richtige Antwort ist: Das Rote Kreuz, die Johanniter und die Malteser"
         },
         {
           "id": "b2r21b",
           "type": "true-false",
           "question": "Ehrenamtliche Helfer muessen eine Grundausbildung in Erster Hilfe absolvieren.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r21c",
-          "type": "opinion-match",
+          "type": "mcq",
           "question": "Wie wird die ehrenamtliche Arbeit im Rettungsdienst beschrieben?",
           "options": [
             "Langweilig und einfach",
@@ -7236,7 +7291,8 @@
             "Gefaehrlich und schlecht bezahlt",
             "Nichts fuer junge Leute"
           ],
-          "answer": "Anspruchsvoll, aber erfuellend"
+          "answer": "Anspruchsvoll, aber erfuellend",
+          "explanation": "Die richtige Antwort ist: Anspruchsvoll, aber erfuellend"
         }
       ],
       "level": "B2"
@@ -7245,7 +7301,7 @@
       "id": "B2_read_22",
       "lessonId": "B2_lesson_7",
       "title": "Ethische Fragen der Organspende",
-      "text": "Die Organspende wirft viele ethische Fragen auf. In Deutschland gilt die Entscheidungsloesung: Nur wer ausdruecklich zustimmt, wird zum Spender. Anders als in oesterreichischen Nachbarland, wo die Widerspruchsloesung gilt. Befuerworter der Widerspruchsloesung argumentieren, dass mehr Organe verfuegbar waeren. Kritiker sehen die Entscheidungsfreiheit jedes Einzelnen gefaehrdet. Medizinethiker betonen, dass die Entscheidung zur Organspende gut informiert und freiwillig sein muss.",
+      "text": "Die Organspende wirft zahlreiche ethische Fragen auf, die in der Gesellschaft und in der Politik intensiv diskutiert werden. In Deutschland gilt seit Jahren die Entscheidungsloesung, was bedeutet, dass nur diejenigen als Organspender in Frage kommen, die zu Lebzeiten explizit ihre Zustimmung erklaert haben. Anders ist die Situation im benachbarten Oesterreich, wo die Widerspruchsloesung praktiziert wird. Die Befuerworter der Widerspruchsloesung argumentieren ueberzeugend, dass auf diese Weise deutlich mehr Spenderorgane verfuegbar waeren, wodurch viele der todkranken Patienten auf den Wartelisten eine Chance erhalten koennten. Die Kritiker hingegen sehen in einer solchen Regelung einen unangemessenen Eingriff in die grundgesetzlich geschuetzte Selbstbestimmung jedes Menschen. Medizinethiker betonen, dass die Entscheidung zur Organspende gut informiert und freiwillig sein muss. Einerseits sterben taeglich Menschen, weil nicht genug Organe zur Verfuegung stehen, andererseits darf der Staat nicht ueber den Koerper seiner Buerger verfuegen.",
       "questions": [
         {
           "id": "b2r22a",
@@ -7257,13 +7313,15 @@
             "Die Pflichtspende",
             "Die Freiwilligkeit ohne Regelung"
           ],
-          "answer": "Die Entscheidungsloesung"
+          "answer": "Die Entscheidungsloesung",
+          "explanation": "Die richtige Antwort ist: Die Entscheidungsloesung"
         },
         {
           "id": "b2r22b",
           "type": "true-false",
           "question": "In Oesterreich gilt die Widerspruchsloesung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r22c",
@@ -7275,7 +7333,8 @@
             "Niedrigere Kosten",
             "Mehr Transparenz"
           ],
-          "answer": "Mehr Organe waeren verfuegbar"
+          "answer": "Mehr Organe waeren verfuegbar",
+          "explanation": "Die richtige Antwort ist: Mehr Organe waeren verfuegbar"
         }
       ],
       "level": "B2"
@@ -7284,7 +7343,7 @@
       "id": "B2_read_23",
       "lessonId": "B2_lesson_21",
       "title": "Rehabilitation nach einer Operation",
-      "text": "Nach einer schweren Operation ist die Rehabilitation ein wichtiger Schritt zur vollstaendigen Genesung. Die Reha-Massnahmen beginnen oft schon im Krankenhaus, bevor der Patient in eine Reha-Klinik verlegt wird. Dort arbeiten Aerzte, Physiotherapeuten und Ergotherapeuten zusammen. Die Dauer haengt von der Art der Operation ab. Die Krankenkasse uebernimmt die Kosten, wenn die Reha medizinisch notwendig ist. Ziel ist es, die Selbststaendigkeit des Patienten wiederherzustellen und die Rueckkehr in den Alltag zu ermoeglichen.",
+      "text": "Nach einer schweren Operation ist die Rehabilitation ein entscheidender Schritt zur vollstaendigen Genesung und Wiedererlangung der Selbstaendigkeit. Die Reha-Massnahmen beginnen oft schon waehrend des Krankenhausaufenthalts, indem erste Bewegungsuebungen durchgefuehrt werden, bevor der Patient anschliessend in eine spezialisierte Reha-Klinik verlegt wird. Dort arbeiten Aerzte, Physiotherapeuten, Ergotherapeuten und Psychologen fachuebergreifend zusammen, um einen individuell angepassten Therapieplan zu erstellen. Die Dauer der Rehabilitation haengt von der Art und Schwere der Operation, dem allgemeinen Gesundheitszustand des Patienten und dem Heilungsverlauf ab. Die gesetzliche Krankenversicherung uebernimmt in der Regel die Kosten, wenn die Reha-Massnahme medizinisch notwendig ist. Das oberste Ziel ist es, die koerperliche Selbstaendigkeit des Patienten wiederherzustellen und eine Rueckkehr in den Alltag zu ermoeglichen. Die Rehabilitation ist ebenso wichtig wie die Operation selbst.",
       "questions": [
         {
           "id": "b2r23a",
@@ -7296,13 +7355,15 @@
             "Schon im Krankenhaus",
             "In einer Selbsthilfegruppe"
           ],
-          "answer": "Schon im Krankenhaus"
+          "answer": "Schon im Krankenhaus",
+          "explanation": "Die richtige Antwort ist: Schon im Krankenhaus"
         },
         {
           "id": "b2r23b",
           "type": "true-false",
           "question": "Die Krankenkasse uebernimmt die Reha-Kosten, wenn sie medizinisch notwendig ist.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r23c",
@@ -7314,7 +7375,8 @@
             "Die OP zu wiederholen",
             "Medikamente zu reduzieren"
           ],
-          "answer": "Die Selbststaendigkeit wiederherstellen"
+          "answer": "Die Selbststaendigkeit wiederherstellen",
+          "explanation": "Die richtige Antwort ist: Die Selbststaendigkeit wiederherstellen"
         }
       ],
       "level": "B2"
@@ -7324,7 +7386,7 @@
       "lessonId": "B2_lesson_21",
       "level": "B2",
       "title": "Vorsorgeuntersuchungen und Frueherkennung",
-      "text": "Vorsorgeuntersuchungen helfen, Krankheiten fruehzeitig zu erkennen. Die gesetzlichen Krankenkassen uebernehmen die Kosten fuer viele Vorsorgeleistungen. Dazu gehoeren das Hautkrebsscreening ab 35, die Darmspiegelung ab 50 und der Gesundheits-Check-up alle drei Jahre. Viele Menschen nutzen diese Angebote jedoch nicht regelmaessig. Studien zeigen, dass die Teilnahme an Vorsorgeuntersuchungen von der Aufklaerung durch den Hausarzt abhaengt. Wer regelmaessig zur Vorsorge geht, hat bessere Heilungschancen bei vielen Erkrankungen.",
+      "text": "Vorsorgeuntersuchungen helfen dabei, Krankheiten fruehzeitig zu erkennen, bevor sie ernsthafte gesundheitliche Probleme verursachen, was die Heilungschancen erheblich verbessert. Die gesetzlichen Krankenkassen uebernehmen die Kosten fuer eine Vielzahl von Vorsorgeleistungen, deren Inanspruchnahme sie durch regelmaessige Erinnerungsschreiben foerdern. Dazu gehoeren unter anderem das Hautkrebsscreening ab 35 Jahren, die Darmspiegelung ab 50, die Mammographie fuer Frauen ab 50 und der allgemeine Gesundheits-Check-up, der alle drei Jahre durchgefuehrt werden kann. Trotz dieses umfassenden Angebots nutzen viele Menschen diese kostenlosen Untersuchungen nicht regelmaessig, oft aus Unwissenheit, Zeitmangel oder Angst vor der Diagnose. Wissenschaftliche Studien zeigen, dass die Teilnahme an Vorsorgeuntersuchungen massgeblich von der Aufklaerung durch den Hausarzt abhaengt. Wer regelmaessig zur Vorsorge geht, hat bei vielen Erkrankungen nachweislich bessere Heilungschancen. Es ist fraglich, wie die Teilnahmequote weiter gesteigert werden kann.",
       "questions": [
         {
           "id": "b2r24a",
@@ -7336,13 +7398,15 @@
             "Gesundheits-Check-up",
             "Mammographie"
           ],
-          "answer": "Hautkrebsscreening"
+          "answer": "Hautkrebsscreening",
+          "explanation": "Die richtige Antwort ist: Hautkrebsscreening"
         },
         {
           "id": "b2r24b",
           "type": "true-false",
           "question": "Die Teilnahme an Vorsorgeuntersuchungen haengt von der Aufklaerung durch den Hausarzt ab.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r24c",
@@ -7354,7 +7418,8 @@
             "Alle fuenf Jahre",
             "Alle zehn Jahre"
           ],
-          "answer": "Alle drei Jahre"
+          "answer": "Alle drei Jahre",
+          "explanation": "Die richtige Antwort ist: Alle drei Jahre"
         }
       ]
     },
@@ -7363,7 +7428,7 @@
       "lessonId": "B2_lesson_10",
       "level": "B2",
       "title": "Der richtige Umgang mit Medikamenten",
-      "text": "Die korrekte Einnahme von Medikamenten ist entscheidend fuer den Behandlungserfolg. Der Beipackzettel enthaelt wichtige Informationen zur Dosierung, Einnahme und zu moeglichen Nebenwirkungen. Patienten sollten ihren Arzt oder Apotheker fragen, wenn sie etwas nicht verstehen. Ein Medikationsplan hilft, den Ueberblick ueber mehrere Medikamente zu behalten. Besonders aeltere Menschen nehmen oft mehrere Praeparate gleichzeitig ein. Hier ist die Beratung durch den Apotheker besonders wichtig.",
+      "text": "Die korrekte Einnahme von Medikamenten ist fuer den Behandlungserfolg von entscheidender Bedeutung, da Fehler bei der Dosierung oder Einnahme schwerwiegende Folgen haben koennen. Der Beipackzettel enthaelt alle wichtigen Informationen zur richtigen Dosierung, zum Zeitpunkt der Einnahme sowie zu moeglichen Nebenwirkungen und Wechselwirkungen mit anderen Arzneimitteln. Patienten sollten ihren Arzt oder Apotheker gezielt befragen, wenn sie etwas nicht verstehen oder unsicher sind. Ein strukturierter Medikationsplan hilft insbesondere aelteren Menschen, den Ueberblick ueber mehrere gleichzeitig eingenommene Praeparate zu behalten. Eine regelmaessige Ueberpruefung der Medikation, ob alle Praeparate noch notwendig sind und ob Wechselwirkungen ausgeschlossen werden koennen, ist ebenfalls empfehlenswert. Man koennte argumentieren, dass die Arzneimitteltherapiesicherheit ein wichtiger Bestandteil der Patientenversorgung ist, der oft vernachlaessigt wird.",
       "questions": [
         {
           "id": "b2r25a",
@@ -7375,13 +7440,15 @@
             "Nur den Namen des Medikaments",
             "Die Zutatenliste"
           ],
-          "answer": "Dosierung, Einnahme und Nebenwirkungen"
+          "answer": "Dosierung, Einnahme und Nebenwirkungen",
+          "explanation": "Die richtige Antwort ist: Dosierung, Einnahme und Nebenwirkungen"
         },
         {
           "id": "b2r25b",
           "type": "true-false",
           "question": "Ein Medikationsplan hilft, mehrere Medikamente im Blick zu behalten.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r25c",
@@ -7393,7 +7460,8 @@
             "Aeltere Menschen",
             "Sportler"
           ],
-          "answer": "Aeltere Menschen"
+          "answer": "Aeltere Menschen",
+          "explanation": "Die richtige Antwort ist: Aeltere Menschen"
         }
       ]
     },
@@ -7402,7 +7470,7 @@
       "lessonId": "B2_lesson_8",
       "level": "B2",
       "title": "Das Arzt-Patienten-Gespraech",
-      "text": "Ein gutes Arzt-Patienten-Gespraech ist die Grundlage jeder Behandlung. Der Arzt sollte dem Patienten aufmerksam zuhoeren und Fachbegriffe erklaeren. Der Patient wiederum sollte seine Symptome genau beschreiben und Fragen stellen. Offene Kommunikation schafft Vertrauen und verbessert die Therapietreue. In der medizinischen Ausbildung wird deshalb grosser Wert auf Kommunikationstraining gelegt. Schwierige Gespraeche wie die Uebermittlung einer schweren Diagnose erfordern besonderes Einfuehlungsvermoegen.",
+      "text": "Ein gutes Arzt-Patienten-Gespraech ist die Grundlage jeder erfolgreichen Behandlung, da es Vertrauen schafft und die Basis fuer eine korrekte Diagnose bildet. Der Arzt sollte dem Patienten aufmerksam zuhoeren, medizinische Fachbegriffe verstaendlich erklaeren und ausreichend Zeit fuer Fragen einplanen. Der Patient wiederum sollte seine Symptome moeglichst genau beschreiben und gezielt nachfragen, wenn er etwas nicht verstanden hat. Eine offene und ehrliche Kommunikation schafft gegenseitiges Vertrauen und verbessert nachweislich die Therapietreue der Patienten. In der medizinischen Ausbildung wird deshalb grosser Wert auf Kommunikationstraining gelegt, bei dem angehende Aerzte den Umgang mit schwierigen Gespraechssituationen ueben. Besonders herausfordernd sind Gespraeche, bei denen eine schwere Diagnose uebermittelt werden muss, denn sie erfordern ein hohes Mass an Einfuehlungsvermoegen und kommunikativer Kompetenz. Man koennte sagen, dass die Gespraechsfuehrung massgeblich zum Behandlungserfolg beitraegt.",
       "questions": [
         {
           "id": "b2r26a",
@@ -7414,13 +7482,15 @@
             "Moderne Geraete",
             "Kurze Wartezeiten"
           ],
-          "answer": "Ein gutes Arzt-Patienten-Gespraech"
+          "answer": "Ein gutes Arzt-Patienten-Gespraech",
+          "explanation": "Die richtige Antwort ist: Ein gutes Arzt-Patienten-Gespraech"
         },
         {
           "id": "b2r26b",
           "type": "true-false",
           "question": "Der Patient sollte seine Symptome genau beschreiben und Fragen stellen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r26c",
@@ -7432,7 +7502,8 @@
             "Besonderes Einfuehlungsvermoegen",
             "Eine zweite Meinung"
           ],
-          "answer": "Besonderes Einfuehlungsvermoegen"
+          "answer": "Besonderes Einfuehlungsvermoegen",
+          "explanation": "Die richtige Antwort ist: Besonderes Einfuehlungsvermoegen"
         }
       ]
     },
@@ -7441,7 +7512,7 @@
       "lessonId": "B2_lesson_8",
       "level": "B2",
       "title": "Das Anschreiben fuer Medizinstudenten",
-      "text": "Ein ueberzeugendes Anschreiben ist der erste Schritt zu einem Praktikumsplatz oder einer Stelle im Krankenhaus. Medizinstudenten sollten ihre Motivation fuer das Fach deutlich machen. Praktische Erfahrungen, etwa im Pflegepraktikum oder durch studentische Mitarbeit, sind ein Plus. Auch ausseruniversitaeres Engagement zeigt Persoenlichkeit. Wichtig ist, dass das Anschreiben auf die jeweilige Stelle zugeschnitten ist. Ein Standardbrief ohne Bezug zur Klinik macht keinen guten Eindruck.",
+      "text": "Ein ueberzeugendes Anschreiben ist der erste Schritt zu einem Praktikumsplatz oder einer Stelle im Krankenhaus und sollte daher sorgfaeltig formuliert sein. Medizinstudenten sollten in ihrem Anschreiben ihre persoenliche Motivation fuer das gewaehlte Fach deutlich machen und konkret darlegen, warum sie sich gerade fuer diese Klinik oder Abteilung interessieren. Praktische Erfahrungen, etwa aus dem Pflegepraktikum, durch studentische Mitarbeit auf einer Station oder durch Famulaturen im In- und Ausland, sind ein klarer Pluspunkt. Auch ausseruniversitaeres Engagement, etwa in der studentischen Selbstverwaltung, im Rettungsdienst oder in sozialen Projekten, zeigt Persoenlichkeit und Einsatzbereitschaft. Wichtig ist, dass das Anschreiben individuell auf die jeweilige Stelle zugeschnitten ist und nicht wie ein Standardbrief wirkt. Rechtschreibung und Grammatik muessen fehlerfrei sein. Ein gutes Anschreiben kann die Chancen auf eine Einladung zum Vorstellungsgespraech deutlich erhoehen.",
       "questions": [
         {
           "id": "b2r27a",
@@ -7453,13 +7524,15 @@
             "Den Wunsch nach viel Freizeit",
             "Die Bereitschaft zu Ueberstunden"
           ],
-          "answer": "Motivation fuer das Fach und praktische Erfahrungen"
+          "answer": "Motivation fuer das Fach und praktische Erfahrungen",
+          "explanation": "Die richtige Antwort ist: Motivation fuer das Fach und praktische Erfahrungen"
         },
         {
           "id": "b2r27b",
           "type": "true-false",
           "question": "Ein Standardanschreiben ohne Bezug zur Klinik ist akzeptabel.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r27c",
@@ -7471,7 +7544,8 @@
             "Dass der Student reich ist",
             "Dass der Student keine Noten hat"
           ],
-          "answer": "Persoenlichkeit"
+          "answer": "Persoenlichkeit",
+          "explanation": "Die richtige Antwort ist: Persoenlichkeit"
         }
       ]
     },
@@ -7480,7 +7554,7 @@
       "lessonId": "B2_lesson_8",
       "level": "B2",
       "title": "Das Vorstellungsgespraech in der Klinik",
-      "text": "Das Vorstellungsgespraech in einer Klinik unterscheidet sich von Gespraechen in der freien Wirtschaft. Fachfragen zur Medizin sind haeufig. Auch Fragen zur Teamfaehigkeit und zur Belastbarkeit sind wichtig. Bewerber sollten ihre Erfahrungen aus dem Studium und frueheren Taetigkeiten konkret darstellen. Ein:e Personalverantwortliche:r achtet auf Kommunikationsfaehigkeit und Empathie. Am Ende des Gespraechs haben Bewerber die Moeglichkeit, eigene Fragen zu stellen. Das zeigt Interesse und Engagement.",
+      "text": "Das Vorstellungsgespraech in einer Klinik unterscheidet sich in mehrfacher Hinsicht von Gespraechen in der freien Wirtschaft, da neben den fachlichen Qualifikationen auch die persoenliche Eignung fuer den anspruchsvollen Klinikalltag bewertet wird. Fachfragen zur Medizin, zu Krankheitsbildern und Behandlungsmethoden sind haeufig und erfordern fundiertes Wissen aus dem Studium. Ebenso wichtig sind Fragen zur Teamfaehigkeit, zur Belastbarkeit und zum Umgang mit Stresssituationen, da die Arbeit im Krankenhaus oft unter hohem Druck stattfindet. Bewerber sollten ihre Erfahrungen aus dem Studium und frueheren Taetigkeiten konkret und strukturiert darstellen, wobei Beispiele aus der Praxis besonders ueberzeugen. Die Personalverantwortlichen achten neben der fachlichen Kompetenz besonders auf Kommunikationsfaehigkeit und Empathie. Am Ende des Gespraechs haben Bewerber die Moeglichkeit, eigene Fragen zu stellen, was Interesse und Engagement zeigt. Eine gute Vorbereitung ist daher unerlaesslich.",
       "questions": [
         {
           "id": "b2r28a",
@@ -7492,13 +7566,15 @@
             "Fragen zum Urlaub",
             "Fragen zum Gehalt"
           ],
-          "answer": "Fachfragen zur Medizin und Fragen zur Teamfaehigkeit"
+          "answer": "Fachfragen zur Medizin und Fragen zur Teamfaehigkeit",
+          "explanation": "Die richtige Antwort ist: Fachfragen zur Medizin und Fragen zur Teamfaehigkeit"
         },
         {
           "id": "b2r28b",
           "type": "true-false",
           "question": "Am Ende duerfen Bewerber eigene Fragen stellen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r28c",
@@ -7510,7 +7586,8 @@
             "Auf die Note im Abitur",
             "Auf den Wohnort"
           ],
-          "answer": "Auf Kommunikationsfaehigkeit und Empathie"
+          "answer": "Auf Kommunikationsfaehigkeit und Empathie",
+          "explanation": "Die richtige Antwort ist: Auf Kommunikationsfaehigkeit und Empathie"
         }
       ]
     },
@@ -7519,7 +7596,7 @@
       "lessonId": "B2_lesson_16",
       "level": "B2",
       "title": "Der Arztbrief nach dem Krankenhausaufenthalt",
-      "text": "Nach einem Krankenhausaufenthalt erhalten Patienten einen Arztbrief. Dieses Dokument fasst den Grund des Aufenthalts, die durchgefuehrten Untersuchungen und die Behandlung zusammen. Auch die Medikation bei Entlassung und Empfehlungen fuer die weitere Versorgung sind enthalten. Der Arztbrief ist sowohl fuer den Patienten als auch fuer den weiterbehandelnden Hausarzt wichtig. Inzwischen werden Arztbriefe oft digital uebermittelt. Patienten sollten den Brief sorgfaeltig lesen und bei Unklarheiten nachfragen.",
+      "text": "Nach einem Krankenhausaufenthalt erhalten Patienten einen Arztbrief, der alle wichtigen Informationen zur Behandlung zusammenfasst. Dieses Dokument enthaelt den Grund des Aufenthalts, die durchgefuehrten Untersuchungen, die gestellte Diagnose, die durchgefuehrte Behandlung sowie die Medikation bei Entlassung und Empfehlungen fuer die weitere Versorgung. Der Arztbrief ist sowohl fuer den Patienten als auch fuer den weiterbehandelnden Hausarzt von grosser Bedeutung, da er die Grundlage fuer die weitere medizinische Versorgung bildet. Inzwischen werden Arztbriefe oft elektronisch uebermittelt, was den Informationsfluss zwischen Krankenhaus und Hausarzt beschleunigt. Patienten sollten den Brief sorgfaeltig lesen und bei Unklarheiten nachfragen, um Missverstaendnisse bei der weiteren Behandlung zu vermeiden. Es ist empfehlenswert, den Arztbrief bei Folgeterminen und bei anderen Aerzten vorzulegen.",
       "questions": [
         {
           "id": "b2r29a",
@@ -7531,13 +7608,15 @@
             "Nur die Diagnose",
             "Nur den Entlassungstermin"
           ],
-          "answer": "Grund des Aufenthalts, Untersuchungen, Behandlung und Medikation"
+          "answer": "Grund des Aufenthalts, Untersuchungen, Behandlung und Medikation",
+          "explanation": "Die richtige Antwort ist: Grund des Aufenthalts, Untersuchungen, Behandlung und Medikation"
         },
         {
           "id": "b2r29b",
           "type": "true-false",
           "question": "Der Arztbrief ist nur fuer den Patienten wichtig.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r29c",
@@ -7549,7 +7628,8 @@
             "Ihn unterschreiben",
             "Ihn dem Arbeitgeber zeigen"
           ],
-          "answer": "Ihn sorgfaeltig lesen und bei Unklarheiten nachfragen"
+          "answer": "Ihn sorgfaeltig lesen und bei Unklarheiten nachfragen",
+          "explanation": "Die richtige Antwort ist: Ihn sorgfaeltig lesen und bei Unklarheiten nachfragen"
         }
       ]
     },
@@ -7558,7 +7638,7 @@
       "lessonId": "B2_lesson_12",
       "level": "B2",
       "title": "Die Einwilligungserklaerung verstehen",
-      "text": "Vor medizinischen Eingriffen muessen Patienten eine Einwilligungserklaerung unterschreiben. Sie bestaetigt, dass der Patient ueber die Massnahme, ihre Risiken und moegliche Alternativen aufgeklaert wurde. Das Aufklaerungsgespraech fuehrt der behandelnde Arzt. Der Patient sollte alle Fragen stellen, die ihm wichtig sind. Die Einwilligung kann jederzeit widerrufen werden. Ohne gueltige Einwilligung darf kein medizinischer Eingriff durchgefuehrt werden, ausser in Notfaellen. Dieses Recht schuetzt die Selbstbestimmung des Patienten.",
+      "text": "Vor medizinischen Eingriffen muessen Patienten eine Einwilligungserklaerung unterschreiben, die bestaetigt, dass der Patient ueber die Massnahme, ihre Risiken und moegliche Alternativen aufgeklaert wurde. Das Aufklaerungsgespraech fuehrt der behandelnde Arzt, der dafuer sorgen muss, dass der Patient alle Informationen verstanden hat. Der Patient sollte alle Fragen stellen, die ihm wichtig sind, und sich ausreichend Zeit fuer die Entscheidung nehmen. Die einmal gegebene Einwilligung kann jederzeit widerrufen werden, auch unmittelbar vor dem Eingriff. Ohne gueltige Einwilligung darf kein medizinischer Eingriff durchgefuehrt werden, ausser in lebensbedrohlichen Notfaellen, in denen der Patient nicht einwilligungsfaehig ist. Dieses Recht schuetzt die Selbstbestimmung des Patienten und ist ein zentraler Grundsatz der modernen Medizinethik. Patienten sollten sich ihrer Rechte bewusst sein und diese aktiv wahrnehmen.",
       "questions": [
         {
           "id": "b2r30a",
@@ -7570,13 +7650,15 @@
             "Dass der Patient entlassen wird",
             "Dass der Patient krank ist"
           ],
-          "answer": "Dass der Patient ueber die Massnahme aufgeklaert wurde"
+          "answer": "Dass der Patient ueber die Massnahme aufgeklaert wurde",
+          "explanation": "Die richtige Antwort ist: Dass der Patient ueber die Massnahme aufgeklaert wurde"
         },
         {
           "id": "b2r30b",
           "type": "true-false",
           "question": "Die Einwilligung kann jederzeit widerrufen werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r30c",
@@ -7588,7 +7670,8 @@
             "Der Apotheker",
             "Der Patient selbst"
           ],
-          "answer": "Der behandelnde Arzt"
+          "answer": "Der behandelnde Arzt",
+          "explanation": "Die richtige Antwort ist: Der behandelnde Arzt"
         }
       ]
     },
@@ -7597,7 +7680,7 @@
       "lessonId": "B2_lesson_14",
       "level": "B2",
       "title": "Konflikte im Krankenhausteam",
-      "text": "Konflikte im Krankenhausteam sind keine Seltenheit. Unterschiedliche Meinungen ueber Behandlungsmethoden, Stress und Zeitdruck fuehren oft zu Spannungen zwischen Aerzten und Pflegekraeften. Ungeklaerte Konflikte koennen die Patientensicherheit gefaehrden. Viele Kliniken setzen deshalb auf Konfliktmanagement und Mediation. Teambesprechungen und regelmassiges Feedback helfen, Probleme fruehzeitig anzusprechen. Eine offene Fehlerkultur traegt ebenfalls zur Konfliktvermeidung bei.",
+      "text": "Konflikte im Krankenhausteam sind keine Seltenheit und koennen verschiedene Ursachen haben. Unterschiedliche Meinungen ueber Behandlungsmethoden, berufsgruppenuebergreifende Spannungen zwischen Aerzten und Pflegekraeften sowie der allgegenwaertige Stress und Zeitdruck fuehren oft zu Konflikten. Ungeklaerte Konflikte koennen nicht nur das Arbeitsklima verschlechtern, sondern auch die Patientensicherheit gefaehrden, da wichtige Informationen nicht richtig weitergegeben werden. Viele Kliniken setzen deshalb auf professionelles Konfliktmanagement und Mediation, bei der ausgebildete Mediatoren zwischen den Parteien vermitteln. Regelmaessige Teambesprechungen und ein strukturiertes Feedbacksystem helfen dabei, Probleme fruehzeitig anzusprechen, bevor sie eskalieren koennen. Eine offene Fehlerkultur, in der Fehler zugegeben und als Lernchance betrachtet werden, traegt ebenfalls zur Konfliktvermeidung bei. Ein respektvoller Umgang miteinander ist die Grundlage fuer ein funktionierendes Team.",
       "questions": [
         {
           "id": "b2r31a",
@@ -7609,13 +7692,15 @@
             "Zu viele Fortbildungen",
             "Zu wenig Patienten"
           ],
-          "answer": "Unterschiedliche Meinungen, Stress und Zeitdruck"
+          "answer": "Unterschiedliche Meinungen, Stress und Zeitdruck",
+          "explanation": "Die richtige Antwort ist: Unterschiedliche Meinungen, Stress und Zeitdruck"
         },
         {
           "id": "b2r31b",
           "type": "true-false",
           "question": "Ungeklaerte Konflikte koennen die Patientensicherheit gefaehrden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r31c",
@@ -7627,7 +7712,8 @@
             "Mehr Hierarchie",
             "Weniger Besprechungen"
           ],
-          "answer": "Eine offene Fehlerkultur und regelmassiges Feedback"
+          "answer": "Eine offene Fehlerkultur und regelmassiges Feedback",
+          "explanation": "Die richtige Antwort ist: Eine offene Fehlerkultur und regelmassiges Feedback"
         }
       ]
     },
@@ -7636,7 +7722,7 @@
       "lessonId": "B2_lesson_2",
       "level": "B2",
       "title": "Eine medizinische Studie verstehen",
-      "text": "Medizinische Studien sind die Grundlage fuer neue Behandlungen. In wissenschaftlichen Artikeln werden die Methoden, Ergebnisse und Schlussfolgerungen einer Studie beschrieben. Wichtige Bestandteile sind die Einleitung, die Methodik, die Ergebnisse und die Diskussion. Leser sollten auf die Anzahl der Teilnehmer achten und ob die Studie randomisiert und kontrolliert war. Nicht alle Studien sind von gleicher Qualitaet. Eine kritische Bewertung der Studie ist daher wichtig, bevor man die Ergebnisse in der Praxis anwendet.",
+      "text": "Medizinische Studien sind die Grundlage fuer neue Behandlungen und medizinische Fortschritte. In wissenschaftlichen Artikeln werden die Methoden, Ergebnisse und Schlussfolgerungen einer Studie beschrieben, wobei bestimmte formale Standards eingehalten werden muessen. Wichtige Bestandteile eines Studienartikels sind die Einleitung, in der die Forschungsfrage dargelegt wird, die Methodik, die Ergebnisse und die Diskussion der Ergebnisse. Leser sollten bei der Bewertung einer Studie besonders auf die Anzahl der Teilnehmer achten und darauf, ob die Studie randomisiert und kontrolliert war, da dies die Aussagekraft erheblich beeinflusst. Nicht alle Studien sind von gleicher Qualitaet: Manche haben zu wenige Teilnehmer oder methodische Maengel, die die Ergebnisse verzerren koennen. Eine kritische Bewertung der Studie ist daher wichtig, bevor man die Ergebnisse in der praktischen Arbeit anwendet. Evidenzbasierte Medizin bedeutet, dass Behandlungsentscheidungen auf der Grundlage hochwertiger Studien getroffen werden sollen.",
       "questions": [
         {
           "id": "b2r32a",
@@ -7648,13 +7734,15 @@
             "Nur Diskussion",
             "Titel, Autor, Datum"
           ],
-          "answer": "Einleitung, Methodik, Ergebnisse und Diskussion"
+          "answer": "Einleitung, Methodik, Ergebnisse und Diskussion",
+          "explanation": "Die richtige Antwort ist: Einleitung, Methodik, Ergebnisse und Diskussion"
         },
         {
           "id": "b2r32b",
           "type": "true-false",
           "question": "Alle medizinischen Studien sind von gleicher Qualitaet.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r32c",
@@ -7666,7 +7754,8 @@
             "Auf den Namen des Autors",
             "Auf die Laenge des Artikels"
           ],
-          "answer": "Auf die Anzahl der Teilnehmer und ob die Studie randomisiert war"
+          "answer": "Auf die Anzahl der Teilnehmer und ob die Studie randomisiert war",
+          "explanation": "Die richtige Antwort ist: Auf die Anzahl der Teilnehmer und ob die Studie randomisiert war"
         }
       ]
     },
@@ -7675,7 +7764,7 @@
       "lessonId": "B2_lesson_16",
       "level": "B2",
       "title": "Gesundheits-Apps im Test",
-      "text": "Gesundheits-Apps erfreuen sich wachsender Beliebtheit. Sie helfen bei der Dokumentation von Blutdruckwerten, erinnern an die Medikamenteneinnahme oder unterstuetzen bei der Ernaehrungsumstellung. Die Auswahl ist gross. Doch nicht alle Apps sind empfehlenswert. Das Bundesinstitut fuer Arzneimittel und Medizinprodukte (BfArM) prueft einige Gesundheits-Apps und kann sie als Digitale Gesundheitsanwendungen (DiGA) zulassen. Diese koennen Aerzte ihren Patienten auf Rezept verschreiben. Vor der Nutzung sollte man die Datenschutzbedingungen der App pruefen.",
+      "text": "Gesundheits-Apps erfreuen sich wachsender Beliebtheit, da sie viele nuetzliche Funktionen bieten. Sie helfen bei der Dokumentation von Blutdruckwerten, erinnern an die regelmaessige Medikamenteneinnahme, unterstuetzen bei der Ernaehrungsplanung oder messen die zurueckgelegten Schritte, um zu mehr Bewegung zu motivieren. Besonders fuer chronisch kranke Menschen koennen solche Apps eine wertvolle Unterstuetzung im Alltag sein. Allerdings ist die Qualitaet der verfuegbaren Gesundheits-Apps sehr unterschiedlich, da sie nicht alle einer strengen medizinischen Pruefung unterzogen werden muessen. Experten empfehlen daher, vor der Nutzung einer Gesundheits-App auf serioese Anbieter zu achten und gegebenenfalls den Arzt um Rat zu fragen. Der Datenschutz ist ein weiteres wichtiges Kriterium: Die App sollte erklaeren, welche Daten erhoben werden und ob sie an Dritte weitergegeben werden. Einige Apps sind inzwischen als Medizinprodukte zertifiziert und koennen auf Rezept verschrieben werden.",
       "questions": [
         {
           "id": "b2r33a",
@@ -7687,13 +7776,15 @@
             "Sie stellen Diagnosen",
             "Sie verkaufen Medikamente"
           ],
-          "answer": "Sie helfen bei der Dokumentation und erinnern an Medikamente"
+          "answer": "Sie helfen bei der Dokumentation und erinnern an Medikamente",
+          "explanation": "Die richtige Antwort ist: Sie helfen bei der Dokumentation und erinnern an Medikamente"
         },
         {
           "id": "b2r33b",
           "type": "true-false",
           "question": "Das BfArM kann Gesundheits-Apps als DiGA zulassen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r33c",
@@ -7705,7 +7796,8 @@
             "Die Anzahl der Downloads",
             "Den Preis im Vergleich"
           ],
-          "answer": "Die Datenschutzbedingungen"
+          "answer": "Die Datenschutzbedingungen",
+          "explanation": "Die richtige Antwort ist: Die Datenschutzbedingungen"
         }
       ]
     },
@@ -7714,7 +7806,7 @@
       "lessonId": "B2_lesson_21",
       "level": "B2",
       "title": "Hygiene im Krankenhaus",
-      "text": "Hygiene ist im Krankenhaus von groesster Bedeutung. Die Haendedesinfektion ist die wichtigste Massnahme zur Vermeidung von Krankenhausinfektionen. Jeder Mitarbeiter muss die Hygieneregeln kennen und einhalten. Dazu gehoeren das Tragen von Schutzkleidung, die richtige Reinigung von Geraeten und die sterile Arbeitsweise bei Operationen. Das Krankenhaus-Hygienepersonal ueberwacht die Einhaltung der Vorschriften. Besonders gefaehrlich sind multiresistente Keime, gegen die viele Antibiotika nicht mehr wirken.",
+      "text": "Hygiene im Krankenhaus ist von entscheidender Bedeutung, da Krankenhausinfektionen zu den haeufigsten Komplikationen waehrend eines stationaeren Aufenthalts zaehlen. Die wichtigste Massnahme zur Vermeidung von Infektionen ist die gruendliche Haendedesinfektion, die vor und nach jedem Patientenkontakt durchgefuehrt werden muss. Darueber hinaus gibt es spezielle Hygienestandards fuer Operationssaele, Intensivstationen und Isolierstationen, die streng eingehalten werden muessen. Besonders problematisch sind multiresistente Keime wie MRSA, die gegen viele Antibiotika unempfindlich sind und schwere Infektionen verursachen koennen. Um die Ausbreitung solcher Keime zu verhindern, werden Patienten mit bekanntem MRSA-Befall isoliert und mit speziellen Desinfektionsmitteln behandelt. Alle Mitarbeiter im Krankenhaus werden regelmaessig in Hygienemassnahmen geschult, wobei die Einhaltung der Vorschriften kontinuierlich ueberprueft wird. Die Bemuehungen haben in den letzten Jahren zu einem Rueckgang der Krankenhausinfektionen gefuehrt.",
       "questions": [
         {
           "id": "b2r34a",
@@ -7726,13 +7818,15 @@
             "Schutzimpfungen",
             "Luftfilter"
           ],
-          "answer": "Die Haendedesinfektion"
+          "answer": "Die Haendedesinfektion",
+          "explanation": "Die richtige Antwort ist: Die Haendedesinfektion"
         },
         {
           "id": "b2r34b",
           "type": "true-false",
           "question": "Das Hygienepersonal ueberwacht die Einhaltung der Vorschriften.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r34c",
@@ -7744,7 +7838,8 @@
             "Keime, die nur im Sommer vorkommen",
             "Harmlose Bakterien"
           ],
-          "answer": "Keime, die gegen viele Antibiotika nicht mehr wirken"
+          "answer": "Keime, die gegen viele Antibiotika nicht mehr wirken",
+          "explanation": "Die richtige Antwort ist: Keime, die gegen viele Antibiotika nicht mehr wirken"
         }
       ]
     },
@@ -7753,7 +7848,7 @@
       "lessonId": "B2_lesson_14",
       "level": "B2",
       "title": "Schichtarbeit und Schlafstoerungen",
-      "text": "Schichtarbeit ist fuer viele Beschaeftigte im Gesundheitswesen Alltag. Der stetige Wechsel zwischen Frueh-, Spaet- und Nachtschicht belastet den Koerper. Der natuerliche Schlaf-Wach-Rhythmus wird gestoert. Die Folgen sind Schlafstoerungen, Muedigkeit und Konzentrationsprobleme. Langfristig erhoeht Schichtarbeit das Risiko fuer Herz-Kreislauf-Erkrankungen. Experten empfehlen, nach der Nachtschicht ausreichend zu schlafen und auf eine gesunde Ernaehrung zu achten. Auch kurze Nickerchen vor der Nachtschicht koennen helfen.",
+      "text": "Schichtarbeit ist im Gesundheitswesen unvermeidbar, da Patienten rund um die Uhr versorgt werden muessen. Allerdings bringt die Arbeit zu wechselnden Zeiten erhebliche gesundheitliche Risiken mit sich. Der staendige Wechsel zwischen Frueh-, Spaet- und Nachtschicht stoert den natuerlichen Schlaf-Wach-Rhythmus des Koerpers, was zu chronischen Schlafstoerungen fuehren kann. Viele Schichtarbeiter klagen ueber Einschlafprobleme, durchschlafgestoerten Schlaf und Tagesmuedigkeit, was die Konzentrationsfaehigkeit beeintraechtigt und das Unfallrisiko erhoeht. Langfristig erhoeht Schichtarbeit das Risiko fuer Herz-Kreislauf-Erkrankungen, Stoffwechselstoerungen und psychische Erkrankungen. Um die negativen Auswirkungen zu minimieren, empfehlen Experten eine moeglichst regelmassige Schlafroutine, abgedunkelte Schlafzimmer und den Verzicht auf Koffein vor dem Schlafengehen. Arbeitgeber sind gefordert, gesundheitsfoerdernde Massnahmen anzubieten und Schichtplaene moeglichst vertraeglich zu gestalten.",
       "questions": [
         {
           "id": "b2r35a",
@@ -7765,13 +7860,15 @@
             "Bessere Laune",
             "Weniger Hunger"
           ],
-          "answer": "Schlafstoerungen, Muedigkeit und Konzentrationsprobleme"
+          "answer": "Schlafstoerungen, Muedigkeit und Konzentrationsprobleme",
+          "explanation": "Die richtige Antwort ist: Schlafstoerungen, Muedigkeit und Konzentrationsprobleme"
         },
         {
           "id": "b2r35b",
           "type": "true-false",
           "question": "Schichtarbeit erhoeht das Risiko fuer Herz-Kreislauf-Erkrankungen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r35c",
@@ -7783,7 +7880,8 @@
             "Keine festen Schlafzeiten",
             "Viel Kaffee trinken"
           ],
-          "answer": "Nach der Nachtschicht ausreichend schlafen und gesund essen"
+          "answer": "Nach der Nachtschicht ausreichend schlafen und gesund essen",
+          "explanation": "Die richtige Antwort ist: Nach der Nachtschicht ausreichend schlafen und gesund essen"
         }
       ]
     },
@@ -7792,7 +7890,7 @@
       "lessonId": "B2_lesson_12",
       "level": "B2",
       "title": "Patientenbeschwerde richtig formulieren",
-      "text": "Wenn Patienten mit der Behandlung unzufrieden sind, haben sie das Recht, eine Beschwerde einzureichen. Die Beschwerde sollte sachlich und klar formuliert sein. Eine schriftliche Beschwerde an die Klinikleitung oder die Krankenkasse ist am effektivsten. Wichtig ist, den Sachverhalt genau zu beschreiben: Wann ist was passiert? Welche Folgen hatte der Vorfall? Die Klinik ist verpflichtet, innerhalb einer bestimmten Frist zu reagieren. Bei schwerwiegenden Faellen kann auch die Patientenberatungsstelle eingeschaltet werden.",
+      "text": "Wenn Patienten mit der Behandlung oder dem Verhalten des Personals unzufrieden sind, haben sie das Recht, eine Beschwerde einzureichen. Eine Beschwerde sollte sachlich formuliert sein und die Gruende der Unzufriedenheit klar benennen, damit das Krankenhaus oder die Praxis angemessen reagieren kann. Die meisten Kliniken haben ein Beschwerdemanagement eingerichtet, das sich um die Anliegen der Patienten kuemmert. Zunaechst wird die Beschwerde geprueft, dann folgt ein Gesprach mit den beteiligten Personen, und schliesslich wird eine Rueckmeldung an den Patienten gegeben. In vielen Faellen kann eine Beschwerde durch ein klarendes Gespraech ausgeraumt werden. Falls der Patient mit der Bearbeitung nicht zufrieden ist, kann er sich an die Patientenberatungsstelle oder die Aerztekammer wenden. Beschwerden werden von den Kliniken ernst genommen, da sie dazu beitragen koennen, Fehler zu erkennen und die Qualitaet der Versorgung zu verbessern. Eine konstruktive Beschwerde ist daher ein wichtiges Instrument der Qualitaetssicherung.",
       "questions": [
         {
           "id": "b2r36a",
@@ -7804,13 +7902,15 @@
             "Kurz ohne Details",
             "Nur muendlich"
           ],
-          "answer": "Sachlich und klar"
+          "answer": "Sachlich und klar",
+          "explanation": "Die richtige Antwort ist: Sachlich und klar"
         },
         {
           "id": "b2r36b",
           "type": "true-false",
           "question": "Die Klinik muss innerhalb einer bestimmten Frist auf Beschwerden reagieren.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r36c",
@@ -7822,7 +7922,8 @@
             "Die Apotheke",
             "Die Polizei"
           ],
-          "answer": "Die Patientenberatungsstelle"
+          "answer": "Die Patientenberatungsstelle",
+          "explanation": "Die richtige Antwort ist: Die Patientenberatungsstelle"
         }
       ]
     },
@@ -7831,7 +7932,7 @@
       "lessonId": "B2_lesson_16",
       "level": "B2",
       "title": "Bedienungsanleitung fuer ein Blutdruckmessgeraet",
-      "text": "Moderne Blutdruckmessgeraete sind einfach zu bedienen. Vor der Messung sollte der Patient fuenf Minuten ruhig sitzen. Die Manschette wird am Oberarm auf Herzhoche angelegt. Waehrend der Messung sollte der Patient nicht sprechen. Das Geraet zeigt den systolischen und diastolischen Wert an. Der normale Blutdruck liegt unter 120/80 mmHg. Bei wiederholt hohen Werten sollte ein Arzt aufgesucht werden. Die Geraete sollten regelmaessig ueberprueft werden, um genaue Messungen zu gewaehrleisten.",
+      "text": "Moderne Blutdruckmessgeraete fuer den Hausgebrauch sind einfach zu bedienen und liefern zuverlaessige Messergebnisse, sofern sie korrekt angewendet werden. Vor der Messung sollte der Patient fuenf Minuten ruhig sitzen und sich entspannen. Die Manschette wird am Oberarm auf Herzhoche angelegt und sollte weder zu locker noch zu fest sitzen. Waehrend der Messung sollte der Arm entspannt auf einer Tischplatte aufliegen, der Patient sollte nicht sprechen und die Beine nicht uebereinanderschlagen. Idealerweise werden zwei Messungen im Abstand von ein bis zwei Minuten durchgefuehrt, deren Mittelwert anschliessend notiert wird. Wichtig ist, dass die Messungen immer zur gleichen Tageszeit und unter aehnlichen Bedingungen stattfinden, damit die Werte vergleichbar sind. Die gesetzlichen Krankenkassen uebernehmen die Kosten fuer ein Blutdruckmessgeraet, wenn eine entsprechende Diagnose wie Bluthochdruck vorliegt. Eine regelmaessige Blutdruckselbstmessung ermoeglicht eine bessere Einstellung des Blutdrucks.",
       "questions": [
         {
           "id": "b2r37a",
@@ -7843,13 +7944,15 @@
             "Zehn Minuten",
             "Dreissig Minuten"
           ],
-          "answer": "Fuenf Minuten"
+          "answer": "Fuenf Minuten",
+          "explanation": "Die richtige Antwort ist: Fuenf Minuten"
         },
         {
           "id": "b2r37b",
           "type": "true-false",
           "question": "Waehrend der Messung sollte der Patient nicht sprechen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r37c",
@@ -7861,7 +7964,8 @@
             "Ueber 160/100",
             "Genau 130/85"
           ],
-          "answer": "Unter 120/80"
+          "answer": "Unter 120/80",
+          "explanation": "Die richtige Antwort ist: Unter 120/80"
         }
       ]
     },
@@ -7870,7 +7974,7 @@
       "lessonId": "B2_lesson_10",
       "level": "B2",
       "title": "Ablehnung einer Kostenuebernahme durch die Krankenkasse",
-      "text": "Manchmal lehnen Krankenkassen die Uebernahme von Behandlungskosten ab. Der Bescheid enthaelt eine Begruendung und eine Rechtsbehelfsbelehrung. Versicherte haben die Moeglichkeit, innerhalb eines Monats Widerspruch einzulegen. Der Widerspruch sollte schriftlich erfolgen und die Gruende fuer die Ablehnung widerlegen. Eine arztliche Stellungnahme kann helfen. Kommt die Kasse dem Widerspruch nicht nach, kann vor dem Sozialgericht geklagt werden. Viele Versicherte scheuen den Aufwand, obwohl die Erfolgsaussichten oft gut sind.",
+      "text": "Es kann vorkommen, dass eine Krankenkasse die Uebernahme von Behandlungskosten ablehnt, was fuer die betroffenen Patienten eine grosse Belastung darstellt. In einem solchen Fall erhalten die Versicherten einen schriftlichen Bescheid, der die Ablehnung begruenden muss. Gegen diesen Bescheid kann innerhalb eines Monats Widerspruch eingelegt werden, der schriftlich und mit einer Begruendung versehen bei der Krankenkasse eingereicht werden muss. Der Widerspruch sollte sich auf die konkreten Ablehnungsgruende beziehen und gegebenenfalls durch ein aerztliches Attest oder eine Stellungnahme des behandelnden Arztes gestuetzt werden. Lehnt die Krankenkasse den Widerspruch ab, kann vor dem Sozialgericht Klage eingereicht werden. Viele Krankenkassen bieten ein Widerspruchsverfahren an, bei dem der Fall von unabhaengigen Medizinern noch einmal geprueft wird. Patienten sollten sich bei einer Ablehnung nicht entmutigen lassen, sondern ihre Rechte aktiv wahrnehmen. In vielen Faellen laesst sich eine Entscheidung der Krankenkasse erfolgreich anfechten.",
       "questions": [
         {
           "id": "b2r38a",
@@ -7882,13 +7986,15 @@
             "Drei Monate",
             "Ein Jahr"
           ],
-          "answer": "Einen Monat"
+          "answer": "Einen Monat",
+          "explanation": "Die richtige Antwort ist: Einen Monat"
         },
         {
           "id": "b2r38b",
           "type": "true-false",
           "question": "Der Widerspruch sollte schriftlich erfolgen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r38c",
@@ -7900,7 +8006,8 @@
             "Eine neue Versicherung suchen",
             "Den Arzt wechseln"
           ],
-          "answer": "Vor dem Sozialgericht klagen"
+          "answer": "Vor dem Sozialgericht klagen",
+          "explanation": "Die richtige Antwort ist: Vor dem Sozialgericht klagen"
         }
       ]
     },
@@ -7909,7 +8016,7 @@
       "lessonId": "B2_lesson_8",
       "level": "B2",
       "title": "Arbeitssicherheit in der Klinik",
-      "text": "Die Arbeitssicherheit in Krankenhaeusern umfasst viele Bereiche. Mitarbeiter sind Gefahren durch Infektionen, schwere Lasten und chemische Stoffe ausgesetzt. Deshalb gibt es genaue Vorschriften zum Arbeitsschutz. Dazu gehoeren das Tragen von Schutzkleidung, die richtige Hebe-Technik beim Bewegen von Patienten und der Umgang mit Gefahrstoffen. Die Berufsgenossenschaft fuer Gesundheitsdienst und Wohlfahrtspflege (BGW) berate Kliniken zum Arbeitsschutz. Regelmaessige Unterweisungen sind Pflicht fuer alle Mitarbeiter.",
+      "text": "Die Arbeitssicherheit hat in Krankenhaeusern einen hohen Stellenwert, da die Beschaeftigten taeglich verschiedenen Gefahren ausgesetzt sind. Dazu gehoeren der Kontakt mit Infektionserregern, der Umgang mit scharfen Instrumenten wie Skalpellen und Kanuelen, die Arbeit mit gefaehrlichen Chemikalien sowie die koerperliche Belastung beim Heben und Lagern von Patienten. Um diese Risiken zu minimieren, gibt es umfassende Sicherheitsvorschriften und regelmassige Schulungen fuer alle Mitarbeiter. Dazu gehoeren verbindliche Tragepflichten fuer Schutzkleidung wie Handschuhe, Mundschutz und Schutzbrillen sowie Sicherheitsstandards fuer den Umgang mit Nadeln und anderen spitzen Gegenstaenden. Auch die praeventive Impfung gegen Hepatitis B und andere Infektionskrankheiten ist fuer medizinisches Personal Pflicht. Bei Arbeitsunfaellen oder dem Verdacht auf eine Berufskrankheit muss der Vorfall dokumentiert und der Berufsgenossenschaft gemeldet werden. Die Arbeitssicherheit traegt wesentlich zur Gesundheit der Mitarbeiter und damit zur Qualitaet der Patientenversorgung bei.",
       "questions": [
         {
           "id": "b2r39a",
@@ -7921,13 +8028,15 @@
             "Heissem Wetter",
             "Elektrischem Strom"
           ],
-          "answer": "Infektionen, schweren Lasten und chemischen Stoffen"
+          "answer": "Infektionen, schweren Lasten und chemischen Stoffen",
+          "explanation": "Die richtige Antwort ist: Infektionen, schweren Lasten und chemischen Stoffen"
         },
         {
           "id": "b2r39b",
           "type": "true-false",
           "question": "Die BGW berate Kliniken zum Arbeitsschutz.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r39c",
@@ -7939,7 +8048,8 @@
             "Einmalige Einweisung",
             "Ein Fuehrerschein"
           ],
-          "answer": "Regelmaessige Unterweisungen"
+          "answer": "Regelmaessige Unterweisungen",
+          "explanation": "Die richtige Antwort ist: Regelmaessige Unterweisungen"
         }
       ]
     },
@@ -7948,7 +8058,7 @@
       "lessonId": "B2_lesson_14",
       "level": "B2",
       "title": "Psychische Belastung im Pflegeberuf",
-      "text": "Die psychische Belastung in Pflegeberufen ist hoch. Pflegekraefte sind taeglich mit Leid, Tod und schweren Schicksalen konfrontiert. Zeitdruck und Personalmangel verstaerken die Belastung. Viele Pflegekraefte entwickeln Symptome von Erschoepfung oder Depression. Supervision und psychologische Beratung werden daher immer wichtiger. Einige Kliniken bieten feste Ansprechpartner fuer psychische Probleme an. Auch der Austausch im Team hilft, mit belastenden Situationen umzugehen.",
+      "text": "Der Pflegeberuf ist einer der schoensten, aber auch einer der belastendsten Berufe ueberhaupt. Pflegekraefte sind taeglich mit Leid, Schmerz und Tod konfrontiert, was auf Dauer eine erhebliche psychische Belastung darstellt. Hinzu kommen der hohe Zeitdruck, der Personalmangel und der buerokratische Aufwand, die den Arbeitsalltag zunehmend erschweren. Viele Pflegekraefte leiden unter emotionaler Erschoepfung, Zynismus und verminderter Leistungsfaehigkeit, was als Burnout bezeichnet wird. Die Fluktuation in der Pflege ist hoch, und viele gut ausgebildete Fachkraefte verlassen den Beruf vorzeitig. Um die psychische Gesundheit der Pflegekraefte zu schuetzen, bieten immer mehr Kliniken Supervision, psychologische Beratung und Stressmanagement-Kurse an. Auch eine bessere Personalausstattung und eine wertschaetzende Fuehrungskultur koennen dazu beitragen, die psychische Belastung zu reduzieren. Es ist dringend erforderlich, die Arbeitsbedingungen in der Pflege zu verbessern, um den Beruf langfristig attraktiv zu halten.",
       "questions": [
         {
           "id": "b2r40a",
@@ -7960,13 +8070,15 @@
             "Mit Finanzfragen",
             "Mit Reparaturen"
           ],
-          "answer": "Mit Leid, Tod und schweren Schicksalen"
+          "answer": "Mit Leid, Tod und schweren Schicksalen",
+          "explanation": "Die richtige Antwort ist: Mit Leid, Tod und schweren Schicksalen"
         },
         {
           "id": "b2r40b",
           "type": "true-false",
           "question": "Supervision und psychologische Beratung werden in der Pflege immer wichtiger.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r40c",
@@ -7978,7 +8090,8 @@
             "Bessere Bezahlung",
             "Moderne Geraete"
           ],
-          "answer": "Zeitdruck und Personalmangel"
+          "answer": "Zeitdruck und Personalmangel",
+          "explanation": "Die richtige Antwort ist: Zeitdruck und Personalmangel"
         }
       ]
     },
@@ -7987,7 +8100,7 @@
       "lessonId": "B2_lesson_9",
       "level": "B2",
       "title": "Ernaehrungsempfehlungen fuer Diabetiker",
-      "text": "Menschen mit Diabetes muessen auf ihre Ernaehrung besonders achten. Der Blutzuckerspiegel wird stark von der Nahrungsaufnahme beeinflusst. Empfohlen werden ballaststoffreiche Lebensmittel wie Vollkornprodukte, Gemuese und Huelsenfruechte. Zucker und stark verarbeitete Kohlenhydrate sollten vermieden werden. Die Mahlzeiten sollten ueber den Tag verteilt werden. Eine Ernaehrungsberatung durch geschultes Fachpersonal kann Betroffenen helfen, ihren Speiseplan optimal anzupassen.",
+      "text": "Fuer Menschen mit Diabetes ist eine angepasste Ernaehrung ein zentraler Bestandteil der Behandlung, da der Blutzuckerspiegel massgeblich von der Nahrungsaufnahme beeinflusst wird. Grundsaetzlich wird eine ausgewogene Mischkost empfohlen, die reich an Ballaststoffen, Vitaminen und Mineralstoffen ist. Vollkornprodukte, Gemuese, Huelsenfruechte und magere Proteinquellen sollten bevorzugt werden, waehrend zuckerhaltige Getraenke, Suessigkeiten und stark verarbeitete Lebensmittel gemieden werden sollten. Die Kohlenhydratmenge sollte ueber den Tag verteilt werden, um starke Blutzuckerschwankungen zu vermeiden. Viele Diabetiker fuehren eine Blutzuckertagebuch, um den Zusammenghang zwischen Ernaehrung und Blutzuckerwerten besser zu verstehen. Auch regelmaessige Bewegung unterstuetzt die Blutzuckerkontrolle. Die Ernahrungsberatung durch qualifizierte Fachkraefte wird von den Krankenkassen bezahlt und sollte von jedem Diabetiker genutzt werden. Eine gute Blutzuckereinstellung kann Spaetschaeden wie Nierenerkrankungen oder Durchblutungsstoerungen verhindern.",
       "questions": [
         {
           "id": "b2r41a",
@@ -7999,13 +8112,15 @@
             "Fertiggerichte",
             "Gesuessene Getraenke"
           ],
-          "answer": "Ballaststoffreiche Lebensmittel wie Vollkorn und Gemuese"
+          "answer": "Ballaststoffreiche Lebensmittel wie Vollkorn und Gemuese",
+          "explanation": "Die richtige Antwort ist: Ballaststoffreiche Lebensmittel wie Vollkorn und Gemuese"
         },
         {
           "id": "b2r41b",
           "type": "true-false",
           "question": "Der Blutzuckerspiegel wird stark von der Nahrungsaufnahme beeinflusst.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r41c",
@@ -8017,7 +8132,8 @@
             "Medikamente allein",
             "Verzicht auf alle Kohlenhydrate"
           ],
-          "answer": "Eine Ernaehrungsberatung"
+          "answer": "Eine Ernaehrungsberatung",
+          "explanation": "Die richtige Antwort ist: Eine Ernaehrungsberatung"
         }
       ]
     },
@@ -8026,7 +8142,7 @@
       "lessonId": "B2_lesson_3",
       "level": "B2",
       "title": "Informationen zur Grippeimpfung",
-      "text": "Die Staendige Impfkommission (STIKO) empfiehlt die jaehrliche Grippeimpfung fuer bestimmte Personengruppen. Dazu gehoeren Menschen ueber 60 Jahre, chronisch Kranke, Schwangere und medizinisches Personal. Die Impfung wird im Herbst verabreicht, idealerweise zwischen Oktober und November. Sie schuetzt vor den in der Saison zirkulierenden Virusstaemmen. Der Impfschutz baut sich innerhalb von zwei Wochen auf. Nebenwirkungen sind selten und meist mild, wie eine Roetung an der Einstichstelle oder leichte Muedigkeit.",
+      "text": "Die Grippeimpfung wird von der Staendigen Impfkommission, kurz STIKO, fuer bestimmte Bevoelkerungsgruppen jaehrlich empfohlen. Dazu gehoeren Menschen ueber 60 Jahre, chronisch Kranke, Schwangere sowie medizinisches Personal, das beruflich einem erhoehten Infektionsrisiko ausgesetzt ist. Der Impfstoff wird jedes Jahr neu zusammengesetzt, da die Grippeviren staendig veraendern, sodass der Impfschutz nur fuer eine Saison anhaelt. Die Impfung erfolgt in der Regel zwischen Oktober und Dezember, also vor Beginn der Grippesaison. Obwohl die Impfung keinen vollstaendigen Schutz bieten kann, reduziert sie das Risiko einer schweren Erkrankung deutlich. In den letzten Jahren ist die Impfbereitschaft in der Bevoelkerung leider zurueckgegangen, was zu schwereren Grippewellen fuehren kann. Die Impfung wird von den gesetzlichen Krankenkassen uebernommen und kann in der Arztpraxis oder in manchen Apotheken durchgefuehrt werden. Neben der Eigenprotektion leisten Geimpfte auch einen Beitrag zum Schutz gefaehrdeter Personen.",
       "questions": [
         {
           "id": "b2r42a",
@@ -8038,13 +8154,15 @@
             "Nur Sportler",
             "Nur Menschen unter 30"
           ],
-          "answer": "Menschen ueber 60, chronisch Kranke und medizinisches Personal"
+          "answer": "Menschen ueber 60, chronisch Kranke und medizinisches Personal",
+          "explanation": "Die richtige Antwort ist: Menschen ueber 60, chronisch Kranke und medizinisches Personal"
         },
         {
           "id": "b2r42b",
           "type": "true-false",
           "question": "Der Impfschutz baut sich innerhalb von zwei Wochen auf.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r42c",
@@ -8056,7 +8174,8 @@
             "Im Dezember",
             "Im Sommer"
           ],
-          "answer": "Zwischen Oktober und November"
+          "answer": "Zwischen Oktober und November",
+          "explanation": "Die richtige Antwort ist: Zwischen Oktober und November"
         }
       ]
     },
@@ -8065,7 +8184,7 @@
       "lessonId": "B2_lesson_16",
       "level": "B2",
       "title": "Die Videosprechstunde in der Praxis",
-      "text": "Die Videosprechstunde hat sich in den letzten Jahren stark verbreitet. Patienten koennen ihren Arzt per Videoanruf konsultieren, ohne persoenlich in die Praxis kommen zu muessen. Geeignet ist die Videosprechstunde vor allem fuer Verlaufskontrollen, Beratungsgespraeche und die Besprechung von Befunden. Fuer koerperliche Untersuchungen ist sie weniger geeignet. Die technischen Voraussetzungen sind eine stabile Internetverbindung und eine Kamera. Die Krankenkassen uebernehmen die Kosten in vielen Faellen. Aerzte schaetzen die Zeitersparnis.",
+      "text": "Die Videosprechstunde hat sich, insbesondere seit der Corona-Pandemie, als wertvolle Ergaenzung zum traditionellen Arztbesuch etabliert. Patienten koennen von zu Hause aus per Video mit ihrem Arzt sprechen, was weite Anfahrtswege und Wartezeiten erspart. Aerzte koennen in der Videosprechstunde Beratungsgespraeche fuehren, Krankschreibungen ausstellen, Rezepte ausstellen oder Laborbefunde mit Patienten besprechen. Nicht geeignet ist die Videosprechstunde fuer akute Notfaelle, Beschwerden, die eine koerperliche Untersuchung erfordern, oder fuer Patienten, die mit der Technik nicht umgehen koennen. Die gesetzlichen Krankenkassen uebernehmen die Kosten fuer Videosprechstunden, wenn die Praxis diese anbietet. Die technische Durchfuehrung erfolgt ueber zertifizierte Videodienste, die den Datenschutz gewaehrleisten. Man koennte argumentieren, dass die Videosprechstunde die medizinische Versorgung insbesondere in laendlichen Regionen verbessert. Ein gewisser Teil der Arztbesuche koennte in Zukunft durch Videosprechstunden ersetzt werden.",
       "questions": [
         {
           "id": "b2r43a",
@@ -8077,13 +8196,15 @@
             "Fuer Notfaelle",
             "Fuer Blutabnahmen"
           ],
-          "answer": "Fuer Verlaufskontrollen und Beratungsgespraeche"
+          "answer": "Fuer Verlaufskontrollen und Beratungsgespraeche",
+          "explanation": "Die richtige Antwort ist: Fuer Verlaufskontrollen und Beratungsgespraeche"
         },
         {
           "id": "b2r43b",
           "type": "true-false",
           "question": "Fuer koerperliche Untersuchungen ist die Videosprechstunde weniger geeignet.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r43c",
@@ -8095,7 +8216,8 @@
             "Einen Drucker",
             "Ein spezielles Telefon"
           ],
-          "answer": "Eine stabile Internetverbindung und eine Kamera"
+          "answer": "Eine stabile Internetverbindung und eine Kamera",
+          "explanation": "Die richtige Antwort ist: Eine stabile Internetverbindung und eine Kamera"
         }
       ]
     },
@@ -8104,7 +8226,7 @@
       "lessonId": "B2_lesson_7",
       "level": "B2",
       "title": "Die Ethikkommission der Universitaetsklinik",
-      "text": "Jede medizinische Studie an Menschen muss von einer Ethikkommission genehmigt werden. Die Kommission prueft, ob die Studie ethischen Standards entspricht und die Rechte der Teilnehmer geschuetzt sind. Wichtige Kriterien sind die informierte Einwilligung, der Datenschutz und das Verhaeltnis von Nutzen und Risiko. Die Kommission besteht aus Medizinern, Juristen, Theologen und Laienmitgliedern. Ohne die Zulassung der Ethikkommission darf die Studie nicht beginnen. Die Arbeit der Kommission ist freiwillig und ehrenamtlich.",
+      "text": "Die Ethikkommission einer Universitaetsklinik hat die Aufgabe, medizinische Forschungsvorhaben und klinische Studien auf ihre ethische Vertretbarkeit hin zu pruefen. Bevor eine Studie mit Menschen durchgefuehrt werden darf, muss die Ethikkommission das Vorhaben genehmigen. Dabei ueberprueft die Kommission, ob die Rechte, die Wuerde und das Wohl der Studienteilnehmer ausreichend geschuetzt sind. Die Mitglieder der Ethikkommission setzen sich aus Medizinern, Juristen, Pflegekraeften, Theologen und Ethikern zusammen, um eine fachuebergreifende Bewertung zu gewaehrleisten. Besonderes Augenmerk wird auf die Einwilligung der Teilnehmer, die Risiko-Nutzen-Abwaegung und die wissenschaftliche Qualitaet der Studie gelegt. Auch bei ethischen Konflikten im klinischen Alltag, etwa bei der Entscheidung ueber lebensverlaengernde Massnahmen, kann die Ethikkommission beratend hinzugezogen werden. Die Arbeit der Ethikkommission traegt dazu bei, dass medizinische Forschung und Patientenversorgung ethischen Standards entsprechen. Ohne die Zustimmung der Ethikkommission darf keine klinische Studie begonnen werden.",
       "questions": [
         {
           "id": "b2r44a",
@@ -8116,13 +8238,15 @@
             "Die Bekanntheit der Forscher",
             "Die Dauer der Studie"
           ],
-          "answer": "Die ethischen Standards und den Schutz der Teilnehmer"
+          "answer": "Die ethischen Standards und den Schutz der Teilnehmer",
+          "explanation": "Die richtige Antwort ist: Die ethischen Standards und den Schutz der Teilnehmer"
         },
         {
           "id": "b2r44b",
           "type": "true-false",
           "question": "Die Ethikkommission besteht nur aus Medizinern.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r44c",
@@ -8134,7 +8258,8 @@
             "Nach der Finanzierung",
             "Nach der Veroeffentlichung"
           ],
-          "answer": "Nach der Zulassung durch die Ethikkommission"
+          "answer": "Nach der Zulassung durch die Ethikkommission",
+          "explanation": "Die richtige Antwort ist: Nach der Zulassung durch die Ethikkommission"
         }
       ]
     },
@@ -8143,7 +8268,7 @@
       "lessonId": "B2_lesson_21",
       "level": "B2",
       "title": "Der Entlassungsprozess aus dem Krankenhaus",
-      "text": "Die Entlassung aus dem Krankenhaus erfordert eine gute Planung. Bereits bei der Aufnahme wird der voraussichtliche Entlassungstag besprochen. Der Arzt erstellt einen Entlassungsbericht und verordnet notwendige Medikamente. Die Pflegekraefte geben Anleitungen zur weiteren Versorgung zu Hause. Bei Bedarf wird ein Pflegedienst oder eine Rehabilitation organisiert. Der Patient sollte vor der Entlassung alle Fragen klären, besonders zu Medikamenten und Folgeterminen. Eine gute Vorbereitung verhindert Wiederaufnahmen.",
+      "text": "Der Entlassungsprozess aus dem Krankenhaus ist ein wichtiger Schritt, der sorgfaeltig geplant werden sollte, um einen reibungslosen Uebergang in die haeusliche Versorgung zu gewaehrleisten. Bereits einige Tage vor der Entlassung beginnt die Entlassungsplanung, bei der die behandelnden Aerzte, die Pflegekraefte und der Sozialdienst zusammenarbeiten. Geklaert werden muss, ob der Patient zu Hause versorgt werden kann, ob ambulante Pflege oder Rehabilitationsmassnahmen erforderlich sind und welche Medikamente nach der Entlassung eingenommen werden muessen. Der Patient erhaelt einen Entlassungsbrief mit allen wichtigen Informationen sowie einen Medikationsplan. Bei der Entlassung sollte der Patient alle Fragen geklaert haben, die die weitere Behandlung betreffen. Falls erforderlich, werden Hilfsmittel wie Gehwagen oder Pflegebett organisiert. Ein gut geplanter Entlassungsprozess verringert das Risiko von Komplikationen und Wiederaufnahmen. Patienten sollten sich aktiv an der Entlassungsplanung beteiligen, um optimal auf die Zeit nach dem Krankenhausaufenthalt vorbereitet zu sein.",
       "questions": [
         {
           "id": "b2r45a",
@@ -8155,13 +8280,15 @@
             "Eine Woche vorher",
             "Gar nicht"
           ],
-          "answer": "Bereits bei der Aufnahme"
+          "answer": "Bereits bei der Aufnahme",
+          "explanation": "Die richtige Antwort ist: Bereits bei der Aufnahme"
         },
         {
           "id": "b2r45b",
           "type": "true-false",
           "question": "Bei Bedarf wird ein Pflegedienst oder eine Rehabilitation organisiert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r45c",
@@ -8173,7 +8300,8 @@
             "Arztbesuche",
             "Medikamente"
           ],
-          "answer": "Wiederaufnahmen"
+          "answer": "Wiederaufnahmen",
+          "explanation": "Die richtige Antwort ist: Wiederaufnahmen"
         }
       ]
     },
@@ -8182,7 +8310,7 @@
       "lessonId": "B2_lesson_2",
       "level": "B2",
       "title": "Der Deutsche Aerztekongress",
-      "text": "Jedes Jahr findet der Deutsche Aerztekongress in Berlin statt. Tausende Mediziner aus dem In- und Ausland nehmen teil. Das Programm umfasst Vortraege, Workshops und Diskussionsrunden zu aktuellen medizinischen Themen. Schwerpunkte sind neue Behandlungsmethoden, Digitalisierung und Praevention. Neben den Fachvortraegen gibt es Ausstellungen von Medizintechnikunternehmen. Der Kongress bietet auch Moeglichkeiten zur Vernetzung mit Kollegen. Die Teilnahme wird von den Aerztekammern als Fortbildung anerkannt.",
+      "text": "Der Deutsche Aerztekongress findet jaehrlich in einer anderen deutschen Stadt statt und gehoert zu den wichtigsten Fortbildungsveranstaltungen fuer Aerzte in Deutschland. Auf dem Kongress werden neueste Forschungsergebnisse, Behandlungsmethoden und medizinische Technologien vorgestellt und diskutiert. Aerzte aus verschiedenen Fachrichtungen haben die Moeglichkeit, sich drei Tage lang ueber die Entwicklungen in ihrem Bereich zu informieren und sich mit Kollegen auszutauschen. Das Programm umfasst Fachvortraege, Workshops, praktische Uebungen und eine Industrieausstellung, in der Medizinprodukte und Pharmazeutika praesentiert werden. Die Teilnahme an solchen Kongressen ist fuer Aerzte wichtig, um auf dem neuesten Stand der medizinischen Wissenschaft zu bleiben. Die Fortbildungspunkte, die auf dem Kongress erworben werden, sind fuer die Zulassung als Vertragsarzt erforderlich. Einerseits bieten Kongresse wertvolle Moeglichkeiten zum Austausch, andererseits sind sie mit erheblichem Zeit- und Kostenaufwand verbunden. In den letzten Jahren haben virtuelle Kongressteilnahmen an Bedeutung gewonnen.",
       "questions": [
         {
           "id": "b2r46a",
@@ -8194,13 +8322,15 @@
             "In Hamburg",
             "In Koeln"
           ],
-          "answer": "In Berlin"
+          "answer": "In Berlin",
+          "explanation": "Die richtige Antwort ist: In Berlin"
         },
         {
           "id": "b2r46b",
           "type": "true-false",
           "question": "Der Kongress bietet nur Vortraege und keine Workshops an.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r46c",
@@ -8212,7 +8342,8 @@
             "Sportveranstaltung",
             "Kulturelles Programm"
           ],
-          "answer": "Vernetzung mit Kollegen"
+          "answer": "Vernetzung mit Kollegen",
+          "explanation": "Die richtige Antwort ist: Vernetzung mit Kollegen"
         }
       ]
     },
@@ -8221,7 +8352,7 @@
       "lessonId": "B2_lesson_12",
       "level": "B2",
       "title": "Besucherregeln im Krankenhaus",
-      "text": "Krankenhaeuser haben klare Regeln fuer Besucher. Die Besuchszeiten sind meist begrenzt, um den Heilungsprozess der Patienten nicht zu stoeren. In der Regel duerfen zwei Besucher pro Patient gleichzeitig kommen. Kinder unter sechs Jahren duerfen oft nur in Ausnahmefaellen auf die Station. Besucher mit Infektionskrankheiten sollten nicht kommen. Auf Intensivstationen gelten strenge Regelungen. Die Einhaltung der Regeln dient der Sicherheit aller Patienten und der Behandlungsqualitaet.",
+      "text": "In deutschen Krankenhaeusern gelten Besucherregeln, die je nach Station und Situation variieren koennen. Grundsaetzlich sollen Besucher dazu beitragen, die Ruhe und Hygiene auf der Station zu gewaehrleisten und die Privatsphaere der Patienten zu respektieren. Die Besuchszeiten sind meist auf bestimmte Stunden am Nachmittag und Abend begrenzt, wobei auf Intensivstationen und Isolierstationen strengere Regelungen gelten. Besucher sollten vor dem Betreten und nach dem Verlassen des Patientenzimmers ihre Haende desinfizieren. Bei Symptomen einer ansteckenden Erkrankung wie Fieber, Husten oder Durchfall sollten Besucher auf den Besuch verzichten, um Patienten und Personal nicht zu gefaehrden. Fuer Kinder gelten haeufig besondere Regelungen. In den letzten Jahren haben viele Kliniken ihre Besucherregelungen gelockert und ermoeglichen inzwischen flexiblere Besuchszeiten, da die positiven Effekte von Besuchen auf das Wohlbefinden der Patienten wissenschaftlich belegt sind. Bei der aktuellen Grippewelle koennen die Besuchsregelungen jedoch jederzeit verschaeft werden.",
       "questions": [
         {
           "id": "b2r47a",
@@ -8233,13 +8364,15 @@
             "Weil die Raeume klein sind",
             "Weil es gesetzlich vorgeschrieben ist"
           ],
-          "answer": "Um den Heilungsprozess nicht zu stoeren"
+          "answer": "Um den Heilungsprozess nicht zu stoeren",
+          "explanation": "Die richtige Antwort ist: Um den Heilungsprozess nicht zu stoeren"
         },
         {
           "id": "b2r47b",
           "type": "true-false",
           "question": "Kinder unter sechs Jahren duerfen immer auf die Station.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r47c",
@@ -8251,7 +8384,8 @@
             "Sie muessen vorher anrufen",
             "Sie duerfen nur kurz bleiben"
           ],
-          "answer": "Sie sollten nicht kommen"
+          "answer": "Sie sollten nicht kommen",
+          "explanation": "Die richtige Antwort ist: Sie sollten nicht kommen"
         }
       ]
     },
@@ -8260,7 +8394,7 @@
       "lessonId": "B2_lesson_3",
       "level": "B2",
       "title": "Kampagne zur Organspendebereitschaft",
-      "text": "Die Bundesregierung startet eine neue Kampagne zur Erhoehung der Organspendebereitschaft. Trotz vieler Aufklaerungsaktionen ist die Zahl der Organspender in Deutschland niedrig. Viele Menschen haben keinen Spenderausweis. Die Kampagne setzt auf persoenliche Geschichten von Betroffenen und informiert ueber den Ablauf einer Organspende. Auch Aufklaerung ueber die Entscheidungsmoeglichkeiten ist ein Schwerpunkt. Die Aktion wird von Krankenkassen, Kliniken und Selbsthilfegruppen unterstuetzt.",
+      "text": "Die Bundesregierung hat verschiedene Kampagnen zur Erhoehung der Organspendebereitschaft ins Leben gerufen, da die Zahl der verfuegbaren Spenderorgane seit Jahren nicht ausreicht. Die Kampagnen informieren die Bevoelkerung ueber die Bedeutung der Organspende und motivieren dazu, einen Organspendeausweis auszufuellen. In Deutschland warten derzeit rund 8000 Menschen auf ein lebensrettendes Spenderorgan, wobei viele von ihnen jahrelang auf der Warteliste stehen. Besonders gross ist der Bedarf an Nieren, Lebern und Herzen. Die Kampagnen setzen auf verschiedene Massnahmen: Informationsmaterialien in Arztpraxen, Plakate in oeffentlichen Verkehrsmitteln, Social-Media-Aktionen und Aufklaerung in Schulen. Trotz der Bemuehungen ist die Zahl der Organspenden in den letzten Jahren nicht signifikant gestiegen. Die Diskussion um eine Einfuehrung der Widerspruchsloesung wird daher weiterhin kontrovers gefuehrt. Jeder sollte sich fruehzeitig mit dem Thema auseinandersetzen und eine informierte Entscheidung treffen, um die Angehoerigen im Ernstfall nicht zu belasten.",
       "questions": [
         {
           "id": "b2r48a",
@@ -8272,13 +8406,15 @@
             "Neue Medikamente entwickeln",
             "Mehr Kliniken bauen"
           ],
-          "answer": "Die Erhoehung der Organspendebereitschaft"
+          "answer": "Die Erhoehung der Organspendebereitschaft",
+          "explanation": "Die richtige Antwort ist: Die Erhoehung der Organspendebereitschaft"
         },
         {
           "id": "b2r48b",
           "type": "true-false",
           "question": "Die Kampagne informiert ueber persoenliche Geschichten von Betroffenen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r48c",
@@ -8290,7 +8426,8 @@
             "Nur Krankenkassen",
             "Nur Kliniken"
           ],
-          "answer": "Krankenkassen, Kliniken und Selbsthilfegruppen"
+          "answer": "Krankenkassen, Kliniken und Selbsthilfegruppen",
+          "explanation": "Die richtige Antwort ist: Krankenkassen, Kliniken und Selbsthilfegruppen"
         }
       ]
     },
@@ -8299,7 +8436,7 @@
       "lessonId": "B2_lesson_8",
       "level": "B2",
       "title": "Stellenanzeige: Assistenzarzt gesucht",
-      "text": "Ein mittelgrosses Krankenhaus in Bayern sucht einen Assistenzarzt fuer die Innere Medizin. Voraussetzungen sind ein abgeschlossenes Medizinstudium, die Approbation und erste klinische Erfahrungen. Gewuenscht werden Teamfaehigkeit, Belastbarkeit und Interesse an wissenschaftlicher Arbeit. Die Stelle ist ab sofort zu besetzen und zunaechst auf zwei Jahre befristet. Die Klinik bietet strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team. Bewerbungen mit Lebenslauf und Zeugnissen werden per E-Mail erbeten.",
+      "text": "Eine typische Stellenanzeige fuer einen Assistenzarzt umfasst verschiedene wichtige Informationen, die Bewerber sorgfaeltig lesen sollten. Zunaechst werden die Anforderungen beschrieben: ein abgeschlossenes Medizinstudium, eine Approbation und idealerweise erste klinische Erfahrungen. Die Stellenanzeige beschreibt die Abteilung, in der die Stelle besetzt werden soll, und die Taetigkeitsbereiche, die den Assistenzarzt erwarten. Dazu gehoren die Patientenversorgung auf der Station, die Teilnahme an Operationen und Visiten sowie die Dokumentation der Behandlung. Auch die Arbeitszeiten, die Verguetung und die Weiterbildungsmoeglichkeiten werden in der Regel genannt. Viele Kliniken bieten zusaetzliche Leistungen wie betriebliche Altersvorsorge, Fortbildungsbudgets oder verguenstigten Wohnraum an. Bewerber sollten nicht nur auf das Gehalt achten, sondern auch auf die Arbeitsbedingungen, das Teamklima und die Qualitaet der Weiterbildung. Eine gut ausgeschriebene Stelle erhoeht die Wahrscheinlichkeit, motivierte und qualifizierte Bewerber zu finden. Der Fachkraeftemangel in der Medizin macht den Wettbewerb um gute Assistenzaerzte zunehmend intensiver.",
       "questions": [
         {
           "id": "b2r49a",
@@ -8311,13 +8448,15 @@
             "Eine Promotion",
             "Nur die Approbation"
           ],
-          "answer": "Medizinstudium, Approbation und erste klinische Erfahrungen"
+          "answer": "Medizinstudium, Approbation und erste klinische Erfahrungen",
+          "explanation": "Die richtige Antwort ist: Medizinstudium, Approbation und erste klinische Erfahrungen"
         },
         {
           "id": "b2r49b",
           "type": "true-false",
           "question": "Die Stelle ist unbefristet.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Diese Aussage stimmt nicht mit dem Text überein."
         },
         {
           "id": "b2r49c",
@@ -8329,7 +8468,8 @@
             "Einen Dienstwagen",
             "Eine Wohnung"
           ],
-          "answer": "Strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team"
+          "answer": "Strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team",
+          "explanation": "Die richtige Antwort ist: Strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team"
         }
       ]
     },
@@ -8338,7 +8478,7 @@
       "lessonId": "B2_lesson_25",
       "level": "B2",
       "title": "Interkulturelle Kompetenz im Gesundheitswesen",
-      "text": "Interkulturelle Kompetenz wird im Gesundheitswesen immer wichtiger. Patienten aus verschiedenen Kulturen haben unterschiedliche Vorstellungen von Krankheit und Behandlung. Manche vermeiden bestimmte Medikamente aus religioesen Gruenden, andere bevorzugen traditionelle Heilmethoden. Fachkraefte sollten diese Unterschiede kennen und respektieren. Interkulturelle Schulungen fuer Klinikpersonal helfen, Missverstaendnisse zu vermeiden. Auch Dolmetscherdienste tragen zur besseren Versorgung bei. Eine kultursensible Pflege verbessert das Vertrauen der Patienten.",
+      "text": "Interkulturelle Kompetenz wird im Gesundheitswesen immer wichtiger, da die Bevoelkerung in Deutschland zunehmend vielfaeltiger wird und Patienten aus unterschiedlichen kulturellen Hintergruenden versorgt werden muessen. Menschen mit Migrationshintergrund haben haeufig andere Vorstellungen von Gesundheit, Krankheit und Behandlung, die Aerzte und Pflegekraefte kennen und respektieren sollten. Sprachliche Barrieren koennen die Verstaendigung erschweren, weshalb viele Kliniken auf Dolmetscherdienste zurueckgreifen oder mehrsprachige Informationsmaterialien anbieten. Auch kulturell bedingte Unterschiede bei der Koerpersprache, beim Schamgefuehl oder bei der Rolle der Familie im Entscheidungsprozess sollten beruecksichtigt werden. Fortbildungen zur interkulturellen Kompetenz werden inzwischen von vielen Krankenhaeusern fuer ihre Mitarbeiter angeboten. Eine kultursensible Medizin traegt dazu bei, dass alle Patienten unabhaengig von ihrer Herkunft eine gute Behandlung erhalten. Man koennte sagen, dass interkulturelle Kompetenz eine Schluesselqualifikation fuer medizinisches Personal im 21. Jahrhundert ist. Die Wertschaetzung kultureller Vielfalt bereichert auch das Arbeitsklima im Team.",
       "questions": [
         {
           "id": "b2r50a",
@@ -8350,13 +8490,15 @@
             "Keine besonderen Wuensche",
             "Immer die gleichen Medikamente"
           ],
-          "answer": "Unterschiedliche Vorstellungen von Krankheit und Behandlung"
+          "answer": "Unterschiedliche Vorstellungen von Krankheit und Behandlung",
+          "explanation": "Die richtige Antwort ist: Unterschiedliche Vorstellungen von Krankheit und Behandlung"
         },
         {
           "id": "b2r50b",
           "type": "true-false",
           "question": "Interkulturelle Schulungen helfen, Missverstaendnisse zu vermeiden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
           "id": "b2r50c",
@@ -8368,7 +8510,8 @@
             "Die Geschwindigkeit der Behandlung",
             "Die Anzahl der Betten"
           ],
-          "answer": "Das Vertrauen der Patienten"
+          "answer": "Das Vertrauen der Patienten",
+          "explanation": "Die richtige Antwort ist: Das Vertrauen der Patienten"
         }
       ]
     }
