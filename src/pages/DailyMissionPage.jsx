@@ -184,6 +184,23 @@ export default function DailyMissionPage() {
   const [spTranscriptionError, setSpTranscriptionError] = useState(null);
   const [spIsListening, setSpIsListening] = useState(false);
   const spRecognitionRef = useRef(null);
+  const spMediaRecorderRef = useRef(null);
+  const spChunksRef = useRef([]);
+  const spStreamRef = useRef(null);
+  // Cleanup: stop media tracks on unmount
+  useEffect(() => {
+    return () => {
+      if (spStreamRef.current) {
+        spStreamRef.current.getTracks().forEach(t => t.stop());
+        spStreamRef.current = null;
+      }
+      if (spMediaRecorderRef.current && spMediaRecorderRef.current.state === 'recording') {
+        spMediaRecorderRef.current.stop();
+        spMediaRecorderRef.current = null;
+      }
+    };
+  }, []);
+
   const spSpeechSupported = typeof window !== 'undefined' &&
     (window.SpeechRecognition || window.webkitSpeechRecognition);
   const [ttsAvailable] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window);
@@ -593,27 +610,30 @@ export default function DailyMissionPage() {
   const startRecording = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
-      const chunks = [];
-      window.__dmpChunks = chunks;
-      mediaRecorder.ondataavailable = (e) => chunks.push(e.data);
-      mediaRecorder.onstop = () => {
-        const blob = new Blob(chunks, { type: 'audio/webm' });
+      spStreamRef.current = stream;
+      spChunksRef.current = [];
+      const recorder = new MediaRecorder(stream);
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) spChunksRef.current.push(e.data);
+      };
+      recorder.onstop = () => {
+        const blob = new Blob(spChunksRef.current, { type: 'audio/webm' });
         setSpRecBlob(URL.createObjectURL(blob));
         setSpRecState('done');
         stream.getTracks().forEach(t => t.stop());
+        spStreamRef.current = null;
       };
-      mediaRecorder.start();
+      recorder.start();
+      spMediaRecorderRef.current = recorder;
       setSpRecState('recording');
-      window.__dmpRecorder = mediaRecorder;
     } catch(e) {
       console.warn('Microphone access denied:', e);
     }
   };
   const stopRecording = () => {
-    if (window.__dmpRecorder) {
-      window.__dmpRecorder.stop();
-      window.__dmpRecorder = null;
+    if (spMediaRecorderRef.current && spMediaRecorderRef.current.state === 'recording') {
+      spMediaRecorderRef.current.stop();
+      spMediaRecorderRef.current = null;
     }
   };
 
@@ -622,7 +642,7 @@ export default function DailyMissionPage() {
     setSpTranscriptionLoading(true);
     setSpTranscriptionError(null);
     try {
-      const blob = new Blob(window.__dmpChunks || [], { type: 'audio/webm' });
+      const blob = new Blob(spChunksRef.current, { type: 'audio/webm' });
       const result = await transcribeAudio(blob);
       setSpText(result.transcript);
     } catch (err) {
