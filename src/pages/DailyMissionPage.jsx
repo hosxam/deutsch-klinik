@@ -399,9 +399,6 @@ export default function DailyMissionPage() {
     setTimeout(() => setSpCopied(false), 2500);
   };
 
-  const hSpStartRec = startRecording;
-  const hSpStopRec = stopRecording;
-
   const hRdSk = () => advance('reading', { skipped: true });
   const hRdN = () => {
     setRrq(0); setRrc(0); setRra({}); setRrcorr({});
@@ -1331,10 +1328,10 @@ export default function DailyMissionPage() {
               {ttsAvailable && typeof MediaRecorder !== 'undefined' && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   {spRecState === 'idle' && (
-                    <button style={sBp} onClick={hSpStartRec}><Mic size={14} /> Start Recording</button>
+                    <button style={sBp} onClick={startRecording}><Mic size={14} /> Start Recording</button>
                   )}
                   {spRecState === 'recording' && (
-                    <button style={{ ...sBp, background: '#ef4444', color: '#fff' }} onClick={hSpStopRec}>
+                    <button style={{ ...sBp, background: '#ef4444', color: '#fff' }} onClick={stopRecording}>
                       <Square size={14} /> Stop Recording
                     </button>
                   )}
