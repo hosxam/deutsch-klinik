@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked } from '../utils/store';
 import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, getWeeklyActiveCount, getBestWeeklyActivity, getMostRecentActivity, getActivityRoute, formatRelativeTime, getLocalDateKey } from '../utils/activityStreak';
 import levelsData from '../data/levels.json';
-import allLessonsData from '../data/germanLessons.json';
-import germanVocabulary from '../data/germanVocabulary.json';
-import grammarData from '../data/grammar.json';
+import dashboardSummary from '../data/dashboardSummary.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
 
-const allLessons = allLessonsData;
+const allLessons = dashboardSummary.lessonSummaries;
 
 // Day of week -> skill task mapping
 const DAY_SKILL = {
@@ -24,13 +22,11 @@ const DAY_SKILL = {
   6: { name: 'Review Mistakes', icon: BookMarked, linkSuffix: null, label: 'Review Mistakes / Exam Practice' },
 };
 
-// Count vocab entries per level
-const VOCAB_COUNT = {};
-['A1','A2','B1','B2','C1'].forEach(l => { VOCAB_COUNT[l] = (germanVocabulary[l] || []).length; });
+// Count vocab entries per level (from summary)
+const VOCAB_COUNT = dashboardSummary.vocabCounts;
 
-// Count grammar entries per level
-const GRAMMAR_COUNT = {};
-['A1','A2','B1','B2','C1'].forEach(l => { GRAMMAR_COUNT[l] = (grammarData[l] || []).length; });
+// Count grammar entries per level (from summary)
+const GRAMMAR_COUNT = dashboardSummary.grammarCounts;
 
 export default function Dashboard() {
   const [state, setState] = useState(getState());
@@ -65,10 +61,9 @@ export default function Dashboard() {
     return isExamUnlocked(studyLevel, levelData);
   }, [state.levels, studyLevel, state.writings, state.speakingRecordings]);
 
-  // === Due vocab words ===
+  // === Due vocab count (from summary ids, no full vocab import needed) ===
   const dueVocabCount = useMemo(() => {
-    const words = germanVocabulary[studyLevel] || [];
-    const ids = words.map(w => w.id);
+    const ids = dashboardSummary.vocabIds[studyLevel] || [];
     return getDueVocabWords(ids).length;
   }, [studyLevel, state.vocabularyMastery]);
 
