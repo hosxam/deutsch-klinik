@@ -9,7 +9,7 @@ import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
 
-const allLessons = dashboardSummary.lessonSummaries;
+const allLessons = Object.values(dashboardSummary.lessonSummaries || {}).flat();
 
 // Day of week -> skill task mapping
 const DAY_SKILL = {
