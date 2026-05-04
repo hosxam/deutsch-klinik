@@ -8,6 +8,7 @@ import germanVocabulary from '../data/germanVocabulary.json';
 import grammarData from '../data/grammar.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
+import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
 
 const allLessons = allLessonsData;
@@ -1818,6 +1819,9 @@ export default function Dashboard() {
           </div>
         )}
       </div>
+
+      {/* Dev debug panel — only renders in dev mode */}
+      {import.meta.env.DEV && <DebugProgressPanel currentLevel={studyLevel} />}
     </div>
   );
 }

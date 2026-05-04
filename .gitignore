@@ -6,5 +6,9 @@ dist
 .env.local
 .env.*.local
 
-
+# backup artifacts in src/data
 deutsch-klinik-progress-backup.json
+src/data/*.bak
+src/data/*.backup.json
+src/data/*backup*.json
+src/data/archive/

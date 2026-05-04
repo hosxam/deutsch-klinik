@@ -30,6 +30,18 @@ export default function LevelPage() {
 
   const completedLessons = getCompletedLessons(levelId);
 
+  // Compute missing exam requirements for locked messaging
+  const requirements = [
+    { label: 'Grammar', current: prog.grammar?.length || 0, target: levelData?.grammarUnits || 10 },
+    { label: 'Vocabulary', current: prog.vocab?.length || 0, target: levelData?.vocabularyUnits || 10 },
+    { label: 'Lessons', current: completedLessons.length, target: 10 },
+    { label: 'Writing', current: (state.writings || []).filter(w => w.level === levelId).length, target: levelData?.minWritingTasks || 10 },
+    { label: 'Speaking', current: (state.speakingRecordings[levelId] || []).length, target: levelData?.minSpeakingTasks || 10 },
+    { label: 'Listening', current: prog.listening?.length || 0, target: levelData?.minListeningTests || 5 },
+    { label: 'Reading', current: prog.reading?.length || 0, target: levelData?.minReadingTests || 5 },
+  ];
+  const missingRequirements = requirements.filter(r => r.current < r.target);
+
   if (!levelData) {
     return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
   }
@@ -91,11 +103,18 @@ export default function LevelPage() {
             speaking: 'minSpeakingTasks',
           };
           const target = levelData[targetFieldMap[skill.key]] || 10;
+          // Writing and speaking use different storage paths than getLevelProgress
+          let displayCount = doneCount;
+          if (skill.key === 'writing') {
+            displayCount = (state.writings || []).filter(w => w.level === levelId).length;
+          } else if (skill.key === 'speaking') {
+            displayCount = (state.speakingRecordings?.[levelId] || []).length;
+          }
           
           return (
             <Link key={skill.key} to={path} className="rounded-xl p-4 transition-all hover:scale-[1.02] group" style={{
               backgroundColor: 'var(--bg-card)',
-              border: `1px solid ${doneCount > 0 ? `${skill.color}40` : 'var(--border)'}`,
+              border: `1px solid ${displayCount > 0 ? `${skill.color}40` : 'var(--border)'}`,
             }}>
               <div className="flex items-center gap-3 mb-2">
                 <skill.icon size={22} style={{ color: skill.color }} />
@@ -107,9 +126,9 @@ export default function LevelPage() {
               </div>
               <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--text-muted)' }}>
                 <div className="h-1.5 flex-1 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
-                  <div className="h-full rounded-full" style={{ width: `${Math.min((doneCount / target) * 100, 100)}%`, backgroundColor: skill.color }} />
+                  <div className="h-full rounded-full" style={{ width: `${Math.min((displayCount / target) * 100, 100)}%`, backgroundColor: skill.color }} />
                 </div>
-                {doneCount} done
+                {displayCount} done
               </div>
             </Link>
           );
@@ -152,6 +171,30 @@ export default function LevelPage() {
           )}
         </div>
       </div>
+
+      {/* Missing requirements card — only shown when exam is locked */}
+      {!examUnlocked && missingRequirements.length > 0 && (
+        <div className="rounded-xl p-4 mb-4" style={{
+          backgroundColor: 'var(--bg-card)',
+          border: '1px solid #ef4444',
+        }}>
+          <h3 className="font-semibold mb-3" style={{ color: '#ef4444', fontSize: '0.85rem' }}>
+            Complete these to unlock the exam
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+            {missingRequirements.map(r => (
+              <div key={r.label} className="flex items-center justify-between py-1 px-2 rounded" style={{
+                backgroundColor: 'var(--bg-hover)',
+              }}>
+                <span style={{ color: 'var(--text-secondary)' }}>{r.label}</span>
+                <span style={{ fontWeight: 600, color: r.current === 0 ? '#ef4444' : 'var(--accent)' }}>
+                  {r.current}/{r.target}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Requirements Progress */}
       <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
