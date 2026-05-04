@@ -100,7 +100,7 @@ function loadState() {
   return JSON.parse(JSON.stringify(defaultState));
 }
 
-function saveState(state) {
+export function saveState(state) {
   try {
     localStorage.setItem(STORE_KEY, JSON.stringify(state));
     // Notify listeners that progress changed (for Supabase auto-sync etc.)

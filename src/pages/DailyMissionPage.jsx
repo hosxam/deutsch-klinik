@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress,
@@ -448,6 +448,7 @@ export default function DailyMissionPage() {
       <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
         {/* Header */}
         <div style={{ marginBottom: '1rem' }}>
+          <h1 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.25rem', color: 'var(--text-primary)' }}>Today&apos;s Plan</h1>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               {meta && React.createElement(meta.icon, { size: 18, style: { color: meta.accent } })}
