@@ -24,6 +24,23 @@ export default function ExamPage() {
 
   const unlocked = isExamUnlocked(levelId, levelData);
 
+  function normalizeAnswer(value) {
+    return String(value || '')
+      .trim()
+      .replace(/[.!?,;:]+$/, '')
+      .replace(/\s+/g, ' ')
+      .toLowerCase();
+  }
+
+  function isShortAnswerCorrect(userAnswer, task) {
+    const normalizedUser = normalizeAnswer(userAnswer);
+    const accepted = (task.acceptedAnswers && task.acceptedAnswers.length
+      ? task.acceptedAnswers
+      : [task.answer]
+    ).map(normalizeAnswer);
+    return accepted.includes(normalizedUser);
+  }
+
   // Normalise: handle both single-exam dict and multi-exam list
   useEffect(() => {
     if (!rawExam) return;
@@ -82,7 +99,11 @@ export default function ExamPage() {
     const gradableTasks = tasks.filter(t => t.answer !== undefined && t.answer !== null);
     let score = 0;
     gradableTasks.forEach(t => {
-      if (answers[t.id] === t.answer) score++;
+      if (t.type === 'short-answer') {
+        if (isShortAnswerCorrect(answers[t.id], t)) score++;
+      } else {
+        if (answers[t.id] === t.answer) score++;
+      }
     });
     const newScores = { ...scores, [sectionKey]: { score, total: gradableTasks.length } };
     setScores(newScores);
@@ -148,6 +169,22 @@ export default function ExamPage() {
             </button>
           ))}
         </div>
+      );
+    }
+    if (task.type === 'short-answer') {
+      return (
+        <input
+          type="text"
+          value={answers[task.id] || ''}
+          onChange={(e) => setAnswers({ ...answers, [task.id]: e.target.value })}
+          placeholder="Type your answer..."
+          className="w-full px-3 py-2 rounded-lg text-sm outline-none"
+          style={{
+            backgroundColor: 'var(--bg-hover)',
+            border: '1px solid var(--border)',
+            color: 'var(--text-primary)'
+          }}
+        />
       );
     }
     return null;

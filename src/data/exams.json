@@ -606,7 +606,7 @@
     "A2": [
       {
         "id": "A2_exam_1",
-        "name": "Goethe A2 Practice Exam 1",
+        "name": "A2 Practice Exam 1 - Termine und Verabredungen",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -726,7 +726,7 @@
       },
       {
         "id": "A2_exam_2",
-        "name": "Goethe A2 Practice Exam 2",
+        "name": "A2 Practice Exam 2 - Alltag und Einkaufen",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -846,7 +846,7 @@
       },
       {
         "id": "A2_exam_3",
-        "name": "Goethe A2 Practice Exam 3",
+        "name": "A2 Practice Exam 3 - Freizeit und Orientierung",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -966,7 +966,7 @@
       },
       {
         "id": "A2_exam_4",
-        "name": "Goethe A2 Practice Exam 4",
+        "name": "A2 Practice Exam 4 - Gesundheit und Dienstleistungen",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1086,7 +1086,7 @@
       },
       {
         "id": "A2_exam_5",
-        "name": "Goethe A2 Practice Exam 5",
+        "name": "A2 Practice Exam 5 - Wohnen und Nachbarschaft",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1267,6 +1267,18 @@
                   "Familienstand"
                 ],
                 "answer": "Familienstand"
+              },
+              {
+                "id": "B1_ex1_les_6",
+                "type": "short-answer",
+                "question": "Text: \"Herr Mueller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespraech musste er Fragen zu seiner Berufserfahrung, seinen Staerken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.\" Auf welche Stelle hat sich Herr Mueller beworben?",
+                "answer": "Projektmanager",
+                "acceptedAnswers": [
+                  "Projektmanager",
+                  "als Projektmanager",
+                  "eine Stelle als Projektmanager"
+                ],
+                "points": 1
               }
             ]
           },
@@ -1310,7 +1322,7 @@
             "tasks": [
               {
                 "id": "B1_ex1_sch_1",
-                "prompt": "Sie haben eine Stellenanzeige gesehen und moechten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an die Personalabteilung. - Nennen Sie die Stelle, auf die Sie sich bewerben - Erlaeutern Sie Ihre Qualifikationen - Fragen Sie nach dem weiteren Bewerbungsprozess",
+                "prompt": "Sie haben einen Deutschkurs an einer Sprachschule gebucht. Der Kurs sollte montags und mittwochs um 18:00 Uhr stattfinden. Jetzt hat die Schule den Kurs ohne Ihre Zustimmung auf dienstags und donnerstags um 20:00 Uhr verschoben. Schreiben Sie eine formelle Beschwerde-E-Mail an die Sprachschule.\n\n- Grund des Schreibens nennen\n- Das Problem erklaeren: Kurs wurde ohne Absprache verschoben\n- Ihre Forderung: Rueckkehr zum urspruenglichen Zeitplan oder Geld zurueck\n- Um schriftliche Antwort bitten\n\nSchreiben Sie etwa 100 Woerter.",
                 "wordLimit": 120
               }
             ]
@@ -1393,6 +1405,19 @@
                   "Fuer den Notfall"
                 ],
                 "answer": "Fuer den Besuch beim Facharzt"
+              },
+              {
+                "id": "B1_ex2_les_6",
+                "type": "short-answer",
+                "question": "Text: \"Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehoeren die aerztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshoehe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.\" Wonach richtet sich die Beitragshoehe zur Krankenversicherung?",
+                "answer": "nach dem Einkommen",
+                "acceptedAnswers": [
+                  "nach dem Einkommen",
+                  "Einkommen",
+                  "vom Einkommen",
+                  "dem Einkommen"
+                ],
+                "points": 1
               }
             ]
           },
@@ -1436,7 +1461,7 @@
             "tasks": [
               {
                 "id": "B1_ex2_sch_1",
-                "prompt": "Sie haben einen Arzttermin aus terminlichen Gruenden nicht wahrnehmen koennen. Schreiben Sie eine E-Mail an die Arztpraxis. - Entschuldigen Sie sich fuer das Nichterscheinen - Nennen Sie Datum und Uhrzeit des vereinbarten Termins - Bitten Sie um einen neuen Termin",
+                "prompt": "Sie haben einen wichtigen Termin bei Ihrer Krankenkasse vergessen. Sie sollten Ihre Versicherungsunterlagen persoenlich abgeben. Schreiben Sie eine formelle E-Mail an Ihre Krankenkasse.\n\n- Sich fuer das Versaeumnis entschuldigen\n- Datum und Uhrzeit des vergessenen Termins nennen\n- Grund fuer das Fernbleiben erklaeren (z. B. privater Notfall)\n- Um einen neuen Termin bitten und vorschlagen, wann es passt\n\nSchreiben Sie etwa 100 Woerter.",
                 "wordLimit": 120
               }
             ]
@@ -1519,6 +1544,19 @@
                   "Um 23 Uhr"
                 ],
                 "answer": "Um 22 Uhr"
+              },
+              {
+                "id": "B1_ex3_les_6",
+                "type": "short-answer",
+                "question": "Text: \"In einem Mietshaus gibt es bestimmte Regelungen. Von 22 bis 6 Uhr gilt Nachtruhe. An Sonn- und Feiertagen ist das Bohren von Teppichen und laute Musik nicht erlaubt. Haustiere brauchen die Erlaubnis des Vermieters.\" Wann beginnt die Nachtruhe?",
+                "answer": "um 22 Uhr",
+                "acceptedAnswers": [
+                  "um 22 Uhr",
+                  "22 Uhr",
+                  "um 22:00 Uhr",
+                  "22:00 Uhr"
+                ],
+                "points": 1
               }
             ]
           },
@@ -1562,7 +1600,7 @@
             "tasks": [
               {
                 "id": "B1_ex3_sch_1",
-                "prompt": "In Ihrer Wohnung ist die Heizung defekt. Schreiben Sie eine E-Mail an Ihren Vermieter. - Beschreiben Sie das Problem - Nennen Sie, seit wann die Heizung kaputt ist - Bitten Sie um schnelle Reparatur - Fragen Sie, ob ein Handwerker vorbeikommen kann",
+                "prompt": "Sie moechten in Ihrer Stadt einen bezahlten Sprachkurs besuchen, um sich auf die B1-Pruefung vorzubereiten. Sie haben im Internet eine Volkshochschule (VHS) gefunden. Schreiben Sie eine formelle E-Mail an die VHS.\n\n- Sich vorstellen und den Grund der Anfrage nennen\n- Nach Kursbeginn und Kursdauer fragen\n- Nach den Kosten und Zahlungsmoeglichkeiten fragen\n- Fragen, ob es noch freie Plaetze gibt\n\nSchreiben Sie etwa 100 Woerter.",
                 "wordLimit": 120
               }
             ]
@@ -1645,6 +1683,20 @@
                   "20 Euro pro Person"
                 ],
                 "answer": "18 Euro pro Person"
+              },
+              {
+                "id": "B1_ex4_les_6",
+                "type": "short-answer",
+                "question": "Text: \"Der Zug nach Muenchen faehrt taeglich um 9 Uhr 15 von Gleis 5. Der Fahrpreis betraegt einfach 38 Euro und fuer Hin- und Rueckfahrt 68 Euro. Kinder unter sechs Jahren fahren kostenlos.\" Um wie viel Uhr faehrt der Zug?",
+                "answer": "um 9 Uhr 15",
+                "acceptedAnswers": [
+                  "um 9 Uhr 15",
+                  "9 Uhr 15",
+                  "um 9:15 Uhr",
+                  "9:15 Uhr",
+                  "9.15 Uhr"
+                ],
+                "points": 1
               }
             ]
           },
@@ -1688,7 +1740,7 @@
             "tasks": [
               {
                 "id": "B1_ex4_sch_1",
-                "prompt": "Sie haben einen Urlaub gebucht, muessen aber aus persoenlichen Gruenden stornieren. Schreiben Sie eine E-Mail an das Reisebuero. - Nennen Sie Ihre Buchungsnummer und den Reisezeitraum - Erlaeutern Sie den Grund fuer die Stornierung - Fragen Sie nach den Stornierungsgebuehren und einer moeglichen Umbuchung",
+                "prompt": "Sie haben vor drei Monaten ein Abo bei einem Fitnessstudio abgeschlossen. Jetzt haben Sie festgestellt, dass die Oeffnungszeiten fuer Sie nicht passen. Sie moechten den Vertrag kuendigen. Schreiben Sie eine formelle Kuendigung per E-Mail an das Fitnessstudio.\n\n- Ihre Mitgliedsnummer und den Vertragsbeginn nennen\n- Erklaeren, warum Sie kuendigen (ungenuegende Oeffnungszeiten)\n- Auf die Kuendigungsfrist hinweisen (laut Vertrag vier Wochen)\n- Um eine schriftliche Bestaetigung der Kuendigung bitten\n\nSchreiben Sie etwa 100 Woerter.",
                 "wordLimit": 120
               }
             ]
@@ -1771,6 +1823,18 @@
                   "Fake News zu ignorieren"
                 ],
                 "answer": "Nachrichten kritisch zu pruefen"
+              },
+              {
+                "id": "B1_ex5_les_6",
+                "type": "short-answer",
+                "question": "Text: \"Deutschland moechte bis 2045 klimaneutral sein. Dafuer werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte koennen einen Beitrag leisten: Energiesparen, Muelltrennung und die Nutzung oeffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.\" Bis wann moechte Deutschland klimaneutral sein?",
+                "answer": "bis 2045",
+                "acceptedAnswers": [
+                  "bis 2045",
+                  "2045",
+                  "im Jahr 2045"
+                ],
+                "points": 1
               }
             ]
           },
@@ -1814,7 +1878,7 @@
             "tasks": [
               {
                 "id": "B1_ex5_sch_1",
-                "prompt": "In Ihrer Stadt soll ein neues Einkaufszentrum auf einem bisherigen Park gebaut werden. Schreiben Sie einen Leserbrief an die lokale Zeitung. - Nennen Sie Ihre Meinung zu dem Projekt - Geben Sie Gruende fuer Ihre Meinung - Machen Sie einen Alternativvorschlag",
+                "prompt": "Sie haben in der Zeitung gelesen, dass ein Supermarkt in Ihrer Naehe einen Aushilfsjob fuer den Wochenendverkauf anbietet. Sie haben Interesse und moechten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an den Personalleiter.\n\n- Die Stelle nennen, auf die Sie sich bewerben\n- Ihre bisherige Erfahrung im Verkauf kurz beschreiben\n- Warum Sie der richtige Kandidat sind (z. B. flexibel, zuverlaessig)\n- Nach den naechsten Schritten im Bewerbungsprozess fragen\n\nSchreiben Sie etwa 100 Woerter.",
                 "wordLimit": 120
               }
             ]
@@ -1899,6 +1963,21 @@
                   "weitreichend"
                 ],
                 "answer": "weitreichende"
+              },
+              {
+                "id": "B2_ex_lesen_6",
+                "type": "short-answer",
+                "question": "Text: \"Die Zulassung als Facharzt fuer Orthopaedie und Unfallchirurgie setzt eine mindestens sechsjaehrige Weiterbildungszeit voraus.\" Wie viele Jahre dauert die Weiterbildung mindestens?",
+                "answer": "sechs Jahre",
+                "acceptedAnswers": [
+                  "sechs Jahre",
+                  "6 Jahre",
+                  "sechs",
+                  "6",
+                  "mindestens sechs Jahre",
+                  "mindestens 6 Jahre"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2025,6 +2104,19 @@
                   "vollständiges und zeitnahes"
                 ],
                 "answer": "vollständig und zeitnah"
+              },
+              {
+                "id": "B2_ex_l2_6",
+                "type": "short-answer",
+                "question": "Text: \"Eine Studie des Robert Koch-Instituts zeigt, dass die Zahl der Krankenhausinfektionen durch gezielte Hygienemassnahmen um 30 Prozent gesenkt werden konnte. Besonders wirksam waren Schulungen des Pflegepersonals.\" Um wie viel Prozent konnten die Krankenhausinfektionen gesenkt werden?",
+                "answer": "30 Prozent",
+                "acceptedAnswers": [
+                  "30 Prozent",
+                  "30%",
+                  "um 30 Prozent",
+                  "um 30%"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2151,6 +2243,18 @@
                   "Mehr Stress im Beruf"
                 ],
                 "answer": "Mehr Prävention statt Medikamente"
+              },
+              {
+                "id": "B2_ex_l3_6",
+                "type": "short-answer",
+                "question": "Text: \"Die Staendige Impfkommission empfiehlt die Grippeschutzimpfung fuer Risikogruppen.\" Fuer wen empfiehlt die STIKO die Grippeschutzimpfung?",
+                "answer": "fuer Risikogruppen",
+                "acceptedAnswers": [
+                  "fuer Risikogruppen",
+                  "Risikogruppen",
+                  "die Risikogruppen"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2277,6 +2381,19 @@
                   "Die hohen Kosten im Gesundheitswesen"
                 ],
                 "answer": "Mangelnde interkulturelle Ausbildung"
+              },
+              {
+                "id": "B2_ex_l4_6",
+                "type": "short-answer",
+                "question": "Text: \"Vor der Berufszulassung muessen auslaendische Aerzte einen Kenntnisstand nachweisen. Dazu gehoeren Sprachkenntnisse auf B2-Niveau und eine Gleichwertigkeitspruefung des Medizinstudiums.\" Welches Sprachniveau wird von auslaendischen Aerzten gefordert?",
+                "answer": "B2-Niveau",
+                "acceptedAnswers": [
+                  "B2-Niveau",
+                  "B2",
+                  "Sprachkenntnisse auf B2-Niveau",
+                  "Niveau B2"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2403,6 +2520,17 @@
                   "Weniger Patienten behandeln"
                 ],
                 "answer": "Mitarbeiter in Datenschutz schulen"
+              },
+              {
+                "id": "B2_ex_l5_6",
+                "type": "short-answer",
+                "question": "Text: \"In Deutschland gilt die Entscheidungsloesung: Jeder kann seine Bereitschaft zur Organspende erklaeren. Kritiker fordern die Widerspruchsloesung.\" Welches Modell gilt aktuell in Deutschland fuer die Organspende?",
+                "answer": "Entscheidungsloesung",
+                "acceptedAnswers": [
+                  "Entscheidungsloesung",
+                  "die Entscheidungsloesung"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2531,6 +2659,18 @@
                   "umfassende"
                 ],
                 "answer": "umfassendes"
+              },
+              {
+                "id": "C1_ex1_l6",
+                "type": "short-answer",
+                "question": "Text: \"Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpraeferenzen.\" Eine Komponente der EBM ist die externe Evidenz, eine andere die klinische Erfahrung. Wie heisst die dritte Komponente?",
+                "answer": "Patientenpraeferenzen",
+                "acceptedAnswers": [
+                  "Patientenpraeferenzen",
+                  "die Patientenpraeferenzen",
+                  "Patientenpraeferenz"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2657,6 +2797,18 @@
                   "ethischen-oekonomischen"
                 ],
                 "answer": "ethisch-oekonomische"
+              },
+              {
+                "id": "C1_ex2_l6",
+                "type": "short-answer",
+                "question": "Text: \"Die Patientenverfuegung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfuegung muessen Angehoerige im mutmasslichen Willen entscheiden.\" Was gibt dem Willen des Patienten rechtliche Verbindlichkeit?",
+                "answer": "die Patientenverfuegung",
+                "acceptedAnswers": [
+                  "die Patientenverfuegung",
+                  "Patientenverfuegung",
+                  "eine Patientenverfuegung"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2783,6 +2935,19 @@
                   "Gespeicherte"
                 ],
                 "answer": "Speicherung"
+              },
+              {
+                "id": "C1_ex3_l6",
+                "type": "short-answer",
+                "question": "Text: \"Die DSGVO verlangt eine ausdrueckliche Einwilligung des Patienten fuer die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.\" Was verlangt die DSGVO fuer die Verarbeitung von Gesundheitsdaten zu Forschungszwecken?",
+                "answer": "eine ausdrueckliche Einwilligung",
+                "acceptedAnswers": [
+                  "eine ausdrueckliche Einwilligung",
+                  "ausdrueckliche Einwilligung",
+                  "Einwilligung",
+                  "die Einwilligung"
+                ],
+                "points": 1
               }
             ]
           },
@@ -2909,6 +3074,17 @@
                   "Erstellens"
                 ],
                 "answer": "Erstellung"
+              },
+              {
+                "id": "C1_ex4_l6",
+                "type": "short-answer",
+                "question": "Text: \"Die strukturierte Patientenuebergabe nach SBAR: Situation, Background, Assessment, Recommendation.\" Wofuer steht das A in SBAR?",
+                "answer": "Assessment",
+                "acceptedAnswers": [
+                  "Assessment",
+                  "das Assessment"
+                ],
+                "points": 1
               }
             ]
           },
@@ -3035,6 +3211,18 @@
                   "Leistungsfaehig"
                 ],
                 "answer": "Leistungsfaehigkeit"
+              },
+              {
+                "id": "C1_ex5_l6",
+                "type": "short-answer",
+                "question": "Text: \"Der aerztliche Fachkraeftemangel ist besonders in laendlichen Regionen spuerbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplaetze.\" Eine Massnahme gegen den Aerztemangel ist mehr Studienplaetze. Welche andere Massnahme wird genannt?",
+                "answer": "erleichterte Zuwanderung",
+                "acceptedAnswers": [
+                  "erleichterte Zuwanderung",
+                  "Zuwanderung",
+                  "die erleichterte Zuwanderung"
+                ],
+                "points": 1
               }
             ]
           },
