@@ -703,7 +703,7 @@ export default function Dashboard() {
     setSettingsMessage({ text: `Dashboard settings cleared: ${clearedCount} key(s).`, isError: false });
   };
 
-  const getDefaultCollapsed = () => ({ recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false });
+  const getDefaultCollapsed = () => ({ recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false, accountSync: false });
 
   // === Collapsed state for secondary cards ===
   const [collapsed, setCollapsed] = useState(() => {
@@ -718,11 +718,12 @@ export default function Dashboard() {
             mistakeReview: !!parsed.mistakeReview,
             quickActions: !!parsed.quickActions,
             weakAreas: !!parsed.weakAreas,
+            accountSync: !!parsed.accountSync,
           };
         }
       }
     } catch {}
-    return { recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false };
+    return { recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false, accountSync: false };
   });
 
   const toggleCollapsed = (key) => {
@@ -1053,6 +1054,44 @@ export default function Dashboard() {
             Start Session <Play size={16} />
           </Link>
         </div>
+      </div>
+
+      {/* Account & Cloud Sync */}
+      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#8b5cf6' }}>
+            <Settings size={16} /> Account & Cloud Sync
+          </h2>
+          <button type="button" onClick={() => toggleCollapsed('accountSync')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
+            <ChevronDown size={16} style={{ transform: collapsed.accountSync ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
+          </button>
+        </div>
+        {!collapsed.accountSync && (
+          <>
+            <AuthPanel />
+            <div className="mt-3 pt-3" style={{ borderTop: '1px solid var(--border)' }}>
+              <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
+                Dashboard settings (layout, sessions, study goal, vocab filters)
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button type="button" onClick={exportSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>Export settings</button>
+                <label className="text-xs px-3 py-1.5 rounded transition-colors cursor-pointer" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
+                  Import settings
+                  <input type="file" accept=".json" className="hidden" onChange={importSettings} />
+                </label>
+                <button type="button" onClick={clearSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: '#ff3355', backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.3)' }}>Clear dashboard settings</button>
+              </div>
+              {settingsMessage && (
+                <p className="text-xs mt-2" style={{ color: settingsMessage.isError ? '#ff3355' : '#3bff9e' }}>{settingsMessage.text}</p>
+              )}
+            </div>
+          </>
+        )}
+        {collapsed.accountSync && (
+          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
+            {state.username ? `Signed in as ${state.username}` : 'Not signed in'} &middot; Dashboard settings
+          </p>
+        )}
       </div>
 
       {/* Recent Sessions */}
@@ -1570,34 +1609,6 @@ export default function Dashboard() {
             </Link>
           );
         })}
-      </div>
-
-      {/* Dashboard Settings */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
-            <Settings size={16} /> Dashboard Settings
-          </h2>
-        </div>
-        <p className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
-          UI settings only. Layout, sessions, study goal, vocab filters.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <button type="button" onClick={exportSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>Export settings</button>
-          <label className="text-xs px-3 py-1.5 rounded transition-colors cursor-pointer" style={{ color: 'var(--text-primary)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
-            Import settings
-            <input type="file" accept=".json" className="hidden" onChange={importSettings} />
-          </label>
-          <button type="button" onClick={clearSettings} className="text-xs px-3 py-1.5 rounded transition-colors" style={{ color: '#ff3355', backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.3)' }}>Clear dashboard settings</button>
-        </div>
-        {settingsMessage && (
-          <p className="text-xs mt-2" style={{ color: settingsMessage.isError ? '#ff3355' : '#3bff9e' }}>{settingsMessage.text}</p>
-        )}
-      </div>
-
-      {/* Cloud Sync */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <AuthPanel />
       </div>
 
       {/* Progress Backup */}
