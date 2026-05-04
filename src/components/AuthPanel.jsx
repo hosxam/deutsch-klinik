@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 
 const PROGRESS_KEY = 'deutsch_klinik_state';
+const SYNC_META_KEY = 'deutsch_klinik_sync_meta';
 const SETTINGS_KEYS = [
   'deutsch_klinik_study_goal',
   'deutsch_klinik_vocab_filters',
@@ -53,6 +54,46 @@ function setLocalSettings(settings) {
         // skip
       }
     }
+  }
+}
+
+function getSyncMeta() {
+  try {
+    const raw = localStorage.getItem(SYNC_META_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === 'object') {
+      // Only keep known fields to avoid storing anything unexpected
+      const meta = {};
+      if (parsed.lastUploadAt) meta.lastUploadAt = parsed.lastUploadAt;
+      if (parsed.lastUploadType === 'manual' || parsed.lastUploadType === 'auto') meta.lastUploadType = parsed.lastUploadType;
+      if (parsed.lastDownloadAt) meta.lastDownloadAt = parsed.lastDownloadAt;
+      if (parsed.lastErrorAt) meta.lastErrorAt = parsed.lastErrorAt;
+      if (parsed.lastErrorMessage) meta.lastErrorMessage = String(parsed.lastErrorMessage).slice(0, 200);
+      return Object.keys(meta).length > 0 ? meta : null;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function setSyncMeta(update) {
+  if (!update || typeof update !== 'object') return;
+  try {
+    const current = getSyncMeta() || {};
+    const merged = { ...current, ...update };
+    localStorage.setItem(SYNC_META_KEY, JSON.stringify(merged));
+  } catch {
+    // skip
+  }
+}
+
+function clearSyncMeta() {
+  try {
+    localStorage.removeItem(SYNC_META_KEY);
+  } catch {
+    // skip
   }
 }
 
@@ -104,9 +145,14 @@ function useAutoSync(session, conflict, isManualOperation) {
 
     if (error) {
       setAutoSyncState('failed');
+      const errMsg = friendlyAuthError(error.message);
+      setSyncMeta({ lastErrorAt: new Date().toISOString(), lastErrorMessage: errMsg });
+      setSyncMetaState(getSyncMeta());
     } else {
       lastUploadedHashRef.current = currentHash;
       setAutoSyncState('saved');
+      setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'auto' });
+      setSyncMetaState(getSyncMeta());
       // Clear "saved" after a few seconds
       setTimeout(() => {
         setAutoSyncState(prev => prev === 'saved' ? 'idle' : prev);
@@ -172,6 +218,87 @@ function autoSyncStatusColor(state) {
 }
 
 /** Map Supabase error messages to friendlier text */
+function formatTime(iso) {
+  if (!iso) return null;
+  try {
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return iso;
+    return d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  } catch {
+    return iso;
+  }
+}
+
+function formatDate(iso) {
+  if (!iso) return null;
+  try {
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return iso;
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    if (d.toDateString() === today.toDateString()) return 'Today ' + formatTime(iso);
+    if (d.toDateString() === yesterday.toDateString()) return 'Yesterday ' + formatTime(iso);
+    return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' ' + formatTime(iso);
+  } catch {
+    return iso;
+  }
+}
+
+function SyncHistory({ meta, onClear }) {
+  if (!meta) return null;
+
+  const items = [];
+  if (meta.lastUploadAt) {
+    const label = meta.lastUploadType === 'manual' ? 'Manual upload' : 'Auto-sync';
+    items.push({ icon: Upload, label, time: formatDate(meta.lastUploadAt), color: 'text-green-400' });
+  }
+  if (meta.lastDownloadAt) {
+    items.push({ icon: Download, label: 'Download', time: formatDate(meta.lastDownloadAt), color: 'text-blue-400' });
+  }
+  if (meta.lastErrorAt) {
+    items.push({
+      icon: AlertTriangle,
+      label: 'Sync error',
+      time: formatDate(meta.lastErrorAt),
+      detail: meta.lastErrorMessage,
+      color: 'text-yellow-400',
+    });
+  }
+
+  if (items.length === 0) return null;
+
+  return (
+    <div className="border-t border-gray-700 pt-2 mt-2">
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-xs text-gray-500 font-medium">Sync History</span>
+        <button
+          onClick={onClear}
+          className="text-xs text-gray-600 hover:text-gray-400"
+          title="Clear sync history"
+        >
+          Clear
+        </button>
+      </div>
+      <div className="space-y-1">
+        {items.map((item, i) => {
+          const Icon = item.icon;
+          return (
+            <div key={i} className="flex items-start gap-1.5 text-xs">
+              <Icon size={12} className={`${item.color} mt-0.5 shrink-0`} />
+              <div className="min-w-0">
+                <span className="text-gray-400">{item.label}</span>
+                {item.detail && <span className="text-gray-500"> - {item.detail}</span>}
+                <span className="text-gray-600 ml-1">{item.time}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function friendlyAuthError(message) {
   if (!message) return 'Something went wrong.';
   const m = message.toLowerCase();
@@ -207,6 +334,9 @@ export default function AuthPanel() {
   const [conflict, setConflict] = useState(null);
   const [isManualOp, setIsManualOp] = useState(false);
 
+  // Sync metadata
+  const [syncMeta, setSyncMetaState] = useState(null);
+
   // Password reset state
   const [showReset, setShowReset] = useState(false);
   const [resetEmail, setResetEmail] = useState('');
@@ -230,10 +360,15 @@ export default function AuthPanel() {
     if (!enabled) return;
     supabase.auth.getSession().then(({ data: { session: s } }) => {
       setSession(s);
+      if (s) {
+        setSyncMetaState(getSyncMeta());
+      }
     });
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, s) => {
       setSession(s);
-      if (!s) {
+      if (s) {
+        setSyncMetaState(getSyncMeta());
+      } else {
         setCloudData(null);
         setConflict(null);
         setSyncStatus('');
@@ -387,10 +522,14 @@ export default function AuthPanel() {
 
     if (error) {
       flash('Upload failed: ' + error.message);
+      setSyncMeta({ lastErrorAt: new Date().toISOString(), lastErrorMessage: friendlyAuthError(error.message) });
+      setSyncMetaState(getSyncMeta());
     } else {
       flash('Progress uploaded successfully.');
       setSyncStatus('Local progress uploaded to cloud.');
       setConflict(null);
+      setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'manual' });
+      setSyncMetaState(getSyncMeta());
     }
     setLoading(false);
     setIsManualOp(false);
@@ -415,6 +554,8 @@ export default function AuthPanel() {
     flash('Cloud progress downloaded. Refresh page to reload progress.');
     setSyncStatus('Cloud progress downloaded to local.');
     setConflict(null);
+    setSyncMeta({ lastDownloadAt: new Date().toISOString() });
+    setSyncMetaState(getSyncMeta());
     setLoading(false);
   }
 
@@ -545,6 +686,9 @@ export default function AuthPanel() {
           )}
 
           {message && <p className="text-xs text-gray-300">{message}</p>}
+
+          {/* Sync history section */}
+          <SyncHistory meta={syncMeta} onClear={() => { clearSyncMeta(); setSyncMetaState(null); }} />
         </div>
       ) : showReset ? (
         /* Password reset form */
