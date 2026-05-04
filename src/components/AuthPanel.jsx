@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
 import {
   User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
-  Loader2, CloudOff, KeyRound, Mail, RefreshCw
+  Loader2, CloudOff, KeyRound, Mail, RefreshCw, ArrowLeft
 } from 'lucide-react';
 
 const PROGRESS_KEY = 'deutsch_klinik_state';
@@ -171,6 +171,31 @@ function autoSyncStatusColor(state) {
   }
 }
 
+/** Map Supabase error messages to friendlier text */
+function friendlyAuthError(message) {
+  if (!message) return 'Something went wrong.';
+  const m = message.toLowerCase();
+  if (m.includes('invalid login credentials') || m.includes('invalid password') || m.includes('wrong password')) {
+    return 'Wrong email or password.';
+  }
+  if (m.includes('email not confirmed') || m.includes('email_not_confirmed')) {
+    return 'Email not confirmed. Check your inbox for the confirmation link.';
+  }
+  if (m.includes('user already registered')) {
+    return 'An account with this email already exists. Try signing in.';
+  }
+  if (m.includes('invalid email')) {
+    return 'Please enter a valid email address.';
+  }
+  if (m.includes('rate limit') || m.includes('too many requests')) {
+    return 'Too many attempts. Please wait a moment and try again.';
+  }
+  if (m.includes('new email cannot be the same as old email')) {
+    return 'That email is the same as your current one.';
+  }
+  return message;
+}
+
 export default function AuthPanel() {
   const [session, setSession] = useState(null);
   const [email, setEmail] = useState('');
@@ -181,6 +206,16 @@ export default function AuthPanel() {
   const [cloudData, setCloudData] = useState(null);
   const [conflict, setConflict] = useState(null);
   const [isManualOp, setIsManualOp] = useState(false);
+
+  // Password reset state
+  const [showReset, setShowReset] = useState(false);
+  const [resetEmail, setResetEmail] = useState('');
+  const [resetLoading, setResetLoading] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
+
+  // Per-button loading states
+  const [signInLoading, setSignInLoading] = useState(false);
+  const [signUpLoading, setSignUpLoading] = useState(false);
 
   const enabled = isSupabaseEnabled();
   const autoSyncState = useAutoSync(session, conflict, isManualOp);
@@ -209,35 +244,48 @@ export default function AuthPanel() {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setSignUpLoading(true);
     setMessage('');
+    setShowReset(false);
     try {
-      const { error } = await supabase.auth.signUp({ email, password });
-      if (error) flash(error.message);
-      else flash('Check your email for confirmation link.');
+      const { data, error } = await supabase.auth.signUp({ email, password });
+      if (error) {
+        flash(friendlyAuthError(error.message));
+      } else if (data?.session) {
+        // Session returned straight away (email confirmation disabled)
+        setSession(data.session);
+        setEmail('');
+        setPassword('');
+        setTimeout(() => checkCloudProgress(), 500);
+      } else {
+        // Email confirmation required
+        flash('Account created. Check your email for a confirmation link before signing in.');
+      }
     } catch (err) {
-      flash(err.message);
+      flash(friendlyAuthError(err.message));
     }
-    setLoading(false);
+    setSignUpLoading(false);
   };
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setSignInLoading(true);
     setMessage('');
+    setShowReset(false);
     try {
       const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-      if (error) flash(error.message);
-      else {
+      if (error) {
+        flash(friendlyAuthError(error.message));
+      } else {
         setSession(data.session);
         setEmail('');
         setPassword('');
         setTimeout(() => checkCloudProgress(), 500);
       }
     } catch (err) {
-      flash(err.message);
+      flash(friendlyAuthError(err.message));
     }
-    setLoading(false);
+    setSignInLoading(false);
   };
 
   const handleSignOut = async () => {
@@ -248,7 +296,38 @@ export default function AuthPanel() {
     setConflict(null);
     setSyncStatus('');
     setLoading(false);
+    setShowReset(false);
+    setResetSent(false);
+    setResetEmail('');
   };
+
+  const handleForgotPassword = async (e) => {
+    e.preventDefault();
+    setResetLoading(true);
+    setMessage('');
+    setResetSent(false);
+    try {
+      const { error } = await supabase.auth.resetPasswordForEmail(resetEmail, {
+        redirectTo: window.location.origin + window.location.pathname,
+      });
+      if (error) {
+        flash(friendlyAuthError(error.message));
+      } else {
+        setResetSent(true);
+        flash('Password reset link sent. Check your email.');
+      }
+    } catch (err) {
+      flash(friendlyAuthError(err.message));
+    }
+    setResetLoading(false);
+  };
+
+  function handleBackToSignIn() {
+    setShowReset(false);
+    setResetSent(false);
+    setResetEmail('');
+    setMessage('');
+  }
 
   async function checkCloudProgress() {
     if (!session?.user?.id) return;
@@ -467,6 +546,53 @@ export default function AuthPanel() {
 
           {message && <p className="text-xs text-gray-300">{message}</p>}
         </div>
+      ) : showReset ? (
+        /* Password reset form */
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-gray-300 font-medium">
+              <KeyRound size={16} />
+              <span>Reset Password</span>
+            </div>
+            <button
+              onClick={handleBackToSignIn}
+              className="flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300"
+            >
+              <ArrowLeft size={14} />
+              Back
+            </button>
+          </div>
+          {!resetSent ? (
+            <form onSubmit={handleForgotPassword} className="space-y-2">
+              <p className="text-xs text-gray-400">Enter your email and we'll send you a password reset link.</p>
+              <div className="relative">
+                <Mail size={14} className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={resetEmail}
+                  onChange={(e) => setResetEmail(e.target.value)}
+                  className="w-full pl-7 pr-2 py-1.5 text-xs bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={resetLoading}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50"
+              >
+                {resetLoading ? <Loader2 size={14} className="animate-spin" /> : <Mail size={14} />}
+                Send Reset Link
+              </button>
+            </form>
+          ) : (
+            <div className="flex items-center gap-2 text-green-400 text-xs">
+              <CheckCircle size={14} />
+              <span>Reset link sent. Check your email.</span>
+            </div>
+          )}
+          {message && <p className="text-xs text-gray-300">{message}</p>}
+        </div>
       ) : (
         /* Signed out state - login form */
         <div className="space-y-3">
@@ -496,22 +622,30 @@ export default function AuthPanel() {
               required
               minLength={6}
             />
-            <div className="flex gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <button
                 type="submit"
-                disabled={loading}
+                disabled={signInLoading}
                 className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50"
               >
-                {loading ? <Loader2 size={14} className="animate-spin" /> : <LogIn size={14} />}
+                {signInLoading ? <Loader2 size={14} className="animate-spin" /> : <LogIn size={14} />}
                 Sign In
               </button>
               <button
                 type="button"
                 onClick={handleSignUp}
-                disabled={loading}
+                disabled={signUpLoading}
                 className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-700 hover:bg-gray-600 text-gray-200 rounded transition-colors disabled:opacity-50"
               >
+                {signUpLoading ? <Loader2 size={14} className="animate-spin" /> : null}
                 Sign Up
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowReset(true)}
+                className="text-xs text-blue-400 hover:text-blue-300 underline ml-auto"
+              >
+                Forgot password?
               </button>
             </div>
           </form>
