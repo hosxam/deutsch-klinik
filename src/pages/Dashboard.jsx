@@ -11,16 +11,24 @@ import AuthPanel from '../components/AuthPanel';
 
 const allLessons = Object.values(dashboardSummary.lessonSummaries || {}).flat();
 
-// Day of week -> skill task mapping
-const DAY_SKILL = {
-  0: { name: 'Reading', icon: FileText, linkSuffix: 'reading', label: '1 Reading Exercise' },
-  1: { name: 'Listening', icon: Headphones, linkSuffix: 'listening', label: '1 Listening Exercise' },
-  2: { name: 'Writing', icon: PenTool, linkSuffix: 'writing', label: '1 Writing Prompt' },
-  3: { name: 'Speaking', icon: Mic, linkSuffix: 'speaking', label: '1 Speaking Task' },
-  4: { name: 'Reading', icon: FileText, linkSuffix: 'reading', label: '1 Reading Exercise' },
-  5: { name: 'Listening', icon: Headphones, linkSuffix: 'listening', label: '1 Listening Exercise' },
-  6: { name: 'Review Mistakes', icon: BookMarked, linkSuffix: null, label: 'Review Mistakes / Exam Practice' },
-};
+// Skill area definitions used for weakness-based daily task ranking
+// Lower completion ratio = higher priority
+const SKILL_AREAS = [
+  { id: 'lesson',    name: 'Lessons',    icon: FileText,       linkSuffix: 'lessons',    label: 'Complete 1 lesson',            getCount: (s, lvl) => getCompletedLessons(lvl).length,                     getTotal: (lvl) => dashboardSummary.lessonCounts?.[lvl] || 25 },
+  { id: 'grammar',   name: 'Grammar',    icon: BarChart3,      linkSuffix: 'grammar',    label: 'Complete 1 grammar unit',      getCount: (s, lvl) => (s.levels?.[lvl]?.grammar?.length || 0),            getTotal: (lvl) => dashboardSummary.grammarCounts?.[lvl] || 200 },
+  { id: 'vocab',     name: 'Vocabulary', icon: BookOpen,       linkSuffix: 'vocabulary', label: 'Review 20 vocabulary words',    getCount: (s, lvl) => (s.levels?.[lvl]?.vocab?.length || 0),             getTotal: (lvl) => dashboardSummary.vocabCounts?.[lvl] || 500 },
+  { id: 'reading',   name: 'Reading',    icon: FileText,       linkSuffix: 'reading',     label: 'Complete 1 reading test',      getCount: (s, lvl) => (s.levels?.[lvl]?.reading?.length || 0),            getTotal: () => 5 },
+  { id: 'listening', name: 'Listening',  icon: Headphones,     linkSuffix: 'listening',  label: 'Complete 1 listening test',    getCount: (s, lvl) => (s.levels?.[lvl]?.listening?.length || 0),          getTotal: () => 5 },
+  { id: 'writing',   name: 'Writing',    icon: PenTool,        linkSuffix: 'writing',    label: 'Submit 1 writing task',         getCount: (s, lvl) => (s.writings || []).filter(w => w.level === lvl).length, getTotal: (lvl) => levelsData.levels.find(l => l.id === lvl)?.minWritingTasks || 10 },
+  { id: 'speaking',  name: 'Speaking',   icon: Mic,            linkSuffix: 'speaking',   label: 'Complete 1 speaking task',     getCount: (s, lvl) => (s.speakingRecordings?.[lvl]?.length || 0),         getTotal: (lvl) => levelsData.levels.find(l => l.id === lvl)?.minSpeakingTasks || 10 },
+];
+
+// Maintenance tasks shown when all areas are complete
+const MAINTENANCE_TASKS = [
+  { id: 'maintain-vocab',     label: 'Review vocabulary flashcards',     link: (lvl) => `/level/${lvl}/vocabulary`,  icon: BookOpen },
+  { id: 'maintain-exam',      label: 'Take a practice exam',            link: (lvl) => `/level/${lvl}/exam`,       icon: ClipboardCheck },
+  { id: 'maintain-mistakes',  label: 'Revise mistakes notebook',        link: () => '/mistake-notebook',          icon: BookMarked },
+];
 
 // Count vocab entries per level (from summary)
 const VOCAB_COUNT = dashboardSummary.vocabCounts;
@@ -126,8 +134,25 @@ export default function Dashboard() {
     return { total, recentCount, topLevel, topCount, hasMistakes: total > 0 };
   }, [state.mistakeNotebook]);
 
-  // === Today's skill based on day of week ===
-  const todaySkill = DAY_SKILL[new Date().getDay()];
+  // === Weakness-based daily skill ===
+  // Derived from the area with the lowest completion ratio
+  const todaySkill = useMemo(() => {
+    const level = state.currentLevel;
+    let worst = SKILL_AREAS[0];
+    let worstRatio = 1;
+
+    for (const area of SKILL_AREAS) {
+      const count = area.getCount(state, level);
+      const total = area.getTotal(level);
+      const ratio = total > 0 ? count / total : 0;
+      if (ratio < worstRatio) {
+        worstRatio = ratio;
+        worst = area;
+      }
+    }
+
+    return { name: worst.name, icon: worst.icon, linkSuffix: worst.linkSuffix, id: worst.id };
+  }, [state]);
 
   const checkTodayActivity = (items) => {
     if (!items || !items.length) return false;
@@ -143,45 +168,81 @@ export default function Dashboard() {
     const level = s.currentLevel;
     const prog = s.levels[level] || {};
     const today = new Date().toISOString().split('T')[0];
+
+    // Rank areas by completion ratio (lower = weaker = higher priority)
+    const ranked = SKILL_AREAS.map(area => {
+      const count = area.getCount(s, level);
+      const total = area.getTotal(level);
+      const ratio = total > 0 ? count / total : 0;
+
+      // Check if done today
+      let doneToday = false;
+      if (area.id === 'writing') {
+        doneToday = (s.writings || []).filter(w => w.level === level && w.date?.startsWith(today)).length > 0;
+      } else if (area.id === 'speaking') {
+        doneToday = (s.speakingRecordings?.[level] || []).filter(r => r.date?.startsWith(today)).length > 0;
+      } else if (area.id === 'lesson') {
+        const completedLessons = getCompletedLessons(level);
+        const levelLessons = allLessons.filter(l => l.level === level);
+        doneToday = levelLessons.some(l => completedLessons.includes(l.id));
+        // Only consider it done today if there are no remaining lessons
+        doneToday = levelLessons.length > 0 && levelLessons.every(l => completedLessons.includes(l.id));
+      } else {
+        doneToday = checkTodayActivity(prog[area.id]);
+      }
+
+      return { ...area, count, total, ratio, doneToday };
+    }).sort((a, b) => a.ratio - b.ratio);
+
     const tasks = [];
 
-    const completedLessons = getCompletedLessons(level);
-    const levelLessons = allLessons.filter(l => l.level === level);
-    const next = levelLessons.find(l => !completedLessons.includes(l.id));
+    // Check if all areas are complete
+    const allComplete = ranked.every(a => a.ratio >= 1);
 
-    if (next) {
-      tasks.push({
-        id: 'lesson',
-        label: `Complete Lesson: ${next.title}`,
-        done: completedLessons.includes(next.id),
-        link: `/level/${level}/lessons/${next.id}`,
+    if (allComplete) {
+      // Show maintenance tasks
+      MAINTENANCE_TASKS.forEach(mt => {
+        tasks.push({
+          id: mt.id,
+          label: mt.label,
+          done: false,
+          link: mt.link(level),
+        });
       });
-    } else if (levelLessons.length) {
-      tasks.push({
-        id: 'lesson',
-        label: 'All lessons complete! Take the exam.',
-        done: true,
-        link: `/level/${level}/exam`,
-      });
-    }
+    } else {
+      // Pick top 3 weakest that aren't done today (or just top 3 if all done today)
+      let picked = ranked.filter(a => !a.doneToday).slice(0, 3);
 
-    tasks.push({ id: 'grammar', label: '10 Grammar Questions', done: checkTodayActivity(prog.grammar), link: `/level/${level}/grammar` });
-    tasks.push({ id: 'vocab', label: '20 Vocabulary Flashcards', done: checkTodayActivity(prog.vocab), link: `/level/${level}/vocabulary` });
+      // If fewer than 3 undone, top up with the weakest ones even if done today
+      if (picked.length < 3) {
+        const doneToday = ranked.filter(a => a.doneToday);
+        picked = [...picked, ...doneToday.slice(0, 3 - picked.length)];
+      }
 
-    // Rotating skill task
-    const daySkill = DAY_SKILL[new Date().getDay()];
-    if (daySkill.linkSuffix) {
-      const skillKey = daySkill.linkSuffix;
-      const done = skillKey === 'writing'
-        ? (s.writings || []).filter(w => w.level === level && w.date?.startsWith(today)).length > 0
-        : skillKey === 'speaking'
-          ? (s.speakingRecordings[level] || []).filter(r => r.date?.startsWith(today)).length > 0
-          : checkTodayActivity(prog[skillKey]);
-      tasks.push({
-        id: daySkill.linkSuffix,
-        label: daySkill.label,
-        done,
-        link: `/level/${level}/${daySkill.linkSuffix}`,
+      // Convert to task format
+      picked.forEach((area, i) => {
+        let link;
+        if (area.id === 'lesson') {
+          const completedLessons = getCompletedLessons(level);
+          const levelLessons = allLessons.filter(l => l.level === level);
+          const next = levelLessons.find(l => !completedLessons.includes(l.id));
+          if (next) {
+            link = `/level/${level}/lessons/${next.id}`;
+          } else if (levelLessons.length) {
+            link = `/level/${level}/exam`;
+          } else {
+            link = `/level/${level}/lessons`;
+          }
+        } else {
+          link = `/level/${level}/${area.linkSuffix}`;
+        }
+
+        tasks.push({
+          id: area.id,
+          label: area.label,
+          done: area.doneToday,
+          link,
+        });
       });
     }
 

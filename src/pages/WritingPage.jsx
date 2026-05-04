@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getState, updateState } from '../utils/store';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
-import { Copy, ClipboardCheck, Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle } from 'lucide-react';
+import { Copy, ClipboardCheck, Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle, ShieldCheck } from 'lucide-react';
 import { correctWriting, isCorrectionEnabled } from '../utils/aiCorrection';
 
 export default function WritingPage() {
@@ -229,21 +229,53 @@ export default function WritingPage() {
             </div>
           )}
 
-          {/* Copy prompt (existing fallback) */}
-          <button onClick={() => setShowAiPrompt(!showAiPrompt)} className="text-xs px-3 py-1.5 rounded-lg mt-2" style={{ backgroundColor: 'rgba(139,92,246,0.12)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
-            {showAiPrompt ? 'Hide' : 'Copy prompt for AI correction'}
-          </button>
-          {showAiPrompt && (
-            <div className="mt-2 rounded-xl p-3" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid #8b5cf6' }}>
-              <textarea readOnly value={`Correct my German answer. Identify grammar mistakes, vocabulary mistakes, sentence structure problems, and give me a corrected version. My level is ${levelId}. The task was: ${prompt.prompt}. My answer is: ${text}.`} rows={5}
-                className="w-full p-2 rounded-lg text-xs outline-none resize-none"
-                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }} />
-              <button onClick={() => { navigator.clipboard.writeText(`Correct my German answer. Identify grammar mistakes, vocabulary mistakes, sentence structure problems, and give me a corrected version. My level is ${levelId}. The task was: ${prompt.prompt}. My answer is: ${text}.`); setAiCopied(true); setTimeout(() => setAiCopied(false), 2000); }}
-                className="mt-1 text-xs px-3 py-1.5 rounded-lg flex items-center gap-1" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
-                {aiCopied ? <><ClipboardCheck size={12} /> Copied!</> : <><Copy size={12} /> Copy to clipboard</>}
-              </button>
+          {/* Copy AI Correction Prompt — no backend needed */}
+          <div className="mt-4">
+            <div className="rounded-xl p-3 mb-3 text-xs" style={{ backgroundColor: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)', color: '#fbbf24' }}>
+              <ShieldCheck size={13} className="inline mr-1" />
+              Do not paste sensitive personal or medical information into external AI tools.
             </div>
-          )}
+            <button
+              onClick={() => {
+                const promptText = [
+                  'You are a native German teacher. Correct the following German text and provide detailed feedback.',
+                  '',
+                  `CEFR level: ${levelId}`,
+                  `Task prompt: ${prompt.prompt}`,
+                  '',
+                  'Student text:',
+                  text,
+                  '',
+                  'Please provide:',
+                  '1. Score: Estimate a score out of 100 for this text at the given CEFR level.',
+                  '2. Grammar mistakes: For each mistake, show the original phrase, the correction, and a short explanation in English.',
+                  '3. Full corrected version: Rewrite the entire text with all grammar mistakes fixed.',
+                  '4. Improved version: Rewrite the text at a slightly higher CEFR level while keeping the same meaning.',
+                  '5. CEFR-level feedback: Evaluate whether this text meets the requirements for the target level.',
+                  '6. Vocabulary suggestions: List 3-5 vocabulary improvements — better or more precise words the student could use.',
+                  '7. Flashcards: Create 3-5 flashcards (front=German word/phrase, back=English meaning) from the mistakes made.',
+                  '',
+                  'Format the response clearly with section headings.',
+                ].join('\n');
+                navigator.clipboard.writeText(promptText);
+                setAiCopied(true);
+                setTimeout(() => setAiCopied(false), 2500);
+              }}
+              disabled={aiCopied}
+              className="w-full py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all"
+              style={{
+                backgroundColor: aiCopied ? '#3bff9e' : 'var(--bg-hover)',
+                color: aiCopied ? '#000' : 'var(--text-primary)',
+                border: '1px solid var(--border)',
+              }}
+            >
+              {aiCopied ? (
+                <><ClipboardCheck size={18} /> Copied to clipboard!</>
+              ) : (
+                <><Copy size={18} /> Copy AI Correction Prompt</>
+              )}
+            </button>
+          </div>
         </div>
 
         <div className="flex gap-3 justify-center">
@@ -290,6 +322,56 @@ export default function WritingPage() {
         className="w-full h-64 p-4 rounded-xl text-sm outline-none resize-none"
         style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
       />
+
+      {/* Pre-submission Copy AI Correction Prompt */}
+      {text.trim().length >= 10 && (
+        <div className="mt-3">
+          <div className="rounded-xl p-2 mb-2 text-xs" style={{ backgroundColor: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.2)', color: '#fbbf24' }}>
+            <ShieldCheck size={12} className="inline mr-1" />
+            Do not paste sensitive personal or medical information into external AI tools.
+          </div>
+          <button
+            onClick={() => {
+              const promptText = [
+                'You are a native German teacher. Correct the following German text and provide detailed feedback.',
+                '',
+                `CEFR level: ${levelId}`,
+                `Task prompt: ${prompt.prompt}`,
+                '',
+                'Student text:',
+                text,
+                '',
+                'Please provide:',
+                '1. Score: Estimate a score out of 100 for this text at the given CEFR level.',
+                '2. Grammar mistakes: For each mistake, show the original phrase, the correction, and a short explanation in English.',
+                '3. Full corrected version: Rewrite the entire text with all grammar mistakes fixed.',
+                '4. Improved version: Rewrite the text at a slightly higher CEFR level while keeping the same meaning.',
+                '5. CEFR-level feedback: Evaluate whether this text meets the requirements for the target level.',
+                '6. Vocabulary suggestions: List 3-5 vocabulary improvements — better or more precise words the student could use.',
+                '7. Flashcards: Create 3-5 flashcards (front=German word/phrase, back=English meaning) from the mistakes made.',
+                '',
+                'Format the response clearly with section headings.',
+              ].join('\n');
+              navigator.clipboard.writeText(promptText);
+              setAiCopied(true);
+              setTimeout(() => setAiCopied(false), 2500);
+            }}
+            disabled={aiCopied}
+            className="w-full py-2.5 rounded-lg font-semibold flex items-center justify-center gap-2 text-sm transition-all"
+            style={{
+              backgroundColor: aiCopied ? '#3bff9e' : 'var(--bg-hover)',
+              color: aiCopied ? '#000' : 'var(--text-primary)',
+              border: '1px solid var(--border)',
+            }}
+          >
+            {aiCopied ? (
+              <><ClipboardCheck size={16} /> Copied to clipboard!</>
+            ) : (
+              <><Copy size={16} /> Copy AI Correction Prompt</>
+            )}
+          </button>
+        </div>
+      )}
 
       <div className="flex gap-3 mt-4">
         <button onClick={submitWriting} disabled={text.trim().length < 10}
