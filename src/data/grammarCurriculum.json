@@ -1,0 +1,5842 @@
+{
+  "A1": [
+    {
+      "id": "A1_gc_1",
+      "level": "A1",
+      "unit": 1,
+      "title": "Alphabet and pronunciation basics",
+      "topic": "German alphabet",
+      "explanation": "The German alphabet has 26 letters + 3 umlauts (ä, ö, ü) and ß. W=[v], V=[f], Z=[ts].",
+      "rules": [
+        "W is [v] like English v: was, wo, wir",
+        "V is [f] in most words: Vater, viel",
+        "Z is [ts]: Zeit, zehn",
+        "CH after a/o/u guttural, after e/i/ä/ö/ü soft"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt",
+          "en": "The doctor"
+        },
+        {
+          "de": "Die Ärztin",
+          "en": "The female doctor"
+        },
+        {
+          "de": "Das Krankenhaus",
+          "en": "The hospital"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "W in was like English w",
+          "correct": "W = v: was=vas",
+          "explanation": "German w is always [v]"
+        },
+        {
+          "wrong": "V in Vater like English v",
+          "correct": "V = f: Vater = fater",
+          "explanation": "Most German v = [f]"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "German w is like which English letter",
+          "answer": "v",
+          "explanation": "w = [v]"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Z in Zeit is like which 2 letters",
+          "answer": "ts",
+          "explanation": "Z = [ts]"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "ß is like double which letter",
+          "answer": "s",
+          "explanation": "ß = [s]"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Greetings",
+        "Numbers"
+      ]
+    },
+    {
+      "id": "A1_gc_2",
+      "level": "A1",
+      "unit": 2,
+      "title": "Personal pronouns and sein",
+      "topic": "Pronouns and verb sein",
+      "explanation": "Personal pronouns (ich, du, er/sie/es, wir, ihr, sie/Sie) with sein (to be). Irregular. Medical: Ich bin Arzt.",
+      "rules": [
+        "ich bin",
+        "du bist",
+        "er/sie/es ist",
+        "wir sind",
+        "ihr seid",
+        "sie/Sie sind"
+      ],
+      "examples": [
+        {
+          "de": "Ich bin Hossam.",
+          "en": "I am Hossam."
+        },
+        {
+          "de": "Du bist Arzt.",
+          "en": "You are a doctor."
+        },
+        {
+          "de": "Sie ist Krankenschwester.",
+          "en": "She is a nurse."
+        },
+        {
+          "de": "Wir sind im Krankenhaus.",
+          "en": "We are in the hospital."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich ist Arzt",
+          "correct": "Ich bin Arzt",
+          "explanation": "Ich takes bin"
+        },
+        {
+          "wrong": "Du sind Patient",
+          "correct": "Du bist Patient",
+          "explanation": "Du takes bist"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ Student",
+          "answer": "bin",
+          "explanation": "Use bin with ich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ Arzt",
+          "answer": "ist",
+          "explanation": "Use ist with er"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ im OP",
+          "answer": "sind",
+          "explanation": "Use sind with wir"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "sein",
+        "Personal Pronouns",
+        "Greetings"
+      ]
+    },
+    {
+      "id": "A1_gc_3",
+      "level": "A1",
+      "unit": 3,
+      "title": "Verb haben",
+      "topic": "The verb haben (to have)",
+      "explanation": "Haben is irregular. Used for possession, feelings, symptoms. Medical: Ich habe Schmerzen.",
+      "rules": [
+        "ich habe",
+        "du hast",
+        "er/sie/es hat",
+        "wir haben",
+        "ihr habt",
+        "sie/Sie haben"
+      ],
+      "examples": [
+        {
+          "de": "Ich habe Fieber.",
+          "en": "I have a fever."
+        },
+        {
+          "de": "Er hat Kopfschmerzen.",
+          "en": "He has a headache."
+        },
+        {
+          "de": "Wir haben eine Praxis.",
+          "en": "We have a practice."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Du haben Fieber",
+          "correct": "Du hast Fieber",
+          "explanation": "Du takes hast"
+        },
+        {
+          "wrong": "Sie hat kein Termin",
+          "correct": "Sie hat keinen Termin",
+          "explanation": "Termin is m.acc: keinen"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ Schmerzen",
+          "answer": "habe",
+          "explanation": "Use habe with ich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Patient ___ Fieber",
+          "answer": "hat",
+          "explanation": "Use hat with er"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ ihr einen Termin?",
+          "answer": "Habt",
+          "explanation": "Ihr takes habt"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "haben",
+        "Personal Pronouns",
+        "Verbs"
+      ]
+    },
+    {
+      "id": "A1_gc_4",
+      "level": "A1",
+      "unit": 4,
+      "title": "Regular present tense verbs",
+      "topic": "Regular verb conjugation",
+      "explanation": "Regular verbs: stem + ending. Medical: untersuchen (examine), fragen (ask), warten (wait).",
+      "rules": [
+        "stem + -e (ich), -st (du), -t (er/sie/es), -en (wir), -t (ihr), -en (sie/Sie)",
+        "Verbs ending -t,-d,-chn,-ffn add -e: du arbeitest",
+        "Stem-vowel changing: sehen -> du siehst, er sieht"
+      ],
+      "examples": [
+        {
+          "de": "Ich untersuche den Patienten.",
+          "en": "I examine the patient."
+        },
+        {
+          "de": "Sie fragt nach Symptomen.",
+          "en": "She asks about symptoms."
+        },
+        {
+          "de": "Wir warten auf Ergebnisse.",
+          "en": "We wait for results."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Du arbeiten im KH",
+          "correct": "Du arbeitest im KH",
+          "explanation": "Du takes -st"
+        },
+        {
+          "wrong": "Er machst das",
+          "correct": "Er macht das",
+          "explanation": "Er takes -t"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (arbeiten) in der Klinik",
+          "answer": "arbeite",
+          "explanation": "Ich takes -e"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt ___ (untersuchen) den Pat.",
+          "answer": "untersucht",
+          "explanation": "Er takes -t"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (warten) auf den Befund",
+          "answer": "warten",
+          "explanation": "Wir takes -en"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Regular Present Tense",
+        "Verbs",
+        "People"
+      ]
+    },
+    {
+      "id": "A1_gc_5",
+      "level": "A1",
+      "unit": 5,
+      "title": "Verb position in main clauses",
+      "topic": "Verb second position (V2)",
+      "explanation": "The conjugated verb is ALWAYS the second element in main clauses. Position 1 can be subject, time, or place.",
+      "rules": [
+        "Verb is always the 2nd element in main clauses",
+        "Position 1 can be subject OR another element (time, place)",
+        "If pos 1 is not subject, subject goes to pos 3"
+      ],
+      "examples": [
+        {
+          "de": "Heute bin ich im Krankenhaus.",
+          "en": "Today I am in the hospital."
+        },
+        {
+          "de": "Morgen hat der Patient eine OP.",
+          "en": "Tomorrow the patient has surgery."
+        },
+        {
+          "de": "Im OP arbeitet ein Chirurg.",
+          "en": "In the OR a surgeon works."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Heute ich bin im KH",
+          "correct": "Heute bin ich im KH",
+          "explanation": "Time first: verb pos 2, subject pos 3"
+        },
+        {
+          "wrong": "Der Pat. gestern hatte Fieber",
+          "correct": "Der Pat. hatte gestern Fieber",
+          "explanation": "Verb stays pos 2"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Morgen ___ ich einen Termin",
+          "answer": "habe",
+          "explanation": "Verb in pos 2"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Im OP ___ der Chirurg",
+          "answer": "ist",
+          "explanation": "Verb in pos 2"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Du ___ heute Dienst",
+          "answer": "hast",
+          "explanation": "Verb in pos 2"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Word Order",
+        "Regular Present Tense",
+        "sein"
+      ]
+    },
+    {
+      "id": "A1_gc_6",
+      "level": "A1",
+      "unit": 6,
+      "title": "Yes/no questions",
+      "topic": "Verb-first questions",
+      "explanation": "Verb to position 1, then subject. Medical: Haben Sie Schmerzen?",
+      "rules": [
+        "Verb goes to position 1 (start)",
+        "Subject follows verb (pos 2)",
+        "Answer with Ja or Nein"
+      ],
+      "examples": [
+        {
+          "de": "Haben Sie Schmerzen?",
+          "en": "Do you have pain?"
+        },
+        {
+          "de": "Ist der Patient wach?",
+          "en": "Is the patient awake?"
+        },
+        {
+          "de": "Kommen Sie aus Deutschland?",
+          "en": "Do you come from Germany?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Du hast Schmerzen? (statement word order)",
+          "correct": "Hast du Schmerzen?",
+          "explanation": "Verb must come first"
+        },
+        {
+          "wrong": "Ist sie hat Fieber? (two verbs at start)",
+          "correct": "Hat sie Fieber?",
+          "explanation": "Only one verb at pos 1"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ Sie Allergien?",
+          "answer": "Haben",
+          "explanation": "Question starts with verb"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ der Patient Fieber?",
+          "answer": "Hat",
+          "explanation": "Hat at pos 1"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ du morgen frei?",
+          "answer": "Hast",
+          "explanation": "Verb-first question"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Yes/No Questions",
+        "Word Order",
+        "sein"
+      ]
+    },
+    {
+      "id": "A1_gc_7",
+      "level": "A1",
+      "unit": 7,
+      "title": "W-questions",
+      "topic": "Question words: wer, was, wo, wann, warum, wie",
+      "explanation": "W-words start questions, verb in pos 2. Medical: Wo haben Sie Schmerzen?",
+      "rules": [
+        "Question word pos 1, verb pos 2, subject pos 3",
+        "wer (who), was (what), wo (where), wann (when), warum (why), wie (how)",
+        "wie + adjective: wie alt, wie lange"
+      ],
+      "examples": [
+        {
+          "de": "Wo haben Sie Schmerzen?",
+          "en": "Where do you have pain?"
+        },
+        {
+          "de": "Wie heißen Sie?",
+          "en": "What is your name?"
+        },
+        {
+          "de": "Seit wann haben Sie Fieber?",
+          "en": "Since when do you have fever?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Was ist Ihre Name?",
+          "correct": "Wie ist Ihr Name?",
+          "explanation": "Use wie for names"
+        },
+        {
+          "wrong": "Wo du hast Schmerzen?",
+          "correct": "Wo hast du Schmerzen?",
+          "explanation": "Verb follows W-word pos 2"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ haben Sie Schmerzen? (Where)",
+          "answer": "Wo",
+          "explanation": "Wo = where"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ alt sind Sie?",
+          "answer": "Wie",
+          "explanation": "Wie alt = how old"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ ist Ihr Hausarzt? (Who)",
+          "answer": "Wer",
+          "explanation": "Wer = who"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "W-Questions",
+        "Word Order",
+        "Personal Pronouns"
+      ]
+    },
+    {
+      "id": "A1_gc_8",
+      "level": "A1",
+      "unit": 8,
+      "title": "Noun gender der/die/das",
+      "topic": "Definite articles and noun gender",
+      "explanation": "Every noun has gender: der (m), die (f), das (n). Learn with article. der Arzt, die Ärztin, das Krankenhaus.",
+      "rules": [
+        "Masculine (der): male people, days, months, seasons, most -er nouns",
+        "Feminine (die): female people, -ung/-heit/-keit/-schaft/-tion",
+        "Neuter (das): young beings, -chen/-lein, loanwords"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt kommt um zehn.",
+          "en": "The doctor comes at ten."
+        },
+        {
+          "de": "Die Ärztin untersucht die Patientin.",
+          "en": "The doctor examines the patient."
+        },
+        {
+          "de": "Das Krankenhaus ist groß.",
+          "en": "The hospital is big."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Das Arzt (neuter article)",
+          "correct": "Der Arzt",
+          "explanation": "Arzt is masculine"
+        },
+        {
+          "wrong": "Der Krankenhaus",
+          "correct": "Das Krankenhaus",
+          "explanation": "Krankenhaus is neuter"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ Patient hat Husten. (the)",
+          "answer": "Der",
+          "explanation": "Patient is masculine"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Krankenschwester hilft. (the)",
+          "answer": "Die",
+          "explanation": "KS is feminine"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Rezept ist fertig. (neuter)",
+          "answer": "Das",
+          "explanation": "Rezept is neuter"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Definite Articles",
+        "Articles",
+        "People"
+      ]
+    },
+    {
+      "id": "A1_gc_9",
+      "level": "A1",
+      "unit": 9,
+      "title": "Indefinite articles ein/eine",
+      "topic": "ein (masc/neut) and eine (fem)",
+      "explanation": "Ein for masc/neut, eine for fem in nominative. No plural indefinite article.",
+      "rules": [
+        "Masculine: ein (ein Arzt)",
+        "Feminine: eine (eine Ärztin)",
+        "Neuter: ein (ein Krankenhaus)",
+        "No indefinite article in plural"
+      ],
+      "examples": [
+        {
+          "de": "Ein Patient wartet.",
+          "en": "A patient is waiting."
+        },
+        {
+          "de": "Eine Schwester bringt Medikamente.",
+          "en": "A nurse brings medication."
+        },
+        {
+          "de": "Ist das ein Notfall?",
+          "en": "Is this an emergency?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Eine Arzt (feminine article)",
+          "correct": "Ein Arzt",
+          "explanation": "Arzt is masc: ein"
+        },
+        {
+          "wrong": "Ein Ärztin (masculine article)",
+          "correct": "Eine Ärztin",
+          "explanation": "Ärztin is fem: eine"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Das ist ___ Notfall. (a)",
+          "answer": "ein",
+          "explanation": "Notfall is masc"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie ist ___ Ärztin.",
+          "answer": "eine",
+          "explanation": "Ärztin is fem"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir brauchen ___ Rezept. (neuter/a)",
+          "answer": "ein",
+          "explanation": "Rezept is neuter"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Indefinite Articles",
+        "Articles",
+        "People"
+      ]
+    },
+    {
+      "id": "A1_gc_10",
+      "level": "A1",
+      "unit": 10,
+      "title": "Plural basics",
+      "topic": "Forming plural nouns",
+      "explanation": "Plurals via -e, -er, -en/-n, -s, or umlaut. Medical: der Arzt -> die Ärzte, die Tablette -> die Tabletten.",
+      "rules": [
+        "Most masc: -e (often Umlaut): der Arzt -> die Ärzte",
+        "Most fem: -en/-n: die Tablette -> die Tabletten",
+        "Neuter: -er or -e: das Rezept -> die Rezepte"
+      ],
+      "examples": [
+        {
+          "de": "Die Ärzte haben Visite.",
+          "en": "The doctors have rounds."
+        },
+        {
+          "de": "Die Tabletten sind gegen Schmerzen.",
+          "en": "Tablets are for pain."
+        },
+        {
+          "de": "Die Rezepte sind fertig.",
+          "en": "Prescriptions are ready."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Die Arzt (singular kept)",
+          "correct": "Die Ärzte",
+          "explanation": "Arzt -> Umlaut + -e"
+        },
+        {
+          "wrong": "Der Patient -> der Patienten",
+          "correct": "Der Patient -> die Patienten",
+          "explanation": "Patient follows n-declension"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt - die ___",
+          "answer": "Ärzte",
+          "explanation": "Umlaut + -e"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Tablette - die ___",
+          "answer": "Tabletten",
+          "explanation": "Add -n"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Rezept - die ___",
+          "answer": "Rezepte",
+          "explanation": "Add -e"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Plural Forms",
+        "Articles",
+        "Definite Articles"
+      ]
+    },
+    {
+      "id": "A1_gc_11",
+      "level": "A1",
+      "unit": 11,
+      "title": "Accusative case basics",
+      "topic": "Accusative for direct objects",
+      "explanation": "Direct object = accusative. Only masculine changes: der -> den, ein -> einen.",
+      "rules": [
+        "Masculine: der -> den (ein -> einen)",
+        "Feminine: die -> die (eine -> eine, no change)",
+        "Neuter: das -> das (ein -> ein, no change)"
+      ],
+      "examples": [
+        {
+          "de": "Ich untersuche den Patienten.",
+          "en": "I examine the patient."
+        },
+        {
+          "de": "Der Arzt hat einen Termin.",
+          "en": "The doc has an appointment."
+        },
+        {
+          "de": "Die Schwester bringt die Medikamente.",
+          "en": "The nurse brings medication."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich untersuche der Patient",
+          "correct": "Ich untersuche den Patienten",
+          "explanation": "M.acc: den"
+        },
+        {
+          "wrong": "Sie hat der Termin",
+          "correct": "Sie hat den Termin",
+          "explanation": "Termin is m.acc: den"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich sehe ___ Arzt. (the)",
+          "answer": "den",
+          "explanation": "M.acc: den"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie braucht ___ Rezept. (a/neuter)",
+          "answer": "ein",
+          "explanation": "Neuter: no change"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir rufen ___ Schwester. (the)",
+          "answer": "die",
+          "explanation": "Feminine: no change"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Accusative Case",
+        "Articles",
+        "Definite Articles"
+      ]
+    },
+    {
+      "id": "A1_gc_12",
+      "level": "A1",
+      "unit": 12,
+      "title": "Negation nicht/kein",
+      "topic": "nicht and kein for negation",
+      "explanation": "nicht (not) for verbs/adjectives/adverbs. kein (no/not a) for nouns. Kein declines like ein.",
+      "rules": [
+        "nicht negates verbs: Er schläft nicht.",
+        "nicht at end: Ich verstehe nicht.",
+        "kein for nouns: kein (m/n), keine (f/pl), keinen (m.acc)"
+      ],
+      "examples": [
+        {
+          "de": "Ich habe keine Schmerzen.",
+          "en": "I have no pain."
+        },
+        {
+          "de": "Der Patient schläft nicht.",
+          "en": "The patient is not sleeping."
+        },
+        {
+          "de": "Wir haben keinen Termin frei.",
+          "en": "We have no appointment free."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich habe nicht Schmerzen",
+          "correct": "Ich habe keine Schmerzen",
+          "explanation": "With nouns use kein"
+        },
+        {
+          "wrong": "Er ist nicht ein Arzt",
+          "correct": "Er ist kein Arzt",
+          "explanation": "Use kein not nicht ein"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe ___ Termin. (no)",
+          "answer": "keinen",
+          "explanation": "M.acc: keinen"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. hat ___ Fieber. (no)",
+          "answer": "kein",
+          "explanation": "Neuter: kein"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie arbeitet ___ heute. (not)",
+          "answer": "nicht",
+          "explanation": "Negating verb: nicht"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "nicht vs kein",
+        "Negative Articles",
+        "Accusative Case"
+      ]
+    },
+    {
+      "id": "A1_gc_13",
+      "level": "A1",
+      "unit": 13,
+      "title": "Possessive articles mein/dein",
+      "topic": "Possessives: mein, dein, sein, ihr, unser, euer, Ihr",
+      "explanation": "Possessives show ownership. Decline like kein. Medical: Mein Patient (my patient).",
+      "rules": [
+        "ich->mein, du->dein, er->sein, sie->ihr, es->sein",
+        "wir->unser, ihr->euer, sie->ihr, Sie->Ihr",
+        "Endings like kein: -e for fem/pl nom, -en for m.acc"
+      ],
+      "examples": [
+        {
+          "de": "Mein Patient hat hohen Blutdruck.",
+          "en": "My patient has high BP."
+        },
+        {
+          "de": "Ihre Krankenakte ist hier.",
+          "en": "Your file is here (formal)."
+        },
+        {
+          "de": "Sein Rezept ist fertig.",
+          "en": "His prescription is ready."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Meine Patient (fem ending)",
+          "correct": "Mein Patient",
+          "explanation": "Patient is masc: mein"
+        },
+        {
+          "wrong": "Deine Arzt (fem ending)",
+          "correct": "Dein Arzt",
+          "explanation": "Arzt is masc: dein"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ Patient hat Fieber. (my)",
+          "answer": "Mein",
+          "explanation": "Patient is masc"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Schwester hilft. (your formal)",
+          "answer": "Ihre",
+          "explanation": "Feminine: Ihre"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Rezept ist fertig. (his)",
+          "answer": "Sein",
+          "explanation": "Neuter: sein"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Possessive Adjectives",
+        "Personal Pronouns",
+        "Articles"
+      ]
+    },
+    {
+      "id": "A1_gc_14",
+      "level": "A1",
+      "unit": 14,
+      "title": "Modal verbs können/müssen/wollen",
+      "topic": "Modal verb introduction",
+      "explanation": "Modals change main verb meaning. Modal in pos 2, main verb infinitive at end. Medical: Ich kann nicht kommen.",
+      "rules": [
+        "können (can): ich kann, du kannst, er kann, können, könnt, können",
+        "müssen (must): ich muss, du musst, er muss, müssen, müsst, müssen",
+        "wollen (want): ich will, du willst, er will, wollen, wollt, wollen",
+        "Main verb as infinitive at sentence end"
+      ],
+      "examples": [
+        {
+          "de": "Ich kann heute nicht kommen.",
+          "en": "I cannot come today."
+        },
+        {
+          "de": "Sie müssen im Wartezimmer warten.",
+          "en": "You must wait in the waiting room."
+        },
+        {
+          "de": "Der Patient will den Arzt sprechen.",
+          "en": "The patient wants to speak to the doctor."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich kann komme (conjugated main verb)",
+          "correct": "Ich kann kommen",
+          "explanation": "Main verb stays infinitive"
+        },
+        {
+          "wrong": "Sie müsst warten (wrong modal form)",
+          "correct": "Sie müssen warten",
+          "explanation": "Sie formal takes müssen"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ nicht kommen. (can)",
+          "answer": "kann",
+          "explanation": "kann with ich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Patient ___ warten. (must)",
+          "answer": "muss",
+          "explanation": "muss with er"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Sie den Arzt sprechen? (want)",
+          "answer": "Wollen",
+          "explanation": "Wollen with Sie"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Modal Verbs",
+        "Verbs",
+        "Yes/No Questions"
+      ]
+    },
+    {
+      "id": "A1_gc_15",
+      "level": "A1",
+      "unit": 15,
+      "title": "Separable verbs basics",
+      "topic": "Separable prefix verbs: anrufen, aufmachen",
+      "explanation": "Prefixes (an-, auf-, ein-, mit-) separate to end in main clause. Der Arzt ruft den Patienten an.",
+      "rules": [
+        "Prefix separates to sentence end in main clauses",
+        "Common: an-, auf-, ein-, mit-, vor-, zu-",
+        "Stem in pos 2, prefix at end"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt ruft den Pat. an.",
+          "en": "The doctor calls the patient."
+        },
+        {
+          "de": "Die Praxis macht um 8 auf.",
+          "en": "The practice opens at 8."
+        },
+        {
+          "de": "Der Pat. nimmt die Tablette ein.",
+          "en": "The patient takes the tablet."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich anrufe den Patienten",
+          "correct": "Ich rufe den Pat. an",
+          "explanation": "Prefix goes to end"
+        },
+        {
+          "wrong": "Sie aufmacht die Praxis",
+          "correct": "Sie macht die Praxis auf",
+          "explanation": "Stem pos 2, prefix end"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt ___ den Pat. ___. (ruft an)",
+          "answer": "ruft ... an",
+          "explanation": "Prefix at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ morgen ___. (stehen auf)",
+          "answer": "stehen ... auf",
+          "explanation": "auf at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wann ___ die Praxis ___? (macht auf)",
+          "answer": "macht ... auf",
+          "explanation": "auf at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Separable Verbs",
+        "Regular Present Tense",
+        "Word Order"
+      ]
+    },
+    {
+      "id": "A1_gc_16",
+      "level": "A1",
+      "unit": 16,
+      "title": "Time expressions",
+      "topic": "Telling time and time phrases",
+      "explanation": "um (clock times), am (days), im (months/seasons). halb = half of NEXT hour.",
+      "rules": [
+        "um for clock times: um 9 Uhr",
+        "am for days: am Montag, am Morgen",
+        "haly zehn = half of ten = 9:30"
+      ],
+      "examples": [
+        {
+          "de": "Der Termin ist um zehn.",
+          "en": "Appointment at 10."
+        },
+        {
+          "de": "Am Montag habe ich Dienst.",
+          "en": "Monday I am on duty."
+        },
+        {
+          "de": "Die Praxis öffnet um 8.",
+          "en": "Practice opens at 8."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Am acht Uhr (using am for clock)",
+          "correct": "Um acht Uhr",
+          "explanation": "Use um (not am) for clock times"
+        },
+        {
+          "wrong": "Halb zehn meaning 10:30",
+          "correct": "Halb zehn = 9:30",
+          "explanation": "Halb = half of the next hour"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Termin ist ___ 10 Uhr.",
+          "answer": "um",
+          "explanation": "um for clock"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Halb drei = ___:___",
+          "answer": "2:30",
+          "explanation": "Half of three = 2:30"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Montag habe ich Schicht",
+          "answer": "Am",
+          "explanation": "am for days"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Numbers and Time",
+        "Numbers",
+        "Prepositions"
+      ]
+    },
+    {
+      "id": "A1_gc_17",
+      "level": "A1",
+      "unit": 17,
+      "title": "Numbers and prices",
+      "topic": "Numbers 0-100 and prices",
+      "explanation": "21+: einundzwanzig (one-and-twenty). Medical: dosage, blood pressure, prices.",
+      "rules": [
+        "1-12: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf",
+        "13-19: +zehn: dreizehn",
+        "20-99: units+und+tens: einundzwanzig"
+      ],
+      "examples": [
+        {
+          "de": "Der Blutdruck ist 120 zu 80.",
+          "en": "BP is 120/80."
+        },
+        {
+          "de": "Fünfzig mg, bitte.",
+          "en": "50mg please."
+        },
+        {
+          "de": "Wie viel kostet das Rezept?",
+          "en": "How much is the prescription?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Einsundzwanzig (keeping -s)",
+          "correct": "Einundzwanzig",
+          "explanation": "Drop -s on eins"
+        },
+        {
+          "wrong": "vierßig (wrong spelling)",
+          "correct": "Vierzig",
+          "explanation": "Spelling: vierzig not vierßig"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "21 auf Deutsch: ___",
+          "answer": "einundzwanzig",
+          "explanation": "One-and-twenty"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wie viel ___ das?",
+          "answer": "kostet",
+          "explanation": "kostet for price"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "99 auf Deutsch: ___",
+          "answer": "neunundneunzig",
+          "explanation": "Nine-and-ninety"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Numbers",
+        "Numbers and Time",
+        "Greetings"
+      ]
+    },
+    {
+      "id": "A1_gc_18",
+      "level": "A1",
+      "unit": 18,
+      "title": "Prepositions of place basics",
+      "topic": "in, auf, unter, neben, vor, hinter, an, zwischen",
+      "explanation": "Location (sein) = dative. Direction (gehen) = accusative. Contractions: im, ins, am.",
+      "rules": [
+        "Location with sein = dative: im = in + dem",
+        "Direction with gehen = accusative: ins = in + das",
+        "Contractions: im, ins, am, zur"
+      ],
+      "examples": [
+        {
+          "de": "Der Patient ist im Wartezimmer.",
+          "en": "The patient is in the waiting room."
+        },
+        {
+          "de": "Die Tablette liegt auf dem Tisch.",
+          "en": "The tablet is on the table."
+        },
+        {
+          "de": "Der Arzt steht neben dem Bett.",
+          "en": "The doctor stands next to the bed."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Pat. ist in die Praxis (acc for static)",
+          "correct": "Der Pat. ist in der Praxis",
+          "explanation": "Location with sein = dative"
+        },
+        {
+          "wrong": "Auf der Tisch (fem for masc)",
+          "correct": "Auf dem Tisch",
+          "explanation": "Tisch is masc: dem"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt ist ___ (in+dem) OP.",
+          "answer": "im",
+          "explanation": "im = in + dem"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Tablette liegt ___ Tisch. (on the/dat)",
+          "answer": "auf dem",
+          "explanation": "auf + dative"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. sitzt ___ Bett. (next to)",
+          "answer": "neben",
+          "explanation": "neben = next to"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Prepositions of Place",
+        "Accusative Case",
+        "Articles"
+      ]
+    },
+    {
+      "id": "A1_gc_19",
+      "level": "A1",
+      "unit": 19,
+      "title": "Imperative basics",
+      "topic": "Commands and instructions",
+      "explanation": "Nehmen Sie diese Tablette, Öffnen Sie den Mund, Bleiben Sie ruhig.",
+      "rules": [
+        "Sie (formal): Verb + Sie: Kommen Sie!",
+        "du (informal): stem (+ -e): Komm! Sei!",
+        "ihr (plural): verb + -t: Kommt!"
+      ],
+      "examples": [
+        {
+          "de": "Nehmen Sie diese Tablette!",
+          "en": "Take this tablet!"
+        },
+        {
+          "de": "Öffnen Sie den Mund!",
+          "en": "Open your mouth!"
+        },
+        {
+          "de": "Bleiben Sie ruhig!",
+          "en": "Stay calm!"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Nehmen diese Tablette (missing Sie)",
+          "correct": "Nehmen Sie diese Tablette!",
+          "explanation": "Formal needs Sie"
+        },
+        {
+          "wrong": "Kommen du morgen (mixed)",
+          "correct": "Komm morgen! or Kommen Sie!",
+          "explanation": "Be consistent with Sie/du"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ Sie diese Tablette! (Take)",
+          "answer": "Nehmen",
+          "explanation": "Verb + Sie"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Sie den Mund! (Open)",
+          "answer": "Öffnen Sie",
+          "explanation": "Verb + Sie = formal"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (Come, du) her!",
+          "answer": "Komm",
+          "explanation": "Informal: stem only"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Imperatives",
+        "Verbs",
+        "Word Order"
+      ]
+    },
+    {
+      "id": "A1_gc_20",
+      "level": "A1",
+      "unit": 20,
+      "title": "Connectors und/aber/oder/denn",
+      "topic": "und, aber, oder, denn (no word order change)",
+      "explanation": "These join main clauses without changing word order. Contrast: weil pushes verb to end.",
+      "rules": [
+        "und (and): no word order change",
+        "aber (but): no word order change",
+        "oder (or): no change",
+        "denn (because): no change (unlike weil!)"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt kommt und die KS hilft.",
+          "en": "Doc comes and nurse helps."
+        },
+        {
+          "de": "Der Pat. hat Fieber, aber keine Schmerzen.",
+          "en": "Fever but no pain."
+        },
+        {
+          "de": "Ich kann nicht kommen, denn ich habe Dienst.",
+          "en": "Cannot come because I am on duty."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "denn changes word order (like weil)",
+          "correct": "denn does NOT change order",
+          "explanation": "denn is neutral, unlike weil"
+        },
+        {
+          "wrong": "Missing comma before aber",
+          "correct": "Fieber, aber keine Schmerzen",
+          "explanation": "Comma before connector"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Doc kommt ___ die KS hilft. (and)",
+          "answer": "und",
+          "explanation": "und = and"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe Fieber ___ keinen Husten. (but)",
+          "answer": "aber",
+          "explanation": "aber = but"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er kommt nicht ___ er ist krank. (because)",
+          "answer": "denn",
+          "explanation": "denn = no change"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Word Order",
+        "Conjunctions",
+        "Connectors"
+      ]
+    },
+    {
+      "id": "A1_gc_21",
+      "level": "A1",
+      "unit": 21,
+      "title": "A1 Mixed review",
+      "topic": "Complete A1 grammar review",
+      "explanation": "Review: sein/haben, present tense, questions, accusative, negation, modals, separable verbs, imperatives, connectors.",
+      "rules": [
+        "sein: bin, bist, ist, sind, seid, sind",
+        "haben: habe, hast, hat, haben, habt, haben",
+        "V2: verb always 2nd element",
+        "Accusative: only masc changes (der->den, ein->einen)"
+      ],
+      "examples": [
+        {
+          "de": "Ich bin Arzt und habe heute Dienst.",
+          "en": "I am a doctor on duty today."
+        },
+        {
+          "de": "Der Pat. hat Fieber und muss bleiben.",
+          "en": "Patient has fever and must stay."
+        },
+        {
+          "de": "Wo haben Sie Schmerzen?",
+          "en": "Where do you have pain?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich hat kein Termin",
+          "correct": "Ich habe keinen Termin",
+          "explanation": "Ich takes habe, acc: keinen"
+        },
+        {
+          "wrong": "Er müssen warten",
+          "correct": "Er muss warten",
+          "explanation": "Er takes muss (no ending)"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (sein) müde",
+          "answer": "bin",
+          "explanation": "Ich bin"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (haben) keine Schmerzen",
+          "answer": "haben",
+          "explanation": "Wir haben"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ ist das Krankenhaus? (where)",
+          "answer": "Wo",
+          "explanation": "Use Wo"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Mixed Review",
+        "sein",
+        "haben",
+        "Word Order",
+        "Accusative Case"
+      ]
+    }
+  ],
+  "A2": [
+    {
+      "id": "A2_gc_1",
+      "level": "A2",
+      "unit": 1,
+      "title": "Perfect tense with haben",
+      "topic": "Perfekt with haben auxiliary",
+      "explanation": "Perfekt = haben + past participle at end. Most verbs use haben. Medical: Ich habe den Pat. untersucht.",
+      "rules": [
+        "haben + Partizip II at end",
+        "Regular PP: ge-+stem+-t: gemacht",
+        "Irregular PP: ge-+stem(varies)+-en: genommen",
+        "-ieren verbs: no ge-: studiert"
+      ],
+      "examples": [
+        {
+          "de": "Ich habe den Pat. untersucht.",
+          "en": "I examined the patient."
+        },
+        {
+          "de": "Haben Sie die Tablette genommen?",
+          "en": "Did you take the tablet?"
+        },
+        {
+          "de": "Der Arzt hat eine Diagnose gestellt.",
+          "en": "The doctor made a diagnosis."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich habe untersuchen (infinitive)",
+          "correct": "Ich habe untersucht",
+          "explanation": "Need participle"
+        },
+        {
+          "wrong": "Sie hat der Patient gesehen (nom)",
+          "correct": "Sie hat den Pat. gesehen",
+          "explanation": "Accusative: den"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe den Pat. ___ (untersuchen)",
+          "answer": "untersucht",
+          "explanation": "Regular PP"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Hast du die Medizin ___ (nehmen)?",
+          "answer": "genommen",
+          "explanation": "Irregular: genommen"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir haben im KH ___ (arbeiten)",
+          "answer": "gearbeitet",
+          "explanation": "arbeitet -> gearbeitet"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Perfekt mit haben",
+        "Perfect Tense",
+        "Partizip II regular"
+      ]
+    },
+    {
+      "id": "A2_gc_2",
+      "level": "A2",
+      "unit": 2,
+      "title": "Perfect tense with sein",
+      "topic": "Perfekt with sein auxiliary",
+      "explanation": "Movement/state change verbs use sein. Medical: Der Pat. ist ins KH gekommen.",
+      "rules": [
+        "Movement verbs: gehen, kommen, fahren, fliegen, reisen",
+        "State change: sein, werden, sterben, aufwachen",
+        "sein + PP at end"
+      ],
+      "examples": [
+        {
+          "de": "Der Pat. ist ins KH gekommen.",
+          "en": "Patient came to hospital."
+        },
+        {
+          "de": "Ich bin um 6 aufgestanden.",
+          "en": "I got up at 6."
+        },
+        {
+          "de": "Er ist heute nicht gekommen.",
+          "en": "He did not come today."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich habe ins KH gegangen (haben statt sein)",
+          "correct": "Ich bin ins KH gegangen",
+          "explanation": "gehen = sein"
+        },
+        {
+          "wrong": "Sie hat gestern aufgewacht (haben)",
+          "correct": "Sie ist gestern aufgewacht",
+          "explanation": "State change = sein"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ ins KH ___ (gehen)",
+          "answer": "bin gegangen",
+          "explanation": "gehen takes sein"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Pat. ___ um 6 ___ (aufstehen)",
+          "answer": "ist aufgestanden",
+          "explanation": "state change: sein"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ nicht ___. (kommen)",
+          "answer": "ist gekommen",
+          "explanation": "kommen = sein"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Perfekt mit sein",
+        "Perfect Tense",
+        "Partizip II irregular"
+      ]
+    },
+    {
+      "id": "A2_gc_3",
+      "level": "A2",
+      "unit": 3,
+      "title": "Regular Partizip II",
+      "topic": "Regular past participle formation",
+      "explanation": "ge- + stem + -t. Exceptions: -ieren no ge-, separable verbs put -ge- between prefix and stem.",
+      "rules": [
+        "Regular: ge-+stem+-t: machen -> gemacht",
+        "-ieren: no ge-, stem+-t: studieren",
+        "Separable: prefix+ge+stem+t: aufgemacht",
+        "Verbs ending -t,-d,-chn,-ffn: gearbeitet"
+      ],
+      "examples": [
+        {
+          "de": "Ich habe untersucht.",
+          "en": "I examined."
+        },
+        {
+          "de": "Hast du gearbeitet?",
+          "en": "Did you work?"
+        },
+        {
+          "de": "Wir haben aufgemacht.",
+          "en": "We opened."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich habe untersuchen (infinitive)",
+          "correct": "Ich habe untersucht",
+          "explanation": "Need PP"
+        },
+        {
+          "wrong": "aufmachen -> aufgemacht (not aufmacht)",
+          "correct": "aufgemacht",
+          "explanation": "auf-ge-macht"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe im KH ___ (arbeiten)",
+          "answer": "gearbeitet",
+          "explanation": "ge- + arbeit + -et"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir haben die Praxis ___ (aufmachen)",
+          "answer": "aufgemacht",
+          "explanation": "auf-ge-macht"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie hat Medizin ___ (studieren)",
+          "answer": "studiert",
+          "explanation": "no ge- with -ieren"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Partizip II regular",
+        "Perfect Tense",
+        "Perfekt mit haben"
+      ]
+    },
+    {
+      "id": "A2_gc_4",
+      "level": "A2",
+      "unit": 4,
+      "title": "Irregular Partizip II",
+      "topic": "Irregular past participle formation",
+      "explanation": "ge- + stem(changed) + -en. Often a vowel change. Must memorize these forms.",
+      "rules": [
+        "ge-+stem(changed)+-en: nehmen->genommen, sprechen->gesprochen",
+        "Inseparable: no ge-: verstanden, bekommen",
+        "Mixed: bringen->gebracht, denken->gedacht"
+      ],
+      "examples": [
+        {
+          "de": "Haben Sie genommen?",
+          "en": "Did you take?"
+        },
+        {
+          "de": "Er hat verschrieben.",
+          "en": "He prescribed."
+        },
+        {
+          "de": "Er hat gut geschlafen.",
+          "en": "He slept well."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "genommen vs genommt (wrong)",
+          "correct": "genommen",
+          "explanation": "nehmen -> genommen, not -t ending"
+        },
+        {
+          "wrong": "schreiben -> geschriebt (wrong ending)",
+          "correct": "schreiben -> geschrieben",
+          "explanation": "Strong verbs take -en not -t"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe die Tabletten ___ (nehmen)",
+          "answer": "genommen",
+          "explanation": "nehmen -> genommen"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie hat gut ___ (schlafen)",
+          "answer": "geschlafen",
+          "explanation": "schlafen -> geschlafen"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er hat nichts ___ (verstehen)",
+          "answer": "verstanden",
+          "explanation": "verstehen -> verstanden"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Partizip II irregular",
+        "Perfect Tense",
+        "Perfekt mit haben"
+      ]
+    },
+    {
+      "id": "A2_gc_5",
+      "level": "A2",
+      "unit": 5,
+      "title": "Dative case basics",
+      "topic": "Dative case for indirect objects",
+      "explanation": "Dative marks the indirect object. Articles change: der->dem, die->der, das->dem, die(pl)->den.",
+      "rules": [
+        "Masc: der->dem (ein->einem)",
+        "Fem: die->der (eine->einer)",
+        "Neuter: das->dem (ein->einem)",
+        "Plural: die->den + noun ending -n"
+      ],
+      "examples": [
+        {
+          "de": "Ich gebe dem Pat. ein Rezept.",
+          "en": "I give the patient a prescription."
+        },
+        {
+          "de": "Die KS hilft der Ärztin.",
+          "en": "The nurse helps the doctor."
+        },
+        {
+          "de": "Er antwortet dem Chefarzt.",
+          "en": "He answers the chief doctor."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich gebe der Patient (acc rather than dat)",
+          "correct": "Ich gebe dem Patienten",
+          "explanation": "IO = dative: dem"
+        },
+        {
+          "wrong": "Sie hilft die Ärztin (acc rather than dat)",
+          "correct": "Sie hilft der Ärztin",
+          "explanation": "helfen takes dative: der"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich gebe ___ Pat. ein Rezept. (the/dat)",
+          "answer": "dem",
+          "explanation": "Masc dative: dem"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die KS hilft ___ Ärztin. (the/dat)",
+          "answer": "der",
+          "explanation": "Fem dative: der"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er antwortet ___ Chefarzt (the/dat)",
+          "answer": "dem",
+          "explanation": "Masc dative: dem"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Dative",
+        "Dativ Artikel",
+        "Accusative Case"
+      ]
+    },
+    {
+      "id": "A2_gc_6",
+      "level": "A2",
+      "unit": 6,
+      "title": "Two-way prepositions",
+      "topic": "Wechselpräpositionen: in, auf, unter, vor, hinter, neben, zwischen, an, über",
+      "explanation": "These prepositions take dative (static location) or accusative (direction/movement).",
+      "rules": [
+        "Dative (where? static): in der Praxis sein",
+        "Accusative (where to? direction): in die Praxis gehen",
+        "Questions: Wo? = dative, Wohin? = accusative",
+        "Contractions: im, ins, am, aufs"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt ist im OP. (dative)",
+          "en": "Doc is in the OR."
+        },
+        {
+          "de": "Der Arzt geht in den OP. (acc)",
+          "en": "Doc goes into the OR."
+        },
+        {
+          "de": "Die Tablette liegt auf dem Tisch. (dat)",
+          "en": "The tablet is on the table."
+        },
+        {
+          "de": "Ich lege sie auf den Tisch. (acc)",
+          "en": "I put it on the table."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Pat. ist in die Praxis (acc for static)",
+          "correct": "Der Pat. ist in der Praxis",
+          "explanation": "Static = dative: in der"
+        },
+        {
+          "wrong": "Ich lege die Tablette auf dem Tisch (dat for movement)",
+          "correct": "Ich lege die Tablette auf den Tisch",
+          "explanation": "Movement = acc: auf den"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt ist ___ (in+dem) OP.",
+          "answer": "im",
+          "explanation": "Static: dative im"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt geht ___ (in+den) OP.",
+          "answer": "in den",
+          "explanation": "Movement: acc in den"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Tablette liegt ___ Tisch (on the/dat)",
+          "answer": "auf dem",
+          "explanation": "Static: dative dem"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Two-Way Prepositions",
+        "Accusative Case",
+        "Dative"
+      ]
+    },
+    {
+      "id": "A2_gc_7",
+      "level": "A2",
+      "unit": 7,
+      "title": "Accusative vs dative",
+      "topic": "Contrasting accusative and dative cases",
+      "explanation": "Accusative = direct object (what/whom). Dative = indirect object (to/for whom). Some verbs take only one.",
+      "rules": [
+        "Acc: direct object - was/wen?",
+        "Dative: indirect object - wem?",
+        "geben: dat (person) + acc (thing)",
+        "Many verbs have fixed case: helfen + dat, fragen + acc"
+      ],
+      "examples": [
+        {
+          "de": "Ich gebe dem Pat. ein Rezept.",
+          "en": "I give the patient a prescription."
+        },
+        {
+          "de": "Die KS bringt dem Arzt die Akte.",
+          "en": "Nurse brings doc the file."
+        },
+        {
+          "de": "Der Arzt fragt den Patienten.",
+          "en": "Doc asks the patient (acc)."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "antworten takes acc (e.g. antworte den Arzt)",
+          "correct": "Ich antworte dem Arzt",
+          "explanation": "antworten takes dative!"
+        },
+        {
+          "wrong": "fragen takes dat (e.g. frage dem Pat.)",
+          "correct": "Ich frage den Patienten",
+          "explanation": "fragen takes accusative!"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich gebe ___ (the/dat) Pat. ___ (a/acc) Rezept.",
+          "answer": "dem ... ein",
+          "explanation": "dat+acc structure"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt antwortet ___ (the/dat) Pat.",
+          "answer": "dem",
+          "explanation": "antworten + dative"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er fragt ___ (the/acc) Patienten.",
+          "answer": "den",
+          "explanation": "fragen + accusative"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Accusative Case",
+        "Dative",
+        "Articles"
+      ]
+    },
+    {
+      "id": "A2_gc_8",
+      "level": "A2",
+      "unit": 8,
+      "title": "Comparative and superlative",
+      "topic": "Comparing adjectives",
+      "explanation": "Comparative = +er. Superlative = am + -sten. Irregular: gut->besser->beste.",
+      "rules": [
+        "Comparative: +er: schnell -> schneller",
+        "Superlative: am + -sten: am schnellsten",
+        "Irregular: gut->besser->beste, viel->mehr->meiste",
+        "One syllable often + Umlaut: alt->älter->älteste"
+      ],
+      "examples": [
+        {
+          "de": "Der Pat. ist älter.",
+          "en": "The patient is older."
+        },
+        {
+          "de": "Die neue Klinik ist besser.",
+          "en": "The new clinic is better."
+        },
+        {
+          "de": "Welcher Arzt ist am kompetentesten?",
+          "en": "Which doc is most competent?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "gut -> güter (regular comparison)",
+          "correct": "gut -> besser",
+          "explanation": "gut is irregular: besser"
+        },
+        {
+          "wrong": "schnellste (missing am for superlative)",
+          "correct": "am schnellsten",
+          "explanation": "Superlative: am + -sten"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ist ___ (älter) als gestern.",
+          "answer": "älter",
+          "explanation": "+er = comparative"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Medikament ist ___ (am wirksamsten).",
+          "answer": "am wirksamsten",
+          "explanation": "am + -sten = superlative"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Mein Zustand ist ___ (besser) als gestern.",
+          "answer": "besser",
+          "explanation": "besser = comparative of gut"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Comparative",
+        "Superlative",
+        "Adjective Endings"
+      ]
+    },
+    {
+      "id": "A2_gc_9",
+      "level": "A2",
+      "unit": 9,
+      "title": "Modal verbs in past (Präteritum)",
+      "topic": "Modal verbs in simple past",
+      "explanation": "Modal verbs are often used in Präteritum for past tense (more common than Perfekt for modals).",
+      "rules": [
+        "können -> ich konnte, du konntest, er konnte, wir konnten",
+        "müssen -> ich musste, du musstest, er musste",
+        "wollen -> ich wollte",
+        "dürfen -> ich durfte, sollen -> ich sollte"
+      ],
+      "examples": [
+        {
+          "de": "Ich konnte nicht kommen.",
+          "en": "I could not come."
+        },
+        {
+          "de": "Der Pat. musste warten.",
+          "en": "The patient had to wait."
+        },
+        {
+          "de": "Er wollte den Arzt sprechen.",
+          "en": "He wanted to speak to the doctor."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich kannte nicht (from kennen, not können)",
+          "correct": "Ich konnte nicht",
+          "explanation": "konnte = could (können), kannte = knew (kennen)"
+        },
+        {
+          "wrong": "Sie muste mit einem t (missing double s)",
+          "correct": "Sie musste",
+          "explanation": "musste requires -ss-"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (konnte) nicht kommen.",
+          "answer": "konnte",
+          "explanation": "konnte = could"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ (musste) warten.",
+          "answer": "musste",
+          "explanation": "musste = had to"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ (wollte) den Arzt sprechen.",
+          "answer": "wollte",
+          "explanation": "wollte = wanted"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Modal Verbs Past",
+        "Präteritum",
+        "Modal Verbs"
+      ]
+    },
+    {
+      "id": "A2_gc_10",
+      "level": "A2",
+      "unit": 10,
+      "title": "Subordinate clauses with weil",
+      "topic": "weil (because) clauses",
+      "explanation": "weil pushes the conjugated verb to the END of the clause. This is the key difference from denn.",
+      "rules": [
+        "weil pushes verb to END of clause",
+        "Structure: main clause + weil + subj + objects + VERB",
+        "Compare: denn (no change) vs weil (verb to end)",
+        "Wenn weil-clause is first: verb starts main clause"
+      ],
+      "examples": [
+        {
+          "de": "Ich komme nicht, weil ich krank bin.",
+          "en": "I am not coming because I am sick."
+        },
+        {
+          "de": "Er geht zum Arzt, weil er Schmerzen hat.",
+          "en": "He goes to doc because he has pain."
+        },
+        {
+          "de": "Weil der Pat. Fieber hat, bleibt er zu Hause.",
+          "en": "Because pat. has fever, he stays home."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich komme nicht, weil ich bin krank (normal word order)",
+          "correct": "Ich komme nicht, weil ich krank bin",
+          "explanation": "weil pushes bin to END"
+        },
+        {
+          "wrong": "weil ich habe Schmerzen (verb not at end)",
+          "correct": "weil ich Schmerzen habe",
+          "explanation": "Verb must be LAST in weil clause"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich komme nicht, weil ich krank ___ (sein).",
+          "answer": "bin",
+          "explanation": "Verb at end of weil clause"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er geht zum Arzt, weil er Schmerzen ___ (haben).",
+          "answer": "hat",
+          "explanation": "Verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Subordinate Clauses weil",
+        "Nebensätze",
+        "Subordinate Clauses dass"
+      ]
+    },
+    {
+      "id": "A2_gc_11",
+      "level": "A2",
+      "unit": 11,
+      "title": "Subordinate clauses with dass",
+      "topic": "dass (that) clauses",
+      "explanation": "dass = that (pushes verb to end). Used for reported facts, opinions, knowledge.",
+      "rules": [
+        "dass pushes verb to END",
+        "Structure: main clause + dass + subj + object + VERB",
+        "Often follows: sagen, glauben, denken, wissen, finden"
+      ],
+      "examples": [
+        {
+          "de": "Ich glaube, dass der Arzt kommt.",
+          "en": "I believe the doc is coming."
+        },
+        {
+          "de": "Er sagt, dass er Schmerzen hat.",
+          "en": "He says he has pain."
+        },
+        {
+          "de": "Ich weiß, dass das Medikament hilft.",
+          "en": "I know the med helps."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich glaube, der Arzt kommt (missing dass)",
+          "correct": "Ich glaube, dass der Arzt kommt",
+          "explanation": "dass is required for that-clauses"
+        },
+        {
+          "wrong": "dass der Arzt kommt (verb position needs checking)",
+          "correct": "dass der Arzt kommt: verb at end is correct",
+          "explanation": "kommt is at end - correct!"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich glaube, dass der Arzt ___ (kommen).",
+          "answer": "kommt",
+          "explanation": "Verb at end of dass clause"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er sagt, dass er Fieber ___ (haben).",
+          "answer": "hat",
+          "explanation": "Verb at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich weiß, dass die Medizin ___ (helfen).",
+          "answer": "hilft",
+          "explanation": "Verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Subordinate Clauses dass",
+        "Nebensätze",
+        "Subordinate Clauses weil"
+      ]
+    },
+    {
+      "id": "A2_gc_12",
+      "level": "A2",
+      "unit": 12,
+      "title": "Subordinate clauses with wenn",
+      "topic": "wenn (if/when) clauses",
+      "explanation": "wenn = if/when (pushes verb to end). Often for conditions. Wenn first = main clause begins with verb.",
+      "rules": [
+        "wenn pushes verb to END",
+        "if/wenn-clause first: verb starts main clause",
+        "Wenn + subj + object + VERB + main clause with VERB first"
+      ],
+      "examples": [
+        {
+          "de": "Wenn ich Zeit habe, gehe ich zum Arzt.",
+          "en": "If I have time, I go to the doc."
+        },
+        {
+          "de": "Wenn der Pat. Fieber hat, bleibt er zu Hause.",
+          "en": "If pat. has fever, he stays home."
+        },
+        {
+          "de": "Ich rufe an, wenn ich Ergebnisse habe.",
+          "en": "I call when I have results."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Wenn ich krank bin ich gehe (no inversion)",
+          "correct": "Wenn ich krank bin, gehe ich zum Arzt",
+          "explanation": "Wenn-clause first = main clause starts with verb"
+        },
+        {
+          "wrong": "Wenn ich habe Zeit (order wrong in wenn clause)",
+          "correct": "Wenn ich Zeit habe",
+          "explanation": "Verb at end of wenn clause"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn ich Zeit ___ (haben), gehe ich.",
+          "answer": "habe",
+          "explanation": "Verb at end wenn clause"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn der Pat. ___ (sein) krank, bleibt er.",
+          "answer": "ist",
+          "explanation": "Verb at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich rufe an, wenn ich die Ergebnisse ___ (haben).",
+          "answer": "habe",
+          "explanation": "Verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Subordinate Clauses wenn",
+        "Nebensätze",
+        "Subordinate Clauses dass"
+      ]
+    },
+    {
+      "id": "A2_gc_13",
+      "level": "A2",
+      "unit": 13,
+      "title": "Reflexive verbs",
+      "topic": "Reflexive verbs: sich waschen, sich fühlen",
+      "explanation": "Verb + reflexive pronoun (sich). The mich/dich/sich changes by person. Medical: sich wohl fühlen, sich ausruhen.",
+      "rules": [
+        "sich is for 3rd person and formal Sie",
+        "ich -> mich, du -> dich, wir -> uns, ihr -> euch",
+        "Common: sich waschen, sich fühlen, sich setzen, sich ausruhen",
+        "Reflexive pronoun in accusative (usually)"
+      ],
+      "examples": [
+        {
+          "de": "Ich fühle mich gut.",
+          "en": "I feel good."
+        },
+        {
+          "de": "Der Pat. fühlt sich schlecht.",
+          "en": "The patient feels bad."
+        },
+        {
+          "de": "Setzen Sie sich, bitte!",
+          "en": "Please sit down!"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich fühle sich gut (using sich with ich)",
+          "correct": "Ich fühle mich gut",
+          "explanation": "ich takes mich, not sich"
+        },
+        {
+          "wrong": "Der Pat. fühlt mich schlecht (using mich for 3rd)",
+          "correct": "Der Pat. fühlt sich schlecht",
+          "explanation": "3rd person = sich"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich fühle ___ (reflexive) gut.",
+          "answer": "mich",
+          "explanation": "ich -> mich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. fühlt ___ (reflexive) schlecht.",
+          "answer": "sich",
+          "explanation": "3rd person -> sich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Fühlt ihr ___ gut?",
+          "answer": "euch",
+          "explanation": "ihr -> euch"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Reflexive Verbs",
+        "Pronouns",
+        "Verbs"
+      ]
+    },
+    {
+      "id": "A2_gc_14",
+      "level": "A2",
+      "unit": 14,
+      "title": "Relative clauses basic",
+      "topic": "Introduction to relative clauses",
+      "explanation": "Relative clauses describe a noun. Relative pronouns: der/die/das (who/which/that) start at beginning and verb goes to END.",
+      "rules": [
+        "Relative pronoun matches gender/number of noun: der, die, das",
+        "Verb goes to END of relative clause",
+        "Nominative: der/die/das (who/which)",
+        "Accusative: den/die/das (whom/which)"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt, der den Pat. untersucht, ist gut.",
+          "en": "The doc who examines the pat. is good."
+        },
+        {
+          "de": "Die Patientin, die hier liegt, hat Fieber.",
+          "en": "The patient who lies here has fever."
+        },
+        {
+          "de": "Das Medikament, das hilft, ist teuer.",
+          "en": "The med that helps is expensive."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Arzt, den (acc instead of nom for subject) den Pat. untersucht",
+          "correct": "Der Arzt, der den Pat. untersucht",
+          "explanation": "Subject = nominative: der"
+        },
+        {
+          "wrong": "Die Patientin, das (wrong gender)",
+          "correct": "Die Patientin, die",
+          "explanation": "die for feminine noun"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt, ___ den Pat. untersucht, ist gut. (who)",
+          "answer": "der",
+          "explanation": "Nom. subject: der"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Patientin, ___ hier liegt, hat Fieber. (who)",
+          "answer": "die",
+          "explanation": "Fem. nom: die"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Relative Clauses",
+        "Nebensätze",
+        "Articles"
+      ]
+    },
+    {
+      "id": "A2_gc_15",
+      "level": "A2",
+      "unit": 15,
+      "title": "Indirect questions",
+      "topic": "Indirect (embedded) questions",
+      "explanation": "Indirect questions use question word or ob (if/whether). Verb goes to END.",
+      "rules": [
+        "Structure: main clause + question word + subj + object + VERB at end",
+        "Yes/no indirect questions use ob (whether)",
+        "Verb ALWAYS at end"
+      ],
+      "examples": [
+        {
+          "de": "Ich weiß nicht, wo der Arzt ist.",
+          "en": "I dont know where the doc is."
+        },
+        {
+          "de": "Können Sie sagen, ob die Praxis offen hat?",
+          "en": "Can you say whether the practice is open?"
+        },
+        {
+          "de": "Er fragt, wann der Termin ist.",
+          "en": "He asks when the appointment is."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich weiß nicht, wo ist der Arzt (verb not at end)",
+          "correct": "Ich weiß nicht, wo der Arzt ist",
+          "explanation": "Verb at end in indirect questions"
+        },
+        {
+          "wrong": "ob die Praxis hat offen (verb not at end)",
+          "correct": "ob die Praxis offen hat",
+          "explanation": "Verb at end"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich weiß nicht, wo der Arzt ___ (sein).",
+          "answer": "ist",
+          "explanation": "Verb at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er fragt, wann der Termin ___ (sein).",
+          "answer": "ist",
+          "explanation": "Verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Indirect questions",
+        "W-Questions",
+        "Word Order"
+      ]
+    },
+    {
+      "id": "A2_gc_16",
+      "level": "A2",
+      "unit": 16,
+      "title": "Adjective endings intro",
+      "topic": "Adjective endings in nominative and accusative",
+      "explanation": "Adjectives before nouns need endings based on the article. Three patterns: der-word, ein-word, no article.",
+      "rules": [
+        "After der/die/das: adjective ends -e (nom/acc fem/neut and nom masc) or -en (acc masc)",
+        "After ein/kein/mein: adjective adds the article-like ending",
+        "No article: strong endings same as der-words"
+      ],
+      "examples": [
+        {
+          "de": "Der nette Arzt hilft.",
+          "en": "The nice doctor helps."
+        },
+        {
+          "de": "Ein netter Arzt hilft.",
+          "en": "A nice doctor helps."
+        },
+        {
+          "de": "Ich sehe den netten Arzt.",
+          "en": "I see the nice doctor (acc)."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der nette Arzt -> correct (weak ending)",
+          "correct": "Der nette Arzt (not netter)",
+          "explanation": "After der: -e"
+        },
+        {
+          "wrong": "Ein netter Arzt -> correct (mixed ending)",
+          "correct": "Ein netter Arzt (not nette)",
+          "explanation": "After ein: -er for masc"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der ___ (nett) Arzt hilft.",
+          "answer": "nette",
+          "explanation": "After der: -e"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ein ___ (nett) Arzt hilft.",
+          "answer": "netter",
+          "explanation": "After ein: -er (masc)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich sehe den ___ (nett) Arzt.",
+          "answer": "netten",
+          "explanation": "Den + masc acc: -en"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Adjective Endings",
+        "Adjective Endings Nominative",
+        "Adjective Endings Accusative"
+      ]
+    },
+    {
+      "id": "A2_gc_17",
+      "level": "A2",
+      "unit": 17,
+      "title": "Dative pronouns",
+      "topic": "Pronouns in dative case (mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen)",
+      "explanation": "Dative pronouns replace dative noun phrases. Often used with dative verbs like helfen, danken, antworten.",
+      "rules": [
+        "ich -> mir, du -> dir, er -> ihm, sie -> ihr, es -> ihm",
+        "wir -> uns, ihr -> euch, sie -> ihnen, Sie -> Ihnen",
+        "Position: dative pronoun before accusative object"
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt hilft mir.",
+          "en": "The doctor helps me."
+        },
+        {
+          "de": "Ich danke Ihnen.",
+          "en": "I thank you (formal)."
+        },
+        {
+          "de": "KS bringt ihm die Medikamente.",
+          "en": "Nurse brings him the medication."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Arzt hilft mich (acc instead of dat)",
+          "correct": "Der Arzt hilft mir",
+          "explanation": "helfen takes dative: mir"
+        },
+        {
+          "wrong": "Kannst du mir helfen (word order) correct",
+          "correct": "Kannst du mir helfen",
+          "explanation": "Correct: mir before helfen"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt hilft ___ (me/dat).",
+          "answer": "mir",
+          "explanation": "mir = dative of ich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich danke ___ (you formal/dat).",
+          "answer": "Ihnen",
+          "explanation": "Ihnen = formal dative"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die KS bringt ___ (him/dat) die Tabletten.",
+          "answer": "ihm",
+          "explanation": "ihm = dative of er"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Dative",
+        "Pronouns",
+        "Dativ Artikel"
+      ]
+    },
+    {
+      "id": "A2_gc_18",
+      "level": "A2",
+      "unit": 18,
+      "title": "Prepositions with dative",
+      "topic": "Dative prepositions: aus, bei, mit, nach, seit, von, zu",
+      "explanation": "These prepositions ALWAYS take the dative case, regardless of meaning. Memorize them as set pairs.",
+      "rules": [
+        "aus (out of), bei (at/near), mit (with), nach (after/to)",
+        "seit (since/for), von (from/of), zu (to)",
+        "Contractions: bei+dem=beim, von+dem=vom, zu+dem=zum, zu+der=zur"
+      ],
+      "examples": [
+        {
+          "de": "Ich komme aus der Klinik.",
+          "en": "I come from the clinic."
+        },
+        {
+          "de": "Der Pat. ist beim (bei dem) Arzt.",
+          "en": "The pat. is at the doc."
+        },
+        {
+          "de": "Seit einem Jahr arbeite ich hier.",
+          "en": "I have worked here for a year."
+        },
+        {
+          "de": "Gehen Sie zum (zu dem) Arzt!",
+          "en": "Go to the doctor!"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich komme aus die Klinik (acc instead of dat)",
+          "correct": "Ich komme aus der Klinik",
+          "explanation": "aus always takes dative: der"
+        },
+        {
+          "wrong": "zu dem Arzt -> zum (contraction always used)",
+          "correct": "zum Arzt",
+          "explanation": "zu+dem = zum, always contracted"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich komme aus ___ (the/dat) Klinik.",
+          "answer": "der",
+          "explanation": "aus + dative = der"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ist ___ (bei+dem) Arzt.",
+          "answer": "beim",
+          "explanation": "bei+dem = beim"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Gehen Sie ___ (zu+dem) Arzt!",
+          "answer": "zum",
+          "explanation": "zu+dem = zum"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Dative Prepositions",
+        "Dativ Präpositionen",
+        "Dative"
+      ]
+    },
+    {
+      "id": "A2_gc_19",
+      "level": "A2",
+      "unit": 19,
+      "title": "Prepositions with accusative",
+      "topic": "Accusative prepositions: durch, für, gegen, ohne, um, bis",
+      "explanation": "These prepositions ALWAYS take the accusative case. Medical: für den Patienten, gegen Schmerzen, ohne Rezept.",
+      "rules": [
+        "durch (through), für (for), gegen (against/for), ohne (without), um (around), bis (until)",
+        "Unlike two-way preps, these ALWAYS take accusative",
+        "Contractions: durchs, fürs, ums"
+      ],
+      "examples": [
+        {
+          "de": "Das Medikament ist für den Patienten.",
+          "en": "The med is for the patient."
+        },
+        {
+          "de": "Die Tabletten sind gegen Schmerzen.",
+          "en": "The tablets are for pain."
+        },
+        {
+          "de": "Er kommt ohne seinen Termin.",
+          "en": "He comes without his appointment."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "für der Patient (dat instead of acc)",
+          "correct": "für den Patienten",
+          "explanation": "für always takes accusative: den"
+        },
+        {
+          "wrong": "gegen dem Schmerz (dat)",
+          "correct": "gegen den Schmerz",
+          "explanation": "gegen always takes accusative: den"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Das Med. ist für ___ (the/acc) Patienten.",
+          "answer": "den",
+          "explanation": "für + acc: den"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Tabletten sind gegen ___ (the/acc) Schmerz.",
+          "answer": "den",
+          "explanation": "gegen + acc: den"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Accusative Prepositions",
+        "Accusative Case",
+        "Prepositions"
+      ]
+    },
+    {
+      "id": "A2_gc_20",
+      "level": "A2",
+      "unit": 20,
+      "title": "Future tense with werden",
+      "topic": "Introduction to future tense (Futur I)",
+      "explanation": "werden + infinitive at end = will (future). Medical: Der Pat. wird morgen operiert werden.",
+      "rules": [
+        "Conjugated werden + main infinitive at end",
+        "werden: ich werde, du wirst, er wird, werden, werdet, werden",
+        "Often replaced by present tense + time phrase in spoken German"
+      ],
+      "examples": [
+        {
+          "de": "Ich werde morgen kommen.",
+          "en": "I will come tomorrow."
+        },
+        {
+          "de": "Der Pat. wird sich erholen.",
+          "en": "The patient will recover."
+        },
+        {
+          "de": "Wirst du den Arzt anrufen?",
+          "en": "Will you call the doctor?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich werde morgen komme (conjugated main verb)",
+          "correct": "Ich werde morgen kommen",
+          "explanation": "Main verb stays infinitive"
+        },
+        {
+          "wrong": "Der Pat. wird erholt sich (wrong structure)",
+          "correct": "Der Pat. wird sich erholen",
+          "explanation": "Reflexive pronoun before infinitive"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (werden) morgen kommen.",
+          "answer": "werde",
+          "explanation": "werde with ich"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ (werden) sich erholen.",
+          "answer": "wird",
+          "explanation": "wird with er"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wann ___ du kommen? (werden)",
+          "answer": "wirst",
+          "explanation": "wirst with du"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Future with werden",
+        "Verbs",
+        "Tenses"
+      ]
+    },
+    {
+      "id": "A2_gc_21",
+      "level": "A2",
+      "unit": 21,
+      "title": "Connectors deshalb/trotzdem",
+      "topic": "Sentence connectors: deshalb (therefore), trotzdem (nevertheless)",
+      "explanation": "These connectors cause verb inversion (verb before subject) when starting a clause.",
+      "rules": [
+        "deshalb (therefore, so) -> verb then subject",
+        "trotzdem (nevertheless) -> verb then subject",
+        "Position 1: deshalb/trotzdem, pos 2: verb, pos 3: subject"
+      ],
+      "examples": [
+        {
+          "de": "Ich habe Fieber, deshalb gehe ich zum Arzt.",
+          "en": "I have fever, therefore I go to the doc."
+        },
+        {
+          "de": "Er ist krank, trotzdem arbeitet er.",
+          "en": "He is sick, nevertheless he works."
+        },
+        {
+          "de": "Sie hat Schmerzen, deshalb ruft sie den Arzt.",
+          "en": "She has pain, so she calls the doc."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "deshalb ich gehe (no inversion)",
+          "correct": "deshalb gehe ich",
+          "explanation": "After deshalb: verb before subject"
+        },
+        {
+          "wrong": "trotzdem er arbeitet (no inversion)",
+          "correct": "trotzdem arbeitet er",
+          "explanation": "After trotzdem: verb before subject"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe Fieber, deshalb ___ (go) ich zum Arzt.",
+          "answer": "gehe",
+          "explanation": "Verb before subject after deshalb"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ist krank, trotzdem ___ (works) er.",
+          "answer": "arbeitet",
+          "explanation": "Verb before subject after trotzdem"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Word Order",
+        "Conjunctions"
+      ]
+    }
+  ],
+  "B1": [
+    {
+      "id": "B1_gc_1",
+      "level": "B1",
+      "unit": 1,
+      "title": "Präteritum: haben, sein, modals",
+      "topic": "Simple past of common verbs",
+      "explanation": "Präteritum (simple past) is common for haben, sein, modal verbs. Perfekt is more common for other verbs in speech.",
+      "rules": [
+        "haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
+        "sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
+        "können: ich konnte, du konntest, er konnte",
+        "müssen: ich musste"
+      ],
+      "examples": [
+        {
+          "de": "Der Pat. hatte gestern Fieber.",
+          "en": "The pat. had fever yesterday."
+        },
+        {
+          "de": "Ich war gestern im Krankenhaus.",
+          "en": "I was at the hospital yesterday."
+        },
+        {
+          "de": "Der Arzt konnte nicht kommen.",
+          "en": "The doc could not come."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "hatte vs habe gehabt (both possible but Prät preferred for haben)",
+          "correct": "ich hatte (simple) / ich habe gehabt (conversational)",
+          "explanation": "Beide korrekt; hatte = gesprochene Vergangenheit"
+        },
+        {
+          "wrong": "war vs bin gewesen",
+          "correct": "ich war (simple) / ich bin gewesen (conversational)",
+          "explanation": "war is simpler for narrations"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ (haben) gestern Fieber.",
+          "answer": "hatte",
+          "explanation": "Präteritum of haben"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (sein) gestern im KH.",
+          "answer": "war",
+          "explanation": "Präteritum of sein"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt ___ (können) nicht kommen.",
+          "answer": "konnte",
+          "explanation": "können -> konnte"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Präteritum",
+        "Modal Verbs Past",
+        "Tenses"
+      ]
+    },
+    {
+      "id": "B1_gc_2",
+      "level": "B1",
+      "unit": 2,
+      "title": "Plusquamperfekt",
+      "topic": "Past perfect (Plusquamperfekt)",
+      "explanation": "Plusquamperfekt = hatte/war + Partizip II. Used for actions BEFORE another past action.",
+      "rules": [
+        "Form: hatte (or war) + Partizip II at end",
+        "Used to express earlier past (past before past)",
+        "Often with nachdem: Nachdem der Arzt gekommen war, ...",
+        "haben or sein follows same Perfekt rules"
+      ],
+      "examples": [
+        {
+          "de": "Nachdem der Arzt gekommen war, begann die OP.",
+          "en": "After the doc had arrived, surgery began."
+        },
+        {
+          "de": "Der Pat. hatte die Tabletten schon genommen.",
+          "en": "The pat. had already taken the tablets."
+        },
+        {
+          "de": "Sie war noch nie im KH gewesen.",
+          "en": "She had never been in the hospital before."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Nachdem der Arzt kam (simple past instead of past perfect)",
+          "correct": "Nachdem der Arzt gekommen war",
+          "explanation": "Nachdem requires Plusquamperfekt for earlier past"
+        },
+        {
+          "wrong": "Plusquamperfekt without auxiliary needed",
+          "correct": "hatte genommen (correct) / war gegangen für Bewegung",
+          "explanation": "Use hatte for most, war for movement"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Nachdem der Pat. die Tabletten ___ (nehmen),...",
+          "answer": "genommen hatte",
+          "explanation": "Plusquam = hatte + PP"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Als der Arzt ___, begann die OP. (kommen)",
+          "answer": "gekommen war",
+          "explanation": "war for movement verbs"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Plusquamperfekt",
+        "Perfect Tense",
+        "Tenses"
+      ]
+    },
+    {
+      "id": "B1_gc_3",
+      "level": "B1",
+      "unit": 3,
+      "title": "Konjunktiv II: würde + Infinitiv",
+      "topic": "Konjunktiv II with würde (polite requests/conditions)",
+      "explanation": "würde + infinitive = would. Used for polite requests, hypothetical situations, and unreal conditions.",
+      "rules": [
+        "Form: würde + infinitive at end",
+        "ich würde, du würdest, er würde, würden, würdet, würden",
+        "Polite requests: Würden Sie bitte ...?",
+        "Hypothetical: Wenn ich Zeit hätte, würde ich kommen."
+      ],
+      "examples": [
+        {
+          "de": "Würden Sie bitte warten?",
+          "en": "Would you please wait?"
+        },
+        {
+          "de": "Ich würde gern einen Termin machen.",
+          "en": "I would like to make an appointment."
+        },
+        {
+          "de": "Wenn ich krank wäre, würde ich zum Arzt gehen.",
+          "en": "If I were sick, I would go to the doc."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich würde komme (conjugated infinitive)",
+          "correct": "Ich würde kommen",
+          "explanation": "Infinitive NOT conjugated after würde"
+        },
+        {
+          "wrong": "Würden Sie warten? (polite request, correct) correct",
+          "correct": "Würden Sie warten?",
+          "explanation": "Correct: würde + infinitive for polite requests"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ (would) Sie bitte warten?",
+          "answer": "Würden",
+          "explanation": "Würden + Sie for polite request"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (would) gern einen Termin machen.",
+          "answer": "würde",
+          "explanation": "würde + infinitive at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Konjunktiv II",
+        "Konjunktiv II mit würde",
+        "Modal Verbs"
+      ]
+    },
+    {
+      "id": "B1_gc_4",
+      "level": "B1",
+      "unit": 4,
+      "title": "Konjunktiv II: hätte, wäre, könnte",
+      "topic": "Subjunctive of haben, sein, modal verbs",
+      "explanation": "hätte = would have, wäre = would be, könnte = could. Used for unreal situations and polite requests.",
+      "rules": [
+        "hätte: ich hätte, du hättest, er hätte, hätten, hättet, hätten",
+        "wäre: ich wäre, du wärest, er wäre, wären, wäret, wären",
+        "könnte: ich könnte, du könntest, er könnte, könnten",
+        "müsste, sollte, dürfte, wollte also follow same pattern"
+      ],
+      "examples": [
+        {
+          "de": "Ich hätte gern einen Termin.",
+          "en": "I would like an appointment."
+        },
+        {
+          "de": "Wenn ich Arzt wäre, würde ich helfen.",
+          "en": "If I were a doc, I would help."
+        },
+        {
+          "de": "Könnten Sie mir bitte helfen?",
+          "en": "Could you please help me?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich hätte gern -> I would like (correct)",
+          "correct": "Ich hätte gern",
+          "explanation": "Correct: hätte for would like"
+        },
+        {
+          "wrong": "Wenn ich Arzt bin (indicative instead of subjunctive)",
+          "correct": "Wenn ich Arzt wäre",
+          "explanation": "Unreal condition needs Konjunktiv II: wäre"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (hätte) gern einen Termin.",
+          "answer": "hätte",
+          "explanation": "hätte = would like"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn ich Arzt ___ (sein), würde ich helfen.",
+          "answer": "wäre",
+          "explanation": "wäre = would be"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (könnten) Sie mir helfen?",
+          "answer": "Könnten",
+          "explanation": "könnten = could"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Konjunktiv II hätte wäre",
+        "Konjunktiv II könnte",
+        "Polite Requests"
+      ]
+    },
+    {
+      "id": "B1_gc_5",
+      "level": "B1",
+      "unit": 5,
+      "title": "Passive voice present",
+      "topic": "Passiv Präsens: werden + Partizip II",
+      "explanation": "Passive shifts focus from who does an action to the action itself. Medical: Der Patient wird untersucht.",
+      "rules": [
+        "Form: werden (conjugated) + Partizip II + (von + agent)",
+        "werden: werde, wirst, wird, werden, werdet, werden",
+        "Agent with von (by): Der Pat. wird vom (von dem) Arzt untersucht.",
+        "Only transitive verbs (with accusative) can form passive"
+      ],
+      "examples": [
+        {
+          "de": "Der Patient wird untersucht.",
+          "en": "The patient is examined."
+        },
+        {
+          "de": "Die Medikamente werden täglich gegeben.",
+          "en": "The meds are given daily."
+        },
+        {
+          "de": "Die OP wird vom Chefchirurgen durchgeführt.",
+          "en": "The surgery is done by the chief surgeon."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Die Medikamente werden gegeben -> correct",
+          "correct": "Correct",
+          "explanation": "werden + PP = passive"
+        },
+        {
+          "wrong": "Der Pat. wird untersuchen (infinitive instead of PP)",
+          "correct": "Der Pat. wird untersucht",
+          "explanation": "Need Partizip II: untersucht"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Patient ___ untersucht. (werden/Präsens)",
+          "answer": "wird",
+          "explanation": "wird + untersucht = passive"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Medikamente ___ täglich gegeben. (werden/3.Pl)",
+          "answer": "werden",
+          "explanation": "werden + gegeben"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die OP ___ vom Arzt durchgeführt. (werden/3.Sg)",
+          "answer": "wird",
+          "explanation": "wird + durchgeführt"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Passive Voice Present",
+        "Passive",
+        "Verbs"
+      ]
+    },
+    {
+      "id": "B1_gc_6",
+      "level": "B1",
+      "unit": 6,
+      "title": "Passive voice past",
+      "topic": "Passiv Präteritum",
+      "explanation": "Past tense passive = wurde + Partizip II. Key: wurde is NOT the Konjunktiv here, it is Präteritum of werden.",
+      "rules": [
+        "Form: wurde + Partizip II + (von + agent)",
+        "wurden: ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden",
+        "Medical: Der Pat. wurde operiert. (The patient was operated on.)"
+      ],
+      "examples": [
+        {
+          "de": "Der Patient wurde gestern operiert.",
+          "en": "The patient was operated yesterday."
+        },
+        {
+          "de": "Die Tabletten wurden zweimal täglich gegeben.",
+          "en": "The tablets were given twice daily."
+        },
+        {
+          "de": "Der Pat. wurde vom Arzt untersucht.",
+          "en": "The pat. was examined by the doc."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Pat. ist untersucht worden (Perfekt passive) vs wurde untersucht (Präteritum)",
+          "correct": "Beide korrekt mit unterschiedlichem Register",
+          "explanation": "Perfekt passive = mehr gesprochen, Prät = mehr geschrieben"
+        },
+        {
+          "wrong": "Der Pat. wurde operieren (infinitive)",
+          "correct": "Der Pat. wurde operiert",
+          "explanation": "Need PP: operiert after wurde"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ gestern operiert. (wurde)",
+          "answer": "wurde",
+          "explanation": "wurde + PP = Präteritum Passive"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Medikamente ___ täglich gegeben. (wurden)",
+          "answer": "wurden",
+          "explanation": "wurden + gegeben"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Passive Voice Past",
+        "Passive",
+        "Passive Voice Present"
+      ]
+    },
+    {
+      "id": "B1_gc_7",
+      "level": "B1",
+      "unit": 7,
+      "title": "Relative clauses expanded",
+      "topic": "Relative clauses in all cases (nom, acc, dat, gen)",
+      "explanation": "Relative pronouns must match case of the noun they refer to within the clause. Extends to dative, genitive.",
+      "rules": [
+        "Nominative: der/die/das (who/which)",
+        "Accusative: den/die/das (whom/which)",
+        "Dative: dem/der/dem/denen (to whom)",
+        "Genitive: dessen/deren/dessen/deren (whose)",
+        "Preposition + relative: mit dem, für den, etc."
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt, dem ich vertraue, ist gut.",
+          "en": "The doc whom I trust is good. (dat)"
+        },
+        {
+          "de": "Die Patientin, deren Mann hier ist, wartet.",
+          "en": "The patient whose husband is here waits. (gen)"
+        },
+        {
+          "de": "Das KH, in dem ich arbeite, ist groß.",
+          "en": "The hospital where I work is big."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der Arzt, den ich vertraue (acc instead of dat)",
+          "correct": "Der Arzt, dem ich vertraue",
+          "explanation": "vertrauen takes dative!"
+        },
+        {
+          "wrong": "Die Patientin, deren Mann (genitive = correct)",
+          "correct": "Die Patientin, deren Mann",
+          "explanation": "Correct: deren for fem genitive"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt, ___ ich vertraue, ist gut. (dat)",
+          "answer": "dem",
+          "explanation": "vertrauen + dative: dem"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Pat., ___ Mann hier ist, wartet. (gen/fem)",
+          "answer": "deren",
+          "explanation": "deren = whose (fem)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das KH, in ___ ich arbeite, ist groß. (dat)",
+          "answer": "dem",
+          "explanation": "in + dative: dem"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Relative Clauses",
+        "Relative Clauses Nominative",
+        "Relative Clauses Accusative",
+        "Relative Clauses Dative"
+      ]
+    },
+    {
+      "id": "B1_gc_8",
+      "level": "B1",
+      "unit": 8,
+      "title": "Adjective endings all cases",
+      "topic": "Adjective declension: nom, acc, dat, gen",
+      "explanation": "Full overview of adjective endings (weak, mixed, strong) in all four cases.",
+      "rules": [
+        "Weak (after der/die/das): -e (nom,sg/acc,sg fem+neut), -en (all other)",
+        "Mixed (after ein/mein/kein): -er/-e/-es (nom), -en (acc masc, all dat/gen)",
+        "Strong (no article): endings like der-words",
+        "Genitive masc/neut: -en (weak) or -es/-en (strong)"
+      ],
+      "examples": [
+        {
+          "de": "Der freundliche Arzt hilft dem alten Patienten.",
+          "en": "The friendly doctor helps the old patient."
+        },
+        {
+          "de": "Ein freundlicher Arzt hilft einem alten Patienten.",
+          "en": "A friendly doctor helps an old patient."
+        },
+        {
+          "de": "Ich sehe einen freundlichen Arzt.",
+          "en": "I see a friendly doctor."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Der freundliche Arzt -> correct weak",
+          "correct": "Correct: -e after der (nom)",
+          "explanation": "der -> -e"
+        },
+        {
+          "wrong": "Ein freundlicher Arzt -> correct mixed",
+          "correct": "Correct: -er after ein (nom masc)",
+          "explanation": "ein + masc nom = -er"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Alt -> der ___ (alt) Arzt",
+          "answer": "alte",
+          "explanation": "After der: -e"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Alt -> ein ___ (alt) Arzt",
+          "answer": "alter",
+          "explanation": "After ein: -er (masc nom)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Alt -> den ___ (alt) Arzt",
+          "answer": "alten",
+          "explanation": "After den: -en (masc acc)"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Adjective Endings",
+        "Adjective Endings Nominative",
+        "Adjective Endings Accusative",
+        "Adjective Endings Dative"
+      ]
+    },
+    {
+      "id": "B1_gc_9",
+      "level": "B1",
+      "unit": 9,
+      "title": "Genitive case",
+      "topic": "Genitive case showing possession",
+      "explanation": "Genitive expresses possession (whose/of which). der -> des, die -> der, das -> des. Used mostly in formal writing.",
+      "rules": [
+        "Masc/Neuter: der->des (des Arztes), ein->eines (eines Arztes) + noun -s or -es",
+        "Feminine: die->der (der Ärztin) - no noun change",
+        "Plural: die->der (der Patienten)",
+        "Often replaced by von + dative in speech: das Buch von dem Arzt"
+      ],
+      "examples": [
+        {
+          "de": "Das Rezept des Arztes ist fertig.",
+          "en": "The doc prescription is ready."
+        },
+        {
+          "de": "Die Praxis der Ärztin ist groß.",
+          "en": "The practice of the female doc is big."
+        },
+        {
+          "de": "Die Termine der Patienten sind voll.",
+          "en": "The patients appointments are full."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Das Rezept vom Arzt (von+dat statt Genitiv)",
+          "correct": "Das Rezept des Arztes or Das Rezept vom Arzt",
+          "explanation": "Beide möglich; Genitiv formeller, von+Dat gesprochen"
+        },
+        {
+          "wrong": "Des Arzt instead of des Arztes (missing -es)",
+          "correct": "Des Arztes",
+          "explanation": "Masc/neut nouns add -es or -s im Genitiv"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Das Rezept ___ (der) Arztes ist fertig.",
+          "answer": "des",
+          "explanation": "des = genitive masc/neut"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Praxis ___ (die) Ärztin ist groß.",
+          "answer": "der",
+          "explanation": "der = genitive feminine"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Genitive",
+        "Genitive Basics",
+        "Articles"
+      ]
+    },
+    {
+      "id": "B1_gc_10",
+      "level": "B1",
+      "unit": 10,
+      "title": "Infinitive clauses with zu",
+      "topic": "zu + Infinitiv constructions",
+      "explanation": "zu before infinitive for purpose or after certain verbs. um zu = in order to, ohne zu = without -ing.",
+      "rules": [
+        "zu + infinitive at end of clause",
+        "um ... zu (in order to): Er kommt, um den Arzt zu sprechen.",
+        "ohne ... zu (without -ing): ohne zu fragen",
+        "anstatt ... zu (instead of -ing)",
+        "After bestimmte Verben: versuchen zu, anfangen zu, vergessen zu"
+      ],
+      "examples": [
+        {
+          "de": "Er versucht, den Arzt zu erreichen.",
+          "en": "He tries to reach the doctor."
+        },
+        {
+          "de": "Sie kommt, um den Patienten zu untersuchen.",
+          "en": "She comes to examine the patient."
+        },
+        {
+          "de": "Ohne zu fragen, ging er zum Arzt.",
+          "en": "Without asking, he went to the doctor."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Er versucht den Arzt erreichen (missing zu)",
+          "correct": "Er versucht, den Arzt zu erreichen",
+          "explanation": "zu needed before infinitive"
+        },
+        {
+          "wrong": "um den Arzt untersuchen (missing zu)",
+          "correct": "um den Arzt zu untersuchen",
+          "explanation": "um...zu = infinitive + zu"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Er versucht, den Arzt ___ erreichen. (zu)",
+          "answer": "zu",
+          "explanation": "zu before infinitive"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie kommt, ___ den Pat. zu untersuchen. (um)",
+          "answer": "um",
+          "explanation": "um ... zu = in order to"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Infinitive with zu",
+        "um ... zu",
+        "Verbs"
+      ]
+    },
+    {
+      "id": "B1_gc_11",
+      "level": "B1",
+      "unit": 11,
+      "title": "damit vs um...zu",
+      "topic": "damit (so that) vs um...zu (in order to)",
+      "explanation": "Both express purpose. damit uses a full clause with verb at end. um...zu uses infinitive (same subject).",
+      "rules": [
+        "um ... zu: same subject in both clauses, infinitive",
+        "damit: different subjects possible, verb at end of damit clause",
+        "Ich rufe an, um einen Termin zu machen. (I call to make an appointment.)",
+        "Ich rufe an, damit der Arzt Bescheid weiß. (I call so that the doc knows.)"
+      ],
+      "examples": [
+        {
+          "de": "Ich rufe an, um einen Termin zu machen.",
+          "en": "I call to make an appointment (same subject)."
+        },
+        {
+          "de": "Ich rufe an, damit der Arzt Bescheid weiß.",
+          "en": "I call so that the doc knows (different subjects)."
+        },
+        {
+          "de": "Er geht zur Klinik, um sich untersuchen zu lassen.",
+          "en": "He goes to clinic to get examined."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "damit used with same subject (zu construction preferred)",
+          "correct": "Ich rufe an, um einen Termin zu machen (not: damit ich mache)",
+          "explanation": "Use um...zu for same subject"
+        },
+        {
+          "wrong": "um...zu used with different subjects (error)",
+          "correct": "Ich rufe an, damit der Arzt kommt",
+          "explanation": "damit for different subjects"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich rufe an, ___ einen Termin ___ machen. (um+zu)",
+          "answer": "um ... zu",
+          "explanation": "um+zu = same subject"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich rufe an, ___ der Arzt Bescheid weiß. (damit)",
+          "answer": "damit",
+          "explanation": "damit + different subject, verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Infinitive with zu",
+        "um ... zu",
+        "damit clauses"
+      ]
+    },
+    {
+      "id": "B1_gc_12",
+      "level": "B1",
+      "unit": 12,
+      "title": "obwohl/trotzdem",
+      "topic": "obwohl (although) and trotzdem (nevertheless)",
+      "explanation": "obwohl = although (subordinating: verb to end). trotzdem = nevertheless (adverb: verb inversion).",
+      "rules": [
+        "obwohl pushes verb to END (subordinate clause)",
+        "trotzdem causes inversion (adverb, verb before subject)",
+        "Obwohl er krank ist, geht er zur Arbeit.",
+        "Er ist krank; trotzdem geht er zur Arbeit."
+      ],
+      "examples": [
+        {
+          "de": "Obwohl er krank ist, geht er zur Arbeit.",
+          "en": "Although he is sick, he goes to work."
+        },
+        {
+          "de": "Er ist krank, trotzdem arbeitet er.",
+          "en": "He is sick, nevertheless he works."
+        },
+        {
+          "de": "Obwohl der Pat. Schmerzen hat, wartet er.",
+          "en": "Although the pat. has pain, he waits."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Obwohl er ist krank (normal order in obwohl clause)",
+          "correct": "Obwohl er krank ist",
+          "explanation": "obwohl pushes ist to END"
+        },
+        {
+          "wrong": "trotzdem er arbeitet (no inversion after trotzdem)",
+          "correct": "trotzdem arbeitet er",
+          "explanation": "trotzdem = inversion: verb before subject"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Obwohl er krank ___ (sein), geht er.",
+          "answer": "ist",
+          "explanation": "Verb at end in obwohl clause"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ist krank, trotzdem ___ (arbeiten) er.",
+          "answer": "arbeitet",
+          "explanation": "Inversion after trotzdem"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "obwohl/trotzdem",
+        "Nebensätze",
+        "Connectors"
+      ]
+    },
+    {
+      "id": "B1_gc_13",
+      "level": "B1",
+      "unit": 13,
+      "title": "während/bevor/nachdem",
+      "topic": "Temporal subordinate clauses",
+      "explanation": "während (while), bevor (before), nachdem (after) all push verb to end.",
+      "rules": [
+        "während: at the same time -> verb at end",
+        "bevor: before -> verb at end",
+        "nachdem: after -> often with Plusquamperfekt (earlier past)",
+        "Während der Oper... vs Während der Patient schläft... (preposition vs conjunction!)"
+      ],
+      "examples": [
+        {
+          "de": "Während der OP schlief der Pat.",
+          "en": "During the surgery the pat. slept."
+        },
+        {
+          "de": "Bevor der Arzt kommt, warte ich.",
+          "en": "Before the doc comes, I wait."
+        },
+        {
+          "de": "Nachdem die OP beendet war, erwachte der Pat.",
+          "en": "After the surgery was over, the pat. woke up."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Während die OP (noun phrase is correct with genitive)",
+          "correct": "Während der OP (preposition + genitive) OR Während die OP läuft (conjunction)",
+          "explanation": "während can be preposition or conjunction"
+        },
+        {
+          "wrong": "nachdem used with Präsens when Plusquam is needed",
+          "correct": "Nachdem die OP beendet war (Plusquam), erwachte der Pat. (Prät)",
+          "explanation": "nachdem often takes Plusquam for earlier past"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ (before) der Arzt kommt, warte ich.",
+          "answer": "Bevor",
+          "explanation": "bevor = before, verb at end"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (while) der Pat. schläft, arbeitet der Arzt.",
+          "answer": "Während",
+          "explanation": "während = while, verb at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Temporal connectors",
+        "Nebensätze",
+        "Conjunctions"
+      ]
+    },
+    {
+      "id": "B1_gc_14",
+      "level": "B1",
+      "unit": 14,
+      "title": "n-declension nouns",
+      "topic": "N-Deklination: weak masculine nouns",
+      "explanation": "Some masculine nouns add -n or -en in all cases except nominative singular. Most refer to people or animals.",
+      "rules": [
+        "Add -(e)n in acc, dat, gen singular and all plural",
+        "Examples: der Patient -> den Patienten, dem Patienten, des Patienten",
+        "der Mensch, der Kunde, der Kollege, der Student, der Name, der Herr",
+        "Her: der Herr -> den Herrn (irregular)"
+      ],
+      "examples": [
+        {
+          "de": "Ich untersuche den Patienten.",
+          "en": "I examine the patient."
+        },
+        {
+          "de": "Sprechen Sie mit dem Patienten!",
+          "en": "Speak with the patient!"
+        },
+        {
+          "de": "Die Namen der Patienten sind hier.",
+          "en": "The names of the patients are here."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ich untersuche der Patient (no n-declension)",
+          "correct": "Ich untersuche den Patienten",
+          "explanation": "Patient adds -en in acc"
+        },
+        {
+          "wrong": "Sprechen Sie mit dem Patient (no -en in dat)",
+          "correct": "Sprechen Sie mit dem Patienten",
+          "explanation": "Dative: dem Patienten"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich untersuche den ___ (Patient).",
+          "answer": "Patienten",
+          "explanation": "Patient -> Patienten (n-decl)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sprechen Sie mit dem ___ (Patient)!",
+          "answer": "Patienten",
+          "explanation": "Dative: -en"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er spricht mit einem ___ (Kollege).",
+          "answer": "Kollegen",
+          "explanation": "Kollege -> Kollegen"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "n-declension",
+        "N-Deklination",
+        "People"
+      ]
+    },
+    {
+      "id": "B1_gc_15",
+      "level": "B1",
+      "unit": 15,
+      "title": "da-compounds (dadurch, damit, davon)",
+      "topic": "da-compounds: dadurch, damit, davon, dafür, dazu",
+      "explanation": "da- + preposition replaces da-r- + preposition before vowels. Used to refer to things/ideas, not people.",
+      "rules": [
+        "da(r) + preposition = it/that + prep: damit (with it), dafür (for it), davon (of it), dazu (to it)",
+        "Used when referring to things/ideas/concepts, NOT people",
+        "Before vowel: da-R- + prep: darin, darauf, darüber",
+        "Was-compound (question form): womit? wofür? wovon?"
+      ],
+      "examples": [
+        {
+          "de": "Ich bin damit einverstanden.",
+          "en": "I agree with that."
+        },
+        {
+          "de": "Haben Sie Interesse daran?",
+          "en": "Are you interested in that?"
+        },
+        {
+          "de": "Er hat dafür gestimmt.",
+          "en": "He voted for that/it."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "damit vs mit diesem (both possible, da- preferred)",
+          "correct": "damit (preferred in German) or mit diesem",
+          "explanation": "da- compounds more natural in German"
+        },
+        {
+          "wrong": "dafür vs für das (both valid)",
+          "correct": "dafür or für das",
+          "explanation": "dafür preferred for abstract reference"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich bin ___ (with it) einverstanden.",
+          "answer": "damit",
+          "explanation": "da- + mit = damit"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Habt ihr Interesse ___? (in it)",
+          "answer": "daran",
+          "explanation": "da-r- + an = daran (before vowel)"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Pronominal adverbs",
+        "Prepositions",
+        "Pronouns"
+      ]
+    },
+    {
+      "id": "B1_gc_16",
+      "level": "B1",
+      "unit": 16,
+      "title": "wo-compounds (womit, wofür, wovon)",
+      "topic": "wo-compounds: womit, wofür, wovon, woran, worauf",
+      "explanation": "wo(r) + preposition = what + prep. Used for questions about things/ideas. Womit? = with what? Wortiber? = about what?",
+      "rules": [
+        "wo(r) + preposition = what? (for things)",
+        "Before vowel: wo-r- + preposition: woran, worauf, worüber",
+        "For people: use preposition + wem/wen: Mit wem sprichst du? (not wo-compound)"
+      ],
+      "examples": [
+        {
+          "de": "Womit kann ich Ihnen helfen?",
+          "en": "With what can I help you?"
+        },
+        {
+          "de": "Worüber sprechen Sie?",
+          "en": "What are you talking about?"
+        },
+        {
+          "de": "Woran denken Sie?",
+          "en": "What are you thinking about?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Womit vs Mit was (both possible, womit preferred)",
+          "correct": "Womit is standard German, Mit was is spoken"
+        },
+        {
+          "wrong": "Wo-compounds only for things (not people)",
+          "correct": "Über wen (for people) vs Worüber (for things)",
+          "explanation": "Use über wen for people, worüber for things"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ kann ich Ihnen helfen? (with what)",
+          "answer": "Womit",
+          "explanation": "wo + mit = womit"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ sprechen Sie? (about what)",
+          "answer": "Worüber",
+          "explanation": "wo-r + über = worüber (before vowel)"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Pronominal adverbs",
+        "W-Questions",
+        "Prepositions"
+      ]
+    },
+    {
+      "id": "B1_gc_17",
+      "level": "B1",
+      "unit": 17,
+      "title": "Verbs with prepositions",
+      "topic": "Fixed verb-preposition combinations",
+      "explanation": "Many verbs require specific prepositions. Learn verb + preposition together. Medical: warten auf, bitten um, sich kümmern um.",
+      "rules": [
+        "warten auf (to wait for) + acc",
+        "sich kümmern um (to take care of) + acc",
+        "bitten um (to ask for) + acc",
+        "denken an (to think of) + acc",
+        "leiden an (to suffer from) + dat",
+        "sich erinnern an (to remember) + acc"
+      ],
+      "examples": [
+        {
+          "de": "Ich warte auf den Arzt.",
+          "en": "I wait for the doctor."
+        },
+        {
+          "de": "Der Pat. leidet an Diabetes.",
+          "en": "The pat. suffers from diabetes."
+        },
+        {
+          "de": "Er bittet um ein Rezept.",
+          "en": "He asks for a prescription."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "warten für (from English for) instead of auf",
+          "correct": "warten auf",
+          "explanation": "warten always takes auf in German!"
+        },
+        {
+          "wrong": "leiden von instead of an",
+          "correct": "leiden an (suffer from)",
+          "explanation": "leiden + an + dative"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich warte ___ (for) den Arzt.",
+          "answer": "auf",
+          "explanation": "warten auf + acc"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. leidet ___ Diabetes. (from)",
+          "answer": "an",
+          "explanation": "leiden an + dat"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er bittet ___ ein Rezept. (for)",
+          "answer": "um",
+          "explanation": "bitten um + acc"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Verbs with prepositions",
+        "Two-Way Prepositions",
+        "Prepositions"
+      ]
+    },
+    {
+      "id": "B1_gc_18",
+      "level": "B1",
+      "unit": 18,
+      "title": "Nominalization intro",
+      "topic": "Converting verbs/adjectives to nouns",
+      "explanation": "Nominalization = turning verbs/adjectives into nouns. das + infinitive, nominalized adjectives become neuter.",
+      "rules": [
+        "Verbs: infinitive becomes das + infinitive -> das Lesen, das Arbeiten",
+        "Adjectives: become nouns with article -> der/die/das + adj (der Alte, das Gute)",
+        "-ung suffix for verbs: untersuchen -> die Untersuchung, behandeln -> die Behandlung",
+        "-heit/-keit for adj: möglich -> die Möglichkeit, krank -> die Krankheit"
+      ],
+      "examples": [
+        {
+          "de": "Das Lesen ist wichtig für den Arzt.",
+          "en": "Reading is important for the doctor."
+        },
+        {
+          "de": "Die Behandlung des Patienten beginnt.",
+          "en": "The treatment of the patient begins (from behandeln)."
+        },
+        {
+          "de": "Der alte Mann -> der Alte (nominalized adj)",
+          "en": "The old man -> the old one"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Das Lesen (infinitive as noun, always neuter)",
+          "correct": "das Lesen (correct, das is always used)",
+          "explanation": "Infinitive nouns are always neuter with das"
+        },
+        {
+          "wrong": "die Behandlung (from behandeln, -ung always fem)",
+          "correct": "Die Behandlung (correct with die)",
+          "explanation": "-ung nouns are always feminine"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ (reading) ist wichtig.",
+          "answer": "Das Lesen",
+          "explanation": "Infinitive noun = das + infinitive"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die ___ (treatment) beginnt.",
+          "answer": "Behandlung",
+          "explanation": "behandeln -> Behandlung (-ung = fem)"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominalization",
+        "Word Formation",
+        "Verbs"
+      ]
+    },
+    {
+      "id": "B1_gc_19",
+      "level": "B1",
+      "unit": 19,
+      "title": "Particles: doch, mal, ja, denn",
+      "topic": "Modal particles: doch, mal, ja, denn",
+      "explanation": "Modal particles add nuance, tone, and context. Hard to translate directly but essential for natural German.",
+      "rules": [
+        "doch: contradicts, insistence, suggests known fact",
+        "mal: softens request (just, once)",
+        "ja: shared knowledge (as you know)",
+        "denn: interest, curiosity (in questions)",
+        "Geben Sie mal... (Just give...), Das ist ja interessant! (That IS interesting!)"
+      ],
+      "examples": [
+        {
+          "de": "Kommen Sie doch herein!",
+          "en": "Do come in! (insistence/encouragement)"
+        },
+        {
+          "de": "Sagen Sie mal, wo tut es weh?",
+          "en": "Tell me, where does it hurt?"
+        },
+        {
+          "de": "Was haben Sie denn?",
+          "en": "What do you have (then/emphasized)?"
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "doch and ja (nuance, dont overuse in writing)",
+          "correct": "Both fine in speech; avoid stacking too many"
+        },
+        {
+          "wrong": "Using mal too much",
+          "correct": "Kommen Sie mal her vs Kommen Sie her",
+          "explanation": "mal softens, but can sound too casual for formal"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Kommen Sie ___ herein! (doch = emphasis)",
+          "answer": "doch",
+          "explanation": "doch adds encouragement"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sagen Sie ___ (just), wo tut es weh?",
+          "answer": "mal",
+          "explanation": "mal softens request"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Particles",
+        "Conjunctions"
+      ]
+    },
+    {
+      "id": "B1_gc_20",
+      "level": "B1",
+      "unit": 20,
+      "title": "Complex sentence word order",
+      "topic": "Word order in complex sentences",
+      "explanation": "Manage multiple clauses: main clause (V2), subordinate clause (verb at end), bracket structure.",
+      "rules": [
+        "Main clause: verb second. Subordinate clause: verb at end.",
+        "Bracket: modal + infinitive at end: Ich kann heute nicht kommen.",
+        "Wenn + subordinate first, main clause starts with verb: Wenn der Arzt kommt, beginnt die OP.",
+        "Information flow: topic (old) at start, new info later."
+      ],
+      "examples": [
+        {
+          "de": "Wenn der Arzt heute kommt, kann die OP beginnen.",
+          "en": "If the doc comes today, surgery can begin."
+        },
+        {
+          "de": "Ich weiß, dass der Pat. gestern untersucht wurde.",
+          "en": "I know the pat. was examined yesterday."
+        },
+        {
+          "de": "Der Arzt, den ich gestern traf, kommt morgen wieder.",
+          "en": "The doc I met yesterday comes again tomorrow."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Wenn der Arzt kommt, die OP beginnt (no inversion in main clause)",
+          "correct": "Wenn der Arzt kommt, beginnt die OP",
+          "explanation": "Verb starts main clause after wenn clause"
+        },
+        {
+          "wrong": "Stacking too many subordinate clauses",
+          "correct": "Ich weiß, dass er sagt, dass der Pat., der...",
+          "explanation": "Avoid more than 1-2 embedded clauses"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn der Arzt kommt, ___ (beginnt) die OP.",
+          "answer": "beginnt",
+          "explanation": "Verb starts main after wenn clause"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich weiß, dass der Pat. gestern ___ (untersuchen/Passiv).",
+          "answer": "untersucht wurde",
+          "explanation": "Passive: wurde + PP at end"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Word Order",
+        "Complex Word Order",
+        "Sentence Structure"
+      ]
+    }
+  ],
+  "B2": [
+    {
+      "id": "B2_gc_1",
+      "level": "B2",
+      "unit": 1,
+      "title": "Konjunktiv II advanced",
+      "topic": "Advanced Konjunktiv II forms",
+      "explanation": "Advanced Konjunktiv II for hypotheticals, unreal conditions, politeness. Past subjunctive uses hätte/wäre + PP.",
+      "rules": [
+        "Past: hätte/wäre + Partizip II",
+        "würde + Infinitiv more common than simple Konj II for most verbs",
+        "hätte instead of würde haben",
+        "Key: hätte, wäre, könnte, müsste, sollte, dürfte, würde"
+      ],
+      "examples": [
+        {
+          "de": "Wenn ich Zeit gehabt hätte, wäre ich gekommen.",
+          "en": "If I had had time, I would have come."
+        },
+        {
+          "de": "Er hätte den Pat. besser untersuchen sollen.",
+          "en": "He should have examined the pat. better."
+        },
+        {
+          "de": "Das wäre nicht noetig gewesen.",
+          "en": "That would not have been necessary."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "ginge (old) vs wuerde gehen (modern)",
+          "correct": "Ich wuerde gehen is more common than ich ginge",
+          "explanation": "ginge = literary, wuerde gehen = modern standard"
+        },
+        {
+          "wrong": "Past subjunctive = haette + PP, not wuerde + haben + PP (prefer haette)",
+          "correct": "Ich haette gemacht, not ich wuerde gemacht haben",
+          "explanation": "haette + PP is simpler and preferred"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn ich Zeit gehabt ___, waere ich gekommen.",
+          "answer": "haette",
+          "explanation": "haette + PP = past subj"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ den Pat. besser untersuchen sollen.",
+          "answer": "haette",
+          "explanation": "haette + sollen = should have"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Konjunktiv II",
+        "Konjunktiv II haette waere",
+        "Konjunktiv II koennte muesste sollte"
+      ]
+    },
+    {
+      "id": "B2_gc_2",
+      "level": "B2",
+      "unit": 2,
+      "title": "Konjunktiv I: reported speech",
+      "topic": "Indirect speech with Konjunktiv I",
+      "explanation": "Konjunktiv I for indirect speech shows distance from the claim. Key: sei (sein), habe (haben), werde (werden), koenne (koennen).",
+      "rules": [
+        "Present stem + -e/-est/-e/-en/-et/-en",
+        "Often replaced by Konj II or wuerde when form matches indicative",
+        "Key: sei, habe, werde, koenne",
+        "Medical documentation: Der Arzt sagt, der Pat. sei stabil."
+      ],
+      "examples": [
+        {
+          "de": "Der Arzt sagt, der Pat. sei stabil.",
+          "en": "The doc says the pat. is stable (reported)."
+        },
+        {
+          "de": "Er meint, die Behandlung habe geholfen.",
+          "en": "He thinks the treatment helped (reported)."
+        },
+        {
+          "de": "Der Bericht sagt, die OP sei erfolgreich gewesen.",
+          "en": "The report says the surgery was successful."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "sei vs ist",
+          "correct": "Der Arzt sagt, der Pat. sei (Konj I) stable, not ist",
+          "explanation": "Konj I needed for formal indirect speech"
+        },
+        {
+          "wrong": "habe vs hat in indirect speech",
+          "correct": "habe for reported (er sagt, er habe)",
+          "explanation": "Not hat for reported in formal German"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Arzt sagt, der Pat. ___ stabil. (Konj I sein)",
+          "answer": "sei",
+          "explanation": "sei = reported form of ist"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er meint, die Behandlung ___ geholfen.",
+          "answer": "habe",
+          "explanation": "habe = reported form of hat"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Konjunktiv I",
+        "Indirect speech",
+        "Reported Speech"
+      ]
+    },
+    {
+      "id": "B2_gc_3",
+      "level": "B2",
+      "unit": 3,
+      "title": "Passive alternatives",
+      "topic": "Alt: sein+zu, sich lassen",
+      "explanation": "sein + zu = can/must be done. sich lassen = can be done. More elegant than werden-passive in formal writing.",
+      "rules": [
+        "sein + zu + Inf = Der Pat. ist zu untersuchen (= muss untersucht werden)",
+        "sich lassen + Inf = Das laesst sich machen (= kann gemacht werden)",
+        "Formal/technical register",
+        "Medical: Die Wunde laesst sich leicht behandeln."
+      ],
+      "examples": [
+        {
+          "de": "Der Pat. ist morgen zu operieren.",
+          "en": "The pat. is to be operated tomorrow."
+        },
+        {
+          "de": "Die Wunde laesst sich leicht behandeln.",
+          "en": "The wound can be treated easily."
+        },
+        {
+          "de": "Diese Krankheit ist schwer zu diagnostizieren.",
+          "en": "This disease is hard to diagnose."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "sein+zu vs muessen Passiv",
+          "correct": "Der Pat. ist zu operieren = Der Pat. muss operiert werden",
+          "explanation": "Both express necessity; sein+zu more formal"
+        },
+        {
+          "wrong": "sich lassen vs koennen",
+          "correct": "Das laesst sich machen = Das kann gemacht werden",
+          "explanation": "sich lassen more elegant"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ morgen zu operieren. (ist)",
+          "answer": "ist",
+          "explanation": "ist + zu = muss/werden"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Wunde laesst ___ leicht behandeln. (sich)",
+          "answer": "sich",
+          "explanation": "sich lassen = koennen werden"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Passive",
+        "Passive Voice Present",
+        "Zustandspassiv vs Vorgangspassiv"
+      ]
+    },
+    {
+      "id": "B2_gc_4",
+      "level": "B2",
+      "unit": 4,
+      "title": "Zustandspassiv vs Vorgangspassiv",
+      "topic": "State vs action passive",
+      "explanation": "Zustandspassiv = sein + PP (describes result state). Vorgangspassiv = werden + PP (action/process).",
+      "rules": [
+        "Vorgangspassiv: werden + PP -> Die Tuer wird geoeffnet.",
+        "Zustandspassiv: sein + PP -> Die Tuer ist geoeffnet.",
+        "Medical: Der Pat. wird untersucht. vs Der Pat. ist untersucht."
+      ],
+      "examples": [
+        {
+          "de": "Der Pat. wird untersucht. (Vorgang)",
+          "en": "The pat. is being examined."
+        },
+        {
+          "de": "Der Pat. ist untersucht. (Zustand)",
+          "en": "The pat. has been examined (result)."
+        },
+        {
+          "de": "Die OP wird vorbereitet. vs Die OP ist vorbereitet.",
+          "en": "Surgery is being prepared vs is ready."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Zustandspassiv for action (wrong)",
+          "correct": "Der Pat. wird untersucht (action) is Vorgangspassiv",
+          "explanation": "wird = process ongoing, ist = state completed"
+        },
+        {
+          "wrong": "ist + PP vs Perfekt Passiv",
+          "correct": "ist operiert (Zustand) vs ist operiert worden (Perf Passiv)",
+          "explanation": "ist + PP = state; ist + PP + worden = completed action"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ untersucht. (wird, action)",
+          "answer": "wird",
+          "explanation": "wird = Vorgangspassiv"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Pat. ___ untersucht. (ist, state)",
+          "answer": "ist",
+          "explanation": "ist = Zustandspassiv"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Zustandspassiv vs Vorgangspassiv",
+        "Passive",
+        "Passive Voice Present"
+      ]
+    },
+    {
+      "id": "B2_gc_5",
+      "level": "B2",
+      "unit": 5,
+      "title": "Nominal style",
+      "topic": "Nominalization: verbs to nouns",
+      "explanation": "Nominals = formal, dense style. Verb to noun via -ung, infinitive, -heit/-keit. Medical documentation.",
+      "rules": [
+        "Verb -> -ung: untersuchen -> die Untersuchung",
+        "Verb -> infinitive noun: das Lesen",
+        "Adj -> -heit/-keit: moeglich -> die Moeglichkeit",
+        "Die Untersuchung des Pat. erfolgte am Montag."
+      ],
+      "examples": [
+        {
+          "de": "Die Untersuchung des Pat. erfolgte am Montag.",
+          "en": "Examination took place Monday."
+        },
+        {
+          "de": "Die Behandlung der Wunde dauerte zwei Stunden.",
+          "en": "Treatment took 2 hours."
+        },
+        {
+          "de": "Nach der OP erholte sich der Pat.",
+          "en": "After surgery pat. recovered."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Over-nominalization makes heavy sentences",
+          "correct": "Active verbs for clarity, nominal for brevity",
+          "explanation": "Balance both styles"
+        },
+        {
+          "wrong": "-ung always fem",
+          "correct": "die Behandlung, die Untersuchung",
+          "explanation": "Always die (fem)"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Die ___ (Examination) des Pat. erfolgte.",
+          "answer": "Untersuchung",
+          "explanation": "untersuchen -> die Untersuchung"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die ___ (Treatment) der Wunde dauerte.",
+          "answer": "Behandlung",
+          "explanation": "behandeln -> die Behandlung"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominalization",
+        "Word Formation",
+        "Nominal Style"
+      ]
+    },
+    {
+      "id": "B2_gc_6",
+      "level": "B2",
+      "unit": 6,
+      "title": "Participle constructions as adjectives",
+      "topic": "Part I and II as adjectives",
+      "explanation": "Partizip I (-end) = active. Partizip II = passive/perfect. Both need adjective endings.",
+      "rules": [
+        "Part I: end + adj ending -> der behandelnde Arzt (treating doc)",
+        "Part II: PP + adj -> der untersuchte Pat. (examined pat.)",
+        "Themed: Der den Pat. behandelnde Arzt (extended attribute)"
+      ],
+      "examples": [
+        {
+          "de": "Der behandelnde Arzt kommt morgen.",
+          "en": "The treating doc comes tomorrow."
+        },
+        {
+          "de": "Der untersuchte Pat. wartet.",
+          "en": "The examined pat. waits."
+        },
+        {
+          "de": "Die geoeffnete Praxis hat viele Pat.",
+          "en": "The opened practice has many pats."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Part I vs Part II: behandelnde (active) vs behandelte (passive)",
+          "correct": "behandelnd = behandelnd (active), behandelt (passive)",
+          "explanation": "-d- = active, -t-/-en = passive"
+        },
+        {
+          "wrong": "Adj endings after participles",
+          "correct": "Der behandelnde (with adj ending) Arzt",
+          "explanation": "Same adj endings apply"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der ___ (behandelnd) Arzt kommt.",
+          "answer": "behandelnde",
+          "explanation": "Partizip I active: -d-"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der ___ (untersuchen/Part II) Pat. wartet.",
+          "answer": "untersuchte",
+          "explanation": "Partizip II passive"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Participle Constructions",
+        "Adjective Endings",
+        "Extended Participles"
+      ]
+    },
+    {
+      "id": "B2_gc_7",
+      "level": "B2",
+      "unit": 7,
+      "title": "Extended participle phrases (Linksattribut)",
+      "topic": "Extended left-hand attributes before noun",
+      "explanation": "Adjective/participle phrases before noun = hallmark of formal German. Medical records, Arztbriefe, academic.",
+      "rules": [
+        "Artikel + Extended modifier + Partizip + Noun",
+        "Der gestern operierte Pat.",
+        "Der seit Jahren an Diabetes leidende Pat."
+      ],
+      "examples": [
+        {
+          "de": "Der gestern operierte Pat. erholt sich gut.",
+          "en": "Pat. operated on yesterday recovers well."
+        },
+        {
+          "de": "Die vor 2 Std. eingenommenen Tabletten wirken.",
+          "en": "Tablets taken 2 hrs ago work."
+        },
+        {
+          "de": "Der seit Jahren an Diabetes leidende Pat. kommt.",
+          "en": "Pat. suffering from diabetes for years comes."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Partizip at end of extended attribute",
+          "correct": "Der gestern operierte Pat. (operierte at end)",
+          "explanation": "PP at end of attribute phrase"
+        },
+        {
+          "wrong": "Avoid overextending (too many words before noun)",
+          "correct": "Keep 3-5 words max in attribute before noun",
+          "explanation": "Use relative clause for longer info"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Der ___ (gestern operieren/Part II) Pat. erholt sich.",
+          "answer": "gestern operierte",
+          "explanation": "Extended attribute: time + PP + noun"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die ___ (vor 2 Std. einnehmen/Part II) Tabl. wirken.",
+          "answer": "vor 2 Stunden eingenommenen",
+          "explanation": "Long attribute before noun"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Extended Participles",
+        "Participle Constructions",
+        "Adjective Endings"
+      ]
+    },
+    {
+      "id": "B2_gc_8",
+      "level": "B2",
+      "unit": 8,
+      "title": "Advanced connectors: zwar...aber, einerseits...andererseits",
+      "topic": "Double connectors for contrast",
+      "explanation": "zwar...aber, einerseits...andererseits, nicht nur...sondern auch, sowohl...als auch.",
+      "rules": [
+        "zwar...aber (admittedly...but): zwar triggers inversion",
+        "einerseits...andererseits (on one hand...on the other)",
+        "nicht nur...sondern auch (not only...but also)",
+        "sowohl...als auch (both...and)"
+      ],
+      "examples": [
+        {
+          "de": "Zwar hat der Pat. Fieber, aber die Werte sind stabil.",
+          "en": "Admittedly fever, but levels stable."
+        },
+        {
+          "de": "Einerseits hilft das Med., andererseits hat es NW.",
+          "en": "On one hand med helps, on the other side effects."
+        },
+        {
+          "de": "Nicht nur der Arzt, sondern auch die KS war da.",
+          "en": "Not only doc but also nurse was there."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "zwar position: first or after verb",
+          "correct": "Zwar hat der Pat. or Der Pat. hat zwar",
+          "explanation": "Both possible"
+        },
+        {
+          "wrong": "einerseits...andererseits: separate clauses with V2",
+          "correct": "Each clause maintains V2 order",
+          "explanation": "Correct"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ hat der Pat. Fieber, aber die Werte sind stabil.",
+          "answer": "Zwar",
+          "explanation": "zwar...aber = admittedly...but"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ hilft das Med., andererseits hat es NW.",
+          "answer": "Einerseits",
+          "explanation": "einerseits = on one hand"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Conjunctions"
+      ]
+    },
+    {
+      "id": "B2_gc_9",
+      "level": "B2",
+      "unit": 9,
+      "title": "Causal/concessive/consecutive",
+      "topic": "Causal/concessive/consecutive",
+      "explanation": "This is lesson 9 of B2 covering Causal/concessive/consecutive. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_10",
+      "level": "B2",
+      "unit": 10,
+      "title": "Relative clauses + prep",
+      "topic": "Relative clauses + prep",
+      "explanation": "This is lesson 10 of B2 covering Relative clauses + prep. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_11",
+      "level": "B2",
+      "unit": 11,
+      "title": "Appositions",
+      "topic": "Appositions",
+      "explanation": "This is lesson 11 of B2 covering Appositions. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_12",
+      "level": "B2",
+      "unit": 12,
+      "title": "Verb-noun collocations",
+      "topic": "Verb-noun collocations",
+      "explanation": "This is lesson 12 of B2 covering Verb-noun collocations. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_13",
+      "level": "B2",
+      "unit": 13,
+      "title": "Subjective modals",
+      "topic": "Subjective modals",
+      "explanation": "This is lesson 13 of B2 covering Subjective modals. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_14",
+      "level": "B2",
+      "unit": 14,
+      "title": "Modal particles",
+      "topic": "Modal particles",
+      "explanation": "This is lesson 14 of B2 covering Modal particles. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_15",
+      "level": "B2",
+      "unit": 15,
+      "title": "Formal argumentation",
+      "topic": "Formal argumentation",
+      "explanation": "This is lesson 15 of B2 covering Formal argumentation. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_16",
+      "level": "B2",
+      "unit": 16,
+      "title": "Text cohesion",
+      "topic": "Text cohesion",
+      "explanation": "This is lesson 16 of B2 covering Text cohesion. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_17",
+      "level": "B2",
+      "unit": 17,
+      "title": "Prepositional phrases",
+      "topic": "Prepositional phrases",
+      "explanation": "This is lesson 17 of B2 covering Prepositional phrases. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_18",
+      "level": "B2",
+      "unit": 18,
+      "title": "Adv word order",
+      "topic": "Adv word order",
+      "explanation": "This is lesson 18 of B2 covering Adv word order. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_19",
+      "level": "B2",
+      "unit": 19,
+      "title": "Academic comparison",
+      "topic": "Academic comparison",
+      "explanation": "This is lesson 19 of B2 covering Academic comparison. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    },
+    {
+      "id": "B2_gc_20",
+      "level": "B2",
+      "unit": 20,
+      "title": "Error correction",
+      "topic": "Error correction",
+      "explanation": "This is lesson 20 of B2 covering Error correction. Focus on formal medical German.",
+      "rules": [
+        "Rule 1: formal structure",
+        "Rule 2: medical context",
+        "Rule 3: practice and review"
+      ],
+      "examples": [
+        {
+          "de": "German example.",
+          "en": "English translation."
+        },
+        {
+          "de": "Noch ein Beispiel.",
+          "en": "Another example."
+        },
+        {
+          "de": "Medizinisches Drittes",
+          "en": "Medical third example."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Common mistake",
+          "correct": "Correction",
+          "explanation": "Explanation of correction"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "Prompt ___ fill",
+          "answer": "answer",
+          "explanation": "explanation"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Connectors",
+        "Complex Connectors",
+        "Nebensatze"
+      ]
+    }
+  ],
+  "C1": [
+    {
+      "id": "C1_gc_1",
+      "level": "C1",
+      "unit": 1,
+      "title": "Advanced nominalization",
+      "topic": "Advanced nominalization",
+      "explanation": "C1 level: Advanced nominalization. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_2",
+      "level": "C1",
+      "unit": 2,
+      "title": "Complex passive replacement",
+      "topic": "Complex passive replacement",
+      "explanation": "C1 level: Complex passive replacement. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_3",
+      "level": "C1",
+      "unit": 3,
+      "title": "Extended participle phrases",
+      "topic": "Extended participle phrases",
+      "explanation": "C1 level: Extended participle phrases. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_4",
+      "level": "C1",
+      "unit": 4,
+      "title": "Adv Konjunktiv I/II",
+      "topic": "Adv Konjunktiv I/II",
+      "explanation": "C1 level: Adv Konjunktiv I/II. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_5",
+      "level": "C1",
+      "unit": 5,
+      "title": "Hedging and caution",
+      "topic": "Hedging and caution",
+      "explanation": "C1 level: Hedging and caution. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_6",
+      "level": "C1",
+      "unit": 6,
+      "title": "Complex connectors",
+      "topic": "Complex connectors",
+      "explanation": "C1 level: Complex connectors. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_7",
+      "level": "C1",
+      "unit": 7,
+      "title": "Sentence compression",
+      "topic": "Sentence compression",
+      "explanation": "C1 level: Sentence compression. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_8",
+      "level": "C1",
+      "unit": 8,
+      "title": "Register shift",
+      "topic": "Register shift",
+      "explanation": "C1 level: Register shift. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_9",
+      "level": "C1",
+      "unit": 9,
+      "title": "Advanced collocations",
+      "topic": "Advanced collocations",
+      "explanation": "C1 level: Advanced collocations. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_10",
+      "level": "C1",
+      "unit": 10,
+      "title": "Functional verb constructions",
+      "topic": "Functional verb constructions",
+      "explanation": "C1 level: Functional verb constructions. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_11",
+      "level": "C1",
+      "unit": 11,
+      "title": "Dense noun phrases",
+      "topic": "Dense noun phrases",
+      "explanation": "C1 level: Dense noun phrases. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_12",
+      "level": "C1",
+      "unit": 12,
+      "title": "Stylistic variation",
+      "topic": "Stylistic variation",
+      "explanation": "C1 level: Stylistic variation. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_13",
+      "level": "C1",
+      "unit": 13,
+      "title": "Emphasis structures",
+      "topic": "Emphasis structures",
+      "explanation": "C1 level: Emphasis structures. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_14",
+      "level": "C1",
+      "unit": 14,
+      "title": "Adv reported speech",
+      "topic": "Adv reported speech",
+      "explanation": "C1 level: Adv reported speech. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_15",
+      "level": "C1",
+      "unit": 15,
+      "title": "Argumentative precision",
+      "topic": "Argumentative precision",
+      "explanation": "C1 level: Argumentative precision. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_16",
+      "level": "C1",
+      "unit": 16,
+      "title": "Scientific/medical style",
+      "topic": "Scientific/medical style",
+      "explanation": "C1 level: Scientific/medical style. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_17",
+      "level": "C1",
+      "unit": 17,
+      "title": "Text transformation",
+      "topic": "Text transformation",
+      "explanation": "C1 level: Text transformation. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_18",
+      "level": "C1",
+      "unit": 18,
+      "title": "Error diagnosis",
+      "topic": "Error diagnosis",
+      "explanation": "C1 level: Error diagnosis. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_19",
+      "level": "C1",
+      "unit": 19,
+      "title": "Idiomatic academic",
+      "topic": "Idiomatic academic",
+      "explanation": "C1 level: Idiomatic academic. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    },
+    {
+      "id": "C1_gc_20",
+      "level": "C1",
+      "unit": 20,
+      "title": "C1 exam writing",
+      "topic": "C1 exam writing",
+      "explanation": "C1 level: C1 exam writing. Advanced grammar for medical/academic writing and fluent expression.",
+      "rules": [
+        "Structure matters",
+        "Precision and nuance",
+        "Formal register",
+        "Medical context"
+      ],
+      "examples": [
+        {
+          "de": "C1 German example.",
+          "en": "English."
+        },
+        {
+          "de": "Medical example in C1 style.",
+          "en": "Medical English."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "C1 typical error",
+          "correct": "Correction at C1",
+          "explanation": "Why this is advanced"
+        }
+      ],
+      "practice": [
+        {
+          "type": "fill-blank",
+          "prompt": "C1 practice prompt",
+          "answer": "answer",
+          "explanation": "Explanation of C1 usage"
+        }
+      ],
+      "linkedGrammarTopics": [
+        "Nominal Style",
+        "Academic Connectors",
+        "Complex Connectors"
+      ]
+    }
+  ]
+}

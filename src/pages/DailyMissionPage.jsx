@@ -4,10 +4,12 @@ import {
   getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress,
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
-  recordVocabAnswer
+  recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
+  getNextGrammarLesson
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import grammarData from '../data/grammar.json';
+import grammarCurriculum from '../data/grammarCurriculum.json';
 import vocabData from '../data/germanVocabulary.json';
 import readingData from '../data/reading.json';
 import listeningData from '../data/listening.json';
@@ -20,7 +22,7 @@ import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight,
   Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
-  Volume2, MessageSquare, Quote
+  Volume2, MessageSquare, Quote, BookMarked, ListOrdered
 } from 'lucide-react';
 import { correctWriting, correctSpeaking, isCorrectionEnabled } from '../utils/aiCorrection';
 
@@ -50,6 +52,7 @@ const DL_MAX = { grammar: 25, vocab: 50, lesson: 3, reading: 3, listening: 3, wr
 
 const MISSION_META = {
   lesson: { title: 'Study a Lesson', icon: GraduationCap, accent: '#10b981' },
+  grammarLesson: { title: 'Grammar Lesson', icon: BookMarked, accent: '#a855f7' },
   grammar: { title: 'Grammar Practice', icon: BarChart3, accent: '#f59e0b' },
   vocabulary: { title: 'Vocabulary Quiz', icon: BookOpen, accent: '#3bff9e' },
   listening: { title: 'Listening Exercise', icon: Headphones, accent: '#06b6d4' },
@@ -112,6 +115,11 @@ function buildMissions(levelId, state, targets) {
   if (nl && targets.lesson > 0) {
     missions.push({ type: 'lesson', target: targets.lesson, label: 'Study 1 lesson', nextLesson: nl });
   }
+  // Grammar Lesson: find next incomplete grammar curriculum lesson
+  const nextGc = getNextGrammarLesson(levelId, grammarCurriculum);
+  if (nextGc && targets.lesson > 0) {
+    missions.push({ type: 'grammarLesson', target: 1, label: 'Study: ' + nextGc.title, nextGcLesson: nextGc });
+  }
   if (targets.grammar > 0) missions.push({ type: 'grammar', target: targets.grammar, label: 'Complete ' + targets.grammar + ' questions' });
   if (targets.vocab > 0) missions.push({ type: 'vocabulary', target: targets.vocab, label: 'Learn ' + targets.vocab + ' words' });
   if (targets.listening > 0) missions.push({ type: 'listening', target: targets.listening, label: 'Complete 1 listening test' });
@@ -170,6 +178,10 @@ export default function DailyMissionPage() {
   const [spRecState, setSpRecState] = useState('idle');
   const [ttsAvailable] = useState(() => typeof window !== 'undefined' && 'speechSynthesis' in window);
   const [lrnTTS, setLrnTTS] = useState(false);
+  const [gcStart, setGcStart] = useState(false);
+  const [gcDone, setGcDone] = useState(false);
+  const [gcLesson, setGcLesson] = useState(null);
+  const [gcTopicLinks, setGcTopicLinks] = useState([]);
   const [wtCopied, setWtCopied] = useState(false);
   const [spCopied, setSpCopied] = useState(false);
   // AI correction state for writing
@@ -254,6 +266,30 @@ export default function DailyMissionPage() {
   };
   const hLn = () => advance('lesson', { skipped: false });
 
+  // === GRAMMAR CURRICULUM LESSON HANDLERS ===
+  const hGcStart = () => {
+    const cm = getCm();
+    if (cm?.nextGcLesson) {
+      setGcLesson(cm.nextGcLesson);
+      // Find related grammar practice questions linked to this lesson's topics
+      const topics = cm.nextGcLesson.linkedGrammarTopics || [];
+      const allQs = grammarData[lvl] || [];
+      const linked = allQs.filter(q => q.topic && topics.includes(q.topic));
+      setGcTopicLinks(linked.slice(0, 5));
+    }
+    setGcStart(true);
+  };
+  const hGcComplete = () => {
+    const cm = getCm();
+    if (cm?.nextGcLesson?.id) {
+      completeGrammarLesson(lvl, cm.nextGcLesson.id);
+      refresh();
+    }
+    setGcDone(true);
+  };
+  const hGcSkip = () => advance('grammarLesson', { skipped: true });
+  const hGcNext = () => advance('grammarLesson', { skipped: false });
+
   const hGa = (ans) => {
     const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
     if (!ex) return;
@@ -280,11 +316,33 @@ export default function DailyMissionPage() {
     if (gq.length > 0) return;
     const all = grammarData[lvl] || [];
     const done = state.levels?.[lvl]?.grammar || [];
-    const p = getCompletedLessons(lvl) || [];
-    const allIds = all.map((x) => x.id);
     const unmastered = all.filter((x) => (done.includes(x.id) ? getGrammarMastery(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
-    const selected = shuffleArray(unmastered).slice(0, count).map((x) => x.id);
+
+    // Prefer questions linked to the last completed grammar lesson topic
+    const completedGcIds = getCompletedGrammarLessons(lvl);
+    let topicPreferred = [];
+    if (completedGcIds.length > 0) {
+      const lastGcId = completedGcIds[completedGcIds.length - 1];
+      const allGc = grammarCurriculum[lvl] || [];
+      const lastGc = allGc.find(g => g.id === lastGcId);
+      if (lastGc && lastGc.linkedGrammarTopics) {
+        topicPreferred = unmastered.filter(x => x.topic && lastGc.linkedGrammarTopics.includes(x.topic));
+      }
+    }
+
+    let selected;
+    if (topicPreferred.length >= count) {
+      selected = shuffleArray(topicPreferred).slice(0, count).map((x) => x.id);
+    } else if (topicPreferred.length > 0) {
+      selected = [
+        ...shuffleArray(topicPreferred).map((x) => x.id),
+        ...shuffleArray(unmastered.filter(x => !topicPreferred.includes(x))).slice(0, count - topicPreferred.length).map((x) => x.id)
+      ];
+    } else {
+      selected = shuffleArray(unmastered).slice(0, count).map((x) => x.id);
+    }
+
     if (selected.length === 0) {
       const fallback = shuffleArray(all).slice(0, Math.min(cm.target, all.length)).map((x) => x.id);
       setGq(fallback);
@@ -743,7 +801,129 @@ export default function DailyMissionPage() {
           <button style={sBp} onClick={hLn}>Next Mission <ChevronRight size={16} /></button>
         </div>
       )}
-      {/* GRAMMAR */}
+
+      {/* GRAMMAR CURRICULUM LESSON */}
+      {cm.type === 'grammarLesson' && !gcDone && (
+        <div style={sCard}>
+          {!gcStart ? (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                {cm.nextGcLesson?.title || 'Grammar Lesson'}
+              </h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>
+                Unit {cm.nextGcLesson?.unit} &middot; {cm.nextGcLesson?.topic}
+              </p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+                {cm.nextGcLesson?.explanation?.substring(0, 120)}...
+              </p>
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <button style={sBp} onClick={hGcStart}><Play size={16} /> Study Grammar Lesson</button>
+                <button style={sBtn} onClick={hGcSkip}><SkipForward size={14} /> Skip for now</button>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                {gcLesson?.title || 'Grammar Lesson'}
+              </h3>
+              <span style={tag('rgba(168,85,247,0.15)')}>Unit {gcLesson?.unit} &middot; {gcLesson?.topic}</span>
+
+              {/* Explanation */}
+              {gcLesson?.explanation && (
+                <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginTop: '0.75rem', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
+                  <strong style={{ color: 'var(--accent)' }}>Explanation:</strong>
+                  <p style={{ marginTop: '0.3rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{gcLesson.explanation}</p>
+                </div>
+              )}
+
+              {/* Rules */}
+              {gcLesson?.rules?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Rules:</strong>
+                  <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
+                    {gcLesson.rules.map((r, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{r}</li>)}
+                  </ul>
+                </div>
+              )}
+
+              {/* Examples */}
+              {gcLesson?.examples?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Examples:</strong>
+                  <div style={{ marginTop: '0.3rem' }}>
+                    {gcLesson.examples.slice(0, 4).map((ex, i) => (
+                      <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.35rem 0.5rem', background: i % 2 === 0 ? 'var(--bg-secondary)' : 'transparent', borderRadius: '4px', marginBottom: '0.2rem', fontSize: '0.85rem' }}>
+                        <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{ex.de}</span>
+                        <span style={{ color: 'var(--text-secondary)' }}>{ex.en}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Common Mistakes */}
+              {gcLesson?.commonMistakes?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: '#ef4444' }}>Common Mistakes:</strong>
+                  {gcLesson.commonMistakes.slice(0, 3).map((m, i) => (
+                    <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(239,68,68,0.08)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
+                      <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>Wrong: "{m.wrong}"</div>
+                      <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>Correct: "{m.correct}"</div>
+                      <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{m.explanation}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Mini Practice */}
+              {gcLesson?.miniPractice?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>Quick Practice:</strong>
+                  {gcLesson.miniPractice.slice(0, 3).map((p, i) => (
+                    <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(168,85,247,0.06)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
+                      <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{p.prompt}</p>
+                      <p style={{ color: '#059669', fontStyle: 'italic' }}>Answer: {p.answer}</p>
+                      {p.explanation && <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{p.explanation}</p>}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Linked grammar practice */}
+              {gcTopicLinks?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>Related Grammar Practice:</strong>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem', marginBottom: '0.3rem' }}>
+                    These practice questions relate to today&apos;s lesson topic(s).
+                  </p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                    {gcLesson.linkedGrammarTopics.map((t, i) => (
+                      <span key={i} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', background: 'rgba(168,85,247,0.1)', color: '#a855f7', fontSize: '0.75rem' }}>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+                <button style={sBp} onClick={hGcComplete}><CheckCircle size={16} /> Mark Lesson Complete</button>
+                <button style={sBtn} onClick={hGcSkip}><SkipForward size={14} /> Skip for now</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+      {cm.type === 'grammarLesson' && gcDone && (
+        <div style={{ ...sCard, textAlign: 'center' }}>
+          <BookMarked size={36} style={{ color: '#a855f7', marginBottom: '0.75rem' }} />
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#a855f7', marginBottom: '0.5rem' }}>Grammar Lesson Complete!</h3>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{gcLesson?.title} completed.</p>
+          <button style={sBp} onClick={hGcNext}>Next Mission <ChevronRight size={16} /></button>
+        </div>
+      )}
+
+      {/* GRAMMAR PRACTICE */}
       {cm.type === 'grammar' && (() => {
         const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
         if (!ex && gq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading grammar...</p></div>;

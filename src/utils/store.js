@@ -66,6 +66,9 @@ const defaultState = {
   // Reading completed per level: { A1: ['A1_read_1', ...] }
   readingCompleted: {},
 
+  // Completed grammar curriculum lessons per level: { A1: ['A1_gc_1', 'A1_gc_2'], ... }
+  completedGrammarLessons: {},
+
   // C1 Readiness scores
   readinessScores: {
     reading: 0,
@@ -182,6 +185,33 @@ export function isLessonCompleted(level, lessonId) {
 
 export function getCompletedLessons(level) {
   return getLessonIds(state.completedLessons[level]);
+}
+
+// ===== GRAMMAR CURRICULUM LESSON TRACKING =====
+
+export function completeGrammarLesson(level, lessonId) {
+  if (!state.completedGrammarLessons[level]) {
+    state.completedGrammarLessons[level] = [];
+  }
+  if (!state.completedGrammarLessons[level].includes(lessonId)) {
+    state.completedGrammarLessons[level].push(lessonId);
+  }
+  saveState(state);
+}
+
+export function getCompletedGrammarLessons(level) {
+  return state.completedGrammarLessons[level] || [];
+}
+
+export function isGrammarLessonCompleted(level, lessonId) {
+  const arr = state.completedGrammarLessons[level];
+  return Array.isArray(arr) && arr.includes(lessonId);
+}
+
+export function getNextGrammarLesson(level, curriculum) {
+  const completed = getCompletedGrammarLessons(level);
+  const lessons = curriculum[level] || [];
+  return lessons.find(l => !completed.includes(l.id)) || null;
 }
 
 /**

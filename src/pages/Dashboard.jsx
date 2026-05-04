@@ -1,9 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked } from '../utils/store';
+import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked, getCompletedGrammarLessons, getNextGrammarLesson } from '../utils/store';
 import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, getWeeklyActiveCount, getBestWeeklyActivity, getMostRecentActivity, getActivityRoute, formatRelativeTime, getLocalDateKey } from '../utils/activityStreak';
 import levelsData from '../data/levels.json';
 import dashboardSummary from '../data/dashboardSummary.json';
+import grammarCurriculum from '../data/grammarCurriculum.json';
 import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
@@ -15,6 +16,7 @@ const allLessons = Object.values(dashboardSummary.lessonSummaries || {}).flat();
 // Lower completion ratio = higher priority
 const SKILL_AREAS = [
   { id: 'lesson',    name: 'Lessons',    icon: FileText,       linkSuffix: 'lessons',    label: 'Complete 1 lesson',            getCount: (s, lvl) => getCompletedLessons(lvl).length,                     getTotal: (lvl) => dashboardSummary.lessonCounts?.[lvl] || 25 },
+  { id: 'grammarLesson', name: 'Grammar Lessons', icon: BookMarked, linkSuffix: 'daily', label: 'Study 1 grammar lesson', getCount: (s, lvl) => getCompletedGrammarLessons(lvl).length, getTotal: (lvl) => (grammarCurriculum[lvl] || []).length || 20 },
   { id: 'grammar',   name: 'Grammar',    icon: BarChart3,      linkSuffix: 'grammar',    label: 'Complete 1 grammar unit',      getCount: (s, lvl) => (s.levels?.[lvl]?.grammar?.length || 0),            getTotal: (lvl) => dashboardSummary.grammarCounts?.[lvl] || 200 },
   { id: 'vocab',     name: 'Vocabulary', icon: BookOpen,       linkSuffix: 'vocabulary', label: 'Review 20 vocabulary words',    getCount: (s, lvl) => (s.levels?.[lvl]?.vocab?.length || 0),             getTotal: (lvl) => dashboardSummary.vocabCounts?.[lvl] || 500 },
   { id: 'reading',   name: 'Reading',    icon: FileText,       linkSuffix: 'reading',     label: 'Complete 1 reading test',      getCount: (s, lvl) => (s.levels?.[lvl]?.reading?.length || 0),            getTotal: () => 5 },
@@ -396,8 +398,10 @@ export default function Dashboard() {
     const writingCount = (state.writings || []).filter(w => w.level === displayLevel).length;
     const speakingCount = (state.speakingRecordings[displayLevel]?.length || 0);
 
-    const done = lessonsCompleted + grammarCount + vocabCount + readingCount + listeningCount + writingCount + speakingCount;
-    const max = Math.max(totalLessons + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingCount + listeningCount + writingCount + speakingCount, 1);
+    const gcLevel = grammarCurriculum[displayLevel] || [];
+    const gcDone = getCompletedGrammarLessons(displayLevel).length;
+    const done = lessonsCompleted + gcDone + grammarCount + vocabCount + readingCount + listeningCount + writingCount + speakingCount;
+    const max = Math.max(totalLessons + gcLevel.length + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingCount + listeningCount + writingCount + speakingCount, 1);
     return Math.min(Math.round((done / max) * 100), 100);
   }, [state, displayLevel]);
 
@@ -406,9 +410,12 @@ export default function Dashboard() {
     const lessonsCompleted = getCompletedLessons(displayLevel).length;
     const totalLessons = allLessons.filter(l => l.level === displayLevel).length;
     const prog = state.levels[displayLevel] || {};
+    const gcLevel = grammarCurriculum[displayLevel] || [];
+    const gcDone = getCompletedGrammarLessons(displayLevel).length;
 
     return {
       lessons: { done: lessonsCompleted, total: totalLessons },
+      grammarLesson: { done: gcDone, total: gcLevel.length },
       grammar: { done: (prog.grammar?.length || 0), total: GRAMMAR_COUNT[displayLevel] || 0 },
       vocab: { done: (prog.vocab?.length || 0), total: VOCAB_COUNT[displayLevel] || 0 },
       reading: { done: (prog.reading?.length || 0), total: null },
@@ -1112,6 +1119,7 @@ export default function Dashboard() {
         {/* Progress bars */}
         <div className="space-y-2 mb-4">
           <ProgressBarCompact label="Lessons" done={overviewData.lessons.done} total={overviewData.lessons.total} color={levelColors[displayLevel] || 'var(--accent)'} />
+          {overviewData.grammarLesson.total > 0 && <ProgressBarCompact label="Grammar Lessons" done={overviewData.grammarLesson.done} total={overviewData.grammarLesson.total} color="#a855f7" />}
           <ProgressBarCompact label="Grammar" done={overviewData.grammar.done} total={overviewData.grammar.total} color="#f59e0b" />
           <ProgressBarCompact label="Vocab" done={overviewData.vocab.done} total={overviewData.vocab.total} color="#3bff9e" />
           <ProgressBarCompact label="Reading" done={overviewData.reading.done} total={overviewData.reading.total} color="#06b6d4" />
@@ -1571,6 +1579,7 @@ export default function Dashboard() {
           </h2>
           <div className="space-y-2.5">
             <ProgressBar value={lessonProgress.completed} max={lessonProgress.total} label="Lessons" color="var(--accent)" />
+            <ProgressBar value={getCompletedGrammarLessons(studyLevel).length} max={(grammarCurriculum[studyLevel] || []).length} label="Grammar Lessons" color="#a855f7" />
             <ProgressBar value={grammarDone} max={grammarTarget} label="Grammar" color="#f59e0b" />
             <ProgressBar value={vocabDone} max={vocabTarget} label="Vocabulary" color="#3bff9e" />
             <ProgressBar value={readingDone} max={levelData?.minReadingTests || 5} label="Reading" color="#ff3355" />
