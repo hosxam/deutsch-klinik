@@ -777,4 +777,64 @@ test.describe('H. Daily Mission Flow', () => {
       }
     }
   });
+
+  test('Mission transition does not crash - navigate all missions', async ({ page }) => {
+    // Regression: verify getNextListening/getNextReading/getNextWriting/getNextSpeaking exist
+    // and mission transitions don't throw 'getNextListening is not defined'
+    test.setTimeout(120000);
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    // Track page errors
+    const errors = [];
+    page.on('pageerror', err => errors.push(err.message));
+
+    const body = page.locator('body');
+
+    // Navigate through up to 20 missions/steps
+    for (let i = 0; i < 20; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (!txt) break;
+
+      // Assert no 'Something broke' crash at each step
+      expect(txt).not.toContain('Something broke');
+
+      // If we hit the dashboard summary, stop
+      if (txt.includes('Dashboard') && !txt.includes('Start')) {
+        break;
+      }
+
+      // Try Next Mission button first
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+      if (await nextBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      // Try Skip or Mark Complete
+      const skipBtn = page.locator('button').filter({ hasText: /Skip|Mark Complete|Skip for now/ }).first();
+      if (await skipBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      // If no buttons found, break
+      break;
+    }
+
+    // Assert no JavaScript errors occurred during navigation
+    const getNextErrors = errors.filter(e => e.includes('getNext'));
+    expect(getNextErrors).toEqual([]);
+  });
 });

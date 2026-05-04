@@ -769,6 +769,28 @@ export default function DailyMissionPage() {
   const cm = getCm();
 
   // Current mission items from data
+  const getNextListening = (level) => {
+    const s = getState();
+    const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
+    return (listeningData[level] || []).find(item => !completed.has(item.id)) || (listeningData[level] || [])[0] || null;
+  };
+  const getNextReading = (level) => {
+    const s = getState();
+    const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
+    return (readingData[level] || []).find(item => !completed.has(item.id)) || (readingData[level] || [])[0] || null;
+  };
+  const getNextWriting = (level) => {
+    const s = getState();
+    const completed = new Set((s.levels?.[level]?.writing || []).map(x => x.id || x.exerciseId || x));
+    const data = writingData[level] || [];
+    return data.find(item => !completed.has(item.id)) || data[0] || null;
+  };
+  const getNextSpeaking = (level) => {
+    const s = getState();
+    const completed = new Set((s.levels?.[level]?.speaking || []).map(x => x.id || x.exerciseId || x));
+    const data = speakingData[level] || [];
+    return data.find(item => !completed.has(item.id)) || data[0] || null;
+  };
   const listeningItem = cm.type === 'listening' ? getNextListening(lvl) : null;
   const readingItem = cm.type === 'reading' ? getNextReading(lvl) : null;
   const writingItem = cm.type === 'writing' ? getNextWriting(lvl) : null;
