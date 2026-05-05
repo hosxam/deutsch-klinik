@@ -1060,4 +1060,104 @@ test.describe('H. Daily Mission Flow', () => {
     const getNextErrors = errors.filter(e => e.includes('getNext'));
     expect(getNextErrors).toEqual([]);
   });
+
+  test('Listening completion shows Next Mission button after answering all questions', async ({ page }) => {
+    // Regression: after finishing all listening questions, the mission completion
+    // screen must appear with "Listening Complete!" and "Next Mission" button
+    test.setTimeout(60000);
+
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    // Clear state for fresh daily session
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const pageErrors = [];
+    page.on('pageerror', err => pageErrors.push(err.message));
+
+    // Start daily plan
+    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s\s?Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    // Navigate through missions. When we find listening (Richtig/Falsch buttons),
+    // answer all questions and look for the completion screen.
+    for (let i = 0; i < 25; i++) {
+      const txt = await page.locator('body').textContent().catch(() => '');
+      if (!txt || txt.includes('Something broke')) break;
+
+      // If we see Listening Complete, our fix is working
+      if (txt.includes('Listening Complete')) {
+        break;
+      }
+
+      // Check for listening question buttons (Richtig/Falsch)
+      const richtig = page.locator('button').filter({ hasText: 'Richtig' }).first();
+      if (await richtig.isVisible({ timeout: 200 }).catch(() => false)) {
+        // Answer all questions
+        for (let q = 0; q < 12; q++) {
+          const rBtn = page.locator('button').filter({ hasText: 'Richtig' }).first();
+          if (await rBtn.isVisible({ timeout: 100 }).catch(() => false)) {
+            await rBtn.click();
+            await page.waitForTimeout(300);
+          } else {
+            const fBtn = page.locator('button').filter({ hasText: 'Falsch' }).first();
+            if (await fBtn.isVisible({ timeout: 100 }).catch(() => false)) {
+              await fBtn.click();
+              await page.waitForTimeout(300);
+            }
+          }
+          const bodyNow = await page.locator('body').textContent().catch(() => '');
+          if (bodyNow.includes('Listening Complete')) break;
+          const nqBtn = page.locator('button').filter({ hasText: 'Next Question' }).first();
+          if (await nqBtn.isVisible({ timeout: 100 }).catch(() => false)) {
+            await nqBtn.click();
+            await page.waitForTimeout(300);
+          }
+        }
+        // Check if completion appeared
+        const bodyDone = await page.locator('body').textContent().catch(() => '');
+        if (bodyDone.includes('Listening Complete')) break;
+      }
+
+      // Try Next Mission button
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+      if (await nextBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      // Try Skip / Mark Complete
+      const skipBtn = page.locator('button').filter({ hasText: /Skip|Mark Complete|Skip for now/ }).first();
+      if (await skipBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      break;
+    }
+
+    // Verify completion screen appeared
+    const finalBody = await page.locator('body').textContent().catch(() => '');
+    expect(finalBody).toContain('Listening Complete');
+    expect(finalBody).toContain('Next Mission');
+
+    // Click Next Mission
+    const finalNext = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+    await expect(finalNext).toBeVisible({ timeout: 3000 });
+    await finalNext.click();
+    await page.waitForTimeout(1500);
+
+    // Verify we moved past listening
+    const afterNext = await page.locator('body').textContent().catch(() => '');
+    expect(afterNext).not.toContain('Listening Complete');
+
+    // Assert no page crashes
+    expect(pageErrors).toEqual([]);
+  });
 });

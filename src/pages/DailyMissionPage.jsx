@@ -453,17 +453,20 @@ export default function DailyMissionPage() {
     setLra(prev => ({ ...prev, [qIdx]: answer }));
     setLrcorr(prev => ({ ...prev, [qIdx]: correct }));
     if (correct) setLrc(c => c + 1);
-    if (qIdx + 1 < (item.questions?.length || 0)) {
-      setLrq(qIdx + 1);
-    } else {
+    if (qIdx + 1 >= (item.questions?.length || 0)) {
       const totalQ = item.questions.length;
-      const allCorrect = lrc + (correct ? 1 : 0);
+      // Use functional update to compute final count accurately
       const existing = (state.levels?.[lvl]?.listening || []).filter((x) => x !== item.id);
       updateLevelProgress(lvl, 'listening', [item.id, ...existing]);
       const cs = getState();
       const ld = cs.levels || {};
       const ll = ld[lvl] || {};
-      updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: allCorrect, total: totalQ, date: new Date().toISOString() } } } } });
+      // Use a ref-based count from the recorded answers (avoid stale closure)
+      setLrc(prev => {
+        const trueCount = prev + (correct ? 1 : 0);
+        updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
+        return trueCount;
+      });
       refresh();
       setLrnDone(true);
     }
@@ -543,17 +546,18 @@ export default function DailyMissionPage() {
     setRra(prev => ({ ...prev, [qIdx]: answer }));
     setRrcorr(prev => ({ ...prev, [qIdx]: correct }));
     if (correct) setRrc(c => c + 1);
-    if (qIdx + 1 < (item.questions?.length || 0)) {
-      setRrq(qIdx + 1);
-    } else {
+    if (qIdx + 1 >= (item.questions?.length || 0)) {
       const totalQ = item.questions.length;
-      const allCorrect = rrc + (correct ? 1 : 0);
       const existing = (state.levels?.[lvl]?.reading || []).filter((x) => x !== item.id);
       updateLevelProgress(lvl, 'reading', [item.id, ...existing]);
       const cs = getState();
       const ld = cs.levels || {};
       const ll = ld[lvl] || {};
-      updateState({ levels: { ...ld, [lvl]: { ...ll, readingResults: { ...(ll.readingResults || {}), [item.id]: { completed: true, correct: allCorrect, total: totalQ, date: new Date().toISOString() } } } } });
+      setRrc(prev => {
+        const trueCount = prev + (correct ? 1 : 0);
+        updateState({ levels: { ...ld, [lvl]: { ...ll, readingResults: { ...(ll.readingResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
+        return trueCount;
+      });
       refresh();
       setRdDone(true);
     }
@@ -768,6 +772,8 @@ export default function DailyMissionPage() {
 
   const meta = getMeta();
   const cm = getCm();
+  const listeningDone = lrnDone || ((listeningItem?.questions?.length || 0) > 0 && lrq >= (listeningItem?.questions?.length || 0));
+  const readingDone = rdDone || ((readingItem?.questions?.length || 0) > 0 && rrq >= (readingItem?.questions?.length || 0));
 
   // Difficulty label helper
   const getDifficulty = (item) => {
@@ -1223,10 +1229,23 @@ export default function DailyMissionPage() {
         );
       })()}
 
-      
-
       {/* LISTENING MISSION */}
-      {cm.type === 'listening' && !lrnDone && (
+      {cm.type === 'listening' && listeningDone && (() => {
+        const qs = listeningItem?.questions || [];
+        const total = qs.length;
+        const correct = Object.values(lrcorr || {}).filter(Boolean).length;
+        const wrong = total - correct;
+        return (
+          <div style={{ ...sCard, textAlign: 'center' }}>
+            <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>Listening Complete!</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{correct} / {total} correct</p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}</p>
+            <button style={sBp} onClick={hLrnN}>Next Mission <ChevronRight size={16} /></button>
+          </div>
+        );
+      })()}
+      {cm.type === 'listening' && !listeningDone && (
         <div style={sCard}>
           {!listeningItem || (listeningItem.questions || []).length === 0 ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
@@ -1347,6 +1366,11 @@ export default function DailyMissionPage() {
                       {ans === undefined && (
                         <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
                       )}
+                      {ans !== undefined && lrq + 1 < qs.length && (
+                        <button style={sBp} onClick={() => setLrq(lrq + 1)}>
+                          Next Question <ChevronRight size={14} />
+                        </button>
+                      )}
                     </div>
                   </div>
                 );
@@ -1361,30 +1385,24 @@ export default function DailyMissionPage() {
           )}
         </div>
       )}
-      {cm.type === 'listening' && lrnDone && (() => {
-        const qs = listeningItem?.questions || [];
+
+      {/* READING MISSION */}
+      {cm.type === 'reading' && readingDone && (() => {
+        const qs = readingItem?.questions || [];
         const total = qs.length;
-        const correct = Object.values(lrcorr || {}).filter(Boolean).length;
+        const correct = Object.values(rrcorr || {}).filter(Boolean).length;
         const wrong = total - correct;
         return (
           <div style={{ ...sCard, textAlign: 'center' }}>
-            <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>Listening Complete!</h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
-              {correct} / {total} correct
-            </p>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-              {wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}
-            </p>
-            <button style={sBp} onClick={hLrnN}>
-              Next Mission <ChevronRight size={16} />
-            </button>
+            <FileText size={36} style={{ color: '#a78bfa', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#a78bfa', marginBottom: '0.5rem' }}>Reading Complete!</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{correct} / {total} correct</p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}</p>
+            <button style={sBp} onClick={hRdN}>Next Mission <ChevronRight size={16} /></button>
           </div>
         );
       })()}
-
-      {/* READING MISSION */}
-      {cm.type === 'reading' && !rdDone && (
+      {cm.type === 'reading' && !readingDone && (
         <div style={sCard}>
           {!readingItem || (readingItem.questions || []).length === 0 ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
@@ -1484,6 +1502,11 @@ export default function DailyMissionPage() {
                       {ans === undefined && (
                         <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
                       )}
+                      {ans !== undefined && rrq + 1 < qs.length && (
+                        <button style={sBp} onClick={() => setRrq(rrq + 1)}>
+                          Next Question <ChevronRight size={14} />
+                        </button>
+                      )}
                     </div>
                   </div>
                 );
@@ -1498,27 +1521,6 @@ export default function DailyMissionPage() {
           )}
         </div>
       )}
-      {cm.type === 'reading' && rdDone && (() => {
-        const qs = readingItem?.questions || [];
-        const total = qs.length;
-        const correct = Object.values(rrcorr || {}).filter(Boolean).length;
-        const wrong = total - correct;
-        return (
-          <div style={{ ...sCard, textAlign: 'center' }}>
-            <FileText size={36} style={{ color: '#8b5cf6', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#8b5cf6', marginBottom: '0.5rem' }}>Reading Complete!</h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
-              {correct} / {total} correct
-            </p>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-              {wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}
-            </p>
-            <button style={sBp} onClick={hRdN}>
-              Next Mission <ChevronRight size={16} />
-            </button>
-          </div>
-        );
-      })()}
 
       {/* WRITING MISSION */}
       {cm.type === 'writing' && !wtDone && (
