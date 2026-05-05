@@ -1,5 +1,5 @@
 {
-  "_comment": "Grammar exercises per level. Add new questions following the same format. Each question has id, level, unit, type (fill-blank|mcq|drag-word|sentence-correction|case-select|article-select|conjugation), prompt, options (for mcq), answer, and explanation.",
+  "_comment": "Grammar exercises per level. Add new qüstions following the same format. Each qüstion has id, level, unit, type (fill-blank|mcq|drag-word|sentence-correction|case-select|article-select|conjugation), prompt, options (for mcq), answer, and explanation.",
   "A1": [
     {
       "id": "A1_gr_1",
@@ -131,7 +131,7 @@
       "answer": "Woher",
       "explanation": "Woher asks for origin.",
       "level": "A1",
-      "topic": "W-Questions"
+      "topic": "W-Qüstions"
     },
     {
       "id": "A1_gr_13",
@@ -197,7 +197,7 @@
       "answer": "Kannst",
       "level": "A1",
       "topic": "Modal Verbs",
-      "explanation": "Modalverb: du form of koennen is kannst. Kannst du morgen kommen?"
+      "explanation": "Modalverb: du form of können is kannst. Kannst du morgen kommen?"
     },
     {
       "id": "A1_gr_19",
@@ -230,7 +230,7 @@
     {
       "id": "A1_gr_122",
       "level": "A1",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "fill-blank",
       "prompt": "___ heiBt deine Schwester? (what)",
       "options": null,
@@ -290,7 +290,7 @@
       "prompt": "Ich ___ um 6 Uhr ___ (aufwachen).",
       "options": null,
       "answer": "wache ... auf",
-      "explanation": "Aufwachen: prefix auf goes to end. Ich wache um 6 Uhr auf."
+      "explanation": "Aufwachen: prefix auf gös to end. Ich wache um 6 Uhr auf."
     },
     {
       "id": "A1_gr_128",
@@ -1118,7 +1118,7 @@
       "type": "fill-blank",
       "prompt": "___ du gern im Park? (spielen)",
       "answer": "Spielst",
-      "explanation": "Questions start with verb. Verb is 1st position.",
+      "explanation": "Qüstions start with verb. Verb is 1st position.",
       "level": "A1"
     },
     {
@@ -1136,16 +1136,16 @@
     },
     {
       "id": "A1_gr_199",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "fill-blank",
       "prompt": "___ du aus Deutschland? (come)",
       "answer": "Kommst",
-      "explanation": "Yes/no questions start with the verb: Kommst du aus Deutschland?",
+      "explanation": "Yes/no qüstions start with the verb: Kommst du aus Deutschland?",
       "level": "A1"
     },
     {
       "id": "A1_gr_200",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "fill-blank",
       "prompt": "___ ihr Hunger? (have)",
       "answer": "Habt",
@@ -1154,7 +1154,7 @@
     },
     {
       "id": "A1_gr_201",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "mcq",
       "prompt": "Bilde die Frage: '___ Sie Frau Muller?'",
       "options": [
@@ -1169,7 +1169,7 @@
     },
     {
       "id": "A1_gr_202",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "mcq",
       "prompt": "Was ist die richtige Frage? 'Er heiBt Max.'",
       "options": [
@@ -1184,16 +1184,16 @@
     },
     {
       "id": "A1_gr_203",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "fill-blank",
       "prompt": "___ das dein Buch? (is)",
       "answer": "Ist",
-      "explanation": "Ist das dein Buch? Verb first in yes/no questions.",
+      "explanation": "Ist das dein Buch? Verb first in yes/no qüstions.",
       "level": "A1"
     },
     {
       "id": "A1_gr_204",
-      "topic": "Yes/No Questions",
+      "topic": "Yes/No Qüstions",
       "type": "fill-blank",
       "prompt": "___ du morgen Zeit? (have)",
       "answer": "Hast",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "A1_gr_205",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "fill-blank",
       "prompt": "___ heiBen Sie? (what)",
       "answer": "Wie",
@@ -1211,7 +1211,7 @@
     },
     {
       "id": "A1_gr_206",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "fill-blank",
       "prompt": "___ wohnst du? (where)",
       "answer": "Wo",
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "A1_gr_207",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "mcq",
       "prompt": "___ kommt er? (from where)",
       "options": [
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "A1_gr_208",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "fill-blank",
       "prompt": "___ alt bist du? (how)",
       "answer": "Wie",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "A1_gr_209",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "mcq",
       "prompt": "___ Uhr ist es? (what time)",
       "options": [
@@ -1259,7 +1259,7 @@
     },
     {
       "id": "A1_gr_210",
-      "topic": "W-Questions",
+      "topic": "W-Qüstions",
       "type": "fill-blank",
       "prompt": "___ machst du? (what)",
       "answer": "Was",
@@ -1688,7 +1688,7 @@
       "type": "fill-blank",
       "prompt": "Ich ___ um 8 Uhr ___ (aufstehen).",
       "answer": "stehe ... auf",
-      "explanation": "Aufstehen: prefix auf goes to the end.",
+      "explanation": "Aufstehen: prefix auf gös to the end.",
       "level": "A1"
     },
     {
@@ -1719,7 +1719,7 @@
         "falsch"
       ],
       "answer": "falsch",
-      "explanation": "Anschalten: prefix an goes to end. 'Ich schalte das Licht an.'",
+      "explanation": "Anschalten: prefix an gös to end. 'Ich schalte das Licht an.'",
       "level": "A1"
     },
     {
@@ -1743,7 +1743,7 @@
         "einkaufe ..."
       ],
       "answer": "kaufe ... ein",
-      "explanation": "Einkaufen: prefix ein goes to the end of the sentence.",
+      "explanation": "Einkaufen: prefix ein gös to the end of the sentence.",
       "level": "A1"
     },
     {
@@ -2028,9 +2028,9 @@
       "id": "A1_gr_283",
       "topic": "Mixed Review",
       "type": "fill-blank",
-      "prompt": "___ du morgen frueh ___ (aufstehen)?",
+      "prompt": "___ du morgen früh ___ (aufstehen)?",
       "answer": "Stehst ... auf",
-      "explanation": "Du form of aufstehen: prefix auf goes to the end.",
+      "explanation": "Du form of aufstehen: prefix auf gös to the end.",
       "level": "A1"
     },
     {
@@ -2049,12 +2049,12 @@
       "prompt": "Plural von \"das Haus\"?",
       "options": [
         "Hause",
-        "Haeuser",
+        "Häuser",
         "Hausen",
         "Haus"
       ],
-      "answer": "Haeuser",
-      "explanation": "Das Haus -> die Haeuser (Umlaut + -er).",
+      "answer": "Häuser",
+      "explanation": "Das Haus -> die Häuser (Umlaut + -er).",
       "level": "A1"
     },
     {
@@ -2062,15 +2062,15 @@
       "topic": "Mixed Review",
       "type": "fill-blank",
       "prompt": "___ (fahren) du mit dem Zug?",
-      "answer": "Faehrst",
-      "explanation": "Du faehrst (irregular: a -> ae in du/er forms).",
+      "answer": "Fährst",
+      "explanation": "Du fährst (irregular: a -> ä in du/er forms).",
       "level": "A1"
     },
     {
       "id": "A1_gr_287",
       "topic": "Mixed Review",
       "type": "mcq",
-      "prompt": "\"Wohin gehst du?\" What does Wohin ask?",
+      "prompt": "\"Wohin gehst du?\" What dös Wohin ask?",
       "options": [
         "where to",
         "where from",
@@ -2103,13 +2103,13 @@
       "id": "A1_gr_290",
       "topic": "Mixed Review",
       "type": "mcq",
-      "prompt": "Richtig oder falsch? 'Ich moechte einen Kaffee.'",
+      "prompt": "Richtig oder falsch? 'Ich möchte einen Kaffee.'",
       "options": [
         "richtig",
         "falsch"
       ],
       "answer": "richtig",
-      "explanation": "Correct: Ich moechte einen Kaffee.",
+      "explanation": "Correct: Ich möchte einen Kaffee.",
       "level": "A1"
     },
     {
@@ -2170,7 +2170,7 @@
         "Guten Morgen",
         "Gute Nacht",
         "Guten Abend",
-        "Tschuess"
+        "Tschüss"
       ],
       "answer": "Guten Morgen",
       "explanation": "Guten Morgen is used in the morning until about noon."
@@ -2191,13 +2191,13 @@
       "topic": "Greetings",
       "prompt": "Translate to German: \"See you later!\"",
       "options": [
-        "Bis spaeter!",
+        "Bis später!",
         "Gute Nacht!",
         "Hallo!",
         "Auf Wiedersehen!"
       ],
-      "answer": "Bis spaeter!",
-      "explanation": "Bis spaeter is informal and means See you later."
+      "answer": "Bis später!",
+      "explanation": "Bis später is informal and means See you later."
     },
     {
       "id": "A1_gr_298",
@@ -2220,8 +2220,8 @@
       "level": "A1",
       "topic": "Numbers",
       "prompt": "Write in German: 15",
-      "answer": "fuenfzehn",
-      "explanation": "15 is fuenfzehn (fuenf + zehn)."
+      "answer": "fünfzehn",
+      "explanation": "15 is fünfzehn (fünf + zehn)."
     },
     {
       "id": "A1_gr_300",
@@ -2237,7 +2237,7 @@
       "type": "mcq",
       "level": "A1",
       "topic": "Numbers",
-      "prompt": "What is \"zwoelf\" in English?",
+      "prompt": "What is \"zwölf\" in English?",
       "options": [
         "Ten",
         "Eleven",
@@ -2245,7 +2245,7 @@
         "Twenty"
       ],
       "answer": "Twelve",
-      "explanation": "Zwoelf is the German word for twelve."
+      "explanation": "Zwölf is the German word for twelve."
     },
     {
       "id": "A1_gr_302",
@@ -2267,7 +2267,7 @@
       "type": "mcq",
       "level": "A1",
       "topic": "People",
-      "prompt": "What does \"die Frau\" mean?",
+      "prompt": "What dös \"die Frau\" mean?",
       "options": [
         "The man",
         "The woman",
@@ -2321,7 +2321,7 @@
       "type": "mcq",
       "level": "A1",
       "topic": "School",
-      "prompt": "What does \"die Schule\" mean?",
+      "prompt": "What dös \"die Schule\" mean?",
       "options": [
         "The university",
         "The school",
@@ -2347,13 +2347,13 @@
       "topic": "School",
       "prompt": "Translate: \"The students are in the classroom.\"",
       "options": [
-        "Der Schueler sind in das Klassenzimmer.",
-        "Die Schueler sind im Klassenzimmer.",
-        "Das Schueler sind in der Klassenzimmer.",
-        "Den Schueler sind im Klassenzimmer."
+        "Der Schüler sind in das Klassenzimmer.",
+        "Die Schüler sind im Klassenzimmer.",
+        "Das Schüler sind in der Klassenzimmer.",
+        "Den Schüler sind im Klassenzimmer."
       ],
-      "answer": "Die Schueler sind im Klassenzimmer.",
-      "explanation": "Schueler is plural (die Schueler). Im = in + dem (dative because location is static)."
+      "answer": "Die Schüler sind im Klassenzimmer.",
+      "explanation": "Schüler is plural (die Schüler). Im = in + dem (dative because location is static)."
     },
     {
       "id": "A1_gr_310",
@@ -2393,7 +2393,7 @@
       "type": "mcq",
       "level": "A1",
       "topic": "Verbs",
-      "prompt": "What does \"hoeren\" mean?",
+      "prompt": "What dös \"hören\" mean?",
       "options": [
         "To see",
         "To hear",
@@ -2401,7 +2401,7 @@
         "To run"
       ],
       "answer": "To hear",
-      "explanation": "Hoeren is a regular verb meaning to hear. Ich hoere, du hoerst, er/sie/es hoert."
+      "explanation": "Hören is a regular verb meaning to hear. Ich höre, du hörst, er/sie/es hört."
     }
   ],
   "A2": [
@@ -2529,14 +2529,14 @@
       "id": "A2_gr_8",
       "unit": "Superlative",
       "type": "fill-blank",
-      "prompt": "Das ist ___ (teuer) Hotel in der Stadt.",
-      "answer": "das teuerste",
+      "prompt": "Das ist ___ (teür) Hotel in der Stadt.",
+      "answer": "das teürste",
       "explanation": "Superlative: am + adjective + sten, or der/die/das + adjective + ste.",
       "options": [
-        "das teuerste",
-        "der teuerste",
-        "die teuerste",
-        "teuer"
+        "das teürste",
+        "der teürste",
+        "die teürste",
+        "teür"
       ],
       "level": "A2",
       "topic": "Superlative",
@@ -2548,7 +2548,7 @@
       "type": "fill-blank",
       "prompt": "Ich ___ (aufstehen) um sieben Uhr.",
       "answer": "stehe auf",
-      "explanation": "Aufstehen: prefix goes to end in main clause.",
+      "explanation": "Aufstehen: prefix gös to end in main clause.",
       "level": "A2",
       "topic": "Separable Verbs",
       "options": [
@@ -2599,7 +2599,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich denke dass er kommt morgen.'",
       "answer": "Ich denke, dass er morgen kommt.",
-      "explanation": "In subordinate clauses, the conjugated verb goes to the end.",
+      "explanation": "In subordinate clauses, the conjugated verb gös to the end.",
       "level": "A2",
       "topic": "Subordinate Clauses dass",
       "lessonId": "A2_lesson_25"
@@ -2686,7 +2686,7 @@
       "answer": "Wie viel",
       "level": "A2",
       "topic": "Interrogatives",
-      "explanation": "Wie viel Uhr ist es? = What time is it? (fixed question).",
+      "explanation": "Wie viel Uhr ist es? = What time is it? (fixed qüstion).",
       "lessonId": "A2_lesson_25"
     },
     {
@@ -3111,7 +3111,7 @@
       "type": "sentence-reorder",
       "prompt": "Ordne: glaube / dass / er / gut / Deutsch / ich / spricht",
       "answer": "Ich glaube, dass er gut Deutsch spricht.",
-      "explanation": "dass introduces a subordinate clause; verb goes to end.",
+      "explanation": "dass introduces a subordinate clause; verb gös to end.",
       "level": "A2",
       "topic": "dass Sätze",
       "lessonId": "A2_lesson_25"
@@ -3137,7 +3137,7 @@
       "type": "fill-blank",
       "prompt": "___ es regnet, bleiben wir zu Hause.",
       "answer": "Wenn",
-      "explanation": "wenn = if/when. Verb goes to end in the wenn clause.",
+      "explanation": "wenn = if/when. Verb gös to end in the wenn clause.",
       "level": "A2",
       "topic": "wenn Sätze",
       "options": [
@@ -3871,7 +3871,7 @@
     {
       "id": "A2_gr_93",
       "type": "mcq",
-      "prompt": "Es war teuer, ___ habe ich es gekauft.",
+      "prompt": "Es war teür, ___ habe ich es gekauft.",
       "answer": "trotzdem",
       "explanation": "trotzdem = nevertheless (verb in position 2).",
       "level": "A2",
@@ -4047,7 +4047,7 @@
       "type": "fill-blank",
       "prompt": "Er hat gestern ___ (anrufen).",
       "answer": "angerufen",
-      "explanation": "Separable verb in Perfekt: anrufen -> angerufen, ge- goes between prefix and stem.",
+      "explanation": "Separable verb in Perfekt: anrufen -> angerufen, ge- gös between prefix and stem.",
       "level": "A2",
       "topic": "Trennbare Verben Perfekt",
       "options": [
@@ -4193,16 +4193,16 @@
     {
       "id": "A2_gr_115",
       "type": "fill-blank",
-      "prompt": "Dieses Auto ist ___ (teuer) als jenes.",
+      "prompt": "Dieses Auto ist ___ (teür) als jenes.",
       "answer": "teurer",
-      "explanation": "Comparative: teuer -> teurer (drop -e-).",
+      "explanation": "Comparative: teür -> teurer (drop -e-).",
       "level": "A2",
       "topic": "Komparativ",
       "options": [
         "teurer",
-        "teuerer",
+        "teürer",
         "teure",
-        "teuere"
+        "teüre"
       ],
       "lessonId": "A2_lesson_25"
     },
@@ -4243,7 +4243,7 @@
       "type": "mcq",
       "prompt": "Weißt du, ___ er kommt?",
       "answer": "ob",
-      "explanation": "ob = whether (indirect yes/no question).",
+      "explanation": "ob = whether (indirect yes/no qüstion).",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4259,7 +4259,7 @@
       "type": "mcq",
       "prompt": "Ich möchte wissen, ___ das kostet.",
       "answer": "wie viel",
-      "explanation": "wie viel in indirect question (verb at end).",
+      "explanation": "wie viel in indirect qüstion (verb at end).",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4275,7 +4275,7 @@
       "type": "sentence-reorder",
       "prompt": "Ordne: nicht / wo / der Bahnhof / weiß / ich / ist",
       "answer": "Ich weiß nicht, wo der Bahnhof ist.",
-      "explanation": "Indirect question: verb at end after question word.",
+      "explanation": "Indirect qüstion: verb at end after qüstion word.",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "lessonId": "A2_lesson_25"
@@ -4285,7 +4285,7 @@
       "type": "mcq",
       "prompt": "Kannst du mir sagen, ___ der Chef ist?",
       "answer": "wo",
-      "explanation": "Indirect question with wo: verb at end.",
+      "explanation": "Indirect qüstion with wo: verb at end.",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4749,7 +4749,7 @@
       "type": "mcq",
       "prompt": "Wessen Tasche ist das? Das ist die Tasche ___ Chefs.",
       "answer": "des",
-      "explanation": "Genitive question \"wessen\" + masculine noun: des Chefs.",
+      "explanation": "Genitive qüstion \"wessen\" + masculine noun: des Chefs.",
       "level": "A2",
       "topic": "Genitiv",
       "options": [
@@ -4785,7 +4785,7 @@
       "type": "sentence-reorder",
       "prompt": "Ordne: hast / Gestern / du / gemacht / was",
       "answer": "Was hast du gestern gemacht?",
-      "explanation": "Question word order (W-Frage): question word + verb + subject.",
+      "explanation": "Qüstion word order (W-Frage): qüstion word + verb + subject.",
       "level": "A2",
       "topic": "Satzstellung",
       "lessonId": "A2_lesson_1"
@@ -4805,7 +4805,7 @@
       "type": "mcq",
       "prompt": "Ich habe wenig Geld, ___ kann ich mir das nicht leisten.",
       "answer": "deshalb",
-      "explanation": "deshalb = therefore (verb goes to position 2).",
+      "explanation": "deshalb = therefore (verb gös to position 2).",
       "level": "A2",
       "topic": "Konjunktionen",
       "options": [
@@ -5371,9 +5371,9 @@
     {
       "id": "A2_gr_192",
       "type": "article-select",
-      "prompt": "Das ist ___ teuersten Restaurant der Stadt.",
+      "prompt": "Das ist ___ teürsten Restaurant der Stadt.",
       "answer": "das",
-      "explanation": "Superlative with definite article: das teuerste Restaurant.",
+      "explanation": "Superlative with definite article: das teürste Restaurant.",
       "level": "A2",
       "topic": "A2 Mix",
       "options": [
@@ -5623,17 +5623,17 @@
         "Könntet"
       ],
       "answer": "Könnten",
-      "explanation": "Könnten is Konjunktiv II of können, used for polite requests: Könnten Sie mir bitte helfen?",
+      "explanation": "Könnten is Konjunktiv II of können, used for polite reqüsts: Könnten Sie mir bitte helfen?",
       "lessonId": "B1_lesson_3"
     },
     {
       "id": "B1_gr_8",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "sentence-correction",
       "prompt": "Correct the word order: 'Er fragt wo ist der Bahnhof.'",
       "answer": "Er fragt, wo der Bahnhof ist.",
-      "explanation": "In indirect questions, the verb goes to the end. Er fragt, wo der Bahnhof ist.",
+      "explanation": "In indirect qüstions, the verb gös to the end. Er fragt, wo der Bahnhof ist.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -5665,7 +5665,7 @@
         "Denn"
       ],
       "answer": "Obwohl",
-      "explanation": "Obwohl introduces a subordinate clause: verb goes to end.",
+      "explanation": "Obwohl introduces a subordinate clause: verb gös to end.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -5851,7 +5851,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich lerne Deutsch weil ich will in Deutschland arbeiten.'",
       "answer": "Ich lerne Deutsch, weil ich in Deutschland arbeiten will.",
-      "explanation": "With weil, the conjugated verb goes to the end.",
+      "explanation": "With weil, the conjugated verb gös to the end.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -5867,7 +5867,7 @@
         "ob"
       ],
       "answer": "dass",
-      "explanation": "dass introduces a noun clause (that). Verb goes to end.",
+      "explanation": "dass introduces a noun clause (that). Verb gös to end.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -5877,7 +5877,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich denke dass das ist richtig.'",
       "answer": "Ich denke, dass das richtig ist.",
-      "explanation": "After dass, the conjugated verb goes to the end.",
+      "explanation": "After dass, the conjugated verb gös to the end.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -6159,7 +6159,7 @@
         "Wolltest"
       ],
       "answer": "Würdest",
-      "explanation": "würdest + infinitive = polite request. Würdest du mir helfen?",
+      "explanation": "würdest + infinitive = polite reqüst. Würdest du mir helfen?",
       "lessonId": "B1_lesson_3"
     },
     {
@@ -6599,7 +6599,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich lerne Deutsch, um gut können zu arbeiten.'",
       "answer": "Ich lerne Deutsch, um gut arbeiten zu können.",
-      "explanation": "Modal verbs in um...zu: infinitive goes before the modal. 'um ... arbeiten zu können'.",
+      "explanation": "Modal verbs in um...zu: infinitive gös before the modal. 'um ... arbeiten zu können'.",
       "lessonId": "B1_lesson_19"
     },
     {
@@ -6615,7 +6615,7 @@
         "dass"
       ],
       "answer": "damit",
-      "explanation": "damit (so that) is used when subjects are different. Verb goes to end.",
+      "explanation": "damit (so that) is used when subjects are different. Verb gös to end.",
       "lessonId": "B1_lesson_19"
     },
     {
@@ -7563,7 +7563,7 @@
         "daran"
       ],
       "answer": "dafür",
-      "explanation": "Wofür? -> Dafür. Question word wo(r)+prep -> da(r)+prep.",
+      "explanation": "Wofür? -> Dafür. Qüstion word wo(r)+prep -> da(r)+prep.",
       "lessonId": "B1_lesson_22"
     },
     {
@@ -7601,7 +7601,7 @@
     {
       "id": "B1_gr_135",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "mcq",
       "prompt": "Weißt du, ___ er heißt?",
       "options": [
@@ -7611,13 +7611,13 @@
         "wann"
       ],
       "answer": "wie",
-      "explanation": "Indirect W-question: verb goes to end. Weißt du, wie er heißt?",
+      "explanation": "Indirect W-qüstion: verb gös to end. Weißt du, wie er heißt?",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_136",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "mcq",
       "prompt": "Kannst du mir sagen, ___ der Bahnhof ist?",
       "options": [
@@ -7627,13 +7627,13 @@
         "wie"
       ],
       "answer": "wo",
-      "explanation": "Indirect question: wo + verb at end. ... wo der Bahnhof ist.",
+      "explanation": "Indirect qüstion: wo + verb at end. ... wo der Bahnhof ist.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_137",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "mcq",
       "prompt": "Ich möchte wissen, ___ du gekommen bist.",
       "options": [
@@ -7643,13 +7643,13 @@
         "wie"
       ],
       "answer": "wann",
-      "explanation": "Indirect question: wann + verb at end. ... wann du gekommen bist.",
+      "explanation": "Indirect qüstion: wann + verb at end. ... wann du gekommen bist.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_138",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "mcq",
       "prompt": "Er fragt, ___ ich morgen Zeit habe.",
       "options": [
@@ -7659,13 +7659,13 @@
         "weil"
       ],
       "answer": "ob",
-      "explanation": "ob (whether/if) for yes/no indirect questions. Er fragt, ob ich Zeit habe.",
+      "explanation": "ob (whether/if) for yes/no indirect qüstions. Er fragt, ob ich Zeit habe.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_139",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "mcq",
       "prompt": "Ich weiß nicht, ___ das kostet.",
       "options": [
@@ -7681,11 +7681,11 @@
     {
       "id": "B1_gr_140",
       "level": "B1",
-      "topic": "Indirect questions",
+      "topic": "Indirect qüstions",
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich weiß nicht wann kommt der Zug.'",
       "answer": "Ich weiß nicht, wann der Zug kommt.",
-      "explanation": "Indirect question: verb goes to end. ... wann der Zug kommt.",
+      "explanation": "Indirect qüstion: verb gös to end. ... wann der Zug kommt.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -7741,15 +7741,15 @@
       "level": "B1",
       "topic": "Comparative and superlative",
       "type": "mcq",
-      "prompt": "Mein Auto ist ___ (teuer) als deins.",
+      "prompt": "Mein Auto ist ___ (teür) als deins.",
       "options": [
         "teurer",
-        "teuerer",
-        "am teuersten",
+        "teürer",
+        "am teürsten",
         "teure"
       ],
       "answer": "teurer",
-      "explanation": "Comparative of teuer: teurer (drop -e-). Mein Auto ist teurer als deins.",
+      "explanation": "Comparative of teür: teurer (drop -e-). Mein Auto ist teurer als deins.",
       "lessonId": "B1_lesson_5"
     },
     {
@@ -8181,7 +8181,7 @@
     {
       "id": "B1_gr_172",
       "level": "B1",
-      "topic": "Cause/consequence",
+      "topic": "Cause/conseqünce",
       "type": "mcq",
       "prompt": "Ich habe Kopfschmerzen, ___ gehe ich ins Bett.",
       "options": [
@@ -8197,7 +8197,7 @@
     {
       "id": "B1_gr_173",
       "level": "B1",
-      "topic": "Cause/consequence",
+      "topic": "Cause/conseqünce",
       "type": "mcq",
       "prompt": "Es regnet, ___ bleibe ich zu Hause.",
       "options": [
@@ -8213,7 +8213,7 @@
     {
       "id": "B1_gr_174",
       "level": "B1",
-      "topic": "Cause/consequence",
+      "topic": "Cause/conseqünce",
       "type": "mcq",
       "prompt": "Er ist krank; ___ kann er nicht kommen.",
       "options": [
@@ -8229,7 +8229,7 @@
     {
       "id": "B1_gr_175",
       "level": "B1",
-      "topic": "Cause/consequence",
+      "topic": "Cause/conseqünce",
       "type": "sentence-correction",
       "prompt": "Correct word order: 'Deshalb ich kann heute nicht kommen.'",
       "answer": "Deshalb kann ich heute nicht kommen.",
@@ -8239,7 +8239,7 @@
     {
       "id": "B1_gr_176",
       "level": "B1",
-      "topic": "Cause/consequence",
+      "topic": "Cause/conseqünce",
       "type": "mcq",
       "prompt": "Sie hat viel gelernt, ___ hat sie die Prüfung bestanden.",
       "options": [
@@ -8257,7 +8257,7 @@
       "level": "B1",
       "topic": "Contrast connectors",
       "type": "mcq",
-      "prompt": "Es war teuer, ___ habe ich es gekauft.",
+      "prompt": "Es war teür, ___ habe ich es gekauft.",
       "options": [
         "trotzdem",
         "deshalb",
@@ -8847,7 +8847,7 @@
     {
       "id": "B1_gr_217",
       "level": "B1",
-      "topic": "Formal requests",
+      "topic": "Formal reqüsts",
       "type": "mcq",
       "prompt": "___ (können) Sie mir bitte den Weg zeigen?",
       "options": [
@@ -8857,13 +8857,13 @@
         "Könnet"
       ],
       "answer": "Könnten",
-      "explanation": "Könnten + Sie = polite request (Konjunktiv II).",
+      "explanation": "Könnten + Sie = polite reqüst (Konjunktiv II).",
       "lessonId": "B1_lesson_7"
     },
     {
       "id": "B1_gr_218",
       "level": "B1",
-      "topic": "Formal requests",
+      "topic": "Formal reqüsts",
       "type": "mcq",
       "prompt": "___ ich bitte das Fenster öffnen?",
       "options": [
@@ -8879,7 +8879,7 @@
     {
       "id": "B1_gr_219",
       "level": "B1",
-      "topic": "Formal requests",
+      "topic": "Formal reqüsts",
       "type": "mcq",
       "prompt": "Hätten Sie vielleicht einen Moment Zeit ___ mich?",
       "options": [
@@ -8895,7 +8895,7 @@
     {
       "id": "B1_gr_220",
       "level": "B1",
-      "topic": "Formal requests",
+      "topic": "Formal reqüsts",
       "type": "mcq",
       "prompt": "___ ich Sie bitten, kurz zu warten?",
       "options": [
@@ -8911,7 +8911,7 @@
     {
       "id": "B1_gr_221",
       "level": "B1",
-      "topic": "Formal requests",
+      "topic": "Formal reqüsts",
       "type": "mcq",
       "prompt": "Wären Sie so freundlich, mir ___ helfen?",
       "options": [
@@ -8985,7 +8985,7 @@
         "gekommen bin"
       ],
       "answer": "komme",
-      "explanation": "Yes/no indirect question: ob + verb at end.",
+      "explanation": "Yes/no indirect qüstion: ob + verb at end.",
       "lessonId": "B1_lesson_7"
     },
     {
@@ -9047,7 +9047,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Er ist der Mann wer dort arbeitet.'",
       "answer": "Er ist der Mann, der dort arbeitet.",
-      "explanation": "'wer' is a question word, not a relative pronoun. Use 'der'.",
+      "explanation": "'wer' is a qüstion word, not a relative pronoun. Use 'der'.",
       "lessonId": "B1_lesson_25"
     },
     {
@@ -10321,7 +10321,7 @@
         "Obwohl",
         "Wenn"
       ],
-      "explanation": "\"Wie oft\" means \"no matter how often\" - introduces a concessive clause structure using a question word.",
+      "explanation": "\"Wie oft\" means \"no matter how often\" - introduces a concessive clause structure using a qüstion word.",
       "lessonId": "B2_lesson_6"
     },
     {
@@ -10609,7 +10609,7 @@
         "nicht nur sondern auch",
         "einerseits andererseits"
       ],
-      "explanation": "zwar...aber = it's true that...but.",
+      "explanation": "zwar...aber = it's trü that...but.",
       "lessonId": "B2_lesson_6"
     },
     {
@@ -10871,7 +10871,7 @@
     {
       "id": "B2_gr_101",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Ich möchte wissen, ___ er kommt.",
       "answer": "ob",
@@ -10887,7 +10887,7 @@
     {
       "id": "B2_gr_102",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Kannst du mir sagen, ___ der Zug abfährt?",
       "answer": "wann",
@@ -10903,7 +10903,7 @@
     {
       "id": "B2_gr_103",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Sie fragte, ___ ich schon gegessen habe.",
       "answer": "ob",
@@ -10919,7 +10919,7 @@
     {
       "id": "B2_gr_104",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "mcq",
       "prompt": "Direkt: \"Wo wohnst du?\" → Indirekt:",
       "answer": "Er fragt, wo ich wohne.",
@@ -10935,7 +10935,7 @@
     {
       "id": "B2_gr_105",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "sentence-correction",
       "prompt": "Correct: \"Er fragte: Kommst du mit?\" → Indirekte Rede",
       "answer": "Er fragte, ob ich mitkomme.",
@@ -10945,7 +10945,7 @@
     {
       "id": "B2_gr_106",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Weißt du, ___ das gemacht hat?",
       "answer": "wer",
@@ -10961,7 +10961,7 @@
     {
       "id": "B2_gr_107",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Ich will wissen, ___ sie sich trifft.",
       "answer": "mit wem",
@@ -10977,7 +10977,7 @@
     {
       "id": "B2_gr_108",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Erklär mir, ___ das funktioniert.",
       "answer": "wie",
@@ -10993,7 +10993,7 @@
     {
       "id": "B2_gr_109",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "fill-blank",
       "prompt": "Niemand weiß, ___ es passiert ist.",
       "answer": "warum",
@@ -11009,7 +11009,7 @@
     {
       "id": "B2_gr_110",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "mcq",
       "prompt": "\"Hast du Hunger?\" (indirekt mit \"Er fragt\")",
       "answer": "Er fragt, ob ich Hunger habe.",
@@ -12285,7 +12285,7 @@
       "level": "B2",
       "topic": "Concessive Clauses",
       "type": "fill-blank",
-      "prompt": "Sie kaufte das Kleid, ___ es teuer war.",
+      "prompt": "Sie kaufte das Kleid, ___ es teür war.",
       "answer": "obwohl",
       "options": [
         "obwohl",
@@ -13007,7 +13007,7 @@
         "Vor",
         "Nach"
       ],
-      "explanation": "seit + Dativ = since (Zeitdauer bis jetzt).",
+      "explanation": "seit + Dativ = since (Zeitdaür bis jetzt).",
       "lessonId": "B2_lesson_6"
     },
     {
@@ -13093,7 +13093,7 @@
     {
       "id": "B2_gr_241",
       "level": "B2",
-      "topic": "Indirect Questions",
+      "topic": "Indirect Qüstions",
       "type": "sentence-correction",
       "prompt": "Correct: \"Wann kommt der Bus?\" → (indirekte Frage)",
       "answer": "Kannst du mir sagen, wann der Bus kommt?",
@@ -13300,7 +13300,7 @@
       "level": "C1",
       "lessonId": "C1_lesson_7",
       "topic": "Advanced Relatives",
-      "explanation": "Praeposition beim Dativ bleibt erhalten."
+      "explanation": "Präposition beim Dativ bleibt erhalten."
     },
     {
       "id": "C1_gr_5",
@@ -13440,7 +13440,7 @@
       "level": "C1",
       "lessonId": "C1_lesson_2",
       "topic": "Complex Prepositions",
-      "explanation": "des- statt welch- fuer Genitiv Plural."
+      "explanation": "des- statt welch- für Genitiv Plural."
     },
     {
       "id": "C1_gr_15",
@@ -13539,7 +13539,7 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "Nominal: '___ (Due to the increase) der Kosten wurde die Behandlung teurer.'",
+      "prompt": "Nominal: '___ (Dü to the increase) der Kosten wurde die Behandlung teurer.'",
       "answer": "Aufgrund des Anstiegs",
       "explanation": "Aufgrund + Genitiv ersetzt weil-Satz.",
       "options": [
@@ -13568,7 +13568,7 @@
       "unit": "Nominal Style",
       "type": "fill-blank",
       "prompt": "Nominal: 'Bei ___ (examination) der Laborwerte fiel eine Anomalie auf.'",
-      "answer": "der Pruefung",
+      "answer": "der Prüfung",
       "explanation": "Bei + Nomen statt indem-Satz."
     },
     {
@@ -13578,7 +13578,7 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "Nominal: 'Die ___ (treatment) der Patienten erfolgt stationaer.'",
+      "prompt": "Nominal: 'Die ___ (treatment) der Patienten erfolgt stationär.'",
       "answer": "Behandlung",
       "explanation": "Behandlung von behandeln."
     },
@@ -13628,8 +13628,8 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "sentence-correction",
-      "prompt": "Rewrite: 'Weil die Kosten gestiegen sind, sinkt die Rentabilitaet.'",
-      "answer": "Aufgrund der gestiegenen Kosten sinkt die Rentabilitaet.",
+      "prompt": "Rewrite: 'Weil die Kosten gestiegen sind, sinkt die Rentabilität.'",
+      "answer": "Aufgrund der gestiegenen Kosten sinkt die Rentabilität.",
       "explanation": "weil > aufgrund + Genitiv + Partizip II."
     },
     {
@@ -13697,7 +13697,7 @@
       "type": "fill-blank",
       "prompt": "Collocation: 'in Kauf ___' (to accept/tolerate)",
       "answer": "nehmen",
-      "explanation": "In Kauf nehmen = negative Konsequenz akzeptieren.",
+      "explanation": "In Kauf nehmen = negative Konseqünz akzeptieren.",
       "options": [
         "nehmen",
         "geben",
@@ -13753,7 +13753,7 @@
         "ergreifen",
         "nehmen",
         "stellen",
-        "durchfuehren"
+        "durchführen"
       ]
     },
     {
@@ -13799,7 +13799,7 @@
       "type": "fill-blank",
       "prompt": "Collocation: 'zur ___ bringen' (to complete/finalise)",
       "answer": "Vollendung",
-      "explanation": "Zur Vollendung bringen = zu Ende fuehren."
+      "explanation": "Zur Vollendung bringen = zu Ende führen."
     },
     {
       "id": "C1_gr_40",
@@ -13827,7 +13827,7 @@
       "type": "sentence-correction",
       "prompt": "Replace: 'Es wird angenommen, dass die Theorie stimmt.' (Aktiv)",
       "answer": "Man nimmt an, dass die Theorie stimmt.",
-      "explanation": "Man + Aktiv ersetzt unpersoenliches Passiv."
+      "explanation": "Man + Aktiv ersetzt unpersönliches Passiv."
     },
     {
       "id": "C1_gr_42",
@@ -13848,13 +13848,13 @@
       "unit": "Advanced Passive Alt",
       "type": "fill-blank",
       "prompt": "Passive alt: 'Das ist ___ (easy to understand).'",
-      "answer": "leicht verstaendlich",
+      "answer": "leicht verständlich",
       "explanation": "-lich Adjektiv statt Passivkonstruktion.",
       "options": [
-        "leicht verstaendlich",
+        "leicht verständlich",
         "leicht verstanden",
         "leicht zu verstehen",
-        "leicht verstaendigt"
+        "leicht verständigt"
       ]
     },
     {
@@ -13864,8 +13864,8 @@
       "topic": "Advanced Passive Alternatives",
       "unit": "Advanced Passive Alt",
       "type": "sentence-correction",
-      "prompt": "Replace: 'Das muss noch geprueft werden.' (sich lassen)",
-      "answer": "Das muss sich noch pruefen lassen.",
+      "prompt": "Replace: 'Das muss noch geprüft werden.' (sich lassen)",
+      "answer": "Das muss sich noch prüfen lassen.",
       "explanation": "Sich lassen + Infinitiv = Passivalternative."
     },
     {
@@ -13876,10 +13876,10 @@
       "unit": "Advanced Passive Alt",
       "type": "fill-blank",
       "prompt": "Passive alt: 'Der Text ___ gut lesen.' (reads well)",
-      "answer": "laesst sich",
+      "answer": "lässt sich",
       "explanation": "Sich lassen + lesen = Passivalternative.",
       "options": [
-        "laesst sich",
+        "lässt sich",
         "wird",
         "ist",
         "kann"
@@ -13914,11 +13914,11 @@
       "topic": "Advanced Passive Alternatives",
       "unit": "Advanced Passive Alt",
       "type": "fill-blank",
-      "prompt": "Passive alt: 'Die Loesung ___ sich finden.' (will be found)",
-      "answer": "laesst",
+      "prompt": "Passive alt: 'Die Lösung ___ sich finden.' (will be found)",
+      "answer": "lässt",
       "explanation": "Sich lassen + Infinitiv = modales Passiv.",
       "options": [
-        "laesst",
+        "lässt",
         "wird",
         "hat",
         "ist"
@@ -13932,13 +13932,13 @@
       "unit": "Advanced Passive Alt",
       "type": "fill-blank",
       "prompt": "Passive alt: 'Dies ist ___ (worthy of mention).'",
-      "answer": "erwaehnenswert",
+      "answer": "erwähnenswert",
       "explanation": "-wert Adjektiv ersetzt das Passiv.",
       "options": [
-        "erwaehnenswert",
-        "zu erwaehnen",
-        "erwaehnt",
-        "erwaehnend"
+        "erwähnenswert",
+        "zu erwähnen",
+        "erwähnt",
+        "erwähnend"
       ]
     },
     {
@@ -13965,7 +13965,7 @@
       "topic": "Zustandspassiv vs Vorgangspassiv",
       "unit": "Zustandspassiv vs Vo",
       "type": "fill-blank",
-      "prompt": "Choose: 'Die Tuer ___ geoeffnet.' (Zustand, state focus)",
+      "prompt": "Choose: 'Die Tür ___ geöffnet.' (Zustand, state focus)",
       "answer": "ist",
       "explanation": "Zustandspassiv = sein + Partizip II.",
       "options": [
@@ -13982,9 +13982,9 @@
       "topic": "Zustandspassiv vs Vorgangspassiv",
       "unit": "Zustandspassiv vs Vo",
       "type": "fill-blank",
-      "prompt": "'Das Fenster ___ geoeffnet, als der Wind kam.' (Vorgang)",
+      "prompt": "'Das Fenster ___ geöffnet, als der Wind kam.' (Vorgang)",
       "answer": "wurde",
-      "explanation": "Vorgangspassiv Praeteritum = Prozess.",
+      "explanation": "Vorgangspassiv Präteritum = Prozess.",
       "options": [
         "wurde",
         "war",
@@ -14033,9 +14033,9 @@
       "topic": "Zustandspassiv vs Vorgangspassiv",
       "unit": "Zustandspassiv vs Vo",
       "type": "fill-blank",
-      "prompt": "'Das Labor ___ bis 18 Uhr geoeffnet.' (Zustand)",
+      "prompt": "'Das Labor ___ bis 18 Uhr geöffnet.' (Zustand)",
       "answer": "ist",
-      "explanation": "Oeffnungszeit = Zustand.",
+      "explanation": "Öffnungszeit = Zustand.",
       "options": [
         "ist",
         "wird",
@@ -14061,7 +14061,7 @@
       "topic": "Zustandspassiv vs Vorgangspassiv",
       "unit": "Zustandspassiv vs Vo",
       "type": "fill-blank",
-      "prompt": "'Die Bruecke ___ 1999 gebaut.' (Vorgangspassiv)",
+      "prompt": "'Die Brücke ___ 1999 gebaut.' (Vorgangspassiv)",
       "answer": "wurde",
       "explanation": "Wurde gebaut = Bauprozess in der Vergangenheit.",
       "options": [
@@ -14134,7 +14134,7 @@
       "topic": "Participle Constructions",
       "unit": "Participle Construct",
       "type": "fill-blank",
-      "prompt": "Partizip I: 'Die ___ (ankommen) Gaeste wurden begruesst.'",
+      "prompt": "Partizip I: 'Die ___ (ankommen) Gäste wurden begrüsst.'",
       "answer": "ankommenden",
       "explanation": "Partizip I von ankommen + Endung."
     },
@@ -14178,7 +14178,7 @@
       "topic": "Participle Constructions",
       "unit": "Participle Construct",
       "type": "fill-blank",
-      "prompt": "Extended: 'Der ___ (seit Jahren in Berlin leben) Kuenstler'",
+      "prompt": "Extended: 'Der ___ (seit Jahren in Berlin leben) Künstler'",
       "answer": "seit Jahren in Berlin lebende",
       "explanation": "Erweitertes Partizip I mit Adverbial."
     },
@@ -14239,8 +14239,8 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Gerundiv: 'Eine ___ (durchfuehren) Untersuchung.' (to be carried out)",
-      "answer": "durchzufuehrende",
+      "prompt": "Gerundiv: 'Eine ___ (durchführen) Untersuchung.' (to be carried out)",
+      "answer": "durchzuführende",
       "explanation": "zu + Infinitiv + d-Endung = Notwendigkeit."
     },
     {
@@ -14261,9 +14261,9 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Gerundiv: 'Der ___ (loesen) Konflikt.' (must be resolved)",
-      "answer": "zu loesende",
-      "explanation": "zu loesen + maskuline Endung."
+      "prompt": "Gerundiv: 'Der ___ (lösen) Konflikt.' (must be resolved)",
+      "answer": "zu lösende",
+      "explanation": "zu lösen + maskuline Endung."
     },
     {
       "id": "C1_gr_74",
@@ -14283,9 +14283,9 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Gerundiv: 'Die ___ (klaeren) Fragen.' (to be clarified)",
-      "answer": "zu klaerenden",
-      "explanation": "zu klaeren + Pluralendung."
+      "prompt": "Gerundiv: 'Die ___ (klären) Fragen.' (to be clarified)",
+      "answer": "zu klärenden",
+      "explanation": "zu klären + Pluralendung."
     },
     {
       "id": "C1_gr_76",
@@ -14311,9 +14311,9 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "sentence-correction",
-      "prompt": "Rewrite: 'Die Aufgaben, die erledigt werden muessen, sind komplex.'",
+      "prompt": "Rewrite: 'Die Aufgaben, die erledigt werden müssen, sind komplex.'",
       "answer": "Die zu erledigenden Aufgaben sind komplex.",
-      "explanation": "Relativsatz mit muessen zu Gerundivum."
+      "explanation": "Relativsatz mit müssen zu Gerundivum."
     },
     {
       "id": "C1_gr_78",
@@ -14333,9 +14333,9 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Gerundiv: 'Ein ___ (beruecksichtigen) Faktor.' (a factor to consider)",
-      "answer": "zu beruecksichtigender",
-      "explanation": "zu beruecksichtigen + maskulin."
+      "prompt": "Gerundiv: 'Ein ___ (berücksichtigen) Faktor.' (a factor to consider)",
+      "answer": "zu berücksichtigender",
+      "explanation": "zu berücksichtigen + maskulin."
     },
     {
       "id": "C1_gr_80",
@@ -14344,9 +14344,9 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Gerundiv: 'Die ___ (ueberpruefen) Ergebnisse.' (findings to verify)",
-      "answer": "zu ueberpruefenden",
-      "explanation": "zu ueberpruefen + Plural."
+      "prompt": "Gerundiv: 'Die ___ (überprüfen) Ergebnisse.' (findings to verify)",
+      "answer": "zu überprüfenden",
+      "explanation": "zu überprüfen + Plural."
     },
     {
       "id": "C1_gr_81",
@@ -14357,7 +14357,7 @@
       "type": "fill-blank",
       "prompt": "Extend: 'Der ___ Mann' (mit dem Auto fahren)",
       "answer": "mit dem Auto fahrende",
-      "explanation": "Partizip I mit Praepositionalobjekt."
+      "explanation": "Partizip I mit Präpositionalobjekt."
     },
     {
       "id": "C1_gr_82",
@@ -14366,8 +14366,8 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "fill-blank",
-      "prompt": "Extend: 'Die ___ Studie' (von Experten pruefen)",
-      "answer": "von Experten zu pruefende",
+      "prompt": "Extend: 'Die ___ Studie' (von Experten prüfen)",
+      "answer": "von Experten zu prüfende",
       "explanation": "Gerundivum mit Agens."
     },
     {
@@ -14388,8 +14388,8 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "sentence-correction",
-      "prompt": "Rewrite: 'Die Studie, die vor kurzem veroeffentlicht wurde, ist wichtig.'",
-      "answer": "Die vor kurzem veroeffentlichte Studie ist wichtig.",
+      "prompt": "Rewrite: 'Die Studie, die vor kurzem veröffentlicht wurde, ist wichtig.'",
+      "answer": "Die vor kurzem veröffentlichte Studie ist wichtig.",
       "explanation": "Relativsatz zu erweitertem Attribut."
     },
     {
@@ -14400,7 +14400,7 @@
       "unit": "Extended Adjective P",
       "type": "fill-blank",
       "prompt": "Translate: 'the recently published article' -> 'Der ___ Artikel'",
-      "answer": "vor kurzem veroeffentlichte",
+      "answer": "vor kurzem veröffentlichte",
       "explanation": "Adverb + Partizip II + Endung."
     },
     {
@@ -14410,9 +14410,9 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "fill-blank",
-      "prompt": "Extend: 'Die ___ Zahlen' (in dem Bericht erwaehnen)",
-      "answer": "in dem Bericht erwaehnten",
-      "explanation": "Partizip II mit Praepositionalobjekt."
+      "prompt": "Extend: 'Die ___ Zahlen' (in dem Bericht erwähnen)",
+      "answer": "in dem Bericht erwähnten",
+      "explanation": "Partizip II mit Präpositionalobjekt."
     },
     {
       "id": "C1_gr_87",
@@ -14423,7 +14423,7 @@
       "type": "fill-blank",
       "prompt": "Extend: 'Ein ___ Faktor' (in dieser Hinsicht wichtig sein)",
       "answer": "in dieser Hinsicht wichtiger",
-      "explanation": "Adjektiv mit Praepositionalphrase."
+      "explanation": "Adjektiv mit Präpositionalphrase."
     },
     {
       "id": "C1_gr_88",
@@ -14432,8 +14432,8 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "fill-blank",
-      "prompt": "Extend: 'Das ___ Haus' (dem Patienten gehoeren)",
-      "answer": "dem Patienten gehoerende",
+      "prompt": "Extend: 'Das ___ Haus' (dem Patienten gehören)",
+      "answer": "dem Patienten gehörende",
       "explanation": "Partizip I mit Dativobjekt."
     },
     {
@@ -14443,8 +14443,8 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "fill-blank",
-      "prompt": "Extend: 'Die ___ Studie' (im letzten Jahr veroeffentlicht)",
-      "answer": "im letzten Jahr veroeffentlichte",
+      "prompt": "Extend: 'Die ___ Studie' (im letzten Jahr veröffentlicht)",
+      "answer": "im letzten Jahr veröffentlichte",
       "explanation": "Partizip II mit temporaler Angabe."
     },
     {
@@ -14466,10 +14466,10 @@
       "unit": "Advanced Relative Cl",
       "type": "fill-blank",
       "prompt": "Relative: 'Der Mann, ___ wir sprachen' (about whom)",
-      "answer": "ueber den",
-      "explanation": "sprechen ueber + Akk.",
+      "answer": "über den",
+      "explanation": "sprechen über + Akk.",
       "options": [
-        "ueber den",
+        "über den",
         "von dem",
         "mit dem",
         "an den"
@@ -14516,7 +14516,7 @@
       "topic": "Advanced Relative Clauses",
       "unit": "Advanced Relative Cl",
       "type": "fill-blank",
-      "prompt": "Free relative: '___ das sagt, irrt sich' (whoever)",
+      "prompt": "Free relative: '___ das sagt, irrt sich' (whöver)",
       "answer": "Wer",
       "explanation": "Freies Relativpronomen = wer.",
       "options": [
@@ -14637,12 +14637,12 @@
       "type": "fill-blank",
       "prompt": "KI: 'Er sagt, er ___ Arzt.' (indirect)",
       "answer": "sei",
-      "explanation": "Konjunktiv I fuer indirekte Rede.",
+      "explanation": "Konjunktiv I für indirekte Rede.",
       "options": [
         "sei",
         "ist",
         "war",
-        "waere"
+        "wäre"
       ]
     },
     {
@@ -14658,7 +14658,7 @@
       "options": [
         "habe",
         "hat",
-        "haette",
+        "hätte",
         "hatte"
       ]
     },
@@ -14675,7 +14675,7 @@
       "options": [
         "habe",
         "hat",
-        "haette",
+        "hätte",
         "hatte"
       ]
     },
@@ -14692,7 +14692,7 @@
       "options": [
         "werde",
         "wird",
-        "wuerde",
+        "würde",
         "worden"
       ]
     },
@@ -14709,7 +14709,7 @@
       "options": [
         "sei",
         "war",
-        "waere",
+        "wäre",
         "ist"
       ]
     },
@@ -14720,7 +14720,7 @@
       "topic": "Indirect Speech",
       "unit": "Indirect Speech",
       "type": "fill-blank",
-      "prompt": "KI: 'Der Prof erklaerte, die Studie ___ den Zusammenhang.'",
+      "prompt": "KI: 'Der Prof erklärte, die Studie ___ den Zusammenhang.'",
       "answer": "belege",
       "explanation": "belegen > Konjunktiv I.",
       "options": [
@@ -14738,13 +14738,13 @@
       "unit": "Indirect Speech",
       "type": "fill-blank",
       "prompt": "KI: 'Die Zeugin gab an, sie ___ sich nicht erinnern.'",
-      "answer": "koenne",
-      "explanation": "koennen > Konjunktiv I.",
+      "answer": "könne",
+      "explanation": "können > Konjunktiv I.",
       "options": [
-        "koenne",
+        "könne",
         "konnte",
         "kann",
-        "koennte"
+        "könnte"
       ]
     },
     {
@@ -14760,7 +14760,7 @@
       "options": [
         "seien",
         "sind",
-        "waeren",
+        "wären",
         "waren"
       ]
     },
@@ -14777,7 +14777,7 @@
       "options": [
         "wirkten",
         "wirken",
-        "wuerden wirken",
+        "würden wirken",
         "gewirkt"
       ]
     },
@@ -14788,13 +14788,13 @@
       "topic": "Indirect Speech",
       "unit": "Indirect Speech",
       "type": "fill-blank",
-      "prompt": "KI: 'Der Minister erklaerte, die Grenzen ___ sicher.'",
+      "prompt": "KI: 'Der Minister erklärte, die Grenzen ___ sicher.'",
       "answer": "seien",
       "explanation": "seien = KI Plural von sein.",
       "options": [
         "seien",
         "sind",
-        "waeren",
+        "wären",
         "waren"
       ]
     },
@@ -14806,10 +14806,10 @@
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
       "prompt": "KII polite: 'Ich ___ gern einen Termin.'",
-      "answer": "haette",
-      "explanation": "Konjunktiv II fuer Hoeflichkeit.",
+      "answer": "hätte",
+      "explanation": "Konjunktiv II für Höflichkeit.",
       "options": [
-        "haette",
+        "hätte",
         "habe",
         "hatte",
         "hat"
@@ -14823,10 +14823,10 @@
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
       "prompt": "KII: 'Das ___ richtig sein.' (might be)",
-      "answer": "koennte",
-      "explanation": "KII = Moeglichkeitseinschraenkung.",
+      "answer": "könnte",
+      "explanation": "KII = Möglichkeitseinschränkung.",
       "options": [
-        "koennte",
+        "könnte",
         "kann",
         "konnte",
         "kannst"
@@ -14839,13 +14839,13 @@
       "topic": "Konjunktiv II Hedging",
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
-      "prompt": "KII: 'Wir ___ frueher anfangen.' (suggestion)",
+      "prompt": "KII: 'Wir ___ früher anfangen.' (suggestion)",
       "answer": "sollten",
       "explanation": "sollten = Empfehlung.",
       "options": [
         "sollten",
         "sollen",
-        "muessten",
+        "müssten",
         "mussen"
       ]
     },
@@ -14856,11 +14856,11 @@
       "topic": "Konjunktiv II Hedging",
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
-      "prompt": "KII: 'Wenn ich mehr Zeit ___, wuerde ich helfen.' (unreal)",
-      "answer": "haette",
-      "explanation": "KII Irrealis = haette + wuerde.",
+      "prompt": "KII: 'Wenn ich mehr Zeit ___, würde ich helfen.' (unreal)",
+      "answer": "hätte",
+      "explanation": "KII Irrealis = hätte + würde.",
       "options": [
-        "haette",
+        "hätte",
         "habe",
         "hatte",
         "hat"
@@ -14874,10 +14874,10 @@
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
       "prompt": "KII: 'Das ___ ich bezweifeln.' (respectful doubt)",
-      "answer": "moechte",
-      "explanation": "moechte = vorsichtiger als mochte.",
+      "answer": "möchte",
+      "explanation": "möchte = vorsichtiger als mochte.",
       "options": [
-        "moechte",
+        "möchte",
         "mag",
         "magst",
         "mochte"
@@ -14890,11 +14890,11 @@
       "topic": "Konjunktiv II Hedging",
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
-      "prompt": "KII: '___ Sie mir bitte helfen?' (polite request)",
-      "answer": "Koennen",
-      "explanation": "Koennen = hoefliche Frage.",
+      "prompt": "KII: '___ Sie mir bitte helfen?' (polite reqüst)",
+      "answer": "Können",
+      "explanation": "Können = höfliche Frage.",
       "options": [
-        "Koennen",
+        "Können",
         "Konnten",
         "Kannst",
         "Konntet"
@@ -14907,9 +14907,9 @@
       "topic": "Konjunktiv II Hedging",
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
-      "prompt": "KII: 'Das waere ___' (hedging statement)",
+      "prompt": "KII: 'Das wäre ___' (hedging statement)",
       "answer": "ideal",
-      "explanation": "waere macht die Aussage vorsichtiger.",
+      "explanation": "wäre macht die Aussage vorsichtiger.",
       "options": [
         "ideal",
         "Idee",
@@ -14925,11 +14925,11 @@
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
       "prompt": "KII: 'Ich ___ mir mehr Zeit.' (wish)",
-      "answer": "wuenschte",
-      "explanation": "wuenschen > KII fuer Wunsch.",
+      "answer": "wünschte",
+      "explanation": "wünschen > KII für Wunsch.",
       "options": [
-        "wuenschte",
-        "wuensche",
+        "wünschte",
+        "wünsche",
         "wollte",
         "will"
       ]
@@ -14942,10 +14942,10 @@
       "unit": "Konjunktiv II Hedgin",
       "type": "fill-blank",
       "prompt": "KII: 'Man ___ sagen, dass es komplex ist.' (hedging)",
-      "answer": "muesste",
-      "explanation": "muesste = vorsichtige Vermutung.",
+      "answer": "müsste",
+      "explanation": "müsste = vorsichtige Vermutung.",
       "options": [
-        "muesste",
+        "müsste",
         "muss",
         "musste",
         "mussen"
@@ -14958,9 +14958,9 @@
       "topic": "Konjunktiv II Hedging",
       "unit": "Konjunktiv II Hedgin",
       "type": "sentence-correction",
-      "prompt": "Rewrite hedging: 'Die Loesung ist falsch.' (weak claim)",
-      "answer": "Die Loesung koennte falsch sein.",
-      "explanation": "KII fuer vorsichtige Behauptung."
+      "prompt": "Rewrite hedging: 'Die Lösung ist falsch.' (weak claim)",
+      "answer": "Die Lösung könnte falsch sein.",
+      "explanation": "KII für vorsichtige Behauptung."
     },
     {
       "id": "C1_gr_121",
@@ -14968,15 +14968,15 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Die ... (bestaetigen) Diagnose wurde ueberprueft.",
-      "answer": "zu bestaetigende",
-      "explanation": "Zu bestaetigende Diagnose = Diagnose, die bestaetigt werden muss.",
+      "prompt": "Die ... (bestätigen) Diagnose wurde überprüft.",
+      "answer": "zu bestätigende",
+      "explanation": "Zu bestätigende Diagnose = Diagnose, die bestätigt werden muss.",
       "lessonId": "C1_lesson_11",
       "options": [
-        "bestaetigte",
-        "zu bestaetigende",
-        "bestaetigende",
-        "bestaetigter"
+        "bestätigte",
+        "zu bestätigende",
+        "bestätigende",
+        "bestätigter"
       ]
     },
     {
@@ -15003,13 +15003,13 @@
       "unit": "Gerundive Constructi",
       "type": "mcq",
       "prompt": "Welche Form ist gerundivisch?",
-      "answer": "Die noch zu klaerende Frage",
+      "answer": "Die noch zu klärende Frage",
       "explanation": "Zu + Partizip = gerundivisch (Notwendigkeit).",
       "lessonId": "C1_lesson_11",
       "options": [
-        "Die geklaerte Frage",
-        "Die noch zu klaerende Frage",
-        "Die klaerende Frage",
+        "Die geklärte Frage",
+        "Die noch zu klärende Frage",
+        "Die klärende Frage",
         "Die klaren Fragen"
       ]
     },
@@ -15036,15 +15036,15 @@
       "topic": "Gerundive Constructions",
       "unit": "Gerundive Constructi",
       "type": "fill-blank",
-      "prompt": "Ein ... (beruecksichtigen) Aspekt wurde uebersehen.",
-      "answer": "zu beruecksichtigender",
-      "explanation": "Zu beruecksichtigender Aspekt = Aspekt, der beruecksichtigt werden muss.",
+      "prompt": "Ein ... (berücksichtigen) Aspekt wurde übersehen.",
+      "answer": "zu berücksichtigender",
+      "explanation": "Zu berücksichtigender Aspekt = Aspekt, der berücksichtigt werden muss.",
       "lessonId": "C1_lesson_11",
       "options": [
-        "beruecksichtigter",
-        "zu beruecksichtigender",
-        "beruecksichtigende",
-        "beruecksichtigen"
+        "berücksichtigter",
+        "zu berücksichtigender",
+        "berücksichtigende",
+        "berücksichtigen"
       ]
     },
     {
@@ -15055,7 +15055,7 @@
       "type": "fill-blank",
       "prompt": "Der ... (vom Arzt dringend empfehlen) Therapieplan wurde umgesetzt.",
       "answer": "vom Arzt dringend empfohlene",
-      "explanation": "Erweitertes Attribut: Praepositionalphrase + Adverb + Partizip.",
+      "explanation": "Erweitertes Attribut: Präpositionalphrase + Adverb + Partizip.",
       "lessonId": "C1_lesson_12",
       "options": [
         "empfohlene",
@@ -15071,14 +15071,14 @@
       "unit": "Extended Adjective P",
       "type": "mcq",
       "prompt": "Welcher Satz hat die korrekte Erweiterung?",
-      "answer": "Der seit Jahren bewaehrte Behandlungsansatz",
+      "answer": "Der seit Jahren bewärte Behandlungsansatz",
       "explanation": "Erweitertes Attribut: seit Jahren + Partizip.",
       "lessonId": "C1_lesson_12",
       "options": [
-        "Der seit Jahren bewaerte Behandlungsansatz",
-        "Der bewaerte seit Jahren Behandlungsansatz",
-        "Der Behandlungsansatz seit Jahren bewaert",
-        "Seit Jahren der bewaerte Behandlungsansatz"
+        "Der seit Jahren bewärte Behandlungsansatz",
+        "Der bewärte seit Jahren Behandlungsansatz",
+        "Der Behandlungsansatz seit Jahren bewärt",
+        "Seit Jahren der bewärte Behandlungsansatz"
       ]
     },
     {
@@ -15087,14 +15087,14 @@
       "topic": "Extended Adjective Phrases",
       "unit": "Extended Adjective P",
       "type": "fill-blank",
-      "prompt": "Die ... (im Labor sorgfaeltig analysieren) Blutprobe ergab klare Werte.",
-      "answer": "im Labor sorgfaeltig analysierte",
+      "prompt": "Die ... (im Labor sorgfältig analysieren) Blutprobe ergab klare Werte.",
+      "answer": "im Labor sorgfältig analysierte",
       "explanation": "Erweitertes Attribut: Ort + Adverb + Partizip.",
       "lessonId": "C1_lesson_12",
       "options": [
         "analysierte",
         "im Labor analysierte",
-        "im Labor sorgfaeltig analysierte",
+        "im Labor sorgfältig analysierte",
         "analysiert im Labor"
       ]
     },
@@ -15123,7 +15123,7 @@
       "type": "mcq",
       "prompt": "Welche Wortstellung ist korrekt?",
       "answer": "Die dem Patienten verschriebene Dosierung",
-      "explanation": "Praepositionalphrase (dem Patienten) + Partizip (verschriebene).",
+      "explanation": "Präpositionalphrase (dem Patienten) + Partizip (verschriebene).",
       "lessonId": "C1_lesson_12",
       "options": [
         "Dem Patienten die verschriebene Dosierung",
@@ -15173,7 +15173,7 @@
       "unit": "Advanced Relative Cl",
       "type": "mcq",
       "prompt": "Welcher Relativsatz ist korrekt?",
-      "answer": "Die Methode, derer wir uns bedienten, ist neu.",
+      "answer": "Die Methode, derer wir uns bedienten",
       "explanation": "Sich einer Sache bedienen + Genitiv Plural: derer.",
       "lessonId": "C1_lesson_12",
       "options": [
@@ -15196,8 +15196,8 @@
       "options": [
         "zutrifft",
         "zutreffe",
-        "zutraefe",
-        "wuerde zutreffen"
+        "zuträfe",
+        "würde zutreffen"
       ]
     },
     {
@@ -15206,15 +15206,15 @@
       "topic": "Indirect Speech",
       "unit": "Indirect Speech",
       "type": "fill-blank",
-      "prompt": "Der Minister erklaerte, er ... zu dem Vorfall keine Stellung.",
+      "prompt": "Der Minister erklärte, er ... zu dem Vorfall keine Stellung.",
       "answer": "nehme",
       "explanation": "Konjunktiv I: nehme.",
       "lessonId": "C1_lesson_13",
       "options": [
         "nimmt",
         "nehme",
-        "naehme",
-        "wuerde nehmen"
+        "nähme",
+        "würde nehmen"
       ]
     },
     {
@@ -15230,8 +15230,8 @@
       "options": [
         "fliegt",
         "fliege",
-        "floege",
-        "wuerde fliegen"
+        "flöge",
+        "würde fliegen"
       ]
     },
     {
@@ -15247,7 +15247,7 @@
       "options": [
         "hat",
         "habe",
-        "haette",
+        "hätte",
         "wurde"
       ]
     },
@@ -15257,7 +15257,7 @@
       "topic": "Complex Connectors",
       "unit": "Complex Connectors",
       "type": "fill-blank",
-      "prompt": "Die Methode erwies sich als effektiv, ... sie aufwaendig war.",
+      "prompt": "Die Methode erwies sich als effektiv, ... sie aufwändig war.",
       "answer": "wenngleich",
       "explanation": "Wenngleich = obwohl. Konzessiver Konnektor.",
       "lessonId": "C1_lesson_14",
@@ -15274,9 +15274,9 @@
       "topic": "Complex Connectors",
       "unit": "Complex Connectors",
       "type": "mcq",
-      "prompt": "Welcher Konnektor drueckt eine Einschraenkung aus?",
-      "answer": "Die Ergebnisse sind vielversprechend, allerdings fehlen Langzeitdaten.",
-      "explanation": "Allerdings = einschraenkend.",
+      "prompt": "Welcher Konnektor drückt eine Einschränkung aus?",
+      "answer": "allerdings fehlen Langzeitdaten",
+      "explanation": "Allerdings = einschränkend.",
       "lessonId": "C1_lesson_14",
       "options": [
         "weil Daten fehlen",
@@ -15315,7 +15315,7 @@
       "options": [
         "Obgleich",
         "Weil",
-        "Waehrend",
+        "Während",
         "Trotz"
       ]
     },
@@ -15325,7 +15325,7 @@
       "topic": "Concessive Structures",
       "unit": "Concessive Structure",
       "type": "fill-blank",
-      "prompt": "Die Massnahme war richtig, ... sie unpopulaer war.",
+      "prompt": "Die Massnahme war richtig, ... sie unpopulär war.",
       "answer": "auch wenn",
       "explanation": "Auch wenn = konzessiv.",
       "lessonId": "C1_lesson_14",
@@ -15343,7 +15343,7 @@
       "unit": "Concessive Structure",
       "type": "mcq",
       "prompt": "Welcher Satz ist konzessiv?",
-      "answer": "Mag die Situation auch schwierig sein, wir geben nicht auf.",
+      "answer": "Mag die Situation auch schwierig sein",
       "explanation": "Mag ... auch = konzessiv.",
       "lessonId": "C1_lesson_14",
       "options": [
@@ -15360,13 +15360,13 @@
       "unit": "Concessive Structure",
       "type": "fill-blank",
       "prompt": "..., der Versuch wurde abgebrochen.",
-      "answer": "Allen Einwaenden zum Trotz",
-      "explanation": "Allen Einwaenden zum Trotz = konzessive PP.",
+      "answer": "Allen Einwänden zum Trotz",
+      "explanation": "Allen Einwänden zum Trotz = konzessive PP.",
       "lessonId": "C1_lesson_14",
       "options": [
-        "Allen Einwaenden zum Trotz",
-        "Obwohl Einwaende",
-        "Trotz Einwaende",
+        "Allen Einwänden zum Trotz",
+        "Obwohl Einwände",
+        "Trotz Einwände",
         "Zum Trotz"
       ]
     },
@@ -15393,7 +15393,7 @@
       "topic": "Consecutive/Final",
       "unit": "Consecutive/Final",
       "type": "fill-blank",
-      "prompt": "Der Patient fuehrte ein Tagebuch, ... die Symptome dokumentiert wurden.",
+      "prompt": "Der Patient führte ein Tagebuch, ... die Symptome dokumentiert wurden.",
       "answer": "damit",
       "explanation": "Damit = final. Subjektverschiedenheit.",
       "lessonId": "C1_lesson_15",
@@ -15411,7 +15411,7 @@
       "unit": "Consecutive/Final",
       "type": "mcq",
       "prompt": "Welcher Satz ist konsekutiv?",
-      "answer": "Das Fieber stieg so stark an, sodass der Patient eingeliefert wurde.",
+      "answer": "sodass der Patient eingeliefert wurde",
       "explanation": "Sodass = Folge.",
       "lessonId": "C1_lesson_15",
       "options": [
@@ -15452,7 +15452,7 @@
         "Angenommen die Prognose war pessimistisch",
         "Weil die Prognose pessimistisch war",
         "Obwohl die Prognose pessimistisch war",
-        "Waehrend die Prognose pessimistisch war"
+        "Während die Prognose pessimistisch war"
       ]
     },
     {
@@ -15461,7 +15461,7 @@
       "topic": "Causal/Conditional",
       "unit": "Causal/Conditional",
       "type": "fill-blank",
-      "prompt": "... die Mehrheit dafuer stimmt, wird der Antrag angenommen.",
+      "prompt": "... die Mehrheit dafür stimmt, wird der Antrag angenommen.",
       "answer": "Falls",
       "explanation": "Falls = konditional.",
       "lessonId": "C1_lesson_15",
@@ -15479,14 +15479,14 @@
       "unit": "Causal/Conditional",
       "type": "mcq",
       "prompt": "Welcher Satz ist kausal?",
-      "answer": "Da die Werte auffaellig waren, wurden weitere Tests durchgefuehrt.",
+      "answer": "Da die Werte auffällig waren",
       "explanation": "Da = kausal.",
       "lessonId": "C1_lesson_15",
       "options": [
-        "Da die Werte auffaellig waren",
-        "Falls die Werte auffaellig waren",
-        "Obwohl die Werte auffaellig waren",
-        "Waehrend die Werte auffaellig waren"
+        "Da die Werte auffällig waren",
+        "Falls die Werte auffällig waren",
+        "Obwohl die Werte auffällig waren",
+        "Während die Werte auffällig waren"
       ]
     },
     {
@@ -15512,7 +15512,7 @@
       "topic": "Causal/Conditional",
       "unit": "Causal/Conditional",
       "type": "fill-blank",
-      "prompt": "... du die Pruefung nicht bestehst, kannst du sie wiederholen.",
+      "prompt": "... du die Prüfung nicht bestehst, kannst du sie wiederholen.",
       "answer": "Gesetzt den Fall",
       "explanation": "Gesetzt den Fall = konditional.",
       "lessonId": "C1_lesson_15",
@@ -15562,8 +15562,8 @@
       "topic": "Sentence Transformation",
       "unit": "Sentence Transformat",
       "type": "sentence-correction",
-      "prompt": "Transformieren: 'Die Studien, die vor kurzem veroefentlicht wurden' -> Partizip",
-      "answer": "die vor kurzem veroefentlichten Studien",
+      "prompt": "Transformieren: 'Die Studien, die vor kurzem veröfentlicht wurden' -> Partizip",
+      "answer": "die vor kurzem veröfentlichten Studien",
       "explanation": "Relativsatz -> Partizipialattribut.",
       "lessonId": "C1_lesson_16"
     },
@@ -15573,8 +15573,8 @@
       "topic": "Sentence Transformation",
       "unit": "Sentence Transformat",
       "type": "sentence-correction",
-      "prompt": "Transformieren Sie ins Nominalstil: 'Weil er sich verspaetet hat' -> 'Aufgrund ...'",
-      "answer": "Aufgrund seiner Verspaetung",
+      "prompt": "Transformieren Sie ins Nominalstil: 'Weil er sich verspätet hat' -> 'Aufgrund ...'",
+      "answer": "Aufgrund seiner Verspätung",
       "explanation": "Weil + Satz -> Aufgrund + Genitiv.",
       "lessonId": "C1_lesson_16"
     },
@@ -15586,7 +15586,7 @@
       "type": "sentence-correction",
       "prompt": "Ersetzen Sie: 'Sie rief an, um zu fragen.' -> 'Sie rief an, ...'",
       "answer": "mit der Frage",
-      "explanation": "Um zu -> Praeposition + Nomen.",
+      "explanation": "Um zu -> Präposition + Nomen.",
       "lessonId": "C1_lesson_16"
     },
     {
@@ -15595,9 +15595,9 @@
       "topic": "Sentence Transformation",
       "unit": "Sentence Transformat",
       "type": "sentence-correction",
-      "prompt": "Transformieren: 'Er verlies die Sitzung, waehrend er schimpfte.' -> Partizip",
+      "prompt": "Transformieren: 'Er verlies die Sitzung, während er schimpfte.' -> Partizip",
       "answer": "schimpfend die Sitzung",
-      "explanation": "Waehrend + Satz -> Partizip Praesens.",
+      "explanation": "Während + Satz -> Partizip Präsens.",
       "lessonId": "C1_lesson_16"
     },
     {
@@ -15606,8 +15606,8 @@
       "topic": "Sentence Transformation",
       "unit": "Sentence Transformat",
       "type": "sentence-correction",
-      "prompt": "Bilden Sie einen Satz mit 'lassen': 'Man kann das Problem loesen.'",
-      "answer": "Das Problem laesst sich loesen.",
+      "prompt": "Bilden Sie einen Satz mit 'lassen': 'Man kann das Problem lösen.'",
+      "answer": "Das Problem lässt sich lösen.",
       "explanation": "Passiv mit sich lassen.",
       "lessonId": "C1_lesson_16"
     },
@@ -15718,14 +15718,14 @@
       "unit": "Register and Academi",
       "type": "mcq",
       "prompt": "Welche Formulierung ist akademisch angemessen?",
-      "answer": "Die vorliegende Studie untersucht den Zusammenhang.",
+      "answer": "Die vorliegende Studie untersucht",
       "explanation": "Akademischer Stil.",
       "lessonId": "C1_lesson_16",
       "options": [
         "Die vorliegende Studie untersucht",
         "Diese Arbeit guckt sich an",
         "In dieser Arbeit geht es um",
-        "Ich schreibe ueber"
+        "Ich schreibe über"
       ]
     },
     {
@@ -15753,7 +15753,7 @@
       "type": "fill-blank",
       "prompt": "Die Studie ergab positive Resultate. ... wurden nicht publiziert.",
       "answer": "Diese",
-      "explanation": "Diese = Rueckverweis.",
+      "explanation": "Diese = Rückverweis.",
       "lessonId": "C1_lesson_17",
       "options": [
         "Jene",
@@ -15785,7 +15785,7 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "mcq",
-      "prompt": "Welches Verweiswort passt: 'Die Methode ist teuer. ... wird sie eingesetzt.'",
+      "prompt": "Welches Verweiswort passt: 'Die Methode ist teür. ... wird sie eingesetzt.'",
       "answer": "Trotzdem",
       "explanation": "Adversativ.",
       "lessonId": "C1_lesson_17",
@@ -15810,7 +15810,7 @@
         "Folglich",
         "Trotzdem",
         "Allerdings",
-        "Zunaechst"
+        "Zunächst"
       ]
     },
     {
@@ -15819,7 +15819,7 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "fill-blank",
-      "prompt": "Es wurden drei Hypothesen aufgestellt. ... soll nun ueberprueft werden.",
+      "prompt": "Es wurden drei Hypothesen aufgestellt. ... soll nun überprüft werden.",
       "answer": "Diese",
       "explanation": "Ordinaler Verweis.",
       "lessonId": "C1_lesson_17",
@@ -15836,9 +15836,9 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "fill-blank",
-      "prompt": "... vorausgeschickt, dass die Daten nicht vollstaendig sind.",
+      "prompt": "... vorausgeschickt, dass die Daten nicht vollständig sind.",
       "answer": "Sei",
-      "explanation": "Sei vorausgeschickt = unpersoenlich.",
+      "explanation": "Sei vorausgeschickt = unpersönlich.",
       "lessonId": "C1_lesson_17",
       "options": [
         "Sei",
@@ -15853,9 +15853,9 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "mcq",
-      "prompt": "Welches Wort schafft Kohaesion? '..., wie bereits erwahnt wurde'",
+      "prompt": "Welches Wort schafft Kohäsion? '..., wie bereits erwahnt wurde'",
       "answer": "wie bereits erwahnt",
-      "explanation": "Rueckverweis.",
+      "explanation": "Rückverweis.",
       "lessonId": "C1_lesson_17",
       "options": [
         "wie bereits erwahnt",
@@ -15887,7 +15887,7 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "fill-blank",
-      "prompt": "Die Autoren fuehren Daten an. ... soll die These gestuetzt werden.",
+      "prompt": "Die Autoren führen Daten an. ... soll die These gestützt werden.",
       "answer": "Damit",
       "explanation": "Finaler Verweis.",
       "lessonId": "C1_lesson_17",
@@ -15906,7 +15906,7 @@
       "type": "fill-blank",
       "prompt": "Die Ergebnisse sind ... nachvollziehbar.",
       "answer": "durchaus",
-      "explanation": "Durchaus = subjektive Verstaerkung.",
+      "explanation": "Durchaus = subjektive Verstärkung.",
       "lessonId": "C1_lesson_17",
       "options": [
         "durchaus",
@@ -15921,7 +15921,7 @@
       "topic": "Modal Particles Formal",
       "unit": "Modal Particles Form",
       "type": "fill-blank",
-      "prompt": "Das ist ... nicht die optimale Loesung.",
+      "prompt": "Das ist ... nicht die optimale Lösung.",
       "answer": "eben",
       "explanation": "Eben = abtonend.",
       "lessonId": "C1_lesson_17",
@@ -15938,7 +15938,7 @@
       "topic": "Modal Particles Formal",
       "unit": "Modal Particles Form",
       "type": "fill-blank",
-      "prompt": "Die Studie ist ... nicht repraesentativ.",
+      "prompt": "Die Studie ist ... nicht repräsentativ.",
       "answer": "wohl",
       "explanation": "Wohl = Annahme.",
       "lessonId": "C1_lesson_17",
@@ -15972,14 +15972,14 @@
       "topic": "Modal Particles Formal",
       "unit": "Modal Particles Form",
       "type": "fill-blank",
-      "prompt": "... dies sei an dieser Stelle erlaeutert.",
+      "prompt": "... dies sei an dieser Stelle erläutert.",
       "answer": "Kurzum",
-      "explanation": "Kurzum = resuemierend.",
+      "explanation": "Kurzum = resümierend.",
       "lessonId": "C1_lesson_17",
       "options": [
         "Kurzum",
         "Also",
-        "Naemlich",
+        "Nämlich",
         "Denn"
       ]
     },
@@ -15989,12 +15989,12 @@
       "topic": "Modal Particles Formal",
       "unit": "Modal Particles Form",
       "type": "fill-blank",
-      "prompt": "Die Untersuchung ergab ... keine Auffaelligkeiten.",
-      "answer": "zunaechst",
-      "explanation": "Zunaechst = temporal.",
+      "prompt": "Die Untersuchung ergab ... keine Auffälligkeiten.",
+      "answer": "zunächst",
+      "explanation": "Zunächst = temporal.",
       "lessonId": "C1_lesson_17",
       "options": [
-        "zunaechst",
+        "zunächst",
         "schon",
         "eben",
         "auch"
@@ -16023,12 +16023,12 @@
       "topic": "Modal Particles Formal",
       "unit": "Modal Particles Form",
       "type": "mcq",
-      "prompt": "Welche Partikel drueckt eine Vermutung aus?",
-      "answer": "Die Theorie duerfte richtig sein.",
-      "explanation": "Duerfte = Vermutung.",
+      "prompt": "Welche Partikel drückt eine Vermutung aus?",
+      "answer": "Die Theorie dürfte richtig sein",
+      "explanation": "Dürfte = Vermutung.",
       "lessonId": "C1_lesson_17",
       "options": [
-        "Die Theorie duerfte richtig sein",
+        "Die Theorie dürfte richtig sein",
         "Die Theorie ist richtig",
         "Die Theorie war richtig",
         "Die Theorie wird richtig"
@@ -16074,7 +16074,7 @@
       "topic": "Adv Prepositional Phrases",
       "unit": "Adv Prepositional Ph",
       "type": "mcq",
-      "prompt": "Welche Praeposition passt: '... des Gesetzes ist die Handlung strafbar.'",
+      "prompt": "Welche Präposition passt: '... des Gesetzes ist die Handlung strafbar.'",
       "answer": "Zufolge",
       "explanation": "Zufolge + Genitiv.",
       "lessonId": "C1_lesson_18",
@@ -16115,7 +16115,7 @@
       "options": [
         "Infolge",
         "Laut",
-        "Gemaess",
+        "Gemäss",
         "Mangels"
       ]
     },
@@ -16125,8 +16125,8 @@
       "topic": "Adv Prepositional Phrases",
       "unit": "Adv Prepositional Ph",
       "type": "mcq",
-      "prompt": "Welche Praepositionalangabe ist korrekt?",
-      "answer": "Im Hinblick auf die Kosten wurde die Methode gewaehlt.",
+      "prompt": "Welche Präpositionalangabe ist korrekt?",
+      "answer": "Im Hinblick auf die Kosten",
       "explanation": "Im Hinblick auf + Akkusativ.",
       "lessonId": "C1_lesson_18",
       "options": [
@@ -16159,7 +16159,7 @@
       "topic": "Adv Prepositional Phrases",
       "unit": "Adv Prepositional Ph",
       "type": "fill-blank",
-      "prompt": "... des Urteils koennen die Beteiligten Berufung einlegen.",
+      "prompt": "... des Urteils können die Beteiligten Berufung einlegen.",
       "answer": "Unbeschadet",
       "explanation": "Unbeschadet + Genitiv.",
       "lessonId": "C1_lesson_18",
@@ -16176,7 +16176,7 @@
       "topic": "Med Documentation",
       "unit": "Med Documentation",
       "type": "fill-blank",
-      "prompt": "Der Patient klagte ueber ... im Bereich des Abdomens.",
+      "prompt": "Der Patient klagte über ... im Bereich des Abdomens.",
       "answer": "Schmerzen",
       "explanation": "Arztbrief Einstieg.",
       "lessonId": "C1_lesson_18",
@@ -16211,7 +16211,7 @@
       "options": [
         "berichtete",
         "sagte",
-        "erzaehlte",
+        "erzählte",
         "sprach"
       ]
     },
@@ -16238,7 +16238,7 @@
       "topic": "Med Documentation",
       "unit": "Med Documentation",
       "type": "fill-blank",
-      "prompt": "Der Patient war ... bezueglich Zeit, Ort und Person.",
+      "prompt": "Der Patient war ... bezüglich Zeit, Ort und Person.",
       "answer": "voll orientiert",
       "explanation": "Voll orientiert = Standard.",
       "lessonId": "C1_lesson_18",
@@ -16283,7 +16283,7 @@
       "topic": "Med Documentation",
       "unit": "Med Documentation",
       "type": "fill-blank",
-      "prompt": "... wurde der Patient in die hausaerztliche Weiterbetreuung entlassen.",
+      "prompt": "... wurde der Patient in die hausärztliche Weiterbetreuung entlassen.",
       "answer": "Abschliessend",
       "explanation": "Abschliessend = Schlusssatz.",
       "lessonId": "C1_lesson_18",
@@ -16300,14 +16300,14 @@
       "topic": "Arztbrief Phrasing",
       "unit": "Arztbrief Phrasing",
       "type": "fill-blank",
-      "prompt": "Hiermit ueberweisen wir den Patienten ... fachorthopaedische Mitbeurteilung.",
+      "prompt": "Hiermit überweisen wir den Patienten ... fachorthopädische Mitbeurteilung.",
       "answer": "zur",
       "explanation": "Zur Mitbeurteilung.",
       "lessonId": "C1_lesson_19",
       "options": [
         "zur",
-        "fuer",
-        "zurueck",
+        "für",
+        "zurück",
         "nach"
       ]
     },
@@ -16323,7 +16323,7 @@
       "lessonId": "C1_lesson_19",
       "options": [
         "Pneumonie",
-        "Lungenentzuendung",
+        "Lungenentzündung",
         "Pneumonitis",
         "Bronchitis"
       ]
@@ -16358,7 +16358,7 @@
       "options": [
         "Medikation",
         "Mittel",
-        "Praeparat",
+        "Präparat",
         "Dosis"
       ]
     },
@@ -16368,7 +16368,7 @@
       "topic": "Arztbrief Phrasing",
       "unit": "Arztbrief Phrasing",
       "type": "fill-blank",
-      "prompt": "Empfehlung: ... Bildgebung zur weiteren Abklaerung.",
+      "prompt": "Empfehlung: ... Bildgebung zur weiteren Abklärung.",
       "answer": "Erneute",
       "explanation": "Erneute Bildgebung.",
       "lessonId": "C1_lesson_19",
@@ -16376,7 +16376,7 @@
         "Erneute",
         "Neue",
         "Weitere",
-        "Zusaetzliche"
+        "Zusätzliche"
       ]
     },
     {
@@ -16385,12 +16385,12 @@
       "topic": "Case Presentation",
       "unit": "Case Presentation",
       "type": "fill-blank",
-      "prompt": "Wir berichten ueber den Fall einer ... Patientin.",
-      "answer": "43-jaehrigen",
+      "prompt": "Wir berichten über den Fall einer ... Patientin.",
+      "answer": "43-jährigen",
       "explanation": "Standard.",
       "lessonId": "C1_lesson_19",
       "options": [
-        "43-jaehrigen",
+        "43-jährigen",
         "43 alte",
         "jungen",
         "erwachsenen"
@@ -16436,7 +16436,7 @@
       "topic": "Case Presentation",
       "unit": "Case Presentation",
       "type": "fill-blank",
-      "prompt": "Im ... wurde eine Echokardiographie durchgefuehrt.",
+      "prompt": "Im ... wurde eine Echokardiographie durchgeführt.",
       "answer": "Verlauf",
       "explanation": "Im Verlauf.",
       "lessonId": "C1_lesson_19",
@@ -16453,7 +16453,7 @@
       "topic": "Case Presentation",
       "unit": "Case Presentation",
       "type": "fill-blank",
-      "prompt": "Die ... ergab eine linksventrikulaere Ejektionsfraktion von 45%.",
+      "prompt": "Die ... ergab eine linksventrikuläre Ejektionsfraktion von 45%.",
       "answer": "Untersuchung",
       "explanation": "Standard.",
       "lessonId": "C1_lesson_19",
@@ -16470,14 +16470,14 @@
       "topic": "Case Presentation",
       "unit": "Case Presentation",
       "type": "mcq",
-      "prompt": "Welche Formulierung ist typisch fuer eine Fallpraesentation?",
-      "answer": "Wir berichten ueber eine 55-jaehrige Patientin mit Z. n. Myokardinfarkt.",
+      "prompt": "Welche Formulierung ist typisch für eine Fallpräsentation?",
+      "answer": "Wir berichten über eine 55-jährige Patientin mit Z. n. Myokardinfarkt",
       "explanation": "Z. n. = Zustand nach.",
       "lessonId": "C1_lesson_19",
       "options": [
-        "Wir berichten ueber eine 55-jaehrige Patientin mit Z. n. Myokardinfarkt",
+        "Wir berichten über eine 55-jährige Patientin mit Z. n. Myokardinfarkt",
         "Der Patient war 55",
-        "Eine 55-jaehrige Patientin kam",
+        "Eine 55-jährige Patientin kam",
         "Die Patientin hatte einen Herzinfarkt"
       ]
     },
@@ -16493,7 +16493,7 @@
       "lessonId": "C1_lesson_20",
       "options": [
         "vorliegenden",
-        "aktuellen",
+        "aktüllen",
         "neuen",
         "wichtigen"
       ]
@@ -16504,7 +16504,7 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "Die ... der Arbeit war es, die Hypothese zu ueberpruefen.",
+      "prompt": "Die ... der Arbeit war es, die Hypothese zu überprüfen.",
       "answer": "Zielsetzung",
       "explanation": "Wissenschaftlich.",
       "lessonId": "C1_lesson_20",
@@ -16521,7 +16521,7 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "Im ... wird zunaechst der Forschungsstand dargelegt.",
+      "prompt": "Im ... wird zunächst der Forschungsstand dargelegt.",
       "answer": "theoretischen Teil",
       "explanation": "Standardstruktur.",
       "lessonId": "C1_lesson_20",
@@ -16572,12 +16572,12 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "... muss die Fragestellung praezisiert werden.",
-      "answer": "Zunaechst",
+      "prompt": "... muss die Fragestellung präzisiert werden.",
+      "answer": "Zunächst",
       "explanation": "Gliederung.",
       "lessonId": "C1_lesson_20",
       "options": [
-        "Zunaechst",
+        "Zunächst",
         "Dann",
         "Nachher",
         "Sofort"
@@ -16590,12 +16590,12 @@
       "unit": "Scientific Writing",
       "type": "mcq",
       "prompt": "Welche Formulierung ist im Methodenteil korrekt?",
-      "answer": "Die Probanden wurden mittels Randomisierung zwei Gruppen zugeteilt.",
+      "answer": "Die Probanden wurden mittels Randomisierung zwei Gruppen zugeteilt",
       "explanation": "Methodenteil Standard.",
       "lessonId": "C1_lesson_20",
       "options": [
         "Die Probanden wurden mittels Randomisierung zwei Gruppen zugeteilt",
-        "Die Leute wurden zufaellig in zwei Gruppen eingeteilt",
+        "Die Leute wurden zufällig in zwei Gruppen eingeteilt",
         "Man hat die Leute in Gruppen getan",
         "Die Gruppe wurde randomisiert"
       ]
@@ -16623,7 +16623,7 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "Zusammenfassend ... die vorliegende Studie, dass die Hypothese bestaetigt werden konnte.",
+      "prompt": "Zusammenfassend ... die vorliegende Studie, dass die Hypothese bestätigt werden konnte.",
       "answer": "zeigt",
       "explanation": "Zusammenfassend = Abschluss.",
       "lessonId": "C1_lesson_20",
@@ -16657,12 +16657,12 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "Fuer die These spricht ..., dass sie empirisch belegt ist.",
-      "answer": "zunaechst",
-      "explanation": "Zunaechst = erstens.",
+      "prompt": "Für die These spricht ..., dass sie empirisch belegt ist.",
+      "answer": "zunächst",
+      "explanation": "Zunächst = erstens.",
       "lessonId": "C1_lesson_21",
       "options": [
-        "zunaechst",
+        "zunächst",
         "dagegen",
         "aber",
         "jedoch"
@@ -16680,7 +16680,7 @@
       "lessonId": "C1_lesson_21",
       "options": [
         "Gegen die These",
-        "Fuer die These",
+        "Für die These",
         "Zudem",
         "Weiterhin"
       ]
@@ -16697,7 +16697,7 @@
       "lessonId": "C1_lesson_21",
       "options": [
         "Dem ist entgegenzuhalten, dass...",
-        "Erstens moechte ich sagen",
+        "Erstens möchte ich sagen",
         "Ich finde auch",
         "Die Theorie sagt"
       ]
@@ -16708,7 +16708,7 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "Ein weiteres ... fuer die Hypothese ist die Reproduzierbarkeit.",
+      "prompt": "Ein weiteres ... für die Hypothese ist die Reproduzierbarkeit.",
       "answer": "Argument",
       "explanation": "Standard.",
       "lessonId": "C1_lesson_21",
@@ -16725,7 +16725,7 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "... muss jedoch beruecksichtigt werden, dass die Kosten steigen.",
+      "prompt": "... muss jedoch berücksichtigt werden, dass die Kosten steigen.",
       "answer": "Gleichzeitig",
       "explanation": "Gleichzeitig = adversativ.",
       "lessonId": "C1_lesson_21",
@@ -16733,7 +16733,7 @@
         "Gleichzeitig",
         "Danach",
         "Vorher",
-        "Spaeter"
+        "Später"
       ]
     },
     {
@@ -16761,7 +16761,7 @@
       "type": "fill-blank",
       "prompt": "Die Argumentation ... darin, dass die Methodik mangelhaft war.",
       "answer": "greift zu kurz",
-      "explanation": "Gelaeufige Wendung.",
+      "explanation": "Geläufige Wendung.",
       "lessonId": "C1_lesson_21",
       "options": [
         "greift zu kurz",
@@ -16777,12 +16777,12 @@
       "unit": "Argumentation and Co",
       "type": "mcq",
       "prompt": "Welches Wort markiert eine Gegenposition?",
-      "answer": "Demgegenueber ist festzustellen...",
-      "explanation": "Demgegenueber = kontrastiv.",
+      "answer": "Demgegenüber ist festzustellen",
+      "explanation": "Demgegenüber = kontrastiv.",
       "lessonId": "C1_lesson_21",
       "options": [
-        "Demgegenueber ist festzustellen",
-        "Zunaechst ist festzustellen",
+        "Demgegenüber ist festzustellen",
+        "Zunächst ist festzustellen",
         "Ferner ist festzustellen",
         "Auch ist festzustellen"
       ]
@@ -16817,7 +16817,7 @@
       "type": "sentence-correction",
       "prompt": "Korrigieren Sie: 'Das ist das Haus wo er wohnt.'",
       "answer": "Das ist das Haus, in dem er wohnt.",
-      "explanation": "Wo = Fragewort, nicht Relativpronomen fuer Sachen.",
+      "explanation": "Wo = Fragewort, nicht Relativpronomen für Sachen.",
       "lessonId": "C1_lesson_25"
     },
     {
@@ -16839,7 +16839,7 @@
       "type": "sentence-correction",
       "prompt": "Korrigieren Sie: 'Er hat den Brief geschrieben von seinem Vater.'",
       "answer": "Er hat den Brief von seinem Vater geschrieben.",
-      "explanation": "Praepositionalphrase vor Partizip.",
+      "explanation": "Präpositionalphrase vor Partizip.",
       "lessonId": "C1_lesson_25"
     },
     {
@@ -16848,8 +16848,8 @@
       "topic": "Error Correction",
       "unit": "Error Correction",
       "type": "sentence-correction",
-      "prompt": "Korrigieren Sie: 'Ich moechte, dass du kommst und bringst das Buch mit.'",
-      "answer": "Ich moechte, dass du kommst und das Buch mitbringst.",
+      "prompt": "Korrigieren Sie: 'Ich möchte, dass du kommst und bringst das Buch mit.'",
+      "answer": "Ich möchte, dass du kommst und das Buch mitbringst.",
       "explanation": "Verbklammer im Nebensatz.",
       "lessonId": "C1_lesson_25"
     },
@@ -16892,7 +16892,7 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "Dafuer spricht ..., dass die Kosten niedrig sind.",
+      "prompt": "Dafür spricht ..., dass die Kosten niedrig sind.",
       "answer": "zudem",
       "explanation": "Zudem = ausserdem.",
       "lessonId": "C1_lesson_21",
@@ -16909,7 +16909,7 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "... muss die rechtliche Lage geprueft werden.",
+      "prompt": "... muss die rechtliche Lage geprüft werden.",
       "answer": "Abschliessend",
       "explanation": "Abschliessend = Zusammenfassung.",
       "lessonId": "C1_lesson_21",
@@ -16995,14 +16995,14 @@
       "unit": "Scientific Writing",
       "type": "fill-blank",
       "prompt": "Die ... der Studie limitiert die Aussagekraft der Ergebnisse.",
-      "answer": "geringe Stichprobengroesse",
+      "answer": "geringe Stichprobengrösse",
       "explanation": "Typische Limitation.",
       "lessonId": "C1_lesson_24",
       "options": [
-        "geringe Stichprobengroesse",
-        "schlechte Qualitaet",
+        "geringe Stichprobengrösse",
+        "schlechte Qualität",
         "wenige",
-        "limitierte Groesse"
+        "limitierte Grösse"
       ]
     },
     {
@@ -17011,13 +17011,13 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "Weitere Forschung ist ... um die Ergebnisse zu untermauern.",
-      "answer": "noetig",
-      "explanation": "Noetig = notwendig.",
+      "prompt": "Weitere Forschung ist ... um die Ergebnisse zu untermaürn.",
+      "answer": "nötig",
+      "explanation": "Nötig = notwendig.",
       "lessonId": "C1_lesson_24",
       "options": [
-        "noetig",
-        "schoen",
+        "nötig",
+        "schön",
         "gut",
         "schnell"
       ]
@@ -17028,9 +17028,9 @@
       "topic": "Argumentation and Counter",
       "unit": "Argumentation and Co",
       "type": "fill-blank",
-      "prompt": "... duerfen wir die ethischen Aspekte nicht vernachlaessigen.",
+      "prompt": "... dürfen wir die ethischen Aspekte nicht vernachlässigen.",
       "answer": "Jedoch",
-      "explanation": "Jedoch = einschraenkend.",
+      "explanation": "Jedoch = einschränkend.",
       "lessonId": "C1_lesson_22",
       "options": [
         "Jedoch",
@@ -17056,8 +17056,8 @@
       "topic": "Error Correction",
       "unit": "Error Correction",
       "type": "sentence-correction",
-      "prompt": "Korrigieren Sie: 'Ich interessiere mich dafuer.' -> richtige Wortstellung",
-      "answer": "Dafuer interessiere ich mich.",
+      "prompt": "Korrigieren Sie: 'Ich interessiere mich dafür.' -> richtige Wortstellung",
+      "answer": "Dafür interessiere ich mich.",
       "explanation": "Verb an Position 2.",
       "lessonId": "C1_lesson_25"
     },
@@ -17078,8 +17078,8 @@
       "topic": "Error Correction",
       "unit": "Error Correction",
       "type": "sentence-correction",
-      "prompt": "Korrigieren Sie: 'Das ist die Idee von was ich dir erzaehlt habe.'",
-      "answer": "Das ist die Idee, von der ich dir erzaehlt habe.",
+      "prompt": "Korrigieren Sie: 'Das ist die Idee von was ich dir erzählt habe.'",
+      "answer": "Das ist die Idee, von der ich dir erzählt habe.",
       "explanation": "Von der nicht von was.",
       "lessonId": "C1_lesson_25"
     },
@@ -17128,15 +17128,15 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "Die ... (erklaeren) des Phaenomens gelang erst spaet.",
-      "answer": "erklaeren",
-      "explanation": "Das Erklaeren = nominalisierter Infinitiv.",
+      "prompt": "Die ... (erklären) des Phänomens gelang erst spät.",
+      "answer": "erklären",
+      "explanation": "Das Erklären = nominalisierter Infinitiv.",
       "lessonId": "C1_lesson_12",
       "options": [
-        "Erklaerung",
-        "erklaeren",
-        "Erklaerens",
-        "Erklaert"
+        "Erklärung",
+        "erklären",
+        "Erklärens",
+        "Erklärt"
       ]
     },
     {
@@ -17145,15 +17145,15 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "Die ... (ueberweisen) des Patienten erfolgte umgehend.",
-      "answer": "Ueberweisung",
-      "explanation": "Ueberweisen -> Ueberweisung.",
+      "prompt": "Die ... (überweisen) des Patienten erfolgte umgehend.",
+      "answer": "Überweisung",
+      "explanation": "Überweisen -> Überweisung.",
       "lessonId": "C1_lesson_13",
       "options": [
-        "Ueberweisung",
-        "Ueberweisen",
+        "Überweisung",
+        "Überweisen",
         "Weisung",
-        "Ueberweis"
+        "Überweis"
       ]
     },
     {
@@ -17162,14 +17162,14 @@
       "topic": "Nominal Style",
       "unit": "Nominal Style",
       "type": "fill-blank",
-      "prompt": "Eine ... (einschaetzen) des Risikos ist unerlaesslich.",
-      "answer": "Einschaetzung",
-      "explanation": "Einschaetzen -> Einschaetzung.",
+      "prompt": "Eine ... (einschätzen) des Risikos ist unerlässlich.",
+      "answer": "Einschätzung",
+      "explanation": "Einschätzen -> Einschätzung.",
       "lessonId": "C1_lesson_14",
       "options": [
-        "Einschaetzung",
+        "Einschätzung",
         "Schatzung",
-        "Einschaetzen",
+        "Einschätzen",
         "Schatz"
       ]
     },
@@ -17281,13 +17281,13 @@
       "topic": "Adv Passive Alternatives",
       "unit": "Adv Passive Alternat",
       "type": "fill-blank",
-      "prompt": "Der Text ... sich leicht uebersetzen.",
-      "answer": "laesst",
+      "prompt": "Der Text ... sich leicht übersetzen.",
+      "answer": "lässt",
       "explanation": "Sich lassen + Infinitiv.",
       "lessonId": "C1_lesson_11",
       "options": [
         "kann",
-        "laesst",
+        "lässt",
         "hat",
         "wird"
       ]
@@ -17299,14 +17299,14 @@
       "unit": "Adv Passive Alternat",
       "type": "mcq",
       "prompt": "Welches ist ein Passiversatz?",
-      "answer": "Das Problem ist nicht zu unterschaetzen.",
+      "answer": "Das Problem ist nicht zu unterschätzen",
       "explanation": "Sein + zu + Inf = Passiversatz.",
       "lessonId": "C1_lesson_12",
       "options": [
-        "Das Problem wird unterschaetzt",
-        "Das Problem ist nicht zu unterschaetzen",
-        "Das Problem unterschaetzt",
-        "Das Problem hat unterschaetzt"
+        "Das Problem wird unterschätzt",
+        "Das Problem ist nicht zu unterschätzen",
+        "Das Problem unterschätzt",
+        "Das Problem hat unterschätzt"
       ]
     },
     {
@@ -17315,13 +17315,13 @@
       "topic": "Adv Passive Alternatives",
       "unit": "Adv Passive Alternat",
       "type": "fill-blank",
-      "prompt": "Diese Loesung ... sich sehen.",
+      "prompt": "Diese Lösung ... sich sehen.",
       "answer": "kann",
       "explanation": "Kann sich sehen lassen = feste Wendung.",
       "lessonId": "C1_lesson_13",
       "options": [
         "kann",
-        "laesst",
+        "lässt",
         "hat",
         "wird"
       ]
@@ -17333,12 +17333,12 @@
       "unit": "Adv Passive Alternat",
       "type": "fill-blank",
       "prompt": "Die Maschine ... sich reparieren.",
-      "answer": "laesst",
+      "answer": "lässt",
       "explanation": "Sich lassen = Passiversatz.",
       "lessonId": "C1_lesson_14",
       "options": [
         "wird",
-        "laesst",
+        "lässt",
         "kann",
         "hat"
       ]
@@ -17366,7 +17366,7 @@
       "topic": "Zustands-/Vorgangspassiv",
       "unit": "Zustands-/Vorgangspa",
       "type": "fill-blank",
-      "prompt": "Die Tuer war ... .",
+      "prompt": "Die Tür war ... .",
       "answer": "verschlossen",
       "explanation": "Zustandspassiv Vergangenheit: war verschlossen.",
       "lessonId": "C1_lesson_12",
@@ -17436,7 +17436,7 @@
       "type": "fill-blank",
       "prompt": "Die ... (sitzen) Patientin wartete auf den Arzt.",
       "answer": "sitzende",
-      "explanation": "Partizip Praesens: die sitzende Patientin.",
+      "explanation": "Partizip Präsens: die sitzende Patientin.",
       "lessonId": "C1_lesson_11",
       "options": [
         "sitzende",
@@ -17451,9 +17451,9 @@
       "topic": "Participle Constructions",
       "unit": "Participle Construct",
       "type": "fill-blank",
-      "prompt": "Ein ... (wachen) Blick genuegte.",
+      "prompt": "Ein ... (wachen) Blick genügte.",
       "answer": "wachsender",
-      "explanation": "Wachsender Blick = Partizip Praesens.",
+      "explanation": "Wachsender Blick = Partizip Präsens.",
       "lessonId": "C1_lesson_12",
       "options": [
         "wachsender",
@@ -17470,7 +17470,7 @@
       "type": "fill-blank",
       "prompt": "Die ... (heilen) Wunde schmerzte noch.",
       "answer": "heilende",
-      "explanation": "Partizip Praesens: die heilende Wunde.",
+      "explanation": "Partizip Präsens: die heilende Wunde.",
       "lessonId": "C1_lesson_13",
       "options": [
         "heilende",
@@ -17487,7 +17487,7 @@
       "type": "fill-blank",
       "prompt": "Der ... (behandeln) Arzt war erfahren.",
       "answer": "behandelnde",
-      "explanation": "Partizip Praesens: der behandelnde Arzt.",
+      "explanation": "Partizip Präsens: der behandelnde Arzt.",
       "lessonId": "C1_lesson_14",
       "options": [
         "behandelnde",
@@ -17504,7 +17504,7 @@
       "type": "fill-blank",
       "prompt": "Ein ... (lesen) Mensch ist ein reicher Mensch.",
       "answer": "lesender",
-      "explanation": "Partizip Praesens: ein lesender Mensch.",
+      "explanation": "Partizip Präsens: ein lesender Mensch.",
       "lessonId": "C1_lesson_15",
       "options": [
         "lesender",
@@ -17519,9 +17519,9 @@
       "topic": "Concessive Structures",
       "unit": "Concessive Structure",
       "type": "fill-blank",
-      "prompt": "... widriger Umstaende wurde das Projekt abgeschlossen.",
+      "prompt": "... widriger Umstände wurde das Projekt abgeschlossen.",
       "answer": "Allen",
-      "explanation": "Allen widrigen Umstaenden zum Trotz = konzessiv.",
+      "explanation": "Allen widrigen Umständen zum Trotz = konzessiv.",
       "lessonId": "C1_lesson_16",
       "options": [
         "Allen",
@@ -17537,13 +17537,13 @@
       "unit": "Scientific Writing",
       "type": "fill-blank",
       "prompt": "Im ... Kapitel werden die Ergebnisse diskutiert.",
-      "answer": "fuenften",
+      "answer": "fünften",
       "explanation": "Gliederungsangabe.",
       "lessonId": "C1_lesson_22",
       "options": [
-        "fuenften",
-        "fuenfte",
-        "fuenft",
+        "fünften",
+        "fünfte",
+        "fünft",
         "5"
       ]
     },
@@ -17553,7 +17553,7 @@
       "topic": "Scientific Writing",
       "unit": "Scientific Writing",
       "type": "fill-blank",
-      "prompt": "Die vorliegende Arbeit ... sich in fuenf Kapitel.",
+      "prompt": "Die vorliegende Arbeit ... sich in fünf Kapitel.",
       "answer": "gliedert",
       "explanation": "Sich gliedern in = Standard.",
       "lessonId": "C1_lesson_22",
@@ -17576,9 +17576,9 @@
       "lessonId": "C1_lesson_23",
       "options": [
         "Der vorliegende Beitrag beschaftigt sich mit der Frage, ob...",
-        "Ich schreibe ueber...",
+        "Ich schreibe über...",
         "In diesem Text geht es um...",
-        "Hier steht etwas ueber..."
+        "Hier steht etwas über..."
       ]
     },
     {
@@ -17594,7 +17594,7 @@
       "options": [
         "Korrelation",
         "Beziehung",
-        "Verhaeltnis",
+        "Verhältnis",
         "Zusammenhang"
       ]
     },
@@ -17606,7 +17606,7 @@
       "type": "sentence-correction",
       "prompt": "Korrigieren: 'Mein Freund hat ein Auto, was sehr schnell ist.'",
       "answer": "Mein Freund hat ein Auto, das sehr schnell ist.",
-      "explanation": "Das, nicht was fuer Sachen.",
+      "explanation": "Das, nicht was für Sachen.",
       "lessonId": "C1_lesson_21"
     },
     {
@@ -17626,8 +17626,8 @@
       "topic": "Error Correction",
       "unit": "Error Correction",
       "type": "sentence-correction",
-      "prompt": "Korrigieren: 'Er ist groesser wie ich.'",
-      "answer": "Er ist groesser als ich.",
+      "prompt": "Korrigieren: 'Er ist grösser wie ich.'",
+      "answer": "Er ist grösser als ich.",
       "explanation": "Komparativ mit als, nicht wie.",
       "lessonId": "C1_lesson_23"
     },
@@ -17650,7 +17650,7 @@
       "type": "sentence-correction",
       "prompt": "Korrigieren: 'Wenn ich Zeit hatte, werde ich kommen.'",
       "answer": "Wenn ich Zeit habe, werde ich kommen.",
-      "explanation": "Tempuskongruenz.",
+      "explanation": "Tempuskongrünz.",
       "lessonId": "C1_lesson_21"
     },
     {
@@ -17754,9 +17754,9 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "fill-blank",
-      "prompt": "... bedeutet, dass die urspruengliche Annahme falsch war.",
+      "prompt": "... bedeutet, dass die ursprüngliche Annahme falsch war.",
       "answer": "Dies",
-      "explanation": "Dies = Rueckverweis.",
+      "explanation": "Dies = Rückverweis.",
       "lessonId": "C1_lesson_22",
       "options": [
         "Dies",
@@ -17790,7 +17790,7 @@
       "type": "fill-blank",
       "prompt": "Die Ergebnisse sind ... bemerkenswert.",
       "answer": "immerhin",
-      "explanation": "Immerhin = einschraenkend.",
+      "explanation": "Immerhin = einschränkend.",
       "lessonId": "C1_lesson_24",
       "options": [
         "immerhin",
@@ -17807,7 +17807,7 @@
       "type": "mcq",
       "prompt": "Welche Form ist korrekt im Passiv? 'Das Haus ... (bauen) 1990.'",
       "answer": "wurde gebaut",
-      "explanation": "Vorgangspassiv Praeteritum.",
+      "explanation": "Vorgangspassiv Präteritum.",
       "lessonId": "C1_lesson_16",
       "options": [
         "wurde gebaut",

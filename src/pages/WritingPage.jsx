@@ -1,8 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getState, updateState } from '../utils/store';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
+import GermanCharHelper from '../components/GermanCharHelper';
 import { Copy, ClipboardCheck, Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle, ShieldCheck } from 'lucide-react';
 import { correctWriting, isCorrectionEnabled } from '../utils/aiCorrection';
 
@@ -10,6 +11,7 @@ export default function WritingPage() {
   const { levelId } = useParams();
   const prompts = writingData[levelId] || [];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const writingRef = useRef(null);
   const [text, setText] = useState('');
   const [timer, setTimer] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
@@ -316,12 +318,14 @@ export default function WritingPage() {
       </div>
 
       <textarea
+        ref={writingRef}
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Write your response here..."
         className="w-full h-64 p-4 rounded-xl text-sm outline-none resize-none"
         style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
       />
+      <GermanCharHelper targetRef={writingRef} compact style={{ marginTop: '0.25rem' }} />
 
       {/* Pre-submission Copy AI Correction Prompt */}
       {text.trim().length >= 10 && (

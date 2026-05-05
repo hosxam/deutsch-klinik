@@ -3946,40 +3946,40 @@
           "en": "He should have examined the pat. better."
         },
         {
-          "de": "Das wäre nicht noetig gewesen.",
+          "de": "Das wäre nicht nötig gewesen.",
           "en": "That would not have been necessary."
         }
       ],
       "mistakes": [
         {
-          "wrong": "ginge (old) vs wuerde gehen (modern)",
-          "correct": "Ich wuerde gehen is more common than ich ginge",
-          "explanation": "ginge = literary, wuerde gehen = modern standard"
+          "wrong": "ginge (old) vs würde gehen (modern)",
+          "correct": "Ich würde gehen is more common than ich ginge",
+          "explanation": "ginge = literary, würde gehen = modern standard"
         },
         {
-          "wrong": "Past subjunctive = haette + PP, not wuerde + haben + PP (prefer haette)",
-          "correct": "Ich haette gemacht, not ich wuerde gemacht haben",
-          "explanation": "haette + PP is simpler and preferred"
+          "wrong": "Past subjunctive = hätte + PP, not würde + haben + PP (prefer hätte)",
+          "correct": "Ich hätte gemacht, not ich würde gemacht haben",
+          "explanation": "hätte + PP is simpler and preferred"
         }
       ],
       "practice": [
         {
           "type": "fill-blank",
-          "prompt": "Wenn ich Zeit gehabt ___, waere ich gekommen.",
-          "answer": "haette",
-          "explanation": "haette + PP = past subj"
+          "prompt": "Wenn ich Zeit gehabt ___, wäre ich gekommen.",
+          "answer": "hätte",
+          "explanation": "hätte + PP = past subj"
         },
         {
           "type": "fill-blank",
           "prompt": "Er ___ den Pat. besser untersuchen sollen.",
-          "answer": "haette",
-          "explanation": "haette + sollen = should have"
+          "answer": "hätte",
+          "explanation": "hätte + sollen = should have"
         }
       ],
       "linkedGrammarTopics": [
         "Konjunktiv II",
-        "Konjunktiv II haette waere",
-        "Konjunktiv II koennte muesste sollte"
+        "Konjunktiv II hätte wäre",
+        "Konjunktiv II könnte müsste sollte"
       ]
     },
     {
@@ -3988,11 +3988,11 @@
       "unit": 2,
       "title": "Konjunktiv I: reported speech",
       "topic": "Indirect speech with Konjunktiv I",
-      "explanation": "Konjunktiv I for indirect speech shows distance from the claim. Key: sei (sein), habe (haben), werde (werden), koenne (koennen).",
+      "explanation": "Konjunktiv I for indirect speech shows distance from the claim. Key: sei (sein), habe (haben), werde (werden), könne (können).",
       "rules": [
         "Present stem + -e/-est/-e/-en/-et/-en",
-        "Often replaced by Konj II or wuerde when form matches indicative",
-        "Key: sei, habe, werde, koenne",
+        "Often replaced by Konj II or würde when form matches indicative",
+        "Key: sei, habe, werde, könne",
         "Medical documentation: Der Arzt sagt, der Pat. sei stabil."
       ],
       "examples": [
@@ -4050,9 +4050,9 @@
       "explanation": "sein + zu = can/must be done. sich lassen = can be done. More elegant than werden-passive in formal writing.",
       "rules": [
         "sein + zu + Inf = Der Pat. ist zu untersuchen (= muss untersucht werden)",
-        "sich lassen + Inf = Das laesst sich machen (= kann gemacht werden)",
+        "sich lassen + Inf = Das lässt sich machen (= kann gemacht werden)",
         "Formal/technical register",
-        "Medical: Die Wunde laesst sich leicht behandeln."
+        "Medical: Die Wunde lässt sich leicht behandeln."
       ],
       "examples": [
         {
@@ -4060,7 +4060,7 @@
           "en": "The pat. is to be operated tomorrow."
         },
         {
-          "de": "Die Wunde laesst sich leicht behandeln.",
+          "de": "Die Wunde lässt sich leicht behandeln.",
           "en": "The wound can be treated easily."
         },
         {
@@ -4070,13 +4070,13 @@
       ],
       "mistakes": [
         {
-          "wrong": "sein+zu vs muessen Passiv",
+          "wrong": "sein+zu vs müssen Passiv",
           "correct": "Der Pat. ist zu operieren = Der Pat. muss operiert werden",
           "explanation": "Both express necessity; sein+zu more formal"
         },
         {
-          "wrong": "sich lassen vs koennen",
-          "correct": "Das laesst sich machen = Das kann gemacht werden",
+          "wrong": "sich lassen vs können",
+          "correct": "Das lässt sich machen = Das kann gemacht werden",
           "explanation": "sich lassen more elegant"
         }
       ],
@@ -4089,9 +4089,9 @@
         },
         {
           "type": "fill-blank",
-          "prompt": "Die Wunde laesst ___ leicht behandeln. (sich)",
+          "prompt": "Die Wunde lässt ___ leicht behandeln. (sich)",
           "answer": "sich",
-          "explanation": "sich lassen = koennen werden"
+          "explanation": "sich lassen = können werden"
         }
       ],
       "linkedGrammarTopics": [
@@ -4108,8 +4108,8 @@
       "topic": "State vs action passive",
       "explanation": "Zustandspassiv = sein + PP (describes result state). Vorgangspassiv = werden + PP (action/process).",
       "rules": [
-        "Vorgangspassiv: werden + PP -> Die Tuer wird geoeffnet.",
-        "Zustandspassiv: sein + PP -> Die Tuer ist geoeffnet.",
+        "Vorgangspassiv: werden + PP -> Die Tür wird geöffnet.",
+        "Zustandspassiv: sein + PP -> Die Tür ist geöffnet.",
         "Medical: Der Pat. wird untersucht. vs Der Pat. ist untersucht."
       ],
       "examples": [
@@ -4168,7 +4168,7 @@
       "rules": [
         "Verb -> -ung: untersuchen -> die Untersuchung",
         "Verb -> infinitive noun: das Lesen",
-        "Adj -> -heit/-keit: moeglich -> die Moeglichkeit",
+        "Adj -> -heit/-keit: möglich -> die Möglichkeit",
         "Die Untersuchung des Pat. erfolgte am Montag."
       ],
       "examples": [
@@ -4239,7 +4239,7 @@
           "en": "The examined pat. waits."
         },
         {
-          "de": "Die geoeffnete Praxis hat viele Pat.",
+          "de": "Die geöffnete Praxis hat viele Pat.",
           "en": "The opened practice has many pats."
         }
       ],

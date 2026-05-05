@@ -1,9 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getState, updateState, isExamUnlocked } from '../utils/store';
 import levelsData from '../data/levels.json';
 import examsData from '../data/exams.json';
 import LevelLock from '../components/LevelLock';
+import GermanCharHelper from '../components/GermanCharHelper';
 import { Volume2, Pause, Eye, EyeOff } from 'lucide-react';
 
 export default function ExamPage() {
@@ -22,6 +23,7 @@ export default function ExamPage() {
   const [overallScore, setOverallScore] = useState(0);
   const [showTranscript, setShowTranscript] = useState({});
 
+  const writingRef = useRef(null);
   const unlocked = isExamUnlocked(levelId, levelData);
 
   function normalizeAnswer(value) {
@@ -29,7 +31,11 @@ export default function ExamPage() {
       .trim()
       .replace(/[.!?,;:]+$/, '')
       .replace(/\s+/g, ' ')
-      .toLowerCase();
+      .toLowerCase()
+      .replace(/ä/g, 'ae')
+      .replace(/ö/g, 'oe')
+      .replace(/ü/g, 'ue')
+      .replace(/ß/g, 'ss');
   }
 
   function isShortAnswerCorrect(userAnswer, task) {
@@ -120,8 +126,17 @@ export default function ExamPage() {
       setPhase('result');
 
       const state = getState();
-      state.exams[levelId] = { passed: pct >= exam.passScore, score: pct, date: new Date().toISOString() };
-      updateState({ exams: state.exams });
+      const nextExams = { ...state.exams, [levelId]: { passed: pct >= exam.passScore, score: pct, date: new Date().toISOString() } };
+      let nextCurrentLevel = state.currentLevel;
+      // Auto-advance to next level on pass
+      if (pct >= exam.passScore) {
+        const levelsOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
+        const idx = levelsOrder.indexOf(levelId);
+        if (idx >= 0 && idx < levelsOrder.length - 1) {
+          nextCurrentLevel = levelsOrder[idx + 1];
+        }
+      }
+      updateState({ exams: nextExams, currentLevel: nextCurrentLevel });
     }
   };
 
@@ -395,10 +410,12 @@ export default function ExamPage() {
             </ul>
           </div>
           <textarea className="w-full h-48 p-4 rounded-lg text-sm outline-none resize-none"
+            ref={writingRef}
             style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
             placeholder="Write your response..."
             onChange={(e) => setAnswers({ ...answers, written: e.target.value })}
           />
+          <GermanCharHelper targetRef={writingRef} compact style={{ marginTop: '0.25rem' }} />
           <div className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
             Words: {(answers.written || '').split(/\s+/).filter(Boolean).length} | Target: ~{tasks[0]?.wordLimit || 200}
           </div>

@@ -1,0 +1,52 @@
+[
+  {
+    "level": "A1",
+    "units": [
+      { "id": "A1_unit_1", "title": "Erste Kontakte", "subtitle": "First Contacts", "description": "Greetings, introductions, alphabet, numbers", "color": "#4ade80" },
+      { "id": "A1_unit_2", "title": "Mein Zuhause", "subtitle": "My Home", "description": "Family, home, furniture, colors", "color": "#22d3ee" },
+      { "id": "A1_unit_3", "title": "Essen und Trinken", "subtitle": "Food and Drink", "description": "Food vocabulary, ordering, shopping", "color": "#fbbf24" },
+      { "id": "A1_unit_4", "title": "Tagesablauf", "subtitle": "Daily Routine", "description": "Time, daily activities, schedules", "color": "#f472b6" },
+      { "id": "A1_unit_5", "title": "Unterwegs", "subtitle": "Traveling", "description": "Transport, directions, weather", "color": "#60a5fa" }
+    ]
+  },
+  {
+    "level": "A2",
+    "units": [
+      { "id": "A2_unit_1", "title": "Reisen und Urlaub", "subtitle": "Travel and Vacation", "description": "Past tense narration, travel vocabulary", "color": "#4ade80" },
+      { "id": "A2_unit_2", "title": "Gesundheit und Körper", "subtitle": "Health and Body", "description": "Body parts, illness, doctor visits", "color": "#fbbf24" },
+      { "id": "A2_unit_3", "title": "Einkaufen und Mode", "subtitle": "Shopping and Fashion", "description": "Clothing, shopping dialogues, prices", "color": "#f472b6" },
+      { "id": "A2_unit_4", "title": "Arbeit und Beruf", "subtitle": "Work and Profession", "description": "Jobs, workplace, daily work routines", "color": "#60a5fa" },
+      { "id": "A2_unit_5", "title": "Feste und Traditionen", "subtitle": "Celebrations and Traditions", "description": "Holidays, gifts, traditions", "color": "#a78bfa" }
+    ]
+  },
+  {
+    "level": "B1",
+    "units": [
+      { "id": "B1_unit_1", "title": "Medien und Kommunikation", "subtitle": "Media and Communication", "description": "News, social media, expressing opinions", "color": "#4ade80" },
+      { "id": "B1_unit_2", "title": "Umwelt und Natur", "subtitle": "Environment and Nature", "description": "Environmental issues, sustainability", "color": "#22d3ee" },
+      { "id": "B1_unit_3", "title": "Bildung und Lernen", "subtitle": "Education and Learning", "description": "School, university, learning strategies", "color": "#fbbf24" },
+      { "id": "B1_unit_4", "title": "Kultur und Gesellschaft", "subtitle": "Culture and Society", "description": "German culture, social issues", "color": "#f472b6" },
+      { "id": "B1_unit_5", "title": "Technologie und Zukunft", "subtitle": "Technology and Future", "description": "Digital life, future predictions", "color": "#60a5fa" }
+    ]
+  },
+  {
+    "level": "B2",
+    "units": [
+      { "id": "B2_unit_1", "title": "Wirtschaft und Finanzen", "subtitle": "Economy and Finance", "description": "Business vocabulary, economic trends", "color": "#4ade80" },
+      { "id": "B2_unit_2", "title": "Wissenschaft und Forschung", "subtitle": "Science and Research", "description": "Scientific topics, research discussions", "color": "#22d3ee" },
+      { "id": "B2_unit_3", "title": "Politik und Gesellschaft", "subtitle": "Politics and Society", "description": "Political systems, debate, argumentation", "color": "#fbbf24" },
+      { "id": "B2_unit_4", "title": "Kunst und Literatur", "subtitle": "Art and Literature", "description": "Art movements, literary analysis", "color": "#f472b6" },
+      { "id": "B2_unit_5", "title": "Migration und Vielfalt", "subtitle": "Migration and Diversity", "description": "Integration, multicultural society", "color": "#60a5fa" }
+    ]
+  },
+  {
+    "level": "C1",
+    "units": [
+      { "id": "C1_unit_1", "title": "Akademische Diskurse", "subtitle": "Academic Discourse", "description": "Academic writing, formal debate", "color": "#4ade80" },
+      { "id": "C1_unit_2", "title": "Recht und Ethik", "subtitle": "Law and Ethics", "description": "Legal vocabulary, ethical dilemmas", "color": "#22d3ee" },
+      { "id": "C1_unit_3", "title": "Medizin und Gesundheitssystem", "subtitle": "Medicine and Healthcare", "description": "Healthcare systems, medical discourse", "color": "#fbbf24" },
+      { "id": "C1_unit_4", "title": "Globalisierung und Nachhaltigkeit", "subtitle": "Globalization and Sustainability", "description": "Global issues, sustainable development", "color": "#f472b6" },
+      { "id": "C1_unit_5", "title": "Kreatives Schreiben und Rhetorik", "subtitle": "Creative Writing and Rhetoric", "description": "Persuasive writing, rhetorical devices", "color": "#60a5fa" }
+    ]
+  }
+]

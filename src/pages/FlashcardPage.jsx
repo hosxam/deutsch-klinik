@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo } from 'react';
-import { getState, updateState } from '../utils/store';
+import { getState, updateState, updateLevelProgress } from '../utils/store';
 import fullVocabData from '../data/germanVocabulary.json';
 import { RefreshCw, ThumbsUp, ThumbsDown, Search, X } from 'lucide-react';
 
@@ -244,6 +244,16 @@ export default function FlashcardPage() {
           card.ease = Math.max(1.3, card.ease - 0.2);
         }
         state.flashcards[key] = card;
+      });
+      // Track each reviewed word as vocab progress
+      const levelIds = [...new Set(allReviews.map(r => r.level))];
+      levelIds.forEach(lvl => {
+        const existing = getState().levels?.[lvl]?.vocab || [];
+        updateLevelProgress(lvl, 'vocab', {
+          date: new Date().toISOString(),
+          source: 'flashcard',
+          wordIds: allReviews.filter(r => r.level === lvl).map(r => r.wordId),
+        });
       });
       updateState({ flashcards: state.flashcards });
     }

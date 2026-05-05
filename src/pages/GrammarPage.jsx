@@ -1,13 +1,19 @@
 import { useParams, Link, useSearchParams } from 'react-router-dom';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { getState, updateLevelProgress, setLevelProgress, getLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
 import grammarData from '../data/grammar.json';
 import LevelLock from '../components/LevelLock';
+import GermanCharHelper from '../components/GermanCharHelper';
 import { CheckCircle, XCircle, AlertTriangle, RotateCcw, BookOpen } from 'lucide-react';
 
-/** Normalize a typed answer for comparison: trim whitespace, lowercase, remove trailing punctuation */
+/** Normalize a typed answer: trim, lowercase, remove trailing punctuation, normalize umlauts (ae→ä etc.) */
 function normalizeAnswer(str) {
-  return (str || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '');
+  return (str || '').trim().toLowerCase()
+    .replace(/[.!?,;:]+$/, '')
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss');
 }
 
 const typeLabels = {
@@ -43,6 +49,7 @@ export default function GrammarPage() {
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
 
+  const inputRef = useRef(null);
   const ex = exercises[currentIndex];
 
   useEffect(() => {
@@ -196,6 +203,7 @@ export default function GrammarPage() {
 {['fill-blank'].includes(ex.type) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
             <input type="text" placeholder="Type your answer..."
+              ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
                 width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
@@ -204,6 +212,7 @@ export default function GrammarPage() {
                   : '1px solid var(--border)',
                 background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
               }} disabled={!!showResult} />
+            {!showResult && <GermanCharHelper targetRef={inputRef} compact style={{ marginTop: '0.25rem' }} />}
             <button style={{ ...s.btnPrimary, marginTop: '0.5rem' }} disabled={!!showResult || !userAnswer.trim()}
               onClick={() => handleAnswer(userAnswer)}>Check</button>
           </div>
@@ -236,14 +245,16 @@ export default function GrammarPage() {
         {ex.type === 'sentence-reorder' && (
           <div style={{ marginTop: '0.75rem' }}>
             <input type="text" placeholder="Type the correct sentence..."
+              ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
                 width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
-                  ? userAnswer.trim().toLowerCase() === (typeof ex.answer === 'string' ? ex.answer.toLowerCase() : '')
+                  ? normalizeAnswer(userAnswer) === normalizeAnswer(typeof ex.answer === 'string' ? ex.answer : '')
                     ? '2px solid #22c55e' : '2px solid #ef4444'
                   : '1px solid var(--border)',
                 background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
               }} disabled={!!showResult} />
+            {!showResult && <GermanCharHelper targetRef={inputRef} compact style={{ marginTop: '0.25rem' }} />}
             <button style={{ ...s.btnPrimary, marginTop: '0.5rem' }} disabled={!!showResult || !userAnswer.trim()}
               onClick={() => handleAnswer(userAnswer)}>Check</button>
           </div>
@@ -252,14 +263,16 @@ export default function GrammarPage() {
         {ex.type === 'sentence-correction' && (
           <div style={{ marginTop: '0.75rem' }}>
             <input type="text" placeholder="Type the correct sentence..."
+              ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
                 width: '100%', padding: '0.75rem', borderRadius: '8px', border: showResult
-                  ? userAnswer.trim().toLowerCase() === (typeof ex.answer === 'string' ? ex.answer.toLowerCase() : '')
+                  ? normalizeAnswer(userAnswer) === normalizeAnswer(typeof ex.answer === 'string' ? ex.answer : '')
                     ? '2px solid #22c55e' : '2px solid #ef4444'
                   : '1px solid var(--border)',
                 background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '1rem',
               }} disabled={!!showResult} />
+            {!showResult && <GermanCharHelper targetRef={inputRef} compact style={{ marginTop: '0.25rem' }} />}
             <button style={{ ...s.btnPrimary, marginTop: '0.5rem' }} disabled={!!showResult || !userAnswer.trim()}
               onClick={() => handleAnswer(userAnswer)}>Check</button>
           </div>

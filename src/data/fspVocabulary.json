@@ -282,7 +282,7 @@
     "example": "Der Verlauf war langsam fortschreitend.",
     "exampleTranslation": "Course was slowly progressive.",
     "patientFriendlyPhrase": "Haben sich die Beschwerden verschlimmert?",
-    "doctorToDoctorPhrase": "Progredienter Verlauf der Dyspnoe.",
+    "doctorToDoctorPhrase": "Progredienter Verlauf der Dyspnö.",
     "category": "Anamnesis",
     "tags": [
       "course"
@@ -464,15 +464,15 @@
     "word": "die Mudigkeit",
     "article": "die",
     "plural": null,
-    "translation": "fatigue",
+    "translation": "fatigü",
     "layExplanation": "Extreme tiredness",
     "example": "Der Patient klagt uber starke Mudigkeit.",
-    "exampleTranslation": "Patient complains of severe fatigue.",
+    "exampleTranslation": "Patient complains of severe fatigü.",
     "patientFriendlyPhrase": "Fuhlen Sie sich mud und erschopft?",
-    "doctorToDoctorPhrase": "Ausgepragte Fatigue bei Eisenmangelanamie.",
+    "doctorToDoctorPhrase": "Ausgepragte Fatigü bei Eisenmangelanamie.",
     "category": "Symptoms",
     "tags": [
-      "fatigue"
+      "fatigü"
     ]
   },
   {
@@ -499,7 +499,7 @@
     "article": "die",
     "plural": "die Schwellungen",
     "translation": "swelling",
-    "layExplanation": "Enlargement of body part due to fluid",
+    "layExplanation": "Enlargement of body part dü to fluid",
     "example": "Das Knie zeigt eine deutliche Schwellung.",
     "exampleTranslation": "The knee shows marked swelling.",
     "patientFriendlyPhrase": "Ist die Stelle geschwollen?",
@@ -536,7 +536,7 @@
     "layExplanation": "Not sharp, like pressure",
     "example": "Dumpfe Kopfschmerzen.",
     "exampleTranslation": "Dull headache.",
-    "patientFriendlyPhrase": "Eher dumpf und drueckend?",
+    "patientFriendlyPhrase": "Eher dumpf und drückend?",
     "doctorToDoctorPhrase": "Dumpfe Oberbauchschmerzen.",
     "category": "Pain Description",
     "tags": [
@@ -703,7 +703,7 @@
     "article": "die",
     "plural": null,
     "translation": "angina pectoris",
-    "layExplanation": "Chest pressure due to low heart oxygen",
+    "layExplanation": "Chest pressure dü to low heart oxygen",
     "example": "Angina bei Belastung.",
     "exampleTranslation": "Angina on exertion.",
     "patientFriendlyPhrase": "Engegefuhl in der Brust beim Treppensteigen?",
@@ -818,15 +818,15 @@
   {
     "id": "fsp_v_49",
     "level": "FSP",
-    "word": "die Herzfrequenz",
+    "word": "die Herzfreqünz",
     "article": "die",
-    "plural": "die Herzfrequenzen",
+    "plural": "die Herzfreqünzen",
     "translation": "heart rate",
     "layExplanation": "Heartbeats per minute",
-    "example": "Herzfrequenz 85/min.",
+    "example": "Herzfreqünz 85/min.",
     "exampleTranslation": "Heart rate 85/min.",
     "patientFriendlyPhrase": "Ihr Herz schlagt 85 Mal pro Minute.",
-    "doctorToDoctorPhrase": "Herzfrequenz 85/min, normofrequent.",
+    "doctorToDoctorPhrase": "Herzfreqünz 85/min, normofreqünt.",
     "category": "Cardiovascular",
     "tags": [
       "vital"
@@ -860,7 +860,7 @@
     "example": "Atemnot seit Tagen zunehmend.",
     "exampleTranslation": "Progressive shortness of breath for days.",
     "patientFriendlyPhrase": "Bekommen Sie genug Luft?",
-    "doctorToDoctorPhrase": "Ruhedyspnoe bei COPD GOLD III.",
+    "doctorToDoctorPhrase": "Ruhedyspnö bei COPD GOLD III.",
     "category": "Respiratory",
     "tags": [
       "dyspnea"
@@ -907,7 +907,7 @@
     "article": "die",
     "plural": "die Lungenentzundungen",
     "translation": "pneumonia",
-    "layExplanation": "Inflammation of lung tissue",
+    "layExplanation": "Inflammation of lung tissü",
     "example": "Lungenentzundung rechter Unterlappen.",
     "exampleTranslation": "Pneumonia right lower lobe.",
     "patientFriendlyPhrase": "Eine Infektion in der Lunge.",
@@ -920,14 +920,14 @@
   {
     "id": "fsp_v_55",
     "level": "FSP",
-    "word": "die Sauerstoffsattigung",
+    "word": "die Saürstoffsattigung",
     "article": "die",
-    "plural": "die Sauerstoffsattigungen",
+    "plural": "die Saürstoffsattigungen",
     "translation": "oxygen saturation",
     "layExplanation": "Percentage of oxygen in blood",
-    "example": "Sauerstoffsattigung 94 Prozent.",
+    "example": "Saürstoffsattigung 94 Prozent.",
     "exampleTranslation": "Oxygen saturation 94 percent.",
-    "patientFriendlyPhrase": "Ihr Sauerstoffgehalt ist etwas niedrig.",
+    "patientFriendlyPhrase": "Ihr Saürstoffgehalt ist etwas niedrig.",
     "doctorToDoctorPhrase": "SpO2 88 Prozent unter Raumluft.",
     "category": "Respiratory",
     "tags": [
@@ -1009,7 +1009,7 @@
     "article": "die",
     "plural": "die Lungenfibrosen",
     "translation": "pulmonary fibrosis",
-    "layExplanation": "Scarring of lung tissue",
+    "layExplanation": "Scarring of lung tissü",
     "example": "Lungenfibrose mit restriktiver Storung.",
     "exampleTranslation": "Pulmonary fibrosis with restrictive disorder.",
     "patientFriendlyPhrase": "Das Lungengewebe vernarbt.",
@@ -1060,11 +1060,11 @@
     "article": "der",
     "plural": null,
     "translation": "diarrhea",
-    "layExplanation": "Frequent loose stools",
+    "layExplanation": "Freqünt loose stools",
     "example": "Wassriger Durchfall seit 3 Tagen.",
     "exampleTranslation": "Watery diarrhea for 3 days.",
     "patientFriendlyPhrase": "Haben Sie Durchfall?",
-    "doctorToDoctorPhrase": "Wassrige Diarrhoe.",
+    "doctorToDoctorPhrase": "Wassrige Diarrhö.",
     "category": "Gastrointestinal",
     "tags": [
       "diarrhea"
@@ -1077,7 +1077,7 @@
     "article": "die",
     "plural": null,
     "translation": "constipation",
-    "layExplanation": "Infrequent hard stools",
+    "layExplanation": "Infreqünt hard stools",
     "example": "Verstopfung seit Tagen.",
     "exampleTranslation": "Constipation for days.",
     "patientFriendlyPhrase": "Probleme mit Stuhlgang?",

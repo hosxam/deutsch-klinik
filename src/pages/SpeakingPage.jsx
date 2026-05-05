@@ -8,6 +8,7 @@ import {
   Play, StopCircle, Volume2, FileText, MessageSquare
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
+import GermanCharHelper from '../components/GermanCharHelper';
 import { correctSpeaking, isSpeakingCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 
 export default function SpeakingPage() {
@@ -27,6 +28,8 @@ export default function SpeakingPage() {
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState(null);
   const [aiResult, setAiResult] = useState(null);
+
+  const speakingRef = useRef(null);
 
   // Transcript state
   const [transcript, setTranscript] = useState('');
@@ -347,6 +350,7 @@ export default function SpeakingPage() {
             </h3>
 
             <textarea
+              ref={speakingRef}
               value={transcript}
               onChange={(e) => setTranscript(e.target.value)}
               placeholder="Type or paste your spoken answer here..."
@@ -354,6 +358,7 @@ export default function SpeakingPage() {
               className="w-full p-3 rounded-lg text-sm outline-none resize-y"
               style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
             />
+            <GermanCharHelper targetRef={speakingRef} compact style={{ marginTop: '0.25rem' }} />
 
             {/* Speech Recognition */}
             {speechSupported ? (

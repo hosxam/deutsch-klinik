@@ -346,9 +346,9 @@ export default function Dashboard() {
   const levelData = levelsData.levels.find(l => l.id === studyLevel);
   const levelProg = state.levels[studyLevel] || {};
   const grammarDone = (levelProg.grammar?.length || 0);
-  const grammarTarget = GRAMMAR_COUNT[studyLevel] || 200;
+  const grammarTarget = levelData?.grammarUnits || 10;
   const vocabDone = (levelProg.vocab?.length || 0);
-  const vocabTarget = VOCAB_COUNT[studyLevel] || 500;
+  const vocabTarget = levelData?.vocabularyUnits || 10;
   const readingDone = (levelProg.reading?.length || 0);
   const listeningDone = (levelProg.listening?.length || 0);
   const writingDone = (state.writings || []).filter(w => w.level === studyLevel).length;

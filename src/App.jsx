@@ -32,8 +32,7 @@ const FSPListeningPage = lazy(() => import('./pages/FSPListeningPage'));
 const FSPReadingPage = lazy(() => import('./pages/FSPReadingPage'));
 const FSPGrammarPage = lazy(() => import('./pages/FSPGrammarPage'));
 const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
-const TestPage = lazy(() => import('./pages/TestPage'));
-const TestDataPage = lazy(() => import('./pages/TestDataPage'));
+
 
 function Loading() {
   return (
@@ -201,16 +200,7 @@ export default function App() {
                 <FSPExamPage />
               </Suspense>
             } />
-            <Route path="test" element={
-              <Suspense fallback={<Loading />}>
-                <TestPage />
-              </Suspense>
-            } />
-            <Route path="test-data" element={
-              <Suspense fallback={<Loading />}>
-                <TestDataPage />
-              </Suspense>
-            } />
+
           </Route>
         </Routes>
       </HashRouter>

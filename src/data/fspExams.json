@@ -16,7 +16,7 @@
       "doctorTasks": [
         "Fuhren Sie eine strukturierte Anamnese durch (Beschwerden, Begleitsymptome, Risikofaktoren).",
         "Erfragen Sie kardiale Red Flags: Ruheschmerz, Atemnot, Synkope, Palpitationen.",
-        "Fragen Sie nach aktuellen Medikamenten und Vorerkrankungen.",
+        "Fragen Sie nach aktüllen Medikamenten und Vorerkrankungen.",
         "Erklaren Sie dem Patienten die nachsten diagnostischen Schritte in patientengerechter Sprache.",
         "Zeigen Sie empathische Kommunikation bei akuter Angstsymptomatik."
       ],
@@ -45,7 +45,7 @@
       "task": "Verfassen Sie einen strukturierten Arztbrief (Aufnahmebefund) fur den 58-jahrigen Patienten mit Brustschmerz und V.a. akutes Koronarsyndrom.",
       "requiredSections": [
         "Diagnose / Verdachtsdiagnose",
-        "Anamnese (aktuelle Beschwerden, Risikofaktoren, Medikamente)",
+        "Anamnese (aktülle Beschwerden, Risikofaktoren, Medikamente)",
         "Aufnahmebefund / klinischer Untersuchungsbefund",
         "Geplante Diagnostik",
         "Geplante Therapie (medikamentos, interventionell)",
@@ -64,7 +64,7 @@
       "task": "Sie mussen den Patienten an den Kardiologen im Bereitschaftsdienst ubergeben. Prasentieren Sie den Fall strukturiert nach dem ISBAR-Schema.",
       "handoverStructure": [
         "I – Identifikation: Patient, Alter, Geschlecht",
-        "S – Situation: Aktuelles Problem, Dringlichkeit",
+        "S – Situation: Aktülles Problem, Dringlichkeit",
         "B – Background: Relevante Vorerkrankungen, Medikamente, Risikofaktoren",
         "A – Assessment: Vorlaufige Diagnose, Befunde, Differentialdiagnosen",
         "R – Recommendation: Empfohlenes weiteres Vorgehen"
@@ -92,7 +92,7 @@
       "Koronarangiographie",
       "Palpitationen",
       "Synkope",
-      "Dyspnoe",
+      "Dyspnö",
       "Myokardinfarkt",
       "Ejektionsfraktion",
       "Nitrat sublingual"
@@ -159,7 +159,7 @@
       "task": "Verfassen Sie einen Aufnahmebefund fur die 24-jahrige Patientin mit akuten Unterbauchschmerzen rechts und V.a. Appendizitis.",
       "requiredSections": [
         "Verdachtsdiagnose",
-        "Aktuelle Anamnese einschließlich Schmerzcharakteristik und Begleitsymptome",
+        "Aktülle Anamnese einschließlich Schmerzcharakteristik und Begleitsymptome",
         "Gynakologische Anamnese (letzte Menstruation, Schwangerschaft)",
         "Untersuchungsbefund (Abdominaluntersuchung, Vitalparameter)",
         "Geplante Diagnostik",
@@ -191,7 +191,7 @@
         "Ektope Graviditat (bei Schwangerschaftsmoglichkeit)",
         "Harnleiterstein / Nierenkolik",
         "Morbus Crohn (Erstmanifestation)",
-        "Mesoenteriale Lymphadenitis"
+        "Mesönteriale Lymphadenitis"
       ],
       "plan": [
         "Blutentnahme: kleines Blutbild, CRP, beta-hCG im Urin",
@@ -210,7 +210,7 @@
       "Abwehrspannung",
       "Ileus",
       "ektope Graviditat",
-      "Mesoenteriale Lymphadenitis"
+      "Mesönteriale Lymphadenitis"
     ],
     "rubric": {
       "historyTaking": "Vollstandige Schmerzanamnese und Erfassung aller Begleitsymptome. Gynakologische Anamnese wurde berucksichtigt.",
@@ -230,20 +230,20 @@
   },
   {
     "id": "exam_003",
-    "title": "Dyspnoe – V.a. Pneumonie oder Lungenembolie",
-    "case": "Eine 67-jahrige Patientin wird vom Rettungsdienst mit akuter Luftnot eingeliefert. Die Dyspnoe begann vor etwa 4 Stunden, zunehmend. Sie hat Husten mit gelblichem Auswurf und leichtes Fieber (38,2°C). Zudem klagt sie uber ein Spannungsgefuhl im rechten Thorax. Sie ist seit 3 Wochen nach einer Knie-OP immobil.",
+    "title": "Dyspnö – V.a. Pneumonie oder Lungenembolie",
+    "case": "Eine 67-jahrige Patientin wird vom Rettungsdienst mit akuter Luftnot eingeliefert. Die Dyspnö begann vor etwa 4 Stunden, zunehmend. Sie hat Husten mit gelblichem Auswurf und leichtes Fieber (38,2°C). Zudem klagt sie uber ein Spannungsgefuhl im rechten Thorax. Sie ist seit 3 Wochen nach einer Knie-OP immobil.",
     "part1_patientConversation": {
-      "setting": "Notaufnahme, groRes Haus. Die Patientin ist wach, aber aufgrund der Luftnot angestrengt. Sauerstoff wird bereits uber Nasenbrille gegeben.",
+      "setting": "Notaufnahme, groRes Haus. Die Patientin ist wach, aber aufgrund der Luftnot angestrengt. Saürstoff wird bereits uber Nasenbrille gegeben.",
       "patientRole": {
         "age": 67,
         "gender": "weiblich",
-        "chiefComplaint": "Akute Dyspnoe seit 4 Stunden, Husten mit Auswurf, thorakales Spannungsgefuhl rechts",
+        "chiefComplaint": "Akute Dyspnö seit 4 Stunden, Husten mit Auswurf, thorakales Spannungsgefuhl rechts",
         "history": "Knie-TEP vor 3 Wochen, postoperative Immobilisation. Keine bekannten Lungenerkrankungen. Z.n. tiefer Beinvenenthrombose vor 5 Jahren.",
         "medications": "Keine Antikoagulation postoperativ (nur ASS 100 mg), keine Marcumar-Therapie mehr",
         "allergies": "Penicillin (Hautausschlag)"
       },
       "doctorTasks": [
-        "Erheben Sie eine strukturierte Anamnese der akuten Dyspnoe (Beginn, Verlauf, Ausloser).",
+        "Erheben Sie eine strukturierte Anamnese der akuten Dyspnö (Beginn, Verlauf, Ausloser).",
         "Differenzieren Sie zwischen pulmonaler und kardialer Ursache.",
         "Erfragen Sie Risikofaktoren fur eine Lungenembolie (Immobilisation, OP, Thromboseanamnese).",
         "Fragen Sie nach Husten, Auswurf, Hamoptyse, Fieber, Thoraxschmerz.",
@@ -258,23 +258,23 @@
         "Sind Sie in letzter Zeit langer gelegen oder geflogen?"
       ],
       "redFlags": [
-        "Plotzlich einsetzende Dyspnoe + Immobilisation = Lungenembolie bis zum Beweis des Gegenteils",
+        "Plotzlich einsetzende Dyspnö + Immobilisation = Lungenembolie bis zum Beweis des Gegenteils",
         "Hamoptyse -> Lungenembolie oder Bronchialkarzinom",
-        "Tachypnoe, Tachykardie, Hypoxie -> schwere LE mit Rechtsherzbelastung",
+        "Tachypnö, Tachykardie, Hypoxie -> schwere LE mit Rechtsherzbelastung",
         "Fieber + eitriger Auswurf = Pneumonie, aber LE kann auch mit Fieber einhergehen"
       ],
       "usefulPhrases": [
-        "Ich kann sehen, dass die Luftnot sehr belastend fur Sie ist. Wir geben Ihnen zunachst Sauerstoff.",
+        "Ich kann sehen, dass die Luftnot sehr belastend fur Sie ist. Wir geben Ihnen zunachst Saürstoff.",
         "Hatten Sie in letzter Zeit Schwellungen in den Beinen? Das ist wichtig, um eine Thrombose auszuschlieSSen.",
         "Wir werden sofort ein EKG schreiben, Blut abnehmen und eine Rontgenaufnahme der Lunge machen.",
         "Keine Sorge, wir behalten Sie hier im Blick und kummern uns um alles Notige."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Aufnahmebefund fur die 67-jahrige Patientin mit akuter Dyspnoe und V.a. Pneumonie / Lungenembolie.",
+      "task": "Verfassen Sie einen Aufnahmebefund fur die 67-jahrige Patientin mit akuter Dyspnö und V.a. Pneumonie / Lungenembolie.",
       "requiredSections": [
         "Verdachtsdiagnose(n) mit Differentialdiagnosen",
-        "Anamnese (aktuelle Beschwerden, Risikofaktoren, Medikamente, Allergien)",
+        "Anamnese (aktülle Beschwerden, Risikofaktoren, Medikamente, Allergien)",
         "Aufnahmebefund (Vitalparameter, Auskultation, Beinbefund)",
         "Geplante Diagnostik (Labor, Bildgebung)",
         "Geplante Therapie (antibiotisch, antikoagulatorisch)",
@@ -282,28 +282,28 @@
       ],
       "keyInformation": [
         "67 Jahre, weiblich, postoperativ (Knie-TEP vor 3 Wochen)",
-        "Akute Dyspnoe seit 4 Stunden, Husten mit gelblichem Auswurf, Fieber 38,2°C",
+        "Akute Dyspnö seit 4 Stunden, Husten mit gelblichem Auswurf, Fieber 38,2°C",
         "Z.n. tiefer Beinvenenthrombose vor 5 Jahren",
         "Medikation: ASS 100 mg, keine Antikoagulation postoperativ",
         "Allergie: Penicillin (Exanthem)"
       ],
-      "modelOutline": "Aufnahmebericht\n\nPatientin: 67 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnosen: 1. Lungenembolie (bei postoperativer Immobilisation), 2. Pneumonie (Husten, Fieber, Auswurf).\n\nAnamnese: Die Patientin wurde mit akuter Dyspnoe eingeliefert, die vor 4 Stunden begann und sich seither verschlechtert hat. Sie hat Husten mit gelblichem Sputum und leichtes Fieber (38,2°C). Zudem besteht ein Spannungsgefuhl im rechten Thorax. Keine Hamoptyse. Vor 3 Wochen erfolgte eine Knie-TEP-Implantation, seither eingeschrankte Mobilisation. Z.n. tiefer Beinvenenthrombose vor 5 Jahren. Medikation: ASS 100 mg taglich, keine Antikoagulation postoperativ. Allergie: Penicillin.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Kardiopulmonale Auskultation, Beinbefund (Schwellung, Wadenschmerz?).\n\nDiagnostik: 12-Kanal-EKG, Blutentnahme (D-Dimere, Troponin, Blutbild, CRP, Procalcitonin, Gerinnung), Rontgen Thorax in 2 Ebenen, ggf. CT-Pulmonalisangiographie.\n\nTherapie: Sauerstoffgabe, bei Bestatigung einer Pneumonie kalkulierte Antibiotikatherapie (Cephalosporin wegen Penicillinallergie), bei LE: Antikoagulation mit Heparin.\n\nAufklarung: Die Patientin wurde uber die Differentialdiagnosen, die geplanten Untersuchungen und das weitere Vorgehen aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht\n\nPatientin: 67 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnosen: 1. Lungenembolie (bei postoperativer Immobilisation), 2. Pneumonie (Husten, Fieber, Auswurf).\n\nAnamnese: Die Patientin wurde mit akuter Dyspnö eingeliefert, die vor 4 Stunden begann und sich seither verschlechtert hat. Sie hat Husten mit gelblichem Sputum und leichtes Fieber (38,2°C). Zudem besteht ein Spannungsgefuhl im rechten Thorax. Keine Hamoptyse. Vor 3 Wochen erfolgte eine Knie-TEP-Implantation, seither eingeschrankte Mobilisation. Z.n. tiefer Beinvenenthrombose vor 5 Jahren. Medikation: ASS 100 mg taglich, keine Antikoagulation postoperativ. Allergie: Penicillin.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Kardiopulmonale Auskultation, Beinbefund (Schwellung, Wadenschmerz?).\n\nDiagnostik: 12-Kanal-EKG, Blutentnahme (D-Dimere, Troponin, Blutbild, CRP, Procalcitonin, Gerinnung), Rontgen Thorax in 2 Ebenen, ggf. CT-Pulmonalisangiographie.\n\nTherapie: Saürstoffgabe, bei Bestatigung einer Pneumonie kalkulierte Antibiotikatherapie (Cephalosporin wegen Penicillinallergie), bei LE: Antikoagulation mit Heparin.\n\nAufklarung: Die Patientin wurde uber die Differentialdiagnosen, die geplanten Untersuchungen und das weitere Vorgehen aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
       "task": "Ubergeben Sie die Patientin an den Internisten/Oberarzt. Strukturieren Sie nach ISBAR.",
       "handoverStructure": [
         "I – Identifikation: 67 Jahre, weiblich",
-        "S – Situation: Akute Dyspnoe, V.a. LE vs. Pneumonie, Sauerstoffpflichtig",
+        "S – Situation: Akute Dyspnö, V.a. LE vs. Pneumonie, Saürstoffpflichtig",
         "B – Background: Knie-TEP vor 3 Wochen, Z.n. TVT vor 5 Jahren, ASS, Penicillinallergie",
         "A – Assessment: Beide Differentialdiagnosen sind gleich wahrscheinlich. DD-Dimere, EKG und Rontgen stehen aus.",
         "R – Recommendation: CT-Pulmonalisangiographie bei hohem LE-Verdacht, kalkulierte AB-Therapie bei Pneumonie"
       ],
-      "expectedSummary": "Wir haben eine 67-jahrige Patientin mit akuter Dyspnoe, Husten mit gelblichem Auswurf und leichtem Fieber. Sie ist postoperativ nach Knie-TEP und hatte fruher bereits eine TVT. Differenzialdiagnostisch kommen sowohl eine Pneumonie als auch eine Lungenembolie in Betracht. Ich bitte um Ihre Mitbeurteilung und Entscheidung zur weiterfuhrenden Bildgebung.",
+      "expectedSummary": "Wir haben eine 67-jahrige Patientin mit akuter Dyspnö, Husten mit gelblichem Auswurf und leichtem Fieber. Sie ist postoperativ nach Knie-TEP und hatte fruher bereits eine TVT. Differenzialdiagnostisch kommen sowohl eine Pneumonie als auch eine Lungenembolie in Betracht. Ich bitte um Ihre Mitbeurteilung und Entscheidung zur weiterfuhrenden Bildgebung.",
       "differentials": [
         "Lungenembolie (hohes Risiko durch OP und Immobilisation)",
         "Pneumonie (Fieber, eitriger Auswurf, CRP-Erhohung erwartet)",
         "Kardiale Dekompensation (bei Vorbelastung moglich)",
-        "Pleuraerguss (postoperativ, reaktiv)",
+        "Pleurärguss (postoperativ, reaktiv)",
         "Pneumothorax (spontan, selten)"
       ],
       "plan": [
@@ -316,14 +316,14 @@
       ]
     },
     "terminology": [
-      "Dyspnoe",
+      "Dyspnö",
       "Lungenembolie",
       "Hamoptyse",
       "Pneumonie",
       "Antikoagulation",
       "CT-Pulmonalisangiographie",
       "D-Dimere",
-      "Tachypnoe",
+      "Tachypnö",
       "Hypoxie",
       "kalkulierte Antibiotikatherapie"
     ],
@@ -337,7 +337,7 @@
     },
     "tags": [
       "pneumologie",
-      "dyspnoe",
+      "dyspnö",
       "lungenembolie",
       "pneumonie",
       "postoperativ",
@@ -347,7 +347,7 @@
   {
     "id": "exam_004",
     "title": "Kopfschmerz – V.a. Migrane mit neurologischen Red Flags",
-    "case": "Eine 32-jahrige Patientin stellt sich mit seit 3 Tagen bestehenden, starken halbseitigen Kopfschmerzen vor. Die Schmerzen sind klopfend, begleitet von Ubelkeit, Lichtempfindlichkeit und einer Aura mit Flimmerskotomen. Eine Migrane ist bekannt, aber die aktuelle Episode ist ungewohnlich stark und spricht nicht auf die ublichen Medikamente an.",
+    "case": "Eine 32-jahrige Patientin stellt sich mit seit 3 Tagen bestehenden, starken halbseitigen Kopfschmerzen vor. Die Schmerzen sind klopfend, begleitet von Ubelkeit, Lichtempfindlichkeit und einer Aura mit Flimmerskotomen. Eine Migrane ist bekannt, aber die aktülle Episode ist ungewohnlich stark und spricht nicht auf die ublichen Medikamente an.",
     "part1_patientConversation": {
       "setting": "Arztpraxis, Hausarzt / allgemeinmedizinische Praxis. Die Patientin wirkt erschopft und hielt ein Tuch vor die Augen.",
       "patientRole": {
@@ -404,7 +404,7 @@
         "Neurologische Red Flags: keine, keine Herdsymptome, kein Donnerschlagkopfschmerz",
         "Einnahme eines oralen Kontrazeptivums"
       ],
-      "modelOutline": "Arztbrief\n\nPatientin: 32 Jahre, weiblich\nDatum: [Datum]\n\nDiagnose: Migrane mit Aura, aktuell therapierefraktare Episode. Differentialdiagnostisch: Spannungskopfschmerz, sekundare Kopfschmerzursachen (ZNS-Lasion, zerebrale Ischamie).\n\nAnamnese: Die Patientin leidet seit 3 Tagen unter starken, halbseitigen, klopfenden Kopfschmerzen. Erstmalig trat eine visuelle Aura mit Flimmerskotomen vor Schmerzbeginn auf. Begleitend bestehen Ubelkeit, Photophobie und leichte Gerauschuberempfindlichkeit. Keine Sprachstorungen, keine motorischen oder sensiblen Ausfalle. Kein Fieber, keine Nackensteifigkeit. Bisherige Migraneattacken (1-2x/Monat) sprachen auf Ibuprofen 600 mg an, diesmal keine Besserung. Risikofaktoren: orales Kontrazeptivum, keine weiteren.\n\nNeurologischer Befund: [Zu erganzen: Hirnnerven, Motorik, Sensibilitat, Koordination, Meningezeichen negativ].\n\nDiagnostik: Bei normalem neurologischen Befund und typischer Migranesymptomatik zunachst keine akute Bildgebung indiziert. Bei fehlendem Ansprechen auf Akuttherapie und Erstmanifestation einer Aura: cMRT zum Ausschluss einer strukturellen Lasion.\n\nTherapie: Akuttherapie mit Triptan (Sumatriptan 50 mg oral oder nasal), Antiemetikum (Metoclopramid). Besprechung der oralen Kontrazeption bei Migrane mit Aura. Ggf. Uberweisung in neurologische Praxis zur Prophylaxeeinstellung."
+      "modelOutline": "Arztbrief\n\nPatientin: 32 Jahre, weiblich\nDatum: [Datum]\n\nDiagnose: Migrane mit Aura, aktüll therapierefraktare Episode. Differentialdiagnostisch: Spannungskopfschmerz, sekundare Kopfschmerzursachen (ZNS-Lasion, zerebrale Ischamie).\n\nAnamnese: Die Patientin leidet seit 3 Tagen unter starken, halbseitigen, klopfenden Kopfschmerzen. Erstmalig trat eine visülle Aura mit Flimmerskotomen vor Schmerzbeginn auf. Begleitend bestehen Ubelkeit, Photophobie und leichte Gerauschuberempfindlichkeit. Keine Sprachstorungen, keine motorischen oder sensiblen Ausfalle. Kein Fieber, keine Nackensteifigkeit. Bisherige Migraneattacken (1-2x/Monat) sprachen auf Ibuprofen 600 mg an, diesmal keine Besserung. Risikofaktoren: orales Kontrazeptivum, keine weiteren.\n\nNeurologischer Befund: [Zu erganzen: Hirnnerven, Motorik, Sensibilitat, Koordination, Meningezeichen negativ].\n\nDiagnostik: Bei normalem neurologischen Befund und typischer Migranesymptomatik zunachst keine akute Bildgebung indiziert. Bei fehlendem Ansprechen auf Akuttherapie und Erstmanifestation einer Aura: cMRT zum Ausschluss einer strukturellen Lasion.\n\nTherapie: Akuttherapie mit Triptan (Sumatriptan 50 mg oral oder nasal), Antiemetikum (Metoclopramid). Besprechung der oralen Kontrazeption bei Migrane mit Aura. Ggf. Uberweisung in neurologische Praxis zur Prophylaxeeinstellung."
     },
     "part3_doctorDoctorConversation": {
       "task": "Uberweisen Sie die Patientin an die Neurologie zur Mitbeurteilung der therapierefraktaren Migrane mit Aura.",
@@ -415,7 +415,7 @@
         "A – Assessment: Migrane mit Aura (ICHD-3-Kriterien), differentialdiagnostisch unkompliziert, aber therapiepflichtig",
         "R – Recommendation: Umstellung der Akuttherapie, Prufung der Kontrazeption, Beratung zu Prophylaxeoptionen"
       ],
-      "expectedSummary": "Wir haben eine 32-jahrige Patientin mit seit 3 Tagen bestehenden, therapierefraktaren Migranekopfschmerzen. Erstmalig ist eine visuelle Aura aufgetreten. Neurologisch unauffallig, keine Red Flags. Sie nimmt orale Kontrazeptiva, was bei Migrane mit Aura problematisch sein kann. Ich uberweise zur neurologischen Mitbeurteilung und Therapieoptimierung.",
+      "expectedSummary": "Wir haben eine 32-jahrige Patientin mit seit 3 Tagen bestehenden, therapierefraktaren Migranekopfschmerzen. Erstmalig ist eine visülle Aura aufgetreten. Neurologisch unauffallig, keine Red Flags. Sie nimmt orale Kontrazeptiva, was bei Migrane mit Aura problematisch sein kann. Ich uberweise zur neurologischen Mitbeurteilung und Therapieoptimierung.",
       "differentials": [
         "Migrane mit Aura (typisch)",
         "Spannungskopfschmerz (eher beidseitig, druckend)",
@@ -448,7 +448,7 @@
       "patientCommunication": "Empathische Ansprache bei Schmerz. Klare Kommunikation der Dringlichkeit und Beratung zur Kontrazeption.",
       "medicalLogic": "Korrekte Risikobewertung. Angemessener Umgang mit neuer Aura-Symptomatik. Berucksichtigung des Thromboserisikos.",
       "documentation": "Vollstandiger Uberweisungsbericht mit Anamnese, Untersuchungsbefund und klarer Therapieempfehlung.",
-      "doctorToDoctorCommunication": "Pragnante Falldarstellung mit den entscheidenden Neuerungen (Aura, Therapierefraktaritat).",
+      "doctorToDoctorCommunication": "Pragnante Falldarstellung mit den entscheidenden Neürungen (Aura, Therapierefraktaritat).",
       "germanAccuracy": "B2+/C1 Niveau. Souverane Verwendung neurologischer Fachbegriffe. Patientenkommunikation verstandlich."
     },
     "tags": [
@@ -492,7 +492,7 @@
       "redFlags": [
         "Reithosenanasthesie -> Cauda-equina-Syndrom, notfallmassige MRT-Indikation",
         "Blasenentleerungsstorung -> Cauda-Kompression, hoher Zeitdruck (innerhalb 24-48h dekomprimieren)",
-        "Plotzliche beidseitige Beinschwache -> Querschnittsgefahr",
+        "Plotzliche beidseitige Beinschwache -> Qürschnittsgefahr",
         "Starke, progrediente Schmerzen unter konservativer Therapie -> operationswurdiger Befund",
         "Fieber + Ruckenschmerz -> Spondylodiszitis, MRT mit KM indiziert"
       ],
@@ -520,7 +520,7 @@
         "Keine Vorerkrankungen, keine Rucken-OPs",
         "Neurologische Untersuchung: [Befund zu erganzen]"
       ],
-      "modelOutline": "Aufnahmebericht / Notfalleinweisung\n\nPatient: 45 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Cauda-equina-Syndrom bei Bandscheibenvorfall L5/S1 rechts. Notfall.\n\nAnamnese: Der Patient klagt seit 2 Wochen uber starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein entlang des L5/S1-Dermatoms. Seit heute besteht zusatzlich eine perianale Taubheit und ein unsicheres Gefuhl beim Wasserlassen. Der Patient kann die Blase nicht vollstandig entleeren. Keine Stuhlinkontinenz. Keine Beinschwache. Kein Fieber.\n\nNeurologischer Befund: Orientierende Untersuchung. [Motorik, Sensibilitat, Reflexe (PSR, ASR), Babinski, Reithosenareal zu erganzen].\n\nDiagnostik: Notfall-MRT der Lendenwirbelsaule (T1, T2, STIR-Sequenzen) zum Nachweis/Ausschluss einer Cauda-Kompression.\n\nProcedere: Bei Nachweis einer Cauda-Kompression: notfallmassige neurochirurgische Vorstellung und Dekompression innerhalb von 24-48 Stunden. Bei unauffalligem MRT: stationare Uberwachung, urologische Mitbeurteilung.\n\nAufklarung: Der Patient wurde uber die Dringlichkeit der Situation, die Notwendigkeit einer MRT-Untersuchung und die mogliche Notfalloperation aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht / Notfalleinweisung\n\nPatient: 45 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Cauda-equina-Syndrom bei Bandscheibenvorfall L5/S1 rechts. Notfall.\n\nAnamnese: Der Patient klagt seit 2 Wochen uber starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein entlang des L5/S1-Dermatoms. Seit heute besteht zusatzlich eine perianale Taubheit und ein unsicheres Gefuhl beim Wasserlassen. Der Patient kann die Blase nicht vollstandig entleeren. Keine Stuhlinkontinenz. Keine Beinschwache. Kein Fieber.\n\nNeurologischer Befund: Orientierende Untersuchung. [Motorik, Sensibilitat, Reflexe (PSR, ASR), Babinski, Reithosenareal zu erganzen].\n\nDiagnostik: Notfall-MRT der Lendenwirbelsaule (T1, T2, STIR-Seqünzen) zum Nachweis/Ausschluss einer Cauda-Kompression.\n\nProcedere: Bei Nachweis einer Cauda-Kompression: notfallmassige neurochirurgische Vorstellung und Dekompression innerhalb von 24-48 Stunden. Bei unauffalligem MRT: stationare Uberwachung, urologische Mitbeurteilung.\n\nAufklarung: Der Patient wurde uber die Dringlichkeit der Situation, die Notwendigkeit einer MRT-Untersuchung und die mogliche Notfalloperation aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
       "task": "Ubergeben Sie den Patienten notfallmassig an den Neurochirurgen. Verwenden Sie das ISBAR-Schema.",
@@ -536,7 +536,7 @@
         "Cauda-equina-Syndrom bei Bandscheibenvorfall (Hauptverdacht)",
         "Spondylodiszitis mit Abszessbildung",
         "Wirbelkorpermetastase / spinale Raumforderung",
-        "Akute Querschnittssymptomatik (Myelonkompression hoher)",
+        "Akute Qürschnittssymptomatik (Myelonkompression hoher)",
         "Guillain-Barre-Syndrom (aszendierende Polyradikulitis)"
       ],
       "plan": [
@@ -555,7 +555,7 @@
       "Spondylodiszitis",
       "Myelonkompression",
       "Dermatom",
-      "Querschnittslahmung",
+      "Qürschnittslahmung",
       "Guillain-Barre-Syndrom",
       "Miktionsstorung"
     ],
@@ -699,84 +699,84 @@
       "setting": "Notaufnahme. Der Patient ist wach und orientiert, aber sichtlich angespannt. Die RR-Messung in der Anmeldung bestatigt die starke Hypertonie.",
       "patientRole": {
         "age": 62,
-        "gender": "maennlich",
-        "chiefComplaint": "Starke Hinterkopfschmerzen, Sehstoerungen, thorakales Druckgefuehl, RR 220/130 mmHg",
-        "history": "Arterielle Hypertonie seit 20 Jahren, Adipositas (BMI 32), Hypercholesterinaemie. Keine bekannte KHK. Keine Nierenerkrankung bekannt.",
+        "gender": "männlich",
+        "chiefComplaint": "Starke Hinterkopfschmerzen, Sehstörungen, thorakales Druckgefühl, RR 220/130 mmHg",
+        "history": "Arterielle Hypertonie seit 20 Jahren, Adipositas (BMI 32), Hypercholesterinämie. Keine bekannte KHK. Keine Nierenerkrankung bekannt.",
         "medications": "Amlodipin 10 mg 1-0-0, Candesartan 16 mg 1-0-0, HCT 25 mg 1-0-0",
         "allergies": "Keine bekannten"
       },
       "doctorTasks": [
-        "Erfragen Sie die Symptome einer hypertensiven Krise: Kopfschmerzen, Sehstoerungen, Brustschmerz, Atemnot, neurologische Symptome.",
-        "Pruefen Sie die Medikamenteneinnahme: Korrekte Einnahme? Neue Medikamente? Absetzen oder Aenderungen?",
-        "Fragen Sie nach moeglichen Ausloesern: Stress, Alkohol, Drogen, NSAR-Einnahme, Cortison.",
-        "Ordnen Sie die notfallmaessige Diagnostik an: EKG, Labor (Herzenzyme, Nierenwerte), Fundoskopie.",
+        "Erfragen Sie die Symptome einer hypertensiven Krise: Kopfschmerzen, Sehstörungen, Brustschmerz, Atemnot, neurologische Symptome.",
+        "Prüfen Sie die Medikamenteneinnahme: Korrekte Einnahme? Neue Medikamente? Absetzen oder Änderungen?",
+        "Fragen Sie nach möglichen Auslösern: Stress, Alkohol, Drogen, NSAR-Einnahme, Cortison.",
+        "Ordnen Sie die notfallmässige Diagnostik an: EKG, Labor (Herzenzyme, Nierenwerte), Fundoskopie.",
         "Dokumentieren Sie die Befunde und leiten Sie die antihypertensive Therapie ein."
       ],
       "mustAsk": [
-        "Nehmen Sie Ihre Blutdruckmedikamente taeglich und regelmaessig ein?",
+        "Nehmen Sie Ihre Blutdruckmedikamente täglich und regelmässig ein?",
         "Hatten Sie in letzter Zeit Stress oder starke Aufregung?",
-        "Haben Sie zusaetzlich Medikamente eingenommen wie Schmerzmittel (IBU, Diclofenac) oder Erkältungsmittel?",
-        "Hatten Sie schon einmal einen Schlaganfall oder eine Durchblutungsstoerung des Gehirns?",
-        "Haben Sie Atemnot oder das Gefuehl, dass Wasser in den Beinen ist?",
-        "Trinken Sie regelmaessig Alkohol? Und wie viel?"
+        "Haben Sie zusätzlich Medikamente eingenommen wie Schmerzmittel (IBU, Diclofenac) oder Erkältungsmittel?",
+        "Hatten Sie schon einmal einen Schlaganfall oder eine Durchblutungsstörung des Gehirns?",
+        "Haben Sie Atemnot oder das Gefühl, dass Wasser in den Beinen ist?",
+        "Trinken Sie regelmässig Alkohol? Und wie viel?"
       ],
       "redFlags": [
-        "RR > 180/120 + Endorganschaden = hypertensiver Notfall, sofortige Senkung noetig",
-        "Brustschmerz -> moegliche Myokardischaemie, EKG und Troponin sofort",
-        "Sehstoerungen -> hypertensive Retinopathie / Fundus hypertonicus, Augenarzt hinzuziehen",
-        "Neurologische Symptome -> hypertensiv bedingte zerebrale Ischaemie / hypertensive Enzephalopathie",
-        "Nierenfunktionseinschraenkung -> hypertensive Nephropathie, Reevaluation der Medikation"
+        "RR > 180/120 + Endorganschaden = hypertensiver Notfall, sofortige Senkung nötig",
+        "Brustschmerz -> mögliche Myokardischämie, EKG und Troponin sofort",
+        "Sehstörungen -> hypertensive Retinopathie / Fundus hypertonicus, Augenarzt hinzuziehen",
+        "Neurologische Symptome -> hypertensiv bedingte zerebrale Ischämie / hypertensive Enzephalopathie",
+        "Nierenfunktionseinschränkung -> hypertensive Nephropathie, Reevaluation der Medikation"
       ],
       "usefulPhrases": [
-        "Ihr Blutdruck ist sehr hoch. Wir muessen jetzt erst einmal die Werte senken und pruefen, ob bereits Schaeden an Organen entstanden sind.",
-        "Haben Sie die verschriebenen Medikamente in letzter Zeit regelmaessig eingenommen?",
+        "Ihr Blutdruck ist sehr hoch. Wir müssen jetzt erst einmal die Werte senken und prüfen, ob bereits Schäden an Organen entstanden sind.",
+        "Haben Sie die verschriebenen Medikamente in letzter Zeit regelmässig eingenommen?",
         "Wir legen jetzt einen Zugang und geben Ihnen ein blutdrucksenkendes Medikament. Danach machen wir ein EKG und nehmen Blut ab.",
-        "Keine Sorge, wir behalten Sie hier im Blick. Sobald der Blutdruck faellt, werden die Kopfschmerzen besser."
+        "Keine Sorge, wir behalten Sie hier im Blick. Sobald der Blutdruck fällt, werden die Kopfschmerzen besser."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Aufnahmebefund fuer den 62-jaehrigen Patienten mit hypertensiver Krise / hypertensivem Notfall.",
+      "task": "Verfassen Sie einen Aufnahmebefund für den 62-jährigen Patienten mit hypertensiver Krise / hypertensivem Notfall.",
       "requiredSections": [
         "Diagnose (hypertensive Krise vs. hypertensiver Notfall)",
         "Anamnese (Symptome, Medikamentenanamnese, Risikofaktoren)",
-        "Koerperliche Untersuchung (RR-Dokumentation, Fundoskopie, kardiopulmonaler Status)",
+        "Körperliche Untersuchung (RR-Dokumentation, Fundoskopie, kardiopulmonaler Status)",
         "Labor- und EKG-Befunde",
         "Eingeleitete Therapie",
         "Weiteres Procedere"
       ],
       "keyInformation": [
-        "62 Jahre, maennlich, bekannte Hypertonie seit 20 Jahren",
-        "RR 220/130 mmHg bei Aufnahme, Hinterkopfschmerzen, Sehstoerungen, thorakales Druckgefuehl",
-        "Medikation: Amlodipin, Candesartan, HCT (Einnahme zuletzt unregelmaessig?)",
+        "62 Jahre, männlich, bekannte Hypertonie seit 20 Jahren",
+        "RR 220/130 mmHg bei Aufnahme, Hinterkopfschmerzen, Sehstörungen, thorakales Druckgefühl",
+        "Medikation: Amlodipin, Candesartan, HCT (Einnahme zuletzt unregelmässig?)",
         "Keine neurologischen Herdsymptome, keine Atemnot",
-        "Endorganschaden ausgeschlossen: EKG o.B., Nierenwerte [zu ergaenzen]"
+        "Endorganschaden ausgeschlossen: EKG o.B., Nierenwerte [zu ergänzen]"
       ],
-      "modelOutline": "Aufnahmebericht\n\nPatient: 62 Jahre, maennlich\nAufnahmedatum: [Datum]\n\nDiagnose: Hypertensive Krise / Hypertensiver Notfall (V.a. Endorganschaden zum Zeitpunkt der Aufnahme).\n\nAnamnese: Der Patient wurde vom Hausarzt mit RR 220/130 mmHg eingewiesen. Er klagt ueber starke Hinterkopfschmerzen, verschwommenes Sehen und ein Druckgefuehl in der Brust. Atemnot wird verneint. Keine neurologischen Ausfallerscheinungen. Medikamentenanamnese: Amlodipin 10 mg, Candesartan 16 mg, HCT 25 mg. Die Einnahme sei in den letzten Wochen unregelmaessig gewesen bei Vergesslichkeit. Keine NSAR-Einnahme. Kein Alkohol in den letzten 24h.\n\nAufnahmebefund: [RR bei Aufnahme: 220/130 mmHg links/rechts, Puls]. Fundoskopie: [Fundus hypertonicus Grad?]. Kardiopulmonale Auskultation: [Herztoene, Lunge]. Kein Knocheloedem. Neurologisch: Hirnnerven intakt, keine Paresen.\n\nDiagnostik: EKG: [Sinushythmus, Zeichen der Linkshypertrophie?]. Labor: [Troponin, Kreatinin, GFR, Kalium, Blutzucker zu ergaenzen].\n\nTherapie: Urapidil 10 mg i.v.-Bolus, dann Perfusor nach Bedarf. Zielblutdruck: Senkung um 25% in der ersten Stunde.\n\nProcedere: Stationaere Aufnahme zur kontrollierten Blutdrucksenkung. Engmaschige RR-Kontrollen. Einstellung der oralen Medikation. Pruefung der Compliance und ggf. Anpassung der antihypertensiven Therapie.\n\nAufklaerung: Der Patient wurde ueber die Notwendigkeit der stationaeren Behandlung, die Risiken eines unkontrollierten Bluthochdrucks und die regelmaessige Medikamenteneinnahme aufgeklaert."
+      "modelOutline": "Aufnahmebericht\n\nPatient: 62 Jahre, männlich\nAufnahmedatum: [Datum]\n\nDiagnose: Hypertensive Krise / Hypertensiver Notfall (V.a. Endorganschaden zum Zeitpunkt der Aufnahme).\n\nAnamnese: Der Patient wurde vom Hausarzt mit RR 220/130 mmHg eingewiesen. Er klagt über starke Hinterkopfschmerzen, verschwommenes Sehen und ein Druckgefühl in der Brust. Atemnot wird verneint. Keine neurologischen Ausfallerscheinungen. Medikamentenanamnese: Amlodipin 10 mg, Candesartan 16 mg, HCT 25 mg. Die Einnahme sei in den letzten Wochen unregelmässig gewesen bei Vergesslichkeit. Keine NSAR-Einnahme. Kein Alkohol in den letzten 24h.\n\nAufnahmebefund: [RR bei Aufnahme: 220/130 mmHg links/rechts, Puls]. Fundoskopie: [Fundus hypertonicus Grad?]. Kardiopulmonale Auskultation: [Herztöne, Lunge]. Kein Knochelödem. Neurologisch: Hirnnerven intakt, keine Paresen.\n\nDiagnostik: EKG: [Sinushythmus, Zeichen der Linkshypertrophie?]. Labor: [Troponin, Kreatinin, GFR, Kalium, Blutzucker zu ergänzen].\n\nTherapie: Urapidil 10 mg i.v.-Bolus, dann Perfusor nach Bedarf. Zielblutdruck: Senkung um 25% in der ersten Stunde.\n\nProcedere: Stationäre Aufnahme zur kontrollierten Blutdrucksenkung. Engmaschige RR-Kontrollen. Einstellung der oralen Medikation. Prüfung der Compliance und ggf. Anpassung der antihypertensiven Therapie.\n\nAufklärung: Der Patient wurde über die Notwendigkeit der stationären Behandlung, die Risiken eines unkontrollierten Bluthochdrucks und die regelmässige Medikamenteneinnahme aufgeklärt."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Uebergeben Sie den Patienten an den Internisten/Oberarzt zur Entscheidung ueber die Aufnahmefaehigkeit und Therapiestrategie.",
+      "task": "Übergeben Sie den Patienten an den Internisten/Oberarzt zur Entscheidung über die Aufnahmefähigkeit und Therapiestrategie.",
       "handoverStructure": [
-        "I - Identifikation: 62 Jahre, maennlich",
-        "S - Situation: RR 220/130, Kopfschmerzen, Sehstoerungen, thorakales Druckgefuehl",
-        "B - Background: Langjaehrige Hypertonie, Adipositas, non-Compliance mit Medikamenten",
+        "I - Identifikation: 62 Jahre, männlich",
+        "S - Situation: RR 220/130, Kopfschmerzen, Sehstörungen, thorakales Druckgefühl",
+        "B - Background: Langjährige Hypertonie, Adipositas, non-Compliance mit Medikamenten",
         "A - Assessment: Hypertensive Krise/Notfall, bisher kein sicherer Endorganschaden, aber Risikokonstellation",
-        "R - Recommendation: Stationaere Aufnahme, kontrollierte RR-Senkung, Anpassung der Dauermedikation"
+        "R - Recommendation: Stationäre Aufnahme, kontrollierte RR-Senkung, Anpassung der Daürmedikation"
       ],
-      "expectedSummary": "Wir haben einen 62-jaehrigen Patienten mit schwerer hypertensiver Krise bei bekannter Hypertonie und unzureichender Medikamentencompliance. Der Blutdruck liegt bei 220/130 mmHg, begleitet von Kopfschmerzen, Sehstoerungen und thorakalem Druckgefuehl. Bisher keine sicheren Zeichen eines Endorganschadens, EKG unauffaellig. Ich empfehle eine stationaere Aufnahme zur kontrollierten Blutdrucksenkung mit Urapidil und Reevaluation der Dauermedikation.",
+      "expectedSummary": "Wir haben einen 62-jährigen Patienten mit schwerer hypertensiver Krise bei bekannter Hypertonie und unzureichender Medikamentencompliance. Der Blutdruck liegt bei 220/130 mmHg, begleitet von Kopfschmerzen, Sehstörungen und thorakalem Druckgefühl. Bisher keine sicheren Zeichen eines Endorganschadens, EKG unauffällig. Ich empfehle eine stationäre Aufnahme zur kontrollierten Blutdrucksenkung mit Urapidil und Reevaluation der Daürmedikation.",
       "differentials": [
         "Hypertensive Krise / Hypertensiver Notfall (Hauptdiagnose)",
-        "Akutes Koronarsyndrom (Brustschmerz, Troponinabklaerung)",
+        "Akutes Koronarsyndrom (Brustschmerz, Troponinabklärung)",
         "Hypertensive Enzephalopathie (cMRT bei neurologischen Symptomen)",
         "Phaochromozytom (selten, bei paroxysmaler Hypertonie)",
-        "Schilddruesenueberfunktion / thyreotoxische Krise"
+        "Schilddrüsenüberfunktion / thyreotoxische Krise"
       ],
       "plan": [
         "Urapidil i.v. als Bolus, dann Perfusor zur kontrollierten Senkung (25% in 1h)",
-        "Stationaere Aufnahme zur Ueberwachung",
+        "Stationäre Aufnahme zur Überwachung",
         "Echokardiographie zum Ausschluss einer hypertensiven Herzkrankheit",
-        "Nierenfunktion pruefen (Kreatinin, GFR, Urinstatus)",
+        "Nierenfunktion prüfen (Kreatinin, GFR, Urinstatus)",
         "Medikation anpassen: Compliance verbessern, ggf. auf Fixkombination umstellen",
-        "Ernaehrungsberatung und Lebensstilaenderung besprechen"
+        "Ernährungsberatung und Lebensstiländerung besprechen"
       ]
     },
     "terminology": [
@@ -792,11 +792,11 @@
       "Non-Compliance"
     ],
     "rubric": {
-      "historyTaking": "Erfassung aller Symptome einer hypertensiven Krise. Medikamentenanamnese einschliesslich Compliance und moeglicher Ausloeser.",
-      "patientCommunication": "Klare Kommunikation der Dringlichkeit ohne Panik. Verstaendliche Erklaerung der Behandlungsschritte.",
-      "medicalLogic": "Korrekte Differenzierung zwischen Krise und Notfall. Angemessene Senkungsstrategie und Ueberwachung.",
-      "documentation": "Vollstaendiger Aufnahmebefund mit Endorganstatus. Labor, EKG und Fundoskopie dokumentiert.",
-      "doctorToDoctorCommunication": "Praeise Uebergabe mit Entscheidungsfrage. Therapieplan klar formuliert.",
+      "historyTaking": "Erfassung aller Symptome einer hypertensiven Krise. Medikamentenanamnese einschliesslich Compliance und möglicher Auslöser.",
+      "patientCommunication": "Klare Kommunikation der Dringlichkeit ohne Panik. Verständliche Erklärung der Behandlungsschritte.",
+      "medicalLogic": "Korrekte Differenzierung zwischen Krise und Notfall. Angemessene Senkungsstrategie und Überwachung.",
+      "documentation": "Vollständiger Aufnahmebefund mit Endorganstatus. Labor, EKG und Fundoskopie dokumentiert.",
+      "doctorToDoctorCommunication": "Präise Übergabe mit Entscheidungsfrage. Therapieplan klar formuliert.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache adaquat. Kommunikation mit dem Patienten klar und nicht alarmistisch."
     },
     "tags": [
@@ -810,105 +810,105 @@
   {
     "id": "exam_008",
     "title": "Postoperative Komplikation - V.a. Nachblutung nach Appendektomie",
-    "case": "Ein 34-jaehriger Patient wurde vor 6 Stunden appendektomiert. Der postoperative Verlauf war zunaechst unauffaellig, aber seit 30 Minuten faellt ein sinkender Blutdruck (95/60 mmHg), steigender Puls (110/min) und zunehmender Schmerz im rechten Unterbauch auf. Der Patient ist blass und klagt ueber Uebelkeit.",
+    "case": "Ein 34-jähriger Patient wurde vor 6 Stunden appendektomiert. Der postoperative Verlauf war zunächst unauffällig, aber seit 30 Minuten fällt ein sinkender Blutdruck (95/60 mmHg), steigender Puls (110/min) und zunehmender Schmerz im rechten Unterbauch auf. Der Patient ist blass und klagt über Übelkeit.",
     "part1_patientConversation": {
-      "setting": "Chirurgische Station, postoperativer Bereich. Der Patient wurde vor 6 Stunden von einer laparoskopischen Appendektomie zurueckverlegt.",
+      "setting": "Chirurgische Station, postoperativer Bereich. Der Patient wurde vor 6 Stunden von einer laparoskopischen Appendektomie zurückverlegt.",
       "patientRole": {
         "age": 34,
-        "gender": "maennlich",
-        "chiefComplaint": "Zunehmende Schmerzen im rechten Unterbauch, Uebelkeit, Hypotonie (RR 95/60), Tachykardie (110/min)",
+        "gender": "männlich",
+        "chiefComplaint": "Zunehmende Schmerzen im rechten Unterbauch, Übelkeit, Hypotonie (RR 95/60), Tachykardie (110/min)",
         "history": "Bisher gesund. Akute Appendizitis laparoskopisch appendektomiert vor 6 Stunden.",
         "medications": "Postoperativ: Metamizol 1 g bei Bedarf, Cefuroxim 1,5 g 1-1-1, niedermolekulares Heparin (Enoxaparin) s.c.",
         "allergies": "Keine bekannten"
       },
       "doctorTasks": [
-        "Erheben Sie eine gezielte postoperative Anamnese: Schmerzverlauf, Blutdruckabfall, Fieber, Uebelkeit.",
-        "Pruefen Sie die Vitalparameter und fuehren Sie eine koerperliche Untersuchung durch (Abdomen, Wundverhaeltnisse).",
-        "Fragen Sie nach moeglichen Blutungszeichen: Schwindel, Kaltschweissigkeit, Durstgefuehl, Unruhe.",
-        "Ordnen Sie die notfallmaessige Diagnostik an: Blutbild, BB-Kontrolle, Gerinnung, Sonographie Abdomen.",
+        "Erheben Sie eine gezielte postoperative Anamnese: Schmerzverlauf, Blutdruckabfall, Fieber, Übelkeit.",
+        "Prüfen Sie die Vitalparameter und führen Sie eine körperliche Untersuchung durch (Abdomen, Wundverhältnisse).",
+        "Fragen Sie nach möglichen Blutungszeichen: Schwindel, Kaltschweissigkeit, Durstgefühl, Unruhe.",
+        "Ordnen Sie die notfallmässige Diagnostik an: Blutbild, BB-Kontrolle, Gerinnung, Sonographie Abdomen.",
         "Informieren Sie den Chirurgen und bereiten Sie eine operative Revision vor."
       ],
       "mustAsk": [
         "Hatten Sie Blut im Urin oder auf der Toilette bemerkt?",
         "Ist Ihnen schwindelig oder schwarz vor Augen geworden?",
-        "Haben Sie starken Durst oder ein Gefuehl der Uebelkeit?",
+        "Haben Sie starken Durst oder ein Gefühl der Übelkeit?",
         "Wie stark sind die Schmerzen im Vergleich zu vor der OP?",
-        "Haben Sie Fieber oder Schuettelfrost?"
+        "Haben Sie Fieber oder Schüttelfrost?"
       ],
       "redFlags": [
-        "Sinkender RR + steigender Puls = hypovolaemer Schock bis zum Beweis des Gegenteils",
-        "Zunehmende Schmerzen nach anfaenglich guter Schmerzkontrolle = Blutungsverdacht",
-        "Blasse, Kaltschweissigkeit, Unruhe = Zeichen des haemorrhagischen Schocks",
-        "Tachypnoe -> moegliche Zwerchfellreizung bei intraabdomineller Blutung",
-        "Schnelle Verschlechterung des Allgemeinzustands -> notfallmaessige chirurgische Revision"
+        "Sinkender RR + steigender Puls = hypovolämer Schock bis zum Beweis des Gegenteils",
+        "Zunehmende Schmerzen nach anfänglich guter Schmerzkontrolle = Blutungsverdacht",
+        "Blasse, Kaltschweissigkeit, Unruhe = Zeichen des hämorrhagischen Schocks",
+        "Tachypnö -> mögliche Zwerchfellreizung bei intraabdomineller Blutung",
+        "Schnelle Verschlechterung des Allgemeinzustands -> notfallmässige chirurgische Revision"
       ],
       "usefulPhrases": [
-        "Ich sehe, dass Ihre Vitalzeichen sich verschlechtern. Das koennte auf eine Nachblutung hindeuten, das muessen wir sofort abklaeren.",
+        "Ich sehe, dass Ihre Vitalzeichen sich verschlechtern. Das könnte auf eine Nachblutung hindeuten, das müssen wir sofort abklären.",
         "Wir legen jetzt einen zweiten Zugang, nehmen Blut ab und machen einen Ultraschall Ihres Bauches.",
-        "Ich habe bereits den Chirurgen informiert. Sollte sich der Verdacht bestaetigen, kann eine Nachoperation notwendig sein.",
-        "Bitte versuchen Sie, ruhig zu bleiben. Wir sind vorbereitet und kuemmern uns um alles Noetige."
+        "Ich habe bereits den Chirurgen informiert. Sollte sich der Verdacht bestätigen, kann eine Nachoperation notwendig sein.",
+        "Bitte versuchen Sie, ruhig zu bleiben. Wir sind vorbereitet und kümmern uns um alles Nötige."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Verlaufsbericht/Chirurgiebericht fuer den 34-jaehrigen Patienten mit V.a. postoperative Nachblutung nach Appendektomie.",
+      "task": "Verfassen Sie einen Verlaufsbericht/Chirurgiebericht für den 34-jährigen Patienten mit V.a. postoperative Nachblutung nach Appendektomie.",
       "requiredSections": [
         "Ausgangssituation (OP und postoperativer Verlauf)",
-        "Aktuelle Verschlechterung (Zeitpunkt, Symptome, Vitalparameter)",
+        "Aktülle Verschlechterung (Zeitpunkt, Symptome, Vitalparameter)",
         "Klinischer Untersuchungsbefund",
         "Diagnostik und Befunde (Hb-Kontrolle, Sono)",
         "Eingeleitete Massnahmen",
         "Weiteres Procedere (Revisions-OP)"
       ],
       "keyInformation": [
-        "34 Jahre, maennlich, laparoskopische Appendektomie vor 6 Stunden",
-        "Initial unauffaellig, seit 30 Minuten zunehmende Schmerzen, Uebelkeit, Hypotonie, Tachykardie",
+        "34 Jahre, männlich, laparoskopische Appendektomie vor 6 Stunden",
+        "Initial unauffällig, seit 30 Minuten zunehmende Schmerzen, Übelkeit, Hypotonie, Tachykardie",
         "Klinik: blass, kaltschweissig, Abdomen druckschmerzhaft rechter Unterbauch",
-        "Hb-Verlauf: prae-OP 14,5 g/dl -> aktuell [zu ergaenzen]",
-        "Sonographie: freie Fluessigkeit im rechten Unterbauch? [Befund]"
+        "Hb-Verlauf: prä-OP 14,5 g/dl -> aktüll [zu ergänzen]",
+        "Sonographie: freie Flüssigkeit im rechten Unterbauch? [Befund]"
       ],
-      "modelOutline": "Verlaufsbericht / Chirurgischer Notfallbericht\n\nPatient: 34 Jahre, maennlich\nDatum/Uhrzeit: [Datum, Uhrzeit]\n\nOP: Laparoskopische Appendektomie vor 6 Stunden. Intraoperativ: akute phlegmonoese Appendizitis, keine Besonderheiten.\n\nPostoperativer Verlauf: Initial stabil. Seit circa 30 Minuten (18:30 Uhr) zunehmende Schmerzen im rechten Unterbauch, Uebelkeit, Blutdruckabfall auf 95/60 mmHg bei Puls 110/min. Patient ist blass, kaltschweissig und unruhig.\n\nKlinischer Befund: Abdomen weich, diffus druckschmerzhaft im rechten Unterbauch, leichte Abwehrspannung. Wundverhaeltnisse: Zugaenge reizlos, kein sichtbares Haematom. [Vitalparameter im Verlauf].\n\nDiagnostik: Notfall-Labor: Hb [aktuell, Tendenz fallend]. Gerinnung [p-a, INR]. Sono Abdomen: freie Fluessigkeit im Douglass-Raum und rechten Unterbauch [Befund].\n\nMassnahmen: Zweiter peripherer Zugang, Volumengabe (Vollelektrolytloesung 500 ml), Kreuzblut und Bereitstellung von 2 EKs. Chirurg informiert.\n\nProcedere: Notfallmaessige operative Revision geplant (laparoskopisch/offen). Aufklaerung zur Revisions-OP erfolgt."
+      "modelOutline": "Verlaufsbericht / Chirurgischer Notfallbericht\n\nPatient: 34 Jahre, männlich\nDatum/Uhrzeit: [Datum, Uhrzeit]\n\nOP: Laparoskopische Appendektomie vor 6 Stunden. Intraoperativ: akute phlegmonöse Appendizitis, keine Besonderheiten.\n\nPostoperativer Verlauf: Initial stabil. Seit circa 30 Minuten (18:30 Uhr) zunehmende Schmerzen im rechten Unterbauch, Übelkeit, Blutdruckabfall auf 95/60 mmHg bei Puls 110/min. Patient ist blass, kaltschweissig und unruhig.\n\nKlinischer Befund: Abdomen weich, diffus druckschmerzhaft im rechten Unterbauch, leichte Abwehrspannung. Wundverhältnisse: Zugänge reizlos, kein sichtbares Hämatom. [Vitalparameter im Verlauf].\n\nDiagnostik: Notfall-Labor: Hb [aktüll, Tendenz fallend]. Gerinnung [p-a, INR]. Sono Abdomen: freie Flüssigkeit im Douglass-Raum und rechten Unterbauch [Befund].\n\nMassnahmen: Zweiter peripherer Zugang, Volumengabe (Vollelektrolytlösung 500 ml), Kreuzblut und Bereitstellung von 2 EKs. Chirurg informiert.\n\nProcedere: Notfallmässige operative Revision geplant (laparoskopisch/offen). Aufklärung zur Revisions-OP erfolgt."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Uebergeben Sie den Patienten notfallmaessig an den Chirurgen/Oberarzt zur Entscheidung ueber die operative Revision.",
+      "task": "Übergeben Sie den Patienten notfallmässig an den Chirurgen/Oberarzt zur Entscheidung über die operative Revision.",
       "handoverStructure": [
-        "I - Identifikation: 34 Jahre, maennlich, 6h post-appendektomie",
+        "I - Identifikation: 34 Jahre, männlich, 6h post-appendektomie",
         "S - Situation: Akute Verschlechterung, Hypotonie, Tachykardie, Schmerzzunahme, V.a. Nachblutung",
         "B - Background: Akute Appendizitis, laparoskopisch operiert, initial stabil",
-        "A - Assessment: Klinisch und sonographisch freie Fluessigkeit, Hb-Tendenz fallend. Haemorrhagischer Schock droht.",
-        "R - Recommendation: Notfallmaessige operative Revision, Volumentherapie laeuft, Kreuzblut ist bestellt"
+        "A - Assessment: Klinisch und sonographisch freie Flüssigkeit, Hb-Tendenz fallend. Hämorrhagischer Schock droht.",
+        "R - Recommendation: Notfallmässige operative Revision, Volumentherapie läuft, Kreuzblut ist bestellt"
       ],
-      "expectedSummary": "Wir haben einen 34-jaehrigen Patienten 6 Stunden nach laparoskopischer Appendektomie mit akuter klinischer Verschlechterung. Der Blutdruck faellt, der Puls steigt, die Schmerzen nehmen zu, der Patient ist blass und kaltschweissig. Sonographisch zeigt sich freie Fluessigkeit. Ich vermute eine arterielle Nachblutung und halte eine notfallmaessige Revisions-OP fuer indiziert. Volumentherapie und Kreuzblut sind vorbereitet.",
+      "expectedSummary": "Wir haben einen 34-jährigen Patienten 6 Stunden nach laparoskopischer Appendektomie mit akuter klinischer Verschlechterung. Der Blutdruck fällt, der Puls steigt, die Schmerzen nehmen zu, der Patient ist blass und kaltschweissig. Sonographisch zeigt sich freie Flüssigkeit. Ich vermute eine arterielle Nachblutung und halte eine notfallmässige Revisions-OP für indiziert. Volumentherapie und Kreuzblut sind vorbereitet.",
       "differentials": [
-        "Postoperative Nachblutung (am wahrscheinlichsten, arterielle oder kapillare Blutung aus Appendixstumpf oder Gefaess)",
-        "Intraabdominelle Infektion / fruehe Peritonitis (DD, eher messbar an Fieber und steigenden Infektparametern)",
-        "Ileus / paralytischer Ileus (eher Distension und fehlende Darmgeraeusche)"
+        "Postoperative Nachblutung (am wahrscheinlichsten, arterielle oder kapillare Blutung aus Appendixstumpf oder Gefäss)",
+        "Intraabdominelle Infektion / frühe Peritonitis (DD, eher messbar an Fieber und steigenden Infektparametern)",
+        "Ileus / paralytischer Ileus (eher Distension und fehlende Darmgeräusche)"
       ],
       "plan": [
-        "Sofortige operative Revision (laparoskopisch: Einblick, Blutstillung, Spuelung)",
-        "Volumentherapie fortsetzen: VEL 500-1000 ml, ggf. Noradrenalin bei Kreislaufinstabilitaet",
+        "Sofortige operative Revision (laparoskopisch: Einblick, Blutstillung, Spülung)",
+        "Volumentherapie fortsetzen: VEL 500-1000 ml, ggf. Noradrenalin bei Kreislaufinstabilität",
         "Erythrozytenkonzentrate bereitstellen (2-4 EKs)",
-        "Postoperativ: intensivmedizinische Ueberwachung, Hb- und Gerinnungskontrollen",
-        "Ursachenanalyse: Warum ist es zur Blutung gekommen? (Gerinnungsstatus, Gefaessverletzung intraoperativ)"
+        "Postoperativ: intensivmedizinische Überwachung, Hb- und Gerinnungskontrollen",
+        "Ursachenanalyse: Warum ist es zur Blutung gekommen? (Gerinnungsstatus, Gefässverletzung intraoperativ)"
       ]
     },
     "terminology": [
       "postoperative Nachblutung",
-      "haemorrhagischer Schock",
+      "hämorrhagischer Schock",
       "Revisions-OP",
       "Appendektomie",
-      "Hypovolaemie",
+      "Hypovolämie",
       "Noradrenalin",
       "Kreuzblut",
-      "freie intraabdominelle Fluessigkeit",
+      "freie intraabdominelle Flüssigkeit",
       "Peritonitis",
       "Erythrozytenkonzentrat (EK)"
     ],
     "rubric": {
-      "historyTaking": "Fokussierte postoperative Anamnese unter Zeitdruck. Alle Schockzeichen und Blutungsquellen wurden erfragt.",
+      "historyTaking": "Fokussierte postoperative Anamnese unter Zeitdruck. Alle Schockzeichen und Blutungsqüllen wurden erfragt.",
       "patientCommunication": "Klare, ehrliche Kommunikation der Notfallsituation. Beruhigend, aber ohne die Dringlichkeit zu verschleiern.",
-      "medicalLogic": "Korrekte Erkennung eines haemorrhagischen Schocks. Angemessene Prioritaeten: Volumengabe, Kreuzblut, OP-Vorbereitung.",
-      "documentation": "Praeiser Verlaufsbericht mit Zeitachse, Vitalparametern und diagnostischen Schritten. Vollstaendig fuer OP-Indikation.",
-      "doctorToDoctorCommunication": "Strukturierte und dringliche Uebergabe. Entscheidungsrelevante Informationen klar benannt.",
+      "medicalLogic": "Korrekte Erkennung eines hämorrhagischen Schocks. Angemessene Prioritäten: Volumengabe, Kreuzblut, OP-Vorbereitung.",
+      "documentation": "Präiser Verlaufsbericht mit Zeitachse, Vitalparametern und diagnostischen Schritten. Vollständig für OP-Indikation.",
+      "doctorToDoctorCommunication": "Strukturierte und dringliche Übergabe. Entscheidungsrelevante Informationen klar benannt.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache in der Chirurgie sicher angewandt."
     },
     "tags": [
@@ -922,40 +922,40 @@
   },
   {
     "id": "exam_009",
-    "title": "Paediatrisches Fieber – V.a. fieberhafter Infekt bei einem Kleinkind",
-    "case": "Eine 28-jaehrige Mutter kommt mit ihrem 2-jaehrigen Sohn in die Kinderarztpraxis. Das Kind hat seit 2 Tagen Fieber bis 39,5 Grad, ist weinerlich und trinkt schlecht. Die Mutter ist sehr besorgt, da das Kind noch nie so hohes Fieber hatte. Heute habe das Kind auch erbrochen.",
+    "title": "Pädiatrisches Fieber – V.a. fieberhafter Infekt bei einem Kleinkind",
+    "case": "Eine 28-jährige Mutter kommt mit ihrem 2-jährigen Sohn in die Kinderarztpraxis. Das Kind hat seit 2 Tagen Fieber bis 39,5 Grad, ist weinerlich und trinkt schlecht. Die Mutter ist sehr besorgt, da das Kind noch nie so hohes Fieber hatte. Heute habe das Kind auch erbrochen.",
     "part1_patientConversation": {
-      "setting": "Kinderarztpraxis, Sprechstunde. Die Mutter ist besorgt. Das Kind ist unruhig und quengelig, spielt aber noch auf dem Arm der Mutter.",
+      "setting": "Kinderarztpraxis, Sprechstunde. Die Mutter ist besorgt. Das Kind ist unruhig und qüngelig, spielt aber noch auf dem Arm der Mutter.",
       "patientRole": {
         "age": 2,
-        "gender": "maennlich",
-        "chiefComplaint": "Fieber bis 39,5 Grad seit 2 Tagen, Erbrechen, Trinkschwaeche, Unruhe",
-        "history": "Bisher gesund, keine chronischen Erkrankungen. Fruehgeburt in SSW 35+4, unkompliziert. Impfungen: bis zur 3. 6-fach-Impfung, MMR noch nicht.",
-        "medications": "Paracetamol-Zaepfchen 125 mg alle 6-8 Stunden (bisher 3 Gaben, Fieber sinkt nur kurz)",
+        "gender": "männlich",
+        "chiefComplaint": "Fieber bis 39,5 Grad seit 2 Tagen, Erbrechen, Trinkschwäche, Unruhe",
+        "history": "Bisher gesund, keine chronischen Erkrankungen. Frühgeburt in SSW 35+4, unkompliziert. Impfungen: bis zur 3. 6-fach-Impfung, MMR noch nicht.",
+        "medications": "Paracetamol-Zäpfchen 125 mg alle 6-8 Stunden (bisher 3 Gaben, Fieber sinkt nur kurz)",
         "allergies": "Keine bekannten"
       },
       "doctorTasks": [
         "Erheben Sie eine kinderanamnestische Anamnese bei der Mutter: Fieberverlauf, Begleitsymptome, Trinkverhalten.",
         "Fragen Sie gezielt nach Red Flags im Kindesalter: Meningismus, Exanthem, Atemnot, Krampfanfall.",
-        "Pruefen Sie den Impfstatus des Kindes.",
-        "Fuehren Sie eine vollstaendige kinderuntersuchung durch (Haut, Rachen, Lunge, Abdomen, Meningezeichen, Tympanon).",
-        "Geben Sie der Mutter eine verstaendliche Handlungsanweisung zum Fiebermanagement und Beratung zu Alarmzeichen."
+        "Prüfen Sie den Impfstatus des Kindes.",
+        "Führen Sie eine vollständige kinderuntersuchung durch (Haut, Rachen, Lunge, Abdomen, Meningezeichen, Tympanon).",
+        "Geben Sie der Mutter eine verständliche Handlungsanweisung zum Fiebermanagement und Beratung zu Alarmzeichen."
       ],
       "mustAsk": [
         "Wann hatte das Kind das letzte Mal Urin gemacht? Wie oft?",
-        "Hat das Kind Durchfall oder haeufigen Stuhlgang?",
+        "Hat das Kind Durchfall oder häufigen Stuhlgang?",
         "Hatte das Kind schon einmal einen Fieberkrampf?",
         "Trinkt das Kind noch? Nimmt es die Brust oder die Flasche noch an?",
         "Hat das Kind einen Hautausschlag?",
         "Gab es Kontakt zu anderen kranken Kindern in der Kita oder Familie?"
       ],
       "redFlags": [
-        "Fieber > 3 Tage, keine Besserung -> Abklaerung auf ernste Infektion",
-        "Trinkschwaeche / kein nasser Urin > 6 Stunden -> Dehydratationsgefahr bei Kleinkindern",
-        "Meningezeichen (Nackensteifigkeit, Bae-Binski positiv) -> Meningitis, Notfall",
-        "Petechien / nicht wegdrueckbares Exanthem -> Meningokokkensepsis, lebensbedrohlich",
-        "Tachypnoe, Einziehungen, Nasenfluegeln -> Pneumonie / Bronchiolitis",
-        "Fieberkrampf > 15 Minuten oder fokal -> Komplexer Fieberkrampf, stationaer abklaeren"
+        "Fieber > 3 Tage, keine Besserung -> Abklärung auf ernste Infektion",
+        "Trinkschwäche / kein nasser Urin > 6 Stunden -> Dehydratationsgefahr bei Kleinkindern",
+        "Meningezeichen (Nackensteifigkeit, Bä-Binski positiv) -> Meningitis, Notfall",
+        "Petechien / nicht wegdrückbares Exanthem -> Meningokokkensepsis, lebensbedrohlich",
+        "Tachypnö, Einziehungen, Nasenflügeln -> Pneumonie / Bronchiolitis",
+        "Fieberkrampf > 15 Minuten oder fokal -> Komplexer Fieberkrampf, stationär abklären"
       ],
       "usefulPhrases": [
         "Ich verstehe Ihre Sorge. Fieber bei Kleinkindern ist immer ein Grund, den Kinderarzt aufzusuchen.",
@@ -965,47 +965,47 @@
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Arztbrief / Dokumentationsbericht fuer den 2-jaehrigen Patienten mit Fieber und V.a. fieberhaften Infekt.",
+      "task": "Verfassen Sie einen Arztbrief / Dokumentationsbericht für den 2-jährigen Patienten mit Fieber und V.a. fieberhaften Infekt.",
       "requiredSections": [
         "Diagnose / Verdachtsdiagnose",
         "Anamnese (Fieberverlauf, Begleitsymptome, Trinkverhalten, Impfstatus)",
-        "Kinderaerztlicher Untersuchungsbefund",
-        "Differentialdiagnostische Ueberlegungen",
+        "Kinderärztlicher Untersuchungsbefund",
+        "Differentialdiagnostische Überlegungen",
         "Therapie und Massnahmen",
         "Elternberatung und Wiedervorstellungsempfehlung"
       ],
       "keyInformation": [
-        "2 Jahre, maennlich, Fieber seit 2 Tagen bis 39,5 Grad",
+        "2 Jahre, männlich, Fieber seit 2 Tagen bis 39,5 Grad",
         "Erbrechen heute, reduziertes Trinkverhalten",
-        "Medikation: Paracetamol-Zaeppfchen, unzureichende Wirkung",
+        "Medikation: Paracetamol-Zäppfchen, unzureichende Wirkung",
         "Impfstatus: 3 von 3 6-fach-Impfen erhalten, MMR noch nicht",
         "Keine bekannten Allergien, keine Vorerkrankungen"
       ],
-      "modelOutline": "Arztpraxisbericht\n\nPatient: 2 Jahre, maennlich\nDatum: [Datum]\n\nVerdachtsdiagnose: Fieberhafter Infekt, wahrscheinlich viral (oberer Respirationstrakt / gastrointestinal). Auszuschliessen: bakterielle Superinfektion, Harnwegsinfekt, Fieberkrampf bei Fieberanstieg.\n\nAnamnese (Mutter): Das Kind habe seit 2 Tagen Fieber bis 39,5 Grad rektal. Es sei weinerlich und quengelig. Erbrechen heute einmalig nach Trinken. Das Kind trinke deutlich weniger als ueblich, die letzten 6 Stunden kein nasser Urin mehr. Bisher kein Durchfall. Kein Husten oder Schnupfen. Kein Hautausschlag. Kontakt zu hustenden Kindern in der Kita vor einer Woche. Impfungen: bisher 3x 6-fach-Impfung. MMR noch nicht erfolgt.\n\nKinderaerztlicher Befund: Kind in reduziertem Allgemeinzustand. Temperatur 39,2 Grad rektal. Haut: keine Exantheme, keine Petechien. Rachen: leicht gerotet. Tympanon bds. unauffaellig. Lunge: vesikulaeres Atemgerausch, keine Nebengeraeusche. Abdomen: weich. Meningezeichen negativ. Trinkversuch: 30 ml Tee, dann erneutes Erbrechen.\n\nDifferentialdiagnosen: Viral bedingter fieberhafter Infekt (gastrointestinal vs. Atemwege), beginnender Harnwegsinfekt (Fieber ohne Fokus), beginnende Pneumonie (Fieber, reduzter AZ), Fruehsommer-Meningoenzephalitis (FSME) oder Meningitis (bei unvollstaendigem Impfschutz).\n\nTherapie: Ausreichende Fluesigkeitszufuhr angeordnet (Elektrolytloesung, Tee, ggf. stationaer bei anhaltender Trinkschwaeche). Fiebersenkung: Ibuprofen-Saft 100 mg (5 ml) abwechselnd mit Paracetamol-Zaeppfchen. Keine antibiotische Therapie ohne Fokus.\n\nElternberatung: Die Mutter wurde ueber die typischen Fieberverlaeufe bei viralen Infekten aufgeklaert. Alarmzeichen bei Wiedervorstellung: anhaltende Trinkschwaeche, erneutes Erbrechen, Verwirrtheit/Nichtaufweckbarkeit, Krampfanfall, Hautausschlag. Wiedervorstellung in 24 Stunden oder bei Verschechterung."
+      "modelOutline": "Arztpraxisbericht\n\nPatient: 2 Jahre, männlich\nDatum: [Datum]\n\nVerdachtsdiagnose: Fieberhafter Infekt, wahrscheinlich viral (oberer Respirationstrakt / gastrointestinal). Auszuschliessen: bakterielle Superinfektion, Harnwegsinfekt, Fieberkrampf bei Fieberanstieg.\n\nAnamnese (Mutter): Das Kind habe seit 2 Tagen Fieber bis 39,5 Grad rektal. Es sei weinerlich und qüngelig. Erbrechen heute einmalig nach Trinken. Das Kind trinke deutlich weniger als üblich, die letzten 6 Stunden kein nasser Urin mehr. Bisher kein Durchfall. Kein Husten oder Schnupfen. Kein Hautausschlag. Kontakt zu hustenden Kindern in der Kita vor einer Woche. Impfungen: bisher 3x 6-fach-Impfung. MMR noch nicht erfolgt.\n\nKinderärztlicher Befund: Kind in reduziertem Allgemeinzustand. Temperatur 39,2 Grad rektal. Haut: keine Exantheme, keine Petechien. Rachen: leicht gerotet. Tympanon bds. unauffällig. Lunge: vesikuläres Atemgerausch, keine Nebengeräusche. Abdomen: weich. Meningezeichen negativ. Trinkversuch: 30 ml Tee, dann erneutes Erbrechen.\n\nDifferentialdiagnosen: Viral bedingter fieberhafter Infekt (gastrointestinal vs. Atemwege), beginnender Harnwegsinfekt (Fieber ohne Fokus), beginnende Pneumonie (Fieber, reduzter AZ), Frühsommer-Meningönzephalitis (FSME) oder Meningitis (bei unvollständigem Impfschutz).\n\nTherapie: Ausreichende Flüsigkeitszufuhr angeordnet (Elektrolytlösung, Tee, ggf. stationär bei anhaltender Trinkschwäche). Fiebersenkung: Ibuprofen-Saft 100 mg (5 ml) abwechselnd mit Paracetamol-Zäppfchen. Keine antibiotische Therapie ohne Fokus.\n\nElternberatung: Die Mutter wurde über die typischen Fieberverläufe bei viralen Infekten aufgeklärt. Alarmzeichen bei Wiedervorstellung: anhaltende Trinkschwäche, erneutes Erbrechen, Verwirrtheit/Nichtaufweckbarkeit, Krampfanfall, Hautausschlag. Wiedervorstellung in 24 Stunden oder bei Verschechterung."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Sie moechten das Kind an den Oberarzt zur Entscheidung ueber eine stationaere Aufnahme uebergeben.",
+      "task": "Sie möchten das Kind an den Oberarzt zur Entscheidung über eine stationäre Aufnahme übergeben.",
       "handoverStructure": [
-        "I - Identifikation: 2 Jahre, maennlich",
-        "S - Situation: Fieber seit 2 Tagen bis 39,5 Grad, heute Erbrechen, Trinkschwaeche, reduzierter Urin",
-        "B - Background: Bisher gesund, Fruehgeburt SSW 35+4, MMR-Impfung noch nicht erfolgt",
+        "I - Identifikation: 2 Jahre, männlich",
+        "S - Situation: Fieber seit 2 Tagen bis 39,5 Grad, heute Erbrechen, Trinkschwäche, reduzierter Urin",
+        "B - Background: Bisher gesund, Frühgeburt SSW 35+4, MMR-Impfung noch nicht erfolgt",
         "A - Assessment: Fieberhafter Infekt ohne klaren Fokus, beginnende Dehydratation, hohe Infektlast",
-        "R - Recommendation: Ich empfehle eine stationaere Aufnahme zur parenteralen Flues-sigkeitstherapie und weiteren Diagnostik"
+        "R - Recommendation: Ich empfehle eine stationäre Aufnahme zur parenteralen Flüs-sigkeitstherapie und weiteren Diagnostik"
       ],
-      "expectedSummary": "Wir haben einen 2-jaehrigen Jungen mit seit 2 Tagen bestehendem Fieber bis 39,5 Grad, heute Erbrechen und deutlich reduziertem Trinkverhalten. Die letzten 6 Stunden kein nasser Urin mehr. Keine Meningezeichen, keine Petechien. Impfschutz unvollstaendig. Ich mache mir Sorgen wegen der beginnenden Dehydratation und empfehle eine stationaere Aufnahme zur parenteralen Flues-sigkeitstherapie und Diagnostik.",
+      "expectedSummary": "Wir haben einen 2-jährigen Jungen mit seit 2 Tagen bestehendem Fieber bis 39,5 Grad, heute Erbrechen und deutlich reduziertem Trinkverhalten. Die letzten 6 Stunden kein nasser Urin mehr. Keine Meningezeichen, keine Petechien. Impfschutz unvollständig. Ich mache mir Sorgen wegen der beginnenden Dehydratation und empfehle eine stationäre Aufnahme zur parenteralen Flüs-sigkeitstherapie und Diagnostik.",
       "differentials": [
         "Viraler Infekt (gastrointestinal oder respiratorisch)",
-        "Harnwegsinfekt (Fieber ohne Fokus, haeufig bei Kleinkindern)",
-        "Pneumonie (beginnend, Husten noch nicht praegnant)",
+        "Harnwegsinfekt (Fieber ohne Fokus, häufig bei Kleinkindern)",
+        "Pneumonie (beginnend, Husten noch nicht prägnant)",
         "Meningitis / Enzephalitis (Meningezeichen bisher negativ, aber engmaschig kontrollieren)",
-        "Fruehsommer-Meningoenzephalitis (unvollstaendiger Impfschutz)"
+        "Frühsommer-Meningönzephalitis (unvollständiger Impfschutz)"
       ],
       "plan": [
-        "Stationaere Aufnahme bei Trinkschwaeche und Dehydratationszeichen",
-        "Parenterale Flues-sigkeitstherapie (NaCl 0,45% + Glukose 5%)",
+        "Stationäre Aufnahme bei Trinkschwäche und Dehydratationszeichen",
+        "Parenterale Flüs-sigkeitstherapie (NaCl 0,45% + Glukose 5%)",
         "Blutentnahme: Blutbild, CRP, PCT, Blutkulturen, Elektrolyte",
         "Urinuntersuchung (Urinstix, ggf. Urinkultur, gewonnener Urin)",
-        "Rachenabstrich und ggf. RSV-/Influenza-Schnelltest",
+        "Rachenabstrich und ggf. RSV-/Inflünza-Schnelltest",
         "Engmaschiges Monitoring: Trinkverhalten, Urinausscheidung, Temperatur, Bewusstsein"
       ]
     },
@@ -1015,22 +1015,22 @@
       "Petechien",
       "Meningokokkensepsis",
       "Dehydratation",
-      "parenterale Fluessigkeitstherapie",
+      "parenterale Flüssigkeitstherapie",
       "Harnwegsinfekt (HWI)",
-      "Tachypnoe",
+      "Tachypnö",
       "Exanthem",
       "RSV-Infekt"
     ],
     "rubric": {
-      "historyTaking": "Vollstaendige paediatrische Anamnese. Impfstatus, Trinkverhalten und Red Flags systematisch erfragt.",
-      "patientCommunication": "Einfuehlsame und respektvolle Kommunikation mit der besorgten Mutter. Klare Handlungsanweisungen.",
-      "medicalLogic": "Angemessene Risikobewertung bei Kleinkind mit Fieber. Zeitgerechte Entscheidung zur stationaeren Aufnahme.",
+      "historyTaking": "Vollständige pädiatrische Anamnese. Impfstatus, Trinkverhalten und Red Flags systematisch erfragt.",
+      "patientCommunication": "Einfühlsame und respektvolle Kommunikation mit der besorgten Mutter. Klare Handlungsanweisungen.",
+      "medicalLogic": "Angemessene Risikobewertung bei Kleinkind mit Fieber. Zeitgerechte Entscheidung zur stationären Aufnahme.",
       "documentation": "Strukturierter kinderuntersuchungsbefund. Impfstatus und Differentialdiagnosen dokumentiert.",
       "doctorToDoctorCommunication": "Korrekte Schwerpunktsetzung auf Dehydratation und unklaren Infektfokus beim Kleinkind.",
       "germanAccuracy": "B2+/C1 Niveau. Kinderspezifische Fachsprache. Elternkommunikation adressatengerecht."
     },
     "tags": [
-      "paediatrie",
+      "pädiatrie",
       "fieber",
       "kleinkind",
       "dehydratation",
@@ -1040,123 +1040,123 @@
   },
   {
     "id": "exam_010",
-    "title": "Psychiatrischer Notfall – Angststoerung mit Suizidgedanken",
-    "case": "Eine 22-jaehrige Studentin stellt sich in der psychiatrischen Institutsambulanz vor. Sie leidet seit Wochen unter zunehmender Angestpanntheit, Schlafstoerungen und dem Gefuhl, den Alltag nicht mehr bewaltigen zu koennen. Auf Nachfrage berichtet sie, seit drei Tagen Gedanken zu haben, dass es besser ware, nicht mehr zu leben. Sie hat keine konkreten Plaene, aber die Gedanken machen ihr Angst.",
+    "title": "Psychiatrischer Notfall – Angststörung mit Suizidgedanken",
+    "case": "Eine 22-jährige Studentin stellt sich in der psychiatrischen Institutsambulanz vor. Sie leidet seit Wochen unter zunehmender Angestpanntheit, Schlafstörungen und dem Gefuhl, den Alltag nicht mehr bewaltigen zu können. Auf Nachfrage berichtet sie, seit drei Tagen Gedanken zu haben, dass es besser ware, nicht mehr zu leben. Sie hat keine konkreten Pläne, aber die Gedanken machen ihr Angst.",
     "part1_patientConversation": {
       "setting": "Psychiatrische Institutsambulanz. Die Patientin wirkt angespannt, vermeidet Augenkontakt, spricht aber offen auf Nachfrage.",
       "patientRole": {
         "age": 22,
         "gender": "weiblich",
-        "chiefComplaint": "Angestpanntheit, Schlafstoerungen, Suizidgedanken seit 3 Tagen (passiv, ohne Plan)",
+        "chiefComplaint": "Angestpanntheit, Schlafstörungen, Suizidgedanken seit 3 Tagen (passiv, ohne Plan)",
         "history": "Keine psychiatrische Vordiagnose. Keine Suizidversuche in der Vorgeschichte. Studiert im 4. Semester Medizin. Familienanamnese: Mutter mit behandelter Depression.",
-        "medications": "Keine regelmaessige Medikation. Gelegentlich Johanniskraut. Keine Psychopharmaka.",
+        "medications": "Keine regelmässige Medikation. Gelegentlich Johanniskraut. Keine Psychopharmaka.",
         "allergies": "Keine bekannten"
       },
       "doctorTasks": [
-        "Fuehren Sie eine strukturierte psychiatrische Anamnese durch (aktuelle Symptome, Verlauf, Ausloeser, Vorgeschichte).",
-        "Erfragen Sie die Suizidalitaet differenziert und direkt: Gedanken, konkrete Gedanken, Plaene, Vorbereitungen, Zugang zu Mitteln.",
-        "Erfragen Sie Schutzfaktoren: soziale Unterstuetzung, Zukunftsperspektiven, Behandlungsmotivation.",
+        "Führen Sie eine strukturierte psychiatrische Anamnese durch (aktülle Symptome, Verlauf, Auslöser, Vorgeschichte).",
+        "Erfragen Sie die Suizidalität differenziert und direkt: Gedanken, konkrete Gedanken, Pläne, Vorbereitungen, Zugang zu Mitteln.",
+        "Erfragen Sie Schutzfaktoren: soziale Unterstützung, Zukunftsperspektiven, Behandlungsmotivation.",
         "Dokumentieren Sie den psychopathologischen Befund.",
-        "Entscheiden Sie ueber die Dringlichkeit: stationaere vs. ambulante Behandlung.",
-        "Bereiten Sie eine Psychoedukation und Behandlungsempfehlung vor."
+        "Entscheiden Sie über die Dringlichkeit: stationäre vs. ambulante Behandlung.",
+        "Bereiten Sie eine Psychödukation und Behandlungsempfehlung vor."
       ],
       "mustAsk": [
-        "Hatten Sie Gedanken, dass es besser waere, nicht mehr zu leben?",
-        "Hatten Sie genauere Vorstellungen oder konkrete Plaene, wie Sie sich das Leben nehmen wuerden?",
+        "Hatten Sie Gedanken, dass es besser wäre, nicht mehr zu leben?",
+        "Hatten Sie genaüre Vorstellungen oder konkrete Pläne, wie Sie sich das Leben nehmen würden?",
         "Haben Sie Zugang zu Medikamenten, Waffen oder anderen Mitteln?",
         "Hatten Sie schon einmal solche Gedanken? Haben Sie jemals einen Versuch unternommen?",
-        "Haben Sie jemanden, mit dem Sie sprechen koennen, wenn es Ihnen schlecht geht?",
+        "Haben Sie jemanden, mit dem Sie sprechen können, wenn es Ihnen schlecht geht?",
         "Haben Sie in letzter Zeit Drogen oder Alkohol konsumiert?"
       ],
       "redFlags": [
-        "Aktive Suizidgedanken mit konkretem Plan und Vorbereitung -> sofort stationaere Einweisung",
-        "Zugang zu potenziell letalen Mitteln (Medikamente, Waffen, Hoehen) -> hohes Risiko",
-        "Fruehere Suizidversuche -> erhoehtes Risiko fuer erneute Versuche",
-        "Psychotische Symptome (Stimmenhoeren, Wahn) -> akute Psychose, stationaer",
-        "Fehlende soziale Unterstuetzung, Isolation -> erhoehtes Risiko",
-        "Alkohol- oder Drogenintoxikation -> akute Enthemmung, sofortiges Eingreifen noetig"
+        "Aktive Suizidgedanken mit konkretem Plan und Vorbereitung -> sofort stationäre Einweisung",
+        "Zugang zu potenziell letalen Mitteln (Medikamente, Waffen, Höhen) -> hohes Risiko",
+        "Frühere Suizidversuche -> erhöhtes Risiko für erneute Versuche",
+        "Psychotische Symptome (Stimmenhören, Wahn) -> akute Psychose, stationär",
+        "Fehlende soziale Unterstützung, Isolation -> erhöhtes Risiko",
+        "Alkohol- oder Drogenintoxikation -> akute Enthemmung, sofortiges Eingreifen nötig"
       ],
       "usefulPhrases": [
-        "Ich danke Ihnen, dass Sie so offen mit mir sprechen. Es ist sehr mutig, ueber diese Gedanken zu reden.",
-        "Viele Menschen mit starken Angsten haben solche Gedanken. Es ist wichtig, dass Sie darueber sprechen.",
-        "Wenn Sie mir mehr darueber erzaehlen koennen, was genau Sie sich vorstellen, kann ich besser einschaetzen, wie wir Ihnen helfen koennen.",
-        "Es gibt sehr gute Behandlungsmoeglichkeiten. Sie muessen das nicht alleine durchstehen.",
-        "Ich mache mir Sorgen um Sie und empfehle Ihnen eine stationaere Behandlung, damit Sie rund um die Uhr Unterstuezung haben."
+        "Ich danke Ihnen, dass Sie so offen mit mir sprechen. Es ist sehr mutig, über diese Gedanken zu reden.",
+        "Viele Menschen mit starken Angsten haben solche Gedanken. Es ist wichtig, dass Sie darüber sprechen.",
+        "Wenn Sie mir mehr darüber erzählen können, was genau Sie sich vorstellen, kann ich besser einschätzen, wie wir Ihnen helfen können.",
+        "Es gibt sehr gute Behandlungsmöglichkeiten. Sie müssen das nicht alleine durchstehen.",
+        "Ich mache mir Sorgen um Sie und empfehle Ihnen eine stationäre Behandlung, damit Sie rund um die Uhr Unterstüzung haben."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen psychiatrischen Aufnahmebefund / Konsiliarbericht fuer die 22-jaehrige Patientin mit Angeststoerung und Suizidgedanken.",
+      "task": "Verfassen Sie einen psychiatrischen Aufnahmebefund / Konsiliarbericht für die 22-jährige Patientin mit Angeststörung und Suizidgedanken.",
       "requiredSections": [
         "Verdachtsdiagnose(n) nach ICD-11",
-        "Aktuelle psychopathologische Symptomatik",
+        "Aktülle psychopathologische Symptomatik",
         "Fremd- und Eigenanamnese (biographisch, psychiatrisch, somatisch)",
-        "Suizidale Risikoeinschaetzung",
+        "Suizidale Risiköinschätzung",
         "Psychopathologischer Befund (AMDP-orientiert)",
         "Behandlungsplan und Procedere"
       ],
       "keyInformation": [
         "22 Jahre, weiblich, Medizinstudentin",
-        "Seit Wochen zunehmende Angestpanntheit, Schlafstoerungen vermehrt seit Praesentationsphase",
-        "Seit 3 Tagen passive Suizidgedanken, keine konkreten Plaene",
+        "Seit Wochen zunehmende Angestpanntheit, Schlafstörungen vermehrt seit Präsentationsphase",
+        "Seit 3 Tagen passive Suizidgedanken, keine konkreten Pläne",
         "Keine Suizidversuche, keine psychiatrische Vordiagnose",
         "Familienanamnese: Mutter mit Depression",
-        "Soziales Umfeld: Unterstuezung durch Freund und Eltern"
+        "Soziales Umfeld: Unterstüzung durch Freund und Eltern"
       ],
-      "modelOutline": "Psychiatrischer Aufnahmebefund\n\nPatientin: 22 Jahre, weiblich, Medizinstudentin\nDatum: [Datum]\n\nVerdachtsdiagnosen: 1. Angeststoerung (F41.1 generalisierte Angeststoerung? / F43.22 Anpassungsstoerung mit Angest?). 2. Suizidgedanken ohne konkreten Plan. 3. Schlafstoerung.\n\nAnamnese: Die Patientin stellt sich aufgrund zunehmender Angest, innerer Unruhe und Schlafstoerungen seit mehreren Wochen vor. Ausloesend sei die Praesentationsphase gewesen. Seit 3 Tagen bestehen passive Todesgedanken. Es gehe ihr durch den Kopf, dass es fuer alle einfacher waere, wenn sie nicht mehr da waere. Sie habe aber keine konkreten Vorstellungen oder Plaene. Sie habe noch nie versucht, sich das Leben zu nehmen. Suizid in der Familie: keine bekannt. Familienanamnese: Mutter mit behandelter depressiver Episode. Substanzkonsum: gelegentlich Alkohol, keine Drogen. Keine regelmaessige Medikation.\n\nPsychopathologischer Befund: Wach, bewusstseinsklar, allorientiert. Angestlich-getruebte Stimmungslage. Keine formalen Denkstoerungen. Keine inhaltlichen Denkstoerungen, keine psychotischen Symptome. Keine Ich-Stoerungen. Suizidgedanken passiv, kein Drang. Krankheitseinsicht und Behandlungsmotivation gegeben.\n\nRisikoeinschaetzung: Mittelgradig. Passiv-suizidale Gedanken ohne Plan, aber bei zunehmender Erschoepfung Risiko steigend.\n\nBehandlungsplan: Bei Schutzfaktoren (soziale Unterstuetzung, Krankheitseinsicht, Therapiemotivation) und fehlender akuter Eigengefaerdung ist eine ambulante Behandlung zunaechst vertretbar. Vorstellung auf der offenen Station zur Entscheidung ueber freiwillige Aufnahme. Psychoedukation, Beginn einer antidepressiven/angestloesenden Medikation nach psychiatrischer Vorstellung, Psychotherapie (VT)."
+      "modelOutline": "Psychiatrischer Aufnahmebefund\n\nPatientin: 22 Jahre, weiblich, Medizinstudentin\nDatum: [Datum]\n\nVerdachtsdiagnosen: 1. Angeststörung (F41.1 generalisierte Angeststörung? / F43.22 Anpassungsstörung mit Angest?). 2. Suizidgedanken ohne konkreten Plan. 3. Schlafstörung.\n\nAnamnese: Die Patientin stellt sich aufgrund zunehmender Angest, innerer Unruhe und Schlafstörungen seit mehreren Wochen vor. Auslösend sei die Präsentationsphase gewesen. Seit 3 Tagen bestehen passive Todesgedanken. Es gehe ihr durch den Kopf, dass es für alle einfacher wäre, wenn sie nicht mehr da wäre. Sie habe aber keine konkreten Vorstellungen oder Pläne. Sie habe noch nie versucht, sich das Leben zu nehmen. Suizid in der Familie: keine bekannt. Familienanamnese: Mutter mit behandelter depressiver Episode. Substanzkonsum: gelegentlich Alkohol, keine Drogen. Keine regelmässige Medikation.\n\nPsychopathologischer Befund: Wach, bewusstseinsklar, allorientiert. Angestlich-getrübte Stimmungslage. Keine formalen Denkstörungen. Keine inhaltlichen Denkstörungen, keine psychotischen Symptome. Keine Ich-Störungen. Suizidgedanken passiv, kein Drang. Krankheitseinsicht und Behandlungsmotivation gegeben.\n\nRisiköinschätzung: Mittelgradig. Passiv-suizidale Gedanken ohne Plan, aber bei zunehmender Erschöpfung Risiko steigend.\n\nBehandlungsplan: Bei Schutzfaktoren (soziale Unterstützung, Krankheitseinsicht, Therapiemotivation) und fehlender akuter Eigengefärdung ist eine ambulante Behandlung zunächst vertretbar. Vorstellung auf der offenen Station zur Entscheidung über freiwillige Aufnahme. Psychödukation, Beginn einer antidepressiven/angestlösenden Medikation nach psychiatrischer Vorstellung, Psychotherapie (VT)."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Uebergeben Sie die Patientin an den psychiatrischen Oberarzt zur Entscheidung ueber das Aufnahmeprozedere.",
+      "task": "Übergeben Sie die Patientin an den psychiatrischen Oberarzt zur Entscheidung über das Aufnahmeprozedere.",
       "handoverStructure": [
         "I - Identifikation: 22 Jahre, weiblich, Medizinstudentin",
-        "S - Situation: Angeststoerung mit passiven Suizidgedanken seit 3 Tagen, kein konkreter Plan",
+        "S - Situation: Angeststörung mit passiven Suizidgedanken seit 3 Tagen, kein konkreter Plan",
         "B - Background: Keine psychiatrische Vordiagnose, Mutter mit Depression, kein Substanzmissbrauch",
-        "A - Assessment: Mittelgradige akute Eigengefaerdung bei passiven Suizidgedanken. Psychopathologisch: angestlich-getruebt, keine Psychose.",
-        "R - Recommendation: Ich empfehle eine stationaere Aufnahme zur Krisenintervention oder alternativ eine engmaschige ambulante Anbindung mit Kontrolltermin in 24 Stunden"
+        "A - Assessment: Mittelgradige akute Eigengefärdung bei passiven Suizidgedanken. Psychopathologisch: angestlich-getrübt, keine Psychose.",
+        "R - Recommendation: Ich empfehle eine stationäre Aufnahme zur Krisenintervention oder alternativ eine engmaschige ambulante Anbindung mit Kontrolltermin in 24 Stunden"
       ],
-      "expectedSummary": "Wir haben eine 22-jaehrige Studentin mit seit Wochen zunehmenden Angsten und Schlafstoerungen bei Belastungen im Studium. Seit drei Tagen hat sie passive Todesgedanken, aber keinen konkreten Plan und keine Vorbereitungen. Sie hat heute den Weg in die Ambulanz gefunden. Schutzfaktoren sind ein unterstuezendes Umfeld und hohe Behandlungsmotivation. Ich empfehle eine stationaere Aufnahme zur Krisenintervention aufgrund des mittelgradigen akuten Risikos.",
+      "expectedSummary": "Wir haben eine 22-jährige Studentin mit seit Wochen zunehmenden Angsten und Schlafstörungen bei Belastungen im Studium. Seit drei Tagen hat sie passive Todesgedanken, aber keinen konkreten Plan und keine Vorbereitungen. Sie hat heute den Weg in die Ambulanz gefunden. Schutzfaktoren sind ein unterstüzendes Umfeld und hohe Behandlungsmotivation. Ich empfehle eine stationäre Aufnahme zur Krisenintervention aufgrund des mittelgradigen akuten Risikos.",
       "differentials": [
-        "Anpassungsstoerung mit Angest und depressiver Reaktion (F43.22)",
-        "Generalisierte Angeststoerung (F41.1)",
+        "Anpassungsstörung mit Angest und depressiver Reaktion (F43.22)",
+        "Generalisierte Angeststörung (F41.1)",
         "Erstmanifestation einer depressiven Episode (F32.0/1)",
-        "Panikstoerung mit Agoraphobie (F40.01)",
-        "Belastungsstoerung im Studium (Anpassungsstoerung, Z73)"
+        "Panikstörung mit Agoraphobie (F40.01)",
+        "Belastungsstörung im Studium (Anpassungsstörung, Z73)"
       ],
       "plan": [
         "Psychiatrische Aufnahme auf offene Station zur Krisenintervention",
-        "Bei freiwilliger Aufnahme: Einschaetzung nach PsychKG bei Suizidalitaet",
-        "Medikamentoes: Angestloesung (z.B. Quetiapin 25 mg oder Lorazepam initial, SSRI wie Escitalopram 5 mg als Aufdosierung)",
-        "Psychotherapie: taegliche Einzelgespraeche, Psychoedukation",
+        "Bei freiwilliger Aufnahme: Einschätzung nach PsychKG bei Suizidalität",
+        "Medikamentös: Angestlösung (z.B. Qütiapin 25 mg oder Lorazepam initial, SSRI wie Escitalopram 5 mg als Aufdosierung)",
+        "Psychotherapie: tägliche Einzelgespräche, Psychödukation",
         "Sozialdienst: Uni-Kontakt, Beurlaubung vom Studium organisieren",
-        "Evaluierung Entlassung: Fruehestens wenn Suizidgedanken dauerhaft ruecklaeufig, therapeutische Perspektive etabliert"
+        "Evaluierung Entlassung: Frühestens wenn Suizidgedanken daürhaft rückläufig, therapeutische Perspektive etabliert"
       ]
     },
     "terminology": [
-      "Suizidalitaet",
-      "Angeststoerung (generalisiert)",
-      "Anpassungsstoerung",
+      "Suizidalität",
+      "Angeststörung (generalisiert)",
+      "Anpassungsstörung",
       "Psychopathologischer Befund (AMDP)",
       "Krankheitseinsicht",
       "PsychKG (Psychisch-Kranken-Gesetz)",
       "Krisenintervention",
       "SSRI (selektive Serotonin-Wiederaufnahmehemmer)",
-      "Psychoedukation",
-      "Eigengefaehrdung"
+      "Psychödukation",
+      "Eigengefährdung"
     ],
     "rubric": {
-      "historyTaking": "Sensible, direkte und differenzierte Erfragung der Suizidalitaet. Beruecksichtigung von Risiko- und Schutzfaktoren.",
-      "patientCommunication": "Empathisch, nicht wertend. Offene Ansprache der Suizidgedanken ohne Tabuisierung. Verstaendliche Psychoedukation.",
-      "medicalLogic": "Angemessene Risikoeinschaetzung und Dringlichkeit. Korrekte differentialdiagnostische Einordnung.",
-      "documentation": "Vollstaendiger psychopathologischer Befund. Risikoeinschaetzung dokumentiert. Behandlungsplan nachvollziehbar.",
-      "doctorToDoctorCommunication": "Praezise Uebergabe mit Schwerpunkt auf Risikobewertung und Therapieindikation.",
+      "historyTaking": "Sensible, direkte und differenzierte Erfragung der Suizidalität. Berücksichtigung von Risiko- und Schutzfaktoren.",
+      "patientCommunication": "Empathisch, nicht wertend. Offene Ansprache der Suizidgedanken ohne Tabuisierung. Verständliche Psychödukation.",
+      "medicalLogic": "Angemessene Risiköinschätzung und Dringlichkeit. Korrekte differentialdiagnostische Einordnung.",
+      "documentation": "Vollständiger psychopathologischer Befund. Risiköinschätzung dokumentiert. Behandlungsplan nachvollziehbar.",
+      "doctorToDoctorCommunication": "Präzise Übergabe mit Schwerpunkt auf Risikobewertung und Therapieindikation.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache der Psychiatrie sicher angewandt. Patientenkommunikation angemessen."
     },
     "tags": [
       "psychiatrie",
-      "angststoerung",
-      "suizidalitaet",
+      "angststörung",
+      "suizidalität",
       "krisenintervention",
       "psychotherapie",
-      "patientengefaerdung"
+      "patientengefärdung"
     ]
   }
 ]

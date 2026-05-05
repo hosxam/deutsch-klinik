@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "g01",
+    "topic": "Nominalization in medical notes",
+    "question": "Welche Nominalisierung ist im Arztbrief ueblich? Waehlen Sie die korrekte Formulierung fuer einen medizinischen Befundbericht.",
+    "options": [
+      "Die Patientin hustet",
+      "Es gibt einen Husten bei der Patientin",
+      "Es wird gehustet",
+      "Husten besteht"
+    ],
+    "answer": "Husten besteht",
+    "explanation": "In medizinischen Dokumenten werden Verben oft nominalisiert. Statt 'der Patient hustet' schreibt man kurz: 'Husten'. Das spart Platz und wirkt professioneller."
+  },
+  {
+    "id": "g02",
+    "topic": "Nominalization in medical notes",
+    "question": "Welche Variante ist im Arztbrief stilistisch angemessen fuer 'der Patient hat Fieber'?",
+    "options": [
+      "Fieber ist vorhanden",
+      "Fieber wird gemessen",
+      "Der Patient hat Fieber",
+      "Temperatur"
+    ],
+    "answer": "Fieber ist vorhanden",
+    "explanation": "'Fieber ist vorhanden' ist dokumententauglich und klar. Die reine Nennung ohne Verb ist fuer den Fliesstext oft zu knapp."
+  },
+  {
+    "id": "g03",
+    "topic": "Passive voice in documentation",
+    "question": "Welcher Satz verwendet das Passiv korrekt in einem Operationsbericht?",
+    "options": [
+      "Der Chirurg oeffnete die Bauchdecke",
+      "Die Bauchdecke wurde von dem Chirurg geoeffnet",
+      "Die Bauchdecke wurde geoeffnet",
+      "Man oeffnete die Bauchdecke"
+    ],
+    "answer": "Die Bauchdecke wurde geoeffnet",
+    "explanation": "Im OP-Bericht ist das Passiv ohne Nennung des Handelnden Standard. Der Fokus liegt auf der Handlung, nicht auf der Person."
+  },
+  {
+    "id": "g04",
+    "topic": "Passive voice in documentation",
+    "question": "Welche passive Form ist im Entlassungsbrief korrekt?",
+    "options": [
+      "Wir haben den Patienten entlassen",
+      "Der Patient wurde entlassen",
+      "Den Patienten entliess man",
+      "Patient wird entlassen gewesen"
+    ],
+    "answer": "Der Patient wurde entlassen",
+    "explanation": "'wurde entlassen' ist das korrekte Vorgangspassiv im Praeteritum, das im Arztbrief Standard ist."
+  },
+  {
+    "id": "g05",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Der Patient gab an: 'Ich habe starke Schmerzen im Ruecken.' Wie geben Sie dies im Arztbrief indirekt wieder?",
+    "options": [
+      "Der Patient hatte starke Rueckenschmerzen",
+      "Der Patient habe starke Rueckenschmerzen",
+      "Der Patient hat starke Rueckenschmerzen",
+      "Der Patient haette starke Rueckenschmerzen"
+    ],
+    "answer": "Der Patient habe starke Rueckenschmerzen",
+    "explanation": "Konjunktiv I ('habe') zeigt indirekte Rede an. Das ist Standard, um Aeusserungen des Patienten von der eigenen Beurteilung abzugrenzen."
+  },
+  {
+    "id": "g06",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Die Tochter sagte: 'Mein Vater nimmt seine Tabletten nicht regelmaessig.' Wie formulieren Sie das im Arztbrief?",
+    "options": [
+      "Die Tochter sagt, ihr Vater wuerde seine Tabletten nicht regelmaessig nehmen",
+      "Laut Tochter nehme ihr Vater die Tabletten nicht regelmaessig",
+      "Die Tochter teilte mit, dass ihr Vater seine Tabletten unregelmaessig nimmt",
+      "Die Tochter berichtete ueber unregelmaessige Tabletteneinnahme"
+    ],
+    "answer": "Laut Tochter nehme ihr Vater die Tabletten nicht regelmaessig",
+    "explanation": "'nehme' ist Konjunktiv I von 'nehmen'. Die Verwendung von 'laut' plus Konjunktiv I ist im Arztbrief typisch."
+  },
+  {
+    "id": "g07",
+    "topic": "Concise documentation style",
+    "question": "Welche Formulierung ist am besten fuer die Zusammenfassung eines Arztbriefs geeignet?",
+    "options": [
+      "Es wurde festgestellt, dass der Patient keine Allergien hat",
+      "Keine bekannten Allergien",
+      "Der Patient hat ueberhaupt keine Allergien, soweit wir wissen",
+      "Allergien sind nicht vorhanden bei dem Patienten"
+    ],
+    "answer": "Keine bekannten Allergien",
+    "explanation": "Arztbriefe brauchen Praezision und Kuerze. 'Keine bekannten Allergien' ist Standard. Das Wort 'bekannt' signalisiert, dass die Information auf der Eigenanamnese beruht."
+  },
+  {
+    "id": "g08",
+    "topic": "Temporal sequencing",
+    "question": "Wie geben Sie den zeitlichen Ablauf im Arztbrief korrekt wieder? Der Patient hatte zuerst Schmerzen, dann Fieber, dann wurde er eingewiesen.",
+    "options": [
+      "Zunaechst Schmerzen, dann Fieber, anschliessend Einweisung",
+      "Erst Schmerzen, spaeter Fieber, zuletzt eingewiesen",
+      "Schmerzen vorher, Fieber nachher, Einweisung letztens",
+      "Schmerzen, Fieber, Einweisung"
+    ],
+    "answer": "Zunaechst Schmerzen, dann Fieber, anschliessend Einweisung",
+    "explanation": "Die klare zeitliche Abfolge mit 'zunaechst - dann - anschliessend' ist im Arztbrief Standard fuer Verlaufsbeschreibungen."
+  },
+  {
+    "id": "g09",
+    "topic": "Causal phrasing",
+    "question": "Wie formulieren Sie den Zusammenhang zwischen Schmerzmittel und Magenbeschwerden fachlich korrekt?",
+    "options": [
+      "Magenbeschwerden wegen Ibuprofen",
+      "Magenbeschwerden aufgrund von Ibuprofen-Einnahme",
+      "Ibuprofen machte Magenbeschwerden",
+      "Magen tat weh, weil er Ibuprofen nahm"
+    ],
+    "answer": "Magenbeschwerden aufgrund von Ibuprofen-Einnahme",
+    "explanation": "'aufgrund von' ist die fachlich angemessene kausale Praeposition im Arztbrief. Sie ist praezise und neutral."
+  },
+  {
+    "id": "g10",
+    "topic": "Risk/benefit phrasing",
+    "question": "Wie formulieren Sie das Risiko einer Operation angemessen im Aufklaerungsgespraech (dokumentiert)?",
+    "options": [
+      "Die OP ist sehr gefaehrlich",
+      "Es besteht ein Risiko von ca. 2% fuer eine Nachblutung",
+      "Man kann bei der OP sterben",
+      "Die OP hat Risiken"
+    ],
+    "answer": "Es besteht ein Risiko von ca. 2% fuer eine Nachblutung",
+    "explanation": "Risiken muessen spezifisch und quantifiziert werden. 'ca. 2%' ist praezise. Vage Angaben wie 'gefaehrlich' sind fuer die Dokumentation ungeeignet."
+  },
+  {
+    "id": "g100",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Der Patient behauptet: 'Ich bin noch nie krank gewesen.' Wie geben Sie diese Aussage im Arztbrief angemessen wieder?",
+    "options": [
+      "Der Patient gibt an, nie krank gewesen zu sein",
+      "Patient war nie krank",
+      "Patient sei nie krank gewesen",
+      "Patient ist nie krank gewesen"
+    ],
+    "answer": "Der Patient gibt an, nie krank gewesen zu sein",
+    "explanation": "Bei auffaelligen oder unglaubwuerdigen Aussagen ist die indirekte Wiedergabe mit 'gibt an' oder 'gibt an, ... zu sein' besonders wichtig, um Distanz zu signalisieren."
+  },
+  {
+    "id": "g11",
+    "topic": "Recommendation phrasing",
+    "question": "Wie formulieren Sie eine Therapieempfehlung im Arztbrief fachlich korrekt?",
+    "options": [
+      "Der Patient sollte Physiotherapie machen",
+      "Wir empfehlen eine physiotherapeutische Mitbehandlung",
+      "Physiotherapie waere gut",
+      "Patient muss zur Physiotherapie gehen"
+    ],
+    "answer": "Wir empfehlen eine physiotherapeutische Mitbehandlung",
+    "explanation": "'Wir empfehlen' ist die Standardformulierung fuer Therapieempfehlungen. Sie ist verbindlich, aber nicht befehlend."
+  },
+  {
+    "id": "g12",
+    "topic": "Patient-friendly simplification",
+    "question": "Wie erklaeren Sie einer Patientin den Begriff 'Myokardinfarkt' in verstaendlicher Sprache?",
+    "options": [
+      "Myokardinfarkt bezeichnet den Verschluss eines Herzkranzgefaesses mit nachfolgender Nekrose",
+      "Ein Herzinfarkt ist ein Gefaessverschluss im Herzen",
+      "Myokardinfarkt ist ein akutes Koronarsyndrom mit ST-Hebung",
+      "Das ist ein Infarkt des Myokards"
+    ],
+    "answer": "Ein Herzinfarkt ist ein Gefaessverschluss im Herzen",
+    "explanation": "'Herzinfarkt' ist der verstaendliche Begriff. Die zusaetzliche Erklaerung 'Gefaessverschluss im Herzen' macht es fuer Patienten klar."
+  },
+  {
+    "id": "g13",
+    "topic": "Formal vs simple medical language",
+    "question": "Welche Formulierung ist im Entlassungsbrief an den Hausarzt und den Patienten gleichermassen geeignet?",
+    "options": [
+      "Der Patient praesentierte sich mit Dyspnoe und Thoraxschmerz",
+      "Der Patient hatte Atemnot und Brustschmerzen",
+      "Es bestand eine Dyspnoe und ein Thoraxschmerz-Syndrom",
+      "Der Patient klagte ueber Luftnot und praekordialen Druckschmerz"
+    ],
+    "answer": "Der Patient hatte Atemnot und Brustschmerzen",
+    "explanation": "'Atemnot' und 'Brustschmerzen' sind Fachleuten und Patienten gleichermassen verstaendlich. Das ist im Entlassungsbrief wichtig."
+  },
+  {
+    "id": "g14",
+    "topic": "Avoiding ambiguity",
+    "question": "Welcher Satz vermeidet Missverstaendnisse?",
+    "options": [
+      "Der Patient klagte ueber Schmerzen seit Wochen",
+      "Seit Wochen bestehende Schmerzen im rechten Knie",
+      "Schmerzen bestehen schon laenger",
+      "Knie schmerzt seit einiger Zeit"
+    ],
+    "answer": "Seit Wochen bestehende Schmerzen im rechten Knie",
+    "explanation": "Dieser Satz nennt eindeutig Dauer (seit Wochen), Lokalisation (rechtes Knie) und Beschwerde (Schmerzen). Alle anderen Angaben sind vage."
+  },
+  {
+    "id": "g15",
+    "topic": "Abbreviations in medical German",
+    "question": "Welche Abkuerzung ist im deutschen Klinikalltag sicher und ueblich?",
+    "options": [
+      "RR fuer Blutdruck nach Riva-Rocci",
+      "BD fuer Blutdruck",
+      "BP fuer Blood Pressure",
+      "BDr fuer Blutdruckwert"
+    ],
+    "answer": "RR fuer Blutdruck nach Riva-Rocci",
+    "explanation": "'RR' ist die historisch korrekte Abkuerzung fuer den Blutdruck (nach Riva-Rocci). 'BD' wird selten verwendet, 'BP' ist englisch."
+  },
+  {
+    "id": "g16",
+    "topic": "Differential diagnosis wording",
+    "question": "Wie formulieren Sie den vorlaeufigen Verdacht auf eine Erkrankung korrekt?",
+    "options": [
+      "Der Patient hat bestimmt eine Lungenembolie",
+      "V.a. Lungenembolie",
+      "Es ist sicher eine Lungenembolie",
+      "Ich denke, es koennte eine Lungenembolie sein"
+    ],
+    "answer": "V.a. Lungenembolie",
+    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung fuer eine vorlaeufige Diagnose. Sie signalisiert professionelle Unsicherheit."
+  },
+  {
+    "id": "g17",
+    "topic": "Uncertainty wording",
+    "question": "Welche Formulierung drueckt fachlich angemessene Unsicherheit aus?",
+    "options": [
+      "Wir wissen nicht, was der Patient hat",
+      "Am ehesten handelt es sich um eine Gastritis, DD Ulkus",
+      "Vielleicht ist es eine Gastritis?",
+      "Unklar, was der Patient hat"
+    ],
+    "answer": "Am ehesten handelt es sich um eine Gastritis, DD Ulkus",
+    "explanation": "'Am ehesten' priorisiert die wahrscheinlichste Diagnose. 'DD' (Differentialdiagnose) nennt die Alternative. Das ist die fachlich korrekte Art der Dokumentation."
+  },
+  {
+    "id": "g18",
+    "topic": "Medication instruction phrasing",
+    "question": "Wie formulieren Sie eine Medikamentenanweisung im Arztbrief korrekt?",
+    "options": [
+      "Patient nimmt taeglich 1 Tablette",
+      "Metoprolol 50 mg 1-0-0",
+      "Metoprolol einmal am Tag",
+      "Einmal taeglich eine Tablette"
+    ],
+    "answer": "Metoprolol 50 mg 1-0-0",
+    "explanation": "Das Standardformat enthaelt: Wirkstoff, Dosis und Dosierschema (1-0-0 = morgens-mittags-abends). Das ist eindeutig."
+  },
+  {
+    "id": "g19",
+    "topic": "Discharge recommendation phrasing",
+    "question": "Wie formulieren Sie eine Entlassungsempfehlung fachlich korrekt?",
+    "options": [
+      "Bitte gehen Sie zum Hausarzt",
+      "Wir empfehlen Vorstellung beim Hausarzt in einer Woche",
+      "Der Patient sollte zum Arzt",
+      "Geh zum Hausarzt"
+    ],
+    "answer": "Wir empfehlen Vorstellung beim Hausarzt in einer Woche",
+    "explanation": "Die Standardformulierung enthaelt den Empfaenger (Hausarzt) und das Zeitfenster (in einer Woche)."
+  },
+  {
+    "id": "g20",
+    "topic": "Consent/documentation phrasing",
+    "question": "Welcher Satz dokumentiert die Einwilligung des Patienten korrekt?",
+    "options": [
+      "Patient war einverstanden",
+      "Der Patient willigte nach ausfuehrlicher Aufklaerung in die Operation ein",
+      "Patient hat ja gesagt",
+      "Der Patient war damit ok"
+    ],
+    "answer": "Der Patient willigte nach ausfuehrlicher Aufklaerung in die Operation ein",
+    "explanation": "Die Dokumentation der Einwilligung muss enthalten: (1) dass aufgeklaert wurde, (2) dass der Patient eingewilligt hat, (3) worin genau. Das ist rechtlich erforderlich."
+  },
+  {
+    "id": "g21",
+    "topic": "Doctor-to-doctor handover style",
+    "question": "Ein Patient hat postoperativ einen Hb-Abfall. Wie uebergeben Sie das an den Nachtdienst?",
+    "options": [
+      "Hb 9,2 g/dl von 11,5 g/dl. Kein Frischblut im Drainagesystem. RR stabil bei 120/80, Puls 88. Bitte Hb-Kontrolle in 4 Stunden. Bei Hb <8 oder RR-Abfall bitte informieren.",
+      "Patient hat Blutungen",
+      "Hb runter, bitte kontrollieren",
+      "Hb 9,2, kann warten bis morgen"
+    ],
+    "answer": "Hb 9,2 g/dl von 11,5 g/dl. Kein Frischblut im Drainagesystem. RR stabil bei 120/80, Puls 88. Bitte Hb-Kontrolle in 4 Stunden. Bei Hb <8 oder RR-Abfall bitte informieren.",
+    "explanation": "Die Uebergabe enthaelt den konkreten Hb-Wert, die Dynamik, die Vitalparameter, den naechsten Kontrollzeitpunkt und die Alarmgrenzen."
+  },
+  {
+    "id": "g22",
+    "topic": "Error correction in medical German",
+    "question": "Im Entlassungsbrief steht: 'Der Patient wurde nach Hause entlassen und soll sich in 1 Woche vorstellen.' Was ist hier ungenau?",
+    "options": [
+      "Das Zeitfenster ist zu ungenau",
+      "Die Formulierung 'soll' ist zu vage",
+      "Es fehlt, bei wem er sich vorstellen soll",
+      "Der Satz ist korrekt"
+    ],
+    "answer": "Es fehlt, bei wem er sich vorstellen soll",
+    "explanation": "'sich vorstellen' ohne Nennung des Empfaengers ist unvollstaendig. Korrekt waere: 'Vorstellung beim Hausarzt in 1 Woche'."
+  },
+  {
+    "id": "g23",
+    "topic": "Nominalization in medical notes",
+    "question": "Welche Nominalisierung von 'der Patient erbricht sich' ist im Arztbrief ueblich?",
+    "options": [
+      "Erbrechen",
+      "Der Patient hat Erbrechen",
+      "Der Patient erbricht",
+      "Erbrechung"
+    ],
+    "answer": "Erbrechen",
+    "explanation": "'Erbrechen' ist die substantivierte Form des Infinitivs. Sie ist kurz und eindeutig. 'Erbrechung' ist kein korrektes Wort."
+  },
+  {
+    "id": "g24",
+    "topic": "Passive voice in documentation",
+    "question": "Welcher Satz vermeidet das Passiv korrekt und dokumentiert die Handlung dennoch neutral?",
+    "options": [
+      "Ich legte den Zugang",
+      "Der Zugang wurde gelegt",
+      "Man legte den Zugang",
+      "Durch mich erfolgte die Zugangslegung"
+    ],
+    "answer": "Der Zugang wurde gelegt",
+    "explanation": "Passiv ist der Standard fuer pflegerische und aerztliche Massnahmen im Bericht. Die Nennung der Person ist unueblich."
+  },
+  {
+    "id": "g25",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Der Patient sagte: 'Ich bin gestern gestuerzt.' Wie geben Sie das indirekt wieder?",
+    "options": [
+      "Der Patient sei gestern gestuerzt",
+      "Der Patient ist gestern gestuerzt",
+      "Der Patient waere gestern gestuerzt",
+      "Angeblich stuerzte der Patient gestern"
+    ],
+    "answer": "Der Patient sei gestern gestuerzt",
+    "explanation": "'sei' ist Konjunktiv I von 'sein'. Die indirekte Rede signalisiert, dass es sich um die Angabe des Patienten handelt."
+  },
+  {
+    "id": "g26",
+    "topic": "Temporal sequencing",
+    "question": "Drei Ereignisse: Aufnahme, Diagnose Mittellungen, Therapiebeginn. Wie ist die korrekte zeitliche Reihenfolge im Arztbrief?",
+    "options": [
+      "Diagnose, Aufnahme, Therapie",
+      "Aufnahme, Diagnose, Therapie",
+      "Therapie, Aufnahme, Diagnose",
+      "Aufnahme, Therapie, Diagnose"
+    ],
+    "answer": "Aufnahme, Diagnose, Therapie",
+    "explanation": "Die chronologische Reihenfolge ist im Arztbrief Standard: erst die Aufnahme, dann die Diagnosestellung, dann der Therapiebeginn."
+  },
+  {
+    "id": "g27",
+    "topic": "Causal phrasing",
+    "question": "Wie formulieren Sie: 'Weil der Patient gestuerzt ist, hat er eine Hueftfraktur' im Arztbrief?",
+    "options": [
+      "Ursaechlich fuer die Hueftfraktur war ein Sturz",
+      "Weil der Patient stuerzte, Hueftfraktur",
+      "Durch den Sturz erwarb er eine Hueftfraktur",
+      "Hueftfraktur resultierend von Sturz"
+    ],
+    "answer": "Ursaechlich fuer die Hueftfraktur war ein Sturz",
+    "explanation": "'Ursaechlich fuer ... war' ist die fachliche Kausalformulierung. Sie ist praezise und passivisch neutral."
+  },
+  {
+    "id": "g28",
+    "topic": "Risk/benefit phrasing",
+    "question": "Welche Formulierung fuer Nutzen und Risiko einer Behandlung ist ausgewogen und dokumententauglich?",
+    "options": [
+      "Nutzen ueberwiegt Risiken",
+      "Die Behandlung bringt viel und hat wenig Risiken",
+      "Die Vorteile der Therapie ueberwiegen die moeglichen Risiken",
+      "Die Therapie hilft immer"
+    ],
+    "answer": "Die Vorteile der Therapie ueberwiegen die moeglichen Risiken",
+    "explanation": "Die Formulierung nennt beide Seiten (Vorteile und Risiken) und gibt eine Abwaegung. Das ist die Standardformulierung in der Nutzen-Risiko-Abwaegung."
+  },
+  {
+    "id": "g29",
+    "topic": "Recommendation phrasing",
+    "question": "Welche Formulierung ist fuer eine dringende Empfehlung im Arztbrief geeignet?",
+    "options": [
+      "Wir raten dringend zu einer stationaeren Aufnahme",
+      "Patient sollte vielleicht ins Krankenhaus",
+      "Krankenhaus waere nicht schlecht",
+      "Gehen Sie ins Krankenhaus"
+    ],
+    "answer": "Wir raten dringend zu einer stationaeren Aufnahme",
+    "explanation": "'Wir raten dringend zu' drueckt eine starke Empfehlung aus, bleibt aber im Rahmen der aerztlichen Empfehlungssprache."
+  },
+  {
+    "id": "g30",
+    "topic": "Patient-friendly simplification",
+    "question": "Wie erklaeren Sie 'pankreatogene Enzyme' einem Patienten?",
+    "options": [
+      "Das sind Enzyme aus der Bauchspeicheldruese",
+      "Pankreatogene Enzyme stammen aus dem Pankreas",
+      "Das sind Stoffe von der Bauchspeicheldruese",
+      "Pankreasenzyme"
+    ],
+    "answer": "Das sind Enzyme aus der Bauchspeicheldruese",
+    "explanation": "'Bauchspeicheldruese' ist die verstaendliche Bezeichnung fuer 'Pankreas'. 'Enzyme aus der ...' erklaert die Herkunft verstaendlich."
+  },
+  {
+    "id": "g31",
+    "topic": "Formal vs simple medical language",
+    "question": "Welcher Satz ist fuer die Kommunikation mit einem Pflegeheim geeignet?",
+    "options": [
+      "Es besteht Dysphagie mit Aspirationsgefahr",
+      "Patient kann nicht schlucken und koennte sich verschlucken",
+      "Der Patient leidet an einer oropharyngealen Dysphagie",
+      "Schluckakt pathologisch"
+    ],
+    "answer": "Patient kann nicht schlucken und koennte sich verschlucken",
+    "explanation": "Pflegepersonal braucht klare Handlungsanweisungen. 'kann nicht schlucken' ist eindeutig, 'koennte sich verschlucken' beschreibt die Konsequenz."
+  },
+  {
+    "id": "g32",
+    "topic": "Avoiding ambiguity",
+    "question": "Welche Formulierung vermeidet Interpretationsspielraum bei der Lagerung eines Patienten?",
+    "options": [
+      "Patient soll gut gelagert werden",
+      "Oberkoerper hochlagern, 30 Grad, Knie leicht gebeugt",
+      "Patient bequem lagern",
+      "Richtig lagern"
+    ],
+    "answer": "Oberkoerper hochlagern, 30 Grad, Knie leicht gebeugt",
+    "explanation": "Praezise Anweisungen geben Winkelgrad (30 Grad) und Koerperteile (Oberkoerper, Knie) an. 'Gut' und 'richtig' sind interpretationsbeduerftig."
+  },
+  {
+    "id": "g33",
+    "topic": "Abbreviations in medical German",
+    "question": "Welche Abkuerzung ist im deutschen Klinikalltag ungebruechlich oder gefaehrlich?",
+    "options": [
+      "R",
+      "B",
+      "M",
+      "N"
+    ],
+    "answer": "R",
+    "explanation": "Einzelbuchstaben-Abkuerzungen wie 'R' (fuer rechts) sind gefaehrlich, weil sie leicht uebersehen oder verwechselt werden. Standard ist 're.' oder 'rechts'."
+  },
+  {
+    "id": "g34",
+    "topic": "Differential diagnosis wording",
+    "question": "Sie haben drei moegliche Diagnosen. Wie dokumentieren Sie das fachlich korrekt?",
+    "options": [
+      "DD: Pneumonie, Bronchitis, COPD",
+      "Entweder Pneumonie oder Bronchitis oder COPD",
+      "Koennte alles sein: Pneumonie, Bronchitis, COPD",
+      "Unklare Diagnose"
+    ],
+    "answer": "DD: Pneumonie, Bronchitis, COPD",
+    "explanation": "'DD' ist die Standardabkuerzung fuer Differentialdiagnosen. Die Liste wird absteigend nach Wahrscheinlichkeit sortiert."
+  },
+  {
+    "id": "g35",
+    "topic": "Uncertainty wording",
+    "question": "Wie dokumentieren Sie, dass Sie sich bei einer Diagnose unsicher sind, aber eine klare Verdachtsrichtung haben?",
+    "options": [
+      "V.a. Cholezystitis",
+      "Keine Ahnung",
+      "Magenprobleme",
+      "Unklares Abdomen"
+    ],
+    "answer": "V.a. Cholezystitis",
+    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung fuer einen konkreten Verdacht. Sie drueckt aus, dass weitere Abklaerung noetig ist."
+  },
+  {
+    "id": "g36",
+    "topic": "Medication instruction phrasing",
+    "question": "Eine Patientin soll bei Bedarf ein Medikament nehmen. Wie dokumentieren Sie das korrekt?",
+    "options": [
+      "Novalgin 500 mg bei Bedarf, max. 3x/Tag",
+      "Novalgin wenn noetig",
+      "Schmerzmittel bei Bedarf",
+      "Bei Schmerzen Novalgin nehmen"
+    ],
+    "answer": "Novalgin 500 mg bei Bedarf, max. 3x/Tag",
+    "explanation": "Bedarfsmedikation muss enthalten: Wirkstoff, Dosis, Maximalfrequenz. 'max. 3x/Tag' verhindert Ueberdosierung."
+  },
+  {
+    "id": "g37",
+    "topic": "Discharge recommendation phrasing",
+    "question": "Ein Patient braucht nach der Entlassung eine Pflegestufe. Wie dokumentieren Sie dies?",
+    "options": [
+      "Wir empfehlen die Beantragung eines Pflegegrades beim MDK",
+      "Patient braucht Pflege",
+      "Pflege beantragen",
+      "Bitte um Pflege"
+    ],
+    "answer": "Wir empfehlen die Beantragung eines Pflegegrades beim MDK",
+    "explanation": "Die Empfehlung nennt den genauen Vorgang (Beantragung eines Pflegegrades) und die zustaendige Stelle (MDK). Das ist fuer die Weiterbehandlung wichtig."
+  },
+  {
+    "id": "g38",
+    "topic": "Consent/documentation phrasing",
+    "question": "Ein Patient kann nicht einwilligen (dement). Wie dokumentieren Sie die Aufklaerung?",
+    "options": [
+      "Der Patient ist dement",
+      "Aufklaerung und Einwilligung erfolgte durch den gesetzlichen Betreuer, Herrn Mueller",
+      "Betreuer informiert",
+      "Patient nicht einwilligungsfaehig"
+    ],
+    "answer": "Aufklaerung und Einwilligung erfolgte durch den gesetzlichen Betreuer, Herrn Mueller",
+    "explanation": "Bei nicht einwilligungsfaehigen Patienten muss dokumentiert werden: (1) wer aufgeklaert hat, (2) wer eingewilligt hat, (3) in welcher Funktion."
+  },
+  {
+    "id": "g39",
+    "topic": "Doctor-to-doctor handover style",
+    "question": "Welche Informationen sind bei einer Uebergabe an den Nachtdienst am wichtigsten?",
+    "options": [
+      "Alle Laborwerte der letzten Woche",
+      "Instabile Patienten mit konkreten Handlungsanweisungen",
+      "Die Namen aller Patienten auf Station",
+      "Was der Patient gefruehstueckt hat"
+    ],
+    "answer": "Instabile Patienten mit konkreten Handlungsanweisungen",
+    "explanation": "Die Uebergabe priorisiert akute Probleme. Instabile Patienten und klare Handlungsanweisungen ('bei Fieber >38,5 Blutkultur abnehmen') sind zentral."
+  },
+  {
+    "id": "g40",
+    "topic": "Error correction in medical German",
+    "question": "Im Arztbrief steht: 'Dem Patienten wurde ein CT vom Schaedel durchgefuehrt.' Was ist der Fehler?",
+    "options": [
+      "Richtig waere: 'Beim Patienten wurde ein CT des Schaedels durchgefuehrt'",
+      "Der Satz ist korrekt",
+      "'Vom' muesste 'von dem' heissen",
+      "'Schaedel' ist falsch geschrieben"
+    ],
+    "answer": "Richtig waere: 'Beim Patienten wurde ein CT des Schaedels durchgefuehrt'",
+    "explanation": "'Bei jemandem wird eine Untersuchung durchgefuehrt' (Dativ), nicht 'jemandem'. Und 'CT des Schaedels' (Genitiv) statt 'vom Schaedel'."
+  },
+  {
+    "id": "g41",
+    "topic": "Nominalization in medical notes",
+    "question": "Wie lautet die Nominalisierung von 'der Patient schlaeft schlecht' im Arztbrief?",
+    "options": [
+      "Schlafstoerung",
+      "Schlechter Schlaf",
+      "Schlaeft schlecht",
+      "Patient schlaeft"
+    ],
+    "answer": "Schlafstoerung",
+    "explanation": "'Schlafstoerung' ist die fachliche Nominalisierung. Sie ist praeziser als 'schlechter Schlaf' und klingt professioneller."
+  },
+  {
+    "id": "g42",
+    "topic": "Passive voice in documentation",
+    "question": "Im OP-Bericht: 'Nach Hautschnitt wurde das Subkutangewebe ______.' Welche Form ist korrekt?",
+    "options": [
+      "durchtrennt",
+      "haben wir durchtrennt",
+      "wird durchtrennt",
+      "durchtrennend"
+    ],
+    "answer": "durchtrennt",
+    "explanation": "'wurde ... durchtrennt' (Passiv Praeteritum) ist die korrekte Form im OP-Bericht. Das Praeteritum beschreibt abgeschlossene Handlungen."
+  },
+  {
+    "id": "g43",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Die Schwester berichtet: 'Der Patient hat nicht geschlafen.' Wie geben Sie das im Bericht wieder?",
+    "options": [
+      "Laut Pflege habe der Patient nicht geschlafen",
+      "Der Patient schlief nicht",
+      "Angeblich schlief der Patient nicht",
+      "Laut Pflegebericht schlief der Patient nicht"
+    ],
+    "answer": "Laut Pflege habe der Patient nicht geschlafen",
+    "explanation": "'habe nicht geschlafen' ist Konjunktiv I Perfekt. Die Kombination mit 'laut Pflege' zeigt die Quelle der Information an."
+  },
+  {
+    "id": "g44",
+    "topic": "Concise documentation style",
+    "question": "Ein Patient hat weder Allergien noch Vorerkrankungen noch Medikamente. Wie formulieren Sie das kurz?",
+    "options": [
+      "Keine Allergien, keine Vorerkrankungen, keine Medikamente",
+      "Patient hat nichts",
+      "Unauffaellige Anamnese",
+      "Nichts bekannt"
+    ],
+    "answer": "Keine Allergien, keine Vorerkrankungen, keine Medikamente",
+    "explanation": "Die vollstaendige Aufzaehlung aller drei Bereiche ist trotz Kuerze praezise. 'Nichts bekannt' oder 'unauffaellig' ist zu vage."
+  },
+  {
+    "id": "g45",
+    "topic": "Temporal sequencing",
+    "question": "Ein Patient wurde am Montag aufgenommen, am Dienstag operiert, am Freitag entlassen. Wie dokumentieren Sie das?",
+    "options": [
+      "Aufnahme 12.02., OP 13.02., Entlassung 16.02.",
+      "Am Montag reingelegt, Dienstag operiert, Freitag raus",
+      "Patient war von Montag bis Freitag da",
+      "Vom 12.02. bis 16.02. stationaer"
+    ],
+    "answer": "Aufnahme 12.02., OP 13.02., Entlassung 16.02.",
+    "explanation": "Die Nennung von Datum und Ereignis ist Standard. Daten mit Punkten sind eindeutig. Die einfache Reihung spart Platz."
+  },
+  {
+    "id": "g46",
+    "topic": "Causal phrasing",
+    "question": "Der Blutdruckabfall fuehrte zur Ohnmacht. Wie formulieren Sie den kausalen Zusammenhang im Arztbrief?",
+    "options": [
+      "Ohnmacht bei Blutdruckabfall",
+      "Blutdruck fiel, Patient wurde ohnmaechtig",
+      "Weil der Blutdruck fiel, Ohnmacht",
+      "Ohnmacht wegen niedrigem Blutdruck"
+    ],
+    "answer": "Ohnmacht bei Blutdruckabfall",
+    "explanation": "'Ohnmacht bei Blutdruckabfall' ist die kuerzeste und dennoch klare kausale Verbindung. 'bei' ersetzt hier einen ganzen Kausalsatz."
+  },
+  {
+    "id": "g47",
+    "topic": "Risk/benefit phrasing",
+    "question": "Ein Patient lehnt eine OP ab. Wie dokumentieren Sie die Risikoaufklaerung ueber die OP-Verweigerung?",
+    "options": [
+      "Patient lehnt OP ab",
+      "Auf Risiken einer OP-Verweigerung hingewiesen, Patient lehnt dennoch ab",
+      "Patient will nicht",
+      "Patient ist nicht einverstanden"
+    ],
+    "answer": "Auf Risiken einer OP-Verweigerung hingewiesen, Patient lehnt dennoch ab",
+    "explanation": "Die Dokumentation einer OP-Verweigerung muss enthalten: (1) dass aufgeklaert wurde, (2) ueber welche Folgen, (3) dass der Patient dennoch ablehnt."
+  },
+  {
+    "id": "g48",
+    "topic": "Recommendation phrasing",
+    "question": "Welche Formulierung ist fuer einen ambulanten Nachsorgetermin geeignet?",
+    "options": [
+      "Wiedervorstellung in der Ambulanz in 2 Wochen",
+      "Kommen Sie in 2 Wochen wieder",
+      "Ambulanztermin",
+      "In 2 Wochen zur Kontrolle"
+    ],
+    "answer": "Wiedervorstellung in der Ambulanz in 2 Wochen",
+    "explanation": "'Wiedervorstellung' ist das fachliche Wort fuer einen Folgebesuch. Die Angabe des Ortes (Ambulanz) und des Zeitrahmens (2 Wochen) macht es vollstaendig."
+  },
+  {
+    "id": "g49",
+    "topic": "Patient-friendly simplification",
+    "question": "Wie erklaeren Sie 'Arrhythmie' einem Patienten ohne medizinische Vorkenntnisse?",
+    "options": [
+      "Das Herz schlaegt unregelmaessig",
+      "Der Herzrhythmus ist abnorm",
+      "Sie haben eine Herzrhythmusstoerung",
+      "Arrhythmie bedeutet unregelmaessigen Herzschlag"
+    ],
+    "answer": "Das Herz schlaegt unregelmaessig",
+    "explanation": "'Herz schlaegt unregelmaessig' ist die einfachste, klinisch korrekte Erklaerung. Fachbegriffe werden vermieden, der Kern ist klar."
+  },
+  {
+    "id": "g50",
+    "topic": "Formal vs simple medical language",
+    "question": "Welche Formulierung ist in einer Ueberweisung an den Facharzt angemessen?",
+    "options": [
+      "Bitte schauen Sie sich den Magen vom Herrn Maier an",
+      "Bitte weiterfuehrende Diagnostik des oberen GI-Trakts bei V.a. Ulkus ventriculi",
+      "Patient hat Bauchschmerzen",
+      "Bitte Gastroskopie"
+    ],
+    "answer": "Bitte weiterfuehrende Diagnostik des oberen GI-Trakts bei V.a. Ulkus ventriculi",
+    "explanation": "Die Ueberweisung verwendet Fachtermini (GI-Trakt, Ulkus ventriculi) und nennt den Verdacht. Der Facharzt erwartet praezise Angaben."
+  },
+  {
+    "id": "g51",
+    "topic": "Avoiding ambiguity",
+    "question": "Welche Formulierung ist eindeutig bei der Beschreibung von Schmerz?",
+    "options": [
+      "Patient hat starke Schmerzen",
+      "Staerke 7/10 auf visueller Analogskala, stechender Charakter, retrosternal",
+      "Schmerzen stark bis sehr stark",
+      "Der Patient hat sehr weh"
+    ],
+    "answer": "Staerke 7/10 auf visueller Analogskala, stechender Charakter, retrosternal",
+    "explanation": "Die VAS (visuelle Analogskala) gibt einen objektiven Zahlenwert. Charakter (stechend) und Lokalisation (retrosternal) machen die Beschreibung eindeutig."
+  },
+  {
+    "id": "g52",
+    "topic": "Abbreviations in medical German",
+    "question": "Welche Abkuerzung ist veraltet oder sollte im Arztbrief vermieden werden?",
+    "options": [
+      "RR",
+      "BZ",
+      "NW",
+      "AE"
+    ],
+    "answer": "NW",
+    "explanation": "'NW' ist uneindeutig: es kann fuer 'Nebenwirkung', 'Nahrungsverweigerung' oder 'Nervenwurzel' stehen. Solche Mehrdeutigkeiten sind gefaehrlich."
+  },
+  {
+    "id": "g53",
+    "topic": "Differential diagnosis wording",
+    "question": "Bei unklaren Thoraxschmerzen: Welche DD-Formulierung ist fachlich korrekt?",
+    "options": [
+      "DD: Myokardinfarkt, Lungenembolie, Pneumothorax",
+      "Herz oder Lunge?",
+      "Waere Moeglichkeit Herzinfarkt",
+      "Koennte alles vom Herzen sein"
+    ],
+    "answer": "DD: Myokardinfarkt, Lungenembolie, Pneumothorax",
+    "explanation": "Die Differentialdiagnosen bei Thoraxschmerz sind lebensbedrohliche Erkrankungen, die ausgeschlossen werden muessen. Die Liste ist fallabhaengig."
+  },
+  {
+    "id": "g54",
+    "topic": "Uncertainty wording",
+    "question": "Der Radiologe ist sich bei einem Befund unsicher. Wie formuliert er das angemessen?",
+    "options": [
+      "Kein sicherer Nachweis einer Raumforderung, Kontrolle in 3 Monaten empfohlen",
+      "Weiss nicht genau",
+      "Vielleicht Tumor?",
+      "Nicht sicher zu beurteilen"
+    ],
+    "answer": "Kein sicherer Nachweis einer Raumforderung, Kontrolle in 3 Monaten empfohlen",
+    "explanation": "Unsicherheit im radiologischen Befund wird mit 'kein sicherer Nachweis' ausgedrueckt, gefolgt von einer Handlungsempfehlung (Kontrolle)."
+  },
+  {
+    "id": "g55",
+    "topic": "Medication instruction phrasing",
+    "question": "Ein Patient soll ein Medikament ausschleichen. Wie dokumentieren Sie das korrekt?",
+    "options": [
+      "Prednisolon ausschleichen ueber 2 Wochen: taeglich 5 mg Reduktion",
+      "Prednisolon langsam absetzen",
+      "Cortison reduzieren",
+      "Prednisolon weniger nehmen"
+    ],
+    "answer": "Prednisolon ausschleichen ueber 2 Wochen: taeglich 5 mg Reduktion",
+    "explanation": "Die Ausschleichanweisung enthaelt: Wirkstoff, Dauer (2 Wochen), Reduktionsschritt (5 mg taeglich). So ist die Anweisung eindeutig befolgbar."
+  },
+  {
+    "id": "g56",
+    "topic": "Discharge recommendation phrasing",
+    "question": "Ein Patient hat nach OP Wundheilungsstoerungen. Wie formulieren Sie die Nachsorgeempfehlung?",
+    "options": [
+      "Wundkontrolle beim Hausarzt 1x pro Woche, bei Zeichen von Infektion sofortige Vorstellung",
+      "Wunde kontrollieren",
+      "Bitte Wundversorgung",
+      "Wunde verbinden"
+    ],
+    "answer": "Wundkontrolle beim Hausarzt 1x pro Woche, bei Zeichen von Infektion sofortige Vorstellung",
+    "explanation": "Die Empfehlung enthaelt Frequenz (1x/Woche), Ort (Hausarzt) und eine Alarmgrenze (Infektionszeichen)."
+  },
+  {
+    "id": "g57",
+    "topic": "Consent/documentation phrasing",
+    "question": "Ein 16-Jaehriger soll operiert werden. Wie dokumentieren Sie die Einwilligung richtig?",
+    "options": [
+      "Aufklaerung des Patienten und der Eltern, Einwilligung durch beide Eltern",
+      "Patient ist 16, darf selbst einwilligen",
+      "Eltern einwilligen",
+      "Patient und Eltern aufgeklaert"
+    ],
+    "answer": "Aufklaerung des Patienten und der Eltern, Einwilligung durch beide Eltern",
+    "explanation": "Bei Minderjaehrigen unter 18 Jahren muessen die Sorgeberechtigten einwilligen. Der Patient wird zusaetzlich aufgeklaert (informiertes Einverstaendnis)."
+  },
+  {
+    "id": "g58",
+    "topic": "Doctor-to-doctor handover style",
+    "question": "Bei der Uebergabe sagen Sie: 'Herr Mueller, Zimmer 212.' Welche zusaetzliche Information ist unbedingt noetig?",
+    "options": [
+      "Die Diagnose und der aktuelle Zustand des Patienten",
+      "Das Geburtsdatum",
+      "Die Krankenkasse",
+      "Die Zimmernummer des Bettnachbarn"
+    ],
+    "answer": "Die Diagnose und der aktuelle Zustand des Patienten",
+    "explanation": "Eine Uebergabe braucht minimal: Patient, Diagnose, aktueller Zustand und offene Aufgaben. Nur Name und Zimmer reichen nicht."
+  },
+  {
+    "id": "g59",
+    "topic": "Error correction in medical German",
+    "question": "Ein Student schreibt: 'Die Patientin klagte ueber Kopfweh.' Was ist die korrekte Formulierung im Arztbrief?",
+    "options": [
+      "Die Patientin klagte ueber Kopfschmerzen",
+      "Die Patientin klagte ueber Kopfweh",
+      "Patientin mit Kopfschmerzen",
+      "Cephalea"
+    ],
+    "answer": "Die Patientin klagte ueber Kopfschmerzen",
+    "explanation": "'Kopfschmerzen' ist der medizinische Terminus. 'Kopfweh' ist umgangssprachlich und gehoert nicht in einen Arztbrief."
+  },
+  {
+    "id": "g60",
+    "topic": "Nominalization in medical notes",
+    "question": "Welche Nominalisierung von 'der Patient hat Durchfall' ist im Arztbrief ueblich?",
+    "options": [
+      "Durchfall",
+      "Diarrhoe",
+      "Durchfall besteht",
+      "Patient hat Diarrhoe"
+    ],
+    "answer": "Diarrhoe",
+    "explanation": "'Diarrhoe' ist der medizinische Fachbegriff und wird im Arztbrief bevorzugt. 'Durchfall' ist umgangssprachlich."
+  },
+  {
+    "id": "g61",
+    "topic": "Passive voice in documentation",
+    "question": "Im Entlassungsbrief: 'Eine Kontroll-MRT wurde in 3 Monaten ______.' Welche Form ist korrekt?",
+    "options": [
+      "empfohlen",
+      "empfehlen",
+      "empfehlend",
+      "wird empfohlen"
+    ],
+    "answer": "empfohlen",
+    "explanation": "'wurde empfohlen' (Passiv Praeteritum) ist korrekt. Die Handlung wurde im Entlassungsprozess abgeschlossen."
+  },
+  {
+    "id": "g62",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Der Patient berichtet: 'Ich habe 10 kg in 3 Monaten abgenommen.' Wie geben Sie das indirekt wieder?",
+    "options": [
+      "Der Patient habe in 3 Monaten 10 kg abgenommen",
+      "Der Patient nahm 10 kg ab",
+      "Der Patient hat 10 kg abgenommen",
+      "Gewichtsverlust von 10 kg in 3 Monaten"
+    ],
+    "answer": "Der Patient habe in 3 Monaten 10 kg abgenommen",
+    "explanation": "'habe abgenommen' ist Konjunktiv I Perfekt. Die indirekte Wiedergabe ist wichtig, da es sich um die Eigenangabe des Patienten handelt."
+  },
+  {
+    "id": "g63",
+    "topic": "Concise documentation style",
+    "question": "Ein Patient hat Hypertonie, Diabetes und COPD. Wie dokumentieren Sie die relevanten Diagnosen kurz?",
+    "options": [
+      "IC: Hypertonie, Diabetes Typ 2, COPD",
+      "Patient krank: Bluthochdruck, Zucker, Lunge",
+      "Diverse Erkrankungen",
+      "Mehrere chronische Erkrankungen bekannt"
+    ],
+    "answer": "IC: Hypertonie, Diabetes Typ 2, COPD",
+    "explanation": "'IC' (Interne Klassifikation) oder 'DG' (Diagnosen) mit einer klaren Liste ist Standard. Die Diagnosen werden nach Fachgebieten sortiert."
+  },
+  {
+    "id": "g64",
+    "topic": "Temporal sequencing",
+    "question": "Ein Symptom besteht seit Tagen. Wie geben Sie den Beginn praezise an?",
+    "options": [
+      "Seit ca. 3 Tagen bestehende Dysurie",
+      "Seit einigen Tagen",
+      "Seit ein paar Tagen",
+      "In den letzten Tagen"
+    ],
+    "answer": "Seit ca. 3 Tagen bestehende Dysurie",
+    "explanation": "'Seit ca. 3 Tagen' ist praezise genug fuer die Klinik, aber mit 'ca.' ehrlich. Die Nominalisierung 'bestehende Dysurie' ist fachlich."
+  },
+  {
+    "id": "g65",
+    "topic": "Causal phrasing",
+    "question": "Die Narkose fuehrte zu Uebelkeit. Wie ist die korrekte kausale Formulierung?",
+    "options": [
+      "Postoperative Uebelkeit bei Allgemeinanakose",
+      "Narkose machte Uebelkeit",
+      "Weil Narkose, deshalb Uebelkeit",
+      "Uebelkeit wegen Narkose"
+    ],
+    "answer": "Postoperative Uebelkeit bei Allgemeinanakose",
+    "explanation": "'Postoperativ' beschreibt den zeitlichen Zusammenhang, 'bei' den kausalen. Das ist die knappste fachliche Formulierung."
+  },
+  {
+    "id": "g66",
+    "topic": "Risk/benefit phrasing",
+    "question": "Ein Patient mit Niereninsuffizienz bekommt ein NSAR. Wie dokumentieren Sie die Nutzen-Risiko-Abwaegung?",
+    "options": [
+      "NSAR-Therapie unter strenger Indikationsstellung bei Niereninsuffizienz, Kontrolle der Retentionswerte in 1 Woche",
+      "Ibuprofen ist ok",
+      "NSAR mit Vorsicht geben",
+      "Nierenwerte kontrollieren"
+    ],
+    "answer": "NSAR-Therapie unter strenger Indikationsstellung bei Niereninsuffizienz, Kontrolle der Retentionswerte in 1 Woche",
+    "explanation": "Die Dokumentation zeigt: das Risiko ist bekannt (Niereninsuffizienz), die Indikation ist streng gestellt, und es gibt einen Kontrollplan."
+  },
+  {
+    "id": "g67",
+    "topic": "Recommendation phrasing",
+    "question": "Welche Formulierung ist fuer die Empfehlung einer Reha-Massnahme geeignet?",
+    "options": [
+      "Wir empfehlen eine stationaere medizinische Rehabilitation aufgrund der erheblichen Funktionseinschraenkungen",
+      "Patient soll in Reha",
+      "Reha beantragen",
+      "Bitte um Reha"
+    ],
+    "answer": "Wir empfehlen eine stationaere medizinische Rehabilitation aufgrund der erheblichen Funktionseinschraenkungen",
+    "explanation": "Eine Reha-Empfehlung enthaelt die Art (stationaer), den Grund (Funktionseinschraenkungen) und die Formulierung 'Wir empfehlen'."
+  },
+  {
+    "id": "g68",
+    "topic": "Patient-friendly simplification",
+    "question": "Wie erklaeren Sie 'Koronarangiografie' einem Achtzigjaehrigen?",
+    "options": [
+      "Eine Roentgenuntersuchung der Herzkranzgefaesse",
+      "Koronarangiografie ist ein invasives Verfahren",
+      "Wir schauen uns die Herzkranzgefaesse mit einem Katheter an",
+      "Herzkatheteruntersuchung"
+    ],
+    "answer": "Eine Roentgenuntersuchung der Herzkranzgefaesse",
+    "explanation": "Fuer aeltere Patienten ist 'Roentgenuntersuchung' vertraut. 'Herzkranzgefaesse' erklaert was untersucht wird. Die Einfachheit ist an das Alter angepasst."
+  },
+  {
+    "id": "g69",
+    "topic": "Formal vs simple medical language",
+    "question": "Ein Pfleger fragt nach der Lagerung bei einem Schlaganfallpatienten. Welche Anweisung ist fuer die Pflege geeignet?",
+    "options": [
+      "30-Grad-Oberkoerperhochlagerung, Kopf in Mittelstellung, betroffene Seite frei",
+      "Lagerung nach den Kriterien des cerebralen Oedems",
+      "Patient hoch und gerade",
+      "Normale Schaedel-Lagerung"
+    ],
+    "answer": "30-Grad-Oberkoerperhochlagerung, Kopf in Mittelstellung, betroffene Seite frei",
+    "explanation": "Pflegeanweisungen muessen handlungsleitend und praezise sein. Winkel (30 Grad), Position (Kopf in Mittelstellung) und Besonderheit (Seite frei) werden genannt."
+  },
+  {
+    "id": "g70",
+    "topic": "Avoiding ambiguity",
+    "question": "Welche Formulierung ist bei der Anweisung zur Medikamentengabe am eindeutigsten?",
+    "options": [
+      "Metformin 500 mg 1-0-1, taeglich",
+      "Metformin morgens und abends 1 Tablette",
+      "Metformin 2x taeglich",
+      "Metformin 1000 mg/Tag"
+    ],
+    "answer": "Metformin 500 mg 1-0-1, taeglich",
+    "explanation": "'1-0-1' bedeutet: 1 Tablette morgens, 0 mittags, 1 abends. Dieses Schema ist eindeutig und international in deutschen Kliniken Standard."
+  },
+  {
+    "id": "g71",
+    "topic": "Abbreviations in medical German",
+    "question": "Welche Abkuerzung ist im deutschen Sprachraum NICHT fuer die Medikation ueblich?",
+    "options": [
+      "1-0-1",
+      "p.o.",
+      "i.v.",
+      "QD"
+    ],
+    "answer": "QD",
+    "explanation": "'QD' (quaque die = einmal taeglich) ist eine englische Abkuerzung. Im Deutschen ist '1-0-0' oder '1x taeglich' ueblich. 'QD' kann mit 'QID' (viermal taeglich) verwechselt werden."
+  },
+  {
+    "id": "g72",
+    "topic": "Differential diagnosis wording",
+    "question": "Welche Formulierung ist falsch / unueblich bei einer Differentialdiagnose?",
+    "options": [
+      "V.a. Appendizitis, DD: Adnexitis",
+      "V.a. Appendizitis, DD: nichts anderes",
+      "V.a. Appendizitis, DD: Enteritis",
+      "V.a. Appendizitis, DD: Harnleiterstein"
+    ],
+    "answer": "V.a. Appendizitis, DD: nichts anderes",
+    "explanation": "'DD: nichts anderes' ist keine sinnvolle Differentialdiagnose. Die DD muss eine konkrete Alternative nennen, die in Betracht gezogen wird."
+  },
+  {
+    "id": "g73",
+    "topic": "Uncertainty wording",
+    "question": "Ein Laborwert ist grenzwertig. Wie dokumentieren Sie das korrekt?",
+    "options": [
+      "CRP 8 mg/l, grenzwertig erhoeht, Kontrolle empfohlen",
+      "CRP ist leicht erhoeht",
+      "CRP nicht in Ordnung",
+      "CRP 8, Wert auffaellig"
+    ],
+    "answer": "CRP 8 mg/l, grenzwertig erhoeht, Kontrolle empfohlen",
+    "explanation": "Die Dokumentation nennt den genauen Wert (8 mg/l), die Einordnung (grenzwertig erhoeht) und eine Handlungsempfehlung (Kontrolle)."
+  },
+  {
+    "id": "g74",
+    "topic": "Medication instruction phrasing",
+    "question": "Ein Patient hat Schluckbeschwerden und bekommt Tabletten. Wie dokumentieren Sie die Veraenderung?",
+    "options": [
+      "Aufgrund von Dysphagie Umstellung auf Saft oder Loesetabletten",
+      "Tabletten zerkleinern",
+      "Medikamente mit Essen geben",
+      "Patient kann nicht schlucken"
+    ],
+    "answer": "Aufgrund von Dysphagie Umstellung auf Saft oder Loesetabletten",
+    "explanation": "Die Anweisung nennt den Grund (Dysphagie) und die Massnahme (Umstellung auf alternative Darreichungsform). Das ist fuer die Pflege handlungsleitend."
+  },
+  {
+    "id": "g75",
+    "topic": "Discharge recommendation phrasing",
+    "question": "Ein Patient mit Suizidgedanken wird entlassen. Wie dokumentieren Sie die Empfehlung?",
+    "options": [
+      "Wir empfehlen eine umgehende Vorstellung in der Psychiatrie, bei akuter Eigengefaehrdung sofort den Notarzt rufen",
+      "Patient soll zum Psychiater",
+      "Psychologische Hilfe suchen",
+      "Sich um den Patienten kuemmern"
+    ],
+    "answer": "Wir empfehlen eine umgehende Vorstellung in der Psychiatrie, bei akuter Eigengefaehrdung sofort den Notarzt rufen",
+    "explanation": "Bei psychiatrischen Notfaellen muss die Dringlichkeit ('umgehend') und der konkrete Weg (Psychiatrie) genannt werden. Ein Notfallplan gehoert dazu."
+  },
+  {
+    "id": "g76",
+    "topic": "Consent/documentation phrasing",
+    "question": "Ein Patient zieht seine Einwilligung zurueck. Wie dokumentieren Sie das?",
+    "options": [
+      "Patient hat die Einwilligung zur Operation widerrufen, ueber Folgen aufgeklaert",
+      "Patient will nicht mehr",
+      "OP abgesagt",
+      "Patient hat sich anders entschieden"
+    ],
+    "answer": "Patient hat die Einwilligung zur Operation widerrufen, ueber Folgen aufgeklaert",
+    "explanation": "Der Widerruf der Einwilligung muss dokumentiert werden. Ebenso die Aufklaerung ueber die Folgen des Widerrufs."
+  },
+  {
+    "id": "g77",
+    "topic": "Doctor-to-doctor handover style",
+    "question": "Ein Patient hat eine Nachblutung. Wie uebergeben Sie das an den Nachtdienst?",
+    "options": [
+      "Bitte kontrollieren: Patient Mueller, Z.n. TEP rechts, Frischblut im Drainagesystem ca. 200 ml seit 20 Uhr, RR 100/60, Puls 100. Bei >300 ml oder RR <90 bitte informieren.",
+      "Patient hat geblutet",
+      "Nachblutung bei Herrn Mueller",
+      "Achtung: blutet noch"
+    ],
+    "answer": "Bitte kontrollieren: Patient Mueller, Z.n. TEP rechts, Frischblut im Drainagesystem ca. 200 ml seit 20 Uhr, RR 100/60, Puls 100. Bei >300 ml oder RR <90 bitte informieren.",
+    "explanation": "Eine gute Uebergabe enthaelt: Patientenidentifikation, das konkrete Problem, die objektiven Parameter und eindeutige Alarmgrenzen."
+  },
+  {
+    "id": "g78",
+    "topic": "Error correction in medical German",
+    "question": "Im Befund steht: 'Das EKG ist normal. Die Lunge ist ohne Befund. Der Blutbefund zeigt keine Auffaelligkeiten.' Was ist der stilistische Fehler?",
+    "options": [
+      "Die drei Saetze sind redundant und koennen zusammengefasst werden",
+      "Es fehlen Fachbegriffe",
+      "Die Reihenfolge ist falsch",
+      "Die Satzstellung ist falsch"
+    ],
+    "answer": "Die drei Saetze sind redundant und koennen zusammengefasst werden",
+    "explanation": "Drei Saetze mit derselben Aussage (alles normal) sind ineffizient. Besser: 'EKG, Lunge und Blutbild unauffaellig.'"
+  },
+  {
+    "id": "g79",
+    "topic": "Nominalization in medical notes",
+    "question": "Wie nominalisieren Sie 'der Patient hat Blut im Urin' fuer den Laboranforderungsschein?",
+    "options": [
+      "Makrohaematurie",
+      "Blut im Urin",
+      "Blutiger Urin",
+      "Haematurie"
+    ],
+    "answer": "Makrohaematurie",
+    "explanation": "'Makrohaematurie' ist die fachlich korrekte Bezeichnung fuer sichtbares Blut im Urin. Die Einteilung in Mikro- und Makrohaematurie ist klinisch relevant."
+  },
+  {
+    "id": "g80",
+    "topic": "Passive voice in documentation",
+    "question": "Ein Arzt moechte betonen, dass eine Handlung von ihm persoenlich durchgefuehrt wurde. Ist das im Arztbrief ueblich?",
+    "options": [
+      "Ja, mit 'ich habe'",
+      "Nein, Passiv ist Standard unabhaengig von der handelnden Person",
+      "Nur bei wichtigen Eingriffen",
+      "Ja, mit 'durch mich'"
+    ],
+    "answer": "Nein, Passiv ist Standard unabhaengig von der handelnden Person",
+    "explanation": "Im deutschen Arztbrief ist das Passiv Standard. Die handelnde Person wird nur dann genannt, wenn sie fuer die Bewertung relevant ist (z.B. Oberarzt vs. Assistenzarzt)."
+  },
+  {
+    "id": "g81",
+    "topic": "Konjunktiv I for reported speech",
+    "question": "Der Patient gibt an: 'Ich bin um 14 Uhr zu Hause.' Wie geben Sie das im Entlassungsbrief indirekt wieder?",
+    "options": [
+      "Entlassung des Patienten erfolge um 14 Uhr",
+      "Patient hat gesagt, er geht um 14 Uhr",
+      "Der Patient sagt, er ist um 14 Uhr zu Hause",
+      "Patient werde um 14 Uhr entlassen"
+    ],
+    "answer": "Entlassung des Patienten erfolge um 14 Uhr",
+    "explanation": "'erfolge' ist Konjunktiv I von 'erfolgen'. Fuer geplante Ereignisse ist die indirekte Wiedergabe mit 'erfolge' ueblich."
+  },
+  {
+    "id": "g82",
+    "topic": "Concise documentation style",
+    "question": "Ein Patient bekommt taeglich ASS, Statin und Betablocker. Wie ist die knappste korrekte Auflistung?",
+    "options": [
+      "ASS 100 mg 1-0-0, Atorvastatin 20 mg 0-0-1, Bisoprolol 5 mg 1-0-0",
+      "Patient nimmt ASS, Atorvastatin und Bisoprolol",
+      "Medikamente wie bisher",
+      "M: ASS, Statin, Betablocker"
+    ],
+    "answer": "ASS 100 mg 1-0-0, Atorvastatin 20 mg 0-0-1, Bisoprolol 5 mg 1-0-0",
+    "explanation": "Das Format Wirkstoff-Dosis-Schema ist der Standard fuer Medikamentenlisten im Arztbrief. Es ist knapp, aber vollstaendig."
+  },
+  {
+    "id": "g83",
+    "topic": "Temporal sequencing",
+    "question": "Ein Symptom trat nach dem Essen auf. Wie dokumentieren Sie den zeitlichen Zusammenhang?",
+    "options": [
+      "Postprandiale Oberbauchschmerzen",
+      "Schmerzen nach Essen",
+      "Nach dem Essen Bauchweh",
+      "Bauchschmerzen nach Nahrungsaufnahme"
+    ],
+    "answer": "Postprandiale Oberbauchschmerzen",
+    "explanation": "'Postprandial' ist der fachliche Begriff fuer 'nach dem Essen'. Die Nominalisierung ist kurz und praezise."
+  },
+  {
+    "id": "g84",
+    "topic": "Causal phrasing",
+    "question": "Der Tumor verursachte die Schmerzen. Wie formulieren Sie das in der Zusammenfassung?",
+    "options": [
+      "Schmerzsymptomatik bei bekanntem Tumorleiden",
+      "Tumor macht Schmerzen",
+      "Weil Tumor, Schmerzen",
+      "Schmerz verursacht durch Tumor"
+    ],
+    "answer": "Schmerzsymptomatik bei bekanntem Tumorleiden",
+    "explanation": "'bei (bekanntem) Tumorleiden' ist die Standard-Kausalformulierung. 'Schmerzsymptomatik' ist der fachliche Oberbegriff."
+  },
+  {
+    "id": "g85",
+    "topic": "Risk/benefit phrasing",
+    "question": "Eine Bluttransfusion ist noetig, aber der Patient lehnt ab (Zeuge Jehovas). Wie dokumentieren Sie das?",
+    "options": [
+      "Patient lehnt Bluttransfusion aus religiosen Gruenden ab, ueber Risiken aufgeklaert, Alternativtherapie besprochen",
+      "Patient will kein Blut",
+      "Zeuge Jehovas",
+      "Transfusion abgelehnt"
+    ],
+    "answer": "Patient lehnt Bluttransfusion aus religiosen Gruenden ab, ueber Risiken aufgeklaert, Alternativtherapie besprochen",
+    "explanation": "Die Dokumentation muss den Grund der Ablehnung (religioes), die Aufklaerung ueber Risiken und die besprochenen Alternativen enthalten."
+  },
+  {
+    "id": "g86",
+    "topic": "Recommendation phrasing",
+    "question": "Ein Patient braucht eine Impfung vor der Reise. Wie formulieren Sie die Empfehlung korrekt?",
+    "options": [
+      "Empfehlung: Hepatitis-A- und Typhus-Impfung vor Reise nach Indien",
+      "Patient soll sich impfen lassen",
+      "Impfungen fuer Reise empfohlen",
+      "Bitte um Impfung"
+    ],
+    "answer": "Empfehlung: Hepatitis-A- und Typhus-Impfung vor Reise nach Indien",
+    "explanation": "Die Impfempfehlung nennt die spezifischen Impfungen und den Grund (Reise nach Indien). So ist sie fuer den Hausarzt umsetzbar."
+  },
+  {
+    "id": "g87",
+    "topic": "Patient-friendly simplification",
+    "question": "Wie erklaeren Sie einem Patienten 'Harnverhalt'?",
+    "options": [
+      "Sie koennen Ihren Urin nicht lassen, obwohl die Blase voll ist",
+      "Harnverhalt ist die Unfaehigkeit zur Blasenentleerung",
+      "Ihre Blase funktioniert nicht richtig",
+      "Sie mussen einen Katheter bekommen"
+    ],
+    "answer": "Sie koennen Ihren Urin nicht lassen, obwohl die Blase voll ist",
+    "explanation": "Die Erklaerung beschreibt das Problem ('nicht lassen') und den Mechanismus ('obwohl die Blase voll ist'). Das macht es fuer den Patienten verstaendlich."
+  },
+  {
+    "id": "g88",
+    "topic": "Formal vs simple medical language",
+    "question": "Welche Formulierung ist fuer das Aufklaerungsgespraech mit einer arabischsprachigen Patientin mit geringen Deutschkenntnissen geeignet?",
+    "options": [
+      "Wir machen eine Spiegelung des Magens. Sie bekommen etwas zum Schlafen, dann tut es nicht weh.",
+      "Oesophagogastroduodenoskopie in Sedierung",
+      "Wir schauen in den Bauch rein",
+      "Magen-Darm-Spiegelung"
+    ],
+    "answer": "Wir machen eine Spiegelung des Magens. Sie bekommen etwas zum Schlafen, dann tut es nicht weh.",
+    "explanation": "Bei Sprachbarrieren helfen kurze Saetze, einfaches Vokabular ('Spiegelung des Magens') und die Beschreibung des Erlebens ('zum Schlafen, tut nicht weh')."
+  },
+  {
+    "id": "g89",
+    "topic": "Avoiding ambiguity",
+    "question": "Ein Patient soll 'bei Bedarf' ein Medikament erhalten. Welche Formulierung ist am eindeutigsten fuer die Pflege?",
+    "options": [
+      "Vomex 100 mg bei Uebelkeit oder Erbrechen, fruehestens nach 6 Stunden wiederholbar",
+      "Vomex bei Bedarf",
+      "Vomex wenn noetig",
+      "Vomex 100 mg"
+    ],
+    "answer": "Vomex 100 mg bei Uebelkeit oder Erbrechen, fruehestens nach 6 Stunden wiederholbar",
+    "explanation": "'Bei Bedarf' muss konkretisiert werden: welcher Bedarf (Uebelkeit oder Erbrechen) und welche Einschraenkung (fruehestens nach 6 Stunden)."
+  },
+  {
+    "id": "g90",
+    "topic": "Abbreviations in medical German",
+    "question": "Welche Abkuerzung steht im deutschen Klinikalltag eindeutig fuer 'Krankenhaus'?",
+    "options": [
+      "KH",
+      "Krkhs.",
+      "Krhs.",
+      "KHaus"
+    ],
+    "answer": "KH",
+    "explanation": "'KH' ist die im deutschen Klinikalltag uebliche Abkuerzung fuer Krankenhaus. Sie ist kurz, eindeutig und wird ueberall verstanden."
+  },
+  {
+    "id": "g91",
+    "topic": "Differential diagnosis wording",
+    "question": "Sie haben eine Hauptdiagnose und eine Alternative. Wie dokumentieren Sie das?",
+    "options": [
+      "V.a. bakterielle Pneumonie, DD virale Genese",
+      "Pneumonie oder Virus?",
+      "Entweder bakteriell oder viral",
+      "Nicht sicher ob bakteriell oder viral"
+    ],
+    "answer": "V.a. bakterielle Pneumonie, DD virale Genese",
+    "explanation": "Die Hauptvermutung (V.a. bakterielle Pneumonie) wird zuerst genannt, die Alternative folgt mit 'DD'. Das ist die Standardstruktur."
+  },
+  {
+    "id": "g92",
+    "topic": "Uncertainty wording",
+    "question": "Ein CT-Befund ist nicht eindeutig. Wie formulieren Sie den Radiologiebericht?",
+    "options": [
+      "Kein sicherer Nachweis einer Fraktur, jedoch leichte Kortikalisunterbrechung nicht sicher auszuschliessen",
+      "Keine Fraktur",
+      "Vielleicht Fraktur",
+      "Koennte ein Bruch sein"
+    ],
+    "answer": "Kein sicherer Nachweis einer Fraktur, jedoch leichte Kortikalisunterbrechung nicht sicher auszuschliessen",
+    "explanation": "Die Formulierung gibt die Unsicherheit praezise wieder: was nicht sicher ist (Fraktur) und was gesehen wurde (Kortikalisunterbrechung)."
+  },
+  {
+    "id": "g93",
+    "topic": "Medication instruction phrasing",
+    "question": "Ein Patient bekommt Marcumar. Wie dokumentieren Sie die INR-Kontrollen?",
+    "options": [
+      "Phenprocoumon nach INR-Schema. Ziel-INR 2,0-3,0. Naechste Kontrolle 03.07.",
+      "Marcumar wie gehabt",
+      "Blutverduenner nach INR",
+      "Marcumar, INR kontrollieren"
+    ],
+    "answer": "Phenprocoumon nach INR-Schema. Ziel-INR 2,0-3,0. Naechste Kontrolle 03.07.",
+    "explanation": "Die Dokumentation der Antikoagulation enthaelt den Wirkstoff, die Steuerung (nach INR-Schema), den Zielbereich (2,0-3,0) und das naechste Kontrolldatum."
+  },
+  {
+    "id": "g94",
+    "topic": "Discharge recommendation phrasing",
+    "question": "Ein Patient mit Diabetes wird entlassen. Wie formulieren Sie die Nachsorge?",
+    "options": [
+      "BZ-Tagesprofil 1x woechentlich, HbA1c-Kontrolle in 3 Monaten, bei Entgleisung Vorstellung in der Notaufnahme",
+      "Zucker kontrollieren",
+      "Blutzucker messen",
+      "Diabetes-Nachsorge einleiten"
+    ],
+    "answer": "BZ-Tagesprofil 1x woechentlich, HbA1c-Kontrolle in 3 Monaten, bei Entgleisung Vorstellung in der Notaufnahme",
+    "explanation": "Die Nachsorgeempfehlung enthaelt: Frequenz (1x woechentlich), konkrete Parameter (BZ-Tagesprofil, HbA1c) und einen Notfallplan (bei Entgleisung)."
+  },
+  {
+    "id": "g95",
+    "topic": "Consent/documentation phrasing",
+    "question": "Ein Patient stimmt einer OP zu, moechte aber keine Blutkonserven. Wie dokumentieren Sie das?",
+    "options": [
+      "Einwilligung in OP unter Vorbehalt: keine Blutkonserven. Ueber Risiken aufgeklaert.",
+      "Patient will OP, aber kein Blut",
+      "OP-Einwilligung mit Einschraenkung",
+      "Patient lehnt Blut ab"
+    ],
+    "answer": "Einwilligung in OP unter Vorbehalt: keine Blutkonserven. Ueber Risiken aufgeklaert.",
+    "explanation": "Eingeschraenkte Einwilligungen muessen genau dokumentiert werden: worin wird eingewilligt, worin nicht, und dass die Risiken bekannt sind."
+  },
+  {
+    "id": "g96",
+    "topic": "Doctor-to-doctor handover style",
+    "question": "Ein Patient hat Fieber unklarer Genese. Was gehoert in die Uebergabe?",
+    "options": [
+      "Fieber seit 3 Tagen bis 39 Grad, Blutkulturen abgenommen, Antibiogramm ausstehend. Bitte CRP-Kontrolle morgen.",
+      "Patient hat Fieber",
+      "Temperatur erhoeht",
+      "Fieber, bitte beobachten"
+    ],
+    "answer": "Fieber seit 3 Tagen bis 39 Grad, Blutkulturen abgenommen, Antibiogramm ausstehend. Bitte CRP-Kontrolle morgen.",
+    "explanation": "Die Uebergabe enthaelt die Dauer, das Ausmass (39 Grad), bereits erfolgte Massnahmen (Blutkulturen) und die offene Aufgabe (CRP-Kontrolle)."
+  },
+  {
+    "id": "g97",
+    "topic": "Error correction in medical German",
+    "question": "Im Arztbrief steht: 'Nach ausfuehrlicher Aufklaerung hat der Patient der Operation zugestimmt.' Ist dieser Satz korrekt?",
+    "options": [
+      "Ja, der Satz ist korrekt",
+      "Nein, es muss 'in die Operation' heissen",
+      "Nein, 'nach ausfuehrlicher Aufklaerung' ist falsch",
+      "Nein, 'zugestimmt' ist zu informell"
+    ],
+    "answer": "Ja, der Satz ist korrekt",
+    "explanation": "'Der Patient hat der Operation zugestimmt' (Dativ) ist korrekt. Die Raeume 'in die Operation' waere falsch, da 'zustimmen' den Dativ regiert."
+  },
+  {
+    "id": "g98",
+    "topic": "Concise documentation style",
+    "question": "Ein Patient ist verwirrt, desorientiert und hat Halluzinationen. Wie fassen Sie das kurz zusammen?",
+    "options": [
+      "Delirante Symptomatik mit Halluzinationen",
+      "Patient spinnt",
+      "Verwirrt und komisch",
+      "Psychotisch"
+    ],
+    "answer": "Delirante Symptomatik mit Halluzinationen",
+    "explanation": "'Delirante Symptomatik' fasst Verwirrtheit und Desorientiertheit zusammen. 'Halluzinationen' werden als konkrete Zusatzinfo genannt."
+  },
+  {
+    "id": "g99",
+    "topic": "Passive voice in documentation",
+    "question": "Im Arztbrief: 'Die Diagnose wurde anhand der Bildgebung ______.' Welches Partizip ist korrekt?",
+    "options": [
+      "gesichert",
+      "sichert",
+      "gesicherten",
+      "sichernd"
+    ],
+    "answer": "gesichert",
+    "explanation": "'Wurde gesichert' ist Passiv Praeteritum, Partizip II von 'sichern'. Es beschreibt eine abgeschlossene Handlung."
+  }
+]

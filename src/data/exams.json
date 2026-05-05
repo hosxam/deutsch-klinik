@@ -1,5 +1,5 @@
 {
-  "_comment": "Full Goethe-style practice exams per level. Each contains Lesen, Hören, Schreiben, and Sprechen sections. Questions are original but format follows Goethe exam style. Add more exams by following the structure.",
+  "_comment": "Full Göthe-style practice exams per level. Each contains Lesen, Hören, Schreiben, and Sprechen sections. Qüstions are original but format follows Göthe exam style. Add more exams by following the structure.",
   "exams": {
     "A1": [
       {
@@ -44,7 +44,7 @@
                 "id": "A1_ex_l1_4",
                 "type": "true-false",
                 "question": "Speisekarte: 'Apfelkuchen 3,50 Euro, Kaffee 2,50 Euro, Tee 2,00 Euro.' Der Apfelkuchen kostet 3,50 Euro.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_l1_5",
@@ -79,7 +79,7 @@
                 "id": "A1_ex_h1_2",
                 "type": "true-false",
                 "question": "Durchsage: 'Der Zug nach Hamburg fährt ab Gleis 4.' Der Zug nach Hamburg fährt ab Gleis 4.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_h1_3",
@@ -151,7 +151,7 @@
               {
                 "id": "A1_ex_l2_3",
                 "type": "mcq",
-                "question": "Hinweis: 'Bitte melden Sie sich an der Anmeldung. Nehmen Sie im Wartezimmer Platz.' Was sollen Patienten zuerst machen?",
+                "question": "Hinweis: 'Bitte melden Sie sich an der Anmeldung. Nehmen Sie im Wartezimmer Platz.' Was sollen Patienten zürst machen?",
                 "options": [
                   "Im Wartezimmer Platz nehmen",
                   "Sich an der Anmeldung melden",
@@ -164,7 +164,7 @@
                 "id": "A1_ex_l2_4",
                 "type": "true-false",
                 "question": "Fahrplan: 'Bus 142: Hauptbahnhof 9:00, Stadtmitte 9:10, Marktplatz 9:20.' Der Bus braucht 20 Minuten vom Hauptbahnhof zum Marktplatz.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_l2_5",
@@ -266,7 +266,7 @@
                 "id": "A1_ex_l3_2",
                 "type": "true-false",
                 "question": "Kassenbon: 'Milch 1,29 Euro, Brot 2,49 Euro, Butter 1,89 Euro. Summe: 5,67 Euro.' Der Kunde hat 5,67 Euro bezahlt.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_l3_3",
@@ -319,7 +319,7 @@
                 "id": "A1_ex_h3_2",
                 "type": "true-false",
                 "question": "Kunde: 'Ich suche eine warme Jacke in Große M.' Verkauferin: 'Hier ist eine schwarze Jacke fur 49,90 Euro.' Der Kunde sucht eine Jacke.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_h3_3",
@@ -404,7 +404,7 @@
                 "id": "A1_ex_l4_4",
                 "type": "true-false",
                 "question": "Sprechzeiten: 'Mo-Fr 8-17 Uhr, Sa 9-13 Uhr, So geschlossen.' Die Praxis hat sonntags geschlossen.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A1_ex_l4_5",
@@ -633,19 +633,19 @@
               {
                 "id": "A2_ex1_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Das Konzert beginnt um 20 Uhr. Einlass ist ab 19 Uhr. Karten kosten 25 Euro an der Abendkasse.'",
+                "question": "Welche Überschrift passt? 'Das Konzert beginnt um 20 Uhr. Einlass ist ab 19 Uhr. Karten kosten 25 Euro an der Abendkasse.'",
                 "options": [
                   "Kinoprogramm",
-                  "Konzertankuendigung",
-                  "Theaterstueck",
-                  "Museumsfuehrung"
+                  "Konzertankündigung",
+                  "Theaterstück",
+                  "Museumsführung"
                 ],
-                "answer": "Konzertankuendigung"
+                "answer": "Konzertankündigung"
               },
               {
                 "id": "A2_ex1_les_4",
                 "type": "mcq",
-                "question": "Notiz: 'Milch, Brot, Eier, Aepfel - nicht vergessen! Und bitte die Rechnung bezahlen!' Was soll die Person tun?",
+                "question": "Notiz: 'Milch, Brot, Eier, Äpfel - nicht vergessen! Und bitte die Rechnung bezahlen!' Was soll die Person tun?",
                 "options": [
                   "Nur einkaufen",
                   "Einkaufen und Rechnung bezahlen",
@@ -658,7 +658,7 @@
                 "id": "A2_ex1_les_5",
                 "type": "true-false",
                 "question": "Text: 'Frau Meier arbeitet seit zehn Jahren als Krankenschwester im St. Joseph Krankenhaus.' Frau Meier arbeitet im Krankenhaus.",
-                "answer": "true"
+                "answer": "trü"
               }
             ]
           },
@@ -681,7 +681,7 @@
                 "id": "A2_ex1_hor_2",
                 "type": "true-false",
                 "question": "Telefonansage: 'Unsere Praxis bleibt vom 24. bis 28. Dezember geschlossen.' Die Praxis ist im Dezember geschlossen.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "A2_ex1_hor_3",
@@ -702,7 +702,7 @@
             "tasks": [
               {
                 "id": "A2_ex1_sch_1",
-                "prompt": "Sie haben einen Arzttermin vergessen. Schreiben Sie eine E-Mail an die Praxis. - Entschuldigen Sie sich - Nennen Sie den urspruenglichen Termin - Bitten Sie um einen neuen Termin",
+                "prompt": "Sie haben einen Arzttermin vergessen. Schreiben Sie eine E-Mail an die Praxis. - Entschuldigen Sie sich - Nennen Sie den ursprünglichen Termin - Bitten Sie um einen neuen Termin",
                 "wordLimit": 60
               }
             ]
@@ -712,12 +712,12 @@
             "tasks": [
               {
                 "id": "A2_ex1_spr_1",
-                "prompt": "Erzaehlen Sie von Ihrem letzten Urlaub. - Wohin sind Sie gefahren? - Mit wem? - Was haben Sie gemacht? - Wie war es?",
+                "prompt": "Erzählen Sie von Ihrem letzten Urlaub. - Wohin sind Sie gefahren? - Mit wem? - Was haben Sie gemacht? - Wie war es?",
                 "talkTime": 90
               },
               {
                 "id": "A2_ex1_spr_2",
-                "prompt": "Sprechen Sie ueber Ihre Hobbys. - Welche Hobbys haben Sie? - Seit wann machen Sie das? - Was gefaellt Ihnen daran?",
+                "prompt": "Sprechen Sie über Ihre Hobbys. - Welche Hobbys haben Sie? - Seit wann machen Sie das? - Was gefällt Ihnen daran?",
                 "talkTime": 60
               }
             ]
@@ -735,7 +735,7 @@
               {
                 "id": "A2_ex2_les_1",
                 "type": "mcq",
-                "question": "Aushang: 'Yoga-Kurs fuer Anfaenger - Start 10. Mai - montags 18-19 Uhr - 80 Euro.' Was steht auf dem Aushang?",
+                "question": "Aushang: 'Yoga-Kurs für Anfänger - Start 10. Mai - montags 18-19 Uhr - 80 Euro.' Was steht auf dem Aushang?",
                 "options": [
                   "Schwimmkurs",
                   "Yoga-Kurs",
@@ -753,9 +753,9 @@
               {
                 "id": "A2_ex2_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Fuer Kinder von 6 bis 10 Jahren. Wir malen, basteln und spielen Theater. Kosten: 30 Euro pro Monat.'",
+                "question": "Welche Überschrift passt? 'Für Kinder von 6 bis 10 Jahren. Wir malen, basteln und spielen Theater. Kosten: 30 Euro pro Monat.'",
                 "options": [
-                  "Sprachfoerderung",
+                  "Sprachförderung",
                   "Kinderkunstkurs",
                   "Sportcamp",
                   "Musikunterricht"
@@ -765,11 +765,11 @@
               {
                 "id": "A2_ex2_les_4",
                 "type": "mcq",
-                "question": "Schild im Park: 'Hunde bitte an die Leine nehmen. Haufen bitte entfernen.' Was muessen Hundebesitzer tun?",
+                "question": "Schild im Park: 'Hunde bitte an die Leine nehmen. Haufen bitte entfernen.' Was müssen Hundebesitzer tun?",
                 "options": [
                   "Hunde zu Hause lassen",
                   "Hunde anleinen und Haufen entfernen",
-                  "Hunde nur morgens ausfuehren",
+                  "Hunde nur morgens ausführen",
                   "Hunde ohne Leine laufen lassen"
                 ],
                 "answer": "Hunde anleinen und Haufen entfernen"
@@ -778,7 +778,7 @@
                 "id": "A2_ex2_les_5",
                 "type": "true-false",
                 "question": "Durchsage: 'Wegen eines Stromausfalls bleibt die Bibliothek heute geschlossen.' Die Bibliothek ist wegen Stromausfall zu.",
-                "answer": "true"
+                "answer": "trü"
               }
             ]
           },
@@ -788,7 +788,7 @@
               {
                 "id": "A2_ex2_hor_1",
                 "type": "mcq",
-                "question": "Durchsage: 'Der Zug nach Hamburg faehrt um 15:30 Uhr ab Gleis 7.' Von welchem Gleis faehrt der Zug?",
+                "question": "Durchsage: 'Der Zug nach Hamburg fährt um 15:30 Uhr ab Gleis 7.' Von welchem Gleis fährt der Zug?",
                 "options": [
                   "Gleis 3",
                   "Gleis 5",
@@ -806,7 +806,7 @@
               {
                 "id": "A2_ex2_hor_3",
                 "type": "mcq",
-                "question": "Kunde: 'Ich moechte das Zimmer bis Freitag buchen.' Wie lange moechte der Kunde bleiben?",
+                "question": "Kunde: 'Ich möchte das Zimmer bis Freitag buchen.' Wie lange möchte der Kunde bleiben?",
                 "options": [
                   "Bis Mittwoch",
                   "Bis Donnerstag",
@@ -837,7 +837,7 @@
               },
               {
                 "id": "A2_ex2_spr_2",
-                "prompt": "Erzaehlen Sie von Ihrer Wohnung. - Wo wohnen Sie? - Wie viele Zimmer? - Was gefaellt Ihnen? - Was nicht?",
+                "prompt": "Erzählen Sie von Ihrer Wohnung. - Wo wohnen Sie? - Wie viele Zimmer? - Was gefällt Ihnen? - Was nicht?",
                 "talkTime": 60
               }
             ]
@@ -855,7 +855,7 @@
               {
                 "id": "A2_ex3_les_1",
                 "type": "mcq",
-                "question": "Schild am Schwimmbad: 'Oeffnungszeiten: 8-20 Uhr. Letzter Einlass 19 Uhr. Mittwochs geschlossen.' Wann ist das Bad geschlossen?",
+                "question": "Schild am Schwimmbad: 'Öffnungszeiten: 8-20 Uhr. Letzter Einlass 19 Uhr. Mittwochs geschlossen.' Wann ist das Bad geschlossen?",
                 "options": [
                   "Montags",
                   "Dienstags",
@@ -873,19 +873,19 @@
               {
                 "id": "A2_ex3_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Tische, Stuehle, Betten und Schraenke werden kostenlos abgeholt. Anmeldung bis 12. Mai.'",
+                "question": "Welche Überschrift passt? 'Tische, Stühle, Betten und Schränke werden kostenlos abgeholt. Anmeldung bis 12. Mai.'",
                 "options": [
                   "Flohmarkt",
-                  "Sperrmuellabholung",
-                  "Moebelhaus",
+                  "Sperrmüllabholung",
+                  "Möbelhaus",
                   "Umzugshilfe"
                 ],
-                "answer": "Sperrmuellabholung"
+                "answer": "Sperrmüllabholung"
               },
               {
                 "id": "A2_ex3_les_4",
                 "type": "mcq",
-                "question": "Busfahrplan: 'Linie 42: Ab Hauptbahnhof 9:15, Ankunft Marktplatz 9:32.' Wie lange faehrt der Bus?",
+                "question": "Busfahrplan: 'Linie 42: Ab Hauptbahnhof 9:15, Ankunft Marktplatz 9:32.' Wie lange fährt der Bus?",
                 "options": [
                   "12 Minuten",
                   "15 Minuten",
@@ -908,10 +908,10 @@
               {
                 "id": "A2_ex3_hor_1",
                 "type": "mcq",
-                "question": "Arzt: 'Nehmen Sie diese Tabletten zweimal taeglich fuer eine Woche.' Wie lang soll der Patient die Tabletten nehmen?",
+                "question": "Arzt: 'Nehmen Sie diese Tabletten zweimal täglich für eine Woche.' Wie lang soll der Patient die Tabletten nehmen?",
                 "options": [
                   "Drei Tage",
-                  "Fuenf Tage",
+                  "Fünf Tage",
                   "Eine Woche",
                   "Zwei Wochen"
                 ],
@@ -920,20 +920,20 @@
               {
                 "id": "A2_ex3_hor_2",
                 "type": "true-false",
-                "question": "Ansage: 'Der Flug LH 300 nach Berlin startet um 14 Uhr.' Der Flug geht nach Muenchen.",
+                "question": "Ansage: 'Der Flug LH 300 nach Berlin startet um 14 Uhr.' Der Flug geht nach München.",
                 "answer": "false"
               },
               {
                 "id": "A2_ex3_hor_3",
                 "type": "mcq",
-                "question": "Buerkollege: 'Die Besprechung faellt heute aus. Neue Termine bekommt ihr per E-Mail.' Was ist passiert?",
+                "question": "Bürkollege: 'Die Besprechung fällt heute aus. Neue Termine bekommt ihr per E-Mail.' Was ist passiert?",
                 "options": [
-                  "Die Besprechung ist spaeter",
-                  "Die Besprechung faellt aus",
+                  "Die Besprechung ist später",
+                  "Die Besprechung fällt aus",
                   "Die Besprechung ist in einem anderen Raum",
-                  "Die Besprechung ist laenger"
+                  "Die Besprechung ist länger"
                 ],
-                "answer": "Die Besprechung faellt aus"
+                "answer": "Die Besprechung fällt aus"
               }
             ]
           },
@@ -942,7 +942,7 @@
             "tasks": [
               {
                 "id": "A2_ex3_sch_1",
-                "prompt": "Sie moechten in einem Restaurant einen Tisch fuer vier Personen reservieren. Schreiben Sie eine kurze E-Mail. - Wann und um wie viel Uhr? - Besondere Wuensche (z.B. Kinderstuhl) - Bitte um Bestsatigung",
+                "prompt": "Sie möchten in einem Restaurant einen Tisch für vier Personen reservieren. Schreiben Sie eine kurze E-Mail. - Wann und um wie viel Uhr? - Besondere Wünsche (z.B. Kinderstuhl) - Bitte um Bestsatigung",
                 "wordLimit": 60
               }
             ]
@@ -952,12 +952,12 @@
             "tasks": [
               {
                 "id": "A2_ex3_spr_1",
-                "prompt": "Beschreiben Sie Ihre Wohngegend. - Wo wohnen Sie? - Was gibt es in der Naehe? - Ist es ruhig oder lebhaft? - Gefaellt es Ihnen?",
+                "prompt": "Beschreiben Sie Ihre Wohngegend. - Wo wohnen Sie? - Was gibt es in der Nähe? - Ist es ruhig oder lebhaft? - Gefällt es Ihnen?",
                 "talkTime": 90
               },
               {
                 "id": "A2_ex3_spr_2",
-                "prompt": "Was haben Sie letztes Wochenende gemacht? Erzaehlen Sie. - Wann und mit wem? - Was haben Sie unternommen? - Hat es Spass gemacht?",
+                "prompt": "Was haben Sie letztes Wochenende gemacht? Erzählen Sie. - Wann und mit wem? - Was haben Sie unternommen? - Hat es Spass gemacht?",
                 "talkTime": 60
               }
             ]
@@ -993,7 +993,7 @@
               {
                 "id": "A2_ex4_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Am Samstag ab 14 Uhr. Musik, Tanz und gutes Essen. Eintritt frei. Kommt vorbei!'",
+                "question": "Welche Überschrift passt? 'Am Samstag ab 14 Uhr. Musik, Tanz und gutes Essen. Eintritt frei. Kommt vorbei!'",
                 "options": [
                   "Stadtfest",
                   "Vortrag",
@@ -1005,7 +1005,7 @@
               {
                 "id": "A2_ex4_les_4",
                 "type": "mcq",
-                "question": "Schild im Zug: 'Bitte halten Sie Ihre Fahrkarte bereit. Kontrolleure sind im Einsatz.' Was sollen die Fahrgaeste tun?",
+                "question": "Schild im Zug: 'Bitte halten Sie Ihre Fahrkarte bereit. Kontrolleure sind im Einsatz.' Was sollen die Fahrgäste tun?",
                 "options": [
                   "Nichts tun",
                   "Die Fahrkarte bereithalten",
@@ -1017,7 +1017,7 @@
               {
                 "id": "A2_ex4_les_5",
                 "type": "true-false",
-                "question": "Aushang: 'Die Sprechstunde von Frau Dr. Mueller ist dienstags 15-18 Uhr.' Frau Dr. Mueller hat donnerstags Sprechstunde.",
+                "question": "Aushang: 'Die Sprechstunde von Frau Dr. Müller ist dienstags 15-18 Uhr.' Frau Dr. Müller hat donnerstags Sprechstunde.",
                 "answer": "false"
               }
             ]
@@ -1028,7 +1028,7 @@
               {
                 "id": "A2_ex4_hor_1",
                 "type": "mcq",
-                "question": "Wetterbericht: 'Morgen regnet es im Norden, im Sueden bleibt es trocken.' Wie ist das Wetter im Sueden?",
+                "question": "Wetterbericht: 'Morgen regnet es im Norden, im Süden bleibt es trocken.' Wie ist das Wetter im Süden?",
                 "options": [
                   "Regnerisch",
                   "Trocken",
@@ -1072,12 +1072,12 @@
             "tasks": [
               {
                 "id": "A2_ex4_spr_1",
-                "prompt": "Sprechen Sie ueber Ihr Lieblingsessen. - Was essen Sie gern? - Wer kocht bei Ihnen? - Koennen Sie selber kochen? - Welches Gericht koennen Sie empfehlen?",
+                "prompt": "Sprechen Sie über Ihr Lieblingsessen. - Was essen Sie gern? - Wer kocht bei Ihnen? - Können Sie selber kochen? - Welches Gericht können Sie empfehlen?",
                 "talkTime": 90
               },
               {
                 "id": "A2_ex4_spr_2",
-                "prompt": "Was wollen Sie naechstes Jahr machen? - Reisen? - Lernen? - Einen neuen Job? - Warum?",
+                "prompt": "Was wollen Sie nächstes Jahr machen? - Reisen? - Lernen? - Einen neuen Job? - Warum?",
                 "talkTime": 60
               }
             ]
@@ -1095,14 +1095,14 @@
               {
                 "id": "A2_ex5_les_1",
                 "type": "mcq",
-                "question": "Notiz: 'Ich bin beim Baecker. Bin in 20 Minuten zurueck. Kaffee ist fertig.' Wo ist die Person?",
+                "question": "Notiz: 'Ich bin beim Bäcker. Bin in 20 Minuten zurück. Kaffee ist fertig.' Wo ist die Person?",
                 "options": [
                   "Beim Metzger",
-                  "Beim Baecker",
+                  "Beim Bäcker",
                   "Im Supermarkt",
                   "In der Arbeit"
                 ],
-                "answer": "Beim Baecker"
+                "answer": "Beim Bäcker"
               },
               {
                 "id": "A2_ex5_les_2",
@@ -1113,32 +1113,32 @@
               {
                 "id": "A2_ex5_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Fitnessstudio erweitert Oeffnungszeiten. Neu: Auch sonntags geoeffnet. Mitglieder erhalten 10% Rabatt im ersten Monat.'",
+                "question": "Welche Überschrift passt? 'Fitnessstudio erweitert Öffnungszeiten. Neu: Auch sonntags geöffnet. Mitglieder erhalten 10% Rabatt im ersten Monat.'",
                 "options": [
-                  "Neue Oeffnungszeiten",
-                  "Preiserhoehung",
+                  "Neue Öffnungszeiten",
+                  "Preiserhöhung",
                   "Kursausfall",
                   "Stellenanzeige"
                 ],
-                "answer": "Neue Oeffnungszeiten"
+                "answer": "Neue Öffnungszeiten"
               },
               {
                 "id": "A2_ex5_les_4",
                 "type": "mcq",
-                "question": "E-Mail: 'Betreff: Ihre Bestellung 8521. Die Lieferung verspaetet sich um 2 Tage.' Was ist passiert?",
+                "question": "E-Mail: 'Betreff: Ihre Bestellung 8521. Die Lieferung verspätet sich um 2 Tage.' Was ist passiert?",
                 "options": [
                   "Die Bestellung wurde storniert",
-                  "Die Lieferung ist frueher da",
-                  "Die Lieferung verspaetet sich",
+                  "Die Lieferung ist früher da",
+                  "Die Lieferung verspätet sich",
                   "Die Bestellung ist angekommen"
                 ],
-                "answer": "Die Lieferung verspaetet sich"
+                "answer": "Die Lieferung verspätet sich"
               },
               {
                 "id": "A2_ex5_les_5",
                 "type": "true-false",
                 "question": "Packungsbeilage: 'Nicht einnehmen nach dem 31.12.2025.' Das Medikament ist nach Dezember 2025 nicht mehr gut.",
-                "answer": "true"
+                "answer": "trü"
               }
             ]
           },
@@ -1166,7 +1166,7 @@
               {
                 "id": "A2_ex5_hor_3",
                 "type": "mcq",
-                "question": "Vermieter: 'Die Miete steigt ab naechstem Monat um 30 Euro.' Wie viel mehr muss der Mieter zahlen?",
+                "question": "Vermieter: 'Die Miete steigt ab nächstem Monat um 30 Euro.' Wie viel mehr muss der Mieter zahlen?",
                 "options": [
                   "20 Euro",
                   "25 Euro",
@@ -1182,7 +1182,7 @@
             "tasks": [
               {
                 "id": "A2_ex5_sch_1",
-                "prompt": "Ihr Nachbar macht oft nachts laute Musik. Schreiben Sie eine hoefliche Nachricht. - Erklaeren Sie das Problem - Weisen Sie auf die Ruhezeiten hin - Bitten Sie um Ruecksicht",
+                "prompt": "Ihr Nachbar macht oft nachts laute Musik. Schreiben Sie eine höfliche Nachricht. - Erklären Sie das Problem - Weisen Sie auf die Ruhezeiten hin - Bitten Sie um Rücksicht",
                 "wordLimit": 70
               }
             ]
@@ -1192,12 +1192,12 @@
             "tasks": [
               {
                 "id": "A2_ex5_spr_1",
-                "prompt": "Beschreiben Sie einen typischen Tag in Ihrem Leben. - Wann stehen Sie auf? - Was machen Sie tagsueber? - Was machen Sie abends?",
+                "prompt": "Beschreiben Sie einen typischen Tag in Ihrem Leben. - Wann stehen Sie auf? - Was machen Sie tagsüber? - Was machen Sie abends?",
                 "talkTime": 90
               },
               {
                 "id": "A2_ex5_spr_2",
-                "prompt": "Welche Stadt in Deutschland kennen Sie oder moechten Sie besuchen? - Welche Stadt? - Was gibt es dort zu sehen? - Warum interessiert Sie diese Stadt?",
+                "prompt": "Welche Stadt in Deutschland kennen Sie oder möchten Sie besuchen? - Welche Stadt? - Was gibt es dort zu sehen? - Warum interessiert Sie diese Stadt?",
                 "talkTime": 60
               }
             ]
@@ -1208,7 +1208,7 @@
     "B1": [
       {
         "id": "B1_exam_1",
-        "name": "Goethe B1 Practice Exam 1 - Arbeit und Bildung",
+        "name": "Göthe B1 Practice Exam 1 - Arbeit und Bildung",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1217,7 +1217,7 @@
               {
                 "id": "B1_ex1_les_1",
                 "type": "mcq",
-                "question": "Text: 'Immer mehr Unternehmen in Deutschland bieten ihren Mitarbeitern flexible Arbeitszeiten an. Eine Studie zeigt, dass 70 Prozent der Angestellten Homeoffice-Möglichkeiten nutzen möchten. Besonders junge Arbeitnehmer legen Wert auf eine gute Work-Life-Balance.' Was wuenschen sich junge Arbeitnehmer besonders?",
+                "question": "Text: 'Immer mehr Unternehmen in Deutschland bieten ihren Mitarbeitern flexible Arbeitszeiten an. Eine Studie zeigt, dass 70 Prozent der Angestellten Homeoffice-Möglichkeiten nutzen möchten. Besonders junge Arbeitnehmer legen Wert auf eine gute Work-Life-Balance.' Was wünschen sich junge Arbeitnehmer besonders?",
                 "options": [
                   "Ein hohes Gehalt",
                   "Eine gute Work-Life-Balance",
@@ -1229,25 +1229,25 @@
               {
                 "id": "B1_ex1_les_2",
                 "type": "true-false",
-                "question": "Text: 'Die Ausbildung zum Industriekaufmann dauert in der Regel drei Jahre. Die Berufsschule besuchen die Auszubildenden an ein bis zwei Tagen pro Woche. Eine Verkuerzung der Ausbildung auf zweieinhalb Jahre ist bei guten Leistungen moeglich.' Die Ausbildung zum Industriekaufmann dauert immer drei Jahre.",
+                "question": "Text: 'Die Ausbildung zum Industriekaufmann dauert in der Regel drei Jahre. Die Berufsschule besuchen die Auszubildenden an ein bis zwei Tagen pro Woche. Eine Verkürzung der Ausbildung auf zweieinhalb Jahre ist bei guten Leistungen möglich.' Die Ausbildung zum Industriekaufmann dauert immer drei Jahre.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex1_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Das Bundesministerium fuer Bildung und Forschung vergibt jedes Jahr Stipendien an besonders begabte Studierende aus dem In- und Ausland. Die Bewerbungsfrist endet am 31. Maerz.'",
+                "question": "Welche Überschrift passt? 'Das Bundesministerium für Bildung und Forschung vergibt jedes Jahr Stipendien an besonders begabte Studierende aus dem In- und Ausland. Die Bewerbungsfrist endet am 31. März.'",
                 "options": [
-                  "Studiengebuehren steigen",
-                  "Stipendien fuer begabte Studierende",
-                  "Neue Universitaet eroeffnet",
+                  "Studiengebühren steigen",
+                  "Stipendien für begabte Studierende",
+                  "Neue Universität eröffnet",
                   "Auslandssemester beliebt"
                 ],
-                "answer": "Stipendien fuer begabte Studierende"
+                "answer": "Stipendien für begabte Studierende"
               },
               {
                 "id": "B1_ex1_les_4",
                 "type": "gap-fill",
-                "question": "Fuer die Bewerbung ___ Sie Ihre Zeugnisse und einen Lebenslauf ein.",
+                "question": "Für die Bewerbung ___ Sie Ihre Zeugnisse und einen Lebenslauf ein.",
                 "options": [
                   "reichen",
                   "reicht",
@@ -1259,10 +1259,10 @@
               {
                 "id": "B1_ex1_les_5",
                 "type": "mcq",
-                "question": "Text: 'Herr Mueller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespraech musste er Fragen zu seiner Berufserfahrung, seinen Staerken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.' Was gehoert NICHT zu den Fragen im Vorstellungsgespraech?",
+                "question": "Text: 'Herr Müller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespräch musste er Fragen zu seiner Berufserfahrung, seinen Stärken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.' Was gehört NICHT zu den Fragen im Vorstellungsgespräch?",
                 "options": [
                   "Berufserfahrung",
-                  "Staerken und Schwachen",
+                  "Stärken und Schwachen",
                   "Gehaltsvorstellungen",
                   "Familienstand"
                 ],
@@ -1271,7 +1271,7 @@
               {
                 "id": "B1_ex1_les_6",
                 "type": "short-answer",
-                "question": "Text: \"Herr Mueller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespraech musste er Fragen zu seiner Berufserfahrung, seinen Staerken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.\" Auf welche Stelle hat sich Herr Mueller beworben?",
+                "question": "Text: \"Herr Müller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespräch musste er Fragen zu seiner Berufserfahrung, seinen Stärken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.\" Auf welche Stelle hat sich Herr Müller beworben?",
                 "answer": "Projektmanager",
                 "acceptedAnswers": [
                   "Projektmanager",
@@ -1288,7 +1288,7 @@
               {
                 "id": "B1_ex1_hor_1",
                 "type": "mcq",
-                "question": "Telefonansage der Agentur fuer Arbeit: 'Guten Tag, Sie sind verbunden mit der Agentur fuer Arbeit in Muenchen. Unsere Oeffnungszeiten sind Montag bis Freitag von 8 bis 16 Uhr. Mittwochs sind wir bis 18 Uhr fuer Sie da. Fuer die Vereinbarung eines persoenlichen Gespraechstermins druecken Sie bitte die 1. Fuer Fragen zu Ihrem Arbeitslosengeld druecken Sie die 2. Fuer Informationen zu Weiterbildungsmoeglichkeiten druecken Sie die 3.' Bis wann ist die Agentur am Mittwoch geoeffnet?",
+                "question": "Telefonansage der Agentur für Arbeit: 'Guten Tag, Sie sind verbunden mit der Agentur für Arbeit in München. Unsere Öffnungszeiten sind Montag bis Freitag von 8 bis 16 Uhr. Mittwochs sind wir bis 18 Uhr für Sie da. Für die Vereinbarung eines persönlichen Gesprächstermins drücken Sie bitte die 1. Für Fragen zu Ihrem Arbeitslosengeld drücken Sie die 2. Für Informationen zu Weiterbildungsmöglichkeiten drücken Sie die 3.' Bis wann ist die Agentur am Mittwoch geöffnet?",
                 "options": [
                   "Bis 16 Uhr",
                   "Bis 17 Uhr",
@@ -1300,13 +1300,13 @@
               {
                 "id": "B1_ex1_hor_2",
                 "type": "true-false",
-                "question": "Arbeitskollegin: 'Ich habe mich fuer die Fortbildung naechste Woche angemeldet. Sie findet von Montag bis Mittwoch in der Hauptverwaltung statt. Es sind noch zwei Plaetze frei, falls du auch kommen moechtest.' Die Fortbildung findet an vier Tagen statt.",
+                "question": "Arbeitskollegin: 'Ich habe mich für die Fortbildung nächste Woche angemeldet. Sie findet von Montag bis Mittwoch in der Hauptverwaltung statt. Es sind noch zwei Plätze frei, falls du auch kommen möchtest.' Die Fortbildung findet an vier Tagen statt.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex1_hor_3",
                 "type": "mcq",
-                "question": "Werbung im Radio: 'Sie moechten sich beruflich veraendern? Die Abendschule bietet Kurse in den Bereichen IT, Buchhaltung und Sprachen an. Der naechste Kurs beginnt am 1. April. Informieren Sie sich jetzt kostenlos und unverbindlich unter der Nummer 0800-54321.' Welche Bereiche bietet die Abendschule an?",
+                "question": "Werbung im Radio: 'Sie möchten sich beruflich verändern? Die Abendschule bietet Kurse in den Bereichen IT, Buchhaltung und Sprachen an. Der nächste Kurs beginnt am 1. April. Informieren Sie sich jetzt kostenlos und unverbindlich unter der Nummer 0800-54321.' Welche Bereiche bietet die Abendschule an?",
                 "options": [
                   "Medizin, Technik und Sprachen",
                   "IT, Buchhaltung und Sprachen",
@@ -1322,7 +1322,7 @@
             "tasks": [
               {
                 "id": "B1_ex1_sch_1",
-                "prompt": "Sie haben einen Deutschkurs an einer Sprachschule gebucht. Der Kurs sollte montags und mittwochs um 18:00 Uhr stattfinden. Jetzt hat die Schule den Kurs ohne Ihre Zustimmung auf dienstags und donnerstags um 20:00 Uhr verschoben. Schreiben Sie eine formelle Beschwerde-E-Mail an die Sprachschule.\n\n- Grund des Schreibens nennen\n- Das Problem erklaeren: Kurs wurde ohne Absprache verschoben\n- Ihre Forderung: Rueckkehr zum urspruenglichen Zeitplan oder Geld zurueck\n- Um schriftliche Antwort bitten\n\nSchreiben Sie etwa 100 Woerter.",
+                "prompt": "Sie haben einen Deutschkurs an einer Sprachschule gebucht. Der Kurs sollte montags und mittwochs um 18:00 Uhr stattfinden. Jetzt hat die Schule den Kurs ohne Ihre Zustimmung auf dienstags und donnerstags um 20:00 Uhr verschoben. Schreiben Sie eine formelle Beschwerde-E-Mail an die Sprachschule.\n\n- Grund des Schreibens nennen\n- Das Problem erklären: Kurs wurde ohne Absprache verschoben\n- Ihre Forderung: Rückkehr zum ursprünglichen Zeitplan oder Geld zurück\n- Um schriftliche Antwort bitten\n\nSchreiben Sie etwa 100 Wörter.",
                 "wordLimit": 120
               }
             ]
@@ -1332,7 +1332,7 @@
             "tasks": [
               {
                 "id": "B1_ex1_spr_1",
-                "prompt": "Praesentation: \"Mein Traumberuf - was ich dafuer tun muss.\" Stellen Sie Ihren Traumberuf vor und erklaeren Sie, welche Schritte fuer die Verwirklichung notwendig sind.",
+                "prompt": "Präsentation: \"Mein Traumberuf - was ich dafür tun muss.\" Stellen Sie Ihren Traumberuf vor und erklären Sie, welche Schritte für die Verwirklichung notwendig sind.",
                 "talkTime": 120
               },
               {
@@ -1346,7 +1346,7 @@
       },
       {
         "id": "B1_exam_2",
-        "name": "Goethe B1 Practice Exam 2 - Gesundheit und Versicherung",
+        "name": "Göthe B1 Practice Exam 2 - Gesundheit und Versicherung",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1355,11 +1355,11 @@
               {
                 "id": "B1_ex2_les_1",
                 "type": "mcq",
-                "question": "Text: 'Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehoeren die aerztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshoehe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.' Wie wird der Beitrag zur Krankenversicherung berechnet?",
+                "question": "Text: 'Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehören die ärztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshöhe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.' Wie wird der Beitrag zur Krankenversicherung berechnet?",
                 "options": [
                   "Nach dem Alter",
                   "Nach dem Einkommen",
-                  "Nach der Groesse der Familie",
+                  "Nach der Grösse der Familie",
                   "Nach dem Wohnort"
                 ],
                 "answer": "Nach dem Einkommen"
@@ -1367,29 +1367,29 @@
               {
                 "id": "B1_ex2_les_2",
                 "type": "true-false",
-                "question": "Text: 'Die private Krankenversicherung ist fuer Selbststaendige und Behoerdenmitarbeiter eine Alternative zur gesetzlichen Versicherung. Die Beitraege sind altersabhaengig und koennen steigen.' Die private Krankenversicherung ist fuer alle Arbeitnehmer die beste Wahl.",
+                "question": "Text: 'Die private Krankenversicherung ist für Selbstständige und Behördenmitarbeiter eine Alternative zur gesetzlichen Versicherung. Die Beiträge sind altersabhängig und können steigen.' Die private Krankenversicherung ist für alle Arbeitnehmer die beste Wahl.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex2_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Neue Studien zeigen, dass regelmaessiger Sport das Risiko fuer Herz-Kreislauf-Erkrankungen um bis zu 40 Prozent senken kann. Die Weltgesundheitsorganisation empfiehlt Erwachsenen mindestens 150 Minuten moderate Bewegung pro Woche.'",
+                "question": "Welche Überschrift passt? 'Neue Studien zeigen, dass regelmässiger Sport das Risiko für Herz-Kreislauf-Erkrankungen um bis zu 40 Prozent senken kann. Die Weltgesundheitsorganisation empfiehlt Erwachsenen mindestens 150 Minuten moderate Bewegung pro Woche.'",
                 "options": [
                   "Gefaahren des Leistungssports",
                   "Bewegung beugt Herzkrankheiten vor",
-                  "Neue Medikamente fuer das Herz",
-                  "Krankenhaeuser im Vergleich"
+                  "Neue Medikamente für das Herz",
+                  "Krankenhäuser im Vergleich"
                 ],
                 "answer": "Bewegung beugt Herzkrankheiten vor"
               },
               {
                 "id": "B1_ex2_les_4",
                 "type": "gap-fill",
-                "question": "Vor einer Operation ___ der Arzt eine ausfuehrliche Aufklaerung durchfuehren.",
+                "question": "Vor einer Operation ___ der Arzt eine ausführliche Aufklärung durchführen.",
                 "options": [
                   "muss",
                   "musste",
-                  "muessen",
+                  "müssen",
                   "gemusst"
                 ],
                 "answer": "muss"
@@ -1397,19 +1397,19 @@
               {
                 "id": "B1_ex2_les_5",
                 "type": "mcq",
-                "question": "Text: 'Im deutschen Gesundheitssystem haben Patienten die freie Arztwahl. Das bedeutet, sie koennen selbst entscheiden, zu welchem Arzt sie gehen. Allerdings ist fuer den Besuch eines Facharztes meist eine Ueberweisung vom Hausarzt erforderlich.' Wann braucht man eine Ueberweisung?",
+                "question": "Text: 'Im deutschen Gesundheitssystem haben Patienten die freie Arztwahl. Das bedeutet, sie können selbst entscheiden, zu welchem Arzt sie gehen. Allerdings ist für den Besuch eines Facharztes meist eine Überweisung vom Hausarzt erforderlich.' Wann braucht man eine Überweisung?",
                 "options": [
-                  "Fuer jeden Arztbesuch",
-                  "Fuer den Besuch beim Hausarzt",
-                  "Fuer den Besuch beim Facharzt",
-                  "Fuer den Notfall"
+                  "Für jeden Arztbesuch",
+                  "Für den Besuch beim Hausarzt",
+                  "Für den Besuch beim Facharzt",
+                  "Für den Notfall"
                 ],
-                "answer": "Fuer den Besuch beim Facharzt"
+                "answer": "Für den Besuch beim Facharzt"
               },
               {
                 "id": "B1_ex2_les_6",
                 "type": "short-answer",
-                "question": "Text: \"Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehoeren die aerztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshoehe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.\" Wonach richtet sich die Beitragshoehe zur Krankenversicherung?",
+                "question": "Text: \"Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehören die ärztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshöhe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.\" Wonach richtet sich die Beitragshöhe zur Krankenversicherung?",
                 "answer": "nach dem Einkommen",
                 "acceptedAnswers": [
                   "nach dem Einkommen",
@@ -1427,7 +1427,7 @@
               {
                 "id": "B1_ex2_hor_1",
                 "type": "mcq",
-                "question": "Arzthelferin am Telefon: 'Guten Tag, Praxis Dr. Weber. Sie haben einen Termin fuer die Vorsorgeuntersuchung am Mittwoch, den 15. Juni um 10 Uhr. Bitte bringen Sie Ihre Versichertenkarte und den ausgefuellten Fragebogen mit.' Welchen Termin hat der Patient?",
+                "question": "Arzthelferin am Telefon: 'Guten Tag, Praxis Dr. Weber. Sie haben einen Termin für die Vorsorgeuntersuchung am Mittwoch, den 15. Juni um 10 Uhr. Bitte bringen Sie Ihre Versichertenkarte und den ausgefüllten Fragebogen mit.' Welchen Termin hat der Patient?",
                 "options": [
                   "Montag, 13. Juni um 10 Uhr",
                   "Dienstag, 14. Juni um 11 Uhr",
@@ -1439,15 +1439,15 @@
               {
                 "id": "B1_ex2_hor_2",
                 "type": "true-false",
-                "question": "Apotheker: 'Ihr Rezept ist fertig. Sie bekommen die Antibiotika fuer sieben Tage. Nehmen Sie bitte taeglich eine Tablette nach dem Essen. Bei Nebenwirkungen melden Sie sich bitte umgehend bei Ihrem Arzt.' Das Medikament soll vor dem Essen eingenommen werden.",
+                "question": "Apotheker: 'Ihr Rezept ist fertig. Sie bekommen die Antibiotika für sieben Tage. Nehmen Sie bitte täglich eine Tablette nach dem Essen. Bei Nebenwirkungen melden Sie sich bitte umgehend bei Ihrem Arzt.' Das Medikament soll vor dem Essen eingenommen werden.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex2_hor_3",
                 "type": "mcq",
-                "question": "Durchsage im Wartezimmer: 'Aufmerksamkeit bitte. Herr Schmidt, bitte gehen Sie zu Zimmer 3. Frau Mueller wartet bereits seit 15 Minuten - Frau Mueller bitte zu Zimmer 1. Und Patienten, die nur ein Rezept brauchen, wenden sich bitte an das Personal an der Anmeldung.' Wer soll zu Zimmer 3 gehen?",
+                "question": "Durchsage im Wartezimmer: 'Aufmerksamkeit bitte. Herr Schmidt, bitte gehen Sie zu Zimmer 3. Frau Müller wartet bereits seit 15 Minuten - Frau Müller bitte zu Zimmer 1. Und Patienten, die nur ein Rezept brauchen, wenden sich bitte an das Personal an der Anmeldung.' Wer soll zu Zimmer 3 gehen?",
                 "options": [
-                  "Frau Mueller",
+                  "Frau Müller",
                   "Herr Schmidt",
                   "Der Apotheker",
                   "Der Arzt"
@@ -1461,7 +1461,7 @@
             "tasks": [
               {
                 "id": "B1_ex2_sch_1",
-                "prompt": "Sie haben einen wichtigen Termin bei Ihrer Krankenkasse vergessen. Sie sollten Ihre Versicherungsunterlagen persoenlich abgeben. Schreiben Sie eine formelle E-Mail an Ihre Krankenkasse.\n\n- Sich fuer das Versaeumnis entschuldigen\n- Datum und Uhrzeit des vergessenen Termins nennen\n- Grund fuer das Fernbleiben erklaeren (z. B. privater Notfall)\n- Um einen neuen Termin bitten und vorschlagen, wann es passt\n\nSchreiben Sie etwa 100 Woerter.",
+                "prompt": "Sie haben einen wichtigen Termin bei Ihrer Krankenkasse vergessen. Sie sollten Ihre Versicherungsunterlagen persönlich abgeben. Schreiben Sie eine formelle E-Mail an Ihre Krankenkasse.\n\n- Sich für das Versäumnis entschuldigen\n- Datum und Uhrzeit des vergessenen Termins nennen\n- Grund für das Fernbleiben erklären (z. B. privater Notfall)\n- Um einen neuen Termin bitten und vorschlagen, wann es passt\n\nSchreiben Sie etwa 100 Wörter.",
                 "wordLimit": 120
               }
             ]
@@ -1471,12 +1471,12 @@
             "tasks": [
               {
                 "id": "B1_ex2_spr_1",
-                "prompt": "Praesentation: \"Meine Erfahrungen mit dem deutschen Gesundheitssystem.\" Sprechen Sie ueber positive und negative Aspekte.",
+                "prompt": "Präsentation: \"Meine Erfahrungen mit dem deutschen Gesundheitssystem.\" Sprechen Sie über positive und negative Aspekte.",
                 "talkTime": 120
               },
               {
                 "id": "B1_ex2_spr_2",
-                "prompt": "Diskussion mit einem Partner: \"Sollte die Krankenversicherung auch alternative Heilmethoden wie Akupunktur oder Homoeopathie bezahlen? Vor- und Nachteile.\"",
+                "prompt": "Diskussion mit einem Partner: \"Sollte die Krankenversicherung auch alternative Heilmethoden wie Akupunktur oder Homöopathie bezahlen? Vor- und Nachteile.\"",
                 "talkTime": 120
               }
             ]
@@ -1485,7 +1485,7 @@
       },
       {
         "id": "B1_exam_3",
-        "name": "Goethe B1 Practice Exam 3 - Wohnen und Miete",
+        "name": "Göthe B1 Practice Exam 3 - Wohnen und Miete",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1494,25 +1494,25 @@
               {
                 "id": "B1_ex3_les_1",
                 "type": "mcq",
-                "question": "Text: 'Die Mietpreise in deutschen Grossstaedten sind in den letzten Jahren stark gestiegen. In Muenchen, Frankfurt und Stuttgart liegt der Quadratmeterpreis fuer eine Neubauwohnung oft ueber 20 Euro. Viele Menschen ziehen deshalb ins Umland, wo die Mieten guenstiger sind.' Warum ziehen viele Menschen ins Umland?",
+                "question": "Text: 'Die Mietpreise in deutschen Grossstädten sind in den letzten Jahren stark gestiegen. In München, Frankfurt und Stuttgart liegt der Quadratmeterpreis für eine Neubauwohnung oft über 20 Euro. Viele Menschen ziehen deshalb ins Umland, wo die Mieten günstiger sind.' Warum ziehen viele Menschen ins Umland?",
                 "options": [
                   "Weil die Arbeit dort ist",
-                  "Weil die Mieten guenstiger sind",
+                  "Weil die Mieten günstiger sind",
                   "Weil die Schulen besser sind",
                   "Weil das Wetter besser ist"
                 ],
-                "answer": "Weil die Mieten guenstiger sind"
+                "answer": "Weil die Mieten günstiger sind"
               },
               {
                 "id": "B1_ex3_les_2",
                 "type": "true-false",
-                "question": "Text: 'Bei der Wohnungssuche sollten Mieter auf folgende Punkte achten: die Hoehe der Kaution (maximal drei Nettokaltmieten), die Betriebskosten und die Kuendigungsfrist. Ein Mietvertrag muss schriftlich abgeschlossen werden.' Die Kaution darf maximal zwei Nettokaltmieten betragen.",
+                "question": "Text: 'Bei der Wohnungssuche sollten Mieter auf folgende Punkte achten: die Höhe der Kaution (maximal drei Nettokaltmieten), die Betriebskosten und die Kündigungsfrist. Ein Mietvertrag muss schriftlich abgeschlossen werden.' Die Kaution darf maximal zwei Nettokaltmieten betragen.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex3_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Wegen eines Wasserrohrbruchs muss das gesamte Treppenhaus saniert werden. Die Bauarbeiten dauern voraussichtlich zwei Wochen. Waehrend dieser Zeit kann der Aufzug nicht benutzt werden. Wir bitten um Ihr Verstaendnis. Ihre Hausverwaltung'",
+                "question": "Welche Überschrift passt? 'Wegen eines Wasserrohrbruchs muss das gesamte Treppenhaus saniert werden. Die Bauarbeiten dauern voraussichtlich zwei Wochen. Während dieser Zeit kann der Aufzug nicht benutzt werden. Wir bitten um Ihr Verständnis. Ihre Hausverwaltung'",
                 "options": [
                   "Aufzug defekt",
                   "Wasserrohrbruch im Treppenhaus",
@@ -1524,14 +1524,14 @@
               {
                 "id": "B1_ex3_les_4",
                 "type": "gap-fill",
-                "question": "Der Vermieter ___ die Wohnung vor der Uebergabe noch renovieren.",
+                "question": "Der Vermieter ___ die Wohnung vor der Übergabe noch renovieren.",
                 "options": [
                   "lassen",
-                  "laesst",
+                  "lässt",
                   "liess",
                   "gelassen"
                 ],
-                "answer": "laesst"
+                "answer": "lässt"
               },
               {
                 "id": "B1_ex3_les_5",
@@ -1566,7 +1566,7 @@
               {
                 "id": "B1_ex3_hor_1",
                 "type": "mcq",
-                "question": "Makler am Telefon: 'Guten Tag, hier ist Immobilien Schmidt. Ich habe eine interessante Wohnung fuer Sie. Sie liegt im Stadtteil Schwabing, hat drei Zimmer, 75 Quadratmeter und kostet 1200 Euro warm. Die Wohnung ist ab 1. September frei. Wenn Sie Interesse haben, koennen wir morgen einen Besichtigungstermin vereinbaren.' Wann ist die Wohnung frei?",
+                "question": "Makler am Telefon: 'Guten Tag, hier ist Immobilien Schmidt. Ich habe eine interessante Wohnung für Sie. Sie liegt im Stadtteil Schwabing, hat drei Zimmer, 75 Quadratmeter und kostet 1200 Euro warm. Die Wohnung ist ab 1. September frei. Wenn Sie Interesse haben, können wir morgen einen Besichtigungstermin vereinbaren.' Wann ist die Wohnung frei?",
                 "options": [
                   "Ab 1. August",
                   "Ab 1. September",
@@ -1578,7 +1578,7 @@
               {
                 "id": "B1_ex3_hor_2",
                 "type": "true-false",
-                "question": "Nachbarin: 'Haben Sie auch den Brief von der Hausverwaltung gelesen? Naechste Woche wird die Heizungsanlage gewartet. Am Dienstag bleibt die Heizung von 9 bis 15 Uhr aus. Am Mittwoch sind die Handwerker noch einmal da, aber dann nur fuer zwei Stunden am Vormittag.' Am Mittwoch sind die Handwerker fuer den ganzen Tag da.",
+                "question": "Nachbarin: 'Haben Sie auch den Brief von der Hausverwaltung gelesen? Nächste Woche wird die Heizungsanlage gewartet. Am Dienstag bleibt die Heizung von 9 bis 15 Uhr aus. Am Mittwoch sind die Handwerker noch einmal da, aber dann nur für zwei Stunden am Vormittag.' Am Mittwoch sind die Handwerker für den ganzen Tag da.",
                 "answer": "false"
               },
               {
@@ -1600,7 +1600,7 @@
             "tasks": [
               {
                 "id": "B1_ex3_sch_1",
-                "prompt": "Sie moechten in Ihrer Stadt einen bezahlten Sprachkurs besuchen, um sich auf die B1-Pruefung vorzubereiten. Sie haben im Internet eine Volkshochschule (VHS) gefunden. Schreiben Sie eine formelle E-Mail an die VHS.\n\n- Sich vorstellen und den Grund der Anfrage nennen\n- Nach Kursbeginn und Kursdauer fragen\n- Nach den Kosten und Zahlungsmoeglichkeiten fragen\n- Fragen, ob es noch freie Plaetze gibt\n\nSchreiben Sie etwa 100 Woerter.",
+                "prompt": "Sie möchten in Ihrer Stadt einen bezahlten Sprachkurs besuchen, um sich auf die B1-Prüfung vorzubereiten. Sie haben im Internet eine Volkshochschule (VHS) gefunden. Schreiben Sie eine formelle E-Mail an die VHS.\n\n- Sich vorstellen und den Grund der Anfrage nennen\n- Nach Kursbeginn und Kursdaür fragen\n- Nach den Kosten und Zahlungsmöglichkeiten fragen\n- Fragen, ob es noch freie Plätze gibt\n\nSchreiben Sie etwa 100 Wörter.",
                 "wordLimit": 120
               }
             ]
@@ -1610,12 +1610,12 @@
             "tasks": [
               {
                 "id": "B1_ex3_spr_1",
-                "prompt": "Praesentation: \"Meine Traumwohnung.\" Beschreiben Sie, wo die Wohnung liegt, wie sie aussieht und was Ihnen besonders wichtig ist.",
+                "prompt": "Präsentation: \"Meine Traumwohnung.\" Beschreiben Sie, wo die Wohnung liegt, wie sie aussieht und was Ihnen besonders wichtig ist.",
                 "talkTime": 120
               },
               {
                 "id": "B1_ex3_spr_2",
-                "prompt": "Diskussion mit einem Partner: \"Ist es besser, zur Miete zu wohnen oder eine eigene Wohnung zu kaufen? Vor- und Nachteile beider Moeglichkeiten.\"",
+                "prompt": "Diskussion mit einem Partner: \"Ist es besser, zur Miete zu wohnen oder eine eigene Wohnung zu kaufen? Vor- und Nachteile beider Möglichkeiten.\"",
                 "talkTime": 120
               }
             ]
@@ -1624,7 +1624,7 @@
       },
       {
         "id": "B1_exam_4",
-        "name": "Goethe B1 Practice Exam 4 - Reisen und Verkehr",
+        "name": "Göthe B1 Practice Exam 4 - Reisen und Verkehr",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1633,7 +1633,7 @@
               {
                 "id": "B1_ex4_les_1",
                 "type": "mcq",
-                "question": "Text: 'Die Deutsche Bahn hat ein neues Ticketmodell eingefuehrt. Das Deutschlandticket kostet 49 Euro im Monat und gilt im gesamten oeffentlichen Nahverkehr, also Bussen, Strassenbahnen, U-Bahnen und Regionalzuegen. Nicht gueltig ist es in ICE- und IC-Zuegen.' Wo gilt das Deutschlandticket NICHT?",
+                "question": "Text: 'Die Deutsche Bahn hat ein neues Ticketmodell eingeführt. Das Deutschlandticket kostet 49 Euro im Monat und gilt im gesamten öffentlichen Nahverkehr, also Bussen, Strassenbahnen, U-Bahnen und Regionalzügen. Nicht gültig ist es in ICE- und IC-Zügen.' Wo gilt das Deutschlandticket NICHT?",
                 "options": [
                   "Im Bus",
                   "In der Strassenbahn",
@@ -1645,20 +1645,20 @@
               {
                 "id": "B1_ex4_les_2",
                 "type": "true-false",
-                "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abfluege ueber Terminal 2 abgewickelt. Terminal 1 wird fuer sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abfluege sind aktuell ueber Terminal 1.",
+                "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abflüge über Terminal 2 abgewickelt. Terminal 1 wird für sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abflüge sind aktüll über Terminal 1.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex4_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'In vielen deutschen Staedten gibt es Carsharing-Angebote. Nutzer koennen Fahrzeuge per App buchen und pro Minute oder Stunde bezahlen. Eine Studie zeigt, dass Carsharing den oeffentlichen Nahverkehr sinnvoll ergaenzt.'",
+                "question": "Welche Überschrift passt? 'In vielen deutschen Städten gibt es Carsharing-Angebote. Nutzer können Fahrzeuge per App buchen und pro Minute oder Stunde bezahlen. Eine Studie zeigt, dass Carsharing den öffentlichen Nahverkehr sinnvoll ergänzt.'",
                 "options": [
                   "Autokauf wird billiger",
-                  "Carsharing als Ergaenzung",
-                  "Fahrradfahren wird gefaehrlicher",
-                  "Neue Parkhaeuser geplant"
+                  "Carsharing als Ergänzung",
+                  "Fahrradfahren wird gefährlicher",
+                  "Neue Parkhäuser geplant"
                 ],
-                "answer": "Carsharing als Ergaenzung"
+                "answer": "Carsharing als Ergänzung"
               },
               {
                 "id": "B1_ex4_les_4",
@@ -1666,16 +1666,16 @@
                 "question": "Der Zuge ___ um 9 Uhr 15 von Gleis 5 ab.",
                 "options": [
                   "fahrt",
-                  "faehrt",
+                  "fährt",
                   "gefahren",
                   "Fahrt"
                 ],
-                "answer": "faehrt"
+                "answer": "fährt"
               },
               {
                 "id": "B1_ex4_les_5",
                 "type": "mcq",
-                "question": "Text: 'Eine Hotelbuchung in Hamburg: Check-in ab 15 Uhr, Check-out bis 11 Uhr. Das Fruehstuecksbuffet kostet 18 Euro pro Person. Parkplaetze sind gegen Gebuehr von 12 Euro pro Tag vorhanden. Hunde sind gegen eine Gebuehr von 20 Euro pro Nacht erlaubt.' Wie viel kostet das Fruehstueck?",
+                "question": "Text: 'Eine Hotelbuchung in Hamburg: Check-in ab 15 Uhr, Check-out bis 11 Uhr. Das Frühstücksbuffet kostet 18 Euro pro Person. Parkplätze sind gegen Gebühr von 12 Euro pro Tag vorhanden. Hunde sind gegen eine Gebühr von 20 Euro pro Nacht erlaubt.' Wie viel kostet das Frühstück?",
                 "options": [
                   "12 Euro pro Person",
                   "15 Euro pro Person",
@@ -1687,7 +1687,7 @@
               {
                 "id": "B1_ex4_les_6",
                 "type": "short-answer",
-                "question": "Text: \"Der Zug nach Muenchen faehrt taeglich um 9 Uhr 15 von Gleis 5. Der Fahrpreis betraegt einfach 38 Euro und fuer Hin- und Rueckfahrt 68 Euro. Kinder unter sechs Jahren fahren kostenlos.\" Um wie viel Uhr faehrt der Zug?",
+                "question": "Text: \"Der Zug nach München fährt täglich um 9 Uhr 15 von Gleis 5. Der Fahrpreis beträgt einfach 38 Euro und für Hin- und Rückfahrt 68 Euro. Kinder unter sechs Jahren fahren kostenlos.\" Um wie viel Uhr fährt der Zug?",
                 "answer": "um 9 Uhr 15",
                 "acceptedAnswers": [
                   "um 9 Uhr 15",
@@ -1706,7 +1706,7 @@
               {
                 "id": "B1_ex4_hor_1",
                 "type": "mcq",
-                "question": "Bahnhofsdurchsage: 'Achtung, Achtung am Bahnsteig 3. Der ICE 782 nach Berlin mit Abfahrt um 14 Uhr 24 hat voraussichtlich 20 Minuten Verspaetung. Grund ist eine technische Stoerung. Wir bitten um Entschuldigung. Der folgende Regionalzug nach Frankfurt hat planmaessige Abfahrt um 14 Uhr 45 von Gleis 2.' Wie viel Verspaetung hat der ICE?",
+                "question": "Bahnhofsdurchsage: 'Achtung, Achtung am Bahnsteig 3. Der ICE 782 nach Berlin mit Abfahrt um 14 Uhr 24 hat voraussichtlich 20 Minuten Verspätung. Grund ist eine technische Störung. Wir bitten um Entschuldigung. Der folgende Regionalzug nach Frankfurt hat planmässige Abfahrt um 14 Uhr 45 von Gleis 2.' Wie viel Verspätung hat der ICE?",
                 "options": [
                   "10 Minuten",
                   "15 Minuten",
@@ -1718,13 +1718,13 @@
               {
                 "id": "B1_ex4_hor_2",
                 "type": "true-false",
-                "question": "Reisebueroangestellte: 'Wir haben ein tolles Angebot fuer eine Woche an der Ostsee. Der Preis beinhaltet Hin- und Rueckfahrt mit dem Zug, sieben Uebernachtungen mit Fruehstueck und eine Stadtfuehrung. Der Aufenthalt kostet 499 Euro pro Person im Doppelzimmer.' Die Stadtfuehrung ist nicht im Preis enthalten.",
+                "question": "Reisebüroangestellte: 'Wir haben ein tolles Angebot für eine Woche an der Ostsee. Der Preis beinhaltet Hin- und Rückfahrt mit dem Zug, sieben Übernachtungen mit Frühstück und eine Stadtführung. Der Aufenthalt kostet 499 Euro pro Person im Doppelzimmer.' Die Stadtführung ist nicht im Preis enthalten.",
                 "answer": "false"
               },
               {
                 "id": "B1_ex4_hor_3",
                 "type": "mcq",
-                "question": "Freundin per Sprachnachricht: 'Ich habe ein Problem mit meiner Urlaubsbuchung. Ich habe ein Hotel in Wien reserviert, aber versehentlich den falschen Reisezeitraum angegeben. Die Buchung laeuft auf den 3. bis 10. Juli, aber ich brauche den 10. bis 17. Juli. Kannst du mir helfen, die Buchung zu stornieren?' Was hat die Freundin falsch gemacht?",
+                "question": "Freundin per Sprachnachricht: 'Ich habe ein Problem mit meiner Urlaubsbuchung. Ich habe ein Hotel in Wien reserviert, aber versehentlich den falschen Reisezeitraum angegeben. Die Buchung läuft auf den 3. bis 10. Juli, aber ich brauche den 10. bis 17. Juli. Kannst du mir helfen, die Buchung zu stornieren?' Was hat die Freundin falsch gemacht?",
                 "options": [
                   "Den falschen Hotelnamen angegeben",
                   "Die falsche Stadt gebucht",
@@ -1740,7 +1740,7 @@
             "tasks": [
               {
                 "id": "B1_ex4_sch_1",
-                "prompt": "Sie haben vor drei Monaten ein Abo bei einem Fitnessstudio abgeschlossen. Jetzt haben Sie festgestellt, dass die Oeffnungszeiten fuer Sie nicht passen. Sie moechten den Vertrag kuendigen. Schreiben Sie eine formelle Kuendigung per E-Mail an das Fitnessstudio.\n\n- Ihre Mitgliedsnummer und den Vertragsbeginn nennen\n- Erklaeren, warum Sie kuendigen (ungenuegende Oeffnungszeiten)\n- Auf die Kuendigungsfrist hinweisen (laut Vertrag vier Wochen)\n- Um eine schriftliche Bestaetigung der Kuendigung bitten\n\nSchreiben Sie etwa 100 Woerter.",
+                "prompt": "Sie haben vor drei Monaten ein Abo bei einem Fitnessstudio abgeschlossen. Jetzt haben Sie festgestellt, dass die Öffnungszeiten für Sie nicht passen. Sie möchten den Vertrag kündigen. Schreiben Sie eine formelle Kündigung per E-Mail an das Fitnessstudio.\n\n- Ihre Mitgliedsnummer und den Vertragsbeginn nennen\n- Erklären, warum Sie kündigen (ungenügende Öffnungszeiten)\n- Auf die Kündigungsfrist hinweisen (laut Vertrag vier Wochen)\n- Um eine schriftliche Bestätigung der Kündigung bitten\n\nSchreiben Sie etwa 100 Wörter.",
                 "wordLimit": 120
               }
             ]
@@ -1750,12 +1750,12 @@
             "tasks": [
               {
                 "id": "B1_ex4_spr_1",
-                "prompt": "Praesentation: \"Meine letzte Reise oder mein schoenster Urlaub.\" Erzaehlen Sie, wohin die Reise ging, mit wem Sie unterwegs waren und was besonders schoen oder interessant war.",
+                "prompt": "Präsentation: \"Meine letzte Reise oder mein schönster Urlaub.\" Erzählen Sie, wohin die Reise ging, mit wem Sie unterwegs waren und was besonders schön oder interessant war.",
                 "talkTime": 120
               },
               {
                 "id": "B1_ex4_spr_2",
-                "prompt": "Diskussion mit einem Partner: \"Sollte Fliegen teurer werden, um die Umwelt zu schonen? Vor- und Nachteile von hoheren Flugpreisen fuer die Gesellschaft.\"",
+                "prompt": "Diskussion mit einem Partner: \"Sollte Fliegen teurer werden, um die Umwelt zu schonen? Vor- und Nachteile von hoheren Flugpreisen für die Gesellschaft.\"",
                 "talkTime": 120
               }
             ]
@@ -1764,7 +1764,7 @@
       },
       {
         "id": "B1_exam_5",
-        "name": "Goethe B1 Practice Exam 5 - Umwelt und Medien",
+        "name": "Göthe B1 Practice Exam 5 - Umwelt und Medien",
         "passScore": 60,
         "sections": {
           "Lesen": {
@@ -1773,11 +1773,11 @@
               {
                 "id": "B1_ex5_les_1",
                 "type": "mcq",
-                "question": "Text: 'Deutschland moechte bis 2045 klimaneutral sein. Dafuer werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte koennen einen Beitrag leisten: Energiesparen, Muelltrennung und die Nutzung oeffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.' Was ist kein Beitrag zum Klimaschutz fuer Privathaushalte?",
+                "question": "Text: 'Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneürbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.' Was ist kein Beitrag zum Klimaschutz für Privathaushalte?",
                 "options": [
                   "Energiesparen",
-                  "Muelltrennung",
-                  "Oeffentliche Verkehrsmittel nutzen",
+                  "Mülltrennung",
+                  "Öffentliche Verkehrsmittel nutzen",
                   "Ein eigenes Auto kaufen"
                 ],
                 "answer": "Ein eigenes Auto kaufen"
@@ -1791,19 +1791,19 @@
               {
                 "id": "B1_ex5_les_3",
                 "type": "heading-match",
-                "question": "Welche Ueberschrift passt? 'Laut einer aktuellen Umfrage informieren sich 65 Prozent der Deutschen taeglich ueber soziale Medien ueber das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsaechlich Online-Nachrichten.'",
+                "question": "Welche Überschrift passt? 'Laut einer aktüllen Umfrage informieren sich 65 Prozent der Deutschen täglich über soziale Medien über das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsächlich Online-Nachrichten.'",
                 "options": [
                   "Fernsehen wird beliebter",
-                  "Junge Menschen lesen mehr Buecher",
-                  "Soziale Medien als Hauptnachrichtenquelle",
+                  "Junge Menschen lesen mehr Bücher",
+                  "Soziale Medien als Hauptnachrichtenqülle",
                   "Zeitungen im Aufschwung"
                 ],
-                "answer": "Soziale Medien als Hauptnachrichtenquelle"
+                "answer": "Soziale Medien als Hauptnachrichtenqülle"
               },
               {
                 "id": "B1_ex5_les_4",
                 "type": "gap-fill",
-                "question": "Um die Umwelt zu schuetzen, ___ wir weniger Plastik verwenden.",
+                "question": "Um die Umwelt zu schützen, ___ wir weniger Plastik verwenden.",
                 "options": [
                   "sollte",
                   "sollten",
@@ -1815,19 +1815,19 @@
               {
                 "id": "B1_ex5_les_5",
                 "type": "mcq",
-                "question": "Text: 'Fake News sind ein wachsendes Problem im Internet. Eine Studie zeigt, dass sich falsche Informationen viel schneller verbreiten als wahre Nachrichten. Experten empfehlen, Nachrichten immer kritisch zu pruefen und verschiedene Quellen zu vergleichen, bevor man sie weiterleitet.' Was empfehlen Experten?",
+                "question": "Text: 'Fake News sind ein wachsendes Problem im Internet. Eine Studie zeigt, dass sich falsche Informationen viel schneller verbreiten als wahre Nachrichten. Experten empfehlen, Nachrichten immer kritisch zu prüfen und verschiedene Qüllen zu vergleichen, bevor man sie weiterleitet.' Was empfehlen Experten?",
                 "options": [
                   "Gar keine Nachrichten mehr zu lesen",
-                  "Nachrichten kritisch zu pruefen",
+                  "Nachrichten kritisch zu prüfen",
                   "Nur soziale Medien zu nutzen",
                   "Fake News zu ignorieren"
                 ],
-                "answer": "Nachrichten kritisch zu pruefen"
+                "answer": "Nachrichten kritisch zu prüfen"
               },
               {
                 "id": "B1_ex5_les_6",
                 "type": "short-answer",
-                "question": "Text: \"Deutschland moechte bis 2045 klimaneutral sein. Dafuer werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte koennen einen Beitrag leisten: Energiesparen, Muelltrennung und die Nutzung oeffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.\" Bis wann moechte Deutschland klimaneutral sein?",
+                "question": "Text: \"Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneürbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.\" Bis wann möchte Deutschland klimaneutral sein?",
                 "answer": "bis 2045",
                 "acceptedAnswers": [
                   "bis 2045",
@@ -1844,7 +1844,7 @@
               {
                 "id": "B1_ex5_hor_1",
                 "type": "mcq",
-                "question": "Radiomeldung: 'In dieser Woche startet die Stadt Frankfurt eine neue Umweltkampagne. Buergerinnen und Buerger sind aufgerufen, an einer Baumpflanzaktion im Stadtpark teilzunehmen. Die Aktion findet am Samstag, den 20. Mai von 10 bis 16 Uhr statt. Werkzeug und Setzlinge werden kostenlos zur Verfuegung gestellt.' Wann findet die Baumpflanzaktion statt?",
+                "question": "Radiomeldung: 'In dieser Woche startet die Stadt Frankfurt eine neue Umweltkampagne. Bürgerinnen und Bürger sind aufgerufen, an einer Baumpflanzaktion im Stadtpark teilzunehmen. Die Aktion findet am Samstag, den 20. Mai von 10 bis 16 Uhr statt. Werkzeug und Setzlinge werden kostenlos zur Verfügung gestellt.' Wann findet die Baumpflanzaktion statt?",
                 "options": [
                   "Am Freitag, den 19. Mai",
                   "Am Samstag, den 20. Mai",
@@ -1856,20 +1856,20 @@
               {
                 "id": "B1_ex5_hor_2",
                 "type": "true-false",
-                "question": "Radiointerview: 'Unser Gast ist Frau Dr. Hoffmann von der Umweltbehoerde. Sie erklaert: Seit Einfuehrung des Pfandsystems auf Einwegflaschen ist der Anteil der recycelten Flaschen von 72 auf 94 Prozent gestiegen. Das zeigt, dass finanzielle Anreize wirken.' Das Pfandsystem hat das Recycling von Flaschen verbessert.",
-                "answer": "true"
+                "question": "Radiointerview: 'Unser Gast ist Frau Dr. Hoffmann von der Umweltbehörde. Sie erklärt: Seit Einführung des Pfandsystems auf Einwegflaschen ist der Anteil der recycelten Flaschen von 72 auf 94 Prozent gestiegen. Das zeigt, dass finanzielle Anreize wirken.' Das Pfandsystem hat das Recycling von Flaschen verbessert.",
+                "answer": "trü"
               },
               {
                 "id": "B1_ex5_hor_3",
                 "type": "mcq",
-                "question": "Fernsehbericht: 'Eine neue App fuer Buergermeldungen erobert die deutschen Stadte. Mit der App koennen Buerger Schlaglocher, kaputte Strassenlaternen oder illegale Müllablagerungen direkt ans Ordnungsamt melden. In Berlin wurde die App bereits 50.000 Mal genutzt.' Wofuer kann die App genutzt werden?",
+                "question": "Fernsehbericht: 'Eine neue App für Bürgermeldungen erobert die deutschen Stadte. Mit der App können Bürger Schlaglocher, kaputte Strassenlaternen oder illegale Müllablagerungen direkt ans Ordnungsamt melden. In Berlin wurde die App bereits 50.000 Mal genutzt.' Wofür kann die App genutzt werden?",
                 "options": [
-                  "Fuer Restaurantbewertungen",
-                  "Fuer die Meldung von Stadte-Problemen",
-                  "Fuer die Buchung von oeffentlichen Verkehrsmitteln",
-                  "Fuer die Bezahlung von Steuern"
+                  "Für Restaurantbewertungen",
+                  "Für die Meldung von Stadte-Problemen",
+                  "Für die Buchung von öffentlichen Verkehrsmitteln",
+                  "Für die Bezahlung von Steürn"
                 ],
-                "answer": "Fuer die Meldung von Stadte-Problemen"
+                "answer": "Für die Meldung von Stadte-Problemen"
               }
             ]
           },
@@ -1878,7 +1878,7 @@
             "tasks": [
               {
                 "id": "B1_ex5_sch_1",
-                "prompt": "Sie haben in der Zeitung gelesen, dass ein Supermarkt in Ihrer Naehe einen Aushilfsjob fuer den Wochenendverkauf anbietet. Sie haben Interesse und moechten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an den Personalleiter.\n\n- Die Stelle nennen, auf die Sie sich bewerben\n- Ihre bisherige Erfahrung im Verkauf kurz beschreiben\n- Warum Sie der richtige Kandidat sind (z. B. flexibel, zuverlaessig)\n- Nach den naechsten Schritten im Bewerbungsprozess fragen\n\nSchreiben Sie etwa 100 Woerter.",
+                "prompt": "Sie haben in der Zeitung gelesen, dass ein Supermarkt in Ihrer Nähe einen Aushilfsjob für den Wochenendverkauf anbietet. Sie haben Interesse und möchten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an den Personalleiter.\n\n- Die Stelle nennen, auf die Sie sich bewerben\n- Ihre bisherige Erfahrung im Verkauf kurz beschreiben\n- Warum Sie der richtige Kandidat sind (z. B. flexibel, zuverlässig)\n- Nach den nächsten Schritten im Bewerbungsprozess fragen\n\nSchreiben Sie etwa 100 Wörter.",
                 "wordLimit": 120
               }
             ]
@@ -1888,12 +1888,12 @@
             "tasks": [
               {
                 "id": "B1_ex5_spr_1",
-                "prompt": "Praesentation: \"Was ich fuer die Umwelt tue.\" Beschreiben Sie, welche Massnahmen Sie in Ihrem Alltag umsetzen und was man noch verbessern koennte.",
+                "prompt": "Präsentation: \"Was ich für die Umwelt tü.\" Beschreiben Sie, welche Massnahmen Sie in Ihrem Alltag umsetzen und was man noch verbessern könnte.",
                 "talkTime": 120
               },
               {
                 "id": "B1_ex5_spr_2",
-                "prompt": "Diskussion mit einem Partner: \"Soziale Medien: Fluch oder Segen fuer die Gesellschaft? Sprechen Sie ueber die Vor- und Nachteile von Plattformen wie Instagram, TikTok und Facebook.\"",
+                "prompt": "Diskussion mit einem Partner: \"Soziale Medien: Fluch oder Segen für die Gesellschaft? Sprechen Sie über die Vor- und Nachteile von Plattformen wie Instagram, TikTok und Facebook.\"",
                 "talkTime": 120
               }
             ]
@@ -1904,7 +1904,7 @@
     "B2": [
       {
         "id": "exam_B2",
-        "name": "Goethe B2 Practice Exam",
+        "name": "Göthe B2 Practice Exam",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -1925,8 +1925,8 @@
               {
                 "id": "B2_ex_lesen_2",
                 "type": "true-false",
-                "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
-                "answer": "true"
+                "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teür. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
+                "answer": "trü"
               },
               {
                 "id": "B2_ex_lesen_3",
@@ -1935,7 +1935,7 @@
                 "options": [
                   "Digitalisierung ist immer positiv",
                   "Datenschutz ist bei Digitalisierung entscheidend",
-                  "Digitalisierung ist zu teuer",
+                  "Digitalisierung ist zu teür",
                   "Digitalisierung sollte verboten werden"
                 ],
                 "answer": "Datenschutz ist bei Digitalisierung entscheidend"
@@ -1967,7 +1967,7 @@
               {
                 "id": "B2_ex_lesen_6",
                 "type": "short-answer",
-                "question": "Text: \"Die Zulassung als Facharzt fuer Orthopaedie und Unfallchirurgie setzt eine mindestens sechsjaehrige Weiterbildungszeit voraus.\" Wie viele Jahre dauert die Weiterbildung mindestens?",
+                "question": "Text: \"Die Zulassung als Facharzt für Orthopädie und Unfallchirurgie setzt eine mindestens sechsjährige Weiterbildungszeit voraus.\" Wie viele Jahre dauert die Weiterbildung mindestens?",
                 "answer": "sechs Jahre",
                 "acceptedAnswers": [
                   "sechs Jahre",
@@ -1987,14 +1987,14 @@
               {
                 "id": "B2_ex_horen_1",
                 "type": "mcq",
-                "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Frauen sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?",
+                "question": "Vortrag: 'Die Prävalenz von Osteoporose steigt mit zunehmendem Alter. Fraün sind häufiger betroffen als Männer. Nach den Wechseljahren steigt das Risiko deutlich an.' Wer ist häufiger von Osteoporose betroffen?",
                 "options": [
                   "Männer",
-                  "Frauen",
+                  "Fraün",
                   "Kinder",
                   "Junge Erwachsene"
                 ],
-                "answer": "Frauen"
+                "answer": "Fraün"
               },
               {
                 "id": "B2_ex_horen_2",
@@ -2045,7 +2045,7 @@
       },
       {
         "id": "B2_exam_02",
-        "name": "Goethe B2 Practice Exam 2 - Digital Healthcare & Communication",
+        "name": "Göthe B2 Practice Exam 2 - Digital Healthcare & Communication",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2184,7 +2184,7 @@
       },
       {
         "id": "B2_exam_03",
-        "name": "Goethe B2 Practice Exam 3 - Public Health & Prevention",
+        "name": "Göthe B2 Practice Exam 3 - Public Health & Prevention",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2247,10 +2247,10 @@
               {
                 "id": "B2_ex_l3_6",
                 "type": "short-answer",
-                "question": "Text: \"Die Staendige Impfkommission empfiehlt die Grippeschutzimpfung fuer Risikogruppen.\" Fuer wen empfiehlt die STIKO die Grippeschutzimpfung?",
-                "answer": "fuer Risikogruppen",
+                "question": "Text: \"Die Ständige Impfkommission empfiehlt die Grippeschutzimpfung für Risikogruppen.\" Für wen empfiehlt die STIKO die Grippeschutzimpfung?",
+                "answer": "für Risikogruppen",
                 "acceptedAnswers": [
-                  "fuer Risikogruppen",
+                  "für Risikogruppen",
                   "Risikogruppen",
                   "die Risikogruppen"
                 ],
@@ -2264,7 +2264,7 @@
               {
                 "id": "B2_ex_h3_1",
                 "type": "mcq",
-                "question": "Vortrag: 'Die gesetzliche Krankenversicherung in Deutschland finanziert sich durch Beiträge von Arbeitnehmern und Arbeitgebern. Der allgemeine Beitragssatz liegt bei 14,6 Prozent des Bruttogehalts. Hinzu kommt ein kassenindividueller Zusatzbeitrag.' Wie hoch ist der allgemeine Beitragssatz zur gesetzlichen Krankenversicherung?",
+                "question": "Vortrag: 'Die gesetzliche Krankenversicherung in Deutschland finanziert sich durch Beiträge von Arbeitnehmern und Arbeitgebern. Der allgemeine Beitragssatz liegt bei 14,6 Prozent des Bruttogehalts. Hinzu kommt ein kassenindividüller Zusatzbeitrag.' Wie hoch ist der allgemeine Beitragssatz zur gesetzlichen Krankenversicherung?",
                 "options": [
                   "12,6 Prozent",
                   "14,6 Prozent",
@@ -2322,7 +2322,7 @@
       },
       {
         "id": "B2_exam_04",
-        "name": "Goethe B2 Practice Exam 4 - Migration & Health System",
+        "name": "Göthe B2 Practice Exam 4 - Migration & Health System",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2344,7 +2344,7 @@
                 "id": "B2_ex_l4_2",
                 "type": "true-false",
                 "question": "Text: 'Die Ausbildung zur Pflegefachkraft dauert in Deutschland drei Jahre und erfolgt an Pflegeschulen sowie in Krankenhäusern. Seit 2020 gibt es eine generalistische Ausbildung, die alle Pflegebereiche umfasst.' Die Ausbildung zur Pflegefachkraft ist seit 2020 generalistisch.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "B2_ex_l4_3",
@@ -2385,7 +2385,7 @@
               {
                 "id": "B2_ex_l4_6",
                 "type": "short-answer",
-                "question": "Text: \"Vor der Berufszulassung muessen auslaendische Aerzte einen Kenntnisstand nachweisen. Dazu gehoeren Sprachkenntnisse auf B2-Niveau und eine Gleichwertigkeitspruefung des Medizinstudiums.\" Welches Sprachniveau wird von auslaendischen Aerzten gefordert?",
+                "question": "Text: \"Vor der Berufszulassung müssen ausländische Ärzte einen Kenntnisstand nachweisen. Dazu gehören Sprachkenntnisse auf B2-Niveau und eine Gleichwertigkeitsprüfung des Medizinstudiums.\" Welches Sprachniveau wird von ausländischen Ärzten gefordert?",
                 "answer": "B2-Niveau",
                 "acceptedAnswers": [
                   "B2-Niveau",
@@ -2461,7 +2461,7 @@
       },
       {
         "id": "B2_exam_05",
-        "name": "Goethe B2 Practice Exam 5 - Ethics & Technology",
+        "name": "Göthe B2 Practice Exam 5 - Ethics & Technology",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2483,7 +2483,7 @@
                 "id": "B2_ex_l5_2",
                 "type": "true-false",
                 "question": "Text: 'Die medizinische Rehabilitation ist ein wichtiger Bestandteil des Gesundheitssystems. Sie zielt darauf ab, die Teilhabe der Patienten am gesellschaftlichen Leben wiederherzustellen. Die Rentenversicherung trägt in der Regel die Kosten.' Die medizinische Rehabilitation wird von der Rentenversicherung finanziert.",
-                "answer": "true"
+                "answer": "trü"
               },
               {
                 "id": "B2_ex_l5_3",
@@ -2524,11 +2524,11 @@
               {
                 "id": "B2_ex_l5_6",
                 "type": "short-answer",
-                "question": "Text: \"In Deutschland gilt die Entscheidungsloesung: Jeder kann seine Bereitschaft zur Organspende erklaeren. Kritiker fordern die Widerspruchsloesung.\" Welches Modell gilt aktuell in Deutschland fuer die Organspende?",
-                "answer": "Entscheidungsloesung",
+                "question": "Text: \"In Deutschland gilt die Entscheidungslösung: Jeder kann seine Bereitschaft zur Organspende erklären. Kritiker fordern die Widerspruchslösung.\" Welches Modell gilt aktüll in Deutschland für die Organspende?",
+                "answer": "Entscheidungslösung",
                 "acceptedAnswers": [
-                  "Entscheidungsloesung",
-                  "die Entscheidungsloesung"
+                  "Entscheidungslösung",
+                  "die Entscheidungslösung"
                 ],
                 "points": 1
               }
@@ -2584,7 +2584,7 @@
             "tasks": [
               {
                 "id": "B2_ex_s5_1",
-                "prompt": "Halten Sie einen Vortrag über 'Ethische Aspekte der Organspende in Deutschland.' Gehen Sie auf die aktuelle Gesetzeslage, die Debatte um die Widerspruchslösung und Ihre persönliche Meinung ein.",
+                "prompt": "Halten Sie einen Vortrag über 'Ethische Aspekte der Organspende in Deutschland.' Gehen Sie auf die aktülle Gesetzeslage, die Debatte um die Widerspruchslösung und Ihre persönliche Meinung ein.",
                 "talkTime": 180
               },
               {
@@ -2600,7 +2600,7 @@
     "C1": [
       {
         "id": "exam_C1_01",
-        "name": "Goethe C1 Practice Exam 1 - Health System & EBM",
+        "name": "Göthe C1 Practice Exam 1 - Health System & EBM",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2609,7 +2609,7 @@
               {
                 "id": "C1_ex1_l1",
                 "type": "mcq",
-                "question": "Text: 'Die Krankenhausreform 2025 sieht eine grundlegende Neustrukturierung der stationaeren Versorgung vor. Leistungsgruppen ersetzen das bisherige Fallpauschalensystem. Kritiker befuerchten einen Verlust der wohnortnahen Versorgung in laendlichen Regionen.' Was ist das Hauptziel der Reform?",
+                "question": "Text: 'Die Krankenhausreform 2025 sieht eine grundlegende Neustrukturierung der stationären Versorgung vor. Leistungsgruppen ersetzen das bisherige Fallpauschalensystem. Kritiker befürchten einen Verlust der wohnortnahen Versorgung in ländlichen Regionen.' Was ist das Hauptziel der Reform?",
                 "options": [
                   "Mehr Fallpauschalen",
                   "Leistungsgruppen statt Fallpauschalen",
@@ -2621,25 +2621,25 @@
               {
                 "id": "C1_ex1_l2",
                 "type": "true-false",
-                "question": "Text: 'Klinische Kommunikation umfasst nicht nur das Gespraech mit Patienten, sondern auch die interprofessionelle Zusammenarbeit. Das SBAR-Konzept hat sich als Standard fuer die strukturierte Uebergabe etabliert.' Das SBAR-Konzept wird fuer die Patientenaufklaerung verwendet.",
+                "question": "Text: 'Klinische Kommunikation umfasst nicht nur das Gespräch mit Patienten, sondern auch die interprofessionelle Zusammenarbeit. Das SBAR-Konzept hat sich als Standard für die strukturierte Übergabe etabliert.' Das SBAR-Konzept wird für die Patientenaufklärung verwendet.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex1_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Der Leitlinienautor argumentiert: Randomisierte kontrollierte Studien sind der Goldstandard der Evidenz, doch ihre Uebertragbarkeit in den klinischen Alltag ist oft eingeschraenkt. Real-World-Evidence aus Registerdaten gewinnt daher zunehmend an Bedeutung.' Was ist die Position des Autors?",
+                "question": "Text: 'Der Leitlinienautor argumentiert: Randomisierte kontrollierte Studien sind der Goldstandard der Evidenz, doch ihre Übertragbarkeit in den klinischen Alltag ist oft eingeschränkt. Real-World-Evidence aus Registerdaten gewinnt daher zunehmend an Bedeutung.' Was ist die Position des Autors?",
                 "options": [
                   "RCTs sind unbrauchbar",
                   "Real-World-Evidence ersetzt RCTs komplett",
-                  "RCTs sind Goldstandard, Real-World-Evidence ergaenzt",
-                  "Registerdaten sind unzuverlaessig"
+                  "RCTs sind Goldstandard, Real-World-Evidence ergänzt",
+                  "Registerdaten sind unzuverlässig"
                 ],
-                "answer": "RCTs sind Goldstandard, Real-World-Evidence ergaenzt"
+                "answer": "RCTs sind Goldstandard, Real-World-Evidence ergänzt"
               },
               {
                 "id": "C1_ex1_l4",
                 "type": "mcq",
-                "question": "Text: 'Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpraeferenzen.' Welche drei Komponenten gehoeren zur EBM?",
+                "question": "Text: 'Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpräferenzen.' Welche drei Komponenten gehören zur EBM?",
                 "options": [
                   "Evidenz, Erfahrung, Patientenwunsch",
                   "Evidenz, Kosten, Effizienz",
@@ -2651,7 +2651,7 @@
               {
                 "id": "C1_ex1_l5",
                 "type": "gap-fill",
-                "question": "Die Implementierung neuer Leitlinien erfordert ein ___ Fortbildungskonzept fuer alle Mitarbeiter.",
+                "question": "Die Implementierung neuer Leitlinien erfordert ein ___ Fortbildungskonzept für alle Mitarbeiter.",
                 "options": [
                   "umfassendes",
                   "umfassender",
@@ -2663,12 +2663,12 @@
               {
                 "id": "C1_ex1_l6",
                 "type": "short-answer",
-                "question": "Text: \"Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpraeferenzen.\" Eine Komponente der EBM ist die externe Evidenz, eine andere die klinische Erfahrung. Wie heisst die dritte Komponente?",
-                "answer": "Patientenpraeferenzen",
+                "question": "Text: \"Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpräferenzen.\" Eine Komponente der EBM ist die externe Evidenz, eine andere die klinische Erfahrung. Wie heisst die dritte Komponente?",
+                "answer": "Patientenpräferenzen",
                 "acceptedAnswers": [
-                  "Patientenpraeferenzen",
-                  "die Patientenpraeferenzen",
-                  "Patientenpraeferenz"
+                  "Patientenpräferenzen",
+                  "die Patientenpräferenzen",
+                  "Patientenpräferenz"
                 ],
                 "points": 1
               }
@@ -2680,25 +2680,25 @@
               {
                 "id": "C1_ex1_h1",
                 "type": "mcq",
-                "question": "Vortrag: 'Die Einfuehrung der Leistungsgruppen wird kontrovers diskutiert. Einerseits sollen sie Fehlanreize beseitigen, andererseits fuerchten kleine Haeuser um ihr Ueberleben.' Was soll verbessert werden?",
+                "question": "Vortrag: 'Die Einführung der Leistungsgruppen wird kontrovers diskutiert. Einerseits sollen sie Fehlanreize beseitigen, andererseits fürchten kleine Häuser um ihr Überleben.' Was soll verbessert werden?",
                 "options": [
-                  "Rentabilitaet",
-                  "Behandlungsqualitaet",
+                  "Rentabilität",
+                  "Behandlungsqualität",
                   "Patientenzufriedenheit",
                   "Arztdichte"
                 ],
-                "answer": "Behandlungsqualitaet"
+                "answer": "Behandlungsqualität"
               },
               {
                 "id": "C1_ex1_h2",
                 "type": "true-false",
-                "question": "Interview: 'EBM bedeutet nicht, dass Leitlinien sklavisch befolgt werden muessen. Sie sind Entscheidungshilfen, nicht Entscheidungsersatz.' Leitlinien sind in der EBM verbindliche Vorschriften.",
+                "question": "Interview: 'EBM bedeutet nicht, dass Leitlinien sklavisch befolgt werden müssen. Sie sind Entscheidungshilfen, nicht Entscheidungsersatz.' Leitlinien sind in der EBM verbindliche Vorschriften.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex1_h3",
                 "type": "mcq",
-                "question": "Diskussion: 'Die Fehlerkultur muss verbessert werden. Ein CIRS waere ein erster Schritt. Fehler muessen offen angesprochen werden koennen.' Was schlaegt der Redner vor?",
+                "question": "Diskussion: 'Die Fehlerkultur muss verbessert werden. Ein CIRS wäre ein erster Schritt. Fehler müssen offen angesprochen werden können.' Was schlägt der Redner vor?",
                 "options": [
                   "Mehr Fortbildungen",
                   "CIRS-System",
@@ -2714,7 +2714,7 @@
             "tasks": [
               {
                 "id": "C1_ex1_w1",
-                "prompt": "In einer medizinischen Fachzeitschrift lesen Sie einen Artikel ueber die Krankenhausreform und die neue Leistungsgruppen-Systematik. Schreiben Sie einen Leserbrief. Nehmen Sie Stellung zur geplanten Reform: Chancen, Risiken und Anpassungsvorschlaege.",
+                "prompt": "In einer medizinischen Fachzeitschrift lesen Sie einen Artikel über die Krankenhausreform und die neue Leistungsgruppen-Systematik. Schreiben Sie einen Leserbrief. Nehmen Sie Stellung zur geplanten Reform: Chancen, Risiken und Anpassungsvorschläge.",
                 "wordLimit": 250
               }
             ]
@@ -2729,7 +2729,7 @@
               },
               {
                 "id": "C1_ex1_s2",
-                "prompt": "Diskutieren Sie: Inwiefern hat die evidenzbasierte Medizin die aerztliche Praxis veraendert, und wo stoesst sie an ihre Grenzen?",
+                "prompt": "Diskutieren Sie: Inwiefern hat die evidenzbasierte Medizin die ärztliche Praxis verändert, und wo stösst sie an ihre Grenzen?",
                 "talkTime": 180
               }
             ]
@@ -2738,7 +2738,7 @@
       },
       {
         "id": "exam_C1_02",
-        "name": "Goethe C1 Practice Exam 2 - Ethics & Resource Allocation",
+        "name": "Göthe C1 Practice Exam 2 - Ethics & Resource Allocation",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2747,14 +2747,14 @@
               {
                 "id": "C1_ex2_l1",
                 "type": "mcq",
-                "question": "Text: 'Ethische Entscheidungen am Lebensende stellen Aerzte vor Herausforderungen. Die Patientenverfuegung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfuegung muessen Angehoerige im mutmasslichen Willen entscheiden.' Was gilt bei fehlender Patientenverfuegung?",
+                "question": "Text: 'Ethische Entscheidungen am Lebensende stellen Ärzte vor Herausforderungen. Die Patientenverfügung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfügung müssen Angehörige im mutmasslichen Willen entscheiden.' Was gilt bei fehlender Patientenverfügung?",
                 "options": [
                   "Der Arzt entscheidet allein",
-                  "Angehoerige entscheiden im mutmasslichen Willen",
+                  "Angehörige entscheiden im mutmasslichen Willen",
                   "Es wird immer maximal therapiert",
                   "Das Krankenhaus entscheidet"
                 ],
-                "answer": "Angehoerige entscheiden im mutmasslichen Willen"
+                "answer": "Angehörige entscheiden im mutmasslichen Willen"
               },
               {
                 "id": "C1_ex2_l2",
@@ -2765,7 +2765,7 @@
               {
                 "id": "C1_ex2_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Ein Gesundheitsoekonom fordert: Angesichts knapper Ressourcen muessen Priorisierungen offen und transparent diskutiert werden. Rationierung hinter verschlossenen Tueren ist ethisch nicht vertretbar.' Was fordert der Oekonom?",
+                "question": "Text: 'Ein Gesundheitsökonom fordert: Angesichts knapper Ressourcen müssen Priorisierungen offen und transparent diskutiert werden. Rationierung hinter verschlossenen Türen ist ethisch nicht vertretbar.' Was fordert der Ökonom?",
                 "options": [
                   "Rationierung im Geheimen",
                   "Transparente Priorisierungsdiskussion",
@@ -2777,12 +2777,12 @@
               {
                 "id": "C1_ex2_l4",
                 "type": "mcq",
-                "question": "Text: 'Die Zuteilung von Intensivbetten warf ethische Fragen auf. Die DIVI-Leitlinie definierte: klinische Erfolgsaussicht, kurzfristige Letalitaet, Patientenwille. Keine Rolle spielten Alter, Behinderung oder sozialer Status.' Welche Kriterien waren NICHT Teil der DIVI-Leitlinie?",
+                "question": "Text: 'Die Zuteilung von Intensivbetten warf ethische Fragen auf. Die DIVI-Leitlinie definierte: klinische Erfolgsaussicht, kurzfristige Letalität, Patientenwille. Keine Rolle spielten Alter, Behinderung oder sozialer Status.' Welche Kriterien waren NICHT Teil der DIVI-Leitlinie?",
                 "options": [
                   "Klinische Erfolgsaussicht",
                   "Patientenwille",
                   "Alter und Behinderung",
-                  "Kurzfristige Letalitaet"
+                  "Kurzfristige Letalität"
                 ],
                 "answer": "Alter und Behinderung"
               },
@@ -2791,22 +2791,22 @@
                 "type": "gap-fill",
                 "question": "Die Ressourcenallokation im Gesundheitswesen ist eine ___ Herausforderung.",
                 "options": [
-                  "ethisch-oekonomische",
-                  "ethische-oekonomischer",
-                  "ethisch-oekonomischer",
-                  "ethischen-oekonomischen"
+                  "ethisch-ökonomische",
+                  "ethische-ökonomischer",
+                  "ethisch-ökonomischer",
+                  "ethischen-ökonomischen"
                 ],
-                "answer": "ethisch-oekonomische"
+                "answer": "ethisch-ökonomische"
               },
               {
                 "id": "C1_ex2_l6",
                 "type": "short-answer",
-                "question": "Text: \"Die Patientenverfuegung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfuegung muessen Angehoerige im mutmasslichen Willen entscheiden.\" Was gibt dem Willen des Patienten rechtliche Verbindlichkeit?",
-                "answer": "die Patientenverfuegung",
+                "question": "Text: \"Die Patientenverfügung gibt dem Willen des Patienten rechtliche Verbindlichkeit. Bei Fehlen einer Verfügung müssen Angehörige im mutmasslichen Willen entscheiden.\" Was gibt dem Willen des Patienten rechtliche Verbindlichkeit?",
+                "answer": "die Patientenverfügung",
                 "acceptedAnswers": [
-                  "die Patientenverfuegung",
-                  "Patientenverfuegung",
-                  "eine Patientenverfuegung"
+                  "die Patientenverfügung",
+                  "Patientenverfügung",
+                  "eine Patientenverfügung"
                 ],
                 "points": 1
               }
@@ -2818,7 +2818,7 @@
               {
                 "id": "C1_ex2_h1",
                 "type": "mcq",
-                "question": "Ethikvorlesung: 'Vier Prinzipien nach Beauchamp und Childress: Autonomie, Schadensvermeidung, Fuersorge, Gerechtigkeit.' Welches gehoert NICHT dazu?",
+                "question": "Ethikvorlesung: 'Vier Prinzipien nach Beauchamp und Childress: Autonomie, Schadensvermeidung, Fürsorge, Gerechtigkeit.' Welches gehört NICHT dazu?",
                 "options": [
                   "Autonomie",
                   "Schadensvermeidung",
@@ -2830,8 +2830,8 @@
               {
                 "id": "C1_ex2_h2",
                 "type": "true-false",
-                "question": "Patientenberatung: 'Die Verfuegung ueber das Lebensende ist Ausdruck von Autonomie. Niemand muss gegen seinen Willen behandelt werden.' Autonomie bedeutet auch, Massnahmen abzulehnen.",
-                "answer": "true"
+                "question": "Patientenberatung: 'Die Verfügung über das Lebensende ist Ausdruck von Autonomie. Niemand muss gegen seinen Willen behandelt werden.' Autonomie bedeutet auch, Massnahmen abzulehnen.",
+                "answer": "trü"
               },
               {
                 "id": "C1_ex2_h3",
@@ -2841,7 +2841,7 @@
                   "Alter und Status",
                   "Erfolgsaussicht und Patientenwille",
                   "Versicherungsstatus",
-                  "Angehoerigenwunsch"
+                  "Angehörigenwunsch"
                 ],
                 "answer": "Erfolgsaussicht und Patientenwille"
               }
@@ -2852,7 +2852,7 @@
             "tasks": [
               {
                 "id": "C1_ex2_w1",
-                "prompt": "Ihr Krankenhaus plant ein Ethikkomitee. Schreiben Sie ein Konzeptpapier an die Geschaeftsfuehrung: Notwendigkeit eines Ethikkomitees, dessen Zusammensetzung und Aufgaben.",
+                "prompt": "Ihr Krankenhaus plant ein Ethikkomitee. Schreiben Sie ein Konzeptpapier an die Geschäftsführung: Notwendigkeit eines Ethikkomitees, dessen Zusammensetzung und Aufgaben.",
                 "wordLimit": 250
               }
             ]
@@ -2862,12 +2862,12 @@
             "tasks": [
               {
                 "id": "C1_ex2_s1",
-                "prompt": "Prassentieren Sie ein Fallbeispiel, in dem ethische Prinzipien in Konflikt geraten sind, und erklaeren Sie Ihre Loesung.",
+                "prompt": "Prassentieren Sie ein Fallbeispiel, in dem ethische Prinzipien in Konflikt geraten sind, und erklären Sie Ihre Lösung.",
                 "talkTime": 180
               },
               {
                 "id": "C1_ex2_s2",
-                "prompt": "Diskutieren Sie: Sollte das Alter bei der Zuteilung knapper medizinischer Ressourcen eine Rolle spielen duerfen?",
+                "prompt": "Diskutieren Sie: Sollte das Alter bei der Zuteilung knapper medizinischer Ressourcen eine Rolle spielen dürfen?",
                 "talkTime": 180
               }
             ]
@@ -2876,7 +2876,7 @@
       },
       {
         "id": "exam_C1_03",
-        "name": "Goethe C1 Practice Exam 3 - Digital Medicine & AI",
+        "name": "Göthe C1 Practice Exam 3 - Digital Medicine & AI",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -2885,37 +2885,37 @@
               {
                 "id": "C1_ex3_l1",
                 "type": "mcq",
-                "question": "Text: 'KI-gestuetzte Diagnosesysteme zeigen in radiologischen Studien eine mit Fachaerzten vergleichbare Sensitivitaet. Allerdings bleibt die Black-Box-Problematik: Entscheidungswege der KI sind oft nicht nachvollziehbar.' Welches Problem wird beschrieben?",
+                "question": "Text: 'KI-gestützte Diagnosesysteme zeigen in radiologischen Studien eine mit Fachärzten vergleichbare Sensitivität. Allerdings bleibt die Black-Box-Problematik: Entscheidungswege der KI sind oft nicht nachvollziehbar.' Welches Problem wird beschrieben?",
                 "options": [
-                  "Zu geringe Sensitivitaet",
+                  "Zu geringe Sensitivität",
                   "Fehlende Nachvollziehbarkeit",
                   "Zu hohe Kosten",
-                  "Mangelnde Verfuegbarkeit"
+                  "Mangelnde Verfügbarkeit"
                 ],
                 "answer": "Fehlende Nachvollziehbarkeit"
               },
               {
                 "id": "C1_ex3_l2",
                 "type": "true-false",
-                "question": "Text: 'Die DSGVO verlangt eine ausdrueckliche Einwilligung des Patienten fuer die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.' Die DSGVO erfordert eine ausdrueckliche Einwilligung fuer Forschungsdaten.",
-                "answer": "true"
+                "question": "Text: 'Die DSGVO verlangt eine ausdrückliche Einwilligung des Patienten für die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.' Die DSGVO erfordert eine ausdrückliche Einwilligung für Forschungsdaten.",
+                "answer": "trü"
               },
               {
                 "id": "C1_ex3_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Ein Gesundheitsinformatiker argumentiert: Die Digitalisierung wird die Rolle des Arztes veraendern vom Wissensvermittler zum Navigator durch die Informationsflut.' Wie sieht der Informatiker die zukuenftige Arzrolle?",
+                "question": "Text: 'Ein Gesundheitsinformatiker argumentiert: Die Digitalisierung wird die Rolle des Arztes verändern vom Wissensvermittler zum Navigator durch die Informationsflut.' Wie sieht der Informatiker die zukünftige Arzrolle?",
                 "options": [
-                  "Der Arzt wird ueberfluessig",
+                  "Der Arzt wird überflüssig",
                   "Der Arzt wird zum Navigator",
-                  "Die Digitalisierung aendert nichts",
-                  "Patienten brauchen keine Aerzte"
+                  "Die Digitalisierung ändert nichts",
+                  "Patienten brauchen keine Ärzte"
                 ],
                 "answer": "Der Arzt wird zum Navigator"
               },
               {
                 "id": "C1_ex3_l4",
                 "type": "mcq",
-                "question": "Text: 'Die ePA soll fuer alle gesetzlich Versicherten eingefuehrt werden. Patienten bestimmen selbst, welche Daten sichtbar sind. Aerzte muessen sie nutzen, Patienten haben Widerspruchsrecht.' Haben Patienten ein Widerspruchsrecht?",
+                "question": "Text: 'Die ePA soll für alle gesetzlich Versicherten eingeführt werden. Patienten bestimmen selbst, welche Daten sichtbar sind. Ärzte müssen sie nutzen, Patienten haben Widerspruchsrecht.' Haben Patienten ein Widerspruchsrecht?",
                 "options": [
                   "Ja",
                   "Nein, Pflicht",
@@ -2927,7 +2927,7 @@
               {
                 "id": "C1_ex3_l5",
                 "type": "gap-fill",
-                "question": "Die ___ von Gesundheitsdaten in der Cloud erfordert hoechste Sicherheitsstandards.",
+                "question": "Die ___ von Gesundheitsdaten in der Cloud erfordert höchste Sicherheitsstandards.",
                 "options": [
                   "Speicherung",
                   "Speichern",
@@ -2939,11 +2939,11 @@
               {
                 "id": "C1_ex3_l6",
                 "type": "short-answer",
-                "question": "Text: \"Die DSGVO verlangt eine ausdrueckliche Einwilligung des Patienten fuer die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.\" Was verlangt die DSGVO fuer die Verarbeitung von Gesundheitsdaten zu Forschungszwecken?",
-                "answer": "eine ausdrueckliche Einwilligung",
+                "question": "Text: \"Die DSGVO verlangt eine ausdrückliche Einwilligung des Patienten für die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.\" Was verlangt die DSGVO für die Verarbeitung von Gesundheitsdaten zu Forschungszwecken?",
+                "answer": "eine ausdrückliche Einwilligung",
                 "acceptedAnswers": [
-                  "eine ausdrueckliche Einwilligung",
-                  "ausdrueckliche Einwilligung",
+                  "eine ausdrückliche Einwilligung",
+                  "ausdrückliche Einwilligung",
                   "Einwilligung",
                   "die Einwilligung"
                 ],
@@ -2957,11 +2957,11 @@
               {
                 "id": "C1_ex3_h1",
                 "type": "mcq",
-                "question": "Vortrag: 'KI in der Radiologie erreicht ueber 90 Prozent Treffsicherheit bei Lungenrundherden. Dennoch duerfen Systeme nur assistieren. Die Verantwortung traegt der Radiologe.' Wer traegt die Verantwortung?",
+                "question": "Vortrag: 'KI in der Radiologie erreicht über 90 Prozent Treffsicherheit bei Lungenrundherden. Dennoch dürfen Systeme nur assistieren. Die Verantwortung trägt der Radiologe.' Wer trägt die Verantwortung?",
                 "options": [
                   "KI-Hersteller",
                   "Radiologe",
-                  "Krankenhaustraeger",
+                  "Krankenhausträger",
                   "Gesetzgeber"
                 ],
                 "answer": "Radiologe"
@@ -2969,13 +2969,13 @@
               {
                 "id": "C1_ex3_h2",
                 "type": "true-false",
-                "question": "Datenschutzbelehrung: 'Die Verarbeitung Ihrer Daten zu Forschungszwecken bedarf Ihrer Einwilligung. Sie koennen jederzeit widerrufen.' Die Einwilligung kann nicht widerrufen werden.",
+                "question": "Datenschutzbelehrung: 'Die Verarbeitung Ihrer Daten zu Forschungszwecken bedarf Ihrer Einwilligung. Sie können jederzeit widerrufen.' Die Einwilligung kann nicht widerrufen werden.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex3_h3",
                 "type": "mcq",
-                "question": "Podcast: 'Telemedizin zeigt Potenzial in Dermatologie, Psychiatrie und Nachsorge. Herausforderung bleibt die digitale Kompetenz aelterer Patienten.' In welchen Bereichen zeigt Telemedizin Potenzial?",
+                "question": "Podcast: 'Telemedizin zeigt Potenzial in Dermatologie, Psychiatrie und Nachsorge. Herausforderung bleibt die digitale Kompetenz älterer Patienten.' In welchen Bereichen zeigt Telemedizin Potenzial?",
                 "options": [
                   "Chirurgie",
                   "Dermatologie, Psychiatrie, Nachsorge",
@@ -2991,7 +2991,7 @@
             "tasks": [
               {
                 "id": "C1_ex3_w1",
-                "prompt": "Sie nehmen an einer Tagung 'Digitalisierung in der Medizin' teil. Verfassen Sie einen Bericht fuer die Klinikzeitung: KI in der Radiologie, Telemedizin, Datenschutz. Geben Sie eine persoenliche Bewertung.",
+                "prompt": "Sie nehmen an einer Tagung 'Digitalisierung in der Medizin' teil. Verfassen Sie einen Bericht für die Klinikzeitung: KI in der Radiologie, Telemedizin, Datenschutz. Geben Sie eine persönliche Bewertung.",
                 "wordLimit": 250
               }
             ]
@@ -3001,12 +3001,12 @@
             "tasks": [
               {
                 "id": "C1_ex3_s1",
-                "prompt": "Prassentieren Sie Chancen und Risiken von KI-gestuetzten Diagnosesystemen aus klinischer Perspektive.",
+                "prompt": "Prassentieren Sie Chancen und Risiken von KI-gestützten Diagnosesystemen aus klinischer Perspektive.",
                 "talkTime": 180
               },
               {
                 "id": "C1_ex3_s2",
-                "prompt": "Diskutieren Sie: Fuehrt die Digitalisierung im Gesundheitswesen zu einer Entfremdung zwischen Arzt und Patient?",
+                "prompt": "Diskutieren Sie: Führt die Digitalisierung im Gesundheitswesen zu einer Entfremdung zwischen Arzt und Patient?",
                 "talkTime": 180
               }
             ]
@@ -3015,7 +3015,7 @@
       },
       {
         "id": "exam_C1_04",
-        "name": "Goethe C1 Practice Exam 4 - Clinical Communication & FSP",
+        "name": "Göthe C1 Practice Exam 4 - Clinical Communication & FSP",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -3024,7 +3024,7 @@
               {
                 "id": "C1_ex4_l1",
                 "type": "mcq",
-                "question": "Text: 'Der Arztbrief muss enthalten: Diagnose, durchgefuehrte Massnahmen, Entlassungsmedikation, weiteres Procedere und Epikrise.' Welcher Bestandteil gehoert NICHT zu den Pflichtangaben?",
+                "question": "Text: 'Der Arztbrief muss enthalten: Diagnose, durchgeführte Massnahmen, Entlassungsmedikation, weiteres Procedere und Epikrise.' Welcher Bestandteil gehört NICHT zu den Pflichtangaben?",
                 "options": [
                   "Diagnose",
                   "Medikation",
@@ -3036,13 +3036,13 @@
               {
                 "id": "C1_ex4_l2",
                 "type": "true-false",
-                "question": "Text: 'Die FSP prueft die kommunikative Kompetenz in typischen aerztlichen Gespraechssituationen: Anamnese, Aufklaerung, Dokumentation.' Die FSP prueft ausschliesslich schriftliche Faehigkeiten.",
+                "question": "Text: 'Die FSP prüft die kommunikative Kompetenz in typischen ärztlichen Gesprächssituationen: Anamnese, Aufklärung, Dokumentation.' Die FSP prüft ausschliesslich schriftliche Fähigkeiten.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex4_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Ein Pruefer stellt fest: Die groesste Huerde in der FSP ist nicht die Grammatik, sondern die pragmatische Angemessenheit.' Was ist die groesste Herausforderung?",
+                "question": "Text: 'Ein Prüfer stellt fest: Die grösste Hürde in der FSP ist nicht die Grammatik, sondern die pragmatische Angemessenheit.' Was ist die grösste Herausforderung?",
                 "options": [
                   "Grammatikfehler",
                   "Fachwortschatz",
@@ -3054,12 +3054,12 @@
               {
                 "id": "C1_ex4_l4",
                 "type": "mcq",
-                "question": "Text: 'Die strukturierte Patientenuebergabe nach SBAR: Situation, Background, Assessment, Recommendation.' Wofuer steht das A?",
+                "question": "Text: 'Die strukturierte Patientenübergabe nach SBAR: Situation, Background, Assessment, Recommendation.' Wofür steht das A?",
                 "options": [
                   "Anamnese",
                   "Assessment",
                   "Anweisung",
-                  "Aufklaerung"
+                  "Aufklärung"
                 ],
                 "answer": "Assessment"
               },
@@ -3078,7 +3078,7 @@
               {
                 "id": "C1_ex4_l6",
                 "type": "short-answer",
-                "question": "Text: \"Die strukturierte Patientenuebergabe nach SBAR: Situation, Background, Assessment, Recommendation.\" Wofuer steht das A in SBAR?",
+                "question": "Text: \"Die strukturierte Patientenübergabe nach SBAR: Situation, Background, Assessment, Recommendation.\" Wofür steht das A in SBAR?",
                 "answer": "Assessment",
                 "acceptedAnswers": [
                   "Assessment",
@@ -3094,7 +3094,7 @@
               {
                 "id": "C1_ex4_h1",
                 "type": "mcq",
-                "question": "Simulation: 'Guten Tag, Herr Mueller. Ich bin Dr. Schmidt. Ich klaere Sie vor Ihrer morgigen laparoskopischen Cholezystektomie auf.' Welcher Eingriff steht bevor?",
+                "question": "Simulation: 'Guten Tag, Herr Müller. Ich bin Dr. Schmidt. Ich kläre Sie vor Ihrer morgigen laparoskopischen Cholezystektomie auf.' Welcher Eingriff steht bevor?",
                 "options": [
                   "Magenspiegelung",
                   "Gallenblasenentfernung",
@@ -3106,13 +3106,13 @@
               {
                 "id": "C1_ex4_h2",
                 "type": "true-false",
-                "question": "SBAR-Uebergabe: 'Situation: Patient Zimmermann, Hufteingriff gestern. Background: Z. n. Knie-TEP vor drei Jahren. Assessment: Kreislauf stabil. Recommendation: Nachblutungskontrolle.' Der Patient hatte eine Knie-TEP vor zwei Jahren.",
+                "question": "SBAR-Übergabe: 'Situation: Patient Zimmermann, Hufteingriff gestern. Background: Z. n. Knie-TEP vor drei Jahren. Assessment: Kreislauf stabil. Recommendation: Nachblutungskontrolle.' Der Patient hatte eine Knie-TEP vor zwei Jahren.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex4_h3",
                 "type": "mcq",
-                "question": "Telefonat: 'Ueberweisung fuer Herrn Schuster mit Verdacht auf kolorektales Karzinom zum Gastroenterologen.' Was ist der Ueberweisungsgrund?",
+                "question": "Telefonat: 'Überweisung für Herrn Schuster mit Verdacht auf kolorektales Karzinom zum Gaströnterologen.' Was ist der Überweisungsgrund?",
                 "options": [
                   "Magenulkus",
                   "Kolorektales Karzinom",
@@ -3128,7 +3128,7 @@
             "tasks": [
               {
                 "id": "C1_ex4_w1",
-                "prompt": "Schreiben Sie einen Arztbrief fuer einen 58-jaehrigen Patienten nach laparoskopischer Cholezystektomie: Aufnahmediagnose, OP, Verlauf, Entlassungsmedikation, Procedere.",
+                "prompt": "Schreiben Sie einen Arztbrief für einen 58-jährigen Patienten nach laparoskopischer Cholezystektomie: Aufnahmediagnose, OP, Verlauf, Entlassungsmedikation, Procedere.",
                 "wordLimit": 250
               }
             ]
@@ -3138,12 +3138,12 @@
             "tasks": [
               {
                 "id": "C1_ex4_s1",
-                "prompt": "Fuehren Sie eine Patientenaufklaerung vor einer laparoskopischen Cholezystektomie durch: Eingriff, Risiken, postoperatives Verhalten.",
+                "prompt": "Führen Sie eine Patientenaufklärung vor einer laparoskopischen Cholezystektomie durch: Eingriff, Risiken, postoperatives Verhalten.",
                 "talkTime": 180
               },
               {
                 "id": "C1_ex4_s2",
-                "prompt": "Diskutieren Sie: Welche Rolle spielt die aerztliche Dokumentation fuer die Patientensicherheit, und welche typischen Fehler beobachten Sie?",
+                "prompt": "Diskutieren Sie: Welche Rolle spielt die ärztliche Dokumentation für die Patientensicherheit, und welche typischen Fehler beobachten Sie?",
                 "talkTime": 180
               }
             ]
@@ -3152,7 +3152,7 @@
       },
       {
         "id": "exam_C1_05",
-        "name": "Goethe C1 Practice Exam 5 - Public Health & Migration",
+        "name": "Göthe C1 Practice Exam 5 - Public Health & Migration",
         "passScore": 75,
         "sections": {
           "Lesen": {
@@ -3161,61 +3161,61 @@
               {
                 "id": "C1_ex5_l1",
                 "type": "mcq",
-                "question": "Text: 'Der aerztliche Fachkraeftemangel ist besonders in laendlichen Regionen spuerbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplaetze.' Welche Massnahmen werden ergriffen?",
+                "question": "Text: 'Der ärztliche Fachkräftemangel ist besonders in ländlichen Regionen spürbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplätze.' Welche Massnahmen werden ergriffen?",
                 "options": [
-                  "Weniger Studienplaetze",
-                  "Zuwanderung und mehr Studienplaetze",
-                  "Nur hoehere Gehaelter",
+                  "Weniger Studienplätze",
+                  "Zuwanderung und mehr Studienplätze",
+                  "Nur höhere Gehälter",
                   "Keine Massnahmen"
                 ],
-                "answer": "Zuwanderung und mehr Studienplaetze"
+                "answer": "Zuwanderung und mehr Studienplätze"
               },
               {
                 "id": "C1_ex5_l2",
                 "type": "true-false",
-                "question": "Text: 'Interdisziplinaere Versorgung bedeutet, dass verschiedene Berufsgruppen gemeinsam einen Behandlungsplan erstellen. Studien zeigen, dass dies die Behandlungsqualitaet verbessert.' Interdisziplinaere Versorgung kann die Qualitaet verbessern.",
-                "answer": "true"
+                "question": "Text: 'Interdisziplinäre Versorgung bedeutet, dass verschiedene Berufsgruppen gemeinsam einen Behandlungsplan erstellen. Studien zeigen, dass dies die Behandlungsqualität verbessert.' Interdisziplinäre Versorgung kann die Qualität verbessern.",
+                "answer": "trü"
               },
               {
                 "id": "C1_ex5_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Ein Experte fuer Migrationsmedizin argumentiert: Die Integration auslaendischer Aerzte ist kein einseitiger Anpassungsprozess. Das System profitiert von unterschiedlichen Perspektiven.' Wie bewertet der Experte den Beitrag?",
+                "question": "Text: 'Ein Experte für Migrationsmedizin argumentiert: Die Integration ausländischer Ärzte ist kein einseitiger Anpassungsprozess. Das System profitiert von unterschiedlichen Perspektiven.' Wie bewertet der Experte den Beitrag?",
                 "options": [
                   "Als Belastung",
                   "Als Bereicherung",
-                  "Als notwendiges Uebel",
-                  "Als voruebergehend"
+                  "Als notwendiges Übel",
+                  "Als vorübergehend"
                 ],
                 "answer": "Als Bereicherung"
               },
               {
                 "id": "C1_ex5_l4",
                 "type": "mcq",
-                "question": "Text: 'Public Health umfasst organisierte Massnahmen zur Gesundheitsfoerderung der Bevoelkerung, im Unterschied zur kurativen Medizin.' Was ist der zentrale Unterschied?",
+                "question": "Text: 'Public Health umfasst organisierte Massnahmen zur Gesundheitsförderung der Bevölkerung, im Unterschied zur kurativen Medizin.' Was ist der zentrale Unterschied?",
                 "options": [
                   "Finanzierung",
-                  "Fokus auf Bevoelkerung statt Einzelnen",
+                  "Fokus auf Bevölkerung statt Einzelnen",
                   "Art der Behandlung",
-                  "Ausbildungsdauer"
+                  "Ausbildungsdaür"
                 ],
-                "answer": "Fokus auf Bevoelkerung statt Einzelnen"
+                "answer": "Fokus auf Bevölkerung statt Einzelnen"
               },
               {
                 "id": "C1_ex5_l5",
                 "type": "gap-fill",
-                "question": "Die ___ des oeffentlichen Gesundheitsdienstes erfordert ausreichende personelle Ausstattung.",
+                "question": "Die ___ des öffentlichen Gesundheitsdienstes erfordert ausreichende personelle Ausstattung.",
                 "options": [
-                  "Leistungsfaehigkeit",
-                  "Leistungsfaehiger",
-                  "Leistungsfaehige",
-                  "Leistungsfaehig"
+                  "Leistungsfähigkeit",
+                  "Leistungsfähiger",
+                  "Leistungsfähige",
+                  "Leistungsfähig"
                 ],
-                "answer": "Leistungsfaehigkeit"
+                "answer": "Leistungsfähigkeit"
               },
               {
                 "id": "C1_ex5_l6",
                 "type": "short-answer",
-                "question": "Text: \"Der aerztliche Fachkraeftemangel ist besonders in laendlichen Regionen spuerbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplaetze.\" Eine Massnahme gegen den Aerztemangel ist mehr Studienplaetze. Welche andere Massnahme wird genannt?",
+                "question": "Text: \"Der ärztliche Fachkräftemangel ist besonders in ländlichen Regionen spürbar. Die Politik setzt auf erleichterte Zuwanderung und mehr Studienplätze.\" Eine Massnahme gegen den Ärztemangel ist mehr Studienplätze. Welche andere Massnahme wird genannt?",
                 "answer": "erleichterte Zuwanderung",
                 "acceptedAnswers": [
                   "erleichterte Zuwanderung",
@@ -3232,7 +3232,7 @@
               {
                 "id": "C1_ex5_h1",
                 "type": "mcq",
-                "question": "Radiobeitrag: 'Etwa 12 Prozent aller Aerzte haben einen auslaendischen Abschluss. Meist aus Syrien, Rumaenien, Oesterreich.' Wie viel Prozent?",
+                "question": "Radiobeitrag: 'Etwa 12 Prozent aller Ärzte haben einen ausländischen Abschluss. Meist aus Syrien, Rumänien, Österreich.' Wie viel Prozent?",
                 "options": [
                   "8%",
                   "10%",
@@ -3244,20 +3244,20 @@
               {
                 "id": "C1_ex5_h2",
                 "type": "true-false",
-                "question": "Teambesprechung: 'Herr Mueller kommt nach Pneumonie-Behandlung in die ambulante Versorgung. Ich schlage strukturierte Entlassungsplanung vor.' Die Planung soll den Uebergang verbessern.",
-                "answer": "true"
+                "question": "Teambesprechung: 'Herr Müller kommt nach Pneumonie-Behandlung in die ambulante Versorgung. Ich schlage strukturierte Entlassungsplanung vor.' Die Planung soll den Übergang verbessern.",
+                "answer": "trü"
               },
               {
                 "id": "C1_ex5_h3",
                 "type": "mcq",
-                "question": "Vortrag: 'Soziale Determinanten: Einkommen, Bildung, Wohnverhaeltnisse. Menschen in benachteiligten Stadtteilen leben 5-7 Jahre kurzener.' Welche Determinanten werden genannt?",
+                "question": "Vortrag: 'Soziale Determinanten: Einkommen, Bildung, Wohnverhältnisse. Menschen in benachteiligten Stadtteilen leben 5-7 Jahre kurzener.' Welche Determinanten werden genannt?",
                 "options": [
                   "Genetik",
-                  "Einkommen, Bildung, Wohnverhaeltnisse",
+                  "Einkommen, Bildung, Wohnverhältnisse",
                   "Medikamente",
                   "Krankheitserreger"
                 ],
-                "answer": "Einkommen, Bildung, Wohnverhaeltnisse"
+                "answer": "Einkommen, Bildung, Wohnverhältnisse"
               }
             ]
           },
@@ -3266,7 +3266,7 @@
             "tasks": [
               {
                 "id": "C1_ex5_w1",
-                "prompt": "In Ihrer Klinik wird eine interkulturelle Sprechstunde fuer Migranten diskutiert. Stellungnahme an die Klinikleitung: Notwendigkeit, Barrieren, Umsetzungsvorschlaege.",
+                "prompt": "In Ihrer Klinik wird eine interkulturelle Sprechstunde für Migranten diskutiert. Stellungnahme an die Klinikleitung: Notwendigkeit, Barrieren, Umsetzungsvorschläge.",
                 "wordLimit": 250
               }
             ]
@@ -3276,12 +3276,12 @@
             "tasks": [
               {
                 "id": "C1_ex5_s1",
-                "prompt": "Prassentieren Sie Herausforderungen und Chancen der Integration auslaendischer Aerzte in das deutsche Gesundheitssystem.",
+                "prompt": "Prassentieren Sie Herausforderungen und Chancen der Integration ausländischer Ärzte in das deutsche Gesundheitssystem.",
                 "talkTime": 180
               },
               {
                 "id": "C1_ex5_s2",
-                "prompt": "Diskutieren Sie: Sollte Public Health in der medizinischen Ausbildung einen hoeheren Stellenwert bekommen?",
+                "prompt": "Diskutieren Sie: Sollte Public Health in der medizinischen Ausbildung einen höheren Stellenwert bekommen?",
                 "talkTime": 180
               }
             ]

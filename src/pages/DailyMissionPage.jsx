@@ -19,6 +19,7 @@ import speakingData from '../data/speaking.json';
 import dashboardSummary from '../data/dashboardSummary.json';
 import levelsData from '../data/levels.json';
 import LevelLock from '../components/LevelLock';
+import GermanCharHelper from '../components/GermanCharHelper';
 
 /** Safely coerce a JSON field to array for .map()/.slice() calls */
 function toArray(v) {
@@ -38,7 +39,12 @@ import {
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 
 function normalizeAnswer(str) {
-  return (str || '').trim().toLowerCase().replace(/[.!?,;:]+$/, '');
+  return (str || '').trim().toLowerCase()
+    .replace(/[.!?,;:]+$/, '')
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss');
 }
 
 function getLocalDateKey() {
@@ -350,7 +356,7 @@ export default function DailyMissionPage() {
     recordGrammarAnswer(ex.id, correct);
     recordAnswer(lvl, ex.id, ans, ex.answer, ex.topic || 'grammar', correct, 'grammar');
     const existing = (state.levels?.[lvl]?.grammar || []).filter((x) => x !== ex.id);
-    updateLevelProgress(lvl, 'grammar', [ex.id, ...existing]);
+    setLevelProgress(lvl, 'grammar', [ex.id, ...existing]);
     setGr({ userAnswer: ans, answer: ex.answer, correct });
     if (correct) { setGc((c) => c + 1); } else {
       setGWrongList((prev) => [...prev, { prompt: ex.prompt, userAnswer: ans, correctAnswer: ex.answer, explanation: ex.explanation || '' }]);
@@ -424,7 +430,7 @@ export default function DailyMissionPage() {
     if (word) {
       recordVocabAnswer(word.id, isCorrect);
       const existing = (state.levels?.[lvl]?.vocab || []).filter((x) => x !== word.id);
-      updateLevelProgress(lvl, 'vocab', [word.id, ...existing]);
+      setLevelProgress(lvl, 'vocab', [word.id, ...existing]);
     }
     setVr({ userAnswer: sel, answer: correct, correct: isCorrect });
     if (isCorrect) setVc((c) => c + 1);
@@ -1170,6 +1176,7 @@ export default function DailyMissionPage() {
             {isTextType ? (
               <div>
                 <input type='text' style={{ width: '100%', padding: '0.7rem 1rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', fontSize: '0.9rem', boxSizing: 'border-box' }} value={ga} onChange={(e) => setGa(e.target.value)} placeholder='Type your answer...' disabled={hasAns} onKeyDown={(e) => { if (e.key === 'Enter' && !hasAns && ga.trim()) hGa(ga.trim()); }} />
+                {!hasAns && <GermanCharHelper onInsert={(c) => setGa(prev => prev + c)} compact style={{ marginTop: '0.25rem' }} />}
                 {!hasAns && <button style={{ ...sBp, marginTop: '0.5rem' }} onClick={() => { if (ga.trim()) hGa(ga.trim()); }} disabled={!ga.trim()}><CheckCircle size={14} /> Check</button>}
               </div>
             ) : (
@@ -1589,6 +1596,7 @@ export default function DailyMissionPage() {
                 onChange={(e) => setWtText(e.target.value)}
                 placeholder='Write your response in German...'
               />
+              <GermanCharHelper onInsert={(c) => setWtText(prev => prev + c)} compact style={{ marginTop: '0.25rem' }} />
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
                 <button style={sBp} onClick={hWt} disabled={!wtText.trim()}><CheckCircle size={16} /> Submit Writing</button>
                 <button style={sBtn} onClick={hWtSk}><SkipForward size={14} /> Skip for now</button>
@@ -1840,6 +1848,7 @@ export default function DailyMissionPage() {
                 onChange={(e) => setSpText(e.target.value)}
                 placeholder='Write your spoken answer or paste your transcription here.'
               />
+              <GermanCharHelper onInsert={(c) => setSpText(prev => prev + c)} compact style={{ marginTop: '0.25rem' }} />
               <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
                 <button style={sBp} onClick={hSp} disabled={!spText.trim()}><CheckCircle size={16} /> Submit Response</button>
                 <button style={sBtn} onClick={hSpSk}><SkipForward size={14} /> Skip for now</button>

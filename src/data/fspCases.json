@@ -7,7 +7,7 @@
       "age": "58",
       "gender": "mannlich",
       "chiefComplaint": "Akuter Brustschmerz seit 2 Stunden",
-      "history": "Plotzlich einsetzender, drueckender Schmerz retrosternal, in den linken Arm ausstrahlend. Begleitet von Ubelkeit und kaltem Schwitzen. Keine vergleichbare Episode zuvor.",
+      "history": "Plotzlich einsetzender, drückender Schmerz retrosternal, in den linken Arm ausstrahlend. Begleitet von Ubelkeit und kaltem Schwitzen. Keine vergleichbare Episode zuvor.",
       "medications": "Keine regelmasigen Medikamente",
       "allergies": "Keine bekannten Allergien",
       "pastHistory": "Keine relevanten Vorerkrankungen",
@@ -69,7 +69,7 @@
     },
     "doctorTasks": [
       "Ermitteln Sie die genaue Symptomatik und Ausloser",
-      "Pruefen Sie die Medikamenteneinhaltung",
+      "Prüfen Sie die Medikamenteneinhaltung",
       "Besprechen Sie die nachsten Untersuchungen",
       "Besprechen Sie Therapieoptionen",
       "Dokumentieren Sie den Verlauf furs Protokoll"
@@ -216,7 +216,7 @@
       "age": "72",
       "gender": "mannlich",
       "chiefComplaint": "Atemnot seit 2 Tagen, deutlich verschlechtert",
-      "history": "Seit 2 Tagen zunehmende Atemnot, schon in Ruhe. Husten mit gelblichem Auswurf. Bekannte COPD GOLD III. Kein Fieber. Sauerstoff zu Hause 2 l/min.",
+      "history": "Seit 2 Tagen zunehmende Atemnot, schon in Ruhe. Husten mit gelblichem Auswurf. Bekannte COPD GOLD III. Kein Fieber. Saürstoff zu Hause 2 l/min.",
       "medications": "Inhalatives Cortison und langwirksames Beta-2-Mimetikum, bei Bedarf Salbutamol",
       "allergies": "Keine",
       "pastHistory": "COPD GOLD III, arterielle Hypertonie",
@@ -226,7 +226,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Verschlechterung und Auslosern",
       "Erfragen Sie Auswurf, Fieber und Infektzeichen",
-      "Beurteilen Sie die Atemfrequenz und Sauerstoffsattigung",
+      "Beurteilen Sie die Atemfreqünz und Saürstoffsattigung",
       "Besprechen Sie die Akuttherapie",
       "Stellen Sie den Fall fur die Stationsubergabe dar"
     ],
@@ -236,18 +236,18 @@
       "Haben Sie Ihre Medikamente wie gewohnt genommen?"
     ],
     "redFlags": [
-      "Ruhedyspnoe bei Vorschadigung",
+      "Ruhedyspnö bei Vorschadigung",
       "Grün-gelblicher Auswurf als Infektzeichen",
       "COPD-Exazerbation mit Risiko der respiratorischen Insuffizienz"
     ],
     "usefulPhrases": [
-      "Wir geben Ihnen zunachst Sauerstoff und inhalieren mit einem starkeren Medikament.",
+      "Wir geben Ihnen zunachst Saürstoff und inhalieren mit einem starkeren Medikament.",
       "Es besteht der Verdacht auf eine COPD-Verschlechterung durch eine Infektion."
     ],
-    "doctorToDoctorSummary": "72-jahriger Patient mit bekannter COPD GOLD III, seit 2 Tagen zunehmende Atemnot und purulenter Auswurf. Ruhedyspnoe. V. a. infektexazerbierte COPD. Therapie: Sauerstoff, inhalative Bronchodilatation, orales Kortison und Antibiose nach Rontgen-Thorax.",
+    "doctorToDoctorSummary": "72-jahriger Patient mit bekannter COPD GOLD III, seit 2 Tagen zunehmende Atemnot und purulenter Auswurf. Ruhedyspnö. V. a. infektexazerbierte COPD. Therapie: Saürstoff, inhalative Bronchodilatation, orales Kortison und Antibiose nach Rontgen-Thorax.",
     "scoringRubric": {
       "historyTaking": "Dauer, Ausloser, Infektzeichen erheben",
-      "redFlags": "Ruhedyspnoe, Zyanose, Eintrubung erkennen",
+      "redFlags": "Ruhedyspnö, Zyanose, Eintrubung erkennen",
       "patientLanguage": "Atemmechanik und Inhalativa verstandlich erklaren",
       "structure": "Akut -> Medikation -> Diagnostik",
       "medicalLogic": "Exazerbation erkennen und leitliniengerecht behandeln",
@@ -277,7 +277,7 @@
     },
     "doctorTasks": [
       "Erfragen Sie den Ausloser der akuten Verschlechterung",
-      "Fragen Sie nach der aktuellen Asthmakontrolle",
+      "Fragen Sie nach der aktüllen Asthmakontrolle",
       "Beurteilen Sie den Schweregrad und die Therapie",
       "Erklaren Sie die Akuttherapie",
       "Besprechen Sie die Praventionsmasnahmen"
@@ -294,12 +294,12 @@
     ],
     "usefulPhrases": [
       "Sie haben einen akuten Asthmaanfall. Ihr Bronchialspray allein reicht im Moment nicht aus.",
-      "Wir geben Ihnen zusatzlich Sauerstoff und inhalieren mit einem starkeren Medikament."
+      "Wir geben Ihnen zusatzlich Saürstoff und inhalieren mit einem starkeren Medikament."
     ],
-    "doctorToDoctorSummary": "22-jahrige Patientin mit bekanntem Asthma bronchiale. Nach Katzenkontakt akute Dyspnoe mit Giemen. Salbutamol unzureichend wirksam. V. a. akute Asthmaexazerbation. Therapie: Sauerstoff, inhalative Bronchodilatation, systemische Kortikosteroide erwogen.",
+    "doctorToDoctorSummary": "22-jahrige Patientin mit bekanntem Asthma bronchiale. Nach Katzenkontakt akute Dyspnö mit Giemen. Salbutamol unzureichend wirksam. V. a. akute Asthmäxazerbation. Therapie: Saürstoff, inhalative Bronchodilatation, systemische Kortikosteroide erwogen.",
     "scoringRubric": {
       "historyTaking": "Ausloser und Schweregrad erfragen",
-      "redFlags": "Sprechdyspnoe, Einsatz der Atemhilfsmuskulatur, Zyanose erkennen",
+      "redFlags": "Sprechdyspnö, Einsatz der Atemhilfsmuskulatur, Zyanose erkennen",
       "patientLanguage": "Klare und beruhigende Ansprache",
       "structure": "Notfall -> Allergen -> Medikation",
       "medicalLogic": "Akuttherapie nach Stufenschema und Klinik",
@@ -330,7 +330,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Symptomentwicklung",
       "Erheben Sie Zeichen der Dekompensation",
-      "Pruefen Sie die Medikamenteneinhaltung und Ernahrung",
+      "Prüfen Sie die Medikamenteneinhaltung und Ernahrung",
       "Erklaren Sie die Dekompensation in laienverstandlichen Worten",
       "Besprechen Sie die stationare Aufnahme"
     ],
@@ -340,7 +340,7 @@
       "Haben Sie Ihre Wassertabletten regelmasig genommen?"
     ],
     "redFlags": [
-      "Orthopnoe (nicht flach liegen konnen)",
+      "Orthopnö (nicht flach liegen konnen)",
       "Gewichtszunahme und Beinodeme",
       "Nichterkennen der Dekompensationszeichen"
     ],
@@ -348,14 +348,14 @@
       "Ihr Herz pumpt im Moment nicht kraftig genug, dadurch staut sich Wasser in der Lunge und in den Beinen.",
       "Wir mussen Sie stationar aufnehmen und die Wassertabletten anpassen."
     ],
-    "doctorToDoctorSummary": "80-jahrige Patientin mit bekannter Herzinsuffizienz, seit Tagen zunehmende Dyspnoe, Orthopnoe, Beinodeme und Gewichtszunahme. Medikamenteneinnahme unzureichend. V. a. dekompensierte Herzinsuffizienz. Stationare Aufnahme zur Diagnostik und Therapieanpassung.",
+    "doctorToDoctorSummary": "80-jahrige Patientin mit bekannter Herzinsuffizienz, seit Tagen zunehmende Dyspnö, Orthopnö, Beinodeme und Gewichtszunahme. Medikamenteneinnahme unzureichend. V. a. dekompensierte Herzinsuffizienz. Stationare Aufnahme zur Diagnostik und Therapieanpassung.",
     "scoringRubric": {
       "historyTaking": "Dekompensationszeichen systematisierend erheben",
-      "redFlags": "Orthopnoe, Gewichtszunahme, Anasarka",
+      "redFlags": "Orthopnö, Gewichtszunahme, Anasarka",
       "patientLanguage": "Herz-Kreislauf-Mechanik einfach erklaren",
       "structure": "Symptome -> Medikation -> Dekompensation",
       "medicalLogic": "Herzinsuffizienz-Dekompensation erkennen und behandeln",
-      "germanAccuracy": "Dekompensation, Orthpnoe, Odeme korrekt"
+      "germanAccuracy": "Dekompensation, Orthpnö, Odeme korrekt"
     },
     "tags": [
       "atemnoth",
@@ -400,10 +400,10 @@
       "Nach einer Operation besteht ein erhohtes Risiko fur Blutgerinnsel.",
       "Ich habe den Verdacht, dass sich ein Gerinnsel gelost hat und in Ihre Lunge gelangt ist."
     ],
-    "doctorToDoctorSummary": "55-jahriger Patient am 3. Tag nach Knie-TEP mit akuter Dyspnoe, Wadenschwellung links und Immobilisation. V. a. Lungenembolie. CT-Angiographie und D-Dimer veranlasst, therapeutische Antikoagulation eingeleitet.",
+    "doctorToDoctorSummary": "55-jahriger Patient am 3. Tag nach Knie-TEP mit akuter Dyspnö, Wadenschwellung links und Immobilisation. V. a. Lungenembolie. CT-Angiographie und D-Dimer veranlasst, therapeutische Antikoagulation eingeleitet.",
     "scoringRubric": {
       "historyTaking": "Thrombosefaktoren und Symptomtrias erheben",
-      "redFlags": "Akute Dyspnoe postoperativ + Wadenschwellung",
+      "redFlags": "Akute Dyspnö postoperativ + Wadenschwellung",
       "patientLanguage": "Thrombose-Embolie-Mechanismus verstandlich erklaren",
       "structure": "Postoperativ -> Symptome -> Risiko -> Diagnostik",
       "medicalLogic": "Wells-Score und D-Dimer-Diagnostik verstehen",
@@ -477,7 +477,7 @@
       "age": "45",
       "gender": "mannlich",
       "chiefComplaint": "Starke Oberbauchschmerzen mit Ausstrahlung in den Rucken",
-      "history": "Nach reichhaltigem Essen und Alkoholkonsum starke gurtelfoermige Oberbauchschmerzen. Ausstrahlung in den Rucken. Ubelkeit, Erbrechen. Bekannte Fettstoffwechselstorung.",
+      "history": "Nach reichhaltigem Essen und Alkoholkonsum starke gurtelförmige Oberbauchschmerzen. Ausstrahlung in den Rucken. Ubelkeit, Erbrechen. Bekannte Fettstoffwechselstorung.",
       "medications": "Keine regelmasigen Medikamente",
       "allergies": "Keine",
       "pastHistory": "Hypercholesterinamie",
@@ -497,7 +497,7 @@
       "Hatten Sie Gallensteine?"
     ],
     "redFlags": [
-      "Gurtelfoermige Schmerzen mit Ruckenausstrahlung",
+      "Gurtelförmige Schmerzen mit Ruckenausstrahlung",
       "Trigger: Fettreiche Mahlzeit + Alkohol",
       "Erhohter Alkoholkonsum als Risikofaktor"
     ],
@@ -505,14 +505,14 @@
       "Die Schmerzen passen zu einer Entzundung der Bauchspeicheldruse.",
       "Sie mussen stationar aufgenommen werden, damit wir Sie uberwachen und behandeln konnen."
     ],
-    "doctorToDoctorSummary": "45-jahriger Patient mit gurtelfoermigen Oberbauchschmerzen nach fettreicher Mahlzeit und Alkoholkonsum. Ausstrahlung in den Rucken. Ubelkeit. V. a. akute Pankreatitis. Stationare Aufnahme, Laborkontrolle (Lipase, CRP), Nahrungskarenz und Volumengabe.",
+    "doctorToDoctorSummary": "45-jahriger Patient mit gurtelförmigen Oberbauchschmerzen nach fettreicher Mahlzeit und Alkoholkonsum. Ausstrahlung in den Rucken. Ubelkeit. V. a. akute Pankreatitis. Stationare Aufnahme, Laborkontrolle (Lipase, CRP), Nahrungskarenz und Volumengabe.",
     "scoringRubric": {
       "historyTaking": "Ausloser, Charakter, Vorerkrankungen",
       "redFlags": "Hamo- bzw.nekrotisierende Pankreatitis mit Kreislaufinstabilitat",
       "patientLanguage": "Bauchspeicheldruse und ihre Funktion einfach erklaren",
       "structure": "Ausloser -> Symptome -> Diagnose",
       "medicalLogic": "Pankreatitis-Diagnostik und Schweregrade",
-      "germanAccuracy": "Pankreatitis, gurtelfoermig, Ausstrahlung korrekt"
+      "germanAccuracy": "Pankreatitis, gurtelförmig, Ausstrahlung korrekt"
     },
     "tags": [
       "bauchschmerz",
@@ -549,7 +549,7 @@
       "Nehmen Sie regelmasig Schmerzmittel?"
     ],
     "redFlags": [
-      "Dauerhafte Symptome uber Wochen",
+      "Daürhafte Symptome uber Wochen",
       "Keine Alarmzeichen bisher",
       "Typische Refluxsymptomatik"
     ],
@@ -560,7 +560,7 @@
     "doctorToDoctorSummary": "38-jahrige Patientin mit epigastrischen brennenden Schmerzen und saurem Aufstoßen. Keine Alarmzeichen. V. a. gastroosophageale Refluxkrankheit. Geplanter Therapieversuch mit PPI und Lebensstilberatung.",
     "scoringRubric": {
       "historyTaking": "Refluxsymptome und Alarmzeichen erfragen",
-      "redFlags": "Dysphagie, Gewichtsverlust, Haematmensis erkennen",
+      "redFlags": "Dysphagie, Gewichtsverlust, Hämatmensis erkennen",
       "patientLanguage": "Refluxmechanismus vereinfacht darstellen",
       "structure": "Symptome -> Ausloser -> Therapie",
       "medicalLogic": "GERD-Diagnostik und PPI-Therapie",
@@ -589,8 +589,8 @@
       "socialHistory": "Koch, Nichtraucher"
     },
     "doctorTasks": [
-      "Fragen Sie nach Stuhlfrequenz und Konsistenz",
-      "Fragen Sie nach Infektionsquelle",
+      "Fragen Sie nach Stuhlfreqünz und Konsistenz",
+      "Fragen Sie nach Infektionsqülle",
       "Bewerten Sie den Hydratationszustand",
       "Erklaren Sie die Therapie (Flussigkeit, Schonkost)",
       "Besprechen Sie Warnzeichen furWiedervorstellung"
@@ -608,19 +608,19 @@
       "Das ist vermutlich ein Magen-Darm-Infekt.",
       "Am wichtigsten ist, dass Sie genug trinken."
     ],
-    "doctorToDoctorSummary": "31-jahriger Patient mit akuter Gastroenteritis, wassriger Durchfall und Erbrechen. Kein Fieber, keine Blutbeimengung. V. a. viralen Infekt. Therapie: orale Rehydrierung, Schonkost. Bei Zeichen der Austrocknung Wiedervorstellung empfehlen.",
+    "doctorToDoctorSummary": "31-jahriger Patient mit akuter Gaströnteritis, wassriger Durchfall und Erbrechen. Kein Fieber, keine Blutbeimengung. V. a. viralen Infekt. Therapie: orale Rehydrierung, Schonkost. Bei Zeichen der Austrocknung Wiedervorstellung empfehlen.",
     "scoringRubric": {
-      "historyTaking": "Infektquelle, Stuhlcharakter, Begleitsymptome",
+      "historyTaking": "Infektqülle, Stuhlcharakter, Begleitsymptome",
       "redFlags": "Blutiger Durchfall, hohes Fieber, Exsikkosezeichen",
       "patientLanguage": "Klare Trinkempfehlung geben",
-      "structure": "Symptome -> Infektquelle -> Therapie",
-      "medicalLogic": "Gastroenteritis-Therapie und Exsikkose",
-      "germanAccuracy": "Gastroenteritis, Rehydrierung, Exsikkose korrekt"
+      "structure": "Symptome -> Infektqülle -> Therapie",
+      "medicalLogic": "Gaströnteritis-Therapie und Exsikkose",
+      "germanAccuracy": "Gaströnteritis, Rehydrierung, Exsikkose korrekt"
     },
     "tags": [
       "bauchschmerz",
       "durchfall",
-      "gastroenteritis",
+      "gaströnteritis",
       "infektion"
     ]
   },
@@ -640,7 +640,7 @@
       "socialHistory": "Lehrerin, verheiratet, zwei Kinder, beruflicher Stress"
     },
     "doctorTasks": [
-      "Fragen Sie nach Kopfschmerzfrequenz, -dauer und -charakter",
+      "Fragen Sie nach Kopfschmerzfreqünz, -dauer und -charakter",
       "Differenzieren Sie Migrane von Spannungskopfschmerz",
       "Fragen Sie nach Medikamentenubergebrauch",
       "Erklaren Sie die Diagnose",
@@ -663,7 +663,7 @@
     ],
     "doctorToDoctorSummary": "41-jahrige Patientin mit dumpfen, druckenden Kopfschmerzen fast taglich, kein Migrane-Charakter. Haufige Ibuprofen-Einnahme. V. a. chronischer Spannungskopfschmerz mit moglichem Medikamentenubergebrauch. Beratung zu nicht-medikamentosen Verfahren und Reduktion der Bedarfsmedikation.",
     "scoringRubric": {
-      "historyTaking": "Frequenz, Medikation, Ausschluss Migrane",
+      "historyTaking": "Freqünz, Medikation, Ausschluss Migrane",
       "redFlags": "Medikamentenubergebrauch, plotzlicher Beginn, begleitende neurologische Symptome",
       "patientLanguage": "Prazise Erklarung, warum zu viele Schmerzmittel schaden",
       "structure": "Schmerz -> Medikation -> Differential -> Therapie",
@@ -695,7 +695,7 @@
     "doctorTasks": [
       "Fragen Sie nach Anfallshaufigkeit und -dauer",
       "Erfragen Sie die Aura und Begleitsymptome",
-      "Bewerten Sie die aktuelle Therapie und Prophylaxebedarf",
+      "Bewerten Sie die aktülle Therapie und Prophylaxebedarf",
       "Erklaren Sie die Migranepathophysiologie vereinfacht",
       "Besprechen Sie Trigger-Management und Prophylaxeoptionen"
     ],
@@ -756,7 +756,7 @@
       "Haben Sie Probleme, den Fuß zu heben (Fußheberparese)?"
     ],
     "redFlags": [
-      "Cauda-equina-Syndrom: Inkontinenz, Reitparese, Sattelanaesthesie (Notfall)",
+      "Cauda-equina-Syndrom: Inkontinenz, Reitparese, Sattelanästhesie (Notfall)",
       "Progrediente Parese, schwere sensible Ausfalle"
     ],
     "usefulPhrases": [
@@ -766,7 +766,7 @@
     "doctorToDoctorSummary": "52-jahriger Patient mit akutem lumbalem Schmerz mit radikularer Ausstrahlung ins rechte Bein nach Belastung. Keine Cauda-equina-Symptome. V. a. lumbalen Bandscheibenvorfall. Konservative Therapie. MRT bei ausbleibender Besserung.",
     "scoringRubric": {
       "historyTaking": "Akuter Schmerz, Ausstrahlung, Kribbeln, Cauda-equina-Fragen",
-      "redFlags": "Cauda-equina (Sattelanaesthesie, Inkontinenz), progrediente Parese",
+      "redFlags": "Cauda-equina (Sattelanästhesie, Inkontinenz), progrediente Parese",
       "patientLanguage": "Anatomie von Wirbelsaule und Nerven einfach erklaren",
       "structure": "Ausloser -> Symptome -> rote Flaggen -> Therapie",
       "medicalLogic": "Radikulare Symptomatik und Bandscheibenvorfall",
@@ -843,7 +843,7 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Buroangestellte, sexuell aktiv, verheiratet"
+      "socialHistory": "Buroangestellte, sexüll aktiv, verheiratet"
     },
     "doctorTasks": [
       "Fragen Sie nach der genauen Symptomatik",
@@ -967,13 +967,13 @@
       "Ihr Herz schlagt im Moment zu schnell und unregelmasig.",
       "Wir mussen das Herz zunachst verlangsamen und dann den Rhythmus wiederherstellen."
     ],
-    "doctorToDoctorSummary": "62-jahriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Uberleitung. Keine hamodynamische Instabilitat. Geplante Frequenzkontrolle und Echokardiographie.",
+    "doctorToDoctorSummary": "62-jahriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Uberleitung. Keine hamodynamische Instabilitat. Geplante Freqünzkontrolle und Echokardiographie.",
     "scoringRubric": {
       "historyTaking": "Palpitationen, Dauer, Ausloser",
       "redFlags": "Hamodynamische Instabilitat, Synkope, Brustschmerz",
       "patientLanguage": "Rhythmusstorung einfach erklaren",
       "structure": "Symptome -> EKG -> Diagnostik",
-      "medicalLogic": "Vorhofflimmern: Frequenzkontrolle vs. Rhythmisierung",
+      "medicalLogic": "Vorhofflimmern: Freqünzkontrolle vs. Rhythmisierung",
       "germanAccuracy": "Tachyarrhythmie, Vorhofflimmern korrekt"
     },
     "tags": [
@@ -1011,7 +1011,7 @@
       "Rauchen Sie?"
     ],
     "redFlags": [
-      "Daueruber 7 Tage mit farbigem Auswurf",
+      "Daüruber 7 Tage mit farbigem Auswurf",
       "Fieber als Infektzeichen"
     ],
     "usefulPhrases": [
@@ -1020,7 +1020,7 @@
     ],
     "doctorToDoctorSummary": "45-jahriger Patient mit produktivem Husten seit 10 Tagen, subfebril. V. a. akute Bronchitis bei protrahiertem Infekt. Bei anhaltendem eitrigem Auswurf und Fieber Antibiose erwogen.",
     "scoringRubric": {
-      "historyTaking": "Hustendauer, Auswurf, Fieber",
+      "historyTaking": "Hustendaür, Auswurf, Fieber",
       "redFlags": "Hämoptysen, Atemnot, Thoraxschmerz",
       "patientLanguage": "Viral vs bakteriell erklaren",
       "structure": "Husten -> Auswurf -> Verlauf -> Therapie",
@@ -1050,7 +1050,7 @@
       "socialHistory": "Ingenieur, Nichtraucher"
     },
     "doctorTasks": [
-      "Fragen Sie nach Reiseziel, Aufenthaltsdauer und Symptomen",
+      "Fragen Sie nach Reiseziel, Aufenthaltsdaür und Symptomen",
       "Fragen Sie nach Reisemedizin und Impfungen",
       "Fragen Sie nach Blutbeimengung und Fieber",
       "Besprechen Sie die Differenzialdiagnose",
@@ -1068,14 +1068,14 @@
     "usefulPhrases": [
       "Reisedurchfall ist haufig, aber wenn er langer als 3-4 Tage anhalt, sollten wir eine Stuhlprobe untersuchen."
     ],
-    "doctorToDoctorSummary": "33-jahriger Patient mit wassrigem Durchfall nach Indienaufenthalt. Kein Blut, kein Fieber. V. a. protrahierte infektiose Gastroenteritis. Stuhldiagnostik auf Bakterien und Parasiten veranlasst.",
+    "doctorToDoctorSummary": "33-jahriger Patient mit wassrigem Durchfall nach Indienaufenthalt. Kein Blut, kein Fieber. V. a. protrahierte infektiose Gaströnteritis. Stuhldiagnostik auf Bakterien und Parasiten veranlasst.",
     "scoringRubric": {
       "historyTaking": "Reiseanamnese, Stuhlcharakter, Begleitsymptome",
       "redFlags": "Blutiger Durchfall, hohes Fieber, Dehydratation",
       "patientLanguage": "Reisedurchfall und Tropeninfektion unterscheiden",
       "structure": "Reise -> Symptome -> Diagnostik",
-      "medicalLogic": "Infektiose vs parasitar, Reisediarrhoe",
-      "germanAccuracy": "Reisediarrhoe, parasitare Infektion korrekt"
+      "medicalLogic": "Infektiose vs parasitar, Reisediarrhö",
+      "germanAccuracy": "Reisediarrhö, parasitare Infektion korrekt"
     },
     "tags": [
       "durchfall",
@@ -1122,7 +1122,7 @@
     "doctorToDoctorSummary": "28-jahrige Patientin mit medikamentosem Exanthem nach Amoxicillin. Keine systemische Beteiligung. V. a. Typ-IV-Allergie. Absetzen des Antibiotikums, antihistaminerge Therapie. Allergiepass ausgestellt.",
     "scoringRubric": {
       "historyTaking": "Medikamentenanamnese und zeitlicher Zusammenhang",
-      "redFlags": "Dyspnoe, Angioödem, Kreislaufreaktion",
+      "redFlags": "Dyspnö, Angioödem, Kreislaufreaktion",
       "patientLanguage": "Allergische Reaktion vs Nebenwirkung erklaren",
       "structure": "Ausschlag -> Medikament -> Allergie",
       "medicalLogic": "Allergische Reaktion vom verzogerten Typ",
@@ -1276,7 +1276,7 @@
     ],
     "doctorToDoctorSummary": "36-jahriger Patient mit Panikattacken, ausgiebiger negativer somatischer Abklarung. Leidet unter Antizipationsangst. V. a. Panikstorung. Empfehlung: Psychotherapie, ggf. SSRI, Stressmanagement.",
     "scoringRubric": {
-      "historyTaking": "Symptome wahrend Anfall, Angstdauer, Vermeidungsverhalten",
+      "historyTaking": "Symptome wahrend Anfall, Angstdaür, Vermeidungsverhalten",
       "redFlags": "Suizidgedanken, schwere Depression, Substanzgebrauch",
       "patientLanguage": "Psychosomatische Zusammenhange entpathologisierend erklaren",
       "structure": "Symptome -> Diagnostik -> Erklarung -> Therapie",
@@ -1360,7 +1360,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Dauer und Lokalisation der Gelenkschmerzen",
       "Erheben Sie die Morgensteifigkeit und Funktionsbeeintrachtigung",
-      "Fragen Sie nach aktueller Therapie und Compliance",
+      "Fragen Sie nach aktüller Therapie und Compliance",
       "Erklaren Sie die Schubsymptomatik",
       "Besprechen Sie Therapieanpassung"
     ],
@@ -1374,10 +1374,10 @@
       "Symmetrische Beteiligung der Hande"
     ],
     "usefulPhrases": [
-      "Ihre rheumatoide Arthritis zeigt aktuell eine verstarkte Aktivitat.",
-      "Wir mussen die Therapie anpassen und eventuell erganzen."
+      "Ihre rheumatoide Arthritis zeigt aktüll eine verstarkte Aktivitat.",
+      "Wir mussen die Therapie anpassen und eventüll erganzen."
     ],
-    "doctorToDoctorSummary": "48-jahrige Patientin mit bekannter RA, aktuell Schub mit Morgensteifigkeit und symmetrischer Polyarthritis. Unter MTX. V. a. aktive Erkrankung. Therapieanpassung (Dosiserhohung oder Biologikum) erforderlich.",
+    "doctorToDoctorSummary": "48-jahrige Patientin mit bekannter RA, aktüll Schub mit Morgensteifigkeit und symmetrischer Polyarthritis. Unter MTX. V. a. aktive Erkrankung. Therapieanpassung (Dosiserhohung oder Biologikum) erforderlich.",
     "scoringRubric": {
       "historyTaking": "Morgensteifigkeit, Gelenkverteilung, Therapie",
       "redFlags": "Schnelle Gelenkdestruktion, viszerale Beteiligung",
@@ -1471,7 +1471,7 @@
       "Wie hoch war das Fieber maximal?",
       "Trinkt das Kind noch gut?",
       "Hatte das Kind schon einen Fieberkrampf?",
-      "Sind die Impfungen aktuell?"
+      "Sind die Impfungen aktüll?"
     ],
     "redFlags": [
       "Hohes Fieber bei Kleinkindern haufig viral bedingt",
@@ -1754,7 +1754,7 @@
   },
   {
     "id": "fsp_c_035",
-    "title": "Diabetes mellitus Neuentdeckung",
+    "title": "Diabetes mellitus Neüntdeckung",
     "setting": "clinic",
     "patientRole": {
       "age": "55",
@@ -2078,7 +2078,7 @@
       "socialHistory": "Witwe, lebt allein, wenig Bewegung, trinkt wenig"
     },
     "doctorTasks": [
-      "Fragen Sie nach der Stuhlfrequenz und Konsistenz",
+      "Fragen Sie nach der Stuhlfreqünz und Konsistenz",
       "Fragen Sie nach Laxanziengebrauch",
       "Fragen Sie nach Alarmzeichen",
       "Erklaren Sie die Chronifizierung von Obstipation",
@@ -2098,7 +2098,7 @@
     ],
     "doctorToDoctorSummary": "72-jahrige Patientin mit chronischer Obstipation, Laxanziabhangigkeit, keine Alarmzeichen. Beratung zu Ballaststoffen, Flussigkeit und Bewegung. Stufenweiser Laxanzienentzug und Wechsel zu Macrogol.",
     "scoringRubric": {
-      "historyTaking": "Stuhlfrequenz, Laxanzien, Alarmzeichen",
+      "historyTaking": "Stuhlfreqünz, Laxanzien, Alarmzeichen",
       "redFlags": "Blut im Stuhl, Gewichtsverlust, plotzliche Anderung der Stuhlgewohnheiten",
       "patientLanguage": "Darmtragheit und Laxanzien erklaren",
       "structure": "Symptome -> Laxanzien -> Ernahrung -> Therapie",
@@ -2171,7 +2171,7 @@
       "age": "44",
       "gender": "weiblich",
       "chiefComplaint": "Starke Schmerzen nach Kaiserschnitt",
-      "history": "Gestern Kaiserschnitt (Sectio caesarea). Starke Schmerzen im Unterbauch, besonders beim Bewegen und Stillen. Schmerzskala 7/10. Angst, dass Schmerzmittel dem Baby schaden konnten.",
+      "history": "Gestern Kaiserschnitt (Sectio cäsarea). Starke Schmerzen im Unterbauch, besonders beim Bewegen und Stillen. Schmerzskala 7/10. Angst, dass Schmerzmittel dem Baby schaden konnten.",
       "medications": "Ibuprofen 600 mg 3x/Tag + Novaminsulfon bei Bedarf",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2181,7 +2181,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Schmerzintensitat und -lokalisation",
       "Fragen Sie nach der Schmerzqualitat",
-      "Fragen Sie nach Stillen und Saeugling",
+      "Fragen Sie nach Stillen und Säugling",
       "Erklaren Sie die Sicherheit von Schmerzmitteln beim Stillen",
       "Optimieren Sie die Schmerztherapie"
     ],
@@ -2273,7 +2273,7 @@
       "age": "32",
       "gender": "weiblich",
       "chiefComplaint": "Einschlafstorung und Durchschlafstorung seit Wochen",
-      "history": "Seit Wochen Probleme beim Einschlafen, wacht nachts auf und findet keinen Schlaf. Grundliches Gruebeln. Tagsuber mud und gereizt. Belastet durch Trennungsphase.",
+      "history": "Seit Wochen Probleme beim Einschlafen, wacht nachts auf und findet keinen Schlaf. Grundliches Grübeln. Tagsuber mud und gereizt. Belastet durch Trennungsphase.",
       "medications": "Gelegentlich Baldrian, kein regelmassiges Medikament",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2303,7 +2303,7 @@
     "doctorToDoctorSummary": "32-jahrige Patientin mit Ein- und Durchschlafstorung bei Trennungsstress. Keine Depression. Beratung zu Schlafhygiene, Entspannungstechniken, ggf. Kurzzeittherapie.",
     "scoringRubric": {
       "historyTaking": "Schlafmuster, Belastungen, Tagesbefindlichkeit",
-      "redFlags": "Depressive Symptome, Suizidalitat, Schlafapnoe",
+      "redFlags": "Depressive Symptome, Suizidalitat, Schlafapnö",
       "patientLanguage": "Schlafhygiene praktisch vermitteln",
       "structure": "Schlaf -> Belastung -> Hygiene -> Therapie",
       "medicalLogic": "Primare vs sekundare Schlafstorung, Zolpidem-Risiko",
@@ -2352,7 +2352,7 @@
     ],
     "doctorToDoctorSummary": "71-jahrige Patientin mit Sturz auf den Thorax. Atemabhangige Schmerzen rechts. Osteoporose. V. a. Rippenfraktur. Rontgen-Thorax veranlasst. Konservative Therapie mit Analgetika.",
     "scoringRubric": {
-      "historyTaking": "Trauma, Schmerzqualitat, Dyspnoe",
+      "historyTaking": "Trauma, Schmerzqualitat, Dyspnö",
       "redFlags": "Hamo-Pneumothorax, Rippenserie mit instabilem Thorax",
       "patientLanguage": "Rippenfraktur vs Prellung erklaren",
       "structure": "Sturz -> Schmerz -> Rontgen -> Ruhe",
@@ -2394,21 +2394,21 @@
       "Haben Sie schon Eisen pabiert?"
     ],
     "redFlags": [
-      "Eisenmangelanamie bei Hypermenorrhoe",
-      "Weitere Blutverlustquellen ausschliesen"
+      "Eisenmangelanamie bei Hypermenorrhö",
+      "Weitere Blutverlustqüllen ausschliesen"
     ],
     "usefulPhrases": [
       "Ihre Müdigkeit kommt sehr wahrscheinlich von Eisenmangel.",
       "Wir messen das Blutbild und das Eisen und beginnen dann eine Eisentherapie."
     ],
-    "doctorToDoctorSummary": "33-jahrige Patientin mit Mudigkeit, Blasse, Belastungsdyspnoe bei Hypermenorrhoe. V. a. Eisenmangelanamie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynakologische Abklarung der Hypermenorrhoe.",
+    "doctorToDoctorSummary": "33-jahrige Patientin mit Mudigkeit, Blasse, Belastungsdyspnö bei Hypermenorrhö. V. a. Eisenmangelanamie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynakologische Abklarung der Hypermenorrhö.",
     "scoringRubric": {
       "historyTaking": "Mudigkeit, Blutungsanamnese, GI-Blutverlust",
       "redFlags": "Schwere Anamie, Malignonverdacht, GI-Blutung",
       "patientLanguage": "Eisenmangel und Hamoglobin erklaren",
       "structure": "Mudigkeit -> Menstruation -> Eisenmangel -> Therapie",
       "medicalLogic": "Eisenmangelanamie: Ursachen, Diagnostik, Therapie",
-      "germanAccuracy": "Eisenmangel, Anamie, Ferritin, Hypermenorrhoe korrekt"
+      "germanAccuracy": "Eisenmangel, Anamie, Ferritin, Hypermenorrhö korrekt"
     },
     "tags": [
       "mudigkeit",
@@ -2674,7 +2674,7 @@
     "patientRole": {
       "age": "26",
       "gender": "weiblich",
-      "chiefComplaint": "Nachthusten und Belastungsdyspnoe bei Asthma",
+      "chiefComplaint": "Nachthusten und Belastungsdyspnö bei Asthma",
       "history": "Bekanntes Asthma, aber in letzter Zeit nachts Husten und beim Sport Atemnot. Benotigt den Notfallspray fast taglich. Keine regelmasige Basistherapie.",
       "medications": "Nur Salbutamol bei Bedarf",
       "allergies": "Hausstaubmilben, Pollen",
@@ -2685,7 +2685,7 @@
     "doctorTasks": [
       "Fragen Sie nach Symptomkontrolle",
       "Prufen Sie die Therapieadhärenz",
-      "Erklaren Sie den Unterschied zwischen Bedarfs- und Dauertherapie",
+      "Erklaren Sie den Unterschied zwischen Bedarfs- und Daürtherapie",
       "Passen Sie die Therapie an"
     ],
     "mustAsk": [
@@ -2705,7 +2705,7 @@
     "scoringRubric": {
       "historyTaking": "Kontrolle, Medikation, Ausloser",
       "redFlags": "Schwere Exazerbation, Notarzteinsatz",
-      "patientLanguage": "Bedarfs- vs Dauertherapie erklaren",
+      "patientLanguage": "Bedarfs- vs Daürtherapie erklaren",
       "structure": "Kontrolle -> Medikation -> Eskalation",
       "medicalLogic": "Asthmastufentherapie, GINA-Leitlinie",
       "germanAccuracy": "Asthmakontrolle, ICS/LABA, GINA"
@@ -2776,7 +2776,7 @@
       "age": "38",
       "gender": "weiblich",
       "chiefComplaint": "Starke Oberbauchschmerzen nach Essen",
-      "history": "Nach fettreichem Essen (Fondue) starke Oberbauchschmerzen mit Ausstrahlung in den Rucken. Erbrechen. Bekannte Gallensteine.",
+      "history": "Nach fettreichem Essen (Fondü) starke Oberbauchschmerzen mit Ausstrahlung in den Rucken. Erbrechen. Bekannte Gallensteine.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Gallensteine bekannt",
@@ -2800,13 +2800,13 @@
       "Die Schmerzen passen zu einer Entzundung der Bauchspeicheldruse.",
       "Sie mussen stationar aufgenommen werden."
     ],
-    "doctorToDoctorSummary": "38-jahrige Patientin mit biliaer Pankreatitis. Lipase erhoht. Stationare Therapie.",
+    "doctorToDoctorSummary": "38-jahrige Patientin mit biliär Pankreatitis. Lipase erhoht. Stationare Therapie.",
     "scoringRubric": {
       "historyTaking": "Ausloser, Gallensteine, Alkohol",
       "redFlags": "Hamorrhagische Verlauf",
       "patientLanguage": "Pankreatitis erklaren",
       "structure": "Ausloser -> Diagnose -> Therapie",
-      "medicalLogic": "Biliaere Pankreatitis, Ranson-Score",
+      "medicalLogic": "Biliäre Pankreatitis, Ranson-Score",
       "germanAccuracy": "Pankreatitis, Gallenstein, Lipase"
     },
     "tags": [
@@ -2823,7 +2823,7 @@
     "patientRole": {
       "age": "70",
       "gender": "weiblich",
-      "chiefComplaint": "Geschwollenes Bein nach Hueft-OP",
+      "chiefComplaint": "Geschwollenes Bein nach Hüft-OP",
       "history": "5 Tage nach Hutf-TEP-OP Schwellung und Schweregeful im linken Bein. Wade druckschmerzhaft. Keine Atemnot.",
       "medications": "Niedermolekulares Heparin",
       "allergies": "Keine",
@@ -2846,7 +2846,7 @@
       "Lungenembolie als Komplikation"
     ],
     "usefulPhrases": [
-      "Nach einer Hueft-OP kann es zu einem Blutgerinnsel im Bein kommen.",
+      "Nach einer Hüft-OP kann es zu einem Blutgerinnsel im Bein kommen.",
       "Wir machen eine Ultraschalluntersuchung."
     ],
     "doctorToDoctorSummary": "70-jahrige Patientin postoperativ mit V. a. TVT. Kompressionssonographie. Antikoagulation eingeleitet.",
@@ -2867,7 +2867,7 @@
   },
   {
     "id": "fsp_c_057",
-    "title": "Gastroenteritis bei Kind",
+    "title": "Gaströnteritis bei Kind",
     "setting": "clinic",
     "patientRole": {
       "age": "3",
@@ -2893,31 +2893,31 @@
       "Hat das Kind noch nasse Windeln?"
     ],
     "redFlags": [
-      "Kind mit Exsikkose-Risiko bei Gastroenteritis"
+      "Kind mit Exsikkose-Risiko bei Gaströnteritis"
     ],
     "usefulPhrases": [
       "Das Wichtigste ist, dass Ihr Kind genug Flussigkeit bekommt.",
       "Wenn es weniger als die Halfte der normalen Menge trinkt, mussen Sie wiederkommen."
     ],
-    "doctorToDoctorSummary": "3-jahriges Kind mit akuter Gastroenteritis, leichter Exsikkose. Orale Rehydrierung. Elternberatung.",
+    "doctorToDoctorSummary": "3-jahriges Kind mit akuter Gaströnteritis, leichter Exsikkose. Orale Rehydrierung. Elternberatung.",
     "scoringRubric": {
       "historyTaking": "Symptome, Flussigkeit, Urin",
       "redFlags": "Schwere Exsikkose, Krampfanfall",
       "patientLanguage": "Rehydrierung kindgerecht erklaren",
       "structure": "Symptome -> Rehydrierung -> Wiedervorstellung",
-      "medicalLogic": "Kindliche Gastroenteritis, WHO-Plan",
-      "germanAccuracy": "Gastroenteritis, Exsikkose, Rehydrierung"
+      "medicalLogic": "Kindliche Gaströnteritis, WHO-Plan",
+      "germanAccuracy": "Gaströnteritis, Exsikkose, Rehydrierung"
     },
     "tags": [
       "durchfall",
       "kind",
-      "gastroenteritis",
+      "gaströnteritis",
       "eltern"
     ]
   },
   {
     "id": "fsp_c_058",
-    "title": "Schlafapnoe-Syndrom",
+    "title": "Schlafapnö-Syndrom",
     "setting": "clinic",
     "patientRole": {
       "age": "52",
@@ -2933,7 +2933,7 @@
     "doctorTasks": [
       "Fragen Sie nach Schnarchen und Atemaussetzern",
       "Fragen Sie nach der taglichen Schlafrigkeit",
-      "Erklären Sie das Schlafapnoe-Syndrom",
+      "Erklären Sie das Schlafapnö-Syndrom",
       "Besprechen Sie die Diagnostik und Therapie",
       "Weisen Sie auf das Fahrverbot hin (!!)"
     ],
@@ -2943,24 +2943,24 @@
       "Schlafen Sie tagsuber ein?"
     ],
     "redFlags": [
-      "Schlafapnoe mit Einschlafneigung am Steuer (Berufskraftfahrer!)",
+      "Schlafapnö mit Einschlafneigung am Steür (Berufskraftfahrer!)",
       "Kardiovaskulare Folgeerkrankungen"
     ],
     "usefulPhrases": [
-      "Ihre Symptome deuten auf eine Schlafapnoe hin.",
+      "Ihre Symptome deuten auf eine Schlafapnö hin.",
       "Wegen Ihres Berufes muss das dringend abgeklart werden."
     ],
-    "doctorToDoctorSummary": "52-jahriger Patient mit obstruktiver Schlafapnoe, hoher Tagesschlafrigkeit, Berufskraftfahrer. Polysomnographie eingeleitet. CPAP-Therapie und Fahrtauglichkeit prufen.",
+    "doctorToDoctorSummary": "52-jahriger Patient mit obstruktiver Schlafapnö, hoher Tagesschlafrigkeit, Berufskraftfahrer. Polysomnographie eingeleitet. CPAP-Therapie und Fahrtauglichkeit prufen.",
     "scoringRubric": {
       "historyTaking": "Schnarchen, Atemaussetzer, Tagesschlafrigkeit",
       "redFlags": "Verkehrstauglichkeit, Herzrhythmusstorungen",
-      "patientLanguage": "Schlafapnoe und CPAP erklaren",
+      "patientLanguage": "Schlafapnö und CPAP erklaren",
       "structure": "Symptome -> Diagnostik -> Therapie -> Fahrverbot",
       "medicalLogic": "OSA: Diagnostik, Therapie, Verkehrsrecht",
-      "germanAccuracy": "Schlafapnoe, CPAP, Polysomnographie"
+      "germanAccuracy": "Schlafapnö, CPAP, Polysomnographie"
     },
     "tags": [
-      "schlafapnoe",
+      "schlafapnö",
       "mudigkeit",
       "schnarchen",
       "beruf"
@@ -3002,7 +3002,7 @@
     "doctorToDoctorSummary": "5-jahriges Kind mit obstruktiver Bronchitis bei Infekt. Keine schwere Atemnot. Inhalative Therapie.",
     "scoringRubric": {
       "historyTaking": "Atmung, Trinken, Fieber",
-      "redFlags": "Schwere Dyspnoe, Zyanose",
+      "redFlags": "Schwere Dyspnö, Zyanose",
       "patientLanguage": "Obstruktion kindgerecht erklaren",
       "structure": "Infekt -> Atemwege -> Therapie",
       "medicalLogic": "Obstruktive Bronchitis vs Asthma",
@@ -3072,7 +3072,7 @@
     "patientRole": {
       "age": "6",
       "gender": "Kind",
-      "chiefComplaint": "Blaschenfoermiger Ausschlag und Fieber",
+      "chiefComplaint": "Blaschenförmiger Ausschlag und Fieber",
       "history": "Seit 2 Tagen Fieber, seit gestern juckender blaschenformiger Ausschlag am ganzen Korper. Andere Kinder im Kindergarten haben Windpocken.",
       "medications": "Keine",
       "allergies": "Keine",
@@ -3296,7 +3296,7 @@
     ],
     "doctorToDoctorSummary": "Patientin mit Meniere-Symptomatik. HNO-Vorstellung veranlasst. Salzmreduktion und Betahistin erwogen.",
     "scoringRubric": {
-      "historyTaking": "Trias, Dauer, Frequenz",
+      "historyTaking": "Trias, Dauer, Freqünz",
       "redFlags": "Neurologische Herdsymptome",
       "patientLanguage": "Meniere erklaren",
       "structure": "Schwindel -> Ohr -> HNO",
@@ -3414,9 +3414,9 @@
     "setting": "emergency",
     "patientRole": {
       "age": "32",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Geschwollener linker Arm nach Krafttraining",
-      "history": "2 Tage nach Krafttraining Schwellung des linken Arms. Keine Schmerzen. Blaue Verfaerbung.",
+      "history": "2 Tage nach Krafttraining Schwellung des linken Arms. Keine Schmerzen. Blaue Verfärbung.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3425,15 +3425,15 @@
     },
     "doctorTasks": [
       "Fragen Sie nach der Schwellung und Belastung",
-      "Pruefen Sie Durchblutung",
-      "Erklaeren Sie die Armvenenthrombose"
+      "Prüfen Sie Durchblutung",
+      "Erklären Sie die Armvenenthrombose"
     ],
     "mustAsk": [
       "Haben Sie Atemnot?",
       "Hatten Sie einen Zugang im Arm?"
     ],
     "redFlags": [
-      "Paget-von-Schroetter-Syndrom",
+      "Paget-von-Schrötter-Syndrom",
       "Lungenembolie ausschliessen"
     ],
     "usefulPhrases": [
@@ -3444,9 +3444,9 @@
     "scoringRubric": {
       "historyTaking": "Training, Schwellung, Risiken",
       "redFlags": "Lungenembolie",
-      "patientLanguage": "Thrombose erklaeren",
+      "patientLanguage": "Thrombose erklären",
       "structure": "Belastung -> Thrombose -> Therapie",
-      "medicalLogic": "Paget-von-Schroetter",
+      "medicalLogic": "Paget-von-Schrötter",
       "germanAccuracy": "Armvenenthrombose, Antikoagulation"
     },
     "tags": [
@@ -3462,18 +3462,18 @@
     "setting": "clinic",
     "patientRole": {
       "age": "55",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Wiederkehrende Oberbauchschmerzen, Durchfall, Gewichtsverlust",
-      "history": "Seit Monaten Oberbauchschmerzen mit Ausstrahlung in den Ruecken, fettiger Durchfall, 10 kg Verlust. Taeglicher Alkoholkonsum.",
+      "history": "Seit Monaten Oberbauchschmerzen mit Ausstrahlung in den Rücken, fettiger Durchfall, 10 kg Verlust. Täglicher Alkoholkonsum.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Handwerker, 3-4 Bier taeglich"
+      "socialHistory": "Handwerker, 3-4 Bier täglich"
     },
     "doctorTasks": [
       "Fragen Sie nach Schmerz und Alkohol",
-      "Erklaeren Sie Pankreatitis",
+      "Erklären Sie Pankreatitis",
       "Besprechen Sie Karenz"
     ],
     "mustAsk": [
@@ -3485,14 +3485,14 @@
       "Pankreasinsuffizienz"
     ],
     "usefulPhrases": [
-      "Die Bauchspeicheldruese ist entzuendet.",
+      "Die Bauchspeicheldrüse ist entzündet.",
       "Alkoholverzicht ist entscheidend."
     ],
     "doctorToDoctorSummary": "Chronische Pankreatitis bei Alkohol. Pankreasenzyme.",
     "scoringRubric": {
       "historyTaking": "Alkohol, Schmerz, Stuhl",
       "redFlags": "Karzinom",
-      "patientLanguage": "Pankreatitis erklaeren",
+      "patientLanguage": "Pankreatitis erklären",
       "structure": "Alkohol -> Pankreas -> Therapie",
       "medicalLogic": "Chronische Pankreatitis",
       "germanAccuracy": "Pankreatitis, Pankreasinsuffizienz"
@@ -3510,23 +3510,23 @@
     "setting": "ward",
     "patientRole": {
       "age": "82",
-      "gender": "maennlich",
-      "chiefComplaint": "Ploetzlich verwirrt und unruhig nach Hueft-OP",
-      "history": "Patient nach Hueft-TEP seit gestern verwirrt, schlaegt um sich. Wachheitsluecken.",
+      "gender": "männlich",
+      "chiefComplaint": "Plötzlich verwirrt und unruhig nach Hüft-OP",
+      "history": "Patient nach Hüft-TEP seit gestern verwirrt, schlägt um sich. Wachheitslücken.",
       "medications": "pausiert",
       "allergies": "Keine",
-      "pastHistory": "Z.n. Hueft-TEP, Hypertonie",
+      "pastHistory": "Z.n. Hüft-TEP, Hypertonie",
       "familyHistory": "Keine",
       "socialHistory": "Rentner"
     },
     "doctorTasks": [
       "Fragen Sie nach Beginn",
-      "Pruefen Sie auf Ursachen",
-      "Erklaeren Sie das Delir"
+      "Prüfen Sie auf Ursachen",
+      "Erklären Sie das Delir"
     ],
     "mustAsk": [
       "Wann begann es?",
-      "Frueher schon Verwirrtheit?"
+      "Früher schon Verwirrtheit?"
     ],
     "redFlags": [
       "Postoperatives Delir",
@@ -3540,7 +3540,7 @@
     "scoringRubric": {
       "historyTaking": "Beginn, Ursachen",
       "redFlags": "Infektion, Metabolisch",
-      "patientLanguage": "Delir erklaeren",
+      "patientLanguage": "Delir erklären",
       "structure": "Verwirrtheit -> Ursache -> Therapie",
       "medicalLogic": "Delir-Management",
       "germanAccuracy": "Delir, Verwirrtheit"
@@ -3558,9 +3558,9 @@
     "setting": "clinic",
     "patientRole": {
       "age": "78",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Vergesslichkeit, desorientiert",
-      "history": "Seit Monaten Vergesslichkeit, verliert Dinge, verirrt sich. Wesensveraenderung.",
+      "history": "Seit Monaten Vergesslichkeit, verliert Dinge, verirrt sich. Wesensveränderung.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Hypertonie",
@@ -3569,27 +3569,27 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Verlauf und Alltag",
-      "Pruefen Sie Kognition",
-      "Erklaeren Sie Demenz"
+      "Prüfen Sie Kognition",
+      "Erklären Sie Demenz"
     ],
     "mustAsk": [
       "Fahren Sie noch Auto?",
-      "Hatten Sie frueher eine Gedaechtnispruefung?"
+      "Hatten Sie früher eine Gedächtnisprüfung?"
     ],
     "redFlags": [
       "Progressiv kognitiver Abbau",
       "Alzheimer-Verdacht"
     ],
     "usefulPhrases": [
-      "Ihr Mann hat eine Gedaechtnisstoerung.",
+      "Ihr Mann hat eine Gedächtnisstörung.",
       "Wir untersuchen die Ursache."
     ],
-    "doctorToDoctorSummary": "Kognitive Beeintraechtigung. V.a. Demenz. Diagnostik: MMST, CCT.",
+    "doctorToDoctorSummary": "Kognitive Beeinträchtigung. V.a. Demenz. Diagnostik: MMST, CCT.",
     "scoringRubric": {
       "historyTaking": "Beginn, Alltag",
       "redFlags": "Delir",
-      "patientLanguage": "Demenz erklaeren",
-      "structure": "Gedaechtnis -> Alltag -> Diagnostik",
+      "patientLanguage": "Demenz erklären",
+      "structure": "Gedächtnis -> Alltag -> Diagnostik",
       "medicalLogic": "Demenz-Diagnostik",
       "germanAccuracy": "Demenz, Alzheimer, MMST"
     },
@@ -3607,8 +3607,8 @@
     "patientRole": {
       "age": "32",
       "gender": "weiblich",
-      "chiefComplaint": "Sehstoerung, Kribbeln im Bein",
-      "history": "Vor 2 Wochen Sehstoerung am linken Auge. Jetzt Kribbeln im rechten Bein. Vor 1 Jahr aehnliche Episode.",
+      "chiefComplaint": "Sehstörung, Kribbeln im Bein",
+      "history": "Vor 2 Wochen Sehstörung am linken Auge. Jetzt Kribbeln im rechten Bein. Vor 1 Jahr ähnliche Episode.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3617,32 +3617,32 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Symptomen und Verlauf",
-      "Erklaeren Sie MS-Verdacht",
+      "Erklären Sie MS-Verdacht",
       "Besprechen Sie MRT"
     ],
     "mustAsk": [
-      "Frueher solche Symptome?",
-      "Sehstoerungen gehabt?"
+      "Früher solche Symptome?",
+      "Sehstörungen gehabt?"
     ],
     "redFlags": [
       "Schubweises Defizit = MS-Verdacht"
     ],
     "usefulPhrases": [
-      "Das kann eine Entzuendung im Nervensystem sein.",
+      "Das kann eine Entzündung im Nervensystem sein.",
       "MRT gibt Klarheit."
     ],
-    "doctorToDoctorSummary": "V.a. Multiple Sklerose. MRT Schaedel + Spinalkanal.",
+    "doctorToDoctorSummary": "V.a. Multiple Sklerose. MRT Schädel + Spinalkanal.",
     "scoringRubric": {
       "historyTaking": "Symptome, zeitlich",
       "redFlags": "Optikusneuritis",
-      "patientLanguage": "MS erklaeren",
+      "patientLanguage": "MS erklären",
       "structure": "Symptome -> Schub -> MRT",
       "medicalLogic": "MS-Diagnosekriterien",
       "germanAccuracy": "MS, Optikusneuritis"
     },
     "tags": [
       "MS",
-      "sehstoerung",
+      "sehstörung",
       "kribbeln",
       "neurologie"
     ]
@@ -3653,18 +3653,18 @@
     "setting": "clinic",
     "patientRole": {
       "age": "48",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Roter Ring und Gelenkschmerzen",
-      "history": "Vor 3 Wochen Zeckenstich. Jetzt Wanderroete und Kniegelenkschmerzen.",
+      "history": "Vor 3 Wochen Zeckenstich. Jetzt Wanderröte und Kniegelenkschmerzen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Gaertner"
+      "socialHistory": "Gärtner"
     },
     "doctorTasks": [
       "Fragen Sie nach Zecke und Haut",
-      "Erklaeren Sie Borreliose",
+      "Erklären Sie Borreliose",
       "Verschreiben Sie Antibiose"
     ],
     "mustAsk": [
@@ -3673,17 +3673,17 @@
     ],
     "redFlags": [
       "Erythema migrans",
-      "Lyme-Arthritis moeglich"
+      "Lyme-Arthritis möglich"
     ],
     "usefulPhrases": [
-      "Der rote Ring ist typisch fuer Borreliose.",
+      "Der rote Ring ist typisch für Borreliose.",
       "Sie brauchen Antibiotika."
     ],
     "doctorToDoctorSummary": "Erythema migrans mit Lyme-Arthritis. Doxycyclin.",
     "scoringRubric": {
       "historyTaking": "Zecke, Haut, Gelenke",
       "redFlags": "Neuroborreliose",
-      "patientLanguage": "Borreliose erklaeren",
+      "patientLanguage": "Borreliose erklären",
       "structure": "Zecke -> Haut -> Gelenk -> Antibiose",
       "medicalLogic": "Lyme-Borreliose",
       "germanAccuracy": "Borreliose, Erythema migrans"
@@ -3712,26 +3712,26 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Knoten und Risiken",
-      "Erklaeren Sie Dringlichkeit",
+      "Erklären Sie Dringlichkeit",
       "Besprechen Sie Mammographie"
     ],
     "mustAsk": [
-      "Zufaellig entdeckt?",
+      "Zufällig entdeckt?",
       "Brustkrebs in Familie?"
     ],
     "redFlags": [
       "Knoten + Familienanamnese + Alter > 50",
-      "Dringend abklaeren"
+      "Dringend abklären"
     ],
     "usefulPhrases": [
-      "Jeder Knoten muss abgeklaert werden.",
-      "Wir ueberweisen zur Mammographie."
+      "Jeder Knoten muss abgeklärt werden.",
+      "Wir überweisen zur Mammographie."
     ],
     "doctorToDoctorSummary": "V.a. Mammakarzinom. Mammographie und Biopsie.",
     "scoringRubric": {
       "historyTaking": "Knoten, Risiken",
-      "redFlags": "Entzuendlicher Brustkrebs",
-      "patientLanguage": "Tumorverdacht erklaeren",
+      "redFlags": "Entzündlicher Brustkrebs",
+      "patientLanguage": "Tumorverdacht erklären",
       "structure": "Knoten -> Risiko -> Mammographie",
       "medicalLogic": "Mammakarzinom-Diagnostik",
       "germanAccuracy": "Mammakarzinom, Mammographie"
@@ -3750,17 +3750,17 @@
     "patientRole": {
       "age": "58",
       "gender": "weiblich",
-      "chiefComplaint": "Ploetzliche Atemnot nach Langstreckenflug",
-      "history": "2 Tage nach 10h-Flug Atemnot, Brustschmerzen, Haemoptyse.",
+      "chiefComplaint": "Plötzliche Atemnot nach Langstreckenflug",
+      "history": "2 Tage nach 10h-Flug Atemnot, Brustschmerzen, Hämoptyse.",
       "medications": "Keine",
       "allergies": "Keine",
-      "pastHistory": "Krampfadern, Uebergewicht",
+      "pastHistory": "Krampfadern, Übergewicht",
       "familyHistory": "Keine",
       "socialHistory": "Angestellte"
     },
     "doctorTasks": [
       "Fragen Sie nach Flug und Atemnot",
-      "Erklaeren Sie LE",
+      "Erklären Sie LE",
       "Leiten Sie Therapie ein"
     ],
     "mustAsk": [
@@ -3768,7 +3768,7 @@
       "Schmerzen im Bein?"
     ],
     "redFlags": [
-      "Wells-Score erhoeht: Flug + Dyspnoe + Haemoptyse"
+      "Wells-Score erhöht: Flug + Dyspnö + Hämoptyse"
     ],
     "usefulPhrases": [
       "Ein Gerinnsel aus dem Bein ist in die Lunge gewandert.",
@@ -3776,9 +3776,9 @@
     ],
     "doctorToDoctorSummary": "Lungenembolie nach Flug. Antikoagulation.",
     "scoringRubric": {
-      "historyTaking": "Flug, Dyspnoe, Bein",
+      "historyTaking": "Flug, Dyspnö, Bein",
       "redFlags": "Rechtsherzbelastung",
-      "patientLanguage": "LE erklaeren",
+      "patientLanguage": "LE erklären",
       "structure": "Flug -> Gerinnsel -> Lunge",
       "medicalLogic": "LE-Diagnostik, Wells-Score",
       "germanAccuracy": "Lungenembolie, Wells-Score"
@@ -3786,7 +3786,7 @@
     "tags": [
       "lungenembolie",
       "flug",
-      "dyspnoe",
+      "dyspnö",
       "thrombose"
     ]
   },
@@ -3796,7 +3796,7 @@
     "setting": "emergency",
     "patientRole": {
       "age": "65",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Geschwollenes Knie mit Fieber",
       "history": "Seit 2 Tagen geschwollenes, rotes Knie, Fieber 39C. Z.n. Arthroskopie.",
       "medications": "Keine",
@@ -3807,7 +3807,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach OP und Knie",
-      "Erklaeren Sie Infekt",
+      "Erklären Sie Infekt",
       "Planen Sie Punktion"
     ],
     "mustAsk": [
@@ -3819,14 +3819,14 @@
       "Dringend Punktion"
     ],
     "usefulPhrases": [
-      "Das Knie hat sich nach der OP entzuendet.",
-      "Wir muessen punktieren."
+      "Das Knie hat sich nach der OP entzündet.",
+      "Wir müssen punktieren."
     ],
     "doctorToDoctorSummary": "Postoperativer Knieinfekt. Punktion, Antibiose.",
     "scoringRubric": {
       "historyTaking": "OP, Knie, Fieber",
       "redFlags": "Sepsis",
-      "patientLanguage": "Gelenkinfekt erklaeren",
+      "patientLanguage": "Gelenkinfekt erklären",
       "structure": "OP -> Gelenk -> Punktion",
       "medicalLogic": "Septische Arthritis",
       "germanAccuracy": "Gelenkinfekt, Punktion"
@@ -3846,7 +3846,7 @@
       "age": "72",
       "gender": "weiblich",
       "chiefComplaint": "Offenes Bein seit 3 Monaten",
-      "history": "Offene Stelle am Unterschenkel. Naechtliche Wadenschmerzen, schwere Beine.",
+      "history": "Offene Stelle am Unterschenkel. Nächtliche Wadenschmerzen, schwere Beine.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "CVI, Hypertonie",
@@ -3855,7 +3855,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Wunde und Venen",
-      "Pruefen Sie Durchblutung",
+      "Prüfen Sie Durchblutung",
       "Besprechen Sie Kompression"
     ],
     "mustAsk": [
@@ -3863,17 +3863,17 @@
       "Zucker oder pAVK?"
     ],
     "redFlags": [
-      "Venoeses Ulcus cruris bei CVI"
+      "Venöses Ulcus cruris bei CVI"
     ],
     "usefulPhrases": [
       "Das offene Bein kommt von schwachen Venen.",
-      "Kompressionsstruempfe helfen."
+      "Kompressionsstrümpfe helfen."
     ],
-    "doctorToDoctorSummary": "Venoeses Ulcus cruris. Wundversorgung, Kompression.",
+    "doctorToDoctorSummary": "Venöses Ulcus cruris. Wundversorgung, Kompression.",
     "scoringRubric": {
       "historyTaking": "Wunde, Venen, Durchblutung",
       "redFlags": "pAVK",
-      "patientLanguage": "CVI erklaeren",
+      "patientLanguage": "CVI erklären",
       "structure": "Wunde -> Venen -> Kompression",
       "medicalLogic": "Ulcus cruris, CVI",
       "germanAccuracy": "Ulcus cruris, CVI"
@@ -3892,7 +3892,7 @@
     "patientRole": {
       "age": "60",
       "gender": "weiblich",
-      "chiefComplaint": "Rote, glaenzende Haut am Bein mit Fieber",
+      "chiefComplaint": "Rote, glänzende Haut am Bein mit Fieber",
       "history": "Seit 2 Tagen roter, schmerzhafter Bezirk am Unterschenkel. Fieber 38.8.",
       "medications": "Keine",
       "allergies": "Keine",
@@ -3902,7 +3902,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Haut und Fieber",
-      "Erklaeren Sie Erysipel",
+      "Erklären Sie Erysipel",
       "Verordnen Sie Antibiose"
     ],
     "mustAsk": [
@@ -3914,13 +3914,13 @@
     ],
     "usefulPhrases": [
       "Sie haben eine bakterielle Hautinfektion.",
-      "Antibiotikum ist noetig."
+      "Antibiotikum ist nötig."
     ],
     "doctorToDoctorSummary": "Erysipel. Antibiose, Ruhigstellung.",
     "scoringRubric": {
       "historyTaking": "Haut, Fieber, Eintritt",
       "redFlags": "Sepsis, Abszess",
-      "patientLanguage": "Erysipel erklaeren",
+      "patientLanguage": "Erysipel erklären",
       "structure": "Haut -> Infekt -> Antibiose",
       "medicalLogic": "Erysipel",
       "germanAccuracy": "Erysipel, Wundrose"
@@ -3938,9 +3938,9 @@
     "setting": "clinic",
     "patientRole": {
       "age": "56",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Akute Grosszehenschwellung",
-      "history": "Ploetzlich schmerzhaftes Grosszehengrundgelenk. Rot, geschwollen. Vortag: Fleisch und Bier.",
+      "history": "Plötzlich schmerzhaftes Grosszehengrundgelenk. Rot, geschwollen. Vortag: Fleisch und Bier.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3948,8 +3948,8 @@
       "socialHistory": "Handwerker"
     },
     "doctorTasks": [
-      "Fragen Sie nach Gelenk und Ernaehrung",
-      "Erklaeren Sie Gicht"
+      "Fragen Sie nach Gelenk und Ernährung",
+      "Erklären Sie Gicht"
     ],
     "mustAsk": [
       "Schon einmal gehabt?",
@@ -3961,14 +3961,14 @@
     ],
     "usefulPhrases": [
       "Das ist ein Gichtanfall.",
-      "Ibuprofen und Kuehlen."
+      "Ibuprofen und Kühlen."
     ],
-    "doctorToDoctorSummary": "Akuter Gichtanfall. NSAR, Allopurinol spaeter.",
+    "doctorToDoctorSummary": "Akuter Gichtanfall. NSAR, Allopurinol später.",
     "scoringRubric": {
-      "historyTaking": "Gelenk, Ausloeser",
+      "historyTaking": "Gelenk, Auslöser",
       "redFlags": "Septische Arthritis",
-      "patientLanguage": "Gicht erklaeren",
-      "structure": "Gelenk -> Harnsaeure -> Therapie",
+      "patientLanguage": "Gicht erklären",
+      "structure": "Gelenk -> Harnsäure -> Therapie",
       "medicalLogic": "Gicht",
       "germanAccuracy": "Gicht, Podagra"
     },
@@ -3985,9 +3985,9 @@
     "setting": "clinic",
     "patientRole": {
       "age": "44",
-      "gender": "maennlich",
-      "chiefComplaint": "Rueckenschmerz, Fussschwaeche",
-      "history": "Nach Heben einer Kiste Rueckenschmerzen, Fussschwaeche links.",
+      "gender": "männlich",
+      "chiefComplaint": "Rückenschmerz, Fussschwäche",
+      "history": "Nach Heben einer Kiste Rückenschmerzen, Fussschwäche links.",
       "medications": "Ibuprofen",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3995,47 +3995,47 @@
       "socialHistory": "Handwerker"
     },
     "doctorTasks": [
-      "Pruefen Sie Kraft und Sensibilitaet",
+      "Prüfen Sie Kraft und Sensibilität",
       "Fragen Sie nach Cauda-equina"
     ],
     "mustAsk": [
       "Fussspitze anheben?",
-      "Blasen-Darmstoerungen?",
+      "Blasen-Darmstörungen?",
       "Taubheit im Schritt?"
     ],
     "redFlags": [
       "L5-Syndrom mit Fusheberparese"
     ],
     "usefulPhrases": [
-      "Der Nerv wird gedrueckt.",
-      "MRT und OP-Indikation pruefen."
+      "Der Nerv wird gedrückt.",
+      "MRT und OP-Indikation prüfen."
     ],
     "doctorToDoctorSummary": "L5-Radikulopathie. Fusheberparese. MRT, Neurochirurgie.",
     "scoringRubric": {
-      "historyTaking": "Ausloeser, Kraft",
+      "historyTaking": "Auslöser, Kraft",
       "redFlags": "Cauda-equina",
-      "patientLanguage": "Bandscheibe erklaeren",
-      "structure": "Ruecken -> Nerv -> Parese",
+      "patientLanguage": "Bandscheibe erklären",
+      "structure": "Rücken -> Nerv -> Parese",
       "medicalLogic": "LWS-Bandscheibenvorfall",
       "germanAccuracy": "Bandscheibenvorfall, Radikulopathie"
     },
     "tags": [
       "bandscheibe",
       "parese",
-      "ruecken",
+      "rücken",
       "neurochirurgie"
     ]
   },
   {
     "id": "fsp_c_081",
-    "title": "Gastroenteritis in Schwangerschaft",
+    "title": "Gaströnteritis in Schwangerschaft",
     "setting": "clinic",
     "patientRole": {
       "age": "29",
       "gender": "weiblich",
       "chiefComplaint": "Durchfall und Erbrechen 26. SSW",
       "history": "Erbrechen und Durchfall. Sorge um Baby.",
-      "medications": "Eisen, Folsaeure",
+      "medications": "Eisen, Folsäure",
       "allergies": "Keine",
       "pastHistory": "Schwangerschaft",
       "familyHistory": "Keine",
@@ -4056,17 +4056,17 @@
       "Exsikkose-Risiko"
     ],
     "usefulPhrases": [
-      "Magen-Darm-Infekte in SS sind haeufig.",
+      "Magen-Darm-Infekte in SS sind häufig.",
       "Viel trinken ist wichtig."
     ],
-    "doctorToDoctorSummary": "Gastroenteritis in SS. Orale Rehydrierung.",
+    "doctorToDoctorSummary": "Gaströnteritis in SS. Orale Rehydrierung.",
     "scoringRubric": {
-      "historyTaking": "Symptome, Fluessigkeit",
-      "redFlags": "Fruehwehen",
+      "historyTaking": "Symptome, Flüssigkeit",
+      "redFlags": "Frühwehen",
       "patientLanguage": "Infekt in SS",
       "structure": "SSW -> Symptome -> Rehydrierung",
       "medicalLogic": "GI-Infekt Schwangerschaft",
-      "germanAccuracy": "Gastroenteritis, SS"
+      "germanAccuracy": "Gaströnteritis, SS"
     },
     "tags": [
       "schwangerschaft",
@@ -4081,7 +4081,7 @@
     "setting": "clinic",
     "patientRole": {
       "age": "35",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Juckende Haut zwischen den Zehen",
       "history": "Juckreiz, schuppende Haut zwischen 4./5. Zehe. Sicherheitsschuhe.",
       "medications": "Keine",
@@ -4092,7 +4092,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Juckreiz",
-      "Erklaeren Sie Tinea",
+      "Erklären Sie Tinea",
       "Verschreiben Sie Creme"
     ],
     "mustAsk": [
@@ -4104,13 +4104,13 @@
     ],
     "usefulPhrases": [
       "Sie haben Fusspilz.",
-      "Creme 4 Wochen, Fuesse trocken halten."
+      "Creme 4 Wochen, Füsse trocken halten."
     ],
     "doctorToDoctorSummary": "Tinea pedis. Topisches Antimyzetikum.",
     "scoringRubric": {
       "historyTaking": "Juckreiz, Risiko",
       "redFlags": "DM",
-      "patientLanguage": "Fusspilz erklaeren",
+      "patientLanguage": "Fusspilz erklären",
       "structure": "Haut -> Pilz -> Creme",
       "medicalLogic": "Tinea",
       "germanAccuracy": "Tinea pedis"
@@ -4129,8 +4129,8 @@
     "patientRole": {
       "age": "62",
       "gender": "weiblich",
-      "chiefComplaint": "Fieber und Roete um den Port",
-      "history": "Chemo bei Mammakarzinom. Fieber 38.9, Port roetlich.",
+      "chiefComplaint": "Fieber und Röte um den Port",
+      "history": "Chemo bei Mammakarzinom. Fieber 38.9, Port rötlich.",
       "medications": "Chemotherapie",
       "allergies": "Keine",
       "pastHistory": "Mammakarzinom",
@@ -4138,13 +4138,13 @@
       "socialHistory": "Rentnerin"
     },
     "doctorTasks": [
-      "Pruefen Sie Port",
-      "Erklaeren Sie Infektion",
+      "Prüfen Sie Port",
+      "Erklären Sie Infektion",
       "Planen Sie Blutkulturen"
     ],
     "mustAsk": [
-      "Schuettelfrost?",
-      "Port roetlich und warm?"
+      "Schüttelfrost?",
+      "Port rötlich und warm?"
     ],
     "redFlags": [
       "Portkatheter-Infektion bei Immunsuppression",
@@ -4183,11 +4183,11 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Sekretaerin"
+      "socialHistory": "Sekretärin"
     },
     "doctorTasks": [
-      "Pruefen Sie Druckschmerz",
-      "Erklaeren Sie Ueberlastung",
+      "Prüfen Sie Druckschmerz",
+      "Erklären Sie Überlastung",
       "Besprechen Sie Therapie"
     ],
     "mustAsk": [
@@ -4198,7 +4198,7 @@
       "Laterale Epikondylitis"
     ],
     "usefulPhrases": [
-      "Eine Sehnenreizung durch Ueberlastung.",
+      "Eine Sehnenreizung durch Überlastung.",
       "Physiotherapie hilft."
     ],
     "doctorToDoctorSummary": "Epikondylitis. Konservative Therapie.",
@@ -4212,14 +4212,14 @@
     },
     "tags": [
       "ellenbogen",
-      "ueberlastung",
+      "überlastung",
       "arm",
       "gelenk"
     ]
   },
   {
     "id": "fsp_c_085",
-    "title": "Tubargraviditaet (ektope SS)",
+    "title": "Tubargravidität (ektope SS)",
     "setting": "emergency",
     "patientRole": {
       "age": "30",
@@ -4234,12 +4234,12 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Schmerz und SS",
-      "Erklaeren Sie Eu-Verdacht",
+      "Erklären Sie Eu-Verdacht",
       "Sonographie"
     ],
     "mustAsk": [
-      "Fruehere Eu?",
-      "Entzuendung gehabt?",
+      "Frühere Eu?",
+      "Entzündung gehabt?",
       "Schulterschmerzen?"
     ],
     "redFlags": [
@@ -4247,19 +4247,19 @@
     ],
     "usefulPhrases": [
       "Die SS ist vielleicht im Eileiter.",
-      "Sofort Ultraschall noetig."
+      "Sofort Ultraschall nötig."
     ],
-    "doctorToDoctorSummary": "V.a. Tubargraviditaet. Sono, beta-hCG, OP.",
+    "doctorToDoctorSummary": "V.a. Tubargravidität. Sono, beta-hCG, OP.",
     "scoringRubric": {
       "historyTaking": "Schmerz, Blutung, SS",
       "redFlags": "Ruptur",
-      "patientLanguage": "EU erklaeren",
+      "patientLanguage": "EU erklären",
       "structure": "Schmerz -> SS -> EU -> Sono",
       "medicalLogic": "Ektope SS",
-      "germanAccuracy": "Tubargraviditaet"
+      "germanAccuracy": "Tubargravidität"
     },
     "tags": [
-      "gynaekologie",
+      "gynäkologie",
       "ektope",
       "schwangerschaft",
       "notfall"
@@ -4267,13 +4267,13 @@
   },
   {
     "id": "fsp_c_086",
-    "title": "Schilddruesenknoten (Struma nodosa)",
+    "title": "Schilddrüsenknoten (Struma nodosa)",
     "setting": "clinic",
     "patientRole": {
       "age": "48",
       "gender": "weiblich",
-      "chiefComplaint": "Klossgefuehl im Hals, Knoten",
-      "history": "Druckgefuehl im Hals, Knoten ertastet.",
+      "chiefComplaint": "Klossgefühl im Hals, Knoten",
+      "history": "Druckgefühl im Hals, Knoten ertastet.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -4286,7 +4286,7 @@
       "Besprechen Sie Sono und Punktion"
     ],
     "mustAsk": [
-      "Gewichtsveraenderung?",
+      "Gewichtsveränderung?",
       "Herzrasen?"
     ],
     "redFlags": [
@@ -4300,13 +4300,13 @@
     "scoringRubric": {
       "historyTaking": "Knoten, Funktion",
       "redFlags": "Schnelles Wachstum",
-      "patientLanguage": "Knoten erklaeren",
+      "patientLanguage": "Knoten erklären",
       "structure": "Knoten -> Sono -> Punktion",
       "medicalLogic": "Struma-Abklarung",
       "germanAccuracy": "Struma, Feinnadelpunktion"
     },
     "tags": [
-      "schilddruese",
+      "schilddrüse",
       "knoten",
       "struma",
       "HNO"
@@ -4314,13 +4314,13 @@
   },
   {
     "id": "fsp_c_087",
-    "title": "Guertelrose (Herpes Zoster)",
+    "title": "Gürtelrose (Herpes Zoster)",
     "setting": "clinic",
     "patientRole": {
       "age": "68",
-      "gender": "maennlich",
-      "chiefComplaint": "Blaeschenausschlag mit Schmerzen am Brustkorb",
-      "history": "Seit 3 Tagen brennende Schmerzen am Brustkorb rechts, seit gestern Blaeschen. Geschwaechtes Immunsystem (Chemo vor 2 Jahren).",
+      "gender": "männlich",
+      "chiefComplaint": "Bläschenausschlag mit Schmerzen am Brustkorb",
+      "history": "Seit 3 Tagen brennende Schmerzen am Brustkorb rechts, seit gestern Bläschen. Geschwächtes Immunsystem (Chemo vor 2 Jahren).",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Z.n. Lymphom-Chemo",
@@ -4329,7 +4329,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Haut und Schmerzen",
-      "Erklaeren Sie Zoster",
+      "Erklären Sie Zoster",
       "Verschreiben Sie Virostatika"
     ],
     "mustAsk": [
@@ -4340,14 +4340,14 @@
       "Herpes Zoster bei Immobilisation"
     ],
     "usefulPhrases": [
-      "Das ist Guertelrose.",
+      "Das ist Gürtelrose.",
       "Virostatika und Schmerztherapie."
     ],
     "doctorToDoctorSummary": "Zoster thorakal. Aciclovir, Analgesie.",
     "scoringRubric": {
       "historyTaking": "Haut, Schmerz, Immunstatus",
       "redFlags": "Zoster ophthalmicus, Generalisierung",
-      "patientLanguage": "Zoster erklaeren",
+      "patientLanguage": "Zoster erklären",
       "structure": "Haut -> Schmerz -> Virostatika",
       "medicalLogic": "Herpes Zoster",
       "germanAccuracy": "Zoster, Aciclovir"
@@ -4365,9 +4365,9 @@
     "setting": "clinic",
     "patientRole": {
       "age": "70",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Brennen beim Wasserlassen, Fieber",
-      "history": "Brennen, haeufiger Harndrang, Fieber 38.5. Bekannte Prostatavergroesserung.",
+      "history": "Brennen, häufiger Harndrang, Fieber 38.5. Bekannte Prostatavergrösserung.",
       "medications": "Tamsulosin",
       "allergies": "Keine",
       "pastHistory": "BPH",
@@ -4376,7 +4376,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach HWI-Symptomen",
-      "Erklaeren Sie komplizierten HWI",
+      "Erklären Sie komplizierten HWI",
       "Verordnen Sie Antibiose"
     ],
     "mustAsk": [
@@ -4386,10 +4386,10 @@
     ],
     "redFlags": [
       "HWI bei Mann = kompliziert",
-      "Prostatitis moeglich"
+      "Prostatitis möglich"
     ],
     "usefulPhrases": [
-      "Bei Maennern ist ein HWI kompliziert.",
+      "Bei Männern ist ein HWI kompliziert.",
       "Sie brauchen Antibiotikum."
     ],
     "doctorToDoctorSummary": "Komplizierter HWI bei BPH. Antibiose, ggf. Prostatitis-Abklarung.",
@@ -4410,13 +4410,13 @@
   },
   {
     "id": "fsp_c_089",
-    "title": "Schilddruesenknoten (Struma nodosa)",
+    "title": "Schilddrüsenknoten (Struma nodosa)",
     "setting": "clinic",
     "patientRole": {
       "age": "48",
       "gender": "weiblich",
-      "chiefComplaint": "Klossgefuehl im Hals",
-      "history": "Druckgefuehl im Hals, Knoten ertastet.",
+      "chiefComplaint": "Klossgefühl im Hals",
+      "history": "Druckgefühl im Hals, Knoten ertastet.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -4424,11 +4424,11 @@
       "socialHistory": "Pflegekraft"
     },
     "doctorTasks": [
-      "Tasten Sie die Schilddruese",
+      "Tasten Sie die Schilddrüse",
       "Besprechen Sie Sono und Punktion"
     ],
     "mustAsk": [
-      "Gewichtsveraenderung?",
+      "Gewichtsveränderung?",
       "Herzrasen?"
     ],
     "redFlags": [
@@ -4442,26 +4442,26 @@
     "scoringRubric": {
       "historyTaking": "Knoten, Funktion",
       "redFlags": "Schnelles Wachstum",
-      "patientLanguage": "Knoten erklaeren",
+      "patientLanguage": "Knoten erklären",
       "structure": "Knoten -> Sono -> Punktion",
       "medicalLogic": "Struma-Abklarung",
       "germanAccuracy": "Struma, FNP"
     },
     "tags": [
-      "schilddruese",
+      "schilddrüse",
       "knoten",
       "struma"
     ]
   },
   {
     "id": "fsp_c_090",
-    "title": "Guertelrose (Herpes Zoster)",
+    "title": "Gürtelrose (Herpes Zoster)",
     "setting": "clinic",
     "patientRole": {
       "age": "68",
-      "gender": "maennlich",
-      "chiefComplaint": "Blaeschen mit Schmerzen am Brustkorb",
-      "history": "Brennende Schmerzen, seit gestern Blaeschen. Z.n. Chemo vor 2 Jahren.",
+      "gender": "männlich",
+      "chiefComplaint": "Bläschen mit Schmerzen am Brustkorb",
+      "history": "Brennende Schmerzen, seit gestern Bläschen. Z.n. Chemo vor 2 Jahren.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Z.n. Lymphom-Chemo",
@@ -4470,7 +4470,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Haut und Schmerz",
-      "Erklaeren Sie Zoster",
+      "Erklären Sie Zoster",
       "Verschreiben Sie Virostatika"
     ],
     "mustAsk": [
@@ -4481,14 +4481,14 @@
       "Herpes Zoster bei Immobilisation"
     ],
     "usefulPhrases": [
-      "Das ist Guertelrose.",
+      "Das ist Gürtelrose.",
       "Aciclovir und Schmerzmittel."
     ],
     "doctorToDoctorSummary": "Zoster thorakal. Aciclovir, Analgesie.",
     "scoringRubric": {
       "historyTaking": "Haut, Schmerz, Immunstatus",
       "redFlags": "Zoster ophthalmicus",
-      "patientLanguage": "Zoster erklaeren",
+      "patientLanguage": "Zoster erklären",
       "structure": "Haut -> Schmerz -> Virostatika",
       "medicalLogic": "Herpes Zoster",
       "germanAccuracy": "Zoster, Aciclovir"
@@ -4506,7 +4506,7 @@
     "setting": "clinic",
     "patientRole": {
       "age": "70",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Brennen beim Wasserlassen, Fieber",
       "history": "Brennen, Harndrang, Fieber 38.5. BPH bekannt.",
       "medications": "Tamsulosin",
@@ -4517,7 +4517,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach HWI-Symptomen",
-      "Erklaeren Sie komplizierten HWI"
+      "Erklären Sie komplizierten HWI"
     ],
     "mustAsk": [
       "Fieber?",
@@ -4526,10 +4526,10 @@
     ],
     "redFlags": [
       "HWI bei Mann = kompliziert",
-      "Prostatitis moeglich"
+      "Prostatitis möglich"
     ],
     "usefulPhrases": [
-      "Bei Maennern ist ein HWI kompliziert.",
+      "Bei Männern ist ein HWI kompliziert.",
       "Sie brauchen Antibiotikum."
     ],
     "doctorToDoctorSummary": "Komplizierter HWI bei BPH. Antibiose.",
@@ -4549,7 +4549,7 @@
   },
   {
     "id": "fsp_c_092",
-    "title": "Tubargraviditaet (ektope SS)",
+    "title": "Tubargravidität (ektope SS)",
     "setting": "emergency",
     "patientRole": {
       "age": "30",
@@ -4564,12 +4564,12 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Schmerz und SS",
-      "Erklaeren Sie EU-Verdacht",
+      "Erklären Sie EU-Verdacht",
       "Planen Sie Sono"
     ],
     "mustAsk": [
-      "Fruehere EU?",
-      "Entzuendung?",
+      "Frühere EU?",
+      "Entzündung?",
       "Schulterschmerzen?"
     ],
     "redFlags": [
@@ -4579,17 +4579,17 @@
       "Die SS ist vielleicht im Eileiter.",
       "Sofort Ultraschall."
     ],
-    "doctorToDoctorSummary": "V.a. Tubargraviditaet. Sono, beta-hCG, OP.",
+    "doctorToDoctorSummary": "V.a. Tubargravidität. Sono, beta-hCG, OP.",
     "scoringRubric": {
       "historyTaking": "Schmerz, Blutung, SS",
       "redFlags": "Ruptur",
-      "patientLanguage": "EU erklaeren",
+      "patientLanguage": "EU erklären",
       "structure": "Schmerz -> SS -> EU -> Sono",
       "medicalLogic": "Ektope SS",
-      "germanAccuracy": "Tubargraviditaet"
+      "germanAccuracy": "Tubargravidität"
     },
     "tags": [
-      "gynaekologie",
+      "gynäkologie",
       "ektope",
       "schwangerschaft",
       "notfall"
@@ -4602,8 +4602,8 @@
     "patientRole": {
       "age": "68",
       "gender": "weiblich",
-      "chiefComplaint": "Muedigkeit, Beinschwellung, Juckreiz",
-      "history": "Seit Monaten zunehmende Muedigkeit, geschwollene Beine, Hautjucken. Bekannter Diabetes und Hypertonie.",
+      "chiefComplaint": "Müdigkeit, Beinschwellung, Juckreiz",
+      "history": "Seit Monaten zunehmende Müdigkeit, geschwollene Beine, Hautjucken. Bekannter Diabetes und Hypertonie.",
       "medications": "Metformin, Ramipril",
       "allergies": "Keine",
       "pastHistory": "DM Typ 2, Hypertonie",
@@ -4612,9 +4612,9 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Symptomen",
-      "Prufen Sie Oedeme und Haut",
-      "Erklaeren Sie die Niereninsuffizienz",
-      "Besprechen Sie Diaet und Therapie"
+      "Prufen Sie Ödeme und Haut",
+      "Erklären Sie die Niereninsuffizienz",
+      "Besprechen Sie Diät und Therapie"
     ],
     "mustAsk": [
       "Wie viel trinken Sie?",
@@ -4627,13 +4627,13 @@
     ],
     "usefulPhrases": [
       "Die Nieren arbeiten nicht mehr richtig.",
-      "Wir muessen die Nierenwerte kontrollieren und die Medikamente anpassen."
+      "Wir müssen die Nierenwerte kontrollieren und die Medikamente anpassen."
     ],
     "doctorToDoctorSummary": "Patientin mit CKD Stadium 4 bei diabetischer Nephropathie. Konservative Therapie, Dialysevorbereitung.",
     "scoringRubric": {
       "historyTaking": "Nierensymptome, DM, Hypertonie",
-      "redFlags": "Hyperkaliaemie, Uraemie",
-      "patientLanguage": "Niereninsuffizienz erklaeren",
+      "redFlags": "Hyperkaliämie, Urämie",
+      "patientLanguage": "Niereninsuffizienz erklären",
       "structure": "Symptome -> Ursache -> Nierenwerte -> Therapie",
       "medicalLogic": "CKD-Management",
       "germanAccuracy": "Niereninsuffizienz, CKD, Dialyse"
@@ -4651,18 +4651,18 @@
     "setting": "clinic",
     "patientRole": {
       "age": "42",
-      "gender": "maennlich",
+      "gender": "männlich",
       "chiefComplaint": "Rote schuppende Stellen an Ellenbogen und Knien",
-      "history": "Seit Jahren rote, silbrig schuppende Plaques an den Streckseiten der Ellenbogen und Knie. Juckreiz. Nagelveraenderungen.",
+      "history": "Seit Jahren rote, silbrig schuppende Plaqüs an den Streckseiten der Ellenbogen und Knie. Juckreiz. Nagelveränderungen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Psoriasis bei Vater",
-      "socialHistory": "Buerokaufmann"
+      "socialHistory": "Bürokaufmann"
     },
     "doctorTasks": [
       "Fragen Sie nach Hautbefund und Verlauf",
-      "Erklaeren Sie Psoriasis",
+      "Erklären Sie Psoriasis",
       "Besprechen Sie topische Therapie"
     ],
     "mustAsk": [
@@ -4670,7 +4670,7 @@
       "Gelenkschmerzen? (Psoriasis-Arthritis)"
     ],
     "redFlags": [
-      "Psoriasis vulgaris mit typischen Plaques",
+      "Psoriasis vulgaris mit typischen Plaqüs",
       "Nagelbeteiligung"
     ],
     "usefulPhrases": [
@@ -4681,10 +4681,10 @@
     "scoringRubric": {
       "historyTaking": "Haut, Gelenke, Familie",
       "redFlags": "Psoriasis-Arthritis",
-      "patientLanguage": "Psoriasis erklaeren",
+      "patientLanguage": "Psoriasis erklären",
       "structure": "Haut -> Gelenke -> Therapie",
       "medicalLogic": "Psoriasis-Management",
-      "germanAccuracy": "Psoriasis, Plaques"
+      "germanAccuracy": "Psoriasis, Plaqüs"
     },
     "tags": [
       "haut",
@@ -4701,7 +4701,7 @@
       "age": "28",
       "gender": "weiblich",
       "chiefComplaint": "Geschwollene Lymphknoten am Hals und Fieber",
-      "history": "Seit 3 Tagen Halsschmerzen, geschwollene Lymphknoten beidseits am Hals, Fieber bis 38.5, Muedigkeit. Mandeln gerotet und geschwollen.",
+      "history": "Seit 3 Tagen Halsschmerzen, geschwollene Lymphknoten beidseits am Hals, Fieber bis 38.5, Müdigkeit. Mandeln gerotet und geschwollen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -4724,7 +4724,7 @@
       "V. a. Streptokokken-Angina oder EBV"
     ],
     "usefulPhrases": [
-      "Die Lymphknoten sind geschwollen, weil der Koerper gegen die Infektion kaempft.",
+      "Die Lymphknoten sind geschwollen, weil der Körper gegen die Infektion kämpft.",
       "Wenn die Mandeln eitrig sind, brauchen Sie Antibiotikum."
     ],
     "doctorToDoctorSummary": "Patientin mit Tonsillitis und reaktiven Lymphknoten. Antibiose bei Streptokokken-Nachweis.",
@@ -4751,7 +4751,7 @@
       "age": "52",
       "gender": "weiblich",
       "chiefComplaint": "Magenschmerzen nach dem Essen, Sodbrennen",
-      "history": "Seit Wochen Oberbauchschmerzen 1-2 Stunden nach dem Essen. Sodbrennen. Hatte schon frueher ein Magengeschwuer. Kein Teerstuhl.",
+      "history": "Seit Wochen Oberbauchschmerzen 1-2 Stunden nach dem Essen. Sodbrennen. Hatte schon früher ein Magengeschwür. Kein Teerstuhl.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Z.n. Ulcus ventriculi",
@@ -4759,10 +4759,10 @@
       "socialHistory": "Hausfrau"
     },
     "doctorTasks": [
-      "Fragen Sie nach der zeitlichen Abhaengigkeit",
+      "Fragen Sie nach der zeitlichen Abhängigkeit",
       "Fragen Sie nach Alarmzeichen",
-      "Besprechen Sie die Oesophagogastroduodenoskopie",
-      "Erklaeren Sie Helicobacter-Eradikation"
+      "Besprechen Sie die Ösophagogastroduodenoskopie",
+      "Erklären Sie Helicobacter-Eradikation"
     ],
     "mustAsk": [
       "Haben Sie Blut erbrochen oder Teerstuhl?",
@@ -4773,10 +4773,10 @@
       "Helicobacter-Infektion wahrscheinlich"
     ],
     "usefulPhrases": [
-      "Ein Magengeschwuer wird haeufig durch das Bakterium Helicobacter verursacht.",
+      "Ein Magengeschwür wird häufig durch das Bakterium Helicobacter verursacht.",
       "Eine Magenspiegelung mit Gewebeprobe gibt Klarheit."
     ],
-    "doctorToDoctorSummary": "Patientin mit Ulcus ventriculi. Oesophagogastroduodenoskopie und H.-pylori-Testung.",
+    "doctorToDoctorSummary": "Patientin mit Ulcus ventriculi. Ösophagogastroduodenoskopie und H.-pylori-Testung.",
     "scoringRubric": {
       "historyTaking": "Schmerz, Ulkus, Alarmzeichen",
       "redFlags": "GI-Blutung",
@@ -4794,13 +4794,13 @@
   },
   {
     "id": "fsp_c_097",
-    "title": "Haemorrhoiden",
+    "title": "Hämorrhoiden",
     "setting": "clinic",
     "patientRole": {
       "age": "44",
       "gender": "mannlich",
       "chiefComplaint": "Blut auf dem Toilettenpapier, Juckreiz am After",
-      "history": "Seit Wochen hellrotes Blut auf dem Klopapier, Juckreiz und Druckgefuehl am After. Viel sitzende Taetigkeit und harter Stuhl.",
+      "history": "Seit Wochen hellrotes Blut auf dem Klopapier, Juckreiz und Druckgefühl am After. Viel sitzende Tätigkeit und harter Stuhl.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -4808,9 +4808,9 @@
       "socialHistory": "Softwareentwickler, viel Sitzen"
     },
     "doctorTasks": [
-      "Fragen Sie nach der Blutungsquelle",
+      "Fragen Sie nach der Blutungsqülle",
       "Fragen Sie nach Stuhlgewohnheiten",
-      "Erklaeren Sie Haemorrhoiden",
+      "Erklären Sie Hämorrhoiden",
       "Besprechen Sie konservative Therapie"
     ],
     "mustAsk": [
@@ -4818,26 +4818,26 @@
       "Haben Sie Schmerzen beim Stuhlgang?"
     ],
     "redFlags": [
-      "Helles Blut auf dem Papier spricht fuer Haemorrhoiden",
-      "Ausschluss einer anderen Blutungsquelle"
+      "Helles Blut auf dem Papier spricht für Hämorrhoiden",
+      "Ausschluss einer anderen Blutungsqülle"
     ],
     "usefulPhrases": [
-      "Das Blut kommt von vergroesserten Aderpolstern am After.",
+      "Das Blut kommt von vergrösserten Aderpolstern am After.",
       "Meist hilft weicher Stuhl und Salben."
     ],
-    "doctorToDoctorSummary": "Patient mit Haemorrhoiden Grad I-II. Konservative Therapie: Ballaststoffe, Sitzbaeder, Salben.",
+    "doctorToDoctorSummary": "Patient mit Hämorrhoiden Grad I-II. Konservative Therapie: Ballaststoffe, Sitzbäder, Salben.",
     "scoringRubric": {
       "historyTaking": "Blutung, Stuhl, Schmerz",
       "redFlags": "Tumorausschluss bei Risikopatienten",
-      "patientLanguage": "Haemorrhoiden erklaeren",
-      "structure": "Blutung -> Stuhl -> Haemorrhoiden -> Therapie",
-      "medicalLogic": "Haemorrhoidalleiden",
-      "germanAccuracy": "Haemorrhoiden, Proktologie"
+      "patientLanguage": "Hämorrhoiden erklären",
+      "structure": "Blutung -> Stuhl -> Hämorrhoiden -> Therapie",
+      "medicalLogic": "Hämorrhoidalleiden",
+      "germanAccuracy": "Hämorrhoiden, Proktologie"
     },
     "tags": [
       "proktologie",
       "blutung",
-      "haemorrhoiden",
+      "hämorrhoiden",
       "stuhlgang"
     ]
   },
@@ -4848,38 +4848,38 @@
     "patientRole": {
       "age": "7",
       "gender": "Kind",
-      "chiefComplaint": "Sturz auf die Schulter, Schluesselbein geschwollen",
-      "history": "Beim Spielen auf die rechte Schulter gestuerzt. Schmerzen und Schwellung ueber dem Schluesselbein. Kann den Arm nicht heben.",
+      "chiefComplaint": "Sturz auf die Schulter, Schlüsselbein geschwollen",
+      "history": "Beim Spielen auf die rechte Schulter gestürzt. Schmerzen und Schwellung über dem Schlüsselbein. Kann den Arm nicht heben.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Schueler"
+      "socialHistory": "Schüler"
     },
     "doctorTasks": [
       "Fragen Sie nach dem Sturzmechanismus",
-      "Prufen Sie Durchblutung und Sensibilitaet",
-      "Erklaeren Sie die haeufigste Fraktur im Kindesalter",
+      "Prufen Sie Durchblutung und Sensibilität",
+      "Erklären Sie die häufigste Fraktur im Kindesalter",
       "Besprechen Sie die konservative Therapie"
     ],
     "mustAsk": [
       "Konnen Sie die Finger bewegen?",
-      "Haben Sie Taubheitsgefuehl?"
+      "Haben Sie Taubheitsgefühl?"
     ],
     "redFlags": [
       "Klassische Kleeblattfraktur bei Kindern",
       "Sehr gute Heilungstendenz"
     ],
     "usefulPhrases": [
-      "Ein Bruch des Schluesselbeins heilt bei Kindern von allein.",
-      "Eine Schlinge fuer ein paar Wochen reicht aus."
+      "Ein Bruch des Schlüsselbeins heilt bei Kindern von allein.",
+      "Eine Schlinge für ein paar Wochen reicht aus."
     ],
     "doctorToDoctorSummary": "Kind mit Claviculafraktur rechts. Konservative Therapie mit Rucksackverband.",
     "scoringRubric": {
       "historyTaking": "Sturz, Schmerz, Funktion",
-      "redFlags": "Offene Fraktur, Gefaessverletzung",
-      "patientLanguage": "Claviculafraktur im Kindesalter erklaeren",
-      "structure": "Sturz -> Schluesselbein -> Schlinge -> Heilung",
+      "redFlags": "Offene Fraktur, Gefässverletzung",
+      "patientLanguage": "Claviculafraktur im Kindesalter erklären",
+      "structure": "Sturz -> Schlüsselbein -> Schlinge -> Heilung",
       "medicalLogic": "Claviculafraktur Kind",
       "germanAccuracy": "Clavicula, Fraktur"
     },
@@ -4897,8 +4897,8 @@
     "patientRole": {
       "age": "32",
       "gender": "weiblich",
-      "chiefComplaint": "Starke Blutung nach Geburt, Plazenta nicht vollstaendig",
-      "history": "Nach Spontangeburt vor 6 Stunden staerkere Blutung als ueblich. Bei Untersuchung Plazentaretention vermutet. Kreislauf stabil.",
+      "chiefComplaint": "Starke Blutung nach Geburt, Plazenta nicht vollständig",
+      "history": "Nach Spontangeburt vor 6 Stunden stärkere Blutung als üblich. Bei Untersuchung Plazentaretention vermutet. Kreislauf stabil.",
       "medications": "Oxytocin",
       "allergies": "Keine",
       "pastHistory": "Spontangeburt (36. SSW)",
@@ -4908,32 +4908,32 @@
     "doctorTasks": [
       "Fragen Sie nach der Geburt und Blutung",
       "Bewerten Sie den Blutverlust",
-      "Erklaeren Sie die Plazentaretention",
-      "Besprechen Sie die manuelle Nachtoastung"
+      "Erklären Sie die Plazentaretention",
+      "Besprechen Sie die manülle Nachtoastung"
     ],
     "mustAsk": [
       "Wie viele Vorlagen haben Sie gewechselt?",
-      "Wurde die Plazenta vollstaendig geboren?"
+      "Wurde die Plazenta vollständig geboren?"
     ],
     "redFlags": [
       "Postpartale Blutung bei Plazentaretention",
-      "Manuelle Austastung noetig"
+      "Manülle Austastung nötig"
     ],
     "usefulPhrases": [
-      "Die Plazenta ist nicht vollstaendig und verursacht die Blutung.",
-      "Wir muessen unter Narkose kontrollieren."
+      "Die Plazenta ist nicht vollständig und verursacht die Blutung.",
+      "Wir müssen unter Narkose kontrollieren."
     ],
-    "doctorToDoctorSummary": "Patientin mit postpartaler Blutung bei Plazentaretention. Manuelle Austastung in Narkose.",
+    "doctorToDoctorSummary": "Patientin mit postpartaler Blutung bei Plazentaretention. Manülle Austastung in Narkose.",
     "scoringRubric": {
       "historyTaking": "Geburt, Blutverlust, Plazenta",
       "redFlags": "H Shock, Verbrauchskoagulopathie",
-      "patientLanguage": "Plazentaretention erklaeren",
+      "patientLanguage": "Plazentaretention erklären",
       "structure": "Geburt -> Blutung -> Plazenta -> Austastung",
       "medicalLogic": "Postpartale Blutung",
       "germanAccuracy": "Plazentaretention, postpartal"
     },
     "tags": [
-      "gynaekologie",
+      "gynäkologie",
       "geburt",
       "blutung",
       "postpartal"
@@ -4941,48 +4941,48 @@
   },
   {
     "id": "fsp_c_100",
-    "title": "Zervixkarzinom-Frueherkennung",
+    "title": "Zervixkarzinom-Früherkennung",
     "setting": "clinic",
     "patientRole": {
       "age": "39",
       "gender": "weiblich",
-      "chiefComplaint": "Pap-Abstrich auffaellig (Pap III), will wissen was das bedeutet",
-      "history": "Routinemassiger Pap-Abstrich ergab Pap III. Keine Beschwerden. Keine Zwischenblutungen. Sexuell aktiv, 3 Kinder.",
+      "chiefComplaint": "Pap-Abstrich auffällig (Pap III), will wissen was das bedeutet",
+      "history": "Routinemassiger Pap-Abstrich ergab Pap III. Keine Beschwerden. Keine Zwischenblutungen. Sexüll aktiv, 3 Kinder.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
-      "familyHistory": "Gebaermutterhalskrebs bei Schwester",
+      "familyHistory": "Gebärmutterhalskrebs bei Schwester",
       "socialHistory": "Krankenschwester"
     },
     "doctorTasks": [
-      "Erklaeren Sie die Pap-Klassifikation",
+      "Erklären Sie die Pap-Klassifikation",
       "Fragen Sie nach Risikofaktoren",
       "Besprechen Sie die weiteren Schritte",
       "Ermutigen Sie zur Kolposkopie"
     ],
     "mustAsk": [
-      "Hatten Sie schon auffaellige Abstriche?",
+      "Hatten Sie schon auffällige Abstriche?",
       "Wurden Sie gegen HPV geimpft?"
     ],
     "redFlags": [
-      "Pap III = auffaelliger Abstrich, keine Krebsdiagnose",
-      "HPV-assoziierte Veraenderung moeglich"
+      "Pap III = auffälliger Abstrich, keine Krebsdiagnose",
+      "HPV-assoziierte Veränderung möglich"
     ],
     "usefulPhrases": [
-      "Ein Pap III bedeutet, dass einzelne Zellen auffaellig sind.",
-      "Zur Sicherheit machen wir eine Spiegelung des Gebaermutterhalses."
+      "Ein Pap III bedeutet, dass einzelne Zellen auffällig sind.",
+      "Zur Sicherheit machen wir eine Spiegelung des Gebärmutterhalses."
     ],
     "doctorToDoctorSummary": "Patientin mit Pap III. Kolposkopie und ggf. Biopsie empfohlen.",
     "scoringRubric": {
       "historyTaking": "Abstrich, Risikofaktoren, Impfung",
-      "redFlags": "Sichtbare Laesion",
-      "patientLanguage": "Pap-Abstrich und Krebsfrueherkennung erklren",
+      "redFlags": "Sichtbare Läsion",
+      "patientLanguage": "Pap-Abstrich und Krebsfrüherkennung erklren",
       "structure": "Befund -> Pap -> Kolposkopie -> Therapie",
-      "medicalLogic": "Zervixkarzinom-Frueherkennung",
+      "medicalLogic": "Zervixkarzinom-Früherkennung",
       "germanAccuracy": "Pap, Kolposkopie, Zervix"
     },
     "tags": [
-      "gynaekologie",
+      "gynäkologie",
       "pap",
       "vorsorge",
       "HPV"
