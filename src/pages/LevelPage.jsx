@@ -18,6 +18,11 @@ export default function LevelPage() {
   const { levelId } = useParams();
   const [state, setState] = useState(getState());
   const levelData = levelsData.levels.find(l => l.id === levelId);
+
+  if (!levelData) {
+    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
+  }
+
   const prog = state.levels[levelId] || {};
   const examUnlocked = isExamUnlocked(levelId, levelData);
 
@@ -41,10 +46,6 @@ export default function LevelPage() {
     { label: 'Reading', current: prog.reading?.length || 0, target: levelData?.minReadingTests || 5 },
   ];
   const missingRequirements = requirements.filter(r => r.current < r.target);
-
-  if (!levelData) {
-    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
-  }
 
   return (
     <div>

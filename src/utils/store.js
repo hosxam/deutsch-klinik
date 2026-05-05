@@ -447,7 +447,7 @@ export function getMistakeNotebookItems(levelFilter, skillFilter) {
 
 export function clearMistakeByIndex(level, index) {
   if (state.incorrectAnswers[level]) {
-    state.incorrectAnswers[level].splice(index, 1);
+    state.incorrectAnswers[level] = state.incorrectAnswers[level].filter((_, i) => i !== index);
     saveState(state);
   }
 }
@@ -459,6 +459,7 @@ export function markMistakeMastered(level, index) {
 // ===== EXAM UNLOCK CHECK =====
 
 export function isExamUnlocked(level, levelData) {
+  if (!levelData) return false;
   const prog = state.levels[level];
   if (!prog) return false;
 
@@ -485,15 +486,24 @@ export function isLevelUnlocked(levelId, levelsData) {
 
 // ===== STREAK =====
 
+function getLocalDateKey(offsetDays = 0) {
+  const d = new Date();
+  if (offsetDays) d.setDate(d.getDate() + offsetDays);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 export function updateStreak() {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getLocalDateKey();
   const last = state.streak.lastDate;
   
   if (last === today) {
     return;
   }
   
-  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+  const yesterday = getLocalDateKey(-1);
   if (last === yesterday) {
     state.streak.count += 1;
   } else {

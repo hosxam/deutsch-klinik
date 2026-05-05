@@ -47,17 +47,19 @@ export default function WritingPage() {
     setTimerActive(false);
     setSubmitted(true);
     const state = getState();
-    const writings = state.writings || [];
-    writings.push({
-      id: Date.now(),
-      level: levelId,
-      promptId: prompt.id,
-      title: prompt.title,
-      prompt: prompt.prompt,
-      text,
-      time: timer,
-      date: new Date().toISOString(),
-    });
+    const writings = [
+      ...(state.writings || []),
+      {
+        id: Date.now(),
+        level: levelId,
+        promptId: prompt.id,
+        title: prompt.title,
+        prompt: prompt.prompt,
+        text,
+        time: timer,
+        date: new Date().toISOString(),
+      },
+    ];
     updateState({ writings });
   };
 

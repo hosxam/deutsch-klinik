@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo } from 'react';
-import { getState, updateState, updateLevelProgress } from '../utils/store';
+import { getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress } from '../utils/store';
 import fullVocabData from '../data/germanVocabulary.json';
 import { RefreshCw, ThumbsUp, ThumbsDown, Search, X } from 'lucide-react';
 
@@ -248,12 +248,15 @@ export default function FlashcardPage() {
       // Track each reviewed word as vocab progress
       const levelIds = [...new Set(allReviews.map(r => r.level))];
       levelIds.forEach(lvl => {
-        const existing = getState().levels?.[lvl]?.vocab || [];
-        updateLevelProgress(lvl, 'vocab', {
-          date: new Date().toISOString(),
-          source: 'flashcard',
-          wordIds: allReviews.filter(r => r.level === lvl).map(r => r.wordId),
-        });
+        const existing = getLevelProgress(lvl, 'vocab');
+        setLevelProgress(lvl, 'vocab', [
+          ...existing,
+          {
+            date: new Date().toISOString(),
+            source: 'flashcard',
+            wordIds: allReviews.filter(r => r.level === lvl).map(r => r.wordId),
+          },
+        ]);
       });
       updateState({ flashcards: state.flashcards });
     }

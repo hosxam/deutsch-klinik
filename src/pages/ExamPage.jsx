@@ -24,7 +24,7 @@ export default function ExamPage() {
   const [showTranscript, setShowTranscript] = useState({});
 
   const writingRef = useRef(null);
-  const unlocked = isExamUnlocked(levelId, levelData);
+  const unlocked = levelData ? isExamUnlocked(levelId, levelData) : false;
 
   function normalizeAnswer(value) {
     return String(value || '')
@@ -70,6 +70,10 @@ export default function ExamPage() {
     }
     return () => clearInterval(interval);
   }, [timerActive]);
+
+  if (!levelData) {
+    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
+  }
 
   if (!rawExam || !unlocked) {
     return (
