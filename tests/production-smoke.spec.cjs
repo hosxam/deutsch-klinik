@@ -863,6 +863,144 @@ test.describe('H. Daily Mission Flow', () => {
     expect(errors.filter(e => e.includes('is not defined'))).toEqual([]);
   });
 
+  test('Listening true-false renders Richtig/Falsch buttons', async ({ page }) => {
+    // Regression: true-false questions in listening must show answer buttons
+    test.setTimeout(120000);
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const errors = [];
+    page.on('pageerror', err => errors.push(err.message));
+
+    const body = page.locator('body');
+
+    // Navigate through missions until we hit Listening
+    for (let i = 0; i < 20; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (!txt) break;
+      expect(txt).not.toContain('Something broke');
+
+      // If this is Listening, check for true-false buttons
+      if (txt.includes('Listening') && txt.includes('True/False')) {
+        // Wait a moment for render
+        await page.waitForTimeout(1000);
+        // Check for Richtig or Falsch buttons
+        const richtigBtn = page.locator('button').filter({ hasText: 'Richtig' });
+        const falschBtn = page.locator('button').filter({ hasText: 'Falsch' });
+        const hasRichtig = await richtigBtn.isVisible({ timeout: 2000 }).catch(() => false);
+        const hasFalsch = await falschBtn.isVisible({ timeout: 500 }).catch(() => false);
+        expect(hasRichtig || hasFalsch).toBe(true);
+
+        // Click one and check feedback
+        if (hasRichtig) {
+          await richtigBtn.click();
+          await page.waitForTimeout(500);
+          const feedbackTxt = await body.textContent();
+          expect(feedbackTxt).toMatch(/Correct!|Incorrect/);
+        }
+        break;
+      }
+
+      // Try Next Mission
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+      if (await nextBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      // Try Skip for now
+      const skipBtn = page.locator('button').filter({ hasText: /Skip for now/ }).first();
+      if (await skipBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      // Try Mark Complete
+      const markBtn = page.locator('button').filter({ hasText: /Mark Complete/ }).first();
+      if (await markBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await markBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      break;
+    }
+
+    expect(errors.filter(e => e.includes('is not defined'))).toEqual([]);
+  });
+
+  test('Listening difficulty label shows Easy for A1 beginner', async ({ page }) => {
+    // Regression: first A1 listening mission should show Easy difficulty
+    test.setTimeout(120000);
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const errors = [];
+    page.on('pageerror', err => errors.push(err.message));
+
+    const body = page.locator('body');
+
+    // Navigate through missions until we hit Listening
+    for (let i = 0; i < 20; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (!txt) break;
+      expect(txt).not.toContain('Something broke');
+
+      if (txt.includes('Listening') && !txt.includes('Complete')) {
+        await page.waitForTimeout(1000);
+        // Check for Easy badge
+        const hasEasy = await page.getByText('Easy').isVisible({ timeout: 2000 }).catch(() => false);
+        expect(hasEasy).toBe(true);
+        break;
+      }
+
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+      if (await nextBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      const skipBtn = page.locator('button').filter({ hasText: /Skip for now/ }).first();
+      if (await skipBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      const markBtn = page.locator('button').filter({ hasText: /Mark Complete/ }).first();
+      if (await markBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await markBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      break;
+    }
+
+    expect(errors.filter(e => e.includes('is not defined'))).toEqual([]);
+  });
+
   test('Mission transition does not crash - navigate all missions', async ({ page }) => {
     // Regression: verify getNextListening/getNextReading/getNextWriting/getNextSpeaking exist
     // and mission transitions don't throw 'getNextListening is not defined'

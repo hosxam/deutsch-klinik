@@ -769,16 +769,40 @@ export default function DailyMissionPage() {
   const meta = getMeta();
   const cm = getCm();
 
+  // Difficulty label helper
+  const getDifficulty = (item) => {
+    if (!item) return { label: 'Easy', color: '#22c55e' };
+    const scriptLen = item.script?.length || item.text?.length || 0;
+    const qCount = item.questions?.length || 0;
+    const score = scriptLen + qCount * 50;
+    if (score <= 250) return { label: 'Easy', color: '#22c55e' };
+    if (score <= 400) return { label: 'Medium', color: '#f97316' };
+    return { label: 'Hard', color: '#ef4444' };
+  };
+
   // Current mission items from data
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    return (listeningData[level] || []).find(item => !completed.has(item.id)) || (listeningData[level] || [])[0] || null;
+    const items = (listeningData[level] || []).filter(item => !completed.has(item.id));
+    // Sort by difficulty (script length + question count) so easier items come first
+    items.sort((a, b) => {
+      const scoreA = (a.script?.length || 0) + (a.questions?.length || 0) * 50;
+      const scoreB = (b.script?.length || 0) + (b.questions?.length || 0) * 50;
+      return scoreA - scoreB;
+    });
+    return items[0] || (listeningData[level] || [])[0] || null;
   };
   const getNextReading = (level) => {
     const s = getState();
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    return (readingData[level] || []).find(item => !completed.has(item.id)) || (readingData[level] || [])[0] || null;
+    const items = (readingData[level] || []).filter(item => !completed.has(item.id));
+    items.sort((a, b) => {
+      const scoreA = (a.text?.length || 0) + (a.questions?.length || 0) * 50;
+      const scoreB = (b.text?.length || 0) + (b.questions?.length || 0) * 50;
+      return scoreA - scoreB;
+    });
+    return items[0] || (readingData[level] || [])[0] || null;
   };
   const getNextWriting = (level) => {
     const s = getState();
@@ -1212,9 +1236,14 @@ export default function DailyMissionPage() {
             </div>
           ) : (
             <div>
-              <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
-                {listeningItem.title}
-              </h3>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+                <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>
+                  {listeningItem.title}
+                </h3>
+                <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: '9999px', fontWeight: 600, background: (() => { const d = getDifficulty(listeningItem); return d.color + '22'; })(), color: getDifficulty(listeningItem).color }}>
+                  {getDifficulty(listeningItem).label}
+                </span>
+              </div>
 
               {/* TTS Read Aloud */}
               <div style={{ marginBottom: '1rem' }}>
@@ -1278,20 +1307,40 @@ export default function DailyMissionPage() {
                         {correct ? (
                           <span style={{ color: '#22c55e', fontWeight: 600 }}><CheckCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Correct!</span>
                         ) : (
-                          <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer}</span>
+                          <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer === 'true' ? 'True' : q.answer === 'false' ? 'False' : q.answer}</span>
                         )}
                       </div>
                     ) : (
                       <div>
-                        {(q.options || []).map((opt, i) => (
-                          <button
-                            key={i}
-                            style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
-                            onClick={() => hLrnA(lrq, opt)}
-                          >
-                            {opt}
-                          </button>
-                        ))}
+                        {q.type === 'true-false' ? (
+                          ['true', 'false'].map((opt) => {
+                            const label = opt === 'true' ? 'Richtig' : 'Falsch';
+                            return (
+                              <button
+                                key={opt}
+                                style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                                onClick={() => hLrnA(lrq, opt)}
+                              >
+                                {label}
+                              </button>
+                            );
+                          })
+                        ) : (
+                          (q.options || []).map((opt, i) => (
+                            <button
+                              key={i}
+                              style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                              onClick={() => hLrnA(lrq, opt)}
+                            >
+                              {opt}
+                            </button>
+                          ))
+                        )}
+                        {(q.options || []).length === 0 && q.type !== 'true-false' && (
+                          <div style={{ padding: '0.5rem 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                            Unsupported question type.
+                          </div>
+                        )}
                       </div>
                     )}
                     <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
@@ -1389,7 +1438,7 @@ export default function DailyMissionPage() {
                           {correct ? (
                             <span style={{ color: '#22c55e', fontWeight: 600 }}><CheckCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Correct!</span>
                           ) : (
-                            <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer}</span>
+                            <span style={{ color: '#ef4444', fontWeight: 600 }}><XCircle size={14} style={{ display: 'inline', marginRight: '0.3rem', verticalAlign: 'middle' }} /> Incorrect. Answer: {q.answer === 'true' ? 'True' : q.answer === 'false' ? 'False' : q.answer}</span>
                           )}
                         </div>
                         {q.explanation && (
@@ -1400,15 +1449,35 @@ export default function DailyMissionPage() {
                       </div>
                     ) : (
                       <div>
-                        {(q.options || []).map((opt, i) => (
-                          <button
-                            key={i}
-                            style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
-                            onClick={() => hRdA(rrq, opt)}
-                          >
-                            {opt}
-                          </button>
-                        ))}
+                        {q.type === 'true-false' ? (
+                          ['true', 'false'].map((opt) => {
+                            const label = opt === 'true' ? 'Richtig' : 'Falsch';
+                            return (
+                              <button
+                                key={opt}
+                                style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                                onClick={() => hRdA(rrq, opt)}
+                              >
+                                {label}
+                              </button>
+                            );
+                          })
+                        ) : (
+                          (q.options || []).map((opt, i) => (
+                            <button
+                              key={i}
+                              style={{ padding: '0.5rem 1rem', borderRadius: '8px', border: '2px solid var(--border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.85rem', textAlign: 'left', display: 'block', width: '100%', marginBottom: '0.4rem', transition: 'all 0.15s' }}
+                              onClick={() => hRdA(rrq, opt)}
+                            >
+                              {opt}
+                            </button>
+                          ))
+                        )}
+                        {(q.options || []).length === 0 && q.type !== 'true-false' && (
+                          <div style={{ padding: '0.5rem 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                            Unsupported question type.
+                          </div>
+                        )}
                       </div>
                     )}
                     <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
