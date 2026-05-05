@@ -112,7 +112,21 @@ function calculateDailyTargets(levelId, state, goal) {
   return { grammar, vocab, lesson: 1, reading: 1, listening: 1, writing: 1, speaking: 1 };
 }
 
-function buildMissions(levelId, state, targets) {
+function buildMissions(levelId, state, targets, forceType) {
+  if (forceType === 'listening' || forceType === 'reading' || forceType === 'writing' || forceType === 'speaking') {
+    return [{ type: forceType, target: 1, label: 'Complete 1 ' + forceType + ' test' }];
+  }
+  if (forceType === 'grammar') {
+    return [{ type: 'grammar', target: 10, label: 'Complete 10 questions' }];
+  }
+  if (forceType === 'vocabulary') {
+    return [{ type: 'vocabulary', target: 5, label: 'Learn 5 words' }];
+  }
+  if (forceType === 'lesson') {
+    const lls = Object.values(dashboardSummary.lessonSummaries || {}).flat().filter((l) => l.level === levelId);
+    const nl = lls.find((l) => !getCompletedLessons(levelId).includes(l.id)) || lls[0];
+    return nl ? [{ type: 'lesson', target: 1, label: 'Study 1 lesson', nextLesson: nl }] : [];
+  }
   const missions = [];
   const lls = Object.values(dashboardSummary.lessonSummaries || {}).flat().filter((l) => l.level === levelId);
   const cids = getCompletedLessons(levelId);
@@ -231,9 +245,10 @@ export default function DailyMissionPage() {
     const goal = getStudyGoal();
     const cs = getState();
     const t = calculateDailyTargets(lvl, cs, goal);
-    const m = buildMissions(lvl, cs, t);
+    const forceType = new URLSearchParams(window.location.hash.split('?')[1] || '').get('forceMission') || null;
+    const m = buildMissions(lvl, cs, t, forceType);
     const ld = loadSession(lvl);
-    if (ld) {
+    if (ld && !forceType) {
       setSesh(ld);
       setMi(ld.currentMission);
       if (ld.completedMissions?.length >= m.length) setCompShow(true);
@@ -441,9 +456,10 @@ export default function DailyMissionPage() {
     advance('listening', {});
   };
   const hLrnA = (qIdx, answer) => {
-    const items = listeningData[lvl] || [];
-    const ni = state.levels?.[lvl]?.listening?.length || 0;
-    const item = items[ni];
+    // IMPORTANT: Use the render-computed listeningItem, NOT deriving from
+    // state.levels[lvl].listening.length which will be stale or changed
+    // after the first answer updates the state.
+    const item = listeningItem;
     if (!item) return;
     const q = item.questions?.[qIdx];
     if (!q) return;
@@ -455,13 +471,12 @@ export default function DailyMissionPage() {
     if (correct) setLrc(c => c + 1);
     if (qIdx + 1 >= (item.questions?.length || 0)) {
       const totalQ = item.questions.length;
-      // Use functional update to compute final count accurately
-      const existing = (state.levels?.[lvl]?.listening || []).filter((x) => x !== item.id);
-      updateLevelProgress(lvl, 'listening', [item.id, ...existing]);
+      // Use setLevelProgress to replace the entire array (not push which nests arrays)
+      const existing = (getLevelProgress(lvl, 'listening') || []).filter((x) => x !== item.id);
+      setLevelProgress(lvl, 'listening', [item.id, ...existing]);
       const cs = getState();
       const ld = cs.levels || {};
       const ll = ld[lvl] || {};
-      // Use a ref-based count from the recorded answers (avoid stale closure)
       setLrc(prev => {
         const trueCount = prev + (correct ? 1 : 0);
         updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
@@ -534,9 +549,10 @@ export default function DailyMissionPage() {
     advance('reading', {});
   };
   const hRdA = (qIdx, answer) => {
-    const items = readingData[lvl] || [];
-    const ni = state.levels?.[lvl]?.reading?.length || 0;
-    const item = items[ni];
+    // IMPORTANT: Use the render-computed readingItem, NOT deriving from
+    // state.levels[lvl].reading.length which will be stale or changed
+    // after the first answer updates the state.
+    const item = readingItem;
     if (!item) return;
     const q = item.questions?.[qIdx];
     if (!q) return;
@@ -548,8 +564,8 @@ export default function DailyMissionPage() {
     if (correct) setRrc(c => c + 1);
     if (qIdx + 1 >= (item.questions?.length || 0)) {
       const totalQ = item.questions.length;
-      const existing = (state.levels?.[lvl]?.reading || []).filter((x) => x !== item.id);
-      updateLevelProgress(lvl, 'reading', [item.id, ...existing]);
+      const existing = (getLevelProgress(lvl, 'reading') || []).filter((x) => x !== item.id);
+      setLevelProgress(lvl, 'reading', [item.id, ...existing]);
       const cs = getState();
       const ld = cs.levels || {};
       const ll = ld[lvl] || {};
@@ -1378,7 +1394,7 @@ export default function DailyMissionPage() {
               })()}
               {(!listeningItem.questions || listeningItem.questions.length === 0) && (
                 <div style={{ display: 'flex', gap: '0.5rem' }}>
-                  <button style={sBp} onClick={() => { updateLevelProgress(lvl, 'listening', [listeningItem.id, ...(state.levels?.[lvl]?.listening || [])]); completeListening(lvl); refresh(); setLrnDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
+                  <button style={sBp} onClick={() => { const existing = (getLevelProgress(lvl, 'listening') || []).filter((x) => x !== listeningItem.id); setLevelProgress(lvl, 'listening', [listeningItem.id, ...existing]); completeListening(lvl); refresh(); setLrnDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
                   <button style={sBtn} onClick={hLrnSk}><SkipForward size={14} /> Skip for now</button>
                 </div>
               )}
@@ -1514,7 +1530,7 @@ export default function DailyMissionPage() {
               })()}
               {(!readingItem.questions || readingItem.questions.length === 0) && (
                 <div style={{ display: 'flex', gap: '0.5rem' }}>
-                  <button style={sBp} onClick={() => { updateLevelProgress(lvl, 'reading', [readingItem.id, ...(state.levels?.[lvl]?.reading || [])]); completeReading(lvl); refresh(); setRdDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
+                  <button style={sBp} onClick={() => { const existing = (getLevelProgress(lvl, 'reading') || []).filter((x) => x !== readingItem.id); setLevelProgress(lvl, 'reading', [readingItem.id, ...existing]); completeReading(lvl); refresh(); setRdDone(true); }}><CheckCircle size={16} /> Mark Complete</button>
                   <button style={sBtn} onClick={hRdSk}><SkipForward size={14} /> Skip for now</button>
                 </div>
               )}

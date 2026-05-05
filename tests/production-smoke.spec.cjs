@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test');
 
 const LIVE_URL = 'https://hosxam.github.io/deutsch-klinik';
+const PREVIEW_URL = 'http://localhost:4175/deutsch-klinik';
 
 /**
  * Collect console errors during a test.
@@ -1062,16 +1063,16 @@ test.describe('H. Daily Mission Flow', () => {
   });
 
   test('Listening completion shows Next Mission button after answering all questions', async ({ page }) => {
-    // Regression: the listening completion screen must appear with
-    // "Listening Complete!" and "Next Mission" button after all questions answered.
-    // Uses page.evaluate to directly set listenging state variables,
-    // bypassing fragile interactive navigation through variable daily missions.
+    // Regression: after finishing all listening questions, the completion screen
+    // must appear with "Listening Complete!" and "Next Mission" button.
+    // Uses ?forceMission=listening query param for deterministic test.
     test.setTimeout(30000);
 
-    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    // Use preview server for the new forceMission feature not yet deployed
+    await page.goto(PREVIEW_URL + '/#/level/a1/daily?forceMission=listening', { waitUntil: 'networkidle' });
     await page.waitForTimeout(1000);
 
-    // Clear state for fresh daily session
+    // Clear state for fresh session
     await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
     await page.reload();
     await page.waitForTimeout(2000);
@@ -1079,84 +1080,162 @@ test.describe('H. Daily Mission Flow', () => {
     const pageErrors = [];
     page.on('pageerror', err => pageErrors.push(err.message));
 
-    // Start daily plan
-    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s\s?Plan/ }).first();
-    await expect(startBtn).toBeVisible({ timeout: 5000 });
-    await startBtn.click();
-    await page.waitForTimeout(3000);
-
-    // Navigate through missions until we find listening (Richtig/Falsch buttons)
-    let foundListening = false;
-    for (let i = 0; i < 20; i++) {
+    // Should land directly on listening mission
+    {
       const txt = await page.locator('body').textContent().catch(() => '');
-      if (!txt || txt.includes('Something broke')) break;
-      if (txt.includes('Listening Complete')) { foundListening = true; break; }
-
-      const richtigBtn = page.locator('button').filter({ hasText: 'Richtig' }).first();
-      if (await richtigBtn.isVisible({ timeout: 200 }).catch(() => false)) {
-        foundListening = true;
-        break;
-      }
-
-      // Try Next Mission button first
-      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
-      if (await nextBtn.isVisible({ timeout: 300 }).catch(() => false)) {
-        await nextBtn.click();
-        await page.waitForTimeout(600);
-        continue;
-      }
-
-      // Try Skip / Mark Complete / Study Lesson
-      const actionBtn = page.locator('button').filter({ hasText: /Skip|Mark Complete|Skip for now|Study Lesson/ }).first();
-      if (await actionBtn.isVisible({ timeout: 300 }).catch(() => false)) {
-        await actionBtn.click();
-        await page.waitForTimeout(600);
-        continue;
-      }
-
-      break;
+      expect(txt).toContain('Listening Exercise');
     }
 
-    if (foundListening) {
-      // Answer all listening questions interactively
-      for (let q = 0; q < 12; q++) {
-        const rBtn = page.locator('button').filter({ hasText: 'Richtig' }).first();
-        if (await rBtn.isVisible({ timeout: 200 }).catch(() => false)) {
-          await rBtn.click();
-          await page.waitForTimeout(400);
+    // Get listening question count
+    const qCount = await page.evaluate(() => {
+      try {
+        const s = JSON.parse(localStorage.getItem('deutsch_klinik_state') || '{}');
+        const lvl = 'A1';
+        // Extract first listening item questions count
+        const n = s.levels?.[lvl]?.listening?.length || 0;
+        return n >= 0 ? 4 : 2; // default fallback
+      } catch(e) { return 4; }
+    });
+
+    // Answer all listening questions with explicit click logic
+    for (let q = 0; q < 15; q++) {
+      const bodyTxt = await page.locator('body').textContent().catch(() => '');
+      // Check for completion text (not just 'Complete' which appears in mission target text)
+      if (bodyTxt.includes('Listening Complete')) break;
+
+      // Click any visible answer button using direct locator
+      const rBtn = page.locator('button').filter({ hasText: 'Richtig' }).first();
+      if (await rBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+        await rBtn.click();
+        await page.waitForTimeout(200);
+      } else {
+        const fBtn = page.locator('button').filter({ hasText: 'Falsch' }).first();
+        if (await fBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+          await fBtn.click();
+          await page.waitForTimeout(200);
         } else {
-          const fBtn = page.locator('button').filter({ hasText: 'Falsch' }).first();
-          if (await fBtn.isVisible({ timeout: 200 }).catch(() => false)) {
-            await fBtn.click();
-            await page.waitForTimeout(400);
+          // Try any visible button longer than 2 chars (MCQ option)
+          const allBtns = page.locator('button');
+          const count = await allBtns.count();
+          for (let i = 0; i < count; i++) {
+            const btn = allBtns.nth(i);
+            const text = await btn.textContent();
+            const isVisible = await btn.isVisible().catch(() => false);
+            if (isVisible && text && text.length > 2 && !/Next|Skip|Mark|Dashboard|Start|Stop|Menu|Aloud|Transcri/.test(text)) {
+              await btn.click();
+              await page.waitForTimeout(200);
+              break;
+            }
           }
         }
-        const bodyNow = await page.locator('body').textContent().catch(() => '');
-        if (bodyNow.includes('Listening Complete')) break;
-        const nqBtn = page.locator('button').filter({ hasText: 'Next Question' }).first();
-        if (await nqBtn.isVisible({ timeout: 200 }).catch(() => false)) {
-          await nqBtn.click();
-          await page.waitForTimeout(400);
-        }
       }
 
-      const finalBody = await page.locator('body').textContent().catch(() => '');
-      expect(finalBody).toContain('Listening Complete');
-      expect(finalBody).toContain('Next Mission');
+      const txt2 = await page.locator('body').textContent().catch(() => '');
+      if (txt2.includes('Listening Complete')) break;
 
-      const finalNext = page.locator('button').filter({ hasText: /Next Mission/ }).first();
-      await expect(finalNext).toBeVisible({ timeout: 3000 });
-      await finalNext.click();
-      await page.waitForTimeout(1500);
-
-      const afterNext = await page.locator('body').textContent().catch(() => '');
-      expect(afterNext).not.toContain('Listening Complete');
-    } else {
-      // Listening not in today's missions - just verify no crashes
-      console.log('SKIP: Listening not in today\'s daily plan');
+      const nqBtn = page.locator('button').filter({ hasText: 'Next Question' }).first();
+      if (await nqBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+        await nqBtn.click();
+        await page.waitForTimeout(200);
+      }
     }
+
+    // Assert completion screen with Next Mission button
+    const finalBody = await page.locator('body').textContent().catch(() => '');
+    expect(finalBody).toContain('Listening Complete');
+    expect(finalBody).toContain('Next Mission');
+
+    // Click Next Mission
+    const finalNext = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+    await expect(finalNext).toBeVisible({ timeout: 3000 });
+    await finalNext.click();
+    await page.waitForTimeout(1500);
+
+    // Verify we moved past listening
+    const afterNext = await page.locator('body').textContent().catch(() => '');
+    expect(afterNext).not.toContain('Listening Complete');
 
     // Assert no page crashes
     expect(pageErrors).toEqual([]);
   });
+
+  test('Reading completion shows Next Mission button after answering all questions', async ({ page }) => {
+    // Regression: same as listening, but for reading mission completion
+    test.setTimeout(30000);
+
+    await page.goto(PREVIEW_URL + '/#/level/a1/daily?forceMission=reading', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const pageErrors = [];
+    page.on('pageerror', err => pageErrors.push(err.message));
+
+    // Should land on reading mission
+    {
+      const txt = await page.locator('body').textContent().catch(() => '');
+      expect(txt).toContain('Reading Exercise');
+    }
+
+    // Answer all reading questions with explicit click logic
+    for (let q = 0; q < 15; q++) {
+      const bodyTxt = await page.locator('body').textContent().catch(() => '');
+      if (bodyTxt.includes('Reading Complete')) break;
+
+      const rBtn = page.locator('button').filter({ hasText: 'Richtig' }).first();
+      if (await rBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+        await rBtn.click();
+        await page.waitForTimeout(200);
+      } else {
+        const fBtn = page.locator('button').filter({ hasText: 'Falsch' }).first();
+        if (await fBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+          await fBtn.click();
+          await page.waitForTimeout(200);
+        } else {
+          // Try any visible button longer than 2 chars (MCQ option)
+          const allBtns = page.locator('button');
+          const count = await allBtns.count();
+          for (let i = 0; i < count; i++) {
+            const btn = allBtns.nth(i);
+            const text = await btn.textContent();
+            const isVisible = await btn.isVisible().catch(() => false);
+            if (isVisible && text && text.length > 2 && !/Next|Skip|Mark|Dashboard|Start|Stop|Menu|Aloud|Transcri/.test(text)) {
+              await btn.click();
+              await page.waitForTimeout(200);
+              break;
+            }
+          }
+        }
+      }
+
+      const txt2 = await page.locator('body').textContent().catch(() => '');
+      if (txt2.includes('Reading Complete')) break;
+
+      const nqBtn = page.locator('button').filter({ hasText: 'Next Question' }).first();
+      if (await nqBtn.isVisible({ timeout: 200 }).catch(() => false)) {
+        await nqBtn.click();
+        await page.waitForTimeout(200);
+      }
+    }
+
+    // Assert completion screen with Next Mission button
+    const finalBody = await page.locator('body').textContent().catch(() => '');
+    expect(finalBody).toContain('Reading Complete');
+    expect(finalBody).toContain('Next Mission');
+
+    // Click Next Mission
+    const finalNext = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+    await expect(finalNext).toBeVisible({ timeout: 3000 });
+    await finalNext.click();
+    await page.waitForTimeout(1500);
+
+    const afterNext = await page.locator('body').textContent().catch(() => '');
+    expect(afterNext).not.toContain('Reading Complete');
+
+    expect(pageErrors).toEqual([]);
+  });
 });
+
+
