@@ -1,8 +1,9 @@
-node_modules
-dist
-.vite
-*.local
+node_modules/
+assets/
+test-results/
+worker/
+playwright-report/
+deutsch-klinik-progress-backup.json
 .env
 .env.local
-.env.*.local
-
+dist/audio/
