@@ -772,8 +772,6 @@ export default function DailyMissionPage() {
 
   const meta = getMeta();
   const cm = getCm();
-  const listeningDone = lrnDone || ((listeningItem?.questions?.length || 0) > 0 && lrq >= (listeningItem?.questions?.length || 0));
-  const readingDone = rdDone || ((readingItem?.questions?.length || 0) > 0 && rrq >= (readingItem?.questions?.length || 0));
 
   // Difficulty label helper
   const getDifficulty = (item) => {
@@ -826,6 +824,9 @@ export default function DailyMissionPage() {
   const readingItem = cm.type === 'reading' ? getNextReading(lvl) : null;
   const writingItem = cm.type === 'writing' ? getNextWriting(lvl) : null;
   const speakingItem = cm.type === 'speaking' ? getNextSpeaking(lvl) : null;
+
+  const listeningDone = lrnDone || ((listeningItem?.questions?.length || 0) > 0 && lrq >= (listeningItem?.questions?.length || 0));
+  const readingDone = rdDone || ((readingItem?.questions?.length || 0) > 0 && rrq >= (readingItem?.questions?.length || 0));
 
   // Style objects
   const sCard = { background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem' };
