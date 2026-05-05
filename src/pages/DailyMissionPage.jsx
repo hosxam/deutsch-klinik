@@ -23,7 +23,8 @@ import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight,
   Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
-  Volume2, MessageSquare, Quote, BookMarked, ListOrdered
+  Volume2, MessageSquare, Quote, BookMarked, ListOrdered,
+  Square, Lightbulb
 } from 'lucide-react';
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 

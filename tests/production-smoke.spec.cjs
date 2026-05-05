@@ -778,6 +778,91 @@ test.describe('H. Daily Mission Flow', () => {
     }
   });
 
+  test('Post-vocabulary mission renders without Square is not defined', async ({ page }) => {
+    // Regression: after completing Vocabulary, clicking Next Mission
+    // must not crash with 'Square is not defined'
+    test.setTimeout(120000);
+    await page.goto(LIVE_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const startBtn = page.locator('a').filter({ hasText: /Start Today\'s? Plan/ }).first();
+    await expect(startBtn).toBeVisible({ timeout: 5000 });
+    await startBtn.click();
+    await page.waitForTimeout(3000);
+
+    const errors = [];
+    page.on('pageerror', err => errors.push(err.message));
+
+    const body = page.locator('body');
+    let foundVocab = false;
+
+    for (let i = 0; i < 20; i++) {
+      const txt = await body.textContent().catch(() => '');
+      if (!txt) break;
+      expect(txt).not.toContain('Something broke');
+
+      if (txt.includes('Vocabulary Quiz') || txt.includes('Vocabulary')) {
+        foundVocab = true;
+      }
+
+      // If vocab section is showing, skip through all vocab questions
+      if (foundVocab) {
+        // Look for the Next button after a vocab answer
+        const nextQBtn = page.locator('button').filter({ hasText: /Next/ }).first();
+        if (await nextQBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+          await nextQBtn.click();
+          await page.waitForTimeout(500);
+          continue;
+        }
+      }
+
+      // Try Next Mission
+      const nextBtn = page.locator('button').filter({ hasText: /Next Mission/ }).first();
+      if (await nextBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await nextBtn.click();
+        await page.waitForTimeout(1000);
+        // After clicking Next Mission from vocabulary, check no crash
+        const afterTxt = await body.textContent().catch(() => '');
+        expect(afterTxt).not.toContain('Something broke');
+        expect(afterTxt).not.toContain('Square is not defined');
+        // If the next mission is Listening, verify it rendered
+        if (afterTxt.includes('Listening')) {
+          break;
+        }
+        continue;
+      }
+
+      // Try Skip for now
+      const skipBtn = page.locator('button').filter({ hasText: /Skip for now/ }).first();
+      if (await skipBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await skipBtn.click();
+        await page.waitForTimeout(1000);
+        const afterTxt = await body.textContent().catch(() => '');
+        expect(afterTxt).not.toContain('Something broke');
+        continue;
+      }
+
+      // Try Mark Complete
+      const markBtn = page.locator('button').filter({ hasText: /Mark Complete/ }).first();
+      if (await markBtn.isVisible({ timeout: 500 }).catch(() => false)) {
+        await markBtn.click();
+        await page.waitForTimeout(800);
+        continue;
+      }
+
+      break;
+    }
+
+    // Assert no JavaScript errors
+    const squareErrors = errors.filter(e => e.includes('Square is not defined'));
+    expect(squareErrors).toEqual([]);
+    expect(errors.filter(e => e.includes('is not defined'))).toEqual([]);
+  });
+
   test('Mission transition does not crash - navigate all missions', async ({ page }) => {
     // Regression: verify getNextListening/getNextReading/getNextWriting/getNextSpeaking exist
     // and mission transitions don't throw 'getNextListening is not defined'
