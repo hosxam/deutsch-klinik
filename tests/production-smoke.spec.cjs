@@ -1236,6 +1236,129 @@ test.describe('H. Daily Mission Flow', () => {
 
     expect(pageErrors).toEqual([]);
   });
+
+  test('Speaking forceMission renders without crash', async ({ page }) => {
+    test.setTimeout(30000);
+
+    await page.goto(PREVIEW_URL + '/#/level/a1/daily?forceMission=speaking', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const pageErrors = [];
+    page.on('pageerror', err => pageErrors.push(err.message));
+
+    // Speaking mission should render without crash
+    const body = page.locator('body');
+    const bodyTxt = await body.textContent().catch(() => '');
+
+    // Assert no crash
+    expect(bodyTxt).not.toContain('Something broke');
+
+    // Should show speaking related content
+    const hasSpeaking = /Speaking|Sprechen|Transcribe|Record/i.test(bodyTxt);
+    expect(hasSpeaking).toBe(true);
+
+    // Transcript textarea should be visible
+    const ta = page.locator('textarea').first();
+    await expect(ta).toBeVisible({ timeout: 3000 });
+
+    // Should not show listening/reading specific content
+    expect(bodyTxt).not.toContain('Listening Exercise');
+    expect(bodyTxt).not.toContain('Reading Exercise');
+
+    expect(pageErrors).toEqual([]);
+  });
+
+  test('Speaking mission tips section renders safely with string tips', async ({ page }) => {
+    test.setTimeout(30000);
+
+    await page.goto(PREVIEW_URL + '/#/level/a1/daily?forceMission=speaking', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1000);
+
+    await page.evaluate(() => localStorage.removeItem('deutsch_klinik_state'));
+    await page.reload();
+    await page.waitForTimeout(2000);
+
+    const pageErrors = [];
+    page.on('pageerror', err => pageErrors.push(err.message));
+
+    // Should not crash at all - both tips and useful phrases sections should render safely
+    const body = page.locator('body');
+    const bodyTxt = await body.textContent().catch(() => '');
+
+    // The speaking tips are strings, which toArray() converts to a single-element array
+    // The tips section should show at minimum
+    expect(bodyTxt).toContain('Tips');
+
+    // No crash
+    expect(bodyTxt).not.toContain('Something broke');
+    expect(pageErrors).toEqual([]);
+  });
+
+  test('Speaking data shape validation - all items normalizable', async () => {
+    const fs = require('fs');
+    const path = require('path');
+    const speakingData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/speaking.json'), 'utf-8'));
+
+    // Replicate toArray
+    function toArray(v) {
+      if (Array.isArray(v)) return v;
+      if (typeof v === 'string' && v.trim()) return [v];
+      if (v && typeof v === 'object') return Object.values(v).filter(Boolean);
+      return [];
+    }
+
+    for (const [lvl, items] of Object.entries(speakingData)) {
+      if (!Array.isArray(items)) continue;
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        // Must not throw when calling toArray + .slice + .map
+        const tips = toArray(item.tips).slice(0, 3);
+        tips.map(t => t);
+        const phrases = toArray(item.usefulPhrases).slice(0, 5);
+        phrases.map(p => p);
+      }
+    }
+
+    // Also verify writing data
+    const writingData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/writing.json'), 'utf-8'));
+    for (const [lvl, items] of Object.entries(writingData)) {
+      if (!Array.isArray(items)) continue;
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const tips = toArray(item.tips).slice(0, 4);
+        tips.map(t => t);
+      }
+    }
+
+    // Verify grammar curriculum items
+    const gcData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/grammarCurriculum.json'), 'utf-8'));
+    for (const [lvl, items] of Object.entries(gcData)) {
+      if (!Array.isArray(items)) continue;
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        toArray(item.rules).map(r => r);
+        toArray(item.examples).slice(0, 4).map(e => e);
+        toArray(item.commonMistakes).slice(0, 3).map(m => m);
+        toArray(item.miniPractice).slice(0, 3).map(p => p);
+      }
+    }
+
+    // Verify lesson items
+    const lessonData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../src/data/germanLessons.json'), 'utf-8'));
+    for (const items of Object.values(lessonData)) {
+      if (!Array.isArray(items)) continue;
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        toArray(item.examples).slice(0, 6).map(e => e);
+        toArray(item.vocabulary).slice(0, 6).map(v => v);
+        toArray(item.guidedPractice).slice(0, 3).map(p => p);
+      }
+    }
+  });
 });
 
 

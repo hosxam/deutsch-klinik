@@ -19,6 +19,15 @@ import speakingData from '../data/speaking.json';
 import dashboardSummary from '../data/dashboardSummary.json';
 import levelsData from '../data/levels.json';
 import LevelLock from '../components/LevelLock';
+
+/** Safely coerce a JSON field to array for .map()/.slice() calls */
+function toArray(v) {
+  if (Array.isArray(v)) return v;
+  if (typeof v === 'string' && v.trim()) return [v];
+  if (v && typeof v === 'object') return Object.values(v).filter(Boolean);
+  return [];
+}
+
 import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight,
@@ -897,7 +906,7 @@ export default function DailyMissionPage() {
                   <div style={{ marginBottom: '0.75rem' }}>
                     <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Examples:</strong>
                     <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
-                      {fullLesson.examples.slice(0, 6).map((e, i) => <li key={i}>{e}</li>)}
+                      {toArray(fullLesson.examples).slice(0, 6).map((e, i) => <li key={i}>{e}</li>)}
                     </ul>
                   </div>
                 )}
@@ -911,7 +920,7 @@ export default function DailyMissionPage() {
                   <div style={{ marginBottom: '0.75rem' }}>
                     <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Key Vocabulary:</strong>
                     <div style={{ marginTop: '0.3rem', fontSize: '0.85rem' }}>
-                      {fullLesson.vocabulary.slice(0, 6).map((v, i) => (
+                      {toArray(fullLesson.vocabulary).slice(0, 6).map((v, i) => (
                         <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.25rem 0.4rem', background: i % 2 === 0 ? 'var(--bg-secondary)' : 'transparent', borderRadius: '4px', marginBottom: '0.15rem' }}>
                           <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{v.word}</span>
                           <span style={{ color: 'var(--text-secondary)' }}>{v.translation}</span>
@@ -925,7 +934,7 @@ export default function DailyMissionPage() {
                   <div style={{ marginBottom: '0.75rem' }}>
                     <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Practice Questions:</strong>
                     <div style={{ marginTop: '0.3rem', fontSize: '0.85rem' }}>
-                      {fullLesson.guidedPractice.slice(0, 3).map((p, i) => (
+                      {toArray(fullLesson.guidedPractice).slice(0, 3).map((p, i) => (
                         <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(59,130,246,0.08)', borderRadius: '6px', marginBottom: '0.3rem' }}>
                           <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{p.prompt}</p>
                           <p style={{ color: '#059669', fontStyle: 'italic' }}>Answer: {p.answer}</p>
@@ -997,7 +1006,7 @@ export default function DailyMissionPage() {
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Rules:</strong>
                   <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
-                    {gcLesson.rules.map((r, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{r}</li>)}
+                    {toArray(gcLesson.rules).map((r, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{r}</li>)}
                   </ul>
                 </div>
               )}
@@ -1007,7 +1016,7 @@ export default function DailyMissionPage() {
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Examples:</strong>
                   <div style={{ marginTop: '0.3rem' }}>
-                    {gcLesson.examples.slice(0, 4).map((ex, i) => (
+                    {toArray(gcLesson.examples).slice(0, 4).map((ex, i) => (
                       <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.35rem 0.5rem', background: i % 2 === 0 ? 'var(--bg-secondary)' : 'transparent', borderRadius: '4px', marginBottom: '0.2rem', fontSize: '0.85rem' }}>
                         <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{ex.de}</span>
                         <span style={{ color: 'var(--text-secondary)' }}>{ex.en}</span>
@@ -1021,7 +1030,7 @@ export default function DailyMissionPage() {
               {gcLesson?.commonMistakes?.length > 0 && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: '#ef4444' }}>Common Mistakes:</strong>
-                  {gcLesson.commonMistakes.slice(0, 3).map((m, i) => (
+                  {toArray(gcLesson.commonMistakes).slice(0, 3).map((m, i) => (
                     <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(239,68,68,0.08)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
                       <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>Wrong: "{m.wrong}"</div>
                       <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>Correct: "{m.correct}"</div>
@@ -1035,7 +1044,7 @@ export default function DailyMissionPage() {
               {gcLesson?.miniPractice?.length > 0 && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>Quick Practice:</strong>
-                  {gcLesson.miniPractice.slice(0, 3).map((p, i) => (
+                  {toArray(gcLesson.miniPractice).slice(0, 3).map((p, i) => (
                     <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(168,85,247,0.06)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
                       <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{p.prompt}</p>
                       <p style={{ color: '#059669', fontStyle: 'italic' }}>Answer: {p.answer}</p>
@@ -1566,11 +1575,11 @@ export default function DailyMissionPage() {
                   Word limit: {writingItem.wordLimit} words
                 </p>
               )}
-              {(writingItem.tips || []).length > 0 && (
+              {toArray(writingItem.tips).length > 0 && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.25rem' }}>Tips:</p>
                   <ul style={{ margin: 0, paddingLeft: '1.2rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                    {writingItem.tips.slice(0, 4).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
+                    {toArray(writingItem.tips).slice(0, 4).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
                   </ul>
                 </div>
               )}
@@ -1732,23 +1741,23 @@ export default function DailyMissionPage() {
                 {speakingItem.talkTime && <span>Talk time: {speakingItem.talkTime}</span>}
               </div>
 
-              {(speakingItem.tips || []).length > 0 && (
+              {toArray(speakingItem.tips).length > 0 && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>
                     <Lightbulb size={12} style={{ display: 'inline', marginRight: '0.2rem', verticalAlign: 'middle' }} />
                     Tips
                   </p>
                   <ul style={{ margin: 0, paddingLeft: '1.2rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                    {speakingItem.tips.slice(0, 3).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
+                    {toArray(speakingItem.tips).slice(0, 3).map((tip, i) => <li key={i} style={{ marginBottom: '0.15rem' }}>{tip}</li>)}
                   </ul>
                 </div>
               )}
 
-              {(speakingItem.usefulPhrases || []).length > 0 && (
+              {toArray(speakingItem.usefulPhrases).length > 0 && (
                 <div style={{ marginBottom: '0.75rem', background: 'rgba(249, 115, 22, 0.04)', padding: '0.5rem 0.8rem', borderRadius: '6px' }}>
                   <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>Useful Phrases:</p>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
-                    {speakingItem.usefulPhrases.slice(0, 5).map((ph, i) => (
+                    {toArray(speakingItem.usefulPhrases).slice(0, 5).map((ph, i) => (
                       <span key={i} style={{ background: 'var(--bg-secondary)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.78rem' }}>{ph}</span>
                     ))}
                   </div>
