@@ -9,6 +9,12 @@ module.exports = defineConfig({
   retries: 1,
   workers: 1,
   reporter: [['html', { open: 'never' }], ['list']],
+  webServer: {
+    command: 'npx vite preview --port 4175 --host 127.0.0.1',
+    url: 'http://localhost:4175/deutsch-klinik/',
+    reuseExistingServer: true,
+    timeout: 30000,
+  },
   use: {
     baseURL: 'https://hosxam.github.io/deutsch-klinik',
     trace: 'on-first-retry',
