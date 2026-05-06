@@ -9,6 +9,7 @@ import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, P
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
+import { buildAdaptiveTargets, getGoalEstimate, calculateTodayMinutes as calculateAdaptiveTodayMinutes, getRemediationRecommendation } from '../utils/adaptivePlan';
 
 const allLessons = Object.values(dashboardSummary.lessonSummaries || {}).flat();
 
@@ -31,7 +32,6 @@ const VOCAB_COUNT = dashboardSummary.vocabCounts;
 // Count grammar entries per level (from summary)
 const GRAMMAR_COUNT = dashboardSummary.grammarCounts;
 
-const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
 
 
 
@@ -41,55 +41,18 @@ const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
 
 /** Compute dynamic daily limits from the user's goal. Returns { grammar, vocab }. */
 function computeDailyLimitsFor(levelId, state) {
-  const goal = getStudyGoal();
-  if (!goal || !goal.targetDate || !goal.targetLevel) return { grammar: 10, vocab: 20 };
-
-  const today = new Date();
-  const targetDate = new Date(goal.targetDate);
-  const daysRemaining = Math.max(1, Math.ceil((targetDate - today) / (1000 * 60 * 60 * 24)));
-  const targetLevelIdx = LEVEL_ORDER[goal.targetLevel];
-  if (targetLevelIdx === undefined) return { grammar: 10, vocab: 20 };
-
-  const planType = goal.planType || 'exam';
-  const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
-
-  // Calculate totals up to target level
-  let grammarTotal = 0;
-  let vocabTotal = 0;
-  for (let i = 0; i <= targetLevelIdx; i++) {
-    const lvl = LEVELS[i];
-    const lvlData = levelsData.levels.find(l => l.id === lvl);
-    if (planType === 'exam' && lvlData) {
-      grammarTotal += lvlData.grammarUnits || 10;
-      vocabTotal += lvlData.vocabularyUnits || 10;
-    } else {
-      grammarTotal += GRAMMAR_COUNT[lvl] || 200;
-      vocabTotal += VOCAB_COUNT[lvl] || 500;
-    }
-  }
-
-  // What's completed across all levels up to target
-  let grammarDone = 0;
-  let vocabDone = 0;
-  for (let i = 0; i <= targetLevelIdx; i++) {
-    const lvl = LEVELS[i];
-    grammarDone += (state.levels?.[lvl]?.grammar?.length || 0);
-    vocabDone += (state.levels?.[lvl]?.vocab?.length || 0);
-  }
-
-  const grammarRemaining = Math.max(0, grammarTotal - grammarDone);
-  const vocabRemaining = Math.max(0, vocabTotal - vocabDone);
-
-  const grammar = Math.min(25, Math.max(5, Math.ceil(grammarRemaining / daysRemaining)));
-  const vocab = Math.min(50, Math.max(10, Math.ceil(vocabRemaining / daysRemaining)));
-
-  return { grammar, vocab };
+  return buildAdaptiveTargets(levelId, state, getStudyGoal());
 }
 
 export default function Dashboard() {
   const [state] = useState(getState());
 
   const studyLevel = state.currentLevel;
+  const activeGoal = useMemo(() => getStudyGoal(), []);
+  const goalEstimate = useMemo(() => getGoalEstimate(state, activeGoal), [state, activeGoal]);
+  const adaptiveTargets = useMemo(() => buildAdaptiveTargets(studyLevel, state, activeGoal), [studyLevel, state, activeGoal]);
+  const todayMinutesDone = useMemo(() => calculateAdaptiveTodayMinutes(state), [state]);
+  const remediation = useMemo(() => getRemediationRecommendation(state, studyLevel), [state, studyLevel]);
 
   // === Next incomplete lesson ===
   const nextLesson = useMemo(() => {
@@ -822,6 +785,24 @@ export default function Dashboard() {
         <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
           Suggested order for {targetLevel} &middot; Complete each step to stay on track
         </p>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-2 mb-4">
+          <MiniPlanMetric label="Target" value={`${todayMinutesDone}/${goalEstimate.dailyMinutes} min`} accent={todayMinutesDone >= goalEstimate.dailyMinutes ? '#3bff9e' : '#ffd700'} />
+          <MiniPlanMetric label="Remaining" value={`${Math.max(0, goalEstimate.dailyMinutes - todayMinutesDone)} min`} accent="var(--accent)" />
+          <MiniPlanMetric label="Finish estimate" value={goalEstimate.predictedFinishDate} accent="#3bff9e" />
+          <MiniPlanMetric label="Track" value={goalEstimate.track} accent="#8b5cf6" />
+          <MiniPlanMetric label="Plan scale" value={adaptiveTargets.intensity} accent="#06b6d4" />
+        </div>
+        {remediation && (
+          <div className="mb-4 rounded-lg p-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:justify-between" style={{ backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.25)' }}>
+            <div>
+              <div className="text-sm font-semibold" style={{ color: '#ff3355' }}>Weakest area: {remediation.skill}</div>
+              <div className="text-xs" style={{ color: 'var(--text-secondary)' }}>{remediation.task}</div>
+            </div>
+            <Link to={remediation.route} className="px-3 py-2 rounded-lg text-xs font-semibold text-center" style={{ backgroundColor: '#ff3355', color: '#fff' }}>
+              Start remediation
+            </Link>
+          </div>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <StudyPlanButton
             step={1} label="Continue Lessons"
@@ -1822,6 +1803,15 @@ export default function Dashboard() {
 }
 
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
+
+function MiniPlanMetric({ label, value, accent }) {
+  return (
+    <div className="rounded-lg p-2" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
+      <div className="text-[10px]" style={{ color: 'var(--text-muted)' }}>{label}</div>
+      <div className="text-xs font-bold truncate" style={{ color: accent }}>{value}</div>
+    </div>
+  );
+}
 
 function StudyPlanButton({ step, label, to, icon: Icon, accent, desc }) {
   return (

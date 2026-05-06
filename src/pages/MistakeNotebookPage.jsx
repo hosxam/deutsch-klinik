@@ -33,6 +33,7 @@ export default function MistakeNotebookPage() {
   const [retryCorrectCount, setRetryCorrectCount] = useState(0);
   const [activeTab, setActiveTab] = useState('mistakes');
   const [expandedMistake, setExpandedMistake] = useState(null);
+  const [reviewedVocab, setReviewedVocab] = useState([]);
 
   useEffect(() => {
     const i = setInterval(() => setState({ ...getState() }), 1000);
@@ -79,19 +80,34 @@ export default function MistakeNotebookPage() {
   const weakTopics = getWeakTopics() || [];
 
   // Due vocab words
-  const allVocabIds = Object.values(vocabData).flatMap(arr => arr.map(v => v.id));
-  const dueVocab = getDueVocabWords(allVocabIds);
-
-  const vocabItems = dueVocab.map(id => {
-    for (const arr of Object.values(vocabData)) {
-      const found = arr.find(v => v.id === id);
-      if (found) return found;
-    }
-    return null;
-  }).filter(Boolean);
+  const currentLevel = getState().currentLevel || 'A1';
+  const vocabMistakeIds = new Set(filteredItems
+    .filter(m => (m.skill || '').includes('vocab'))
+    .map(m => String(m.exerciseId || '').replace(/^[A-C][12]_/, '')));
+  const levelWords = (vocabData[currentLevel] || []).map(w => ({ ...w, level: currentLevel }));
+  const dueIds = new Set(getDueVocabWords(levelWords.map(w => `${currentLevel}_${w.id}`)).map(id => String(id).replace(/^[A-C][12]_/, '')));
+  const weakWords = levelWords.filter(w => {
+    const m = getState().vocabularyMastery?.[`${currentLevel}_${w.id}`];
+    return m && m.incorrect > m.correct;
+  });
+  const vocabItems = [
+    ...levelWords.filter(w => dueIds.has(w.id)),
+    ...levelWords.filter(w => vocabMistakeIds.has(w.id)),
+    ...weakWords,
+  ]
+    .filter((w, idx, arr) => arr.findIndex(x => x.id === w.id) === idx)
+    .filter(w => !reviewedVocab.includes(`${currentLevel}_${w.id}`))
+    .slice(0, 20);
 
   const handleVocabReview = (wordId, correct) => {
-    recordVocabAnswer(wordId, correct);
+    const word = levelWords.find(w => w.id === wordId) || {};
+    recordVocabAnswer(`${currentLevel}_${wordId}`, correct, {
+      level: currentLevel,
+      userAnswer: correct ? word.translation || word.english || 'Knew it' : 'Still learning',
+      correctAnswer: word.translation || word.english || '',
+      topic: word.topic || 'Vocabulary',
+    });
+    setReviewedVocab(prev => [...prev, `${currentLevel}_${wordId}`]);
     setState({ ...getState() });
   };
 
@@ -243,9 +259,7 @@ export default function MistakeNotebookPage() {
                   {mistakes.map((mistake, idx) => {
                     const key = level + '_' + idx;
                     const isExpanded = expandedMistake === key;
-                    // Find actual index in the store's incorrectAnswers array
-                    const storeMistakes = getMistakesByLevel(level) || [];
-                    const actualIdx = storeMistakes.indexOf(mistake);
+                    const actualMatcher = { exerciseId: mistake.exerciseId, date: mistake.date };
                     return (
                       <div key={key} style={{
                         borderRadius: '10px', padding: '14px 16px',
@@ -330,7 +344,7 @@ export default function MistakeNotebookPage() {
                             <div style={{ marginTop: '12px', display: 'flex', gap: '8px' }}>
                               <button
                                 onClick={() => {
-                                  if (actualIdx >= 0) handleMarkMastered(level, actualIdx);
+                                  handleMarkMastered(level, actualMatcher);
                                 }}
                                 style={{
                                   padding: '6px 12px', borderRadius: '6px', border: '1px solid #3bff9e',
@@ -343,6 +357,8 @@ export default function MistakeNotebookPage() {
                               </button>
                               <button
                                 onClick={() => {
+                                  const storeMistakes = getMistakesByLevel(level) || [];
+                                  const actualIdx = storeMistakes.findIndex(m => (actualMatcher.exerciseId && m.exerciseId === actualMatcher.exerciseId) || (actualMatcher.date && m.date === actualMatcher.date));
                                   if (actualIdx >= 0) {
                                     clearMistakeByIndex(level, actualIdx);
                                     setState({ ...getState() });
@@ -407,13 +423,29 @@ export default function MistakeNotebookPage() {
                       Level: {topic.level}
                     </div>
                   )}
-                  <Link to={`/level/${topic.level || 'A1'}/grammar`} style={{
-                    display: 'inline-block', marginTop: '8px', padding: '4px 10px', borderRadius: '6px',
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '8px' }}>
+                  <Link to={`/level/${topic.level || currentLevel}/grammar`} style={{
+                    display: 'inline-block', padding: '4px 10px', borderRadius: '6px',
                     fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: 'var(--accent)',
                     textDecoration: 'none', fontWeight: '600',
                   }}>
                     Practice
                   </Link>
+                  <Link to={`/level/${topic.level || currentLevel}/lessons`} style={{
+                    display: 'inline-block', padding: '4px 10px', borderRadius: '6px',
+                    fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: '#3bff9e',
+                    textDecoration: 'none', fontWeight: '600',
+                  }}>
+                    Recommended lesson
+                  </Link>
+                  <button onClick={() => { setActiveTab('mistakes'); setFilterSkill(topic.topic); }} style={{
+                    display: 'inline-block', padding: '4px 10px', borderRadius: '6px', border: 'none',
+                    fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: '#f59e0b',
+                    fontWeight: '600', cursor: 'pointer',
+                  }}>
+                    Review mistakes
+                  </button>
+                  </div>
                 </div>
               ))}
             </div>
@@ -427,7 +459,7 @@ export default function MistakeNotebookPage() {
           {vocabItems.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
               <Brain size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No vocabulary words due for review. Check back later!</p>
+              <p>No due, weak, or recent-mistake vocabulary for {currentLevel}. Check back later!</p>
               <div style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-secondary)' }}>
                 All your vocab is up to date. <RotateCcw size={14} style={{ display: 'inline', verticalAlign: 'middle' }} />
               </div>
@@ -454,7 +486,7 @@ export default function MistakeNotebookPage() {
                       backgroundColor: levelColors[word.level] + '20',
                       color: levelColors[word.level] || 'var(--text-muted)',
                     }}>
-                      {word.level}
+                      {currentLevel}
                     </span>
                   </div>
                   {word.example && (

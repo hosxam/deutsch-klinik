@@ -88,6 +88,8 @@ const defaultState = {
     // { 'Articles': { correct: 3, incorrect: 5, status: 'weak' }, ... }
     // status: 'weak' | 'improving' | 'mastered'
   },
+  dailyStudyLog: [],
+  remediationQueue: [],
 };
 
 function loadState() {
@@ -286,10 +288,12 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
     const notebookId = `${level}_${exerciseId}_${Date.now()}`;
     if (state.repeatedMistakes[mistakeKey]) {
       state.mistakeNotebook[notebookId] = {
+        exerciseId,
         topic,
         userAnswer,
         correctAnswer,
         level,
+        skill: skill || topic || 'general',
         date: new Date().toISOString(),
         repeated: state.repeatedMistakes[mistakeKey].count,
       };
@@ -340,7 +344,7 @@ export function getVocabMastery(wordId) {
   };
 }
 
-export function recordVocabAnswer(wordId, isCorrect) {
+export function recordVocabAnswer(wordId, isCorrect, meta = {}) {
   const mastery = getVocabMastery(wordId);
   mastery.correct += isCorrect ? 1 : 0;
   mastery.incorrect += isCorrect ? 0 : 1;
@@ -375,6 +379,18 @@ export function recordVocabAnswer(wordId, isCorrect) {
   mastery.mastered = mastery.correct >= 5 && mastery.ease >= 2.5;
 
   state.vocabularyMastery[wordId] = mastery;
+  if (!isCorrect) {
+    const level = meta.level || String(wordId).split('_')[0] || 'A1';
+    recordAnswer(
+      level,
+      wordId,
+      meta.userAnswer || 'Did not know',
+      meta.correctAnswer || meta.translation || meta.english || '',
+      meta.topic || 'Vocabulary',
+      false,
+      'vocab'
+    );
+  }
   saveState(state);
   return mastery;
 }
@@ -385,6 +401,36 @@ export function getDueVocabWords(wordIds) {
     const m = state.vocabularyMastery[id];
     return !m || m.due <= today || !m.mastered;
   });
+}
+
+export function recordStudyMinutes({ level, type, minutes, id }) {
+  const entry = {
+    level,
+    type,
+    id: id || `${type || 'study'}_${Date.now()}`,
+    minutes: Math.max(1, Number(minutes) || 1),
+    date: new Date().toISOString(),
+  };
+  state.dailyStudyLog = [...(state.dailyStudyLog || []), entry];
+  saveState(state);
+  return entry;
+}
+
+export function addRemediationRecommendation(recommendation) {
+  if (!recommendation || !recommendation.skill) return null;
+  const entry = {
+    id: recommendation.id || `${recommendation.level || 'A1'}_${recommendation.skill}_${Date.now()}`,
+    level: recommendation.level || 'A1',
+    skill: recommendation.skill,
+    why: recommendation.why || 'A low score needs follow-up practice.',
+    task: recommendation.task || 'Repeat the activity and review mistakes.',
+    route: recommendation.route || `/level/${recommendation.level || 'A1'}`,
+    date: new Date().toISOString(),
+    completed: false,
+  };
+  state.remediationQueue = [entry, ...(state.remediationQueue || []).filter(r => r.id !== entry.id)].slice(0, 20);
+  saveState(state);
+  return entry;
 }
 
 // ===== GRAMMAR MASTERY =====
@@ -481,8 +527,24 @@ export function clearMistakeByIndex(level, index) {
   }
 }
 
-export function markMistakeMastered(level, index) {
-  clearMistakeByIndex(level, index);
+export function markMistakeMastered(level, indexOrMatcher) {
+  if (!state.incorrectAnswers[level]) return;
+  if (typeof indexOrMatcher === 'number') {
+    clearMistakeByIndex(level, indexOrMatcher);
+    return;
+  }
+  const matcher = indexOrMatcher || {};
+  state.incorrectAnswers[level] = state.incorrectAnswers[level].filter(m => {
+    if (matcher.exerciseId && m.exerciseId === matcher.exerciseId) return false;
+    if (matcher.date && m.date === matcher.date) return false;
+    return true;
+  });
+  state.mistakeNotebook = Object.fromEntries(Object.entries(state.mistakeNotebook || {}).filter(([, m]) => {
+    if (matcher.exerciseId && m.exerciseId === matcher.exerciseId) return false;
+    if (matcher.date && m.date === matcher.date) return false;
+    return true;
+  }));
+  saveState(state);
 }
 
 // ===== EXAM UNLOCK CHECK =====

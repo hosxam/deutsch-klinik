@@ -5,9 +5,10 @@ import {
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
-  getNextGrammarLesson
+  getNextGrammarLesson, recordStudyMinutes, addRemediationRecommendation
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
+import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import grammarData from '../data/grammar.json';
 import grammarCurriculum from '../data/grammarCurriculum.json';
 import vocabData from '../data/germanVocabulary.json';
@@ -17,7 +18,6 @@ import germanLessons from '../data/germanLessons.json';
 import writingData from '../data/writing.json';
 import speakingData from '../data/speaking.json';
 import dashboardSummary from '../data/dashboardSummary.json';
-import levelsData from '../data/levels.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
 
@@ -68,11 +68,6 @@ function grammarMasteryRatio(exerciseId) {
   return total > 0 ? mastery.correct / total : 0;
 }
 
-const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
-const DL_D = { grammar: 10, vocab: 20, lesson: 1, reading: 1, listening: 1, writing: 1, speaking: 1 };
-const DL_MIN = { grammar: 5, vocab: 10, lesson: 1, reading: 1, listening: 1, writing: 1, speaking: 1 };
-const DL_MAX = { grammar: 25, vocab: 50, lesson: 3, reading: 3, listening: 3, writing: 2, speaking: 2 };
-
 const MISSION_META = {
   lesson: { title: 'Study a Lesson', icon: GraduationCap, accent: '#10b981' },
   grammarLesson: { title: 'Grammar Lesson', icon: BookMarked, accent: '#a855f7' },
@@ -82,6 +77,8 @@ const MISSION_META = {
   reading: { title: 'Reading Exercise', icon: FileText, accent: '#8b5cf6' },
   writing: { title: 'Writing Task', icon: PenTool, accent: '#ec4899' },
   speaking: { title: 'Speaking Task', icon: Mic, accent: '#f97316' },
+  flashcards: { title: 'Flashcard Review', icon: BookOpen, accent: '#3bff9e' },
+  remediation: { title: 'Remediation', icon: RefreshCw, accent: '#ff3355' },
 };
 
 const TYPE_LABELS = {
@@ -116,21 +113,7 @@ function clearSession() {
 }
 
 function calculateDailyTargets(levelId, state, goal) {
-  if (!goal || !goal.targetDate) return { ...DL_D };
-  const today = new Date();
-  const targetDate = new Date(goal.targetDate);
-  const daysRemaining = Math.max(1, Math.ceil((targetDate - today) / 86400000));
-  const targetLevelIdx = LEVEL_ORDER[goal.targetLevel];
-  if (targetLevelIdx === undefined) return { ...DL_D };
-  const planType = goal.planType || 'exam';
-  const curLvlData = levelsData.levels.find((l) => l.id === levelId);
-  const planGTotal = curLvlData && planType === 'exam' ? curLvlData.grammarUnits : (dashboardSummary.grammarCounts?.[levelId] || 200);
-  const planVTotal = curLvlData && planType === 'exam' ? curLvlData.vocabularyUnits : (dashboardSummary.vocabCounts?.[levelId] || 500);
-  const gRem = Math.max(1, planGTotal - (state.levels?.[levelId]?.grammar?.length || 0));
-  const vRem = Math.max(1, planVTotal - (state.levels?.[levelId]?.vocab?.length || 0));
-  const grammar = Math.min(DL_MAX.grammar, Math.max(DL_MIN.grammar, Math.ceil(gRem / daysRemaining)));
-  const vocab = Math.min(DL_MAX.vocab, Math.max(DL_MIN.vocab, Math.ceil(vRem / daysRemaining)));
-  return { grammar, vocab, lesson: 1, reading: 1, listening: 1, writing: 1, speaking: 1 };
+  return buildAdaptiveTargets(levelId, state, goal);
 }
 
 function buildMissions(levelId, state, targets, forceType) {
@@ -142,6 +125,12 @@ function buildMissions(levelId, state, targets, forceType) {
   }
   if (forceType === 'vocabulary') {
     return [{ type: 'vocabulary', target: 5, label: 'Learn 5 words' }];
+  }
+  if (forceType === 'flashcards') {
+    return [{ type: 'flashcards', target: 10, label: 'Review 10 flashcards' }];
+  }
+  if (forceType === 'remediation') {
+    return [{ type: 'remediation', target: 1, label: 'Complete remediation task' }];
   }
   if (forceType === 'lesson') {
     const lls = Object.values(dashboardSummary.lessonSummaries || {}).flat().filter((l) => l.level === levelId);
@@ -162,10 +151,14 @@ function buildMissions(levelId, state, targets, forceType) {
   }
   if (targets.grammar > 0) missions.push({ type: 'grammar', target: targets.grammar, label: 'Complete ' + targets.grammar + ' questions' });
   if (targets.vocab > 0) missions.push({ type: 'vocabulary', target: targets.vocab, label: 'Learn ' + targets.vocab + ' words' });
+  if (targets.flashcards > 0) missions.push({ type: 'flashcards', target: targets.flashcards, label: 'Review ' + targets.flashcards + ' due/weak flashcards' });
   if (targets.listening > 0) missions.push({ type: 'listening', target: targets.listening, label: 'Complete 1 listening test' });
   if (targets.reading > 0) missions.push({ type: 'reading', target: targets.reading, label: 'Complete 1 reading test' });
   if (targets.writing > 0) missions.push({ type: 'writing', target: targets.writing, label: 'Complete 1 writing task' });
   if (targets.speaking > 0) missions.push({ type: 'speaking', target: targets.speaking, label: 'Complete 1 speaking task' });
+  if (targets.remediation > 0 && getRemediationRecommendation(state, levelId)) {
+    missions.push({ type: 'remediation', target: 1, label: 'Follow up on your weakest skill' });
+  }
   return missions;
 }
 
@@ -266,10 +259,16 @@ export default function DailyMissionPage() {
     const goal = getStudyGoal();
     const cs = getState();
     const t = calculateDailyTargets(lvl, cs, goal);
+    const planSignature = JSON.stringify({
+      dailyMinutes: goal?.dailyMinutes || 30,
+      planType: goal?.planType || 'exam',
+      targetLevel: goal?.targetLevel || lvl,
+      targets: t,
+    });
     const forceType = new URLSearchParams(window.location.hash.split('?')[1] || '').get('forceMission') || null;
     const m = buildMissions(lvl, cs, t, forceType);
     const ld = loadSession(lvl);
-    if (ld && !forceType) {
+    if (ld && !forceType && ld.planSignature === planSignature) {
       setSesh(ld);
       setMi(ld.currentMission);
       if (ld.completedMissions?.length >= m.length) setCompShow(true);
@@ -279,7 +278,8 @@ export default function DailyMissionPage() {
       const ns = {
         dateKey: getLocalDateKey(), levelId: lvl, currentMission: 0,
         completedMissions: [], missionResults: {},
-        selectedExerciseIds: { grammar: [], vocab: [] }
+        selectedExerciseIds: { grammar: [], vocab: [] },
+        planSignature,
       };
       saveSession(ns);
       setSesh(ns);
@@ -434,7 +434,12 @@ export default function DailyMissionPage() {
     const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
     const isCorrect = sel === correct;
     if (word) {
-      recordVocabAnswer(word.id, isCorrect);
+      recordVocabAnswer(`${lvl}_${word.id}`, isCorrect, {
+        level: lvl,
+        userAnswer: sel,
+        correctAnswer: correct,
+        topic: word.topic || 'Vocabulary',
+      });
       const existing = (state.levels?.[lvl]?.vocab || []).filter((x) => x !== word.id);
       setLevelProgress(lvl, 'vocab', [word.id, ...existing]);
     }
@@ -501,6 +506,15 @@ export default function DailyMissionPage() {
       setLrc(prev => {
         const trueCount = prev + (correct ? 1 : 0);
         updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
+        if (trueCount / Math.max(totalQ, 1) < 0.6) {
+          addRemediationRecommendation({
+            level: lvl,
+            skill: 'listening',
+            why: 'A listening result was below 60%.',
+            task: 'Repeat the audio, review the transcript, and review unknown words.',
+            route: `/level/${lvl}/listening`,
+          });
+        }
         return trueCount;
       });
       refresh();
@@ -593,6 +607,15 @@ export default function DailyMissionPage() {
       setRrc(prev => {
         const trueCount = prev + (correct ? 1 : 0);
         updateState({ levels: { ...ld, [lvl]: { ...ll, readingResults: { ...(ll.readingResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
+        if (trueCount / Math.max(totalQ, 1) < 0.6) {
+          addRemediationRecommendation({
+            level: lvl,
+            skill: 'reading',
+            why: 'A reading result was below 60%.',
+            task: 'Reread the text, review target vocabulary, and retry the questions.',
+            route: `/level/${lvl}/reading`,
+          });
+        }
         return trueCount;
       });
       refresh();
@@ -630,6 +653,15 @@ export default function DailyMissionPage() {
           userAnswer: wtText
         });
         setWtAiResult(result);
+        if (Number(result.score) < 6) {
+          addRemediationRecommendation({
+            level: lvl,
+            skill: 'writing',
+            why: 'A writing correction scored below 6/10.',
+            task: 'Review the corrected version, then rewrite with one grammar focus.',
+            route: `/level/${lvl}/writing`,
+          });
+        }
       } catch (e) {
         setWtAiError(e.message || 'AI correction unavailable');
         setWtAiResult(null);
@@ -715,6 +747,15 @@ export default function DailyMissionPage() {
           transcript: spText
         });
         setSpAiResult(result);
+        if (Number(result.score) < 6) {
+          addRemediationRecommendation({
+            level: lvl,
+            skill: 'speaking',
+            why: 'A speaking correction scored below 6/10.',
+            task: 'Practice a model answer, focus on pronunciation, and record again.',
+            route: `/level/${lvl}/speaking`,
+          });
+        }
       } catch (e) {
         setSpAiError(e.message || 'AI feedback unavailable');
         setSpAiResult(null);
@@ -725,6 +766,23 @@ export default function DailyMissionPage() {
   };
   const hSpSk = () => advance('speaking', { skipped: true });
   const hSpN = () => { setSpText(''); setSpRecBlob(null); setSpRecState('idle'); setSpeakingPrompt(null); advance('speaking', {}); };
+
+  const hFlashcardsDone = () => {
+    const ids = (dashboardSummary.vocabIds?.[lvl] || []).slice(0, cm?.target || 10);
+    const existing = (getLevelProgress(lvl, 'vocab') || [])
+      .flatMap(item => typeof item === 'string' ? [item] : (item?.wordIds || []));
+    setLevelProgress(lvl, 'vocab', [...new Set([...existing, ...ids])]);
+    recordStudyMinutes({ level: lvl, type: 'flashcards', minutes: MINUTES.flashcards, id: `daily_flashcards_${getLocalDateKey()}` });
+    refresh();
+    advance('flashcards', { reviewed: ids.length, minutes: MINUTES.flashcards });
+  };
+
+  const hRemediationDone = () => {
+    const rec = getRemediationRecommendation(getState(), lvl);
+    recordStudyMinutes({ level: lvl, type: 'remediation', minutes: MINUTES.remediation, id: `daily_remediation_${getLocalDateKey()}` });
+    refresh();
+    advance('remediation', { completed: true, skill: rec?.skill || 'review' });
+  };
 
   // ─── COMPLETION SCREEN ───
   if (compShow) {
@@ -754,6 +812,16 @@ export default function DailyMissionPage() {
                 <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <BookOpen size={16} style={{ color: '#3bff9e' }} /><span>Vocabulary: {vr2.correct || 0}/{vr2.total} correct</span>
                   {vr2.wrong > 0 ? <XCircle size={14} style={{ color: '#ef4444', marginLeft: 'auto' }} /> : <CheckCircle size={14} style={{ color: '#22c55e', marginLeft: 'auto' }} />}
+                </div>
+              )}
+              {r.flashcards && !r.flashcards.skipped && (
+                <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <BookOpen size={16} style={{ color: '#3bff9e' }} /><span>Flashcards: {r.flashcards.reviewed || 0} reviewed</span><CheckCircle size={14} style={{ color: '#22c55e', marginLeft: 'auto' }} />
+                </div>
+              )}
+              {r.remediation && !r.remediation.skipped && (
+                <div style={{ background: 'var(--bg-secondary)', padding: '0.6rem 0.8rem', borderRadius: '6px', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <RefreshCw size={16} style={{ color: '#ff3355' }} /><span>Remediation completed</span><CheckCircle size={14} style={{ color: '#22c55e', marginLeft: 'auto' }} />
                 </div>
               )}
               {r.listening && !r.listening.skipped && (
@@ -891,6 +959,20 @@ export default function DailyMissionPage() {
           </div>
           {meta && <h2 style={{ fontSize: '1.2rem', fontWeight: 700, color: meta.accent, margin: '0.3rem 0' }}>{meta.title}</h2>}
           {cm && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Target: {cm.label}</p>}
+          <div aria-label="Daily plan mission list" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginTop: '0.65rem' }}>
+            {ms.map((mission, idx) => (
+              <span key={`${mission.type}_${idx}`} style={{
+                fontSize: '0.7rem',
+                padding: '0.2rem 0.45rem',
+                borderRadius: '999px',
+                background: idx === mi ? 'rgba(0,240,255,0.12)' : 'var(--bg-hover)',
+                color: idx === mi ? 'var(--accent)' : 'var(--text-muted)',
+                border: '1px solid var(--border)',
+              }}>
+                {mission.label}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* LESSON */}
@@ -1559,6 +1641,54 @@ export default function DailyMissionPage() {
           )}
         </div>
       )}
+
+      {/* FLASHCARD MISSION */}
+      {cm.type === 'flashcards' && (
+        <div style={sCard}>
+          <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+            <BookOpen size={40} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
+            <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.25rem' }}>Flashcards in Today&apos;s Plan</h3>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+              Review due, weak, or track-relevant vocabulary before adding more new words. This counts toward study minutes and vocabulary progress.
+            </p>
+            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Link to={`/level/${lvl}/vocabulary/flashcards`} style={{ ...sBp, textDecoration: 'none' }}>
+                <BookOpen size={16} /> Open Flashcards
+              </Link>
+              <button style={sBp} onClick={hFlashcardsDone}>
+                <CheckCircle size={16} /> Mark Flashcards Done
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* REMEDIATION MISSION */}
+      {cm.type === 'remediation' && (() => {
+        const rec = getRemediationRecommendation(getState(), lvl);
+        return (
+          <div style={sCard}>
+            <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+              <RefreshCw size={40} style={{ color: '#ff3355', marginBottom: '0.75rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#ff3355', marginBottom: '0.25rem' }}>Targeted Remediation</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+                {rec?.why || 'Review your latest weak area before moving on.'}
+              </p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '1rem' }}>
+                {rec?.task || 'Repeat a short practice task and review the mistakes.'}
+              </p>
+              <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <Link to={rec?.route || `/level/${lvl}`} style={{ ...sBp, textDecoration: 'none' }}>
+                  <RefreshCw size={16} /> Start Targeted Practice
+                </Link>
+                <button style={sBp} onClick={hRemediationDone}>
+                  <CheckCircle size={16} /> Mark Remediation Done
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* WRITING MISSION */}
       {cm.type === 'writing' && !wtDone && (

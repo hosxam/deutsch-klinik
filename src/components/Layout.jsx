@@ -1,7 +1,7 @@
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { getState, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, GraduationCap, Home, BookOpen, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle } from 'lucide-react';
+import { Menu, X, Sun, Moon, GraduationCap, Home, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle, Dumbbell, Settings } from 'lucide-react';
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -9,6 +9,7 @@ export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [theme, setTheme] = useState(getState().theme);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.body.classList.toggle('light-mode', theme === 'light');
@@ -22,15 +23,17 @@ export default function Layout() {
 
   const navLinks = [
     { to: '/', label: 'Dashboard', icon: Home },
-    ...levels.map(l => ({ to: `/level/${l}`, label: `Level ${l}`, icon: BookOpen })),
+    { to: `/level/${getState().currentLevel || 'A1'}/daily`, label: 'Practice', icon: Dumbbell },
+    { to: '/mistake-notebook', label: 'Review', icon: AlertTriangle },
+    { to: '/medical-fsp', label: 'FSP', icon: Stethoscope },
     { to: '/resources', label: 'Resources', icon: ExternalLink },
   ];
   const extraNavLinks = [
     { to: '/medical', label: 'Medical', icon: Stethoscope, accent: getState().medicalUnlocked ? '#3bff9e' : 'var(--text-muted)' },
     { to: '/c1-readiness', label: 'C1 Ready', icon: ClipboardCheck, accent: 'var(--accent)' },
-    { to: '/medical-fsp', label: 'FSP Hub', icon: Stethoscope, accent: '#8b5cf6' },
-    { to: '/mistake-notebook', label: 'Mistakes', icon: AlertTriangle, accent: '#ffaa33' },
+    { to: '/', label: 'Settings / Goal', icon: Settings, accent: 'var(--accent)' },
   ];
+  const activeLevel = levels.find(l => location.pathname.startsWith(`/level/${l}`)) || getState().currentLevel || 'A1';
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
@@ -58,6 +61,15 @@ export default function Layout() {
                   {link.label}
                 </Link>
               ))}
+              <select
+                aria-label="Select level"
+                value={activeLevel}
+                onChange={(e) => navigate(`/level/${e.target.value}`)}
+                className="px-3 py-1.5 rounded-lg text-sm"
+                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
+              >
+                {levels.map(l => <option key={l} value={l}>Level {l}</option>)}
+              </select>
               <Link
                 to="/medical"
                 className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
@@ -77,26 +89,6 @@ export default function Layout() {
                 }}
               >
                 <ClipboardCheck size={14} /> C1 Ready
-              </Link>
-              <Link
-                to="/medical-fsp"
-                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
-                style={{
-                  backgroundColor: location.pathname === '/medical-fsp' ? 'var(--bg-hover)' : 'transparent',
-                  color: location.pathname === '/medical-fsp' ? '#8b5cf6' : 'var(--text-secondary)',
-                }}
-              >
-                <Stethoscope size={14} /> FSP Hub
-              </Link>
-              <Link
-                to="/mistake-notebook"
-                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
-                style={{
-                  backgroundColor: location.pathname === '/mistake-notebook' ? 'var(--bg-hover)' : 'transparent',
-                  color: location.pathname === '/mistake-notebook' ? '#ffaa33' : 'var(--text-secondary)',
-                }}
-              >
-                <AlertTriangle size={14} /> Mistakes
               </Link>
             </div>
 
@@ -142,6 +134,16 @@ export default function Layout() {
                 <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
               </Link>
             ))}
+            <label className="block px-3 pt-3 pb-1 text-xs" style={{ color: 'var(--text-muted)' }}>Level</label>
+            <select
+              aria-label="Select level"
+              value={activeLevel}
+              onChange={(e) => { navigate(`/level/${e.target.value}`); setMenuOpen(false); }}
+              className="w-full mb-2 px-3 py-2 rounded-lg text-sm"
+              style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
+            >
+              {levels.map(l => <option key={l} value={l}>Level {l}</option>)}
+            </select>
             {extraNavLinks.map(link => (
               <Link
                 key={link.to}

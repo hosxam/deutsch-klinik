@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { getState } from '../utils/store';
 import { Target, Calendar, Clock, CheckCircle, AlertTriangle, Edit3, RotateCcw } from 'lucide-react';
+import { getGoalEstimate, calculateTodayMinutes as calculateAdaptiveTodayMinutes } from '../utils/adaptivePlan';
 
 const STORAGE_KEY = 'deutsch_klinik_study_goal';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'Medical FSP'];
@@ -344,7 +345,8 @@ export default function StudyGoalTracker() {
   const state = getState();
   const daysRemaining = useMemo(() => calculateDaysRemaining(goal?.targetDate), [goal]);
   const todayTasks = useMemo(() => calculateTodayCompletedTasks(state), [state]);
-  const todayMinutes = useMemo(() => calculateTodayMinutes(state), [state]);
+  const goalEstimate = useMemo(() => getGoalEstimate(state, goal), [state, goal]);
+  const todayMinutes = useMemo(() => Math.max(calculateAdaptiveTodayMinutes(state), calculateTodayMinutes(state)), [state]);
   const weekMinutes = useMemo(() => calculateWeekMinutes(state), [state]);
   const weekActiveDays = useMemo(() => calculateWeekActiveDays(state), [state]);
   const progressPct = useMemo(() => calculateOverallProgress(state), [state]);
@@ -390,6 +392,7 @@ export default function StudyGoalTracker() {
         targetLevel: goal.targetLevel || 'B2',
         targetDate: goal.targetDate || '',
         dailyMinutes: goal.dailyMinutes || 30,
+        planType: goal.planType || 'exam',
       });
     }
     setEditing(true);
@@ -453,7 +456,7 @@ export default function StudyGoalTracker() {
             </select>
           </div>
           <div>
-            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Target Exam Date</label>
+            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Goal Date (optional)</label>
             <input
               type="date"
               value={form.targetDate}
@@ -470,9 +473,10 @@ export default function StudyGoalTracker() {
             <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Suggested daily targets</label>
             <div className="flex gap-2">
               {[
-                { label: 'Light', value: 20, color: '#3bff9e' },
-                { label: 'Standard', value: 45, color: '#ffd700' },
-                { label: 'Intensive', value: 90, color: '#ff3355' },
+                { label: 'Short', value: 15, color: '#3bff9e' },
+                { label: 'Standard', value: 30, color: '#ffd700' },
+                { label: 'Intensive', value: 60, color: '#06b6d4' },
+                { label: 'Mastery', value: 90, color: '#ff3355' },
               ].map(p => (
                 <button
                   key={p.value}
@@ -588,6 +592,34 @@ export default function StudyGoalTracker() {
             </div>
           </div>
 
+          <div className="rounded-lg p-3" style={{ backgroundColor: 'var(--bg-hover)' }}>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Current track</div>
+                <div className="text-sm font-bold" style={{ color: '#8b5cf6' }}>{goalEstimate.track}</div>
+              </div>
+              <div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Intensity</div>
+                <div className="text-sm font-bold" style={{ color: 'var(--accent)' }}>{goalEstimate.intensity}</div>
+              </div>
+              <div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Estimated finish</div>
+                <div className="text-sm font-bold" style={{ color: '#3bff9e' }}>{goalEstimate.predictedFinishDate}</div>
+              </div>
+              <div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Remaining today</div>
+                <div className="text-sm font-bold" style={{ color: todayMinutes >= goal.dailyMinutes ? '#3bff9e' : '#ffd700' }}>
+                  {Math.max(0, goal.dailyMinutes - todayMinutes)} min
+                </div>
+              </div>
+            </div>
+            {goalEstimate.notEnoughContent && (
+              <p className="text-xs mt-2" style={{ color: '#ffd700' }}>
+                Some selected curriculum areas do not yet have enough structured content. The plan will use available review and remediation work until those modules are expanded.
+              </p>
+            )}
+          </div>
+
           {/* This Week */}
           <div className="rounded-lg p-3" style={{ backgroundColor: 'var(--bg-hover)' }}>
             <div className="flex items-center justify-between mb-1.5">
@@ -632,7 +664,7 @@ export default function StudyGoalTracker() {
                 color: daysRemaining !== null && daysRemaining < 0 ? '#ff3355' :
                        daysRemaining !== null && daysRemaining < 30 ? '#ffd700' : 'var(--accent)'
               }}>
-                {daysRemaining !== null ? (daysRemaining >= 0 ? daysRemaining : 'Overdue') : 'No date'}
+                {daysRemaining !== null ? (daysRemaining >= 0 ? daysRemaining : 'Overdue') : 'Optional'}
               </div>
             </div>
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
@@ -690,7 +722,7 @@ export default function StudyGoalTracker() {
       {!goal && !showForm && (
         <div>
           <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
-            Set a study goal to track your progress toward a target level and exam date.
+              Set a study goal to predict a finish date and scale your daily plan.
           </p>
           <button
             onClick={() => setShowForm(true)}

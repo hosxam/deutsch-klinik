@@ -577,10 +577,13 @@ export default function AuthPanel() {
   if (!enabled) {
     return (
       <div className="border border-gray-700 rounded-lg p-4 bg-gray-850 text-sm">
-        <div className="flex items-center gap-2 text-gray-400">
+        <div className="flex items-center gap-2 text-gray-300">
           <CloudOff size={16} />
-          <span>Cloud sync is not configured.</span>
+          <span>Local mode active. Your progress is saved on this device.</span>
         </div>
+        <p className="text-xs text-gray-500 mt-2">
+          Login and cloud sync will appear here when a sync provider is configured. The app remains fully usable offline.
+        </p>
       </div>
     );
   }

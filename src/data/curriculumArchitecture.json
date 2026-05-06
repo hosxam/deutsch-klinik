@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "lessonStandard": [
+    "conceptId",
+    "level",
+    "trackTags",
+    "estimatedMinutes",
+    "prerequisiteConceptIds",
+    "rule",
+    "examples",
+    "exceptions",
+    "commonMistakes",
+    "miniDrills",
+    "pronunciationTags",
+    "medicalFspNotes",
+    "remediationTags"
+  ],
+  "pilotConcepts": [
+    {
+      "conceptId": "a1.personal-pronouns-present-tense",
+      "level": "A1",
+      "trackTags": ["goethe", "full-mastery", "medical-fsp"],
+      "estimatedMinutes": 15,
+      "prerequisiteConceptIds": [],
+      "questionTags": ["A1_gr_1", "A1_gr_2", "A1_gr_3"],
+      "remediationTags": ["verb-ending", "subject-verb-agreement", "rewrite-simple-sentence"],
+      "pronunciationTags": ["sentence-melody", "ich-laut"],
+      "medicalFspNotes": "Use present-tense self-introductions for patient and clinician introductions: Ich heiße..., Ich arbeite..., Ich habe Schmerzen."
+    }
+  ],
+  "pronunciationSyllabus": [
+    "alphabet-sounds",
+    "umlauts-ae-oe-ue",
+    "eszett",
+    "ich-laut",
+    "ach-laut",
+    "german-r",
+    "word-stress",
+    "sentence-melody",
+    "arabic-english-speaker-mistakes",
+    "medical-fsp-terms"
+  ]
+}

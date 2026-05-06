@@ -427,7 +427,12 @@ export default function VocabularyPage() {
     setQuizTotal(quizTotal + 1);
     if (correct) setQuizScore(quizScore + 1);
     setShowAnswer(true);
-    recordVocabAnswer(`${levelId}_${word.id}`, correct);
+    recordVocabAnswer(`${levelId}_${word.id}`, correct, {
+      level: levelId,
+      userAnswer: correct ? 'Knew it' : 'Wrong answer',
+      correctAnswer: word.translation || word.english || word.word || word.german,
+      topic: word.topic || 'Vocabulary',
+    });
     setTimeout(() => {
       if (currentIndex < words.length - 1) {
         setCurrentIndex(currentIndex + 1);
