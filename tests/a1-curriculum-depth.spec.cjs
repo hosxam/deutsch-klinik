@@ -151,6 +151,46 @@ test.describe('A1 curriculum depth and alignment', () => {
     }
   });
 
+  test('A1 lesson 2 renders expanded number curriculum content', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/lessons/A1_lesson_2');
+
+    await expect(page.getByRole('heading', { name: /Das Alphabet, Aussprache und Zahlen/i })).toBeVisible();
+    await expect(page.getByText('zweiundzwanzig').first()).toBeVisible();
+    await expect(page.getByText('dreiunddreißig').first()).toBeVisible();
+    await expect(page.getByText('siebenundvierzig').first()).toBeVisible();
+    await expect(page.getByText('Pronunciation Guide').first()).toBeVisible();
+    await expect(page.getByText(/Mini Drills|Controlled Practice/i).first()).toBeVisible();
+    await expect(page.getByText('Common Mistakes').first()).toBeVisible();
+    await expect(page.getByText('Forms and Tables').first()).toBeVisible();
+  });
+
+  test('A1 lesson 1 renders expanded pronunciation and umlaut guidance', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/lessons/A1_lesson_1');
+
+    await expect(page.getByText(/ä sounds close to e/i).first()).toBeVisible();
+    await expect(page.getByText(/ö and ü need rounded lips/i).first()).toBeVisible();
+    await expect(page.getByText(/ß sounds like a clear s/i).first()).toBeVisible();
+    await expect(page.getByText(/German nouns and names are capitalized/i).first()).toBeVisible();
+    await expect(page.getByText('Common Mistakes').first()).toBeVisible();
+  });
+
+  test('daily grammar lesson uses linked expanded lesson content when available', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/daily');
+
+    await completeNextLessonMission(page);
+    await completeNextLessonMission(page);
+    await expect(page.getByRole('heading', { name: /Grammar Lesson/i })).toBeVisible();
+    await page.getByRole('button', { name: /Study Grammar Lesson/i }).click();
+
+    await expect(page.getByRole('heading', { name: /Das Alphabet, Aussprache und Zahlen/i })).toBeVisible();
+    await expect(page.getByText('zweiundzwanzig').first()).toBeVisible();
+    await expect(page.getByText('Pronunciation Guide').first()).toBeVisible();
+    await expect(page.getByText('Common Mistakes').first()).toBeVisible();
+  });
+
   test('daily A1 grammar practice recommends the prerequisite lesson before tagged practice', async ({ page }) => {
     await seed(page);
     await gotoPreview(page, '/level/A1/daily?forceMission=grammar');

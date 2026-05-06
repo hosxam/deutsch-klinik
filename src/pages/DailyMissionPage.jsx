@@ -29,6 +29,20 @@ function toArray(v) {
   return [];
 }
 
+function lessonText(item) {
+  if (!item) return '';
+  if (typeof item === 'string') return item;
+  if (Array.isArray(item)) return item.filter(Boolean).join(' - ');
+  if (typeof item === 'object') {
+    return [
+      item.form, item.word, item.prompt, item.de, item.german, item.title,
+      item.wrong, item.correct, item.answer, item.use, item.translation,
+      item.en, item.explanation, item.example,
+    ].filter(Boolean).join(' - ');
+  }
+  return String(item);
+}
+
 import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronLeft, ChevronRight,
@@ -93,6 +107,17 @@ const TYPE_LABELS = {
 };
 
 const SESSION_KEY = 'deutsch_klinik_daily_session';
+
+const GRAMMAR_LESSON_TO_EXPANDED_LESSON = {
+  A1_gc_1: 'A1_lesson_2',
+  A1_gc_2: 'A1_lesson_1',
+};
+
+function getExpandedGrammarLesson(grammarLesson) {
+  const mappedLessonId = GRAMMAR_LESSON_TO_EXPANDED_LESSON[grammarLesson?.id];
+  if (!mappedLessonId) return null;
+  return germanLessons.find((lesson) => lesson.id === mappedLessonId) || null;
+}
 
 function loadSession(lev) {
   try {
@@ -403,7 +428,8 @@ export default function DailyMissionPage() {
   const hGcStart = () => {
     const cm = getCm();
     if (cm?.nextGcLesson) {
-      setGcLesson(cm.nextGcLesson);
+      const expandedLesson = getExpandedGrammarLesson(cm.nextGcLesson);
+      setGcLesson(expandedLesson ? { ...cm.nextGcLesson, expandedLesson } : cm.nextGcLesson);
       // Find related grammar practice questions linked to this lesson's topics
       const topics = cm.nextGcLesson.linkedGrammarTopics || [];
       const allQs = grammarData[lvl] || [];
@@ -1210,64 +1236,112 @@ export default function DailyMissionPage() {
           ) : (
             <div>
               <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-                {gcLesson?.title || 'Grammar Lesson'}
+                {gcLesson?.expandedLesson?.title || gcLesson?.title || 'Grammar Lesson'}
               </h3>
-              <span style={tag('rgba(168,85,247,0.15)')}>Unit {gcLesson?.unit} &middot; {gcLesson?.topic}</span>
+              <span style={tag('rgba(168,85,247,0.15)')}>
+                Unit {gcLesson?.unit} &middot; {gcLesson?.expandedLesson ? `${gcLesson.topic} linked to ${gcLesson.expandedLesson.id}` : gcLesson?.topic}
+                {gcLesson?.expandedLesson?.estimatedMinutes ? ` · ${gcLesson.expandedLesson.estimatedMinutes} min` : ''}
+              </span>
 
               {/* Explanation */}
-              {gcLesson?.explanation && (
+              {(gcLesson?.expandedLesson?.explanation || gcLesson?.explanation) && (
                 <div style={{ background: 'var(--bg-secondary)', padding: '0.8rem', borderRadius: '6px', marginTop: '0.75rem', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
                   <strong style={{ color: 'var(--accent)' }}>Explanation:</strong>
-                  <p style={{ marginTop: '0.3rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{gcLesson.explanation}</p>
+                  <p style={{ marginTop: '0.3rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{gcLesson?.expandedLesson?.explanation || gcLesson.explanation}</p>
                 </div>
               )}
 
               {/* Rules */}
-              {gcLesson?.rules?.length > 0 && (
+              {(gcLesson?.expandedLesson?.grammarFocus || gcLesson?.rules?.length > 0) && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Rules:</strong>
-                  <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
-                    {toArray(gcLesson.rules).map((r, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{r}</li>)}
-                  </ul>
+                  {gcLesson?.expandedLesson?.grammarFocus ? (
+                    <p style={{ marginTop: '0.3rem', color: 'var(--text-primary)', lineHeight: 1.6, fontSize: '0.85rem', whiteSpace: 'pre-line' }}>{gcLesson.expandedLesson.grammarFocus}</p>
+                  ) : (
+                    <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
+                      {toArray(gcLesson.rules).map((r, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{r}</li>)}
+                    </ul>
+                  )}
+                </div>
+              )}
+
+              {/* Forms and tables from expanded lesson */}
+              {gcLesson?.expandedLesson?.formsTables?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Forms and Tables:</strong>
+                  {gcLesson.expandedLesson.formsTables.map((table, i) => (
+                    <div key={i} style={{ marginTop: '0.4rem', padding: '0.5rem 0.6rem', borderRadius: '6px', background: 'var(--bg-secondary)' }}>
+                      {table.title && <p style={{ fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.3rem', fontSize: '0.82rem' }}>{table.title}</p>}
+                      {toArray(table.rows).map((row, j) => (
+                        <div key={j} style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', padding: '0.25rem 0', borderTop: j > 0 ? '1px solid var(--border)' : 'none', fontSize: '0.82rem' }}>
+                          {toArray(row).map((cell, k) => (
+                            <span key={k} style={{ color: k === 0 ? 'var(--accent)' : 'var(--text-secondary)', fontWeight: k === 0 ? 700 : 400 }}>{cell}</span>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
                 </div>
               )}
 
               {/* Examples */}
-              {gcLesson?.examples?.length > 0 && (
+              {(gcLesson?.expandedLesson?.examples?.length > 0 || gcLesson?.examples?.length > 0) && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Examples:</strong>
                   <div style={{ marginTop: '0.3rem' }}>
-                    {toArray(gcLesson.examples).slice(0, 4).map((ex, i) => (
+                    {toArray(gcLesson?.expandedLesson?.examples || gcLesson.examples).slice(0, 6).map((ex, i) => (
                       <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.35rem 0.5rem', background: i % 2 === 0 ? 'var(--bg-secondary)' : 'transparent', borderRadius: '4px', marginBottom: '0.2rem', fontSize: '0.85rem' }}>
-                        <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{ex.de}</span>
-                        <span style={{ color: 'var(--text-secondary)' }}>{ex.en}</span>
+                        {typeof ex === 'object' && (ex.de || ex.german) ? (
+                          <>
+                            <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{ex.de || ex.german}</span>
+                            <span style={{ color: 'var(--text-secondary)' }}>{ex.en || ex.translation}</span>
+                          </>
+                        ) : (
+                          <span style={{ color: 'var(--text-primary)' }}>{lessonText(ex)}</span>
+                        )}
                       </div>
                     ))}
                   </div>
                 </div>
               )}
 
+              {/* Pronunciation from expanded lesson */}
+              {gcLesson?.expandedLesson?.pronunciationNotes?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong style={{ fontSize: '0.85rem', color: '#06b6d4' }}>Pronunciation Guide:</strong>
+                  <ul style={{ marginTop: '0.3rem', paddingLeft: '1.2rem', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
+                    {toArray(gcLesson.expandedLesson.pronunciationNotes).map((note, i) => <li key={i} style={{ marginBottom: '0.2rem' }}>{lessonText(note)}</li>)}
+                  </ul>
+                </div>
+              )}
+
               {/* Common Mistakes */}
-              {gcLesson?.commonMistakes?.length > 0 && (
+              {((gcLesson?.expandedLesson?.commonMistakes || gcLesson?.commonMistakes || gcLesson?.mistakes)?.length > 0) && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: '#ef4444' }}>Common Mistakes:</strong>
-                  {toArray(gcLesson.commonMistakes).slice(0, 3).map((m, i) => (
+                  {toArray(gcLesson?.expandedLesson?.commonMistakes || gcLesson.commonMistakes || gcLesson.mistakes).slice(0, 5).map((m, i) => (
                     <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(239,68,68,0.08)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
-                      <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>Wrong: "{m.wrong}"</div>
-                      <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>Correct: "{m.correct}"</div>
-                      <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{m.explanation}</div>
+                      {typeof m === 'object' && (m.wrong || m.correct) ? (
+                        <>
+                          <div style={{ color: '#ef4444', marginBottom: '0.1rem' }}>Wrong: "{m.wrong}"</div>
+                          <div style={{ color: '#22c55e', marginBottom: '0.1rem' }}>Correct: "{m.correct}"</div>
+                          <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{m.explanation}</div>
+                        </>
+                      ) : (
+                        <div style={{ color: 'var(--text-secondary)' }}>{lessonText(m)}</div>
+                      )}
                     </div>
                   ))}
                 </div>
               )}
 
               {/* Mini Practice */}
-              {gcLesson?.miniPractice?.length > 0 && (
+              {((gcLesson?.expandedLesson?.miniDrills || gcLesson?.miniPractice || gcLesson?.practice)?.length > 0) && (
                 <div style={{ marginBottom: '0.75rem' }}>
                   <strong style={{ fontSize: '0.85rem', color: 'var(--accent)' }}>Quick Practice:</strong>
-                  {toArray(gcLesson.miniPractice).slice(0, 3).map((p, i) => (
+                  {toArray(gcLesson?.expandedLesson?.miniDrills || gcLesson.miniPractice || gcLesson.practice).slice(0, 5).map((p, i) => (
                     <div key={i} style={{ padding: '0.4rem 0.6rem', background: 'rgba(168,85,247,0.06)', borderRadius: '6px', marginTop: '0.3rem', fontSize: '0.85rem' }}>
-                      <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{p.prompt}</p>
+                      <p style={{ color: 'var(--text-primary)', marginBottom: '0.2rem' }}>{lessonText(p.prompt || p)}</p>
                       <p style={{ color: '#059669', fontStyle: 'italic' }}>Answer: {p.answer}</p>
                       {p.explanation && <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{p.explanation}</p>}
                     </div>
@@ -1283,7 +1357,7 @@ export default function DailyMissionPage() {
                     These practice questions relate to today&apos;s lesson topic(s).
                   </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
-                    {gcLesson.linkedGrammarTopics.map((t, i) => (
+                    {(gcLesson.linkedGrammarTopics || gcLesson.expandedLesson?.linkedPracticeConceptTags || []).map((t, i) => (
                       <span key={i} style={{ padding: '0.15rem 0.4rem', borderRadius: '4px', background: 'rgba(168,85,247,0.1)', color: '#a855f7', fontSize: '0.75rem' }}>
                         {t}
                       </span>

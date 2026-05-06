@@ -82,12 +82,18 @@
       "Do not write du bin. Use du bist.",
       "Use Sie with patients, doctors you do not know, officials, and formal situations.",
       "In displayed German, write heiße with ß. Typed answers may accept heisse for comparison.",
-      "In W-questions, the verb comes after the question word: Woher kommst du?"
+      "In W-questions, the verb comes after the question word: Woher kommst du?",
+      "Do not leave German nouns lowercase in display text: der Name and die Klinik need capital letters."
     ],
     "pronunciationNotes": [
       "ß sounds like a clear s: heiße.",
       "ü in Tschüss is rounded; say ee with rounded lips.",
-      "In questions such as Wie heißen Sie?, the melody rises slightly at the end."
+      "In questions such as Wie heißen Sie?, the melody rises slightly at the end.",
+      "German vowels are written clearly: a, e, i, o, u. Say the vowel cleanly before adding an umlaut.",
+      "ä sounds close to e in many A1 words, as in Ärztin. ö and ü need rounded lips.",
+      "ß sounds like a clear s, as in heiße. Displayed German should use ß where the word requires it.",
+      "ch is soft after i, e, ä, ö, ü as in ich; it is stronger after a, o, u as in Bach.",
+      "German nouns and names are capitalized: der Name, die Ärztin, Herr Müller."
     ],
     "medicalFspNotes": [
       "In clinics, default to Sie: Guten Tag, ich bin Dr. Ahmed. Wie heißen Sie?",
@@ -191,7 +197,51 @@
     ],
     "miniDrills": [
       "Choose a greeting for morning, afternoon, and evening.",
-      "Write two introductions: one informal with du and one formal with Sie."
+      "Write two introductions: one informal with du and one formal with Sie.",
+      {
+        "prompt": "Choose the display-quality spelling: heisse or heiße?",
+        "answer": "heiße"
+      },
+      {
+        "prompt": "Which words need capital letters: ich bin arzt in der klinik?",
+        "answer": "Ich bin Arzt in der Klinik."
+      },
+      {
+        "prompt": "Say Tschüss slowly and notice the rounded ü sound.",
+        "answer": "Tschüss"
+      }
+    ],
+    "formsTables": [
+      {
+        "title": "Starter pronunciation and capitalization",
+        "rows": [
+          [
+            "ä",
+            "close to e in many A1 words",
+            "die Ärztin"
+          ],
+          [
+            "ö",
+            "rounded lips",
+            "Österreich"
+          ],
+          [
+            "ü",
+            "say ee with rounded lips",
+            "Tschüss"
+          ],
+          [
+            "ß",
+            "clear s sound",
+            "heiße"
+          ],
+          [
+            "Nouns",
+            "capitalize people, places, things, ideas",
+            "der Name, die Klinik"
+          ]
+        ]
+      }
     ]
   },
   {
@@ -353,13 +403,189 @@
             "seven-and-forty"
           ]
         ]
+      },
+      {
+        "title": "Numbers 0-12",
+        "rows": [
+          [
+            "0",
+            "null",
+            "zero"
+          ],
+          [
+            "1",
+            "eins",
+            "one"
+          ],
+          [
+            "2",
+            "zwei",
+            "two"
+          ],
+          [
+            "3",
+            "drei",
+            "three"
+          ],
+          [
+            "4",
+            "vier",
+            "four"
+          ],
+          [
+            "5",
+            "fünf",
+            "five"
+          ],
+          [
+            "6",
+            "sechs",
+            "six"
+          ],
+          [
+            "7",
+            "sieben",
+            "seven"
+          ],
+          [
+            "8",
+            "acht",
+            "eight"
+          ],
+          [
+            "9",
+            "neun",
+            "nine"
+          ],
+          [
+            "10",
+            "zehn",
+            "ten"
+          ],
+          [
+            "11",
+            "elf",
+            "eleven"
+          ],
+          [
+            "12",
+            "zwölf",
+            "twelve"
+          ]
+        ]
+      },
+      {
+        "title": "Numbers 13-19",
+        "rows": [
+          [
+            "13",
+            "dreizehn",
+            "three-ten"
+          ],
+          [
+            "14",
+            "vierzehn",
+            "four-ten"
+          ],
+          [
+            "15",
+            "fünfzehn",
+            "five-ten"
+          ],
+          [
+            "16",
+            "sechzehn",
+            "sixteen drops the s from sechs"
+          ],
+          [
+            "17",
+            "siebzehn",
+            "seventeen shortens sieben"
+          ],
+          [
+            "18",
+            "achtzehn",
+            "eight-ten"
+          ],
+          [
+            "19",
+            "neunzehn",
+            "nine-ten"
+          ]
+        ]
+      },
+      {
+        "title": "Tens",
+        "rows": [
+          [
+            "20",
+            "zwanzig",
+            "twenty"
+          ],
+          [
+            "30",
+            "dreißig",
+            "thirty"
+          ],
+          [
+            "40",
+            "vierzig",
+            "forty"
+          ],
+          [
+            "50",
+            "fünfzig",
+            "fifty"
+          ],
+          [
+            "60",
+            "sechzig",
+            "sixty"
+          ],
+          [
+            "70",
+            "siebzig",
+            "seventy"
+          ],
+          [
+            "80",
+            "achtzig",
+            "eighty"
+          ],
+          [
+            "90",
+            "neunzig",
+            "ninety"
+          ]
+        ]
+      },
+      {
+        "title": "Compound numbers with und",
+        "rows": [
+          [
+            "22",
+            "zweiundzwanzig",
+            "two-and-twenty"
+          ],
+          [
+            "33",
+            "dreiunddreißig",
+            "three-and-thirty"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
       }
     ],
     "commonMistakes": [
       "Do not replace ü with u in displayed German: fünf is correct, funf is not display quality.",
       "Do not pronounce German w like English w.",
       "Write ß in displayed words like heißen and dreißig; typed comparison may accept ss.",
-      "For 21-99, German says the ones digit first: 47 is siebenundvierzig, not vierzigsieben."
+      "For 21-99, German says the ones digit first: 47 is siebenundvierzig, not vierzigsieben.",
+      "Do not reverse compound numbers into English order: 22 is zweiundzwanzig, not zwanzigzwei."
     ],
     "miniDrills": [
       {
@@ -377,7 +603,12 @@
     ],
     "pronunciationNotes": [
       "Round lips for ö and ü.",
-      "Keep word stress steady, usually on the first syllable in simple German words."
+      "Keep word stress steady, usually on the first syllable in simple German words.",
+      "z sounds like ts: zehn and zwei start with a ts sound.",
+      "ei sounds like English eye: eins, drei.",
+      "ie is a long ee sound: sieben.",
+      "ß is a clear s sound in dreißig; displayed German should write dreißig, not dreissig.",
+      "Round lips for ö and ü, especially in zwölf and fünf."
     ],
     "linkedPracticeConceptTags": [
       "a1_alphabet_pronunciation",

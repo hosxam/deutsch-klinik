@@ -71,6 +71,56 @@ function PracticeLink({ to, icon: Icon, label, sub, color }) {
   );
 }
 
+function normalizeRows(value) {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
+function textFromItem(item) {
+  if (!item) return '';
+  if (typeof item === 'string') return item;
+  if (Array.isArray(item)) return item.filter(Boolean).join(' - ');
+  if (typeof item === 'object') {
+    return [
+      item.form, item.word, item.prompt, item.de, item.german, item.title,
+      item.wrong, item.correct, item.answer, item.use, item.translation,
+      item.en, item.explanation,
+    ].filter(Boolean).join(' - ');
+  }
+  return String(item);
+}
+
+function renderTableRows(rows) {
+  return normalizeRows(rows).map((row, i) => {
+    const cells = Array.isArray(row)
+      ? row
+      : [row.form, row.word, row.use, row.example, row.translation, row.note].filter(Boolean);
+    return (
+      <tr key={i}>
+        {cells.map((cell, j) => (
+          <td key={j} style={{ padding: '8px 10px', borderBottom: '1px solid var(--border)', color: j === 0 ? 'var(--text-primary)' : 'var(--text-secondary)', fontWeight: j === 0 ? 700 : 400, fontSize: '13px' }}>
+            {cell}
+          </td>
+        ))}
+      </tr>
+    );
+  });
+}
+
+function LessonSection({ id, title, icon: Icon, children, color }) {
+  return (
+    <div id={id} style={{
+      borderRadius: '10px', padding: '16px 20px', marginBottom: '16px',
+      backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+    }}>
+      <h3 style={{ fontSize: '14px', fontWeight: '700', color: color || 'var(--accent)', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+        {Icon && <Icon size={16} />} {title}
+      </h3>
+      {children}
+    </div>
+  );
+}
+
 export default function LessonDetailPage() {
   const { levelId, lessonId } = useParams();
   
@@ -138,6 +188,10 @@ export default function LessonDetailPage() {
     if (lesson.grammarFocus) count++;
     if (lesson.examples?.length > 0) count++;
     if (lesson.guidedPractice?.length > 0) count++;
+    if (lesson.formsTables?.length > 0 || lesson.formsTable?.length > 0) count++;
+    if (lesson.pronunciationNotes?.length > 0) count++;
+    if (lesson.commonMistakes?.length > 0) count++;
+    if (lesson.miniDrills?.length > 0 || lesson.controlledPractice?.length > 0) count++;
     return count;
   })();
   const doneChecklistItems = (() => {
@@ -147,6 +201,10 @@ export default function LessonDetailPage() {
     if (lesson.grammarFocus && checklist.grammar) count++;
     if (lesson.examples?.length > 0 && checklist.examples) count++;
     if (lesson.guidedPractice?.length > 0 && checklist.practice) count++;
+    if ((lesson.formsTables?.length > 0 || lesson.formsTable?.length > 0) && checklist.tables) count++;
+    if (lesson.pronunciationNotes?.length > 0 && checklist.pronunciation) count++;
+    if (lesson.commonMistakes?.length > 0 && checklist.mistakes) count++;
+    if ((lesson.miniDrills?.length > 0 || lesson.controlledPractice?.length > 0) && checklist.drills) count++;
     return count;
   })();
   const checklistProgress = totalChecklistItems > 0 ? Math.round(doneChecklistItems / totalChecklistItems * 100) : 0;
@@ -216,6 +274,12 @@ export default function LessonDetailPage() {
             fontSize: '11px', fontWeight: '700', padding: '2px 8px', borderRadius: '4px',
             backgroundColor: color + '20', color,
           }}>{levelId}</span>
+          {lesson.estimatedMinutes && (
+            <span style={{
+              fontSize: '11px', fontWeight: '700', padding: '2px 8px', borderRadius: '4px',
+              backgroundColor: 'var(--bg-hover)', color: 'var(--text-secondary)',
+            }}>{lesson.estimatedMinutes} min</span>
+          )}
           {lessonCompleted && (
             <span style={{
               fontSize: '11px', display: 'inline-flex', alignItems: 'center', gap: '4px',
@@ -230,7 +294,25 @@ export default function LessonDetailPage() {
           {lesson.title}
         </h1>
         <p style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>{lesson.objective}</p>
+        {(lesson.conceptId || lesson.prerequisiteConceptIds?.length > 0) && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px', fontSize: '11px', color: 'var(--text-muted)' }}>
+            {lesson.conceptId && <span>Concept: {lesson.conceptId}</span>}
+            {lesson.prerequisiteConceptIds?.length > 0 && <span>Prerequisites: {lesson.prerequisiteConceptIds.join(', ')}</span>}
+          </div>
+        )}
       </div>
+
+      {(lesson.conceptsTaught?.length > 0 || lesson.linkedPracticeConceptTags?.length > 0) && (
+        <LessonSection title="What You Will Learn" icon={ListChecks} color={color}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+            {normalizeRows(lesson.conceptsTaught?.length ? lesson.conceptsTaught : lesson.linkedPracticeConceptTags).map((concept, i) => (
+              <span key={i} style={{ padding: '4px 8px', borderRadius: '6px', background: color + '15', color, fontSize: '12px', fontWeight: 600 }}>
+                {concept}
+              </span>
+            ))}
+          </div>
+        </LessonSection>
+      )}
 
       {/* Completed Banner */}
       {lessonCompleted && (
@@ -359,6 +441,46 @@ export default function LessonDetailPage() {
               }}
             />
           )}
+          {(lesson.formsTables?.length > 0 || lesson.formsTable?.length > 0) && (
+            <ChecklistItem
+              icon={CHECKLIST_ICONS.grammar} label="Study forms and tables"
+              done={checklist.tables} color={color}
+              onClick={() => {
+                toggleChecklist('tables');
+                setTimeout(() => document.getElementById('section-forms')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
+          {lesson.pronunciationNotes?.length > 0 && (
+            <ChecklistItem
+              icon={Headphones} label="Review pronunciation guide"
+              done={checklist.pronunciation} color={color}
+              onClick={() => {
+                toggleChecklist('pronunciation');
+                setTimeout(() => document.getElementById('section-pronunciation')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
+          {lesson.commonMistakes?.length > 0 && (
+            <ChecklistItem
+              icon={Lightbulb} label="Check common mistakes"
+              done={checklist.mistakes} color={color}
+              onClick={() => {
+                toggleChecklist('mistakes');
+                setTimeout(() => document.getElementById('section-mistakes')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
+          {(lesson.miniDrills?.length > 0 || lesson.controlledPractice?.length > 0 || lesson.mixedPractice?.length > 0) && (
+            <ChecklistItem
+              icon={Pencil} label="Try mini drills"
+              done={checklist.drills} color={color}
+              onClick={() => {
+                toggleChecklist('drills');
+                setTimeout(() => document.getElementById('section-mini-drills')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+              }}
+            />
+          )}
         </div>
       </div>
 
@@ -387,7 +509,7 @@ export default function LessonDetailPage() {
               <li key={i} style={{
                 padding: '8px 0', borderBottom: i < lesson.examples.length - 1 ? '1px solid var(--border)' : 'none',
                 fontSize: '14px', color: 'var(--text-primary)', fontStyle: 'italic',
-              }}>{ex}</li>
+              }}>{textFromItem(ex)}</li>
             ))}
           </ul>
         </div>
@@ -404,6 +526,77 @@ export default function LessonDetailPage() {
           </h3>
           <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, whiteSpace: 'pre-line' }}>{lesson.grammarFocus}</p>
         </div>
+      )}
+
+      {/* Forms and Tables */}
+      {(lesson.formsTables?.length > 0 || lesson.formsTable?.length > 0) && (
+        <LessonSection id="section-forms" title="Forms and Tables" icon={BookOpen} color={color}>
+          {lesson.formsTables?.map((table, i) => (
+            <div key={i} style={{ marginBottom: i < lesson.formsTables.length - 1 ? '14px' : 0 }}>
+              {table.title && <h4 style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '8px' }}>{table.title}</h4>}
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', background: 'var(--bg-hover)', borderRadius: '8px', overflow: 'hidden' }}>
+                  <tbody>{renderTableRows(table.rows)}</tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+          {lesson.formsTable?.length > 0 && (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '8px', marginTop: lesson.formsTables?.length ? '12px' : 0 }}>
+              {lesson.formsTable.map((row, i) => (
+                <div key={i} style={{ padding: '10px 12px', borderRadius: '8px', background: 'var(--bg-hover)', fontSize: '13px' }}>
+                  <div style={{ color: 'var(--text-primary)', fontWeight: 700 }}>{textFromItem(row)}</div>
+                  {row.example && <div style={{ color: 'var(--text-muted)', marginTop: '3px', fontStyle: 'italic' }}>{row.example}</div>}
+                </div>
+              ))}
+            </div>
+          )}
+        </LessonSection>
+      )}
+
+      {/* Pronunciation Notes */}
+      {lesson.pronunciationNotes?.length > 0 && (
+        <LessonSection id="section-pronunciation" title="Pronunciation Guide" icon={Headphones} color={color}>
+          <ul style={{ margin: 0, paddingLeft: '18px', color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.65 }}>
+            {lesson.pronunciationNotes.map((note, i) => <li key={i}>{textFromItem(note)}</li>)}
+          </ul>
+        </LessonSection>
+      )}
+
+      {/* Common Mistakes */}
+      {lesson.commonMistakes?.length > 0 && (
+        <LessonSection id="section-mistakes" title="Common Mistakes" icon={Lightbulb} color="#ef4444">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {lesson.commonMistakes.map((mistake, i) => (
+              <div key={i} style={{ padding: '10px 12px', borderRadius: '8px', background: 'rgba(239,68,68,0.08)', color: 'var(--text-secondary)', fontSize: '13px', lineHeight: 1.55 }}>
+                {textFromItem(mistake)}
+              </div>
+            ))}
+          </div>
+        </LessonSection>
+      )}
+
+      {/* Medical/FSP Notes */}
+      {lesson.medicalFspNotes?.length > 0 && (
+        <LessonSection title="Medical/FSP Notes" icon={Sparkles} color="#06b6d4">
+          <ul style={{ margin: 0, paddingLeft: '18px', color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.65 }}>
+            {lesson.medicalFspNotes.map((note, i) => <li key={i}>{textFromItem(note)}</li>)}
+          </ul>
+        </LessonSection>
+      )}
+
+      {/* Mini Drills */}
+      {(lesson.miniDrills?.length > 0 || lesson.controlledPractice?.length > 0 || lesson.mixedPractice?.length > 0) && (
+        <LessonSection id="section-mini-drills" title="Mini Drills and Controlled Practice" icon={Pencil} color={color}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {[...normalizeRows(lesson.miniDrills), ...normalizeRows(lesson.controlledPractice), ...normalizeRows(lesson.mixedPractice)].map((drill, i) => (
+              <div key={i} style={{ padding: '10px 12px', borderRadius: '8px', background: 'var(--bg-hover)', fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                <div style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{textFromItem(drill)}</div>
+                {drill.answer && <div style={{ marginTop: '4px', color: '#059669', fontStyle: 'italic' }}>Answer: {drill.answer}</div>}
+              </div>
+            ))}
+          </div>
+        </LessonSection>
       )}
 
       {/* Vocabulary */}
@@ -526,6 +719,21 @@ export default function LessonDetailPage() {
           </h3>
           <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7 }}>{lesson.reviewSummary}</p>
         </div>
+      )}
+
+      {(lesson.remediationIfFailed || lesson.linkedPracticeConceptTags?.length > 0 || lesson.remediationTags?.length > 0) && (
+        <LessonSection title="Linked Practice and Remediation" icon={ListChecks} color={color}>
+          {lesson.remediationIfFailed && (
+            <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '10px' }}>{lesson.remediationIfFailed}</p>
+          )}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+            {[...normalizeRows(lesson.linkedPracticeConceptTags), ...normalizeRows(lesson.remediationTags)].map((tagName, i) => (
+              <span key={i} style={{ padding: '4px 8px', borderRadius: '6px', background: color + '15', color, fontSize: '12px', fontWeight: 600 }}>
+                {tagName}
+              </span>
+            ))}
+          </div>
+        </LessonSection>
       )}
 
       {/* Complete Button */}

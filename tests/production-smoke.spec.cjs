@@ -438,10 +438,22 @@ test.describe('H. Daily Mission Flow', () => {
 
     const body = page.locator('body');
 
-    // Skip lesson to reach grammar
+    // Complete lesson missions so aligned grammar practice has taught concepts to use.
     for (let i = 0; i < 5; i++) {
       const txt = await body.textContent().catch(() => '');
       if (txt.includes('Grammar Practice')) break;
+      if (txt.includes('Lesson Complete!')) {
+        await page.locator('button').filter({ hasText: /Next Mission/ }).first().click();
+        await page.waitForTimeout(1000);
+        continue;
+      }
+      const studyLessonBtn = page.locator('button').filter({ hasText: /Study Lesson/ }).first();
+      if (await studyLessonBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+        await studyLessonBtn.click();
+        await page.locator('button').filter({ hasText: /Mark Lesson Complete/ }).first().click();
+        await page.waitForTimeout(1000);
+        continue;
+      }
       const skipBtn = page.locator('button').filter({ hasText: /Skip/ }).first();
       if (await skipBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
         await skipBtn.click();
