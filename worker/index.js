@@ -7,8 +7,7 @@
  * - Multipart POST (type: "transcription") -> Whisper audio transcription
  *
  * Required bindings:
- * - AI (Cloudflare Workers AI): for @cf/openai/whisper
- * - OPENAI_API_KEY (Optional fallback if Workers AI unavailable)
+ * - AI (Cloudflare Workers AI): for text feedback and @cf/openai/whisper
  */
 
 export default {

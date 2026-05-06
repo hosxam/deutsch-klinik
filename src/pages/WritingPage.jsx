@@ -4,7 +4,7 @@ import { getState, updateState } from '../utils/store';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
-import { Copy, ClipboardCheck, Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle, ShieldCheck } from 'lucide-react';
+import { Copy, ClipboardCheck, Sparkles, Loader2, CheckCircle2, XCircle, ShieldCheck } from 'lucide-react';
 import { correctWriting, isCorrectionEnabled } from '../utils/aiCorrection';
 
 export default function WritingPage() {
@@ -45,6 +45,9 @@ export default function WritingPage() {
   const submitWriting = () => {
     setTimerActive(false);
     setSubmitted(true);
+    setAiLoading(true);
+    setAiError('');
+    setAiResult(null);
     const state = getState();
     const writings = [
       ...(state.writings || []),
@@ -60,6 +63,17 @@ export default function WritingPage() {
       },
     ];
     updateState({ writings });
+    correctWriting({
+      level: levelId,
+      task: prompt.prompt,
+      userAnswer: text,
+    }).then((result) => {
+      setAiResult(result);
+    }).catch((err) => {
+      setAiError(err.message);
+    }).finally(() => {
+      setAiLoading(false);
+    });
   };
 
   if (prompts.length === 0) {
@@ -97,8 +111,7 @@ export default function WritingPage() {
 
         {/* AI Correction section */}
         <div className="mt-6">
-          {/* AI Correction button */}
-          {isCorrectionEnabled() ? (
+          {isCorrectionEnabled() && (
             <button
               onClick={async () => {
                 setAiLoading(true);
@@ -124,16 +137,9 @@ export default function WritingPage() {
               {aiLoading ? (
                 <><Loader2 size={18} className="animate-spin" /> Analyzing...</>
               ) : (
-                <><Sparkles size={18} /> Get AI Correction</>
+                <><Sparkles size={18} /> Run AI Correction Again</>
               )}
             </button>
-          ) : (
-            <div className="rounded-xl p-4 mb-3 text-sm" style={{ backgroundColor: 'rgba(251,191,36,0.1)', border: '1px solid #fbbf24' }}>
-              <p className="flex items-center gap-2" style={{ color: '#fbbf24' }}>
-                <AlertCircle size={16} />
-                Live AI correction is not configured yet. Use Copy Prompt instead.
-              </p>
-            </div>
           )}
 
           {/* AI Error */}
@@ -222,8 +228,8 @@ export default function WritingPage() {
                   <div className="space-y-1.5">
                     {aiResult.flashcards.map((fc, i) => (
                       <div key={i} className="text-xs p-3 rounded-lg flex justify-between" style={{ backgroundColor: 'var(--bg-hover)' }}>
-                        <span style={{ color: 'var(--accent)' }}>{fc.front}</span>
-                        <span style={{ color: 'var(--text-secondary)' }}>{fc.back}</span>
+                        <span style={{ color: 'var(--accent)' }}>{fc.german || fc.front}</span>
+                        <span style={{ color: 'var(--text-secondary)' }}>{fc.english || fc.back}</span>
                       </div>
                     ))}
                   </div>
