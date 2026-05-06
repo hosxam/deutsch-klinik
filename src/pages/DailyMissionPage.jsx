@@ -1302,6 +1302,10 @@ export default function DailyMissionPage() {
         const hasOptions = Array.isArray(ex.options) && ex.options.length > 0;
         const isTextType = !hasOptions;
         const typeColor = isTextType ? 'rgba(59,130,246,0.15)' : optionTypes.includes(ex.type) ? 'rgba(16,185,129,0.15)' : 'rgba(245,158,11,0.15)';
+        const recommendedLessonId = ex.taughtInLessonId || ex.remediationLessonId;
+        const recommendedLesson = recommendedLessonId ? germanLessons.find((lesson) => lesson.id === recommendedLessonId) : null;
+        const completedLessonIds = getCompletedLessons(lvl);
+        const shouldRecommendLesson = Boolean(recommendedLesson && recommendedLessonId && !completedLessonIds.includes(recommendedLessonId));
         return (
           <div style={sCard}>
             {practicingTopic && (
@@ -1309,6 +1313,14 @@ export default function DailyMissionPage() {
                 <span style={{ padding: '0.15rem 0.5rem', borderRadius: '4px', background: 'rgba(168,85,247,0.12)', color: '#a855f7', fontSize: '0.75rem', fontWeight: 600 }}>
                   Practicing: {practicingTopic}
                 </span>
+              </div>
+            )}
+            {shouldRecommendLesson && (
+              <div style={{ padding: '0.65rem 0.8rem', borderRadius: '8px', background: 'rgba(245,158,11,0.12)', border: '1px solid rgba(245,158,11,0.3)', marginBottom: '0.75rem' }}>
+                <p style={{ margin: 0, fontSize: '0.85rem', lineHeight: 1.45, color: 'var(--text-secondary)' }}>
+                  <Lightbulb size={14} style={{ color: '#f59e0b', marginRight: '0.35rem', verticalAlign: '-2px' }} />
+                  You should study this lesson first: <Link to={`/level/${lvl}/lessons/${recommendedLessonId}`} style={{ color: '#f59e0b', fontWeight: 700 }}>{recommendedLesson.title}</Link>.
+                </p>
               </div>
             )}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>

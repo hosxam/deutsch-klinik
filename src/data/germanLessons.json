@@ -7,15 +7,36 @@
     "conceptId": "a1.greetings.sein-introductions",
     "estimatedMinutes": 18,
     "prerequisiteConceptIds": [],
-    "linkedQuestionIds": ["A1_gr_4", "A1_gr_5", "A1_gr_6", "A1_gr_12"],
+    "linkedQuestionIds": [
+      "A1_gr_4",
+      "A1_gr_5",
+      "A1_gr_6",
+      "A1_gr_12"
+    ],
     "remediationLessonId": "A1_lesson_1",
     "objective": "Learn to greet people, introduce yourself and others, choose du/Sie, ask for a name and origin, and use the most common present-tense forms of sein.",
     "explanation": "In German, greetings vary by region and time of day. The formal Sie is used with strangers, coworkers, patients, officials, and older adults unless they invite du. The informal du is used with friends, family, children, and close classmates. This lesson also teaches the A1 forms of sein that appear in introduction questions: ich bin, du bist, er/sie/es ist. After a W-question word like woher, the conjugated verb stays in position 2: Woher kommst du?",
     "formsTable": [
-      { "form": "ich bin", "use": "I am", "example": "Ich bin Anna." },
-      { "form": "du bist", "use": "you are (informal)", "example": "Du bist freundlich." },
-      { "form": "er/sie/es ist", "use": "he/she/it is", "example": "Er ist in der Klinik." },
-      { "form": "Sie sind", "use": "you are (formal)", "example": "Sind Sie Herr Müller?" }
+      {
+        "form": "ich bin",
+        "use": "I am",
+        "example": "Ich bin Anna."
+      },
+      {
+        "form": "du bist",
+        "use": "you are (informal)",
+        "example": "Du bist freundlich."
+      },
+      {
+        "form": "er/sie/es ist",
+        "use": "he/she/it is",
+        "example": "Er ist in der Klinik."
+      },
+      {
+        "form": "Sie sind",
+        "use": "you are (formal)",
+        "example": "Sind Sie Herr Müller?"
+      }
     ],
     "examples": [
       "Guten Morgen! - Good morning!",
@@ -107,10 +128,26 @@
       }
     ],
     "controlledPractice": [
-      { "prompt": "Ich ___ ein Arzt.", "answer": "bin", "linkedQuestionId": "A1_gr_4" },
-      { "prompt": "Du ___ sehr freundlich.", "answer": "bist", "linkedQuestionId": "A1_gr_5" },
-      { "prompt": "Er ___ in der Klinik.", "answer": "ist", "linkedQuestionId": "A1_gr_6" },
-      { "prompt": "___ kommst du?", "answer": "Woher", "linkedQuestionId": "A1_gr_12" }
+      {
+        "prompt": "Ich ___ ein Arzt.",
+        "answer": "bin",
+        "linkedQuestionId": "A1_gr_4"
+      },
+      {
+        "prompt": "Du ___ sehr freundlich.",
+        "answer": "bist",
+        "linkedQuestionId": "A1_gr_5"
+      },
+      {
+        "prompt": "Er ___ in der Klinik.",
+        "answer": "ist",
+        "linkedQuestionId": "A1_gr_6"
+      },
+      {
+        "prompt": "___ kommst du?",
+        "answer": "Woher",
+        "linkedQuestionId": "A1_gr_12"
+      }
     ],
     "mixedPractice": [
       "Introduce yourself with name, origin, and profession.",
@@ -132,20 +169,42 @@
     "readingTask": "Read: 'Maria sagt: Guten Morgen! Ich bin Maria. Wer bist du? Paul sagt: Hallo Maria, ich bin Paul. Freut mich!'",
     "speakingTask": "Record yourself introducing yourself in German.",
     "writingTask": "Write 3 sentences: introduce yourself, say where you're from, ask someone their name.",
-    "reviewSummary": "Today you learned: greetings, introductions, sein forms, W-question order, and the formal vs informal distinction."
+    "reviewSummary": "Today you learned: greetings, introductions, sein forms, W-question order, and the formal vs informal distinction.",
+    "conceptsTaught": [
+      "a1_greetings_introductions",
+      "a1_sein_intro",
+      "a1_w_questions_origin"
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_greetings_introductions",
+      "a1_sein"
+    ],
+    "prerequisites": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_greetings_introductions",
+      "a1_sein"
+    ],
+    "miniDrills": [
+      "Choose a greeting for morning, afternoon, and evening.",
+      "Write two introductions: one informal with du and one formal with Sie."
+    ]
   },
   {
     "level": "A1",
     "unit": "A1_unit_1",
     "id": "A1_lesson_2",
-    "title": "Das Alphabet und die Zahlen",
+    "title": "Das Alphabet, Aussprache und Zahlen",
     "objective": "Learn the German alphabet, numbers 0-100, and how to spell your name.",
-    "explanation": "The German alphabet has 26 letters plus Ä, Ö, Ü, and ss. Numbers 1-20 are uniqü; from 21: einundzwanzig (ones-and-tens).",
+    "explanation": "German spelling is mostly regular. Learn the alphabet, then the special sounds ä, ö, ü and ß. Numbers are built in patterns: 21 is einundzwanzig, literally one-and-twenty. Dates use ordinal endings, for example der erste Mai. This lesson prepares number, spelling, date, and pronunciation questions.",
     "examples": [
-      "Buchstabiere bitte: M-U-E-L-L-E-R.",
-      "Wie schreibt man das?",
-      "Meine Telefonnummer ist 0176 123 456.",
-      "Einundzwanzig (21), zweiunddreissig (32)"
+      "Ich heiße Anna. - My name is Anna.",
+      "Meine Telefonnummer ist 030 123456. - My phone number is 030 123456.",
+      "Heute ist der erste Mai. - Today is May first."
     ],
     "vocabulary": [
       {
@@ -207,20 +266,107 @@
     "readingTask": "Read: 'Meine Telefonnummer ist 030 - 44 55 66 77.'",
     "speakingTask": "Say your phone number, house number, and age in German.",
     "writingTask": "Write 5 numbers in digits and words: 14, 33, 47, 52, 89.",
-    "reviewSummary": "You learned the German alphabet (26 + Ä Ö Ü ss), how to spell, and numbers 0-100."
+    "reviewSummary": "You learned the German alphabet (26 + Ä Ö Ü ss), how to spell, and numbers 0-100.",
+    "conceptsTaught": [
+      "a1_alphabet_pronunciation",
+      "a1_umlauts_eszett",
+      "a1_numbers_dates"
+    ],
+    "formsTables": [
+      {
+        "title": "Core sounds",
+        "rows": [
+          [
+            "w",
+            "sounds like English v",
+            "wir"
+          ],
+          [
+            "v",
+            "often sounds like f",
+            "Vater"
+          ],
+          [
+            "z",
+            "sounds like ts",
+            "Zeit"
+          ],
+          [
+            "ß",
+            "clear s sound",
+            "heißen"
+          ],
+          [
+            "ch",
+            "soft after i/e/ä/ö/ü, stronger after a/o/u",
+            "ich, acht"
+          ]
+        ]
+      },
+      {
+        "title": "Number pattern",
+        "rows": [
+          [
+            "21",
+            "einundzwanzig",
+            "one-and-twenty"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not replace ü with u in displayed German.",
+      "Do not pronounce German w like English w.",
+      "Write ß in displayed words like heißen; typed comparison may accept ss."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Spell 22 in German.",
+        "answer": "zweiundzwanzig"
+      },
+      {
+        "prompt": "Which sound does German z make?",
+        "answer": "ts"
+      }
+    ],
+    "pronunciationNotes": [
+      "Round lips for ö and ü.",
+      "Keep word stress steady, usually on the first syllable in simple German words."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_alphabet_pronunciation",
+      "a1_numbers_dates"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_alphabet_pronunciation",
+      "a1_numbers_dates"
+    ],
+    "conceptId": "a1_alphabet_pronunciation"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_3",
-    "title": "Meine Familie",
+    "title": "Nomen, Großschreibung, Genus und Artikel",
     "objective": "Describe your family members, use possessive articles, and talk about age.",
-    "explanation": "Family vocabulary uses possessive articles: mein/meine (my), dein/deine (your), sein/seine (his), ihr/ihre (her). Articles change with gender.",
+    "explanation": "German nouns are always capitalized and have a grammatical gender: masculine der, feminine die, or neuter das. The gender belongs to the noun and must be learned with it. Indefinite articles are ein for masculine and neuter nouns and eine for feminine nouns. Plurals often use die, but plural endings vary, so study article + word + plural together.",
     "examples": [
-      "Mein Vater heißt Klaus.",
-      "Meine Mutter ist 45 Jahre alt.",
-      "Hast du Geschwister?",
-      "Ich habe eine Schwester und einen Bruder."
+      "Der Hund ist braun. - The dog is brown.",
+      "Die Katze schläft. - The cat is sleeping.",
+      "Das Kind spielt. - The child is playing."
     ],
     "vocabulary": [
       {
@@ -282,21 +428,115 @@
     "readingTask": "Read: 'Anna hat eine grosse Familie. Ihr Vater ist Arzt. Ihre Mutter ist Hausfrau.'",
     "speakingTask": "Describe your family in 3-4 sentences. Record yourself.",
     "writingTask": "Write a paragraph about your family: names, ages, professions.",
-    "reviewSummary": "You learned family vocabulary, possessive articles, and family discussion."
+    "reviewSummary": "You learned family vocabulary, possessive articles, and family discussion.",
+    "conceptsTaught": [
+      "a1_noun_gender_basics",
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics",
+      "a1_vocab_family"
+    ],
+    "formsTables": [
+      {
+        "title": "Articles in nominative",
+        "rows": [
+          [
+            "masculine",
+            "der/ein",
+            "der Hund, ein Hund"
+          ],
+          [
+            "feminine",
+            "die/eine",
+            "die Katze, eine Katze"
+          ],
+          [
+            "neuter",
+            "das/ein",
+            "das Kind, ein Kind"
+          ],
+          [
+            "plural",
+            "die",
+            "die Kinder"
+          ]
+        ]
+      },
+      {
+        "title": "Common plural signals",
+        "rows": [
+          [
+            "-e",
+            "der Tag - die Tage"
+          ],
+          [
+            "-er",
+            "das Kind - die Kinder"
+          ],
+          [
+            "-n/-en",
+            "die Frau - die Frauen"
+          ],
+          [
+            "-s",
+            "das Auto - die Autos"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not guess gender from English.",
+      "Do not write nouns in lowercase.",
+      "Do not use eine with masculine or neuter nouns."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ Hund ist braun.",
+        "answer": "Der"
+      },
+      {
+        "prompt": "___ Katze schläft.",
+        "answer": "Die"
+      },
+      {
+        "prompt": "___ Kind spielt.",
+        "answer": "Das"
+      }
+    ],
+    "pronunciationNotes": [
+      "Final -e is short and light, as in Katze."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics"
+    ],
+    "conceptId": "a1_noun_gender_basics"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_4",
-    "title": "Im Restaurant",
+    "title": "Nominativ und Akkusativ im Alltag",
     "objective": "Order food and drinks, understand a menu, and pay the bill.",
-    "explanation": "Use 'Ich möchte...' (I would like) or 'Ich hätte gern...'. 'möchten' is a special modal verb.",
+    "explanation": "The nominative is used for the subject: Der Mann kommt. The accusative is used for the direct object after verbs such as sehen, haben, brauchen, kaufen, essen and trinken. The main A1 change is masculine der -> den and ein -> einen. Feminine die/eine and neuter das/ein stay the same in the accusative.",
     "examples": [
-      "Ich möchte einen Kaffee, bitte.",
-      "Haben Sie vegetarische Gerichte?",
-      "Die Rechnung, bitte!",
-      "Was empfehlen Sie?",
-      "Es hat gut geschmeckt!"
+      "Ich habe einen Termin. - I have an appointment.",
+      "Ich sehe den Arzt. - I see the doctor.",
+      "Ich kaufe eine Suppe. - I buy a soup."
     ],
     "vocabulary": [
       {
@@ -358,20 +598,86 @@
     "readingTask": "Menu: Suppe 4,50 Euro, Schnitzel 12,80 Euro, Salat 6,90 Euro.",
     "speakingTask": "Role-play ordering a meal (greeting, order, pay).",
     "writingTask": "Write a restaurant review (3-4 sentences).",
-    "reviewSummary": "You learned restaurant vocabulary, 'möchten', and dining phrases."
+    "reviewSummary": "You learned restaurant vocabulary, 'möchten', and dining phrases.",
+    "conceptsTaught": [
+      "a1_nominative_basics",
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "formsTables": [
+      {
+        "title": "Article change in accusative",
+        "rows": [
+          [
+            "masculine",
+            "der/ein",
+            "den/einen",
+            "Ich sehe den Mann."
+          ],
+          [
+            "feminine",
+            "die/eine",
+            "die/eine",
+            "Ich sehe die Frau."
+          ],
+          [
+            "neuter",
+            "das/ein",
+            "das/ein",
+            "Ich sehe das Kind."
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Only masculine articles change in the A1 accusative pattern.",
+      "After haben with a masculine noun, use einen or keinen.",
+      "Do not change the subject article just because another noun appears later."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich sehe ___ Mann.",
+        "answer": "den"
+      },
+      {
+        "prompt": "Wir haben ___ Termin.",
+        "answer": "einen"
+      }
+    ],
+    "medicalFspNotes": [
+      "Useful clinic pattern: Ich habe einen Termin. Ich brauche einen Arzt."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_nominative_basics"
   },
   {
     "level": "A1",
     "unit": "A1_unit_5",
     "id": "A1_lesson_5",
-    "title": "Nach dem Weg fragen",
+    "title": "Personalpronomen und einfache Sätze",
     "objective": "Ask for and give directions, understand basic location prepositions.",
-    "explanation": "Use 'Entschuldigung, wo ist ...?' or 'Wie komme ich zu ...?' Key words: geradeaus, links, rechts.",
+    "explanation": "Personal pronouns replace names and nouns: ich, du, er, sie, es, wir, ihr, sie, Sie. Use Sie for formal you. A basic German sentence needs a subject and a conjugated verb. The verb changes to match the subject.",
     "examples": [
-      "Entschuldigung, wo ist der Bahnhof?",
-      "Gehen Sie geradeaus, dann links.",
-      "Wie komme ich zum Museum?",
-      "Es ist an der Ecke."
+      "Ich wohne in Berlin. - I live in Berlin.",
+      "Sie kommen aus Syrien. - You come from Syria."
     ],
     "vocabulary": [
       {
@@ -433,20 +739,85 @@
     "readingTask": "Read: 'Der Supermarkt ist nicht weit. Gehen Sie geradeaus.'",
     "speakingTask": "Give directions from your home to the nearest shop.",
     "writingTask": "Write directions from the station to the city center.",
-    "reviewSummary": "You learned how to ask for and give directions using location prepositions."
+    "reviewSummary": "You learned how to ask for and give directions using location prepositions.",
+    "conceptsTaught": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building",
+      "a1_vocab_directions"
+    ],
+    "formsTables": [
+      {
+        "title": "Pronouns",
+        "rows": [
+          [
+            "ich",
+            "I"
+          ],
+          [
+            "du",
+            "you informal"
+          ],
+          [
+            "er/sie/es",
+            "he/she/it"
+          ],
+          [
+            "wir",
+            "we"
+          ],
+          [
+            "ihr",
+            "you plural informal"
+          ],
+          [
+            "sie/Sie",
+            "they/you formal"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not confuse sie (she/they) with Sie (formal you).",
+      "The verb must match the subject."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Replace Anna with a pronoun: Anna ist hier.",
+        "answer": "Sie ist hier."
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_personal_pronouns"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_6",
-    "title": "Die Uhrzeit",
+    "title": "Präsens: regelmäßige Verben",
     "objective": "Tell time using official and colloquial formats.",
-    "explanation": "In German there are two ways to tell time. Official uses \"Uhr\" between hours and minutes: 14:30 Uhr. Colloquial uses \"nach\" (past) and \"vor\" (to): Viertel nach drei. Important: \"halb drei\" means half past two (half way TO the next hour). Learn both because Germans use both interchangeably.",
+    "explanation": "For regular present-tense verbs, remove -en to find the stem and add the ending. arbeiten has stem arbeit-. If the stem ends in -t or -d, German often adds -e- before some endings: du arbeitest, er arbeitet. A few common verbs change their vowel, such as sprechen -> er spricht; these are introduced as review items.",
     "examples": [
-      "Es ist drei Uhr.",
-      "Es ist halb zehn.",
-      "Es ist Viertel nach sieben.",
-      "Fünf vor zwolf."
+      "Ich arbeite im Krankenhaus. - I work in the hospital.",
+      "Der Patient wartet. - The patient is waiting.",
+      "Er spricht Deutsch. - He speaks German."
     ],
     "grammarFocus": "Time expressions: official vs colloquial",
     "vocabulary": [
@@ -547,20 +918,90 @@
     "speakingTask": {
       "prompt": "Ask a partner for the time at 3 different times of day and answer colloquially."
     },
-    "reviewSummary": "Use \"nach\" for minutes past the hour and \"vor\" for minutes to. \"Halb\" means half way TO the next hour. Official time uses \"Uhr\" between hours and minutes."
+    "reviewSummary": "Use \"nach\" for minutes past the hour and \"vor\" for minutes to. \"Halb\" means half way TO the next hour. Official time uses \"Uhr\" between hours and minutes.",
+    "conceptsTaught": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro",
+      "a1_vocab_common_verbs"
+    ],
+    "formsTables": [
+      {
+        "title": "machen",
+        "rows": [
+          [
+            "ich",
+            "mache"
+          ],
+          [
+            "du",
+            "machst"
+          ],
+          [
+            "er/sie/es",
+            "macht"
+          ],
+          [
+            "wir",
+            "machen"
+          ],
+          [
+            "ihr",
+            "macht"
+          ],
+          [
+            "sie/Sie",
+            "machen"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not use the infinitive after ich: ich arbeite, not ich arbeiten.",
+      "Remember the extra e in du arbeitest and er arbeitet.",
+      "Treat vowel-changing verbs as special forms to memorize."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ (arbeiten).",
+        "answer": "arbeite"
+      },
+      {
+        "prompt": "Der Patient ___ (warten).",
+        "answer": "wartet"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_present_tense_regular"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_7",
-    "title": "Die Wochentage und Monate",
+    "title": "Sein und haben",
     "objective": "Name the days, months, and say dates.",
-    "explanation": "Days are masculine in German: der Montag. Use \"am\" + day for \"on\": am Montag. Months: Januar to Dezember. Ordinal numbers for dates: \"der erste Mai\", \"der dritte Oktober\". Qüstion: \"Der wievielte ist heute?\" Adverbial form: \"montags\" = on Mondays (regularly).",
+    "explanation": "Sein and haben are essential irregular verbs. Use sein for identity, profession, location, and states. Use haben for possession, appointments, and many symptoms: Ich habe Fieber. Because they are irregular, memorize the full forms.",
     "examples": [
-      "Heute ist Montag.",
-      "Morgen ist Dienstag.",
-      "Heute ist der 3. Mai.",
-      "Januar ist der erste Monat."
+      "Ich bin Arzt. - I am a doctor.",
+      "Wir sind im Krankenhaus. - We are in the hospital.",
+      "Ich habe Schmerzen. - I have pain."
     ],
     "grammarFocus": "Days, months, and ordinal numbers",
     "vocabulary": [
@@ -665,20 +1106,122 @@
     "speakingTask": {
       "prompt": "Tell your partner your favorite day of the week and explain why."
     },
-    "reviewSummary": "Days are masculine (der). Use \"am\" + day for \"on\". Ordinal numbers add \"-te\": der erste, der zweite. Adverbial form: montags."
+    "reviewSummary": "Days are masculine (der). Use \"am\" + day for \"on\". Ordinal numbers add \"-te\": der erste, der zweite. Adverbial form: montags.",
+    "conceptsTaught": [
+      "a1_sein",
+      "a1_haben",
+      "a1_vocab_symptoms_basics"
+    ],
+    "formsTables": [
+      {
+        "title": "sein",
+        "rows": [
+          [
+            "ich",
+            "bin"
+          ],
+          [
+            "du",
+            "bist"
+          ],
+          [
+            "er/sie/es",
+            "ist"
+          ],
+          [
+            "wir",
+            "sind"
+          ],
+          [
+            "ihr",
+            "seid"
+          ],
+          [
+            "sie/Sie",
+            "sind"
+          ]
+        ]
+      },
+      {
+        "title": "haben",
+        "rows": [
+          [
+            "ich",
+            "habe"
+          ],
+          [
+            "du",
+            "hast"
+          ],
+          [
+            "er/sie/es",
+            "hat"
+          ],
+          [
+            "wir",
+            "haben"
+          ],
+          [
+            "ihr",
+            "habt"
+          ],
+          [
+            "sie/Sie",
+            "haben"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not write ich ist.",
+      "Do not write du haben.",
+      "Use haben for symptoms: Ich habe Kopfschmerzen."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Wir ___ einen Termin.",
+        "answer": "haben"
+      },
+      {
+        "prompt": "___ du einen Bruder?",
+        "answer": "Hast"
+      }
+    ],
+    "medicalFspNotes": [
+      "Starter patient sentence: Ich habe Schmerzen seit zwei Tagen."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_sein",
+      "a1_haben"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_sein",
+      "a1_haben"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_sein"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_8",
-    "title": "Hobbys und Freizeit",
+    "title": "Modalverben: können, müssen, wollen, möchten",
     "objective": "Talk about hobbies using \"gern\" and correct verb conjugation.",
-    "explanation": "Use \"gern\" after the verb to express enjoyment: Ich spiele gern FuSSball. Verb conjugation: ich spiele, du spielst, er spielt, wir spielen. Qüstion: Was machst du in deiner Freizeit? Use \"nicht gern\" for dislike and \"lieber\"/\"am liebsten\" for comparison/superlative.",
+    "explanation": "Modal verbs express ability, necessity, wishes, and polite requests. The modal verb is conjugated in position 2, and the main verb goes to the end in the infinitive: Ich kann Deutsch sprechen. Möchten is the polite A1 form for would like.",
     "examples": [
-      "Ich spiele gern FuSSball.",
-      "Sie liest gern Bücher.",
-      "Was machst du in deiner Freizeit?",
-      "Wir tanzen gern."
+      "Ich kann Deutsch lernen. - I can learn German.",
+      "Kannst du morgen kommen? - Can you come tomorrow?",
+      "Ich möchte einen Termin. - I would like an appointment."
     ],
     "grammarFocus": "Verb conjugation with \"gern\" (like to)",
     "vocabulary": [
@@ -779,20 +1322,81 @@
     "speakingTask": {
       "prompt": "Describe 3 hobbies you enjoy and how often you do them."
     },
-    "reviewSummary": "\"gern\" after verb = like to. \"nicht gern\" = not like. \"lieber\" = prefer. \"am liebsten\" = favorite."
+    "reviewSummary": "\"gern\" after verb = like to. \"nicht gern\" = not like. \"lieber\" = prefer. \"am liebsten\" = favorite.",
+    "conceptsTaught": [
+      "a1_modal_verbs"
+    ],
+    "formsTables": [
+      {
+        "title": "A1 modal forms",
+        "rows": [
+          [
+            "ich kann",
+            "I can"
+          ],
+          [
+            "du kannst",
+            "you can"
+          ],
+          [
+            "ich muss",
+            "I must"
+          ],
+          [
+            "ich will",
+            "I want"
+          ],
+          [
+            "ich möchte",
+            "I would like"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not conjugate both verbs: Ich kann sprechen, not ich kann spreche.",
+      "The infinitive goes to the end.",
+      "Use möchte for polite requests."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ Deutsch lernen. (können)",
+        "answer": "kann"
+      },
+      {
+        "prompt": "___ du morgen kommen?",
+        "answer": "Kannst"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_modal_verbs"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_modal_verbs"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_modal_verbs"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_9",
-    "title": "Im Supermarkt einkaufen",
+    "title": "Wortstellung in Hauptsätzen",
     "objective": "Shop for food, use quantities, and ask about prices.",
-    "explanation": "Key phrases: Ich möchte (I would like), Ich brauche (I need), Was kostet (how much). Accusative case: einen Apfel (m), eine Milch (f), ein Brot (n), drei Eier (pl). Prices use comma as decimal: 1,99 Euro. \"An der Kasse bezahlen\" = pay at register.",
+    "explanation": "In German main clauses, the conjugated verb is in position 2. Position 1 can be the subject, time, or another short phrase. If time comes first, the subject moves after the verb: Heute bin ich im Krankenhaus.",
     "examples": [
-      "Ich möchte einen Apfel.",
-      "Was kostet die Milch?",
-      "Das Brot kostet 2,49 Euro.",
-      "Ich brauche drei Eier."
+      "Ich bin heute im Krankenhaus. - I am in the hospital today.",
+      "Heute bin ich im Krankenhaus. - Today I am in the hospital."
     ],
     "grammarFocus": "Accusative articles with \"möchten\" and \"brauchen\"",
     "vocabulary": [
@@ -897,20 +1501,50 @@
     "speakingTask": {
       "prompt": "Role play customer and shopkeeper. Ask for 3 items and prices."
     },
-    "reviewSummary": "Plurals are unpredictable. Always learn the plural: der Apfel -> die Äpfel. Euro stays the same in plural. \"An der Kasse\" = at the register."
+    "reviewSummary": "Plurals are unpredictable. Always learn the plural: der Apfel -> die Äpfel. Euro stays the same in plural. \"An der Kasse\" = at the register.",
+    "conceptsTaught": [
+      "a1_word_order_main_clause"
+    ],
+    "commonMistakes": [
+      "Do not keep subject + verb order after a first-position time phrase.",
+      "The conjugated verb must stay in position 2."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Correct: Heute ich bin im Krankenhaus.",
+        "answer": "Heute bin ich im Krankenhaus."
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_word_order_main_clause"
+    ],
+    "estimatedMinutes": 22,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_word_order_main_clause"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_word_order_main_clause"
   },
   {
     "level": "A1",
     "unit": "A1_unit_2",
     "id": "A1_lesson_10",
-    "title": "Im Restaurant bestellen",
+    "title": "Ja/Nein-Fragen und W-Fragen",
     "objective": "Order food and drinks at a German restaurant.",
-    "explanation": "Key phrases: Ich möchte (I would like), Ich hätte gern (more polite), Was empfehlen Sie (what do you recommend). Der Kellner brings the Speisekarte (menu). Vorspeise (starter), Hauptgang (main), Nachtisch (dessert). For the bill: \"Zahlen, bitte!\" or \"Die Rechnung, bitte!\" Trinkgeld (tip) is usually 5-10%.",
+    "explanation": "Yes/no questions start with the conjugated verb: Kommst du? Hast du Zeit? W-questions start with a question word, then the conjugated verb: Woher kommst du? Wie heißen Sie? The verb is still early and easy to find.",
     "examples": [
-      "Ich möchte ein Schnitzel.",
-      "Was möchten Sie trinken?",
-      "Ich hätte gern die Suppe.",
-      "Kann ich die Rechnung haben?"
+      "Hast du einen Bruder? - Do you have a brother?",
+      "Woher kommst du? - Where do you come from?",
+      "Wann ist der Termin? - When is the appointment?"
     ],
     "grammarFocus": "The modal verb \"möchten\" (would like)",
     "vocabulary": [
@@ -1015,20 +1649,57 @@
     "speakingTask": {
       "prompt": "Role play ordering in a German restaurant. Partner plays the waiter."
     },
-    "reviewSummary": "\"Ich möchte\" = polite reqüst. \"Ich hätte gern\" = even more polite. \"Kann ich ... haben?\" = Can I have... Trinkgeld = tip (5-10%)."
+    "reviewSummary": "\"Ich möchte\" = polite reqüst. \"Ich hätte gern\" = even more polite. \"Kann ich ... haben?\" = Can I have... Trinkgeld = tip (5-10%).",
+    "conceptsTaught": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "commonMistakes": [
+      "Do not use English word order in questions.",
+      "Use woher for origin and wo for location."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ kommst du?",
+        "answer": "Woher"
+      },
+      {
+        "prompt": "Make a yes/no question: Du kommst morgen.",
+        "answer": "Kommst du morgen?"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_yes_no_questions"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_11",
-    "title": "Das Wetter",
+    "title": "Negation mit nicht und kein",
     "objective": "Describe the weather and seasons.",
-    "explanation": "Weather phrases use \"es ist\" + adjective: Es ist sonnig, Es ist kalt. For actions: Es regnet (it is raining), Es schneit (it is snowing). Seasons: der Frühling (spring), der Sommer (summer), der Herbst (autumn), der Winter (winter). Use \"im\" for \"in\" a season: im Sommer. Qüstion: Wie ist das Wetter?",
+    "explanation": "Use kein to negate a noun with no article or an indefinite article: Ich habe kein Auto. Use nicht to negate verbs, adjectives, adverbs, or a whole idea: Das ist nicht richtig. Kein changes like ein: kein, keine, keinen.",
     "examples": [
-      "Es ist sonnig.",
-      "Es regnet.",
-      "Wie ist das Wetter?",
-      "Im Sommer ist es warm."
+      "Ich habe kein Auto. - I do not have a car.",
+      "Das ist nicht richtig. - That is not correct.",
+      "Ich habe keinen Termin. - I do not have an appointment."
     ],
     "grammarFocus": "Weather vocabulary and \"es\" phrases",
     "vocabulary": [
@@ -1133,20 +1804,80 @@
     "speakingTask": {
       "prompt": "Describe todays weather and what you will do accordingly."
     },
-    "reviewSummary": "Use \"Es ist\" + adjective for conditions. \"Es\" + verb for actions (Es regnet, Es schneit). \"Im\" + season = in the season."
+    "reviewSummary": "Use \"Es ist\" + adjective for conditions. \"Es\" + verb for actions (Es regnet, Es schneit). \"Im\" + season = in the season.",
+    "conceptsTaught": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "formsTables": [
+      {
+        "title": "kein in A1",
+        "rows": [
+          [
+            "masculine nominative",
+            "kein Mann"
+          ],
+          [
+            "feminine nominative",
+            "keine Frau"
+          ],
+          [
+            "neuter nominative",
+            "kein Auto"
+          ],
+          [
+            "masculine accusative",
+            "keinen Termin"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not use nicht before a simple indefinite noun.",
+      "Remember keinen for masculine accusative."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich habe ___ Auto.",
+        "answer": "kein"
+      },
+      {
+        "prompt": "Das ist ___ richtig.",
+        "answer": "nicht"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_negation_nicht_kein"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_12",
-    "title": "Farben und Kleidung",
+    "title": "Pluralformen lernen",
     "objective": "Describe colors and clothing items.",
-    "explanation": "Colors: rot, blau, grün, gelb, schwarz, weiss, grau, braun, lila, orange, pink. Clothing: der Pullover, die Jacke, das Hemd, die Hose, der Rock, der Schuh. Color adjectives before nouns change endings: ein roter Pullover, eine blaue Jacke, ein weisses Hemd. \"tragen\" = to wear (ich trage, du trägst, er trägt).",
+    "explanation": "German plural forms are varied. The safest A1 habit is to learn every noun as article + singular + plural: der Termin, die Termine. In plural, the article is usually die. Common endings are -e, -er, -n/-en, and -s.",
     "examples": [
-      "Ich trage einen roten Pullover.",
-      "Meine Jacke ist blau.",
-      "Welche Farbe hat dein Hemd?",
-      "Das Kleid ist wunderschön."
+      "der Tag - die Tage - the days",
+      "das Kind - die Kinder - the children",
+      "die Frau - die Frauen - the women"
     ],
     "grammarFocus": "Color adjectives and their endings",
     "vocabulary": [
@@ -1259,20 +1990,50 @@
     "speakingTask": {
       "prompt": "Describe what you are wearing today in German."
     },
-    "reviewSummary": "Adjective endings: ein roter Pullover (m.), eine rote Jacke (f.), ein rotes Hemd (n.) \"tragen\" = to wear."
+    "reviewSummary": "Adjective endings: ein roter Pullover (m.), eine rote Jacke (f.), ein rotes Hemd (n.) \"tragen\" = to wear.",
+    "conceptsTaught": [
+      "a1_plural_basics"
+    ],
+    "commonMistakes": [
+      "Do not add only -s to every German noun.",
+      "Do not forget the article changes to die in plural."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "How should you study a noun?",
+        "answer": "article + singular + plural + example"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_plural_basics"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_plural_basics"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_plural_basics"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_13",
-    "title": "Meine Familie",
+    "title": "Grundpräpositionen",
     "objective": "Talk about your family members.",
-    "explanation": "Family vocabulary: der Vater, die Mutter, der Bruder, die Schwester, der Opa, die Oma, der Onkel, die Tante. Possessive articles: \"mein\" (my for m./n.), \"meine\" (my for f./pl.), \"dein\" (your). Qüstions: Hast du Geschwister? Wie viele Geschwister hast du?",
+    "explanation": "A1 prepositions show place, direction, origin, company, and relation: in, an, auf, mit, nach, zu, bei, von. Learn them in chunks: in der Klinik, zu Hause, mit dem Bus, nach Berlin, bei der Ärztin, von Montag bis Freitag.",
     "examples": [
-      "Das ist meine Familie.",
-      "Ich habe einen Bruder.",
-      "Meine Mutter heißt Anna.",
-      "Hast du Geschwister?"
+      "Ich bin in der Klinik. - I am in the clinic.",
+      "Ich fahre mit dem Bus. - I go by bus.",
+      "Ich gehe zum Arzt. - I go to the doctor."
     ],
     "grammarFocus": "Possessive articles \"mein\" and \"dein\"",
     "vocabulary": [
@@ -1381,20 +2142,57 @@
     "speakingTask": {
       "prompt": "Introduce your family with names, ages, and professions."
     },
-    "reviewSummary": "\"mein\" = my for masc./neut. \"meine\" = my for fem./plural. \"Hast du Geschwister?\" = Do you have siblings?"
+    "reviewSummary": "\"mein\" = my for masc./neut. \"meine\" = my for fem./plural. \"Hast du Geschwister?\" = Do you have siblings?",
+    "conceptsTaught": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "commonMistakes": [
+      "Do not translate prepositions word-for-word from English.",
+      "Learn short phrases as chunks."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Complete: Ich bin ___ der Klinik.",
+        "answer": "in"
+      },
+      {
+        "prompt": "Complete: Ich fahre ___ dem Bus.",
+        "answer": "mit"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_basic_prepositions"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_14",
-    "title": "Mein Zuhause",
+    "title": "Zeit, Zahlen und Datum",
     "objective": "Describe your home and its rooms.",
-    "explanation": "Rooms: das Wohnzimmer (living room), die Küche (kitchen), das Schlafzimmer (bedroom), das Badezimmer (bathroom), der Flur (hallway). Furniture: der Tisch (table), der Stuhl (chair), das Bett (bed), der Schrank (closet), das Sofa (couch). Location prepositions: in, auf, unter, neben, zwischen. Use \"im\" = in dem.",
+    "explanation": "A1 time language includes numbers, clock time, days, months, and simple dates. German often says the smaller number before the tens in 21-99. For schedules use um: um acht Uhr. For days use am: am Montag.",
     "examples": [
-      "Mein Haus hat fünf Zimmer.",
-      "Das Wohnzimmer ist gross.",
-      "In der Küche steht ein Tisch.",
-      "Mein Bett ist beqüm."
+      "Der Termin ist um acht Uhr. - The appointment is at eight o clock.",
+      "Heute ist Montag. - Today is Monday.",
+      "Ich komme am dritten Mai. - I come on May third."
     ],
     "grammarFocus": "Rooms, furniture, and location prepositions",
     "vocabulary": [
@@ -1503,20 +2301,59 @@
     "speakingTask": {
       "prompt": "Describe your dream house with at least 5 rooms."
     },
-    "reviewSummary": "\"in\" + Dativ = location (wo). \"in\" + Akkusativ = direction (wohin). \"auf dem Tisch\" = on the table."
+    "reviewSummary": "\"in\" + Dativ = location (wo). \"in\" + Akkusativ = direction (wohin). \"auf dem Tisch\" = on the table.",
+    "conceptsTaught": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates",
+      "a1_vocab_time"
+    ],
+    "commonMistakes": [
+      "Use um for clock time.",
+      "Use am for days and dates.",
+      "Spell 22 as zweiundzwanzig."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Write 47 in German.",
+        "answer": "siebenundvierzig"
+      },
+      {
+        "prompt": "Complete: Der Termin ist ___ acht Uhr.",
+        "answer": "um"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_time_numbers_dates"
   },
   {
     "level": "A1",
     "unit": "A1_unit_3",
     "id": "A1_lesson_15",
-    "title": "Mein Tagesablauf",
+    "title": "Trennbare Verben im Alltag",
     "objective": "Describe your daily routine using separable prefix verbs.",
-    "explanation": "Separable prefix verbs: \"aufstehen\" (get up) -> Ich stehe um 7 Uhr auf. The prefix gös to the end. Activities: aufstehen, frühstücken, duschen, zur Arbeit gehen, Mittag essen, nach Hause kommen, fernsehen, schlafen gehen. Use \"um\" + time.",
+    "explanation": "Some German verbs have a prefix that separates in a main clause. The conjugated verb stays in position 2, and the prefix goes to the end: Ich rufe dich an. Common A1 verbs include anrufen, aufstehen, einkaufen, mitkommen.",
     "examples": [
-      "Ich stehe um 7 Uhr auf.",
-      "Dann frühstücke ich.",
-      "Um 8 Uhr gehe ich zur Arbeit.",
-      "Abends sehe ich fern."
+      "Ich stehe um sieben Uhr auf. - I get up at seven.",
+      "Ich kaufe im Supermarkt ein. - I shop in the supermarket.",
+      "Ich rufe den Arzt an. - I call the doctor."
     ],
     "grammarFocus": "Separable prefix verbs and time expressions",
     "vocabulary": [
@@ -1621,20 +2458,50 @@
     "speakingTask": {
       "prompt": "Describe a weekday vs weekend day."
     },
-    "reviewSummary": "Separable verbs: prefix separates in main clause. \"aufstehen\" -> \"Ich stehe...auf\". Prefix gös to end."
+    "reviewSummary": "Separable verbs: prefix separates in main clause. \"aufstehen\" -> \"Ich stehe...auf\". Prefix gös to end.",
+    "conceptsTaught": [
+      "a1_separable_verbs_intro"
+    ],
+    "commonMistakes": [
+      "Do not keep the prefix attached in a main clause.",
+      "The prefix goes to the end."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Place the prefix: Ich ___ um sieben Uhr ___. (aufstehen)",
+        "answer": "stehe ... auf"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_separable_verbs_intro"
+    ],
+    "estimatedMinutes": 22,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_separable_verbs_intro"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_separable_verbs_intro"
   },
   {
     "level": "A1",
     "unit": "A1_unit_4",
     "id": "A1_lesson_16",
-    "title": "Körperteile und Gesundheit",
+    "title": "Körperteile, Gesundheit und einfache Sätze",
     "objective": "Name body parts and describe symptoms.",
-    "explanation": "Body parts: der Kopf (head), die Hand (hand), der Arm (arm), das Bein (leg), der Fuss (foot), der Rücken (back), der Bauch (stomach), das Auge (eye), der Mund (mouth). Pain: \"Mein Kopf tut weh.\" \"Ich habe Kopfschmerzen.\" Doctor: \"Wo tut es weh?\" \"weh tun\" uses Dativ: Mir tut der Kopf weh.",
+    "explanation": "A1 medical starter language focuses on simple, safe sentences: Ich habe Schmerzen. Mir ist schlecht. Der Kopf tut weh. Keep sentences short: subject + verb + object or symptom. This is not full FSP yet; it is the beginner layer for clinic vocabulary.",
     "examples": [
-      "Mein Kopf tut weh.",
-      "Ich habe Halsschmerzen.",
-      "Der Arzt fragt: Wo tut es weh?",
-      "Mein Rücken schmerzt."
+      "Ich habe Kopfschmerzen. - I have a headache.",
+      "Mir ist schlecht. - I feel sick.",
+      "Der Arm tut weh. - The arm hurts."
     ],
     "grammarFocus": "Body parts and Schmerzen expressions",
     "vocabulary": [
@@ -1743,7 +2610,51 @@
     "speakingTask": {
       "prompt": "Role play doctor and patient."
     },
-    "reviewSummary": "\"weh tun\" + Dativ: Mir tut der Kopf weh. Schmerzen: Kopfschmerzen, Rückenschmerzen, Bauchschmerzen, Halsschmerzen."
+    "reviewSummary": "\"weh tun\" + Dativ: Mir tut der Kopf weh. Schmerzen: Kopfschmerzen, Rückenschmerzen, Bauchschmerzen, Halsschmerzen.",
+    "conceptsTaught": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "commonMistakes": [
+      "Do not try long medical explanations at A1.",
+      "Learn body parts with article and plural when possible."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Say: I have fever.",
+        "answer": "Ich habe Fieber."
+      },
+      {
+        "prompt": "Say: My head hurts.",
+        "answer": "Der Kopf tut weh."
+      }
+    ],
+    "medicalFspNotes": [
+      "This is only the starter layer; later FSP lessons add history taking and case presentation."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_medical_starter_phrases"
   },
   {
     "level": "A1",
@@ -1751,12 +2662,10 @@
     "id": "A1_lesson_17",
     "title": "Tiere im Zoo",
     "objective": "Name animals and describe them.",
-    "explanation": "Animals: der Hund, die Katze, der Vogel, der Elefant, der Lowe, der Tiger, der Affe, die Schlange, das Pferd. Use \"es gibt\" (there is/are). Animals \"fressen\" (eat), people \"essen\". Adjectives: gross, stark, gefährlich, lustig, klein.",
+    "explanation": "Everyday vocabulary should be studied in useful chunks, not as a long list. For every noun, learn article and plural. For verbs, learn an ich sentence and a du question. For adjectives, learn an opposite pair and one simple sentence.",
     "examples": [
-      "Im Zoo gibt es Löwen.",
-      "Der Elefant ist gross.",
-      "Der Affe frisst Bananen.",
-      "Die Schlangen sind gefährlich."
+      "Das Wasser ist kalt. - The water is cold.",
+      "Ich weiß die Antwort. - I know the answer."
     ],
     "grammarFocus": "Animals and \"es gibt\"",
     "vocabulary": [
@@ -1865,7 +2774,41 @@
     "speakingTask": {
       "prompt": "Describe your favorite animal."
     },
-    "reviewSummary": "\"Es gibt\" = there is/are. Animals \"fressen\". People \"essen\"."
+    "reviewSummary": "\"Es gibt\" = there is/are. Animals \"fressen\". People \"essen\".",
+    "conceptsTaught": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "commonMistakes": [
+      "Do not memorize translations only.",
+      "Do not ignore articles for nouns."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "How do you study a noun?",
+        "answer": "article, plural, example sentence"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "pronunciationNotes": [
+      "Read every German example aloud and notice word stress."
+    ],
+    "conceptId": "a1_vocab_everyday_core"
   },
   {
     "level": "A1",

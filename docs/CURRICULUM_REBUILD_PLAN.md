@@ -229,3 +229,14 @@ Pilot concept:
 5. Add pronunciation tags to A1 speaking and medical terms.
 6. Repeat mapping for A2, B1, B2, C1.
 7. Add FSP-specific concept chain and exam remediation.
+
+## A1 Depth Implementation Status
+
+The A1 curriculum depth pass now treats A1 as the first complete pilot for the lesson-to-question architecture:
+
+- A1 grammar questions have concept IDs and linked teaching/remediation lessons.
+- A1 lessons 1-17 cover the grammar and vocabulary concepts currently tested by A1 grammar/vocabulary practice.
+- A1 vocabulary entries include teaching metadata, usage notes, study notes, and pronunciation hints where useful.
+- Daily grammar practice gives a non-blocking prerequisite lesson recommendation when a learner reaches tagged practice before completing the linked lesson.
+
+Remaining A1 curriculum work should focus on richer vocabulary teaching quality rather than metadata: theme dialogues, sentence-mining examples, clinic role-play phrases, and pronunciation drills that connect directly to listening and speaking.

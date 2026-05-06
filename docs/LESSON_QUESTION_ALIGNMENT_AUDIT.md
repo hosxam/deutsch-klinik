@@ -49,7 +49,16 @@ Added coverage:
 
 ## Next Alignment Work
 
-1. Build the A1 article/noun-gender lesson before `A1_gr_1` to `A1_gr_3`.
-2. Build the A1 haben lesson before `A1_gr_7` and `A1_gr_8`.
-3. Fix the `A1_gr_11` word-order explanation and decide whether it belongs later.
-4. Add metadata fields to A1 grammar questions: `conceptId`, `taughtInLessonId`, `prerequisiteConceptIds`, `difficulty`, `skillType`, `remediationLessonId`.
+1. Extend the same concept-tagging standard to A2-C1 after the A1 implementation is stable.
+2. Replace generic A1 vocabulary examples with richer theme-specific mini-dialogues.
+3. Add more pronunciation-specific drills for A1 listening and speaking practice.
+4. Build validation coverage that fails when a question has no linked teaching lesson.
+
+## A1 Follow-Up Completed
+
+The A1 follow-up pass expanded the A1 lesson set beyond the original pilot:
+
+- `A1_lesson_1` through `A1_lesson_17` now carry concept, prerequisite, practice, remediation, and estimated-minute metadata.
+- All A1 grammar questions now include `conceptId`, `taughtInLessonId`, `prerequisiteConceptIds`, `difficulty`, `skillType`, and `remediationLessonId`.
+- A1 grammar practice now shows a non-blocking "study this lesson first" recommendation when a tagged question points to an incomplete lesson.
+- A1 vocabulary entries now include teaching metadata and usage/study guidance.

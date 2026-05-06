@@ -14,7 +14,13 @@
       "answer": "Der",
       "explanation": "Hund is masculine (der Hund), nominative case.",
       "level": "A1",
-      "topic": "Articles"
+      "topic": "Articles",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_2",
@@ -29,7 +35,13 @@
       "answer": "Die",
       "explanation": "Katze is feminine (die Katze), nominative case.",
       "level": "A1",
-      "topic": "Articles"
+      "topic": "Articles",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_3",
@@ -44,7 +56,13 @@
       "answer": "Das",
       "explanation": "Kind is neuter (das Kind), nominative case.",
       "level": "A1",
-      "topic": "Articles"
+      "topic": "Articles",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_4",
@@ -53,7 +71,15 @@
       "answer": "bin",
       "explanation": "Sein conjugation: ich bin.",
       "level": "A1",
-      "topic": "sein"
+      "topic": "sein",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_5",
@@ -62,7 +88,15 @@
       "answer": "bist",
       "explanation": "Sein conjugation: du bist.",
       "level": "A1",
-      "topic": "sein"
+      "topic": "sein",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_6",
@@ -71,7 +105,15 @@
       "answer": "ist",
       "explanation": "Sein conjugation: er/sie/es ist.",
       "level": "A1",
-      "topic": "sein"
+      "topic": "sein",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_7",
@@ -80,7 +122,15 @@
       "answer": "haben",
       "explanation": "Haben conjugation: wir haben.",
       "level": "A1",
-      "topic": "haben"
+      "topic": "haben",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_8",
@@ -89,7 +139,15 @@
       "answer": "Hast",
       "explanation": "Haben conjugation: du hast.",
       "level": "A1",
-      "topic": "haben"
+      "topic": "haben",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_9",
@@ -104,7 +162,15 @@
       "answer": "kein",
       "explanation": "Kein negates a noun without an article. Auto is neuter -> kein.",
       "level": "A1",
-      "topic": "nicht vs kein"
+      "topic": "nicht vs kein",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_10",
@@ -113,7 +179,15 @@
       "answer": "nicht",
       "explanation": "Nicht negates adjectives and verbs.",
       "level": "A1",
-      "topic": "nicht vs kein"
+      "topic": "nicht vs kein",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_11",
@@ -122,7 +196,15 @@
       "answer": "Heute bin ich im Krankenhaus.",
       "explanation": "This sentence is actually correct. Subject, verb, then time, then place.",
       "level": "A1",
-      "topic": "Word Order"
+      "topic": "Word Order",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_12",
@@ -131,7 +213,15 @@
       "answer": "Woher",
       "explanation": "Woher asks for origin.",
       "level": "A1",
-      "topic": "W-Questions"
+      "topic": "W-Questions",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_13",
@@ -140,7 +230,15 @@
       "answer": "arbeite",
       "explanation": "arbeiten -> ich arbeite (stem + e).",
       "level": "A1",
-      "topic": "Regular Present Tense"
+      "topic": "Regular Present Tense",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_14",
@@ -149,7 +247,15 @@
       "answer": "wartet",
       "explanation": "warten -> er/sie wartet (stem + t).",
       "level": "A1",
-      "topic": "Regular Present Tense"
+      "topic": "Regular Present Tense",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_15",
@@ -158,7 +264,15 @@
       "answer": "spricht",
       "explanation": "sprechen is irregular: er spricht (e -> i).",
       "level": "A1",
-      "topic": "Irregular Present Tense"
+      "topic": "Irregular Present Tense",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_16",
@@ -173,7 +287,15 @@
       "answer": "den",
       "explanation": "After sehen (accusative), der -> den.",
       "level": "A1",
-      "topic": "Accusative Case"
+      "topic": "Accusative Case",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_17",
@@ -182,7 +304,15 @@
       "answer": "kann",
       "explanation": "können -> ich kann (modal verb, stem changes).",
       "level": "A1",
-      "topic": "Modal Verbs"
+      "topic": "Modal Verbs",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_18",
@@ -197,7 +327,15 @@
       "answer": "Kannst",
       "level": "A1",
       "topic": "Modal Verbs",
-      "explanation": "Modalverb: du form of können is kannst. Kannst du morgen kommen?"
+      "explanation": "Modalverb: du form of können is kannst. Kannst du morgen kommen?",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_19",
@@ -206,7 +344,13 @@
       "answer": "zweiundzwanzig",
       "explanation": "22 = zwei + und + zwanzig.",
       "level": "A1",
-      "topic": "Numbers"
+      "topic": "Numbers",
+      "conceptId": "a1_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_20",
@@ -215,7 +359,13 @@
       "answer": "siebenundvierzig",
       "explanation": "47 = sieben + und + vierzig.",
       "level": "A1",
-      "topic": "Numbers"
+      "topic": "Numbers",
+      "conceptId": "a1_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_121",
@@ -225,7 +375,15 @@
       "prompt": "Das Wetter ___ heute nicht gut.",
       "options": null,
       "answer": "ist",
-      "explanation": "Das Wetter ist singular, so ist is correct with sein."
+      "explanation": "Das Wetter ist singular, so ist is correct with sein.",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_122",
@@ -235,7 +393,15 @@
       "prompt": "___ heiBt deine Schwester? (what)",
       "options": null,
       "answer": "Wie",
-      "explanation": "Wie heiBt... asks for a name. Wie heiBt deine Schwester?"
+      "explanation": "Wie heiBt... asks for a name. Wie heiBt deine Schwester?",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_123",
@@ -245,7 +411,15 @@
       "prompt": "Richtig stellen: (gehen / heute / wir / ins Kino)",
       "options": null,
       "answer": "Wir gehen heute ins Kino.",
-      "explanation": "Verb is 2nd position: Wir (1st) gehen (2nd) heute (3rd) ins Kino."
+      "explanation": "Verb is 2nd position: Wir (1st) gehen (2nd) heute (3rd) ins Kino.",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_124",
@@ -255,7 +429,15 @@
       "prompt": "Ich sehe ___ (der) Lehrer.",
       "options": null,
       "answer": "den",
-      "explanation": "Der Lehrer -> accusative: den Lehrer. Ich sehe den Lehrer."
+      "explanation": "Der Lehrer -> accusative: den Lehrer. Ich sehe den Lehrer.",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_125",
@@ -270,7 +452,13 @@
         "den"
       ],
       "answer": "der",
-      "explanation": "Mann is masculine, so the correct article is der."
+      "explanation": "Mann is masculine, so the correct article is der.",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_126",
@@ -280,7 +468,15 @@
       "prompt": "Er ___ (wollen) Arzt werden.",
       "options": null,
       "answer": "will",
-      "explanation": "Er will Arzt werden. (wollen - er form: will + infinitive at end)"
+      "explanation": "Er will Arzt werden. (wollen - er form: will + infinitive at end)",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_127",
@@ -290,7 +486,15 @@
       "prompt": "Ich ___ um 6 Uhr ___ (aufwachen).",
       "options": null,
       "answer": "wache ... auf",
-      "explanation": "Aufwachen: prefix auf gös to end. Ich wache um 6 Uhr auf."
+      "explanation": "Aufwachen: prefix auf gös to end. Ich wache um 6 Uhr auf.",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_128",
@@ -300,7 +504,15 @@
       "prompt": "Sie hat ___ Geld. (no money)",
       "options": null,
       "answer": "kein",
-      "explanation": "Geld is neuter, so kein. Sie hat kein Geld."
+      "explanation": "Geld is neuter, so kein. Sie hat kein Geld.",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_129",
@@ -310,7 +522,15 @@
       "prompt": "___ (gehen) Sie geradeaus! (formal)",
       "options": null,
       "answer": "Gehen",
-      "explanation": "Formal imperative: Gehen Sie geradeaus! (verb + Sie + rest)"
+      "explanation": "Formal imperative: Gehen Sie geradeaus! (verb + Sie + rest)",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_130",
@@ -320,7 +540,13 @@
       "prompt": "___ spielen Fußball. (we)",
       "options": null,
       "answer": "Wir",
-      "explanation": "Wir is the pronoun for we. Wir spielen Fußball."
+      "explanation": "Wir is the pronoun for we. Wir spielen Fußball.",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_ex_1",
@@ -330,7 +556,15 @@
       "answer": "bin",
       "topic": "sein",
       "explanation": "The correct answer is: bin",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_ex_2",
@@ -340,7 +574,13 @@
       "answer": "Wie geht es Ihnen?",
       "topic": "Greetings",
       "explanation": "The correct answer is: Wie geht es Ihnen?",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_greetings_introductions",
+      "taughtInLessonId": "A1_lesson_1",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_1"
     },
     {
       "id": "A1_ex_3",
@@ -350,7 +590,13 @@
       "answer": "milk",
       "topic": "Food",
       "explanation": "The correct answer is: milk",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_food_vocab",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_ex_4",
@@ -360,7 +606,13 @@
       "answer": "das Kind",
       "topic": "People",
       "explanation": "The correct answer is: das Kind",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_everyday_people_vocab",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_ex_5",
@@ -370,7 +622,13 @@
       "answer": "die",
       "topic": "Articles",
       "explanation": "The correct answer is: die",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_ex_6",
@@ -380,7 +638,15 @@
       "answer": "Ich habe ein Buch.",
       "topic": "haben",
       "explanation": "The correct answer is: Ich habe ein Buch.",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_ex_7",
@@ -390,7 +656,15 @@
       "answer": "gehen",
       "topic": "Verbs",
       "explanation": "The correct answer is: gehen",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_basic_sentence_building",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_ex_8",
@@ -400,7 +674,13 @@
       "answer": "das",
       "topic": "Articles",
       "explanation": "The correct answer is: das",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_ex_9",
@@ -410,7 +690,15 @@
       "answer": "hat",
       "topic": "haben",
       "explanation": "The correct answer is: hat",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_ex_10",
@@ -420,7 +708,13 @@
       "answer": "pencil",
       "topic": "School",
       "explanation": "The correct answer is: pencil",
-      "section": "Mixed Exercises"
+      "section": "Mixed Exercises",
+      "conceptId": "a1_school_vocab",
+      "taughtInLessonId": "A1_lesson_25",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_25"
     },
     {
       "id": "A1_gr_131",
@@ -429,7 +723,15 @@
       "prompt": "Ich ___ aus Deutschland.",
       "answer": "bin",
       "explanation": "Ich uses bin with sein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_133",
@@ -438,7 +740,15 @@
       "prompt": "Er ___ mein Bruder.",
       "answer": "ist",
       "explanation": "Er/sie/es uses ist with sein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_134",
@@ -447,7 +757,15 @@
       "prompt": "Wir ___ im Kino.",
       "answer": "sind",
       "explanation": "Wir uses sind with sein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_135",
@@ -456,7 +774,15 @@
       "prompt": "Ihr ___ sehr nett.",
       "answer": "seid",
       "explanation": "Ihr uses seid with sein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_136",
@@ -465,7 +791,15 @@
       "prompt": "Sie ___ aus Spanien.",
       "answer": "sind",
       "explanation": "Sie (plural/formal) uses sind with sein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_137",
@@ -480,7 +814,15 @@
       ],
       "answer": "ist",
       "explanation": "Das is singular, so it uses ist.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_138",
@@ -489,7 +831,15 @@
       "prompt": "Meine Eltern ___ zu Hause.",
       "answer": "sind",
       "explanation": "Meine Eltern (they) uses sind.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_139",
@@ -498,7 +848,15 @@
       "prompt": "Ich ___ einen Hund.",
       "answer": "habe",
       "explanation": "Ich uses habe with haben.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_140",
@@ -507,7 +865,15 @@
       "prompt": "Du ___ eine Frage.",
       "answer": "hast",
       "explanation": "Du uses hast with haben.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_141",
@@ -516,7 +882,15 @@
       "prompt": "Er ___ einen Bruder.",
       "answer": "hat",
       "explanation": "Er uses hat with haben.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_142",
@@ -525,7 +899,15 @@
       "prompt": "Wir ___ ein Auto.",
       "answer": "haben",
       "explanation": "Wir uses haben (infinitive stays).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_143",
@@ -534,7 +916,15 @@
       "prompt": "Ihr ___ viele Bucher.",
       "answer": "habt",
       "explanation": "Ihr uses habt with haben.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_144",
@@ -543,7 +933,15 @@
       "prompt": "Sie ___ eine Katze.",
       "answer": "hat",
       "explanation": "Sie (singular) uses hat.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_145",
@@ -558,7 +956,15 @@
       ],
       "answer": "hat",
       "explanation": "Meine Schwester = sie (she), so hat is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_146",
@@ -567,7 +973,15 @@
       "prompt": "Die Kinder ___ einen Ball.",
       "answer": "haben",
       "explanation": "Die Kinder (they) uses haben.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_haben",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_147",
@@ -576,7 +990,15 @@
       "prompt": "Ich ___ (spielen) Fußball.",
       "answer": "spiele",
       "explanation": "Ich uses spiel + e for regular verbs.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_148",
@@ -585,7 +1007,15 @@
       "prompt": "Du ___ (lernen) Deutsch.",
       "answer": "lernst",
       "explanation": "Du uses lern + st.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_149",
@@ -594,7 +1024,15 @@
       "prompt": "Er ___ (arbeiten) im Buro.",
       "answer": "arbeitet",
       "explanation": "Er uses arbeit + et (t-stem verbs add e).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_150",
@@ -603,7 +1041,15 @@
       "prompt": "Wir ___ (wohnen) in Berlin.",
       "answer": "wohnen",
       "explanation": "Wir uses the infinitive: wohnen.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_151",
@@ -612,7 +1058,15 @@
       "prompt": "Ihr ___ (tanzen) gern.",
       "answer": "tanzt",
       "explanation": "Ihr uses tanz + t.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_152",
@@ -621,7 +1075,15 @@
       "prompt": "Sie ___ (kaufen) ein Geschenk.",
       "answer": "kauft",
       "explanation": "Sie (singular) uses kauf + t.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_153",
@@ -630,7 +1092,15 @@
       "prompt": "Die Studenten ___ (lernen) viel.",
       "answer": "lernen",
       "explanation": "Die Studenten (they) uses the infinitive.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_154",
@@ -645,7 +1115,15 @@
       ],
       "answer": "macht",
       "explanation": "Er uses mach + t.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_regular",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_155",
@@ -654,7 +1132,15 @@
       "prompt": "Ich ___ (fahren) nach Berlin.",
       "answer": "fahre",
       "explanation": "Irregular: fahren keeps a in Ich form.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_156",
@@ -663,7 +1149,15 @@
       "prompt": "Du ___ (fahren) nach Hause.",
       "answer": "fahrst",
       "explanation": "Irregular: du fahrst (a stays in du form).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_157",
@@ -672,7 +1166,15 @@
       "prompt": "Er ___ (fahren) mit dem Bus.",
       "answer": "fahrt",
       "explanation": "Irregular: a changes to a in er/sie/es.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_158",
@@ -681,7 +1183,15 @@
       "prompt": "Ich ___ (lesen) ein Buch.",
       "answer": "lese",
       "explanation": "Irregular: lesen - Ich lese (e stays).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_159",
@@ -690,7 +1200,15 @@
       "prompt": "Du ___ (lesen) die Zeitung.",
       "answer": "liest",
       "explanation": "Irregular: du liest (e changes to ie).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_160",
@@ -699,7 +1217,15 @@
       "prompt": "Er ___ (lesen) gern.",
       "answer": "liest",
       "explanation": "Irregular: er liest (e changes to ie).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_161",
@@ -708,7 +1234,15 @@
       "prompt": "Ich ___ (sehen) den Film.",
       "answer": "sehe",
       "explanation": "Irregular: sehen - Ich sehe.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_162",
@@ -723,7 +1257,15 @@
       ],
       "answer": "sprichst",
       "explanation": "Irregular: du sprichst (e to i change).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_present_tense_irregular_intro",
+      "taughtInLessonId": "A1_lesson_6",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_6"
     },
     {
       "id": "A1_gr_163",
@@ -732,7 +1274,13 @@
       "prompt": "___ bin mude. (I)",
       "answer": "Ich",
       "explanation": "Ich is the pronoun for I.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_164",
@@ -741,7 +1289,13 @@
       "prompt": "___ bist mein Freund. (you - informal)",
       "answer": "Du",
       "explanation": "Du is the informal singular you.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_165",
@@ -750,7 +1304,13 @@
       "prompt": "___ ist Lehrerin. (she)",
       "answer": "Sie",
       "explanation": "Sie is the pronoun for she.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_166",
@@ -759,7 +1319,13 @@
       "prompt": "___ wohnen in Koln. (they)",
       "answer": "Sie",
       "explanation": "Sie (capital S) is they in German.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_167",
@@ -768,7 +1334,13 @@
       "prompt": "___ seid lustig. (you all)",
       "answer": "Ihr",
       "explanation": "Ihr is the plural you (informal).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_168",
@@ -777,7 +1349,13 @@
       "prompt": "___ haben ein Problem. (we)",
       "answer": "Wir",
       "explanation": "Wir means we.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_169",
@@ -792,7 +1370,13 @@
       ],
       "answer": "Alle sind richtig",
       "explanation": "Er (he), Sie (she), and Es (it) are all correct - context decides.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_170",
@@ -801,7 +1385,13 @@
       "prompt": "___ trinkst Wasser. (you informal)",
       "answer": "Du",
       "explanation": "Du is the second person singular pronoun.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_personal_pronouns",
+      "taughtInLessonId": "A1_lesson_5",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_5"
     },
     {
       "id": "A1_gr_132",
@@ -810,7 +1400,15 @@
       "prompt": "Das Wetter ___ schon heute.",
       "answer": "ist",
       "explanation": "Das Wetter (the weather) is singular neuter, so ist is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_sein",
+      "taughtInLessonId": "A1_lesson_7",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_7"
     },
     {
       "id": "A1_gr_171",
@@ -825,7 +1423,13 @@
       ],
       "answer": "Der",
       "explanation": "Tisch is masculine, so der is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_172",
@@ -840,7 +1444,13 @@
       ],
       "answer": "Die",
       "explanation": "Blume is feminine, so die is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_173",
@@ -855,7 +1465,13 @@
       ],
       "answer": "Das",
       "explanation": "Kind is neuter, so das is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_174",
@@ -864,7 +1480,13 @@
       "prompt": "___ Hund (the dog) ist braun.",
       "answer": "Der",
       "explanation": "Hund is masculine, so der is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_175",
@@ -873,7 +1495,13 @@
       "prompt": "___ Sonne (the sun) scheint.",
       "answer": "Die",
       "explanation": "Sonne is feminine, so die is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_176",
@@ -882,7 +1510,13 @@
       "prompt": "___ Wasser ist kalt.",
       "answer": "Das",
       "explanation": "Wasser is neuter, so das is correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_definite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_177",
@@ -891,7 +1525,15 @@
       "prompt": "Das ist ___ Hund. (a)",
       "answer": "ein",
       "explanation": "Hund is masculine, so ein (not eine).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_indefinite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_178",
@@ -900,7 +1542,15 @@
       "prompt": "Das ist ___ Katze. (a)",
       "answer": "eine",
       "explanation": "Katze is feminine, so eine.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_indefinite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_179",
@@ -909,7 +1559,15 @@
       "prompt": "Das ist ___ Auto. (a)",
       "answer": "ein",
       "explanation": "Auto is neuter, so ein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_indefinite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_180",
@@ -924,7 +1582,15 @@
       ],
       "answer": "einen",
       "explanation": "Bruder is masculine, and it is accusative (direct object), so einen.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_indefinite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_181",
@@ -939,7 +1605,15 @@
       ],
       "answer": "eine",
       "explanation": "Tasche is feminine, accusative: eine Tasche.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_articles_indefinite",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_182",
@@ -948,7 +1622,15 @@
       "prompt": "Ich habe ___ Hund. (no)",
       "answer": "keinen",
       "explanation": "Hund is masculine accusative: keinen.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_183",
@@ -957,7 +1639,15 @@
       "prompt": "Das ist ___ Blume. (not a)",
       "answer": "keine",
       "explanation": "Blume is feminine: keine.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_184",
@@ -966,7 +1656,15 @@
       "prompt": "Er hat ___ Buch. (no)",
       "answer": "kein",
       "explanation": "Buch is neuter: kein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_185",
@@ -975,7 +1673,15 @@
       "prompt": "Wir haben ___ Zeit. (no)",
       "answer": "keine",
       "explanation": "Zeit is feminine: keine.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_186",
@@ -990,7 +1696,15 @@
       ],
       "answer": "kein",
       "explanation": "Tisch is masculine nominative: kein.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_187",
@@ -999,7 +1713,15 @@
       "prompt": "Er arbeitet ___ sonntags. (not on Sundays)",
       "answer": "nicht",
       "explanation": "nicht negates verbs/adverbs/adjectives, kein negates nouns.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_188",
@@ -1008,7 +1730,15 @@
       "prompt": "Das ist ___ Apfel. (not an apple)",
       "answer": "kein",
       "explanation": "kein negates the noun Apfel.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_189",
@@ -1017,7 +1747,15 @@
       "prompt": "Ich mag Kaffee ___. (not)",
       "answer": "nicht",
       "explanation": "nicht comes after the verb when negating the action/object.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_190",
@@ -1026,7 +1764,15 @@
       "prompt": "Sie hat ___ Schwester. (no sister)",
       "answer": "keine",
       "explanation": "keine negates the feminine noun Schwester.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_191",
@@ -1041,7 +1787,15 @@
       ],
       "answer": "kein",
       "explanation": "kein negates the profession noun Arzt.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_192",
@@ -1056,7 +1810,15 @@
       ],
       "answer": "nicht",
       "explanation": "nicht negates the adjective mude.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_negation_nicht_kein",
+      "taughtInLessonId": "A1_lesson_11",
+      "prerequisiteConceptIds": [
+        "a1_articles_indefinite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_193",
@@ -1065,7 +1827,15 @@
       "prompt": "Ich ___ heute ___ (gehen / ins Kino).",
       "answer": "gehe ... ins Kino",
       "explanation": "Verb is 2nd position: Ich gehe heute ins Kino.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_194",
@@ -1078,7 +1848,15 @@
       ],
       "answer": "richtig",
       "explanation": "When a time phrase starts the sentence, the verb stays 2nd. Heute (1st) gehe (2nd) ich (3rd).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_195",
@@ -1091,7 +1869,15 @@
       ],
       "answer": "falsch",
       "explanation": "The verb gehe must be in 2nd position: Ich gehe heute ins Kino.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_196",
@@ -1100,7 +1886,15 @@
       "prompt": "Morgen ___ (fahren) wir nach Berlin.",
       "answer": "fahren",
       "explanation": "Verb 2nd position after time expression. Morgen (1st) fahren (2nd).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_197",
@@ -1109,7 +1903,15 @@
       "prompt": "___ du gern im Park? (spielen)",
       "answer": "Spielst",
       "explanation": "Questions start with verb. Verb is 1st position.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_198",
@@ -1122,7 +1924,15 @@
       ],
       "answer": "richtig",
       "explanation": "Correct: Ich (1st) habe (2nd) heute (3rd) keine Zeit.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_word_order_main_clause",
+      "taughtInLessonId": "A1_lesson_9",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_9"
     },
     {
       "id": "A1_gr_199",
@@ -1131,7 +1941,15 @@
       "prompt": "___ du aus Deutschland? (come)",
       "answer": "Kommst",
       "explanation": "Yes/no questions start with the verb: Kommst du aus Deutschland?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_200",
@@ -1140,7 +1958,15 @@
       "prompt": "___ ihr Hunger? (have)",
       "answer": "Habt",
       "explanation": "Ihr form: Habt ihr Hunger?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_201",
@@ -1155,7 +1981,15 @@
       ],
       "answer": "Sind",
       "explanation": "Sind Sie Frau Muller? (formal Sie uses sind).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_202",
@@ -1170,7 +2004,15 @@
       ],
       "answer": "HeiBt er Max?",
       "explanation": "Verb first, then subject: HeiBt er Max?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_203",
@@ -1179,7 +2021,15 @@
       "prompt": "___ das dein Buch? (is)",
       "answer": "Ist",
       "explanation": "Ist das dein Buch? Verb first in yes/no questions.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_204",
@@ -1188,7 +2038,15 @@
       "prompt": "___ du morgen Zeit? (have)",
       "answer": "Hast",
       "explanation": "Hast du morgen Zeit?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_yes_no_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_205",
@@ -1197,7 +2055,15 @@
       "prompt": "___ heiBen Sie? (what)",
       "answer": "Wie",
       "explanation": "Wie heiBen Sie? (What is your name?)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_206",
@@ -1206,7 +2072,15 @@
       "prompt": "___ wohnst du? (where)",
       "answer": "Wo",
       "explanation": "Wo wohnst du? (Where do you live?)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_207",
@@ -1221,7 +2095,15 @@
       ],
       "answer": "Woher",
       "explanation": "Woher asks about origin (from where).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_208",
@@ -1230,7 +2112,15 @@
       "prompt": "___ alt bist du? (how)",
       "answer": "Wie",
       "explanation": "Wie alt bist du? (How old are you?)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_209",
@@ -1245,7 +2135,15 @@
       ],
       "answer": "Wie viel",
       "explanation": "Wie viel Uhr ist es? (What time is it?)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_210",
@@ -1254,7 +2152,15 @@
       "prompt": "___ machst du? (what)",
       "answer": "Was",
       "explanation": "Was machst du? (What are you doing?)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_w_questions",
+      "taughtInLessonId": "A1_lesson_10",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_10"
     },
     {
       "id": "A1_gr_211",
@@ -1263,7 +2169,15 @@
       "prompt": "Ich sehe ___ (der) Mann.",
       "answer": "den",
       "explanation": "Der Mann -> accusative: den Mann.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_212",
@@ -1272,7 +2186,15 @@
       "prompt": "Er hat ___ (die) Blume.",
       "answer": "die",
       "explanation": "Die Blume stays die in accusative.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_213",
@@ -1281,7 +2203,15 @@
       "prompt": "Sie kauft ___ (das) Buch.",
       "answer": "das",
       "explanation": "Das Buch stays das in accusative.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_214",
@@ -1296,7 +2226,15 @@
       ],
       "answer": "den",
       "explanation": "Hund is masculine, accusative direct object: den Hund.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_215",
@@ -1305,7 +2243,15 @@
       "prompt": "Wir besuchen ___ (der) Arzt.",
       "answer": "den",
       "explanation": "Der Arzt -> accusative: den Arzt.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_216",
@@ -1318,7 +2264,15 @@
       ],
       "answer": "richtig",
       "explanation": "Das Mädchen is neuter, stays das in accusative. Correct.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_217",
@@ -1327,7 +2281,15 @@
       "prompt": "Er trinkt ___ (die) Milch.",
       "answer": "die",
       "explanation": "Die Milch stays die in accusative (feminine no change).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_218",
@@ -1342,7 +2304,15 @@
       ],
       "answer": "den Tisch",
       "explanation": "Masculine der changes to den in accusative.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_accusative_basics",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_219",
@@ -1351,7 +2321,15 @@
       "prompt": "Ich ___ (können) schwimmen.",
       "answer": "kann",
       "explanation": "Modal: kann + infinitive at end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_220",
@@ -1360,7 +2338,15 @@
       "prompt": "Du ___ (müssen) lernen.",
       "answer": "musst",
       "explanation": "Du musst + infinitive lernen at end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_221",
@@ -1369,7 +2355,15 @@
       "prompt": "Er ___ (wollen) nach Hause gehen.",
       "answer": "will",
       "explanation": "Er will + infinitive gehen at end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_222",
@@ -1378,7 +2372,15 @@
       "prompt": "Ich ___ (möchten) einen Kaffee.",
       "answer": "möchte",
       "explanation": "Ich möchte (I would like) behaves like a modal.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_223",
@@ -1387,7 +2389,15 @@
       "prompt": "Wir ___ (dürfen) hier parken.",
       "answer": "dürfen",
       "explanation": "Wir dürfen + infinitive parken.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_224",
@@ -1396,7 +2406,15 @@
       "prompt": "Ihr ___ (sollen) pünktlich sein.",
       "answer": "sollt",
       "explanation": "Ihr sollt + infinitive sein at end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_225",
@@ -1409,7 +2427,15 @@
       ],
       "answer": "richtig",
       "explanation": "Correct: Ich kann + infinitive singen at end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_226",
@@ -1418,7 +2444,15 @@
       "prompt": "___ (können) du mir helfen?",
       "answer": "Kannst",
       "explanation": "Du form: Kannst du mir helfen?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_modal_verbs",
+      "taughtInLessonId": "A1_lesson_8",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_8"
     },
     {
       "id": "A1_gr_227",
@@ -1427,7 +2461,15 @@
       "prompt": "Das ist ___ (my) Buch.",
       "answer": "mein",
       "explanation": "Mein for neuter nominative: mein Buch.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_228",
@@ -1436,7 +2478,15 @@
       "prompt": "Das ist ___ (my) Mutter.",
       "answer": "meine",
       "explanation": "Meine for feminine: meine Mutter.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_229",
@@ -1445,7 +2495,15 @@
       "prompt": "Das ist ___ (your, informal) Hund.",
       "answer": "dein",
       "explanation": "Dein for masculine: dein Hund.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_230",
@@ -1454,7 +2512,15 @@
       "prompt": "Das ist ___ (his) Schwester.",
       "answer": "seine",
       "explanation": "Seine for feminine: seine Schwester.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_231",
@@ -1463,7 +2529,15 @@
       "prompt": "Das ist ___ (her) Auto.",
       "answer": "ihr",
       "explanation": "Ihr for neuter: ihr Auto.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_232",
@@ -1478,7 +2552,15 @@
       ],
       "answer": "Meine",
       "explanation": "Eltern is plural, so meine.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_233",
@@ -1487,7 +2569,15 @@
       "prompt": "Das ist ___ (our) Haus.",
       "answer": "unser",
       "explanation": "Unser for neuter: unser Haus.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_234",
@@ -1502,7 +2592,15 @@
       ],
       "answer": "Ihr",
       "explanation": "Bruder is masculine, so ihr (her).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_possessive_adjectives",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_personal_pronouns"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_235",
@@ -1511,7 +2609,15 @@
       "prompt": "Der Tisch -> die ___ (tables)",
       "answer": "Tische",
       "explanation": "Most masculine nouns add -e: der Tisch -> die Tische.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_236",
@@ -1520,7 +2626,15 @@
       "prompt": "Die Blume -> die ___ (flowers)",
       "answer": "Blumen",
       "explanation": "Feminine nouns often add -(e)n: die Blume -> die Blumen.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_237",
@@ -1529,7 +2643,15 @@
       "prompt": "Das Kind -> die ___ (children)",
       "answer": "Kinder",
       "explanation": "Neuter nouns often add -er: das Kind -> die Kinder.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_238",
@@ -1538,7 +2660,15 @@
       "prompt": "Der Apfel -> die ___ (apples)",
       "answer": "Äpfel",
       "explanation": "Many masculine nouns add Umlaut: der Apfel -> die Äpfel.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_239",
@@ -1553,7 +2683,15 @@
       ],
       "answer": "Busse",
       "explanation": "Der Bus -> die Busse (adds -e).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_240",
@@ -1562,7 +2700,15 @@
       "prompt": "Bruder -> ___ (brothers, two or more)",
       "answer": "Brüder",
       "explanation": "Umlaut + nothing: der Bruder -> die Brüder.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_241",
@@ -1571,7 +2717,15 @@
       "prompt": "Das Auge -> die ___ (eyes)",
       "answer": "Augen",
       "explanation": "Das Auge -> die Augen (adds -n).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_242",
@@ -1586,7 +2740,15 @@
       ],
       "answer": "Mütter",
       "explanation": "Die Mutter -> die Mütter (Umlaut, no ending).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_plural_basics",
+      "taughtInLessonId": "A1_lesson_12",
+      "prerequisiteConceptIds": [
+        "a1_noun_gender_basics"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_12"
     },
     {
       "id": "A1_gr_243",
@@ -1595,7 +2757,15 @@
       "prompt": "3 + 5 = ___",
       "answer": "acht",
       "explanation": "Drei plus funf ist acht.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_244",
@@ -1604,7 +2774,15 @@
       "prompt": "Es ist ___ Uhr. (2:00)",
       "answer": "zwei",
       "explanation": "Zwei Uhr = 2 o'clock.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_245",
@@ -1613,7 +2791,15 @@
       "prompt": "Es ist Viertel nach ___. (3:15)",
       "answer": "drei",
       "explanation": "15 minutes past 3 = Viertel nach drei.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_246",
@@ -1622,7 +2808,15 @@
       "prompt": "Es ist halb ___. (5:30)",
       "answer": "sechs",
       "explanation": "Halb sechs = 5:30 (half to six). Note: halb is half TO the hour.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_247",
@@ -1637,7 +2831,15 @@
       ],
       "answer": "Viertel vor neun",
       "explanation": "15 minutes before 9 = Viertel vor neun.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_248",
@@ -1646,7 +2848,15 @@
       "prompt": "Schreibe: 22 (zweiund___)",
       "answer": "zwanzig",
       "explanation": "Zweiundzwanzig = 22.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_249",
@@ -1655,7 +2865,15 @@
       "prompt": "Es ist zehn Minuten nach ___. (10:10)",
       "answer": "zehn",
       "explanation": "10:10 = zehn Minuten nach zehn.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_250",
@@ -1670,7 +2888,15 @@
       ],
       "answer": "Alle sind richtig",
       "explanation": "12:00 can be zwolf Uhr, null Uhr, or Mittag.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_time_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [
+        "a1_numbers_dates"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_251",
@@ -1679,7 +2905,15 @@
       "prompt": "Ich ___ um 8 Uhr ___ (aufstehen).",
       "answer": "stehe ... auf",
       "explanation": "Aufstehen: prefix auf gös to the end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_252",
@@ -1688,7 +2922,15 @@
       "prompt": "Er ___ dich ___ (anrufen).",
       "answer": "ruft ... an",
       "explanation": "Anrufen: Er ruft dich an.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_253",
@@ -1697,7 +2939,15 @@
       "prompt": "Wir ___ morgen ___ (abfahren).",
       "answer": "fahren ... ab",
       "explanation": "Abfahren: Wir fahren morgen ab.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_254",
@@ -1710,7 +2960,15 @@
       ],
       "answer": "falsch",
       "explanation": "Anschalten: prefix an gös to end. 'Ich schalte das Licht an.'",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_255",
@@ -1719,7 +2977,15 @@
       "prompt": "Du ___ das Fenster ___ (aufmachen).",
       "answer": "machst ... auf",
       "explanation": "Aufmachen: Du machst das Fenster auf.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_256",
@@ -1734,7 +3000,15 @@
       ],
       "answer": "kaufe ... ein",
       "explanation": "Einkaufen: prefix ein gös to the end of the sentence.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_separable_verbs_intro",
+      "taughtInLessonId": "A1_lesson_15",
+      "prerequisiteConceptIds": [
+        "a1_word_order_main_clause"
+      ],
+      "difficulty": "review",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_15"
     },
     {
       "id": "A1_gr_257",
@@ -1743,7 +3017,15 @@
       "prompt": "Das Buch liegt ___ dem Tisch. (on)",
       "answer": "auf",
       "explanation": "Auf dem Tisch = on the table.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_258",
@@ -1752,7 +3034,15 @@
       "prompt": "Die Katze sitzt ___ dem Stuhl. (on)",
       "answer": "auf",
       "explanation": "Auf dem Stuhl = on the chair.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_259",
@@ -1761,7 +3051,15 @@
       "prompt": "Der Stuhl steht ___ dem Tisch. (next to)",
       "answer": "neben",
       "explanation": "Neben dem Tisch = next to the table.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_260",
@@ -1776,7 +3074,15 @@
       ],
       "answer": "an",
       "explanation": "An der Wand = on the wall (vertical surface). Auf = horizontal (table).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_261",
@@ -1785,7 +3091,15 @@
       "prompt": "Wir wohnen ___ Berlin. (in)",
       "answer": "in",
       "explanation": "In Berlin = in Berlin (city/town).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_262",
@@ -1800,7 +3114,15 @@
       ],
       "answer": "vor",
       "explanation": "Vor dem Haus = in front of the house.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_basic_prepositions",
+      "taughtInLessonId": "A1_lesson_13",
+      "prerequisiteConceptIds": [
+        "a1_articles_definite"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_13"
     },
     {
       "id": "A1_gr_263",
@@ -1809,7 +3131,15 @@
       "prompt": "___ (sein) leise! (to one friend)",
       "answer": "Sei",
       "explanation": "Sei leise! (du imperative: verb stem + no ending)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_264",
@@ -1818,7 +3148,15 @@
       "prompt": "___ (kommen) her! (to one friend)",
       "answer": "Komm",
       "explanation": "Komm her! (du imperative: verb stem)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_265",
@@ -1827,7 +3165,15 @@
       "prompt": "___ (spielen) mit mir! (to one friend)",
       "answer": "Spiel",
       "explanation": "Spiel mit mir! (du imperative)",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_266",
@@ -1836,7 +3182,15 @@
       "prompt": "___ (gehen) Sie nach links! (formal)",
       "answer": "Gehen",
       "explanation": "Formal imperative uses Sie + infinitive: Gehen Sie.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_267",
@@ -1849,7 +3203,15 @@
       ],
       "answer": "richtig",
       "explanation": "Seid leise! is correct for ihr (group informal).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_268",
@@ -1858,7 +3220,15 @@
       "prompt": "___ (nehmen) Sie bitte Platz! (formal)",
       "answer": "Nehmen",
       "explanation": "Nehmen Sie Platz! (formal imperative).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_imperative_intro",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_269",
@@ -1867,7 +3237,13 @@
       "prompt": "Ich ___ (heiBen) Anna.",
       "answer": "heiBe",
       "explanation": "Ich heiBe Anna.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_270",
@@ -1876,7 +3252,13 @@
       "prompt": "Er ___ (trinken) Wasser.",
       "answer": "trinkt",
       "explanation": "Er trinkt Wasser (regular verb).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_271",
@@ -1891,7 +3273,13 @@
       ],
       "answer": "geht",
       "explanation": "Ihr geht = you all go.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_272",
@@ -1900,7 +3288,13 @@
       "prompt": "Du ___ (tanzen) sehr gut.",
       "answer": "tanzt",
       "explanation": "Du tanzt (regular, t-stem).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_273",
@@ -1909,7 +3303,13 @@
       "prompt": "Wir ___ (kochen) heute Abend.",
       "answer": "kochen",
       "explanation": "Wir kochen (plural stays infinitive).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_274",
@@ -1924,7 +3324,13 @@
       ],
       "answer": "Es",
       "explanation": "Es is the subject (it is raining).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_275",
@@ -1933,7 +3339,13 @@
       "prompt": "___ (haben) ihr Geschwister?",
       "answer": "Habt",
       "explanation": "Habt ihr Geschwister?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_276",
@@ -1942,7 +3354,13 @@
       "prompt": "Mein Bruder ___ (sein) 15 Jahre alt.",
       "answer": "ist",
       "explanation": "Mein Bruder ist 15 Jahre alt.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_277",
@@ -1951,7 +3369,13 @@
       "prompt": "Wir ___ (müssen) heute arbeiten.",
       "answer": "müssen",
       "explanation": "Wir mussen heute arbeiten.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_278",
@@ -1966,7 +3390,13 @@
       ],
       "answer": "ein",
       "explanation": "Buch is neuter: ein interessantes Buch.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_279",
@@ -1975,7 +3405,13 @@
       "prompt": "___ (können) du mir sagen, wie spat es ist?",
       "answer": "Kannst",
       "explanation": "Kannst du mir sagen...?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_280",
@@ -1990,7 +3426,13 @@
       ],
       "answer": "ein",
       "explanation": "Katze is feminine: Ich habe eine Katze.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_281",
@@ -1999,7 +3441,13 @@
       "prompt": "Ich ___ (heiBen) Max und komme aus Berlin.",
       "answer": "heiBe",
       "explanation": "Ich heiBe Max - heiBen conjugated for ich.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_282",
@@ -2012,7 +3460,13 @@
       ],
       "answer": "falsch",
       "explanation": "Zeit is feminine, so it should be keine Zeit.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_283",
@@ -2021,7 +3475,13 @@
       "prompt": "___ du morgen früh ___ (aufstehen)?",
       "answer": "Stehst ... auf",
       "explanation": "Du form of aufstehen: prefix auf gös to the end.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_284",
@@ -2030,7 +3490,13 @@
       "prompt": "Der Arzt ___ den Patienten. (untersuchen)",
       "answer": "untersucht",
       "explanation": "Er untersucht den Patienten (regular verb).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_285",
@@ -2045,7 +3511,13 @@
       ],
       "answer": "Häuser",
       "explanation": "Das Haus -> die Häuser (Umlaut + -er).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_286",
@@ -2054,7 +3526,13 @@
       "prompt": "___ (fahren) du mit dem Zug?",
       "answer": "Fährst",
       "explanation": "Du fährst (irregular: a -> ä in du/er forms).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_287",
@@ -2069,7 +3547,13 @@
       ],
       "answer": "where to",
       "explanation": "Wohin = where to. Woher = where from.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_288",
@@ -2078,7 +3562,13 @@
       "prompt": "Meine Mutter ___ (arbeiten) in einer Klinik.",
       "answer": "arbeitet",
       "explanation": "Sie arbeitet (t-stem verb: arbeit + et).",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_289",
@@ -2087,7 +3577,13 @@
       "prompt": "___ (sein) ihr schon fertig?",
       "answer": "Seid",
       "explanation": "Ihr seid -> Seid ihr schon fertig?",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_290",
@@ -2100,7 +3596,13 @@
       ],
       "answer": "richtig",
       "explanation": "Correct: Ich möchte einen Kaffee.",
-      "level": "A1"
+      "level": "A1",
+      "conceptId": "a1_mixed_review",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_291",
@@ -2115,7 +3617,13 @@
         "The water"
       ],
       "answer": "The apple",
-      "explanation": "Der Apfel means the apple. It is a masculine noun (der)."
+      "explanation": "Der Apfel means the apple. It is a masculine noun (der).",
+      "conceptId": "a1_food_vocab",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_292",
@@ -2130,7 +3638,13 @@
         "Den"
       ],
       "answer": "Die",
-      "explanation": "Wasser is neuter (das Wasser). Correct article in nominative is das."
+      "explanation": "Wasser is neuter (das Wasser). Correct article in nominative is das.",
+      "conceptId": "a1_food_vocab",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_293",
@@ -2139,7 +3653,13 @@
       "topic": "Food",
       "prompt": "Ich esse gern ___ (the bread).",
       "answer": "das Brot",
-      "explanation": "Brot is neuter (das Brot). With gern essen, use accusative: das Brot."
+      "explanation": "Brot is neuter (das Brot). With gern essen, use accusative: das Brot.",
+      "conceptId": "a1_food_vocab",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_294",
@@ -2148,7 +3668,13 @@
       "topic": "Food",
       "prompt": "Translate: \"I drink coffee.\"",
       "answer": "Ich trinke Kaffee.",
-      "explanation": "Use ich trinke for I drink. Coffee is der Kaffee, stays in accusative without article."
+      "explanation": "Use ich trinke for I drink. Coffee is der Kaffee, stays in accusative without article.",
+      "conceptId": "a1_food_vocab",
+      "taughtInLessonId": "A1_lesson_4",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_295",
@@ -2163,7 +3689,13 @@
         "Tschüss"
       ],
       "answer": "Guten Morgen",
-      "explanation": "Guten Morgen is used in the morning until about noon."
+      "explanation": "Guten Morgen is used in the morning until about noon.",
+      "conceptId": "a1_greetings_introductions",
+      "taughtInLessonId": "A1_lesson_1",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_1"
     },
     {
       "id": "A1_gr_296",
@@ -2172,7 +3704,13 @@
       "topic": "Greetings",
       "prompt": "Complete: \"___ Abend!\" (Good evening)",
       "answer": "Guten",
-      "explanation": "Guten Abend means Good evening. Used after about 6 PM."
+      "explanation": "Guten Abend means Good evening. Used after about 6 PM.",
+      "conceptId": "a1_greetings_introductions",
+      "taughtInLessonId": "A1_lesson_1",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_1"
     },
     {
       "id": "A1_gr_297",
@@ -2187,7 +3725,13 @@
         "Auf Wiedersehen!"
       ],
       "answer": "Bis später!",
-      "explanation": "Bis später is informal and means See you later."
+      "explanation": "Bis später is informal and means See you later.",
+      "conceptId": "a1_greetings_introductions",
+      "taughtInLessonId": "A1_lesson_1",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_1"
     },
     {
       "id": "A1_gr_298",
@@ -2202,7 +3746,13 @@
         "At lunch"
       ],
       "answer": "Before sleeping",
-      "explanation": "Gute Nacht is used right before going to bed or when leaving very late."
+      "explanation": "Gute Nacht is used right before going to bed or when leaving very late.",
+      "conceptId": "a1_greetings_introductions",
+      "taughtInLessonId": "A1_lesson_1",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_1"
     },
     {
       "id": "A1_gr_299",
@@ -2211,7 +3761,13 @@
       "topic": "Numbers",
       "prompt": "Write in German: 15",
       "answer": "fünfzehn",
-      "explanation": "15 is fünfzehn (fünf + zehn)."
+      "explanation": "15 is fünfzehn (fünf + zehn).",
+      "conceptId": "a1_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_300",
@@ -2220,7 +3776,13 @@
       "topic": "Numbers",
       "prompt": "Write in German: 33",
       "answer": "dreiunddreissig",
-      "explanation": "33 is dreiunddreissig. In German, you say the unit first: drei + und + dreissig."
+      "explanation": "33 is dreiunddreissig. In German, you say the unit first: drei + und + dreissig.",
+      "conceptId": "a1_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_301",
@@ -2235,7 +3797,13 @@
         "Twenty"
       ],
       "answer": "Twelve",
-      "explanation": "Zwölf is the German word for twelve."
+      "explanation": "Zwölf is the German word for twelve.",
+      "conceptId": "a1_numbers_dates",
+      "taughtInLessonId": "A1_lesson_14",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_14"
     },
     {
       "id": "A1_gr_302",
@@ -2250,7 +3818,13 @@
         "Den"
       ],
       "answer": "Der",
-      "explanation": "Mann is masculine (der Mann). In nominative case, the article is der."
+      "explanation": "Mann is masculine (der Mann). In nominative case, the article is der.",
+      "conceptId": "a1_everyday_people_vocab",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_303",
@@ -2265,7 +3839,13 @@
         "The girl"
       ],
       "answer": "The woman",
-      "explanation": "Die Frau means the woman. It is a feminine noun (die)."
+      "explanation": "Die Frau means the woman. It is a feminine noun (die).",
+      "conceptId": "a1_everyday_people_vocab",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_304",
@@ -2274,7 +3854,13 @@
       "topic": "People",
       "prompt": "Plural of \"das Kind\" is ___ .",
       "answer": "die Kinder",
-      "explanation": "Das Kind becomes die Kinder in plural. The article changes from das to die."
+      "explanation": "Das Kind becomes die Kinder in plural. The article changes from das to die.",
+      "conceptId": "a1_everyday_people_vocab",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_305",
@@ -2289,7 +3875,13 @@
         "Den Freunde sind nett."
       ],
       "answer": "Die Freunde sind nett.",
-      "explanation": "Freunde is plural, so the article is die. The verb sind matches the plural subject."
+      "explanation": "Freunde is plural, so the article is die. The verb sind matches the plural subject.",
+      "conceptId": "a1_everyday_people_vocab",
+      "taughtInLessonId": "A1_lesson_3",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_3"
     },
     {
       "id": "A1_gr_306",
@@ -2304,7 +3896,13 @@
         "Den"
       ],
       "answer": "Die",
-      "explanation": "Lehrerin is feminine (die Lehrerin). Correct article in nominative is die."
+      "explanation": "Lehrerin is feminine (die Lehrerin). Correct article in nominative is die.",
+      "conceptId": "a1_school_vocab",
+      "taughtInLessonId": "A1_lesson_25",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_25"
     },
     {
       "id": "A1_gr_307",
@@ -2319,7 +3917,13 @@
         "The book"
       ],
       "answer": "The school",
-      "explanation": "Die Schule means the school. It is feminine."
+      "explanation": "Die Schule means the school. It is feminine.",
+      "conceptId": "a1_school_vocab",
+      "taughtInLessonId": "A1_lesson_25",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_25"
     },
     {
       "id": "A1_gr_308",
@@ -2328,7 +3932,13 @@
       "topic": "School",
       "prompt": "Wir haben ___ (a book).",
       "answer": "ein Buch",
-      "explanation": "Buch is neuter (das Buch), so the indefinite article is ein in nominative/accusative."
+      "explanation": "Buch is neuter (das Buch), so the indefinite article is ein in nominative/accusative.",
+      "conceptId": "a1_school_vocab",
+      "taughtInLessonId": "A1_lesson_25",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_25"
     },
     {
       "id": "A1_gr_309",
@@ -2343,7 +3953,13 @@
         "Den Schüler sind im Klassenzimmer."
       ],
       "answer": "Die Schüler sind im Klassenzimmer.",
-      "explanation": "Schüler is plural (die Schüler). Im = in + dem (dative because location is static)."
+      "explanation": "Schüler is plural (die Schüler). Im = in + dem (dative because location is static).",
+      "conceptId": "a1_school_vocab",
+      "taughtInLessonId": "A1_lesson_25",
+      "prerequisiteConceptIds": [],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_25"
     },
     {
       "id": "A1_gr_310",
@@ -2352,7 +3968,15 @@
       "topic": "Verbs",
       "prompt": "Wir ___ (to play) Fussball.",
       "answer": "spielen",
-      "explanation": "Spielen is the infinitive. With wir, use the same form: wir spielen."
+      "explanation": "Spielen is the infinitive. With wir, use the same form: wir spielen.",
+      "conceptId": "a1_basic_sentence_building",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_311",
@@ -2361,7 +3985,15 @@
       "topic": "Verbs",
       "prompt": "Er ___ (to learn) Deutsch.",
       "answer": "lernt",
-      "explanation": "Lernen means to learn. For er/sie/es, add -t: er lernt."
+      "explanation": "Lernen means to learn. For er/sie/es, add -t: er lernt.",
+      "conceptId": "a1_basic_sentence_building",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_312",
@@ -2376,7 +4008,15 @@
         "wohnen"
       ],
       "answer": "wohne",
-      "explanation": "Wohnen means to live. For ich, remove -en and add -e: ich wohne."
+      "explanation": "Wohnen means to live. For ich, remove -en and add -e: ich wohne.",
+      "conceptId": "a1_basic_sentence_building",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     },
     {
       "id": "A1_gr_313",
@@ -2391,7 +4031,15 @@
         "To run"
       ],
       "answer": "To hear",
-      "explanation": "Hören is a regular verb meaning to hear. Ich höre, du hörst, er/sie/es hört."
+      "explanation": "Hören is a regular verb meaning to hear. Ich höre, du hörst, er/sie/es hört.",
+      "conceptId": "a1_basic_sentence_building",
+      "taughtInLessonId": "A1_lesson_16",
+      "prerequisiteConceptIds": [
+        "a1_present_tense_regular"
+      ],
+      "difficulty": "core",
+      "skillType": "grammar",
+      "remediationLessonId": "A1_lesson_16"
     }
   ],
   "A2": [

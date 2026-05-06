@@ -19,12 +19,27 @@
     {
       "conceptId": "a1.personal-pronouns-present-tense",
       "level": "A1",
-      "trackTags": ["goethe", "full-mastery", "medical-fsp"],
+      "trackTags": [
+        "goethe",
+        "full-mastery",
+        "medical-fsp"
+      ],
       "estimatedMinutes": 15,
       "prerequisiteConceptIds": [],
-      "questionTags": ["A1_gr_1", "A1_gr_2", "A1_gr_3"],
-      "remediationTags": ["verb-ending", "subject-verb-agreement", "rewrite-simple-sentence"],
-      "pronunciationTags": ["sentence-melody", "ich-laut"],
+      "questionTags": [
+        "A1_gr_1",
+        "A1_gr_2",
+        "A1_gr_3"
+      ],
+      "remediationTags": [
+        "verb-ending",
+        "subject-verb-agreement",
+        "rewrite-simple-sentence"
+      ],
+      "pronunciationTags": [
+        "sentence-melody",
+        "ich-laut"
+      ],
       "medicalFspNotes": "Use present-tense self-introductions for patient and clinician introductions: Ich heiße..., Ich arbeite..., Ich habe Schmerzen."
     }
   ],
@@ -39,5 +54,107 @@
     "sentence-melody",
     "arabic-english-speaker-mistakes",
     "medical-fsp-terms"
+  ],
+  "a1CurriculumModules": [
+    {
+      "id": "a1_alphabet_pronunciation",
+      "lessonId": "A1_lesson_2",
+      "required": true
+    },
+    {
+      "id": "a1_noun_gender_basics",
+      "lessonId": "A1_lesson_3",
+      "required": true
+    },
+    {
+      "id": "a1_articles_definite",
+      "lessonId": "A1_lesson_3",
+      "required": true
+    },
+    {
+      "id": "a1_accusative_basics",
+      "lessonId": "A1_lesson_4",
+      "required": true
+    },
+    {
+      "id": "a1_personal_pronouns",
+      "lessonId": "A1_lesson_5",
+      "required": true
+    },
+    {
+      "id": "a1_present_tense_regular",
+      "lessonId": "A1_lesson_6",
+      "required": true
+    },
+    {
+      "id": "a1_sein",
+      "lessonId": "A1_lesson_7",
+      "required": true
+    },
+    {
+      "id": "a1_haben",
+      "lessonId": "A1_lesson_7",
+      "required": true
+    },
+    {
+      "id": "a1_modal_verbs",
+      "lessonId": "A1_lesson_8",
+      "required": true
+    },
+    {
+      "id": "a1_word_order_main_clause",
+      "lessonId": "A1_lesson_9",
+      "required": true
+    },
+    {
+      "id": "a1_yes_no_questions",
+      "lessonId": "A1_lesson_10",
+      "required": true
+    },
+    {
+      "id": "a1_w_questions",
+      "lessonId": "A1_lesson_10",
+      "required": true
+    },
+    {
+      "id": "a1_negation_nicht_kein",
+      "lessonId": "A1_lesson_11",
+      "required": true
+    },
+    {
+      "id": "a1_plural_basics",
+      "lessonId": "A1_lesson_12",
+      "required": true
+    },
+    {
+      "id": "a1_basic_prepositions",
+      "lessonId": "A1_lesson_13",
+      "required": true
+    },
+    {
+      "id": "a1_time_numbers_dates",
+      "lessonId": "A1_lesson_14",
+      "required": true
+    },
+    {
+      "id": "a1_separable_verbs_intro",
+      "lessonId": "A1_lesson_15",
+      "required": true
+    },
+    {
+      "id": "a1_basic_sentence_building",
+      "lessonId": "A1_lesson_16",
+      "required": true
+    },
+    {
+      "id": "a1_medical_starter_phrases",
+      "lessonId": "A1_lesson_16",
+      "required": true
+    },
+    {
+      "id": "a1_everyday_vocabulary",
+      "lessonId": "A1_lesson_17",
+      "required": true
+    }
   ]
 }

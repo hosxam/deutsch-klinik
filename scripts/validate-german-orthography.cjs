@@ -23,7 +23,7 @@ const DATA_DIR = path.resolve(__dirname, '..', 'src', 'data');
 const ENGLISH_WORDS = new Set([
   'aed', 'continue', 'dialogue', 'dialogueprompts', 'dialogues',
   'doctorquestion', 'does', 'fluent', 'fluently', 'followupquestions',
-  'frequently', 'goes', 'goethe', 'monologue', 'question', 'questions',
+  'frequently', 'goes', 'goethe', 'guess', 'monologue', 'question', 'questions',
   'request', 'requests', 'true', 'ue', 'dialog', 'dialoge',
   'questionnaire', 'consequences', 'frequent', 'infrequent', 'fatigue',
 ]);
@@ -37,6 +37,7 @@ const GERMAN_VALID_WORDS = new Set([
   'dauer', 'dauern', 'dauert', 'dauerte', 'gedauert',
   'erfreuen', 'erfreut',
   'fachsprachpruefung',
+  'frau', 'frauen',
   'freue', 'freuen', 'freut', 'freute',
   'genaue', 'genauen', 'genauer', 'genaues',
   'graue', 'grauen', 'grauer', 'graues',
