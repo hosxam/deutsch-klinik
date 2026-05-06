@@ -3,12 +3,27 @@
     "level": "A1",
     "unit": "A1_unit_1",
     "id": "A1_lesson_1",
-    "title": "Begrüssungen und Vorstellungen",
-    "objective": "Learn to greet people, introduce yourself and others, and say goodbye in German.",
-    "explanation": "In German, greetings vary by region and time of day. The formal 'Sie' is used with strangers, colleagüs, and authorities, while 'du' is used with friends, family, and children.",
+    "title": "Begrüßungen und Vorstellungen",
+    "conceptId": "a1.greetings.sein-introductions",
+    "estimatedMinutes": 18,
+    "prerequisiteConceptIds": [],
+    "linkedQuestionIds": ["A1_gr_4", "A1_gr_5", "A1_gr_6", "A1_gr_12"],
+    "remediationLessonId": "A1_lesson_1",
+    "objective": "Learn to greet people, introduce yourself and others, choose du/Sie, ask for a name and origin, and use the most common present-tense forms of sein.",
+    "explanation": "In German, greetings vary by region and time of day. The formal Sie is used with strangers, coworkers, patients, officials, and older adults unless they invite du. The informal du is used with friends, family, children, and close classmates. This lesson also teaches the A1 forms of sein that appear in introduction questions: ich bin, du bist, er/sie/es ist. After a W-question word like woher, the conjugated verb stays in position 2: Woher kommst du?",
+    "formsTable": [
+      { "form": "ich bin", "use": "I am", "example": "Ich bin Anna." },
+      { "form": "du bist", "use": "you are (informal)", "example": "Du bist freundlich." },
+      { "form": "er/sie/es ist", "use": "he/she/it is", "example": "Er ist in der Klinik." },
+      { "form": "Sie sind", "use": "you are (formal)", "example": "Sind Sie Herr Müller?" }
+    ],
     "examples": [
       "Guten Morgen! - Good morning!",
-      "Hallo, ich heisse Anna. - Hello, my name is Anna.",
+      "Hallo, ich heiße Anna. - Hello, my name is Anna.",
+      "Ich bin Arzt. - I am a doctor.",
+      "Du bist sehr freundlich. - You are very friendly.",
+      "Er ist in der Klinik. - He is in the clinic.",
+      "Woher kommst du? - Where do you come from?",
       "Freut mich, dich kennenzulernen! - Nice to meet you!",
       "Auf Wiedersehen! - Goodbye (formal).",
       "Tschüss! - Bye (informal)."
@@ -40,7 +55,23 @@
         "example": "Mein Name ist Peter."
       }
     ],
-    "grammarFocus": "Present tense of 'sein' (to be): ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
+    "grammarFocus": "Present tense of sein for introductions: ich bin, du bist, er/sie/es ist, Sie sind. W-questions keep the verb in second position: Woher kommst du? Wie heißen Sie?",
+    "commonMistakes": [
+      "Do not write ich ist. Use ich bin.",
+      "Do not write du bin. Use du bist.",
+      "Use Sie with patients, doctors you do not know, officials, and formal situations.",
+      "In displayed German, write heiße with ß. Typed answers may accept heisse for comparison.",
+      "In W-questions, the verb comes after the question word: Woher kommst du?"
+    ],
+    "pronunciationNotes": [
+      "ß sounds like a clear s: heiße.",
+      "ü in Tschüss is rounded; say ee with rounded lips.",
+      "In questions such as Wie heißen Sie?, the melody rises slightly at the end."
+    ],
+    "medicalFspNotes": [
+      "In clinics, default to Sie: Guten Tag, ich bin Dr. Ahmed. Wie heißen Sie?",
+      "Use clear identity questions: Wie ist Ihr Name? Woher kommen Sie?"
+    ],
     "guidedPractice": [
       {
         "prompt": "Translate: 'Good morning, Mr. Schulz.'",
@@ -51,21 +82,44 @@
         "answer": "bin"
       },
       {
+        "prompt": "Complete: 'Du ___ sehr freundlich.'",
+        "answer": "bist"
+      },
+      {
+        "prompt": "Complete: 'Er ___ in der Klinik.'",
+        "answer": "ist"
+      },
+      {
+        "prompt": "Choose the best question word: '___ kommst du?'",
+        "answer": "Woher"
+      },
+      {
         "prompt": "Formal 'Goodbye' is ___",
         "answer": "Auf Wiedersehen"
       },
       {
         "prompt": "How do you ask 'What is your name?' (formal)?",
-        "answer": "Wie heissen Sie?"
+        "answer": "Wie heißen Sie?"
       },
       {
         "prompt": "Translate: 'Nice to meet you.' (formal)",
         "answer": "Freut mich, Sie kennenzulernen."
       }
     ],
+    "controlledPractice": [
+      { "prompt": "Ich ___ ein Arzt.", "answer": "bin", "linkedQuestionId": "A1_gr_4" },
+      { "prompt": "Du ___ sehr freundlich.", "answer": "bist", "linkedQuestionId": "A1_gr_5" },
+      { "prompt": "Er ___ in der Klinik.", "answer": "ist", "linkedQuestionId": "A1_gr_6" },
+      { "prompt": "___ kommst du?", "answer": "Woher", "linkedQuestionId": "A1_gr_12" }
+    ],
+    "mixedPractice": [
+      "Introduce yourself with name, origin, and profession.",
+      "Ask a patient formally for name and origin.",
+      "Correct wrong sein forms in short introduction sentences."
+    ],
     "independentPractice": [
       {
-        "prompt": "Write a short dialogü introducing yourself to a new classmate.",
+        "prompt": "Write a short dialogue introducing yourself to a new classmate.",
         "type": "writing"
       },
       {
@@ -73,11 +127,12 @@
         "type": "writing"
       }
     ],
-    "listeningTask": "Read aloud: 'Hallo, ich heisse Lukas. Ich komme aus Berlin. Und du? Wie heißt du?'",
+    "remediationIfFailed": "Review the sein table, then redo linked questions A1_gr_4, A1_gr_5, A1_gr_6, and A1_gr_12 before mixed practice.",
+    "listeningTask": "Read aloud: 'Hallo, ich heiße Lukas. Ich komme aus Berlin. Und du? Wie heißt du?'",
     "readingTask": "Read: 'Maria sagt: Guten Morgen! Ich bin Maria. Wer bist du? Paul sagt: Hallo Maria, ich bin Paul. Freut mich!'",
     "speakingTask": "Record yourself introducing yourself in German.",
     "writingTask": "Write 3 sentences: introduce yourself, say where you're from, ask someone their name.",
-    "reviewSummary": "Today you learned: greetings, how to introduce yourself, and the formal vs informal distinction."
+    "reviewSummary": "Today you learned: greetings, introductions, sein forms, W-question order, and the formal vs informal distinction."
   },
   {
     "level": "A1",

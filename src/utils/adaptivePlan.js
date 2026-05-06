@@ -88,6 +88,7 @@ export function getPlanTrack(goal) {
 }
 
 export function getIntensity(dailyMinutes = 30) {
+  if (dailyMinutes >= 120) return '2-hour full immersion';
   if (dailyMinutes >= 90) return 'full mastery plan';
   if (dailyMinutes >= 60) return 'intensive';
   if (dailyMinutes >= 30) return 'standard';
@@ -219,7 +220,10 @@ export function buildAdaptiveTargets(levelId, state, goal) {
   if (minutes < 90) {
     return { lesson: 1, grammarLesson: 1, grammar: 10, vocab: 16, flashcards: dueFlashcards > 0 || vocabMistakes > 0 || full ? 14 : 0, reading: 1, listening: 1, writing: 1, speaking: 0, estimatedMinutes: 60, intensity: estimate.intensity };
   }
-  return { lesson: 1, grammarLesson: 1, grammar: 14, vocab: 24, flashcards: dueFlashcards > 0 || vocabMistakes > 0 || full || estimate.track === 'Medical FSP' ? 20 : 0, reading: 1, listening: 1, writing: 1, speaking: 1, remediation: 1, estimatedMinutes: 90, intensity: estimate.intensity };
+  if (minutes < 120) {
+    return { lesson: 1, grammarLesson: 1, grammar: 14, vocab: 24, flashcards: dueFlashcards > 0 || vocabMistakes > 0 || full || estimate.track === 'Medical FSP' ? 20 : 0, reading: 1, listening: 1, writing: 1, speaking: 1, remediation: 1, estimatedMinutes: 90, intensity: estimate.intensity };
+  }
+  return { lesson: 1, grammarLesson: 1, grammar: 20, vocab: 32, flashcards: dueFlashcards > 0 || vocabMistakes > 0 || full || estimate.track === 'Medical FSP' ? 30 : 0, reading: 1, listening: 1, writing: 1, speaking: 1, remediation: 1, estimatedMinutes: 120, intensity: estimate.intensity };
 }
 
 export function getRemediationRecommendation(state, levelId) {

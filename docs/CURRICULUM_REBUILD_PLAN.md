@@ -61,8 +61,75 @@ Plan scale:
 - 30 min: standard plan
 - 60 min: intensive
 - 90 min: full mastery plan
+- 120 min: 2-hour full immersion
 
 Dashboard must show daily target, completed minutes, remaining minutes, predicted finish date, current track, current level, and next recommended work.
+
+## Lesson Depth and Question Alignment Plan
+
+### Current Problem
+
+Lessons are still too shallow compared with the questions. Some exercises require grammar, word order, vocabulary, or test-taking knowledge that the learner has not been explicitly taught. The curriculum must stop behaving like separate lesson and question pools and become a guaranteed learning sequence.
+
+### Required Learning Unit Structure
+
+Every learning unit should include:
+
+- concept title
+- CEFR level
+- prerequisites
+- explanation
+- forms/tables
+- examples
+- common mistakes
+- pronunciation notes
+- medical/FSP notes when relevant
+- guided practice
+- controlled practice
+- mixed practice
+- linked questions
+- remediation if failed
+
+### Question-To-Lesson Alignment Model
+
+Every question must have:
+
+- `conceptId`
+- `taughtInLessonId`
+- `prerequisiteConceptIds`
+- `difficulty`
+- `skillType`
+- `remediationLessonId`
+
+The first pilot uses `a1.greetings.sein-introductions` in `A1_lesson_1`, linked to `A1_gr_4`, `A1_gr_5`, `A1_gr_6`, and `A1_gr_12`.
+
+### Validation Rule
+
+No question should appear before its concept has been taught. If an exercise tests an untaught concept, the fix must be one of:
+
+- expand the prerequisite lesson,
+- move the question later,
+- tag the question as advanced/review and hide it from first-pass practice.
+
+### Implementation Stages
+
+1. Stage 1: A1 core grammar full rewrite.
+2. Stage 2: A1 vocabulary and pronunciation.
+3. Stage 3: A2.
+4. Stage 4: B1.
+5. Stage 5: B2.
+6. Stage 6: C1.
+7. Stage 7: Medical FSP overlay.
+
+### Pilot Implementation Recommendation
+
+Start with one A1 grammar module and prove the workflow end to end:
+
+- expand the lesson so it teaches the exact rules needed,
+- attach concept IDs and linked question IDs,
+- verify the questions only appear after the concept is taught,
+- connect failed answers to the same remediation lesson,
+- then scale the same model across A1 before touching higher levels.
 
 ## Remediation Logic
 

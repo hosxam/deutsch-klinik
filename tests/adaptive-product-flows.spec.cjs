@@ -68,6 +68,40 @@ test.describe('Adaptive product flows', () => {
     expect(mastery).toContain('Review 20 due/weak flashcards');
   });
 
+  test('120-minute goal option exists and dashboard shows the 2-hour target', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/');
+    await page.getByRole('button', { name: /Immersion.*120 min/i }).click();
+    await page.getByRole('button', { name: /Full Mastery/i }).click();
+    await page.getByRole('button', { name: /Set Goal/i }).click();
+    await expect(page.getByText('120 min').first()).toBeVisible();
+    await expect(page.getByText('2-hour full immersion')).toBeVisible();
+    await expect(page.getByText('Remaining today')).toBeVisible();
+  });
+
+  test('120-minute plan is larger than 90-minute plan', async ({ browser }) => {
+    const page90 = await browser.newPage();
+    await seed(page90, {
+      goal: { targetLevel: 'C1', targetDate: '', dailyMinutes: 90, planType: 'full' },
+    });
+    await gotoPreview(page90, '/level/A1/daily?plan=90');
+    const plan90 = await page90.locator('body').innerText();
+    await page90.close();
+
+    const page120 = await browser.newPage();
+    await seed(page120, {
+      goal: { targetLevel: 'C1', targetDate: '', dailyMinutes: 120, planType: 'full' },
+    });
+    await gotoPreview(page120, '/level/A1/daily?plan=120');
+    const plan120 = await page120.locator('body').innerText();
+    await page120.close();
+
+    expect(plan90).toContain('Complete 14 questions');
+    expect(plan120).toContain('Complete 20 questions');
+    expect(plan120).toContain('Learn 32 words');
+    expect(plan120).toContain('Review 30 due/weak flashcards');
+  });
+
   test('daily flashcard mission counts toward vocab progress and advances', async ({ page }) => {
     await seed(page, {
       goal: { targetLevel: 'C1', targetDate: '', dailyMinutes: 90, planType: 'full' },
@@ -99,6 +133,35 @@ test.describe('Adaptive product flows', () => {
     await expect(page.getByText('No mistakes found with current filters')).toBeVisible();
   });
 
+  test('targeted vocab remediation explains source and opens a visible session', async ({ page }) => {
+    await seed(page, {
+      state: {
+        incorrectAnswers: {
+          A1: [{ exerciseId: 'A1_A1_v001', userAnswer: 'wrong', correctAnswer: 'hello', topic: 'Vocabulary', skill: 'vocab', date: '2026-05-06T10:00:00.000Z' }],
+        },
+        vocabularyMastery: {
+          A1_A1_v001: { correct: 0, incorrect: 2, mastered: false, ease: 2.1, interval: 1, due: '2020-01-01', repetitions: 0 },
+        },
+      },
+      goal: { targetLevel: 'C1', targetDate: '', dailyMinutes: 120, planType: 'full' },
+    });
+    await gotoPreview(page, '/level/A1/daily?forceMission=remediation');
+    await expect(page.getByText('Weak area')).toBeVisible();
+    await expect(page.getByText('Vocabulary', { exact: true })).toBeVisible();
+    await expect(page.getByText('Source', { exact: true })).toBeVisible();
+    await expect(page.getByText(/Based on 1 recent mistakes/i)).toBeVisible();
+    await expect(page.getByText('Action')).toBeVisible();
+    await expect(page.getByText(/targeted vocab review/i)).toBeVisible();
+    await expect(page.getByText('Result')).toBeVisible();
+    await page.getByRole('button', { name: /Start Remediation/i }).click();
+    await expect(page.getByText(/Selected because/i)).toBeVisible();
+    await page.getByRole('button', { name: /I know this/i }).click();
+    await expect(page.getByText(/Remediation summary/i)).toBeVisible();
+    await expect(page.getByText(/Mastered items: 1/i)).toBeVisible();
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('deutsch_klinik_state') || '{}'));
+    expect(stored.vocabularyMastery.A1_A1_v001.correct).toBeGreaterThan(0);
+  });
+
   test('vocab review is filtered and Knew it advances the visible queue', async ({ page }) => {
     await seed(page, {
       state: {
@@ -128,5 +191,16 @@ test.describe('Adaptive product flows', () => {
     await expect(page.getByRole('link', { name: 'Dashboard' })).toBeVisible();
     await expect(page.getByRole('combobox', { name: 'Select level' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Level A1' })).toHaveCount(0);
+  });
+
+  test('account panel shows local and disabled sign in/sign up options without provider', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/');
+    await expect(page.getByText('Account & progress')).toBeVisible();
+    await expect(page.getByRole('button', { name: /Continue locally/i })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Sign in' })).toBeDisabled();
+    await expect(page.getByRole('button', { name: 'Sign up' })).toBeDisabled();
+    await expect(page.getByText(/Account sync is not connected yet/i)).toBeVisible();
+    await expect(page.getByRole('link', { name: /Start Today's Plan/i })).toBeVisible();
   });
 });

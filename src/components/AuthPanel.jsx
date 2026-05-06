@@ -576,14 +576,52 @@ export default function AuthPanel() {
   // If Supabase is not configured
   if (!enabled) {
     return (
-      <div className="border border-gray-700 rounded-lg p-4 bg-gray-850 text-sm">
-        <div className="flex items-center gap-2 text-gray-300">
-          <CloudOff size={16} />
-          <span>Local mode active. Your progress is saved on this device.</span>
+      <div className="border border-gray-700 rounded-lg p-4 text-sm" style={{ background: 'linear-gradient(135deg, rgba(16,185,129,0.08), rgba(59,130,246,0.06))' }}>
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <div>
+            <div className="flex items-center gap-2 text-gray-100 font-semibold">
+              <CloudOff size={16} className="text-green-400" />
+              <span>Account & progress</span>
+            </div>
+            <p className="text-xs text-gray-400 mt-1">
+              Continue locally today. Account sync will turn on when Supabase is configured.
+            </p>
+          </div>
+          <span className="text-[10px] px-2 py-1 rounded-full border border-green-500/30 text-green-300 bg-green-500/10">
+            Local mode
+          </span>
         </div>
-        <p className="text-xs text-gray-500 mt-2">
-          Login and cloud sync will appear here when a sync provider is configured. The app remains fully usable offline.
-        </p>
+
+        <div className="grid sm:grid-cols-2 gap-2 mb-3">
+          <button
+            type="button"
+            className="rounded-lg border border-green-500/30 bg-green-500/10 px-3 py-2 text-left text-green-200"
+          >
+            <span className="block text-sm font-semibold">Continue locally</span>
+            <span className="block text-xs text-green-100/70 mt-0.5">Local mode active. Your progress is saved on this device.</span>
+          </button>
+          <div className="rounded-lg border border-gray-700 bg-gray-900/50 px-3 py-2">
+            <div className="flex gap-2 mb-2">
+              <button type="button" disabled className="flex-1 rounded-md bg-gray-800 px-2 py-1.5 text-xs text-gray-500 cursor-not-allowed">
+                Sign in
+              </button>
+              <button type="button" disabled className="flex-1 rounded-md bg-gray-800 px-2 py-1.5 text-xs text-gray-500 cursor-not-allowed">
+                Sign up
+              </button>
+            </div>
+            <input disabled placeholder="Email" className="mb-2 w-full rounded-md border border-gray-700 bg-gray-950 px-2 py-1.5 text-xs text-gray-500" />
+            <input disabled placeholder="Password" type="password" className="w-full rounded-md border border-gray-700 bg-gray-950 px-2 py-1.5 text-xs text-gray-500" />
+          </div>
+        </div>
+
+        <div className="rounded-lg border border-blue-500/20 bg-blue-500/10 p-3">
+          <p className="text-xs text-blue-100">
+            Account sync is not connected yet. You can continue locally now; sign-in will be enabled when Supabase is configured.
+          </p>
+          <p className="text-xs text-gray-400 mt-2">
+            Local mode saves progress on this device. Account mode will sync lessons, goals, mistakes, flashcards, and exam results across devices when enabled.
+          </p>
+        </div>
       </div>
     );
   }

@@ -250,6 +250,10 @@ export default function DailyMissionPage() {
   const [spAiResult, setSpAiResult] = useState(null);
   const [spAiLoading, setSpAiLoading] = useState(false);
   const [spAiError, setSpAiError] = useState(null);
+  const [remStarted, setRemStarted] = useState(false);
+  const [remIndex, setRemIndex] = useState(0);
+  const [remCompleted, setRemCompleted] = useState([]);
+  const [remSummary, setRemSummary] = useState(null);
   const aiEnabled = isCorrectionEnabled();
 
 
@@ -781,7 +785,60 @@ export default function DailyMissionPage() {
     const rec = getRemediationRecommendation(getState(), lvl);
     recordStudyMinutes({ level: lvl, type: 'remediation', minutes: MINUTES.remediation, id: `daily_remediation_${getLocalDateKey()}` });
     refresh();
-    advance('remediation', { completed: true, skill: rec?.skill || 'review' });
+    advance('remediation', { completed: true, skill: rec?.skill || 'review', improved: remCompleted.length });
+  };
+
+  const buildRemediationSession = () => {
+    const cs = getState();
+    const rec = getRemediationRecommendation(cs, lvl);
+    const mistakes = cs.incorrectAnswers?.[lvl] || [];
+    const vocabMistakes = mistakes.filter(m => ['vocab', 'vocabulary'].includes(String(m.skill || '').toLowerCase()));
+    const weakIds = Object.entries(cs.vocabularyMastery || {})
+      .filter(([id, m]) => id.startsWith(`${lvl}_`) && (m.incorrect > m.correct || !m.mastered))
+      .map(([id]) => id.replace(`${lvl}_`, ''));
+    const mistakeIds = vocabMistakes.map(m => String(m.exerciseId || '').replace(`${lvl}_`, ''));
+    const poolIds = [...new Set([...mistakeIds, ...weakIds])];
+    const words = poolIds
+      .map(id => (vocabData[lvl] || []).find(w => String(w.id) === String(id)))
+      .filter(Boolean)
+      .slice(0, 10);
+    const fallbackWords = words.length > 0 ? words : (vocabData[lvl] || []).slice(0, 5);
+    const sourceCount = vocabMistakes.length || mistakes.length || weakIds.length;
+    const skill = rec?.skill || (vocabMistakes.length ? 'Vocabulary' : 'Review');
+    return {
+      rec,
+      skill,
+      items: fallbackWords,
+      source: sourceCount > 0 ? `Based on ${sourceCount} recent mistakes or weak review items` : 'Based on your current level review queue',
+      target: skill === 'Vocabulary' ? 'Review weak vocabulary from your mistakes, due flashcards, and current level words.' : (rec?.task || 'Repeat the weakest recent task and review mistakes.'),
+      action: skill === 'Vocabulary' ? `Start ${Math.min(fallbackWords.length, 10)}-word targeted vocab review` : 'Start targeted review task',
+      result: skill === 'Vocabulary' ? 'Correct answers update vocabulary mastery and can move mistake words out of your weak queue.' : 'Completion logs remediation minutes and keeps this weak area visible for follow-up.',
+      why: rec?.why || 'A recent answer or score showed a weak area.',
+    };
+  };
+
+  const handleRemediationAnswer = (item, correct) => {
+    if (item?.id) {
+      recordVocabAnswer(`${lvl}_${item.id}`, correct, {
+        level: lvl,
+        userAnswer: correct ? (item.translation || item.english || 'Knew it') : 'Still learning',
+        correctAnswer: item.translation || item.english || '',
+        topic: item.topic || 'Vocabulary',
+      });
+    }
+    const nextCompleted = [...remCompleted, { id: item?.id, correct }];
+    setRemCompleted(nextCompleted);
+    const session = buildRemediationSession();
+    if (remIndex + 1 >= session.items.length) {
+      setRemSummary({
+        mastered: nextCompleted.filter(x => x.correct).length,
+        remaining: Math.max(0, session.items.length - nextCompleted.filter(x => x.correct).length),
+      });
+      refresh();
+      return;
+    }
+    setRemIndex(i => i + 1);
+    refresh();
   };
 
   // ─── COMPLETION SCREEN ───
@@ -1665,26 +1722,72 @@ export default function DailyMissionPage() {
 
       {/* REMEDIATION MISSION */}
       {cm.type === 'remediation' && (() => {
-        const rec = getRemediationRecommendation(getState(), lvl);
+        const session = buildRemediationSession();
+        const item = session.items[remIndex];
         return (
           <div style={sCard}>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
               <RefreshCw size={40} style={{ color: '#ff3355', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#ff3355', marginBottom: '0.25rem' }}>Targeted Remediation</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
-                {rec?.why || 'Review your latest weak area before moving on.'}
-              </p>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '1rem' }}>
-                {rec?.task || 'Repeat a short practice task and review the mistakes.'}
-              </p>
-              <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <Link to={rec?.route || `/level/${lvl}`} style={{ ...sBp, textDecoration: 'none' }}>
-                  <RefreshCw size={16} /> Start Targeted Practice
-                </Link>
+              <div style={{ display: 'grid', gap: '0.55rem', textAlign: 'left', margin: '1rem 0' }}>
+                {[
+                  ['Weak area', session.skill],
+                  ['Source', session.source],
+                  ['Target', session.target],
+                  ['Action', session.action],
+                  ['Result', session.result],
+                  ['Progress', `${remCompleted.length}/${session.items.length || 1} completed`],
+                ].map(([label, value]) => (
+                  <div key={label} style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border)', borderRadius: '8px', padding: '0.65rem 0.75rem' }}>
+                    <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{label}</div>
+                    <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', marginTop: '0.15rem' }}>{value}</div>
+                  </div>
+                ))}
+              </div>
+              {!remStarted && !remSummary && (
+                <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <button style={sBp} onClick={() => setRemStarted(true)}>
+                    <RefreshCw size={16} /> Start Remediation
+                  </button>
+                  <Link to={session.rec?.route || `/level/${lvl}`} style={{ ...sBp, textDecoration: 'none' }}>
+                    <BookOpen size={16} /> Open related practice
+                  </Link>
+                </div>
+              )}
+              {remStarted && !remSummary && item && (
+                <div style={{ textAlign: 'left', background: 'rgba(255,51,85,0.06)', border: '1px solid rgba(255,51,85,0.18)', borderRadius: '10px', padding: '1rem', marginTop: '1rem' }}>
+                  <div style={{ fontSize: '0.78rem', color: '#ff8aa0', marginBottom: '0.4rem' }}>Selected because it appears in mistakes, weak mastery, due flashcards, or your current {lvl} review queue.</div>
+                  <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+                    {item.article ? `${item.article} ` : ''}{item.word || item.german}
+                  </div>
+                  <div style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>{item.translation || item.english}</div>
+                  {item.example && <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '0.5rem', fontStyle: 'italic' }}>&quot;{item.example}&quot;</div>}
+                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.85rem', flexWrap: 'wrap' }}>
+                    <button style={sBp} onClick={() => handleRemediationAnswer(item, true)}>
+                      <CheckCircle size={16} /> I know this
+                    </button>
+                    <button style={sBtn} onClick={() => handleRemediationAnswer(item, false)}>
+                      <XCircle size={16} /> Still weak
+                    </button>
+                  </div>
+                </div>
+              )}
+              {remSummary && (
+                <div style={{ textAlign: 'left', background: 'var(--bg-secondary)', border: '1px solid var(--border)', borderRadius: '10px', padding: '1rem', marginTop: '1rem' }}>
+                  <h4 style={{ fontSize: '0.95rem', color: '#3bff9e', marginBottom: '0.5rem' }}>Remediation summary</h4>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>Mastered items: {remSummary.mastered}</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>Remaining weak items: {remSummary.remaining}</p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-primary)', marginBottom: '0.9rem' }}>Next recommended task: review these words again in Vocab Review or flashcards.</p>
+                  <button style={sBp} onClick={hRemediationDone}>
+                    <CheckCircle size={16} /> Complete Remediation
+                  </button>
+                </div>
+              )}
+              {!item && !remSummary && (
                 <button style={sBp} onClick={hRemediationDone}>
                   <CheckCircle size={16} /> Mark Remediation Done
                 </button>
-              </div>
+              )}
             </div>
           </div>
         );

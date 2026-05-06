@@ -477,6 +477,7 @@ export default function StudyGoalTracker() {
                 { label: 'Standard', value: 30, color: '#ffd700' },
                 { label: 'Intensive', value: 60, color: '#06b6d4' },
                 { label: 'Mastery', value: 90, color: '#ff3355' },
+                { label: 'Immersion', value: 120, color: '#f97316' },
               ].map(p => (
                 <button
                   key={p.value}
