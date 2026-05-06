@@ -116,6 +116,50 @@ function calculateDailyTargets(levelId, state, goal) {
   return buildAdaptiveTargets(levelId, state, goal);
 }
 
+function getLessonIds(value) {
+  if (!Array.isArray(value)) return [];
+  return value.map(item => (typeof item === 'string' ? item : item?.id)).filter(Boolean);
+}
+
+function getLessonConceptIds(lessonIds) {
+  const ids = new Set(lessonIds);
+  return new Set(
+    germanLessons
+      .filter(lesson => ids.has(lesson.id))
+      .flatMap(lesson => [
+        lesson.conceptId,
+        ...(lesson.conceptsTaught || []),
+        ...(lesson.linkedPracticeConceptTags || []),
+      ])
+      .filter(Boolean)
+  );
+}
+
+function getPracticeContext(levelId, session, currentState) {
+  const planLessonIds = session?.planLessonIds || [];
+  const completedLessonIds = getLessonIds(currentState.completedLessons?.[levelId]);
+  const completedSet = new Set(completedLessonIds);
+  const todayLessonIds = planLessonIds.filter(id => completedSet.has(id));
+  const allowedLessonIds = new Set(completedLessonIds);
+  return {
+    planLessonIds,
+    completedLessonIds,
+    todayLessonIds,
+    allowedLessonIds,
+    allowedConceptIds: getLessonConceptIds([...allowedLessonIds]),
+    todayConceptIds: getLessonConceptIds(todayLessonIds),
+    isFreePractice: Boolean(session?.forceType),
+  };
+}
+
+function getQuestionLessonId(question) {
+  return question?.taughtInLessonId || question?.remediationLessonId || '';
+}
+
+function getWordLessonId(word) {
+  return word?.taughtInLessonId || word?.lessonId || word?.remediationLessonId || '';
+}
+
 function buildMissions(levelId, state, targets, forceType) {
   if (forceType === 'listening' || forceType === 'reading' || forceType === 'writing' || forceType === 'speaking') {
     return [{ type: forceType, target: 1, label: 'Complete 1 ' + forceType + ' test' }];
@@ -140,9 +184,15 @@ function buildMissions(levelId, state, targets, forceType) {
   const missions = [];
   const lls = Object.values(dashboardSummary.lessonSummaries || {}).flat().filter((l) => l.level === levelId);
   const cids = getCompletedLessons(levelId);
-  const nl = lls.find((l) => !cids.includes(l.id));
-  if (nl && targets.lesson > 0) {
-    missions.push({ type: 'lesson', target: targets.lesson, label: 'Study 1 lesson', nextLesson: nl });
+  const nextLessons = lls.filter((l) => !cids.includes(l.id));
+  const lessonCount = targets.lesson > 0
+    ? Math.min(nextLessons.length, Math.max(targets.lesson, targets.estimatedMinutes >= 30 ? 2 : targets.lesson))
+    : 0;
+  nextLessons.slice(0, lessonCount).forEach((lesson, index) => {
+    missions.push({ type: 'lesson', target: 1, label: `Study lesson ${index + 1} of ${lessonCount}`, nextLesson: lesson });
+  });
+  if (lessonCount === 0 && nextLessons[0] && targets.lesson > 0) {
+    missions.push({ type: 'lesson', target: 1, label: 'Study 1 lesson', nextLesson: nextLessons[0] });
   }
   // Grammar Lesson: find next incomplete grammar curriculum lesson
   const nextGc = getNextGrammarLesson(levelId, grammarCurriculum);
@@ -175,12 +225,14 @@ export default function DailyMissionPage() {
   const [fullLesson, setFullLesson] = useState(null);
   const [gi, setGi] = useState(0);
   const [gq, setGq] = useState([]);
+  const [gEmpty, setGEmpty] = useState(false);
   const [ga, setGa] = useState('');
   const [gr, setGr] = useState(null);
   const [gc, setGc] = useState(0);
   const [gw, setGw] = useState(0);
   const [vi, setVi] = useState(0);
   const [vq, setVq] = useState([]);
+  const [vEmpty, setVEmpty] = useState(false);
   const [vr, setVr] = useState(null);
   const [vc, setVc] = useState(0);
   const [vd, setVd] = useState(0);
@@ -271,9 +323,18 @@ export default function DailyMissionPage() {
     });
     const forceType = new URLSearchParams(window.location.hash.split('?')[1] || '').get('forceMission') || null;
     const m = buildMissions(lvl, cs, t, forceType);
+    const planLessonIds = m.filter(x => x.type === 'lesson' && x.nextLesson?.id).map(x => x.nextLesson.id);
+    const planConceptIds = [...getLessonConceptIds(planLessonIds)];
     const ld = loadSession(lvl);
     if (ld && !forceType && ld.planSignature === planSignature) {
-      setSesh(ld);
+      const upgraded = {
+        ...ld,
+        planLessonIds: ld.planLessonIds || planLessonIds,
+        planConceptIds: ld.planConceptIds || planConceptIds,
+        forceType: ld.forceType || null,
+      };
+      if (!ld.planLessonIds || !ld.planConceptIds) saveSession(upgraded);
+      setSesh(upgraded);
       setMi(ld.currentMission);
       if (ld.completedMissions?.length >= m.length) setCompShow(true);
       if (ld.selectedExerciseIds?.grammar?.length > 0) setGq(ld.selectedExerciseIds.grammar);
@@ -283,6 +344,9 @@ export default function DailyMissionPage() {
         dateKey: getLocalDateKey(), levelId: lvl, currentMission: 0,
         completedMissions: [], missionResults: {},
         selectedExerciseIds: { grammar: [], vocab: [] },
+        planLessonIds,
+        planConceptIds,
+        forceType,
         planSignature,
       };
       saveSession(ns);
@@ -387,20 +451,17 @@ export default function DailyMissionPage() {
     if (gq.length > 0) return;
     const all = grammarData[lvl] || [];
     const done = state.levels?.[lvl]?.grammar || [];
-    const unmastered = all.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
+    const context = getPracticeContext(lvl, sesh, state);
+    const taggedPool = lvl === 'A1' && !context.isFreePractice
+      ? all.filter((x) => context.allowedLessonIds.has(getQuestionLessonId(x)))
+      : all;
+    const unmastered = taggedPool.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
 
-    // Prefer questions linked to the last completed grammar lesson topic
-    const completedGcIds = getCompletedGrammarLessons(lvl);
-    let topicPreferred = [];
-    if (completedGcIds.length > 0) {
-      const lastGcId = completedGcIds[completedGcIds.length - 1];
-      const allGc = grammarCurriculum[lvl] || [];
-      const lastGc = allGc.find(g => g.id === lastGcId);
-      if (lastGc && lastGc.linkedGrammarTopics) {
-        topicPreferred = unmastered.filter(x => x.topic && lastGc.linkedGrammarTopics.includes(x.topic));
-      }
-    }
+    // Prefer practice from lessons completed earlier in today's generated plan,
+    // then review concepts from lessons completed before today.
+    const topicPreferred = unmastered.filter(x => context.todayLessonIds.includes(getQuestionLessonId(x)));
+    const reviewPool = unmastered.filter(x => !topicPreferred.includes(x));
 
     let selected;
     if (topicPreferred.length >= count) {
@@ -408,31 +469,28 @@ export default function DailyMissionPage() {
     } else if (topicPreferred.length > 0) {
       selected = [
         ...shuffleArray(topicPreferred).map((x) => x.id),
-        ...shuffleArray(unmastered.filter(x => !topicPreferred.includes(x))).slice(0, count - topicPreferred.length).map((x) => x.id)
+        ...shuffleArray(reviewPool).slice(0, count - topicPreferred.length).map((x) => x.id)
       ];
     } else {
       selected = shuffleArray(unmastered).slice(0, count).map((x) => x.id);
     }
 
-    // Store the practicing topic label
-    const gcCompletedIds = getCompletedGrammarLessons(lvl);
-    let topicLabel = '';
-    if (gcCompletedIds.length > 0 && topicPreferred.length > 0) {
-      const lastGc = (grammarCurriculum[lvl] || []).find(g => g.id === gcCompletedIds[gcCompletedIds.length - 1]);
-      if (lastGc) topicLabel = lastGc.title;
-    }
+    const todayLessonTitles = germanLessons
+      .filter(lesson => context.todayLessonIds.includes(lesson.id))
+      .map(lesson => lesson.title);
+    const topicLabel = todayLessonTitles.length > 0 ? todayLessonTitles.join(', ') : 'Completed lesson review';
 
     if (selected.length === 0) {
-      const fallback = shuffleArray(all).slice(0, Math.min(cm.target, all.length)).map((x) => x.id);
-      setGq(fallback);
+      setGEmpty(true);
       const ld = loadSession(lvl) || sesh;
-      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: fallback }, grammarPracticeTopic: topicLabel });
+      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: [] }, grammarPracticeTopic: topicLabel, grammarSelectionExhausted: true });
       return;
     }
+    setGEmpty(false);
     setGq(selected);
     const ld = loadSession(lvl) || sesh;
-    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: selected }, grammarPracticeTopic: topicLabel });
-  }, [getCm, gq.length, initDone, lvl, mi, sesh, state.levels]);
+    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: selected }, grammarPracticeTopic: topicLabel, grammarSelectionExhausted: false });
+  }, [getCm, gq.length, initDone, lvl, mi, sesh, state]);
 
   const hVa = (sel, correct) => {
     const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
@@ -464,21 +522,33 @@ export default function DailyMissionPage() {
     if (vq.length > 0) return;
     const all = vocabData[lvl] || [];
     const done = state.levels?.[lvl]?.vocab || [];
-    const unseen = all.filter((x) => !done.includes(x.id));
-    const pool = unseen.length >= cm.target ? unseen : all;
+    const context = getPracticeContext(lvl, sesh, state);
+    const introduced = lvl === 'A1' && !context.isFreePractice
+      ? all.filter((x) => context.allowedLessonIds.has(getWordLessonId(x)))
+      : all;
+    const todayWords = introduced.filter((x) => context.todayLessonIds.includes(getWordLessonId(x)));
+    const reviewWords = introduced.filter((x) => !context.todayLessonIds.includes(getWordLessonId(x)));
+    const unseenToday = todayWords.filter((x) => !done.includes(x.id));
+    const unseenReview = reviewWords.filter((x) => !done.includes(x.id));
+    const seenWordIds = new Set();
+    const pool = [...unseenToday, ...unseenReview, ...todayWords, ...reviewWords].filter((word) => {
+      if (seenWordIds.has(word.id)) return false;
+      seenWordIds.add(word.id);
+      return true;
+    });
     const count = Math.min(cm.target, pool.length);
     const selected = shuffleArray(pool).slice(0, count).map((x) => x.id);
     if (selected.length === 0) {
-      const fallback = shuffleArray(all).slice(0, Math.min(cm.target, all.length)).map((x) => x.id);
-      setVq(fallback);
+      setVEmpty(true);
       const ld = loadSession(lvl) || sesh;
-      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: fallback } });
+      saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: [] }, vocabSelectionExhausted: true });
       return;
     }
+    setVEmpty(false);
     setVq(selected);
     const ld = loadSession(lvl) || sesh;
-    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: selected } });
-  }, [getCm, initDone, lvl, mi, sesh, state.levels, vq.length]);
+    if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: selected }, vocabSelectionExhausted: false });
+  }, [getCm, initDone, lvl, mi, sesh, state, vq.length]);
 
   const hLrnSk = () => advance('listening', { skipped: true });
   const hLrnN = () => {
@@ -1242,6 +1312,18 @@ export default function DailyMissionPage() {
       {/* GRAMMAR PRACTICE */}
       {cm.type === 'grammar' && (() => {
         const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
+        if (gEmpty) {
+          return (
+            <div style={sCard}>
+              <Lightbulb size={28} style={{ color: '#f59e0b', marginBottom: '0.75rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>No aligned grammar questions yet</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                Today's plan will not test grammar from lessons you have not studied. Continue with review, flashcards, or the next mission.
+              </p>
+              <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('grammar', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
+            </div>
+          );
+        }
         if (!ex && gq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading grammar...</p></div>;
         const gcCompletedIds = getCompletedGrammarLessons(lvl);
         let practicingTopic = sesh?.grammarPracticeTopic || '';
@@ -1363,6 +1445,18 @@ export default function DailyMissionPage() {
       {/* VOCABULARY */}
       {cm.type === 'vocabulary' && (() => {
         const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
+        if (vEmpty) {
+          return (
+            <div style={sCard}>
+              <BookOpen size={28} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>No introduced vocabulary due</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                The daily plan is avoiding words from lessons you have not studied. Use flashcards or continue to the next mission.
+              </p>
+              <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('vocabulary', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
+            </div>
+          );
+        }
         if (!word && vq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading vocabulary...</p></div>;
         if (!word && vq.length === 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Selecting words...</p></div>;
         if (vd >= vq.length && vq.length > 0) {

@@ -346,11 +346,13 @@
       "level": "A1",
       "topic": "Numbers",
       "conceptId": "a1_numbers_dates",
-      "taughtInLessonId": "A1_lesson_14",
-      "prerequisiteConceptIds": [],
+      "taughtInLessonId": "A1_lesson_2",
+      "prerequisiteConceptIds": [
+        "a1_alphabet_pronunciation"
+      ],
       "difficulty": "core",
       "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_14"
+      "remediationLessonId": "A1_lesson_2"
     },
     {
       "id": "A1_gr_20",
@@ -361,11 +363,13 @@
       "level": "A1",
       "topic": "Numbers",
       "conceptId": "a1_numbers_dates",
-      "taughtInLessonId": "A1_lesson_14",
-      "prerequisiteConceptIds": [],
+      "taughtInLessonId": "A1_lesson_2",
+      "prerequisiteConceptIds": [
+        "a1_alphabet_pronunciation"
+      ],
       "difficulty": "core",
       "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_14"
+      "remediationLessonId": "A1_lesson_2"
     },
     {
       "id": "A1_gr_121",
@@ -3763,11 +3767,13 @@
       "answer": "fünfzehn",
       "explanation": "15 is fünfzehn (fünf + zehn).",
       "conceptId": "a1_numbers_dates",
-      "taughtInLessonId": "A1_lesson_14",
-      "prerequisiteConceptIds": [],
+      "taughtInLessonId": "A1_lesson_2",
+      "prerequisiteConceptIds": [
+        "a1_alphabet_pronunciation"
+      ],
       "difficulty": "core",
       "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_14"
+      "remediationLessonId": "A1_lesson_2"
     },
     {
       "id": "A1_gr_300",
@@ -3775,14 +3781,16 @@
       "level": "A1",
       "topic": "Numbers",
       "prompt": "Write in German: 33",
-      "answer": "dreiunddreissig",
-      "explanation": "33 is dreiunddreissig. In German, you say the unit first: drei + und + dreissig.",
+      "answer": "dreiunddreißig",
+      "explanation": "33 is dreiunddreißig: drei + und + dreißig.",
       "conceptId": "a1_numbers_dates",
-      "taughtInLessonId": "A1_lesson_14",
-      "prerequisiteConceptIds": [],
+      "taughtInLessonId": "A1_lesson_2",
+      "prerequisiteConceptIds": [
+        "a1_alphabet_pronunciation"
+      ],
       "difficulty": "core",
       "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_14"
+      "remediationLessonId": "A1_lesson_2"
     },
     {
       "id": "A1_gr_301",
@@ -3797,13 +3805,15 @@
         "Twenty"
       ],
       "answer": "Twelve",
-      "explanation": "Zwölf is the German word for twelve.",
+      "explanation": "Zwölf means twelve. It is one of the irregular 1-12 forms you memorize directly.",
       "conceptId": "a1_numbers_dates",
-      "taughtInLessonId": "A1_lesson_14",
-      "prerequisiteConceptIds": [],
+      "taughtInLessonId": "A1_lesson_2",
+      "prerequisiteConceptIds": [
+        "a1_alphabet_pronunciation"
+      ],
       "difficulty": "core",
       "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_14"
+      "remediationLessonId": "A1_lesson_2"
     },
     {
       "id": "A1_gr_302",

@@ -31,6 +31,46 @@ async function seed(page, state = {}) {
   }, state);
 }
 
+async function selectedDailyIds(page, skill) {
+  return page.evaluate((name) => {
+    const raw = localStorage.getItem('deutsch_klinik_daily_session');
+    if (!raw) return [];
+    return JSON.parse(raw).selectedExerciseIds?.[name] || [];
+  }, skill);
+}
+
+async function completeNextLessonMission(page) {
+  if (await page.getByText('Lesson Complete!').count()) {
+    await page.getByRole('button', { name: /Next Mission/i }).click();
+    return;
+  }
+  await page.getByRole('button', { name: /Study Lesson/i }).click();
+  await page.getByRole('button', { name: /Mark Lesson Complete/i }).click();
+  await page.getByRole('button', { name: /Next Mission/i }).click();
+}
+
+async function skipGrammarLessonIfShown(page) {
+  const skip = page.getByRole('button', { name: /Skip for now/i });
+  if (await skip.count()) await skip.click();
+}
+
+async function answerGrammarMission(page) {
+  let ids = await selectedDailyIds(page, 'grammar');
+  for (const id of ids) {
+    const question = (grammar.A1 || []).find(item => item.id === id);
+    if (!question) continue;
+    if (Array.isArray(question.options) && question.options.length > 0) {
+      await page.getByRole('button', { name: question.answer }).click();
+    } else {
+      await page.getByPlaceholder('Type your answer...').fill(question.answer);
+      await page.getByRole('button', { name: /Check/i }).click();
+    }
+    const next = page.getByRole('button', { name: /Next Question|See Results/i });
+    if (await next.count()) await next.click();
+  }
+  await page.getByRole('button', { name: /Next Mission/i }).click();
+}
+
 test.describe('A1 curriculum depth and alignment', () => {
   test('A1 curriculum architecture lists the required grammar and vocabulary modules', () => {
     const requiredModuleIds = [
@@ -117,5 +157,89 @@ test.describe('A1 curriculum depth and alignment', () => {
 
     await expect(page.getByText('You should study this lesson first:')).toBeVisible();
     await expect(page.locator('a[href*="/level/A1/lessons/A1_lesson_"]').first()).toBeVisible();
+  });
+
+  test('fresh A1 daily plan practices only concepts from lessons completed earlier today', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/daily');
+
+    await expect(page.getByText('Study lesson 1 of 2', { exact: true })).toBeVisible();
+    await expect(page.getByText('Study lesson 2 of 2', { exact: true })).toBeVisible();
+    await completeNextLessonMission(page);
+    await completeNextLessonMission(page);
+    await skipGrammarLessonIfShown(page);
+
+    await expect(page.getByRole('heading', { name: 'Grammar Practice' })).toBeVisible();
+    await expect(page.getByText('You should study this lesson first:')).toHaveCount(0);
+    const ids = await selectedDailyIds(page, 'grammar');
+    expect(ids.length).toBeGreaterThan(0);
+    const lessonIds = new Set(ids.map(id => (grammar.A1 || []).find(q => q.id === id)?.taughtInLessonId));
+    expect([...lessonIds].every(id => ['A1_lesson_1', 'A1_lesson_2'].includes(id))).toBe(true);
+  });
+
+  test('completed A1 lesson review does not jump ahead to lesson 5 concepts', async ({ page }) => {
+    await seed(page, {
+      completedLessons: {
+        A1: [
+          { id: 'A1_lesson_1', completedAt: '2026-05-06T08:00:00.000Z' },
+          { id: 'A1_lesson_2', completedAt: '2026-05-06T08:05:00.000Z' },
+        ],
+      },
+    });
+    await gotoPreview(page, '/level/A1/daily');
+
+    await page.getByRole('button', { name: /Skip for now/i }).click();
+    await page.getByRole('button', { name: /Skip for now/i }).click();
+    await skipGrammarLessonIfShown(page);
+
+    const ids = await selectedDailyIds(page, 'grammar');
+    expect(ids.length).toBeGreaterThan(0);
+    const lessonIds = new Set(ids.map(id => (grammar.A1 || []).find(q => q.id === id)?.taughtInLessonId));
+    expect(lessonIds.has('A1_lesson_5')).toBe(false);
+    expect([...lessonIds].every(id => ['A1_lesson_1', 'A1_lesson_2'].includes(id))).toBe(true);
+  });
+
+  test('vocabulary daily plan uses introduced lesson vocabulary before full-level vocabulary', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/daily');
+
+    await completeNextLessonMission(page);
+    await completeNextLessonMission(page);
+    await skipGrammarLessonIfShown(page);
+    await answerGrammarMission(page);
+
+    await expect(page.getByRole('heading', { name: 'Vocabulary Quiz' })).toBeVisible();
+    const ids = await selectedDailyIds(page, 'vocab');
+    expect(ids.length).toBeGreaterThan(0);
+    const lessonIds = new Set(ids.map(id => (vocabulary.A1 || []).find(w => w.id === id)?.taughtInLessonId));
+    expect([...lessonIds].every(id => ['A1_lesson_1', 'A1_lesson_2'].includes(id))).toBe(true);
+  });
+
+  test('aligned daily grammar uses available review instead of untaught fallback when the pool is short', async ({ page }) => {
+    await seed(page, {
+      completedLessons: {
+        A1: [{ id: 'A1_lesson_2', completedAt: '2026-05-06T08:00:00.000Z' }],
+      },
+    });
+    await gotoPreview(page, '/level/A1/daily');
+
+    await page.getByRole('button', { name: /Skip for now/i }).click();
+    await page.getByRole('button', { name: /Skip for now/i }).click();
+    await skipGrammarLessonIfShown(page);
+
+    const ids = await selectedDailyIds(page, 'grammar');
+    expect(ids.length).toBeGreaterThan(0);
+    expect(ids.length).toBeLessThanOrEqual(6);
+    const lessonIds = new Set(ids.map(id => (grammar.A1 || []).find(q => q.id === id)?.taughtInLessonId));
+    expect([...lessonIds].every(id => id === 'A1_lesson_2')).toBe(true);
+  });
+
+  test('A1 coverage report documents reviewed pilot lessons and expansions', () => {
+    const fs = require('fs');
+    const report = fs.readFileSync('docs/A1_LESSON_QUESTION_COVERAGE_REPORT.md', 'utf8').toLowerCase();
+    expect(report).toContain('a1_lesson_1');
+    expect(report).toContain('a1_lesson_2');
+    expect(report).toContain('linked questions reviewed');
+    expect(report).toContain('lesson expansions made');
   });
 });

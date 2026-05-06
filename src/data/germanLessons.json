@@ -200,11 +200,13 @@
     "id": "A1_lesson_2",
     "title": "Das Alphabet, Aussprache und Zahlen",
     "objective": "Learn the German alphabet, numbers 0-100, and how to spell your name.",
-    "explanation": "German spelling is mostly regular. Learn the alphabet, then the special sounds ä, ö, ü and ß. Numbers are built in patterns: 21 is einundzwanzig, literally one-and-twenty. Dates use ordinal endings, for example der erste Mai. This lesson prepares number, spelling, date, and pronunciation questions.",
+    "explanation": "German spelling is mostly regular. Learn the alphabet, then the special sounds ä, ö, ü and ß. For numbers, memorize 0-12 first because forms like zwölf are irregular. Then learn 13-19, the tens, and the 21-99 pattern: the ones digit comes first, then und, then the tens. 22 is zweiundzwanzig and 47 is siebenundvierzig. This lesson prepares spelling, pronunciation, and basic number questions before later lessons use numbers for clock time and dates.",
     "examples": [
       "Ich heiße Anna. - My name is Anna.",
       "Meine Telefonnummer ist 030 123456. - My phone number is 030 123456.",
-      "Heute ist der erste Mai. - Today is May first."
+      "Zweiundzwanzig ist 22. - Zweiundzwanzig is 22.",
+      "Siebenundvierzig ist 47. - Siebenundvierzig is 47.",
+      "Dreiunddreißig ist 33. - Dreiunddreißig is 33."
     ],
     "vocabulary": [
       {
@@ -233,7 +235,7 @@
         "example": "Meine Telefonnummer ist 030 123456."
       }
     ],
-    "grammarFocus": "Numbers: 0 null, 1 eins, 2 zwei ... 20 zwanzig, 21 einundzwanzig. Letter ss = doppel-s.",
+    "grammarFocus": "Numbers: 0 null, 1 eins, 2 zwei, 3 drei, 4 vier, 5 fünf, 6 sechs, 7 sieben, 8 acht, 9 neun, 10 zehn, 11 elf, 12 zwölf, 15 fünfzehn, 20 zwanzig, 30 dreißig, 21 einundzwanzig. The special letter ß is called Eszett.",
     "guidedPractice": [
       {
         "prompt": "What is 27 in German?",
@@ -244,12 +246,16 @@
         "answer": "(practice)"
       },
       {
-        "prompt": "What special letters dös German have?",
-        "answer": "Ä, Ö, Ü, ss"
+        "prompt": "What special letters does German have?",
+        "answer": "Ä, Ö, Ü, ß"
       },
       {
         "prompt": "Translate '58'",
         "answer": "achtundfünfzig"
+      },
+      {
+        "prompt": "Write 33 in German.",
+        "answer": "dreiunddreißig"
       }
     ],
     "independentPractice": [
@@ -266,7 +272,7 @@
     "readingTask": "Read: 'Meine Telefonnummer ist 030 - 44 55 66 77.'",
     "speakingTask": "Say your phone number, house number, and age in German.",
     "writingTask": "Write 5 numbers in digits and words: 14, 33, 47, 52, 89.",
-    "reviewSummary": "You learned the German alphabet (26 + Ä Ö Ü ss), how to spell, and numbers 0-100.",
+    "reviewSummary": "You learned the German alphabet, Ä Ö Ü ß, how to spell, and the number pattern for 0-100 including zwölf, fünfzehn, dreißig, zweiundzwanzig, dreiunddreißig, and siebenundvierzig.",
     "conceptsTaught": [
       "a1_alphabet_pronunciation",
       "a1_umlauts_eszett",
@@ -317,17 +323,52 @@
             "seven-and-forty"
           ]
         ]
+      },
+      {
+        "title": "A1 number forms needed for practice",
+        "rows": [
+          [
+            "12",
+            "zwölf",
+            "memorize directly"
+          ],
+          [
+            "15",
+            "fünfzehn",
+            "fünf + zehn, but without the final f sound being added again"
+          ],
+          [
+            "22",
+            "zweiundzwanzig",
+            "two-and-twenty"
+          ],
+          [
+            "33",
+            "dreiunddreißig",
+            "three-and-thirty; display ß"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
       }
     ],
     "commonMistakes": [
-      "Do not replace ü with u in displayed German.",
+      "Do not replace ü with u in displayed German: fünf is correct, funf is not display quality.",
       "Do not pronounce German w like English w.",
-      "Write ß in displayed words like heißen; typed comparison may accept ss."
+      "Write ß in displayed words like heißen and dreißig; typed comparison may accept ss.",
+      "For 21-99, German says the ones digit first: 47 is siebenundvierzig, not vierzigsieben."
     ],
     "miniDrills": [
       {
         "prompt": "Spell 22 in German.",
         "answer": "zweiundzwanzig"
+      },
+      {
+        "prompt": "Spell 33 in German with proper ß.",
+        "answer": "dreiunddreißig"
       },
       {
         "prompt": "Which sound does German z make?",
