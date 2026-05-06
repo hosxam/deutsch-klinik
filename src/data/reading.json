@@ -17,7 +17,7 @@
           "id": "qr2",
           "type": "true-false",
           "question": "Herr Müller hat Schmerzen im Bein.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Er hat Schmerzen im Bein.'"
         },
         {
@@ -39,7 +39,7 @@
     {
       "id": "A1_read_2",
       "title": "Meine Familie",
-      "text": "Ich heiÃŸe Anna und bin 25 Jahre alt. Ich wohne in Berlin. Meine Mutter ist Ã„rztin. Mein Vater ist Lehrer. Ich habe einen Bruder. Er studiert Medizin. Wir sind eine kleine Familie.",
+      "text": "Ich heiße Anna und bin 25 Jahre alt. Ich wohne in Berlin. Meine Mutter ist Ã„rztin. Mein Vater ist Lehrer. Ich habe einen Bruder. Er studiert Medizin. Wir sind eine kleine Familie.",
       "questions": [
         {
           "id": "qr4",
@@ -52,7 +52,7 @@
             "35"
           ],
           "answer": "25",
-          "explanation": "Der Text sagt: 'Ich heiÃŸe Anna und bin 25 Jahre alt.'"
+          "explanation": "Der Text sagt: 'Ich heiße Anna und bin 25 Jahre alt.'"
         },
         {
           "id": "qr5",
@@ -67,7 +67,7 @@
     {
       "id": "A1_read_3",
       "title": "Beim Arzt",
-      "text": "Guten Tag, Herr Doktor. Ich heiÃŸe Peter und habe Husten. Die Nase läuft. Ich fühle mich schwach. Der Arzt sagt: 'Bleiben Sie im Bett und trinken Sie viel Tee.'",
+      "text": "Guten Tag, Herr Doktor. Ich heiße Peter und habe Husten. Die Nase läuft. Ich fühle mich schwach. Der Arzt sagt: 'Bleiben Sie im Bett und trinken Sie viel Tee.'",
       "questions": [
         {
           "id": "qr6",
@@ -121,7 +121,7 @@
           "id": "qr_A1_r4_3",
           "type": "true-false",
           "question": "Peter zahlt 15 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: Peter zahlt 15 Euro."
         }
       ],
@@ -234,7 +234,7 @@
           "id": "qr_A1_r7_2",
           "type": "true-false",
           "question": "Anna geht freitags einkaufen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Freitag geht sie einkaufen."
         },
         {
@@ -305,7 +305,7 @@
           "id": "qr_A1_r9_1",
           "type": "true-false",
           "question": "Maria kauft Milch und Brot.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie kauft Milch, Brot, Äpfel und Käse."
         },
         {
@@ -346,7 +346,7 @@
         {
           "id": "qr_A1_r10_1",
           "type": "mcq",
-          "question": "Wie heisst das Restaurant?",
+          "question": "Wie heißt das Restaurant?",
           "options": [
             "Zur Sonne",
             "Zum Mond",
@@ -354,7 +354,7 @@
             "Am See"
           ],
           "answer": "Zur Sonne",
-          "explanation": "Das Restaurant heisst 'Zur Sonne'."
+          "explanation": "Das Restaurant heißt 'Zur Sonne'."
         },
         {
           "id": "qr_A1_r10_2",
@@ -389,7 +389,7 @@
           "id": "qr_A1_r11_1",
           "type": "true-false",
           "question": "Heute scheint die Sonne.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Sonne scheint."
         },
         {
@@ -438,7 +438,7 @@
           "id": "qr_A1_r12_2",
           "type": "true-false",
           "question": "Das Kleid kostet 40 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Verkäufer sagt: 'Das rote Kleid kostet 40 Euro.'"
         },
         {
@@ -461,7 +461,7 @@
     {
       "lessonId": "A1_lesson_13",
       "title": "Mein Bruder und ich",
-      "text": "Ich habe einen Bruder. Er heisst Max und ist 10 Jahre alt. Max geht in die Schule. Er mag Mathe und Sport. Ich bin 15 und gehe in die 9. Klasse. Nach der Schule spielen wir zusammen Fussball. Max ist mein bester Freund.",
+      "text": "Ich habe einen Bruder. Er heißt Max und ist 10 Jahre alt. Max geht in die Schule. Er mag Mathe und Sport. Ich bin 15 und gehe in die 9. Klasse. Nach der Schule spielen wir zusammen Fussball. Max ist mein bester Freund.",
       "questions": [
         {
           "id": "qr_A1_r13_1",
@@ -480,7 +480,7 @@
           "id": "qr_A1_r13_2",
           "type": "true-false",
           "question": "Max mag Mathe und Sport.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Er mag Mathe und Sport."
         },
         {
@@ -564,7 +564,7 @@
           "id": "qr_A1_r15_2",
           "type": "true-false",
           "question": "Zum Frühstück isst er Brot mit Käse.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ich esse Brot mit Käse und trinke Tee."
         },
         {
@@ -643,7 +643,7 @@
           "id": "qr17_2",
           "type": "true-false",
           "question": "Der Zug fahrt um 8 Uhr ab.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: \"Der Zug fahrt um 8 Uhr ab.\""
         },
         {
@@ -737,14 +737,14 @@
         {
           "id": "qr_A1_r19_2",
           "type": "true-false",
-          "question": "Frau König heisst Anna.",
-          "answer": "trü",
+          "question": "Frau König heißt Anna.",
+          "answer": "true",
           "explanation": "Ich heisse Anna König."
         },
         {
           "id": "qr_A1_r19_3",
           "type": "mcq",
-          "question": "Wie heisst der Nachbar?",
+          "question": "Wie heißt der Nachbar?",
           "options": [
             "Herr Schmidt",
             "Herr Müller",
@@ -816,7 +816,7 @@
           "id": "qr_A1_r21_2",
           "type": "true-false",
           "question": "Die Busfahrt dauert 25 Minuten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Fahrt dauert 25 Minuten."
         },
         {
@@ -858,7 +858,7 @@
           "id": "qr_A1_r22_2",
           "type": "true-false",
           "question": "Frau Müller hat morgen um 10 Uhr einen Termin.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ich komme morgen um 10 Uhr."
         },
         {
@@ -971,7 +971,7 @@
           "id": "qr_A1_r25_1",
           "type": "true-false",
           "question": "Die Schule beginnt um 8:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Schule beginnt um 8:00 Uhr."
         },
         {
@@ -1007,7 +1007,7 @@
           "id": "qr174",
           "type": "true-false",
           "question": "Lukas ist 22 Jahre alt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Ich bin 22 Jahre alt.'"
         },
         {
@@ -1042,7 +1042,7 @@
           "id": "qr177",
           "type": "true-false",
           "question": "Maria ist in Berlin.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Ich bin jetzt in Berlin.'"
         },
         {
@@ -1103,7 +1103,7 @@
           "id": "qr182",
           "type": "true-false",
           "question": "Die Praxis ist im 2. Stock.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Adresse ist Hauptstrasse 12, 2. Stock."
         }
       ],
@@ -1118,7 +1118,7 @@
           "id": "qr183",
           "type": "true-false",
           "question": "Die Praxis hat samstags bis 13:00 Uhr geöffnet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Samstag: 9:00 - 13:00 Uhr.'"
         },
         {
@@ -1138,7 +1138,7 @@
           "id": "qr185",
           "type": "true-false",
           "question": "Patienten sollen sich an der Anmeldung melden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Bitte melden Sie sich an der Anmeldung.'"
         }
       ],
@@ -1166,7 +1166,7 @@
           "id": "qr187",
           "type": "true-false",
           "question": "Die Apotheke hat einen Notdienst.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Notdienst: Täglich ab 18:30 Uhr.'"
         },
         {
@@ -1207,7 +1207,7 @@
           "id": "qr190",
           "type": "true-false",
           "question": "Der Apfelkuchen kostet 3,50 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Apfelkuchen: 3,50 Euro.'"
         },
         {
@@ -1248,14 +1248,14 @@
           "id": "qr193",
           "type": "true-false",
           "question": "Die Monatskarte kostet 49 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Monatskarte: 49,00 Euro.'"
         },
         {
           "id": "qr194",
           "type": "true-false",
           "question": "Kinder unter 6 Jahren müssen keine Fahrkarte kaufen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Kinder unter 6 Jahren fahren kostenlos.'"
         }
       ],
@@ -1270,7 +1270,7 @@
           "id": "qr195",
           "type": "true-false",
           "question": "Am Samstag scheint die Sonne.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Samstag: Die Sonne scheint.'"
         },
         {
@@ -1324,7 +1324,7 @@
           "id": "qr199",
           "type": "true-false",
           "question": "Der Kunde hat mit Karte bezahlt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Bezahlt mit Karte: 12,14 Euro.'"
         },
         {
@@ -1365,7 +1365,7 @@
           "id": "qr202",
           "type": "true-false",
           "question": "Die Wohnung hat einen Balkon.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Balkon' in der Zimmerliste."
         },
         {
@@ -1393,7 +1393,7 @@
           "id": "qr204",
           "type": "true-false",
           "question": "Herr Schmidt ist Busfahrer.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Herr Schmidt arbeitet als Busfahrer.'"
         },
         {
@@ -1447,7 +1447,7 @@
           "id": "qr208",
           "type": "true-false",
           "question": "Lisa arbeitet in einer Praxis.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Sie arbeitet in einer Praxis.'"
         },
         {
@@ -1488,7 +1488,7 @@
           "id": "qr211",
           "type": "true-false",
           "question": "Der Kurs kostet 200 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Kosten: 200 Euro.'"
         },
         {
@@ -1529,7 +1529,7 @@
           "id": "qr214",
           "type": "true-false",
           "question": "Am 1. Mai hat Thomas frei.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Feiertage: 1. Mai (frei).'"
         },
         {
@@ -1577,7 +1577,7 @@
           "id": "qr218",
           "type": "true-false",
           "question": "Es gibt Kuchen, Pizza und Getränke.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Es gibt Kuchen, Pizza und Getränke.'"
         }
       ],
@@ -1592,7 +1592,7 @@
           "id": "qr219",
           "type": "true-false",
           "question": "Das Frühstück ist von 7:00 bis 10:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Frühstück: 7:00 - 10:00 Uhr.'"
         },
         {
@@ -1633,7 +1633,7 @@
           "id": "qr222",
           "type": "true-false",
           "question": "Die Bibliothek ist neben einem Cafe.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Die Bibliothek ist auf der rechten Seite, neben dem Cafe.'"
         },
         {
@@ -1763,7 +1763,7 @@
           "id": "qr232",
           "type": "true-false",
           "question": "In der Geldbörse ist eine EC-Karte.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Eine schwarze Geldbörse mit 20 Euro und einer EC-Karte.'"
         },
         {
@@ -1798,7 +1798,7 @@
           "id": "qr235",
           "type": "true-false",
           "question": "Das Toilettenpapier kostet 3,49 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Toilettenpapier: statt 4,99 Euro nur 3,49 Euro.'"
         },
         {
@@ -1828,7 +1828,7 @@
           "id": "qr47_2",
           "type": "true-false",
           "question": "Herr Schmidt ruft in der Praxis an.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: \"Er ruft in der Praxis an.\""
         },
         {
@@ -1881,7 +1881,7 @@
           "id": "qr241",
           "type": "true-false",
           "question": "Die Post hat freitags bis 18:00 Uhr geöffnet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Montag - Freitag: 8:30 - 18:00 Uhr.'"
         },
         {
@@ -1909,7 +1909,7 @@
           "id": "qr243",
           "type": "true-false",
           "question": "Yoga ist montags um 17:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Montag: Yoga (17:00 - 18:00 Uhr).'"
         },
         {
@@ -1944,7 +1944,7 @@
           "id": "qr246",
           "type": "true-false",
           "question": "Die Besuchszeit ist von 14:00 bis 19:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Besuchszeiten: 14:00 - 19:00 Uhr.'"
         },
         {
@@ -2021,7 +2021,7 @@
     {
       "id": "A2_read_2",
       "title": "Eine E-Mail an den Vermieter",
-      "text": "Betreff: Reparatur in der Wohnung\n\nSehr geehrter Herr Schmidt,\n\nich wohne in der HauptstraÃŸe 12, Wohnung 3B. Die Heizung in meinem Zimmer funktioniert nicht. Es ist sehr kalt. Können Sie bitte einen Handwerker schicken?\n\nMit freundlichen GrüÃŸen\nMaria Weber",
+      "text": "Betreff: Reparatur in der Wohnung\n\nSehr geehrter Herr Schmidt,\n\nich wohne in der Hauptstraße 12, Wohnung 3B. Die Heizung in meinem Zimmer funktioniert nicht. Es ist sehr kalt. Können Sie bitte einen Handwerker schicken?\n\nMit freundlichen Grüßen\nMaria Weber",
       "questions": [
         {
           "id": "qr11",
@@ -2038,8 +2038,8 @@
         {
           "id": "qr12",
           "type": "true-false",
-          "question": "Maria wohnt in der HauptstraÃŸe.",
-          "answer": "trü"
+          "question": "Maria wohnt in der Hauptstraße.",
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_1"
@@ -2093,7 +2093,7 @@
           "id": "qr402",
           "type": "true-false",
           "question": "Man muss einen Ausweis mitbringen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte bringen Sie Ihre Versicherungskarte und einen gültigen Ausweis mit."
         },
         {
@@ -2134,7 +2134,7 @@
           "id": "qr405",
           "type": "true-false",
           "question": "Die Wohnung hat einen Balkon.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Wohnung hat einen Balkon."
         },
         {
@@ -2216,7 +2216,7 @@
           "id": "qr411",
           "type": "true-false",
           "question": "Das Frühstück ist im Preis enthalten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ein Einzelzimmer mit Frühstück."
         },
         {
@@ -2257,7 +2257,7 @@
           "id": "qr414",
           "type": "true-false",
           "question": "Der Kurs kostet 280 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Kosten betragen 280 Euro."
         },
         {
@@ -2421,7 +2421,7 @@
           "id": "qr426",
           "type": "true-false",
           "question": "Die Gäste sollen etwas zu essen mitbringen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte bringt etwas zum Essen oder einen Salat mit."
         },
         {
@@ -2514,7 +2514,7 @@
             "Es ist kaputt",
             "Es passt nicht",
             "Es gefällt ihr nicht",
-            "Es ist zu teür"
+            "Es ist zu teuer"
           ],
           "answer": "Es passt nicht",
           "explanation": "Es passt mir leider nicht."
@@ -2544,7 +2544,7 @@
           "id": "qr435",
           "type": "true-false",
           "question": "Die Bezahlung beträgt 14 Euro pro Stunde.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bezahlung: 14 Euro pro Stunde."
         },
         {
@@ -2585,7 +2585,7 @@
           "id": "qr438",
           "type": "true-false",
           "question": "Der Ausweis wurde am 25. April verloren.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Am 25. April habe ich meinen Personalausweis verloren."
         },
         {
@@ -2667,7 +2667,7 @@
           "id": "qr444",
           "type": "true-false",
           "question": "Die Höchsttemperatur liegt bei 19 Grad.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Höchsttemperatur liegt bei 19 Grad."
         },
         {
@@ -2708,7 +2708,7 @@
           "id": "qr447",
           "type": "true-false",
           "question": "Der Gesamtbetrag ist bis zum 15. Mai zu zahlen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Zahlungsziel: 15. Mai 2025."
         },
         {
@@ -2790,7 +2790,7 @@
           "id": "qr453",
           "type": "true-false",
           "question": "Gestern war bis 23 Uhr laute Musik zu hören.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie haben bis nach 23:00 Uhr laute Musik gehört."
         },
         {
@@ -2831,7 +2831,7 @@
           "id": "qr456",
           "type": "true-false",
           "question": "Bücher kann man 4 Wochen ausleihen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ausleihfrist: 4 Wochen (Bücher)."
         },
         {
@@ -2872,7 +2872,7 @@
           "id": "qr459",
           "type": "true-false",
           "question": "Man kann das Paket an eine Packstation umleiten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Sendung an eine Packstation umleiten."
         },
         {
@@ -2913,7 +2913,7 @@
           "id": "qr462",
           "type": "true-false",
           "question": "Die Haltestelle Marktplatz entfällt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Haltestelle Marktplatz entfällt."
         },
         {
@@ -2954,7 +2954,7 @@
           "id": "qr465",
           "type": "true-false",
           "question": "Jean-Pierre möchte Max in Hamburg besuchen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ich möchte dich am Wochenende in Hamburg besuchen."
         },
         {
@@ -2976,7 +2976,7 @@
     {
       "id": "A2_read_26",
       "title": "Kindergeburtstag",
-      "text": "Einladung zum 8. Geburtstag von Lina!\n\nWann: Samstag, 14. Juni 2025, 14:00 bis 17:30 Uhr\nWo: Im Kinderspielzentrum 'Abenteürland', Parkstrasse 22\n\nProgramm:\n– Klettern und Toben in der Spielhalle\n– Bastelstation (bitte alte Kleidung anziehen!)\n– Gemeinsames Essen: Pizza und Kuchen\n– Pinata-Schlagen\n\nBitte bis zum 7. Juni zurückmelden, ob ihr kommen könnt. Jedes Kind bringt bitte eine Kleinigkeit zu trinken mit. Die Eltern sind herzlich willkommen, sich im Cafe nebenan zu treffen.\n\nWir freuen uns auf euch!\nLinas Familie",
+      "text": "Einladung zum 8. Geburtstag von Lina!\n\nWann: Samstag, 14. Juni 2025, 14:00 bis 17:30 Uhr\nWo: Im Kinderspielzentrum 'Abenteuerland', Parkstrasse 22\n\nProgramm:\n– Klettern und Toben in der Spielhalle\n– Bastelstation (bitte alte Kleidung anziehen!)\n– Gemeinsames Essen: Pizza und Kuchen\n– Pinata-Schlagen\n\nBitte bis zum 7. Juni zurückmelden, ob ihr kommen könnt. Jedes Kind bringt bitte eine Kleinigkeit zu trinken mit. Die Eltern sind herzlich willkommen, sich im Cafe nebenan zu treffen.\n\nWir freuen uns auf euch!\nLinas Familie",
       "questions": [
         {
           "id": "qr467",
@@ -3077,7 +3077,7 @@
           "id": "qr474",
           "type": "true-false",
           "question": "Die Person hat Delphine gesehen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ich habe Delphine gesehen."
         },
         {
@@ -3159,7 +3159,7 @@
           "id": "qr2905",
           "type": "true-false",
           "question": "Man kann mit Kreditkarte bezahlen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Wir akzeptieren Bar, EC-Karte und Kreditkarte."
         },
         {
@@ -3200,7 +3200,7 @@
           "id": "qr2908",
           "type": "true-false",
           "question": "Man soll das Gerät alle vier Wochen entkalken.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Alle vier Wochen das Gerät mit Entkalker reinigen."
         },
         {
@@ -3241,7 +3241,7 @@
           "id": "qr2911",
           "type": "true-false",
           "question": "Am Dienstag sind alle Filme billiger.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Dienstag: Alle Filme zum ermäßigten Preis."
         },
         {
@@ -3336,7 +3336,7 @@
           "id": "qr2918",
           "type": "true-false",
           "question": "Hausgemachter Kuchen kostet 3,50 Euro.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Hausgemachter Kuchen: 3,50 Euro pro Stück."
         }
       ],
@@ -3487,7 +3487,7 @@
           "id": "qr2929",
           "type": "true-false",
           "question": "Die Miete beträgt 450 Euro warm.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Kosten: 450 Euro warm."
         },
         {
@@ -3569,7 +3569,7 @@
           "id": "qr2935",
           "type": "true-false",
           "question": "Der Schlüssel ist bei Frau Müller.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Schlüssel ist bei der Nachbarin von Wohnung 1, Frau Müller."
         },
         {
@@ -3610,7 +3610,7 @@
           "id": "qr2938",
           "type": "true-false",
           "question": "Der Stellplatz ist video-überwacht.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Video-Überwachung."
         },
         {
@@ -3651,7 +3651,7 @@
           "id": "qr2941",
           "type": "true-false",
           "question": "Glascontainer dürfen nur zwischen 7 und 20 Uhr benutzt werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte nur zwischen 7 und 20 Uhr einwerfen (Lärmschutz)."
         },
         {
@@ -3733,7 +3733,7 @@
           "id": "qr2947",
           "type": "true-false",
           "question": "Das Bad ist vom 19. bis 30. Mai geschlossen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Von Montag, 19. Mai bis Freitag, 30. Mai geschlossen."
         },
         {
@@ -3774,7 +3774,7 @@
           "id": "qr2950",
           "type": "true-false",
           "question": "Die Nachtruhe beginnt um 22:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Nachtruhe beginnt um 22:00 Uhr."
         },
         {
@@ -3815,7 +3815,7 @@
           "id": "qr2953",
           "type": "true-false",
           "question": "Das Hotel liegt direkt am Strand.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Unser Hotel ist direkt am Strand."
         },
         {
@@ -3897,7 +3897,7 @@
           "id": "qr2959",
           "type": "true-false",
           "question": "Die Mindestlaufzeit beträgt 12 Monate.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Mindestlaufzeit: 12 Monate."
         },
         {
@@ -3938,7 +3938,7 @@
           "id": "qr2962",
           "type": "true-false",
           "question": "Die Warnung gilt bis 10:00 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Voraussichtlich bis 10:00 Uhr."
         },
         {
@@ -3992,7 +3992,7 @@
           "id": "qr2966",
           "type": "true-false",
           "question": "Herr Becker soll Zeugnisse mitbringen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte bringen Sie Zeugnisse und Referenzen mit."
         }
       ],
@@ -4020,7 +4020,7 @@
           "id": "qr2968",
           "type": "true-false",
           "question": "Pro Haushalt dürfen maximal 3 Kubikmeter Sperrmüll angemeldet werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Maximal 3 Kubikmeter Sperrmüll pro Haushalt."
         },
         {
@@ -4061,7 +4061,7 @@
           "id": "qr2971",
           "type": "true-false",
           "question": "Anna hat eine Frage zu den Hausaufgaben von letzter Woche.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Eine Frage zu den Hausaufgaben von letzter Woche."
         },
         {
@@ -4083,7 +4083,7 @@
     {
       "id": "A2_read_53",
       "title": "Absage Bewerbung",
-      "text": "Sehr geehrte Frau Lehmann,\n\nvielen Dank für Ihre Bewerbung als Buchhalterin bei der Steürkanzlei Müller & Partner.\n\nWir haben Ihre Unterlagen sorgfältig geprüft. Leider müssen wir Ihnen mitteilen, dass wir uns für eine andere Kandidatin entschieden haben. Die Entscheidung ist uns nicht leicht gefallen, da Sie über gute Qualifikationen verfügen.\n\nWir wünschen Ihnen für Ihre weitere berufliche Zukunft alles Gute und viel Erfolg.\n\nBewahren Sie Ihre Bewerbungsunterlagen auf – vielleicht passt es ja ein anderes Mal.\n\nMit freundlichen Grüssen,\nPersonalabteilung\nMüller & Partner",
+      "text": "Sehr geehrte Frau Lehmann,\n\nvielen Dank für Ihre Bewerbung als Buchhalterin bei der Steuerkanzlei Müller & Partner.\n\nWir haben Ihre Unterlagen sorgfältig geprüft. Leider müssen wir Ihnen mitteilen, dass wir uns für eine andere Kandidatin entschieden haben. Die Entscheidung ist uns nicht leicht gefallen, da Sie über gute Qualifikationen verfügen.\n\nWir wünschen Ihnen für Ihre weitere berufliche Zukunft alles Gute und viel Erfolg.\n\nBewahren Sie Ihre Bewerbungsunterlagen auf – vielleicht passt es ja ein anderes Mal.\n\nMit freundlichen Grüssen,\nPersonalabteilung\nMüller & Partner",
       "questions": [
         {
           "id": "qr2973",
@@ -4102,7 +4102,7 @@
           "id": "qr2974",
           "type": "true-false",
           "question": "Frau Lehmann bekommt eine Absage.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Es ist eine Absage."
         },
         {
@@ -4166,7 +4166,7 @@
     {
       "id": "B1_read_2",
       "title": "Berufung: Arzt oder Ärztin",
-      "text": "Immer weniger junge Menschen in Deutschland entscheiden sich für den Arztberuf. Die Arbeitsbedingungen in Krankenhäusern sind oft schwierig: lange Arbeitszeiten, viel Bürokratie und hoher Druck. Dabei wäre der Bedarf an Ärzten groß. Besonders auf dem Land fehlen Mediziner. Viele Kliniken suchen händeringend nach Personal. Die Politik versucht mit finanziellen Anreizen gegenzusteürn.",
+      "text": "Immer weniger junge Menschen in Deutschland entscheiden sich für den Arztberuf. Die Arbeitsbedingungen in Krankenhäusern sind oft schwierig: lange Arbeitszeiten, viel Bürokratie und hoher Druck. Dabei wäre der Bedarf an Ärzten groß. Besonders auf dem Land fehlen Mediziner. Viele Kliniken suchen händeringend nach Personal. Die Politik versucht mit finanziellen Anreizen gegenzusteuern.",
       "questions": [
         {
           "id": "qr18",
@@ -4446,7 +4446,7 @@
           "id": "qr_B1_r9_1",
           "type": "true-false",
           "question": "Die Kündigungsfrist beträgt drei Monate.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "In §1 steht: 'Die Kündigungsfrist beträgt drei Monate.'"
         },
         {
@@ -4573,7 +4573,7 @@
           "id": "qr_B1_r12_2",
           "type": "true-false",
           "question": "Man darf maximal 3 Tabletten Ibuprofen 400 mg pro Tag nehmen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Dosierung sagt: 'Maximal 3 Tabletten pro Tag.'"
         },
         {
@@ -4615,7 +4615,7 @@
           "id": "qr_B1_r13_2",
           "type": "true-false",
           "question": "Die Störung wird voraussichtlich bis 17:00 Uhr dauern.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Störung dauert voraussichtlich bis 17:00 Uhr."
         },
         {
@@ -4644,7 +4644,7 @@
           "id": "qr_B1_r14_1",
           "type": "true-false",
           "question": "Der Zug hat 45 Minuten Verspätung.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der ICE hat voraussichtlich 45 Minuten Verspätung."
         },
         {
@@ -4695,7 +4695,7 @@
           "question": "Was war negativ an der Bewertung?",
           "options": [
             "Das Personal war unfreundlich",
-            "Das Frühstück war zu teür",
+            "Das Frühstück war zu teuer",
             "Der Kaffee war lauwarm und es gab Straßenlärm",
             "Das Zimmer war schmutzig"
           ],
@@ -4706,7 +4706,7 @@
           "id": "qr_B1_r15_3",
           "type": "true-false",
           "question": "Das Doppelzimmer mit Frühstück kostete 180 Euro für zwei Nächte.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Doppelzimmer, zwei Übernachtungen, 180 Euro inklusive Frühstück.'"
         }
       ]
@@ -4784,7 +4784,7 @@
           "id": "qr_B1_r17_3",
           "type": "true-false",
           "question": "Die Bewerbungsfrist endet am 30. April.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bewerbungen müssen bis zum 30. April eingereicht werden."
         }
       ]
@@ -4800,7 +4800,7 @@
           "id": "qr_B1_r18_1",
           "type": "true-false",
           "question": "Ab Januar 2026 werden alle Rezepte nur noch digital ausgestellt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das E-Rezept wird ab dem 1. Januar 2026 Pflicht."
         },
         {
@@ -4855,7 +4855,7 @@
           "id": "qr_B1_r19_2",
           "type": "true-false",
           "question": "Der Autor erwähnt, dass Homeoffice Geld für die Fahrt spart.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Homeoffice spart viel Zeit und Geld für die Fahrt zur Arbeit.'"
         },
         {
@@ -4878,7 +4878,7 @@
           "id": "qr_B1_r20_1",
           "type": "true-false",
           "question": "Deutschland produziert jährlich etwa drei Millionen Tonnen Plastikmüll.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'In Deutschland werden jedes Jahr rund drei Millionen Tonnen Plastikmüll produziert.'"
         },
         {
@@ -4982,7 +4982,7 @@
           "id": "qr_B1_r22_3",
           "type": "true-false",
           "question": "Maßgeschneiderte Produkte können nicht widerrufen werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Maßgeschneiderte Produkte sind vom Widerrufsrecht ausgeschlossen."
         }
       ]
@@ -5082,7 +5082,7 @@
           "id": "qr_B1_r25_1",
           "type": "true-false",
           "question": "Freiwillige müssen mindestens 18 Jahre alt sein.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Voraussetzung ist: 'Sie sollten mindestens 18 Jahre alt sein.'"
         },
         {
@@ -5173,7 +5173,7 @@
           "id": "qr_B1_r27_2",
           "type": "true-false",
           "question": "Julia hatte am Anfang Schwierigkeiten, den Dialekt zu verstehen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie sagt: 'Am Anfang war es nicht leicht, weil ich den österreichischen Dialekt kaum verstanden habe.'"
         },
         {
@@ -5216,7 +5216,7 @@
           "id": "qr_B1_r28_3",
           "type": "true-false",
           "question": "Zu viel bezahlte Beiträge werden innerhalb von vier Wochen zurücküberwiesen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der überschüssige Betrag wird innerhalb von vier Wochen auf das Konto überwiesen."
         }
       ]
@@ -5252,7 +5252,7 @@
           "id": "qr_B1_r29_3",
           "type": "true-false",
           "question": "Ab dem 2. Januar gelten wieder normale Öffnungszeiten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ab dem 2. Januar gelten wieder die normalen Öffnungszeiten."
         }
       ]
@@ -5317,7 +5317,7 @@
           "id": "qr_B1_r31_2",
           "type": "true-false",
           "question": "An Sonn- und Feiertagen ist das Parken kostenlos.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sonn- und feiertags ist das Parken kostenlos."
         },
         {
@@ -5346,7 +5346,7 @@
           "id": "qr_B1_r32_1",
           "type": "true-false",
           "question": "Sabrina bittet Lara, ihren Frühdienst zu übernehmen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sabrina schreibt: 'Könntest du bitte meinen Frühdienst übernehmen?'"
         },
         {
@@ -5424,7 +5424,7 @@
           "id": "qr_B1_r34_1",
           "type": "true-false",
           "question": "Verschreibungspflichtige Medikamente werden von der AOK übernommen, wenn der Arzt sie verordnet hat.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Text sagt: 'Verschreibungspflichtige Arzneimittel werden von der AOK übernommen, sofern Ihr Arzt sie verordnet hat.'"
         },
         {
@@ -5460,7 +5460,7 @@
           "id": "qr_B1_r35_1",
           "type": "true-false",
           "question": "Das FSJ im Krankenhaus St. Josef dauert 12 Monate.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Dauer beträgt 12 Monate."
         },
         {
@@ -5586,7 +5586,7 @@
           "id": "qr_B1_r38_1",
           "type": "true-false",
           "question": "Am 10. Juni fällt die Warmwasserversorgung aus.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Warmwasserversorgung fällt am 10. Juni aus."
         },
         {
@@ -5648,7 +5648,7 @@
           "id": "qr_B1_r39_3",
           "type": "true-false",
           "question": "Bei unentschuldigtem Fehlen kann eine Gebühr von 10 Euro erhoben werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bei wiederholtem unentschuldigtem Fehlen kann eine Gebühr von 10 Euro erhoben werden."
         }
       ]
@@ -5658,13 +5658,13 @@
       "level": "B1",
       "title": "Bewertung: Restaurant Zum Goldenen Löwen",
       "lessonId": "B1_lesson_15",
-      "text": "Bewertung von Familie Klein (★★☆☆☆) – 2 von 5 Sternen\n\nWir waren am Samstagabend im Restaurant Zum Goldenen Löwen. Leider waren wir sehr enttäuscht. Wir hatten um 19:00 Uhr reserviert, mussten aber 25 Minuten warten, obwohl der Tisch frei war. Das Personal wirkte gestresst und unfreundlich. Mein Schnitzel war trocken und die Pommes kalt. Meine Frau hatte das vegetarische Gericht, das war in Ordnung. Die Portionen waren klein für den Preis. Die Getränke waren sehr teür: eine kleine Cola kostete 5,50 Euro. Die Toiletten waren auch nicht sauber. Wir werden nicht wiederkommen.\n\nPositive Note: Der gemischte Salat als Vorspeise war gut.",
+      "text": "Bewertung von Familie Klein (★★☆☆☆) – 2 von 5 Sternen\n\nWir waren am Samstagabend im Restaurant Zum Goldenen Löwen. Leider waren wir sehr enttäuscht. Wir hatten um 19:00 Uhr reserviert, mussten aber 25 Minuten warten, obwohl der Tisch frei war. Das Personal wirkte gestresst und unfreundlich. Mein Schnitzel war trocken und die Pommes kalt. Meine Frau hatte das vegetarische Gericht, das war in Ordnung. Die Portionen waren klein für den Preis. Die Getränke waren sehr teuer: eine kleine Cola kostete 5,50 Euro. Die Toiletten waren auch nicht sauber. Wir werden nicht wiederkommen.\n\nPositive Note: Der gemischte Salat als Vorspeise war gut.",
       "questions": [
         {
           "id": "qr_B1_r40_1",
           "type": "true-false",
           "question": "Familie Klein hatte reserviert, musste aber trotzdem warten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie hatten reserviert, mussten aber 25 Minuten warten."
         },
         {
@@ -5675,7 +5675,7 @@
             "Weil das Restaurant geschlossen war",
             "Weil das Essen und der Service schlecht waren",
             "Weil sie keinen Tisch bekommen haben",
-            "Weil es zu teür war, aber das Essen gut"
+            "Weil es zu teuer war, aber das Essen gut"
           ],
           "answer": "Weil das Essen und der Service schlecht waren",
           "explanation": "Das Personal war gestresst, das Schnitzel trocken, die Pommes kalt."
@@ -5742,7 +5742,7 @@
           "id": "qr_B1_r42_1",
           "type": "true-false",
           "question": "Der Autor findet Fahrradfahren aus vielen Gründen gut.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Autor findet Fahrradfahren gesund, günstig und umweltfreundlich."
         },
         {
@@ -5778,7 +5778,7 @@
           "id": "qr_B1_r43_1",
           "type": "true-false",
           "question": "Nadine möchte später Krankenschwester werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie macht das Praktikum, weil sie später Krankenschwester werden möchte."
         },
         {
@@ -5798,7 +5798,7 @@
           "id": "qr_B1_r43_3",
           "type": "true-false",
           "question": "Nadine war am Ende des Tages zufrieden, aber müde.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie war sehr müde, hat viel gelernt und freut sich auf den zweiten Tag."
         }
       ]
@@ -5814,7 +5814,7 @@
           "id": "qr_B1_r44_1",
           "type": "true-false",
           "question": "Ab Juli wird die SMS-TAN durch eine TAN-App ersetzt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die SMS-TAN entfällt und wird durch die TAN-App ersetzt."
         },
         {
@@ -5850,7 +5850,7 @@
           "id": "qr_B1_r45_1",
           "type": "true-false",
           "question": "Das Krankenhaus-WLAN heißt „Klinik-Gast“.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Netzwerk heißt „Klinik-Gast“."
         },
         {
@@ -5912,7 +5912,7 @@
           "id": "qr_B1_r46_3",
           "type": "true-false",
           "question": "Der Beitrag empfiehlt, auf das Datum der Qülle zu achten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Beitrag rät: 'Achten Sie auf das Datum: Medizinische Informationen veralten schnell.'"
         }
       ]
@@ -5964,7 +5964,7 @@
           "id": "qr_B1_r48_1",
           "type": "true-false",
           "question": "Die Hauptstraße ist vom 1. bis zum 15. Juli voll gesperrt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Hauptstraße ist vom 1. bis 15. Juli vollständig gesperrt."
         },
         {
@@ -6000,7 +6000,7 @@
           "id": "qr_B1_r49_1",
           "type": "true-false",
           "question": "Das Seminar findet an einem Samstag statt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Seminar ist am Samstag, dem 20. September."
         },
         {
@@ -6049,7 +6049,7 @@
           "id": "qr_B1_r50_2",
           "type": "true-false",
           "question": "Die Fahrradcodierung ist kostenlos, aber eine Anmeldung ist nötig.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Fahrradcodierung ist kostenlos, aber eine Anmeldung ist erforderlich."
         },
         {
@@ -6078,7 +6078,7 @@
           "id": "qr_B1_r51_1",
           "type": "true-false",
           "question": "Die Bibliothek hat ab September donnerstags länger geöffnet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ab September hat die Bibliothek donnerstags bis 20:00 Uhr geöffnet."
         },
         {
@@ -6098,7 +6098,7 @@
           "id": "qr_B1_r51_3",
           "type": "true-false",
           "question": "Die Bibliotheksführung ist kostenlos.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Führung ist kostenlos."
         }
       ]
@@ -6114,7 +6114,7 @@
           "id": "qr_B1_r52_1",
           "type": "true-false",
           "question": "Bei mehr als 15 Minuten Verspätung kann die Teilnahme verweigert werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bei Verspätung von mehr als 15 Minuten kann die Teilnahme verweigert werden."
         },
         {
@@ -6212,7 +6212,7 @@
           "id": "qr_B1_r54_3",
           "type": "true-false",
           "question": "Die Rückerstattung erfolgt innerhalb von 14 Tagen nach Eingang der Rücksendung.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Rückerstattung erfolgt innerhalb von 14 Tagen nach Eingang der Rücksendung."
         }
       ]
@@ -6222,7 +6222,7 @@
       "level": "B1",
       "title": "Lokalnachricht: Neuer Spielplatz eröffnet",
       "lessonId": "B1_lesson_16",
-      "text": "Cottbuser Stadtanzeiger – 12. Mai 2025\n\nNeuer Abenteürspielplatz im Stadtpark eröffnet\n\nCottbus. Nach sechsmonatiger Bauzeit wurde gestern der neue Abenteürspielplatz im Cottbuser Stadtpark eröffnet. Auf 800 Quadratmetern entstanden eine Kletterspinne, eine Seilbahn, mehrere Schaukeln und ein Matschbereich. Besonders stolz ist die Stadt auf das inklusive Spielgerät, das auch von Kindern im Rollstuhl genutzt werden kann. Die Gesamtkosten betrugen 180.000 Euro. Die Stadt plant, in den nächsten zwei Jahren zwei weitere Spielplätze zu modernisieren. Bürgermeister Tobias Voigt sagte bei der Eröffnung: „Kinder brauchen Platz zum Spielen und Toben. Dieser Spielplatz ist ein Gewinn für alle Familien in Cottbus.“",
+      "text": "Cottbuser Stadtanzeiger – 12. Mai 2025\n\nNeuer Abenteuerspielplatz im Stadtpark eröffnet\n\nCottbus. Nach sechsmonatiger Bauzeit wurde gestern der neue Abenteuerspielplatz im Cottbuser Stadtpark eröffnet. Auf 800 Quadratmetern entstanden eine Kletterspinne, eine Seilbahn, mehrere Schaukeln und ein Matschbereich. Besonders stolz ist die Stadt auf das inklusive Spielgerät, das auch von Kindern im Rollstuhl genutzt werden kann. Die Gesamtkosten betrugen 180.000 Euro. Die Stadt plant, in den nächsten zwei Jahren zwei weitere Spielplätze zu modernisieren. Bürgermeister Tobias Voigt sagte bei der Eröffnung: „Kinder brauchen Platz zum Spielen und Toben. Dieser Spielplatz ist ein Gewinn für alle Familien in Cottbus.“",
       "questions": [
         {
           "id": "qr_B1_r55_1",
@@ -6306,7 +6306,7 @@
           "id": "qr_B1_r57_1",
           "type": "true-false",
           "question": "Die Brille ist in der Wohnung von Herrn Berger kaputtgegangen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Herr Berger schreibt: 'Der Schaden ist in meiner Wohnung passiert.'"
         },
         {
@@ -6342,7 +6342,7 @@
           "id": "qr_B1_r58_1",
           "type": "true-false",
           "question": "Herr Fischer muss 186,50 Euro bis zum 10. Juni überweisen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Betrag von 186,50 Euro soll bis zum 10. Juni überwiesen werden."
         },
         {
@@ -6362,7 +6362,7 @@
           "id": "qr_B1_r58_3",
           "type": "true-false",
           "question": "Die Stadtwerke bieten eine Ratenzahlung an.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Kundenservice kann bei Fragen oder für eine Ratenzahlung kontaktiert werden."
         }
       ]
@@ -6378,7 +6378,7 @@
           "id": "qr_B1_r59_1",
           "type": "true-false",
           "question": "Die meisten Handyverträge haben eine Kündigungsfrist von drei Monaten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die meisten Verträge haben eine Kündigungsfrist von drei Monaten zum Vertragsende."
         },
         {
@@ -6414,7 +6414,7 @@
           "id": "qr_B1_r60_1",
           "type": "true-false",
           "question": "Am 29. Mai wird die Müllabfuhr einen Tag später durchgeführt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Abholung am 29. Mai verschiebt sich auf Freitag, den 30. Mai."
         },
         {
@@ -6434,7 +6434,7 @@
           "id": "qr_B1_r60_3",
           "type": "true-false",
           "question": "Die Stadt bietet eine App an, die die Abholtermine anzeigt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Es gibt die kostenlose App 'Abfall-Kiel' für die Termine."
         }
       ]
@@ -6504,7 +6504,7 @@
           "id": "qr27",
           "type": "true-false",
           "question": "Die Widerspruchslösung würde mehr Organe verfügbar machen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6574,7 +6574,7 @@
           "id": "b2r4b",
           "type": "true-false",
           "question": "Viele Behandlungsfehler sind auf Kommunikationsprobleme zurückzuführen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6615,7 +6615,7 @@
           "id": "b2r5b",
           "type": "true-false",
           "question": "Das Medizinstudium gilt als anspruchsvoll.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6656,7 +6656,7 @@
           "id": "b2r6b",
           "type": "true-false",
           "question": "Die Weltgesundheitsorganisation hat neun Ziele für die Patientensicherheit definiert.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6697,7 +6697,7 @@
           "id": "b2r7b",
           "type": "true-false",
           "question": "Die Visite dient dazu, den Zustand der Patienten zu beurteilen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6746,7 +6746,7 @@
           "type": "mcq",
           "question": "Welche Schwierigkeit kann bei der digitalen Terminvergabe auftreten?",
           "options": [
-            "Sie ist zu teür",
+            "Sie ist zu teuer",
             "Ältere Patienten haben manchmal Probleme damit",
             "Sie funktioniert oft nicht",
             "Sie ist zu langsam"
@@ -6779,7 +6779,7 @@
           "id": "b2r9b",
           "type": "true-false",
           "question": "Der Arbeitgeber zahlt die Hälfte des Krankenversicherungsbeitrags.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6820,7 +6820,7 @@
           "id": "b2r10b",
           "type": "true-false",
           "question": "Das Robert Koch-Institut übernimmt Aufgaben der öffentlichen Gesundheit.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6861,7 +6861,7 @@
           "id": "b2r11b",
           "type": "true-false",
           "question": "Einige Pflegekräfte kritisieren, dass die Digitalisierung die Zeit mit Patienten verringert.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6902,7 +6902,7 @@
           "id": "b2r12b",
           "type": "true-false",
           "question": "Übergewicht und Diabetes sind Folgen ungesunder Ernährung.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6943,7 +6943,7 @@
           "id": "b2r13b",
           "type": "true-false",
           "question": "Grüne Flaschen in der Stadt fördern die Bewegung und das Wohlbefinden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6953,7 +6953,7 @@
           "options": [
             "Durch mehr Strassenbau",
             "Durch umweltfreundliche Verkehrspolitik und Begrünung",
-            "Durch höhere Steürn",
+            "Durch höhere Steuern",
             "Durch weniger Parks"
           ],
           "answer": "Durch umweltfreundliche Verkehrspolitik und Begrünung",
@@ -6984,7 +6984,7 @@
           "id": "b2r14b",
           "type": "true-false",
           "question": "Vermieter verlangen oft Gehaltsnachweise und eine Schufa-Auskunft.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -6994,7 +6994,7 @@
           "options": [
             "Sie bauen Einkaufszentren",
             "Sie fördern den Bau von Sozialwohnungen",
-            "Sie erhöhen die Steürn",
+            "Sie erhöhen die Steuern",
             "Sie begrenzen die Einwohnerzahl"
           ],
           "answer": "Sie fördern den Bau von Sozialwohnungen",
@@ -7026,7 +7026,7 @@
           "id": "b2r15b",
           "type": "true-false",
           "question": "Der öffentliche Nahverkehr ermöglicht ein Leben ohne Auto.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7068,7 +7068,7 @@
           "id": "b2r16b",
           "type": "true-false",
           "question": "Die Ausbildung findet im dualen System statt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7110,7 +7110,7 @@
           "id": "b2r17b",
           "type": "true-false",
           "question": "Teilzeit und Jobsharing werden in Kliniken angeboten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7152,7 +7152,7 @@
           "id": "b2r18b",
           "type": "true-false",
           "question": "Für ärztliche Berufe ist die Approbation erforderlich.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7162,7 +7162,7 @@
           "options": [
             "Durch niedrigere Löhne",
             "Durch kulturelle Vielfalt der Mitarbeiter",
-            "Durch weniger Steürn",
+            "Durch weniger Steuern",
             "Durch längere Arbeitszeiten"
           ],
           "answer": "Durch kulturelle Vielfalt der Mitarbeiter",
@@ -7236,7 +7236,7 @@
           "id": "b2r20b",
           "type": "true-false",
           "question": "In Patientenforen können sich Betroffene zu Erkrankungen austauschen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7278,7 +7278,7 @@
           "id": "b2r21b",
           "type": "true-false",
           "question": "Ehrenamtliche Helfer müssen eine Grundausbildung in Erster Hilfe absolvieren.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7320,7 +7320,7 @@
           "id": "b2r22b",
           "type": "true-false",
           "question": "In Österreich gilt die Widerspruchslösung.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7362,7 +7362,7 @@
           "id": "b2r23b",
           "type": "true-false",
           "question": "Die Krankenkasse übernimmt die Reha-Kosten, wenn sie medizinisch notwendig ist.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7405,7 +7405,7 @@
           "id": "b2r24b",
           "type": "true-false",
           "question": "Die Teilnahme an Vorsorgeuntersuchungen hängt von der Aufklärung durch den Hausarzt ab.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7447,7 +7447,7 @@
           "id": "b2r25b",
           "type": "true-false",
           "question": "Ein Medikationsplan hilft, mehrere Medikamente im Blick zu behalten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7489,7 +7489,7 @@
           "id": "b2r26b",
           "type": "true-false",
           "question": "Der Patient sollte seine Symptome genau beschreiben und Fragen stellen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7573,7 +7573,7 @@
           "id": "b2r28b",
           "type": "true-false",
           "question": "Am Ende dürfen Bewerber eigene Fragen stellen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7657,7 +7657,7 @@
           "id": "b2r30b",
           "type": "true-false",
           "question": "Die Einwilligung kann jederzeit widerrufen werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7699,7 +7699,7 @@
           "id": "b2r31b",
           "type": "true-false",
           "question": "Ungeklärte Konflikte können die Patientensicherheit gefährden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7783,7 +7783,7 @@
           "id": "b2r33b",
           "type": "true-false",
           "question": "Das BfArM kann Gesundheits-Apps als DiGA zulassen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7825,7 +7825,7 @@
           "id": "b2r34b",
           "type": "true-false",
           "question": "Das Hygienepersonal überwacht die Einhaltung der Vorschriften.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7867,7 +7867,7 @@
           "id": "b2r35b",
           "type": "true-false",
           "question": "Schichtarbeit erhöht das Risiko für Herz-Kreislauf-Erkrankungen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7909,7 +7909,7 @@
           "id": "b2r36b",
           "type": "true-false",
           "question": "Die Klinik muss innerhalb einer bestimmten Frist auf Beschwerden reagieren.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7951,7 +7951,7 @@
           "id": "b2r37b",
           "type": "true-false",
           "question": "Während der Messung sollte der Patient nicht sprechen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -7993,7 +7993,7 @@
           "id": "b2r38b",
           "type": "true-false",
           "question": "Der Widerspruch sollte schriftlich erfolgen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8035,7 +8035,7 @@
           "id": "b2r39b",
           "type": "true-false",
           "question": "Die BGW berate Kliniken zum Arbeitsschutz.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8077,7 +8077,7 @@
           "id": "b2r40b",
           "type": "true-false",
           "question": "Supervision und psychologische Beratung werden in der Pflege immer wichtiger.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8119,7 +8119,7 @@
           "id": "b2r41b",
           "type": "true-false",
           "question": "Der Blutzuckerspiegel wird stark von der Nahrungsaufnahme beeinflusst.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8161,7 +8161,7 @@
           "id": "b2r42b",
           "type": "true-false",
           "question": "Der Impfschutz baut sich innerhalb von zwei Wochen auf.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8203,7 +8203,7 @@
           "id": "b2r43b",
           "type": "true-false",
           "question": "Für körperliche Untersuchungen ist die Videosprechstunde weniger geeignet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8287,7 +8287,7 @@
           "id": "b2r45b",
           "type": "true-false",
           "question": "Bei Bedarf wird ein Pflegedienst oder eine Rehabilitation organisiert.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8413,7 +8413,7 @@
           "id": "b2r48b",
           "type": "true-false",
           "question": "Die Kampagne informiert über persönliche Geschichten von Betroffenen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8497,7 +8497,7 @@
           "id": "b2r50b",
           "type": "true-false",
           "question": "Interkulturelle Schulungen helfen, Missverständnisse zu vermeiden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Diese Aussage stimmt mit dem Text überein."
         },
         {
@@ -8572,7 +8572,7 @@
     {
       "id": "C1_read_2",
       "title": "Ethische Fragen am Lebensende",
-      "text": "Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unterscheiden zwischen aktiver und passiver Sterbehilfe sowie der Hilfe beim Suizid. Während passive Sterbehilfe in Deutschland unter bestimmten Umständen zulässig ist, bleibt die aktive Sterbehilfe strafbar. Das Bundesverfassungsgericht hat 2020 das Recht auf selbstbestimmtes Sterben gestärkt. Kritiker befürchten einen Dammbruch, während Befürworter die Patientenautonomie in den Vordergrund stellen. Für Ärzte stellt sich die Frage nach der Vereinbarkeit von ethischer ÿberzeugung und rechtlichen Vorgaben.",
+      "text": "Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unterscheiden zwischen aktiver und passiver Sterbehilfe sowie der Hilfe beim Suizid. Während passive Sterbehilfe in Deutschland unter bestimmten Umständen zulässig ist, bleibt die aktive Sterbehilfe strafbar. Das Bundesverfassungsgericht hat 2020 das Recht auf selbstbestimmtes Sterben gestärkt. Kritiker befürchten einen Dammbruch, während Befürworter die Patientenautonomie in den Vordergrund stellen. Für Ärzte stellt sich die Frage nach der Vereinbarkeit von ethischer überzeugung und rechtlichen Vorgaben.",
       "questions": [
         {
           "id": "qr35",
@@ -8744,7 +8744,7 @@
           "id": "qr48",
           "type": "true-false",
           "question": "Das derzeitige Vergütungssystem setzt laut Kritikern Fehlanreize.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr49",
@@ -9055,7 +9055,7 @@
           "id": "qr72",
           "type": "true-false",
           "question": "Fehlermeldesysteme ermöglichen eine anonyme Berichterstattung.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr73",
@@ -9118,7 +9118,7 @@
           "id": "qr77",
           "type": "true-false",
           "question": "Eine gelungene Integration verbessert die Versorgungsqualität in multikulturellen Teams.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr78",
@@ -9157,7 +9157,7 @@
           "id": "qr80",
           "type": "true-false",
           "question": "Advance Care Planning bezeichnet die vorausschaünde Behandlungsplanung.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr81",
@@ -9873,14 +9873,14 @@
           "id": "qr136",
           "type": "true-false",
           "question": "Das IQWiG prüft den Zusatznutzen neuer Arzneimittel.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr137",
           "type": "mcq",
           "question": "Was bemängeln Kritiker an rein ökonomischen Betrachtungen?",
           "options": [
-            "Dass sie zu teür sind",
+            "Dass sie zu teuer sind",
             "Dass sie die individülle Patientensituation nicht ausreichend berücksichtigen",
             "Dass sie zu langsam sind",
             "Dass sie nur für Krankenhäuser gelten"
@@ -9926,7 +9926,7 @@
           "id": "qr140",
           "type": "true-false",
           "question": "Die Organverteilung erfolgt nach medizinischen Kriterien durch Eurotransplant.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr141",
@@ -9981,7 +9981,7 @@
           "id": "qr144",
           "type": "true-false",
           "question": "Das Gendiagnostikgesetz schützt die informationelle Selbstbestimmung der Patienten.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr145",
@@ -10146,7 +10146,7 @@
           "id": "qr156",
           "type": "true-false",
           "question": "Regelmäßige Angehörigengespräche reduzieren nachweislich Konflikte.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr157",
@@ -10256,7 +10256,7 @@
           "id": "qr164",
           "type": "true-false",
           "question": "Die COVID-19-Pandemie hat die Bedeutung guter Risikokommunikation gezeigt.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr165",
@@ -10476,7 +10476,7 @@
           "id": "qr180",
           "type": "true-false",
           "question": "Ombudspersonen sind Anlaufstellen für Hinweise auf wissenschaftliches Fehlverhalten.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr181",
@@ -10586,7 +10586,7 @@
           "id": "qr188",
           "type": "true-false",
           "question": "Die neue Ärztliche Approbationsordnung gewichtet praktische Fertigkeiten stärker.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr189",
@@ -10751,7 +10751,7 @@
           "id": "qr200",
           "type": "true-false",
           "question": "Der potenzielle Nutzen eines Screenings muss die möglichen Schäden überwiegen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr201",
@@ -10861,7 +10861,7 @@
           "id": "qr208",
           "type": "true-false",
           "question": "Die Umsetzung von Shared Decision Making scheitert oft an Zeitmangel.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr209",
@@ -11026,7 +11026,7 @@
           "id": "qr220",
           "type": "true-false",
           "question": "Die informierte Einwilligung ist das zentrale Instrument zur Legitimation der Datennutzung.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr221",
@@ -11136,7 +11136,7 @@
           "id": "qr228",
           "type": "true-false",
           "question": "Der Arztbrief ist die zentrale Schnittstelle zwischen stationärer und ambulanter Versorgung.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "qr229",

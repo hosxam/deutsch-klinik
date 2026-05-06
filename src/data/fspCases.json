@@ -19,7 +19,7 @@
       "Erfragen Sie kardiovaskulare Risikofaktoren",
       "Klatzen Sie die Symptome in laienverstandlicher Sprache",
       "Erklaren Sie die nachsten diagnostischen Schritte",
-      "Fassen Sie den Fall fur den Oberarzt zusammen"
+      "Fassen Sie den Fall für den Oberarzt zusammen"
     ],
     "mustAsk": [
       "Hatten Sie das Gefuhl, dass der Schmerz in den Arm oder Kiefer ausstrahlt?",
@@ -65,7 +65,7 @@
       "allergies": "Keine Allergien",
       "pastHistory": "Zustand nach Stent-PCI des RIVA vor 3 Jahren, arterielle Hypertonie, Hypercholesterinamie",
       "familyHistory": "Keine relevanten kardialen Erkrankungen in der Familie",
-      "socialHistory": "Rentner, fruher Buroangestellter, Ex-Raucher seit 5 Jahren"
+      "socialHistory": "Rentner, früher Buroangestellter, Ex-Raucher seit 5 Jahren"
     },
     "doctorTasks": [
       "Ermitteln Sie die genaue Symptomatik und Ausloser",
@@ -112,7 +112,7 @@
       "age": "34",
       "gender": "weiblich",
       "chiefComplaint": "Brustschmerz und Engegefuhl",
-      "history": "Seit einem akuten Stressereignis (Streit mit Partner) Engegefuhl in der Brust, Kribbeln in den Handen und um den Mund herum. Keine Atemnot. Hatte ahnliche Episoden fruher schon mehrmals.",
+      "history": "Seit einem akuten Stressereignis (Streit mit Partner) Engegefuhl in der Brust, Kribbeln in den Handen und um den Mund herum. Keine Atemnot. Hatte ahnliche Episoden früher schon mehrmals.",
       "medications": "Keine regelmasigen Medikamente",
       "allergies": "Keine",
       "pastHistory": "Keine kardialen Vorerkrankungen. Gelegentlich Panikattacken.",
@@ -128,7 +128,7 @@
     ],
     "mustAsk": [
       "Hatten Sie das Gefuhl, dass der Schmerz ausstrahlt?",
-      "Hatten Sie solche Episoden fruher schon?",
+      "Hatten Sie solche Episoden früher schon?",
       "Gibt es einen konkreten Ausloser?"
     ],
     "redFlags": [
@@ -175,7 +175,7 @@
     "doctorTasks": [
       "Fragen Sie nach Schmerzcharakter und Atemabhangigkeit",
       "Erheben Sie Infektzeichen und Fieberverlauf",
-      "Uberlegen Sie Differenzialdiagnosen",
+      "Überlegen Sie Differenzialdiagnosen",
       "Erklaren Sie Ihre Verdachtsdiagnose",
       "Besprechen Sie die nachsten Schritte"
     ],
@@ -228,7 +228,7 @@
       "Erfragen Sie Auswurf, Fieber und Infektzeichen",
       "Beurteilen Sie die Atemfreqünz und Saürstoffsattigung",
       "Besprechen Sie die Akuttherapie",
-      "Stellen Sie den Fall fur die Stationsubergabe dar"
+      "Stellen Sie den Fall für die Stationsubergabe dar"
     ],
     "mustAsk": [
       "Haben Sie Fieber gemessen?",
@@ -377,7 +377,7 @@
       "allergies": "Keine",
       "pastHistory": "Keine relevanten Vorerkrankungen",
       "familyHistory": "Keine Thrombosen in der Familie",
-      "socialHistory": "Selbstandig, Buroangestellter, Ubergewicht (BMI 32)"
+      "socialHistory": "Selbstandig, Buroangestellter, Übergewicht (BMI 32)"
     },
     "doctorTasks": [
       "Fragen Sie nach der genauen Symptomatik",
@@ -394,10 +394,10 @@
     "redFlags": [
       "Postoperativer Zustand mit Ruhigstellung",
       "Plotzliche Atemnot mit Wadenschwellung",
-      "Ubergewicht als Risikofaktor"
+      "Übergewicht als Risikofaktor"
     ],
     "usefulPhrases": [
-      "Nach einer Operation besteht ein erhohtes Risiko fur Blutgerinnsel.",
+      "Nach einer Operation besteht ein erhohtes Risiko für Blutgerinnsel.",
       "Ich habe den Verdacht, dass sich ein Gerinnsel gelost hat und in Ihre Lunge gelangt ist."
     ],
     "doctorToDoctorSummary": "55-jahriger Patient am 3. Tag nach Knie-TEP mit akuter Dyspnö, Wadenschwellung links und Immobilisation. V. a. Lungenembolie. CT-Angiographie und D-Dimer veranlasst, therapeutische Antikoagulation eingeleitet.",
@@ -450,7 +450,7 @@
       "Positiver Loslassschmerz moglich"
     ],
     "usefulPhrases": [
-      "Die Schmerzen sind typisch fur eine Entzundung des Blinddarms.",
+      "Die Schmerzen sind typisch für eine Entzundung des Blinddarms.",
       "Ich werde Blut abnehmen und eine Ultraschalluntersuchung machen."
     ],
     "doctorToDoctorSummary": "28-jahriger Patient mit Schmerzwanderung in den rechten Unterbauch, Ubelkeit und Erbrechen. V. a. akute Appendizitis. Laborkontrolle und Abdomensonographie veranlasst. Bei Bestatigung operative Appendektomie indiziert.",
@@ -482,7 +482,7 @@
       "allergies": "Keine",
       "pastHistory": "Hypercholesterinamie",
       "familyHistory": "Keine",
-      "socialHistory": "Selbstandiger, ubergewichtiger Unternehmer, regelmassiger Alkoholkonsum (2-3 Bier/Tag)"
+      "socialHistory": "Selbstandiger, übergewichtiger Unternehmer, regelmassiger Alkoholkonsum (2-3 Bier/Tag)"
     },
     "doctorTasks": [
       "Fragen Sie nach dem Schmerzcharakter und Ausstrahlung",
@@ -503,7 +503,7 @@
     ],
     "usefulPhrases": [
       "Die Schmerzen passen zu einer Entzundung der Bauchspeicheldruse.",
-      "Sie mussen stationar aufgenommen werden, damit wir Sie uberwachen und behandeln konnen."
+      "Sie mussen stationar aufgenommen werden, damit wir Sie überwachen und behandeln konnen."
     ],
     "doctorToDoctorSummary": "45-jahriger Patient mit gurtelförmigen Oberbauchschmerzen nach fettreicher Mahlzeit und Alkoholkonsum. Ausstrahlung in den Rucken. Ubelkeit. V. a. akute Pankreatitis. Stationare Aufnahme, Laborkontrolle (Lipase, CRP), Nahrungskarenz und Volumengabe.",
     "scoringRubric": {
@@ -549,7 +549,7 @@
       "Nehmen Sie regelmasig Schmerzmittel?"
     ],
     "redFlags": [
-      "Daürhafte Symptome uber Wochen",
+      "Daürhafte Symptome über Wochen",
       "Keine Alarmzeichen bisher",
       "Typische Refluxsymptomatik"
     ],
@@ -705,11 +705,11 @@
       "Nehmen Sie die Triptane fruhzeitig ein?"
     ],
     "redFlags": [
-      "Haufige Migraneattacken (uber 4/Monat) mit Prophylaxebedarf",
-      "Aura als Risikofaktor fur Schlaganfall (v. a. bei Raucherinnen + Pilleneinnahme)"
+      "Haufige Migraneattacken (über 4/Monat) mit Prophylaxebedarf",
+      "Aura als Risikofaktor für Schlaganfall (v. a. bei Raucherinnen + Pilleneinnahme)"
     ],
     "usefulPhrases": [
-      "Migrane ist eine neurologische Erkrankung, bei der das Gehirn uberempfindlich auf Reize reagiert.",
+      "Migrane ist eine neurologische Erkrankung, bei der das Gehirn überempfindlich auf Reize reagiert.",
       "Es gibt vorbeugende Behandlungen, wenn die Anfalle zu haufig sind."
     ],
     "doctorToDoctorSummary": "34-jahrige Patientin mit bekannter Migrane mit Aura, 4 Anfalle/Monat. Gutes Ansprechen auf Triptane, aber noch keine Prophylaxe. Beratung zu Prophylaxeoptionen (Betablocker, Topiramat) und Trigermanagement empfohlen.",
@@ -736,7 +736,7 @@
       "age": "52",
       "gender": "mannlich",
       "chiefComplaint": "Akute starke Ruckenschmerzen mit Ausstrahlung ins rechte Bein",
-      "history": "Beim Bücken stechender Schmerz im unteren Rucken. Ausstrahlung uber das Gesass in den rechten Oberschenkel bis in den Fuß. Kribbeln im rechten Fuß. Keine Taubheit. Keine Inkontinenz.",
+      "history": "Beim Bücken stechender Schmerz im unteren Rucken. Ausstrahlung über das Gesass in den rechten Oberschenkel bis in den Fuß. Kribbeln im rechten Fuß. Keine Taubheit. Keine Inkontinenz.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -792,7 +792,7 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Buroangestellte (Sitzendtatigkeit), 15 kg Ubergewicht, wenig Bewegung"
+      "socialHistory": "Buroangestellte (Sitzendtatigkeit), 15 kg Übergewicht, wenig Bewegung"
     },
     "doctorTasks": [
       "Fragen Sie nach der Dauer und den Auslosern der Schmerzen",
@@ -814,7 +814,7 @@
       "Ihre Wirbelsaule ist in Ordnung. Die Schmerzen kommen von verspannten Muskeln und mangelnder Bewegung.",
       "Das Beste, was Sie tun konnen, ist tagliche Bewegung und Ruckenubungen."
     ],
-    "doctorToDoctorSummary": "47-jahrige Patientin mit chronischen, nicht-radikularen LWS-Schmerzen. Bildgebung unauffallig. V. a. unspezifischen chronischen Ruckenschmerz bei Bewegungsmangel und Ubergewicht. Therapie: Aktivierung, Physiotherapie, Gewichtsreduktion.",
+    "doctorToDoctorSummary": "47-jahrige Patientin mit chronischen, nicht-radikularen LWS-Schmerzen. Bildgebung unauffallig. V. a. unspezifischen chronischen Ruckenschmerz bei Bewegungsmangel und Übergewicht. Therapie: Aktivierung, Physiotherapie, Gewichtsreduktion.",
     "scoringRubric": {
       "historyTaking": "Schmerzchronifizierung und biopsychosoziale Faktoren",
       "redFlags": "Neurologische Ausfalle, Cauda-equina, Tumoranamnese",
@@ -945,12 +945,12 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Rentner, fruher Schichtarbeiter"
+      "socialHistory": "Rentner, früher Schichtarbeiter"
     },
     "doctorTasks": [
       "Fragen Sie nach Beginn, Dauer und Ausloser des Herzrasens",
       "Fragen Sie nach Begleitsymptomen",
-      "Erfragen Sie Risikofaktoren fur Rhythmusstorungen",
+      "Erfragen Sie Risikofaktoren für Rhythmusstorungen",
       "Erklaren Sie den Verdacht auf Vorhofflimmern",
       "Besprechen Sie die nachsten diagnostischen Schritte"
     ],
@@ -967,7 +967,7 @@
       "Ihr Herz schlagt im Moment zu schnell und unregelmasig.",
       "Wir mussen das Herz zunachst verlangsamen und dann den Rhythmus wiederherstellen."
     ],
-    "doctorToDoctorSummary": "62-jahriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Uberleitung. Keine hamodynamische Instabilitat. Geplante Freqünzkontrolle und Echokardiographie.",
+    "doctorToDoctorSummary": "62-jahriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Überleitung. Keine hamodynamische Instabilitat. Geplante Freqünzkontrolle und Echokardiographie.",
     "scoringRubric": {
       "historyTaking": "Palpitationen, Dauer, Ausloser",
       "redFlags": "Hamodynamische Instabilitat, Synkope, Brustschmerz",
@@ -1062,7 +1062,7 @@
       "Haben Sie vor der Reise Impfungen bekommen?"
     ],
     "redFlags": [
-      "Anhaltender Durchfall nach Tropenreise uber 5 Tage",
+      "Anhaltender Durchfall nach Tropenreise über 5 Tage",
       "Ausschluss einer parasitaren Infektion notwendig"
     ],
     "usefulPhrases": [
@@ -1298,12 +1298,12 @@
       "age": "52",
       "gender": "mannlich",
       "chiefComplaint": "Geschwollenes, rotes und heises Knie seit 2 Tagen",
-      "history": "Seit 2 Tagen schmerzhafte Schwellung des rechten Knies. Das Knie ist rot, uberwarmt und beweglichkeitseingeschrankt. Kein Fieber. Kein vorangegangenes Trauma.",
+      "history": "Seit 2 Tagen schmerzhafte Schwellung des rechten Knies. Das Knie ist rot, überwarmt und beweglichkeitseingeschrankt. Kein Fieber. Kein vorangegangenes Trauma.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Handwerker, Ubergewicht"
+      "socialHistory": "Handwerker, Übergewicht"
     },
     "doctorTasks": [
       "Fragen Sie nach dem Beginn und der Kinetik der Schwellung",
@@ -1350,7 +1350,7 @@
       "age": "48",
       "gender": "weiblich",
       "chiefComplaint": "Seit Wochen zunehmende Gelenkschmerzen und Morgensteifigkeit",
-      "history": "Seit Wochen zunehmende Schmerzen in den Handgrundgelenken, Fingergelenken beidseits. Morgensteifigkeit uber 1 Stunde. Kraftlosigkeit in den Handen. Bekannte rheumatoide Arthritis seit 5 Jahren.",
+      "history": "Seit Wochen zunehmende Schmerzen in den Handgrundgelenken, Fingergelenken beidseits. Morgensteifigkeit über 1 Stunde. Kraftlosigkeit in den Handen. Bekannte rheumatoide Arthritis seit 5 Jahren.",
       "medications": "Methotrexat 15 mg/Woche, Folsäure, gelegentlich Ibuprofen",
       "allergies": "Keine",
       "pastHistory": "Rheumatoide Arthritis seit 5 Jahren",
@@ -1401,7 +1401,7 @@
       "age": "42",
       "gender": "weiblich",
       "chiefComplaint": "Seit 2 Wochen Fieber bis 39 Grad, Nachtschweiss",
-      "history": "Seit 2 Wochen Fieber bis 39 Grad, starker Nachtschweiss, Mudigkeit, Gewichtsverlust 3 kg. Kein Husten, kein Durchfall. Kein spezifischer Infektfokus.",
+      "history": "Seit 2 Wochen Fieber bis 39 Grad, starker Nachtschweiss, Müdigkeit, Gewichtsverlust 3 kg. Kein Husten, kein Durchfall. Kein spezifischer Infektfokus.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -1426,7 +1426,7 @@
       "Breites Differenzialspektrum"
     ],
     "usefulPhrases": [
-      "Fieber uber mehrere Wochen ohne erkennbare Ursache muss systematisch abgeklart werden.",
+      "Fieber über mehrere Wochen ohne erkennbare Ursache muss systematisch abgeklart werden.",
       "Wir beginnen mit Blutuntersuchungen und Bildgebung."
     ],
     "doctorToDoctorSummary": "42-jahrige Patientin mit Fieber unklarer Genese seit 2 Wochen, B-Symptomatik. Ausschluss von Infektionen, Autoimmunerkrankungen und Malignomen. Basisdiagnostik: Blutkulturen, Labor, Rontgen-Thorax, Abdomensonographie.",
@@ -1637,7 +1637,7 @@
     "doctorToDoctorSummary": "35-jahrige Patientin mit Palpitationen, Gefuhl von Herzaussetzern. Keine Begleitsymptome. V. a. benigne ventrikulare oder supraventrikulare Extrasystolen. Langzeit-EKG zur Quantifizierung und Beruhigung.",
     "scoringRubric": {
       "historyTaking": "Palpitationen, Ausloser, Angstdruck",
-      "redFlags": "Gehaufte Symptome, Synkope, positive Familienanamnese fur plotzlichen Herztod",
+      "redFlags": "Gehaufte Symptome, Synkope, positive Familienanamnese für plotzlichen Herztod",
       "patientLanguage": "Harmlose Extrasystolen erklaren",
       "structure": "Symptome -> EKG -> Beruhigung",
       "medicalLogic": "Benigne Extrasystolen vs Arrhythmie",
@@ -1663,7 +1663,7 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Buroangestellter, Ubergewicht, 2 Kaffee/Tag, wenig Bewegung"
+      "socialHistory": "Buroangestellter, Übergewicht, 2 Kaffee/Tag, wenig Bewegung"
     },
     "doctorTasks": [
       "Fragen Sie nach der Dauer und dem Charakter des Hustens",
@@ -1679,16 +1679,16 @@
     ],
     "redFlags": [
       "Husten >8 Wochen ohne Infekt",
-      "Reflux als haufige Ursache fur chronischen Husten"
+      "Reflux als haufige Ursache für chronischen Husten"
     ],
     "usefulPhrases": [
       "Chronischer Husten kann durch zuruckfließenden Magensaft verursacht werden.",
       "Oft ist ein Therapieversuch mit Magensaureblockern hilfreich."
     ],
-    "doctorToDoctorSummary": "49-jahriger Patient mit chronischem trockenem Husten seit Wochen, Refluxsymptomatik. Nichtraucher. V. a. refluxbedingten Husten (LPR). Therapieversuch mit PPI fur 8 Wochen.",
+    "doctorToDoctorSummary": "49-jahriger Patient mit chronischem trockenem Husten seit Wochen, Refluxsymptomatik. Nichtraucher. V. a. refluxbedingten Husten (LPR). Therapieversuch mit PPI für 8 Wochen.",
     "scoringRubric": {
       "historyTaking": "Hustencharakter, Refluxsymptome, Allergie",
-      "redFlags": "Hämoptysen, Gewichtsverlust, Heiserkeit uber Wochen",
+      "redFlags": "Hämoptysen, Gewichtsverlust, Heiserkeit über Wochen",
       "patientLanguage": "Reflux-Husten-Mechanismus erklaren",
       "structure": "Husten -> Reflux -> Therapieversuch",
       "medicalLogic": "Chronischer Husten: Reflux, Asthma, Post-Nasal-Drip",
@@ -1760,12 +1760,12 @@
       "age": "55",
       "gender": "mannlich",
       "chiefComplaint": "Gewichtsverlust, Durst, haufiges Wasserlassen",
-      "history": "Seit Wochen verstarkter Durst, haufiges Wasserlassen (auch nachts), Mudigkeit, 5 kg Gewichtsverlust in 2 Monaten. Keine Wundheilungsstorungen. Bislang kein Arztbesuch.",
+      "history": "Seit Wochen verstarkter Durst, haufiges Wasserlassen (auch nachts), Müdigkeit, 5 kg Gewichtsverlust in 2 Monaten. Keine Wundheilungsstorungen. Bislang kein Arztbesuch.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Diabetes bei beiden Eltern",
-      "socialHistory": "Bauunternehmer, ubergewichtich, wenig Bewegung, ungesunde Ernahrung"
+      "socialHistory": "Bauunternehmer, übergewichtich, wenig Bewegung, ungesunde Ernahrung"
     },
     "doctorTasks": [
       "Fragen Sie nach den klassischen Diabetes-Symptomen",
@@ -1783,7 +1783,7 @@
     "redFlags": [
       "Klassische Symptome (Polydipsie, Polyurie, Gewichtsverlust)",
       "Starke positive Familienanamnese",
-      "Ubergewicht als Risikofaktor"
+      "Übergewicht als Risikofaktor"
     ],
     "usefulPhrases": [
       "Ihre Symptome passen zu einem Diabetes mellitus.",
@@ -1833,7 +1833,7 @@
       "Haben Sie Ihre Medikamente genommen?"
     ],
     "redFlags": [
-      "Blutdruck deutlich uber 180/120",
+      "Blutdruck deutlich über 180/120",
       "Medikamentenadharenez als Ursache",
       "Hypertensive Notfall mit Endorganschaden? (Sehstorung, Thoraxschmerz)"
     ],
@@ -1939,12 +1939,12 @@
     "redFlags": [
       "Bewusstlosigkeit nach Schadeltrauma",
       "Marcumar-Einnahme (hoheres Blutungsrisiko)",
-      "Alter uber 65"
+      "Alter über 65"
     ],
     "usefulPhrases": [
       "Da Sie Blutverdunner nehmen und kurz bewusstlos waren, mussen wir ein CT vom Kopf machen."
     ],
-    "doctorToDoctorSummary": "68-jahriger Patient unter Marcumar mit Schadeltrauma und kurzer Bewusstlosigkeit. V. a. intrakranielle Blutung. CCT veranlasst. Stationare Uberwachung bei Marcumar-Patienten.",
+    "doctorToDoctorSummary": "68-jahriger Patient unter Marcumar mit Schadeltrauma und kurzer Bewusstlosigkeit. V. a. intrakranielle Blutung. CCT veranlasst. Stationare Überwachung bei Marcumar-Patienten.",
     "scoringRubric": {
       "historyTaking": "Trauma, Bewusstlosigkeit, Blutverdunner",
       "redFlags": "Antikoagulation, Bewusstlosigkeit, fokale Ausfalle",
@@ -1995,7 +1995,7 @@
       "Bei einem Sturz auf die Hand ist ein Bruch des Handgelenks haufig.",
       "Wir machen ein Rontgen zur Sicherheit."
     ],
-    "doctorToDoctorSummary": "45-jahrige Patientin mit Sturz auf das rechte Handgelenk. Schwellung und Druckschmerz uber dem distalen Radius. V. a. distale Radiusfraktur. Rontgen veranlasst.",
+    "doctorToDoctorSummary": "45-jahrige Patientin mit Sturz auf das rechte Handgelenk. Schwellung und Druckschmerz über dem distalen Radius. V. a. distale Radiusfraktur. Rontgen veranlasst.",
     "scoringRubric": {
       "historyTaking": "Sturzmechanismus, Schmerz, Funktion",
       "redFlags": "Offene Fraktur, Durchblutungsstorung, Nervenlasion",
@@ -2035,7 +2035,7 @@
     ],
     "mustAsk": [
       "Konnen Sie auftreten?",
-      "Hatten Sie schon fruher Banderrisse?",
+      "Hatten Sie schon früher Banderrisse?",
       "Haben Sie ein Knacksen oder Knirschen gehort?"
     ],
     "redFlags": [
@@ -2043,7 +2043,7 @@
       "Distorsion vs Ruptur, Ottawa-Ankle-Regeln"
     ],
     "usefulPhrases": [
-      "Das Umknicken fuhrt oft zu einer Uberdehnung oder einem Riss der Aussenbander.",
+      "Das Umknicken fuhrt oft zu einer Überdehnung oder einem Riss der Aussenbander.",
       "Wir machen ein Rontgen, um einen Bruch auszuschliesen."
     ],
     "doctorToDoctorSummary": "23-jahriger Patient mit Supinationstrauma des linken OSG. Schwellung und Druckschmerz lateral. Keine sichere Fraktur nach Ottawa-Regeln. V. a. laterale Banddistorsion. Ruhigstellung und Physiotherapie.",
@@ -2131,7 +2131,7 @@
       "Fragen Sie nach der Ubelkeit und dem Erbrechen",
       "Fragen Sie nach dem letzten Essen und Trinken",
       "Fragen Sie nach der Schmerzmedikation",
-      "Erklaren Sie die haufigste Ursache fur postoperative Ubelkeit",
+      "Erklaren Sie die haufigste Ursache für postoperative Ubelkeit",
       "Besprechen Sie die antiemetische Therapie"
     ],
     "mustAsk": [
@@ -2222,7 +2222,7 @@
       "age": "38",
       "gender": "mannlich",
       "chiefComplaint": "Seit Wochen niedergeschlagen, antriebslos, schlaflos",
-      "history": "Seit 6 Wochen gedruckte Stimmung, Interessenverlust, Antriebslosigkeit, Fruherwachen. Fuhlt sich uberfordert mit der Arbeit. Keine suizidalen Gedanken. Hat sich zuruckgezogen.",
+      "history": "Seit 6 Wochen gedruckte Stimmung, Interessenverlust, Antriebslosigkeit, Fruherwachen. Fuhlt sich überfordert mit der Arbeit. Keine suizidalen Gedanken. Hat sich zuruckgezogen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2242,7 +2242,7 @@
       "Wie ist Ihr Schlaf?"
     ],
     "redFlags": [
-      "Anhaltende depressive Symptomatik uber Wochen mit funktioneller Beeintrachtigung",
+      "Anhaltende depressive Symptomatik über Wochen mit funktioneller Beeintrachtigung",
       "Suizidalitat muss immer erfragt werden"
     ],
     "usefulPhrases": [
@@ -2344,7 +2344,7 @@
     ],
     "redFlags": [
       "Alter + Osteoporose = hoheres Frakturrisiko",
-      "Atemabhangige Schmerzen typisch fur Rippenfraktur"
+      "Atemabhangige Schmerzen typisch für Rippenfraktur"
     ],
     "usefulPhrases": [
       "Die Schmerzen beim Atmen konnen von einem Rippenbruch kommen.",
@@ -2368,13 +2368,13 @@
   },
   {
     "id": "fsp_c_047",
-    "title": "Mudigkeit bei Eisenmangel",
+    "title": "Müdigkeit bei Eisenmangel",
     "setting": "clinic",
     "patientRole": {
       "age": "33",
       "gender": "weiblich",
       "chiefComplaint": "Seit Monaten mud, blass, kurzatmig bei Belastung",
-      "history": "Seit Monaten zunehmende Mudigkeit, blasse Hautfarbe, Kurzatmigkeit beim Treppensteigen. Starke Regelblutungen. Nagel bruchig. Kalte Hande und Fuse.",
+      "history": "Seit Monaten zunehmende Müdigkeit, blasse Hautfarbe, Kurzatmigkeit beim Treppensteigen. Starke Regelblutungen. Nagel bruchig. Kalte Hande und Fuse.",
       "medications": "Eisen pausiert wegen Magenbeschwerden, kein regelmassiges Medikament",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2385,7 +2385,7 @@
       "Fragen Sie nach der genauen Symptomatik",
       "Fragen Sie nach der Menstruationsanamnese",
       "Fragen Sie nach Blutverlust",
-      "Erklaren Sie den Zusammenhang zwischen Eisenmangel und Mudigkeit",
+      "Erklaren Sie den Zusammenhang zwischen Eisenmangel und Müdigkeit",
       "Besprechen Sie die Eisensubstitution"
     ],
     "mustAsk": [
@@ -2401,17 +2401,17 @@
       "Ihre Müdigkeit kommt sehr wahrscheinlich von Eisenmangel.",
       "Wir messen das Blutbild und das Eisen und beginnen dann eine Eisentherapie."
     ],
-    "doctorToDoctorSummary": "33-jahrige Patientin mit Mudigkeit, Blasse, Belastungsdyspnö bei Hypermenorrhö. V. a. Eisenmangelanamie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynakologische Abklarung der Hypermenorrhö.",
+    "doctorToDoctorSummary": "33-jahrige Patientin mit Müdigkeit, Blasse, Belastungsdyspnö bei Hypermenorrhö. V. a. Eisenmangelanamie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynakologische Abklarung der Hypermenorrhö.",
     "scoringRubric": {
-      "historyTaking": "Mudigkeit, Blutungsanamnese, GI-Blutverlust",
+      "historyTaking": "Müdigkeit, Blutungsanamnese, GI-Blutverlust",
       "redFlags": "Schwere Anamie, Malignonverdacht, GI-Blutung",
       "patientLanguage": "Eisenmangel und Hamoglobin erklaren",
-      "structure": "Mudigkeit -> Menstruation -> Eisenmangel -> Therapie",
+      "structure": "Müdigkeit -> Menstruation -> Eisenmangel -> Therapie",
       "medicalLogic": "Eisenmangelanamie: Ursachen, Diagnostik, Therapie",
       "germanAccuracy": "Eisenmangel, Anamie, Ferritin, Hypermenorrhö korrekt"
     },
     "tags": [
-      "mudigkeit",
+      "müdigkeit",
       "anamie",
       "eisenmangel",
       "menstruation"
@@ -2499,7 +2499,7 @@
       "Fieber als Zeichen einer Infektion"
     ],
     "usefulPhrases": [
-      "Die Schmerzen sind typisch fur einen Nierenstein, der im Hamleiter wandert.",
+      "Die Schmerzen sind typisch für einen Nierenstein, der im Hamleiter wandert.",
       "Wir machen eine Ultraschalluntersuchung."
     ],
     "doctorToDoctorSummary": "41-jahriger Patient mit Nierenkolik rechts, Hamaturie. V. a. Ureterstein. Sonographie und Urinuntersuchung veranlasst.",
@@ -2596,7 +2596,7 @@
     ],
     "redFlags": [
       "NSAR-Einnahme + Oberbauchschmerzen",
-      "Risiko fur Ulkusblutung"
+      "Risiko für Ulkusblutung"
     ],
     "usefulPhrases": [
       "Ibuprofen kann die Magenschleimhaut schadigen.",
@@ -2791,7 +2791,7 @@
     ],
     "mustAsk": [
       "Hatten Sie Gallensteine?",
-      "Hatten Sie fruher schon Pankreatitis?"
+      "Hatten Sie früher schon Pankreatitis?"
     ],
     "redFlags": [
       "Gallensteine + fettreiche Mahlzeit = Pankreatitis-Risiko"
@@ -2922,11 +2922,11 @@
     "patientRole": {
       "age": "52",
       "gender": "mannlich",
-      "chiefComplaint": "Mudigkeit tagsuber, lautes Schnarchen",
-      "history": "Seit Jahren starke Mudigkeit tagsuber, schlaft bei der Arbeit ein (Beifahrer). Schnarcht sehr laut, die Frau berichtet von Atemaussetzern nachts. Kopfschmerzen morgens.",
+      "chiefComplaint": "Müdigkeit tagsuber, lautes Schnarchen",
+      "history": "Seit Jahren starke Müdigkeit tagsuber, schlaft bei der Arbeit ein (Beifahrer). Schnarcht sehr laut, die Frau berichtet von Atemaussetzern nachts. Kopfschmerzen morgens.",
       "medications": "Keine",
       "allergies": "Keine",
-      "pastHistory": "Ubergewicht",
+      "pastHistory": "Übergewicht",
       "familyHistory": "Keine",
       "socialHistory": "LKW-Fahrer"
     },
@@ -2943,7 +2943,7 @@
       "Schlafen Sie tagsuber ein?"
     ],
     "redFlags": [
-      "Schlafapnö mit Einschlafneigung am Steür (Berufskraftfahrer!)",
+      "Schlafapnö mit Einschlafneigung am Steuer (Berufskraftfahrer!)",
       "Kardiovaskulare Folgeerkrankungen"
     ],
     "usefulPhrases": [
@@ -2961,7 +2961,7 @@
     },
     "tags": [
       "schlafapnö",
-      "mudigkeit",
+      "müdigkeit",
       "schnarchen",
       "beruf"
     ]
@@ -2974,7 +2974,7 @@
       "age": "5",
       "gender": "Kind",
       "chiefComplaint": "Husten und Fieber seit 3 Tagen",
-      "history": "Seit 3 Tagen Husten, Fieber bis 38.8 Grad. Leichte Atemnot? (Eltern unsicher). Trinkt normal. Hatte schon fruher 'Asthmaanfalle' bei schweren Infekten.",
+      "history": "Seit 3 Tagen Husten, Fieber bis 38.8 Grad. Leichte Atemnot? (Eltern unsicher). Trinkt normal. Hatte schon früher 'Asthmaanfalle' bei schweren Infekten.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3167,13 +3167,13 @@
   },
   {
     "id": "fsp_c_063",
-    "title": "Sodbrennen und Reflux bei Ubergewicht",
+    "title": "Sodbrennen und Reflux bei Übergewicht",
     "setting": "clinic",
     "patientRole": {
       "age": "44",
       "gender": "mannlich",
       "chiefComplaint": "Saures Aufstossen und Sodbrennen nach dem Essen",
-      "history": "Seit Monaten saures Aufstossen, Sodbrennen besonders nach fettigen Mahlzeiten und im Liegen. Hat 20 kg Ubergewicht. Nimmt gelegentlich Antazida.",
+      "history": "Seit Monaten saures Aufstossen, Sodbrennen besonders nach fettigen Mahlzeiten und im Liegen. Hat 20 kg Übergewicht. Nimmt gelegentlich Antazida.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3183,7 +3183,7 @@
     "doctorTasks": [
       "Fragen Sie nach Refluxsymptomen",
       "Fragen Sie nach Lebensstil",
-      "Erklaren Sie den Zusammenhang mit Ubergewicht",
+      "Erklaren Sie den Zusammenhang mit Übergewicht",
       "Besprechen Sie Lebensstilanderung und PPI"
     ],
     "mustAsk": [
@@ -3195,21 +3195,21 @@
       "Keine Alarmzeichen"
     ],
     "usefulPhrases": [
-      "Ubergewicht erhoht den Druck auf den Magen und begünstigt Reflux.",
+      "Übergewicht erhoht den Druck auf den Magen und begünstigt Reflux.",
       "Neben einer Gewichtsreduktion konnen wir medikamentos helfen."
     ],
     "doctorToDoctorSummary": "Patient mit GERD bei Adipositas. PPI-Therapie und Gewichtsreduktion empfohlen.",
     "scoringRubric": {
-      "historyTaking": "Reflux, Ubergewicht, Ernahrung",
+      "historyTaking": "Reflux, Übergewicht, Ernahrung",
       "redFlags": "Dysphagie, Gewichtsverlust",
-      "patientLanguage": "Reflux und Ubergewicht erklaren",
+      "patientLanguage": "Reflux und Übergewicht erklaren",
       "structure": "Symptome -> Ursache -> Therapie",
       "medicalLogic": "GERD-Management, Gewichtsreduktion",
       "germanAccuracy": "GERD, Reflux, PPI"
     },
     "tags": [
       "reflux",
-      "ubergewicht",
+      "übergewicht",
       "GERD",
       "pravention"
     ]
@@ -3270,7 +3270,7 @@
       "age": "48",
       "gender": "weiblich",
       "chiefComplaint": "Schwindelanfalle mit Ohrensausen",
-      "history": "Seit 2 Jahren immer wieder Schwindelanfalle (Drehschwindel) fur 20-60 Minuten, begleitet von Ohrensausen und Horverlust im rechten Ohr. Ubelkeit, Erbrechen.",
+      "history": "Seit 2 Jahren immer wieder Schwindelanfalle (Drehschwindel) für 20-60 Minuten, begleitet von Ohrensausen und Horverlust im rechten Ohr. Ubelkeit, Erbrechen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3292,7 +3292,7 @@
     ],
     "usefulPhrases": [
       "Ihre Anfalle passen zu Morbus Meniere.",
-      "Wir uberweisen Sie zum HNO-Arzt."
+      "Wir überweisen Sie zum HNO-Arzt."
     ],
     "doctorToDoctorSummary": "Patientin mit Meniere-Symptomatik. HNO-Vorstellung veranlasst. Salzmreduktion und Betahistin erwogen.",
     "scoringRubric": {
@@ -3337,7 +3337,7 @@
     ],
     "redFlags": [
       "Postthrombotisches Syndrom als TVT-Folge",
-      "Risiko fur Ulcus cruris"
+      "Risiko für Ulcus cruris"
     ],
     "usefulPhrases": [
       "Nach einer Thrombose bleibt das Bein haufig zuruck.",

@@ -22,7 +22,7 @@
           "id": "lq2",
           "type": "true-false",
           "question": "Am Mittwochnachmittag ist die Praxis geschlossen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq3",
@@ -44,7 +44,7 @@
     {
       "id": "A1_listen_2",
       "title": "Vorstellung - Patient",
-      "script": "Guten Tag. Ich heiÃŸe Ahmed Hassan. Ich bin 28 Jahre alt und komme aus dem Sudan. Ich wohne in Frankfurt. Ich spreche ein bisschen Deutsch und arbeite in einem Restaurant.",
+      "script": "Guten Tag. Ich heiße Ahmed Hassan. Ich bin 28 Jahre alt und komme aus dem Sudan. Ich wohne in Frankfurt. Ich spreche ein bisschen Deutsch und arbeite in einem Restaurant.",
       "questions": [
         {
           "id": "lq4",
@@ -309,7 +309,7 @@
           "id": "lq_A1_10_2",
           "type": "true-false",
           "question": "Das Cafe bietet auch Waffeln mit Sahne an.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Dazu gibt es frische Waffeln mit Sahne."
         }
       ],
@@ -338,7 +338,7 @@
           "id": "lq_A1_11_2",
           "type": "true-false",
           "question": "Am Nachmittag kann es regnen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Am Nachmittag können Sie Regen."
         }
       ],
@@ -401,7 +401,7 @@
           "id": "lq_A1_13_2",
           "type": "true-false",
           "question": "Der Arzt macht einen Bluttest.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Wir machen zur Sicherheit einen Bluttest."
         }
       ],
@@ -412,19 +412,19 @@
     {
       "lessonId": "A1_lesson_14",
       "title": "Wohnung für den Arztbesuch",
-      "script": "Sprechstundenhilfe: Ihre neue Adresse, bitte? Patient: Ich wohne jetzt in der GöthestraÃŸe 15, Wohnung 4, im zweiten Stock. Sprechstundenhilfe: Und Ihre Telefonnummer? Patient: 0176-12345678.",
+      "script": "Sprechstundenhilfe: Ihre neue Adresse, bitte? Patient: Ich wohne jetzt in der Göthestraße 15, Wohnung 4, im zweiten Stock. Sprechstundenhilfe: Und Ihre Telefonnummer? Patient: 0176-12345678.",
       "questions": [
         {
           "id": "lq_A1_14_1",
           "type": "mcq",
-          "question": "In welcher StraÃŸe wohnt der Patient?",
+          "question": "In welcher Straße wohnt der Patient?",
           "options": [
-            "SchillerstraÃŸe",
-            "GöthestraÃŸe",
+            "Schillerstraße",
+            "Göthestraße",
             "Berliner Allee",
-            "HauptstraÃŸe"
+            "Hauptstraße"
           ],
-          "answer": "GöthestraÃŸe"
+          "answer": "Göthestraße"
         },
         {
           "id": "lq_A1_14_2",
@@ -459,7 +459,7 @@
           "id": "lq_A1_15_2",
           "type": "true-false",
           "question": "Samstags ist die Praxis für Notfälle von 9 bis 12 Uhr geöffnet.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "id": "A1_listen_15",
@@ -488,7 +488,7 @@
           "id": "lq_A1_16_2",
           "type": "true-false",
           "question": "Der Arzt untersucht Herz und Lunge.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ich höre Ihr Herz und Ihre Lunge ab."
         }
       ],
@@ -528,7 +528,7 @@
     {
       "lessonId": "A1_lesson_18",
       "title": "Krankenhausadresse",
-      "script": "Das Städtische Krankenhaus befindet sich in der ParkstraÃŸe 25. Sie erreichen uns mit der Buslinie 14, Haltestelle 'Krankenhaus'. Parkplätze sind hinter dem Gebäude. Die Notaufnahme ist rund um die Uhr geöffnet.",
+      "script": "Das Städtische Krankenhaus befindet sich in der Parkstraße 25. Sie erreichen uns mit der Buslinie 14, Haltestelle 'Krankenhaus'. Parkplätze sind hinter dem Gebäude. Die Notaufnahme ist rund um die Uhr geöffnet.",
       "questions": [
         {
           "id": "lq_A1_18_1",
@@ -562,7 +562,7 @@
         {
           "id": "lq_A1_19_1",
           "type": "mcq",
-          "question": "Wie heisst der Patient?",
+          "question": "Wie heißt der Patient?",
           "options": [
             "Ahmed Fischer",
             "Ahmed Ali",
@@ -597,7 +597,7 @@
           "id": "lq_A1_20_1",
           "type": "true-false",
           "question": "Schwester Maria macht Pause.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq_A1_20_2",
@@ -637,7 +637,7 @@
           "id": "lq_A1_21_2",
           "type": "true-false",
           "question": "Der Patient soll 10 Minuten vor dem Termin kommen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte kommen Sie 10 Minuten vor Ihrem Termin."
         }
       ],
@@ -666,7 +666,7 @@
           "id": "lq_A1_22_2",
           "type": "true-false",
           "question": "Der neue Termin ist am Mittwoch um 14 Uhr.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Passt es am Mittwoch um 14 Uhr?"
         }
       ],
@@ -676,7 +676,7 @@
     },
     {
       "lessonId": "A1_lesson_23",
-      "title": "GeburtstagsgrüÃŸe aus der Praxis",
+      "title": "Geburtstagsgrüße aus der Praxis",
       "script": "Hier ist die Praxis Dr. Schneider mit einer besonderen Nachricht: Wir gratulieren unserem Patienten Herrn Müller herzlich zum 70. Geburtstag! Wir wünschen Ihnen alles Gute, Gesundheit und viel Freude im neuen Lebensjahr.",
       "questions": [
         {
@@ -695,7 +695,7 @@
           "id": "lq_A1_23_2",
           "type": "true-false",
           "question": "Die Praxis wünscht Herrn Müller Gesundheit.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Wir wünschen Ihnen Gesundheit."
         }
       ],
@@ -724,7 +724,7 @@
           "id": "lq_A1_24_2",
           "type": "true-false",
           "question": "Der Patient kann mit Karte zahlen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ja, natürlich."
         }
       ],
@@ -735,13 +735,13 @@
     {
       "lessonId": "A1_lesson_25",
       "title": "Aufklärung vor der Untersuchung",
-      "script": "Schwester: Guten Morgen, Herr Schmidt. Ich kläre Sie über die morgige Untersuchung auf. Bitte kommen Sie nüchtern, das heisst: nichts essen ab 22 Uhr und nichts trinken ab 6 Uhr morgens. Die Untersuchung dauert etwa 30 Minuten.",
+      "script": "Schwester: Guten Morgen, Herr Schmidt. Ich kläre Sie über die morgige Untersuchung auf. Bitte kommen Sie nüchtern, das heißt: nichts essen ab 22 Uhr und nichts trinken ab 6 Uhr morgens. Die Untersuchung dauert etwa 30 Minuten.",
       "questions": [
         {
           "id": "lq_A1_25_1",
           "type": "true-false",
           "question": "Der Patient darf ab 22 Uhr nichts mehr essen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Bitte kommen Sie nüchtern: nichts essen ab 22 Uhr."
         },
         {
@@ -845,7 +845,7 @@
           "id": "lq158",
           "type": "true-false",
           "question": "Die neue Adresse ist Bahnhofstrasse 25.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq159",
@@ -909,7 +909,7 @@
           "id": "lq163",
           "type": "true-false",
           "question": "Der Patient soll die Versicherungskarte mitbringen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A1_lesson_4",
@@ -925,7 +925,7 @@
           "id": "lq164",
           "type": "true-false",
           "question": "Der Termin ist am Mittwoch.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq165",
@@ -964,8 +964,8 @@
         {
           "id": "lq167",
           "type": "true-false",
-          "question": "Der Patient heisst Peter Braun.",
-          "answer": "trü"
+          "question": "Der Patient heißt Peter Braun.",
+          "answer": "true"
         },
         {
           "id": "lq168",
@@ -1023,7 +1023,7 @@
           "id": "lq172",
           "type": "true-false",
           "question": "Der Kunde hat ein Rezept.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A1_lesson_7",
@@ -1039,7 +1039,7 @@
           "id": "lq173",
           "type": "true-false",
           "question": "Der Patient hat Husten und Schnupfen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq174",
@@ -1189,7 +1189,7 @@
           "id": "lq184",
           "type": "true-false",
           "question": "Der Gast bekommt 4 Euro Wechselgeld zurück.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A1_lesson_11",
@@ -1251,7 +1251,7 @@
           "id": "lq188",
           "type": "true-false",
           "question": "Am Morgen regnet es.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq189",
@@ -1355,7 +1355,7 @@
           "id": "lq196",
           "type": "true-false",
           "question": "Lisa soll bis Freitag Bescheid sagen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A1_lesson_15",
@@ -1394,8 +1394,8 @@
         {
           "id": "lq199",
           "type": "true-false",
-          "question": "Die Kursleiterin heisst Frau Fischer.",
-          "answer": "trü"
+          "question": "Die Kursleiterin heißt Frau Fischer.",
+          "answer": "true"
         }
       ],
       "lessonId": "A1_lesson_16",
@@ -1411,7 +1411,7 @@
           "id": "lq200",
           "type": "true-false",
           "question": "Frau Schneider hat Frühschicht.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq201",
@@ -1450,8 +1450,8 @@
         {
           "id": "lq203",
           "type": "true-false",
-          "question": "Der Gast heisst Thomas Wagner.",
-          "answer": "trü"
+          "question": "Der Gast heißt Thomas Wagner.",
+          "answer": "true"
         },
         {
           "id": "lq204",
@@ -1503,7 +1503,7 @@
           "id": "lq207",
           "type": "true-false",
           "question": "Die Bibliothek ist gegenüber vom Museum.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq208",
@@ -1583,7 +1583,7 @@
           "id": "lq213",
           "type": "true-false",
           "question": "Der Unfall ist in der Hauptstrasse 50.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq214",
@@ -1663,7 +1663,7 @@
           "id": "lq219",
           "type": "true-false",
           "question": "Herr Braun soll in Behandlungszimmer 1.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq220",
@@ -1703,7 +1703,7 @@
           "id": "lq222",
           "type": "true-false",
           "question": "Lena arbeitet in einer Apotheke.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq223",
@@ -1743,7 +1743,7 @@
           "id": "lq225",
           "type": "true-false",
           "question": "Tom spielt am Samstag Fussball.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq226",
@@ -1823,7 +1823,7 @@
           "id": "lq12",
           "type": "true-false",
           "question": "Am Abend kann es regnen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_1",
@@ -1850,7 +1850,7 @@
           "id": "lq14",
           "type": "true-false",
           "question": "Der Zug fährt von Gleis 7.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_2",
@@ -2038,7 +2038,7 @@
           "id": "lq414",
           "type": "true-false",
           "question": "Der Termin ist morgen um 10:15 Uhr.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq415",
@@ -2077,7 +2077,7 @@
           "id": "lq417",
           "type": "true-false",
           "question": "Im Süden und in der Mitte ist es sonnig und 22 Grad.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq418",
@@ -2116,7 +2116,7 @@
           "id": "lq420",
           "type": "true-false",
           "question": "Der Bus fährt eine Umleitung über die Ringstrasse.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq421",
@@ -2207,7 +2207,7 @@
           "id": "lq427",
           "type": "true-false",
           "question": "Das Cafe ist neben einer Buchhandlung.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_6",
@@ -2286,7 +2286,7 @@
           "id": "lq433",
           "type": "true-false",
           "question": "Der Expressversand kommt in zwei Tagen an.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_7",
@@ -2393,7 +2393,7 @@
           "id": "lq441",
           "type": "true-false",
           "question": "Der Kunde arbeitet als Ingenieur.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq442",
@@ -2534,7 +2534,7 @@
     {
       "id": "A2_listen_21",
       "title": "Familie vorstellen",
-      "script": "Hallo, ich heisse Lena und bin 25 Jahre alt. Ich möchte Ihnen meine Familie vorstellen. Meine Mutter heisst Brigitte, sie ist Ärztin und arbeitet in einem Krankenhaus. Mein Vater heisst Klaus, er ist Rentner und geht oft angeln. Ich habe einen Bruder, er ist fünf Jahre älter als ich und wohnt in München. Wir sehen uns leider nicht oft, aber wir telefonieren regulär. Am Wochenende treffe ich mich meistens mit meiner besten Freundin Julia.",
+      "script": "Hallo, ich heisse Lena und bin 25 Jahre alt. Ich möchte Ihnen meine Familie vorstellen. Meine Mutter heißt Brigitte, sie ist Ärztin und arbeitet in einem Krankenhaus. Mein Vater heißt Klaus, er ist Rentner und geht oft angeln. Ich habe einen Bruder, er ist fünf Jahre älter als ich und wohnt in München. Wir sehen uns leider nicht oft, aber wir telefonieren regulär. Am Wochenende treffe ich mich meistens mit meiner besten Freundin Julia.",
       "questions": [
         {
           "id": "lq452",
@@ -2552,7 +2552,7 @@
           "id": "lq453",
           "type": "true-false",
           "question": "Lenas Bruder wohnt in München.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq454",
@@ -2591,7 +2591,7 @@
           "id": "lq456",
           "type": "true-false",
           "question": "Der Kunde soll den Druckkopf reinigen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq457",
@@ -2670,7 +2670,7 @@
           "id": "lq462",
           "type": "true-false",
           "question": "Der Film dauert 2 Stunden und 20 Minuten.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq463",
@@ -2749,7 +2749,7 @@
           "id": "lq468",
           "type": "true-false",
           "question": "Der Kellner bringt eine neue Suppe.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq469",
@@ -2895,7 +2895,7 @@
         {
           "id": "lq2710",
           "type": "mcq",
-          "question": "Wie heisst das Buch?",
+          "question": "Wie heißt das Buch?",
           "options": [
             "Der Bienenzüchter",
             "Die Geschichte der Bienen",
@@ -3028,7 +3028,7 @@
           "id": "lq2720",
           "type": "true-false",
           "question": "Man sollte Tickets für die Sagrada Familia vorher online kaufen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2721",
@@ -3067,7 +3067,7 @@
           "id": "lq2723",
           "type": "true-false",
           "question": "Der erste Monat ist kostenlos.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2724",
@@ -3106,7 +3106,7 @@
           "id": "lq2726",
           "type": "true-false",
           "question": "Das Handbuch ist auf dem Desktop.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2727",
@@ -3185,7 +3185,7 @@
           "id": "lq2732",
           "type": "true-false",
           "question": "Die Person trinkt mindestens zwei Liter Wasser am Tag.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2733",
@@ -3344,7 +3344,7 @@
           "id": "lq2744",
           "type": "true-false",
           "question": "Der Besucher hat einen Termin um 10 Uhr.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2745",
@@ -3383,7 +3383,7 @@
           "id": "lq2747",
           "type": "true-false",
           "question": "Die Person geht zweimal pro Woche ins Fitnessstudio.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2748",
@@ -3434,7 +3434,7 @@
           "id": "lq2751",
           "type": "true-false",
           "question": "Der Flug startet um 15:30 Uhr.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "lessonId": "A2_lesson_22",
@@ -3541,7 +3541,7 @@
           "id": "lq2759",
           "type": "true-false",
           "question": "Der Zahnarzt betaubt die Stelle mit einer Spritze.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2760",
@@ -3620,7 +3620,7 @@
           "id": "lq2765",
           "type": "true-false",
           "question": "Der Fernseher kostet 699 Euro.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2766",
@@ -3699,7 +3699,7 @@
           "id": "lq2771",
           "type": "true-false",
           "question": "Das Geschenk ist ein Buch über deutsche Geschichte.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "lq2772",
@@ -3855,7 +3855,7 @@
           "id": "lq_B1_4_3",
           "type": "true-false",
           "question": "Ab nächstem Monat gibt es auch Sonntagsdienst.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Chefin hat gesagt, dass es ab nächstem Monat Sonntagsdienst gibt."
         }
       ],
@@ -3939,7 +3939,7 @@
           "id": "lq_B1_6_3",
           "type": "true-false",
           "question": "Der IC 876 fährt jetzt von Gleis 7 ab.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Zug fährt heute stattdessen ab Gleis 7."
         }
       ],
@@ -4017,7 +4017,7 @@
           "id": "lq_B1_8_3",
           "type": "true-false",
           "question": "Seit 2022 ist die automatische Verlängerung nur noch für maximal ein Jahr erlaubt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Seit 2022 gilt: Die automatische Verlängerung ist nur noch für maximal ein Jahr erlaubt."
         }
       ],
@@ -4046,7 +4046,7 @@
           "id": "lq_B1_9_2",
           "type": "true-false",
           "question": "Herr Schuster möchte mehr Verantwortung übernehmen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Er möchte mehr Verantwortung übernehmen, besonders in der Patientenverwaltung."
         },
         {
@@ -4075,7 +4075,7 @@
           "id": "lq_B1_10_1",
           "type": "true-false",
           "question": "Der Haupteingang wird wegen Umbau geschlossen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Eingangsbereich wird umgebaut, bitte den Seiteneingang benutzen."
         },
         {
@@ -4124,7 +4124,7 @@
           "id": "lq_B1_11_2",
           "type": "true-false",
           "question": "Die Rückenschmerzen kommen wahrscheinlich von zu langem Sitzen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Arzt sagt, zu langes Sitzen ohne Bewegung ist wahrscheinlich das Problem."
         },
         {
@@ -4293,7 +4293,7 @@
           "id": "lq_B1_15_3",
           "type": "true-false",
           "question": "Die Anmeldung ist am Empfang bis morgen möglich.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Man kann sich bis morgen in die Liste am Empfang eintragen."
         }
       ],
@@ -4351,7 +4351,7 @@
           "id": "lq_B1_17_1",
           "type": "true-false",
           "question": "Die alte App wird ab dem 1. September abgeschaltet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ab dem 1. September wird die alte Plattform abgeschaltet."
         },
         {
@@ -4387,7 +4387,7 @@
           "id": "lq_B1_18_1",
           "type": "true-false",
           "question": "Herr Dr. Weber sagt, Elektroautos sind grundsätzlich umweltfreundlich.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Herr Dr. Weber sagt, grundsätzlich ja. Über die gesamte Nutzungsdaür sind sie sauberer."
         },
         {
@@ -4518,7 +4518,7 @@
             "Die Geburtsurkunde",
             "Die Wohnungsgeberbestätigung",
             "Der Mietvertrag",
-            "Die Steür-ID"
+            "Die Steuer-ID"
           ],
           "answer": "Die Wohnungsgeberbestätigung",
           "explanation": "Die Wohnungsgeberbestätigung vom Vermieter wird benötigt."
@@ -4605,7 +4605,7 @@
           "id": "lq_B1_23_3",
           "type": "true-false",
           "question": "KI-Entscheidungen sollten immer von Menschen überprüft werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "KI-Entscheidungen müssen immer von Menschen überprüft werden, besonders in der Medizin."
         }
       ],
@@ -4663,7 +4663,7 @@
           "id": "lq_B1_25_1",
           "type": "true-false",
           "question": "Herr Müller war drei Wochen in Italien im Urlaub.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Herr Müller war drei Wochen in Italien in der Toskana."
         },
         {
@@ -4699,7 +4699,7 @@
           "id": "lq_B1_26_1",
           "type": "true-false",
           "question": "Der Eintritt ist heute für alle Besucher unter 18 Jahren kostenlos.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Eintritt ist heute für alle Besucher unter 18 Jahren kostenlos."
         },
         {
@@ -4719,7 +4719,7 @@
           "id": "lq_B1_26_3",
           "type": "true-false",
           "question": "Die Sonderführung kostet 3 Euro extra.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Führung kostet 3 Euro zusätzlich zum Eintritt."
         }
       ],
@@ -4748,7 +4748,7 @@
           "id": "lq_B1_27_2",
           "type": "true-false",
           "question": "Das empfohlene Buch handelt von einem jungen Hacker.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Roman 'Cryptos' handelt von einem jungen Hacker."
         },
         {
@@ -4777,7 +4777,7 @@
           "id": "lq_B1_28_1",
           "type": "true-false",
           "question": "Die Arbeitszeit muss ab Oktober elektronisch erfasst werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Ab dem 1. Oktober müssen Arbeitgeber die Arbeitszeit elektronisch erfassen."
         },
         {
@@ -4797,7 +4797,7 @@
           "id": "lq_B1_28_3",
           "type": "true-false",
           "question": "Leitende Angestellte sind von der Regelung ausgenommen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Gesetz betrifft alle Branchen mit Ausnahme von leitenden Angestellten."
         }
       ],
@@ -4813,7 +4813,7 @@
           "id": "lq_B1_29_1",
           "type": "true-false",
           "question": "Die Wohnung hat zwei Zimmer, einen Balkon und ein kleines Bad.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Wohnung hat zwei Zimmer, Balkon und ein kleines Bad."
         },
         {
@@ -4833,7 +4833,7 @@
           "id": "lq_B1_29_3",
           "type": "true-false",
           "question": "Der Freund kann erst ab 14 Uhr beim Umzug helfen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Freund hat ab 14 Uhr Feierabend und kann dann helfen."
         }
       ],
@@ -4869,7 +4869,7 @@
           "id": "lq_B1_30_3",
           "type": "true-false",
           "question": "Gutscheine für Essen und Getränke gibt es am Service-Schalter.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Gutscheine erhalten die Passagiere am Service-Schalter in der Nähe von Gate C."
         }
       ],
@@ -4885,7 +4885,7 @@
           "id": "lq_B1_31_1",
           "type": "true-false",
           "question": "Der Ernährungskurs wird von der Krankenkasse bezahlt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Krankenkasse bezahlt den Ernährungskurs."
         },
         {
@@ -4947,7 +4947,7 @@
           "id": "lq_B1_32_3",
           "type": "true-false",
           "question": "Man kann ohne Termin in die Sprechstunde kommen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Sprechstunde ist offen, man kann ohne Termin vorbeikommen."
         }
       ],
@@ -5005,7 +5005,7 @@
           "id": "lq_B1_34_1",
           "type": "true-false",
           "question": "An Heiligabend haben die Kundenzentren nur bis 12:00 Uhr geöffnet.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "An Heiligabend und Silvester haben die Kundenzentren von 8:00 bis 12:00 Uhr geöffnet."
         },
         {
@@ -5054,7 +5054,7 @@
           "id": "lq_B1_35_2",
           "type": "true-false",
           "question": "Überstunden müssen ab dem 1. Juni vorher genehmigt werden.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die neue Regelung gilt ab dem 1. Juni."
         },
         {
@@ -5133,7 +5133,7 @@
           "id": "lq_B1_37_3",
           "type": "true-false",
           "question": "Die Hauptdarstellerin wird gelobt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Schauspieler sind gut, besonders die Hauptdarstellerin."
         }
       ],
@@ -5185,7 +5185,7 @@
           "id": "lq_B1_39_1",
           "type": "true-false",
           "question": "Das WG-Zimmer kostet 380 Euro inklusive Nebenkosten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Zimmer kostet 380 Euro warm (inklusive Nebenkosten)."
         },
         {
@@ -5227,7 +5227,7 @@
           "id": "lq_B1_40_1",
           "type": "true-false",
           "question": "Große Taschen und Rucksäcke sind im Stadion nicht erlaubt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Mitbringen von großen Taschen und Rucksäcken ist aus Sicherheitsgründen nicht erlaubt."
         },
         {
@@ -5283,7 +5283,7 @@
           "id": "lq_B1_41_3",
           "type": "true-false",
           "question": "Frau Fischer hilft auch bei der Vermittlung von Tieren.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie begleitet das Kennenlernen bei Adoptionen."
         }
       ],
@@ -5312,7 +5312,7 @@
           "id": "lq_B1_42_2",
           "type": "true-false",
           "question": "Das Architekturbüro ist auf nachhaltiges Bauen spezialisiert.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Das Büro ist spezialisiert auf nachhaltiges Bauen."
         },
         {
@@ -5419,7 +5419,7 @@
           "id": "lq_B1_45_1",
           "type": "true-false",
           "question": "Frau Nolte war drei Monate für ein Praktikum in Dublin.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie hat ein Praktikum in einer Marketingagentur in Dublin gemacht."
         },
         {
@@ -5455,7 +5455,7 @@
           "id": "lq_B1_46_1",
           "type": "true-false",
           "question": "Die falschen Polizisten fragen nach Bargeld und Wertsachen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Betrüger fragen nach Bargeld und Wertsachen, die angeblich abgeholt werden müssen."
         },
         {
@@ -5475,7 +5475,7 @@
           "id": "lq_B1_46_3",
           "type": "true-false",
           "question": "Wenn man bereits Opfer wurde, soll man Anzeige erstatten.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Polizei rät Opfern, Anzeige zu erstatten."
         }
       ],
@@ -5540,7 +5540,7 @@
           "id": "lq_B1_48_2",
           "type": "true-false",
           "question": "Die Radtour geht bis nach Meißen, etwa 25 Kilometer.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie fahren die Elbe entlang bis nach Meißen, etwa 25 Kilometer."
         },
         {
@@ -5589,7 +5589,7 @@
           "id": "lq_B1_49_3",
           "type": "true-false",
           "question": "Die Bahnhofsmission bietet kostenlose Schließfächer an.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Bahnhofsmission bietet kostenlose Schließfächer."
         }
       ],
@@ -5605,7 +5605,7 @@
           "id": "lq_B1_50_1",
           "type": "true-false",
           "question": "Der Patient fliegt in sechs Wochen nach Indien.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Der Patient fliegt in sechs Wochen."
         },
         {
@@ -5647,7 +5647,7 @@
           "id": "lq_B1_51_1",
           "type": "true-false",
           "question": "In der Betreffzeile sollten Stellenbezeichnung und Referenznummer stehen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Man schreibt die Stellenbezeichnung und die Referenznummer in die Betreffzeile."
         },
         {
@@ -5683,7 +5683,7 @@
           "id": "lq_B1_52_1",
           "type": "true-false",
           "question": "Fotografieren ist während der Vorstellung nicht erlaubt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Fotografieren und Filmen ist während der gesamten Vorstellung nicht gestattet."
         },
         {
@@ -5730,7 +5730,7 @@
             "Dass der Hund zu viel frisst",
             "Lärm und Schäden in der Wohnung",
             "Dass Frau Becker auszieht",
-            "Dass der Hund zu teür ist"
+            "Dass der Hund zu teuer ist"
           ],
           "answer": "Lärm und Schäden in der Wohnung",
           "explanation": "Der Vermieter sorgt sich um Lärm und Schäden."
@@ -5755,7 +5755,7 @@
           "id": "lq_B1_54_1",
           "type": "true-false",
           "question": "Das Paket wurde in eine Filiale gebracht, weil niemand zu Hause war.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Niemand war zu Hause, daher wurde das Paket in die Filiale gebracht."
         },
         {
@@ -5775,7 +5775,7 @@
           "id": "lq_B1_54_3",
           "type": "true-false",
           "question": "Man kann online einen Nachbarn mit der Annahme beauftragen.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Man kann online die Adresse eines Nachbarn für die Annahme angeben."
         }
       ],
@@ -5791,7 +5791,7 @@
           "id": "lq_B1_55_1",
           "type": "true-false",
           "question": "Der Schüler mag Biologie, Englisch und Kunst.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Seine Lieblingsfächer sind Biologie, Englisch und Kunst."
         },
         {
@@ -5827,7 +5827,7 @@
           "id": "lq_B1_56_1",
           "type": "true-false",
           "question": "Der Klimaaktionstag findet am 15. September statt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Am 15. September ist der bundesweite Klimaaktionstag."
         },
         {
@@ -5869,7 +5869,7 @@
           "id": "lq_B1_57_1",
           "type": "true-false",
           "question": "Die Waschmaschine ist noch in der Garantiezeit.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Sie wurde erst vor einem Jahr gekauft, die Garantie gilt noch."
         },
         {
@@ -5941,7 +5941,7 @@
           "id": "lq_B1_59_1",
           "type": "true-false",
           "question": "Am 12. September um 11:00 Uhr findet ein bundesweiter Warntag statt.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Am Donnerstag, dem 12. September, um 11:00 Uhr heulen alle Sirenen zum Probealarm."
         },
         {
@@ -5977,7 +5977,7 @@
           "id": "lq_B1_60_1",
           "type": "true-false",
           "question": "Die Schüler fanden die Grammatik und die Diskussionen gut.",
-          "answer": "trü",
+          "answer": "true",
           "explanation": "Die Mischung aus Grammatik und freiem Sprechen hat gefallen, besonders die Gruppendiskussionen."
         },
         {
@@ -6009,7 +6009,7 @@
     {
       "id": "B2_listen_1",
       "title": "Vortrag: Antibiotikaresistenzen",
-      "script": "Guten Abend, meine Damen und Herren. Ich freue mich, heute über eines der drängendsten Probleme der modernen Medizin zu sprechen: Antibiotikaresistenzen. Die Weltgesundheitsorganisation warnt: Wenn wir nicht handeln, könnten bis 2050 jährlich zehn Millionen Menschen an resistenten Keimen sterben. Die Hauptursache ist der übermäÃŸige Einsatz von Antibiotika, sowohl in der Humanmedizin als auch in der Tiermast. Deutschland hat den Antibiotikaverbrauch in den letzten Jahren um 15 Prozent gesenkt, aber das reicht nicht. Wir brauchen dringend neue Wirkstoffe und einen verantwortungsvolleren Umgang mit den vorhandenen Ressourcen. Ich möchte Ihnen zunächst einige erschreckende Zahlen nennen. Nach aktüllen Schätzungen der WHO könnten bis zum Jahr 2050 weltweit etwa zehn Millionen Menschen an Infektionen sterben, die gegen Antibiotika resistent sind. Das wäre mehr als die Zahl der Krebstoten. In Deutschland, so muss man leider sagen, ist der Antibiotikaverbrauch in den letzten Jahren sogar leicht gestiegen, obwohl wir eigentlich wissen, dass wir sparsamer mit diesen Medikamenten umgehen müssten. Es wurden zwar einige Maßnahmen ergriffen, um den Verbrauch zu senken, um etwa acht Prozent, aber das reicht bei weitem nicht aus. Ein großes Problem ist, dass Antibiotika in der Tiermast immer noch viel zu häufig eingesetzt werden. Dadurch entstehen Resistenzen, die dann auch auf den Menschen übertragen werden können. Aber was können wir tun? Also, ehrlich gesagt, brauchen wir dringend neue Wirkstoffe, denn die Entwicklung neuer Antibiotika ist in den letzten Jahren sta",
+      "script": "Guten Abend, meine Damen und Herren. Ich freue mich, heute über eines der drängendsten Probleme der modernen Medizin zu sprechen: Antibiotikaresistenzen. Die Weltgesundheitsorganisation warnt: Wenn wir nicht handeln, könnten bis 2050 jährlich zehn Millionen Menschen an resistenten Keimen sterben. Die Hauptursache ist der übermäßige Einsatz von Antibiotika, sowohl in der Humanmedizin als auch in der Tiermast. Deutschland hat den Antibiotikaverbrauch in den letzten Jahren um 15 Prozent gesenkt, aber das reicht nicht. Wir brauchen dringend neue Wirkstoffe und einen verantwortungsvolleren Umgang mit den vorhandenen Ressourcen. Ich möchte Ihnen zunächst einige erschreckende Zahlen nennen. Nach aktüllen Schätzungen der WHO könnten bis zum Jahr 2050 weltweit etwa zehn Millionen Menschen an Infektionen sterben, die gegen Antibiotika resistent sind. Das wäre mehr als die Zahl der Krebstoten. In Deutschland, so muss man leider sagen, ist der Antibiotikaverbrauch in den letzten Jahren sogar leicht gestiegen, obwohl wir eigentlich wissen, dass wir sparsamer mit diesen Medikamenten umgehen müssten. Es wurden zwar einige Maßnahmen ergriffen, um den Verbrauch zu senken, um etwa acht Prozent, aber das reicht bei weitem nicht aus. Ein großes Problem ist, dass Antibiotika in der Tiermast immer noch viel zu häufig eingesetzt werden. Dadurch entstehen Resistenzen, die dann auch auf den Menschen übertragen werden können. Aber was können wir tun? Also, ehrlich gesagt, brauchen wir dringend neue Wirkstoffe, denn die Entwicklung neuer Antibiotika ist in den letzten Jahren sta",
       "questions": [
         {
           "id": "lq23",
@@ -6049,7 +6049,7 @@
     {
       "id": "B2_listen_2",
       "title": "Diskussion: Bürgerversicherung",
-      "script": "Moderator: Heute diskutieren wir über die Einführung einer Bürgerversicherung. Frau Dr. Schmidt von der Gesundheitsökonomie, was sind die Hauptargumente dafür?\nDr. Schmidt: Die Bürgerversicherung würde alle Bürger einschlieÃŸen, unabhängig vom Einkommen. Das schafft Solidarität und senkt Verwaltungskosten.\nModerator: Herr Weber von der Ã„rztekammer, Ihre Meinung?\nHerr Weber: Die Bürgerversicherung könnte zu längeren Wartezeiten führen und die Wahlfreiheit der Patienten einschränken. Wir brauchen mehr Wettbewerb, nicht weniger. Dr. Schmidt, Sie sprechen sich für die Bürgerversicherung aus. Können Sie das genauer erklären? Ja, also, ich bin der Meinung, dass das duale System aus gesetzlicher und privater Krankenversicherung nicht mehr zeitgemäß ist. Die Bürgerversicherung würde bedeuten, dass alle Bürger in einen gemeinsamen Topf einzahlen, unabhängig von ihrem Beruf oder Einkommen. Dadurch könnten wir die Beiträge für alle stabil halten. Aber Herr Dr. Schmidt, entgegnet Herr Weber, das würde doch zu einer Einebnung der Unterschiede führen. Ich befürchte, dass die Qualität der Versorgung darunter leidet, wenn alle nur noch denselben Basistarif haben. Außerdem: Warum sollten Gutverdiener nicht die Möglichkeit haben, sich besser zu versichern, wenn sie dafür zahlen? Das ist ein Argument, das ich durchaus verstehen kann. Allerdings muss man auch bedenken, dass der Solidaritätsgedanke in der gesetzlichen Krankenversicherung schon immer ein wichtiges Prinzip war. Es geht nicht darum, Leistungen zu kürzen, sondern das System gerechter zu gestalten.",
+      "script": "Moderator: Heute diskutieren wir über die Einführung einer Bürgerversicherung. Frau Dr. Schmidt von der Gesundheitsökonomie, was sind die Hauptargumente dafür?\nDr. Schmidt: Die Bürgerversicherung würde alle Bürger einschließen, unabhängig vom Einkommen. Das schafft Solidarität und senkt Verwaltungskosten.\nModerator: Herr Weber von der Ã„rztekammer, Ihre Meinung?\nHerr Weber: Die Bürgerversicherung könnte zu längeren Wartezeiten führen und die Wahlfreiheit der Patienten einschränken. Wir brauchen mehr Wettbewerb, nicht weniger. Dr. Schmidt, Sie sprechen sich für die Bürgerversicherung aus. Können Sie das genauer erklären? Ja, also, ich bin der Meinung, dass das duale System aus gesetzlicher und privater Krankenversicherung nicht mehr zeitgemäß ist. Die Bürgerversicherung würde bedeuten, dass alle Bürger in einen gemeinsamen Topf einzahlen, unabhängig von ihrem Beruf oder Einkommen. Dadurch könnten wir die Beiträge für alle stabil halten. Aber Herr Dr. Schmidt, entgegnet Herr Weber, das würde doch zu einer Einebnung der Unterschiede führen. Ich befürchte, dass die Qualität der Versorgung darunter leidet, wenn alle nur noch denselben Basistarif haben. Außerdem: Warum sollten Gutverdiener nicht die Möglichkeit haben, sich besser zu versichern, wenn sie dafür zahlen? Das ist ein Argument, das ich durchaus verstehen kann. Allerdings muss man auch bedenken, dass der Solidaritätsgedanke in der gesetzlichen Krankenversicherung schon immer ein wichtiges Prinzip war. Es geht nicht darum, Leistungen zu kürzen, sondern das System gerechter zu gestalten.",
       "questions": [
         {
           "id": "lq26",
@@ -6083,7 +6083,7 @@
     {
       "id": "B2_listen_3",
       "title": "Vorstellung einer Studie",
-      "script": "Ich möchte Ihnen die Ergebnisse einer randomisierten kontrollierten Studie vorstellen. Wir haben 500 Patienten mit Kniearthrose in zwei Gruppen eingeteilt. Die erste Gruppe erhielt Physiotherapie, die zweite Gruppe eine Kortisoninjektion. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine signifikant bessere Schmerzreduktion und Funktionsverbesserung. Die Injektionsgruppe hatte kurzfristig weniger Schmerzen, aber der Effekt lieÃŸ nach drei Monaten nach. Nun möchte ich Ihnen die Ergebnisse unserer Studie etwas genauer vorstellen. Wir haben insgesamt 120 Patienten mit chronischen Rückenschmerzen in zwei Gruppen eingeteilt. Die eine Gruppe erhielt Physiotherapie über einen Zeitraum von sechs Monaten, die andere Gruppe bekam Kortisoninjektionen in regelmäßigen Abständen. Was hat sich nun gezeigt? Also, die Ergebnisse waren durchaus überraschend. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine deutliche Verbesserung der Schmerzsymptomatik. Bei den Patienten mit Kortisoninjektionen war der Effekt zwar kurzfristig ebenfalls positiv, aber langfristig gesehen, ehrlich gesagt, eher enttäuschend. Die Kortisoninjektion hatte nämlich keinen langanhaltenden Effekt. Nach zwölf Monaten waren die Schmerzen in der Physiotherapie-Gruppe signifikant geringer. Wir empfehlen daher, dass Kortisoninjektionen nur in akuten Fällen und nicht als Daürtherapie eingesetzt werden sollten.",
+      "script": "Ich möchte Ihnen die Ergebnisse einer randomisierten kontrollierten Studie vorstellen. Wir haben 500 Patienten mit Kniearthrose in zwei Gruppen eingeteilt. Die erste Gruppe erhielt Physiotherapie, die zweite Gruppe eine Kortisoninjektion. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine signifikant bessere Schmerzreduktion und Funktionsverbesserung. Die Injektionsgruppe hatte kurzfristig weniger Schmerzen, aber der Effekt ließ nach drei Monaten nach. Nun möchte ich Ihnen die Ergebnisse unserer Studie etwas genauer vorstellen. Wir haben insgesamt 120 Patienten mit chronischen Rückenschmerzen in zwei Gruppen eingeteilt. Die eine Gruppe erhielt Physiotherapie über einen Zeitraum von sechs Monaten, die andere Gruppe bekam Kortisoninjektionen in regelmäßigen Abständen. Was hat sich nun gezeigt? Also, die Ergebnisse waren durchaus überraschend. Nach sechs Monaten zeigte die Physiotherapie-Gruppe eine deutliche Verbesserung der Schmerzsymptomatik. Bei den Patienten mit Kortisoninjektionen war der Effekt zwar kurzfristig ebenfalls positiv, aber langfristig gesehen, ehrlich gesagt, eher enttäuschend. Die Kortisoninjektion hatte nämlich keinen langanhaltenden Effekt. Nach zwölf Monaten waren die Schmerzen in der Physiotherapie-Gruppe signifikant geringer. Wir empfehlen daher, dass Kortisoninjektionen nur in akuten Fällen und nicht als Daürtherapie eingesetzt werden sollten.",
       "questions": [
         {
           "id": "lq28",
@@ -6183,7 +6183,7 @@
           "id": "b2l5b",
           "type": "true-false",
           "question": "Die Online-Datenbanken sind rund um die Uhr verfügbar.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l5c",
@@ -6223,7 +6223,7 @@
           "id": "b2l6b",
           "type": "true-false",
           "question": "Bei bewusstlosen Patienten wird ausschliesslich das Armband verwendet.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l6c",
@@ -6263,7 +6263,7 @@
           "id": "b2l7b",
           "type": "true-false",
           "question": "Frau Müller auf Zimmer 12 wird heute entlassen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l7c",
@@ -6303,7 +6303,7 @@
           "id": "b2l8b",
           "type": "true-false",
           "question": "Termine können online über die Webseite gebucht werden.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l8c",
@@ -6343,7 +6343,7 @@
           "id": "b2l9b",
           "type": "true-false",
           "question": "Experten raten, einen Versicherungsberater aufzusuchen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l9c",
@@ -6383,7 +6383,7 @@
           "id": "b2l10b",
           "type": "true-false",
           "question": "Der demografische Wandel belastet das Gesundheitssystem.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l10c",
@@ -6392,7 +6392,7 @@
           "options": [
             "Weniger Krankenhäuser",
             "Investitionen in Prävention und digitale Angebote",
-            "Höhere Steürn",
+            "Höhere Steuern",
             "Weniger Versicherte"
           ],
           "answer": "Investitionen in Prävention und digitale Angebote"
@@ -6445,7 +6445,7 @@
       "lessonId": "B2_lesson_9",
       "level": "B2",
       "title": "Vortrag: Gesunde Ernährung im Alltag",
-      "script": "Guten Abend. Ich bin Ökotrophologin Julia Meier und halte heute einen Vortrag zum Thema gesunde Ernährung. Viele Menschen denken, gesund essen sei kompliziert und teür. Dabei sind die Grundregeln einfach: Essen Sie bunt und abwechslungsreich. Greifen Sie zu saisonalem Obst und Gemüse. Vollkornprodukte sollten auf Ihrem Speiseplan stehen. Trinken Sie ausreichend, am besten Wasser oder ungesüssten Tee. Vermeiden Sie stark verarbeitete Lebensmittel. Mein Tipp: Planen Sie Ihre Mahlzeiten für die Woche im Voraus. Das spart Zeit und Geld und hilft, ungesunde Spontankäufe zu vermeiden. Kritische Stimmen weisen allerdings darauf hin, dass die Umsetzung in der Praxis oft schwieriger ist als in der Theorie. Was meinen Sie dazu? Wie sind Ihre Erfahrungen in diesem Bereich? Lassen Sie mich das etwas genauer erklären. Also, der Zusammenhang zwischen diesen Faktoren ist komplexer, als man auf den ersten Blick annehmen würde. Soweit ich weiß, gibt es dazu noch keine abschließenden Forschungsergebnisse. Insgesamt lässt sich also festhalten, dass dieses Thema viele Facetten hat. Es ist wichtig, sich kontinuierlich weiterzubilden und die aktüllen Entwicklungen im Auge zu behalten.",
+      "script": "Guten Abend. Ich bin Ökotrophologin Julia Meier und halte heute einen Vortrag zum Thema gesunde Ernährung. Viele Menschen denken, gesund essen sei kompliziert und teuer. Dabei sind die Grundregeln einfach: Essen Sie bunt und abwechslungsreich. Greifen Sie zu saisonalem Obst und Gemüse. Vollkornprodukte sollten auf Ihrem Speiseplan stehen. Trinken Sie ausreichend, am besten Wasser oder ungesüssten Tee. Vermeiden Sie stark verarbeitete Lebensmittel. Mein Tipp: Planen Sie Ihre Mahlzeiten für die Woche im Voraus. Das spart Zeit und Geld und hilft, ungesunde Spontankäufe zu vermeiden. Kritische Stimmen weisen allerdings darauf hin, dass die Umsetzung in der Praxis oft schwieriger ist als in der Theorie. Was meinen Sie dazu? Wie sind Ihre Erfahrungen in diesem Bereich? Lassen Sie mich das etwas genauer erklären. Also, der Zusammenhang zwischen diesen Faktoren ist komplexer, als man auf den ersten Blick annehmen würde. Soweit ich weiß, gibt es dazu noch keine abschließenden Forschungsergebnisse. Insgesamt lässt sich also festhalten, dass dieses Thema viele Facetten hat. Es ist wichtig, sich kontinuierlich weiterzubilden und die aktüllen Entwicklungen im Auge zu behalten.",
       "questions": [
         {
           "id": "b2l12a",
@@ -6463,7 +6463,7 @@
           "id": "b2l12b",
           "type": "true-false",
           "question": "Stark verarbeitete Lebensmittel sollten vermieden werden.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l12c",
@@ -6515,7 +6515,7 @@
           "id": "b2l13c",
           "type": "true-false",
           "question": "Das Projekt in Freiburg soll auf andere Städte ausgeweitet werden.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-13.mp3"
@@ -6544,7 +6544,7 @@
           "type": "mcq",
           "question": "Was bekommen Bauwillige für den Bau von Sozialwohnungen?",
           "options": [
-            "Steürfreiheit",
+            "Steuerfreiheit",
             "Zinsgünstige Darlehen",
             "Grundstücke geschenkt",
             "Höhere Mieten"
@@ -6555,7 +6555,7 @@
           "id": "b2l14c",
           "type": "true-false",
           "question": "In München fehlen mindestens zehntausend bezahlbare Wohnungen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-14.mp3"
@@ -6583,7 +6583,7 @@
           "id": "b2l15b",
           "type": "true-false",
           "question": "Die Haltestelle Hauptbahnhof Süd wird für drei Wochen geschlossen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l15c",
@@ -6663,7 +6663,7 @@
           "id": "b2l17b",
           "type": "true-false",
           "question": "Das Rückentraining ist kostenlos.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l17c",
@@ -6703,7 +6703,7 @@
           "id": "b2l18b",
           "type": "true-false",
           "question": "Die Anerkennung seines Studiums dauerte etwa anderthalb Jahre.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l18c",
@@ -6755,7 +6755,7 @@
           "id": "b2l19c",
           "type": "true-false",
           "question": "Ab 2026 soll ein neues IT-Sicherheitsgesetz strengere Auflagen vorsehen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-19.mp3"
@@ -6783,7 +6783,7 @@
           "id": "b2l20b",
           "type": "true-false",
           "question": "Die Ärztekammer empfiehlt, dienstliche und private Inhalte zu trennen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l20c",
@@ -6835,7 +6835,7 @@
           "id": "b2l21c",
           "type": "true-false",
           "question": "Die Arbeit im Hospiz beschreibt Frau Schubert als nicht einfach, aber erfüllend.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-21.mp3"
@@ -6863,14 +6863,14 @@
           "id": "b2l22b",
           "type": "true-false",
           "question": "Professorin Dr. Weiss vertritt die Meinung, dass Patientenverfügungen wichtig für die Selbstbestimmung sind.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l22c",
           "type": "mcq",
           "question": "Was kritisieren Gegner der aktüllen Regelung?",
           "options": [
-            "Patientenverfügungen sind zu teür",
+            "Patientenverfügungen sind zu teuer",
             "Viele Menschen haben keine Patientenverfügung",
             "Patientenverfügungen sind ungültig",
             "Ärzte ignorieren Patientenverfügungen"
@@ -6915,7 +6915,7 @@
           "id": "b2l23c",
           "type": "true-false",
           "question": "Die Wohnung muss für die ambulante Reha barrierefrei sein.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-23.mp3"
@@ -7023,7 +7023,7 @@
           "id": "b2l26b",
           "type": "true-false",
           "question": "Der Patient hat bereits Wärmepflaster ausprobiert.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l26c",
@@ -7063,7 +7063,7 @@
           "id": "b2l27b",
           "type": "true-false",
           "question": "Der Lebenslauf soll in tabellarischer Form sein.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l27c",
@@ -7143,7 +7143,7 @@
           "id": "b2l29b",
           "type": "true-false",
           "question": "Die Patientin wohnt alleine und hat Probleme beim Treppensteigen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l29c",
@@ -7195,7 +7195,7 @@
           "id": "b2l30c",
           "type": "true-false",
           "question": "Die Wahrscheinlichkeit von Komplikationen ist gering.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-30.mp3"
@@ -7223,7 +7223,7 @@
           "id": "b2l31b",
           "type": "true-false",
           "question": "Die Frühschicht hat laut eigener Aussage keine Zeit für ausführliche Berichte.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l31c",
@@ -7285,7 +7285,7 @@
       "lessonId": "B2_lesson_16",
       "level": "B2",
       "title": "Gesundheitspodcast: Die besten Health-Apps",
-      "script": "Herzlich willkommen zu einer neuen Folge unseres Digital-Health-Podcasts. Heute testen wir drei Gesundheits-Apps. Die erste App heisst \"MediTracker\" und hilft bei der Medikamenteneinnahme. Sie erinnert an die Einnahme und dokumentiert, ob Tabletten genommen wurden. Die zweite App \"SleepWell\" überwacht die Schlafqualität. Das Highlight ist aber \"BlutCheck\". Die App analysiert mit der Handykamera den Blutdruck. Nicht so genau wie ein richtiges Gerät, sagt der Hersteller, aber gut für den Überblick. Alle drei Apps sind kostenlos im App Store erhältlich. Was bedeutet das nun für die Praxis? Also, ehrlich gesagt, muss man hier differenzieren. Ich persönlich bin der Meinung, dass wir in diesem Bereich noch viel mehr Forschung benötigen. Ein Kollege hat neulich in einer Fortbildung gesagt, und da stimme ich ihm zu, dass wir als medizinisches Fachpersonal eine besondere Verantwortung tragen. Aber wie setzt man das im stressigen Klinikalltag um? Insgesamt lässt sich also festhalten, dass dieses Thema viele Facetten hat. Es ist wichtig, sich kontinuierlich weiterzubilden und die aktüllen Entwicklungen im Auge zu behalten.",
+      "script": "Herzlich willkommen zu einer neuen Folge unseres Digital-Health-Podcasts. Heute testen wir drei Gesundheits-Apps. Die erste App heißt \"MediTracker\" und hilft bei der Medikamenteneinnahme. Sie erinnert an die Einnahme und dokumentiert, ob Tabletten genommen wurden. Die zweite App \"SleepWell\" überwacht die Schlafqualität. Das Highlight ist aber \"BlutCheck\". Die App analysiert mit der Handykamera den Blutdruck. Nicht so genau wie ein richtiges Gerät, sagt der Hersteller, aber gut für den Überblick. Alle drei Apps sind kostenlos im App Store erhältlich. Was bedeutet das nun für die Praxis? Also, ehrlich gesagt, muss man hier differenzieren. Ich persönlich bin der Meinung, dass wir in diesem Bereich noch viel mehr Forschung benötigen. Ein Kollege hat neulich in einer Fortbildung gesagt, und da stimme ich ihm zu, dass wir als medizinisches Fachpersonal eine besondere Verantwortung tragen. Aber wie setzt man das im stressigen Klinikalltag um? Insgesamt lässt sich also festhalten, dass dieses Thema viele Facetten hat. Es ist wichtig, sich kontinuierlich weiterzubilden und die aktüllen Entwicklungen im Auge zu behalten.",
       "questions": [
         {
           "id": "b2l33a",
@@ -7303,7 +7303,7 @@
           "id": "b2l33b",
           "type": "true-false",
           "question": "Die App BlutCheck misst den Blutdruck mit der Handykamera.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l33c",
@@ -7355,7 +7355,7 @@
           "id": "b2l34c",
           "type": "true-false",
           "question": "Nach der Schulung gibt es einen kurzen Test.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-34.mp3"
@@ -7383,7 +7383,7 @@
           "id": "b2l35b",
           "type": "true-false",
           "question": "Man sollte nach 14 Uhr keinen Kaffee mehr trinken.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l35c",
@@ -7435,7 +7435,7 @@
           "id": "b2l36c",
           "type": "true-false",
           "question": "Der Mitarbeiter leitet den Vorfall an die Stationsleitung weiter.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-36.mp3"
@@ -7463,7 +7463,7 @@
           "id": "b2l37b",
           "type": "true-false",
           "question": "Das Gerät zeigt nach etwa 30 Sekunden den Blutdruck an.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l37c",
@@ -7515,7 +7515,7 @@
           "id": "b2l38c",
           "type": "true-false",
           "question": "Der Arzt muss eine Verordnung für eine Vertragseinrichtung ausstellen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-38.mp3"
@@ -7543,7 +7543,7 @@
           "id": "b2l39b",
           "type": "true-false",
           "question": "Arbeiten mit infektiösem Material sind unter der Sicherheitswerkbank erlaubt.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l39c",
@@ -7583,7 +7583,7 @@
           "id": "b2l40b",
           "type": "true-false",
           "question": "Die Klinik bietet ein Gespräch mit der psychologischen Beratungsstelle an.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l40c",
@@ -7635,7 +7635,7 @@
           "id": "b2l41c",
           "type": "true-false",
           "question": "30 Minuten täglicher Spaziergang wird empfohlen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-41.mp3"
@@ -7675,7 +7675,7 @@
           "id": "b2l42c",
           "type": "true-false",
           "question": "Die FSME-Impfung wird für Menschen in Risikogebieten empfohlen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-42.mp3"
@@ -7755,7 +7755,7 @@
           "id": "b2l44c",
           "type": "true-false",
           "question": "Die Kommission wird in 30 Minuten abstimmen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-44.mp3"
@@ -7783,7 +7783,7 @@
           "id": "b2l45b",
           "type": "true-false",
           "question": "Die Patientin bekommt einen Medikamentenplan.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l45c",
@@ -7835,7 +7835,7 @@
           "id": "b2l46c",
           "type": "true-false",
           "question": "Medizinstudierende zahlen einen ermässigten Beitrag.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-46.mp3"
@@ -7903,7 +7903,7 @@
           "id": "b2l48b",
           "type": "true-false",
           "question": "Täglich sterben drei Menschen, weil nicht genug Organe verfügbar sind.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "b2l48c",
@@ -7995,7 +7995,7 @@
           "id": "b2l50c",
           "type": "true-false",
           "question": "Im Workshop wird in Rollenspielen geübt.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "audio": "audio/listening/b2-listen-50.mp3"
@@ -8045,7 +8045,7 @@
     {
       "id": "C1_listen_2",
       "title": "Vortrag: Medizintourismus",
-      "script": "Der Medizintourismus hat in den letzten Jahren weltweit zugenommen. Patienten reisen ins Ausland, um dort Behandlungen zu erhalten, die im Heimatland zu teür oder nicht verfügbar sind. Deutschland ist eines der Hauptzielländer, besonders für Patientinnen und Patienten aus dem Nahen Osten und Russland. Die Behandlungsschwerpunkte liegen in der Orthopädie, Onkologie und Kardiologie. Die deutsche Gesundheitswirtschaft erwirtschaftet damit jährlich mehrere Milliarden Euro. Kritisch anzumerken ist, dass der Medizintourismus zu einer Zweiklassenmedizin führen kann, wenn lokale Patienten von Ressourcen verdrängt werden.",
+      "script": "Der Medizintourismus hat in den letzten Jahren weltweit zugenommen. Patienten reisen ins Ausland, um dort Behandlungen zu erhalten, die im Heimatland zu teuer oder nicht verfügbar sind. Deutschland ist eines der Hauptzielländer, besonders für Patientinnen und Patienten aus dem Nahen Osten und Russland. Die Behandlungsschwerpunkte liegen in der Orthopädie, Onkologie und Kardiologie. Die deutsche Gesundheitswirtschaft erwirtschaftet damit jährlich mehrere Milliarden Euro. Kritisch anzumerken ist, dass der Medizintourismus zu einer Zweiklassenmedizin führen kann, wenn lokale Patienten von Ressourcen verdrängt werden.",
       "questions": [
         {
           "id": "lq34",
@@ -8097,7 +8097,7 @@
             "Über 50.000",
             "Über 100.000"
           ],
-          "answer": "ÿber 50.000"
+          "answer": "über 50.000"
         },
         {
           "id": "lq38",
@@ -8177,7 +8177,7 @@
           "id": "ql44",
           "type": "true-false",
           "question": "Evidenz muss auf die individülle Patientensituation angewendet werden.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "level": "C1",
@@ -8207,7 +8207,7 @@
           "id": "ql46",
           "type": "true-false",
           "question": "Professor Neumann hält den Personalmangel für das dringendste Problem.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql47",
@@ -8375,7 +8375,7 @@
           "id": "ql58",
           "type": "true-false",
           "question": "Die Studie wurde von einem Pharmaunternehmen finanziert.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql59",
@@ -8451,7 +8451,7 @@
           "id": "ql64",
           "type": "true-false",
           "question": "Mitarbeiter werden im Umgang mit Patientendaten geschult.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "level": "C1",
@@ -8481,7 +8481,7 @@
           "id": "ql66",
           "type": "true-false",
           "question": "Die Radiologie hat eine beginnende Pneumonie festgestellt.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql67",
@@ -8557,7 +8557,7 @@
           "id": "ql72",
           "type": "true-false",
           "question": "Die Sturzrisikoeinschätzung des Patienten war bei Aufnahme dokumentiert.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "level": "C1",
@@ -8587,7 +8587,7 @@
           "id": "ql74",
           "type": "true-false",
           "question": "Frau Dr. Kowalski hatte einen Mentor zur Unterstützung.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql75",
@@ -8749,7 +8749,7 @@
           "id": "ql86",
           "type": "true-false",
           "question": "Die Studie ist doppelblind, das heißt Arzt und Patient kennen die Gruppenzuteilung nicht.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql87",
@@ -8801,7 +8801,7 @@
           "id": "ql90",
           "type": "true-false",
           "question": "Professor Meier fordert transparente, im Vorfeld festgelegte Kriterien.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql91",
@@ -8917,7 +8917,7 @@
           "id": "ql100",
           "type": "true-false",
           "question": "Der Oberarzt hat sich für den Vorfall entschuldigt.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "level": "C1",
@@ -8997,7 +8997,7 @@
           "id": "ql106",
           "type": "true-false",
           "question": "Bei einem Blutzucker unter 70 mg/dl sollte man schnell wirksame Kohlenhydrate zu sich nehmen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql107",
@@ -9043,7 +9043,7 @@
           "id": "ql110",
           "type": "true-false",
           "question": "Bei einem minimalinvasiven Eingriff sind Krücken oft nur zwei bis drei Wochen nötig.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql111",
@@ -9095,7 +9095,7 @@
           "id": "ql114",
           "type": "true-false",
           "question": "Zeitdruck gefährdet das Vertrauensverhältnis zwischen Arzt und Patient.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql115",
@@ -9141,7 +9141,7 @@
           "id": "ql118",
           "type": "true-false",
           "question": "Intensivmediziner und Notfallmediziner sind besonders burn-out-gefährdet.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql119",
@@ -9193,7 +9193,7 @@
           "id": "ql122",
           "type": "true-false",
           "question": "Das Sepsis-Bundle muss innerhalb von 60 Minuten abgeschlossen sein.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql123",
@@ -9234,7 +9234,7 @@
           "type": "mcq",
           "question": "Welche Faktoren treiben die Krankenversicherungsbeiträge?",
           "options": [
-            "Mehr Ärzte und höhere Steürn",
+            "Mehr Ärzte und höhere Steuern",
             "Ältere Bevölkerung, teurere Leistungen, mehr chronisch Kranke",
             "Niedrigere Löhne und weniger Patienten",
             "Weniger Krankenhäuser und niedrigere Beiträge"
@@ -9297,7 +9297,7 @@
           "id": "ql130",
           "type": "true-false",
           "question": "Die Hautkrebsvorsorge wird alle zwei Jahre empfohlen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql131",
@@ -9401,7 +9401,7 @@
           "id": "ql138",
           "type": "true-false",
           "question": "Für die Studie ist ein Ethikvotum erforderlich.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql139",
@@ -9447,7 +9447,7 @@
           "id": "ql142",
           "type": "true-false",
           "question": "Der Patient hatte in der Nacht starke Schmerzen und bekam ein Schmerzmittel.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql143",
@@ -9499,7 +9499,7 @@
           "id": "ql146",
           "type": "true-false",
           "question": "Die Patientin hat Unterbauchschmerzen mit Fieber und Übelkeit.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql147",
@@ -9551,7 +9551,7 @@
           "id": "ql150",
           "type": "true-false",
           "question": "Ciprofloxacin kann die Wirkung von Marcumar verstärken.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql151",
@@ -9603,7 +9603,7 @@
           "id": "ql154",
           "type": "true-false",
           "question": "Der Patient hat eine Vorsorgevollmacht für seine Tochter.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql155",
@@ -9777,7 +9777,7 @@
           "id": "ql168",
           "type": "true-false",
           "question": "Der Fellow empfiehlt, die Navigation weiter einzusetzen.",
-          "answer": "trü"
+          "answer": "true"
         }
       ],
       "level": "C1",
@@ -9805,7 +9805,7 @@
           "id": "ql170",
           "type": "true-false",
           "question": "Ähnlich klingende Medikamentennamen sind eine häufige Fehlerursache.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql171",
@@ -9851,7 +9851,7 @@
           "id": "ql174",
           "type": "true-false",
           "question": "In Österreich gilt die Widerspruchslösung für Organspenden.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql175",
@@ -9903,7 +9903,7 @@
           "id": "ql178",
           "type": "true-false",
           "question": "Ein INR über 5,0 erfordert den sofortigen Besuch in der Praxis.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql179",
@@ -9955,7 +9955,7 @@
           "id": "ql182",
           "type": "true-false",
           "question": "Die Interventionsgruppe zeigte eine signifikant bessere Verbesserung als die Kontrollgruppe.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql183",
@@ -10007,7 +10007,7 @@
           "id": "ql186",
           "type": "true-false",
           "question": "Spender können jederzeit ihre Einwilligung zurückziehen.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql187",
@@ -10059,7 +10059,7 @@
           "id": "ql190",
           "type": "true-false",
           "question": "Die Anastomoseninsuffizienz trat am fünften postoperativen Tag auf.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql191",
@@ -10215,7 +10215,7 @@
           "id": "ql202",
           "type": "true-false",
           "question": "Die Untersuchung ist gesetzlich vorgeschrieben.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql203",
@@ -10371,7 +10371,7 @@
           "id": "ql214",
           "type": "true-false",
           "question": "Die Herzdruckmassage soll mit einer Freqünz von 100 bis 120 pro Minute durchgeführt werden.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql215",
@@ -10423,7 +10423,7 @@
           "id": "ql218",
           "type": "true-false",
           "question": "Die Verweildaür der Patienten liegt über dem Landesdurchschnitt.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql219",
@@ -10475,7 +10475,7 @@
           "id": "ql222",
           "type": "true-false",
           "question": "Der dicke Tropfen und ein Schnelltest bestätigen die Malaria-Diagnose.",
-          "answer": "trü"
+          "answer": "true"
         },
         {
           "id": "ql223",

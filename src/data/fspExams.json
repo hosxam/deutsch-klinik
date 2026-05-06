@@ -2,7 +2,7 @@
   {
     "id": "exam_001",
     "title": "Brustschmerz – V.a. akutes Koronarsyndrom",
-    "case": "Ein 58-jahriger Patient kommt mit seit 2 Stunden bestehendem Druckgefuhl in der Brust in die Notaufnahme. Er klagt uber retrosternale Schmerzen, die in den linken Arm ausstrahlen. Begleitend besteht Ubelkeit und Kaltschweißigkeit.",
+    "case": "Ein 58-jahriger Patient kommt mit seit 2 Stunden bestehendem Druckgefuhl in der Brust in die Notaufnahme. Er klagt über retrosternale Schmerzen, die in den linken Arm ausstrahlen. Begleitend besteht Ubelkeit und Kaltschweißigkeit.",
     "part1_patientConversation": {
       "setting": "Notaufnahme, Klinikum. Sie sind der diensthabende Arzt/Arztin. Der Patient ist wach, orientiert, aber sichtlich angespannt.",
       "patientRole": {
@@ -42,7 +42,7 @@
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen strukturierten Arztbrief (Aufnahmebefund) fur den 58-jahrigen Patienten mit Brustschmerz und V.a. akutes Koronarsyndrom.",
+      "task": "Verfassen Sie einen strukturierten Arztbrief (Aufnahmebefund) für den 58-jahrigen Patienten mit Brustschmerz und V.a. akutes Koronarsyndrom.",
       "requiredSections": [
         "Diagnose / Verdachtsdiagnose",
         "Anamnese (aktülle Beschwerden, Risikofaktoren, Medikamente)",
@@ -58,10 +58,10 @@
         "Medikation: Ramipril 5 mg",
         "Vitalparameter und korperliche Untersuchung zum Zeitpunkt der Aufnahme"
       ],
-      "modelOutline": "Aufnahmebericht\n\nPatient: 58 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nDiagnose: V.a. akutes Koronarsyndrom (NSTEMI/STEMI?) bei retrosternalem Brustschmerz mit Ausstrahlung.\n\nAnamnese: Der Patient gibt seit 2 Stunden bestehende retrosternale Schmerzen mit Druckgefuhl an. Die Schmerzen strahlen in den linken Arm aus. Begleitend bestehen Ubelkeit und Kaltschweißigkeit. Keine Atemnot. Bisher keine KHK bekannt. Kardiovaskulare Risikofaktoren: langjahriger Nikotinkonsum (30 PY), arterielle Hypertonie seit 10 Jahren. Medikation: Ramipril 5 mg taglich.\n\nAufnahmebefund: [Zu erganzen: Vitalparameter, Auskultation, Palpation]\n\nGeplante Diagnostik: 12-Kanal-EKG, Blutentnahme (Troponin, CK-MB, D-Dimere, Blutbild, Elektrolyte, Nierenwerte, Gerinnung), Rontgen Thorax, ggf. Echokardiographie.\n\nGeplante Therapie: ASS 500 mg iv, ggf. Heparin, Nitrat sublingual bei Bedarf, Vorbereitung auf ggf. Koronarangiographie.\n\nAufklarung: Der Patient wurde uber die Verdachtsdiagnose, die geplanten Untersuchungen und die mogliche Notwendigkeit einer Herzkatheteruntersuchung aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht\n\nPatient: 58 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nDiagnose: V.a. akutes Koronarsyndrom (NSTEMI/STEMI?) bei retrosternalem Brustschmerz mit Ausstrahlung.\n\nAnamnese: Der Patient gibt seit 2 Stunden bestehende retrosternale Schmerzen mit Druckgefuhl an. Die Schmerzen strahlen in den linken Arm aus. Begleitend bestehen Ubelkeit und Kaltschweißigkeit. Keine Atemnot. Bisher keine KHK bekannt. Kardiovaskulare Risikofaktoren: langjahriger Nikotinkonsum (30 PY), arterielle Hypertonie seit 10 Jahren. Medikation: Ramipril 5 mg taglich.\n\nAufnahmebefund: [Zu erganzen: Vitalparameter, Auskultation, Palpation]\n\nGeplante Diagnostik: 12-Kanal-EKG, Blutentnahme (Troponin, CK-MB, D-Dimere, Blutbild, Elektrolyte, Nierenwerte, Gerinnung), Rontgen Thorax, ggf. Echokardiographie.\n\nGeplante Therapie: ASS 500 mg iv, ggf. Heparin, Nitrat sublingual bei Bedarf, Vorbereitung auf ggf. Koronarangiographie.\n\nAufklarung: Der Patient wurde über die Verdachtsdiagnose, die geplanten Untersuchungen und die mogliche Notwendigkeit einer Herzkatheteruntersuchung aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Sie mussen den Patienten an den Kardiologen im Bereitschaftsdienst ubergeben. Prasentieren Sie den Fall strukturiert nach dem ISBAR-Schema.",
+      "task": "Sie mussen den Patienten an den Kardiologen im Bereitschaftsdienst übergeben. Prasentieren Sie den Fall strukturiert nach dem ISBAR-Schema.",
       "handoverStructure": [
         "I – Identifikation: Patient, Alter, Geschlecht",
         "S – Situation: Aktülles Problem, Dringlichkeit",
@@ -99,10 +99,10 @@
     ],
     "rubric": {
       "historyTaking": "Vollstandige Erfassung von Symptomen, Begleitsymptomen und Risikofaktoren. Kardiale Red Flags wurden erfragt.",
-      "patientCommunication": "Empathisch, ruhig, patientengerechte Sprache. Der Patient wurde uber den Verdacht und die nachsten Schritte aufgeklart.",
+      "patientCommunication": "Empathisch, ruhig, patientengerechte Sprache. Der Patient wurde über den Verdacht und die nachsten Schritte aufgeklart.",
       "medicalLogic": "Korrekte differentialdiagnostische Einordnung. Angemessene Dringlichkeitseinschatzung.",
       "documentation": "Vollstandiger, strukturierter Aufnahmebefund mit allen erforderlichen Abschnitten.",
-      "doctorToDoctorCommunication": "Strukturierte Ubergabe nach ISBAR. Alle relevanten Informationen wurden pragnant ubermittelt.",
+      "doctorToDoctorCommunication": "Strukturierte Übergabe nach ISBAR. Alle relevanten Informationen wurden pragnant übermittelt.",
       "germanAccuracy": "B2+/C1 Niveau. Sichere Verwendung von Fachtermini bei gleichzeitig verstandlicher Patientenkommunikation."
     },
     "tags": [
@@ -156,7 +156,7 @@
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Aufnahmebefund fur die 24-jahrige Patientin mit akuten Unterbauchschmerzen rechts und V.a. Appendizitis.",
+      "task": "Verfassen Sie einen Aufnahmebefund für die 24-jahrige Patientin mit akuten Unterbauchschmerzen rechts und V.a. Appendizitis.",
       "requiredSections": [
         "Verdachtsdiagnose",
         "Aktülle Anamnese einschließlich Schmerzcharakteristik und Begleitsymptome",
@@ -173,10 +173,10 @@
         "Kein Fieber, keine Miktionsbeschwerden",
         "Keine Vorerkrankungen, keine Medikation"
       ],
-      "modelOutline": "Aufnahmebericht\n\nPatientin: 24 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Akute Appendizitis.\n\nAnamnese: Die Patientin klagt uber seit 12 Stunden zunehmende Unterbauchschmerzen rechts. Beginn periumbilikal, jetzt im rechten Unterbauch lokalisiert. Schmerzcharakter: stechend, zunehmend. Begleitend Ubelkeit und Appetitlosigkeit, kein Erbrechen. Kein Fieber oder Schuttelfrost. Stuhlgang regelrecht. Letzte Menstruation vor 2 Wochen, Schwangerschaft wird verneint. Keine gynekologischen Beschwerden.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Abdomen: Druckschmerz im rechten Unterbauch, ggf. positives Psoas- und/oder McBurney-Zeichen. Keine Abwehrspannung. Auskultation: regelrechte Darmgerausche.\n\nDiagnostik: Blutentnahme (Blutbild, CRP, Elektrolyte, SS-Test im Urin). Abdominelle Sonographie.\n\nProcedere: Bei Bestatigung der Verdachtsdiagnose stationare Aufnahme und Vorbereitung zur Appendektomie. Bei unklarer Diagnostik erweiterte Bildgebung (CT) oder stationare Uberwachung.\n\nAufklarung: Die Patientin wurde uber die Verdachtsdiagnose, die geplanten Untersuchungen und die mogliche Notwendigkeit einer Operation aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht\n\nPatientin: 24 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Akute Appendizitis.\n\nAnamnese: Die Patientin klagt über seit 12 Stunden zunehmende Unterbauchschmerzen rechts. Beginn periumbilikal, jetzt im rechten Unterbauch lokalisiert. Schmerzcharakter: stechend, zunehmend. Begleitend Ubelkeit und Appetitlosigkeit, kein Erbrechen. Kein Fieber oder Schuttelfrost. Stuhlgang regelrecht. Letzte Menstruation vor 2 Wochen, Schwangerschaft wird verneint. Keine gynekologischen Beschwerden.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Abdomen: Druckschmerz im rechten Unterbauch, ggf. positives Psoas- und/oder McBurney-Zeichen. Keine Abwehrspannung. Auskultation: regelrechte Darmgerausche.\n\nDiagnostik: Blutentnahme (Blutbild, CRP, Elektrolyte, SS-Test im Urin). Abdominelle Sonographie.\n\nProcedere: Bei Bestatigung der Verdachtsdiagnose stationare Aufnahme und Vorbereitung zur Appendektomie. Bei unklarer Diagnostik erweiterte Bildgebung (CT) oder stationare Überwachung.\n\nAufklarung: Die Patientin wurde über die Verdachtsdiagnose, die geplanten Untersuchungen und die mogliche Notwendigkeit einer Operation aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Ubergeben Sie die Patientin an den Chirurgen im Bereitschaftsdienst. Verwenden Sie das ISBAR-Schema.",
+      "task": "Übergeben Sie die Patientin an den Chirurgen im Bereitschaftsdienst. Verwenden Sie das ISBAR-Schema.",
       "handoverStructure": [
         "I – Identifikation: 24 Jahre, weiblich, Patientin",
         "S – Situation: Akute Unterbauchschmerzen rechts, V.a. Appendizitis",
@@ -217,7 +217,7 @@
       "patientCommunication": "Einfuhlsame Kommunikation unter Berucksichtigung des Schamgefuhls. Klare Erklarung der nachsten Schritte.",
       "medicalLogic": "Korrekte differentialdiagnostische Einordnung. Berucksichtigung gynekologischer Ursachen.",
       "documentation": "Vollstandiger und strukturierter Aufnahmebefund. Gynakologische Anamnese und SS-Test wurden dokumentiert.",
-      "doctorToDoctorCommunication": "Strukturierte Ubergabe mit allen relevanten Informationen. Differentialdiagnosen wurden genannt.",
+      "doctorToDoctorCommunication": "Strukturierte Übergabe mit allen relevanten Informationen. Differentialdiagnosen wurden genannt.",
       "germanAccuracy": "B2+/C1 Niveau. Souverane Fachsprache bei patientengerechter Kommunikation."
     },
     "tags": [
@@ -231,9 +231,9 @@
   {
     "id": "exam_003",
     "title": "Dyspnö – V.a. Pneumonie oder Lungenembolie",
-    "case": "Eine 67-jahrige Patientin wird vom Rettungsdienst mit akuter Luftnot eingeliefert. Die Dyspnö begann vor etwa 4 Stunden, zunehmend. Sie hat Husten mit gelblichem Auswurf und leichtes Fieber (38,2°C). Zudem klagt sie uber ein Spannungsgefuhl im rechten Thorax. Sie ist seit 3 Wochen nach einer Knie-OP immobil.",
+    "case": "Eine 67-jahrige Patientin wird vom Rettungsdienst mit akuter Luftnot eingeliefert. Die Dyspnö begann vor etwa 4 Stunden, zunehmend. Sie hat Husten mit gelblichem Auswurf und leichtes Fieber (38,2°C). Zudem klagt sie über ein Spannungsgefuhl im rechten Thorax. Sie ist seit 3 Wochen nach einer Knie-OP immobil.",
     "part1_patientConversation": {
-      "setting": "Notaufnahme, groRes Haus. Die Patientin ist wach, aber aufgrund der Luftnot angestrengt. Saürstoff wird bereits uber Nasenbrille gegeben.",
+      "setting": "Notaufnahme, groRes Haus. Die Patientin ist wach, aber aufgrund der Luftnot angestrengt. Saürstoff wird bereits über Nasenbrille gegeben.",
       "patientRole": {
         "age": 67,
         "gender": "weiblich",
@@ -245,7 +245,7 @@
       "doctorTasks": [
         "Erheben Sie eine strukturierte Anamnese der akuten Dyspnö (Beginn, Verlauf, Ausloser).",
         "Differenzieren Sie zwischen pulmonaler und kardialer Ursache.",
-        "Erfragen Sie Risikofaktoren fur eine Lungenembolie (Immobilisation, OP, Thromboseanamnese).",
+        "Erfragen Sie Risikofaktoren für eine Lungenembolie (Immobilisation, OP, Thromboseanamnese).",
         "Fragen Sie nach Husten, Auswurf, Hamoptyse, Fieber, Thoraxschmerz.",
         "Dokumentieren Sie die Vitalparameter und planen Sie die notige Diagnostik."
       ],
@@ -264,14 +264,14 @@
         "Fieber + eitriger Auswurf = Pneumonie, aber LE kann auch mit Fieber einhergehen"
       ],
       "usefulPhrases": [
-        "Ich kann sehen, dass die Luftnot sehr belastend fur Sie ist. Wir geben Ihnen zunachst Saürstoff.",
+        "Ich kann sehen, dass die Luftnot sehr belastend für Sie ist. Wir geben Ihnen zunachst Saürstoff.",
         "Hatten Sie in letzter Zeit Schwellungen in den Beinen? Das ist wichtig, um eine Thrombose auszuschlieSSen.",
         "Wir werden sofort ein EKG schreiben, Blut abnehmen und eine Rontgenaufnahme der Lunge machen.",
         "Keine Sorge, wir behalten Sie hier im Blick und kummern uns um alles Notige."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Aufnahmebefund fur die 67-jahrige Patientin mit akuter Dyspnö und V.a. Pneumonie / Lungenembolie.",
+      "task": "Verfassen Sie einen Aufnahmebefund für die 67-jahrige Patientin mit akuter Dyspnö und V.a. Pneumonie / Lungenembolie.",
       "requiredSections": [
         "Verdachtsdiagnose(n) mit Differentialdiagnosen",
         "Anamnese (aktülle Beschwerden, Risikofaktoren, Medikamente, Allergien)",
@@ -287,10 +287,10 @@
         "Medikation: ASS 100 mg, keine Antikoagulation postoperativ",
         "Allergie: Penicillin (Exanthem)"
       ],
-      "modelOutline": "Aufnahmebericht\n\nPatientin: 67 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnosen: 1. Lungenembolie (bei postoperativer Immobilisation), 2. Pneumonie (Husten, Fieber, Auswurf).\n\nAnamnese: Die Patientin wurde mit akuter Dyspnö eingeliefert, die vor 4 Stunden begann und sich seither verschlechtert hat. Sie hat Husten mit gelblichem Sputum und leichtes Fieber (38,2°C). Zudem besteht ein Spannungsgefuhl im rechten Thorax. Keine Hamoptyse. Vor 3 Wochen erfolgte eine Knie-TEP-Implantation, seither eingeschrankte Mobilisation. Z.n. tiefer Beinvenenthrombose vor 5 Jahren. Medikation: ASS 100 mg taglich, keine Antikoagulation postoperativ. Allergie: Penicillin.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Kardiopulmonale Auskultation, Beinbefund (Schwellung, Wadenschmerz?).\n\nDiagnostik: 12-Kanal-EKG, Blutentnahme (D-Dimere, Troponin, Blutbild, CRP, Procalcitonin, Gerinnung), Rontgen Thorax in 2 Ebenen, ggf. CT-Pulmonalisangiographie.\n\nTherapie: Saürstoffgabe, bei Bestatigung einer Pneumonie kalkulierte Antibiotikatherapie (Cephalosporin wegen Penicillinallergie), bei LE: Antikoagulation mit Heparin.\n\nAufklarung: Die Patientin wurde uber die Differentialdiagnosen, die geplanten Untersuchungen und das weitere Vorgehen aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht\n\nPatientin: 67 Jahre, weiblich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnosen: 1. Lungenembolie (bei postoperativer Immobilisation), 2. Pneumonie (Husten, Fieber, Auswurf).\n\nAnamnese: Die Patientin wurde mit akuter Dyspnö eingeliefert, die vor 4 Stunden begann und sich seither verschlechtert hat. Sie hat Husten mit gelblichem Sputum und leichtes Fieber (38,2°C). Zudem besteht ein Spannungsgefuhl im rechten Thorax. Keine Hamoptyse. Vor 3 Wochen erfolgte eine Knie-TEP-Implantation, seither eingeschrankte Mobilisation. Z.n. tiefer Beinvenenthrombose vor 5 Jahren. Medikation: ASS 100 mg taglich, keine Antikoagulation postoperativ. Allergie: Penicillin.\n\nAufnahmebefund: [Vitalparameter zu erganzen]. Kardiopulmonale Auskultation, Beinbefund (Schwellung, Wadenschmerz?).\n\nDiagnostik: 12-Kanal-EKG, Blutentnahme (D-Dimere, Troponin, Blutbild, CRP, Procalcitonin, Gerinnung), Rontgen Thorax in 2 Ebenen, ggf. CT-Pulmonalisangiographie.\n\nTherapie: Saürstoffgabe, bei Bestatigung einer Pneumonie kalkulierte Antibiotikatherapie (Cephalosporin wegen Penicillinallergie), bei LE: Antikoagulation mit Heparin.\n\nAufklarung: Die Patientin wurde über die Differentialdiagnosen, die geplanten Untersuchungen und das weitere Vorgehen aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Ubergeben Sie die Patientin an den Internisten/Oberarzt. Strukturieren Sie nach ISBAR.",
+      "task": "Übergeben Sie die Patientin an den Internisten/Oberarzt. Strukturieren Sie nach ISBAR.",
       "handoverStructure": [
         "I – Identifikation: 67 Jahre, weiblich",
         "S – Situation: Akute Dyspnö, V.a. LE vs. Pneumonie, Saürstoffpflichtig",
@@ -298,7 +298,7 @@
         "A – Assessment: Beide Differentialdiagnosen sind gleich wahrscheinlich. DD-Dimere, EKG und Rontgen stehen aus.",
         "R – Recommendation: CT-Pulmonalisangiographie bei hohem LE-Verdacht, kalkulierte AB-Therapie bei Pneumonie"
       ],
-      "expectedSummary": "Wir haben eine 67-jahrige Patientin mit akuter Dyspnö, Husten mit gelblichem Auswurf und leichtem Fieber. Sie ist postoperativ nach Knie-TEP und hatte fruher bereits eine TVT. Differenzialdiagnostisch kommen sowohl eine Pneumonie als auch eine Lungenembolie in Betracht. Ich bitte um Ihre Mitbeurteilung und Entscheidung zur weiterfuhrenden Bildgebung.",
+      "expectedSummary": "Wir haben eine 67-jahrige Patientin mit akuter Dyspnö, Husten mit gelblichem Auswurf und leichtem Fieber. Sie ist postoperativ nach Knie-TEP und hatte früher bereits eine TVT. Differenzialdiagnostisch kommen sowohl eine Pneumonie als auch eine Lungenembolie in Betracht. Ich bitte um Ihre Mitbeurteilung und Entscheidung zur weiterfuhrenden Bildgebung.",
       "differentials": [
         "Lungenembolie (hohes Risiko durch OP und Immobilisation)",
         "Pneumonie (Fieber, eitriger Auswurf, CRP-Erhohung erwartet)",
@@ -332,7 +332,7 @@
       "patientCommunication": "Beruhigende und klare Ansprache trotz akuter Symptomatik. Verstandliche Erklarung der diagnostischen Schritte.",
       "medicalLogic": "Korrekte Einordnung beider Hauptdiagnosen. Angemessene Dringlichkeit und risikoadaptierte Diagnostik.",
       "documentation": "Strukturierter Aufnahmebefund. Differentialdiagnosen, Allergien und Risikofaktoren dokumentiert.",
-      "doctorToDoctorCommunication": "Pragnante Ubergabe mit den entscheidenden Risikofaktoren. Klare Bitte um Mitentscheidung.",
+      "doctorToDoctorCommunication": "Pragnante Übergabe mit den entscheidenden Risikofaktoren. Klare Bitte um Mitentscheidung.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache sicher, Patientenkommunikation adressatengerecht."
     },
     "tags": [
@@ -388,7 +388,7 @@
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Arztbrief / Uberweisungsbericht fur die 32-jahrige Patientin mit therapierefraktaren Kopfschmerzen und Migrane mit Aura.",
+      "task": "Verfassen Sie einen Arztbrief / Überweisungsbericht für die 32-jahrige Patientin mit therapierefraktaren Kopfschmerzen und Migrane mit Aura.",
       "requiredSections": [
         "Diagnose / Verdachtsdiagnose",
         "Anamnese (Kopfschmerzcharakteristik, Aura, Begleitsymptome, Risikofaktoren)",
@@ -404,10 +404,10 @@
         "Neurologische Red Flags: keine, keine Herdsymptome, kein Donnerschlagkopfschmerz",
         "Einnahme eines oralen Kontrazeptivums"
       ],
-      "modelOutline": "Arztbrief\n\nPatientin: 32 Jahre, weiblich\nDatum: [Datum]\n\nDiagnose: Migrane mit Aura, aktüll therapierefraktare Episode. Differentialdiagnostisch: Spannungskopfschmerz, sekundare Kopfschmerzursachen (ZNS-Lasion, zerebrale Ischamie).\n\nAnamnese: Die Patientin leidet seit 3 Tagen unter starken, halbseitigen, klopfenden Kopfschmerzen. Erstmalig trat eine visülle Aura mit Flimmerskotomen vor Schmerzbeginn auf. Begleitend bestehen Ubelkeit, Photophobie und leichte Gerauschuberempfindlichkeit. Keine Sprachstorungen, keine motorischen oder sensiblen Ausfalle. Kein Fieber, keine Nackensteifigkeit. Bisherige Migraneattacken (1-2x/Monat) sprachen auf Ibuprofen 600 mg an, diesmal keine Besserung. Risikofaktoren: orales Kontrazeptivum, keine weiteren.\n\nNeurologischer Befund: [Zu erganzen: Hirnnerven, Motorik, Sensibilitat, Koordination, Meningezeichen negativ].\n\nDiagnostik: Bei normalem neurologischen Befund und typischer Migranesymptomatik zunachst keine akute Bildgebung indiziert. Bei fehlendem Ansprechen auf Akuttherapie und Erstmanifestation einer Aura: cMRT zum Ausschluss einer strukturellen Lasion.\n\nTherapie: Akuttherapie mit Triptan (Sumatriptan 50 mg oral oder nasal), Antiemetikum (Metoclopramid). Besprechung der oralen Kontrazeption bei Migrane mit Aura. Ggf. Uberweisung in neurologische Praxis zur Prophylaxeeinstellung."
+      "modelOutline": "Arztbrief\n\nPatientin: 32 Jahre, weiblich\nDatum: [Datum]\n\nDiagnose: Migrane mit Aura, aktüll therapierefraktare Episode. Differentialdiagnostisch: Spannungskopfschmerz, sekundare Kopfschmerzursachen (ZNS-Lasion, zerebrale Ischamie).\n\nAnamnese: Die Patientin leidet seit 3 Tagen unter starken, halbseitigen, klopfenden Kopfschmerzen. Erstmalig trat eine visülle Aura mit Flimmerskotomen vor Schmerzbeginn auf. Begleitend bestehen Ubelkeit, Photophobie und leichte Gerauschuberempfindlichkeit. Keine Sprachstorungen, keine motorischen oder sensiblen Ausfalle. Kein Fieber, keine Nackensteifigkeit. Bisherige Migraneattacken (1-2x/Monat) sprachen auf Ibuprofen 600 mg an, diesmal keine Besserung. Risikofaktoren: orales Kontrazeptivum, keine weiteren.\n\nNeurologischer Befund: [Zu erganzen: Hirnnerven, Motorik, Sensibilitat, Koordination, Meningezeichen negativ].\n\nDiagnostik: Bei normalem neurologischen Befund und typischer Migranesymptomatik zunachst keine akute Bildgebung indiziert. Bei fehlendem Ansprechen auf Akuttherapie und Erstmanifestation einer Aura: cMRT zum Ausschluss einer strukturellen Lasion.\n\nTherapie: Akuttherapie mit Triptan (Sumatriptan 50 mg oral oder nasal), Antiemetikum (Metoclopramid). Besprechung der oralen Kontrazeption bei Migrane mit Aura. Ggf. Überweisung in neurologische Praxis zur Prophylaxeeinstellung."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Uberweisen Sie die Patientin an die Neurologie zur Mitbeurteilung der therapierefraktaren Migrane mit Aura.",
+      "task": "Überweisen Sie die Patientin an die Neurologie zur Mitbeurteilung der therapierefraktaren Migrane mit Aura.",
       "handoverStructure": [
         "I – Identifikation: 32-jahrige Patientin",
         "S – Situation: Therapierefraktare Migraneepisode mit erstmaliger Aura, Kopfschmerz seit 3 Tagen",
@@ -415,7 +415,7 @@
         "A – Assessment: Migrane mit Aura (ICHD-3-Kriterien), differentialdiagnostisch unkompliziert, aber therapiepflichtig",
         "R – Recommendation: Umstellung der Akuttherapie, Prufung der Kontrazeption, Beratung zu Prophylaxeoptionen"
       ],
-      "expectedSummary": "Wir haben eine 32-jahrige Patientin mit seit 3 Tagen bestehenden, therapierefraktaren Migranekopfschmerzen. Erstmalig ist eine visülle Aura aufgetreten. Neurologisch unauffallig, keine Red Flags. Sie nimmt orale Kontrazeptiva, was bei Migrane mit Aura problematisch sein kann. Ich uberweise zur neurologischen Mitbeurteilung und Therapieoptimierung.",
+      "expectedSummary": "Wir haben eine 32-jahrige Patientin mit seit 3 Tagen bestehenden, therapierefraktaren Migranekopfschmerzen. Erstmalig ist eine visülle Aura aufgetreten. Neurologisch unauffallig, keine Red Flags. Sie nimmt orale Kontrazeptiva, was bei Migrane mit Aura problematisch sein kann. Ich überweise zur neurologischen Mitbeurteilung und Therapieoptimierung.",
       "differentials": [
         "Migrane mit Aura (typisch)",
         "Spannungskopfschmerz (eher beidseitig, druckend)",
@@ -447,7 +447,7 @@
       "historyTaking": "Detailreiche Kopfschmerzanamnese, genaue Erfassung der Aura-Symptomatik und neurologischer Red Flags.",
       "patientCommunication": "Empathische Ansprache bei Schmerz. Klare Kommunikation der Dringlichkeit und Beratung zur Kontrazeption.",
       "medicalLogic": "Korrekte Risikobewertung. Angemessener Umgang mit neuer Aura-Symptomatik. Berucksichtigung des Thromboserisikos.",
-      "documentation": "Vollstandiger Uberweisungsbericht mit Anamnese, Untersuchungsbefund und klarer Therapieempfehlung.",
+      "documentation": "Vollstandiger Überweisungsbericht mit Anamnese, Untersuchungsbefund und klarer Therapieempfehlung.",
       "doctorToDoctorCommunication": "Pragnante Falldarstellung mit den entscheidenden Neürungen (Aura, Therapierefraktaritat).",
       "germanAccuracy": "B2+/C1 Niveau. Souverane Verwendung neurologischer Fachbegriffe. Patientenkommunikation verstandlich."
     },
@@ -456,16 +456,16 @@
       "kopfschmerz",
       "migrane",
       "aura",
-      "uberweisung",
+      "überweisung",
       "therapierefraktar"
     ]
   },
   {
     "id": "exam_005",
     "title": "Ruckenschmerz – V.a. Cauda-equina-Syndrom",
-    "case": "Ein 45-jahriger Patient klagt seit 2 Wochen uber starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein (L5/S1-Dermatom). Seit heute kommt eine Taubheit im GesaSSbereich und ein Taubheitsgefuhl beim Wasserlassen hinzu. Er hat das Gefuhl, nicht vollstandig Wasser lassen zu konnen.",
+    "case": "Ein 45-jahriger Patient klagt seit 2 Wochen über starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein (L5/S1-Dermatom). Seit heute kommt eine Taubheit im GesaSSbereich und ein Taubheitsgefuhl beim Wasserlassen hinzu. Er hat das Gefuhl, nicht vollstandig Wasser lassen zu konnen.",
     "part1_patientConversation": {
-      "setting": "Notaufnahme. Der Patient wurde vom Hausarzt mit Verdacht auf Cauda-equina-Syndrom eingewiesen. Der Patient ist beunruhigt uber die neuen Symptome.",
+      "setting": "Notaufnahme. Der Patient wurde vom Hausarzt mit Verdacht auf Cauda-equina-Syndrom eingewiesen. Der Patient ist beunruhigt über die neuen Symptome.",
       "patientRole": {
         "age": 45,
         "gender": "mannlich",
@@ -504,7 +504,7 @@
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen notfallmassigen Aufnahmebefund / Einweisungsbericht fur den 45-jahrigen Patienten mit V.a. Cauda-equina-Syndrom.",
+      "task": "Verfassen Sie einen notfallmassigen Aufnahmebefund / Einweisungsbericht für den 45-jahrigen Patienten mit V.a. Cauda-equina-Syndrom.",
       "requiredSections": [
         "Verdachtsdiagnose und Dringlichkeit",
         "Anamnese (Ruckenschmerz, Ausstrahlung, neurologische Symptome)",
@@ -520,10 +520,10 @@
         "Keine Vorerkrankungen, keine Rucken-OPs",
         "Neurologische Untersuchung: [Befund zu erganzen]"
       ],
-      "modelOutline": "Aufnahmebericht / Notfalleinweisung\n\nPatient: 45 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Cauda-equina-Syndrom bei Bandscheibenvorfall L5/S1 rechts. Notfall.\n\nAnamnese: Der Patient klagt seit 2 Wochen uber starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein entlang des L5/S1-Dermatoms. Seit heute besteht zusatzlich eine perianale Taubheit und ein unsicheres Gefuhl beim Wasserlassen. Der Patient kann die Blase nicht vollstandig entleeren. Keine Stuhlinkontinenz. Keine Beinschwache. Kein Fieber.\n\nNeurologischer Befund: Orientierende Untersuchung. [Motorik, Sensibilitat, Reflexe (PSR, ASR), Babinski, Reithosenareal zu erganzen].\n\nDiagnostik: Notfall-MRT der Lendenwirbelsaule (T1, T2, STIR-Seqünzen) zum Nachweis/Ausschluss einer Cauda-Kompression.\n\nProcedere: Bei Nachweis einer Cauda-Kompression: notfallmassige neurochirurgische Vorstellung und Dekompression innerhalb von 24-48 Stunden. Bei unauffalligem MRT: stationare Uberwachung, urologische Mitbeurteilung.\n\nAufklarung: Der Patient wurde uber die Dringlichkeit der Situation, die Notwendigkeit einer MRT-Untersuchung und die mogliche Notfalloperation aufgeklart. Einverstandnis liegt vor."
+      "modelOutline": "Aufnahmebericht / Notfalleinweisung\n\nPatient: 45 Jahre, mannlich\nAufnahmedatum: [Datum]\n\nVerdachtsdiagnose: Cauda-equina-Syndrom bei Bandscheibenvorfall L5/S1 rechts. Notfall.\n\nAnamnese: Der Patient klagt seit 2 Wochen über starke Kreuzschmerzen mit Ausstrahlung in das rechte Bein entlang des L5/S1-Dermatoms. Seit heute besteht zusatzlich eine perianale Taubheit und ein unsicheres Gefuhl beim Wasserlassen. Der Patient kann die Blase nicht vollstandig entleeren. Keine Stuhlinkontinenz. Keine Beinschwache. Kein Fieber.\n\nNeurologischer Befund: Orientierende Untersuchung. [Motorik, Sensibilitat, Reflexe (PSR, ASR), Babinski, Reithosenareal zu erganzen].\n\nDiagnostik: Notfall-MRT der Lendenwirbelsaule (T1, T2, STIR-Seqünzen) zum Nachweis/Ausschluss einer Cauda-Kompression.\n\nProcedere: Bei Nachweis einer Cauda-Kompression: notfallmassige neurochirurgische Vorstellung und Dekompression innerhalb von 24-48 Stunden. Bei unauffalligem MRT: stationare Überwachung, urologische Mitbeurteilung.\n\nAufklarung: Der Patient wurde über die Dringlichkeit der Situation, die Notwendigkeit einer MRT-Untersuchung und die mogliche Notfalloperation aufgeklart. Einverstandnis liegt vor."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Ubergeben Sie den Patienten notfallmassig an den Neurochirurgen. Verwenden Sie das ISBAR-Schema.",
+      "task": "Übergeben Sie den Patienten notfallmassig an den Neurochirurgen. Verwenden Sie das ISBAR-Schema.",
       "handoverStructure": [
         "I – Identifikation: 45 Jahre, mannlich, Bauarbeiter",
         "S – Situation: Notfall, V.a. Cauda-equina-Syndrom, neurologische Symptome seit heute",
@@ -531,7 +531,7 @@
         "A – Assessment: Reithosenanasthesie + Miktionsstorung = Cauda-equina-Syndrom bis zum Beweis des Gegenteils",
         "R – Recommendation: Notfall-MRT LWS, neurochirurgische Mitbeurteilung, ggf. notfallmassige Dekompression"
       ],
-      "expectedSummary": "Wir haben einen 45-jahrigen Patienten mit Cauda-equina-Verdacht. Seit 2 Wochen bestehen Kreuzschmerzen mit Ausstrahlung rechts, seit heute zusatzlich perianale Taubheit und Blasenentleerungsstorung. Ich halte eine notfallmassige MRT und Ihre neurochirurgische Mitbeurteilung fur dringend erforderlich.",
+      "expectedSummary": "Wir haben einen 45-jahrigen Patienten mit Cauda-equina-Verdacht. Seit 2 Wochen bestehen Kreuzschmerzen mit Ausstrahlung rechts, seit heute zusatzlich perianale Taubheit und Blasenentleerungsstorung. Ich halte eine notfallmassige MRT und Ihre neurochirurgische Mitbeurteilung für dringend erforderlich.",
       "differentials": [
         "Cauda-equina-Syndrom bei Bandscheibenvorfall (Hauptverdacht)",
         "Spondylodiszitis mit Abszessbildung",
@@ -564,7 +564,7 @@
       "patientCommunication": "Klare und ehrliche Kommunikation der Dringlichkeit. Keine falsche Beruhigung, aber professionelle Fuhrung.",
       "medicalLogic": "Korrekte Erkenntnis der Notfallsituation. Angemessene Dringlichkeitseinschatzung und Diagnostikplanung.",
       "documentation": "Praziser Notfallbericht mit klarer Diagnose und Dringlichkeit. Alle Red Flags dokumentiert.",
-      "doctorToDoctorCommunication": "Pragnante und dringliche Ubergabe. Klarer Handlungsbedarf und Zeitfenster kommuniziert.",
+      "doctorToDoctorCommunication": "Pragnante und dringliche Übergabe. Klarer Handlungsbedarf und Zeitfenster kommuniziert.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache korrekt, Notfallkommunikation angemessen."
     },
     "tags": [
@@ -590,7 +590,7 @@
         "allergies": "Keine bekannten"
       },
       "doctorTasks": [
-        "Erheben Sie eine Fremdanamnese bei der Freundin uber den Verlauf der letzten Tage.",
+        "Erheben Sie eine Fremdanamnese bei der Freundin über den Verlauf der letzten Tage.",
         "Ordnen Sie die notfallmassige Diagnostik an: BGA, Blutzucker, Elektrolyte, Ketonkorper.",
         "Dokumentieren Sie den Status und leiten Sie die notfallmassige Therapie ein.",
         "Klarung: Hat der Patient seinen Blutzucker in letzter Zeit kontrolliert? Welche Insulinschemata?",
@@ -613,11 +613,11 @@
         "Das ist eine akute Stoffwechselentgleisung, die wir sofort behandeln mussen. Wir werden gleich einen Zugang legen und mit der Infusionstherapie beginnen.",
         "Konnen Sie mir kurz schildern, wie es in den letzten Tagen war, bevor er nicht mehr richtig ansprechbar war?",
         "Hat er sein Insulin trotz des Infekts weggelassen, weil er nicht essen konnte, oder aus einem anderen Grund?",
-        "Wir werden ihn zunachst auf die Intensivstation verlegen, um ihn engmaschig zu uberwachen."
+        "Wir werden ihn zunachst auf die Intensivstation verlegen, um ihn engmaschig zu überwachen."
       ]
     },
     "part2_documentation": {
-      "task": "Verfassen Sie einen Aufnahmebefund fur den 29-jahrigen Patienten mit diabetischer Ketoazidose (Verdachtsdiagnose).",
+      "task": "Verfassen Sie einen Aufnahmebefund für den 29-jahrigen Patienten mit diabetischer Ketoazidose (Verdachtsdiagnose).",
       "requiredSections": [
         "Verdachtsdiagnose und Vitalparameter",
         "Fremdanamnese (Verlauf, Insulintherapie, Infekt)",
@@ -636,7 +636,7 @@
       "modelOutline": "Aufnahmebericht – Notfall\n\nPatient: 29 Jahre, mannlich\nAufnahmedatum: [Datum], [Uhrzeit]\n\nVerdachtsdiagnose: Diabetische Ketoazidose bei Typ-1-Diabetes, ausgelost durch Infekt und Insulinpausierung.\n\nFremdanamnese (Freundin): Der Patient habe seit 2 Tagen grippeahnliche Symptome (Husten, Schnupfen, subfebrile Temperaturen). Seit gestern habe er weder gegessen noch sein Insulin gespritzt, da ihm ubel war. Heute sei er zunehmend teilnahmslos geworden, habe tief und schnell geatmet.\n\nAufnahmebefund: Somnolent (GCS [Score]). Tiefe Azidose-Atmung (Kussmaul). Acetongeruch in der Atemluft. Haut trocken, verminderter Turgor. [Vitalparameter, Auskultation, Abdomen zu erganzen].\n\nLabor: [BGA: pH < 7,3, pCO2 erniedrigt, BE <-10, BZ > 250 mg/dl, Keton positiv im Urin/Serum. Elektrolyte, Nierenwerte, Blutbild].\n\nEingeleitete Therapie: Volumengabe (NaCl 0,9% initial 1 Liter pro Stunde), Insulintherapie (Alt-Insulin 0,1 IE/kg/h i.v. nach initialer Volumengabe), Kaliumsubstitution nach Bedarf, Monitoring auf Intensivstation.\n\nProcedere: Aufnahme Intensivstation. Engmaschige Kontrolle von BZ, BGA, Elektrolyten alle 1-2 Stunden. Infektsuche (Pneumonie?). Prufung, ob eine diabetologische Schulung erforderlich ist.\n\nAufklarung: Aufgrund der Bewusstseinseintrubung ist der Patient nicht einwilligungsfahig. Die notfallmassigen MaSSnahmen erfolgen im mutmaSSlichen Einverstandnis. Die Freundin wurde informiert."
     },
     "part3_doctorDoctorConversation": {
-      "task": "Ubergeben Sie den Patienten an den Intensivmediziner / Oberarzt. Strukturieren Sie nach ISBAR.",
+      "task": "Übergeben Sie den Patienten an den Intensivmediziner / Oberarzt. Strukturieren Sie nach ISBAR.",
       "handoverStructure": [
         "I – Identifikation: 29 Jahre, mannlich, Typ-1-Diabetiker",
         "S – Situation: Somnolent, Kussmaul-Atmung, V.a. diabetische Ketoazidose, Notfall",
@@ -644,7 +644,7 @@
         "A – Assessment: Klinisch schwere Ketoazidose. Labor: pH-Abfall, BZ-Anstieg, positive Ketonkorper zu erwarten.",
         "R – Recommendation: Intensivstation, Volumengabe, Insulinperfusor, Kalium-Monitoring, Infektsuche"
       ],
-      "expectedSummary": "Wir haben einen 29-jahrigen Typ-1-Diabetiker, somnolent, mit Kussmaul-Atmung und Acetongeruch. Ausloser ist ein Infekt und Insulinpausierung. Klinisch besteht eine schwere diabetische Ketoazidose. Ich habe die notfallmassige Diagnostik eingeleitet und bitte um Aufnahme auf die Intensivstation zur weiteren Uberwachung und Therapie.",
+      "expectedSummary": "Wir haben einen 29-jahrigen Typ-1-Diabetiker, somnolent, mit Kussmaul-Atmung und Acetongeruch. Ausloser ist ein Infekt und Insulinpausierung. Klinisch besteht eine schwere diabetische Ketoazidose. Ich habe die notfallmassige Diagnostik eingeleitet und bitte um Aufnahme auf die Intensivstation zur weiteren Überwachung und Therapie.",
       "differentials": [
         "Diabetische Ketoazidose (Hauptdiagnose)",
         "Hyperosmolares diabetisches Koma (eher bei Typ-2-Diabetes, selten Typ-1)",
@@ -679,7 +679,7 @@
       "patientCommunication": "Angemessene Kommunikation mit der Freundin. Klare Erklarung des Notfalls und der eingeleiteten MaSSnahmen.",
       "medicalLogic": "Korrekte Erkennung des lebensbedrohlichen Zustands. Zielgerichtete Therapieeinleitung ohne Verzogerung.",
       "documentation": "Strukturierter Notfallbericht. Fremdanamnese, Vitalparameter, Labordiagnostik und Therapie dokumentiert.",
-      "doctorToDoctorCommunication": "Pragnante und dringliche Ubergabe. Zeitkritische Dimension klar kommuniziert.",
+      "doctorToDoctorCommunication": "Pragnante und dringliche Übergabe. Zeitkritische Dimension klar kommuniziert.",
       "germanAccuracy": "B2+/C1 Niveau. Fachsprache in der Akutsituation korrekt angewandt."
     },
     "tags": [
@@ -694,7 +694,7 @@
   {
     "id": "exam_007",
     "title": "Hypertensive Krise - V.a. hypertensiven Notfall mit Endorganschaden",
-    "case": "Ein 62-jahriger Patient wird vom Hausarzt mit stark erhohtem Blutdruck (220/130 mmHg) in die Notaufnahme eingewiesen. Der Patient klagt uber starke Kopfschmerzen im Hinterkopf, verschwommenes Sehen und ein Druckgefuhl in der Brust. Die Symptome begannen vor etwa 3 Stunden.",
+    "case": "Ein 62-jahriger Patient wird vom Hausarzt mit stark erhohtem Blutdruck (220/130 mmHg) in die Notaufnahme eingewiesen. Der Patient klagt über starke Kopfschmerzen im Hinterkopf, verschwommenes Sehen und ein Druckgefuhl in der Brust. Die Symptome begannen vor etwa 3 Stunden.",
     "part1_patientConversation": {
       "setting": "Notaufnahme. Der Patient ist wach und orientiert, aber sichtlich angespannt. Die RR-Messung in der Anmeldung bestatigt die starke Hypertonie.",
       "patientRole": {

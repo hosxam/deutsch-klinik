@@ -32,7 +32,7 @@
       "prompt": "Stellen Sie sich vor. Schreiben Sie 3-4 Sätze über sich.",
       "instructions": "Wer sind Sie? Wo wohnen Sie? Was machen Sie?",
       "wordLimit": 50,
-      "tips": "Ich heiÃŸe ... Ich wohne in ... Ich bin Arzt/Ã„rztin.",
+      "tips": "Ich heiße ... Ich wohne in ... Ich bin Arzt/Ã„rztin.",
       "rubric": {
         "taskCompletion": "Vollständigkeit der Aufgabenstellung",
         "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzstellung)",
@@ -410,7 +410,7 @@
     {
       "lessonId": "A1_lesson_17",
       "title": "Mein Lieblingstier",
-      "prompt": "Schreiben Sie über Ihr Lieblingstier. Wie heisst es? Welche Farbe hat es? Was mag es?",
+      "prompt": "Schreiben Sie über Ihr Lieblingstier. Wie heißt es? Welche Farbe hat es? Was mag es?",
       "instructions": "Schreiben Sie 3 Sätze.",
       "wordLimit": 40,
       "tips": "Mein Lieblingstier ist ... Es ist ... und hat ... Es mag ...",
@@ -621,7 +621,7 @@
       "prompt": "Schreiben Sie über Ihren Deutschkurs oder Ihre Schule.",
       "instructions": "Schreiben Sie 3 Sätze. Wo lernen Sie? Wer ist Ihr Lehrer? Was lernen Sie?",
       "wordLimit": 50,
-      "tips": "Ich lerne Deutsch in ... Mein Lehrer heisst ... Wir lernen ...",
+      "tips": "Ich lerne Deutsch in ... Mein Lehrer heißt ... Wir lernen ...",
       "id": "A1_write_25",
       "level": "A1",
       "rubric": {
@@ -986,7 +986,7 @@
       "prompt": "Stellen Sie Ihre Familie vor. Schreiben Sie: Wie viele Personen sind in Ihrer Familie? Wie heissen sie? Wie alt sind sie? Was machen sie beruflich?",
       "instructions": "Schreiben Sie 5-6 Sätze.",
       "wordLimit": 70,
-      "tips": "Schreiben Sie: Meine Familie hat ... Personen. Das sind ... Mein Vater heisst ... und ist ... Jahre alt. Meine Mutter ... Ich habe einen Bruder/eine Schwester ...",
+      "tips": "Schreiben Sie: Meine Familie hat ... Personen. Das sind ... Mein Vater heißt ... und ist ... Jahre alt. Meine Mutter ... Ich habe einen Bruder/eine Schwester ...",
       "rubric": {
         "taskCompletion": "Vollständigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
         "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau).",
@@ -1299,7 +1299,7 @@
       "prompt": "Sie können Ihren Arzttermin nicht einhalten. Schreiben Sie eine kurze E-Mail an die Praxis.",
       "instructions": "Entschuldigen Sie sich, nennen Sie den ursprünglichen Termin, schlagen Sie einen neuen vor.",
       "wordLimit": 60,
-      "tips": "Sehr geehrte Damen und Herren, leider kann ich meinen Termin am ... nicht wahrnehmen. Können wir auf ... verschieben? Mit freundlichen GrüÃŸen",
+      "tips": "Sehr geehrte Damen und Herren, leider kann ich meinen Termin am ... nicht wahrnehmen. Können wir auf ... verschieben? Mit freundlichen Grüßen",
       "lessonId": "A2_lesson_1"
     },
     {
@@ -1362,7 +1362,7 @@
       "prompt": "Sie haben sich beim Sport verletzt. Schreiben Sie dem Arzt, was passiert ist.",
       "instructions": "Wann, wo und wie ist es passiert?",
       "wordLimit": 60,
-      "tips": "Gestern beim FuÃŸball bin ich umgeknickt. Mein Knöchel tut weh.",
+      "tips": "Gestern beim Fußball bin ich umgeknickt. Mein Knöchel tut weh.",
       "lessonId": "A2_lesson_4"
     },
     {
@@ -1605,7 +1605,7 @@
       "prompt": "Stellen Sie Ihre Stadt oder Ihr Dorf in einem kurzen Text vor.",
       "instructions": "Nennen Sie die Grösse, die Lage, was es zu sehen gibt, und ob es Ihnen gefällt.",
       "wordLimit": 80,
-      "tips": "Meine Stadt heisst ... und liegt in ... Sie hat etwa ... Einwohner. Besonders schön ist ... Mir gefällt ...",
+      "tips": "Meine Stadt heißt ... und liegt in ... Sie hat etwa ... Einwohner. Besonders schön ist ... Mir gefällt ...",
       "lessonId": "A2_lesson_18"
     },
     {
@@ -1686,7 +1686,7 @@
       "prompt": "Beschreiben Sie Ihr Haustier oder ein Tier, das Sie gern haben möchten.",
       "instructions": "Nennen Sie Art, Name, Aussehen, Charakter, und was es gern macht.",
       "wordLimit": 70,
-      "tips": "Ich habe einen Hund. Er heisst ... und ist ... Jahre alt. Er ist ... und mag am liebsten ...",
+      "tips": "Ich habe einen Hund. Er heißt ... und ist ... Jahre alt. Er ist ... und mag am liebsten ...",
       "lessonId": "A2_lesson_22"
     },
     {
@@ -2281,7 +2281,7 @@
       "id": "B2_write_9",
       "title": "Fachtext: Osteoporose-Prävention",
       "prompt": "Schreiben Sie einen kurzen Informationstext über Osteoporose-Prävention für Patienten.",
-      "instructions": "Erklären Sie Ursachen, Risikofaktoren und PräventionsmaÃŸnahmen.",
+      "instructions": "Erklären Sie Ursachen, Risikofaktoren und Präventionsmaßnahmen.",
       "wordLimit": 200,
       "tips": "Osteoporose ist eine Knochenerkrankung, die durch ... gekennzeichnet ist. Zur Prävention empfehlen sich ...",
       "lessonId": "B2_lesson_14",
@@ -3267,7 +3267,7 @@
       "prompt": "Schreiben Sie einen Informationstext für Patienten, die in Ihrer Praxis eine Magenspiegelung (Gastroskopie) erhalten werden.",
       "instructions": "Erklären Sie, warum die Untersuchung durchgeführt wird, wie die Vorbereitung aussieht (Nüchternheit, Medikamente absetzen), was während der Untersuchung passiert und was nach der Untersuchung zu beachten ist. Ca. 200-250 Wörter.",
       "wordLimit": 250,
-      "tips": "Liebe Patientin, lieber Patient, bei Ihnen wurde eine Magenspiegelung vereinbart. Die Untersuchung dient dazu, die Speiseröhre, den Magen und den Zwolffingerdarm zu untersuchen. Bitte kommen Sie nüchtern zu der Untersuchung, das heisst, Sie dürfen sechs Stunden vorher nichts essen.",
+      "tips": "Liebe Patientin, lieber Patient, bei Ihnen wurde eine Magenspiegelung vereinbart. Die Untersuchung dient dazu, die Speiseröhre, den Magen und den Zwolffingerdarm zu untersuchen. Bitte kommen Sie nüchtern zu der Untersuchung, das heißt, Sie dürfen sechs Stunden vorher nichts essen.",
       "rubric": {
         "taskCompletion": "Vollständigkeit der Aufgabenstellung. Hast du alle Punkte beantwortet?",
         "grammarAccuracy": "Grammatikalische Korrektheit (Artikel, Verbkonjugation, Satzbau, Nebensätze).",

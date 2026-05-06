@@ -10,7 +10,7 @@
     "example": "Der Patient wurde gestern zur Aufnahme in die Klinik gebracht.",
     "exampleTranslation": "The patient was admitted yesterday.",
     "patientFriendlyPhrase": "Sie werden jetzt aufgenommen. Sie bekommen ein Zimmer.",
-    "doctorToDoctorPhrase": "Die Aufnahme erfolgte um 14 Uhr uber die Notaufnahme.",
+    "doctorToDoctorPhrase": "Die Aufnahme erfolgte um 14 Uhr über die Notaufnahme.",
     "category": "General Hospital",
     "tags": [
       "admission"
@@ -24,7 +24,7 @@
     "plural": "die Entlassungen",
     "translation": "discharge",
     "layExplanation": "When a patient leaves hospital",
-    "example": "Die Entlassung ist fur morgen fruh geplant.",
+    "example": "Die Entlassung ist für morgen früh geplant.",
     "exampleTranslation": "Discharge is planned for tomorrow.",
     "patientFriendlyPhrase": "Sie konnen morgen nach Hause.",
     "doctorToDoctorPhrase": "Entlassung in die hausliche Versorgung.",
@@ -77,7 +77,7 @@
     "layExplanation": "Moving a patient to another department",
     "example": "Die Verlegung auf die Intensivstation war notwendig.",
     "exampleTranslation": "Transfer to ICU was necessary.",
-    "patientFriendlyPhrase": "Wir verlegen Sie zur besseren Uberwachung.",
+    "patientFriendlyPhrase": "Wir verlegen Sie zur besseren Überwachung.",
     "doctorToDoctorPhrase": "Bei Verschlechterung Verlegung auf ITS.",
     "category": "General Hospital",
     "tags": [
@@ -92,10 +92,10 @@
     "plural": null,
     "translation": "emergency department",
     "layExplanation": "Where emergency patients are first seen",
-    "example": "Der Patient kam uber die Notaufnahme zu uns.",
+    "example": "Der Patient kam über die Notaufnahme zu uns.",
     "exampleTranslation": "The patient came via the ED.",
     "patientFriendlyPhrase": "Sie sind jetzt in der Notaufnahme.",
-    "doctorToDoctorPhrase": "Aufnahme uber die zentrale Notaufnahme.",
+    "doctorToDoctorPhrase": "Aufnahme über die zentrale Notaufnahme.",
     "category": "General Hospital",
     "tags": [
       "emergency"
@@ -111,7 +111,7 @@
     "layExplanation": "Ward for critically ill patients",
     "example": "Der Patient wurde auf die Intensivstation verlegt.",
     "exampleTranslation": "The patient was transferred to ICU.",
-    "patientFriendlyPhrase": "Sie werden auf der Intensivstation intensiv uberwacht.",
+    "patientFriendlyPhrase": "Sie werden auf der Intensivstation intensiv überwacht.",
     "doctorToDoctorPhrase": "Verlegung auf ITS bei Kreislaufinstabilitat.",
     "category": "General Hospital",
     "tags": [
@@ -140,10 +140,10 @@
     "level": "FSP",
     "word": "der Oberarzt",
     "article": "der",
-    "plural": "die Oberarzte",
+    "plural": "die Oberärzte",
     "translation": "senior physician / attending",
     "layExplanation": "Senior doctor supervising the ward team",
-    "example": "Der Oberarzt entscheidet uber die weitere Therapie.",
+    "example": "Der Oberarzt entscheidet über die weitere Therapie.",
     "exampleTranslation": "The senior physician decides on further treatment.",
     "patientFriendlyPhrase": "Der Oberarzt wird sich Ihren Fall ansehen.",
     "doctorToDoctorPhrase": "Rucksprache mit dem Oberarzt erforderlich.",
@@ -162,7 +162,7 @@
     "layExplanation": "Most senior doctor in charge of a department",
     "example": "Der Chefarzt leitet die Visite jeden Mittwoch.",
     "exampleTranslation": "The chief leads rounds every Wednesday.",
-    "patientFriendlyPhrase": "Der Chefarzt wird Sie morgen fruh sehen.",
+    "patientFriendlyPhrase": "Der Chefarzt wird Sie morgen früh sehen.",
     "doctorToDoctorPhrase": "Vorstellung im Chefarzt des Zentrums.",
     "category": "General Hospital",
     "tags": [
@@ -196,7 +196,7 @@
     "layExplanation": "History reported by the patient themselves",
     "example": "Der Patient gab in der Eigenanamnese Asthma an.",
     "exampleTranslation": "The patient reported asthma in his history.",
-    "patientFriendlyPhrase": "Hatten Sie fruher schon gesundheitliche Probleme?",
+    "patientFriendlyPhrase": "Hatten Sie früher schon gesundheitliche Probleme?",
     "doctorToDoctorPhrase": "Eigenanamnese: Asthma seit Kindheit.",
     "category": "Anamnesis",
     "tags": [
@@ -364,9 +364,9 @@
     "plural": "die Beschwerden",
     "translation": "complaint/discomfort",
     "layExplanation": "What troubles the patient",
-    "example": "Patient klagt uber stechende Brustschmerzen.",
+    "example": "Patient klagt über stechende Brustschmerzen.",
     "exampleTranslation": "Patient complains of stabbing chest pain.",
-    "patientFriendlyPhrase": "Was fur Beschwerden haben Sie?",
+    "patientFriendlyPhrase": "Was für Beschwerden haben Sie?",
     "doctorToDoctorPhrase": "Hauptbeschwerde: retrosternales Druckgefuhl.",
     "category": "Symptoms",
     "tags": [
@@ -461,12 +461,12 @@
   {
     "id": "fsp_v_28",
     "level": "FSP",
-    "word": "die Mudigkeit",
+    "word": "die Müdigkeit",
     "article": "die",
     "plural": null,
     "translation": "fatigü",
     "layExplanation": "Extreme tiredness",
-    "example": "Der Patient klagt uber starke Mudigkeit.",
+    "example": "Der Patient klagt über starke Müdigkeit.",
     "exampleTranslation": "Patient complains of severe fatigü.",
     "patientFriendlyPhrase": "Fuhlen Sie sich mud und erschopft?",
     "doctorToDoctorPhrase": "Ausgepragte Fatigü bei Eisenmangelanamie.",
@@ -1046,7 +1046,7 @@
     "layExplanation": "Stomach contents coming out through mouth",
     "example": "Erbrechen mehrmals taglich.",
     "exampleTranslation": "Vomiting several times daily.",
-    "patientFriendlyPhrase": "Mussten Sie sich ubergeben?",
+    "patientFriendlyPhrase": "Mussten Sie sich übergeben?",
     "doctorToDoctorPhrase": "Wiederholtes Erbrechen.",
     "category": "Gastrointestinal",
     "tags": [
@@ -1214,7 +1214,7 @@
     "plural": null,
     "translation": "dizziness",
     "layExplanation": "Feeling of spinning or unsteadiness",
-    "example": "Drehschwindel fur 30 Sekunden.",
+    "example": "Drehschwindel für 30 Sekunden.",
     "exampleTranslation": "Vertigo for 30 seconds.",
     "patientFriendlyPhrase": "Ist Ihnen schwindelig?",
     "doctorToDoctorPhrase": "Benigner paroxysmaler Lagerungsschwindel.",
@@ -1608,7 +1608,7 @@
     "example": "Reanimation nach Kreislaufstillstand.",
     "exampleTranslation": "Resuscitation after cardiac arrest.",
     "patientFriendlyPhrase": "Wiederbelebung.",
-    "doctorToDoctorPhrase": "Kardiopulmonale Reanimation uber 15 Minuten.",
+    "doctorToDoctorPhrase": "Kardiopulmonale Reanimation über 15 Minuten.",
     "category": "Emergency Medicine",
     "tags": [
       "resuscitation"
@@ -1624,7 +1624,7 @@
     "layExplanation": "Immune response to an allergen",
     "example": "Allergische Reaktion auf Penicillin.",
     "exampleTranslation": "Allergic reaction to penicillin.",
-    "patientFriendlyPhrase": "Uberempfindlichkeitsreaktion.",
+    "patientFriendlyPhrase": "Überempfindlichkeitsreaktion.",
     "doctorToDoctorPhrase": "Anaphylaktische Reaktion.",
     "category": "Allergies",
     "tags": [
@@ -1692,7 +1692,7 @@
     "layExplanation": "Tube to drain fluid",
     "example": "Drainage nach der Operation.",
     "exampleTranslation": "Drain after surgery.",
-    "patientFriendlyPhrase": "Ein Schlauch fur Wundsekret.",
+    "patientFriendlyPhrase": "Ein Schlauch für Wundsekret.",
     "doctorToDoctorPhrase": "Wunddrainage, Forderung seros.",
     "category": "Procedures",
     "tags": [

@@ -327,7 +327,7 @@
     "script": "Guten Morgen, Frau Schneider. Ich erkläre Ihnen jetzt Ihr neues Medikament. Sie bekommen Apixaban, das ist ein Blutverdünner. Sie nehmen eine Tablette, zweimal täglich, also alle zwölf Stunden. Wichtig: Nehmen Sie die Tablette immer zur gleichen Zeit. Wenn Sie eine Tablette vergessen haben, holen Sie diese nur nach, wenn es weniger als sechs Stunden her ist. Sonst lassen Sie die vergessene Tablette aus. Achten Sie auf Blutungen: blaue Flecken ohne Grund, rot gefärbter Urin oder schwarzer Stuhl. Wenn das passiert, kommen Sie sofort in die Notaufnahme. Vor Operationen oder Zahnbehandlungen müssen Sie das Medikament kurz absetzen, aber nur in Absprache mit Ihrem Arzt.",
     "questions": [
       {
-        "question": "Wie heisst das Medikament, das Frau Schneider bekommt?",
+        "question": "Wie heißt das Medikament, das Frau Schneider bekommt?",
         "options": [
           "Heparin",
           "Apixaban",
@@ -836,7 +836,7 @@
     "id": "l14",
     "title": "Terminvereinbarung: MRT-Termin",
     "type": "Imaging appointment call",
-    "script": "Radiologische Praxis Dr. Neumann, Frau Polat am Telefon, guten Tag.\\nAnruferin: Guten Tag, ich bin Frau Zimmermann. Mein Orthopäde hat mich zu einem MRT der Lendenwirbelsäule überwiesen.\\nFrau Polat: Gerne, da machen wir einen Termin. Haben Sie eine Kontrastmittelallergie?\\nAnruferin: Nein, habe ich nicht.\\nFrau Polat: Sind Sie schwanger oder stillen Sie?\\nAnruferin: Nein, beides nicht.\\nFrau Polat: Perfekt. Der nächste Termin ist am Donnerstag um 8:30 Uhr. Bitte erscheinen Sie nüchtern, das heisst, Sie dürfen sechs Stunden vorher nichts essen, aber Wasser trinken ist erlaubt. Bringen Sie die Überweisung und alle vorhandenen Röntgenbilder mit. Planen Sie etwa 45 Minuten für die Untersuchung ein.",
+    "script": "Radiologische Praxis Dr. Neumann, Frau Polat am Telefon, guten Tag.\\nAnruferin: Guten Tag, ich bin Frau Zimmermann. Mein Orthopäde hat mich zu einem MRT der Lendenwirbelsäule überwiesen.\\nFrau Polat: Gerne, da machen wir einen Termin. Haben Sie eine Kontrastmittelallergie?\\nAnruferin: Nein, habe ich nicht.\\nFrau Polat: Sind Sie schwanger oder stillen Sie?\\nAnruferin: Nein, beides nicht.\\nFrau Polat: Perfekt. Der nächste Termin ist am Donnerstag um 8:30 Uhr. Bitte erscheinen Sie nüchtern, das heißt, Sie dürfen sechs Stunden vorher nichts essen, aber Wasser trinken ist erlaubt. Bringen Sie die Überweisung und alle vorhandenen Röntgenbilder mit. Planen Sie etwa 45 Minuten für die Untersuchung ein.",
     "questions": [
       {
         "question": "Welche Untersuchung wurde verordnet?",
@@ -1028,7 +1028,7 @@
     "id": "l17",
     "title": "Psychiatrisches Erstgespräch: Schlafstörungen",
     "type": "Psychiatric basic consultation",
-    "script": "Guten Tag, Herr Dr. Lorenz. Mein Hausarzt hat mich überwiesen, weil ich nicht mehr schlafen kann.\\nPatient: Ja, das stimmt. Seit etwa drei Monaten schlafe ich schlecht ein und wache nachts mehrmals auf. Ich grüble dann stundenlang über meine Arbeit. Ich bin Steürberater und habe sehr viel Stress im Moment.\\nArzt: Haben Sie auch andere Symptome? Niedergeschlagenheit, Antriebslosigkeit?\\nPatient: Schon, ja. Ich habe keine Lust mehr auf meine Hobbys, ich treffe mich kaum noch mit Freunden. Morgens fällt es mir schwer, aus dem Bett zu kommen.\\nArzt: Das klingt nach einer depressiven Episode. Ich würde gerne eine Psychotherapie beginnen und Ihnen für den Anfang ein pflanzliches Präparat empfehlen. Wenn das nicht reicht, können wir über Medikamente sprechen.",
+    "script": "Guten Tag, Herr Dr. Lorenz. Mein Hausarzt hat mich überwiesen, weil ich nicht mehr schlafen kann.\\nPatient: Ja, das stimmt. Seit etwa drei Monaten schlafe ich schlecht ein und wache nachts mehrmals auf. Ich grüble dann stundenlang über meine Arbeit. Ich bin Steuerberater und habe sehr viel Stress im Moment.\\nArzt: Haben Sie auch andere Symptome? Niedergeschlagenheit, Antriebslosigkeit?\\nPatient: Schon, ja. Ich habe keine Lust mehr auf meine Hobbys, ich treffe mich kaum noch mit Freunden. Morgens fällt es mir schwer, aus dem Bett zu kommen.\\nArzt: Das klingt nach einer depressiven Episode. Ich würde gerne eine Psychotherapie beginnen und Ihnen für den Anfang ein pflanzliches Präparat empfehlen. Wenn das nicht reicht, können wir über Medikamente sprechen.",
     "questions": [
       {
         "question": "Seit wann hat der Patient Schlafstörungen?",
@@ -1043,7 +1043,7 @@
         "question": "Welchen Beruf hat der Patient?",
         "options": [
           "Arzt",
-          "Steürberater",
+          "Steuerberater",
           "Lehrer",
           "Ingenieur"
         ]
@@ -1069,7 +1069,7 @@
     ],
     "answers": [
       "Seit etwa drei Monaten",
-      "Steürberater",
+      "Steuerberater",
       "Niedergeschlagenheit und Antriebslosigkeit",
       "Eine Psychotherapie und ein pflanzliches Präparat"
     ],
@@ -1346,9 +1346,9 @@
   },
   {
     "id": "l23",
-    "title": "Pflege-Ubergabe: Schlaganfall-Patient",
+    "title": "Pflege-Übergabe: Schlaganfall-Patient",
     "type": "Nurse-doctor handover",
-    "script": "Schwester Maria: Guten Morgen, Herr Oberarzt. Ich ubergebe den Patienten aus Zimmer 108, Herrn Kramer, 71 Jahre. Er wurde gestern mit einem akuten Schlaganfall eingeliefert und hat sofort eine Thrombolyse bekommen. Der NIHSS-Score war bei Aufnahme 12, jetzt liegt er bei 6. Der Blutdruck ist stabil bei 135 zu 85. Er hat eine leichte Sprachstorung und eine Hemiparese der rechten Seite. Die Schluckfunktion wurde gepruft, er kann unter Aufsicht pures Essen zu sich nehmen. Die Mobilisation beginnt heute mit dem Physiotherapeuten. Bitte beachten Sie: Der Patient ist verwirrt und braucht viel Orientierungshilfe.",
+    "script": "Schwester Maria: Guten Morgen, Herr Oberarzt. Ich übergebe den Patienten aus Zimmer 108, Herrn Kramer, 71 Jahre. Er wurde gestern mit einem akuten Schlaganfall eingeliefert und hat sofort eine Thrombolyse bekommen. Der NIHSS-Score war bei Aufnahme 12, jetzt liegt er bei 6. Der Blutdruck ist stabil bei 135 zu 85. Er hat eine leichte Sprachstorung und eine Hemiparese der rechten Seite. Die Schluckfunktion wurde gepruft, er kann unter Aufsicht pures Essen zu sich nehmen. Die Mobilisation beginnt heute mit dem Physiotherapeuten. Bitte beachten Sie: Der Patient ist verwirrt und braucht viel Orientierungshilfe.",
     "questions": [
       {
         "question": "Welche Diagnose hat Herr Kramer?",
@@ -1405,7 +1405,7 @@
       "B2",
       "Schlaganfall",
       "Neurologie",
-      "Ubergabe"
+      "Übergabe"
     ]
   },
   {
@@ -1428,7 +1428,7 @@
         "options": [
           "Rauchen",
           "Ein langer Flug",
-          "Ubergewicht",
+          "Übergewicht",
           "Diabetes"
         ]
       },
@@ -1540,7 +1540,7 @@
     "id": "l26",
     "title": "Medikamentenberatung: Antibiotika-Einnahme",
     "type": "Medication instructions",
-    "script": "Herr Braun, ich erklare Ihnen jetzt, wie Sie Ihr Antibiotikum einnehmen mussen. Sie bekommen Amoxicillin 1000 mg, dreimal taglich. Das heisst alle acht Stunden. Wichtig: Nehmen Sie die Tablette immer mit einem grossen Glas Wasser ein. Sie konnen es vor, wahrend oder nach dem Essen nehmen, Hauptsache Sie vergessen keine Dosis. Wenn Sie eine Einnahme vergessen haben und es sind weniger als vier Stunden vergangen, holen Sie sie nach. Sonst lassen Sie sie aus und nehmen die nachste planmassig. Nehmen Sie niemals die doppelte Dosis. Haufige Nebenwirkungen sind Durchfall und Ubelkeit. Wenn Sie einen Hautausschlag bekommen oder Atemnot haben, brechen Sie die Einnahme sofort ab und kommen Sie in die Notaufnahme.",
+    "script": "Herr Braun, ich erklare Ihnen jetzt, wie Sie Ihr Antibiotikum einnehmen mussen. Sie bekommen Amoxicillin 1000 mg, dreimal taglich. Das heißt alle acht Stunden. Wichtig: Nehmen Sie die Tablette immer mit einem grossen Glas Wasser ein. Sie konnen es vor, wahrend oder nach dem Essen nehmen, Hauptsache Sie vergessen keine Dosis. Wenn Sie eine Einnahme vergessen haben und es sind weniger als vier Stunden vergangen, holen Sie sie nach. Sonst lassen Sie sie aus und nehmen die nachste planmassig. Nehmen Sie niemals die doppelte Dosis. Haufige Nebenwirkungen sind Durchfall und Ubelkeit. Wenn Sie einen Hautausschlag bekommen oder Atemnot haben, brechen Sie die Einnahme sofort ab und kommen Sie in die Notaufnahme.",
     "questions": [
       {
         "question": "Welches Antibiotikum bekommt Herr Braun?",
@@ -1668,7 +1668,7 @@
     "id": "l28",
     "title": "Terminvereinbarung: Hautarzt",
     "type": "Appointment call",
-    "script": "Hautarztpraxis Dr. Hassan, Frau Yildiz, guten Tag.\nAnruferin: Guten Tag, ich bin Frau Kruse. Mein Hausarzt hat mich uberwiesen, weil ich eine verdachtige Hautveranderung am Rucken habe. Sie hat sich in den letzten Wochen verandert.\nFrau Yildiz: Gerne, da machen wir einen Termin zur Hautkrebsvorsorge. Konnen Sie kurz beschreiben, wie die Veranderung aussieht?\nAnruferin: Es ist ein brauner Fleck, etwa einen Zentimeter gross, unregelmassig geformt und an den Randern etwas rotlich.\nFrau Yildiz: Das sollten wir uns auf jeden Fall ansehen. Ich habe nachste Woche Mittwoch um 11:15 Uhr frei oder Donnerstag um 9:45 Uhr.\nAnruferin: Mittwoch um 11:15 ware gut.\nFrau Yildiz: Bitte bringen Sie die Uberweisung und Ihre Versichertenkarte mit. Wir werden ein Auflichtmikroskop verwenden, das tut nicht weh.",
+    "script": "Hautarztpraxis Dr. Hassan, Frau Yildiz, guten Tag.\nAnruferin: Guten Tag, ich bin Frau Kruse. Mein Hausarzt hat mich überwiesen, weil ich eine verdachtige Hautveranderung am Rucken habe. Sie hat sich in den letzten Wochen verandert.\nFrau Yildiz: Gerne, da machen wir einen Termin zur Hautkrebsvorsorge. Konnen Sie kurz beschreiben, wie die Veranderung aussieht?\nAnruferin: Es ist ein brauner Fleck, etwa einen Zentimeter gross, unregelmassig geformt und an den Randern etwas rotlich.\nFrau Yildiz: Das sollten wir uns auf jeden Fall ansehen. Ich habe nachste Woche Mittwoch um 11:15 Uhr frei oder Donnerstag um 9:45 Uhr.\nAnruferin: Mittwoch um 11:15 ware gut.\nFrau Yildiz: Bitte bringen Sie die Überweisung und Ihre Versichertenkarte mit. Wir werden ein Auflichtmikroskop verwenden, das tut nicht weh.",
     "questions": [
       {
         "question": "Warum mochte Frau Kruse einen Termin beim Hautarzt?",
@@ -1719,7 +1719,7 @@
       "Hautkrebsvorsorge",
       "Muttermal",
       "Auflichtmikroskop",
-      "Uberweisung"
+      "Überweisung"
     ],
     "tags": [
       "B2",
@@ -1732,7 +1732,7 @@
     "id": "l29",
     "title": "Versicherungsgesprach: Krankenhausaufenthalt",
     "type": "Insurance/admin call",
-    "script": "Krankenkasse Techniker Krankenkasse, Herr Wagner, was kann ich fur Sie tun?\nAnrufer: Guten Tag, ich bin Herr Schulze. Ich war letzte Woche fur vier Tage im Krankenhaus wegen einer Gallenblasen-OP. Ich habe jetzt die Rechnung bekommen und verstehe einige Positionen nicht.\nHerr Wagner: Das kann ich Ihnen erklaren. Zeigen Sie mir die Rechnung. Die Kosten fur den stationaren Aufenthalt werden direkt mit der Krankenkasse abgerechnet, das mussen Sie nicht selbst zahlen. Was Sie sehen, ist wahrscheinlich der Eigenanteil fur die Zusatzleistungen.\nAnrufer: Ja, da steht etwas von Zweibettzimmer und Chefarztbehandlung.\nHerr Wagner: Genau. Ein Zweibettzimmer kostet 25 Euro pro Tag extra, insgesamt 100 Euro. Die Chefarztbehandlung ist eine Wahlleistung mit 80 Euro. Dazu kommt die Zuzahlung von 10 Euro pro Tag fur den Krankenhausaufenthalt, also 40 Euro. Das macht insgesamt 220 Euro, die Sie selbst tragen mussen.",
+    "script": "Krankenkasse Techniker Krankenkasse, Herr Wagner, was kann ich für Sie tun?\nAnrufer: Guten Tag, ich bin Herr Schulze. Ich war letzte Woche für vier Tage im Krankenhaus wegen einer Gallenblasen-OP. Ich habe jetzt die Rechnung bekommen und verstehe einige Positionen nicht.\nHerr Wagner: Das kann ich Ihnen erklaren. Zeigen Sie mir die Rechnung. Die Kosten für den stationaren Aufenthalt werden direkt mit der Krankenkasse abgerechnet, das mussen Sie nicht selbst zahlen. Was Sie sehen, ist wahrscheinlich der Eigenanteil für die Zusatzleistungen.\nAnrufer: Ja, da steht etwas von Zweibettzimmer und Chefarztbehandlung.\nHerr Wagner: Genau. Ein Zweibettzimmer kostet 25 Euro pro Tag extra, insgesamt 100 Euro. Die Chefarztbehandlung ist eine Wahlleistung mit 80 Euro. Dazu kommt die Zuzahlung von 10 Euro pro Tag für den Krankenhausaufenthalt, also 40 Euro. Das macht insgesamt 220 Euro, die Sie selbst tragen mussen.",
     "questions": [
       {
         "question": "Warum war Herr Schulze im Krankenhaus?",
@@ -1796,7 +1796,7 @@
     "id": "l30",
     "title": "Angehorigengesprach: Krebspatient",
     "type": "Family member discussion",
-    "script": "Frau Doktor, danke, dass Sie sich Zeit nehmen. Ich bin die Tochter von Herrn Jung, er ist 64 und hat Bauchspeicheldrusenkrebs. Wir haben gestern die Diagnose bekommen und sind total uberfordert.\nArztin: Ich verstehe Ihre Situation, das ist eine sehr schwere Diagnose. Ihr Vater hat einen Tumor im Pankreaskopf. Leider ist er schon in die umliegenden Lymphknoten gestreut, eine Operation ist nicht mehr moglich.\nTochter: Aber es gibt doch Behandlungen, oder?\nArztin: Ja, wir werden eine Chemotherapie beginnen. Ziel ist es, den Tumor zu verkleinern und das Fortschreiten zu verlangsamen. Wir werden auch einen Palliativmediziner dazu holen, damit Ihr Vater so wenig Schmerzen wie moglich hat.\nTochter: Wie lange hat er noch?\nArztin: Das kann man nicht genau sagen. Im Durchschnitt sind es mit Chemotherapie etwa ein bis zwei Jahre. Aber jeder Mensch ist anders.",
+    "script": "Frau Doktor, danke, dass Sie sich Zeit nehmen. Ich bin die Tochter von Herrn Jung, er ist 64 und hat Bauchspeicheldrusenkrebs. Wir haben gestern die Diagnose bekommen und sind total überfordert.\nArztin: Ich verstehe Ihre Situation, das ist eine sehr schwere Diagnose. Ihr Vater hat einen Tumor im Pankreaskopf. Leider ist er schon in die umliegenden Lymphknoten gestreut, eine Operation ist nicht mehr moglich.\nTochter: Aber es gibt doch Behandlungen, oder?\nArztin: Ja, wir werden eine Chemotherapie beginnen. Ziel ist es, den Tumor zu verkleinern und das Fortschreiten zu verlangsamen. Wir werden auch einen Palliativmediziner dazu holen, damit Ihr Vater so wenig Schmerzen wie moglich hat.\nTochter: Wie lange hat er noch?\nArztin: Das kann man nicht genau sagen. Im Durchschnitt sind es mit Chemotherapie etwa ein bis zwei Jahre. Aber jeder Mensch ist anders.",
     "questions": [
       {
         "question": "Welche Diagnose hat der Vater der Anruferin?",
@@ -1860,7 +1860,7 @@
     "id": "l21",
     "title": "Patientenmonolog: Kopfschmerzen und Sehstorungen",
     "type": "Patient complaint monologue",
-    "script": "Guten Tag, ich bin Frau Werner, 45 Jahre alt. Seit etwa zwei Wochen habe ich fast taglich starke Kopfschmerzen, besonders hinter den Augen. Manchmal sehe ich verschwommen oder habe Lichtblitze. Einmal hatte ich sogar kurz einen schwarzen Fleck im Sichtfeld. Ich arbeite viel am Computer, aber ich glaube nicht, dass es nur davon kommt. Mein Hausarzt hat meinen Blutdruck gemessen, der war normal. Er hat mich zum Augenarzt uberwiesen, aber der sagte, meine Augen seien in Ordnung. Jetzt soll ich zum Neurologen. Ich habe Angst, dass es etwas Schlimmes sein konnte.",
+    "script": "Guten Tag, ich bin Frau Werner, 45 Jahre alt. Seit etwa zwei Wochen habe ich fast taglich starke Kopfschmerzen, besonders hinter den Augen. Manchmal sehe ich verschwommen oder habe Lichtblitze. Einmal hatte ich sogar kurz einen schwarzen Fleck im Sichtfeld. Ich arbeite viel am Computer, aber ich glaube nicht, dass es nur davon kommt. Mein Hausarzt hat meinen Blutdruck gemessen, der war normal. Er hat mich zum Augenarzt überwiesen, aber der sagte, meine Augen seien in Ordnung. Jetzt soll ich zum Neurologen. Ich habe Angst, dass es etwas Schlimmes sein konnte.",
     "questions": [
       {
         "question": "Seit wann hat Frau Werner die Kopfschmerzen?",
@@ -1890,7 +1890,7 @@
         ]
       },
       {
-        "question": "Wohin wird Frau Werner uberwiesen?",
+        "question": "Wohin wird Frau Werner überwiesen?",
         "options": [
           "Zum Orthopaden",
           "Zum Neurologen",
@@ -1911,7 +1911,7 @@
       "Sehstorungen",
       "Augenarzt",
       "Neurologe",
-      "Uberweisung"
+      "Überweisung"
     ],
     "tags": [
       "B2",
@@ -1924,7 +1924,7 @@
     "id": "l37",
     "title": "Psychiatrisches Gesprach: Angststorung",
     "type": "Psychiatric basic consultation",
-    "script": "Guten Tag, Herr Doktor Muller. Was beschaftigt Sie?\nPatient: Ich weiss nicht, ob ich verruckt bin. Ich habe seit Monaten diese Angstzustande. Auf einmal fangt mein Herz an zu rasen, ich schwitze, mir wird schwindelig. Ich denke dann, ich muss sterben.\nArzt: Das klingt nach Panikattacken. Wie oft passiert das?\nPatient: Ein- bis zweimal pro Woche. Ich vermeide schon manche Situationen, zum Beispiel fahre ich nicht mehr U-Bahn, weil ich da mal eine Attacke hatte.\nArzt: Das ist typisch fur eine Panikstorung mit Agoraphobie. Ich wurde Ihnen zu einer Verhaltenstherapie raten. In akuten Fallen kann auch ein Medikament helfen, aber wir versuchen es zürst ohne. Ich gebe Ihnen eine Atemubung mit: Bei einer Panikattacke atmen Sie vier Sekunden ein, halten den Atem fur vier Sekunden und atmen sechs Sekunden lang aus.",
+    "script": "Guten Tag, Herr Doktor Muller. Was beschaftigt Sie?\nPatient: Ich weiss nicht, ob ich verruckt bin. Ich habe seit Monaten diese Angstzustande. Auf einmal fangt mein Herz an zu rasen, ich schwitze, mir wird schwindelig. Ich denke dann, ich muss sterben.\nArzt: Das klingt nach Panikattacken. Wie oft passiert das?\nPatient: Ein- bis zweimal pro Woche. Ich vermeide schon manche Situationen, zum Beispiel fahre ich nicht mehr U-Bahn, weil ich da mal eine Attacke hatte.\nArzt: Das ist typisch für eine Panikstorung mit Agoraphobie. Ich wurde Ihnen zu einer Verhaltenstherapie raten. In akuten Fallen kann auch ein Medikament helfen, aber wir versuchen es zürst ohne. Ich gebe Ihnen eine Atemubung mit: Bei einer Panikattacke atmen Sie vier Sekunden ein, halten den Atem für vier Sekunden und atmen sechs Sekunden lang aus.",
     "questions": [
       {
         "question": "Welche Symptome beschreibt der Patient?",
@@ -1988,7 +1988,7 @@
     "id": "l38",
     "title": "Padiatrie: Fieber bei Kleinkind",
     "type": "Pediatric parent discussion",
-    "script": "Guten Morgen, Frau Berger. Ihre kleine Emma, 18 Monate, hat seit gestern Fieber bis 39,5 Grad. Richtig?\nMutter: Ja, sie ist ganz schlapp, weint viel und will nicht essen. Sie hat auch etwas Durchfall.\nArzt: Wie ist der Allgemeinzustand? Trinkt sie genug?\nMutter: Ich biete ihr oft Tee an, aber sie trinkt nur wenig. Die Windel war heute morgen trocken, sonst ist sie immer nass.\nArzt: Das ist ein Warnzeichen. Wenn Kinder zu wenig trinken, konnen sie austrocknen. Ich wurde Emma gerne fur eine kurze Uberwachung hierbehalten. Wir geben ihr Flussigkeit uber eine kleine Infusion. Das ist nur ein kleiner Zugang am Handrucken. Meistens geht es den Kindern danach viel besser. Wenn das Fieber uber 40 Grad steigt, geben wir ein fiebersenkendes Zapfchen.",
+    "script": "Guten Morgen, Frau Berger. Ihre kleine Emma, 18 Monate, hat seit gestern Fieber bis 39,5 Grad. Richtig?\nMutter: Ja, sie ist ganz schlapp, weint viel und will nicht essen. Sie hat auch etwas Durchfall.\nArzt: Wie ist der Allgemeinzustand? Trinkt sie genug?\nMutter: Ich biete ihr oft Tee an, aber sie trinkt nur wenig. Die Windel war heute morgen trocken, sonst ist sie immer nass.\nArzt: Das ist ein Warnzeichen. Wenn Kinder zu wenig trinken, konnen sie austrocknen. Ich wurde Emma gerne für eine kurze Überwachung hierbehalten. Wir geben ihr Flussigkeit über eine kleine Infusion. Das ist nur ein kleiner Zugang am Handrucken. Meistens geht es den Kindern danach viel besser. Wenn das Fieber über 40 Grad steigt, geben wir ein fiebersenkendes Zapfchen.",
     "questions": [
       {
         "question": "Wie alt ist Emma?",
@@ -2012,7 +2012,7 @@
         "question": "Was schlagt der Arzt vor?",
         "options": [
           "Das Kind nach Hause schicken",
-          "Das Kind zur Uberwachung behalten und Flussigkeit per Infusion geben",
+          "Das Kind zur Überwachung behalten und Flussigkeit per Infusion geben",
           "Eine Magensonde legen",
           "Antibiotika verschreiben"
         ]
@@ -2030,7 +2030,7 @@
     "answers": [
       "18 Monate",
       "Die Windel war morgens trocken, normal ist sie nass",
-      "Das Kind zur Uberwachung behalten und Flussigkeit per Infusion geben",
+      "Das Kind zur Überwachung behalten und Flussigkeit per Infusion geben",
       "Mit einem fiebersenkenden Zapfchen"
     ],
     "transcriptHiddenByDefault": true,
@@ -2052,7 +2052,7 @@
     "id": "l39",
     "title": "Geriatrie: Polypharmazie",
     "type": "Geriatric/fall-risk discussion",
-    "script": "Guten Tag, Frau Sommer, 85 Jahre. Ich sehe in Ihrem Medikamentenplan, dass Sie neun verschiedene Medikamente nehmen. Das ist sehr viel. Ich wurde gerne mit Ihnen besprechen, ob wir einige absetzen konnen.\nPatientin: Ach, das hat mir jeder Arzt was dazu verschrieben. Ich weiss gar nicht mehr, wofur die ganzen Tabletten sind.\nArzt: Genau das ist das Problem. Das nennt man Polypharmazie. Je mehr Medikamente man nimmt, desto hoher ist das Risiko fur Nebenwirkungen und Wechselwirkungen. Besonders kritisch sind Schlafmittel und Beruhigungsmittel bei alteren Patienten, weil sie das Sturzrisiko erhohen. Ich schlage vor: Das Zopiclon zum Schlafen setzen wir ab. Dafur etablieren wir eine feste Schlafroutine. Auch das Pantoprazol brauchen Sie vielleicht nicht mehr, das wurde nur kurzfristig verordnet. Lassen Sie uns das mal testen.",
+    "script": "Guten Tag, Frau Sommer, 85 Jahre. Ich sehe in Ihrem Medikamentenplan, dass Sie neun verschiedene Medikamente nehmen. Das ist sehr viel. Ich wurde gerne mit Ihnen besprechen, ob wir einige absetzen konnen.\nPatientin: Ach, das hat mir jeder Arzt was dazu verschrieben. Ich weiss gar nicht mehr, wofur die ganzen Tabletten sind.\nArzt: Genau das ist das Problem. Das nennt man Polypharmazie. Je mehr Medikamente man nimmt, desto hoher ist das Risiko für Nebenwirkungen und Wechselwirkungen. Besonders kritisch sind Schlafmittel und Beruhigungsmittel bei alteren Patienten, weil sie das Sturzrisiko erhohen. Ich schlage vor: Das Zopiclon zum Schlafen setzen wir ab. Dafur etablieren wir eine feste Schlafroutine. Auch das Pantoprazol brauchen Sie vielleicht nicht mehr, das wurde nur kurzfristig verordnet. Lassen Sie uns das mal testen.",
     "questions": [
       {
         "question": "Wie viele Medikamente nimmt Frau Sommer?",
@@ -2116,7 +2116,7 @@
     "id": "l40",
     "title": "Apothekenberatung: Blutdruckmessung",
     "type": "Pharmacy counseling",
-    "script": "Guten Tag, kann ich Ihnen helfen?\nPatient: Ja, ich habe mir ein Blutdruckmessgerat gekauft, aber ich bin mir nicht sicher, ob ich es richtig benutze.\nApotheker: Das ist ein haufiges Problem. Setzen Sie sich bitte fur fumf Minuten ruhig hin, bevor Sie messen. Der Arm sollte entspannt auf einem Tisch liegen, etwa auf Herzhone. Die Manschette kommt um den Oberarm, etwa zwei Fingerbreit uber der Ellenbeuge. Ziehen Sie die Manschette nicht zu fest, sie sollte noch einen Finger darunter passen.\nPatient: Und wie oft soll ich messen?\nApotheker: Am besten morgens und abends, immer zur gleichen Zeit. Morgens messen Sie vor dem Fruhstuck und vor der Tabletteneinnahme. Fuhren Sie ein Tagebuch und notieren Sie die Werte. Wenn der obere Wert ofters uber 140 liegt, gehen Sie bitte zu Ihrem Hausarzt.",
+    "script": "Guten Tag, kann ich Ihnen helfen?\nPatient: Ja, ich habe mir ein Blutdruckmessgerat gekauft, aber ich bin mir nicht sicher, ob ich es richtig benutze.\nApotheker: Das ist ein haufiges Problem. Setzen Sie sich bitte für fumf Minuten ruhig hin, bevor Sie messen. Der Arm sollte entspannt auf einem Tisch liegen, etwa auf Herzhone. Die Manschette kommt um den Oberarm, etwa zwei Fingerbreit über der Ellenbeuge. Ziehen Sie die Manschette nicht zu fest, sie sollte noch einen Finger darunter passen.\nPatient: Und wie oft soll ich messen?\nApotheker: Am besten morgens und abends, immer zur gleichen Zeit. Morgens messen Sie vor dem Fruhstuck und vor der Tabletteneinnahme. Fuhren Sie ein Tagebuch und notieren Sie die Werte. Wenn der obere Wert ofters über 140 liegt, gehen Sie bitte zu Ihrem Hausarzt.",
     "questions": [
       {
         "question": "Was mochte der Patient in der Apotheke wissen?",
@@ -2131,7 +2131,7 @@
         "question": "Wo soll die Manschette am Arm angebracht werden?",
         "options": [
           "Am Handgelenk",
-          "Am Oberarm, zwei Fingerbreit uber der Ellenbeuge",
+          "Am Oberarm, zwei Fingerbreit über der Ellenbeuge",
           "Am Unterarm",
           "An der Schulter"
         ]
@@ -2148,18 +2148,18 @@
       {
         "question": "Bei welchem Wert soll der Patient zum Arzt gehen?",
         "options": [
-          "Oberer Wert ofters uber 140",
-          "Unterer Wert uber 100",
-          "Puls uber 100",
-          "Oberer Wert uber 160"
+          "Oberer Wert ofters über 140",
+          "Unterer Wert über 100",
+          "Puls über 100",
+          "Oberer Wert über 160"
         ]
       }
     ],
     "answers": [
       "Wie er das Blutdruckmessgerat richtig benutzt",
-      "Am Oberarm, zwei Fingerbreit uber der Ellenbeuge",
+      "Am Oberarm, zwei Fingerbreit über der Ellenbeuge",
       "Vor dem Fruhstuck und vor der Tabletteneinnahme",
-      "Oberer Wert ofters uber 140"
+      "Oberer Wert ofters über 140"
     ],
     "transcriptHiddenByDefault": true,
     "vocabularyFocus": [
@@ -2180,7 +2180,7 @@
     "id": "l31",
     "title": "Stationsvisite: Herzinfarkt-Patient",
     "type": "Ward round summary",
-    "script": "Wir machen weiter mit Zimmer 302, Herrn Vogel, 58 Jahre, Zustand nach ST-Hebungsinfarkt. Der Eingriff mit Stent-Implantation war gestern erfolgreich. Die T-Wellen sind heute morgen negativ, das ist zu erwarten. Der Troponin-Wert sinkt von 45 auf 12 ng/ml. Der Blutdruck ist 110 zu 70, der Puls 65. Keine Rhythmusstorungen. Der Patient ist schmerzfrei. Wir beginnen heute mit der Fruhmobilisation und der Ernahrungsberatung. Die Medikation ist: ASS 100, Ticagrelor, Atorvastatin und Bisoprolol. Die Entlassung ist fur ubermorgen geplant, sofern die Werte stabil bleiben.",
+    "script": "Wir machen weiter mit Zimmer 302, Herrn Vogel, 58 Jahre, Zustand nach ST-Hebungsinfarkt. Der Eingriff mit Stent-Implantation war gestern erfolgreich. Die T-Wellen sind heute morgen negativ, das ist zu erwarten. Der Troponin-Wert sinkt von 45 auf 12 ng/ml. Der Blutdruck ist 110 zu 70, der Puls 65. Keine Rhythmusstorungen. Der Patient ist schmerzfrei. Wir beginnen heute mit der Fruhmobilisation und der Ernahrungsberatung. Die Medikation ist: ASS 100, Ticagrelor, Atorvastatin und Bisoprolol. Die Entlassung ist für übermorgen geplant, sofern die Werte stabil bleiben.",
     "questions": [
       {
         "question": "Welche Diagnose hatte Herr Vogel?",
@@ -2214,7 +2214,7 @@
         "options": [
           "Heute",
           "Morgen",
-          "Ubermorgen",
+          "Übermorgen",
           "In einer Woche"
         ]
       }
@@ -2223,7 +2223,7 @@
       "ST-Hebungsinfarkt",
       "Eine Stent-Implantation",
       "Er fallt von 45 auf 12",
-      "Ubermorgen"
+      "Übermorgen"
     ],
     "transcriptHiddenByDefault": true,
     "vocabularyFocus": [
@@ -2244,7 +2244,7 @@
     "id": "l32",
     "title": "Postoperatives Update: Schulter-OP",
     "type": "Postoperative update",
-    "script": "Hallo, Frau Baumann, ich komme von Ihrer Mutter aus dem OP. Die arthroskopische Schulteroperation ist gut verlaufen. Ihre Mutter hatte einen Riss der Rotatorenmanschette und wir haben die Sehne wieder angenaht. Die Operation hat etwa eineinhalb Stunden gedauert. Ihre Mutter ist jetzt im Aufwachraum und kommt in etwa einer Stunde auf die Station. Sie wird fur die erste Zeit eine Schiene tragen mussen, damit die genahte Sehne geschont wird. Die Physiotherapie beginnt morgen mit passiven Ubungen, aktive Bewegungen sind erst in sechs Wochen erlaubt. Der Schmerz wird mit einer lokalen Schmerzpumpe behandelt.",
+    "script": "Hallo, Frau Baumann, ich komme von Ihrer Mutter aus dem OP. Die arthroskopische Schulteroperation ist gut verlaufen. Ihre Mutter hatte einen Riss der Rotatorenmanschette und wir haben die Sehne wieder angenaht. Die Operation hat etwa eineinhalb Stunden gedauert. Ihre Mutter ist jetzt im Aufwachraum und kommt in etwa einer Stunde auf die Station. Sie wird für die erste Zeit eine Schiene tragen mussen, damit die genahte Sehne geschont wird. Die Physiotherapie beginnt morgen mit passiven Ubungen, aktive Bewegungen sind erst in sechs Wochen erlaubt. Der Schmerz wird mit einer lokalen Schmerzpumpe behandelt.",
     "questions": [
       {
         "question": "Welche Operation wurde durchgefuhrt?",
@@ -2308,7 +2308,7 @@
     "id": "l33",
     "title": "Laborergebnisse: Schilddrusenwerte",
     "type": "Lab result explanation",
-    "script": "Guten Morgen, Frau Doktor Winter. Ich habe Ihre Schilddrusenwerte bekommen. Ihr TSH ist mit 4,8 leicht erhoht, der Normalwert liegt unter 2,5. Die freien Werte fT3 und fT4 sind noch im Normbereich. Das deutet auf eine beginnende Schilddrusenunterfunktion hin, eine sogenannte subklinische Hypothyreose.\nPatientin: Muss ich jetzt Medikamente nehmen?\nArzt: Noch nicht unbedingt. Wir beobachten die Werte und wiederholen die Blutuntersuchung in drei Monaten. Wenn der TSH weiter steigt oder Sie Symptome wie Mudigkeit, Gewichtszunahme oder Haarausfall bekommen, beginnen wir mit einer niedrigen Dosis L-Thyroxin. Ich empfehle Ihnen, Jod in Ihrer Ernahrung zu achten, zum Beispiel durch Seefisch und Jodsalz.",
+    "script": "Guten Morgen, Frau Doktor Winter. Ich habe Ihre Schilddrusenwerte bekommen. Ihr TSH ist mit 4,8 leicht erhoht, der Normalwert liegt unter 2,5. Die freien Werte fT3 und fT4 sind noch im Normbereich. Das deutet auf eine beginnende Schilddrusenunterfunktion hin, eine sogenannte subklinische Hypothyreose.\nPatientin: Muss ich jetzt Medikamente nehmen?\nArzt: Noch nicht unbedingt. Wir beobachten die Werte und wiederholen die Blutuntersuchung in drei Monaten. Wenn der TSH weiter steigt oder Sie Symptome wie Müdigkeit, Gewichtszunahme oder Haarausfall bekommen, beginnen wir mit einer niedrigen Dosis L-Thyroxin. Ich empfehle Ihnen, Jod in Ihrer Ernahrung zu achten, zum Beispiel durch Seefisch und Jodsalz.",
     "questions": [
       {
         "question": "Welcher Wert ist bei Frau Doktor Winter erhoht?",
@@ -2338,7 +2338,7 @@
         ]
       },
       {
-        "question": "Was empfiehlt der Arzt fur die Ernahrung?",
+        "question": "Was empfiehlt der Arzt für die Ernahrung?",
         "options": [
           "Wenig Jod",
           "Jodreiche Nahrung wie Seefisch und Jodsalz",
@@ -2372,7 +2372,7 @@
     "id": "l34",
     "title": "Terminvereinbarung: CT-Abdomen",
     "type": "Imaging appointment call",
-    "script": "Radiologische Abteilung des Klinikums, Frau Behrendt.\nAnrufer: Guten Tag, ich bin Frau Doktor Schilling aus der Inneren Medizin. Ich mochte einen CT-Termin fur einen Patienten.\nFrau Behrendt: Gerne, welche Untersuchung benotigen Sie?\nAnrufer: Ein CT-Abdomen mit Kontrastmittel bei Verdacht auf Pankreatitis.\nFrau Behrendt: Hat der Patient eine bekannte Kontrastmittelallergie oder Niereninsuffizienz?\nAnrufer: Nein, die Nierenwerte sind normal, keine Allergien in der Vorgeschichte.\nFrau Behrendt: Perfekt. Der nachste freie Termin ist morgen um 14 Uhr. Der Patient sollte ab Mitternacht nuchtern bleiben, also nichts essen, aber klares Wasser ist in Ordnung. Das CT dauert etwa 15 bis 20 Minuten. Bitte geben Sie dem Patienten die Aufklarungsunterlagen zur Kontrastmittelgabe mit.",
+    "script": "Radiologische Abteilung des Klinikums, Frau Behrendt.\nAnrufer: Guten Tag, ich bin Frau Doktor Schilling aus der Inneren Medizin. Ich mochte einen CT-Termin für einen Patienten.\nFrau Behrendt: Gerne, welche Untersuchung benotigen Sie?\nAnrufer: Ein CT-Abdomen mit Kontrastmittel bei Verdacht auf Pankreatitis.\nFrau Behrendt: Hat der Patient eine bekannte Kontrastmittelallergie oder Niereninsuffizienz?\nAnrufer: Nein, die Nierenwerte sind normal, keine Allergien in der Vorgeschichte.\nFrau Behrendt: Perfekt. Der nachste freie Termin ist morgen um 14 Uhr. Der Patient sollte ab Mitternacht nuchtern bleiben, also nichts essen, aber klares Wasser ist in Ordnung. Das CT dauert etwa 15 bis 20 Minuten. Bitte geben Sie dem Patienten die Aufklarungsunterlagen zur Kontrastmittelgabe mit.",
     "questions": [
       {
         "question": "Wer ruft bei der Radiologie an?",
@@ -2407,7 +2407,7 @@
           "Sechs Stunden",
           "Ab Mitternacht",
           "Zwei Stunden",
-          "Uberhaupt nicht"
+          "Überhaupt nicht"
         ]
       }
     ],
@@ -2436,7 +2436,7 @@
     "id": "l35",
     "title": "Aufklarungsgesprach: Knie-Arthroskopie",
     "type": "Consent discussion",
-    "script": "Herr Weiss, wir besprechen jetzt den Ablauf der Kniearthroskopie bei Ihnen. Sie haben einen Meniskusriss im linken Knie. Wir machen eine Spiegelung des Kniegelenks unter Vollnarkose. Uber zwei kleine Schnitte von etwa einem Zentimeter fuhren wir die Kamera und die Instrumente ein. Wir schauen uns den Meniskus an und entscheiden dann: Entweder wir nahen den Riss oder wir tragen das gerissene Stuck ab. Das entscheiden wir wahrend der OP. Der Eingriff dauert etwa 30 bis 45 Minuten. Sie gehen am selben Tag nach Hause, mussen aber abgeholt werden. Nach der OP mussen Sie fur zwei Wochen an Krucken gehen. Mogliche Risiken sind: Infektion, Nachblutung, Thrombose oder eine Verletzung von Nerven und Gefassen in der Kniekehle.",
+    "script": "Herr Weiss, wir besprechen jetzt den Ablauf der Kniearthroskopie bei Ihnen. Sie haben einen Meniskusriss im linken Knie. Wir machen eine Spiegelung des Kniegelenks unter Vollnarkose. Über zwei kleine Schnitte von etwa einem Zentimeter fuhren wir die Kamera und die Instrumente ein. Wir schauen uns den Meniskus an und entscheiden dann: Entweder wir nahen den Riss oder wir tragen das gerissene Stuck ab. Das entscheiden wir wahrend der OP. Der Eingriff dauert etwa 30 bis 45 Minuten. Sie gehen am selben Tag nach Hause, mussen aber abgeholt werden. Nach der OP mussen Sie für zwei Wochen an Krucken gehen. Mogliche Risiken sind: Infektion, Nachblutung, Thrombose oder eine Verletzung von Nerven und Gefassen in der Kniekehle.",
     "questions": [
       {
         "question": "Welche Diagnose hat Herr Weiss?",
@@ -2500,7 +2500,7 @@
     "id": "l36",
     "title": "Chronische Krankheit: Rheumatoide Arthritis",
     "type": "Chronic disease follow-up",
-    "script": "Guten Tag, Frau Schmid. Wie geht es Ihnen mit der rheumatoiden Arthritis?\nPatientin: Na ja, die Morgensteifigkeit halt etwa eine Stunde an. Die Handgelenke und die Fingergelenke sind geschwollen und druckschmerzhaft. Manchmal tun mir auch die Knie weh.\nArzt: Haben Sie Ihr Methotrexat regelmassig genommen?\nPatientin: Ja, jeden Donnerstag 15 mg. Aber ich habe Angst vor den Nebenwirkungen.\nArzt: Die regelmassigen Blutkontrollen sehen gut aus, die Leberwerte sind stabil. Ich wurde gerne ein TNF-Alpha-Blocker-Medikament zusatzlich beginnen. Das gibt es als Spritze, die Sie sich alle zwei Wochen selbst unter die Haut setzen. Das kann die Entzundung deutlich besser kontrollieren.\nPatientin: Und die Nebenwirkungen?\nArzt: Das Risiko fur Infektionen steigt etwas. Wir werden Sie engmaschig uberwachen.",
+    "script": "Guten Tag, Frau Schmid. Wie geht es Ihnen mit der rheumatoiden Arthritis?\nPatientin: Na ja, die Morgensteifigkeit halt etwa eine Stunde an. Die Handgelenke und die Fingergelenke sind geschwollen und druckschmerzhaft. Manchmal tun mir auch die Knie weh.\nArzt: Haben Sie Ihr Methotrexat regelmassig genommen?\nPatientin: Ja, jeden Donnerstag 15 mg. Aber ich habe Angst vor den Nebenwirkungen.\nArzt: Die regelmassigen Blutkontrollen sehen gut aus, die Leberwerte sind stabil. Ich wurde gerne ein TNF-Alpha-Blocker-Medikament zusatzlich beginnen. Das gibt es als Spritze, die Sie sich alle zwei Wochen selbst unter die Haut setzen. Das kann die Entzundung deutlich besser kontrollieren.\nPatientin: Und die Nebenwirkungen?\nArzt: Das Risiko für Infektionen steigt etwas. Wir werden Sie engmaschig überwachen.",
     "questions": [
       {
         "question": "Wie lange halt die Morgensteifigkeit bei Frau Schmid an?",
@@ -2629,7 +2629,7 @@
     "id": "l42",
     "title": "Arzt-Patient-Dialog: Schilddrüsen-Untersuchung",
     "type": "Doctor-patient dialogue",
-    "script": "Arzt: Guten Tag, Herr Wagner. Ich habe Ihre Blutwerte bekommen. Ihr TSH ist deutlich erhöht, das heisst, Ihre Schilddrüse arbeitet zu langsam.\nPatient: Ach so, ich dachte, das ist normal mit dem Alter. Ich bin ja schon 62.\nArzt: Nein, das sollte nicht sein. Haben Sie Symptome bemerkt?\nPatient: Ja, ich bin ständig müde, nehme zu, obwohl ich nicht mehr esse, und mir ist immer kalt.\nArzt: Das passt genau zur Hypothyreose. Wir beginnen mit einer niedrigen Dosis L-Thyroxin, 25 Mikrogramm täglich. Nehmen Sie die Tablette morgens nütchtern, 30 Minuten vor dem Frühstück. Nach sechs Wochen kontrollieren wir die Werte erneut.",
+    "script": "Arzt: Guten Tag, Herr Wagner. Ich habe Ihre Blutwerte bekommen. Ihr TSH ist deutlich erhöht, das heißt, Ihre Schilddrüse arbeitet zu langsam.\nPatient: Ach so, ich dachte, das ist normal mit dem Alter. Ich bin ja schon 62.\nArzt: Nein, das sollte nicht sein. Haben Sie Symptome bemerkt?\nPatient: Ja, ich bin ständig müde, nehme zu, obwohl ich nicht mehr esse, und mir ist immer kalt.\nArzt: Das passt genau zur Hypothyreose. Wir beginnen mit einer niedrigen Dosis L-Thyroxin, 25 Mikrogramm täglich. Nehmen Sie die Tablette morgens nütchtern, 30 Minuten vor dem Frühstück. Nach sechs Wochen kontrollieren wir die Werte erneut.",
     "questions": [
       {
         "question": "Welcher Laborwert ist bei Herrn Wagner erhöht?",
@@ -3096,7 +3096,7 @@
         "options": [
           "Einen Personalausweis",
           "Den Entlassungsbericht und das Reha-Rezept",
-          "Seine Steürerklärung",
+          "Seine Steuererklärung",
           "Eine Krankschreibung"
         ]
       },
@@ -3337,7 +3337,7 @@
     "id": "l53",
     "title": "Laborerklärung: Eisenmangel und Blutarmut",
     "type": "Lab result explanation",
-    "script": "Guten Tag, Frau Lorenz. Ich habe Ihre Laborwerte vom letzten Freitag bekommen. Ihr Hämoglobin liegt bei 10,2 Gramm pro Deziliter. Der Normalwert wäre über 12. Sie haben also eine Anämie, das heisst Blutarmut. Die Ursache ist ein Eisenmangel. Ihr Ferritin liegt nur bei 15 Mikrogramm pro Liter, das ist sehr niedrig. Normal wären Werte über 30. Auch das Transferrin ist erhöht, das passt zum Eisenmangel. Ich vermute, die Ursache ist Ihre starke Monatsblutung. Ich verschreibe Ihnen jetzt ein Eisenpräparat, 100 Milligramm täglich. Nehmen Sie es auf leeren Magen mit einem Glas Orangensaft, das verbessert die Aufnahme. Nach zwei Monaten wiederholen wir die Blutuntersuchung. Wenn der Wert dann nicht steigt, überweise ich Sie zur Magenspiegelung.",
+    "script": "Guten Tag, Frau Lorenz. Ich habe Ihre Laborwerte vom letzten Freitag bekommen. Ihr Hämoglobin liegt bei 10,2 Gramm pro Deziliter. Der Normalwert wäre über 12. Sie haben also eine Anämie, das heißt Blutarmut. Die Ursache ist ein Eisenmangel. Ihr Ferritin liegt nur bei 15 Mikrogramm pro Liter, das ist sehr niedrig. Normal wären Werte über 30. Auch das Transferrin ist erhöht, das passt zum Eisenmangel. Ich vermute, die Ursache ist Ihre starke Monatsblutung. Ich verschreibe Ihnen jetzt ein Eisenpräparat, 100 Milligramm täglich. Nehmen Sie es auf leeren Magen mit einem Glas Orangensaft, das verbessert die Aufnahme. Nach zwei Monaten wiederholen wir die Blutuntersuchung. Wenn der Wert dann nicht steigt, überweise ich Sie zur Magenspiegelung.",
     "questions": [
       {
         "question": "Welcher Blutwert ist bei Frau Lorenz zu niedrig?",
@@ -4436,14 +4436,14 @@
     "id": "l70",
     "title": "Angehörigengespräch: Palliativsituation bei Vater",
     "type": "Family member discussion",
-    "script": "Oberarzt Dr. Wagner: Guten Tag, Herr Meier. Ich möchte mit Ihnen über Ihren Vater sprechen.\nSohn: Ja, wie ist sein Zustand?\nArzt: Leider muss ich Ihnen mitteilen, dass die Therapie nicht mehr anschlägt. Der Tumor am Darm ist weitergewachsen und hat Metastasen in der Leber gebildet. Wir haben alle verfügbaren Optionen der Chemotherapie ausgeschöpft.\nSohn: Heisst das, Sie geben auf?\nArzt: Nein, wir geben keinesfalls auf. Wir wechseln nur das Ziel der Behandlung. Statt einer heilenden Behandlung konzentrieren wir uns jetzt auf die Palliativversorgung. Das bedeutet: Wir tun alles, damit Ihr Vater so wenig Schmerzen wie möglich hat und eine gute Lebensqualität behält. Ihr Vater bekommt eine Schmerzpumpe mit Morphin.",
+    "script": "Oberarzt Dr. Wagner: Guten Tag, Herr Meier. Ich möchte mit Ihnen über Ihren Vater sprechen.\nSohn: Ja, wie ist sein Zustand?\nArzt: Leider muss ich Ihnen mitteilen, dass die Therapie nicht mehr anschlägt. Der Tumor am Darm ist weitergewachsen und hat Metastasen in der Leber gebildet. Wir haben alle verfügbaren Optionen der Chemotherapie ausgeschöpft.\nSohn: heißt das, Sie geben auf?\nArzt: Nein, wir geben keinesfalls auf. Wir wechseln nur das Ziel der Behandlung. Statt einer heilenden Behandlung konzentrieren wir uns jetzt auf die Palliativversorgung. Das bedeutet: Wir tun alles, damit Ihr Vater so wenig Schmerzen wie möglich hat und eine gute Lebensqualität behält. Ihr Vater bekommt eine Schmerzpumpe mit Morphin.",
     "questions": [
       {
         "question": "Warum wird die Chemotherapie nicht fortgesetzt?",
         "options": [
           "Weil der Patient sie ablehnt",
           "Weil sie nicht mehr anschlägt",
-          "Weil sie zu teür ist",
+          "Weil sie zu teuer ist",
           "Weil der Patient allergisch reagiert"
         ]
       },
@@ -5085,7 +5085,7 @@
     "id": "l80",
     "title": "Apothekenberatung: Vitaminpräparate richtig einnehmen",
     "type": "Pharmacy counseling",
-    "script": "Guten Tag, was kann ich für Sie tun?\nKundin: Ich habe mir verschiedene Vitaminpräparate gekauft, aber ich bin unsicher, wie ich sie richtig einnehme. Ich habe Vitamin D, Omega-3 und Magnesium.\nApotheker: Gerne. Vitamin D ist fettlöslich, das heisst, es wird am besten mit einer Mahlzeit aufgenommen, die Fett enthält. Omega-3 ist ebenfalls fettlöslich, das können Sie zusammen mit dem Vitamin D nehmen. Magnesium sollten Sie am besten abends einnehmen, weil es entspannend wirkt. Wichtig ist: Nehmen Sie Magnesium nicht gleichzeitig mit einem Calcium-Präparat, weil sie sich gegenseitig in der Aufnahme behindern.\nKundin: Calcium nehme ich nicht.\nApotheker: Dann ist alles gut. Kaufen Sie nicht überteürte Markenprodukte.",
+    "script": "Guten Tag, was kann ich für Sie tun?\nKundin: Ich habe mir verschiedene Vitaminpräparate gekauft, aber ich bin unsicher, wie ich sie richtig einnehme. Ich habe Vitamin D, Omega-3 und Magnesium.\nApotheker: Gerne. Vitamin D ist fettlöslich, das heißt, es wird am besten mit einer Mahlzeit aufgenommen, die Fett enthält. Omega-3 ist ebenfalls fettlöslich, das können Sie zusammen mit dem Vitamin D nehmen. Magnesium sollten Sie am besten abends einnehmen, weil es entspannend wirkt. Wichtig ist: Nehmen Sie Magnesium nicht gleichzeitig mit einem Calcium-Präparat, weil sie sich gegenseitig in der Aufnahme behindern.\nKundin: Calcium nehme ich nicht.\nApotheker: Dann ist alles gut. Kaufen Sie nicht überteuerte Markenprodukte.",
     "questions": [
       {
         "question": "Welche drei Präparate hat die Kundin gekauft?",
@@ -5685,7 +5685,7 @@
       {
         "question": "Welches Dokument braucht Frau Henning für den Antrag?",
         "options": [
-          "Einen Steürbescheid",
+          "Einen Steuerbescheid",
           "Eine Einkommensbescheinigung vom Finanzamt",
           "Eine Arbeitsbestätigung",
           "Ein Ärztliches Attest"
@@ -6046,7 +6046,7 @@
     "id": "l95",
     "title": "Aufklärungsgespräch: Karpaltunnel-OP",
     "type": "Consent discussion",
-    "script": "Frau Schulze, ich kläre Sie jetzt über die Karpaltunnel-Operation auf, die bei Ihnen geplant ist. Sie haben ein Karpaltunnelsyndrom am rechten Handgelenk. Wir werden den Eingriff in örtlicher Betaubung durchführen, das heisst, Sie sind wach, aber die Hand ist komplett taub. Der Chirurg macht einen etwa zwei Zentimeter langen Schnitt in der Handfläche und durchtrennt das enge Band, das den Nerv einengt. Die Operation dauert etwa 20 bis 30 Minuten. Danach dürfen Sie die Hand sofort bewegen, aber nichts Schweres heben. Die Faden werden nach zehn Tagen gezogen. Die volle Belastbarkeit ist nach etwa vier bis sechs Wochen erreicht. Typische Risiken sind eine vorübergehende Taubheit um die Narbe herum und selten eine Nervenverletzung oder Wundinfektion.",
+    "script": "Frau Schulze, ich kläre Sie jetzt über die Karpaltunnel-Operation auf, die bei Ihnen geplant ist. Sie haben ein Karpaltunnelsyndrom am rechten Handgelenk. Wir werden den Eingriff in örtlicher Betaubung durchführen, das heißt, Sie sind wach, aber die Hand ist komplett taub. Der Chirurg macht einen etwa zwei Zentimeter langen Schnitt in der Handfläche und durchtrennt das enge Band, das den Nerv einengt. Die Operation dauert etwa 20 bis 30 Minuten. Danach dürfen Sie die Hand sofort bewegen, aber nichts Schweres heben. Die Faden werden nach zehn Tagen gezogen. Die volle Belastbarkeit ist nach etwa vier bis sechs Wochen erreicht. Typische Risiken sind eine vorübergehende Taubheit um die Narbe herum und selten eine Nervenverletzung oder Wundinfektion.",
     "questions": [
       {
         "question": "Welche Narkoseart wird bei der OP verwendet?",

@@ -118,8 +118,8 @@
     {
       "id": "A1_gr_11",
       "type": "sentence-correction",
-      "prompt": "Correct the word order: 'Ich bin heute im Krankenhaus.'",
-      "answer": "Ich bin heute im Krankenhaus.",
+      "prompt": "Correct the word order: 'Heute ich bin im Krankenhaus.'",
+      "answer": "Heute bin ich im Krankenhaus.",
       "explanation": "This sentence is actually correct. Subject, verb, then time, then place.",
       "level": "A1",
       "topic": "Word Order"
@@ -262,7 +262,7 @@
       "level": "A1",
       "topic": "Definite Articles",
       "type": "mcq",
-      "prompt": "Was ist der richtige Artikel fur \"Mann\"?",
+      "prompt": "Was ist der richtige Artikel für \"Mann\"?",
       "options": [
         "der",
         "die",
@@ -2132,14 +2132,14 @@
       "type": "article-select",
       "level": "A1",
       "topic": "Food",
-      "prompt": "___ Wasser ist kalt.",
+      "prompt": "___ Sonne scheint heute hell.",
       "options": [
         "Der",
         "Die",
         "Das",
         "Den"
       ],
-      "answer": "Das",
+      "answer": "Die",
       "explanation": "Wasser is neuter (das Wasser). Correct article in nominative is das."
     },
     {
@@ -2529,14 +2529,14 @@
       "id": "A2_gr_8",
       "unit": "Superlative",
       "type": "fill-blank",
-      "prompt": "Das ist ___ (teür) Hotel in der Stadt.",
-      "answer": "das teürste",
+      "prompt": "Das ist ___ (teuer) Hotel in der Stadt.",
+      "answer": "das teuerste",
       "explanation": "Superlative: am + adjective + sten, or der/die/das + adjective + ste.",
       "options": [
-        "das teürste",
-        "der teürste",
-        "die teürste",
-        "teür"
+        "das teuerste",
+        "der teuerste",
+        "die teuerste",
+        "teuer"
       ],
       "level": "A2",
       "topic": "Superlative",
@@ -3871,7 +3871,7 @@
     {
       "id": "A2_gr_93",
       "type": "mcq",
-      "prompt": "Es war teür, ___ habe ich es gekauft.",
+      "prompt": "Es war teuer, ___ habe ich es gekauft.",
       "answer": "trotzdem",
       "explanation": "trotzdem = nevertheless (verb in position 2).",
       "level": "A2",
@@ -4193,16 +4193,16 @@
     {
       "id": "A2_gr_115",
       "type": "fill-blank",
-      "prompt": "Dieses Auto ist ___ (teür) als jenes.",
+      "prompt": "Dieses Auto ist ___ (teuer) als jenes.",
       "answer": "teurer",
-      "explanation": "Comparative: teür -> teurer (drop -e-).",
+      "explanation": "Comparative: teuer -> teurer (drop -e-).",
       "level": "A2",
       "topic": "Komparativ",
       "options": [
         "teurer",
-        "teürer",
+        "teuerer",
         "teure",
-        "teüre"
+        "teuere"
       ],
       "lessonId": "A2_lesson_25"
     },
@@ -5371,9 +5371,9 @@
     {
       "id": "A2_gr_192",
       "type": "article-select",
-      "prompt": "Das ist ___ teürsten Restaurant der Stadt.",
+      "prompt": "Das ist ___ teuersten Restaurant der Stadt.",
       "answer": "das",
-      "explanation": "Superlative with definite article: das teürste Restaurant.",
+      "explanation": "Superlative with definite article: das teuerste Restaurant.",
       "level": "A2",
       "topic": "A2 Mix",
       "options": [
@@ -5641,14 +5641,14 @@
       "level": "B1",
       "topic": "Contrast connectors",
       "type": "mcq",
-      "prompt": "___ er kommt trotzdem.",
+      "prompt": "___ er mude ist, kommt er trotzdem.",
       "options": [
         "Obwohl",
         "Trotzdem",
         "Weil",
         "Denn"
       ],
-      "answer": "Trotzdem",
+      "answer": "Obwohl",
       "explanation": "Trotzdem (nevertheless) starts a main clause with verb position 2.",
       "lessonId": "B1_lesson_9"
     },
@@ -7741,15 +7741,15 @@
       "level": "B1",
       "topic": "Comparative and superlative",
       "type": "mcq",
-      "prompt": "Mein Auto ist ___ (teür) als deins.",
+      "prompt": "Mein Auto ist ___ (teuer) als deins.",
       "options": [
         "teurer",
-        "teürer",
-        "am teürsten",
+        "teuerer",
+        "am teuersten",
         "teure"
       ],
       "answer": "teurer",
-      "explanation": "Comparative of teür: teurer (drop -e-). Mein Auto ist teurer als deins.",
+      "explanation": "Comparative of teuer: teurer (drop -e-). Mein Auto ist teurer als deins.",
       "lessonId": "B1_lesson_5"
     },
     {
@@ -8257,7 +8257,7 @@
       "level": "B1",
       "topic": "Contrast connectors",
       "type": "mcq",
-      "prompt": "Es war teür, ___ habe ich es gekauft.",
+      "prompt": "Es war teuer, ___ habe ich es gekauft.",
       "options": [
         "trotzdem",
         "deshalb",
@@ -9553,12 +9553,12 @@
       "type": "fill-blank",
       "prompt": "___ (outside) der Stadt gibt es einen Wald.",
       "options": [
-        "AuÃŸerhalb",
+        "Außerhalb",
         "Innerhalb",
         "Während",
         "Trotz"
       ],
-      "answer": "AuÃŸerhalb",
+      "answer": "Außerhalb",
       "level": "B2",
       "topic": "Genitive Prepositions",
       "lessonId": "B2_lesson_10"
@@ -10609,7 +10609,7 @@
         "nicht nur sondern auch",
         "einerseits andererseits"
       ],
-      "explanation": "zwar...aber = it's trü that...but.",
+      "explanation": "zwar...aber = it's true that...but.",
       "lessonId": "B2_lesson_6"
     },
     {
@@ -12285,7 +12285,7 @@
       "level": "B2",
       "topic": "Concessive Clauses",
       "type": "fill-blank",
-      "prompt": "Sie kaufte das Kleid, ___ es teür war.",
+      "prompt": "Sie kaufte das Kleid, ___ es teuer war.",
       "answer": "obwohl",
       "options": [
         "obwohl",
@@ -15785,7 +15785,7 @@
       "topic": "Text Cohesion and Reference",
       "unit": "Text Cohesion and Re",
       "type": "mcq",
-      "prompt": "Welches Verweiswort passt: 'Die Methode ist teür. ... wird sie eingesetzt.'",
+      "prompt": "Welches Verweiswort passt: 'Die Methode ist teuer. ... wird sie eingesetzt.'",
       "answer": "Trotzdem",
       "explanation": "Adversativ.",
       "lessonId": "C1_lesson_17",

@@ -44,7 +44,7 @@
                 "id": "A1_ex_l1_4",
                 "type": "true-false",
                 "question": "Speisekarte: 'Apfelkuchen 3,50 Euro, Kaffee 2,50 Euro, Tee 2,00 Euro.' Der Apfelkuchen kostet 3,50 Euro.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A1_ex_l1_5",
@@ -79,7 +79,7 @@
                 "id": "A1_ex_h1_2",
                 "type": "true-false",
                 "question": "Durchsage: 'Der Zug nach Hamburg fährt ab Gleis 4.' Der Zug nach Hamburg fährt ab Gleis 4.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A1_ex_h1_3",
@@ -164,7 +164,7 @@
                 "id": "A1_ex_l2_4",
                 "type": "true-false",
                 "question": "Fahrplan: 'Bus 142: Hauptbahnhof 9:00, Stadtmitte 9:10, Marktplatz 9:20.' Der Bus braucht 20 Minuten vom Hauptbahnhof zum Marktplatz.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A1_ex_l2_5",
@@ -266,7 +266,7 @@
                 "id": "A1_ex_l3_2",
                 "type": "true-false",
                 "question": "Kassenbon: 'Milch 1,29 Euro, Brot 2,49 Euro, Butter 1,89 Euro. Summe: 5,67 Euro.' Der Kunde hat 5,67 Euro bezahlt.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A1_ex_l3_3",
@@ -318,8 +318,8 @@
               {
                 "id": "A1_ex_h3_2",
                 "type": "true-false",
-                "question": "Kunde: 'Ich suche eine warme Jacke in Große M.' Verkauferin: 'Hier ist eine schwarze Jacke fur 49,90 Euro.' Der Kunde sucht eine Jacke.",
-                "answer": "trü"
+                "question": "Kunde: 'Ich suche eine warme Jacke in Große M.' Verkauferin: 'Hier ist eine schwarze Jacke für 49,90 Euro.' Der Kunde sucht eine Jacke.",
+                "answer": "true"
               },
               {
                 "id": "A1_ex_h3_3",
@@ -340,7 +340,7 @@
             "tasks": [
               {
                 "id": "A1_ex_w3_1",
-                "prompt": "Schreiben Sie eine Einkaufsliste fur die Woche. Schreiben Sie 6-8 Dinge mit Mengen.",
+                "prompt": "Schreiben Sie eine Einkaufsliste für die Woche. Schreiben Sie 6-8 Dinge mit Mengen.",
                 "wordLimit": 30
               }
             ]
@@ -355,7 +355,7 @@
               },
               {
                 "id": "A1_ex_s3_2",
-                "prompt": "Sprechen Sie uber Ihr Lieblingsessen. Sagen Sie: Was Sie gern essen, Was Sie nicht gern essen, Was Sie gut kochen konnen.",
+                "prompt": "Sprechen Sie über Ihr Lieblingsessen. Sagen Sie: Was Sie gern essen, Was Sie nicht gern essen, Was Sie gut kochen konnen.",
                 "talkTime": 60
               }
             ]
@@ -404,7 +404,7 @@
                 "id": "A1_ex_l4_4",
                 "type": "true-false",
                 "question": "Sprechzeiten: 'Mo-Fr 8-17 Uhr, Sa 9-13 Uhr, So geschlossen.' Die Praxis hat sonntags geschlossen.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A1_ex_l4_5",
@@ -580,7 +580,7 @@
             "tasks": [
               {
                 "id": "A1_ex_w5_1",
-                "prompt": "Sie wollen ein Hotelzimmer reservieren. Schreiben Sie eine kurze E-Mail. Fragen Sie nach: Einem Einzelzimmer fur 3 Nachte, Dem Preis, Ob Fruhstuck inklusive ist.",
+                "prompt": "Sie wollen ein Hotelzimmer reservieren. Schreiben Sie eine kurze E-Mail. Fragen Sie nach: Einem Einzelzimmer für 3 Nachte, Dem Preis, Ob Fruhstuck inklusive ist.",
                 "wordLimit": 60
               }
             ]
@@ -658,7 +658,7 @@
                 "id": "A2_ex1_les_5",
                 "type": "true-false",
                 "question": "Text: 'Frau Meier arbeitet seit zehn Jahren als Krankenschwester im St. Joseph Krankenhaus.' Frau Meier arbeitet im Krankenhaus.",
-                "answer": "trü"
+                "answer": "true"
               }
             ]
           },
@@ -681,7 +681,7 @@
                 "id": "A2_ex1_hor_2",
                 "type": "true-false",
                 "question": "Telefonansage: 'Unsere Praxis bleibt vom 24. bis 28. Dezember geschlossen.' Die Praxis ist im Dezember geschlossen.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "A2_ex1_hor_3",
@@ -778,7 +778,7 @@
                 "id": "A2_ex2_les_5",
                 "type": "true-false",
                 "question": "Durchsage: 'Wegen eines Stromausfalls bleibt die Bibliothek heute geschlossen.' Die Bibliothek ist wegen Stromausfall zu.",
-                "answer": "trü"
+                "answer": "true"
               }
             ]
           },
@@ -1138,7 +1138,7 @@
                 "id": "A2_ex5_les_5",
                 "type": "true-false",
                 "question": "Packungsbeilage: 'Nicht einnehmen nach dem 31.12.2025.' Das Medikament ist nach Dezember 2025 nicht mehr gut.",
-                "answer": "trü"
+                "answer": "true"
               }
             ]
           },
@@ -1857,7 +1857,7 @@
                 "id": "B1_ex5_hor_2",
                 "type": "true-false",
                 "question": "Radiointerview: 'Unser Gast ist Frau Dr. Hoffmann von der Umweltbehörde. Sie erklärt: Seit Einführung des Pfandsystems auf Einwegflaschen ist der Anteil der recycelten Flaschen von 72 auf 94 Prozent gestiegen. Das zeigt, dass finanzielle Anreize wirken.' Das Pfandsystem hat das Recycling von Flaschen verbessert.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "B1_ex5_hor_3",
@@ -1867,7 +1867,7 @@
                   "Für Restaurantbewertungen",
                   "Für die Meldung von Stadte-Problemen",
                   "Für die Buchung von öffentlichen Verkehrsmitteln",
-                  "Für die Bezahlung von Steürn"
+                  "Für die Bezahlung von Steuern"
                 ],
                 "answer": "Für die Meldung von Stadte-Problemen"
               }
@@ -1925,8 +1925,8 @@
               {
                 "id": "B2_ex_lesen_2",
                 "type": "true-false",
-                "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teür. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
-                "answer": "trü"
+                "question": "Text: 'Die stationäre Versorgung in Deutschland ist hochwertig, aber teuer. Ambulante Behandlungen gewinnen daher an Bedeutung.' Ambulante Behandlungen werden wichtiger.",
+                "answer": "true"
               },
               {
                 "id": "B2_ex_lesen_3",
@@ -1935,7 +1935,7 @@
                 "options": [
                   "Digitalisierung ist immer positiv",
                   "Datenschutz ist bei Digitalisierung entscheidend",
-                  "Digitalisierung ist zu teür",
+                  "Digitalisierung ist zu teuer",
                   "Digitalisierung sollte verboten werden"
                 ],
                 "answer": "Datenschutz ist bei Digitalisierung entscheidend"
@@ -2344,7 +2344,7 @@
                 "id": "B2_ex_l4_2",
                 "type": "true-false",
                 "question": "Text: 'Die Ausbildung zur Pflegefachkraft dauert in Deutschland drei Jahre und erfolgt an Pflegeschulen sowie in Krankenhäusern. Seit 2020 gibt es eine generalistische Ausbildung, die alle Pflegebereiche umfasst.' Die Ausbildung zur Pflegefachkraft ist seit 2020 generalistisch.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "B2_ex_l4_3",
@@ -2483,7 +2483,7 @@
                 "id": "B2_ex_l5_2",
                 "type": "true-false",
                 "question": "Text: 'Die medizinische Rehabilitation ist ein wichtiger Bestandteil des Gesundheitssystems. Sie zielt darauf ab, die Teilhabe der Patienten am gesellschaftlichen Leben wiederherzustellen. Die Rentenversicherung trägt in der Regel die Kosten.' Die medizinische Rehabilitation wird von der Rentenversicherung finanziert.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "B2_ex_l5_3",
@@ -2663,7 +2663,7 @@
               {
                 "id": "C1_ex1_l6",
                 "type": "short-answer",
-                "question": "Text: \"Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpräferenzen.\" Eine Komponente der EBM ist die externe Evidenz, eine andere die klinische Erfahrung. Wie heisst die dritte Komponente?",
+                "question": "Text: \"Die evidenzbasierte Medizin fordert die Integration der besten externen Evidenz mit klinischer Erfahrung und Patientenpräferenzen.\" Eine Komponente der EBM ist die externe Evidenz, eine andere die klinische Erfahrung. Wie heißt die dritte Komponente?",
                 "answer": "Patientenpräferenzen",
                 "acceptedAnswers": [
                   "Patientenpräferenzen",
@@ -2831,7 +2831,7 @@
                 "id": "C1_ex2_h2",
                 "type": "true-false",
                 "question": "Patientenberatung: 'Die Verfügung über das Lebensende ist Ausdruck von Autonomie. Niemand muss gegen seinen Willen behandelt werden.' Autonomie bedeutet auch, Massnahmen abzulehnen.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "C1_ex2_h3",
@@ -2898,7 +2898,7 @@
                 "id": "C1_ex3_l2",
                 "type": "true-false",
                 "question": "Text: 'Die DSGVO verlangt eine ausdrückliche Einwilligung des Patienten für die Verarbeitung seiner Gesundheitsdaten zu Forschungszwecken.' Die DSGVO erfordert eine ausdrückliche Einwilligung für Forschungsdaten.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "C1_ex3_l3",
@@ -3174,7 +3174,7 @@
                 "id": "C1_ex5_l2",
                 "type": "true-false",
                 "question": "Text: 'Interdisziplinäre Versorgung bedeutet, dass verschiedene Berufsgruppen gemeinsam einen Behandlungsplan erstellen. Studien zeigen, dass dies die Behandlungsqualität verbessert.' Interdisziplinäre Versorgung kann die Qualität verbessern.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "C1_ex5_l3",
@@ -3245,7 +3245,7 @@
                 "id": "C1_ex5_h2",
                 "type": "true-false",
                 "question": "Teambesprechung: 'Herr Müller kommt nach Pneumonie-Behandlung in die ambulante Versorgung. Ich schlage strukturierte Entlassungsplanung vor.' Die Planung soll den Übergang verbessern.",
-                "answer": "trü"
+                "answer": "true"
               },
               {
                 "id": "C1_ex5_h3",
