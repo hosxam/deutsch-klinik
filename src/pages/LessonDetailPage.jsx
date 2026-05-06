@@ -1,15 +1,14 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
-import { getState, completeLesson, recordAnswer, getCompletedLessons, isLessonCompleted } from '../utils/store';
+import {  completeLesson, recordAnswer, getCompletedLessons } from '../utils/store';
 import allLessonsData from '../data/germanLessons.json';
 import {
-  ArrowLeft, ArrowRight, CheckCircle, Circle, BookOpen, Check, X,
-  Volume2, Star, Lightbulb, ChevronRight, Award, ListChecks,
+  ArrowLeft, ArrowRight, CheckCircle, BookOpen, Check, X, Star, Lightbulb, ChevronRight, Award, ListChecks,
   RotateCcw, Sparkles, BookMarked, Headphones, MessageSquare, Pencil,
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
 import PronunciationGuide from '../components/PronunciationGuide';
-import pronunciationGuides from '../data/pronunciationGuides.json' assert { type: 'json' };
+import pronunciationGuides from '../data/pronunciationGuides.json';
 
 const allLessons = allLessonsData;
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
@@ -26,7 +25,7 @@ const CHECKLIST_ICONS = {
   speaking: MessageSquare,
 };
 
-function ChecklistItem({ icon: Icon, label, done, onClick, color }) {
+function ChecklistItem({ icon: Icon, label, done, onClick }) {
   return (
     <button
       onClick={onClick}
@@ -74,7 +73,7 @@ function PracticeLink({ to, icon: Icon, label, sub, color }) {
 
 export default function LessonDetailPage() {
   const { levelId, lessonId } = useParams();
-  const navigate = useNavigate();
+  
   const lesson = allLessons.find(l => l.id === lessonId);
   const color = levelColors[levelId] || 'var(--accent)';
 
@@ -105,7 +104,7 @@ export default function LessonDetailPage() {
   useEffect(() => {
     try {
       localStorage.setItem('dk_lesson_checklist_' + lessonId, JSON.stringify(checklist));
-    } catch {}
+    } catch { /* empty */ }
   }, [checklist, lessonId]);
 
   const levelLessons = useMemo(() =>

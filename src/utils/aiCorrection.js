@@ -101,7 +101,7 @@ async function callBackend(endpoint, body) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     });
-  } catch (err) {
+    } catch {
     throw new Error(
       'Could not reach the correction service. Check your connection or try again later.'
     );
@@ -112,7 +112,7 @@ async function callBackend(endpoint, body) {
     try {
       const errBody = await response.json();
       detail = errBody.error || '';
-    } catch {}
+    } catch { /* empty */ }
     throw new Error(
       `Correction service returned an error (${response.status}). ${detail}`.trim()
     );
@@ -149,7 +149,7 @@ export async function transcribeAudio(audioBlob) {
       method: 'POST',
       body: formData,
     });
-  } catch (err) {
+    } catch {
     throw new Error('Could not reach the transcription service. Check your connection.');
   }
 
@@ -158,7 +158,7 @@ export async function transcribeAudio(audioBlob) {
     try {
       const errBody = await response.json();
       detail = errBody.error || '';
-    } catch {}
+    } catch { /* empty */ }
     throw new Error(`Transcription service returned an error (${response.status}). ${detail}`.trim());
   }
 

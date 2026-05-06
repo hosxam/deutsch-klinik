@@ -4,8 +4,7 @@ import { getState, updateState } from '../utils/store';
 import speakingData from '../data/speaking.json';
 import {
   Mic, Square, Clock, Lightbulb, Copy, ClipboardCheck,
-  Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle,
-  Play, StopCircle, Volume2, FileText, MessageSquare
+  Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle, StopCircle, Volume2, MessageSquare
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
@@ -43,6 +42,7 @@ export default function SpeakingPage() {
   // Audio recording state (local only, never uploaded)
   const [audioRecorderState, setAudioRecorderState] = useState('idle'); // idle | recording | recorded
   const [audioUrl, setAudioUrl] = useState(null);
+  const [audioError, setAudioError] = useState(null);
   const mediaRecorder = useRef(null);
   const audioChunks = useRef([]);
   const audioSupported = typeof window !== 'undefined' && navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
@@ -60,7 +60,7 @@ export default function SpeakingPage() {
       if (prepTimer) clearInterval(prepTimer);
       if (talkTimer) clearInterval(talkTimer);
       if (recognitionRef.current) {
-        try { recognitionRef.current.abort(); } catch {}
+        try { recognitionRef.current.abort(); } catch { /* empty */ }
       }
     };
   }, [prepTimer, talkTimer]);
@@ -104,16 +104,18 @@ export default function SpeakingPage() {
     if (prepTimer) clearInterval(prepTimer);
     if (talkTimer) clearInterval(talkTimer);
     if (recognitionRef.current) {
-      try { recognitionRef.current.stop(); } catch {}
+      try { recognitionRef.current.stop(); } catch { /* empty */ }
       setIsListening(false);
     }
     // Save recording attempt
     const s = getState();
-    const recs = s.speakingRecordings[levelId] || [];
-    recs.push({ id: prompt.id, date: new Date().toISOString() });
-    if (!s.speakingRecordings) s.speakingRecordings = {};
-    s.speakingRecordings[levelId] = recs;
-    updateState({ speakingRecordings: s.speakingRecordings });
+    const recs = [...(s.speakingRecordings?.[levelId] || []), { id: prompt.id, date: new Date().toISOString() }];
+    updateState({
+      speakingRecordings: {
+        ...(s.speakingRecordings || {}),
+        [levelId]: recs,
+      },
+    });
     setRecordings(recs);
 
     // Reset AI state for new prompt
@@ -133,10 +135,6 @@ export default function SpeakingPage() {
     recognition.interimResults = true;
 
     recognition.onresult = (event) => {
-      let finalText = '';
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        finalText += event.results[i][0].transcript;
-      }
       setTranscript(prev => prev + ' ');
       // Pick up the full transcript from results
       let full = '';
@@ -162,7 +160,7 @@ export default function SpeakingPage() {
 
   const stopListening = () => {
     if (recognitionRef.current) {
-      try { recognitionRef.current.stop(); } catch {}
+      try { recognitionRef.current.stop(); } catch { /* empty */ }
     }
     setIsListening(false);
   };
@@ -172,6 +170,7 @@ export default function SpeakingPage() {
   const startAudioRecording = async () => {
     if (!audioSupported) return;
     try {
+      setAudioError(null);
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       audioChunks.current = [];
       const recorder = new MediaRecorder(stream);
@@ -190,6 +189,8 @@ export default function SpeakingPage() {
       setAudioRecorderState('recording');
     } catch (err) {
       console.warn('Microphone access denied:', err);
+      setAudioError('Microphone access was blocked. You can still type or paste your spoken answer.');
+      setAudioRecorderState('idle');
     }
   };
 
@@ -251,6 +252,7 @@ export default function SpeakingPage() {
     setAiError(null);
     setAudioRecorderState('idle');
     setAudioUrl(null);
+    setAudioError(null);
     setShowAiPrompt(false);
   };
 
@@ -271,6 +273,7 @@ export default function SpeakingPage() {
       <div className="flex items-center justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
         <select onChange={(e) => changePrompt(Number(e.target.value))} value={currentIndex}
+          aria-label="Select speaking prompt"
           className="px-3 py-1.5 rounded-lg text-sm outline-none" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}>
           {prompts.map((p, i) => (
             <option key={p.id} value={i}>{p.title}</option>
@@ -351,6 +354,7 @@ export default function SpeakingPage() {
 
             <textarea
               ref={speakingRef}
+              aria-label="Spoken answer transcript"
               value={transcript}
               onChange={(e) => setTranscript(e.target.value)}
               placeholder="Type or paste your spoken answer here..."
@@ -434,6 +438,12 @@ export default function SpeakingPage() {
               <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
                 <AlertCircle size={12} className="inline mr-1" />
                 Audio recording is not supported in this browser.
+              </p>
+            )}
+            {audioError && (
+              <p className="mt-2 text-xs" style={{ color: '#ff3355' }}>
+                <AlertCircle size={12} className="inline mr-1" />
+                {audioError}
               </p>
             )}
 
@@ -609,7 +619,7 @@ export default function SpeakingPage() {
               </button>
               {showAiPrompt && (
                 <div className="mt-2 rounded-xl p-3 text-left" style={{ backgroundColor: 'rgba(139,92,246,0.06)', border: '1px solid #8b5cf6' }}>
-                  <textarea readOnly value={`I practiced this German speaking task. Identify grammar mistakes, vocabulary mistakes, and sentence structure problems based on the topic. My level is ${levelId}. The task was: ${prompt.prompt}. My spoken answer was: ${transcript || '(transcript not provided)'}. Please give me a corrected sample response at my level.`} rows={5}
+                  <textarea readOnly aria-label="AI correction prompt" value={`I practiced this German speaking task. Identify grammar mistakes, vocabulary mistakes, and sentence structure problems based on the topic. My level is ${levelId}. The task was: ${prompt.prompt}. My spoken answer was: ${transcript || '(transcript not provided)'}. Please give me a corrected sample response at my level.`} rows={5}
                     className="w-full p-2 rounded-lg text-xs outline-none resize-none"
                     style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }} />
                   <button onClick={() => { navigator.clipboard.writeText(`I practiced this German speaking task. Identify grammar mistakes, vocabulary mistakes, and sentence structure problems based on the topic. My level is ${levelId}. The task was: ${prompt.prompt}. My spoken answer was: ${transcript || '(transcript not provided)'}. Please give me a corrected sample response at my level.`); setAiCopied(true); setTimeout(() => setAiCopied(false), 2000); }}

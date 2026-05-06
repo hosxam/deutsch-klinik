@@ -7,9 +7,9 @@ import {
 } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import {
-  AlertTriangle, X, Check, RefreshCw, BookOpen, Filter,
+  AlertTriangle, X, Check, RefreshCw, Filter,
   ChevronDown, ChevronUp, RotateCcw, Brain,
-  Star, Trash2, ClipboardCheck,
+  Star, Trash2,
 } from 'lucide-react';
 
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
@@ -25,7 +25,7 @@ const skillOptions = [
 ];
 
 export default function MistakeNotebookPage() {
-  const [state, setState] = useState(getState());
+  const [, setState] = useState(getState());
   const [filterLevel, setFilterLevel] = useState('all');
   const [filterSkill, setFilterSkill] = useState('all');
   const [retryAnswers, setRetryAnswers] = useState({});

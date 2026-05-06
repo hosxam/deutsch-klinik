@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { getState, getCompletedLessons } from '../utils/store';
 import { getStudyGoal, saveStudyGoal, clearStudyGoal } from './StudyGoalTracker';
 import dashboardSummary from '../data/dashboardSummary.json';
-import { Target, Calendar, Clock, AlertTriangle, Save, RotateCcw, X } from 'lucide-react';
+import { Target, AlertTriangle, Save, RotateCcw, X } from 'lucide-react';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };

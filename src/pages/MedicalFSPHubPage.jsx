@@ -2,14 +2,11 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState } from '../utils/store';
 import {
-  Stethoscope, BookOpen, Mic, PenTool, FileText, Headphones,
-  MessageSquare, ClipboardCheck, Target, ChevronRight, Star,
-  Clock, AlertTriangle, GraduationCap, HeartPulse, Brain,
-  UserRound, CalendarCheck, ScrollText, Siren, FlaskConical,
-  UserPlus, ListChecks, TriangleAlert, ArrowRight, Network
+  Stethoscope, BookOpen, Mic, PenTool, FileText, Headphones, ClipboardCheck, Target, ChevronRight, Star,
+  Clock, AlertTriangle, GraduationCap, CalendarCheck, ListChecks, TriangleAlert, Network
 } from 'lucide-react';
 
-const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
+
 
 // FSP progress counts (static for now, will be dynamic with localStorage later)
 const progressDefaults = {
@@ -52,7 +49,7 @@ export default function MedicalFSPHubPage() {
     try {
       const saved = JSON.parse(localStorage.getItem('fspProgress') || '{}');
       setProgress({ ...progressDefaults, ...saved });
-    } catch {}
+    } catch { /* empty */ }
   }, []);
 
   return (

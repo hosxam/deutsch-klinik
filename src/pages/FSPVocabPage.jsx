@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { BookOpen, ChevronLeft, Search, Volume2, ClipboardCopy } from 'lucide-react';
+import { BookOpen, ChevronLeft, Search } from 'lucide-react';
 
 export default function FSPVocabPage() {
   const [vocab, setVocab] = useState([]);

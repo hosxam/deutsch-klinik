@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Star, ChevronLeft, ChevronDown, ChevronUp } from 'lucide-react';
+import { Star, ChevronLeft } from 'lucide-react';
 
 export default function FSPGrammarPage() {
   const [exercises, setExercises] = useState([]);
-  const [expanded, setExpanded] = useState({});
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [selectedAnswer, setSelectedAnswer] = useState({});
 

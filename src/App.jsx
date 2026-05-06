@@ -36,7 +36,7 @@ const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
 
 function Loading() {
   return (
-    <div style={{
+    <div role="status" aria-live="polite" aria-label="Loading page" style={{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

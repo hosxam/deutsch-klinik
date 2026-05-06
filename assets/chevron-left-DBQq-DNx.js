@@ -1,1 +1,0 @@
-import{u as e}from"./index-t95PdV3x.js";var t=e(`chevron-left`,[[`path`,{d:`m15 18-6-6 6-6`,key:`1wnfg3`}]]);export{t};

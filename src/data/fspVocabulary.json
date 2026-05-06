@@ -61,7 +61,7 @@
     "example": "Der Aufnahmebefund zeigte einen erhohten Blutdruck.",
     "exampleTranslation": "Admission findings showed high blood pressure.",
     "patientFriendlyPhrase": "Wir haben bei Aufnahme alles untersucht.",
-    "doctorToDoctorPhrase": "Aufnahmebefund: 45-jahriger Patient mit Thoraxschmerz.",
+    "doctorToDoctorPhrase": "Aufnahmebefund: 45-jähriger Patient mit Thoraxschmerz.",
     "category": "General Hospital",
     "tags": [
       "admission"
@@ -282,7 +282,7 @@
     "example": "Der Verlauf war langsam fortschreitend.",
     "exampleTranslation": "Course was slowly progressive.",
     "patientFriendlyPhrase": "Haben sich die Beschwerden verschlimmert?",
-    "doctorToDoctorPhrase": "Progredienter Verlauf der Dyspnö.",
+    "doctorToDoctorPhrase": "Progredienter Verlauf der Dyspnoe.",
     "category": "Anamnesis",
     "tags": [
       "course"
@@ -296,10 +296,10 @@
     "plural": null,
     "translation": "accompanying symptoms",
     "layExplanation": "Other symptoms occurring with main complaint",
-    "example": "Ubelkeit und Schwindel als Begleitsymptome.",
+    "example": "Übelkeit und Schwindel als Begleitsymptome.",
     "exampleTranslation": "Nausea and dizziness as accompanying symptoms.",
     "patientFriendlyPhrase": "Hatten Sie noch andere Beschwerden?",
-    "doctorToDoctorPhrase": "Begleitsymptome: Ubelkeit, kalter Schweiß.",
+    "doctorToDoctorPhrase": "Begleitsymptome: Übelkeit, kalter Schweiß.",
     "category": "Anamnesis",
     "tags": [
       "symptoms"
@@ -384,7 +384,7 @@
     "example": "Fieber bis 39.5 Grad Celsius.",
     "exampleTranslation": "Fever up to 39.5 C.",
     "patientFriendlyPhrase": "Haben Sie Fieber gemessen?",
-    "doctorToDoctorPhrase": "Fieber bis 39.5 Grad, kein Schuttelfrost.",
+    "doctorToDoctorPhrase": "Fieber bis 39.5 Grad, kein Schüttelfrost.",
     "category": "Symptoms",
     "tags": [
       "fever"
@@ -393,15 +393,15 @@
   {
     "id": "fsp_v_24",
     "level": "FSP",
-    "word": "der Schuttelfrost",
+    "word": "der Schüttelfrost",
     "article": "der",
     "plural": null,
     "translation": "rigors/chills",
     "layExplanation": "Severe shivering with fever",
-    "example": "Nachtschweiß und Schuttelfrost.",
+    "example": "Nachtschweiß und Schüttelfrost.",
     "exampleTranslation": "Night sweats and chills.",
-    "patientFriendlyPhrase": "Hatten Sie Schuttelfrost, starkes Frieren?",
-    "doctorToDoctorPhrase": "Schuttelfrost und Fieber bis 40 Grad.",
+    "patientFriendlyPhrase": "Hatten Sie Schüttelfrost, starkes Frieren?",
+    "doctorToDoctorPhrase": "Schüttelfrost und Fieber bis 40 Grad.",
     "category": "Symptoms",
     "tags": [
       "chills"
@@ -464,15 +464,15 @@
     "word": "die Müdigkeit",
     "article": "die",
     "plural": null,
-    "translation": "fatigü",
+    "translation": "fatigue",
     "layExplanation": "Extreme tiredness",
     "example": "Der Patient klagt über starke Müdigkeit.",
-    "exampleTranslation": "Patient complains of severe fatigü.",
+    "exampleTranslation": "Patient complains of severe fatigue.",
     "patientFriendlyPhrase": "Fuhlen Sie sich mud und erschopft?",
-    "doctorToDoctorPhrase": "Ausgepragte Fatigü bei Eisenmangelanamie.",
+    "doctorToDoctorPhrase": "Ausgepragte Fatigue bei Eisenmangelanämie.",
     "category": "Symptoms",
     "tags": [
-      "fatigü"
+      "fatigue"
     ]
   },
   {
@@ -818,15 +818,15 @@
   {
     "id": "fsp_v_49",
     "level": "FSP",
-    "word": "die Herzfreqünz",
+    "word": "die Herzfrequenz",
     "article": "die",
-    "plural": "die Herzfreqünzen",
+    "plural": "die Herzfrequenzen",
     "translation": "heart rate",
     "layExplanation": "Heartbeats per minute",
-    "example": "Herzfreqünz 85/min.",
+    "example": "Herzfrequenz 85/min.",
     "exampleTranslation": "Heart rate 85/min.",
     "patientFriendlyPhrase": "Ihr Herz schlagt 85 Mal pro Minute.",
-    "doctorToDoctorPhrase": "Herzfreqünz 85/min, normofreqünt.",
+    "doctorToDoctorPhrase": "Herzfrequenz 85/min, normofrequent.",
     "category": "Cardiovascular",
     "tags": [
       "vital"
@@ -860,7 +860,7 @@
     "example": "Atemnot seit Tagen zunehmend.",
     "exampleTranslation": "Progressive shortness of breath for days.",
     "patientFriendlyPhrase": "Bekommen Sie genug Luft?",
-    "doctorToDoctorPhrase": "Ruhedyspnö bei COPD GOLD III.",
+    "doctorToDoctorPhrase": "Ruhedyspnoe bei COPD GOLD III.",
     "category": "Respiratory",
     "tags": [
       "dyspnea"
@@ -920,14 +920,14 @@
   {
     "id": "fsp_v_55",
     "level": "FSP",
-    "word": "die Saürstoffsattigung",
+    "word": "die Sauerstoffsättigung",
     "article": "die",
-    "plural": "die Saürstoffsattigungen",
+    "plural": "die Sauerstoffsättigungen",
     "translation": "oxygen saturation",
     "layExplanation": "Percentage of oxygen in blood",
-    "example": "Saürstoffsattigung 94 Prozent.",
+    "example": "Sauerstoffsättigung 94 Prozent.",
     "exampleTranslation": "Oxygen saturation 94 percent.",
-    "patientFriendlyPhrase": "Ihr Saürstoffgehalt ist etwas niedrig.",
+    "patientFriendlyPhrase": "Ihr Sauerstoffgehalt ist etwas niedrig.",
     "doctorToDoctorPhrase": "SpO2 88 Prozent unter Raumluft.",
     "category": "Respiratory",
     "tags": [
@@ -1022,15 +1022,15 @@
   {
     "id": "fsp_v_61",
     "level": "FSP",
-    "word": "die Ubelkeit",
+    "word": "die Übelkeit",
     "article": "die",
     "plural": null,
     "translation": "nausea",
     "layExplanation": "Feeling of needing to vomit",
-    "example": "Ubelkeit nach dem Essen.",
+    "example": "Übelkeit nach dem Essen.",
     "exampleTranslation": "Nausea after eating.",
     "patientFriendlyPhrase": "Ist Ihnen ubel?",
-    "doctorToDoctorPhrase": "Postprandiale Ubelkeit.",
+    "doctorToDoctorPhrase": "Postprandiale Übelkeit.",
     "category": "Gastrointestinal",
     "tags": [
       "nausea"
@@ -1044,7 +1044,7 @@
     "plural": null,
     "translation": "vomiting",
     "layExplanation": "Stomach contents coming out through mouth",
-    "example": "Erbrechen mehrmals taglich.",
+    "example": "Erbrechen mehrmals täglich.",
     "exampleTranslation": "Vomiting several times daily.",
     "patientFriendlyPhrase": "Mussten Sie sich übergeben?",
     "doctorToDoctorPhrase": "Wiederholtes Erbrechen.",
@@ -1060,7 +1060,7 @@
     "article": "der",
     "plural": null,
     "translation": "diarrhea",
-    "layExplanation": "Freqünt loose stools",
+    "layExplanation": "Frequent loose stools",
     "example": "Wassriger Durchfall seit 3 Tagen.",
     "exampleTranslation": "Watery diarrhea for 3 days.",
     "patientFriendlyPhrase": "Haben Sie Durchfall?",
@@ -1077,7 +1077,7 @@
     "article": "die",
     "plural": null,
     "translation": "constipation",
-    "layExplanation": "Infreqünt hard stools",
+    "layExplanation": "Infrequent hard stools",
     "example": "Verstopfung seit Tagen.",
     "exampleTranslation": "Constipation for days.",
     "patientFriendlyPhrase": "Probleme mit Stuhlgang?",
@@ -1386,7 +1386,7 @@
     "layExplanation": "Fluid in a joint",
     "example": "Kniegelenkerguss rechts.",
     "exampleTranslation": "Right knee effusion.",
-    "patientFriendlyPhrase": "Knie geschwollen durch Flussigkeit.",
+    "patientFriendlyPhrase": "Knie geschwollen durch Flüssigkeit.",
     "doctorToDoctorPhrase": "Kniegelenkerguss bei Gonarthrose.",
     "category": "Musculoskeletal",
     "tags": [

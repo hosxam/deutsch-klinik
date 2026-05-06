@@ -25,11 +25,13 @@ const ENGLISH_WORDS = new Set([
   'doctorquestion', 'does', 'fluent', 'fluently', 'followupquestions',
   'frequently', 'goes', 'goethe', 'monologue', 'question', 'questions',
   'request', 'requests', 'true', 'ue', 'dialog', 'dialoge',
+  'questionnaire', 'consequences', 'frequent', 'infrequent', 'fatigue',
 ]);
 
 // German words where "ae"/"oe"/"ue" IS correct (NOT transliterations)
 const GERMAN_VALID_WORDS = new Set([
   'bauen', 'baust', 'baut', 'baute', 'bauten', 'gebaut',
+  'bequem',
   'blaue', 'blauen', 'blauer', 'blaues',
   'braue', 'brauen', 'braut',
   'dauer', 'dauern', 'dauert', 'dauerte', 'gedauert',
@@ -47,6 +49,8 @@ const GERMAN_VALID_WORDS = new Set([
   'pfauen',
   'raue', 'rauen', 'rauer',
   'sauer', 'saure', 'sauren', 'saurer', 'saures',
+  'sauerstoff', 'sauerstoffgabe', 'sauerstoffgehalt',
+  'sauerstoffsättigung', 'sauerstoffsättigungen',
   'schaue', 'schauen', 'schaust', 'schaut', 'schaute',
   'schauer', 'schauern',
   'stauen', 'staut', 'staute',
@@ -62,6 +66,12 @@ const GERMAN_VALID_WORDS = new Set([
   'muss', 'musst',
   'fluss', 'flusse', 'flussen',
   'befund', 'befunde', 'befunden',
+  // Medical and loan words where ae/oe/ue letter pairs are not ASCII umlaut transliterations
+  'atemfrequenz', 'belastungsdyspnoe', 'dyspnoe', 'frequenz',
+  'frequenzkontrolle', 'gastroenteritis', 'herzfrequenz',
+  'herzfrequenzen', 'kopfschmerzfrequenz', 'normofrequent',
+  'nutzungsdauer', 'orthopnoe', 'ruhedyspnoe', 'sprechdyspnoe',
+  'stuhlfrequenz',
 ]);
 
 const ALL_VALID = new Set([...ENGLISH_WORDS, ...GERMAN_VALID_WORDS]);

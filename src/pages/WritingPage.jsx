@@ -17,7 +17,6 @@ export default function WritingPage() {
   const [timerActive, setTimerActive] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [pastWritings, setPastWritings] = useState([]);
-  const [showAiPrompt, setShowAiPrompt] = useState(false);
   const [aiCopied, setAiCopied] = useState(false);
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState('');
@@ -321,6 +320,7 @@ export default function WritingPage() {
 
       <textarea
         ref={writingRef}
+        aria-label="Writing response"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Write your response here..."
@@ -379,12 +379,13 @@ export default function WritingPage() {
         </div>
       )}
 
-      <div className="flex gap-3 mt-4">
+      <div className="flex flex-col gap-3 mt-4 sm:flex-row">
         <button onClick={submitWriting} disabled={text.trim().length < 10}
           className="flex-1 py-3 rounded-lg font-semibold disabled:opacity-40" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
           Submit
         </button>
         <select onChange={(e) => setCurrentIndex(Number(e.target.value))} value={currentIndex}
+          aria-label="Select writing prompt"
           className="px-3 py-2 rounded-lg text-sm outline-none" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}>
           {prompts.map((p, i) => (
             <option key={p.id} value={i}>{p.title}</option>

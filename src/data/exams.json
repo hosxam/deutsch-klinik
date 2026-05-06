@@ -1,5 +1,5 @@
 {
-  "_comment": "Full Göthe-style practice exams per level. Each contains Lesen, Hören, Schreiben, and Sprechen sections. Qüstions are original but format follows Göthe exam style. Add more exams by following the structure.",
+  "_comment": "Full Göthe-style practice exams per level. Each contains Lesen, Hören, Schreiben, and Sprechen sections. Questions are original but format follows Göthe exam style. Add more exams by following the structure.",
   "exams": {
     "A1": [
       {
@@ -438,7 +438,7 @@
               {
                 "id": "A1_ex_h4_2",
                 "type": "true-false",
-                "question": "Apotheker: 'Hier ist Ihr Medikament. Es kostet 7,50 Euro. Dreimal taglich einen Messloffel.' Das Medikament kostet 8,50 Euro.",
+                "question": "Apotheker: 'Hier ist Ihr Medikament. Es kostet 7,50 Euro. Dreimal täglich einen Messloffel.' Das Medikament kostet 8,50 Euro.",
                 "answer": "false"
               },
               {
@@ -1645,7 +1645,7 @@
               {
                 "id": "B1_ex4_les_2",
                 "type": "true-false",
-                "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abflüge über Terminal 2 abgewickelt. Terminal 1 wird für sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abflüge sind aktüll über Terminal 1.",
+                "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abflüge über Terminal 2 abgewickelt. Terminal 1 wird für sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abflüge sind aktuell über Terminal 1.",
                 "answer": "false"
               },
               {
@@ -1773,7 +1773,7 @@
               {
                 "id": "B1_ex5_les_1",
                 "type": "mcq",
-                "question": "Text: 'Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneürbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.' Was ist kein Beitrag zum Klimaschutz für Privathaushalte?",
+                "question": "Text: 'Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoß zu reduzieren.' Was ist kein Beitrag zum Klimaschutz für Privathaushalte?",
                 "options": [
                   "Energiesparen",
                   "Mülltrennung",
@@ -1791,7 +1791,7 @@
               {
                 "id": "B1_ex5_les_3",
                 "type": "heading-match",
-                "question": "Welche Überschrift passt? 'Laut einer aktüllen Umfrage informieren sich 65 Prozent der Deutschen täglich über soziale Medien über das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsächlich Online-Nachrichten.'",
+                "question": "Welche Überschrift passt? 'Laut einer aktuellen Umfrage informieren sich 65 Prozent der Deutschen täglich über soziale Medien über das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsächlich Online-Nachrichten.'",
                 "options": [
                   "Fernsehen wird beliebter",
                   "Junge Menschen lesen mehr Bücher",
@@ -1827,7 +1827,7 @@
               {
                 "id": "B1_ex5_les_6",
                 "type": "short-answer",
-                "question": "Text: \"Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneürbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoss zu reduzieren.\" Bis wann möchte Deutschland klimaneutral sein?",
+                "question": "Text: \"Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoß zu reduzieren.\" Bis wann möchte Deutschland klimaneutral sein?",
                 "answer": "bis 2045",
                 "acceptedAnswers": [
                   "bis 2045",
@@ -2524,7 +2524,7 @@
               {
                 "id": "B2_ex_l5_6",
                 "type": "short-answer",
-                "question": "Text: \"In Deutschland gilt die Entscheidungslösung: Jeder kann seine Bereitschaft zur Organspende erklären. Kritiker fordern die Widerspruchslösung.\" Welches Modell gilt aktüll in Deutschland für die Organspende?",
+                "question": "Text: \"In Deutschland gilt die Entscheidungslösung: Jeder kann seine Bereitschaft zur Organspende erklären. Kritiker fordern die Widerspruchslösung.\" Welches Modell gilt aktuell in Deutschland für die Organspende?",
                 "answer": "Entscheidungslösung",
                 "acceptedAnswers": [
                   "Entscheidungslösung",
@@ -2584,7 +2584,7 @@
             "tasks": [
               {
                 "id": "B2_ex_s5_1",
-                "prompt": "Halten Sie einen Vortrag über 'Ethische Aspekte der Organspende in Deutschland.' Gehen Sie auf die aktülle Gesetzeslage, die Debatte um die Widerspruchslösung und Ihre persönliche Meinung ein.",
+                "prompt": "Halten Sie einen Vortrag über 'Ethische Aspekte der Organspende in Deutschland.' Gehen Sie auf die aktuelle Gesetzeslage, die Debatte um die Widerspruchslösung und Ihre persönliche Meinung ein.",
                 "talkTime": 180
               },
               {
@@ -3036,13 +3036,13 @@
               {
                 "id": "C1_ex4_l2",
                 "type": "true-false",
-                "question": "Text: 'Die FSP prüft die kommunikative Kompetenz in typischen ärztlichen Gesprächssituationen: Anamnese, Aufklärung, Dokumentation.' Die FSP prüft ausschliesslich schriftliche Fähigkeiten.",
+                "question": "Text: 'Die FSP prüft die kommunikative Kompetenz in typischen ärztlichen Gesprächssituationen: Anamnese, Aufklärung, Dokumentation.' Die FSP prüft ausschließlich schriftliche Fähigkeiten.",
                 "answer": "false"
               },
               {
                 "id": "C1_ex4_l3",
                 "type": "opinion-match",
-                "question": "Text: 'Ein Prüfer stellt fest: Die grösste Hürde in der FSP ist nicht die Grammatik, sondern die pragmatische Angemessenheit.' Was ist die grösste Herausforderung?",
+                "question": "Text: 'Ein Prüfer stellt fest: Die größte Hürde in der FSP ist nicht die Grammatik, sondern die pragmatische Angemessenheit.' Was ist die größte Herausforderung?",
                 "options": [
                   "Grammatikfehler",
                   "Fachwortschatz",

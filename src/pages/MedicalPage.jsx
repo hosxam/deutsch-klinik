@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { getState } from '../utils/store';
 import medicalData from '../data/medical.json';
 import { Stethoscope, Lock } from 'lucide-react';
 
 export default function MedicalPage() {
   const state = getState();
-  const [unlocked, setUnlocked] = useState(state.medicalUnlocked);
+  const [unlocked] = useState(state.medicalUnlocked);
 
   if (!unlocked) {
     return (
@@ -26,7 +26,7 @@ export default function MedicalPage() {
   }
 
   const categories = [...new Set(medicalData.vocabulary.map(v => v.category))];
-  const topics = [...new Set(medicalData.vocabulary.map(v => v.topic))];
+  
 
   return (
     <div>

@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import readingData from '../data/reading.json';
 import LevelLock from '../components/LevelLock';
@@ -38,15 +38,16 @@ export default function ReadingPage() {
     setSubmitted(true);
     updateLevelProgress(levelId, 'reading', { date: new Date().toISOString(), score: s, total: ex.questions.length });
   };
+  const allAnswered = ex.questions.every(q => answers[q.id] !== undefined);
 
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
-        <div className="flex gap-2">
+        <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Reading exercise selector">
           {exercises.map((_, i) => (
-            <button key={i} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); }}
-              className="w-11 h-11 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
+            <button key={i} type="button" aria-label={`Reading exercise ${i + 1}`} aria-current={currentEx === i ? 'true' : undefined} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); }}
+              className="w-11 h-11 flex-shrink-0 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
               style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
             </button>
@@ -75,7 +76,7 @@ export default function ReadingPage() {
               {q.type === 'true-false' && (
                 <div className="flex gap-2">
                   {['true', 'false'].map(opt => (
-                    <button key={opt} onClick={() => !submitted && handleAnswer(q.id, opt)}
+                    <button key={opt} type="button" onClick={() => !submitted && handleAnswer(q.id, opt)}
                       className="px-4 py-3 rounded-lg text-sm"
                       style={{
                         backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)',
@@ -90,7 +91,7 @@ export default function ReadingPage() {
               {q.type === 'mcq' && q.options && (
                 <div className="grid grid-cols-1 gap-1">
                   {q.options.map(opt => (
-                    <button key={opt} onClick={() => !submitted && handleAnswer(q.id, opt)}
+                    <button key={opt} type="button" onClick={() => !submitted && handleAnswer(q.id, opt)}
                       className="text-left px-3 py-3 rounded-lg text-sm"
                       style={{
                         backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)',
@@ -105,7 +106,7 @@ export default function ReadingPage() {
               {q.type === 'gap-fill' && q.options && (
                 <div className="flex gap-2 flex-wrap">
                   {q.options.map(opt => (
-                    <button key={opt} onClick={() => !submitted && handleAnswer(q.id, opt)}
+                    <button key={opt} type="button" onClick={() => !submitted && handleAnswer(q.id, opt)}
                       className="px-3 py-2.5 rounded-lg text-sm"
                       style={{
                         backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)',
@@ -129,8 +130,18 @@ export default function ReadingPage() {
       </div>
 
       {!submitted && (
-        <button onClick={submitAll} className="mt-6 w-full py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
-          Submit All Answers
+        <button
+          type="button"
+          onClick={submitAll}
+          disabled={!allAnswered}
+          className="mt-6 w-full py-3 rounded-lg font-semibold"
+          style={{
+            backgroundColor: allAnswered ? 'var(--accent)' : 'var(--bg-hover)',
+            color: allAnswered ? '#fff' : 'var(--text-muted)',
+            cursor: allAnswered ? 'pointer' : 'not-allowed',
+          }}
+        >
+          {allAnswered ? 'Submit All Answers' : 'Answer all questions to submit'}
         </button>
       )}
 
@@ -140,11 +151,11 @@ export default function ReadingPage() {
             Score: {score}/{ex.questions.length}
           </p>
           <div className="flex gap-3 justify-center mt-4">
-            <button onClick={() => { setAnswers({}); setSubmitted(false); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+            <button type="button" onClick={() => { setAnswers({}); setSubmitted(false); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
               Retry
             </button>
             {currentEx < exercises.length - 1 && (
-              <button onClick={() => { setCurrentEx(currentEx + 1); setAnswers({}); setSubmitted(false); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+              <button type="button" onClick={() => { setCurrentEx(currentEx + 1); setAnswers({}); setSubmitted(false); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
                 Next Exercise
               </button>
             )}

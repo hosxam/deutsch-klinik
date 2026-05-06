@@ -5,5 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/deutsch-klinik/',
-
+  build: {
+    chunkSizeWarningLimit: 1300,
+  },
 })

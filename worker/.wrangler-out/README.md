@@ -1,1 +1,0 @@
-This folder contains the built output assets for the worker "deutsch-klinik-ai-correction" generated at 2026-05-04T17:42:01.594Z.

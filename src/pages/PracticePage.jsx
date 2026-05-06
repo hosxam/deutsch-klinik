@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useCallback } from 'react';
-import { getState, recordVocabAnswer, getVocabMastery, updateLevelProgress } from '../utils/store';
+import {  recordVocabAnswer, updateLevelProgress } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
 import {
-  Hash, Shuffle, CheckCircle, XCircle, ArrowLeft, ArrowRight,
-  RefreshCw, List, Filter, BookMarked, Beaker,
+  Hash, CheckCircle, XCircle, ArrowLeft, ArrowRight,
+  RefreshCw, List, BookMarked, Beaker,
   ClipboardCopy, Download,
 } from 'lucide-react';
 
@@ -192,7 +192,8 @@ export default function PracticePage() {
   const [showHint, setShowHint] = useState(false);
   const [quizDone, setQuizDone] = useState(false);
   const [mistakes, setMistakes] = useState([]);
-  const [sessionResults, setSessionResults] = useState([]);
+  const [, setSessionResults] = useState([]);
+  const [reviewingMistakes, setReviewingMistakes] = useState(false);
 
   // Level filter state
   const [selectedLevel, setSelectedLevel] = useState(levelId);
@@ -251,9 +252,6 @@ export default function PracticePage() {
     setSessionResults([]);
     setReviewingMistakes(false);
   }, [mode, selectedLevel, selectedTopic, questionCount]);
-
-  // Review mistakes only mode
-  const [reviewingMistakes, setReviewingMistakes] = useState(false);
 
   const questionsReady = questions.length > 0;
   const currentQ = questionsReady ? questions[currentIndex] : null;

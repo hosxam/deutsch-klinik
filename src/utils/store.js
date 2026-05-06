@@ -95,12 +95,29 @@ function loadState() {
     const raw = localStorage.getItem(STORE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw);
-      return { ...JSON.parse(JSON.stringify(defaultState)), ...parsed };
+      return mergeState(JSON.parse(JSON.stringify(defaultState)), parsed);
     }
   } catch (e) {
     console.warn('Failed to load state, resetting.', e);
   }
   return JSON.parse(JSON.stringify(defaultState));
+}
+
+function isPlainObject(value) {
+  return value && typeof value === 'object' && !Array.isArray(value);
+}
+
+function mergeState(base, saved) {
+  if (!isPlainObject(saved)) return base;
+  const merged = { ...base };
+  Object.entries(saved).forEach(([key, value]) => {
+    if (isPlainObject(base[key]) && isPlainObject(value)) {
+      merged[key] = mergeState(base[key], value);
+    } else {
+      merged[key] = value;
+    }
+  });
+  return merged;
 }
 
 export function saveState(state) {
@@ -109,7 +126,7 @@ export function saveState(state) {
     // Notify listeners that progress changed (for Supabase auto-sync etc.)
     try {
       window.dispatchEvent(new CustomEvent('deutsch-klinik-progress-changed', { detail: { timestamp: Date.now() } }));
-    } catch (e) {
+    } catch {
       // Event dispatch is best-effort
     }
   } catch (e) {
@@ -125,26 +142,38 @@ export function getState() {
 }
 
 export function updateState(partial) {
-  state = { ...state, ...partial };
+  state = mergeState(state, partial);
   saveState(state);
 }
 
 export function updateLevelProgress(level, key, data) {
-  if (!state.levels[level]) {
-    state.levels[level] = {};
-  }
-  if (!state.levels[level][key]) {
-    state.levels[level][key] = [];
-  }
-  state.levels[level][key].push(data);
+  const levelState = state.levels[level] || {};
+  const existing = Array.isArray(levelState[key]) ? levelState[key] : [];
+  state = {
+    ...state,
+    levels: {
+      ...state.levels,
+      [level]: {
+        ...levelState,
+        [key]: [...existing, data],
+      },
+    },
+  };
   saveState(state);
 }
 
 export function setLevelProgress(level, key, arr) {
-  if (!state.levels[level]) {
-    state.levels[level] = {};
-  }
-  state.levels[level][key] = arr;
+  const levelState = state.levels[level] || {};
+  state = {
+    ...state,
+    levels: {
+      ...state.levels,
+      [level]: {
+        ...levelState,
+        [key]: Array.isArray(arr) ? arr : [],
+      },
+    },
+  };
   saveState(state);
 }
 
@@ -306,7 +335,7 @@ export function getVocabMastery(wordId) {
     mastered: false,
     ease: 2.5,
     interval: 1,
-    due: new Date().toISOString().split('T')[0],
+    due: getLocalDateKey(),
     repetitions: 0,
   };
 }
@@ -340,7 +369,7 @@ export function recordVocabAnswer(wordId, isCorrect) {
   // Calculate due date
   const dueDate = new Date();
   dueDate.setDate(dueDate.getDate() + mastery.interval);
-  mastery.due = dueDate.toISOString().split('T')[0];
+  mastery.due = getLocalDateKeyFromDate(dueDate);
 
   // Mark as mastered after 5+ correct with ease >= 2.5
   mastery.mastered = mastery.correct >= 5 && mastery.ease >= 2.5;
@@ -351,7 +380,7 @@ export function recordVocabAnswer(wordId, isCorrect) {
 }
 
 export function getDueVocabWords(wordIds) {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getLocalDateKey();
   return wordIds.filter(id => {
     const m = state.vocabularyMastery[id];
     return !m || m.due <= today || !m.mastered;
@@ -417,8 +446,8 @@ export function getReadinessScores() {
 
 export function getWeakTopics() {
   return Object.entries(state.topicWeakness)
-    .filter(([_, t]) => t.status === 'weak' || t.status === 'improving')
-    .sort((a, b) => a[1].status === 'weak' ? -1 : 1)
+    .filter(([, t]) => t.status === 'weak' || t.status === 'improving')
+    .sort((a) => a[1].status === 'weak' ? -1 : 1)
     .map(([topic, data]) => ({ topic, ...data }));
 }
 
@@ -470,7 +499,7 @@ export function isExamUnlocked(level, levelData) {
   const listeningDone = (prog.listening || []).length >= levelData.minListeningTests;
   const readingDone = (prog.reading || []).length >= levelData.minReadingTests;
 
-  const lessonsCompleted = (state.completedLessons[level] || []).length;
+  const lessonsCompleted = getCompletedLessons(level).length;
   return grammarDone && vocabDone && lessonsCompleted >= 10 && writingsDone && speakingDone && listeningDone && readingDone;
 }
 
@@ -489,6 +518,10 @@ export function isLevelUnlocked(levelId, levelsData) {
 function getLocalDateKey(offsetDays = 0) {
   const d = new Date();
   if (offsetDays) d.setDate(d.getDate() + offsetDays);
+  return getLocalDateKeyFromDate(d);
+}
+
+function getLocalDateKeyFromDate(d) {
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');

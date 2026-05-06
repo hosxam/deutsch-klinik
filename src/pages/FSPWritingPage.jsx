@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { PenTool, ChevronLeft, ChevronDown, ChevronUp, Clock, Copy } from 'lucide-react';
+import { PenTool, ChevronLeft, ChevronDown, ChevronUp, Copy } from 'lucide-react';
 
 export default function FSPWritingPage() {
   const [tasks, setTasks] = useState([]);

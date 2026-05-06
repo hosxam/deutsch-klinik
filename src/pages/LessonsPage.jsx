@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getState, getCompletedLessons } from '../utils/store';
 import allLessonsData from '../data/germanLessons.json';
 import unitsData from '../data/germanUnits.json';
-import { BookOpen, CheckCircle, Circle, ArrowLeft, BarChart3 } from 'lucide-react';
+import { BookOpen, CheckCircle, Circle, ArrowLeft } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
 
 const allLessons = allLessonsData;
@@ -11,7 +11,7 @@ const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444'
 
 export default function LessonsPage() {
   const { levelId } = useParams();
-  const [state, setState] = useState(getState());
+  const [, setState] = useState(getState());
   const completed = getCompletedLessons(levelId);
   const color = levelColors[levelId] || 'var(--accent)';
 

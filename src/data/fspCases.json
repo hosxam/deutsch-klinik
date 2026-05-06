@@ -7,7 +7,7 @@
       "age": "58",
       "gender": "mannlich",
       "chiefComplaint": "Akuter Brustschmerz seit 2 Stunden",
-      "history": "Plotzlich einsetzender, drückender Schmerz retrosternal, in den linken Arm ausstrahlend. Begleitet von Ubelkeit und kaltem Schwitzen. Keine vergleichbare Episode zuvor.",
+      "history": "Plotzlich einsetzender, drückender Schmerz retrosternal, in den linken Arm ausstrahlend. Begleitet von Übelkeit und kaltem Schwitzen. Keine vergleichbare Episode zuvor.",
       "medications": "Keine regelmasigen Medikamente",
       "allergies": "Keine bekannten Allergien",
       "pastHistory": "Keine relevanten Vorerkrankungen",
@@ -18,17 +18,17 @@
       "Fragen Sie nach Schmerzcharakter, Ausstrahlung und Beginn",
       "Erfragen Sie kardiovaskulare Risikofaktoren",
       "Klatzen Sie die Symptome in laienverstandlicher Sprache",
-      "Erklaren Sie die nachsten diagnostischen Schritte",
+      "Erklären Sie die nachsten diagnostischen Schritte",
       "Fassen Sie den Fall für den Oberarzt zusammen"
     ],
     "mustAsk": [
       "Hatten Sie das Gefuhl, dass der Schmerz in den Arm oder Kiefer ausstrahlt?",
-      "Hatten Sie dabei Ubelkeit oder Schwindel?",
+      "Hatten Sie dabei Übelkeit oder Schwindel?",
       "Hatten Sie solche Schmerzen schon einmal?"
     ],
     "redFlags": [
       "Ausstrahlung in linken Arm und Kiefer",
-      "Kaltschweiigkeit und Ubelkeit",
+      "Kaltschweiigkeit und Übelkeit",
       "Nikotinabusus und positive Familienanamnese"
     ],
     "usefulPhrases": [
@@ -36,7 +36,7 @@
       "Es besteht der Verdacht auf einen Herzinfarkt.",
       "Wir mussen schnell handeln."
     ],
-    "doctorToDoctorSummary": "58-jahriger mannlicher Patient mit akutem retrosternalem Druckschmerz, Ausstrahlung in den linken Arm, Begleitsymptome Ubelkeit und Kaltschwei, Nikotinabusus, positive Familienanamnese. Verdacht auf akutes Koronarsyndrom. EKG und Troponin veranlasst.",
+    "doctorToDoctorSummary": "58-jähriger mannlicher Patient mit akutem retrosternalem Druckschmerz, Ausstrahlung in den linken Arm, Begleitsymptome Übelkeit und Kaltschweiß, Nikotinabusus, positive Familienanamnese. Verdacht auf akutes Koronarsyndrom. EKG und Troponin veranlasst.",
     "scoringRubric": {
       "historyTaking": "Alle kardiovaskularen Risikofaktoren erfragen",
       "redFlags": "Ausstrahlung, Begleitsymptome erkennen",
@@ -88,7 +88,7 @@
       "Bitte nehmen Sie Ihre Medikamente weiterhin regelmassig.",
       "Wir sollten den Verlauf engmaschig kontrollieren."
     ],
-    "doctorToDoctorSummary": "67-jahriger Patient mit bekannter KHK und Z. n. Stent-PCI. Seit einer Woche zunehmende belastungsabhangige Angina pectoris. Medikation wird eingehalten. Geplante Vorstellung zur Koronarangiographie bei Verdacht auf In-Stent-Stenose oder Progredienz der KHK.",
+    "doctorToDoctorSummary": "67-jähriger Patient mit bekannter KHK und Z. n. Stent-PCI. Seit einer Woche zunehmende belastungsabhangige Angina pectoris. Medikation wird eingehalten. Geplante Vorstellung zur Koronarangiographie bei Verdacht auf In-Stent-Stenose oder Progredienz der KHK.",
     "scoringRubric": {
       "historyTaking": "Belastungsabhangigkeit und Medikamenteneinhaltung erfragen",
       "redFlags": "Ruheschmerz als Zeichen der Instabilitat erkennen",
@@ -123,7 +123,7 @@
       "Fragen Sie nach dem akuten Ausloser",
       "Differenzieren Sie kardiale von psychogener Ursache",
       "Bewerten Sie den Schweregrad und beruhigen Sie die Patientin",
-      "Erklaren Sie Ihre Verdachtsdiagnose",
+      "Erklären Sie Ihre Verdachtsdiagnose",
       "Besprechen Sie das weitere Vorgehen"
     ],
     "mustAsk": [
@@ -141,7 +141,7 @@
       "Ihre Symptome passen zu einer Angstreaktion.",
       "Ich mochte trotzdem sicherheitshalber ein EKG machen."
     ],
-    "doctorToDoctorSummary": "34-jahrige Patientin mit akutem Engegefuhl in der Brust nach psychischer Belastung. Keine Ausstrahlung, kein Schwindel. Bekannte Panikattacken. V. a. hyperventilationsbedingte Angstattacke. Kardiale Ursache soll durch EKG und Labor ausgeschlossen werden.",
+    "doctorToDoctorSummary": "34-jährige Patientin mit akutem Engegefuhl in der Brust nach psychischer Belastung. Keine Ausstrahlung, kein Schwindel. Bekannte Panikattacken. V. a. hyperventilationsbedingte Angstattacke. Kardiale Ursache soll durch EKG und Labor ausgeschlossen werden.",
     "scoringRubric": {
       "historyTaking": "Psychosozialen Ausloser aktiv erfragen",
       "redFlags": "Kardiale Symptome Ernst nehmen, auch bei bekannter Angststorung",
@@ -176,7 +176,7 @@
       "Fragen Sie nach Schmerzcharakter und Atemabhangigkeit",
       "Erheben Sie Infektzeichen und Fieberverlauf",
       "Überlegen Sie Differenzialdiagnosen",
-      "Erklaren Sie Ihre Verdachtsdiagnose",
+      "Erklären Sie Ihre Verdachtsdiagnose",
       "Besprechen Sie die nachsten Schritte"
     ],
     "mustAsk": [
@@ -190,14 +190,14 @@
     ],
     "usefulPhrases": [
       "Die stechenden Schmerzen beim Atmen deuten eher auf die Lungenhaut oder den Herzbeutel hin.",
-      "Ich werde ein EKG, eine Blutuntersuchung und ein Rontgen des Brustkorbs machen."
+      "Ich werde ein EKG, eine Blutuntersuchung und ein Röntgen des Brustkorbs machen."
     ],
-    "doctorToDoctorSummary": "24-jahriger Patient mit atemabhangigen stechenden Thoraxschmerzen und Fieber. Keine Ausstrahlung, keine kardialen Risikofaktoren. V. a. Perikarditis oder Pleuritis. EKG, Entzundungsparameter und Rontgen-Thorax veranlasst.",
+    "doctorToDoctorSummary": "24-jähriger Patient mit atemabhangigen stechenden Thoraxschmerzen und Fieber. Keine Ausstrahlung, keine kardialen Risikofaktoren. V. a. Perikarditis oder Pleuritis. EKG, Entzundungsparameter und Röntgen-Thorax veranlasst.",
     "scoringRubric": {
       "historyTaking": "Atemabhangigkeit und Fieberanamnese",
       "redFlags": "Perikarderguss, Myokarditis als mogliche Komplikation",
       "patientLanguage": "Anatomische Lage von Herzbeutel und Lungenhaut laienverstandlich erklaren",
-      "structure": "Schmerz -> Infekt -> kardiopulmonale Abklarung",
+      "structure": "Schmerz -> Infekt -> kardiopulmonale Abklärung",
       "medicalLogic": "Perikarditis vs. Pleuritis vs. Lungenembolie differenzieren",
       "germanAccuracy": "Fachtermini zu Perikarditis und Pleuritis korrekt"
     },
@@ -216,7 +216,7 @@
       "age": "72",
       "gender": "mannlich",
       "chiefComplaint": "Atemnot seit 2 Tagen, deutlich verschlechtert",
-      "history": "Seit 2 Tagen zunehmende Atemnot, schon in Ruhe. Husten mit gelblichem Auswurf. Bekannte COPD GOLD III. Kein Fieber. Saürstoff zu Hause 2 l/min.",
+      "history": "Seit 2 Tagen zunehmende Atemnot, schon in Ruhe. Husten mit gelblichem Auswurf. Bekannte COPD GOLD III. Kein Fieber. Sauerstoff zu Hause 2 l/min.",
       "medications": "Inhalatives Cortison und langwirksames Beta-2-Mimetikum, bei Bedarf Salbutamol",
       "allergies": "Keine",
       "pastHistory": "COPD GOLD III, arterielle Hypertonie",
@@ -226,7 +226,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Verschlechterung und Auslosern",
       "Erfragen Sie Auswurf, Fieber und Infektzeichen",
-      "Beurteilen Sie die Atemfreqünz und Saürstoffsattigung",
+      "Beurteilen Sie die Atemfrequenz und Sauerstoffsättigung",
       "Besprechen Sie die Akuttherapie",
       "Stellen Sie den Fall für die Stationsubergabe dar"
     ],
@@ -236,18 +236,18 @@
       "Haben Sie Ihre Medikamente wie gewohnt genommen?"
     ],
     "redFlags": [
-      "Ruhedyspnö bei Vorschadigung",
+      "Ruhedyspnoe bei Vorschadigung",
       "Grün-gelblicher Auswurf als Infektzeichen",
       "COPD-Exazerbation mit Risiko der respiratorischen Insuffizienz"
     ],
     "usefulPhrases": [
-      "Wir geben Ihnen zunachst Saürstoff und inhalieren mit einem starkeren Medikament.",
+      "Wir geben Ihnen zunachst Sauerstoff und inhalieren mit einem starkeren Medikament.",
       "Es besteht der Verdacht auf eine COPD-Verschlechterung durch eine Infektion."
     ],
-    "doctorToDoctorSummary": "72-jahriger Patient mit bekannter COPD GOLD III, seit 2 Tagen zunehmende Atemnot und purulenter Auswurf. Ruhedyspnö. V. a. infektexazerbierte COPD. Therapie: Saürstoff, inhalative Bronchodilatation, orales Kortison und Antibiose nach Rontgen-Thorax.",
+    "doctorToDoctorSummary": "72-jähriger Patient mit bekannter COPD GOLD III, seit 2 Tagen zunehmende Atemnot und purulenter Auswurf. Ruhedyspnoe. V. a. infektexazerbierte COPD. Therapie: Sauerstoff, inhalative Bronchodilatation, orales Kortison und Antibiose nach Röntgen-Thorax.",
     "scoringRubric": {
       "historyTaking": "Dauer, Ausloser, Infektzeichen erheben",
-      "redFlags": "Ruhedyspnö, Zyanose, Eintrubung erkennen",
+      "redFlags": "Ruhedyspnoe, Zyanose, Eintrubung erkennen",
       "patientLanguage": "Atemmechanik und Inhalativa verstandlich erklaren",
       "structure": "Akut -> Medikation -> Diagnostik",
       "medicalLogic": "Exazerbation erkennen und leitliniengerecht behandeln",
@@ -269,7 +269,7 @@
       "gender": "weiblich",
       "chiefComplaint": "Plotzliche Atemnot und pfeifende Atmung",
       "history": "Nach dem Besuch bei einer Freundin, die eine Katze hat, akut einsetzende Atemnot mit pfeifendem Atemgerausch. Bekanntes Asthma bronchiale. Hat den Notfallspray bereits 2 Hub genommen ohne ausreichende Besserung.",
-      "medications": "Salbutamol bei Bedarf, budesonid/formoterol taglich",
+      "medications": "Salbutamol bei Bedarf, budesonid/formoterol täglich",
       "allergies": "Katze, Pollen (bekannt)",
       "pastHistory": "Asthma bronchiale, saisonaler Heuschnupfen",
       "familyHistory": "Keine Atemwegserkrankungen",
@@ -277,9 +277,9 @@
     },
     "doctorTasks": [
       "Erfragen Sie den Ausloser der akuten Verschlechterung",
-      "Fragen Sie nach der aktüllen Asthmakontrolle",
+      "Fragen Sie nach der aktuellen Asthmakontrolle",
       "Beurteilen Sie den Schweregrad und die Therapie",
-      "Erklaren Sie die Akuttherapie",
+      "Erklären Sie die Akuttherapie",
       "Besprechen Sie die Praventionsmasnahmen"
     ],
     "mustAsk": [
@@ -294,12 +294,12 @@
     ],
     "usefulPhrases": [
       "Sie haben einen akuten Asthmaanfall. Ihr Bronchialspray allein reicht im Moment nicht aus.",
-      "Wir geben Ihnen zusatzlich Saürstoff und inhalieren mit einem starkeren Medikament."
+      "Wir geben Ihnen zusatzlich Sauerstoff und inhalieren mit einem starkeren Medikament."
     ],
-    "doctorToDoctorSummary": "22-jahrige Patientin mit bekanntem Asthma bronchiale. Nach Katzenkontakt akute Dyspnö mit Giemen. Salbutamol unzureichend wirksam. V. a. akute Asthmäxazerbation. Therapie: Saürstoff, inhalative Bronchodilatation, systemische Kortikosteroide erwogen.",
+    "doctorToDoctorSummary": "22-jährige Patientin mit bekanntem Asthma bronchiale. Nach Katzenkontakt akute Dyspnoe mit Giemen. Salbutamol unzureichend wirksam. V. a. akute Asthmäxazerbation. Therapie: Sauerstoff, inhalative Bronchodilatation, systemische Kortikosteroide erwogen.",
     "scoringRubric": {
       "historyTaking": "Ausloser und Schweregrad erfragen",
-      "redFlags": "Sprechdyspnö, Einsatz der Atemhilfsmuskulatur, Zyanose erkennen",
+      "redFlags": "Sprechdyspnoe, Einsatz der Atemhilfsmuskulatur, Zyanose erkennen",
       "patientLanguage": "Klare und beruhigende Ansprache",
       "structure": "Notfall -> Allergen -> Medikation",
       "medicalLogic": "Akuttherapie nach Stufenschema und Klinik",
@@ -331,7 +331,7 @@
       "Fragen Sie nach der Symptomentwicklung",
       "Erheben Sie Zeichen der Dekompensation",
       "Prüfen Sie die Medikamenteneinhaltung und Ernahrung",
-      "Erklaren Sie die Dekompensation in laienverstandlichen Worten",
+      "Erklären Sie die Dekompensation in laienverstandlichen Worten",
       "Besprechen Sie die stationare Aufnahme"
     ],
     "mustAsk": [
@@ -340,7 +340,7 @@
       "Haben Sie Ihre Wassertabletten regelmasig genommen?"
     ],
     "redFlags": [
-      "Orthopnö (nicht flach liegen konnen)",
+      "Orthopnoe (nicht flach liegen konnen)",
       "Gewichtszunahme und Beinodeme",
       "Nichterkennen der Dekompensationszeichen"
     ],
@@ -348,10 +348,10 @@
       "Ihr Herz pumpt im Moment nicht kraftig genug, dadurch staut sich Wasser in der Lunge und in den Beinen.",
       "Wir mussen Sie stationar aufnehmen und die Wassertabletten anpassen."
     ],
-    "doctorToDoctorSummary": "80-jahrige Patientin mit bekannter Herzinsuffizienz, seit Tagen zunehmende Dyspnö, Orthopnö, Beinodeme und Gewichtszunahme. Medikamenteneinnahme unzureichend. V. a. dekompensierte Herzinsuffizienz. Stationare Aufnahme zur Diagnostik und Therapieanpassung.",
+    "doctorToDoctorSummary": "80-jährige Patientin mit bekannter Herzinsuffizienz, seit Tagen zunehmende Dyspnoe, Orthopnoe, Beinodeme und Gewichtszunahme. Medikamenteneinnahme unzureichend. V. a. dekompensierte Herzinsuffizienz. Stationäre Aufnahme zur Diagnostik und Therapieanpassung.",
     "scoringRubric": {
       "historyTaking": "Dekompensationszeichen systematisierend erheben",
-      "redFlags": "Orthopnö, Gewichtszunahme, Anasarka",
+      "redFlags": "Orthopnoe, Gewichtszunahme, Anasarka",
       "patientLanguage": "Herz-Kreislauf-Mechanik einfach erklaren",
       "structure": "Symptome -> Medikation -> Dekompensation",
       "medicalLogic": "Herzinsuffizienz-Dekompensation erkennen und behandeln",
@@ -383,8 +383,8 @@
       "Fragen Sie nach der genauen Symptomatik",
       "Erheben Sie Thrombosefaktoren",
       "Bewerten Sie den zeitlichen Zusammenhang zur OP",
-      "Erklaren Sie den Verdacht auf Lungenembolie",
-      "Leiten Sie die notige Diagnostik ein"
+      "Erklären Sie den Verdacht auf Lungenembolie",
+      "Leiten Sie die nötige Diagnostik ein"
     ],
     "mustAsk": [
       "Haben Sie Schmerzen oder Schwellungen in den Beinen?",
@@ -400,10 +400,10 @@
       "Nach einer Operation besteht ein erhohtes Risiko für Blutgerinnsel.",
       "Ich habe den Verdacht, dass sich ein Gerinnsel gelost hat und in Ihre Lunge gelangt ist."
     ],
-    "doctorToDoctorSummary": "55-jahriger Patient am 3. Tag nach Knie-TEP mit akuter Dyspnö, Wadenschwellung links und Immobilisation. V. a. Lungenembolie. CT-Angiographie und D-Dimer veranlasst, therapeutische Antikoagulation eingeleitet.",
+    "doctorToDoctorSummary": "55-jähriger Patient am 3. Tag nach Knie-TEP mit akuter Dyspnoe, Wadenschwellung links und Immobilisation. V. a. Lungenembolie. CT-Angiographie und D-Dimer veranlasst, therapeutische Antikoagulation eingeleitet.",
     "scoringRubric": {
       "historyTaking": "Thrombosefaktoren und Symptomtrias erheben",
-      "redFlags": "Akute Dyspnö postoperativ + Wadenschwellung",
+      "redFlags": "Akute Dyspnoe postoperativ + Wadenschwellung",
       "patientLanguage": "Thrombose-Embolie-Mechanismus verstandlich erklaren",
       "structure": "Postoperativ -> Symptome -> Risiko -> Diagnostik",
       "medicalLogic": "Wells-Score und D-Dimer-Diagnostik verstehen",
@@ -424,7 +424,7 @@
       "age": "28",
       "gender": "mannlich",
       "chiefComplaint": "Rechtsseitige Unterbauchschmerzen seit 24 Stunden",
-      "history": "Zunachst Schmerzen um den Bauchnabel herum, dann in den rechten Unterbauch gewandert. Ubelkeit, Erbrechen einmalig. Appetitlosigkeit. Kein Stuhlgang seit 2 Tagen.",
+      "history": "Zunachst Schmerzen um den Bauchnabel herum, dann in den rechten Unterbauch gewandert. Übelkeit, Erbrechen einmalig. Appetitlosigkeit. Kein Stuhlgang seit 2 Tagen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine Vorerkrankungen",
@@ -433,9 +433,9 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Schmerzbeginn und -wanderung",
-      "Erfragen Sie Begleitsymptome wie Ubelkeit, Erbrechen, Fieber",
+      "Erfragen Sie Begleitsymptome wie Übelkeit, Erbrechen, Fieber",
       "Fragen Sie nach Appetit und Stuhlgang",
-      "Erklaren Sie den Verdacht auf Blinddarmentzundung",
+      "Erklären Sie den Verdacht auf Blinddarmentzundung",
       "Besprechen Sie die weiteren Schritte"
     ],
     "mustAsk": [
@@ -446,14 +446,14 @@
     ],
     "redFlags": [
       "Schmerzwanderung vom Mittelbauch in den rechten Unterbauch",
-      "Ubelkeit, Erbrechen, Appetitlosigkeit",
+      "Übelkeit, Erbrechen, Appetitlosigkeit",
       "Positiver Loslassschmerz moglich"
     ],
     "usefulPhrases": [
       "Die Schmerzen sind typisch für eine Entzundung des Blinddarms.",
       "Ich werde Blut abnehmen und eine Ultraschalluntersuchung machen."
     ],
-    "doctorToDoctorSummary": "28-jahriger Patient mit Schmerzwanderung in den rechten Unterbauch, Ubelkeit und Erbrechen. V. a. akute Appendizitis. Laborkontrolle und Abdomensonographie veranlasst. Bei Bestatigung operative Appendektomie indiziert.",
+    "doctorToDoctorSummary": "28-jähriger Patient mit Schmerzwanderung in den rechten Unterbauch, Übelkeit und Erbrechen. V. a. akute Appendizitis. Laborkontrolle und Abdomensonographie veranlasst. Bei Bestatigung operative Appendektomie indiziert.",
     "scoringRubric": {
       "historyTaking": "Schmerzlokalisation und -wanderung systematisch erfragen",
       "redFlags": "Peritonitiszeichen, Tachykardie, Fieber",
@@ -477,7 +477,7 @@
       "age": "45",
       "gender": "mannlich",
       "chiefComplaint": "Starke Oberbauchschmerzen mit Ausstrahlung in den Rucken",
-      "history": "Nach reichhaltigem Essen und Alkoholkonsum starke gurtelförmige Oberbauchschmerzen. Ausstrahlung in den Rucken. Ubelkeit, Erbrechen. Bekannte Fettstoffwechselstorung.",
+      "history": "Nach reichhaltigem Essen und Alkoholkonsum starke gurtelförmige Oberbauchschmerzen. Ausstrahlung in den Rucken. Übelkeit, Erbrechen. Bekannte Fettstoffwechselstorung.",
       "medications": "Keine regelmasigen Medikamente",
       "allergies": "Keine",
       "pastHistory": "Hypercholesterinamie",
@@ -488,8 +488,8 @@
       "Fragen Sie nach dem Schmerzcharakter und Ausstrahlung",
       "Erfragen Sie Ausloser (Essen, Alkohol)",
       "Fragen Sie nach Gallensteinen oder Pankreatitis in der Vorgeschichte",
-      "Erklaren Sie den Verdacht auf Bauchspeicheldrusenentzundung",
-      "Besprechen Sie die notige Klinikaufnahme"
+      "Erklären Sie den Verdacht auf Bauchspeicheldrusenentzundung",
+      "Besprechen Sie die nötige Klinikaufnahme"
     ],
     "mustAsk": [
       "Hatten Sie vorher etwas Besonderes gegessen oder getrunken?",
@@ -505,7 +505,7 @@
       "Die Schmerzen passen zu einer Entzundung der Bauchspeicheldruse.",
       "Sie mussen stationar aufgenommen werden, damit wir Sie überwachen und behandeln konnen."
     ],
-    "doctorToDoctorSummary": "45-jahriger Patient mit gurtelförmigen Oberbauchschmerzen nach fettreicher Mahlzeit und Alkoholkonsum. Ausstrahlung in den Rucken. Ubelkeit. V. a. akute Pankreatitis. Stationare Aufnahme, Laborkontrolle (Lipase, CRP), Nahrungskarenz und Volumengabe.",
+    "doctorToDoctorSummary": "45-jähriger Patient mit gurtelförmigen Oberbauchschmerzen nach fettreicher Mahlzeit und Alkoholkonsum. Ausstrahlung in den Rucken. Übelkeit. V. a. akute Pankreatitis. Stationäre Aufnahme, Laborkontrolle (Lipase, CRP), Nahrungskarenz und Volumengabe.",
     "scoringRubric": {
       "historyTaking": "Ausloser, Charakter, Vorerkrankungen",
       "redFlags": "Hamo- bzw.nekrotisierende Pankreatitis mit Kreislaufinstabilitat",
@@ -540,7 +540,7 @@
       "Fragen Sie nach dem Schmerzcharakter und Auslosern",
       "Erfragen Sie die Dauer und den Verlauf",
       "Stellen Sie Fragen zu Alarmzeichen",
-      "Erklaren Sie den Verdacht auf Refluxkrankheit",
+      "Erklären Sie den Verdacht auf Refluxkrankheit",
       "Besprechen Sie Therapieoptionen (Lebensstil + Medikamente)"
     ],
     "mustAsk": [
@@ -557,7 +557,7 @@
       "Das klingt nach Reflux, also dass Magensaft in die Speiserohre zuruckfließt.",
       "Wir konnen zunachst einen Therapieversuch mit einem Saureblocker machen."
     ],
-    "doctorToDoctorSummary": "38-jahrige Patientin mit epigastrischen brennenden Schmerzen und saurem Aufstoßen. Keine Alarmzeichen. V. a. gastroosophageale Refluxkrankheit. Geplanter Therapieversuch mit PPI und Lebensstilberatung.",
+    "doctorToDoctorSummary": "38-jährige Patientin mit epigastrischen brennenden Schmerzen und saurem Aufstoßen. Keine Alarmzeichen. V. a. gastroosophageale Refluxkrankheit. Geplanter Therapieversuch mit PPI und Lebensstilberatung.",
     "scoringRubric": {
       "historyTaking": "Refluxsymptome und Alarmzeichen erfragen",
       "redFlags": "Dysphagie, Gewichtsverlust, Hämatmensis erkennen",
@@ -589,10 +589,10 @@
       "socialHistory": "Koch, Nichtraucher"
     },
     "doctorTasks": [
-      "Fragen Sie nach Stuhlfreqünz und Konsistenz",
+      "Fragen Sie nach Stuhlfrequenz und Konsistenz",
       "Fragen Sie nach Infektionsqülle",
       "Bewerten Sie den Hydratationszustand",
-      "Erklaren Sie die Therapie (Flussigkeit, Schonkost)",
+      "Erklären Sie die Therapie (Flüssigkeit, Schonkost)",
       "Besprechen Sie Warnzeichen furWiedervorstellung"
     ],
     "mustAsk": [
@@ -608,19 +608,19 @@
       "Das ist vermutlich ein Magen-Darm-Infekt.",
       "Am wichtigsten ist, dass Sie genug trinken."
     ],
-    "doctorToDoctorSummary": "31-jahriger Patient mit akuter Gaströnteritis, wassriger Durchfall und Erbrechen. Kein Fieber, keine Blutbeimengung. V. a. viralen Infekt. Therapie: orale Rehydrierung, Schonkost. Bei Zeichen der Austrocknung Wiedervorstellung empfehlen.",
+    "doctorToDoctorSummary": "31-jähriger Patient mit akuter Gastroenteritis, wassriger Durchfall und Erbrechen. Kein Fieber, keine Blutbeimengung. V. a. viralen Infekt. Therapie: orale Rehydrierung, Schonkost. Bei Zeichen der Austrocknung Wiedervorstellung empfehlen.",
     "scoringRubric": {
       "historyTaking": "Infektqülle, Stuhlcharakter, Begleitsymptome",
       "redFlags": "Blutiger Durchfall, hohes Fieber, Exsikkosezeichen",
       "patientLanguage": "Klare Trinkempfehlung geben",
       "structure": "Symptome -> Infektqülle -> Therapie",
-      "medicalLogic": "Gaströnteritis-Therapie und Exsikkose",
-      "germanAccuracy": "Gaströnteritis, Rehydrierung, Exsikkose korrekt"
+      "medicalLogic": "Gastroenteritis-Therapie und Exsikkose",
+      "germanAccuracy": "Gastroenteritis, Rehydrierung, Exsikkose korrekt"
     },
     "tags": [
       "bauchschmerz",
       "durchfall",
-      "gaströnteritis",
+      "gastroenteritis",
       "infektion"
     ]
   },
@@ -631,8 +631,8 @@
     "patientRole": {
       "age": "41",
       "gender": "weiblich",
-      "chiefComplaint": "Dumpfe, druckende Kopfschmerzen fast taglich",
-      "history": "Seit Monaten fast taglich druckende Kopfschmerzen beidseits, eher nachmittags, verstarkt bei Stress. Keine Aura, keine Ubelkeit. Nimmt gelegentlich Ibuprofen.",
+      "chiefComplaint": "Dumpfe, druckende Kopfschmerzen fast täglich",
+      "history": "Seit Monaten fast täglich druckende Kopfschmerzen beidseits, eher nachmittags, verstarkt bei Stress. Keine Aura, keine Übelkeit. Nimmt gelegentlich Ibuprofen.",
       "medications": "Keine regelmasig, Ibuprofen 400 mg bei Bedarf (ca. 2-3x/Woche)",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -640,30 +640,30 @@
       "socialHistory": "Lehrerin, verheiratet, zwei Kinder, beruflicher Stress"
     },
     "doctorTasks": [
-      "Fragen Sie nach Kopfschmerzfreqünz, -dauer und -charakter",
+      "Fragen Sie nach Kopfschmerzfrequenz, -dauer und -charakter",
       "Differenzieren Sie Migrane von Spannungskopfschmerz",
       "Fragen Sie nach Medikamentenubergebrauch",
-      "Erklaren Sie die Diagnose",
+      "Erklären Sie die Diagnose",
       "Besprechen Sie nicht-medikamentose Optionen"
     ],
     "mustAsk": [
       "Haben Sie Schmerzmittel gegen die Kopfschmerzen genommen und wie oft?",
-      "Hatten Sie Ubelkeit oder Lichtempfindlichkeit dabei?",
+      "Hatten Sie Übelkeit oder Lichtempfindlichkeit dabei?",
       "Haben Sie schon einen Neurologen gesehen?"
     ],
     "redFlags": [
-      "Täglicher oder fast taglicher Schmerz",
+      "Täglicher oder fast täglicher Schmerz",
       "Medikamentenubergebrauch moglich (>10 Tage/Monat)",
-      "Keine Begleitsymptome wie Ubelkeit oder Aura"
+      "Keine Begleitsymptome wie Übelkeit oder Aura"
     ],
     "usefulPhrases": [
       "Die Beschwerden klingen nach Spannungskopfschmerzen.",
-      "Zu haufige Schmerzmitteleinnahme kann selbst Kopfschmerzen verursachen.",
+      "Zu häufige Schmerzmitteleinnahme kann selbst Kopfschmerzen verursachen.",
       "Es gibt wirksame nicht-medikamentose Behandlungen wie Entspannungsverfahren."
     ],
-    "doctorToDoctorSummary": "41-jahrige Patientin mit dumpfen, druckenden Kopfschmerzen fast taglich, kein Migrane-Charakter. Haufige Ibuprofen-Einnahme. V. a. chronischer Spannungskopfschmerz mit moglichem Medikamentenubergebrauch. Beratung zu nicht-medikamentosen Verfahren und Reduktion der Bedarfsmedikation.",
+    "doctorToDoctorSummary": "41-jährige Patientin mit dumpfen, druckenden Kopfschmerzen fast täglich, kein Migrane-Charakter. Haufige Ibuprofen-Einnahme. V. a. chronischer Spannungskopfschmerz mit moglichem Medikamentenubergebrauch. Beratung zu nicht-medikamentosen Verfahren und Reduktion der Bedarfsmedikation.",
     "scoringRubric": {
-      "historyTaking": "Freqünz, Medikation, Ausschluss Migrane",
+      "historyTaking": "Frequenz, Medikation, Ausschluss Migrane",
       "redFlags": "Medikamentenubergebrauch, plotzlicher Beginn, begleitende neurologische Symptome",
       "patientLanguage": "Prazise Erklarung, warum zu viele Schmerzmittel schaden",
       "structure": "Schmerz -> Medikation -> Differential -> Therapie",
@@ -684,8 +684,8 @@
     "patientRole": {
       "age": "34",
       "gender": "weiblich",
-      "chiefComplaint": "Wiederkehrende starke Kopfschmerzen einseitig mit Sehstorung",
-      "history": "Seit Jahren immer wieder einseitige, pochende Kopfschmerzen, manchmal mit Flimmerskotomen (Lichtblitze). Ubelkeit und Lichtempfindlichkeit. Etwa 4 Anfalle pro Monat.",
+      "chiefComplaint": "Wiederkehrende starke Kopfschmerzen einseitig mit Sehstörung",
+      "history": "Seit Jahren immer wieder einseitige, pochende Kopfschmerzen, manchmal mit Flimmerskotomen (Lichtblitze). Übelkeit und Lichtempfindlichkeit. Etwa 4 Anfalle pro Monat.",
       "medications": "Triptan bei Bedarf (wirkt gut, wenn fruhzeitig eingenommen), keine Prophylaxe",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -693,14 +693,14 @@
       "socialHistory": "Grafikdesignerin, geregelter Alltag, Schlafmangel als bekannter Trigger"
     },
     "doctorTasks": [
-      "Fragen Sie nach Anfallshaufigkeit und -dauer",
+      "Fragen Sie nach Anfallshäufigkeit und -dauer",
       "Erfragen Sie die Aura und Begleitsymptome",
-      "Bewerten Sie die aktülle Therapie und Prophylaxebedarf",
-      "Erklaren Sie die Migranepathophysiologie vereinfacht",
+      "Bewerten Sie die aktuelle Therapie und Prophylaxebedarf",
+      "Erklären Sie die Migranepathophysiologie vereinfacht",
       "Besprechen Sie Trigger-Management und Prophylaxeoptionen"
     ],
     "mustAsk": [
-      "Haben Sie eine Aura (Sehstorungen, Kribbeln)?",
+      "Haben Sie eine Aura (Sehstörungen, Kribbeln)?",
       "Wie stark sind die Schmerzen auf einer Skala von 1 bis 10?",
       "Nehmen Sie die Triptane fruhzeitig ein?"
     ],
@@ -710,11 +710,11 @@
     ],
     "usefulPhrases": [
       "Migrane ist eine neurologische Erkrankung, bei der das Gehirn überempfindlich auf Reize reagiert.",
-      "Es gibt vorbeugende Behandlungen, wenn die Anfalle zu haufig sind."
+      "Es gibt vorbeugende Behandlungen, wenn die Anfalle zu häufig sind."
     ],
-    "doctorToDoctorSummary": "34-jahrige Patientin mit bekannter Migrane mit Aura, 4 Anfalle/Monat. Gutes Ansprechen auf Triptane, aber noch keine Prophylaxe. Beratung zu Prophylaxeoptionen (Betablocker, Topiramat) und Trigermanagement empfohlen.",
+    "doctorToDoctorSummary": "34-jährige Patientin mit bekannter Migrane mit Aura, 4 Anfalle/Monat. Gutes Ansprechen auf Triptane, aber noch keine Prophylaxe. Beratung zu Prophylaxeoptionen (Betablocker, Topiramat) und Trigermanagement empfohlen.",
     "scoringRubric": {
-      "historyTaking": "Anfallshaufigkeit, Auracharakter, Schweregrad",
+      "historyTaking": "Anfallshäufigkeit, Auracharakter, Schweregrad",
       "redFlags": "Neue Aura-Qualitat, plotzlicher Schlaganfall-ahnlicher Beginn",
       "patientLanguage": "Migrane als neurologische Erkrankung erklaren",
       "structure": "Episoden -> Aura -> Therapie -> Prophylaxe",
@@ -741,13 +741,13 @@
       "allergies": "Keine",
       "pastHistory": "Keine",
       "familyHistory": "Keine",
-      "socialHistory": "Handwerker (Maurer), taglich korperlich schwer tatig"
+      "socialHistory": "Handwerker (Maurer), täglich korperlich schwer tatig"
     },
     "doctorTasks": [
       "Fragen Sie nach dem genauen Schmerzbeginn und Ausloser",
       "Fragen Sie nach Sensibilitatsstorungen und Kraftminderung",
       "Fragen Sie nach Blasen- und Mastdarmfunktion (!! rote Flagge)",
-      "Erklaren Sie den Verdacht auf Bandscheibenvorfall",
+      "Erklären Sie den Verdacht auf Bandscheibenvorfall",
       "Besprechen Sie konservative Therapie und Warnsymptome"
     ],
     "mustAsk": [
@@ -757,13 +757,13 @@
     ],
     "redFlags": [
       "Cauda-equina-Syndrom: Inkontinenz, Reitparese, Sattelanästhesie (Notfall)",
-      "Progrediente Parese, schwere sensible Ausfalle"
+      "Progrediente Parese, schwere sensible Ausfälle"
     ],
     "usefulPhrases": [
       "Ein Bandscheibenvorfall kann auf einen Nerven drucken und die Schmerzen im Bein verursachen.",
       "In den meisten Fallen hilft schonen und Geduld."
     ],
-    "doctorToDoctorSummary": "52-jahriger Patient mit akutem lumbalem Schmerz mit radikularer Ausstrahlung ins rechte Bein nach Belastung. Keine Cauda-equina-Symptome. V. a. lumbalen Bandscheibenvorfall. Konservative Therapie. MRT bei ausbleibender Besserung.",
+    "doctorToDoctorSummary": "52-jähriger Patient mit akutem lumbalem Schmerz mit radikularer Ausstrahlung ins rechte Bein nach Belastung. Keine Cauda-equina-Symptome. V. a. lumbalen Bandscheibenvorfall. Konservative Therapie. MRT bei ausbleibender Besserung.",
     "scoringRubric": {
       "historyTaking": "Akuter Schmerz, Ausstrahlung, Kribbeln, Cauda-equina-Fragen",
       "redFlags": "Cauda-equina (Sattelanästhesie, Inkontinenz), progrediente Parese",
@@ -796,8 +796,8 @@
     },
     "doctorTasks": [
       "Fragen Sie nach der Dauer und den Auslosern der Schmerzen",
-      "Fragen Sie nach Ausstrahlung und sensiblen Ausfallen",
-      "Erklaren Sie den Begriff 'unspezifischer Ruckenschmerz'",
+      "Fragen Sie nach Ausstrahlung und sensiblen Ausfällen",
+      "Erklären Sie den Begriff 'unspezifischer Ruckenschmerz'",
       "Besprechen Sie aktive Therapie (Bewegung, Muskeltraining)",
       "Ermutigen Sie zu mehr Bewegung im Alltag"
     ],
@@ -808,16 +808,16 @@
     ],
     "redFlags": [
       "Keine radikulare Symptomatik",
-      "Chronisch-rezidivierend ohne neurologische Ausfalle"
+      "Chronisch-rezidivierend ohne neurologische Ausfälle"
     ],
     "usefulPhrases": [
       "Ihre Wirbelsaule ist in Ordnung. Die Schmerzen kommen von verspannten Muskeln und mangelnder Bewegung.",
-      "Das Beste, was Sie tun konnen, ist tagliche Bewegung und Ruckenubungen."
+      "Das Beste, was Sie tun konnen, ist tägliche Bewegung und Ruckenubungen."
     ],
-    "doctorToDoctorSummary": "47-jahrige Patientin mit chronischen, nicht-radikularen LWS-Schmerzen. Bildgebung unauffallig. V. a. unspezifischen chronischen Ruckenschmerz bei Bewegungsmangel und Übergewicht. Therapie: Aktivierung, Physiotherapie, Gewichtsreduktion.",
+    "doctorToDoctorSummary": "47-jährige Patientin mit chronischen, nicht-radikularen LWS-Schmerzen. Bildgebung unauffallig. V. a. unspezifischen chronischen Ruckenschmerz bei Bewegungsmangel und Übergewicht. Therapie: Aktivierung, Physiotherapie, Gewichtsreduktion.",
     "scoringRubric": {
       "historyTaking": "Schmerzchronifizierung und biopsychosoziale Faktoren",
-      "redFlags": "Neurologische Ausfalle, Cauda-equina, Tumoranamnese",
+      "redFlags": "Neurologische Ausfälle, Cauda-equina, Tumoranamnese",
       "patientLanguage": "Positive Sprache ('Bewegung hilft') statt negative ('Ihnen fehlt nichts')",
       "structure": "Schmerz -> Diagnostik -> Erklarung -> Aktivierung",
       "medicalLogic": "Chronische unspezifische Ruckenschmerzen, biopsychosoziales Modell",
@@ -838,7 +838,7 @@
       "age": "34",
       "gender": "weiblich",
       "chiefComplaint": "Brennen beim Wasserlassen und Fieber",
-      "history": "Seit 2 Tagen Brennen beim Wasserlassen, haufiger Harndrang. Seit gestern Fieber bis 38.9 Grad. Kein Flankenschmerz. Keine Ubelkeit.",
+      "history": "Seit 2 Tagen Brennen beim Wasserlassen, häufiger Harndrang. Seit gestern Fieber bis 38.9 Grad. Kein Flankenschmerz. Keine Übelkeit.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -849,7 +849,7 @@
       "Fragen Sie nach der genauen Symptomatik",
       "Erfragen Sie Risikofaktoren",
       "Bewerten Sie den Schweregrad",
-      "Erklaren Sie die Diagnose",
+      "Erklären Sie die Diagnose",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
@@ -865,10 +865,10 @@
       "Sie haben eine Blasenentzundung.",
       "Wir geben Ihnen ein Antibiotikum und Sie sollten viel trinken."
     ],
-    "doctorToDoctorSummary": "34-jahrige Patientin mit Dysurie, Pollakisurie und Fieber. V. a. Hamwegsinfekt. Urinkultur und Antibiose nach Resistogram.",
+    "doctorToDoctorSummary": "34-jährige Patientin mit Dysurie, Pollakisurie und Fieber. V. a. Hamwegsinfekt. Urinkultur und Antibiose nach Resistogram.",
     "scoringRubric": {
       "historyTaking": "Dysurie, Fieber, aufgehende Infektion",
-      "redFlags": "Flankenschmerz, Ubelkeit als Zeichen einer Pyelonephritis",
+      "redFlags": "Flankenschmerz, Übelkeit als Zeichen einer Pyelonephritis",
       "patientLanguage": "Blasenentzundung vs Nierenbeckenentzundung erklaren",
       "structure": "Symptome -> Fieber -> Diagnostik",
       "medicalLogic": "Unkomplizierter vs komplizierter HWI",
@@ -900,7 +900,7 @@
       "Fragen Sie nach der genauen Schwindelqualitat",
       "Differenzieren Sie orthostatischen und Drehschwindel",
       "Fragen Sie nach Begleitsymptomen",
-      "Erklaren Sie den Verdacht auf Kreislaufdysregulation",
+      "Erklären Sie den Verdacht auf Kreislaufdysregulation",
       "Besprechen Sie nicht-medikamentose Masnahmen"
     ],
     "mustAsk": [
@@ -916,7 +916,7 @@
       "Ihr Schwindel deutet auf Kreislaufprobleme hin, besonders beim Aufstehen.",
       "Mehr trinken, langsam aufstehen, das kann schon viel helfen."
     ],
-    "doctorToDoctorSummary": "29-jahrige Patientin mit orthostatischem Schwindel bei Dehydratation und Stress. Kein Drehschwindel. V. a. orthostatische Dysregulation. Beratung zu kreislaufstabilisierenden Masnahmen.",
+    "doctorToDoctorSummary": "29-jährige Patientin mit orthostatischem Schwindel bei Dehydratation und Stress. Kein Drehschwindel. V. a. orthostatische Dysregulation. Beratung zu kreislaufstabilisierenden Masnahmen.",
     "scoringRubric": {
       "historyTaking": "Schwindelqualitat, Ausloser, Begleitsymptome",
       "redFlags": "Kardiale Synkope, neurologische Herdsymptome",
@@ -951,7 +951,7 @@
       "Fragen Sie nach Beginn, Dauer und Ausloser des Herzrasens",
       "Fragen Sie nach Begleitsymptomen",
       "Erfragen Sie Risikofaktoren für Rhythmusstorungen",
-      "Erklaren Sie den Verdacht auf Vorhofflimmern",
+      "Erklären Sie den Verdacht auf Vorhofflimmern",
       "Besprechen Sie die nachsten diagnostischen Schritte"
     ],
     "mustAsk": [
@@ -967,13 +967,13 @@
       "Ihr Herz schlagt im Moment zu schnell und unregelmasig.",
       "Wir mussen das Herz zunachst verlangsamen und dann den Rhythmus wiederherstellen."
     ],
-    "doctorToDoctorSummary": "62-jahriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Überleitung. Keine hamodynamische Instabilitat. Geplante Freqünzkontrolle und Echokardiographie.",
+    "doctorToDoctorSummary": "62-jähriger Patient mit akutem palpitationen, erstmalig. EKG zeigt Vorhofflimmern mit rascher Überleitung. Keine hamodynamische Instabilitat. Geplante Frequenzkontrolle und Echokardiographie.",
     "scoringRubric": {
       "historyTaking": "Palpitationen, Dauer, Ausloser",
       "redFlags": "Hamodynamische Instabilitat, Synkope, Brustschmerz",
       "patientLanguage": "Rhythmusstorung einfach erklaren",
       "structure": "Symptome -> EKG -> Diagnostik",
-      "medicalLogic": "Vorhofflimmern: Freqünzkontrolle vs. Rhythmisierung",
+      "medicalLogic": "Vorhofflimmern: Frequenzkontrolle vs. Rhythmisierung",
       "germanAccuracy": "Tachyarrhythmie, Vorhofflimmern korrekt"
     },
     "tags": [
@@ -1002,7 +1002,7 @@
       "Fragen Sie nach Dauer und Verlauf des Hustens",
       "Fragen Sie nach Auswurf (Farbe, Menge)",
       "Fragen Sie nach Fieber und Allgemeinzustand",
-      "Erklaren Sie den Unterschied zwischen viral und bakteriell",
+      "Erklären Sie den Unterschied zwischen viral und bakteriell",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
@@ -1018,7 +1018,7 @@
       "Eine Bronchitis heilt meist von selbst aus.",
       "Wenn der Auswurf eitrig wird und Fieber langer anhalt, kann ein Antibiotikum notig sein."
     ],
-    "doctorToDoctorSummary": "45-jahriger Patient mit produktivem Husten seit 10 Tagen, subfebril. V. a. akute Bronchitis bei protrahiertem Infekt. Bei anhaltendem eitrigem Auswurf und Fieber Antibiose erwogen.",
+    "doctorToDoctorSummary": "45-jähriger Patient mit produktivem Husten seit 10 Tagen, subfebril. V. a. akute Bronchitis bei protrahiertem Infekt. Bei anhaltendem eitrigem Auswurf und Fieber Antibiose erwogen.",
     "scoringRubric": {
       "historyTaking": "Hustendaür, Auswurf, Fieber",
       "redFlags": "Hämoptysen, Atemnot, Thoraxschmerz",
@@ -1054,7 +1054,7 @@
       "Fragen Sie nach Reisemedizin und Impfungen",
       "Fragen Sie nach Blutbeimengung und Fieber",
       "Besprechen Sie die Differenzialdiagnose",
-      "Erklaren Sie die Therapie"
+      "Erklären Sie die Therapie"
     ],
     "mustAsk": [
       "Hatten Sie Fieber?",
@@ -1066,9 +1066,9 @@
       "Ausschluss einer parasitaren Infektion notwendig"
     ],
     "usefulPhrases": [
-      "Reisedurchfall ist haufig, aber wenn er langer als 3-4 Tage anhalt, sollten wir eine Stuhlprobe untersuchen."
+      "Reisedurchfall ist häufig, aber wenn er langer als 3-4 Tage anhalt, sollten wir eine Stuhlprobe untersuchen."
     ],
-    "doctorToDoctorSummary": "33-jahriger Patient mit wassrigem Durchfall nach Indienaufenthalt. Kein Blut, kein Fieber. V. a. protrahierte infektiose Gaströnteritis. Stuhldiagnostik auf Bakterien und Parasiten veranlasst.",
+    "doctorToDoctorSummary": "33-jähriger Patient mit wassrigem Durchfall nach Indienaufenthalt. Kein Blut, kein Fieber. V. a. protrahierte infektiose Gastroenteritis. Stuhldiagnostik auf Bakterien und Parasiten veranlasst.",
     "scoringRubric": {
       "historyTaking": "Reiseanamnese, Stuhlcharakter, Begleitsymptome",
       "redFlags": "Blutiger Durchfall, hohes Fieber, Dehydratation",
@@ -1103,7 +1103,7 @@
       "Fragen Sie nach dem zeitlichen Zusammenhang mit dem Medikament",
       "Fragen Sie nach Ausdehnung und Juckreiz",
       "Bewerten Sie den Schweregrad der Reaktion",
-      "Erklaren Sie den Verdacht auf Arzneimittelallergie",
+      "Erklären Sie den Verdacht auf Arzneimittelallergie",
       "Besprechen Sie das weitere Vorgehen"
     ],
     "mustAsk": [
@@ -1119,10 +1119,10 @@
       "Das ist wahrscheinlich eine allergische Reaktion auf das Antibiotikum.",
       "Sie durfen Amoxicillin und verwandte Antibiotika nicht mehr nehmen."
     ],
-    "doctorToDoctorSummary": "28-jahrige Patientin mit medikamentosem Exanthem nach Amoxicillin. Keine systemische Beteiligung. V. a. Typ-IV-Allergie. Absetzen des Antibiotikums, antihistaminerge Therapie. Allergiepass ausgestellt.",
+    "doctorToDoctorSummary": "28-jährige Patientin mit medikamentosem Exanthem nach Amoxicillin. Keine systemische Beteiligung. V. a. Typ-IV-Allergie. Absetzen des Antibiotikums, antihistaminerge Therapie. Allergiepass ausgestellt.",
     "scoringRubric": {
       "historyTaking": "Medikamentenanamnese und zeitlicher Zusammenhang",
-      "redFlags": "Dyspnö, Angioödem, Kreislaufreaktion",
+      "redFlags": "Dyspnoe, Angioödem, Kreislaufreaktion",
       "patientLanguage": "Allergische Reaktion vs Nebenwirkung erklaren",
       "structure": "Ausschlag -> Medikament -> Allergie",
       "medicalLogic": "Allergische Reaktion vom verzogerten Typ",
@@ -1154,8 +1154,8 @@
       "Fragen Sie nach dem Sturzhergang",
       "Fragen Sie nach Schmerzen, Belastbarkeit und Fehlstellung",
       "Fragen Sie nach Blutverdunnern",
-      "Erklaren Sie den Verdacht auf Oberschenkelhalsbruch",
-      "Besprechen Sie die notige Diagnostik und OP-Vorbereitung"
+      "Erklären Sie den Verdacht auf Oberschenkelhalsbruch",
+      "Besprechen Sie die nötige Diagnostik und OP-Vorbereitung"
     ],
     "mustAsk": [
       "Haben Sie Blutverdunner genommen?",
@@ -1169,9 +1169,9 @@
     ],
     "usefulPhrases": [
       "Nach einem solchen Sturz ist ein Knochenbruch sehr wahrscheinlich.",
-      "Wir mussen ein Rontgen machen und die Operation vorbereiten."
+      "Wir mussen ein Röntgen machen und die Operation vorbereiten."
     ],
-    "doctorToDoctorSummary": "78-jahrige Patientin mit Sturz, schmerzhaftem und nicht belastbarem rechten Bein. ASS-Einnahme. V. a. Schenkelhalsfraktur rechts. Rontgen veranlasst. Geplante operative Versorgung, ASS-Pause pra-OP.",
+    "doctorToDoctorSummary": "78-jährige Patientin mit Sturz, schmerzhaftem und nicht belastbarem rechten Bein. ASS-Einnahme. V. a. Schenkelhalsfraktur rechts. Röntgen veranlasst. Geplante operative Versorgung, ASS-Pause pra-OP.",
     "scoringRubric": {
       "historyTaking": "Sturzmechanismus, Belastbarkeit, Blutverdunner",
       "redFlags": "Offene Fraktur, Gefaßverletzung, Bewusstseinsverlust",
@@ -1204,25 +1204,25 @@
     },
     "doctorTasks": [
       "Fragen Sie nach dem zeitlichen Verlauf der Symptome",
-      "Fragen Sie nach Fieber, Schuttelfrost, Ausfluss",
+      "Fragen Sie nach Fieber, Schüttelfrost, Ausfluss",
       "Bewerten Sie die Wunde klinisch",
-      "Erklaren Sie den Verdacht auf Wundinfekt",
-      "Besprechen Sie die notigen Schritte"
+      "Erklären Sie den Verdacht auf Wundinfekt",
+      "Besprechen Sie die nötigen Schritte"
     ],
     "mustAsk": [
       "Haben Sie Fieber gemessen?",
       "Haben Sie das Gefuhl, dass die Wunde warm ist?",
-      "Tritt Flussigkeit aus der Wunde aus?"
+      "Tritt Flüssigkeit aus der Wunde aus?"
     ],
     "redFlags": [
       "Perioperative Wundinfektion mit Fieber",
       "Trokareinstichstelle als typische Lokalisation"
     ],
     "usefulPhrases": [
-      "Die Wunde ist entzundet. Das ist eine haufige Komplikation nach Operationen.",
+      "Die Wunde ist entzundet. Das ist eine häufige Komplikation nach Operationen.",
       "Wir nehmen eine Wundabstrich und leiten eine Antibiotikatherapie ein."
     ],
-    "doctorToDoctorSummary": "55-jahriger Patient am 5. post-OP-Tag mit lokaler Wundinfektion an der Trokareintrittstelle, subfebril. Keine systemische Infektion. Wundabstrich und kalkulierte Antibiose. Engmaschige Wundkontrolle.",
+    "doctorToDoctorSummary": "55-jähriger Patient am 5. post-OP-Tag mit lokaler Wundinfektion an der Trokareintrittstelle, subfebril. Keine systemische Infektion. Wundabstrich und kalkulierte Antibiose. Engmaschige Wundkontrolle.",
     "scoringRubric": {
       "historyTaking": "Postoperativer Verlauf, Lokalbefund, Fieber",
       "redFlags": "Sepsiszeichen, ausgedehnte Zellulitis, tiefe Wunddehiszenz",
@@ -1240,7 +1240,7 @@
   },
   {
     "id": "fsp_c_025",
-    "title": "Angst- und Panikstorung mit somatischer Prufentation",
+    "title": "Angst- und Panikstorung mit somatischer Prüfentation",
     "setting": "clinic",
     "patientRole": {
       "age": "36",
@@ -1257,7 +1257,7 @@
       "Fragen Sie nach der genauen Symptomatik wahrend der Anfalle",
       "Differenzieren Sie zwischen Panikattacke und kardialer Ursache",
       "Fragen Sie nach psychosozialen Belastungen",
-      "Erklaren Sie das biopsychosoziale Modell",
+      "Erklären Sie das biopsychosoziale Modell",
       "Besprechen Sie Behandlungsoptionen"
     ],
     "mustAsk": [
@@ -1274,7 +1274,7 @@
       "Ihre korperlichen Symptome sind echt, kommen aber von Ihrer Angstreaktion und nicht vom Herzen.",
       "Eine Psychotherapie kann Ihnen helfen, die Angst zu verstehen und zu bewaltigen."
     ],
-    "doctorToDoctorSummary": "36-jahriger Patient mit Panikattacken, ausgiebiger negativer somatischer Abklarung. Leidet unter Antizipationsangst. V. a. Panikstorung. Empfehlung: Psychotherapie, ggf. SSRI, Stressmanagement.",
+    "doctorToDoctorSummary": "36-jähriger Patient mit Panikattacken, ausgiebiger negativer somatischer Abklärung. Leidet unter Antizipationsangst. V. a. Panikstorung. Empfehlung: Psychotherapie, ggf. SSRI, Stressmanagement.",
     "scoringRubric": {
       "historyTaking": "Symptome wahrend Anfall, Angstdaür, Vermeidungsverhalten",
       "redFlags": "Suizidgedanken, schwere Depression, Substanzgebrauch",
@@ -1309,13 +1309,13 @@
       "Fragen Sie nach dem Beginn und der Kinetik der Schwellung",
       "Differenzieren Sie zwischen Trauma, Infekt und Arthritisschub",
       "Fragen Sie nach Fieber und Allgemeinsymptomen",
-      "Erklaren Sie den Verdacht auf Gelenkenzundung",
-      "Besprechen Sie die notige Punktion und Diagnostik"
+      "Erklären Sie den Verdacht auf Gelenkenzundung",
+      "Besprechen Sie die nötige Punktion und Diagnostik"
     ],
     "mustAsk": [
       "Hatten Sie in den letzten Wochen einen Infekt?",
       "Hatten Sie schon einmal eine Gelenkschwellung?",
-      "Hatten Sie Fieber oder Schuttelfrost?"
+      "Hatten Sie Fieber oder Schüttelfrost?"
     ],
     "redFlags": [
       "Monartikulare Schwellung mit Entzundungszeichen",
@@ -1326,7 +1326,7 @@
       "Die Entzundungszeichen im Knie konnen verschiedene Ursachen haben.",
       "Wir mussen das Knie punktieren, um eine bakterielle Infektion auszuschliessen."
     ],
-    "doctorToDoctorSummary": "52-jahriger Patient mit akuter Monarthritis des rechten Knies, Rubor, Calor, Tumor, Dolor. V. a. infektiose Arthritis oder Gicht. Kniegelenkpunktion und Labor (CRP, Harnsaure, Borrelien) veranlasst.",
+    "doctorToDoctorSummary": "52-jähriger Patient mit akuter Monarthritis des rechten Knies, Rubor, Calor, Tumor, Dolor. V. a. infektiose Arthritis oder Gicht. Kniegelenkpunktion und Labor (CRP, Harnsaure, Borrelien) veranlasst.",
     "scoringRubric": {
       "historyTaking": "Beginn, Trauma, Infekt, Fieber",
       "redFlags": "Infektiose Arthritis als Notfall",
@@ -1360,8 +1360,8 @@
     "doctorTasks": [
       "Fragen Sie nach der Dauer und Lokalisation der Gelenkschmerzen",
       "Erheben Sie die Morgensteifigkeit und Funktionsbeeintrachtigung",
-      "Fragen Sie nach aktüller Therapie und Compliance",
-      "Erklaren Sie die Schubsymptomatik",
+      "Fragen Sie nach aktueller Therapie und Compliance",
+      "Erklären Sie die Schubsymptomatik",
       "Besprechen Sie Therapieanpassung"
     ],
     "mustAsk": [
@@ -1374,10 +1374,10 @@
       "Symmetrische Beteiligung der Hande"
     ],
     "usefulPhrases": [
-      "Ihre rheumatoide Arthritis zeigt aktüll eine verstarkte Aktivitat.",
+      "Ihre rheumatoide Arthritis zeigt aktuell eine verstarkte Aktivitat.",
       "Wir mussen die Therapie anpassen und eventüll erganzen."
     ],
-    "doctorToDoctorSummary": "48-jahrige Patientin mit bekannter RA, aktüll Schub mit Morgensteifigkeit und symmetrischer Polyarthritis. Unter MTX. V. a. aktive Erkrankung. Therapieanpassung (Dosiserhohung oder Biologikum) erforderlich.",
+    "doctorToDoctorSummary": "48-jährige Patientin mit bekannter RA, aktuell Schub mit Morgensteifigkeit und symmetrischer Polyarthritis. Unter MTX. V. a. aktive Erkrankung. Therapieanpassung (Dosiserhohung oder Biologikum) erforderlich.",
     "scoringRubric": {
       "historyTaking": "Morgensteifigkeit, Gelenkverteilung, Therapie",
       "redFlags": "Schnelle Gelenkdestruktion, viszerale Beteiligung",
@@ -1412,7 +1412,7 @@
       "Fragen Sie nach dem Fieberverlauf und Fiebermessungen",
       "Erfragen Sie B-Symptome",
       "Fragen Sie nach Reisen, Tierkontakten, Infektionen",
-      "Erklaren Sie den Begriff Fieber unklarer Genese",
+      "Erklären Sie den Begriff Fieber unklarer Genese",
       "Besprechen Sie die diagnostische Strategie"
     ],
     "mustAsk": [
@@ -1429,11 +1429,11 @@
       "Fieber über mehrere Wochen ohne erkennbare Ursache muss systematisch abgeklart werden.",
       "Wir beginnen mit Blutuntersuchungen und Bildgebung."
     ],
-    "doctorToDoctorSummary": "42-jahrige Patientin mit Fieber unklarer Genese seit 2 Wochen, B-Symptomatik. Ausschluss von Infektionen, Autoimmunerkrankungen und Malignomen. Basisdiagnostik: Blutkulturen, Labor, Rontgen-Thorax, Abdomensonographie.",
+    "doctorToDoctorSummary": "42-jährige Patientin mit Fieber unklarer Genese seit 2 Wochen, B-Symptomatik. Ausschluss von Infektionen, Autoimmunerkrankungen und Malignomen. Basisdiagnostik: Blutkulturen, Labor, Röntgen-Thorax, Abdomensonographie.",
     "scoringRubric": {
       "historyTaking": "Fieberkurve, B-Symptome, Reisen",
       "redFlags": "Hohes Fieber, rascher Gewichtsverlust, Nachtschweiss",
-      "patientLanguage": "Systematische Abklarung erklaren",
+      "patientLanguage": "Systematische Abklärung erklaren",
       "structure": "Fieber -> Begleitsymptome -> Diagnostik",
       "medicalLogic": "FUO-Diagnostik-Algorithmus",
       "germanAccuracy": "Fieber unklarer Genese, B-Symptome korrekt"
@@ -1471,17 +1471,17 @@
       "Wie hoch war das Fieber maximal?",
       "Trinkt das Kind noch gut?",
       "Hatte das Kind schon einen Fieberkrampf?",
-      "Sind die Impfungen aktüll?"
+      "Sind die Impfungen aktuell?"
     ],
     "redFlags": [
-      "Hohes Fieber bei Kleinkindern haufig viral bedingt",
+      "Hohes Fieber bei Kleinkindern häufig viral bedingt",
       "Risiko von Fieberkrampfen bei raschern Fieberanstieg"
     ],
     "usefulPhrases": [
-      "Fieber bei Kindern ist haufig und meist harmlos.",
+      "Fieber bei Kindern ist häufig und meist harmlos.",
       "Wichtig ist, dass Ihr Kind genug trinkt und Sie auf das Verhalten achten."
     ],
-    "doctorToDoctorSummary": "2-jahriges Kind mit Fieber bis 39.5 Grad nach Impfung und bei Krippenbesuch. Keine Hinweise auf schweren Infekt. Beratung der Eltern zu Fiebermanagement und Wiedervorstellungskriterien.",
+    "doctorToDoctorSummary": "2-jähriges Kind mit Fieber bis 39.5 Grad nach Impfung und bei Krippenbesuch. Keine Hinweise auf schweren Infekt. Beratung der Eltern zu Fiebermanagement und Wiedervorstellungskriterien.",
     "scoringRubric": {
       "historyTaking": "Fieberverlauf, Trinkverhalten, Impfstatus",
       "redFlags": "Fieberkrampf, Menningismus, Trinkverweigerung",
@@ -1505,7 +1505,7 @@
       "age": "55",
       "gender": "mannlich",
       "chiefComplaint": "Drehschwindel beim Umdrehen im Bett",
-      "history": "Seit einer Woche kurze heftige Drehschwindelanfalle beim Umdrehen im Bett oder beim Aufrichten. Dauer ca. 20-30 Sekunden. Dabei Ubelkeit, aber kein Erbrechen. Keine Horstorung. Kein Tinnitus.",
+      "history": "Seit einer Woche kurze heftige Drehschwindelanfalle beim Umdrehen im Bett oder beim Aufrichten. Dauer ca. 20-30 Sekunden. Dabei Übelkeit, aber kein Erbrechen. Keine Horstorung. Kein Tinnitus.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -1515,8 +1515,8 @@
     "doctorTasks": [
       "Fragen Sie nach der genauen Schwindelqualität und Auslosern",
       "Differenzieren Sie vestibularen von zentralem Schwindel",
-      "Fragen Sie nach Horstorung, Tinnitus, neurologischen Ausfallen",
-      "Erklaren Sie die Diagnose",
+      "Fragen Sie nach Horstorung, Tinnitus, neurologischen Ausfällen",
+      "Erklären Sie die Diagnose",
       "Besprechen Sie das Behandlungsmanover"
     ],
     "mustAsk": [
@@ -1526,18 +1526,18 @@
     ],
     "redFlags": [
       "Lagerungsabhängiger Drehschwindel",
-      "Keine Horstorung oder neurologische Ausfalle"
+      "Keine Horstorung oder neurologische Ausfälle"
     ],
     "usefulPhrases": [
       "Das ist ein gutartiger Lagerungsschwindel.",
-      "Es gibt ein einfaches Manover, das die Kristalle im Ohr wieder an den richtigen Platz bringt."
+      "Es gibt ein einfaches Manöver, das die Kristalle im Ohr wieder an den richtigen Platz bringt."
     ],
-    "doctorToDoctorSummary": "55-jahriger Patient mit lagerungsabhangigem Drehschwindel, keine neurologischen oder vestibularen Ausfalle. V. a. benignen paroxysmalen Lagerungsschwindel (BPLS). Geplantes Befreiungsmanover nach Epley.",
+    "doctorToDoctorSummary": "55-jähriger Patient mit lagerungsabhangigem Drehschwindel, keine neurologischen oder vestibularen Ausfälle. V. a. benignen paroxysmalen Lagerungsschwindel (BPLS). Geplantes Befreiungsmanover nach Epley.",
     "scoringRubric": {
       "historyTaking": "Schwindelqualitat, Ausloser, Dauer",
       "redFlags": "Zentraler Schwindel, Horstorung, neurologische Herdsymptome",
       "patientLanguage": "Otolithen und Lagerungsschwindel erklaren",
-      "structure": "Schwindel -> Ausloser -> Diagnose -> Manover",
+      "structure": "Schwindel -> Ausloser -> Diagnose -> Manöver",
       "medicalLogic": "BPLS vs Morbus Meniere vs zentraler Schwindel",
       "germanAccuracy": "BPLS, Drehschwindel, Otolithen korrekt"
     },
@@ -1583,12 +1583,12 @@
       "Bei Ihren Blutdrucktabletten kann der Blutdruck beim Aufstehen zu weit absinken.",
       "Wir sollten Ihren Blutdruck im Liegen und Stehen messen."
     ],
-    "doctorToDoctorSummary": "74-jahriger Patient mit orthostatischer Synkope nach Aufstehen unter antihypertensiver Kombinationstherapie. Keine kardialen oder neurologischen Warnsymptome. V. a. orthostatische Dysregulation. Anpassung der Medikation erwogen.",
+    "doctorToDoctorSummary": "74-jähriger Patient mit orthostatischer Synkope nach Aufstehen unter antihypertensiver Kombinationstherapie. Keine kardialen oder neurologischen Warnsymptome. V. a. orthostatische Dysregulation. Anpassung der Medikation erwogen.",
     "scoringRubric": {
       "historyTaking": "Prodromi, Begleitsymptome, Medikation",
       "redFlags": "Synkope ohne Prodromi, bei Belastung, mit Verletzung",
       "patientLanguage": "Orthostatische Synkope erklaren",
-      "structure": "Synkope -> Prodromi -> Medikation -> Abklarung",
+      "structure": "Synkope -> Prodromi -> Medikation -> Abklärung",
       "medicalLogic": "Orthostatisch vs kardial vs neurogen",
       "germanAccuracy": "Synkope, orthostatisch, Prodromi korrekt"
     },
@@ -1618,7 +1618,7 @@
       "Fragen Sie nach der genauen Wahrnehmung und Haufigkeit",
       "Fragen Sie nach Begleitsymptomen und Auslosern",
       "Bewerten Sie die Belastung durch die Symptome",
-      "Erklaren Sie das Phanomen von Extrasystolen",
+      "Erklären Sie das Phanomen von Extrasystolen",
       "Beruhigen und besprechen Sie die Diagnostik"
     ],
     "mustAsk": [
@@ -1634,7 +1634,7 @@
       "Herzstolpern ist meistens harmlos.",
       "Jeder Mensch hat zusatzliche Herzschlage, die man spuren kann."
     ],
-    "doctorToDoctorSummary": "35-jahrige Patientin mit Palpitationen, Gefuhl von Herzaussetzern. Keine Begleitsymptome. V. a. benigne ventrikulare oder supraventrikulare Extrasystolen. Langzeit-EKG zur Quantifizierung und Beruhigung.",
+    "doctorToDoctorSummary": "35-jährige Patientin mit Palpitationen, Gefuhl von Herzaussetzern. Keine Begleitsymptome. V. a. benigne ventrikulare oder supraventrikulare Extrasystolen. Langzeit-EKG zur Quantifizierung und Beruhigung.",
     "scoringRubric": {
       "historyTaking": "Palpitationen, Ausloser, Angstdruck",
       "redFlags": "Gehaufte Symptome, Synkope, positive Familienanamnese für plotzlichen Herztod",
@@ -1658,7 +1658,7 @@
       "age": "49",
       "gender": "mannlich",
       "chiefComplaint": "Husten seit Wochen, besonders nachts",
-      "history": "Seit Wochen trockener Husten, besonders nachts und morgens. Saures Aufstossen, manchmal Sodbrennen. Kein Fieber. Kein Auswurf. Nichtraucher. Husten wird durch Hustenblocker nicht besser.",
+      "history": "Seit Wochen trockener Husten, besonders nachts und morgens. Saures Aufstoßen, manchmal Sodbrennen. Kein Fieber. Kein Auswurf. Nichtraucher. Husten wird durch Hustenblocker nicht besser.",
       "medications": "Keine regelmasig, gelegentlich Antazida",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -1669,23 +1669,23 @@
       "Fragen Sie nach der Dauer und dem Charakter des Hustens",
       "Fragen Sie nach Refluxsymptomen",
       "Fragen Sie nach Allergien und Asthma",
-      "Erklaren Sie den Zusammenhang zwischen Husten und Reflux",
+      "Erklären Sie den Zusammenhang zwischen Husten und Reflux",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
-      "Haben Sie Sodbrennen oder saures Aufstossen?",
+      "Haben Sie Sodbrennen oder saures Aufstoßen?",
       "Haben Sie das Gefuhl, dass etwas im Hals hochkommt?",
       "Haben Sie Allergien oder Asthma?"
     ],
     "redFlags": [
       "Husten >8 Wochen ohne Infekt",
-      "Reflux als haufige Ursache für chronischen Husten"
+      "Reflux als häufige Ursache für chronischen Husten"
     ],
     "usefulPhrases": [
       "Chronischer Husten kann durch zuruckfließenden Magensaft verursacht werden.",
       "Oft ist ein Therapieversuch mit Magensaureblockern hilfreich."
     ],
-    "doctorToDoctorSummary": "49-jahriger Patient mit chronischem trockenem Husten seit Wochen, Refluxsymptomatik. Nichtraucher. V. a. refluxbedingten Husten (LPR). Therapieversuch mit PPI für 8 Wochen.",
+    "doctorToDoctorSummary": "49-jähriger Patient mit chronischem trockenem Husten seit Wochen, Refluxsymptomatik. Nichtraucher. V. a. refluxbedingten Husten (LPR). Therapieversuch mit PPI für 8 Wochen.",
     "scoringRubric": {
       "historyTaking": "Hustencharakter, Refluxsymptome, Allergie",
       "redFlags": "Hämoptysen, Gewichtsverlust, Heiserkeit über Wochen",
@@ -1708,8 +1708,8 @@
     "patientRole": {
       "age": "68",
       "gender": "mannlich",
-      "chiefComplaint": "Brennen beim Wasserlassen und haufiger Harndrang",
-      "history": "Seit 3 Tagen Brennen beim Wasserlassen, muss haufig, auch nachts 3-4x. Gefuhl von unvollstandiger Entleerung. Bekannte Prostatavergroßerung.",
+      "chiefComplaint": "Brennen beim Wasserlassen und häufiger Harndrang",
+      "history": "Seit 3 Tagen Brennen beim Wasserlassen, muss häufig, auch nachts 3-4x. Gefuhl von unvollstandiger Entleerung. Bekannte Prostatavergroßerung.",
       "medications": "Tamsulosin 0.4 mg",
       "allergies": "Keine",
       "pastHistory": "Benigne Prostatahyperplasie",
@@ -1720,7 +1720,7 @@
       "Fragen Sie nach der genauen Symptomatik",
       "Fragen Sie nach Fieber und Flankenschmerz",
       "Fragen Sie nach der Prostataanamnese",
-      "Erklaren Sie den Zusammenhang zwischen HWI und Prostata",
+      "Erklären Sie den Zusammenhang zwischen HWI und Prostata",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
@@ -1736,10 +1736,10 @@
       "Bei Mannern ist ein Hamwegsinfekt immer etwas ernster zu nehmen.",
       "Die vergroserte Prostata kann die Blasenentleerung behindern."
     ],
-    "doctorToDoctorSummary": "68-jahriger Patient mit Dysurie, Pollakisurie bei BPH. Kein Fieber. V. a. komplizierten HWI bei BPH. Urinkultur und Antibiose. Reevaluation der BPH-Therapie.",
+    "doctorToDoctorSummary": "68-jähriger Patient mit Dysurie, Pollakisurie bei BPH. Kein Fieber. V. a. komplizierten HWI bei BPH. Urinkultur und Antibiose. Reevaluation der BPH-Therapie.",
     "scoringRubric": {
       "historyTaking": "Miktion, Fieber, Risikofaktoren",
-      "redFlags": "Fieber, Flankenschmerz, Hamaturie",
+      "redFlags": "Fieber, Flankenschmerz, Hämaturie",
       "patientLanguage": "HWI und Prostata erklaren",
       "structure": "Symptome -> Risikofaktoren -> Therapie",
       "medicalLogic": "Komplizierter HWI beim Mann",
@@ -1759,8 +1759,8 @@
     "patientRole": {
       "age": "55",
       "gender": "mannlich",
-      "chiefComplaint": "Gewichtsverlust, Durst, haufiges Wasserlassen",
-      "history": "Seit Wochen verstarkter Durst, haufiges Wasserlassen (auch nachts), Müdigkeit, 5 kg Gewichtsverlust in 2 Monaten. Keine Wundheilungsstorungen. Bislang kein Arztbesuch.",
+      "chiefComplaint": "Gewichtsverlust, Durst, häufiges Wasserlassen",
+      "history": "Seit Wochen verstarkter Durst, häufiges Wasserlassen (auch nachts), Müdigkeit, 5 kg Gewichtsverlust in 2 Monaten. Keine Wundheilungsstorungen. Bislang kein Arztbesuch.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -1771,14 +1771,14 @@
       "Fragen Sie nach den klassischen Diabetes-Symptomen",
       "Erfragen Sie Risikofaktoren und Familienanamnese",
       "Fragen Sie nach Folgesymptomen",
-      "Erklaren Sie den Verdacht auf Diabetes",
-      "Besprechen Sie die notigen Untersuchungen und die Therapie"
+      "Erklären Sie den Verdacht auf Diabetes",
+      "Besprechen Sie die nötigen Untersuchungen und die Therapie"
     ],
     "mustAsk": [
       "Hatten Sie in letzter Zeit vermehrt Durst?",
       "Mussen Sie nachts oft auf die Toilette?",
       "Haben Sie ungewollt abgenommen?",
-      "Haben Sie Fussveranderungen oder Sehstorungen bemerkt?"
+      "Haben Sie Fussveranderungen oder Sehstörungen bemerkt?"
     ],
     "redFlags": [
       "Klassische Symptome (Polydipsie, Polyurie, Gewichtsverlust)",
@@ -1789,10 +1789,10 @@
       "Ihre Symptome passen zu einem Diabetes mellitus.",
       "Wir mussen den Blutzucker und den Langzeitzucker messen."
     ],
-    "doctorToDoctorSummary": "55-jahriger Patient mit Polydipsie, Polyurie und Gewichtsverlust. Adipositas, positive Familienanamnese. V. a. manifesten Diabetes mellitus Typ 2. Diagnostik: Nuchternblutzucker, HbA1c. Therapie: Ernahrungsumstellung, Bewegung ggf. Metformin.",
+    "doctorToDoctorSummary": "55-jähriger Patient mit Polydipsie, Polyurie und Gewichtsverlust. Adipositas, positive Familienanamnese. V. a. manifesten Diabetes mellitus Typ 2. Diagnostik: Nüchternblutzucker, HbA1c. Therapie: Ernährungsumstellung, Bewegung ggf. Metformin.",
     "scoringRubric": {
       "historyTaking": "Symptome, Risikofaktoren, Familienanamnese",
-      "redFlags": "Gewichtsverlust, Ketoazidose-Zeichen, Sehstorungen",
+      "redFlags": "Gewichtsverlust, Ketoazidose-Zeichen, Sehstörungen",
       "patientLanguage": "Diabetes und Stoffwechsel erklaren",
       "structure": "Symptome -> Risikofaktoren -> Diagnostik -> Therapie",
       "medicalLogic": "Diabetes-Diagnostik, HbA1c, Therapieeinleitung",
@@ -1824,27 +1824,27 @@
       "Fragen Sie nach der Symptomatik und ihrer Dauer",
       "Fragen Sie nach Medikamenteneinnahme",
       "Fragen Sie nach Endorganschaden (Sehen, Brustschmerz, Atemnot)",
-      "Erklaren Sie die hypertensive Krise",
-      "Besprechen Sie die notige senkung und Anpassung"
+      "Erklären Sie die hypertensive Krise",
+      "Besprechen Sie die nötige senkung und Anpassung"
     ],
     "mustAsk": [
       "Haben Sie Brustschmerzen oder Atemnot?",
-      "Haben Sie Sehstorungen?",
+      "Haben Sie Sehstörungen?",
       "Haben Sie Ihre Medikamente genommen?"
     ],
     "redFlags": [
       "Blutdruck deutlich über 180/120",
       "Medikamentenadharenez als Ursache",
-      "Hypertensive Notfall mit Endorganschaden? (Sehstorung, Thoraxschmerz)"
+      "Hypertensive Notfall mit Endorganschaden? (Sehstörung, Thoraxschmerz)"
     ],
     "usefulPhrases": [
       "Ihr Blutdruck ist gefahrlich hoch.",
       "Wir mussen ihn vorsichtig senken und Ihre Medikation neu einstellen."
     ],
-    "doctorToDoctorSummary": "58-jahrige Patientin mit hypertensiver Krise bei Non-Adharenz. Blutdruck 210/120. Keine Hinweise auf hypertensive Notfall (kein Thoraxschmerz, keine Sehstorung, kein Lungenodem). Blutdrucksenkung po und Therapieoptimierung.",
+    "doctorToDoctorSummary": "58-jährige Patientin mit hypertensiver Krise bei Non-Adhärenz. Blutdruck 210/120. Keine Hinweise auf hypertensive Notfall (kein Thoraxschmerz, keine Sehstörung, kein Lungenödem). Blutdrucksenkung po und Therapieoptimierung.",
     "scoringRubric": {
       "historyTaking": "Symptome, Medikation, Endorganschaden",
-      "redFlags": "Hypertensive Notfall: Lungenodem, Aortendissektion, Enzephalopathie",
+      "redFlags": "Hypertensive Notfall: Lungenödem, Aortendissektion, Enzephalopathie",
       "patientLanguage": "Bluthochdruck und Endorganschaden erklaren",
       "structure": "Symptome -> Blutdruck -> Notfall vs Krise -> Therapie",
       "medicalLogic": "Hypertensive Krise vs hypertensiver Notfall",
@@ -1876,7 +1876,7 @@
       "Fragen Sie nach dem zeitlichen Zusammenhang",
       "Fragen Sie nach der genauen Symptomatik",
       "Bewerten Sie das Risiko-Nutzen-Verhaltnis",
-      "Erklaren Sie die mogliche Nebenwirkung",
+      "Erklären Sie die mogliche Nebenwirkung",
       "Besprechen Sie Alternativen"
     ],
     "mustAsk": [
@@ -1886,16 +1886,16 @@
     ],
     "redFlags": [
       "Zeitlicher Zusammenhang: Statinbeginn + Muskelschmerzen",
-      "CK-Erhohung bestatigt Verdacht"
+      "CK-Erhöhung bestatigt Verdacht"
     ],
     "usefulPhrases": [
       "Statine konnen Muskelschmerzen verursachen.",
       "Wir pausieren das Medikament und schauen, ob die Schmerzen verschwinden."
     ],
-    "doctorToDoctorSummary": "62-jahriger Patient mit Muskelschmerzen und CK-Erhohung 6 Wochen nach Statinbeginn. V. a. Statin-Myopathie. Therapiepause und Wechsel auf ein alternatives Statin oder Ezetimib erwogen.",
+    "doctorToDoctorSummary": "62-jähriger Patient mit Muskelschmerzen und CK-Erhöhung 6 Wochen nach Statinbeginn. V. a. Statin-Myopathie. Therapiepause und Wechsel auf ein alternatives Statin oder Ezetimib erwogen.",
     "scoringRubric": {
       "historyTaking": "Zeitlicher Zusammenhang, CK-Werte, Sport",
-      "redFlags": "Rhabdomyolyse, dunkler Urin, starke CK-Erhohung",
+      "redFlags": "Rhabdomyolyse, dunkler Urin, starke CK-Erhöhung",
       "patientLanguage": "Statin-Nebenwirkungen erklaren",
       "structure": "Symptome -> Medikation -> Nebenwirkung -> Alternative",
       "medicalLogic": "Statin-Myopathie vs andere Ursachen",
@@ -1916,7 +1916,7 @@
       "age": "68",
       "gender": "mannlich",
       "chiefComplaint": "Sturz auf den Kopf, kurz bewusstlos",
-      "history": "Von der Leiter gefallen (ca. 2 m), auf den Kopf gesturzt. War kurz bewusstlos (ca. 1 Minute). Jetzt Kopfschmerzen, Ubelkeit. Kein Erbrechen. Keine neurologischen Ausfalle. Nimmt Marcumar.",
+      "history": "Von der Leiter gefallen (ca. 2 m), auf den Kopf gestürzt. War kurz bewusstlos (ca. 1 Minute). Jetzt Kopfschmerzen, Übelkeit. Kein Erbrechen. Keine neurologischen Ausfälle. Nimmt Marcumar.",
       "medications": "Marcumar (Phenprocoumon) wegen Vorhofflimmern",
       "allergies": "Keine",
       "pastHistory": "Vorhofflimmern, arterielle Hypertonie",
@@ -1927,14 +1927,14 @@
       "Fragen Sie nach dem Unfallhergang und Hohe des Sturzes",
       "Fragen Sie nach Bewusstlosigkeit und Erinnerungslucken",
       "Fragen Sie nach Blutverdunnern",
-      "Erklaren Sie die Notwendigkeit eines Kopf-CTs",
+      "Erklären Sie die Notwendigkeit eines Kopf-CTs",
       "Besprechen Sie die stationare Aufnahme"
     ],
     "mustAsk": [
       "Waren Sie bewusstlos?",
       "Haben Sie Erinnerungslucken?",
       "Nehmen Sie Blutverdunner?",
-      "Haben Sie Ubelkeit oder Erbrechen?"
+      "Haben Sie Übelkeit oder Erbrechen?"
     ],
     "redFlags": [
       "Bewusstlosigkeit nach Schadeltrauma",
@@ -1944,10 +1944,10 @@
     "usefulPhrases": [
       "Da Sie Blutverdunner nehmen und kurz bewusstlos waren, mussen wir ein CT vom Kopf machen."
     ],
-    "doctorToDoctorSummary": "68-jahriger Patient unter Marcumar mit Schadeltrauma und kurzer Bewusstlosigkeit. V. a. intrakranielle Blutung. CCT veranlasst. Stationare Überwachung bei Marcumar-Patienten.",
+    "doctorToDoctorSummary": "68-jähriger Patient unter Marcumar mit Schadeltrauma und kurzer Bewusstlosigkeit. V. a. intrakranielle Blutung. CCT veranlasst. Stationäre Überwachung bei Marcumar-Patienten.",
     "scoringRubric": {
       "historyTaking": "Trauma, Bewusstlosigkeit, Blutverdunner",
-      "redFlags": "Antikoagulation, Bewusstlosigkeit, fokale Ausfalle",
+      "redFlags": "Antikoagulation, Bewusstlosigkeit, fokale Ausfälle",
       "patientLanguage": "Blutungsrisiko durch Marcumar erklaren",
       "structure": "Trauma -> Antikoagulation -> Diagnostik",
       "medicalLogic": "SHT-Diagnostik, CCT-Indikation",
@@ -1968,7 +1968,7 @@
       "age": "45",
       "gender": "weiblich",
       "chiefComplaint": "Sturz auf die ausgestreckte Hand, Schmerzen im Handgelenk",
-      "history": "Auf eisglatter Strasse auf die rechte Hand gesturzt. Starke Schmerzen im rechten Handgelenk, Schwellung und Bewegungseinschrankung. Keine offene Wunde.",
+      "history": "Auf eisglatter Strasse auf die rechte Hand gestürzt. Starke Schmerzen im rechten Handgelenk, Schwellung und Bewegungseinschrankung. Keine offene Wunde.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -1979,8 +1979,8 @@
       "Fragen Sie nach dem Sturzmechanismus",
       "Fragen Sie nach Schmerzen, Schwellung und Funktion",
       "Fragen Sie nach Sensibilitatsstorungen",
-      "Erklaren Sie den Verdacht auf Handgelenksbruch",
-      "Besprechen Sie die notige Rontgendiagnostik"
+      "Erklären Sie den Verdacht auf Handgelenksbruch",
+      "Besprechen Sie die nötige Röntgendiagnostik"
     ],
     "mustAsk": [
       "Haben Sie Taubheitsgefuhl in den Fingern?",
@@ -1992,17 +1992,17 @@
       "Offene Fraktur und Gefassverletzung ausschliesen"
     ],
     "usefulPhrases": [
-      "Bei einem Sturz auf die Hand ist ein Bruch des Handgelenks haufig.",
-      "Wir machen ein Rontgen zur Sicherheit."
+      "Bei einem Sturz auf die Hand ist ein Bruch des Handgelenks häufig.",
+      "Wir machen ein Röntgen zur Sicherheit."
     ],
-    "doctorToDoctorSummary": "45-jahrige Patientin mit Sturz auf das rechte Handgelenk. Schwellung und Druckschmerz über dem distalen Radius. V. a. distale Radiusfraktur. Rontgen veranlasst.",
+    "doctorToDoctorSummary": "45-jährige Patientin mit Sturz auf das rechte Handgelenk. Schwellung und Druckschmerz über dem distalen Radius. V. a. distale Radiusfraktur. Röntgen veranlasst.",
     "scoringRubric": {
       "historyTaking": "Sturzmechanismus, Schmerz, Funktion",
       "redFlags": "Offene Fraktur, Durchblutungsstorung, Nervenlasion",
       "patientLanguage": "Handgelenksbruch und Heilung erklaren",
-      "structure": "Sturz -> Fraktur -> Rontgen -> Therapie",
+      "structure": "Sturz -> Fraktur -> Röntgen -> Therapie",
       "medicalLogic": "Radiusfraktur, Klassifikation, OP-Indikation",
-      "germanAccuracy": "Distale Radiusfraktur, Rontgen korrekt"
+      "germanAccuracy": "Distale Radiusfraktur, Röntgen korrekt"
     },
     "tags": [
       "trauma",
@@ -2029,8 +2029,8 @@
     "doctorTasks": [
       "Fragen Sie nach dem Unfallhergang",
       "Fragen Sie nach Schmerzen und Belastbarkeit",
-      "Fragen Sie nach fruheren Verletzungen",
-      "Erklaren Sie den Unterschied zwischen Bandverletzung und Bruch",
+      "Fragen Sie nach früheren Verletzungen",
+      "Erklären Sie den Unterschied zwischen Bandverletzung und Bruch",
       "Besprechen Sie die Ruhigstellung und Nachsorge"
     ],
     "mustAsk": [
@@ -2044,14 +2044,14 @@
     ],
     "usefulPhrases": [
       "Das Umknicken fuhrt oft zu einer Überdehnung oder einem Riss der Aussenbander.",
-      "Wir machen ein Rontgen, um einen Bruch auszuschliesen."
+      "Wir machen ein Röntgen, um einen Bruch auszuschließen."
     ],
-    "doctorToDoctorSummary": "23-jahriger Patient mit Supinationstrauma des linken OSG. Schwellung und Druckschmerz lateral. Keine sichere Fraktur nach Ottawa-Regeln. V. a. laterale Banddistorsion. Ruhigstellung und Physiotherapie.",
+    "doctorToDoctorSummary": "23-jähriger Patient mit Supinationstrauma des linken OSG. Schwellung und Druckschmerz lateral. Keine sichere Fraktur nach Ottawa-Regeln. V. a. laterale Banddistorsion. Ruhigstellung und Physiotherapie.",
     "scoringRubric": {
       "historyTaking": "Trauma, Belastbarkeit, Vorverletzungen",
       "redFlags": "Instabilitat, Gelenkerguss, Ottawa-Ankle-Kriterien",
       "patientLanguage": "Banderverletzung vs Bruch erklaren",
-      "structure": "Trauma -> Befund -> Rontgen -> Therapie",
+      "structure": "Trauma -> Befund -> Röntgen -> Therapie",
       "medicalLogic": "OSG-Distorsion, funktionelle Therapie",
       "germanAccuracy": "Supinationstrauma, Distorsion, OSG korrekt"
     },
@@ -2078,10 +2078,10 @@
       "socialHistory": "Witwe, lebt allein, wenig Bewegung, trinkt wenig"
     },
     "doctorTasks": [
-      "Fragen Sie nach der Stuhlfreqünz und Konsistenz",
+      "Fragen Sie nach der Stuhlfrequenz und Konsistenz",
       "Fragen Sie nach Laxanziengebrauch",
       "Fragen Sie nach Alarmzeichen",
-      "Erklaren Sie die Chronifizierung von Obstipation",
+      "Erklären Sie die Chronifizierung von Obstipation",
       "Besprechen Sie eine Stufentherapie"
     ],
     "mustAsk": [
@@ -2094,11 +2094,11 @@
       "Laxanzienabhangigkeit moglich"
     ],
     "usefulPhrases": [
-      "Bei chronischer Verstopfung ist eine Umstellung der Ernahrung und ausreichend Flussigkeit der erste Schritt."
+      "Bei chronischer Verstopfung ist eine Umstellung der Ernahrung und ausreichend Flüssigkeit der erste Schritt."
     ],
-    "doctorToDoctorSummary": "72-jahrige Patientin mit chronischer Obstipation, Laxanziabhangigkeit, keine Alarmzeichen. Beratung zu Ballaststoffen, Flussigkeit und Bewegung. Stufenweiser Laxanzienentzug und Wechsel zu Macrogol.",
+    "doctorToDoctorSummary": "72-jährige Patientin mit chronischer Obstipation, Laxanziabhangigkeit, keine Alarmzeichen. Beratung zu Ballaststoffen, Flüssigkeit und Bewegung. Stufenweiser Laxanzienentzug und Wechsel zu Macrogol.",
     "scoringRubric": {
-      "historyTaking": "Stuhlfreqünz, Laxanzien, Alarmzeichen",
+      "historyTaking": "Stuhlfrequenz, Laxanzien, Alarmzeichen",
       "redFlags": "Blut im Stuhl, Gewichtsverlust, plotzliche Anderung der Stuhlgewohnheiten",
       "patientLanguage": "Darmtragheit und Laxanzien erklaren",
       "structure": "Symptome -> Laxanzien -> Ernahrung -> Therapie",
@@ -2114,13 +2114,13 @@
   },
   {
     "id": "fsp_c_042",
-    "title": "Postoperative Ubelkeit nach Narkose",
+    "title": "Postoperative Übelkeit nach Narkose",
     "setting": "ward",
     "patientRole": {
       "age": "35",
       "gender": "weiblich",
-      "chiefComplaint": "Ubelkeit und Erbrechen nach Gallenblasen-OP",
-      "history": "Nach laparoskopischer Cholezystektomie (gestern) starke Ubelkeit, mehrfach erbrochen. Keine Schmerzen im OP-Gebiet. Schwindel. Hat noch nichts gegessen.",
+      "chiefComplaint": "Übelkeit und Erbrechen nach Gallenblasen-OP",
+      "history": "Nach laparoskopischer Cholezystektomie (gestern) starke Übelkeit, mehrfach erbrochen. Keine Schmerzen im OP-Gebiet. Schwindel. Hat noch nichts gegessen.",
       "medications": "Metamizol, niedermolekulares Heparin, ggf. Ondansteron",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2128,38 +2128,38 @@
       "socialHistory": "Buroangestellte"
     },
     "doctorTasks": [
-      "Fragen Sie nach der Ubelkeit und dem Erbrechen",
+      "Fragen Sie nach der Übelkeit und dem Erbrechen",
       "Fragen Sie nach dem letzten Essen und Trinken",
       "Fragen Sie nach der Schmerzmedikation",
-      "Erklaren Sie die haufigste Ursache für postoperative Ubelkeit",
+      "Erklären Sie die häufigste Ursache für postoperative Übelkeit",
       "Besprechen Sie die antiemetische Therapie"
     ],
     "mustAsk": [
       "Haben Sie Schmerzen im Bauch?",
       "Haben Sie die Schmerzmittel gut vertragen?",
-      "Hatten Sie schon nach fruheren Narkosen Ubelkeit?"
+      "Hatten Sie schon nach früheren Narkosen Übelkeit?"
     ],
     "redFlags": [
-      "Postoperative Ubelkeit und Erbrechen (PONV) nach Allgemeinanasthesie",
+      "Postoperative Übelkeit und Erbrechen (PONV) nach Allgemeinanästhesie",
       "Opiate als Risikofaktor"
     ],
     "usefulPhrases": [
-      "Ubelkeit nach einer Narkose kommt haufig vor.",
-      "Wir geben Ihnen ein Medikament gegen die Ubelkeit."
+      "Übelkeit nach einer Narkose kommt häufig vor.",
+      "Wir geben Ihnen ein Medikament gegen die Übelkeit."
     ],
-    "doctorToDoctorSummary": "35-jahrige Patientin mit PONV nach laparoskopischer Cholezystektomie. Keine chirurgischen Komplikationen. Therapie: Antiemetika, Flussigkeit, Kostaufbau.",
+    "doctorToDoctorSummary": "35-jährige Patientin mit PONV nach laparoskopischer Cholezystektomie. Keine chirurgischen Komplikationen. Therapie: Antiemetika, Flüssigkeit, Kostaufbau.",
     "scoringRubric": {
       "historyTaking": "PONV-Risikofaktoren, Medikation",
       "redFlags": "Starke Bauchschmerzen, Fieber, Peritonitiszeichen",
       "patientLanguage": "PONV als harmlose Narkosefolge erklaren",
-      "structure": "Narkose -> Ubelkeit -> Antiemetika",
+      "structure": "Narkose -> Übelkeit -> Antiemetika",
       "medicalLogic": "PONV-Risiko, Antiemetika nach Stufenschema",
       "germanAccuracy": "PONV, Antiemetika, Narkose korrekt"
     },
     "tags": [
       "postoperativ",
       "narkose",
-      "ubelkeit",
+      "übelkeit",
       "PONV"
     ]
   },
@@ -2180,9 +2180,9 @@
     },
     "doctorTasks": [
       "Fragen Sie nach der Schmerzintensitat und -lokalisation",
-      "Fragen Sie nach der Schmerzqualitat",
+      "Fragen Sie nach der Schmerzqualität",
       "Fragen Sie nach Stillen und Säugling",
-      "Erklaren Sie die Sicherheit von Schmerzmitteln beim Stillen",
+      "Erklären Sie die Sicherheit von Schmerzmitteln beim Stillen",
       "Optimieren Sie die Schmerztherapie"
     ],
     "mustAsk": [
@@ -2198,7 +2198,7 @@
       "Gute Schmerztherapie ist nach einem Kaiserschnitt wichtig.",
       "Ibuprofen und Paracetamol sind auch beim Stillen sicher."
     ],
-    "doctorToDoctorSummary": "44-jahrige Patientin am 1. Tag nach Sectio mit unzureichender Schmerztherapie. Stillt. Akuter Schmerz 7/10. Anpassung der Schmerzmedikation (Paracetamol + Ibuprofen als Basis, ggf. Opiat bei Bedarf).",
+    "doctorToDoctorSummary": "44-jährige Patientin am 1. Tag nach Sectio mit unzureichender Schmerztherapie. Stillt. Akuter Schmerz 7/10. Anpassung der Schmerzmedikation (Paracetamol + Ibuprofen als Basis, ggf. Opiat bei Bedarf).",
     "scoringRubric": {
       "historyTaking": "Schmerzintensitat, Stillen, Angst",
       "redFlags": "Fieber, Wundinfektion, tiefe Beinvenenthrombose",
@@ -2222,7 +2222,7 @@
       "age": "38",
       "gender": "mannlich",
       "chiefComplaint": "Seit Wochen niedergeschlagen, antriebslos, schlaflos",
-      "history": "Seit 6 Wochen gedruckte Stimmung, Interessenverlust, Antriebslosigkeit, Fruherwachen. Fuhlt sich überfordert mit der Arbeit. Keine suizidalen Gedanken. Hat sich zuruckgezogen.",
+      "history": "Seit 6 Wochen gedruckte Stimmung, Interessenverlust, Antriebslosigkeit, Früherwachen. Fuhlt sich überfordert mit der Arbeit. Keine suizidalen Gedanken. Hat sich zuruckgezogen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2232,8 +2232,8 @@
     "doctorTasks": [
       "Fragen Sie nach der Dauer der Symptome",
       "Fragen Sie nach den Kernsymptomen einer Depression",
-      "Fragen Sie nach Suizidalitat",
-      "Erklaren Sie das Krankheitsbild der Depression",
+      "Fragen Sie nach Suizidalität",
+      "Erklären Sie das Krankheitsbild der Depression",
       "Besprechen Sie Behandlungsoptionen"
     ],
     "mustAsk": [
@@ -2243,20 +2243,20 @@
     ],
     "redFlags": [
       "Anhaltende depressive Symptomatik über Wochen mit funktioneller Beeintrachtigung",
-      "Suizidalitat muss immer erfragt werden"
+      "Suizidalität muss immer erfragt werden"
     ],
     "usefulPhrases": [
       "Depression ist eine Erkrankung des Gehirns und keine Charakterschwache.",
       "Es gibt gute Behandlungsmoglichkeiten mit Psychotherapie und Medikamenten."
     ],
-    "doctorToDoctorSummary": "38-jahriger Patient mit depressiver Episode (Fruherwachen, Antriebslosigkeit, Interessenverlust). Keine akute Suizidalitat. V. a. mittelschwere depressive Episode. Psychotherapie und SSRI empfohlen.",
+    "doctorToDoctorSummary": "38-jähriger Patient mit depressiver Episode (Früherwachen, Antriebslosigkeit, Interessenverlust). Keine akute Suizidalität. V. a. mittelschwere depressive Episode. Psychotherapie und SSRI empfohlen.",
     "scoringRubric": {
-      "historyTaking": "Zielsymptome, Dauer, Suizidalitat",
-      "redFlags": "Akute Suizidalitat, Psychose, Manie",
+      "historyTaking": "Zielsymptome, Dauer, Suizidalität",
+      "redFlags": "Akute Suizidalität, Psychose, Manie",
       "patientLanguage": "Depression als behandelbare Erkrankung entstigmatisieren",
-      "structure": "Symptome -> Diagnostik -> Suizidalitat -> Therapie",
+      "structure": "Symptome -> Diagnostik -> Suizidalität -> Therapie",
       "medicalLogic": "Depression: Schweregrad, Therapie, SSRI",
-      "germanAccuracy": "Depression, Fruherwachen, Anhedonie, SSRI korrekt"
+      "germanAccuracy": "Depression, Früherwachen, Anhedonie, SSRI korrekt"
     },
     "tags": [
       "psychiatrie",
@@ -2272,7 +2272,7 @@
     "patientRole": {
       "age": "32",
       "gender": "weiblich",
-      "chiefComplaint": "Einschlafstorung und Durchschlafstorung seit Wochen",
+      "chiefComplaint": "Einschlafstorung und Durchschlafstörung seit Wochen",
       "history": "Seit Wochen Probleme beim Einschlafen, wacht nachts auf und findet keinen Schlaf. Grundliches Grübeln. Tagsuber mud und gereizt. Belastet durch Trennungsphase.",
       "medications": "Gelegentlich Baldrian, kein regelmassiges Medikament",
       "allergies": "Keine",
@@ -2284,7 +2284,7 @@
       "Fragen Sie nach dem genauen Schlafmuster",
       "Fragen Sie nach Auslosern und Belastungen",
       "Fragen Sie nach Tagesbefindlichkeit",
-      "Erklaren Sie die Schlafhygiene",
+      "Erklären Sie die Schlafhygiene",
       "Besprechen Sie Therapieoptionen ohne Medikamente"
     ],
     "mustAsk": [
@@ -2297,13 +2297,13 @@
       "Keine Hinweise auf Depression oder Angststorung"
     ],
     "usefulPhrases": [
-      "Schlafprobleme bei Belastung sind haufig.",
+      "Schlafprobleme bei Belastung sind häufig.",
       "Strukturierte Schlafhygiene und Entspannungsverfahren konnen helfen."
     ],
-    "doctorToDoctorSummary": "32-jahrige Patientin mit Ein- und Durchschlafstorung bei Trennungsstress. Keine Depression. Beratung zu Schlafhygiene, Entspannungstechniken, ggf. Kurzzeittherapie.",
+    "doctorToDoctorSummary": "32-jährige Patientin mit Ein- und Durchschlafstörung bei Trennungsstress. Keine Depression. Beratung zu Schlafhygiene, Entspannungstechniken, ggf. Kurzzeittherapie.",
     "scoringRubric": {
       "historyTaking": "Schlafmuster, Belastungen, Tagesbefindlichkeit",
-      "redFlags": "Depressive Symptome, Suizidalitat, Schlafapnö",
+      "redFlags": "Depressive Symptome, Suizidalität, Schlafapnö",
       "patientLanguage": "Schlafhygiene praktisch vermitteln",
       "structure": "Schlaf -> Belastung -> Hygiene -> Therapie",
       "medicalLogic": "Primare vs sekundare Schlafstorung, Zolpidem-Risiko",
@@ -2324,7 +2324,7 @@
       "age": "71",
       "gender": "weiblich",
       "chiefComplaint": "Sturz auf die Brust, Schmerzen beim Atmen",
-      "history": "Auf der Treppe gesturzt und mit der Brust auf die Kante gefallen. Starke Schmerzen rechts thorakal, verstarkt beim tiefen Atmen und Husten. Keine Atemnot.",
+      "history": "Auf der Treppe gestürzt und mit der Brust auf die Kante gefallen. Starke Schmerzen rechts thorakal, verstarkt beim tiefen Atmen und Husten. Keine Atemnot.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Osteoporose",
@@ -2335,7 +2335,7 @@
       "Fragen Sie nach dem Sturzmechanismus",
       "Fragen Sie nach Schmerzcharakter und Atemabhangigkeit",
       "Fragen Sie nach Atemnot",
-      "Erklaren Sie den Unterschied zwischen Prellung und Bruch",
+      "Erklären Sie den Unterschied zwischen Prellung und Bruch",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
@@ -2348,14 +2348,14 @@
     ],
     "usefulPhrases": [
       "Die Schmerzen beim Atmen konnen von einem Rippenbruch kommen.",
-      "Wir machen ein Rontgen zur Sicherheit."
+      "Wir machen ein Röntgen zur Sicherheit."
     ],
-    "doctorToDoctorSummary": "71-jahrige Patientin mit Sturz auf den Thorax. Atemabhangige Schmerzen rechts. Osteoporose. V. a. Rippenfraktur. Rontgen-Thorax veranlasst. Konservative Therapie mit Analgetika.",
+    "doctorToDoctorSummary": "71-jährige Patientin mit Sturz auf den Thorax. Atemabhangige Schmerzen rechts. Osteoporose. V. a. Rippenfraktur. Röntgen-Thorax veranlasst. Konservative Therapie mit Analgetika.",
     "scoringRubric": {
-      "historyTaking": "Trauma, Schmerzqualitat, Dyspnö",
+      "historyTaking": "Trauma, Schmerzqualität, Dyspnoe",
       "redFlags": "Hamo-Pneumothorax, Rippenserie mit instabilem Thorax",
       "patientLanguage": "Rippenfraktur vs Prellung erklaren",
-      "structure": "Sturz -> Schmerz -> Rontgen -> Ruhe",
+      "structure": "Sturz -> Schmerz -> Röntgen -> Ruhe",
       "medicalLogic": "Rippenfraktur: Komplikationen erkennen",
       "germanAccuracy": "Rippenfraktur, Prellung, Thoraxkorrekt"
     },
@@ -2385,7 +2385,7 @@
       "Fragen Sie nach der genauen Symptomatik",
       "Fragen Sie nach der Menstruationsanamnese",
       "Fragen Sie nach Blutverlust",
-      "Erklaren Sie den Zusammenhang zwischen Eisenmangel und Müdigkeit",
+      "Erklären Sie den Zusammenhang zwischen Eisenmangel und Müdigkeit",
       "Besprechen Sie die Eisensubstitution"
     ],
     "mustAsk": [
@@ -2394,20 +2394,20 @@
       "Haben Sie schon Eisen pabiert?"
     ],
     "redFlags": [
-      "Eisenmangelanamie bei Hypermenorrhö",
+      "Eisenmangelanämie bei Hypermenorrhö",
       "Weitere Blutverlustqüllen ausschliesen"
     ],
     "usefulPhrases": [
       "Ihre Müdigkeit kommt sehr wahrscheinlich von Eisenmangel.",
       "Wir messen das Blutbild und das Eisen und beginnen dann eine Eisentherapie."
     ],
-    "doctorToDoctorSummary": "33-jahrige Patientin mit Müdigkeit, Blasse, Belastungsdyspnö bei Hypermenorrhö. V. a. Eisenmangelanamie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynakologische Abklarung der Hypermenorrhö.",
+    "doctorToDoctorSummary": "33-jährige Patientin mit Müdigkeit, Blasse, Belastungsdyspnoe bei Hypermenorrhö. V. a. Eisenmangelanämie. Diagnostik: Blutbild, Ferritin. Therapie: orales Eisen, ggf. gynäkologische Abklärung der Hypermenorrhö.",
     "scoringRubric": {
       "historyTaking": "Müdigkeit, Blutungsanamnese, GI-Blutverlust",
       "redFlags": "Schwere Anamie, Malignonverdacht, GI-Blutung",
       "patientLanguage": "Eisenmangel und Hamoglobin erklaren",
       "structure": "Müdigkeit -> Menstruation -> Eisenmangel -> Therapie",
-      "medicalLogic": "Eisenmangelanamie: Ursachen, Diagnostik, Therapie",
+      "medicalLogic": "Eisenmangelanämie: Ursachen, Diagnostik, Therapie",
       "germanAccuracy": "Eisenmangel, Anamie, Ferritin, Hypermenorrhö korrekt"
     },
     "tags": [
@@ -2436,7 +2436,7 @@
       "Fragen Sie nach den Symptomen einer Schilddrusenuberfunktion",
       "Fragen Sie nach der Familienanamnese",
       "Fragen Sie nach Halsveranderungen",
-      "Erklaren Sie die Hyperthyreose",
+      "Erklären Sie die Hyperthyreose",
       "Besprechen Sie die Diagnostik"
     ],
     "mustAsk": [
@@ -2452,7 +2452,7 @@
       "Ihre Symptome passen zu einer Schilddrusenuberfunktion.",
       "Mit einer Blutuntersuchung konnen wir die Diagnose sichern."
     ],
-    "doctorToDoctorSummary": "28-jahriger Patient mit Gewichtsverlust, Tachykardie, Tremor. Positive Familienanamnese. V. a. Hyperthyreose. TSH, fT3, fT4 bestimmen. ggf. Schilddrusensonographie.",
+    "doctorToDoctorSummary": "28-jähriger Patient mit Gewichtsverlust, Tachykardie, Tremor. Positive Familienanamnese. V. a. Hyperthyreose. TSH, fT3, fT4 bestimmen. ggf. Schilddrüsensonographie.",
     "scoringRubric": {
       "historyTaking": "Hyperthyreose-Symptome, Familienanamnese",
       "redFlags": "Tachykardie, Vorhofflimmern, Thyreotoxische Krise",
@@ -2476,7 +2476,7 @@
       "age": "41",
       "gender": "mannlich",
       "chiefComplaint": "Starke kolikartige Schmerzen im Rucken/Flanke",
-      "history": "Seit Stunden wellenartig zunehmende Schmerzen im rechten Rucken/Flanke, in den Unterbauch ausstrahlend. Ubelkeit, Erbrechen. Kein Fieber. Leichte rote Verfarbung des Urins bemerkt.",
+      "history": "Seit Stunden wellenartig zunehmende Schmerzen im rechten Rucken/Flanke, in den Unterbauch ausstrahlend. Übelkeit, Erbrechen. Kein Fieber. Leichte rote Verfarbung des Urins bemerkt.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -2486,7 +2486,7 @@
     "doctorTasks": [
       "Fragen Sie nach Schmerzcharakter und Ausstrahlung",
       "Fragen Sie nach Miktion und Urinfarbe",
-      "Erklaren Sie den Verdacht auf Nierenstein",
+      "Erklären Sie den Verdacht auf Nierenstein",
       "Besprechen Sie die Diagnostik und Therapie"
     ],
     "mustAsk": [
@@ -2495,14 +2495,14 @@
       "Hatten Sie schon einmal Nierensteine?"
     ],
     "redFlags": [
-      "Koliktypische Schmerzen mit Hamaturie",
+      "Koliktypische Schmerzen mit Hämaturie",
       "Fieber als Zeichen einer Infektion"
     ],
     "usefulPhrases": [
       "Die Schmerzen sind typisch für einen Nierenstein, der im Hamleiter wandert.",
       "Wir machen eine Ultraschalluntersuchung."
     ],
-    "doctorToDoctorSummary": "41-jahriger Patient mit Nierenkolik rechts, Hamaturie. V. a. Ureterstein. Sonographie und Urinuntersuchung veranlasst.",
+    "doctorToDoctorSummary": "41-jähriger Patient mit Nierenkolik rechts, Hämaturie. V. a. Ureterstein. Sonographie und Urinuntersuchung veranlasst.",
     "scoringRubric": {
       "historyTaking": "Schmerzcharakter, Ausstrahlung, Urin",
       "redFlags": "Fieber, Anurie, Sepsis",
@@ -2537,7 +2537,7 @@
       "Fragen Sie nach dem Beginn und der Dauer",
       "Fragen Sie nach der Vorgeschichte",
       "Fragen Sie nach Operationen an der Prostata",
-      "Erklaren Sie die notige Katheterisierung",
+      "Erklären Sie die nötige Katheterisierung",
       "Besprechen Sie die weitere Behandlung"
     ],
     "mustAsk": [
@@ -2553,7 +2553,7 @@
       "Sie konnen Ihre Blase nicht entleeren und mussen einen Katheter bekommen.",
       "Danach besprechen wir, ob eine OP notig ist."
     ],
-    "doctorToDoctorSummary": "65-jahriger Patient mit akutem Harnverhalt bei BPH. Katheterisierung erforderlich. Geplante urologische Vorstellung.",
+    "doctorToDoctorSummary": "65-jähriger Patient mit akutem Harnverhalt bei BPH. Katheterisierung erforderlich. Geplante urologische Vorstellung.",
     "scoringRubric": {
       "historyTaking": "Vorgeschichte, Medikation, Symptome",
       "redFlags": "Urosepsis, Nierenversagen",
@@ -2577,8 +2577,8 @@
       "age": "56",
       "gender": "weiblich",
       "chiefComplaint": "Magenschmerzen nach Einnahme von Schmerzmitteln",
-      "history": "Seit 3 Tagen Oberbauchschmerzen, Saures Aufstossen, Ubelkeit nach dem Essen. Nimmt seit 2 Wochen taglich Ibuprofen 800 mg wegen Knieschmerzen.",
-      "medications": "Ibuprofen 800 mg taglich",
+      "history": "Seit 3 Tagen Oberbauchschmerzen, Saures Aufstoßen, Übelkeit nach dem Essen. Nimmt seit 2 Wochen täglich Ibuprofen 800 mg wegen Knieschmerzen.",
+      "medications": "Ibuprofen 800 mg täglich",
       "allergies": "Keine",
       "pastHistory": "Gonarthrose",
       "familyHistory": "Keine",
@@ -2587,7 +2587,7 @@
     "doctorTasks": [
       "Fragen Sie nach dem zeitlichen Zusammenhang",
       "Fragen Sie nach Alarmzeichen",
-      "Erklaren Sie die NSAR-Gastropathie",
+      "Erklären Sie die NSAR-Gastropathie",
       "Besprechen Sie Alternativen"
     ],
     "mustAsk": [
@@ -2602,7 +2602,7 @@
       "Ibuprofen kann die Magenschleimhaut schadigen.",
       "Wir pausieren das Ibuprofen und geben einen Magenschutz."
     ],
-    "doctorToDoctorSummary": "56-jahrige Patientin mit NSAR-Gastropathie. PPI-Therapie, NSAR-Pause.",
+    "doctorToDoctorSummary": "56-jährige Patientin mit NSAR-Gastropathie. PPI-Therapie, NSAR-Pause.",
     "scoringRubric": {
       "historyTaking": "NSAR, Symptome,Ulkuszeichen",
       "redFlags": "GI-Blutung",
@@ -2625,8 +2625,8 @@
     "patientRole": {
       "age": "62",
       "gender": "mannlich",
-      "chiefComplaint": "Durchfall und Ubelkeit nach Metformin",
-      "history": "Seit Beginn Metformin vor 2 Wochen Durchfall und Ubelkeit. Diabetes mellitus Typ 2 neu diagnostiziert.",
+      "chiefComplaint": "Durchfall und Übelkeit nach Metformin",
+      "history": "Seit Beginn Metformin vor 2 Wochen Durchfall und Übelkeit. Diabetes mellitus Typ 2 neu diagnostiziert.",
       "medications": "Metformin 500 mg 2x/Tag",
       "allergies": "Keine",
       "pastHistory": "DM Typ 2 (neu)",
@@ -2648,7 +2648,7 @@
       "Haufige Nebenwirkung zu Therapiebeginn"
     ],
     "usefulPhrases": [
-      "Metformin verursacht haufig Magen-Darm-Probleme.",
+      "Metformin verursacht häufig Magen-Darm-Probleme.",
       "Wir konnen auf eine retardierte Form umsteigen."
     ],
     "doctorToDoctorSummary": "Patient mit Metformin-Intoleranz. Wechsel auf retardiertes Metformin oder Alternative.",
@@ -2674,8 +2674,8 @@
     "patientRole": {
       "age": "26",
       "gender": "weiblich",
-      "chiefComplaint": "Nachthusten und Belastungsdyspnö bei Asthma",
-      "history": "Bekanntes Asthma, aber in letzter Zeit nachts Husten und beim Sport Atemnot. Benotigt den Notfallspray fast taglich. Keine regelmasige Basistherapie.",
+      "chiefComplaint": "Nachthusten und Belastungsdyspnoe bei Asthma",
+      "history": "Bekanntes Asthma, aber in letzter Zeit nachts Husten und beim Sport Atemnot. Benotigt den Notfallspray fast täglich. Keine regelmasige Basistherapie.",
       "medications": "Nur Salbutamol bei Bedarf",
       "allergies": "Hausstaubmilben, Pollen",
       "pastHistory": "Asthma bronchiale, saisonale Allergie",
@@ -2684,12 +2684,12 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Symptomkontrolle",
-      "Prufen Sie die Therapieadhärenz",
-      "Erklaren Sie den Unterschied zwischen Bedarfs- und Daürtherapie",
+      "Prüfen Sie die Therapieadhärenz",
+      "Erklären Sie den Unterschied zwischen Bedarfs- und Daürtherapie",
       "Passen Sie die Therapie an"
     ],
     "mustAsk": [
-      "Wie oft benotigen Sie den Notfallspray?",
+      "Wie oft benötigen Sie den Notfallspray?",
       "Wachen Sie nachts auf?",
       "Haben Sie eine regelmasige Therapie?"
     ],
@@ -2698,10 +2698,10 @@
       "Fehlende Basistherapie"
     ],
     "usefulPhrases": [
-      "Bei taglichem Bedarf an Notfallspray ist die Kontrolle nicht ausreichend.",
-      "Sie brauchen eine zusatzliche tagliche Therapie."
+      "Bei täglichem Bedarf an Notfallspray ist die Kontrolle nicht ausreichend.",
+      "Sie brauchen eine zusatzliche tägliche Therapie."
     ],
-    "doctorToDoctorSummary": "26-jahrige Patientin mit unzureichender Asthmakontrolle, fehlender Basistherapie. Eskalation auf ICS/LABA.",
+    "doctorToDoctorSummary": "26-jährige Patientin mit unzureichender Asthmakontrolle, fehlender Basistherapie. Eskalation auf ICS/LABA.",
     "scoringRubric": {
       "historyTaking": "Kontrolle, Medikation, Ausloser",
       "redFlags": "Schwere Exazerbation, Notarzteinsatz",
@@ -2752,13 +2752,13 @@
       "Ihre Symptome passen zu einer Schilddrusenuberfunktion.",
       "Wir messen Ihre Schilddrusenwerte."
     ],
-    "doctorToDoctorSummary": "34-jahrige Patientin mit Palpitationen und Gewichtsverlust. V. a. Hyperthyreose. TSH, fT3, fT4, Sonographie.",
+    "doctorToDoctorSummary": "34-jährige Patientin mit Palpitationen und Gewichtsverlust. V. a. Hyperthyreose. TSH, fT3, fT4, Sonographie.",
     "scoringRubric": {
       "historyTaking": "Palpitation, Gewichtsverlust, Schilddruse",
       "redFlags": "Vorhofflimmern, Thyreotoxikose",
       "patientLanguage": "Schilddrusenfunktion erklaren",
       "structure": "Symptome -> Schilddruse -> Diagnostik",
-      "medicalLogic": "Hyperthyreose-Abklarung",
+      "medicalLogic": "Hyperthyreose-Abklärung",
       "germanAccuracy": "Hyperthyreose, Basedow, TSH"
     },
     "tags": [
@@ -2786,7 +2786,7 @@
     "doctorTasks": [
       "Fragen Sie nach dem Ausloser",
       "Fragen Sie nach Gallensteinen",
-      "Erklaren Sie die Pankreatitis",
+      "Erklären Sie die Pankreatitis",
       "Besprechen Sie die stationare Aufnahme"
     ],
     "mustAsk": [
@@ -2800,7 +2800,7 @@
       "Die Schmerzen passen zu einer Entzundung der Bauchspeicheldruse.",
       "Sie mussen stationar aufgenommen werden."
     ],
-    "doctorToDoctorSummary": "38-jahrige Patientin mit biliär Pankreatitis. Lipase erhoht. Stationare Therapie.",
+    "doctorToDoctorSummary": "38-jährige Patientin mit biliär Pankreatitis. Lipase erhoht. Stationäre Therapie.",
     "scoringRubric": {
       "historyTaking": "Ausloser, Gallensteine, Alkohol",
       "redFlags": "Hamorrhagische Verlauf",
@@ -2833,9 +2833,9 @@
     },
     "doctorTasks": [
       "Fragen Sie nach der Schwellung und den Schmerzen",
-      "Prufen Sie die Thromboseprophylaxe",
-      "Erklaren Sie den Verdacht auf Thrombose",
-      "Besprechen Sie die notige Diagnostik"
+      "Prüfen Sie die Thromboseprophylaxe",
+      "Erklären Sie den Verdacht auf Thrombose",
+      "Besprechen Sie die nötige Diagnostik"
     ],
     "mustAsk": [
       "Haben Sie das Heparin bekommen?",
@@ -2849,7 +2849,7 @@
       "Nach einer Hüft-OP kann es zu einem Blutgerinnsel im Bein kommen.",
       "Wir machen eine Ultraschalluntersuchung."
     ],
-    "doctorToDoctorSummary": "70-jahrige Patientin postoperativ mit V. a. TVT. Kompressionssonographie. Antikoagulation eingeleitet.",
+    "doctorToDoctorSummary": "70-jährige Patientin postoperativ mit V. a. TVT. Kompressionssonographie. Antikoagulation eingeleitet.",
     "scoringRubric": {
       "historyTaking": "Schwellung, Schmerz, Thromboserisiko",
       "redFlags": "Lungenembolie, Phlegmasie",
@@ -2867,7 +2867,7 @@
   },
   {
     "id": "fsp_c_057",
-    "title": "Gaströnteritis bei Kind",
+    "title": "Gastroenteritis bei Kind",
     "setting": "clinic",
     "patientRole": {
       "age": "3",
@@ -2884,7 +2884,7 @@
       "Fragen Sie nach der Symptomatik",
       "Bewerten Sie den Hydratationszustand",
       "Beraten Sie die Eltern",
-      "Erklaren Sie die orale Rehydrierung",
+      "Erklären Sie die orale Rehydrierung",
       "Nennen Sie Wiedervorstellungskriterien"
     ],
     "mustAsk": [
@@ -2893,25 +2893,25 @@
       "Hat das Kind noch nasse Windeln?"
     ],
     "redFlags": [
-      "Kind mit Exsikkose-Risiko bei Gaströnteritis"
+      "Kind mit Exsikkose-Risiko bei Gastroenteritis"
     ],
     "usefulPhrases": [
-      "Das Wichtigste ist, dass Ihr Kind genug Flussigkeit bekommt.",
+      "Das Wichtigste ist, dass Ihr Kind genug Flüssigkeit bekommt.",
       "Wenn es weniger als die Halfte der normalen Menge trinkt, mussen Sie wiederkommen."
     ],
-    "doctorToDoctorSummary": "3-jahriges Kind mit akuter Gaströnteritis, leichter Exsikkose. Orale Rehydrierung. Elternberatung.",
+    "doctorToDoctorSummary": "3-jähriges Kind mit akuter Gastroenteritis, leichter Exsikkose. Orale Rehydrierung. Elternberatung.",
     "scoringRubric": {
-      "historyTaking": "Symptome, Flussigkeit, Urin",
+      "historyTaking": "Symptome, Flüssigkeit, Urin",
       "redFlags": "Schwere Exsikkose, Krampfanfall",
       "patientLanguage": "Rehydrierung kindgerecht erklaren",
       "structure": "Symptome -> Rehydrierung -> Wiedervorstellung",
-      "medicalLogic": "Kindliche Gaströnteritis, WHO-Plan",
-      "germanAccuracy": "Gaströnteritis, Exsikkose, Rehydrierung"
+      "medicalLogic": "Kindliche Gastroenteritis, WHO-Plan",
+      "germanAccuracy": "Gastroenteritis, Exsikkose, Rehydrierung"
     },
     "tags": [
       "durchfall",
       "kind",
-      "gaströnteritis",
+      "gastroenteritis",
       "eltern"
     ]
   },
@@ -2932,7 +2932,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Schnarchen und Atemaussetzern",
-      "Fragen Sie nach der taglichen Schlafrigkeit",
+      "Fragen Sie nach der täglichen Schlafrigkeit",
       "Erklären Sie das Schlafapnö-Syndrom",
       "Besprechen Sie die Diagnostik und Therapie",
       "Weisen Sie auf das Fahrverbot hin (!!)"
@@ -2950,7 +2950,7 @@
       "Ihre Symptome deuten auf eine Schlafapnö hin.",
       "Wegen Ihres Berufes muss das dringend abgeklart werden."
     ],
-    "doctorToDoctorSummary": "52-jahriger Patient mit obstruktiver Schlafapnö, hoher Tagesschlafrigkeit, Berufskraftfahrer. Polysomnographie eingeleitet. CPAP-Therapie und Fahrtauglichkeit prufen.",
+    "doctorToDoctorSummary": "52-jähriger Patient mit obstruktiver Schlafapnö, hoher Tagesschlafrigkeit, Berufskraftfahrer. Polysomnographie eingeleitet. CPAP-Therapie und Fahrtauglichkeit prüfen.",
     "scoringRubric": {
       "historyTaking": "Schnarchen, Atemaussetzer, Tagesschlafrigkeit",
       "redFlags": "Verkehrstauglichkeit, Herzrhythmusstorungen",
@@ -2983,26 +2983,26 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Atemnot, Trinkverhalten",
-      "Fragen Sie nach fruheren Episoden",
+      "Fragen Sie nach früheren Episoden",
       "Beruhigen Sie die Eltern",
-      "Erklaren Sie die Therapie"
+      "Erklären Sie die Therapie"
     ],
     "mustAsk": [
       "Hatten Sie das Gefuhl, dass Ihr Kind schlecht Luft bekommt?",
       "Trinkt Ihr Kind normal?"
     ],
     "redFlags": [
-      "Obstruktive Bronchitis bei Kleinkind haufig",
+      "Obstruktive Bronchitis bei Kleinkind häufig",
       "Asthma bronchiale als Differential"
     ],
     "usefulPhrases": [
       "Bei Kindern verengen sich die Atemwege bei Infekten leicht.",
       "Inhalation kann helfen, die Atemwege zu offnen."
     ],
-    "doctorToDoctorSummary": "5-jahriges Kind mit obstruktiver Bronchitis bei Infekt. Keine schwere Atemnot. Inhalative Therapie.",
+    "doctorToDoctorSummary": "5-jähriges Kind mit obstruktiver Bronchitis bei Infekt. Keine schwere Atemnot. Inhalative Therapie.",
     "scoringRubric": {
       "historyTaking": "Atmung, Trinken, Fieber",
-      "redFlags": "Schwere Dyspnö, Zyanose",
+      "redFlags": "Schwere Dyspnoe, Zyanose",
       "patientLanguage": "Obstruktion kindgerecht erklaren",
       "structure": "Infekt -> Atemwege -> Therapie",
       "medicalLogic": "Obstruktive Bronchitis vs Asthma",
@@ -3022,8 +3022,8 @@
     "patientRole": {
       "age": "72",
       "gender": "mannlich",
-      "chiefComplaint": "Schwache, Ubelkeit, Verwirrtheit",
-      "history": "Seit Tagen zunehmend schwach, Ubelkeit, verstopft, verwirrt. Bekanntes Prostatakarzinom mit Knochenmetastasen. Letzte Chemo vor 3 Monaten.",
+      "chiefComplaint": "Schwache, Übelkeit, Verwirrtheit",
+      "history": "Seit Tagen zunehmend schwach, Übelkeit, verstopft, verwirrt. Bekanntes Prostatakarzinom mit Knochenmetastasen. Letzte Chemo vor 3 Monaten.",
       "medications": "Schmerzpflaster, keine Kortikoide",
       "allergies": "Keine",
       "pastHistory": "Prostatakarzinom mit Knochenmetastasen",
@@ -3049,7 +3049,7 @@
       "Bei Ihrer Erkrankung kann der Kalziumspiegel gefahrlich ansteigen.",
       "Wir mussen sofort Blut abnehmen und behandeln."
     ],
-    "doctorToDoctorSummary": "Patient mit Tumorhyperkalzamie. Kalzium erhoht. Therapie: Flussigkeit, Bisphosphonate, Kalzitonin.",
+    "doctorToDoctorSummary": "Patient mit Tumorhyperkalzamie. Kalzium erhoht. Therapie: Flüssigkeit, Bisphosphonate, Kalzitonin.",
     "scoringRubric": {
       "historyTaking": "Tumoranamnese, Symptome",
       "redFlags": "Bewusstseinstorung, Herzrythmusstorungen",
@@ -3083,7 +3083,7 @@
     "doctorTasks": [
       "Fragen Sie nach Fieber und Juckreiz",
       "Fragen Sie nach Impfstatus",
-      "Erklaren Sie die Diagnose",
+      "Erklären Sie die Diagnose",
       "Besprechen Sie Therapie und Isolierung"
     ],
     "mustAsk": [
@@ -3122,7 +3122,7 @@
       "age": "62",
       "gender": "weiblich",
       "chiefComplaint": "Drehschwindel beim Aufstehen",
-      "history": "Seit Tagen Drehschwindel beim Aufstehen aus dem Bett und beim Blicken nach oben. Dauert jeweils 20-30 Sekunden. Keine Ubelkeit.",
+      "history": "Seit Tagen Drehschwindel beim Aufstehen aus dem Bett und beim Blicken nach oben. Dauert jeweils 20-30 Sekunden. Keine Übelkeit.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3132,13 +3132,13 @@
     "doctorTasks": [
       "Fragen Sie nach der genauen Schwindelqualitat",
       "Differenzieren Sie zu zentralem Schwindel",
-      "Prufen Sie den Lagerungstest",
-      "Erklaren Sie BPLS",
-      "Machen Sie das Epley-Manover"
+      "Prüfen Sie den Lagerungstest",
+      "Erklären Sie BPLS",
+      "Machen Sie das Epley-Manöver"
     ],
     "mustAsk": [
       "Dreht sich alles?",
-      "Hatten Sie Kopfschmerzen oder Sehstorungen?",
+      "Hatten Sie Kopfschmerzen oder Sehstörungen?",
       "Hatten Sie Horstorung oder Tinnitus?"
     ],
     "redFlags": [
@@ -3147,14 +3147,14 @@
     ],
     "usefulPhrases": [
       "Das ist gutartiger Lagerungsschwindel.",
-      "Es gibt ein einfaches Manover, das die Kristalle im Ohr verschiebt."
+      "Es gibt ein einfaches Manöver, das die Kristalle im Ohr verschiebt."
     ],
-    "doctorToDoctorSummary": "62-jahrige Patientin mit BPLS posteriorer Kanal rechts. Epley-Manover durchgefuhrt.",
+    "doctorToDoctorSummary": "62-jährige Patientin mit BPLS posteriorer Kanal rechts. Epley-Manöver durchgeführt.",
     "scoringRubric": {
       "historyTaking": "Schwindelqualitat, Ausloser, Dauer",
       "redFlags": "Zentraler Schwindel",
       "patientLanguage": "BPLS erklaren",
-      "structure": "Schwindel -> Differential -> Manover",
+      "structure": "Schwindel -> Differential -> Manöver",
       "medicalLogic": "BPLS-Diagnostik und Therapie",
       "germanAccuracy": "BPLS, Epley, Schwindel"
     },
@@ -3172,8 +3172,8 @@
     "patientRole": {
       "age": "44",
       "gender": "mannlich",
-      "chiefComplaint": "Saures Aufstossen und Sodbrennen nach dem Essen",
-      "history": "Seit Monaten saures Aufstossen, Sodbrennen besonders nach fettigen Mahlzeiten und im Liegen. Hat 20 kg Übergewicht. Nimmt gelegentlich Antazida.",
+      "chiefComplaint": "Saures Aufstoßen und Sodbrennen nach dem Essen",
+      "history": "Seit Monaten saures Aufstoßen, Sodbrennen besonders nach fettigen Mahlzeiten und im Liegen. Hat 20 kg Übergewicht. Nimmt gelegentlich Antazida.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3183,7 +3183,7 @@
     "doctorTasks": [
       "Fragen Sie nach Refluxsymptomen",
       "Fragen Sie nach Lebensstil",
-      "Erklaren Sie den Zusammenhang mit Übergewicht",
+      "Erklären Sie den Zusammenhang mit Übergewicht",
       "Besprechen Sie Lebensstilanderung und PPI"
     ],
     "mustAsk": [
@@ -3270,7 +3270,7 @@
       "age": "48",
       "gender": "weiblich",
       "chiefComplaint": "Schwindelanfalle mit Ohrensausen",
-      "history": "Seit 2 Jahren immer wieder Schwindelanfalle (Drehschwindel) für 20-60 Minuten, begleitet von Ohrensausen und Horverlust im rechten Ohr. Ubelkeit, Erbrechen.",
+      "history": "Seit 2 Jahren immer wieder Schwindelanfalle (Drehschwindel) für 20-60 Minuten, begleitet von Ohrensausen und Horverlust im rechten Ohr. Übelkeit, Erbrechen.",
       "medications": "Keine",
       "allergies": "Keine",
       "pastHistory": "Keine",
@@ -3280,7 +3280,7 @@
     "doctorTasks": [
       "Fragen Sie nach der Schwindelqualitat und Dauer",
       "Fragen Sie nach Horstorung und Tinnitus",
-      "Erklaren Sie Morbus Meniere",
+      "Erklären Sie Morbus Meniere",
       "Besprechen Sie die Therapie"
     ],
     "mustAsk": [
@@ -3296,7 +3296,7 @@
     ],
     "doctorToDoctorSummary": "Patientin mit Meniere-Symptomatik. HNO-Vorstellung veranlasst. Salzmreduktion und Betahistin erwogen.",
     "scoringRubric": {
-      "historyTaking": "Trias, Dauer, Freqünz",
+      "historyTaking": "Trias, Dauer, Frequenz",
       "redFlags": "Neurologische Herdsymptome",
       "patientLanguage": "Meniere erklaren",
       "structure": "Schwindel -> Ohr -> HNO",
@@ -3327,7 +3327,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach der Symptomatik",
-      "Fragen Sie nach der fruheren TVT",
+      "Fragen Sie nach der früheren TVT",
       "Untersuchen Sie das Bein",
       "Besprechen Sie Kompressionsstrupfe"
     ],
@@ -3340,7 +3340,7 @@
       "Risiko für Ulcus cruris"
     ],
     "usefulPhrases": [
-      "Nach einer Thrombose bleibt das Bein haufig zuruck.",
+      "Nach einer Thrombose bleibt das Bein häufig zuruck.",
       "Kompressionsstrupfe helfen."
     ],
     "doctorToDoctorSummary": "Patient mit postthrombotischem Syndrom. Kompressionstherapie.",
@@ -3377,7 +3377,7 @@
     "doctorTasks": [
       "Fragen Sie nach der genauen Nahrungsmittelvertraglichkeit",
       "Fragen Sie nach Stuhlcharakter",
-      "Erklaren Sie den Malabsorptionsverdacht",
+      "Erklären Sie den Malabsorptionsverdacht",
       "Besprechen Sie die Diagnostik"
     ],
     "mustAsk": [
@@ -3768,7 +3768,7 @@
       "Schmerzen im Bein?"
     ],
     "redFlags": [
-      "Wells-Score erhöht: Flug + Dyspnö + Hämoptyse"
+      "Wells-Score erhöht: Flug + Dyspnoe + Hämoptyse"
     ],
     "usefulPhrases": [
       "Ein Gerinnsel aus dem Bein ist in die Lunge gewandert.",
@@ -3776,7 +3776,7 @@
     ],
     "doctorToDoctorSummary": "Lungenembolie nach Flug. Antikoagulation.",
     "scoringRubric": {
-      "historyTaking": "Flug, Dyspnö, Bein",
+      "historyTaking": "Flug, Dyspnoe, Bein",
       "redFlags": "Rechtsherzbelastung",
       "patientLanguage": "LE erklären",
       "structure": "Flug -> Gerinnsel -> Lunge",
@@ -3786,7 +3786,7 @@
     "tags": [
       "lungenembolie",
       "flug",
-      "dyspnö",
+      "dyspnoe",
       "thrombose"
     ]
   },
@@ -4028,7 +4028,7 @@
   },
   {
     "id": "fsp_c_081",
-    "title": "Gaströnteritis in Schwangerschaft",
+    "title": "Gastroenteritis in Schwangerschaft",
     "setting": "clinic",
     "patientRole": {
       "age": "29",
@@ -4059,14 +4059,14 @@
       "Magen-Darm-Infekte in SS sind häufig.",
       "Viel trinken ist wichtig."
     ],
-    "doctorToDoctorSummary": "Gaströnteritis in SS. Orale Rehydrierung.",
+    "doctorToDoctorSummary": "Gastroenteritis in SS. Orale Rehydrierung.",
     "scoringRubric": {
       "historyTaking": "Symptome, Flüssigkeit",
       "redFlags": "Frühwehen",
       "patientLanguage": "Infekt in SS",
       "structure": "SSW -> Symptome -> Rehydrierung",
       "medicalLogic": "GI-Infekt Schwangerschaft",
-      "germanAccuracy": "Gaströnteritis, SS"
+      "germanAccuracy": "Gastroenteritis, SS"
     },
     "tags": [
       "schwangerschaft",
@@ -4302,7 +4302,7 @@
       "redFlags": "Schnelles Wachstum",
       "patientLanguage": "Knoten erklären",
       "structure": "Knoten -> Sono -> Punktion",
-      "medicalLogic": "Struma-Abklarung",
+      "medicalLogic": "Struma-Abklärung",
       "germanAccuracy": "Struma, Feinnadelpunktion"
     },
     "tags": [
@@ -4392,7 +4392,7 @@
       "Bei Männern ist ein HWI kompliziert.",
       "Sie brauchen Antibiotikum."
     ],
-    "doctorToDoctorSummary": "Komplizierter HWI bei BPH. Antibiose, ggf. Prostatitis-Abklarung.",
+    "doctorToDoctorSummary": "Komplizierter HWI bei BPH. Antibiose, ggf. Prostatitis-Abklärung.",
     "scoringRubric": {
       "historyTaking": "Symptome, Prostata",
       "redFlags": "Urosepsis",
@@ -4444,7 +4444,7 @@
       "redFlags": "Schnelles Wachstum",
       "patientLanguage": "Knoten erklären",
       "structure": "Knoten -> Sono -> Punktion",
-      "medicalLogic": "Struma-Abklarung",
+      "medicalLogic": "Struma-Abklärung",
       "germanAccuracy": "Struma, FNP"
     },
     "tags": [
@@ -4612,7 +4612,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach Symptomen",
-      "Prufen Sie Ödeme und Haut",
+      "Prüfen Sie Ödeme und Haut",
       "Erklären Sie die Niereninsuffizienz",
       "Besprechen Sie Diät und Therapie"
     ],
@@ -4858,7 +4858,7 @@
     },
     "doctorTasks": [
       "Fragen Sie nach dem Sturzmechanismus",
-      "Prufen Sie Durchblutung und Sensibilität",
+      "Prüfen Sie Durchblutung und Sensibilität",
       "Erklären Sie die häufigste Fraktur im Kindesalter",
       "Besprechen Sie die konservative Therapie"
     ],

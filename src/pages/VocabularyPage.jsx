@@ -1,17 +1,13 @@
 import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { getState, updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
+import {  updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, BookMarked, CheckCircle, XCircle, Brain, Search, Filter, X, Hash, RotateCcw } from 'lucide-react';
+import { Shuffle, CheckCircle, Brain, Search, Filter, X, Hash, RotateCcw } from 'lucide-react';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
-const POS_GROUPS = {
-  noun: 'noun', verb: 'verb', adjective: 'adjective', adj: 'adjective',
-  adverb: 'adverb', phrase: 'phrase', preposition: 'preposition',
-  'modal verb': 'other', conjunction: 'other', number: 'other', 'question word': 'other',
-};
+
 
 const POS_FILTERS = ['all', 'noun', 'verb', 'adjective', 'adverb', 'phrase', 'other'];
 const FILTERS_LS_KEY = 'deutsch_klinik_vocab_filters';
@@ -26,10 +22,10 @@ function loadSavedFilters() {
   } catch { return null; }
 }
 function saveFilters(filters) {
-  try { localStorage.setItem(FILTERS_LS_KEY, JSON.stringify(filters)); } catch {}
+  try { localStorage.setItem(FILTERS_LS_KEY, JSON.stringify(filters)); } catch { /* empty */ }
 }
 function clearSavedFilters() {
-  try { localStorage.removeItem(FILTERS_LS_KEY); } catch {}
+  try { localStorage.removeItem(FILTERS_LS_KEY); } catch { /* empty */ }
 }
 
 const MEDICAL_KEYWORDS = [
@@ -149,7 +145,7 @@ export default function VocabularyPage() {
 
   // Search & filter state
   const [search, setSearch] = useState('');
-  const [levelFilter, setLevelFilter] = useState('all');
+  const [levelFilter, setLevelFilter] = useState(levelId || 'all');
   const [posFilter, setPosFilter] = useState('all');
   const [lessonFilter, setLessonFilter] = useState('all');
   const [quickFilter, setQuickFilter] = useState(null);
@@ -159,7 +155,9 @@ export default function VocabularyPage() {
   // Load saved filters from localStorage on mount
   useEffect(() => {
     const saved = loadSavedFilters();
-    if (saved) {
+    if (levelId) {
+      setLevelFilter(levelId);
+    } else if (saved) {
       if (validateFilter('search', saved.search)) setSearch(saved.search);
       if (validateFilter('levelFilter', saved.levelFilter, [...LEVELS, 'all'])) setLevelFilter(saved.levelFilter);
       if (validateFilter('posFilter', saved.posFilter, POS_FILTERS)) setPosFilter(saved.posFilter);
@@ -168,7 +166,7 @@ export default function VocabularyPage() {
       if (validateFilter('masteryFilter', saved.masteryFilter, ['all', 'unseen', 'weak', 'mastered'])) setMasteryFilter(saved.masteryFilter);
     }
     setFiltersLoaded(true);
-  }, []);
+  }, [levelId]);
 
   // Reset state when levelId changes
   useEffect(() => {
@@ -178,7 +176,8 @@ export default function VocabularyPage() {
     setQuizScore(0);
     setQuizTotal(0);
     setMode(isDaily ? 'quiz' : 'browse');
-  }, [levelId]);
+    setLevelFilter(levelId || 'all');
+  }, [isDaily, levelId]);
 
   // Save filters to localStorage when they change (only after initial load)
   useEffect(() => {
@@ -293,15 +292,16 @@ export default function VocabularyPage() {
 
   const clearAllFilters = useCallback(() => {
     setSearch('');
-    setLevelFilter('all');
+    setLevelFilter(levelId || 'all');
     setPosFilter('all');
     setLessonFilter('all');
     setQuickFilter(null);
     setMasteryFilter('all');
     clearSavedFilters();
-  }, []);
+  }, [levelId]);
 
-  const hasActiveFilters = search || levelFilter !== 'all' || posFilter !== 'all' || lessonFilter !== 'all' || quickFilter || masteryFilter !== 'all';
+  const defaultLevelFilter = levelId || 'all';
+  const hasActiveFilters = search || levelFilter !== defaultLevelFilter || posFilter !== 'all' || lessonFilter !== 'all' || quickFilter || masteryFilter !== 'all';
 
   const activeFilterLabels = useMemo(() => {
     const labels = [];
@@ -450,10 +450,10 @@ export default function VocabularyPage() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
         <div>
           <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--accent)' }}>
-            {levelId} Vocabulary
+            {levelFilter === 'all' ? 'All Levels' : levelFilter} Vocabulary
           </h2>
           <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-            {words.length} words
+            {totalWords} words
           </span>
         </div>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -475,6 +475,7 @@ export default function VocabularyPage() {
           <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
           <input
             type="text"
+            aria-label="Search vocabulary"
             placeholder="Search by German, English, topic, or example..."
             value={search}
             onChange={e => { setSearch(e.target.value); setCurrentIndex(0); }}
@@ -482,6 +483,8 @@ export default function VocabularyPage() {
           />
           {search && (
             <button
+              type="button"
+              aria-label="Clear vocabulary search"
               onClick={() => setSearch('')}
               style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}
             >
@@ -497,6 +500,7 @@ export default function VocabularyPage() {
 
         {/* Level filter */}
         <select
+          aria-label="Filter vocabulary by level"
           value={levelFilter}
           onChange={e => { setLevelFilter(e.target.value); setCurrentIndex(0); }}
           style={s.select}
@@ -509,6 +513,7 @@ export default function VocabularyPage() {
 
         {/* Part of speech filter */}
         <select
+          aria-label="Filter vocabulary by part of speech"
           value={posFilter}
           onChange={e => { setPosFilter(e.target.value); setCurrentIndex(0); }}
           style={s.select}
@@ -520,6 +525,7 @@ export default function VocabularyPage() {
 
         {/* Mastery filter */}
         <select
+          aria-label="Filter vocabulary by mastery"
           value={masteryFilter}
           onChange={e => { setMasteryFilter(e.target.value); setCurrentIndex(0); }}
           style={s.select}
@@ -533,6 +539,7 @@ export default function VocabularyPage() {
         {/* Lesson filter (only when a specific level is selected) */}
         {levelFilter !== 'all' && lessons.length > 0 && (
           <select
+            aria-label="Filter vocabulary by lesson"
             value={validLessonFilter}
             onChange={e => { setLessonFilter(e.target.value); setCurrentIndex(0); }}
             style={s.select}
@@ -567,6 +574,8 @@ export default function VocabularyPage() {
         ].map(qf => (
           <button
             key={qf.key}
+            type="button"
+            aria-pressed={quickFilter === qf.key}
             onClick={() => { setQuickFilter(quickFilter === qf.key ? null : qf.key); setCurrentIndex(0); }}
             style={s.filterBtn(quickFilter === qf.key)}
           >
@@ -604,7 +613,7 @@ export default function VocabularyPage() {
         <>
           {/* Word list */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
-            {browseWords.slice(0, 100).map((word, idx) => {
+            {browseWords.slice(0, 100).map((word) => {
               const { display, article } = displayWord(word);
               const isNoun = wordPos(word) === 'noun';
               const mastery = getVocabMastery(`${word._level}_${word.id}`);

@@ -1,6 +1,6 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked, getCompletedGrammarLessons, getNextGrammarLesson } from '../utils/store';
+import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked, getCompletedGrammarLessons } from '../utils/store';
 import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, getWeeklyActiveCount, getBestWeeklyActivity, getMostRecentActivity, getActivityRoute, formatRelativeTime, getLocalDateKey } from '../utils/activityStreak';
 import levelsData from '../data/levels.json';
 import dashboardSummary from '../data/dashboardSummary.json';
@@ -25,13 +25,6 @@ const SKILL_AREAS = [
   { id: 'speaking',  name: 'Speaking',   icon: Mic,            linkSuffix: 'speaking',   label: 'Complete 1 speaking task',     getCount: (s, lvl) => (s.speakingRecordings?.[lvl]?.length || 0),         getTotal: (lvl) => levelsData.levels.find(l => l.id === lvl)?.minSpeakingTasks || 10 },
 ];
 
-// Maintenance tasks shown when all areas are complete
-const MAINTENANCE_TASKS = [
-  { id: 'maintain-vocab',     label: 'Review vocabulary flashcards',     link: (lvl) => `/level/${lvl}/vocabulary`,  icon: BookOpen },
-  { id: 'maintain-exam',      label: 'Take a practice exam',            link: (lvl) => `/level/${lvl}/exam`,       icon: ClipboardCheck },
-  { id: 'maintain-mistakes',  label: 'Revise mistakes notebook',        link: () => '/mistake-notebook',          icon: BookMarked },
-];
-
 // Count vocab entries per level (from summary)
 const VOCAB_COUNT = dashboardSummary.vocabCounts;
 
@@ -40,35 +33,11 @@ const GRAMMAR_COUNT = dashboardSummary.grammarCounts;
 
 const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
 
-const DAILY_LIMITS_DEFAULT = {
-  grammar: 10,
-  vocab: 20,
-  lesson: 1,
-  reading: 1,
-  listening: 1,
-  writing: 1,
-  speaking: 1,
-};
 
-const DAILY_LIMITS_MIN = {
-  grammar: 5,
-  vocab: 10,
-  lesson: 1,
-  reading: 1,
-  listening: 1,
-  writing: 1,
-  speaking: 1,
-};
 
-const DAILY_LIMITS_MAX = {
-  grammar: 25,
-  vocab: 50,
-  lesson: 3,
-  reading: 3,
-  listening: 3,
-  writing: 2,
-  speaking: 2,
-};
+
+
+
 
 /** Compute dynamic daily limits from the user's goal. Returns { grammar, vocab }. */
 function computeDailyLimitsFor(levelId, state) {
@@ -118,14 +87,7 @@ function computeDailyLimitsFor(levelId, state) {
 }
 
 export default function Dashboard() {
-  const [state, setState] = useState(getState());
-  const [todayTasks, setTodayTasks] = useState([]);
-
-  useEffect(() => {
-    const s = getState();
-    setState({ ...s });
-    generateDailyTasks(s);
-  }, []);
+  const [state] = useState(getState());
 
   const studyLevel = state.currentLevel;
 
@@ -134,34 +96,34 @@ export default function Dashboard() {
     const completed = getCompletedLessons(studyLevel);
     const levelLessons = allLessons.filter(l => l.level === studyLevel);
     return levelLessons.find(l => !completed.includes(l.id)) || null;
-  }, [state.completedLessons, studyLevel]);
+  }, [studyLevel]);
 
   // === All lessons done for current level? ===
   const allLessonsDone = useMemo(() => {
     const completed = getCompletedLessons(studyLevel);
     const levelLessons = allLessons.filter(l => l.level === studyLevel);
     return levelLessons.length > 0 && levelLessons.every(l => completed.includes(l.id));
-  }, [state.completedLessons, studyLevel]);
+  }, [studyLevel]);
 
   // === Exam unlocked? ===
   const examReady = useMemo(() => {
     const levelData = levelsData.levels.find(l => l.id === studyLevel);
     if (!levelData) return false;
     return isExamUnlocked(studyLevel, levelData);
-  }, [state.levels, studyLevel, state.writings, state.speakingRecordings]);
+  }, [studyLevel]);
 
   // === Due vocab count (from summary ids, no full vocab import needed) ===
   const dueVocabCount = useMemo(() => {
     const ids = dashboardSummary.vocabIds[studyLevel] || [];
     return getDueVocabWords(ids).length;
-  }, [studyLevel, state.vocabularyMastery]);
+  }, [studyLevel]);
 
   // === Lesson progress ===
   const lessonProgress = useMemo(() => {
     const completed = getCompletedLessons(studyLevel);
     const total = allLessons.filter(l => l.level === studyLevel).length;
     return { completed: completed.length, total };
-  }, [state.completedLessons, studyLevel]);
+  }, [studyLevel]);
 
   // === Weak areas ===
   const weakTopics = useMemo(() => {
@@ -171,7 +133,7 @@ export default function Dashboard() {
     } catch {
       return [];
     }
-  }, [state.topicWeakness]);
+  }, []);
 
   // === Mistake count ===
   const mistakesCount = Object.keys(state.mistakeNotebook || {}).length;
@@ -202,7 +164,7 @@ export default function Dashboard() {
             recentCount++;
           }
         }
-      } catch {}
+      } catch { /* empty */ }
     }
 
     // Most common level
@@ -234,103 +196,6 @@ export default function Dashboard() {
 
     return { name: worst.name, icon: worst.icon, linkSuffix: worst.linkSuffix, id: worst.id };
   }, [state]);
-
-  const checkTodayActivity = (items) => {
-    if (!items || !items.length) return false;
-    const today = new Date().toISOString().split('T')[0];
-    return items.some(item => {
-      if (typeof item === 'string') return item.startsWith(today);
-      const dateValue = item.date || item.completedAt || item.timestamp || item.createdAt;
-      return dateValue && String(dateValue).startsWith(today);
-    });
-  };
-
-  const generateDailyTasks = (s) => {
-    const level = s.currentLevel;
-    const prog = s.levels[level] || {};
-    const today = new Date().toISOString().split('T')[0];
-
-    // Rank areas by completion ratio (lower = weaker = higher priority)
-    const ranked = SKILL_AREAS.map(area => {
-      const count = area.getCount(s, level);
-      const total = area.getTotal(level);
-      const ratio = total > 0 ? count / total : 0;
-
-      // Check if done today
-      let doneToday = false;
-      if (area.id === 'writing') {
-        doneToday = (s.writings || []).filter(w => w.level === level && w.date?.startsWith(today)).length > 0;
-      } else if (area.id === 'speaking') {
-        doneToday = (s.speakingRecordings?.[level] || []).filter(r => r.date?.startsWith(today)).length > 0;
-      } else if (area.id === 'lesson') {
-        const completedLessons = getCompletedLessons(level);
-        const levelLessons = allLessons.filter(l => l.level === level);
-        doneToday = levelLessons.some(l => completedLessons.includes(l.id));
-        // Only consider it done today if there are no remaining lessons
-        doneToday = levelLessons.length > 0 && levelLessons.every(l => completedLessons.includes(l.id));
-      } else {
-        doneToday = checkTodayActivity(prog[area.id]);
-      }
-
-      return { ...area, count, total, ratio, doneToday };
-    }).sort((a, b) => a.ratio - b.ratio);
-
-    const tasks = [];
-
-    // Check if all areas are complete
-    const allComplete = ranked.every(a => a.ratio >= 1);
-
-    if (allComplete) {
-      // Show maintenance tasks
-      MAINTENANCE_TASKS.forEach(mt => {
-        tasks.push({
-          id: mt.id,
-          label: mt.label,
-          done: false,
-          link: mt.link(level),
-        });
-      });
-    } else {
-      // Pick top 3 weakest that aren't done today (or just top 3 if all done today)
-      let picked = ranked.filter(a => !a.doneToday).slice(0, 3);
-
-      // If fewer than 3 undone, top up with the weakest ones even if done today
-      if (picked.length < 3) {
-        const doneToday = ranked.filter(a => a.doneToday);
-        picked = [...picked, ...doneToday.slice(0, 3 - picked.length)];
-      }
-
-      // Convert to task format
-      picked.forEach((area, i) => {
-        let link;
-        if (area.id === 'lesson') {
-          const completedLessons = getCompletedLessons(level);
-          const levelLessons = allLessons.filter(l => l.level === level);
-          const next = levelLessons.find(l => !completedLessons.includes(l.id));
-          if (next) {
-            link = `/level/${level}/lessons/${next.id}`;
-          } else if (levelLessons.length) {
-            link = `/level/${level}/exam`;
-          } else {
-            link = `/level/${level}/lessons`;
-          }
-        } else if (area.id === 'grammar' || area.id === 'vocab' || area.id === 'listening' || area.id === 'reading' || area.id === 'writing' || area.id === 'speaking') {
-          link = `/level/${level}/daily`;
-        } else {
-          link = `/level/${level}/${area.linkSuffix}`;
-        }
-
-        tasks.push({
-          id: area.id,
-          label: area.label,
-          done: area.doneToday,
-          link,
-        });
-      });
-    }
-
-    setTodayTasks(tasks);
-  };
 
   const readiness = getReadinessScores();
   const totalLessonsCompleted = ['A1','A2','B1','B2','C1'].reduce((acc, lvl) => acc + getCompletedLessons(lvl).length, 0);
@@ -372,9 +237,9 @@ export default function Dashboard() {
       if (goal && goal.targetLevel && goal.targetLevel !== 'Medical FSP') {
         return goal.targetLevel;
       }
-    } catch {}
+    } catch { /* empty */ }
     return studyLevel;
-  }, [state, studyLevel]);
+  }, [studyLevel]);
 
   // === Current Level Overview data ===
   const displayLevel = useMemo(() => {
@@ -383,14 +248,15 @@ export default function Dashboard() {
       if (goal && goal.targetLevel && goal.targetLevel !== 'Medical FSP') {
         return goal.targetLevel;
       }
-    } catch {}
+    } catch { /* empty */ }
     return state.currentLevel || 'A1';
-  }, [state, state.currentLevel]);
+  }, [state]);
 
   const overallPct = useMemo(() => {
     const lessonsCompleted = getCompletedLessons(displayLevel).length;
     const totalLessons = allLessons.filter(l => l.level === displayLevel).length;
     const prog = state.levels[displayLevel] || {};
+    const levelData = levelsData.levels.find(l => l.id === displayLevel);
     const grammarCount = (prog.grammar?.length || 0);
     const vocabCount = (prog.vocab?.length || 0);
     const readingCount = (prog.reading?.length || 0);
@@ -400,8 +266,19 @@ export default function Dashboard() {
 
     const gcLevel = grammarCurriculum[displayLevel] || [];
     const gcDone = getCompletedGrammarLessons(displayLevel).length;
-    const done = lessonsCompleted + gcDone + grammarCount + vocabCount + readingCount + listeningCount + writingCount + speakingCount;
-    const max = Math.max(totalLessons + gcLevel.length + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingCount + listeningCount + writingCount + speakingCount, 1);
+    const readingTarget = levelData?.minReadingTests || 0;
+    const listeningTarget = levelData?.minListeningTests || 0;
+    const writingTarget = levelData?.minWritingTasks || 0;
+    const speakingTarget = levelData?.minSpeakingTasks || 0;
+    const done = Math.min(lessonsCompleted, totalLessons)
+      + Math.min(gcDone, gcLevel.length)
+      + Math.min(grammarCount, GRAMMAR_COUNT[displayLevel] || 200)
+      + Math.min(vocabCount, VOCAB_COUNT[displayLevel] || 500)
+      + Math.min(readingCount, readingTarget)
+      + Math.min(listeningCount, listeningTarget)
+      + Math.min(writingCount, writingTarget)
+      + Math.min(speakingCount, speakingTarget);
+    const max = Math.max(totalLessons + gcLevel.length + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingTarget + listeningTarget + writingTarget + speakingTarget, 1);
     return Math.min(Math.round((done / max) * 100), 100);
   }, [state, displayLevel]);
 
@@ -637,7 +514,7 @@ export default function Dashboard() {
           data[key] = val;
           foundAny = true;
         }
-      } catch {}
+      } catch { /* empty */ }
     }
     if (!foundAny) {
       setAllExportMessage({ text: 'No data found to export.', isError: true });
@@ -721,7 +598,7 @@ export default function Dashboard() {
         try {
           localStorage.setItem(key, fullImportData[key]);
           writtenCount++;
-        } catch {}
+        } catch { /* empty */ }
       }
     }
     if (writtenCount > 0) {
@@ -748,7 +625,7 @@ export default function Dashboard() {
             const p = JSON.parse(raw);
             setCollapsed({ recentSessions: !!p.recentSessions, studyStreak: !!p.studyStreak, mistakeReview: !!p.mistakeReview, quickActions: !!p.quickActions, weakAreas: !!p.weakAreas });
           }
-        } catch {}
+        } catch { /* empty */ }
       }
     } else {
       setFullImportMessage({ text: 'No items were selected for restore.', isError: true });
@@ -775,7 +652,7 @@ export default function Dashboard() {
       try {
         const val = localStorage.getItem(key);
         if (val !== null) data[key] = val;
-      } catch {}
+      } catch { /* empty */ }
     }
     try {
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -808,7 +685,7 @@ export default function Dashboard() {
             try {
               localStorage.setItem(key, parsed[key]);
               importedCount++;
-            } catch {}
+            } catch { /* empty */ }
           }
         }
         if (importedCount > 0) {
@@ -841,7 +718,7 @@ export default function Dashboard() {
           localStorage.removeItem(key);
           clearedCount++;
         }
-      } catch {}
+      } catch { /* empty */ }
     }
     setSessionRefresh(n => n + 1);
     setCollapsed({ recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false });
@@ -867,14 +744,14 @@ export default function Dashboard() {
           };
         }
       }
-    } catch {}
+    } catch { /* empty */ }
     return { recentSessions: false, studyStreak: false, mistakeReview: false, quickActions: false, weakAreas: false, accountSync: false };
   });
 
   const toggleCollapsed = (key) => {
     setCollapsed(prev => {
       const next = { ...prev, [key]: !prev[key] };
-      try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(next)); } catch {}
+      try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(next)); } catch { /* empty */ }
       return next;
     });
   };
@@ -882,17 +759,17 @@ export default function Dashboard() {
   const expandAll = () => {
     const all = getDefaultCollapsed();
     setCollapsed(all);
-    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch {}
+    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch { /* empty */ }
   };
 
   const collapseAll = () => {
     const all = { recentSessions: true, studyStreak: true, mistakeReview: true, quickActions: true, weakAreas: true };
     setCollapsed(all);
-    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch {}
+    try { localStorage.setItem('deutsch_klinik_dashboard_collapsed', JSON.stringify(all)); } catch { /* empty */ }
   };
 
   const resetLayout = () => {
-    try { localStorage.removeItem('deutsch_klinik_dashboard_collapsed'); } catch {}
+    try { localStorage.removeItem('deutsch_klinik_dashboard_collapsed'); } catch { /* empty */ }
     setCollapsed(getDefaultCollapsed());
   };
 
@@ -900,6 +777,7 @@ export default function Dashboard() {
   const [sessionRefresh, setSessionRefresh] = useState(0);
 
   const recentSessions = useMemo(() => {
+    sessionRefresh;
     try {
       const raw = localStorage.getItem('deutsch_klinik_session_starts');
       if (!raw) return [];
@@ -931,7 +809,7 @@ export default function Dashboard() {
       if (records.length > 50) records = records.slice(-50);
       localStorage.setItem('deutsch_klinik_session_starts', JSON.stringify(records));
       setSessionRefresh(n => n + 1);
-    } catch {}
+    } catch { /* empty */ }
   };
 
   return (
@@ -1016,42 +894,13 @@ export default function Dashboard() {
       </div>
 
       {/* Stats row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
           <StatCard icon={Zap} label="Streak" value={`${currentStreak} day${currentStreak === 1 ? '' : 's'}`} accent="#ff6b00" />
           <StatCard icon={BarChart3} label="Current Level" value={studyLevel} accent="var(--accent)" />
           <StatCard icon={Award} label="Total Completed" value={totalCompleted.toString()} accent="#3bff9e" />
           <StatCard icon={TrendingUp} label="Weekly Focus" value={todaySkill.name} accent="#ff3355" />
           <StatCard icon={Target} label="Exams Passed" value={Object.values(state.exams).filter(e => e.passed).length.toString()} accent="#8b5cf6" />
           <StatCard icon={Target} label="Med German" value={state.medicalUnlocked ? 'Unlocked' : 'Locked'} accent={state.medicalUnlocked ? '#3bff9e' : '#54587a'} />
-        </div>
-
-        {/* Daily Study Plan */}
-        <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-          <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
-            <Zap size={16} /> Today's Study Plan ({state.currentLevel})
-          </h2>
-          <div className="space-y-2">
-            {todayTasks.map(task => (
-              <div key={task.id} className="flex items-center gap-2 text-sm" style={{ color: task.done ? '#3bff9e' : 'var(--text-secondary)' }}>
-                <div className="w-4 h-4 rounded-full flex items-center justify-center text-xs flex-shrink-0" style={{
-                  backgroundColor: task.done ? 'rgba(59,255,158,0.15)' : 'var(--bg-hover)',
-                  border: `1px solid ${task.done ? '#3bff9e' : 'var(--text-muted)'}`,
-                  color: task.done ? '#3bff9e' : 'transparent',
-                }}>
-                  {task.done ? '✓' : ''}
-                </div>
-                {task.link ? (
-                  <Link to={task.link} className="hover:underline" style={{ color: task.done ? '#3bff9e' : 'var(--text-secondary)' }}>
-                    {task.label}
-                  </Link>
-                ) : (
-                  <span>{task.label}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
 

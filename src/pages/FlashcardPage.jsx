@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useMemo } from 'react';
-import { getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress } from '../utils/store';
+import { useState, useMemo, useEffect } from 'react';
+import { getState, updateState, setLevelProgress, getLevelProgress, recordVocabAnswer } from '../utils/store';
 import fullVocabData from '../data/germanVocabulary.json';
 import { RefreshCw, ThumbsUp, ThumbsDown, Search, X } from 'lucide-react';
 
@@ -66,6 +66,14 @@ function isMedicalWord(word) {
   return MEDICAL_KEYWORDS.some(kw => searchText.includes(kw.toLowerCase()));
 }
 
+function getLocalDateKey() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 // All words from all levels with level info attached
 const allWords = LEVELS.flatMap(level =>
   (fullVocabData[level] || []).map(w => ({ ...w, _level: level }))
@@ -76,12 +84,7 @@ function displayWord(card) {
   const w = card.word || '';
   const art = card.article || '';
   const hasArticleInWord = /^(der|die|das)\s+/i.test(w.trim());
-  let result = '';
-  if (art && !hasArticleInWord) {
-    result = `${art} ${w}`;
-  } else {
-    result = w;
-  }
+  let result = art && !hasArticleInWord ? `${art} ${w}` : w;
   if (card.partOfSpeech === 'noun' && card.plural) {
     result += ` (${card.plural})`;
   }
@@ -103,11 +106,9 @@ export default function FlashcardPage() {
 
   // When route levelId changes, sync the level filter
   // (but if user manually changed filter, respect that until next route change)
-  const [synced, setSynced] = useState(false);
-  if (levelId && !synced) {
-    setLevelFilter(levelId);
-    setSynced(true);
-  }
+  useEffect(() => {
+    if (levelId) setLevelFilter(levelId);
+  }, [levelId]);
 
   const s = {
     input: { width: '100%', padding: '0.6rem 0.8rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.9rem', outline: 'none' },
@@ -153,7 +154,7 @@ export default function FlashcardPage() {
 
   const words = useMemo(() => {
     const state = getState();
-    const today = new Date().toISOString().split('T')[0];
+    const today = getLocalDateKey();
 
     // Start from searched/filtered words
     let filtered = [...searchedWords];
@@ -161,19 +162,17 @@ export default function FlashcardPage() {
     // Apply SM-2 filter
     if (filter === 'due') {
       filtered = filtered.filter(w => {
-        const key = `${w._level}_${w.id}`;
-        const card = state.flashcards[key];
+        const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
         return !card || card.due <= today || !card.mastered;
       });
     } else if (filter === 'weak') {
       filtered = filtered.filter(w => {
-        const key = `${w._level}_${w.id}`;
-        const card = state.flashcards[key];
+        const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
         return card && (card.repetitions < 2 || card.ease < 2.3);
       });
     }
 
-    return filtered.sort(() => Math.random() - 0.5);
+    return filtered.sort((a, b) => `${a._level}_${a.id}`.localeCompare(`${b._level}_${b.id}`));
   }, [searchedWords, filter]);
 
   // Reset card on level/filter/search/medical change
@@ -227,38 +226,39 @@ export default function FlashcardPage() {
     } else {
       setDone(true);
       const state = getState();
-      if (!state.flashcards) state.flashcards = {};
-      const today = new Date().toISOString().split('T')[0];
+      const flashcards = { ...(state.flashcards || {}) };
+      const today = getLocalDateKey();
       const allReviews = [...reviews, { wordId: word.id, level: word._level, difficulty }];
       allReviews.forEach(r => {
         const key = `${r.level}_${r.wordId}`;
-        const card = state.flashcards[key] || { ease: 2.5, interval: 1, due: today, repetitions: 0 };
+        const card = { ...(flashcards[key] || { ease: 2.5, interval: 1, due: today, repetitions: 0 }) };
+        recordVocabAnswer(r.wordId, r.difficulty >= 3);
         if (r.difficulty >= 3) {
           card.repetitions += 1;
           card.interval = card.repetitions === 1 ? 1 : card.repetitions === 2 ? 6 : Math.round(card.interval * card.ease);
-          card.due = new Date(Date.now() + card.interval * 86400000).toISOString().split('T')[0];
+          const dueDate = new Date();
+          dueDate.setDate(dueDate.getDate() + card.interval);
+          card.due = `${dueDate.getFullYear()}-${String(dueDate.getMonth() + 1).padStart(2, '0')}-${String(dueDate.getDate()).padStart(2, '0')}`;
         } else {
           card.repetitions = 0;
           card.interval = 1;
           card.due = today;
           card.ease = Math.max(1.3, card.ease - 0.2);
         }
-        state.flashcards[key] = card;
+        card.mastered = card.repetitions >= 5 && card.ease >= 2.5;
+        flashcards[key] = card;
       });
       // Track each reviewed word as vocab progress
       const levelIds = [...new Set(allReviews.map(r => r.level))];
       levelIds.forEach(lvl => {
-        const existing = getLevelProgress(lvl, 'vocab');
+        const existing = getLevelProgress(lvl, 'vocab')
+          .flatMap(item => typeof item === 'string' ? [item] : (item?.wordIds || []));
+        const reviewedIds = allReviews.filter(r => r.level === lvl).map(r => r.wordId);
         setLevelProgress(lvl, 'vocab', [
-          ...existing,
-          {
-            date: new Date().toISOString(),
-            source: 'flashcard',
-            wordIds: allReviews.filter(r => r.level === lvl).map(r => r.wordId),
-          },
+          ...new Set([...existing, ...reviewedIds]),
         ]);
       });
-      updateState({ flashcards: state.flashcards });
+      updateState({ flashcards });
     }
   };
 
@@ -288,6 +288,8 @@ export default function FlashcardPage() {
           {FILTERS.map(f => (
             <button
               key={f.key}
+              type="button"
+              aria-pressed={filter === f.key}
               onClick={() => handleFilterChange(f.key)}
               className="px-3 py-1 text-xs rounded-full transition-all"
               style={{
@@ -307,6 +309,7 @@ export default function FlashcardPage() {
             <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
             <input
               type="text"
+              aria-label="Search flashcards"
               placeholder="Search cards..."
               value={search}
               onChange={e => handleSearchChange(e.target.value)}
@@ -314,6 +317,8 @@ export default function FlashcardPage() {
             />
             {search && (
               <button
+                type="button"
+                aria-label="Clear flashcard search"
                 onClick={() => handleSearchChange('')}
                 style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}
               >
@@ -324,13 +329,13 @@ export default function FlashcardPage() {
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
-          <select value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
+          <select aria-label="Filter flashcards by level" value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
             <option value="all">All Levels</option>
             {LEVELS.map(l => (
               <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
             ))}
           </select>
-          <button onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
+          <button type="button" aria-pressed={medicalOnly} onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
             {medicalOnly ? '✓ ' : ''}Medical
           </button>
         </div>
@@ -338,7 +343,8 @@ export default function FlashcardPage() {
         <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>0 cards available</p>
         <div className="text-center py-12">
           <p style={{ color: 'var(--text-muted)' }}>No flashcards match these filters.</p>
-          <button
+        <button
+            type="button"
             className="mt-4 px-4 py-2 rounded-lg text-sm"
             style={{ backgroundColor: 'var(--bg-card)', color: 'var(--accent)', border: '1px solid var(--border)', cursor: 'pointer' }}
             onClick={() => { handleSearchChange(''); setMedicalOnly(false); handleLevelChange(levelId || 'all'); }}
@@ -366,8 +372,10 @@ export default function FlashcardPage() {
       {/* Filter bar */}
       <div className="flex gap-2 justify-center mb-4 flex-wrap">
         {FILTERS.map(f => (
-          <button
+        <button
             key={f.key}
+            type="button"
+            aria-pressed={filter === f.key}
             onClick={() => handleFilterChange(f.key)}
             className="px-3 py-1 text-xs rounded-full transition-all"
             style={{
@@ -390,6 +398,7 @@ export default function FlashcardPage() {
           <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
           <input
             type="text"
+            aria-label="Search flashcards"
             placeholder="Search cards..."
             value={search}
             onChange={e => handleSearchChange(e.target.value)}
@@ -397,6 +406,8 @@ export default function FlashcardPage() {
           />
           {search && (
             <button
+              type="button"
+              aria-label="Clear flashcard search"
               onClick={() => handleSearchChange('')}
               style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}
             >
@@ -407,13 +418,13 @@ export default function FlashcardPage() {
       </div>
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
-        <select value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
+        <select aria-label="Filter flashcards by level" value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
           <option value="all">All Levels</option>
           {LEVELS.map(l => (
             <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
           ))}
         </select>
-        <button onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
+        <button type="button" aria-pressed={medicalOnly} onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
           {medicalOnly ? '✓ ' : ''}Medical
         </button>
       </div>
@@ -423,13 +434,17 @@ export default function FlashcardPage() {
         {search || medicalOnly || levelFilter !== (levelId || 'all') ? `${words.length} cards available` : `${words.length} cards`}
       </p>
 
-      <div
+      <button
+        type="button"
         onClick={() => setFlipped(!flipped)}
-        className="rounded-xl p-10 text-center cursor-pointer transition-all min-h-[220px] flex items-center justify-center"
+        aria-pressed={flipped}
+        aria-label={flipped ? 'Hide flashcard translation' : 'Reveal flashcard translation'}
+        className="w-full rounded-xl p-10 text-center cursor-pointer transition-all min-h-[220px] flex items-center justify-center"
         style={{
           backgroundColor: 'var(--bg-card)',
           border: `1px solid ${flipped ? '#8b5cf6' : 'var(--border)'}`,
           boxShadow: flipped ? '0 0 30px rgba(139,92,246,0.15)' : 'none',
+          color: 'var(--text-primary)',
         }}
       >
         <div>
@@ -449,7 +464,7 @@ export default function FlashcardPage() {
             )}
           </div>
         </div>
-      </div>
+      </button>
 
       {flipped && (
         <div className="flex gap-3 justify-center mt-6">

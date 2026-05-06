@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Mic, ChevronLeft, ChevronDown, ChevronUp, Clock, AlertTriangle, Copy } from 'lucide-react';
+import { Mic, ChevronLeft, ChevronDown, ChevronUp, AlertTriangle, Copy } from 'lucide-react';
 
 export default function FSPCasesPage() {
   const [cases, setCases] = useState([]);

@@ -1,7 +1,7 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { getState, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, GraduationCap, Home, BookOpen, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, BookMarked, AlertTriangle } from 'lucide-react';
+import { Menu, X, Sun, Moon, GraduationCap, Home, BookOpen, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle } from 'lucide-react';
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -24,6 +24,12 @@ export default function Layout() {
     { to: '/', label: 'Dashboard', icon: Home },
     ...levels.map(l => ({ to: `/level/${l}`, label: `Level ${l}`, icon: BookOpen })),
     { to: '/resources', label: 'Resources', icon: ExternalLink },
+  ];
+  const extraNavLinks = [
+    { to: '/medical', label: 'Medical', icon: Stethoscope, accent: getState().medicalUnlocked ? '#3bff9e' : 'var(--text-muted)' },
+    { to: '/c1-readiness', label: 'C1 Ready', icon: ClipboardCheck, accent: 'var(--accent)' },
+    { to: '/medical-fsp', label: 'FSP Hub', icon: Stethoscope, accent: '#8b5cf6' },
+    { to: '/mistake-notebook', label: 'Mistakes', icon: AlertTriangle, accent: '#ffaa33' },
   ];
 
   return (
@@ -95,10 +101,23 @@ export default function Layout() {
             </div>
 
             <div className="flex items-center gap-2">
-              <button onClick={toggleTheme} className="p-2 rounded-lg" style={{ color: 'var(--text-secondary)' }}>
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                className="p-2 rounded-lg"
+                style={{ color: 'var(--text-secondary)' }}
+              >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
               </button>
-              <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2 rounded-lg" style={{ color: 'var(--text-secondary)' }}>
+              <button
+                type="button"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                aria-expanded={menuOpen}
+                className="md:hidden p-2 rounded-lg"
+                style={{ color: 'var(--text-secondary)' }}
+              >
                 {menuOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
             </div>
@@ -123,19 +142,22 @@ export default function Layout() {
                 <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
               </Link>
             ))}
-            <Link
-              to="/medical-fsp"
-              onClick={() => setMenuOpen(false)}
-              className="flex items-center gap-2 py-2 px-3 rounded-lg text-sm"
-              style={{
-                backgroundColor: location.pathname === '/medical-fsp' ? 'var(--bg-hover)' : 'transparent',
-                color: location.pathname === '/medical-fsp' ? '#8b5cf6' : 'var(--text-secondary)',
-              }}
-            >
-              <Stethoscope size={16} />
-              FSP Hub
-              <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
-            </Link>
+            {extraNavLinks.map(link => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center gap-2 py-2 px-3 rounded-lg text-sm"
+                style={{
+                  backgroundColor: location.pathname === link.to ? 'var(--bg-hover)' : 'transparent',
+                  color: location.pathname === link.to ? link.accent : 'var(--text-secondary)',
+                }}
+              >
+                <link.icon size={16} />
+                {link.label}
+                <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
+              </Link>
+            ))}
           </div>
         )}
       </nav>

@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import {
-  CalendarCheck, ChevronLeft, Clock, Copy, Check, X, Mic, Square,
-  Play, RotateCcw, ChevronDown, ChevronUp, FileText, MessageSquare,
+  CalendarCheck, ChevronLeft, Clock, Copy, Check, Mic, Square, RotateCcw, ChevronDown, ChevronUp, FileText, MessageSquare,
   Users, Award, AlertTriangle
 } from 'lucide-react';
 
@@ -107,14 +106,14 @@ export default function FSPExamPage() {
     try {
       var m = await import('../data/fspExams.json');
       setExams(m.default || m);
-    } catch (e) { setExams([]); }
+    } catch { setExams([]); }
   }
 
   function loadAttempts() {
     try {
       var r = localStorage.getItem('fsp_exam_attempts');
       if (r) setAttempts(JSON.parse(r));
-    } catch (e) {}
+    } catch { /* empty */ }
   }
 
   function saveAttempts(d) {
@@ -124,7 +123,7 @@ export default function FSPExamPage() {
       n[d.examId] = d;
       setAttempts(n);
       localStorage.setItem('fsp_exam_attempts', JSON.stringify(n));
-    } catch (e) {}
+    } catch { /* empty */ }
   }
 
   function getAttempt(id) { return attempts[id] || null; }
@@ -289,7 +288,7 @@ export default function FSPExamPage() {
   async function copyPrompt() {
     try {
       await navigator.clipboard.writeText(buildPrompt());
-    } catch (e) {
+    } catch {
       var ta = document.createElement('textarea');
       ta.value = buildPrompt();
       document.body.appendChild(ta);

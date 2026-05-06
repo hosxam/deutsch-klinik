@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 
 const questions = [
@@ -16,10 +16,10 @@ const questions = [
   { level: 'C1', question: 'Sie behauptet, sie ___ (Konjunktiv I: sein) die Beste.', options: ['ist', 'sei', 'war', 'wäre'], answer: 'sei' },
 ];
 
-const levelMap = { 'A1': 0, 'A2': 1, 'B1': 2, 'B2': 3, 'C1': 4 };
+
 
 export default function PlacementTest() {
-  const navigate = useNavigate();
+  
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);

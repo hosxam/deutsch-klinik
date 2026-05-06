@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
-  getState, updateState, updateLevelProgress, setLevelProgress, getLevelProgress,
+  getState, updateState, setLevelProgress, getLevelProgress,
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
@@ -31,9 +31,9 @@ function toArray(v) {
 
 import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
-  SkipForward, Home, GraduationCap, Headphones, Play, ChevronRight,
+  SkipForward, Home, GraduationCap, Headphones, Play, ChevronLeft, ChevronRight,
   Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
-  Volume2, MessageSquare, Quote, BookMarked, ListOrdered,
+  Volume2, MessageSquare, BookMarked,
   Square, Lightbulb
 } from 'lucide-react';
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
@@ -60,6 +60,12 @@ function shuffleArray(arr) {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+function grammarMasteryRatio(exerciseId) {
+  const mastery = getGrammarMastery(exerciseId);
+  const total = mastery.correct + mastery.incorrect;
+  return total > 0 ? mastery.correct / total : 0;
 }
 
 const LEVEL_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
@@ -97,16 +103,16 @@ function loadSession(lev) {
     if (!raw) return null;
     const s = JSON.parse(raw);
     if (s.dateKey === getLocalDateKey() && s.levelId === lev) return s;
-  } catch (e) {}
+  } catch { /* empty */ }
   return null;
 }
 
 function saveSession(s) {
-  try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch (e) {}
+  try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch { /* empty */ }
 }
 
 function clearSession() {
-  try { localStorage.removeItem(SESSION_KEY); } catch (e) {}
+  try { localStorage.removeItem(SESSION_KEY); } catch { /* empty */ }
 }
 
 function calculateDailyTargets(levelId, state, goal) {
@@ -195,19 +201,19 @@ export default function DailyMissionPage() {
 
   // Listening question state
   const [lrq, setLrq] = useState(0);
-  const [lrc, setLrc] = useState(0);
+  const [, setLrc] = useState(0);
   const [lra, setLra] = useState({});
   const [lrcorr, setLrcorr] = useState({});
 
   // Reading question state
   const [rrq, setRrq] = useState(0);
-  const [rrc, setRrc] = useState(0);
+  const [, setRrc] = useState(0);
   const [rra, setRra] = useState({});
   const [rrcorr, setRrcorr] = useState({});
 
   // Writing/speaking state
-  const [writingPrompt, setWritingPrompt] = useState(null);
-  const [speakingPrompt, setSpeakingPrompt] = useState(null);
+  const [, setWritingPrompt] = useState(null);
+  const [, setSpeakingPrompt] = useState(null);
   const [spRecBlob, setSpRecBlob] = useState(null);
   const [spRecState, setSpRecState] = useState('idle');
   const [spTranscriptionLoading, setSpTranscriptionLoading] = useState(false);
@@ -251,7 +257,7 @@ export default function DailyMissionPage() {
   const [spAiResult, setSpAiResult] = useState(null);
   const [spAiLoading, setSpAiLoading] = useState(false);
   const [spAiError, setSpAiError] = useState(null);
-  const [spAiEnabled, setSpAiEnabled] = useState(() => isCorrectionEnabled());
+  const aiEnabled = isCorrectionEnabled();
 
 
   const refresh = useCallback(() => setLS({ ...getState() }), []);
@@ -283,7 +289,7 @@ export default function DailyMissionPage() {
     setInitDone(true);
   }, [lvl]);
 
-  const getCm = () => mi < ms.length ? ms[mi] : null;
+  const getCm = useCallback(() => mi < ms.length ? ms[mi] : null, [mi, ms]);
   const getMeta = () => { const c = getCm(); return c ? MISSION_META[c.type] : null; };
 
   const advance = (type, result) => {
@@ -310,7 +316,7 @@ export default function DailyMissionPage() {
       try {
         const found = Array.isArray(germanLessons) ? germanLessons.find(l => l.id === cm.nextLesson.id) : null;
         if (found) setFullLesson(found);
-      } catch(e) {}
+      } catch { /* empty */ }
     }
     setLsStart(true);
   };
@@ -377,7 +383,7 @@ export default function DailyMissionPage() {
     if (gq.length > 0) return;
     const all = grammarData[lvl] || [];
     const done = state.levels?.[lvl]?.grammar || [];
-    const unmastered = all.filter((x) => (done.includes(x.id) ? getGrammarMastery(x.id) < 0.7 : true));
+    const unmastered = all.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
 
     // Prefer questions linked to the last completed grammar lesson topic
@@ -422,7 +428,7 @@ export default function DailyMissionPage() {
     setGq(selected);
     const ld = loadSession(lvl) || sesh;
     if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), grammar: selected }, grammarPracticeTopic: topicLabel });
-  }, [initDone, mi]);
+  }, [getCm, gq.length, initDone, lvl, mi, sesh, state.levels]);
 
   const hVa = (sel, correct) => {
     const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
@@ -463,7 +469,7 @@ export default function DailyMissionPage() {
     setVq(selected);
     const ld = loadSession(lvl) || sesh;
     if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: selected } });
-  }, [initDone, mi]);
+  }, [getCm, initDone, lvl, mi, sesh, state.levels, vq.length]);
 
   const hLrnSk = () => advance('listening', { skipped: true });
   const hLrnN = () => {
@@ -547,7 +553,7 @@ export default function DailyMissionPage() {
 
   const stopSpTranscription = () => {
     if (spRecognitionRef.current) {
-      try { spRecognitionRef.current.stop(); } catch {}
+      try { spRecognitionRef.current.stop(); } catch { /* empty */ }
     }
     setSpIsListening(false);
   };
@@ -600,7 +606,7 @@ export default function DailyMissionPage() {
     const item = ni >= 0 && ni < items.length ? items[ni] : null;
     const written = wtText;
     const prompt = 'I am learning German at CEFR level ' + lvl + '. Please review my German writing and provide feedback.\n\nTASK: ' + (item?.prompt || 'Writing task') + '\nINSTRUCTIONS: ' + (item?.instructions || '') + '\n\nMY WRITING:\n' + written + '\n\nPlease provide:\n1. A corrected version of my text\n2. Grammar mistakes: For each mistake, show the original phrase, the correction, and a short explanation in English\n3. Vocabulary suggestions: Any better word choices\n4. Overall feedback: 2-3 sentences about what I did well and what to improve\n5. A simplified version at A2 level (if my writing is B1 or above)\n\nPlease keep your feedback encouraging and focus on the most important improvements.';
-    try { navigator.clipboard.writeText(prompt); } catch(e) {}
+    try { navigator.clipboard.writeText(prompt); } catch { /* empty */ }
   };
   const hWt = async () => {
     const cs = getState();
@@ -614,7 +620,7 @@ export default function DailyMissionPage() {
     }
     setWritingPrompt(item || null);
     // Try AI correction
-    if (isCorrectionEnabled() && wtText.trim()) {
+    if (aiEnabled && wtText.trim()) {
       setWtAiLoading(true);
       setWtAiError(null);
       try {
@@ -641,7 +647,7 @@ export default function DailyMissionPage() {
     const item = ni >= 0 && ni < items.length ? items[ni] : null;
     const spoken = spText;
     const prompt = 'I am learning German at CEFR level ' + lvl + '. This is my spoken response to a speaking task. Please review my spoken German and provide feedback.\n\nTASK: ' + (item?.prompt || 'Speaking task') + '\nINSTRUCTIONS: ' + (item?.instructions || '') + '\n\nMY SPOKEN RESPONSE (SCRIPT):\n' + spoken + '\n\nPlease provide:\n1. A corrected version of my script\n2. Grammar mistakes with corrections and explanations\n3. Pronunciation notes (any difficult sounds, word stress)\n4. Natural alternative phrasings a native speaker would use\n5. Overall feedback: 2-3 sentences about what I did well and what to improve\n\nKeep your feedback encouraging.';
-    try { navigator.clipboard.writeText(prompt); } catch(e) {}
+    try { navigator.clipboard.writeText(prompt); } catch { /* empty */ }
   };
   const startRecording = async () => {
     try {
@@ -699,7 +705,7 @@ export default function DailyMissionPage() {
     }
     setSpeakingPrompt(item || null);
     // Try AI speaking feedback
-    if (isCorrectionEnabled() && spText.trim()) {
+    if (aiEnabled && spText.trim()) {
       setSpAiLoading(true);
       setSpAiError(null);
       try {
@@ -1151,7 +1157,7 @@ export default function DailyMissionPage() {
           );
         }
         const hasAns = gr !== null;
-        const textTypes = ['fill-blank', 'sentence-correction', 'sentence-reorder', 'mixed', 'fill-in-the-blank', 'gap-fill'];
+        
         const optionTypes = ['mcq', 'article-select', 'case-select', 'conjugation'];
         // Defensive: check if exercise actually has options; if not, always render text input
         const hasOptions = Array.isArray(ex.options) && ex.options.length > 0;
@@ -1221,7 +1227,6 @@ export default function DailyMissionPage() {
           );
         }
 
-        const translations = [word.translation];
         const options = vocabData[lvl]?.filter((w) => w.id !== word.id).map((w) => w.translation) || [];
         const shuffled = [word.translation, ...shuffleArray(options).slice(0, 3)];
         const finalOptions = shuffleArray(shuffled);
@@ -1609,9 +1614,6 @@ export default function DailyMissionPage() {
         const wr = wtAiResult;
         const loading = wtAiLoading;
         const err = wtAiError;
-        const items = writingData[lvl] || [];
-        const ni = (getState().writings || []).filter((w) => w.level === lvl).length - 1;
-        const item = ni >= 0 && ni < items.length ? items[ni] : null;
         return (
           <div style={sCard}>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
@@ -1861,9 +1863,6 @@ export default function DailyMissionPage() {
         const sr = spAiResult;
         const loading = spAiLoading;
         const err = spAiError;
-        const items = speakingData[lvl] || [];
-        const ni = (getState().speakingRecordings?.[lvl]?.length || 0) - 1;
-        const item = ni >= 0 && ni < items.length ? items[ni] : null;
         return (
           <div style={sCard}>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>

@@ -14,7 +14,7 @@ export default function ExamPage() {
 
   const [examList, setExamList] = useState(null);
   const [selectedExamIdx, setSelectedExamIdx] = useState(0);
-  const [phase, setPhase] = useState('select');
+  const [phase, setPhase] = useState(() => Array.isArray(rawExam) ? 'select' : 'intro');
   const [currentSection, setCurrentSection] = useState(0);
   const [answers, setAnswers] = useState({});
   const [timer, setTimer] = useState(0);
@@ -25,6 +25,17 @@ export default function ExamPage() {
 
   const writingRef = useRef(null);
   const unlocked = levelData ? isExamUnlocked(levelId, levelData) : false;
+  const state = getState();
+  const levelProgress = state.levels?.[levelId] || {};
+  const examRequirements = levelData ? [
+    { label: 'Grammar', current: levelProgress.grammar?.length || 0, target: levelData.grammarUnits || 10 },
+    { label: 'Vocabulary', current: levelProgress.vocab?.length || 0, target: levelData.vocabularyUnits || 10 },
+    { label: 'Writing', current: (state.writings || []).filter(w => w.level === levelId).length, target: levelData.minWritingTasks || 10 },
+    { label: 'Speaking', current: (state.speakingRecordings?.[levelId] || []).length, target: levelData.minSpeakingTasks || 10 },
+    { label: 'Listening', current: levelProgress.listening?.length || 0, target: levelData.minListeningTests || 5 },
+    { label: 'Reading', current: levelProgress.reading?.length || 0, target: levelData.minReadingTests || 5 },
+  ] : [];
+  const missingExamRequirements = examRequirements.filter(r => r.current < r.target);
 
   function normalizeAnswer(value) {
     return String(value || '')
@@ -53,14 +64,16 @@ export default function ExamPage() {
     if (Array.isArray(rawExam)) {
       setExamList(rawExam);
       setSelectedExamIdx(0);
+      setPhase('select');
     } else {
       setExamList(null);
+      setPhase('intro');
     }
   }, [rawExam]);
 
   // The current exam object (single dict, or selected from list)
   const exam = Array.isArray(rawExam) ? rawExam[selectedExamIdx] : rawExam;
-  const sections = exam?.sections ? Object.entries(exam.sections) : [];
+  
   const sectionKeys = Object.keys(exam?.sections || {});
 
   useEffect(() => {
@@ -85,6 +98,16 @@ export default function ExamPage() {
         <p className="mb-4" style={{ color: 'var(--text-secondary)' }}>
           {!unlocked ? 'Complete all requirements for this level first.' : ''}
         </p>
+        {!unlocked && missingExamRequirements.length > 0 && (
+          <div className="max-w-md mx-auto mb-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            {missingExamRequirements.map(r => (
+              <div key={r.label} className="flex items-center justify-between px-3 py-2 rounded-lg" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+                <span style={{ color: 'var(--text-secondary)' }}>{r.label}</span>
+                <span style={{ color: r.current === 0 ? '#ef4444' : 'var(--accent)', fontWeight: 600 }}>{r.current}/{r.target}</span>
+              </div>
+            ))}
+          </div>
+        )}
         <Link to={`/level/${levelId}`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>Back</Link>
       </div>
       </LevelLock>
@@ -154,7 +177,7 @@ export default function ExamPage() {
       return (
         <div className="flex gap-2 mt-2">
           {['true', 'false'].map(opt => (
-            <button key={opt} onClick={() => setAnswers({ ...answers, [task.id]: opt })}
+            <button key={opt} type="button" onClick={() => setAnswers({ ...answers, [task.id]: opt })}
               className="px-4 py-2 rounded-lg text-sm"
               style={{ backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)', color: userAns === opt ? '#fff' : 'var(--text-secondary)' }}>
               {opt === 'true' ? 'True' : 'False'}
@@ -168,7 +191,7 @@ export default function ExamPage() {
       return (
         <div className="grid grid-cols-1 gap-1 mt-2">
           {options.map(opt => (
-            <button key={opt} onClick={() => setAnswers({ ...answers, [task.id]: opt })}
+            <button key={opt} type="button" onClick={() => setAnswers({ ...answers, [task.id]: opt })}
               className="text-left px-3 py-2 rounded-lg text-sm"
               style={{ backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)', color: userAns === opt ? '#fff' : 'var(--text-primary)' }}>
               {opt}
@@ -181,7 +204,7 @@ export default function ExamPage() {
       return (
         <div className="flex gap-2 flex-wrap mt-2">
           {task.options.map(opt => (
-            <button key={opt} onClick={() => setAnswers({ ...answers, [task.id]: opt })}
+            <button key={opt} type="button" onClick={() => setAnswers({ ...answers, [task.id]: opt })}
               className="px-3 py-1.5 rounded-lg text-sm"
               style={{ backgroundColor: userAns === opt ? 'var(--accent)' : 'var(--bg-hover)', color: userAns === opt ? '#fff' : 'var(--text-primary)' }}>
               {opt}
@@ -194,6 +217,7 @@ export default function ExamPage() {
       return (
         <input
           type="text"
+          aria-label="Exam short answer"
           value={answers[task.id] || ''}
           onChange={(e) => setAnswers({ ...answers, [task.id]: e.target.value })}
           placeholder="Type your answer..."
@@ -221,7 +245,7 @@ export default function ExamPage() {
         <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>Goethe-style practice exams</p>
         <div className="space-y-3">
           {examList.map((ex, idx) => (
-            <button key={ex.id} onClick={() => startExam(idx)}
+            <button key={ex.id} type="button" onClick={() => startExam(idx)}
               className="w-full text-left p-4 rounded-xl"
               style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
               <div className="font-semibold text-sm">{ex.name}</div>
@@ -247,7 +271,7 @@ export default function ExamPage() {
       <div className="max-w-xl mx-auto text-center py-8">
         <div className="flex items-center justify-between mb-6">
           {examList ? (
-            <button onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
+            <button type="button" onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
           ) : (
             <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
           )}
@@ -266,7 +290,7 @@ export default function ExamPage() {
           })}
         </div>
         <p className="text-sm mb-4" style={{ color: 'var(--text-muted)' }}>Passing score: {exam.passScore}%</p>
-        <button onClick={() => startExam(selectedExamIdx)} className="px-8 py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+        <button type="button" onClick={() => startExam(selectedExamIdx)} className="px-8 py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
           Start Exam
         </button>
       </div>
@@ -280,7 +304,7 @@ export default function ExamPage() {
       <div className="max-w-xl mx-auto text-center py-8">
         <div className="flex items-center justify-between mb-6">
           {examList ? (
-            <button onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
+            <button type="button" onClick={() => setPhase('select')} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; All exams</button>
           ) : (
             <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
           )}
@@ -299,14 +323,14 @@ export default function ExamPage() {
           ))}
         </div>
         <div className="flex gap-3 justify-center">
-          <button onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+          <button type="button" onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
             Review Exam
           </button>
-          <button onClick={() => startExam(selectedExamIdx)} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
+          <button type="button" onClick={() => startExam(selectedExamIdx)} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)' }}>
             Retake
           </button>
           {examList ? (
-            <button onClick={() => setPhase('select')} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+            <button type="button" onClick={() => setPhase('select')} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
               More Exams
             </button>
           ) : (
@@ -326,7 +350,7 @@ export default function ExamPage() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           {examList && (
-            <button onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="text-xs px-2 py-1 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
+            <button type="button" onClick={() => { setPhase('intro'); setAnswers({}); setScores({}); }} className="text-xs px-2 py-1 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)' }}>
               &larr; Exam Menu
             </button>
           )}
@@ -344,7 +368,7 @@ export default function ExamPage() {
 
       {renderSectionContent()}
 
-      <button onClick={submitSection} className="mt-6 w-full py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+      <button type="button" onClick={submitSection} className="mt-6 w-full py-3 rounded-lg font-semibold" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
         {currentSection < sectionKeys.length - 1 ? 'Next Section' : 'Finish Exam'}
       </button>
     </div>
@@ -362,7 +386,7 @@ export default function ExamPage() {
               <div key={task.id} className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
-                    <button onClick={() => {
+                    <button type="button" onClick={() => {
                       const utterance = new SpeechSynthesisUtterance(task.question);
                       utterance.rate = 0.85;
                       utterance.lang = 'de-DE';
@@ -371,11 +395,11 @@ export default function ExamPage() {
                     }} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm" style={{ backgroundColor: 'rgba(0,240,255,0.1)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
                       <Volume2 size={14} /> Play
                     </button>
-                    <button onClick={() => speechSynthesis.cancel()} className="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)', border: '1px solid var(--border)' }}>
+                    <button type="button" aria-label="Stop exam audio" onClick={() => speechSynthesis.cancel()} className="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-muted)', border: '1px solid var(--border)' }}>
                       <Pause size={12} />
                     </button>
                     {answered && (
-                      <button onClick={() => setShowTranscript({ ...showTranscript, [task.id]: !transcriptVisible })}
+                      <button type="button" onClick={() => setShowTranscript({ ...showTranscript, [task.id]: !transcriptVisible })}
                         className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm" style={{ backgroundColor: transcriptVisible ? 'rgba(59,255,158,0.1)' : 'var(--bg-hover)', color: transcriptVisible ? '#3bff9e' : 'var(--text-muted)', border: '1px solid var(--border)' }}>
                         {transcriptVisible ? <EyeOff size={14} /> : <Eye size={14} />} {transcriptVisible ? 'Hide' : 'Show'} transcript
                       </button>
@@ -415,6 +439,7 @@ export default function ExamPage() {
           </div>
           <textarea className="w-full h-48 p-4 rounded-lg text-sm outline-none resize-none"
             ref={writingRef}
+            aria-label="Exam writing response"
             style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}
             placeholder="Write your response..."
             onChange={(e) => setAnswers({ ...answers, written: e.target.value })}

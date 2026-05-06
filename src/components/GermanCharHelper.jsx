@@ -11,7 +11,7 @@
  * Works on mobile (onClick, not hover-based).
  */
 
-import { useRef, useCallback } from 'react';
+import { useCallback } from 'react';
 
 const CHARS = ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'];
 
@@ -40,8 +40,8 @@ export default function GermanCharHelper({ targetRef, onInsert, style, compact }
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: compact ? '32px' : '36px',
-    height: compact ? '32px' : '36px',
+    width: compact ? '44px' : '44px',
+    height: compact ? '44px' : '44px',
     border: '1px solid var(--border)',
     borderRadius: '6px',
     background: 'var(--bg-secondary)',

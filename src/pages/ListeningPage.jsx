@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { updateLevelProgress } from '../utils/store';
 import listeningData from '../data/listening.json';
 import LevelLock from '../components/LevelLock';
@@ -16,9 +16,11 @@ const resolveAudioPath = (path) => {
   return path && !path.startsWith(cleanBase) ? cleanBase + path.replace(/^\//, '') : path || '';
 };
 
+const normalizeChoice = (value) => String(value || '').trim().toLowerCase();
+
 export default function ListeningPage() {
   const { levelId } = useParams();
-  const exercises = listeningData[levelId] || [];
+  const exercises = useMemo(() => listeningData[levelId] || [], [levelId]);
   const [currentEx, setCurrentEx] = useState(0);
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -226,11 +228,7 @@ export default function ListeningPage() {
     speak();
   };
 
-  const handleSlowPlay = () => {
-    if (hasAudio) return;
-    if (!TTS_AVAILABLE) return;
-    speak(0.5);
-  };
+  
 
   const handleReplay = () => {
     if (hasAudio) {
@@ -282,15 +280,13 @@ export default function ListeningPage() {
     submittedRef.current = true;
     let s = 0;
     ex.questions.forEach(q => {
-      if (answers[q.id] === q.answer) s++;
+      if (normalizeChoice(answers[q.id]) === normalizeChoice(q.answer)) s++;
     });
     setScore(s);
     setSubmitted(true);
     setShowTranscript(true);
     updateLevelProgress(levelId, 'listening', { date: new Date().toISOString(), score: s, total: ex.questions.length });
   };
-
-  if (!ex) return null;
 
   // Show transcript pre-submit when both TTS and audio files are unavailable
   useEffect(() => {
@@ -300,7 +296,7 @@ export default function ListeningPage() {
   }, [currentEx, submitted, hasAudio]);
 
   // Determine if any answer has been selected
-  const allAnswered = ex.questions.every(q => answers[q.id] !== undefined);
+  const allAnswered = ex?.questions?.every(q => answers[q.id] !== undefined) || false;
 
   // Preload next exercise audio metadata
   useEffect(() => {
@@ -317,7 +313,9 @@ export default function ListeningPage() {
       }
       nextAudioRef.current.src = url;
     }
-  }, [currentEx, ex]);
+  }, [currentEx, ex, exercises]);
+
+  if (!ex) return null;
 
   // Audio source indicator text
   const sourceLabel = hasAudio ? 'Audio file' : (TTS_AVAILABLE ? 'Browser voice' : 'Unavailable');
@@ -326,12 +324,12 @@ export default function ListeningPage() {
     <LevelLock levelId={levelId}>
     <div className="max-w-3xl mx-auto">
       {/* Top bar */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
-        <div className="flex gap-2">
+        <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Listening exercise selector">
           {exercises.map((_, i) => (
-            <button key={i} onClick={() => goToExercise(i)}
-              className="w-11 h-11 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
+            <button key={i} type="button" aria-label={`Listening exercise ${i + 1}`} aria-current={currentEx === i ? 'true' : undefined} onClick={() => goToExercise(i)}
+              className="w-11 h-11 flex-shrink-0 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
               style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
             </button>
@@ -387,11 +385,12 @@ export default function ListeningPage() {
               )}
               <div className="flex items-center gap-2">
                 {audioLoading && playing ? (
-                  <button disabled className="px-6 py-3 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: '#6b7280', color: '#fff', cursor: 'wait' }}>
+                  <button type="button" disabled className="px-6 py-3 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: '#6b7280', color: '#fff', cursor: 'wait' }}>
                     Loading audio...
                   </button>
                 ) : !playing ? (
                   <button
+                    type="button"
                     onClick={handlePlay}
                     disabled={audioLoading}
                     className="px-6 py-3 rounded-lg inline-flex items-center gap-2"
@@ -405,10 +404,10 @@ export default function ListeningPage() {
                   </button>
                 ) : (
                   <>
-                    <button onClick={pausePlay} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
+                    <button type="button" onClick={pausePlay} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
                       {paused ? <Play size={16} /> : <Volume2 size={16} />} {paused ? 'Resume' : 'Pause'}
                     </button>
-                    <button onClick={stop} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ef4444', color: '#fff' }}>
+                    <button type="button" onClick={stop} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ef4444', color: '#fff' }}>
                       <Square size={16} /> Stop
                     </button>
                   </>
@@ -417,6 +416,8 @@ export default function ListeningPage() {
                 {/* Speed toggle for audio files */}
                 {!playing && (
                   <button
+                    type="button"
+                    aria-pressed={slowMode}
                     onClick={() => { setSlowMode(s => !s); }}
                     className="px-4 py-3 rounded-lg inline-flex items-center gap-2 text-sm"
                     style={{
@@ -445,7 +446,7 @@ export default function ListeningPage() {
             {/* Replay button (after submission) */}
             {submitted && (
               <div className="mt-3">
-                <button onClick={handleReplay} className="px-4 py-2 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: '#8b5cf6', border: '1px solid var(--border)' }}>
+                <button type="button" onClick={handleReplay} className="px-4 py-2 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: '#8b5cf6', border: '1px solid var(--border)' }}>
                   <Play size={14} /> Replay Audio
                 </button>
               </div>
@@ -458,6 +459,7 @@ export default function ListeningPage() {
               <Mic size={14} style={{ color: 'var(--text-muted)' }} />
               {voices.length > 0 ? (
                 <select
+                  aria-label="Select German voice"
                   value={selectedVoice?.name || ''}
                   onChange={(e) => setSelectedVoice(voices.find(v => v.name === e.target.value) || voices[0])}
                   className="text-xs px-2 py-1 rounded outline-none"
@@ -470,7 +472,7 @@ export default function ListeningPage() {
               ) : (
                 <span className="text-xs" style={{ color: '#ffaa33' }}>No German voices detected &mdash; </span>
               )}
-              <button onClick={() => {
+              <button type="button" onClick={() => {
                 window.speechSynthesis.getVoices();
                 const all = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('de'));
                 if (all.length > 0) {
@@ -485,15 +487,15 @@ export default function ListeningPage() {
             {/* Main playback controls (TTS) */}
             <div className="flex justify-center gap-3 flex-wrap">
               {!playing ? (
-                <button onClick={handlePlay} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+                <button type="button" onClick={handlePlay} className="px-6 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
                   <Play size={16} /> {submitted ? 'Replay Audio' : 'Play Audio'}
                 </button>
               ) : (
                 <>
-                  <button onClick={pausePlay} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
+                  <button type="button" onClick={pausePlay} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#f59e0b', color: '#fff' }}>
                     {paused ? <Play size={16} /> : <Volume2 size={16} />} {paused ? 'Resume' : 'Pause'}
                   </button>
-                  <button onClick={stop} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ef4444', color: '#fff' }}>
+                  <button type="button" onClick={stop} className="px-5 py-3 rounded-lg inline-flex items-center gap-2" style={{ backgroundColor: '#ef4444', color: '#fff' }}>
                     <Square size={16} /> Stop
                   </button>
                 </>
@@ -502,6 +504,8 @@ export default function ListeningPage() {
               {/* Slow mode toggle (TTS) */}
               {!playing && (
                 <button
+                  type="button"
+                  aria-pressed={slowMode}
                   onClick={() => { setSlowMode(s => !s); }}
                   className="px-4 py-3 rounded-lg inline-flex items-center gap-2 text-sm"
                   style={{
@@ -524,7 +528,7 @@ export default function ListeningPage() {
             {/* Replay button (after submission) */}
             {submitted && (
               <div className="mt-3">
-                <button onClick={handleReplay} className="px-4 py-2 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
+                <button type="button" onClick={handleReplay} className="px-4 py-2 rounded-lg inline-flex items-center gap-2 text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
                   <Play size={14} /> Replay Audio
                 </button>
               </div>
@@ -537,8 +541,8 @@ export default function ListeningPage() {
       <div className="space-y-4">
         {ex.questions.map(q => {
           const userAns = answers[q.id];
-          const isCorrect = submitted && userAns === q.answer;
-          const isWrong = submitted && userAns && userAns !== q.answer;
+          const isCorrect = submitted && normalizeChoice(userAns) === normalizeChoice(q.answer);
+          const isWrong = submitted && userAns && normalizeChoice(userAns) !== normalizeChoice(q.answer);
           return (
             <div key={q.id} className="rounded-xl p-4" style={{
               backgroundColor: 'var(--bg-card)',
@@ -549,14 +553,14 @@ export default function ListeningPage() {
                 <div className="grid grid-cols-1 gap-1">
                   {q.options.map(opt => {
                     const isUserChoice = userAns === opt;
-                    const isCorrectAnswer = submitted && opt === q.answer;
+                    const isCorrectAnswer = submitted && normalizeChoice(opt) === normalizeChoice(q.answer);
                     let bg = 'var(--bg-hover)';
                     let txt = 'var(--text-primary)';
                     if (submitted && isCorrectAnswer) { bg = '#22c55e'; txt = '#fff'; }
                     else if (submitted && isUserChoice && !isCorrectAnswer) { bg = '#ef4444'; txt = '#fff'; }
                     else if (isUserChoice) { bg = 'var(--accent)'; txt = '#fff'; }
                     return (
-                      <button key={opt} onClick={() => handleAnswer(q.id, opt)}
+                      <button key={opt} type="button" onClick={() => handleAnswer(q.id, opt)}
                         disabled={submitted}
                         className="text-left px-3 py-3 rounded-lg text-sm transition-colors"
                         style={{
@@ -577,14 +581,14 @@ export default function ListeningPage() {
                 <div className="flex gap-2">
                   {['true', 'false'].map(opt => {
                     const isUserChoice = userAns === opt;
-                    const isCorrectAnswer = submitted && opt === q.answer;
+                    const isCorrectAnswer = submitted && normalizeChoice(opt) === normalizeChoice(q.answer);
                     let bg = 'var(--bg-hover)';
                     let txt = 'var(--text-secondary)';
                     if (submitted && isCorrectAnswer) { bg = '#22c55e'; txt = '#fff'; }
                     else if (submitted && isUserChoice && !isCorrectAnswer) { bg = '#ef4444'; txt = '#fff'; }
                     else if (isUserChoice) { bg = 'var(--accent)'; txt = '#fff'; }
                     return (
-                      <button key={opt} onClick={() => handleAnswer(q.id, opt)}
+                      <button key={opt} type="button" onClick={() => handleAnswer(q.id, opt)}
                         disabled={submitted}
                         className="px-4 py-3 rounded-lg text-sm transition-colors"
                         style={{
@@ -617,6 +621,7 @@ export default function ListeningPage() {
       {!submitted && (
         <button
           onClick={submitAll}
+          type="button"
           disabled={!allAnswered}
           className="mt-6 w-full py-3 rounded-lg font-semibold"
           style={{
@@ -645,6 +650,7 @@ export default function ListeningPage() {
 
           {/* Transcript toggle */}
           <button
+            type="button"
             onClick={() => setShowTranscript(s => !s)}
             className="w-full py-3 px-4 rounded-lg text-sm flex items-center justify-between"
             style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}

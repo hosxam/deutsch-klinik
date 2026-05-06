@@ -320,7 +320,7 @@ function estimateGoalStatus(state, goal) {
   if (daysRemaining === null) return 'unknown';
 
   const todayTasks = calculateTodayCompletedTasks(state);
-  const goalDaily = goal.dailyMinutes || 30;
+  
 
   if (daysRemaining < 0) return 'behind';
 

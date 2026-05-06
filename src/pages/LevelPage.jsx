@@ -2,8 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getState, getLevelProgress, isExamUnlocked, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
-import lessonsData from '../data/curriculum.json';
-import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap, ListChecks } from 'lucide-react';
+import '../data/curriculum.json';
+import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap } from 'lucide-react';
 
 const skills = [
   { key: 'grammar', label: 'Grammar', icon: BookOpen, color: '#00f0ff', desc: 'Articles, cases, tenses, syntax' },
@@ -19,19 +19,19 @@ export default function LevelPage() {
   const [state, setState] = useState(getState());
   const levelData = levelsData.levels.find(l => l.id === levelId);
 
-  if (!levelData) {
-    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
-  }
-
-  const prog = state.levels[levelId] || {};
-  const examUnlocked = isExamUnlocked(levelId, levelData);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setState({ ...getState() });
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  if (!levelData) {
+    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
+  }
+
+  const prog = state.levels[levelId] || {};
+  const examUnlocked = isExamUnlocked(levelId, levelData);
 
   const completedLessons = getCompletedLessons(levelId);
 
@@ -198,17 +198,19 @@ export default function LevelPage() {
       )}
 
       {/* Requirements Progress */}
-      <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="font-semibold mb-4" style={{ color: 'var(--accent)' }}>Exam Requirements</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-          <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
-          <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
-          <Requirement label="Writing Tasks" current={(state.writings || []).filter(w => w.level === levelId).length} target={levelData.minWritingTasks} />
-          <Requirement label="Speaking Tasks" current={(state.speakingRecordings[levelId] || []).length} target={levelData.minSpeakingTasks} />
-          <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
-          <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
+      {examUnlocked && (
+        <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+          <h2 className="font-semibold mb-4" style={{ color: 'var(--accent)' }}>Exam Requirements</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+            <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
+            <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
+            <Requirement label="Writing Tasks" current={(state.writings || []).filter(w => w.level === levelId).length} target={levelData.minWritingTasks} />
+            <Requirement label="Speaking Tasks" current={(state.speakingRecordings[levelId] || []).length} target={levelData.minSpeakingTasks} />
+            <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
+            <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

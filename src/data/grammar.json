@@ -1,5 +1,5 @@
 {
-  "_comment": "Grammar exercises per level. Add new qüstions following the same format. Each qüstion has id, level, unit, type (fill-blank|mcq|drag-word|sentence-correction|case-select|article-select|conjugation), prompt, options (for mcq), answer, and explanation.",
+  "_comment": "Grammar exercises per level. Add new questions following the same format. Each question has id, level, unit, type (fill-blank|mcq|drag-word|sentence-correction|case-select|article-select|conjugation), prompt, options (for mcq), answer, and explanation.",
   "A1": [
     {
       "id": "A1_gr_1",
@@ -131,7 +131,7 @@
       "answer": "Woher",
       "explanation": "Woher asks for origin.",
       "level": "A1",
-      "topic": "W-Qüstions"
+      "topic": "W-Questions"
     },
     {
       "id": "A1_gr_13",
@@ -230,7 +230,7 @@
     {
       "id": "A1_gr_122",
       "level": "A1",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "fill-blank",
       "prompt": "___ heiBt deine Schwester? (what)",
       "options": null,
@@ -317,118 +317,108 @@
       "level": "A1",
       "topic": "Personal Pronouns",
       "type": "fill-blank",
-      "prompt": "___ spielen FuBball. (we)",
+      "prompt": "___ spielen Fußball. (we)",
       "options": null,
       "answer": "Wir",
-      "explanation": "Wir is the pronoun for we. Wir spielen FuBball."
+      "explanation": "Wir is the pronoun for we. Wir spielen Fußball."
     },
     {
       "id": "A1_ex_1",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Ich ___ Student.",
       "answer": "bin",
       "topic": "sein",
-      "options": [],
       "explanation": "The correct answer is: bin",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_2",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Translate: 'How are you?' (formal)",
       "answer": "Wie geht es Ihnen?",
       "topic": "Greetings",
-      "options": [],
       "explanation": "The correct answer is: Wie geht es Ihnen?",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_3",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "What is 'die Milch' in English?",
       "answer": "milk",
       "topic": "Food",
-      "options": [],
       "explanation": "The correct answer is: milk",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_4",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "What is 'child' in German?",
       "answer": "das Kind",
       "topic": "People",
-      "options": [],
       "explanation": "The correct answer is: das Kind",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_5",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Correct article for 'Frau'",
       "answer": "die",
       "topic": "Articles",
-      "options": [],
       "explanation": "The correct answer is: die",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_6",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Translate 'I have a book.'",
       "answer": "Ich habe ein Buch.",
       "topic": "haben",
-      "options": [],
       "explanation": "The correct answer is: Ich habe ein Buch.",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_7",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Translate 'to go' to German",
       "answer": "gehen",
       "topic": "Verbs",
-      "options": [],
       "explanation": "The correct answer is: gehen",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_8",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Correct article for 'Kind'",
       "answer": "das",
       "topic": "Articles",
-      "options": [],
       "explanation": "The correct answer is: das",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_9",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "Er ___ einen Hund.",
       "answer": "hat",
       "topic": "haben",
-      "options": [],
       "explanation": "The correct answer is: hat",
       "section": "Mixed Exercises"
     },
     {
       "id": "A1_ex_10",
       "level": "A1",
-      "type": "mixed",
+      "type": "fill-blank",
       "prompt": "What is 'der Bleistift'?",
       "answer": "pencil",
       "topic": "School",
-      "options": [],
       "explanation": "The correct answer is: pencil",
       "section": "Mixed Exercises"
     },
@@ -583,7 +573,7 @@
       "id": "A1_gr_147",
       "topic": "Regular Present Tense",
       "type": "fill-blank",
-      "prompt": "Ich ___ (spielen) FuBball.",
+      "prompt": "Ich ___ (spielen) Fußball.",
       "answer": "spiele",
       "explanation": "Ich uses spiel + e for regular verbs.",
       "level": "A1"
@@ -1118,7 +1108,7 @@
       "type": "fill-blank",
       "prompt": "___ du gern im Park? (spielen)",
       "answer": "Spielst",
-      "explanation": "Qüstions start with verb. Verb is 1st position.",
+      "explanation": "Questions start with verb. Verb is 1st position.",
       "level": "A1"
     },
     {
@@ -1136,16 +1126,16 @@
     },
     {
       "id": "A1_gr_199",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "fill-blank",
       "prompt": "___ du aus Deutschland? (come)",
       "answer": "Kommst",
-      "explanation": "Yes/no qüstions start with the verb: Kommst du aus Deutschland?",
+      "explanation": "Yes/no questions start with the verb: Kommst du aus Deutschland?",
       "level": "A1"
     },
     {
       "id": "A1_gr_200",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "fill-blank",
       "prompt": "___ ihr Hunger? (have)",
       "answer": "Habt",
@@ -1154,7 +1144,7 @@
     },
     {
       "id": "A1_gr_201",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "mcq",
       "prompt": "Bilde die Frage: '___ Sie Frau Muller?'",
       "options": [
@@ -1169,7 +1159,7 @@
     },
     {
       "id": "A1_gr_202",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "mcq",
       "prompt": "Was ist die richtige Frage? 'Er heiBt Max.'",
       "options": [
@@ -1184,16 +1174,16 @@
     },
     {
       "id": "A1_gr_203",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "fill-blank",
       "prompt": "___ das dein Buch? (is)",
       "answer": "Ist",
-      "explanation": "Ist das dein Buch? Verb first in yes/no qüstions.",
+      "explanation": "Ist das dein Buch? Verb first in yes/no questions.",
       "level": "A1"
     },
     {
       "id": "A1_gr_204",
-      "topic": "Yes/No Qüstions",
+      "topic": "Yes/No Questions",
       "type": "fill-blank",
       "prompt": "___ du morgen Zeit? (have)",
       "answer": "Hast",
@@ -1202,7 +1192,7 @@
     },
     {
       "id": "A1_gr_205",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "fill-blank",
       "prompt": "___ heiBen Sie? (what)",
       "answer": "Wie",
@@ -1211,7 +1201,7 @@
     },
     {
       "id": "A1_gr_206",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "fill-blank",
       "prompt": "___ wohnst du? (where)",
       "answer": "Wo",
@@ -1220,7 +1210,7 @@
     },
     {
       "id": "A1_gr_207",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "mcq",
       "prompt": "___ kommt er? (from where)",
       "options": [
@@ -1235,7 +1225,7 @@
     },
     {
       "id": "A1_gr_208",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "fill-blank",
       "prompt": "___ alt bist du? (how)",
       "answer": "Wie",
@@ -1244,7 +1234,7 @@
     },
     {
       "id": "A1_gr_209",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "mcq",
       "prompt": "___ Uhr ist es? (what time)",
       "options": [
@@ -1259,7 +1249,7 @@
     },
     {
       "id": "A1_gr_210",
-      "topic": "W-Qüstions",
+      "topic": "W-Questions",
       "type": "fill-blank",
       "prompt": "___ machst du? (what)",
       "answer": "Was",
@@ -2686,7 +2676,7 @@
       "answer": "Wie viel",
       "level": "A2",
       "topic": "Interrogatives",
-      "explanation": "Wie viel Uhr ist es? = What time is it? (fixed qüstion).",
+      "explanation": "Wie viel Uhr ist es? = What time is it? (fixed question).",
       "lessonId": "A2_lesson_25"
     },
     {
@@ -4243,7 +4233,7 @@
       "type": "mcq",
       "prompt": "Weißt du, ___ er kommt?",
       "answer": "ob",
-      "explanation": "ob = whether (indirect yes/no qüstion).",
+      "explanation": "ob = whether (indirect yes/no question).",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4259,7 +4249,7 @@
       "type": "mcq",
       "prompt": "Ich möchte wissen, ___ das kostet.",
       "answer": "wie viel",
-      "explanation": "wie viel in indirect qüstion (verb at end).",
+      "explanation": "wie viel in indirect question (verb at end).",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4275,7 +4265,7 @@
       "type": "sentence-reorder",
       "prompt": "Ordne: nicht / wo / der Bahnhof / weiß / ich / ist",
       "answer": "Ich weiß nicht, wo der Bahnhof ist.",
-      "explanation": "Indirect qüstion: verb at end after qüstion word.",
+      "explanation": "Indirect question: verb at end after question word.",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "lessonId": "A2_lesson_25"
@@ -4285,7 +4275,7 @@
       "type": "mcq",
       "prompt": "Kannst du mir sagen, ___ der Chef ist?",
       "answer": "wo",
-      "explanation": "Indirect qüstion with wo: verb at end.",
+      "explanation": "Indirect question with wo: verb at end.",
       "level": "A2",
       "topic": "Indirekte Fragen",
       "options": [
@@ -4749,7 +4739,7 @@
       "type": "mcq",
       "prompt": "Wessen Tasche ist das? Das ist die Tasche ___ Chefs.",
       "answer": "des",
-      "explanation": "Genitive qüstion \"wessen\" + masculine noun: des Chefs.",
+      "explanation": "Genitive question \"wessen\" + masculine noun: des Chefs.",
       "level": "A2",
       "topic": "Genitiv",
       "options": [
@@ -4785,7 +4775,7 @@
       "type": "sentence-reorder",
       "prompt": "Ordne: hast / Gestern / du / gemacht / was",
       "answer": "Was hast du gestern gemacht?",
-      "explanation": "Qüstion word order (W-Frage): qüstion word + verb + subject.",
+      "explanation": "Question word order (W-Frage): question word + verb + subject.",
       "level": "A2",
       "topic": "Satzstellung",
       "lessonId": "A2_lesson_1"
@@ -5629,11 +5619,11 @@
     {
       "id": "B1_gr_8",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "sentence-correction",
       "prompt": "Correct the word order: 'Er fragt wo ist der Bahnhof.'",
       "answer": "Er fragt, wo der Bahnhof ist.",
-      "explanation": "In indirect qüstions, the verb gös to the end. Er fragt, wo der Bahnhof ist.",
+      "explanation": "In indirect questions, the verb gös to the end. Er fragt, wo der Bahnhof ist.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -7563,7 +7553,7 @@
         "daran"
       ],
       "answer": "dafür",
-      "explanation": "Wofür? -> Dafür. Qüstion word wo(r)+prep -> da(r)+prep.",
+      "explanation": "Wofür? -> Dafür. Question word wo(r)+prep -> da(r)+prep.",
       "lessonId": "B1_lesson_22"
     },
     {
@@ -7601,7 +7591,7 @@
     {
       "id": "B1_gr_135",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "mcq",
       "prompt": "Weißt du, ___ er heißt?",
       "options": [
@@ -7611,13 +7601,13 @@
         "wann"
       ],
       "answer": "wie",
-      "explanation": "Indirect W-qüstion: verb gös to end. Weißt du, wie er heißt?",
+      "explanation": "Indirect W-question: verb gös to end. Weißt du, wie er heißt?",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_136",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "mcq",
       "prompt": "Kannst du mir sagen, ___ der Bahnhof ist?",
       "options": [
@@ -7627,13 +7617,13 @@
         "wie"
       ],
       "answer": "wo",
-      "explanation": "Indirect qüstion: wo + verb at end. ... wo der Bahnhof ist.",
+      "explanation": "Indirect question: wo + verb at end. ... wo der Bahnhof ist.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_137",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "mcq",
       "prompt": "Ich möchte wissen, ___ du gekommen bist.",
       "options": [
@@ -7643,13 +7633,13 @@
         "wie"
       ],
       "answer": "wann",
-      "explanation": "Indirect qüstion: wann + verb at end. ... wann du gekommen bist.",
+      "explanation": "Indirect question: wann + verb at end. ... wann du gekommen bist.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_138",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "mcq",
       "prompt": "Er fragt, ___ ich morgen Zeit habe.",
       "options": [
@@ -7659,13 +7649,13 @@
         "weil"
       ],
       "answer": "ob",
-      "explanation": "ob (whether/if) for yes/no indirect qüstions. Er fragt, ob ich Zeit habe.",
+      "explanation": "ob (whether/if) for yes/no indirect questions. Er fragt, ob ich Zeit habe.",
       "lessonId": "B1_lesson_1"
     },
     {
       "id": "B1_gr_139",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "mcq",
       "prompt": "Ich weiß nicht, ___ das kostet.",
       "options": [
@@ -7681,11 +7671,11 @@
     {
       "id": "B1_gr_140",
       "level": "B1",
-      "topic": "Indirect qüstions",
+      "topic": "Indirect questions",
       "type": "sentence-correction",
       "prompt": "Correct: 'Ich weiß nicht wann kommt der Zug.'",
       "answer": "Ich weiß nicht, wann der Zug kommt.",
-      "explanation": "Indirect qüstion: verb gös to end. ... wann der Zug kommt.",
+      "explanation": "Indirect question: verb gös to end. ... wann der Zug kommt.",
       "lessonId": "B1_lesson_1"
     },
     {
@@ -8985,7 +8975,7 @@
         "gekommen bin"
       ],
       "answer": "komme",
-      "explanation": "Yes/no indirect qüstion: ob + verb at end.",
+      "explanation": "Yes/no indirect question: ob + verb at end.",
       "lessonId": "B1_lesson_7"
     },
     {
@@ -9047,7 +9037,7 @@
       "type": "sentence-correction",
       "prompt": "Correct: 'Er ist der Mann wer dort arbeitet.'",
       "answer": "Er ist der Mann, der dort arbeitet.",
-      "explanation": "'wer' is a qüstion word, not a relative pronoun. Use 'der'.",
+      "explanation": "'wer' is a question word, not a relative pronoun. Use 'der'.",
       "lessonId": "B1_lesson_25"
     },
     {
@@ -10321,7 +10311,7 @@
         "Obwohl",
         "Wenn"
       ],
-      "explanation": "\"Wie oft\" means \"no matter how often\" - introduces a concessive clause structure using a qüstion word.",
+      "explanation": "\"Wie oft\" means \"no matter how often\" - introduces a concessive clause structure using a question word.",
       "lessonId": "B2_lesson_6"
     },
     {
@@ -10871,7 +10861,7 @@
     {
       "id": "B2_gr_101",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Ich möchte wissen, ___ er kommt.",
       "answer": "ob",
@@ -10887,7 +10877,7 @@
     {
       "id": "B2_gr_102",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Kannst du mir sagen, ___ der Zug abfährt?",
       "answer": "wann",
@@ -10903,7 +10893,7 @@
     {
       "id": "B2_gr_103",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Sie fragte, ___ ich schon gegessen habe.",
       "answer": "ob",
@@ -10919,7 +10909,7 @@
     {
       "id": "B2_gr_104",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "mcq",
       "prompt": "Direkt: \"Wo wohnst du?\" → Indirekt:",
       "answer": "Er fragt, wo ich wohne.",
@@ -10935,7 +10925,7 @@
     {
       "id": "B2_gr_105",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "sentence-correction",
       "prompt": "Correct: \"Er fragte: Kommst du mit?\" → Indirekte Rede",
       "answer": "Er fragte, ob ich mitkomme.",
@@ -10945,7 +10935,7 @@
     {
       "id": "B2_gr_106",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Weißt du, ___ das gemacht hat?",
       "answer": "wer",
@@ -10961,7 +10951,7 @@
     {
       "id": "B2_gr_107",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Ich will wissen, ___ sie sich trifft.",
       "answer": "mit wem",
@@ -10977,7 +10967,7 @@
     {
       "id": "B2_gr_108",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Erklär mir, ___ das funktioniert.",
       "answer": "wie",
@@ -10993,7 +10983,7 @@
     {
       "id": "B2_gr_109",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "fill-blank",
       "prompt": "Niemand weiß, ___ es passiert ist.",
       "answer": "warum",
@@ -11009,7 +10999,7 @@
     {
       "id": "B2_gr_110",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "mcq",
       "prompt": "\"Hast du Hunger?\" (indirekt mit \"Er fragt\")",
       "answer": "Er fragt, ob ich Hunger habe.",
@@ -13093,7 +13083,7 @@
     {
       "id": "B2_gr_241",
       "level": "B2",
-      "topic": "Indirect Qüstions",
+      "topic": "Indirect Questions",
       "type": "sentence-correction",
       "prompt": "Correct: \"Wann kommt der Bus?\" → (indirekte Frage)",
       "answer": "Kannst du mir sagen, wann der Bus kommt?",
@@ -16493,7 +16483,7 @@
       "lessonId": "C1_lesson_20",
       "options": [
         "vorliegenden",
-        "aktüllen",
+        "aktuellen",
         "neuen",
         "wichtigen"
       ]

@@ -1,10 +1,18 @@
 node_modules
 dist
 .vite
+assets
+serve_root
+playwright-report
+test-results
+worker/.wrangler-out
+src/data/.german-backup
 *.local
 .env
 .env.local
 .env.*.local
+_*.py
+src/_fix_report.json
 
 # backup artifacts in src/data
 deutsch-klinik-progress-backup.json

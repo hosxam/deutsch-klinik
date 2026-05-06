@@ -1,6 +1,6 @@
 import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { getState, updateLevelProgress, setLevelProgress, getLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
+import {  updateLevelProgress, setLevelProgress, getLevelProgress, recordGrammarAnswer, getGrammarMastery, getMistakesByLevel, recordAnswer } from '../utils/store';
 import grammarData from '../data/grammar.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
@@ -202,7 +202,7 @@ export default function GrammarPage() {
 
 {['fill-blank'].includes(ex.type) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
-            <input type="text" placeholder="Type your answer..."
+            <input type="text" aria-label="Grammar answer" placeholder="Type your answer..."
               ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
@@ -244,7 +244,7 @@ export default function GrammarPage() {
 
         {ex.type === 'sentence-reorder' && (
           <div style={{ marginTop: '0.75rem' }}>
-            <input type="text" placeholder="Type the correct sentence..."
+            <input type="text" aria-label="Correct sentence answer" placeholder="Type the correct sentence..."
               ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{
@@ -262,7 +262,7 @@ export default function GrammarPage() {
 
         {ex.type === 'sentence-correction' && (
           <div style={{ marginTop: '0.75rem' }}>
-            <input type="text" placeholder="Type the correct sentence..."
+            <input type="text" aria-label="Correct sentence answer" placeholder="Type the correct sentence..."
               ref={inputRef}
               value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
               style={{

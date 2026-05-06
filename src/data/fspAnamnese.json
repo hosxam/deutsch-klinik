@@ -71,7 +71,7 @@
     "id": "ana_005",
     "category": "Begrüßung",
     "doctorQuestion": "Guten Tag, ich bin der Medizinstudent im Praktikum. Darf ich Ihnen unter Aufsicht von Frau Dr. Weber ein paar Fragen stellen?",
-    "simpleEnglish": "Good day, I'm the medical student on placement. May I ask you a few qüstions under the supervision of Dr. Weber?",
+    "simpleEnglish": "Good day, I'm the medical student on placement. May I ask you a few questions under the supervision of Dr. Weber?",
     "patientPossibleAnswer": "Ja, klar. Fragen Sie nur.",
     "followUpQuestions": [
       "Sind Sie damit einverstanden, dass der Student das Gespräch führt?",
@@ -149,7 +149,7 @@
     "tags": [
       "hauptbeschwerde",
       "chief complaint",
-      "open qüstion"
+      "open question"
     ]
   },
   {
@@ -202,7 +202,7 @@
   },
   {
     "id": "ana_013",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Haben Sie die Beschwerden zum ersten Mal oder kennen Sie das schon?",
     "simpleEnglish": "Are you having these symptoms for the first time or do you know them already?",
     "patientPossibleAnswer": "Das hatte ich noch nie. So etwas ist mir zum ersten Mal passiert.",
@@ -212,14 +212,14 @@
     ],
     "notes": "Distinguishing first episode from recurrence is clinically important.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "first episode",
       "recurrence"
     ]
   },
   {
     "id": "ana_014",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Haben Sie in den letzten Tagen etwas unternommen, um die Beschwerden zu lindern?",
     "simpleEnglish": "Have you done anything in the past few days to relieve the symptoms?",
     "patientPossibleAnswer": "Ich habe eine Schmerztablette genommen, aber die hat nicht geholfen.",
@@ -230,14 +230,14 @@
     ],
     "notes": "Check what self-medication the patient has tried before presenting. Important for medication history.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "self-medication",
       "relief"
     ]
   },
   {
     "id": "ana_015",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Waren Sie deswegen schon bei einem anderen Arzt?",
     "simpleEnglish": "Have you already seen another doctor about this?",
     "patientPossibleAnswer": "Ja, mein Hausarzt hat mich überwiesen. Er meinte, ich solle ins Krankenhaus.",
@@ -247,14 +247,14 @@
     ],
     "notes": "Important in FSP to determine what prior medical assessment has occurred.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "prior visit",
       "referral"
     ]
   },
   {
     "id": "ana_016",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Haben Sie Fieber gemessen? Falls ja, wie hoch war die Temperatur?",
     "simpleEnglish": "Have you taken your temperature? If yes, how high was it?",
     "patientPossibleAnswer": "Ja, gestern Abend hatte ich 38,5 Grad Fieber.",
@@ -264,14 +264,14 @@
     ],
     "notes": "Fever history is basic but essential. Women may have slightly higher baseline temperatures.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "fever",
       "temperature"
     ]
   },
   {
     "id": "ana_017",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Wie ist der Verlauf Ihrer Beschwerden? Sind sie besser, gleich oder schlechter geworden?",
     "simpleEnglish": "How has the course of your symptoms been? Have they improved, stayed the same, or worsened?",
     "patientPossibleAnswer": "Eigentlich wird es von Tag zu Tag schlimmer.",
@@ -281,7 +281,7 @@
     ],
     "notes": "Documenting the trajectory is key. 'Progredienter Verlauf' or 'gleichbleibend' are standard chart entries.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "course",
       "progression"
     ]
@@ -508,7 +508,7 @@
       "Nehmen Sie Antidepressiva?",
       "Sind Sie in psychotherapeutischer Behandlung?"
     ],
-    "notes": "Mental health history is relevant for many physical presentations. Ask sensitively. Normalize the qüstion.",
+    "notes": "Mental health history is relevant for many physical presentations. Ask sensitively. Normalize the question.",
     "tags": [
       "vorerkrankungen",
       "mental health",
@@ -740,7 +740,7 @@
     "followUpQuestions": [
       "Wissen Sie, ob jemals eine allergische Reaktion auf Kontrastmittel dokumentiert wurde?"
     ],
-    "notes": "Iodine/contrast allergy is essential before imaging. This is a common FSP qüstion.",
+    "notes": "Iodine/contrast allergy is essential before imaging. This is a common FSP question.",
     "tags": [
       "allergien",
       "iodine",
@@ -946,7 +946,7 @@
       "Hatten Sie schon einmal Entzugserscheinungen?",
       "Kam es schon zu gesundheitlichen Problemen durch Alkohol?"
     ],
-    "notes": "Screening for alcohol dependence. CAGE qüstionnaire elements are relevant here.",
+    "notes": "Screening for alcohol dependence. CAGE questionnaire elements are relevant here.",
     "tags": [
       "alkohol",
       "dependency",
@@ -962,7 +962,7 @@
     "followUpQuestions": [
       "Wurde bei Ihnen jemals eine Fettleber oder Lebererkrankung festgestellt?"
     ],
-    "notes": "Assess social and medical conseqünces of alcohol use. Trauma history may be relevant.",
+    "notes": "Assess social and medical consequences of alcohol use. Trauma history may be relevant.",
     "tags": [
       "alkohol",
       "trauma",
@@ -979,7 +979,7 @@
       "Seit wann konsumieren Sie Cannabis?",
       "Haben Sie schon einmal härtere Drogen probiert?"
     ],
-    "notes": "Ask non-judgmentally. Normalize the qüstion: 'I ask all my patients about this.'",
+    "notes": "Ask non-judgmentally. Normalize the question: 'I ask all my patients about this.'",
     "tags": [
       "drogen",
       "cannabis",
@@ -1023,7 +1023,7 @@
   {
     "id": "ana_060",
     "category": "Beruf",
-    "doctorQuestion": "Sind Sie aktüll arbeitsfähig oder sind Sie krankgeschrieben?",
+    "doctorQuestion": "Sind Sie aktuell arbeitsfähig oder sind Sie krankgeschrieben?",
     "simpleEnglish": "Are you currently able to work or are you on sick leave?",
     "patientPossibleAnswer": "Ich bin seit drei Tagen krankgeschrieben. Mein Hausarzt hat mich krankgeschrieben.",
     "followUpQuestions": [
@@ -1193,7 +1193,7 @@
       "Haben Sie noch Fragen an mich?",
       "Gibt es etwas, das Sie beunruhigt?"
     ],
-    "notes": "The final open qüstion gives the patient space to add relevant information. Required in FSP history-taking.",
+    "notes": "The final open question gives the patient space to add relevant information. Required in FSP history-taking.",
     "tags": [
       "zusammenfassung",
       "closing",
@@ -1226,7 +1226,7 @@
       "Haben Sie Zwischenblutungen?",
       "Haben Sie Schmerzen während der Periode?"
     ],
-    "notes": "First qüstion in gynecological anamnesis. LMP is essential for all women of reproductive age.",
+    "notes": "First question in gynecological anamnesis. LMP is essential for all women of reproductive age.",
     "tags": [
       "gynäkologie",
       "menstruation",
@@ -1282,7 +1282,7 @@
       "Hatten Sie Nebenwirkungen?",
       "Rauchen Sie zusätzlich?"
     ],
-    "notes": "Hormonal contraception plus smoking increases thrombosis risk. Important safety qüstion.",
+    "notes": "Hormonal contraception plus smoking increases thrombosis risk. Important safety question.",
     "tags": [
       "gynäkologie",
       "contraception",
@@ -1391,7 +1391,7 @@
       "Hatten Sie ungeschützten Geschlechtsverkehr?",
       "Besteht der Wunsch nach einer Schwangerschaft?"
     ],
-    "notes": "Ask sexan with context. Normalize the qüstion. Relevant for GU symptoms, abdominal pain, and family planning.",
+    "notes": "Ask sexan with context. Normalize the question. Relevant for GU symptoms, abdominal pain, and family planning.",
     "tags": [
       "sexualanamnese",
       "sexual activity",
@@ -1436,7 +1436,7 @@
     "id": "ana_083",
     "category": "System Review",
     "doctorQuestion": "Haben Sie Probleme beim Wasserlassen, wie Brennen, Schmerzen oder häufigen Harndrang?",
-    "simpleEnglish": "Do you have any problems with urination, such as burning, pain, or freqünt urination?",
+    "simpleEnglish": "Do you have any problems with urination, such as burning, pain, or frequent urination?",
     "patientPossibleAnswer": "Ja, ich muss nachts mehrmals raus und es brennt beim Wasserlassen.",
     "followUpQuestions": [
       "Seit wann besteht das Brennen?",
@@ -1552,7 +1552,7 @@
     "patientPossibleAnswer": "Ja, L-Thyroxin 100 Mikrogramm täglich und Metformin.",
     "followUpQuestions": [
       "Nehmen Sie auch Insulin?",
-      "Wie sind Ihre Blutzuckerwerte aktüll?",
+      "Wie sind Ihre Blutzuckerwerte aktuell?",
       "Haben Sie die Medikamente heute genommen?"
     ],
     "notes": "Thyroid and diabetes meds are among the most common. Crucial to know for many clinical decisions.",
@@ -1653,7 +1653,7 @@
   },
   {
     "id": "ana_095",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Haben Sie vor Beginn der Beschwerden etwas Besonderes gegessen oder getrunken?",
     "simpleEnglish": "Did you eat or drink anything unusual before the symptoms started?",
     "patientPossibleAnswer": "Ja, ich war am Abend in einem Restaurant und habe Fisch gegessen.",
@@ -1663,7 +1663,7 @@
     ],
     "notes": "Food history can identify food poisoning, allergic reactions, or GI triggers.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "food",
       "trigger",
       "diet"
@@ -1671,7 +1671,7 @@
   },
   {
     "id": "ana_096",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Hatten Sie in der letzten Zeit Stress oder besondere Belastungen?",
     "simpleEnglish": "Have you had stress or particular burdens recently?",
     "patientPossibleAnswer": "Ja, ich hatte viel Stress auf der Arbeit. Mein Chef macht mir Druck.",
@@ -1681,7 +1681,7 @@
     ],
     "notes": "Stress can trigger or exacerbate many conditions. Part of understanding the context of illness.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "stress",
       "psychological",
       "triggers"
@@ -1689,7 +1689,7 @@
   },
   {
     "id": "ana_097",
-    "category": "Aktülle Anamnese",
+    "category": "Aktuelle Anamnese",
     "doctorQuestion": "Haben Sie in den letzten 24 Stunden etwas eingenommen, was ich wissen sollte? Auch pflanzliche Mittel oder Nahrungsergänzungsmittel?",
     "simpleEnglish": "Have you taken anything in the last 24 hours that I should know about? Including herbal remedies or supplements?",
     "patientPossibleAnswer": "Nein, gar nichts. Nur meine normalen Medikamente.",
@@ -1699,7 +1699,7 @@
     ],
     "notes": "Herbal supplements can interact with medications. Johanniskraut (St. John's wort) induces CYP450 enzymes.",
     "tags": [
-      "aktülle anamnese",
+      "aktuelle anamnese",
       "supplements",
       "herbal",
       "interactions"
@@ -1726,7 +1726,7 @@
     "id": "ana_099",
     "category": "Zusammenfassung und Rückversicherung",
     "doctorQuestion": "Gibt es Fragen, die ich nicht gestellt habe, die aber wichtig für Sie sind?",
-    "simpleEnglish": "Are there any qüstions I haven't asked that are important to you?",
+    "simpleEnglish": "Are there any questions I haven't asked that are important to you?",
     "patientPossibleAnswer": "Eigentlich haben Sie alles gefragt, was mir wichtig ist.",
     "followUpQuestions": [
       "Haben Sie Bedenken bezüglich der weiteren Behandlung?",
@@ -1735,7 +1735,7 @@
     "notes": "Gives the patient the final opportunity to contribute. FSP examiners look for this.",
     "tags": [
       "zusammenfassung",
-      "patient qüstions",
+      "patient questions",
       "concerns"
     ]
   },
@@ -1743,7 +1743,7 @@
     "id": "ana_100",
     "category": "Zusammenfassung und Rückversicherung",
     "doctorQuestion": "Vielen Dank für das ausführliche Gespräch. Ich werde jetzt die weitere Diagnostik einleiten. Haben Sie dazu noch Fragen?",
-    "simpleEnglish": "Thank you for this detailed conversation. I will now initiate further diagnostics. Do you have any qüstions about that?",
+    "simpleEnglish": "Thank you for this detailed conversation. I will now initiate further diagnostics. Do you have any questions about that?",
     "patientPossibleAnswer": "Nein, vielen Dank für Ihre ausführliche Erklärung.",
     "followUpQuestions": [
       "Ich werde Sie über die Ergebnisse informieren, sobald sie vorliegen.",

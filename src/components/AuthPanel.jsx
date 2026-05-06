@@ -117,7 +117,7 @@ function computeSnapshotHash() {
  * Debounced auto-sync: listens for progress changes and uploads after a quiet period.
  * Tracks last uploaded hash; skips if nothing changed since last upload.
  */
-function useAutoSync(session, conflict, isManualOperation) {
+function useAutoSync(session, conflict, isManualOperation, onMetaChange) {
   const timerRef = useRef(null);
   const lastUploadedHashRef = useRef(null);
   const [autoSyncState, setAutoSyncState] = useState('idle'); // idle | saving | saved | failed
@@ -147,18 +147,18 @@ function useAutoSync(session, conflict, isManualOperation) {
       setAutoSyncState('failed');
       const errMsg = friendlyAuthError(error.message);
       setSyncMeta({ lastErrorAt: new Date().toISOString(), lastErrorMessage: errMsg });
-      setSyncMetaState(getSyncMeta());
+      onMetaChange?.(getSyncMeta());
     } else {
       lastUploadedHashRef.current = currentHash;
       setAutoSyncState('saved');
       setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'auto' });
-      setSyncMetaState(getSyncMeta());
+      onMetaChange?.(getSyncMeta());
       // Clear "saved" after a few seconds
       setTimeout(() => {
         setAutoSyncState(prev => prev === 'saved' ? 'idle' : prev);
       }, 4000);
     }
-  }, [session, conflict]);
+  }, [session, conflict, onMetaChange]);
 
   // Listen for progress-changed events
   const syncEnabled = !!(session?.user?.id && !conflict);
@@ -348,7 +348,7 @@ export default function AuthPanel() {
   const [signUpLoading, setSignUpLoading] = useState(false);
 
   const enabled = isSupabaseEnabled();
-  const autoSyncState = useAutoSync(session, conflict, isManualOp);
+  const autoSyncState = useAutoSync(session, conflict, isManualOp, setSyncMetaState);
 
   // Clear message after 5s
   const flash = useCallback((msg) => {

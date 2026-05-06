@@ -217,21 +217,21 @@ function parseAIResponse(result) {
       const text = result.response;
       try {
         return new Response(JSON.stringify(JSON.parse(text.trim())), { headers: corsHeaders() });
-      } catch {}
+      } catch { /* empty */ }
       // Try extracting from markdown fences
       const fenceMatch = text.match(/```(?:json)?\n?([\s\S]*?)(?:\n?```|$)/);
       if (fenceMatch) {
         try {
           const parsed = JSON.parse(fenceMatch[1].trim());
           return new Response(JSON.stringify(parsed), { headers: corsHeaders() });
-        } catch {}
+        } catch { /* empty */ }
       }
       // Try finding a JSON object in the text
       const braceMatch = text.match(/{[\s\S]*?"[a-zA-Z]+\"[\s\S]*?}/);
       if (braceMatch) {
         try {
           return new Response(JSON.stringify(JSON.parse(braceMatch[0])), { headers: corsHeaders() });
-        } catch {}
+        } catch { /* empty */ }
       }
       return new Response(JSON.stringify({ error: 'Could not extract JSON from response', raw: text }), {
         status: 500, headers: corsHeaders(),
