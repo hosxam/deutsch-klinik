@@ -385,11 +385,21 @@ export default function DailyMissionPage() {
   const getCm = useCallback(() => mi < ms.length ? ms[mi] : null, [mi, ms]);
   const getMeta = () => { const c = getCm(); return c ? MISSION_META[c.type] : null; };
 
+  useEffect(() => {
+    const mission = mi < ms.length ? ms[mi] : null;
+    if (mission?.type === 'lesson') {
+      setLsStart(false);
+      setLsDone(false);
+      setFullLesson(null);
+    }
+  }, [mi, ms]);
+
   const advance = (type, result) => {
     const ld = loadSession(lvl) || sesh;
+    const nextMissionIndex = (ld.currentMission || 0) + 1;
     const up = {
       ...ld,
-      currentMission: (ld.currentMission || 0) + 1,
+      currentMission: nextMissionIndex,
       completedMissions: [...(ld.completedMissions || []), type],
       missionResults: { ...(ld.missionResults || {}), [type]: result }
     };
@@ -400,6 +410,11 @@ export default function DailyMissionPage() {
       setCompShow(true);
       clearSession();
     } else {
+      if (ms[nextMissionIndex]?.type === 'lesson') {
+        setLsStart(false);
+        setLsDone(false);
+        setFullLesson(null);
+      }
       setMi(up.currentMission);
     }
   };

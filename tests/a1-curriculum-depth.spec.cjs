@@ -191,6 +191,24 @@ test.describe('A1 curriculum depth and alignment', () => {
     await expect(page.getByText('Common Mistakes').first()).toBeVisible();
   });
 
+  test('consecutive daily lesson missions show full lesson content before completion banner', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/daily');
+
+    await page.getByRole('button', { name: /Study Lesson/i }).click();
+    await page.getByRole('button', { name: /Mark Lesson Complete/i }).click();
+    await page.getByRole('button', { name: /Next Mission/i }).click();
+
+    await expect(page.getByText('Study lesson 2 of 2', { exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Study Lesson/i })).toBeVisible();
+    await expect(page.getByText('Lesson Complete!')).toHaveCount(0);
+
+    await page.getByRole('button', { name: /Study Lesson/i }).click();
+    await expect(page.getByRole('heading', { name: /Das Alphabet und die Zahlen|Das Alphabet, Aussprache und Zahlen/i })).toBeVisible();
+    await expect(page.getByText('Explanation:')).toBeVisible();
+    await expect(page.getByRole('button', { name: /Mark Lesson Complete/i })).toBeVisible();
+  });
+
   test('daily A1 grammar practice recommends the prerequisite lesson before tagged practice', async ({ page }) => {
     await seed(page);
     await gotoPreview(page, '/level/A1/daily?forceMission=grammar');
