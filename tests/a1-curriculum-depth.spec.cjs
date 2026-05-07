@@ -209,6 +209,50 @@ test.describe('A1 curriculum depth and alignment', () => {
     await expect(page.getByRole('button', { name: /Mark Lesson Complete/i })).toBeVisible();
   });
 
+  test('A1 lessons 3 through 17 render visible depth sections', async ({ page }) => {
+    await seed(page);
+
+    for (let lessonNumber = 3; lessonNumber <= 17; lessonNumber += 1) {
+      await gotoPreview(page, `/level/A1/lessons/A1_lesson_${lessonNumber}`);
+      await expect(page.getByRole('heading', { name: 'Explanation' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Examples' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Common Mistakes' })).toBeVisible();
+      await expect(page.getByText(/Mini Drills|Controlled Practice/i).first()).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Linked Practice and Remediation' })).toBeVisible();
+    }
+  });
+
+  test('A1 lesson 4 visibly teaches masculine accusative changes and object verbs', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/lessons/A1_lesson_4');
+
+    await expect(page.getByText(/only masculine articles visibly change/i)).toBeVisible();
+    await expect(page.getByText('den/einen').first()).toBeVisible();
+    await expect(page.getByText('Ich sehe den Mann.').first()).toBeVisible();
+    await expect(page.getByText(/sehen, haben, kaufen, essen, trinken, besuchen/i)).toBeVisible();
+  });
+
+  test('A1 lesson 8 visibly teaches modal verb forms and final infinitive pattern', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/lessons/A1_lesson_8');
+
+    await expect(page.getByText(/second verb stays in the infinitive at the end/i)).toBeVisible();
+    await expect(page.getByText('ich kann, du kannst, er kann, wir können').first()).toBeVisible();
+    await expect(page.getByText('Ich kann schwimmen.').first()).toBeVisible();
+    await expect(page.getByText('Ich kann gut singen.').first()).toBeVisible();
+  });
+
+  test('A1 lesson 16 visibly teaches medical haben phrases and imperative forms', async ({ page }) => {
+    await seed(page);
+    await gotoPreview(page, '/level/A1/lessons/A1_lesson_16');
+
+    await expect(page.getByText(/For symptoms, A1 uses haben/i)).toBeVisible();
+    await expect(page.getByText('Ich habe Schmerzen.').first()).toBeVisible();
+    await expect(page.getByText('Gehen Sie nach links. Nehmen Sie Platz.').first()).toBeVisible();
+    await expect(page.getByText('Sei leise!').first()).toBeVisible();
+    await expect(page.getByText('Seid leise!').first()).toBeVisible();
+  });
+
   test('daily A1 grammar practice recommends the prerequisite lesson before tagged practice', async ({ page }) => {
     await seed(page);
     await gotoPreview(page, '/level/A1/daily?forceMission=grammar');
