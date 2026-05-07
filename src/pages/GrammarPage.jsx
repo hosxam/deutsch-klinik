@@ -48,6 +48,7 @@ export default function GrammarPage() {
   const [quizMode, setQuizMode] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
   const [quizTotal, setQuizTotal] = useState(0);
+  const [wrongAnswers, setWrongAnswers] = useState([]);
 
   const inputRef = useRef(null);
   const ex = exercises[currentIndex];
@@ -58,6 +59,7 @@ export default function GrammarPage() {
     setShowResult(null);
     setUserAnswer('');
     setCompleted(false);
+    setWrongAnswers([]);
   }, [levelId]);
 
   if (!ex) {
@@ -86,6 +88,15 @@ export default function GrammarPage() {
     if (quizMode) {
       setQuizTotal(quizTotal + 1);
       if (correct) setQuizScore(quizScore + 1);
+    }
+    if (!correct) {
+      setWrongAnswers(prev => [...prev, {
+        id: ex.id,
+        userAnswer: ans,
+        correctAnswer: ex.answer,
+        explanation: ex.explanation || 'Review the rule for this topic, then retry the exercise.',
+        lessonId: ex.lessonId || ex.taughtInLessonId || ex.remediationLessonId,
+      }]);
     }
 
     // 2. Track grammar mastery (both correct and incorrect)
@@ -126,6 +137,7 @@ export default function GrammarPage() {
     setQuizMode(false);
     setQuizScore(0);
     setQuizTotal(0);
+    setWrongAnswers([]);
   };
 
   // Mistake notebook link
@@ -148,6 +160,25 @@ export default function GrammarPage() {
             {isDaily ? 'Daily Mission Complete!' : 'Grammar Completed!'}
           </h2>
           <p style={{ fontSize: '2rem', fontWeight: 800, color: '#22c55e', margin: '1rem 0' }}>{score}/{exercises.length}</p>
+          {exercises.length > 0 && (score / exercises.length) * 100 < 60 && (
+            <div style={{ textAlign: 'left', padding: '1rem', borderRadius: '12px', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', marginBottom: '1rem' }}>
+              <h3 style={{ color: '#ef4444', fontSize: '1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Needs Work</h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+                You scored {Math.round((score / exercises.length) * 100)}%. Review the missed rule examples, then try this set again.
+              </p>
+              <div style={{ display: 'grid', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                {wrongAnswers.map(q => (
+                  <div key={q.id} style={{ padding: '0.75rem', borderRadius: '8px', background: 'var(--bg-card)', fontSize: '0.8rem' }}>
+                    <div><span style={{ color: '#ef4444' }}>{q.userAnswer}</span> {' -> '} <span style={{ color: '#22c55e' }}>{q.correctAnswer}</span></div>
+                    <p style={{ color: 'var(--text-muted)', marginTop: '0.25rem' }}>{q.explanation}</p>
+                  </div>
+                ))}
+              </div>
+              {wrongAnswers[0]?.lessonId && (
+                <Link to={`/level/${levelId}/lessons/${wrongAnswers[0].lessonId}`} style={{ ...s.btn, textDecoration: 'none', marginRight: '0.5rem' }}>Review Lesson</Link>
+              )}
+            </div>
+          )}
           <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button style={s.btn} onClick={reset}><RotateCcw size={14} style={{ marginRight: '0.4rem' }} />Try Again</button>
             <Link to={`/level/${levelId}`} style={{ ...s.btn, textDecoration: 'none' }}>Back to Level</Link>

@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState } from '../utils/store';
+import { getState, updateState, recordAnswer } from '../utils/store';
 import speakingData from '../data/speaking.json';
 import {
   Mic, Square, Clock, Lightbulb, Copy, ClipboardCheck,
@@ -29,6 +29,7 @@ export default function SpeakingPage() {
   const [aiResult, setAiResult] = useState(null);
 
   const speakingRef = useRef(null);
+  const remediationLoggedRef = useRef(new Set());
 
   // Transcript state
   const [transcript, setTranscript] = useState('');
@@ -64,6 +65,23 @@ export default function SpeakingPage() {
       }
     };
   }, [prepTimer, talkTimer]);
+
+  useEffect(() => {
+    const score = Number(aiResult?.score);
+    if (!prompt || !Number.isFinite(score) || score >= 6) return;
+    const key = `${levelId}_${prompt.id}_${score}`;
+    if (remediationLoggedRef.current.has(key)) return;
+    remediationLoggedRef.current.add(key);
+    recordAnswer(
+      levelId,
+      prompt.id,
+      transcript || '[speaking attempt]',
+      aiResult.correctedTranscript || aiResult.strongerAnswer || 'Review speaking feedback',
+      prompt.title || 'Speaking',
+      false,
+      'speaking'
+    );
+  }, [aiResult, levelId, prompt, transcript]);
 
   // --- Timer ---
 
@@ -517,6 +535,25 @@ export default function SpeakingPage() {
                 </div>
                 <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Speaking Score</div>
               </div>
+
+              {Number(aiResult.score) < 6 && (
+                <div className="rounded-xl p-4 space-y-3" style={{ backgroundColor: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)' }}>
+                  <h3 className="text-sm font-semibold" style={{ color: '#ff3355' }}>Needs Work</h3>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                    You scored {aiResult.score}/10. Practice the corrected transcript, memorize the stronger phrases, and retry the same prompt.
+                  </p>
+                  {(aiResult.mistakes || []).map((m, i) => (
+                    <div key={i} className="p-3 rounded-lg text-xs" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                      <div><span style={{ color: '#ff3355' }}>{m.original}</span> {' -> '} <span style={{ color: '#3bff9e' }}>{m.corrected}</span></div>
+                      {m.explanation && <p style={{ color: 'var(--text-muted)', marginTop: '0.25rem' }}>{m.explanation}</p>}
+                    </div>
+                  ))}
+                  <div className="flex flex-wrap gap-2">
+                    <Link to={`/level/${levelId}`} className="px-3 py-2 rounded-lg text-xs" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', textDecoration: 'none' }}>Review level work</Link>
+                    <button type="button" onClick={() => changePrompt(currentIndex)} className="px-3 py-2 rounded-lg text-xs" style={{ backgroundColor: '#ff3355', color: '#fff' }}>Try again</button>
+                  </div>
+                </div>
+              )}
 
               {/* Rubric */}
               {aiResult.rubric && (

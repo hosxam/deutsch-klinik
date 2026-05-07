@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { updateLevelProgress } from '../utils/store';
+import { updateLevelProgress, recordAnswer } from '../utils/store';
 import listeningData from '../data/listening.json';
 import LevelLock from '../components/LevelLock';
 import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle, FileAudio } from 'lucide-react';
@@ -280,7 +280,12 @@ export default function ListeningPage() {
     submittedRef.current = true;
     let s = 0;
     ex.questions.forEach(q => {
-      if (normalizeChoice(answers[q.id]) === normalizeChoice(q.answer)) s++;
+      const correct = normalizeChoice(answers[q.id]) === normalizeChoice(q.answer);
+      if (correct) {
+        s++;
+      } else {
+        recordAnswer(levelId, `${ex.id}_${q.id}`, answers[q.id] || '', q.answer, ex.title || 'Listening', false, 'listening');
+      }
     });
     setScore(s);
     setSubmitted(true);
@@ -297,6 +302,18 @@ export default function ListeningPage() {
 
   // Determine if any answer has been selected
   const allAnswered = ex?.questions?.every(q => answers[q.id] !== undefined) || false;
+  const scorePercent = ex?.questions?.length ? (score / ex.questions.length) * 100 : 0;
+  const wrongAnswers = submitted
+    ? (ex.questions || [])
+      .filter(q => normalizeChoice(answers[q.id]) !== normalizeChoice(q.answer))
+      .map(q => ({
+        id: q.id,
+        userAnswer: answers[q.id] || '(no answer)',
+        correctAnswer: q.answer,
+        explanation: q.explanation || 'Replay the audio, read the transcript, and answer this item again.',
+      }))
+    : [];
+  const resetExercise = () => goToExercise(currentEx);
 
   // Preload next exercise audio metadata
   useEffect(() => {
@@ -647,6 +664,27 @@ export default function ListeningPage() {
               {score >= ex.questions.length * 0.7 ? 'Well done!' : score >= ex.questions.length * 0.5 ? 'Keep practicing!' : 'Try again for a better result'}
             </p>
           </div>
+
+          {scorePercent < 60 && (
+            <div className="rounded-xl p-4 space-y-3" style={{ backgroundColor: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)' }}>
+              <h3 className="text-sm font-semibold" style={{ color: '#ef4444' }}>Needs Work</h3>
+              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                You scored {Math.round(scorePercent)}%. Replay the audio, review the transcript, then retry the missed questions.
+              </p>
+              <div className="space-y-2">
+                {wrongAnswers.map(q => (
+                  <div key={q.id} className="text-xs rounded-lg p-3" style={{ backgroundColor: 'var(--bg-card)', color: 'var(--text-primary)' }}>
+                    <div><span style={{ color: '#ef4444' }}>{q.userAnswer}</span> {' -> '} <span style={{ color: '#22c55e' }}>{q.correctAnswer}</span></div>
+                    <p style={{ color: 'var(--text-muted)', marginTop: '0.25rem' }}>{q.explanation}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {ex.lessonId && <Link to={`/level/${levelId}/lessons/${ex.lessonId}`} className="px-3 py-2 rounded-lg text-xs" style={{ backgroundColor: 'var(--bg-card)', color: 'var(--accent)', textDecoration: 'none' }}>Review lesson</Link>}
+                <button type="button" onClick={resetExercise} className="px-3 py-2 rounded-lg text-xs" style={{ backgroundColor: '#ef4444', color: '#fff' }}>Try again</button>
+              </div>
+            </div>
+          )}
 
           {/* Transcript toggle */}
           <button

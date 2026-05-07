@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.4 — Adaptive Remediation on Bad Score
-**Last completed task:** Task 2.3 — Session Time Tracker
+**Next task:** Task 2.5 — Weak Topics: Make Them Actionable
+**Last completed task:** Task 2.4 — Adaptive Remediation on Bad Score
 
 ## Completed Task Log
 
@@ -47,6 +47,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 2.1 — Study Goal: Auto-Predict Finish Date. Removed the manual goal date and plan-type controls from the study goal form, added target-level + 15-90 minute slider inputs, added automatic finish-date calculation from target level, daily minutes, and progress, preserved saved goal compatibility for existing adaptive-plan utilities, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/components/StudyGoalTracker.jsx`.
 - [x] Task 2.2 — Time-Based Daily Plan Engine. Added explicit daily-minute time-budget generation in `DailyMissionPage`, mapped flashcard and Medical FSP allocations into supported mission types, preserved existing adaptive remediation/vocab behavior, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/DailyMissionPage.jsx`.
 - [x] Task 2.3 — Session Time Tracker. Added day-keyed `studyLog` storage with `recordStudyTime`, `getTodayStudyMinutes`, and `getStudyHistory`, recorded elapsed non-skipped Daily Mission time on mission advance, switched Study Goal progress to actual logged minutes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/DailyMissionPage.jsx`, `src/components/StudyGoalTracker.jsx`.
+- [x] Task 2.4 — Adaptive Remediation on Bad Score. Added low-score Needs Work panels to Listening, Grammar, and Speaking flows, listed missed answers with corrections/explanations where available, linked back to relevant lesson or level review, added retry actions, logged failed listening and speaking attempts to the Mistakes Notebook, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/ListeningPage.jsx`, `src/pages/SpeakingPage.jsx`, `src/pages/GrammarPage.jsx`.
 
 ## Mega Plan
 
@@ -582,7 +583,7 @@ export function getStudyHistory(days = 7) {
 
 **In StudyGoalTracker.jsx:** Replace task-count display with `getTodayStudyMinutes()` as a progress bar toward `goal.dailyMinutes`.
 
-## Task 2.4 — Adaptive Remediation on Bad Score
+## [x] Task 2.4 — Adaptive Remediation on Bad Score
 **Files:** `src/pages/ListeningPage.jsx`, `src/pages/SpeakingPage.jsx`, `src/pages/GrammarPage.jsx`
 
 After any score below 60%, automatically show a "Needs Work" panel:
