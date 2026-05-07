@@ -25,9 +25,9 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 
 ## Resume Point
 
-**Phase:** Phase 1
-**Next task:** Task 1.8 — Fix WritingPage Direct State Mutation
-**Last completed task:** Task 1.7 — Delete Test Routes
+**Phase:** Phase 2
+**Next task:** Task 2.1 — Study Goal: Auto-Predict Finish Date
+**Last completed task:** Task 1.8 — Fix WritingPage Direct State Mutation
 
 ## Completed Task Log
 
@@ -43,6 +43,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 1.5 — Reading Requirement Missing from LevelPage. Verified `LevelPage` already displays Reading Tests in both missing requirements and exam requirements, made no source code changes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 1.6 — isExamUnlocked Crash on Invalid Level. Verified `isExamUnlocked` already returns false without `levelData`, `LevelPage` calls it after the invalid-level guard, and `ExamPage` gates the call behind `levelData`; validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 1.7 — Delete Test Routes. Verified `src/pages/TestPage.jsx` and `src/pages/TestDataPage.jsx` are absent and `src/App.jsx` contains no debug test routes; the real Placement Test route remains. Validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
+- [x] Task 1.8 — Fix WritingPage Direct State Mutation. Verified `WritingPage` already appends submissions immutably with `[...(state.writings || []), newWriting]`, made no source code changes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 
 ## Mega Plan
 
@@ -444,7 +445,7 @@ Same fix in `ExamPage.jsx`.
 
 Delete both test page files. Remove both Route entries from App.jsx. These are live in production and expose debug tools.
 
-## [ ] Task 1.8 — Fix WritingPage Direct State Mutation
+## [x] Task 1.8 — Fix WritingPage Direct State Mutation
 **File:** `src/pages/WritingPage.jsx`
 
 ```js
@@ -468,7 +469,7 @@ updateState({ writings });
 # PHASE 2 — STUDY LOGIC ENGINE (Core intelligence, ~2 days)
 # ═══════════════════════════════════════════════════════
 
-## Task 2.1 — Study Goal: Auto-Predict Finish Date
+## [ ] Task 2.1 — Study Goal: Auto-Predict Finish Date
 **File:** `src/components/StudyGoalTracker.jsx`
 
 **Remove:** `targetDate` input field entirely.
