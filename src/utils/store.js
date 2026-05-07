@@ -570,6 +570,18 @@ export function markMistakeMastered(level, indexOrMatcher) {
   saveState(state);
 }
 
+export function markMistakeMasteredById(level, exerciseId) {
+  if (!exerciseId) return;
+  if (!state.incorrectAnswers[level]) return;
+  const before = state.incorrectAnswers[level].length;
+  state.incorrectAnswers[level] = state.incorrectAnswers[level]
+    .filter(m => m.exerciseId !== exerciseId);
+  state.mistakeNotebook = Object.fromEntries(Object.entries(state.mistakeNotebook || {}).filter(([, m]) => (
+    m.exerciseId !== exerciseId
+  )));
+  if (state.incorrectAnswers[level].length < before) saveState(state);
+}
+
 // ===== EXAM UNLOCK CHECK =====
 
 export function isExamUnlocked(level, levelData) {

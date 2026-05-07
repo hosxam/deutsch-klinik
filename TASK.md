@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 1
-**Next task:** Task 1.2 — Fix Mark-as-Mastered Bug
-**Last completed task:** Task 1.1 — Two-Profile System (Login)
+**Next task:** Task 1.3 — Vocab Mistakes Never Recorded
+**Last completed task:** Task 1.2 — Fix Mark-as-Mastered Bug
 
 ## Completed Task Log
 
@@ -37,6 +37,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 0.2 — Remove Grammar Duplicates. Added `scripts/dedup-grammar.cjs`, adapted it to skip non-array metadata keys in the current `grammar.json` schema, removed 14 duplicate grammar exercises, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/data/grammar.json`, `scripts/dedup-grammar.cjs`.
 - [x] Task 0.3 — Validate Lesson–Exercise Alignment. Added `scripts/audit-lesson-coverage.cjs`, checked `lessonId`, `taughtInLessonId`, `remediationLessonId`, and `prerequisiteLessonIds`, generated `audit-lesson-gaps.json`, found 0 missing lesson references, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `scripts/audit-lesson-coverage.cjs`, `audit-lesson-gaps.json`.
 - [x] Task 1.1 — Two-Profile System (Login). Added local profile selection for Hossam and wife, namespaced localStorage state by active profile, added profile switch controls to desktop/mobile navigation, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/LoginPage.jsx`, `src/App.jsx`, `src/components/Layout.jsx`.
+- [x] Task 1.2 — Fix Mark-as-Mastered Bug. Added `markMistakeMasteredById(level, exerciseId)` to the store, switched Mistake Notebook mastering to the ID-based API, guarded missing IDs, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/MistakeNotebookPage.jsx`.
 
 ## Mega Plan
 
@@ -343,7 +344,7 @@ if (!getCurrentProfileName()) return <LoginPage />;
 **In `src/components/Layout.jsx`:**
 Add to the top-right of the nav bar: profile avatar (emoji based on name) + "Switch" button that calls `signOutProfile()`.
 
-## [ ] Task 1.2 — Fix Mark-as-Mastered Bug
+## [x] Task 1.2 — Fix Mark-as-Mastered Bug
 **Files:** `src/pages/MistakeNotebookPage.jsx`, `src/utils/store.js`
 
 **Root cause:** `storeMistakes.indexOf(mistake)` always returns -1 because objects are compared by reference. Then `splice(-1, 1)` silently deletes the wrong item.
@@ -369,7 +370,7 @@ const handleMarkMasteredById = (level, exerciseId) => {
 };
 ```
 
-## Task 1.3 — Vocab Mistakes Never Recorded
+## [ ] Task 1.3 — Vocab Mistakes Never Recorded
 **Files:** `src/pages/VocabularyPage.jsx`, `src/pages/FlashcardPage.jsx`
 
 **Root cause:** Neither page calls `recordAnswer()`, so `state.incorrectAnswers` never gets vocab entries, and the Mistakes section only shows grammar.

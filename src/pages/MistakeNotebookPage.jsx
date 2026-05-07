@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   getState, getMistakesByLevel, getMistakeNotebookItems, getWeakTopics,
   getDueVocabWords, recordVocabAnswer, recordAnswer,
-  markMistakeMastered, clearMistakeByIndex,
+  markMistakeMasteredById, clearMistakeByIndex,
 } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import {
@@ -125,8 +125,8 @@ export default function MistakeNotebookPage() {
     setState({ ...getState() });
   };
 
-  const handleMarkMastered = (level, idx) => {
-    markMistakeMastered(level, idx);
+  const handleMarkMasteredById = (level, exerciseId) => {
+    markMistakeMasteredById(level, exerciseId);
     setState({ ...getState() });
   };
 
@@ -344,7 +344,7 @@ export default function MistakeNotebookPage() {
                             <div style={{ marginTop: '12px', display: 'flex', gap: '8px' }}>
                               <button
                                 onClick={() => {
-                                  handleMarkMastered(level, actualMatcher);
+                                  handleMarkMasteredById(level, mistake.exerciseId);
                                 }}
                                 style={{
                                   padding: '6px 12px', borderRadius: '6px', border: '1px solid #3bff9e',
