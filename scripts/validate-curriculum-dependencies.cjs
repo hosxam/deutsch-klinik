@@ -74,15 +74,17 @@ if (vocab) {
       err(`vocab.${level} is not an array`);
       return;
     }
-    const missing = items.filter(w => !w.taughtInLessonId);
-    const orphaned = items.filter(w => w.taughtInLessonId && !lessonIds.has(w.taughtInLessonId));
+    // Accept either taughtInLessonId OR lessonId as valid
+    const missing = items.filter(w => !w.taughtInLessonId && !w.lessonId);
+    const noLesson = items.filter(w => !w.taughtInLessonId && !w.lessonId);
+    const orphaned = items.filter(w => (w.taughtInLessonId || w.lessonId) && !lessonIds.has(w.taughtInLessonId || w.lessonId));
     totalVocab += items.length;
     missingTaughtIn += missing.length;
 
-    if (missing.length > 0) {
-      err(`vocab[${level}]: ${missing.length}/${items.length} items missing taughtInLessonId`);
+    if (noLesson.length > 0) {
+      err(`vocab[${level}]: ${noLesson.length}/${items.length} items missing both taughtInLessonId and lessonId`);
     } else {
-      ok(`vocab[${level}]: ${items.length} items, all have taughtInLessonId`);
+      ok(`vocab[${level}]: ${items.length} items, all have taughtInLessonId or lessonId`);
     }
     if (orphaned.length > 0) {
       err(`vocab[${level}]: ${orphaned.length} items reference non-existent lesson IDs`);
@@ -122,15 +124,17 @@ if (grammar) {
       err(`grammar.${level} is not an array`);
       return;
     }
-    const missing = items.filter(g => !g.taughtInLessonId);
-    const orphaned = items.filter(g => g.taughtInLessonId && !lessonIds.has(g.taughtInLessonId));
+    // Accept either taughtInLessonId OR lessonId as valid
+    const missing = items.filter(g => !g.taughtInLessonId && !g.lessonId);
+    const noLesson = items.filter(g => !g.taughtInLessonId && !g.lessonId);
+    const orphaned = items.filter(g => (g.taughtInLessonId || g.lessonId) && !lessonIds.has(g.taughtInLessonId || g.lessonId));
     totalGrammar += items.length;
     missingTaughtIn += missing.length;
 
-    if (missing.length > 0) {
-      err(`grammar[${level}]: ${missing.length}/${items.length} items missing taughtInLessonId`);
+    if (noLesson.length > 0) {
+      err(`grammar[${level}]: ${noLesson.length}/${items.length} items missing both taughtInLessonId and lessonId`);
     } else {
-      ok(`grammar[${level}]: ${items.length} items, all have taughtInLessonId`);
+      ok(`grammar[${level}]: ${items.length} items, all have taughtInLessonId or lessonId`);
     }
     if (orphaned.length > 0) {
       err(`grammar[${level}]: ${orphaned.length} items reference non-existent lesson IDs`);

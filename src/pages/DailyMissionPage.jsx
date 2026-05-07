@@ -11,6 +11,12 @@ import {
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
+import {
+  isReadingUnlocked,
+  isListeningUnlocked,
+  isWritingUnlocked,
+  isSpeakingUnlocked
+} from '../utils/curriculumProgress';
 import grammarData from '../data/grammar.json';
 import grammarCurriculum from '../data/grammarCurriculum.json';
 import vocabData from '../data/germanVocabulary.json';
@@ -1143,40 +1149,56 @@ export default function DailyMissionPage() {
     return { label: 'Hard', color: '#ef4444' };
   };
 
-  // Current mission items from data
+  // Current mission items from data (curriculum-aware)
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    const items = (listeningData[level] || []).filter(item => !completed.has(item.id));
-    // Sort by difficulty (script length + question count) so easier items come first
+    let items = (listeningData[level] || []).filter(item => !completed.has(item.id));
+    // Curriculum filter: if level has curriculum map, only show unlocked items
+    if (hasCurriculumMap(level)) {
+      items = items.filter(item => isListeningUnlocked(item.id, s));
+    }
+    // Sort by difficulty so easier items come first
     items.sort((a, b) => {
       const scoreA = (a.script?.length || 0) + (a.questions?.length || 0) * 50;
       const scoreB = (b.script?.length || 0) + (b.questions?.length || 0) * 50;
       return scoreA - scoreB;
     });
-    return items[0] || (listeningData[level] || [])[0] || null;
+    return items[0] || null;
   };
   const getNextReading = (level) => {
     const s = getState();
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    const items = (readingData[level] || []).filter(item => !completed.has(item.id));
+    let items = (readingData[level] || []).filter(item => !completed.has(item.id));
+    // Curriculum filter: if level has curriculum map, only show unlocked items
+    if (hasCurriculumMap(level)) {
+      items = items.filter(item => isReadingUnlocked(item.id, s));
+    }
     items.sort((a, b) => {
       const scoreA = (a.text?.length || 0) + (a.questions?.length || 0) * 50;
       const scoreB = (b.text?.length || 0) + (b.questions?.length || 0) * 50;
       return scoreA - scoreB;
     });
-    return items[0] || (readingData[level] || [])[0] || null;
+    return items[0] || null;
   };
   const getNextWriting = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.writing || []).map(x => x.id || x.exerciseId || x));
-    const data = writingData[level] || [];
+    let data = writingData[level] || [];
+    if (hasCurriculumMap(level)) {
+      data = data.filter(item => !completed.has(item.id) && isWritingUnlocked(item.id, s));
+      return data[0] || null;
+    }
     return data.find(item => !completed.has(item.id)) || data[0] || null;
   };
   const getNextSpeaking = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.speaking || []).map(x => x.id || x.exerciseId || x));
-    const data = speakingData[level] || [];
+    let data = speakingData[level] || [];
+    if (hasCurriculumMap(level)) {
+      data = data.filter(item => !completed.has(item.id) && isSpeakingUnlocked(item.id, s));
+      return data[0] || null;
+    }
     return data.find(item => !completed.has(item.id)) || data[0] || null;
   };
   const listeningItem = cm.type === 'listening' ? getNextListening(lvl) : null;

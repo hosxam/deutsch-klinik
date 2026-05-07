@@ -81,6 +81,13 @@ for (const level of VALID_LEVELS) {
             dataLevel: level,
             dataKey: key,
           };
+          // Also index by bare question id for curriculum map compatibility
+          allDataItemsById[q.id] = {
+            id: q.id,
+            parentId: item.id,
+            dataLevel: level,
+            dataKey: key,
+          };
         }
       }
     }
