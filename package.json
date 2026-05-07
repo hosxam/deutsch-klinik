@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
+    "fix-data": "node scripts/fix-data-corruption.cjs",
     "validate-grammar": "node scripts/fix-grammar-answers.cjs",
     "validate-german-orthography": "node scripts/validate-german-orthography.cjs"
   },
