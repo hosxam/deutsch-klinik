@@ -3,7 +3,30 @@
  * All user progress, scores, settings saved here.
  * To reset: clear localStorage and reload.
  */
-const STORE_KEY = 'deutsch_klinik_state';
+const PROFILE_KEY = 'dk_active_profile';
+
+function getActiveProfile() {
+  return localStorage.getItem(PROFILE_KEY) || null;
+}
+
+function getStoreKey() {
+  const profile = getActiveProfile() || 'default';
+  return `deutsch_klinik_state_${profile}`;
+}
+
+export function switchProfile(name) {
+  localStorage.setItem(PROFILE_KEY, name);
+  window.location.reload();
+}
+
+export function signOutProfile() {
+  localStorage.removeItem(PROFILE_KEY);
+  window.location.reload();
+}
+
+export function getCurrentProfileName() {
+  return getActiveProfile();
+}
 
 const defaultState = {
   // Current level user is working on
@@ -94,7 +117,7 @@ const defaultState = {
 
 function loadState() {
   try {
-    const raw = localStorage.getItem(STORE_KEY);
+    const raw = localStorage.getItem(getStoreKey());
     if (raw) {
       const parsed = JSON.parse(raw);
       return mergeState(JSON.parse(JSON.stringify(defaultState)), parsed);
@@ -124,7 +147,7 @@ function mergeState(base, saved) {
 
 export function saveState(state) {
   try {
-    localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    localStorage.setItem(getStoreKey(), JSON.stringify(state));
     // Notify listeners that progress changed (for Supabase auto-sync etc.)
     try {
       window.dispatchEvent(new CustomEvent('deutsch-klinik-progress-changed', { detail: { timestamp: Date.now() } }));

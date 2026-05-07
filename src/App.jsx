@@ -2,6 +2,8 @@ import { lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
+import { getCurrentProfileName } from './utils/store';
+import LoginPage from './pages/LoginPage';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const LevelPage = lazy(() => import('./pages/LevelPage'));
@@ -50,6 +52,8 @@ function Loading() {
 }
 
 export default function App() {
+  if (!getCurrentProfileName()) return <LoginPage />;
+
   return (
     <ErrorBoundary>
       <HashRouter>

@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { getState, updateState } from '../utils/store';
+import { getCurrentProfileName, getState, signOutProfile, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, GraduationCap, Home, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle, Dumbbell, Settings } from 'lucide-react';
 
@@ -8,6 +8,7 @@ const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [theme, setTheme] = useState(getState().theme);
+  const profileName = getCurrentProfileName();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -34,6 +35,8 @@ export default function Layout() {
     { to: '/', label: 'Settings / Goal', icon: Settings, accent: 'var(--accent)' },
   ];
   const activeLevel = levels.find(l => location.pathname.startsWith(`/level/${l}`)) || getState().currentLevel || 'A1';
+  const profileLabel = profileName === 'hossam' ? 'Hossam' : 'Your Wife';
+  const profileIcon = profileName === 'hossam' ? '🩺' : '🌸';
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
@@ -93,6 +96,23 @@ export default function Layout() {
             </div>
 
             <div className="flex items-center gap-2">
+              <div
+                className="hidden sm:flex items-center gap-2 px-2.5 py-1.5 rounded-lg"
+                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+              >
+                <span aria-hidden="true">{profileIcon}</span>
+                <span className="text-xs font-semibold" style={{ color: 'var(--text-secondary)' }}>
+                  {profileLabel}
+                </span>
+                <button
+                  type="button"
+                  onClick={signOutProfile}
+                  className="text-xs font-semibold"
+                  style={{ color: 'var(--accent)' }}
+                >
+                  Switch
+                </button>
+              </div>
               <button
                 type="button"
                 onClick={toggleTheme}
@@ -160,6 +180,15 @@ export default function Layout() {
                 <ChevronRight size={14} className="ml-auto" style={{ color: 'var(--text-muted)' }} />
               </Link>
             ))}
+            <button
+              type="button"
+              onClick={signOutProfile}
+              className="w-full flex items-center gap-2 py-2 px-3 rounded-lg text-sm"
+              style={{ color: 'var(--accent)', backgroundColor: 'var(--bg-hover)' }}
+            >
+              <span aria-hidden="true">{profileIcon}</span>
+              Switch from {profileLabel}
+            </button>
           </div>
         )}
       </nav>
