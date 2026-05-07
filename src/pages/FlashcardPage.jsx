@@ -219,6 +219,14 @@ export default function FlashcardPage() {
 
   const handleReview = (difficulty) => {
     const word = words[index];
+    const isCorrect = difficulty >= 3;
+    recordVocabAnswer(`${word._level}_${word.id}`, isCorrect, {
+      level: word._level,
+      userAnswer: isCorrect ? 'Knew it' : '[flashcard]',
+      correctAnswer: word.translation || word.english || word.word || '',
+      translation: word.translation,
+      topic: word.topic || 'Vocabulary',
+    });
     setReviews([...reviews, { wordId: word.id, level: word._level, difficulty }]);
     if (index < words.length - 1) {
       setIndex(index + 1);
@@ -232,7 +240,6 @@ export default function FlashcardPage() {
       allReviews.forEach(r => {
         const key = `${r.level}_${r.wordId}`;
         const card = { ...(flashcards[key] || { ease: 2.5, interval: 1, due: today, repetitions: 0 }) };
-        recordVocabAnswer(r.wordId, r.difficulty >= 3);
         if (r.difficulty >= 3) {
           card.repetitions += 1;
           card.interval = card.repetitions === 1 ? 1 : card.repetitions === 2 ? 6 : Math.round(card.interval * card.ease);

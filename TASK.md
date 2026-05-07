@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 1
-**Next task:** Task 1.3 — Vocab Mistakes Never Recorded
-**Last completed task:** Task 1.2 — Fix Mark-as-Mastered Bug
+**Next task:** Task 1.4 — Flashcards Must Count Toward Exam Unlock
+**Last completed task:** Task 1.3 — Vocab Mistakes Never Recorded
 
 ## Completed Task Log
 
@@ -38,6 +38,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 0.3 — Validate Lesson–Exercise Alignment. Added `scripts/audit-lesson-coverage.cjs`, checked `lessonId`, `taughtInLessonId`, `remediationLessonId`, and `prerequisiteLessonIds`, generated `audit-lesson-gaps.json`, found 0 missing lesson references, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `scripts/audit-lesson-coverage.cjs`, `audit-lesson-gaps.json`.
 - [x] Task 1.1 — Two-Profile System (Login). Added local profile selection for Hossam and wife, namespaced localStorage state by active profile, added profile switch controls to desktop/mobile navigation, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/LoginPage.jsx`, `src/App.jsx`, `src/components/Layout.jsx`.
 - [x] Task 1.2 — Fix Mark-as-Mastered Bug. Added `markMistakeMasteredById(level, exerciseId)` to the store, switched Mistake Notebook mastering to the ID-based API, guarded missing IDs, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/MistakeNotebookPage.jsx`.
+- [x] Task 1.3 — Vocab Mistakes Never Recorded. Confirmed vocabulary quiz already records incorrect answers through `recordVocabAnswer`; fixed flashcard review to record each hard card immediately with level-qualified word IDs and mistake metadata, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/FlashcardPage.jsx`.
 
 ## Mega Plan
 
@@ -370,7 +371,7 @@ const handleMarkMasteredById = (level, exerciseId) => {
 };
 ```
 
-## [ ] Task 1.3 — Vocab Mistakes Never Recorded
+## [x] Task 1.3 — Vocab Mistakes Never Recorded
 **Files:** `src/pages/VocabularyPage.jsx`, `src/pages/FlashcardPage.jsx`
 
 **Root cause:** Neither page calls `recordAnswer()`, so `state.incorrectAnswers` never gets vocab entries, and the Mistakes section only shows grammar.
@@ -387,7 +388,7 @@ import { recordAnswer } from '../utils/store';
 recordAnswer(levelId, card.id, '[flashcard]', card.word, 'Vocabulary', false, 'vocab');
 ```
 
-## Task 1.4 — Flashcards Must Count Toward Exam Unlock
+## [ ] Task 1.4 — Flashcards Must Count Toward Exam Unlock
 **Files:** `src/pages/FlashcardPage.jsx`
 
 **Root cause:** FlashcardPage only updates `vocabularyMastery` (SM-2). It never calls `updateLevelProgress(levelId, 'vocab', ...)`, so flashcard reviews don't contribute to the exam unlock counter.
