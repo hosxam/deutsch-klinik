@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 1
-**Next task:** Task 1.4 — Flashcards Must Count Toward Exam Unlock
-**Last completed task:** Task 1.3 — Vocab Mistakes Never Recorded
+**Next task:** Task 1.5 — Reading Requirement Missing from LevelPage
+**Last completed task:** Task 1.4 — Flashcards Must Count Toward Exam Unlock
 
 ## Completed Task Log
 
@@ -39,6 +39,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 1.1 — Two-Profile System (Login). Added local profile selection for Hossam and wife, namespaced localStorage state by active profile, added profile switch controls to desktop/mobile navigation, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/LoginPage.jsx`, `src/App.jsx`, `src/components/Layout.jsx`.
 - [x] Task 1.2 — Fix Mark-as-Mastered Bug. Added `markMistakeMasteredById(level, exerciseId)` to the store, switched Mistake Notebook mastering to the ID-based API, guarded missing IDs, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/MistakeNotebookPage.jsx`.
 - [x] Task 1.3 — Vocab Mistakes Never Recorded. Confirmed vocabulary quiz already records incorrect answers through `recordVocabAnswer`; fixed flashcard review to record each hard card immediately with level-qualified word IDs and mistake metadata, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/FlashcardPage.jsx`.
+- [x] Task 1.4 — Flashcards Must Count Toward Exam Unlock. Updated flashcard review decisions to append `vocab` level progress immediately through `updateLevelProgress(level, 'vocab', { date, wordId, correct })`, removed the session-end overwrite path, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/FlashcardPage.jsx`.
 
 ## Mega Plan
 
@@ -388,7 +389,7 @@ import { recordAnswer } from '../utils/store';
 recordAnswer(levelId, card.id, '[flashcard]', card.word, 'Vocabulary', false, 'vocab');
 ```
 
-## [ ] Task 1.4 — Flashcards Must Count Toward Exam Unlock
+## [x] Task 1.4 — Flashcards Must Count Toward Exam Unlock
 **Files:** `src/pages/FlashcardPage.jsx`
 
 **Root cause:** FlashcardPage only updates `vocabularyMastery` (SM-2). It never calls `updateLevelProgress(levelId, 'vocab', ...)`, so flashcard reviews don't contribute to the exam unlock counter.
@@ -399,7 +400,7 @@ import { updateLevelProgress } from '../utils/store';
 updateLevelProgress(levelId, 'vocab', { date: new Date().toISOString(), wordId: card.id, correct: isCorrect });
 ```
 
-## Task 1.5 — Reading Requirement Missing from LevelPage
+## [ ] Task 1.5 — Reading Requirement Missing from LevelPage
 **Files:** `src/pages/LevelPage.jsx`
 
 Add the missing Requirement bar:
