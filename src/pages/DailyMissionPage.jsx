@@ -5,7 +5,8 @@ import {
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
-  getNextGrammarLesson, recordStudyMinutes, recordStudyTime, addRemediationRecommendation
+  getNextGrammarLesson, recordStudyMinutes, recordStudyTime, addRemediationRecommendation,
+  getDueVocabWords
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
@@ -394,6 +395,11 @@ export default function DailyMissionPage() {
   const [remIndex, setRemIndex] = useState(0);
   const [remCompleted, setRemCompleted] = useState([]);
   const [remSummary, setRemSummary] = useState(null);
+  const [fcIdx, setFcIdx] = useState(0);
+  const [fcFlipped, setFcFlipped] = useState(false);
+  const [fcCards, setFcCards] = useState([]);
+  const [fcDone, setFcDone] = useState(false);
+  const [fcStarted, setFcStarted] = useState(false);
   const sessionStartRef = useRef(Date.now());
   const aiEnabled = isCorrectionEnabled();
 
@@ -1963,26 +1969,147 @@ export default function DailyMissionPage() {
         </div>
       )}
 
-      {/* FLASHCARD MISSION */}
-      {cm.type === 'flashcards' && (
-        <div style={sCard}>
-          <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-            <BookOpen size={40} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
-            <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.25rem' }}>Flashcards in Today&apos;s Plan</h3>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-              Review due, weak, or track-relevant vocabulary before adding more new words. This counts toward study minutes and vocabulary progress.
-            </p>
-            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to={`/level/${lvl}/vocabulary/flashcards`} style={{ ...sBp, textDecoration: 'none' }}>
-                <BookOpen size={16} /> Open Flashcards
-              </Link>
+      {/* FLASHCARD MISSION — Inline SM-2 Flashcard Review */}
+      {cm.type === 'flashcards' && (() => {
+        const target = cm?.target || 10;
+        // Build card deck on first render
+        if (fcCards.length === 0 && !fcDone && !fcStarted) {
+          const levelWords = (vocabData[lvl] || []).map(w => ({ ...w, level: lvl }));
+          const allIds = levelWords.map(w => `${lvl}_${w.id}`);
+          const dueIds = new Set(getDueVocabWords(allIds));
+          const deck = levelWords
+            .filter(w => dueIds.has(`${lvl}_${w.id}`))
+            .slice(0, target);
+          // Async set outside render — use effect-equivalent timeout
+          setTimeout(() => setFcCards(deck), 0);
+        }
+
+        // Inline flashcard step
+        if (fcStarted && fcCards.length > 0 && fcIdx < fcCards.length) {
+          const current = fcCards[fcIdx];
+          const handleAnswer = (knew) => {
+            recordVocabAnswer(`${lvl}_${current.id}`, knew, {
+              level: lvl,
+              userAnswer: knew ? (current.translation || current.english || 'Knew it') : 'Still learning',
+              correctAnswer: current.translation || current.english || '',
+              topic: current.topic || 'Vocabulary',
+            });
+            const existing = (getLevelProgress(lvl, 'vocab') || [])
+              .flatMap(item => typeof item === 'string' ? [item] : (item?.wordIds || []));
+            setLevelProgress(lvl, 'vocab', [...new Set([...existing, `${lvl}_${current.id}`])]);
+            if (!knew) {
+              recordAnswer(lvl, `${lvl}_${current.id}`, '[flashcard]', current.word, 'Vocabulary', false, 'vocab');
+            }
+            if (fcIdx + 1 >= fcCards.length) {
+              setFcDone(true);
+              hFlashcardsDone();
+            } else {
+              setFcIdx(fcIdx + 1);
+              setFcFlipped(false);
+            }
+          };
+
+          return (
+            <div style={sCard}>
+              <div style={{ textAlign: 'center' }}>
+                <BookOpen size={36} style={{ color: '#3bff9e', marginBottom: '0.5rem' }} />
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.5rem' }}>Flashcard Review</h3>
+                <div
+                  onClick={() => setFcFlipped(!fcFlipped)}
+                  style={{
+                    cursor: 'pointer', padding: '2rem 1.5rem', margin: '1rem auto', maxWidth: '380px',
+                    borderRadius: '16px', background: 'var(--bg-card)', border: '2px solid var(--border)',
+                    transition: 'transform 0.3s, box-shadow 0.3s', userSelect: 'none',
+                    boxShadow: fcFlipped ? '0 4px 20px rgba(59,255,158,0.15)' : '0 2px 8px rgba(0,0,0,0.1)',
+                  }}
+                >
+                  {!fcFlipped ? (
+                    <>
+                      <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                        {current.article && <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginRight: '0.35rem' }}>{current.article}</span>}
+                        {current.word || current.german}
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tap to flip</div>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '0.4rem' }}>
+                        {current.translation || current.english}
+                      </div>
+                      {current.example && (
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontStyle: 'italic', marginTop: '0.3rem' }}>
+                          &ldquo;{current.example}&rdquo;
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+                <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+                  {fcIdx + 1} / {fcCards.length}
+                </p>
+                {fcFlipped && (
+                  <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
+                    <button
+                      onClick={() => handleAnswer(false)}
+                      style={{ ...sBp, background: 'rgba(255,51,85,0.15)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.3)' }}
+                    >
+                      <XCircle size={16} /> Didn&apos;t Know
+                    </button>
+                    <button
+                      onClick={() => handleAnswer(true)}
+                      style={{ ...sBp, background: 'rgba(59,255,158,0.15)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.3)' }}
+                    >
+                      <CheckCircle size={16} /> Knew It
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        }
+
+        // Deck ready but not started — show start screen
+        if (fcCards.length > 0 && !fcStarted && !fcDone) {
+          return (
+            <div style={sCard}>
+              <div style={{ textAlign: 'center' }}>
+                <BookOpen size={40} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
+                <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.25rem' }}>Flashcards in Today&apos;s Plan</h3>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>
+                  {fcCards.length} words due for review
+                </p>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                  Tap each card to see the answer, then mark if you knew it or not.
+                </p>
+                <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                  <button style={{ ...sBp, background: 'var(--accent)', color: '#fff' }} onClick={() => setFcStarted(true)}>
+                    <BookOpen size={16} /> Start Review
+                  </button>
+                  <Link to={`/level/${lvl}/vocabulary/flashcards`} style={{ ...sBp, textDecoration: 'none' }}>
+                    Open Full Flashcards
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        }
+
+        // All done or no cards
+        return (
+          <div style={sCard}>
+            <div style={{ textAlign: 'center' }}>
+              <CheckCircle size={40} style={{ color: '#22c55e', marginBottom: '0.75rem' }} />
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>Flashcards Complete</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+                {fcCards.length > 0 ? `Reviewed ${fcCards.length} words.` : 'No cards due right now.'} Well done!
+              </p>
               <button style={sBp} onClick={hFlashcardsDone}>
-                <CheckCircle size={16} /> Mark Flashcards Done
+                <CheckCircle size={16} /> Continue
               </button>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* REMEDIATION MISSION */}
       {cm.type === 'remediation' && (() => {

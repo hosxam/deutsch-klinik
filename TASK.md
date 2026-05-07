@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.7 — Flashcards in Every Daily Plan
-**Last completed task:** Task 2.6 — Vocab Review: SM-2 Due Queue Only
+**Next task:** Task 2.8 — VocabularyPage: Keyboard-Friendly, Dutch/Danish/Luxembourgish Flag, TTS — Let the User Decide
+**Last completed task:** Task 2.7 — Flashcards in Every Daily Plan
 
 ## Completed Task Log
 
@@ -50,6 +50,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 2.4 — Adaptive Remediation on Bad Score. Added low-score Needs Work panels to Listening, Grammar, and Speaking flows, listed missed answers with corrections/explanations where available, linked back to relevant lesson or level review, added retry actions, logged failed listening and speaking attempts to the Mistakes Notebook, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/ListeningPage.jsx`, `src/pages/SpeakingPage.jsx`, `src/pages/GrammarPage.jsx`.
 - [x] Task 2.5 — Weak Topics: Make Them Actionable. Updated weak topic Practice links to include a `topic` query parameter, added topic filtering to GrammarPage, added a visible "Practicing only" banner with a clear-filter link, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/MistakeNotebookPage.jsx`, `src/pages/GrammarPage.jsx`.
 - [x] Task 2.6 — Vocab Review: SM-2 Due Queue Only. Restricted Mistake Notebook vocab review to show only SM-2 due words via `getDueVocabWords`, removed duplicate sources (weak/mistake overlap), added "X words due" header, updated empty state to "All vocabulary reviewed — come back tomorrow", and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/MistakeNotebookPage.jsx`.
+- [x] Task 2.7 — Flashcards in Every Daily Plan. Replaced the external-link flashcard step in DailyMissionPage with an inline flip-card UI: tap to reveal translation/example, then "Knew It" / "Didn't Know" buttons that record SM-2 via `recordVocabAnswer` and log mistakes; built deck from `getDueVocabWords`; added start screen with count and done screen with review summary. Validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/DailyMissionPage.jsx`.
 
 ## Mega Plan
 
@@ -665,7 +666,7 @@ onClick={() => {
 Show count: "**{dueWords.length} words** due for review today"
 If count is 0: Show "✅ All vocabulary reviewed — come back tomorrow"
 
-## Task 2.7 — Flashcards in Every Daily Plan
+## [x] Task 2.7 — Flashcards in Every Daily Plan
 **File:** `src/pages/DailyMissionPage.jsx`
 
 Flashcard step is now built into the plan engine from Task 2.2. Implement the inline flashcard UI:
