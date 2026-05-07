@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.1 — Study Goal: Auto-Predict Finish Date
-**Last completed task:** Task 1.8 — Fix WritingPage Direct State Mutation
+**Next task:** Task 2.2 — Time-Based Daily Plan Engine
+**Last completed task:** Task 2.1 — Study Goal: Auto-Predict Finish Date
 
 ## Completed Task Log
 
@@ -44,6 +44,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 1.6 — isExamUnlocked Crash on Invalid Level. Verified `isExamUnlocked` already returns false without `levelData`, `LevelPage` calls it after the invalid-level guard, and `ExamPage` gates the call behind `levelData`; validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 1.7 — Delete Test Routes. Verified `src/pages/TestPage.jsx` and `src/pages/TestDataPage.jsx` are absent and `src/App.jsx` contains no debug test routes; the real Placement Test route remains. Validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 1.8 — Fix WritingPage Direct State Mutation. Verified `WritingPage` already appends submissions immutably with `[...(state.writings || []), newWriting]`, made no source code changes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
+- [x] Task 2.1 — Study Goal: Auto-Predict Finish Date. Removed the manual goal date and plan-type controls from the study goal form, added target-level + 15-90 minute slider inputs, added automatic finish-date calculation from target level, daily minutes, and progress, preserved saved goal compatibility for existing adaptive-plan utilities, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/components/StudyGoalTracker.jsx`.
 
 ## Mega Plan
 
@@ -469,7 +470,7 @@ updateState({ writings });
 # PHASE 2 — STUDY LOGIC ENGINE (Core intelligence, ~2 days)
 # ═══════════════════════════════════════════════════════
 
-## [ ] Task 2.1 — Study Goal: Auto-Predict Finish Date
+## [x] Task 2.1 — Study Goal: Auto-Predict Finish Date
 **File:** `src/components/StudyGoalTracker.jsx`
 
 **Remove:** `targetDate` input field entirely.
@@ -504,7 +505,7 @@ Display prominently:
 - "⏱ **312 days** at 90 min/day"
 - Status pill: 🟢 On Track / 🟡 Needs Work / 🔴 Behind
 
-## Task 2.2 — Time-Based Daily Plan Engine
+## [ ] Task 2.2 — Time-Based Daily Plan Engine
 **File:** `src/pages/DailyMissionPage.jsx`
 
 The daily plan must be generated from the user's `dailyMinutes` goal, not a fixed set of items.

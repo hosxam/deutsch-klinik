@@ -12,9 +12,42 @@ function getLocalDateString() {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
-function parseLocalDate(dateStr) {
-  const [y, m, d] = dateStr.split('-').map(Number);
-  return new Date(y, m - 1, d);
+const HOURS_NEEDED = {
+  A1: 75,
+  A2: 100,
+  B1: 150,
+  B2: 200,
+  C1: 250,
+  'Medical FSP': 120,
+};
+
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'Medical FSP'];
+
+function calcPredictedFinish(dailyMinutes, targetLevel, progressPct) {
+  const targetIdx = LEVEL_ORDER.indexOf(targetLevel);
+  const selectedLevels = LEVEL_ORDER.slice(0, targetIdx + 1);
+  const totalHours = selectedLevels.reduce((sum, level) => sum + (HOURS_NEEDED[level] || 0), 0);
+  const remainingHours = totalHours * (1 - Math.min((progressPct || 0) / 100, 0.99));
+  const daysNeeded = Math.ceil((remainingHours * 60) / Math.max(1, dailyMinutes));
+  const finish = new Date();
+  finish.setDate(finish.getDate() + daysNeeded);
+  return { finish, daysNeeded };
+}
+
+function formatLongDate(date) {
+  return date.toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
+function formatMinutes(minutes) {
+  const hours = Math.floor(minutes / 60);
+  const rest = minutes % 60;
+  if (hours && rest) return `${hours} hrs ${rest} min`;
+  if (hours) return `${hours} hr${hours > 1 ? 's' : ''}`;
+  return `${minutes} min`;
 }
 
 export function getStudyGoal() {
@@ -25,7 +58,6 @@ export function getStudyGoal() {
     if (!parsed || typeof parsed !== 'object') return null;
     return {
       targetLevel: parsed.targetLevel || 'B2',
-      targetDate: parsed.targetDate || '',
       dailyMinutes: typeof parsed.dailyMinutes === 'number' ? parsed.dailyMinutes : 30,
       planType: parsed.planType || 'exam',
     };
@@ -48,17 +80,6 @@ export function clearStudyGoal() {
   } catch (e) {
     console.warn('Failed to clear study goal.', e);
   }
-}
-
-function calculateDaysRemaining(targetDate) {
-  if (!targetDate) return null;
-  const today = new Date();
-  const pad = (n) => String(n).padStart(2, '0');
-  const todayStr = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
-  const target = parseLocalDate(targetDate);
-  const todayLocal = parseLocalDate(todayStr);
-  const diff = Math.ceil((target - todayLocal) / (1000 * 60 * 60 * 24));
-  return diff;
 }
 
 const ESTIMATED_MINUTES = {
@@ -315,41 +336,30 @@ function calculateOverallProgress(state) {
 }
 
 function estimateGoalStatus(state, goal) {
-  if (!goal || !goal.targetDate) return 'unknown';
-
-  const daysRemaining = calculateDaysRemaining(goal.targetDate);
-  if (daysRemaining === null) return 'unknown';
-
   const todayTasks = calculateTodayCompletedTasks(state);
-  
-
-  if (daysRemaining < 0) return 'behind';
-
   const progress = calculateOverallProgress(state);
-  if (progress === null) return 'unknown';
-
-  const expectedProgress = Math.min(100, Math.round((1 - daysRemaining / 365) * 100));
-  const buffer = 10;
-
-  if (progress >= expectedProgress - buffer && todayTasks > 0) return 'on_track';
-  if (progress >= expectedProgress - buffer - 15) return 'needs_work';
+  if (!goal || progress === null) return 'unknown';
+  if (todayTasks > 0 && progress > 0) return 'on_track';
+  if (todayTasks > 0) return 'needs_work';
   return 'behind';
 }
 
 export default function StudyGoalTracker() {
   const [goal, setGoal] = useState(null);
   const [editing, setEditing] = useState(false);
-  const [form, setForm] = useState({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30, planType: 'exam' });
+  const [form, setForm] = useState({ targetLevel: 'B2', dailyMinutes: 30 });
   const [showForm, setShowForm] = useState(false);
 
   const state = getState();
-  const daysRemaining = useMemo(() => calculateDaysRemaining(goal?.targetDate), [goal]);
   const todayTasks = useMemo(() => calculateTodayCompletedTasks(state), [state]);
   const goalEstimate = useMemo(() => getGoalEstimate(state, goal), [state, goal]);
   const todayMinutes = useMemo(() => Math.max(calculateAdaptiveTodayMinutes(state), calculateTodayMinutes(state)), [state]);
   const weekMinutes = useMemo(() => calculateWeekMinutes(state), [state]);
   const weekActiveDays = useMemo(() => calculateWeekActiveDays(state), [state]);
   const progressPct = useMemo(() => calculateOverallProgress(state), [state]);
+  const predicted = useMemo(() => goal
+    ? calcPredictedFinish(goal.dailyMinutes, goal.targetLevel, progressPct || 0)
+    : null, [goal, progressPct]);
   const status = useMemo(() => estimateGoalStatus(state, goal), [state, goal]);
 
   useEffect(() => {
@@ -358,9 +368,7 @@ export default function StudyGoalTracker() {
       setGoal(saved);
       setForm({
         targetLevel: saved.targetLevel || 'B2',
-        targetDate: saved.targetDate || '',
         dailyMinutes: saved.dailyMinutes || 30,
-        planType: saved.planType || 'exam',
       });
     }
   }, []);
@@ -368,9 +376,9 @@ export default function StudyGoalTracker() {
   const handleSave = () => {
     const newGoal = {
       targetLevel: form.targetLevel || 'B2',
-      targetDate: form.targetDate || '',
-      dailyMinutes: Math.max(1, Number(form.dailyMinutes) || 30),
-      planType: form.planType || 'exam',
+      targetDate: '',
+      dailyMinutes: Math.min(90, Math.max(15, Number(form.dailyMinutes) || 30)),
+      planType: 'exam',
     };
     saveStudyGoal(newGoal);
     setGoal(newGoal);
@@ -383,16 +391,14 @@ export default function StudyGoalTracker() {
     setGoal(null);
     setEditing(false);
     setShowForm(true);
-    setForm({ targetLevel: 'B2', targetDate: '', dailyMinutes: 30, planType: 'exam' });
+    setForm({ targetLevel: 'B2', dailyMinutes: 30 });
   };
 
   const handleEdit = () => {
     if (goal) {
       setForm({
         targetLevel: goal.targetLevel || 'B2',
-        targetDate: goal.targetDate || '',
         dailyMinutes: goal.dailyMinutes || 30,
-        planType: goal.planType || 'exam',
       });
     }
     setEditing(true);
@@ -456,84 +462,23 @@ export default function StudyGoalTracker() {
             </select>
           </div>
           <div>
-            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Goal Date (optional)</label>
+            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>
+              Daily Study Goal: {formatMinutes(form.dailyMinutes)}
+            </label>
             <input
-              type="date"
-              value={form.targetDate}
-              onChange={(e) => setForm({ ...form, targetDate: e.target.value })}
-              className="w-full px-3 py-2 rounded-lg text-sm"
-              style={{
-                backgroundColor: 'var(--bg-hover)',
-                color: 'var(--text-primary)',
-                border: '1px solid var(--border)',
-              }}
-            />
-          </div>
-          <div>
-            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Suggested daily targets</label>
-            <div className="flex gap-2">
-              {[
-                { label: 'Short', value: 15, color: '#3bff9e' },
-                { label: 'Standard', value: 30, color: '#ffd700' },
-                { label: 'Intensive', value: 60, color: '#06b6d4' },
-                { label: 'Mastery', value: 90, color: '#ff3355' },
-                { label: 'Immersion', value: 120, color: '#f97316' },
-              ].map(p => (
-                <button
-                  key={p.value}
-                  type="button"
-                  onClick={() => setForm({ ...form, dailyMinutes: p.value })}
-                  className="flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all"
-                  style={{
-                    backgroundColor: form.dailyMinutes === p.value ? p.color : 'var(--bg-hover)',
-                    color: form.dailyMinutes === p.value ? '#000' : 'var(--text-muted)',
-                    border: `1px solid ${form.dailyMinutes === p.value ? p.color : 'var(--border)'}`,
-                  }}
-                >
-                  {p.label}
-                  <span className="block text-xs font-normal mt-0.5" style={{ opacity: 0.8 }}>{p.value} min</span>
-                </button>
-              ))}
-            </div>
-          </div>
-          <div>
-            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Daily Study Goal (minutes)</label>
-            <input
-              type="number"
-              min="1"
-              max="480"
+              type="range"
+              min="15"
+              max="90"
+              step="15"
               value={form.dailyMinutes}
               onChange={(e) => setForm({ ...form, dailyMinutes: Number(e.target.value) || 30 })}
-              className="w-full px-3 py-2 rounded-lg text-sm"
-              style={{
-                backgroundColor: 'var(--bg-hover)',
-                color: 'var(--text-primary)',
-                border: '1px solid var(--border)',
-              }}
+              className="w-full"
             />
-          </div>
-          <div>
-            <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>Plan Type</label>
-            <div className="flex gap-2">
-              {[
-                { value: 'exam', label: 'Exam Unlock', desc: 'Minimum requirements to unlock exam', color: '#06b6d4' },
-                { value: 'full', label: 'Full Mastery', desc: 'Complete all content in the level', color: '#8b5cf6' },
-              ].map(p => (
-                <button
-                  key={p.value}
-                  type="button"
-                  onClick={() => setForm({ ...form, planType: p.value })}
-                  className="flex-1 px-2 py-2 rounded-lg text-xs font-semibold transition-all"
-                  style={{
-                    backgroundColor: form.planType === p.value ? p.color : 'var(--bg-hover)',
-                    color: form.planType === p.value ? '#000' : 'var(--text-muted)',
-                    border: `1px solid ${form.planType === p.value ? p.color : 'var(--border)'}`,
-                  }}
-                >
-                  <span className="block">{p.label}</span>
-                  <span className="block text-[10px] font-normal mt-0.5" style={{ opacity: 0.75 }}>{p.desc}</span>
-                </button>
-              ))}
+            <div className="flex justify-between text-[10px] mt-1" style={{ color: 'var(--text-muted)' }}>
+              <span>15 min</span>
+              <span>30 min</span>
+              <span>60 min</span>
+              <span>90 min</span>
             </div>
           </div>
           <button
@@ -605,7 +550,9 @@ export default function StudyGoalTracker() {
               </div>
               <div>
                 <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Estimated finish</div>
-                <div className="text-sm font-bold" style={{ color: '#3bff9e' }}>{goalEstimate.predictedFinishDate}</div>
+                <div className="text-sm font-bold" style={{ color: '#3bff9e' }}>
+                  {predicted ? formatLongDate(predicted.finish) : goalEstimate.predictedFinishDate}
+                </div>
               </div>
               <div>
                 <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Remaining today</div>
@@ -654,18 +601,15 @@ export default function StudyGoalTracker() {
             </div>
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
               <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Plan</div>
-              <div className="text-sm font-bold" style={{ color: '#8b5cf6' }}>{goal.planType === 'exam' ? 'Exam Unlock' : 'Full Mastery'}</div>
+              <div className="text-sm font-bold" style={{ color: '#8b5cf6' }}>Auto-Predicted</div>
             </div>
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
               <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
                 <Calendar size={11} className="inline mr-1" />
-                Days left
+                Predicted finish
               </div>
-              <div className="text-sm font-bold" style={{
-                color: daysRemaining !== null && daysRemaining < 0 ? '#ff3355' :
-                       daysRemaining !== null && daysRemaining < 30 ? '#ffd700' : 'var(--accent)'
-              }}>
-                {daysRemaining !== null ? (daysRemaining >= 0 ? daysRemaining : 'Overdue') : 'Optional'}
+              <div className="text-sm font-bold" style={{ color: 'var(--accent)' }}>
+                {predicted ? `${predicted.daysNeeded} days` : 'Pending'}
               </div>
             </div>
             <div className="rounded-lg p-2.5" style={{ backgroundColor: 'var(--bg-hover)' }}>
@@ -710,10 +654,9 @@ export default function StudyGoalTracker() {
             </div>
           )}
 
-          {/* Target date display */}
-          {goal.targetDate && (
+          {predicted && (
             <div className="text-xs text-center" style={{ color: 'var(--text-muted)' }}>
-              Target date: {goal.targetDate}
+              Predicted finish: <strong style={{ color: 'var(--accent)' }}>{formatLongDate(predicted.finish)}</strong> at {goal.dailyMinutes} min/day.
             </div>
           )}
         </div>
