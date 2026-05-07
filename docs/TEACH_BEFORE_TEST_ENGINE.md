@@ -101,9 +101,25 @@ The engine uses a **safe fallback** pattern:
 For items **without** curriculum metadata (no entry in `curriculumMap.units`), the engine takes different approaches:
 
 - **Grammar/vocab**: Filtered only by the legacy `allowedLessonIds` set — items must come from a completed lesson.
-- **Reading/listening/writing/speaking**: Sequential next-incomplete — no strict filtering (yet). Phase 2 will add this.
+- **Reading/listening/writing/speaking**: Filtered by curriculum unlock when `hasCurriculumMap(level)` is true. Falls back to sequential next-incomplete for levels without curriculum data.
 
 This means items without metadata are **not deleted** — they just fall back to the old behavior.
+
+## Reading/Listening/Writing/Speaking Filtering (Phase 2)
+
+In `DailyMissionPage.jsx`, the four `getNext*` functions now apply curriculum filtering:
+
+```js
+const getNextReading = (level) => {
+  let items = (readingData[level] || []).filter(item => !completed.has(item.id));
+  if (hasCurriculumMap(level)) {
+    items = items.filter(item => isReadingUnlocked(item.id, s));
+  }
+  // ... sort by difficulty, return first
+};
+```
+
+Same pattern applies to `getNextListening`, `getNextWriting`, `getNextSpeaking`. When the curriculum map exists for a level, only items whose prerequisite lessons have been completed are shown. Otherwise, the original sequential behavior is preserved.
 
 ## Adding New Content Safely
 

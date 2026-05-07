@@ -432,19 +432,15 @@ Current validation command: `npm run build && npm run validate-grammar && npm ru
 4. Run validation and fix any broken references
 5. Commit: data files + mapping/validation scripts
 
-### Phase 2: Activate Teach-Before-Test for All Levels
+### Phase 2: Expand Curriculum to A2-C1 and Wire Teach-Before-Test for All Skills ✅
 
-1. In `DailyMissionPage.jsx`, change the A1 guard:
-   ```js
-   // Before:
-   const taggedPool = lvl === 'A1' && !context.isFreePractice
-   // After:
-   const taggedPool = !context.isFreePractice
-   ```
-2. Do the same for vocabulary filtering
-3. Verify: grammar exercises and vocab words are only shown when their lesson was completed
-4. Test with A2 (mapped) and a partially-mapped level like B1
-5. Run Playwright smoke tests to confirm nothing breaks
+1. **Rewrote `build-pilot-curriculum.cjs`** to generate curriculumMap for all levels (A1-C1), not just A1.
+   - Conservative prerequisite strategy: Lesson N requires lesson N-1; skill items require their linked lesson
+   - 1377 total units across 5 levels and 7 skill types
+2. **Updated DailyMissionPage** `getNextReading/getNextListening/getNextWriting/getNextSpeaking` to filter by curriculum unlock when `hasCurriculumMap(level)` is true
+3. **Updated validators** to accept `lessonId` as equivalent to `taughtInLessonId` and sub-question IDs
+4. **Updated docs** (CURRICULUM_ARCHITECTURE.md, TEACH_BEFORE_TEST_ENGINE.md)
+5. **Commit**: `3449fb6`
 
 ### Phase 3: Vocabulary Expansion Pipeline
 
@@ -498,9 +494,11 @@ Current validation command: `npm run build && npm run validate-grammar && npm ru
 
 | Priority | Item | Why |
 |----------|------|-----|
-| 🔴 P0 | Remove `lvl === 'A1'` guard on teach-before-test | Daily Mission hands untaught content to A2-C1 users |
-| 🔴 P0 | Complete `taughtInLessonId` mapping for B1/B2/C1 vocab | Prerequisite for removing the A1 guard |
-| 🔴 P0 | Complete `taughtInLessonId` mapping for A2-C1 grammar | Same — grammar also needs teach-before-test |
+| ✅ Done | Remove `lvl === 'A1'` guard on teach-before-test | Replaced with `hasCurriculumMap(lvl)` — works for all levels |
+| ✅ Done | Expand curriculumMap to A2-C1 (all skills) | 1377 units across 5 levels, 7 skill types |
+| ✅ Done | Wire reading/listening/writing/speaking to teach-before-test | `getNext*` functions now filter by curriculum unlock |
+| 🟡 P2 | Complete `taughtInLessonId` mapping for B1/B2/C1 vocab | ~3 items have bad lessonIds; mapping script needs improvement |
+| 🟡 P2 | Complete `taughtInLessonId` mapping for A2-C1 grammar | 13/553 mapped by script; lessonId field exists but needs taughtInLessonId |
 | 🟠 P1 | B2 content regeneration (all skills) | Currently shell/fake data |
 | 🟠 P1 | C1 content regeneration (all skills) | Currently shell/fake data |
 | 🟠 P1 | Add 4 exams each for B2 and C1 | Parity with A1/A2/B1 |
