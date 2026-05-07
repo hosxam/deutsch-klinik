@@ -25,9 +25,9 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 
 ## Resume Point
 
-**Phase:** Phase 0
-**Next task:** Task 0.3 — Validate Lesson–Exercise Alignment
-**Last completed task:** Task 0.2 — Remove Grammar Duplicates
+**Phase:** Phase 1
+**Next task:** Task 1.1 — Two-Profile System (Login)
+**Last completed task:** Task 0.3 — Validate Lesson–Exercise Alignment
 
 ## Completed Task Log
 
@@ -35,6 +35,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] setup: create TASK.md as task tracker
 - [x] Task 0.1 — Fix Critical Data Corruption. Added `scripts/fix-data-corruption.cjs`, added `npm run fix-data`, ran the fixer, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `package.json`, `scripts/fix-data-corruption.cjs`, and data files only where the fixer made replacements.
 - [x] Task 0.2 — Remove Grammar Duplicates. Added `scripts/dedup-grammar.cjs`, adapted it to skip non-array metadata keys in the current `grammar.json` schema, removed 14 duplicate grammar exercises, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/data/grammar.json`, `scripts/dedup-grammar.cjs`.
+- [x] Task 0.3 — Validate Lesson–Exercise Alignment. Added `scripts/audit-lesson-coverage.cjs`, checked `lessonId`, `taughtInLessonId`, `remediationLessonId`, and `prerequisiteLessonIds`, generated `audit-lesson-gaps.json`, found 0 missing lesson references, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `scripts/audit-lesson-coverage.cjs`, `audit-lesson-gaps.json`.
 
 ## Mega Plan
 
@@ -253,7 +254,7 @@ fs.writeFileSync('./src/data/grammar.json', JSON.stringify(data, null, 2));
 console.log(`Removed ${removed} duplicate exercises`);
 ```
 
-## [ ] Task 0.3 — Validate Lesson–Exercise Alignment
+## [x] Task 0.3 — Validate Lesson–Exercise Alignment
 **Files:** `src/data/germanLessons.json`, `src/data/grammar.json`
 
 Run:
@@ -284,7 +285,7 @@ Review `audit-lesson-gaps.json`. For each missing lesson, either create it or up
 # Fix all broken logic before building new features
 # ═══════════════════════════════════════════════════════
 
-## Task 1.1 — Two-Profile System (Login)
+## [ ] Task 1.1 — Two-Profile System (Login)
 **Files to create/modify:** `src/pages/LoginPage.jsx` (NEW), `src/utils/store.js`, `src/App.jsx`, `src/components/Layout.jsx`
 
 The login system must be completely local — no Firebase, no external service. Two named profiles share the device but have completely separate progress stored under namespaced localStorage keys.
