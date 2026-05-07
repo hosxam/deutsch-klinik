@@ -424,12 +424,12 @@ export default function MistakeNotebookPage() {
                     </div>
                   )}
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '8px' }}>
-                  <Link to={`/level/${topic.level || currentLevel}/grammar`} style={{
+                  <Link to={`/level/${topic.level || currentLevel}/grammar?topic=${encodeURIComponent(topic.topic)}`} style={{
                     display: 'inline-block', padding: '4px 10px', borderRadius: '6px',
                     fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: 'var(--accent)',
                     textDecoration: 'none', fontWeight: '600',
                   }}>
-                    Practice
+                    Practice {topic.topic}
                   </Link>
                   <Link to={`/level/${topic.level || currentLevel}/lessons`} style={{
                     display: 'inline-block', padding: '4px 10px', borderRadius: '6px',

@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.5 — Weak Topics: Make Them Actionable
-**Last completed task:** Task 2.4 — Adaptive Remediation on Bad Score
+**Next task:** Task 2.6 — Vocab Review: SM-2 Due Queue Only
+**Last completed task:** Task 2.5 — Weak Topics: Make Them Actionable
 
 ## Completed Task Log
 
@@ -48,6 +48,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 2.2 — Time-Based Daily Plan Engine. Added explicit daily-minute time-budget generation in `DailyMissionPage`, mapped flashcard and Medical FSP allocations into supported mission types, preserved existing adaptive remediation/vocab behavior, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/DailyMissionPage.jsx`.
 - [x] Task 2.3 — Session Time Tracker. Added day-keyed `studyLog` storage with `recordStudyTime`, `getTodayStudyMinutes`, and `getStudyHistory`, recorded elapsed non-skipped Daily Mission time on mission advance, switched Study Goal progress to actual logged minutes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/DailyMissionPage.jsx`, `src/components/StudyGoalTracker.jsx`.
 - [x] Task 2.4 — Adaptive Remediation on Bad Score. Added low-score Needs Work panels to Listening, Grammar, and Speaking flows, listed missed answers with corrections/explanations where available, linked back to relevant lesson or level review, added retry actions, logged failed listening and speaking attempts to the Mistakes Notebook, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/ListeningPage.jsx`, `src/pages/SpeakingPage.jsx`, `src/pages/GrammarPage.jsx`.
+- [x] Task 2.5 — Weak Topics: Make Them Actionable. Updated weak topic Practice links to include a `topic` query parameter, added topic filtering to GrammarPage, added a visible "Practicing only" banner with a clear-filter link, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/MistakeNotebookPage.jsx`, `src/pages/GrammarPage.jsx`.
 
 ## Mega Plan
 
@@ -616,7 +617,7 @@ After any score below 60%, automatically show a "Needs Work" panel:
 
 Log the failed exercise to `recordAnswer(...)` so it appears in the Mistakes Notebook.
 
-## Task 2.5 — Weak Topics: Make Them Actionable
+## [x] Task 2.5 — Weak Topics: Make Them Actionable
 **File:** `src/pages/MistakeNotebookPage.jsx`, `src/pages/GrammarPage.jsx`
 
 **In MistakeNotebookPage.jsx**, each weak topic card gets a "Practice Now →" button:

@@ -30,15 +30,17 @@ export default function GrammarPage() {
   const [searchParams] = useSearchParams();
   const isDaily = searchParams.get('daily') === '1';
   const dailyLimit = parseInt(searchParams.get('limit') || '5', 10);
+  const topicFilter = searchParams.get('topic');
 
   // In daily mode, show only the first incomplete exercises up to the limit
   const exercises = useMemo(() => {
-    const all = grammarData[levelId] || [];
+    const all = (grammarData[levelId] || [])
+      .filter(ex => !topicFilter || ex.topic === topicFilter);
     if (!isDaily) return all;
     // Find the first N exercises that haven't been mastered yet
     const incomplete = all.filter(ex => !getGrammarMastery(ex.id).mastered);
     return incomplete.length > 0 ? incomplete.slice(0, dailyLimit) : all.slice(0, dailyLimit);
-  }, [levelId, isDaily, dailyLimit]);
+  }, [levelId, isDaily, dailyLimit, topicFilter]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -60,7 +62,7 @@ export default function GrammarPage() {
     setUserAnswer('');
     setCompleted(false);
     setWrongAnswers([]);
-  }, [levelId]);
+  }, [levelId, topicFilter]);
 
   if (!ex) {
     return (
@@ -68,6 +70,11 @@ export default function GrammarPage() {
         <div style={{ textAlign: 'center', padding: '3rem 1rem', maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '1rem' }}>No exercises for {levelId} yet</h2>
           <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>Add exercises to grammar.json for this level.</p>
+          {topicFilter && (
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>
+              No exercises matched "{topicFilter}". <Link to={`/level/${levelId}/grammar`} style={{ color: 'var(--accent)' }}>Clear topic filter</Link>
+            </p>
+          )}
           <Link to={`/level/${levelId}`} style={{ padding: '0.5rem 1rem', borderRadius: '8px', background: 'var(--bg-hover)', color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem' }}>Back to Level</Link>
         </div>
       </LevelLock>
@@ -223,6 +230,17 @@ export default function GrammarPage() {
           )}
         </div>
       </div>
+
+      {topicFilter && (
+        <div style={{ ...s.card, padding: '0.75rem 1rem', marginBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <span style={{ color: 'var(--text-primary)', fontSize: '0.9rem' }}>
+            Practicing only: <strong style={{ color: 'var(--accent)' }}>{topicFilter}</strong>
+          </span>
+          <Link to={`/level/${levelId}/grammar`} style={{ color: '#ff3355', fontSize: '0.85rem', textDecoration: 'none' }}>
+            Clear filter x
+          </Link>
+        </div>
+      )}
 
       {/* Exercise Card */}
       <div style={s.card}>
