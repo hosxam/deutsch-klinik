@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.6 — Vocab Review: SM-2 Due Queue Only
-**Last completed task:** Task 2.5 — Weak Topics: Make Them Actionable
+**Next task:** Task 2.7 — Flashcards in Every Daily Plan
+**Last completed task:** Task 2.6 — Vocab Review: SM-2 Due Queue Only
 
 ## Completed Task Log
 
@@ -49,6 +49,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 2.3 — Session Time Tracker. Added day-keyed `studyLog` storage with `recordStudyTime`, `getTodayStudyMinutes`, and `getStudyHistory`, recorded elapsed non-skipped Daily Mission time on mission advance, switched Study Goal progress to actual logged minutes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/DailyMissionPage.jsx`, `src/components/StudyGoalTracker.jsx`.
 - [x] Task 2.4 — Adaptive Remediation on Bad Score. Added low-score Needs Work panels to Listening, Grammar, and Speaking flows, listed missed answers with corrections/explanations where available, linked back to relevant lesson or level review, added retry actions, logged failed listening and speaking attempts to the Mistakes Notebook, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/ListeningPage.jsx`, `src/pages/SpeakingPage.jsx`, `src/pages/GrammarPage.jsx`.
 - [x] Task 2.5 — Weak Topics: Make Them Actionable. Updated weak topic Practice links to include a `topic` query parameter, added topic filtering to GrammarPage, added a visible "Practicing only" banner with a clear-filter link, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/MistakeNotebookPage.jsx`, `src/pages/GrammarPage.jsx`.
+- [x] Task 2.6 — Vocab Review: SM-2 Due Queue Only. Restricted Mistake Notebook vocab review to show only SM-2 due words via `getDueVocabWords`, removed duplicate sources (weak/mistake overlap), added "X words due" header, updated empty state to "All vocabulary reviewed — come back tomorrow", and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/MistakeNotebookPage.jsx`.
 
 ## Mega Plan
 
@@ -637,7 +638,7 @@ const exercises = (grammarData[levelId] || [])
 // Show a banner: "Practicing only: Adjective Endings [Clear filter ×]"
 ```
 
-## Task 2.6 — Vocab Review: SM-2 Due Queue Only
+## [x] Task 2.6 — Vocab Review: SM-2 Due Queue Only
 **File:** `src/pages/MistakeNotebookPage.jsx`
 
 **Root cause:** Vocab review shows ALL 4300 words and "Knew It" does nothing.

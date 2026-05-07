@@ -7,7 +7,7 @@ import {
 } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import {
-  AlertTriangle, X, Check, RefreshCw, Filter,
+  AlertTriangle, X, Check, CheckCircle, RefreshCw, Filter,
   ChevronDown, ChevronUp, RotateCcw, Brain,
   Star, Trash2,
 } from 'lucide-react';
@@ -79,23 +79,13 @@ export default function MistakeNotebookPage() {
   // Weak topics
   const weakTopics = getWeakTopics() || [];
 
-  // Due vocab words
+  // Due vocab words — SM-2 due queue only
   const currentLevel = getState().currentLevel || 'A1';
-  const vocabMistakeIds = new Set(filteredItems
-    .filter(m => (m.skill || '').includes('vocab'))
-    .map(m => String(m.exerciseId || '').replace(/^[A-C][12]_/, '')));
   const levelWords = (vocabData[currentLevel] || []).map(w => ({ ...w, level: currentLevel }));
-  const dueIds = new Set(getDueVocabWords(levelWords.map(w => `${currentLevel}_${w.id}`)).map(id => String(id).replace(/^[A-C][12]_/, '')));
-  const weakWords = levelWords.filter(w => {
-    const m = getState().vocabularyMastery?.[`${currentLevel}_${w.id}`];
-    return m && m.incorrect > m.correct;
-  });
-  const vocabItems = [
-    ...levelWords.filter(w => dueIds.has(w.id)),
-    ...levelWords.filter(w => vocabMistakeIds.has(w.id)),
-    ...weakWords,
-  ]
-    .filter((w, idx, arr) => arr.findIndex(x => x.id === w.id) === idx)
+  const allLevelIds = levelWords.map(w => `${currentLevel}_${w.id}`);
+  const dueWordIds = new Set(getDueVocabWords(allLevelIds));
+  const vocabItems = levelWords
+    .filter(w => dueWordIds.has(`${currentLevel}_${w.id}`))
     .filter(w => !reviewedVocab.includes(`${currentLevel}_${w.id}`))
     .slice(0, 20);
 
@@ -453,15 +443,22 @@ export default function MistakeNotebookPage() {
         </div>
       )}
 
-      {/* Tab: Vocab Review (Spaced Repetition) */}
+      {/* Tab: Vocab Review (SM-2 Due Queue Only) */}
       {activeTab === 'vocab' && (
         <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+            <Brain size={16} style={{ color: 'var(--accent)' }} />
+            <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>
+              {vocabItems.length} words due for review today
+            </span>
+          </div>
           {vocabItems.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
-              <Brain size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No due, weak, or recent-mistake vocabulary for {currentLevel}. Check back later!</p>
+              <CheckCircle size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#22c55e' }} />
+              <p style={{ fontSize: '15px', fontWeight: 600, color: '#22c55e', marginBottom: '8px' }}>All vocabulary reviewed</p>
+              <p>Come back tomorrow for new words.</p>
               <div style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-secondary)' }}>
-                All your vocab is up to date. <RotateCcw size={14} style={{ display: 'inline', verticalAlign: 'middle' }} />
+                <RotateCcw size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />SM-2 queue is clear for {currentLevel}
               </div>
             </div>
           ) : (
