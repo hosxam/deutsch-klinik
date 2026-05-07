@@ -26,14 +26,15 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 0
-**Next task:** Task 0.2 — Remove Grammar Duplicates
-**Last completed task:** Task 0.1 — Fix Critical Data Corruption
+**Next task:** Task 0.3 — Validate Lesson–Exercise Alignment
+**Last completed task:** Task 0.2 — Remove Grammar Duplicates
 
 ## Completed Task Log
 
 - [x] setup: init git repo with .gitignore
 - [x] setup: create TASK.md as task tracker
 - [x] Task 0.1 — Fix Critical Data Corruption. Added `scripts/fix-data-corruption.cjs`, added `npm run fix-data`, ran the fixer, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `package.json`, `scripts/fix-data-corruption.cjs`, and data files only where the fixer made replacements.
+- [x] Task 0.2 — Remove Grammar Duplicates. Added `scripts/dedup-grammar.cjs`, adapted it to skip non-array metadata keys in the current `grammar.json` schema, removed 14 duplicate grammar exercises, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/data/grammar.json`, `scripts/dedup-grammar.cjs`.
 
 ## Mega Plan
 
@@ -231,7 +232,7 @@ console.log('\n✅ All data corruption fixed. Run validate scripts to confirm.')
 Add this to `package.json` scripts: `"fix-data": "node scripts/fix-data-corruption.cjs"`
 Then run: `npm run fix-data`
 
-## [ ] Task 0.2 — Remove Grammar Duplicates
+## [x] Task 0.2 — Remove Grammar Duplicates
 **File:** `src/data/grammar.json`
 
 Run:
@@ -252,7 +253,7 @@ fs.writeFileSync('./src/data/grammar.json', JSON.stringify(data, null, 2));
 console.log(`Removed ${removed} duplicate exercises`);
 ```
 
-## Task 0.3 — Validate Lesson–Exercise Alignment
+## [ ] Task 0.3 — Validate Lesson–Exercise Alignment
 **Files:** `src/data/germanLessons.json`, `src/data/grammar.json`
 
 Run:
