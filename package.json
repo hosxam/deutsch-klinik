@@ -12,7 +12,11 @@
     "deploy": "npm run build && gh-pages -d dist",
     "fix-data": "node scripts/fix-data-corruption.cjs",
     "validate-grammar": "node scripts/fix-grammar-answers.cjs",
-    "validate-german-orthography": "node scripts/validate-german-orthography.cjs"
+    "validate-german-orthography": "node scripts/validate-german-orthography.cjs",
+    "validate-curriculum-dependencies": "node scripts/validate-curriculum-dependencies.cjs",
+    "validate-curriculum": "node scripts/validate-curriculum-map.cjs",
+    "validate-teach-before-test": "node scripts/validate-teach-before-test.cjs",
+    "build-pilot-curriculum": "node scripts/build-pilot-curriculum.cjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",

@@ -10,6 +10,7 @@ import {
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
+import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
 import grammarData from '../data/grammar.json';
 import grammarCurriculum from '../data/grammarCurriculum.json';
 import vocabData from '../data/germanVocabulary.json';
@@ -568,10 +569,15 @@ export default function DailyMissionPage() {
     const all = grammarData[lvl] || [];
     const done = state.levels?.[lvl]?.grammar || [];
     const context = getPracticeContext(lvl, sesh, state);
-    const taggedPool = lvl === 'A1' && !context.isFreePractice
-      ? all.filter((x) => context.allowedLessonIds.has(getQuestionLessonId(x)))
-      : all;
-    const unmastered = taggedPool.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
+    let unlockedPool;
+    if (hasCurriculumMap(lvl) && !context.isFreePractice) {
+      unlockedPool = getUnlockedItems(all, lvl, state, context);
+    } else if (!context.isFreePractice) {
+      unlockedPool = all.filter((x) => context.allowedLessonIds.has(getQuestionLessonId(x)));
+    } else {
+      unlockedPool = all;
+    }
+    const unmastered = unlockedPool.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
 
     // Prefer practice from lessons completed earlier in today's generated plan,
@@ -639,9 +645,14 @@ export default function DailyMissionPage() {
     const all = vocabData[lvl] || [];
     const done = state.levels?.[lvl]?.vocab || [];
     const context = getPracticeContext(lvl, sesh, state);
-    const introduced = lvl === 'A1' && !context.isFreePractice
-      ? all.filter((x) => context.allowedLessonIds.has(getWordLessonId(x)))
-      : all;
+    let introduced;
+    if (hasCurriculumMap(lvl) && !context.isFreePractice) {
+      introduced = getUnlockedItems(all, lvl, state, context);
+    } else if (!context.isFreePractice) {
+      introduced = all.filter((x) => context.allowedLessonIds.has(getWordLessonId(x)));
+    } else {
+      introduced = all;
+    }
     const todayWords = introduced.filter((x) => context.todayLessonIds.includes(getWordLessonId(x)));
     const reviewWords = introduced.filter((x) => !context.todayLessonIds.includes(getWordLessonId(x)));
     const unseenToday = todayWords.filter((x) => !done.includes(x.id));
