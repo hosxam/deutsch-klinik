@@ -5,7 +5,7 @@ import {
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
-  getNextGrammarLesson, recordStudyMinutes, addRemediationRecommendation
+  getNextGrammarLesson, recordStudyMinutes, recordStudyTime, addRemediationRecommendation
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
@@ -394,6 +394,7 @@ export default function DailyMissionPage() {
   const [remIndex, setRemIndex] = useState(0);
   const [remCompleted, setRemCompleted] = useState([]);
   const [remSummary, setRemSummary] = useState(null);
+  const sessionStartRef = useRef(Date.now());
   const aiEnabled = isCorrectionEnabled();
 
 
@@ -450,6 +451,7 @@ export default function DailyMissionPage() {
 
   useEffect(() => {
     const mission = mi < ms.length ? ms[mi] : null;
+    sessionStartRef.current = Date.now();
     if (mission?.type === 'lesson') {
       setLsStart(false);
       setLsDone(false);
@@ -458,6 +460,10 @@ export default function DailyMissionPage() {
   }, [mi, ms]);
 
   const advance = (type, result) => {
+    if (!result?.skipped) {
+      recordStudyTime((Date.now() - sessionStartRef.current) / 60000);
+    }
+    sessionStartRef.current = Date.now();
     const ld = loadSession(lvl) || sesh;
     const nextMissionIndex = (ld.currentMission || 0) + 1;
     const up = {

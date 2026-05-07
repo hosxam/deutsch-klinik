@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
-import { getState } from '../utils/store';
+import { getState, getTodayStudyMinutes } from '../utils/store';
 import { Target, Calendar, Clock, CheckCircle, AlertTriangle, Edit3, RotateCcw } from 'lucide-react';
-import { getGoalEstimate, calculateTodayMinutes as calculateAdaptiveTodayMinutes } from '../utils/adaptivePlan';
+import { getGoalEstimate } from '../utils/adaptivePlan';
 
 const STORAGE_KEY = 'deutsch_klinik_study_goal';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'Medical FSP'];
@@ -353,7 +353,7 @@ export default function StudyGoalTracker() {
   const state = getState();
   const todayTasks = useMemo(() => calculateTodayCompletedTasks(state), [state]);
   const goalEstimate = useMemo(() => getGoalEstimate(state, goal), [state, goal]);
-  const todayMinutes = useMemo(() => Math.max(calculateAdaptiveTodayMinutes(state), calculateTodayMinutes(state)), [state]);
+  const todayMinutes = useMemo(() => getTodayStudyMinutes(), [state]);
   const weekMinutes = useMemo(() => calculateWeekMinutes(state), [state]);
   const weekActiveDays = useMemo(() => calculateWeekActiveDays(state), [state]);
   const progressPct = useMemo(() => calculateOverallProgress(state), [state]);

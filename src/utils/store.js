@@ -112,6 +112,7 @@ const defaultState = {
     // status: 'weak' | 'improving' | 'mastered'
   },
   dailyStudyLog: [],
+  studyLog: {},
   remediationQueue: [],
 };
 
@@ -437,6 +438,33 @@ export function recordStudyMinutes({ level, type, minutes, id }) {
   state.dailyStudyLog = [...(state.dailyStudyLog || []), entry];
   saveState(state);
   return entry;
+}
+
+export function recordStudyTime(minutes) {
+  const today = getLocalDateKey();
+  const amount = Math.max(0, Number(minutes) || 0);
+  if (!state.studyLog) state.studyLog = {};
+  if (!state.studyLog[today]) state.studyLog[today] = { minutes: 0, sessions: 0 };
+  state.studyLog[today].minutes += amount;
+  state.studyLog[today].sessions += 1;
+  saveState(state);
+  return state.studyLog[today];
+}
+
+export function getTodayStudyMinutes() {
+  const today = getLocalDateKey();
+  return Math.round(state.studyLog?.[today]?.minutes || 0);
+}
+
+export function getStudyHistory(days = 7) {
+  const result = [];
+  for (let i = 0; i < days; i++) {
+    const d = new Date();
+    d.setDate(d.getDate() - days + i + 1);
+    const key = getLocalDateKeyFromDate(d);
+    result.push({ date: key, minutes: state.studyLog?.[key]?.minutes || 0 });
+  }
+  return result;
 }
 
 export function addRemediationRecommendation(recommendation) {

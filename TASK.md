@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.3 — Session Time Tracker
-**Last completed task:** Task 2.2 — Time-Based Daily Plan Engine
+**Next task:** Task 2.4 — Adaptive Remediation on Bad Score
+**Last completed task:** Task 2.3 — Session Time Tracker
 
 ## Completed Task Log
 
@@ -46,6 +46,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 1.8 — Fix WritingPage Direct State Mutation. Verified `WritingPage` already appends submissions immutably with `[...(state.writings || []), newWriting]`, made no source code changes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 2.1 — Study Goal: Auto-Predict Finish Date. Removed the manual goal date and plan-type controls from the study goal form, added target-level + 15-90 minute slider inputs, added automatic finish-date calculation from target level, daily minutes, and progress, preserved saved goal compatibility for existing adaptive-plan utilities, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/components/StudyGoalTracker.jsx`.
 - [x] Task 2.2 — Time-Based Daily Plan Engine. Added explicit daily-minute time-budget generation in `DailyMissionPage`, mapped flashcard and Medical FSP allocations into supported mission types, preserved existing adaptive remediation/vocab behavior, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/DailyMissionPage.jsx`.
+- [x] Task 2.3 — Session Time Tracker. Added day-keyed `studyLog` storage with `recordStudyTime`, `getTodayStudyMinutes`, and `getStudyHistory`, recorded elapsed non-skipped Daily Mission time on mission advance, switched Study Goal progress to actual logged minutes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/utils/store.js`, `src/pages/DailyMissionPage.jsx`, `src/components/StudyGoalTracker.jsx`.
 
 ## Mega Plan
 
@@ -543,7 +544,7 @@ function generatePlan(dailyMinutes, currentLevel, goal) {
 }
 ```
 
-## Task 2.3 — Session Time Tracker
+## [x] Task 2.3 — Session Time Tracker
 **Files:** `src/utils/store.js`, `src/pages/DailyMissionPage.jsx`, `src/components/StudyGoalTracker.jsx`
 
 **In store.js add:**
