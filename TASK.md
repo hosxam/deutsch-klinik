@@ -26,8 +26,8 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 ## Resume Point
 
 **Phase:** Phase 2
-**Next task:** Task 2.2 — Time-Based Daily Plan Engine
-**Last completed task:** Task 2.1 — Study Goal: Auto-Predict Finish Date
+**Next task:** Task 2.3 — Session Time Tracker
+**Last completed task:** Task 2.2 — Time-Based Daily Plan Engine
 
 ## Completed Task Log
 
@@ -45,6 +45,7 @@ Note: As of initial setup, only `npm test` exists. The other scripts will be cre
 - [x] Task 1.7 — Delete Test Routes. Verified `src/pages/TestPage.jsx` and `src/pages/TestDataPage.jsx` are absent and `src/App.jsx` contains no debug test routes; the real Placement Test route remains. Validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 1.8 — Fix WritingPage Direct State Mutation. Verified `WritingPage` already appends submissions immutably with `[...(state.writings || []), newWriting]`, made no source code changes, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`.
 - [x] Task 2.1 — Study Goal: Auto-Predict Finish Date. Removed the manual goal date and plan-type controls from the study goal form, added target-level + 15-90 minute slider inputs, added automatic finish-date calculation from target level, daily minutes, and progress, preserved saved goal compatibility for existing adaptive-plan utilities, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/components/StudyGoalTracker.jsx`.
+- [x] Task 2.2 — Time-Based Daily Plan Engine. Added explicit daily-minute time-budget generation in `DailyMissionPage`, mapped flashcard and Medical FSP allocations into supported mission types, preserved existing adaptive remediation/vocab behavior, and validated with `npm run build && npm run validate-grammar && npm run validate-german-orthography` (PASS). Changed files: `TASK.md`, `src/pages/DailyMissionPage.jsx`.
 
 ## Mega Plan
 
@@ -505,7 +506,7 @@ Display prominently:
 - "⏱ **312 days** at 90 min/day"
 - Status pill: 🟢 On Track / 🟡 Needs Work / 🔴 Behind
 
-## [ ] Task 2.2 — Time-Based Daily Plan Engine
+## [x] Task 2.2 — Time-Based Daily Plan Engine
 **File:** `src/pages/DailyMissionPage.jsx`
 
 The daily plan must be generated from the user's `dailyMinutes` goal, not a fixed set of items.

@@ -137,8 +137,71 @@ function clearSession() {
   try { localStorage.removeItem(SESSION_KEY); } catch { /* empty */ }
 }
 
+const TIME_BUDGET = {
+  lesson: 0.25,
+  grammar: 0.20,
+  flashcard: 0.20,
+  reading: 0.15,
+  listening: 0.12,
+  writing: 0.08,
+};
+
+const MINS_PER_ITEM = {
+  lesson: 8,
+  grammar: 1.5,
+  flashcard: 0.5,
+  reading: 5,
+  listening: 4,
+  writing: 7,
+  speaking: 6,
+};
+
+function generatePlan(dailyMinutes, currentLevel, goal) {
+  const minutes = Math.max(15, Number(dailyMinutes) || 30);
+  const plan = [];
+
+  for (const [skill, fraction] of Object.entries(TIME_BUDGET)) {
+    const allocated = minutes * fraction;
+    const count = Math.max(1, Math.floor(allocated / MINS_PER_ITEM[skill]));
+    plan.push({ skill, count });
+  }
+
+  if (goal?.targetLevel === 'Medical FSP') {
+    plan.push({ skill: 'fsp_anamnese', count: 1 });
+    plan.push({ skill: 'fsp_vocab', count: 10 });
+  }
+
+  return plan;
+}
+
 function calculateDailyTargets(levelId, state, goal) {
-  return buildAdaptiveTargets(levelId, state, goal);
+  const baseTargets = buildAdaptiveTargets(levelId, state, goal);
+  const dailyMinutes = Math.max(15, Number(goal?.dailyMinutes) || 30);
+  const plan = generatePlan(dailyMinutes, levelId, goal);
+  const targets = {
+    ...baseTargets,
+    lesson: 0,
+    grammar: 0,
+    flashcards: 0,
+    reading: 0,
+    listening: 0,
+    writing: 0,
+    estimatedMinutes: dailyMinutes,
+  };
+
+  for (const item of plan) {
+    if (item.skill === 'flashcard') {
+      targets.flashcards = item.count;
+    } else if (item.skill === 'fsp_anamnese') {
+      targets.speaking = Math.max(targets.speaking || 0, item.count);
+    } else if (item.skill === 'fsp_vocab') {
+      targets.vocab = Math.max(targets.vocab || 0, item.count);
+    } else if (item.skill in targets) {
+      targets[item.skill] = item.count;
+    }
+  }
+
+  return targets;
 }
 
 function getLessonIds(value) {
