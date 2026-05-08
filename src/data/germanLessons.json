@@ -14798,92 +14798,113 @@
     "writingTask": "Write a paragraph analyzing a current economic trend using nominalization and both passives.",
     "reviewSummary": "You learned economic vocabulary, Vorgangspassiv vs Zustandspassiv, and nominalization.",
     "conceptId": "b2.passive.vorgang.zustand",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.passiv.praesens",
-      "b1.passiv.prateritum",
       "b1.passiv.prateritum"
     ],
     "conceptsTaught": [
-      "b2.vorgangspassiv",
-      "b2.zustandspassiv",
-      "b2.passiv.vergleich"
+      "b2.passive.vorgang.zustand",
+      "b2.passive.vorgangspassiv",
+      "b2.passive.zustandspassiv"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Verwechslung von Zustands- und Vorgangspassiv",
-        "correction": "werden + Partizip II = Vorgang, sein + Partizip II = Zustand"
-      },
-      {
-        "mistake": "Auslassung von 'worden' im Perfekt Passiv",
-        "correction": "Perfekt Passiv braucht Partizip II + worden"
-      },
-      {
-        "mistake": "Falsche Hilfsverbwahl bei Zustandspassiv im Perfekt",
-        "correction": "ist repariert gewesen, nicht ist repariert worden"
-      }
+      "Agens falsch positioniert: Der Brief wird geschrieben von mir. - Der Brief wird von mir geschrieben.. Agens nach 'von' direkt vor Partizip II",
+      "Zustandspassiv vs Vorgangspassiv verwechselt - Das Fenster ist geoffnet (Zustand) vs wird geoffnet (Vorgang). Zustand = sein + Partizip II, Vorgang = werden + Partizip II",
+      "worden im Zustandspassiv falsch verwendet - Das Auto ist gewaschen. (statt: ist gewaschen worden). Zustandspassiv = sein + Partizip II OHNE worden",
+      "worden im Perfekt Vorgangspassiv vergessen - Der Brief ist gestern geschrieben worden.. Im Perfekt Vorgangspassiv MUSS worden stehen",
+      "Aktiv/Passiv verwechselt - Aktiv: Subjekt handelt. Passiv: Subjekt erleidet.. Im Passiv wird Objekt der Handlung zum Subjekt"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "Vorgangspassiv vs Zustandspassiv",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "Vorgangspassiv (werden + PII)",
+            "use": "Handlung/Prozess",
+            "example": "Die Tur wird geoffnet."
+          },
+          {
+            "form": "Zustandspassiv (sein + PII)",
+            "use": "Zustand/Ergebnis",
+            "example": "Die Tur ist geoffnet."
+          },
+          {
+            "form": "Vorgang Perfekt (sein+PII+worden)",
+            "use": "Abgeschlossene Handlung",
+            "example": "Die Tur ist geoffnet worden."
+          }
+        ]
+      },
+      {
+        "title": "Passiv Zeitformen",
+        "rows": [
+          {
+            "form": "Prasens: werden + PII",
+            "use": "Gegenwart",
+            "example": "Der Brief wird geschrieben."
+          },
+          {
+            "form": "Prateritum: wurde + PII",
+            "use": "Vergangenheit (schriftlich)",
+            "example": "Der Brief wurde geschrieben."
+          },
+          {
+            "form": "Perfekt: ist+PII+worden",
+            "use": "Vergangenheit (mundlich)",
+            "example": "Der Brief ist geschrieben worden."
+          },
+          {
+            "form": "Plusquamperfekt: war+PII+worden",
+            "use": "Vorvergangenheit",
+            "example": "Der Brief war geschrieben worden."
+          },
+          {
+            "form": "Futur I: wird+PII+werden",
+            "use": "Zukunft",
+            "example": "Der Brief wird geschrieben werden."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Aktiv: Der Mechaniker repariert das Auto. -> Passiv Prasens",
+        "a": "Das Auto wird (vom Mechaniker) repariert."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Aktiv: Die Firma lieferte die Ware. -> Passiv Prateritum",
+        "a": "Die Ware wurde (von der Firma) geliefert."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Zustandspassiv: Das Fenster ist geschlossen. Bedeutung?",
+        "a": "Das Fenster ist im Zustand geschlossen (Ergebnis)."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Vorgangspassiv: Die Tur wird geoffnet. Bedeutung?",
+        "a": "Jemand offnet die Tur (Prozess)."
+      },
+      {
+        "q": "Aktiv: Man hat den Vertrag unterschrieben. -> Passiv Perfekt",
+        "a": "Der Vertrag ist unterschrieben worden."
+      },
+      {
+        "q": "Passiv m. Modal: Man muss die Rechnung bezahlen.",
+        "a": "Die Rechnung muss bezahlt werden."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_11",
+      "B2_gr_1",
+      "B2_gr_2",
       "B2_gr_20",
       "B2_gr_21",
       "B2_gr_22",
       "B2_gr_23",
+      "B2_gr_24",
       "B2_gr_25",
       "B2_gr_26",
       "B2_gr_27",
@@ -14891,22 +14912,22 @@
       "B2_gr_29",
       "B2_gr_30",
       "B2_gr_31",
+      "B2_gr_32",
       "B2_gr_33",
       "B2_gr_34",
-      "B2_gr_36",
-      "B2_gr_37",
-      "B2_gr_39",
-      "B2_gr_40",
-      "B2_gr_61",
-      "B2_gr_62",
-      "B2_gr_63",
-      "B2_gr_64",
-      "B2_gr_65",
+      "B2_gr_35",
+      "B2_gr_96",
       "B2_gr_97",
+      "B2_gr_98",
+      "B2_gr_99",
       "B2_gr_100",
       "B2_gr_226",
       "B2_gr_227",
-      "B2_gr_228"
+      "B2_gr_228",
+      "B2_gr_250",
+      "B2_read_7",
+      "B2_write_24",
+      "B2_speak_20"
     ],
     "formsTables": [
       {
@@ -15012,118 +15033,56 @@
     "writingTask": "Write a short news report summarizing a scientific discovery. Use at least 3 Konjunktiv I constructions.",
     "reviewSummary": "You learned scientific vocabulary, Konjunktiv I for reported speech, and how to report research findings.",
     "conceptId": "b2.passive.alternatives",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.passiv.praesens",
-      "b1.passiv.prateritum"
+      "b1.passiv.prateritum",
+      "b1.umzu.clauses"
     ],
     "conceptsTaught": [
-      "b2.passiversatz",
-      "b2.sein.zu",
-      "b2.sich.lassen"
+      "b2.passive.alternatives",
+      "b2.passive.passiversatz",
+      "b2.passive.sein-zu"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "sein+zu mehrdeutig verwendet - Durch Modalverb ersetzen: kann/muss gelesen werden. sein+zu = mehrdeutig (Moglichkeit/Notwendigkeit)",
+      "sich lassen mit Partizip II statt Infinitiv - Das Fenster lasst sich offnen. (Infinitiv). Nach sich lassen kommt Infinitiv, nicht Partizip II",
+      "Passiversatz mit Passiv vermischt - Die Tur lasst sich offnen.. sich lassen ersetzt konnen + Passiv",
+      "sein+zu mit falschem Subjekt - Der Antrag ist zu stellen = Der Antrag muss gestellt werden. Subjekt muss Objekt der Handlung sein",
+      "Es lasst sich machen. falscher Kontext - Korrekt fur: Es ist moglich.. Fester Ausdruck"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Umschreiben: Man kann das Problem losen. (sich lassen)",
+        "a": "Das Problem lasst sich losen."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Umschreiben: Der Antrag muss gestellt werden. (sein+zu)",
+        "a": "Der Antrag ist zu stellen."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "The door can be opened. (sich lassen)",
+        "a": "Die Tur lasst sich offnen."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "This document must be signed. (sein+zu)",
+        "a": "Dieses Dokument ist zu unterschreiben."
+      },
+      {
+        "q": "Ubersetzen: The problem is solvable.",
+        "a": "Das Problem ist losbar / lasst sich losen."
+      },
+      {
+        "q": "Passiversatz: Man kann das leicht erklaren. (2 Varianten)",
+        "a": "Das ist leicht zu erklaren / lasst sich leicht erklaren."
       }
     ],
-    "linkedQuestionIds": [
-      "B2_gr_13",
-      "B2_gr_71",
-      "B2_gr_72",
-      "B2_gr_73",
-      "B2_gr_74",
-      "B2_gr_75",
-      "B2_gr_105",
-      "B2_gr_121",
-      "B2_gr_122",
-      "B2_gr_123",
-      "B2_gr_124",
-      "B2_gr_125",
-      "B2_gr_126",
-      "B2_gr_127",
-      "B2_gr_128",
-      "B2_gr_129",
-      "B2_gr_130",
-      "B2_gr_131",
-      "B2_gr_132",
-      "B2_gr_133",
-      "B2_gr_134",
-      "B2_gr_135",
-      "B2_gr_220",
-      "B2_gr_221",
-      "B2_gr_222",
-      "B2_gr_223",
-      "B2_gr_224",
-      "B2_gr_225",
-      "B2_gr_229",
-      "B2_gr_230",
-      "B2_gr_241"
-    ],
+    "linkedQuestionIds": [],
     "formsTables": [
       {
         "title": "Passiversatz",
@@ -15227,100 +15186,74 @@
     "speakingTask": "Record a 1-minute political commentary using at least 3 extended participial phrases.",
     "writingTask": "Write a political analysis paragraph (100 words) using extended participial attributes.",
     "reviewSummary": "You learned political vocabulary, extended participial phrases, and condensing information in formal German.",
-    "conceptId": "b2.praepositionale.verben",
-    "estimatedMinutes": 50,
+    "conceptId": "b2.prapositionale.verben",
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.prepositions.fixed.case",
-      "b1.pronominal.adverbs"
+      "b1.pronominal.adverbs",
+      "b1.reflexive.verbs.extended"
     ],
     "conceptsTaught": [
-      "b2.praepositionale.verben",
-      "b2.da.komposita",
-      "b2.verb.praeposition"
+      "b2.prapositionale.verben",
+      "b2.prapositionale.verb-praeposition",
+      "b2.prapositionale.da-komposita"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Ich warte fur den Bus. (falsche Praposition) - Ich warte auf den Bus.. warten auf = feste Verbindung mit Akkusativ",
+      "sich freuen auf vs uber verwechselt - auf + Akk (Zukunft), uber + Akk (Vergangenheit). Praposition andert zeitliche Bedeutung",
+      "Da habe ich nicht von gedacht. statt daran - Daran habe ich nicht gedacht.. denken an -> daran (da-Kompositum)",
+      "Womit? statt Woruber? (falsches Frage-wo) - Woruber hast du gesprochen? (sprechen uber). Frage-wo richtet sich nach Verb-Praposition",
+      "Kasus nach fester Praposition falsch - sich interessieren FUR + AKKUSATIV. Feste Prapositionen haben feste Kasus"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Ich warte ___ den Bus. (Praposition)",
+        "a": "Ich warte auf den Bus."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Ich denke an die Reise. -> da-Kompositum",
+        "a": "Ich denke daran."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Er spricht uber Politik. -> Frage mit wo-",
+        "a": "Woruber spricht er?"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Sie interessiert sich ___ Kunst.",
+        "a": "Sie interessiert sich fur Kunst."
+      },
+      {
+        "q": "Wir freuen uns ___ den Urlaub. (Zukunft)",
+        "a": "Wir freuen uns auf den Urlaub."
+      },
+      {
+        "q": "Er wartet auf den Zug. -> Frage",
+        "a": "Worauf wartet er?"
       }
     ],
     "linkedQuestionIds": [
       "B2_gr_18",
       "B2_gr_19",
-      "B2_gr_41",
-      "B2_gr_42",
-      "B2_gr_43",
+      "B2_gr_91",
       "B2_gr_92",
       "B2_gr_93",
+      "B2_gr_94",
       "B2_gr_156",
+      "B2_gr_157",
+      "B2_gr_158",
       "B2_gr_159",
       "B2_gr_160",
       "B2_gr_161",
+      "B2_gr_162",
       "B2_gr_163",
       "B2_gr_164",
+      "B2_gr_165",
+      "B2_gr_248",
       "B2_gr_249"
     ],
     "formsTables": [
@@ -15429,86 +15362,94 @@
     "conceptId": "b2.modalverben.subjektiv",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.konjunktiv2.politeness",
-      "b1.word.order.complex"
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.politeness"
     ],
     "conceptsTaught": [
       "b2.modalverben.subjektiv",
-      "b2.modal.subjektiv"
+      "b2.modalverben.subjektive-bedeutung"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Er kann krank sein. - objektiv/subjektiv verwechselt - Kontext: Fahigkeit vs. Vermutung (ca. 50%). Subjektives konnen = Vermutung",
+      "Er muss 20 Jahre alt sein. = 100%? - Logische Schlussfolgerung, ca. 95%. Subjektives mussen = hochste Wahrscheinlichkeit",
+      "Er soll krank sein. = eigene Meinung? - Nein, Zitat von anderen Personen. sollen = Behauptung von Dritten",
+      "Sie will den Schlussel gefunden haben. = wahr? - Ihre Behauptung, muss nicht wahr sein. wollen = Behauptung der Person selbst",
+      "Er konnte der Tater sein. vs kann - konnte = geringere W'keit als kann. Konjunktiv II reduziert Wahrscheinlichkeit"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "Subjektive Modalverben",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "mussen (+ Inf.)",
+            "use": "100% logische Schlussfolgerung",
+            "example": "Er muss zu Hause sein."
+          },
+          {
+            "form": "durfte (+ Inf.)",
+            "use": "~90% Annahme",
+            "example": "Er durfte schon da sein."
+          },
+          {
+            "form": "konnen/mogen (+ Inf.)",
+            "use": "~50% Moglichkeit",
+            "example": "Er kann krank sein."
+          },
+          {
+            "form": "konnte (K.II)",
+            "use": "~30% geringe W'keit",
+            "example": "Er konnte der Tater sein."
+          },
+          {
+            "form": "sollen (+ Inf.)",
+            "use": "Zitat von Dritten",
+            "example": "Er soll in Berlin wohnen."
+          },
+          {
+            "form": "wollen (+ Inf.)",
+            "use": "Eigene Behauptung",
+            "example": "Sie will den Sieg errungen haben."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Vermutung (50%): Vielleicht ist er krank.",
+        "a": "Er kann krank sein."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Logik (95%): Er ist wahrscheinlich der Tater.",
+        "a": "Er muss der Tater sein."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Zitat: Die Nachbarn sagen, sie sei verreist.",
+        "a": "Sie soll verreist sein."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Behauptung: Sie sagt, sie habe den Fehler gefunden.",
+        "a": "Sie will den Fehler gefunden haben."
+      },
+      {
+        "q": "Geringe W'keit: Er kommt kaum.",
+        "a": "Er konnte kommen."
+      },
+      {
+        "q": "Zitat Verg.: Angeblich hat er das Buch gelesen.",
+        "a": "Er soll das Buch gelesen haben."
       }
     ],
     "linkedQuestionIds": [
       "B2_gr_14",
+      "B2_gr_76",
+      "B2_gr_77",
       "B2_gr_78",
-      "B2_gr_79"
+      "B2_gr_79",
+      "B2_gr_80"
     ],
     "formsTables": [
       {
@@ -15614,104 +15555,60 @@
     "writingTask": "Write an opinion piece (120 words) on integration challenges and opportunities.",
     "reviewSummary": "You learned migration vocabulary, subjective modal meanings, and discussing diversity.",
     "conceptId": "b2.nominalisierung",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.passiv.praesens",
       "b1.genitive.intro"
     ],
     "conceptsTaught": [
       "b2.nominalisierung",
-      "b2.funktionsverbgefuege",
-      "b2.nomen.verb.verbindung"
+      "b2.nominalisierung.funktionsverbgefuege"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Das Analysieren der Daten... statt Die Analyse - Die Analyse der Daten.... Nicht jeder Infinitiv wird nominalisiert",
+      "Die Forschung der Medikamente (falscher Genitiv) - Die Forschung an Medikamenten. Forschen AN -> Forschung AN (Praposition bleibt)",
+      "Eine Entscheidung machen statt treffen - Eine Entscheidung treffen. Funktionsverbgefuge haben feste Verben",
+      "Zu viel Nominalstil - Verben und Nominalisierungen abwechseln. Nominalstil wirkt schwerfallig",
+      "Der Import als Verb statt Nomen - importieren (Verb) vs der Import (Nomen). Nominalisierung andert Wortart"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Nomen zu: importieren",
+        "a": "der Import / das Importieren"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Nomen zu: analysieren",
+        "a": "die Analyse"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Funktionsverb: eine Entscheidung ____",
+        "a": "eine Entscheidung treffen"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Funktionsverb: zur Verfugung ____",
+        "a": "zur Verfugung stellen"
+      },
+      {
+        "q": "Funktionsverb: in Kraft ____",
+        "a": "in Kraft treten"
+      },
+      {
+        "q": "Die Wirtschaft wachst -> Nominalisierung",
+        "a": "das Wirtschaftswachstum"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_2",
       "B2_gr_3",
-      "B2_gr_10",
-      "B2_gr_32",
-      "B2_gr_35",
+      "B2_gr_36",
+      "B2_gr_37",
       "B2_gr_38",
-      "B2_gr_56",
-      "B2_gr_57",
-      "B2_gr_58",
-      "B2_gr_59",
-      "B2_gr_60",
-      "B2_gr_86",
-      "B2_gr_87",
-      "B2_gr_88",
-      "B2_gr_96",
-      "B2_gr_98",
-      "B2_gr_99",
-      "B2_gr_250"
+      "B2_gr_39",
+      "B2_gr_40"
     ],
     "formsTables": [
       {
@@ -15856,84 +15753,113 @@
     },
     "reviewSummary": "die Globalisierung, der Welthandel, die Lieferkette, die Ungleichheit",
     "conceptId": "b2.konnektoren.formal",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.connectors.cause.effect",
       "b1.temporal.connectors",
-      "b1.word.order.complex"
+      "b1.subordinate.obwohl"
     ],
     "conceptsTaught": [
-      "b2.doppelkonnektoren",
-      "b2.komplexe.konnektoren",
-      "b2.konnektoren"
+      "b2.konnektoren.formal",
+      "b2.konnektoren.doppelkonnektoren"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Trotzdem die Globalisierung Vorteile hat... - Obwohl die Globalisierung Vorteile hat.... trotzdem = Adverb, obwohl = Subjunktor",
+      "Je mehr Export, desto besser. (unvollstandig) - Je mehr ein Land exportiert, desto besser.... Je-desto braucht vollstandige Satze",
+      "Entweder... oder falsche Satzstellung - Entweder fahren wir, oder wir bleiben.. Nach entweder Verbposition 1",
+      "Nicht nur... sondern auch vs weder... noch - Nicht nur... = Aufzahlung, weder... noch = Negation. Positiv vs negativ",
+      "Sowohl... als auch mit Singular-Verb - Sowohl X als auch Y sind... (Plural). Bei zwei Subjekten Verb im Plural"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "B2-Konnektoren",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "obwohl (Subjunktor)",
+            "use": "Einraumung/Gegensatz",
+            "example": "Obwohl es regnet, gehen wir spazieren."
+          },
+          {
+            "form": "trotzdem (Adverb)",
+            "use": "Gegensatz HS",
+            "example": "Es regnet. Trotzdem gehen wir."
+          },
+          {
+            "form": "sodass (Subjunktor)",
+            "use": "Konsequenz",
+            "example": "Er lernte viel, sodass er bestand."
+          },
+          {
+            "form": "indem (Subjunktor)",
+            "use": "Methode",
+            "example": "Man spart Energie, indem man isoliert."
+          },
+          {
+            "form": "je...desto/umso",
+            "use": "Proportionale Steigerung",
+            "example": "Je mehr man ubt, desto besser wird man."
+          }
+        ]
+      },
+      {
+        "title": "Doppelkonnektoren",
+        "rows": [
+          {
+            "form": "nicht nur..., sondern auch...",
+            "use": "Positive Aufzahlung",
+            "example": "Nicht nur die Wirtschaft, sondern auch die Umwelt profitiert."
+          },
+          {
+            "form": "weder..., noch...",
+            "use": "Negative Aufzahlung",
+            "example": "Weder die Politik noch die Wirtschaft handelt."
+          },
+          {
+            "form": "entweder..., oder...",
+            "use": "Alternative",
+            "example": "Entweder wir handeln jetzt, oder es ist zu spat."
+          },
+          {
+            "form": "sowohl..., als auch...",
+            "use": "Parallelitat",
+            "example": "Sowohl Experten als auch Laien sind betroffen."
+          },
+          {
+            "form": "einerseits..., andererseits...",
+            "use": "Gegensatz",
+            "example": "Einerseits Vorteile, andererseits Nachteile."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Konnektor Gegensatz: ... es regnet, gehen wir.",
+        "a": "Obwohl es regnet, gehen wir spazieren."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Konnektor Konsequenz: Er lernte viel, ... er bestand.",
+        "a": "...sodass er die Prufung bestand."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Doppelkonnektor positiv: ... Wirtschaft ... Umwelt profitiert.",
+        "a": "Nicht nur die Wirtschaft, sondern auch die Umwelt profitiert."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Doppelkonnektor negativ: ... Politik ... Wirtschaft handelt.",
+        "a": "Weder die Politik noch die Wirtschaft handelt."
+      },
+      {
+        "q": "Je-desto: ... mehr man ubt, ... besser wird man.",
+        "a": "Je mehr man ubt, desto besser wird man."
+      },
+      {
+        "q": "Einerseits... andererseits: ...",
+        "a": "Einerseits gibt es Vorteile, andererseits Nachteile."
       }
     ],
     "linkedQuestionIds": [
@@ -15947,6 +15873,8 @@
       "B2_gr_49",
       "B2_gr_50",
       "B2_gr_66",
+      "B2_gr_67",
+      "B2_gr_68",
       "B2_gr_69",
       "B2_gr_70",
       "B2_gr_81",
@@ -15976,10 +15904,13 @@
       "B2_gr_187",
       "B2_gr_188",
       "B2_gr_189",
+      "B2_gr_190",
       "B2_gr_191",
+      "B2_gr_192",
       "B2_gr_193",
       "B2_gr_194",
       "B2_gr_195",
+      "B2_gr_196",
       "B2_gr_197",
       "B2_gr_198",
       "B2_gr_199",
@@ -15991,6 +15922,7 @@
       "B2_gr_205",
       "B2_gr_231",
       "B2_gr_232",
+      "B2_gr_233",
       "B2_gr_234",
       "B2_gr_235",
       "B2_gr_236",
@@ -16141,7 +16073,7 @@
     },
     "reviewSummary": "die Ethik, umstritten, der Tierversuch, die Genforschung, der Datenschutz",
     "conceptId": "b2.relativsaetze",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.relative.clauses.nom",
       "b1.relative.clauses.dat",
@@ -16149,96 +16081,63 @@
     ],
     "conceptsTaught": [
       "b2.relativsaetze",
-      "b2.wo.komposita",
-      "b2.relativpronomen.erweitert"
+      "b2.relativsaetze.erweitert"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Falscher Kasus im Relativpronomen",
-        "correction": "Der Kasus richtet sich nach der Funktion im Relativsatz"
-      },
-      {
-        "mistake": "Verwechslung von wo(r)-Komposita und Relativpronomen",
-        "correction": "Worauf = auf was, nicht auf das"
-      }
+      "Genitiv-Relativpronomen verwechselt - dessen (mask./neutr.), deren (fem./Plural). Besitzanzeige im Relativsatz",
+      "Kasus nach Praposition im Relativsatz falsch - Praposition bestimmt Kasus. mit deren Hilfe (Dativ)",
+      "Umgangssprachliches wo in formellen Texten - Praposition + Relativpronomen bevorzugen. die Stadt, in der... statt die Stadt, wo...",
+      "Verbposition im Relativsatz falsch - Verb am Ende (Nebensatz). Relativsatz ist eingeleiteter Nebensatz",
+      "Falscher Genus des Relativpronomens - Nach Genus des Bezugsworts. der (mask), die (fem), das (neut)"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativpronomen Genitiv mask: der Mann, ... Auto gestohlen",
+        "a": "...dessen Auto gestohlen wurde"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativpronomen Genitiv fem: die Frau, ... Hilfe ich brauchte",
+        "a": "...deren Hilfe ich brauchte"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativsatz mit Praposition: die Stadt, ... ich lebe",
+        "a": "die Stadt, in der ich lebe"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Verbposition: Das ist der Mann, der das Auto...",
+        "a": "...gestohlen hat. (Verb am Ende)"
+      },
+      {
+        "q": "wo-Kompositum formell: das Haus, ... ich wohne",
+        "a": "das Haus, in dem ich wohne"
+      },
+      {
+        "q": "Relativpronomen n.Praposition: die Leute, mit ... ich arbeite",
+        "a": "...mit denen ich arbeite"
       }
     ],
     "linkedQuestionIds": [
+      "B2_gr_111",
+      "B2_gr_112",
       "B2_gr_113",
+      "B2_gr_114",
       "B2_gr_115",
       "B2_gr_116",
+      "B2_gr_117",
       "B2_gr_118",
       "B2_gr_119",
       "B2_gr_120",
-      "B2_gr_136",
-      "B2_gr_138",
-      "B2_gr_139",
-      "B2_gr_140",
-      "B2_gr_141",
-      "B2_gr_143",
-      "B2_gr_144",
-      "B2_gr_145",
       "B2_gr_206",
       "B2_gr_207",
       "B2_gr_208",
       "B2_gr_209",
       "B2_gr_210",
-      "B2_gr_246",
-      "B2_gr_247"
+      "B2_gr_242"
     ],
     "formsTables": [
       {
@@ -16388,95 +16287,125 @@
     },
     "reviewSummary": "das Bewerbungsgespräch, die Stärke, der Arbeitgeber, die Qualifikation",
     "conceptId": "b2.indirekte.rede",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.konjunktiv2.general",
-      "b1.konjunktiv2.politeness"
+      "b1.konjunktiv2.politeness",
+      "b1.subordinate.obwohl"
     ],
     "conceptsTaught": [
       "b2.indirekte.rede",
-      "b2.konjunktiv.i",
-      "b2.indirekte.fragen"
+      "b2.indirekte.rede.konjunktiv-i"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Indikativ statt K.I in indirekter Rede - Er sagt, er habe keine Zeit.. K.I fur indirekte Rede",
+      "K.I = Indikativ, kein K.II als Ersatz - Sie sagten, sie hatten... statt haben. Wenn K.I = Indikativ, K.II als Ersatzform",
+      "Indirekte Frage: Er fragt, kann er kommen? - Er fragt, ob er kommen kann.. Verb am Ende in indirekten Fragen",
+      "ob-Satz und w-Frage verwechselt - ob fur Ja/Nein, w-Wort fur W-Fragen. Er fragt, ob... / warum... / wann...",
+      "Kein K.I in Vergangenheit - Er sagte, er habe gearbeitet (K.I Perfekt). Auch Vergangenheit mit K.I"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "Konjunktiv I Bildung",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "haben: er habe (K.I)",
+            "use": "Indirekte Rede Ggw.",
+            "example": "Er sagt, er habe keine Zeit."
+          },
+          {
+            "form": "sein: er sei (K.I)",
+            "use": "Indirekte Rede Zustand",
+            "example": "Sie sagt, er sei krank."
+          },
+          {
+            "form": "Modalv.: er konne (K.I)",
+            "use": "Indirekte Rede Modalv.",
+            "example": "Er sagt, er konne kommen."
+          },
+          {
+            "form": "K.I Perfekt: habe+PII",
+            "use": "Indirekte Rede Verg.",
+            "example": "Er sagt, er habe gearbeitet."
+          },
+          {
+            "form": "K.II Ersatzform",
+            "use": "Wenn K.I = Indikativ",
+            "example": "Sie hatten (statt haben)..."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Er sagt: Ich habe keine Zeit. -> Indirekte Rede",
+        "a": "Er sagt, er habe keine Zeit."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Sie fragt: Kommst du? -> Indirekte Frage",
+        "a": "Sie fragt, ob ich komme."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Er fragt: Wann fahrt der Zug? -> Indirekt",
+        "a": "Er fragt, wann der Zug fahrt."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Sie sagt: Ich bin krank. -> Indirekte Rede",
+        "a": "Sie sagt, sie sei krank."
+      },
+      {
+        "q": "Er sagte: Ich habe gearbeitet. -> Indirekt Verg.",
+        "a": "Er sagte, er habe gearbeitet."
+      },
+      {
+        "q": "Sie sagten: Wir haben keine Zeit. -> K.II Ersatz",
+        "a": "Sie sagten, sie hatten keine Zeit."
       }
     ],
     "linkedQuestionIds": [
+      "B2_gr_13",
+      "B2_gr_71",
+      "B2_gr_72",
+      "B2_gr_73",
+      "B2_gr_74",
+      "B2_gr_75",
       "B2_gr_101",
       "B2_gr_102",
       "B2_gr_103",
       "B2_gr_104",
+      "B2_gr_105",
       "B2_gr_106",
       "B2_gr_107",
       "B2_gr_108",
       "B2_gr_109",
-      "B2_gr_110"
+      "B2_gr_110",
+      "B2_gr_121",
+      "B2_gr_122",
+      "B2_gr_123",
+      "B2_gr_124",
+      "B2_gr_125",
+      "B2_gr_126",
+      "B2_gr_127",
+      "B2_gr_128",
+      "B2_gr_129",
+      "B2_gr_130",
+      "B2_gr_131",
+      "B2_gr_132",
+      "B2_gr_133",
+      "B2_gr_134",
+      "B2_gr_135",
+      "B2_gr_221",
+      "B2_gr_222",
+      "B2_gr_223",
+      "B2_gr_224",
+      "B2_gr_225",
+      "B2_gr_229",
+      "B2_gr_230",
+      "B2_gr_241"
     ],
     "formsTables": [
       {
@@ -16621,90 +16550,73 @@
     },
     "reviewSummary": "die Nachhaltigkeit, die Mülltrennung, erneürbare Energie, der Klimawandel",
     "conceptId": "b2.nominalstil",
-    "estimatedMinutes": 60,
+    "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.passiv.praesens",
-      "b1.participle.adjectives"
+      "b1.participle.adjectives",
+      "b1.word.order.complex"
     ],
     "conceptsTaught": [
       "b2.nominalstil",
-      "b2.partizipialattribute",
-      "b2.satzverkuerzung"
+      "b2.nominalstil.partizipialattribute"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Partizip I und II verwechselt - PI = aktiv (der lesende), PII = passiv (der gelesene). PI = gleichzeitig aktiv, PII = passiv/abgeschlossen",
+      "Falsche Endung bei Partizipialattributen - Adjektivendungen nach Artikelwort. der gelesene Artikel, ein gelesener Artikel",
+      "Partizipialattribut zu lang (Schachtelsatz) - Durch Relativsatz ersetzen. Lange Partizipialattribute schwer verstandlich",
+      "Der gewonnen werdene Preis (zu wortlich) - Der gewonnene Preis. Partizip II direkt als Attribut",
+      "Nur Nominalstil (keine Verben) - Nominalisierungen und Verben abwechseln. Guter Stil variiert"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Der Student, der liest -> Partizipialattribut",
+        "a": "der lesende Student"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Der Artikel, der gelesen wird -> Partizipialattribut",
+        "a": "der gelesene Artikel"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Die Analyse, die prasentiert wird -> kurz",
+        "a": "die prasentierte Analyse"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Partizip I oder II?: das laufende Band",
+        "a": "Partizip I (aktiv, gleichzeitig)"
+      },
+      {
+        "q": "Partizip I oder II?: das reparierte Auto",
+        "a": "Partizip II (passiv, abgeschlossen)"
+      },
+      {
+        "q": "Der Vorschlag von der Regierung -> kurz",
+        "a": "der von der Regierung gemachte Vorschlag"
       }
     ],
     "linkedQuestionIds": [
       "B2_gr_4",
       "B2_gr_5",
+      "B2_gr_41",
+      "B2_gr_42",
+      "B2_gr_43",
       "B2_gr_44",
-      "B2_gr_45"
+      "B2_gr_45",
+      "B2_gr_136",
+      "B2_gr_137",
+      "B2_gr_138",
+      "B2_gr_139",
+      "B2_gr_140",
+      "B2_gr_141",
+      "B2_gr_142",
+      "B2_gr_143",
+      "B2_gr_144",
+      "B2_gr_145",
+      "B2_gr_246",
+      "B2_gr_247"
     ],
     "formsTables": [
       {
@@ -16839,104 +16751,105 @@
     },
     "reviewSummary": "das Konto, der Kredit, die Aktie, die Anlage, die Rendite",
     "conceptId": "b2.satzbau",
-    "estimatedMinutes": 50,
+    "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
       "b1.word.order.complex",
-      "b1.connectors.cause.effect"
+      "b1.adjective.endings.nom"
     ],
     "conceptsTaught": [
-      "b2.klammer",
-      "b2.ausklammerung",
-      "b2.stellungsfelder",
-      "b2.wortstellung"
+      "b2.satzbau",
+      "b2.satzbau.stellungsfelder"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Verbklammer nicht geschlossen - Ich habe gestern ein Buch gelesen.. Finites Verb = 1. Teil, infinit = Ende",
+      "Ausklammerung: Ich habe gelesen ein Buch. - Ich habe ein Buch gelesen.. Mittelfeld bleibt in Klammer",
+      "Falsche Stellung nach Adverb am Satzanfang - Gestern habe ich.... Inversion nach Adverb am Satzanfang",
+      "n-Deklination: den Kollege statt den Kollegen - den Kollegen. Mask. Nomen auf -e: der Kollege, den Kollegen",
+      "Doppelte Negation: kein Geld nicht - Ich habe kein Geld. (einfache Negation). Im Deutschen nur eine Negation"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "Stellungsfelder",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "Vorfeld (Position 1)",
+            "use": "Topik/Thema",
+            "example": "Gestern habe ich ein Buch gelesen."
+          },
+          {
+            "form": "Linke Klammer (Position 2)",
+            "use": "Finites Verb",
+            "example": "...habe ich ein Buch gelesen."
+          },
+          {
+            "form": "Mittelfeld",
+            "use": "Subjekt, Objekte, Adv.",
+            "example": "...ich gestern ein Buch..."
+          },
+          {
+            "form": "Rechte Klammer",
+            "use": "Infinit/PII",
+            "example": "...gelesen."
+          },
+          {
+            "form": "Nachfeld (Ausklammerung)",
+            "use": "Vergleiche/Nebensatze",
+            "example": "...als ich jung war."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Ich habe gestern ein Buch ____.",
+        "a": "...gelesen. (rechte Klammer schlieSSen)"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Inversion: Ich habe gestern... -> Gestern...",
+        "a": "Gestern habe ich ein Buch gelesen."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "n-Deklination: der Kollege, den ____",
+        "a": "den Kollegen"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Ich habe ... gelesen, das Buch. (Ausklammerung?)",
+        "a": "Nein: Ich habe das Buch gelesen."
+      },
+      {
+        "q": "Negation: Ich habe nicht das Buch gelesen vs richtig?",
+        "a": "Ich habe das Buch nicht gelesen. (Negation vor PII)"
+      },
+      {
+        "q": "Dativ: Ich helfe ____ (der Kollege)",
+        "a": "dem Kollegen (n-Deklination)"
       }
     ],
     "linkedQuestionIds": [
       "B2_gr_8",
       "B2_gr_9",
+      "B2_gr_10",
+      "B2_gr_17",
       "B2_gr_51",
       "B2_gr_52",
       "B2_gr_53",
       "B2_gr_54",
       "B2_gr_55",
-      "B2_gr_146",
-      "B2_gr_147",
-      "B2_gr_148",
-      "B2_gr_149",
-      "B2_gr_150",
-      "B2_gr_151",
-      "B2_gr_152",
-      "B2_gr_153",
-      "B2_gr_154",
-      "B2_gr_155",
+      "B2_gr_56",
+      "B2_gr_57",
+      "B2_gr_58",
+      "B2_gr_59",
+      "B2_gr_60",
+      "B2_gr_86",
+      "B2_gr_87",
+      "B2_gr_88",
+      "B2_gr_89",
+      "B2_gr_90",
+      "B2_gr_211",
       "B2_gr_212",
       "B2_gr_213",
       "B2_gr_214",
@@ -16945,11 +16858,10 @@
       "B2_gr_217",
       "B2_gr_218",
       "B2_gr_219",
-      "B2_gr_233",
-      "B2_gr_238",
-      "B2_gr_239",
+      "B2_gr_220",
       "B2_gr_244",
-      "B2_gr_245"
+      "B2_gr_245",
+      "B2_read_4"
     ],
     "formsTables": [
       {
@@ -17086,91 +16998,53 @@
     "conceptId": "b2.globalisierung",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.passiv.praesens",
-      "b1.connectors.cause.effect"
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors",
+      "b1.passiv.praesens"
     ],
     "conceptsTaught": [
       "b2.globalisierung",
-      "b2.wirtschaftsdeutsch"
+      "b2.globalisierung.wirtschaftsdeutsch"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Die Globalisierung hat Vorteile... (zu einfach) - Komplexe Satze mit Konnektoren. B2 erwartet differenzierte Argumentation",
+      "Keine Prapositionaladverbien (davon, darauf...) - Davon profitieren Industrienationen.. Typisch fur B2",
+      "Keine Nominalisierungen in Diskussion - Die Globalisierung fuhrt zu einer Erhohung.... Formelle Diskussionen nutzen Nominalstil",
+      "Fachbegriffe falsch ubersetzt - Deutsche Wirtschaftsbegriffe: BIP, Freihandel. Wirtschaftsvokabular",
+      "Kein Passiv in Analyse - Der Welthandel wird beeinflusst.. Wirtschaftsanalyse im Passiv"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "3 Vorteile der Globalisierung?",
+        "a": "Freier Handel, kultureller Austausch, technologischer Fortschritt."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "3 Nachteile der Globalisierung?",
+        "a": "Umweltverschmutzung, Ausbeutung, Verlust kultureller Identitat."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Was bedeutet BIP?",
+        "a": "Bruttoinlandsprodukt."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "These zur Globalisierung formulieren",
+        "a": "Die Globalisierung fuhrt zu zunehmender wirtschaftlicher Verflechtung."
+      },
+      {
+        "q": "Konnektor: ... Globalisierung Vorteile bringt, ... Risiken",
+        "a": "Obwohl die Globalisierung Vorteile bringt, birgt sie Risiken."
+      },
+      {
+        "q": "Passiv: Man muss den Welthandel regulieren.",
+        "a": "Der Welthandel muss reguliert werden."
       }
     ],
-    "linkedQuestionIds": [
-      "B2_gr_121",
-      "B2_gr_122",
-      "B2_gr_123",
-      "B2_gr_124",
-      "B2_gr_125",
-      "B2_gr_126",
-      "B2_gr_127"
-    ],
+    "linkedQuestionIds": [],
     "formsTables": [
       {
         "title": "Wichtige Ausdrucke",
@@ -17307,89 +17181,55 @@
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
       "b1.konjunktiv2.general",
-      "b1.umzu.clauses"
+      "b1.passiv.praesens"
     ],
     "conceptsTaught": [
-      "b2.wissenschaftsethik",
-      "b2.argumentation.ethik"
+      "b2.ethik.wissenschaft",
+      "b2.ethik.wissenschaftsethik"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Subjektive Meinung ohne Kennzeichnung - Meiner Ansicht nach... / Aus ethischer Sicht.... Wissenschaftsethik: klare Kennzeichnung",
+      "Fehlende Argumentstruktur - These - Argument - Beispiel - Schlussfolgerung. Klare wiss. Struktur",
+      "Kein K.I in Zitaten - Der Forscher behauptet, die Studie sei valide.. Indirekte Rede mit K.I",
+      "Passiv in Diskussion vergessen - Die Ergebnisse wurden uberpruft.. Passiv reduziert Subjektivitat",
+      "Konnektoren fehlen (folglich, demnach, insofern) - Die Hypothese bestatigt sich nicht, folglich.... Folgerungskonnektoren"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Struktur wissenschaftlicher Argumentation",
+        "a": "These - Argument - Beispiel - Schlussfolgerung"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Wie kennzeichnet man eigene Meinung?",
+        "a": "Meiner Ansicht nach... / Aus ethischer Sicht..."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Indirekte Rede: Der Forscher: Die Studie ist valide.",
+        "a": "Der Forscher behauptet, die Studie sei valide."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Man uberprufte die Ergebnisse.",
+        "a": "Die Ergebnisse wurden uberpruft."
+      },
+      {
+        "q": "Folgerungskonnektor: Die Hypothese bestatigt sich nicht...",
+        "a": "...folglich muss sie revidiert werden."
+      },
+      {
+        "q": "Wissenschaftlicher Stil: man/Passiv/Aktiv?",
+        "a": "Passiv bevorzugen: Die Daten wurden analysiert."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_17",
-      "B2_gr_86",
-      "B2_gr_87",
-      "B2_gr_88",
-      "B2_gr_89",
-      "B2_gr_90",
-      "B2_gr_111"
+      "B2_read_22",
+      "B2_read_30",
+      "B2_read_44",
+      "B2_listen_44"
     ],
     "formsTables": [
       {
@@ -17526,90 +17366,54 @@
     "conceptId": "b2.bewerbung",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.pronominal.adverbs",
-      "b1.genitive.intro"
+      "b1.konjunktiv2.politeness",
+      "b1.word.order.complex"
     ],
     "conceptsTaught": [
       "b2.bewerbung",
-      "b2.formelle.kommunikation"
+      "b2.bewerbung.formelle-kommunikation"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Bewerbung mit falscher Anrede - Sehr geehrte Damen und Herren. Standardisierte formelle Anrede",
+      "Kein K.II im Gesprach - Ich wurde sagen, dass ich uber Erfahrung verfuge.. Hoeflichkeit durch K.II",
+      "Zu direkte Fragen - Durfte ich fragen, welche Aufgaben...?. Modalverben subjektiv fur Hoeflichkeit",
+      "Falsche Zeitform im Lebenslauf - Prasens (aktuell), Prateritum (fruher). Tempuswechsel im Lebenslauf",
+      "Anschreiben ohne Struktur - Einleitung - Motivation - Qualifikation - Schluss. Klare Bewerbungsstruktur"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Formelle Anrede in der Bewerbung",
+        "a": "Sehr geehrte Damen und Herren,"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Hoflich fragen im Vorstellungsgesprach",
+        "a": "Durfte ich fragen, welche Aufgaben...?"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.II fur Hoflichkeit: Ich ... sagen...",
+        "a": "Ich wurde sagen, dass..."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Zeitform fur aktuelle Position im Lebenslauf",
+        "a": "Prasens (Ich arbeite bei...)"
+      },
+      {
+        "q": "Zeitform fur fruhere Positionen",
+        "a": "Prateritum (Ich arbeitete bei...)"
+      },
+      {
+        "q": "Struktur des Anschreibens",
+        "a": "Einleitung - Motivation - Qualifikation - Schluss"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_166",
-      "B2_gr_167",
-      "B2_gr_168",
-      "B2_gr_169",
-      "B2_gr_171",
-      "B2_gr_172",
-      "B2_gr_173"
+      "B2_listen_27",
+      "B2_write_15"
     ],
     "formsTables": [
       {
@@ -17746,90 +17550,56 @@
     "conceptId": "b2.nachhaltigkeit",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.subordinate.obwohl",
+      "b1.passiv.praesens",
       "b1.umzu.clauses"
     ],
     "conceptsTaught": [
-      "b2.umwelt",
-      "b2.nachhaltigkeit"
+      "b2.nachhaltigkeit",
+      "b2.nachhaltigkeit.umwelt"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Ubermassiges man - Passiv oder bestimmtes Subjekt. B2 vermeidet pauschales man",
+      "Keine Nominalisierungen (Umwelt) - Die Reduzierung von CO2-Emissionen.... Umwelt-Fachvokabular",
+      "sorgen fur/um verwechselt - sorgen fur = verursachen, sich sorgen um = sich kummern. Praposition andert Bedeutung",
+      "Kein K.II fur Vorschlage - Man konnte mehr investieren.. Vorschlage mit K.II",
+      "Keine B2-Konnektoren - Je mehr wir investieren, desto schneller.... Je-desto fur Zusammenhange"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "3 erneuerbare Energiequellen?",
+        "a": "Sonne, Wind, Wasser."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Warum ist Nachhaltigkeit wichtig?",
+        "a": "Um Ressourcen fur zukunftige Generationen zu erhalten."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Vorschlag K.II: Mehr in Erneuerbare investieren",
+        "a": "Man konnte mehr in erneuerbare Energien investieren."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Die Regierung fordert Erneuerbare.",
+        "a": "Erneuerbare Energien werden gefordert."
+      },
+      {
+        "q": "sorgen fur vs sich sorgen um",
+        "a": "sorgen fur = verursachen, sich sorgen um = sich kummern"
+      },
+      {
+        "q": "Je-desto: ... mehr investieren, ... schneller Wende",
+        "a": "Je mehr wir investieren, desto schneller die Wende."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_121",
-      "B2_gr_122",
-      "B2_gr_123",
-      "B2_gr_124",
-      "B2_gr_125",
-      "B2_gr_126",
-      "B2_gr_127"
+      "B2_read_13",
+      "B2_write_30",
+      "B2_speak_9",
+      "B2_speak_30"
     ],
     "formsTables": [
       {
@@ -17966,90 +17736,54 @@
     "conceptId": "b2.finanzen.wirtschaft",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.passiv.praesens",
+      "b1.konjunktiv2.general",
       "b1.prepositions.fixed.case"
     ],
     "conceptsTaught": [
-      "b2.wirtschaft",
-      "b2.finanzen"
+      "b2.finanzen.wirtschaft",
+      "b2.finanzen.wirtschaftsdeutsch"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Falsche Fachbegriffe - Aktie, Anleihe, Dividende, Fonds. Wirtschaftsvokabular wichtig",
+      "Kein Passiv in Wirtschaftstexten - Die Aktien werden an der Borse gehandelt.. Passiv in Wirtschaftstexten",
+      "Verb-Praposition falsch - investieren in (Akk), finanzieren durch. Feste Prapositionen",
+      "Funktionsverbgefuge fehlen - in Kraft treten, zur Verfugung stellen. Typisch fur Wirtschaftsdeutsch",
+      "Keine indirekte Rede - Der Vorstand gab bekannt, der Gewinn sei gestiegen.. Wirtschaftsberichte mit indirekter Rede"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Was ist eine Aktie?",
+        "a": "Ein Anteil an einem Unternehmen."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Was ist eine Dividende?",
+        "a": "Gewinnanteil fur Aktionare."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Man handelt Aktien an der Borse.",
+        "a": "Die Aktien werden an der Borse gehandelt."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Funktionsverb: Das Gesetz tritt in...",
+        "a": "...in Kraft."
+      },
+      {
+        "q": "Indirekte Rede: Vorstand: Der Gewinn ist gestiegen.",
+        "a": "Der Vorstand gab bekannt, der Gewinn sei gestiegen."
+      },
+      {
+        "q": "Verb-Praposition: investieren ___",
+        "a": "investieren IN + Akkusativ"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_176",
-      "B2_gr_178",
-      "B2_gr_179",
-      "B2_gr_180",
-      "B2_gr_181",
-      "B2_gr_182",
-      "B2_gr_183"
+      "B2_read_9",
+      "B2_read_15"
     ],
     "formsTables": [
       {
@@ -18187,89 +17921,54 @@
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
       "b1.connectors.cause.effect",
-      "b1.konjunktiv2.general"
+      "b1.prepositions.fixed.case"
     ],
     "conceptsTaught": [
-      "b2.migration",
-      "b2.integration"
+      "b2.migration.integration",
+      "b2.migration.vielfalt"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Integration vs Assimilation - Integration = gegenseitige Anpassung. Begriffliche Differenzierung",
+      "Kein K.I in Diskussion - Die Studie zeigt, dass Integration gelinge.. Zitate mit K.I",
+      "wo statt Praposition+Pronomen - die Gesellschaft, in der wir leben. Formell: Praposition + Relativpronomen",
+      "ankommen in/auf verwechselt - ankommen auf = abhangen von. Praposition andert Bedeutung",
+      "Keine komplexen Nebensatze - Obwohl Integration Herausforderungen birgt.... B2 erwartet komplexe Strukturen"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Integration vs Assimilation?",
+        "a": "Integration = gegenseitig, Assimilation = vollstandige Angleichung."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativsatz: die Gesellschaft, ... wir leben",
+        "a": "die Gesellschaft, in der wir leben"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.I: Die Studie zeigt: Integration gelingt.",
+        "a": "Die Studie zeigt, dass Integration gelinge."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Obwohl-Satz zu Integration",
+        "a": "Obwohl Integration Herausforderungen birgt, bietet sie Chancen."
+      },
+      {
+        "q": "ankommen auf vs ankommen in",
+        "a": "ankommen AUF = abhangen, ankommen IN = Ort erreichen"
+      },
+      {
+        "q": "Nebensatz: ... Migration Chancen bietet, ... Herausforderungen",
+        "a": "Obwohl Migration Chancen bietet, gibt es Herausforderungen."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_12",
-      "B2_gr_66",
-      "B2_gr_67",
-      "B2_gr_68",
-      "B2_gr_69",
-      "B2_gr_70",
-      "B2_gr_4"
+      "B2_read_18",
+      "B2_read_50",
+      "B2_listen_18"
     ],
     "formsTables": [
       {
@@ -18406,90 +18105,69 @@
     "conceptId": "b2.recht.gerechtigkeit",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.prepositions.fixed.case",
-      "b1.temporal.connectors"
+      "b1.passiv.praesens",
+      "b1.subordinate.obwohl"
     ],
     "conceptsTaught": [
-      "b2.recht",
-      "b2.gerechtigkeit"
+      "b2.recht.gerechtigkeit",
+      "b2.recht.grundgesetz"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Grundgesetz falscher Artikel - das Grundgesetz (Neutrum). Politische Begriffe mit korrektem Artikel",
+      "Kein Passiv im Rechtskontext - Das Gesetz wurde vom Bundestag verabschiedet.. Rechtstexte haufig Passiv",
+      "Nominalstil in Gesetzen unverstandlich - Die Wahrnehmung von Rechten.... Gesetzestexte stark nominalisiert",
+      "Falsche Konnektoren juristisch - Insofern die Klage begrundet ist.... Spezifische juristische Konnektoren",
+      "Genitiv-Relativsatze falsch - die Rechte, deren Verletzung geklagt wird. Haufig im Rechtsdeutsch"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Artikel von Grundgesetz",
+        "a": "das Grundgesetz (Neutrum)"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Der Bundestag verabschiedete das Gesetz.",
+        "a": "Das Gesetz wurde vom Bundestag verabschiedet."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativsatz Genitiv: die Rechte, ... Verletzung...",
+        "a": "die Rechte, deren Verletzung geklagt wird"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Insofern: ... die Klage begrundet ist, wird stattgegeben.",
+        "a": "Insofern die Klage begrundet ist, wird ihr stattgegeben."
+      },
+      {
+        "q": "Nominalisierung: Gesetze verabschieden",
+        "a": "die Verabschiedung von Gesetzen"
+      },
+      {
+        "q": "Funktionsverb: ein Urteil...",
+        "a": "ein Urteil fallen / sprechen"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_186",
-      "B2_gr_187",
-      "B2_gr_188",
-      "B2_gr_189",
-      "B2_gr_190",
-      "B2_gr_191",
-      "B2_gr_192"
+      "B2_read_2",
+      "B2_read_3",
+      "B2_read_12",
+      "B2_read_17",
+      "B2_read_19",
+      "B2_read_23",
+      "B2_read_24",
+      "B2_read_27",
+      "B2_read_36",
+      "B2_read_37",
+      "B2_read_38",
+      "B2_read_39",
+      "B2_read_42",
+      "B2_read_43",
+      "B2_write_22",
+      "B2_write_29",
+      "B2_write_31"
     ],
     "formsTables": [
       {
@@ -18626,87 +18304,56 @@
     "conceptId": "b2.medien",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.passiv.prateritum",
+      "b1.passiv.praesens",
+      "b1.subordinate.obwohl",
       "b1.relative.clauses.general"
     ],
     "conceptsTaught": [
       "b2.medien",
-      "b2.journalismus"
+      "b2.medien.journalismus"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Kein K.I in Medienanalyse - Der Artikel behauptet, die Pressefreiheit sei gefahrdet.. Medienanalyse mit K.I",
+      "Keine Partizipialattribute - Die von der Regierung kritisierte Berichterstattung.... Verdichten Information",
+      "schreiben uber/an verwechselt - uber (Thema), an (Adressat). Prapositionen unterscheiden",
+      "Kein K.II bei Kritik - Man konnte die Berichterstattung als einseitig betrachten.. Kritik mit K.II abschwachen",
+      "Aktiv statt Passiv in Analyse - Die Medien werden von der Politik beeinflusst.. Passiv betont Analyseobjekt"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.I: Der Artikel: Die Pressefreiheit ist gefahrdet.",
+        "a": "Der Artikel behauptet, die Pressefreiheit sei gefahrdet."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Partizipialattribut: Die von der Regierung kritisierte...",
+        "a": "...Berichterstattung."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Praposition: ein Artikel ___ (Thema) vs schreiben ___ (Adressat)",
+        "a": "ein Artikel UBER/thema vs schreiben AN/Adressat"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.II fur Kritik: Die Berichterstattung ist einseitig.",
+        "a": "Man konnte sie als einseitig betrachten."
+      },
+      {
+        "q": "Passiv: Die Politik beeinflusst die Medien.",
+        "a": "Die Medien werden von der Politik beeinflusst."
+      },
+      {
+        "q": "Passiversatz: Pressefreiheit kann uberwacht werden.",
+        "a": "Die Pressefreiheit lasst sich uberwachen."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_17",
-      "B2_gr_89",
-      "B2_gr_90",
-      "B2_gr_242"
+      "B2_read_20",
+      "B2_write_37",
+      "B2_speak_49"
     ],
     "formsTables": [
       {
@@ -18844,89 +18491,52 @@
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
       "b1.konjunktiv2.general",
-      "b1.pronominal.adverbs"
+      "b1.reflexive.verbs.extended"
     ],
     "conceptsTaught": [
       "b2.psychologie",
-      "b2.motivation"
+      "b2.psychologie.lernen-motivation"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Reflexivverben falsch (erinnern) - Ich erinnere MICH an... (reflexiv). Psychologie: viele Reflexivverben",
+      "Kein K.II fur Hypothesen - Wenn mehr Menschen Sport trieben.... Hypothesen mit K.II",
+      "glauben an/auf falsch - glauben AN + Akk. Feste Praposition",
+      "Keine Da-Komposita - Daruber hinaus..., Hiervon ausgehend.... Strukturieren Argumentation",
+      "Kein K.I in Studienzitaten - Die Autoren argumentieren, Motivation sei entscheidend.. Studienzitate mit K.I"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Richtiges Reflexivverb: Ich erinnere ... an...",
+        "a": "Ich erinnere MICH an..."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.II: Wenn mehr Menschen Sport ...",
+        "a": "...trieben, waren sie gesunder."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Feste Praposition: glauben ___",
+        "a": "glauben AN + Akkusativ"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Da-Komposita: Daruber hinaus, Hiervon ausgehend - Funktion?",
+        "a": "Sie strukturieren die Argumentation."
+      },
+      {
+        "q": "K.I: Die Autoren: Motivation ist entscheidend.",
+        "a": "Die Autoren argumentieren, Motivation sei entscheidend."
+      },
+      {
+        "q": "3 Faktoren fur Motivation?",
+        "a": "Autonomie, Kompetenz, soziale Zugehorigkeit."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_196",
-      "B2_gr_197",
-      "B2_gr_198",
-      "B2_gr_199",
-      "B2_gr_200",
-      "B2_gr_201",
-      "B2_gr_202"
+      "B2_read_40"
     ],
     "formsTables": [
       {
@@ -19063,90 +18673,101 @@
     "conceptId": "b2.tourismus",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.umzu.clauses",
-      "b1.comparisons.complex"
+      "b1.prepositions.fixed.case",
+      "b1.genitive.intro"
     ],
     "conceptsTaught": [
       "b2.tourismus",
-      "b2.kultur.tourismus"
+      "b2.tourismus.kultur-reisen"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Reisen vs verreisen vs bereisen - reisen (allg.), verreisen (wegfahren), bereisen (Land). Differenzierung",
+      "Genitiv bei Landernamen - die Kultur Italiens / die italienische Kultur. Genitiv bei Landern mit Artikel",
+      "Keine Prapositionaladverbien - Worauf kommt es beim Reisen an?. Da-Komposita",
+      "Wechselprapositionen verwechselt - in die Stadt fahren (Akk) vs in der Stadt sein (Dat). Wo? (Dat) vs Wohin? (Akk)",
+      "Passiversatz sich lassen fehlt - Der Flug lasst sich nicht stornieren.. Passiversatz im Reisekontext"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
     "formsTable": [
       {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
+        "title": "Wechselprapositionen Wo? vs Wohin?",
         "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
+          {
+            "form": "in + Dativ (Wo?)",
+            "use": "Position/Ort",
+            "example": "Ich bin in der Stadt."
+          },
+          {
+            "form": "in + Akkusativ (Wohin?)",
+            "use": "Richtung/Ziel",
+            "example": "Ich fahre in die Stadt."
+          },
+          {
+            "form": "an + Dativ",
+            "use": "Position an",
+            "example": "Das Hotel liegt am Meer."
+          },
+          {
+            "form": "an + Akkusativ",
+            "use": "Richtung an",
+            "example": "Wir fahren ans Meer."
+          },
+          {
+            "form": "auf + Dativ",
+            "use": "Position auf",
+            "example": "Das Gepack ist auf dem Trager."
+          },
+          {
+            "form": "auf + Akkusativ",
+            "use": "Richtung auf",
+            "example": "Ich stelle den Koffer auf den Trager."
+          }
         ]
       }
     ],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "reisen vs verreisen vs bereisen",
+        "a": "reisen=allg., verreisen=wegfahren, bereisen=Land"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Genitiv: die Kultur ___ (Italien)",
+        "a": "die Kultur Italiens"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Wo?: Ich bin in der Stadt. (Wo/Wohin?)",
+        "a": "Wo (in + Dativ)"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Wohin?: Ich fahre in die Stadt. (Wo/Wohin?)",
+        "a": "Wohin (in + Akk)"
+      },
+      {
+        "q": "Passiversatz: Der Flug kann nicht storniert werden.",
+        "a": "Der Flug lasst sich nicht stornieren."
+      },
+      {
+        "q": "Frage: ... kommt es beim Reisen an?",
+        "a": "Worauf kommt es beim Reisen an?"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_121",
-      "B2_gr_122",
-      "B2_gr_123",
-      "B2_gr_124",
-      "B2_gr_125",
-      "B2_gr_126",
-      "B2_gr_127"
+      "B2_gr_146",
+      "B2_gr_147",
+      "B2_gr_148",
+      "B2_gr_149",
+      "B2_gr_150",
+      "B2_gr_151",
+      "B2_gr_152",
+      "B2_gr_153",
+      "B2_gr_154",
+      "B2_gr_155",
+      "B2_gr_238",
+      "B2_gr_239",
+      "B2_read_14"
     ],
     "formsTables": [
       {
@@ -19283,91 +18904,58 @@
     "conceptId": "b2.digitalisierung",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.connectors.cause.effect",
-      "b1.passiv.praesens"
+      "b1.passiv.praesens",
+      "b1.word.order.complex"
     ],
     "conceptsTaught": [
       "b2.digitalisierung",
-      "b2.ki",
-      "b2.arbeitswelt"
+      "b2.digitalisierung.ki"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "digitalisieren vs digital - digitalisieren (Verb), digital (Adj.). Wortbildung",
+      "Keine Nominalisierungen - Die Vernetzung von Geraten.... Technische Texte mit Nominalstil",
+      "Kein Passiv mit Modalverben - KI kann in vielen Bereichen eingesetzt werden.. Diskussion uber KI",
+      "Falscher Konnektor: dadurch, dass - Dadurch, dass Prozesse automatisiert werden.... Kausale Zusammenhange",
+      "Keine Da-Komposita - Hiermit beschaftigt sich die aktuelle Forschung.. Formelle Technikdiskussion"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "digitalisieren (Verb) vs digital (Adj.)",
+        "a": "digitalisieren=in digitale Form, digital=elektronisch"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Nominalisierung: Gerate vernetzen",
+        "a": "die Vernetzung von Geraten"
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv m. Modal: Man kann KI einsetzen.",
+        "a": "KI kann in vielen Bereichen eingesetzt werden."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "dadurch, dass: ... Prozesse automatisiert werden, steigt...",
+        "a": "Dadurch, dass Prozesse automatisiert werden, steigt die Effizienz."
+      },
+      {
+        "q": "Da-Kompositum: ... beschaftigt sich die Forschung.",
+        "a": "Hiermit beschaftigt sich die aktuelle Forschung."
+      },
+      {
+        "q": "3 Bereiche fur KI?",
+        "a": "Medizin, Verkehr, Kommunikation."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_1",
-      "B2_gr_21",
-      "B2_gr_22",
-      "B2_gr_23",
-      "B2_gr_24",
-      "B2_gr_25",
-      "B2_gr_226"
+      "B2_read_11",
+      "B2_read_47",
+      "B2_write_3",
+      "B2_write_33",
+      "B2_write_34",
+      "B2_speak_7"
     ],
     "formsTables": [
       {
@@ -19504,90 +19092,53 @@
     "conceptId": "b2.politik.gesellschaft",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.word.order.complex",
-      "b1.subordinate.obwohl"
+      "b1.subordinate.obwohl",
+      "b1.connectors.cause.effect"
     ],
     "conceptsTaught": [
-      "b2.politik",
-      "b2.demokratie"
+      "b2.politik.gesellschaft",
+      "b2.politik.demokratie"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Historisches Prasens vs Vergangenheit - Prasens fur Analyse, Prateritum fur Ereignisse. Tempuswahl",
+      "Passiv in Geschichte - Die Mauer wurde 1961 errichtet.. Historische Ereignisse im Passiv",
+      "K.I in Zitaten - Brandt sagte, der Mauerfall sei historisch.. Zitate mit K.I",
+      "Konnektoren fur zeitliche Abfolge - zunachst... daraufhin... schliesslich.... Zeitliche Struktur",
+      "Relativsatze mit Prapositionen - die Zeit, in der die Mauer stand. Historische Zusammenhange"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Tempus fur Ereignisse vs Analyse",
+        "a": "Prateritum fur Ereignisse, Prasens fur Analyse."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Man errichtete die Mauer 1961.",
+        "a": "Die Mauer wurde 1961 errichtet."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "K.I: Brandt: Der Mauerfall ist historisch.",
+        "a": "Brandt sagte, der Mauerfall sei historisch."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Konnektoren zeitliche Abfolge",
+        "a": "zunachst... daraufhin... schlieSSlich..."
+      },
+      {
+        "q": "Relativsatz: die Zeit, ... die Mauer stand",
+        "a": "die Zeit, in der die Mauer stand"
+      },
+      {
+        "q": "Was bedeutet Demokratie?",
+        "a": "Volksherrschaft, Grundrechte, Meinungsfreiheit."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_17",
-      "B2_gr_86",
-      "B2_gr_87",
-      "B2_gr_88",
-      "B2_gr_89",
-      "B2_gr_90",
-      "B2_gr_166"
+      "B2_listen_10"
     ],
     "formsTables": [
       {
@@ -19724,90 +19275,54 @@
     "conceptId": "b2.smart.cities",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.passiv.praesens",
-      "b1.umzu.clauses"
+      "b1.temporal.connectors",
+      "b1.comparisons.complex"
     ],
     "conceptsTaught": [
       "b2.smart.cities",
-      "b2.urbanisierung"
+      "b2.urbanisierung.stadtentwicklung"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Satzverkurzung mit Partizipien - Die steigende Urbanisierung fuhrt zu.... Partizipialattribute statt Nebensatze",
+      "Keine je-desto Vergleiche - Je dichter die Stadt, desto hoher die Mieten.. Stadtentwicklung",
+      "Keine Nominalisierungen - Die Verdichtung urbaner Raume.... Nominalstil fur Stadtanalyse",
+      "Kein Futur II fur Prognosen - Bis 2030 werden die Stadte dichter geworden sein.. Zukunftsperspektiven",
+      "Kein K.I in Planungsdiskussion - Der Stadtplaner sagt, der Verkehr solle reduziert werden.. Planungszitate mit K.I"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Partizipialattribut: Die Urbanisierung, die steigt",
+        "a": "die steigende Urbanisierung"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Je-desto: ... dichter die Stadt, ... hoher die Mieten.",
+        "a": "Je dichter die Stadt, desto hoher die Mieten."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Nominalisierung: urbane Raume verdichten",
+        "a": "die Verdichtung urbaner Raume"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Futur II: Bis 2030 werden die Stadte dichter...",
+        "a": "...geworden sein."
+      },
+      {
+        "q": "K.I: Der Stadtplaner: Der Verkehr soll reduziert werden.",
+        "a": "Der Stadtplaner sagt, der Verkehr solle reduziert werden."
+      },
+      {
+        "q": "Was ist eine Smart City?",
+        "a": "Stadt, die Technologie fur Effizienz und Nachhaltigkeit nutzt."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_211",
-      "B2_gr_212",
-      "B2_gr_213",
-      "B2_gr_214",
-      "B2_gr_215",
-      "B2_gr_13",
-      "B2_gr_71"
+      "B2_read_46",
+      "B2_listen_13"
     ],
     "formsTables": [
       {
@@ -19944,103 +19459,61 @@
     "conceptId": "b2.energie.klima",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.connectors.cause.effect",
-      "b1.konjunktiv2.general"
+      "b1.passiv.praesens",
+      "b1.umzu.clauses"
     ],
     "conceptsTaught": [
-      "b2.klimawandel",
-      "b2.erneuerbare.energie"
+      "b2.energie.klima",
+      "b2.energie.erneuerbare"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Energiewende vs Klimawandel - Energiewende = politische Massnahme. Begriffliche Differenzierung",
+      "Kein Passiv in Umweltdiskussion - Erneuerbare Energien werden gefordert.. Umweltpolitik im Passiv",
+      "Keine Doppelkonnektoren - Nicht nur die Politik, sondern auch die Wirtschaft.... Komplexe Zusammenhange",
+      "Keine Nominalisierungen - Die Reduzierung von CO2 ist zentral.. Umweltdeutsch nominalisiert",
+      "Kein K.II fur Alternativszenarien - Wenn wir mehr investierten.... Alternative Szenarien"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Energiewende vs Klimawandel?",
+        "a": "Energiewende=politische MaSSnahme, Klimawandel=Naturphanomen."
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Man fordert erneuerbare Energien.",
+        "a": "Erneuerbare Energien werden gefordert."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Doppelkonnektor: ... Politik ... Wirtschaft gefordert.",
+        "a": "Nicht nur die Politik, sondern auch die Wirtschaft ist gefordert."
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Nominalisierung: CO2 reduzieren",
+        "a": "die Reduzierung von CO2"
+      },
+      {
+        "q": "K.II: ... wir mehr investierten...",
+        "a": "Wenn wir mehr investierten, wurden die Emissionen sinken."
+      },
+      {
+        "q": "3 erneuerbare Energiequellen?",
+        "a": "Sonne, Wind, Wasserkraft."
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_1",
-      "B2_gr_24",
-      "B2_gr_67",
-      "B2_gr_68",
-      "B2_gr_76",
-      "B2_gr_77",
-      "B2_gr_80",
-      "B2_gr_91",
-      "B2_gr_94",
-      "B2_gr_111",
-      "B2_gr_112",
-      "B2_gr_114",
-      "B2_gr_117",
-      "B2_gr_137",
-      "B2_gr_142",
-      "B2_gr_158",
-      "B2_gr_165",
-      "B2_gr_190",
-      "B2_gr_196",
-      "B2_gr_211"
+      "B2_gr_11",
+      "B2_gr_61",
+      "B2_gr_62",
+      "B2_gr_63",
+      "B2_gr_64",
+      "B2_gr_65",
+      "B2_read_10",
+      "B2_read_31",
+      "B2_read_49"
     ],
     "formsTables": [
       {
@@ -20177,90 +19650,199 @@
     "conceptId": "b2.kultur.leben",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.comparisons.complex",
+      "b1.konjunktiv2.politeness",
       "b1.relative.clauses.general"
     ],
     "conceptsTaught": [
-      "b2.kultur",
-      "b2.lebensstil"
+      "b2.kultur.leben",
+      "b2.kultur.kunst-sport"
     ],
     "commonMistakes": [
-      {
-        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
-        "correction": "Verb am Ende des Nebensatzes"
-      },
-      {
-        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
-        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
-      },
-      {
-        "mistake": "Falsche Wortstellung nach Konnektoren",
-        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
-      }
+      "Kultur falscher Genus - die Kultur (feminin). Kulturbegriffe mit korrektem Artikel",
+      "Keine Da-Komposita - Darunter versteht man kulturelle Vielfalt.. Da-Komposita",
+      "Relativsatze im Dativ falsch - die Kultur, in der wir leben. Relativsatze mit Prapositionen",
+      "Kein Passiv im Kulturvergleich - Mode wird von kulturellen Einflussen gepragt.. Kulturanalyse im Passiv",
+      "Kein K.I fur Zitate - Der Autor schreibt, Mode sei Ausdruck von Identitat.. Kulturzitate mit K.I"
     ],
     "lessonDepthVersion": "2.0",
     "trackTags": [
-      "goethe",
-      "telc",
       "b2"
     ],
-    "formsTable": [
-      {
-        "title": "Konjugation",
-        "columns": [
-          "Person",
-          "Singular",
-          "Plural"
-        ],
-        "rows": [
-          [
-            "1.",
-            "---",
-            "---"
-          ],
-          [
-            "2.",
-            "---",
-            "---"
-          ],
-          [
-            "3.",
-            "---",
-            "---"
-          ]
-        ]
-      }
-    ],
+    "formsTable": [],
     "miniDrills": [
       {
-        "prompt": "Ergaenzen Sie die richtige Form.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Artikel von Kultur",
+        "a": "die Kultur (feminin)"
       },
       {
-        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Da-Kompositum: ... versteht man kulturelle Vielfalt.",
+        "a": "Darunter versteht man kulturelle Vielfalt."
       },
       {
-        "prompt": "Welche Form ist korrekt?",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Relativsatz: die Kultur, ... wir leben",
+        "a": "die Kultur, in der wir leben"
       },
       {
-        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
-        "answer": "[Antwort]",
-        "explanation": "Kurze Erklarung."
+        "q": "Passiv: Kulturelle Einflusse pragen Mode.",
+        "a": "Mode wird von kulturellen Einflussen gepragt."
+      },
+      {
+        "q": "K.I: Der Autor: Mode ist Ausdruck von Identitat.",
+        "a": "Der Autor schreibt, Mode sei Ausdruck von Identitat."
+      },
+      {
+        "q": "Ist Mode Ausdruck von Kultur? (Ihre Meinung)",
+        "a": "(Freie Antwort: Mode spiegelt gesellschaftliche Werte wider.)"
       }
     ],
     "linkedQuestionIds": [
-      "B2_gr_101",
-      "B2_gr_102",
-      "B2_gr_103",
-      "B2_gr_104",
-      "B2_gr_105",
-      "B2_gr_106",
-      "B2_gr_107"
+      "B2_read_1",
+      "B2_read_5",
+      "B2_read_6",
+      "B2_read_8",
+      "B2_read_16",
+      "B2_read_21",
+      "B2_read_25",
+      "B2_read_26",
+      "B2_read_28",
+      "B2_read_29",
+      "B2_read_32",
+      "B2_read_33",
+      "B2_read_34",
+      "B2_read_35",
+      "B2_read_41",
+      "B2_read_45",
+      "B2_read_48",
+      "B2_listen_1",
+      "B2_listen_2",
+      "B2_listen_3",
+      "B2_listen_4",
+      "B2_listen_5",
+      "B2_listen_6",
+      "B2_listen_7",
+      "B2_listen_8",
+      "B2_listen_9",
+      "B2_listen_11",
+      "B2_listen_12",
+      "B2_listen_14",
+      "B2_listen_15",
+      "B2_listen_16",
+      "B2_listen_17",
+      "B2_listen_19",
+      "B2_listen_20",
+      "B2_listen_21",
+      "B2_listen_22",
+      "B2_listen_23",
+      "B2_listen_24",
+      "B2_listen_25",
+      "B2_listen_26",
+      "B2_listen_28",
+      "B2_listen_29",
+      "B2_listen_30",
+      "B2_listen_31",
+      "B2_listen_32",
+      "B2_listen_33",
+      "B2_listen_34",
+      "B2_listen_35",
+      "B2_listen_36",
+      "B2_listen_37",
+      "B2_listen_38",
+      "B2_listen_39",
+      "B2_listen_40",
+      "B2_listen_41",
+      "B2_listen_42",
+      "B2_listen_43",
+      "B2_listen_45",
+      "B2_listen_46",
+      "B2_listen_47",
+      "B2_listen_48",
+      "B2_listen_49",
+      "B2_listen_50",
+      "B2_write_1",
+      "B2_write_2",
+      "B2_write_4",
+      "B2_write_5",
+      "B2_write_6",
+      "B2_write_7",
+      "B2_write_8",
+      "B2_write_9",
+      "B2_write_10",
+      "B2_write_11",
+      "B2_write_12",
+      "B2_write_13",
+      "B2_write_14",
+      "B2_write_16",
+      "B2_write_17",
+      "B2_write_18",
+      "B2_write_19",
+      "B2_write_20",
+      "B2_write_21",
+      "B2_write_23",
+      "B2_write_25",
+      "B2_write_26",
+      "B2_write_27",
+      "B2_write_28",
+      "B2_write_32",
+      "B2_write_35",
+      "B2_write_36",
+      "B2_write_38",
+      "B2_write_39",
+      "B2_write_40",
+      "B2_write_41",
+      "B2_write_42",
+      "B2_write_43",
+      "B2_write_44",
+      "B2_write_45",
+      "B2_write_46",
+      "B2_write_47",
+      "B2_write_48",
+      "B2_write_49",
+      "B2_write_50",
+      "B2_speak_1",
+      "B2_speak_2",
+      "B2_speak_3",
+      "B2_speak_4",
+      "B2_speak_5",
+      "B2_speak_6",
+      "B2_speak_8",
+      "B2_speak_10",
+      "B2_speak_11",
+      "B2_speak_12",
+      "B2_speak_13",
+      "B2_speak_14",
+      "B2_speak_15",
+      "B2_speak_16",
+      "B2_speak_17",
+      "B2_speak_18",
+      "B2_speak_19",
+      "B2_speak_21",
+      "B2_speak_22",
+      "B2_speak_23",
+      "B2_speak_24",
+      "B2_speak_25",
+      "B2_speak_26",
+      "B2_speak_27",
+      "B2_speak_28",
+      "B2_speak_29",
+      "B2_speak_31",
+      "B2_speak_32",
+      "B2_speak_33",
+      "B2_speak_34",
+      "B2_speak_35",
+      "B2_speak_36",
+      "B2_speak_37",
+      "B2_speak_38",
+      "B2_speak_39",
+      "B2_speak_40",
+      "B2_speak_41",
+      "B2_speak_42",
+      "B2_speak_43",
+      "B2_speak_44",
+      "B2_speak_45",
+      "B2_speak_46",
+      "B2_speak_47",
+      "B2_speak_48",
+      "B2_speak_50"
     ],
     "formsTables": [
       {

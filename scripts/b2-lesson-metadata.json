@@ -1,0 +1,501 @@
+{
+  "B2_lesson_1": {
+    "conceptId": "b2.passive.vorgang.zustand",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.passiv.prateritum"
+    ],
+    "conceptsTaught": [
+      "b2.passive.vorgang.zustand",
+      "b2.passive.vorgangspassiv",
+      "b2.passive.zustandspassiv"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "passiv",
+      "vorgangspassiv",
+      "zustandspassiv"
+    ],
+    "title": "Review Passiv: Vorgangspassiv & Zustandspassiv"
+  },
+  "B2_lesson_2": {
+    "conceptId": "b2.passive.alternatives",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.passiv.prateritum",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.passive.alternatives",
+      "b2.passive.passiversatz",
+      "b2.passive.sein-zu"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "passiversatz",
+      "seinzu",
+      "sichlassen"
+    ],
+    "title": "Passiversatz, Passivalternativen & sein+zu"
+  },
+  "B2_lesson_3": {
+    "conceptId": "b2.prapositionale.verben",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.prepositions.fixed.case",
+      "b1.pronominal.adverbs",
+      "b1.reflexive.verbs.extended"
+    ],
+    "conceptsTaught": [
+      "b2.prapositionale.verben",
+      "b2.prapositionale.verb-praeposition",
+      "b2.prapositionale.da-komposita"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "praepositionale-verben",
+      "da-komposita"
+    ],
+    "title": "Verb-Präposition-Kombinationen & da-Komposita"
+  },
+  "B2_lesson_4": {
+    "conceptId": "b2.modalverben.subjektiv",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.politeness"
+    ],
+    "conceptsTaught": [
+      "b2.modalverben.subjektiv",
+      "b2.modalverben.subjektive-bedeutung"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "modalverben",
+      "subjektive-bedeutung"
+    ],
+    "title": "Modalverben subjektiv & subjektive Bedeutung"
+  },
+  "B2_lesson_5": {
+    "conceptId": "b2.nominalisierung",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.genitive.intro"
+    ],
+    "conceptsTaught": [
+      "b2.nominalisierung",
+      "b2.nominalisierung.funktionsverbgefuege"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "nominalisierung",
+      "funktionsverbgefuege"
+    ],
+    "title": "Nominalisierung & Funktionsverbgefüge"
+  },
+  "B2_lesson_6": {
+    "conceptId": "b2.konnektoren.formal",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors",
+      "b1.subordinate.obwohl"
+    ],
+    "conceptsTaught": [
+      "b2.konnektoren.formal",
+      "b2.konnektoren.doppelkonnektoren"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "konnektoren",
+      "satzverbindung"
+    ],
+    "title": "B2-Konnektoren & komplexe Satzstrukturen"
+  },
+  "B2_lesson_7": {
+    "conceptId": "b2.relativsaetze",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.relative.clauses.nom",
+      "b1.relative.clauses.dat",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.relativsaetze",
+      "b2.relativsaetze.erweitert"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "relativsaetze",
+      "wo-komposita"
+    ],
+    "title": "Erweiterte Relativsätze & wo-Komposita"
+  },
+  "B2_lesson_8": {
+    "conceptId": "b2.indirekte.rede",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.politeness",
+      "b1.subordinate.obwohl"
+    ],
+    "conceptsTaught": [
+      "b2.indirekte.rede",
+      "b2.indirekte.rede.konjunktiv-i"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "indirekte-rede",
+      "konjunktiv1"
+    ],
+    "title": "Indirekte Rede & Konjunktiv I"
+  },
+  "B2_lesson_9": {
+    "conceptId": "b2.nominalstil",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.participle.adjectives",
+      "b1.word.order.complex"
+    ],
+    "conceptsTaught": [
+      "b2.nominalstil",
+      "b2.nominalstil.partizipialattribute"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "nominalstil",
+      "partizipialattribute"
+    ],
+    "title": "Nominalstil & Partizipialattribute"
+  },
+  "B2_lesson_10": {
+    "conceptId": "b2.satzbau",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.word.order.complex",
+      "b1.adjective.endings.nom"
+    ],
+    "conceptsTaught": [
+      "b2.satzbau",
+      "b2.satzbau.stellungsfelder"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "satzbau",
+      "wortstellung"
+    ],
+    "title": "Satzbau & Stellungsfelder (Klammer & Ausklammerung)"
+  },
+  "B2_lesson_11": {
+    "conceptId": "b2.globalisierung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors",
+      "b1.passiv.praesens"
+    ],
+    "conceptsTaught": [
+      "b2.globalisierung",
+      "b2.globalisierung.wirtschaftsdeutsch"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "globalisierung",
+      "wirtschaftsdeutsch",
+      "diskussion"
+    ],
+    "title": "Globalisierung & Wirtschaftsdeutsch"
+  },
+  "B2_lesson_12": {
+    "conceptId": "b2.ethik.wissenschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.passiv.praesens"
+    ],
+    "conceptsTaught": [
+      "b2.ethik.wissenschaft",
+      "b2.ethik.wissenschaftsethik"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "ethik",
+      "wissenschaft",
+      "argumentation"
+    ],
+    "title": "Wissenschaftsethik & Argumentation"
+  },
+  "B2_lesson_13": {
+    "conceptId": "b2.bewerbung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.politeness",
+      "b1.word.order.complex"
+    ],
+    "conceptsTaught": [
+      "b2.bewerbung",
+      "b2.bewerbung.formelle-kommunikation"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "bewerbung",
+      "praesentation"
+    ],
+    "title": "Bewerbung & formelle Kommunikation"
+  },
+  "B2_lesson_14": {
+    "conceptId": "b2.nachhaltigkeit",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.nachhaltigkeit",
+      "b2.nachhaltigkeit.umwelt"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "nachhaltigkeit",
+      "umwelt",
+      "zukunft"
+    ],
+    "title": "Nachhaltigkeit & Umwelt"
+  },
+  "B2_lesson_15": {
+    "conceptId": "b2.finanzen.wirtschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.prepositions.fixed.case"
+    ],
+    "conceptsTaught": [
+      "b2.finanzen.wirtschaft",
+      "b2.finanzen.wirtschaftsdeutsch"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "wirtschaft",
+      "finanzen"
+    ],
+    "title": "Wirtschaft & Finanzen"
+  },
+  "B2_lesson_16": {
+    "conceptId": "b2.migration.integration",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.prepositions.fixed.case"
+    ],
+    "conceptsTaught": [
+      "b2.migration.integration",
+      "b2.migration.vielfalt"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "migration",
+      "integration",
+      "vielfalt"
+    ],
+    "title": "Migration & Integration"
+  },
+  "B2_lesson_17": {
+    "conceptId": "b2.recht.gerechtigkeit",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.subordinate.obwohl"
+    ],
+    "conceptsTaught": [
+      "b2.recht.gerechtigkeit",
+      "b2.recht.grundgesetz"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "recht",
+      "gerechtigkeit",
+      "grundgesetz"
+    ],
+    "title": "Recht & Gerechtigkeit"
+  },
+  "B2_lesson_18": {
+    "conceptId": "b2.medien",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.subordinate.obwohl",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.medien",
+      "b2.medien.journalismus"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "medien",
+      "journalismus",
+      "pressefreiheit"
+    ],
+    "title": "Medien & Journalismus"
+  },
+  "B2_lesson_19": {
+    "conceptId": "b2.psychologie",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.reflexive.verbs.extended"
+    ],
+    "conceptsTaught": [
+      "b2.psychologie",
+      "b2.psychologie.lernen-motivation"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "psychologie",
+      "lernen",
+      "motivation"
+    ],
+    "title": "Psychologie, Lernen & Motivation"
+  },
+  "B2_lesson_20": {
+    "conceptId": "b2.tourismus",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.prepositions.fixed.case",
+      "b1.genitive.intro"
+    ],
+    "conceptsTaught": [
+      "b2.tourismus",
+      "b2.tourismus.kultur-reisen"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "tourismus",
+      "kultur",
+      "reisen"
+    ],
+    "title": "Tourismus, Kultur & Reisen"
+  },
+  "B2_lesson_21": {
+    "conceptId": "b2.digitalisierung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.word.order.complex"
+    ],
+    "conceptsTaught": [
+      "b2.digitalisierung",
+      "b2.digitalisierung.ki"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "digitalisierung",
+      "ki",
+      "arbeitswelt"
+    ],
+    "title": "Digitalisierung & KI"
+  },
+  "B2_lesson_22": {
+    "conceptId": "b2.politik.gesellschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.subordinate.obwohl",
+      "b1.connectors.cause.effect"
+    ],
+    "conceptsTaught": [
+      "b2.politik.gesellschaft",
+      "b2.politik.demokratie"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "politik",
+      "demokratie"
+    ],
+    "title": "Politik, Demokratie & Bürgerrechte"
+  },
+  "B2_lesson_23": {
+    "conceptId": "b2.smart.cities",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.temporal.connectors",
+      "b1.comparisons.complex"
+    ],
+    "conceptsTaught": [
+      "b2.smart.cities",
+      "b2.urbanisierung.stadtentwicklung"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "smart-cities",
+      "stadtentwicklung",
+      "urbanisierung"
+    ],
+    "title": "Smart Cities & Stadtentwicklung"
+  },
+  "B2_lesson_24": {
+    "conceptId": "b2.energie.klima",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.energie.klima",
+      "b2.energie.erneuerbare"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "energie",
+      "klimawandel",
+      "erneuerbare"
+    ],
+    "title": "Energiepolitik & Klimawandel"
+  },
+  "B2_lesson_25": {
+    "conceptId": "b2.kultur.leben",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.politeness",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.kultur.leben",
+      "b2.kultur.kunst-sport"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "kultur",
+      "mode",
+      "sport"
+    ],
+    "title": "Kultur, Mode & Lebensstil"
+  }
+}

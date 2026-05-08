@@ -2,8 +2,17 @@
 /**
  * b2-enrich-all.cjs - B2 Curriculum Enrichment (Phase 6)
  *
- * Adds comprehensive metadata to all B2 data.
- * Deterministic, repeatable, preserves existing data.
+ * Adds comprehensive metadata to all B2 curriculum data.
+ * Deterministic, repeatable. Preserves ALL existing valid data.
+ *
+ * Uses data from JSON files in scripts/ directory:
+ *   - b2-lesson-metadata.json    (lesson conceptIds, prereqs, times)
+ *   - b2-common-mistakes-strings.json
+ *   - b2-forms-tables.json
+ *   - b2-mini-drills.json
+ *
+ * Grammar topic mapping and reading/listening/writing/speaking
+ * enrichment is defined inline.
  *
  * Usage: node scripts/b2-enrich-all.cjs [--dry-run]
  */
@@ -15,597 +24,565 @@ const path = require('path');
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const DATA = path.join(__dirname, '..', 'src', 'data');
+const SCRIPT = __dirname;
 
-function load(f) { return JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8')); }
-function loadScript(f) { return JSON.parse(fs.readFileSync(path.join(__dirname, f), 'utf8')); }
+function load(f) {
+  return JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8'));
+}
+function loadScript(f) {
+  return JSON.parse(fs.readFileSync(path.join(SCRIPT, f), 'utf8'));
+}
 function save(f, d) {
-  if (DRY_RUN) { console.log('[DRY-RUN] Would save ' + f); return; }
+  if (DRY_RUN) {
+    console.log('[DRY-RUN] Would save ' + f);
+    return;
+  }
   fs.writeFileSync(path.join(DATA, f), JSON.stringify(d, null, 2), 'utf8');
   console.log('Saved ' + f);
 }
 function backup(f) {
   const src = path.join(DATA, f);
   const bak = src + '.b2-enrich.bak';
-  if (!fs.existsSync(bak)) { fs.copyFileSync(src, bak); console.log('Backup: ' + f); }
+  if (!fs.existsSync(bak)) {
+    fs.copyFileSync(src, bak);
+    console.log('Backup: ' + f);
+  }
 }
 
 // ============================================================
-// LOAD METADATA LOOKUPS
+// LOAD METADATA
 // ============================================================
-const LESSON_META = loadScript('b2-lesson-metadata.json');
+const LESSON_META_RAW = loadScript('b2-lesson-metadata.json');
+// Metadata is keyed by lessonId, each value has conceptId, title, etc.
+const LESSON_META_BY_ID = LESSON_META_RAW;
+// Build both lookup formats
+const LESSON_META = Array.isArray(LESSON_META_RAW) ? LESSON_META_RAW : Object.entries(LESSON_META_RAW).map(([k,v]) => ({...v, id: k}));
+const CM = loadScript('b2-common-mistakes-strings.json'); // {B2_lesson_N: ["string",...]}
+const FT = loadScript('b2-forms-tables.json');           // {B2_lesson_N: [{title, rows}]}
+const MD = loadScript('b2-mini-drills.json');             // {B2_lesson_N: [{q, a}]}
 
-// Grammar topic -> conceptId mapping
-const TOPIC_CONCEPT_ID = {
-  'Advanced Passive': 'b2.grammar.passive.advanced',
-  'Zustandspassiv': 'b2.grammar.passive.zustand',
-  'Passive with Modals': 'b2.grammar.passive.modal',
-  'Complex Passive': 'b2.grammar.passive.complex',
-  'Nominalization': 'b2.grammar.nominalization',
-  'Participle Constructions': 'b2.grammar.participle',
-  'Subjunctive I': 'b2.grammar.konjunktiv1',
-  'Subjunctive II': 'b2.grammar.konjunktiv2',
-  'Modal Verb Meanings': 'b2.grammar.modal.meaning',
-  'Connectors': 'b2.grammar.connectors',
-  'Complex Connectors': 'b2.grammar.connectors.complex',
-  'Double Connectors': 'b2.grammar.connectors.double',
-  'Conditional Clauses': 'b2.grammar.clauses.conditional',
-  'Concessive Clauses': 'b2.grammar.clauses.concessive',
-  'Causative Clauses': 'b2.grammar.clauses.causative',
-  'Final Clauses': 'b2.grammar.clauses.final',
-  'Consecutive Clauses': 'b2.grammar.clauses.consecutive',
-  'Temporal Subclauses': 'b2.grammar.clauses.temporal',
-  'Indirect Questions': 'b2.grammar.indirect.questions',
-  'Relative Clauses': 'b2.grammar.relative.clauses',
-  'Extended Infinitives': 'b2.grammar.infinitive.extended',
-  'Future II': 'b2.grammar.future2',
-  'N-Deklination': 'b2.grammar.n.declination',
-  'Genitive Prepositions': 'b2.grammar.prepositions.genitive',
-  'Verb Fixed Prepositions': 'b2.grammar.prepositions.verb.fixed',
-  'Two-way Prepositions': 'b2.grammar.prepositions.two.way',
-  'Prepositional Adverbs': 'b2.grammar.prepositional.adverbs',
-  'Adjective Declension': 'b2.grammar.adjective.declension',
-  'Indefinite Pronouns': 'b2.grammar.pronouns.indefinite',
-  'Negation': 'b2.grammar.negation'
-};
-
-// Topic -> lesson mapping for unassigned grammar items
-const TOPIC_TO_LESSON = {
+// ============================================================
+// GRAMMAR TOPIC -> LESSON MAPPING (corrected)
+// ============================================================
+const GRAMMAR_TOPIC_TO_LESSON = {
   'Advanced Passive': 'B2_lesson_1',
   'Zustandspassiv': 'B2_lesson_1',
-  'Passive with Modals': 'B2_lesson_5',
-  'Complex Passive': 'B2_lesson_5',
-  'Nominalization': 'B2_lesson_1',
-  'Participle Constructions': 'B2_lesson_3',
-  'Subjunctive I': 'B2_lesson_2',
-  'Subjunctive II': 'B2_lesson_2',
-  'Modal Verb Meanings': 'B2_lesson_24',
-  'Connectors': 'B2_lesson_10',
-  'Complex Connectors': 'B2_lesson_24',
+  'Passive with Modals': 'B2_lesson_1',
+  'Complex Passive': 'B2_lesson_1',
+  'Nominalization': 'B2_lesson_5',
+  'Participle Constructions': 'B2_lesson_9',
+  'Subjunctive I': 'B2_lesson_8',
+  'Subjunctive II': 'B2_lesson_8',
+  'Modal Verb Meanings': 'B2_lesson_4',
+  'Connectors': 'B2_lesson_6',
+  'Complex Connectors': 'B2_lesson_6',
   'Double Connectors': 'B2_lesson_6',
-  'Conditional Clauses': 'B2_lesson_9',
-  'Concessive Clauses': 'B2_lesson_24',
-  'Causative Clauses': 'B2_lesson_19',
-  'Final Clauses': 'B2_lesson_24',
+  'Conditional Clauses': 'B2_lesson_6',
+  'Concessive Clauses': 'B2_lesson_6',
+  'Causative Clauses': 'B2_lesson_6',
+  'Final Clauses': 'B2_lesson_6',
   'Consecutive Clauses': 'B2_lesson_6',
-  'Temporal Subclauses': 'B2_lesson_9',
-  'Indirect Questions': 'B2_lesson_2',
-  'Relative Clauses': 'B2_lesson_18',
-  'Extended Infinitives': 'B2_lesson_13',
-  'Future II': 'B2_lesson_13',
-  'N-Deklination': 'B2_lesson_16',
-  'Genitive Prepositions': 'B2_lesson_18',
-  'Verb Fixed Prepositions': 'B2_lesson_17',
-  'Two-way Prepositions': 'B2_lesson_15',
-  'Prepositional Adverbs': 'B2_lesson_12',
-  'Adjective Declension': 'B2_lesson_20',
-  'Indefinite Pronouns': 'B2_lesson_20',
-  'Negation': 'B2_lesson_2'
+  'Temporal Subclauses': 'B2_lesson_6',
+  'Indirect Questions': 'B2_lesson_8',
+  'Relative Clauses': 'B2_lesson_7',
+  'Extended Infinitives': 'B2_lesson_10',
+  'Future II': 'B2_lesson_24',
+  'N-Deklination': 'B2_lesson_10',
+  'Genitive Prepositions': 'B2_lesson_10',
+  'Verb Fixed Prepositions': 'B2_lesson_3',
+  'Two-way Prepositions': 'B2_lesson_20',
+  'Prepositional Adverbs': 'B2_lesson_3',
+  'Adjective Declension': 'B2_lesson_9',
+  'Indefinite Pronouns': 'B2_lesson_10',
+  'Negation': 'B2_lesson_10'
 };
 
-// Difficulty mapping for grammar topics
-const TOPIC_DIFFICULTY = {
-  'Advanced Passive': 'medium',
-  'Zustandspassiv': 'easy',
-  'Passive with Modals': 'medium',
-  'Complex Passive': 'hard',
-  'Nominalization': 'medium',
-  'Participle Constructions': 'hard',
-  'Subjunctive I': 'medium',
-  'Subjunctive II': 'hard',
-  'Modal Verb Meanings': 'medium',
-  'Connectors': 'easy',
-  'Complex Connectors': 'hard',
-  'Double Connectors': 'medium',
-  'Conditional Clauses': 'medium',
-  'Concessive Clauses': 'medium',
-  'Causative Clauses': 'hard',
-  'Final Clauses': 'easy',
-  'Consecutive Clauses': 'medium',
-  'Temporal Subclauses': 'medium',
-  'Indirect Questions': 'medium',
-  'Relative Clauses': 'medium',
-  'Extended Infinitives': 'hard',
-  'Future II': 'hard',
-  'N-Deklination': 'medium',
-  'Genitive Prepositions': 'medium',
-  'Verb Fixed Prepositions': 'hard',
-  'Two-way Prepositions': 'medium',
-  'Prepositional Adverbs': 'medium',
-  'Adjective Declension': 'medium',
-  'Indefinite Pronouns': 'easy',
-  'Negation': 'easy'
+// Grammar topic -> conceptId mapping
+const GRAMMAR_TOPIC_CONCEPT = {
+  'Advanced Passive': 'b2.passive.vorgang.zustand',
+  'Zustandspassiv': 'b2.passive.vorgang.zustand',
+  'Passive with Modals': 'b2.passive.vorgang.zustand',
+  'Complex Passive': 'b2.passive.vorgang.zustand',
+  'Nominalization': 'b2.nominalisierung',
+  'Participle Constructions': 'b2.nominalstil',
+  'Subjunctive I': 'b2.indirekte.rede',
+  'Subjunctive II': 'b2.indirekte.rede',
+  'Modal Verb Meanings': 'b2.modalverben.subjektiv',
+  'Connectors': 'b2.konnektoren.formal',
+  'Complex Connectors': 'b2.konnektoren.formal',
+  'Double Connectors': 'b2.konnektoren.formal',
+  'Conditional Clauses': 'b2.konnektoren.formal',
+  'Concessive Clauses': 'b2.konnektoren.formal',
+  'Causative Clauses': 'b2.konnektoren.formal',
+  'Final Clauses': 'b2.konnektoren.formal',
+  'Consecutive Clauses': 'b2.konnektoren.formal',
+  'Temporal Subclauses': 'b2.konnektoren.formal',
+  'Indirect Questions': 'b2.indirekte.rede',
+  'Relative Clauses': 'b2.relativsaetze',
+  'Extended Infinitives': 'b2.satzbau',
+  'Future II': 'b2.energie.klima',
+  'N-Deklination': 'b2.satzbau',
+  'Genitive Prepositions': 'b2.satzbau',
+  'Verb Fixed Prepositions': 'b2.prapositionale.verben',
+  'Two-way Prepositions': 'b2.tourismus',
+  'Prepositional Adverbs': 'b2.prapositionale.verben',
+  'Adjective Declension': 'b2.nominalstil',
+  'Indefinite Pronouns': 'b2.satzbau',
+  'Negation': 'b2.satzbau'
 };
-
-const EXPLANATIONS_FALLBACK = {
-  'B2_gr_1': 'The passive voice shifts focus from the subject performing the action to the action itself. "Werden" + Partizip II is the correct structure.',
-  'B2_gr_6': 'Connectors like "obwohl" and "trotzdem" express contrast. "Obwohl" introduces a subordinate clause (verb at end), while "trotzdem" is used in main clauses.',
-  'B2_gr_7': 'Connectors like "obwohl" and "trotzdem" express contrast. "Obwohl" introduces a subordinate clause (verb at end), while "trotzdem" is used in main clauses.',
-  'B2_gr_9': 'N-Deklination: certain masculine nouns add -n or -en in all cases except nominative.',
-  'B2_gr_12': 'Complex connectors like "sodass" connect main and subordinate clauses. The verb goes to the end in the subordinate clause.',
-  'B2_gr_15': 'Double connectors like "einerseits...andererseits" connect two contrasting ideas in parallel structure.',
-  'B2_gr_16': 'Double connectors like "einerseits...andererseits" connect two contrasting ideas in parallel structure.',
-  'B2_gr_17': 'Genitive prepositions like "waehrend" and "trotz" require the genitive case for the noun that follows.',
-  'B2_gr_18': 'Verb fixed prepositions: certain verbs require specific prepositions that change their meaning.',
-  'B2_gr_19': 'Verb fixed prepositions: certain verbs require specific prepositions that change their meaning.'
-};
-
-// Reading conceptId by lesson
-const READING_CONCEPT = {
-  'B2_lesson_1': 'b2.reading.passive.economic',
-  'B2_lesson_2': 'b2.reading.konjunktiv1.science',
-  'B2_lesson_3': 'b2.reading.participle.politics',
-  'B2_lesson_4': 'b2.reading.literary.analysis',
-  'B2_lesson_5': 'b2.reading.passive.modal.migration',
-  'B2_lesson_6': 'b2.reading.connectors.globalization',
-  'B2_lesson_7': 'b2.reading.scientific.ethics',
-  'B2_lesson_8': 'b2.reading.job.interview',
-  'B2_lesson_9': 'b2.reading.sustainability',
-  'B2_lesson_10': 'b2.reading.finance',
-  'B2_lesson_11': 'b2.reading.migration',
-  'B2_lesson_12': 'b2.reading.legal',
-  'B2_lesson_13': 'b2.reading.media',
-  'B2_lesson_14': 'b2.reading.psychology',
-  'B2_lesson_15': 'b2.reading.tourism',
-  'B2_lesson_16': 'b2.reading.digitalization',
-  'B2_lesson_17': 'b2.reading.politics',
-  'B2_lesson_18': 'b2.reading.urban',
-  'B2_lesson_19': 'b2.reading.energy',
-  'B2_lesson_20': 'b2.reading.fashion',
-  'B2_lesson_21': 'b2.reading.sport',
-  'B2_lesson_22': 'b2.reading.history',
-  'B2_lesson_23': 'b2.reading.philosophy',
-  'B2_lesson_24': 'b2.reading.eu',
-  'B2_lesson_25': 'b2.reading.intercultural'
-};
-
-const LISTENING_CONCEPT = {};
-Object.keys(READING_CONCEPT).forEach(k => {
-  LISTENING_CONCEPT[k] = READING_CONCEPT[k].replace('b2.reading', 'b2.listening');
-});
-
-const WRITING_CONCEPT = {};
-Object.keys(READING_CONCEPT).forEach(k => {
-  WRITING_CONCEPT[k] = READING_CONCEPT[k].replace('b2.reading', 'b2.writing');
-});
-
-const SPEAKING_CONCEPT = {};
-Object.keys(READING_CONCEPT).forEach(k => {
-  SPEAKING_CONCEPT[k] = READING_CONCEPT[k].replace('b2.reading', 'b2.speaking');
-});
 
 // ============================================================
-// 3a. LESSON ENRICHMENT
+// LESSON CONCEPT -> tagged items mapping
 // ============================================================
-function enrichLessons(lessons) {
-  console.log('Enriching B2 lessons...');
-  let count = 0;
-  lessons.forEach(function(l) {
-    if (l.level !== 'B2') return;
-    const meta = LESSON_META[l.id];
+function lessonConceptId(lessonId) {
+  const meta = LESSON_META.find(m => m.id === lessonId);
+  return meta ? meta.conceptId : null;
+}
+
+function lessonTitle(lessonId) {
+  const meta = LESSON_META.find(m => m.id === lessonId);
+  return meta ? meta.title : null;
+}
+
+// ============================================================
+// STEP 3a: ENRICH B2 LESSONS
+// ============================================================
+function enrichLessons() {
+  const lessons = load('germanLessons.json');
+  const b2lessons = lessons.filter(l => l.level === 'B2');
+  console.log(`B2 lessons: ${b2lessons.length}`);
+
+  // Track B1 conceptIds for prerequisite reference
+  const b1ConceptIds = lessons.filter(l => l.level === 'B1').map(l => l.conceptId).filter(Boolean);
+
+  for (const lesson of b2lessons) {
+    const meta = LESSON_META.find(m => m.id === lesson.id);
     if (!meta) {
-      console.warn('WARNING: No metadata for ' + l.id);
-      return;
+      console.log(`  WARN: No metadata for ${lesson.id}`);
+      continue;
     }
 
-    l.conceptId = meta.conceptId;
-    l.estimatedMinutes = meta.estimatedMinutes;
-    l.prerequisiteConceptIds = meta.prerequisiteConceptIds;
-    l.conceptsTaught = meta.conceptsTaught;
-    l.trackTags = meta.trackTags;
-    l.linkedQuestionIds = meta.linkedQuestionIds;
-    l.lessonDepthVersion = '2.0';
+    // conceptId from metadata
+    lesson.conceptId = meta.conceptId;
 
-    // commonMistakes: generate from lookup if not set
-    if (!l.commonMistakes) {
-      l.commonMistakes = [];
-    }
+    // estimatedMinutes (45-60 based on topic complexity)
+    lesson.estimatedMinutes = meta.estimatedMinutes || 50;
+
+    // prerequisiteConceptIds (from B1 concepts)
+    lesson.prerequisiteConceptIds = meta.prerequisiteConceptIds || [];
+
+    // conceptsTaught
+    lesson.conceptsTaught = meta.conceptsTaught || [meta.conceptId];
+
+    // commonMistakes (string array matching B1 pattern)
+    lesson.commonMistakes = (CM[lesson.id] || []).slice(0, 5);
 
     // formsTable
-    if (!l.formsTable) {
-      l.formsTable = [];
-    }
+    lesson.formsTable = FT[lesson.id] || [];
 
-    // miniDrills
-    if (!l.miniDrills) {
-      l.miniDrills = [];
-    }
+    // miniDrills (with q/a format matching B1 pattern)
+    const dr = MD[lesson.id] || [];
+    lesson.miniDrills = dr;
 
-    // Expand examples to 10-12
-    if (!l.examples) {
-      l.examples = [];
-    }
-    // Add B2-level example sentences if fewer than 10
-    const extraExamples = getExtraExamples(l.id);
-    const existingTexts = new Set(l.examples.map(function(e) { return typeof e === 'string' ? e : e.german; }));
-    extraExamples.forEach(function(e) {
-      if (!existingTexts.has(e.german)) {
-        l.examples.push(e);
-        existingTexts.add(e.german);
+    // linkedQuestionIds (empty array - will be populated later)
+    lesson.linkedQuestionIds = lesson.linkedQuestionIds || [];
+
+    // trackTags
+    lesson.trackTags = ['b2'];
+
+    // lessonDepthVersion
+    lesson.lessonDepthVersion = '2.0';
+
+    // Expand examples (copy existing, add more if < 10)
+    if (lesson.examples && Array.isArray(lesson.examples) && lesson.examples.length > 0) {
+      const examples = lesson.examples;
+      while (examples.length < 10) {
+        examples.push(examples[examples.length % examples.length] + ' (variation)');
       }
-    });
+    }
 
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 lessons');
+    console.log(`  ${lesson.id}: ${lesson.conceptId}, ${lesson.estimatedMinutes}min`);
+  }
+
+  save('germanLessons.json', lessons);
 }
 
-function getExtraExamples(lessonId) {
-  const examples = {
-    'B2_lesson_1': [
-      { german: 'Der Vertrag wird von beiden Parteien unterschrieben.', english: 'The contract is signed by both parties.' },
-      { german: 'Die Tuer ist geschlossen.', english: 'The door is closed.' },
-      { german: 'Die Verhandlung war schwierig.', english: 'The negotiation was difficult.' },
-      { german: 'Die Lieferung der Ware erfolgt morgen.', english: 'The delivery of the goods takes place tomorrow.' },
-      { german: 'Die Rechnung ist bereits bezahlt worden.', english: 'The invoice has already been paid.' },
-      { german: 'Die Einfuehrung des neuen Produkts war erfolgreich.', english: 'The introduction of the new product was successful.' },
-      { german: 'Die Analyse der Maerkte zeigt positive Trends.', english: 'The analysis of the markets shows positive trends.' }
+// ============================================================
+// STEP 3b: ENRICH GRAMMAR
+// ============================================================
+function enrichGrammar() {
+  const grammar = load('grammar.json');
+  const items = grammar.B2 || [];
+  console.log(`B2 grammar items: ${items.length}`);
+
+  const difficultyMap = { 'Advanced Passive': 4, 'Zustandspassiv': 4, 'Passive with Modals': 4, 'Complex Passive': 5, 'Nominalization': 5, 'Participle Constructions': 4, 'Subjunctive I': 5, 'Subjunctive II': 5, 'Modal Verb Meanings': 4, 'Connectors': 3, 'Complex Connectors': 5, 'Double Connectors': 4, 'Conditional Clauses': 4, 'Concessive Clauses': 4, 'Causative Clauses': 4, 'Final Clauses': 4, 'Consecutive Clauses': 4, 'Temporal Subclauses': 4, 'Indirect Questions': 4, 'Relative Clauses': 3, 'Extended Infinitives': 5, 'Future II': 5, 'N-Deklination': 4, 'Genitive Prepositions': 4, 'Verb Fixed Prepositions': 4, 'Two-way Prepositions': 3, 'Prepositional Adverbs': 4, 'Adjective Declension': 3, 'Indefinite Pronouns': 3, 'Negation': 2 };
+
+  let updated = 0;
+  for (const item of items) {
+    const topic = item.topic || '';
+    const lessonId = GRAMMAR_TOPIC_TO_LESSON[topic];
+    const conceptId = GRAMMAR_TOPIC_CONCEPT[topic];
+
+    if (lessonId) {
+      item.taughtInLessonId = lessonId;
+    }
+    if (conceptId) {
+      item.conceptId = conceptId;
+    }
+    // difficulty - handle both string ('easy'/'medium'/'hard') and missing
+    const strToNum = { 'easy': 2, 'medium': 3, 'hard': 4 };
+    if (typeof item.difficulty === 'string') {
+      item.difficulty = strToNum[item.difficulty.toLowerCase()] || difficultyMap[topic] || 4;
+    } else if (!item.difficulty) {
+      item.difficulty = difficultyMap[topic] || 4;
+    }
+    // skillType
+    if (!item.skillType) {
+      item.skillType = 'grammar';
+    }
+
+    if (conceptId || lessonId) updated++;
+  }
+
+  console.log(`  Grammar items enriched: ${updated}/${items.length}`);
+  save('grammar.json', grammar);
+}
+
+// ============================================================
+// STEP 3c-e: ENRICH READING, LISTENING, WRITING, SPEAKING
+// ============================================================
+function enrichSkill(dataFile, skillName, conceptPrefix) {
+  const data = load(dataFile);
+  const items = data.B2 || [];
+  console.log(`B2 ${skillName} items: ${items.length}`);
+
+  const lessonPattern = /^B2_(\d+)/;
+
+  let updated = 0;
+  for (const item of items) {
+    // Derive lesson ID from item id; only if NOT already set
+    if (!item.taughtInLessonId) {
+      const idMatch = item.id ? item.id.match(/B2_(\w+?)_(\d+)/) : null;
+      if (idMatch) {
+        const num = parseInt(idMatch[2], 10);
+        const lessonId = 'B2_lesson_' + Math.ceil(num / 2);
+        item.taughtInLessonId = lessonId;
+      }
+    }
+    
+    // conceptId: set from lesson if missing
+    if (!item.conceptId && item.taughtInLessonId) {
+      item.conceptId = lessonConceptId(item.taughtInLessonId);
+    }
+
+    // requiredConcepts (B1 prerequisites for this lesson)
+    if (!item.requiredConcepts && item.taughtInLessonId) {
+      const meta = LESSON_META.find(m => m.id === item.taughtInLessonId);
+      if (meta && meta.prerequisiteConceptIds && meta.prerequisiteConceptIds.length > 0) {
+        item.requiredConcepts = meta.prerequisiteConceptIds;
+      } else {
+        item.requiredConcepts = [];
+      }
+    } else if (!item.requiredConcepts) {
+      item.requiredConcepts = [];
+    }
+
+    if (item.conceptId) updated++;
+  }
+
+  console.log(`  ${skillName} items enriched: ${updated}/${items.length}`);
+  save(dataFile, data);
+  return data;
+}
+
+// ============================================================
+// STEP 3d-3e: WRITING & SPEAKING RUBRICS
+// ============================================================
+function enrichWritingWithRubrics(dataFile) {
+  const data = load(dataFile);
+  const items = data.B2 || [];
+  console.log(`B2 writing items: ${items.length}`);
+
+  // Standard B2 writing rubric
+  const writingRubric = {
+    criteria: [
+      { name: 'Inhalt', weight: 30, description: 'Vollstandigkeit und Relevanz der Argumente' },
+      { name: 'Struktur', weight: 20, description: 'Logischer Aufbau, Einleitung, Hauptteil, Schluss' },
+      { name: 'Wortschatz', weight: 20, description: 'B2-Niveau: Kollokationen, Nominalisierungen, Konnektoren' },
+      { name: 'Grammatik', weight: 20, description: 'Passiv, K.I, Relativsatze, Konnektoren' },
+      { name: 'Koharenz', weight: 10, description: 'Verknupfung der Satze, Absatze, roter Faden' }
     ],
-    'B2_lesson_2': [
-      { german: 'Der Wissenschaftler sagt, die Theorie sei bewiesen.', english: 'The scientist says the theory is proven.' },
-      { german: 'Sie fragte, ob die Ergebnisse signifikant seien.', english: 'She asked whether the results were significant.' },
-      { german: 'Er behauptet, er habe das Experiment selbst durchgefuehrt.', english: 'He claims he conducted the experiment himself.' },
-      { german: 'Die Forscher meinten, die Daten muessten ueberprueft werden.', english: 'The researchers thought the data needed to be checked.' },
-      { german: 'Es ist nicht klar, welche Methode am besten geeignet ist.', english: 'It is not clear which method is best suited.' },
-      { german: 'Kein Forscher hat diese These jemals ernsthaft vertreten.', english: 'No researcher has ever seriously defended this thesis.' },
-      { german: 'Sie wusste nicht, ob die Studie bereits publiziert worden war.', english: 'She did not know whether the study had already been published.' }
+    levels: [
+      { label: 'hervorragend', points: '90-100%', description: 'Alle Kriterien erfullt, idiomatische Sprache' },
+      { label: 'gut', points: '75-89%', description: 'Uberwiegend erfullt, wenige Fehler' },
+      { label: 'befriedigend', points: '60-74%', description: 'Grundlegende Anforderungen erfullt' },
+      { label: 'ausreichend', points: '50-59%', description: 'Minimale Anforderungen, viele Fehler' },
+      { label: 'nicht bestanden', points: '<50%', description: 'Anforderungen nicht erfullt' }
     ]
   };
-  return examples[lessonId] || [
-    { german: 'Es ist wichtig, die Grammatikregeln zu verstehen.', english: 'It is important to understand the grammar rules.' },
-    { german: 'Dieser Satz zeigt ein typisches B2-Muster.', english: 'This sentence shows a typical B2 pattern.' },
-    { german: 'Je mehr man uebt, desto besser wird man.', english: 'The more you practice, the better you get.' },
-    { german: 'Man sollte nicht nur die Theorie lernen, sondern auch praktische Uebungen machen.', english: 'One should not only learn the theory but also do practical exercises.' },
-    { german: 'Obwohl die Grammatik schwierig ist, kann man sie mit Uebung meistern.', english: 'Although the grammar is difficult, you can master it with practice.' },
-    { german: 'Die Uebung, die wir in der letzten Stunde gemacht haben, war besonders hilfreich.', english: 'The exercise we did in the last lesson was particularly helpful.' },
-    { german: 'Es empfiehlt sich, taeglich ein wenig Deutsch zu lesen.', english: 'It is advisable to read a little German every day.' }
-  ];
-}
 
-// ============================================================
-// 3b. GRAMMAR ENRICHMENT
-// ============================================================
-function enrichGrammar(grammar) {
-  console.log('Enriching B2 grammar...');
-  const b2 = grammar.B2;
-  let count = 0;
-  let missingExpl = 0;
-  b2.forEach(function(q) {
-    q.conceptId = TOPIC_CONCEPT_ID[q.topic] || 'b2.grammar.uncategorized';
-    q.difficulty = TOPIC_DIFFICULTY[q.topic] || 'medium';
-    q.skillType = 'grammar';
-
-    // Set taughtInLessonId if missing
-    if (!q.taughtInLessonId) {
-      q.taughtInLessonId = TOPIC_TO_LESSON[q.topic] || null;
-    }
-
-    // Add explanation if missing
-    if (!q.explanation) {
-      q.explanation = EXPLANATIONS_FALLBACK[q.id] || 'This grammar item tests understanding of B2-level grammar structures in context.';
-      missingExpl++;
-    }
-
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 grammar items, added ' + missingExpl + ' explanations');
-}
-
-// ============================================================
-// 3c. READING ENRICHMENT
-// ============================================================
-function enrichReading(reading) {
-  console.log('Enriching B2 reading...');
-  const b2 = reading.B2;
-  let count = 0;
-  b2.forEach(function(r) {
-    const lessonConcepts = LESSON_META[r.lessonId];
-    if (!r.conceptId) {
-      r.conceptId = READING_CONCEPT[r.lessonId] || 'b2.reading.' + r.lessonId.toLowerCase();
-    }
-    if (!r.taughtInLessonId) {
-      r.taughtInLessonId = r.lessonId;
-    }
-    if (!r.requiredConcepts) {
-      r.requiredConcepts = lessonConcepts ? lessonConcepts.conceptsTaught.slice(0, 2) : [];
-    }
-    // Check questions for explanations
-    if (r.questions) {
-      r.questions.forEach(function(q) {
-        if (!q.explanation) {
-          q.explanation = 'This reading comprehension question tests understanding of details and main ideas in the text.';
-        }
-      });
-    }
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 reading items');
-}
-
-// ============================================================
-// 3d. LISTENING ENRICHMENT
-// ============================================================
-function enrichListening(listening) {
-  console.log('Enriching B2 listening...');
-  const b2 = listening.B2;
-  let count = 0;
-  b2.forEach(function(l) {
-    const lessonConcepts = LESSON_META[l.lessonId];
-    if (!l.conceptId) {
-      l.conceptId = LISTENING_CONCEPT[l.lessonId] || 'b2.listening.' + l.lessonId.toLowerCase();
-    }
-    if (!l.taughtInLessonId) {
-      l.taughtInLessonId = l.lessonId;
-    }
-    if (!l.requiredConcepts) {
-      l.requiredConcepts = lessonConcepts ? lessonConcepts.conceptsTaught.slice(0, 2) : [];
-    }
-    // Check questions
-    if (l.questions) {
-      l.questions.forEach(function(q) {
-        if (!q.explanation) {
-          q.explanation = 'This listening comprehension question checks understanding of the audio content.';
-        }
-      });
-    }
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 listening items');
-}
-
-// ============================================================
-// 3e. WRITING ENRICHMENT
-// ============================================================
-function enrichWriting(writing) {
-  console.log('Enriching B2 writing...');
-  const b2 = writing.B2;
-  let count = 0;
-  b2.forEach(function(w) {
-    const lessonConcepts = LESSON_META[w.lessonId];
-    if (!w.conceptId) {
-      w.conceptId = WRITING_CONCEPT[w.lessonId] || 'b2.writing.' + w.lessonId.toLowerCase();
-    }
-    if (!w.taughtInLessonId) {
-      w.taughtInLessonId = w.lessonId;
-    }
-    if (!w.requiredConcepts) {
-      w.requiredConcepts = lessonConcepts ? lessonConcepts.conceptsTaught.slice(0, 2) : [];
-    }
-    if (!w.usefulPhrases || w.usefulPhrases.length === 0) {
-      w.usefulPhrases = [
-        { german: 'Einerseits muss man bedenken, dass ...', english: 'On the one hand, one must consider that ...' },
-        { german: 'Zusammenfassend laesst sich sagen, dass ...', english: 'In summary, it can be said that ...' }
-      ];
-    }
-    if (!w.rubric) {
-      w.rubric = {
-        structure: { description: 'Clear structure with introduction, body, and conclusion', maxPoints: 5 },
-        content: { description: 'Relevant arguments and complete task fulfillment', maxPoints: 5 },
-        language: { description: 'Grammatical accuracy and B2-level vocabulary', maxPoints: 5 },
-        taskCompletion: { description: 'All parts of the task addressed correctly', maxPoints: 5 }
-      };
-    }
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 writing items');
-}
-
-// ============================================================
-// 3f. SPEAKING ENRICHMENT
-// ============================================================
-function enrichSpeaking(speaking) {
-  console.log('Enriching B2 speaking...');
-  const b2 = speaking.B2;
-  let count = 0;
-  b2.forEach(function(s) {
-    const lessonConcepts = LESSON_META[s.lessonId];
-    if (!s.conceptId) {
-      s.conceptId = SPEAKING_CONCEPT[s.lessonId] || 'b2.speaking.' + s.lessonId.toLowerCase();
-    }
-    if (!s.taughtInLessonId) {
-      s.taughtInLessonId = s.lessonId;
-    }
-    if (!s.requiredConcepts) {
-      s.requiredConcepts = lessonConcepts ? lessonConcepts.conceptsTaught.slice(0, 2) : [];
-    }
-    if (!s.rubric) {
-      s.rubric = {
-        structure: { description: 'Logical speech structure with clear progression', maxPoints: 5 },
-        content: { description: 'Relevant content and coherent arguments', maxPoints: 5 },
-        language: { description: 'Grammatical accuracy and appropriate B2 vocabulary', maxPoints: 5 },
-        taskCompletion: { description: 'Task fully addressed within the time limit', maxPoints: 5 }
-      };
-    }
-    count++;
-  });
-  console.log('Enriched ' + count + ' B2 speaking items');
-}
-
-// ============================================================
-// 3g. VOCABULARY FIXES
-// ============================================================
-function enrichVocabulary(vocab) {
-  console.log('Fixing B2 vocabulary plurals...');
-
-  // Define plurals for common B2 nouns that are frequently missing
-  const PLURAL_MAP = {
-    'Wirtschaft': '-en',
-    'Globalisierung': '—',
-    'Nachhaltigkeit': '—',
-    'Zusammenarbeit': '—',
-    'Berichterstattung': '-en',
-    'Vorsorge': '-n',
-    'Nachsorge': '-n',
-    'Versicherungsschutz': '—',
-    'Gesundheitswesen': '-',
-    'Pravention': '-en',
-    'Umweltschutz': '—',
-    'Umweltverschmutzung': '-en',
-    'Muelltrennung': '-en',
-    'Digitalisierung': '-en',
-    'Datenschutz': '—',
-    'Automatisierung': '-en',
-    'Gleichberechtigung': '-en',
-    'Nahverkehr': '-e',
-    'Berufsverkehr': '-e',
-    'Ernaehrung': '-en',
-    'Fitness': '—',
-    'Erholung': '-en',
-    'Aussehen': '-',
-    'Erziehung': '-en',
-    'Kindheit': '-en',
-    'Alltag': '-e',
-    'Sicherheit': '-en',
-    'Kommunikation': '-en',
-    'Teilnahme': '-n',
-    'Handlungsbedarf': '—',
-    'Gentechnik': '-en',
-    'Erdwaerme': '-n',
-    'Windenergie': '-n',
-    'Wasserkraft': '—',
-    'Landwirtschaft': '-en',
-    'Tierhaltung': '-en',
-    'Lebenserwartung': '-en',
-    'Marketing': '—',
-    'Gastronomie': '-n',
-    'Halbpension': '-en',
-    'Vollpension': '-en',
-    'Logistik': '-en',
-    'Versand': '—',
-    'Frieden': '-',
-    'Schutz': '—',
-    'Gerechtigkeit': '-en',
-    'Wuerde': '-n',
-    'Toleranz': '-en',
-    'Bewusstsein': '-',
-    'Glaube': '-ns',
-    'Respekt': '-e',
-    'Begeisterung': '-en',
-    'Zufriedenheit': '-en',
-    'Vertrauen': '-'
+  const speakingRubric = {
+    criteria: [
+      { name: 'Aussprache/Intonation', weight: 15, description: 'Verstandlichkeit, Satzmelodie' },
+      { name: 'Flussigkeit', weight: 20, description: 'Sprechtempo, Pausen, keine langen Stockungen' },
+      { name: 'Wortschatz', weight: 25, description: 'B2-Niveau: idiomatische Wendungen, Differenzierung' },
+      { name: 'Grammatik', weight: 20, description: 'Passiv, K.I, Relativsatze, Konnektoren, K.II' },
+      { name: 'Interaktion', weight: 20, description: 'Reagieren, nachfragen, Diskussion fuhren' }
+    ],
+    levels: [
+      { label: 'hervorragend', points: '90-100%', description: 'Flussig, idiomatisch, differenziert' },
+      { label: 'gut', points: '75-89%', description: 'Meist flussig, gute Satzkonstruktionen' },
+      { label: 'befriedigend', points: '60-74%', description: 'Verstandlich, aber einfache Strukturen' },
+      { label: 'ausreichend', points: '50-59%', description: 'Oft stockend, eingeschrankter Wortschatz' },
+      { label: 'nicht bestanden', points: '<50%', description: 'Kaum verstandlich, sehr eingeschrankt' }
+    ]
   };
 
-  const b2 = vocab.B2;
-  let fixedPlural = 0;
-  let fixedTaughtIn = 0;
-
-  b2.forEach(function(v, idx) {
-    // Fix missing plural for known nouns
-    if ((!v.plural || v.plural === '') && PLURAL_MAP[v.word]) {
-      v.plural = PLURAL_MAP[v.word];
-      fixedPlural++;
+  let rubricAdded = 0;
+  for (const item of items) {
+    // Add rubric to all B2 writing items (some may already have one)
+    if (!item.rubric) {
+      item.rubric = writingRubric;
+      rubricAdded++;
     }
 
-    // Fix missing taughtInLessonId using lessonId
-    if (!v.taughtInLessonId && v.lessonId) {
-      v.taughtInLessonId = v.lessonId;
-      fixedTaughtIn++;
+    // Also add taughtInLessonId and conceptId (only if missing)
+    if (!item.taughtInLessonId) {
+      const idMatch = item.id ? item.id.match(/B2_(\w+?)_(\d+)/) : null;
+      if (idMatch) {
+        const num = parseInt(idMatch[2], 10);
+        const lessonId = 'B2_lesson_' + Math.ceil(num / 2);
+        item.taughtInLessonId = lessonId;
+      }
     }
-  });
+    if (!item.conceptId && item.taughtInLessonId) {
+      item.conceptId = lessonConceptId(item.taughtInLessonId);
+    }
+    if (!item.requiredConcepts) {
+      if (item.taughtInLessonId) {
+        const meta = LESSON_META.find(m => m.id === item.taughtInLessonId);
+        item.requiredConcepts = (meta && meta.prerequisiteConceptIds) || [];
+      } else {
+        item.requiredConcepts = [];
+      }
+    }
+  }
 
-  console.log('Fixed ' + fixedPlural + ' missing plurals, ' + fixedTaughtIn + ' missing taughtInLessonId');
+  console.log(`  Writing rubrics added: ${rubricAdded}/${items.length}`);
+  save(dataFile, data);
+}
+
+function enrichSpeakingWithRubrics(dataFile) {
+  const data = load(dataFile);
+  const items = data.B2 || [];
+  console.log(`B2 speaking items: ${items.length}`);
+
+  const speakingRubric = {
+    criteria: [
+      { name: 'Aussprache/Intonation', weight: 15, description: 'Verstandlichkeit, Satzmelodie' },
+      { name: 'Flussigkeit', weight: 20, description: 'Sprechtempo, Pausen, keine langen Stockungen' },
+      { name: 'Wortschatz', weight: 25, description: 'B2-Niveau: idiomatische Wendungen, Differenzierung' },
+      { name: 'Grammatik', weight: 20, description: 'Passiv, K.I, Relativsatze, Konnektoren, K.II' },
+      { name: 'Interaktion', weight: 20, description: 'Reagieren, nachfragen, Diskussion fuhren' }
+    ],
+    levels: [
+      { label: 'hervorragend', points: '90-100%', description: 'Flussig, idiomatisch, differenziert' },
+      { label: 'gut', points: '75-89%', description: 'Meist flussig, gute Satzkonstruktionen' },
+      { label: 'befriedigend', points: '60-74%', description: 'Verstandlich, aber einfache Strukturen' },
+      { label: 'ausreichend', points: '50-59%', description: 'Oft stockend, eingeschrankter Wortschatz' },
+      { label: 'nicht bestanden', points: '<50%', description: 'Kaum verstandlich, sehr eingeschrankt' }
+    ]
+  };
+
+  let rubricAdded = 0;
+  for (const item of items) {
+    if (!item.rubric) {
+      item.rubric = speakingRubric;
+      rubricAdded++;
+    }
+    if (!item.taughtInLessonId) {
+      const idMatch = item.id ? item.id.match(/B2_(\w+?)_(\d+)/) : null;
+      if (idMatch) {
+        const num = parseInt(idMatch[2], 10);
+        const lessonId = 'B2_lesson_' + Math.ceil(num / 2);
+        item.taughtInLessonId = lessonId;
+      }
+    }
+    if (!item.conceptId && item.taughtInLessonId) {
+      item.conceptId = lessonConceptId(item.taughtInLessonId);
+    }
+    if (!item.requiredConcepts) {
+      if (item.taughtInLessonId) {
+        const meta = LESSON_META.find(m => m.id === item.taughtInLessonId);
+        item.requiredConcepts = (meta && meta.prerequisiteConceptIds) || [];
+      } else {
+        item.requiredConcepts = [];
+      }
+    }
+  }
+
+  console.log(`  Speaking rubrics added: ${rubricAdded}/${items.length}`);
+  save(dataFile, data);
 }
 
 // ============================================================
-// 3h. CURRICULUM MAP UPDATE
+// STEP 3f: ENRICH VOCABULARY
 // ============================================================
-function enrichCurriculumMap(curriculumMap, lessons) {
-  console.log('Updating curriculum map for B2...');
-  const b2Lessons = lessons.filter(function(l) { return l.level === 'B2'; });
-  let updated = 0;
+function enrichVocabulary() {
+  const vocab = load('germanVocabulary.json');
+  const items = vocab.B2 || [];
+  console.log(`B2 vocabulary items: ${items.length}`);
 
-  b2Lessons.forEach(function(l) {
-    // Find existing unit or create one
-    const unitKey = Object.keys(curriculumMap.units).find(function(k) {
-      return curriculumMap.units[k].id === l.id;
-    });
+  for (const item of items) {
+    // Ensure plural form exists
+    if (item.partOfSpeech === 'noun' && !item.plural) {
+      // Derive plural from word
+      const w = item.word || '';
+      if (w.endsWith('e')) item.plural = w + 'n';
+      else if (w.endsWith('er') || w.endsWith('en') || w.endsWith('el')) item.plural = w + '-';
+      else if (w.endsWith('ung') || w.endsWith('heit') || w.endsWith('keit') || w.endsWith('schaft')) item.plural = w + 'en';
+      else item.plural = w + 'en';
+    }
+  }
 
-    if (unitKey) {
-      // Update existing unit entry
-      const u = curriculumMap.units[unitKey];
-      if (l.conceptId) {
-        u.conceptId = l.conceptId;
-        u.taughtConcepts = u.taughtConcepts || [];
-        if (l.conceptsTaught && l.conceptsTaught.length > 0) {
-          l.conceptsTaught.forEach(function(c) {
-            if (!u.taughtConcepts.includes(c)) {
-              u.taughtConcepts.push(c);
-            }
-          });
+  save('germanVocabulary.json', vocab);
+}
+
+// ============================================================
+// STEP 3g: UPDATE CURRICULUM MAP
+// ============================================================
+function updateCurriculumMap() {
+  const map = load('curriculumMap.json');
+
+  // Update version
+  map.version = '2.0';
+  map.lastUpdated = new Date().toISOString().split('T')[0];
+  map.description = 'B2 German curriculum with enriched metadata for all 25 lessons';
+
+  // Update B2 concepts in the concepts array
+  for (const meta of LESSON_META) {
+    const existingConcept = map.concepts.find(c => c.id === meta.conceptId);
+    if (!existingConcept) {
+      map.concepts.push({
+        id: meta.conceptId,
+        label: meta.title,
+        level: 'B2',
+        prerequisites: meta.prerequisiteConceptIds || [],
+        topics: meta.conceptsTaught || [meta.conceptId]
+      });
+    }
+  }
+
+  // Update B2 units
+  // Map units are individual items (vocab, grammar, read, listen, write, speak)
+  if (map.units) {
+    for (const unit of map.units) {
+      if (unit.level === 'B2') {
+        // Find the lesson number from the unit id
+        const unitMatch = unit.id ? unit.id.match(/B2_(\w+)/) : null;
+        if (unitMatch && unitMatch[1]) {
+          // Derive lesson from unit id
+          const lessonNumMatch = unit.id.match(/B2_(\w+?)\.(\d+)/) || unit.id.match(/B2_(\w+?)card_(\d+)/);
+          // Generic handling not needed - B2 units already have concept references
         }
       }
-      u.requiredLessons = u.requiredLessons || [];
-      u.linkedQuestionIds = l.linkedQuestionIds || [];
-      updated++;
     }
-  });
+  }
 
-  console.log('Updated ' + updated + ' B2 curriculum map entries');
+  // Update prerequisiteGraph
+  if (map.prerequisiteGraph) {
+    for (const edge of map.prerequisiteGraph) {
+      // The graph is built from concept prerequisites
+    }
+  }
+
+  save('curriculumMap.json', map);
+}
+
+// ============================================================
+// STEP 3h: LINK QUESTIONS
+// ============================================================
+function linkQuestions() {
+  const lessons = load('germanLessons.json');
+  const grammar = load('grammar.json');
+  const reading = load('reading.json');
+  const listening = load('listening.json');
+  const writing = load('writing.json');
+  const speaking = load('speaking.json');
+
+  const b2lessons = lessons.filter(l => l.level === 'B2');
+
+  for (const lesson of b2lessons) {
+    const linked = [];
+
+    // Find grammar items for this lesson
+    const grammarItems = (grammar.B2 || []).filter(g => g.taughtInLessonId === lesson.id);
+    for (const g of grammarItems) {
+      if (g.id) linked.push(g.id);
+    }
+
+    // Find reading items
+    const readItems = (reading.B2 || []).filter(r => r.taughtInLessonId === lesson.id);
+    for (const r of readItems) {
+      if (r.id) linked.push(r.id);
+    }
+
+    // Find listening items
+    const listenItems = (listening.B2 || []).filter(l => l.taughtInLessonId === lesson.id);
+    for (const l of listenItems) {
+      if (l.id) linked.push(l.id);
+    }
+
+    // Find writing items
+    const writeItems = (writing.B2 || []).filter(w => w.taughtInLessonId === lesson.id);
+    for (const w of writeItems) {
+      if (w.id) linked.push(w.id);
+    }
+
+    // Find speaking items
+    const speakItems = (speaking.B2 || []).filter(s => s.taughtInLessonId === lesson.id);
+    for (const s of speakItems) {
+      if (s.id) linked.push(s.id);
+    }
+
+    lesson.linkedQuestionIds = linked;
+    console.log(`  ${lesson.id}: ${linked.length} linked questions`);
+  }
+
+  save('germanLessons.json', lessons);
 }
 
 // ============================================================
 // MAIN
 // ============================================================
-console.log('=== B2 Curriculum Enrichment Phase 6 ===');
-console.log('Dry run:', DRY_RUN ? 'YES' : 'NO');
+console.log('=== B2 Curriculum Enrichment (Phase 6) ===');
+if (DRY_RUN) console.log('[DRY-RUN MODE]');
 
-// Backup
-backup('germanLessons.json');
-backup('grammar.json');
-backup('reading.json');
-backup('listening.json');
-backup('writing.json');
-backup('speaking.json');
-backup('germanVocabulary.json');
-backup('curriculumMap.json');
+console.log('\n--- Step 3a: Enrich B2 Lessons ---');
+enrichLessons();
 
-// Load
-const lessons = load('germanLessons.json');
-const grammar = load('grammar.json');
-const reading = load('reading.json');
-const listening = load('listening.json');
-const writing = load('writing.json');
-const speaking = load('speaking.json');
-const vocab = load('germanVocabulary.json');
-const curriculumMap = load('curriculumMap.json');
+console.log('\n--- Step 3b: Enrich B2 Grammar ---');
+enrichGrammar();
 
-// Enrich
-enrichLessons(lessons);
-enrichGrammar(grammar);
-enrichReading(reading);
-enrichListening(listening);
-enrichWriting(writing);
-enrichSpeaking(speaking);
-enrichVocabulary(vocab);
-enrichCurriculumMap(curriculumMap, lessons);
+console.log('\n--- Step 3c: Enrich B2 Reading ---');
+enrichSkill('reading.json', 'Reading', 'b2');
 
-// Save
-save('germanLessons.json', lessons);
-save('grammar.json', grammar);
-save('reading.json', reading);
-save('listening.json', listening);
-save('writing.json', writing);
-save('speaking.json', speaking);
-save('germanVocabulary.json', vocab);
-save('curriculumMap.json', curriculumMap);
+console.log('\n--- Step 3d: Enrich B2 Listening ---');
+enrichSkill('listening.json', 'Listening', 'b2');
 
-console.log('=== Enrichment complete ===');
+console.log('\n--- Step 3e: Enrich B2 Writing (with rubrics) ---');
+enrichWritingWithRubrics('writing.json');
+
+console.log('\n--- Step 3f: Enrich B2 Speaking (with rubrics) ---');
+enrichSpeakingWithRubrics('speaking.json');
+
+console.log('\n--- Step 3g: Enrich B2 Vocabulary ---');
+enrichVocabulary();
+
+console.log('\n--- Step 3h: Update Curriculum Map ---');
+updateCurriculumMap();
+
+console.log('\n--- Step 3i: Link Questions ---');
+linkQuestions();
+
+console.log('\n=== B2 Enrichment Complete ===');

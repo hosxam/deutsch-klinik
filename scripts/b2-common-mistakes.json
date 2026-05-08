@@ -1,0 +1,677 @@
+{
+  "B2_lesson_1": [
+    {
+      "mistake": "Agens falsch positioniert: Der Brief wird geschrieben von mir.",
+      "correction": "Der Brief wird von mir geschrieben.",
+      "explanation": "Agens nach 'von' direkt vor Partizip II"
+    },
+    {
+      "mistake": "Zustandspassiv vs Vorgangspassiv verwechselt",
+      "correction": "Das Fenster ist geoffnet (Zustand) vs wird geoffnet (Vorgang)",
+      "explanation": "Zustand = sein + Partizip II, Vorgang = werden + Partizip II"
+    },
+    {
+      "mistake": "worden im Zustandspassiv falsch verwendet",
+      "correction": "Das Auto ist gewaschen. (statt: ist gewaschen worden)",
+      "explanation": "Zustandspassiv = sein + Partizip II OHNE worden"
+    },
+    {
+      "mistake": "worden im Perfekt Vorgangspassiv vergessen",
+      "correction": "Der Brief ist gestern geschrieben worden.",
+      "explanation": "Im Perfekt Vorgangspassiv MUSS worden stehen"
+    },
+    {
+      "mistake": "Aktiv/Passiv verwechselt",
+      "correction": "Aktiv: Subjekt handelt. Passiv: Subjekt erleidet.",
+      "explanation": "Im Passiv wird Objekt der Handlung zum Subjekt"
+    }
+  ],
+  "B2_lesson_2": [
+    {
+      "mistake": "sein+zu mehrdeutig verwendet",
+      "correction": "Durch Modalverb ersetzen: kann/muss gelesen werden",
+      "explanation": "sein+zu = mehrdeutig (Moglichkeit/Notwendigkeit)"
+    },
+    {
+      "mistake": "sich lassen mit Partizip II statt Infinitiv",
+      "correction": "Das Fenster lasst sich offnen. (Infinitiv)",
+      "explanation": "Nach sich lassen kommt Infinitiv, nicht Partizip II"
+    },
+    {
+      "mistake": "Passiversatz mit Passiv vermischt",
+      "correction": "Die Tur lasst sich offnen.",
+      "explanation": "sich lassen ersetzt konnen + Passiv"
+    },
+    {
+      "mistake": "sein+zu mit falschem Subjekt",
+      "correction": "Der Antrag ist zu stellen = Der Antrag muss gestellt werden",
+      "explanation": "Subjekt muss Objekt der Handlung sein"
+    },
+    {
+      "mistake": "Es lasst sich machen. falscher Kontext",
+      "correction": "Korrekt fur: Es ist moglich.",
+      "explanation": "Fester Ausdruck"
+    }
+  ],
+  "B2_lesson_3": [
+    {
+      "mistake": "Ich warte fur den Bus. (falsche Praposition)",
+      "correction": "Ich warte auf den Bus.",
+      "explanation": "warten auf = feste Verbindung mit Akkusativ"
+    },
+    {
+      "mistake": "sich freuen auf vs uber verwechselt",
+      "correction": "auf + Akk (Zukunft), uber + Akk (Vergangenheit)",
+      "explanation": "Praposition andert zeitliche Bedeutung"
+    },
+    {
+      "mistake": "Da habe ich nicht von gedacht. statt daran",
+      "correction": "Daran habe ich nicht gedacht.",
+      "explanation": "denken an -> daran (da-Kompositum)"
+    },
+    {
+      "mistake": "Womit? statt Woruber? (falsches Frage-wo)",
+      "correction": "Woruber hast du gesprochen? (sprechen uber)",
+      "explanation": "Frage-wo richtet sich nach Verb-Praposition"
+    },
+    {
+      "mistake": "Kasus nach fester Praposition falsch",
+      "correction": "sich interessieren FUR + AKKUSATIV",
+      "explanation": "Feste Prapositionen haben feste Kasus"
+    }
+  ],
+  "B2_lesson_4": [
+    {
+      "mistake": "Er kann krank sein. - objektiv/subjektiv verwechselt",
+      "correction": "Kontext: Fahigkeit vs. Vermutung (ca. 50%)",
+      "explanation": "Subjektives konnen = Vermutung"
+    },
+    {
+      "mistake": "Er muss 20 Jahre alt sein. = 100%?",
+      "correction": "Logische Schlussfolgerung, ca. 95%",
+      "explanation": "Subjektives mussen = hochste Wahrscheinlichkeit"
+    },
+    {
+      "mistake": "Er soll krank sein. = eigene Meinung?",
+      "correction": "Nein, Zitat von anderen Personen",
+      "explanation": "sollen = Behauptung von Dritten"
+    },
+    {
+      "mistake": "Sie will den Schlussel gefunden haben. = wahr?",
+      "correction": "Ihre Behauptung, muss nicht wahr sein",
+      "explanation": "wollen = Behauptung der Person selbst"
+    },
+    {
+      "mistake": "Er konnte der Tater sein. vs kann",
+      "correction": "konnte = geringere W'keit als kann",
+      "explanation": "Konjunktiv II reduziert Wahrscheinlichkeit"
+    }
+  ],
+  "B2_lesson_5": [
+    {
+      "mistake": "Das Analysieren der Daten... statt Die Analyse",
+      "correction": "Die Analyse der Daten...",
+      "explanation": "Nicht jeder Infinitiv wird nominalisiert"
+    },
+    {
+      "mistake": "Die Forschung der Medikamente (falscher Genitiv)",
+      "correction": "Die Forschung an Medikamenten",
+      "explanation": "Forschen AN -> Forschung AN (Praposition bleibt)"
+    },
+    {
+      "mistake": "Eine Entscheidung machen statt treffen",
+      "correction": "Eine Entscheidung treffen",
+      "explanation": "Funktionsverbgefuge haben feste Verben"
+    },
+    {
+      "mistake": "Zu viel Nominalstil",
+      "correction": "Verben und Nominalisierungen abwechseln",
+      "explanation": "Nominalstil wirkt schwerfallig"
+    },
+    {
+      "mistake": "Der Import als Verb statt Nomen",
+      "correction": "importieren (Verb) vs der Import (Nomen)",
+      "explanation": "Nominalisierung andert Wortart"
+    }
+  ],
+  "B2_lesson_6": [
+    {
+      "mistake": "Trotzdem die Globalisierung Vorteile hat...",
+      "correction": "Obwohl die Globalisierung Vorteile hat...",
+      "explanation": "trotzdem = Adverb, obwohl = Subjunktor"
+    },
+    {
+      "mistake": "Je mehr Export, desto besser. (unvollstandig)",
+      "correction": "Je mehr ein Land exportiert, desto besser...",
+      "explanation": "Je-desto braucht vollstandige Satze"
+    },
+    {
+      "mistake": "Entweder... oder falsche Satzstellung",
+      "correction": "Entweder fahren wir, oder wir bleiben.",
+      "explanation": "Nach entweder Verbposition 1"
+    },
+    {
+      "mistake": "Nicht nur... sondern auch vs weder... noch",
+      "correction": "Nicht nur... = Aufzahlung, weder... noch = Negation",
+      "explanation": "Positiv vs negativ"
+    },
+    {
+      "mistake": "Sowohl... als auch mit Singular-Verb",
+      "correction": "Sowohl X als auch Y sind... (Plural)",
+      "explanation": "Bei zwei Subjekten Verb im Plural"
+    }
+  ],
+  "B2_lesson_7": [
+    {
+      "mistake": "Genitiv-Relativpronomen verwechselt",
+      "correction": "dessen (mask./neutr.), deren (fem./Plural)",
+      "explanation": "Besitzanzeige im Relativsatz"
+    },
+    {
+      "mistake": "Kasus nach Praposition im Relativsatz falsch",
+      "correction": "Praposition bestimmt Kasus",
+      "explanation": "mit deren Hilfe (Dativ)"
+    },
+    {
+      "mistake": "Umgangssprachliches wo in formellen Texten",
+      "correction": "Praposition + Relativpronomen bevorzugen",
+      "explanation": "die Stadt, in der... statt die Stadt, wo..."
+    },
+    {
+      "mistake": "Verbposition im Relativsatz falsch",
+      "correction": "Verb am Ende (Nebensatz)",
+      "explanation": "Relativsatz ist eingeleiteter Nebensatz"
+    },
+    {
+      "mistake": "Falscher Genus des Relativpronomens",
+      "correction": "Nach Genus des Bezugsworts",
+      "explanation": "der (mask), die (fem), das (neut)"
+    }
+  ],
+  "B2_lesson_8": [
+    {
+      "mistake": "Indikativ statt K.I in indirekter Rede",
+      "correction": "Er sagt, er habe keine Zeit.",
+      "explanation": "K.I fur indirekte Rede"
+    },
+    {
+      "mistake": "K.I = Indikativ, kein K.II als Ersatz",
+      "correction": "Sie sagten, sie hatten... statt haben",
+      "explanation": "Wenn K.I = Indikativ, K.II als Ersatzform"
+    },
+    {
+      "mistake": "Indirekte Frage: Er fragt, kann er kommen?",
+      "correction": "Er fragt, ob er kommen kann.",
+      "explanation": "Verb am Ende in indirekten Fragen"
+    },
+    {
+      "mistake": "ob-Satz und w-Frage verwechselt",
+      "correction": "ob fur Ja/Nein, w-Wort fur W-Fragen",
+      "explanation": "Er fragt, ob... / warum... / wann..."
+    },
+    {
+      "mistake": "Kein K.I in Vergangenheit",
+      "correction": "Er sagte, er habe gearbeitet (K.I Perfekt)",
+      "explanation": "Auch Vergangenheit mit K.I"
+    }
+  ],
+  "B2_lesson_9": [
+    {
+      "mistake": "Partizip I und II verwechselt",
+      "correction": "PI = aktiv (der lesende), PII = passiv (der gelesene)",
+      "explanation": "PI = gleichzeitig aktiv, PII = passiv/abgeschlossen"
+    },
+    {
+      "mistake": "Falsche Endung bei Partizipialattributen",
+      "correction": "Adjektivendungen nach Artikelwort",
+      "explanation": "der gelesene Artikel, ein gelesener Artikel"
+    },
+    {
+      "mistake": "Partizipialattribut zu lang (Schachtelsatz)",
+      "correction": "Durch Relativsatz ersetzen",
+      "explanation": "Lange Partizipialattribute schwer verstandlich"
+    },
+    {
+      "mistake": "Der gewonnen werdene Preis (zu wortlich)",
+      "correction": "Der gewonnene Preis",
+      "explanation": "Partizip II direkt als Attribut"
+    },
+    {
+      "mistake": "Nur Nominalstil (keine Verben)",
+      "correction": "Nominalisierungen und Verben abwechseln",
+      "explanation": "Guter Stil variiert"
+    }
+  ],
+  "B2_lesson_10": [
+    {
+      "mistake": "Verbklammer nicht geschlossen",
+      "correction": "Ich habe gestern ein Buch gelesen.",
+      "explanation": "Finites Verb = 1. Teil, infinit = Ende"
+    },
+    {
+      "mistake": "Ausklammerung: Ich habe gelesen ein Buch.",
+      "correction": "Ich habe ein Buch gelesen.",
+      "explanation": "Mittelfeld bleibt in Klammer"
+    },
+    {
+      "mistake": "Falsche Stellung nach Adverb am Satzanfang",
+      "correction": "Gestern habe ich...",
+      "explanation": "Inversion nach Adverb am Satzanfang"
+    },
+    {
+      "mistake": "n-Deklination: den Kollege statt den Kollegen",
+      "correction": "den Kollegen",
+      "explanation": "Mask. Nomen auf -e: der Kollege, den Kollegen"
+    },
+    {
+      "mistake": "Doppelte Negation: kein Geld nicht",
+      "correction": "Ich habe kein Geld. (einfache Negation)",
+      "explanation": "Im Deutschen nur eine Negation"
+    }
+  ],
+  "B2_lesson_11": [
+    {
+      "mistake": "Die Globalisierung hat Vorteile... (zu einfach)",
+      "correction": "Komplexe Satze mit Konnektoren",
+      "explanation": "B2 erwartet differenzierte Argumentation"
+    },
+    {
+      "mistake": "Keine Prapositionaladverbien (davon, darauf...)",
+      "correction": "Davon profitieren Industrienationen.",
+      "explanation": "Typisch fur B2"
+    },
+    {
+      "mistake": "Keine Nominalisierungen in Diskussion",
+      "correction": "Die Globalisierung fuhrt zu einer Erhohung...",
+      "explanation": "Formelle Diskussionen nutzen Nominalstil"
+    },
+    {
+      "mistake": "Fachbegriffe falsch ubersetzt",
+      "correction": "Deutsche Wirtschaftsbegriffe: BIP, Freihandel",
+      "explanation": "Wirtschaftsvokabular"
+    },
+    {
+      "mistake": "Kein Passiv in Analyse",
+      "correction": "Der Welthandel wird beeinflusst.",
+      "explanation": "Wirtschaftsanalyse im Passiv"
+    }
+  ],
+  "B2_lesson_12": [
+    {
+      "mistake": "Subjektive Meinung ohne Kennzeichnung",
+      "correction": "Meiner Ansicht nach... / Aus ethischer Sicht...",
+      "explanation": "Wissenschaftsethik: klare Kennzeichnung"
+    },
+    {
+      "mistake": "Fehlende Argumentstruktur",
+      "correction": "These - Argument - Beispiel - Schlussfolgerung",
+      "explanation": "Klare wiss. Struktur"
+    },
+    {
+      "mistake": "Kein K.I in Zitaten",
+      "correction": "Der Forscher behauptet, die Studie sei valide.",
+      "explanation": "Indirekte Rede mit K.I"
+    },
+    {
+      "mistake": "Passiv in Diskussion vergessen",
+      "correction": "Die Ergebnisse wurden uberpruft.",
+      "explanation": "Passiv reduziert Subjektivitat"
+    },
+    {
+      "mistake": "Konnektoren fehlen (folglich, demnach, insofern)",
+      "correction": "Die Hypothese bestatigt sich nicht, folglich...",
+      "explanation": "Folgerungskonnektoren"
+    }
+  ],
+  "B2_lesson_13": [
+    {
+      "mistake": "Bewerbung mit falscher Anrede",
+      "correction": "Sehr geehrte Damen und Herren",
+      "explanation": "Standardisierte formelle Anrede"
+    },
+    {
+      "mistake": "Kein K.II im Gesprach",
+      "correction": "Ich wurde sagen, dass ich uber Erfahrung verfuge.",
+      "explanation": "Hoeflichkeit durch K.II"
+    },
+    {
+      "mistake": "Zu direkte Fragen",
+      "correction": "Durfte ich fragen, welche Aufgaben...?",
+      "explanation": "Modalverben subjektiv fur Hoeflichkeit"
+    },
+    {
+      "mistake": "Falsche Zeitform im Lebenslauf",
+      "correction": "Prasens (aktuell), Prateritum (fruher)",
+      "explanation": "Tempuswechsel im Lebenslauf"
+    },
+    {
+      "mistake": "Anschreiben ohne Struktur",
+      "correction": "Einleitung - Motivation - Qualifikation - Schluss",
+      "explanation": "Klare Bewerbungsstruktur"
+    }
+  ],
+  "B2_lesson_14": [
+    {
+      "mistake": "Ubermassiges man",
+      "correction": "Passiv oder bestimmtes Subjekt",
+      "explanation": "B2 vermeidet pauschales man"
+    },
+    {
+      "mistake": "Keine Nominalisierungen (Umwelt)",
+      "correction": "Die Reduzierung von CO2-Emissionen...",
+      "explanation": "Umwelt-Fachvokabular"
+    },
+    {
+      "mistake": "sorgen fur/um verwechselt",
+      "correction": "sorgen fur = verursachen, sich sorgen um = sich kummern",
+      "explanation": "Praposition andert Bedeutung"
+    },
+    {
+      "mistake": "Kein K.II fur Vorschlage",
+      "correction": "Man konnte mehr investieren.",
+      "explanation": "Vorschlage mit K.II"
+    },
+    {
+      "mistake": "Keine B2-Konnektoren",
+      "correction": "Je mehr wir investieren, desto schneller...",
+      "explanation": "Je-desto fur Zusammenhange"
+    }
+  ],
+  "B2_lesson_15": [
+    {
+      "mistake": "Falsche Fachbegriffe",
+      "correction": "Aktie, Anleihe, Dividende, Fonds",
+      "explanation": "Wirtschaftsvokabular wichtig"
+    },
+    {
+      "mistake": "Kein Passiv in Wirtschaftstexten",
+      "correction": "Die Aktien werden an der Borse gehandelt.",
+      "explanation": "Passiv in Wirtschaftstexten"
+    },
+    {
+      "mistake": "Verb-Praposition falsch",
+      "correction": "investieren in (Akk), finanzieren durch",
+      "explanation": "Feste Prapositionen"
+    },
+    {
+      "mistake": "Funktionsverbgefuge fehlen",
+      "correction": "in Kraft treten, zur Verfugung stellen",
+      "explanation": "Typisch fur Wirtschaftsdeutsch"
+    },
+    {
+      "mistake": "Keine indirekte Rede",
+      "correction": "Der Vorstand gab bekannt, der Gewinn sei gestiegen.",
+      "explanation": "Wirtschaftsberichte mit indirekter Rede"
+    }
+  ],
+  "B2_lesson_16": [
+    {
+      "mistake": "Integration vs Assimilation",
+      "correction": "Integration = gegenseitige Anpassung",
+      "explanation": "Begriffliche Differenzierung"
+    },
+    {
+      "mistake": "Kein K.I in Diskussion",
+      "correction": "Die Studie zeigt, dass Integration gelinge.",
+      "explanation": "Zitate mit K.I"
+    },
+    {
+      "mistake": "wo statt Praposition+Pronomen",
+      "correction": "die Gesellschaft, in der wir leben",
+      "explanation": "Formell: Praposition + Relativpronomen"
+    },
+    {
+      "mistake": "ankommen in/auf verwechselt",
+      "correction": "ankommen auf = abhangen von",
+      "explanation": "Praposition andert Bedeutung"
+    },
+    {
+      "mistake": "Keine komplexen Nebensatze",
+      "correction": "Obwohl Integration Herausforderungen birgt...",
+      "explanation": "B2 erwartet komplexe Strukturen"
+    }
+  ],
+  "B2_lesson_17": [
+    {
+      "mistake": "Grundgesetz falscher Artikel",
+      "correction": "das Grundgesetz (Neutrum)",
+      "explanation": "Politische Begriffe mit korrektem Artikel"
+    },
+    {
+      "mistake": "Kein Passiv im Rechtskontext",
+      "correction": "Das Gesetz wurde vom Bundestag verabschiedet.",
+      "explanation": "Rechtstexte haufig Passiv"
+    },
+    {
+      "mistake": "Nominalstil in Gesetzen unverstandlich",
+      "correction": "Die Wahrnehmung von Rechten...",
+      "explanation": "Gesetzestexte stark nominalisiert"
+    },
+    {
+      "mistake": "Falsche Konnektoren juristisch",
+      "correction": "Insofern die Klage begrundet ist...",
+      "explanation": "Spezifische juristische Konnektoren"
+    },
+    {
+      "mistake": "Genitiv-Relativsatze falsch",
+      "correction": "die Rechte, deren Verletzung geklagt wird",
+      "explanation": "Haufig im Rechtsdeutsch"
+    }
+  ],
+  "B2_lesson_18": [
+    {
+      "mistake": "Kein K.I in Medienanalyse",
+      "correction": "Der Artikel behauptet, die Pressefreiheit sei gefahrdet.",
+      "explanation": "Medienanalyse mit K.I"
+    },
+    {
+      "mistake": "Keine Partizipialattribute",
+      "correction": "Die von der Regierung kritisierte Berichterstattung...",
+      "explanation": "Verdichten Information"
+    },
+    {
+      "mistake": "schreiben uber/an verwechselt",
+      "correction": "uber (Thema), an (Adressat)",
+      "explanation": "Prapositionen unterscheiden"
+    },
+    {
+      "mistake": "Kein K.II bei Kritik",
+      "correction": "Man konnte die Berichterstattung als einseitig betrachten.",
+      "explanation": "Kritik mit K.II abschwachen"
+    },
+    {
+      "mistake": "Aktiv statt Passiv in Analyse",
+      "correction": "Die Medien werden von der Politik beeinflusst.",
+      "explanation": "Passiv betont Analyseobjekt"
+    }
+  ],
+  "B2_lesson_19": [
+    {
+      "mistake": "Reflexivverben falsch (erinnern)",
+      "correction": "Ich erinnere MICH an... (reflexiv)",
+      "explanation": "Psychologie: viele Reflexivverben"
+    },
+    {
+      "mistake": "Kein K.II fur Hypothesen",
+      "correction": "Wenn mehr Menschen Sport trieben...",
+      "explanation": "Hypothesen mit K.II"
+    },
+    {
+      "mistake": "glauben an/auf falsch",
+      "correction": "glauben AN + Akk",
+      "explanation": "Feste Praposition"
+    },
+    {
+      "mistake": "Keine Da-Komposita",
+      "correction": "Daruber hinaus..., Hiervon ausgehend...",
+      "explanation": "Strukturieren Argumentation"
+    },
+    {
+      "mistake": "Kein K.I in Studienzitaten",
+      "correction": "Die Autoren argumentieren, Motivation sei entscheidend.",
+      "explanation": "Studienzitate mit K.I"
+    }
+  ],
+  "B2_lesson_20": [
+    {
+      "mistake": "Reisen vs verreisen vs bereisen",
+      "correction": "reisen (allg.), verreisen (wegfahren), bereisen (Land)",
+      "explanation": "Differenzierung"
+    },
+    {
+      "mistake": "Genitiv bei Landernamen",
+      "correction": "die Kultur Italiens / die italienische Kultur",
+      "explanation": "Genitiv bei Landern mit Artikel"
+    },
+    {
+      "mistake": "Keine Prapositionaladverbien",
+      "correction": "Worauf kommt es beim Reisen an?",
+      "explanation": "Da-Komposita"
+    },
+    {
+      "mistake": "Wechselprapositionen verwechselt",
+      "correction": "in die Stadt fahren (Akk) vs in der Stadt sein (Dat)",
+      "explanation": "Wo? (Dat) vs Wohin? (Akk)"
+    },
+    {
+      "mistake": "Passiversatz sich lassen fehlt",
+      "correction": "Der Flug lasst sich nicht stornieren.",
+      "explanation": "Passiversatz im Reisekontext"
+    }
+  ],
+  "B2_lesson_21": [
+    {
+      "mistake": "digitalisieren vs digital",
+      "correction": "digitalisieren (Verb), digital (Adj.)",
+      "explanation": "Wortbildung"
+    },
+    {
+      "mistake": "Keine Nominalisierungen",
+      "correction": "Die Vernetzung von Geraten...",
+      "explanation": "Technische Texte mit Nominalstil"
+    },
+    {
+      "mistake": "Kein Passiv mit Modalverben",
+      "correction": "KI kann in vielen Bereichen eingesetzt werden.",
+      "explanation": "Diskussion uber KI"
+    },
+    {
+      "mistake": "Falscher Konnektor: dadurch, dass",
+      "correction": "Dadurch, dass Prozesse automatisiert werden...",
+      "explanation": "Kausale Zusammenhange"
+    },
+    {
+      "mistake": "Keine Da-Komposita",
+      "correction": "Hiermit beschaftigt sich die aktuelle Forschung.",
+      "explanation": "Formelle Technikdiskussion"
+    }
+  ],
+  "B2_lesson_22": [
+    {
+      "mistake": "Historisches Prasens vs Vergangenheit",
+      "correction": "Prasens fur Analyse, Prateritum fur Ereignisse",
+      "explanation": "Tempuswahl"
+    },
+    {
+      "mistake": "Passiv in Geschichte",
+      "correction": "Die Mauer wurde 1961 errichtet.",
+      "explanation": "Historische Ereignisse im Passiv"
+    },
+    {
+      "mistake": "K.I in Zitaten",
+      "correction": "Brandt sagte, der Mauerfall sei historisch.",
+      "explanation": "Zitate mit K.I"
+    },
+    {
+      "mistake": "Konnektoren fur zeitliche Abfolge",
+      "correction": "zunachst... daraufhin... schliesslich...",
+      "explanation": "Zeitliche Struktur"
+    },
+    {
+      "mistake": "Relativsatze mit Prapositionen",
+      "correction": "die Zeit, in der die Mauer stand",
+      "explanation": "Historische Zusammenhange"
+    }
+  ],
+  "B2_lesson_23": [
+    {
+      "mistake": "Satzverkurzung mit Partizipien",
+      "correction": "Die steigende Urbanisierung fuhrt zu...",
+      "explanation": "Partizipialattribute statt Nebensatze"
+    },
+    {
+      "mistake": "Keine je-desto Vergleiche",
+      "correction": "Je dichter die Stadt, desto hoher die Mieten.",
+      "explanation": "Stadtentwicklung"
+    },
+    {
+      "mistake": "Keine Nominalisierungen",
+      "correction": "Die Verdichtung urbaner Raume...",
+      "explanation": "Nominalstil fur Stadtanalyse"
+    },
+    {
+      "mistake": "Kein Futur II fur Prognosen",
+      "correction": "Bis 2030 werden die Stadte dichter geworden sein.",
+      "explanation": "Zukunftsperspektiven"
+    },
+    {
+      "mistake": "Kein K.I in Planungsdiskussion",
+      "correction": "Der Stadtplaner sagt, der Verkehr solle reduziert werden.",
+      "explanation": "Planungszitate mit K.I"
+    }
+  ],
+  "B2_lesson_24": [
+    {
+      "mistake": "Energiewende vs Klimawandel",
+      "correction": "Energiewende = politische Massnahme",
+      "explanation": "Begriffliche Differenzierung"
+    },
+    {
+      "mistake": "Kein Passiv in Umweltdiskussion",
+      "correction": "Erneuerbare Energien werden gefordert.",
+      "explanation": "Umweltpolitik im Passiv"
+    },
+    {
+      "mistake": "Keine Doppelkonnektoren",
+      "correction": "Nicht nur die Politik, sondern auch die Wirtschaft...",
+      "explanation": "Komplexe Zusammenhange"
+    },
+    {
+      "mistake": "Keine Nominalisierungen",
+      "correction": "Die Reduzierung von CO2 ist zentral.",
+      "explanation": "Umweltdeutsch nominalisiert"
+    },
+    {
+      "mistake": "Kein K.II fur Alternativszenarien",
+      "correction": "Wenn wir mehr investierten...",
+      "explanation": "Alternative Szenarien"
+    }
+  ],
+  "B2_lesson_25": [
+    {
+      "mistake": "Kultur falscher Genus",
+      "correction": "die Kultur (feminin)",
+      "explanation": "Kulturbegriffe mit korrektem Artikel"
+    },
+    {
+      "mistake": "Keine Da-Komposita",
+      "correction": "Darunter versteht man kulturelle Vielfalt.",
+      "explanation": "Da-Komposita"
+    },
+    {
+      "mistake": "Relativsatze im Dativ falsch",
+      "correction": "die Kultur, in der wir leben",
+      "explanation": "Relativsatze mit Prapositionen"
+    },
+    {
+      "mistake": "Kein Passiv im Kulturvergleich",
+      "correction": "Mode wird von kulturellen Einflussen gepragt.",
+      "explanation": "Kulturanalyse im Passiv"
+    },
+    {
+      "mistake": "Kein K.I fur Zitate",
+      "correction": "Der Autor schreibt, Mode sei Ausdruck von Identitat.",
+      "explanation": "Kulturzitate mit K.I"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "version": 5,
-  "lastUpdated": "2026-05-07",
-  "description": "Full curriculum map for A1-C1. Generated from existing lesson, vocabulary, grammar, reading, listening, writing, and speaking data.",
+  "version": "2.0",
+  "lastUpdated": "2026-05-08",
+  "description": "B2 German curriculum with enriched metadata for all 25 lessons",
   "units": [
     {
       "id": "A1_lesson_1",
@@ -57689,6 +57689,349 @@
         "C1_speak_50"
       ],
       "prerequisites": []
+    },
+    {
+      "id": "b2.passive.vorgang.zustand",
+      "label": "Review Passiv: Vorgangspassiv & Zustandspassiv",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.passiv.prateritum"
+      ],
+      "topics": [
+        "b2.grammar.advanced.passive",
+        "b2.grammar.vorgangspassiv",
+        "b2.grammar.zustandspassiv"
+      ]
+    },
+    {
+      "id": "b2.passive.alternatives",
+      "label": "Passiversatz, Passivalternativen & sein+zu",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.passiv.prateritum",
+        "b1.umzu.clauses"
+      ],
+      "topics": [
+        "b2.grammar.passivalternativen",
+        "b2.grammar.sein.zu",
+        "b2.grammar.sich.lassen"
+      ]
+    },
+    {
+      "id": "b2.prapositionale.verben",
+      "label": "Verb-Präposition-Kombinationen & da-Komposita",
+      "level": "B2",
+      "prerequisites": [
+        "b1.prepositions.fixed.case",
+        "b1.pronominal.adverbs",
+        "b1.reflexive.verbs.extended"
+      ],
+      "topics": [
+        "b2.grammar.verb.preposition.fixed",
+        "b2.grammar.da.compounds"
+      ]
+    },
+    {
+      "id": "b2.modalverben.subjektiv",
+      "label": "Modalverben subjektiv & subjektive Bedeutung",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.general",
+        "b1.konjunktiv2.politeness"
+      ],
+      "topics": [
+        "b2.grammar.modal.subjective",
+        "b2.grammar.modal.particle"
+      ]
+    },
+    {
+      "id": "b2.nominalisierung",
+      "label": "Nominalisierung & Funktionsverbgefüge",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.genitive.intro"
+      ],
+      "topics": [
+        "b2.grammar.nominalization",
+        "b2.grammar.function.verb",
+        "b2.grammar.nomen.verb.verbindung"
+      ]
+    },
+    {
+      "id": "b2.konnektoren.formal",
+      "label": "B2-Konnektoren & komplexe Satzstrukturen",
+      "level": "B2",
+      "prerequisites": [
+        "b1.connectors.cause.effect",
+        "b1.temporal.connectors",
+        "b1.subordinate.obwohl"
+      ],
+      "topics": [
+        "b2.grammar.komplexe.konnektoren",
+        "b2.grammar.doppel.konnektoren",
+        "b2.grammar.konnektoren.formal"
+      ]
+    },
+    {
+      "id": "b2.relativsaetze",
+      "label": "Erweiterte Relativsätze & wo-Komposita",
+      "level": "B2",
+      "prerequisites": [
+        "b1.relative.clauses.nom",
+        "b1.relative.clauses.dat",
+        "b1.relative.clauses.general"
+      ],
+      "topics": [
+        "b2.grammar.relative.extended",
+        "b2.grammar.relative.wo.compounds",
+        "b2.grammar.relative.genitive"
+      ]
+    },
+    {
+      "id": "b2.indirekte.rede",
+      "label": "Indirekte Rede & Konjunktiv I",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.general",
+        "b1.konjunktiv2.politeness",
+        "b1.subordinate.obwohl"
+      ],
+      "topics": [
+        "b2.grammar.konjunktiv1",
+        "b2.grammar.indirekte.rede",
+        "b2.grammar.indirekte.fragen"
+      ]
+    },
+    {
+      "id": "b2.nominalstil",
+      "label": "Nominalstil & Partizipialattribute",
+      "level": "B2",
+      "prerequisites": [
+        "b1.participle.adjectives",
+        "b1.word.order.complex"
+      ],
+      "topics": [
+        "b2.grammar.nominalstil",
+        "b2.grammar.partizipialattribute",
+        "b2.grammar.satzverkuerzung"
+      ]
+    },
+    {
+      "id": "b2.satzbau",
+      "label": "Satzbau & Stellungsfelder (Klammer & Ausklammerung)",
+      "level": "B2",
+      "prerequisites": [
+        "b1.word.order.complex",
+        "b1.adjective.endings.nom"
+      ],
+      "topics": [
+        "b2.grammar.satzbau",
+        "b2.grammar.klammer",
+        "b2.grammar.ausklammerung",
+        "b2.grammar.stellungsfelder"
+      ]
+    },
+    {
+      "id": "b2.globalisierung",
+      "label": "Globalisierung & Wirtschaftsdeutsch",
+      "level": "B2",
+      "prerequisites": [
+        "b1.connectors.cause.effect",
+        "b1.temporal.connectors",
+        "b1.passiv.praesens"
+      ],
+      "topics": [
+        "b2.thema.globalisierung",
+        "b2.diskussion.wirtschaftsdeutsch"
+      ]
+    },
+    {
+      "id": "b2.ethik.wissenschaft",
+      "label": "Wissenschaftsethik & Argumentation",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.general",
+        "b1.passiv.praesens"
+      ],
+      "topics": [
+        "b2.thema.wissenschaftsethik",
+        "b2.argumentation.formal"
+      ]
+    },
+    {
+      "id": "b2.bewerbung",
+      "label": "Bewerbung & formelle Kommunikation",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.politeness",
+        "b1.word.order.complex"
+      ],
+      "topics": [
+        "b2.thema.bewerbung",
+        "b2.praesentation.formell"
+      ]
+    },
+    {
+      "id": "b2.nachhaltigkeit",
+      "label": "Nachhaltigkeit & Umwelt",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.umzu.clauses"
+      ],
+      "topics": [
+        "b2.thema.nachhaltigkeit",
+        "b2.thema.umwelt"
+      ]
+    },
+    {
+      "id": "b2.finanzen.wirtschaft",
+      "label": "Wirtschaft & Finanzen",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.general",
+        "b1.prepositions.fixed.case"
+      ],
+      "topics": [
+        "b2.thema.wirtschaft",
+        "b2.thema.finanzen"
+      ]
+    },
+    {
+      "id": "b2.migration.integration",
+      "label": "Migration & Integration",
+      "level": "B2",
+      "prerequisites": [
+        "b1.connectors.cause.effect",
+        "b1.prepositions.fixed.case"
+      ],
+      "topics": [
+        "b2.thema.migration",
+        "b2.thema.integration"
+      ]
+    },
+    {
+      "id": "b2.recht.gerechtigkeit",
+      "label": "Recht & Gerechtigkeit",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.subordinate.obwohl"
+      ],
+      "topics": [
+        "b2.thema.recht",
+        "b2.thema.grundgesetz"
+      ]
+    },
+    {
+      "id": "b2.medien",
+      "label": "Medien & Journalismus",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.subordinate.obwohl",
+        "b1.relative.clauses.general"
+      ],
+      "topics": [
+        "b2.thema.medien",
+        "b2.thema.journalismus"
+      ]
+    },
+    {
+      "id": "b2.psychologie",
+      "label": "Psychologie, Lernen & Motivation",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.general",
+        "b1.reflexive.verbs.extended"
+      ],
+      "topics": [
+        "b2.thema.psychologie",
+        "b2.thema.lernen",
+        "b2.thema.motivation"
+      ]
+    },
+    {
+      "id": "b2.tourismus",
+      "label": "Tourismus, Kultur & Reisen",
+      "level": "B2",
+      "prerequisites": [
+        "b1.prepositions.fixed.case",
+        "b1.genitive.intro"
+      ],
+      "topics": [
+        "b2.thema.tourismus",
+        "b2.thema.kultur.reisen"
+      ]
+    },
+    {
+      "id": "b2.digitalisierung",
+      "label": "Digitalisierung & KI",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.word.order.complex"
+      ],
+      "topics": [
+        "b2.thema.digitalisierung",
+        "b2.thema.ki",
+        "b2.thema.arbeitswelt"
+      ]
+    },
+    {
+      "id": "b2.politik.gesellschaft",
+      "label": "Politik, Demokratie & Bürgerrechte",
+      "level": "B2",
+      "prerequisites": [
+        "b1.subordinate.obwohl",
+        "b1.connectors.cause.effect"
+      ],
+      "topics": [
+        "b2.thema.politik",
+        "b2.thema.demokratie"
+      ]
+    },
+    {
+      "id": "b2.smart.cities",
+      "label": "Smart Cities & Stadtentwicklung",
+      "level": "B2",
+      "prerequisites": [
+        "b1.temporal.connectors",
+        "b1.comparisons.complex"
+      ],
+      "topics": [
+        "b2.thema.stadtentwicklung",
+        "b2.thema.smart.cities"
+      ]
+    },
+    {
+      "id": "b2.energie.klima",
+      "label": "Energiepolitik & Klimawandel",
+      "level": "B2",
+      "prerequisites": [
+        "b1.passiv.praesens",
+        "b1.umzu.clauses"
+      ],
+      "topics": [
+        "b2.thema.energiepolitik",
+        "b2.thema.klimawandel"
+      ]
+    },
+    {
+      "id": "b2.kultur.leben",
+      "label": "Kultur, Mode & Lebensstil",
+      "level": "B2",
+      "prerequisites": [
+        "b1.konjunktiv2.politeness",
+        "b1.relative.clauses.general"
+      ],
+      "topics": [
+        "b2.thema.kultur",
+        "b2.thema.lebensstil"
+      ]
     }
   ],
   "prerequisiteGraph": [],
