@@ -2,13 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   getState, getMistakesByLevel, getMistakeNotebookItems, getWeakTopics,
-  getDueVocabWords, recordVocabAnswer, recordAnswer,
+  recordAnswer,
   markMistakeMasteredById, clearMistakeByIndex,
 } from '../utils/store';
-import vocabData from '../data/germanVocabulary.json';
 import {
   AlertTriangle, X, Check, CheckCircle, RefreshCw, Filter,
-  ChevronDown, ChevronUp, RotateCcw, Brain,
+  ChevronDown, ChevronUp, RotateCcw,
   Star, Trash2,
 } from 'lucide-react';
 import {
@@ -36,7 +35,6 @@ export default function MistakeNotebookPage() {
   const [retryCorrectCount, setRetryCorrectCount] = useState(0);
   const [activeTab, setActiveTab] = useState('mistakes');
   const [expandedMistake, setExpandedMistake] = useState(null);
-  const [reviewedVocab, setReviewedVocab] = useState([]);
 
   useEffect(() => {
     const i = setInterval(() => setState({ ...getState() }), 1000);
@@ -60,6 +58,8 @@ export default function MistakeNotebookPage() {
   // Get filtered items using store function
   const filteredItems = getMistakeNotebookItems(filterLevel, filterSkill);
 
+  const currentLevel = getState().currentLevel || 'A1';
+
   // Skill counts
   const skillCounts = {};
   levels.forEach(l => {
@@ -82,27 +82,7 @@ export default function MistakeNotebookPage() {
   // Weak topics
   const weakTopics = getWeakTopics() || [];
 
-  // Due vocab words — SM-2 due queue only
-  const currentLevel = getState().currentLevel || 'A1';
-  const levelWords = (vocabData[currentLevel] || []).map(w => ({ ...w, level: currentLevel }));
-  const allLevelIds = levelWords.map(w => `${currentLevel}_${w.id}`);
-  const dueWordIds = new Set(getDueVocabWords(allLevelIds));
-  const vocabItems = levelWords
-    .filter(w => dueWordIds.has(`${currentLevel}_${w.id}`))
-    .filter(w => !reviewedVocab.includes(`${currentLevel}_${w.id}`))
-    .slice(0, 20);
 
-  const handleVocabReview = (wordId, correct) => {
-    const word = levelWords.find(w => w.id === wordId) || {};
-    recordVocabAnswer(`${currentLevel}_${wordId}`, correct, {
-      level: currentLevel,
-      userAnswer: correct ? word.translation || word.english || 'Knew it' : 'Still learning',
-      correctAnswer: word.translation || word.english || '',
-      topic: word.topic || 'Vocabulary',
-    });
-    setReviewedVocab(prev => [...prev, `${currentLevel}_${wordId}`]);
-    setState({ ...getState() });
-  };
 
   const handleMistakeRetry = (mistakeKey, answer) => {
     setRetryAnswers(prev => ({ ...prev, [mistakeKey]: answer }));
@@ -125,7 +105,6 @@ export default function MistakeNotebookPage() {
 
   const totalMistakes = Object.values(allMistakes).reduce((a, b) => a + b.length, 0);
   const totalWeak = weakTopics.length;
-  const totalDue = vocabItems.length;
 
   return (
     <PageShell>
@@ -148,10 +127,7 @@ export default function MistakeNotebookPage() {
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#f59e0b' }}>{totalWeak}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Weak Topics</div>
         </Card>
-        <Card className="text-center" style={{ padding: '12px' }}>
-          <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#8b5cf6' }}>{totalDue}</div>
-          <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Vocab Due</div>
-        </Card>
+
         <Card className="text-center" style={{ padding: '12px' }}>
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#3bff9e' }}>{retryCorrectCount}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Retries Correct</div>
@@ -172,7 +148,7 @@ export default function MistakeNotebookPage() {
         {[
           { key: 'mistakes', label: 'Mistakes', icon: X, count: totalMistakes },
           { key: 'weak', label: 'Weak Topics', icon: AlertTriangle, count: totalWeak },
-          { key: 'vocab', label: 'Vocab Review', icon: Brain, count: totalDue },
+
         ].map(tab => (
           <button
             key={tab.key}
@@ -427,66 +403,6 @@ export default function MistakeNotebookPage() {
         </div>
       )}
 
-      {/* Tab: Vocab Review (SM-2 Due Queue Only) */}
-      {activeTab === 'vocab' && (
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-            <Brain size={16} style={{ color: 'var(--accent)' }} />
-            <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)' }}>
-              {vocabItems.length} words due for review today
-            </span>
-          </div>
-          {vocabItems.length === 0 ? (
-            <EmptyState
-              icon="📚"
-              title="All vocabulary reviewed"
-              description={`Come back tomorrow for new words. SM-2 queue is clear for ${currentLevel}.`}
-            />
-          ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {vocabItems.map((word, idx) => (
-                <Card key={word.id || idx} style={{ padding: '14px 16px' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                    <div>
-                      {word.article && <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginRight: '4px' }}>{word.article}</span>}
-                      <span style={{ fontSize: '16px', fontWeight: '700', color: 'var(--text-primary)' }}>
-                        {word.word || word.german}
-                      </span>
-                      <span style={{ fontSize: '13px', color: 'var(--text-secondary)', marginLeft: '8px' }}>
-                        {word.translation || word.english}
-                      </span>
-                    </div>
-                    <LevelBadge level={word.level || currentLevel} size="sm" />
-                  </div>
-                  {word.example && (
-                    <p style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
-                      "{word.example}"
-                    </p>
-                  )}
-                  <div style={{ display: 'flex', gap: '8px' }}>
-                    <Button
-                      onClick={() => handleVocabReview(word.id, true)}
-                      size="sm"
-                      variant="success"
-                      style={{ flex: 1 }}
-                    >
-                      <Check size={14} style={{ marginRight: '6px' }} /> Knew it
-                    </Button>
-                    <Button
-                      onClick={() => handleVocabReview(word.id, false)}
-                      size="sm"
-                      variant="danger"
-                      style={{ flex: 1 }}
-                    >
-                      <X size={14} style={{ marginRight: '6px' }} /> Still learning
-                    </Button>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
     </PageShell>
   );
 }
