@@ -37,7 +37,7 @@ export default function Dashboard() {
   const readingDone = (prog.reading?.length || 0);
   const listeningDone = (prog.listening?.length || 0);
   const writingDone = (state.writings || []).filter(w => w.level === studyLevel).length;
-  const speakingDone = (state.speakingRecordings[studyLevel]?.length || 0);
+  const speakingDone = (state.speakingRecordings?.[studyLevel]?.length || 0);
   const mistakesCount = Object.keys(state.mistakeNotebook || {}).length;
 
   // === Due vocab count ===
@@ -56,7 +56,7 @@ export default function Dashboard() {
   // === Total completed across all levels ===
   const totalCompleted = levelsData.levels.reduce((acc, lvl) => {
     const p = state.levels[lvl.id] || {};
-    return acc + (p.grammar?.length || 0) + (p.vocab?.length || 0) + (p.reading?.length || 0) + (p.listening?.length || 0) + (state.writings?.filter(w => w.level === lvl.id).length || 0) + ((state.speakingRecordings[lvl.id]?.length) || 0);
+    return acc + (p.grammar?.length || 0) + (p.vocab?.length || 0) + (p.reading?.length || 0) + (p.listening?.length || 0) + (state.writings?.filter(w => w.level === lvl.id).length || 0) + ((state.speakingRecordings?.[lvl.id]?.length) || 0);
   }, 0);
 
   const supabaseUrl = typeof import.meta !== 'undefined' ? import.meta.env?.VITE_SUPABASE_URL : null;
@@ -78,7 +78,7 @@ export default function Dashboard() {
             </p>
           </div>
           <Link to={`/level/${studyLevel}/daily`} className="px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center gap-1.5" style={{ backgroundColor: 'var(--accent)', color: '#000' }}>
-            <ArrowRight size={16} />Start Today’s Session
+            <ArrowRight size={16} />Start Today's Plan
           </Link>
         </div>
       </div>
@@ -156,7 +156,7 @@ export default function Dashboard() {
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <div className="flex-1">
             <div className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
-              {mistakesCount > 0 ? 'Review Your Mistakes' : 'Start Today’s Session'}
+              {mistakesCount > 0 ? 'Review Your Mistakes' : 'Start Today\u2019s Plan'}
             </div>
             <div className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
               {mistakesCount > 0

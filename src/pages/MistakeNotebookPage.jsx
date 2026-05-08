@@ -21,7 +21,8 @@ const skillOptions = [
   { value: 'grammar', label: 'Grammar' },
   { value: 'reading', label: 'Reading' },
   { value: 'listening', label: 'Listening' },
-  { value: 'vocab', label: 'Vocabulary' },
+  { value: 'writing', label: 'Writing' },
+  { value: 'speaking', label: 'Speaking' },
   { value: 'exam', label: 'Exam' },
   { value: 'mistake-retry', label: 'Retry' },
 ];
@@ -114,7 +115,7 @@ export default function MistakeNotebookPage() {
             <AlertTriangle size={22} style={{ color: '#ff6b00' }} /> Mistake Notebook
           </span>
         }
-        subtitle={`Review your mistakes, re-practice weak areas, and reinforce vocabulary. ${totalMistakes} total mistakes tracked.`}
+        subtitle={`Review your mistakes and re-practice weak areas. ${totalMistakes} total mistakes tracked.`}
       />
 
       {/* Stats */}

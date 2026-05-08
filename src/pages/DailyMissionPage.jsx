@@ -1183,7 +1183,7 @@ export default function DailyMissionPage() {
                 </div>
               )}
             </div>
-            <Link to={'/level/' + levelId} style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
+            <Link to={'/'} style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
               <Home size={16} /> Back to Dashboard
             </Link>
           </Card>
@@ -1202,7 +1202,7 @@ export default function DailyMissionPage() {
                 <GraduationCap size={40} style={{ color: 'var(--text-muted)', marginBottom: '1rem' }} />
                 <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>All Caught Up!</h2>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>All missions for {lvl} are complete for today.</p>
-                <Link to={'/level/' + levelId} style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
+                <Link to={'/'} style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
                   <Home size={16} /> Back to Dashboard
                 </Link>
               </>
