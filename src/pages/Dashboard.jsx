@@ -5,7 +5,7 @@ import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, get
 import levelsData from '../data/levels.json';
 import dashboardSummary from '../data/dashboardSummary.json';
 import grammarCurriculum from '../data/grammarCurriculum.json';
-import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair, CalendarCheck } from 'lucide-react';
+import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair, CalendarCheck, Stethoscope } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
@@ -1618,6 +1618,49 @@ export default function Dashboard() {
             </Link>
           );
         })}
+      </div>
+
+      {/* FSP Medical German Track */}
+      <div className="mb-6">
+        {((state.targetLevel === 'Medical FSP' || state.targetLevel === 'FSP') || state.exams?.B2?.passed || state.levels?.B2?.grammar?.length > 0 || state.levels?.B2?.vocab?.length > 0 || state.levels?.C1?.grammar?.length > 0) ? (
+          <Link to="/medical-fsp" className="rounded-xl p-5 block transition-all hover:scale-[1.01]" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid rgba(139,92,246,0.4)' }}>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.15)' }}>
+                <Stethoscope size={20} style={{ color: '#8b5cf6' }} />
+              </div>
+              <div>
+                <div className="text-sm font-bold" style={{ color: '#8b5cf6' }}>FSP Medical German Track</div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Fachsprachpruefung preparation</div>
+              </div>
+              <ChevronRight size={18} style={{ color: '#8b5cf6', marginLeft: 'auto' }} />
+            </div>
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+              Focused preparation for the medical German language exam required for international doctors
+              to work in Germany. Covers patient history, diagnosis explanations, case presentations,
+              medical documentation, and full mock exams.
+            </p>
+            <div className="mt-2 flex items-center gap-2 text-xs" style={{ color: 'var(--text-muted)' }}>
+              <GraduationCap size={12} />
+              <span>20 modules &middot; 40 lessons &middot; 9 skill areas</span>
+            </div>
+          </Link>
+        ) : (
+          <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', opacity: 0.6 }}>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.08)' }}>
+                <Stethoscope size={20} style={{ color: '#54587a' }} />
+              </div>
+              <div>
+                <div className="text-sm font-bold" style={{ color: '#54587a' }}>FSP Medical German Track</div>
+                <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Locked</div>
+              </div>
+            </div>
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+              The FSP track requires B2/C1 level completion. Set your target level to "Medical FSP"
+              in onboarding or settings to unlock focused Fachsprachpruefung preparation.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Progress Backup */}

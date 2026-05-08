@@ -1,0 +1,1413 @@
+[
+  {
+    "id": "fsp_s_001",
+    "task": "Führen Sie ein Anamnesegespräch mit einer Patientin, die über chronische Rückenschmerzen klagt.",
+    "role": "doctor",
+    "patientCase": "45-jährige Patientin, Sekretärin, seit 6 Monaten Rückenschmerzen im LWS-Bereich, sitzende Tätigkeit.",
+    "expectedAnswerPoints": [
+      "Begrüßung und Vorstellung",
+      "Offene Frage nach Beschwerden",
+      "Schmerzlokalisation und -qualität erfragen",
+      "Berufsanamnese",
+      "Bisherige Therapieversuche erfragen"
+    ],
+    "usefulPhrases": [
+      "Guten Tag, ich bin Dr. ...",
+      "Was führt Sie zu mir?",
+      "Seit wann haben Sie die Schmerzen?",
+      "Haben Sie schon etwas dagegen unternommen?"
+    ],
+    "rubric": {
+      "structure": "Complete anamnesis structure",
+      "medicalAccuracy": "Correct orthopedic history taking",
+      "germanAccuracy": "Fluent natural German"
+    },
+    "requiredConcepts": [
+      "speaking.001"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.001"
+  },
+  {
+    "id": "fsp_s_002",
+    "task": "Befragen Sie einen Patienten mit neu aufgetretenem Husten und Fieber.",
+    "role": "doctor",
+    "patientCase": "38-jähriger Mann, seit 3 Tagen Husten, Fieber bis 39°C, eitriger Auswurf.",
+    "expectedAnswerPoints": [
+      "Beginn und Verlauf der Symptome",
+      "Fiebermessung und Höhe",
+      "Auswurf (Farbe, Menge)",
+      "Atemnot?",
+      "Vorerkrankungen und Raucherstatus"
+    ],
+    "usefulPhrases": [
+      "Seit wann haben Sie Husten?",
+      "Haben Sie Fieber gemessen?",
+      "Husten Sie etwas aus?",
+      "Rauchen Sie?"
+    ],
+    "rubric": {
+      "structure": "Respiratory anamnesis",
+      "medicalAccuracy": "Pneumonia-relevant history",
+      "germanAccuracy": "Natural German"
+    },
+    "requiredConcepts": [
+      "speaking.002"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.002"
+  },
+  {
+    "id": "fsp_s_003",
+    "task": "Erheben Sie die Anamnese bei einem Patienten mit Oberbauchschmerzen.",
+    "role": "doctor",
+    "patientCase": "52-jähriger Patient, seit 2 Tagen Oberbauchschmerzen rechts, Übelkeit, Fettunverträglichkeit.",
+    "expectedAnswerPoints": [
+      "Schmerzlokalisation und Ausstrahlung",
+      "Zusammenhang mit Nahrungsaufnahme",
+      "Übelkeit/Erbrechen",
+      "Stuhlgang und Urinfarbe",
+      "Alkoholkonsum"
+    ],
+    "usefulPhrases": [
+      "Zeigen Sie mir, wo es weh tut.",
+      "Haben Sie einen Zusammenhang mit dem Essen bemerkt?",
+      "Wie ist Ihr Stuhlgang?",
+      "Trinken Sie Alkohol?"
+    ],
+    "rubric": {
+      "structure": "Abdominal anamnesis",
+      "medicalAccuracy": "Gallbladder/relevant history",
+      "germanAccuracy": "Fluent German"
+    },
+    "requiredConcepts": [
+      "speaking.003"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.003"
+  },
+  {
+    "id": "fsp_s_004",
+    "task": "Führen Sie ein Aufklärungsgespräch vor einer Koloskopie.",
+    "role": "doctor",
+    "patientCase": "60-jähriger Patient zur Vorsorgekoloskopie, hat Ängste vor der Untersuchung.",
+    "expectedAnswerPoints": [
+      "Ziel der Untersuchung erklären",
+      "Ablauf beschreiben",
+      "Risiken nennen",
+      "Vorbereitung erklären (Darmreinigung)",
+      "Fragen beantworten"
+    ],
+    "usefulPhrases": [
+      "Die Darmspiegelung dient der Früherkennung von Darmkrebs.",
+      "Sie bekommen eine Beruhigungsspritze.",
+      "Seltene Komplikationen sind Blutungen oder Perforationen.",
+      "Am Tag vorher müssen Sie den Darm reinigen."
+    ],
+    "rubric": {
+      "structure": "Informed consent structure",
+      "medicalAccuracy": "Correct risk explanation",
+      "germanAccuracy": "Clear patient-friendly German"
+    },
+    "requiredConcepts": [
+      "speaking.004"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.004"
+  },
+  {
+    "id": "fsp_s_005",
+    "task": "Befragen Sie eine Mutter mit ihrem fiebernden Kleinkind.",
+    "role": "doctor",
+    "patientCase": "Mutter mit 2-jährigem Kind, Fieber seit gestern, 39,5°C, Unruhe, Trinkverweigerung.",
+    "expectedAnswerPoints": [
+      "Fieberhöhe und Verlauf",
+      "Trinkverhalten",
+      "Allgemeinzustand",
+      "Begleitsymptome (Husten, Erbrechen, Durchfall)",
+      "Impfstatus"
+    ],
+    "usefulPhrases": [
+      "Seit wann hat Ihr Kind Fieber?",
+      "Trinkt Ihr Kind genug?",
+      "Hat es geimpft?",
+      "Wie ist der Allgemeinzustand?"
+    ],
+    "rubric": {
+      "structure": "Pediatric history",
+      "medicalAccuracy": "Correct pediatric assessment",
+      "germanAccuracy": "Age-appropriate communication"
+    },
+    "requiredConcepts": [
+      "speaking.005"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.005"
+  },
+  {
+    "id": "fsp_s_006",
+    "task": "Führen Sie ein psychiatrisches Erstgespräch bei Verdacht auf Depression.",
+    "role": "doctor",
+    "patientCase": "35-jährige Patientin, seit Wochen niedergeschlagen, antriebslos, Schlafstörungen, Interessenverlust.",
+    "expectedAnswerPoints": [
+      "Stimmung und Verlauf erfragen",
+      "Schlaf und Appetit",
+      "Interessenverlust",
+      "Suizidgedanken erfragen (ICD-10 Kriterien)",
+      "Soziale Situation"
+    ],
+    "usefulPhrases": [
+      "Wie ist Ihre Stimmung zur Zeit?",
+      "Haben Sie Interesse an Dingen, die Ihnen früher Spaß gemacht haben?",
+      "Haben Sie Gedanken, sich etwas anzutun?"
+    ],
+    "rubric": {
+      "structure": "Psychiatric assessment",
+      "medicalAccuracy": "Depression screening",
+      "germanAccuracy": "Empathic German"
+    },
+    "requiredConcepts": [
+      "speaking.006"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.speaking.006"
+  },
+  {
+    "id": "fsp_s_007",
+    "task": "Befragen Sie einen Patienten mit Kopfschmerzen zur Ursachenabklärung.",
+    "role": "doctor",
+    "patientCase": "28-jährige Frau, seit 3 Monaten wiederkehrende Kopfschmerzen, meist einseitig, pochend.",
+    "expectedAnswerPoints": [
+      "Kopfschmerzcharakter",
+      "Lokalisation und Ausstrahlung",
+      "Aura-Symptome",
+      "Auslöser und Linderung",
+      "Bisherige Therapie"
+    ],
+    "usefulPhrases": [
+      "Auf welcher Seite haben Sie die Schmerzen?",
+      "Sehen Sie vor den Schmerzen Lichtblitze?",
+      "Was macht die Schmerzen besser?"
+    ],
+    "rubric": {
+      "structure": "Headache history",
+      "medicalAccuracy": "Migraine vs tension headache",
+      "germanAccuracy": "Fluent descriptive German"
+    },
+    "requiredConcepts": [
+      "speaking.007"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.007"
+  },
+  {
+    "id": "fsp_s_008",
+    "task": "Führen Sie ein Gespräch mit einem Diabetiker zur Blutzuckerkontrolle.",
+    "role": "doctor",
+    "patientCase": "65-jähriger Patient mit Diabetes Typ 2, BZ-Werte schwanken, HbA1c 8,5%.",
+    "expectedAnswerPoints": [
+      "Blutzuckerwerte erfragen",
+      "Medikamenteneinnahme prüfen",
+      "Ernährungsgewohnheiten",
+      "Bewegung",
+      "Hypoglykämie-Warnzeichen"
+    ],
+    "usefulPhrases": [
+      "Wie sind Ihre Blutzuckerwerte?",
+      "Wie oft haben Sie Unterzuckerungen?",
+      "Was essen Sie typischerweise am Tag?"
+    ],
+    "rubric": {
+      "structure": "Diabetes follow-up",
+      "medicalAccuracy": "Diabetes management assessment",
+      "germanAccuracy": "Natural German counseling"
+    },
+    "requiredConcepts": [
+      "speaking.008"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.008"
+  },
+  {
+    "id": "fsp_s_009",
+    "task": "Befragen Sie eine ältere Patientin nach einem Sturzereignis.",
+    "role": "doctor",
+    "patientCase": "80-jährige Patientin, nach Sturz zu Hause, Schmerzen in der Hüfte, kann nicht mehr stehen.",
+    "expectedAnswerPoints": [
+      "Sturzhergang erfragen",
+      "Schmerzlokalisation",
+      "Beweglichkeit prüfen",
+      "Sturzursache (Schwindel, Umweltfaktor)",
+      "Medikamente und Vorerkrankungen"
+    ],
+    "usefulPhrases": [
+      "Erzählen Sie genau, wie es passiert ist.",
+      "Ist Ihnen schwindelig geworden?",
+      "Konnten Sie nach dem Sturz aufstehen?"
+    ],
+    "rubric": {
+      "structure": "Fall assessment",
+      "medicalAccuracy": "Geriatric trauma history",
+      "germanAccuracy": "Clear German for elderly"
+    },
+    "requiredConcepts": [
+      "speaking.009"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.009"
+  },
+  {
+    "id": "fsp_s_010",
+    "task": "Führen Sie eine Sexualanamnese bei Verdacht auf STI.",
+    "role": "doctor",
+    "patientCase": "22-jähriger Patient mit Ausfluss aus der Harnröhre und Brennen beim Wasserlassen.",
+    "expectedAnswerPoints": [
+      "Symptome genau beschreiben lassen",
+      "Sexuelle Aktivität erfragen",
+      "Verhütung/Kondome",
+      "Vorherige STI",
+      "Partnerinformation"
+    ],
+    "usefulPhrases": [
+      "Hatten Sie ungeschützten Geschlechtsverkehr?",
+      "Seit wann haben Sie die Beschwerden?",
+      "Sollten wir Ihren Partner informieren?"
+    ],
+    "rubric": {
+      "structure": "Sexual history",
+      "medicalAccuracy": "STI risk assessment",
+      "germanAccuracy": "Sensitive appropriate German"
+    },
+    "requiredConcepts": [
+      "speaking.010"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.010"
+  },
+  {
+    "id": "fsp_s_011",
+    "task": "Erklären Sie einem Patienten die Diagnose einer Pneumonie.",
+    "role": "doctor",
+    "patientCase": "55-jähriger Patient, Diagnose: bakterielle Pneumonie im rechten Unterlappen.",
+    "expectedAnswerPoints": [
+      "Krankheitsbild erklären",
+      "Ursache (Bakterien)",
+      "Behandlung mit Antibiotika",
+      "Verlauf und Prognose",
+      "Warnsignale bei Verschlechterung"
+    ],
+    "usefulPhrases": [
+      "Sie haben eine Lungenentzündung.",
+      "Das ist eine Infektion, die mit Antibiotika behandelt wird.",
+      "In 2-3 Tagen sollten Sie eine Besserung spüren."
+    ],
+    "rubric": {
+      "structure": "Diagnosis explanation",
+      "medicalAccuracy": "Correct pneumonia explanation",
+      "germanAccuracy": "Patient-friendly German"
+    },
+    "requiredConcepts": [
+      "speaking.011"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.011"
+  },
+  {
+    "id": "fsp_s_012",
+    "task": "Erklären Sie einem Patienten die Diagnose einer Nierenkolik.",
+    "role": "doctor",
+    "patientCase": "40-jähriger Patient mit akuten Flankenschmerzen, Diagnose: Ureterstein links.",
+    "expectedAnswerPoints": [
+      "Ursache (Nierenstein)",
+      "Symptome erklären",
+      "Akuttherapie (Schmerz, Flüssigkeit)",
+      "Weitere Diagnostik",
+      "Steinabgang und Prävention"
+    ],
+    "usefulPhrases": [
+      "Sie haben einen Nierenstein, der den Harnleiter blockiert.",
+      "Wir geben Ihnen starke Schmerzmittel.",
+      "Sie sollten viel trinken, damit der Stein abgeht."
+    ],
+    "rubric": {
+      "structure": "Diagnosis explanation",
+      "medicalAccuracy": "Nephrolithiasis explanation",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.012"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.speaking.012"
+  },
+  {
+    "id": "fsp_s_013",
+    "task": "Erklären Sie einem Patienten die Diagnose eines Bandscheibenvorfalls.",
+    "role": "doctor",
+    "patientCase": "48-jährige Patientin mit ausstrahlenden Schmerzen ins Bein, MRT zeigt Bandscheibenvorfall L4/L5.",
+    "expectedAnswerPoints": [
+      "Anatomie kurz erklären",
+      "Ursache der Schmerzen",
+      "Konservative Therapie",
+      "Wann OP nötig",
+      "Prognose"
+    ],
+    "usefulPhrases": [
+      "Die Bandscheibe drückt auf einen Nerven.",
+      "In den meisten Fällen hilft konservative Therapie.",
+      "Schonen Sie sich, aber bleiben Sie in Bewegung."
+    ],
+    "rubric": {
+      "structure": "Orthopedic diagnosis explanation",
+      "medicalAccuracy": "Disc herniation explanation",
+      "germanAccuracy": "Patient-friendly terms"
+    },
+    "requiredConcepts": [
+      "speaking.013"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.speaking.013"
+  },
+  {
+    "id": "fsp_s_014",
+    "task": "Erklären Sie einem Patienten die Diagnose einer Gastritis.",
+    "role": "doctor",
+    "patientCase": "30-jährige Patientin mit Oberbauchschmerzen, Diagnose: akute Gastritis bei Helicobacter pylori.",
+    "expectedAnswerPoints": [
+      "Was ist eine Gastritis",
+      "Rolle von Helicobacter",
+      "Medikamentöse Therapie",
+      "Ernährungsempfehlungen",
+      "Rauchen und Alkohol"
+    ],
+    "usefulPhrases": [
+      "Die Magenschleimhaut ist entzündet.",
+      "Ein Bakterium namens Helicobacter ist oft die Ursache.",
+      "Sie bekommen Medikamente, die die Säure reduzieren."
+    ],
+    "rubric": {
+      "structure": "GI diagnosis explanation",
+      "medicalAccuracy": "Correct gastritis explanation",
+      "germanAccuracy": "Natural German"
+    },
+    "requiredConcepts": [
+      "speaking.014"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.speaking.014"
+  },
+  {
+    "id": "fsp_s_015",
+    "task": "Erklären Sie einem Patienten die Diagnose eines Vorhofflimmerns.",
+    "role": "doctor",
+    "patientCase": "68-jähriger Patient mit Herzrhythmusstörungen, EKG zeigt Vorhofflimmern.",
+    "expectedAnswerPoints": [
+      "Was passiert im Herzen",
+      "Symptome",
+      "Schlaganfallrisiko",
+      "Antikoagulation",
+      "Rhythmuskontrolle vs Frequenzkontrolle"
+    ],
+    "usefulPhrases": [
+      "Das Herz schlägt unregelmäßig.",
+      "Wir müssen das Schlaganfallrisiko mit Blutverdünnern senken.",
+      "Es gibt zwei Behandlungsstrategien: den Rhythmus kontrollieren oder die Frequenz."
+    ],
+    "rubric": {
+      "structure": "Cardiology explanation",
+      "medicalAccuracy": "Correct AFib explanation",
+      "germanAccuracy": "Clear professional German"
+    },
+    "requiredConcepts": [
+      "speaking.015"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.speaking.015"
+  },
+  {
+    "id": "fsp_s_016",
+    "task": "Besprechen Sie mit einem Patienten den Behandlungsplan bei neu diagnostiziertem Bluthochdruck.",
+    "role": "doctor",
+    "patientCase": "50-jähriger Patient, RR 160/95, keine Medikamente bisher.",
+    "expectedAnswerPoints": [
+      "Lebensstiländerungen erklären",
+      "Medikamentöse Therapie",
+      "Blutdruckselbstmessung",
+      "Kontrollintervalle",
+      "Notfallwarnzeichen"
+    ],
+    "usefulPhrases": [
+      "Wir beginnen mit einer Lebensstilumstellung.",
+      "Salzreduktion und Bewegung sind wichtig.",
+      "Zusätzlich gebe ich Ihnen ein blutdrucksenkendes Medikament."
+    ],
+    "rubric": {
+      "structure": "Treatment plan",
+      "medicalAccuracy": "Correct HTN management",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.016"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.speaking.016"
+  },
+  {
+    "id": "fsp_s_017",
+    "task": "Besprechen Sie die Therapie bei einer Harnwegsinfektion.",
+    "role": "doctor",
+    "patientCase": "35-jährige Patientin, unkomplizierte Zystitis.",
+    "expectedAnswerPoints": [
+      "Antibiotikatherapie",
+      "Trinkmenge erhöhen",
+      "Schmerzmittel bei Bedarf",
+      "Wann Wiederholung bei ausbleibender Besserung",
+      "Prävention"
+    ],
+    "usefulPhrases": [
+      "Sie bekommen ein Antibiotikum für 3 Tage.",
+      "Trinken Sie viel, mindestens 2 Liter pro Tag.",
+      "Wenn es nach 2 Tagen nicht besser wird, kommen Sie wieder."
+    ],
+    "rubric": {
+      "structure": "Treatment plan",
+      "medicalAccuracy": "Correct UTI management",
+      "germanAccuracy": "Natural German"
+    },
+    "requiredConcepts": [
+      "speaking.017"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.speaking.017"
+  },
+  {
+    "id": "fsp_s_018",
+    "task": "Besprechen Sie die Asthmatherapie mit einem jungen Erwachsenen.",
+    "role": "doctor",
+    "patientCase": "22-jähriger Patient mit leichtem Asthma, benötigt Einweisung in Inhalationstechnik.",
+    "expectedAnswerPoints": [
+      "Bedarfsspray vs Dauermedikation",
+      "Inhalationstechnik erklären",
+      "Auslöser meiden",
+      "Asthmatagebuch",
+      "Notfallplan"
+    ],
+    "usefulPhrases": [
+      "Das blaue Spray ist für akute Anfälle.",
+      "Das braune Spray nehmen Sie täglich, auch wenn es Ihnen gut geht.",
+      "Nach dem Inhalieren den Mund ausspülen."
+    ],
+    "rubric": {
+      "structure": "Asthma management plan",
+      "medicalAccuracy": "Correct asthma therapy",
+      "germanAccuracy": "Supportive German"
+    },
+    "requiredConcepts": [
+      "speaking.018"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.speaking.018"
+  },
+  {
+    "id": "fsp_s_019",
+    "task": "Besprechen Sie die Wundversorgung bei einem diabetischen Fuß.",
+    "role": "doctor",
+    "patientCase": "68-jähriger Patient mit Diabetes Typ 2, Wunde an der Fußsohle.",
+    "expectedAnswerPoints": [
+      "Wundreinigung und Verband",
+      "Blutzuckereinstellung",
+      "Druckentlastung",
+      "Durchblutung prüfen",
+      "Wann zum Spezialisten"
+    ],
+    "usefulPhrases": [
+      "Die Wunde muss täglich gereinigt werden.",
+      "Vermeiden Sie Druck auf die Stelle.",
+      "Gute Blutzuckereinstellung hilft der Wundheilung."
+    ],
+    "rubric": {
+      "structure": "Wound care plan",
+      "medicalAccuracy": "Diabetic foot management",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.019"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.speaking.019"
+  },
+  {
+    "id": "fsp_s_020",
+    "task": "Besprechen Sie die Osteoporoseprophylaxe mit einer Patientin in den Wechseljahren.",
+    "role": "doctor",
+    "patientCase": "54-jährige Patientin, Familienanamnese positiv für Osteoporose.",
+    "expectedAnswerPoints": [
+      "Kalzium und Vitamin D",
+      "Gewichtsbelastende Bewegung",
+      "Sturzprophylaxe",
+      "Knochendichtemessung",
+      "Medikamente bei Bedarf"
+    ],
+    "usefulPhrases": [
+      "Achten Sie auf ausreichend Kalzium in der Nahrung.",
+      "Bewegung wie Walken oder Tanzen stärkt die Knochen.",
+      "Eine Knochendichtemessung gibt uns Aufschluss."
+    ],
+    "rubric": {
+      "structure": "Preventive counseling",
+      "medicalAccuracy": "Osteoporosis prevention",
+      "germanAccuracy": "Educational German"
+    },
+    "requiredConcepts": [
+      "speaking.020"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.speaking.020"
+  },
+  {
+    "id": "fsp_s_021",
+    "task": "Übergeben Sie einen Patienten mit Pneumonie an die Nachtschicht.",
+    "role": "doctor",
+    "patientCase": "72-jähriger Patient, Pneumonie, Zustand nach OP, aktuell stabil.",
+    "expectedAnswerPoints": [
+      "Patientenidentifikation",
+      "Diagnose und Verlauf",
+      "Aktuelle Medikation",
+      "Was zu beachten ist",
+      "Offene Fragen"
+    ],
+    "usefulPhrases": [
+      "Ich übergebe Herrn Meier, 72 Jahre.",
+      "Diagnose: bakterielle Pneumonie.",
+      "Antibiotikum wurde um 18 Uhr gegeben.",
+      "Bitte auf Atemnot achten."
+    ],
+    "rubric": {
+      "structure": "ISBAR handover",
+      "medicalAccuracy": "Complete transfer summary",
+      "germanAccuracy": "Professional German"
+    },
+    "requiredConcepts": [
+      "speaking.021"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.speaking.021"
+  },
+  {
+    "id": "fsp_s_022",
+    "task": "Übergeben Sie einen Patienten mit akutem Koronarsyndrom an die Intensivstation.",
+    "role": "doctor",
+    "patientCase": "60-jähriger Patient, NSTEMI, zur Überwachung auf ITS.",
+    "expectedAnswerPoints": [
+      "Kurze Vorstellung",
+      "EKG-Befund",
+      "Laborwerte (Troponin)",
+      "Akuttherapie",
+      "Überwachungsparameter"
+    ],
+    "usefulPhrases": [
+      "Herr Schmidt, 60 Jahre, NSTEMI.",
+      "Troponin 3500, EKG mit ST-Senkungen.",
+      "ASS, Ticagrelor, Heparin wurden gegeben.",
+      "Bitte RR und EKG überwachen."
+    ],
+    "rubric": {
+      "structure": "ISBAR handover",
+      "medicalAccuracy": "Correct cardiology transfer",
+      "germanAccuracy": "Precise German medical terms"
+    },
+    "requiredConcepts": [
+      "speaking.022"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.speaking.022"
+  },
+  {
+    "id": "fsp_s_023",
+    "task": "Übergeben Sie eine neurologische Patientin mit Schlaganfallverdacht.",
+    "role": "doctor",
+    "patientCase": "75-jährige Patientin, plötzliche Hemiparese links, seit 2 Stunden.",
+    "expectedAnswerPoints": [
+      "Symptombeginn",
+      "NIHSS oder Befund",
+      "Bildgebung",
+      "Kontraindikationen für Lyse",
+      "Nächste Schritte"
+    ],
+    "usefulPhrases": [
+      "Frau Wagner, 75 Jahre, Hemiparese links seit 2 Stunden.",
+      "CT ohne Blutung, aber frühe Ischämiezeichen.",
+      "Keine Kontraindikationen für Lyse."
+    ],
+    "rubric": {
+      "structure": "Neurological handover",
+      "medicalAccuracy": "Stroke code handover",
+      "germanAccuracy": "Fast precise German"
+    },
+    "requiredConcepts": [
+      "speaking.023"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.speaking.023"
+  },
+  {
+    "id": "fsp_s_024",
+    "task": "Übergeben Sie einen postoperativen Patienten an die Normalstation.",
+    "role": "doctor",
+    "patientCase": "45-jährige Patientin nach laparoskopischer Cholezystektomie.",
+    "expectedAnswerPoints": [
+      "OP und Verlauf",
+      "Schmerztherapie",
+      "Flüssigkeitsbilanz",
+      "Mobilisation",
+      "Kostaufbau"
+    ],
+    "usefulPhrases": [
+      "Frau Müller, Z.n. laparoskopischer Gallen-OP.",
+      "Schmerztherapie mit Novaminsulfon.",
+      "Kostaufbau heute mit Tee und Zwieback beginnen."
+    ],
+    "rubric": {
+      "structure": "Post-op handover",
+      "medicalAccuracy": "Surgical transfer",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.024"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.speaking.024"
+  },
+  {
+    "id": "fsp_s_025",
+    "task": "Übergeben Sie einen Patienten mit GI-Blutung an die gastroenterologische Station.",
+    "role": "doctor",
+    "patientCase": "65-jähriger Patient, Meläna, Hb 8,5, stabil unter Transfusion.",
+    "expectedAnswerPoints": [
+      "Aufnahmegrund",
+      "Hb-Verlauf",
+      "Transfusionen",
+      "Geplante Endoskopie",
+      "Überwachung"
+    ],
+    "usefulPhrases": [
+      "Herr Koch, 65 Jahre, Meläna bei V.a. Ulkus.",
+      "Hb bei Aufnahme 8,5, 2 EKs gegeben.",
+      "ÖGD für morgen früh geplant."
+    ],
+    "rubric": {
+      "structure": "GI handover",
+      "medicalAccuracy": "Bleeding management transfer",
+      "germanAccuracy": "Professional German"
+    },
+    "requiredConcepts": [
+      "speaking.025"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.speaking.025"
+  },
+  {
+    "id": "fsp_s_026",
+    "task": "Übergeben Sie eine septische Patientin an die Intensivstation.",
+    "role": "doctor",
+    "patientCase": "50-jährige Patientin, Urosepsis, Katecholaminpflichtig.",
+    "expectedAnswerPoints": [
+      "Infektionsquelle",
+      "Antibiotikatherapie",
+      "Kreislaufunterstützung",
+      "Labor (Infektparameter, Organfunktion)",
+      "Weitere Maßnahmen"
+    ],
+    "usefulPhrases": [
+      "Frau Braun, 50 Jahre, Urosepsis.",
+      "Antibiose mit Piperacillin/Tazobactam.",
+      "Noradrenalin 0,1 µg/kg/min."
+    ],
+    "rubric": {
+      "structure": "Sepsis handover",
+      "medicalAccuracy": "Correct sepsis management transfer",
+      "germanAccuracy": "Fast precise German"
+    },
+    "requiredConcepts": [
+      "speaking.026"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.speaking.026"
+  },
+  {
+    "id": "fsp_s_027",
+    "task": "Übergeben Sie einen Patienten mit COPD-Exazerbation an die Nachtschicht.",
+    "role": "doctor",
+    "patientCase": "70-jähriger Patient, AE-COP, unter NIV, Besserungstrend.",
+    "expectedAnswerPoints": [
+      "Ventilationseinstellung",
+      "BGA-Verlauf",
+      "Medikation (Steroide, Antibiotika)",
+      "Sputum",
+      "Nächtliche Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Herr Klein, AE-COP unter NIV.",
+      "BGA: pH 7,38, pCO2 50.",
+      "Prednisolon und Amoxicillin wurden gegeben."
+    ],
+    "rubric": {
+      "structure": "Respiratory handover",
+      "medicalAccuracy": "COPD management transfer",
+      "germanAccuracy": "Precise German"
+    },
+    "requiredConcepts": [
+      "speaking.027"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.speaking.027"
+  },
+  {
+    "id": "fsp_s_028",
+    "task": "Übergeben Sie eine psychiatrische Patientin mit Manie.",
+    "role": "doctor",
+    "patientCase": "34-jährige Patientin, akute Manie, unter Neuroleptika.",
+    "expectedAnswerPoints": [
+      "Diagnose und Aufnahmegrund",
+      "Medikation",
+      "Fremd- und Eigengefährdung",
+      "Stationsregeln",
+      "Weitere Diagnostik"
+    ],
+    "usefulPhrases": [
+      "Frau Schulz, akute manische Episode.",
+      "Gestartet mit Olanzapin 10 mg.",
+      "Keine akute Fremdgefährdung."
+    ],
+    "rubric": {
+      "structure": "Psychiatric handover",
+      "medicalAccuracy": "Correct psychiatric transfer",
+      "germanAccuracy": "Sensitive German"
+    },
+    "requiredConcepts": [
+      "speaking.028"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.speaking.028"
+  },
+  {
+    "id": "fsp_s_029",
+    "task": "Übergeben Sie eine onkologische Patientin mit Fieber unter Chemotherapie.",
+    "role": "doctor",
+    "patientCase": "45-jährige Patientin, Metastasierung, Fieber unter Chemo, Neutropenie.",
+    "expectedAnswerPoints": [
+      "Temperatur",
+      "Neutrophile",
+      "Antibiose",
+      "Portstatus",
+      "Hämodynamik"
+    ],
+    "usefulPhrases": [
+      "Frau Fuchs, Fieber bei Neutropenie.",
+      "Neutrophile 200/µl.",
+      "Piperacillin/Tazobactam gestartet."
+    ],
+    "rubric": {
+      "structure": "Oncology handover",
+      "medicalAccuracy": "Febrile neutropenia transfer",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.029"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.speaking.029"
+  },
+  {
+    "id": "fsp_s_030",
+    "task": "Übergeben Sie einen pädiatrischen Patienten mit Fieberkrampf.",
+    "role": "doctor",
+    "patientCase": "18 Monate altes Kind, erster Fieberkrampf, jetzt wach und orientiert.",
+    "expectedAnswerPoints": [
+      "Anfallsbeschreibung",
+      "Dauer und Art",
+      "Fieberursache",
+      "Neurologischer Status",
+      "Elternberatung"
+    ],
+    "usefulPhrases": [
+      "Emil, 18 Monate, generalisierter Fieberkrampf.",
+      "Dauer 3 Minuten, spontan sistiert.",
+      "Jetzt wach und neurologisch unauffällig."
+    ],
+    "rubric": {
+      "structure": "Pediatric handover",
+      "medicalAccuracy": "Febrile seizure transfer",
+      "germanAccuracy": "Pediatric German"
+    },
+    "requiredConcepts": [
+      "speaking.030"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.speaking.030"
+  },
+  {
+    "id": "fsp_s_031",
+    "task": "Holen Sie die Einwilligung für eine Magenspiegelung ein.",
+    "role": "doctor",
+    "patientCase": "55-jähriger Patient, ÖGD bei Verdacht auf Ulkus.",
+    "expectedAnswerPoints": [
+      "Ziel erklären",
+      "Ablauf beschreiben",
+      "Risiken nennen",
+      "Alternative Verfahren",
+      "Einwilligung dokumentieren"
+    ],
+    "usefulPhrases": [
+      "Die Magenspiegelung dient zur Untersuchung der Speiseröhre und des Magens.",
+      "Sie bekommen eine Beruhigungsspritze und ein Spray im Rachen.",
+      "Seltene Risiken sind Blutungen oder Verletzungen."
+    ],
+    "rubric": {
+      "structure": "Consent process",
+      "medicalAccuracy": "Correct risk disclosure",
+      "germanAccuracy": "Patient-appropriate German"
+    },
+    "requiredConcepts": [
+      "speaking.031"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.speaking.031"
+  },
+  {
+    "id": "fsp_s_032",
+    "task": "Holen Sie die Einwilligung für eine Knie-OP (Arthroskopie).",
+    "role": "doctor",
+    "patientCase": "38-jähriger Patient, Meniskusriss, geplante Arthroskopie.",
+    "expectedAnswerPoints": [
+      "Ziel der OP",
+      "Operationsablauf",
+      "Risiken",
+      "Rehabilitation",
+      "Alternativen"
+    ],
+    "usefulPhrases": [
+      "Wir schauen mit einer Kamera ins Knie.",
+      "Der Meniskus wird entweder genäht oder teilweise entfernt.",
+      "Nach der OP ist Physiotherapie wichtig."
+    ],
+    "rubric": {
+      "structure": "Surgical consent",
+      "medicalAccuracy": "Correct orthopedic consent",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.032"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.speaking.032"
+  },
+  {
+    "id": "fsp_s_033",
+    "task": "Holen Sie die Einwilligung für eine CT-Untersuchung mit Kontrastmittel.",
+    "role": "doctor",
+    "patientCase": "62-jährige Patientin, V.a. Lungenembolie, CT-Angio geplant.",
+    "expectedAnswerPoints": [
+      "Zweck der Untersuchung",
+      "Kontrastmittel",
+      "Risiken (Allergie, Nierenfunktion)",
+      "Strahlenbelastung",
+      "Alternativen"
+    ],
+    "usefulPhrases": [
+      "Das CT zeigt die Lungengefäße und ob ein Blutgerinnsel vorliegt.",
+      "Das Kontrastmittel kann selten allergische Reaktionen auslösen.",
+      "Ihre Nierenwerte sind in Ordnung."
+    ],
+    "rubric": {
+      "structure": "Imaging consent",
+      "medicalAccuracy": "Correct contrast risk explanation",
+      "germanAccuracy": "Comprehensible German"
+    },
+    "requiredConcepts": [
+      "speaking.033"
+    ],
+    "taughtInLessonId": "fsp_l_007",
+    "conceptId": "fsp.speaking.033"
+  },
+  {
+    "id": "fsp_s_034",
+    "task": "Sie bemerken eine Verschlechterung bei einem Patienten. Rufen Sie den Hintergrunddienst.",
+    "role": "doctor",
+    "patientCase": "68-jähriger Patient, zunehmende Atemnot, SpO2 85% unter 4L O2, RR 90/60.",
+    "expectedAnswerPoints": [
+      "Patient benennen",
+      "Vitalparameter nennen",
+      "Verdachtsdiagnose",
+      "Bisherige Maßnahmen",
+      "Erbetene Unterstützung"
+    ],
+    "usefulPhrases": [
+      "Ich brauche Unterstützung auf Zimmer 210.",
+      "Patient hat SpO2 von 85%, RR 90/60.",
+      "Bitte kommen Sie zur Evaluation."
+    ],
+    "rubric": {
+      "structure": "Emergency call",
+      "medicalAccuracy": "Correct escalation criteria",
+      "germanAccuracy": "Calm professional German"
+    },
+    "requiredConcepts": [
+      "speaking.034"
+    ],
+    "taughtInLessonId": "fsp_l_007",
+    "conceptId": "fsp.speaking.034"
+  },
+  {
+    "id": "fsp_s_035",
+    "task": "Sie erkennen einen anaphylaktischen Schock. Fordern Sie Hilfe an.",
+    "role": "doctor",
+    "patientCase": "30-jährige Patientin, nach Antibiotikagabe, plötzlich Dyspnoe, Urtikaria, RR 70/40.",
+    "expectedAnswerPoints": [
+      "Notruf auslösen",
+      "Reanimationsteam anfordern",
+      "Lage beschreiben",
+      "Bereits gegebene Medikamente",
+      "Weitere Maßnahmen"
+    ],
+    "usefulPhrases": [
+      "Reanimationsteam auf Station 3B!",
+      "Anaphylaxie nach Antibiotikum!",
+      "Adrenalin und Volumenbereitstellung erforderlich."
+    ],
+    "rubric": {
+      "structure": "Emergency escalation",
+      "medicalAccuracy": "Anaphylaxis management",
+      "germanAccuracy": "Fast clear German"
+    },
+    "requiredConcepts": [
+      "speaking.035"
+    ],
+    "taughtInLessonId": "fsp_l_007",
+    "conceptId": "fsp.speaking.035"
+  },
+  {
+    "id": "fsp_s_036",
+    "task": "Sie bemerken eine postoperative Blutung. Eskalieren Sie an den Chirurgen.",
+    "role": "doctor",
+    "patientCase": "55-jähriger Patient nach Thyreoidektomie, zunehmende Halsumfang, Stridor.",
+    "expectedAnswerPoints": [
+      "Situation schildern",
+      "Vitalparameter",
+      "Verdacht auf Nachblutung",
+      "Sofortmaßnahmen",
+      "Bitte um chirurgische Vorstellung"
+    ],
+    "usefulPhrases": [
+      "Herr Kunde hat eine zunehmende Schwellung am Hals.",
+      "Verdacht auf Nachblutung nach Schilddrüsen-OP.",
+      "Kommen Sie bitte sofort zur Wundrevision."
+    ],
+    "rubric": {
+      "structure": "Surgical emergency escalation",
+      "medicalAccuracy": "Correct post-op complication assessment",
+      "germanAccuracy": "Precise German"
+    },
+    "requiredConcepts": [
+      "speaking.036"
+    ],
+    "taughtInLessonId": "fsp_l_007",
+    "conceptId": "fsp.speaking.036"
+  },
+  {
+    "id": "fsp_s_037",
+    "task": "Präsentieren Sie einen neuen Patienten bei der Frühbesprechung.",
+    "role": "medical student",
+    "patientCase": "68-jähriger Patient, Aufnahme wegen akuter Dyspnoe bei COPD-Exazerbation.",
+    "expectedAnswerPoints": [
+      "Patientenvorstellung",
+      "Aufnahmegrund",
+      "Befunde",
+      "Diagnose",
+      "Therapieplan"
+    ],
+    "usefulPhrases": [
+      "Herr K. ist 68 Jahre alt und wurde heute aufgenommen wegen...",
+      "In der Anamnese berichtet er über...",
+      "Klinisch zeigte sich...",
+      "Unser Plan ist..."
+    ],
+    "rubric": {
+      "structure": "Case presentation structure",
+      "medicalAccuracy": "Complete case summary",
+      "germanAccuracy": "Professional medical German"
+    },
+    "requiredConcepts": [
+      "speaking.037"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.speaking.037"
+  },
+  {
+    "id": "fsp_s_038",
+    "task": "Präsentieren Sie eine Patientin mit Nierenkolik im Ultraschall.",
+    "role": "medical student",
+    "patientCase": "44-jährige Patientin, Flankenschmerz links, Sonographie zeigt Harnstau und Stein.",
+    "expectedAnswerPoints": [
+      "Patientendaten",
+      "Klinische Präsentation",
+      "Sonographiebefund",
+      "Labor",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Frau T. stellt sich mit linksseitigen Flankenschmerzen vor.",
+      "Im Ultraschall zeigt sich ein Harnstau links mit einem 8 mm Stein.",
+      "Der Plan ist zunächst konservativ."
+    ],
+    "rubric": {
+      "structure": "Case presentation",
+      "medicalAccuracy": "Correct urology presentation",
+      "germanAccuracy": "Structured German"
+    },
+    "requiredConcepts": [
+      "speaking.038"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.speaking.038"
+  },
+  {
+    "id": "fsp_s_039",
+    "task": "Präsentieren Sie einen komplizierten Fall bei der Oberarztvisite.",
+    "role": "medical student",
+    "patientCase": "82-jährige Patientin, Sturz, V.a. Schenkelhalsfraktur, multimorbide.",
+    "expectedAnswerPoints": [
+      "Zusammenfassung",
+      "Vorerkrankungen",
+      "Medikation",
+      "Befunde",
+      "Risikostratifizierung"
+    ],
+    "usefulPhrases": [
+      "Frau L., 82 Jahre, multimorbide Patientin mit...",
+      "Vorerkrankungen: Hypertonie, Diabetes, Niereninsuffizienz.",
+      "Das Röntgen zeigt eine mediale Schenkelhalsfraktur."
+    ],
+    "rubric": {
+      "structure": "Complex case presentation",
+      "medicalAccuracy": "Geriatric trauma assessment",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.039"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.speaking.039"
+  },
+  {
+    "id": "fsp_s_040",
+    "task": "Präsentieren Sie einen Fall von akuter Pankreatitis.",
+    "role": "medical student",
+    "patientCase": "50-jähriger Patient, Oberbauchschmerzen, Lipase 1200, Alkoholanamnese.",
+    "expectedAnswerPoints": [
+      "Anamnese",
+      "Klinischer Befund",
+      "Labor und Bildgebung",
+      "Schweregrad (Ranson/CT)",
+      "Therapie"
+    ],
+    "usefulPhrases": [
+      "Herr P. mit akuten Oberbauchschmerzen und bekannter Alkoholanamnese.",
+      "Lipase 1200, CRP 180.",
+      "Im CT: ödematöse Pankreatitis ohne Nekrosen."
+    ],
+    "rubric": {
+      "structure": "Case presentation",
+      "medicalAccuracy": "Correct pancreatitis presentation",
+      "germanAccuracy": "Structured medical German"
+    },
+    "requiredConcepts": [
+      "speaking.040"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.speaking.040"
+  },
+  {
+    "id": "fsp_s_041",
+    "task": "Führen Sie eine vollständige Aufnahmeuntersuchung bei einem Patienten mit Brustschmerz durch.",
+    "role": "doctor",
+    "patientCase": "62-jähriger Patient, retrosternaler Druck seit 1 Stunde, ausstrahlend in den linken Arm.",
+    "expectedAnswerPoints": [
+      "Begrüßung und Vorstellung",
+      "Anamnese erheben",
+      "Körperliche Untersuchung",
+      "Differentialdiagnosen nennen",
+      "Weitere Diagnostik einleiten"
+    ],
+    "usefulPhrases": [
+      "Guten Morgen, ich bin Dr. ...",
+      "Erzählen Sie mir genau, was passiert ist.",
+      "Ich werde Sie jetzt untersuchen.",
+      "Wir werden ein EKG schreiben und Blut abnehmen."
+    ],
+    "rubric": {
+      "structure": "Full admission",
+      "medicalAccuracy": "Correct chest pain workup",
+      "germanAccuracy": "Professional German"
+    },
+    "requiredConcepts": [
+      "speaking.041"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.speaking.041"
+  },
+  {
+    "id": "fsp_s_042",
+    "task": "Führen Sie ein komplettes Aufklärungsgespräch vor einer geplanten Hüft-OP.",
+    "role": "doctor",
+    "patientCase": "75-jährige Patientin, Koxarthrose, geplante Hüft-TEP.",
+    "expectedAnswerPoints": [
+      "Diagnose erklären",
+      "Operationsrisiken",
+      "Vorbereitung",
+      "Reha",
+      "Einwilligung"
+    ],
+    "usefulPhrases": [
+      "Ihr Hüftgelenk ist durch Arthrose abgenutzt.",
+      "Wir ersetzen es durch ein künstliches Gelenk.",
+      "Nach der OP ist etwa 6 Wochen Reha nötig."
+    ],
+    "rubric": {
+      "structure": "Full consent dialogue",
+      "medicalAccuracy": "Correct total hip explanation",
+      "germanAccuracy": "Patient-appropriate German"
+    },
+    "requiredConcepts": [
+      "speaking.042"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.speaking.042"
+  },
+  {
+    "id": "fsp_s_043",
+    "task": "Simulieren Sie eine vollständige Visite auf der Inneren Station.",
+    "role": "doctor",
+    "patientCase": "Pneumonie-Patient, stabil, Entlassung morgen geplant.",
+    "expectedAnswerPoints": [
+      "Begrüßung",
+      "Befinden erfragen",
+      "Befunde mitteilen",
+      "Entlassungsplan besprechen",
+      "Fragen beantworten"
+    ],
+    "usefulPhrases": [
+      "Guten Morgen, wie geht es Ihnen?",
+      "Die Lungenentzündung hat sich gut zurückgebildet.",
+      "Morgen können wir Sie entlassen."
+    ],
+    "rubric": {
+      "structure": "Ward round",
+      "medicalAccuracy": "Correct discharge planning",
+      "germanAccuracy": "Warm professional German"
+    },
+    "requiredConcepts": [
+      "speaking.043"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.speaking.043"
+  },
+  {
+    "id": "fsp_s_044",
+    "task": "Simulieren Sie eine Notfallsituation: Patient kollabiert auf Station.",
+    "role": "doctor",
+    "patientCase": "80-jähriger Patient, plötzlich bewusstlos, Team muss organisiert werden.",
+    "expectedAnswerPoints": [
+      "Sicherheit prüfen",
+      "Hilfe rufen",
+      "Reanimationsmaßnahmen beginnen",
+      "Defibrillator holen lassen",
+      "Teamleitung übernehmen"
+    ],
+    "usefulPhrases": [
+      "Herr Wagner ist bewusstlos!",
+      "Reanimationsteam alarmieren!",
+      "Beginnen Sie mit der Herzdruckmassage.",
+      "Defibrillator holen und EKG-Klebeelektroden!"
+    ],
+    "rubric": {
+      "structure": "Emergency simulation",
+      "medicalAccuracy": "Correct ALS algorithm",
+      "germanAccuracy": "Clear commands in German"
+    },
+    "requiredConcepts": [
+      "speaking.044"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.speaking.044"
+  },
+  {
+    "id": "fsp_s_045",
+    "task": "Simulieren Sie ein Entlassungsgespräch mit einem Diabetiker.",
+    "role": "doctor",
+    "patientCase": "58-jähriger Patient, erstmals insulinpflichtig nach stationärer Einstellung.",
+    "expectedAnswerPoints": [
+      "Insulintherapie erklären",
+      "Blutzuckermessung",
+      "Hypoglykämieerkennung",
+      "Ernährungsberatung",
+      "Nachsorge"
+    ],
+    "usefulPhrases": [
+      "Sie spritzen jetzt zweimal täglich Insulin.",
+      "Messen Sie Ihren Blutzucker morgens und abends.",
+      "Bei Unterzuckerung essen Sie Traubenzucker oder trinken Saft."
+    ],
+    "rubric": {
+      "structure": "Discharge counseling",
+      "medicalAccuracy": "Correct insulin initiation counseling",
+      "germanAccuracy": "Patient teaching German"
+    },
+    "requiredConcepts": [
+      "speaking.045"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.speaking.045"
+  },
+  {
+    "id": "fsp_s_046",
+    "task": "Simulieren Sie ein Überbringen einer schlechten Nachricht (Krebsdiagnose).",
+    "role": "doctor",
+    "patientCase": "55-jährige Patientin, neu diagnostiziertes Mammakarzinom.",
+    "expectedAnswerPoints": [
+      "Vorbereitung des Raums",
+      "Vorbefunde nennen",
+      "Diagnose mitteilen",
+      "Raum für Emotionen geben",
+      "Weiteres Vorgehen"
+    ],
+    "usefulPhrases": [
+      "Ich habe die Ergebnisse der Biopsie erhalten.",
+      "Es handelt sich um Brustkrebs.",
+      "Die gute Nachricht ist, dass er früh erkannt wurde.",
+      "Wir besprechen jetzt gemeinsam die nächsten Schritte."
+    ],
+    "rubric": {
+      "structure": "Breaking bad news (SPIKES)",
+      "medicalAccuracy": "Correct oncology communication",
+      "germanAccuracy": "Empathic German"
+    },
+    "requiredConcepts": [
+      "speaking.046"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.speaking.046"
+  },
+  {
+    "id": "fsp_s_047",
+    "task": "Simulieren Sie eine Patientenübergabe an den Pflegedienst.",
+    "role": "doctor",
+    "patientCase": "82-jährige Patientin, Entlassung nach Hüft-OP, benötigt tägliche Wundversorgung.",
+    "expectedAnswerPoints": [
+      "Patientendaten",
+      "Wundversorgung",
+      "Medikation",
+      "Mobilisation",
+      "Notfallkontakt"
+    ],
+    "usefulPhrases": [
+      "Frau Keller wurde gestern an der Hüfte operiert.",
+      "Die Wunde muss täglich versorgt werden.",
+      "Sie bekommen Schmerzmittel nach Bedarf."
+    ],
+    "rubric": {
+      "structure": "Care handover",
+      "medicalAccuracy": "Correct discharge instructions",
+      "germanAccuracy": "Interdisciplinary German"
+    },
+    "requiredConcepts": [
+      "speaking.047"
+    ],
+    "taughtInLessonId": "fsp_l_010",
+    "conceptId": "fsp.speaking.047"
+  },
+  {
+    "id": "fsp_s_048",
+    "task": "Simulieren Sie ein Gespräch mit Angehörigen auf der Intensivstation.",
+    "role": "doctor",
+    "patientCase": "Sohn einer 85-jährigen Patientin, beatmet nach Sepsis, Prognose unsicher.",
+    "expectedAnswerPoints": [
+      "Situation erklären",
+      "Beatmung beschreiben",
+      "Prognose realistisch darstellen",
+      "Therapieziele besprechen",
+      "Unterstützung anbieten"
+    ],
+    "usefulPhrases": [
+      "Ihre Mutter wird künstlich beatmet.",
+      "Wir tun alles, was medizinisch möglich ist.",
+      "Die nächsten Tage werden zeigen, wie es weitergeht."
+    ],
+    "rubric": {
+      "structure": "Family conversation",
+      "medicalAccuracy": "ICU communication",
+      "germanAccuracy": "Empathic German"
+    },
+    "requiredConcepts": [
+      "speaking.048"
+    ],
+    "taughtInLessonId": "fsp_l_010",
+    "conceptId": "fsp.speaking.048"
+  },
+  {
+    "id": "fsp_s_049",
+    "task": "Simulieren Sie eine Medikamentenanamnese bei einem polymedizierten Patienten.",
+    "role": "doctor",
+    "patientCase": "78-jähriger Patient, 8 verschiedene Medikamente, unklare Compliance.",
+    "expectedAnswerPoints": [
+      "Medikamentenplan erfragen",
+      "Einnahmezeiten prüfen",
+      "Nebenwirkungen erfragen",
+      "Interaktionen prüfen",
+      "Plan optimieren"
+    ],
+    "usefulPhrases": [
+      "Bitte zeigen Sie mir Ihren Medikamentenplan.",
+      "Nehmen Sie alle Medikamente regelmäßig?",
+      "Haben Sie Nebenwirkungen bemerkt?"
+    ],
+    "rubric": {
+      "structure": "Medication review",
+      "medicalAccuracy": "Correct polypharmacy assessment",
+      "germanAccuracy": "Clear German"
+    },
+    "requiredConcepts": [
+      "speaking.049"
+    ],
+    "taughtInLessonId": "fsp_l_010",
+    "conceptId": "fsp.speaking.049"
+  },
+  {
+    "id": "fsp_s_050",
+    "task": "Simulieren Sie eine vollständige Aufnahme mit Abschlussgespräch.",
+    "role": "doctor",
+    "patientCase": "48-jähriger Mann, Adipositas, Schlafapnoe, zur stationären Abklärung.",
+    "expectedAnswerPoints": [
+      "Komplette Anamnese",
+      "Untersuchung",
+      "Diagnostikplan",
+      "Patientenfragen",
+      "Zusammenfassung"
+    ],
+    "usefulPhrases": [
+      "Ich habe jetzt einen guten Überblick über Ihre Situation.",
+      "Wir planen folgende Untersuchungen...",
+      "Haben Sie noch Fragen?"
+    ],
+    "rubric": {
+      "structure": "Full admission simulation",
+      "medicalAccuracy": "Complete comprehensive assessment",
+      "germanAccuracy": "Fluent German communication"
+    },
+    "requiredConcepts": [
+      "speaking.050"
+    ],
+    "taughtInLessonId": "fsp_l_010",
+    "conceptId": "fsp.speaking.050"
+  }
+]

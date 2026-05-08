@@ -27,7 +27,15 @@
       "AE-COP = akute Exazerbation der COPD",
       "Saürstoff-Langzeittherapie"
     ],
-    "modelAnswer": "68-jähriger Patient mit bekannter COPD GOLD III. Aufnahme wegen akuter Dyspnö bei bakterieller Exazerbation mit respiratorischer Partialinsuffizienz. Klinisch: AF 28/min, SaO2 88%, Fieber. BGA: pH 7.32, pCO2 55 mmHg. CRP 120 mg/L. Thorax-Röntgen: beidseitige Infiltrate. Therapie: Saürstoff 2L/min, Prednisolon 40 mg i.v., Amoxicillin/Clavulansäure 875/125 mg, Bronchodilatation per Vernebler. Unter Therapie klinische Besserung. Bei Entlassung: Fortführung der inhalativen Therapie, Antibiotika für 7 Tage, pneumologische Wiedervorstellung in 2 Wochen, Saürstoff-Langzeittherapie prüfen."
+    "modelAnswer": "68-jähriger Patient mit bekannter COPD GOLD III. Aufnahme wegen akuter Dyspnö bei bakterieller Exazerbation mit respiratorischer Partialinsuffizienz. Klinisch: AF 28/min, SaO2 88%, Fieber. BGA: pH 7.32, pCO2 55 mmHg. CRP 120 mg/L. Thorax-Röntgen: beidseitige Infiltrate. Therapie: Saürstoff 2L/min, Prednisolon 40 mg i.v., Amoxicillin/Clavulansäure 875/125 mg, Bronchodilatation per Vernebler. Unter Therapie klinische Besserung. Bei Entlassung: Fortführung der inhalativen Therapie, Antibiotika für 7 Tage, pneumologische Wiedervorstellung in 2 Wochen, Saürstoff-Langzeittherapie prüfen.",
+    "conceptId": "fsp.writing.001",
+    "taughtInLessonId": "fsp_l_001",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_002",
@@ -58,7 +66,15 @@
       "PTCA = perkutane transluminale Koronarangioplastie",
       "DES = Drug Eluting Stent"
     ],
-    "modelAnswer": "55-jähriger Patient mit akutem STEMI der Vorderwand bei RIVA-Verschluss. Kardiovaskuläre Risikofaktoren: Nikotin, Hypertonie, Hyperlipidamie. Akuttherapie: primäre PTCA mit DES-Implantation. Medikation: ASS, Ticagrelor, Ramipril, Bisoprolol, Atorvastatin. Kardiale Rehabilitation empfohlen."
+    "modelAnswer": "55-jähriger Patient mit akutem STEMI der Vorderwand bei RIVA-Verschluss. Kardiovaskuläre Risikofaktoren: Nikotin, Hypertonie, Hyperlipidamie. Akuttherapie: primäre PTCA mit DES-Implantation. Medikation: ASS, Ticagrelor, Ramipril, Bisoprolol, Atorvastatin. Kardiale Rehabilitation empfohlen.",
+    "conceptId": "fsp.writing.002",
+    "taughtInLessonId": "fsp_l_001",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_003",
@@ -88,7 +104,15 @@
       "Antibiose",
       "Unterlappenpneumonie"
     ],
-    "modelAnswer": "76-jährige Patientin mit ambulanter Pneumonie rechts basal. CRB-65 Score 1. Aufnahmebefund: Fieber, Tachypnö, Rechtsbasale RG. CRP 185 mg/L. Therapie: Ceuroxim i.v., Prednisolon, Saürstoff. Klinische Besserung unter Therapie. Entlassung: orale Antibiose, Impfung empfohlen."
+    "modelAnswer": "76-jährige Patientin mit ambulanter Pneumonie rechts basal. CRB-65 Score 1. Aufnahmebefund: Fieber, Tachypnö, Rechtsbasale RG. CRP 185 mg/L. Therapie: Ceuroxim i.v., Prednisolon, Saürstoff. Klinische Besserung unter Therapie. Entlassung: orale Antibiose, Impfung empfohlen.",
+    "conceptId": "fsp.writing.003",
+    "taughtInLessonId": "fsp_l_001",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_004",
@@ -118,7 +142,15 @@
       "Hyperkaliamie",
       "Dialyse-Shunt"
     ],
-    "modelAnswer": "72-jährige Patientin mit CKD Stadium 4 bei diabetischer Nephropathie. Kreatinin 3.8 mg/dL, eGFR 15. Hyperkaliamie, renale Anamie. Therapie: Erythropötin, Diuretika, kaliumarme Diat. Dialysevorbereitung (Shunt-Anlage) eingeleitet."
+    "modelAnswer": "72-jährige Patientin mit CKD Stadium 4 bei diabetischer Nephropathie. Kreatinin 3.8 mg/dL, eGFR 15. Hyperkaliamie, renale Anamie. Therapie: Erythropötin, Diuretika, kaliumarme Diat. Dialysevorbereitung (Shunt-Anlage) eingeleitet.",
+    "conceptId": "fsp.writing.004",
+    "taughtInLessonId": "fsp_l_002",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_005",
@@ -147,7 +179,15 @@
       "Nulla per os",
       "Cholezystektomie"
     ],
-    "modelAnswer": "45-jährige Patientin mit akuter biliärer Pankreatitis (Lipase 2400 U/L) bei bekannter Cholelithiasis. Konservative Therapie: NPO, i.v.-Flüssigkeit, Analgesie. Kostaufbau nach 48h. Elektive Cholezystektomie nach Abklingen geplant."
+    "modelAnswer": "45-jährige Patientin mit akuter biliärer Pankreatitis (Lipase 2400 U/L) bei bekannter Cholelithiasis. Konservative Therapie: NPO, i.v.-Flüssigkeit, Analgesie. Kostaufbau nach 48h. Elektive Cholezystektomie nach Abklingen geplant.",
+    "conceptId": "fsp.writing.005",
+    "taughtInLessonId": "fsp_l_002",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_006",
@@ -177,7 +217,15 @@
       "HWI = Harnwegsinfekt",
       "Antibiose i.v."
     ],
-    "modelAnswer": "34-jährige Patientin mit akuter Pyelonephritis rechts. Klinik: Fieber, Schuttelfrost, Flankenschmerz. CRP 240 mg/L, Urin: Leukozyten und Nitrit positiv. Therapie: Ciprofloxacin i.v., Umstellung auf oral für 10 Tage. Sonographiekontrolle in 4 Wochen."
+    "modelAnswer": "34-jährige Patientin mit akuter Pyelonephritis rechts. Klinik: Fieber, Schuttelfrost, Flankenschmerz. CRP 240 mg/L, Urin: Leukozyten und Nitrit positiv. Therapie: Ciprofloxacin i.v., Umstellung auf oral für 10 Tage. Sonographiekontrolle in 4 Wochen.",
+    "conceptId": "fsp.writing.006",
+    "taughtInLessonId": "fsp_l_003",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_007",
@@ -205,7 +253,15 @@
       "Allergiepass",
       "Feniramin"
     ],
-    "modelAnswer": "28-jährige Patientin mit akuter Urtikaria und Angioödem 30 min nach Ibuprofen-Einnahme. Akuttherapie: Feniramin, Prednisolon i.v., vollständige Rückbildung. Allergiepass ausgestellt. Allergologische Testung empfohlen."
+    "modelAnswer": "28-jährige Patientin mit akuter Urtikaria und Angioödem 30 min nach Ibuprofen-Einnahme. Akuttherapie: Feniramin, Prednisolon i.v., vollständige Rückbildung. Allergiepass ausgestellt. Allergologische Testung empfohlen.",
+    "conceptId": "fsp.writing.007",
+    "taughtInLessonId": "fsp_l_003",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_008",
@@ -235,7 +291,15 @@
       "Krepitation",
       "Anlaufschmerz"
     ],
-    "modelAnswer": "74-jährige Patientin mit Gonarthrose rechts Grad IV. Konservative Massnahmen ausgeschöpft. Indikation zur Knie-TEP gestellt. Adipositas als Risikofaktor. Gewichtsreduktion präoperativ empfohlen. Aufnahme in 4 Wochen."
+    "modelAnswer": "74-jährige Patientin mit Gonarthrose rechts Grad IV. Konservative Massnahmen ausgeschöpft. Indikation zur Knie-TEP gestellt. Adipositas als Risikofaktor. Gewichtsreduktion präoperativ empfohlen. Aufnahme in 4 Wochen.",
+    "conceptId": "fsp.writing.008",
+    "taughtInLessonId": "fsp_l_003",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_009",
@@ -265,7 +329,15 @@
       "Kompressionsstrumpf",
       "Antikoagulation"
     ],
-    "modelAnswer": "62-jährige Patientin mit akuter proximaler TVT links bei Flugreise. Kompressionssonographie bestätigte Thrombose der V. poplitea et femoralis. Therapie: Enoxaparin, Marcumar, Kompression. INR-Ziel 2.0-3.0 für 6 Monate."
+    "modelAnswer": "62-jährige Patientin mit akuter proximaler TVT links bei Flugreise. Kompressionssonographie bestätigte Thrombose der V. poplitea et femoralis. Therapie: Enoxaparin, Marcumar, Kompression. INR-Ziel 2.0-3.0 für 6 Monate.",
+    "conceptId": "fsp.writing.009",
+    "taughtInLessonId": "fsp_l_004",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_010",
@@ -294,7 +366,15 @@
       "Nervendehnungszeichen",
       "Cauda-equina-Syndrom"
     ],
-    "modelAnswer": "48-jähriger Patient mit Bandscheibenvorfall L4/L5 links. Fusheberparese (Kraftgrad 3/5), Kribbeln im L5-Dermatom. Konservative Therapie eingeleitet, bei fehlender Rückbildung innerhalb 48h operative Entlastung. Neurochirurgie involviert."
+    "modelAnswer": "48-jähriger Patient mit Bandscheibenvorfall L4/L5 links. Fusheberparese (Kraftgrad 3/5), Kribbeln im L5-Dermatom. Konservative Therapie eingeleitet, bei fehlender Rückbildung innerhalb 48h operative Entlastung. Neurochirurgie involviert.",
+    "conceptId": "fsp.writing.010",
+    "taughtInLessonId": "fsp_l_004",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_011",
@@ -322,7 +402,15 @@
       "PPI = Protonenpumpeninhibitor",
       "Erosionsgastritis"
     ],
-    "modelAnswer": "52-jährige Patientin mit NSAR-induzierter Erosionsgastritis. Nach Pausieren des Ibuprofens und Pantoprazol-Therapie Beschwerdefreiheit. Magenschutz für 4 Wochen."
+    "modelAnswer": "52-jährige Patientin mit NSAR-induzierter Erosionsgastritis. Nach Pausieren des Ibuprofens und Pantoprazol-Therapie Beschwerdefreiheit. Magenschutz für 4 Wochen.",
+    "conceptId": "fsp.writing.011",
+    "taughtInLessonId": "fsp_l_005",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_012",
@@ -350,7 +438,15 @@
       "Insulinperfusor",
       "HbA1c = Langzeitblutzucker"
     ],
-    "modelAnswer": "60-jähriger Patient mit HHS bei Neumanifestation DM Typ 2. BZ 680 mg/dL, Hyponatriämie 152, keine Ketoazidose. Intensivstation: Flüssigkeit, Insulinperfusor. Einstellung auf Insulin glargin/aspart. Diabeteschulung."
+    "modelAnswer": "60-jähriger Patient mit HHS bei Neumanifestation DM Typ 2. BZ 680 mg/dL, Hyponatriämie 152, keine Ketoazidose. Intensivstation: Flüssigkeit, Insulinperfusor. Einstellung auf Insulin glargin/aspart. Diabeteschulung.",
+    "conceptId": "fsp.writing.012",
+    "taughtInLessonId": "fsp_l_005",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_013",
@@ -380,7 +476,15 @@
       "CHADS-VASc-Score",
       "Vorhofflimmern"
     ],
-    "modelAnswer": "70-jährige Patientin mit links-medialem Schlaganfall bei Vorhofflimmern. Thrombolyse innerhalb 2.5h. NIHSS 14. Sekundärprävention: ASS, Marcumar ab Tag 7, Statin. Rehabilitation eingeleitet."
+    "modelAnswer": "70-jährige Patientin mit links-medialem Schlaganfall bei Vorhofflimmern. Thrombolyse innerhalb 2.5h. NIHSS 14. Sekundärprävention: ASS, Marcumar ab Tag 7, Statin. Rehabilitation eingeleitet.",
+    "conceptId": "fsp.writing.013",
+    "taughtInLessonId": "fsp_l_005",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_014",
@@ -408,7 +512,15 @@
       "Murphy-Zeichen",
       "Cholezystektomie"
     ],
-    "modelAnswer": "55-jährige Patientin mit akuter Cholezystitis bei Cholelithiasis. Sono: verdickte Wand, Steine, pericholezystische Flüssigkeit. Antibiose. Laparoskopische Cholezystektomie nach Abklingen geplant."
+    "modelAnswer": "55-jährige Patientin mit akuter Cholezystitis bei Cholelithiasis. Sono: verdickte Wand, Steine, pericholezystische Flüssigkeit. Antibiose. Laparoskopische Cholezystektomie nach Abklingen geplant.",
+    "conceptId": "fsp.writing.014",
+    "taughtInLessonId": "fsp_l_006",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_015",
@@ -437,7 +549,15 @@
       "Peak-Flow",
       "Hilfsmuskulatur"
     ],
-    "modelAnswer": "8-jährige Patientin mit schwerer Asthma-Exazerbation. Therapie: Salbutamol-Vernebler, Prednisolon, Saürstoff. Besserung nach Akuttherapie. Daürtherapie: Budesonid/Formoterol. Asthmaschulung geplant."
+    "modelAnswer": "8-jährige Patientin mit schwerer Asthma-Exazerbation. Therapie: Salbutamol-Vernebler, Prednisolon, Saürstoff. Besserung nach Akuttherapie. Daürtherapie: Budesonid/Formoterol. Asthmaschulung geplant.",
+    "conceptId": "fsp.writing.015",
+    "taughtInLessonId": "fsp_l_006",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_016",
@@ -464,7 +584,15 @@
       "SSRI = selektiver Serotonin-Wiederaufnahmehemmer",
       "Früherwachen"
     ],
-    "modelAnswer": "35-jährige Patientin mit mittelschwerer depressiver Episode. Keine akute Suizidalität. Therapie: Escitalopram 10 mg, Psychotherapie. Wiedervorstellung in 4 Wochen."
+    "modelAnswer": "35-jährige Patientin mit mittelschwerer depressiver Episode. Keine akute Suizidalität. Therapie: Escitalopram 10 mg, Psychotherapie. Wiedervorstellung in 4 Wochen.",
+    "conceptId": "fsp.writing.016",
+    "taughtInLessonId": "fsp_l_007",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_017",
@@ -492,7 +620,15 @@
       "Hypermenorrhö = starke Regelblutung",
       "MCV = mittleres Erythrozytenvolumen"
     ],
-    "modelAnswer": "33-jährige Patientin mit Eisenmangelanämie (Hb 8.2, Ferritin 8) bei Hypermenorrhö. Orale Eisensubstitution. Gynäkologische Vorstellung zur Ursachenabklärung."
+    "modelAnswer": "33-jährige Patientin mit Eisenmangelanämie (Hb 8.2, Ferritin 8) bei Hypermenorrhö. Orale Eisensubstitution. Gynäkologische Vorstellung zur Ursachenabklärung.",
+    "conceptId": "fsp.writing.017",
+    "taughtInLessonId": "fsp_l_007",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_018",
@@ -520,7 +656,15 @@
       "Antikoagulation",
       "CT-Angiographie"
     ],
-    "modelAnswer": "68-jährige Patientin mit segmentaler Lungenembolie links bei Flugreise. Therapie: Enoxaparin, Marcumar für 6 Monate. Thrombophilie-Diagnostik erwogen."
+    "modelAnswer": "68-jährige Patientin mit segmentaler Lungenembolie links bei Flugreise. Therapie: Enoxaparin, Marcumar für 6 Monate. Thrombophilie-Diagnostik erwogen.",
+    "conceptId": "fsp.writing.018",
+    "taughtInLessonId": "fsp_l_007",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_019",
@@ -548,7 +692,15 @@
       "Thyreostase = Schilddrüsenhemmung",
       "Exophthalmus = Hervortreten der Augen"
     ],
-    "modelAnswer": "30-jährige Patientin mit Morbus Basedow: TSH supprimiert, fT3/fT4 erhöht, TRAK positiv. Struma, Exophthalmus. Thyereostase mit Thiamazol 20 mg. Vorstellung Augenheilkunde."
+    "modelAnswer": "30-jährige Patientin mit Morbus Basedow: TSH supprimiert, fT3/fT4 erhöht, TRAK positiv. Struma, Exophthalmus. Thyereostase mit Thiamazol 20 mg. Vorstellung Augenheilkunde.",
+    "conceptId": "fsp.writing.019",
+    "taughtInLessonId": "fsp_l_008",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_020",
@@ -575,7 +727,15 @@
       "Macrogol = osmotisch wirkendes Laxans",
       "Ballaststoffe"
     ],
-    "modelAnswer": "68-jährige Patientin mit chronischer Obstipation und Laxanzienabhängigkeit. Stufenweiser UUmstieg auf Macrogol. Ballaststoffe, Trinkmenge. Bewegungssteigerung."
+    "modelAnswer": "68-jährige Patientin mit chronischer Obstipation und Laxanzienabhängigkeit. Stufenweiser UUmstieg auf Macrogol. Ballaststoffe, Trinkmenge. Bewegungssteigerung.",
+    "conceptId": "fsp.writing.020",
+    "taughtInLessonId": "fsp_l_008",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_021",
@@ -603,7 +763,15 @@
       "Antipsychotikum (Neuroleptikum)",
       "Psychödukation"
     ],
-    "modelAnswer": "24-jähriger Patient mit paranoid-schizophrener Ersterkrankung. Akustische Halluzinationen, Verfolgungswahn. Einleitung Antipsychotikum (Olanzapin). Psychödukation. Wiedervorstellung in 2 Wochen."
+    "modelAnswer": "24-jähriger Patient mit paranoid-schizophrener Ersterkrankung. Akustische Halluzinationen, Verfolgungswahn. Einleitung Antipsychotikum (Olanzapin). Psychödukation. Wiedervorstellung in 2 Wochen.",
+    "conceptId": "fsp.writing.021",
+    "taughtInLessonId": "fsp_l_009",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_022",
@@ -631,7 +799,15 @@
       "NSAR",
       "Allopurinol = Harnsäuresenker"
     ],
-    "modelAnswer": "52-jähriger Patient mit akutem Gichtanfall (Podagra). Harnsaure 9.2 mg/dL. Akut: Diclofenac. Nach Abklingen: Allopurinol. Diatberatung."
+    "modelAnswer": "52-jähriger Patient mit akutem Gichtanfall (Podagra). Harnsaure 9.2 mg/dL. Akut: Diclofenac. Nach Abklingen: Allopurinol. Diatberatung.",
+    "conceptId": "fsp.writing.022",
+    "taughtInLessonId": "fsp_l_009",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_023",
@@ -660,7 +836,15 @@
       "ABI = Knöchel-Arm-Index",
       "Kompressionstherapie"
     ],
-    "modelAnswer": "78-jährige Patientin mit Ulcus cruris venosum bei CVI C6. Wundversorgung und Kompressionstherapie eingeleitet. ABI unauffällig für pAVK."
+    "modelAnswer": "78-jährige Patientin mit Ulcus cruris venosum bei CVI C6. Wundversorgung und Kompressionstherapie eingeleitet. ABI unauffällig für pAVK.",
+    "conceptId": "fsp.writing.023",
+    "taughtInLessonId": "fsp_l_009",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_024",
@@ -688,7 +872,15 @@
       "Meniskusläsion",
       "Gelenkerguss"
     ],
-    "modelAnswer": "22-jähriger Patient mit VKB-Ruptur rechts und medialer Meniskusläsion. Akut: Ruhigstellung, Kühlung. OP (VKB-Plastik) in 6-8 Wochen nach Vorbereitung."
+    "modelAnswer": "22-jähriger Patient mit VKB-Ruptur rechts und medialer Meniskusläsion. Akut: Ruhigstellung, Kühlung. OP (VKB-Plastik) in 6-8 Wochen nach Vorbereitung.",
+    "conceptId": "fsp.writing.024",
+    "taughtInLessonId": "fsp_l_010",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_025",
@@ -717,7 +909,15 @@
       "Debridement",
       "Gram-positive Kokken"
     ],
-    "modelAnswer": "58-jährige Patientin mit frühem Wundinfekt nach Knie-TEP. CRP 210, Leukozytose, Gram-positive Kokken im Abstrich. Therapie: Ceftriaxon, Wunddebridement. Fortführung der i.v.-Antibiose, Infektiologie involviert."
+    "modelAnswer": "58-jährige Patientin mit frühem Wundinfekt nach Knie-TEP. CRP 210, Leukozytose, Gram-positive Kokken im Abstrich. Therapie: Ceftriaxon, Wunddebridement. Fortführung der i.v.-Antibiose, Infektiologie involviert.",
+    "conceptId": "fsp.writing.025",
+    "taughtInLessonId": "fsp_l_010",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_026",
@@ -745,7 +945,15 @@
       "Räuspern",
       "Sputum"
     ],
-    "modelAnswer": "35-jähriger Patient mit akuter Bronchitis bei viralem Infekt. Symptomatische Therapie, keine Antibiose."
+    "modelAnswer": "35-jähriger Patient mit akuter Bronchitis bei viralem Infekt. Symptomatische Therapie, keine Antibiose.",
+    "conceptId": "fsp.writing.026",
+    "taughtInLessonId": "fsp_l_011",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_027",
@@ -773,7 +981,15 @@
       "Schwangerschaft",
       "Tokolyse"
     ],
-    "modelAnswer": "Schwangere (28. SSW) mit Pyelonephritis rechts. Cefuroxim i.v., Fieber rückläufig. Orale Antibiose für 10 Tage."
+    "modelAnswer": "Schwangere (28. SSW) mit Pyelonephritis rechts. Cefuroxim i.v., Fieber rückläufig. Orale Antibiose für 10 Tage.",
+    "conceptId": "fsp.writing.027",
+    "taughtInLessonId": "fsp_l_011",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_028",
@@ -800,7 +1016,15 @@
       "Kieferhöhle",
       "Dekongestiva"
     ],
-    "modelAnswer": "42-jährige Patientin mit akuter Sinusitis maxillaris rechts (NNH-Verschattung, eitrige Sekretion). Doxycyclin, Dekongestiva."
+    "modelAnswer": "42-jährige Patientin mit akuter Sinusitis maxillaris rechts (NNH-Verschattung, eitrige Sekretion). Doxycyclin, Dekongestiva.",
+    "conceptId": "fsp.writing.028",
+    "taughtInLessonId": "fsp_l_011",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_029",
@@ -827,7 +1051,15 @@
       "IABP = intraaortale Ballonpumpe",
       "Reanimation"
     ],
-    "modelAnswer": "Patient mit cardiogenem Schock bei Vorderwandinfarkt und Kammerflimmern. Reanimation, IABP, PTCA+DES. Auf Intensivstation stabilisiert."
+    "modelAnswer": "Patient mit cardiogenem Schock bei Vorderwandinfarkt und Kammerflimmern. Reanimation, IABP, PTCA+DES. Auf Intensivstation stabilisiert.",
+    "conceptId": "fsp.writing.029",
+    "taughtInLessonId": "fsp_l_012",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_030",
@@ -854,7 +1086,15 @@
       "Ikterus = Gelbsucht",
       "palliativ"
     ],
-    "modelAnswer": "Patient mit Pankreaskopfkarzinom Stadium IV bei Diagnose. Palliative Chemotherapie eingeleitet."
+    "modelAnswer": "Patient mit Pankreaskopfkarzinom Stadium IV bei Diagnose. Palliative Chemotherapie eingeleitet.",
+    "conceptId": "fsp.writing.030",
+    "taughtInLessonId": "fsp_l_012",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_031",
@@ -882,7 +1122,15 @@
       "Piperacillin/Tazobactam",
       "respiratorische Insuffizienz"
     ],
-    "modelAnswer": "Patient mit Ä-COP und Pneumonie. Piperacillin/Tazobactam, Prednisolon, Saürstoff. Resp. Insuffizienz Typ 2."
+    "modelAnswer": "Patient mit Ä-COP und Pneumonie. Piperacillin/Tazobactam, Prednisolon, Saürstoff. Resp. Insuffizienz Typ 2.",
+    "conceptId": "fsp.writing.031",
+    "taughtInLessonId": "fsp_l_013",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_032",
@@ -908,7 +1156,15 @@
       "Hinchey-Klassifikation",
       "Sigma = Colon sigmoideum"
     ],
-    "modelAnswer": "Patientin mit Sigmadivertikulitis Hinchey Ia. Metronidazol+Ciprofloxacin, NPO. Koloskopie nach 6 Wochen."
+    "modelAnswer": "Patientin mit Sigmadivertikulitis Hinchey Ia. Metronidazol+Ciprofloxacin, NPO. Koloskopie nach 6 Wochen.",
+    "conceptId": "fsp.writing.032",
+    "taughtInLessonId": "fsp_l_013",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_033",
@@ -935,7 +1191,15 @@
       "RR-Protokoll",
       "ACE-Hemmer"
     ],
-    "modelAnswer": "Patientin mit hypertensiver Krise (RR 210/105). Urapidil i.v., dann Ramipril+Amlodipin. Kontrolle in 1 Woche."
+    "modelAnswer": "Patientin mit hypertensiver Krise (RR 210/105). Urapidil i.v., dann Ramipril+Amlodipin. Kontrolle in 1 Woche.",
+    "conceptId": "fsp.writing.033",
+    "taughtInLessonId": "fsp_l_013",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_034",
@@ -963,7 +1227,15 @@
       "Kernig-Zeichen",
       "Antibiose"
     ],
-    "modelAnswer": "Patient mit akuter bakterieller Meningitis. Liquor: neutrophile Pleozytose. Dexamethason, Ceftriaxon, Ampicillin."
+    "modelAnswer": "Patient mit akuter bakterieller Meningitis. Liquor: neutrophile Pleozytose. Dexamethason, Ceftriaxon, Ampicillin.",
+    "conceptId": "fsp.writing.034",
+    "taughtInLessonId": "fsp_l_014",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_035",
@@ -990,7 +1262,15 @@
       "McBurney-Punkt",
       "Appendektomie"
     ],
-    "modelAnswer": "Patient mit akuter Appendizitis. Laparoskopische Appendektomie. Unkomplizierter Verlauf."
+    "modelAnswer": "Patient mit akuter Appendizitis. Laparoskopische Appendektomie. Unkomplizierter Verlauf.",
+    "conceptId": "fsp.writing.035",
+    "taughtInLessonId": "fsp_l_014",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_036",
@@ -1018,7 +1298,15 @@
       "Ödeme",
       "Dekompensation"
     ],
-    "modelAnswer": "Patientin mit kardial dekompensierter Herzinsuffizienz NYHA III. Furosemid, ACE-Hemmer, Pleurapunktion."
+    "modelAnswer": "Patientin mit kardial dekompensierter Herzinsuffizienz NYHA III. Furosemid, ACE-Hemmer, Pleurapunktion.",
+    "conceptId": "fsp.writing.036",
+    "taughtInLessonId": "fsp_l_015",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_037",
@@ -1046,7 +1334,15 @@
       "Jodid",
       "Vorhofflimmern"
     ],
-    "modelAnswer": "Patientin mit thyreotoxischer Krise. Thiamazol, Jodid, Dexamethason, Betablocker. Intensivüberwachung."
+    "modelAnswer": "Patientin mit thyreotoxischer Krise. Thiamazol, Jodid, Dexamethason, Betablocker. Intensivüberwachung.",
+    "conceptId": "fsp.writing.037",
+    "taughtInLessonId": "fsp_l_015",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_038",
@@ -1073,7 +1369,15 @@
       "Triptane",
       "Metoprolol"
     ],
-    "modelAnswer": "Patientin mit Migräne mit visüller Aura. Sumatriptan akut, Metoprolol prophylaktisch. Kopfschmerztagebuch."
+    "modelAnswer": "Patientin mit Migräne mit visüller Aura. Sumatriptan akut, Metoprolol prophylaktisch. Kopfschmerztagebuch.",
+    "conceptId": "fsp.writing.038",
+    "taughtInLessonId": "fsp_l_015",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_039",
@@ -1100,7 +1404,15 @@
       "Nackenschmerz",
       "Mobilisation"
     ],
-    "modelAnswer": "HWS-Distorsion Grad I nach Auffahrunfall. Keine Fraktur. NSAR, Mobilisation, Physiotherapie."
+    "modelAnswer": "HWS-Distorsion Grad I nach Auffahrunfall. Keine Fraktur. NSAR, Mobilisation, Physiotherapie.",
+    "conceptId": "fsp.writing.039",
+    "taughtInLessonId": "fsp_l_016",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_040",
@@ -1127,7 +1439,15 @@
       "Colchicin",
       "Ibuprofen"
     ],
-    "modelAnswer": "Patient mit akuter Perikarditis. Ibuprofen + Colchicin. ST-Hebungen und Perikardreiben rückläufig."
+    "modelAnswer": "Patient mit akuter Perikarditis. Ibuprofen + Colchicin. ST-Hebungen und Perikardreiben rückläufig.",
+    "conceptId": "fsp.writing.040",
+    "taughtInLessonId": "fsp_l_016",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_041",
@@ -1155,7 +1475,15 @@
       "Fibrat",
       "Plasmapherese"
     ],
-    "modelAnswer": "Patient mit Pankreatitis bei HTG. Triglyzeride 4500. NPO, Insulin, Plasmapherese. Diat, Fenofibrat."
+    "modelAnswer": "Patient mit Pankreatitis bei HTG. Triglyzeride 4500. NPO, Insulin, Plasmapherese. Diat, Fenofibrat.",
+    "conceptId": "fsp.writing.041",
+    "taughtInLessonId": "fsp_l_017",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_042",
@@ -1184,7 +1512,15 @@
       "Shunt",
       "Anämie"
     ],
-    "modelAnswer": "CKD 4 bei diabetischer Nephropathie. eGFR 18, renale Anämie, Hyperkaliamie. Dialysevorbereitung."
+    "modelAnswer": "CKD 4 bei diabetischer Nephropathie. eGFR 18, renale Anämie, Hyperkaliamie. Dialysevorbereitung.",
+    "conceptId": "fsp.writing.042",
+    "taughtInLessonId": "fsp_l_017",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_043",
@@ -1210,7 +1546,15 @@
       "kalter Knoten = szintigraphisch inaktiv",
       "Feinnadelpunktion"
     ],
-    "modelAnswer": "Struma nodosa mit kaltem Knoten rechts. Punktion geplant. Bei Malignonverdacht OP."
+    "modelAnswer": "Struma nodosa mit kaltem Knoten rechts. Punktion geplant. Bei Malignonverdacht OP.",
+    "conceptId": "fsp.writing.043",
+    "taughtInLessonId": "fsp_l_017",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_044",
@@ -1237,7 +1581,15 @@
       "Vernebler",
       "Peakflow"
     ],
-    "modelAnswer": "Schwere Asthma-Exazerbation. Vernebler, Prednisolon, Saürstoff. ICS/LABA fortführen."
+    "modelAnswer": "Schwere Asthma-Exazerbation. Vernebler, Prednisolon, Saürstoff. ICS/LABA fortführen.",
+    "conceptId": "fsp.writing.044",
+    "taughtInLessonId": "fsp_l_018",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_045",
@@ -1264,7 +1616,15 @@
       "CPAP",
       "Fahrtauglichkeit"
     ],
-    "modelAnswer": "Patient mit schwerer OSA (AHI 35). CPAP Therapie. Fahrverbot. Gewichtsreduktion."
+    "modelAnswer": "Patient mit schwerer OSA (AHI 35). CPAP Therapie. Fahrverbot. Gewichtsreduktion.",
+    "conceptId": "fsp.writing.045",
+    "taughtInLessonId": "fsp_l_018",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_046",
@@ -1291,7 +1651,15 @@
       "Harnstau",
       "Alfuzosin"
     ],
-    "modelAnswer": "Patient mit Nierenkolik. Ureterstein rechts. Diclofenac, Alfuzosin. Urologische Vorstellung."
+    "modelAnswer": "Patient mit Nierenkolik. Ureterstein rechts. Diclofenac, Alfuzosin. Urologische Vorstellung.",
+    "conceptId": "fsp.writing.046",
+    "taughtInLessonId": "fsp_l_019",
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_047",
@@ -1318,7 +1686,15 @@
       "Lorazepam",
       "Escitalopram"
     ],
-    "modelAnswer": "Patientin mit Panikattacke. Herz-Kreislauf o.B. Beruhigung, Lorazepam. Escitalopram für Prophylaxe."
+    "modelAnswer": "Patientin mit Panikattacke. Herz-Kreislauf o.B. Beruhigung, Lorazepam. Escitalopram für Prophylaxe.",
+    "conceptId": "fsp.writing.047",
+    "taughtInLessonId": "fsp_l_019",
+    "rubric": {
+      "completeness": 35,
+      "accuracy": 35,
+      "clarity": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_048",
@@ -1345,7 +1721,15 @@
       "PD-L1 = Immuntherapie-Marker",
       "Staging"
     ],
-    "modelAnswer": "Patient mit Bronchialkarzinom links. Staging abwarten. Tumorkonferenz zur Therapieplanung."
+    "modelAnswer": "Patient mit Bronchialkarzinom links. Staging abwarten. Tumorkonferenz zur Therapieplanung.",
+    "conceptId": "fsp.writing.048",
+    "taughtInLessonId": "fsp_l_019",
+    "rubric": {
+      "organization": 30,
+      "clinical_content": 40,
+      "language_quality": 30
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_049",
@@ -1372,7 +1756,15 @@
       "Tadalafil",
       "Testosteron"
     ],
-    "modelAnswer": "ED bei vaskulären Risiken. PDE5-Hemmer. Nikotinkarenz, RR-Optimierung."
+    "modelAnswer": "ED bei vaskulären Risiken. PDE5-Hemmer. Nikotinkarenz, RR-Optimierung.",
+    "conceptId": "fsp.writing.049",
+    "taughtInLessonId": "fsp_l_020",
+    "rubric": {
+      "history": 30,
+      "assessment": 35,
+      "plan": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_050",
@@ -1400,7 +1792,15 @@
       "TURP",
       "Katheter"
     ],
-    "modelAnswer": "Patient mit akutem Harnverhalt bei BPH. Katheter. Tamsulosin. Auslassversuch in 2 Tagen."
+    "modelAnswer": "Patient mit akutem Harnverhalt bei BPH. Katheter. Tamsulosin. Auslassversuch in 2 Tagen.",
+    "conceptId": "fsp.writing.050",
+    "taughtInLessonId": "fsp_l_020",
+    "rubric": {
+      "background": 25,
+      "findings": 40,
+      "summary": 35
+    },
+    "tags": []
   },
   {
     "id": "fsp_w_051",
@@ -1433,7 +1833,9 @@
     "tags": [
       "Aufnahmebrief",
       "Diabetes"
-    ]
+    ],
+    "conceptId": "fsp.writing.051",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "fsp_w_052",
@@ -1465,7 +1867,9 @@
     "tags": [
       "Entlassungsbrief",
       "Pneumonie"
-    ]
+    ],
+    "conceptId": "fsp.writing.052",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "fsp_w_053",
@@ -1497,7 +1901,9 @@
     "tags": [
       "Überweisung",
       "Gaströnterologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.053",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "fsp_w_054",
@@ -1529,7 +1935,9 @@
       "Konsil",
       "Neurologie",
       "MS"
-    ]
+    ],
+    "conceptId": "fsp.writing.054",
+    "taughtInLessonId": "fsp_l_022"
   },
   {
     "id": "fsp_w_055",
@@ -1561,7 +1969,9 @@
     "tags": [
       "Kurzbrief",
       "Chirurgie"
-    ]
+    ],
+    "conceptId": "fsp.writing.055",
+    "taughtInLessonId": "fsp_l_022"
   },
   {
     "id": "fsp_w_056",
@@ -1594,7 +2004,9 @@
       "Emergency",
       "Notarzt",
       "SAB"
-    ]
+    ],
+    "conceptId": "fsp.writing.056",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "fsp_w_057",
@@ -1626,7 +2038,9 @@
     "tags": [
       "Follow-up",
       "Orthopädie"
-    ]
+    ],
+    "conceptId": "fsp.writing.057",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "fsp_w_058",
@@ -1657,7 +2071,9 @@
     "tags": [
       "AU",
       "Orthopädie"
-    ]
+    ],
+    "conceptId": "fsp.writing.058",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "fsp_w_059",
@@ -1689,7 +2105,9 @@
     "tags": [
       "Patientenbrief",
       "HNO"
-    ]
+    ],
+    "conceptId": "fsp.writing.059",
+    "taughtInLessonId": "fsp_l_024"
   },
   {
     "id": "fsp_w_060",
@@ -1723,7 +2141,9 @@
       "Medikationswechsel",
       "DOAK",
       "Kardiologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.060",
+    "taughtInLessonId": "fsp_l_024"
   },
   {
     "id": "fsp_w_061",
@@ -1755,7 +2175,9 @@
     "tags": [
       "Präoperativ",
       "Chirurgie"
-    ]
+    ],
+    "conceptId": "fsp.writing.061",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "fsp_w_062",
@@ -1788,7 +2210,9 @@
     "tags": [
       "Postoperativ",
       "Orthopädie"
-    ]
+    ],
+    "conceptId": "fsp.writing.062",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "fsp_w_063",
@@ -1821,7 +2245,9 @@
       "Chronic Disease",
       "Herzinsuffizienz",
       "Kardiologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.063",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "fsp_w_064",
@@ -1854,7 +2280,9 @@
       "Überweisung",
       "Nephrologie",
       "Hypertonie"
-    ]
+    ],
+    "conceptId": "fsp.writing.064",
+    "taughtInLessonId": "fsp_l_026"
   },
   {
     "id": "fsp_w_065",
@@ -1887,7 +2315,9 @@
       "Entlassungsempfehlung",
       "COPD",
       "Pneumologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.065",
+    "taughtInLessonId": "fsp_l_026"
   },
   {
     "id": "fsp_w_066",
@@ -1919,7 +2349,9 @@
       "Labor/Imaging",
       "Schilddrüse",
       "Endokrinologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.066",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "fsp_w_067",
@@ -1952,7 +2384,9 @@
       "Versicherung",
       "Reha",
       "Orthopädie"
-    ]
+    ],
+    "conceptId": "fsp.writing.067",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "fsp_w_068",
@@ -1985,7 +2419,9 @@
       "Reha",
       "Schlaganfall",
       "Neurologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.068",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "fsp_w_069",
@@ -2018,7 +2454,9 @@
       "Patientensicherheit",
       "Sturz",
       "Geriatrie"
-    ]
+    ],
+    "conceptId": "fsp.writing.069",
+    "taughtInLessonId": "fsp_l_028"
   },
   {
     "id": "fsp_w_070",
@@ -2052,7 +2490,9 @@
       "ArztoArzt",
       "Intensiv",
       "Reanimation"
-    ]
+    ],
+    "conceptId": "fsp.writing.070",
+    "taughtInLessonId": "fsp_l_028"
   },
   {
     "id": "fsp_w_071",
@@ -2085,7 +2525,9 @@
       "AU",
       "Psychiatrie",
       "Depression"
-    ]
+    ],
+    "conceptId": "fsp.writing.071",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "fsp_w_072",
@@ -2118,7 +2560,9 @@
       "Kurzbrief",
       "Geburtshilfe",
       "Sectio"
-    ]
+    ],
+    "conceptId": "fsp.writing.072",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "fsp_w_073",
@@ -2151,7 +2595,9 @@
       "Follow-up",
       "Onkologie",
       "Mamma"
-    ]
+    ],
+    "conceptId": "fsp.writing.073",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "fsp_w_074",
@@ -2184,7 +2630,9 @@
       "Entlassungsbrief",
       "MRE",
       "Infektiologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.074",
+    "taughtInLessonId": "fsp_l_030"
   },
   {
     "id": "fsp_w_075",
@@ -2218,7 +2666,9 @@
       "Intensiv",
       "Kardiologie",
       "Chirurgie"
-    ]
+    ],
+    "conceptId": "fsp.writing.075",
+    "taughtInLessonId": "fsp_l_030"
   },
   {
     "id": "fsp_w_076",
@@ -2252,7 +2702,9 @@
       "Aufnahmebrief",
       "GI-Blutung",
       "Gaströnterologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.076",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "fsp_w_077",
@@ -2286,7 +2738,9 @@
       "Entlassungsbrief",
       "Chirurgie",
       "Proktologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.077",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "fsp_w_078",
@@ -2318,7 +2772,9 @@
       "Überweisung",
       "Urologie",
       "Inkontinenz"
-    ]
+    ],
+    "conceptId": "fsp.writing.078",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "fsp_w_079",
@@ -2351,7 +2807,9 @@
       "Konsil",
       "Rheumatologie",
       "Vaskulitis"
-    ]
+    ],
+    "conceptId": "fsp.writing.079",
+    "taughtInLessonId": "fsp_l_032"
   },
   {
     "id": "fsp_w_080",
@@ -2384,7 +2842,9 @@
       "Kurzbrief",
       "Chirurgie",
       "Hernie"
-    ]
+    ],
+    "conceptId": "fsp.writing.080",
+    "taughtInLessonId": "fsp_l_032"
   },
   {
     "id": "fsp_w_081",
@@ -2418,7 +2878,9 @@
       "Emergency",
       "Anaphylaxie",
       "Allergologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.081",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "fsp_w_082",
@@ -2451,7 +2913,9 @@
       "Follow-up",
       "Leber",
       "Gaströnterologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.082",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "fsp_w_083",
@@ -2484,7 +2948,9 @@
       "AU",
       "Infekt",
       "Allgemeinmedizin"
-    ]
+    ],
+    "conceptId": "fsp.writing.083",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "fsp_w_084",
@@ -2517,7 +2983,9 @@
       "Patientenbrief",
       "Diabetes",
       "Schulung"
-    ]
+    ],
+    "conceptId": "fsp.writing.084",
+    "taughtInLessonId": "fsp_l_034"
   },
   {
     "id": "fsp_w_085",
@@ -2550,7 +3018,9 @@
       "Medikationsanpassung",
       "Diabetes",
       "Allgemeinmedizin"
-    ]
+    ],
+    "conceptId": "fsp.writing.085",
+    "taughtInLessonId": "fsp_l_034"
   },
   {
     "id": "fsp_w_086",
@@ -2583,7 +3053,9 @@
       "Präoperativ",
       "Augenheilkunde",
       "Katarakt"
-    ]
+    ],
+    "conceptId": "fsp.writing.086",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "fsp_w_087",
@@ -2616,7 +3088,9 @@
       "Postoperativ",
       "Wirbelsäule",
       "Neurochirurgie"
-    ]
+    ],
+    "conceptId": "fsp.writing.087",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "fsp_w_088",
@@ -2649,7 +3123,9 @@
       "Chronic Disease",
       "Rheuma",
       "Immunologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.088",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "fsp_w_089",
@@ -2688,7 +3164,9 @@
       "Überweisung",
       "HNO",
       "Polyp"
-    ]
+    ],
+    "conceptId": "fsp.writing.089",
+    "taughtInLessonId": "fsp_l_036"
   },
   {
     "id": "fsp_w_090",
@@ -2722,7 +3200,9 @@
       "TIA",
       "Kardiologie",
       "Neurologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.090",
+    "taughtInLessonId": "fsp_l_036"
   },
   {
     "id": "fsp_w_091",
@@ -2756,7 +3236,9 @@
       "Aufnahmebrief",
       "Leber",
       "Gaströnterologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.091",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "fsp_w_092",
@@ -2790,7 +3272,9 @@
       "Emergency",
       "STEMI",
       "Kardiologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.092",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "fsp_w_093",
@@ -2823,7 +3307,9 @@
       "Medikationsplan",
       "Hypertonie",
       "Kardiologie"
-    ]
+    ],
+    "conceptId": "fsp.writing.093",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "fsp_w_094",
@@ -2856,7 +3342,9 @@
       "Entlassungsbrief",
       "Hamatologie",
       "Anämie"
-    ]
+    ],
+    "conceptId": "fsp.writing.094",
+    "taughtInLessonId": "fsp_l_038"
   },
   {
     "id": "fsp_w_095",
@@ -2888,7 +3376,9 @@
       "Überweisung",
       "Dermatologie",
       "Melanom"
-    ]
+    ],
+    "conceptId": "fsp.writing.095",
+    "taughtInLessonId": "fsp_l_038"
   },
   {
     "id": "fsp_w_096",
@@ -2921,7 +3411,9 @@
       "Verlegungsbrief",
       "Psychiatrie",
       "Depression"
-    ]
+    ],
+    "conceptId": "fsp.writing.096",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "fsp_w_097",
@@ -2954,7 +3446,9 @@
       "Follow-up",
       "Nephrologie",
       "CKD"
-    ]
+    ],
+    "conceptId": "fsp.writing.097",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "fsp_w_098",
@@ -2986,7 +3480,9 @@
       "AU",
       "Fraktur",
       "Orthopädie"
-    ]
+    ],
+    "conceptId": "fsp.writing.098",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "fsp_w_099",
@@ -3019,7 +3515,9 @@
       "Entlassungsbrief",
       "HNO",
       "Epistaxis"
-    ]
+    ],
+    "conceptId": "fsp.writing.099",
+    "taughtInLessonId": "fsp_l_040"
   },
   {
     "id": "fsp_w_100",
@@ -3052,6 +3550,1475 @@
       "Patientenverfügung",
       "Geriatrie",
       "Palliativ"
+    ],
+    "conceptId": "fsp.writing.100",
+    "taughtInLessonId": "fsp_l_040"
+  },
+  {
+    "id": "fsp_w_141",
+    "caseTitle": "Aufnahmebrief Herpes Zoster",
+    "task": "Verfassen Sie einen Aufnahmebrief für einen Patienten mit Herpes Zoster.",
+    "patientData": "72J m 80kg",
+    "history": "Seit 3 Tagen brennende Schmerzen und Bläschen am Rumpf rechts.",
+    "examFindings": "Vesikulärer Ausschlag entlang Th6-Th7 rechts, Schmerzen, leicht gerötet.",
+    "diagnostics": "Klinische Diagnose, HSV-Varicella-Serologie negativ",
+    "assessment": "Herpes Zoster (Gürtelrose) thorakal rechts",
+    "treatment": "Aciclovir 800mg 5x/Tag, Gabapentin 300mg bei Schmerzen, Pflanzliches Antiseptikum lokal.",
+    "dischargePlan": "Aciclovir für 7 Tage fortsetzen, Gabapentin nach Bedarf, bei Post-Zoster-Neuralgie Wiedervorstellung.",
+    "expectedStructure": [
+      "Diagnose",
+      "Symptome",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Herpes Zoster bei ...",
+      "Nach Abheilung ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme H.Z. 72J. Herpes Zoster Th6-Th7 re. Aciclovir 800mg 5x p.o. Gabapentin. Nach 7d WV bei anhaltenden Schmerzen.",
+    "requiredConcepts": [
+      "writing.141"
+    ],
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.writing.141",
+    "tags": [
+      "Aufnahmebrief",
+      "Dermatologie",
+      "Herpes Zoster"
+    ]
+  },
+  {
+    "id": "fsp_w_142",
+    "caseTitle": "Verlegungsbrief Polytrauma",
+    "task": "Schreiben Sie einen Verlegungsbrief für einen polytraumatisierten Patienten.",
+    "patientData": "29J m 85kg",
+    "history": "Mofa-Unfall, V.a. Milzruptur, Beckenfraktur, Thoraxtrauma.",
+    "examFindings": "GCS 15, RR 100/60, HF 110, Bauch Abwehrspannung, Becken instabil.",
+    "diagnostics": "CT: Milzruptur Grad III, Beckenfraktur Typ B, Rippenserienfraktur 7-9 links.",
+    "assessment": "Polytrauma mit Milzverletzung, Beckenfraktur, Thoraxtrauma",
+    "treatment": "Konservativ: Überwachung ITS, Analgesie, Volumen. Keine OP bei stabiler Milzruptur.",
+    "dischargePlan": "Verlegung in peripheres Krankenhaus nach 48h ITS-Stabilisierung",
+    "expectedStructure": [
+      "Aufnahme",
+      "Verletzungsmuster",
+      "Therapie",
+      "Zustand bei Verlegung"
+    ],
+    "usefulPhrases": [
+      "Polytrauma nach Mofa-Unfall"
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Verlegung P.T. 29J nach Polytrauma. Milzruptur Gr III konservativ. Beckenfraktur Typ B. Rippenserienfraktur li. Stabil auf ITS. Verlegung zur Weiterversorgung.",
+    "requiredConcepts": [
+      "writing.142"
+    ],
+    "taughtInLessonId": "fsp_l_002",
+    "conceptId": "fsp.writing.142",
+    "tags": [
+      "Verlegungsbrief",
+      "Polytrauma",
+      "ITS"
+    ]
+  },
+  {
+    "id": "fsp_w_143",
+    "caseTitle": "AU bei Epicondylitis",
+    "task": "AU-Bescheinigung Tennisellenbogen.",
+    "patientData": "45J w Sekretärin",
+    "history": "Seit 6 Wochen Schmerzen am rechten Ellenbogen lateral.",
+    "examFindings": "Druckschmerz Epicondylus radialis, Schmerz bei Extension.",
+    "diagnostics": "Klinisch: Epicondylitis radialis",
+    "assessment": "Epicondylitis radialis humeri rechts",
+    "treatment": "Ruhigstellung, lokale Kortisoninjektion, Dehnübungen.",
+    "dischargePlan": "AU 4 Wochen. Schonung. Physio 6x. Kontrolle Orthopädie in 4 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "AU-Dauer",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "AU erforderlich für ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "AU M.F. 45J Sekretärin. Epicondylitis radialis re. Ruhigstellung, Kortisoninjektion. AU 4 Wo. Physio. Orthopädie in 4 Wo.",
+    "requiredConcepts": [
+      "writing.143"
+    ],
+    "taughtInLessonId": "fsp_l_003",
+    "conceptId": "fsp.writing.143",
+    "tags": [
+      "AU",
+      "Orthopädie",
+      "Epicondylitis"
+    ]
+  },
+  {
+    "id": "fsp_w_144",
+    "caseTitle": "Entlassung nach Appendizitis",
+    "task": "Entlassungsbrief nach laparoskopischer Appendektomie.",
+    "patientData": "22J w 60kg",
+    "history": "Akute Appendizitis, laparoskopische Appendektomie vor 3 Tagen.",
+    "examFindings": "Wunde reizlos, keine Peritonitis, Darmtätigkeit vorhanden.",
+    "diagnostics": "Histologie: phlegmonöse Appendizitis",
+    "assessment": "Akute phlegmonöse Appendizitis, Z.n. laparoskopischer Appendektomie",
+    "treatment": "Laparoskopische Appendektomie, perioperative Antibiose mit Cefuroxim/Metronidazol.",
+    "dischargePlan": "Klimmerübungen, keine schweren Lasten für 2 Wo. Fäden werden ambulant gezogen. Vorstellung Hausarzt in 1 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "OP",
+      "Verlauf",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Postoperativer Verlauf komplikationslos"
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung L.M. 22J. Z.n. laparoskopischer Appendektomie (phlegmonöse Appendizitis). Verlauf komplikationslos. Wunde reizlos. Fäden ambulant in 1Wo. Hausarzt.",
+    "requiredConcepts": [
+      "writing.144"
+    ],
+    "taughtInLessonId": "fsp_l_004",
+    "conceptId": "fsp.writing.144",
+    "tags": [
+      "Entlassungsbrief",
+      "Chirurgie",
+      "Appendizitis"
+    ]
+  },
+  {
+    "id": "fsp_w_145",
+    "caseTitle": "Follow-up Hypertonie",
+    "task": "Verlaufsbericht Hypertonie nach Medikamentenanpassung.",
+    "patientData": "55J m 90kg",
+    "history": "Hypertonie bekannt 5 Jahre, Ramipril 5mg, jetzt RR 145/90.",
+    "examFindings": "RR 142/88, HF 72, keine Ödeme.",
+    "diagnostics": "Labor: Krea 0,9, Kalium 4,2, BZ 110.",
+    "assessment": "Hypertonie Stadium 1, unter Therapie nicht ausreichend eingestellt",
+    "treatment": "Ramipril 10mg, HCT 12,5mg. Salzreduktion und Bewegung.",
+    "dischargePlan": "RR-Kontrolle in 4 Wochen. Bei Werten >140/90 Dosisanpassung. Vorstellung Hausarzt bei Nebenwirkungen.",
+    "expectedStructure": [
+      "Aktueller RR",
+      "Medikation",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "RR-Werte in den letzten Wochen..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Kontrolle F.K. 55J. RR 142/88 unter Ramipril 5mg. Anpassung auf Ramipril 10mg + HCT 12,5mg. RR-Kontrolle in 4Wo. Lifestyle.",
+    "requiredConcepts": [
+      "writing.145"
+    ],
+    "taughtInLessonId": "fsp_l_005",
+    "conceptId": "fsp.writing.145",
+    "tags": [
+      "Follow-up",
+      "Hypertonie",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_146",
+    "caseTitle": "Notarzteintrag Asthmaanfall",
+    "task": "Notarzteinsatzprotokoll bei schwerem Asthmaanfall.",
+    "patientData": "34J w 65kg",
+    "history": "Bekanntes Asthma. Akut: Luftnot, Giemen, SpO2 88%.",
+    "examFindings": "AF 30, SpO2 88%, exspir. Giemen, Hilfsmuskulatur, Sprache abgehackt.",
+    "diagnostics": "Klinische Diagnose: schwerer Asthmaanfall",
+    "assessment": "Schwerer Asthmaanfall bei bekanntem Asthma bronchiale",
+    "treatment": "Salbutamol-Vernebler 5mg, Prednisolon 250mg i.v., O2 4L/min.",
+    "dischargePlan": "Transport ins Krankenhaus. Stationäre Aufnahme. Weitere Therapie auf Notaufnahme.",
+    "expectedStructure": [
+      "Einsatz",
+      "Befund",
+      "Therapie",
+      "Transport"
+    ],
+    "usefulPhrases": [
+      "Bei Eintreffen Patient in ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Notarzteinsatz: Asthmaanfall. SaO2 88%, AF30. Salbutamol-NE 5mg, Prednisolon 250mg i.v. Transport in KH. Vorstellung Notaufnahme.",
+    "requiredConcepts": [
+      "writing.146"
+    ],
+    "taughtInLessonId": "fsp_l_006",
+    "conceptId": "fsp.writing.146",
+    "tags": [
+      "Notarzt",
+      "Asthma",
+      "Notfall"
+    ]
+  },
+  {
+    "id": "fsp_w_147",
+    "caseTitle": "Rezept ausstellen",
+    "task": "Formulieren Sie eine ärztliche Verordnung für Blutdrucksenker.",
+    "patientData": "62J m 78kg",
+    "history": "Hypertonie, unter Amlodipin 5mg RR 148/92.",
+    "examFindings": "RR 148/92, übrige Untersuchung o.B.",
+    "diagnostics": "Labor o.B.",
+    "assessment": "Hypertonie, nicht ausreichend eingestellt",
+    "treatment": "Amlodipin 5mg 1-0-0 weiter, neu Ramipril 5mg 1-0-0",
+    "dischargePlan": "RR-Kontrolle in 2 Wochen.",
+    "expectedStructure": [
+      "Verschreibung",
+      "Dosierung",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Rp. ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Rp. Ramipril 5 mg 100Tbl N3 1-0-0. Amlodipin 5 mg 100Tbl N3 1-0-0. RR-Kontrolle 2 Wo.",
+    "requiredConcepts": [
+      "writing.147"
+    ],
+    "taughtInLessonId": "fsp_l_007",
+    "conceptId": "fsp.writing.147",
+    "tags": [
+      "Rezept",
+      "Verordnung",
+      "Hypertonie"
+    ]
+  },
+  {
+    "id": "fsp_w_148",
+    "caseTitle": "Aufnahmebrief Synkope",
+    "task": "Aufnahmebrief Abklärung Synkope.",
+    "patientData": "70J w 68kg",
+    "history": "Einmalige Synkope beim Aufstehen, keine Prodromi, kurz, spontan erwacht. Keine Vorerkrankungen.",
+    "examFindings": "GCS 15, RR 130/80 liegend/110/70 stehend, HF 68, EKG o.B.",
+    "diagnostics": "EKG: SR, keine Ischämie. Echo: o.B. Labor: o.B.",
+    "assessment": "Vasovagale Synkope, keine Hinweise auf kardiale Genese",
+    "treatment": "Keine spezifische Therapie. Flüssigkeitszufuhr, Kompressionsstrümpfe.",
+    "dischargePlan": "Hausarzt, bei erneuter Synkope kardiologische Abklärung.",
+    "expectedStructure": [
+      "Synkopenereignis",
+      "Ausschluss kardial",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Synkope ohne Prodromi ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme S.W. 70J. Synkope beim Aufstehen, kurz, spontan erwacht. Kreislauf stabil. EKG/Echo o.B. Vasovagale Synkope. HA-Kontrolle.",
+    "requiredConcepts": [
+      "writing.148"
+    ],
+    "taughtInLessonId": "fsp_l_008",
+    "conceptId": "fsp.writing.148",
+    "tags": [
+      "Aufnahmebrief",
+      "Synkope",
+      "Kardiologie"
+    ]
+  },
+  {
+    "id": "fsp_w_149",
+    "caseTitle": "Entlassung Nierenbeckenentzündung",
+    "task": "Entlassungsbrief nach Pyelonephritis.",
+    "patientData": "48J w 72kg",
+    "history": "Fieber 39°C, Flankenschmerzen rechts, Dysurie seit 2 Tagen.",
+    "examFindings": "Klopfschmerz re Nierenlager, Fieber 38,8°C.",
+    "diagnostics": "Urin: Leukos +++, Bakterien. CRP 150. Sono: leichter Harnstau rechts.",
+    "assessment": "Akute Pyelonephritis rechts, kompliziert durch leichten Harnstau",
+    "treatment": "Ciprofloxacin 500mg 2x/Tag i.v. 3 Tage, dann oral 7 Tage. Flüssigkeit.",
+    "dischargePlan": "Ciprofloxacin oral 7 Tage fortsetzen. Kontrolle in 1 Woche. Kein Harnstau mehr.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Die Entzündungswerte sind rückläufig..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung M.G. 48J. Pyelonephritis re. Ciprofloxacin 3d i.v., dann oral 7d. Entzündung rückläufig. Sono unauffällig. WV in 1 Wo.",
+    "requiredConcepts": [
+      "writing.149"
+    ],
+    "taughtInLessonId": "fsp_l_009",
+    "conceptId": "fsp.writing.149",
+    "tags": [
+      "Entlassungsbrief",
+      "Nephrologie",
+      "Pyelonephritis"
+    ]
+  },
+  {
+    "id": "fsp_w_150",
+    "caseTitle": "Aufnahmebrief Lungenembolie",
+    "task": "Aufnahmebrief bei Lungenembolie.",
+    "patientData": "65J m 80kg",
+    "history": "Plötzliche Atemnot, Thoraxschmerz, nach langer Autofahrt. Immobilisation 8h.",
+    "examFindings": "AF 26, SpO2 90%, RR 130/80, HF 105. Keine Beinschwellung.",
+    "diagnostics": "CT-Angio: Lungenembolie segmental rechts. D-Dimer 4500. Echo: re-Herz o.B.",
+    "assessment": "Segmentaler Lungenembolie rechts, keine Rechtsherzbelastung",
+    "treatment": "Enoxaparin 80mg 2x/Tag, Überlappung auf Rivaroxaban 20mg.",
+    "dischargePlan": "Rivaroxaban 20mg für 3-6 Mo. VTE-Prophylaxe bei langen Reisen. Kontrolle in 4 Wo.",
+    "expectedStructure": [
+      "Ereignis",
+      "Diagnostik",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Bei Immobilisation erhöhtes TE-Risiko ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme G.H. 65J. Plötzliche Dyspnoe nach langer Autofahrt. CT: segmentale LE re. Echo o.B. Rivaroxaban gestartet. WV in 4 Wo.",
+    "requiredConcepts": [
+      "writing.150"
+    ],
+    "taughtInLessonId": "fsp_l_010",
+    "conceptId": "fsp.writing.150",
+    "tags": [
+      "Aufnahmebrief",
+      "Lungenembolie",
+      "Notfall"
+    ]
+  },
+  {
+    "id": "fsp_w_151",
+    "caseTitle": "Verlegung Schlaganfall",
+    "task": "Verlegungsbrief zur neurologischen Rehabilitation.",
+    "patientData": "68J m 75kg",
+    "history": "Mediainfarkt rechts mit Hemiparese links. Thrombolyse vor 3 Tagen.",
+    "examFindings": "Hemiparese links Arm M4/Bein M4+, leichte Dysarthrie, Schlucken o.B.",
+    "diagnostics": "MRT: Media-Infarkt rechts, keine Einblutung.",
+    "assessment": "Ischämischer Mediainfarkt rechts mit leichter Hemiparese links",
+    "treatment": "Thrombolyse, ASS 100mg, Atorvastatin 40mg, Physiotherapie.",
+    "dischargePlan": "Verlegung in neurologische Reha für 4 Wochen. ASS fortführen.",
+    "expectedStructure": [
+      "Aufnahme",
+      "Verlauf",
+      "Befund",
+      "Reha-Empfehlung"
+    ],
+    "usefulPhrases": [
+      "Nach Thrombolyse und Frührehabilitation ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Verlegung A.L. 68J. Z.n. Mediainfarkt re mit Hemiparese li. Thrombolyse, ASS100, Atorvastatin. Reha neurologisch 4 Wo.",
+    "requiredConcepts": [
+      "writing.151"
+    ],
+    "taughtInLessonId": "fsp_l_011",
+    "conceptId": "fsp.writing.151",
+    "tags": [
+      "Verlegungsbrief",
+      "Schlaganfall",
+      "Neurologie"
+    ]
+  },
+  {
+    "id": "fsp_w_152",
+    "caseTitle": "AU nach Knie-TEP",
+    "task": "AU-Bescheinigung nach Implantation einer Knie-TEP.",
+    "patientData": "72J m Rentner",
+    "history": "Knie-TEP rechts vor 2 Wochen bei Gonarthrose.",
+    "examFindings": "Wunde trocken, Beweglichkeit 0-0-90, leichte Schwellung.",
+    "diagnostics": "Röntgen: Prothesenlage regelrecht.",
+    "assessment": "Z.n. Knie-TEP rechts, altersgerechte Rehabilitation",
+    "treatment": "Physiotherapie, Schmerztherapie, krankengymnastische Übungen.",
+    "dischargePlan": "AU 6 Wochen. Physio 3x/Woche. Kontrolle Orthopädie in 6 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "AU",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Postoperativer Verlauf ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "AU G.K. 72J. Knie-TEP re. Post-OP Verlauf gut. Physio 3x/Wo. AU 6 Wo. Orthopädie in 6 Wo.",
+    "requiredConcepts": [
+      "writing.152"
+    ],
+    "taughtInLessonId": "fsp_l_012",
+    "conceptId": "fsp.writing.152",
+    "tags": [
+      "AU",
+      "Orthopädie",
+      "Knie-TEP"
+    ]
+  },
+  {
+    "id": "fsp_w_153",
+    "caseTitle": "Aufnahmebrief diabetischer Fuß",
+    "task": "Aufnahmebrief bei diabetischem Fußsyndrom.",
+    "patientData": "74J m 85kg DM Typ 2",
+    "history": "Diabetes Typ 2, bekannte Polyneuropathie. Wunde an der Fußsohle seit 2 Wochen.",
+    "examFindings": "Fußsohle links: 3cm Ulkus, granulierend, nicht eitrig. Fußpulse tastbar.",
+    "diagnostics": "BZ 250, HbA1c 9,5%. Duplex: ABI 0,9. Röntgen Fuß: keine Osteomyelitis.",
+    "assessment": "Diabetisches Fußsyndrom links, Wagner Grad 2, Neuropathie, kein Infekt",
+    "treatment": "Wundreinigung, Entlastung (Spezialschuh), Insulin intensiviert, BZ-Einstellung.",
+    "dischargePlan": "Tägliche Wundversorgung, BZ-Kontrolle, Diabetesberatung. Podologie.",
+    "expectedStructure": [
+      "Wundbeschreibung",
+      "Diabetes",
+      "Therapie",
+      "Nachsorge"
+    ],
+    "usefulPhrases": [
+      "Diabetisches Fußsyndrom bei ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme W.S. 74J DM2. DFS li, Wagner 2, kein Infekt. Wundreinigung, Entlastung, Insulin. BZ-Einstellung. Podologie.",
+    "requiredConcepts": [
+      "writing.153"
+    ],
+    "taughtInLessonId": "fsp_l_013",
+    "conceptId": "fsp.writing.153",
+    "tags": [
+      "Aufnahmebrief",
+      "Diabetes",
+      "Fuß"
+    ]
+  },
+  {
+    "id": "fsp_w_154",
+    "caseTitle": "Überweisung Gastroenterologie",
+    "task": "Überweisung bei Verdacht auf Colitis ulcerosa.",
+    "patientData": "32J w 58kg",
+    "history": "Seit 3 Monaten blutige Durchfälle, Bauchschmerzen, Gewichtsverlust 5 kg.",
+    "examFindings": "Druckschmerz Unterbauch, reizloser Anus. Blutiger Stuhl.",
+    "diagnostics": "Calprotectin 450, CRP 25. Sono: Wandverdickung Kolon.",
+    "assessment": "Verdacht auf chronisch-entzündliche Darmerkrankung (CED)",
+    "treatment": "Noch keine spezifische Therapie. Überweisung zur Koloskopie.",
+    "dischargePlan": "Gastroenterologische Vorstellung zur Koloskopie",
+    "expectedStructure": [
+      "Problem",
+      "Vorbefunde",
+      "Fragestellung"
+    ],
+    "usefulPhrases": [
+      "Zur weiteren Abklärung empfehle ich ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Überweisung D.S. 32J. V.a. CED mit blutigen Durchfällen, Calprotectin 450. Bitte Koloskopie zur Diagnosesicherung.",
+    "requiredConcepts": [
+      "writing.154"
+    ],
+    "taughtInLessonId": "fsp_l_014",
+    "conceptId": "fsp.writing.154",
+    "tags": [
+      "Überweisung",
+      "Gastroenterologie",
+      "CED"
+    ]
+  },
+  {
+    "id": "fsp_w_155",
+    "caseTitle": "Kurzbrief Harnverhalt",
+    "task": "Kurzbrief bei akutem Harnverhalt.",
+    "patientData": "68J m 90kg",
+    "history": "Seit heute Morgen kein Wasserlassen möglich, Schmerzen Unterbauch. Prostatahyperplasie bekannt.",
+    "examFindings": "Getastet: prall gefüllte Blase, Prostata 3-fach vergrößert.",
+    "diagnostics": "Sonografie: Harnblase 800ml.",
+    "assessment": "Akuter Harnverhalt bei Prostatahyperplasie",
+    "treatment": "Transurethraler Dauerkatheter 16Ch, 500ml Urin. Tamsulosin 0,4mg.",
+    "dischargePlan": "Dauerkatheter belassen. Tamsulosin. Auslassversuch in 3 Tagen. Urologische Vorstellung.",
+    "expectedStructure": [
+      "Ereignis",
+      "Maßnahme",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Akuter Harnverhalt bei ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Kurzbrief B.S. 68J. Akuter Harnverhalt bei BPH. DK 16Ch. Tamsulosin. Auslassversuch in 3d. Urologie.",
+    "requiredConcepts": [
+      "writing.155"
+    ],
+    "taughtInLessonId": "fsp_l_015",
+    "conceptId": "fsp.writing.155",
+    "tags": [
+      "Kurzbrief",
+      "Urologie",
+      "Harnverhalt"
+    ]
+  },
+  {
+    "id": "fsp_w_156",
+    "caseTitle": "Entlassung Kreislaufstillstand",
+    "task": "Entlassungsbrief nach erfolgreicher Reanimation.",
+    "patientData": "55J m 82kg",
+    "history": "Kreislaufstillstand zu Hause, VF, Defi 3x, ROSC nach 12min. Angehörige riefen Notarzt.",
+    "examFindings": "GCS 15, RR 125/80, keine neurologischen Defizite.",
+    "diagnostics": "EKG: ST-Hebungen V2-V4. Koronarangiographie RIVA-Stent. Echo: EF 45%.",
+    "assessment": "Z.n. Herz-Kreislauf-Stillstand bei Vorderwandinfarkt, erfolgreiche Reanimation und PCI",
+    "treatment": "PCI RIVA mit DES, ASS, Ticagrelor. ICD-Implantation geplant.",
+    "dischargePlan": "ASS+Ticagrelor, Bisoprolol, Ramipril, Atorvastatin. ICD in 1 Monat. Kardiologische Reha.",
+    "expectedStructure": [
+      "Ereignis",
+      "Reanimation",
+      "PCI",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Nach erfolgreicher Reanimation und PCI ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung S.F. 55J. Z.n. Kreislaufstillstand bei Vorderwandinfarkt (VF, ROSC 12min). PCI RIVA. EF45%. ASS+Ticagrelor. ICD geplant. Kardio-Reha.",
+    "requiredConcepts": [
+      "writing.156"
+    ],
+    "taughtInLessonId": "fsp_l_016",
+    "conceptId": "fsp.writing.156",
+    "tags": [
+      "Entlassungsbrief",
+      "Kardiologie",
+      "Reanimation"
+    ]
+  },
+  {
+    "id": "fsp_w_157",
+    "caseTitle": "Op-Bericht Knie-Arthroskopie",
+    "task": "Operationsbericht Arthroskopie bei Meniskusriss.",
+    "patientData": "42J m 88kg",
+    "history": "Sportverletzung, Kniegelenkerguss, MRT: Meniskusriss medial.",
+    "examFindings": "Medialer Gelenkschmerz, Erguss, positiver McMurray.",
+    "diagnostics": "MRT: Meniskusriss Hinterhorn medial.",
+    "assessment": "Meniskusriss medial links, Gelenkerguss",
+    "treatment": "Arthroskopie: Meniskusteilresektion medial. OP-Zeit 45min.",
+    "dischargePlan": "Teilbelastung für 2 Wo, dann Vollbelastung. Physio. AU 4 Wo. Kontrolle in 3 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "OP",
+      "Verlauf",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Arthroskopisch zeigte sich ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "OP Knie links bei med. Meniskusriss. Arthroskopische Teilresektion. Teilbelastung 2Wo, Physio. AU 4Wo. Kontrolle Orthopädie in 3Wo.",
+    "requiredConcepts": [
+      "writing.157"
+    ],
+    "taughtInLessonId": "fsp_l_017",
+    "conceptId": "fsp.writing.157",
+    "tags": [
+      "Op-Bericht",
+      "Orthopädie",
+      "Meniskus"
+    ]
+  },
+  {
+    "id": "fsp_w_158",
+    "caseTitle": "Aufnahmebrief Migräne",
+    "task": "Aufnahmebrief bei Migräneanfall.",
+    "patientData": "28J w 60kg",
+    "history": "Bekannte Migräne mit Aura. Seit 2 Tagen unerträgliche Kopfschmerzen, Erbrechen, Lichtempfindlichkeit.",
+    "examFindings": "Neurologisch o.B. Kopfschmerz links temporoparietal.",
+    "diagnostics": "CT cCT: unauffällig, keine Blutung, keine Raumforderung.",
+    "assessment": "Migräneanfall ohne Komplikationen",
+    "treatment": "Sumatriptan 6mg s.c., Metoclopramid 10mg i.v., Ruhe, Dunkelzimmer.",
+    "dischargePlan": "Triptan bei Bedarf, Magnesium zur Prophylaxe. Neurologie ambulant.",
+    "expectedStructure": [
+      "Symptome",
+      "Befunde",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Migräneanfall mit bekannter Aura ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme A.S. 28J. Migräneanfall. Sumatriptan s.c. + MCP. cCT o.B. Triptan Rezept. Neurologie, Magnesium.",
+    "requiredConcepts": [
+      "writing.158"
+    ],
+    "taughtInLessonId": "fsp_l_018",
+    "conceptId": "fsp.writing.158",
+    "tags": [
+      "Aufnahmebrief",
+      "Neurologie",
+      "Migräne"
+    ]
+  },
+  {
+    "id": "fsp_w_159",
+    "caseTitle": "Patientenverfügung umsetzen",
+    "task": "Dokumentation Therapieende nach Patientenwillen.",
+    "patientData": "88J w Pflegeheim",
+    "history": "Demenz, PV: keine Reanimation, keine Beatmung, keine Intensivtherapie. Jetzt Aspirationspneumonie.",
+    "examFindings": "GCS 9, SpO2 88% Raumluft, Fieber 38,5°C.",
+    "diagnostics": "Röntgen: Aspirationspneumonie re. BGA mit Hypoxämie.",
+    "assessment": "Aspirationspneumonie bei Demenz. Patientenverfügung liegt vor.",
+    "treatment": "Antibiotika, Sauerstoff 2L, palliative Therapie. Keine Beatmung. Keine ITS.",
+    "dischargePlan": "Palliativteam involviert. Symptomkontrolle. Keine Eskalation. Angehörige informiert.",
+    "expectedStructure": [
+      "Diagnose",
+      "Patientenwille",
+      "Massnahmen",
+      "Begrenzung"
+    ],
+    "usefulPhrases": [
+      "Entsprechend der Patientenverfügung ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Dokumentation M.S. 88J. Aspirationspneumonie. Patientenverfügung: keine Reanimation/Beatmung/ITS. Palliativtherapie mit Antibiotika + O2. Palliativteam.",
+    "requiredConcepts": [
+      "writing.159"
+    ],
+    "taughtInLessonId": "fsp_l_019",
+    "conceptId": "fsp.writing.159",
+    "tags": [
+      "Patientenverfügung",
+      "Palliativ",
+      "Geriatrie"
+    ]
+  },
+  {
+    "id": "fsp_w_160",
+    "caseTitle": "Notfall-Kurzbrief",
+    "task": "Kurzbrief Herzrasen bei Tachyarrhythmie.",
+    "patientData": "58J m 86kg",
+    "history": "Bekanntes Vorhofflimmern. Seit 2h Herzrasen, Schwächegefühl.",
+    "examFindings": "HF 140, RR 110/70, unregelmäßig, keine Zeichen der Dekompensation.",
+    "diagnostics": "EKG: Tachyarrhythmia absoluta bei VHF, Frequenz 140/min.",
+    "assessment": "Tachyarrhythmia absoluta bei bekanntem Vorhofflimmern",
+    "treatment": "Metoprolol 5mg i.v., Besserung nach 10min. Frequenz 95. Marcumar.",
+    "dischargePlan": "Metoprolol 47,5mg retard. INR-Kontrolle morgen. Kardio-Kontrolle in 1 Wo.",
+    "expectedStructure": [
+      "Ereignis",
+      "EKG",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Tachyarrhythmia absoluta bei VHF ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Kurzbrief H.G. 58J. Tachyarrhythmia absoluta bei VHF. Metoprolol 5mg i.v. Frequenz 95. Marcumar. Kardio in 1 Wo.",
+    "requiredConcepts": [
+      "writing.160"
+    ],
+    "taughtInLessonId": "fsp_l_020",
+    "conceptId": "fsp.writing.160",
+    "tags": [
+      "Kurzbrief",
+      "Kardiologie",
+      "VHF"
+    ]
+  },
+  {
+    "id": "fsp_w_161",
+    "caseTitle": "Entlassung nach Pneumothorax",
+    "task": "Entlassungsbrief nach Spontanpneumothorax.",
+    "patientData": "28J m 68kg schlank",
+    "history": "Plötzliche Atemnot rechts, stechender Schmerz. Kein Trauma. Raucher.",
+    "examFindings": "SpO2 94%, AF 22. Re abgeschwächter Klopfschall, aufgehobenes Atemgeräusch.",
+    "diagnostics": "Röntgen: Spontanpneumothorax re, 40%, Mediastinalverlagerung. BGA o.B.",
+    "assessment": "Spontanpneumothorax rechts",
+    "treatment": "Bülau-Drainage 20Ch, Sog 20cmH2O. Lunge entfaltet nach 3 Tagen.",
+    "dischargePlan": "Röntgen-Kontrolle in 2 Wo. Keine Flugreisen für 4 Wo. Nikotinkarenz. Bei Rezidiv OP (Pleurodese).",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Nach Bülau-Drainage ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung T.N. 28J. Spontanpneumothorax re. Bülau-Drainage 3d. Lunge entfaltet. Keine Flugreisen 4Wo. Nikotinstopp. Röntgen in 2 Wo.",
+    "requiredConcepts": [
+      "writing.161"
+    ],
+    "taughtInLessonId": "fsp_l_021",
+    "conceptId": "fsp.writing.161",
+    "tags": [
+      "Entlassungsbrief",
+      "Pneumothorax",
+      "Chirurgie"
+    ]
+  },
+  {
+    "id": "fsp_w_162",
+    "caseTitle": "Überweisung Neurologie",
+    "task": "Überweisung bei Polyneuropathie unklarer Genese.",
+    "patientData": "52J m 84kg",
+    "history": "Seit 6 Monaten Taubheit und Kribbeln in beiden Beinen, aufsteigend.",
+    "examFindings": "Vibrationsempfinden reduziert ab Sprunggelenk, AHS abgeschwächt, Reflexe seitengleich.",
+    "diagnostics": "Elektroneurographie: sensomotorische Polyneuropathie. B12 180, TSH 2,5. BZ nü 98.",
+    "assessment": "Polyneuropathie unklarer Genese, V.a. Vitamin-B12-Mangel",
+    "treatment": "B12-Substitution 1000µg i.m. wöchentlich. Kein Alkohol.",
+    "dischargePlan": "Neurologie zur Ursachenabklärung. B12-Spiegel in 4 Wo.",
+    "expectedStructure": [
+      "Symptome",
+      "Befunde",
+      "Verdacht",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Zur weiteren Abklärung der Polyneuropathie ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Überweisung P.K. 52J. Sensomotorische Polyneuropathie bei B12-Mangel. B12-Substitution. Neurologie zur Ursachenabklärung.",
+    "requiredConcepts": [
+      "writing.162"
+    ],
+    "taughtInLessonId": "fsp_l_022",
+    "conceptId": "fsp.writing.162",
+    "tags": [
+      "Überweisung",
+      "Neurologie",
+      "Polyneuropathie"
+    ]
+  },
+  {
+    "id": "fsp_w_163",
+    "caseTitle": "Hausarzt-Vorstellungsbrief",
+    "task": "Brief an Hausarzt mit Anfrage zur Mitbetreuung.",
+    "patientData": "75J w 65kg",
+    "history": "COPD GOLD II, arterielle Hypertonie, Osteoporose. Jetzt Sturz mit Radiusfraktur.",
+    "examFindings": "Radiusfraktur konservativ versorgt. RR 140/85. Lunge o.B.",
+    "diagnostics": "Röntgen: distale Radiusfraktur nicht disloziert.",
+    "assessment": "Distale Radiusfraktur li, kompensierte COPD, Hypertonie",
+    "treatment": "Gipsschiene 4 Wo. RR-Messung fortsetzen. COPD-Medikation wie bisher.",
+    "dischargePlan": "Gips für 4 Wo. RR-Kontrolle. Bitte weitere Betreuung.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Bitten"
+    ],
+    "usefulPhrases": [
+      "Ich bitte Sie um die weitere Betreuung ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Hausarztbrief E.W. 75J. Distale Radiusfraktur li konservativ. COPD/Hypertonie stabil. Bitte weitere Betreuung. Gipsentfernung in 4 Wo.",
+    "requiredConcepts": [
+      "writing.163"
+    ],
+    "taughtInLessonId": "fsp_l_023",
+    "conceptId": "fsp.writing.163",
+    "tags": [
+      "Hausarzt",
+      "Überweisung",
+      "Fraktur"
+    ]
+  },
+  {
+    "id": "fsp_w_164",
+    "caseTitle": "Entlassung Adnexitis",
+    "task": "Entlassungsbrief bei Adnexitis (PID).",
+    "patientData": "26J w 55kg",
+    "history": "Unterbauchschmerzen beidseits, Fieber 38,5°C, gelblicher Ausfluss seit 5 Tagen.",
+    "examFindings": "Unterbauch druckdolent, Portioschiebeschmerz, Adnexe beidseits druckschmerzhaft.",
+    "diagnostics": "CRP 80, Leukos 12. Sono: freie Flüssigkeit Douglas, Adnexe vergrößert.",
+    "assessment": "Akute Adnexitis (PID)",
+    "treatment": "Ceftriaxon 2g i.v. + Doxycyclin 100mg 2x/Tag + Metronidazol 500mg 2x/Tag.",
+    "dischargePlan": "Doxycyclin + Metronidazol oral 14d. Sexualpartner informieren. Gyn-Kontrolle in 2 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Akute Adnexitis bei ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung S.T. 26J. Adnexitis bds. Ceftriaxon/Doxycyclin/Metronidazol. Partnerinfo. Gyn in 2 Wo.",
+    "requiredConcepts": [
+      "writing.164"
+    ],
+    "taughtInLessonId": "fsp_l_024",
+    "conceptId": "fsp.writing.164",
+    "tags": [
+      "Entlassungsbrief",
+      "Gynäkologie",
+      "Adnexitis"
+    ]
+  },
+  {
+    "id": "fsp_w_165",
+    "caseTitle": "Op-Bericht Leistenhernie",
+    "task": "OP-Bericht Leistenhernien-OP.",
+    "patientData": "58J m 80kg",
+    "history": "Leistenhernie re seit 6 Monaten, jetzt inkarzeriert mit Schmerzen.",
+    "examFindings": "Prall-elastische Schwellung Leiste re, druckschmerzhaft, reponibel.",
+    "diagnostics": "Sonografie: Leistenhernie re mit Darmschlingen.",
+    "assessment": "Inkarzerierte Leistenhernie rechts",
+    "treatment": "Notfall-OP: Herniotomie nach Shouldice, Netzeinlage. Reposition Darmschlingen.",
+    "dischargePlan": "Keine schweren Lasten 6 Wo. Wundkontrolle ambulant in 10 Tagen. AU 3 Wo.",
+    "expectedStructure": [
+      "Befund",
+      "OP",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Leistenhernie re, notfallmäßig operiert ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "OP W.H. 58J. Inkarzerierte Leistenhernie re. Shouldice + Netz. Verlauf komplikationslos. Keine Lasten 6Wo. AU 3Wo.",
+    "requiredConcepts": [
+      "writing.165"
+    ],
+    "taughtInLessonId": "fsp_l_025",
+    "conceptId": "fsp.writing.165",
+    "tags": [
+      "Op-Bericht",
+      "Chirurgie",
+      "Hernie"
+    ]
+  },
+  {
+    "id": "fsp_w_166",
+    "caseTitle": "Entlassung Erysipel",
+    "task": "Entlassungsbrief bei Erysipel am Unterschenkel.",
+    "patientData": "60J m 90kg, Adipositas, Lymphödem",
+    "history": "Rötung, Schwellung, Überwärmung Unterschenkel li seit 2 Tagen. Fieber 38,5°C.",
+    "examFindings": "Scharf begrenzte Rötung Unterschenkel li, überwärmt, geschwollen. Fieber.",
+    "diagnostics": "CRP 120, Leukos 13. Sono: keine tiefe Beinvenenthrombose.",
+    "assessment": "Erysipel Unterschenkel links",
+    "treatment": "Penicillin G 10 Mio I.E. i.v. 3x/Tag, Hochlagerung, kühlende Umschläge.",
+    "dischargePlan": "Penicillin V 1,5 Mio 3x/Tag oral 7d. Lymphödem-Kompression. Hautpflege. WV in 1 Wo.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Nachsorge"
+    ],
+    "usefulPhrases": [
+      "Erysipel bei bekanntem Lymphödem ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung F.R. 60J. Erysipel US li bei Lymphödem. Penicillin G i.v. Kompression. Penicillin V oral 7d. Hautpflege.",
+    "requiredConcepts": [
+      "writing.166"
+    ],
+    "taughtInLessonId": "fsp_l_026",
+    "conceptId": "fsp.writing.166",
+    "tags": [
+      "Entlassungsbrief",
+      "Dermatologie",
+      "Erysipel"
+    ]
+  },
+  {
+    "id": "fsp_w_167",
+    "caseTitle": "Aufnahmebrief Meningitis",
+    "task": "Aufnahmebrief Verdacht auf Meningitis.",
+    "patientData": "22J w 60kg",
+    "history": "Kopfschmerzen, Fieber 39,5°C, Nackensteifigkeit seit gestern. Erbrechen.",
+    "examFindings": "GCS 14, Nackensteifigkeit, Brudzinski +, Kernig +.",
+    "diagnostics": "LP: 900 Zellen/µl, Eiweiß 120mg/dl, Glukose 30mg/dl. Gram + Diplokokken.",
+    "assessment": "Bakterielle Meningitis (Pneumokokken)",
+    "treatment": "Ceftriaxon 2x2g + Dexamethason initial 10mg, Aciclovir i.v. bis PCR negativ.",
+    "dischargePlan": "Antibiose 14d, Hörprüfung, Impfung empfohlen. Neurologie-Kontrolle in 2 Wo.",
+    "expectedStructure": [
+      "Symptome",
+      "LP",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "LP: eitriger Liquor ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme M.G. 22J. Bakterielle Meningitis (Pneumokokken). Ceftriaxon + Dexamethason. Hörprüfung. Impfung empfohlen.",
+    "requiredConcepts": [
+      "writing.167"
+    ],
+    "taughtInLessonId": "fsp_l_027",
+    "conceptId": "fsp.writing.167",
+    "tags": [
+      "Aufnahmebrief",
+      "Neurologie",
+      "Meningitis"
+    ]
+  },
+  {
+    "id": "fsp_w_168",
+    "caseTitle": "Verlegung nach Lebertransplantation",
+    "task": "Verlegungsbrief nach Lebertransplantation.",
+    "patientData": "48J m 73kg",
+    "history": "Leberzirrhose bei Alkohol, MELD 22. Erste Leber-Tx vor 5 Tagen.",
+    "examFindings": "Stabiler Kreislauf, leichter Ikterus, Transplantat Perfusion gut.",
+    "diagnostics": "Doppler: gute Durchblutung. Leberwerte fallend: GOT 120, GPT 150, Bilirubin 3,5.",
+    "assessment": "Z.n. Lebertransplantation, primäre Funktion gut",
+    "treatment": "Tacrolimus, Mycophenolat, Steroide. Keine Abstoßung.",
+    "dischargePlan": "Immunsuppression fortsetzen. Infektprophylaxe. Gewebeprobe in 1 Wo. Hepatologie-Kontrolle.",
+    "expectedStructure": [
+      "Transplantat",
+      "Immunsuppression",
+      "Kontrolle"
+    ],
+    "usefulPhrases": [
+      "Nach Lebertransplantation ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Verlegung T.B. 48J. Z.n. LTX, gute Primärfunktion. Tac/MMF/Steroide. Doppler o.B. Kontrolle Hepatologie.",
+    "requiredConcepts": [
+      "writing.168"
+    ],
+    "taughtInLessonId": "fsp_l_028",
+    "conceptId": "fsp.writing.168",
+    "tags": [
+      "Verlegungsbrief",
+      "Transplantation",
+      "Hepatologie"
+    ]
+  },
+  {
+    "id": "fsp_w_169",
+    "caseTitle": "Entlassung Lumbago",
+    "task": "Entlassungsbrief bei akuter Lumbago.",
+    "patientData": "40J m 82kg",
+    "history": "Plötzliche LWS-Schmerzen heute Morgen beim Heben. Keine Ausstrahlung.",
+    "examFindings": "LWS druckschmerzhaft, Bewegungseinschränkung, Sensibilität intakt, reflexes seitengleich.",
+    "diagnostics": "Röntgen: keine Fraktur. Keine neurologischen Ausfälle.",
+    "assessment": "Akute Lumbago ohne radikuläre Symptomatik",
+    "treatment": "Ibuprofen 600mg 3x/Tag, Wärme, Bewegung. Keine Bettruhe.",
+    "dischargePlan": "Schmerzmittel bei Bedarf. Rückenschule. Physio verordnet. AU 1 Wo. Bei Ausstrahlung/Begleitneurologie sofort vorstellen.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "AU",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Akute Lumbago ohne Radikulopathie ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung U.B. 40J. Akute Lumbago. Ibuprofen, Wärme, Bewegung. AU 1 Wo. Rückenschule. Bei Ausstrahlung sofort vorstellen.",
+    "requiredConcepts": [
+      "writing.169"
+    ],
+    "taughtInLessonId": "fsp_l_029",
+    "conceptId": "fsp.writing.169",
+    "tags": [
+      "Entlassungsbrief",
+      "Orthopädie",
+      "Lumbago"
+    ]
+  },
+  {
+    "id": "fsp_w_170",
+    "caseTitle": "AU Bandscheibenvorfall",
+    "task": "AU bei Bandscheibenvorfall L5/S1.",
+    "patientData": "38J m Büroangestellter",
+    "history": "Ischialgie links, Taubheit Großzehe, Bandscheibenvorfall L5/S1 im MRT.",
+    "examFindings": "Sensibilitätsstörung Dermatom L5, Kraft Fußheber M4, Reflexe +",
+    "diagnostics": "MRT: Bandscheibenprotrusion L5/S1 mit Nervenwurzelkompression.",
+    "assessment": "Bandscheibenvorfall L5/S1 mit Radikulopathie",
+    "treatment": "Konservativ: Physiotherapie, Ibuprofen, Rückenschule. Keine OP-Indikation.",
+    "dischargePlan": "AU 6 Wo für sitzende Tätigkeit. Physio 2x/Wo. Konservative Therapie. Bei Progredienz oder Blasenentleerungsstörung OP.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "AU",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Bandscheibenvorfall bei ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "AU F.S. 38J Büro. Bandscheibenvorfall L5/S1 konservativ. AU 6 Wo. Physio. Bei Blasen-Mastdarm-Störung sofort vorstellen.",
+    "requiredConcepts": [
+      "writing.170"
+    ],
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.writing.170",
+    "tags": [
+      "AU",
+      "Orthopädie",
+      "Bandscheibenvorfall"
+    ]
+  },
+  {
+    "id": "fsp_w_171",
+    "caseTitle": "Aufnahmebrief Leberzirrhose",
+    "task": "Aufnahmebrief dekompensierte Leberzirrhose.",
+    "patientData": "58J m 70kg",
+    "history": "Alkoholische Leberzirrhose, jetzt Aszites, Beinödeme, Dyspnoe.",
+    "examFindings": "Aszites +++, Ödeme, Ikterus, Spider naevi, Palmarerythem.",
+    "diagnostics": "Sono: Leber cirrhotisch, Aszites. Labor: Bilirubin 4,5, INR 1,8, Albumin 2,5. MELD 14.",
+    "assessment": "Dekompensierte Leberzirrhose Child-Pugh B mit Aszites",
+    "treatment": "Spironolacton + Furosemid, Albumin, Vitamin K, Abstinenz. Parazentese bei Bedarf.",
+    "dischargePlan": "Diuretika fortsetzen, Albumin, Entwässerung. Alkoholkarenz. Hepatologie ambulant.",
+    "expectedStructure": [
+      "Diagnose",
+      "Dekompensation",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Dekompensierte Leberzirrhose bei ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme D.A. 58J. Dekompensierte alkoholische Leberzirrhose. Spironolacton/Furosemid, Albumin. Abstinenz. Parazentese. Hepatologie.",
+    "requiredConcepts": [
+      "writing.171"
+    ],
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.writing.171",
+    "tags": [
+      "Aufnahmebrief",
+      "Hepatologie",
+      "Leberzirrhose"
+    ]
+  },
+  {
+    "id": "fsp_w_172",
+    "caseTitle": "Notarztprotokoll Hypoglykämie",
+    "task": "Notarztprotokoll bei schwerer Hypoglykämie.",
+    "patientData": "72J w 70kg DM1",
+    "history": "Bewusstlos aufgefunden, BZ 30 mg/dl, bekannte Diabetikerin.",
+    "examFindings": "BZ 30, GCS 8, RR 130/70, HF 88. Keine Pupillendifferenz.",
+    "diagnostics": "Blutzucker 30 mg/dl.",
+    "assessment": "Schwere Hypoglykämie bei Diabetes mellitus Typ 1",
+    "treatment": "Glucose 40% 60ml i.v. BZ nach 5min 120. GCS 15. Saft oral.",
+    "dischargePlan": "BZ-Kontrollen eingeleitet. Ursachenklärung. Ernährungsberatung. Diabetesberatung.",
+    "expectedStructure": [
+      "Einsatz",
+      "Befund",
+      "Therapie",
+      "Transport"
+    ],
+    "usefulPhrases": [
+      "Bewusstlos bei BZ 30 ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "NA-Einsatz: Hypoglykämie BZ30 bei DM1. Glucose 40% 60ml i.v. BZ 120. Keine Transportverweigerung. Diabetesberatung.",
+    "requiredConcepts": [
+      "writing.172"
+    ],
+    "taughtInLessonId": "fsp_l_032",
+    "conceptId": "fsp.writing.172",
+    "tags": [
+      "Notarzt",
+      "Diabetes",
+      "Hypoglykämie"
+    ]
+  },
+  {
+    "id": "fsp_w_173",
+    "caseTitle": "Entlassung Hyperemesis",
+    "task": "Entlassungsbrief Hyperemesis gravidarum.",
+    "patientData": "28J w 8. SSW",
+    "history": "Seit 2 Wo unstillbares Erbrechen, Gewichtsverlust 4 kg, Exsikkose.",
+    "examFindings": "Hautturgor reduziert, Schleimhäute trocken. RR 90/60, HF 105.",
+    "diagnostics": "Kalium 3,1, Na 130, BGA: metabolische Alkalose. Sono: EUG ausgeschlossen.",
+    "assessment": "Hyperemesis gravidarum bei Einlingsschwangerschaft",
+    "treatment": "Volumengabe, Kalium, Metoclopramid i.v. + Dimenhydrinat. Kostaufbau.",
+    "dischargePlan": "Antiemetika oral, kleine Mahlzeiten, Akupunktur. Kontrolle Frauenarzt. Bei erneuter Dehydratation sofort vorstellen.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Hyperemesis gravidarum in der ... SSW"
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung L.G. 28J 8.SSW. Hyperemesis gravidarum. Volumen, Kalium, MCP. Antienerika. Frauenarztkontrolle.",
+    "requiredConcepts": [
+      "writing.173"
+    ],
+    "taughtInLessonId": "fsp_l_033",
+    "conceptId": "fsp.writing.173",
+    "tags": [
+      "Entlassungsbrief",
+      "Gynäkologie",
+      "Hyperemesis"
+    ]
+  },
+  {
+    "id": "fsp_w_174",
+    "caseTitle": "Verlegung geriatrische Reha",
+    "task": "Verlegungsbrief geriatrische Reha nach Hüftfraktur.",
+    "patientData": "82J w 55kg",
+    "history": "Sturz zu Hause, Schenkelhalsfraktur re. Hüft-TEP vor 7 Tagen.",
+    "examFindings": "Wunde reizlos, Beweglichkeit Hüfte 0-0-70. Mobilisation mit Gehstützen.",
+    "diagnostics": "Röntgen: Prothesenlage gut. Hb 10,2, Krea 0,9.",
+    "assessment": "Z.n. Hüft-TEP rechts bei Schenkelhalsfraktur, altersbedingter Muskelabbau",
+    "treatment": "Hüft-TEP, Physiotherapie, Schmerztherapie, Thromboseprophylaxe.",
+    "dischargePlan": "Geriatrische Reha für 3 Wo. Täglich Physio, Ergotherapie. Mobilisation weiter mit Gehstützen.",
+    "expectedStructure": [
+      "Ausgangslage",
+      "OP",
+      "Rehaziel"
+    ],
+    "usefulPhrases": [
+      "Zur geriatrischen Rehabilitation ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Verlegung A.M. 82J. Z.n. Hüft-TEP re bei Schenkelhalsfraktur. Reha geriatrisch 3 Wo. Mobilisation mit Gehstützen.",
+    "requiredConcepts": [
+      "writing.174"
+    ],
+    "taughtInLessonId": "fsp_l_034",
+    "conceptId": "fsp.writing.174",
+    "tags": [
+      "Verlegungsbrief",
+      "Geriatrie",
+      "Hüftfraktur"
+    ]
+  },
+  {
+    "id": "fsp_w_175",
+    "caseTitle": "Aufnahme subarachnoidale Blutung",
+    "task": "Aufnahmebrief subarachnoidale Blutung.",
+    "patientData": "50J w 65kg",
+    "history": "Plötzlicher Vernichtungskopfschmerz, Nackensteifigkeit, Erbrechen. GCS 13.",
+    "examFindings": "GCS 13, Meningismus, keine Paresen. RR 160/95.",
+    "diagnostics": "cCT: Subarachnoidalblutung. Angiographie: Aneurysma A. communicans anterior.",
+    "assessment": "Subarachnoidalblutung bei Aneurysma Acom",
+    "treatment": "Coiling des Aneurysmas. Nimodipin p.o. RR-Senkung. ITS-Überwachung.",
+    "dischargePlan": "Nimodipin 4 Wo. RR-Einstellung. Verlauf cCT. Prognose neurologisch abwarten.",
+    "expectedStructure": [
+      "Symptome",
+      "Diagnostik",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "SAB bei Aneurysma ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme S.D. 50J. SAB bei Aneurysma Acom. Coiling, Nimodipin, ITS. RR-Einstellung. Neurologische Prognose abwarten.",
+    "requiredConcepts": [
+      "writing.175"
+    ],
+    "taughtInLessonId": "fsp_l_035",
+    "conceptId": "fsp.writing.175",
+    "tags": [
+      "Aufnahmebrief",
+      "Neurochirurgie",
+      "SAB"
+    ]
+  },
+  {
+    "id": "fsp_w_176",
+    "caseTitle": "Überweisung Psychiatrie",
+    "task": "Überweisung bei Verdacht auf bipolare Störung.",
+    "patientData": "34J m 78kg",
+    "history": "Wiederholt Phasen von Hochstimmung mit vermindertem Schlafbedarf, riskantem Verhalten, dann depressive Phasen.",
+    "examFindings": "Hochgestimmte Stimmung, Rededrang, Größenideen, Antrieb gesteigert.",
+    "diagnostics": "Klinische Diagnose: V.a. bipolare affektive Störung, aktuell manische Episode.",
+    "assessment": "V.a. bipolare Störung, akute Manie",
+    "treatment": "Einleitung Olanzapin, Valproat. Keine Fremdgefährdung evident.",
+    "dischargePlan": "Vorstellung Psychiatrie zur stationären Einweisung. Keine akute Eigen-/Fremdgefährdung.",
+    "expectedStructure": [
+      "Symptome",
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Verdacht auf bipolare Störung ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Überweisung N.K. 34J. V.a. bipolare Störung, akute Manie. Olanzapin. Stationäre Psychiatrie empfohlen.",
+    "requiredConcepts": [
+      "writing.176"
+    ],
+    "taughtInLessonId": "fsp_l_036",
+    "conceptId": "fsp.writing.176",
+    "tags": [
+      "Überweisung",
+      "Psychiatrie",
+      "Bipolar"
+    ]
+  },
+  {
+    "id": "fsp_w_177",
+    "caseTitle": "Entlassung nach Krampfanfall",
+    "task": "Entlassungsbrief nach erstmaligem Krampfanfall.",
+    "patientData": "30J m 80kg",
+    "history": "Erstmaliger generalisierter tonisch-klonischer Krampfanfall beim Frühstück, Dauer 2min.",
+    "examFindings": "GCS 15, neurologisch o.B., keine fokal-neurologischen Defizite.",
+    "diagnostics": "cCT: o.B. EEG: generalisierte Verlangsamung, keine epilepsietypischen Potenziale. MRT: o.B.",
+    "assessment": "Erstmaliger unprovozierter generalisierter Krampfanfall",
+    "treatment": "Keine antikonvulsive Therapie eingeleitet (niedriges Rezidivrisiko nach Studienlage).",
+    "dischargePlan": "Kein Auto fahren für 6 Monate. Epileptologe in 2 Wo. Bei erneutem Anfall Levetiracetam. MRT termingerecht.",
+    "expectedStructure": [
+      "Anfallsbeschreibung",
+      "Diagnostik",
+      "Aufklärung",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Erstmaliger unprovozierter Krampfanfall ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung C.R. 30J. Erstmaliger generalisierter Krampfanfall. cCT/MRT/EEG o.B. Keine Antiepileptika. Fahrverbot 6 Mo. Epileptologe in 2Wo.",
+    "requiredConcepts": [
+      "writing.177"
+    ],
+    "taughtInLessonId": "fsp_l_037",
+    "conceptId": "fsp.writing.177",
+    "tags": [
+      "Entlassungsbrief",
+      "Neurologie",
+      "Krampfanfall"
+    ]
+  },
+  {
+    "id": "fsp_w_178",
+    "caseTitle": "Entlassung Bronchiolitis",
+    "task": "Entlassungsbrief bei Bronchiolitis (Säugling).",
+    "patientData": "8 Mo w 8kg",
+    "history": "Husten, Fieber 38,5°C, Atemnot seit 3 Tagen. Verschlechterung trotz Inhalation.",
+    "examFindings": "AF 55, SpO2 93%, exspiratorisches Giemen, Brustkorbüberblähung.",
+    "diagnostics": "RSV-Schnelltest positiv. Röntgen: Überblähung, peribronchiale Infiltrate.",
+    "assessment": "Bronchiolitis bei RSV-Infektion",
+    "treatment": "O2 1L/min über Nasenbrille, Inhalation mit NaCl 3%, Absaugen. Kost: Muttermilch.",
+    "dischargePlan": "Nach Hause bei stabiler SpO2. Bei erneuter Atemnot oder Trinkverweigerung sofort vorstellen. Kontrolle beim Kinderarzt in 3 Tagen.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Entlasskriterien",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Bronchiolitis bei RSV ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung E.M. 8Mo. RSV-Bronchiolitis. O2 + NaCl-Inhal. Stabil entlassen. Bei Verschlechterung sofort. Kinderarzt in 3d.",
+    "requiredConcepts": [
+      "writing.178"
+    ],
+    "taughtInLessonId": "fsp_l_038",
+    "conceptId": "fsp.writing.178",
+    "tags": [
+      "Entlassungsbrief",
+      "Pädiatrie",
+      "Bronchiolitis"
+    ]
+  },
+  {
+    "id": "fsp_w_179",
+    "caseTitle": "Aufnahme Niereninsuffizienz akut",
+    "task": "Aufnahmebrief akute Niereninsuffizienz.",
+    "patientData": "62J m 82kg DM, HT",
+    "history": "Seit 3 Tagen verminderte Urinausscheidung, Ödeme Beine. Nach NSAR-Einnahme.",
+    "examFindings": "Beinödeme, RR 155/90, Harnblase o.B.",
+    "diagnostics": "Krea 4,8 (vor 1 Monat 1,2), Harnstoff 120, Kalium 5,5, Urin: Ery+",
+    "assessment": "Akute Nierenschädigung (AKI) Stadium 3 bei NSAR-induzierter ATN",
+    "treatment": "NSAR sofort abgesetzt, Volumengabe, Kalium senken mit Polystyrolsulfonat, Harnstoff-Diurese. Dialyse vorbereitet.",
+    "dischargePlan": "Krea-Kontrolle täglich. Kaliumsenkung bei Bedarf. Nierenbiopsie falls keine Erholung. Nephrologe ambulant.",
+    "expectedStructure": [
+      "Ereignis",
+      "Labor",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "AKI bei NSAR-Einnahme ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Aufnahme T.K. 62J. AKI 3 nach NSAR. Krea 4,8. NSAR-Stopp, Volumen, Kaliumsenkung. Dialyse vorbereitet. Nephrologe.",
+    "requiredConcepts": [
+      "writing.179"
+    ],
+    "taughtInLessonId": "fsp_l_039",
+    "conceptId": "fsp.writing.179",
+    "tags": [
+      "Aufnahmebrief",
+      "Nephrologie",
+      "AKI"
+    ]
+  },
+  {
+    "id": "fsp_w_180",
+    "caseTitle": "Entlassung Gonarthrose",
+    "task": "Entlassungsbrief konservative Therapie bei Gonarthrose.",
+    "patientData": "55J w 78kg",
+    "history": "Kniegelenkschmerzen bds seit 2 Jahren, Anlaufschmerz, Treppensteigen schmerzhaft.",
+    "examFindings": "Knie bds Krepitus, Bewegung L 0-0-100/R 0-0-100, kein Erguss.",
+    "diagnostics": "Röntgen: medial betonte Gonarthrose bds, geringer Gelenkspaltverschmälerung.",
+    "assessment": "Gonarthrose bds Stadium II, konservative Therapie",
+    "treatment": "Physiotherapie, Gewichtsreduktion, Ibuprofen bei Bedarf, ggf. Hyaluronsäure-Injektion.",
+    "dischargePlan": "Physio 6x, Gewichtsreduktion, orthopädische Einlagen. Bei Progredienz Vorfriststellung Knie-TEP.",
+    "expectedStructure": [
+      "Diagnose",
+      "Therapie",
+      "Plan"
+    ],
+    "usefulPhrases": [
+      "Bei Gonarthrose ..."
+    ],
+    "rubric": {
+      "structure": 30,
+      "content": 40,
+      "language": 30
+    },
+    "modelAnswer": "Entlassung E.G. 55J. Gonarthrose bds Stadium II. Physio, Gewichtsreduktion, Ibuprofen. Vorfriststellung TEP bei Progredienz.",
+    "requiredConcepts": [
+      "writing.180"
+    ],
+    "taughtInLessonId": "fsp_l_040",
+    "conceptId": "fsp.writing.180",
+    "tags": [
+      "Entlassungsbrief",
+      "Orthopädie",
+      "Gonarthrose"
     ]
   }
 ]

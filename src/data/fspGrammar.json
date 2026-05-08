@@ -10,7 +10,9 @@
       "Husten besteht"
     ],
     "answer": "Husten besteht",
-    "explanation": "In medizinischen Dokumenten werden Verben oft nominalisiert. Statt 'der Patient hustet' schreibt man kurz: 'Husten'. Das spart Platz und wirkt professioneller."
+    "explanation": "In medizinischen Dokumenten werden Verben oft nominalisiert. Statt 'der Patient hustet' schreibt man kurz: 'Husten'. Das spart Platz und wirkt professioneller.",
+    "conceptId": "fsp.grammar.001",
+    "taughtInLessonId": "fsp_l_001"
   },
   {
     "id": "g02",
@@ -23,7 +25,9 @@
       "Temperatur"
     ],
     "answer": "Fieber ist vorhanden",
-    "explanation": "'Fieber ist vorhanden' ist dokumententauglich und klar. Die reine Nennung ohne Verb ist für den Fliesstext oft zu knapp."
+    "explanation": "'Fieber ist vorhanden' ist dokumententauglich und klar. Die reine Nennung ohne Verb ist für den Fliesstext oft zu knapp.",
+    "conceptId": "fsp.grammar.002",
+    "taughtInLessonId": "fsp_l_001"
   },
   {
     "id": "g03",
@@ -36,7 +40,9 @@
       "Man öffnete die Bauchdecke"
     ],
     "answer": "Die Bauchdecke wurde geöffnet",
-    "explanation": "Im OP-Bericht ist das Passiv ohne Nennung des Handelnden Standard. Der Fokus liegt auf der Handlung, nicht auf der Person."
+    "explanation": "Im OP-Bericht ist das Passiv ohne Nennung des Handelnden Standard. Der Fokus liegt auf der Handlung, nicht auf der Person.",
+    "conceptId": "fsp.grammar.003",
+    "taughtInLessonId": "fsp_l_001"
   },
   {
     "id": "g04",
@@ -49,7 +55,9 @@
       "Patient wird entlassen gewesen"
     ],
     "answer": "Der Patient wurde entlassen",
-    "explanation": "'wurde entlassen' ist das korrekte Vorgangspassiv im Präteritum, das im Arztbrief Standard ist."
+    "explanation": "'wurde entlassen' ist das korrekte Vorgangspassiv im Präteritum, das im Arztbrief Standard ist.",
+    "conceptId": "fsp.grammar.004",
+    "taughtInLessonId": "fsp_l_002"
   },
   {
     "id": "g05",
@@ -62,7 +70,9 @@
       "Der Patient hätte starke Rückenschmerzen"
     ],
     "answer": "Der Patient habe starke Rückenschmerzen",
-    "explanation": "Konjunktiv I ('habe') zeigt indirekte Rede an. Das ist Standard, um Äusserungen des Patienten von der eigenen Beurteilung abzugrenzen."
+    "explanation": "Konjunktiv I ('habe') zeigt indirekte Rede an. Das ist Standard, um Äusserungen des Patienten von der eigenen Beurteilung abzugrenzen.",
+    "conceptId": "fsp.grammar.005",
+    "taughtInLessonId": "fsp_l_002"
   },
   {
     "id": "g06",
@@ -75,7 +85,9 @@
       "Die Tochter berichtete über unregelmässige Tabletteneinnahme"
     ],
     "answer": "Laut Tochter nehme ihr Vater die Tabletten nicht regelmässig",
-    "explanation": "'nehme' ist Konjunktiv I von 'nehmen'. Die Verwendung von 'laut' plus Konjunktiv I ist im Arztbrief typisch."
+    "explanation": "'nehme' ist Konjunktiv I von 'nehmen'. Die Verwendung von 'laut' plus Konjunktiv I ist im Arztbrief typisch.",
+    "conceptId": "fsp.grammar.006",
+    "taughtInLessonId": "fsp_l_003"
   },
   {
     "id": "g07",
@@ -88,7 +100,9 @@
       "Allergien sind nicht vorhanden bei dem Patienten"
     ],
     "answer": "Keine bekannten Allergien",
-    "explanation": "Arztbriefe brauchen Präzision und Kürze. 'Keine bekannten Allergien' ist Standard. Das Wort 'bekannt' signalisiert, dass die Information auf der Eigenanamnese beruht."
+    "explanation": "Arztbriefe brauchen Präzision und Kürze. 'Keine bekannten Allergien' ist Standard. Das Wort 'bekannt' signalisiert, dass die Information auf der Eigenanamnese beruht.",
+    "conceptId": "fsp.grammar.007",
+    "taughtInLessonId": "fsp_l_003"
   },
   {
     "id": "g08",
@@ -101,7 +115,9 @@
       "Schmerzen, Fieber, Einweisung"
     ],
     "answer": "Zunächst Schmerzen, dann Fieber, anschliessend Einweisung",
-    "explanation": "Die klare zeitliche Abfolge mit 'zunächst - dann - anschliessend' ist im Arztbrief Standard für Verlaufsbeschreibungen."
+    "explanation": "Die klare zeitliche Abfolge mit 'zunächst - dann - anschliessend' ist im Arztbrief Standard für Verlaufsbeschreibungen.",
+    "conceptId": "fsp.grammar.008",
+    "taughtInLessonId": "fsp_l_003"
   },
   {
     "id": "g09",
@@ -114,7 +130,9 @@
       "Magen tat weh, weil er Ibuprofen nahm"
     ],
     "answer": "Magenbeschwerden aufgrund von Ibuprofen-Einnahme",
-    "explanation": "'aufgrund von' ist die fachlich angemessene kausale Präposition im Arztbrief. Sie ist präzise und neutral."
+    "explanation": "'aufgrund von' ist die fachlich angemessene kausale Präposition im Arztbrief. Sie ist präzise und neutral.",
+    "conceptId": "fsp.grammar.009",
+    "taughtInLessonId": "fsp_l_004"
   },
   {
     "id": "g10",
@@ -127,7 +145,9 @@
       "Die OP hat Risiken"
     ],
     "answer": "Es besteht ein Risiko von ca. 2% für eine Nachblutung",
-    "explanation": "Risiken müssen spezifisch und quantifiziert werden. 'ca. 2%' ist präzise. Vage Angaben wie 'gefährlich' sind für die Dokumentation ungeeignet."
+    "explanation": "Risiken müssen spezifisch und quantifiziert werden. 'ca. 2%' ist präzise. Vage Angaben wie 'gefährlich' sind für die Dokumentation ungeeignet.",
+    "conceptId": "fsp.grammar.010",
+    "taughtInLessonId": "fsp_l_004"
   },
   {
     "id": "g100",
@@ -140,7 +160,9 @@
       "Patient ist nie krank gewesen"
     ],
     "answer": "Der Patient gibt an, nie krank gewesen zu sein",
-    "explanation": "Bei auffälligen oder unglaubwürdigen Aussagen ist die indirekte Wiedergabe mit 'gibt an' oder 'gibt an, ... zu sein' besonders wichtig, um Distanz zu signalisieren."
+    "explanation": "Bei auffälligen oder unglaubwürdigen Aussagen ist die indirekte Wiedergabe mit 'gibt an' oder 'gibt an, ... zu sein' besonders wichtig, um Distanz zu signalisieren.",
+    "conceptId": "fsp.grammar.011",
+    "taughtInLessonId": "fsp_l_005"
   },
   {
     "id": "g11",
@@ -153,7 +175,9 @@
       "Patient muss zur Physiotherapie gehen"
     ],
     "answer": "Wir empfehlen eine physiotherapeutische Mitbehandlung",
-    "explanation": "'Wir empfehlen' ist die Standardformulierung für Therapieempfehlungen. Sie ist verbindlich, aber nicht befehlend."
+    "explanation": "'Wir empfehlen' ist die Standardformulierung für Therapieempfehlungen. Sie ist verbindlich, aber nicht befehlend.",
+    "conceptId": "fsp.grammar.012",
+    "taughtInLessonId": "fsp_l_005"
   },
   {
     "id": "g12",
@@ -166,7 +190,9 @@
       "Das ist ein Infarkt des Myokards"
     ],
     "answer": "Ein Herzinfarkt ist ein Gefässverschluss im Herzen",
-    "explanation": "'Herzinfarkt' ist der verständliche Begriff. Die zusätzliche Erklärung 'Gefässverschluss im Herzen' macht es für Patienten klar."
+    "explanation": "'Herzinfarkt' ist der verständliche Begriff. Die zusätzliche Erklärung 'Gefässverschluss im Herzen' macht es für Patienten klar.",
+    "conceptId": "fsp.grammar.013",
+    "taughtInLessonId": "fsp_l_005"
   },
   {
     "id": "g13",
@@ -179,7 +205,9 @@
       "Der Patient klagte über Luftnot und präkordialen Druckschmerz"
     ],
     "answer": "Der Patient hatte Atemnot und Brustschmerzen",
-    "explanation": "'Atemnot' und 'Brustschmerzen' sind Fachleuten und Patienten gleichermassen verständlich. Das ist im Entlassungsbrief wichtig."
+    "explanation": "'Atemnot' und 'Brustschmerzen' sind Fachleuten und Patienten gleichermassen verständlich. Das ist im Entlassungsbrief wichtig.",
+    "conceptId": "fsp.grammar.014",
+    "taughtInLessonId": "fsp_l_006"
   },
   {
     "id": "g14",
@@ -192,7 +220,9 @@
       "Knie schmerzt seit einiger Zeit"
     ],
     "answer": "Seit Wochen bestehende Schmerzen im rechten Knie",
-    "explanation": "Dieser Satz nennt eindeutig Dauer (seit Wochen), Lokalisation (rechtes Knie) und Beschwerde (Schmerzen). Alle anderen Angaben sind vage."
+    "explanation": "Dieser Satz nennt eindeutig Dauer (seit Wochen), Lokalisation (rechtes Knie) und Beschwerde (Schmerzen). Alle anderen Angaben sind vage.",
+    "conceptId": "fsp.grammar.015",
+    "taughtInLessonId": "fsp_l_006"
   },
   {
     "id": "g15",
@@ -205,7 +235,9 @@
       "BDr für Blutdruckwert"
     ],
     "answer": "RR für Blutdruck nach Riva-Rocci",
-    "explanation": "'RR' ist die historisch korrekte Abkürzung für den Blutdruck (nach Riva-Rocci). 'BD' wird selten verwendet, 'BP' ist englisch."
+    "explanation": "'RR' ist die historisch korrekte Abkürzung für den Blutdruck (nach Riva-Rocci). 'BD' wird selten verwendet, 'BP' ist englisch.",
+    "conceptId": "fsp.grammar.016",
+    "taughtInLessonId": "fsp_l_007"
   },
   {
     "id": "g16",
@@ -218,7 +250,9 @@
       "Ich denke, es könnte eine Lungenembolie sein"
     ],
     "answer": "V.a. Lungenembolie",
-    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung für eine vorläufige Diagnose. Sie signalisiert professionelle Unsicherheit."
+    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung für eine vorläufige Diagnose. Sie signalisiert professionelle Unsicherheit.",
+    "conceptId": "fsp.grammar.017",
+    "taughtInLessonId": "fsp_l_007"
   },
   {
     "id": "g17",
@@ -231,7 +265,9 @@
       "Unklar, was der Patient hat"
     ],
     "answer": "Am ehesten handelt es sich um eine Gastritis, DD Ulkus",
-    "explanation": "'Am ehesten' priorisiert die wahrscheinlichste Diagnose. 'DD' (Differentialdiagnose) nennt die Alternative. Das ist die fachlich korrekte Art der Dokumentation."
+    "explanation": "'Am ehesten' priorisiert die wahrscheinlichste Diagnose. 'DD' (Differentialdiagnose) nennt die Alternative. Das ist die fachlich korrekte Art der Dokumentation.",
+    "conceptId": "fsp.grammar.018",
+    "taughtInLessonId": "fsp_l_007"
   },
   {
     "id": "g18",
@@ -244,7 +280,9 @@
       "Einmal täglich eine Tablette"
     ],
     "answer": "Metoprolol 50 mg 1-0-0",
-    "explanation": "Das Standardformat enthält: Wirkstoff, Dosis und Dosierschema (1-0-0 = morgens-mittags-abends). Das ist eindeutig."
+    "explanation": "Das Standardformat enthält: Wirkstoff, Dosis und Dosierschema (1-0-0 = morgens-mittags-abends). Das ist eindeutig.",
+    "conceptId": "fsp.grammar.019",
+    "taughtInLessonId": "fsp_l_008"
   },
   {
     "id": "g19",
@@ -257,7 +295,9 @@
       "Geh zum Hausarzt"
     ],
     "answer": "Wir empfehlen Vorstellung beim Hausarzt in einer Woche",
-    "explanation": "Die Standardformulierung enthält den Empfänger (Hausarzt) und das Zeitfenster (in einer Woche)."
+    "explanation": "Die Standardformulierung enthält den Empfänger (Hausarzt) und das Zeitfenster (in einer Woche).",
+    "conceptId": "fsp.grammar.020",
+    "taughtInLessonId": "fsp_l_008"
   },
   {
     "id": "g20",
@@ -270,7 +310,9 @@
       "Der Patient war damit ok"
     ],
     "answer": "Der Patient willigte nach ausführlicher Aufklärung in die Operation ein",
-    "explanation": "Die Dokumentation der Einwilligung muss enthalten: (1) dass aufgeklärt wurde, (2) dass der Patient eingewilligt hat, (3) worin genau. Das ist rechtlich erforderlich."
+    "explanation": "Die Dokumentation der Einwilligung muss enthalten: (1) dass aufgeklärt wurde, (2) dass der Patient eingewilligt hat, (3) worin genau. Das ist rechtlich erforderlich.",
+    "conceptId": "fsp.grammar.021",
+    "taughtInLessonId": "fsp_l_009"
   },
   {
     "id": "g21",
@@ -283,7 +325,9 @@
       "Hb 9,2, kann warten bis morgen"
     ],
     "answer": "Hb 9,2 g/dl von 11,5 g/dl. Kein Frischblut im Drainagesystem. RR stabil bei 120/80, Puls 88. Bitte Hb-Kontrolle in 4 Stunden. Bei Hb <8 oder RR-Abfall bitte informieren.",
-    "explanation": "Die Übergabe enthält den konkreten Hb-Wert, die Dynamik, die Vitalparameter, den nächsten Kontrollzeitpunkt und die Alarmgrenzen."
+    "explanation": "Die Übergabe enthält den konkreten Hb-Wert, die Dynamik, die Vitalparameter, den nächsten Kontrollzeitpunkt und die Alarmgrenzen.",
+    "conceptId": "fsp.grammar.022",
+    "taughtInLessonId": "fsp_l_009"
   },
   {
     "id": "g22",
@@ -296,7 +340,9 @@
       "Der Satz ist korrekt"
     ],
     "answer": "Es fehlt, bei wem er sich vorstellen soll",
-    "explanation": "'sich vorstellen' ohne Nennung des Empfängers ist unvollständig. Korrekt wäre: 'Vorstellung beim Hausarzt in 1 Woche'."
+    "explanation": "'sich vorstellen' ohne Nennung des Empfängers ist unvollständig. Korrekt wäre: 'Vorstellung beim Hausarzt in 1 Woche'.",
+    "conceptId": "fsp.grammar.023",
+    "taughtInLessonId": "fsp_l_009"
   },
   {
     "id": "g23",
@@ -309,7 +355,9 @@
       "Erbrechung"
     ],
     "answer": "Erbrechen",
-    "explanation": "'Erbrechen' ist die substantivierte Form des Infinitivs. Sie ist kurz und eindeutig. 'Erbrechung' ist kein korrektes Wort."
+    "explanation": "'Erbrechen' ist die substantivierte Form des Infinitivs. Sie ist kurz und eindeutig. 'Erbrechung' ist kein korrektes Wort.",
+    "conceptId": "fsp.grammar.024",
+    "taughtInLessonId": "fsp_l_010"
   },
   {
     "id": "g24",
@@ -322,7 +370,9 @@
       "Durch mich erfolgte die Zugangslegung"
     ],
     "answer": "Der Zugang wurde gelegt",
-    "explanation": "Passiv ist der Standard für pflegerische und ärztliche Massnahmen im Bericht. Die Nennung der Person ist unüblich."
+    "explanation": "Passiv ist der Standard für pflegerische und ärztliche Massnahmen im Bericht. Die Nennung der Person ist unüblich.",
+    "conceptId": "fsp.grammar.025",
+    "taughtInLessonId": "fsp_l_010"
   },
   {
     "id": "g25",
@@ -335,7 +385,9 @@
       "Angeblich stürzte der Patient gestern"
     ],
     "answer": "Der Patient sei gestern gestürzt",
-    "explanation": "'sei' ist Konjunktiv I von 'sein'. Die indirekte Rede signalisiert, dass es sich um die Angabe des Patienten handelt."
+    "explanation": "'sei' ist Konjunktiv I von 'sein'. Die indirekte Rede signalisiert, dass es sich um die Angabe des Patienten handelt.",
+    "conceptId": "fsp.grammar.026",
+    "taughtInLessonId": "fsp_l_011"
   },
   {
     "id": "g26",
@@ -348,7 +400,9 @@
       "Aufnahme, Therapie, Diagnose"
     ],
     "answer": "Aufnahme, Diagnose, Therapie",
-    "explanation": "Die chronologische Reihenfolge ist im Arztbrief Standard: erst die Aufnahme, dann die Diagnosestellung, dann der Therapiebeginn."
+    "explanation": "Die chronologische Reihenfolge ist im Arztbrief Standard: erst die Aufnahme, dann die Diagnosestellung, dann der Therapiebeginn.",
+    "conceptId": "fsp.grammar.027",
+    "taughtInLessonId": "fsp_l_011"
   },
   {
     "id": "g27",
@@ -361,7 +415,9 @@
       "Hüftfraktur resultierend von Sturz"
     ],
     "answer": "Ursächlich für die Hüftfraktur war ein Sturz",
-    "explanation": "'Ursächlich für ... war' ist die fachliche Kausalformulierung. Sie ist präzise und passivisch neutral."
+    "explanation": "'Ursächlich für ... war' ist die fachliche Kausalformulierung. Sie ist präzise und passivisch neutral.",
+    "conceptId": "fsp.grammar.028",
+    "taughtInLessonId": "fsp_l_011"
   },
   {
     "id": "g28",
@@ -374,7 +430,9 @@
       "Die Therapie hilft immer"
     ],
     "answer": "Die Vorteile der Therapie überwiegen die möglichen Risiken",
-    "explanation": "Die Formulierung nennt beide Seiten (Vorteile und Risiken) und gibt eine Abwägung. Das ist die Standardformulierung in der Nutzen-Risiko-Abwägung."
+    "explanation": "Die Formulierung nennt beide Seiten (Vorteile und Risiken) und gibt eine Abwägung. Das ist die Standardformulierung in der Nutzen-Risiko-Abwägung.",
+    "conceptId": "fsp.grammar.029",
+    "taughtInLessonId": "fsp_l_012"
   },
   {
     "id": "g29",
@@ -387,7 +445,9 @@
       "Gehen Sie ins Krankenhaus"
     ],
     "answer": "Wir raten dringend zu einer stationären Aufnahme",
-    "explanation": "'Wir raten dringend zu' drückt eine starke Empfehlung aus, bleibt aber im Rahmen der ärztlichen Empfehlungssprache."
+    "explanation": "'Wir raten dringend zu' drückt eine starke Empfehlung aus, bleibt aber im Rahmen der ärztlichen Empfehlungssprache.",
+    "conceptId": "fsp.grammar.030",
+    "taughtInLessonId": "fsp_l_012"
   },
   {
     "id": "g30",
@@ -400,7 +460,9 @@
       "Pankreasenzyme"
     ],
     "answer": "Das sind Enzyme aus der Bauchspeicheldrüse",
-    "explanation": "'Bauchspeicheldrüse' ist die verständliche Bezeichnung für 'Pankreas'. 'Enzyme aus der ...' erklärt die Herkunft verständlich."
+    "explanation": "'Bauchspeicheldrüse' ist die verständliche Bezeichnung für 'Pankreas'. 'Enzyme aus der ...' erklärt die Herkunft verständlich.",
+    "conceptId": "fsp.grammar.031",
+    "taughtInLessonId": "fsp_l_013"
   },
   {
     "id": "g31",
@@ -413,7 +475,9 @@
       "Schluckakt pathologisch"
     ],
     "answer": "Patient kann nicht schlucken und könnte sich verschlucken",
-    "explanation": "Pflegepersonal braucht klare Handlungsanweisungen. 'kann nicht schlucken' ist eindeutig, 'könnte sich verschlucken' beschreibt die Konseqünz."
+    "explanation": "Pflegepersonal braucht klare Handlungsanweisungen. 'kann nicht schlucken' ist eindeutig, 'könnte sich verschlucken' beschreibt die Konseqünz.",
+    "conceptId": "fsp.grammar.032",
+    "taughtInLessonId": "fsp_l_013"
   },
   {
     "id": "g32",
@@ -426,7 +490,9 @@
       "Richtig lagern"
     ],
     "answer": "Oberkörper hochlagern, 30 Grad, Knie leicht gebeugt",
-    "explanation": "Präzise Anweisungen geben Winkelgrad (30 Grad) und Körperteile (Oberkörper, Knie) an. 'Gut' und 'richtig' sind interpretationsbedürftig."
+    "explanation": "Präzise Anweisungen geben Winkelgrad (30 Grad) und Körperteile (Oberkörper, Knie) an. 'Gut' und 'richtig' sind interpretationsbedürftig.",
+    "conceptId": "fsp.grammar.033",
+    "taughtInLessonId": "fsp_l_013"
   },
   {
     "id": "g33",
@@ -439,7 +505,9 @@
       "N"
     ],
     "answer": "R",
-    "explanation": "Einzelbuchstaben-Abkürzungen wie 'R' (für rechts) sind gefährlich, weil sie leicht übersehen oder verwechselt werden. Standard ist 're.' oder 'rechts'."
+    "explanation": "Einzelbuchstaben-Abkürzungen wie 'R' (für rechts) sind gefährlich, weil sie leicht übersehen oder verwechselt werden. Standard ist 're.' oder 'rechts'.",
+    "conceptId": "fsp.grammar.034",
+    "taughtInLessonId": "fsp_l_014"
   },
   {
     "id": "g34",
@@ -452,7 +520,9 @@
       "Unklare Diagnose"
     ],
     "answer": "DD: Pneumonie, Bronchitis, COPD",
-    "explanation": "'DD' ist die Standardabkürzung für Differentialdiagnosen. Die Liste wird absteigend nach Wahrscheinlichkeit sortiert."
+    "explanation": "'DD' ist die Standardabkürzung für Differentialdiagnosen. Die Liste wird absteigend nach Wahrscheinlichkeit sortiert.",
+    "conceptId": "fsp.grammar.035",
+    "taughtInLessonId": "fsp_l_014"
   },
   {
     "id": "g35",
@@ -465,7 +535,9 @@
       "Unklares Abdomen"
     ],
     "answer": "V.a. Cholezystitis",
-    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung für einen konkreten Verdacht. Sie drückt aus, dass weitere Abklärung nötig ist."
+    "explanation": "'V.a.' (Verdacht auf) ist die Standardformulierung für einen konkreten Verdacht. Sie drückt aus, dass weitere Abklärung nötig ist.",
+    "conceptId": "fsp.grammar.036",
+    "taughtInLessonId": "fsp_l_015"
   },
   {
     "id": "g36",
@@ -478,7 +550,9 @@
       "Bei Schmerzen Novalgin nehmen"
     ],
     "answer": "Novalgin 500 mg bei Bedarf, max. 3x/Tag",
-    "explanation": "Bedarfsmedikation muss enthalten: Wirkstoff, Dosis, Maximalfreqünz. 'max. 3x/Tag' verhindert Überdosierung."
+    "explanation": "Bedarfsmedikation muss enthalten: Wirkstoff, Dosis, Maximalfreqünz. 'max. 3x/Tag' verhindert Überdosierung.",
+    "conceptId": "fsp.grammar.037",
+    "taughtInLessonId": "fsp_l_015"
   },
   {
     "id": "g37",
@@ -491,7 +565,9 @@
       "Bitte um Pflege"
     ],
     "answer": "Wir empfehlen die Beantragung eines Pflegegrades beim MDK",
-    "explanation": "Die Empfehlung nennt den genauen Vorgang (Beantragung eines Pflegegrades) und die zuständige Stelle (MDK). Das ist für die Weiterbehandlung wichtig."
+    "explanation": "Die Empfehlung nennt den genauen Vorgang (Beantragung eines Pflegegrades) und die zuständige Stelle (MDK). Das ist für die Weiterbehandlung wichtig.",
+    "conceptId": "fsp.grammar.038",
+    "taughtInLessonId": "fsp_l_015"
   },
   {
     "id": "g38",
@@ -504,7 +580,9 @@
       "Patient nicht einwilligungsfähig"
     ],
     "answer": "Aufklärung und Einwilligung erfolgte durch den gesetzlichen Betreür, Herrn Müller",
-    "explanation": "Bei nicht einwilligungsfähigen Patienten muss dokumentiert werden: (1) wer aufgeklärt hat, (2) wer eingewilligt hat, (3) in welcher Funktion."
+    "explanation": "Bei nicht einwilligungsfähigen Patienten muss dokumentiert werden: (1) wer aufgeklärt hat, (2) wer eingewilligt hat, (3) in welcher Funktion.",
+    "conceptId": "fsp.grammar.039",
+    "taughtInLessonId": "fsp_l_016"
   },
   {
     "id": "g39",
@@ -517,7 +595,9 @@
       "Was der Patient gefrühstückt hat"
     ],
     "answer": "Instabile Patienten mit konkreten Handlungsanweisungen",
-    "explanation": "Die Übergabe priorisiert akute Probleme. Instabile Patienten und klare Handlungsanweisungen ('bei Fieber >38,5 Blutkultur abnehmen') sind zentral."
+    "explanation": "Die Übergabe priorisiert akute Probleme. Instabile Patienten und klare Handlungsanweisungen ('bei Fieber >38,5 Blutkultur abnehmen') sind zentral.",
+    "conceptId": "fsp.grammar.040",
+    "taughtInLessonId": "fsp_l_016"
   },
   {
     "id": "g40",
@@ -530,7 +610,9 @@
       "'Schädel' ist falsch geschrieben"
     ],
     "answer": "Richtig wäre: 'Beim Patienten wurde ein CT des Schädels durchgeführt'",
-    "explanation": "'Bei jemandem wird eine Untersuchung durchgeführt' (Dativ), nicht 'jemandem'. Und 'CT des Schädels' (Genitiv) statt 'vom Schädel'."
+    "explanation": "'Bei jemandem wird eine Untersuchung durchgeführt' (Dativ), nicht 'jemandem'. Und 'CT des Schädels' (Genitiv) statt 'vom Schädel'.",
+    "conceptId": "fsp.grammar.041",
+    "taughtInLessonId": "fsp_l_017"
   },
   {
     "id": "g41",
@@ -543,7 +625,9 @@
       "Patient schläft"
     ],
     "answer": "Schlafstörung",
-    "explanation": "'Schlafstörung' ist die fachliche Nominalisierung. Sie ist präziser als 'schlechter Schlaf' und klingt professioneller."
+    "explanation": "'Schlafstörung' ist die fachliche Nominalisierung. Sie ist präziser als 'schlechter Schlaf' und klingt professioneller.",
+    "conceptId": "fsp.grammar.042",
+    "taughtInLessonId": "fsp_l_017"
   },
   {
     "id": "g42",
@@ -556,7 +640,9 @@
       "durchtrennend"
     ],
     "answer": "durchtrennt",
-    "explanation": "'wurde ... durchtrennt' (Passiv Präteritum) ist die korrekte Form im OP-Bericht. Das Präteritum beschreibt abgeschlossene Handlungen."
+    "explanation": "'wurde ... durchtrennt' (Passiv Präteritum) ist die korrekte Form im OP-Bericht. Das Präteritum beschreibt abgeschlossene Handlungen.",
+    "conceptId": "fsp.grammar.043",
+    "taughtInLessonId": "fsp_l_017"
   },
   {
     "id": "g43",
@@ -569,7 +655,9 @@
       "Laut Pflegebericht schlief der Patient nicht"
     ],
     "answer": "Laut Pflege habe der Patient nicht geschlafen",
-    "explanation": "'habe nicht geschlafen' ist Konjunktiv I Perfekt. Die Kombination mit 'laut Pflege' zeigt die Qülle der Information an."
+    "explanation": "'habe nicht geschlafen' ist Konjunktiv I Perfekt. Die Kombination mit 'laut Pflege' zeigt die Qülle der Information an.",
+    "conceptId": "fsp.grammar.044",
+    "taughtInLessonId": "fsp_l_018"
   },
   {
     "id": "g44",
@@ -582,7 +670,9 @@
       "Nichts bekannt"
     ],
     "answer": "Keine Allergien, keine Vorerkrankungen, keine Medikamente",
-    "explanation": "Die vollständige Aufzählung aller drei Bereiche ist trotz Kürze präzise. 'Nichts bekannt' oder 'unauffällig' ist zu vage."
+    "explanation": "Die vollständige Aufzählung aller drei Bereiche ist trotz Kürze präzise. 'Nichts bekannt' oder 'unauffällig' ist zu vage.",
+    "conceptId": "fsp.grammar.045",
+    "taughtInLessonId": "fsp_l_018"
   },
   {
     "id": "g45",
@@ -595,7 +685,9 @@
       "Vom 12.02. bis 16.02. stationär"
     ],
     "answer": "Aufnahme 12.02., OP 13.02., Entlassung 16.02.",
-    "explanation": "Die Nennung von Datum und Ereignis ist Standard. Daten mit Punkten sind eindeutig. Die einfache Reihung spart Platz."
+    "explanation": "Die Nennung von Datum und Ereignis ist Standard. Daten mit Punkten sind eindeutig. Die einfache Reihung spart Platz.",
+    "conceptId": "fsp.grammar.046",
+    "taughtInLessonId": "fsp_l_019"
   },
   {
     "id": "g46",
@@ -608,7 +700,9 @@
       "Ohnmacht wegen niedrigem Blutdruck"
     ],
     "answer": "Ohnmacht bei Blutdruckabfall",
-    "explanation": "'Ohnmacht bei Blutdruckabfall' ist die kürzeste und dennoch klare kausale Verbindung. 'bei' ersetzt hier einen ganzen Kausalsatz."
+    "explanation": "'Ohnmacht bei Blutdruckabfall' ist die kürzeste und dennoch klare kausale Verbindung. 'bei' ersetzt hier einen ganzen Kausalsatz.",
+    "conceptId": "fsp.grammar.047",
+    "taughtInLessonId": "fsp_l_019"
   },
   {
     "id": "g47",
@@ -621,7 +715,9 @@
       "Patient ist nicht einverstanden"
     ],
     "answer": "Auf Risiken einer OP-Verweigerung hingewiesen, Patient lehnt dennoch ab",
-    "explanation": "Die Dokumentation einer OP-Verweigerung muss enthalten: (1) dass aufgeklärt wurde, (2) über welche Folgen, (3) dass der Patient dennoch ablehnt."
+    "explanation": "Die Dokumentation einer OP-Verweigerung muss enthalten: (1) dass aufgeklärt wurde, (2) über welche Folgen, (3) dass der Patient dennoch ablehnt.",
+    "conceptId": "fsp.grammar.048",
+    "taughtInLessonId": "fsp_l_019"
   },
   {
     "id": "g48",
@@ -634,7 +730,9 @@
       "In 2 Wochen zur Kontrolle"
     ],
     "answer": "Wiedervorstellung in der Ambulanz in 2 Wochen",
-    "explanation": "'Wiedervorstellung' ist das fachliche Wort für einen Folgebesuch. Die Angabe des Ortes (Ambulanz) und des Zeitrahmens (2 Wochen) macht es vollständig."
+    "explanation": "'Wiedervorstellung' ist das fachliche Wort für einen Folgebesuch. Die Angabe des Ortes (Ambulanz) und des Zeitrahmens (2 Wochen) macht es vollständig.",
+    "conceptId": "fsp.grammar.049",
+    "taughtInLessonId": "fsp_l_020"
   },
   {
     "id": "g49",
@@ -647,7 +745,9 @@
       "Arrhythmie bedeutet unregelmässigen Herzschlag"
     ],
     "answer": "Das Herz schlägt unregelmässig",
-    "explanation": "'Herz schlägt unregelmässig' ist die einfachste, klinisch korrekte Erklärung. Fachbegriffe werden vermieden, der Kern ist klar."
+    "explanation": "'Herz schlägt unregelmässig' ist die einfachste, klinisch korrekte Erklärung. Fachbegriffe werden vermieden, der Kern ist klar.",
+    "conceptId": "fsp.grammar.050",
+    "taughtInLessonId": "fsp_l_020"
   },
   {
     "id": "g50",
@@ -660,7 +760,9 @@
       "Bitte Gastroskopie"
     ],
     "answer": "Bitte weiterführende Diagnostik des oberen GI-Trakts bei V.a. Ulkus ventriculi",
-    "explanation": "Die Überweisung verwendet Fachtermini (GI-Trakt, Ulkus ventriculi) und nennt den Verdacht. Der Facharzt erwartet präzise Angaben."
+    "explanation": "Die Überweisung verwendet Fachtermini (GI-Trakt, Ulkus ventriculi) und nennt den Verdacht. Der Facharzt erwartet präzise Angaben.",
+    "conceptId": "fsp.grammar.051",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "g51",
@@ -673,7 +775,9 @@
       "Der Patient hat sehr weh"
     ],
     "answer": "Stärke 7/10 auf visüller Analogskala, stechender Charakter, retrosternal",
-    "explanation": "Die VAS (visülle Analogskala) gibt einen objektiven Zahlenwert. Charakter (stechend) und Lokalisation (retrosternal) machen die Beschreibung eindeutig."
+    "explanation": "Die VAS (visülle Analogskala) gibt einen objektiven Zahlenwert. Charakter (stechend) und Lokalisation (retrosternal) machen die Beschreibung eindeutig.",
+    "conceptId": "fsp.grammar.052",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "g52",
@@ -686,7 +790,9 @@
       "AE"
     ],
     "answer": "NW",
-    "explanation": "'NW' ist uneindeutig: es kann für 'Nebenwirkung', 'Nahrungsverweigerung' oder 'Nervenwurzel' stehen. Solche Mehrdeutigkeiten sind gefährlich."
+    "explanation": "'NW' ist uneindeutig: es kann für 'Nebenwirkung', 'Nahrungsverweigerung' oder 'Nervenwurzel' stehen. Solche Mehrdeutigkeiten sind gefährlich.",
+    "conceptId": "fsp.grammar.053",
+    "taughtInLessonId": "fsp_l_021"
   },
   {
     "id": "g53",
@@ -699,7 +805,9 @@
       "Könnte alles vom Herzen sein"
     ],
     "answer": "DD: Myokardinfarkt, Lungenembolie, Pneumothorax",
-    "explanation": "Die Differentialdiagnosen bei Thoraxschmerz sind lebensbedrohliche Erkrankungen, die ausgeschlossen werden müssen. Die Liste ist fallabhängig."
+    "explanation": "Die Differentialdiagnosen bei Thoraxschmerz sind lebensbedrohliche Erkrankungen, die ausgeschlossen werden müssen. Die Liste ist fallabhängig.",
+    "conceptId": "fsp.grammar.054",
+    "taughtInLessonId": "fsp_l_022"
   },
   {
     "id": "g54",
@@ -712,7 +820,9 @@
       "Nicht sicher zu beurteilen"
     ],
     "answer": "Kein sicherer Nachweis einer Raumforderung, Kontrolle in 3 Monaten empfohlen",
-    "explanation": "Unsicherheit im radiologischen Befund wird mit 'kein sicherer Nachweis' ausgedrückt, gefolgt von einer Handlungsempfehlung (Kontrolle)."
+    "explanation": "Unsicherheit im radiologischen Befund wird mit 'kein sicherer Nachweis' ausgedrückt, gefolgt von einer Handlungsempfehlung (Kontrolle).",
+    "conceptId": "fsp.grammar.055",
+    "taughtInLessonId": "fsp_l_022"
   },
   {
     "id": "g55",
@@ -725,7 +835,9 @@
       "Prednisolon weniger nehmen"
     ],
     "answer": "Prednisolon ausschleichen über 2 Wochen: täglich 5 mg Reduktion",
-    "explanation": "Die Ausschleichanweisung enthält: Wirkstoff, Dauer (2 Wochen), Reduktionsschritt (5 mg täglich). So ist die Anweisung eindeutig befolgbar."
+    "explanation": "Die Ausschleichanweisung enthält: Wirkstoff, Dauer (2 Wochen), Reduktionsschritt (5 mg täglich). So ist die Anweisung eindeutig befolgbar.",
+    "conceptId": "fsp.grammar.056",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "g56",
@@ -738,7 +850,9 @@
       "Wunde verbinden"
     ],
     "answer": "Wundkontrolle beim Hausarzt 1x pro Woche, bei Zeichen von Infektion sofortige Vorstellung",
-    "explanation": "Die Empfehlung enthält Freqünz (1x/Woche), Ort (Hausarzt) und eine Alarmgrenze (Infektionszeichen)."
+    "explanation": "Die Empfehlung enthält Freqünz (1x/Woche), Ort (Hausarzt) und eine Alarmgrenze (Infektionszeichen).",
+    "conceptId": "fsp.grammar.057",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "g57",
@@ -751,7 +865,9 @@
       "Patient und Eltern aufgeklärt"
     ],
     "answer": "Aufklärung des Patienten und der Eltern, Einwilligung durch beide Eltern",
-    "explanation": "Bei Minderjährigen unter 18 Jahren müssen die Sorgeberechtigten einwilligen. Der Patient wird zusätzlich aufgeklärt (informiertes Einverständnis)."
+    "explanation": "Bei Minderjährigen unter 18 Jahren müssen die Sorgeberechtigten einwilligen. Der Patient wird zusätzlich aufgeklärt (informiertes Einverständnis).",
+    "conceptId": "fsp.grammar.058",
+    "taughtInLessonId": "fsp_l_023"
   },
   {
     "id": "g58",
@@ -764,7 +880,9 @@
       "Die Zimmernummer des Bettnachbarn"
     ],
     "answer": "Die Diagnose und der aktülle Zustand des Patienten",
-    "explanation": "Eine Übergabe braucht minimal: Patient, Diagnose, aktüller Zustand und offene Aufgaben. Nur Name und Zimmer reichen nicht."
+    "explanation": "Eine Übergabe braucht minimal: Patient, Diagnose, aktüller Zustand und offene Aufgaben. Nur Name und Zimmer reichen nicht.",
+    "conceptId": "fsp.grammar.059",
+    "taughtInLessonId": "fsp_l_024"
   },
   {
     "id": "g59",
@@ -777,7 +895,9 @@
       "Cephalea"
     ],
     "answer": "Die Patientin klagte über Kopfschmerzen",
-    "explanation": "'Kopfschmerzen' ist der medizinische Terminus. 'Kopfweh' ist umgangssprachlich und gehört nicht in einen Arztbrief."
+    "explanation": "'Kopfschmerzen' ist der medizinische Terminus. 'Kopfweh' ist umgangssprachlich und gehört nicht in einen Arztbrief.",
+    "conceptId": "fsp.grammar.060",
+    "taughtInLessonId": "fsp_l_024"
   },
   {
     "id": "g60",
@@ -790,7 +910,9 @@
       "Patient hat Diarrhö"
     ],
     "answer": "Diarrhö",
-    "explanation": "'Diarrhö' ist der medizinische Fachbegriff und wird im Arztbrief bevorzugt. 'Durchfall' ist umgangssprachlich."
+    "explanation": "'Diarrhö' ist der medizinische Fachbegriff und wird im Arztbrief bevorzugt. 'Durchfall' ist umgangssprachlich.",
+    "conceptId": "fsp.grammar.061",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "g61",
@@ -803,7 +925,9 @@
       "wird empfohlen"
     ],
     "answer": "empfohlen",
-    "explanation": "'wurde empfohlen' (Passiv Präteritum) ist korrekt. Die Handlung wurde im Entlassungsprozess abgeschlossen."
+    "explanation": "'wurde empfohlen' (Passiv Präteritum) ist korrekt. Die Handlung wurde im Entlassungsprozess abgeschlossen.",
+    "conceptId": "fsp.grammar.062",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "g62",
@@ -816,7 +940,9 @@
       "Gewichtsverlust von 10 kg in 3 Monaten"
     ],
     "answer": "Der Patient habe in 3 Monaten 10 kg abgenommen",
-    "explanation": "'habe abgenommen' ist Konjunktiv I Perfekt. Die indirekte Wiedergabe ist wichtig, da es sich um die Eigenangabe des Patienten handelt."
+    "explanation": "'habe abgenommen' ist Konjunktiv I Perfekt. Die indirekte Wiedergabe ist wichtig, da es sich um die Eigenangabe des Patienten handelt.",
+    "conceptId": "fsp.grammar.063",
+    "taughtInLessonId": "fsp_l_025"
   },
   {
     "id": "g63",
@@ -829,7 +955,9 @@
       "Mehrere chronische Erkrankungen bekannt"
     ],
     "answer": "IC: Hypertonie, Diabetes Typ 2, COPD",
-    "explanation": "'IC' (Interne Klassifikation) oder 'DG' (Diagnosen) mit einer klaren Liste ist Standard. Die Diagnosen werden nach Fachgebieten sortiert."
+    "explanation": "'IC' (Interne Klassifikation) oder 'DG' (Diagnosen) mit einer klaren Liste ist Standard. Die Diagnosen werden nach Fachgebieten sortiert.",
+    "conceptId": "fsp.grammar.064",
+    "taughtInLessonId": "fsp_l_026"
   },
   {
     "id": "g64",
@@ -842,7 +970,9 @@
       "In den letzten Tagen"
     ],
     "answer": "Seit ca. 3 Tagen bestehende Dysurie",
-    "explanation": "'Seit ca. 3 Tagen' ist präzise genug für die Klinik, aber mit 'ca.' ehrlich. Die Nominalisierung 'bestehende Dysurie' ist fachlich."
+    "explanation": "'Seit ca. 3 Tagen' ist präzise genug für die Klinik, aber mit 'ca.' ehrlich. Die Nominalisierung 'bestehende Dysurie' ist fachlich.",
+    "conceptId": "fsp.grammar.065",
+    "taughtInLessonId": "fsp_l_026"
   },
   {
     "id": "g65",
@@ -855,7 +985,9 @@
       "Übelkeit wegen Narkose"
     ],
     "answer": "Postoperative Übelkeit bei Allgemeinanakose",
-    "explanation": "'Postoperativ' beschreibt den zeitlichen Zusammenhang, 'bei' den kausalen. Das ist die knappste fachliche Formulierung."
+    "explanation": "'Postoperativ' beschreibt den zeitlichen Zusammenhang, 'bei' den kausalen. Das ist die knappste fachliche Formulierung.",
+    "conceptId": "fsp.grammar.066",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "g66",
@@ -868,7 +1000,9 @@
       "Nierenwerte kontrollieren"
     ],
     "answer": "NSAR-Therapie unter strenger Indikationsstellung bei Niereninsuffizienz, Kontrolle der Retentionswerte in 1 Woche",
-    "explanation": "Die Dokumentation zeigt: das Risiko ist bekannt (Niereninsuffizienz), die Indikation ist streng gestellt, und es gibt einen Kontrollplan."
+    "explanation": "Die Dokumentation zeigt: das Risiko ist bekannt (Niereninsuffizienz), die Indikation ist streng gestellt, und es gibt einen Kontrollplan.",
+    "conceptId": "fsp.grammar.067",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "g67",
@@ -881,7 +1015,9 @@
       "Bitte um Reha"
     ],
     "answer": "Wir empfehlen eine stationäre medizinische Rehabilitation aufgrund der erheblichen Funktionseinschränkungen",
-    "explanation": "Eine Reha-Empfehlung enthält die Art (stationär), den Grund (Funktionseinschränkungen) und die Formulierung 'Wir empfehlen'."
+    "explanation": "Eine Reha-Empfehlung enthält die Art (stationär), den Grund (Funktionseinschränkungen) und die Formulierung 'Wir empfehlen'.",
+    "conceptId": "fsp.grammar.068",
+    "taughtInLessonId": "fsp_l_027"
   },
   {
     "id": "g68",
@@ -894,7 +1030,9 @@
       "Herzkatheteruntersuchung"
     ],
     "answer": "Eine Röntgenuntersuchung der Herzkranzgefässe",
-    "explanation": "Für ältere Patienten ist 'Röntgenuntersuchung' vertraut. 'Herzkranzgefässe' erklärt was untersucht wird. Die Einfachheit ist an das Alter angepasst."
+    "explanation": "Für ältere Patienten ist 'Röntgenuntersuchung' vertraut. 'Herzkranzgefässe' erklärt was untersucht wird. Die Einfachheit ist an das Alter angepasst.",
+    "conceptId": "fsp.grammar.069",
+    "taughtInLessonId": "fsp_l_028"
   },
   {
     "id": "g69",
@@ -907,7 +1045,9 @@
       "Normale Schädel-Lagerung"
     ],
     "answer": "30-Grad-Oberkörperhochlagerung, Kopf in Mittelstellung, betroffene Seite frei",
-    "explanation": "Pflegeanweisungen müssen handlungsleitend und präzise sein. Winkel (30 Grad), Position (Kopf in Mittelstellung) und Besonderheit (Seite frei) werden genannt."
+    "explanation": "Pflegeanweisungen müssen handlungsleitend und präzise sein. Winkel (30 Grad), Position (Kopf in Mittelstellung) und Besonderheit (Seite frei) werden genannt.",
+    "conceptId": "fsp.grammar.070",
+    "taughtInLessonId": "fsp_l_028"
   },
   {
     "id": "g70",
@@ -920,7 +1060,9 @@
       "Metformin 1000 mg/Tag"
     ],
     "answer": "Metformin 500 mg 1-0-1, täglich",
-    "explanation": "'1-0-1' bedeutet: 1 Tablette morgens, 0 mittags, 1 abends. Dieses Schema ist eindeutig und international in deutschen Kliniken Standard."
+    "explanation": "'1-0-1' bedeutet: 1 Tablette morgens, 0 mittags, 1 abends. Dieses Schema ist eindeutig und international in deutschen Kliniken Standard.",
+    "conceptId": "fsp.grammar.071",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "g71",
@@ -933,7 +1075,9 @@
       "QD"
     ],
     "answer": "QD",
-    "explanation": "'QD' (quaqü die = einmal täglich) ist eine englische Abkürzung. Im Deutschen ist '1-0-0' oder '1x täglich' üblich. 'QD' kann mit 'QID' (viermal täglich) verwechselt werden."
+    "explanation": "'QD' (quaqü die = einmal täglich) ist eine englische Abkürzung. Im Deutschen ist '1-0-0' oder '1x täglich' üblich. 'QD' kann mit 'QID' (viermal täglich) verwechselt werden.",
+    "conceptId": "fsp.grammar.072",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "g72",
@@ -946,7 +1090,9 @@
       "V.a. Appendizitis, DD: Harnleiterstein"
     ],
     "answer": "V.a. Appendizitis, DD: nichts anderes",
-    "explanation": "'DD: nichts anderes' ist keine sinnvolle Differentialdiagnose. Die DD muss eine konkrete Alternative nennen, die in Betracht gezogen wird."
+    "explanation": "'DD: nichts anderes' ist keine sinnvolle Differentialdiagnose. Die DD muss eine konkrete Alternative nennen, die in Betracht gezogen wird.",
+    "conceptId": "fsp.grammar.073",
+    "taughtInLessonId": "fsp_l_029"
   },
   {
     "id": "g73",
@@ -959,7 +1105,9 @@
       "CRP 8, Wert auffällig"
     ],
     "answer": "CRP 8 mg/l, grenzwertig erhöht, Kontrolle empfohlen",
-    "explanation": "Die Dokumentation nennt den genauen Wert (8 mg/l), die Einordnung (grenzwertig erhöht) und eine Handlungsempfehlung (Kontrolle)."
+    "explanation": "Die Dokumentation nennt den genauen Wert (8 mg/l), die Einordnung (grenzwertig erhöht) und eine Handlungsempfehlung (Kontrolle).",
+    "conceptId": "fsp.grammar.074",
+    "taughtInLessonId": "fsp_l_030"
   },
   {
     "id": "g74",
@@ -972,7 +1120,9 @@
       "Patient kann nicht schlucken"
     ],
     "answer": "Aufgrund von Dysphagie Umstellung auf Saft oder Lösetabletten",
-    "explanation": "Die Anweisung nennt den Grund (Dysphagie) und die Massnahme (Umstellung auf alternative Darreichungsform). Das ist für die Pflege handlungsleitend."
+    "explanation": "Die Anweisung nennt den Grund (Dysphagie) und die Massnahme (Umstellung auf alternative Darreichungsform). Das ist für die Pflege handlungsleitend.",
+    "conceptId": "fsp.grammar.075",
+    "taughtInLessonId": "fsp_l_030"
   },
   {
     "id": "g75",
@@ -985,7 +1135,9 @@
       "Sich um den Patienten kümmern"
     ],
     "answer": "Wir empfehlen eine umgehende Vorstellung in der Psychiatrie, bei akuter Eigengefährdung sofort den Notarzt rufen",
-    "explanation": "Bei psychiatrischen Notfällen muss die Dringlichkeit ('umgehend') und der konkrete Weg (Psychiatrie) genannt werden. Ein Notfallplan gehört dazu."
+    "explanation": "Bei psychiatrischen Notfällen muss die Dringlichkeit ('umgehend') und der konkrete Weg (Psychiatrie) genannt werden. Ein Notfallplan gehört dazu.",
+    "conceptId": "fsp.grammar.076",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "g76",
@@ -998,7 +1150,9 @@
       "Patient hat sich anders entschieden"
     ],
     "answer": "Patient hat die Einwilligung zur Operation widerrufen, über Folgen aufgeklärt",
-    "explanation": "Der Widerruf der Einwilligung muss dokumentiert werden. Ebenso die Aufklärung über die Folgen des Widerrufs."
+    "explanation": "Der Widerruf der Einwilligung muss dokumentiert werden. Ebenso die Aufklärung über die Folgen des Widerrufs.",
+    "conceptId": "fsp.grammar.077",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "g77",
@@ -1011,7 +1165,9 @@
       "Achtung: blutet noch"
     ],
     "answer": "Bitte kontrollieren: Patient Müller, Z.n. TEP rechts, Frischblut im Drainagesystem ca. 200 ml seit 20 Uhr, RR 100/60, Puls 100. Bei >300 ml oder RR <90 bitte informieren.",
-    "explanation": "Eine gute Übergabe enthält: Patientenidentifikation, das konkrete Problem, die objektiven Parameter und eindeutige Alarmgrenzen."
+    "explanation": "Eine gute Übergabe enthält: Patientenidentifikation, das konkrete Problem, die objektiven Parameter und eindeutige Alarmgrenzen.",
+    "conceptId": "fsp.grammar.078",
+    "taughtInLessonId": "fsp_l_031"
   },
   {
     "id": "g78",
@@ -1024,7 +1180,9 @@
       "Die Satzstellung ist falsch"
     ],
     "answer": "Die drei Sätze sind redundant und können zusammengefasst werden",
-    "explanation": "Drei Sätze mit derselben Aussage (alles normal) sind ineffizient. Besser: 'EKG, Lunge und Blutbild unauffällig.'"
+    "explanation": "Drei Sätze mit derselben Aussage (alles normal) sind ineffizient. Besser: 'EKG, Lunge und Blutbild unauffällig.'",
+    "conceptId": "fsp.grammar.079",
+    "taughtInLessonId": "fsp_l_032"
   },
   {
     "id": "g79",
@@ -1037,7 +1195,9 @@
       "Hämaturie"
     ],
     "answer": "Makrohämaturie",
-    "explanation": "'Makrohämaturie' ist die fachlich korrekte Bezeichnung für sichtbares Blut im Urin. Die Einteilung in Mikro- und Makrohämaturie ist klinisch relevant."
+    "explanation": "'Makrohämaturie' ist die fachlich korrekte Bezeichnung für sichtbares Blut im Urin. Die Einteilung in Mikro- und Makrohämaturie ist klinisch relevant.",
+    "conceptId": "fsp.grammar.080",
+    "taughtInLessonId": "fsp_l_032"
   },
   {
     "id": "g80",
@@ -1050,7 +1210,9 @@
       "Ja, mit 'durch mich'"
     ],
     "answer": "Nein, Passiv ist Standard unabhängig von der handelnden Person",
-    "explanation": "Im deutschen Arztbrief ist das Passiv Standard. Die handelnde Person wird nur dann genannt, wenn sie für die Bewertung relevant ist (z.B. Oberarzt vs. Assistenzarzt)."
+    "explanation": "Im deutschen Arztbrief ist das Passiv Standard. Die handelnde Person wird nur dann genannt, wenn sie für die Bewertung relevant ist (z.B. Oberarzt vs. Assistenzarzt).",
+    "conceptId": "fsp.grammar.081",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "g81",
@@ -1063,7 +1225,9 @@
       "Patient werde um 14 Uhr entlassen"
     ],
     "answer": "Entlassung des Patienten erfolge um 14 Uhr",
-    "explanation": "'erfolge' ist Konjunktiv I von 'erfolgen'. Für geplante Ereignisse ist die indirekte Wiedergabe mit 'erfolge' üblich."
+    "explanation": "'erfolge' ist Konjunktiv I von 'erfolgen'. Für geplante Ereignisse ist die indirekte Wiedergabe mit 'erfolge' üblich.",
+    "conceptId": "fsp.grammar.082",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "g82",
@@ -1076,7 +1240,9 @@
       "M: ASS, Statin, Betablocker"
     ],
     "answer": "ASS 100 mg 1-0-0, Atorvastatin 20 mg 0-0-1, Bisoprolol 5 mg 1-0-0",
-    "explanation": "Das Format Wirkstoff-Dosis-Schema ist der Standard für Medikamentenlisten im Arztbrief. Es ist knapp, aber vollständig."
+    "explanation": "Das Format Wirkstoff-Dosis-Schema ist der Standard für Medikamentenlisten im Arztbrief. Es ist knapp, aber vollständig.",
+    "conceptId": "fsp.grammar.083",
+    "taughtInLessonId": "fsp_l_033"
   },
   {
     "id": "g83",
@@ -1089,7 +1255,9 @@
       "Bauchschmerzen nach Nahrungsaufnahme"
     ],
     "answer": "Postprandiale Oberbauchschmerzen",
-    "explanation": "'Postprandial' ist der fachliche Begriff für 'nach dem Essen'. Die Nominalisierung ist kurz und präzise."
+    "explanation": "'Postprandial' ist der fachliche Begriff für 'nach dem Essen'. Die Nominalisierung ist kurz und präzise.",
+    "conceptId": "fsp.grammar.084",
+    "taughtInLessonId": "fsp_l_034"
   },
   {
     "id": "g84",
@@ -1102,7 +1270,9 @@
       "Schmerz verursacht durch Tumor"
     ],
     "answer": "Schmerzsymptomatik bei bekanntem Tumorleiden",
-    "explanation": "'bei (bekanntem) Tumorleiden' ist die Standard-Kausalformulierung. 'Schmerzsymptomatik' ist der fachliche Oberbegriff."
+    "explanation": "'bei (bekanntem) Tumorleiden' ist die Standard-Kausalformulierung. 'Schmerzsymptomatik' ist der fachliche Oberbegriff.",
+    "conceptId": "fsp.grammar.085",
+    "taughtInLessonId": "fsp_l_034"
   },
   {
     "id": "g85",
@@ -1115,7 +1285,9 @@
       "Transfusion abgelehnt"
     ],
     "answer": "Patient lehnt Bluttransfusion aus religiosen Gründen ab, über Risiken aufgeklärt, Alternativtherapie besprochen",
-    "explanation": "Die Dokumentation muss den Grund der Ablehnung (religiös), die Aufklärung über Risiken und die besprochenen Alternativen enthalten."
+    "explanation": "Die Dokumentation muss den Grund der Ablehnung (religiös), die Aufklärung über Risiken und die besprochenen Alternativen enthalten.",
+    "conceptId": "fsp.grammar.086",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "g86",
@@ -1128,7 +1300,9 @@
       "Bitte um Impfung"
     ],
     "answer": "Empfehlung: Hepatitis-A- und Typhus-Impfung vor Reise nach Indien",
-    "explanation": "Die Impfempfehlung nennt die spezifischen Impfungen und den Grund (Reise nach Indien). So ist sie für den Hausarzt umsetzbar."
+    "explanation": "Die Impfempfehlung nennt die spezifischen Impfungen und den Grund (Reise nach Indien). So ist sie für den Hausarzt umsetzbar.",
+    "conceptId": "fsp.grammar.087",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "g87",
@@ -1141,7 +1315,9 @@
       "Sie mussen einen Katheter bekommen"
     ],
     "answer": "Sie können Ihren Urin nicht lassen, obwohl die Blase voll ist",
-    "explanation": "Die Erklärung beschreibt das Problem ('nicht lassen') und den Mechanismus ('obwohl die Blase voll ist'). Das macht es für den Patienten verständlich."
+    "explanation": "Die Erklärung beschreibt das Problem ('nicht lassen') und den Mechanismus ('obwohl die Blase voll ist'). Das macht es für den Patienten verständlich.",
+    "conceptId": "fsp.grammar.088",
+    "taughtInLessonId": "fsp_l_035"
   },
   {
     "id": "g88",
@@ -1154,7 +1330,9 @@
       "Magen-Darm-Spiegelung"
     ],
     "answer": "Wir machen eine Spiegelung des Magens. Sie bekommen etwas zum Schlafen, dann tut es nicht weh.",
-    "explanation": "Bei Sprachbarrieren helfen kurze Sätze, einfaches Vokabular ('Spiegelung des Magens') und die Beschreibung des Erlebens ('zum Schlafen, tut nicht weh')."
+    "explanation": "Bei Sprachbarrieren helfen kurze Sätze, einfaches Vokabular ('Spiegelung des Magens') und die Beschreibung des Erlebens ('zum Schlafen, tut nicht weh').",
+    "conceptId": "fsp.grammar.089",
+    "taughtInLessonId": "fsp_l_036"
   },
   {
     "id": "g89",
@@ -1167,7 +1345,9 @@
       "Vomex 100 mg"
     ],
     "answer": "Vomex 100 mg bei Übelkeit oder Erbrechen, frühestens nach 6 Stunden wiederholbar",
-    "explanation": "'Bei Bedarf' muss konkretisiert werden: welcher Bedarf (Übelkeit oder Erbrechen) und welche Einschränkung (frühestens nach 6 Stunden)."
+    "explanation": "'Bei Bedarf' muss konkretisiert werden: welcher Bedarf (Übelkeit oder Erbrechen) und welche Einschränkung (frühestens nach 6 Stunden).",
+    "conceptId": "fsp.grammar.090",
+    "taughtInLessonId": "fsp_l_036"
   },
   {
     "id": "g90",
@@ -1180,7 +1360,9 @@
       "KHaus"
     ],
     "answer": "KH",
-    "explanation": "'KH' ist die im deutschen Klinikalltag übliche Abkürzung für Krankenhaus. Sie ist kurz, eindeutig und wird überall verstanden."
+    "explanation": "'KH' ist die im deutschen Klinikalltag übliche Abkürzung für Krankenhaus. Sie ist kurz, eindeutig und wird überall verstanden.",
+    "conceptId": "fsp.grammar.091",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "g91",
@@ -1193,7 +1375,9 @@
       "Nicht sicher ob bakteriell oder viral"
     ],
     "answer": "V.a. bakterielle Pneumonie, DD virale Genese",
-    "explanation": "Die Hauptvermutung (V.a. bakterielle Pneumonie) wird zürst genannt, die Alternative folgt mit 'DD'. Das ist die Standardstruktur."
+    "explanation": "Die Hauptvermutung (V.a. bakterielle Pneumonie) wird zürst genannt, die Alternative folgt mit 'DD'. Das ist die Standardstruktur.",
+    "conceptId": "fsp.grammar.092",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "g92",
@@ -1206,7 +1390,9 @@
       "Könnte ein Bruch sein"
     ],
     "answer": "Kein sicherer Nachweis einer Fraktur, jedoch leichte Kortikalisunterbrechung nicht sicher auszuschliessen",
-    "explanation": "Die Formulierung gibt die Unsicherheit präzise wieder: was nicht sicher ist (Fraktur) und was gesehen wurde (Kortikalisunterbrechung)."
+    "explanation": "Die Formulierung gibt die Unsicherheit präzise wieder: was nicht sicher ist (Fraktur) und was gesehen wurde (Kortikalisunterbrechung).",
+    "conceptId": "fsp.grammar.093",
+    "taughtInLessonId": "fsp_l_037"
   },
   {
     "id": "g93",
@@ -1219,7 +1405,9 @@
       "Marcumar, INR kontrollieren"
     ],
     "answer": "Phenprocoumon nach INR-Schema. Ziel-INR 2,0-3,0. Nächste Kontrolle 03.07.",
-    "explanation": "Die Dokumentation der Antikoagulation enthält den Wirkstoff, die Steuerung (nach INR-Schema), den Zielbereich (2,0-3,0) und das nächste Kontrolldatum."
+    "explanation": "Die Dokumentation der Antikoagulation enthält den Wirkstoff, die Steuerung (nach INR-Schema), den Zielbereich (2,0-3,0) und das nächste Kontrolldatum.",
+    "conceptId": "fsp.grammar.094",
+    "taughtInLessonId": "fsp_l_038"
   },
   {
     "id": "g94",
@@ -1232,7 +1420,9 @@
       "Diabetes-Nachsorge einleiten"
     ],
     "answer": "BZ-Tagesprofil 1x wöchentlich, HbA1c-Kontrolle in 3 Monaten, bei Entgleisung Vorstellung in der Notaufnahme",
-    "explanation": "Die Nachsorgeempfehlung enthält: Freqünz (1x wöchentlich), konkrete Parameter (BZ-Tagesprofil, HbA1c) und einen Notfallplan (bei Entgleisung)."
+    "explanation": "Die Nachsorgeempfehlung enthält: Freqünz (1x wöchentlich), konkrete Parameter (BZ-Tagesprofil, HbA1c) und einen Notfallplan (bei Entgleisung).",
+    "conceptId": "fsp.grammar.095",
+    "taughtInLessonId": "fsp_l_038"
   },
   {
     "id": "g95",
@@ -1245,7 +1435,9 @@
       "Patient lehnt Blut ab"
     ],
     "answer": "Einwilligung in OP unter Vorbehalt: keine Blutkonserven. Über Risiken aufgeklärt.",
-    "explanation": "Eingeschränkte Einwilligungen müssen genau dokumentiert werden: worin wird eingewilligt, worin nicht, und dass die Risiken bekannt sind."
+    "explanation": "Eingeschränkte Einwilligungen müssen genau dokumentiert werden: worin wird eingewilligt, worin nicht, und dass die Risiken bekannt sind.",
+    "conceptId": "fsp.grammar.096",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "g96",
@@ -1258,7 +1450,9 @@
       "Fieber, bitte beobachten"
     ],
     "answer": "Fieber seit 3 Tagen bis 39 Grad, Blutkulturen abgenommen, Antibiogramm ausstehend. Bitte CRP-Kontrolle morgen.",
-    "explanation": "Die Übergabe enthält die Dauer, das Ausmass (39 Grad), bereits erfolgte Massnahmen (Blutkulturen) und die offene Aufgabe (CRP-Kontrolle)."
+    "explanation": "Die Übergabe enthält die Dauer, das Ausmass (39 Grad), bereits erfolgte Massnahmen (Blutkulturen) und die offene Aufgabe (CRP-Kontrolle).",
+    "conceptId": "fsp.grammar.097",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "g97",
@@ -1271,7 +1465,9 @@
       "Nein, 'zugestimmt' ist zu informell"
     ],
     "answer": "Ja, der Satz ist korrekt",
-    "explanation": "'Der Patient hat der Operation zugestimmt' (Dativ) ist korrekt. Die Räume 'in die Operation' wäre falsch, da 'zustimmen' den Dativ regiert."
+    "explanation": "'Der Patient hat der Operation zugestimmt' (Dativ) ist korrekt. Die Räume 'in die Operation' wäre falsch, da 'zustimmen' den Dativ regiert.",
+    "conceptId": "fsp.grammar.098",
+    "taughtInLessonId": "fsp_l_039"
   },
   {
     "id": "g98",
@@ -1284,7 +1480,9 @@
       "Psychotisch"
     ],
     "answer": "Delirante Symptomatik mit Halluzinationen",
-    "explanation": "'Delirante Symptomatik' fasst Verwirrtheit und Desorientiertheit zusammen. 'Halluzinationen' werden als konkrete Zusatzinfo genannt."
+    "explanation": "'Delirante Symptomatik' fasst Verwirrtheit und Desorientiertheit zusammen. 'Halluzinationen' werden als konkrete Zusatzinfo genannt.",
+    "conceptId": "fsp.grammar.099",
+    "taughtInLessonId": "fsp_l_040"
   },
   {
     "id": "g99",
@@ -1297,6 +1495,8 @@
       "sichernd"
     ],
     "answer": "gesichert",
-    "explanation": "'Wurde gesichert' ist Passiv Präteritum, Partizip II von 'sichern'. Es beschreibt eine abgeschlossene Handlung."
+    "explanation": "'Wurde gesichert' ist Passiv Präteritum, Partizip II von 'sichern'. Es beschreibt eine abgeschlossene Handlung.",
+    "conceptId": "fsp.grammar.100",
+    "taughtInLessonId": "fsp_l_040"
   }
 ]

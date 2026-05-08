@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import { getState } from '../utils/store';
 import {
   Stethoscope, BookOpen, Mic, PenTool, FileText, Headphones, ClipboardCheck, Target, ChevronRight, Star,
-  Clock, AlertTriangle, GraduationCap, CalendarCheck, ListChecks, TriangleAlert, Network
+  Clock, AlertTriangle, GraduationCap, CalendarCheck, ListChecks, TriangleAlert, Network,
+  Monitor, MessageSquare, HeartPulse, Syringe, Bone, Ambulance, Baby, Brain, FlaskConical,
+  Layers, ChevronLeft, ChevronRight as ChevronRightIcon
 } from 'lucide-react';
-
-
 
 // FSP progress counts (static for now, will be dynamic with localStorage later)
 const progressDefaults = {
@@ -37,15 +37,50 @@ const quickActions = [
   { label: 'Review Mistakes', to: '/mistake-notebook', color: '#ff3355', icon: TriangleAlert },
 ];
 
+const FSP_MODULES = [
+  { module: 1, name: 'FSP Orientation and Exam Structure', icon: Target, color: '#8b5cf6' },
+  { module: 2, name: 'Opening Consultation / Patient Rapport', icon: MessageSquare, color: '#3b82f6' },
+  { module: 3, name: 'Current Complaint / Leitsymptom', icon: Stethoscope, color: '#06b6d4' },
+  { module: 4, name: 'Pain History', icon: HeartPulse, color: '#ef4444' },
+  { module: 5, name: 'Past Medical History', icon: FileText, color: '#10b981' },
+  { module: 6, name: 'Medication and Allergies', icon: Syringe, color: '#f59e0b' },
+  { module: 7, name: 'Family and Social History', icon: Network, color: '#a855f7' },
+  { module: 8, name: 'Review of Systems', icon: ListChecks, color: '#22c55e' },
+  { module: 9, name: 'Physical Examination Language', icon: Monitor, color: '#ff6b00' },
+  { module: 10, name: 'Diagnostics and Investigations', icon: FlaskConical, color: '#3b82f6' },
+  { module: 11, name: 'Explaining Diagnoses', icon: Brain, color: '#06b6d4' },
+  { module: 12, name: 'Treatment Plan', icon: PenTool, color: '#8b5cf6' },
+  { module: 13, name: 'Informed Consent and Risk Communication', icon: ClipboardCheck, color: '#ef4444' },
+  { module: 14, name: 'Doctor-to-Doctor Communication', icon: Mic, color: '#f59e0b' },
+  { module: 15, name: 'Arztbrief Structure', icon: FileText, color: '#10b981' },
+  { module: 16, name: 'Common Internal Medicine Cases', icon: HeartPulse, color: '#a855f7' },
+  { module: 17, name: 'Surgical and Orthopedic Cases', icon: Bone, color: '#22c55e' },
+  { module: 18, name: 'Emergency and Red Flag Communication', icon: Ambulance, color: '#ff3355' },
+  { module: 19, name: 'Pediatric, Geriatric, Psychiatric Contexts', icon: Baby, color: '#3b82f6' },
+  { module: 20, name: 'Full FSP Simulation', icon: CalendarCheck, color: '#ff6b00' },
+];
+
+const SKILL_LINKS = [
+  { label: 'Vocabulary', to: '/medical-fsp/vocabulary', color: '#3b82f6', icon: BookOpen },
+  { label: 'Anamnese', to: '/medical-fsp/anamnese', color: '#06b6d4', icon: ListChecks },
+  { label: 'Cases', to: '/medical-fsp/cases', color: '#8b5cf6', icon: Mic },
+  { label: 'Presentations', to: '/medical-fsp/presentations', color: '#f59e0b', icon: Network },
+  { label: 'Writing', to: '/medical-fsp/writing', color: '#ff6b00', icon: PenTool },
+  { label: 'Listening', to: '/medical-fsp/listening', color: '#22c55e', icon: Headphones },
+  { label: 'Reading', to: '/medical-fsp/reading', color: '#10b981', icon: FileText },
+  { label: 'Grammar', to: '/medical-fsp/grammar', color: '#a855f7', icon: Star },
+  { label: 'Mock Exams', to: '/medical-fsp/exams', color: '#ef4444', icon: CalendarCheck },
+];
+
 export default function MedicalFSPHubPage() {
   const [c1Unlocked, setC1Unlocked] = useState(false);
   const [progress, setProgress] = useState(progressDefaults);
+  const [selectedModule, setSelectedModule] = useState(null);
 
   useEffect(() => {
     const s = getState();
     const b2Exam = s.exams?.B2;
     setC1Unlocked(b2Exam?.passed === true);
-    // Load FSP progress from localStorage
     try {
       const saved = JSON.parse(localStorage.getItem('fspProgress') || '{}');
       setProgress({ ...progressDefaults, ...saved });
@@ -65,7 +100,7 @@ export default function MedicalFSPHubPage() {
         </div>
       </div>
 
-      {/* Overview Card */}
+      {/* FSP Track Description */}
       <div className="rounded-xl p-5 mb-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid rgba(139,92,246,0.2)' }}>
         <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: '#8b5cf6' }}>
           <GraduationCap size={16} /> What is the FSP?
@@ -75,13 +110,19 @@ export default function MedicalFSPHubPage() {
           to work in Germany. It tests C1-level clinical communication: taking patient histories, explaining
           diagnoses, presenting cases to colleagues, and documenting findings.
         </p>
-        <div className="flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
-          <Target size={14} />
-          <span className="text-xs">Recommended level: B2/C1 German before starting FSP prep</span>
+        <div className="flex flex-wrap items-center gap-3" style={{ color: 'var(--text-muted)' }}>
+          <span className="flex items-center gap-1">
+            <Target size={14} />
+            <span className="text-xs">Recommended level: B2/C1 German before starting FSP prep</span>
+          </span>
+          <span className="flex items-center gap-1">
+            <Layers size={14} />
+            <span className="text-xs">20 modules &middot; 40 lessons &middot; 9 skill areas</span>
+          </span>
         </div>
       </div>
 
-      {/* C1 lock warning (non-blocking) */}
+      {/* C1 lock warning */}
       {!c1Unlocked && (
         <div className="rounded-xl p-3 mb-5 flex items-start gap-2" style={{ backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.25)' }}>
           <AlertTriangle size={16} style={{ color: '#ff3355', flexShrink: 0, marginTop: '2px' }} />
@@ -124,6 +165,100 @@ export default function MedicalFSPHubPage() {
         </div>
       </div>
 
+      {/* Skill Area Links */}
+      <div className="mb-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Target size={16} style={{ color: '#ffaa33' }} />
+          <h2 className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Skill Areas</h2>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+          {SKILL_LINKS.map(btn => {
+            const Icon = btn.icon;
+            return (
+              <Link
+                key={btn.label}
+                to={btn.to}
+                className="flex flex-col items-center justify-center gap-1 py-2.5 px-2 rounded-xl text-[10px] font-semibold transition-colors hover:scale-[1.02] text-center"
+                style={{ backgroundColor: btn.color + '15', color: btn.color, border: '1px solid ' + btn.color + '35' }}
+              >
+                <Icon size={16} />
+                {btn.label}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* FSP Module Grid */}
+      <div className="mb-5">
+        <div className="flex items-center gap-2 mb-3">
+          <Layers size={16} style={{ color: '#8b5cf6' }} />
+          <h2 className="text-sm font-semibold" style={{ color: '#8b5cf6' }}>FSP Modules (20 Modules, 40 Lessons)</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {FSP_MODULES.map(mod => {
+            const Icon = mod.icon;
+            const lessonStart = (mod.module - 1) * 2 + 1;
+            const lessonEnd = lessonStart + 1;
+            const lessonIds = `fsp_l_${String(lessonStart).padStart(3, '0')}, fsp_l_${String(lessonEnd).padStart(3, '0')}`;
+            return (
+              <div
+                key={mod.module}
+                className="rounded-xl p-3 flex items-start gap-3 transition-colors hover:scale-[1.01] cursor-pointer"
+                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+                onClick={() => setSelectedModule(selectedModule === mod.module ? null : mod.module)}
+              >
+                <div
+                  className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-xs font-bold"
+                  style={{ backgroundColor: mod.color + '18', color: mod.color }}
+                >
+                  {mod.module}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs font-semibold" style={{ color: mod.color }}>{mod.module}. {mod.name}</div>
+                  <div className="text-[10px] mt-0.5" style={{ color: 'var(--text-muted)' }}>
+                    <Icon size={10} style={{ display: 'inline', marginRight: 3, color: mod.color }} />
+                    2 lessons
+                  </div>
+
+                  {/* Expanded skill links */}
+                  {selectedModule === mod.module && (
+                    <div className="mt-2 pt-2" style={{ borderTop: '1px solid var(--border)' }}>
+                      <div className="flex flex-wrap gap-1.5">
+                        {SKILL_LINKS.map(skill => (
+                          <Link
+                            key={skill.label}
+                            to={skill.to + `#module=${mod.module}`}
+                            className="inline-flex items-center gap-1 px-2 py-1 rounded text-[10px] font-medium transition-colors hover:scale-105"
+                            style={{
+                              backgroundColor: skill.color + '15',
+                              color: skill.color,
+                              border: '1px solid ' + skill.color + '30',
+                            }}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <skill.icon size={10} />
+                            {skill.label}
+                          </Link>
+                        ))}
+                      </div>
+                      <div className="mt-1.5 text-[9px]" style={{ color: 'var(--text-muted)' }}>
+                        Lessons: {lessonIds}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {selectedModule === mod.module ? (
+                  <ChevronLeft size={14} style={{ color: mod.color, flexShrink: 0, marginTop: 2 }} />
+                ) : (
+                  <ChevronRightIcon size={14} style={{ color: 'var(--text-muted)', flexShrink: 0, marginTop: 2 }} />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Quick Actions */}
       <div className="mb-5">
         <div className="flex items-center gap-2 mb-3">
@@ -142,7 +277,7 @@ export default function MedicalFSPHubPage() {
               >
                 <Icon size={14} />
                 {btn.label}
-                <ChevronRight size={12} />
+                <ChevronRightIcon size={12} />
               </Link>
             );
           })}
@@ -176,7 +311,7 @@ export default function MedicalFSPHubPage() {
                   <div className="text-xs font-semibold" style={{ color: item.color }}>{item.label}</div>
                   <div className="text-[11px]" style={{ color: 'var(--text-muted)' }}>{item.desc}</div>
                 </div>
-                <ChevronRight size={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
+                <ChevronRightIcon size={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }} />
               </Link>
             );
           })}
