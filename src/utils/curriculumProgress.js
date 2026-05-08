@@ -283,7 +283,7 @@ function findUnitByLinkedQuestionId(questionId) {
  * @param {string} level
  * @returns {Array<{ itemId: string, reason: string }>}
  */
-export function validateDailySessionPrerequisites(session, userProgress, level) {
+export function validateDailySessionPrerequisites(session, userProgress, _level) {
   const issues = [];
 
   if (!session) return issues;

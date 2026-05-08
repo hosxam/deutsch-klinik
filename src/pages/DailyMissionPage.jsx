@@ -1517,6 +1517,7 @@ export default function DailyMissionPage() {
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
                 Today's plan will not test grammar from lessons you have not studied. Continue with review, flashcards, or the next mission.
               </p>
+              {/* eslint-disable-next-line react-hooks/refs -- advance is a plain function, not a ref */}
               <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('grammar', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
             </div>
           );
@@ -1575,7 +1576,7 @@ export default function DailyMissionPage() {
           );
         }
         const hasAns = gr !== null;
-        
+
         const optionTypes = ['mcq', 'article-select', 'case-select', 'conjugation'];
         // Defensive: check if exercise actually has options; if not, always render text input
         const hasOptions = Array.isArray(ex.options) && ex.options.length > 0;
@@ -1650,6 +1651,7 @@ export default function DailyMissionPage() {
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
                 The daily plan is avoiding words from lessons you have not studied. Use flashcards or continue to the next mission.
               </p>
+              {/* eslint-disable-next-line react-hooks/refs -- advance is a plain function, not a ref */}
               <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('vocabulary', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
             </div>
           );
@@ -2002,7 +2004,7 @@ export default function DailyMissionPage() {
         </div>
       )}
 
-      {/* FLASHCARD MISSION — Inline SM-2 Flashcard Review */}
+      {/* FLASHCARD MISSION - Inline SM-2 Flashcard Review */}
       {cm.type === 'flashcards' && (() => {
         const target = cm?.target || 10;
         // Build card deck on first render
@@ -2013,7 +2015,7 @@ export default function DailyMissionPage() {
           const deck = levelWords
             .filter(w => dueIds.has(`${lvl}_${w.id}`))
             .slice(0, target);
-          // Async set outside render — use effect-equivalent timeout
+          // Async set outside render - use effect-equivalent timeout
           setTimeout(() => setFcCards(deck), 0);
         }
 
@@ -2035,6 +2037,7 @@ export default function DailyMissionPage() {
             }
             if (fcIdx + 1 >= fcCards.length) {
               setFcDone(true);
+              {/* eslint-disable-next-line react-hooks/refs -- hFlashcardsDone is a plain function, not a ref */}
               hFlashcardsDone();
             } else {
               setFcIdx(fcIdx + 1);
@@ -2101,7 +2104,7 @@ export default function DailyMissionPage() {
           );
         }
 
-        // Deck ready but not started — show start screen
+        // Deck ready but not started - show start screen
         if (fcCards.length > 0 && !fcStarted && !fcDone) {
           return (
             <div style={sCard}>

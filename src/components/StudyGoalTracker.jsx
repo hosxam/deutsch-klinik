@@ -93,6 +93,7 @@ const ESTIMATED_MINUTES = {
   exam: 30,
 };
 
+/* unused
 function calculateTodayMinutes(state) {
   const today = getLocalDateString();
   let total = 0;
@@ -147,6 +148,7 @@ function calculateTodayMinutes(state) {
 
   return total;
 }
+*/
 
 function getLocalDateKeysForPast7Days() {
   const keys = [];
