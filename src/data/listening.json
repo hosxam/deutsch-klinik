@@ -6437,13 +6437,15 @@
             "Zehn Millionen",
             "Fünfzig Millionen"
           ],
-          "answer": "Zehn Millionen"
+          "answer": "Zehn Millionen",
+          "explanation": "Antwort: Zehn Millionen"
         },
         {
           "id": "lq24",
           "type": "true-false",
           "question": "Der Antibiotikaverbrauch in Deutschland ist gestiegen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "lq25",
@@ -6455,12 +6457,18 @@
             "15%",
             "20%"
           ],
-          "answer": "15%"
+          "answer": "15%",
+          "explanation": "Antwort: 15%"
         }
       ],
       "lessonId": "B2_lesson_7",
       "level": "B2",
-      "audio": "audio/listening/b2-listen-1.mp3"
+      "audio": "audio/listening/b2-listen-1.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.1",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_2",
@@ -6477,7 +6485,8 @@
             "Kürzere Wartezeiten",
             "Mehr private Krankenhäuser"
           ],
-          "answer": "Solidarität und niedrigere Verwaltungskosten"
+          "answer": "Solidarität und niedrigere Verwaltungskosten",
+          "explanation": "Antwort: Solidarität und niedrigere Verwaltungskosten"
         },
         {
           "id": "lq27",
@@ -6489,12 +6498,18 @@
             "Weniger Ã„rzte",
             "Schlechtere Medikamente"
           ],
-          "answer": "Längere Wartezeiten und weniger Wahlfreiheit"
+          "answer": "Längere Wartezeiten und weniger Wahlfreiheit",
+          "explanation": "Antwort: Längere Wartezeiten und weniger Wahlfreiheit"
         }
       ],
       "lessonId": "B2_lesson_16",
       "level": "B2",
-      "audio": "audio/listening/b2-listen-2.mp3"
+      "audio": "audio/listening/b2-listen-2.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.2",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_3",
@@ -6511,7 +6526,8 @@
             "500",
             "1000"
           ],
-          "answer": "500"
+          "answer": "500",
+          "explanation": "Antwort: 500"
         },
         {
           "id": "lq29",
@@ -6523,18 +6539,25 @@
             "Beide gleich",
             "Keine von beiden"
           ],
-          "answer": "Physiotherapie"
+          "answer": "Physiotherapie",
+          "explanation": "Antwort: Physiotherapie"
         },
         {
           "id": "lq30",
           "type": "true-false",
           "question": "Die Kortisoninjektion hatte einen langanhaltenden Effekt.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
       "lessonId": "B2_lesson_22",
       "level": "B2",
-      "audio": "audio/listening/b2-listen-3.mp3"
+      "audio": "audio/listening/b2-listen-3.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.3",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_4",
@@ -6547,7 +6570,8 @@
           "id": "b2l4a",
           "type": "true-false",
           "question": "Die Durchsage betrifft nur Ärzte.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "b2l4b",
@@ -6559,7 +6583,8 @@
             "Zu viele Patienten",
             "Defekte Geräte"
           ],
-          "answer": "Missverständnisse zwischen Stationen"
+          "answer": "Missverständnisse zwischen Stationen",
+          "explanation": "Antwort: Missverständnisse zwischen Stationen"
         },
         {
           "id": "b2l4c",
@@ -6571,10 +6596,16 @@
             "Nur die Pflegekräfte",
             "Nur die Ärzte"
           ],
-          "answer": "Pflegekräfte und Ärzte der Inneren Medizin"
+          "answer": "Pflegekräfte und Ärzte der Inneren Medizin",
+          "explanation": "Antwort: Pflegekräfte und Ärzte der Inneren Medizin"
         }
       ],
-      "audio": "audio/listening/b2-listen-4.mp3"
+      "audio": "audio/listening/b2-listen-4.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.4",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_5",
@@ -6593,13 +6624,15 @@
             "Weniger schlafen",
             "Allein lernen"
           ],
-          "answer": "Feste Lernzeiten und Lerngruppen"
+          "answer": "Feste Lernzeiten und Lerngruppen",
+          "explanation": "Antwort: Feste Lernzeiten und Lerngruppen"
         },
         {
           "id": "b2l5b",
           "type": "true-false",
           "question": "Die Online-Datenbanken sind rund um die Uhr verfügbar.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l5c",
@@ -6611,10 +6644,16 @@
             "Weil die Bibliothek schliesst",
             "Weil der Körper Schlaf braucht"
           ],
-          "answer": "Weil das Gehirn Erholung braucht"
+          "answer": "Weil das Gehirn Erholung braucht",
+          "explanation": "Antwort: Weil das Gehirn Erholung braucht"
         }
       ],
-      "audio": "audio/listening/b2-listen-5.mp3"
+      "audio": "audio/listening/b2-listen-5.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.5",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_6",
@@ -6633,13 +6672,15 @@
             "Drei",
             "Vier"
           ],
-          "answer": "Zwei"
+          "answer": "Zwei",
+          "explanation": "Antwort: Zwei"
         },
         {
           "id": "b2l6b",
           "type": "true-false",
           "question": "Bei bewusstlosen Patienten wird ausschließlich das Armband verwendet.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l6c",
@@ -6651,10 +6692,16 @@
             "Den Patienten entlassen",
             "Das Medikament trotzdem geben"
           ],
-          "answer": "Den Stationsarzt informieren"
+          "answer": "Den Stationsarzt informieren",
+          "explanation": "Antwort: Den Stationsarzt informieren"
         }
       ],
-      "audio": "audio/listening/b2-listen-6.mp3"
+      "audio": "audio/listening/b2-listen-6.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.6",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_7",
@@ -6673,13 +6720,15 @@
             "28",
             "30"
           ],
-          "answer": "28"
+          "answer": "28",
+          "explanation": "Antwort: 28"
         },
         {
           "id": "b2l7b",
           "type": "true-false",
           "question": "Frau Müller auf Zimmer 12 wird heute entlassen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l7c",
@@ -6691,10 +6740,16 @@
             "Zehn Uhr",
             "Elf Uhr"
           ],
-          "answer": "Zehn Uhr"
+          "answer": "Zehn Uhr",
+          "explanation": "Antwort: Zehn Uhr"
         }
       ],
-      "audio": "audio/listening/b2-listen-7.mp3"
+      "audio": "audio/listening/b2-listen-7.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.7",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_8",
@@ -6713,13 +6768,15 @@
             "15 Minuten",
             "20 Minuten"
           ],
-          "answer": "15 Minuten"
+          "answer": "15 Minuten",
+          "explanation": "Antwort: 15 Minuten"
         },
         {
           "id": "b2l8b",
           "type": "true-false",
           "question": "Termine können online über die Webseite gebucht werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l8c",
@@ -6731,10 +6788,16 @@
             "20 Euro",
             "25 Euro"
           ],
-          "answer": "25 Euro"
+          "answer": "25 Euro",
+          "explanation": "Antwort: 25 Euro"
         }
       ],
-      "audio": "audio/listening/b2-listen-8.mp3"
+      "audio": "audio/listening/b2-listen-8.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.8",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_9",
@@ -6753,13 +6816,15 @@
             "Drei Monate",
             "Sechs Monate"
           ],
-          "answer": "Drei Monate"
+          "answer": "Drei Monate",
+          "explanation": "Antwort: Drei Monate"
         },
         {
           "id": "b2l9b",
           "type": "true-false",
           "question": "Experten raten, einen Versicherungsberater aufzusuchen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l9c",
@@ -6771,10 +6836,16 @@
             "Weil sie alle Leistungen abdeckt",
             "Weil sie einfacher ist"
           ],
-          "answer": "Weil die Beiträge vom Einkommen abhängen"
+          "answer": "Weil die Beiträge vom Einkommen abhängen",
+          "explanation": "Antwort: Weil die Beiträge vom Einkommen abhängen"
         }
       ],
-      "audio": "audio/listening/b2-listen-9.mp3"
+      "audio": "audio/listening/b2-listen-9.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.9",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_10",
@@ -6793,13 +6864,15 @@
             "2009",
             "2015"
           ],
-          "answer": "2009"
+          "answer": "2009",
+          "explanation": "Antwort: 2009"
         },
         {
           "id": "b2l10b",
           "type": "true-false",
           "question": "Der demografische Wandel belastet das Gesundheitssystem.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l10c",
@@ -6811,10 +6884,16 @@
             "Höhere Steuern",
             "Weniger Versicherte"
           ],
-          "answer": "Investitionen in Prävention und digitale Angebote"
+          "answer": "Investitionen in Prävention und digitale Angebote",
+          "explanation": "Antwort: Investitionen in Prävention und digitale Angebote"
         }
       ],
-      "audio": "audio/listening/b2-listen-10.mp3"
+      "audio": "audio/listening/b2-listen-10.mp3",
+      "taughtInLessonId": "B2_lesson_22",
+      "conceptId": "b2.listening.10",
+      "requiredConcepts": [
+        "B2.lesson_22"
+      ]
     },
     {
       "id": "B2_listen_11",
@@ -6833,7 +6912,8 @@
             "2021",
             "2022"
           ],
-          "answer": "2021"
+          "answer": "2021",
+          "explanation": "Antwort: 2021"
         },
         {
           "id": "b2l11b",
@@ -6845,16 +6925,23 @@
             "Nur Rezepte",
             "Nur Krankschreibungen"
           ],
-          "answer": "Befunde, Medikationspläne und Impfungen"
+          "answer": "Befunde, Medikationspläne und Impfungen",
+          "explanation": "Antwort: Befunde, Medikationspläne und Impfungen"
         },
         {
           "id": "b2l11c",
           "type": "true-false",
           "question": "Jeder Arzt darf alle Daten in der ePA ohne Einschränkung einsehen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
-      "audio": "audio/listening/b2-listen-11.mp3"
+      "audio": "audio/listening/b2-listen-11.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.11",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_12",
@@ -6873,13 +6960,15 @@
             "Nur Fleisch essen",
             "Auf Kohlenhydrate verzichten"
           ],
-          "answer": "Bunt und abwechslungsreich essen"
+          "answer": "Bunt und abwechslungsreich essen",
+          "explanation": "Antwort: Bunt und abwechslungsreich essen"
         },
         {
           "id": "b2l12b",
           "type": "true-false",
           "question": "Stark verarbeitete Lebensmittel sollten vermieden werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l12c",
@@ -6891,10 +6980,16 @@
             "Im Restaurant essen",
             "Fertiggerichte kaufen"
           ],
-          "answer": "Mahlzeiten im Voraus planen"
+          "answer": "Mahlzeiten im Voraus planen",
+          "explanation": "Antwort: Mahlzeiten im Voraus planen"
         }
       ],
-      "audio": "audio/listening/b2-listen-12.mp3"
+      "audio": "audio/listening/b2-listen-12.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.12",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_13",
@@ -6913,7 +7008,8 @@
             "Sportler",
             "Touristen"
           ],
-          "answer": "Ältere Menschen und Kinder"
+          "answer": "Ältere Menschen und Kinder",
+          "explanation": "Antwort: Ältere Menschen und Kinder"
         },
         {
           "id": "b2l13b",
@@ -6925,16 +7021,23 @@
             "Bis zu 8 Grad",
             "Bis zu 10 Grad"
           ],
-          "answer": "Bis zu 5 Grad"
+          "answer": "Bis zu 5 Grad",
+          "explanation": "Antwort: Bis zu 5 Grad"
         },
         {
           "id": "b2l13c",
           "type": "true-false",
           "question": "Das Projekt in Freiburg soll auf andere Städte ausgeweitet werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-13.mp3"
+      "audio": "audio/listening/b2-listen-13.mp3",
+      "taughtInLessonId": "B2_lesson_23",
+      "conceptId": "b2.listening.13",
+      "requiredConcepts": [
+        "B2.lesson_23"
+      ]
     },
     {
       "id": "B2_listen_14",
@@ -6953,7 +7056,8 @@
             "20 Prozent",
             "25 Prozent"
           ],
-          "answer": "20 Prozent"
+          "answer": "20 Prozent",
+          "explanation": "Antwort: 20 Prozent"
         },
         {
           "id": "b2l14b",
@@ -6965,16 +7069,23 @@
             "Grundstücke geschenkt",
             "Höhere Mieten"
           ],
-          "answer": "Zinsgünstige Darlehen"
+          "answer": "Zinsgünstige Darlehen",
+          "explanation": "Antwort: Zinsgünstige Darlehen"
         },
         {
           "id": "b2l14c",
           "type": "true-false",
           "question": "In München fehlen mindestens zehntausend bezahlbare Wohnungen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-14.mp3"
+      "audio": "audio/listening/b2-listen-14.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.14",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_15",
@@ -6993,13 +7104,15 @@
             "Im 15-Minuten-Takt",
             "Im 20-Minuten-Takt"
           ],
-          "answer": "Im 10-Minuten-Takt"
+          "answer": "Im 10-Minuten-Takt",
+          "explanation": "Antwort: Im 10-Minuten-Takt"
         },
         {
           "id": "b2l15b",
           "type": "true-false",
           "question": "Die Haltestelle Hauptbahnhof Süd wird für drei Wochen geschlossen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l15c",
@@ -7011,10 +7124,16 @@
             "Nur am Hauptbahnhof",
             "Nur in der App"
           ],
-          "answer": "An allen Haltestellen und online"
+          "answer": "An allen Haltestellen und online",
+          "explanation": "Antwort: An allen Haltestellen und online"
         }
       ],
-      "audio": "audio/listening/b2-listen-15.mp3"
+      "audio": "audio/listening/b2-listen-15.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.15",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_16",
@@ -7033,7 +7152,8 @@
             "Vier Jahre",
             "Fünf Jahre"
           ],
-          "answer": "Drei Jahre"
+          "answer": "Drei Jahre",
+          "explanation": "Antwort: Drei Jahre"
         },
         {
           "id": "b2l16b",
@@ -7045,16 +7165,23 @@
             "1200 Euro",
             "1500 Euro"
           ],
-          "answer": "1200 Euro"
+          "answer": "1200 Euro",
+          "explanation": "Antwort: 1200 Euro"
         },
         {
           "id": "b2l16c",
           "type": "true-false",
           "question": "Die Pflegeausbildung bietet nur wenige Spezialisierungsmöglichkeiten.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
-      "audio": "audio/listening/b2-listen-16.mp3"
+      "audio": "audio/listening/b2-listen-16.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.16",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_17",
@@ -7073,13 +7200,15 @@
             "Mittwoch und Freitag",
             "Samstag und Sonntag"
           ],
-          "answer": "Dienstag und Donnerstag"
+          "answer": "Dienstag und Donnerstag",
+          "explanation": "Antwort: Dienstag und Donnerstag"
         },
         {
           "id": "b2l17b",
           "type": "true-false",
           "question": "Das Rückentraining ist kostenlos.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l17c",
@@ -7091,10 +7220,16 @@
             "Fünfzehn Prozent",
             "Zwanzig Prozent"
           ],
-          "answer": "Zehn Prozent"
+          "answer": "Zehn Prozent",
+          "explanation": "Antwort: Zehn Prozent"
         }
       ],
-      "audio": "audio/listening/b2-listen-17.mp3"
+      "audio": "audio/listening/b2-listen-17.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.17",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_18",
@@ -7113,13 +7248,15 @@
             "C1",
             "C2"
           ],
-          "answer": "C1"
+          "answer": "C1",
+          "explanation": "Antwort: C1"
         },
         {
           "id": "b2l18b",
           "type": "true-false",
           "question": "Die Anerkennung seines Studiums dauerte etwa anderthalb Jahre.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l18c",
@@ -7131,10 +7268,16 @@
             "Einen anderen Beruf wählen",
             "Nur in der Pflege arbeiten"
           ],
-          "answer": "Nicht aufgeben, der Aufwand lohnt sich"
+          "answer": "Nicht aufgeben, der Aufwand lohnt sich",
+          "explanation": "Antwort: Nicht aufgeben, der Aufwand lohnt sich"
         }
       ],
-      "audio": "audio/listening/b2-listen-18.mp3"
+      "audio": "audio/listening/b2-listen-18.mp3",
+      "taughtInLessonId": "B2_lesson_16",
+      "conceptId": "b2.listening.18",
+      "requiredConcepts": [
+        "B2.lesson_16"
+      ]
     },
     {
       "id": "B2_listen_19",
@@ -7153,7 +7296,8 @@
             "Über 200",
             "Über 500"
           ],
-          "answer": "Über 200"
+          "answer": "Über 200",
+          "explanation": "Antwort: Über 200"
         },
         {
           "id": "b2l19b",
@@ -7165,16 +7309,23 @@
             "Gestohlene Geräte",
             "Papierakten verloren"
           ],
-          "answer": "Versehentliche Weitergabe von Patientendaten"
+          "answer": "Versehentliche Weitergabe von Patientendaten",
+          "explanation": "Antwort: Versehentliche Weitergabe von Patientendaten"
         },
         {
           "id": "b2l19c",
           "type": "true-false",
           "question": "Ab 2026 soll ein neues IT-Sicherheitsgesetz strengere Auflagen vorsehen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-19.mp3"
+      "audio": "audio/listening/b2-listen-19.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.19",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_20",
@@ -7193,13 +7344,15 @@
             "40 Prozent",
             "50 Prozent"
           ],
-          "answer": "40 Prozent"
+          "answer": "40 Prozent",
+          "explanation": "Antwort: 40 Prozent"
         },
         {
           "id": "b2l20b",
           "type": "true-false",
           "question": "Die Ärztekammer empfiehlt, dienstliche und private Inhalte zu trennen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l20c",
@@ -7211,10 +7364,16 @@
             "Zu viele Follower",
             "Negative Kommentare"
           ],
-          "answer": "Falschinformationen und Verletzung der Schweigepflicht"
+          "answer": "Falschinformationen und Verletzung der Schweigepflicht",
+          "explanation": "Antwort: Falschinformationen und Verletzung der Schweigepflicht"
         }
       ],
-      "audio": "audio/listening/b2-listen-20.mp3"
+      "audio": "audio/listening/b2-listen-20.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.20",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_21",
@@ -7233,7 +7392,8 @@
             "Vier Jahre",
             "Fünf Jahre"
           ],
-          "answer": "Fünf Jahre"
+          "answer": "Fünf Jahre",
+          "explanation": "Antwort: Fünf Jahre"
         },
         {
           "id": "b2l21b",
@@ -7245,16 +7405,23 @@
             "100 Stunden",
             "120 Stunden"
           ],
-          "answer": "100 Stunden"
+          "answer": "100 Stunden",
+          "explanation": "Antwort: 100 Stunden"
         },
         {
           "id": "b2l21c",
           "type": "true-false",
           "question": "Die Arbeit im Hospiz beschreibt Frau Schubert als nicht einfach, aber erfüllend.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-21.mp3"
+      "audio": "audio/listening/b2-listen-21.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.21",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_22",
@@ -7273,13 +7440,15 @@
             "Sterbehilfe",
             "Schmerztherapie"
           ],
-          "answer": "Patientenautonomie am Lebensende"
+          "answer": "Patientenautonomie am Lebensende",
+          "explanation": "Antwort: Patientenautonomie am Lebensende"
         },
         {
           "id": "b2l22b",
           "type": "true-false",
           "question": "Professorin Dr. Weiss vertritt die Meinung, dass Patientenverfügungen wichtig für die Selbstbestimmung sind.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l22c",
@@ -7291,10 +7460,16 @@
             "Patientenverfügungen sind ungültig",
             "Ärzte ignorieren Patientenverfügungen"
           ],
-          "answer": "Viele Menschen haben keine Patientenverfügung"
+          "answer": "Viele Menschen haben keine Patientenverfügung",
+          "explanation": "Antwort: Viele Menschen haben keine Patientenverfügung"
         }
       ],
-      "audio": "audio/listening/b2-listen-22.mp3"
+      "audio": "audio/listening/b2-listen-22.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.22",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_23",
@@ -7313,7 +7488,8 @@
             "Vier- bis fünfmal pro Woche",
             "Täglich"
           ],
-          "answer": "Zwei- bis dreimal pro Woche"
+          "answer": "Zwei- bis dreimal pro Woche",
+          "explanation": "Antwort: Zwei- bis dreimal pro Woche"
         },
         {
           "id": "b2l23b",
@@ -7325,16 +7501,23 @@
             "Sechs bis acht Wochen",
             "Acht bis zehn Wochen"
           ],
-          "answer": "Sechs bis acht Wochen"
+          "answer": "Sechs bis acht Wochen",
+          "explanation": "Antwort: Sechs bis acht Wochen"
         },
         {
           "id": "b2l23c",
           "type": "true-false",
           "question": "Die Wohnung muss für die ambulante Reha barrierefrei sein.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-23.mp3"
+      "audio": "audio/listening/b2-listen-23.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.23",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_24",
@@ -7353,7 +7536,8 @@
             "Alle Menschen gehen zur Vorsorge",
             "Die Vorsorge ist kostenpflichtig"
           ],
-          "answer": "Immer weniger Menschen nehmen an der Vorsorge teil"
+          "answer": "Immer weniger Menschen nehmen an der Vorsorge teil",
+          "explanation": "Antwort: Immer weniger Menschen nehmen an der Vorsorge teil"
         },
         {
           "id": "b2l24b",
@@ -7365,16 +7549,23 @@
             "Röntgen und Ultraschall",
             "Hörtest und Allergietest"
           ],
-          "answer": "Darmspiegelung und Hautkrebsscreening"
+          "answer": "Darmspiegelung und Hautkrebsscreening",
+          "explanation": "Antwort: Darmspiegelung und Hautkrebsscreening"
         },
         {
           "id": "b2l24c",
           "type": "true-false",
           "question": "Die Krankenkasse zahlt die Vorsorgeuntersuchungen nicht.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
-      "audio": "audio/listening/b2-listen-24.mp3"
+      "audio": "audio/listening/b2-listen-24.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.24",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_25",
@@ -7393,13 +7584,15 @@
             "Auf einem extra Zettel",
             "In der Arztpraxis"
           ],
-          "answer": "Auf dem Beipackzettel"
+          "answer": "Auf dem Beipackzettel",
+          "explanation": "Antwort: Auf dem Beipackzettel"
         },
         {
           "id": "b2l25b",
           "type": "true-false",
           "question": "Man darf die Dosierung eigenmächtig verändern.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "b2l25c",
@@ -7411,10 +7604,16 @@
             "Im Kühlschrank ohne Verpackung",
             "Im Badezimmerschrank"
           ],
-          "answer": "Kühl, trocken und kindersicher"
+          "answer": "Kühl, trocken und kindersicher",
+          "explanation": "Antwort: Kühl, trocken und kindersicher"
         }
       ],
-      "audio": "audio/listening/b2-listen-25.mp3"
+      "audio": "audio/listening/b2-listen-25.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.25",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_26",
@@ -7433,13 +7632,15 @@
             "Seit drei Wochen",
             "Seit einem Monat"
           ],
-          "answer": "Seit drei Wochen"
+          "answer": "Seit drei Wochen",
+          "explanation": "Antwort: Seit drei Wochen"
         },
         {
           "id": "b2l26b",
           "type": "true-false",
           "question": "Der Patient hat bereits Wärmepflaster ausprobiert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l26c",
@@ -7451,10 +7652,16 @@
             "Eine sofortige Operation",
             "Krankengymnastik nur"
           ],
-          "answer": "Ein Rezept für Salbe und eine Überweisung"
+          "answer": "Ein Rezept für Salbe und eine Überweisung",
+          "explanation": "Antwort: Ein Rezept für Salbe und eine Überweisung"
         }
       ],
-      "audio": "audio/listening/b2-listen-26.mp3"
+      "audio": "audio/listening/b2-listen-26.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.26",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_27",
@@ -7473,13 +7680,15 @@
             "Zwei Seiten",
             "Drei Seiten"
           ],
-          "answer": "Eine Seite"
+          "answer": "Eine Seite",
+          "explanation": "Antwort: Eine Seite"
         },
         {
           "id": "b2l27b",
           "type": "true-false",
           "question": "Der Lebenslauf soll in tabellarischer Form sein.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l27c",
@@ -7491,10 +7700,16 @@
             "Zu lange Berufserfahrung",
             "Farbige Bewerbungen"
           ],
-          "answer": "Rechtschreibfehler"
+          "answer": "Rechtschreibfehler",
+          "explanation": "Antwort: Rechtschreibfehler"
         }
       ],
-      "audio": "audio/listening/b2-listen-27.mp3"
+      "audio": "audio/listening/b2-listen-27.mp3",
+      "taughtInLessonId": "B2_lesson_13",
+      "conceptId": "b2.listening.27",
+      "requiredConcepts": [
+        "B2.lesson_13"
+      ]
     },
     {
       "id": "B2_listen_28",
@@ -7513,7 +7728,8 @@
             "Alte Bewerbung wiederverwenden",
             "Zu spät kommen"
           ],
-          "answer": "Sich über das Krankenhaus informieren"
+          "answer": "Sich über das Krankenhaus informieren",
+          "explanation": "Antwort: Sich über das Krankenhaus informieren"
         },
         {
           "id": "b2l28b",
@@ -7525,16 +7741,23 @@
             "Die Arme verschränken",
             "Auf dem Stuhl wippen"
           ],
-          "answer": "Aufrecht sitzen und Augenkontakt halten"
+          "answer": "Aufrecht sitzen und Augenkontakt halten",
+          "explanation": "Antwort: Aufrecht sitzen und Augenkontakt halten"
         },
         {
           "id": "b2l28c",
           "type": "true-false",
           "question": "Das Vorstellungsgespräch ist eine Prüfung.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
-      "audio": "audio/listening/b2-listen-28.mp3"
+      "audio": "audio/listening/b2-listen-28.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.28",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_29",
@@ -7553,13 +7776,15 @@
             "Freitag",
             "Samstag"
           ],
-          "answer": "Freitag"
+          "answer": "Freitag",
+          "explanation": "Antwort: Freitag"
         },
         {
           "id": "b2l29b",
           "type": "true-false",
           "question": "Die Patientin wohnt alleine und hat Probleme beim Treppensteigen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l29c",
@@ -7571,10 +7796,16 @@
             "Eine Operation",
             "Nur Medikamente"
           ],
-          "answer": "Ein Pflegedienst und Reha-Sport"
+          "answer": "Ein Pflegedienst und Reha-Sport",
+          "explanation": "Antwort: Ein Pflegedienst und Reha-Sport"
         }
       ],
-      "audio": "audio/listening/b2-listen-29.mp3"
+      "audio": "audio/listening/b2-listen-29.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.29",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_30",
@@ -7593,7 +7824,8 @@
             "Eine Wirbelsäulen-OP",
             "Eine Schulter-OP"
           ],
-          "answer": "Eine Kniearthroskopie"
+          "answer": "Eine Kniearthroskopie",
+          "explanation": "Antwort: Eine Kniearthroskopie"
         },
         {
           "id": "b2l30b",
@@ -7605,16 +7837,23 @@
             "45 Minuten",
             "60 Minuten"
           ],
-          "answer": "45 Minuten"
+          "answer": "45 Minuten",
+          "explanation": "Antwort: 45 Minuten"
         },
         {
           "id": "b2l30c",
           "type": "true-false",
           "question": "Die Wahrscheinlichkeit von Komplikationen ist gering.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-30.mp3"
+      "audio": "audio/listening/b2-listen-30.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.30",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_31",
@@ -7633,13 +7872,15 @@
             "Zwischen Chirurgie und Innerer Medizin",
             "Zwischen Verwaltung und Pflege"
           ],
-          "answer": "Zwischen Früh- und Spätschicht"
+          "answer": "Zwischen Früh- und Spätschicht",
+          "explanation": "Antwort: Zwischen Früh- und Spätschicht"
         },
         {
           "id": "b2l31b",
           "type": "true-false",
           "question": "Die Frühschicht hat laut eigener Aussage keine Zeit für ausführliche Berichte.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l31c",
@@ -7651,10 +7892,16 @@
             "Die Spätschicht abschaffen",
             "Weniger Patienten aufnehmen"
           ],
-          "answer": "Ein standardisiertes Übergabeprotokoll"
+          "answer": "Ein standardisiertes Übergabeprotokoll",
+          "explanation": "Antwort: Ein standardisiertes Übergabeprotokoll"
         }
       ],
-      "audio": "audio/listening/b2-listen-31.mp3"
+      "audio": "audio/listening/b2-listen-31.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.31",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_32",
@@ -7673,7 +7920,8 @@
             "1200",
             "2000"
           ],
-          "answer": "1200"
+          "answer": "1200",
+          "explanation": "Antwort: 1200"
         },
         {
           "id": "b2l32b",
@@ -7685,16 +7933,23 @@
             "60 Prozent",
             "70 Prozent"
           ],
-          "answer": "60 Prozent"
+          "answer": "60 Prozent",
+          "explanation": "Antwort: 60 Prozent"
         },
         {
           "id": "b2l32c",
           "type": "true-false",
           "question": "Eine weitere Studie ist nicht notwendig.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         }
       ],
-      "audio": "audio/listening/b2-listen-32.mp3"
+      "audio": "audio/listening/b2-listen-32.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.32",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_33",
@@ -7713,13 +7968,15 @@
             "Den Schlaf überwachen",
             "Termine verwalten"
           ],
-          "answer": "An die Medikamenteneinnahme erinnern und dokumentieren"
+          "answer": "An die Medikamenteneinnahme erinnern und dokumentieren",
+          "explanation": "Antwort: An die Medikamenteneinnahme erinnern und dokumentieren"
         },
         {
           "id": "b2l33b",
           "type": "true-false",
           "question": "Die App BlutCheck misst den Blutdruck mit der Handykamera.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l33c",
@@ -7731,10 +7988,16 @@
             "Zwei sind kostenlos",
             "Nur die erste ist kostenlos"
           ],
-          "answer": "Sie sind kostenlos"
+          "answer": "Sie sind kostenlos",
+          "explanation": "Antwort: Sie sind kostenlos"
         }
       ],
-      "audio": "audio/listening/b2-listen-33.mp3"
+      "audio": "audio/listening/b2-listen-33.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.33",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_34",
@@ -7753,7 +8016,8 @@
             "Alle Mitarbeiter mit direktem Patientenkontakt",
             "Nur neue Mitarbeiter"
           ],
-          "answer": "Alle Mitarbeiter mit direktem Patientenkontakt"
+          "answer": "Alle Mitarbeiter mit direktem Patientenkontakt",
+          "explanation": "Antwort: Alle Mitarbeiter mit direktem Patientenkontakt"
         },
         {
           "id": "b2l34b",
@@ -7765,16 +8029,23 @@
             "Schutzkittel tragen",
             "Fusssohlen desinfizieren"
           ],
-          "answer": "Händedesinfektion vor und nach Patientenkontakt"
+          "answer": "Händedesinfektion vor und nach Patientenkontakt",
+          "explanation": "Antwort: Händedesinfektion vor und nach Patientenkontakt"
         },
         {
           "id": "b2l34c",
           "type": "true-false",
           "question": "Nach der Schulung gibt es einen kurzen Test.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-34.mp3"
+      "audio": "audio/listening/b2-listen-34.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.34",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_35",
@@ -7793,13 +8064,15 @@
             "Die Verdauung",
             "Das Sehvermögen"
           ],
-          "answer": "Den Schlaf-Wach-Rhythmus"
+          "answer": "Den Schlaf-Wach-Rhythmus",
+          "explanation": "Antwort: Den Schlaf-Wach-Rhythmus"
         },
         {
           "id": "b2l35b",
           "type": "true-false",
           "question": "Man sollte nach 14 Uhr keinen Kaffee mehr trinken.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l35c",
@@ -7811,10 +8084,16 @@
             "Durch mehr Sport",
             "Durch früheres Zubettgehen"
           ],
-          "answer": "Durch einen Arztbesuch"
+          "answer": "Durch einen Arztbesuch",
+          "explanation": "Antwort: Durch einen Arztbesuch"
         }
       ],
-      "audio": "audio/listening/b2-listen-35.mp3"
+      "audio": "audio/listening/b2-listen-35.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.35",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_36",
@@ -7833,7 +8112,8 @@
             "Über die Wartezeit",
             "Über die Reinigung"
           ],
-          "answer": "Über die fehlende Information zur Entlassung"
+          "answer": "Über die fehlende Information zur Entlassung",
+          "explanation": "Antwort: Über die fehlende Information zur Entlassung"
         },
         {
           "id": "b2l36b",
@@ -7845,16 +8125,23 @@
             "Eine Woche vorher",
             "Gar nicht"
           ],
-          "answer": "Am Tag vor der Entlassung"
+          "answer": "Am Tag vor der Entlassung",
+          "explanation": "Antwort: Am Tag vor der Entlassung"
         },
         {
           "id": "b2l36c",
           "type": "true-false",
           "question": "Der Mitarbeiter leitet den Vorfall an die Stationsleitung weiter.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-36.mp3"
+      "audio": "audio/listening/b2-listen-36.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.36",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_37",
@@ -7873,13 +8160,15 @@
             "Am Oberarm oben",
             "Am Unterarm"
           ],
-          "answer": "Zwei Zentimeter oberhalb der Ellenbeuge"
+          "answer": "Zwei Zentimeter oberhalb der Ellenbeuge",
+          "explanation": "Antwort: Zwei Zentimeter oberhalb der Ellenbeuge"
         },
         {
           "id": "b2l37b",
           "type": "true-false",
           "question": "Das Gerät zeigt nach etwa 30 Sekunden den Blutdruck an.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l37c",
@@ -7891,10 +8180,16 @@
             "Blutdruck zu hoch",
             "Gerät defekt"
           ],
-          "answer": "Manschette nicht richtig angebracht"
+          "answer": "Manschette nicht richtig angebracht",
+          "explanation": "Antwort: Manschette nicht richtig angebracht"
         }
       ],
-      "audio": "audio/listening/b2-listen-37.mp3"
+      "audio": "audio/listening/b2-listen-37.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.37",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_38",
@@ -7913,7 +8208,8 @@
             "Der Antrag war zu spät",
             "Die Versicherung wurde gekündigt"
           ],
-          "answer": "Die Einrichtung ist nicht im Vertragsnetz"
+          "answer": "Die Einrichtung ist nicht im Vertragsnetz",
+          "explanation": "Antwort: Die Einrichtung ist nicht im Vertragsnetz"
         },
         {
           "id": "b2l38b",
@@ -7925,16 +8221,23 @@
             "Vier Wochen",
             "Sechs Wochen"
           ],
-          "answer": "Vier Wochen"
+          "answer": "Vier Wochen",
+          "explanation": "Antwort: Vier Wochen"
         },
         {
           "id": "b2l38c",
           "type": "true-false",
           "question": "Der Arzt muss eine Verordnung für eine Vertragseinrichtung ausstellen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-38.mp3"
+      "audio": "audio/listening/b2-listen-38.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.38",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_39",
@@ -7953,13 +8256,15 @@
             "Lautes Reden",
             "Allein arbeiten"
           ],
-          "answer": "Essen und Trinken"
+          "answer": "Essen und Trinken",
+          "explanation": "Antwort: Essen und Trinken"
         },
         {
           "id": "b2l39b",
           "type": "true-false",
           "question": "Arbeiten mit infektiösem Material sind unter der Sicherheitswerkbank erlaubt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l39c",
@@ -7971,10 +8276,16 @@
             "Selbst weggehen",
             "Die Polizei rufen"
           ],
-          "answer": "Den Labormanager informieren und die Notdusche betätigen"
+          "answer": "Den Labormanager informieren und die Notdusche betätigen",
+          "explanation": "Antwort: Den Labormanager informieren und die Notdusche betätigen"
         }
       ],
-      "audio": "audio/listening/b2-listen-39.mp3"
+      "audio": "audio/listening/b2-listen-39.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.39",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_40",
@@ -7993,13 +8304,15 @@
             "Sechs Wochen",
             "Acht Wochen"
           ],
-          "answer": "Sechs Wochen"
+          "answer": "Sechs Wochen",
+          "explanation": "Antwort: Sechs Wochen"
         },
         {
           "id": "b2l40b",
           "type": "true-false",
           "question": "Die Klinik bietet ein Gespräch mit der psychologischen Beratungsstelle an.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l40c",
@@ -8011,10 +8324,16 @@
             "Ob die Arbeitszeit reduziert wird",
             "Ob ein Arbeitsplatzwechsel nötig ist"
           ],
-          "answer": "Wie die Aufgaben besser verteilt werden"
+          "answer": "Wie die Aufgaben besser verteilt werden",
+          "explanation": "Antwort: Wie die Aufgaben besser verteilt werden"
         }
       ],
-      "audio": "audio/listening/b2-listen-40.mp3"
+      "audio": "audio/listening/b2-listen-40.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.40",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_41",
@@ -8033,7 +8352,8 @@
             "Vier",
             "Fünf"
           ],
-          "answer": "Drei"
+          "answer": "Drei",
+          "explanation": "Antwort: Drei"
         },
         {
           "id": "b2l41b",
@@ -8045,16 +8365,23 @@
             "Das Gewicht",
             "Den Blutdruck"
           ],
-          "answer": "Was sie essen"
+          "answer": "Was sie essen",
+          "explanation": "Antwort: Was sie essen"
         },
         {
           "id": "b2l41c",
           "type": "true-false",
           "question": "30 Minuten täglicher Spaziergang wird empfohlen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-41.mp3"
+      "audio": "audio/listening/b2-listen-41.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.41",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_42",
@@ -8073,7 +8400,8 @@
             "Ab 60",
             "Ab 65"
           ],
-          "answer": "Ab 60"
+          "answer": "Ab 60",
+          "explanation": "Antwort: Ab 60"
         },
         {
           "id": "b2l42b",
@@ -8085,16 +8413,23 @@
             "Alle fünf Jahre",
             "Alle zehn Jahre"
           ],
-          "answer": "Alle fünf Jahre"
+          "answer": "Alle fünf Jahre",
+          "explanation": "Antwort: Alle fünf Jahre"
         },
         {
           "id": "b2l42c",
           "type": "true-false",
           "question": "Die FSME-Impfung wird für Menschen in Risikogebieten empfohlen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-42.mp3"
+      "audio": "audio/listening/b2-listen-42.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.42",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_43",
@@ -8113,13 +8448,15 @@
             "Einen Impfpass",
             "Eine Überweisung"
           ],
-          "answer": "Die Versicherungskarte und eine Medikamentenliste"
+          "answer": "Die Versicherungskarte und eine Medikamentenliste",
+          "explanation": "Antwort: Die Versicherungskarte und eine Medikamentenliste"
         },
         {
           "id": "b2l43b",
           "type": "true-false",
           "question": "Die Videosprechstunde ersetzt den persönlichen Arztbesuch komplett.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "b2l43c",
@@ -8131,10 +8468,16 @@
             "Nur elektronisch",
             "Muss es selbst abholen"
           ],
-          "answer": "Per Post oder elektronisch"
+          "answer": "Per Post oder elektronisch",
+          "explanation": "Antwort: Per Post oder elektronisch"
         }
       ],
-      "audio": "audio/listening/b2-listen-43.mp3"
+      "audio": "audio/listening/b2-listen-43.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.43",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_44",
@@ -8153,7 +8496,8 @@
             "200",
             "300"
           ],
-          "answer": "200"
+          "answer": "200",
+          "explanation": "Antwort: 200"
         },
         {
           "id": "b2l44b",
@@ -8165,16 +8509,23 @@
             "Ältere Patienten ausschliessen",
             "Nur gesunde Probanden nehmen"
           ],
-          "answer": "Dass ein Betreür zustimmen muss"
+          "answer": "Dass ein Betreür zustimmen muss",
+          "explanation": "Antwort: Dass ein Betreür zustimmen muss"
         },
         {
           "id": "b2l44c",
           "type": "true-false",
           "question": "Die Kommission wird in 30 Minuten abstimmen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-44.mp3"
+      "audio": "audio/listening/b2-listen-44.mp3",
+      "taughtInLessonId": "B2_lesson_12",
+      "conceptId": "b2.listening.44",
+      "requiredConcepts": [
+        "B2.lesson_12"
+      ]
     },
     {
       "id": "B2_listen_45",
@@ -8193,13 +8544,15 @@
             "In drei Wochen",
             "In einem Monat"
           ],
-          "answer": "In zwei Wochen"
+          "answer": "In zwei Wochen",
+          "explanation": "Antwort: In zwei Wochen"
         },
         {
           "id": "b2l45b",
           "type": "true-false",
           "question": "Die Patientin bekommt einen Medikamentenplan.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l45c",
@@ -8211,10 +8564,16 @@
             "Von acht bis sechzehn Uhr",
             "Nur an Wochentagen"
           ],
-          "answer": "Von acht bis sechzehn Uhr"
+          "answer": "Von acht bis sechzehn Uhr",
+          "explanation": "Antwort: Von acht bis sechzehn Uhr"
         }
       ],
-      "audio": "audio/listening/b2-listen-45.mp3"
+      "audio": "audio/listening/b2-listen-45.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.45",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_46",
@@ -8233,7 +8592,8 @@
             "Vom 20. bis 22. November",
             "Vom 5. bis 7. Dezember"
           ],
-          "answer": "Vom 15. bis 17. Oktober"
+          "answer": "Vom 15. bis 17. Oktober",
+          "explanation": "Antwort: Vom 15. bis 17. Oktober"
         },
         {
           "id": "b2l46b",
@@ -8245,16 +8605,23 @@
             "20 Prozent",
             "25 Prozent"
           ],
-          "answer": "20 Prozent"
+          "answer": "20 Prozent",
+          "explanation": "Antwort: 20 Prozent"
         },
         {
           "id": "b2l46c",
           "type": "true-false",
           "question": "Medizinstudierende zahlen einen ermässigten Beitrag.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-46.mp3"
+      "audio": "audio/listening/b2-listen-46.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.46",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_47",
@@ -8273,13 +8640,15 @@
             "Von 15 bis 18 Uhr",
             "Von 12 bis 20 Uhr"
           ],
-          "answer": "Von 14 bis 19 Uhr"
+          "answer": "Von 14 bis 19 Uhr",
+          "explanation": "Antwort: Von 14 bis 19 Uhr"
         },
         {
           "id": "b2l47b",
           "type": "true-false",
           "question": "Es dürfen maximal vier Besucher gleichzeitig am Bett sein.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "b2l47c",
@@ -8291,10 +8660,16 @@
             "Besucher über 70 Jahre",
             "Besucher aus dem Ausland"
           ],
-          "answer": "Besucher mit Husten, Schnupfen oder Fieber"
+          "answer": "Besucher mit Husten, Schnupfen oder Fieber",
+          "explanation": "Antwort: Besucher mit Husten, Schnupfen oder Fieber"
         }
       ],
-      "audio": "audio/listening/b2-listen-47.mp3"
+      "audio": "audio/listening/b2-listen-47.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.47",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_48",
@@ -8313,13 +8688,15 @@
             "Über achttausend",
             "Über zehntausend"
           ],
-          "answer": "Über achttausend"
+          "answer": "Über achttausend",
+          "explanation": "Antwort: Über achttausend"
         },
         {
           "id": "b2l48b",
           "type": "true-false",
           "question": "Täglich sterben drei Menschen, weil nicht genug Organe verfügbar sind.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         },
         {
           "id": "b2l48c",
@@ -8331,10 +8708,16 @@
             "Ab 18 Jahren",
             "Ab 21 Jahren"
           ],
-          "answer": "Ab 16 Jahren"
+          "answer": "Ab 16 Jahren",
+          "explanation": "Antwort: Ab 16 Jahren"
         }
       ],
-      "audio": "audio/listening/b2-listen-48.mp3"
+      "audio": "audio/listening/b2-listen-48.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.48",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_49",
@@ -8353,13 +8736,15 @@
             "Zwei Jahre",
             "Drei Jahre"
           ],
-          "answer": "Zwei Jahre"
+          "answer": "Zwei Jahre",
+          "explanation": "Antwort: Zwei Jahre"
         },
         {
           "id": "b2l49b",
           "type": "true-false",
           "question": "Erste klinische Erfahrung ist zwingend erforderlich.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Antwort: false"
         },
         {
           "id": "b2l49c",
@@ -8371,10 +8756,16 @@
             "Strukturierte Weiterbildung und faire Vergütung",
             "Eine Wohnung"
           ],
-          "answer": "Strukturierte Weiterbildung und faire Vergütung"
+          "answer": "Strukturierte Weiterbildung und faire Vergütung",
+          "explanation": "Antwort: Strukturierte Weiterbildung und faire Vergütung"
         }
       ],
-      "audio": "audio/listening/b2-listen-49.mp3"
+      "audio": "audio/listening/b2-listen-49.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.49",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_listen_50",
@@ -8393,7 +8784,8 @@
             "Vier",
             "Fünf"
           ],
-          "answer": "Drei"
+          "answer": "Drei",
+          "explanation": "Antwort: Drei"
         },
         {
           "id": "b2l50b",
@@ -8405,16 +8797,23 @@
             "Standardisiert behandeln",
             "Keine ausländischen Patienten aufnehmen"
           ],
-          "answer": "Den Patienten nach seinen Wünschen fragen"
+          "answer": "Den Patienten nach seinen Wünschen fragen",
+          "explanation": "Antwort: Den Patienten nach seinen Wünschen fragen"
         },
         {
           "id": "b2l50c",
           "type": "true-false",
           "question": "Im Workshop wird in Rollenspielen geübt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Antwort: true"
         }
       ],
-      "audio": "audio/listening/b2-listen-50.mp3"
+      "audio": "audio/listening/b2-listen-50.mp3",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.listening.50",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     }
   ],
   "C1": [

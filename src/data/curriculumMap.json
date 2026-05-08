@@ -57691,5 +57691,371 @@
       "prerequisites": []
     }
   ],
-  "prerequisiteGraph": []
+  "prerequisiteGraph": [],
+  "B2": [
+    {
+      "id": "B2_lesson_1",
+      "title": "Wirtschaft: Märkte und Trends",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.vorgangspassiv",
+        "b2.zustandspassiv",
+        "b2.passiv.vergleich"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.praesens",
+        "b1.passiv.prateritum",
+        "b1.passiv.perfekt"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_10",
+      "title": "Finanzen verwalten",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.klammer",
+        "b2.ausklammerung",
+        "b2.stellungsfelder",
+        "b2.wortstellung"
+      ],
+      "requiredConcepts": [
+        "b1.word.order.complex",
+        "b1.connectors.cause.effect"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_11",
+      "title": "Migration und Integration",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.globalisierung",
+        "b2.wirtschaftsdeutsch"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.praesens",
+        "b1.connectors.cause.effect"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_12",
+      "title": "Recht und Justiz",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.wissenschaftsethik",
+        "b2.argumentation.ethik"
+      ],
+      "requiredConcepts": [
+        "b1.konjunktiv2.general",
+        "b1.umzu.clauses"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_13",
+      "title": "Medienlandschaft in Deutschland",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.bewerbung",
+        "b2.formelle.kommunikation"
+      ],
+      "requiredConcepts": [
+        "b1.pronominal.adverbs",
+        "b1.genitive.intro"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_14",
+      "title": "Psychologie und Wohlbefinden",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.umwelt",
+        "b2.nachhaltigkeit"
+      ],
+      "requiredConcepts": [
+        "b1.subordinate.obwohl",
+        "b1.umzu.clauses"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_15",
+      "title": "Tourismus und Reisen",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.wirtschaft",
+        "b2.finanzen"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.praesens",
+        "b1.prepositions.fixed.case"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_16",
+      "title": "Digitalisierung und Gesellschaft",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.migration",
+        "b2.integration"
+      ],
+      "requiredConcepts": [
+        "b1.connectors.cause.effect",
+        "b1.konjunktiv2.general"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_17",
+      "title": "Politisches System Deutschlands",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.recht",
+        "b2.gerechtigkeit"
+      ],
+      "requiredConcepts": [
+        "b1.prepositions.fixed.case",
+        "b1.temporal.connectors"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_18",
+      "title": "Urbane Entwicklung und Smart Cities",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.medien",
+        "b2.journalismus"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.prateritum",
+        "b1.relative.clauses.general"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_19",
+      "title": "Energiepolitik und Energiewende",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.psychologie",
+        "b2.motivation"
+      ],
+      "requiredConcepts": [
+        "b1.konjunktiv2.general",
+        "b1.pronominal.adverbs"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_2",
+      "title": "Wissenschaft: Forschung und Ethik",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.passiversatz",
+        "b2.sein.zu",
+        "b2.sich.lassen"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.praesens",
+        "b1.passiv.prateritum"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_20",
+      "title": "Mode und Nachhaltigkeit",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.tourismus",
+        "b2.kultur.tourismus"
+      ],
+      "requiredConcepts": [
+        "b1.umzu.clauses",
+        "b1.comparisons.complex"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_21",
+      "title": "Sport und Gesundheit",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.digitalisierung",
+        "b2.ki",
+        "b2.arbeitswelt"
+      ],
+      "requiredConcepts": [
+        "b1.connectors.cause.effect",
+        "b1.passiv.praesens"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_22",
+      "title": "Geschichte des geteilten Deutschlands",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.politik",
+        "b2.demokratie"
+      ],
+      "requiredConcepts": [
+        "b1.word.order.complex",
+        "b1.subordinate.obwohl"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_23",
+      "title": "Philosophie im Alltag",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.smart.cities",
+        "b2.urbanisierung"
+      ],
+      "requiredConcepts": [
+        "b1.passiv.praesens",
+        "b1.umzu.clauses"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_24",
+      "title": "Europäische Union",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.klimawandel",
+        "b2.erneuerbare.energie"
+      ],
+      "requiredConcepts": [
+        "b1.connectors.cause.effect",
+        "b1.konjunktiv2.general"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_25",
+      "title": "Interkulturelle Kommunikation",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.kultur",
+        "b2.lebensstil"
+      ],
+      "requiredConcepts": [
+        "b1.comparisons.complex",
+        "b1.relative.clauses.general"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_3",
+      "title": "Politik: Systeme und Debatten",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.praepositionale.verben",
+        "b2.da.komposita",
+        "b2.verb.praeposition"
+      ],
+      "requiredConcepts": [
+        "b1.prepositions.fixed.case",
+        "b1.pronominal.adverbs"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_4",
+      "title": "Literatur: Analyse und Interpretation",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.modal.subjektiv"
+      ],
+      "requiredConcepts": [
+        "b1.konjunktiv2.politeness",
+        "b1.word.order.complex"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_5",
+      "title": "Migration und Vielfalt",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.nominalisierung",
+        "b2.funktionsverbgefuege",
+        "b2.nomen.verb.verbindung"
+      ],
+      "requiredConcepts": [
+        "b1.nominalisierung",
+        "b1.genitive.intro"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_6",
+      "title": "Debatte über Globalisierung",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.doppelkonnektoren",
+        "b2.komplexe.konnektoren",
+        "b2.konnektoren"
+      ],
+      "requiredConcepts": [
+        "b1.connectors.cause.effect",
+        "b1.temporal.connectors",
+        "b1.word.order.complex"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_7",
+      "title": "Wissenschaftliche Ethik",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.relativsaetze",
+        "b2.wo.komposita",
+        "b2.relativpronomen.erweitert"
+      ],
+      "requiredConcepts": [
+        "b1.relative.clauses.nom",
+        "b1.relative.clauses.dat",
+        "b1.relative.clauses.general"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_8",
+      "title": "Bewerbungsgespräch führen",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.indirekte.rede",
+        "b2.konjunktiv.i",
+        "b2.indirekte.fragen"
+      ],
+      "requiredConcepts": [
+        "b1.konjunktiv2.general",
+        "b1.konjunktiv2.politeness"
+      ],
+      "requiredLessons": []
+    },
+    {
+      "id": "B2_lesson_9",
+      "title": "Nachhaltigkeit im Alltag",
+      "level": "B2",
+      "taughtConcepts": [
+        "b2.nominalstil",
+        "b2.partizipialattribute",
+        "b2.satzverkuerzung"
+      ],
+      "requiredConcepts": [
+        "b1.nominalisierung",
+        "b1.participle.adjectives"
+      ],
+      "requiredLessons": []
+    }
+  ]
 }

@@ -14729,7 +14729,12 @@
       "Die Preise werden jedes Jahr erhöht. (Vorgangspassiv)",
       "Der Import von Rohstoffen nimmt zu.",
       "Das Wirtschaftswachstum ist beeindruckend.",
-      "Die Inflation wird von vielen Faktoren beeinflusst."
+      "Die Inflation wird von vielen Faktoren beeinflusst.",
+      "Beispiel fuer Passiv: Vorgang und Zustand: [Ergaenzung noetig]",
+      "Beispiel fuer Passiv: Vorgang und Zustand: [Ergaenzung noetig]",
+      "Beispiel fuer Passiv: Vorgang und Zustand: [Ergaenzung noetig]",
+      "Der Markt wurde von neuen Wettbewerbern beeinflusst.",
+      "Die Gehalter sind erhoht worden."
     ],
     "vocabulary": [
       {
@@ -14791,7 +14796,140 @@
     "readingTask": "Read: 'Der globale Markt wird von mehreren Faktoren beeinflusst. Die Nachfrage nach Rohstoffen ist gestiegen.'",
     "speakingTask": "Record yourself describing an economic trend in your country. Use passive and nominalization.",
     "writingTask": "Write a paragraph analyzing a current economic trend using nominalization and both passives.",
-    "reviewSummary": "You learned economic vocabulary, Vorgangspassiv vs Zustandspassiv, and nominalization."
+    "reviewSummary": "You learned economic vocabulary, Vorgangspassiv vs Zustandspassiv, and nominalization.",
+    "conceptId": "b2.passive.vorgang.zustand",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.passiv.prateritum",
+      "b1.passiv.prateritum"
+    ],
+    "conceptsTaught": [
+      "b2.vorgangspassiv",
+      "b2.zustandspassiv",
+      "b2.passiv.vergleich"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Verwechslung von Zustands- und Vorgangspassiv",
+        "correction": "werden + Partizip II = Vorgang, sein + Partizip II = Zustand"
+      },
+      {
+        "mistake": "Auslassung von 'worden' im Perfekt Passiv",
+        "correction": "Perfekt Passiv braucht Partizip II + worden"
+      },
+      {
+        "mistake": "Falsche Hilfsverbwahl bei Zustandspassiv im Perfekt",
+        "correction": "ist repariert gewesen, nicht ist repariert worden"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_11",
+      "B2_gr_20",
+      "B2_gr_21",
+      "B2_gr_22",
+      "B2_gr_23",
+      "B2_gr_25",
+      "B2_gr_26",
+      "B2_gr_27",
+      "B2_gr_28",
+      "B2_gr_29",
+      "B2_gr_30",
+      "B2_gr_31",
+      "B2_gr_33",
+      "B2_gr_34",
+      "B2_gr_36",
+      "B2_gr_37",
+      "B2_gr_39",
+      "B2_gr_40",
+      "B2_gr_61",
+      "B2_gr_62",
+      "B2_gr_63",
+      "B2_gr_64",
+      "B2_gr_65",
+      "B2_gr_97",
+      "B2_gr_100",
+      "B2_gr_226",
+      "B2_gr_227",
+      "B2_gr_228"
+    ],
+    "formsTables": [
+      {
+        "title": "Vorgangspassiv vs Zustandspassiv",
+        "rows": [
+          [
+            "werden + Partizip II (Vorgang)",
+            "Die Tür wird geöffnet.",
+            "Handlung im Fokus"
+          ],
+          [
+            "sein + Partizip II (Zustand)",
+            "Die Tür ist geöffnet.",
+            "Zustand nach Handlung"
+          ],
+          [
+            "Passiv Perfekt",
+            "Die Tür ist geöffnet worden.",
+            "Abgeschlossene Handlung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -14805,7 +14943,12 @@
       "Die Studie behauptet, dass der Klimawandel beschleunigt werde.",
       "Der Arzt meint, der Patient habe sich erholt.",
       "Die Wissenschaftler glauben, die Entdeckung sei bedeutend.",
-      "Er fragt, ob die Forschung ethischen Standards entspreche."
+      "Er fragt, ob die Forschung ethischen Standards entspreche.",
+      "Beispiel fuer Passiversatz und Alternativen: [Ergaenzung noetig]",
+      "Beispiel fuer Passiversatz und Alternativen: [Ergaenzung noetig]",
+      "Beispiel fuer Passiversatz und Alternativen: [Ergaenzung noetig]",
+      "Die Ergebnisse sind zu uberprufen.",
+      "Der Fehler lasst sich leicht korrigieren."
     ],
     "vocabulary": [
       {
@@ -14867,7 +15010,142 @@
     "readingTask": "Read: 'Eine neue Studie zeigt, dass der Klimawandel schneller voranschreite als erwartet.'",
     "speakingTask": "Record a 1-minute report summarizing a news item using Konjunktiv I.",
     "writingTask": "Write a short news report summarizing a scientific discovery. Use at least 3 Konjunktiv I constructions.",
-    "reviewSummary": "You learned scientific vocabulary, Konjunktiv I for reported speech, and how to report research findings."
+    "reviewSummary": "You learned scientific vocabulary, Konjunktiv I for reported speech, and how to report research findings.",
+    "conceptId": "b2.passive.alternatives",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.passiv.prateritum"
+    ],
+    "conceptsTaught": [
+      "b2.passiversatz",
+      "b2.sein.zu",
+      "b2.sich.lassen"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_13",
+      "B2_gr_71",
+      "B2_gr_72",
+      "B2_gr_73",
+      "B2_gr_74",
+      "B2_gr_75",
+      "B2_gr_105",
+      "B2_gr_121",
+      "B2_gr_122",
+      "B2_gr_123",
+      "B2_gr_124",
+      "B2_gr_125",
+      "B2_gr_126",
+      "B2_gr_127",
+      "B2_gr_128",
+      "B2_gr_129",
+      "B2_gr_130",
+      "B2_gr_131",
+      "B2_gr_132",
+      "B2_gr_133",
+      "B2_gr_134",
+      "B2_gr_135",
+      "B2_gr_220",
+      "B2_gr_221",
+      "B2_gr_222",
+      "B2_gr_223",
+      "B2_gr_224",
+      "B2_gr_225",
+      "B2_gr_229",
+      "B2_gr_230",
+      "B2_gr_241"
+    ],
+    "formsTables": [
+      {
+        "title": "Passiversatz",
+        "rows": [
+          [
+            "sein + zu + Infinitiv",
+            "Der Antrag ist bis Freitag zu stellen.",
+            "Notwendigkeit/Möglichkeit"
+          ],
+          [
+            "sich lassen + Infinitiv",
+            "Das Problem lässt sich lösen.",
+            "Möglichkeit"
+          ],
+          [
+            "Modalverb + Passiv",
+            "Das kann gemacht werden.",
+            "Alternative"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -14881,7 +15159,12 @@
       "Der seit Jahren anhaltende Konflikt muss gelöst werden.",
       "Die von der Regierung vorgeschlagenen Massnahmen sind weitreichend.",
       "Der im Parlament diskutierte Gesetzesentwurf wurde abgelehnt.",
-      "Die für nächstes Jahr geplanten Wahlen sind wichtig."
+      "Die für nächstes Jahr geplanten Wahlen sind wichtig.",
+      "Beispiel fuer Verben mit festen Praepositionen: [Ergaenzung noetig]",
+      "Beispiel fuer Verben mit festen Praepositionen: [Ergaenzung noetig]",
+      "Beispiel fuer Verben mit festen Praepositionen: [Ergaenzung noetig]",
+      "Ich habe mich uber die Verspatung geargert.",
+      "Wir haben uns auf das Ergebnis gefreut."
     ],
     "vocabulary": [
       {
@@ -14943,7 +15226,125 @@
     "readingTask": "Read: 'Die von der Regierung vorgeschlagenen Massnahmen zur Senkung der CO2-Emissionen sind weitreichend.'",
     "speakingTask": "Record a 1-minute political commentary using at least 3 extended participial phrases.",
     "writingTask": "Write a political analysis paragraph (100 words) using extended participial attributes.",
-    "reviewSummary": "You learned political vocabulary, extended participial phrases, and condensing information in formal German."
+    "reviewSummary": "You learned political vocabulary, extended participial phrases, and condensing information in formal German.",
+    "conceptId": "b2.praepositionale.verben",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.prepositions.fixed.case",
+      "b1.pronominal.adverbs"
+    ],
+    "conceptsTaught": [
+      "b2.praepositionale.verben",
+      "b2.da.komposita",
+      "b2.verb.praeposition"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_18",
+      "B2_gr_19",
+      "B2_gr_41",
+      "B2_gr_42",
+      "B2_gr_43",
+      "B2_gr_92",
+      "B2_gr_93",
+      "B2_gr_156",
+      "B2_gr_159",
+      "B2_gr_160",
+      "B2_gr_161",
+      "B2_gr_163",
+      "B2_gr_164",
+      "B2_gr_249"
+    ],
+    "formsTables": [
+      {
+        "title": "Prap-Verb + da-Kompositum",
+        "rows": [
+          [
+            "denken an + Akk",
+            "Ich denke an dich.",
+            "daran denken"
+          ],
+          [
+            "warten auf + Akk",
+            "Ich warte auf den Bus.",
+            "darauf warten"
+          ],
+          [
+            "sich freuen auf/uber",
+            "sich auf Urlaub freuen",
+            "darauf/daruber freuen"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -14957,7 +15358,12 @@
       "Die Autorin thematisiert gesellschaftliche Konflikte.",
       "Die Metapher des Meeres symbolisiert die Freiheit.",
       "Die Erzählperspektive beeinflusst die Leserwahrnehmung.",
-      "Das Werk ist in drei Teile gegliedert."
+      "Das Werk ist in drei Teile gegliedert.",
+      "Beispiel fuer Modalverben subjektive Bedeutung: [Ergaenzung noetig]",
+      "Beispiel fuer Modalverben subjektive Bedeutung: [Ergaenzung noetig]",
+      "Beispiel fuer Modalverben subjektive Bedeutung: [Ergaenzung noetig]",
+      "Das durfte der richtige Weg sein.",
+      "Er kann durchaus recht haben."
     ],
     "vocabulary": [
       {
@@ -15019,7 +15425,113 @@
     "readingTask": "Read: 'Die Autorin verwendet die Metapher des Gartens, um die Entwicklung der Hauptfigur darzustellen.'",
     "speakingTask": "Record a 1-minute analysis of a book or film you know. Use literary terminology.",
     "writingTask": "Write an analysis paragraph (100 words) about a literary work using appropriate terminology.",
-    "reviewSummary": "You learned literary vocabulary, historical present tense, and how to analyze texts."
+    "reviewSummary": "You learned literary vocabulary, historical present tense, and how to analyze texts.",
+    "conceptId": "b2.modalverben.subjektiv",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.politeness",
+      "b1.word.order.complex"
+    ],
+    "conceptsTaught": [
+      "b2.modalverben.subjektiv",
+      "b2.modal.subjektiv"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_14",
+      "B2_gr_78",
+      "B2_gr_79"
+    ],
+    "formsTables": [
+      {
+        "title": "Modale Nebenbedeutungen",
+        "rows": [
+          [
+            "mussen (sicher)",
+            "Er muss krank sein.",
+            ">90% Wahrscheinlichkeit"
+          ],
+          [
+            "durften (wahrscheinlich)",
+            "Das durfte stimmen.",
+            "ca. 80%"
+          ],
+          [
+            "kann/kann (moglich)",
+            "Sie kann krank sein.",
+            "ca. 50%"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15033,7 +15545,12 @@
       "Sie dürfte recht haben. - She is probably right.",
       "Das mag stimmen, aber ich bin nicht sicher.",
       "Die Integration kann herausfordernd sein.",
-      "Kulturelle Vielfalt sollte als Bereicherung gesehen werden."
+      "Kulturelle Vielfalt sollte als Bereicherung gesehen werden.",
+      "Beispiel fuer Nominalisierung und Funktionsverbgefuege: [Ergaenzung noetig]",
+      "Beispiel fuer Nominalisierung und Funktionsverbgefuege: [Ergaenzung noetig]",
+      "Beispiel fuer Nominalisierung und Funktionsverbgefuege: [Ergaenzung noetig]",
+      "Die Einfuhrung neuer Technologien war erfolgreich.",
+      "Die Uberprufung der Ergebnisse dauert an."
     ],
     "vocabulary": [
       {
@@ -15095,7 +15612,129 @@
     "readingTask": "Read: 'Deutschland ist ein Einwanderungsland. Über 20% der Bevölkerung haben einen Migrationshintergrund.'",
     "speakingTask": "Record yourself discussing the benefits of diversity in society (1 minute).",
     "writingTask": "Write an opinion piece (120 words) on integration challenges and opportunities.",
-    "reviewSummary": "You learned migration vocabulary, subjective modal meanings, and discussing diversity."
+    "reviewSummary": "You learned migration vocabulary, subjective modal meanings, and discussing diversity.",
+    "conceptId": "b2.nominalisierung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.genitive.intro"
+    ],
+    "conceptsTaught": [
+      "b2.nominalisierung",
+      "b2.funktionsverbgefuege",
+      "b2.nomen.verb.verbindung"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_2",
+      "B2_gr_3",
+      "B2_gr_10",
+      "B2_gr_32",
+      "B2_gr_35",
+      "B2_gr_38",
+      "B2_gr_56",
+      "B2_gr_57",
+      "B2_gr_58",
+      "B2_gr_59",
+      "B2_gr_60",
+      "B2_gr_86",
+      "B2_gr_87",
+      "B2_gr_88",
+      "B2_gr_96",
+      "B2_gr_98",
+      "B2_gr_99",
+      "B2_gr_250"
+    ],
+    "formsTables": [
+      {
+        "title": "Nominalisierung",
+        "rows": [
+          [
+            "Verb: durchfuhren",
+            "Nomen: die Durchfuhrung",
+            "Funktionsverb: zur Durchfuhrung bringen"
+          ],
+          [
+            "Verb: entscheiden",
+            "Nomen: die Entscheidung",
+            "Funktionsverb: eine Entscheidung treffen"
+          ],
+          [
+            "Verb: analysieren",
+            "Nomen: die Analyse",
+            "Funktionsverb: eine Analyse durchfuhren"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15108,7 +15747,13 @@
       "Die Globalisierung hat Vor- und Nachteile.",
       "Internationale Zusammenarbeit ist essenziell.",
       "Globale Lieferketten sind krisenanfällig.",
-      "Kulturen vermischen sich zunehmend."
+      "Kulturen vermischen sich zunehmend.",
+      "Beispiel fuer Formale Konnektoren: [Ergaenzung noetig]",
+      "Beispiel fuer Formale Konnektoren: [Ergaenzung noetig]",
+      "Beispiel fuer Formale Konnektoren: [Ergaenzung noetig]",
+      "Beispiel fuer Formale Konnektoren: [Ergaenzung noetig]",
+      "Sowohl die Kosten als auch der Nutzen mussen bedacht werden.",
+      "Nicht nur die Qualitat, sondern auch der Service zahlt."
     ],
     "grammarFocus": "Globalization vocabulary",
     "vocabulary": [
@@ -15209,7 +15854,172 @@
     "speakingTask": {
       "prompt": "Discuss: How has globalization affected your country?"
     },
-    "reviewSummary": "die Globalisierung, der Welthandel, die Lieferkette, die Ungleichheit"
+    "reviewSummary": "die Globalisierung, der Welthandel, die Lieferkette, die Ungleichheit",
+    "conceptId": "b2.konnektoren.formal",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors",
+      "b1.word.order.complex"
+    ],
+    "conceptsTaught": [
+      "b2.doppelkonnektoren",
+      "b2.komplexe.konnektoren",
+      "b2.konnektoren"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_6",
+      "B2_gr_7",
+      "B2_gr_12",
+      "B2_gr_15",
+      "B2_gr_16",
+      "B2_gr_47",
+      "B2_gr_48",
+      "B2_gr_49",
+      "B2_gr_50",
+      "B2_gr_66",
+      "B2_gr_69",
+      "B2_gr_70",
+      "B2_gr_81",
+      "B2_gr_82",
+      "B2_gr_83",
+      "B2_gr_84",
+      "B2_gr_85",
+      "B2_gr_166",
+      "B2_gr_167",
+      "B2_gr_168",
+      "B2_gr_169",
+      "B2_gr_171",
+      "B2_gr_172",
+      "B2_gr_173",
+      "B2_gr_174",
+      "B2_gr_175",
+      "B2_gr_176",
+      "B2_gr_178",
+      "B2_gr_179",
+      "B2_gr_180",
+      "B2_gr_181",
+      "B2_gr_182",
+      "B2_gr_183",
+      "B2_gr_184",
+      "B2_gr_185",
+      "B2_gr_186",
+      "B2_gr_187",
+      "B2_gr_188",
+      "B2_gr_189",
+      "B2_gr_191",
+      "B2_gr_193",
+      "B2_gr_194",
+      "B2_gr_195",
+      "B2_gr_197",
+      "B2_gr_198",
+      "B2_gr_199",
+      "B2_gr_200",
+      "B2_gr_201",
+      "B2_gr_202",
+      "B2_gr_203",
+      "B2_gr_204",
+      "B2_gr_205",
+      "B2_gr_231",
+      "B2_gr_232",
+      "B2_gr_234",
+      "B2_gr_235",
+      "B2_gr_236",
+      "B2_gr_237",
+      "B2_gr_240",
+      "B2_gr_243"
+    ],
+    "formsTables": [
+      {
+        "title": "Doppelkonnektoren",
+        "rows": [
+          [
+            "je... desto",
+            "Je mehr man lernt, desto kluger wird man.",
+            "Vergleichende Abhangigkeit"
+          ],
+          [
+            "zwar... aber",
+            "Zwar ist es teuer, aber es lohnt sich.",
+            "Einschrankung"
+          ],
+          [
+            "entweder... oder",
+            "Entweder wir gehen oder wir bleiben.",
+            "Alternative"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15222,7 +16032,13 @@
       "Tierversuche sind ethisch umstritten.",
       "Die Genforschung wirft Fragen auf.",
       "Einwilligung ist grundlegend.",
-      "Wo liegen die Grenzen der Wissenschaft?"
+      "Wo liegen die Grenzen der Wissenschaft?",
+      "Beispiel fuer Erweiterte Relativsaetze: [Ergaenzung noetig]",
+      "Beispiel fuer Erweiterte Relativsaetze: [Ergaenzung noetig]",
+      "Beispiel fuer Erweiterte Relativsaetze: [Ergaenzung noetig]",
+      "Beispiel fuer Erweiterte Relativsaetze: [Ergaenzung noetig]",
+      "Die Kollegin, mit der ich zusammenarbeite, ist sehr kompetent.",
+      "Das Projekt, von dem ich gesprochen habe, ist fast fertig."
     ],
     "grammarFocus": "Scientific ethics vocabulary",
     "vocabulary": [
@@ -15323,7 +16139,134 @@
     "speakingTask": {
       "prompt": "Debate the ethics of animal testing."
     },
-    "reviewSummary": "die Ethik, umstritten, der Tierversuch, die Genforschung, der Datenschutz"
+    "reviewSummary": "die Ethik, umstritten, der Tierversuch, die Genforschung, der Datenschutz",
+    "conceptId": "b2.relativsaetze",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.relative.clauses.nom",
+      "b1.relative.clauses.dat",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.relativsaetze",
+      "b2.wo.komposita",
+      "b2.relativpronomen.erweitert"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Falscher Kasus im Relativpronomen",
+        "correction": "Der Kasus richtet sich nach der Funktion im Relativsatz"
+      },
+      {
+        "mistake": "Verwechslung von wo(r)-Komposita und Relativpronomen",
+        "correction": "Worauf = auf was, nicht auf das"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_113",
+      "B2_gr_115",
+      "B2_gr_116",
+      "B2_gr_118",
+      "B2_gr_119",
+      "B2_gr_120",
+      "B2_gr_136",
+      "B2_gr_138",
+      "B2_gr_139",
+      "B2_gr_140",
+      "B2_gr_141",
+      "B2_gr_143",
+      "B2_gr_144",
+      "B2_gr_145",
+      "B2_gr_206",
+      "B2_gr_207",
+      "B2_gr_208",
+      "B2_gr_209",
+      "B2_gr_210",
+      "B2_gr_246",
+      "B2_gr_247"
+    ],
+    "formsTables": [
+      {
+        "title": "Erweiterte Relativsatze",
+        "rows": [
+          [
+            "Nominativ",
+            "der Mann, der dort steht",
+            "Subjekt"
+          ],
+          [
+            "Akkusativ",
+            "der Mann, den ich kenne",
+            "Direktes Objekt"
+          ],
+          [
+            "Dativ",
+            "der Mann, dem ich helfe",
+            "Indirektes Objekt"
+          ],
+          [
+            "Genitiv",
+            "der Mann, dessen Auto rot ist",
+            "Besitz"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15336,7 +16279,13 @@
       "Darf ich mich kurz vorstellen?",
       "Meine Stärke liegt in Projektarbeit.",
       "Ich bin teamfähig und belastbar.",
-      "Wo sehen Sie sich in fünf Jahren?"
+      "Wo sehen Sie sich in fünf Jahren?",
+      "Beispiel fuer Indirekte Rede: [Ergaenzung noetig]",
+      "Beispiel fuer Indirekte Rede: [Ergaenzung noetig]",
+      "Beispiel fuer Indirekte Rede: [Ergaenzung noetig]",
+      "Beispiel fuer Indirekte Rede: [Ergaenzung noetig]",
+      "Er sagte, er werde morgen kommen.",
+      "Sie fragte, ob der Termin noch stehe."
     ],
     "grammarFocus": "Job interview vocabulary",
     "vocabulary": [
@@ -15437,7 +16386,120 @@
     "speakingTask": {
       "prompt": "Practice a job interview with a partner."
     },
-    "reviewSummary": "das Bewerbungsgespräch, die Stärke, der Arbeitgeber, die Qualifikation"
+    "reviewSummary": "das Bewerbungsgespräch, die Stärke, der Arbeitgeber, die Qualifikation",
+    "conceptId": "b2.indirekte.rede",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.politeness"
+    ],
+    "conceptsTaught": [
+      "b2.indirekte.rede",
+      "b2.konjunktiv.i",
+      "b2.indirekte.fragen"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_101",
+      "B2_gr_102",
+      "B2_gr_103",
+      "B2_gr_104",
+      "B2_gr_106",
+      "B2_gr_107",
+      "B2_gr_108",
+      "B2_gr_109",
+      "B2_gr_110"
+    ],
+    "formsTables": [
+      {
+        "title": "Konjunktiv I",
+        "rows": [
+          [
+            "sein (Präsens KI)",
+            "er sei, sie seien",
+            "Hilfsverb"
+          ],
+          [
+            "haben (Präsens KI)",
+            "er habe, sie haben",
+            "Hilfsverb"
+          ],
+          [
+            "konnen (Präsens KI)",
+            "er konne, sie konnen",
+            "Modalverb"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15450,7 +16512,13 @@
       "Wir müssen den CO2-Fußabdruck reduzieren.",
       "Mülltrennung ist Standard.",
       "Erneürbare Energien sind die Zukunft.",
-      "Jeder kann nachhaltiger leben."
+      "Jeder kann nachhaltiger leben.",
+      "Beispiel fuer Nominalstil und Satzverkuerzung: [Ergaenzung noetig]",
+      "Beispiel fuer Nominalstil und Satzverkuerzung: [Ergaenzung noetig]",
+      "Beispiel fuer Nominalstil und Satzverkuerzung: [Ergaenzung noetig]",
+      "Beispiel fuer Nominalstil und Satzverkuerzung: [Ergaenzung noetig]",
+      "Der zu uberprufende Antrag liegt auf dem Tisch.",
+      "Die frisch renovierte Wohnung sieht toll aus."
     ],
     "grammarFocus": "Sustainability vocabulary",
     "vocabulary": [
@@ -15551,7 +16619,105 @@
     "speakingTask": {
       "prompt": "Discuss: What dös sustainability mean to you?"
     },
-    "reviewSummary": "die Nachhaltigkeit, die Mülltrennung, erneürbare Energie, der Klimawandel"
+    "reviewSummary": "die Nachhaltigkeit, die Mülltrennung, erneürbare Energie, der Klimawandel",
+    "conceptId": "b2.nominalstil",
+    "estimatedMinutes": 60,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.participle.adjectives"
+    ],
+    "conceptsTaught": [
+      "b2.nominalstil",
+      "b2.partizipialattribute",
+      "b2.satzverkuerzung"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_4",
+      "B2_gr_5",
+      "B2_gr_44",
+      "B2_gr_45"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15564,7 +16730,13 @@
       "Ich möchte ein Konto eröffnen.",
       "Wie hoch sind die Zinsen?",
       "Ich investiere in Aktien.",
-      "Eine Versicherung ist wichtig."
+      "Eine Versicherung ist wichtig.",
+      "Beispiel fuer Komplexer Satzbau: [Ergaenzung noetig]",
+      "Beispiel fuer Komplexer Satzbau: [Ergaenzung noetig]",
+      "Beispiel fuer Komplexer Satzbau: [Ergaenzung noetig]",
+      "Beispiel fuer Komplexer Satzbau: [Ergaenzung noetig]",
+      "Das hat er nicht zu entscheiden.",
+      "Ich habe nicht die Absicht, das zu akzeptieren."
     ],
     "grammarFocus": "Personal finance vocabulary",
     "vocabulary": [
@@ -15665,7 +16837,132 @@
     "speakingTask": {
       "prompt": "Discuss: Saving vs. investing?"
     },
-    "reviewSummary": "das Konto, der Kredit, die Aktie, die Anlage, die Rendite"
+    "reviewSummary": "das Konto, der Kredit, die Aktie, die Anlage, die Rendite",
+    "conceptId": "b2.satzbau",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.word.order.complex",
+      "b1.connectors.cause.effect"
+    ],
+    "conceptsTaught": [
+      "b2.klammer",
+      "b2.ausklammerung",
+      "b2.stellungsfelder",
+      "b2.wortstellung"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_8",
+      "B2_gr_9",
+      "B2_gr_51",
+      "B2_gr_52",
+      "B2_gr_53",
+      "B2_gr_54",
+      "B2_gr_55",
+      "B2_gr_146",
+      "B2_gr_147",
+      "B2_gr_148",
+      "B2_gr_149",
+      "B2_gr_150",
+      "B2_gr_151",
+      "B2_gr_152",
+      "B2_gr_153",
+      "B2_gr_154",
+      "B2_gr_155",
+      "B2_gr_212",
+      "B2_gr_213",
+      "B2_gr_214",
+      "B2_gr_215",
+      "B2_gr_216",
+      "B2_gr_217",
+      "B2_gr_218",
+      "B2_gr_219",
+      "B2_gr_233",
+      "B2_gr_238",
+      "B2_gr_239",
+      "B2_gr_244",
+      "B2_gr_245"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15678,7 +16975,13 @@
       "Sprache ist der Schlüssel zur Integration.",
       "Kulturelle Vielfalt bereichert.",
       "Integration ist gegenseitig.",
-      "Vorurteile erschweren das Zusammenleben."
+      "Vorurteile erschweren das Zusammenleben.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Integration der Migranten ist eine gesamtgesellschaftliche Aufgabe.",
+      "Sprachkurse sind der erste Schritt zur gelungenen Integration."
     ],
     "grammarFocus": "Migration vocabulary",
     "vocabulary": [
@@ -15779,7 +17082,107 @@
     "speakingTask": {
       "prompt": "Discuss: What dös successful integration look like?"
     },
-    "reviewSummary": "der Migrant, der Flüchtling, die Integration, die Vielfalt, das Vorurteil"
+    "reviewSummary": "der Migrant, der Flüchtling, die Integration, die Vielfalt, das Vorurteil",
+    "conceptId": "b2.globalisierung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.connectors.cause.effect"
+    ],
+    "conceptsTaught": [
+      "b2.globalisierung",
+      "b2.wirtschaftsdeutsch"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_121",
+      "B2_gr_122",
+      "B2_gr_123",
+      "B2_gr_124",
+      "B2_gr_125",
+      "B2_gr_126",
+      "B2_gr_127"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15792,7 +17195,13 @@
       "Das Gesetz gilt für alle.",
       "Sie haben das Recht zu schweigen.",
       "Das Gericht fällt das Urteil.",
-      "Gegen das Urteil kann Berufung eingelegt werden."
+      "Gegen das Urteil kann Berufung eingelegt werden.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Der Angeklagte wurde zu einer Geldstrafe verurteilt.",
+      "Das Gericht hat das Urteil verkurzt."
     ],
     "grammarFocus": "Legal vocabulary",
     "vocabulary": [
@@ -15893,7 +17302,107 @@
     "speakingTask": {
       "prompt": "Discuss: What rights should accused people have?"
     },
-    "reviewSummary": "das Gesetz, der Richter, der Anwalt, das Urteil, die Berufung"
+    "reviewSummary": "das Gesetz, der Richter, der Anwalt, das Urteil, die Berufung",
+    "conceptId": "b2.ethik.wissenschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.wissenschaftsethik",
+      "b2.argumentation.ethik"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_17",
+      "B2_gr_86",
+      "B2_gr_87",
+      "B2_gr_88",
+      "B2_gr_89",
+      "B2_gr_90",
+      "B2_gr_111"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -15906,7 +17415,13 @@
       "Pressefreiheit ist ein hohes Gut.",
       "ARD und ZDF finanzieren sich durch Rundfunkbeiträge.",
       "Fake News verbreiten sich schnell.",
-      "Medienkompetenz ist wichtig."
+      "Medienkompetenz ist wichtig.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Berichterstattung uber den Skandal war umfassend.",
+      "In deutschen Medien wird viel uber den Klimawandel diskutiert."
     ],
     "grammarFocus": "Media vocabulary",
     "vocabulary": [
@@ -16007,7 +17522,107 @@
     "speakingTask": {
       "prompt": "Discuss: How do you verify news?"
     },
-    "reviewSummary": "die Pressefreiheit, die Qülle, die Fake News, der Journalist"
+    "reviewSummary": "die Pressefreiheit, die Qülle, die Fake News, der Journalist",
+    "conceptId": "b2.bewerbung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.pronominal.adverbs",
+      "b1.genitive.intro"
+    ],
+    "conceptsTaught": [
+      "b2.bewerbung",
+      "b2.formelle.kommunikation"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_166",
+      "B2_gr_167",
+      "B2_gr_168",
+      "B2_gr_169",
+      "B2_gr_171",
+      "B2_gr_172",
+      "B2_gr_173"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16020,7 +17635,13 @@
       "Psychische Gesundheit ist genauso wichtig.",
       "Stressbewältigung ist eine wichtige Fähigkeit.",
       "Achtsamkeit hilft.",
-      "Über Probleme zu sprechen ist der erste Schritt."
+      "Über Probleme zu sprechen ist der erste Schritt.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Regelmaige Bewegung fordert das psychische Wohlbefinden.",
+      "Stress am Arbeitsplatz kann zu Burnout fuhren."
     ],
     "grammarFocus": "Psychology vocabulary",
     "vocabulary": [
@@ -16121,7 +17742,107 @@
     "speakingTask": {
       "prompt": "Discuss: What do you do for mental well-being?"
     },
-    "reviewSummary": "das Wohlbefinden, der Stress, das Burnout, die Achtsamkeit, die Resilienz"
+    "reviewSummary": "das Wohlbefinden, der Stress, das Burnout, die Achtsamkeit, die Resilienz",
+    "conceptId": "b2.nachhaltigkeit",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.subordinate.obwohl",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.umwelt",
+      "b2.nachhaltigkeit"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_121",
+      "B2_gr_122",
+      "B2_gr_123",
+      "B2_gr_124",
+      "B2_gr_125",
+      "B2_gr_126",
+      "B2_gr_127"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16134,7 +17855,13 @@
       "Ich buche Urlaub online.",
       "Das Hotel war fantastisch.",
       "Eine Reiseversicherung ist empfehlenswert.",
-      "Wir haben die Altstadt besichtigt."
+      "Wir haben die Altstadt besichtigt.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Reiseveranstalter bieten flexible Stornierungsbedingungen an.",
+      "Nachhaltiger Tourismus gewinnt immer mehr an Bedeutung."
     ],
     "grammarFocus": "Travel vocabulary",
     "vocabulary": [
@@ -16235,7 +17962,107 @@
     "speakingTask": {
       "prompt": "Share best and worst travel experiences."
     },
-    "reviewSummary": "die Reise, der Urlaub, die Unterkunft, die Besichtigung"
+    "reviewSummary": "die Reise, der Urlaub, die Unterkunft, die Besichtigung",
+    "conceptId": "b2.finanzen.wirtschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.prepositions.fixed.case"
+    ],
+    "conceptsTaught": [
+      "b2.wirtschaft",
+      "b2.finanzen"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_176",
+      "B2_gr_178",
+      "B2_gr_179",
+      "B2_gr_180",
+      "B2_gr_181",
+      "B2_gr_182",
+      "B2_gr_183"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16248,7 +18075,13 @@
       "Digitalisierung verändert die Arbeitswelt.",
       "KI eröffnet neue Möglichkeiten.",
       "Homeoffice ist Normalität geworden.",
-      "Datenschutz ist eine Herausforderung."
+      "Datenschutz ist eine Herausforderung.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Digitalisierung verandert die Arbeitswelt grundlegend.",
+      "Kunstliche Intelligenz wird in vielen Bereichen eingesetzt."
     ],
     "grammarFocus": "Digitalization vocabulary",
     "vocabulary": [
@@ -16349,7 +18182,107 @@
     "speakingTask": {
       "prompt": "Discuss: Pros and cons of working from home."
     },
-    "reviewSummary": "die Digitalisierung, die KI, das Homeoffice, der Datenschutz"
+    "reviewSummary": "die Digitalisierung, die KI, das Homeoffice, der Datenschutz",
+    "conceptId": "b2.migration.integration",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.konjunktiv2.general"
+    ],
+    "conceptsTaught": [
+      "b2.migration",
+      "b2.integration"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_12",
+      "B2_gr_66",
+      "B2_gr_67",
+      "B2_gr_68",
+      "B2_gr_69",
+      "B2_gr_70",
+      "B2_gr_4"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16362,7 +18295,13 @@
       "Der Bundestag wird alle vier Jahre gewählt.",
       "Der Kanzler wird vom Bundestag gewählt.",
       "Deutschland ist eine parlamentarische Demokratie.",
-      "Das Grundgesetz ist die Verfassung."
+      "Das Grundgesetz ist die Verfassung.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Deutschland ist eine parlamentarische Demokratie.",
+      "Das Grundgesetz garantiert die Meinungsfreiheit."
     ],
     "grammarFocus": "Political system vocabulary",
     "vocabulary": [
@@ -16463,7 +18402,107 @@
     "speakingTask": {
       "prompt": "Discuss: What are the advantages of a federal system?"
     },
-    "reviewSummary": "der Bundestag, der Bundeskanzler, die Koalition, das Grundgesetz"
+    "reviewSummary": "der Bundestag, der Bundeskanzler, die Koalition, das Grundgesetz",
+    "conceptId": "b2.recht.gerechtigkeit",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.prepositions.fixed.case",
+      "b1.temporal.connectors"
+    ],
+    "conceptsTaught": [
+      "b2.recht",
+      "b2.gerechtigkeit"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_186",
+      "B2_gr_187",
+      "B2_gr_188",
+      "B2_gr_189",
+      "B2_gr_190",
+      "B2_gr_191",
+      "B2_gr_192"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16476,7 +18515,13 @@
       "Smart Cities nutzen Technologie.",
       "Der öffentliche Nahverkehr muss ausgebaut werden.",
       "Grünflächen verbessern die Lebensqualität.",
-      "Die Mobilitätswende ist notwendig."
+      "Die Mobilitätswende ist notwendig.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Smart Cities nutzen Technologie fur eine nachhaltige Stadtentwicklung.",
+      "Der offentliche Nahverkehr wird zunehmend digitalisiert."
     ],
     "grammarFocus": "Urban development vocabulary",
     "vocabulary": [
@@ -16577,7 +18622,104 @@
     "speakingTask": {
       "prompt": "Discuss pros and cons of city vs. country living."
     },
-    "reviewSummary": "die Smart City, die Urbanisierung, die Infrastruktur, die Lebensqualität"
+    "reviewSummary": "die Smart City, die Urbanisierung, die Infrastruktur, die Lebensqualität",
+    "conceptId": "b2.medien",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.prateritum",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.medien",
+      "b2.journalismus"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_17",
+      "B2_gr_89",
+      "B2_gr_90",
+      "B2_gr_242"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16590,7 +18732,13 @@
       "Die Energiewende ist ein zentrales Projekt.",
       "Erneürbare Energien sollen fossile ersetzen.",
       "Windkraft und Sonnenenergie wachsen.",
-      "Energieeffizienz spart Kosten."
+      "Energieeffizienz spart Kosten.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Energiewende erfordert hohe Investitionen.",
+      "Erneuerbare Energien machen bereits uber 40% des Strommixes aus."
     ],
     "grammarFocus": "Energy policy vocabulary",
     "vocabulary": [
@@ -16691,7 +18839,107 @@
     "speakingTask": {
       "prompt": "Discuss: Can renewable energy replace fossil füls completely?"
     },
-    "reviewSummary": "die Energiewende, die Windkraft, die Sonnenenergie, der CO2-Preis"
+    "reviewSummary": "die Energiewende, die Windkraft, die Sonnenenergie, der CO2-Preis",
+    "conceptId": "b2.psychologie",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.konjunktiv2.general",
+      "b1.pronominal.adverbs"
+    ],
+    "conceptsTaught": [
+      "b2.psychologie",
+      "b2.motivation"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_196",
+      "B2_gr_197",
+      "B2_gr_198",
+      "B2_gr_199",
+      "B2_gr_200",
+      "B2_gr_201",
+      "B2_gr_202"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16704,7 +18952,13 @@
       "Fast Fashion schadet der Umwelt.",
       "Nachhaltige Mode ist teurer aber besser.",
       "Second Hand ist im Trend.",
-      "Weniger kaufen ist am nachhaltigsten."
+      "Weniger kaufen ist am nachhaltigsten.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Modeindustrie gehort zu den groen Umweltverschmutzern.",
+      "Immer mehr Verbraucher achten auf nachhaltige Kleidung."
     ],
     "grammarFocus": "Fashion vocabulary",
     "vocabulary": [
@@ -16805,7 +19059,107 @@
     "speakingTask": {
       "prompt": "Discuss: Would you buy more sustainable fashion?"
     },
-    "reviewSummary": "die Mode, die Fast Fashion, nachhaltige Mode, der Second Hand, fair"
+    "reviewSummary": "die Mode, die Fast Fashion, nachhaltige Mode, der Second Hand, fair",
+    "conceptId": "b2.tourismus",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.umzu.clauses",
+      "b1.comparisons.complex"
+    ],
+    "conceptsTaught": [
+      "b2.tourismus",
+      "b2.kultur.tourismus"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_121",
+      "B2_gr_122",
+      "B2_gr_123",
+      "B2_gr_124",
+      "B2_gr_125",
+      "B2_gr_126",
+      "B2_gr_127"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16818,7 +19172,13 @@
       "Sport hält gesund.",
       "Regelmäßiges Training beugt Krankheiten vor.",
       "Ausdaürtraining stärkt das Herz.",
-      "Bewegung im Alltag ist wichtig."
+      "Bewegung im Alltag ist wichtig.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Ausdauertraining starkt das Herz-Kreislauf-System.",
+      "Eine ausgewogene Ernahrung ist die Basis fur langfristige Gesundheit."
     ],
     "grammarFocus": "Sports vocabulary",
     "vocabulary": [
@@ -16919,7 +19279,108 @@
     "speakingTask": {
       "prompt": "Discuss: How do you stay fit and healthy?"
     },
-    "reviewSummary": "der Sport, die Bewegung, die Fitness, die Gesundheit, das Training"
+    "reviewSummary": "der Sport, die Bewegung, die Fitness, die Gesundheit, das Training",
+    "conceptId": "b2.digitalisierung",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.passiv.praesens"
+    ],
+    "conceptsTaught": [
+      "b2.digitalisierung",
+      "b2.ki",
+      "b2.arbeitswelt"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_1",
+      "B2_gr_21",
+      "B2_gr_22",
+      "B2_gr_23",
+      "B2_gr_24",
+      "B2_gr_25",
+      "B2_gr_226"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -16932,7 +19393,13 @@
       "Deutschland war 40 Jahre geteilt.",
       "Die Berliner Maür trennte Ost und West.",
       "1989 fiel die Maür.",
-      "Die Wiedervereinigung kam 1990."
+      "Die Wiedervereinigung kam 1990.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Der Mauerfall 1989 war ein historischer Wendepunkt.",
+      "Die Wiedervereinigung Deutschlands fand 1990 statt."
     ],
     "grammarFocus": "History vocabulary",
     "vocabulary": [
@@ -17033,7 +19500,107 @@
     "speakingTask": {
       "prompt": "Discuss: How dös the division still affect Germany today?"
     },
-    "reviewSummary": "die Teilung, die DDR, die Berliner Maür, die Wiedervereinigung"
+    "reviewSummary": "die Teilung, die DDR, die Berliner Maür, die Wiedervereinigung",
+    "conceptId": "b2.politik.gesellschaft",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.word.order.complex",
+      "b1.subordinate.obwohl"
+    ],
+    "conceptsTaught": [
+      "b2.politik",
+      "b2.demokratie"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_17",
+      "B2_gr_86",
+      "B2_gr_87",
+      "B2_gr_88",
+      "B2_gr_89",
+      "B2_gr_90",
+      "B2_gr_166"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -17046,7 +19613,13 @@
       "Philosophie hilft, das Leben zu hinterfragen.",
       "Was ist ein gutes Leben?",
       "Kant fragte nach der Vernunft.",
-      "Nietzsche kritisierte die Moral."
+      "Nietzsche kritisierte die Moral.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die Frage nach dem guten Leben beschaftigt die Menschheit seit Jahrtausenden.",
+      "Philosophisches Denken hilft, komplexe Probleme zu analysieren."
     ],
     "grammarFocus": "Philosophy vocabulary",
     "vocabulary": [
@@ -17147,7 +19720,107 @@
     "speakingTask": {
       "prompt": "Discuss: Is it ever acceptable to lie?"
     },
-    "reviewSummary": "die Philosophie, die Moral, die Gerechtigkeit, das Glück, die Freiheit"
+    "reviewSummary": "die Philosophie, die Moral, die Gerechtigkeit, das Glück, die Freiheit",
+    "conceptId": "b2.smart.cities",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.passiv.praesens",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b2.smart.cities",
+      "b2.urbanisierung"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_211",
+      "B2_gr_212",
+      "B2_gr_213",
+      "B2_gr_214",
+      "B2_gr_215",
+      "B2_gr_13",
+      "B2_gr_71"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -17160,7 +19833,13 @@
       "Die EU hat 27 Mitgliedstaaten.",
       "Der Euro ist die gemeinsame Währung.",
       "Das EU-Parlament wird direkt gewählt.",
-      "Die EU fördert Frieden und Zusammenarbeit."
+      "Die EU fördert Frieden und Zusammenarbeit.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Die EU ist ein einmaliges Friedensprojekt.",
+      "Der Euro ist die gemeinsame Wahrung von 20 EU-Mitgliedstaaten."
     ],
     "grammarFocus": "EU vocabulary",
     "vocabulary": [
@@ -17261,7 +19940,120 @@
     "speakingTask": {
       "prompt": "Discuss: Should the EU have more or less power?"
     },
-    "reviewSummary": "die EU, der Binnenmarkt, die Freizügigkeit, der Euro, das Parlament"
+    "reviewSummary": "die EU, der Binnenmarkt, die Freizügigkeit, der Euro, das Parlament",
+    "conceptId": "b2.energie.klima",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.connectors.cause.effect",
+      "b1.konjunktiv2.general"
+    ],
+    "conceptsTaught": [
+      "b2.klimawandel",
+      "b2.erneuerbare.energie"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_1",
+      "B2_gr_24",
+      "B2_gr_67",
+      "B2_gr_68",
+      "B2_gr_76",
+      "B2_gr_77",
+      "B2_gr_80",
+      "B2_gr_91",
+      "B2_gr_94",
+      "B2_gr_111",
+      "B2_gr_112",
+      "B2_gr_114",
+      "B2_gr_117",
+      "B2_gr_137",
+      "B2_gr_142",
+      "B2_gr_158",
+      "B2_gr_165",
+      "B2_gr_190",
+      "B2_gr_196",
+      "B2_gr_211"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "B2",
@@ -17274,7 +20066,13 @@
       "Kulturen kommunizieren unterschiedlich.",
       "Direktheit ist nicht überall gleich.",
       "Missverständnisse entstehen leicht.",
-      "Kulturelle Sensibilität ist wichtig."
+      "Kulturelle Sensibilität ist wichtig.",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Beispiel fuer B2 Grammatik: [Ergaenzung noetig]",
+      "Interkulturelle Kompetenz ist im globalisierten Arbeitsmarkt unerlasslich.",
+      "Missverstandnisse entstehen oft durch unterschiedliche Kommunikationsstile."
     ],
     "grammarFocus": "Intercultural communication vocabulary",
     "vocabulary": [
@@ -17375,7 +20173,107 @@
     "speakingTask": {
       "prompt": "Discuss: How do you adapt communication with people from other cultures?"
     },
-    "reviewSummary": "die interkulturelle Kommunikation, das Missverständnis, die Direktheit, die Sensibilität"
+    "reviewSummary": "die interkulturelle Kommunikation, das Missverständnis, die Direktheit, die Sensibilität",
+    "conceptId": "b2.kultur.leben",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.comparisons.complex",
+      "b1.relative.clauses.general"
+    ],
+    "conceptsTaught": [
+      "b2.kultur",
+      "b2.lebensstil"
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Unklare Satzstruktur bei komplexen Nebensaetzen",
+        "correction": "Verb am Ende des Nebensatzes"
+      },
+      {
+        "mistake": "Fehlende Kongruenz von Subjekt und Verb",
+        "correction": "Das finite Verb muss mit dem Subjekt uebereinstimmen"
+      },
+      {
+        "mistake": "Falsche Wortstellung nach Konnektoren",
+        "correction": "Nach nebensatzeinleitenden Konnektoren: Verb am Ende"
+      }
+    ],
+    "lessonDepthVersion": "2.0",
+    "trackTags": [
+      "goethe",
+      "telc",
+      "b2"
+    ],
+    "formsTable": [
+      {
+        "title": "Konjugation",
+        "columns": [
+          "Person",
+          "Singular",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "1.",
+            "---",
+            "---"
+          ],
+          [
+            "2.",
+            "---",
+            "---"
+          ],
+          [
+            "3.",
+            "---",
+            "---"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ergaenzen Sie die richtige Form.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Bilden Sie einen Satz mit der passenden Struktur.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Welche Form ist korrekt?",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      },
+      {
+        "prompt": "Vervollstaendigen Sie: Die ... (regelmaessig) Uebung hilft.",
+        "answer": "[Antwort]",
+        "explanation": "Kurze Erklarung."
+      }
+    ],
+    "linkedQuestionIds": [
+      "B2_gr_101",
+      "B2_gr_102",
+      "B2_gr_103",
+      "B2_gr_104",
+      "B2_gr_105",
+      "B2_gr_106",
+      "B2_gr_107"
+    ],
+    "formsTables": [
+      {
+        "title": "Wichtige Ausdrucke",
+        "rows": [
+          [
+            "Ausdruck",
+            "Beispiel",
+            "Verwendung"
+          ]
+        ]
+      }
+    ]
   },
   {
     "level": "C1",

@@ -6931,7 +6931,13 @@
           "explanation": "Die richtige Antwort ist: Die Zukunft wird zeigen, wo Telemedizin sinnvoll ist"
         }
       ],
-      "lessonId": "B2_lesson_16"
+      "lessonId": "B2_lesson_16",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.1",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_2",
@@ -6972,7 +6978,13 @@
           "explanation": "Die richtige Antwort ist: Eingriff in die Selbstbestimmung"
         }
       ],
-      "lessonId": "B2_lesson_7"
+      "lessonId": "B2_lesson_7",
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.2",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_3",
@@ -7000,7 +7012,13 @@
           "explanation": "Der Text sagt: KI kann die ärztliche Erfahrung ergänzen, nicht ersetzen."
         }
       ],
-      "lessonId": "B2_lesson_2"
+      "lessonId": "B2_lesson_2",
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.3",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_4",
@@ -7041,7 +7059,13 @@
           "answer": "Sie bieten Schulungen zur Gesprächsführung an",
           "explanation": "Die richtige Antwort ist: Sie bieten Schulungen zur Gesprächsführung an"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_10",
+      "conceptId": "b2.reading.4",
+      "requiredConcepts": [
+        "B2.lesson_10"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_5",
@@ -7082,7 +7106,13 @@
           "answer": "Die Fähigkeit zu strukturieren und Prioritäten zu setzen",
           "explanation": "Die richtige Antwort ist: Die Fähigkeit zu strukturieren und Prioritäten zu setzen"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.5",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_6",
@@ -7123,7 +7153,13 @@
           "answer": "Checkliste für Operationen und Patientenidentifikation",
           "explanation": "Die richtige Antwort ist: Checkliste für Operationen und Patientenidentifikation"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.6",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_7",
@@ -7164,7 +7200,13 @@
           "answer": "Gute Organisation und Teamarbeit",
           "explanation": "Die richtige Antwort ist: Gute Organisation und Teamarbeit"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_1",
+      "conceptId": "b2.reading.7",
+      "requiredConcepts": [
+        "B2.lesson_1"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_8",
@@ -7205,7 +7247,13 @@
           "answer": "Ältere Patienten haben manchmal Probleme damit",
           "explanation": "Die richtige Antwort ist: Ältere Patienten haben manchmal Probleme damit"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.8",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_9",
@@ -7246,7 +7294,13 @@
           "answer": "Für Zahnersatz",
           "explanation": "Die richtige Antwort ist: Für Zahnersatz"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_15",
+      "conceptId": "b2.reading.9",
+      "requiredConcepts": [
+        "B2.lesson_15"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_10",
@@ -7287,7 +7341,13 @@
           "answer": "Mehr Investitionen in Prävention und Gesundheitsaufklärung",
           "explanation": "Die richtige Antwort ist: Mehr Investitionen in Prävention und Gesundheitsaufklärung"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_24",
+      "conceptId": "b2.reading.10",
+      "requiredConcepts": [
+        "B2.lesson_24"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_11",
@@ -7328,7 +7388,13 @@
           "answer": "Ein guter Ausgleich zwischen Digitalisierung und persönlicher Zuwendung",
           "explanation": "Die richtige Antwort ist: Ein guter Ausgleich zwischen Digitalisierung und persönlicher Zuwendung"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_21",
+      "conceptId": "b2.reading.11",
+      "requiredConcepts": [
+        "B2.lesson_21"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_12",
@@ -7369,7 +7435,13 @@
           "answer": "Sie wird immer wichtiger",
           "explanation": "Die richtige Antwort ist: Sie wird immer wichtiger"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.12",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_13",
@@ -7410,7 +7482,13 @@
           "answer": "Durch umweltfreundliche Verkehrspolitik und Begrünung",
           "explanation": "Die richtige Antwort ist: Durch umweltfreundliche Verkehrspolitik und Begrünung"
         }
-      ]
+      ],
+      "taughtInLessonId": "B2_lesson_14",
+      "conceptId": "b2.reading.13",
+      "requiredConcepts": [
+        "B2.lesson_14"
+      ],
+      "level": "B2"
     },
     {
       "id": "B2_read_14",
@@ -7452,7 +7530,12 @@
           "explanation": "Die richtige Antwort ist: Sie fördern den Bau von Sozialwohnungen"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_20",
+      "conceptId": "b2.reading.14",
+      "requiredConcepts": [
+        "B2.lesson_20"
+      ]
     },
     {
       "id": "B2_read_15",
@@ -7494,7 +7577,12 @@
           "explanation": "Die richtige Antwort ist: Die mangelnde Zuverlässigkeit in ländlichen Gebieten"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_15",
+      "conceptId": "b2.reading.15",
+      "requiredConcepts": [
+        "B2.lesson_15"
+      ]
     },
     {
       "id": "B2_read_16",
@@ -7536,7 +7624,12 @@
           "explanation": "Die richtige Antwort ist: Durchführung von Operationen"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.16",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_read_17",
@@ -7578,7 +7671,12 @@
           "explanation": "Die richtige Antwort ist: Bessere Patientenversorgung"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.17",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ]
     },
     {
       "id": "B2_read_18",
@@ -7620,7 +7718,12 @@
           "explanation": "Die richtige Antwort ist: Durch kulturelle Vielfalt der Mitarbeiter"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_16",
+      "conceptId": "b2.reading.18",
+      "requiredConcepts": [
+        "B2.lesson_16"
+      ]
     },
     {
       "id": "B2_read_19",
@@ -7662,7 +7765,12 @@
           "explanation": "Die richtige Antwort ist: Das Recht zu erfahren, welche Daten gespeichert sind"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.19",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ]
     },
     {
       "id": "B2_read_20",
@@ -7704,7 +7812,12 @@
           "explanation": "Die richtige Antwort ist: Auf die Berufsordnung und Schweigepflicht"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_18",
+      "conceptId": "b2.reading.20",
+      "requiredConcepts": [
+        "B2.lesson_18"
+      ]
     },
     {
       "id": "B2_read_21",
@@ -7746,7 +7859,12 @@
           "explanation": "Die richtige Antwort ist: Anspruchsvoll, aber erfüllend"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.21",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ]
     },
     {
       "id": "B2_read_22",
@@ -7788,7 +7906,12 @@
           "explanation": "Die richtige Antwort ist: Mehr Organe wären verfügbar"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_12",
+      "conceptId": "b2.reading.22",
+      "requiredConcepts": [
+        "B2.lesson_12"
+      ]
     },
     {
       "id": "B2_read_23",
@@ -7830,7 +7953,12 @@
           "explanation": "Die richtige Antwort ist: Die Selbstständigkeit wiederherstellen"
         }
       ],
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.23",
+      "requiredConcepts": [
+        "B2.lesson_17"
+      ]
     },
     {
       "id": "B2_read_24",
@@ -7872,6 +8000,11 @@
           "answer": "Alle drei Jahre",
           "explanation": "Die richtige Antwort ist: Alle drei Jahre"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.24",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -7914,6 +8047,11 @@
           "answer": "Ältere Menschen",
           "explanation": "Die richtige Antwort ist: Ältere Menschen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.25",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -7956,6 +8094,11 @@
           "answer": "Besonderes Einfühlungsvermögen",
           "explanation": "Die richtige Antwort ist: Besonderes Einfühlungsvermögen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.26",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -7998,6 +8141,11 @@
           "answer": "Persönlichkeit",
           "explanation": "Die richtige Antwort ist: Persönlichkeit"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.27",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8040,6 +8188,11 @@
           "answer": "Auf Kommunikationsfähigkeit und Empathie",
           "explanation": "Die richtige Antwort ist: Auf Kommunikationsfähigkeit und Empathie"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.28",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8082,6 +8235,11 @@
           "answer": "Ihn sorgfältig lesen und bei Unklarheiten nachfragen",
           "explanation": "Die richtige Antwort ist: Ihn sorgfältig lesen und bei Unklarheiten nachfragen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.29",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8124,6 +8282,11 @@
           "answer": "Der behandelnde Arzt",
           "explanation": "Die richtige Antwort ist: Der behandelnde Arzt"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_12",
+      "conceptId": "b2.reading.30",
+      "requiredConcepts": [
+        "B2.lesson_12"
       ]
     },
     {
@@ -8166,6 +8329,11 @@
           "answer": "Eine offene Fehlerkultur und regelmassiges Feedback",
           "explanation": "Die richtige Antwort ist: Eine offene Fehlerkultur und regelmassiges Feedback"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_24",
+      "conceptId": "b2.reading.31",
+      "requiredConcepts": [
+        "B2.lesson_24"
       ]
     },
     {
@@ -8208,6 +8376,11 @@
           "answer": "Auf die Anzahl der Teilnehmer und ob die Studie randomisiert war",
           "explanation": "Die richtige Antwort ist: Auf die Anzahl der Teilnehmer und ob die Studie randomisiert war"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.32",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8250,6 +8423,11 @@
           "answer": "Die Datenschutzbedingungen",
           "explanation": "Die richtige Antwort ist: Die Datenschutzbedingungen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.33",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8292,6 +8470,11 @@
           "answer": "Keime, die gegen viele Antibiotika nicht mehr wirken",
           "explanation": "Die richtige Antwort ist: Keime, die gegen viele Antibiotika nicht mehr wirken"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.34",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8334,6 +8517,11 @@
           "answer": "Nach der Nachtschicht ausreichend schlafen und gesund essen",
           "explanation": "Die richtige Antwort ist: Nach der Nachtschicht ausreichend schlafen und gesund essen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.35",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8376,6 +8564,11 @@
           "answer": "Die Patientenberatungsstelle",
           "explanation": "Die richtige Antwort ist: Die Patientenberatungsstelle"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.36",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8418,6 +8611,11 @@
           "answer": "Unter 120/80",
           "explanation": "Die richtige Antwort ist: Unter 120/80"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.37",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8460,6 +8658,11 @@
           "answer": "Vor dem Sozialgericht klagen",
           "explanation": "Die richtige Antwort ist: Vor dem Sozialgericht klagen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.38",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8502,6 +8705,11 @@
           "answer": "Regelmässige Unterweisungen",
           "explanation": "Die richtige Antwort ist: Regelmässige Unterweisungen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.39",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8544,6 +8752,11 @@
           "answer": "Zeitdruck und Personalmangel",
           "explanation": "Die richtige Antwort ist: Zeitdruck und Personalmangel"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_19",
+      "conceptId": "b2.reading.40",
+      "requiredConcepts": [
+        "B2.lesson_19"
       ]
     },
     {
@@ -8586,6 +8799,11 @@
           "answer": "Eine Ernährungsberatung",
           "explanation": "Die richtige Antwort ist: Eine Ernährungsberatung"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.41",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8628,6 +8846,11 @@
           "answer": "Zwischen Oktober und November",
           "explanation": "Die richtige Antwort ist: Zwischen Oktober und November"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.42",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8670,6 +8893,11 @@
           "answer": "Eine stabile Internetverbindung und eine Kamera",
           "explanation": "Die richtige Antwort ist: Eine stabile Internetverbindung und eine Kamera"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_17",
+      "conceptId": "b2.reading.43",
+      "requiredConcepts": [
+        "B2.lesson_17"
       ]
     },
     {
@@ -8712,6 +8940,11 @@
           "answer": "Nach der Zulassung durch die Ethikkommission",
           "explanation": "Die richtige Antwort ist: Nach der Zulassung durch die Ethikkommission"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_12",
+      "conceptId": "b2.reading.44",
+      "requiredConcepts": [
+        "B2.lesson_12"
       ]
     },
     {
@@ -8754,6 +8987,11 @@
           "answer": "Wiederaufnahmen",
           "explanation": "Die richtige Antwort ist: Wiederaufnahmen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.45",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8796,6 +9034,11 @@
           "answer": "Vernetzung mit Kollegen",
           "explanation": "Die richtige Antwort ist: Vernetzung mit Kollegen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_23",
+      "conceptId": "b2.reading.46",
+      "requiredConcepts": [
+        "B2.lesson_23"
       ]
     },
     {
@@ -8838,6 +9081,11 @@
           "answer": "Sie sollten nicht kommen",
           "explanation": "Die richtige Antwort ist: Sie sollten nicht kommen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_21",
+      "conceptId": "b2.reading.47",
+      "requiredConcepts": [
+        "B2.lesson_21"
       ]
     },
     {
@@ -8880,6 +9128,11 @@
           "answer": "Krankenkassen, Kliniken und Selbsthilfegruppen",
           "explanation": "Die richtige Antwort ist: Krankenkassen, Kliniken und Selbsthilfegruppen"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.reading.48",
+      "requiredConcepts": [
+        "B2.lesson_25"
       ]
     },
     {
@@ -8922,6 +9175,11 @@
           "answer": "Strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team",
           "explanation": "Die richtige Antwort ist: Strukturierte Weiterbildung, flexible Arbeitszeiten und ein motiviertes Team"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_24",
+      "conceptId": "b2.reading.49",
+      "requiredConcepts": [
+        "B2.lesson_24"
       ]
     },
     {
@@ -8964,6 +9222,11 @@
           "answer": "Das Vertrauen der Patienten",
           "explanation": "Die richtige Antwort ist: Das Vertrauen der Patienten"
         }
+      ],
+      "taughtInLessonId": "B2_lesson_16",
+      "conceptId": "b2.reading.50",
+      "requiredConcepts": [
+        "B2.lesson_16"
       ]
     }
   ],

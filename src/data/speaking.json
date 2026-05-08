@@ -7058,13 +7058,50 @@
       "talkTime": 180,
       "tips": "Struktur: Einleitung - Hauptteil - Schlussfolgerung.",
       "usefulPhrases": [
-        "Patientensicherheit ist ein zentrales Thema ...",
-        "Zu den wichtigsten Maßnahmen gehören ...",
-        "Eine Herausforderung ist ...",
-        "Zusammenfassend lässt sich sagen ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_14",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.1",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_2",
@@ -7075,13 +7112,50 @@
       "talkTime": 180,
       "tips": "Das ist ein wichtiges Thema. Meiner Meinung nach ...",
       "usefulPhrases": [
-        "Meiner Ansicht nach ...",
-        "Das mag stimmen, aber ...",
-        "Ein Gegenargument ist ...",
-        "Wie siehst du das?"
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_14",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.2",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_3",
@@ -7092,13 +7166,50 @@
       "talkTime": 180,
       "tips": "Ich vertrete die Position, dass ...",
       "usefulPhrases": [
-        "Ich bin der Überzeugung, dass ...",
-        "Dagegen spricht, dass ...",
-        "Ein starkes Argument für ... ist ...",
-        "Das kann ich nicht nachvollziehen, weil ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_3",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.3",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_4",
@@ -7109,13 +7220,50 @@
       "talkTime": 180,
       "tips": "Ich möchte Ihnen heute eine neue Methode vorstellen.",
       "usefulPhrases": [
-        "Ich möchte Ihnen heute ... vorstellen.",
-        "Bei dieser Methode handelt es sich um ...",
-        "Die Vorteile liegen in ...",
-        "Erste Ergebnisse zeigen ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_21",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.4",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_5",
@@ -7126,13 +7274,50 @@
       "talkTime": 180,
       "tips": "Im Krankenhaus hat man ... In der Praxis ist ...",
       "usefulPhrases": [
-        "Im Krankenhaus arbeitet man eher im Team.",
-        "In der eigenen Praxis hat man mehr Freiheit.",
-        "Was spricht deiner Meinung nach für ...?",
-        "Ich tendiere zu ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_8",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.5",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_6",
@@ -7143,13 +7328,50 @@
       "talkTime": 180,
       "tips": "Osteoporose ist eine systemische Skeletterkrankung.",
       "usefulPhrases": [
-        "Osteoporose ist definiert als ...",
-        "Zu den Risikofaktoren zählen ...",
-        "Die Diagnostik erfolgt mittels ...",
-        "Therapeutisch kommen ... zum Einsatz."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_21",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.6",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_7",
@@ -7160,13 +7382,50 @@
       "talkTime": 180,
       "tips": "Einerseits ermöglicht die Digitalisierung ...",
       "usefulPhrases": [
-        "Durch die Digitalisierung können wir ...",
-        "Bedenklich finde ich jedoch ...",
-        "Ein Beispiel: ...",
-        "Letztlich kommt es auf die Umsetzung an."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_16",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_21",
+      "conceptId": "b2.speaking.7",
+      "requiredConcepts": [
+        "B2.lesson_21"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_8",
@@ -7177,13 +7436,50 @@
       "talkTime": 180,
       "tips": "Es handelt sich um einen 45-jährigen Patienten mit ...",
       "usefulPhrases": [
-        "Es handelt sich um ...",
-        "Der Patient klagt über ...",
-        "In der Bildgebung zeigt sich ...",
-        "Wir entschieden uns für ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_14",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.8",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_9",
@@ -7194,13 +7490,50 @@
       "talkTime": 180,
       "tips": "Die Chirurgie produziert große Mengen Müll.",
       "usefulPhrases": [
-        "Ein großes Problem ist ...",
-        "Ein Lösungsansatz wäre ...",
-        "Studien zeigen, dass ...",
-        "Wir sollten ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_9",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_14",
+      "conceptId": "b2.speaking.9",
+      "requiredConcepts": [
+        "B2.lesson_14"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_10",
@@ -7211,13 +7544,50 @@
       "talkTime": 180,
       "tips": "In einem guten Team ist Kommunikation entscheidend.",
       "usefulPhrases": [
-        "Kommunikation ist der Schlüssel.",
-        "Jeder im Team hat eine klare Rolle.",
-        "Vertrauen ist wichtig, weil ...",
-        "Aus meiner Erfahrung ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
       ],
       "lessonId": "B2_lesson_25",
-      "level": "B2"
+      "level": "B2",
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.10",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
+      ]
     },
     {
       "id": "B2_speak_11",
@@ -7230,10 +7600,47 @@
       "talkTime": 180,
       "tips": "Gliedern Sie Ihren Vortrag: Einleitung zum Thema, drei konkrete Massnahmen, eine persönliche Erfahrung, Abschluss.",
       "usefulPhrases": [
-        "Patientensicherheit beginnt mit einfachen Massnahmen wie ...",
-        "Eine grosse Herausforderung ist ...",
-        "In meiner Erfahrung hat sich ... bewährt.",
-        "Zusammenfassend kann man sagen ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.11",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7247,10 +7654,47 @@
       "talkTime": 120,
       "tips": "Beginnen Sie mit einer höflichen Begrüssung. Nennen Sie Ihren Namen und den bestehenden Termin. Seien Sie flexibel bei den Alternativen.",
       "usefulPhrases": [
-        "Guten Tag, mein Name ist ... Ich habe einen Termin am ... um ...",
-        "Leider muss ich den Termin aus persönlichen/beruflichen Gründen verschieben.",
-        "Hätten Sie alternativ am ... oder am ... einen Termin frei?",
-        "Vielen Dank für Ihre Hilfe. Das passt mir gut."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.12",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7264,11 +7708,47 @@
       "talkTime": 180,
       "tips": "Hören Sie Ihrem Partner zu und reagieren Sie auf seine Argumente. Nutzen Sie Redemittel für die Diskussion.",
       "usefulPhrases": [
-        "Ich bin der Meinung, dass Telemedizin ...",
-        "Ein grosser Vorteil ist ...",
-        "Dem muss ich widersprechen, denn ...",
-        "Sie haben recht, aber man muss auch bedenken ...",
-        "Am Ende denke ich, dass beide Seiten ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.13",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7282,10 +7762,47 @@
       "talkTime": 180,
       "tips": "Sprechen Sie langsam und deutlich. Vermeiden Sie zu viele Fachbegriffe. Fragen Sie rück, ob der Patient alles versteht.",
       "usefulPhrases": [
-        "Ich verschreibe Ihnen ein neues Medikament. Nehmen Sie es einmal täglich.",
-        "Am besten nehmen Sie die Tablette morgens nach dem Frühstück ein.",
-        "Wenn Sie eine Dosis vergessen haben, holen Sie sie nicht einfach nach.",
-        "Haben Sie noch Fragen dazu? Ist alles klar für Sie?"
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.14",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7299,10 +7816,47 @@
       "talkTime": 180,
       "tips": "Halten Sie die Informationen kurz und präzise. Strukturieren Sie nach Priorität (zürst kritische Patienten).",
       "usefulPhrases": [
-        "Auf Station haben wir drei Patienten, die besonders zu beachten sind.",
-        "Patient ... hatte heute Morgen einen Blutdruckabfall, wir haben ...",
-        "Bitte achten Sie bei ... besonders auf die Wundkontrolle.",
-        "Für die morgige Schicht ist geplant, dass ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.15",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7316,10 +7870,47 @@
       "talkTime": 120,
       "tips": "Nutzen Sie Redemittel, um Argumente zu strukturieren. Geben Sie auch ein konkretes Beispiel.",
       "usefulPhrases": [
-        "Gesundheits-Apps haben sowohl Vor- als auch Nachteile.",
-        "Ein Vorteil ist, dass man seine Vitaldaten jederzeit im Blick hat.",
-        "Ein Nachteil besteht darin, dass viele Nutzer die Daten falsch interpretieren.",
-        "Meiner Meinung nach überwiegen die Vorteile, wenn die App medizinisch geprüft ist."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.16",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7333,11 +7924,47 @@
       "talkTime": 120,
       "tips": "Zeigen Sie Verständnis. Geben Sie praktische, umsetzbare Tipps. Vermeiden Sie Belehrungen.",
       "usefulPhrases": [
-        "Das klingt wirklich belastend. Ich verstehe, dass du dich so fühlst.",
-        "Hast du schon mal überlegt, ...?",
-        "Was ich dir empfehlen würde, ist ...",
-        "Vielleicht wäre es gut, wenn du ...",
-        "Gemeinsam könnten wir mal überlegen, wie ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.17",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7351,11 +7978,47 @@
       "talkTime": 120,
       "tips": "Bereiten Sie Ihre Argumente vor. Geben Sie eine klare, begründete Meinung ab.",
       "usefulPhrases": [
-        "Meiner Meinung nach ist die Einführung der ePA ein wichtiger Schritt.",
-        "Einerseits erleichtert sie den Austausch zwischen Ärzten.",
-        "Andererseits habe ich Bedenken bezüglich des Datenschutzes.",
-        "Aus meiner Erfahrung als Arzt/Patient weiss ich, dass ...",
-        "Abschliessend finde ich, dass die Vorteile überwiegen, wenn ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.18",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7369,10 +8032,47 @@
       "talkTime": 180,
       "tips": "Bleiben Sie ruhig und freundlich. Zeigen Sie Verständnis für die Unzufriedenheit des Patienten. Suchen Sie eine praktische Lösung.",
       "usefulPhrases": [
-        "Ich kann Ihren Ärger gut verstehen, zwei Stunden sind wirklich lang.",
-        "Es tut mir sehr leid für die Wartezeit. Leider kam ein Notfall dazwischen.",
-        "Ich schlage vor, dass ich Sie so schnell wie möglich drannehme.",
-        "Wenn Sie heute nicht mehr warten möchten, können wir gerne einen neuen Termin vereinbaren."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.19",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7386,11 +8086,47 @@
       "talkTime": 120,
       "tips": "Strukturieren Sie Ihre Zusammenfassung zeitlich. Verwenden Sie Übergangsworte. Achten Sie auf eine logische Reihenfolge.",
       "usefulPhrases": [
-        "Der Reha-Plan nach einer Hüft-OP gliedert sich in drei Phasen.",
-        "In der ersten Phase, die etwa zwei Wochen dauert, steht ... im Vordergrund.",
-        "Danach folgt die zweite Phase, in der ...",
-        "In der abschliessenden dritten Phase geht es um ...",
-        "Insgesamt dauert die Rehabilitation etwa zwölf Wochen."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_1",
+      "conceptId": "b2.speaking.20",
+      "requiredConcepts": [
+        "B2.lesson_1"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7404,10 +8140,47 @@
       "talkTime": 180,
       "tips": "Gliedern Sie: Bedeutung des Datenschutzes, gesetzliche Vorgaben, praktische Massnahmen, Fazit. Nutzen Sie Beispiele aus dem Klinikalltag.",
       "usefulPhrases": [
-        "Datenschutz hat im Gesundheitswesen eine besondere Bedeutung, weil ...",
-        "Laut Datenschutz-Grundverordnung müssen wir ...",
-        "Im Alltag achten wir darauf, dass ...",
-        "Ein konkretes Beispiel für eine Schutzmassnahme ist ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.21",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7421,10 +8194,47 @@
       "talkTime": 180,
       "tips": "Bleiben Sie geduldig und freundlich. Erklaren Sie Fachbegriffe in einfacher Sprache. Fragen Sie, ob alles klar ist.",
       "usefulPhrases": [
-        "Gerne erkläre ich Ihnen Ihre Rechnung.",
-        "Dieser Posten ist die Gebühr für die Aufnahmeuntersuchung.",
-        "Die Medikamente, die Sie während Ihres Aufenthalts bekommen haben, sind hier aufgelistet.",
-        "Wenn Sie noch Fragen haben, stehe ich Ihnen gerne zur Verfügung."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.22",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7438,10 +8248,47 @@
       "talkTime": 180,
       "tips": "Horen Sie aufmerksam zu. Gehen Sie auf die Argumente Ihres Partners ein. Nutzen Sie Redemittel für Zustimmung und Widerspruch.",
       "usefulPhrases": [
-        "Ich denke, der Ausbau des Nahverkehrs fördert die Gesundheit, weil ...",
-        "Einerseits bewegen sich die Menschen mehr, wenn sie zu Fusst zur Haltestelle gehen.",
-        "Andererseits kann die Enge in Bussen und Bahnen die Ausbreitung von Infektionen begunstigen.",
-        "Da stimme ich Ihnen zu, aber man sollte auch bedenken ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.23",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7455,10 +8302,47 @@
       "talkTime": 180,
       "tips": "Sprechen Sie ruhig und zuversichtlich. Gehen Sie auf die Ängste des Patienten ein. Fragen Sie, ob er alles verstanden hat.",
       "usefulPhrases": [
-        "Keine Sorge, die Untersuchung ist Routine und dauert nur etwa 10 bis 15 Minuten.",
-        "Wichtig ist, dass Sie ab heute Abend nichts mehr essen. Wasser dürfen Sie noch trinken.",
-        "Sie bekommen eine Beruhigungsspritze, daher werden Sie die Untersuchung kaum merken.",
-        "Nach der Untersuchung müssen Sie noch eine Stunde zur Beobachtung bleiben."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.24",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7472,10 +8356,47 @@
       "talkTime": 180,
       "tips": "Bleiben Sie neutral. Geben Sie beiden die Möglichkeit, ihre Sicht zu erläutern. Fokussieren Sie auf die Sache, nicht auf die Person.",
       "usefulPhrases": [
-        "Ich habe bemerkt, dass es in letzter Zeit Spannungen zwischen Ihnen gibt.",
-        "Kannst du mir aus deiner Sicht erklären, was genau passiert ist?",
-        "Ich verstehe, dass beide Seiten ihre Gründe haben.",
-        "Was haltet ihr von folgendem Kompromiss? ..."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.25",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7489,10 +8410,47 @@
       "talkTime": 120,
       "tips": "Wagen Sie verschiedene Aspekte: Aufklärung der Öffentlichkeit, Datenschutz, Berufsethik und Zeitaufwand.",
       "usefulPhrases": [
-        "Soziale Medien bieten eine grossartige Chance, medizinisches Wissen zu verbreiten.",
-        "Allerdings muss man als Arzt immer den Datenschutz im Blick haben.",
-        "Man sollte als medizinisches Fachpersonal klar zwischen privaten und beruflichen Inhalten trennen.",
-        "Aus meiner Sicht überwiegen die Chancen, wenn man verantwortungsvoll damit umgeht."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.26",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7506,10 +8464,47 @@
       "talkTime": 120,
       "tips": "Ordnen Sie die Impfungen nach Häufigkeit und Zielgruppe. Nennen Sie die wichtigsten Informationen pro Impfung.",
       "usefulPhrases": [
-        "Die ständige Impfkommission empfiehlt verschiedene Impfungen für Erwachsene.",
-        "Für alle über 60 und medizinisches Personal wird die jährliche Grippeimpfung empfohlen.",
-        "Die Tetanusimpfung sollte man alle zehn Jahre auffrischen.",
-        "In Risikogebieten wird auch die FSME-Impfung empfohlen."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.27",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7523,10 +8518,47 @@
       "talkTime": 120,
       "tips": "Seien Sie höflich und Geduldig. Erklären Sie genau, wofür Sie die Bescheinigung brauchen. Fragen Sie nach, ob Sie sie per Post bekommen können.",
       "usefulPhrases": [
-        "Guten Tag, ich war letzte Woche bei Ihnen in Behandlung.",
-        "Ich brauche für meinen Arbeitgeber eine Arbeitsunfähigkeitsbescheinigung.",
-        "Kann ich die Bescheinigung abholen oder wird sie mir per Post zugeschickt?",
-        "Wann wäre die Bescheinigung fertig? Gibt es dafür eine Gebühr?"
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.28",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7540,11 +8572,47 @@
       "talkTime": 180,
       "tips": "Bleiben Sie konstruktiv. Gehen Sie auf die Vorschläge Ihres Partners ein. Versuchen Sie, praktische, umsetzbare Ideen zu entwickeln.",
       "usefulPhrases": [
-        "Stress ist im Krankenhaus ein grosses Thema. Was würdest du vorschlagen?",
-        "Eine Massnahme wäre, regelmässige Teambesprechungen einzuführen.",
-        "Das klingt gut, aber ist das im Alltag wirklich umsetzbar?",
-        "Vielleicht könnte man zusätzlich Supervision anbieten.",
-        "Wir sind uns einig, dass ... eine gute Idee ist."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.29",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7558,10 +8626,47 @@
       "talkTime": 180,
       "tips": "Strukturieren Sie: Problemdarstellung, konkrete Massnahmen (Mehrwegsysteme, Recycling), Nutzen für Umwelt und Gesundheit, Appell.",
       "usefulPhrases": [
-        "Krankenhäuser produzieren täglich grosse Mengen an Plastikmüll.",
-        "Eine einfache Massnahme ist die Einführung von Mehrwegsystemen in der Cafeteria.",
-        "Auch bei medizinischen Einwegprodukten gibt es umweltfreundliche Alternativen.",
-        "Umweltschutz im Krankenhaus ist nicht nur gut für den Planeten, sondern auch für die Patientengesundheit."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_14",
+      "conceptId": "b2.speaking.30",
+      "requiredConcepts": [
+        "B2.lesson_14"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7575,10 +8680,47 @@
       "talkTime": 120,
       "tips": "Zeigen Sie Verständnis für die Ungeduld. Bleiben Sie freundlich und lösungsorientiert.",
       "usefulPhrases": [
-        "Es tut mir wirklich leid, dass Sie so lange warten mussten.",
-        "Leider kam ein Notfall dazwischen, der sofort versorgt werden musste.",
-        "Ich versuche, Sie so schnell wie möglich dranzunehmen.",
-        "Wenn Sie lieber einen neuen Termin machen möchten, ist das auch in Ordnung."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.31",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7592,10 +8734,47 @@
       "talkTime": 180,
       "tips": "Strukturieren Sie: positive Aspekte, negative Aspekte, eigene Erfahrung, Verbesserungsvorschläge.",
       "usefulPhrases": [
-        "Schichtarbeit hat sowohl Vor- als auch Nachteile für das medizinische Personal.",
-        "Ein Vorteil ist die flexible Zeiteinteilung an freien Tagen unter der Woche.",
-        "Ein Nachteil sind die gesundheitlichen Auswirkungen wie Schlafstörungen.",
-        "Meiner Meinung nach könnte man durch bessere Planung die Belastung reduzieren."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.32",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7609,10 +8788,47 @@
       "talkTime": 180,
       "tips": "Horen Sie zu und gehen Sie auf die Argumente ein. Versuchen Sie, beide Perspektiven zu würdigen.",
       "usefulPhrases": [
-        "Die digitale Patientenakte macht den Datenaustausch zwischen Ärzten viel schneller.",
-        "Das stimmt, aber die Sorge vor Datenmissbrauch ist berechtigt.",
-        "Eine gute Verschlüsselung könnte das Risiko minimieren.",
-        "Vielleicht wäre ein Kompromiss, dass der Patient selbst entscheidet, wer Zugriff bekommt."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.33",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7626,10 +8842,47 @@
       "talkTime": 120,
       "tips": "Seien Sie verständnisvoll, nicht vorwurfsvoll. Erklaren Sie die Notwendigkeit sachlich.",
       "usefulPhrases": [
-        "Haben Sie heute Morgen schon etwas gegessen oder getrunken?",
-        "Für die Blutabnahme müssen Sie nuchtern sein, das heißt nichts essen und nur Wasser trinken.",
-        "Das ist kein Problem, wir vereinbaren einfach einen neuen Termin.",
-        "Am besten kommen Sie morgen früh vor dem Frühstück nochmal vorbei."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.34",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7643,10 +8896,47 @@
       "talkTime": 120,
       "tips": "Seien Sie offen für Kritik. Zeigen Sie Initiative und Lernbereitschaft.",
       "usefulPhrases": [
-        "Herr Oberarzt, dürfte ich kurz um ein Feedback zu meiner ersten Woche bitten?",
-        "Ich hatte das Gefühl, dass die Arbeit mit den Patienten ganz gut geklappt hat.",
-        "Allerdings war ich unsicher bei der Dokumentation der Medikamente.",
-        "Haben Sie einen Tipp, wie ich mich in diesem Bereich verbessern kann?"
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.35",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7660,10 +8950,47 @@
       "talkTime": 120,
       "tips": "Wagen Sie beide Seiten ab. Nutzen Sie Beispiele, um Ihre Meinung zu stützen.",
       "usefulPhrases": [
-        "Ich bin der Meinung, dass KI in der Medizin viele Chancen bietet.",
-        "Zum Beispiel kann KI bei der Auswertung von Radiologiebildern unterstützen.",
-        "Allerdings darf die KI nie die letzte Entscheidung treffen, das muss der Arzt tun.",
-        "Ich finde, KI sollte als Werkzeug und nicht als Ersatz für den Arzt eingesetzt werden."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.36",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7677,10 +9004,47 @@
       "talkTime": 180,
       "tips": "Nehmen Sie die Angst ernst. Geben Sie keine falschen Versprechungen. Bieten Sie konkrete Informationen.",
       "usefulPhrases": [
-        "Ich verstehe, dass Sie nervös sind. Das ist ganz normal vor einer OP.",
-        "Die Operation wird unter Vollnarkose durchgeführt, Sie werden nichts davon mitbekommen.",
-        "Das Team hier hat viel Erfahrung mit dieser Art von Eingriff.",
-        "Haben Sie noch konkrete Fragen? Ich bin gerne für Sie da."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.37",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7694,10 +9058,47 @@
       "talkTime": 120,
       "tips": "Gliedern Sie Ihre Zusammenfassung. Nennen Sie die wichtigsten Fakten. Vermeiden Sie unwesentliche Details.",
       "usefulPhrases": [
-        "Die Kampagne 'Bewegt und Gesund' findet im Juni statt.",
-        "Ziel ist es, mehr Bewegung in den Alltag zu bringen und Sitzzeiten zu reduzieren.",
-        "Angeboten werden kostenlose Rückenschule, ein Firmenlauf und Yoga im Park.",
-        "Im letzten Jahr haben 1200 Personen teilgenommen."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.38",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7711,10 +9112,47 @@
       "talkTime": 180,
       "tips": "Bringen Sie persönliche Erfahrungen ein. Bleiben Sie locker. Geben Sie einfache, praktische Tipps.",
       "usefulPhrases": [
-        "Für mich bedeutet gesunde Ernährung vor allem frisch zu kochen.",
-        "Viele denken, gesunde Ernährung sei teuer, aber das stimmt nicht unbedingt.",
-        "Man kann zum Beispiel saisonales Obst und Gemüse kaufen, das ist günstiger.",
-        "Ein einfacher Tipp: Mehr Wasser trinken und weniger Fertigprodukte essen."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.39",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7728,10 +9166,47 @@
       "talkTime": 180,
       "tips": "Zeigen Sie den Zusammenhang zwischen Fortbildung und Behandlungsqualität. Geben Sie Beispiele aus der Praxis.",
       "usefulPhrases": [
-        "Fortbildungen sind für medizinisches Personal unverzichtbar, weil sich das Wissen ständig weiterentwickelt.",
-        "Es gibt viele Möglichkeiten: Online-Kurse, Präsenzseminare, Kongresse oder kliniksinterne Schulungen.",
-        "Eine gute Fortbildung verbessert direkt die Qualität der Patientenversorgung.",
-        "Ich persönlich finde, dass jede Klinik ihren Mitarbeitern regelmässige Fortbildungen ermöglichen sollte."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.40",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7745,10 +9220,47 @@
       "talkTime": 120,
       "tips": "Seien Sie höflich und dankbar. Bieten Sie einen konkreten Ausgleich an.",
       "usefulPhrases": [
-        "Hey, ich habe ein Problem. Ich muss am Wochenende arbeiten, weil ein Kollege krank ist.",
-        "Köntest du vielleicht mit mir tauschen? Ich würde dafür deinen Dienst nächste Woche übernehmen.",
-        "Das wäre eine grosse Hilfe für mich, wenn es dir nichts ausmacht.",
-        "Vielen Dank, dass du dir das überlegst. Ich bin dir wirklich dankbar."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.41",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7762,10 +9274,47 @@
       "talkTime": 180,
       "tips": "Sprechen Sie in einfacher, klarer Sprache. Betonen Sie die Wichtigkeit der vollständigen Einnahme.",
       "usefulPhrases": [
-        "Nehmen Sie das Antibiotikum genau so, wie es auf dem Rezept steht.",
-        "Es ist sehr wichtig, dass Sie die Packung komplett aufbrauchen, auch wenn Sie sich schon besser fühlen.",
-        "Wenn Sie Nebenwirkungen bemerken, setzen Sie das Medikament nicht einfach ab, sondern rufen Sie uns an.",
-        "Am besten nehmen Sie die Tabletten immer zur gleichen Tageszeit ein."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.42",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7779,10 +9328,47 @@
       "talkTime": 120,
       "tips": "Wagen Sie beide Seiten. Beziehen Sie eine klare Position und begründen Sie diese.",
       "usefulPhrases": [
-        "Ich finde, dass ein Rauchverbot vor Kliniken sinnvoll wäre.",
-        "Krankenhäuser sollten Vorbild für Gesundheit sein.",
-        "Allerdings muss man auch die Freiheit der Patienten und Besucher respektieren.",
-        "Vielleicht wären ausgewiesene Raucherbereiche ein guter Kompromiss."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.43",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7796,10 +9382,47 @@
       "talkTime": 120,
       "tips": "Bleiben Sie sachlich und konstruktiv. Sprechen Sie in der Wir-Form. Ziel ist die Verbesserung, nicht Kritik.",
       "usefulPhrases": [
-        "Mir ist aufgefallen, dass wir alle manchmal die Händedesinfektion vergessen.",
-        "Dabei wissen wir, wie wichtig sie für die Patientensicherheit ist.",
-        "Ich schlage vor, dass wir uns gegenseitig freundlich daran erinnern.",
-        "Vielleicht hängen wir ein Schild an der Stationstür auf."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.44",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7813,10 +9436,47 @@
       "talkTime": 180,
       "tips": "Bringen Sie eigene Erfahrungen ein oder denken Sie sich ein Beispiel aus. Seien Sie konstruktiv.",
       "usefulPhrases": [
-        "Ausländische Ärzte stehen in Deutschland vor besonderen Herausforderungen.",
-        "Die grösste Hürde ist oft die Sprache, vor allem die medizinische Fachsprache.",
-        "Auch das deutsche Gesundheitssystem ist komplex und erfordert Einarbeitungszeit.",
-        "Viele Kliniken bieten inzwischen Mentorenprogramme für ausländische Kollegen an."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.45",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7830,10 +9490,47 @@
       "talkTime": 120,
       "tips": "Bleiben Sie freundlich und bestimmt. Zeigen Sie Verständnis, aber bleiben Sie bei den Regeln.",
       "usefulPhrases": [
-        "Guten Tag, ich verstehe, dass Sie Ihren Angehörigen besuchen möchten.",
-        "Leider sind unsere Besuchszeiten von 14 bis 19 Uhr.",
-        "Die Regelung dient der Ruhe und Erholung der Patienten.",
-        "In besonderen Fällen kann ich eine Ausnahme machen, darf ich kurz mit dem Stationsarzt sprechen?"
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.46",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7847,10 +9544,47 @@
       "talkTime": 180,
       "tips": "Bleiben Sie differenziert. Nicht jede Situation eignet sich für eine Videosprechstunde.",
       "usefulPhrases": [
-        "Telekonsultationen sind für einfache Erkrankungen wie eine Erkaltung sehr praktisch.",
-        "Bei komplexeren Beschwerden finde ich den persönlichen Termin besser.",
-        "Der Vorteil ist, dass man sich den Weg zur Praxis spart.",
-        "Auch bei chronischen Erkrankungen, wo der Arzt den Patienten kennt, sind Videosprechstunden sinnvoll."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.47",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7864,10 +9598,47 @@
       "talkTime": 180,
       "tips": "Sprechen Sie langsam und deutlich. Bitten Sie den Patienten, die wichtigsten Punkte zu wiederholen.",
       "usefulPhrases": [
-        "Morgen dürfen Sie nach Hause. Hier sind die wichtigsten Punkte für zu Hause.",
-        "Nehmen Sie Ihre Medikamente genau nach Plan, der liegt dem Entlassungsbrief bei.",
-        "Die Wunde sollte trocken bleiben. Bitte wechseln Sie den Verband täglich.",
-        "Wenn Sie Fieber bekommen oder die Wunde röt wird, rufen Sie bitte sofort an."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.48",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7881,10 +9652,47 @@
       "talkTime": 120,
       "tips": "Differenzieren Sie zwischen seriösen und unseriösen Qüllen. Nennen Sie konkrete Beispiele.",
       "usefulPhrases": [
-        "Soziale Medien können gute Informationen bieten, wenn sie von Fachleuten stammen.",
-        "Viele Menschen informieren sich dort über Gesundheitsthemen, was an sich positiv ist.",
-        "Das Problem sind falsche oder übertriebene Informationen von nicht qualifizierten Personen.",
-        "Ich rate meinen Patienten, immer die Qülle zu prüfen und bei Unsicherheit den Arzt zu fragen."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_18",
+      "conceptId": "b2.speaking.49",
+      "requiredConcepts": [
+        "B2.lesson_18"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     },
     {
@@ -7898,10 +9706,47 @@
       "talkTime": 180,
       "tips": "Betonen Sie die Interdisziplinarität. Nennen Sie positive und negative Beispiele für Teamarbeit.",
       "usefulPhrases": [
-        "In einem Krankenhaus arbeiten viele verschiedene Berufsgruppen zusammen.",
-        "Eine gute Teamarbeit verbessert die Behandlung der Patienten und reduziert Fehler.",
-        "Herausforderungen sind unterschiedliche Hierarchien und Zeitdruck.",
-        "Am besten funktioniert Teamarbeit, wenn alle auf Augenhoche kommunizieren."
+        {
+          "german": "Ich bin der Meinung, dass ...",
+          "english": "I am of the opinion that ..."
+        },
+        {
+          "german": "Dem kann ich nur zustimmen, allerdings ...",
+          "english": "I can only agree with that, however ..."
+        }
+      ],
+      "taughtInLessonId": "B2_lesson_25",
+      "conceptId": "b2.speaking.50",
+      "requiredConcepts": [
+        "B2.lesson_25"
+      ],
+      "rubric": [
+        {
+          "criteria": "Inhalt und Aufgabenerfuellung",
+          "maxPoints": 5,
+          "description": "Vollstaendigkeit, Relevanz, Aufgabenbezug"
+        },
+        {
+          "criteria": "Struktur und Kohaerenz",
+          "maxPoints": 5,
+          "description": "Logischer Aufbau, Absaetze, Verknupfungen"
+        },
+        {
+          "criteria": "Wortschatz und Ausdruck",
+          "maxPoints": 5,
+          "description": "B2-adaequate Lexik, Variation, Praezision"
+        },
+        {
+          "criteria": "Grammatische Korrektheit",
+          "maxPoints": 5,
+          "description": "Satzbau, Tempus, Kasus, B2-Grammatik"
+        }
+      ],
+      "rubricKeys": [
+        "Inhalt und Aufgabenerfuellung",
+        "Struktur und Kohaerenz",
+        "Wortschatz und Ausdruck",
+        "Grammatische Korrektheit"
       ]
     }
   ],
