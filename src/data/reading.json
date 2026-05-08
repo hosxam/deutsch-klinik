@@ -4224,7 +4224,8 @@
             "Krankenhäuser schließen",
             "Medikamente verbilligen"
           ],
-          "answer": "Kosten senken und Versorgung verbessern"
+          "answer": "Kosten senken und Versorgung verbessern",
+          "explanation": "This question tests understanding of the reading passage: \"Gesundheitsreform in Deutschland\". Refer to the text to find the correct answer."
         },
         {
           "id": "qr16",
@@ -4243,11 +4244,18 @@
             "Kürzere Arbeitszeiten",
             "Mehr Medikamente"
           ],
-          "answer": "Mehr Investitionen in Prävention"
+          "answer": "Mehr Investitionen in Prävention",
+          "explanation": "This question tests understanding of the reading passage: \"Gesundheitsreform in Deutschland\". Refer to the text to find the correct answer."
         }
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ]
     },
     {
       "id": "B1_read_2",
@@ -4264,7 +4272,8 @@
             "Weil das Studium zu lang ist",
             "Weil es zu viele Ärzte gibt"
           ],
-          "answer": "Wegen schwieriger Arbeitsbedingungen"
+          "answer": "Wegen schwieriger Arbeitsbedingungen",
+          "explanation": "This question tests understanding of the reading passage: \"Berufung: Arzt oder Ärztin\". Refer to the text to find the correct answer."
         },
         {
           "id": "qr19",
@@ -4283,11 +4292,18 @@
             "Neue Behandlungsmethoden",
             "Krankenhäuser schließen"
           ],
-          "answer": "Ärztemangel in Deutschland"
+          "answer": "Ärztemangel in Deutschland",
+          "explanation": "This question tests understanding of the reading passage: \"Berufung: Arzt oder Ärztin\". Refer to the text to find the correct answer."
         }
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ]
     },
     {
       "id": "B1_read_3",
@@ -4311,11 +4327,18 @@
             "Fieber",
             "Allergien"
           ],
-          "answer": "Rückenschmerzen"
+          "answer": "Rückenschmerzen",
+          "explanation": "This question tests understanding of the reading passage: \"Fit durch den Alltag\". Refer to the text to find the correct answer."
         }
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ]
     },
     {
       "id": "B1_read_4",
@@ -4357,6 +4380,12 @@
           "answer": "Per E-Mail",
           "explanation": "Bewerbungen sollen per E-Mail an bewerbung@praxis-meier.de gesendet werden."
         }
+      ],
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
       ]
     },
     {
@@ -4399,6 +4428,12 @@
           "answer": "Lebenslauf und Studienheft",
           "explanation": "Lukas schreibt: 'Mein Lebenslauf und mein aktülles Studienheft sind im Anhang.'"
         }
+      ],
+      "conceptId": "b1.technology.future",
+      "taughtInLessonId": "B1_lesson_5",
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
       ]
     },
     {
@@ -4435,6 +4470,12 @@
           "answer": "false",
           "explanation": "Die Pausenräume wurden renoviert und stehen ab sofort wieder zur Verfügung."
         }
+      ],
+      "conceptId": "b1.environment.protection",
+      "taughtInLessonId": "B1_lesson_9",
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
       ]
     },
     {
@@ -4477,6 +4518,12 @@
           "answer": "Eine Stellungnahme und eine Entschädigung",
           "explanation": "Er bittet um eine schriftliche Stellungnahme und eine angemessene Entschädigung."
         }
+      ],
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
       ]
     },
     {
@@ -4519,6 +4566,12 @@
           "answer": "1.900 Euro",
           "explanation": "Die Kaution beträgt 1.900 Euro, also zwei Kaltmieten."
         }
+      ],
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
       ]
     },
     {
@@ -4555,6 +4608,12 @@
           "answer": "false",
           "explanation": "§3 sagt: 'Kleinere Reparaturen bis 100 Euro trägt der Mieter.'"
         }
+      ],
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
       ]
     },
     {
@@ -4597,6 +4656,12 @@
           "answer": "Vier Wochen",
           "explanation": "Sie kann der Erhöhung innerhalb von vier Wochen widersprechen."
         }
+      ],
+      "conceptId": "b1.education.future",
+      "taughtInLessonId": "B1_lesson_3",
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
       ]
     },
     {
@@ -4633,6 +4698,12 @@
           "answer": "false",
           "explanation": "Nach der Untersuchung darf man 24 Stunden lang kein Auto fahren."
         }
+      ],
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
       ]
     },
     {
@@ -4675,6 +4746,12 @@
           "answer": "Zusammen mit einer Mahlzeit oder nach dem Essen",
           "explanation": "Die Anweisung sagt: 'Nicht auf nüchternen Magen einnehmen.' Sie soll also mit oder nach dem Essen genommen werden."
         }
+      ],
+      "conceptId": "b1.volunteering",
+      "taughtInLessonId": "B1_lesson_20",
+      "requiredConcepts": [
+        "b1.environment.conservation",
+        "b1.umzu.clauses"
       ]
     },
     {
@@ -4717,6 +4794,12 @@
           "answer": "Auf Buslinien ausweichen",
           "explanation": "Fahrgäste sollen auf die Buslinien M27 und 106 ausweichen."
         }
+      ],
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
       ]
     },
     {
@@ -4759,6 +4842,12 @@
           "answer": "25 Prozent des Fahrpreises",
           "explanation": "Bei einer Verspätung von mehr als 60 Minuten hat man Anspruch auf 25 Prozent des Fahrpreises."
         }
+      ],
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
       ]
     },
     {
@@ -4795,6 +4884,12 @@
           "answer": "true",
           "explanation": "Der Text sagt: 'Doppelzimmer, zwei Übernachtungen, 180 Euro inklusive Frühstück.'"
         }
+      ],
+      "conceptId": "b1.public.transport",
+      "taughtInLessonId": "B1_lesson_15",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "a2.directions"
       ]
     },
     {
@@ -4837,6 +4932,12 @@
           "answer": "100 Einheiten",
           "explanation": "Der Kurs umfasst 100 Unterrichtseinheiten zu je 45 Minuten."
         }
+      ],
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
       ]
     },
     {
@@ -4873,6 +4974,12 @@
           "answer": "true",
           "explanation": "Bewerbungen müssen bis zum 30. April eingereicht werden."
         }
+      ],
+      "conceptId": "b1.technology.future",
+      "taughtInLessonId": "B1_lesson_5",
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
       ]
     },
     {
@@ -4915,6 +5022,12 @@
           "answer": "Er begrüßt sie, befürchtet aber technische Probleme",
           "explanation": "Der Apothekerverband begrüßt die Neürung, weist aber auf mögliche technische Probleme hin."
         }
+      ],
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
       ]
     },
     {
@@ -4951,6 +5064,12 @@
           "answer": "false",
           "explanation": "Der Autor sagt, die Politik sollte die Entscheidung den Arbeitnehmern selbst überlassen."
         }
+      ],
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
       ]
     },
     {
@@ -4993,6 +5112,12 @@
           "answer": "Stoffbeutel",
           "explanation": "Der Text empfiehlt Stoffbeutel statt Plastiktüten beim Einkaufen."
         }
+      ],
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
       ]
     },
     {
@@ -5035,6 +5160,12 @@
           "answer": "Viermal im Jahr",
           "explanation": "Sperrmüll wird viermal im Jahr kostenlos abgeholt."
         }
+      ],
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
       ]
     },
     {
@@ -5071,6 +5202,12 @@
           "answer": "true",
           "explanation": "Maßgeschneiderte Produkte sind vom Widerrufsrecht ausgeschlossen."
         }
+      ],
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
       ]
     },
     {
@@ -5113,6 +5250,12 @@
           "answer": "Der Service hat schnell geantwortet, aber keine gute Lösung angeboten",
           "explanation": "Der Kundenservice hat schnell geantwortet, aber keine zufriedenstellende Lösung angeboten."
         }
+      ],
+      "conceptId": "b1.finance.saving",
+      "taughtInLessonId": "B1_lesson_25",
+      "requiredConcepts": [
+        "a2.money.vocab",
+        "b1.konjunktiv2.wishes"
       ]
     },
     {
@@ -5155,6 +5298,12 @@
           "answer": "Ein Feürwerk",
           "explanation": "Am Samstagabend um 22:00 Uhr beginnt das Höhenfeuerwerk."
         }
+      ],
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
       ]
     },
     {
@@ -5191,6 +5340,12 @@
           "answer": "false",
           "explanation": "Vorkenntnisse sind nicht erforderlich."
         }
+      ],
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
       ]
     },
     {
@@ -5233,6 +5388,12 @@
           "answer": "Wenn ein Patient stirbt",
           "explanation": "Sie sagt: 'Am schwierigsten ist es, wenn ein Patient stirbt.'"
         }
+      ],
+      "conceptId": "b1.environment.protection",
+      "taughtInLessonId": "B1_lesson_9",
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
       ]
     },
     {
@@ -5269,6 +5430,12 @@
           "answer": "false",
           "explanation": "Sie hat mit den Kindern Hausaufgaben gemacht, nicht zum Sport gebracht."
         }
+      ],
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
       ]
     },
     {
@@ -5305,6 +5472,12 @@
           "answer": "true",
           "explanation": "Der überschüssige Betrag wird innerhalb von vier Wochen auf das Konto überwiesen."
         }
+      ],
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
       ]
     },
     {
@@ -5341,6 +5514,12 @@
           "answer": "true",
           "explanation": "Ab dem 2. Januar gelten wieder die normalen Öffnungszeiten."
         }
+      ],
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
       ]
     },
     {
@@ -5377,6 +5556,12 @@
           "answer": "false",
           "explanation": "Anna schreibt: 'Ich habe eine Stunde im Cafe gewartet.'"
         }
+      ],
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
       ]
     },
     {
@@ -5419,6 +5604,12 @@
           "answer": "Weniger Verkehr und bessere Luftqualität",
           "explanation": "Ziel ist es, den Verkehr zu reduzieren und die Luftqualität zu verbessern."
         }
+      ],
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
       ]
     },
     {
@@ -5455,6 +5646,12 @@
           "answer": "false",
           "explanation": "Lara schreibt: 'Alles klar, ich übernehme deinen Dienst.'"
         }
+      ],
+      "conceptId": "b1.environment.protection",
+      "taughtInLessonId": "B1_lesson_9",
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
       ]
     },
     {
@@ -5497,6 +5694,12 @@
           "answer": "Nach mehr als sechs Wochen Krankheit",
           "explanation": "Nach einer langen Krankheit von mehr als sechs Wochen kann ein Wiedereingliederungsprogramm sinnvoll sein."
         }
+      ],
+      "conceptId": "b1.environment.protection",
+      "taughtInLessonId": "B1_lesson_9",
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
       ]
     },
     {
@@ -5533,6 +5736,12 @@
           "answer": "false",
           "explanation": "Nicht verschreibungspflichtige Medikamente werden für Erwachsene grundsätzlich nicht erstattet."
         }
+      ],
+      "conceptId": "b1.education.future",
+      "taughtInLessonId": "B1_lesson_3",
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
       ]
     },
     {
@@ -5575,6 +5784,12 @@
           "answer": "Medikamente verschreiben",
           "explanation": "Medikamente verschreiben ist eine ärztliche Aufgabe, nicht Teil des FSJ."
         }
+      ],
+      "conceptId": "b1.sports.events",
+      "taughtInLessonId": "B1_lesson_23",
+      "requiredConcepts": [
+        "a2.sports.vocab",
+        "a2.hobbies"
       ]
     },
     {
@@ -5617,6 +5832,12 @@
           "answer": "Eine Gutschrift von 150 Euro",
           "explanation": "Die Klinik bietet eine Gutschrift in Höhe von 150 Euro an."
         }
+      ],
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
       ]
     },
     {
@@ -5659,6 +5880,12 @@
           "answer": "Wechsel in einen anderen Kurs, Online-Kurs oder Rückerstattung",
           "explanation": "Die Teilnehmer haben drei Optionen: Wechsel in einen anderen Kurs, Online-Kurs oder Rückerstattung."
         }
+      ],
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
       ]
     },
     {
@@ -5701,6 +5928,12 @@
           "answer": "Sich bei der Hausverwaltung melden",
           "explanation": "Mieter sollen sich umgehend bei der Hausverwaltung melden."
         }
+      ],
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
       ]
     },
     {
@@ -5737,6 +5970,12 @@
           "answer": "true",
           "explanation": "Bei wiederholtem unentschuldigtem Fehlen kann eine Gebühr von 10 Euro erhoben werden."
         }
+      ],
+      "conceptId": "b1.internship",
+      "taughtInLessonId": "B1_lesson_10",
+      "requiredConcepts": [
+        "a2.work.experience",
+        "a2.perfekt.basic"
       ]
     },
     {
@@ -5779,6 +6018,12 @@
           "answer": "Der gemischte Salat",
           "explanation": "Der gemischte Salat als Vorspeise war gut."
         }
+      ],
+      "conceptId": "b1.public.transport",
+      "taughtInLessonId": "B1_lesson_15",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "a2.directions"
       ]
     },
     {
@@ -5815,6 +6060,12 @@
           "answer": "false",
           "explanation": "Die Kosten werden von den Krankenkassen übernommen."
         }
+      ],
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
       ]
     },
     {
@@ -5851,6 +6102,12 @@
           "answer": "false",
           "explanation": "Der Autor erkennt an, dass nicht jeder Fahrrad fahren kann, z.B. Menschen mit Behinderung oder die weit draußen wohnen."
         }
+      ],
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
       ]
     },
     {
@@ -5887,6 +6144,12 @@
           "answer": "true",
           "explanation": "Sie war sehr müde, hat viel gelernt und freut sich auf den zweiten Tag."
         }
+      ],
+      "conceptId": "b1.technology.future",
+      "taughtInLessonId": "B1_lesson_5",
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
       ]
     },
     {
@@ -5923,6 +6186,12 @@
           "answer": "false",
           "explanation": "Man meldet sich mit den bestehenden Zugangsdaten an."
         }
+      ],
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
       ]
     },
     {
@@ -5965,6 +6234,12 @@
           "answer": "Streaming von Videos",
           "explanation": "Streaming von Videos ist nicht erlaubt."
         }
+      ],
+      "conceptId": "b1.finance.saving",
+      "taughtInLessonId": "B1_lesson_25",
+      "requiredConcepts": [
+        "a2.money.vocab",
+        "b1.konjunktiv2.wishes"
       ]
     },
     {
@@ -6001,6 +6276,12 @@
           "answer": "true",
           "explanation": "Der Beitrag rät: 'Achten Sie auf das Datum: Medizinische Informationen veralten schnell.'"
         }
+      ],
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
       ]
     },
     {
@@ -6037,6 +6318,12 @@
           "answer": "false",
           "explanation": "Sie möchte zürst selbst eine Lösung finden und bietet ein Gespräch an."
         }
+      ],
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
       ]
     },
     {
@@ -6073,6 +6360,12 @@
           "answer": "false",
           "explanation": "Fußgänger und Radfahrer können die Baustelle passieren."
         }
+      ],
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
       ]
     },
     {
@@ -6109,6 +6402,12 @@
           "answer": "false",
           "explanation": "Die Krankenkassen bezuschussen das Seminar mit 50 Prozent, nicht komplett."
         }
+      ],
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
       ]
     },
     {
@@ -6151,6 +6450,12 @@
           "answer": "Einen Gutschein für das Freibad",
           "explanation": "Jeder Teilnehmer erhält einen Gutschein für das Freiburger Freibad."
         }
+      ],
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
       ]
     },
     {
@@ -6187,6 +6492,12 @@
           "answer": "true",
           "explanation": "Die Führung ist kostenlos."
         }
+      ],
+      "conceptId": "b1.internship",
+      "taughtInLessonId": "B1_lesson_10",
+      "requiredConcepts": [
+        "a2.work.experience",
+        "a2.perfekt.basic"
       ]
     },
     {
@@ -6223,6 +6534,12 @@
           "answer": "false",
           "explanation": "Straßenschuhe sind in der Halle nicht erlaubt, nur Hallenschuhe mit heller Sohle."
         }
+      ],
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
       ]
     },
     {
@@ -6265,6 +6582,12 @@
           "answer": "Keine Links öffnen und die Bank direkt anrufen",
           "explanation": "Kunden sollen keine Links in verdächtigen E-Mails öffnen und die Bank direkt anrufen."
         }
+      ],
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
       ]
     },
     {
@@ -6301,6 +6624,12 @@
           "answer": "true",
           "explanation": "Die Rückerstattung erfolgt innerhalb von 14 Tagen nach Eingang der Rücksendung."
         }
+      ],
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
       ]
     },
     {
@@ -6343,6 +6672,12 @@
           "answer": "180.000 Euro",
           "explanation": "Die Gesamtkosten betrugen 180.000 Euro."
         }
+      ],
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
       ]
     },
     {
@@ -6379,6 +6714,12 @@
           "answer": "false",
           "explanation": "Der Text sagt: 'Täglich 30 Minuten sind effektiver als einmal pro Woche fünf Stunden.'"
         }
+      ],
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
       ]
     },
     {
@@ -6415,6 +6756,12 @@
           "answer": "false",
           "explanation": "Er hat keine separate Glasbruchversicherung."
         }
+      ],
+      "conceptId": "b1.education.future",
+      "taughtInLessonId": "B1_lesson_3",
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
       ]
     },
     {
@@ -6451,6 +6798,12 @@
           "answer": "true",
           "explanation": "Der Kundenservice kann bei Fragen oder für eine Ratenzahlung kontaktiert werden."
         }
+      ],
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
       ]
     },
     {
@@ -6487,6 +6840,12 @@
           "answer": "false",
           "explanation": "Eine mündliche Kündigung am Telefon reicht nicht aus."
         }
+      ],
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
       ]
     },
     {
@@ -6523,6 +6882,12 @@
           "answer": "true",
           "explanation": "Es gibt die kostenlose App 'Abfall-Kiel' für die Termine."
         }
+      ],
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
       ]
     }
   ],
