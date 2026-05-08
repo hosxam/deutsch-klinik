@@ -430,6 +430,12 @@ export default function DailyMissionPage() {
   const [fcStarted, setFcStarted] = useState(false);
   const [dataLoading, setDataLoading] = useState(true);
   const [dataError, setDataError] = useState(null);
+  const [grammarData, setGrammarData] = useState([]);
+  const [vocabData, setVocabData] = useState([]);
+  const [readingData, setReadingData] = useState([]);
+  const [listeningData, setListeningData] = useState([]);
+  const [writingData, setWritingData] = useState([]);
+  const [speakingData, setSpeakingData] = useState([]);
   const grammarDataRef = useRef([]);
   const vocabDataRef = useRef([]);
   const readingDataRef = useRef([]);
@@ -468,6 +474,12 @@ export default function DailyMissionPage() {
         listeningDataRef.current = listening;
         writingDataRef.current = writing;
         speakingDataRef.current = speaking;
+        setGrammarData(grammar || []);
+        setVocabData(vocab || []);
+        setReadingData(reading || []);
+        setListeningData(listening || []);
+        setWritingData(writing || []);
+        setSpeakingData(speaking || []);
         setDataLoading(false);
       } catch (err) {
         if (cancelled) return;
@@ -621,7 +633,7 @@ export default function DailyMissionPage() {
   const hGcNext = () => advance('grammarLesson', { skipped: false });
 
   const hGa = (ans) => {
-    const ex = grammarDataRef.current?.find((e) => e.id === gq[gi]);
+    const ex = grammarData.find((e) => e.id === gq[gi]);
     if (!ex) return;
     const correct = normalizeAnswer(ans) === normalizeAnswer(ex.answer);
     recordGrammarAnswer(ex.id, correct);
@@ -697,7 +709,7 @@ export default function DailyMissionPage() {
   }, [getCm, gq.length, initDone, lvl, mi, sesh, state]);
 
   const hVa = (sel, correct) => {
-    const word = vocabDataRef.current?.find((w) => w.id === vq[vi]);
+    const word = vocabData.find((w) => w.id === vq[vi]);
     const isCorrect = sel === correct;
     if (word) {
       recordVocabAnswer(`${lvl}_${word.id}`, isCorrect, {
@@ -1080,10 +1092,10 @@ export default function DailyMissionPage() {
     const mistakeIds = vocabMistakes.map(m => String(m.exerciseId || '').replace(`${lvl}_`, ''));
     const poolIds = [...new Set([...mistakeIds, ...weakIds])];
     const words = poolIds
-      .map(id => (vocabDataRef.current || []).find(w => String(w.id) === String(id)))
+      .map(id => vocabData.find(w => String(w.id) === String(id)))
       .filter(Boolean)
       .slice(0, 10);
-    const fallbackWords = words.length > 0 ? words : (vocabDataRef.current || []).slice(0, 5);
+    const fallbackWords = words.length > 0 ? words : vocabData.slice(0, 5);
     const sourceCount = vocabMistakes.length || mistakes.length || weakIds.length;
     const skill = rec?.skill || (vocabMistakes.length ? 'Vocabulary' : 'Review');
     return {
@@ -1230,12 +1242,12 @@ export default function DailyMissionPage() {
   // Practice progress data for filtering completed items from daily missions
   const practiceProgressData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
 
-  // Current mission items from data (curriculum-aware)
+  // Current mission items from data (curriculum-aware) - uses state snapshots to avoid ref access during render
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
-    let items = (listeningDataRef.current || []).filter(item => !completed.has(item.id) && !ppCompleted.has(`listening_${level}_${item.id}`));
+    let items = listeningData.filter(item => !completed.has(item.id) && !ppCompleted.has(`listening_${level}_${item.id}`));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isListeningUnlocked(item.id, s));
@@ -1252,7 +1264,7 @@ export default function DailyMissionPage() {
     const s = getState();
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
-    let items = (readingDataRef.current || []).filter(item => !completed.has(item.id) && !ppCompleted.has(`reading_${level}_${item.id}`));
+    let items = readingData.filter(item => !completed.has(item.id) && !ppCompleted.has(`reading_${level}_${item.id}`));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isReadingUnlocked(item.id, s));
@@ -1268,7 +1280,7 @@ export default function DailyMissionPage() {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.writing || []).map(x => x.id || x.exerciseId || x));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.writing || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
-    let data = (writingDataRef.current || []).filter(item => !ppCompleted.has(item.id));
+    let data = writingData.filter(item => !ppCompleted.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isWritingUnlocked(item.id, s));
       return data[0] || null;
@@ -1279,7 +1291,7 @@ export default function DailyMissionPage() {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.speaking || []).map(x => x.id || x.exerciseId || x));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.speaking || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
-    let data = (speakingDataRef.current || []).filter(item => !ppCompleted.has(item.id));
+    let data = speakingData.filter(item => !ppCompleted.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isSpeakingUnlocked(item.id, s));
       return data[0] || null;
@@ -1639,7 +1651,7 @@ export default function DailyMissionPage() {
 
       {/* GRAMMAR PRACTICE */}
       {cm.type === 'grammar' && (() => {
-        const ex = grammarDataRef.current?.find((e) => e.id === gq[gi]);
+        const ex = grammarData.find((e) => e.id === gq[gi]);
         if (gEmpty) {
           return (
             <Card>
@@ -1773,7 +1785,7 @@ export default function DailyMissionPage() {
 
       {/* VOCABULARY */}
       {cm.type === 'vocabulary' && (() => {
-        const word = vocabDataRef.current?.find((w) => w.id === vq[vi]);
+        const word = vocabData.find((w) => w.id === vq[vi]);
         if (vEmpty) {
           return (
             <Card>
@@ -1802,7 +1814,7 @@ export default function DailyMissionPage() {
           );
         }
 
-        const options = vocabDataRef.current?.filter((w) => w.id !== word.id).map((w) => w.translation) || [];
+        const options = vocabData.filter((w) => w.id !== word.id).map((w) => w.translation) || [];
         const shuffled = [word.translation, ...shuffleArray(options).slice(0, 3)];
         const finalOptions = shuffleArray(shuffled);
 
@@ -2140,7 +2152,7 @@ export default function DailyMissionPage() {
         const target = cm?.target || 10;
         // Build card deck on first render
         if (fcCards.length === 0 && !fcDone && !fcStarted) {
-          const levelWords = (vocabDataRef.current || []).map(w => ({ ...w, level: lvl }));
+          const levelWords = vocabData.map(w => ({ ...w, level: lvl }));
           const allIds = levelWords.map(w => `${lvl}_${w.id}`);
           const dueIds = new Set(getDueVocabWords(allIds));
           const deck = levelWords
