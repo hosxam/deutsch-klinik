@@ -1410,7 +1410,7 @@ export default function DailyMissionPage() {
                 </div>
               </div>
             )}
-          </div>
+          </Card>
         )}
         {/* Lesson complete */}
         {cm.type === 'lesson' && lsDone && (
@@ -1420,7 +1420,7 @@ export default function DailyMissionPage() {
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{cm.nextLesson?.title} completed.</p>
 
           <button style={sBp} onClick={hLn}>Next Mission <ChevronRight size={16} /></button>
-        </div>
+        </Card>
       )}
 
       {/* GRAMMAR CURRICULUM LESSON */}
@@ -1581,7 +1581,7 @@ export default function DailyMissionPage() {
               </div>
             </div>
           )}
-        </div>
+        </Card>
       )}
       {cm.type === 'grammarLesson' && gcDone && (
         <Card className="text-center">
@@ -1589,7 +1589,7 @@ export default function DailyMissionPage() {
           <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#a855f7', marginBottom: '0.5rem' }}>Grammar Lesson Complete!</h3>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{gcLesson?.title} completed.</p>
           <button style={sBp} onClick={hGcNext}>Next Mission <ChevronRight size={16} /></button>
-        </div>
+        </Card>
       )}
 
       {/* GRAMMAR PRACTICE */}
@@ -1605,17 +1605,17 @@ export default function DailyMissionPage() {
               </p>
               {/* eslint-disable-next-line react-hooks/refs -- advance is a plain function, not a ref */}
               <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('grammar', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
-            </div>
+            </Card>
           );
         }
-        if (!ex && gq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading grammar...</p></div>;
+        if (!ex && gq.length > 0) return <Card><p style={{ color: 'var(--text-muted)' }}>Loading grammar...</p></Card>;
         const gcCompletedIds = getCompletedGrammarLessons(lvl);
         let practicingTopic = sesh?.grammarPracticeTopic || '';
         if (!practicingTopic && gcCompletedIds.length > 0) {
           const lastGc = (grammarCurriculum[lvl] || []).find(g => g.id === gcCompletedIds[gcCompletedIds.length - 1]);
           if (lastGc) practicingTopic = lastGc.title;
         }
-        if (!ex && gq.length === 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Selecting questions...</p></div>;
+        if (!ex && gq.length === 0) return <Card><p style={{ color: 'var(--text-muted)' }}>Selecting questions...</p></Card>;
         if (gw >= gq.length && gq.length > 0) {
           const wr = gw - gc;
           return (
@@ -1658,7 +1658,7 @@ export default function DailyMissionPage() {
                   </div>
                 </div>
               )}
-            </div>
+            </Card>
           );
         }
         const hasAns = gr !== null;
@@ -1673,7 +1673,7 @@ export default function DailyMissionPage() {
         const completedLessonIds = getCompletedLessons(lvl);
         const shouldRecommendLesson = Boolean(recommendedLesson && recommendedLessonId && !completedLessonIds.includes(recommendedLessonId));
         return (
-          <div style={sCard}>
+          <Card>
             {practicingTopic && (
               <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
                 <span style={{ padding: '0.15rem 0.5rem', borderRadius: '4px', background: 'rgba(168,85,247,0.12)', color: '#a855f7', fontSize: '0.75rem', fontWeight: 600 }}>
@@ -1722,7 +1722,7 @@ export default function DailyMissionPage() {
                 </div>
               </div>
             )}
-          </div>
+          </Card>
         );
       })()}
 
@@ -1731,7 +1731,7 @@ export default function DailyMissionPage() {
         const word = vocabDataRef.current?.find((w) => w.id === vq[vi]);
         if (vEmpty) {
           return (
-            <div style={sCard}>
+            <Card>
               <BookOpen size={28} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>No introduced vocabulary due</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
@@ -1739,21 +1739,21 @@ export default function DailyMissionPage() {
               </p>
               {/* eslint-disable-next-line react-hooks/refs -- advance is a plain function, not a ref */}
               <button style={{ ...sBp, marginTop: '0.75rem' }} onClick={() => advance('vocabulary', { total: 0, correct: 0, alignedOnly: true })}>Next Mission <ChevronRight size={16} /></button>
-            </div>
+            </Card>
           );
         }
-        if (!word && vq.length > 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Loading vocabulary...</p></div>;
-        if (!word && vq.length === 0) return <div style={sCard}><p style={{ color: 'var(--text-muted)' }}>Selecting words...</p></div>;
+        if (!word && vq.length > 0) return <Card><p style={{ color: 'var(--text-muted)' }}>Loading vocabulary...</p></Card>;
+        if (!word && vq.length === 0) return <Card><p style={{ color: 'var(--text-muted)' }}>Selecting words...</p></Card>;
         if (vd >= vq.length && vq.length > 0) {
           const wr = vd - vc;
           return (
-            <div style={{ ...sCard, textAlign: 'center' }}>
+            <Card className="text-center">
               <BookOpen size={36} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>Vocabulary Mission Complete</h3>
               <div style={{ fontSize: '1.5rem', fontWeight: 800, color: vc >= vq.length * 0.7 ? '#22c55e' : '#3bff9e', marginBottom: '0.5rem' }}>{vc}/{vq.length}</div>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>Correct: {vc} | Wrong: {wr}</p>
               <button style={sBp} onClick={() => { advance('vocabulary', { total: vq.length, correct: vc, wrong: wr }); setVi(0); setVq([]); setVd(0); setVc(0); setVr(null); }}>Next Mission <ChevronRight size={16} /></button>
-            </div>
+            </Card>
           );
         }
 
@@ -1762,7 +1762,7 @@ export default function DailyMissionPage() {
         const finalOptions = shuffleArray(shuffled);
 
         return (
-          <div style={sCard}>
+          <Card>
             <div style={{ textAlign: 'center', marginBottom: '1.5rem', padding: '1rem 0' }}>
               <h3 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '0.25rem' }}>{word.word}</h3>
               {word.article && <span style={tag('rgba(59,130,246,0.15)')}>{word.article}</span>}
@@ -1793,7 +1793,7 @@ export default function DailyMissionPage() {
                 </div>
               </div>
             )}
-          </div>
+          </Card>
         );
       })()}
 
@@ -1804,17 +1804,17 @@ export default function DailyMissionPage() {
         const correct = Object.values(lrcorr || {}).filter(Boolean).length;
         const wrong = total - correct;
         return (
-          <div style={{ ...sCard, textAlign: 'center' }}>
+          <Card className="text-center">
             <Headphones size={36} style={{ color: '#06b6d4', marginBottom: '0.75rem' }} />
             <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#06b6d4', marginBottom: '0.5rem' }}>Listening Complete!</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{correct} / {total} correct</p>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}</p>
             <button style={sBp} onClick={hLrnN}>Next Mission <ChevronRight size={16} /></button>
-          </div>
+          </Card>
         );
       })()}
       {cm.type === 'listening' && !listeningDone && (
-        <div style={sCard}>
+        <Card>
           {!listeningItem || (listeningItem.questions || []).length === 0 ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
               <Headphones size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
@@ -1951,7 +1951,7 @@ export default function DailyMissionPage() {
               )}
             </div>
           )}
-        </div>
+        </Card>
       )}
 
       {/* READING MISSION */}
@@ -1961,17 +1961,17 @@ export default function DailyMissionPage() {
         const correct = Object.values(rrcorr || {}).filter(Boolean).length;
         const wrong = total - correct;
         return (
-          <div style={{ ...sCard, textAlign: 'center' }}>
+          <Card className="text-center">
             <FileText size={36} style={{ color: '#a78bfa', marginBottom: '0.75rem' }} />
             <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#a78bfa', marginBottom: '0.5rem' }}>Reading Complete!</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{correct} / {total} correct</p>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{wrong > 0 ? wrong + ' incorrect' : 'Perfect score!'}</p>
             <button style={sBp} onClick={hRdN}>Next Mission <ChevronRight size={16} /></button>
-          </div>
+          </Card>
         );
       })()}
       {cm.type === 'reading' && !readingDone && (
-        <div style={sCard}>
+        <Card>
           {!readingItem || (readingItem.questions || []).length === 0 ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
               <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
@@ -2087,7 +2087,7 @@ export default function DailyMissionPage() {
               )}
             </div>
           )}
-        </div>
+        </Card>
       )}
 
       {/* FLASHCARD MISSION - Inline SM-2 Flashcard Review */}
@@ -2132,7 +2132,7 @@ export default function DailyMissionPage() {
           };
 
           return (
-            <div style={sCard}>
+            <Card>
               <div style={{ textAlign: 'center' }}>
                 <BookOpen size={36} style={{ color: '#3bff9e', marginBottom: '0.5rem' }} />
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.5rem' }}>Flashcard Review</h3>
@@ -2186,14 +2186,14 @@ export default function DailyMissionPage() {
                   </div>
                 )}
               </div>
-            </div>
+            </Card>
           );
         }
 
         // Deck ready but not started - show start screen
         if (fcCards.length > 0 && !fcStarted && !fcDone) {
           return (
-            <div style={sCard}>
+            <Card>
               <div style={{ textAlign: 'center' }}>
                 <BookOpen size={40} style={{ color: '#3bff9e', marginBottom: '0.75rem' }} />
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#3bff9e', marginBottom: '0.25rem' }}>Flashcards in Today&apos;s Plan</h3>
@@ -2212,13 +2212,13 @@ export default function DailyMissionPage() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Card>
           );
         }
 
         // All done or no cards
         return (
-          <div style={sCard}>
+          <Card>
             <div style={{ textAlign: 'center' }}>
               <CheckCircle size={40} style={{ color: '#22c55e', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>Flashcards Complete</h3>
@@ -2229,7 +2229,7 @@ export default function DailyMissionPage() {
                 <CheckCircle size={16} /> Continue
               </button>
             </div>
-          </div>
+          </Card>
         );
       })()}
 
@@ -2238,7 +2238,7 @@ export default function DailyMissionPage() {
         const session = buildRemediationSession();
         const item = session.items[remIndex];
         return (
-          <div style={sCard}>
+          <Card>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
               <RefreshCw size={40} style={{ color: '#ff3355', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#ff3355', marginBottom: '0.25rem' }}>Targeted Remediation</h3>
@@ -2302,13 +2302,13 @@ export default function DailyMissionPage() {
                 </button>
               )}
             </div>
-          </div>
+          </Card>
         );
       })()}
 
       {/* WRITING MISSION */}
       {cm.type === 'writing' && !wtDone && (
-        <div style={sCard}>
+        <Card>
           {!writingItem ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
               <PenTool size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
@@ -2354,14 +2354,14 @@ export default function DailyMissionPage() {
               </div>
             </div>
           )}
-        </div>
+        </Card>
       )}
       {cm.type === 'writing' && wtDone && (() => {
         const wr = wtAiResult;
         const loading = wtAiLoading;
         const err = wtAiError;
         return (
-          <div style={sCard}>
+          <Card>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
               <PenTool size={36} style={{ color: '#ec4899', marginBottom: '0.5rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: '0.25rem' }}>Writing Submitted!</h3>
@@ -2466,13 +2466,13 @@ export default function DailyMissionPage() {
               </p>
               <button style={sBp} onClick={hWtN}>Next Mission <ChevronRight size={16} /></button>
             </div>
-          </div>
+          </Card>
         );
       })()}
 
       {/* SPEAKING MISSION */}
       {cm.type === 'speaking' && !spDone && (
-        <div style={sCard}>
+        <Card>
           {!speakingItem ? (
             <div style={{ textAlign: 'center', padding: '1rem 0' }}>
               <Mic size={40} style={{ color: 'var(--text-muted)', marginBottom: '0.75rem' }} />
@@ -2603,14 +2603,14 @@ export default function DailyMissionPage() {
               </div>
             </div>
           )}
-        </div>
+        </Card>
       )}
       {cm.type === 'speaking' && spDone && (() => {
         const sr = spAiResult;
         const loading = spAiLoading;
         const err = spAiError;
         return (
-          <div style={sCard}>
+          <Card>
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
               <Mic size={36} style={{ color: '#f97316', marginBottom: '0.5rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#f97316', marginBottom: '0.25rem' }}>Speaking Submitted!</h3>
@@ -2733,7 +2733,7 @@ export default function DailyMissionPage() {
               </p>
               <button style={sBp} onClick={hSpN}>Next Mission <ChevronRight size={16} /></button>
             </div>
-          </div>
+          </Card>
         );
       })()}
     </PageShell>

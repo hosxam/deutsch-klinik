@@ -11,6 +11,9 @@ import {
   ChevronDown, ChevronUp, RotateCcw, Brain,
   Star, Trash2,
 } from 'lucide-react';
+import {
+  PageShell, SectionHeader, Card, Button, Badge, LevelBadge, EmptyState, LoadingState,
+} from '../components/ui';
 
 const levelColors = { A1: '#10b981', A2: '#14b8a6', B1: '#f59e0b', B2: '#ef4444', C1: '#8b5cf6' };
 
@@ -125,41 +128,41 @@ export default function MistakeNotebookPage() {
   const totalDue = vocabItems.length;
 
   return (
-    <div>
-      <h1 style={{ fontSize: '22px', fontWeight: 'bold', color: 'var(--accent)', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <AlertTriangle size={22} style={{ color: '#ff6b00' }} /> Mistake Notebook
-      </h1>
-      <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '20px' }}>
-        Review your mistakes, re-practice weak areas, and reinforce vocabulary.
-      </p>
+    <PageShell>
+      <SectionHeader
+        title={
+          <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <AlertTriangle size={22} style={{ color: '#ff6b00' }} /> Mistake Notebook
+          </span>
+        }
+        subtitle={`Review your mistakes, re-practice weak areas, and reinforce vocabulary. ${totalMistakes} total mistakes tracked.`}
+      />
 
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '10px', marginBottom: '20px' }}>
-        <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
+        <Card className="text-center" style={{ padding: '12px' }}>
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#ff3355' }}>{totalMistakes}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Mistakes</div>
-        </div>
-        <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
+        </Card>
+        <Card className="text-center" style={{ padding: '12px' }}>
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#f59e0b' }}>{totalWeak}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Weak Topics</div>
-        </div>
-        <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
+        </Card>
+        <Card className="text-center" style={{ padding: '12px' }}>
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#8b5cf6' }}>{totalDue}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Vocab Due</div>
-        </div>
-        <div style={{ padding: '12px', borderRadius: '8px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', textAlign: 'center' }}>
+        </Card>
+        <Card className="text-center" style={{ padding: '12px' }}>
           <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#3bff9e' }}>{retryCorrectCount}</div>
           <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Retries Correct</div>
-        </div>
+        </Card>
       </div>
 
       {/* Skill counts mini display */}
       {Object.keys(skillCounts).length > 0 && (
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '12px' }}>
           {Object.entries(skillCounts).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([skill, count]) => (
-            <div key={skill} style={{ padding: '4px 10px', borderRadius: '9999px', fontSize: '11px', backgroundColor: 'rgba(255,51,85,0.08)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.2)' }}>
-              {skill}: {count} mistakes
-            </div>
+            <Badge key={skill} label={`${skill}: ${count} mistakes`} color="#ff3355" />
           ))}
         </div>
       )}
@@ -230,19 +233,19 @@ export default function MistakeNotebookPage() {
           </div>
 
           {Object.keys(groupByLevel).length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
-              <Check size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No mistakes found with current filters. Keep practicing!</p>
-            </div>
+            <EmptyState
+              icon="✅"
+              title="No mistakes found"
+              description="No mistakes found with current filters. Keep practicing!"
+            />
           ) : (
             Object.entries(groupByLevel).map(([level, mistakes]) => (
               <div key={level} style={{ marginBottom: '20px' }}>
                 <h3 style={{
                   fontSize: '15px', fontWeight: 'bold', marginBottom: '10px',
                   display: 'flex', alignItems: 'center', gap: '8px',
-                  color: levelColors[level] || 'var(--text-primary)',
                 }}>
-                  <span style={{ color: levelColors[level] }}>Level {level}</span>
+                  <LevelBadge level={level} size="lg" />
                   <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>({mistakes.length} mistakes)</span>
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -251,11 +254,7 @@ export default function MistakeNotebookPage() {
                     const isExpanded = expandedMistake === key;
                     const actualMatcher = { exerciseId: mistake.exerciseId, date: mistake.date };
                     return (
-                      <div key={key} style={{
-                        borderRadius: '10px', padding: '14px 16px',
-                        backgroundColor: 'var(--bg-card)',
-                        border: '1px solid var(--border)',
-                      }}>
+                      <Card key={key} style={{ padding: '14px 16px' }}>
                         <div
                           onClick={() => setExpandedMistake(isExpanded ? null : key)}
                           style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}
@@ -273,9 +272,9 @@ export default function MistakeNotebookPage() {
                               </span>
                             </div>
                             {mistake.skill && (
-                              <span style={{ fontSize: '10px', padding: '1px 6px', borderRadius: '4px', marginTop: '4px', display: 'inline-block', backgroundColor: 'rgba(139,92,246,0.1)', color: '#8b5cf6' }}>
-                                {mistake.skill}
-                              </span>
+                              <div style={{ marginTop: '4px' }}>
+                                <Badge label={mistake.skill} color="#8b5cf6" />
+                              </div>
                             )}
                           </div>
                           <div style={{ color: 'var(--text-muted)', flexShrink: 0 }}>
@@ -303,19 +302,15 @@ export default function MistakeNotebookPage() {
                                 }}
                               />
                               {retryResults[key] === undefined && (
-                                <button
+                                <Button
                                   onClick={() => checkMistakeRetry(mistake, key)}
                                   disabled={!retryAnswers[key]}
-                                  style={{
-                                    padding: '8px 16px', borderRadius: '6px', border: 'none',
-                                    backgroundColor: levelColors[level] || 'var(--accent)',
-                                    color: '#fff', fontSize: '12px', fontWeight: '600', cursor: 'pointer',
-                                    opacity: retryAnswers[key] ? 1 : 0.5,
-                                  }}
+                                  size="sm"
+                                  style={{ backgroundColor: levelColors[level] || 'var(--accent)', opacity: retryAnswers[key] ? 1 : 0.5 }}
                                 >
-                                  <RefreshCw size={12} style={{ display: 'inline', marginRight: '4px' }} />
+                                  <RefreshCw size={12} style={{ marginRight: '6px' }} />
                                   Check
-                                </button>
+                                </Button>
                               )}
                             </div>
                             {retryResults[key] !== undefined && (
@@ -332,20 +327,17 @@ export default function MistakeNotebookPage() {
 
                             {/* Mark as mastered */}
                             <div style={{ marginTop: '12px', display: 'flex', gap: '8px' }}>
-                              <button
+                              <Button
                                 onClick={() => {
                                   handleMarkMasteredById(level, mistake.exerciseId);
                                 }}
-                                style={{
-                                  padding: '6px 12px', borderRadius: '6px', border: '1px solid #3bff9e',
-                                  backgroundColor: 'transparent', color: '#3bff9e',
-                                  fontSize: '11px', fontWeight: '600', cursor: 'pointer',
-                                  display: 'flex', alignItems: 'center', gap: '4px',
-                                }}
+                                size="sm"
+                                variant="ghost"
+                                style={{ border: '1px solid #3bff9e', color: '#3bff9e' }}
                               >
-                                <Star size={12} /> Mark as mastered
-                              </button>
-                              <button
+                                <Star size={12} style={{ marginRight: '4px' }} /> Mark as mastered
+                              </Button>
+                              <Button
                                 onClick={() => {
                                   const storeMistakes = getMistakesByLevel(level) || [];
                                   const actualIdx = storeMistakes.findIndex(m => (actualMatcher.exerciseId && m.exerciseId === actualMatcher.exerciseId) || (actualMatcher.date && m.date === actualMatcher.date));
@@ -354,19 +346,15 @@ export default function MistakeNotebookPage() {
                                     setState({ ...getState() });
                                   }
                                 }}
-                                style={{
-                                  padding: '6px 12px', borderRadius: '6px', border: '1px solid #ff3355',
-                                  backgroundColor: 'transparent', color: '#ff3355',
-                                  fontSize: '11px', fontWeight: '600', cursor: 'pointer',
-                                  display: 'flex', alignItems: 'center', gap: '4px',
-                                }}
+                                size="sm"
+                                variant="danger"
                               >
-                                <Trash2 size={12} /> Remove
-                              </button>
+                                <Trash2 size={12} style={{ marginRight: '4px' }} /> Remove
+                              </Button>
                             </div>
                           </div>
                         )}
-                      </div>
+                      </Card>
                     );
                   })}
                 </div>
@@ -380,37 +368,32 @@ export default function MistakeNotebookPage() {
       {activeTab === 'weak' && (
         <div>
           {weakTopics.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
-              <Check size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#3bff9e' }} />
-              <p>No weak topics found. Keep up the good work!</p>
-            </div>
+            <EmptyState
+              icon="🌟"
+              title="No weak topics"
+              description="No weak topics found. Keep up the good work!"
+            />
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               {weakTopics.map((topic, idx) => (
-                <div key={idx} style={{
-                  padding: '14px 16px', borderRadius: '10px',
-                  backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
-                }}>
+                <Card key={idx} style={{ padding: '14px 16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <div>
                       <span style={{ fontSize: '14px', fontWeight: '600', color: 'var(--text-primary)' }}>
                         {topic.topic}
                       </span>
-                      <span style={{
-                        fontSize: '11px', marginLeft: '8px', padding: '1px 6px', borderRadius: '4px',
-                        backgroundColor: topic.status === 'weak' ? 'rgba(255,51,85,0.1)' : 'rgba(245,158,11,0.1)',
-                        color: topic.status === 'weak' ? '#ff3355' : '#f59e0b',
-                      }}>
-                        {topic.status}
-                      </span>
+                      <Badge
+                        label={topic.status}
+                        color={topic.status === 'weak' ? '#ff3355' : '#f59e0b'}
+                      />
                     </div>
                     <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
                       Score: {topic.score || 'N/A'}
                     </span>
                   </div>
                   {topic.level && (
-                    <div style={{ fontSize: '11px', marginTop: '4px', color: levelColors[topic.level] || 'var(--text-muted)' }}>
-                      Level: {topic.level}
+                    <div style={{ marginTop: '4px' }}>
+                      <LevelBadge level={topic.level} size="sm" />
                     </div>
                   )}
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '8px' }}>
@@ -428,15 +411,16 @@ export default function MistakeNotebookPage() {
                   }}>
                     Recommended lesson
                   </Link>
-                  <button onClick={() => { setActiveTab('mistakes'); setFilterSkill(topic.topic); }} style={{
-                    display: 'inline-block', padding: '4px 10px', borderRadius: '6px', border: 'none',
-                    fontSize: '11px', backgroundColor: 'var(--bg-hover)', color: '#f59e0b',
-                    fontWeight: '600', cursor: 'pointer',
-                  }}>
+                  <Button
+                    onClick={() => { setActiveTab('mistakes'); setFilterSkill(topic.topic); }}
+                    size="sm"
+                    variant="ghost"
+                    style={{ color: '#f59e0b' }}
+                  >
                     Review mistakes
-                  </button>
+                  </Button>
                   </div>
-                </div>
+                </Card>
               ))}
             </div>
           )}
@@ -453,21 +437,15 @@ export default function MistakeNotebookPage() {
             </span>
           </div>
           {vocabItems.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
-              <CheckCircle size={40} style={{ margin: '0 auto 12px', display: 'block', color: '#22c55e' }} />
-              <p style={{ fontSize: '15px', fontWeight: 600, color: '#22c55e', marginBottom: '8px' }}>All vocabulary reviewed</p>
-              <p>Come back tomorrow for new words.</p>
-              <div style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-secondary)' }}>
-                <RotateCcw size={14} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />SM-2 queue is clear for {currentLevel}
-              </div>
-            </div>
+            <EmptyState
+              icon="📚"
+              title="All vocabulary reviewed"
+              description={`Come back tomorrow for new words. SM-2 queue is clear for ${currentLevel}.`}
+            />
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               {vocabItems.map((word, idx) => (
-                <div key={word.id || idx} style={{
-                  padding: '14px 16px', borderRadius: '10px',
-                  backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
-                }}>
+                <Card key={word.id || idx} style={{ padding: '14px 16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                     <div>
                       {word.article && <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginRight: '4px' }}>{word.article}</span>}
@@ -478,13 +456,7 @@ export default function MistakeNotebookPage() {
                         {word.translation || word.english}
                       </span>
                     </div>
-                    <span style={{
-                      fontSize: '11px', padding: '2px 8px', borderRadius: '4px',
-                      backgroundColor: levelColors[word.level] + '20',
-                      color: levelColors[word.level] || 'var(--text-muted)',
-                    }}>
-                      {currentLevel}
-                    </span>
+                    <LevelBadge level={word.level || currentLevel} size="sm" />
                   </div>
                   {word.example && (
                     <p style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '8px' }}>
@@ -492,35 +464,29 @@ export default function MistakeNotebookPage() {
                     </p>
                   )}
                   <div style={{ display: 'flex', gap: '8px' }}>
-                    <button
+                    <Button
                       onClick={() => handleVocabReview(word.id, true)}
-                      style={{
-                        flex: 1, padding: '8px', borderRadius: '6px', border: 'none',
-                        backgroundColor: 'rgba(59,255,158,0.15)', color: '#3bff9e',
-                        fontWeight: '600', fontSize: '13px', cursor: 'pointer',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
-                      }}
+                      size="sm"
+                      variant="success"
+                      style={{ flex: 1 }}
                     >
-                      <Check size={14} /> Knew it
-                    </button>
-                    <button
+                      <Check size={14} style={{ marginRight: '6px' }} /> Knew it
+                    </Button>
+                    <Button
                       onClick={() => handleVocabReview(word.id, false)}
-                      style={{
-                        flex: 1, padding: '8px', borderRadius: '6px', border: 'none',
-                        backgroundColor: 'rgba(255,51,85,0.15)', color: '#ff3355',
-                        fontWeight: '600', fontSize: '13px', cursor: 'pointer',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
-                      }}
+                      size="sm"
+                      variant="danger"
+                      style={{ flex: 1 }}
                     >
-                      <X size={14} /> Still learning
-                    </button>
+                      <X size={14} style={{ marginRight: '6px' }} /> Still learning
+                    </Button>
                   </div>
-                </div>
+                </Card>
               ))}
             </div>
           )}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }
