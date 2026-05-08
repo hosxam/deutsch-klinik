@@ -1,0 +1,602 @@
+[
+  {
+    "id": "A2_exam_1",
+    "name": "A2 Practice Exam 1 - Termine und Verabredungen",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex1_les_1",
+            "type": "mcq",
+            "question": "E-Mail: 'Liebe Anna, ich komme am Samstag mit dem Zug um 14 Uhr an. Kannst du mich am Bahnhof abholen? Deine Maria.' Was erwartet Maria von Anna?",
+            "options": [
+              "Essen kochen",
+              "Am Bahnhof abholen",
+              "Ein Hotel buchen",
+              "Ein Taxi rufen"
+            ],
+            "answer": "Am Bahnhof abholen"
+          },
+          {
+            "id": "A2_ex1_les_2",
+            "type": "true-false",
+            "question": "Anzeige: 'Wohnung zu vermieten: 2 Zimmer, 65 qm, 800 Euro warm, ab 1. Mai.' Die Wohnung hat 3 Zimmer.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex1_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Das Konzert beginnt um 20 Uhr. Einlass ist ab 19 Uhr. Karten kosten 25 Euro an der Abendkasse.'",
+            "options": [
+              "Kinoprogramm",
+              "Konzertankündigung",
+              "Theaterstück",
+              "Museumsführung"
+            ],
+            "answer": "Konzertankündigung"
+          },
+          {
+            "id": "A2_ex1_les_4",
+            "type": "mcq",
+            "question": "Notiz: 'Milch, Brot, Eier, Äpfel - nicht vergessen! Und bitte die Rechnung bezahlen!' Was soll die Person tun?",
+            "options": [
+              "Nur einkaufen",
+              "Einkaufen und Rechnung bezahlen",
+              "Nur die Rechnung bezahlen",
+              "Zur Bank gehen"
+            ],
+            "answer": "Einkaufen und Rechnung bezahlen"
+          },
+          {
+            "id": "A2_ex1_les_5",
+            "type": "true-false",
+            "question": "Text: 'Frau Meier arbeitet seit zehn Jahren als Krankenschwester im St. Joseph Krankenhaus.' Frau Meier arbeitet im Krankenhaus.",
+            "answer": "true"
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 20,
+        "tasks": [
+          {
+            "id": "A2_ex1_hor_1",
+            "type": "mcq",
+            "question": "Patient: 'Seit einer Woche habe ich Schmerzen im linken Knie.' Seit wann hat der Patient Schmerzen?",
+            "options": [
+              "Seit einem Tag",
+              "Seit drei Tagen",
+              "Seit einer Woche",
+              "Seit einem Monat"
+            ],
+            "answer": "Seit einer Woche"
+          },
+          {
+            "id": "A2_ex1_hor_2",
+            "type": "true-false",
+            "question": "Telefonansage: 'Unsere Praxis bleibt vom 24. bis 28. Dezember geschlossen.' Die Praxis ist im Dezember geschlossen.",
+            "answer": "true"
+          },
+          {
+            "id": "A2_ex1_hor_3",
+            "type": "mcq",
+            "question": "Freundin: 'Komm doch um 19 Uhr. Wir essen dann zusammen.' Um wie viel Uhr soll man kommen?",
+            "options": [
+              "17 Uhr",
+              "18 Uhr",
+              "19 Uhr",
+              "20 Uhr"
+            ],
+            "answer": "19 Uhr"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex1_sch_1",
+            "prompt": "Sie haben einen Arzttermin vergessen. Schreiben Sie eine E-Mail an die Praxis. - Entschuldigen Sie sich - Nennen Sie den ursprünglichen Termin - Bitten Sie um einen neuen Termin",
+            "wordLimit": 60
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 60,
+        "tasks": [
+          {
+            "id": "A2_ex1_spr_1",
+            "prompt": "Erzählen Sie von Ihrem letzten Urlaub. - Wohin sind Sie gefahren? - Mit wem? - Was haben Sie gemacht? - Wie war es?",
+            "talkTime": 90
+          },
+          {
+            "id": "A2_ex1_spr_2",
+            "prompt": "Sprechen Sie über Ihre Hobbys. - Welche Hobbys haben Sie? - Seit wann machen Sie das? - Was gefällt Ihnen daran?",
+            "talkTime": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "A2_exam_2",
+    "name": "A2 Practice Exam 2 - Alltag und Einkaufen",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex2_les_1",
+            "type": "mcq",
+            "question": "Aushang: 'Yoga-Kurs für Anfänger - Start 10. Mai - montags 18-19 Uhr - 80 Euro.' Was steht auf dem Aushang?",
+            "options": [
+              "Schwimmkurs",
+              "Yoga-Kurs",
+              "Kochangebot",
+              "Sprachkurs"
+            ],
+            "answer": "Yoga-Kurs"
+          },
+          {
+            "id": "A2_ex2_les_2",
+            "type": "true-false",
+            "question": "SMS: 'Bin um 20 Uhr am Bahnhof. Holst du mich ab?' Die Person kommt um 21 Uhr.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex2_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Für Kinder von 6 bis 10 Jahren. Wir malen, basteln und spielen Theater. Kosten: 30 Euro pro Monat.'",
+            "options": [
+              "Sprachförderung",
+              "Kinderkunstkurs",
+              "Sportcamp",
+              "Musikunterricht"
+            ],
+            "answer": "Kinderkunstkurs"
+          },
+          {
+            "id": "A2_ex2_les_4",
+            "type": "mcq",
+            "question": "Schild im Park: 'Hunde bitte an die Leine nehmen. Haufen bitte entfernen.' Was müssen Hundebesitzer tun?",
+            "options": [
+              "Hunde zu Hause lassen",
+              "Hunde anleinen und Haufen entfernen",
+              "Hunde nur morgens ausführen",
+              "Hunde ohne Leine laufen lassen"
+            ],
+            "answer": "Hunde anleinen und Haufen entfernen"
+          },
+          {
+            "id": "A2_ex2_les_5",
+            "type": "true-false",
+            "question": "Durchsage: 'Wegen eines Stromausfalls bleibt die Bibliothek heute geschlossen.' Die Bibliothek ist wegen Stromausfall zu.",
+            "answer": "true"
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 20,
+        "tasks": [
+          {
+            "id": "A2_ex2_hor_1",
+            "type": "mcq",
+            "question": "Durchsage: 'Der Zug nach Hamburg fährt um 15:30 Uhr ab Gleis 7.' Von welchem Gleis fährt der Zug?",
+            "options": [
+              "Gleis 3",
+              "Gleis 5",
+              "Gleis 7",
+              "Gleis 9"
+            ],
+            "answer": "Gleis 7"
+          },
+          {
+            "id": "A2_ex2_hor_2",
+            "type": "true-false",
+            "question": "Nachricht: 'Die Milch ist alle. Kannst du bitte welche kaufen?' Die Person soll Brot kaufen.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex2_hor_3",
+            "type": "mcq",
+            "question": "Kunde: 'Ich möchte das Zimmer bis Freitag buchen.' Wie lange möchte der Kunde bleiben?",
+            "options": [
+              "Bis Mittwoch",
+              "Bis Donnerstag",
+              "Bis Freitag",
+              "Bis Samstag"
+            ],
+            "answer": "Bis Freitag"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex2_sch_1",
+            "prompt": "Sie haben ein neues Handy gekauft, aber es funktioniert nicht richtig. Schreiben Sie eine E-Mail an den Kundenservice. - Beschreiben Sie das Problem - Nennen Sie das Kaufdatum - Fragen Sie nach einem Austausch",
+            "wordLimit": 70
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 60,
+        "tasks": [
+          {
+            "id": "A2_ex2_spr_1",
+            "prompt": "Stellen Sie Ihre Familie vor. - Wie viele Personen? - Wer sind sie? - Was machen sie beruflich?",
+            "talkTime": 90
+          },
+          {
+            "id": "A2_ex2_spr_2",
+            "prompt": "Erzählen Sie von Ihrer Wohnung. - Wo wohnen Sie? - Wie viele Zimmer? - Was gefällt Ihnen? - Was nicht?",
+            "talkTime": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "A2_exam_3",
+    "name": "A2 Practice Exam 3 - Freizeit und Orientierung",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex3_les_1",
+            "type": "mcq",
+            "question": "Schild am Schwimmbad: 'Öffnungszeiten: 8-20 Uhr. Letzter Einlass 19 Uhr. Mittwochs geschlossen.' Wann ist das Bad geschlossen?",
+            "options": [
+              "Montags",
+              "Dienstags",
+              "Mittwochs",
+              "Donnerstags"
+            ],
+            "answer": "Mittwochs"
+          },
+          {
+            "id": "A2_ex3_les_2",
+            "type": "true-false",
+            "question": "E-Mail: 'Hallo Paul, das Meeting ist am Dienstag um 10 Uhr im Raum 302.' Das Meeting ist im Raum 203.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex3_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Tische, Stühle, Betten und Schränke werden kostenlos abgeholt. Anmeldung bis 12. Mai.'",
+            "options": [
+              "Flohmarkt",
+              "Sperrmüllabholung",
+              "Möbelhaus",
+              "Umzugshilfe"
+            ],
+            "answer": "Sperrmüllabholung"
+          },
+          {
+            "id": "A2_ex3_les_4",
+            "type": "mcq",
+            "question": "Busfahrplan: 'Linie 42: Ab Hauptbahnhof 9:15, Ankunft Marktplatz 9:32.' Wie lange fährt der Bus?",
+            "options": [
+              "12 Minuten",
+              "15 Minuten",
+              "17 Minuten",
+              "20 Minuten"
+            ],
+            "answer": "17 Minuten"
+          },
+          {
+            "id": "A2_ex3_les_5",
+            "type": "true-false",
+            "question": "Hinweis: 'Bitte schliessen Sie die Fenster vor Verlassen des Raumes.' Die Fenster sollen offen bleiben.",
+            "answer": "false"
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 20,
+        "tasks": [
+          {
+            "id": "A2_ex3_hor_1",
+            "type": "mcq",
+            "question": "Arzt: 'Nehmen Sie diese Tabletten zweimal täglich für eine Woche.' Wie lang soll der Patient die Tabletten nehmen?",
+            "options": [
+              "Drei Tage",
+              "Fünf Tage",
+              "Eine Woche",
+              "Zwei Wochen"
+            ],
+            "answer": "Eine Woche"
+          },
+          {
+            "id": "A2_ex3_hor_2",
+            "type": "true-false",
+            "question": "Ansage: 'Der Flug LH 300 nach Berlin startet um 14 Uhr.' Der Flug geht nach München.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex3_hor_3",
+            "type": "mcq",
+            "question": "Bürkollege: 'Die Besprechung fällt heute aus. Neue Termine bekommt ihr per E-Mail.' Was ist passiert?",
+            "options": [
+              "Die Besprechung ist später",
+              "Die Besprechung fällt aus",
+              "Die Besprechung ist in einem anderen Raum",
+              "Die Besprechung ist länger"
+            ],
+            "answer": "Die Besprechung fällt aus"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex3_sch_1",
+            "prompt": "Sie möchten in einem Restaurant einen Tisch für vier Personen reservieren. Schreiben Sie eine kurze E-Mail. - Wann und um wie viel Uhr? - Besondere Wünsche (z.B. Kinderstuhl) - Bitte um Bestsatigung",
+            "wordLimit": 60
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 60,
+        "tasks": [
+          {
+            "id": "A2_ex3_spr_1",
+            "prompt": "Beschreiben Sie Ihre Wohngegend. - Wo wohnen Sie? - Was gibt es in der Nähe? - Ist es ruhig oder lebhaft? - Gefällt es Ihnen?",
+            "talkTime": 90
+          },
+          {
+            "id": "A2_ex3_spr_2",
+            "prompt": "Was haben Sie letztes Wochenende gemacht? Erzählen Sie. - Wann und mit wem? - Was haben Sie unternommen? - Hat es Spass gemacht?",
+            "talkTime": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "A2_exam_4",
+    "name": "A2 Practice Exam 4 - Gesundheit und Dienstleistungen",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex4_les_1",
+            "type": "mcq",
+            "question": "Aushang: 'Wegen Renovierung bleibt das Restaurant vom 1. bis 10. Juni geschlossen.' Wie lange bleibt das Restaurant zu?",
+            "options": [
+              "5 Tage",
+              "10 Tage",
+              "14 Tage",
+              "7 Tage"
+            ],
+            "answer": "10 Tage"
+          },
+          {
+            "id": "A2_ex4_les_2",
+            "type": "true-false",
+            "question": "Werbetext: 'Das neue Smartphone hat eine Kamera mit 50 Megapixeln und einen 5000-mAh-Akku.' Das Smartphone hat einen 4000-mAh-Akku.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex4_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Am Samstag ab 14 Uhr. Musik, Tanz und gutes Essen. Eintritt frei. Kommt vorbei!'",
+            "options": [
+              "Stadtfest",
+              "Vortrag",
+              "Kinovorstellung",
+              "Buchmesse"
+            ],
+            "answer": "Stadtfest"
+          },
+          {
+            "id": "A2_ex4_les_4",
+            "type": "mcq",
+            "question": "Schild im Zug: 'Bitte halten Sie Ihre Fahrkarte bereit. Kontrolleure sind im Einsatz.' Was sollen die Fahrgäste tun?",
+            "options": [
+              "Nichts tun",
+              "Die Fahrkarte bereithalten",
+              "Eine neue Karte kaufen",
+              "Aussteigen"
+            ],
+            "answer": "Die Fahrkarte bereithalten"
+          },
+          {
+            "id": "A2_ex4_les_5",
+            "type": "true-false",
+            "question": "Aushang: 'Die Sprechstunde von Frau Dr. Müller ist dienstags 15-18 Uhr.' Frau Dr. Müller hat donnerstags Sprechstunde.",
+            "answer": "false"
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 20,
+        "tasks": [
+          {
+            "id": "A2_ex4_hor_1",
+            "type": "mcq",
+            "question": "Wetterbericht: 'Morgen regnet es im Norden, im Süden bleibt es trocken.' Wie ist das Wetter im Süden?",
+            "options": [
+              "Regnerisch",
+              "Trocken",
+              "Windig",
+              "Neblig"
+            ],
+            "answer": "Trocken"
+          },
+          {
+            "id": "A2_ex4_hor_2",
+            "type": "true-false",
+            "question": "Lehrerin: 'Die Hausaufgabe ist bis Freitag abzugeben.' Die Hausaufgabe ist bis Mittwoch abzugeben.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex4_hor_3",
+            "type": "mcq",
+            "question": "Freund: 'Wir treffen uns um 18 Uhr am Kino.' Wann treffen sie sich?",
+            "options": [
+              "16 Uhr",
+              "17 Uhr",
+              "18 Uhr",
+              "19 Uhr"
+            ],
+            "answer": "18 Uhr"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex4_sch_1",
+            "prompt": "Sie hatten einen Unfall mit Ihrem Auto. Schreiben Sie eine Nachricht an Ihre Versicherung. - Wann und wo war der Unfall? - Was ist passiert? - Bitte um weitere Schritte",
+            "wordLimit": 70
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 60,
+        "tasks": [
+          {
+            "id": "A2_ex4_spr_1",
+            "prompt": "Sprechen Sie über Ihr Lieblingsessen. - Was essen Sie gern? - Wer kocht bei Ihnen? - Können Sie selber kochen? - Welches Gericht können Sie empfehlen?",
+            "talkTime": 90
+          },
+          {
+            "id": "A2_ex4_spr_2",
+            "prompt": "Was wollen Sie nächstes Jahr machen? - Reisen? - Lernen? - Einen neuen Job? - Warum?",
+            "talkTime": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "A2_exam_5",
+    "name": "A2 Practice Exam 5 - Wohnen und Nachbarschaft",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex5_les_1",
+            "type": "mcq",
+            "question": "Notiz: 'Ich bin beim Bäcker. Bin in 20 Minuten zurück. Kaffee ist fertig.' Wo ist die Person?",
+            "options": [
+              "Beim Metzger",
+              "Beim Bäcker",
+              "Im Supermarkt",
+              "In der Arbeit"
+            ],
+            "answer": "Beim Bäcker"
+          },
+          {
+            "id": "A2_ex5_les_2",
+            "type": "true-false",
+            "question": "Kursplan: 'Englisch A2 - Di & Do 18-19:30 - Raum 110.' Der Kurs findet montags und mittwochs statt.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex5_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Fitnessstudio erweitert Öffnungszeiten. Neu: Auch sonntags geöffnet. Mitglieder erhalten 10% Rabatt im ersten Monat.'",
+            "options": [
+              "Neue Öffnungszeiten",
+              "Preiserhöhung",
+              "Kursausfall",
+              "Stellenanzeige"
+            ],
+            "answer": "Neue Öffnungszeiten"
+          },
+          {
+            "id": "A2_ex5_les_4",
+            "type": "mcq",
+            "question": "E-Mail: 'Betreff: Ihre Bestellung 8521. Die Lieferung verspätet sich um 2 Tage.' Was ist passiert?",
+            "options": [
+              "Die Bestellung wurde storniert",
+              "Die Lieferung ist früher da",
+              "Die Lieferung verspätet sich",
+              "Die Bestellung ist angekommen"
+            ],
+            "answer": "Die Lieferung verspätet sich"
+          },
+          {
+            "id": "A2_ex5_les_5",
+            "type": "true-false",
+            "question": "Packungsbeilage: 'Nicht einnehmen nach dem 31.12.2025.' Das Medikament ist nach Dezember 2025 nicht mehr gut.",
+            "answer": "true"
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 20,
+        "tasks": [
+          {
+            "id": "A2_ex5_hor_1",
+            "type": "mcq",
+            "question": "Chef: 'Die Mittagspause ist von 12 bis 13 Uhr.' Wie lange dauert die Mittagspause?",
+            "options": [
+              "30 Minuten",
+              "45 Minuten",
+              "60 Minuten",
+              "90 Minuten"
+            ],
+            "answer": "60 Minuten"
+          },
+          {
+            "id": "A2_ex5_hor_2",
+            "type": "true-false",
+            "question": "Verkauferin: 'Der Schal kostet 19,99 Euro.' Der Schal kostet 29,99 Euro.",
+            "answer": "false"
+          },
+          {
+            "id": "A2_ex5_hor_3",
+            "type": "mcq",
+            "question": "Vermieter: 'Die Miete steigt ab nächstem Monat um 30 Euro.' Wie viel mehr muss der Mieter zahlen?",
+            "options": [
+              "20 Euro",
+              "25 Euro",
+              "30 Euro",
+              "50 Euro"
+            ],
+            "answer": "30 Euro"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 30,
+        "tasks": [
+          {
+            "id": "A2_ex5_sch_1",
+            "prompt": "Ihr Nachbar macht oft nachts laute Musik. Schreiben Sie eine höfliche Nachricht. - Erklären Sie das Problem - Weisen Sie auf die Ruhezeiten hin - Bitten Sie um Rücksicht",
+            "wordLimit": 70
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 60,
+        "tasks": [
+          {
+            "id": "A2_ex5_spr_1",
+            "prompt": "Beschreiben Sie einen typischen Tag in Ihrem Leben. - Wann stehen Sie auf? - Was machen Sie tagsüber? - Was machen Sie abends?",
+            "talkTime": 90
+          },
+          {
+            "id": "A2_ex5_spr_2",
+            "prompt": "Welche Stadt in Deutschland kennen Sie oder möchten Sie besuchen? - Welche Stadt? - Was gibt es dort zu sehen? - Warum interessiert Sie diese Stadt?",
+            "talkTime": 60
+          }
+        ]
+      }
+    }
+  }
+]

@@ -17,14 +17,17 @@ import {
   isWritingUnlocked,
   isSpeakingUnlocked
 } from '../utils/curriculumProgress';
-import grammarData from '../data/grammar.json';
+import {
+  loadLevelGrammar,
+  loadLevelVocabulary,
+  loadLevelReading,
+  loadLevelListening,
+  loadLevelWriting,
+  loadLevelSpeaking,
+  clearDataCache,
+} from '../utils/dataLoaders';
 import grammarCurriculum from '../data/grammarCurriculum.json';
-import vocabData from '../data/germanVocabulary.json';
-import readingData from '../data/reading.json';
-import listeningData from '../data/listening.json';
 import germanLessons from '../data/germanLessons.json';
-import writingData from '../data/writing.json';
-import speakingData from '../data/speaking.json';
 import dashboardSummary from '../data/dashboardSummary.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
@@ -407,7 +410,59 @@ export default function DailyMissionPage() {
   const [fcCards, setFcCards] = useState([]);
   const [fcDone, setFcDone] = useState(false);
   const [fcStarted, setFcStarted] = useState(false);
+  const [dataLoading, setDataLoading] = useState(true);
+  const [dataError, setDataError] = useState(null);
+  const grammarDataRef = useRef([]);
+  const vocabDataRef = useRef([]);
+  const readingDataRef = useRef([]);
+  const listeningDataRef = useRef([]);
+  const writingDataRef = useRef([]);
+  const speakingDataRef = useRef([]);
+  const prevLevelRef = useRef('');
   const sessionStartRef = useRef(Date.now());
+
+  // Load per-level data dynamically
+  useEffect(() => {
+    if (!lvl) return;
+    let cancelled = false;
+
+    async function loadData() {
+      if (prevLevelRef.current !== lvl) {
+        clearDataCache();
+      }
+      prevLevelRef.current = lvl;
+
+      setDataLoading(true);
+      setDataError(null);
+      try {
+        const [grammar, vocab, reading, listening, writing, speaking] = await Promise.all([
+          loadLevelGrammar(lvl),
+          loadLevelVocabulary(lvl),
+          loadLevelReading(lvl),
+          loadLevelListening(lvl),
+          loadLevelWriting(lvl),
+          loadLevelSpeaking(lvl),
+        ]);
+        if (cancelled) return;
+        grammarDataRef.current = grammar;
+        vocabDataRef.current = vocab;
+        readingDataRef.current = reading;
+        listeningDataRef.current = listening;
+        writingDataRef.current = writing;
+        speakingDataRef.current = speaking;
+        setDataLoading(false);
+      } catch (err) {
+        if (cancelled) return;
+        console.error('Failed to load level data:', err);
+        setDataError(err.message || 'Failed to load data');
+        setDataLoading(false);
+      }
+    }
+
+    loadData();
+    return () => { cancelled = true; };
+  }, [lvl]);
+
   const aiEnabled = isCorrectionEnabled();
 
 
@@ -529,7 +584,7 @@ export default function DailyMissionPage() {
       setGcLesson(expandedLesson ? { ...cm.nextGcLesson, expandedLesson } : cm.nextGcLesson);
       // Find related grammar practice questions linked to this lesson's topics
       const topics = cm.nextGcLesson.linkedGrammarTopics || [];
-      const allQs = grammarData[lvl] || [];
+      const allQs = grammarDataRef.current || [];
       const linked = allQs.filter(q => q.topic && topics.includes(q.topic));
       setGcTopicLinks(linked.slice(0, 5));
     }
@@ -547,7 +602,7 @@ export default function DailyMissionPage() {
   const hGcNext = () => advance('grammarLesson', { skipped: false });
 
   const hGa = (ans) => {
-    const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
+    const ex = grammarDataRef.current?.find((e) => e.id === gq[gi]);
     if (!ex) return;
     const correct = normalizeAnswer(ans) === normalizeAnswer(ex.answer);
     recordGrammarAnswer(ex.id, correct);
@@ -572,7 +627,7 @@ export default function DailyMissionPage() {
     const cm = getCm();
     if (!cm || cm.type !== 'grammar') return;
     if (gq.length > 0) return;
-    const all = grammarData[lvl] || [];
+    const all = grammarDataRef.current || [];
     const done = state.levels?.[lvl]?.grammar || [];
     const context = getPracticeContext(lvl, sesh, state);
     let unlockedPool;
@@ -1508,7 +1563,7 @@ export default function DailyMissionPage() {
 
       {/* GRAMMAR PRACTICE */}
       {cm.type === 'grammar' && (() => {
-        const ex = grammarData[lvl]?.find((e) => e.id === gq[gi]);
+        const ex = grammarDataRef.current?.find((e) => e.id === gq[gi]);
         if (gEmpty) {
           return (
             <div style={sCard}>

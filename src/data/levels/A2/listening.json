@@ -1,0 +1,2056 @@
+[
+  {
+    "id": "A2_listen_1",
+    "title": "Arzttermin verschieben",
+    "script": "Sprechstundenhilfe: Praxis Dr. Weber, guten Tag.\nPatientin: Guten Tag, hier spricht Frau Becker. Ich habe einen Termin für morgen um 9 Uhr, aber ich kann leider nicht kommen. Kann ich den Termin verschieben?\nSprechstundenhilfe: Ja, gerne. Passt es am Freitag um 10 Uhr?\nPatientin: Ja, Freitag um 10 Uhr ist perfekt.\nSprechstundenhilfe: Okay, ich trage Sie ein. Auf Wiederhören.\nPatientin: Vielen Dank! Auf Wiederhören.",
+    "questions": [
+      {
+        "id": "lq8",
+        "type": "mcq",
+        "question": "Warum ruft Frau Becker an?",
+        "options": [
+          "Sie möchte einen neuen Termin",
+          "Sie möchte den Termin verschieben",
+          "Sie hat Schmerzen",
+          "Sie möchte die Praxis wechseln"
+        ],
+        "answer": "Sie möchte den Termin verschieben"
+      },
+      {
+        "id": "lq9",
+        "type": "true-false",
+        "question": "Der neue Termin ist am Freitag um 9 Uhr.",
+        "answer": "false"
+      },
+      {
+        "id": "lq10",
+        "type": "mcq",
+        "question": "Wann war der ursprüngliche Termin?",
+        "options": [
+          "Heute um 9 Uhr",
+          "Morgen um 9 Uhr",
+          "Freitag um 10 Uhr",
+          "Gestern um 10 Uhr"
+        ],
+        "answer": "Morgen um 9 Uhr"
+      }
+    ],
+    "lessonId": "A2_lesson_1",
+    "audio": "audio/listening/a2-listen-1.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_2",
+    "title": "Wetterbericht",
+    "script": "Das Wetter für morgen: Am Morgen ist es bewölkt bei 12 Grad. Am Nachmittag kommt die Sonne raus und es wird 20 Grad warm. Am Abend kann es regnen. Nehmen Sie einen Regenschirm mit!",
+    "questions": [
+      {
+        "id": "lq11",
+        "type": "mcq",
+        "question": "Wie warm wird es am Nachmittag?",
+        "options": [
+          "12 Grad",
+          "15 Grad",
+          "20 Grad",
+          "25 Grad"
+        ],
+        "answer": "20 Grad"
+      },
+      {
+        "id": "lq12",
+        "type": "true-false",
+        "question": "Am Abend kann es regnen.",
+        "answer": "true"
+      }
+    ],
+    "lessonId": "A2_lesson_1",
+    "audio": "audio/listening/a2-listen-2.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_3",
+    "title": "Durchsage am Bahnhof",
+    "script": "Achtung, eine Durchsage an alle Reisende: Der ICE 715 nach München von Gleis 7 hat etwa 15 Minuten Verspätung. Grund ist eine Signalstörung zwischen Frankfurt und Würzburg. Der Zug wird voraussichtlich um 14:45 Uhr abfahren statt um 14:30 Uhr. Wir bitten die Fahrgäste um Geduld. Bitte achten Sie auf die Durchsagen am Bahnhof. Es kann zu weiteren Änderungen kommen. Der Zug hält in Frankfurt, Mannheim und Stuttgart. Vielen Dank für Ihr Verständnis.",
+    "questions": [
+      {
+        "id": "lq13",
+        "type": "mcq",
+        "question": "Wie viel Verspätung hat der Zug?",
+        "options": [
+          "5 Minuten",
+          "10 Minuten",
+          "15 Minuten",
+          "20 Minuten"
+        ],
+        "answer": "15 Minuten"
+      },
+      {
+        "id": "lq14",
+        "type": "true-false",
+        "question": "Der Zug fährt von Gleis 7.",
+        "answer": "true"
+      }
+    ],
+    "lessonId": "A2_lesson_2",
+    "audio": "audio/listening/a2-listen-3.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_4",
+    "title": "Zugansage ICE",
+    "script": "Achtung, liebe Fahrgäste. Der ICE 724 nach Frankfurt mit Abfahrt um 14:15 Uhr fährt heute von Gleis 5 statt Gleis 3. Die Abfahrt verspätet sich um etwa 10 Minuten. Bitte achten Sie auf die geänderten Gleise. Wir bitten die Verspätung zu entschuldigen.",
+    "questions": [
+      {
+        "id": "lq401",
+        "type": "mcq",
+        "question": "Welcher Zug ist gemeint?",
+        "options": [
+          "ICE 427",
+          "ICE 724",
+          "IC 724",
+          "ICE 742"
+        ],
+        "answer": "ICE 724"
+      },
+      {
+        "id": "lq402",
+        "type": "true-false",
+        "question": "Der Zug fährt von Gleis 3.",
+        "answer": "false",
+        "explanation": "Der Zug fährt von Gleis 5."
+      },
+      {
+        "id": "lq403",
+        "type": "mcq",
+        "question": "Wie viel Verspätung hat der Zug?",
+        "options": [
+          "5 Minuten",
+          "10 Minuten",
+          "15 Minuten",
+          "20 Minuten"
+        ],
+        "answer": "10 Minuten",
+        "explanation": "Die Abfahrt verspätet sich um etwa 10 Minuten."
+      }
+    ],
+    "lessonId": "A2_lesson_2",
+    "audio": "audio/listening/a2-listen-4.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_5",
+    "title": "Hotel Check-in Dialog",
+    "script": "Rezeptionist: Guten Abend, haben Sie reserviert?\nGast: Ja, auf den Namen Schmidt.\nRezeptionist: Einen Moment, bitte. Ja, hier: Einzelzimmer mit Frühstück für drei Nächte. Ihr Zimmer ist Nummer 312 im dritten Stock.\nGast: Gibt es WLAN?\nRezeptionist: Ja, kostenlos. Das Passwort steht auf Ihrer Zimmerkarte. Das Frühstück gibt es von 7 bis 10 Uhr im Erdgeschoss.",
+    "questions": [
+      {
+        "id": "lq404",
+        "type": "mcq",
+        "question": "Für wie viele Nächte hat Herr Schmidt gebucht?",
+        "options": [
+          "Zwei Nächte",
+          "Drei Nächte",
+          "Vier Nächte",
+          "Eine Nacht"
+        ],
+        "answer": "Drei Nächte"
+      },
+      {
+        "id": "lq405",
+        "type": "mcq",
+        "question": "Welche Zimmernummer hat Herr Schmidt?",
+        "options": [
+          "212",
+          "312",
+          "412",
+          "302"
+        ],
+        "answer": "312"
+      },
+      {
+        "id": "lq406",
+        "type": "true-false",
+        "question": "Das Frühstück gibt es von 7 bis 11 Uhr.",
+        "answer": "false",
+        "explanation": "Das Frühstück gibt es von 7 bis 10 Uhr."
+      }
+    ],
+    "lessonId": "A2_lesson_3",
+    "audio": "audio/listening/a2-listen-5.mp3",
+    "taughtInLessonId": "A2_lesson_7",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_6",
+    "title": "Restaurant Bestellung",
+    "script": "Kellner: Guten Abend, was darf ich Ihnen bringen?\nGast: Ich hätte gern die Tomatensuppe als Vorspeise.\nKellner: Sehr gern. Und als Hauptgericht?\nGast: Das Schnitzel mit Pommes, bitte.\nKellner: Und was möchten Sie trinken?\nGast: Ein Glas Rotwein, bitte.\nKellner: Kommt sofort. Guten Appetit schonmal.",
+    "questions": [
+      {
+        "id": "lq407",
+        "type": "mcq",
+        "question": "Was bestellt der Gast als Vorspeise?",
+        "options": [
+          "Einen Salat",
+          "Tomatensuppe",
+          "Eine Brotsuppe",
+          "Käse"
+        ],
+        "answer": "Tomatensuppe"
+      },
+      {
+        "id": "lq408",
+        "type": "mcq",
+        "question": "Was ist das Hauptgericht?",
+        "options": [
+          "Fisch mit Reis",
+          "Schnitzel mit Pommes",
+          "Nudeln mit Sauce",
+          "Hähnchen mit Salat"
+        ],
+        "answer": "Schnitzel mit Pommes"
+      },
+      {
+        "id": "lq409",
+        "type": "true-false",
+        "question": "Der Gast bestellt ein Glas Bier.",
+        "answer": "false",
+        "explanation": "Der Gast bestellt ein Glas Rotwein."
+      }
+    ],
+    "lessonId": "A2_lesson_3",
+    "audio": "audio/listening/a2-listen-6.mp3",
+    "taughtInLessonId": "A2_lesson_7",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_7",
+    "title": "Im Kleidungsgeschäft",
+    "script": "Verkäuferin: Kann ich Ihnen helfen?\nKundin: Ja, ich suche eine blaue Bluse in Grösse 38.\nVerkäuferin: Hier, die gefällt mir sehr gut. Möchten Sie sie anprobieren?\nKundin: Ja, gern. Wo sind die Umkleidekabinen?\nVerkäuferin: Hinten links. Ich bringe Ihnen die Bluse.\nKundin: Danke! (nach kurzer Zeit) Die Bluse passt gut und die Farbe gefällt mir. Ich nehme sie.\nVerkäuferin: Gerne. Das macht 34,99 Euro.",
+    "questions": [
+      {
+        "id": "lq410",
+        "type": "mcq",
+        "question": "Welche Grösse sucht die Kundin?",
+        "options": [
+          "36",
+          "38",
+          "40",
+          "42"
+        ],
+        "answer": "38"
+      },
+      {
+        "id": "lq411",
+        "type": "true-false",
+        "question": "Die Kundin nimmt die Bluse nicht.",
+        "answer": "false",
+        "explanation": "Die Kundin sagt: Ich nehme sie."
+      },
+      {
+        "id": "lq412",
+        "type": "mcq",
+        "question": "Was kostet die Bluse?",
+        "options": [
+          "24,99 Euro",
+          "34,99 Euro",
+          "44,99 Euro",
+          "29,99 Euro"
+        ],
+        "answer": "34,99 Euro"
+      }
+    ],
+    "lessonId": "A2_lesson_4",
+    "audio": "audio/listening/a2-listen-7.mp3",
+    "taughtInLessonId": "A2_lesson_18",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_8",
+    "title": "Arzttermin vereinbaren",
+    "script": "Sprechstundenhilfe: Praxis Dr. Hoffmann, guten Tag.\nPatient: Guten Tag, mein Name ist Peter Müller. Ich hätte gern einen Termin.\nSprechstundenhilfe: Haben Sie Beschwerden?\nPatient: Ja, ich habe seit drei Tagen starke Halsschmerzen und Husten.\nSprechstundenhilfe: Passt es morgen um 10:15 Uhr?\nPatient: Ja, das ist gut. Muss ich etwas mitbringen?\nSprechstundenhilfe: Ja, Ihre Versicherungskarte. Bis morgen.\nPatient: Vielen Dank, auf Wiederhören.",
+    "questions": [
+      {
+        "id": "lq413",
+        "type": "mcq",
+        "question": "Was hat der Patient für Beschwerden?",
+        "options": [
+          "Kopfschmerzen",
+          "Halsschmerzen und Husten",
+          "Rückenschmerzen",
+          "Bauchschmerzen"
+        ],
+        "answer": "Halsschmerzen und Husten"
+      },
+      {
+        "id": "lq414",
+        "type": "true-false",
+        "question": "Der Termin ist morgen um 10:15 Uhr.",
+        "answer": "true"
+      },
+      {
+        "id": "lq415",
+        "type": "mcq",
+        "question": "Was muss der Patient mitbringen?",
+        "options": [
+          "Überweisungsschein",
+          "Versicherungskarte",
+          "Personalausweis",
+          "Medikamentenliste"
+        ],
+        "answer": "Versicherungskarte"
+      }
+    ],
+    "lessonId": "A2_lesson_4",
+    "audio": "audio/listening/a2-listen-8.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_9",
+    "title": "Wettervorhersage",
+    "script": "Und nun das Wetter für morgen, den 15. Mai. Im Norden Deutschlands ist es stark bewölkt und es regnet zeitweise. Die Temperaturen liegen bei 14 bis 16 Grad. Im Süden und in der Mitte ist es noch freundlich mit viel Sonnenschein und Temperaturen um 22 Grad. Am Abend ziehen von Westen her Wolken auf und es kann zu Gewittern kommen. Der Wind weht schwach bis mässig.",
+    "questions": [
+      {
+        "id": "lq416",
+        "type": "mcq",
+        "question": "Wie ist das Wetter im Norden?",
+        "options": [
+          "Sonnig und warm",
+          "Bewölkt mit Regen",
+          "Neblig",
+          "Windig und kalt"
+        ],
+        "answer": "Bewölkt mit Regen"
+      },
+      {
+        "id": "lq417",
+        "type": "true-false",
+        "question": "Im Süden und in der Mitte ist es sonnig und 22 Grad.",
+        "answer": "true"
+      },
+      {
+        "id": "lq418",
+        "type": "mcq",
+        "question": "Was kann am Abend kommen?",
+        "options": [
+          "Schnee",
+          "Gewitter",
+          "Nebel",
+          "Sturm"
+        ],
+        "answer": "Gewitter"
+      }
+    ],
+    "lessonId": "A2_lesson_5",
+    "audio": "audio/listening/a2-listen-9.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_10",
+    "title": "Durchsage am Busbahnhof",
+    "script": "Liebe Fahrgäste, wegen einer Strassensperrung in der Innenstadt ändert sich die Route der Buslinie 33. Der Bus fährt ab sofort eine Umleitung über die Ringstrasse. Die Haltestellen Hauptbahnhof und Marktplatz werden nicht angefahren. Ersatzhaltestellen sind am Theaterplatz und am Parkhaus. Wir bitten um Ihr Verständnis.",
+    "questions": [
+      {
+        "id": "lq419",
+        "type": "mcq",
+        "question": "Warum ändert der Bus die Route?",
+        "options": [
+          "Wegen Bauarbeiten",
+          "Wegen einer Strassensperrung",
+          "Wegen eines Unfalls",
+          "Wegen einer Veranstaltung"
+        ],
+        "answer": "Wegen einer Strassensperrung"
+      },
+      {
+        "id": "lq420",
+        "type": "true-false",
+        "question": "Der Bus fährt eine Umleitung über die Ringstrasse.",
+        "answer": "true"
+      },
+      {
+        "id": "lq421",
+        "type": "mcq",
+        "question": "Welche Haltestelle wird nicht angefahren?",
+        "options": [
+          "Theaterplatz",
+          "Marktplatz",
+          "Parkhaus",
+          "Ringstrasse"
+        ],
+        "answer": "Marktplatz"
+      }
+    ],
+    "lessonId": "A2_lesson_5",
+    "audio": "audio/listening/a2-listen-10.mp3",
+    "taughtInLessonId": "A2_lesson_10",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_11",
+    "title": "In der Apotheke",
+    "script": "Kunde: Guten Tag, ich brauche etwas gegen Heuschnupfen.\nApothekerin: Haben Sie die Symptome schon länger?\nKunde: Ja, jedes Jahr im Frühling, wenn die Pollen fliegen.\nApothekerin: Dann empfehle ich Ihnen dieses Antihistaminikum. Nehmen Sie eine Tablette täglich. Die Tropfen sind auch sehr gut.\nKunde: Brauche ich ein Rezept?\nApothekerin: Nein, sind frei verkäuflich. Das macht 12,95 Euro.\nKunde: Gibt es Nebenwirkungen?\nApothekerin: Manche werden müde. Fahren Sie daher vorsichtig Auto.",
+    "questions": [
+      {
+        "id": "lq422",
+        "type": "mcq",
+        "question": "Wogegen braucht der Kunde ein Medikament?",
+        "options": [
+          "Gegen Kopfschmerzen",
+          "Gegen Heuschnupfen",
+          "Gegen Husten",
+          "Gegen Fieber"
+        ],
+        "answer": "Gegen Heuschnupfen"
+      },
+      {
+        "id": "lq423",
+        "type": "true-false",
+        "question": "Der Kunde braucht ein Rezept.",
+        "answer": "false",
+        "explanation": "Das Medikament ist frei verkäuflich."
+      },
+      {
+        "id": "lq424",
+        "type": "mcq",
+        "question": "Welche Nebenwirkung kann auftreten?",
+        "options": [
+          "Kopfschmerzen",
+          "Müdigkeit",
+          "Übelkeit",
+          "Schwindel"
+        ],
+        "answer": "Müdigkeit"
+      }
+    ],
+    "lessonId": "A2_lesson_6",
+    "audio": "audio/listening/a2-listen-11.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_12",
+    "title": "Verabredung zum Kaffee",
+    "script": "Person A: Hallo Sarah, hast du am Samstag Zeit?\nPerson B: Ja, ich habe frei. Was möchtest du machen?\nPerson A: Wir könnten uns zum Kaffee treffen. Ich kenne ein neues Cafe in der Altstadt.\nPerson B: Gute Idee! Um wie viel Uhr?\nPerson A: Passt dir 15 Uhr?\nPerson B: Ja gern. Wo ist das Cafe?\nPerson A: In der Kirchstrasse 12, neben der Buchhandlung.\nPerson B: Super, ich freue mich! Bis Samstag.",
+    "questions": [
+      {
+        "id": "lq425",
+        "type": "mcq",
+        "question": "Wann treffen sich die beiden?",
+        "options": [
+          "Am Sonntag",
+          "Am Samstag",
+          "Am Freitag",
+          "Am Montag"
+        ],
+        "answer": "Am Samstag"
+      },
+      {
+        "id": "lq426",
+        "type": "mcq",
+        "question": "Um wie viel Uhr treffen sie sich?",
+        "options": [
+          "14 Uhr",
+          "15 Uhr",
+          "16 Uhr",
+          "17 Uhr"
+        ],
+        "answer": "15 Uhr"
+      },
+      {
+        "id": "lq427",
+        "type": "true-false",
+        "question": "Das Cafe ist neben einer Buchhandlung.",
+        "answer": "true"
+      }
+    ],
+    "lessonId": "A2_lesson_6",
+    "audio": "audio/listening/a2-listen-12.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_13",
+    "title": "Arbeitsbesprechung",
+    "script": "Chef: Guten Morgen zusammen. Wir haben heute zwei wichtige Punkte. Erstens: Der neue Projektplan muss bis Freitag fertig sein. Bitte senden Sie mir Ihre Beiträge bis Mittwoch. Zweitens: Nächste Woche haben wir eine Fortbildung zum neuen Computersystem. Die Schulung ist am Dienstag um 9 Uhr im Konferenzraum. Die Teilnahme ist Pflicht. Gibt es Fragen?\nMitarbeiter: Wie lange dauert die Schulung?\nChef: Von 9 bis 16 Uhr mit einer Mittagspause. Okay? Dann an die Arbeit.",
+    "questions": [
+      {
+        "id": "lq428",
+        "type": "mcq",
+        "question": "Bis wann sollen die Mitarbeiter ihre Beiträge senden?",
+        "options": [
+          "Bis Montag",
+          "Bis Mittwoch",
+          "Bis Freitag",
+          "Bis Dienstag"
+        ],
+        "answer": "Bis Mittwoch"
+      },
+      {
+        "id": "lq429",
+        "type": "true-false",
+        "question": "Die Fortbildung ist am Montag.",
+        "answer": "false",
+        "explanation": "Die Schulung ist am Dienstag."
+      },
+      {
+        "id": "lq430",
+        "type": "mcq",
+        "question": "Wie lange dauert die Schulung?",
+        "options": [
+          "Von 9 bis 12 Uhr",
+          "Von 9 bis 16 Uhr",
+          "Von 10 bis 15 Uhr",
+          "Von 8 bis 14 Uhr"
+        ],
+        "answer": "Von 9 bis 16 Uhr"
+      }
+    ],
+    "lessonId": "A2_lesson_7",
+    "audio": "audio/listening/a2-listen-13.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_14",
+    "title": "Auf der Post",
+    "script": "Kunde: Guten Tag, ich möchte ein Paket nach Österreich schicken.\nMitarbeiter: Gern. Wie schwer ist das Paket?\nKunde: Ich glaube, etwa fünf Kilo.\nMitarbeiter: Möchten Sie Standard oder Express?\nKunde: Was kostet der Unterschied?\nMitarbeiter: Standard 12,90 Euro, Express 22,90 Euro. Express kommt in zwei Tagen an.\nKunde: Dann nehmen Sie Standard, bitte. Soll ich es versichern?\nMitarbeiter: Bis 500 Euro ist es automatisch versichert.\nKunde: Das reicht. Hier ist die Adresse.",
+    "questions": [
+      {
+        "id": "lq431",
+        "type": "mcq",
+        "question": "Wohin soll das Paket gehen?",
+        "options": [
+          "In die Schweiz",
+          "Nach Österreich",
+          "Nach Deutschland",
+          "Nach Italien"
+        ],
+        "answer": "Nach Österreich"
+      },
+      {
+        "id": "lq432",
+        "type": "mcq",
+        "question": "Was kostet der Standardversand?",
+        "options": [
+          "10,90 Euro",
+          "12,90 Euro",
+          "22,90 Euro",
+          "15,90 Euro"
+        ],
+        "answer": "12,90 Euro"
+      },
+      {
+        "id": "lq433",
+        "type": "true-false",
+        "question": "Der Expressversand kommt in zwei Tagen an.",
+        "answer": "true"
+      }
+    ],
+    "lessonId": "A2_lesson_7",
+    "audio": "audio/listening/a2-listen-14.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_15",
+    "title": "Verlorene Tasche",
+    "script": "Person: Guten Tag, ich habe meine Tasche verloren.\nMitarbeiter: Wo haben Sie sie zuletzt gesehen?\nPerson: Im Zug von Hamburg nach Berlin, ICE 784. Ich bin vor 20 Minuten ausgestiegen.\nMitarbeiter: Wie sieht die Tasche aus?\nPerson: Es ist eine schwarze Laptoptasche. Mein Laptop, mein Portemonnaie und wichtige Dokumente sind drin.\nMitarbeiter: Ich rufe das Fundbüro am Hauptbahnhof an. Einen Moment, bitte. ... Ja, die Tasche wurde abgegeben. Sie können sie im Fundbüro abholen. Das Fundbüro ist in Halle 1, neben der Touristeninformation.\nPerson: Vielen, vielen Dank!",
+    "questions": [
+      {
+        "id": "lq434",
+        "type": "mcq",
+        "question": "Wo hat die Person die Tasche verloren?",
+        "options": [
+          "Im Bus",
+          "Im Zug",
+          "Im Taxi",
+          "Im Hotel"
+        ],
+        "answer": "Im Zug"
+      },
+      {
+        "id": "lq435",
+        "type": "true-false",
+        "question": "Die Tasche ist rot.",
+        "answer": "false",
+        "explanation": "Die Tasche ist schwarz."
+      },
+      {
+        "id": "lq436",
+        "type": "mcq",
+        "question": "Wo ist das Fundbüro?",
+        "options": [
+          "In Halle 2",
+          "In Halle 1 neben der Touristeninfo",
+          "Im Erdgeschoss",
+          "Am Bahnsteig 3"
+        ],
+        "answer": "In Halle 1 neben der Touristeninfo"
+      }
+    ],
+    "lessonId": "A2_lesson_8",
+    "audio": "audio/listening/a2-listen-15.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_16",
+    "title": "Über den Sprachkurs",
+    "script": "Lehrerin: So, heute wiederholen wir den Perfekt. Können Sie mir einen Satz im Perfekt sagen?\nSchüler: Gestern bin ich ins Kino gegangen.\nLehrerin: Sehr gut! Und wie sagt man: 'Er kocht das Essen'?\nSchüler: Er hat das Essen gekocht.\nLehrerin: Perfekt. Jetzt schreiben Sie bitte fünf Sätze im Perfekt. Sie haben 10 Minuten Zeit.\nSchüler: Müssen wir 'haben' oder 'sein' benutzen?\nLehrerin: Beides. Denken Sie an die Regel: Bewegungsverben brauchen 'sein'.",
+    "questions": [
+      {
+        "id": "lq437",
+        "type": "mcq",
+        "question": "Welche Grammatik wiederholen sie?",
+        "options": [
+          "Präteritum",
+          "Perfekt",
+          "Futur",
+          "Dativ"
+        ],
+        "answer": "Perfekt"
+      },
+      {
+        "id": "lq438",
+        "type": "true-false",
+        "question": "Die Schüler sollen zehn Sätze schreiben.",
+        "answer": "false",
+        "explanation": "Sie sagen: Bitte schreiben Sie fünf Sätze."
+      },
+      {
+        "id": "lq439",
+        "type": "mcq",
+        "question": "Welche Hilfsverben brauchen Bewegungsverben?",
+        "options": [
+          "haben",
+          "sein",
+          "werden",
+          "müssen"
+        ],
+        "answer": "sein"
+      }
+    ],
+    "lessonId": "A2_lesson_8",
+    "audio": "audio/listening/a2-listen-16.mp3",
+    "taughtInLessonId": "A2_lesson_7",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_17",
+    "title": "Bei der Bank",
+    "script": "Kunde: Guten Tag, ich möchte ein Konto eröffnen.\nBankangestellter: Gern. Haben Sie Ihren Ausweis dabei?\nKunde: Ja, hier ist mein Reisepass.\nBankangestellter: Danke. Arbeiten Sie in Deutschland?\nKunde: Ja, ich habe einen Job als Ingenieur.\nBankangestellter: Gut. Wir haben zwei Modelle: Das Standardkonto kostet nichts, wenn monatlich 700 Euro eingehen. Oder das Premiumkonto für 9,90 Euro im Monat mit mehr Leistungen.\nKunde: Das Standardkonto reicht mir.",
+    "questions": [
+      {
+        "id": "lq440",
+        "type": "mcq",
+        "question": "Was möchte der Kunde?",
+        "options": [
+          "Einen Kredit",
+          "Ein Konto eröffnen",
+          "Geld überweisen",
+          "Eine Karte bestellen"
+        ],
+        "answer": "Ein Konto eröffnen"
+      },
+      {
+        "id": "lq441",
+        "type": "true-false",
+        "question": "Der Kunde arbeitet als Ingenieur.",
+        "answer": "true"
+      },
+      {
+        "id": "lq442",
+        "type": "mcq",
+        "question": "Welches Konto wählt der Kunde?",
+        "options": [
+          "Das Premiumkonto",
+          "Das Standardkonto",
+          "Das Studentenkonto",
+          "Das Geschäftskonto"
+        ],
+        "answer": "Das Standardkonto"
+      }
+    ],
+    "lessonId": "A2_lesson_9",
+    "audio": "audio/listening/a2-listen-17.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_18",
+    "title": "Pläne fürs Wochenende",
+    "script": "Person A: Hast du am Wochenende schon was vor?\nPerson B: Nein, noch nicht. Hast du eine Idee?\nPerson A: Am Samstag ist schönes Wetter, wir könnten an den See fahren und schwimmen gehen.\nPerson B: Gute Idee! Soll ich etwas zu essen mitbringen?\nPerson A: Ja, ich mache einen Salat und bringe Getränke mit.\nPerson B: Perfekt. Um wie viel Uhr?\nPerson A: Wie wär's mit 11 Uhr? Dann treffen wir uns am Bahnhof.\nPerson B: Einverstanden.",
+    "questions": [
+      {
+        "id": "lq443",
+        "type": "mcq",
+        "question": "Was schlägt Person A vor?",
+        "options": [
+          "Ins Kino gehen",
+          "An den See fahren",
+          "In die Stadt gehen",
+          "Zu Hause bleiben"
+        ],
+        "answer": "An den See fahren"
+      },
+      {
+        "id": "lq444",
+        "type": "true-false",
+        "question": "Person B bringt einen Salat mit.",
+        "answer": "false",
+        "explanation": "Person A macht einen Salat."
+      },
+      {
+        "id": "lq445",
+        "type": "mcq",
+        "question": "Um wie viel Uhr treffen sie sich?",
+        "options": [
+          "10 Uhr",
+          "11 Uhr",
+          "12 Uhr",
+          "14 Uhr"
+        ],
+        "answer": "11 Uhr"
+      }
+    ],
+    "lessonId": "A2_lesson_9",
+    "audio": "audio/listening/a2-listen-18.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_19",
+    "title": "Wohnungsbesichtigung",
+    "script": "Makler: Guten Tag, willkommen zur Besichtigung. Die Wohnung liegt im zweiten Stock und hat 65 Quadratmeter.\nInteressent: Die Lage ist ja super. Direkt in der Innenstadt.\nMakler: Ja, alles in der Nähe: Supermarkt, Apotheke und die U-Bahn ist nur zwei Minuten entfernt.\nInteressent: Wie hoch ist die Kaution?\nMakler: Drei Kaltmieten, also 2.100 Euro.\nInteressent: Und die Nebenkosten?\nMakler: 150 Euro pro Monat.\nInteressent: Ist eine Einbauküche vorhanden?\nMakler: Ja, die können Sie vom Vormieter für 800 Euro übernehmen. Sie ist fast neu.",
+    "questions": [
+      {
+        "id": "lq446",
+        "type": "mcq",
+        "question": "Wie gross ist die Wohnung?",
+        "options": [
+          "55 Quadratmeter",
+          "65 Quadratmeter",
+          "75 Quadratmeter",
+          "60 Quadratmeter"
+        ],
+        "answer": "65 Quadratmeter"
+      },
+      {
+        "id": "lq447",
+        "type": "true-false",
+        "question": "Die U-Bahn ist fünf Minuten entfernt.",
+        "answer": "false",
+        "explanation": "Die U-Bahn ist zwei Minuten entfernt."
+      },
+      {
+        "id": "lq448",
+        "type": "mcq",
+        "question": "Wie viel kostet die Einbauküche vom Vormieter?",
+        "options": [
+          "500 Euro",
+          "700 Euro",
+          "800 Euro",
+          "1.000 Euro"
+        ],
+        "answer": "800 Euro"
+      }
+    ],
+    "lessonId": "A2_lesson_10",
+    "audio": "audio/listening/a2-listen-19.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_20",
+    "title": "Notruf 110",
+    "script": "Polizei-Notruf, was ist passiert?\nAnrufer: Es gibt einen Unfall auf der Autobahn A3, kurz vor der Ausfahrt Köln-Mühlheim.\nPolizei: Sind Personen verletzt?\nAnrufer: Ja, ich glaube, zwei Personen. Ein Auto ist in die Leitplanke gefahren.\nPolizei: Ist der Rettungsdienst schon da?\nAnrufer: Nein, noch nicht. Ich habe gerade gehalten und angerufen.\nPolizei: Bleiben Sie am Telefon. Der Krankenwagen ist unterwegs. Geben Sie bitte den genauen Standort an.",
+    "questions": [
+      {
+        "id": "lq449",
+        "type": "mcq",
+        "question": "Wo ist der Unfall passiert?",
+        "options": [
+          "Auf der Landstrasse",
+          "Auf der Autobahn A3",
+          "In der Stadt",
+          "Am Bahnhof"
+        ],
+        "answer": "Auf der Autobahn A3"
+      },
+      {
+        "id": "lq450",
+        "type": "true-false",
+        "question": "Eine Person ist verletzt.",
+        "answer": "false",
+        "explanation": "Der Anrufer sagt: Zwei Personen sind verletzt."
+      },
+      {
+        "id": "lq451",
+        "type": "mcq",
+        "question": "Wer ist unterwegs?",
+        "options": [
+          "Die Feürwehr",
+          "Der Krankenwagen",
+          "Die Polizei allein",
+          "Der Notarzt"
+        ],
+        "answer": "Der Krankenwagen"
+      }
+    ],
+    "lessonId": "A2_lesson_10",
+    "audio": "audio/listening/a2-listen-20.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_21",
+    "title": "Familie vorstellen",
+    "script": "Hallo, ich heisse Lena und bin 25 Jahre alt. Ich möchte Ihnen meine Familie vorstellen. Meine Mutter heißt Brigitte, sie ist Ärztin und arbeitet in einem Krankenhaus. Mein Vater heißt Klaus, er ist Rentner und geht oft angeln. Ich habe einen Bruder, er ist fünf Jahre älter als ich und wohnt in München. Wir sehen uns leider nicht oft, aber wir telefonieren regulär. Am Wochenende treffe ich mich meistens mit meiner besten Freundin Julia.",
+    "questions": [
+      {
+        "id": "lq452",
+        "type": "mcq",
+        "question": "Was arbeitet Lenas Mutter?",
+        "options": [
+          "Lehrerin",
+          "Ärztin",
+          "Ingenieurin",
+          "Anwältin"
+        ],
+        "answer": "Ärztin"
+      },
+      {
+        "id": "lq453",
+        "type": "true-false",
+        "question": "Lenas Bruder wohnt in München.",
+        "answer": "true"
+      },
+      {
+        "id": "lq454",
+        "type": "mcq",
+        "question": "Wie alt ist Lena?",
+        "options": [
+          "23",
+          "25",
+          "27",
+          "30"
+        ],
+        "answer": "25"
+      }
+    ],
+    "lessonId": "A2_lesson_11",
+    "audio": "audio/listening/a2-listen-21.mp3",
+    "taughtInLessonId": "A2_lesson_10",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_22",
+    "title": "Computerproblem",
+    "script": "Kunde: Guten Tag, mein Drucker funktioniert nicht.\nSupport: Was genau passiert?\nKunde: Er druckt nur noch leere Seiten.\nSupport: Haben Sie die Patronen überprüft?\nKunde: Ja, die Tinte ist voll.\nSupport: Dann versuchen Sie bitte folgendes: Gehen Sie zu den Druckereinstellungen und wählen Sie 'Druckkopf reinigen'. Führen Sie den Test zweimal durch.\nKunde: Okay, das probiere ich.\nSupport: Wenn das nicht hilft, rufen Sie mich bitte nochmal an. Dann schicken wir Ihnen neue Patronen.",
+    "questions": [
+      {
+        "id": "lq455",
+        "type": "mcq",
+        "question": "Was ist das Problem?",
+        "options": [
+          "Der Drucker schaltet nicht an",
+          "Der Drucker druckt leere Seiten",
+          "Der Drucker macht Geräusche",
+          "Die Patrone ist leer"
+        ],
+        "answer": "Der Drucker druckt leere Seiten"
+      },
+      {
+        "id": "lq456",
+        "type": "true-false",
+        "question": "Der Kunde soll den Druckkopf reinigen.",
+        "answer": "true"
+      },
+      {
+        "id": "lq457",
+        "type": "mcq",
+        "question": "Was macht der Support, wenn die Reinigung nicht hilft?",
+        "options": [
+          "Schickt einen Techniker",
+          "Schickt neue Patronen",
+          "Tauscht den Drucker aus",
+          "Gibt eine Rückerstattung"
+        ],
+        "answer": "Schickt neue Patronen"
+      }
+    ],
+    "lessonId": "A2_lesson_11",
+    "audio": "audio/listening/a2-listen-22.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_23",
+    "title": "Termin verändern",
+    "script": "Patient: Guten Tag, hier spricht Frau Krause. Ich habe nächsten Montag um 11 Uhr einen Termin bei Frau Dr. Schulz. Leider muss ich auf Geschäftsreise, könnte ich den Termin verschieben?\nSprechstundenhilfe: Einen Moment, ich schaue nach. ... Am Dienstag um 14:30 Uhr wäre noch frei.\nPatient: Ja, das passt gut.\nSprechstundenhilfe: Oder am Mittwoch um 9 Uhr?\nPatient: Dienstag ist besser.\nSprechstundenhilfe: Okay, ich trage Sie für Dienstag 14:30 ein.\nPatient: Vielen Dank!\nSprechstundenhilfe: Gern, auf Wiederhören.",
+    "questions": [
+      {
+        "id": "lq458",
+        "type": "mcq",
+        "question": "Warum kann Frau Krause den Termin nicht wahrnehmen?",
+        "options": [
+          "Sie ist krank",
+          "Sie muss auf Geschäftsreise",
+          "Sie hat einen anderen Termin",
+          "Sie hat Urlaub"
+        ],
+        "answer": "Sie muss auf Geschäftsreise"
+      },
+      {
+        "id": "lq459",
+        "type": "mcq",
+        "question": "Wann ist der neue Termin?",
+        "options": [
+          "Montag 11 Uhr",
+          "Dienstag 14:30 Uhr",
+          "Mittwoch 9 Uhr",
+          "Freitag 10 Uhr"
+        ],
+        "answer": "Dienstag 14:30 Uhr"
+      },
+      {
+        "id": "lq460",
+        "type": "true-false",
+        "question": "Frau Krause entscheidet sich für Mittwoch.",
+        "answer": "false",
+        "explanation": "Sie sagt: Dienstag ist besser."
+      }
+    ],
+    "lessonId": "A2_lesson_12",
+    "audio": "audio/listening/a2-listen-23.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_24",
+    "title": "Über einen Film sprechen",
+    "script": "Person A: Hast du den neuen Film 'Der Marsianer' schon gesehen?\nPerson B: Ja, gestern im Kino. Er war richtig spannend!\nPerson A: Wovon handelt er?\nPerson B: Ein Astronaut wird auf dem Mars zurückgelassen und kämpft ums Überleben. Die Effekte waren unglaublich.\nPerson A: Klingt gut. Wie lange dauert der Film?\nPerson B: Ca. 2 Stunden und 20 Minuten.\nPerson A: Das ist lang. Aber ich werde ihn mir nächste Woche ansehen.\nPerson B: Mach das! Aber nimm dir Popcorn mit.",
+    "questions": [
+      {
+        "id": "lq461",
+        "type": "mcq",
+        "question": "Welchen Film hat Person B gesehen?",
+        "options": [
+          "Interstellar",
+          "Der Marsianer",
+          "Gravity",
+          "Apollo 11"
+        ],
+        "answer": "Der Marsianer"
+      },
+      {
+        "id": "lq462",
+        "type": "true-false",
+        "question": "Der Film dauert 2 Stunden und 20 Minuten.",
+        "answer": "true"
+      },
+      {
+        "id": "lq463",
+        "type": "mcq",
+        "question": "Wie findet Person B den Film?",
+        "options": [
+          "Langweilig",
+          "Spannend",
+          "Traurig",
+          "Enttäuschend"
+        ],
+        "answer": "Spannend"
+      }
+    ],
+    "lessonId": "A2_lesson_12",
+    "audio": "audio/listening/a2-listen-24.mp3",
+    "taughtInLessonId": "A2_lesson_6",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_25",
+    "title": "Fahrkartenkauf am Automaten",
+    "script": "Kunde: Entschuldigung, ich weiss nicht, wie dieser Automat funktioniert.\nHelfer: Kein Problem. Zürst wählen Sie Ihre gewünschte Zone. Wohin möchten Sie fahren?\nKunde: Zum Hauptbahnhof.\nHelfer: Das ist Zone 1. Dann wählen Sie Einzelfahrt oder Tageskarte?\nKunde: Ich brauche eine Tageskarte.\nHelfer: Ok, dann legen Sie jetzt Ihr Geld ein oder halten Sie Ihre Karte an das Feld.\nKunde: Kann ich mit Karte zahlen?\nHelfer: Ja, mit EC- oder Kreditkarte.\nKunde: Super. Vielen Dank!",
+    "questions": [
+      {
+        "id": "lq464",
+        "type": "mcq",
+        "question": "Welche Fahrkarte möchte der Kunde?",
+        "options": [
+          "Einzelfahrt",
+          "Tageskarte",
+          "Wochenkarte",
+          "Monatskarte"
+        ],
+        "answer": "Tageskarte"
+      },
+      {
+        "id": "lq465",
+        "type": "true-false",
+        "question": "Man kann am Automaten nur bar zahlen.",
+        "answer": "false",
+        "explanation": "Kann ich mit Karte zahlen? Ja, mit EC- oder Kreditkarte."
+      },
+      {
+        "id": "lq466",
+        "type": "mcq",
+        "question": "In welcher Zone liegt der Hauptbahnhof?",
+        "options": [
+          "Zone 2",
+          "Zone 1",
+          "Zone 3",
+          "Zone A"
+        ],
+        "answer": "Zone 1"
+      }
+    ],
+    "lessonId": "A2_lesson_13",
+    "audio": "audio/listening/a2-listen-25.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_26",
+    "title": "Reklamation im Restaurant",
+    "script": "Gast: Entschuldigung?\nKellner: Ja, bitte?\nGast: Die Suppe ist kalt. Ich habe sie vor 20 Minuten bestellt und jetzt ist sie nicht mehr warm.\nKellner: Oh, das tut mir leid. Ich bringe Ihnen sofort eine neue.\nGast: Danke. Und könnte ich bitte noch ein Glas Wasser bekommen?\nKellner: Ja, sofort. Noch etwas?\nGast: Nein, danke.\nKellner: Die neue Suppe kommt in fünf Minuten. Und das Wasser bringe ich gleich.",
+    "questions": [
+      {
+        "id": "lq467",
+        "type": "mcq",
+        "question": "Worüber beschwert sich der Gast?",
+        "options": [
+          "Die Suppe ist kalt",
+          "Die Suppe ist zu salzig",
+          "Das Fleisch ist zäh",
+          "Der Wein schmeckt schlecht"
+        ],
+        "answer": "Die Suppe ist kalt"
+      },
+      {
+        "id": "lq468",
+        "type": "true-false",
+        "question": "Der Kellner bringt eine neue Suppe.",
+        "answer": "true"
+      },
+      {
+        "id": "lq469",
+        "type": "mcq",
+        "question": "Was möchte der Gast noch?",
+        "options": [
+          "Ein Bier",
+          "Ein Glas Wasser",
+          "Brot",
+          "Die Rechnung"
+        ],
+        "answer": "Ein Glas Wasser"
+      }
+    ],
+    "lessonId": "A2_lesson_13",
+    "audio": "audio/listening/a2-listen-26.mp3",
+    "taughtInLessonId": "A2_lesson_7",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_27",
+    "title": "Geburtstagsgeschenk",
+    "script": "Person A: Ich suche ein Geschenk für meinen Bruder. Er wird nächste Woche 30.\nPerson B: Was mag er denn?\nPerson A: Er kocht gern. Vielleicht ein Kochbuch?\nPerson B: Oder ein Gutschein für einen Kochkurs?\nPerson A: Das ist eine gute Idee! Wo gibt es das?\nPerson B: Die VHS bietet Kochkurse an. Ich kann dir den Link schicken.\nPerson A: Sehr gern. Was kostet so ein Kurs?\nPerson B: Ich glaube, circa 50 Euro für einen Abend.\nPerson A: Das ist bezahlbar.",
+    "questions": [
+      {
+        "id": "lq2701",
+        "type": "mcq",
+        "question": "Für wen sucht Person A ein Geschenk?",
+        "options": [
+          "Für die Mutter",
+          "Für den Bruder",
+          "Für den Freund",
+          "Für den Vater"
+        ],
+        "answer": "Für den Bruder"
+      },
+      {
+        "id": "lq2702",
+        "type": "true-false",
+        "question": "Der Bruder wird 25 Jahre alt.",
+        "answer": "false",
+        "explanation": "Er wird 30 Jahre alt."
+      },
+      {
+        "id": "lq2703",
+        "type": "mcq",
+        "question": "Was schlägt Person B als Geschenk vor?",
+        "options": [
+          "Ein Kochbuch",
+          "Einen Kochkurs",
+          "Einen Mixer",
+          "Essen gehen"
+        ],
+        "answer": "Einen Kochkurs"
+      }
+    ],
+    "lessonId": "A2_lesson_14",
+    "audio": "audio/listening/a2-listen-27.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_28",
+    "title": "Mit Bus und Bahn unterwegs",
+    "script": "Liebe Fahrgäste, wir melden uns aus der Leitstelle. Die U-Bahn Linie 2 und die Buslinie 88 fahren heute aufgrund von Bauarbeiten nur bis zur Haltestelle Rathaus. Ab Rathaus fahren Ersatzbusse zur Endstation. Bitte planen Sie zusätzlich 15 Minuten Fahrzeit ein. Wir empfehlen, auf die S-Bahn auszuweichen. Nahere Informationen erhalten Sie im Internet und in unserer App.",
+    "questions": [
+      {
+        "id": "lq2704",
+        "type": "mcq",
+        "question": "Warum gibt es Änderungen?",
+        "options": [
+          "Wegen Personalmangel",
+          "Wegen Bauarbeiten",
+          "Wegen schlechtem Wetter",
+          "Wegen einer Veranstaltung"
+        ],
+        "answer": "Wegen Bauarbeiten"
+      },
+      {
+        "id": "lq2705",
+        "type": "true-false",
+        "question": "Die Busse und Bahnen fahren normal.",
+        "answer": "false",
+        "explanation": "Die U-Bahn Linie 2 und Buslinie 88 fahren nur bis Rathaus."
+      },
+      {
+        "id": "lq2706",
+        "type": "mcq",
+        "question": "Wie viel Zeit soll man zusätzlich einplanen?",
+        "options": [
+          "5 Minuten",
+          "10 Minuten",
+          "15 Minuten",
+          "20 Minuten"
+        ],
+        "answer": "15 Minuten"
+      }
+    ],
+    "lessonId": "A2_lesson_14",
+    "audio": "audio/listening/a2-listen-28.mp3",
+    "taughtInLessonId": "A2_lesson_10",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_29",
+    "title": "Präsentation über Hobbys",
+    "script": "Guten Morgen, ich halte heute eine kurze Präsentation über meine Hobbys. Ich habe drei Hauptinteressen: Erstens spiele ich seit fünf Jahren Gitarre. Ich übe jeden Tag etwa eine Stunde. Zweitens gehe ich gerne wandern, am liebsten in den Bergen. Letztes Jahr war ich in den Alpen, das war fantastisch. Drittens lese ich sehr gern, vor allem Krimis und Science-Fiction. Lesen hilft mir auch beim Deutschlernen.",
+    "questions": [
+      {
+        "id": "lq2707",
+        "type": "mcq",
+        "question": "Wie lange spielt die Person schon Gitarre?",
+        "options": [
+          "Drei Jahre",
+          "Fünf Jahre",
+          "Sieben Jahre",
+          "Zehn Jahre"
+        ],
+        "answer": "Fünf Jahre"
+      },
+      {
+        "id": "lq2708",
+        "type": "true-false",
+        "question": "Die Person liest am liebsten Liebesromane.",
+        "answer": "false",
+        "explanation": "Sie liest Krimis und Science-Fiction."
+      },
+      {
+        "id": "lq2709",
+        "type": "mcq",
+        "question": "Wo war die Person letztes Jahr wandern?",
+        "options": [
+          "Im Schwarzwald",
+          "In den Alpen",
+          "In der Schweiz",
+          "Im Harz"
+        ],
+        "answer": "In den Alpen"
+      }
+    ],
+    "lessonId": "A2_lesson_15",
+    "audio": "audio/listening/a2-listen-29.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_30",
+    "title": "Buchrezension",
+    "script": "Ich habe das Buch 'Die Geschichte der Bienen' von Maja Lunde gelesen und es hat mir sehr gut gefallen. Der Roman erzahlt drei Geschichten aus verschiedenen Zeiten, aber alle haben das gleiche Thema: die Bienen. Das Buch ist spannend und informativ zugleich. Ich habe viel gelernt, zum Beispiel wie wichtig Bienen für unsere Umwelt sind. Der Schreibstil ist einfach und klar, perfekt für Deutschlernende auf A2-Niveau. Ich gebe dem Buch fünf von fünf Sternen.",
+    "questions": [
+      {
+        "id": "lq2710",
+        "type": "mcq",
+        "question": "Wie heißt das Buch?",
+        "options": [
+          "Der Bienenzüchter",
+          "Die Geschichte der Bienen",
+          "Das Leben der Bienen",
+          "Die Bienenkönigin"
+        ],
+        "answer": "Die Geschichte der Bienen"
+      },
+      {
+        "id": "lq2711",
+        "type": "true-false",
+        "question": "Das Buch hat der Person nicht gefallen.",
+        "answer": "false",
+        "explanation": "Es hat ihr sehr gut gefallen, fünf Sterne."
+      },
+      {
+        "id": "lq2712",
+        "type": "mcq",
+        "question": "Wie viele Sterne gibt die Person dem Buch?",
+        "options": [
+          "Drei",
+          "Vier",
+          "Fünf",
+          "Sechs"
+        ],
+        "answer": "Fünf"
+      }
+    ],
+    "lessonId": "A2_lesson_15",
+    "audio": "audio/listening/a2-listen-30.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_31",
+    "title": "Nachbarn",
+    "script": "Ich wohne jetzt seit zwei Jahren in meiner Wohnung. Die Nachbarn sind alle sehr nett. Neben mir wohnt ein älteres Ehepaar, Herr und Frau Schneider. Sie sind immer freundlich und grüssen mich. Über mir wohnt eine junge Familie mit zwei kleinen Kindern. Manchmal ist es ein bisschen laut, aber das macht nichts. Unter mir wohnt ein Student. Er hat oft Besuch und manchmal ist laute Musik zu hören. Aber im Grossen und Ganzen ist die Nachbarschaft sehr angenehm.",
+    "questions": [
+      {
+        "id": "lq2713",
+        "type": "mcq",
+        "question": "Seit wann wohnt die Person in der Wohnung?",
+        "options": [
+          "Seit einem Jahr",
+          "Seit zwei Jahren",
+          "Seit drei Jahren",
+          "Seit fünf Jahren"
+        ],
+        "answer": "Seit zwei Jahren"
+      },
+      {
+        "id": "lq2714",
+        "type": "true-false",
+        "question": "Die Nachbarn über ihr sind ältere Leute.",
+        "answer": "false",
+        "explanation": "Über ihr wohnt eine junge Familie mit Kindern."
+      },
+      {
+        "id": "lq2715",
+        "type": "mcq",
+        "question": "Wer wohnt unter ihr?",
+        "options": [
+          "Ein Ehepaar",
+          "Ein Student",
+          "Eine Familie",
+          "Eine alleinstehende Frau"
+        ],
+        "answer": "Ein Student"
+      }
+    ],
+    "lessonId": "A2_lesson_16",
+    "audio": "audio/listening/a2-listen-31.mp3",
+    "taughtInLessonId": "A2_lesson_10",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_32",
+    "title": "Reparatur bestellen",
+    "script": "Kunde: Guten Tag, ich habe ein Problem mit meiner Waschmaschine.\nMitarbeiter: Seit wann?\nKunde: Seit gestern. Sie macht ein komisches Geränsch und schleudert nicht mehr.\nMitarbeiter: Welches Modell haben Sie?\nKunde: Eine Siemens WM-300, Baujahr 2021.\nMitarbeiter: Die Garantie ist noch gültig? Zwei Jahre ab Kauf.\nKunde: Ja, ich habe Garantie bis September dieses Jahres.\nMitarbeiter: Prima, dann vereinbare ich einen Termin für den Techniker. Passt es am Donnerstag zwischen 8 und 12 Uhr?\nKunde: Ja, das ist in Ordnung.",
+    "questions": [
+      {
+        "id": "lq2716",
+        "type": "mcq",
+        "question": "Was macht die Waschmaschine?",
+        "options": [
+          "Sie läuft gar nicht",
+          "Sie macht ein komisches Geränsch",
+          "Sie stoppt immer",
+          "Sie lässt Wasser"
+        ],
+        "answer": "Sie macht ein komisches Geränsch"
+      },
+      {
+        "id": "lq2717",
+        "type": "true-false",
+        "question": "Die Garantie ist abgelaufen.",
+        "answer": "false",
+        "explanation": "Garantie bis September, noch gültig."
+      },
+      {
+        "id": "lq2718",
+        "type": "mcq",
+        "question": "Wann kommt der Techniker?",
+        "options": [
+          "Am Dienstag",
+          "Am Donnerstag",
+          "Am Mittwoch",
+          "Am Freitag"
+        ],
+        "answer": "Am Donnerstag"
+      }
+    ],
+    "lessonId": "A2_lesson_16",
+    "audio": "audio/listening/a2-listen-32.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_33",
+    "title": "Reise vorbereiten",
+    "script": "Person A: Ich fliege nächsten Monat nach Spanien.\nPerson B: Super! Wohin genau?\nPerson A: Nach Barcelona. Hast du Tipps?\nPerson B: Ja! Die Sagrada Familia ist ein Muss. Aber kauf die Tickets vorher online, sonst stehst du ewig an.\nPerson A: Guter Tipp. Wie ist das Wetter im Juni?\nPerson B: Meistens sonnig und 28-30 Grad. Also leichte Kleidung einpacken.\nPerson A: Soll ich Spanisch sprechen oder kommt man mit Englisch durch?\nPerson B: In der Stadt kommst du mit Englisch gut klar, aber ein paar spanische Wörter kommen immer gut an.",
+    "questions": [
+      {
+        "id": "lq2719",
+        "type": "mcq",
+        "question": "Wohin fliegt Person A?",
+        "options": [
+          "Nach Madrid",
+          "Nach Barcelona",
+          "Nach Valencia",
+          "Nach Sevilla"
+        ],
+        "answer": "Nach Barcelona"
+      },
+      {
+        "id": "lq2720",
+        "type": "true-false",
+        "question": "Man sollte Tickets für die Sagrada Familia vorher online kaufen.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2721",
+        "type": "mcq",
+        "question": "Was ist der Tipp zur Kleidung?",
+        "options": [
+          "Warme Kleidung einpacken",
+          "Leichte Kleidung einpacken",
+          "Einen Regenschirm mitnehmen",
+          "Einen Anzug mitnehmen"
+        ],
+        "answer": "Leichte Kleidung einpacken"
+      }
+    ],
+    "lessonId": "A2_lesson_17",
+    "audio": "audio/listening/a2-listen-33.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_34",
+    "title": "Im Sportverein",
+    "script": "Trainer: Herzlich willkommen beim Fussballtraining! Ich bin Trainer Klaus. Wir trainieren immer dienstags und donnerstags von 18 bis 19:30 Uhr.\nNeuling: Muss ich eigene Sachen mitbringen?\nTrainer: Bringen Sie Sportschuhe, Schienbeinschoner und ein Handtuch mit. Trikots bekommen Sie vom Verein.\nNeuling: Wie hoch ist der Mitgliedsbeitrag?\nTrainer: 15 Euro pro Monat. Der erste Monat ist kostenlos zum Ausprobieren.\nNeuling: Das ist fair. Ich komme nächstes Mal.\nTrainer: Prima. Wir sehen uns dann am Donnerstag!",
+    "questions": [
+      {
+        "id": "lq2722",
+        "type": "mcq",
+        "question": "An welchen Tagen ist Training?",
+        "options": [
+          "Montag und Mittwoch",
+          "Dienstag und Donnerstag",
+          "Mittwoch und Freitag",
+          "Dienstag und Samstag"
+        ],
+        "answer": "Dienstag und Donnerstag"
+      },
+      {
+        "id": "lq2723",
+        "type": "true-false",
+        "question": "Der erste Monat ist kostenlos.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2724",
+        "type": "mcq",
+        "question": "Was bekommt man vom Verein?",
+        "options": [
+          "Sportschuhe",
+          "Schienbeinschoner",
+          "Trikots",
+          "Ein Handtuch"
+        ],
+        "answer": "Trikots"
+      }
+    ],
+    "lessonId": "A2_lesson_17",
+    "audio": "audio/listening/a2-listen-34.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_35",
+    "title": "Schulung für neue Software",
+    "script": "Guten Morgen zusammen, mein Name ist Herr Wagner und ich gebe heute die Schulung für das neue Buchhaltungsprogramm. Wir werden zürst eine halbe Stunde die Grundlagen durchgehen, dann machen Sie praktische Übungen. Nach der Mittagspause besprechen wir die erweiterten Funktionen. Bitte notieren Sie sich Fragen, die Sie haben. Das Handbuch finden Sie im Ordner 'Dokumente' auf Ihrem Desktop. Die Schulung dauert bis 17 Uhr.",
+    "questions": [
+      {
+        "id": "lq2725",
+        "type": "mcq",
+        "question": "Womit beginnt die Schulung?",
+        "options": [
+          "Mit praktischen Übungen",
+          "Mit den Grundlagen",
+          "Mit erweiterten Funktionen",
+          "Mit einem Test"
+        ],
+        "answer": "Mit den Grundlagen"
+      },
+      {
+        "id": "lq2726",
+        "type": "true-false",
+        "question": "Das Handbuch ist auf dem Desktop.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2727",
+        "type": "mcq",
+        "question": "Bis wann dauert die Schulung?",
+        "options": [
+          "Bis 15 Uhr",
+          "Bis 16 Uhr",
+          "Bis 17 Uhr",
+          "Bis 18 Uhr"
+        ],
+        "answer": "Bis 17 Uhr"
+      }
+    ],
+    "lessonId": "A2_lesson_18",
+    "audio": "audio/listening/a2-listen-35.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_36",
+    "title": "Kleinanzeige telefonisch",
+    "script": "Anrufer: Guten Tag, ich rufe wegen der Wohnungsanzeige an. Ist die Wohnung noch frei?\nVermieter: Ja, die ist noch zu haben. Interessiert?\nAnrufer: Ja, sehr. Kann ich einen Besichtigungstermin vereinbaren?\nVermieter: Gerne. Wann passt es Ihnen?\nAnrufer: Am Samstag vormittag?\nVermieter: Samstag um 11 Uhr wäre möglich.\nAnrufer: Das ist perfekt. Die Adresse ist?\nVermieter: Birkenweg 7, dritter Stock, Wohnung 12. Klingeln Sie bitte.\nAnrufer: Vielen Dank, bis Samstag.",
+    "questions": [
+      {
+        "id": "lq2728",
+        "type": "mcq",
+        "question": "Warum ruft die Person an?",
+        "options": [
+          "Wegen eines Jobs",
+          "Wegen der Wohnungsanzeige",
+          "Wegen einer Beschwerde",
+          "Wegen einer Rechnung"
+        ],
+        "answer": "Wegen der Wohnungsanzeige"
+      },
+      {
+        "id": "lq2729",
+        "type": "true-false",
+        "question": "Der Besichtigungstermin ist am Sonntag.",
+        "answer": "false",
+        "explanation": "Am Samstag um 11 Uhr."
+      },
+      {
+        "id": "lq2730",
+        "type": "mcq",
+        "question": "In welchem Stock liegt die Wohnung?",
+        "options": [
+          "Erster Stock",
+          "Zweiter Stock",
+          "Dritter Stock",
+          "Vierter Stock"
+        ],
+        "answer": "Dritter Stock"
+      }
+    ],
+    "lessonId": "A2_lesson_18",
+    "audio": "audio/listening/a2-listen-36.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_37",
+    "title": "Gesunde Ernährung",
+    "script": "Ich versuche mich gesund zu ernähren. Frühstücken tu ich jeden Tag, meistens Müsli mit Joghurt und Obst. Mittags esse ich warm in der Kantine, da gibt es oft eine gute Auswahl. Abends koche ich selber, am liebsten Gemüse mit Reis oder Nudeln. Ich trinke viel Wasser, mindestens zwei Liter am Tag. Süssigkeiten esse ich nur am Wochenende. Seit ich mich so ernahre, fühle ich mich viel fitter und habe auch besser geschlafen.",
+    "questions": [
+      {
+        "id": "lq2731",
+        "type": "mcq",
+        "question": "Was isst die Person zum Frühstück?",
+        "options": [
+          "Brötchen mit Käse",
+          "Müsli mit Joghurt und Obst",
+          "Eier mit Speck",
+          "Toast mit Marmelade"
+        ],
+        "answer": "Müsli mit Joghurt und Obst"
+      },
+      {
+        "id": "lq2732",
+        "type": "true-false",
+        "question": "Die Person trinkt mindestens zwei Liter Wasser am Tag.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2733",
+        "type": "mcq",
+        "question": "Wann isst die Person Süssigkeiten?",
+        "options": [
+          "Täglich",
+          "Nur am Wochenende",
+          "Nie",
+          "Nur abends"
+        ],
+        "answer": "Nur am Wochenende"
+      }
+    ],
+    "lessonId": "A2_lesson_19",
+    "audio": "audio/listening/a2-listen-37.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_38",
+    "title": "Fahrradreparatur",
+    "script": "Kunde: Guten Tag, mein Fahrrad hat einen platten Reifen.\nMechaniker: Vorne oder hinten?\nKunde: Hinten.\nMechaniker: Haben Sie eine Ahnung, was passiert ist? Über Glas gefahren oder so?\nKunde: Ich glaube, ich bin über einen Nagel gefahren. Auf dem Weg zur Arbeit.\nMechaniker: Kein Problem, das mache ich schnell. Soll ich auch gleich die Bremsen überprüfen?\nKunde: Ja, gern. Die quietschen nämlich.\nMechaniker: Okay. In einer halben Stunde ist alles fertig. Das kostet zusammen etwa 35 Euro.\nKunde: Alles klar, ich komme dann wieder.",
+    "questions": [
+      {
+        "id": "lq2734",
+        "type": "mcq",
+        "question": "Was ist mit dem Fahrrad kaputt?",
+        "options": [
+          "Der Lenker",
+          "Der Reifen",
+          "Der Sattel",
+          "Die Kette"
+        ],
+        "answer": "Der Reifen"
+      },
+      {
+        "id": "lq2735",
+        "type": "true-false",
+        "question": "Der Kunde ist über einen Stein gefahren.",
+        "answer": "false",
+        "explanation": "Er ist über einen Nagel gefahren."
+      },
+      {
+        "id": "lq2736",
+        "type": "mcq",
+        "question": "Wie lange dauert die Reparatur?",
+        "options": [
+          "15 Minuten",
+          "30 Minuten",
+          "45 Minuten",
+          "60 Minuten"
+        ],
+        "answer": "30 Minuten"
+      }
+    ],
+    "lessonId": "A2_lesson_19",
+    "audio": "audio/listening/a2-listen-38.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_39",
+    "title": "Über die Arbeit sprechen",
+    "script": "Person A: Wie gefällt dir dein neuer Job?\nPerson B: Sehr gut, eigentlich. Die Kollegen sind nett und die Arbeit ist interessant.\nPerson A: Was machst du genau?\nPerson B: Ich arbeite in der Marketingabteilung. Ich erstelle Social-Media-Beiträge und analysiere die Klickzahlen.\nPerson A: Klingt spannend! Und wie sind die Arbeitszeiten?\nPerson B: Flexible Arbeitszeit: Ich kann zwischen 7 und 9 Uhr anfangen. Und ich darf zwei Tage pro Woche im Homeoffice arbeiten.\nPerson A: Das ist ja super.",
+    "questions": [
+      {
+        "id": "lq2737",
+        "type": "mcq",
+        "question": "In welcher Abteilung arbeitet Person B?",
+        "options": [
+          "Personalabteilung",
+          "Marketingabteilung",
+          "IT-Abteilung",
+          "Buchhaltung"
+        ],
+        "answer": "Marketingabteilung"
+      },
+      {
+        "id": "lq2738",
+        "type": "true-false",
+        "question": "Person B muss um 8 Uhr anfangen.",
+        "answer": "false",
+        "explanation": "Flexible Arbeitszeit zwischen 7 und 9 Uhr."
+      },
+      {
+        "id": "lq2739",
+        "type": "mcq",
+        "question": "Wie viele Tage pro Woche darf Person B im Homeoffice arbeiten?",
+        "options": [
+          "Einen Tag",
+          "Zwei Tage",
+          "Drei Tage",
+          "Vier Tage"
+        ],
+        "answer": "Zwei Tage"
+      }
+    ],
+    "lessonId": "A2_lesson_20",
+    "audio": "audio/listening/a2-listen-39.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_40",
+    "title": "Auf dem Flohmarkt",
+    "script": "Verkäufer: Guten Tag, kann ich Ihnen helfen?\nKäufer: Ich schaue mich nur um. Die alte Lampe da interessiert mich. Was kostet die?\nVerkäufer: Die Lampe ist 25 Euro. Sie ist aus den 1960er Jahren und funktioniert einwandfrei.\nKäufer: Schön, aber 25 Euro ist etwas viel. Können Sie 18 Euro machen?\nVerkäufer: 20 Euro, na sagen wir 20 Euro?\nKäufer: Okay, 20 Euro. Das ist ein Deal.\nVerkäufer: Super. Soll ich sie einpacken?\nKäufer: Ja, bitte.",
+    "questions": [
+      {
+        "id": "lq2740",
+        "type": "mcq",
+        "question": "Was möchte der Käufer kaufen?",
+        "options": [
+          "Einen Stuhl",
+          "Eine Lampe",
+          "Ein Bild",
+          "Ein Buch"
+        ],
+        "answer": "Eine Lampe"
+      },
+      {
+        "id": "lq2741",
+        "type": "true-false",
+        "question": "Der Verkäufer verlangt zürst 30 Euro.",
+        "answer": "false",
+        "explanation": "Der Verkäufer sagt 25 Euro."
+      },
+      {
+        "id": "lq2742",
+        "type": "mcq",
+        "question": "Für wie viel Euro wird die Lampe schliesslich verkauft?",
+        "options": [
+          "15 Euro",
+          "18 Euro",
+          "20 Euro",
+          "25 Euro"
+        ],
+        "answer": "20 Euro"
+      }
+    ],
+    "lessonId": "A2_lesson_20",
+    "audio": "audio/listening/a2-listen-40.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_41",
+    "title": "Imbüro der Ausländerbehörde",
+    "script": "Mitarbeiterin: Guten Tag, was kann ich für Sie tun?\nBesucher: Ich möchte meinen Aufenthaltstitel verlängern.\nMitarbeiterin: Haben Sie einen Termin?\nBesucher: Ja, ich habe eine Terminbestätigung für 10 Uhr.\nMitarbeiterin: Gut. Haben Sie alle Unterlagen dabei? Reisepass, biometrisches Foto und das ausgefüllte Formular?\nBesucher: Ja, hier ist alles.\nMitarbeiterin: Perfekt. Gehen Sie bitte zu Raum 112, dort wartet Frau Dr. Klein auf Sie.\nBesucher: Vielen Dank.",
+    "questions": [
+      {
+        "id": "lq2743",
+        "type": "mcq",
+        "question": "Was möchte der Besucher?",
+        "options": [
+          "Eine Arbeitserlaubnis",
+          "Seinen Aufenthaltstitel verlängern",
+          "Eine neue Adresse anmelden",
+          "Einen Pass beantragen"
+        ],
+        "answer": "Seinen Aufenthaltstitel verlängern"
+      },
+      {
+        "id": "lq2744",
+        "type": "true-false",
+        "question": "Der Besucher hat einen Termin um 10 Uhr.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2745",
+        "type": "mcq",
+        "question": "In welchem Raum wartet Frau Dr. Klein?",
+        "options": [
+          "Raum 110",
+          "Raum 112",
+          "Raum 114",
+          "Raum 102"
+        ],
+        "answer": "Raum 112"
+      }
+    ],
+    "lessonId": "A2_lesson_21",
+    "audio": "audio/listening/a2-listen-41.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_42",
+    "title": "Tagesablauf",
+    "script": "Ich stehe jeden Morgen um 6:30 Uhr auf. Zürst dusche ich, dann frühstücke ich gemütlich. Um 7:45 Uhr fahre ich mit dem Bus zur Arbeit. Die Arbeit beginnt um 8:30 Uhr. Mittagspause habe ich von 12:30 bis 13:30 Uhr. Um 17 Uhr bin ich fertig mit der Arbeit. Zu Hause koche ich Abendessen und entspanne. Zweimal pro Woche gehe ich abends ins Fitnessstudio. Ins Bett gehe ich meistens um 22:30 Uhr.",
+    "questions": [
+      {
+        "id": "lq2746",
+        "type": "mcq",
+        "question": "Um wie viel Uhr steht die Person auf?",
+        "options": [
+          "Um 6:00 Uhr",
+          "Um 6:30 Uhr",
+          "Um 7:00 Uhr",
+          "Um 7:30 Uhr"
+        ],
+        "answer": "Um 6:30 Uhr"
+      },
+      {
+        "id": "lq2747",
+        "type": "true-false",
+        "question": "Die Person geht zweimal pro Woche ins Fitnessstudio.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2748",
+        "type": "mcq",
+        "question": "Wann geht die Person ins Bett?",
+        "options": [
+          "Um 21:30 Uhr",
+          "Um 22:00 Uhr",
+          "Um 22:30 Uhr",
+          "Um 23:00 Uhr"
+        ],
+        "answer": "Um 22:30 Uhr"
+      }
+    ],
+    "lessonId": "A2_lesson_21",
+    "audio": "audio/listening/a2-listen-42.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_43",
+    "title": "Frankfurt Airport Announcement",
+    "script": "Achtung, Fluggaste der Lufthansa-Flug LH 490 nach München. Das Boarding beginnt um 14:45 Uhr am Gate C12. Bitte halten Sie Ihre Bordkarte und Ihren Ausweis bereit. Der Flug startet planmässig um 15:30 Uhr. Verspätete Fluggaste melden sich bitte am Service-Schalter. Wir wünschen Ihnen einen guten Flug.",
+    "questions": [
+      {
+        "id": "lq2749",
+        "type": "mcq",
+        "question": "Welche Fluggesellschaft hat Flug LH 490?",
+        "options": [
+          "Eurowings",
+          "Air Berlin",
+          "Lufthansa",
+          "Ryanair"
+        ],
+        "answer": "Lufthansa"
+      },
+      {
+        "id": "lq2750",
+        "type": "mcq",
+        "question": "Wann beginnt das Boarding?",
+        "options": [
+          "14:15 Uhr",
+          "14:30 Uhr",
+          "14:45 Uhr",
+          "15:00 Uhr"
+        ],
+        "answer": "14:45 Uhr"
+      },
+      {
+        "id": "lq2751",
+        "type": "true-false",
+        "question": "Der Flug startet um 15:30 Uhr.",
+        "answer": "true"
+      }
+    ],
+    "lessonId": "A2_lesson_22",
+    "audio": "audio/listening/a2-listen-43.mp3",
+    "taughtInLessonId": "A2_lesson_4",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_44",
+    "title": "Termin beim Friseur",
+    "script": "Kundin: Guten Tag, ich hätte gern einen Termin zum Haareschneiden.\nFriseurin: Gern. Wochentag und Uhrzeit?\nKundin: Am liebsten nächsten Dienstag.\nFriseurin: Dienstag haben wir um 10 und um 16 Uhr noch frei.\nKundin: 10 Uhr wäre super.\nFriseurin: Eintragen. Wie lange sind Ihre Haare?\nKundin: Schulterlang. Ich möchte sie etwa fünf Zentimeter kürzer haben.\nFriseurin: Verstanden. Was ist Ihr Name?\nKundin: Sabine Wagner.\nFriseurin: Okay, Frau Wagner. Dienstag um 10 Uhr. Bis dann!",
+    "questions": [
+      {
+        "id": "lq2752",
+        "type": "mcq",
+        "question": "Wann möchte die Kundin zum Friseur?",
+        "options": [
+          "Am Montag",
+          "Am Dienstag",
+          "Am Mittwoch",
+          "Am Donnerstag"
+        ],
+        "answer": "Am Dienstag"
+      },
+      {
+        "id": "lq2753",
+        "type": "true-false",
+        "question": "Die Kundin möchte ihre Haare färben.",
+        "answer": "false",
+        "explanation": "Sie möchte ihre Haare um fünf Zentimeter kürzer haben."
+      },
+      {
+        "id": "lq2754",
+        "type": "mcq",
+        "question": "Wie lang sind ihre Haare?",
+        "options": [
+          "Kurz",
+          "Schulterlang",
+          "Lang",
+          "Sehr lang"
+        ],
+        "answer": "Schulterlang"
+      }
+    ],
+    "lessonId": "A2_lesson_22",
+    "audio": "audio/listening/a2-listen-44.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_45",
+    "title": "Mitbewohner suchen",
+    "script": "Hallo zusammen, ich suche ab 1. Juli einen neuen Mitbewohner oder eine neue Mitbewohnerin. Die Wohnung liegt in Berlin Friedrichshain, in der Nahe der Warschaür Strasse. Das Zimmer ist 18 Quadratmeter gross, hell und hat einen Balkonzugang. Die Miete beträgt 480 Euro warm. Wir sind eine WG mit drei Leuten. Wir suchen jemanden, der ordentlich ist und gerne mal zusammen was unternimmt. Wenn du Interesse hast, melde dich per Nachricht.",
+    "questions": [
+      {
+        "id": "lq2755",
+        "type": "mcq",
+        "question": "Ab wann ist das Zimmer frei?",
+        "options": [
+          "Ab 1. Juni",
+          "Ab 1. Juli",
+          "Ab 1. August",
+          "Ab 15. Juli"
+        ],
+        "answer": "Ab 1. Juli"
+      },
+      {
+        "id": "lq2756",
+        "type": "true-false",
+        "question": "Die Miete beträgt 500 Euro warm.",
+        "answer": "false",
+        "explanation": "Die Miete beträgt 480 Euro warm."
+      },
+      {
+        "id": "lq2757",
+        "type": "mcq",
+        "question": "Wie gross ist das Zimmer?",
+        "options": [
+          "15 Quadratmeter",
+          "18 Quadratmeter",
+          "20 Quadratmeter",
+          "22 Quadratmeter"
+        ],
+        "answer": "18 Quadratmeter"
+      }
+    ],
+    "lessonId": "A2_lesson_23",
+    "audio": "audio/listening/a2-listen-45.mp3",
+    "taughtInLessonId": "A2_lesson_10",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_46",
+    "title": "Beim Zahnarzt",
+    "script": "Zahnarzt: Guten Morgen, Herr Müller. Was kann ich für Sie tun?\nPatient: Guten Morgen, ich habe seit zwei Tagen Zahnschmerzen. Unten rechts.\nZahnarzt: Machen Sie bitte den Mund auf. ... Ja, ich sehe es. Das ist eine kleine Entzündung. Die muss ich behandeln.\nPatient: Tut das weh?\nZahnarzt: Ich betaube die Stelle mit einer Spritze. Dann spüren Sie nichts mehr.\nPatient: Und was kostet die Behandlung?\nZahnarzt: Die Krankenkasse übernimmt die Kosten. Keine Sorge.\nPatient: Das ist gut. Dann machen Sie bitte.",
+    "questions": [
+      {
+        "id": "lq2758",
+        "type": "mcq",
+        "question": "Was hat der Patient?",
+        "options": [
+          "Kopfschmerzen",
+          "Zahnschmerzen",
+          "Rückenschmerzen",
+          "Ohrenschmerzen"
+        ],
+        "answer": "Zahnschmerzen"
+      },
+      {
+        "id": "lq2759",
+        "type": "true-false",
+        "question": "Der Zahnarzt betaubt die Stelle mit einer Spritze.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2760",
+        "type": "mcq",
+        "question": "Wer bezahlt die Behandlung?",
+        "options": [
+          "Der Patient selbst",
+          "Die Krankenkasse",
+          "Der Zahnarzt",
+          "Niemand"
+        ],
+        "answer": "Die Krankenkasse"
+      }
+    ],
+    "lessonId": "A2_lesson_23",
+    "audio": "audio/listening/a2-listen-46.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_47",
+    "title": "Verkehrsdurchsage",
+    "script": "Hier ist der Verkehrsservice für den Großraum Stuttgart. Aktuell gibt es einen Stau auf der A8 zwischen Stuttgart-Mitte und Esslingen in beiden Richtungen. Ursache ist ein liegengebliebener LKW. Der Stau ist bereits fünf Kilometer lang. Die Staulänge beträgt zur Stunde etwa fünf Kilometer. Bitte umfahren Sie den Bereich großzügig über die B14 oder die B27. Wir melden uns wieder, sobald sich die Lage verändert.",
+    "questions": [
+      {
+        "id": "lq2761",
+        "type": "mcq",
+        "question": "Auf welcher Autobahn ist der Stau?",
+        "options": [
+          "A6",
+          "A8",
+          "A81",
+          "A5"
+        ],
+        "answer": "A8"
+      },
+      {
+        "id": "lq2762",
+        "type": "true-false",
+        "question": "Die Ursache ist ein Unfall.",
+        "answer": "false",
+        "explanation": "Ursache ist ein liegengebliebener LKW."
+      },
+      {
+        "id": "lq2763",
+        "type": "mcq",
+        "question": "Wie lang ist der Stau?",
+        "options": [
+          "Drei Kilometer",
+          "Fünf Kilometer",
+          "Sieben Kilometer",
+          "Zehn Kilometer"
+        ],
+        "answer": "Fünf Kilometer"
+      }
+    ],
+    "lessonId": "A2_lesson_24",
+    "audio": "audio/listening/a2-listen-47.mp3",
+    "taughtInLessonId": "A2_lesson_23",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_48",
+    "title": "Fernseher kaufen",
+    "script": "Kunde: Guten Tag, ich suche einen neuen Fernseher.\nVerkäufer: Gern. Welche Grösse darf es sein?\nKunde: Ich weiss nicht genau. Vielleicht 50 Zoll?\nVerkäufer: Wie weit sitzen Sie vom Fernseher entfernt?\nKunde: Etwa drei Meter.\nVerkäufer: Dann ist 50 Zoll eine gute Wahl. Wir haben ein Angebot: Ein Samsung QLED für 699 Euro. Der hat super Bildqualität.\nKunde: Ist der Fernseher smart? Kann ich Netflix und so nutzen?\nVerkäufer: Ja, alle Streamingdienste sind vorinstalliert.\nKunde: Dann nehme ich den. Kann ich ihn morgen liefern lassen?\nVerkäufer: Ja, die Lieferung kostet 29 Euro extra.",
+    "questions": [
+      {
+        "id": "lq2764",
+        "type": "mcq",
+        "question": "Welche Grösse soll der Fernseher haben?",
+        "options": [
+          "40 Zoll",
+          "50 Zoll",
+          "55 Zoll",
+          "65 Zoll"
+        ],
+        "answer": "50 Zoll"
+      },
+      {
+        "id": "lq2765",
+        "type": "true-false",
+        "question": "Der Fernseher kostet 699 Euro.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2766",
+        "type": "mcq",
+        "question": "Was kostet die Lieferung extra?",
+        "options": [
+          "19 Euro",
+          "29 Euro",
+          "39 Euro",
+          "49 Euro"
+        ],
+        "answer": "29 Euro"
+      }
+    ],
+    "lessonId": "A2_lesson_24",
+    "audio": "audio/listening/a2-listen-48.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_49",
+    "title": "Jahresrückblick",
+    "script": "Das Jahr 2025 war für mich sehr ereignisreich. Im Januar habe ich meinen Fuhrerschein bestanden, darauf war ich sehr stolz. Im März bin ich nach Österreich gefahren, um Ski zu fahren. Das war mein erster Skiurlaub und es hat riesigen Spass gemacht. Im Sommer habe ich einen neuen Job als Bürokauffrau angefangen. Die Einarbeitung war anstrengend, aber ich habe viel gelernt. Und im Dezember fliege ich nach Thailand in den Urlaub. Ich freue mich schon sehr darauf!",
+    "questions": [
+      {
+        "id": "lq2767",
+        "type": "mcq",
+        "question": "Was hat die Person im Januar bestanden?",
+        "options": [
+          "Das Abitur",
+          "Den Führerschein",
+          "Eine Sprachprüfung",
+          "Eine Weiterbildung"
+        ],
+        "answer": "Den Führerschein"
+      },
+      {
+        "id": "lq2768",
+        "type": "true-false",
+        "question": "Die Person war im Sommer in Österreich Ski fahren.",
+        "answer": "false",
+        "explanation": "Im März war sie in Österreich Ski fahren."
+      },
+      {
+        "id": "lq2769",
+        "type": "mcq",
+        "question": "Was macht die Person im Dezember?",
+        "options": [
+          "Sie bleibt zu Hause",
+          "Sie fliegt nach Thailand",
+          "Sie feiert Geburtstag",
+          "Sie beginnt ein Studium"
+        ],
+        "answer": "Sie fliegt nach Thailand"
+      }
+    ],
+    "lessonId": "A2_lesson_25",
+    "audio": "audio/listening/a2-listen-49.mp3",
+    "taughtInLessonId": "A2_lesson_8",
+    "level": "A2"
+  },
+  {
+    "id": "A2_listen_50",
+    "title": "Sich für ein Geschenk bedanken",
+    "script": "Hallo Maria,\n\nIch wollte mich ganz herzlich bei dir für das Geburtstagsgeschenk bedanken! Das Buch über die deutsche Geschichte ist genau mein Thema. Ich habe schon angefangen zu lesen und es ist sehr interessant. Du hast wirklich ein gutes Gespür für Geschenke! Ich freue mich schon darauf, dich nächstes Wochenende zu sehen. Dann kann ich dir persönlich danken und wir können zusammen einen Kaffee trinken gehen.\n\nGanz liebe Grüsse,\nDeine Anna",
+    "questions": [
+      {
+        "id": "lq2770",
+        "type": "mcq",
+        "question": "Wofür bedankt sich Anna?",
+        "options": [
+          "Für eine Einladung",
+          "Für ein Geburtstagsgeschenk",
+          "Für Hilfe",
+          "Für eine Nachricht"
+        ],
+        "answer": "Für ein Geburtstagsgeschenk"
+      },
+      {
+        "id": "lq2771",
+        "type": "true-false",
+        "question": "Das Geschenk ist ein Buch über deutsche Geschichte.",
+        "answer": "true"
+      },
+      {
+        "id": "lq2772",
+        "type": "mcq",
+        "question": "Wann sehen sich die beiden?",
+        "options": [
+          "Naachsten Monat",
+          "Naachstes Wochenende",
+          "Übermorgen",
+          "Morgen"
+        ],
+        "answer": "Naachstes Wochenende"
+      }
+    ],
+    "lessonId": "A2_lesson_25",
+    "audio": "audio/listening/a2-listen-50.mp3",
+    "taughtInLessonId": "A2_lesson_2",
+    "level": "A2"
+  }
+]

@@ -1,0 +1,1454 @@
+[
+  {
+    "id": "C1_speak_1",
+    "title": "Vortrag: Präzisionsmedizin",
+    "prompt": "Halten Sie einen Vortrag über die Zukunft der Präzisionsmedizin in der Orthopädie.",
+    "instructions": "Strukturieren Sie: Einleitung, aktüller Stand, Perspektiven, kritische Würdigung.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Beginnen Sie mit einer provokativen These. Nutzen Sie Fachvokabular.",
+    "usefulPhrases": [
+      "Die Präzisionsmedizin revolutioniert derzeit ...",
+      "Im Gegensatz zur konventionellen Medizin ...",
+      "Hervorzuheben ist ...",
+      "Kritisch anzumerken bleibt jedoch ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_14",
+    "taughtInLessonId": "C1_lesson_1",
+    "conceptId": "c1.argumentation.advanced",
+    "requiredConcepts": [
+      "b2.konnektoren.formal",
+      "b2.nominalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_2",
+    "title": "Diskussion: Ethische Fragen der Gentechnik",
+    "prompt": "Diskutieren Sie: Wo liegen die ethischen Grenzen der Gentechnik in der Medizin?",
+    "instructions": "Entwickeln Sie eine differenzierte Position, gehen Sie auf Gegenargumente ein.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Die Gentechnik wirft grundlegende ethische Fragen auf.",
+    "usefulPhrases": [
+      "Einerseits bietet die Gentechnik enorme Chancen ...",
+      "Andererseits dürfen wir die Risiken nicht ignorieren.",
+      "Aus ethischer Perspektive stellt sich die Frage ...",
+      "Mir scheint, dass ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_12",
+    "taughtInLessonId": "C1_lesson_2",
+    "conceptId": "c1.recht.ethik",
+    "requiredConcepts": [
+      "b2.indirekte.rede",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_3",
+    "title": "Vortrag: Gesundheitsökonomie",
+    "prompt": "Halten Sie einen Vortrag über die Kostenexplosion im Gesundheitswesen.",
+    "instructions": "Analysieren Sie Ursachen, nennen Sie Lösungsansätze, bewerten Sie.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Struktur: Problem - Ursachen - Lösungen - Ausblick.",
+    "usefulPhrases": [
+      "Die Kosten im Gesundheitswesen steigen kontinuierlich.",
+      "Ursächlich hierfür sind ...",
+      "Ein vielversprechender Ansatz ist ...",
+      "Abschließend lässt sich festhalten ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_6",
+    "taughtInLessonId": "C1_lesson_3",
+    "conceptId": "c1.medizin.gesundheit",
+    "requiredConcepts": [
+      "b2.passive.alternatives",
+      "b2.prapositionale.verben"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_4",
+    "title": "Diskussion: Ärztliche Schweigepflicht",
+    "prompt": "Diskutieren Sie: Wo endet die ärztliche Schweigepflicht bei Gefährdung Dritter?",
+    "instructions": "Wägen Sie ab zwischen Schweigepflicht und Schutz Dritter.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Die ärztliche Schweigepflicht ist ein hohes Gut.",
+    "usefulPhrases": [
+      "Grundsätzlich gilt die ärztliche Schweigepflicht.",
+      "In Ausnahmefällen kann sie jedoch aufgehoben werden.",
+      "Das Spannungsfeld besteht zwischen ...",
+      "Eine Abwägung muss ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_13",
+    "taughtInLessonId": "C1_lesson_4",
+    "conceptId": "c1.globalisierung.nachhaltigkeit",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.globalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_5",
+    "title": "Vortrag: Fehlerkultur in der Medizin",
+    "prompt": "Halten Sie einen Vortrag über Fehlerkultur und Patientensicherheit.",
+    "instructions": "Analysieren Sie: Bedeutung, Barrieren, Verbesserungsvorschläge.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Eine offene Fehlerkultur ist entscheidend.",
+    "usefulPhrases": [
+      "Medizinische Fehler sind die dritthäufigste Todesursache.",
+      "Eine offene Fehlerkultur bedeutet ...",
+      "Hemmnisse sind ...",
+      "Zur Verbesserung schlage ich vor ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_14",
+    "taughtInLessonId": "C1_lesson_5",
+    "conceptId": "c1.rhetorik.schreiben",
+    "requiredConcepts": [
+      "b2.satzbau",
+      "b2.nominalstil"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_6",
+    "title": "Selbstständige Präsentation wählen",
+    "prompt": "Wählen Sie ein selbstgewähltes Thema aus der Medizin. Präsentieren Sie es.",
+    "instructions": "Strukturieren Sie frei. Nutzen Sie Fachtermini. Diskutieren Sie im Anschluss.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Melden Sie Ihr Thema. Bleiben Sie sachlich.",
+    "usefulPhrases": [
+      "Mein heutiges Thema ist ...",
+      "Ich habe mich für dieses Thema entschieden, weil ...",
+      "Dazu möchte ich drei Aspekte beleuchten.",
+      "Vielen Dank für Ihre Aufmerksamkeit."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_1",
+    "taughtInLessonId": "C1_lesson_6",
+    "conceptId": "c1.wissenschaft.schreiben",
+    "requiredConcepts": [
+      "b2.nominalisierung",
+      "b2.ethik.wissenschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_7",
+    "title": "Debatte: Import von Ärzten",
+    "prompt": "Debattieren Sie: Sollte Deutschland aktiv Ärzte aus dem Ausland anwerben?",
+    "instructions": "Vertreten Sie Ihre Position. Reagieren Sie auf Gegenargumente.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Ich befürworte/lehne ab, weil ...",
+    "usefulPhrases": [
+      "Die Anwerbung ausländischer Ärzte ist notwendig, weil ...",
+      "Dem ist entgegenzuhalten, dass ...",
+      "Ein differenzierter Blick zeigt ...",
+      "Letztlich kommt es auf die Rahmenbedingungen an."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_3",
+    "taughtInLessonId": "C1_lesson_7",
+    "conceptId": "c1.sprachliche.nuancen",
+    "requiredConcepts": [
+      "b2.modalverben.subjektiv",
+      "b2.indirekte.rede"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_8",
+    "title": "Diskussion: Palliativmedizin",
+    "prompt": "Diskutieren Sie: Ist Palliativmedizin eine vernachlässigte Disziplin?",
+    "instructions": "Nehmen Sie Stellung nennen Sie Entwicklung und Herausforderungen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Die Palliativmedizin hat in den letzten Jahren an Bedeutung gewonnen.",
+    "usefulPhrases": [
+      "Die Palliativmedizin hat sich zu einer eigenständigen Disziplin entwickelt.",
+      "Leider wird sie noch immer ...",
+      "Dabei ist sie für die Patientenversorgung ...",
+      "Ich plädiere für ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_8",
+    "taughtInLessonId": "C1_lesson_8",
+    "conceptId": "c1.diskursanalyse",
+    "requiredConcepts": [
+      "b2.medien",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_9",
+    "title": "Vortrag: Interkulturelle Kompetenz",
+    "prompt": "Halten Sie einen Vortrag über interkulturelle Kompetenz in der Arzt-Patienten-Beziehung.",
+    "instructions": "Erklären Sie Bedeutung, Herausforderungen, Beispiele.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "In einer multikulturellen Gesellschaft ist interkulturelle Kompetenz unverzichtbar.",
+    "usefulPhrases": [
+      "Interkulturelle Kompetenz bedeutet ...",
+      "Eine zentrale Herausforderung ist ...",
+      "Ein Beispiel aus meiner Praxis ...",
+      "Um dies zu erreichen, sollten wir ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_8",
+    "taughtInLessonId": "C1_lesson_9",
+    "conceptId": "c1.literatur.interpretation",
+    "requiredConcepts": [
+      "b2.nominalstil",
+      "b2.kultur.leben"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_10",
+    "title": "Übergabe eines Patienten (Arztbrief)",
+    "prompt": "Stellen Sie einen orthopädischen Patienten im Rahmen einer Schichtübergabe vor.",
+    "instructions": "Präsentieren Sie: Diagnose, bisherige Behandlung, weiteres Vorgehen.",
+    "prepTime": 120,
+    "talkTime": 180,
+    "tips": "Patient XYZ, 55 Jahre, Zustand nach Hüft-TEP. Wichtig zu wissen ...",
+    "usefulPhrases": [
+      "Ich übergebe Herrn/Frau ..., geboren am ...",
+      "Aufgenommen wurde der Patient wegen ...",
+      "Bisher durchgeführt wurden ...",
+      "Im weiteren Verlauf ist geplant ..."
+    ],
+    "level": "C1",
+    "lessonId": "C1_lesson_14",
+    "taughtInLessonId": "C1_lesson_10",
+    "conceptId": "c1.wirtschaft.verhandlungen",
+    "requiredConcepts": [
+      "b2.prapositionale.verben",
+      "b2.finanzen.wirtschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_11",
+    "level": "C1",
+    "lessonId": "C1_lesson_2",
+    "title": "FSP: Akutes Abdomen",
+    "prompt": "Sie arbeiten als Assistenzarzt in der Notaufnahme. Ein 45-jähriger Patient kommt mit starken Oberbauchschmerzen, Übelkeit und Erbrechen. Der Blutdruck ist 90/60 mmHg. Stellen Sie den Fall Ihrer Oberärztin vor. Nennen Sie Verdachtsdiagnose, Differenzialdiagnosen und Ihr weiteres Vorgehen.",
+    "instructions": "Simulieren Sie die Vorbereitung auf die FSP-Prüfung. Struktur: Patientenvorstellung, Symptome, Befunde, Verdachtsdiagnose, DD, geplante Diagnostik, Therapie.",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "Nutzen Sie die FSP-Struktur: Vorstellung > Symptome > Untersuchungsbefunde > Diagnose > DD > Procedere. Präteritum und Fachvokabular.",
+    "usefulPhrases": [
+      "Der Patient stellte sich mit ... in der Notaufnahme vor.",
+      "Bei der klinischen Untersuchung zeigte sich ...",
+      "Differenzialdiagnostisch kommt ... in Betracht.",
+      "Ich würde folgende Diagnostik einleiten: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_11",
+    "conceptId": "c1.kognitive.linguistik",
+    "requiredConcepts": [
+      "b2.medien",
+      "b2.psychologie"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_12",
+    "level": "C1",
+    "lessonId": "C1_lesson_4",
+    "title": "Patientenberatung: OP-Risiken",
+    "prompt": "Ein 68-jähriger Patient mit symptomatischer Gonarthrose benötigt eine Knie-TEP (Totalendoprothese). Er hat Angst vor dem Eingriff, insbesondere vor Narkoserisiken. Informieren Sie ihn über den Eingriff, die Risiken und die Alternativen in verständlicher Sprache.",
+    "instructions": "Einfühlsam, aber fachlich korrekt. Aufklärung über typische und seltene Komplikationen. Nennen Sie konservative Alternativen. Geben Sie Zeit für Fragen.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Verständliche Sprache, aber Fachbegriffe erklären. KII für Höflichkeit und Abschwächung. Empathische Formulierungen.",
+    "usefulPhrases": [
+      "Ich kann Ihren Wunsch bestens verstehen, dass Sie ...",
+      "Zu den möglichen Komplikationen zaheln ...",
+      "Alternativ zur Operation könnten wir auch ...",
+      "Haben Sie noch Fragen, die ich beantworten soll?"
+    ],
+    "taughtInLessonId": "C1_lesson_12",
+    "conceptId": "c1.jura.rechtsphilosophie",
+    "requiredConcepts": [
+      "b2.recht.gerechtigkeit",
+      "b2.ethik.wissenschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_13",
+    "level": "C1",
+    "lessonId": "C1_lesson_5",
+    "title": "Ethikdiskussion: Therapietreü",
+    "prompt": "Ein Patient mit Typ-2-Diabetes und Hypertonie verweigert trotz mehrfaacher Beratung die Insulin-Therapie und möchte nur mit Homaopathie behandelt werden. Diskutieren Sie die ethische Spannung zwischen Patientenautonomie und ärztlichem Behandlungsauftrag.",
+    "instructions": "Abwägung der ethischen Prinzipien. Wie weit geht die Therapiefreiheit? Wann wird die Nichtbehandlung zur Gefahr? Differenziertes Fazit.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Nutzen Sie die vier Prinzipien der Medizinethik (Autonomie, Benefizienz, Nicht-Schaden, Gerechtigkeit). KII für Abwägungen.",
+    "usefulPhrases": [
+      "Aus ethischer Perspektive stehen hier ... im Konflikt.",
+      "Einerseits respektieren wir die Autonomie des Patienten ...",
+      "Andererseits sind wir als Ärzte dem Prinzip des Nicht-Schadens verpflichtet.",
+      "Eine mögliche Lösung wäre ..."
+    ],
+    "taughtInLessonId": "C1_lesson_13",
+    "conceptId": "c1.medizinethik",
+    "requiredConcepts": [
+      "b2.ethik.wissenschaft",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_14",
+    "level": "C1",
+    "lessonId": "C1_lesson_7",
+    "title": "Vortrag: Evidenzbasierte Medizin",
+    "prompt": "Halten Sie einen 4-minütigen Vortrag über die Bedeutung der evidenzbasierten Medizin (EbM) im klinischen Alltag. Gehen Sie auf die drei Säulen der EbM ein: externe Evidenz, klinische Expertise und Patientenpräferenzen. Nennen Sie konkrete Beispiele.",
+    "instructions": "Eigenständiger Vortrag. Einleitung mit These. Hauptteil mit drei Säulen. Klinische Beispiele. Kritisches Fazit.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Struktur: These > Säulen 1-3 > Praxisbeispiele > Fazit. Nominalstil. Konnektoren für Struktur (zunächst, darüber hinaus, abschliessend).",
+    "usefulPhrases": [
+      "Die evidenzbasierte Medizin stützt sich auf drei zentrale Säulen: ...",
+      "Externe Evidenz allein ist jedoch nicht ausreichend ...",
+      "Ein Beispiel aus der täglichen Praxis ist ...",
+      "Zusammenfassend lässt sich festhalten, dass ..."
+    ],
+    "taughtInLessonId": "C1_lesson_14",
+    "conceptId": "c1.nachhaltigkeitsethik",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.energie.klima"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_15",
+    "level": "C1",
+    "lessonId": "C1_lesson_9",
+    "title": "Interdisziplinäre Übergabe",
+    "prompt": "Sie übergeben eine 82-jährige Patientin (Z. n. Humerusfraktur, Diabetes, leichte Demenz) von der Unfallchirurgie an die Geriatrie. Fassen Sie den relevanten klinischen Verlauf, den aktüllen Stand und die offenen Punkte zusammen.",
+    "instructions": "Strukturierte Übergabe nach SBAR (Situation, Background, Assessment, Recommendation). Vollständig, aber pragnant.",
+    "prepTime": 120,
+    "talkTime": 180,
+    "tips": "SBAR-Struktur. Keine irrelevanten Details. Präteritum für Verlauf. Klare Handlungsempfehlungen.",
+    "usefulPhrases": [
+      "Zur Situation: Die Patientin wurde vor sechs Tagen mit einer ... aufgenommen.",
+      "Zum Hintergrund: Relevant sind ...",
+      "Meine Einschätzung: Die Wundheilung zeigt ...",
+      "Ich empfehle folgende weitere Schritte: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_15",
+    "conceptId": "c1.kulturkritik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_16",
+    "level": "C1",
+    "lessonId": "C1_lesson_10",
+    "title": "Rollenspiel: Diagnostische Unsicherheit",
+    "prompt": "Einem Patienten mit unklaren Oberbauchbeschwerden konnten Sie nach umfangreicher Diagnostik (Gastroskopie, Sono, CT, Labor) keine eindeutige Ursache zuordnen. Erläutern Sie dem Patienten die Situation und besprechen Sie das weitere Vorgehen.",
+    "instructions": "Ehrliche, aber beruhigende Kommunikation. Erklaren Sie, was bereits ausgeschlossen wurde. Skizzieren Sie den weiteren Diagnosepfad. Geben Sie realistische Erwartungen.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "KII für vorsichtige Formulierungen (es könnte sich um ... handeln). Verständliche Sprache. Was-wurde-bereits-getan-Struktur.",
+    "usefulPhrases": [
+      "Die bisherigen Untersuchungen haben leider keine eindeutige Ursache gezeigt.",
+      "Wir konnten jedoch folgende ernste Erkrankungen ausschliessen: ...",
+      "Als nächste Schritte würde ich vorschlagen ...",
+      "Bitte melden Sie sich, wenn ..."
+    ],
+    "taughtInLessonId": "C1_lesson_16",
+    "conceptId": "c1.philosophie.existenz",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_17",
+    "level": "C1",
+    "lessonId": "C1_lesson_11",
+    "title": "Diskussion: KI in der Klinik",
+    "prompt": "Ihr Krankenhaus plant die Einführung eines KI-gestützten Entscheidungsunterstützungssystems in der Notaufnahme. Diskutieren Sie mit Kollegen die Chancen und Risiken. Gehen Sie auf Diagnosegenauigkeit, Arbeitsentlastung, Haftungsfragen und die Rolle des Arztes ein.",
+    "instructions": "Sachliche Diskussion auf Fachniveau. Vor- und Nachteile abwägen. Eigene Position entwickeln. Auf Gegenargumente eingehen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Indirekte Rede für Kritikpunkte. KII für Bewertungen. Strukturierte Argumentation mit Konnektoren.",
+    "usefulPhrases": [
+      "Ein wesentlicher Vorteil von KI-Systemen liegt in ...",
+      "Kritisch anzumerken ist jedoch ...",
+      "Aus haftungsrechtlicher Sicht stellt sich die Frage ...",
+      "Ich bin überzeugt, dass ..."
+    ],
+    "taughtInLessonId": "C1_lesson_17",
+    "conceptId": "c1.psycholinguistik",
+    "requiredConcepts": [
+      "b2.psychologie",
+      "b2.medien"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_18",
+    "level": "C1",
+    "lessonId": "C1_lesson_15",
+    "title": "Palliativgespräch: Angehörige",
+    "prompt": "Ein 78-jähriger Patient mit metastasiertem Pankreaskarzinom hat sich gegen eine weitere Chemotherapie entschieden. Die Tochter ist verzweifelt und möchte, dass 'alles getan wird'. Führen Sie ein Gespräch mit der Tochter über die Palliativversorgung.",
+    "instructions": "Empathisch, aber klar. Den Willen des Patienten respektieren. Über Palliativmöglichkeiten aufklären. Der Tochter Raum für Emotionen geben.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Empathische Gesprächsführung. Aktives Zuhoren zeigen. KII für sensible Formulierungen. Fachbegriffe der Palliativmedizin erklären.",
+    "usefulPhrases": [
+      "Ich kann Ihre Sorge um Ihren Vater sehr gut verstehen.",
+      "Die Entscheidung Ihres Vaters verdient unseren Respekt.",
+      "Wir können folgende palliativmedizinische Massnahmen anbieten: ...",
+      "Wir werden Ihren Vater bestmöglich begleiten, das verspreche ich Ihnen."
+    ],
+    "taughtInLessonId": "C1_lesson_18",
+    "conceptId": "c1.politische.philosophie",
+    "requiredConcepts": [
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_19",
+    "level": "C1",
+    "lessonId": "C1_lesson_16",
+    "title": "Fehlergespräch: Verspätete Diagnose",
+    "prompt": "Bei einem Patienten mit Rückenschmerzen wurde ein Wirbelsäulenkarzinom erst nach vier Monaten diagnostiziert, da die initiale Bildgebung nicht ausreichend befundet wurde. Sie müssen das Gespräch mit dem Patienten führen.",
+    "instructions": "Offenlegung nach den Kriterien der ärztlichen Fehlerkultur. Sachlich, ehrlich, entschuldigend. Welche Konseqünzen hat die Verspätung? Weiteres Vorgehen?",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "KII für Abschwächung. Keine Schuldzuweisungen. Offenheit und Transparenz. Juristische Sorgfalt in der Wortwahl.",
+    "usefulPhrases": [
+      "Ich möchte mich zunächst bei Ihnen entschuldigen, dass ...",
+      "Im Rahmen der Qualitätssicherung haben wir folgendes festgestellt: ...",
+      "Diese Verzögerung hatte voraussichtlich folgende Auswirkungen: ...",
+      "Wir werden folgende Massnahmen ergreifen, um ..."
+    ],
+    "taughtInLessonId": "C1_lesson_19",
+    "conceptId": "c1.tempus.aspekt",
+    "requiredConcepts": [
+      "b2.satzbau",
+      "b2.modalverben.subjektiv"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_20",
+    "level": "C1",
+    "lessonId": "C1_lesson_17",
+    "title": "Vortrag: Ärztemangel",
+    "prompt": "In Deutschland fehlen bis 2030 voraussichtlich über 30.000 Ärzte. Halten Sie einen Vortrag über die Ursachen des Ärztemangels, die Folgen für die Patientenversorgung und mögliche Lösungsstrategien aus Ihrer Perspektive als junger Arzt.",
+    "instructions": "Ursachenanalyse. Konkrete Folgen. Eigene Erfahrungen einbringen. Lösungsvorschläge. Kritisches, aber konstruktives Fazit.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Vortragsstruktur: Einleitung mit Problemaufriss > Ursachen > Folgen > Lösungen > Fazit. Nominalstil, Konnektoren.",
+    "usefulPhrases": [
+      "Der Ärztemangel in Deutschland hat mehrere Ursachen: ...",
+      "Die Folgen für die Patientenversorgung zeigen sich in ...",
+      "Ein vielversprechender Ansatz wäre ...",
+      "Abschliessend möchte ich betonen, dass ..."
+    ],
+    "taughtInLessonId": "C1_lesson_20",
+    "conceptId": "c1.wissenschaftssoziologie",
+    "requiredConcepts": [
+      "b2.ethik.wissenschaft",
+      "b2.digitalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_21",
+    "level": "C1",
+    "lessonId": "C1_lesson_18",
+    "title": "FSP: Verdacht auf Lungenembolie",
+    "prompt": "Sie sind Assistenzarzt in der Notaufnahme. Eine 55-jährige Patientin mit Z. n. Knie-TEP vor 10 Tagen kommt mit akuter Dyspnö, Tachypnö und Thoraxschmerz. Der D-Dimer ist erhöht. Stellen Sie den Fall Ihrer Oberärztin vor inklusive Verdachtsdiagnose und geplantem Procedere.",
+    "instructions": "Struktur: Patientenvorstellung, Anamnese, Symptome, klinische Untersuchung, Verdachtsdiagnose, geplante Diagnostik und Therapie. Präteritum.",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "FSP-Struktur konseqünt einhalten. Fachtermini (Lungenembolie, Tachypnö, D-Dimer). Begründung der Diagnostik (CT-Angio, Echokardiographie).",
+    "usefulPhrases": [
+      "Die Patientin stellte sich mit plötzlich aufgetretener Dyspnö vor.",
+      "Als Risikofaktor ist die Immobilisation nach Knie-TEP zu nennen.",
+      "Ich vermute eine Lungenembolie und würde folgende Diagnostik veranlassen: ...",
+      "Therapeutisch würde ich zunächst eine Antikoagulation mit ... einleiten."
+    ],
+    "taughtInLessonId": "C1_lesson_21",
+    "conceptId": "c1.semantik.pragmatik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_22",
+    "level": "C1",
+    "lessonId": "C1_lesson_19",
+    "title": "Patientenberatung: Antikoagulation",
+    "prompt": "Ein 70-jähriger Patient mit Vorhofflimmern benötigt eine daürhafte Antikoagulation mit Apixaban. Der Patient hat Bedenken wegen Blutungsrisiken, insbesondere nachdem sein Nachbar ein Magengeschwür unter Marcumar entwickelt hat. Klären Sie den Patienten auf.",
+    "instructions": "Risiken und Nutzen gegenüberstellen. Vergleich der Antikoagulanzien. Blutungszeichen erklären. Therapietreü fördern.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Verständliche Sprache, aber Fachbegriffe erklären. KII für Höflichkeit. Empathie zeigen. CHA2DS2-VASc-Score und HAS-BLED erwähnen.",
+    "usefulPhrases": [
+      "Ich verstehe Ihre Bedenken, allerdings überwiegt bei Vorhofflimmern der Nutzen der Blutverdünnung deutlich.",
+      "Das Risiko einer schweren Blutung liegt bei ...",
+      "Neüre Gerinnungshemmer wie Apixaban haben im Vergleich zu Marcumar ...",
+      "Worauf Sie achten sollten, sind folgende Blutungszeichen: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_22",
+    "conceptId": "c1.mediation.konflikt",
+    "requiredConcepts": [
+      "b2.prapositionale.verben",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_23",
+    "level": "C1",
+    "lessonId": "C1_lesson_20",
+    "title": "Diskussion: Ressourcenverteilung",
+    "prompt": "In Ihrer Klinik soll die Intensivstation von 12 auf 8 Betten reduziert werden. Die Chirurgie fordert den Erhalt der Betten, die Verwaltung verweist auf Kostendruck. Diskutieren Sie diese Situation mit Kollegen. Während Sie das Patientenschicksal erlautern und praktische Lösungen vorschlagen.",
+    "instructions": "Sachliche, strukturierte Diskussion. Medizinische und ökonomische Perspektive berücksichtigen. Konkrete Lösungsvorschläge.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "KII für Vorschläge. Während für Kontraste. Konnektoren für Argumentation. Betriebswirtschaftliche und medizinische Fachbegriffe.",
+    "usefulPhrases": [
+      "Aus medizinischer Sicht wäre eine Reduktion der Intensivbetten problematisch, weil ...",
+      "Demgegenüber steht der ökonomische Druck, dem die Verwaltung ausgesetzt ist.",
+      "Ein möglicher Kompromiss wäre ...",
+      "Ich schlage vor, zunächst eine Auslastungsanalyse durchzuführen, um ..."
+    ],
+    "taughtInLessonId": "C1_lesson_23",
+    "conceptId": "c1.digital.humanities",
+    "requiredConcepts": [
+      "b2.digitalisierung",
+      "b2.medien"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_24",
+    "level": "C1",
+    "lessonId": "C1_lesson_21",
+    "title": "Vortrag: Wissenschaftliche Redlichkeit",
+    "prompt": "Ein Kollege aus Ihrer Abteilung hat auffällige Daten in einer kürzlich publizierten Studie. Es besteht der Verdacht auf wissenschaftliches Fehlverhalten. Halten Sie einen Vortrag über die Grundsätze der guten wissenschaftlichen Praxis, Fehlverhalten und dessen Konseqünzen.",
+    "instructions": "Definition guter wissenschaftlicher Praxis. Formen von Fehlverhalten (Fabrication, Falsification, Plagiarism). Konseqünzen. Präventionsmassnahmen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Struktur: Grundsätze > Fehlverhalten > Folgen > Prävention. Konjunktiv I für indirekte Rede. Nominalstil für Abstraktion.",
+    "usefulPhrases": [
+      "Die gute wissenschaftliche Praxis stützt sich auf folgende Grundsätze: ...",
+      "Unter wissenschaftlichem Fehlverhalten versteht man ...",
+      "Die Konseqünzen reichen von ... bis zu ...",
+      "Zur Prävention wäre eine verpflichtende Schulung in ... sinnvoll."
+    ],
+    "taughtInLessonId": "C1_lesson_24",
+    "conceptId": "c1.kunst.aesthetik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.nominalstil"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_25",
+    "level": "C1",
+    "lessonId": "C1_lesson_22",
+    "title": "Angehörigengespräch: Therapiezieländerung",
+    "prompt": "Ein 88-jähriger Patient mit schwerer Demenz und Z. n. Apoplex wird mit einer Aspirationspneumonie auf die Intensivstation aufgenommen. Die Kinder sind uneins: Der Sohn möchte alle Massnahmen, die Tochter möchte den Vater nicht leiden sehen. Führen Sie das Gespräch.",
+    "instructions": "Empathische Gesprächsführung. Medizinische Prognose darlegen. Therapieziele erklären. Konsensfindung unterstützen.",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "KII für sensible Vorschläge. Keine Bewertung der Positionen. Patientenverfügung thematisieren. Palliativperspektive anbieten.",
+    "usefulPhrases": [
+      "Ich kann beide Positionen sehr gut nachvollziehen.",
+      "Aus medizinischer Sicht ist die Prognose leider ...",
+      "Eine Therapiezieländerung würde bedeuten, dass wir ...",
+      "Wir können sicherstellen, dass Ihr Vater keine Schmerzen erleidet."
+    ],
+    "taughtInLessonId": "C1_lesson_25",
+    "conceptId": "c1.globale.gerechtigkeit",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_26",
+    "level": "C1",
+    "lessonId": "C1_lesson_23",
+    "title": "Diskussion: Entlassungsmanagement",
+    "prompt": "Ein 76-jähriger Patient nach Huft-TEP benötigt eine Anschlussheilbehandlung (AHB). Die Sozialarbeiterin sagt, es gibt keinen freien Platz, die Physiotherapie hält eine stationäre Reha für medizinisch notwendig, der Patient möchte nach Hause. Diskutieren Sie die Situation im Team.",
+    "instructions": "Verschiedene Perspektiven darstellen. Medizinische Notwendigkeit vs. Patientenwunsch vs. Ressourcen. Gemeinsame Entscheidung finden.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "SBAR-Struktur. KII für Vorschläge. Fachtermini der Rehabilitation. Vermittlung zwischen Positionen.",
+    "usefulPhrases": [
+      "Aus physiotherapeutischer Sicht ist eine stationäre AHB dringend indiziert, weil ...",
+      "Das Problem der fehlenden Kapazitäten ist uns bekannt.",
+      "Eine Alternative zur stationären AHB wäre eine ambulante ...",
+      "Können wir dem Patienten folgenden Kompromiss vorschlagen: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_1",
+    "conceptId": "c1.argumentation.advanced",
+    "requiredConcepts": [
+      "b2.konnektoren.formal",
+      "b2.nominalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_27",
+    "level": "C1",
+    "lessonId": "C1_lesson_24",
+    "title": "FSP: Postoperative Komplikation",
+    "prompt": "Sie haben Nachtdienst. Ein 62-jähriger Patient wurde vor vier Stunden appendektomiert und hat jetzt akut einsetzende Unterbauchschmerzen, einen Hb-Abfall von 2 g/dL und einen Blutdruck von 85/50 mmHg. Sie vermuten eine Nachblutung. Übergeben Sie den Fall Ihrer Oberärztin.",
+    "instructions": "Akute Vorstellung nach SBAR. Situation, Background, Assessment, Recommendation. Dringlichkeit kommunizieren.",
+    "prepTime": 120,
+    "talkTime": 180,
+    "tips": "SBAR-Dringlichkeitsstruktur. Präteritum. Klare Handlungsaufforderung. Relevante Vitalparameter nennen.",
+    "usefulPhrases": [
+      "Ich rufe wegen einer akuten Versphäcterung bei einem postoperativen Patienten an.",
+      "Der Patient wurde vor vier Stunden appendektomiert und hat jetzt ...",
+      "Ich vermute eine Nachblutung aufgrund des Hb-Abfalls und des Blutdruckabfalls.",
+      "Ich empfehle eine sofortige Sono-Kontrolle und die Vorbereitung des OPs."
+    ],
+    "taughtInLessonId": "C1_lesson_2",
+    "conceptId": "c1.recht.ethik",
+    "requiredConcepts": [
+      "b2.indirekte.rede",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_28",
+    "level": "C1",
+    "lessonId": "C1_lesson_25",
+    "title": "Ethikdiskussion: Genetische Zufallsbefunde",
+    "prompt": "Bei einer genetischen Diagnostik zur Klärung einer familiären Hypercholesterinamie wird zufällig eine Prädisposition für die Huntington-Krankheit gefunden. Der Patient hat nicht nach diesem Risiko gefragt. Diskutieren Sie, ob Sie den Zufallsbefund mitteilen müssen.",
+    "instructions": "Ethische Prinzipien abwägen. Rechtliche Lage darstellen. Patientenwille vs. Informationspflicht. Differenziertes Fazit.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Indirekte Rede für Rechtslage. KII für ethische Abwägungen. Genetische Fachtermini.",
+    "usefulPhrases": [
+      "Aus ethischer Sicht kollidieren hier das Recht auf Nichtwissen mit der ärztlichen Informationspflicht.",
+      "Das Gendiagnostikgesetz schreibt vor, dass ...",
+      "Eine mögliche Vorgehensweise wäre, den Patienten zu fragen, ob er ...",
+      "Ich würde mich in diesem Fall für ... entscheiden, weil ..."
+    ],
+    "taughtInLessonId": "C1_lesson_3",
+    "conceptId": "c1.medizin.gesundheit",
+    "requiredConcepts": [
+      "b2.passive.alternatives",
+      "b2.prapositionale.verben"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_29",
+    "level": "C1",
+    "lessonId": "C1_lesson_1",
+    "title": "Vortrag: Burnout-Prävention",
+    "prompt": "Studien zeigen, dass über 40 Prozent der Ärzte in Deutschland Symptome eines Burnouts aufweisen. Halten Sie einen Vortrag vor jungen Kollegen über Ursachen, Warnsignale und Präventionsstrategien des ärztlichen Burnouts.",
+    "instructions": "Problemdarstellung. Ursachenanalyse. Warnsignale. Präventionsstrategien auf individüller und systemischer Ebene. Persönliche Erfahrung einbringen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Vortragsstruktur mit klarem roten Faden. Verständliche Sprache. Persönliche Ebene nicht vergessen. Konstruktiver Ausblick.",
+    "usefulPhrases": [
+      "Burnout ist unter Ärzten alarmierend verbreitet: ...",
+      "Zu den Hauptursachen zailaht ...",
+      "Erste Warnsignale sind ...",
+      "Auf persönlicher Ebene hilft mir ..."
+    ],
+    "taughtInLessonId": "C1_lesson_4",
+    "conceptId": "c1.globalisierung.nachhaltigkeit",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.globalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_30",
+    "level": "C1",
+    "lessonId": "C1_lesson_3",
+    "title": "Rollenspiel: Patientenbeschwerde",
+    "prompt": "Ein Patient beschwert sich persönlich bei Ihnen, dass er nach einer ambulanten Behandlung keine verständliche Aufklärung erhalten hat und sich über die Wartezeit von drei Stunden ärgert. Reagieren Sie angemessen auf die Beschwerde.",
+    "instructions": "Empathie zeigen. Beschwerde ernst nehmen. Kommunikationsdefizit analysieren. Konkrete Besserung zusagen. Professionelle Distanz wahren.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Aktives Zuhoren. KII für Höflichkeit und Entschuldigung. Keine Rechtfertigungen. Lösungsorientiert.",
+    "usefulPhrases": [
+      "Ich kann Ihren Ärger sehr gut verstehen und möchte mich dafür entschuldigen, dass ...",
+      "Ich werde den Vorgang intern prufen und Ihnen innerhalb von ... eine Rückmeldung geben.",
+      "Was die Aufklärung betrifft, möchte ich Ihnen die Gelegenheit geben, alle offenen Fragen zu klären.",
+      "Wir werden aus diesem Vorfall lernen und ..."
+    ],
+    "taughtInLessonId": "C1_lesson_5",
+    "conceptId": "c1.rhetorik.schreiben",
+    "requiredConcepts": [
+      "b2.satzbau",
+      "b2.nominalstil"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_31",
+    "level": "C1",
+    "lessonId": "C1_lesson_2",
+    "title": "FSP: Akuter Thoraxschmerz",
+    "prompt": "Ein 58-jähriger Patient mit Diabetes und Hypertonie kommt mit akutem Thoraxschmerz, der seit 30 Minuten besteht, in die Notaufnahme. Der Blutdruck ist 150/90 mmHg, das EKG zeigt ST-Hebungen in II, III und aVF. Stellen Sie den Fall Ihrer Oberärztin vor.",
+    "instructions": "Strukturierte Fallvorstellung: Patient, Symptome, Vitalparameter, EKG-Befund, Verdachtsdiagnose, DD, geplante Akuttherapie. FSP-Stil.",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "FSP-Struktur. Zeitkritische Dringlichkeit kommunizieren. Präteritum. Klares Procedere.",
+    "usefulPhrases": [
+      "Der Patient stellte sich mit akutem Thoraxschmerz vor, der seit 30 Minuten besteht.",
+      "Im EKG zeigen sich ST-Hebungen in den inferioren Ableitungen.",
+      "Ich vermute einen akuten inferioren Myokardinfarkt.",
+      "Ich würde eine sofortige Koronarangiographie veranlassen und ..."
+    ],
+    "taughtInLessonId": "C1_lesson_6",
+    "conceptId": "c1.wissenschaft.schreiben",
+    "requiredConcepts": [
+      "b2.nominalisierung",
+      "b2.ethik.wissenschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_32",
+    "level": "C1",
+    "lessonId": "C1_lesson_4",
+    "title": "Patientenberatung: Therapieverweigerung",
+    "prompt": "Ein 52-jähriger Patient mit einem friih diagnostizierten Nierenzellkarzinom lehnt die empfohlene Nephrektomie ab und möchte alternative Methoden ausprobieren. Sie respektieren seine Entscheidung, möchten ihn aber über die Konseqünzen aufklären.",
+    "instructions": "Respektvoll, aber klar. Prognose mit und ohne OP erläutern. Alternative Methoden fachlich bewerten. Angebot einer Zweitmeinung.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "KII für sensible Formulierungen. Verständliche Sprache. Kein Druck, aber deutliche Worte. Patientenautonomie respektieren.",
+    "usefulPhrases": [
+      "Ich respektiere Ihre Entscheidung, möchte Sie aber bitten, folgende Informationen zu berücksichtigen: ...",
+      "Ohne Operation liegt die prognostizierte Überlebensrate bei ...",
+      "Zu den von Ihnen genannten Alternativen kann ich Ihnen folgende Einschätzung geben: ...",
+      "Ich würde Ihnen dringend empfehlen, vor Ihrer Entscheidung eine Zweitmeinung einzuholen."
+    ],
+    "taughtInLessonId": "C1_lesson_7",
+    "conceptId": "c1.sprachliche.nuancen",
+    "requiredConcepts": [
+      "b2.modalverben.subjektiv",
+      "b2.indirekte.rede"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_33",
+    "level": "C1",
+    "lessonId": "C1_lesson_5",
+    "title": "Diskussion: Evidenzhierarchie",
+    "prompt": "Ein Kollege zitiert in der Morgenbesprechung eine Fallserie als Beleg für eine Therapieentscheidung. Sie widersprechen, da es randomisierte kontrollierte Studien zum Thema gibt. Diskutieren Sie die Evidenzhierarchie und die Bedeutung verschiedener Studientypen für die klinische Entscheidungsfindung.",
+    "instructions": "Sachliche, kollegiale Diskussion. Evidenzpyramide. Kritik an methodischen Schwachstellen. Klinische Relevanz verschiedener Studientypen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Indirekte Rede für Kollegen-Zitat. KII für Höflichkeit. Fachtermini der Evidence-based Medicine. Konnektoren für Argumentation.",
+    "usefulPhrases": [
+      "Ich möchte kurz auf die methodische Qualität der zitierten Studie eingehen.",
+      "Auf der Evidenzpyramide sind Fallserien auf der Stufe ... angesiedelt.",
+      "Im Vergleich dazu haben randomisierte kontrollierte Studien den Vorteil, dass ...",
+      "Für die klinische Entscheidung wäre es meiner Ansicht nach sinnvoller, ..."
+    ],
+    "taughtInLessonId": "C1_lesson_8",
+    "conceptId": "c1.diskursanalyse",
+    "requiredConcepts": [
+      "b2.medien",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_34",
+    "level": "C1",
+    "lessonId": "C1_lesson_6",
+    "title": "Rollenspiel: Inzidenteller Zufallsbefund",
+    "prompt": "Bei einer routinemässigen CT-Untersuchung wegen Verdacht auf Nierensteine wurde zufällig ein solitärer Lungenrundherd entdeckt. Der Patient ist besorgt. Erläutern Sie den Befund, die nächsten diagnostischen Schritte und die Wahrscheinlichkeit einer Bösartigkeit.",
+    "instructions": "Verständliche, aber ehrliche Aufklärung. Wahrscheinlichkeiten nennen. Weitere Diagnostik (CT-Verlauf, PET-CT, Biopsie) erläutern. Verunsicherung auffangen.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Emitterung stoẞen nicht durch Übermaẞ an Informationen. Fachbegriffe erklären. Klaren Fahrplan geben. Raum für Fragen lassen.",
+    "usefulPhrases": [
+      "Wir haben bei der CT-Untersuchung einen Zufallsbefund entdeckt, der nichts mit Nierensteinen zu tun hat.",
+      "Es handelt sich um einen Lungenrundherd. Das klingt zunächst beunruhigend, aber die meisten dieser Herde sind gutartig.",
+      "Um sicherzugehen, würde ich folgende weitere Untersuchungen empfehlen: ...",
+      "Wir werden Sie selbstverständlich durch den gesamten Prozess begleiten."
+    ],
+    "taughtInLessonId": "C1_lesson_9",
+    "conceptId": "c1.literatur.interpretation",
+    "requiredConcepts": [
+      "b2.nominalstil",
+      "b2.kultur.leben"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_35",
+    "level": "C1",
+    "lessonId": "C1_lesson_7",
+    "title": "Interdisziplinäre Besprechung: Geriatrie",
+    "prompt": "Eine 84-jährige Patientin mit multiplen Vorerkrankungen (Herzinsuffizienz, Niereninsuffizienz, Osteoporose, beginnende Demenz) wurde nach einem Huftnahen Bruch operiert. Besprechen Sie im Team die weitere Versorgung: Rehabilitation, Medikationsmanagement, Sturzprophylaxe.",
+    "instructions": "SBAR-Struktur. Komplexität reduzieren. Klare Handlungsempfehlungen für jede Disziplin. Geriatrisches Assessment erwahnen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Interdisziplinäre Perspektive. Fachtermini der Geriatrie. Pragnanz. KII für Vorschläge.",
+    "usefulPhrases": [
+      "Aus internistischer Sicht ist zunächst die kardiale Fuhrung zu optimieren, weil ...",
+      "Für die Sturzprophylaxe wäre ein geriatrisches Assessment mit ... sinnvoll.",
+      "Ich schlage vor, die Medikation auf potentiell inadquate Wirkstoffe zu prufen.",
+      "Die physiotherapeutische Mobilisation sollte ..."
+    ],
+    "taughtInLessonId": "C1_lesson_10",
+    "conceptId": "c1.wirtschaft.verhandlungen",
+    "requiredConcepts": [
+      "b2.prapositionale.verben",
+      "b2.finanzen.wirtschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_36",
+    "level": "C1",
+    "lessonId": "C1_lesson_9",
+    "title": "Vortrag: Qualitätsindikatoren",
+    "prompt": "Halten Sie einen Vortrag über die Bedeutung von Qualitätsindikatoren im Krankenhaus. Gehen Sie auf administrative und medizinische Indikatoren ein, erklären Sie deren Aussagekraft und Grenzen. Beziehen Sie sich auf konkrete Beispiele aus Ihrem Klinikalltag.",
+    "instructions": "Vortragsstruktur mit Einleitung, Hauptteil und Fazit. Beispiele aus der Praxis. Kritische Würdigung des Indikatorensystems.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Vortragsstil. Nominalisierungen. Konnektoren. Fachtermini der Qualitätssicherung (QSR, QI, AQUA).",
+    "usefulPhrases": [
+      "Qualitätsindikatoren dienen dazu, die Versorgungsqualität messbar zu machen.",
+      "Ein Beispiel aus unserem Haus ist der Indikator ...",
+      "Die Aussagekraft von Qualitätsindikatoren wird jedoch eingeschränkt durch ...",
+      "Zusammenfassend lässt sich sagen, dass Qualitätsmessung sinnvoll, aber nicht selbsterklärend ist."
+    ],
+    "taughtInLessonId": "C1_lesson_11",
+    "conceptId": "c1.kognitive.linguistik",
+    "requiredConcepts": [
+      "b2.medien",
+      "b2.psychologie"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_37",
+    "level": "C1",
+    "lessonId": "C1_lesson_10",
+    "title": "Ethikdiskussion: Screening-Überdiagnostik",
+    "prompt": "Ein neues Screening-Programm zur Früherkennung von Prostatakarzinomen mittels PSA-Test führt zu einer hohen Rate von Überdiagnosen und Übertherapien. Diskutieren Sie den Nutzen des Screenings gegen die Risiken der Überdiagnostik.",
+    "instructions": "Ethische Prinzipien abwägen. Nutzen des Screenings für die Bevölkerung vs. individülle Belastung. Differenziertes Fazit.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Zahlen und Fakten nennen (Number needed to screen). Indirekte Rede für Leitlinien. KII für Bewertungen.",
+    "usefulPhrases": [
+      "Das PSA-Screening reduziert die Prostatakrebs-Mortalität um ...",
+      "Dem steht eine erhebliche Überdiagnoserate von ... gegenüber.",
+      "Das ethische Dilemma besteht darin, dass ...",
+      "Meiner Meinung nach sollte die Entscheidung ..."
+    ],
+    "taughtInLessonId": "C1_lesson_12",
+    "conceptId": "c1.jura.rechtsphilosophie",
+    "requiredConcepts": [
+      "b2.recht.gerechtigkeit",
+      "b2.ethik.wissenschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_38",
+    "level": "C1",
+    "lessonId": "C1_lesson_11",
+    "title": "Angehörigengespräch: Delir",
+    "prompt": "Ein 80-jähriger Patient hat nach einer Huft-OP ein postoperatives Delir entwickelt. Er ist verwirrt, aggressiv und versucht aus dem Bett zu steigen. Die Tochter ist verunsichert. Sie müssen die Situation erklären und Massnahmen (Fixierung, Medikation) mit den Angehörigen besprechen.",
+    "instructions": "Delir als vorübergehenden Zustand erklären. Ursachen und Behandlung. Sicherheitsmassnahmen begründen. Beruhigende, fachlich fundierte Gesprächsführung.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Empathie und Fachlichkeit verbinden. Delir als passager erklären. Fixierung als letzte Massnahme darstellen. Verständliche Sprache.",
+    "usefulPhrases": [
+      "Ihr Vater leidet unter einem postoperativen Delir. Das ist ein vorübergehender Verwirrtheitszustand, der nach grossen Operationen häufiger vorkommt.",
+      "Die Unruhe lässt sich in der Regel mit Medikamenten gut behandeln.",
+      "Aus Sicherheitsgründen müssen wir leider vorübergehend ...",
+      "Wir prufen täglich, ob die Massnahmen noch notwendig sind."
+    ],
+    "taughtInLessonId": "C1_lesson_13",
+    "conceptId": "c1.medizinethik",
+    "requiredConcepts": [
+      "b2.ethik.wissenschaft",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_39",
+    "level": "C1",
+    "lessonId": "C1_lesson_12",
+    "title": "Diskussion: Interessenkonflikte",
+    "prompt": "Ein Pharmaunternehmen sponsert eine Studie in Ihrer Klinik zur Wirksamkeit eines neuen Antihypertensivums. Der Hauptprüfer erhält ein hohes Honorar. Diskutieren Sie mit Kollegen, ob dieser Interessenkonflikt die Glaubwürdigkeit der Studie beeinträchtigt.",
+    "instructions": "Sachliche Diskussion. Verschiedene Arten von Interessenkonflikten (finanziell, akademisch). Massnahmen zur Transparenz. Eigene Position.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Fachtermini der Forschungsethik. Indirekte Rede. KII für Bewertungen. Differenzierte Argumentation.",
+    "usefulPhrases": [
+      "Interessenkonflikte sind in der medizinischen Forschung weit verbreitet.",
+      "Finanzielle Verflechtungen können die Objektivität beeinflussen, auch wenn ...",
+      "Transparenz ist der wichtigste Schutz vor Verzerrungen: ...",
+      "Ich wäre dafür, dass wir als Klinik eine klare Richtlinie zu Interessenkonflikten etablieren."
+    ],
+    "taughtInLessonId": "C1_lesson_14",
+    "conceptId": "c1.nachhaltigkeitsethik",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.energie.klima"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_40",
+    "level": "C1",
+    "lessonId": "C1_lesson_13",
+    "title": "FSP: Verdacht auf Sepsis",
+    "prompt": "Ein 72-jähriger Patient mit Z. n. Harnwegsinfekt vor einer Woche kommt mit Fieber (39.5 Grad C), Tachykardie (110/min), Hypotension (85/50 mmHg) und einem CRP von 180 mg/L. Sie vermuten eine uroseptische Genese. Übergeben Sie den Fall an die Intensivstation.",
+    "instructions": "Akute Vorstellung mit SBAR. Dringlichkeit deutlich machen. QSOFA-Kriterien nennen. Bereits eingeleitete Massnahmen. Anforderung von ITS-Kapazität.",
+    "prepTime": 120,
+    "talkTime": 180,
+    "tips": "SBAR-für-Dringlichkeit. QSOFA-Kriterien. Klare Anforderung. Präteritum und Fachsprache.",
+    "usefulPhrases": [
+      "Ich melde einen septischen Patienten zur Übernahme auf die Intensivstation.",
+      "Der Patient erfüllt zwei von drei qSOFA-Kriterien: ...",
+      "Ich habe bereits folgende Massnahmen eingeleitet: ...",
+      "Ich bitte um Übernahme und Einleitung der fokussierten Sepsis-Therapie."
+    ],
+    "taughtInLessonId": "C1_lesson_15",
+    "conceptId": "c1.kulturkritik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_41",
+    "level": "C1",
+    "lessonId": "C1_lesson_15",
+    "title": "FSP: Akutes neurologisches Defizit",
+    "prompt": "Ein 66-jähriger Patient mit Vorhofflimmern und arterieller Hypertonie wird mit akuter Hemiparese rechts und Sprechstörung in die Notaufnahme gebracht. Der Symptombeginn liegt 90 Minuten zurück. Stellen Sie den Fall Ihrer Oberärztin vor.",
+    "instructions": "Strukturierte FSP-Vorstellung. Zeitkritische Symptomatik. NIHSS-Score oder klinische Beschreibung. Zeitfenster für Lyse. CT-Indikation.",
+    "prepTime": 180,
+    "talkTime": 300,
+    "tips": "FSP-Struktur mit Dringlichkeit. Zeitangaben prazise. NIHSS-Vokabular. Klare Forderung nach CT und Lyse-Prüfung.",
+    "usefulPhrases": [
+      "Der Patient wurde mit akuter Hemiparese rechts und Aphasie eingeliefert.",
+      "Der Symptombeginn war vor ca. 90 Minuten, sodass das Lyse-Zeitfenster noch offen ist.",
+      "Ich habe bereits ein CT Schädel veranlasst, um eine Blutung auszuschliessen.",
+      "Bei Ausschluss einer intrakraniellen Blutung würde ich die Lyse-Therapie einleiten."
+    ],
+    "taughtInLessonId": "C1_lesson_16",
+    "conceptId": "c1.philosophie.existenz",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_42",
+    "level": "C1",
+    "lessonId": "C1_lesson_16",
+    "title": "Patientenberatung: Reha nach Huft-OP",
+    "prompt": "Ein 72-jähriger Patient steht vor der Implantation einer Huft-TEP. Er erwartet, dass er nach zwei Wochen wieder Golf spielen kann. Klären Sie ihn über den realistischen Heilungsverlauf, die Rehabilitationsdaür und die Belastungsgrenzen auf.",
+    "instructions": "Realistische Erwartungen setzen. Phase der Rehabilitation erklären (stationär, ambulant). Belastungsaufbau. Komplikationsmöglichkeiten. Positive, aber ehrliche Perspektive.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Empathie, aber Realitätssinn. Heilungsphasen in verständlicher Sprache. KII für vorsichtige Prognosen.",
+    "usefulPhrases": [
+      "Ich freue mich, dass Sie nach der OP wieder aktiv sein möchten.",
+      "Der Heilungsverlauf nach einer Huft-TEP gliedert sich in mehrere Phasen: ...",
+      "Golf wäre frühestens nach drei bis vier Monaten wieder realistisch.",
+      "Wichtig ist, dass Sie die Belastung langsam steigern und die Physiotherapie konseqünt durchführen."
+    ],
+    "taughtInLessonId": "C1_lesson_17",
+    "conceptId": "c1.psycholinguistik",
+    "requiredConcepts": [
+      "b2.psychologie",
+      "b2.medien"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_43",
+    "level": "C1",
+    "lessonId": "C1_lesson_17",
+    "title": "Vortrag: Patient-Reported Outcomes",
+    "prompt": "Halten Sie einen Vortrag über die Bedeutung von Patient-Reported Outcome Measures (PROMs) in der klinischen Forschung und Qualitätssicherung. Erklaren Sie, was PROMs sind, welche Instrumente es gibt und warum sie die klassischen klinischen Endpunkte erganzen.",
+    "instructions": "Definition und Abgrenzung. Instrumente (EQ-5D, SF-36, etc.). Vorteile und Grenzen. Implementierung im Klinikalltag.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Wissenschaftlicher Vortragsstil. Fachtermini. Vor- und Nachteile abwägen. Praxisbeispiele nennen.",
+    "usefulPhrases": [
+      "Patient-Reported Outcome Measures erfassen die gesundheitsbezogene Lebensqualität aus Patientensicht.",
+      "Im Gegensatz zu klassischen klinischen Endpunkten ...",
+      "Zu den häufig verwendeten Instrumenten gehören ...",
+      "In unserem Haus haben wir PROMs wie folgt implementiert: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_18",
+    "conceptId": "c1.politische.philosophie",
+    "requiredConcepts": [
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_44",
+    "level": "C1",
+    "lessonId": "C1_lesson_18",
+    "title": "Rollenspiel: Datenschutz in der Forschung",
+    "prompt": "Ein Patient soll in eine klinische Studie zu Biomarkern bei Herzkrankheiten eingeschlossen werden. Er macht sich Sorgen um den Datenschutz und möchte wissen, was mit seinen Daten passiert. Klären Sie ihn auf.",
+    "instructions": "Verständliche Darstellung der Datenschutzmassnahmen. Pseudonymisierung erklären. Einwilligungserklärung erläutern. Recht auf Widerruf.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "Verständliche Sprache für juristische Begriffe. Einwilligungsfähigkeit sichern. Vertraünsbildende Formulierungen.",
+    "usefulPhrases": [
+      "Ihre Daten werden selbstverständlich nach den strengen Regeln der Datenschutzgrundverordnung behandelt.",
+      "Pseudonymisierung bedeutet, dass Ihre persönlichen Identifikationsmerkmale ...",
+      "Sie haben jederzeit das Recht, Ihre Einwilligung zurückzuziehen, ohne dass Ihnen Nachteile entstehen.",
+      "Die Studie wurde von der Ethikkommission geprüft und genehmigt."
+    ],
+    "taughtInLessonId": "C1_lesson_19",
+    "conceptId": "c1.tempus.aspekt",
+    "requiredConcepts": [
+      "b2.satzbau",
+      "b2.modalverben.subjektiv"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_45",
+    "level": "C1",
+    "lessonId": "C1_lesson_19",
+    "title": "Diskussion: Sektorenübergreifende Versorgung",
+    "prompt": "Ein Patient mit chronischer Herzinsuffizienz wird regelmässig wiederaufgenommen, weil die ambulante Fuhrung nicht ausreichend ist. Diskutieren Sie im Team, wie die Koordination zwischen stationärer, ambulanteer und pflegerischer Versorgung verbessert werden kann.",
+    "instructions": "Problemanalyse. Schnittstellenproblematik. Konkrete Lösungsvorschläge (Überleitungsbogen, Case Management, digitale Plattformen).",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Systemische Perspektive. KII für Vorschläge. Fachtermini der Versorgungsforschung. Praktische Umsetzbarkeit betonen.",
+    "usefulPhrases": [
+      "Das Problem der Wiedereinweisungen bei Herzinsuffizienz hat mehrere Ursachen: ...",
+      "Eine mögliche Lösung wäre die Einführung eines strukturierten Entlassungsmanagements.",
+      "Die elektronische Patientenakte könnte hier die Kommunikation zwischen den Sektoren verbessern.",
+      "Ich schlage vor, ein Case-Management zu etablieren, das ..."
+    ],
+    "taughtInLessonId": "C1_lesson_20",
+    "conceptId": "c1.wissenschaftssoziologie",
+    "requiredConcepts": [
+      "b2.ethik.wissenschaft",
+      "b2.digitalisierung"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_46",
+    "level": "C1",
+    "lessonId": "C1_lesson_20",
+    "title": "Ethikdiskussion: Palliative Sedierung",
+    "prompt": "Ein Patient im Terminalstadium eines Prostatakarzinoms leidet unter unerträglichen tumorbedingten Schmerzen, die mit konventionellen Massnahmen nicht beherrschbar sind. Die Tochter bittet um tiefe Sedierung bis zum Tod. Diskutieren Sie die ethische Zulässigkeit.",
+    "instructions": "Palliative Sedierung vs. aktive Sterbehilfe abgrenzen. Medizinische Indikation. Ethische Prinzipien. Rechtliche Rahmenbedingungen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Paläsive Sedierung ist keine Euthanasie. KII für sensible Bewertungen. Juristische Fachbegriffe. Empathische Differenziertheit.",
+    "usefulPhrases": [
+      "Die palliative Sedierung unterscheidet sich grundlegend von der aktiven Sterbehilfe: ...",
+      "Medizinisch ist die Sedierung indiziert, wenn ...",
+      "Ethisch ist die Massnahme vertretbar, weil das Prinzip der Leidensminderung ...",
+      "Wir werden die Sedierung stets unter sorgfältiger Kontrolle durchführen und regelmässig prufen."
+    ],
+    "taughtInLessonId": "C1_lesson_21",
+    "conceptId": "c1.semantik.pragmatik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_47",
+    "level": "C1",
+    "lessonId": "C1_lesson_21",
+    "title": "Angehörigengespräch: Postoperative Komplikation",
+    "prompt": "Ein 45-jähriger Patient hat nach einer laparoskopischen Cholezystektomie eine Gallengangsverletzung erlitten. Er musste notfallmässig revidiert werden. Die Ehefrau wartet bereits seit Stunden. Informieren Sie sie über den Verlauf und die Prognose.",
+    "instructions": "Ehrlich, aber nicht angstmachend. Komplikation erklären. Bereits durchgeführte Massnahmen. Weiterer Verlauf und Prognose.",
+    "prepTime": 120,
+    "talkTime": 240,
+    "tips": "KII für vorsichtige Prognosen. Keine Beschonigung, aber auch keine Panik. Vertraünsbildend. Raum für Fragen.",
+    "usefulPhrases": [
+      "Ich muss Ihnen mitteilen, dass es bei der Operation Ihres Mannes zu einer Komplikation gekommen ist.",
+      "Die Gallenwege wurden während des Eingriffs verletzt, sodass eine zweite Operation notwendig wurde.",
+      "Der Eingriff ist gut verlaufen, und Ihr Mann befindet sich aktüll auf der Intensivstation.",
+      "Die weiteren Schritte sind: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_22",
+    "conceptId": "c1.mediation.konflikt",
+    "requiredConcepts": [
+      "b2.prapositionale.verben",
+      "b2.politik.gesellschaft"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_48",
+    "level": "C1",
+    "lessonId": "C1_lesson_22",
+    "title": "Diskussion: Medizinstudium-Reform",
+    "prompt": "Der neue Masterplan Medizinstudium 2030 sieht eine stärkere Praxisorientierung und mehr Kommunikationstraining vor. Diskutieren Sie mit Kollegen, ob diese Reform ausreicht, um die Herausforderungen des ärztlichen Berufs zu bewältigen.",
+    "instructions": "Aktülle Defizite im Medizinstudium benennen. Reforminhalte bewerten. Eigene Erfahrungen einbringen. Weitere Verbesserungen vorschlagen.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "KII für Bewertungen. Indirekte Rede für Reforminhalte. Persönliche Erfahrungen als junger Arzt. Konstruktive Kritik.",
+    "usefulPhrases": [
+      "Der Masterplan sieht unter anderem vor, dass ...",
+      "In meiner eigenen Ausbildung habe ich defizitär erlebt, dass ...",
+      "Positiv an der Reform ist ...",
+      "Was meiner Ansicht nach noch fehlt, ist ..."
+    ],
+    "taughtInLessonId": "C1_lesson_23",
+    "conceptId": "c1.digital.humanities",
+    "requiredConcepts": [
+      "b2.digitalisierung",
+      "b2.medien"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_49",
+    "level": "C1",
+    "lessonId": "C1_lesson_23",
+    "title": "Vortrag: Partizipative Entscheidungsfindung",
+    "prompt": "Halten Sie einen Vortrag über das Konzept der partizipativen Entscheidungsfindung (Shared Decision-Making) bei komplexen Therapieentscheidungen, am Beispiel der Prostatakarzinom-Therapie unter Berücksichtigung von Patientenpräferenzen.",
+    "instructions": "Definition und Prinzipien. Beispiel Prostatakarzinom (Operation, Bestrahlung, Active Surveillance). Barrieren und Förderfaktoren. Klinische Umsetzung.",
+    "prepTime": 180,
+    "talkTime": 240,
+    "tips": "Vortragsstil mit klarem Beispiel. Nominalisierungen. Struktur: Theorie > Beispiel > Praxis. Patientenzentrierte Sprache.",
+    "usefulPhrases": [
+      "Shared Decision-Making bedeutet, dass Arzt und Patient gemeinsam auf Augenhöhe entscheiden.",
+      "Am Beispiel des lokal begrenzten Prostatakarzinoms wird die Komplexität deutlich: ...",
+      "Die Rolle des Arztes ist es, die evidenzbasierten Optionen zu erläutern.",
+      "In der Praxis hat sich folgendes Vorgehen bewährt: ..."
+    ],
+    "taughtInLessonId": "C1_lesson_24",
+    "conceptId": "c1.kunst.aesthetik",
+    "requiredConcepts": [
+      "b2.kultur.leben",
+      "b2.nominalstil"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  },
+  {
+    "id": "C1_speak_50",
+    "level": "C1",
+    "lessonId": "C1_lesson_8",
+    "title": "FSP: Polytrauma Übergabe",
+    "prompt": "Ein 28-jähriger Patient wurde nach einem Motorradunfall mit Verdacht auf Milzruptur, Beckenfraktur und offener Unterschenkelfraktur in den Schockraum eingeliefert. Nach erfolgter Stabilisierung und Notfall-OP müssen Sie den Patienten auf die Intensivstation verlegen.",
+    "instructions": "SBAR-Übergabe an die Intensivstation. Primare Diagnosen, durchgeführte Massnahmen, aktülle Vitalparameter, offene Punkte.",
+    "prepTime": 120,
+    "talkTime": 180,
+    "tips": "SBAR-Struktur. Prioritäten setzen. Präteritum für durchgeführte Massnahmen. Klare Anforderungen an die ITS.",
+    "usefulPhrases": [
+      "Ich melde einen polytraumatisierten Patienten zur Übernahme auf die Intensivstation.",
+      "Diagnosen: Milzruptur (Z. n. Splenektomie), Beckenfraktur, offene Unterschenkelfraktur rechts.",
+      "Vitalparameter aktüll: Blutdruck ..., Herzfreqünz ..., unter ...",
+      "Offene Punkte: sekundäre Versorgung der Unterschenkelfraktur in ... und hämodynamisches Monitoring."
+    ],
+    "taughtInLessonId": "C1_lesson_25",
+    "conceptId": "c1.globale.gerechtigkeit",
+    "requiredConcepts": [
+      "b2.nachhaltigkeit",
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "rubric": [
+      "Inhalt: Wurden alle geforderten Punkte behandelt? 0-4",
+      "Praesentation: War der Vortrag klar strukturiert? 0-3",
+      "Interaktion: Wurde auf Fragen eingegangen? 0-3",
+      "Sprache: Ist Wortschatz/Grammatik C1-angemessen? 0-2"
+    ]
+  }
+]

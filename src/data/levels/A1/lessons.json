@@ -1,0 +1,5785 @@
+[
+  {
+    "level": "A1",
+    "unit": "A1_unit_1",
+    "id": "A1_lesson_1",
+    "title": "Begrüßungen und Vorstellungen",
+    "conceptId": "a1.greetings.sein-introductions",
+    "estimatedMinutes": 18,
+    "prerequisiteConceptIds": [],
+    "linkedQuestionIds": [
+      "A1_gr_4",
+      "A1_gr_5",
+      "A1_gr_6",
+      "A1_gr_12"
+    ],
+    "remediationLessonId": "A1_lesson_1",
+    "objective": "Learn to greet people, introduce yourself and others, choose du/Sie, ask for a name and origin, and use the most common present-tense forms of sein.",
+    "explanation": "In German, greetings vary by region and time of day. The formal Sie is used with strangers, coworkers, patients, officials, and older adults unless they invite du. The informal du is used with friends, family, children, and close classmates. This lesson also teaches the A1 forms of sein that appear in introduction questions: ich bin, du bist, er/sie/es ist. After a W-question word like woher, the conjugated verb stays in position 2: Woher kommst du?",
+    "formsTable": [
+      {
+        "form": "ich bin",
+        "use": "I am",
+        "example": "Ich bin Anna."
+      },
+      {
+        "form": "du bist",
+        "use": "you are (informal)",
+        "example": "Du bist freundlich."
+      },
+      {
+        "form": "er/sie/es ist",
+        "use": "he/she/it is",
+        "example": "Er ist in der Klinik."
+      },
+      {
+        "form": "Sie sind",
+        "use": "you are (formal)",
+        "example": "Sind Sie Herr Müller?"
+      }
+    ],
+    "examples": [
+      "Guten Morgen! - Good morning!",
+      "Hallo, ich heiße Anna. - Hello, my name is Anna.",
+      "Ich bin Arzt. - I am a doctor.",
+      "Du bist sehr freundlich. - You are very friendly.",
+      "Er ist in der Klinik. - He is in the clinic.",
+      "Woher kommst du? - Where do you come from?",
+      "Freut mich, dich kennenzulernen! - Nice to meet you!",
+      "Auf Wiedersehen! - Goodbye (formal).",
+      "Tschüss! - Bye (informal)."
+    ],
+    "vocabulary": [
+      {
+        "word": "Hallo",
+        "translation": "hello",
+        "example": "Hallo, wie geht es dir?"
+      },
+      {
+        "word": "Guten Morgen",
+        "translation": "good morning",
+        "example": "Guten Morgen, Herr Müller!"
+      },
+      {
+        "word": "Guten Abend",
+        "translation": "good evening",
+        "example": "Guten Abend, Frau Schmidt."
+      },
+      {
+        "word": "Tschüss",
+        "translation": "bye",
+        "example": "Tschüss, bis morgen!"
+      },
+      {
+        "word": "der Name",
+        "translation": "name",
+        "example": "Mein Name ist Peter."
+      }
+    ],
+    "grammarFocus": "Present tense of sein for introductions: ich bin, du bist, er/sie/es ist, Sie sind. W-questions keep the verb in second position: Woher kommst du? Wie heißen Sie?",
+    "commonMistakes": [
+      "Do not write ich ist. Use ich bin.",
+      "Do not write du bin. Use du bist.",
+      "Use Sie with patients, doctors you do not know, officials, and formal situations.",
+      "In displayed German, write heiße with ß. Typed answers may accept heisse for comparison.",
+      "In W-questions, the verb comes after the question word: Woher kommst du?",
+      "Do not leave German nouns lowercase in display text: der Name and die Klinik need capital letters."
+    ],
+    "pronunciationNotes": [
+      "ß sounds like a clear s: heiße.",
+      "ü in Tschüss is rounded; say ee with rounded lips.",
+      "In questions such as Wie heißen Sie?, the melody rises slightly at the end.",
+      "German vowels are written clearly: a, e, i, o, u. Say the vowel cleanly before adding an umlaut.",
+      "ä sounds close to e in many A1 words, as in Ärztin. ö and ü need rounded lips.",
+      "ß sounds like a clear s, as in heiße. Displayed German should use ß where the word requires it.",
+      "ch is soft after i, e, ä, ö, ü as in ich; it is stronger after a, o, u as in Bach.",
+      "German nouns and names are capitalized: der Name, die Ärztin, Herr Müller."
+    ],
+    "medicalFspNotes": [
+      "In clinics, default to Sie: Guten Tag, ich bin Dr. Ahmed. Wie heißen Sie?",
+      "Use clear identity questions: Wie ist Ihr Name? Woher kommen Sie?"
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Translate: 'Good morning, Mr. Schulz.'",
+        "answer": "Guten Morgen, Herr Schulz."
+      },
+      {
+        "prompt": "Complete: 'Ich ___ Anna.' (am)",
+        "answer": "bin"
+      },
+      {
+        "prompt": "Complete: 'Du ___ sehr freundlich.'",
+        "answer": "bist"
+      },
+      {
+        "prompt": "Complete: 'Er ___ in der Klinik.'",
+        "answer": "ist"
+      },
+      {
+        "prompt": "Choose the best question word: '___ kommst du?'",
+        "answer": "Woher"
+      },
+      {
+        "prompt": "Formal 'Goodbye' is ___",
+        "answer": "Auf Wiedersehen"
+      },
+      {
+        "prompt": "How do you ask 'What is your name?' (formal)?",
+        "answer": "Wie heißen Sie?"
+      },
+      {
+        "prompt": "Translate: 'Nice to meet you.' (formal)",
+        "answer": "Freut mich, Sie kennenzulernen."
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Ich ___ ein Arzt.",
+        "answer": "bin",
+        "linkedQuestionId": "A1_gr_4"
+      },
+      {
+        "prompt": "Du ___ sehr freundlich.",
+        "answer": "bist",
+        "linkedQuestionId": "A1_gr_5"
+      },
+      {
+        "prompt": "Er ___ in der Klinik.",
+        "answer": "ist",
+        "linkedQuestionId": "A1_gr_6"
+      },
+      {
+        "prompt": "___ kommst du?",
+        "answer": "Woher",
+        "linkedQuestionId": "A1_gr_12"
+      }
+    ],
+    "mixedPractice": [
+      "Introduce yourself with name, origin, and profession.",
+      "Ask a patient formally for name and origin.",
+      "Correct wrong sein forms in short introduction sentences."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a short dialogue introducing yourself to a new classmate.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 different greetings in German and when to use them.",
+        "type": "writing"
+      }
+    ],
+    "remediationIfFailed": "Review the sein table, then redo linked questions A1_gr_4, A1_gr_5, A1_gr_6, and A1_gr_12 before mixed practice.",
+    "listeningTask": "Read aloud: 'Hallo, ich heiße Lukas. Ich komme aus Berlin. Und du? Wie heißt du?'",
+    "readingTask": "Read: 'Maria sagt: Guten Morgen! Ich bin Maria. Wer bist du? Paul sagt: Hallo Maria, ich bin Paul. Freut mich!'",
+    "speakingTask": "Record yourself introducing yourself in German.",
+    "writingTask": "Write 3 sentences: introduce yourself, say where you're from, ask someone their name.",
+    "reviewSummary": "Today you learned: greetings, introductions, sein forms, W-question order, and the formal vs informal distinction.",
+    "conceptsTaught": [
+      "a1_greetings_introductions",
+      "a1_sein_intro",
+      "a1_w_questions_origin"
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_greetings_introductions",
+      "a1_sein"
+    ],
+    "prerequisites": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_greetings_introductions",
+      "a1_sein"
+    ],
+    "miniDrills": [
+      "Choose a greeting for morning, afternoon, and evening.",
+      "Write two introductions: one informal with du and one formal with Sie.",
+      {
+        "prompt": "Choose the display-quality spelling: heisse or heiße?",
+        "answer": "heiße"
+      },
+      {
+        "prompt": "Which words need capital letters: ich bin arzt in der klinik?",
+        "answer": "Ich bin Arzt in der Klinik."
+      },
+      {
+        "prompt": "Say Tschüss slowly and notice the rounded ü sound.",
+        "answer": "Tschüss"
+      }
+    ],
+    "formsTables": [
+      {
+        "title": "Starter pronunciation and capitalization",
+        "rows": [
+          [
+            "ä",
+            "close to e in many A1 words",
+            "die Ärztin"
+          ],
+          [
+            "ö",
+            "rounded lips",
+            "Österreich"
+          ],
+          [
+            "ü",
+            "say ee with rounded lips",
+            "Tschüss"
+          ],
+          [
+            "ß",
+            "clear s sound",
+            "heiße"
+          ],
+          [
+            "Nouns",
+            "capitalize people, places, things, ideas",
+            "der Name, die Klinik"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_1",
+    "id": "A1_lesson_2",
+    "title": "Das Alphabet, Aussprache und Zahlen",
+    "objective": "Learn the German alphabet, numbers 0-100, and how to spell your name.",
+    "explanation": "German spelling is mostly regular. Learn the alphabet, then the special sounds ä, ö, ü and ß. For numbers, memorize 0-12 first because forms like zwölf are irregular. Then learn 13-19, the tens, and the 21-99 pattern: the ones digit comes first, then und, then the tens. 22 is zweiundzwanzig and 47 is siebenundvierzig. This lesson prepares spelling, pronunciation, and basic number questions before later lessons use numbers for clock time and dates.",
+    "examples": [
+      "Ich heiße Anna. - My name is Anna.",
+      "Meine Telefonnummer ist 030 123456. - My phone number is 030 123456.",
+      "Zweiundzwanzig ist 22. - Zweiundzwanzig is 22.",
+      "Siebenundvierzig ist 47. - Siebenundvierzig is 47.",
+      "Dreiunddreißig ist 33. - Dreiunddreißig is 33."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Buchstabe",
+        "translation": "letter (alphabet)",
+        "example": "Das A ist der erste Buchstabe."
+      },
+      {
+        "word": "buchstabieren",
+        "translation": "to spell",
+        "example": "Können Sie das bitte buchstabieren?"
+      },
+      {
+        "word": "die Zahl",
+        "translation": "number",
+        "example": "Die Zahl 100 heißt hundert."
+      },
+      {
+        "word": "null",
+        "translation": "zero",
+        "example": "Meine Nummer hat zwei Nullen."
+      },
+      {
+        "word": "die Telefonnummer",
+        "translation": "phone number",
+        "example": "Meine Telefonnummer ist 030 123456."
+      }
+    ],
+    "grammarFocus": "Numbers: 0 null, 1 eins, 2 zwei, 3 drei, 4 vier, 5 fünf, 6 sechs, 7 sieben, 8 acht, 9 neun, 10 zehn, 11 elf, 12 zwölf, 15 fünfzehn, 20 zwanzig, 30 dreißig, 21 einundzwanzig. The special letter ß is called Eszett.",
+    "guidedPractice": [
+      {
+        "prompt": "What is 27 in German?",
+        "answer": "siebenundzwanzig"
+      },
+      {
+        "prompt": "Spell your own surname in German.",
+        "answer": "(practice)"
+      },
+      {
+        "prompt": "What special letters does German have?",
+        "answer": "Ä, Ö, Ü, ß"
+      },
+      {
+        "prompt": "Translate '58'",
+        "answer": "achtundfünfzig"
+      },
+      {
+        "prompt": "Write 33 in German.",
+        "answer": "dreiunddreißig"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write the numbers 1-20 in German.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Spell 5 German cities in German.",
+        "type": "speaking"
+      }
+    ],
+    "listeningTask": "Read aloud: 3, 17, 25, 44, 68, 92.",
+    "readingTask": "Read: 'Meine Telefonnummer ist 030 - 44 55 66 77.'",
+    "speakingTask": "Say your phone number, house number, and age in German.",
+    "writingTask": "Write 5 numbers in digits and words: 14, 33, 47, 52, 89.",
+    "reviewSummary": "You learned the German alphabet, Ä Ö Ü ß, how to spell, and the number pattern for 0-100 including zwölf, fünfzehn, dreißig, zweiundzwanzig, dreiunddreißig, and siebenundvierzig.",
+    "conceptsTaught": [
+      "a1_alphabet_pronunciation",
+      "a1_umlauts_eszett",
+      "a1_numbers_dates"
+    ],
+    "formsTables": [
+      {
+        "title": "Core sounds",
+        "rows": [
+          [
+            "w",
+            "sounds like English v",
+            "wir"
+          ],
+          [
+            "v",
+            "often sounds like f",
+            "Vater"
+          ],
+          [
+            "z",
+            "sounds like ts",
+            "Zeit"
+          ],
+          [
+            "ß",
+            "clear s sound",
+            "heißen"
+          ],
+          [
+            "ch",
+            "soft after i/e/ä/ö/ü, stronger after a/o/u",
+            "ich, acht"
+          ]
+        ]
+      },
+      {
+        "title": "Number pattern",
+        "rows": [
+          [
+            "21",
+            "einundzwanzig",
+            "one-and-twenty"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
+      },
+      {
+        "title": "A1 number forms needed for practice",
+        "rows": [
+          [
+            "12",
+            "zwölf",
+            "memorize directly"
+          ],
+          [
+            "15",
+            "fünfzehn",
+            "fünf + zehn, but without the final f sound being added again"
+          ],
+          [
+            "22",
+            "zweiundzwanzig",
+            "two-and-twenty"
+          ],
+          [
+            "33",
+            "dreiunddreißig",
+            "three-and-thirty; display ß"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
+      },
+      {
+        "title": "Numbers 0-12",
+        "rows": [
+          [
+            "0",
+            "null",
+            "zero"
+          ],
+          [
+            "1",
+            "eins",
+            "one"
+          ],
+          [
+            "2",
+            "zwei",
+            "two"
+          ],
+          [
+            "3",
+            "drei",
+            "three"
+          ],
+          [
+            "4",
+            "vier",
+            "four"
+          ],
+          [
+            "5",
+            "fünf",
+            "five"
+          ],
+          [
+            "6",
+            "sechs",
+            "six"
+          ],
+          [
+            "7",
+            "sieben",
+            "seven"
+          ],
+          [
+            "8",
+            "acht",
+            "eight"
+          ],
+          [
+            "9",
+            "neun",
+            "nine"
+          ],
+          [
+            "10",
+            "zehn",
+            "ten"
+          ],
+          [
+            "11",
+            "elf",
+            "eleven"
+          ],
+          [
+            "12",
+            "zwölf",
+            "twelve"
+          ]
+        ]
+      },
+      {
+        "title": "Numbers 13-19",
+        "rows": [
+          [
+            "13",
+            "dreizehn",
+            "three-ten"
+          ],
+          [
+            "14",
+            "vierzehn",
+            "four-ten"
+          ],
+          [
+            "15",
+            "fünfzehn",
+            "five-ten"
+          ],
+          [
+            "16",
+            "sechzehn",
+            "sixteen drops the s from sechs"
+          ],
+          [
+            "17",
+            "siebzehn",
+            "seventeen shortens sieben"
+          ],
+          [
+            "18",
+            "achtzehn",
+            "eight-ten"
+          ],
+          [
+            "19",
+            "neunzehn",
+            "nine-ten"
+          ]
+        ]
+      },
+      {
+        "title": "Tens",
+        "rows": [
+          [
+            "20",
+            "zwanzig",
+            "twenty"
+          ],
+          [
+            "30",
+            "dreißig",
+            "thirty"
+          ],
+          [
+            "40",
+            "vierzig",
+            "forty"
+          ],
+          [
+            "50",
+            "fünfzig",
+            "fifty"
+          ],
+          [
+            "60",
+            "sechzig",
+            "sixty"
+          ],
+          [
+            "70",
+            "siebzig",
+            "seventy"
+          ],
+          [
+            "80",
+            "achtzig",
+            "eighty"
+          ],
+          [
+            "90",
+            "neunzig",
+            "ninety"
+          ]
+        ]
+      },
+      {
+        "title": "Compound numbers with und",
+        "rows": [
+          [
+            "22",
+            "zweiundzwanzig",
+            "two-and-twenty"
+          ],
+          [
+            "33",
+            "dreiunddreißig",
+            "three-and-thirty"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not replace ü with u in displayed German: fünf is correct, funf is not display quality.",
+      "Do not pronounce German w like English w.",
+      "Write ß in displayed words like heißen and dreißig; typed comparison may accept ss.",
+      "For 21-99, German says the ones digit first: 47 is siebenundvierzig, not vierzigsieben.",
+      "Do not reverse compound numbers into English order: 22 is zweiundzwanzig, not zwanzigzwei."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Spell 22 in German.",
+        "answer": "zweiundzwanzig"
+      },
+      {
+        "prompt": "Spell 33 in German with proper ß.",
+        "answer": "dreiunddreißig"
+      },
+      {
+        "prompt": "Which sound does German z make?",
+        "answer": "ts"
+      }
+    ],
+    "pronunciationNotes": [
+      "Round lips for ö and ü.",
+      "Keep word stress steady, usually on the first syllable in simple German words.",
+      "z sounds like ts: zehn and zwei start with a ts sound.",
+      "ei sounds like English eye: eins, drei.",
+      "ie is a long ee sound: sieben.",
+      "ß is a clear s sound in dreißig; displayed German should write dreißig, not dreissig.",
+      "Round lips for ö and ü, especially in zwölf and fünf."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_alphabet_pronunciation",
+      "a1_numbers_dates"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_alphabet_pronunciation",
+      "a1_numbers_dates"
+    ],
+    "conceptId": "a1_alphabet_pronunciation"
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_3",
+    "title": "Nomen, Großschreibung, Genus und Artikel",
+    "objective": "Describe your family members, use possessive articles, and talk about age.",
+    "explanation": "German nouns are always written with a capital letter and almost always learned with an article. The article tells you the grammatical gender: der for masculine nouns, die for feminine nouns, and das for neuter nouns. There is no perfect rule that predicts every gender, so A1 learners should memorize article + noun together: der Hund, die Katze, das Kind. Indefinite articles mean a/an: ein for masculine and neuter nouns, eine for feminine nouns. In this lesson the noun is usually the subject of the sentence, so it is in the nominative case: Der Hund ist braun. Die Katze schläft. Das Kind spielt.",
+    "examples": [
+      "Der Hund ist braun. - The dog is brown.",
+      "Die Katze schläft. - The cat is sleeping.",
+      "Das Kind spielt. - The child is playing.",
+      "Das ist ein Mann. - That is a man.",
+      "Das ist eine Frau. - That is a woman.",
+      "Das ist ein Kind. - That is a child.",
+      "Die Familie wohnt in Berlin. - The family lives in Berlin."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Vater",
+        "translation": "father",
+        "example": "Mein Vater arbeitet als Lehrer."
+      },
+      {
+        "word": "die Mutter",
+        "translation": "mother",
+        "example": "Meine Mutter kocht sehr gut."
+      },
+      {
+        "word": "der Bruder",
+        "translation": "brother",
+        "example": "Mein Bruder ist 10 Jahre alt."
+      },
+      {
+        "word": "die Schwester",
+        "translation": "sister",
+        "example": "Meine Schwester studiert Medizin."
+      },
+      {
+        "word": "die Geschwister",
+        "translation": "siblings",
+        "example": "Ich habe zwei Geschwister."
+      }
+    ],
+    "grammarFocus": "Possessive articles: mein/meine, dein/deine, sein/seine, ihr/ihre. Nominative case.",
+    "guidedPractice": [
+      {
+        "prompt": "Translate 'my mother'",
+        "answer": "meine Mutter"
+      },
+      {
+        "prompt": "Translate 'his brother'",
+        "answer": "sein Bruder"
+      },
+      {
+        "prompt": "Complete: 'Ich habe eine ___.' (sister)",
+        "answer": "Schwester"
+      },
+      {
+        "prompt": "Do you have siblings? (informal)",
+        "answer": "Hast du Geschwister?"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about your family using possessive articles.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Draw a family tree and label all members in German.",
+        "type": "creative"
+      }
+    ],
+    "listeningTask": "Read aloud: 'In meiner Familie gibt es vier Personen.'",
+    "readingTask": "Read: 'Anna hat eine grosse Familie. Ihr Vater ist Arzt. Ihre Mutter ist Hausfrau.'",
+    "speakingTask": "Describe your family in 3-4 sentences. Record yourself.",
+    "writingTask": "Write a paragraph about your family: names, ages, professions.",
+    "reviewSummary": "You learned family vocabulary, possessive articles, and family discussion.",
+    "conceptsTaught": [
+      "a1_noun_gender_basics",
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics",
+      "a1_vocab_family"
+    ],
+    "formsTables": [
+      {
+        "title": "Definite articles in the nominative",
+        "rows": [
+          [
+            "masculine",
+            "der",
+            "der Mann, der Hund, der Tisch"
+          ],
+          [
+            "feminine",
+            "die",
+            "die Frau, die Katze, die Blume"
+          ],
+          [
+            "neuter",
+            "das",
+            "das Kind, das Auto, das Wasser"
+          ],
+          [
+            "plural",
+            "die",
+            "die Eltern, die Kinder"
+          ]
+        ]
+      },
+      {
+        "title": "Indefinite articles in the nominative",
+        "rows": [
+          [
+            "masculine",
+            "ein",
+            "ein Hund"
+          ],
+          [
+            "feminine",
+            "eine",
+            "eine Katze"
+          ],
+          [
+            "neuter",
+            "ein",
+            "ein Auto"
+          ],
+          [
+            "plural",
+            "-",
+            "plural has no indefinite article in basic A1: Kinder"
+          ]
+        ]
+      },
+      {
+        "title": "A1 article strategy",
+        "rows": [
+          [
+            "People and family",
+            "learn individually",
+            "der Mann, die Frau, das Kind"
+          ],
+          [
+            "Words ending -ung/-heit/-keit",
+            "usually die",
+            "die Rechnung, die Gesundheit"
+          ],
+          [
+            "Young people/animals with -chen/-lein",
+            "usually das",
+            "das Mädchen"
+          ],
+          [
+            "No rule is universal",
+            "use flashcards",
+            "der Tisch, die Sonne, das Wasser"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not translate English the as one German word. German has der, die, and das.",
+      "Do not write nouns lowercase in German: der hund is wrong; der Hund is correct.",
+      "Do not use eine with masculine or neuter nouns in the nominative: ein Hund, ein Auto.",
+      "Memorize article + noun together, not the noun alone."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Choose the article: ___ Hund ist braun.",
+        "answer": "Der Hund ist braun."
+      },
+      {
+        "prompt": "Choose the article: ___ Katze schläft.",
+        "answer": "Die Katze schläft."
+      },
+      {
+        "prompt": "Choose the article: ___ Kind spielt.",
+        "answer": "Das Kind spielt."
+      },
+      {
+        "prompt": "Say a/an: Das ist ___ Frau.",
+        "answer": "eine"
+      },
+      {
+        "prompt": "Correct the capitalization: die familie ist groß.",
+        "answer": "Die Familie ist groß."
+      }
+    ],
+    "pronunciationNotes": [
+      "Say der with a short e sound. Keep die as a long ee sound. In das, the s is a clear s sound.",
+      "Kind has a short i. Frau is one vowel sound, like ow in English now."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_articles_definite",
+      "a1_articles_indefinite",
+      "a1_plural_basics"
+    ],
+    "conceptId": "a1_noun_gender_basics",
+    "remediationIfFailed": "If article questions are difficult, review this lesson by making flashcards in the form article + noun + example: der Hund - Der Hund ist braun."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_4",
+    "title": "Nominativ und Akkusativ im Alltag",
+    "objective": "Order food and drinks, understand a menu, and pay the bill.",
+    "explanation": "German uses cases to show the role of a noun in a sentence. The nominative is usually the subject: Der Mann kommt. The accusative is usually the direct object, the thing or person receiving the action: Ich sehe den Mann. In A1, the most important rule is simple: only masculine articles visibly change in the accusative. der becomes den, and ein becomes einen. Feminine die/eine and neuter das/ein do not change in the basic accusative. Many linked questions use everyday verbs that take a direct object: sehen, haben, kaufen, essen, trinken, besuchen.",
+    "examples": [
+      "Der Mann kommt. - The man is coming. (subject, nominative)",
+      "Ich sehe den Mann. - I see the man. (object, accusative)",
+      "Er hat einen Hund. - He has a dog.",
+      "Sie kauft die Blume. - She buys the flower.",
+      "Ich esse das Brot. - I eat the bread.",
+      "Er trinkt die Milch. - He drinks the milk.",
+      "Wir besuchen den Arzt. - We visit the doctor."
+    ],
+    "vocabulary": [
+      {
+        "word": "das Essen",
+        "translation": "food",
+        "example": "Das Essen ist sehr lecker."
+      },
+      {
+        "word": "das Getränk",
+        "translation": "drink",
+        "example": "Ich möchte ein Getränk."
+      },
+      {
+        "word": "der Kaffee",
+        "translation": "coffee",
+        "example": "Einen Kaffee mit Milch, bitte."
+      },
+      {
+        "word": "die Rechnung",
+        "translation": "bill",
+        "example": "Die Rechnung, bitte!"
+      },
+      {
+        "word": "bestellen",
+        "translation": "to order",
+        "example": "Wir möchten bestellen."
+      }
+    ],
+    "grammarFocus": "Verb 'möchten': ich möchte, du möchtest. Accusative: einen Kaffee (m), eine Cola (f), ein Wasser (n).",
+    "guidedPractice": [
+      {
+        "prompt": "Order a coffee politely.",
+        "answer": "Ich möchte einen Kaffee, bitte."
+      },
+      {
+        "prompt": "Ask for the bill.",
+        "answer": "Die Rechnung, bitte!"
+      },
+      {
+        "prompt": "Translate 'I would like a water.'",
+        "answer": "Ich möchte ein Wasser."
+      },
+      {
+        "prompt": "Ask 'What do you recommend?'",
+        "answer": "Was empfehlen Sie?"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Create a dialogü between customer and waiter.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 things you can order in a cafe.",
+        "type": "vocabulary"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Abend. Ich möchte einen Tisch für zwei Personen.'",
+    "readingTask": "Menu: Suppe 4,50 Euro, Schnitzel 12,80 Euro, Salat 6,90 Euro.",
+    "speakingTask": "Role-play ordering a meal (greeting, order, pay).",
+    "writingTask": "Write a restaurant review (3-4 sentences).",
+    "reviewSummary": "You learned restaurant vocabulary, 'möchten', and dining phrases.",
+    "conceptsTaught": [
+      "a1_nominative_basics",
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "formsTables": [
+      {
+        "title": "Nominative to accusative articles",
+        "rows": [
+          [
+            "masculine",
+            "der/ein",
+            "den/einen",
+            "der Mann -> den Mann, ein Hund -> einen Hund"
+          ],
+          [
+            "feminine",
+            "die/eine",
+            "die/eine",
+            "die Blume -> die Blume"
+          ],
+          [
+            "neuter",
+            "das/ein",
+            "das/ein",
+            "das Buch -> das Buch"
+          ],
+          [
+            "plural",
+            "die",
+            "die",
+            "die Kinder -> die Kinder"
+          ]
+        ]
+      },
+      {
+        "title": "A1 verbs often followed by an accusative object",
+        "rows": [
+          [
+            "sehen",
+            "to see",
+            "Ich sehe den Mann."
+          ],
+          [
+            "haben",
+            "to have",
+            "Ich habe einen Hund."
+          ],
+          [
+            "kaufen",
+            "to buy",
+            "Sie kauft die Blume."
+          ],
+          [
+            "essen/trinken",
+            "to eat/drink",
+            "Ich esse das Brot. Er trinkt die Milch."
+          ],
+          [
+            "besuchen",
+            "to visit",
+            "Wir besuchen den Arzt."
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not change feminine die to den. Only masculine der changes to den in this basic pattern.",
+      "Do not change das in the accusative: das Buch stays das Buch.",
+      "After haben, sehen, kaufen, essen, trinken, and besuchen, ask: what or whom? That noun is usually accusative.",
+      "For a masculine a/an object, use einen: Ich habe einen Hund."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Change to accusative: der Mann -> Ich sehe ___ Mann.",
+        "answer": "den"
+      },
+      {
+        "prompt": "Choose the object: Sie kauft ___ Blume.",
+        "answer": "die"
+      },
+      {
+        "prompt": "Choose the object: Ich esse ___ Brot.",
+        "answer": "das"
+      },
+      {
+        "prompt": "Use a/an with a masculine object: Er hat ___ Hund.",
+        "answer": "einen"
+      }
+    ],
+    "medicalFspNotes": [
+      "Useful clinic pattern: Ich habe einen Termin. Ich brauche einen Arzt."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_accusative_basics",
+      "a1_food_vocab"
+    ],
+    "pronunciationNotes": [
+      "In den and einen, pronounce the final n clearly but lightly. In Milch, ch is soft because it follows i."
+    ],
+    "conceptId": "a1_nominative_basics",
+    "remediationIfFailed": "If accusative questions are missed, repeat the masculine-change table and drill only der/ein nouns until den/einen feels automatic."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_5",
+    "title": "Personalpronomen und einfache Sätze",
+    "objective": "Ask for and give directions, understand basic location prepositions.",
+    "explanation": "Personal pronouns replace nouns and show who does the action: ich, du, er, sie, es, wir, ihr, sie, Sie. In simple A1 sentences, the pronoun normally comes before the conjugated verb: Ich bin müde. Du trinkst Wasser. Wir haben ein Problem. German has two meanings for sie: she and they. Capitalized Sie means formal you. The verb ending helps you understand the meaning.",
+    "examples": [
+      "Ich bin müde. - I am tired.",
+      "Du bist mein Freund. - You are my friend.",
+      "Sie ist Lehrerin. - She is a teacher.",
+      "Wir wohnen in Köln. - We live in Cologne.",
+      "Ihr seid lustig. - You all are funny.",
+      "Sie haben ein Problem. - They have a problem or You have a problem formally.",
+      "Du trinkst Wasser. - You drink water."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Bahnhof",
+        "translation": "train station",
+        "example": "Der Bahnhof ist um die Ecke."
+      },
+      {
+        "word": "geradeaus",
+        "translation": "straight ahead",
+        "example": "Gehen Sie geradeaus."
+      },
+      {
+        "word": "links",
+        "translation": "left",
+        "example": "Biegen Sie links ab."
+      },
+      {
+        "word": "rechts",
+        "translation": "right",
+        "example": "Das Museum ist rechts."
+      },
+      {
+        "word": "die Ampel",
+        "translation": "traffic light",
+        "example": "An der Ampel rechts."
+      }
+    ],
+    "grammarFocus": "Prepositions with dative: zu + dem = zum, bei + dem = beim.",
+    "guidedPractice": [
+      {
+        "prompt": "Ask where the train station is.",
+        "answer": "Entschuldigung, wo ist der Bahnhof?"
+      },
+      {
+        "prompt": "Say 'Go straight, then left.'",
+        "answer": "Gehen Sie geradeaus, dann links."
+      },
+      {
+        "prompt": "How to get to the museum?",
+        "answer": "Wie komme ich zum Museum?"
+      },
+      {
+        "prompt": "Say 'It's on the corner.'",
+        "answer": "Es ist an der Ecke."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Draw a simple map and write directions from A to B.",
+        "type": "creative"
+      },
+      {
+        "prompt": "Write a dialogü asking for and giving directions.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Wie komme ich zum Bahnhof? Gehen Sie geradeaus, dann rechts.'",
+    "readingTask": "Read: 'Der Supermarkt ist nicht weit. Gehen Sie geradeaus.'",
+    "speakingTask": "Give directions from your home to the nearest shop.",
+    "writingTask": "Write directions from the station to the city center.",
+    "reviewSummary": "You learned how to ask for and give directions using location prepositions.",
+    "conceptsTaught": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building",
+      "a1_vocab_directions"
+    ],
+    "formsTables": [
+      {
+        "title": "A1 personal pronouns",
+        "rows": [
+          [
+            "ich",
+            "I",
+            "ich bin, ich trinke"
+          ],
+          [
+            "du",
+            "you informal singular",
+            "du bist, du trinkst"
+          ],
+          [
+            "er/sie/es",
+            "he/she/it",
+            "er ist, sie ist, es ist"
+          ],
+          [
+            "wir",
+            "we",
+            "wir sind, wir haben"
+          ],
+          [
+            "ihr",
+            "you plural informal",
+            "ihr seid, ihr geht"
+          ],
+          [
+            "sie",
+            "they",
+            "sie wohnen"
+          ],
+          [
+            "Sie",
+            "you formal",
+            "Sie haben"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not confuse sie meaning she with sie meaning they. Use the verb and context.",
+      "Always capitalize formal Sie.",
+      "Do not use ihr for one person. Ihr means you all.",
+      "The pronoun and verb must agree: du trinkst, not du trinke."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Choose the pronoun: ___ bin müde.",
+        "answer": "Ich"
+      },
+      {
+        "prompt": "Choose the pronoun: ___ bist mein Freund.",
+        "answer": "Du"
+      },
+      {
+        "prompt": "Choose the pronoun: ___ wohnen in Köln. (they)",
+        "answer": "Sie"
+      },
+      {
+        "prompt": "Choose the pronoun: ___ trinkst Wasser.",
+        "answer": "Du"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_personal_pronouns",
+      "a1_basic_sentence_building"
+    ],
+    "pronunciationNotes": [
+      "Ich uses the soft ich-Laut after i. In wir, the German w sounds like English v."
+    ],
+    "conceptId": "a1_personal_pronouns",
+    "remediationIfFailed": "If pronoun questions are missed, read the table aloud and say one verb form with each pronoun."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_6",
+    "title": "Präsens: regelmäßige Verben",
+    "objective": "Tell time using official and colloquial formats.",
+    "explanation": "Most regular German verbs in the present tense follow a pattern. Start with the infinitive, remove -en, and add the ending for the subject: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. For example, lernen becomes ich lerne, du lernst, er lernt. Some A1 questions also include common irregular or stem-changing verbs such as sprechen and fahren. These do not fully follow the regular pattern in du and er/sie/es: du sprichst, er spricht; du fährst, er fährt. Learn the regular pattern first, then memorize the few common irregulars.",
+    "examples": [
+      "Ich arbeite in einem Krankenhaus. - I work in a hospital.",
+      "Der Patient wartet auf den Arzt. - The patient waits for the doctor.",
+      "Du lernst Deutsch. - You learn German.",
+      "Wir wohnen in Berlin. - We live in Berlin.",
+      "Ihr tanzt gern. - You all like dancing.",
+      "Er spricht Deutsch. - He speaks German.",
+      "Du fährst nach Hause. - You drive/go home."
+    ],
+    "grammarFocus": "Time expressions: official vs colloquial",
+    "vocabulary": [
+      {
+        "word": "die Uhr",
+        "translation": "clock"
+      },
+      {
+        "word": "die Stunde",
+        "translation": "hour"
+      },
+      {
+        "word": "die Minute",
+        "translation": "minute"
+      },
+      {
+        "word": "viertel",
+        "translation": "quarter"
+      },
+      {
+        "word": "halb",
+        "translation": "half"
+      },
+      {
+        "word": "nach",
+        "translation": "after/past"
+      },
+      {
+        "word": "vor",
+        "translation": "before/to"
+      },
+      {
+        "word": "pünktlich",
+        "translation": "on time"
+      },
+      {
+        "word": "spät",
+        "translation": "late"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say half past eight (7:30)?",
+        "answer": "halb acht"
+      },
+      {
+        "prompt": "Translate \"at 3 o'clock\"",
+        "answer": "um drei Uhr"
+      },
+      {
+        "prompt": "What is 14:45 colloquially?",
+        "answer": "Viertel vor drei"
+      }
+    ],
+    "readingTask": {
+      "text": "Der Wecker klingelt um 7 Uhr. Maria steht auf und frühstückt. Um 8.15 Uhr geht sie zur Arbeit. Um 12.30 Uhr hat sie Mittagspause. Um 17 Uhr ist Feierabend. Um 18.45 Uhr kocht sie Abendessen. Um 22.30 Uhr geht sie ins Bett.",
+      "questions": [
+        {
+          "question": "Wann klingelt der Wecker?",
+          "options": [
+            "7 Uhr",
+            "8 Uhr",
+            "6 Uhr",
+            "7:30"
+          ],
+          "answer": "7 Uhr"
+        },
+        {
+          "question": "Wann hat Maria Mittagspause?",
+          "options": [
+            "11:30",
+            "12:30",
+            "13:30",
+            "12:00"
+          ],
+          "answer": "12:30"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Entschuldigung, wie spät ist es? B: Es ist Viertel nach drei. A: Danke sehr! B: Bitte schön.",
+      "questions": [
+        {
+          "question": "Wie spät ist es?",
+          "options": [
+            "Viertel nach drei",
+            "halb vier",
+            "drei Uhr",
+            "Viertel vor drei"
+          ],
+          "answer": "Viertel nach drei"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write 5 sentences about your daily schedule using both official and colloquial time formats."
+    },
+    "speakingTask": {
+      "prompt": "Ask a partner for the time at 3 different times of day and answer colloquially."
+    },
+    "reviewSummary": "Use \"nach\" for minutes past the hour and \"vor\" for minutes to. \"Halb\" means half way TO the next hour. Official time uses \"Uhr\" between hours and minutes.",
+    "conceptsTaught": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro",
+      "a1_vocab_common_verbs"
+    ],
+    "formsTables": [
+      {
+        "title": "Regular present tense: lernen",
+        "rows": [
+          [
+            "ich",
+            "lerne",
+            "Ich lerne Deutsch."
+          ],
+          [
+            "du",
+            "lernst",
+            "Du lernst Deutsch."
+          ],
+          [
+            "er/sie/es",
+            "lernt",
+            "Er lernt Deutsch."
+          ],
+          [
+            "wir",
+            "lernen",
+            "Wir lernen Deutsch."
+          ],
+          [
+            "ihr",
+            "lernt",
+            "Ihr lernt Deutsch."
+          ],
+          [
+            "sie/Sie",
+            "lernen",
+            "Sie lernen Deutsch."
+          ]
+        ]
+      },
+      {
+        "title": "Common A1 irregular/stem-changing forms in linked questions",
+        "rows": [
+          [
+            "sprechen",
+            "du sprichst, er spricht",
+            "Er spricht Deutsch."
+          ],
+          [
+            "fahren",
+            "du fährst, er fährt",
+            "Du fährst nach Hause."
+          ],
+          [
+            "sein/haben",
+            "irregular, review lesson 7",
+            "Ich bin, du hast"
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not leave the infinitive after ich: ich lernen is wrong; ich lerne is correct.",
+      "Do not forget -st with du: du lernst.",
+      "Verbs ending in -ten or -den often add an extra e for easier pronunciation: du wartest, er arbeitet.",
+      "Stem-changing verbs like sprechen and fahren need memorized forms."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Conjugate: Ich ___ (spielen) Fußball.",
+        "answer": "spiele"
+      },
+      {
+        "prompt": "Conjugate: Du ___ (lernen) Deutsch.",
+        "answer": "lernst"
+      },
+      {
+        "prompt": "Conjugate: Er ___ (sprechen) Deutsch.",
+        "answer": "spricht"
+      },
+      {
+        "prompt": "Conjugate: Du ___ (fahren) nach Hause.",
+        "answer": "fährst"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro"
+    ],
+    "estimatedMinutes": 28,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_present_tense_regular",
+      "a1_present_tense_irregular_intro"
+    ],
+    "pronunciationNotes": [
+      "In ich lerne, pronounce the final -e lightly. In spricht, the ch is soft after i."
+    ],
+    "conceptId": "a1_present_tense_regular",
+    "remediationIfFailed": "If present-tense questions are missed, drill one regular verb through all pronouns, then review sprechen and fahren separately."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_7",
+    "title": "Sein und haben",
+    "objective": "Name the days, months, and say dates.",
+    "explanation": "Sein (to be) and haben (to have) are two of the most important German verbs, and both are irregular. You cannot build their forms only from regular endings. Sein describes identity, location, origin, states, and descriptions: Ich bin Student. Wir sind im Kino. Haben shows possession, appointments, symptoms, and many everyday needs: Ich habe einen Hund. Hast du einen Bruder? In medical German, haben is essential for symptoms: Ich habe Schmerzen.",
+    "examples": [
+      "Ich bin aus Deutschland. - I am from Germany.",
+      "Du bist sehr freundlich. - You are very friendly.",
+      "Er ist mein Bruder. - He is my brother.",
+      "Wir sind im Kino. - We are at the cinema.",
+      "Ich habe einen Hund. - I have a dog.",
+      "Du hast einen Bruder. - You have a brother.",
+      "Der Patient hat Fieber. - The patient has a fever."
+    ],
+    "grammarFocus": "Days, months, and ordinal numbers",
+    "vocabulary": [
+      {
+        "word": "der Montag",
+        "translation": "Monday"
+      },
+      {
+        "word": "der Dienstag",
+        "translation": "Tüsday"
+      },
+      {
+        "word": "der Mittwoch",
+        "translation": "Wednesday"
+      },
+      {
+        "word": "der Donnerstag",
+        "translation": "Thursday"
+      },
+      {
+        "word": "der Freitag",
+        "translation": "Friday"
+      },
+      {
+        "word": "der Samstag",
+        "translation": "Saturday"
+      },
+      {
+        "word": "der Sonntag",
+        "translation": "Sunday"
+      },
+      {
+        "word": "der Monat",
+        "translation": "month"
+      },
+      {
+        "word": "der Geburtstag",
+        "translation": "birthday"
+      },
+      {
+        "word": "das Jahr",
+        "translation": "year"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "What day comes after Mittwoch?",
+        "answer": "Donnerstag"
+      },
+      {
+        "prompt": "Say \"today is Friday\"",
+        "answer": "Heute ist Freitag"
+      },
+      {
+        "prompt": "Ordinal for 1st?",
+        "answer": "erste"
+      }
+    ],
+    "readingTask": {
+      "text": "Am Montag gehe ich zur Schule. Am Dienstag habe ich Sport. Mittwochs besuche ich meine Oma. Donnerstags koche ich mit Freunden. Freitags gehe ich ins Kino. Samstags schlafe ich lange. Sonntags mache ich einen Spaziergang.",
+      "questions": [
+        {
+          "question": "Was mache ich am Montag?",
+          "options": [
+            "zur Schule gehen",
+            "ins Kino gehen",
+            "schlafen",
+            "Sport haben"
+          ],
+          "answer": "zur Schule gehen"
+        },
+        {
+          "question": "Wann besuche ich meine Oma?",
+          "options": [
+            "dienstags",
+            "mittwochs",
+            "donnerstags",
+            "freitags"
+          ],
+          "answer": "mittwochs"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Der wievielte ist heute? B: Heute ist der 15. Juni. A: Ach so, dann habe ich nächste Woche Geburtstag!",
+      "questions": [
+        {
+          "question": "Welcher Monat wird genannt?",
+          "options": [
+            "Mai",
+            "Juni",
+            "Juli",
+            "August"
+          ],
+          "answer": "Juni"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write your weekly schedule in German using \"am\" for specific days."
+    },
+    "speakingTask": {
+      "prompt": "Tell your partner your favorite day of the week and explain why."
+    },
+    "reviewSummary": "Days are masculine (der). Use \"am\" + day for \"on\". Ordinal numbers add \"-te\": der erste, der zweite. Adverbial form: montags.",
+    "conceptsTaught": [
+      "a1_sein",
+      "a1_haben",
+      "a1_vocab_symptoms_basics"
+    ],
+    "formsTables": [
+      {
+        "title": "Sein in the present tense",
+        "rows": [
+          [
+            "ich",
+            "bin",
+            "Ich bin müde."
+          ],
+          [
+            "du",
+            "bist",
+            "Du bist nett."
+          ],
+          [
+            "er/sie/es",
+            "ist",
+            "Das ist ein Buch."
+          ],
+          [
+            "wir",
+            "sind",
+            "Wir sind hier."
+          ],
+          [
+            "ihr",
+            "seid",
+            "Ihr seid laut."
+          ],
+          [
+            "sie/Sie",
+            "sind",
+            "Sie sind zu Hause."
+          ]
+        ]
+      },
+      {
+        "title": "Haben in the present tense",
+        "rows": [
+          [
+            "ich",
+            "habe",
+            "Ich habe Zeit."
+          ],
+          [
+            "du",
+            "hast",
+            "Hast du einen Bruder?"
+          ],
+          [
+            "er/sie/es",
+            "hat",
+            "Er hat einen Hund."
+          ],
+          [
+            "wir",
+            "haben",
+            "Wir haben einen Termin."
+          ],
+          [
+            "ihr",
+            "habt",
+            "Habt ihr Hunger?"
+          ],
+          [
+            "sie/Sie",
+            "haben",
+            "Sie haben ein Problem."
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not say ich ist. Use ich bin.",
+      "Do not say du haben. Use du hast.",
+      "Remember ihr seid, not ihr sind.",
+      "With haben plus a masculine object, use accusative: Ich habe einen Hund."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ Student.",
+        "answer": "bin"
+      },
+      {
+        "prompt": "Wir ___ im Kino.",
+        "answer": "sind"
+      },
+      {
+        "prompt": "Du ___ einen Bruder?",
+        "answer": "hast"
+      },
+      {
+        "prompt": "Er ___ einen Hund.",
+        "answer": "hat"
+      }
+    ],
+    "medicalFspNotes": [
+      "Starter patient sentence: Ich habe Schmerzen seit zwei Tagen."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_sein",
+      "a1_haben"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_sein",
+      "a1_haben"
+    ],
+    "pronunciationNotes": [
+      "In sind, the final d sounds like t. In habe, the final -e is light."
+    ],
+    "conceptId": "a1_sein",
+    "remediationIfFailed": "If sein/haben questions are missed, copy both tables once and make six short sentences: three with sein and three with haben."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_8",
+    "title": "Modalverben: können, müssen, wollen, möchten",
+    "objective": "Talk about hobbies using \"gern\" and correct verb conjugation.",
+    "explanation": "Modal verbs change the meaning of a second verb. A1 modal verbs include können (can), müssen (must/have to), wollen (want to), möchten (would like to), dürfen (may/be allowed to), and sollen (should). The modal verb is conjugated in position 2, and the second verb stays in the infinitive at the end: Ich kann schwimmen. Du musst lernen. Er will nach Hause gehen. Möchten is polite and useful for ordering: Ich möchte einen Kaffee.",
+    "examples": [
+      "Ich kann schwimmen. - I can swim.",
+      "Kannst du morgen kommen? - Can you come tomorrow?",
+      "Du musst lernen. - You must study.",
+      "Er will nach Hause gehen. - He wants to go home.",
+      "Ich möchte einen Kaffee. - I would like a coffee.",
+      "Wir dürfen hier parken. - We may park here.",
+      "Ihr sollt pünktlich sein. - You all should be on time."
+    ],
+    "grammarFocus": "Verb conjugation with \"gern\" (like to)",
+    "vocabulary": [
+      {
+        "word": "das Hobby",
+        "translation": "hobby"
+      },
+      {
+        "word": "spielen",
+        "translation": "to play"
+      },
+      {
+        "word": "lesen",
+        "translation": "to read"
+      },
+      {
+        "word": "malen",
+        "translation": "to paint"
+      },
+      {
+        "word": "tanzen",
+        "translation": "to dance"
+      },
+      {
+        "word": "kochen",
+        "translation": "to cook"
+      },
+      {
+        "word": "reisen",
+        "translation": "to travel"
+      },
+      {
+        "word": "der FuSSball",
+        "translation": "soccer"
+      },
+      {
+        "word": "die Musik",
+        "translation": "music"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"I like to dance\"?",
+        "answer": "Ich tanze gern"
+      },
+      {
+        "prompt": "What dös \"lesen\" mean?",
+        "answer": "to read"
+      },
+      {
+        "prompt": "Translate \"we like to cook\"",
+        "answer": "Wir kochen gern"
+      }
+    ],
+    "readingTask": {
+      "text": "Thomas hat viele Hobbys. Er spielt gern FuSSball und trainiert zweimal pro Woche. Seine Schwester Anna malt gern. Sie hat schon 20 Bilder gemalt. Ihr Bruder Max hört gern Musik und spielt Gitarre. Am Wochenende gehen sie zusammen schwimmen.",
+      "questions": [
+        {
+          "question": "Wie oft trainiert Thomas?",
+          "options": [
+            "einmal pro Woche",
+            "zweimal pro Woche",
+            "dreimal pro Woche",
+            "jeden Tag"
+          ],
+          "answer": "zweimal pro Woche"
+        },
+        {
+          "question": "Was macht Anna gern?",
+          "options": [
+            "FuSSball",
+            "malen",
+            "Musik hören",
+            "kochen"
+          ],
+          "answer": "malen"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Was machst du in deiner Freizeit? B: Ich lese gern Romane und gehe spazieren.",
+      "questions": [
+        {
+          "question": "Was macht B gern?",
+          "options": [
+            "lesen",
+            "kochen",
+            "tanzen",
+            "Filme sehen"
+          ],
+          "answer": "lesen"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write 6 sentences about your hobbies using \"gern\". Include likes, dislikes, and preferences."
+    },
+    "speakingTask": {
+      "prompt": "Describe 3 hobbies you enjoy and how often you do them."
+    },
+    "reviewSummary": "\"gern\" after verb = like to. \"nicht gern\" = not like. \"lieber\" = prefer. \"am liebsten\" = favorite.",
+    "conceptsTaught": [
+      "a1_modal_verbs"
+    ],
+    "formsTables": [
+      {
+        "title": "A1 modal verb forms",
+        "rows": [
+          [
+            "können",
+            "ich kann, du kannst, er kann, wir können",
+            "Ich kann Deutsch sprechen."
+          ],
+          [
+            "müssen",
+            "ich muss, du musst, er muss, wir müssen",
+            "Du musst lernen."
+          ],
+          [
+            "wollen",
+            "ich will, du willst, er will, wir wollen",
+            "Er will gehen."
+          ],
+          [
+            "möchten",
+            "ich möchte, du möchtest, er möchte, wir möchten",
+            "Ich möchte Tee."
+          ],
+          [
+            "dürfen",
+            "ich darf, du darfst, er darf, wir dürfen",
+            "Wir dürfen gehen."
+          ],
+          [
+            "sollen",
+            "ich soll, du sollst, er soll, ihr sollt",
+            "Ihr sollt pünktlich sein."
+          ]
+        ]
+      },
+      {
+        "title": "Modal sentence pattern",
+        "rows": [
+          [
+            "subject",
+            "modal verb",
+            "middle information",
+            "infinitive at the end"
+          ],
+          [
+            "Ich",
+            "kann",
+            "gut",
+            "singen."
+          ],
+          [
+            "Er",
+            "will",
+            "nach Hause",
+            "gehen."
+          ],
+          [
+            "Du",
+            "musst",
+            "heute",
+            "lernen."
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not conjugate both verbs: Ich kann schwimme is wrong; Ich kann schwimmen is correct.",
+      "Use kannst with du: Kannst du mir helfen?",
+      "Müssen has ich muss and er muss, not ich müsse in A1.",
+      "Möchte is polite for ordering food or making requests."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ schwimmen. (können)",
+        "answer": "kann"
+      },
+      {
+        "prompt": "Du ___ lernen. (müssen)",
+        "answer": "musst"
+      },
+      {
+        "prompt": "Er ___ nach Hause gehen. (wollen)",
+        "answer": "will"
+      },
+      {
+        "prompt": "Put the infinitive at the end: Ich / kann / gut / singen.",
+        "answer": "Ich kann gut singen."
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_modal_verbs"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_modal_verbs"
+    ],
+    "pronunciationNotes": [
+      "In können and müssen, round your lips for ö and ü. In möchte, ch is soft after ö."
+    ],
+    "conceptId": "a1_modal_verbs",
+    "remediationIfFailed": "If modal questions are missed, underline the modal verb and circle the infinitive at the sentence end in every example."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_9",
+    "title": "Wortstellung in Hauptsätzen",
+    "objective": "Shop for food, use quantities, and ask about prices.",
+    "explanation": "German main clauses use the verb-second rule. The conjugated verb stands in position 2. Position 1 can be the subject or a time/place word. If a time word starts the sentence, the subject comes after the verb: Ich gehe heute ins Kino. Heute gehe ich ins Kino. Morgen fahren wir nach Berlin. This is not a question; it is normal German word order. Many A1 mistakes happen when learners keep English order after heute or morgen.",
+    "examples": [
+      "Ich gehe heute ins Kino. - I am going to the cinema today.",
+      "Heute gehe ich ins Kino. - Today I am going to the cinema.",
+      "Wir gehen heute ins Kino. - We are going to the cinema today.",
+      "Morgen fahren wir nach Berlin. - Tomorrow we are going to Berlin.",
+      "Ich habe heute keine Zeit. - I have no time today.",
+      "Heute bin ich im Krankenhaus. - Today I am in the hospital."
+    ],
+    "grammarFocus": "Accusative articles with \"möchten\" and \"brauchen\"",
+    "vocabulary": [
+      {
+        "word": "der Apfel",
+        "translation": "apple"
+      },
+      {
+        "word": "die Milch",
+        "translation": "milk"
+      },
+      {
+        "word": "das Brot",
+        "translation": "bread"
+      },
+      {
+        "word": "das Ei",
+        "translation": "egg"
+      },
+      {
+        "word": "der Käse",
+        "translation": "cheese"
+      },
+      {
+        "word": "die Tomate",
+        "translation": "tomato"
+      },
+      {
+        "word": "die Flasche",
+        "translation": "bottle"
+      },
+      {
+        "word": "das Kilo",
+        "translation": "kilo"
+      },
+      {
+        "word": "kosten",
+        "translation": "to cost"
+      },
+      {
+        "word": "bezahlen",
+        "translation": "to pay"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Ask for the price of milk",
+        "answer": "Was kostet die Milch?"
+      },
+      {
+        "prompt": "Translate \"three eggs\"",
+        "answer": "drei Eier"
+      },
+      {
+        "prompt": "Plural of \"der Apfel\"",
+        "answer": "die Äpfel"
+      }
+    ],
+    "readingTask": {
+      "text": "Peter geht in den Supermarkt. Er braucht Milch, Brot und Käse. Die Milch kostet 1,19 Euro. Das Brot kostet 2,49 Euro. Der Käse kostet 3,99 Euro. An der Kasse bezahlt er 7,67 Euro. Dann geht er nach Hause.",
+      "questions": [
+        {
+          "question": "Was kostet das Brot?",
+          "options": [
+            "1,19 Euro",
+            "2,49 Euro",
+            "3,99 Euro",
+            "0,99 Euro"
+          ],
+          "answer": "2,49 Euro"
+        },
+        {
+          "question": "Wie viel bezahlt Peter insgesamt?",
+          "options": [
+            "5,67 Euro",
+            "7,67 Euro",
+            "9,67 Euro",
+            "6,67 Euro"
+          ],
+          "answer": "7,67 Euro"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Kann ich Ihnen helfen? B: Ja, ich suche frische Tomaten. A: Die Tomaten sind dort im Gemüseregal.",
+      "questions": [
+        {
+          "question": "Was sucht der Kunde?",
+          "options": [
+            "Milch",
+            "Tomaten",
+            "Käse",
+            "Brot"
+          ],
+          "answer": "Tomaten"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a shopping list with 8 items and estimated prices."
+    },
+    "speakingTask": {
+      "prompt": "Role play customer and shopkeeper. Ask for 3 items and prices."
+    },
+    "reviewSummary": "Plurals are unpredictable. Always learn the plural: der Apfel -> die Äpfel. Euro stays the same in plural. \"An der Kasse\" = at the register.",
+    "conceptsTaught": [
+      "a1_word_order_main_clause"
+    ],
+    "commonMistakes": [
+      "Do not write Heute ich bin im Krankenhaus. Use Heute bin ich im Krankenhaus.",
+      "Do not put the conjugated verb at the end in a main clause: Ich ins Kino gehe heute is wrong.",
+      "After a fronted time word, invert subject and verb: Morgen fahren wir.",
+      "Questions have their own patterns; this lesson is about statements."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Correct: Heute ich bin im Krankenhaus.",
+        "answer": "Heute bin ich im Krankenhaus."
+      },
+      {
+        "prompt": "Order: gehen / heute / wir / ins Kino",
+        "answer": "Wir gehen heute ins Kino."
+      },
+      {
+        "prompt": "Complete: Morgen ___ wir nach Berlin. (fahren)",
+        "answer": "fahren"
+      },
+      {
+        "prompt": "Is this correct? Heute gehe ich ins Kino.",
+        "answer": "richtig"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_word_order_main_clause"
+    ],
+    "estimatedMinutes": 22,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_word_order_main_clause"
+    ],
+    "pronunciationNotes": [
+      "Heute has the eu sound like oy. Kino has stress on the first syllable: KI-no."
+    ],
+    "conceptId": "a1_word_order_main_clause",
+    "formsTables": [
+      {
+        "title": "Verb-second pattern",
+        "rows": [
+          [
+            "Position 1",
+            "Position 2 conjugated verb",
+            "Subject",
+            "Rest"
+          ],
+          [
+            "Ich",
+            "gehe",
+            "-",
+            "heute ins Kino."
+          ],
+          [
+            "Heute",
+            "gehe",
+            "ich",
+            "ins Kino."
+          ],
+          [
+            "Morgen",
+            "fahren",
+            "wir",
+            "nach Berlin."
+          ],
+          [
+            "Heute",
+            "bin",
+            "ich",
+            "im Krankenhaus."
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If word-order questions are missed, mark the conjugated verb in every sentence and check that it is in position 2."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_2",
+    "id": "A1_lesson_10",
+    "title": "Ja/Nein-Fragen und W-Fragen",
+    "objective": "Order food and drinks at a German restaurant.",
+    "explanation": "German has two basic question types. In yes/no questions, the conjugated verb comes first: Kommst du? Hast du Zeit? Sind Sie Frau Müller? In W-questions, the question word comes first, then the conjugated verb comes second: Wo wohnst du? Woher kommst du? Wie heißen Sie? Was machst du? For time, German often asks Wie viel Uhr ist es? The word order after Warum, Wo, Woher, Wie, and Was is the same: question word + verb + subject + rest.",
+    "examples": [
+      "Kommst du aus Deutschland? - Do you come from Germany?",
+      "Hast du morgen Zeit? - Do you have time tomorrow?",
+      "Sind Sie Frau Müller? - Are you Ms. Müller?",
+      "Wie heißen Sie? - What is your name?",
+      "Wo wohnst du? - Where do you live?",
+      "Woher kommt er? - Where does he come from?",
+      "Wie alt bist du? - How old are you?",
+      "Wie viel Uhr ist es? - What time is it?"
+    ],
+    "grammarFocus": "The modal verb \"möchten\" (would like)",
+    "vocabulary": [
+      {
+        "word": "die Speisekarte",
+        "translation": "menu"
+      },
+      {
+        "word": "die Vorspeise",
+        "translation": "starter"
+      },
+      {
+        "word": "der Hauptgang",
+        "translation": "main course"
+      },
+      {
+        "word": "der Nachtisch",
+        "translation": "dessert"
+      },
+      {
+        "word": "das Getränk",
+        "translation": "drink"
+      },
+      {
+        "word": "die Rechnung",
+        "translation": "bill"
+      },
+      {
+        "word": "der Kellner",
+        "translation": "waiter"
+      },
+      {
+        "word": "bestellen",
+        "translation": "to order"
+      },
+      {
+        "word": "schmecken",
+        "translation": "to taste"
+      },
+      {
+        "word": "empfehlen",
+        "translation": "to recommend"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you order water?",
+        "answer": "Ich möchte Wasser"
+      },
+      {
+        "prompt": "What dös \"die Rechnung\" mean?",
+        "answer": "the bill"
+      },
+      {
+        "prompt": "Could I have the menu?",
+        "answer": "Kann ich die Speisekarte haben?"
+      }
+    ],
+    "readingTask": {
+      "text": "Familie Müller geht ins Restaurant. Herr Müller bestellt ein Schnitzel mit Pommes. Frau Müller nimmt den Salat. Die Kinder bestellen Spaghetti. Der Kellner bringt Apfelsaft und Mineralwasser. Das Essen schmeckt allen sehr gut. Am Ende sagt Herr Müller: \"Zahlen, bitte!\"",
+      "questions": [
+        {
+          "question": "Was bestellt Herr Müller?",
+          "options": [
+            "Salat",
+            "Schnitzel",
+            "Spaghetti",
+            "Fisch"
+          ],
+          "answer": "Schnitzel"
+        },
+        {
+          "question": "Was trinken die Kinder?",
+          "options": [
+            "Cola",
+            "Apfelsaft",
+            "Bier",
+            "Wasser"
+          ],
+          "answer": "Apfelsaft"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "Kellner: Guten Abend, was möchten Sie bestellen? Gast: Ich hätte gern die Tomatensuppe, dann den Braten. Kellner: Und zu trinken? Gast: Ein Glas Rotwein, bitte.",
+      "questions": [
+        {
+          "question": "Was ist die Vorspeise?",
+          "options": [
+            "Braten",
+            "Tomatensuppe",
+            "Salat",
+            "Brot"
+          ],
+          "answer": "Tomatensuppe"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a full restaurant dialogü including greeting, ordering, and asking for the bill."
+    },
+    "speakingTask": {
+      "prompt": "Role play ordering in a German restaurant. Partner plays the waiter."
+    },
+    "reviewSummary": "\"Ich möchte\" = polite reqüst. \"Ich hätte gern\" = even more polite. \"Kann ich ... haben?\" = Can I have... Trinkgeld = tip (5-10%).",
+    "conceptsTaught": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "commonMistakes": [
+      "Do not use English order in questions: Du kommst? is possible with rising intonation, but A1 standard form is Kommst du?",
+      "After a W-word, keep the verb second: Woher kommst du?",
+      "Use Wie heißen Sie? for a name, not Was heißen Sie?",
+      "Capitalize formal Sie in questions."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Make a yes/no question: du kommst morgen",
+        "answer": "Kommst du morgen?"
+      },
+      {
+        "prompt": "Fill: ___ wohnst du? (where)",
+        "answer": "Wo"
+      },
+      {
+        "prompt": "Fill: ___ kommt er? (from where)",
+        "answer": "Woher"
+      },
+      {
+        "prompt": "Ask the time: ___ Uhr ist es?",
+        "answer": "Wie viel"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_yes_no_questions",
+      "a1_w_questions"
+    ],
+    "pronunciationNotes": [
+      "In Fragen, raise your voice slightly at the end of yes/no questions. W-questions often fall at the end."
+    ],
+    "conceptId": "a1_yes_no_questions",
+    "formsTables": [
+      {
+        "title": "Question patterns",
+        "rows": [
+          [
+            "Yes/no question",
+            "Verb + subject + rest",
+            "Kommst du morgen?"
+          ],
+          [
+            "W-question",
+            "Question word + verb + subject + rest",
+            "Wo wohnst du?"
+          ],
+          [
+            "Formal question",
+            "Verb + Sie + rest",
+            "Sind Sie Frau Müller?"
+          ],
+          [
+            "Time question",
+            "Wie viel Uhr + verb + subject",
+            "Wie viel Uhr ist es?"
+          ]
+        ]
+      },
+      {
+        "title": "A1 question words",
+        "rows": [
+          [
+            "wie",
+            "how/what in names",
+            "Wie heißen Sie? Wie alt bist du?"
+          ],
+          [
+            "wo",
+            "where",
+            "Wo wohnst du?"
+          ],
+          [
+            "woher",
+            "from where",
+            "Woher kommst du?"
+          ],
+          [
+            "was",
+            "what",
+            "Was machst du?"
+          ],
+          [
+            "warum",
+            "why",
+            "Warum lernst du Deutsch?"
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If question-word tasks are missed, recite the two frames: Verb + subject? and W-word + verb + subject?"
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_11",
+    "title": "Negation mit nicht und kein",
+    "objective": "Describe the weather and seasons.",
+    "explanation": "German uses nicht and kein for negation. Use kein before a noun when you mean no/not a: Ich habe kein Auto. Das ist kein Tisch. Kein changes like ein: kein Hund, keine Katze, kein Buch, keinen Hund in the masculine accusative. Use nicht to negate verbs, adjectives, adverbs, or whole ideas when no noun with a/an follows: Das ist nicht richtig. Ich mag Kaffee nicht. Er arbeitet nicht sonntags. Ich bin nicht müde.",
+    "examples": [
+      "Ich habe kein Auto. - I have no car.",
+      "Das ist nicht richtig. - That is not correct.",
+      "Das ist kein Tisch. - That is not a table.",
+      "Er hat keinen Hund. - He has no dog.",
+      "Sie hat keine Schwester. - She has no sister.",
+      "Ich mag Kaffee nicht. - I do not like coffee.",
+      "Ich bin nicht müde. - I am not tired."
+    ],
+    "grammarFocus": "Weather vocabulary and \"es\" phrases",
+    "vocabulary": [
+      {
+        "word": "das Wetter",
+        "translation": "weather"
+      },
+      {
+        "word": "die Sonne",
+        "translation": "sun"
+      },
+      {
+        "word": "der Regen",
+        "translation": "rain"
+      },
+      {
+        "word": "der Schnee",
+        "translation": "snow"
+      },
+      {
+        "word": "der Wind",
+        "translation": "wind"
+      },
+      {
+        "word": "die Wolke",
+        "translation": "cloud"
+      },
+      {
+        "word": "warm",
+        "translation": "warm"
+      },
+      {
+        "word": "kalt",
+        "translation": "cold"
+      },
+      {
+        "word": "heiss",
+        "translation": "hot"
+      },
+      {
+        "word": "regnen",
+        "translation": "to rain"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"it is sunny\"?",
+        "answer": "Es ist sonnig"
+      },
+      {
+        "prompt": "What dös \"es regnet\" mean?",
+        "answer": "it is raining"
+      },
+      {
+        "prompt": "Translate \"it is cold\"",
+        "answer": "Es ist kalt"
+      }
+    ],
+    "readingTask": {
+      "text": "Heute ist das Wetter schön. Die Sonne scheint und es ist warm, 25 Grad. Lisa geht mit ihren Freunden in den Park. Dort essen sie Eis. Aber morgen regnet es. Dann bleiben Lisa und ihre Freunde zu Hause.",
+      "questions": [
+        {
+          "question": "Wie ist das Wetter heute?",
+          "options": [
+            "schön und warm",
+            "schlecht",
+            "kalt",
+            "regnerisch"
+          ],
+          "answer": "schön und warm"
+        },
+        {
+          "question": "Was macht Lisa bei Regen?",
+          "options": [
+            "in den Park gehen",
+            "zu Hause bleiben",
+            "Eis essen",
+            "Freunde treffen"
+          ],
+          "answer": "zu Hause bleiben"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wie ist das Wetter heute? B: Es regnet leider. A: Schade, dann bleiben wir zu Hause.",
+      "questions": [
+        {
+          "question": "Wie ist das Wetter?",
+          "options": [
+            "sonnig",
+            "regnerisch",
+            "warm",
+            "kalt"
+          ],
+          "answer": "regnerisch"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a weather report for 4 different days."
+    },
+    "speakingTask": {
+      "prompt": "Describe todays weather and what you will do accordingly."
+    },
+    "reviewSummary": "Use \"Es ist\" + adjective for conditions. \"Es\" + verb for actions (Es regnet, Es schneit). \"Im\" + season = in the season.",
+    "conceptsTaught": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "formsTables": [
+      {
+        "title": "Kein forms in basic A1",
+        "rows": [
+          [
+            "masculine nominative",
+            "kein",
+            "Das ist kein Tisch."
+          ],
+          [
+            "feminine nominative/accusative",
+            "keine",
+            "Das ist keine Blume."
+          ],
+          [
+            "neuter nominative/accusative",
+            "kein",
+            "Er hat kein Buch."
+          ],
+          [
+            "masculine accusative",
+            "keinen",
+            "Ich habe keinen Hund."
+          ],
+          [
+            "plural",
+            "keine",
+            "Wir haben keine Kinder."
+          ]
+        ]
+      },
+      {
+        "title": "Nicht or kein?",
+        "rows": [
+          [
+            "before a noun with a/an idea",
+            "kein",
+            "Ich habe kein Auto."
+          ],
+          [
+            "adjective/adverb",
+            "nicht",
+            "Das ist nicht richtig."
+          ],
+          [
+            "verb or whole action",
+            "nicht",
+            "Er arbeitet nicht sonntags."
+          ],
+          [
+            "preference",
+            "nicht",
+            "Ich mag Kaffee nicht."
+          ]
+        ]
+      }
+    ],
+    "commonMistakes": [
+      "Do not use nicht before a noun when you mean not a/no: Das ist kein Apfel.",
+      "Remember masculine accusative: keinen Hund, keinen Termin.",
+      "Use nicht with adjectives: nicht müde, nicht richtig.",
+      "Place nicht after the object in many simple A1 sentences: Ich mag Kaffee nicht."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich habe ___ Auto. (no car)",
+        "answer": "kein"
+      },
+      {
+        "prompt": "Das ist ___ richtig.",
+        "answer": "nicht"
+      },
+      {
+        "prompt": "Er hat ___ Hund. (no dog)",
+        "answer": "keinen"
+      },
+      {
+        "prompt": "Sie hat ___ Schwester. (no sister)",
+        "answer": "keine"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_negation_nicht_kein",
+      "a1_negation_kein"
+    ],
+    "pronunciationNotes": [
+      "Nicht has the soft ich-Laut after i. Kein rhymes with ein."
+    ],
+    "conceptId": "a1_negation_nicht_kein",
+    "remediationIfFailed": "If negation questions are missed, decide first: Is the negated word a noun with a/an? If yes, use kein; otherwise try nicht."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_12",
+    "title": "Pluralformen lernen",
+    "objective": "Describe colors and clothing items.",
+    "explanation": "German plurals are learned with the noun because there are several patterns. The article for all plural nouns is die: der Tisch -> die Tische, die Blume -> die Blumen, das Kind -> die Kinder. Common endings are -e, -en/-n, -er, -s, and sometimes an umlaut appears: der Apfel -> die Äpfel, der Bruder -> die Brüder, die Mutter -> die Mütter. There is no single plural ending like English -s, so learn article + singular + plural together.",
+    "examples": [
+      "der Tisch -> die Tische - table -> tables",
+      "die Blume -> die Blumen - flower -> flowers",
+      "das Kind -> die Kinder - child -> children",
+      "der Apfel -> die Äpfel - apple -> apples",
+      "der Bus -> die Busse - bus -> buses",
+      "der Bruder -> die Brüder - brother -> brothers",
+      "die Mutter -> die Mütter - mother -> mothers"
+    ],
+    "grammarFocus": "Color adjectives and their endings",
+    "vocabulary": [
+      {
+        "word": "rot",
+        "translation": "red"
+      },
+      {
+        "word": "blau",
+        "translation": "blü"
+      },
+      {
+        "word": "grün",
+        "translation": "green"
+      },
+      {
+        "word": "gelb",
+        "translation": "yellow"
+      },
+      {
+        "word": "schwarz",
+        "translation": "black"
+      },
+      {
+        "word": "weiss",
+        "translation": "white"
+      },
+      {
+        "word": "der Pullover",
+        "translation": "sweater"
+      },
+      {
+        "word": "die Jacke",
+        "translation": "jacket"
+      },
+      {
+        "word": "das Hemd",
+        "translation": "shirt"
+      },
+      {
+        "word": "die Hose",
+        "translation": "pants"
+      },
+      {
+        "word": "der Schuh",
+        "translation": "shö"
+      },
+      {
+        "word": "tragen",
+        "translation": "to wear"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"a red sweater\"?",
+        "answer": "ein roter Pullover"
+      },
+      {
+        "prompt": "What is \"die Jacke\"?",
+        "answer": "the jacket"
+      },
+      {
+        "prompt": "Translate \"blü shös\"",
+        "answer": "blaue Schuhe"
+      }
+    ],
+    "readingTask": {
+      "text": "Anna geht einkaufen. Sie kauft einen grünen Rock und ein weisses Hemd. Ihr Bruder Tom kauft eine schwarze Hose und einen blauen Pullover. Die Sachen kosten 120 Euro insgesamt.",
+      "questions": [
+        {
+          "question": "Was kauft Anna?",
+          "options": [
+            "grüner Rock, weisses Hemd",
+            "schwarze Hose",
+            "blauer Pullover",
+            "rote Schuhe"
+          ],
+          "answer": "grüner Rock, weisses Hemd"
+        },
+        {
+          "question": "Wie viel kosten die Sachen?",
+          "options": [
+            "80 Euro",
+            "100 Euro",
+            "120 Euro",
+            "90 Euro"
+          ],
+          "answer": "120 Euro"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Welche Farbe hat dein neues Kleid? B: Es ist rot. Ich liebe rote Kleider!",
+      "questions": [
+        {
+          "question": "Welche Farbe hat das Kleid?",
+          "options": [
+            "blau",
+            "rot",
+            "grün",
+            "gelb"
+          ],
+          "answer": "rot"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Describe your outfit today using colors and clothing vocabulary (5 sentences)."
+    },
+    "speakingTask": {
+      "prompt": "Describe what you are wearing today in German."
+    },
+    "reviewSummary": "Adjective endings: ein roter Pullover (m.), eine rote Jacke (f.), ein rotes Hemd (n.) \"tragen\" = to wear.",
+    "conceptsTaught": [
+      "a1_plural_basics"
+    ],
+    "commonMistakes": [
+      "Do not use der/das for plural subjects. The plural article is die.",
+      "Do not assume every plural ends in -s.",
+      "Do not drop umlauts in displayed German: Brüder, Mütter, Äpfel.",
+      "Learn plural with each noun, especially medical nouns later."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "der Tisch -> die ___",
+        "answer": "Tische"
+      },
+      {
+        "prompt": "die Blume -> die ___",
+        "answer": "Blumen"
+      },
+      {
+        "prompt": "das Kind -> die ___",
+        "answer": "Kinder"
+      },
+      {
+        "prompt": "der Apfel -> die ___",
+        "answer": "Äpfel"
+      },
+      {
+        "prompt": "die Mutter -> die ___",
+        "answer": "Mütter"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_plural_basics"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_plural_basics"
+    ],
+    "pronunciationNotes": [
+      "Ä in Äpfel sounds close to e. Ü in Brüder and Mütter needs rounded lips."
+    ],
+    "conceptId": "a1_plural_basics",
+    "formsTables": [
+      {
+        "title": "Common A1 plural patterns",
+        "rows": [
+          [
+            "-e",
+            "der Tisch -> die Tische",
+            "many masculine/neuter nouns"
+          ],
+          [
+            "-en/-n",
+            "die Blume -> die Blumen, das Auge -> die Augen",
+            "many feminine nouns"
+          ],
+          [
+            "-er + possible umlaut",
+            "das Kind -> die Kinder",
+            "some neuter nouns"
+          ],
+          [
+            "umlaut + ending",
+            "der Apfel -> die Äpfel, die Mutter -> die Mütter",
+            "memorize with word"
+          ],
+          [
+            "-s",
+            "das Auto -> die Autos",
+            "many loanwords and short forms"
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If plural tasks are missed, make a three-column list: singular with article, plural with die, and example sentence."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_13",
+    "title": "Grundpräpositionen",
+    "objective": "Talk about your family members.",
+    "explanation": "This lesson covers two A1 topics that often appear together in simple descriptions: possessive words and basic location prepositions. Possessives agree with the noun that follows: mein Buch, meine Mutter, dein Hund, seine Schwester, ihr Auto, unser Haus. Basic prepositions describe location: auf (on horizontal surfaces), an (on vertical surfaces), in (in), neben (next to), vor (in front of), mit (with), nach/zu (toward/to), bei (at/with a person or institution), von (from/of). At A1, focus first on meaning and fixed everyday phrases.",
+    "examples": [
+      "Das ist mein Buch. - That is my book.",
+      "Das ist meine Mutter. - That is my mother.",
+      "Das ist dein Hund. - That is your dog.",
+      "Seine Schwester wohnt in Berlin. - His sister lives in Berlin.",
+      "Das Buch liegt auf dem Tisch. - The book is on the table.",
+      "Das Bild hängt an der Wand. - The picture hangs on the wall.",
+      "Das Auto steht vor dem Haus. - The car is in front of the house."
+    ],
+    "grammarFocus": "Possessive articles \"mein\" and \"dein\"",
+    "vocabulary": [
+      {
+        "word": "der Vater",
+        "translation": "father"
+      },
+      {
+        "word": "die Mutter",
+        "translation": "mother"
+      },
+      {
+        "word": "der Bruder",
+        "translation": "brother"
+      },
+      {
+        "word": "die Schwester",
+        "translation": "sister"
+      },
+      {
+        "word": "der Opa",
+        "translation": "grandpa"
+      },
+      {
+        "word": "die Oma",
+        "translation": "grandma"
+      },
+      {
+        "word": "der Onkel",
+        "translation": "uncle"
+      },
+      {
+        "word": "die Tante",
+        "translation": "aunt"
+      },
+      {
+        "word": "die Familie",
+        "translation": "family"
+      },
+      {
+        "word": "der Sohn",
+        "translation": "son"
+      },
+      {
+        "word": "die Tochter",
+        "translation": "daughter"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Translate \"my mother\"",
+        "answer": "meine Mutter"
+      },
+      {
+        "prompt": "How do you say \"I have a brother\"?",
+        "answer": "Ich habe einen Bruder"
+      },
+      {
+        "prompt": "What is \"die Schwester\"?",
+        "answer": "sister"
+      }
+    ],
+    "readingTask": {
+      "text": "Thomas stellt seine Familie vor: Das ist mein Vater Klaus. Er ist Arzt. Meine Mutter Maria ist Lehrerin. Ich habe einen Bruder, Lukas, und eine Schwester, Emma. Wir haben auch einen Hund namens Bello. Meine Oma und mein Opa wohnen in Berlin.",
+      "questions": [
+        {
+          "question": "Wer ist Klaus?",
+          "options": [
+            "der Vater",
+            "der Bruder",
+            "der Opa",
+            "der Onkel"
+          ],
+          "answer": "der Vater"
+        },
+        {
+          "question": "Wo wohnen die Grosseltern?",
+          "options": [
+            "Hamburg",
+            "Berlin",
+            "München",
+            "Köln"
+          ],
+          "answer": "Berlin"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Hast du Geschwister? B: Ja, ich habe eine Schwester. Sie ist 10 Jahre alt.",
+      "questions": [
+        {
+          "question": "Hat B einen Bruder oder eine Schwester?",
+          "options": [
+            "einen Bruder",
+            "eine Schwester",
+            "keine",
+            "zwei"
+          ],
+          "answer": "eine Schwester"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write 8 sentences about your family with names and facts."
+    },
+    "speakingTask": {
+      "prompt": "Introduce your family with names, ages, and professions."
+    },
+    "reviewSummary": "\"mein\" = my for masc./neut. \"meine\" = my for fem./plural. \"Hast du Geschwister?\" = Do you have siblings?",
+    "conceptsTaught": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "commonMistakes": [
+      "Do not use meine before masculine/neuter singular nouns: mein Buch, mein Hund.",
+      "Do not confuse sein (his) and ihr (her/their). Context matters.",
+      "Use auf for on a table and an for on a wall.",
+      "At this stage, learn common preposition chunks before worrying about every case rule."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Choose: Das ist ___ Buch. (my)",
+        "answer": "mein"
+      },
+      {
+        "prompt": "Choose: Das ist ___ Mutter. (my)",
+        "answer": "meine"
+      },
+      {
+        "prompt": "Choose: Das Buch liegt ___ dem Tisch.",
+        "answer": "auf"
+      },
+      {
+        "prompt": "Choose: Das Bild hängt ___ der Wand.",
+        "answer": "an"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "estimatedMinutes": 24,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_basic_prepositions",
+      "a1_possessive_adjectives"
+    ],
+    "pronunciationNotes": [
+      "Mein and dein have the ei sound like English eye. In Wand, final d sounds like t."
+    ],
+    "conceptId": "a1_basic_prepositions",
+    "formsTables": [
+      {
+        "title": "Possessive words before nouns",
+        "rows": [
+          [
+            "masculine/neuter",
+            "mein, dein, sein, ihr, unser",
+            "mein Buch, dein Hund, unser Haus"
+          ],
+          [
+            "feminine/plural",
+            "meine, deine, seine, ihre, unsere",
+            "meine Mutter, seine Schwester, meine Eltern"
+          ]
+        ]
+      },
+      {
+        "title": "Basic prepositions in linked questions",
+        "rows": [
+          [
+            "auf",
+            "on a horizontal surface",
+            "auf dem Tisch"
+          ],
+          [
+            "an",
+            "on/at a vertical surface",
+            "an der Wand"
+          ],
+          [
+            "in",
+            "in",
+            "in Berlin, in der Praxis"
+          ],
+          [
+            "neben",
+            "next to",
+            "neben dem Stuhl"
+          ],
+          [
+            "vor",
+            "in front of",
+            "vor dem Haus"
+          ],
+          [
+            "mit",
+            "with/by means of",
+            "mit dem Bus"
+          ],
+          [
+            "nach/zu",
+            "to/toward",
+            "nach Berlin, zum Arzt"
+          ],
+          [
+            "bei/von",
+            "at/from/of",
+            "bei der Ärztin, von Max"
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If possessive or preposition questions are missed, review noun gender first, then memorize the location examples as complete phrases."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_14",
+    "title": "Zeit, Zahlen und Datum",
+    "objective": "Describe your home and its rooms.",
+    "explanation": "A1 time language combines numbers with fixed expressions. Full hours use Es ist zwei Uhr. For minutes, use nach for after and vor for before: zehn Minuten nach zehn, Viertel vor neun. Halb works differently from English: halb sechs means halfway to six, so it is 5:30. Dates and appointments use days, months, and ordinal numbers later, but the core skill here is reading and saying simple clock times and compound numbers such as zweiundzwanzig.",
+    "examples": [
+      "Es ist zwei Uhr. - It is two o’clock.",
+      "Es ist Viertel nach drei. - It is quarter past three.",
+      "Es ist halb sechs. - It is half past five / 5:30.",
+      "Es ist Viertel vor neun. - It is quarter to nine / 8:45.",
+      "Es ist zehn Minuten nach zehn. - It is ten minutes past ten.",
+      "22 heißt zweiundzwanzig. - 22 is called zweiundzwanzig.",
+      "Der Termin ist am Montag. - The appointment is on Monday."
+    ],
+    "grammarFocus": "Rooms, furniture, and location prepositions",
+    "vocabulary": [
+      {
+        "word": "das Haus",
+        "translation": "house"
+      },
+      {
+        "word": "die Wohnung",
+        "translation": "apartment"
+      },
+      {
+        "word": "das Wohnzimmer",
+        "translation": "living room"
+      },
+      {
+        "word": "die Küche",
+        "translation": "kitchen"
+      },
+      {
+        "word": "das Schlafzimmer",
+        "translation": "bedroom"
+      },
+      {
+        "word": "das Badezimmer",
+        "translation": "bathroom"
+      },
+      {
+        "word": "der Tisch",
+        "translation": "table"
+      },
+      {
+        "word": "der Stuhl",
+        "translation": "chair"
+      },
+      {
+        "word": "das Bett",
+        "translation": "bed"
+      },
+      {
+        "word": "der Schrank",
+        "translation": "closet"
+      },
+      {
+        "word": "das Sofa",
+        "translation": "couch"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"the kitchen\"?",
+        "answer": "die Küche"
+      },
+      {
+        "prompt": "What dös \"Schlafzimmer\" mean?",
+        "answer": "bedroom"
+      },
+      {
+        "prompt": "Translate \"a large living room\"",
+        "answer": "ein grosses Wohnzimmer"
+      }
+    ],
+    "readingTask": {
+      "text": "Marie wohnt in einer Wohnung in Berlin. Ihre Wohnung hat drei Zimmer: ein Wohnzimmer, ein Schlafzimmer und eine Küche. Das Wohnzimmer ist hell und gross. In der Küche gibt es einen neuen Tisch und vier Stühle. Im Schlafzimmer steht ein grosses Bett.",
+      "questions": [
+        {
+          "question": "Wie viele Zimmer hat Maries Wohnung?",
+          "options": [
+            "zwei",
+            "drei",
+            "vier",
+            "eins"
+          ],
+          "answer": "drei"
+        },
+        {
+          "question": "Was steht in der Küche?",
+          "options": [
+            "ein Sofa",
+            "ein Tisch und Stühle",
+            "ein Bett",
+            "ein Schrank"
+          ],
+          "answer": "ein Tisch und Stühle"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wie gross ist deine Wohnung? B: 70 Quadratmeter mit drei Zimmern.",
+      "questions": [
+        {
+          "question": "Wie gross ist die Wohnung?",
+          "options": [
+            "50 qm",
+            "60 qm",
+            "70 qm",
+            "80 qm"
+          ],
+          "answer": "70 qm"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Describe your home: rooms, furniture, favorite room."
+    },
+    "speakingTask": {
+      "prompt": "Describe your dream house with at least 5 rooms."
+    },
+    "reviewSummary": "\"in\" + Dativ = location (wo). \"in\" + Akkusativ = direction (wohin). \"auf dem Tisch\" = on the table.",
+    "conceptsTaught": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates",
+      "a1_vocab_time"
+    ],
+    "commonMistakes": [
+      "Do not translate halb sechs as 6:30. It means 5:30.",
+      "For 8:45, say Viertel vor neun because it is before nine.",
+      "Do not write zwei und zwanzig as three separate words in standard number spelling: zweiundzwanzig.",
+      "Use Uhr for full-hour clock time: Es ist zwei Uhr."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "3 + 5 = ___",
+        "answer": "acht"
+      },
+      {
+        "prompt": "2:00: Es ist ___ Uhr.",
+        "answer": "zwei"
+      },
+      {
+        "prompt": "5:30: Es ist halb ___.",
+        "answer": "sechs"
+      },
+      {
+        "prompt": "8:45: Es ist ___.",
+        "answer": "Viertel vor neun"
+      },
+      {
+        "prompt": "22: zweiund___",
+        "answer": "zwanzig"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_time_numbers_dates",
+      "a1_numbers_dates"
+    ],
+    "pronunciationNotes": [
+      "Uhr has a long u sound. In dreißig, ß is a clear s. In Viertel, pronounce v like f."
+    ],
+    "conceptId": "a1_time_numbers_dates",
+    "formsTables": [
+      {
+        "title": "Clock time patterns",
+        "rows": [
+          [
+            "full hour",
+            "Es ist ___ Uhr.",
+            "Es ist zwei Uhr."
+          ],
+          [
+            "minutes after",
+            "___ Minuten nach ___",
+            "zehn Minuten nach zehn"
+          ],
+          [
+            "quarter after",
+            "Viertel nach ___",
+            "Viertel nach drei"
+          ],
+          [
+            "half to next hour",
+            "halb + next hour",
+            "halb sechs = 5:30"
+          ],
+          [
+            "quarter before",
+            "Viertel vor ___",
+            "Viertel vor neun = 8:45"
+          ]
+        ]
+      },
+      {
+        "title": "Compound numbers review",
+        "rows": [
+          [
+            "21",
+            "einundzwanzig",
+            "one-and-twenty"
+          ],
+          [
+            "22",
+            "zweiundzwanzig",
+            "two-and-twenty"
+          ],
+          [
+            "33",
+            "dreiunddreißig",
+            "three-and-thirty"
+          ],
+          [
+            "47",
+            "siebenundvierzig",
+            "seven-and-forty"
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If time questions are missed, draw a clock and label nach on the right side, vor on the left side, and halb with the next hour."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_3",
+    "id": "A1_lesson_15",
+    "title": "Trennbare Verben im Alltag",
+    "objective": "Describe your daily routine using separable prefix verbs.",
+    "explanation": "Separable verbs have a prefix that moves to the end in simple main clauses. The base verb is conjugated in position 2, and the prefix goes to the end: aufstehen -> Ich stehe um 8 Uhr auf. anrufen -> Er ruft dich an. abfahren -> Wir fahren morgen ab. einkaufen -> Ich kaufe Brot ein. This pattern is extremely common in daily routines. Some verbs such as aufmachen and anmachen can be literal: Du machst das Fenster auf. Ich mache das Licht an.",
+    "examples": [
+      "Ich stehe um 8 Uhr auf. - I get up at 8 o’clock.",
+      "Ich wache um 6 Uhr auf. - I wake up at 6 o’clock.",
+      "Er ruft dich an. - He calls you.",
+      "Wir fahren morgen ab. - We depart tomorrow.",
+      "Du machst das Fenster auf. - You open the window.",
+      "Ich kaufe Brot ein. - I shop for bread.",
+      "Ich mache das Licht an. - I turn on the light."
+    ],
+    "grammarFocus": "Separable prefix verbs and time expressions",
+    "vocabulary": [
+      {
+        "word": "aufstehen",
+        "translation": "to get up"
+      },
+      {
+        "word": "frühstücken",
+        "translation": "to have breakfast"
+      },
+      {
+        "word": "duschen",
+        "translation": "to shower"
+      },
+      {
+        "word": "die Arbeit",
+        "translation": "work"
+      },
+      {
+        "word": "das Mittagessen",
+        "translation": "lunch"
+      },
+      {
+        "word": "nach Hause kommen",
+        "translation": "to come home"
+      },
+      {
+        "word": "fernsehen",
+        "translation": "to watch TV"
+      },
+      {
+        "word": "schlafen gehen",
+        "translation": "to go to sleep"
+      },
+      {
+        "word": "einkaufen",
+        "translation": "to shop"
+      },
+      {
+        "word": "der Tagesablauf",
+        "translation": "daily routine"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Conjugate \"aufstehen\" for \"ich\"",
+        "answer": "stehe auf"
+      },
+      {
+        "prompt": "What dös \"fernsehen\" mean?",
+        "answer": "to watch TV"
+      },
+      {
+        "prompt": "Translate \"I go to bed at 10 PM\"",
+        "answer": "Ich gehe um 22 Uhr schlafen"
+      }
+    ],
+    "readingTask": {
+      "text": "Lena steht jeden Tag um 6:30 Uhr auf. Sie frühstückt um 7 Uhr und geht um 8 Uhr zur Arbeit. Um 12:30 Uhr hat sie Mittagspause. Nach der Arbeit geht sie einkaufen. Um 19 Uhr kocht sie Abendessen. Um 22 Uhr geht sie ins Bett.",
+      "questions": [
+        {
+          "question": "Wann steht Lena auf?",
+          "options": [
+            "6 Uhr",
+            "6:30 Uhr",
+            "7 Uhr",
+            "7:30 Uhr"
+          ],
+          "answer": "6:30 Uhr"
+        },
+        {
+          "question": "Was macht sie nach der Arbeit?",
+          "options": [
+            "einkaufen",
+            "schlafen",
+            "fernsehen",
+            "kochen"
+          ],
+          "answer": "einkaufen"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wann stehst du auf? B: Um 7 Uhr, am Wochenende schlafe ich länger.",
+      "questions": [
+        {
+          "question": "Wann steht B am Wochenende auf?",
+          "options": [
+            "früher",
+            "später",
+            "gleich",
+            "gar nicht"
+          ],
+          "answer": "später"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write your daily routine with 5 separable verbs."
+    },
+    "speakingTask": {
+      "prompt": "Describe a weekday vs weekend day."
+    },
+    "reviewSummary": "Separable verbs: prefix separates in main clause. \"aufstehen\" -> \"Ich stehe...auf\". Prefix gös to end.",
+    "conceptsTaught": [
+      "a1_separable_verbs_intro"
+    ],
+    "commonMistakes": [
+      "Do not keep the prefix attached in a main clause: Ich aufstehe is wrong.",
+      "Do not forget the prefix at the end; it carries important meaning.",
+      "The prefix is not the same as a random preposition. Learn the whole verb: aufstehen, anrufen, einkaufen.",
+      "In a yes/no question, the conjugated verb comes first and the prefix still goes at the end: Stehst du auf?"
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ um 8 Uhr ___. (aufstehen)",
+        "answer": "stehe ... auf"
+      },
+      {
+        "prompt": "Er ___ dich ___. (anrufen)",
+        "answer": "ruft ... an"
+      },
+      {
+        "prompt": "Wir ___ morgen ___. (abfahren)",
+        "answer": "fahren ... ab"
+      },
+      {
+        "prompt": "Ich ___ Brot ___. (einkaufen)",
+        "answer": "kaufe ... ein"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_separable_verbs_intro"
+    ],
+    "estimatedMinutes": 22,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_separable_verbs_intro"
+    ],
+    "pronunciationNotes": [
+      "Separable prefixes are often stressed: AUFstehen, ANrufen, EINkaufen."
+    ],
+    "conceptId": "a1_separable_verbs_intro",
+    "formsTables": [
+      {
+        "title": "Separable verb pattern",
+        "rows": [
+          [
+            "Infinitive",
+            "Conjugated verb in position 2",
+            "Prefix at sentence end"
+          ],
+          [
+            "aufstehen",
+            "Ich stehe",
+            "um 8 Uhr auf."
+          ],
+          [
+            "anrufen",
+            "Er ruft",
+            "dich an."
+          ],
+          [
+            "abfahren",
+            "Wir fahren",
+            "morgen ab."
+          ],
+          [
+            "einkaufen",
+            "Ich kaufe",
+            "Brot ein."
+          ],
+          [
+            "aufmachen",
+            "Du machst",
+            "das Fenster auf."
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If separable-verb questions are missed, write each verb as two boxes: conjugated verb in position 2, prefix at the sentence end."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_4",
+    "id": "A1_lesson_16",
+    "title": "Körperteile, Gesundheit und einfache Sätze",
+    "objective": "Name body parts and describe symptoms.",
+    "explanation": "This lesson combines beginner medical language with simple sentence building and basic commands. For symptoms, A1 uses haben: Ich habe Schmerzen. Der Patient hat Fieber. For identity and location, use sein: Ich bin Arzt. Sie ist in der Klinik. The linked grammar also reviews regular present-tense forms and introduces simple imperatives. Informal singular commands often use the verb stem: Komm! Spiel! Sei leise! Formal commands use the infinitive-like form plus Sie: Gehen Sie nach links! Nehmen Sie bitte Platz! For a group of friends, many commands use the ihr form: Seid leise!",
+    "examples": [
+      "Ich habe Kopfschmerzen. - I have a headache.",
+      "Der Patient hat Fieber. - The patient has a fever.",
+      "Die Ärztin fragt: Haben Sie Schmerzen? - The doctor asks: Do you have pain?",
+      "Gehen Sie geradeaus. - Go straight ahead. (formal)",
+      "Nehmen Sie bitte Platz. - Please take a seat. (formal)",
+      "Komm her! - Come here! (informal)",
+      "Sei leise! - Be quiet! (one friend)",
+      "Seid leise! - Be quiet! (group)"
+    ],
+    "grammarFocus": "Body parts and Schmerzen expressions",
+    "vocabulary": [
+      {
+        "word": "der Kopf",
+        "translation": "head"
+      },
+      {
+        "word": "die Hand",
+        "translation": "hand"
+      },
+      {
+        "word": "der Arm",
+        "translation": "arm"
+      },
+      {
+        "word": "das Bein",
+        "translation": "leg"
+      },
+      {
+        "word": "der Fuss",
+        "translation": "foot"
+      },
+      {
+        "word": "der Rücken",
+        "translation": "back"
+      },
+      {
+        "word": "der Bauch",
+        "translation": "stomach"
+      },
+      {
+        "word": "das Auge",
+        "translation": "eye"
+      },
+      {
+        "word": "der Mund",
+        "translation": "mouth"
+      },
+      {
+        "word": "weh tun",
+        "translation": "to hurt"
+      },
+      {
+        "word": "die Schmerzen",
+        "translation": "pain (pl)"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"My head hurts\"?",
+        "answer": "Mein Kopf tut weh"
+      },
+      {
+        "prompt": "What is Kopfschmerzen?",
+        "answer": "headache"
+      },
+      {
+        "prompt": "Translate \"I have a stomachache\"",
+        "answer": "Ich habe Bauchschmerzen"
+      }
+    ],
+    "readingTask": {
+      "text": "Herr Müller fühlt sich krank. Er geht zum Arzt: \"Mein Kopf tut weh und ich habe Fieber.\" Der Arzt sagt: \"Sie haben eine Erkaltung. Bleiben Sie drei Tage zu Hause und trinken Sie viel Tee.\"",
+      "questions": [
+        {
+          "question": "Was hat Herr Müller?",
+          "options": [
+            "Kopfschmerzen und Fieber",
+            "Bauchschmerzen",
+            "Halsschmerzen",
+            "Rückenschmerzen"
+          ],
+          "answer": "Kopfschmerzen und Fieber"
+        },
+        {
+          "question": "Was empfiehlt der Arzt?",
+          "options": [
+            "Sport",
+            "zu Hause bleiben, Tee trinken",
+            "arbeiten",
+            "schlafen"
+          ],
+          "answer": "zu Hause bleiben, Tee trinken"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "Arzt: Was fehlt Ihnen? Patient: Ich habe starke Rückenschmerzen.",
+      "questions": [
+        {
+          "question": "Welche Schmerzen hat der Patient?",
+          "options": [
+            "Kopfschmerzen",
+            "Rückenschmerzen",
+            "Bauchschmerzen",
+            "Halsschmerzen"
+          ],
+          "answer": "Rückenschmerzen"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a doctor-patient dialogü with 3 symptoms."
+    },
+    "speakingTask": {
+      "prompt": "Role play doctor and patient."
+    },
+    "reviewSummary": "\"weh tun\" + Dativ: Mir tut der Kopf weh. Schmerzen: Kopfschmerzen, Rückenschmerzen, Bauchschmerzen, Halsschmerzen.",
+    "conceptsTaught": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "commonMistakes": [
+      "Do not use sein for symptoms in basic German: Ich bin Fieber is wrong; Ich habe Fieber is correct.",
+      "Formal commands need Sie: Gehen Sie, Nehmen Sie.",
+      "The informal command of sein is irregular: Sei leise!",
+      "For a group, use Seid leise!, not Sei leise.",
+      "Use proper umlauts in displayed medical words: Ärztin, Fuß, Rücken."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Make a formal command: ___ Sie geradeaus! (gehen)",
+        "answer": "Gehen"
+      },
+      {
+        "prompt": "Make an informal command: ___ her! (kommen)",
+        "answer": "Komm"
+      },
+      {
+        "prompt": "Make a group command: ___ leise! (sein)",
+        "answer": "Seid"
+      },
+      {
+        "prompt": "Symptom sentence: Ich ___ Schmerzen.",
+        "answer": "habe"
+      },
+      {
+        "prompt": "Present tense: Er ___ Wasser. (trinken)",
+        "answer": "trinkt"
+      }
+    ],
+    "medicalFspNotes": [
+      "This is only the starter layer; later FSP lessons add history taking and case presentation."
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "estimatedMinutes": 25,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_medical_starter_phrases",
+      "a1_vocab_body_health",
+      "a1_basic_sentence_building"
+    ],
+    "pronunciationNotes": [
+      "Ärztin begins with ä, close to e. Schmerzen has sch like English sh. In ich habe Schmerzen, keep the ch in ich soft."
+    ],
+    "conceptId": "a1_medical_starter_phrases",
+    "formsTables": [
+      {
+        "title": "Medical starter phrases",
+        "rows": [
+          [
+            "pain/symptom",
+            "Ich habe ...",
+            "Ich habe Schmerzen. Ich habe Fieber."
+          ],
+          [
+            "body part",
+            "Der Kopf tut weh.",
+            "My head hurts."
+          ],
+          [
+            "appointment",
+            "Ich habe einen Termin.",
+            "I have an appointment."
+          ],
+          [
+            "question",
+            "Haben Sie Schmerzen?",
+            "Do you have pain?"
+          ]
+        ]
+      },
+      {
+        "title": "Simple imperatives in linked questions",
+        "rows": [
+          [
+            "formal Sie",
+            "verb + Sie",
+            "Gehen Sie nach links. Nehmen Sie Platz."
+          ],
+          [
+            "du command",
+            "verb stem or irregular form",
+            "Komm her! Spiel mit mir! Sei leise!"
+          ],
+          [
+            "ihr command",
+            "ihr verb form without ihr",
+            "Seid leise! Geht nach Hause!"
+          ]
+        ]
+      },
+      {
+        "title": "Present tense review in medical/everyday sentences",
+        "rows": [
+          [
+            "ich",
+            "heiße, gehe, habe",
+            "Ich heiße Anna."
+          ],
+          [
+            "du",
+            "tanzt, kommst",
+            "Du tanzt sehr gut."
+          ],
+          [
+            "er/sie/es",
+            "trinkt, geht, hat",
+            "Er trinkt Wasser."
+          ],
+          [
+            "wir",
+            "kochen, gehen",
+            "Wir kochen heute Abend."
+          ],
+          [
+            "ihr",
+            "geht",
+            "Ihr geht nach Hause."
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If medical sentence or imperative questions are missed, separate the task: first review haben for symptoms, then drill three command types: Sie, du, ihr."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_4",
+    "id": "A1_lesson_17",
+    "title": "Tiere im Zoo",
+    "objective": "Name animals and describe them.",
+    "explanation": "This vocabulary lesson uses animals and zoo descriptions to review A1 noun learning. Even when there are no linked grammar questions, study every noun with its article, plural, and one sentence. Animals are useful for practicing gender, plural forms, colors, and simple adjectives: Der Löwe ist groß. Die Affen sind laut. Das Zebra ist schwarz und weiß. This lesson also reviews basic sentence building with sein and adjective descriptions.",
+    "examples": [
+      "Der Löwe ist groß. - The lion is big.",
+      "Die Affen sind laut. - The monkeys are loud.",
+      "Das Zebra ist schwarz und weiß. - The zebra is black and white.",
+      "Der Elefant hat große Ohren. - The elephant has big ears.",
+      "Ich sehe den Tiger. - I see the tiger.",
+      "Die Kinder gehen in den Zoo. - The children go to the zoo."
+    ],
+    "grammarFocus": "Animals and \"es gibt\"",
+    "vocabulary": [
+      {
+        "word": "der Löwe, die Löwen",
+        "translation": "lion, lions",
+        "example": "Der Löwe ist groß."
+      },
+      {
+        "word": "der Tiger, die Tiger",
+        "translation": "tiger, tigers",
+        "example": "Ich sehe den Tiger."
+      },
+      {
+        "word": "der Elefant, die Elefanten",
+        "translation": "elephant, elephants",
+        "example": "Der Elefant hat große Ohren."
+      },
+      {
+        "word": "das Zebra, die Zebras",
+        "translation": "zebra, zebras",
+        "example": "Das Zebra ist schwarz und weiß."
+      },
+      {
+        "word": "der Affe, die Affen",
+        "translation": "monkey, monkeys",
+        "example": "Die Affen sind laut."
+      },
+      {
+        "word": "der Zoo, die Zoos",
+        "translation": "zoo, zoos",
+        "example": "Wir gehen in den Zoo."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say \"there are lions\"?",
+        "answer": "Es gibt Löwen"
+      },
+      {
+        "prompt": "What dös the monkey eat?",
+        "answer": "Bananen"
+      },
+      {
+        "prompt": "Translate \"a big elephant\"",
+        "answer": "ein grosser Elefant"
+      }
+    ],
+    "readingTask": {
+      "text": "Die Klasse 3a macht einen Ausflug in den Zoo. Sie sehen viele Tiere: Löwen, Tiger, Elefanten und Affen. Der Elefant ist sehr gross. Die Affen sind lustig und klettern auf Bäume. Ein Tiger schlaft im Schatten.",
+      "questions": [
+        {
+          "question": "Welches Tier schlaft im Schatten?",
+          "options": [
+            "der Elefant",
+            "der Lowe",
+            "der Tiger",
+            "der Affe"
+          ],
+          "answer": "der Tiger"
+        },
+        {
+          "question": "Was machen die Affen?",
+          "options": [
+            "schlafen",
+            "klettern",
+            "fressen",
+            "schwimmen"
+          ],
+          "answer": "klettern"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Welches Tier magst du am liebsten? B: Ich mag Elefanten. Sie sind gross und klug!",
+      "questions": [
+        {
+          "question": "Welches Tier mag B?",
+          "options": [
+            "Löwen",
+            "Elefanten",
+            "Affen",
+            "Tiger"
+          ],
+          "answer": "Elefanten"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a zoo story with 5 animals."
+    },
+    "speakingTask": {
+      "prompt": "Describe your favorite animal."
+    },
+    "reviewSummary": "\"Es gibt\" = there is/are. Animals \"fressen\". People \"essen\".",
+    "conceptsTaught": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "commonMistakes": [
+      "Do not learn animal words without articles.",
+      "Use die for all plural nouns: die Affen, die Löwen.",
+      "Do not drop umlauts in displayed German: Löwe is correct.",
+      "Adjectives used after sein do not take endings at this level: Der Löwe ist groß."
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Add article: ___ Löwe ist groß.",
+        "answer": "Der"
+      },
+      {
+        "prompt": "Plural: der Affe -> die ___",
+        "answer": "Affen"
+      },
+      {
+        "prompt": "Describe the zebra: Das Zebra ist schwarz und ___.",
+        "answer": "weiß"
+      },
+      {
+        "prompt": "Use accusative masculine: Ich sehe ___ Tiger.",
+        "answer": "den"
+      }
+    ],
+    "linkedPracticeConceptTags": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "estimatedMinutes": 20,
+    "prerequisites": [],
+    "prerequisiteConceptIds": [],
+    "lessonDepthVersion": 1,
+    "trackTags": [
+      "goethe",
+      "full-mastery"
+    ],
+    "remediationTags": [
+      "a1_vocab_everyday_core",
+      "a1_vocab_common_adjectives"
+    ],
+    "pronunciationNotes": [
+      "ö in Löwe uses rounded lips. In weiß, ß is a clear s sound. Zoo is pronounced with a long o sound."
+    ],
+    "conceptId": "a1_vocab_everyday_core",
+    "formsTables": [
+      {
+        "title": "How to study animal nouns",
+        "rows": [
+          [
+            "article + singular",
+            "plural",
+            "example"
+          ],
+          [
+            "der Löwe",
+            "die Löwen",
+            "Der Löwe ist groß."
+          ],
+          [
+            "der Affe",
+            "die Affen",
+            "Die Affen sind laut."
+          ],
+          [
+            "das Zebra",
+            "die Zebras",
+            "Das Zebra ist schwarz und weiß."
+          ],
+          [
+            "der Elefant",
+            "die Elefanten",
+            "Der Elefant hat große Ohren."
+          ]
+        ]
+      }
+    ],
+    "remediationIfFailed": "If animal vocabulary feels random, make flashcards with article + plural + one adjective sentence."
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_4",
+    "id": "A1_lesson_18",
+    "title": "Meine Stadt",
+    "objective": "Describe your city and what it offers.",
+    "explanation": "City vocabulary: die Stadt, das Dorf, die Strasse, der Platz, der Park, das Kino, das Museum, das Restaurant, das Cafe, der Bahnhof. \"Es gibt\" + Akkusativ: Es gibt einen Park. \"Die Stadt hat\" = the city has. \"Man kann\" = one can. \"Ich wohne in Berlin.\"",
+    "examples": [
+      "Ich wohne in Munchen. - I live in Munich.",
+      "Die Stadt hat einen grossen Park. - The city has a big park.",
+      "Es gibt einen Bahnhof und ein Museum. - There is a train station and a museum.",
+      "Im Zentrum gibt es viele Restaurants. - In the center there are many restaurants.",
+      "Wo ist der Supermarkt? - Where is the supermarket?",
+      "Der Markt ist am Platz. - The market is at the square.",
+      "Meine Stadt hat einen Fluss. - My city has a river.",
+      "In Koln gibt es einen Dom. - In Cologne there is a cathedral.",
+      "Die Praxis ist in der Stadtmitte. - The practice is in the city center.",
+      "Man kann im Park spazieren gehen. - You can walk in the park."
+    ],
+    "grammarFocus": "City vocabulary and \"es gibt\"",
+    "vocabulary": [
+      {
+        "word": "die Stadt",
+        "translation": "city"
+      },
+      {
+        "word": "das Dorf",
+        "translation": "village"
+      },
+      {
+        "word": "das Zentrum",
+        "translation": "center"
+      },
+      {
+        "word": "der Park",
+        "translation": "park"
+      },
+      {
+        "word": "das Kino",
+        "translation": "cinema"
+      },
+      {
+        "word": "das Museum",
+        "translation": "museum"
+      },
+      {
+        "word": "das Restaurant",
+        "translation": "restaurant"
+      },
+      {
+        "word": "der Bahnhof",
+        "translation": "train station"
+      },
+      {
+        "word": "der Markt",
+        "translation": "market"
+      },
+      {
+        "word": "der Platz",
+        "translation": "square"
+      },
+      {
+        "word": "der Fluss",
+        "translation": "river"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Translate: There is a train station.",
+        "answer": "Es gibt einen Bahnhof."
+      },
+      {
+        "prompt": "How do you say I live in Berlin?",
+        "answer": "Ich wohne in Berlin."
+      },
+      {
+        "prompt": "Complete: Im Zentrum gibt ___ einen Markt.",
+        "answer": "es"
+      },
+      {
+        "prompt": "Translate: Where is the museum?",
+        "answer": "Wo ist das Museum?"
+      },
+      {
+        "prompt": "What does Es gibt einen Supermarkt mean?",
+        "answer": "There is a supermarket."
+      },
+      {
+        "prompt": "Complete: Die Stadt ___ einen grossen Park.",
+        "answer": "hat"
+      },
+      {
+        "prompt": "Which preposition: ___ Zentrum gibt es ein Kino.",
+        "answer": "Im"
+      },
+      {
+        "prompt": "Translate: The practice is in the city center.",
+        "answer": "Die Praxis ist in der Stadtmitte."
+      }
+    ],
+    "readingTask": {
+      "text": "Leipzig ist eine schöne Stadt. Sie hat viele Parks, Museen und Cafes. Im Zentrum gibt es einen grossen Marktplatz. Dort kann man Obst und Gemüse kaufen. Leipzig hat auch einen Zoo und viele Touristen besuchen die Stadt jedes Jahr.",
+      "questions": [
+        {
+          "question": "Was gibt es im Zentrum?",
+          "options": [
+            "einen Park",
+            "einen Marktplatz",
+            "einen Zoo",
+            "ein Museum"
+          ],
+          "answer": "einen Marktplatz"
+        },
+        {
+          "question": "Was kauft man auf dem Markt?",
+          "options": [
+            "Bücher",
+            "Obst und Gemüse",
+            "Kleidung",
+            "Spielzeug"
+          ],
+          "answer": "Obst und Gemüse"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: In welcher Stadt wohnst du? B: In Hamburg. A: Hamburg ist toll, besonders der Hafen!",
+      "questions": [
+        {
+          "question": "Was ist in Hamburg toll?",
+          "options": [
+            "der Park",
+            "der Hafen",
+            "das Museum",
+            "der Zoo"
+          ],
+          "answer": "der Hafen"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Describe your city with 5 places."
+    },
+    "speakingTask": {
+      "prompt": "Tell a partner about your city with 3 attractions."
+    },
+    "reviewSummary": "es gibt + Akkusativ for there is/are. in + city name (no article). im = in + dem. wo ist/wo sind to ask for locations.",
+    "conceptId": "a1_city_vocab",
+    "estimatedMinutes": 25,
+    "prerequisiteConceptIds": [
+      "a1_present_tense_regular"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_city_vocab",
+      "a1_es_gibt"
+    ],
+    "commonMistakes": [
+      "Es gibt requires accusative. Wrong: Es gibt ein Park. Correct: Es gibt einen Park.",
+      "In + city: no article. Correct: Ich wohne in Berlin. Wrong: in der Berlin.",
+      "Do not use es hat for there is in standard German. Always use es gibt.",
+      "Im = in + dem. Use im Zentrum for static location, not in das Zentrum.",
+      "Questions need article: Wo ist der Bahnhof? not Wo ist Bahnhof?"
+    ],
+    "formsTable": [
+      {
+        "form": "es gibt + Akkusativ",
+        "use": "there is/are",
+        "example": "Es gibt einen Park."
+      },
+      {
+        "form": "in + Stadt (ohne Artikel)",
+        "use": "in + city (no article)",
+        "example": "in Berlin, in Munchen"
+      },
+      {
+        "form": "im = in + dem",
+        "use": "in the (for places)",
+        "example": "im Zentrum, im Park"
+      },
+      {
+        "form": "wo ist / wo sind",
+        "use": "where is/are",
+        "example": "Wo ist der Bahnhof?"
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Es gibt ___ Park. (einen/ein/der)",
+        "answer": "einen"
+      },
+      {
+        "prompt": "Ich wohne ___ Berlin.",
+        "answer": "in"
+      },
+      {
+        "prompt": "___ Zentrum gibt es ein Museum.",
+        "answer": "Im"
+      },
+      {
+        "prompt": "Die Stadt ___ viele Restaurants.",
+        "answer": "hat"
+      },
+      {
+        "prompt": "Wo ist ___ Bahnhof? (der/die/das)",
+        "answer": "der"
+      }
+    ],
+    "mixedPractice": [
+      "Describe your city using es gibt and hat. Name 3 places.",
+      "Ask where the train station is, then say there is a park nearby.",
+      "Correct the word order: Die Stadt hat ein Kino und gibt es einen Markt."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about your city using es gibt, hat, and ist.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 places in your neighborhood and write one sentence about each.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_18",
+    "pronunciationNotes": [
+      "Stadt has a short a, like shtat (not shtaht).",
+      "Zentrum: the z is pronounced ts, like tsentrum."
+    ],
+    "medicalFspNotes": [
+      "Patients often say: Ich wohne in der Nahe vom Krankenhaus.",
+      "Common question: Wo ist die nachste Apotheke?"
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_4",
+    "id": "A1_lesson_19",
+    "title": "Sich vorstellen",
+    "objective": "Introduce yourself formally and informally.",
+    "explanation": "Formal: \"Guten Tag, ich heisse Anna Müller. Freut mich, Sie kennenzulernen.\" Informal: \"Hallo, ich bin Tom. Freut mich!\" \"Sie\" (capital S) = formal, \"du\" = informal. Qüstions: \"Wie heissen Sie?\" / \"Wie heißt du?\" \"Woher kommen Sie?\" / \"Woher kommst du?\"",
+    "examples": [
+      "Guten Tag, ich bin Dr. Sabine Weber. - Good day, I am Dr. Sabine Weber.",
+      "Freut mich, Sie kennenzulernen. - Nice to meet you (formal).",
+      "Hallo, ich bin Tom. Freut mich! - Hi, I am Tom. Nice to meet you!",
+      "Ich komme aus Spanien, aber ich wohne in Berlin. - I come from Spain, I live in Berlin.",
+      "Darf ich vorstellen? Das ist Frau Schmidt. - May I introduce? This is Ms. Schmidt.",
+      "Sind Sie Herr Muller? - Are you Mr. Muller? (formal)",
+      "Bist du der neue Patient? - Are you the new patient? (informal)",
+      "Ich bin Arztin in der Klinik. - I am a doctor (f) in the clinic.",
+      "Woher kommen Sie, Frau Wagner? - Where do you come from? (formal)",
+      "Ich heisse Lukas und komme aus der Schweiz. - My name is Lukas from Switzerland."
+    ],
+    "grammarFocus": "Formal vs informal introductions",
+    "vocabulary": [
+      {
+        "word": "der Name",
+        "translation": "name"
+      },
+      {
+        "word": "heissen",
+        "translation": "to be called"
+      },
+      {
+        "word": "kommen aus",
+        "translation": "to come from"
+      },
+      {
+        "word": "wohnen in",
+        "translation": "to live in"
+      },
+      {
+        "word": "kennenlernen",
+        "translation": "to get to know"
+      },
+      {
+        "word": "der Arzt",
+        "translation": "doctor (m)"
+      },
+      {
+        "word": "die Ärztin",
+        "translation": "doctor (f)"
+      },
+      {
+        "word": "der Student",
+        "translation": "student (m)"
+      },
+      {
+        "word": "die Studentin",
+        "translation": "student (f)"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Formal: What is your name?",
+        "answer": "Wie heissen Sie?"
+      },
+      {
+        "prompt": "Informal: Where are you from?",
+        "answer": "Woher kommst du?"
+      },
+      {
+        "prompt": "Complete: Ich ___ Arzt. (bin/bist/ist)",
+        "answer": "bin"
+      },
+      {
+        "prompt": "Translate: Nice to meet you (formal).",
+        "answer": "Freut mich, Sie kennenzulernen."
+      },
+      {
+        "prompt": "What is the difference between Sie and sie?",
+        "answer": "Sie (capital) = formal you; sie = she/they."
+      },
+      {
+        "prompt": "Say May I introduce Dr. Schulz?",
+        "answer": "Darf ich vorstellen: Dr. Schulz."
+      },
+      {
+        "prompt": "Complete: ___ kommen Sie? (Where from)",
+        "answer": "Woher"
+      },
+      {
+        "prompt": "Reply to Wie geht es Ihnen?",
+        "answer": "Gut, danke. Und Ihnen?"
+      }
+    ],
+    "readingTask": {
+      "text": "Auf einer Konferenz stellt sich Frau Dr. Berger vor: \"Guten Tag, ich bin Dr. Sabine Berger. Ich komme aus Österreich und arbeite an der Universität Wien. Ich forsche im Bereich Biologie. Freut mich, Sie kennenzulernen.\"",
+      "questions": [
+        {
+          "question": "Woher kommt Frau Dr. Berger?",
+          "options": [
+            "Deutschland",
+            "Österreich",
+            "der Schweiz",
+            "Italien"
+          ],
+          "answer": "Österreich"
+        },
+        {
+          "question": "Wo arbeitet sie?",
+          "options": [
+            "TU München",
+            "Universität Wien",
+            "HU Berlin",
+            "LMU"
+          ],
+          "answer": "Universität Wien"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Hallo, ich bin Lukas. B: Freut mich, ich bin Sarah. A: Woher kommst du, Sarah? B: Aus Frankfurt.",
+      "questions": [
+        {
+          "question": "Woher kommt Sarah?",
+          "options": [
+            "Berlin",
+            "Frankfurt",
+            "Köln",
+            "Hamburg"
+          ],
+          "answer": "Frankfurt"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a formal and informal self-introduction."
+    },
+    "speakingTask": {
+      "prompt": "Introduce yourself formally, then informally."
+    },
+    "reviewSummary": "Sie (formal, capital S) vs du (informal). Ich heisse = my name is. Ich komme aus = I come from. Freut mich = pleased to meet you.",
+    "conceptId": "a1_self_introduction",
+    "estimatedMinutes": 22,
+    "prerequisiteConceptIds": [
+      "a1.greetings.sein-introductions",
+      "a1_present_tense_regular"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_self_introduction",
+      "a1_formal_vs_informal",
+      "a1_profession_introduction"
+    ],
+    "commonMistakes": [
+      "Sie (capital S) = formal you. sie (lowercase) = she/they. Capitalization matters.",
+      "Say full name: Ich heisse Anna Muller. Not just Ich heisse Muller.",
+      "Freut mich is short. Full: Es freut mich, Sie kennenzulernen. (formal).",
+      "Use Sie with doctors, officials, and older adults unless they offer du.",
+      "Match gender: Ich bin Arzt. (male) / Ich bin Arztin. (female)."
+    ],
+    "formsTable": [
+      {
+        "form": "Sie sind...",
+        "use": "you are (formal)",
+        "example": "Sie sind Frau Dr. Weber."
+      },
+      {
+        "form": "du bist...",
+        "use": "you are (informal)",
+        "example": "Du bist mein Kollege."
+      },
+      {
+        "form": "ich heisse...",
+        "use": "my name is...",
+        "example": "Ich heisse Anna Muller."
+      },
+      {
+        "form": "ich komme aus...",
+        "use": "I come from...",
+        "example": "Ich komme aus Osterreich."
+      },
+      {
+        "form": "ich bin... (Beruf)",
+        "use": "I am... (profession)",
+        "example": "Ich bin Arzt / Arztin."
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Guten Tag, ich ___ Frau Dr. Klein. (bin/bist)",
+        "answer": "bin"
+      },
+      {
+        "prompt": "Woher ___ du? (kommst/kommen)",
+        "answer": "kommst"
+      },
+      {
+        "prompt": "Freut mich, ___ kennenzulernen. (Sie/dich)",
+        "answer": "Sie"
+      },
+      {
+        "prompt": "Ich ___ aus der Turkei. (komme/kommst)",
+        "answer": "komme"
+      },
+      {
+        "prompt": "___ sind Herr Braun? (du/Sie)",
+        "answer": "Sie"
+      }
+    ],
+    "mixedPractice": [
+      "Introduce yourself formally with name, origin, and profession.",
+      "Introduce yourself informally to a friend.",
+      "A patient arrives. Greet them, ask their name and where they come from."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write two introductions: formal for a job interview, informal for a friend.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Roleplay: At a conference. Introduce yourself and ask where someone works.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_19",
+    "pronunciationNotes": [
+      "heisse: the ss is a sharp s sound.",
+      "kennenzulernen: break into parts: kennen + zu + lernen."
+    ],
+    "medicalFspNotes": [
+      "At reception: Guten Tag, ich bin Patient [Name]. Ich habe einen Termin.",
+      "Doctor: Guten Tag, Herr Schmidt. Ich bin Dr. Muller. Was kann ich für Sie tun?"
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_4",
+    "id": "A1_lesson_20",
+    "title": "Im Cafe bestellen",
+    "objective": "Order drinks and snacks at a cafe.",
+    "explanation": "Cafe vocabulary: der Kaffee, der Tee, die Schokolade, der Saft, das Wasser, der Kuchen, das Brötchen. Phrases: \"Einen Kaffee, bitte.\" \"Was möchten Sie?\" \"Für mich bitte...\" \"Hier oder zum Mitnehmen?\" (For here or to go?) Trinkgeld (tip) is usually rounding up.",
+    "examples": [
+      "Ich mochte einen Kaffee, bitte. - I would like a coffee, please.",
+      "Was mochten Sie? - What would you like? (formal)",
+      "Einen Tee mit Milch, bitte. - A tea with milk, please.",
+      "Zum Mitnehmen, bitte. - To go, please.",
+      "Hier essen, bitte. - For here, please.",
+      "Was kostet ein Stuck Kuchen? - How much is a piece of cake?",
+      "Fur mich bitte einen Apfelsaft. - For me, an apple juice please.",
+      "Mochtest du auch etwas essen? - Would you like something to eat?",
+      "Ich mochte ein Brotchen mit Kase. - I would like a roll with cheese.",
+      "Das macht 4 Euro 50, bitte. - That will be 4 euros 50, please."
+    ],
+    "grammarFocus": "Polite ordering with \"möchten\"",
+    "vocabulary": [
+      {
+        "word": "der Kaffee",
+        "translation": "coffee"
+      },
+      {
+        "word": "der Tee",
+        "translation": "tea"
+      },
+      {
+        "word": "die Schokolade",
+        "translation": "hot chocolate"
+      },
+      {
+        "word": "der Saft",
+        "translation": "juice"
+      },
+      {
+        "word": "das Wasser",
+        "translation": "water"
+      },
+      {
+        "word": "der Kuchen",
+        "translation": "cake"
+      },
+      {
+        "word": "das Brötchen",
+        "translation": "roll"
+      },
+      {
+        "word": "die Tasse",
+        "translation": "cup"
+      },
+      {
+        "word": "das Glas",
+        "translation": "glass"
+      },
+      {
+        "word": "mitnehmen",
+        "translation": "to take away"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you order a coffee?",
+        "answer": "Ich mochte einen Kaffee, bitte."
+      },
+      {
+        "prompt": "How do you say to go?",
+        "answer": "Zum Mitnehmen."
+      },
+      {
+        "prompt": "Complete: Ich ___ einen Tee. (mochte/mochtest)",
+        "answer": "mochte"
+      },
+      {
+        "prompt": "What does the waiter ask?",
+        "answer": "Was mochten Sie?"
+      },
+      {
+        "prompt": "Translate: How much is a piece of cake?",
+        "answer": "Was kostet ein Stuck Kuchen?"
+      },
+      {
+        "prompt": "Complete: ___ mochtest du? (What)",
+        "answer": "Was"
+      },
+      {
+        "prompt": "Order an apple juice.",
+        "answer": "Ich mochte einen Apfelsaft."
+      },
+      {
+        "prompt": "What do you say for for here?",
+        "answer": "Hier essen."
+      }
+    ],
+    "readingTask": {
+      "text": "Frau Klein geht in ein Cafe. Sie setzt sich an einen Tisch. Die Kellnerin kommt: \"Guten Tag, was darf es sein?\" Frau Klein: \"Einen Cappuccino und ein Stück Apfelkuchen, bitte.\" Die Kellnerin bringt die Bestellung. Frau Klein bezahlt 6,50 Euro und gibt 1 Euro Trinkgeld.",
+      "questions": [
+        {
+          "question": "Was bestellt Frau Klein?",
+          "options": [
+            "Tee und Kuchen",
+            "Cappuccino und Apfelkuchen",
+            "Kaffee und Keks",
+            "Milchkaffee"
+          ],
+          "answer": "Cappuccino und Apfelkuchen"
+        },
+        {
+          "question": "Wie viel Trinkgeld gibt sie?",
+          "options": [
+            "50 Cent",
+            "1 Euro",
+            "2 Euro",
+            "0 Euro"
+          ],
+          "answer": "1 Euro"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "Kellnerin: Guten Morgen, was möchten Sie? Gast: Einen Milchkaffee und ein Croissant, bitte. Zum Mitnehmen.",
+      "questions": [
+        {
+          "question": "Was bestellt der Gast?",
+          "options": [
+            "Kaffee und Kuchen",
+            "Milchkaffee und Croissant",
+            "Tee und Brötchen",
+            "Wasser"
+          ],
+          "answer": "Milchkaffee und Croissant"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a cafe dialogü: order two drinks and a snack, pay."
+    },
+    "speakingTask": {
+      "prompt": "Role play at a cafe: waiter and customer."
+    },
+    "reviewSummary": "Ich mochte + accusative for ordering politely. Zum Mitnehmen = to go. Hier essen = for here. Was kostet = How much is.",
+    "conceptId": "a1_cafe_ordering",
+    "estimatedMinutes": 24,
+    "prerequisiteConceptIds": [
+      "a1_modal_verbs"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_cafe_ordering",
+      "a1_moechten_usage",
+      "a1_food_drink_ordering"
+    ],
+    "commonMistakes": [
+      "Kaffee is masculine: einen Kaffee (accusative). Wrong: ein Kaffee.",
+      "Say Ich mochte [item], not just Ich mochte bestellen.",
+      "Zum Mitnehmen = to go. Hier essen = for here. Do not confuse them.",
+      "Use Was mochten Sie? not Was wollen Sie? wollen can sound rude.",
+      "Prices: Das macht 4 Euro 50. The comma is the decimal separator."
+    ],
+    "formsTable": [
+      {
+        "form": "ich mochte",
+        "use": "I would like",
+        "example": "Ich mochte einen Kaffee."
+      },
+      {
+        "form": "du mochtest",
+        "use": "you would like (inf.)",
+        "example": "Mochtest du einen Tee?"
+      },
+      {
+        "form": "er/sie/es mochte",
+        "use": "he/she/it would like",
+        "example": "Er mochte ein Wasser."
+      },
+      {
+        "form": "wir mochten",
+        "use": "we would like",
+        "example": "Wir mochten zwei Stuck Kuchen."
+      },
+      {
+        "form": "Sie mochten",
+        "use": "you would like (formal)",
+        "example": "Was mochten Sie?"
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Was ___ Sie? (mochten/mochtet)",
+        "answer": "mochten"
+      },
+      {
+        "prompt": "Ich mochte ___ Kaffee. (einen/eine)",
+        "answer": "einen"
+      },
+      {
+        "prompt": "___ kostet ein Brotchen? (Wie/Wer)",
+        "answer": "Was"
+      },
+      {
+        "prompt": "Mochtest ___ einen Tee? (du/Sie)",
+        "answer": "du"
+      },
+      {
+        "prompt": "Das ___ 3 Euro. (macht/machen)",
+        "answer": "macht"
+      }
+    ],
+    "mixedPractice": [
+      "Order a coffee to go. The waiter asks: Hier oder zum Mitnehmen?",
+      "Order cake and apple juice for yourself, tea for your friend.",
+      "Roleplay: At a cafe. Order, ask the price, and pay."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a cafe dialogue: you, friend, waiter. Order drinks and cake.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Create a menu with 5 drinks and 3 food items in German.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_20",
+    "pronunciationNotes": [
+      "mochte: the o is like the i in bird with rounded lips.",
+      "Mitnehmen: nehmen sounds like naym but shorter than English."
+    ],
+    "medicalFspNotes": [
+      "In hospital cafeterias: Einen Kaffee, bitte. Zum Mitnehmen.",
+      "Patients ask: Gibt es hier einen Kaffeeautomaten?"
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_21",
+    "title": "Transportmittel",
+    "objective": "Name means of transport and describe travel.",
+    "explanation": "Transport: das Auto, der Bus, die Bahn, die U-Bahn, der Zug, das Flugzeug, das Fahrrad, zu Fuss. \"mit\" + Dativ: mit dem Auto, mit der Bahn. \"fahren\" (to drive/ride), \"nehmen\" (to take). Qüstion: \"Wie kommst du zur Arbeit/Schule?\" \"zu Fuss\" = on foot.",
+    "examples": [
+      "Ich fahre mit dem Bus zur Arbeit. - I go to work by bus.",
+      "Sie nimmt die U-Bahn. - She takes the subway.",
+      "Wie komme ich zum Bahnhof? - How do I get to the train station?",
+      "Fahrst du mit dem Zug nach Hamburg? - Going to Hamburg by train?",
+      "Ich gehe zu Fuss zur Schule. - I walk to school.",
+      "Der Bus kommt um 8 Uhr. - The bus comes at 8 oclock.",
+      "Mit dem Auto brauche ich 20 Minuten. - By car I need 20 minutes.",
+      "Wo ist die nachste Bushaltestelle? - Where is the nearest bus stop?",
+      "Bitte fahren Sie geradeaus, dann links. - Go straight, then left.",
+      "Die U-Bahn fahrt alle 10 Minuten. - The subway runs every 10 minutes."
+    ],
+    "grammarFocus": "Transport vocabulary with \"mit\" + Dativ",
+    "vocabulary": [
+      {
+        "word": "das Auto",
+        "translation": "car"
+      },
+      {
+        "word": "der Bus",
+        "translation": "bus"
+      },
+      {
+        "word": "die Bahn",
+        "translation": "train"
+      },
+      {
+        "word": "die U-Bahn",
+        "translation": "subway"
+      },
+      {
+        "word": "der Zug",
+        "translation": "train"
+      },
+      {
+        "word": "das Flugzeug",
+        "translation": "airplane"
+      },
+      {
+        "word": "das Fahrrad",
+        "translation": "bicycle"
+      },
+      {
+        "word": "fahren",
+        "translation": "to drive/ride"
+      },
+      {
+        "word": "nehmen",
+        "translation": "to take"
+      },
+      {
+        "word": "zu Fuss",
+        "translation": "on foot"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you say by bus?",
+        "answer": "mit dem Bus"
+      },
+      {
+        "prompt": "Translate: I go to work by train.",
+        "answer": "Ich fahre mit dem Zug zur Arbeit."
+      },
+      {
+        "prompt": "Complete: Ich fahre mit ___ Auto. (Dativ)",
+        "answer": "dem"
+      },
+      {
+        "prompt": "How do you say on foot?",
+        "answer": "zu Fuss"
+      },
+      {
+        "prompt": "What does Wie komme ich zum Bahnhof? mean?",
+        "answer": "How do I get to the station?"
+      },
+      {
+        "prompt": "Translate: She takes the subway.",
+        "answer": "Sie nimmt die U-Bahn."
+      },
+      {
+        "prompt": "Complete: Fahrst du mit ___ Zug? (dative)",
+        "answer": "dem"
+      },
+      {
+        "prompt": "Translate: The bus comes at 8 oclock.",
+        "answer": "Der Bus kommt um 8 Uhr."
+      }
+    ],
+    "readingTask": {
+      "text": "Markus wohnt in einem Vorort von Berlin. Er fährt jeden Morgen mit dem Zug in die Stadt zur Arbeit. Das dauert 30 Minuten. Seine Kollegin Lisa wohnt näher und fährt Fahrrad. Ihr Chef kommt mit dem Auto, weil er auch Kunden besucht.",
+      "questions": [
+        {
+          "question": "Wie kommt Markus zur Arbeit?",
+          "options": [
+            "mit dem Bus",
+            "mit dem Zug",
+            "mit dem Auto",
+            "zu Fuss"
+          ],
+          "answer": "mit dem Zug"
+        },
+        {
+          "question": "Warum kommt der Chef mit dem Auto?",
+          "options": [
+            "schneller",
+            "er besucht Kunden",
+            "billiger",
+            "beqümer"
+          ],
+          "answer": "er besucht Kunden"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wie kommst du zur Arbeit? B: Mit der U-Bahn, das ist am schnellsten.",
+      "questions": [
+        {
+          "question": "Wie kommt B zur Arbeit?",
+          "options": [
+            "Auto",
+            "U-Bahn",
+            "Bus",
+            "Fahrrad"
+          ],
+          "answer": "U-Bahn"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write 6 sentences about how you and your family travel."
+    },
+    "speakingTask": {
+      "prompt": "Ask 3 people how they get to work and report answers."
+    },
+    "reviewSummary": "Mit + Dativ (mit dem Bus, mit der U-Bahn). Zu Fuss = on foot. Nehmen + Akkusativ for taking a vehicle.",
+    "conceptId": "a1_transport",
+    "estimatedMinutes": 24,
+    "prerequisiteConceptIds": [
+      "a1_city_vocab",
+      "a1_word_order_main_clause"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_transport_vocab",
+      "a1_mit_dativ_transport"
+    ],
+    "commonMistakes": [
+      "Mit takes dative: mit dem Bus, mit der U-Bahn. Wrong: mit der Bus.",
+      "Say Ich fahre mit dem Bus (with article). Wrong: Ich fahre mit Bus.",
+      "Ich nehme den Bus uses accusative. nehmen always takes accusative.",
+      "fahren = go by vehicle. gehen = walk. They are not interchangeable.",
+      "zum = zu + dem (dative). Wrong: zu das Bahnhof. Correct: zum Bahnhof."
+    ],
+    "formsTable": [
+      {
+        "form": "mit + dem Bus/Zug/Auto",
+        "use": "by bus/train/car",
+        "example": "Ich fahre mit dem Bus zur Arbeit."
+      },
+      {
+        "form": "mit + der U-Bahn/Strassenbahn",
+        "use": "by subway/tram",
+        "example": "Fahrst du mit der U-Bahn?"
+      },
+      {
+        "form": "zu Fuss",
+        "use": "on foot",
+        "example": "Ich gehe zu Fuss zur Schule."
+      },
+      {
+        "form": "nehmen + Akkusativ",
+        "use": "to take (vehicle)",
+        "example": "Ich nehme den Bus."
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Ich fahre mit ___ Bus. (dem/der/den)",
+        "answer": "dem"
+      },
+      {
+        "prompt": "Sie fahrt mit ___ U-Bahn. (dem/der/den)",
+        "answer": "der"
+      },
+      {
+        "prompt": "Wie komme ich ___ Bahnhof? (zu dem)",
+        "answer": "zum"
+      },
+      {
+        "prompt": "Ich gehe ___ Fuss zur Arbeit. (mit/zu)",
+        "answer": "zu"
+      },
+      {
+        "prompt": "___ kommst du zur Schule? (Wie/Wo)",
+        "answer": "Wie"
+      }
+    ],
+    "mixedPractice": [
+      "Explain how you go to work/school using mit + Dativ. Use 2 methods.",
+      "Ask directions to the pharmacy. Then say you will walk there.",
+      "Correct: Ich fahre mit der Bus zur Arbeit."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about how your family travels.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Draw a route from home to a place and write directions in German.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_21",
+    "pronunciationNotes": [
+      "U-Bahn: U like oo in boot. Say oo-bahn.",
+      "geradeaus: hard g, like ge-rah-de-ous."
+    ],
+    "medicalFspNotes": [
+      "Patients: Wie komme ich zur Praxis?",
+      "Doctor: Nehmen Sie den Bus bis Haltestelle Klinik."
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_22",
+    "title": "Telefonieren",
+    "objective": "Handle simple phone calls in German.",
+    "explanation": "Phone phrases: \"Hallo, hier ist Anna.\" \"Kann ich bitte Frau Müller sprechen?\" \"Einen Moment, bitte.\" \"Ich rufe später nochmal an.\" \"Wer spricht, bitte?\" \"Kann ich etwas ausrichten?\" (Can I take a message?) \"anrufen\" = to call (separable: ich rufe an). \"zurückrufen\" = call back.",
+    "examples": [
+      "Hallo, hier ist Anna Schmidt. - Hello, this is Anna Schmidt.",
+      "Kann ich bitte Frau Dr. Weber sprechen? - May I speak to Dr. Weber?",
+      "Ich rufe dich heute Abend an. - I will call you this evening.",
+      "Einen Moment, bitte. Ich verbinde. - One moment. Connecting you.",
+      "Konnen Sie bitte spater zuruckrufen? - Can you call back later?",
+      "Meine Telefonnummer ist null eins funf... - My number is 015...",
+      "Ich habe eine Frage zum Termin. - I have a question about the appointment.",
+      "Vielen Dank für den Anruf. - Thank you for the call.",
+      "Spreche ich mit Frau Muller? - Am I speaking with Ms. Muller?",
+      "Tut mir leid, die Leitung ist besetzt. - Sorry, the line is busy."
+    ],
+    "grammarFocus": "Basic phone call vocabulary",
+    "vocabulary": [
+      {
+        "word": "anrufen",
+        "translation": "to call"
+      },
+      {
+        "word": "das Telefon",
+        "translation": "telephone"
+      },
+      {
+        "word": "das Handy",
+        "translation": "cell phone"
+      },
+      {
+        "word": "sprechen mit",
+        "translation": "to speak with"
+      },
+      {
+        "word": "die Nachricht",
+        "translation": "message"
+      },
+      {
+        "word": "ausrichten",
+        "translation": "to pass on"
+      },
+      {
+        "word": "zurückrufen",
+        "translation": "to call back"
+      },
+      {
+        "word": "besetzt",
+        "translation": "busy"
+      },
+      {
+        "word": "der Anruf",
+        "translation": "the call"
+      },
+      {
+        "word": "der Anrufbeantworter",
+        "translation": "answering machine"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "How do you answer the phone?",
+        "answer": "Hallo, hier ist [Name]."
+      },
+      {
+        "prompt": "Say May I speak to Dr. Weber?",
+        "answer": "Kann ich bitte Frau Dr. Weber sprechen?"
+      },
+      {
+        "prompt": "Complete: Ich ___ dich morgen an. (rufe/rufst)",
+        "answer": "rufe"
+      },
+      {
+        "prompt": "What does Einen Moment, bitte mean?",
+        "answer": "One moment, please."
+      },
+      {
+        "prompt": "Say Please call back later.",
+        "answer": "Bitte rufen Sie spater zuruck."
+      },
+      {
+        "prompt": "Complete: Kann ich bitte ___ Muller sprechen? (Frau/Herr)",
+        "answer": "Frau"
+      },
+      {
+        "prompt": "Translate: I have a question about the appointment.",
+        "answer": "Ich habe eine Frage zum Termin."
+      },
+      {
+        "prompt": "What do you say when the line is busy?",
+        "answer": "Die Leitung ist besetzt."
+      }
+    ],
+    "readingTask": {
+      "text": "Lisa ruft bei der Praxis Dr. Müller an. \"Guten Tag, hier ist Lisa Schmidt. Ich möchte einen Termin vereinbaren.\" Die Sprechstundenhilfe: \"Gern, für wann möchten Sie kommen?\" \"Am besten nächste Woche Montag.\" \"Da haben wir um 10 Uhr einen Termin frei.\"",
+      "questions": [
+        {
+          "question": "Wen ruft Lisa an?",
+          "options": [
+            "die Firma",
+            "die Arztpraxis",
+            "das Restaurant",
+            "die Schule"
+          ],
+          "answer": "die Arztpraxis"
+        },
+        {
+          "question": "Wann ist der Termin?",
+          "options": [
+            "Dienstag",
+            "Montag 10 Uhr",
+            "Freitag",
+            "Mittwoch"
+          ],
+          "answer": "Montag 10 Uhr"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Firma Schmidt, guten Tag. B: Guten Tag, hier ist Peter Klein. Kann ich Herrn Schmidt sprechen?",
+      "questions": [
+        {
+          "question": "Mit wem möchte Klein sprechen?",
+          "options": [
+            "Frau Schmidt",
+            "Herrn Schmidt",
+            "der Sekretärin",
+            "dem Chef"
+          ],
+          "answer": "Herrn Schmidt"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a phone dialogü: calling a doctors office for an appointment."
+    },
+    "speakingTask": {
+      "prompt": "Practice a phone call: introduce yourself, ask for someone, leave a message."
+    },
+    "reviewSummary": "Hier ist... on phone. Kann ich bitte... sprechen? = May I speak to...? Separable verb anrufen - prefix goes to end.",
+    "conceptId": "a1_telephone_basics",
+    "estimatedMinutes": 22,
+    "prerequisiteConceptIds": [
+      "a1_self_introduction",
+      "a1_separable_verbs_intro",
+      "a1_modal_verbs"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_telephone_basics",
+      "a1_separable_verb_anrufen"
+    ],
+    "commonMistakes": [
+      "anrufen is separable: Ich rufe dich an. Wrong: Ich anrufe dich.",
+      "On phone: Hallo, hier ist Anna. Wrong: Hallo, ich bin Anna.",
+      "Use Kann ich bitte Frau Muller sprechen? with sprechen, not reden.",
+      "Phone numbers: say each digit. 0176 = null eins sieben sechs.",
+      "For 0 say null, not oh."
+    ],
+    "formsTable": [
+      {
+        "form": "anrufen (ruft an)",
+        "use": "to call (separable)",
+        "example": "Ich rufe dich heute an."
+      },
+      {
+        "form": "hier ist...",
+        "use": "this is... (on phone)",
+        "example": "Hallo, hier ist Anna Schmidt."
+      },
+      {
+        "form": "Kann ich bitte... sprechen?",
+        "use": "May I speak to...?",
+        "example": "Kann ich bitte Frau Dr. Weber sprechen?"
+      },
+      {
+        "form": "einen Moment, bitte",
+        "use": "one moment, please",
+        "example": "Einen Moment, bitte. Ich verbinde."
+      },
+      {
+        "form": "zuruckrufen (ruft zuruck)",
+        "use": "to call back",
+        "example": "Konnen Sie spater zuruckrufen?"
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Hallo, hier ___ Anna. (ist/bin)",
+        "answer": "ist"
+      },
+      {
+        "prompt": "Ich ___ dich an. (rufe/rufst)",
+        "answer": "rufe"
+      },
+      {
+        "prompt": "Kann ich ___ Frau Muller sprechen? (bitte/bitten)",
+        "answer": "bitte"
+      },
+      {
+        "prompt": "Rufen Sie ___ zuruck. (spater/spat)",
+        "answer": "spater"
+      },
+      {
+        "prompt": "Meine Nummer ___ 0176... (ist/bin)",
+        "answer": "ist"
+      }
+    ],
+    "mixedPractice": [
+      "Call a doctors office. Greet, give your name, ask for Dr. Schulz.",
+      "Someone calls you. Answer, identify yourself, ask who is calling.",
+      "Wrong number. Apologize and say goodbye."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a phone dialogue: call a clinic about an appointment.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 phone phrases in German with translations.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_22",
+    "pronunciationNotes": [
+      "Phone numbers: say each digit separately. 0176 = null eins sieben sechs.",
+      "verbinden: v is pronounced f. fer-binden."
+    ],
+    "medicalFspNotes": [
+      "Calling a doctor: Guten Tag, hier ist Herr Klein. Ich mochte einen Termin vereinbaren.",
+      "Reception: Einen Moment. Ich verbinde mit der Anmeldung.",
+      "Patient: Ich muss meinen Termin absagen."
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_23",
+    "title": "Geburtstag feiern",
+    "objective": "Talk about birthday celebrations.",
+    "explanation": "Birthday vocabulary: der Geburtstag, die Party, das Geschenk, die Torte, die Kerze. \"Wann hast du Geburtstag?\" \"Ich habe am 5. Mai Geburtstag.\" \"Alles Gute zum Geburtstag!\" (Happy Birthday) \"einladen\" = to invite (separable: ich lade ein). \"feiern\" = to celebrate.",
+    "examples": [
+      "Wann hast du Geburtstag? - When is your birthday?",
+      "Ich habe am 5. Mai Geburtstag. - My birthday is on May 5th.",
+      "Alles Gute zum Geburtstag! - Happy Birthday!",
+      "Ich lade dich zu meiner Party ein. - I invite you to my party.",
+      "Meine Familie feiert am Samstag. - My family celebrates on Saturday.",
+      "Ich schenke meiner Mutter Blumen. - I give my mother flowers.",
+      "Wie alt wirst du? - How old are you turning?",
+      "Ich werde 25 Jahre alt. - I am turning 25.",
+      "Vielen Dank für die Einladung! - Thanks for the invitation!",
+      "Wir feiern im Restaurant. - We celebrate at the restaurant."
+    ],
+    "grammarFocus": "Birthday vocabulary and celebrations",
+    "vocabulary": [
+      {
+        "word": "der Geburtstag",
+        "translation": "birthday"
+      },
+      {
+        "word": "feiern",
+        "translation": "to celebrate"
+      },
+      {
+        "word": "die Party",
+        "translation": "party"
+      },
+      {
+        "word": "das Geschenk",
+        "translation": "present"
+      },
+      {
+        "word": "die Torte",
+        "translation": "cake"
+      },
+      {
+        "word": "die Kerze",
+        "translation": "candle"
+      },
+      {
+        "word": "einladen",
+        "translation": "to invite"
+      },
+      {
+        "word": "schenken",
+        "translation": "to give as gift"
+      },
+      {
+        "word": "bekommen",
+        "translation": "to receive"
+      },
+      {
+        "word": "der Gast",
+        "translation": "güst"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Say Happy Birthday! in German.",
+        "answer": "Alles Gute zum Geburtstag!"
+      },
+      {
+        "prompt": "Translate: My birthday is March 12th.",
+        "answer": "Ich habe am 12. Marz Geburtstag."
+      },
+      {
+        "prompt": "Ask When is your birthday?",
+        "answer": "Wann hast du Geburtstag?"
+      },
+      {
+        "prompt": "Complete: Ich lade dich ___ meiner Party ein. (zu/zum)",
+        "answer": "zu"
+      },
+      {
+        "prompt": "Translate: I give my mother flowers.",
+        "answer": "Ich schenke meiner Mutter Blumen."
+      },
+      {
+        "prompt": "What does Ich werde 30 Jahre alt mean?",
+        "answer": "I am turning 30."
+      },
+      {
+        "prompt": "Say Thank you for the invitation!",
+        "answer": "Vielen Dank für die Einladung!"
+      },
+      {
+        "prompt": "Complete: Wir feiern ___ Samstag. (am/im)",
+        "answer": "am"
+      }
+    ],
+    "readingTask": {
+      "text": "Tim hat Geburtstag und wird 10 Jahre alt. Seine Mutter hat eine schöne Torte gebacken mit 10 Kerzen. Tim hat viele Geschenke bekommen: ein Buch, einen Fussball und ein neues Fahrrad. Seine Freunde sind zur Party eingeladen. Sie spielen, tanzen und essen Torte.",
+      "questions": [
+        {
+          "question": "Wie alt wird Tim?",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "9"
+          ],
+          "answer": "10"
+        },
+        {
+          "question": "Was hat Tim bekommen?",
+          "options": [
+            "einen Fussball",
+            "Geld",
+            "Buch, Fussball, Fahrrad",
+            "einen Hund"
+          ],
+          "answer": "Buch, Fussball, Fahrrad"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wann hast du Geburtstag? B: Am 15. September. A: Dann kann ich kommen!",
+      "questions": [
+        {
+          "question": "Wann hat B Geburtstag?",
+          "options": [
+            "15. August",
+            "15. September",
+            "15. Oktober",
+            "15. Juli"
+          ],
+          "answer": "15. September"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write a birthday invitation with date, time, and location."
+    },
+    "speakingTask": {
+      "prompt": "Role play inviting someone to your birthday party."
+    },
+    "reviewSummary": "Am + date for birthdays. Alles Gute zum Geburtstag = Happy Birthday. laden + zu + Dativ for invitations. schenken + Dativ + Akkusativ.",
+    "conceptId": "a1_birthday_celebration",
+    "estimatedMinutes": 20,
+    "prerequisiteConceptIds": [
+      "a1_present_tense_regular"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_birthday_celebration",
+      "a1_invitation_basics",
+      "a1_wishes_congratulations"
+    ],
+    "commonMistakes": [
+      "Use am for dates: Ich habe am 5. Mai Geburtstag. Wrong: in Mai.",
+      "Alles Gute zum Geburtstag uses zum (zu + dem). Wrong: für den Geburtstag.",
+      "Say Ich lade dich zu meiner Party ein. Not just Ich lade ein.",
+      "Ordinal numbers: 1. = erste, 2. = zweite, 3. = dritte (irregular).",
+      "schenken takes dative (person) + accusative (thing): Ich schenke dir ein Buch."
+    ],
+    "formsTable": [
+      {
+        "form": "Ich habe am [Datum] Geburtstag.",
+        "use": "My birthday is on [date].",
+        "example": "Ich habe am 12. Marz Geburtstag."
+      },
+      {
+        "form": "Alles Gute zum Geburtstag!",
+        "use": "Happy Birthday!",
+        "example": "Alles Gute zum Geburtstag, Maria!"
+      },
+      {
+        "form": "Ich lade [jemanden] ein.",
+        "use": "I invite [someone].",
+        "example": "Ich lade dich zu meiner Party ein."
+      },
+      {
+        "form": "Ich schenke [jemandem] [etwas].",
+        "use": "I give [someone] [something].",
+        "example": "Ich schenke dir ein Buch."
+      },
+      {
+        "form": "Wann hast du Geburtstag?",
+        "use": "When is your birthday?",
+        "example": "Wann hast du Geburtstag, Anna?"
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Ich habe ___ 5. Mai Geburtstag. (am/im)",
+        "answer": "am"
+      },
+      {
+        "prompt": "Alles Gute ___ Geburtstag! (zum/für)",
+        "answer": "zum"
+      },
+      {
+        "prompt": "Wann ___ du Geburtstag? (hast/hat)",
+        "answer": "hast"
+      },
+      {
+        "prompt": "Ich schenke ___ ein Buch. (dir/du)",
+        "answer": "dir"
+      },
+      {
+        "prompt": "Wie alt ___ du? (wirst/wird)",
+        "answer": "wirst"
+      }
+    ],
+    "mixedPractice": [
+      "Ask a friend about their birthday. They answer. Wish them well.",
+      "Invited to a party. Accept and ask what to bring.",
+      "Its your mothers birthday. What do you say and give her?"
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a birthday invitation in German.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write a reply accepting or declining.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_23",
+    "pronunciationNotes": [
+      "Geburtstag: the first g is hard, like ge-BURTZ-tahg.",
+      "schenken: sch is like English sh. SHEN-ken."
+    ],
+    "medicalFspNotes": [
+      "In clinics: Herzlichen Gluckwunsch zum Geburtstag! (if you know the patient).",
+      "Staff birthdays are often celebrated with Kuchen in German clinics."
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_24",
+    "title": "Zahlen und Rechnen",
+    "objective": "Use numbers and do simple math.",
+    "explanation": "Numbers 1-100: eins, zwei, drei, zehn, zwanzig, dreissig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. 21+ = ones before tens: einundzwanzig, zweiundvierzig. Math: \"plus\", \"minus\", \"mal\", \"geteilt durch\", \"gleich\". \"Wie viel ist 5 plus 3?\" \"5 plus 3 gleich 8.\"",
+    "examples": [
+      "Eins, zwei, drei, vier, funf. - One, two, three, four, five.",
+      "Zehn plus funf ist funfzehn. - Ten plus five is fifteen.",
+      "Drei mal vier ist zwolf. - Three times four is twelve.",
+      "Das macht 8 Euro 50. - That is 8 euros 50.",
+      "25 geteilt durch 5 ist 5. - 25 divided by 5 is 5.",
+      "Der Zug kommt um 15 Uhr 30. - The train arrives at 3:30 PM.",
+      "Meine Telefonnummer ist 0176 12345678. - My number is 0176 12345678.",
+      "Das kostet 20 Euro. - That costs 20 euros.",
+      "Wir sind zu dritt. - There are three of us.",
+      "Ich bin der Zweite in der Schlange. - I am second in line."
+    ],
+    "grammarFocus": "Numbers and math expressions",
+    "vocabulary": [
+      {
+        "word": "eins",
+        "translation": "one"
+      },
+      {
+        "word": "zwei",
+        "translation": "two"
+      },
+      {
+        "word": "drei",
+        "translation": "three"
+      },
+      {
+        "word": "zehn",
+        "translation": "ten"
+      },
+      {
+        "word": "zwanzig",
+        "translation": "twenty"
+      },
+      {
+        "word": "hundert",
+        "translation": "hundred"
+      },
+      {
+        "word": "plus",
+        "translation": "plus"
+      },
+      {
+        "word": "minus",
+        "translation": "minus"
+      },
+      {
+        "word": "mal",
+        "translation": "times"
+      },
+      {
+        "word": "geteilt durch",
+        "translation": "divided by"
+      },
+      {
+        "word": "gleich",
+        "translation": "equals"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "What is 21 in German?",
+        "answer": "einundzwanzig"
+      },
+      {
+        "prompt": "Translate: 7 plus 3 is 10.",
+        "answer": "Sieben plus drei ist zehn."
+      },
+      {
+        "prompt": "How do you say 10,50 Euro?",
+        "answer": "zehn Euro funfzig"
+      },
+      {
+        "prompt": "Complete: Drei ___ vier ist zwolf. (times)",
+        "answer": "mal"
+      },
+      {
+        "prompt": "Translate: That costs 15 euros.",
+        "answer": "Das kostet 15 Euro."
+      },
+      {
+        "prompt": "What is zwolf minus vier?",
+        "answer": "acht"
+      },
+      {
+        "prompt": "Say 99 in German.",
+        "answer": "neunundneunzig"
+      },
+      {
+        "prompt": "Complete: Das ___ 4 Euro 50. (macht/machen)",
+        "answer": "macht"
+      }
+    ],
+    "readingTask": {
+      "text": "Familie Schmidt hat eine Rechnung im Restaurant: Das Schnitzel kostet 12,50 Euro. Der Salat kostet 8,00 Euro. Die Getränke kosten 6,50 Euro. Wie viel müssen sie insgesamt bezahlen? 12,50 plus 8,00 plus 6,50 gleich 27,00 Euro. Und sie geben 3 Euro Trinkgeld, also 30 Euro.",
+      "questions": [
+        {
+          "question": "Was kostet das Schnitzel?",
+          "options": [
+            "10,50",
+            "12,50",
+            "14,50",
+            "8,00"
+          ],
+          "answer": "12,50"
+        },
+        {
+          "question": "Wie viel bezahlen sie insgesamt?",
+          "options": [
+            "25,00",
+            "27,00",
+            "30,00",
+            "28,00"
+          ],
+          "answer": "27,00"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Wie viel ist 12 plus 15? B: 27. A: Richtig! Und 27 minus 8? B: 19.",
+      "questions": [
+        {
+          "question": "Was ist 12 plus 15?",
+          "options": [
+            "25",
+            "27",
+            "28",
+            "30"
+          ],
+          "answer": "27"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write 5 math problems in German with answers."
+    },
+    "speakingTask": {
+      "prompt": "Quiz your partner with 3 math problems."
+    },
+    "reviewSummary": "21-99: einundzwanzig pattern. plus/minus/mal/ist. Prices use comma: 4,50 = vier Euro funfzig.",
+    "conceptId": "a1_numbers_practical",
+    "estimatedMinutes": 22,
+    "prerequisiteConceptIds": [
+      "a1_time_numbers_dates"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_numbers_practical",
+      "a1_math_basics",
+      "a1_prices_calculations"
+    ],
+    "commonMistakes": [
+      "Numbers 21-99: say ones then tens. 21 = einundzwanzig, NOT zwanzigeins.",
+      "Math: funf plus drei ist acht. Use ist (singular) for the result.",
+      "Prices: 4,50 Euro = vier Euro funfzig. The comma is the decimal point.",
+      "Do not say eins in compound numbers. 21 = einundzwanzig, not einsundzwanzig.",
+      "For 1: eins alone, but ein before a noun: ein Euro."
+    ],
+    "formsTable": [
+      {
+        "form": "[Zahl] plus [Zahl] ist [Zahl]",
+        "use": "addition",
+        "example": "Zehn plus funf ist funfzehn."
+      },
+      {
+        "form": "[Zahl] minus [Zahl] ist [Zahl]",
+        "use": "subtraction",
+        "example": "Zwanzig minus drei ist siebzehn."
+      },
+      {
+        "form": "[Zahl] mal [Zahl] ist [Zahl]",
+        "use": "multiplication",
+        "example": "Drei mal vier ist zwolf."
+      },
+      {
+        "form": "Das macht [Betrag]",
+        "use": "That costs [amount]",
+        "example": "Das macht 15 Euro."
+      },
+      {
+        "form": "[Euro] [Cent]",
+        "use": "price expression",
+        "example": "4 Euro 50, 10 Euro 99"
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "21 = ___ . (einundzwanzig/zwanzigeins)",
+        "answer": "einundzwanzig"
+      },
+      {
+        "prompt": "Zehn plus funf ist ___ .",
+        "answer": "funfzehn"
+      },
+      {
+        "prompt": "Drei mal vier ist ___ .",
+        "answer": "zwolf"
+      },
+      {
+        "prompt": "Das kostet 15 ___ .",
+        "answer": "Euro"
+      },
+      {
+        "prompt": "4,50 Euro = vier Euro ___ .",
+        "answer": "funfzig"
+      }
+    ],
+    "mixedPractice": [
+      "You buy coffee for 3,50 and cake for 2,50. How much total?",
+      "Read the number 0176 12345678 aloud in German.",
+      "Say the year 2024 in German."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 math equations in German.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 prices and say them in German.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_24",
+    "pronunciationNotes": [
+      "Numbers 21-99 emphasize the end: ein-UND-zwanzig.",
+      "acht sounds like akht with a guttural ch."
+    ],
+    "medicalFspNotes": [
+      "Blood pressure: 120 zu 80 = eins zwanzig zu achtzig.",
+      "Temperature: 37,5 Grad = siebenunddreissig Komma funf Grad."
+    ]
+  },
+  {
+    "level": "A1",
+    "unit": "A1_unit_5",
+    "id": "A1_lesson_25",
+    "title": "In der Schule",
+    "objective": "Talk about school subjects and classroom objects.",
+    "explanation": "School vocabulary: die Schule, der Unterricht, das Fach, die Mathematik, Deutsch, Englisch, Geschichte, Biologie, der Lehrer, die Schüler, das Buch, der Bleistift, der Tisch, die Tafel. \"Wir haben heute Mathe.\" \"Ich mag Geschichte.\" \"Der Lehrer erklärt die Grammatik.\" \"Hausaufgaben\" = homework.",
+    "examples": [
+      "Mein Lieblingsfach ist Biologie. - My favorite subject is biology.",
+      "Am Montag habe ich Mathe und Deutsch. - On Monday I have math and German.",
+      "Ich mag Chemie, aber Physik ist schwer. - I like chemistry, but physics is hard.",
+      "Die Schule beginnt um 8 Uhr. - School starts at 8 oclock.",
+      "Wir haben funf Stunden pro Tag. - We have five hours per day.",
+      "Der Lehrer erklart die Grammatik. - The teacher explains the grammar.",
+      "Ich lerne für die Prufung. - I am studying for the exam.",
+      "Meine Noten sind gut. - My grades are good.",
+      "In der Pause esse ich ein Brotchen. - During break I eat a roll.",
+      "Nach der Schule gehe ich nach Hause. - After school I go home."
+    ],
+    "grammarFocus": "School subjects and classroom objects",
+    "vocabulary": [
+      {
+        "word": "die Schule",
+        "translation": "school"
+      },
+      {
+        "word": "der Unterricht",
+        "translation": "lesson"
+      },
+      {
+        "word": "das Fach",
+        "translation": "subject"
+      },
+      {
+        "word": "Mathematik",
+        "translation": "mathematics"
+      },
+      {
+        "word": "Deutsch",
+        "translation": "German"
+      },
+      {
+        "word": "Englisch",
+        "translation": "English"
+      },
+      {
+        "word": "Geschichte",
+        "translation": "history"
+      },
+      {
+        "word": "Biologie",
+        "translation": "biology"
+      },
+      {
+        "word": "der Lehrer",
+        "translation": "teacher"
+      },
+      {
+        "word": "der Schüler",
+        "translation": "student"
+      },
+      {
+        "word": "die Hausaufgaben",
+        "translation": "homework"
+      },
+      {
+        "word": "die Tafel",
+        "translation": "blackboard"
+      }
+    ],
+    "guidedPractice": [
+      {
+        "prompt": "Say My favorite subject is biology.",
+        "answer": "Mein Lieblingsfach ist Biologie."
+      },
+      {
+        "prompt": "Translate: On Monday I have math.",
+        "answer": "Am Montag habe ich Mathe."
+      },
+      {
+        "prompt": "Complete: Ich ___ Chemie. (like)",
+        "answer": "mag"
+      },
+      {
+        "prompt": "Translate: The school starts at 8 oclock.",
+        "answer": "Die Schule beginnt um 8 Uhr."
+      },
+      {
+        "prompt": "What does Meine Noten sind gut mean?",
+        "answer": "My grades are good."
+      },
+      {
+        "prompt": "Complete: Am Freitag habe ___ Englisch. (I have)",
+        "answer": "ich"
+      },
+      {
+        "prompt": "Translate: I am studying for the exam.",
+        "answer": "Ich lerne für die Prufung."
+      },
+      {
+        "prompt": "Complete: Ich mag Deutsch, ___ Physik ist schwer. (but)",
+        "answer": "aber"
+      }
+    ],
+    "readingTask": {
+      "text": "Herr Müller ist Mathelehrer. Jeden Montag hat er in der ersten Stunde Unterricht mit der Klasse 8a. Heute erklärt er Bruchrechnung. Lisa mag Mathe nicht so gern, aber ihr Freund Tom findet es interessant. Paula hilft Lisa bei den Hausaufgaben.",
+      "questions": [
+        {
+          "question": "Welches Fach unterrichtet Herr Müller?",
+          "options": [
+            "Deutsch",
+            "Mathe",
+            "Englisch",
+            "Geschichte"
+          ],
+          "answer": "Mathe"
+        },
+        {
+          "question": "Wer hilft Lisa bei den Hausaufgaben?",
+          "options": [
+            "der Lehrer",
+            "Tom",
+            "Paula",
+            "Herr Müller"
+          ],
+          "answer": "Paula"
+        }
+      ]
+    },
+    "listeningTask": {
+      "script": "A: Welches Fach magst du am liebsten? B: Ich mag Biologie, Tiere finde ich interessant.",
+      "questions": [
+        {
+          "question": "Welches Fach mag B?",
+          "options": [
+            "Mathe",
+            "Biologie",
+            "Geschichte",
+            "Deutsch"
+          ],
+          "answer": "Biologie"
+        }
+      ]
+    },
+    "writingTask": {
+      "prompt": "Write your school schedule for one week with subjects and times."
+    },
+    "speakingTask": {
+      "prompt": "Describe your favorite subject and explain why."
+    },
+    "reviewSummary": "am + day + habe + subject for schedule. Mein Lieblingsfach ist... ich mag / du magst for likes. Subjects are die / das / die nouns.",
+    "conceptId": "a1_school_subjects",
+    "estimatedMinutes": 22,
+    "prerequisiteConceptIds": [
+      "a1_present_tense_regular",
+      "a1_word_order_main_clause"
+    ],
+    "linkedQuestionIds": [],
+    "conceptsTaught": [
+      "a1_school_subjects",
+      "a1_subject_preferences",
+      "a1_study_verbs"
+    ],
+    "commonMistakes": [
+      "Schule is feminine: die Schule. Wrong: der Schule.",
+      "Subjects are neuter: das Fach, das Mathe. Wrong: die Mathe.",
+      "Use Ich mag not Ich magne. The verb mog is irregular.",
+      "Lieblingsfach = favorite subject. Say Das ist mein Lieblingsfach.",
+      "Time before object: Wir haben am Montag Mathe. Wrong: Wir haben Mathe am Montag."
+    ],
+    "formsTable": [
+      {
+        "form": "das Fach / die Facher",
+        "use": "subject / subjects",
+        "example": "Mein Lieblingsfach ist Mathe."
+      },
+      {
+        "form": "ich mag / du magst",
+        "use": "I like / you like",
+        "example": "Ich mag Mathe. Magst du auch Mathe?"
+      },
+      {
+        "form": "ich habe [am Tag] [Fach]",
+        "use": "I have [subject] on [day]",
+        "example": "Am Montag habe ich Mathe."
+      },
+      {
+        "form": "ich lerne / ich studiere",
+        "use": "I learn / I study",
+        "example": "Ich lerne Deutsch. Ich studiere Medizin."
+      }
+    ],
+    "controlledPractice": [
+      {
+        "prompt": "Mein ___ ist Biologie. (Lieblingsfach/Lieblingsort)",
+        "answer": "Lieblingsfach"
+      },
+      {
+        "prompt": "Am Montag habe ___ Mathe. (ich/du)",
+        "answer": "ich"
+      },
+      {
+        "prompt": "___ Schule beginnt um 8 Uhr. (Die/Das)",
+        "answer": "Die"
+      },
+      {
+        "prompt": "Ich ___ Deutsch. (lerne/lernst)",
+        "answer": "lerne"
+      },
+      {
+        "prompt": "Magst ___ Chemie? (du/Sie)",
+        "answer": "du"
+      }
+    ],
+    "mixedPractice": [
+      "Tell what subjects you have on Monday and Wednesday.",
+      "Say which subject you like and which is difficult.",
+      "Make a sentence about your school timetable."
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write your school timetable in German.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 5 sentences about your favorite and least favorite subjects.",
+        "type": "writing"
+      }
+    ],
+    "remediationLessonId": "A1_lesson_25",
+    "pronunciationNotes": [
+      "Biologie: like bee-oh-lo-gee with hard g.",
+      "Chemie: ch is soft, like She-mee."
+    ],
+    "medicalFspNotes": [
+      "Medical students take: Anatomie, Physiologie, Biochemie.",
+      "For FSP: Ich habe meinen Kurs in Anatomie bestanden."
+    ]
+  }
+]

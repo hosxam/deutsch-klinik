@@ -1,0 +1,4361 @@
+[
+  {
+    "level": "A2",
+    "unit": "A2_unit_1",
+    "id": "A2_lesson_1",
+    "title": "Wiederholung von A1 und sich vorstellen",
+    "objective": "Review key A1 topics and practice introducing yourself in more detail.",
+    "explanation": "In A2, you build on what you learned in A1. You can already greet people, introduce yourself, and use basic present tense. Now we expand: talk about your family, your hobbies, and where you live in more complete sentences. Remember: in German, the verb is always the second idea in a main clause.",
+    "examples": [
+      "Hallo, ich heisse Maria und komme aus Berlin.",
+      "Mein Bruder heißt Paul und er ist 25 Jahre alt.",
+      "Ich wohne in einer Wohnung im Zentrum.",
+      "Meine Hobbys sind Fussball und Lesen.",
+      "Ich habe eine Schwester. Sie heißt Anna."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Bruder",
+        "translation": "brother",
+        "example": "Mein Bruder studiert Medizin."
+      },
+      {
+        "word": "die Schwester",
+        "translation": "sister",
+        "example": "Meine Schwester wohnt in Hamburg."
+      },
+      {
+        "word": "die Familie",
+        "translation": "family",
+        "example": "Meine Familie ist gross."
+      },
+      {
+        "word": "der Beruf",
+        "translation": "profession",
+        "example": "Mein Beruf ist Arzt."
+      },
+      {
+        "word": "das Hobby",
+        "translation": "hobby",
+        "example": "Mein Hobby ist Schwimmen."
+      }
+    ],
+    "grammarFocus": "Word order: verb is the second element. 'Ich heisse Maria.' 'Heute gehe ich ins Kino.' Position of time expressions: time before place.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ aus der Türkei.' (come)",
+        "answer": "komme"
+      },
+      {
+        "prompt": "Translate: 'My sister lives in Munich.'",
+        "answer": "Meine Schwester wohnt in München."
+      },
+      {
+        "prompt": "Word order correctly: 'Heute / ich / gehe / ins Kino.'",
+        "answer": "Heute gehe ich ins Kino."
+      },
+      {
+        "prompt": "What is the correct article for 'Bruder'?",
+        "answer": "der"
+      },
+      {
+        "prompt": "Translate: 'What is your profession?' (formal)",
+        "answer": "Was ist Ihr Beruf?"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about your family members.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe your daily routine in 5 sentences with correct word order.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Hallo, ich bin Lukas. Ich wohne in Köln und arbeite als Ingenieur. Meine Familie wohnt in Berlin.'",
+    "readingTask": "Read: 'Mein Name ist Sofia. Ich bin 28 Jahre alt und komme aus Griechenland. Ich arbeite in einem Krankenhaus. Meine Hobbys sind Tanzen und Kochen.'",
+    "speakingTask": "Tell a partner your name, where you are from, your job, and two hobbies. Use full sentences.",
+    "writingTask": "Write a short email (40-60 words) introducing yourself to a new German friend. Include name, age, city, job, hobbies.",
+    "reviewSummary": "You reviewed A1 basics: introductions, word order, family vocabulary. You can now introduce yourself in detail with complete sentences.",
+    "conceptId": "a2.review.self.intro",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a1.greetings.sein-introductions",
+      "a1_noun_gender_basics"
+    ],
+    "conceptsTaught": [
+      "a2.negation.basics",
+      "a2.pronomen.subject",
+      "a2.possessivartikel.basics"
+    ],
+    "commonMistakes": [
+      "Using kein instead of nicht for verb negation: \"Ich komme nicht\" not \"Ich komme kein\".",
+      "Confusing mein/meine with possessive: \"Mein Bruder\" vs \"Meine Schwester\".",
+      "Forgetting verb-second position with time expressions: \"Heute gehe ich\" not \"Heute ich gehe\".",
+      "Using du instead of Sie in formal introductions.",
+      "Omitting articles: \"Ich habe Bruder\" should be \"Ich habe einen Bruder\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Pronomen",
+          "Negation (nicht)",
+          "Possessivartikel (m)",
+          "Possessivartikel (f)"
+        ],
+        "rows": [
+          [
+            "ich",
+            "ich komme nicht",
+            "mein Bruder",
+            "meine Schwester"
+          ],
+          [
+            "du",
+            "du kommst nicht",
+            "dein Bruder",
+            "deine Schwester"
+          ],
+          [
+            "er/sie/es",
+            "er kommt nicht",
+            "sein/ihr Bruder",
+            "seine/ihre Schwester"
+          ],
+          [
+            "wir",
+            "wir kommen nicht",
+            "unser Bruder",
+            "unsere Schwester"
+          ],
+          [
+            "ihr",
+            "ihr kommt nicht",
+            "euer Bruder",
+            "eure Schwester"
+          ],
+          [
+            "sie/Sie",
+            "sie kommen nicht",
+            "ihr/Ihr Bruder",
+            "ihre/Ihre Schwester"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ du aus Spanien? (kommen)",
+        "answer": "Kommst"
+      },
+      {
+        "prompt": "Ich ___ keine Geschwister. (haben)",
+        "answer": "habe"
+      },
+      {
+        "prompt": "Mein ___ Bruder heißt Max.",
+        "answer": "mein (or der)"
+      },
+      {
+        "prompt": "___ heißen Sie?",
+        "answer": "Wie"
+      },
+      {
+        "prompt": "Nein, ich komme ___ aus Italien. (nicht/kein)",
+        "answer": "nicht"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "a2-review",
+      "self-intro"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_20",
+      "A2_gr_98",
+      "A2_gr_99",
+      "A2_gr_100",
+      "A2_gr_113",
+      "A2_gr_151",
+      "A2_gr_152",
+      "A2_gr_153",
+      "A2_gr_154",
+      "A2_gr_174",
+      "A2_gr_175",
+      "A2_gr_176",
+      "A2_gr_178",
+      "A2_gr_179",
+      "A2_gr_180",
+      "A2_gr_188",
+      "A2_gr_189",
+      "A2_gr_190"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_1",
+    "id": "A2_lesson_2",
+    "title": "Alltagsroutine im Detail",
+    "objective": "Describe your daily routine with more detail, using time expressions and separable verbs.",
+    "explanation": "In A2, you use more time expressions (morgens, mittags, abends, um 8 Uhr) and separable verbs like 'aufstehen' (to get up) and 'einkaufen' (to shop). In present tense, the prefix gös to the end. Example: 'Ich stehe um 7 Uhr auf.'",
+    "examples": [
+      "Ich stehe jeden Tag um 6 Uhr auf.",
+      "Mein Bruder kauft am Samstag ein.",
+      "Ich bringe die Kinder zur Schule.",
+      "Wir essen abends um 19 Uhr zu Abend.",
+      "Er fährt um 8 Uhr zur Arbeit."
+    ],
+    "vocabulary": [
+      {
+        "word": "aufstehen",
+        "translation": "to get up",
+        "example": "Ich stehe um 6 Uhr auf."
+      },
+      {
+        "word": "einkaufen",
+        "translation": "to shop",
+        "example": "Sie kauft am Freitag ein."
+      },
+      {
+        "word": "die Arbeit",
+        "translation": "work",
+        "example": "Um 9 Uhr beginnt die Arbeit."
+      },
+      {
+        "word": "frühstücken",
+        "translation": "to have breakfast",
+        "example": "Ich frühstücke um 7 Uhr."
+      },
+      {
+        "word": "zurückkommen",
+        "translation": "to come back",
+        "example": "Er kommt um 18 Uhr zurück."
+      }
+    ],
+    "grammarFocus": "Separable verbs: prefix separates and gös to the end. aufstehen -> ich stehe ... auf. einkaufen -> ich kaufe ... ein. Common prefixes: auf-, ein-, mit-, zurück-, an-, aus-.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ um 7 Uhr ___ (aufstehen).'",
+        "answer": "stehe ... auf"
+      },
+      {
+        "prompt": "Translate: 'We eat dinner at 7 pm.'",
+        "answer": "Wir essen um 19 Uhr zu Abend."
+      },
+      {
+        "prompt": "What is the separable verb for 'to come back'?",
+        "answer": "zurückkommen"
+      },
+      {
+        "prompt": "Complete: 'Er ___ um 8 Uhr zur Arbeit.' (fahren)",
+        "answer": "fährt"
+      },
+      {
+        "prompt": "Translate: 'My brother shops on Saturday.'",
+        "answer": "Mein Bruder kauft am Samstag ein."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write your complete daily routine from morning to night (8-10 sentences).",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 separable verbs and write one sentence with each.",
+        "type": "grammar"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Am Morgen stehe ich um halb sieben auf. Ich dusche und frühstücke. Um acht Uhr gehe ich zur Arbeit.'",
+    "readingTask": "Read: 'Maria steht um 6 Uhr auf. Sie duscht, zieht sich an und frühstückt. Um 7 Uhr geht sie aus dem Haus.'",
+    "speakingTask": "Describe your typical weekday routine. Mention what time you get up, eat, work, and relax.",
+    "writingTask": "Write a paragraph (50-70 words) about your weekly routine. Use at least two separable verbs.",
+    "reviewSummary": "You learned: daily routine vocabulary, separable verbs (prefix gös to the end), and time expressions.",
+    "conceptId": "a2.daily.routine",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.review.self.intro",
+      "a1_present_tense_regular"
+    ],
+    "conceptsTaught": [
+      "a2.imperativ.basics",
+      "a2.modalverben.praesens",
+      "a2.zeitangaben.basics",
+      "a2.praeteritum.haben.sein"
+    ],
+    "commonMistakes": [
+      "Putting the verb at the end in Imperativ: \"Geh!\" not \"Du gehst!\".",
+      "Forgetting to put the modal verb in position 2: \"Ich kann schwimmen\" not \"Ich schwimmen kann\".",
+      "Confusing um...zu vs damit for purpose clauses.",
+      "Using Präteritum for spoken language where Perfekt is preferred in German: \"Ich habe gegessen\" vs \"Ich aß\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Imperativ du",
+          "Imperativ ihr",
+          "Imperativ Sie"
+        ],
+        "rows": [
+          [
+            "kommen",
+            "Komm!",
+            "Kommt!",
+            "Kommen Sie!"
+          ],
+          [
+            "gehen",
+            "Geh!",
+            "Geht!",
+            "Gehen Sie!"
+          ],
+          [
+            "sprechen",
+            "Sprich!",
+            "Sprecht!",
+            "Sprechen Sie!"
+          ],
+          [
+            "fahren",
+            "Fahr!",
+            "Fahrt!",
+            "Fahren Sie!"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "Modalverb",
+          "Präsens",
+          "Präteritum"
+        ],
+        "rows": [
+          [
+            "können",
+            "ich kann",
+            "ich konnte"
+          ],
+          [
+            "müssen",
+            "ich muss",
+            "ich musste"
+          ],
+          [
+            "dürfen",
+            "ich darf",
+            "ich durfte"
+          ],
+          [
+            "sollen",
+            "ich soll",
+            "ich sollte"
+          ],
+          [
+            "wollen",
+            "ich will",
+            "ich wollte"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ Sie mir bitte helfen? (Modalverb)",
+        "answer": "Können"
+      },
+      {
+        "prompt": "___ (du) bitte leise!",
+        "answer": "Sei"
+      },
+      {
+        "prompt": "Um 7 Uhr ___ ich auf. (aufstehen, Präsens)",
+        "answer": "stehe"
+      },
+      {
+        "prompt": "Früher ___ ich jeden Tag schwimmen. (gehen, Präteritum)",
+        "answer": "ging"
+      },
+      {
+        "prompt": "___ du heute Abend Zeit?",
+        "answer": "Hast"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "daily-life",
+      "imperative"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_9",
+      "A2_gr_10",
+      "A2_gr_61",
+      "A2_gr_62",
+      "A2_gr_63",
+      "A2_gr_105",
+      "A2_gr_106",
+      "A2_gr_107",
+      "A2_gr_108",
+      "A2_gr_171",
+      "A2_gr_173"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_1",
+    "id": "A2_lesson_3",
+    "title": "Vergangene Aktivitäten (Perfekt)",
+    "objective": "Talk about past activities using the Perfekt tense with haben and sein.",
+    "explanation": "The Perfekt tense is used in spoken German to talk about the past. Form: haben or sein (conjugated) + past participle at the end. Most verbs use haben. Verbs of movement and state change use sein. Regular participle: ge- + stem + -t. Irregular: various forms like gesehen, gefahren, gegessen.",
+    "examples": [
+      "Ich habe gestern einen Film gesehen.",
+      "Wir sind nach Berlin gefahren.",
+      "Hast du das Buch gelesen?",
+      "Sie ist um 8 Uhr aufgestanden.",
+      "Ich habe mit meiner Mutter telefoniert."
+    ],
+    "vocabulary": [
+      {
+        "word": "gestern",
+        "translation": "yesterday",
+        "example": "Gestern war ich im Kino."
+      },
+      {
+        "word": "passieren",
+        "translation": "to happen",
+        "example": "Was ist gestern passiert?"
+      },
+      {
+        "word": "letzte Woche",
+        "translation": "last week",
+        "example": "Letzte Woche hatte ich Urlaub."
+      },
+      {
+        "word": "das Wochenende",
+        "translation": "weekend",
+        "example": "Am Wochenende habe ich geschlafen."
+      },
+      {
+        "word": "erledigen",
+        "translation": "to get done",
+        "example": "Ich habe die Arbeit erledigt."
+      }
+    ],
+    "grammarFocus": "Perfekt with haben: ich habe gearbeitet, du hast gelernt. Perfekt with sein (movement): ich bin gefahren, wir sind gegangen. Irregular participles: gesehen (sehen), gegessen (essen), getrunken (trinken).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ einen Kaffee getrunken.'",
+        "answer": "habe"
+      },
+      {
+        "prompt": "Complete: 'Wir ___ nach München gefahren.'",
+        "answer": "sind"
+      },
+      {
+        "prompt": "Translate: 'I bought bread.'",
+        "answer": "Ich habe Brot gekauft."
+      },
+      {
+        "prompt": "Participle of 'lesen'?",
+        "answer": "gelesen"
+      },
+      {
+        "prompt": "Translate: 'She went to the supermarket.'",
+        "answer": "Sie ist zum Supermarkt gegangen."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about what you did yesterday using Perfekt.",
+        "type": "writing"
+      },
+      {
+        "prompt": "List 5 verbs that use sein and 5 that use haben in Perfekt.",
+        "type": "grammar"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Gestern bin ich um 7 Uhr aufgestanden. Ich habe gefrühstückt und bin zur Arbeit gefahren.'",
+    "readingTask": "Read: 'Am Wochenende habe ich meine Oma besucht. Wir haben Kuchen gegessen und Kaffee getrunken.'",
+    "speakingTask": "Tell a partner what you did last weekend. Use at least 5 Perfekt sentences.",
+    "writingTask": "Write 8 sentences about your last vacation using Perfekt tense. Include activities, places, and people.",
+    "reviewSummary": "You learned the Perfekt tense: haben/sein conjugated + past participle at the end. Most verbs use haben, movement verbs use sein.",
+    "conceptId": "a2.perfect.tense",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.daily.routine",
+      "a1_present_tense_regular"
+    ],
+    "conceptsTaught": [
+      "a2.perfekt.basics",
+      "a2.partizip.ii",
+      "a2.trennbare.verben.perfekt"
+    ],
+    "commonMistakes": [
+      "Using the wrong auxiliary: \"Ich bin gefahren\" vs \"Ich habe gefahren\" (movement vs transitive).",
+      "Forgetting the ge- prefix for regular Partizip II: \"gemacht\" not \"macht\".",
+      "Putting the Partizip II before the auxiliary in main clauses.",
+      "Forgetting the -t suffix for regular verbs: \"gearbeitet\" not \"gearbeit\".",
+      "Confusing separable verbs: \"Ich habe eingekauft\" not \"Ich habe gekauft ein\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Partizip II",
+          "Hilfsverb"
+        ],
+        "rows": [
+          [
+            "machen",
+            "gemacht",
+            "haben"
+          ],
+          [
+            "gehen",
+            "gegangen",
+            "sein"
+          ],
+          [
+            "fahren",
+            "gefahren",
+            "sein"
+          ],
+          [
+            "kaufen",
+            "gekauft",
+            "haben"
+          ],
+          [
+            "einkaufen",
+            "eingekauft",
+            "haben"
+          ],
+          [
+            "anrufen",
+            "angerufen",
+            "haben"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich habe gestern ___ (einkaufen).",
+        "answer": "eingekauft"
+      },
+      {
+        "prompt": "Er ___ nach Berlin gefahren. (Hilfsverb)",
+        "answer": "ist"
+      },
+      {
+        "prompt": "___ du das Buch gelesen?",
+        "answer": "Hast"
+      },
+      {
+        "prompt": "Wir sind um 8 Uhr ___ (abfahren).",
+        "answer": "abgefahren"
+      },
+      {
+        "prompt": "Sie hat den Kuchen ___ (backen).",
+        "answer": "gebacken"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "past-tense",
+      "perfect"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_1",
+      "A2_gr_2",
+      "A2_gr_21",
+      "A2_gr_22",
+      "A2_gr_23",
+      "A2_gr_24",
+      "A2_gr_25",
+      "A2_gr_26",
+      "A2_gr_27",
+      "A2_gr_28",
+      "A2_gr_29",
+      "A2_gr_30",
+      "A2_gr_31",
+      "A2_gr_32",
+      "A2_gr_33",
+      "A2_gr_34",
+      "A2_gr_35",
+      "A2_gr_36",
+      "A2_gr_37",
+      "A2_gr_139",
+      "A2_gr_159",
+      "A2_gr_160",
+      "A2_gr_161",
+      "A2_gr_162",
+      "A2_gr_163",
+      "A2_gr_193",
+      "A2_gr_196",
+      "A2_gr_200"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_2",
+    "id": "A2_lesson_4",
+    "title": "Reisen und Verkehrsmittel",
+    "objective": "Talk about travel and different modes of transportation, buy tickets, ask about schedules.",
+    "explanation": "Travel vocabulary is essential at A2 level. Learn vehicles (der Zug, das Auto, der Bus), buy tickets, ask about schedules. Prepositions like 'mit' (by) take dative: mit dem Zug, mit der Bahn, mit dem Bus.",
+    "examples": [
+      "Ich fahre mit dem Zug nach Hamburg.",
+      "Wir reisen mit dem Flugzeug in den Urlaub.",
+      "Der Bus fährt um 10 Uhr ab.",
+      "Kann ich eine Fahrkarte nach Berlin kaufen?",
+      "Die Reise dauert drei Stunden."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Zug",
+        "translation": "train",
+        "example": "Der Zug kommt um 9 Uhr an."
+      },
+      {
+        "word": "das Flugzeug",
+        "translation": "airplane",
+        "example": "Das Flugzeug fliegt nach Spanien."
+      },
+      {
+        "word": "die Fahrkarte",
+        "translation": "ticket",
+        "example": "Ich brauche eine Fahrkarte."
+      },
+      {
+        "word": "abfahren",
+        "translation": "to depart",
+        "example": "Der Bus fährt um 8 Uhr ab."
+      },
+      {
+        "word": "ankommen",
+        "translation": "to arrive",
+        "example": "Wann kommen wir an?"
+      }
+    ],
+    "grammarFocus": "Prepositions with dative: mit (by), zu (to), nach (to cities/countries), von (from). 'Ich fahre mit dem Bus.' 'Ich fliege nach Italien.' 'Ich gehe zum Bahnhof.' Qüstion words: wann (when), wo (where), wohin (where to), wie lange (how long).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich fahre ___ dem Bus zur Arbeit.'",
+        "answer": "mit"
+      },
+      {
+        "prompt": "Translate: 'I travel by train to Munich.'",
+        "answer": "Ich reise mit dem Zug nach München."
+      },
+      {
+        "prompt": "Ask: 'When dös the train depart?'",
+        "answer": "Wann fährt der Zug ab?"
+      },
+      {
+        "prompt": "Complete: 'Das Flugzeug ___ um 14 Uhr ___ (ankommen).'",
+        "answer": "kommt ... an"
+      },
+      {
+        "prompt": "Translate: 'The journey takes 3 hours.'",
+        "answer": "Die Reise dauert drei Stunden."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Plan a trip: write 5 sentences about where you go, how you travel, and how long.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 3 qüstions you could ask at a train station.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich möchte eine Fahrkarte nach Köln. Einfach, bitte. Das macht 35 Euro. Der Zug fährt um 10 Uhr 15 ab Gleis 5.'",
+    "readingTask": "Read: 'Paul reist nach Berlin. Er fährt mit dem ICE. Der Zug fährt um 9 Uhr vom Hauptbahnhof ab. Die Fahrt dauert 4 Stunden.'",
+    "speakingTask": "Tell a partner about a trip you took. How did you travel? Where did you go? How long did it take?",
+    "writingTask": "Write a short dialogü (8-10 lines) between a passenger and a ticket seller at the train station.",
+    "reviewSummary": "You learned: travel vocabulary, dative with 'mit' (mit dem Zug), qüstion words for travel, and how to buy tickets.",
+    "conceptId": "a2.travel.transport",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.review.self.intro",
+      "a1_word_order_main_clause"
+    ],
+    "conceptsTaught": [
+      "a2.als.vs.wenn",
+      "a2.konjunktionen.als.wenn",
+      "a2.wenn.saetze"
+    ],
+    "commonMistakes": [
+      "Using wenn for past one-time events instead of als: \"Als ich in Berlin war\" not \"Wenn ich in Berlin war\".",
+      "Confusing als vs wie in comparisons: \"größer als\" not \"größer wie\".",
+      "Putting the conjugated verb at the end in wenn-sentences: \"Wenn ich Zeit habe\" not \"Wenn ich habe Zeit\".",
+      "Using comma incorrectly before und/oder in main clause series."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Konjunktion",
+          "Bedeutung",
+          "Wortstellung"
+        ],
+        "rows": [
+          [
+            "als",
+            "when (past, one-time)",
+            "Nebensatz (Verb am Ende)"
+          ],
+          [
+            "wenn",
+            "when (present/future/repeated)",
+            "Nebensatz (Verb am Ende)"
+          ],
+          [
+            "weil",
+            "because",
+            "Nebensatz (Verb am Ende)"
+          ],
+          [
+            "obwohl",
+            "although",
+            "Nebensatz (Verb am Ende)"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ ich gestern im Park war, hat es geregnet. (one-time past)",
+        "answer": "Als"
+      },
+      {
+        "prompt": "___ du Zeit hast, können wir uns treffen.",
+        "answer": "Wenn"
+      },
+      {
+        "prompt": "Ich reise gern, ___ ich neue Orte entdecke. (because)",
+        "answer": "weil"
+      },
+      {
+        "prompt": "Das Hotel ist größer ___ die Kirche.",
+        "answer": "als"
+      },
+      {
+        "prompt": "___ das Wetter gut ist, gehen wir spazieren.",
+        "answer": "Wenn"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "travel",
+      "conjunctions"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_46",
+      "A2_gr_47",
+      "A2_gr_48",
+      "A2_gr_92",
+      "A2_gr_93",
+      "A2_gr_94",
+      "A2_gr_95",
+      "A2_gr_96",
+      "A2_gr_97",
+      "A2_gr_112",
+      "A2_gr_114",
+      "A2_gr_120",
+      "A2_gr_137",
+      "A2_gr_156",
+      "A2_gr_157",
+      "A2_gr_158",
+      "A2_gr_168",
+      "A2_gr_169",
+      "A2_gr_170"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_2",
+    "id": "A2_lesson_5",
+    "title": "Hotel und Unterkunft",
+    "objective": "Make hotel reservations, check in, and talk about accommodation.",
+    "explanation": "Key phrases: 'Ich möchte ein Zimmer reservieren' (I'd like to reserve a room), 'Haben Sie ein Einzelzimmer?' (Do you have a single room?), 'Wie viel kostet eine Nacht?' Hotel vocab: das Einzelzimmer, das Doppelzimmer.",
+    "examples": [
+      "Ich möchte ein Doppelzimmer mit Bad reservieren.",
+      "Haben Sie ein freies Zimmer für zwei Nächte?",
+      "Das Zimmer kostet 80 Euro pro Nacht.",
+      "Der Check-in ist ab 15 Uhr.",
+      "Das Frühstück ist im Preis inbegriffen."
+    ],
+    "vocabulary": [
+      {
+        "word": "das Einzelzimmer",
+        "translation": "single room",
+        "example": "Ich brauche ein Einzelzimmer."
+      },
+      {
+        "word": "das Doppelzimmer",
+        "translation": "double room",
+        "example": "Das Doppelzimmer kostet 100 Euro."
+      },
+      {
+        "word": "reservieren",
+        "translation": "to reserve",
+        "example": "Ich möchte ein Zimmer reservieren."
+      },
+      {
+        "word": "die Reservierung",
+        "translation": "reservation",
+        "example": "Ich habe eine Reservierung."
+      },
+      {
+        "word": "der Schlüssel",
+        "translation": "key",
+        "example": "Hier ist Ihr Schlüssel."
+      }
+    ],
+    "grammarFocus": "Modal verb 'möchten' (would like): ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten. Used for polite reqüsts. 'Haben Sie...?' for polite qüstions.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ ein Zimmer reservieren.'",
+        "answer": "möchte"
+      },
+      {
+        "prompt": "Translate: 'Do you have a free room?'",
+        "answer": "Haben Sie ein freies Zimmer?"
+      },
+      {
+        "prompt": "Translate: 'The room costs 80 euros per night.'",
+        "answer": "Das Zimmer kostet 80 Euro pro Nacht."
+      },
+      {
+        "prompt": "What is the German for 'single room'?",
+        "answer": "das Einzelzimmer"
+      },
+      {
+        "prompt": "Complete: 'Das Frühstück ___ im Preis inbegriffen.'",
+        "answer": "ist"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a short dialogü for checking into a hotel (6-8 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 3 sentences about what you would ask at a hotel reception.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Abend. Ich habe eine Reservierung auf den Namen Meyer. Ein Doppelzimmer für drei Nächte. Hier ist Ihr Schlüssel. Das Frühstück gibt es von 7 bis 10 Uhr.'",
+    "readingTask": "Read: 'Das Hotel Sonne liegt im Stadtzentrum. Es hat 30 Zimmer und ein Restaurant. Ein Einzelzimmer kostet 60 Euro pro Nacht.'",
+    "speakingTask": "Role-play: You are at a hotel reception. Ask for a room for two nights. Ask the price and about breakfast.",
+    "writingTask": "Write a short email (40-50 words) to a hotel reserving a double room for three nights. Ask about the price and breakfast.",
+    "reviewSummary": "You learned: hotel vocabulary, using 'möchten' for polite reqüsts, and phrases for making reservations and checking in.",
+    "conceptId": "a2.hotel.accommodation",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.travel.transport",
+      "a1_word_order_main_clause"
+    ],
+    "conceptsTaught": [
+      "a2.weil.saetze",
+      "a2.subordinate.clauses.weil"
+    ],
+    "commonMistakes": [
+      "Putting the verb before the subject in weil-clauses: \"weil ich krank bin\" not \"weil bin ich krank\".",
+      "Forgetting the comma before weil: not using a comma between main and subordinate clause.",
+      "Using weil when denn would be more appropriate in spoken German (denn takes main clause word order).",
+      "Confusing weil with obwohl: \"weil es regnet\" vs \"obwohl es regnet\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Deutsch",
+          "Englisch",
+          "Wortstellung"
+        ],
+        "rows": [
+          [
+            "Ich lerne Deutsch, weil es wichtig ist.",
+            "I learn German because it is important.",
+            "Verb am Ende nach weil"
+          ],
+          [
+            "Weil es regnet, bleibe ich zu Hause.",
+            "Because it is raining, I stay home.",
+            "Verb am Ende, dann Hauptsatz"
+          ],
+          [
+            "Er kommt nicht, weil er krank ist.",
+            "He is not coming because he is sick.",
+            "Verb am Ende im Nebensatz"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich bleibe zu Hause, ___ es regnet.",
+        "answer": "weil"
+      },
+      {
+        "prompt": "___ ich krank bin, gehe ich zum Arzt.",
+        "answer": "Weil"
+      },
+      {
+        "prompt": "Er lernt Deutsch, ___ er in Berlin wohnt.",
+        "answer": "weil"
+      },
+      {
+        "prompt": "___ es kalt ist, ziehe ich eine Jacke an.",
+        "answer": "Weil"
+      },
+      {
+        "prompt": "Sie kommt nicht, ___ sie keine Zeit hat.",
+        "answer": "weil"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "accommodation",
+      "weil-clauses"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_11",
+      "A2_gr_38",
+      "A2_gr_39",
+      "A2_gr_40",
+      "A2_gr_42",
+      "A2_gr_66",
+      "A2_gr_67",
+      "A2_gr_68",
+      "A2_gr_69",
+      "A2_gr_164",
+      "A2_gr_165",
+      "A2_gr_166",
+      "A2_gr_167"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_2",
+    "id": "A2_lesson_6",
+    "title": "Einkaufen und Dienstleistungen",
+    "objective": "Shop for clothes, ask about prices, and use services like the post office.",
+    "explanation": "Shopping vocabulary is important for daily life. Learn to ask for sizes, colors, and prices. Key verbs: kaufen (buy), bezahlen (pay), kosten (cost), umtauschen (exchange). 'Wie viel kostet das?' (How much is that?) 'Haben Sie das in einer anderen Grösse?' (Do you have this in another size?).",
+    "examples": [
+      "Wie viel kostet dieses Hemd?",
+      "Haben Sie das in Blau?",
+      "Ich möchte diese Hose anprobieren.",
+      "Kann ich mit Karte bezahlen?",
+      "Das ist zu teuer. Haben Sie etwas Günstigeres?"
+    ],
+    "vocabulary": [
+      {
+        "word": "die Kleidung",
+        "translation": "clothing",
+        "example": "Ich kaufe neue Kleidung."
+      },
+      {
+        "word": "anprobieren",
+        "translation": "to try on",
+        "example": "Kann ich das anprobieren?"
+      },
+      {
+        "word": "die Grösse",
+        "translation": "size",
+        "example": "Ich brauche Grösse 40."
+      },
+      {
+        "word": "bezahlen",
+        "translation": "to pay",
+        "example": "Ich möchte bezahlen."
+      },
+      {
+        "word": "der Preis",
+        "translation": "price",
+        "example": "Der Preis ist 50 Euro."
+      }
+    ],
+    "grammarFocus": "Demonstrative articles: dieser/diese/dieses (this). 'Dieses Hemd gefällt mir.' 'Diese Schuhe sind schön.' Adjective endings after definite article: der gute Preis, das kleine Zimmer, die rote Jacke.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Wie viel ___ dieses Hemd?'",
+        "answer": "kostet"
+      },
+      {
+        "prompt": "Translate: 'I would like to try on this dress.'",
+        "answer": "Ich möchte dieses Kleid anprobieren."
+      },
+      {
+        "prompt": "Translate: 'Can I pay by card?'",
+        "answer": "Kann ich mit Karte bezahlen?"
+      },
+      {
+        "prompt": "What is the German word for 'size'?",
+        "answer": "die Grösse"
+      },
+      {
+        "prompt": "Complete: '___ Sie das in Rot? (Do you have)'",
+        "answer": "Haben"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü between a customer and a shop assistant (8-10 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe 3 clothing items you own: color, size, and opinion.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Tag. Kann ich Ihnen helfen? Ja, ich suche eine Hose in Grösse 38. Welche Farbe möchten Sie? Schwarz, bitte.'",
+    "readingTask": "Read: 'Lisa geht in ein Kaufhaus. Sie kauft einen schönen Schal. Der Schal kostet 25 Euro.'",
+    "speakingTask": "Role-play: You are at a clothing store. Ask for a shirt, the price, and to try it on.",
+    "writingTask": "Write a short paragraph (40-60 words) about a shopping trip: what you bought, the price, how you paid.",
+    "reviewSummary": "You learned: shopping vocabulary, asking about prices and sizes, demonstrative articles.",
+    "conceptId": "a2.shopping.services",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.perfect.tense",
+      "a1_word_order_main_clause"
+    ],
+    "conceptsTaught": [
+      "a2.indirekte.fragen",
+      "a2.interrogatives.wfragen"
+    ],
+    "commonMistakes": [
+      "Using direct word order in indirect questions: \"Ich weiß nicht, wo er wohnt\" not \"wo wohnt er\".",
+      "Forgetting the comma before the indirect question.",
+      "Confusing ob and wenn: \"Ich frage, ob du kommst\" not \"Ich frage, wenn du kommst\".",
+      "Using question word order in embedded clauses."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Direkte Frage",
+          "Indirekte Frage"
+        ],
+        "rows": [
+          [
+            "Wo wohnst du?",
+            "Ich möchte wissen, wo du wohnst."
+          ],
+          [
+            "Wie heißt sie?",
+            "Kannst du mir sagen, wie sie heißt?"
+          ],
+          [
+            "Kommt er?",
+            "Ich frage mich, ob er kommt."
+          ],
+          [
+            "Wann beginnt der Kurs?",
+            "Weißt du, wann der Kurs beginnt?"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Kannst du mir sagen, ___ der Bahnhof ist?",
+        "answer": "wo"
+      },
+      {
+        "prompt": "Ich möchte wissen, ___ er morgen kommt. (yes/no)",
+        "answer": "ob"
+      },
+      {
+        "prompt": "Weißt du, ___ das kostet?",
+        "answer": "was"
+      },
+      {
+        "prompt": "Ich frage mich, ___ sie schon da ist.",
+        "answer": "ob"
+      },
+      {
+        "prompt": "Können Sie mir erklären, ___ ich das mache?",
+        "answer": "wie"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "shopping",
+      "questions"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_17",
+      "A2_gr_75",
+      "A2_gr_76",
+      "A2_gr_77",
+      "A2_gr_78",
+      "A2_gr_79",
+      "A2_gr_84",
+      "A2_gr_85",
+      "A2_gr_86",
+      "A2_gr_87",
+      "A2_gr_110",
+      "A2_gr_118",
+      "A2_gr_119",
+      "A2_gr_121",
+      "A2_gr_197"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_3",
+    "id": "A2_lesson_7",
+    "title": "Essen und Restaurantbesuch",
+    "objective": "Order food in a restaurant, talk about meals, and express preferences.",
+    "explanation": "Order food with 'Ich möchte...', ask for the bill 'Die Rechnung, bitte', and express likes (schmecken + dative: 'Das schmeckt mir gut'). 'gern' after verb: 'Ich esse gern Pizza.' 'lieber' = prefer, 'am liebsten' = favorite.",
+    "examples": [
+      "Ich möchte einen Tisch für zwei Personen reservieren.",
+      "Als Vorspeise möchte ich einen Salat.",
+      "Das schmeckt mir sehr gut.",
+      "Ich esse nicht gern Fleisch.",
+      "Die Rechnung, bitte!"
+    ],
+    "vocabulary": [
+      {
+        "word": "die Speisekarte",
+        "translation": "menu",
+        "example": "Kann ich die Speisekarte sehen?"
+      },
+      {
+        "word": "die Vorspeise",
+        "translation": "starter",
+        "example": "Als Vorspeise nehme ich eine Suppe."
+      },
+      {
+        "word": "das Hauptgericht",
+        "translation": "main course",
+        "example": "Das Hauptgericht ist Fisch."
+      },
+      {
+        "word": "die Nachspeise",
+        "translation": "dessert",
+        "example": "Zum Nachtisch möchte ich Eis."
+      },
+      {
+        "word": "schmecken",
+        "translation": "to taste",
+        "example": "Die Pizza schmeckt wunderbar."
+      }
+    ],
+    "grammarFocus": "'schmecken' takes dative: 'Es schmeckt mir.' 'Schmeckt dir die Suppe?' Expressing likes: gern, lieber (prefer), am liebsten (favorite).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Das schmeckt ___ gut.' (to me)",
+        "answer": "mir"
+      },
+      {
+        "prompt": "Translate: 'I would like to reserve a table for two.'",
+        "answer": "Ich möchte einen Tisch für zwei Personen reservieren."
+      },
+      {
+        "prompt": "Translate: 'The bill, please!'",
+        "answer": "Die Rechnung, bitte!"
+      },
+      {
+        "prompt": "What is the comparative of 'gern' (to prefer)?",
+        "answer": "lieber"
+      },
+      {
+        "prompt": "Complete: 'Als Vorspeise ___ ich einen Salat.'",
+        "answer": "nehme"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a restaurant dialogü: reserve, order 3 courses, ask for the bill.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 5 sentences about foods you like and don't like.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Abend, haben Sie einen Tisch frei? Ja, für zwei Personen. Hier ist die Speisekarte.'",
+    "readingTask": "Read: 'Das Restaurant zur Linde bietet deutsche und internationale Gerichte. Das Schnitzel kostet 14 Euro.'",
+    "speakingTask": "Role-play: waiter and customer. Order a meal, ask about food, pay.",
+    "writingTask": "Write a restaurant review (50-70 words): food, taste, service, price.",
+    "reviewSummary": "You learned: restaurant vocabulary, 'schmecken' with dative, gern/lieber.",
+    "conceptId": "a2.food.restaurant",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.hotel.accommodation",
+      "a1_noun_gender_basics"
+    ],
+    "conceptsTaught": [
+      "a2.adjektivendungen.nominativ",
+      "a2.adjektivendungen.akkusativ"
+    ],
+    "commonMistakes": [
+      "Using the wrong adjective ending: \"ein guter Wein\" vs \"einen guten Wein\" (Nominativ vs Akkusativ).",
+      "Forgetting adjective endings altogether after certain articles.",
+      "Using strong endings after definite articles: \"der gute Wein\" not \"der guter Wein\".",
+      "Confusing endings after ein-words vs der-words."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Kasus",
+          "bestimmter Artikel",
+          "unbestimmter Artikel",
+          "ohne Artikel"
+        ],
+        "rows": [
+          [
+            "Nominativ (m)",
+            "der gute Wein",
+            "ein guter Wein",
+            "guter Wein"
+          ],
+          [
+            "Nominativ (f)",
+            "die gute Suppe",
+            "eine gute Suppe",
+            "gute Suppe"
+          ],
+          [
+            "Nominativ (n)",
+            "das gute Bier",
+            "ein gutes Bier",
+            "gutes Bier"
+          ],
+          [
+            "Akkusativ (m)",
+            "den guten Wein",
+            "einen guten Wein",
+            "guten Wein"
+          ],
+          [
+            "Akkusativ (f)",
+            "die gute Suppe",
+            "eine gute Suppe",
+            "gute Suppe"
+          ],
+          [
+            "Dativ (m)",
+            "dem guten Wein",
+            "einem guten Wein",
+            "gutem Wein"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Das ist ein ___ Wein. (gut - Nominativ)",
+        "answer": "guter"
+      },
+      {
+        "prompt": "Ich möchte ein ___ Bier. (kalt - Akkusativ)",
+        "answer": "kaltes"
+      },
+      {
+        "prompt": "Die ___ Suppe schmeckt gut. (warm - bestimmt)",
+        "answer": "warme"
+      },
+      {
+        "prompt": "Er kauft einen ___ Käse. (frisch - Akkusativ)",
+        "answer": "frischen"
+      },
+      {
+        "prompt": "Mit einem ___ Salat, bitte. (klein - Dativ)",
+        "answer": "kleinen"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "food",
+      "adjective-endings"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_3",
+      "A2_gr_4",
+      "A2_gr_5",
+      "A2_gr_54",
+      "A2_gr_55",
+      "A2_gr_56",
+      "A2_gr_57",
+      "A2_gr_59",
+      "A2_gr_80",
+      "A2_gr_81",
+      "A2_gr_82",
+      "A2_gr_83",
+      "A2_gr_144",
+      "A2_gr_145",
+      "A2_gr_146",
+      "A2_gr_147",
+      "A2_gr_198"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_3",
+    "id": "A2_lesson_8",
+    "title": "Arbeit und Arbeitsplatz",
+    "objective": "Talk about your job, workplace, and daily work activities.",
+    "explanation": "Job titles (der Arzt, der Ingenieur), workplace vocab (das Büro, die Firma). 'arbeiten als' (work as): 'Ich arbeite als Arzt.' 'arbeiten bei' (work at): 'Ich arbeite bei Siemens.'",
+    "examples": [
+      "Ich arbeite als Ingenieur bei einer Firma in München.",
+      "Mein Arbeitstag beginnt um 8 Uhr.",
+      "Ich habe viele Termine.",
+      "Meine Kollegin hilft mir bei der Arbeit.",
+      "Wir besuchen nach der Arbeit einen Kurs."
+    ],
+    "vocabulary": [
+      {
+        "word": "die Firma",
+        "translation": "company",
+        "example": "Meine Firma ist in Berlin."
+      },
+      {
+        "word": "der Kollege",
+        "translation": "colleagü",
+        "example": "Mein Kollege heißt Thomas."
+      },
+      {
+        "word": "das Meeting",
+        "translation": "meeting",
+        "example": "Um 10 Uhr habe ich ein Meeting."
+      },
+      {
+        "word": "die Aufgabe",
+        "translation": "task",
+        "example": "Meine Aufgabe ist die Buchhaltung."
+      },
+      {
+        "word": "die Mittagspause",
+        "translation": "lunch break",
+        "example": "Um 12 Uhr ist Mittagspause."
+      }
+    ],
+    "grammarFocus": "Prepositions dative/accusative: in der Firma (location), in die Firma (direction). Possessive: mein Kollege, meine Kollegin, mein Büro.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich arbeite ___ Arzt in einem Krankenhaus.'",
+        "answer": "als"
+      },
+      {
+        "prompt": "Translate: 'My colleagü helps me.'",
+        "answer": "Mein Kollege hilft mir bei der Arbeit."
+      },
+      {
+        "prompt": "Ask: 'Where do you work?' (formal)",
+        "answer": "Wo arbeiten Sie?"
+      },
+      {
+        "prompt": "Complete: 'Ich ___ bei einer Firma.' (work)",
+        "answer": "arbeite"
+      },
+      {
+        "prompt": "Translate: 'The workday begins at 8 am.'",
+        "answer": "Der Arbeitstag beginnt um 8 Uhr."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Describe your workday (8-10 sentences): start, tasks, colleagüs, breaks.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write a short email to a colleagü about next week's meeting.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich arbeite in einer Praxis. Mein Arbeitstag beginnt um 8 Uhr. Ich beantworte das Telefon und mache Termine.'",
+    "readingTask": "Read: 'Herr Müller arbeitet bei einer Automobilfirma. Er arbeitet in der Entwicklungsabteilung.'",
+    "speakingTask": "Tell your partner about your job: what you do, where, your tasks.",
+    "writingTask": "Write a profile (50-60 words): profession, company, daily tasks, what you like.",
+    "reviewSummary": "You learned: job vocabulary, 'als'/'bei', dative/accusative prepositions.",
+    "conceptId": "a2.work.workplace",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.daily.routine",
+      "a1_modal_verbs"
+    ],
+    "conceptsTaught": [
+      "a2.modalverben.praeteritum",
+      "a2.modal.verbs.past"
+    ],
+    "commonMistakes": [
+      "Using Infinitiv without zu after modals: \"Ich kann kommen\" not \"Ich kann zu kommen\".",
+      "Conjugating both modal and main verb: \"Er kann kommen\" not \"Er kann kommt\".",
+      "Confusing durfte (was allowed) with konnte (was able to).",
+      "Using Präsens forms for past events: \"Ich musste\" not \"Ich muss\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Modalverb",
+          "Präsens (ich)",
+          "Präteritum (ich)",
+          "Bedeutung"
+        ],
+        "rows": [
+          [
+            "können",
+            "ich kann",
+            "ich konnte",
+            "can / could"
+          ],
+          [
+            "müssen",
+            "ich muss",
+            "ich musste",
+            "must / had to"
+          ],
+          [
+            "dürfen",
+            "ich darf",
+            "ich durfte",
+            "may / was allowed"
+          ],
+          [
+            "sollen",
+            "ich soll",
+            "ich sollte",
+            "should / was supposed to"
+          ],
+          [
+            "wollen",
+            "ich will",
+            "ich wollte",
+            "want / wanted"
+          ],
+          [
+            "mögen",
+            "ich mag",
+            "ich mochte",
+            "like / liked"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Früher ___ ich nicht so gut Deutsch sprechen. (können, Prät.)",
+        "answer": "konnte"
+      },
+      {
+        "prompt": "Er ___ gestern arbeiten. (müssen, Prät.)",
+        "answer": "musste"
+      },
+      {
+        "prompt": "___ du das Fenster öffnen?",
+        "answer": "Kannst"
+      },
+      {
+        "prompt": "Wir ___ das nicht machen. (sollen, Prät.)",
+        "answer": "sollten"
+      },
+      {
+        "prompt": "Das Kind ___ ins Bett gehen. (wollen, Prät.)",
+        "answer": "wollte"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "work",
+      "modal-verbs"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_6",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_3",
+    "id": "A2_lesson_9",
+    "title": "Bildung und Sprachkurse",
+    "objective": "Talk about education, language courses, and learning experiences.",
+    "explanation": "Key vocabulary: der Kurs (course), der Unterricht (class), die Sprachschule (language school). Verbs: lernen (learn), üben (practice), verstehen (understand). 'Ich besuche einen Deutschkurs.' 'Der Unterricht findet zweimal pro Woche statt.'",
+    "examples": [
+      "Ich besuche einen Deutschkurs für A2.",
+      "Der Unterricht findet zweimal pro Woche statt.",
+      "Ich möchte mein Deutsch verbessern.",
+      "Haben Sie einen Anfängerkurs?",
+      "Wir üben die Grammatik und das Sprechen."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Kurs",
+        "translation": "course",
+        "example": "Der Kurs kostet 200 Euro."
+      },
+      {
+        "word": "der Unterricht",
+        "translation": "class",
+        "example": "Der Unterricht beginnt um 18 Uhr."
+      },
+      {
+        "word": "die Sprachschule",
+        "translation": "language school",
+        "example": "Die Sprachschule ist in der Stadtmitte."
+      },
+      {
+        "word": "verbessern",
+        "translation": "to improve",
+        "example": "Ich will mein Deutsch verbessern."
+      },
+      {
+        "word": "die Prüfung",
+        "translation": "exam",
+        "example": "Die Prüfung ist im Dezember."
+      }
+    ],
+    "grammarFocus": "Modal verb 'wollen' (to want): ich will, du willst, er will, wir wollen. 'Ich will Deutsch lernen.' 'Mochte' is polite, 'will' is more direct.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ einen Deutschkurs besuchen.' (want)",
+        "answer": "will"
+      },
+      {
+        "prompt": "Translate: 'The class takes place twice a week.'",
+        "answer": "Der Unterricht findet zweimal pro Woche statt."
+      },
+      {
+        "prompt": "Translate: 'I want to improve my German.'",
+        "answer": "Ich will mein Deutsch verbessern."
+      },
+      {
+        "prompt": "What is the German word for 'language school'?",
+        "answer": "die Sprachschule"
+      },
+      {
+        "prompt": "Complete: '___ Sie einen Anfängerkurs?' (Do you have)",
+        "answer": "Haben"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences about your German learning: what is easy, difficult, how you study.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe your ideal German course: schedule, topics, class size.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich lerne seit drei Monaten Deutsch. Der Kurs ist dienstags und donnerstags von 18 bis 20 Uhr.'",
+    "readingTask": "Read: 'Die Göthe-Institute bieten Deutschkurse auf allen Niveaus an. Es gibt Intensivkurse und Abendkurse.'",
+    "speakingTask": "Tell your partner about learning German: how long, what's easy, what's difficult.",
+    "writingTask": "Write an email (40-50 words) to a language school asking about A2 course times, prices, and exams.",
+    "reviewSummary": "You learned: education vocabulary, modal verb 'wollen', and how to talk about courses and exams.",
+    "conceptId": "a2.education.language",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.shopping.services",
+      "a1_word_order_main_clause"
+    ],
+    "conceptsTaught": [
+      "a2.dass.saetze",
+      "a2.subordinate.clauses.dass"
+    ],
+    "commonMistakes": [
+      "Using main clause word order after dass: \"Ich weiß, dass er kommt\" not \"dass er kommt\".",
+      "Forgetting the comma before dass.",
+      "Using dass when a different conjunction is needed (e.g. weil or obwohl).",
+      "Writing das instead of dass (relative pronoun vs conjunction)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Hauptsatz",
+          "Nebensatz mit dass"
+        ],
+        "rows": [
+          [
+            "Ich weiß: Er kommt morgen.",
+            "Ich weiß, dass er morgen kommt."
+          ],
+          [
+            "Sie sagt: Der Kurs beginnt um 9 Uhr.",
+            "Sie sagt, dass der Kurs um 9 Uhr beginnt."
+          ],
+          [
+            "Ich hoffe: Du hast Zeit.",
+            "Ich hoffe, dass du Zeit hast."
+          ],
+          [
+            "Er glaubt: Deutsch ist schwer.",
+            "Er glaubt, dass Deutsch schwer ist."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich denke, ___ du Recht hast.",
+        "answer": "dass"
+      },
+      {
+        "prompt": "Er sagt, ___ er morgen kommt.",
+        "answer": "dass"
+      },
+      {
+        "prompt": "Ich hoffe, ___ du mich verstehst.",
+        "answer": "dass"
+      },
+      {
+        "prompt": "Wir wissen, ___ Deutsch nicht einfach ist.",
+        "answer": "dass"
+      },
+      {
+        "prompt": "Glaubst du, ___ er die Prüfung schafft?",
+        "answer": "dass"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "education",
+      "dass-clauses"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_12",
+      "A2_gr_15",
+      "A2_gr_16",
+      "A2_gr_43",
+      "A2_gr_44",
+      "A2_gr_45",
+      "A2_gr_109"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_4",
+    "id": "A2_lesson_10",
+    "title": "Wohnungssuche und Mieten",
+    "objective": "Search for an apartment, describe rooms, and communicate with a landlord.",
+    "explanation": "Key vocab: die Wohnung (apartment), das Haus (house), die Kaution (deposit), die Miete (rent), der Vermieter (landlord). Qüstions: 'Wie viel kostet die Miete?' 'Wann kann ich einziehen?' 'Hat die Wohnung einen Balkon?'",
+    "examples": [
+      "Ich suche eine Wohnung in der Stadtmitte.",
+      "Die Wohnung hat zwei Zimmer und eine Küche.",
+      "Die Miete ist 700 Euro warm.",
+      "Wie hoch ist die Kaution?",
+      "Wann kann ich die Wohnung besichtigen?"
+    ],
+    "vocabulary": [
+      {
+        "word": "die Wohnung",
+        "translation": "apartment",
+        "example": "Die Wohnung ist sehr schön."
+      },
+      {
+        "word": "die Miete",
+        "translation": "rent",
+        "example": "Die Miete ist 600 Euro."
+      },
+      {
+        "word": "die Kaution",
+        "translation": "deposit",
+        "example": "Die Kaution ist zwei Kaltmieten."
+      },
+      {
+        "word": "das Schlafzimmer",
+        "translation": "bedroom",
+        "example": "Das Schlafzimmer hat ein grosses Fenster."
+      },
+      {
+        "word": "die Küche",
+        "translation": "kitchen",
+        "example": "Die Küche ist modern."
+      }
+    ],
+    "grammarFocus": "Adjective endings after 'ein': ein grosses Zimmer, eine helle Küche. Accusative: einen grossen Garten. 'Es gibt' (there is/are) takes accusative: 'Es gibt einen Balkon.'",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich suche ___ Wohnung in der Innenstadt.' (a)",
+        "answer": "eine"
+      },
+      {
+        "prompt": "Translate: 'The apartment has 2 rooms and a kitchen.'",
+        "answer": "Die Wohnung hat zwei Zimmer und eine Küche."
+      },
+      {
+        "prompt": "Translate: 'How much is the rent?'",
+        "answer": "Wie viel kostet die Miete?"
+      },
+      {
+        "prompt": "What is 'deposit' in German?",
+        "answer": "die Kaution"
+      },
+      {
+        "prompt": "Complete: 'Es gibt ___ schönen Balkon.' (a)",
+        "answer": "einen"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write an ad for an apartment you want to rent (50-60 words).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe your current or ideal apartment in 6-8 sentences.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich suche eine Wohnung. Sie soll zwei Zimmer haben und in der Nähe von der U-Bahn sein.'",
+    "readingTask": "Read: 'Zu vermieten: helle 3-Zimmer-Wohnung im Zentrum. 75 qm, Bad mit Dusche, Balkon. Kaltmiete: 800 Euro.'",
+    "speakingTask": "Describe your ideal apartment: rooms, location, features, max rent.",
+    "writingTask": "Write an email to a landlord (50-60 words) asking about an apartment: rent, availability, rooms, viewing.",
+    "reviewSummary": "You learned: housing vocabulary, adjective endings after 'ein', 'es gibt' + accusative.",
+    "conceptId": "a2.housing.rental",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.education.language",
+      "a1_basic_prepositions"
+    ],
+    "conceptsTaught": [
+      "a2.wechselpraepositionen",
+      "a2.two.way.prepositions"
+    ],
+    "commonMistakes": [
+      "Confusing an/auf/in with Accusative (movement) vs Dative (location): \"Ich gehe in die Stadt\" vs \"Ich bin in der Stadt\".",
+      "Using wrong preposition for common locations: \"bei der Arbeit\" not \"an der Arbeit\".",
+      "Forgetting article contractions: \"im\" not \"in dem\", \"zur\" not \"zu der\".",
+      "Mixing up auf (on top of) vs an (at/on vertical)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Präposition",
+          "Ort (Dativ)",
+          "Richtung (Akkusativ)"
+        ],
+        "rows": [
+          [
+            "in",
+            "in der Stadt (location)",
+            "in die Stadt (into)"
+          ],
+          [
+            "auf",
+            "auf dem Tisch (on top)",
+            "auf den Tisch (onto)"
+          ],
+          [
+            "an",
+            "an der Wand (on wall)",
+            "an die Wand (to the wall)"
+          ],
+          [
+            "unter",
+            "unter dem Bett (under)",
+            "unter das Bett (to under)"
+          ],
+          [
+            "vor",
+            "vor der Tür (in front)",
+            "vor die Tür (to the front)"
+          ],
+          [
+            "neben",
+            "neben dem Haus (next to)",
+            "neben das Haus (to next to)"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Das Buch liegt ___ dem Tisch. (on top of)",
+        "answer": "auf"
+      },
+      {
+        "prompt": "Ich lege das Buch ___ den Tisch. (onto)",
+        "answer": "auf"
+      },
+      {
+        "prompt": "Die Katze ist ___ dem Bett. (under, location)",
+        "answer": "unter"
+      },
+      {
+        "prompt": "Ich gehe ___ die Stadt. (into)",
+        "answer": "in"
+      },
+      {
+        "prompt": "Er hängt das Bild ___ die Wand. (to the wall)",
+        "answer": "an"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "housing",
+      "two-way-prep"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_18",
+      "A2_gr_131",
+      "A2_gr_132",
+      "A2_gr_133",
+      "A2_gr_134",
+      "A2_gr_181",
+      "A2_gr_182",
+      "A2_gr_183"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_4",
+    "id": "A2_lesson_11",
+    "title": "Gesundheit und Arztbesuch",
+    "objective": "Talk about health issüs, describe symptoms, and visit a doctor.",
+    "explanation": "At the doctor: 'Ich habe Schmerzen' (I have pain), 'Mir tut der Kopf weh' (My head hurts), 'Ich brauche einen Termin' (I need an appointment). 'weh tun' takes dative: 'Mir tut der Rücken weh.' Modal verb 'müssen' (must): 'Ich muss zum Arzt.'",
+    "examples": [
+      "Mir tut der Kopf weh.",
+      "Ich habe seit drei Tagen Husten.",
+      "Ich brauche einen Termin beim Arzt.",
+      "Der Arzt untersucht mich.",
+      "Bitte machen Sie den Mund auf."
+    ],
+    "vocabulary": [
+      {
+        "word": "der Arzt",
+        "translation": "doctor",
+        "example": "Ich gehe zum Arzt."
+      },
+      {
+        "word": "die Schmerzen",
+        "translation": "pain",
+        "example": "Ich habe starke Schmerzen."
+      },
+      {
+        "word": "das Fieber",
+        "translation": "fever",
+        "example": "Ich habe 38 Grad Fieber."
+      },
+      {
+        "word": "der Termin",
+        "translation": "appointment",
+        "example": "Ich möchte einen Termin."
+      },
+      {
+        "word": "die Krankenversicherung",
+        "translation": "health insurance",
+        "example": "Ich habe eine Krankenversicherung."
+      }
+    ],
+    "grammarFocus": "'weh tun' takes dative: Mir tut der Kopf weh. Ihr tut der Rücken weh. 'Ich habe + noun': Ich habe Husten, Fieber, Schmerzen. Modal verb 'müssen': Ich muss zum Arzt. Du musst die Medizin nehmen.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Mir ___ der Rücken weh.'",
+        "answer": "tut"
+      },
+      {
+        "prompt": "Translate: 'I have a headache.'",
+        "answer": "Ich habe Kopfschmerzen."
+      },
+      {
+        "prompt": "Translate: 'I need an appointment.'",
+        "answer": "Ich brauche einen Termin."
+      },
+      {
+        "prompt": "What dös 'der Husten' mean?",
+        "answer": "cough"
+      },
+      {
+        "prompt": "Complete: 'Ich ___ zum Arzt gehen.' (must)",
+        "answer": "muss"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Describe a visit to the doctor: symptoms, examination, advice (6-8 sentences).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write a phone dialogü making a doctor's appointment.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Tag. Ich habe Kopfschmerzen und Fieber. Seit wann? Seit drei Tagen.'",
+    "readingTask": "Read: 'Herr Müller hat Rückenschmerzen. Er geht zum Arzt. Der Arzt untersucht ihn und verschreibt eine Salbe.'",
+    "speakingTask": "Role-play: patient and doctor. Describe your symptoms and get advice.",
+    "writingTask": "Write an email to a doctor's office reqüsting an appointment. Describe your symptoms briefly.",
+    "reviewSummary": "You learned: health vocabulary, 'weh tun' with dative, symptoms, making appointments.",
+    "conceptId": "a2.health.symptoms",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.travel.transport",
+      "a1_nominative_basics"
+    ],
+    "conceptsTaught": [
+      "a2.reflexive.verben",
+      "a2.dativverben"
+    ],
+    "commonMistakes": [
+      "Omitting the reflexive pronoun: \"Ich wasche mich\" not \"Ich wasche\".",
+      "Using the wrong reflexive pronoun for Dativ: \"Ich wasche mir die Hände\" not \"Ich wasche mich die Hände\".",
+      "Forgetting that some verbs require Dativ objects: \"Ich helfe dir\" not \"Ich helfe dich\".",
+      "Confusing sich setzen (to sit down) with sitzen (to be sitting)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Akkusativ reflexiv",
+          "Dativ reflexiv"
+        ],
+        "rows": [
+          [
+            "waschen",
+            "Ich wasche mich.",
+            "Ich wasche mir die Hände."
+          ],
+          [
+            "anziehen",
+            "Ich ziehe mich an.",
+            "Ich ziehe mir die Jacke an."
+          ],
+          [
+            "setzen",
+            "Ich setze mich.",
+            "-"
+          ],
+          [
+            "fühlen",
+            "Ich fühle mich gut.",
+            "-"
+          ],
+          [
+            "helfen",
+            "-",
+            "Ich helfe dir."
+          ],
+          [
+            "danken",
+            "-",
+            "Ich danke Ihnen."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich wasche ___ die Hände.",
+        "answer": "mir"
+      },
+      {
+        "prompt": "Er fühlt ___ krank.",
+        "answer": "sich"
+      },
+      {
+        "prompt": "Wir ___ uns auf den Urlaub. (freuen)",
+        "answer": "freuen"
+      },
+      {
+        "prompt": "Kannst du ___ helfen? (Dativ)",
+        "answer": "mir"
+      },
+      {
+        "prompt": "Sie kämmt ___ die Haare.",
+        "answer": "sich"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "health",
+      "reflexive-verbs"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_4",
+    "id": "A2_lesson_12",
+    "title": "Apotheke und Medikamente",
+    "objective": "Talk about medicine, ask at the pharmacy, and understand prescriptions.",
+    "explanation": "At the pharmacy: 'Ich brauche etwas gegen Kopfschmerzen' (I need something for headaches), 'Haben Sie ein Mittel gegen Husten?' (Do you have a remedy for cough?), 'das Medikament' (medication), 'das Rezept' (prescription), 'die Tablette' (tablet).",
+    "examples": [
+      "Ich brauche etwas gegen Husten.",
+      "Haben Sie dieses Medikament ohne Rezept?",
+      "Ich nehme die Tabletten dreimal täglich.",
+      "Der Arzt hat mir ein Rezept gegeben.",
+      "Die Apotheke hat bis 18 Uhr geöffnet."
+    ],
+    "vocabulary": [
+      {
+        "word": "die Apotheke",
+        "translation": "pharmacy",
+        "example": "Die Apotheke ist um die Ecke."
+      },
+      {
+        "word": "das Medikament",
+        "translation": "medication",
+        "example": "Das Medikament hilft gegen Schmerzen."
+      },
+      {
+        "word": "das Rezept",
+        "translation": "prescription",
+        "example": "Ich brauche ein Rezept vom Arzt."
+      },
+      {
+        "word": "die Tablette",
+        "translation": "tablet",
+        "example": "Nehmen Sie eine Tablette pro Tag."
+      },
+      {
+        "word": "die Salbe",
+        "translation": "ointment",
+        "example": "Der Arzt hat eine Salbe verschrieben."
+      }
+    ],
+    "grammarFocus": "'etwas gegen' (something for): Ich brauche etwas gegen Husten. 'ohne Rezept' (without prescription). Separable verb 'verschreiben' (to prescribe): Der Arzt verschreibt mir eine Salbe.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich brauche etwas ___ Kopfschmerzen.'",
+        "answer": "gegen"
+      },
+      {
+        "prompt": "Translate: 'Do you have something for a cough?'",
+        "answer": "Haben Sie etwas gegen Husten?"
+      },
+      {
+        "prompt": "Translate: 'Take one tablet per day.'",
+        "answer": "Nehmen Sie eine Tablette pro Tag."
+      },
+      {
+        "prompt": "What is the German word for 'medication'?",
+        "answer": "das Medikament"
+      },
+      {
+        "prompt": "Complete: 'Das Medikament ist ___ Rezept erhältlich.'",
+        "answer": "ohne"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü at the pharmacy: symptoms, reqüst, advice.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe a time you went to the pharmacy (5 sentences).",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Tag. Ich brauche etwas gegen Husten. Haben Sie etwas ohne Rezept? Ja, hier ist ein Hustensaft.'",
+    "readingTask": "Read: 'In deutschen Apotheken bekommen Sie viele Medikamente ohne Rezept. Bei Antibiotika brauchen Sie ein Rezept vom Arzt.'",
+    "speakingTask": "Role-play: at the pharmacy. Say what you need, ask about prescription, ask how to take it.",
+    "writingTask": "Write a short email to a friend explaining what the doctor prescribed and how to take it.",
+    "reviewSummary": "You learned: pharmacy vocabulary, 'etwas gegen', prescription vs over-the-counter.",
+    "conceptId": "a2.pharmacy.medicine",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.health.symptoms",
+      "a1_medical_starter_phrases"
+    ],
+    "conceptsTaught": [
+      "a2.imperativ.sie",
+      "a2.imperativ.du.ihr"
+    ],
+    "commonMistakes": [
+      "Using du-form for Sie-imperativ: \"Gehen Sie!\" not \"Geh Sie!\".",
+      "Forgetting the -e ending for du-imperativ of some verbs: \"Warte!\" not \"Wart!\".",
+      "Using wrong word order in Imperativ with pronouns: \"Mach es!\" not \"Es mach!\".",
+      "Using modal verbs in Imperativ constructions incorrectly."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Person",
+          "Imperativ von kommen",
+          "Imperativ von gehen",
+          "Imperativ von nehmen"
+        ],
+        "rows": [
+          [
+            "du",
+            "Komm!",
+            "Geh!",
+            "Nimm!"
+          ],
+          [
+            "ihr",
+            "Kommt!",
+            "Geht!",
+            "Nehmt!"
+          ],
+          [
+            "Sie",
+            "Kommen Sie!",
+            "Gehen Sie!",
+            "Nehmen Sie!"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ Sie bitte Platz! (nehmen)",
+        "answer": "Nehmen"
+      },
+      {
+        "prompt": "___ (du) mir das Salz!",
+        "answer": "Gib"
+      },
+      {
+        "prompt": "___ (ihr) bitte leise!",
+        "answer": "Seid"
+      },
+      {
+        "prompt": "Bitte ___ Sie hier! (unterschreiben)",
+        "answer": "unterschreiben"
+      },
+      {
+        "prompt": "___ (du) nicht so schnell!",
+        "answer": "Fahr"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "pharmacy",
+      "imperative"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_194",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_5",
+    "id": "A2_lesson_13",
+    "title": "Wetter und Jahreszeiten",
+    "objective": "Describe the weather and seasons and talk about outdoor activities.",
+    "explanation": "Weather vocabulary uses 'es ist' (it is) + adjective or 'es gibt' (there is): 'Es ist sonnig.' 'Es gibt Regen.' 'Wie ist das Wetter heute?' (What is the weather today?). 'scheinen' (shine), 'regnen' (rain), 'schneien' (snow).",
+    "examples": [
+      "Das Wetter ist heute sehr schön.",
+      "Es regnet schon den ganzen Tag.",
+      "Im Sommer scheint die Sonne.",
+      "Im Winter schneit es oft.",
+      "Wie wird das Wetter morgen?"
+    ],
+    "vocabulary": [
+      {
+        "word": "das Wetter",
+        "translation": "weather",
+        "example": "Das Wetter ist schlecht."
+      },
+      {
+        "word": "die Sonne",
+        "translation": "sun",
+        "example": "Die Sonne scheint."
+      },
+      {
+        "word": "der Regen",
+        "translation": "rain",
+        "example": "Heute gibt es Regen."
+      },
+      {
+        "word": "der Schnee",
+        "translation": "snow",
+        "example": "Im Januar liegt Schnee."
+      },
+      {
+        "word": "der Frühling",
+        "translation": "spring",
+        "example": "Im Frühling blühen die Blumen."
+      }
+    ],
+    "grammarFocus": "'es ist' with weather: es ist sonnig, es ist bewolkt, es ist kalt. 'es gibt' + accusative for phenomena: es gibt Regen, es gibt Schnee, es gibt Nebel. Prepositions: im Sommer, im Winter, im Frühling, im Herbst.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Es ___ heute sehr kalt.'",
+        "answer": "ist"
+      },
+      {
+        "prompt": "Translate: 'The sun is shining.'",
+        "answer": "Die Sonne scheint."
+      },
+      {
+        "prompt": "Translate: 'Tomorrow it will rain.'",
+        "answer": "Morgen regnet es."
+      },
+      {
+        "prompt": "How do you say 'spring' in German?",
+        "answer": "der Frühling"
+      },
+      {
+        "prompt": "Complete: 'Im ___ schneit es oft.' (winter)",
+        "answer": "Winter"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 sentences describing today's weather.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe your favorite season: weather, activities, clothes.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Heute ist das Wetter nicht so gut. Es regnet und es ist windig. Die Temperatur ist nur 10 Grad.'",
+    "readingTask": "Read: 'Im Sommer ist das Wetter in Deutschland oft schön. Die Temperatur liegt zwischen 20 und 30 Grad. Viele Menschen gehen schwimmen.'",
+    "speakingTask": "Describe today's weather and your favorite season. Say what you like to do in that season.",
+    "writingTask": "Write a weather report (50-60 words) for the coming weekend.",
+    "reviewSummary": "You learned: weather vocabulary, 'es ist' vs 'es gibt', seasons, and outdoor activities.",
+    "conceptId": "a2.weather.seasons",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.review.self.intro",
+      "a1_time_numbers_dates"
+    ],
+    "conceptsTaught": [
+      "a2.praeteritum.modal",
+      "a2.praeteritum.regelmaessig",
+      "a2.zeitangaben.vergangenheit"
+    ],
+    "commonMistakes": [
+      "Using Präsens instead of Präteritum for war/hatte: \"Ich war\" not \"Ich bin war\".",
+      "Confusing sein and haben as Präteritum auxiliaries.",
+      "Forgetting to use time expressions correctly: \"letzte Woche\" not \"die letzte Woche\".",
+      "Using Perfekt where Präteritum is expected in written narratives.",
+      "Mixing temporal prepositions: \"im Sommer\" vs \"am Montag\" vs \"um 8 Uhr\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Präsens",
+          "Präteritum",
+          "Perfekt"
+        ],
+        "rows": [
+          [
+            "sein",
+            "ich bin",
+            "ich war",
+            "ich bin gewesen"
+          ],
+          [
+            "haben",
+            "ich habe",
+            "ich hatte",
+            "ich habe gehabt"
+          ],
+          [
+            "gehen",
+            "ich gehe",
+            "ich ging",
+            "ich bin gegangen"
+          ],
+          [
+            "kommen",
+            "ich komme",
+            "ich kam",
+            "ich bin gekommen"
+          ],
+          [
+            "machen",
+            "ich mache",
+            "ich machte",
+            "ich habe gemacht"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Früher ___ ich in Berlin. (wohnen, Prät.)",
+        "answer": "wohnte"
+      },
+      {
+        "prompt": "Letzte Woche ___ das Wetter schön. (sein, Prät.)",
+        "answer": "war"
+      },
+      {
+        "prompt": "___ 8 Uhr beginnt der Unterricht.",
+        "answer": "Um"
+      },
+      {
+        "prompt": "Im ___ ist es heiß. (Sommer)",
+        "answer": "Sommer"
+      },
+      {
+        "prompt": "Gestern ___ ich keine Zeit. (haben, Prät.)",
+        "answer": "hatte"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "weather",
+      "past-tense"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_51",
+      "A2_gr_123",
+      "A2_gr_187"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_5",
+    "id": "A2_lesson_14",
+    "title": "Freizeit und Hobbys",
+    "objective": "Talk about hobbies, sports, and free time activities in more detail.",
+    "explanation": "Expressing hobbies: 'Ich spiele gern Fussball', 'Ich gehe gern ins Kino', 'Ich lese gern Bucher'. Sports with 'spielen' (ball sports) and 'machen' (other activities). 'In meiner Freizeit...' (In my free time...). Freqüncy: immer (always), oft (often), manchmal (sometimes), selten (rarely), nie (never).",
+    "examples": [
+      "In meiner Freizeit spiele ich Tennis.",
+      "Ich gehe zweimal pro Woche ins Fitnessstudio.",
+      "Sie hört gern Musik und singt.",
+      "Wir machen am Wochenende einen Ausflug.",
+      "Ich treffe mich oft mit Freunden."
+    ],
+    "vocabulary": [
+      {
+        "word": "die Freizeit",
+        "translation": "free time",
+        "example": "In der Freizeit lese ich gern."
+      },
+      {
+        "word": "der Ausflug",
+        "translation": "trip, excursion",
+        "example": "Wir machen einen Ausflug in den Park."
+      },
+      {
+        "word": "das Fitnessstudio",
+        "translation": "gym",
+        "example": "Ich gehe ins Fitnessstudio."
+      },
+      {
+        "word": "sich treffen",
+        "translation": "to meet up",
+        "example": "Ich treffe mich mit Freunden."
+      },
+      {
+        "word": "das Konzert",
+        "translation": "concert",
+        "example": "Wir gehen heute ins Konzert."
+      }
+    ],
+    "grammarFocus": "Freqüncy adverbs: immer, oft, manchmal, selten, nie. Position: after the verb. 'Ich spiele oft Tennis.' 'Sie geht selten ins Kino.' 'Gern' after verb: 'Ich lese gern.' 'am liebsten' + verb: 'Am liebsten spiele ich Fussball.'",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich spiele ___ Tennis.' (often)",
+        "answer": "oft"
+      },
+      {
+        "prompt": "Translate: 'I like to read books in my free time.'",
+        "answer": "In meiner Freizeit lese ich gern Bucher."
+      },
+      {
+        "prompt": "Translate: 'We go to the gym twice a week.'",
+        "answer": "Wir gehen zweimal pro Woche ins Fitnessstudio."
+      },
+      {
+        "prompt": "How do you say 'never' in German?",
+        "answer": "nie"
+      },
+      {
+        "prompt": "Complete: 'Am ___ spiele ich Fussball.' (favorite)",
+        "answer": "liebsten"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Describe your hobbies and free time activities (8-10 sentences). Use freqüncy adverbs.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write about your perfect weekend: what you do, where you go, who you meet.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'In meiner Freizeit mache ich viel Sport. Ich spiele Fussball und gehe schwimmen. Manchmal treffe ich mich mit Freunden.'",
+    "readingTask": "Read: 'Paul hat viele Hobbys. Er spielt Gitarre und singt in einer Band. Am Wochenende macht er Ausflüge mit dem Fahrrad.'",
+    "speakingTask": "Tell your partner about your hobbies. What do you do in your free time? How often? With whom?",
+    "writingTask": "Write a short text (50-70 words) about your hobbies and what you do on weekends.",
+    "reviewSummary": "You learned: hobby vocabulary, freqüncy adverbs, 'gern'/'lieber'/'am liebsten'.",
+    "conceptId": "a2.hobbies.free.time",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.daily.routine",
+      "a1_vocab_everyday_core"
+    ],
+    "conceptsTaught": [
+      "a2.komparativ.basics",
+      "a2.superlativ.basics"
+    ],
+    "commonMistakes": [
+      "Using als instead of wie for equality: \"so groß wie\" not \"so groß als\".",
+      "Adding umlaut incorrectly: \"älter\" vs \"alterer\".",
+      "Forgetting the -er/-ste suffix: \"schneller\" not \"mehr schnell\".",
+      "Double comparative: \"mehr besser\" instead of simply \"besser\".",
+      "Confusing comparative of gut (besser) with mehr (more)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Adjektiv",
+          "Komparativ",
+          "Superlativ"
+        ],
+        "rows": [
+          [
+            "groß",
+            "größer",
+            "am größten"
+          ],
+          [
+            "schnell",
+            "schneller",
+            "am schnellsten"
+          ],
+          [
+            "gut",
+            "besser",
+            "am besten"
+          ],
+          [
+            "viel",
+            "mehr",
+            "am meisten"
+          ],
+          [
+            "gern",
+            "lieber",
+            "am liebsten"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Deutsch ist ___ (schwer) als Englisch.",
+        "answer": "schwerer"
+      },
+      {
+        "prompt": "Das ist der ___ (groß) See in Deutschland.",
+        "answer": "größte"
+      },
+      {
+        "prompt": "Mein Bruder läuft ___ (schnell) als ich.",
+        "answer": "schneller"
+      },
+      {
+        "prompt": "Sie singt am ___ (gut).",
+        "answer": "besten"
+      },
+      {
+        "prompt": "Dieses Buch ist ___ (interessant) als das andere.",
+        "answer": "interessanter"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "hobbies",
+      "comparison"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_7",
+      "A2_gr_8",
+      "A2_gr_49",
+      "A2_gr_50",
+      "A2_gr_52",
+      "A2_gr_53",
+      "A2_gr_71",
+      "A2_gr_72",
+      "A2_gr_73",
+      "A2_gr_115",
+      "A2_gr_116",
+      "A2_gr_141",
+      "A2_gr_142"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_5",
+    "id": "A2_lesson_15",
+    "title": "Einladungen und Verabredungen",
+    "objective": "Make, accept, and decline invitations, and arrange meetings.",
+    "explanation": "Making plans: 'Hast du am Samstag Zeit?' (Do you have time on Saturday?), 'Ich möchte dich einladen' (I'd like to invite you), 'Lust haben' (to feel like): 'Hast du Lust ins Kino zu gehen?' Accepting: 'Gerne!' 'Ja, das klingt gut.' Declining politely: 'Tut mir leid, ich habe keine Zeit.' 'Vielleicht ein anderes Mal.'",
+    "examples": [
+      "Möchtest du am Samstag ins Kino kommen?",
+      "Ich habe am Sonntag leider keine Zeit.",
+      "Das klingt gut! Um wie viel Uhr?",
+      "Wir können uns um 19 Uhr treffen.",
+      "Vielleicht klappt es nächste Woche."
+    ],
+    "vocabulary": [
+      {
+        "word": "einladen",
+        "translation": "to invite",
+        "example": "Ich lade dich zum Geburtstag ein."
+      },
+      {
+        "word": "die Einladung",
+        "translation": "invitation",
+        "example": "Vielen Dank für die Einladung."
+      },
+      {
+        "word": "die Verabredung",
+        "translation": "appointment, date",
+        "example": "Wir haben eine Verabredung."
+      },
+      {
+        "word": "klappen",
+        "translation": "to work out",
+        "example": "Klappt es am Freitag?"
+      },
+      {
+        "word": "verspäten",
+        "translation": "to be late",
+        "example": "Ich verspäte mich leider."
+      }
+    ],
+    "grammarFocus": "'Hast du Lust' + zu + infinitive: 'Hast du Lust, ins Kino zu gehen?' 'Es macht Spass' + zu: 'Es macht Spass, Fussball zu spielen.' Time prepositions: am Montag, um 19 Uhr, im Juni.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Hast du Lust, ins Kino ___ ___?'",
+        "answer": "zu gehen"
+      },
+      {
+        "prompt": "Translate: 'Would you like to come to my party?'",
+        "answer": "Möchtest du zu meiner Party kommen?"
+      },
+      {
+        "prompt": "Translate: 'Sorry, I don't have time on Sunday.'",
+        "answer": "Tut mir leid, ich habe am Sonntag keine Zeit."
+      },
+      {
+        "prompt": "How do you say 'it sounds good'?",
+        "answer": "Das klingt gut."
+      },
+      {
+        "prompt": "Complete: 'Wir ___ uns um 20 Uhr ___ (meet up).'",
+        "answer": "treffen ..."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü accepting and declining invitations (6-8 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 3 invitation messages for different occasions (cinema, dinner, sports).",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Hallo Maria, möchtest du am Samstag mit mir ins Kino kommen? Ja, gerne! Um wie viel Uhr? Der Film beginnt um 20 Uhr.'",
+    "readingTask": "Read: 'Anna bekommt eine Einladung zur Geburtstagsparty von Lisa. Sie antwortet: Vielen Dank für die Einladung. Ich komme gern.'",
+    "speakingTask": "Role-play: invite a friend to an event. Accept or decline. Arrange the time and place.",
+    "writingTask": "Write an invitation message (30-40 words) for a birthday party or a cinema visit.",
+    "reviewSummary": "You learned: invitation phrases, accepting/declining politely, arranging meetings, 'Hast du Lust' + zu.",
+    "conceptId": "a2.invitations.appointments",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.hobbies.free.time",
+      "a1_self_introduction"
+    ],
+    "conceptsTaught": [
+      "a2.konjunktionen.und.aber.oder",
+      "a2.satzstellung.zeit.vor.ort"
+    ],
+    "commonMistakes": [
+      "Word order with adverbs: time before place: \"Ich fahre morgen nach Berlin\" not \"nach Berlin morgen\".",
+      "Confusing und/aber/oder vs subordinating conjunctions (different word order).",
+      "Forgetting the verb stays in position 2 after conjunctions like aber, denn, und.",
+      "Putting the adverb in the wrong position: \"Morgen gehe ich\" vs \"Ich gehe morgen\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Konjunktion",
+          "Wortstellung",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "und",
+            "Hauptsatz (Verb Position 2)",
+            "Ich lerne Deutsch und er lernt Englisch."
+          ],
+          [
+            "aber",
+            "Hauptsatz (Verb Position 2)",
+            "Ich mag Kaffee, aber ich trinke Tee."
+          ],
+          [
+            "oder",
+            "Hauptsatz (Verb Position 2)",
+            "Gehst du oder bleibst du?"
+          ],
+          [
+            "denn",
+            "Hauptsatz (Verb Position 2)",
+            "Ich bleibe zu Hause, denn es regnet."
+          ],
+          [
+            "weil",
+            "Nebensatz (Verb am Ende)",
+            "Ich bleibe zu Hause, weil es regnet."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich gehe ___ ins Kino ___ meinem Freund. (time then place)",
+        "answer": "heute ... mit"
+      },
+      {
+        "prompt": "___ gehst du, ___ bleibst du?",
+        "answer": "Gehst ... oder"
+      },
+      {
+        "prompt": "Ich mag Tee, ___ ich trinke Kaffee.",
+        "answer": "aber"
+      },
+      {
+        "prompt": "Er kommt nicht, ___ er krank ist.",
+        "answer": "denn"
+      },
+      {
+        "prompt": "___ wir essen, bestellen wir erst.",
+        "answer": "Bevor/Erst"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "appointments",
+      "word-order"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_5",
+    "id": "A2_lesson_16",
+    "title": "Feste und Feiertage",
+    "objective": "Talk about holidays, celebrations, and traditions in German-speaking countries.",
+    "explanation": "Important German holidays: Weihnachten (Christmas), Ostern (Easter), Geburtstag (birthday), Silvester (New Year's Eve). 'Ich feiere meinen Geburtstag' (I celebrate my birthday). 'Zum Geburtstag bekomme ich Geschenke' (I get presents for my birthday). 'Wir feiern Weihnachten mit der Familie.'",
+    "examples": [
+      "Weihnachten feiern wir mit der Familie.",
+      "Zum Geburtstag bekomme ich viele Geschenke.",
+      "An Silvester gibt es Feürwerk.",
+      "Ostern suchen die Kinder Eier.",
+      "Ich lade meine Freunde zur Party ein."
+    ],
+    "vocabulary": [
+      {
+        "word": "feiern",
+        "translation": "to celebrate",
+        "example": "Wir feiern heute meinen Geburtstag."
+      },
+      {
+        "word": "das Geschenk",
+        "translation": "present",
+        "example": "Ich bekomme ein Geschenk."
+      },
+      {
+        "word": "der Feiertag",
+        "translation": "public holiday",
+        "example": "Der 1. Mai ist ein Feiertag."
+      },
+      {
+        "word": "die Party",
+        "translation": "party",
+        "example": "Die Party beginnt um 20 Uhr."
+      },
+      {
+        "word": "die Kerze",
+        "translation": "candle",
+        "example": "Ich blase die Kerzen aus."
+      }
+    ],
+    "grammarFocus": "Dative for 'to me/to you': mir, dir, ihm, ihr, uns, euch, ihnen. 'Das Geschenk gefällt mir.' 'Ich wünsche dir frohe Weihnachten.' 'Zum Geburtstag' uses 'zu' + dative: zum (zu dem) Geburtstag.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Das Geschenk gefällt ___ gut.' (to me)",
+        "answer": "mir"
+      },
+      {
+        "prompt": "Translate: 'We celebrate Christmas with the family.'",
+        "answer": "Wir feiern Weihnachten mit der Familie."
+      },
+      {
+        "prompt": "Translate: 'Happy Birthday!'",
+        "answer": "Herzlichen Glückwunsch zum Geburtstag!"
+      },
+      {
+        "prompt": "What dös 'Ostern' mean?",
+        "answer": "Easter"
+      },
+      {
+        "prompt": "Complete: 'Ich wünsche ___ frohe Weihnachten.' (you, informal)",
+        "answer": "dir"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write about your favorite holiday: how you celebrate, with whom, traditions.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write an invitation card for a birthday party.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich liebe Weihnachten. Wir schmücken den Tannenbaum und singen Weihnachtslieder. Die ganze Familie kommt zusammen.'",
+    "readingTask": "Read: 'In Deutschland feiern die Menschen Weihnachten am 24. und 25. Dezember. Am 24. Dezember gibt es die Bescherung.'",
+    "speakingTask": "Talk about your favorite holiday. What do you do? With whom do you celebrate? What do you eat?",
+    "writingTask": "Write an email to a friend (50-60 words) inviting them to your birthday party with date, time, and place.",
+    "reviewSummary": "You learned: holiday vocabulary, dative personal pronouns (mir, dir), 'zum' + dative for occasions.",
+    "conceptId": "a2.holidays.celebrations",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.invitations.appointments",
+      "a1_noun_gender_basics"
+    ],
+    "conceptsTaught": [
+      "a2.dativ.artikel",
+      "a2.possessivartikel.dativ"
+    ],
+    "commonMistakes": [
+      "Using Akkusativ instead of Dativ: \"Ich gebe dem Kind\" not \"Ich gebe das Kind\".",
+      "Forgetting Dativ article changes: dem, der, den (plural).",
+      "Using wrong Dativ possessive: \"meinem\" vs \"meinen\" (Dativ vs Akkusativ).",
+      "Confusing Dativ and Akkusativ after certain prepositions.",
+      "Using mir/mich incorrectly: \"Das gehört mir\" not \"Das gehört mich\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Artikel",
+          "Nominativ",
+          "Akkusativ",
+          "Dativ"
+        ],
+        "rows": [
+          [
+            "bestimmt (m)",
+            "der Vater",
+            "den Vater",
+            "dem Vater"
+          ],
+          [
+            "bestimmt (f)",
+            "die Mutter",
+            "die Mutter",
+            "der Mutter"
+          ],
+          [
+            "bestimmt (n)",
+            "das Kind",
+            "das Kind",
+            "dem Kind"
+          ],
+          [
+            "bestimmt (pl)",
+            "die Eltern",
+            "die Eltern",
+            "den Eltern"
+          ],
+          [
+            "unbestimmt (m)",
+            "ein Vater",
+            "einen Vater",
+            "einem Vater"
+          ],
+          [
+            "unbestimmt (f)",
+            "eine Mutter",
+            "eine Mutter",
+            "einer Mutter"
+          ],
+          [
+            "Possessiv (m)",
+            "mein Bruder",
+            "meinen Bruder",
+            "meinem Bruder"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich gebe ___ Kind ein Geschenk. (Dativ)",
+        "answer": "dem"
+      },
+      {
+        "prompt": "Er hilft ___ Mutter. (Dativ)",
+        "answer": "der"
+      },
+      {
+        "prompt": "Das gehört ___ Bruder. (mein - Dativ)",
+        "answer": "meinem"
+      },
+      {
+        "prompt": "Sie dankt ___ Freund. (ihr - Dativ)",
+        "answer": "ihrem"
+      },
+      {
+        "prompt": "Wir danken ___ Lehrerin. (Dativ)",
+        "answer": "der"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "celebrations",
+      "dative"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_126",
+      "A2_gr_127",
+      "A2_gr_129",
+      "A2_gr_130"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_6",
+    "id": "A2_lesson_17",
+    "title": "Körperteile und Aussehen",
+    "objective": "Describe body parts, physical appearance, and people.",
+    "explanation": "Describe people using 'Er/Sie hat' (has) and 'Er/Sie ist' (is): 'Er hat braune Augen.' 'Sie ist gross und schlank.' 'tragen' (to wear): 'Er trägt eine Brille.' Body parts: der Kopf, das Gesicht, die Arme, die Beine. Adjectives: gross (tall), klein (short), dick (fat), dünn (thin), jung (young), alt (old).",
+    "examples": [
+      "Meine Schwester hat lange, blonde Haare.",
+      "Er hat blaue Augen und eine Brille.",
+      "Sie ist gross und schlank.",
+      "Ich trage heute ein rotes Kleid.",
+      "Der Hund hat braunes Fell."
+    ],
+    "vocabulary": [
+      {
+        "word": "die Haare",
+        "translation": "hair",
+        "example": "Sie hat lange Haare."
+      },
+      {
+        "word": "die Augen",
+        "translation": "eyes",
+        "example": "Er hat grüne Augen."
+      },
+      {
+        "word": "die Brille",
+        "translation": "glasses",
+        "example": "Seit wann trägst du eine Brille?"
+      },
+      {
+        "word": "der Bart",
+        "translation": "beard",
+        "example": "Mein Onkel hat einen Bart."
+      },
+      {
+        "word": "schlank",
+        "translation": "slim",
+        "example": "Meine Freundin ist schlank."
+      }
+    ],
+    "grammarFocus": "'tragen' (to wear) is strong: er trägt, sie tragen, du trägst. Adjective endings: ein grosser Mann, eine schlanke Frau, ein kleines Kind. 'haben' descriptions: Er hat braune Haare. Sie hat grüne Augen.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Er ___ braune Augen.' (has)",
+        "answer": "hat"
+      },
+      {
+        "prompt": "Translate: 'She has long blonde hair.'",
+        "answer": "Sie hat lange, blonde Haare."
+      },
+      {
+        "prompt": "Translate: 'He wears glasses.'",
+        "answer": "Er trägt eine Brille."
+      },
+      {
+        "prompt": "How do you say 'beard' in German?",
+        "answer": "der Bart"
+      },
+      {
+        "prompt": "Complete: 'Mein Bruder ist gross und ___.' (slim)",
+        "answer": "schlank"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Describe yourself and a family member: hair, eyes, height, features.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe what someone is wearing today (clothes, colors).",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Meine beste Freundin heißt Lena. Sie hat braune Augen und lange schwarze Haare. Sie ist gross und schlank. Sie trägt gern blaue Kleidung.'",
+    "readingTask": "Read: 'Herr Schmidt ist 45 Jahre alt. Er hat kurze graue Haare und einen Bart. Er trägt eine Brille und ist mittelgross.'",
+    "speakingTask": "Describe a friend or family member: appearance, clothes, special features.",
+    "writingTask": "Write a description (50-70 words) of a person you know well: appearance, style, distinguishing features.",
+    "reviewSummary": "You learned: body part vocabulary, describing appearance, 'tragen' conjugation, adjective endings.",
+    "conceptId": "a2.body.parts.appearance",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.review.self.intro",
+      "a1_nominative_basics"
+    ],
+    "conceptsTaught": [
+      "a2.reflexive.verben.koerper",
+      "a2.dativverben.koerper"
+    ],
+    "commonMistakes": [
+      "Using the wrong reflexive pronoun for body parts: \"Ich putze mir die Zähne\" not \"Ich putze mich die Zähne\".",
+      "Forgetting the definite article for body parts: \"Die Haare\" not \"Meine Haare\" when reflexive.",
+      "Omitting reflexive pronoun: \"Ich fühle mich krank\" not \"Ich fühle krank\".",
+      "Confusing anziehen (to dress) vs ausziehen (to undress)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Bedeutung",
+          "Reflexiv",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "sich waschen",
+            "to wash",
+            "Ich wasche mir die Hände.",
+            "Jeden Morgen wasche ich mir das Gesicht."
+          ],
+          [
+            "sich anziehen",
+            "to get dressed",
+            "Ich ziehe mich an.",
+            "Er zieht sich warm an."
+          ],
+          [
+            "sich kämmen",
+            "to comb",
+            "Sie kämmt sich die Haare.",
+            "Ich kämme mir die Haare."
+          ],
+          [
+            "sich fühlen",
+            "to feel",
+            "Ich fühle mich krank.",
+            "Wie fühlst du dich?"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich wasche ___ die Hände. (reflexiv)",
+        "answer": "mir"
+      },
+      {
+        "prompt": "Er putzt ___ die Zähne.",
+        "answer": "sich"
+      },
+      {
+        "prompt": "Sie kämmt ___ die langen Haare.",
+        "answer": "sich"
+      },
+      {
+        "prompt": "Ich fühle ___ heute besser.",
+        "answer": "mich"
+      },
+      {
+        "prompt": "Er sieht ___ im Spiegel an.",
+        "answer": "sich"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "body-parts",
+      "reflexive-verbs"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_6",
+    "id": "A2_lesson_18",
+    "title": "Charakter und Persönlichkeit",
+    "objective": "Describe someone's character and personality traits.",
+    "explanation": "Personality adjectives: freundlich (friendly), nett (nice), lustig (funny), intelligent (intelligent), fleissig (hardworking), ruhig (calm), laut (loud), schüchtern (shy). 'Er ist sehr nett.' 'Sie ist immer fröhlich.' 'finden' + adjective: 'Ich finde ihn sympathisch.' (I find him likeable.)",
+    "examples": [
+      "Mein Bruder ist sehr lustig und humorvoll.",
+      "Sie ist eine freundliche und hilfsbereite Person.",
+      "Ich finde meine Kollegin sehr kompetent.",
+      "Er ist schüchtern, aber sehr intelligent.",
+      "Unser Lehrer ist geduldig und erklärt gut."
+    ],
+    "vocabulary": [
+      {
+        "word": "freundlich",
+        "translation": "friendly",
+        "example": "Die Verkäuferin ist sehr freundlich."
+      },
+      {
+        "word": "lustig",
+        "translation": "funny",
+        "example": "Mein Freund ist sehr lustig."
+      },
+      {
+        "word": "fleissig",
+        "translation": "hardworking",
+        "example": "Die Schülerin ist fleissig."
+      },
+      {
+        "word": "schüchtern",
+        "translation": "shy",
+        "example": "Das kleine Kind ist schüchtern."
+      },
+      {
+        "word": "hilfsbereit",
+        "translation": "helpful",
+        "example": "Meine Nachbarin ist hilfsbereit."
+      }
+    ],
+    "grammarFocus": "'finden' + accusative + adjective: Ich finde ihn nett. Sie findet mich lustig. 'sein' + adjective: Er ist freundlich. Comparative and superlative: nett - netter - am nettesten. fleissig - fleissiger - am fleissigsten.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich finde ___ sehr sympatisch.' (him)",
+        "answer": "ihn"
+      },
+      {
+        "prompt": "Translate: 'She is a friendly person.'",
+        "answer": "Sie ist eine freundliche Person."
+      },
+      {
+        "prompt": "Translate: 'I find my colleagü helpful.'",
+        "answer": "Ich finde meine Kollegin hilfsbereit."
+      },
+      {
+        "prompt": "Comparative of 'nett'?",
+        "answer": "netter"
+      },
+      {
+        "prompt": "Complete: 'Er ist ___ lustigsten.' (the most)",
+        "answer": "am"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Describe your best friend's personality (5-6 sentences).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write about what you find important in a friend or colleagü.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Meine Kollegin Anna ist sehr nett und hilfsbereit. Sie arbeitet immer fleissig und ist sehr zuverlässig.'",
+    "readingTask": "Read: 'Paul und Maria sind beste Freunde. Paul ist lustig und laut, Maria ist ruhig und schüchtern. Zusammen ergänzen sie sich gut.'",
+    "speakingTask": "Describe your personality and the personality of a family member. Compare them.",
+    "writingTask": "Write a short character reference (50-60 words) for a friend: 5 positive traits and an example for each.",
+    "reviewSummary": "You learned: personality adjectives, 'finden' + accusative + adjective, comparatives.",
+    "conceptId": "a2.clothing.fashion",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.clothing.fashion",
+      "a1_vocab_everyday_core"
+    ],
+    "conceptsTaught": [
+      "a2.adjektivendungen.dativ",
+      "a2.komparativ.kleidung",
+      "a2.superlativ.kleidung"
+    ],
+    "commonMistakes": [
+      "Using wrong adjective endings in Dativ: \"mit einem roten Kleid\" not \"mit einem rotes Kleid\".",
+      "Forgetting adjective-noun gender agreement in clothing descriptions.",
+      "Comparative confusion with clothing sizes: \"größer\" not \"mehr groß\".",
+      "Using the wrong preposition for clothing: \"im Anzug\" vs \"in einem Anzug\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Kasus",
+          "bestimmt + Adjektiv",
+          "unbestimmt + Adjektiv"
+        ],
+        "rows": [
+          [
+            "Nominativ (m)",
+            "der rote Mantel",
+            "ein roter Mantel"
+          ],
+          [
+            "Nominativ (f)",
+            "die rote Jacke",
+            "eine rote Jacke"
+          ],
+          [
+            "Nominativ (n)",
+            "das rote Kleid",
+            "ein rotes Kleid"
+          ],
+          [
+            "Akkusativ (m)",
+            "den roten Mantel",
+            "einen roten Mantel"
+          ],
+          [
+            "Dativ (m)",
+            "dem roten Mantel",
+            "einem roten Mantel"
+          ],
+          [
+            "Genitiv (m)",
+            "des roten Mantels",
+            "eines roten Mantels"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Sie trägt ein ___ Kleid. (rot - Akk. n)",
+        "answer": "rotes"
+      },
+      {
+        "prompt": "Er kauft einen ___ Anzug. (blau - Akk. m)",
+        "answer": "blauen"
+      },
+      {
+        "prompt": "Mit einer ___ Jacke. (warm - Dativ f)",
+        "answer": "warmen"
+      },
+      {
+        "prompt": "Dieser Rock ist ___ (kurz) als der andere.",
+        "answer": "kürzer"
+      },
+      {
+        "prompt": "Das ist das ___ (schön) Kleid.",
+        "answer": "schönste"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "clothing",
+      "adjective-endings"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_58",
+      "A2_gr_60",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_6",
+    "id": "A2_lesson_19",
+    "title": "Orientierung und Wegbeschreibung",
+    "objective": "Ask for and give directions, describe where places are.",
+    "explanation": "Key phrases: 'Wo ist die Post?' (Where is the post office?), 'Wie komme ich zum Bahnhof?' (How do I get to the station?). Directions: geradeaus (straight ahead), links (left), rechts (right), an der Ecke (on the corner), um die Ecke (around the corner). 'Das ist in der Nähe.' (That is nearby.)",
+    "examples": [
+      "Entschuldigung, wo ist die nächste U-Bahn-Station?",
+      "Gehen Sie geradeaus und dann links.",
+      "Die Apotheke ist um die Ecke.",
+      "Der Supermarkt ist gegenüber dem Kino.",
+      "Wie weit ist es bis zum Museum?"
+    ],
+    "vocabulary": [
+      {
+        "word": "geradeaus",
+        "translation": "straight ahead",
+        "example": "Gehen Sie geradeaus."
+      },
+      {
+        "word": "links",
+        "translation": "left",
+        "example": "Biegen Sie an der Kreuzung links ab."
+      },
+      {
+        "word": "rechts",
+        "translation": "right",
+        "example": "Das Restaurant ist auf der rechten Seite."
+      },
+      {
+        "word": "die Ecke",
+        "translation": "corner",
+        "example": "Das Cafe ist an der Ecke."
+      },
+      {
+        "word": "die Kreuzung",
+        "translation": "intersection",
+        "example": "An der nächsten Kreuzung rechts abbiegen."
+      }
+    ],
+    "grammarFocus": "Imperatives with 'Sie' (formal): Gehen Sie, Biegen Sie ab, Nehmen Sie. 'Wie komme ich zu' + dative (zum, zur): Wie komme ich zum Bahnhof? Wie komme ich zur Post? Prepositions of place: an (+dat), auf (+dat), in (+dat), gegenüber (+dat).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Wie komme ich ___ Bahnhof?' (zum/zur)",
+        "answer": "zum"
+      },
+      {
+        "prompt": "Translate: 'Go straight ahead and then left.'",
+        "answer": "Gehen Sie geradeaus und dann links."
+      },
+      {
+        "prompt": "Translate: 'The pharmacy is around the corner.'",
+        "answer": "Die Apotheke ist um die Ecke."
+      },
+      {
+        "prompt": "What dös 'die Kreuzung' mean?",
+        "answer": "intersection"
+      },
+      {
+        "prompt": "Complete: '___ Sie an der Ecke links ab.' (Bend)",
+        "answer": "Biegen"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü asking for and giving directions (6-8 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe the route from your home to the nearest supermarket.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Entschuldigung, wie komme ich zum Bahnhof? Gehen Sie geradeaus, dann an der Kreuzung rechts und dann weiter geradeaus.'",
+    "readingTask": "Read: 'Das Stadtzentrum ist hier nicht weit. Gehen Sie die Hauptstrasse entlang. Nach 200 Metern sehen Sie das Rathaus auf der linken Seite.'",
+    "speakingTask": "Role-play: ask for and give directions to a tourist. Use at least 3 directional phrases.",
+    "writingTask": "Write a short description (50-60 words) telling someone how to get from a landmark to a restaurant.",
+    "reviewSummary": "You learned: giving and asking for directions, imperative with 'Sie', prepositions of place.",
+    "conceptId": "a2.family.relationships",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.food.restaurant",
+      "a1_noun_gender_basics"
+    ],
+    "conceptsTaught": [
+      "a2.genitiv.basics",
+      "a2.genitiv.nomen"
+    ],
+    "commonMistakes": [
+      "Using von instead of Genitiv: \"das Buch von meinem Vater\" is acceptable but \"das Buch meines Vaters\" is more formal.",
+      "Forgetting the -s/-es ending on masculine/neuter nouns: \"des Vaters\" not \"des Vater\".",
+      "Confusing Genitiv articles: \"des\" (m/n), \"der\" (f/pl).",
+      "Omitting Genitiv in formal written German where expected."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Artikel",
+          "Nominativ",
+          "Genitiv"
+        ],
+        "rows": [
+          [
+            "bestimmt (m)",
+            "der Vater",
+            "des Vaters"
+          ],
+          [
+            "bestimmt (f)",
+            "die Mutter",
+            "der Mutter"
+          ],
+          [
+            "bestimmt (n)",
+            "das Kind",
+            "des Kindes"
+          ],
+          [
+            "bestimmt (pl)",
+            "die Eltern",
+            "der Eltern"
+          ],
+          [
+            "Eigenname (m)",
+            "Peter",
+            "Peters"
+          ],
+          [
+            "unbestimmt (m)",
+            "ein Vater",
+            "eines Vaters"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Das ist das Auto ___ Vaters. (Genitiv)",
+        "answer": "des"
+      },
+      {
+        "prompt": "Die Tasche ___ Mutter ist neu. (Genitiv)",
+        "answer": "der"
+      },
+      {
+        "prompt": "Das Haus ___ Freundes ist groß. (mein - Genitiv)",
+        "answer": "meines"
+      },
+      {
+        "prompt": "Die Farbe ___ Himmels ist blau. (Genitiv)",
+        "answer": "des"
+      },
+      {
+        "prompt": "Der Name ___ Kindes ist Lukas. (Genitiv)",
+        "answer": "des"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "family",
+      "genitive"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_19",
+      "A2_gr_41",
+      "A2_gr_65",
+      "A2_gr_74",
+      "A2_gr_88",
+      "A2_gr_89",
+      "A2_gr_90",
+      "A2_gr_91",
+      "A2_gr_117",
+      "A2_gr_128",
+      "A2_gr_136",
+      "A2_gr_143",
+      "A2_gr_148",
+      "A2_gr_149",
+      "A2_gr_150",
+      "A2_gr_177",
+      "A2_gr_199"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_6",
+    "id": "A2_lesson_20",
+    "title": "Beim Amt und Bürgerdienste",
+    "objective": "Communicate at government offices, fill out forms, and understand official procedures.",
+    "explanation": "Key phrases for offices: 'Ich möchte mich anmelden' (I want to register), 'Ich brauche ein Formular' (I need a form), 'Hier ist mein Pass' (Here is my passport). Important: die Anmeldung (registration), der Termin (appointment), das Formular (form), der Ausweis (ID card).",
+    "examples": [
+      "Ich möchte einen Termin beim Einwohnermeldeamt.",
+      "Hier ist mein Reisepass und das Formular.",
+      "Wo bekomme ich die Anmeldebestätigung?",
+      "Ich brauche eine neue Meldebescheinigung.",
+      "Öffnungszeiten sind von 8 bis 16 Uhr."
+    ],
+    "vocabulary": [
+      {
+        "word": "das Amt",
+        "translation": "office, authority",
+        "example": "Das Amt ist montags bis freitags geöffnet."
+      },
+      {
+        "word": "das Formular",
+        "translation": "form",
+        "example": "Bitte füllen Sie das Formular aus."
+      },
+      {
+        "word": "der Pass",
+        "translation": "passport",
+        "example": "Mein Pass ist noch gültig."
+      },
+      {
+        "word": "die Anmeldung",
+        "translation": "registration",
+        "example": "Die Anmeldung kostet nichts."
+      },
+      {
+        "word": "ausfüllen",
+        "translation": "to fill out",
+        "example": "Füllen Sie bitte das Formular aus."
+      }
+    ],
+    "grammarFocus": "Separable verb 'ausfüllen' (to fill out): ich fülle aus, du füllst aus. 'Das Formular ausfüllen' - prefix gös to end. 'ein-/aus-' verbs: eintragen (to enter), abgeben (to submit). 'müssen' for obligations: Ich muss das Formular ausfüllen. Sie müssen einen Termin machen.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Bitte ___ Sie das Formular ___ (ausfüllen).'",
+        "answer": "füllen ... aus"
+      },
+      {
+        "prompt": "Translate: 'I need an appointment at the registration office.'",
+        "answer": "Ich brauche einen Termin beim Einwohnermeldeamt."
+      },
+      {
+        "prompt": "Translate: 'Here is my passport.'",
+        "answer": "Hier ist mein Reisepass."
+      },
+      {
+        "prompt": "What dös 'das Formular' mean?",
+        "answer": "the form"
+      },
+      {
+        "prompt": "Complete: 'Ich ___ das Formular abgeben.' (must)",
+        "answer": "muss"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü at the registration office (6-8 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 5 qüstions you might ask at a government office.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Guten Tag, ich brauche einen Termin zur Anmeldung. Haben Sie Ihren Pass dabei? Ja, hier bitte.'",
+    "readingTask": "Read: 'Das Einwohnermeldeamt ist von Montag bis Freitag von 8 bis 16 Uhr geöffnet. Bitte bringen Sie Ihren Reisepass und das ausgefüllte Formular mit.'",
+    "speakingTask": "Role-play: at the registration office. Say what you need, give your documents, ask qüstions.",
+    "writingTask": "Write an email reqüsting an appointment at the Ausländerbehörde (50 words).",
+    "reviewSummary": "You learned: office vocabulary, separable verb 'ausfüllen', obligations with 'müssen'.",
+    "conceptId": "a2.technology.media",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.perfect.tense",
+      "a1_yes_no_questions"
+    ],
+    "conceptsTaught": [
+      "a2.indirekte.fragen.technik",
+      "a2.nebensaetze.technik"
+    ],
+    "commonMistakes": [
+      "Using direct question word order in indirect questions: \"Ich frage, ob...\" not \"ob...\".",
+      "Forgetting to use subjunctive for polite questions: \"Könnten Sie\" vs \"Können Sie\".",
+      "Using wrong relative pronouns for technology contexts.",
+      "Confusing Nebensätze with Hauptsätze word order after dass, ob, w-words."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Direkt",
+          "Indirekt (Nebensatz)"
+        ],
+        "rows": [
+          [
+            "Hast du das Handy gesehen?",
+            "Ich frage mich, ob du das Handy gesehen hast."
+          ],
+          [
+            "Wie installiert man die App?",
+            "Kannst du erklären, wie man die App installiert?"
+          ],
+          [
+            "Warum funktioniert das Internet nicht?",
+            "Weiß jemand, warum das Internet nicht funktioniert?"
+          ],
+          [
+            "Welches Programm hast du installiert?",
+            "Erzähl mir, welches Programm du installiert hast."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Weißt du, ___ dieses Gerät funktioniert? (how)",
+        "answer": "wie"
+      },
+      {
+        "prompt": "Kannst du mir sagen, ___ ich die App installiere?",
+        "answer": "wie"
+      },
+      {
+        "prompt": "Ich frage mich, ___ das Internet wieder funktioniert. (whether)",
+        "answer": "ob"
+      },
+      {
+        "prompt": "Er erklärt mir, ___ Programm ich brauche. (which)",
+        "answer": "welches"
+      },
+      {
+        "prompt": "Ich weiß nicht, ___ mein Handy ist. (where)",
+        "answer": "wo"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "technology",
+      "indirect-questions"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_172",
+      "A2_gr_184",
+      "A2_gr_185",
+      "A2_gr_186"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_7",
+    "id": "A2_lesson_21",
+    "title": "Medien und Technologie",
+    "objective": "Talk about media, technology, and digital devices.",
+    "explanation": "Vocabulary for technology: der Computer, das Handy (mobile phone), der Laptop, das Internet, die App, die E-Mail. 'benutzen' (to use): 'Ich benutze mein Handy jeden Tag.' 'im Internet surfen' (to surf the internet), 'etwas herunterladen' (to download something), 'eine E-Mail schicken' (to send an email).",
+    "examples": [
+      "Ich surfe täglich im Internet.",
+      "Kannst du mir eine E-Mail schicken?",
+      "Mein Handy ist kaputt.",
+      "Ich lade die App auf mein Handy herunter.",
+      "Wie finde ich das WLAN-Passwort?"
+    ],
+    "vocabulary": [
+      {
+        "word": "der Computer",
+        "translation": "computer",
+        "example": "Der Computer ist langsam."
+      },
+      {
+        "word": "das Handy",
+        "translation": "mobile phone",
+        "example": "Mein Handy klingelt."
+      },
+      {
+        "word": "das Internet",
+        "translation": "internet",
+        "example": "Das Internet funktioniert nicht."
+      },
+      {
+        "word": "die E-Mail",
+        "translation": "email",
+        "example": "Ich bekomme viele E-Mails."
+      },
+      {
+        "word": "herunterladen",
+        "translation": "to download",
+        "example": "Ich lade ein Lied herunter."
+      }
+    ],
+    "grammarFocus": "'können' (can): ability. ich kann, du kannst, er kann, wir können, ihr könnt, sie können. 'Ich kann ein Handy reparieren.' 'Kannst du Deutsch sprechen?' 'nicht' position: 'Das Handy funktioniert nicht.' Separable verb 'herunterladen': ich lade herunter.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ ein Handy reparieren.' (can)",
+        "answer": "kann"
+      },
+      {
+        "prompt": "Translate: 'Can you send me an email?'",
+        "answer": "Kannst du mir eine E-Mail schicken?"
+      },
+      {
+        "prompt": "Translate: 'I surf the internet every day.'",
+        "answer": "Ich surfe täglich im Internet."
+      },
+      {
+        "prompt": "What dös 'das Handy' mean?",
+        "answer": "mobile phone"
+      },
+      {
+        "prompt": "Complete: 'Die App funktioniert ___.' (not)",
+        "answer": "nicht"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write about how you use technology daily (6-8 sentences).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write a short text explaining how to use a smartphone to a beginner.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich brauche ein neues Handy. Mein altes Handy ist langsam. Kannst du mir helfen? Ich will ein gutes Smartphone kaufen.'",
+    "readingTask": "Read: 'Viele Menschen verbringen viel Zeit mit digitalen Medien. Sie surfen im Internet, schauen Videos und nutzen soziale Netzwerke.'",
+    "speakingTask": "Talk about how you use technology. What devices do you use? How often? What apps?",
+    "writingTask": "Write an email (40-50 words) asking for help with a computer or phone problem.",
+    "reviewSummary": "You learned: technology vocabulary, modal 'können', separable verb 'herunterladen'.",
+    "conceptId": "a2.animals.nature",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.animals.nature",
+      "a1_vocab_everyday_core"
+    ],
+    "conceptsTaught": [
+      "a2.komparativ.tiere",
+      "a2.superlativ.tiere",
+      "a2.wenn.saetze.natur"
+    ],
+    "commonMistakes": [
+      "Using wenn for past habitual actions that no longer occur: use früher + Präteritum instead.",
+      "Confusing comparative/superlative of monosyllabic vs multi-syllabic adjectives.",
+      "Forgetting als in comparisons: \"schneller als\" not \"schneller wie\".",
+      "Using the wrong umlaut in comparative: \"jung, jünger\" not \"jung, junger\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Tier",
+          "Komparativ",
+          "Superlativ"
+        ],
+        "rows": [
+          [
+            "der Hund",
+            "der Hund ist größer",
+            "der Hund ist am größten"
+          ],
+          [
+            "die Katze",
+            "die Katze ist schneller",
+            "die Katze ist am schnellsten"
+          ],
+          [
+            "das Pferd",
+            "das Pferd ist stärker",
+            "das Pferd ist am stärksten"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Der Löwe ist ___ (stark) als der Fuchs.",
+        "answer": "stärker"
+      },
+      {
+        "prompt": "Das Pferd läuft ___ (schnell) als der Esel.",
+        "answer": "schneller"
+      },
+      {
+        "prompt": "Der Hund ist der ___ (treu) Freund des Menschen.",
+        "answer": "treueste"
+      },
+      {
+        "prompt": "___ ich im Wald spazieren gehe, sehe ich oft Rehe.",
+        "answer": "Wenn"
+      },
+      {
+        "prompt": "Die Katze ist ___ (klein) als der Hund.",
+        "answer": "kleiner"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "animals",
+      "comparison"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_135",
+      "A2_gr_155",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_7",
+    "id": "A2_lesson_22",
+    "title": "Umwelt und Nachhaltigkeit",
+    "objective": "Talk about the environment, recycling, and everyday eco-friendly actions.",
+    "explanation": "Vocabulary: die Umwelt (environment), der Müll (trash), recyceln (recycle), die Umweltverschmutzung (pollution). 'Ich trenne den Müll.' (I separate the trash.) 'Wir sollten die Umwelt schützen.' (We should protect the environment.) 'Man kann Energie sparen.' (You can save energy.)",
+    "examples": [
+      "Wir sollten den Müll trennen.",
+      "Ich benutze eine Einkaufstasche statt Plastik.",
+      "Man kann mit dem Fahrrad fahren, um CO2 zu sparen.",
+      "In Deutschland gibt es Pfand auf Flaschen.",
+      "Wir müssen die Umwelt schützen."
+    ],
+    "vocabulary": [
+      {
+        "word": "die Umwelt",
+        "translation": "environment",
+        "example": "Wir müssen die Umwelt schützen."
+      },
+      {
+        "word": "der Müll",
+        "translation": "trash",
+        "example": "Bitte den Müll in die Tonne werfen."
+      },
+      {
+        "word": "recyceln",
+        "translation": "to recycle",
+        "example": "In Deutschland recyceln wir viel."
+      },
+      {
+        "word": "das Fahrrad",
+        "translation": "bicycle",
+        "example": "Ich fahre mit dem Fahrrad zur Arbeit."
+      },
+      {
+        "word": "die Flasche",
+        "translation": "bottle",
+        "example": "Die Flasche hat 25 Cent Pfand."
+      }
+    ],
+    "grammarFocus": "Modal verb 'sollen' (should): ich soll, du sollst, er soll, wir sollen, ihr sollt, sie sollen. 'Man sollte' (one should) for general advice. 'Man kann' + infinitive for possibilities. 'statt' (instead of) + noun or 'statt...zu': Statt Auto zu fahren, nehme ich das Fahrrad.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Wir ___ den Müll trennen.' (should)",
+        "answer": "sollen"
+      },
+      {
+        "prompt": "Translate: 'I ride my bike to work.'",
+        "answer": "Ich fahre mit dem Fahrrad zur Arbeit."
+      },
+      {
+        "prompt": "Translate: 'We should protect the environment.'",
+        "answer": "Wir sollen die Umwelt schützen."
+      },
+      {
+        "prompt": "What dös 'der Müll' mean?",
+        "answer": "trash"
+      },
+      {
+        "prompt": "Complete: '___ kann Energie sparen.' (One/You)",
+        "answer": "Man"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write 5 things you do to help the environment.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write about recycling in your country vs Germany.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'In Deutschland trennen die Menschen den Müll. Es gibt Tonnen für Papier, Plastik, Glas und Biomüll.'",
+    "readingTask": "Read: 'Umweltschutz ist wichtig. Jeder kann etwas tun: Weniger Plastik benutzen, mit dem Fahrrad fahren und Energie sparen.'",
+    "speakingTask": "Talk about what you do for the environment. What could people do better?",
+    "writingTask": "Write a short text (50-60 words) giving 3 tips for living more sustainably.",
+    "reviewSummary": "You learned: environment vocabulary, modal verb 'sollen', 'man' for general statements.",
+    "conceptId": "a2.feelings.emotions",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.feelings.emotions",
+      "a1_personal_pronouns"
+    ],
+    "conceptsTaught": [
+      "a2.reflexive.verben.emotionen",
+      "a2.dativverben.emotionen"
+    ],
+    "commonMistakes": [
+      "Forgetting the reflexive pronoun with emotional verbs: \"Ich freue mich\" not \"Ich freue\".",
+      "Using haben instead of sein for certain emotional states: \"Mir ist kalt\" not \"Ich habe kalt\".",
+      "Confusing sich fühlen with fühlen (transitive): \"Ich fühle mich gut\" vs \"Ich fühle den Schmerz\".",
+      "Using wrong preposition with emotional adjectives: \"Angst vor\" not \"Angst von\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Verb",
+          "Bedeutung",
+          "Reflexiv im Satz"
+        ],
+        "rows": [
+          [
+            "sich freuen",
+            "to be glad",
+            "Ich freue mich über das Geschenk."
+          ],
+          [
+            "sich ärgern",
+            "to be annoyed",
+            "Er ärgert sich über den Fehler."
+          ],
+          [
+            "sich fürchten",
+            "to be afraid",
+            "Sie fürchtet sich vor der Prüfung."
+          ],
+          [
+            "sich fühlen",
+            "to feel",
+            "Ich fühle mich heute besser."
+          ],
+          [
+            "sich langweilen",
+            "to be bored",
+            "Wir langweilen uns im Unterricht."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich ___ über das Geschenk. (sich freuen)",
+        "answer": "freue mich"
+      },
+      {
+        "prompt": "Er ___ vor der Prüfung. (sich fürchten)",
+        "answer": "fürchtet sich"
+      },
+      {
+        "prompt": "Wir ___ im Urlaub. (sich erholen)",
+        "answer": "erholen uns"
+      },
+      {
+        "prompt": "___ ihr über den Film? (sich ärgern)",
+        "answer": "Ärgert euch"
+      },
+      {
+        "prompt": "Sie ___ sich heute nicht gut.",
+        "answer": "fühlt"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "emotions",
+      "reflexive-verbs"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_7",
+    "id": "A2_lesson_23",
+    "title": "Öffentliche Verkehrsmittel",
+    "objective": "Use public transport: buses, trams, U-Bahn, and understand ticketing.",
+    "explanation": "German public transport: die U-Bahn (subway), die S-Bahn (city train), der Bus, die Strassenbahn (tram). 'umsteigen' (to transfer): 'Ich muss in Köln umsteigen.' 'einsteigen' (to board), 'aussteigen' (to exit). Tickets: die Einzelfahrkarte (single ticket), die Tageskarte (day pass), die Monatskarte (monthly pass).",
+    "examples": [
+      "Die U-Bahn kommt alle 5 Minuten.",
+      "Ich fahre mit der S-Bahn zum Hauptbahnhof.",
+      "Sie müssen am Alexanderplatz umsteigen.",
+      "Eine Tageskarte kostet 7 Euro.",
+      "Der Bus hat 10 Minuten Verspätung."
+    ],
+    "vocabulary": [
+      {
+        "word": "die U-Bahn",
+        "translation": "subway",
+        "example": "Die U-Bahn-Station ist um die Ecke."
+      },
+      {
+        "word": "umsteigen",
+        "translation": "to transfer",
+        "example": "Sie müssen zweimal umsteigen."
+      },
+      {
+        "word": "die Haltestelle",
+        "translation": "stop",
+        "example": "Die nächste Haltestelle ist Hauptbahnhof."
+      },
+      {
+        "word": "die Verspätung",
+        "translation": "delay",
+        "example": "Der Zug hat 15 Minuten Verspätung."
+      },
+      {
+        "word": "der Fahrplan",
+        "translation": "schedule",
+        "example": "Der Fahrplan ändert sich am Wochenende."
+      }
+    ],
+    "grammarFocus": "Verbs with prefixes: einsteigen (board) - ich steige ein, aussteigen (exit) - ich steige aus, umsteigen (transfer) - ich steige um. Qüstion: 'Wo muss ich umsteigen?' 'Mit welcher Linie fahre ich zum Hauptbahnhof?' Using 'müssen' for obligations: Ich muss in München umsteigen.",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich muss in Berlin ___ (umsteigen).'",
+        "answer": "umsteigen"
+      },
+      {
+        "prompt": "Translate: 'Where do I need to transfer?'",
+        "answer": "Wo muss ich umsteigen?"
+      },
+      {
+        "prompt": "Translate: 'The train has 15 minutes delay.'",
+        "answer": "Der Zug hat 15 Minuten Verspätung."
+      },
+      {
+        "prompt": "What is a 'Tageskarte'?",
+        "answer": "day pass ticket"
+      },
+      {
+        "prompt": "Complete: 'Die nächste ___ ist Hauptbahnhof.' (stop)",
+        "answer": "Haltestelle"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a dialogü: ask about train connections and buy a ticket (6-8 exchanges).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Describe your daily commute: which transport, which line, how long.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Entschuldigung, welche Linie fährt zum Hauptbahnhof? Nehmen Sie die U5 Richtung Hauptbahnhof und steigen Sie am Dom aus.'",
+    "readingTask": "Read: 'Der Fahrplan am Wochenende ist anders als unter der Woche. Die U-Bahn fährt alle 10 Minuten, der Bus alle 20 Minuten.'",
+    "speakingTask": "Describe your route from home to work or school. Which transport? Which stops? How long?",
+    "writingTask": "Write an email to a friend explaining how to get from the airport to your apartment using public transport.",
+    "reviewSummary": "You learned: public transport vocabulary, separable verbs (ein/aus/umsteigen), ticket types.",
+    "conceptId": "a2.directions.traffic",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.directions.traffic",
+      "a1_basic_prepositions"
+    ],
+    "conceptsTaught": [
+      "a2.dativpraepositionen",
+      "a2.wechselpraepositionen.richtung"
+    ],
+    "commonMistakes": [
+      "Confusing Dativpräpositionen (aus, bei, mit, nach, seit, von, zu) with Wechselpräpositionen.",
+      "Using wrong case after Dativpräpositionen: always Dativ, never change.",
+      "Forgetting contractions: \"zum\" not \"zu dem\", \"zur\" not \"zu der\".",
+      "Mixing up nach (to a country/city) with zu (to a person/building) with in (into)."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Dativpräposition",
+          "Bedeutung",
+          "Beispiel"
+        ],
+        "rows": [
+          [
+            "aus",
+            "from (origin/material)",
+            "Ich komme aus der Türkei."
+          ],
+          [
+            "bei",
+            "at/near (person/employer)",
+            "Ich bin bei der Arbeit."
+          ],
+          [
+            "mit",
+            "with (accompaniment)",
+            "Ich fahre mit dem Bus."
+          ],
+          [
+            "nach",
+            "to (city/country/direction)",
+            "Ich fahre nach Berlin."
+          ],
+          [
+            "seit",
+            "since/for (time)",
+            "Seit einem Jahr lerne ich Deutsch."
+          ],
+          [
+            "von",
+            "from (person/source)",
+            "Das Geschenk ist von meiner Mutter."
+          ],
+          [
+            "zu",
+            "to (person/building)",
+            "Ich gehe zum Arzt."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "Ich komme ___ der Schweiz. (from)",
+        "answer": "aus"
+      },
+      {
+        "prompt": "Er wohnt ___ seiner Familie. (with)",
+        "answer": "bei"
+      },
+      {
+        "prompt": "Ich fahre ___ dem Zug. (by)",
+        "answer": "mit"
+      },
+      {
+        "prompt": "Gehen Sie ___ der Ampel links.",
+        "answer": "an"
+      },
+      {
+        "prompt": "Die nächste U-Bahn ___ sechs Minuten. (in)",
+        "answer": "in"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "directions",
+      "dative-prep"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN",
+      "A2_gr_NaN"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_8",
+    "id": "A2_lesson_24",
+    "title": "Auslandserfahrung und Kulturunterschiede",
+    "objective": "Talk about living abroad and cultural differences between countries.",
+    "explanation": "Living abroad vocabulary: 'im Ausland leben' (to live abroad), 'die Kultur' (culture), 'die Tradition' (tradition). 'sich gewöhnen an' (to get used to): 'Ich gewöhne mich an das deutsche Essen.' Cultural differences: 'In Deutschland sagt man...', 'Bei uns ist es anders.' 'Vermissen' (to miss): 'Ich vermisse meine Familie.'",
+    "examples": [
+      "Ich lebe seit zwei Jahren in Deutschland.",
+      "Am Anfang war die Sprache schwer.",
+      "In Deutschland ist Pünktlichkeit sehr wichtig.",
+      "Ich vermisse das Essen aus meiner Heimat.",
+      "Ich habe mich schon an das Wetter gewöhnt."
+    ],
+    "vocabulary": [
+      {
+        "word": "das Ausland",
+        "translation": "foreign country",
+        "example": "Ich möchte im Ausland studieren."
+      },
+      {
+        "word": "die Kultur",
+        "translation": "culture",
+        "example": "Die deutsche Kultur ist interessant."
+      },
+      {
+        "word": "vermissen",
+        "translation": "to miss",
+        "example": "Ich vermisse meine Freunde."
+      },
+      {
+        "word": "sich gewöhnen",
+        "translation": "to get used to",
+        "example": "Ich gewöhne mich an das neue Land."
+      },
+      {
+        "word": "die Pünktlichkeit",
+        "translation": "punctuality",
+        "example": "Pünktlichkeit ist in Deutschland wichtig."
+      }
+    ],
+    "grammarFocus": "Reflexive verb 'sich gewöhnen an' (to get used to): ich gewöhne mich an, du gewöhnst dich an. 'sich' changes: mich, dich, sich, uns, euch, sich. 'vermissen' (to miss) is regular: ich vermisse, du vermisst. 'am Anfang' (in the beginning), 'am besten' (the best).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ mich an das Wetter.' (get used to)",
+        "answer": "gewöhne"
+      },
+      {
+        "prompt": "Translate: 'I miss my family.'",
+        "answer": "Ich vermisse meine Familie."
+      },
+      {
+        "prompt": "Translate: 'Punctuality is very important in Germany.'",
+        "answer": "Pünktlichkeit ist in Deutschland sehr wichtig."
+      },
+      {
+        "prompt": "What dös 'die Kultur' mean?",
+        "answer": "culture"
+      },
+      {
+        "prompt": "Complete: '___ Anfang war es schwer.' (In the)",
+        "answer": "Am"
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write about a cultural difference you have noticed (6-8 sentences).",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write about what you would miss if you lived abroad.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Ich komme aus Spanien und lebe seit einem Jahr in Berlin. Am Anfang war es schwer, aber jetzt gefällt es mir sehr gut.'",
+    "readingTask": "Read: 'Deutschland und mein Heimatland sind in vielen Dingen anders. Zum Beispiel ist das Essen anders und die Arbeitszeiten sind auch anders.'",
+    "speakingTask": "Talk about a cultural difference between your culture and German culture. What surprised you?",
+    "writingTask": "Write a short text (50-70 words) comparing one aspect of your home culture to German culture.",
+    "reviewSummary": "You learned: vocabulary for living abroad, reflexive 'sich gewöhnen an', cultural comparisons.",
+    "conceptId": "a2.festivals.traditions",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.holidays.celebrations",
+      "a1_birthday_celebration"
+    ],
+    "conceptsTaught": [
+      "a2.wenn.saetze.feste",
+      "a2.konjunktionen.fest"
+    ],
+    "commonMistakes": [
+      "Mixed confusion from multiple A2 topics covered in this review.",
+      "Forgetting whether to use wenn, als, or wann in time clauses.",
+      "Word order errors with multiple conjunctions in complex sentences.",
+      "Using Perfekt where Präteritum would be more natural for written narratives about traditions."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Fest/Tradition",
+          "Konjunktion",
+          "Satz"
+        ],
+        "rows": [
+          [
+            "Weihnachten",
+            "wenn",
+            "Wenn Weihnachten ist, feiern wir mit der Familie."
+          ],
+          [
+            "Geburtstag",
+            "weil",
+            "Ich feiere meinen Geburtstag, weil ich das mag."
+          ],
+          [
+            "Hochzeit",
+            "als",
+            "Als sie heirateten, war das Wetter schön."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ Weihnachten kommt, schmücken wir den Baum.",
+        "answer": "Wenn"
+      },
+      {
+        "prompt": "___ ich klein war, habe ich an den Osterhasen geglaubt.",
+        "answer": "Als"
+      },
+      {
+        "prompt": "Wir feiern, ___ wir uns lange nicht gesehen haben.",
+        "answer": "weil"
+      },
+      {
+        "prompt": "___ das Fest beginnt, singen wir ein Lied.",
+        "answer": "Bevor"
+      },
+      {
+        "prompt": "___ Ostern suchen die Kinder Eier.",
+        "answer": "Zu/an"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "traditions",
+      "conjunctions"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_13",
+      "A2_gr_14",
+      "A2_gr_111",
+      "A2_gr_122",
+      "A2_gr_124",
+      "A2_gr_125",
+      "A2_gr_191",
+      "A2_gr_192",
+      "A2_gr_195"
+    ]
+  },
+  {
+    "level": "A2",
+    "unit": "A2_unit_8",
+    "id": "A2_lesson_25",
+    "title": "Wiederholung und Prüfungsvorbereitung",
+    "objective": "Review key A2 topics and prepare for a progress test.",
+    "explanation": "This lesson reviews the most important A2 grammar and topics: Perfekt tense, separable verbs, modal verbs (möchten, wollen, können, müssen, sollen), dative prepositions, adjective endings, and qüstion words. Use the exercises to test yourself. Review vocabulary from all previous lessons.",
+    "examples": [
+      "Ich habe dieses Jahr viel gelernt.",
+      "Ich kann jetzt über vergangene Ereignisse sprechen.",
+      "Ich weiss, wie man nach dem Weg fragt.",
+      "Ich kann über meine Arbeit und Hobbys sprechen.",
+      "Ich kann einen Termin vereinbaren."
+    ],
+    "vocabulary": [
+      {
+        "word": "wiederholen",
+        "translation": "to repeat, review",
+        "example": "Ich wiederhole die Grammatik."
+      },
+      {
+        "word": "die Prufung",
+        "translation": "exam",
+        "example": "Die Prufung ist nächste Woche."
+      },
+      {
+        "word": "das Niveau",
+        "translation": "level",
+        "example": "Ich bin auf A2-Niveau."
+      },
+      {
+        "word": "die Zusammenfassung",
+        "translation": "summary",
+        "example": "Hier ist eine Zusammenfassung."
+      },
+      {
+        "word": "das Ziel",
+        "translation": "goal",
+        "example": "Mein Ziel ist B1."
+      }
+    ],
+    "grammarFocus": "Review of all A2 grammar: Perfekt (haben/sein + participle), separable verbs (prefix at end), modal verbs (möchten, wollen, können, müssen, sollen), dative after 'mit' and 'zu', adjective endings, 'es gibt' + accusative, word order (verb second).",
+    "guidedPractice": [
+      {
+        "prompt": "Complete: 'Ich ___ gestern einen Film gesehen.' (Perfekt)",
+        "answer": "habe"
+      },
+      {
+        "prompt": "Translate: 'We want to learn German.'",
+        "answer": "Wir wollen Deutsch lernen."
+      },
+      {
+        "prompt": "Translate: 'I can speak German well.'",
+        "answer": "Ich kann gut Deutsch sprechen."
+      },
+      {
+        "prompt": "Complete: 'Ich fahre ___ dem Bus.' (dative)",
+        "answer": "mit"
+      },
+      {
+        "prompt": "Translate: 'We are on A2 level.'",
+        "answer": "Wir sind auf A2-Niveau."
+      }
+    ],
+    "independentPractice": [
+      {
+        "prompt": "Write a self-evaluation: what A2 topics you know well and what needs more practice.",
+        "type": "writing"
+      },
+      {
+        "prompt": "Write 10 sentences summarizing everything you learned in A2.",
+        "type": "writing"
+      }
+    ],
+    "listeningTask": "Read aloud: 'Wir haben viel in A2 gelernt. Perfekt, trennbare Verben, Modalverben und vieles mehr. Jetzt sind wir bereit für B1.'",
+    "readingTask": "Read: 'A2 ist ein wichtiger Schritt. Sie können jetzt über Alltagssituationen sprechen, Termine machen, Einkaufen gehen und über die Vergangenheit sprechen.'",
+    "speakingTask": "Give a 2-minute summary of what you learned in A2. Mention grammar, vocabulary, and skills.",
+    "writingTask": "Write a review of your A2 learning journey (60-80 words): what was easy, difficult, and your goal for B1.",
+    "reviewSummary": "You reviewed all key A2 topics: Perfekt, separable verbs, modal verbs, dative, adjective endings, qüstion words. You are ready for the A2 test and B1.",
+    "conceptId": "a2.review.b1.outlook",
+    "estimatedMinutes": 60,
+    "prerequisiteConceptIds": [
+      "a2.festivals.traditions",
+      "a2.technology.media"
+    ],
+    "conceptsTaught": [
+      "a2.mix.review",
+      "a2.abschluss",
+      "a2.persoenliche.erfahrungen"
+    ],
+    "commonMistakes": [
+      "Mixed topic errors: cumulative mistakes from all A2 grammar areas.",
+      "Forgetting subjunctive for polite requests in B1 preparation: \"Ich würde gern...\"",
+      "Using simple sentences when more complex structures are expected at B1 level.",
+      "Omitting preparatory es in sentences: \"Es freut mich, dass...\" not \"Freut mich, dass...\"."
+    ],
+    "formsTable": [
+      {
+        "columns": [
+          "Struktur",
+          "A1/A2",
+          "B1 Ziel"
+        ],
+        "rows": [
+          [
+            "Sätze",
+            "Ich gehe nach Hause.",
+            "Ich gehe nach Hause, weil ich müde bin."
+          ],
+          [
+            "Zeit",
+            "Gestern war ich im Kino.",
+            "Gestern bin ich ins Kino gegangen, obwohl ich keine Zeit hatte."
+          ],
+          [
+            "Begründung",
+            "Ich lerne Deutsch.",
+            "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "prompt": "___ ich in Deutschland ankomme, werde ich einen Kurs besuchen.",
+        "answer": "Wenn"
+      },
+      {
+        "prompt": "Ich möchte Deutsch lernen, ___ ich in Berlin studieren will.",
+        "answer": "weil"
+      },
+      {
+        "prompt": "___ ich das B1-Zertifikat habe, kann ich mich bewerben.",
+        "answer": "Wenn"
+      },
+      {
+        "prompt": "Früher ___ ich nur A1, jetzt kann ich A2. (können, Prät.)",
+        "answer": "konnte"
+      },
+      {
+        "prompt": "Ich hoffe, ___ ich bald B1 erreiche.",
+        "answer": "dass"
+      }
+    ],
+    "trackTags": [
+      "goethe",
+      "review",
+      "b1-preparation"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "A2_gr_101",
+      "A2_gr_102",
+      "A2_gr_103",
+      "A2_gr_104",
+      "A2_gr_138",
+      "A2_gr_140"
+    ]
+  }
+]

@@ -1,0 +1,696 @@
+[
+  {
+    "id": "B1_exam_1",
+    "name": "Göthe B1 Practice Exam 1 - Arbeit und Bildung",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex1_les_1",
+            "type": "mcq",
+            "question": "Text: 'Immer mehr Unternehmen in Deutschland bieten ihren Mitarbeitern flexible Arbeitszeiten an. Eine Studie zeigt, dass 70 Prozent der Angestellten Homeoffice-Möglichkeiten nutzen möchten. Besonders junge Arbeitnehmer legen Wert auf eine gute Work-Life-Balance.' Was wünschen sich junge Arbeitnehmer besonders?",
+            "options": [
+              "Ein hohes Gehalt",
+              "Eine gute Work-Life-Balance",
+              "Einen kurzen Arbeitsweg",
+              "Eine grosse Firma"
+            ],
+            "answer": "Eine gute Work-Life-Balance"
+          },
+          {
+            "id": "B1_ex1_les_2",
+            "type": "true-false",
+            "question": "Text: 'Die Ausbildung zum Industriekaufmann dauert in der Regel drei Jahre. Die Berufsschule besuchen die Auszubildenden an ein bis zwei Tagen pro Woche. Eine Verkürzung der Ausbildung auf zweieinhalb Jahre ist bei guten Leistungen möglich.' Die Ausbildung zum Industriekaufmann dauert immer drei Jahre.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex1_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Das Bundesministerium für Bildung und Forschung vergibt jedes Jahr Stipendien an besonders begabte Studierende aus dem In- und Ausland. Die Bewerbungsfrist endet am 31. März.'",
+            "options": [
+              "Studiengebühren steigen",
+              "Stipendien für begabte Studierende",
+              "Neue Universität eröffnet",
+              "Auslandssemester beliebt"
+            ],
+            "answer": "Stipendien für begabte Studierende"
+          },
+          {
+            "id": "B1_ex1_les_4",
+            "type": "gap-fill",
+            "question": "Für die Bewerbung ___ Sie Ihre Zeugnisse und einen Lebenslauf ein.",
+            "options": [
+              "reichen",
+              "reicht",
+              "reichte",
+              "gereicht"
+            ],
+            "answer": "reichen"
+          },
+          {
+            "id": "B1_ex1_les_5",
+            "type": "mcq",
+            "question": "Text: 'Herr Müller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespräch musste er Fragen zu seiner Berufserfahrung, seinen Stärken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.' Was gehört NICHT zu den Fragen im Vorstellungsgespräch?",
+            "options": [
+              "Berufserfahrung",
+              "Stärken und Schwachen",
+              "Gehaltsvorstellungen",
+              "Familienstand"
+            ],
+            "answer": "Familienstand"
+          },
+          {
+            "id": "B1_ex1_les_6",
+            "type": "short-answer",
+            "question": "Text: \"Herr Müller hat sich auf eine Stelle als Projektmanager beworben. Im Vorstellungsgespräch musste er Fragen zu seiner Berufserfahrung, seinen Stärken und Schwachen sowie seinen Gehaltsvorstellungen beantworten.\" Auf welche Stelle hat sich Herr Müller beworben?",
+            "answer": "Projektmanager",
+            "acceptedAnswers": [
+              "Projektmanager",
+              "als Projektmanager",
+              "eine Stelle als Projektmanager"
+            ],
+            "points": 1
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 25,
+        "tasks": [
+          {
+            "id": "B1_ex1_hor_1",
+            "type": "mcq",
+            "question": "Telefonansage der Agentur für Arbeit: 'Guten Tag, Sie sind verbunden mit der Agentur für Arbeit in München. Unsere Öffnungszeiten sind Montag bis Freitag von 8 bis 16 Uhr. Mittwochs sind wir bis 18 Uhr für Sie da. Für die Vereinbarung eines persönlichen Gesprächstermins drücken Sie bitte die 1. Für Fragen zu Ihrem Arbeitslosengeld drücken Sie die 2. Für Informationen zu Weiterbildungsmöglichkeiten drücken Sie die 3.' Bis wann ist die Agentur am Mittwoch geöffnet?",
+            "options": [
+              "Bis 16 Uhr",
+              "Bis 17 Uhr",
+              "Bis 18 Uhr",
+              "Bis 20 Uhr"
+            ],
+            "answer": "Bis 18 Uhr"
+          },
+          {
+            "id": "B1_ex1_hor_2",
+            "type": "true-false",
+            "question": "Arbeitskollegin: 'Ich habe mich für die Fortbildung nächste Woche angemeldet. Sie findet von Montag bis Mittwoch in der Hauptverwaltung statt. Es sind noch zwei Plätze frei, falls du auch kommen möchtest.' Die Fortbildung findet an vier Tagen statt.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex1_hor_3",
+            "type": "mcq",
+            "question": "Werbung im Radio: 'Sie möchten sich beruflich verändern? Die Abendschule bietet Kurse in den Bereichen IT, Buchhaltung und Sprachen an. Der nächste Kurs beginnt am 1. April. Informieren Sie sich jetzt kostenlos und unverbindlich unter der Nummer 0800-54321.' Welche Bereiche bietet die Abendschule an?",
+            "options": [
+              "Medizin, Technik und Sprachen",
+              "IT, Buchhaltung und Sprachen",
+              "IT, Design und Buchhaltung",
+              "Sprachen, Journalismus und IT"
+            ],
+            "answer": "IT, Buchhaltung und Sprachen"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex1_sch_1",
+            "prompt": "Sie haben einen Deutschkurs an einer Sprachschule gebucht. Der Kurs sollte montags und mittwochs um 18:00 Uhr stattfinden. Jetzt hat die Schule den Kurs ohne Ihre Zustimmung auf dienstags und donnerstags um 20:00 Uhr verschoben. Schreiben Sie eine formelle Beschwerde-E-Mail an die Sprachschule.\n\n- Grund des Schreibens nennen\n- Das Problem erklären: Kurs wurde ohne Absprache verschoben\n- Ihre Forderung: Rückkehr zum ursprünglichen Zeitplan oder Geld zurück\n- Um schriftliche Antwort bitten\n\nSchreiben Sie etwa 100 Wörter.",
+            "wordLimit": 120
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 90,
+        "tasks": [
+          {
+            "id": "B1_ex1_spr_1",
+            "prompt": "Präsentation: \"Mein Traumberuf - was ich dafür tun muss.\" Stellen Sie Ihren Traumberuf vor und erklären Sie, welche Schritte für die Verwirklichung notwendig sind.",
+            "talkTime": 120
+          },
+          {
+            "id": "B1_ex1_spr_2",
+            "prompt": "Diskussion mit einem Partner: \"Sollten alle jungen Menschen eine Berufsausbildung machen oder direkt studieren? Vor- und Nachteile beider Wege.\"",
+            "talkTime": 120
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "B1_exam_2",
+    "name": "Göthe B1 Practice Exam 2 - Gesundheit und Versicherung",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex2_les_1",
+            "type": "mcq",
+            "question": "Text: 'Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehören die ärztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshöhe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.' Wie wird der Beitrag zur Krankenversicherung berechnet?",
+            "options": [
+              "Nach dem Alter",
+              "Nach dem Einkommen",
+              "Nach der Grösse der Familie",
+              "Nach dem Wohnort"
+            ],
+            "answer": "Nach dem Einkommen"
+          },
+          {
+            "id": "B1_ex2_les_2",
+            "type": "true-false",
+            "question": "Text: 'Die private Krankenversicherung ist für Selbstständige und Behördenmitarbeiter eine Alternative zur gesetzlichen Versicherung. Die Beiträge sind altersabhängig und können steigen.' Die private Krankenversicherung ist für alle Arbeitnehmer die beste Wahl.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex2_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Neue Studien zeigen, dass regelmässiger Sport das Risiko für Herz-Kreislauf-Erkrankungen um bis zu 40 Prozent senken kann. Die Weltgesundheitsorganisation empfiehlt Erwachsenen mindestens 150 Minuten moderate Bewegung pro Woche.'",
+            "options": [
+              "Gefaahren des Leistungssports",
+              "Bewegung beugt Herzkrankheiten vor",
+              "Neue Medikamente für das Herz",
+              "Krankenhäuser im Vergleich"
+            ],
+            "answer": "Bewegung beugt Herzkrankheiten vor"
+          },
+          {
+            "id": "B1_ex2_les_4",
+            "type": "gap-fill",
+            "question": "Vor einer Operation ___ der Arzt eine ausführliche Aufklärung durchführen.",
+            "options": [
+              "muss",
+              "musste",
+              "müssen",
+              "gemusst"
+            ],
+            "answer": "muss"
+          },
+          {
+            "id": "B1_ex2_les_5",
+            "type": "mcq",
+            "question": "Text: 'Im deutschen Gesundheitssystem haben Patienten die freie Arztwahl. Das bedeutet, sie können selbst entscheiden, zu welchem Arzt sie gehen. Allerdings ist für den Besuch eines Facharztes meist eine Überweisung vom Hausarzt erforderlich.' Wann braucht man eine Überweisung?",
+            "options": [
+              "Für jeden Arztbesuch",
+              "Für den Besuch beim Hausarzt",
+              "Für den Besuch beim Facharzt",
+              "Für den Notfall"
+            ],
+            "answer": "Für den Besuch beim Facharzt"
+          },
+          {
+            "id": "B1_ex2_les_6",
+            "type": "short-answer",
+            "question": "Text: \"Die gesetzliche Krankenversicherung in Deutschland bietet verschiedene Leistungen an. Dazu gehören die ärztliche Behandlung, Vorsorgeuntersuchungen und Krankenhausaufenthalte. Die Beitragshöhe richtet sich nach dem Einkommen. Arbeitnehmer und Arbeitgeber teilen sich den Beitrag.\" Wonach richtet sich die Beitragshöhe zur Krankenversicherung?",
+            "answer": "nach dem Einkommen",
+            "acceptedAnswers": [
+              "nach dem Einkommen",
+              "Einkommen",
+              "vom Einkommen",
+              "dem Einkommen"
+            ],
+            "points": 1
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 25,
+        "tasks": [
+          {
+            "id": "B1_ex2_hor_1",
+            "type": "mcq",
+            "question": "Arzthelferin am Telefon: 'Guten Tag, Praxis Dr. Weber. Sie haben einen Termin für die Vorsorgeuntersuchung am Mittwoch, den 15. Juni um 10 Uhr. Bitte bringen Sie Ihre Versichertenkarte und den ausgefüllten Fragebogen mit.' Welchen Termin hat der Patient?",
+            "options": [
+              "Montag, 13. Juni um 10 Uhr",
+              "Dienstag, 14. Juni um 11 Uhr",
+              "Mittwoch, 15. Juni um 10 Uhr",
+              "Donnerstag, 16. Juni um 9 Uhr"
+            ],
+            "answer": "Mittwoch, 15. Juni um 10 Uhr"
+          },
+          {
+            "id": "B1_ex2_hor_2",
+            "type": "true-false",
+            "question": "Apotheker: 'Ihr Rezept ist fertig. Sie bekommen die Antibiotika für sieben Tage. Nehmen Sie bitte täglich eine Tablette nach dem Essen. Bei Nebenwirkungen melden Sie sich bitte umgehend bei Ihrem Arzt.' Das Medikament soll vor dem Essen eingenommen werden.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex2_hor_3",
+            "type": "mcq",
+            "question": "Durchsage im Wartezimmer: 'Aufmerksamkeit bitte. Herr Schmidt, bitte gehen Sie zu Zimmer 3. Frau Müller wartet bereits seit 15 Minuten - Frau Müller bitte zu Zimmer 1. Und Patienten, die nur ein Rezept brauchen, wenden sich bitte an das Personal an der Anmeldung.' Wer soll zu Zimmer 3 gehen?",
+            "options": [
+              "Frau Müller",
+              "Herr Schmidt",
+              "Der Apotheker",
+              "Der Arzt"
+            ],
+            "answer": "Herr Schmidt"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex2_sch_1",
+            "prompt": "Sie haben einen wichtigen Termin bei Ihrer Krankenkasse vergessen. Sie sollten Ihre Versicherungsunterlagen persönlich abgeben. Schreiben Sie eine formelle E-Mail an Ihre Krankenkasse.\n\n- Sich für das Versäumnis entschuldigen\n- Datum und Uhrzeit des vergessenen Termins nennen\n- Grund für das Fernbleiben erklären (z. B. privater Notfall)\n- Um einen neuen Termin bitten und vorschlagen, wann es passt\n\nSchreiben Sie etwa 100 Wörter.",
+            "wordLimit": 120
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 90,
+        "tasks": [
+          {
+            "id": "B1_ex2_spr_1",
+            "prompt": "Präsentation: \"Meine Erfahrungen mit dem deutschen Gesundheitssystem.\" Sprechen Sie über positive und negative Aspekte.",
+            "talkTime": 120
+          },
+          {
+            "id": "B1_ex2_spr_2",
+            "prompt": "Diskussion mit einem Partner: \"Sollte die Krankenversicherung auch alternative Heilmethoden wie Akupunktur oder Homöopathie bezahlen? Vor- und Nachteile.\"",
+            "talkTime": 120
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "B1_exam_3",
+    "name": "Göthe B1 Practice Exam 3 - Wohnen und Miete",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex3_les_1",
+            "type": "mcq",
+            "question": "Text: 'Die Mietpreise in deutschen Grossstädten sind in den letzten Jahren stark gestiegen. In München, Frankfurt und Stuttgart liegt der Quadratmeterpreis für eine Neubauwohnung oft über 20 Euro. Viele Menschen ziehen deshalb ins Umland, wo die Mieten günstiger sind.' Warum ziehen viele Menschen ins Umland?",
+            "options": [
+              "Weil die Arbeit dort ist",
+              "Weil die Mieten günstiger sind",
+              "Weil die Schulen besser sind",
+              "Weil das Wetter besser ist"
+            ],
+            "answer": "Weil die Mieten günstiger sind"
+          },
+          {
+            "id": "B1_ex3_les_2",
+            "type": "true-false",
+            "question": "Text: 'Bei der Wohnungssuche sollten Mieter auf folgende Punkte achten: die Höhe der Kaution (maximal drei Nettokaltmieten), die Betriebskosten und die Kündigungsfrist. Ein Mietvertrag muss schriftlich abgeschlossen werden.' Die Kaution darf maximal zwei Nettokaltmieten betragen.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex3_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Wegen eines Wasserrohrbruchs muss das gesamte Treppenhaus saniert werden. Die Bauarbeiten dauern voraussichtlich zwei Wochen. Während dieser Zeit kann der Aufzug nicht benutzt werden. Wir bitten um Ihr Verständnis. Ihre Hausverwaltung'",
+            "options": [
+              "Aufzug defekt",
+              "Wasserrohrbruch im Treppenhaus",
+              "Neue Heizung eingebaut",
+              "Balkon gesperrt"
+            ],
+            "answer": "Wasserrohrbruch im Treppenhaus"
+          },
+          {
+            "id": "B1_ex3_les_4",
+            "type": "gap-fill",
+            "question": "Der Vermieter ___ die Wohnung vor der Übergabe noch renovieren.",
+            "options": [
+              "lassen",
+              "lässt",
+              "liess",
+              "gelassen"
+            ],
+            "answer": "lässt"
+          },
+          {
+            "id": "B1_ex3_les_5",
+            "type": "mcq",
+            "question": "Text: 'In einem Mietshaus gibt es bestimmte Regelungen. Von 22 bis 6 Uhr gilt Nachtruhe. An Sonn- und Feiertagen ist das Bohten von Teppichen und laute Musik nicht erlaubt. Haustiere brauchen die Erlaubnis des Vermieters.' Wann beginnt die Nachtruhe?",
+            "options": [
+              "Um 20 Uhr",
+              "Um 21 Uhr",
+              "Um 22 Uhr",
+              "Um 23 Uhr"
+            ],
+            "answer": "Um 22 Uhr"
+          },
+          {
+            "id": "B1_ex3_les_6",
+            "type": "short-answer",
+            "question": "Text: \"In einem Mietshaus gibt es bestimmte Regelungen. Von 22 bis 6 Uhr gilt Nachtruhe. An Sonn- und Feiertagen ist das Bohren von Teppichen und laute Musik nicht erlaubt. Haustiere brauchen die Erlaubnis des Vermieters.\" Wann beginnt die Nachtruhe?",
+            "answer": "um 22 Uhr",
+            "acceptedAnswers": [
+              "um 22 Uhr",
+              "22 Uhr",
+              "um 22:00 Uhr",
+              "22:00 Uhr"
+            ],
+            "points": 1
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 25,
+        "tasks": [
+          {
+            "id": "B1_ex3_hor_1",
+            "type": "mcq",
+            "question": "Makler am Telefon: 'Guten Tag, hier ist Immobilien Schmidt. Ich habe eine interessante Wohnung für Sie. Sie liegt im Stadtteil Schwabing, hat drei Zimmer, 75 Quadratmeter und kostet 1200 Euro warm. Die Wohnung ist ab 1. September frei. Wenn Sie Interesse haben, können wir morgen einen Besichtigungstermin vereinbaren.' Wann ist die Wohnung frei?",
+            "options": [
+              "Ab 1. August",
+              "Ab 1. September",
+              "Ab 1. Oktober",
+              "Ab 1. November"
+            ],
+            "answer": "Ab 1. September"
+          },
+          {
+            "id": "B1_ex3_hor_2",
+            "type": "true-false",
+            "question": "Nachbarin: 'Haben Sie auch den Brief von der Hausverwaltung gelesen? Nächste Woche wird die Heizungsanlage gewartet. Am Dienstag bleibt die Heizung von 9 bis 15 Uhr aus. Am Mittwoch sind die Handwerker noch einmal da, aber dann nur für zwei Stunden am Vormittag.' Am Mittwoch sind die Handwerker für den ganzen Tag da.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex3_hor_3",
+            "type": "mcq",
+            "question": "Vermieter: 'Ich rufe wegen der Nebenkostenabrechnung an. Sie bekommen von mir noch eine Gutschrift von 150 Euro, weil Sie im letzten Jahr weniger Heizung verbraucht haben als erwartet. Die Abrechnung lege ich Ihnen heute in den Briefkasten.' Was bekommt der Mieter vom Vermieter?",
+            "options": [
+              "Eine Nachzahlung von 150 Euro",
+              "Eine Gutschrift von 150 Euro",
+              "Eine neue Heizung",
+              "Eine Wohnungsbesichtigung"
+            ],
+            "answer": "Eine Gutschrift von 150 Euro"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex3_sch_1",
+            "prompt": "Sie möchten in Ihrer Stadt einen bezahlten Sprachkurs besuchen, um sich auf die B1-Prüfung vorzubereiten. Sie haben im Internet eine Volkshochschule (VHS) gefunden. Schreiben Sie eine formelle E-Mail an die VHS.\n\n- Sich vorstellen und den Grund der Anfrage nennen\n- Nach Kursbeginn und Kursdaür fragen\n- Nach den Kosten und Zahlungsmöglichkeiten fragen\n- Fragen, ob es noch freie Plätze gibt\n\nSchreiben Sie etwa 100 Wörter.",
+            "wordLimit": 120
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 90,
+        "tasks": [
+          {
+            "id": "B1_ex3_spr_1",
+            "prompt": "Präsentation: \"Meine Traumwohnung.\" Beschreiben Sie, wo die Wohnung liegt, wie sie aussieht und was Ihnen besonders wichtig ist.",
+            "talkTime": 120
+          },
+          {
+            "id": "B1_ex3_spr_2",
+            "prompt": "Diskussion mit einem Partner: \"Ist es besser, zur Miete zu wohnen oder eine eigene Wohnung zu kaufen? Vor- und Nachteile beider Möglichkeiten.\"",
+            "talkTime": 120
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "B1_exam_4",
+    "name": "Göthe B1 Practice Exam 4 - Reisen und Verkehr",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex4_les_1",
+            "type": "mcq",
+            "question": "Text: 'Die Deutsche Bahn hat ein neues Ticketmodell eingeführt. Das Deutschlandticket kostet 49 Euro im Monat und gilt im gesamten öffentlichen Nahverkehr, also Bussen, Strassenbahnen, U-Bahnen und Regionalzügen. Nicht gültig ist es in ICE- und IC-Zügen.' Wo gilt das Deutschlandticket NICHT?",
+            "options": [
+              "Im Bus",
+              "In der Strassenbahn",
+              "Im Regionalzug",
+              "Im ICE"
+            ],
+            "answer": "Im ICE"
+          },
+          {
+            "id": "B1_ex4_les_2",
+            "type": "true-false",
+            "question": "Text: 'Am Frankfurter Flughafen werden ab sofort alle Abflüge über Terminal 2 abgewickelt. Terminal 1 wird für sechs Monate renoviert. Reisende werden gebeten, mindestens zwei Stunden vor Abflug am Flughafen zu sein.' Die Abflüge sind aktuell über Terminal 1.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex4_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'In vielen deutschen Städten gibt es Carsharing-Angebote. Nutzer können Fahrzeuge per App buchen und pro Minute oder Stunde bezahlen. Eine Studie zeigt, dass Carsharing den öffentlichen Nahverkehr sinnvoll ergänzt.'",
+            "options": [
+              "Autokauf wird billiger",
+              "Carsharing als Ergänzung",
+              "Fahrradfahren wird gefährlicher",
+              "Neue Parkhäuser geplant"
+            ],
+            "answer": "Carsharing als Ergänzung"
+          },
+          {
+            "id": "B1_ex4_les_4",
+            "type": "gap-fill",
+            "question": "Der Zuge ___ um 9 Uhr 15 von Gleis 5 ab.",
+            "options": [
+              "fahrt",
+              "fährt",
+              "gefahren",
+              "Fahrt"
+            ],
+            "answer": "fährt"
+          },
+          {
+            "id": "B1_ex4_les_5",
+            "type": "mcq",
+            "question": "Text: 'Eine Hotelbuchung in Hamburg: Check-in ab 15 Uhr, Check-out bis 11 Uhr. Das Frühstücksbuffet kostet 18 Euro pro Person. Parkplätze sind gegen Gebühr von 12 Euro pro Tag vorhanden. Hunde sind gegen eine Gebühr von 20 Euro pro Nacht erlaubt.' Wie viel kostet das Frühstück?",
+            "options": [
+              "12 Euro pro Person",
+              "15 Euro pro Person",
+              "18 Euro pro Person",
+              "20 Euro pro Person"
+            ],
+            "answer": "18 Euro pro Person"
+          },
+          {
+            "id": "B1_ex4_les_6",
+            "type": "short-answer",
+            "question": "Text: \"Der Zug nach München fährt täglich um 9 Uhr 15 von Gleis 5. Der Fahrpreis beträgt einfach 38 Euro und für Hin- und Rückfahrt 68 Euro. Kinder unter sechs Jahren fahren kostenlos.\" Um wie viel Uhr fährt der Zug?",
+            "answer": "um 9 Uhr 15",
+            "acceptedAnswers": [
+              "um 9 Uhr 15",
+              "9 Uhr 15",
+              "um 9:15 Uhr",
+              "9:15 Uhr",
+              "9.15 Uhr"
+            ],
+            "points": 1
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 25,
+        "tasks": [
+          {
+            "id": "B1_ex4_hor_1",
+            "type": "mcq",
+            "question": "Bahnhofsdurchsage: 'Achtung, Achtung am Bahnsteig 3. Der ICE 782 nach Berlin mit Abfahrt um 14 Uhr 24 hat voraussichtlich 20 Minuten Verspätung. Grund ist eine technische Störung. Wir bitten um Entschuldigung. Der folgende Regionalzug nach Frankfurt hat planmässige Abfahrt um 14 Uhr 45 von Gleis 2.' Wie viel Verspätung hat der ICE?",
+            "options": [
+              "10 Minuten",
+              "15 Minuten",
+              "20 Minuten",
+              "30 Minuten"
+            ],
+            "answer": "20 Minuten"
+          },
+          {
+            "id": "B1_ex4_hor_2",
+            "type": "true-false",
+            "question": "Reisebüroangestellte: 'Wir haben ein tolles Angebot für eine Woche an der Ostsee. Der Preis beinhaltet Hin- und Rückfahrt mit dem Zug, sieben Übernachtungen mit Frühstück und eine Stadtführung. Der Aufenthalt kostet 499 Euro pro Person im Doppelzimmer.' Die Stadtführung ist nicht im Preis enthalten.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex4_hor_3",
+            "type": "mcq",
+            "question": "Freundin per Sprachnachricht: 'Ich habe ein Problem mit meiner Urlaubsbuchung. Ich habe ein Hotel in Wien reserviert, aber versehentlich den falschen Reisezeitraum angegeben. Die Buchung läuft auf den 3. bis 10. Juli, aber ich brauche den 10. bis 17. Juli. Kannst du mir helfen, die Buchung zu stornieren?' Was hat die Freundin falsch gemacht?",
+            "options": [
+              "Den falschen Hotelnamen angegeben",
+              "Die falsche Stadt gebucht",
+              "Den falschen Reisezeitraum angegeben",
+              "Die falsche Personenzahl angegeben"
+            ],
+            "answer": "Den falschen Reisezeitraum angegeben"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex4_sch_1",
+            "prompt": "Sie haben vor drei Monaten ein Abo bei einem Fitnessstudio abgeschlossen. Jetzt haben Sie festgestellt, dass die Öffnungszeiten für Sie nicht passen. Sie möchten den Vertrag kündigen. Schreiben Sie eine formelle Kündigung per E-Mail an das Fitnessstudio.\n\n- Ihre Mitgliedsnummer und den Vertragsbeginn nennen\n- Erklären, warum Sie kündigen (ungenügende Öffnungszeiten)\n- Auf die Kündigungsfrist hinweisen (laut Vertrag vier Wochen)\n- Um eine schriftliche Bestätigung der Kündigung bitten\n\nSchreiben Sie etwa 100 Wörter.",
+            "wordLimit": 120
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 90,
+        "tasks": [
+          {
+            "id": "B1_ex4_spr_1",
+            "prompt": "Präsentation: \"Meine letzte Reise oder mein schönster Urlaub.\" Erzählen Sie, wohin die Reise ging, mit wem Sie unterwegs waren und was besonders schön oder interessant war.",
+            "talkTime": 120
+          },
+          {
+            "id": "B1_ex4_spr_2",
+            "prompt": "Diskussion mit einem Partner: \"Sollte Fliegen teurer werden, um die Umwelt zu schonen? Vor- und Nachteile von hoheren Flugpreisen für die Gesellschaft.\"",
+            "talkTime": 120
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "B1_exam_5",
+    "name": "Göthe B1 Practice Exam 5 - Umwelt und Medien",
+    "passScore": 60,
+    "sections": {
+      "Lesen": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex5_les_1",
+            "type": "mcq",
+            "question": "Text: 'Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoß zu reduzieren.' Was ist kein Beitrag zum Klimaschutz für Privathaushalte?",
+            "options": [
+              "Energiesparen",
+              "Mülltrennung",
+              "Öffentliche Verkehrsmittel nutzen",
+              "Ein eigenes Auto kaufen"
+            ],
+            "answer": "Ein eigenes Auto kaufen"
+          },
+          {
+            "id": "B1_ex5_les_2",
+            "type": "true-false",
+            "question": "Text: 'In Deutschland wird Müll streng getrennt. Bioabfall kommt in die braune Tonne, Papier in die blaue Tonne, Verpackungen in die gelbe Tonne und Restmüll in die schwarze Tonne. Glas wird nach Farben getrennt in Containern gesammelt.' Glas wird in der gelben Tonne entsorgt.",
+            "answer": "false"
+          },
+          {
+            "id": "B1_ex5_les_3",
+            "type": "heading-match",
+            "question": "Welche Überschrift passt? 'Laut einer aktuellen Umfrage informieren sich 65 Prozent der Deutschen täglich über soziale Medien über das Weltgeschehen. Zeitungen und Fernsehen verlieren dagegen an Bedeutung. Besonders junge Menschen zwischen 18 und 29 Jahren nutzen hauptsächlich Online-Nachrichten.'",
+            "options": [
+              "Fernsehen wird beliebter",
+              "Junge Menschen lesen mehr Bücher",
+              "Soziale Medien als Hauptnachrichtenqülle",
+              "Zeitungen im Aufschwung"
+            ],
+            "answer": "Soziale Medien als Hauptnachrichtenqülle"
+          },
+          {
+            "id": "B1_ex5_les_4",
+            "type": "gap-fill",
+            "question": "Um die Umwelt zu schützen, ___ wir weniger Plastik verwenden.",
+            "options": [
+              "sollte",
+              "sollten",
+              "sollen",
+              "soll"
+            ],
+            "answer": "sollten"
+          },
+          {
+            "id": "B1_ex5_les_5",
+            "type": "mcq",
+            "question": "Text: 'Fake News sind ein wachsendes Problem im Internet. Eine Studie zeigt, dass sich falsche Informationen viel schneller verbreiten als wahre Nachrichten. Experten empfehlen, Nachrichten immer kritisch zu prüfen und verschiedene Qüllen zu vergleichen, bevor man sie weiterleitet.' Was empfehlen Experten?",
+            "options": [
+              "Gar keine Nachrichten mehr zu lesen",
+              "Nachrichten kritisch zu prüfen",
+              "Nur soziale Medien zu nutzen",
+              "Fake News zu ignorieren"
+            ],
+            "answer": "Nachrichten kritisch zu prüfen"
+          },
+          {
+            "id": "B1_ex5_les_6",
+            "type": "short-answer",
+            "question": "Text: \"Deutschland möchte bis 2045 klimaneutral sein. Dafür werden erneuerbare Energien wie Wind- und Solarkraft ausgebaut. Auch Privathaushalte können einen Beitrag leisten: Energiesparen, Mülltrennung und die Nutzung öffentlicher Verkehrsmittel helfen, den CO2-Ausstoß zu reduzieren.\" Bis wann möchte Deutschland klimaneutral sein?",
+            "answer": "bis 2045",
+            "acceptedAnswers": [
+              "bis 2045",
+              "2045",
+              "im Jahr 2045"
+            ],
+            "points": 1
+          }
+        ]
+      },
+      "Hören": {
+        "timeLimit": 25,
+        "tasks": [
+          {
+            "id": "B1_ex5_hor_1",
+            "type": "mcq",
+            "question": "Radiomeldung: 'In dieser Woche startet die Stadt Frankfurt eine neue Umweltkampagne. Bürgerinnen und Bürger sind aufgerufen, an einer Baumpflanzaktion im Stadtpark teilzunehmen. Die Aktion findet am Samstag, den 20. Mai von 10 bis 16 Uhr statt. Werkzeug und Setzlinge werden kostenlos zur Verfügung gestellt.' Wann findet die Baumpflanzaktion statt?",
+            "options": [
+              "Am Freitag, den 19. Mai",
+              "Am Samstag, den 20. Mai",
+              "Am Sonntag, den 21. Mai",
+              "Am Montag, den 22. Mai"
+            ],
+            "answer": "Am Samstag, den 20. Mai"
+          },
+          {
+            "id": "B1_ex5_hor_2",
+            "type": "true-false",
+            "question": "Radiointerview: 'Unser Gast ist Frau Dr. Hoffmann von der Umweltbehörde. Sie erklärt: Seit Einführung des Pfandsystems auf Einwegflaschen ist der Anteil der recycelten Flaschen von 72 auf 94 Prozent gestiegen. Das zeigt, dass finanzielle Anreize wirken.' Das Pfandsystem hat das Recycling von Flaschen verbessert.",
+            "answer": "true"
+          },
+          {
+            "id": "B1_ex5_hor_3",
+            "type": "mcq",
+            "question": "Fernsehbericht: 'Eine neue App für Bürgermeldungen erobert die deutschen Stadte. Mit der App können Bürger Schlaglocher, kaputte Strassenlaternen oder illegale Müllablagerungen direkt ans Ordnungsamt melden. In Berlin wurde die App bereits 50.000 Mal genutzt.' Wofür kann die App genutzt werden?",
+            "options": [
+              "Für Restaurantbewertungen",
+              "Für die Meldung von Stadte-Problemen",
+              "Für die Buchung von öffentlichen Verkehrsmitteln",
+              "Für die Bezahlung von Steuern"
+            ],
+            "answer": "Für die Meldung von Stadte-Problemen"
+          }
+        ]
+      },
+      "Schreiben": {
+        "timeLimit": 45,
+        "tasks": [
+          {
+            "id": "B1_ex5_sch_1",
+            "prompt": "Sie haben in der Zeitung gelesen, dass ein Supermarkt in Ihrer Nähe einen Aushilfsjob für den Wochenendverkauf anbietet. Sie haben Interesse und möchten sich bewerben. Schreiben Sie eine formelle Bewerbungs-E-Mail an den Personalleiter.\n\n- Die Stelle nennen, auf die Sie sich bewerben\n- Ihre bisherige Erfahrung im Verkauf kurz beschreiben\n- Warum Sie der richtige Kandidat sind (z. B. flexibel, zuverlässig)\n- Nach den nächsten Schritten im Bewerbungsprozess fragen\n\nSchreiben Sie etwa 100 Wörter.",
+            "wordLimit": 120
+          }
+        ]
+      },
+      "Sprechen": {
+        "prepTime": 90,
+        "tasks": [
+          {
+            "id": "B1_ex5_spr_1",
+            "prompt": "Präsentation: \"Was ich für die Umwelt tü.\" Beschreiben Sie, welche Massnahmen Sie in Ihrem Alltag umsetzen und was man noch verbessern könnte.",
+            "talkTime": 120
+          },
+          {
+            "id": "B1_ex5_spr_2",
+            "prompt": "Diskussion mit einem Partner: \"Soziale Medien: Fluch oder Segen für die Gesellschaft? Sprechen Sie über die Vor- und Nachteile von Plattformen wie Instagram, TikTok und Facebook.\"",
+            "talkTime": 120
+          }
+        ]
+      }
+    }
+  }
+]
