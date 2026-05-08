@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { updateLevelProgress, recordAnswer, completeReading } from '../utils/store';
 import readingData from '../data/reading.json';
 import LevelLock from '../components/LevelLock';
-import { recordPracticeAttempt } from '../utils/practiceProgress';
+import { getPracticeItemStatus, recordPracticeAttempt } from '../utils/practiceProgress';
 
 export default function ReadingPage() {
   const { levelId } = useParams();
@@ -14,6 +14,7 @@ export default function ReadingPage() {
   const [score, setScore] = useState(0);
 
   const ex = exercises[currentEx];
+  const readingStatuses = exercises.map((_, i) => getPracticeItemStatus('reading', `reading_${levelId}_${i}`));
 
   if (exercises.length === 0) {
     return (
@@ -68,13 +69,20 @@ export default function ReadingPage() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
         <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Reading exercise selector">
-          {exercises.map((_, i) => (
+          {exercises.map((_, i) => {
+            const st = readingStatuses[i];
+            let bgColor = 'var(--bg-hover)';
+            if (currentEx === i) bgColor = 'var(--accent)';
+            else if (st.status === 'completed_correct' || st.status === 'mastered') bgColor = '#1a5c3a';
+            else if (st.status === 'completed_incorrect') bgColor = '#5c1a2a';
+            return (
             <button key={i} type="button" aria-label={`Reading exercise ${i + 1}`} aria-current={currentEx === i ? 'true' : undefined} onClick={() => { setCurrentEx(i); setAnswers({}); setSubmitted(false); }}
               className="w-11 h-11 flex-shrink-0 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
-              style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
+              style={{ backgroundColor: bgColor, color: currentEx === i || st.status !== 'unattempted' ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
             </button>
-          ))}
+            );
+          })}
         </div>
       </div>
 

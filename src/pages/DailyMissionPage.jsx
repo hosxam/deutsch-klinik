@@ -9,7 +9,7 @@ import {
   getDueVocabWords
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
-import { isPracticeItemCompleted, shouldExcludeFromDailyPractice } from '../utils/practiceProgress';
+
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
 import {
@@ -648,6 +648,8 @@ export default function DailyMissionPage() {
     if (gq.length > 0) return;
     const all = grammarDataRef.current || [];
     const done = state.levels?.[lvl]?.grammar || [];
+    const ppData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
+    const ppDone = new Set(Object.entries(ppData?.grammar || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id));
     const context = getPracticeContext(lvl, sesh, state);
     let unlockedPool;
     if (hasCurriculumMap(lvl) && !context.isFreePractice) {
@@ -657,7 +659,7 @@ export default function DailyMissionPage() {
     } else {
       unlockedPool = all;
     }
-    const unmastered = unlockedPool.filter((x) => (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
+    const unmastered = unlockedPool.filter((x) => !ppDone.has(x.id) && (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
 
     // Prefer practice from lessons completed earlier in today's generated plan,
@@ -733,10 +735,12 @@ export default function DailyMissionPage() {
     } else {
       introduced = all;
     }
+    const ppData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
+    const ppDone = new Set(Object.entries(ppData?.vocabulary || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id));
     const todayWords = introduced.filter((x) => context.todayLessonIds.includes(getWordLessonId(x)));
     const reviewWords = introduced.filter((x) => !context.todayLessonIds.includes(getWordLessonId(x)));
-    const unseenToday = todayWords.filter((x) => !done.includes(x.id));
-    const unseenReview = reviewWords.filter((x) => !done.includes(x.id));
+    const unseenToday = todayWords.filter((x) => !done.includes(x.id) && !ppDone.has(`${lvl}_${x.id}`));
+    const unseenReview = reviewWords.filter((x) => !done.includes(x.id) && !ppDone.has(`${lvl}_${x.id}`));
     const seenWordIds = new Set();
     const pool = [...unseenToday, ...unseenReview, ...todayWords, ...reviewWords].filter((word) => {
       if (seenWordIds.has(word.id)) return false;
@@ -1223,11 +1227,15 @@ export default function DailyMissionPage() {
     return { label: 'Hard', color: '#ef4444' };
   };
 
+  // Practice progress data for filtering completed items from daily missions
+  const practiceProgressData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
+
   // Current mission items from data (curriculum-aware)
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    let items = (listeningDataRef.current || []).filter(item => !completed.has(item.id));
+    const ppCompleted = new Set((Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
+    let items = (listeningDataRef.current || []).filter(item => !completed.has(item.id) && !ppCompleted.has(`listening_${level}_${item.id}`));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isListeningUnlocked(item.id, s));
@@ -1243,7 +1251,8 @@ export default function DailyMissionPage() {
   const getNextReading = (level) => {
     const s = getState();
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    let items = (readingDataRef.current || []).filter(item => !completed.has(item.id));
+    const ppCompleted = new Set((Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
+    let items = (readingDataRef.current || []).filter(item => !completed.has(item.id) && !ppCompleted.has(`reading_${level}_${item.id}`));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isReadingUnlocked(item.id, s));
@@ -1258,7 +1267,8 @@ export default function DailyMissionPage() {
   const getNextWriting = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.writing || []).map(x => x.id || x.exerciseId || x));
-    let data = writingDataRef.current || [];
+    const ppCompleted = new Set((Object.entries(practiceProgressData?.writing || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
+    let data = (writingDataRef.current || []).filter(item => !ppCompleted.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isWritingUnlocked(item.id, s));
       return data[0] || null;
@@ -1268,7 +1278,8 @@ export default function DailyMissionPage() {
   const getNextSpeaking = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.speaking || []).map(x => x.id || x.exerciseId || x));
-    let data = speakingDataRef.current || [];
+    const ppCompleted = new Set((Object.entries(practiceProgressData?.speaking || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
+    let data = (speakingDataRef.current || []).filter(item => !ppCompleted.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isSpeakingUnlocked(item.id, s));
       return data[0] || null;

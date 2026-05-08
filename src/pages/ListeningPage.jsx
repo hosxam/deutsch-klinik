@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useMemo, useRef } from 'react';
 import { updateLevelProgress, recordAnswer, completeListening } from '../utils/store';
-import { recordPracticeAttempt } from '../utils/practiceProgress';
+import { getPracticeItemStatus, recordPracticeAttempt } from '../utils/practiceProgress';
 import listeningData from '../data/listening.json';
 import LevelLock from '../components/LevelLock';
 import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle, FileAudio } from 'lucide-react';
@@ -353,6 +353,7 @@ export default function ListeningPage() {
 
   // Audio source indicator text
   const sourceLabel = hasAudio ? 'Audio file' : (TTS_AVAILABLE ? 'Browser voice' : 'Unavailable');
+  const listeningStatuses = exercises.map((_, i) => getPracticeItemStatus('listening', `listening_${levelId}_${i}`));
 
   return (
     <LevelLock levelId={levelId}>
@@ -361,13 +362,20 @@ export default function ListeningPage() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
         <Link to={`/level/${levelId}`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
         <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Listening exercise selector">
-          {exercises.map((_, i) => (
+          {exercises.map((_, i) => {
+            const st = listeningStatuses[i];
+            let bgColor = 'var(--bg-hover)';
+            if (currentEx === i) bgColor = 'var(--accent)';
+            else if (st.status === 'completed_correct' || st.status === 'mastered') bgColor = '#1a5c3a';
+            else if (st.status === 'completed_incorrect') bgColor = '#5c1a2a';
+            return (
             <button key={i} type="button" aria-label={`Listening exercise ${i + 1}`} aria-current={currentEx === i ? 'true' : undefined} onClick={() => goToExercise(i)}
               className="w-11 h-11 flex-shrink-0 rounded-lg text-xs font-semibold outline-none focus:ring-2 focus:ring-cyan-400"
-              style={{ backgroundColor: currentEx === i ? 'var(--accent)' : 'var(--bg-hover)', color: currentEx === i ? '#fff' : 'var(--text-secondary)' }}>
+              style={{ backgroundColor: bgColor, color: currentEx === i || st.status !== 'unattempted' ? '#fff' : 'var(--text-secondary)' }}>
               {i + 1}
             </button>
-          ))}
+            );
+          })}
         </div>
       </div>
 
