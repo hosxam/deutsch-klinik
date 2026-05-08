@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 import { setOnboardingState } from '../utils/onboardingState';
+import { PageShell, Card, Button, Badge, ProgressRing, LevelBadge } from '../components/ui';
 
 // ===== 6 Vocabulary Questions (mix A1-C1) =====
 const vocabQuestions = [
@@ -23,7 +24,7 @@ const grammarQuestions = [
   { level: 'B2', question: '___ der fortschreitenden Digitalisierung mussen wir handeln. (in view of)', options: ['Trotz', 'Angesichts', 'Wegen', 'Wahrend'], answer: 'Angesichts' },
 ];
 
-// ===== 6 Reading Comprehension Questions (short German + translation choice) =====
+// ===== 6 Reading Comprehension Questions =====
 const readingQuestions = [
   { level: 'A1', question: '"Der Mann trinkt Wasser." What does this mean?', options: ['The man eats bread', 'The man drinks water', 'The man reads a book', 'The man sleeps'], answer: 'The man drinks water' },
   { level: 'A1', question: '"Die Kinder spielen im Garten." Translation:', options: ['The children play in the garden', 'The children study at school', 'The children eat in the kitchen', 'The children sleep in the room'], answer: 'The children play in the garden' },
@@ -33,7 +34,7 @@ const readingQuestions = [
   { level: 'C1', question: '"In Anbetracht der aktuellen Entwicklung ist eine Neubewertung der Lage erforderlich." Translate:', options: ['The current development requires immediate action', 'A reassessment of the situation is necessary given the current development', 'The development is progressing as expected', 'The situation has been resolved'], answer: 'A reassessment of the situation is necessary given the current development' },
 ];
 
-// ===== 6 Listening-script-based Questions (text describing a scenario) =====
+// ===== 6 Listening-script-based Questions =====
 const listeningQuestions = [
   { level: 'A1', question: 'You hear: "Mein Name ist Anna. Ich komme aus Berlin." What does Anna say?', options: ['She is a doctor from Munich', 'Her name is Anna and she comes from Berlin', 'She is 25 years old', 'She works in a hospital'], answer: 'Her name is Anna and she comes from Berlin' },
   { level: 'A1', question: 'You hear: "Die Praxis hat montags bis freitags von 8 bis 12 Uhr geoffnet." When is the practice open?', options: ['Only on Mondays', 'Monday to Friday 8-12', 'Every day 8-12', 'Monday to Friday 8-5'], answer: 'Monday to Friday 8-12' },
@@ -53,7 +54,6 @@ const selfAssessmentQuestions = [
   { level: null, question: 'How comfortable are you speaking German in conversations?', options: ['Not at all', 'A little', 'Somewhat', 'Very comfortable'], answer: '', isSelfAssessment: true },
 ];
 
-// Scoring map for self-assessment
 const selfAssessmentScore = {
   'Not at all': 0,
   'A little': 1,
@@ -63,7 +63,6 @@ const selfAssessmentScore = {
   'Very confident': 3,
 };
 
-// Combine all questions
 const allQuestions = [
   ...vocabQuestions,
   ...grammarQuestions,
@@ -80,6 +79,7 @@ export default function PlacementTest() {
 
   const q = allQuestions[index];
   const isSelfAssessment = q?.isSelfAssessment;
+  const progressPct = ((index + 1) / allQuestions.length) * 100;
 
   const handleAnswer = (ans) => {
     const newAnswers = { ...answers, [index]: ans };
@@ -94,7 +94,6 @@ export default function PlacementTest() {
   const calculateResult = (ans) => {
     let levelScores = { A1: { correct: 0, total: 0 }, A2: { correct: 0, total: 0 }, B1: { correct: 0, total: 0 }, B2: { correct: 0, total: 0 }, C1: { correct: 0, total: 0 } };
 
-    // Score knowledge questions (not self-assessment)
     const knowledgeQuestions = allQuestions.filter(q => !q.isSelfAssessment);
     knowledgeQuestions.forEach((q, i) => {
       const realIndex = allQuestions.indexOf(q);
@@ -102,7 +101,6 @@ export default function PlacementTest() {
       if (ans[realIndex] === q.answer) levelScores[q.level].correct += 1;
     });
 
-    // Score self-assessment: calculate average across all 6 items
     let selfSum = 0;
     let selfCount = 0;
     const saQuestions = allQuestions.filter(q => q.isSelfAssessment);
@@ -116,7 +114,6 @@ export default function PlacementTest() {
     });
     const selfAvg = selfCount > 0 ? selfSum / selfCount : 0;
 
-    // Determine recommended level
     let recommendedLevel = 'A1';
     for (const lvl of ['A1', 'A2', 'B1', 'B2', 'C1']) {
       if (levelScores[lvl].total > 0 && (levelScores[lvl].correct / levelScores[lvl].total) >= 0.66) {
@@ -124,9 +121,7 @@ export default function PlacementTest() {
       }
     }
 
-    // Boost by self-assessment (if user rates themselves higher)
     if (selfAvg >= 3) {
-      // If they're very comfortable with everything, bump B2->C1, B1->B2, etc
       const lvlOrder = ['A1', 'A2', 'B1', 'B2', 'C1'];
       const currentIdx = lvlOrder.indexOf(recommendedLevel);
       if (currentIdx < 4) {
@@ -136,14 +131,12 @@ export default function PlacementTest() {
       recommendedLevel = 'A2';
     }
 
-    // Save to store
     const state = getState();
     state.placementResult = recommendedLevel;
     state.startLevel = recommendedLevel;
     state.currentLevel = recommendedLevel;
     updateState(state);
 
-    // Save onboarding state
     setOnboardingState({
       startLevel: recommendedLevel,
       targetLevel: recommendedLevel === 'C1' ? 'C1' : (['A1','A2','B1','B2','C1'][['A1','A2','B1','B2','C1'].indexOf(recommendedLevel) + 1] || 'C1'),
@@ -162,86 +155,83 @@ export default function PlacementTest() {
     const targetLevel = result.recommendedLevel === 'C1' ? 'C1' : (lvlOrder[lvlOrder.indexOf(result.recommendedLevel) + 1] || 'C1');
 
     return (
-      <div className="max-w-lg mx-auto text-center py-8 px-4">
-        <div className="text-5xl mb-4">📋</div>
-        <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Placement Complete</h2>
-        <p className="text-lg mb-2">Recommended Level: <strong style={{ color: 'var(--accent)' }}>{result.recommendedLevel}</strong></p>
-        {result.selfAvg > 0 && (
-          <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
-            Self-assessment: {result.selfAvg.toFixed(1)}/3 average
+      <PageShell maxWidth="max-w-lg">
+        <div className="text-center mb-6">
+          <div className="text-5xl mb-4">📋</div>
+          <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Placement Complete</h2>
+          <p className="text-lg mb-2">
+            Recommended Level: <LevelBadge level={result.recommendedLevel} size="lg" />
           </p>
-        )}
-        <p className="text-xs mb-6" style={{ color: 'var(--text-muted)' }}>
-          Your suggested journey: <strong>{result.recommendedLevel}</strong> to <strong>{targetLevel}</strong>
-        </p>
-
-        <div className="space-y-2 mb-6">
-          {Object.entries(result.scores).map(([lvl, s]) => (
-            <div key={lvl} className="flex justify-between p-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)' }}>
-              <span>{lvl}</span>
-              <span style={{ color: s.correct >= s.total * 0.66 ? '#3bff9e' : '#ff3355' }}>{s.correct}/{s.total}</span>
-            </div>
-          ))}
+          {result.selfAvg > 0 && (
+            <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
+              Self-assessment: {result.selfAvg.toFixed(1)}/3 average
+            </p>
+          )}
+          <p className="text-xs mb-6" style={{ color: 'var(--text-muted)' }}>
+            Your suggested journey: <strong>{result.recommendedLevel}</strong> to <strong>{targetLevel}</strong>
+          </p>
         </div>
 
-        <button
-          onClick={handleContinue}
-          className="px-8 py-3 rounded-lg font-semibold text-base"
-          style={{ backgroundColor: 'var(--accent)', color: '#fff' }}
-        >
+        <div className="space-y-2 mb-6">
+          {Object.entries(result.scores).map(([lvl, s]) => {
+            const passed = s.correct >= s.total * 0.66;
+            return (
+              <div key={lvl} className="flex items-center justify-between p-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                <LevelBadge level={lvl} size="sm" />
+                <span style={{ color: passed ? '#3bff9e' : '#ff3355' }}>
+                  {s.correct}/{s.total}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <Button variant="primary" size="lg" className="w-full" onClick={handleContinue}>
           Set Your Study Goals
-        </button>
-      </div>
+        </Button>
+      </PageShell>
     );
   }
 
   return (
-    <div className="max-w-lg mx-auto py-8 px-4">
-      <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>
-        {isSelfAssessment ? 'Self-Assessment' : 'Placement Test'}
-      </h2>
-      {isSelfAssessment ? (
-        <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
-          Tell us about your comfort level with German. This helps us fine-tune your starting point.
-        </p>
-      ) : (
-        <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
-          Answer all 30 questions to find your recommended starting level.
-        </p>
-      )}
+    <PageShell maxWidth="max-w-lg">
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <h2 className="text-xl font-bold" style={{ color: 'var(--accent)' }}>
+            {isSelfAssessment ? 'Self-Assessment' : 'Placement Test'}
+          </h2>
+          {isSelfAssessment ? (
+            <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+              Tell us about your comfort level with German. This helps us fine-tune your starting point.
+            </p>
+          ) : (
+            <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+              Answer all {allQuestions.length} questions to find your recommended starting level.
+            </p>
+          )}
+        </div>
+        <ProgressRing pct={progressPct} size={56} strokeWidth={5} />
+      </div>
+
       <div className="flex items-center gap-2 mb-6">
-        <span className="text-xs font-semibold" style={{ color: 'var(--accent)' }}>{index + 1}/{allQuestions.length}</span>
-        <div className="flex-1 h-1 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
-          <div className="h-full rounded-full transition-all" style={{
-            width: `${((index + 1) / allQuestions.length) * 100}%`,
+        <Badge label={`${index + 1}/${allQuestions.length}`} color="var(--accent)" />
+        <div className="flex-1 h-1.5 rounded-full" style={{ backgroundColor: 'var(--bg-hover)' }}>
+          <div className="h-full rounded-full transition-all duration-500" style={{
+            width: `${progressPct}%`,
             backgroundColor: 'var(--accent)',
           }} />
         </div>
       </div>
 
-      <div className="rounded-xl p-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         {!isSelfAssessment && q.level && (
-          <div className="text-xs mb-2 inline-block px-2 py-0.5 rounded" style={{
-            backgroundColor: q.level === 'A1' ? 'rgba(16,185,129,0.15)' :
-              q.level === 'A2' ? 'rgba(20,184,166,0.15)' :
-              q.level === 'B1' ? 'rgba(245,158,11,0.15)' :
-              q.level === 'B2' ? 'rgba(239,68,68,0.15)' :
-              'rgba(139,92,246,0.15)',
-            color: q.level === 'A1' ? '#10b981' :
-              q.level === 'A2' ? '#14b8a6' :
-              q.level === 'B1' ? '#f59e0b' :
-              q.level === 'B2' ? '#ef4444' :
-              '#8b5cf6',
-          }}>
-            Level {q.level}
+          <div className="mb-3">
+            <LevelBadge level={q.level} size="sm" />
           </div>
         )}
         {isSelfAssessment && (
-          <div className="text-xs mb-2 inline-block px-2 py-0.5 rounded" style={{
-            backgroundColor: 'rgba(139,92,246,0.1)',
-            color: '#8b5cf6',
-          }}>
-            Self-Assessment
+          <div className="mb-3">
+            <Badge label="Self-Assessment" color="#8b5cf6" />
           </div>
         )}
 
@@ -249,17 +239,17 @@ export default function PlacementTest() {
 
         <div className="grid grid-cols-1 gap-2">
           {q.options.map(opt => (
-            <button
+            <Button
               key={opt}
+              variant="secondary"
+              className="w-full text-left"
               onClick={() => handleAnswer(opt)}
-              className="text-left px-4 py-3 rounded-lg text-sm transition-all hover:scale-[1.01]"
-              style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
             >
               {opt}
-            </button>
+            </Button>
           ))}
         </div>
-      </div>
-    </div>
+      </Card>
+    </PageShell>
   );
 }

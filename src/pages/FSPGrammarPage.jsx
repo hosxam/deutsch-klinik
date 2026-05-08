@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Star, ChevronLeft } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, Badge } from '../components/ui';
 
 export default function FSPGrammarPage() {
   const [exercises, setExercises] = useState([]);
@@ -24,20 +25,20 @@ export default function FSPGrammarPage() {
   const filtered = selectedTopic === 'all' ? exercises : exercises.filter(e => e.topic === selectedTopic);
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(168,85,247,0.15)' }}>
-          <Star size={18} style={{ color: '#a855f7' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>Medical Documentation Grammar</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{exercises.length} FSP grammar exercises</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Medical Documentation Grammar"
+        subtitle={`${exercises.length} FSP grammar exercises`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(168,85,247,0.15)' }}>
+            <Star size={18} style={{ color: '#a855f7' }} />
+          </div>
+        }
+      />
 
       {topics.length > 0 && (
         <div className="flex gap-2 mb-4 flex-wrap">
@@ -68,11 +69,9 @@ export default function FSPGrammarPage() {
       ) : (
         <div className="space-y-2">
           {filtered.map(ex => (
-            <div key={ex.id} className="rounded-xl p-3" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={ex.id} className="p-3">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(168,85,247,0.15)', color: '#a855f7' }}>
-                  {ex.topic}
-                </span>
+                <Badge label={ex.topic} color="#a855f7" />
               </div>
               <p className="text-xs mb-2" style={{ color: 'var(--text-primary)' }}>{ex.question}</p>
               {ex.options && (
@@ -107,10 +106,10 @@ export default function FSPGrammarPage() {
                   {ex.explanation}
                 </p>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

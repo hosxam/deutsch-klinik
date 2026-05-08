@@ -1,5 +1,6 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, FeatureCard } from '../components/ui';
 import { getState, getLevelProgress, isExamUnlocked, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
 import '../data/curriculum.json';
@@ -15,6 +16,7 @@ const skills = [
 ];
 
 export default function LevelPage() {
+  const navigate = useNavigate();
   const { levelId } = useParams();
   const [state, setState] = useState(getState());
   const levelData = levelsData.levels.find(l => l.id === levelId);
@@ -27,7 +29,7 @@ export default function LevelPage() {
   }, []);
 
   if (!levelData) {
-    return <div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div>;
+    return <PageShell><div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div></PageShell>;
   }
 
   const prog = state.levels[levelId] || {};
@@ -48,20 +50,15 @@ export default function LevelPage() {
   const missingRequirements = requirements.filter(r => r.current < r.target);
 
   return (
-    <div>
-      {/* Header */}
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg" style={{ backgroundColor: `${levelData.color}20`, color: levelData.color }}>
-          {levelId}
-        </div>
-        <div>
-          <h1 className="text-xl font-bold" style={{ color: levelData.color }}>Level {levelId}</h1>
-          <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{levelData.description}</p>
-        </div>
-      </div>
+    <PageShell>
+      <SectionHeader
+        title={<span className="flex items-center gap-3"><span className="w-10 h-10 rounded-lg inline-flex items-center justify-center font-bold text-lg" style={{ backgroundColor: `${levelData.color}20`, color: levelData.color }}>{levelId}</span> <span style={{ color: levelData.color }}>Level {levelId}</span></span>}
+        subtitle={levelData.description}
+        action={<LevelBadge level={levelId} size="lg" />}
+      />
 
       {/* Structured Lessons Card */}
-      <Link to={`/level/${levelId}/lessons`} className="rounded-xl p-5 mb-6 flex items-center gap-4 transition-all hover:scale-[1.01] group" style={{
+      <Card hover onClick={() => navigate(`/level/${levelId}/lessons`)} className="mb-6 flex items-center gap-4" style={{
         background: `linear-gradient(135deg, ${levelData.color}15, var(--bg-card))`,
         border: `1px solid ${completedLessons.length > 0 ? levelData.color : 'var(--border)'}`,
       }}>
@@ -86,9 +83,10 @@ export default function LevelPage() {
           </div>
           <div className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>done</div>
         </div>
-      </Link>
+      </Card>
 
       {/* Skill Grid */}
+      <SectionHeader title="Skill Modules" subtitle="Practice each area to unlock the exam" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
         {skills.map(skill => {
           const doneCount = getLevelProgress(levelId, skill.key === 'vocabulary' ? 'vocab' : skill.key).length;
@@ -113,10 +111,7 @@ export default function LevelPage() {
           }
           
           return (
-            <Link key={skill.key} to={path} className="rounded-xl p-4 transition-all hover:scale-[1.02] group" style={{
-              backgroundColor: 'var(--bg-card)',
-              border: `1px solid ${displayCount > 0 ? `${skill.color}40` : 'var(--border)'}`,
-            }}>
+            <Card key={skill.key} hover onClick={() => navigate(path)} className="flex flex-col gap-2 p-4" style={{ border: `1px solid ${displayCount > 0 ? `${skill.color}40` : 'var(--border)'}` }}>
               <div className="flex items-center gap-3 mb-2">
                 <skill.icon size={22} style={{ color: skill.color }} />
                 <div>
@@ -131,14 +126,15 @@ export default function LevelPage() {
                 </div>
                 {displayCount} done
               </div>
-            </Link>
+            </Card>
           );
         })}
       </div>
 
       {/* Mini Tests and Exam */}
+      <SectionHeader title="Review & Exam" subtitle="Prepare for your Goethe-style exam" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <Link to={`/level/${levelId}/vocabulary/flashcards`} className="rounded-xl p-4 flex items-center gap-3" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+        <Card hover onClick={() => navigate(`/level/${levelId}/vocabulary/flashcards`)} className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(59,255,158,0.1)' }}>
             <BookMarked size={20} style={{ color: '#3bff9e' }} />
           </div>
@@ -146,10 +142,9 @@ export default function LevelPage() {
             <div className="font-semibold text-sm">Flashcard Review</div>
             <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Spaced repetition vocabulary practice</div>
           </div>
-        </Link>
+        </Card>
 
-        <div className="rounded-xl p-4 flex items-center gap-3" style={{
-          backgroundColor: 'var(--bg-card)',
+        <Card className="flex items-center gap-3" style={{
           border: `1px solid ${examUnlocked ? levelData.color : 'var(--border)'}`,
           opacity: examUnlocked ? 1 : 0.6,
         }}>
@@ -166,22 +161,19 @@ export default function LevelPage() {
             </div>
           </div>
           {examUnlocked && (
-            <Link to={`/level/${levelId}/exam`} className="text-xs px-3 py-1.5 rounded-lg font-semibold" style={{ backgroundColor: levelData.color, color: '#fff' }}>
+            <Button onClick={() => navigate(`/level/${levelId}/exam`)} variant="primary" size="sm" className="shrink-0" style={{ backgroundColor: levelData.color, color: '#fff' }}>
               Start Exam
-            </Link>
+            </Button>
           )}
-        </div>
+        </Card>
       </div>
 
       {/* Missing requirements card — only shown when exam is locked */}
       {!examUnlocked && missingRequirements.length > 0 && (
-        <div className="rounded-xl p-4 mb-4" style={{
-          backgroundColor: 'var(--bg-card)',
-          border: '1px solid #ef4444',
-        }}>
-          <h3 className="font-semibold mb-3" style={{ color: '#ef4444', fontSize: '0.85rem' }}>
-            Complete these to unlock the exam
-          </h3>
+        <Card className="mb-4" style={{ border: '1px solid #ef4444' }}>
+          <SectionHeader
+            title={<span className="flex items-center gap-2" style={{ color: '#ef4444', fontSize: '0.85rem' }}>Complete these to unlock the exam</span>}
+          />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
             {missingRequirements.map(r => (
               <div key={r.label} className="flex items-center justify-between py-1 px-2 rounded" style={{
@@ -194,13 +186,13 @@ export default function LevelPage() {
               </div>
             ))}
           </div>
-        </div>
+        </Card>
       )}
 
       {/* Requirements Progress */}
       {examUnlocked && (
-        <div className="rounded-xl p-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-          <h2 className="font-semibold mb-4" style={{ color: 'var(--accent)' }}>Exam Requirements</h2>
+        <Card>
+          <SectionHeader title="Exam Requirements" />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
             <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
             <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
@@ -209,9 +201,9 @@ export default function LevelPage() {
             <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
             <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
           </div>
-        </div>
+        </Card>
       )}
-    </div>
+    </PageShell>
   );
 }
 

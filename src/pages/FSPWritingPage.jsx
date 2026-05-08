@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { PenTool, ChevronLeft, ChevronDown, ChevronUp, Copy } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, Badge } from '../components/ui';
 
 export default function FSPWritingPage() {
   const [tasks, setTasks] = useState([]);
@@ -20,20 +21,20 @@ export default function FSPWritingPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(255,107,0,0.15)' }}>
-          <PenTool size={18} style={{ color: '#ff6b00' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>Arztbrief / Writing Practice</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{tasks.length} structured medical writing tasks</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Arztbrief / Writing Practice"
+        subtitle={`${tasks.length} structured medical writing tasks`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(255,107,0,0.15)' }}>
+            <PenTool size={18} style={{ color: '#ff6b00' }} />
+          </div>
+        }
+      />
 
       {tasks.length === 0 ? (
         <div className="text-center py-12">
@@ -42,7 +43,7 @@ export default function FSPWritingPage() {
       ) : (
         <div className="space-y-3">
           {tasks.map(t => (
-            <div key={t.id} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={t.id} className="overflow-hidden p-0">
               <button
                 onClick={() => setExpanded(prev => ({ ...prev, [t.id]: !prev[t.id] }))}
                 className="w-full flex items-center justify-between p-3 text-left"
@@ -81,9 +82,7 @@ export default function FSPWritingPage() {
                       <p className="text-xs font-semibold mb-1" style={{ color: '#22c55e' }}>Useful phrases</p>
                       <div className="flex flex-wrap gap-1">
                         {t.usefulPhrases.map((phrase, i) => (
-                          <span key={i} className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(34,197,94,0.1)', color: '#22c55e' }}>
-                            {phrase}
-                          </span>
+                          <Badge key={i} label={phrase} color="#22c55e" />
                         ))}
                       </div>
                     </div>
@@ -96,7 +95,7 @@ export default function FSPWritingPage() {
                     </div>
                   )}
 
-                  <button
+                  <Button
                     onClick={() => {
                       const prompt = `You are an FSP examiner. Evaluate my Arztbrief for:
 Case: ${t.caseTitle}
@@ -112,17 +111,18 @@ Assess:
 Give a corrected version.`;
                       navigator.clipboard.writeText(prompt);
                     }}
-                    className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs transition-colors w-full justify-center"
-                    style={{ backgroundColor: 'rgba(255,107,0,0.1)', color: '#ff6b00', border: '1px solid rgba(255,107,0,0.2)' }}
+                    variant="secondary"
+                    size="sm"
+                    style={{ backgroundColor: 'rgba(255,107,0,0.1)', color: '#ff6b00', border: '1px solid rgba(255,107,0,0.2)', width: '100%' }}
                   >
                     <Copy size={12} /> Copy AI Feedback Prompt
-                  </button>
+                  </Button>
                 </div>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

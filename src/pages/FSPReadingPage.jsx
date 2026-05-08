@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FileText, ChevronLeft, ChevronDown, ChevronUp } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, Badge } from '../components/ui';
 
 export default function FSPReadingPage() {
   const [exercises, setExercises] = useState([]);
@@ -20,20 +21,20 @@ export default function FSPReadingPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(16,185,129,0.15)' }}>
-          <FileText size={18} style={{ color: '#10b981' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>Healthcare Reading</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{exercises.length} FSP reading exercises</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Healthcare Reading"
+        subtitle={`${exercises.length} FSP reading exercises`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(16,185,129,0.15)' }}>
+            <FileText size={18} style={{ color: '#10b981' }} />
+          </div>
+        }
+      />
 
       {exercises.length === 0 ? (
         <div className="text-center py-12">
@@ -42,7 +43,7 @@ export default function FSPReadingPage() {
       ) : (
         <div className="space-y-3">
           {exercises.map(ex => (
-            <div key={ex.id} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={ex.id} className="overflow-hidden p-0">
               <button
                 onClick={() => setExpanded(prev => ({ ...prev, [ex.id]: !prev[ex.id] }))}
                 className="w-full flex items-center justify-between p-3 text-left"
@@ -60,9 +61,7 @@ export default function FSPReadingPage() {
                   {ex.vocabularyFocus && ex.vocabularyFocus.length > 0 && (
                     <div className="flex flex-wrap gap-1">
                       {ex.vocabularyFocus.map((v, i) => (
-                        <span key={i} className="text-[11px] px-2 py-0.5 rounded-full" style={{ backgroundColor: 'rgba(59,130,246,0.1)', color: '#3b82f6' }}>
-                          {v}
-                        </span>
+                        <Badge key={i} label={v} color="#3b82f6" />
                       ))}
                     </div>
                   )}
@@ -82,10 +81,10 @@ export default function FSPReadingPage() {
                   )}
                 </div>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

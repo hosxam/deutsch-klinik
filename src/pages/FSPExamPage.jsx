@@ -4,6 +4,7 @@ import {
   CalendarCheck, ChevronLeft, Clock, Copy, Check, Mic, Square, RotateCcw, ChevronDown, ChevronUp, FileText, MessageSquare,
   Users, Award, AlertTriangle
 } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, Badge } from '../components/ui';
 
 const STAGE_CONFIG = {
   1: { label: 'Anamnesegespraech', icon: 'MessageSquare', timeLimit: 300 },
@@ -303,7 +304,7 @@ export default function FSPExamPage() {
   // === LIST VIEW ===
   if (view === 'list') {
     return (
-      <div className="max-w-4xl mx-auto">
+      <PageShell>
         <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
           <ChevronLeft size={14} /> Back to FSP Hub
         </Link>
@@ -371,7 +372,7 @@ export default function FSPExamPage() {
             })}
           </div>
         )}
-      </div>
+      </PageShell>
     );
   }
 

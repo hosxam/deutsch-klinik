@@ -470,6 +470,7 @@ export default function DailyMissionPage() {
   const refresh = useCallback(() => setLS({ ...getState() }), []);
 
   useEffect(() => {
+    if (dataLoading || dataError) return;
     const goal = getStudyGoal();
     const cs = getState();
     const t = calculateDailyTargets(lvl, cs, goal);
@@ -513,7 +514,7 @@ export default function DailyMissionPage() {
     }
     setMs(m);
     setInitDone(true);
-  }, [lvl]);
+  }, [lvl, dataLoading, dataError]);
 
   const getCm = useCallback(() => mi < ms.length ? ms[mi] : null, [mi, ms]);
   const getMeta = () => { const c = getCm(); return c ? MISSION_META[c.type] : null; };

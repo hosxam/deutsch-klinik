@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 import { clearOnboardingState } from '../utils/onboardingState';
 import { isSupabaseConfigured } from '../lib/supabaseClient';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, Badge } from '../components/ui';
 
 const DAILY_MINUTES_OPTIONS = [15, 30, 45, 60, 90];
 const DAYS_PER_WEEK_OPTIONS = [3, 4, 5, 6, 7];
@@ -101,13 +102,14 @@ export default function SettingsPage() {
   }, [startLevel, targetLevel, dailyMinutes, daysPerWeek]);
 
   return (
-    <div className="max-w-lg mx-auto py-8 px-4">
-      <h1 className="text-2xl font-bold mb-6" style={{ color: 'var(--accent)' }}>
-        Settings
-      </h1>
+    <PageShell maxWidth="max-w-lg">
+      <SectionHeader
+        title="Settings"
+        subtitle="Customize your learning experience"
+      />
 
       {/* Study Goal */}
-      <div className="rounded-xl p-5 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-4">
         <h2 className="text-sm font-semibold mb-3">Study Goal</h2>
 
         <label className="text-xs mb-2 block" style={{ color: 'var(--text-muted)' }}>Target Level</label>
@@ -115,7 +117,7 @@ export default function SettingsPage() {
           {LEVEL_ORDER.map(lvl => (
             <button key={lvl}
               onClick={() => setTargetLevel(lvl)}
-              className="py-2 rounded-lg text-sm font-bold"
+              className="py-2 rounded-lg text-sm font-bold transition-all"
               style={{
                 backgroundColor: targetLevel === lvl ? 'var(--accent)' : 'var(--bg-hover)',
                 color: targetLevel === lvl ? '#fff' : 'var(--text-primary)',
@@ -129,7 +131,7 @@ export default function SettingsPage() {
         <div className="grid grid-cols-5 gap-2 mb-4">
           {DAILY_MINUTES_OPTIONS.map(m => (
             <button key={m} onClick={() => setDailyMinutes(m)}
-              className="py-2 rounded-lg text-sm font-bold"
+              className="py-2 rounded-lg text-sm font-bold transition-all"
               style={{
                 backgroundColor: dailyMinutes === m ? 'var(--accent)' : 'var(--bg-hover)',
                 color: dailyMinutes === m ? '#fff' : 'var(--text-primary)',
@@ -143,7 +145,7 @@ export default function SettingsPage() {
         <div className="grid grid-cols-5 gap-2 mb-3">
           {DAYS_PER_WEEK_OPTIONS.map(d => (
             <button key={d} onClick={() => setDaysPerWeek(d)}
-              className="py-2 rounded-lg text-sm font-bold"
+              className="py-2 rounded-lg text-sm font-bold transition-all"
               style={{
                 backgroundColor: daysPerWeek === d ? 'var(--accent)' : 'var(--bg-hover)',
                 color: daysPerWeek === d ? '#fff' : 'var(--text-primary)',
@@ -159,91 +161,77 @@ export default function SettingsPage() {
           </p>
         )}
 
-        <button onClick={handleSaveGoal}
-          className="w-full py-2.5 rounded-lg font-semibold text-sm"
-          style={{ backgroundColor: saved ? 'rgba(59,255,158,0.2)' : 'var(--accent)',
-            color: saved ? '#3bff9e' : '#fff',
-            border: saved ? '1px solid rgba(59,255,158,0.3)' : 'none' }}
-        >
+        <Button onClick={handleSaveGoal} variant={saved ? 'success' : 'primary'} className="w-full">
           {saved ? 'Saved' : 'Save Goal'}
-        </button>
-      </div>
+        </Button>
+      </Card>
+
+      {/* Level Progress */}
+      <Card className="mb-4">
+        <h2 className="text-sm font-semibold mb-3">Your Level</h2>
+        <div className="flex items-center gap-3">
+          <LevelBadge level={startLevel} size="lg" />
+          <span className="text-xs" style={{ color: 'var(--text-muted)' }}>
+            Starting from &rarr; aiming for{' '}
+            <strong style={{ color: 'var(--accent)' }}>{targetLevel}</strong>
+          </span>
+          <LevelBadge level={targetLevel} size="lg" />
+        </div>
+      </Card>
 
       {/* Actions */}
-      <div className="rounded-xl p-5 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-4">
         <h2 className="text-sm font-semibold mb-3">Actions</h2>
         <div className="space-y-2">
-          <button onClick={handleResetOnboarding}
-            className="w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:scale-[1.005]"
-            style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
-          >
+          <Button onClick={handleResetOnboarding} variant="ghost" className="w-full text-left justify-start">
             <span className="font-semibold">Reset Onboarding</span>
             <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
               Go through the setup wizard again
             </span>
-          </button>
+          </Button>
 
-          <button onClick={handleRetakePlacement}
-            className="w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:scale-[1.005]"
-            style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
-          >
+          <Button onClick={handleRetakePlacement} variant="ghost" className="w-full text-left justify-start">
             <span className="font-semibold">Retake Placement Test</span>
             <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
               Find your recommended starting level again
             </span>
-          </button>
+          </Button>
 
-          <button onClick={() => navigate('/settings/account')}
-            className="w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:scale-[1.005]"
-            style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
-          >
+          <Button onClick={() => navigate('/settings/account')} variant="ghost" className="w-full text-left justify-start">
             <span className="font-semibold">Account & Cloud Sync</span>
             <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
               {isSupabaseConfigured() ? 'Manage cloud backup and sync' : 'Enable cloud sync to save progress online'}
             </span>
-          </button>
+          </Button>
         </div>
-      </div>
+      </Card>
 
       {/* Danger Zone */}
-      <div className="rounded-xl p-5 mb-6" style={{
-        backgroundColor: 'rgba(255,51,85,0.06)',
+      <Card className="mb-6" style={{
+        background: 'rgba(255,51,85,0.06)',
         border: '1px solid rgba(255,51,85,0.2)',
       }}>
         <h2 className="text-sm font-semibold mb-3" style={{ color: '#ff3355' }}>Danger Zone</h2>
         {!showResetConfirm ? (
-          <button onClick={() => setShowResetConfirm(true)}
-            className="w-full px-4 py-3 rounded-lg text-sm font-semibold transition-all"
-            style={{
-              backgroundColor: 'rgba(255,51,85,0.1)',
-              color: '#ff3355',
-              border: '1px solid rgba(255,51,85,0.3)',
-            }}
-          >
+          <Button onClick={() => setShowResetConfirm(true)} variant="danger" className="w-full">
             Reset All Local Progress
-          </button>
+          </Button>
         ) : (
           <div className="text-center">
             <p className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
               This will delete all your progress, including completed lessons, scores, and flashcards. This cannot be undone.
             </p>
             <div className="flex gap-2">
-              <button onClick={() => setShowResetConfirm(false)}
-                className="flex-1 py-2.5 rounded-lg text-sm"
-                style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
-              >
+              <Button onClick={() => setShowResetConfirm(false)} variant="secondary" className="flex-1">
                 Cancel
-              </button>
-              <button onClick={handleResetProgress}
-                className="flex-1 py-2.5 rounded-lg text-sm font-semibold"
-                style={{ backgroundColor: '#ff3355', color: '#fff' }}
-              >
+              </Button>
+              <Button onClick={handleResetProgress} variant="danger" className="flex-1">
                 Yes, Reset Everything
-              </button>
+              </Button>
             </div>
           </div>
         )}
-      </div>
-    </div>
+      </Card>
+    </PageShell>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 import { setOnboardingState } from '../utils/onboardingState';
+import { PageShell, FeatureCard, Card, LevelBadge, Button } from '../components/ui';
 import { Target, ClipboardCheck, BookOpen, ArrowRight, ChevronRight } from 'lucide-react';
 
 const LEVELS = [
@@ -19,7 +20,6 @@ export default function OnboardingPage() {
   const [showLevelPicker, setShowLevelPicker] = useState(false);
 
   const handlePlacementTest = () => {
-    // Mark that onboarding is in progress
     setOnboardingState({ onboardingStarted: true });
     navigate('/placement-test');
   };
@@ -30,7 +30,6 @@ export default function OnboardingPage() {
       ? LEVEL_ORDER[levelIdx + 1]
       : 'C1';
 
-    // Save to store
     const state = getState();
     state.startLevel = levelId;
     state.targetLevel = targetLevel;
@@ -64,7 +63,7 @@ export default function OnboardingPage() {
 
   if (showLevelPicker) {
     return (
-      <div className="max-w-lg mx-auto py-8 px-4">
+      <PageShell maxWidth="max-w-lg">
         <div className="text-center mb-6">
           <div className="text-5xl mb-3">🎯</div>
           <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>
@@ -86,28 +85,24 @@ export default function OnboardingPage() {
                 border: '2px solid ' + lvl.color + '44',
               }}
             >
-              <div>
-                <span className="text-lg font-bold" style={{ color: lvl.color }}>{lvl.id}</span>
-                <span className="text-sm ml-2" style={{ color: 'var(--text-muted)' }}>{lvl.label}</span>
+              <div className="flex items-center gap-3">
+                <LevelBadge level={lvl.id} size="md" />
+                <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{lvl.label}</span>
               </div>
               <ChevronRight size={18} style={{ color: lvl.color }} />
             </button>
           ))}
         </div>
 
-        <button
-          onClick={() => setShowLevelPicker(false)}
-          className="w-full py-2.5 rounded-lg text-sm"
-          style={{ color: 'var(--text-muted)', backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
-        >
+        <Button variant="secondary" className="w-full" onClick={() => setShowLevelPicker(false)}>
           Back
-        </button>
-      </div>
+        </Button>
+      </PageShell>
     );
   }
 
   return (
-    <div className="max-w-2xl mx-auto py-8 px-4">
+    <PageShell maxWidth="max-w-2xl">
       {/* Header */}
       <div className="text-center mb-8">
         <div className="text-5xl mb-3">👋</div>
@@ -120,91 +115,39 @@ export default function OnboardingPage() {
       </div>
 
       {/* Option 1: Placement Test */}
-      <button
+      <FeatureCard
+        title="Take a placement test"
+        description="Answer 30 questions about grammar, vocabulary, and reading to find your perfect starting level. Recommended for new learners."
+        icon={<ClipboardCheck size={28} />}
+        accent="var(--accent)"
         onClick={handlePlacementTest}
-        className="w-full text-left mb-3 rounded-xl p-5 transition-all hover:scale-[1.01]"
-        style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--accent)' }}
-      >
-        <div className="flex items-start gap-4">
-          <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-            style={{ backgroundColor: 'rgba(0,240,255,0.12)' }}
-          >
-            <ClipboardCheck size={24} style={{ color: 'var(--accent)' }} />
-          </div>
-          <div className="flex-1">
-            <h3 className="font-bold text-base" style={{ color: 'var(--text-primary)' }}>
-              Take a placement test
-            </h3>
-            <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-              Answer 30 questions about grammar, vocabulary, and reading to find your perfect starting level.
-              Recommended for new learners.
-            </p>
-            <div className="inline-flex items-center gap-1 mt-2 text-xs font-semibold" style={{ color: 'var(--accent)' }}>
-              Start test <ArrowRight size={12} />
-            </div>
-          </div>
-        </div>
-      </button>
+        className="mb-3"
+      />
 
       {/* Option 2: I know my level */}
-      <button
+      <FeatureCard
+        title="I know my level"
+        description="Already know your German level? Pick it directly and skip the test."
+        icon={<Target size={28} />}
+        accent="#3bff9e"
         onClick={() => setShowLevelPicker(true)}
-        className="w-full text-left mb-3 rounded-xl p-5 transition-all hover:scale-[1.01]"
-        style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}
-      >
-        <div className="flex items-start gap-4">
-          <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-            style={{ backgroundColor: 'rgba(59,255,158,0.12)' }}
-          >
-            <Target size={24} style={{ color: '#3bff9e' }} />
-          </div>
-          <div className="flex-1">
-            <h3 className="font-bold text-base" style={{ color: 'var(--text-primary)' }}>
-              I know my level
-            </h3>
-            <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-              Already know your German level? Pick it directly and skip the test.
-            </p>
-            <div className="inline-flex items-center gap-1 mt-2 text-xs font-semibold" style={{ color: '#3bff9e' }}>
-              Select level <ArrowRight size={12} />
-            </div>
-          </div>
-        </div>
-      </button>
+        className="mb-3"
+      />
 
       {/* Option 3: Start from A1 */}
-      <button
+      <FeatureCard
+        title="Start from A1 (Complete Beginner)"
+        description="Completely new to German? We'll start from absolute basics and work up to C1."
+        icon={<BookOpen size={28} />}
+        accent="#8b5cf6"
         onClick={handleStartFromA1}
-        className="w-full text-left rounded-xl p-5 transition-all hover:scale-[1.01]"
-        style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}
-      >
-        <div className="flex items-start gap-4">
-          <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-            style={{ backgroundColor: 'rgba(139,92,246,0.12)' }}
-          >
-            <BookOpen size={24} style={{ color: '#8b5cf6' }} />
-          </div>
-          <div className="flex-1">
-            <h3 className="font-bold text-base" style={{ color: 'var(--text-primary)' }}>
-              Start from A1 (Complete Beginner)
-            </h3>
-            <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-              Completely new to German? We'll start from absolute basics and work up to C1.
-            </p>
-            <div className="inline-flex items-center gap-1 mt-2 text-xs font-semibold" style={{ color: '#8b5cf6' }}>
-              Start learning <ArrowRight size={12} />
-            </div>
-          </div>
-        </div>
-      </button>
+        className="mb-3"
+      />
 
       {/* Footer */}
       <p className="text-center text-xs mt-6" style={{ color: 'var(--text-muted)' }}>
         You can always change your level later in the dashboard settings.
       </p>
-    </div>
+    </PageShell>
   );
 }

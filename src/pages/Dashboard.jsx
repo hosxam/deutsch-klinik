@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { PageShell, SectionHeader, Card, StatCard, ProgressCard, SkillCard, ActionCard, Button, LevelBadge, ProgressRing, FeatureCard, Badge } from '../components/ui';
 import { getState, getReadinessScores, getCompletedLessons, getWeakTopics, getDueVocabWords, isLevelUnlocked, isExamUnlocked, getCompletedGrammarLessons } from '../utils/store';
 import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, getWeeklyActiveCount, getBestWeeklyActivity, getMostRecentActivity, getActivityRoute, formatRelativeTime, getLocalDateKey } from '../utils/activityStreak';
 import levelsData from '../data/levels.json';
@@ -793,15 +794,14 @@ export default function Dashboard() {
   };
 
   return (
-    <div>
+    <PageShell>
       {/* Today's Study Plan */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="text-base font-bold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
-          <ListOrdered size={18} /> Today's Study Plan
-        </h2>
-        <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
-          Suggested order for {targetLevel} &middot; Complete each step to stay on track
-        </p>
+      <Card className="mb-6">
+        <SectionHeader
+          title={<span className="flex items-center gap-2"><ListOrdered size={18} /> Today's Study Plan</span>}
+          subtitle={`Suggested order for ${targetLevel} · Complete each step to stay on track`}
+        />
+
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-2 mb-4">
           <MiniPlanMetric label="Target" value={`${todayMinutesDone}/${goalEstimate.dailyMinutes} min`} accent={todayMinutesDone >= goalEstimate.dailyMinutes ? '#3bff9e' : '#ffd700'} />
           <MiniPlanMetric label="Remaining" value={`${Math.max(0, goalEstimate.dailyMinutes - todayMinutesDone)} min`} accent="var(--accent)" />
@@ -864,7 +864,7 @@ export default function Dashboard() {
             desc="Medical German exam prep"
           />
         </div>
-      </div>
+      </Card>
 
       {/* Hero section */}
       <div className="rounded-xl p-6 md:p-8 mb-6" style={{ background: 'linear-gradient(135deg, rgba(0,240,255,0.08), rgba(139,92,246,0.08))', border: '1px solid var(--border)' }}>
@@ -908,21 +908,21 @@ export default function Dashboard() {
 
       {/* Stats row */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
-          <StatCard icon={Zap} label="Streak" value={`${currentStreak} day${currentStreak === 1 ? '' : 's'}`} accent="#ff6b00" />
-          <StatCard icon={BarChart3} label="Current Level" value={studyLevel} accent="var(--accent)" />
-          <StatCard icon={Award} label="Total Completed" value={totalCompleted.toString()} accent="#3bff9e" />
-          <StatCard icon={TrendingUp} label="Weekly Focus" value={todaySkill.name} accent="#ff3355" />
-          <StatCard icon={Target} label="Exams Passed" value={Object.values(state.exams).filter(e => e.passed).length.toString()} accent="#8b5cf6" />
-          <StatCard icon={Target} label="Med German" value={state.medicalUnlocked ? 'Unlocked' : 'Locked'} accent={state.medicalUnlocked ? '#3bff9e' : '#54587a'} />
+          <StatCard icon={<Zap size={18} />} label="Streak" value={`${currentStreak} day${currentStreak === 1 ? '' : 's'}`} accent="#ff6b00" />
+          <StatCard icon={<BarChart3 size={18} />} label="Current Level" value={studyLevel} accent="var(--accent)" />
+          <StatCard icon={<Award size={18} />} label="Total Completed" value={totalCompleted.toString()} accent="#3bff9e" />
+          <StatCard icon={<TrendingUp size={18} />} label="Weekly Focus" value={todaySkill.name} accent="#ff3355" />
+          <StatCard icon={<Target size={18} />} label="Exams Passed" value={Object.values(state.exams).filter(e => e.passed).length.toString()} accent="#8b5cf6" />
+          <StatCard icon={<Target size={18} />} label="Med German" value={state.medicalUnlocked ? 'Unlocked' : 'Locked'} accent={state.medicalUnlocked ? '#3bff9e' : '#54587a'} />
       </div>
 
 
 
       {/* Resume Last Activity */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--accent)' }}>
-          <TrendingUp size={18} /> Resume Last Activity
-        </h2>
+      <Card className="mb-6">
+        <SectionHeader
+          title={<span className="flex items-center gap-2"><TrendingUp size={18} /> Resume Last Activity</span>}
+        />
         {recentActivity ? (
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">
             <div className="flex-1">
@@ -966,17 +966,15 @@ export default function Dashboard() {
             </Link>
           </div>
         )}
-      </div>
+      </Card>
 
       {/* Current Level Overview Card */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: levelColors[displayLevel] || 'var(--accent)' }}>
-          <Target size={18} /> Current Level Overview
-        </h2>
-        <div className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
-          Level: <span className="font-bold" style={{ color: levelColors[displayLevel] || 'var(--accent)' }}>{displayLevel}</span>
-          <span className="ml-2">Overall: <span className="font-bold" style={{ color: 'var(--accent)' }}>{overallPct}%</span></span>
-        </div>
+      <Card className="mb-6">
+        <SectionHeader
+          title={<span className="flex items-center gap-2"><Target size={18} /> Current Level Overview</span>}
+          subtitle={<>Level: <span className="font-bold" style={{ color: levelColors[displayLevel] || 'var(--accent)' }}>{displayLevel}</span> <span className="ml-2">Overall: <span className="font-bold" style={{ color: 'var(--accent)' }}>{overallPct}%</span></span></>}
+        />
+
 
         {/* Progress bars */}
         <div className="space-y-2 mb-4">
@@ -1032,7 +1030,7 @@ export default function Dashboard() {
             </Link>
           )}
         </div>
-      </div>
+      </Card>
 
       {/* Study Goal Tracker */}
       <div className="mb-6">
@@ -1040,10 +1038,10 @@ export default function Dashboard() {
       </div>
 
       {/* Recommended Next Session */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: '#8b5cf6' }}>
-          <Lightbulb size={18} /> Recommended Next Session
-        </h2>
+      <Card className="mb-6">
+        <SectionHeader
+          title={<span className="flex items-center gap-2"><Lightbulb size={18} /> Recommended Next Session</span>}
+        />
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <div className="flex-1">
             <div className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
@@ -1062,14 +1060,14 @@ export default function Dashboard() {
             Start Session <Play size={16} />
           </Link>
         </div>
-      </div>
+      </Card>
 
       {/* Account & Cloud Sync */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#8b5cf6' }}>
-            <Settings size={16} /> Account & Cloud Sync
-          </h2>
+          <SectionHeader
+            title={<span className="flex items-center gap-2"><Settings size={16} /> Account & Cloud Sync</span>}
+          />
           <button type="button" onClick={() => toggleCollapsed('accountSync')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
             <ChevronDown size={16} style={{ transform: collapsed.accountSync ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
           </button>
@@ -1100,7 +1098,7 @@ export default function Dashboard() {
             {state.username ? `Signed in as ${state.username}` : 'Not signed in'} &middot; Dashboard settings
           </p>
         )}
-      </div>
+      </Card>
 
       {/* Recent Sessions */}
       <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
@@ -1178,11 +1176,11 @@ export default function Dashboard() {
       </div>
 
       {/* Study Streak Card */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ff6b00' }}>
-            <Flame size={18} /> Study Streak
-          </h2>
+          <SectionHeader
+            title={<span className="flex items-center gap-2"><Flame size={18} /> Study Streak</span>}
+          />
           <button type="button" onClick={() => toggleCollapsed('studyStreak')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
             <ChevronDown size={16} style={{ transform: collapsed.studyStreak ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
           </button>
@@ -1274,14 +1272,14 @@ export default function Dashboard() {
           </div>
         </div>
         </>)}
-      </div>
+      </Card>
 
       {/* Mistake Review Card */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ffaa33' }}>
-            <BookMarked size={18} /> Mistake Review
-          </h2>
+          <SectionHeader
+            title={<span className="flex items-center gap-2"><BookMarked size={18} /> Mistake Review</span>}
+          />
           <button type="button" onClick={() => toggleCollapsed('mistakeReview')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
             <ChevronDown size={16} style={{ transform: collapsed.mistakeReview ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
           </button>
@@ -1332,14 +1330,14 @@ export default function Dashboard() {
             {mistakeReviewData.hasMistakes ? `${mistakeReviewData.total} mistakes` : 'No mistakes recorded.'}
           </p>
         )}
-      </div>
+      </Card>
 
       {/* Quick Action Buttons row */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#8b5cf6' }}>
-            <Zap size={16} /> Quick Actions
-          </h2>
+          <SectionHeader
+            title={<span className="flex items-center gap-2"><Zap size={16} /> Quick Actions</span>}
+          />
           <button type="button" onClick={() => toggleCollapsed('quickActions')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
             <ChevronDown size={16} style={{ transform: collapsed.quickActions ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
           </button>
@@ -1378,7 +1376,7 @@ export default function Dashboard() {
         />
       </div>
         )}
-      </div>
+      </Card>
 
       {/* Next Lesson + Progress section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -1466,11 +1464,11 @@ export default function Dashboard() {
       </div>
 
       {/* Weak Areas */}
-      <div className="rounded-xl p-5 mb-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+      <Card className="mb-6">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-semibold flex items-center gap-2" style={{ color: '#ff3355' }}>
-            <AlertTriangle size={16} /> Weak Areas
-          </h2>
+          <SectionHeader
+            title={<span className="flex items-center gap-2"><AlertTriangle size={16} /> Weak Areas</span>}
+          />
           <button type="button" onClick={() => toggleCollapsed('weakAreas')} className="p-0.5 rounded transition-colors hover:scale-110" style={{ color: 'var(--text-muted)', background: 'none', border: 'none' }}>
             <ChevronDown size={16} style={{ transform: collapsed.weakAreas ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
           </button>
@@ -1516,7 +1514,7 @@ export default function Dashboard() {
             {weakTopics.length > 0 ? `${weakTopics.length} weak areas` : 'No weak areas'}
           </p>
         )}
-      </div>
+      </Card>
 
       {/* Lessons Card */}
       <div className="grid grid-cols-1 gap-3 mb-6">
@@ -1873,7 +1871,7 @@ export default function Dashboard() {
 
       {/* Dev debug panel — only renders in dev mode */}
       {import.meta.env.DEV && <DebugProgressPanel currentLevel={studyLevel} />}
-    </div>
+    </PageShell>
   );
 }
 
@@ -1913,7 +1911,7 @@ function StudyPlanButton({ step, label, to, icon: Icon, accent, desc }) {
   );
 }
 
-function StatCard({ icon: Icon, label, value, accent }) {
+function DashStatCard({ icon: Icon, label, value, accent }) {
   return (
     <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
       <Icon size={18} style={{ color: accent }} />
