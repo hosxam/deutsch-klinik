@@ -1,0 +1,40 @@
+name = "deutsch-klinik-ai-worker"
+main = "src/index.js"
+compatibility_date = "2025-02-14"
+
+# Workers AI binding (Whisper, text generation)
+# Uncomment and set after creating the Workers AI resource:
+# wrangler ai catalog
+# wrangler ai run @cf/openai/whisper --help
+# For production: use `npx wrangler secret put AI_API_KEY`
+# For local: add to .dev.vars
+
+# ============================================================
+# ENVIRONMENT VARIABLES (set via wrangler secret or dashboard)
+# ============================================================
+# AI_API_KEY        - API key for AI providers (OpenAI, etc.)
+# AI_BASE_URL       - Base URL for AI API (default: https://api.openai.com/v1)
+# AI_MODEL          - Model name for text generation (default: gpt-4o-mini)
+# WHISPER_MODEL     - Model name for transcription (default: whisper-1)
+# TTS_MODEL         - Model name for TTS (default: tts-1)
+# TTS_VOICE         - Voice for TTS (default: alloy)
+# MAX_USAGE_PER_IP  - Max daily requests per IP (default: 100)
+# ============================================================
+
+[vars]
+AI_BASE_URL = "https://api.openai.com/v1"
+AI_MODEL = "gpt-4o-mini"
+WHISPER_MODEL = "whisper-1"
+TTS_MODEL = "tts-1"
+TTS_VOICE = "alloy"
+MAX_USAGE_PER_IP = "100"
+
+# Workers AI binding (Cloudflare native AI, alternative to OpenAI API)
+# Uncomment when using Cloudflare Workers AI:
+# [ai]
+# binding = "AI"
+
+# Routes
+# routes = [
+#   { pattern = "api.deutsch-klinik.com/ai/*", zone_id = "your-zone-id" }
+# ]
