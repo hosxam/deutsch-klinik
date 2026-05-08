@@ -530,4 +530,24 @@ const enhancements = {
     lessonDepthVersion: 1,
     trackTags: ["goethe", "full-mastery"],
     remediationTags: ["a2_education_vocab", "a2_modal_verbs_past"],
-    estimatedMinutes
+    estimatedMinutes: 22,
+    commonMistakes: [
+      '"Besichtigung" is a viewing/appointment to see a property.',
+      '"Die Kaution" (security deposit) is always singular.',
+      '"Der Mietvertrag" (rental contract) needs careful reading.',
+      '"Nebenkosten" additional costs beyond rent (heating, water).'
+    ],
+    formsTables: [
+      { title: "Housing vocabulary", rows: [
+        ["die Wohnung","apartment"],["das Haus","house"],
+        ["die Miete","rent"],["die Kaution","security deposit"],
+        ["der Vermieter","landlord"],["der Mieter","tenant"],
+        ["der Mietvertrag","rental contract"]
+      ]}
+    ],
+    miniDrills: [
+      { prompt: 'How do you say "I am looking for an apartment"?', answer: 'Ich suche eine Wohnung.' },
+      { prompt: 'Translate: "The rent is 800 euros warm."', answer: 'Die Miete ist 800 Euro warm.' }
+    ]
+  }
+};

@@ -293,4 +293,5 @@ const newVocabList=[
   {t:'Work',w:'der Arbeitsvertrag',tr:'employment contract',pl:'die Arbeitsverträge',ex:'Ich unterschreibe den Arbeitsvertrag.'},
   {t:'Work',w:'das Gehalt',tr:'salary',pl:'die Gehälter',ex:'Das Gehalt ist gut.'},
   {t:'Work',w:'die Pause',tr:'break',pl:'die Pausen',ex:'Wir haben 30 Minuten Pause.'},
-  {t:'Work',w:'die Besprechung',tr:'meeting',pl
+  {t:'Work',w:'die Besprechung',tr:'meeting',pl:'die Besprechungen',ex:'Die Besprechung beginnt um 9 Uhr.'}
+];

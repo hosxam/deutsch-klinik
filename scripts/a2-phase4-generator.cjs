@@ -506,3 +506,8 @@ const a2LessonEnhancements = {
       ]}
     ],
     miniDrills: [
+      { prompt: 'Translate: "The train is faster than the car"', answer: 'Der Zug ist schneller als das Auto.' }
+    ]
+
+  }
+};

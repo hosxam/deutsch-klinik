@@ -490,4 +490,8 @@ const lessonEnhancements = {
     ],
     miniDrills: [
       { prompt: 'Ask a friend: "Do you have time on Saturday?"', answer: 'Hast du am Samstag Zeit?' },
-      { prompt: 'Say "I would like to invite you."
+      { prompt: 'Say "I would like to invite you."', answer: 'Ich möchte dich einladen.' },
+      { prompt: 'Ask a friend: "Do you have time?"', answer: 'Hast du Zeit?' }
+    ]
+  },
+};
