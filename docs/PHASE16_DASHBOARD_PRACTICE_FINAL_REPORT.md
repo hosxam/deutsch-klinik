@@ -55,6 +55,29 @@ Simplified the dashboard, fixed routing bugs, added a Practice Hub page, updated
 - If missing: shows "Cloud sync is not configured. Progress is saved on this device."
 - If present: shows AuthPanel component + account settings link
 
+### 9. Flashcard SM-2 Scheduling (src/utils/store.js, src/pages/FlashcardPage.jsx)
+
+**Per-rating SM-2 intervals added to `recordVocabAnswer()`:**
+- Again (rating 1): Resets repetitions, interval = 0 (short relearning)
+- Hard (rating 2): 1.2x previous interval, ease -0.15, min 1 day
+- Good (rating 3): Normal SM-2 (1 → 6 → ease-based), ease +0.15
+- Easy (rating 4): 1.3x bonus on all intervals, ease +0.3
+
+**Daily queue in `getDueVocabWords()`:**
+- Priority: due reviews → mistake-heavy cards → new cards (capped at 10)
+- Total queue capped at 25 cards (MAX_DAILY_QUEUE constant)
+- `getDueByDate(wordIds, targetDate)` for Tomorrow's plan filtering
+- `getDailyFlashcardQueue(wordIds)` alias for getDueVocabWords
+
+**FlashcardPage.jsx updated:**
+- 4 rating buttons: Again (red), Hard (amber), Good (green), Easy (cyan)
+- Session summary shows breakdown by rating at end
+- Mini stats bar during session (A/H/G/E counts)
+- getDailyFlashcardQueue used in Due Today filter to cap queue
+
+**Backward compat:** recordVocabAnswer still accepts boolean (true → Good, false → Again)
+All existing callers in DailyMissionPage, MistakeNotebookPage, PracticePage, VocabularyPage work.
+
 ## Routing Bugs Fixed
 
 | Bug | Status |
@@ -76,7 +99,6 @@ Simplified the dashboard, fixed routing bugs, added a Practice Hub page, updated
 | **Total** | **37/37 passed** |
 
 ## Limitations
-- Flashcard SM-2 scheduling improvements were deferred (overlaps with curriculum-level logic)
 - Placement test component kept but hidden — accessible at `/placement-test` if user knows the route
 - Dashboard no longer shows cross-level progress (focused on current level only)
 - Practice Hub does not add new curriculum content — only routes to existing pages

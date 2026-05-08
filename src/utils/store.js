@@ -366,6 +366,12 @@ function updateTopicStatus(topic) {
 
 // ===== VOCABULARY MASTERY (SM-2 Spaced Repetition) =====
 
+/** Max new cards to introduce per session */
+const MAX_NEW_CARDS = 10;
+
+/** Max total cards in a daily queue */
+const MAX_DAILY_QUEUE = 25;
+
 export function getVocabMastery(wordId) {
   return state.vocabularyMastery[wordId] || {
     correct: 0,
@@ -378,13 +384,38 @@ export function getVocabMastery(wordId) {
   };
 }
 
-export function recordVocabAnswer(wordId, isCorrect, meta = {}) {
+/**
+ * Record a flashcard answer with per-rating SM-2 scheduling.
+ * rating: 1=Again, 2=Hard, 3=Good, 4=Easy
+ * Also accepts boolean for backward compatibility (true=Good, false=Again).
+ */
+export function recordVocabAnswer(wordId, rating, meta = {}) {
+  // Backward compat: if boolean, map to rating
+  if (typeof rating === 'boolean') {
+    rating = rating ? 3 : 1;
+  }
   const mastery = getVocabMastery(wordId);
+  const isCorrect = rating >= 3;
   mastery.correct += isCorrect ? 1 : 0;
   mastery.incorrect += isCorrect ? 0 : 1;
 
-  // SM-2 Algorithm
-  if (isCorrect) {
+  // SM-2 with per-rating intervals
+  if (rating === 1) {
+    // Again: reset, schedule 10 min relearning (use today as min interval)
+    mastery.repetitions = 0;
+    mastery.interval = 0;
+    mastery.ease = Math.max(1.3, mastery.ease - 0.2);
+  } else if (rating === 2) {
+    // Hard: 1.2x previous interval but no shorter than 1 day
+    if (mastery.repetitions === 0) {
+      mastery.interval = 1;
+    } else {
+      mastery.interval = Math.max(1, Math.round(mastery.interval * 1.2));
+    }
+    mastery.repetitions += 1;
+    mastery.ease = Math.max(1.3, mastery.ease - 0.15);
+  } else if (rating === 3) {
+    // Good: normal SM-2
     if (mastery.repetitions === 0) {
       mastery.interval = 1;
     } else if (mastery.repetitions === 1) {
@@ -393,15 +424,18 @@ export function recordVocabAnswer(wordId, isCorrect, meta = {}) {
       mastery.interval = Math.round(mastery.interval * mastery.ease);
     }
     mastery.repetitions += 1;
+    mastery.ease = Math.min(3.0, mastery.ease + 0.15);
   } else {
-    mastery.repetitions = 0;
-    mastery.interval = 1;
-    mastery.ease = Math.max(1.3, mastery.ease - 0.2);
-  }
-
-  // Ease factor adjustment
-  if (isCorrect && mastery.repetitions >= 1) {
-    mastery.ease = Math.min(3.0, mastery.ease + 0.1);
+    // Easy: 1.3x bonus on top of SM-2
+    if (mastery.repetitions === 0) {
+      mastery.interval = 3;
+    } else if (mastery.repetitions === 1) {
+      mastery.interval = Math.round(6 * 1.3);
+    } else {
+      mastery.interval = Math.round(mastery.interval * mastery.ease * 1.3);
+    }
+    mastery.repetitions += 1;
+    mastery.ease = Math.min(3.0, mastery.ease + 0.3);
   }
 
   // Calculate due date
@@ -409,7 +443,7 @@ export function recordVocabAnswer(wordId, isCorrect, meta = {}) {
   dueDate.setDate(dueDate.getDate() + mastery.interval);
   mastery.due = getLocalDateKeyFromDate(dueDate);
 
-  // Mark as mastered after 5+ correct with ease >= 2.5
+  // Mark as mastered after 5+ correct
   mastery.mastered = mastery.correct >= 5 && mastery.ease >= 2.5;
 
   state.vocabularyMastery[wordId] = mastery;
@@ -431,10 +465,56 @@ export function recordVocabAnswer(wordId, isCorrect, meta = {}) {
 
 export function getDueVocabWords(wordIds) {
   const today = getLocalDateKey();
+  const dueReview = [];
+  const mistakeCards = [];
+  const newCards = [];
+
+  wordIds.forEach(id => {
+    const m = state.vocabularyMastery[id];
+    if (!m) {
+      // Never seen before = new card
+      newCards.push(id);
+    } else if (!m.mastered || m.due <= today) {
+      // Card is due (not mastered or past due date)
+      if (m.incorrect > m.correct && m.incorrect >= 2) {
+        // More wrong than right = mistake priority
+        mistakeCards.push(id);
+      } else {
+        dueReview.push(id);
+      }
+    }
+  });
+
+  // Queue priority: due reviews first, then mistake cards, then new cards
+  // Cap total at MAX_DAILY_QUEUE, new cards capped at MAX_NEW_CARDS
+  const queue = [];
+  queue.push(...dueReview);
+  if (queue.length < MAX_DAILY_QUEUE) {
+    const mistakeRoom = MAX_DAILY_QUEUE - queue.length;
+    queue.push(...mistakeCards.slice(0, mistakeRoom));
+  }
+  if (queue.length < MAX_DAILY_QUEUE) {
+    const newRoom = Math.min(MAX_NEW_CARDS, MAX_DAILY_QUEUE - queue.length);
+    queue.push(...newCards.slice(0, newRoom));
+  }
+
+  return queue;
+}
+
+/**
+ * Get cards due by a specific future date (for Tomorrow's plan).
+ * Returns cards with due <= targetDate that aren't mastered.
+ */
+export function getDueByDate(wordIds, targetDate) {
   return wordIds.filter(id => {
     const m = state.vocabularyMastery[id];
-    return !m || m.due <= today || !m.mastered;
+    if (!m) return true; // never seen = due by default
+    return !m.mastered || (m.due && m.due <= targetDate);
   });
+}
+
+export function getDailyFlashcardQueue(wordIds) {
+  return getDueVocabWords(wordIds);
 }
 
 export function recordStudyMinutes({ level, type, minutes, id }) {
