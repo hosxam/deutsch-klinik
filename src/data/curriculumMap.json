@@ -15477,19 +15477,28 @@
       "skill": "lesson",
       "title": "Meinung äussern: Medien und Diskussionen",
       "topic": "meinung ussern medien und diskussionen",
-      "estimatedMinutes": 15,
-      "conceptId": "b1_lesson_1",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.opinion.media",
       "taughtConcepts": [
-        "b1_lesson_1"
+        "b1.opinion.media",
+        "b1.subordinate.obwohl"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
       "requiredLessons": [],
       "linkedLessonIds": [
         "B1_lesson_1"
       ],
       "linkedQuestionIds": [],
       "order": 1,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "opinion",
+        "media"
+      ]
     },
     {
       "id": "B1_vocab_les1",
@@ -15787,12 +15796,17 @@
       "skill": "lesson",
       "title": "Umweltschutz im Alltag",
       "topic": "umweltschutz im alltag",
-      "estimatedMinutes": 15,
-      "conceptId": "b1_lesson_2",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.environment.daily",
       "taughtConcepts": [
-        "b1_lesson_2"
+        "b1.environment.daily",
+        "b1.connectors.complex",
+        "b1.damit.clauses"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.environment.basic",
+        "a2.connectors.coordinating"
+      ],
       "requiredLessons": [
         "B1_lesson_1"
       ],
@@ -15801,7 +15815,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 2,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "environment",
+        "connectors"
+      ]
     },
     {
       "id": "B1_vocab_les2",
@@ -16004,12 +16023,17 @@
       "skill": "lesson",
       "title": "Bildung: Schulsystem und Zukunft",
       "topic": "bildung schulsystem und zukunft",
-      "estimatedMinutes": 15,
-      "conceptId": "b1_lesson_3",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.education.future",
       "taughtConcepts": [
-        "b1_lesson_3"
+        "b1.education.system",
+        "b1.comparisons.complex",
+        "b1.indirect.questions"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_2"
       ],
@@ -16018,7 +16042,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 3,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "education",
+        "comparison"
+      ]
     },
     {
       "id": "B1_vocab_les3",
@@ -16212,12 +16241,16 @@
       "skill": "lesson",
       "title": "Kultur: Deutsche Feste und Bräuche",
       "topic": "kultur deutsche feste und bruche",
-      "estimatedMinutes": 15,
-      "conceptId": "b1_lesson_4",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.culture.festivals",
       "taughtConcepts": [
-        "b1_lesson_4"
+        "b1.culture.german.festivals",
+        "b1.konjunktiv2.politeness"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
       "requiredLessons": [
         "B1_lesson_3"
       ],
@@ -16226,7 +16259,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 4,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "culture",
+        "festivals",
+        "konjunktiv"
+      ]
     },
     {
       "id": "B1_vocab_les4",
@@ -16394,12 +16433,16 @@
       "skill": "lesson",
       "title": "Zukunftstechnologien",
       "topic": "zukunftstechnologien",
-      "estimatedMinutes": 15,
-      "conceptId": "b1_lesson_5",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.technology.future",
       "taughtConcepts": [
-        "b1_lesson_5"
+        "b1.future.technology",
+        "b1.futur1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
+      ],
       "requiredLessons": [
         "B1_lesson_4"
       ],
@@ -16408,7 +16451,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 5,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "technology",
+        "future"
+      ]
     },
     {
       "id": "B1_vocab_les5",
@@ -16598,12 +16646,16 @@
       "skill": "lesson",
       "title": "Telefonieren auf Deutsch",
       "topic": "telefonieren auf deutsch",
-      "estimatedMinutes": 18,
-      "conceptId": "b1_lesson_6",
+      "estimatedMinutes": 40,
+      "conceptId": "b1.telephone.formal",
       "taughtConcepts": [
-        "b1_lesson_6"
+        "b1.telephone.communication",
+        "b1.prateritum.haben.sein.modal"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
       "requiredLessons": [
         "B1_lesson_5"
       ],
@@ -16612,7 +16664,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 6,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "telephone",
+        "formal",
+        "prateritum"
+      ]
     },
     {
       "id": "B1_vocab_les6",
@@ -16802,12 +16860,16 @@
       "skill": "lesson",
       "title": "Eine Bewerbung schreiben",
       "topic": "eine bewerbung schreiben",
-      "estimatedMinutes": 18,
-      "conceptId": "b1_lesson_7",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.job.application",
       "taughtConcepts": [
-        "b1_lesson_7"
+        "b1.job.application.formal",
+        "b1.formal.letter.complex"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_6"
       ],
@@ -16816,7 +16878,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 7,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "job",
+        "application",
+        "formal-writing"
+      ]
     },
     {
       "id": "B1_vocab_les7",
@@ -17002,12 +17070,16 @@
       "skill": "lesson",
       "title": "Soziale Medien",
       "topic": "soziale medien",
-      "estimatedMinutes": 18,
-      "conceptId": "b1_lesson_8",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.social.media",
       "taughtConcepts": [
-        "b1_lesson_8"
+        "b1.social.media",
+        "b1.passiv.praesens"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_7"
       ],
@@ -17016,7 +17088,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 8,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "social-media",
+        "media",
+        "passive"
+      ]
     },
     {
       "id": "B1_vocab_les8",
@@ -17204,12 +17282,16 @@
       "skill": "lesson",
       "title": "Umwelt und Natur schützen",
       "topic": "umwelt und natur schtzen",
-      "estimatedMinutes": 18,
-      "conceptId": "b1_lesson_9",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.environment.protection",
       "taughtConcepts": [
-        "b1_lesson_9"
+        "b1.environment.conservation",
+        "b1.umzu.clauses"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
+      ],
       "requiredLessons": [
         "B1_lesson_8"
       ],
@@ -17218,7 +17300,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 9,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "environment",
+        "nature",
+        "purpose"
+      ]
     },
     {
       "id": "B1_vocab_les9",
@@ -17392,12 +17480,16 @@
       "skill": "lesson",
       "title": "Ein Praktikum absolvieren",
       "topic": "ein praktikum absolvieren",
-      "estimatedMinutes": 18,
-      "conceptId": "b1_lesson_10",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.internship",
       "taughtConcepts": [
-        "b1_lesson_10"
+        "b1.internship.experience",
+        "b1.perfekt.complex"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.work.experience",
+        "a2.perfekt.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_9"
       ],
@@ -17406,7 +17498,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 10,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "internship",
+        "work",
+        "perfekt"
+      ]
     },
     {
       "id": "B1_vocab_les10",
@@ -17539,12 +17637,16 @@
       "skill": "lesson",
       "title": "Über Filme diskutieren",
       "topic": "ber filme diskutieren",
-      "estimatedMinutes": 20,
-      "conceptId": "b1_lesson_11",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.film.discussion",
       "taughtConcepts": [
-        "b1_lesson_11"
+        "b1.film.culture",
+        "b1.relative.clauses.nom.acc"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_10"
       ],
@@ -17553,7 +17655,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 11,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "film",
+        "entertainment",
+        "relative-clauses"
+      ]
     },
     {
       "id": "B1_vocab_les11",
@@ -17714,12 +17822,16 @@
       "skill": "lesson",
       "title": "Gesunde Ernährung",
       "topic": "gesunde ernhrung",
-      "estimatedMinutes": 20,
-      "conceptId": "b1_lesson_12",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.nutrition.healthy",
       "taughtConcepts": [
-        "b1_lesson_12"
+        "b1.healthy.nutrition",
+        "b1.relative.clauses.dat.gen"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
       "requiredLessons": [
         "B1_lesson_11"
       ],
@@ -17728,7 +17840,14 @@
       ],
       "linkedQuestionIds": [],
       "order": 12,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "nutrition",
+        "health",
+        "food",
+        "relative-clauses"
+      ]
     },
     {
       "id": "B1_vocab_les12",
@@ -17934,12 +18053,16 @@
       "skill": "lesson",
       "title": "Zukunftspläne",
       "topic": "zukunftsplne",
-      "estimatedMinutes": 20,
-      "conceptId": "b1_lesson_13",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.future.plans",
       "taughtConcepts": [
-        "b1_lesson_13"
+        "b1.future.plans",
+        "b1.konjunktiv2.wishes"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.future.technology",
+        "b1.futur1"
+      ],
       "requiredLessons": [
         "B1_lesson_12"
       ],
@@ -17948,7 +18071,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 13,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "future",
+        "plans",
+        "konjunktiv"
+      ]
     },
     {
       "id": "B1_grammar_les13",
@@ -18081,12 +18210,16 @@
       "skill": "lesson",
       "title": "Eine Wohnung vermieten",
       "topic": "eine wohnung vermieten",
-      "estimatedMinutes": 20,
-      "conceptId": "b1_lesson_14",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.rental.housing",
       "taughtConcepts": [
-        "b1_lesson_14"
+        "b1.rental.housing",
+        "b1.prepositions.fixed.case"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_13"
       ],
@@ -18095,7 +18228,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 14,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "housing",
+        "daily-life"
+      ]
     },
     {
       "id": "B1_vocab_les14",
@@ -18325,12 +18463,16 @@
       "skill": "lesson",
       "title": "Öffentlicher Nahverkehr",
       "topic": "ffentlicher nahverkehr",
-      "estimatedMinutes": 20,
-      "conceptId": "b1_lesson_15",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.public.transport",
       "taughtConcepts": [
-        "b1_lesson_15"
+        "b1.public.transport",
+        "b1.genitive.intro"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "a2.directions"
+      ],
       "requiredLessons": [
         "B1_lesson_14"
       ],
@@ -18339,7 +18481,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 15,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "transport",
+        "daily-life"
+      ]
     },
     {
       "id": "B1_vocab_les15",
@@ -18515,12 +18662,16 @@
       "skill": "lesson",
       "title": "Auf einer Party",
       "topic": "auf einer party",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_16",
+      "estimatedMinutes": 40,
+      "conceptId": "b1.party.social",
       "taughtConcepts": [
-        "b1_lesson_16"
+        "b1.party.social",
+        "b1.reflexive.verbs.extended"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
       "requiredLessons": [
         "B1_lesson_15"
       ],
@@ -18529,7 +18680,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 16,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "social",
+        "party"
+      ]
     },
     {
       "id": "B1_vocab_les16",
@@ -18777,12 +18933,16 @@
       "skill": "lesson",
       "title": "Nachrichten verstehen",
       "topic": "nachrichten verstehen",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_17",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.news.understanding",
       "taughtConcepts": [
-        "b1_lesson_17"
+        "b1.news.understanding",
+        "b1.passiv.prateritum"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
+      ],
       "requiredLessons": [
         "B1_lesson_16"
       ],
@@ -18791,7 +18951,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 17,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "news",
+        "media",
+        "passive"
+      ]
     },
     {
       "id": "B1_vocab_les17",
@@ -18950,12 +19116,16 @@
       "skill": "lesson",
       "title": "Im Restaurant Kritik üben",
       "topic": "im restaurant kritik ben",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_18",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.restaurant.critique",
       "taughtConcepts": [
-        "b1_lesson_18"
+        "b1.restaurant.critique",
+        "b1.complaint.formal"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
       "requiredLessons": [
         "B1_lesson_17"
       ],
@@ -18964,7 +19134,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 18,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "restaurant",
+        "complaint"
+      ]
     },
     {
       "id": "B1_vocab_les18",
@@ -19096,12 +19271,16 @@
       "skill": "lesson",
       "title": "Reisevorbereitungen",
       "topic": "reisevorbereitungen",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_19",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.travel.preparation",
       "taughtConcepts": [
-        "b1_lesson_19"
+        "b1.travel.preparation",
+        "b1.experience.reports"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
       "requiredLessons": [
         "B1_lesson_18"
       ],
@@ -19110,7 +19289,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 19,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "travel",
+        "daily-life"
+      ]
     },
     {
       "id": "B1_vocab_les19",
@@ -19341,12 +19525,16 @@
       "skill": "lesson",
       "title": "Ehrenamtliche Arbeit",
       "topic": "ehrenamtliche arbeit",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_20",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.volunteering",
       "taughtConcepts": [
-        "b1_lesson_20"
+        "b1.volunteering",
+        "b1.ohne.zu.anstatt.zu"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.environment.conservation",
+        "b1.umzu.clauses"
+      ],
       "requiredLessons": [
         "B1_lesson_19"
       ],
@@ -19355,7 +19543,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 20,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "volunteering",
+        "community"
+      ]
     },
     {
       "id": "B1_vocab_les20",
@@ -19526,12 +19719,16 @@
       "skill": "lesson",
       "title": "Studium und Hochschule",
       "topic": "studium und hochschule",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_21",
+      "estimatedMinutes": 55,
+      "conceptId": "b1.university.studies",
       "taughtConcepts": [
-        "b1_lesson_21"
+        "b1.university.studies",
+        "b1.nominalization"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
       "requiredLessons": [
         "B1_lesson_20"
       ],
@@ -19540,7 +19737,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 21,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "education",
+        "university",
+        "academic"
+      ]
     },
     {
       "id": "B1_vocab_les21",
@@ -19719,12 +19922,16 @@
       "skill": "lesson",
       "title": "Bücher und Lesen",
       "topic": "bcher und lesen",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_22",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.reading.literature",
       "taughtConcepts": [
-        "b1_lesson_22"
+        "b1.reading.literature",
+        "b1.relative.clauses.wo.was"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.film.culture",
+        "b1.relative.clauses.nom.acc"
+      ],
       "requiredLessons": [
         "B1_lesson_21"
       ],
@@ -19733,7 +19940,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 22,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "reading",
+        "literature",
+        "culture"
+      ]
     },
     {
       "id": "B1_vocab_les22",
@@ -19905,12 +20118,16 @@
       "skill": "lesson",
       "title": "Sportevents und Wettkämpfe",
       "topic": "sportevents und wettkmpfe",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_23",
+      "estimatedMinutes": 45,
+      "conceptId": "b1.sports.events",
       "taughtConcepts": [
-        "b1_lesson_23"
+        "b1.sports.events",
+        "b1.written.reports"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.sports.vocab",
+        "a2.hobbies"
+      ],
       "requiredLessons": [
         "B1_lesson_22"
       ],
@@ -19919,7 +20136,12 @@
       ],
       "linkedQuestionIds": [],
       "order": 23,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "sports",
+        "events"
+      ]
     },
     {
       "id": "B1_vocab_les23",
@@ -20050,12 +20272,16 @@
       "skill": "lesson",
       "title": "Im Stau stehen",
       "topic": "im stau stehen",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_24",
+      "estimatedMinutes": 40,
+      "conceptId": "b1.traffic.jam",
       "taughtConcepts": [
-        "b1_lesson_24"
+        "b1.traffic.jam",
+        "b1.adjective.endings.consolidation"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
       "requiredLessons": [
         "B1_lesson_23"
       ],
@@ -20064,7 +20290,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 24,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "traffic",
+        "transport",
+        "daily-life"
+      ]
     },
     {
       "id": "B1_vocab_les24",
@@ -20230,12 +20462,16 @@
       "skill": "lesson",
       "title": "Finanzen und Sparen",
       "topic": "finanzen und sparen",
-      "estimatedMinutes": 22,
-      "conceptId": "b1_lesson_25",
+      "estimatedMinutes": 50,
+      "conceptId": "b1.finance.saving",
       "taughtConcepts": [
-        "b1_lesson_25"
+        "b1.finance.saving",
+        "b1.konjunktiv2.unreal"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "a2.money.vocab",
+        "b1.konjunktiv2.wishes"
+      ],
       "requiredLessons": [
         "B1_lesson_24"
       ],
@@ -20244,7 +20480,13 @@
       ],
       "linkedQuestionIds": [],
       "order": 25,
-      "tags": []
+      "tags": [
+        "goethe",
+        "telc",
+        "finance",
+        "saving",
+        "konjunktiv"
+      ]
     },
     {
       "id": "B1_vocab_les25",
