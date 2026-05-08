@@ -35,6 +35,7 @@ const FSPListeningPage = lazy(() => import('./pages/FSPListeningPage'));
 const FSPReadingPage = lazy(() => import('./pages/FSPReadingPage'));
 const FSPGrammarPage = lazy(() => import('./pages/FSPGrammarPage'));
 const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
+const PracticeHubPage = lazy(() => import('./pages/PracticeHubPage'));
 const OnboardingPage = lazy(() => import('./pages/OnboardingPage'));
 const GoalSetupPage = lazy(() => import('./pages/GoalSetupPage'));
 const SettingsPage = lazy(() => import('./pages/SettingsPage'));
@@ -294,6 +295,13 @@ export default function App() {
               <Suspense fallback={<Loading />}>
                 <RouteGuard>
                   <C1ReadinessPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="practice" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <PracticeHubPage />
                 </RouteGuard>
               </Suspense>
             } />

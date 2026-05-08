@@ -114,17 +114,7 @@ export default function OnboardingPage() {
         </p>
       </div>
 
-      {/* Option 1: Placement Test */}
-      <FeatureCard
-        title="Take a placement test"
-        description="Answer 30 questions about grammar, vocabulary, and reading to find your perfect starting level. Recommended for new learners."
-        icon={<ClipboardCheck size={28} />}
-        accent="var(--accent)"
-        onClick={handlePlacementTest}
-        className="mb-3"
-      />
-
-      {/* Option 2: I know my level */}
+      {/* Option 1: I know my level */}
       <FeatureCard
         title="I know my level"
         description="Already know your German level? Pick it directly and skip the test."

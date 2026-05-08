@@ -415,10 +415,10 @@ export default function SpeakingPage() {
           {/* --- Local Audio Recording --- */}
           <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
             <h3 className="text-sm font-semibold mb-2 flex items-center gap-1" style={{ color: 'var(--accent)' }}>
-              <Volume2 size={14} /> Record Your Answer (Local Only)
+              <Volume2 size={14} /> Transcribe Your Answer
             </h3>
             <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
-              Audio stays in your browser and is not sent to AI.
+              Your audio stays in your browser.
             </p>
             {audioSupported ? (
               <div className="flex gap-2 items-center">
@@ -426,19 +426,19 @@ export default function SpeakingPage() {
                   <button onClick={startAudioRecording}
                     className="flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg"
                     style={{ backgroundColor: 'rgba(139,92,246,0.1)', color: '#8b5cf6', border: '1px solid #8b5cf6' }}>
-                    <Mic size={12} /> Start Recording
+                    <Mic size={12} /> Start transcription
                   </button>
                 )}
                 {audioRecorderState === 'recording' && (
                   <button onClick={stopAudioRecording}
                     className="flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg"
                     style={{ backgroundColor: 'rgba(255,51,85,0.1)', color: '#ff3355', border: '1px solid #ff3355' }}>
-                    <StopCircle size={12} /> Stop Recording
+                    <StopCircle size={12} /> Stop transcription
                   </button>
                 )}
                 {audioRecorderState === 'recording' && (
                   <span className="text-xs flex items-center gap-1" style={{ color: '#ff3355' }}>
-                    <span className="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse" /> Recording...
+                    <span className="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse" /> Transcribing...
                   </span>
                 )}
                 {audioUrl && (

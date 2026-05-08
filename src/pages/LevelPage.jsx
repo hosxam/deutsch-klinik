@@ -4,7 +4,7 @@ import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, Featu
 import { getState, getLevelProgress, isExamUnlocked, getCompletedLessons } from '../utils/store';
 import levelsData from '../data/levels.json';
 import '../data/curriculum.json';
-import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap } from 'lucide-react';
+import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap, ArrowRight } from 'lucide-react';
 
 const skills = [
   { key: 'grammar', label: 'Grammar', icon: BookOpen, color: '#00f0ff', desc: 'Articles, cases, tenses, syntax' },
@@ -189,7 +189,7 @@ export default function LevelPage() {
         </Card>
       )}
 
-      {/* Requirements Progress */}
+      {/* Exam Requirements Progress */}
       {examUnlocked && (
         <Card>
           <SectionHeader title="Exam Requirements" />
@@ -201,6 +201,33 @@ export default function LevelPage() {
             <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
             <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
           </div>
+        </Card>
+      )}
+
+      {/* Weak Areas for this level */}
+      {(state.weakAreas || []).filter(w => w.level === levelId || !w.level).length > 0 && (
+        <Card className="mt-4" style={{ border: '1px solid rgba(255,51,85,0.3)' }}>
+          <SectionHeader
+            title={<span className="flex items-center gap-2" style={{ color: '#ff3355', fontSize: '0.85rem' }}>Weak Areas</span>}
+          />
+          <div className="space-y-2">
+            {state.weakAreas
+              .filter(w => w.level === levelId || !w.level)
+              .slice(0, 10)
+              .map((weak, idx) => (
+                <div key={idx} className="flex items-center justify-between py-1.5 px-3 rounded-lg text-xs" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>{weak.topic}</span>
+                  <span className="text-xs" style={{ color: 'var(--text-muted)' }}>{weak.count || 1} {weak.count === 1 ? 'error' : 'errors'}</span>
+                </div>
+              ))}
+          </div>
+          <Link
+            to="/mistake-notebook"
+            className="inline-flex items-center gap-1 mt-3 text-xs font-semibold"
+            style={{ color: '#ffaa33' }}
+          >
+            Review all mistakes <ArrowRight size={14} />
+          </Link>
         </Card>
       )}
     </PageShell>

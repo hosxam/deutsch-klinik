@@ -24,7 +24,7 @@ export default function Layout() {
 
   const navLinks = [
     { to: '/', label: 'Dashboard', icon: Home },
-    { to: `/level/${getState().currentLevel || 'A1'}/daily`, label: 'Practice', icon: Dumbbell },
+    { to: '/practice', label: 'Practice', icon: Dumbbell },
     { to: '/mistake-notebook', label: 'Review', icon: AlertTriangle },
     { to: '/medical-fsp', label: 'FSP', icon: Stethoscope },
     { to: '/resources', label: 'Resources', icon: ExternalLink },

@@ -687,3 +687,16 @@ export function resetAllProgress() {
   state = JSON.parse(JSON.stringify(defaultState));
   saveState(state);
 }
+
+export function getCurrentStudyLevel() {
+  const s = getState();
+  if (s.startLevel) return s.startLevel;
+  if (s.currentLevel) return s.currentLevel;
+  return 'A1';
+}
+
+export function getTargetLevel() {
+  const s = getState();
+  if (s.targetLevel && s.targetLevel !== 'Medical FSP') return s.targetLevel;
+  return 'C1';
+}
