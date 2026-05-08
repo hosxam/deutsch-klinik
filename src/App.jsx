@@ -38,6 +38,7 @@ const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
 const OnboardingPage = lazy(() => import('./pages/OnboardingPage'));
 const GoalSetupPage = lazy(() => import('./pages/GoalSetupPage'));
 const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+const AccountPage = lazy(() => import('./pages/AccountPage'));
 
 // Routes that are allowed during onboarding (before onboardingComplete)
 const ONBOARDING_ALLOWED = [
@@ -172,6 +173,13 @@ export default function App() {
               <Suspense fallback={<Loading />}>
                 <RouteGuard>
                   <SettingsPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="settings/account" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <AccountPage />
                 </RouteGuard>
               </Suspense>
             } />

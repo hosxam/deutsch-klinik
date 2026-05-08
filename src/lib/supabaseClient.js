@@ -20,5 +20,16 @@ if (supabaseUrl && supabaseAnonKey) {
   }
 }
 
+export function getSupabase() {
+  return supabase;
+}
+
+export function isSupabaseConfigured() {
+  return supabase !== null;
+}
+
+// Backward-compatible aliases
 export { supabase };
 export const isSupabaseEnabled = () => supabase !== null;
+
+export { supabaseUrl, supabaseAnonKey };

@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 import { clearOnboardingState } from '../utils/onboardingState';
+import { isSupabaseConfigured } from '../lib/supabaseClient';
 
 const DAILY_MINUTES_OPTIONS = [15, 30, 45, 60, 90];
 const DAYS_PER_WEEK_OPTIONS = [3, 4, 5, 6, 7];
@@ -189,6 +190,16 @@ export default function SettingsPage() {
             <span className="font-semibold">Retake Placement Test</span>
             <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
               Find your recommended starting level again
+            </span>
+          </button>
+
+          <button onClick={() => navigate('/settings/account')}
+            className="w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:scale-[1.005]"
+            style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}
+          >
+            <span className="font-semibold">Account & Cloud Sync</span>
+            <span className="block text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
+              {isSupabaseConfigured() ? 'Manage cloud backup and sync' : 'Enable cloud sync to save progress online'}
             </span>
           </button>
         </div>
