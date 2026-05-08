@@ -1,8 +1,9 @@
-import { lazy, Suspense } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense, useState, useEffect } from 'react';
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
-import { getCurrentProfileName } from './utils/store';
+import { getCurrentProfileName, getState } from './utils/store';
+import { isOnboardingComplete } from './utils/onboardingState';
 import LoginPage from './pages/LoginPage';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
@@ -34,21 +35,103 @@ const FSPListeningPage = lazy(() => import('./pages/FSPListeningPage'));
 const FSPReadingPage = lazy(() => import('./pages/FSPReadingPage'));
 const FSPGrammarPage = lazy(() => import('./pages/FSPGrammarPage'));
 const FSPExamPage = lazy(() => import('./pages/FSPExamPage'));
+const OnboardingPage = lazy(() => import('./pages/OnboardingPage'));
+const GoalSetupPage = lazy(() => import('./pages/GoalSetupPage'));
+const SettingsPage = lazy(() => import('./pages/SettingsPage'));
 
+// Routes that are allowed during onboarding (before onboardingComplete)
+const ONBOARDING_ALLOWED = [
+  '/onboarding',
+  '/placement-test',
+  '/goal-setup',
+];
 
 function Loading() {
+  const [dots, setDots] = useState('');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots(prev => prev.length >= 3 ? '' : prev + '.');
+    }, 400);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div role="status" aria-live="polite" aria-label="Loading page" style={{
       display: 'flex',
+      flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '60vh',
       color: 'var(--text-muted)',
       fontSize: '1.1rem',
+      gap: '12px',
     }}>
-      Loading...
+      <div style={{
+        width: 32,
+        height: 32,
+        border: '3px solid var(--border)',
+        borderTopColor: 'var(--accent)',
+        borderRadius: '50%',
+        animation: 'spin 0.8s linear infinite',
+      }} />
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      <span>Loading{dots}</span>
     </div>
   );
+}
+
+/**
+ * RouteGuard: Protects routes based on onboarding state.
+ * - No profile => LoginPage (handled by parent before this component)
+ * - Not onboarded => redirect to /onboarding (except for onboarding-allowed routes)
+ * - Onboarded but goal not set => redirect to /goal-setup
+ * - Fully onboarded => allow all
+ */
+function RouteGuard({ children }) {
+  const location = useLocation();
+  const profile = getCurrentProfileName();
+
+  // If no profile, this shouldn't render (parent checks), but safety guard
+  if (!profile) return <Navigate to="/" replace />;
+
+  // Safe read: handle corrupted localStorage (invalid JSON, null values, etc.)
+  let state;
+  try {
+    state = getState();
+    // Protect against null/undefined state
+    if (!state || typeof state !== 'object') {
+      state = {};
+    }
+  } catch {
+    // localStorage missing or corrupted - treat as fresh user
+    return <Navigate to="/onboarding" replace />;
+  }
+
+  // Safe read of onboarding flags with proper fallbacks
+  const onboardingComplete = (() => {
+    try {
+      return state.onboardingComplete === true || isOnboardingComplete();
+    } catch {
+      return false;
+    }
+  })();
+
+  const currentPath = location.pathname;
+
+  // If onboarding is complete, allow all routes
+  if (onboardingComplete) {
+    return children;
+  }
+
+  // If NOT onboarded
+  // Allow onboarding routes to render
+  if (ONBOARDING_ALLOWED.includes(currentPath)) {
+    return children;
+  }
+
+  // Everything else: redirect to onboarding
+  return <Navigate to="/onboarding" replace />;
 }
 
 export default function App() {
@@ -61,82 +144,16 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={
               <Suspense fallback={<Loading />}>
-                <Dashboard />
+                <RouteGuard>
+                  <Dashboard />
+                </RouteGuard>
               </Suspense>
             } />
-            <Route path="level/:levelId" element={
+
+            {/* Onboarding routes (exempt from RouteGuard) */}
+            <Route path="onboarding" element={
               <Suspense fallback={<Loading />}>
-                <LevelPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/grammar" element={
-              <Suspense fallback={<Loading />}>
-                <GrammarPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/vocabulary" element={
-              <Suspense fallback={<Loading />}>
-                <VocabularyPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/vocabulary/flashcards" element={
-              <Suspense fallback={<Loading />}>
-                <FlashcardPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/vocabulary/practice" element={
-              <Suspense fallback={<Loading />}>
-                <PracticePage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/reading" element={
-              <Suspense fallback={<Loading />}>
-                <ReadingPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/listening" element={
-              <Suspense fallback={<Loading />}>
-                <ListeningPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/writing" element={
-              <Suspense fallback={<Loading />}>
-                <WritingPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/speaking" element={
-              <Suspense fallback={<Loading />}>
-                <SpeakingPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/exam" element={
-              <Suspense fallback={<Loading />}>
-                <ExamPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/lessons" element={
-              <Suspense fallback={<Loading />}>
-                <LessonsPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/daily" element={
-              <Suspense fallback={<Loading />}>
-                <DailyMissionPage />
-              </Suspense>
-            } />
-            <Route path="level/:levelId/lessons/:lessonId" element={
-              <Suspense fallback={<Loading />}>
-                <LessonDetailPage />
-              </Suspense>
-            } />
-            <Route path="resources" element={
-              <Suspense fallback={<Loading />}>
-                <ResourcesPage />
-              </Suspense>
-            } />
-            <Route path="medical" element={
-              <Suspense fallback={<Loading />}>
-                <MedicalPage />
+                <OnboardingPage />
               </Suspense>
             } />
             <Route path="placement-test" element={
@@ -144,67 +161,211 @@ export default function App() {
                 <PlacementTest />
               </Suspense>
             } />
+            <Route path="goal-setup" element={
+              <Suspense fallback={<Loading />}>
+                <GoalSetupPage />
+              </Suspense>
+            } />
+
+            {/* Settings - allowed only after onboarding */}
+            <Route path="settings" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <SettingsPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+
+            {/* Protected routes */}
+            <Route path="level/:levelId" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <LevelPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/grammar" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <GrammarPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/vocabulary" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <VocabularyPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/vocabulary/flashcards" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <FlashcardPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/vocabulary/practice" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <PracticePage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/reading" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <ReadingPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/listening" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <ListeningPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/writing" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <WritingPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/speaking" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <SpeakingPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/exam" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <ExamPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/lessons" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <LessonsPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/daily" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <DailyMissionPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="level/:levelId/lessons/:lessonId" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <LessonDetailPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="resources" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <ResourcesPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="medical" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <MedicalPage />
+                </RouteGuard>
+              </Suspense>
+            } />
             <Route path="c1-readiness" element={
               <Suspense fallback={<Loading />}>
-                <C1ReadinessPage />
+                <RouteGuard>
+                  <C1ReadinessPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="mistake-notebook" element={
               <Suspense fallback={<Loading />}>
-                <MistakeNotebookPage />
+                <RouteGuard>
+                  <MistakeNotebookPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp" element={
               <Suspense fallback={<Loading />}>
-                <MedicalFSPHubPage />
+                <RouteGuard>
+                  <MedicalFSPHubPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/vocabulary" element={
               <Suspense fallback={<Loading />}>
-                <FSPVocabPage />
+                <RouteGuard>
+                  <FSPVocabPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/anamnese" element={
               <Suspense fallback={<Loading />}>
-                <FSPAnamnesePage />
+                <RouteGuard>
+                  <FSPAnamnesePage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/cases" element={
               <Suspense fallback={<Loading />}>
-                <FSPCasesPage />
+                <RouteGuard>
+                  <FSPCasesPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/presentations" element={
               <Suspense fallback={<Loading />}>
-                <FSPPresentationsPage />
+                <RouteGuard>
+                  <FSPPresentationsPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/writing" element={
               <Suspense fallback={<Loading />}>
-                <FSPWritingPage />
+                <RouteGuard>
+                  <FSPWritingPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/listening" element={
               <Suspense fallback={<Loading />}>
-                <FSPListeningPage />
+                <RouteGuard>
+                  <FSPListeningPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/reading" element={
               <Suspense fallback={<Loading />}>
-                <FSPReadingPage />
+                <RouteGuard>
+                  <FSPReadingPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/grammar" element={
               <Suspense fallback={<Loading />}>
-                <FSPGrammarPage />
+                <RouteGuard>
+                  <FSPGrammarPage />
+                </RouteGuard>
               </Suspense>
             } />
             <Route path="medical-fsp/exams" element={
               <Suspense fallback={<Loading />}>
-                <FSPExamPage />
+                <RouteGuard>
+                  <FSPExamPage />
+                </RouteGuard>
               </Suspense>
             } />
-
           </Route>
         </Routes>
       </HashRouter>

@@ -63,6 +63,16 @@ const defaultState = {
   // Medical German unlocked
   medicalUnlocked: false,
 
+  // ===== ONBOARDING =====
+  onboardingComplete: false,
+  startLevel: null,
+  targetLevel: null,
+  dailyMinutes: 30,
+  daysPerWeek: 5,
+  targetDate: null,
+  estimatedFinishDate: null,
+  goalSetupComplete: false,
+
   // ===== ENHANCED TRACKING (C1 Readiness, Review System) =====
 
   // Completed lesson IDs per level: { A1: ['A1_lesson_1', 'A1_lesson_2'], ... }

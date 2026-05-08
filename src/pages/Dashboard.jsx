@@ -5,7 +5,7 @@ import { collectActivityDates, calculateCurrentStreak, getLast7DaysActivity, get
 import levelsData from '../data/levels.json';
 import dashboardSummary from '../data/dashboardSummary.json';
 import grammarCurriculum from '../data/grammarCurriculum.json';
-import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair } from 'lucide-react';
+import { Zap, Target, BarChart3, Award, TrendingUp, ChevronRight, ChevronDown, Play, BookOpen, Mic, Headphones, PenTool, FileText, ClipboardCheck, AlertTriangle, BookMarked, GraduationCap, CheckCircle, Clock, ArrowRight, ListOrdered, FlaskConical, MessageSquare, Flame, Lightbulb, Settings, Crosshair, CalendarCheck } from 'lucide-react';
 import StudyGoalTracker, { getStudyGoal } from '../components/StudyGoalTracker';
 import DebugProgressPanel from '../components/DebugProgressPanel';
 import AuthPanel from '../components/AuthPanel';
@@ -193,8 +193,12 @@ export default function Dashboard() {
   // === Resume Last Activity ===
   const recentActivity = useMemo(() => getMostRecentActivity(state), [state]);
   const resumeRoute = useMemo(() => getActivityRoute(recentActivity, studyLevel), [recentActivity, studyLevel]);
-  // Target level from study goal, fallback to current level
+  // Target level from store onboarding first, then study goal, fallback to current level
   const targetLevel = useMemo(() => {
+    // Check store for onboarding targetLevel first
+    if (state.targetLevel && state.targetLevel !== 'Medical FSP') {
+      return state.targetLevel;
+    }
     try {
       const goal = getStudyGoal();
       if (goal && goal.targetLevel && goal.targetLevel !== 'Medical FSP') {
@@ -202,7 +206,7 @@ export default function Dashboard() {
       }
     } catch { /* empty */ }
     return studyLevel;
-  }, [studyLevel]);
+  }, [studyLevel, state.targetLevel]);
 
   // === Current Level Overview data ===
   const displayLevel = useMemo(() => {
@@ -244,6 +248,19 @@ export default function Dashboard() {
     const max = Math.max(totalLessons + gcLevel.length + (GRAMMAR_COUNT[displayLevel] || 200) + (VOCAB_COUNT[displayLevel] || 500) + readingTarget + listeningTarget + writingTarget + speakingTarget, 1);
     return Math.min(Math.round((done / max) * 100), 100);
   }, [state, displayLevel]);
+
+  // Estimated finish date from onboarding
+  const estimatedFinishDate = useMemo(() => {
+    if (state.estimatedFinishDate) {
+      try {
+        const d = new Date(state.estimatedFinishDate);
+        if (!isNaN(d.getTime())) {
+          return d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        }
+      } catch { /* empty */ }
+    }
+    return null;
+  }, [state.estimatedFinishDate]);
 
   // === Level overview counts ===
   const overviewData = useMemo(() => {
@@ -862,6 +879,21 @@ export default function Dashboard() {
             <p className="mt-2 font-semibold" style={{ color: 'var(--text-secondary)' }}>
               {currentLevelData?.description || 'Learn German from A1 to C1'}
             </p>
+            {targetLevel && targetLevel !== studyLevel && (
+              <div className="mt-2 flex flex-wrap gap-3">
+                <span className="text-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-lg" style={{ backgroundColor: 'rgba(59,255,158,0.1)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.2)' }}>
+                  <Target size={12} /> Current: <strong>{studyLevel}</strong>
+                </span>
+                <span className="text-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.1)', color: '#8b5cf6', border: '1px solid rgba(139,92,246,0.2)' }}>
+                  <Award size={12} /> Target: <strong>{targetLevel}</strong>
+                </span>
+                {estimatedFinishDate && (
+                  <span className="text-xs inline-flex items-center gap-1.5 px-3 py-1 rounded-lg" style={{ backgroundColor: 'rgba(0,240,255,0.1)', color: 'var(--accent)', border: '1px solid rgba(0,240,255,0.2)' }}>
+                    <CalendarCheck size={12} /> Est. finish: <strong>{estimatedFinishDate}</strong>
+                  </span>
+                )}
+              </div>
+            )}
           </div>
           <div className="flex gap-3 flex-wrap">
             <Link to="/placement-test" className="px-4 py-2 rounded-lg text-sm font-semibold text-white" style={{ background: 'linear-gradient(135deg, var(--accent), var(--accent2))' }}>
