@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState } from '../utils/store';
+import { getState, updateState, updateLevelProgress } from '../utils/store';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
@@ -69,6 +70,16 @@ export default function WritingPage() {
       userAnswer: text,
     }).then((result) => {
       setAiResult(result);
+      // Record via unified practice model
+      const score = result?.score ?? (result?.correctedText ? 8 : 5);
+      recordPracticeAttempt('writing', prompt.id, {
+        correct: score >= 8,
+        score: score,
+        maxScore: 10,
+        level: levelId,
+        topic: prompt.title || 'Writing',
+        userAnswer: text,
+      });
     }).catch((err) => {
       setAiError(err.message);
     }).finally(() => {

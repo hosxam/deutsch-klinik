@@ -1,8 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
-import { updateLevelProgress } from '../utils/store';
+import { updateLevelProgress, recordAnswer, completeReading } from '../utils/store';
 import readingData from '../data/reading.json';
 import LevelLock from '../components/LevelLock';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 
 export default function ReadingPage() {
   const { levelId } = useParams();
@@ -36,7 +37,29 @@ export default function ReadingPage() {
     });
     setScore(s);
     setSubmitted(true);
-    updateLevelProgress(levelId, 'reading', { date: new Date().toISOString(), score: s, total: ex.questions.length });
+    const allCorrect = s === ex.questions.length;
+    const readingId = `reading_${levelId}_${currentEx}`;
+    
+    if (allCorrect) {
+      completeReading(levelId, readingId);
+    } else {
+      // Record wrong answers as mistakes
+      ex.questions.forEach(q => {
+        if (answers[q.id] !== q.answer) {
+          recordAnswer(levelId, readingId, answers[q.id] || '', q.answer, 'reading', false, 'reading');
+        }
+      });
+    }
+    
+    updateLevelProgress(levelId, 'reading', { date: new Date().toISOString(), score: s, total: ex.questions.length, exerciseId: readingId });
+    
+    recordPracticeAttempt('reading', readingId, {
+      correct: allCorrect,
+      score: s,
+      maxScore: ex.questions.length,
+      level: levelId,
+      topic: ex.title || 'Reading',
+    });
   };
   const allAnswered = ex.questions.every(q => answers[q.id] !== undefined);
 

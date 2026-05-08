@@ -9,6 +9,7 @@ import {
   getDueVocabWords
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
+import { isPracticeItemCompleted, shouldExcludeFromDailyPractice } from '../utils/practiceProgress';
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
 import {
@@ -312,10 +313,26 @@ function buildMissions(levelId, state, targets, forceType) {
   return missions;
 }
 
+function ErrorFallback({ message }) {
+  return (
+    <PageShell maxWidth="max-w-2xl">
+      <Card className="text-center" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+        <AlertCircle size={40} style={{ color: '#ff3355', marginBottom: '1rem' }} />
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>Something went wrong</h2>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>{message || 'An unexpected error occurred.'}</p>
+        <Link to="/" style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
+          <Home size={16} /> Go Home
+        </Link>
+      </Card>
+    </PageShell>
+  );
+}
+
 export default function DailyMissionPage() {
   const { levelId } = useParams();
   const lvl = (levelId || '').toUpperCase();
   const [state, setLS] = useState(() => getState());
+  const [fatalError, setFatalError] = useState(null);
   const [sesh, setSesh] = useState(() => loadSession(lvl));
   const [mi, setMi] = useState(0);
   const [ms, setMs] = useState([]);
@@ -1299,6 +1316,22 @@ export default function DailyMissionPage() {
             </Button>
           </Card>
         </PageShell>
+      </LevelLock>
+    );
+  }
+
+  // Safe guard for missing state (remediation dashboard crash fix)
+  if (fatalError) {
+    return (
+      <LevelLock levelId={lvl}>
+        <ErrorFallback message={fatalError} />
+      </LevelLock>
+    );
+  }
+  if (!state || !state.levels || !lvl) {
+    return (
+      <LevelLock levelId={lvl}>
+        <LoadingState message="Loading your profile..." />
       </LevelLock>
     );
   }

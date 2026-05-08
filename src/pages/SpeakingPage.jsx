@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState, recordAnswer } from '../utils/store';
+import { getState, updateState, recordAnswer, updateLevelProgress } from '../utils/store';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 import speakingData from '../data/speaking.json';
 import {
   Mic, Square, Clock, Lightbulb, Copy, ClipboardCheck,
@@ -253,6 +254,18 @@ export default function SpeakingPage() {
         transcript: transcript.trim(),
       });
       setAiResult(result);
+      
+      // Record via unified practice model
+      const score = Number(result?.score) || 0;
+      recordPracticeAttempt('speaking', prompt.id, {
+        correct: score >= 8,
+        score: score,
+        maxScore: 10,
+        level: levelId,
+        topic: prompt.title || 'Speaking',
+        userAnswer: transcript || '[speaking]',
+        correctAnswer: result?.correctedTranscript || result?.strongerAnswer || '',
+      });
     } catch (err) {
       setAiError(err.message);
     } finally {

@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useCallback } from 'react';
-import {  recordVocabAnswer, updateLevelProgress } from '../utils/store';
+import { recordVocabAnswer, updateLevelProgress, getVocabMastery, getState } from '../utils/store';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
 import {
@@ -201,7 +202,7 @@ export default function PracticePage() {
   const [topicSearch, setTopicSearch] = useState('');
   const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
   const [topicHighlightedIndex, setTopicHighlightedIndex] = useState(0);
-  const [questionCount, setQuestionCount] = useState(20);
+  const [questionCount, setQuestionCount] = useState(10);
 
   // Available topics for the selected level
   const availableTopics = useMemo(() => getTopics(selectedLevel), [selectedLevel]);
@@ -292,6 +293,19 @@ export default function PracticePage() {
     if (sourceWord && sourceWord.id) {
       const wordId = `${sourceWord._level || selectedLevel}_${sourceWord.id}`;
       recordVocabAnswer(wordId, isCorrect);
+    }
+
+    // Also record via unified practice progress model
+    if (currentQ && currentQ.id) {
+      recordPracticeAttempt('vocab', currentQ.id, {
+        correct: isCorrect,
+        score: isCorrect ? 1 : 0,
+        maxScore: 1,
+        level: selectedLevel,
+        topic: currentQ.sourceWord?.topic || 'Vocabulary',
+        userAnswer: userAnswer,
+        correctAnswer: currentQ.answer,
+      });
     }
   };
 
@@ -484,7 +498,7 @@ export default function PracticePage() {
               onChange={e => setQuestionCount(Number(e.target.value))}
               style={s.select}
             >
-              {[10, 20, 30, 50].map(n => (
+              {[5, 10, 15, 20, 25].map(n => (
                 <option key={n} value={n}>{n}</option>
               ))}
             </select>

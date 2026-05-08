@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentProfileName, getState, signOutProfile, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, GraduationCap, Home, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle, Dumbbell, Settings } from 'lucide-react';
+import ErrorBoundary from './ErrorBoundary';
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -67,7 +68,7 @@ export default function Layout() {
               <select
                 aria-label="Select level"
                 value={activeLevel}
-                onChange={(e) => navigate(`/level/${e.target.value}`)}
+                onChange={(e) => { const val = e.target.value; if (['A1','A2','B1','B2','C1'].includes(val)) { navigate(`/level/${val}`); } }}
                 className="px-3 py-1.5 rounded-lg text-sm"
                 style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
               >
@@ -158,7 +159,7 @@ export default function Layout() {
             <select
               aria-label="Select level"
               value={activeLevel}
-              onChange={(e) => { navigate(`/level/${e.target.value}`); setMenuOpen(false); }}
+              onChange={(e) => { const val = e.target.value; if (['A1','A2','B1','B2','C1'].includes(val)) { navigate(`/level/${val}`); } setMenuOpen(false); }}
               className="w-full mb-2 px-3 py-2 rounded-lg text-sm"
               style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
             >
@@ -195,7 +196,9 @@ export default function Layout() {
 
       {/* Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
-        <Outlet />
+        <ErrorBoundary>
+          <Outlet />
+        </ErrorBoundary>
       </main>
     </div>
   );

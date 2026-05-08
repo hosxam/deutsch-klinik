@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { updateLevelProgress, recordAnswer } from '../utils/store';
+import { updateLevelProgress, recordAnswer, completeListening } from '../utils/store';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 import listeningData from '../data/listening.json';
 import LevelLock from '../components/LevelLock';
 import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle, FileAudio } from 'lucide-react';
@@ -290,7 +291,23 @@ export default function ListeningPage() {
     setScore(s);
     setSubmitted(true);
     setShowTranscript(true);
-    updateLevelProgress(levelId, 'listening', { date: new Date().toISOString(), score: s, total: ex.questions.length });
+    
+    const allCorrect = s === ex.questions.length;
+    const listeningId = `listening_${levelId}_${ex.id || currentEx}`;
+    
+    if (allCorrect) {
+      completeListening(levelId, listeningId);
+    }
+    
+    updateLevelProgress(levelId, 'listening', { date: new Date().toISOString(), score: s, total: ex.questions.length, exerciseId: listeningId });
+    
+    recordPracticeAttempt('listening', listeningId, {
+      correct: allCorrect,
+      score: s,
+      maxScore: ex.questions.length,
+      level: levelId,
+      topic: ex.title || 'Listening',
+    });
   };
 
   // Show transcript pre-submit when both TTS and audio files are unavailable

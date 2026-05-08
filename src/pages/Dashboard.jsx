@@ -102,7 +102,7 @@ export default function Dashboard() {
         </div>
         <div className="rounded-xl p-4 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderTop: '3px solid #8b5cf6' }}>
           <BarChart3 size={18} style={{ color: '#8b5cf6' }} className="mb-2" />
-          <div className="text-3xl font-bold mb-1" style={{ color: '#8b5cf6' }}>{Object.values(state.exams).filter(e => e.passed).length}</div>
+          <div className="text-3xl font-bold mb-1" style={{ color: '#8b5cf6' }}>{Object.values(state.exams || {}).filter(e => e?.passed).length}</div>
           <div className="text-xs" style={{ color: 'var(--text-muted)' }}>Exams Passed</div>
         </div>
         <div className="rounded-xl p-4 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderTop: '3px solid #f59e0b' }}>
