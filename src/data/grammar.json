@@ -13528,7 +13528,10 @@
       "answer": "der",
       "explanation": "Der Mann is the subject, so nominative relative pronoun 'der' is correct. Der Mann, der hier arbeitet ...",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.general"
     },
     {
       "id": "B1_gr_2",
@@ -13545,7 +13548,10 @@
       "answer": "die",
       "explanation": "Die Frau is feminine, relative pronoun 'die' for nominative/accusative. Die Frau, die ich kenne ...",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.general"
     },
     {
       "id": "B1_gr_3",
@@ -13562,7 +13568,10 @@
       "answer": "zu lernen",
       "explanation": "After versuchen (to try), use zu + infinitive. Ich versuche, Deutsch zu lernen.",
       "lessonId": "B1_lesson_19",
-      "taughtInLessonId": "B1_lesson_5"
+      "taughtInLessonId": "B1_lesson_5",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_4",
@@ -13579,7 +13588,10 @@
       "answer": "wird",
       "explanation": "Passiv Präsens: werden (conjugated) + Partizip II. Der Patient wird vom Arzt behandelt.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_5",
@@ -13596,7 +13608,10 @@
       "answer": "wird",
       "explanation": "Passiv Präsens: werden + Partizip II. Die Operation wird vom Chirurgen durchgeführt.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_6",
@@ -13613,7 +13628,10 @@
       "answer": "hätte",
       "explanation": "Konjunktiv II of haben is hätte. Used for unreal conditionals.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_7",
@@ -13630,7 +13648,10 @@
       "answer": "Könnten",
       "explanation": "Könnten is Konjunktiv II of können, used for polite reqüsts: Könnten Sie mir bitte helfen?",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_8",
@@ -13640,7 +13661,11 @@
       "prompt": "Correct the word order: 'Er fragt wo ist der Bahnhof.'",
       "answer": "Er fragt, wo der Bahnhof ist.",
       "explanation": "In indirect questions, the verb gös to the end. Er fragt, wo der Bahnhof ist.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_9",
@@ -13657,7 +13682,10 @@
       "answer": "Obwohl",
       "explanation": "Trotzdem (nevertheless) starts a main clause with verb position 2.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_11",
@@ -13673,7 +13701,11 @@
       ],
       "answer": "dem",
       "explanation": "Geben takes dative for indirect object. Patient is masculine: dem Patienten.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_12",
@@ -13689,7 +13721,11 @@
       ],
       "answer": "des",
       "explanation": "Genitive masculine: des Patienten. Das Zimmer des Patienten ist sauber.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_13",
@@ -13706,7 +13742,10 @@
       "answer": "sei",
       "explanation": "Konjunktiv I for indirect speech: er sei (he supposedly is).",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_14",
@@ -13722,7 +13761,11 @@
       ],
       "answer": "um",
       "explanation": "um...zu expresses purpose (in order to). Ich lerne Deutsch, um in Deutschland zu arbeiten.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_15",
@@ -13738,7 +13781,11 @@
       ],
       "answer": "große",
       "explanation": "After der-word (der): adjective ends in -e in nominative masculine. Der große Mann.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_17",
@@ -13754,7 +13801,11 @@
       ],
       "answer": "untersuchte",
       "explanation": "Präteritum of untersuchen: untersuchte. Used in written narrative past.",
-      "lessonId": "B1_lesson_13"
+      "lessonId": "B1_lesson_13",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_18",
@@ -13770,7 +13821,11 @@
       ],
       "answer": "war",
       "explanation": "Präteritum of sein is war. Used for storytelling: Es war einmal ...",
-      "lessonId": "B1_lesson_13"
+      "lessonId": "B1_lesson_13",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_19",
@@ -13786,7 +13841,11 @@
       ],
       "answer": "mir",
       "explanation": "Geben takes dative for indirect object: mir (to me). Kannst du mir das Buch geben?",
-      "lessonId": "B1_lesson_8"
+      "lessonId": "B1_lesson_8",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.pronouns.general"
     },
     {
       "id": "B1_gr_20",
@@ -13802,7 +13861,11 @@
       ],
       "answer": "als",
       "explanation": "Als is used for inequality comparisons (bigger than).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_22",
@@ -13813,7 +13876,10 @@
       "answer": "Ich lerne Deutsch, weil ich in Deutschland arbeiten will.",
       "explanation": "With weil, the conjugated verb gös to the end.",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.weil"
     },
     {
       "id": "B1_gr_23",
@@ -13830,7 +13896,10 @@
       "answer": "dass",
       "explanation": "dass introduces a noun clause (that). Verb gös to end.",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.dass"
     },
     {
       "id": "B1_gr_24",
@@ -13841,7 +13910,10 @@
       "answer": "Ich denke, dass das richtig ist.",
       "explanation": "After dass, the conjugated verb gös to the end.",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.dass"
     },
     {
       "id": "B1_gr_25",
@@ -13858,7 +13930,10 @@
       "answer": "Wenn",
       "explanation": "Wenn (if/when) sends verb to end: Wenn ich Zeit habe, ...",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.wenn"
     },
     {
       "id": "B1_gr_26",
@@ -13875,7 +13950,10 @@
       "answer": "Wenn",
       "explanation": "Wenn du kommst (when you come) - conditional clause.",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.wenn"
     },
     {
       "id": "B1_gr_27",
@@ -13892,7 +13970,10 @@
       "answer": "Obwohl",
       "explanation": "Obwohl (although) sends verb to end: Obwohl das Wetter schlecht ist ...",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.obwohl"
     },
     {
       "id": "B1_gr_28",
@@ -13909,7 +13990,10 @@
       "answer": "Obwohl",
       "explanation": "Obwohl (although) introduces contrast.",
       "lessonId": "B1_lesson_1",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.subordinate.obwohl"
     },
     {
       "id": "B1_gr_29",
@@ -13926,7 +14010,10 @@
       "answer": "der",
       "explanation": "Der Film is masculine subject: relative pronoun 'der' (nominative).",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.nom"
     },
     {
       "id": "B1_gr_30",
@@ -13943,7 +14030,10 @@
       "answer": "die",
       "explanation": "Die Frau is feminine subject: relative pronoun 'die' (nominative).",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.nom"
     },
     {
       "id": "B1_gr_31",
@@ -13960,7 +14050,10 @@
       "answer": "das",
       "explanation": "Das Kind is neuter subject: relative pronoun 'das' (nominative).",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.nom"
     },
     {
       "id": "B1_gr_32",
@@ -13971,7 +14064,10 @@
       "answer": "Der Mann, der dort steht, ist mein Vater.",
       "explanation": "Use 'der' not 'wer' for relative clauses.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.nom"
     },
     {
       "id": "B1_gr_33",
@@ -13988,7 +14084,10 @@
       "answer": "den",
       "explanation": "Den Mann is direct object: relative pronoun 'den' (accusative masculine).",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.acc"
     },
     {
       "id": "B1_gr_34",
@@ -14005,7 +14104,10 @@
       "answer": "die",
       "explanation": "Die Frau is feminine, accusative stays 'die'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.acc"
     },
     {
       "id": "B1_gr_35",
@@ -14022,7 +14124,10 @@
       "answer": "das",
       "explanation": "Das Buch is neuter, accusative stays 'das'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.acc"
     },
     {
       "id": "B1_gr_36",
@@ -14039,7 +14144,10 @@
       "answer": "die",
       "explanation": "Leute (plural) accusative: 'die'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.acc"
     },
     {
       "id": "B1_gr_37",
@@ -14056,7 +14164,10 @@
       "answer": "dem",
       "explanation": "Helfen takes dative: 'dem' (masculine dative).",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.dat"
     },
     {
       "id": "B1_gr_38",
@@ -14073,7 +14184,10 @@
       "answer": "der",
       "explanation": "Geben takes dative indirect object. Feminine dative: 'der'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.dat"
     },
     {
       "id": "B1_gr_39",
@@ -14090,7 +14204,10 @@
       "answer": "dem",
       "explanation": "Schenken takes dative. Neuter dative: 'dem'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.dat"
     },
     {
       "id": "B1_gr_40",
@@ -14107,7 +14224,10 @@
       "answer": "denen",
       "explanation": "Vertrauen takes dative. Plural dative: 'denen'.",
       "lessonId": "B1_lesson_2",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.relative.clauses.dat"
     },
     {
       "id": "B1_gr_41",
@@ -14124,7 +14244,10 @@
       "answer": "würde",
       "explanation": "würde + infinitive = Konjunktiv II (I would like). Ich würde gern nach Berlin fahren.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_42",
@@ -14141,7 +14264,10 @@
       "answer": "Würdest",
       "explanation": "würdest + infinitive = polite reqüst. Würdest du mir helfen?",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_43",
@@ -14152,7 +14278,10 @@
       "answer": "Wenn ich reich wäre, würde ich ein Haus kaufen.",
       "explanation": "In the main clause, würde comes before the subject: würde ich ...",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_44",
@@ -14169,7 +14298,10 @@
       "answer": "würde",
       "explanation": "Er würde ... treiben (he would do). würde + infinitive at end.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_45",
@@ -14186,7 +14318,10 @@
       "answer": "würdest",
       "explanation": "du form: würdest. Was würdest du machen?",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_46",
@@ -14203,7 +14338,10 @@
       "answer": "hätte",
       "explanation": "Konjunktiv II of haben: hätte. Used in unreal conditional clauses.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_47",
@@ -14220,7 +14358,10 @@
       "answer": "wäre",
       "explanation": "Konjunktiv II of sein: wäre. Wenn ich du wäre ... (If I were you ...)",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_48",
@@ -14237,7 +14378,10 @@
       "answer": "wäre",
       "explanation": "Das wäre schön! (That would be nice!) Konjunktiv II expresses wish.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.general"
     },
     {
       "id": "B1_gr_49",
@@ -14254,7 +14398,10 @@
       "answer": "könnte",
       "explanation": "könnte = Konjunktiv II of können (could/would be able to).",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.modal"
     },
     {
       "id": "B1_gr_50",
@@ -14271,7 +14418,10 @@
       "answer": "müsstest",
       "explanation": "müsstest = du form Konjunktiv II of müssen (you would have to).",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.modal"
     },
     {
       "id": "B1_gr_51",
@@ -14288,7 +14438,10 @@
       "answer": "sollte",
       "explanation": "sollte = Konjunktiv II of sollen (one should). Man sollte mehr Gemüse essen.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.modal"
     },
     {
       "id": "B1_gr_52",
@@ -14305,7 +14458,10 @@
       "answer": "müssten",
       "explanation": "müssten = wir/sie plural Konjunktiv II of müssen.",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.modal"
     },
     {
       "id": "B1_gr_53",
@@ -14322,7 +14478,10 @@
       "answer": "Könnte",
       "explanation": "Könnte is polite Konjunktiv II. Könnte ich noch etwas fragen?",
       "lessonId": "B1_lesson_3",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.modal"
     },
     {
       "id": "B1_gr_54",
@@ -14339,7 +14498,10 @@
       "answer": "wird gekocht",
       "explanation": "Passiv Präsens: wird + Partizip II. Das Essen wird von der Mutter gekocht.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_55",
@@ -14356,7 +14518,10 @@
       "answer": "wird",
       "explanation": "Passiv Präsens: wird. Hier wird Deutsch gesprochen. (German is spoken here.)",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_56",
@@ -14367,7 +14532,10 @@
       "answer": "Ein neues Krankenhaus wird gebaut.",
       "explanation": "Active -> Passive: 'Man baut' becomes 'wird gebaut'.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_57",
@@ -14384,7 +14552,10 @@
       "answer": "werden",
       "explanation": "Plural subject 'die Briefe': werden. Die Briefe werden jeden Tag geschrieben.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_58",
@@ -14401,7 +14572,10 @@
       "answer": "wird",
       "explanation": "Impersonal passive with 'viel': wird. In der Firma wird viel gearbeitet.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.praesens"
     },
     {
       "id": "B1_gr_59",
@@ -14418,7 +14592,10 @@
       "answer": "wurde gebaut",
       "explanation": "Passiv Präteritum: wurde + Partizip II. Das Haus wurde im Jahr 1990 gebaut.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.prateritum"
     },
     {
       "id": "B1_gr_60",
@@ -14435,7 +14612,10 @@
       "answer": "wurde",
       "explanation": "Passiv Präteritum: wurde. Der Patient wurde gestern operiert.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.prateritum"
     },
     {
       "id": "B1_gr_61",
@@ -14452,7 +14632,10 @@
       "answer": "wurden geputzt",
       "explanation": "Plural subject 'die Fenster': wurden. Die Fenster wurden letzte Woche geputzt.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.prateritum"
     },
     {
       "id": "B1_gr_62",
@@ -14469,7 +14652,10 @@
       "answer": "wurde eröffnet",
       "explanation": "Präteritum passive: wurde + eröffnet. Das Museum wurde 2005 eröffnet.",
       "lessonId": "B1_lesson_4",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.passiv.prateritum"
     },
     {
       "id": "B1_gr_63",
@@ -14485,7 +14671,11 @@
       ],
       "answer": "auszuschalten",
       "explanation": "zu + separable verb: zwischen infinitive prefix and verb. aus|zuschalten.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_64",
@@ -14502,7 +14692,10 @@
       "answer": "zu sein",
       "explanation": "zu + infinitive sein. Es ist wichtig, pünktlich zu sein.",
       "lessonId": "B1_lesson_19",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_65",
@@ -14518,7 +14711,11 @@
       ],
       "answer": "auszugehen",
       "explanation": "zu with separable verb aus|zu|gehen. Keine Zeit, auszugehen.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_66",
@@ -14534,7 +14731,11 @@
       ],
       "answer": "zu reden",
       "explanation": "Aufhören + zu + infinitive. Hör auf, so laut zu reden!",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_67",
@@ -14550,7 +14751,11 @@
       ],
       "answer": "zu helfen",
       "explanation": "jemanden bitten + zu + infinitive. Sie bat mich, ihr zu helfen.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_68",
@@ -14567,7 +14772,10 @@
       "answer": "um",
       "explanation": "um...zu expresses purpose (in order to). Er spart Geld, um ein Auto zu kaufen.",
       "lessonId": "B1_lesson_19",
-      "taughtInLessonId": "B1_lesson_25"
+      "taughtInLessonId": "B1_lesson_25",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_69",
@@ -14577,7 +14785,11 @@
       "prompt": "Correct: 'Ich rufe an, um zu bestellen eine Pizza.'",
       "answer": "Ich rufe an, um eine Pizza zu bestellen.",
       "explanation": "um + object + zu + infinitive: 'um eine Pizza zu bestellen'.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_70",
@@ -14593,7 +14805,11 @@
       ],
       "answer": "um",
       "explanation": "um...zu = in order to. Same subject in both clauses.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_71",
@@ -14603,7 +14819,11 @@
       "prompt": "Correct: 'Ich lerne Deutsch, um gut können zu arbeiten.'",
       "answer": "Ich lerne Deutsch, um gut arbeiten zu können.",
       "explanation": "Modal verbs in um...zu: infinitive gös before the modal. 'um ... arbeiten zu können'.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_72",
@@ -14619,7 +14839,11 @@
       ],
       "answer": "damit",
       "explanation": "damit (so that) is used when subjects are different. Verb gös to end.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.damit.clauses"
     },
     {
       "id": "B1_gr_73",
@@ -14635,7 +14859,11 @@
       ],
       "answer": "damit",
       "explanation": "damit (so that) with different subject. Wir kaufen ... damit die Kinder sich freuen.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.damit.clauses"
     },
     {
       "id": "B1_gr_74",
@@ -14645,7 +14873,11 @@
       "prompt": "Correct: 'Ich schreibe es auf damit du vergisst es nicht.'",
       "answer": "Ich schreibe es auf, damit du es nicht vergisst.",
       "explanation": "damit sends verb to end: ... damit du es nicht vergisst.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.damit.clauses"
     },
     {
       "id": "B1_gr_75",
@@ -14661,7 +14893,11 @@
       ],
       "answer": "damit",
       "explanation": "damit + kann at end. ... damit ich dich anrufen kann.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.damit.clauses"
     },
     {
       "id": "B1_gr_76",
@@ -14677,7 +14913,11 @@
       ],
       "answer": "um",
       "explanation": "Same subject (er geht / er studiert): use um...zu. Different subject: use damit.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_77",
@@ -14693,7 +14933,11 @@
       ],
       "answer": "damit",
       "explanation": "Different subjects (ich rufe ... du weißt): use damit.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_78",
@@ -14710,7 +14954,10 @@
       "answer": "konnte",
       "explanation": "Präteritum of können: konnte. Ich konnte gestern nicht kommen.",
       "lessonId": "B1_lesson_13",
-      "taughtInLessonId": "B1_lesson_9"
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_79",
@@ -14727,7 +14974,10 @@
       "answer": "musste",
       "explanation": "Präteritum of müssen: musste. Er musste lange warten.",
       "lessonId": "B1_lesson_13",
-      "taughtInLessonId": "B1_lesson_9"
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_81",
@@ -14744,7 +14994,10 @@
       "answer": "durfte",
       "explanation": "Präteritum of dürfen: durfte (was allowed to).",
       "lessonId": "B1_lesson_13",
-      "taughtInLessonId": "B1_lesson_9"
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_82",
@@ -14761,7 +15014,10 @@
       "answer": "sollte",
       "explanation": "Präteritum of sollen: sollte (was supposed to).",
       "lessonId": "B1_lesson_13",
-      "taughtInLessonId": "B1_lesson_9"
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_83",
@@ -14778,7 +15034,10 @@
       "answer": "wolltet",
       "explanation": "ihr form Präteritum of wollen: wolltet.",
       "lessonId": "B1_lesson_13",
-      "taughtInLessonId": "B1_lesson_9"
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.grammar.general"
     },
     {
       "id": "B1_gr_84",
@@ -14794,7 +15053,11 @@
       ],
       "answer": "des",
       "explanation": "Genitive masculine/neuter: des. Des Mannes (of the man).",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_85",
@@ -14810,7 +15073,11 @@
       ],
       "answer": "der",
       "explanation": "Genitive feminine: der. Der Blume (of the flower).",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_86",
@@ -14826,7 +15093,11 @@
       ],
       "answer": "des",
       "explanation": "Wegen + Genitive. Wetters is neuter: des (schlechten) Wetters.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_87",
@@ -14842,7 +15113,11 @@
       ],
       "answer": "der",
       "explanation": "Trotz + Genitive. Schmerzen (plural) or feminine singular: der.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_88",
@@ -14858,7 +15133,11 @@
       ],
       "answer": "des",
       "explanation": "Nachbarn is masculine genitive (n-declension): des Nachbarn.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_89",
@@ -14868,7 +15147,11 @@
       "prompt": "Correct: 'Das ist das Buch von dem Lehrer.' (use genitive)",
       "answer": "Das ist das Buch des Lehrers.",
       "explanation": "Genitive: des Lehrers (of the teacher). Add -s for masculine/neuter nouns.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_90",
@@ -14884,7 +15167,11 @@
       ],
       "answer": "des",
       "explanation": "Während + Genitive. Unterricht is masculine: des Unterrichts.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_15",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.genitive.intro"
     },
     {
       "id": "B1_gr_91",
@@ -14900,7 +15187,11 @@
       ],
       "answer": "kleine",
       "explanation": "After der: adjective + -e (nominative masculine). Der kleine Junge.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_92",
@@ -14916,7 +15207,11 @@
       ],
       "answer": "schöner",
       "explanation": "After ein (indefinite article): adjective ends in -er (masculine nominative). Ein schöner Tag.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_93",
@@ -14932,7 +15227,11 @@
       ],
       "answer": "neuen",
       "explanation": "Keine (plural): adjective ends in -en. Keine neuen Informationen.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_94",
@@ -14948,7 +15247,11 @@
       ],
       "answer": "freundliche",
       "explanation": "After die (feminine): adjective + -e. Die freundliche Verkäuferin.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_95",
@@ -14964,7 +15267,11 @@
       ],
       "answer": "rote",
       "explanation": "After das (neuter): adjective + -e. Das rote Haus.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.nom"
     },
     {
       "id": "B1_gr_96",
@@ -14980,7 +15287,11 @@
       ],
       "answer": "neuen",
       "explanation": "After den (accusative masculine): adjective + -en. Den neuen Tisch.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.acc"
     },
     {
       "id": "B1_gr_97",
@@ -14996,7 +15307,11 @@
       ],
       "answer": "schöne",
       "explanation": "After eine (feminine accusative): adjective + -e. Eine schöne Bluse.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.acc"
     },
     {
       "id": "B1_gr_98",
@@ -15012,7 +15327,11 @@
       ],
       "answer": "spannendes",
       "explanation": "After ein (neuter accusative): adjective + -es. Ein spannendes Buch.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.acc"
     },
     {
       "id": "B1_gr_99",
@@ -15028,7 +15347,11 @@
       ],
       "answer": "guten",
       "explanation": "After keinen/null article with masculine accusative: guten. Hast du guten Wein?",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.acc"
     },
     {
       "id": "B1_gr_100",
@@ -15045,7 +15368,10 @@
       "answer": "eine billige",
       "explanation": "Accusative feminine: eine + -e. Eine billige Wohnung.",
       "lessonId": "B1_lesson_5",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.acc"
     },
     {
       "id": "B1_gr_101",
@@ -15061,7 +15387,11 @@
       ],
       "answer": "einem alten",
       "explanation": "After einem (neuter dative): adjective + -en. In einem alten Haus.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_102",
@@ -15077,7 +15407,11 @@
       ],
       "answer": "netten",
       "explanation": "After der (feminine dative): adjective + -en. Mit der netten Frau.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_103",
@@ -15093,7 +15427,11 @@
       ],
       "answer": "freundlichen",
       "explanation": "After dem (masculine dative): adjective + -en. Dem freundlichen Mann.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_104",
@@ -15109,7 +15447,11 @@
       ],
       "answer": "schlechtem",
       "explanation": "No article before masculine/neuter dative: adjective + -em. Bei schlechtem Wetter.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_105",
@@ -15125,7 +15467,11 @@
       ],
       "answer": "grünen",
       "explanation": "After der (feminine dative): adjective + -en. Von der grünen Wiese.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.adjective.endings.dat"
     },
     {
       "id": "B1_gr_106",
@@ -15141,7 +15487,11 @@
       ],
       "answer": "auf",
       "explanation": "Wohin? (movement) + accusative. Auf den Tisch (onto the table).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_107",
@@ -15157,7 +15507,11 @@
       ],
       "answer": "auf",
       "explanation": "Direction (wohin?) + accusative. Auf den Tisch stellen.",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_108",
@@ -15173,7 +15527,11 @@
       ],
       "answer": "auf",
       "explanation": "Wo? (location) + dative. Auf dem Tisch (on the table - location).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_109",
@@ -15189,7 +15547,11 @@
       ],
       "answer": "vor",
       "explanation": "Wo? + dative. Vor dem Haus (in front of the house).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_110",
@@ -15205,7 +15567,11 @@
       ],
       "answer": "in",
       "explanation": "Wohin? + accusative. In die Schule (into the school - direction).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_111",
@@ -15221,7 +15587,11 @@
       ],
       "answer": "in",
       "explanation": "Wo? + dative. In dem (=im) Park (in the park - location).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_112",
@@ -15237,7 +15607,11 @@
       ],
       "answer": "an",
       "explanation": "Wohin? (hanging onto wall) + accusative. An die Wand.",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_113",
@@ -15253,7 +15627,11 @@
       ],
       "answer": "an",
       "explanation": "Wo? (hanging on wall - location) + dative. An der Wand.",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_114",
@@ -15269,7 +15647,11 @@
       ],
       "answer": "auf",
       "explanation": "Sich setzen (wohin?) + accusative. Auf den Stuhl (onto the chair).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_115",
@@ -15285,7 +15667,11 @@
       ],
       "answer": "auf",
       "explanation": "Wo? + dative. Auf dem Stuhl (on the chair - location).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_116",
@@ -15301,7 +15687,11 @@
       ],
       "answer": "neben",
       "explanation": "Wohin? + accusative. Neben das Bett (next to the bed - direction).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_117",
@@ -15317,7 +15707,11 @@
       ],
       "answer": "neben",
       "explanation": "Wo? + dative. Neben dem Bett (next to the bed - location).",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_119",
@@ -15334,7 +15728,10 @@
       "answer": "an",
       "explanation": "denken an + Akkusativ. Er denkt an seine Familie.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_120",
@@ -15351,7 +15748,10 @@
       "answer": "über",
       "explanation": "sich freuen über + Akkusativ (about something that happened). Sie freut sich über das Geschenk.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_121",
@@ -15368,7 +15768,10 @@
       "answer": "für",
       "explanation": "sich bedanken für + Akkusativ. Er bedankt sich für die Hilfe.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_122",
@@ -15385,7 +15788,10 @@
       "answer": "für",
       "explanation": "sich interessieren für + Akkusativ. Ich interessiere mich für Kunst.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_123",
@@ -15402,7 +15808,10 @@
       "answer": "von",
       "explanation": "erzählen von + Dativ. Sie erzählt von ihrer Reise.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_19"
+      "taughtInLessonId": "B1_lesson_19",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_124",
@@ -15419,7 +15828,10 @@
       "answer": "über",
       "explanation": "sprechen über + Akkusativ. Wir sprechen über das Problem.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_125",
@@ -15436,7 +15848,10 @@
       "answer": "an",
       "explanation": "sich erinnern an + Akkusativ. Sich an morgen erinnern (remember tomorrow).",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_126",
@@ -15453,7 +15868,10 @@
       "answer": "zu",
       "explanation": "einladen zu + Dativ. Ich lade dich zu meiner Party ein.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_16"
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_127",
@@ -15470,7 +15888,10 @@
       "answer": "nach",
       "explanation": "fragen nach + Dativ. Er fragt nach dem Weg.",
       "lessonId": "B1_lesson_14",
-      "taughtInLessonId": "B1_lesson_14"
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.prepositions.fixed.case"
     },
     {
       "id": "B1_gr_128",
@@ -15486,7 +15907,11 @@
       ],
       "answer": "darauf",
       "explanation": "warten auf -> darauf. da(r) + preposition replaces [prep + noun].",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_129",
@@ -15502,7 +15927,11 @@
       ],
       "answer": "dafür",
       "explanation": "sich interessieren für -> dafür. da(r) + preposition.",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_130",
@@ -15519,7 +15948,10 @@
       "answer": "daran",
       "explanation": "denken an -> daran. da + an = daran.",
       "lessonId": "B1_lesson_22",
-      "taughtInLessonId": "B1_lesson_19"
+      "taughtInLessonId": "B1_lesson_19",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_131",
@@ -15535,7 +15967,11 @@
       ],
       "answer": "darauf",
       "explanation": "Warum-Frage + Pronominaladverb: Worauf? -> Darauf.",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_132",
@@ -15551,7 +15987,11 @@
       ],
       "answer": "dafür",
       "explanation": "Wofür? -> Dafür. Question word wo(r)+prep -> da(r)+prep.",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_133",
@@ -15567,7 +16007,11 @@
       ],
       "answer": "damit",
       "explanation": "sich beschäftigen mit -> damit. Ich beschäftige mich damit.",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_134",
@@ -15583,7 +16027,11 @@
       ],
       "answer": "Wovon",
       "explanation": "träumen von -> wovon. Wovon hast du geträumt?",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "taughtInLessonId": "B1_lesson_14",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.pronominal.adverbs"
     },
     {
       "id": "B1_gr_135",
@@ -15599,7 +16047,11 @@
       ],
       "answer": "wie",
       "explanation": "Indirect W-question: verb gös to end. Weißt du, wie er heißt?",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_136",
@@ -15615,7 +16067,11 @@
       ],
       "answer": "wo",
       "explanation": "Indirect question: wo + verb at end. ... wo der Bahnhof ist.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_137",
@@ -15631,7 +16087,11 @@
       ],
       "answer": "wann",
       "explanation": "Indirect question: wann + verb at end. ... wann du gekommen bist.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_138",
@@ -15647,7 +16107,11 @@
       ],
       "answer": "ob",
       "explanation": "ob (whether/if) for yes/no indirect questions. Er fragt, ob ich Zeit habe.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_139",
@@ -15663,7 +16127,11 @@
       ],
       "answer": "was",
       "explanation": "was + verb at end: ... was das kostet.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_140",
@@ -15673,7 +16141,11 @@
       "prompt": "Correct: 'Ich weiß nicht wann kommt der Zug.'",
       "answer": "Ich weiß nicht, wann der Zug kommt.",
       "explanation": "Indirect question: verb gös to end. ... wann der Zug kommt.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.indirect.questions"
     },
     {
       "id": "B1_gr_141",
@@ -15689,7 +16161,11 @@
       ],
       "answer": "größer",
       "explanation": "Comparative: groß -> größer (Umlaut + -er). Berlin ist größer als Hamburg.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_142",
@@ -15706,7 +16182,10 @@
       "answer": "beste",
       "explanation": "Superlative: gut -> beste (irregular). Der beste Film des Jahres.",
       "lessonId": "B1_lesson_5",
-      "taughtInLessonId": "B1_lesson_11"
+      "taughtInLessonId": "B1_lesson_11",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_144",
@@ -15722,7 +16201,11 @@
       ],
       "answer": "teurer",
       "explanation": "Comparative of teuer: teurer (drop -e-). Mein Auto ist teurer als deins.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_145",
@@ -15738,7 +16221,11 @@
       ],
       "answer": "billigste",
       "explanation": "Superlative adjective: billig -> billigste (with article + -ste).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_146",
@@ -15754,7 +16241,11 @@
       ],
       "answer": "schneller",
       "explanation": "Comparative: schnell -> schneller. Er läuft schneller als ich.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_147",
@@ -15770,7 +16261,11 @@
       ],
       "answer": "höchste",
       "explanation": "Superlative of hoch: höchste (irregular, Änderung c->ch).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_148",
@@ -15786,7 +16281,11 @@
       ],
       "answer": "wärmer",
       "explanation": "Comparative: warm -> wärmer (Umlaut). Im Sommer ist es wärmer.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_149",
@@ -15802,7 +16301,11 @@
       ],
       "answer": "moderner",
       "explanation": "Comparative: modern -> moderner (no Umlaut, many -er adjectives keep ending).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_150",
@@ -15818,7 +16321,11 @@
       ],
       "answer": "mehr",
       "explanation": "Irregular comparative: viel -> mehr. Sie arbeitet mehr als er.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_151",
@@ -15834,7 +16341,11 @@
       ],
       "answer": "den",
       "explanation": "Patient is n-declension. Accusative: den Patienten.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_152",
@@ -15850,7 +16361,11 @@
       ],
       "answer": "dem",
       "explanation": "Student is n-declension. Dative: dem Studenten.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_153",
@@ -15866,7 +16381,11 @@
       ],
       "answer": "des",
       "explanation": "Experte is n-declension. Genitive: des Experten.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_154",
@@ -15882,7 +16401,11 @@
       ],
       "answer": "den",
       "explanation": "Herr is n-declension. Accusative: den Herrn.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_155",
@@ -15898,7 +16421,11 @@
       ],
       "answer": "dem",
       "explanation": "Kollege is n-declension. Dative: dem Kollegen.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_156",
@@ -15914,7 +16441,11 @@
       ],
       "answer": "des",
       "explanation": "Experte is n-declension. Genitive: des Experten.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_157",
@@ -15930,7 +16461,11 @@
       ],
       "answer": "einen",
       "explanation": "Franzose is n-declension. Accusative: einen Franzosen.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_16",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.n.declension"
     },
     {
       "id": "B1_gr_158",
@@ -15947,7 +16482,10 @@
       "answer": "Bevor",
       "explanation": "Bevor (before) sends verb to end: Bevor ich aufstehe, ...",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_159",
@@ -15964,7 +16502,10 @@
       "answer": "Nachdem",
       "explanation": "Nachdem (after) uses Plusquamperfekt in the clause. Nachdem er gegessen hatte ...",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_160",
@@ -15981,7 +16522,10 @@
       "answer": "Während",
       "explanation": "Während (while/whilst): simultaneous actions. Während ich arbeite, höre ich Musik.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_162",
@@ -15997,7 +16541,11 @@
       ],
       "answer": "besser",
       "explanation": "Irregular comparative: gut -> besser. Schmeckt besser (tastes better).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_163",
@@ -16013,7 +16561,11 @@
       ],
       "answer": "jünger",
       "explanation": "Comparative: jung -> jünger (Umlaut).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_164",
@@ -16029,7 +16581,11 @@
       ],
       "answer": "interessanteste",
       "explanation": "Superlative with article: interessant -> interessanteste.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_165",
@@ -16045,7 +16601,11 @@
       ],
       "answer": "langsamer",
       "explanation": "Comparative: langsam -> langsamer (no Umlaut, longer adjectives usually don't change vowel).",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.comparisons.complex"
     },
     {
       "id": "B1_gr_166",
@@ -16062,7 +16622,10 @@
       "answer": "Nachdem",
       "explanation": "Nachdem (after) with Plusquamperfekt. Nachdem der Regen aufgehört hatte, ...",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_167",
@@ -16079,7 +16642,10 @@
       "answer": "Seitdem",
       "explanation": "Seitdem (since) for an ongoing situation from a starting point.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_168",
@@ -16096,7 +16662,10 @@
       "answer": "Während",
       "explanation": "Während (while) for two simultaneous actions.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_169",
@@ -16113,7 +16682,10 @@
       "answer": "bevor",
       "explanation": "Bevor (before) + verb at end. Ruf mich an, bevor du gehst.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_170",
@@ -16130,7 +16702,10 @@
       "answer": "Bevor",
       "explanation": "Bevor (before): verb at end. Bevor er einschläft, liest er.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_171",
@@ -16141,7 +16716,10 @@
       "answer": "Nachdem ich gegessen hatte, ging ich spazieren.",
       "explanation": "Nachdem requires Plusquamperfekt. Main clause verb position 2.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.temporal.connectors"
     },
     {
       "id": "B1_gr_172",
@@ -16157,7 +16735,11 @@
       ],
       "answer": "deshalb",
       "explanation": "Deshalb (therefore) starts main clause with verb position 2.",
-      "lessonId": "B1_lesson_9"
+      "lessonId": "B1_lesson_9",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.cause.effect"
     },
     {
       "id": "B1_gr_173",
@@ -16173,7 +16755,11 @@
       ],
       "answer": "deswegen",
       "explanation": "Deswegen (therefore) = deshalb. Main clause verb position 2.",
-      "lessonId": "B1_lesson_9"
+      "lessonId": "B1_lesson_9",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.cause.effect"
     },
     {
       "id": "B1_gr_174",
@@ -16189,7 +16775,11 @@
       ],
       "answer": "daher",
       "explanation": "Daher (hence/thus) is formal. Same word order as deshalb.",
-      "lessonId": "B1_lesson_9"
+      "lessonId": "B1_lesson_9",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.cause.effect"
     },
     {
       "id": "B1_gr_175",
@@ -16200,7 +16790,10 @@
       "answer": "Deshalb kann ich heute nicht kommen.",
       "explanation": "Deshalb starts main clause: verb position 2, subject position 3.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_5"
+      "taughtInLessonId": "B1_lesson_5",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.cause.effect"
     },
     {
       "id": "B1_gr_176",
@@ -16216,7 +16809,11 @@
       ],
       "answer": "deshalb",
       "explanation": "Deshalb (therefore) connects cause and result.",
-      "lessonId": "B1_lesson_9"
+      "lessonId": "B1_lesson_9",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.cause.effect"
     },
     {
       "id": "B1_gr_178",
@@ -16233,7 +16830,10 @@
       "answer": "dennoch",
       "explanation": "Dennoch (nevertheless/yet) = more formal trotzdem.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_179",
@@ -16250,7 +16850,10 @@
       "answer": "trotzdem",
       "explanation": "Trotzdem (nevertheless/anyway) inside the main clause.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_180",
@@ -16267,7 +16870,10 @@
       "answer": "trotzdem",
       "explanation": "Trotzdem (nevertheless) inside clause: Wir gehen trotzdem spazieren.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_181",
@@ -16284,7 +16890,10 @@
       "answer": "dennoch",
       "explanation": "Dennoch (nonetheless) - formal contrast.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_182",
@@ -16301,7 +16910,10 @@
       "answer": "trotzdem",
       "explanation": "Trotzdem = contrast. Sie ist müde, trotzdem macht sie weiter.",
       "lessonId": "B1_lesson_9",
-      "taughtInLessonId": "B1_lesson_6"
+      "taughtInLessonId": "B1_lesson_6",
+      "difficulty": "easy",
+      "skillType": "grammar",
+      "conceptId": "b1.connectors.complex"
     },
     {
       "id": "B1_gr_183",
@@ -16312,7 +16924,10 @@
       "answer": "Obwohl es regnet, gehe ich spazieren.",
       "explanation": "Subordinate clause verb at end, main clause verb position 2.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_184",
@@ -16323,7 +16938,10 @@
       "answer": "Weil ich müde bin, gehe ich schlafen.",
       "explanation": "Weil clause: verb at end. Main clause: verb position 2, comma required.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_185",
@@ -16334,7 +16952,10 @@
       "answer": "Wenn ich Zeit habe, helfe ich dir.",
       "explanation": "Wenn clause first: verb at end, main verb position 2 after comma.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_186",
@@ -16344,7 +16965,11 @@
       "prompt": "Correct: 'Er ist krank. Trotzdem er geht zur Arbeit.'",
       "answer": "Er ist krank, trotzdem geht er zur Arbeit.",
       "explanation": "Trotzdem starts main clause: verb position 2. 'Er ist krank, trotzdem geht er zur Arbeit.'",
-      "lessonId": "B1_lesson_15"
+      "lessonId": "B1_lesson_15",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_187",
@@ -16360,7 +16985,11 @@
       ],
       "answer": "Wenn",
       "explanation": "Wenn clause first + verb at end + main clause. Wenn ich früher aufstehe, ...",
-      "lessonId": "B1_lesson_15"
+      "lessonId": "B1_lesson_15",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_188",
@@ -16371,7 +17000,10 @@
       "answer": "Ich weiß, dass er heute nicht kommt.",
       "explanation": "Dass clause: verb at end, comma required.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_189",
@@ -16382,7 +17014,10 @@
       "answer": "Deswegen kaufe ich morgen ein neues Auto.",
       "explanation": "Deswegen at start: verb position 2, subject position 3.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_5"
+      "taughtInLessonId": "B1_lesson_5",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_190",
@@ -16393,7 +17028,10 @@
       "answer": "Die Frau, die dort wohnt, ist Ärztin.",
       "explanation": "Relative clauses need commas around them.",
       "lessonId": "B1_lesson_15",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.word.order.complex"
     },
     {
       "id": "B1_gr_191",
@@ -16410,7 +17048,10 @@
       "answer": "wasche mich",
       "explanation": "sich waschen (to wash oneself). Ich wasche mich.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_192",
@@ -16427,7 +17068,10 @@
       "answer": "zieht sich an",
       "explanation": "sich anziehen (to get dressed). Separable verb: Er zieht sich an.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_193",
@@ -16444,7 +17088,10 @@
       "answer": "treffen uns",
       "explanation": "sich treffen (to meet). Wir treffen uns um 8 Uhr.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_194",
@@ -16461,7 +17108,10 @@
       "answer": "Setzen Sie sich",
       "explanation": "sich setzen (to sit down). Imperative formal: Setzen Sie sich!",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_195",
@@ -16478,7 +17128,10 @@
       "answer": "freuen sich",
       "explanation": "sich freuen (to be happy). Sie (plural/formal) freuen sich.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_196",
@@ -16495,7 +17148,10 @@
       "answer": "fühlst dich",
       "explanation": "sich fühlen (to feel). Du fühlst dich heute nicht gut.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_197",
@@ -16511,7 +17167,11 @@
       ],
       "answer": "lasse",
       "explanation": "lassen + infinitive = to have something done. Ich lasse mein Auto reparieren.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.lassen.usage"
     },
     {
       "id": "B1_gr_198",
@@ -16527,7 +17187,11 @@
       ],
       "answer": "lässt",
       "explanation": "lassen: er/sie/es lässt. Er lässt sich die Haare schneiden.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.lassen.usage"
     },
     {
       "id": "B1_gr_199",
@@ -16543,7 +17207,11 @@
       ],
       "answer": "Lassen",
       "explanation": "Imperative: Lassen Sie mich durch! (Let me through!)",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.lassen.usage"
     },
     {
       "id": "B1_gr_200",
@@ -16559,7 +17227,11 @@
       ],
       "answer": "lässt",
       "explanation": "sich lassen + infinitive = possible (can be done). Das lässt sich machen.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.lassen.usage"
     },
     {
       "id": "B1_gr_201",
@@ -16576,7 +17248,10 @@
       "answer": "beeilt euch",
       "explanation": "sich beeilen (to hurry). Ihr beeilt euch.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_202",
@@ -16593,7 +17268,10 @@
       "answer": "sich entschuldigt",
       "explanation": "Perfekt of sich entschuldigen: hat sich entschuldigt.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_203",
@@ -16610,7 +17288,10 @@
       "answer": "uns ausruhen",
       "explanation": "müssen + reflexive infinitive. Wir müssen uns ausruhen.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_204",
@@ -16627,7 +17308,10 @@
       "answer": "bereitet sich vor",
       "explanation": "sich vorbereiten auf (to prepare for). Separable: bereitet sich vor.",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_205",
@@ -16644,7 +17328,10 @@
       "answer": "dir vorstellen",
       "explanation": "sich (dat) vorstellen = to imagine. Du kannst dir vorstellen ...",
       "lessonId": "B1_lesson_8",
-      "taughtInLessonId": "B1_lesson_8"
+      "taughtInLessonId": "B1_lesson_8",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.reflexive.verbs.extended"
     },
     {
       "id": "B1_gr_206",
@@ -16660,7 +17347,11 @@
       ],
       "answer": "brauchst",
       "explanation": "brauchen + nicht + zu + infinitive = don't need to. Du brauchst nicht zu kommen.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_207",
@@ -16676,7 +17367,11 @@
       ],
       "answer": "brauchen",
       "explanation": "Sie brauchen nur zu fragen. (You only need to ask.) brauchen + zu + infinitive.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_208",
@@ -16692,7 +17387,11 @@
       ],
       "answer": "braucht",
       "explanation": "er braucht + nicht zu + infinitive. Er braucht nicht zu weinen.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_209",
@@ -16703,7 +17402,10 @@
       "answer": "Du brauchst nicht zu gehen, ich warte.",
       "explanation": "brauchen + nicht + zu + infinitive. The 'zu' is required.",
       "lessonId": "B1_lesson_20",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_210",
@@ -16719,7 +17421,11 @@
       ],
       "answer": "brauchen",
       "explanation": "Wir brauchen (plural) + nicht zu + infinitive.",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "taughtInLessonId": "B1_lesson_9",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.umzu.clauses"
     },
     {
       "id": "B1_gr_211",
@@ -16735,7 +17441,11 @@
       ],
       "answer": "gekochte",
       "explanation": "Partizip II as adjective: das gekochte Wasser (the boiled water).",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_212",
@@ -16752,7 +17462,10 @@
       "answer": "gelesene",
       "explanation": "Partizip II as adjective: der gelesene Brief (the read letter / the letter that was read).",
       "lessonId": "B1_lesson_6",
-      "taughtInLessonId": "B1_lesson_22"
+      "taughtInLessonId": "B1_lesson_22",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_213",
@@ -16768,7 +17481,11 @@
       ],
       "answer": "lächelndes",
       "explanation": "Partizip I as adjective: ein lächelndes Kind (a smiling child). Active meaning.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_214",
@@ -16784,7 +17501,11 @@
       ],
       "answer": "geöffnete",
       "explanation": "Partizip II: die geöffnete Tür (the opened door).",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_215",
@@ -16800,7 +17521,11 @@
       ],
       "answer": "weinende",
       "explanation": "Partizip I: der weinende Junge (the crying boy). Active meaning.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_216",
@@ -16816,7 +17541,11 @@
       ],
       "answer": "repariertes",
       "explanation": "Partizip II: ein repariertes Auto (a repaired car).",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "taughtInLessonId": "B1_lesson_24",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.participle.adjectives"
     },
     {
       "id": "B1_gr_217",
@@ -16832,7 +17561,11 @@
       ],
       "answer": "Könnten",
       "explanation": "Könnten + Sie = polite reqüst (Konjunktiv II).",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.politeness"
     },
     {
       "id": "B1_gr_218",
@@ -16848,7 +17581,11 @@
       ],
       "answer": "Dürfte",
       "explanation": "Dürfte (Konjunktiv II) = more polite than darf.",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.politeness"
     },
     {
       "id": "B1_gr_219",
@@ -16864,7 +17601,11 @@
       ],
       "answer": "für",
       "explanation": "Hätten Sie Zeit für ... (Would you have time for ...) polite Konjunktiv II.",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.politeness"
     },
     {
       "id": "B1_gr_220",
@@ -16880,7 +17621,11 @@
       ],
       "answer": "Dürfte",
       "explanation": "Dürfte ich Sie bitten ... (Might I ask you ...) very polite.",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.politeness"
     },
     {
       "id": "B1_gr_221",
@@ -16896,7 +17641,11 @@
       ],
       "answer": "zu",
       "explanation": "so freundlich sein + zu + infinitive. Wären Sie so freundlich, mir zu helfen?",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.konjunktiv2.politeness"
     },
     {
       "id": "B1_gr_222",
@@ -16913,7 +17662,10 @@
       "answer": "wird",
       "explanation": "Active man -> passive wird. Das Auto wird repariert.",
       "lessonId": "B1_lesson_7",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_223",
@@ -16930,7 +17682,10 @@
       "answer": "wird",
       "explanation": "Active object becomes passive subject. Das Essen wird vom Koch gekocht.",
       "lessonId": "B1_lesson_7",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_224",
@@ -16947,7 +17702,10 @@
       "answer": "kommt",
       "explanation": "dass + verb at end, same tense. Er sagt, dass er morgen kommt.",
       "lessonId": "B1_lesson_7",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_225",
@@ -16963,7 +17721,11 @@
       ],
       "answer": "komme",
       "explanation": "Yes/no indirect question: ob + verb at end.",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_226",
@@ -16980,7 +17742,10 @@
       "answer": "deshalb",
       "explanation": "weil (subordinate) -> deshalb (main clause, verb position 2).",
       "lessonId": "B1_lesson_7",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_227",
@@ -16997,7 +17762,10 @@
       "answer": "trotzdem",
       "explanation": "obwohl (subordinate, verb at end) -> trotzdem (main clause, verb position 2).",
       "lessonId": "B1_lesson_7",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.sentence.transformation"
     },
     {
       "id": "B1_gr_228",
@@ -17008,7 +17776,10 @@
       "answer": "Er ist gestern nach Hause gegangen.",
       "explanation": "gehen uses 'sein' in Perfekt, not 'haben'.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_5"
+      "taughtInLessonId": "B1_lesson_5",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_229",
@@ -17019,7 +17790,10 @@
       "answer": "Obwohl er krank ist, geht er zur Arbeit.",
       "explanation": "Don't use 'aber' with 'obwohl'. Only one connector per sentence.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_230",
@@ -17030,7 +17804,10 @@
       "answer": "Er ist der Mann, der dort arbeitet.",
       "explanation": "'wer' is a question word, not a relative pronoun. Use 'der'.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_231",
@@ -17040,7 +17817,11 @@
       "prompt": "Correct: 'Ich lerne Deutsch für in Deutschland zu arbeiten.'",
       "answer": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
       "explanation": "'für' + infinitive is wrong. Use 'um...zu' for purpose.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_25",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_232",
@@ -17051,7 +17832,10 @@
       "answer": "Wenn ich Zeit habe, komme ich vorbei.",
       "explanation": "Wenn-clause first: main clause verb must be in position 2.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_233",
@@ -17062,7 +17846,10 @@
       "answer": "Das ist die Frau, die mir geholfen hat.",
       "explanation": "Relative clauses must be separated by commas.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_2"
+      "taughtInLessonId": "B1_lesson_2",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_234",
@@ -17072,7 +17859,11 @@
       "prompt": "Correct: 'Ich habe gestern mit meinen Freund getroffen.'",
       "answer": "Ich habe mich gestern mit meinem Freund getroffen.",
       "explanation": "treffen is reflexive (sich treffen mit). Also, 'mit' requires dative: 'meinem'.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_25",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_235",
@@ -17082,7 +17873,11 @@
       "prompt": "Correct: 'Das ist die beste Tag meines Lebens.'",
       "answer": "Das ist der beste Tag meines Lebens.",
       "explanation": "Tag is masculine (der Tag), not feminine (die).",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_25",
+      "difficulty": "hard",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_236",
@@ -17098,7 +17893,11 @@
       ],
       "answer": "dem",
       "explanation": "vertrauen (to trust) takes dative. Relative pronoun: dem.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_237",
@@ -17114,7 +17913,11 @@
       ],
       "answer": "die",
       "explanation": "Tasche feminine accusative: die. Die Tasche, die ich gefunden habe.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_238",
@@ -17130,7 +17933,11 @@
       ],
       "answer": "freuen",
       "explanation": "sich freuen auf + Akk. Wir freuen uns auf den Sommer.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_239",
@@ -17147,7 +17954,10 @@
       "answer": "so",
       "explanation": "so ... dass (so ... that). Er spricht so schnell, dass ich kaum verstehe.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_1"
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_240",
@@ -17164,7 +17974,10 @@
       "answer": "deshalb",
       "explanation": "deshalb (therefore) connects cause and effect. Verb position 2.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_241",
@@ -17180,7 +17993,11 @@
       ],
       "answer": "in dem",
       "explanation": "spielen in + Dativ (location). Der Park -> in dem (relative clause).",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_242",
@@ -17196,7 +18013,11 @@
       ],
       "answer": "den",
       "explanation": "Herr Müller is accusative direct object: den.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_243",
@@ -17213,7 +18034,10 @@
       "answer": "werden",
       "explanation": "Plural passive: werden. Hier werden viele Sprachen gesprochen.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_4"
+      "taughtInLessonId": "B1_lesson_4",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_244",
@@ -17229,7 +18053,11 @@
       ],
       "answer": "zu sehen",
       "explanation": "hoffen + zu + infinitive. Ich hoffe, dich bald wieder zu sehen.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_245",
@@ -17246,7 +18074,10 @@
       "answer": "sollte",
       "explanation": "sollte (ought to/should) expresses a weak obligation or expectation.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_12"
+      "taughtInLessonId": "B1_lesson_12",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_246",
@@ -17263,7 +18094,10 @@
       "answer": "wäre",
       "explanation": "Unreal conditional: wenn + Konjunktiv II. Wenn ich reich wäre ...",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_247",
@@ -17279,7 +18113,11 @@
       ],
       "answer": "dessen",
       "explanation": "Possessive relative: dessen (whose). Der Freund, dessen Hund ...",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_248",
@@ -17295,7 +18133,11 @@
       ],
       "answer": "auf",
       "explanation": "sich freuen auf + Akk (looking forward to future). Sich auf das Projekt freuen.",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_249",
@@ -17311,7 +18153,11 @@
       ],
       "answer": "in die",
       "explanation": "in + Schule gehen = direction (in die). Die Schule, in die ich gehe ...",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "taughtInLessonId": "B1_lesson_1",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     },
     {
       "id": "B1_gr_250",
@@ -17328,7 +18174,10 @@
       "answer": "wäre",
       "explanation": "Es wäre besser (it would be better) - Konjunktiv II for polite suggestions.",
       "lessonId": "B1_lesson_25",
-      "taughtInLessonId": "B1_lesson_3"
+      "taughtInLessonId": "B1_lesson_3",
+      "difficulty": "medium",
+      "skillType": "grammar",
+      "conceptId": "b1.mixed.review"
     }
   ],
   "B2": [
