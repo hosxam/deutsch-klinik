@@ -3,6 +3,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { getState, updateState, updateLevelProgress, recordVocabAnswer } from '../utils/store';
 import fullVocabData from '../data/germanVocabulary.json';
 import { RefreshCw, ThumbsUp, ThumbsDown, Search, X } from 'lucide-react';
+import { PageShell, SectionHeader, Card, StatCard, Button, LevelBadge, ProgressRing, EmptyState, LoadingState } from '../components/ui';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -175,6 +176,30 @@ export default function FlashcardPage() {
     return filtered.sort((a, b) => `${a._level}_${a.id}`.localeCompare(`${b._level}_${b.id}`));
   }, [searchedWords, filter]);
 
+  // Compute stats for StatCards
+  const stats = useMemo(() => {
+    const state = getState();
+    const today = getLocalDateKey();
+    let dueCount = 0;
+    let newCount = 0;
+    let reviewCount = 0;
+
+    searchedWords.forEach(w => {
+      const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
+      if (!card) {
+        newCount++;
+        dueCount++;
+      } else if (!card.mastered || card.due <= today) {
+        dueCount++;
+      }
+      if (card && card.repetitions > 0) {
+        reviewCount++;
+      }
+    });
+
+    return { dueCount, newCount, reviewCount };
+  }, [searchedWords]);
+
   // Reset card on level/filter/search/medical change
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
@@ -210,10 +235,12 @@ export default function FlashcardPage() {
 
   if (sourceWords.length === 0 && levelFilter !== 'all') {
     return (
-      <div className="text-center py-12">
-        <p style={{ color: 'var(--text-muted)' }}>No vocabulary for {levelFilter}</p>
-        <Link to={`/level/${levelFilter}/vocabulary`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
-      </div>
+      <PageShell maxWidth="max-w-4xl">
+        <LoadingState message={`No vocabulary for ${levelFilter}`} />
+        <div className="text-center mt-4">
+          <Link to={`/level/${levelFilter}/vocabulary`} style={{ color: 'var(--accent)' }}>Back to Vocabulary</Link>
+        </div>
+      </PageShell>
     );
   }
 
@@ -266,42 +293,56 @@ export default function FlashcardPage() {
 
   if (done) {
     return (
-      <div className="max-w-lg mx-auto text-center py-12">
-        <div className="text-5xl mb-4">&#x1F3B4;</div>
-        <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Session Complete!</h2>
-        <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>{words.length} cards reviewed</p>
-        <Link to={`/level/${levelId}/vocabulary`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
-          Back to Vocabulary
-        </Link>
-      </div>
+      <PageShell maxWidth="max-w-lg">
+        <div className="text-center py-12">
+          <div className="text-5xl mb-4">&#x1F3B4;</div>
+          <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Session Complete!</h2>
+          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>{words.length} cards reviewed</p>
+          <Link to={`/level/${levelId}/vocabulary`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
+            Back to Vocabulary
+          </Link>
+        </div>
+      </PageShell>
     );
   }
 
   // No cards matching filters
   if (words.length === 0) {
     return (
-      <div className="max-w-lg mx-auto py-8">
-        <div className="flex items-center justify-between mb-4">
-          <Link to={`/level/${levelId}/vocabulary`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+      <PageShell maxWidth="max-w-lg">
+        <div className="mb-4">
+          <SectionHeader
+            title="Flashcards"
+            subtitle={
+              <div className="flex items-center gap-2">
+                {levelFilter !== 'all' && <LevelBadge level={levelFilter} />}
+                <span>0 cards</span>
+              </div>
+            }
+            action={
+              <Link to={`/level/${levelId}/vocabulary`} style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+            }
+          />
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-3 gap-3 mb-6">
+          <StatCard value={stats.dueCount} label="Due" accent="var(--accent)" />
+          <StatCard value={stats.newCount} label="New" accent="#3bff9e" />
+          <StatCard value={stats.reviewCount} label="Reviews" accent="#8b5cf6" />
         </div>
 
         {/* Filter bar */}
         <div className="flex gap-2 justify-center mb-4 flex-wrap">
           {FILTERS.map(f => (
-            <button
+            <Button
               key={f.key}
-              type="button"
-              aria-pressed={filter === f.key}
+              variant={filter === f.key ? 'primary' : 'ghost'}
+              size="sm"
               onClick={() => handleFilterChange(f.key)}
-              className="px-3 py-1 text-xs rounded-full transition-all"
-              style={{
-                backgroundColor: filter === f.key ? 'var(--accent)' : 'var(--bg-card)',
-                color: filter === f.key ? '#fff' : 'var(--text-secondary)',
-                border: '1px solid var(--border)',
-              }}
             >
               {f.label}
-            </button>
+            </Button>
           ))}
         </div>
 
@@ -342,19 +383,21 @@ export default function FlashcardPage() {
           </button>
         </div>
 
-        <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>0 cards available</p>
-        <div className="text-center py-12">
-          <p style={{ color: 'var(--text-muted)' }}>No flashcards match these filters.</p>
-        <button
-            type="button"
-            className="mt-4 px-4 py-2 rounded-lg text-sm"
-            style={{ backgroundColor: 'var(--bg-card)', color: 'var(--accent)', border: '1px solid var(--border)', cursor: 'pointer' }}
-            onClick={() => { handleSearchChange(''); setMedicalOnly(false); handleLevelChange(levelId || 'all'); }}
-          >
-            Clear Filters
-          </button>
-        </div>
-      </div>
+        <EmptyState
+          icon="🔍"
+          title="No flashcards match these filters"
+          description="Try adjusting your search or filter criteria."
+          action={
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => { handleSearchChange(''); setMedicalOnly(false); handleLevelChange(levelId || 'all'); }}
+            >
+              Clear Filters
+            </Button>
+          }
+        />
+      </PageShell>
     );
   }
 
@@ -364,30 +407,49 @@ export default function FlashcardPage() {
   const displayExample = word.example || '';
   const displayExampleTranslation = word.exampleTranslation || '';
 
+  const progressPct = words.length > 0 ? ((index) / words.length) * 100 : 0;
+
   return (
-    <div className="max-w-lg mx-auto py-8">
-      <div className="flex items-center justify-between mb-4">
-        <Link to={`/level/${levelId}/vocabulary`} className="text-sm" style={{ color: 'var(--accent)' }}>&larr; Back</Link>
-        <span className="text-sm" style={{ color: 'var(--text-muted)' }}>{index + 1}/{words.length}</span>
+    <PageShell maxWidth="max-w-lg">
+      {/* Header with level badge */}
+      <div className="mb-4">
+        <SectionHeader
+          title="Flashcards"
+          subtitle={
+            <div className="flex items-center gap-2">
+              {word._level && <LevelBadge level={word._level} />}
+              <span>{index + 1}/{words.length}</span>
+            </div>
+          }
+          action={
+            <Link to={`/level/${levelId}/vocabulary`} style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+          }
+        />
+      </div>
+
+      {/* Stats row */}
+      <div className="grid grid-cols-3 gap-3 mb-6">
+        <StatCard value={stats.dueCount} label="Due" accent="var(--accent)" />
+        <StatCard value={stats.newCount} label="New" accent="#3bff9e" />
+        <StatCard value={stats.reviewCount} label="Reviews" accent="#8b5cf6" />
+      </div>
+
+      {/* Progress ring */}
+      <div className="flex justify-center mb-4">
+        <ProgressRing pct={progressPct} size={60} strokeWidth={5} color="var(--accent)" />
       </div>
 
       {/* Filter bar */}
       <div className="flex gap-2 justify-center mb-4 flex-wrap">
         {FILTERS.map(f => (
-        <button
+          <Button
             key={f.key}
-            type="button"
-            aria-pressed={filter === f.key}
+            variant={filter === f.key ? 'primary' : 'ghost'}
+            size="sm"
             onClick={() => handleFilterChange(f.key)}
-            className="px-3 py-1 text-xs rounded-full transition-all"
-            style={{
-              backgroundColor: filter === f.key ? 'var(--accent)' : 'var(--bg-card)',
-              color: filter === f.key ? '#fff' : 'var(--text-secondary)',
-              border: '1px solid var(--border)',
-            }}
           >
             {f.label}
-          </button>
+          </Button>
         ))}
         <span className="text-xs px-2 py-1" style={{ color: 'var(--text-muted)' }}>
           {words.length} cards
@@ -436,18 +498,15 @@ export default function FlashcardPage() {
         {search || medicalOnly || levelFilter !== (levelId || 'all') ? `${words.length} cards available` : `${words.length} cards`}
       </p>
 
-      <button
-        type="button"
-        onClick={() => setFlipped(!flipped)}
-        aria-pressed={flipped}
-        aria-label={flipped ? 'Hide flashcard translation' : 'Reveal flashcard translation'}
-        className="w-full rounded-xl p-10 text-center cursor-pointer transition-all min-h-[220px] flex items-center justify-center"
+      {/* Flashcard */}
+      <Card
+        className="cursor-pointer min-h-[220px] flex items-center justify-center text-center p-10"
         style={{
-          backgroundColor: 'var(--bg-card)',
-          border: `1px solid ${flipped ? '#8b5cf6' : 'var(--border)'}`,
+          borderColor: flipped ? '#8b5cf6' : 'var(--border)',
           boxShadow: flipped ? '0 0 30px rgba(139,92,246,0.15)' : 'none',
-          color: 'var(--text-primary)',
         }}
+        onClick={() => setFlipped(!flipped)}
+        hover={false}
       >
         <div>
           <div className="text-2xl font-bold mb-2 break-words">{flipped ? displayEnglish : displayGerman}</div>
@@ -466,21 +525,36 @@ export default function FlashcardPage() {
             )}
           </div>
         </div>
-      </button>
+      </Card>
 
       {flipped && (
         <div className="flex gap-3 justify-center mt-6">
-          <button onClick={() => handleReview(1)} className="flex items-center gap-2 px-6 py-3 rounded-lg" style={{ backgroundColor: 'rgba(255,51,85,0.15)', color: '#ff3355' }}>
+          <Button
+            variant="danger"
+            size="md"
+            onClick={() => handleReview(1)}
+            className="flex items-center gap-2"
+          >
             <ThumbsDown size={16} /> Hard
-          </button>
-          <button onClick={() => handleReview(3)} className="flex items-center gap-2 px-6 py-3 rounded-lg" style={{ backgroundColor: 'rgba(59,255,158,0.15)', color: '#3bff9e' }}>
+          </Button>
+          <Button
+            variant="success"
+            size="md"
+            onClick={() => handleReview(3)}
+            className="flex items-center gap-2"
+          >
             <ThumbsUp size={16} /> Good
-          </button>
-          <button onClick={() => handleReview(5)} className="flex items-center gap-2 px-6 py-3 rounded-lg" style={{ backgroundColor: 'rgba(0,240,255,0.15)', color: 'var(--accent)' }}>
+          </Button>
+          <Button
+            variant="primary"
+            size="md"
+            onClick={() => handleReview(5)}
+            className="flex items-center gap-2"
+          >
             <RefreshCw size={16} /> Easy
-          </button>
+          </Button>
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

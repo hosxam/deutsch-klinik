@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { BookOpen, ChevronLeft, Search } from 'lucide-react';
+import { PageShell, SectionHeader, Card } from '../components/ui';
 
 export default function FSPVocabPage() {
   const [vocab, setVocab] = useState([]);
@@ -33,20 +34,20 @@ export default function FSPVocabPage() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(59,130,246,0.15)' }}>
-          <BookOpen size={18} style={{ color: '#3b82f6' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>FSP Medical Vocabulary</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{vocab.length} terms across 30+ categories</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="FSP Medical Vocabulary"
+        subtitle={`${vocab.length} terms across 30+ categories`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(59,130,246,0.15)' }}>
+            <BookOpen size={18} style={{ color: '#3b82f6' }} />
+          </div>
+        }
+      />
 
       {/* Search + Filter */}
       <div className="flex gap-2 mb-4">
@@ -98,13 +99,13 @@ export default function FSPVocabPage() {
           )}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }
 
 function VocabSection({ category, items, showAnswer, setShowAnswer }) {
   return (
-    <div className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+    <Card className="overflow-hidden p-0">
       <div className="px-4 py-2.5 text-xs font-semibold" style={{ backgroundColor: 'var(--bg-hover)', color: '#3b82f6' }}>
         {category} ({items.length})
       </div>
@@ -158,6 +159,6 @@ function VocabSection({ category, items, showAnswer, setShowAnswer }) {
           </div>
         ))}
       </div>
-    </div>
+    </Card>
   );
 }

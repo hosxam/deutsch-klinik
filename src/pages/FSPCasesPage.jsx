@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Mic, ChevronLeft, ChevronDown, ChevronUp, AlertTriangle, Copy } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Badge } from '../components/ui';
 
 export default function FSPCasesPage() {
   const [cases, setCases] = useState([]);
@@ -20,20 +21,20 @@ export default function FSPCasesPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.15)' }}>
-          <Mic size={18} style={{ color: '#8b5cf6' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>FSP Speaking Cases</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{cases.length} case-based speaking scenarios</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="FSP Speaking Cases"
+        subtitle={`${cases.length} case-based speaking scenarios`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.15)' }}>
+            <Mic size={18} style={{ color: '#8b5cf6' }} />
+          </div>
+        }
+      />
 
       {cases.length === 0 ? (
         <div className="text-center py-12">
@@ -42,16 +43,14 @@ export default function FSPCasesPage() {
       ) : (
         <div className="space-y-3">
           {cases.map(c => (
-            <div key={c.id} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={c.id} className="overflow-hidden p-0">
               <button
                 onClick={() => setExpanded(prev => ({ ...prev, [c.id]: !prev[c.id] }))}
                 className="w-full flex items-center justify-between p-3 text-left"
                 style={{ backgroundColor: 'var(--bg-hover)' }}
               >
                 <div className="flex items-center gap-2">
-                  <span className="text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(139,92,246,0.15)', color: '#8b5cf6' }}>
-                    {c.setting || 'General'}
-                  </span>
+                  <Badge label={c.setting || 'General'} color="#8b5cf6" />
                   <span className="text-xs font-medium" style={{ color: 'var(--text-primary)' }}>{c.title}</span>
                 </div>
                 {expanded[c.id] ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -59,7 +58,7 @@ export default function FSPCasesPage() {
               {expanded[c.id] && (
                 <div className="p-3 space-y-3">
                   {/* Patient info */}
-                  <div className="p-3 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)' }}>
+                  <Card className="p-3" style={{ backgroundColor: 'var(--bg-hover)' }}>
                     <p className="text-xs font-semibold mb-2" style={{ color: '#f59e0b' }}>Patient Information</p>
                     <div className="grid grid-cols-2 gap-2 text-xs">
                       <div><span style={{ color: 'var(--text-muted)' }}>Age:</span> <span style={{ color: 'var(--text-secondary)' }}>{c.patientRole?.age}</span></div>
@@ -68,7 +67,7 @@ export default function FSPCasesPage() {
                       {c.patientRole?.history && <div className="col-span-2"><span style={{ color: 'var(--text-muted)' }}>History:</span> <span style={{ color: 'var(--text-secondary)' }}>{c.patientRole.history}</span></div>}
                       {c.patientRole?.medications && <div className="col-span-2"><span style={{ color: 'var(--text-muted)' }}>Medications:</span> <span style={{ color: 'var(--text-secondary)' }}>{c.patientRole.medications}</span></div>}
                     </div>
-                  </div>
+                  </Card>
 
                   {/* Doctor tasks */}
                   <div>
@@ -123,10 +122,10 @@ export default function FSPCasesPage() {
 
                   {/* Doctor-to-doctor summary */}
                   {c.doctorToDoctorSummary && (
-                    <div className="p-3 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.06)' }}>
+                    <Card className="p-3" style={{ backgroundColor: 'rgba(139,92,246,0.06)' }}>
                       <p className="text-xs font-semibold mb-1" style={{ color: '#8b5cf6' }}>Doctor-to-doctor summary</p>
                       <p className="text-xs" style={{ color: 'var(--text-secondary)' }}>{c.doctorToDoctorSummary}</p>
-                    </div>
+                    </Card>
                   )}
 
                   {/* AI feedback prompt */}
@@ -154,10 +153,10 @@ Rate each 1-5. Give specific improvement suggestions.`;
                   </button>
                 </div>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

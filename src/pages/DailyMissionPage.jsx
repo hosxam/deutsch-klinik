@@ -61,6 +61,7 @@ import {
   Volume2, MessageSquare, BookMarked,
   Square, Lightbulb
 } from 'lucide-react';
+import { PageShell, SectionHeader, Card, StatCard, Button, LoadingState, EmptyState, ProgressRing, PracticeStepper, LevelBadge, Badge } from '../components/ui';
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
 
 function normalizeAnswer(str) {
@@ -676,7 +677,7 @@ export default function DailyMissionPage() {
   }, [getCm, gq.length, initDone, lvl, mi, sesh, state]);
 
   const hVa = (sel, correct) => {
-    const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
+    const word = vocabDataRef.current?.find((w) => w.id === vq[vi]);
     const isCorrect = sel === correct;
     if (word) {
       recordVocabAnswer(`${lvl}_${word.id}`, isCorrect, {
@@ -703,7 +704,7 @@ export default function DailyMissionPage() {
     const cm = getCm();
     if (!cm || cm.type !== 'vocabulary') return;
     if (vq.length > 0) return;
-    const all = vocabData[lvl] || [];
+    const all = vocabDataRef.current || [];
     const done = state.levels?.[lvl]?.vocab || [];
     const context = getPracticeContext(lvl, sesh, state);
     let introduced;
@@ -736,7 +737,7 @@ export default function DailyMissionPage() {
     setVq(selected);
     const ld = loadSession(lvl) || sesh;
     if (ld) saveSession({ ...ld, selectedExerciseIds: { ...(ld.selectedExerciseIds || {}), vocab: selected }, vocabSelectionExhausted: false });
-  }, [getCm, initDone, lvl, mi, sesh, state, vq.length]);
+  }, [getCm, initDone, lvl, mi, sesh, state, vq.length, dataLoading]);
 
   const hLrnSk = () => advance('listening', { skipped: true });
   const hLrnN = () => {
@@ -786,7 +787,7 @@ export default function DailyMissionPage() {
 
   const hLrnTTS = () => {
     if (!ttsAvailable) return;
-    const items = listeningData[lvl] || [];
+    const items = listeningDataRef.current || [];
     const ni = state.levels?.[lvl]?.listening?.length || 0;
     const item = items[ni];
     if (!item || !item.script) return;
@@ -886,7 +887,7 @@ export default function DailyMissionPage() {
   };
 
   const handleCopyPrompt = () => {
-    const items = writingData[lvl] || [];
+    const items = writingDataRef.current || [];
     const ni = (getState().writings || []).filter((w) => w.level === lvl).length - 1;
     const item = ni >= 0 && ni < items.length ? items[ni] : null;
     const written = wtText;
@@ -895,7 +896,7 @@ export default function DailyMissionPage() {
   };
   const hWt = async () => {
     const cs = getState();
-    const items = writingData[lvl] || [];
+    const items = writingDataRef.current || [];
     const ni = (cs.writings || []).filter((w) => w.level === lvl).length;
     const item = items[ni];
     if (item) {
@@ -936,7 +937,7 @@ export default function DailyMissionPage() {
   const hWtN = () => { setWtText(''); setWritingPrompt(null); advance('writing', {}); };
 
   const handleSpCopyPrompt = () => {
-    const items = speakingData[lvl] || [];
+    const items = speakingDataRef.current || [];
     const ni = (getState().speakingRecordings?.[lvl]?.length || 0) - 1;
     const item = ni >= 0 && ni < items.length ? items[ni] : null;
     const spoken = spText;
@@ -989,7 +990,7 @@ export default function DailyMissionPage() {
   };
   const hSp = async () => {
     const cs = getState();
-    const items = speakingData[lvl] || [];
+    const items = speakingDataRef.current || [];
     const ni = (cs.speakingRecordings?.[lvl]?.length || 0);
     const item = items[ni];
     if (item) {
@@ -1057,10 +1058,10 @@ export default function DailyMissionPage() {
     const mistakeIds = vocabMistakes.map(m => String(m.exerciseId || '').replace(`${lvl}_`, ''));
     const poolIds = [...new Set([...mistakeIds, ...weakIds])];
     const words = poolIds
-      .map(id => (vocabData[lvl] || []).find(w => String(w.id) === String(id)))
+      .map(id => (vocabDataRef.current || []).find(w => String(w.id) === String(id)))
       .filter(Boolean)
       .slice(0, 10);
-    const fallbackWords = words.length > 0 ? words : (vocabData[lvl] || []).slice(0, 5);
+    const fallbackWords = words.length > 0 ? words : (vocabDataRef.current || []).slice(0, 5);
     const sourceCount = vocabMistakes.length || mistakes.length || weakIds.length;
     const skill = rec?.skill || (vocabMistakes.length ? 'Vocabulary' : 'Review');
     return {
@@ -1106,8 +1107,8 @@ export default function DailyMissionPage() {
     const vr2 = r.vocabulary || {};
     return (
       <LevelLock levelId={lvl}>
-        <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
-          <div style={{ background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem', textAlign: 'center' }}>
+        <PageShell maxWidth="max-w-2xl">
+          <Card className="text-center">
             <CheckCircle size={48} style={{ color: '#22c55e', marginBottom: '1rem' }} />
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>Daily Plan Complete!</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Great job! You completed today&apos;s study plan for {lvl}.</p>
@@ -1163,8 +1164,8 @@ export default function DailyMissionPage() {
             <Link to={'/level/' + levelId} style={{ padding: '0.6rem 1rem', borderRadius: '8px', border: 'none', background: 'var(--accent)', color: '#000', cursor: 'pointer', fontWeight: 600, fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', textDecoration: 'none' }}>
               <Home size={16} /> Back to Dashboard
             </Link>
-          </div>
-        </div>
+          </Card>
+        </PageShell>
       </LevelLock>
     );
   }
@@ -1172,8 +1173,8 @@ export default function DailyMissionPage() {
   if (!initDone || !getCm()) {
     return (
       <LevelLock levelId={lvl}>
-        <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
-          <div style={{ background: 'var(--bg-card)', borderRadius: '12px', padding: '1.5rem', border: '1px solid var(--border)', marginBottom: '1rem', textAlign: 'center', paddingTop: '3rem', paddingBottom: '3rem' }}>
+        <PageShell maxWidth="max-w-2xl">
+          <Card className="text-center" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
             {ms.length === 0 ? (
               <>
                 <GraduationCap size={40} style={{ color: 'var(--text-muted)', marginBottom: '1rem' }} />
@@ -1183,9 +1184,9 @@ export default function DailyMissionPage() {
                   <Home size={16} /> Back to Dashboard
                 </Link>
               </>
-            ) : <p style={{ color: 'var(--text-muted)' }}>Loading your daily plan...</p>}
-          </div>
-        </div>
+            ) : <LoadingState message="Loading your daily plan..." />}
+          </Card>
+        </PageShell>
       </LevelLock>
     );
   }
@@ -1208,7 +1209,7 @@ export default function DailyMissionPage() {
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    let items = (listeningData[level] || []).filter(item => !completed.has(item.id));
+    let items = (listeningDataRef.current || []).filter(item => !completed.has(item.id));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isListeningUnlocked(item.id, s));
@@ -1224,7 +1225,7 @@ export default function DailyMissionPage() {
   const getNextReading = (level) => {
     const s = getState();
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
-    let items = (readingData[level] || []).filter(item => !completed.has(item.id));
+    let items = (readingDataRef.current || []).filter(item => !completed.has(item.id));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isReadingUnlocked(item.id, s));
@@ -1239,7 +1240,7 @@ export default function DailyMissionPage() {
   const getNextWriting = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.writing || []).map(x => x.id || x.exerciseId || x));
-    let data = writingData[level] || [];
+    let data = writingDataRef.current || [];
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isWritingUnlocked(item.id, s));
       return data[0] || null;
@@ -1249,7 +1250,7 @@ export default function DailyMissionPage() {
   const getNextSpeaking = (level) => {
     const s = getState();
     const completed = new Set((s.levels?.[level]?.speaking || []).map(x => x.id || x.exerciseId || x));
-    let data = speakingData[level] || [];
+    let data = speakingDataRef.current || [];
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isSpeakingUnlocked(item.id, s));
       return data[0] || null;
@@ -1273,12 +1274,43 @@ export default function DailyMissionPage() {
   const so = { display: 'block', width: '100%', padding: '0.7rem 1rem', marginBottom: '0.4rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' };
   const sos = { display: 'block', width: '100%', padding: '0.7rem 1rem', marginBottom: '0.4rem', borderRadius: '8px', border: '2px solid var(--accent)', background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' };
 
+  if (dataLoading) {
+    return (
+      <LevelLock levelId={lvl}>
+        <PageShell maxWidth="max-w-2xl">
+          <LoadingState message="Loading your daily plan..." />
+        </PageShell>
+      </LevelLock>
+    );
+  }
+
+  if (dataError) {
+    return (
+      <LevelLock levelId={lvl}>
+        <PageShell maxWidth="max-w-2xl">
+          <Card className="text-center">
+            <AlertCircle size={36} style={{ color: '#ff3355', margin: '0 auto 1rem', display: 'block' }} />
+            <h2 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>Failed to load data</h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '1rem' }}>{dataError}</p>
+            <Button onClick={() => window.location.reload()} variant="secondary" size="sm">
+              <RefreshCw size={14} style={{ marginRight: '0.3rem', verticalAlign: 'middle' }} />
+              Reload Page
+            </Button>
+          </Card>
+        </PageShell>
+      </LevelLock>
+    );
+  }
+
   return (
     <LevelLock levelId={lvl}><style>{'@keyframes dmp-spin{to{transform:rotate(360deg)}}@keyframes dmp-pulse{0%,100%{opacity:1}50%{opacity:0.4}}'}</style>
-      <div style={{ maxWidth: '700px', margin: '0 auto', padding: '1rem' }}>
+      <PageShell maxWidth="max-w-2xl">
         {/* Header */}
         <div style={{ marginBottom: '1rem' }}>
-          <h1 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.25rem', color: 'var(--text-primary)' }}>Today&apos;s Plan</h1>
+          <SectionHeader
+            title="Today's Plan"
+            action={<Link to={'/level/' + levelId} style={sBs}><Home size={14} /> Dashboard</Link>}
+          />
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               {meta && React.createElement(meta.icon, { size: 18, style: { color: meta.accent } })}
@@ -1286,7 +1318,6 @@ export default function DailyMissionPage() {
                 Mission {mi + 1} of {ms.length}
               </span>
             </div>
-            <Link to={'/level/' + levelId} style={sBs}><Home size={14} /> Dashboard</Link>
           </div>
           {meta && <h2 style={{ fontSize: '1.2rem', fontWeight: 700, color: meta.accent, margin: '0.3rem 0' }}>{meta.title}</h2>}
           {cm && <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Target: {cm.label}</p>}
@@ -1308,7 +1339,7 @@ export default function DailyMissionPage() {
 
         {/* LESSON */}
         {cm.type === 'lesson' && !lsDone && (
-          <div style={sCard}>
+          <Card>
             {!lsStart ? (
               <div>
                 <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{cm.nextLesson?.title || 'Next Lesson'}</h3>
@@ -1383,7 +1414,7 @@ export default function DailyMissionPage() {
         )}
         {/* Lesson complete */}
         {cm.type === 'lesson' && lsDone && (
-          <div style={{ ...sCard, textAlign: 'center' }}>
+          <Card className="text-center">
             <CheckCircle size={36} style={{ color: '#22c55e', marginBottom: '0.75rem' }} />
             <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#22c55e', marginBottom: '0.5rem' }}>Lesson Complete!</h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{cm.nextLesson?.title} completed.</p>
@@ -1394,7 +1425,7 @@ export default function DailyMissionPage() {
 
       {/* GRAMMAR CURRICULUM LESSON */}
       {cm.type === 'grammarLesson' && !gcDone && (
-        <div style={sCard}>
+        <Card>
           {!gcStart ? (
             <div>
               <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
@@ -1553,7 +1584,7 @@ export default function DailyMissionPage() {
         </div>
       )}
       {cm.type === 'grammarLesson' && gcDone && (
-        <div style={{ ...sCard, textAlign: 'center' }}>
+        <Card className="text-center">
           <BookMarked size={36} style={{ color: '#a855f7', marginBottom: '0.75rem' }} />
           <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#a855f7', marginBottom: '0.5rem' }}>Grammar Lesson Complete!</h3>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{gcLesson?.title} completed.</p>
@@ -1566,7 +1597,7 @@ export default function DailyMissionPage() {
         const ex = grammarDataRef.current?.find((e) => e.id === gq[gi]);
         if (gEmpty) {
           return (
-            <div style={sCard}>
+            <Card>
               <Lightbulb size={28} style={{ color: '#f59e0b', marginBottom: '0.75rem' }} />
               <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>No aligned grammar questions yet</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
@@ -1588,7 +1619,7 @@ export default function DailyMissionPage() {
         if (gw >= gq.length && gq.length > 0) {
           const wr = gw - gc;
           return (
-            <div style={sCard}>
+            <Card>
               {!gReviewMode ? (
                 <div style={{ textAlign: 'center' }}>
                   <BarChart3 size={36} style={{ color: '#f59e0b', marginBottom: '0.75rem' }} />
@@ -1697,7 +1728,7 @@ export default function DailyMissionPage() {
 
       {/* VOCABULARY */}
       {cm.type === 'vocabulary' && (() => {
-        const word = vocabData[lvl]?.find((w) => w.id === vq[vi]);
+        const word = vocabDataRef.current?.find((w) => w.id === vq[vi]);
         if (vEmpty) {
           return (
             <div style={sCard}>
@@ -1726,7 +1757,7 @@ export default function DailyMissionPage() {
           );
         }
 
-        const options = vocabData[lvl]?.filter((w) => w.id !== word.id).map((w) => w.translation) || [];
+        const options = vocabDataRef.current?.filter((w) => w.id !== word.id).map((w) => w.translation) || [];
         const shuffled = [word.translation, ...shuffleArray(options).slice(0, 3)];
         const finalOptions = shuffleArray(shuffled);
 
@@ -2064,7 +2095,7 @@ export default function DailyMissionPage() {
         const target = cm?.target || 10;
         // Build card deck on first render
         if (fcCards.length === 0 && !fcDone && !fcStarted) {
-          const levelWords = (vocabData[lvl] || []).map(w => ({ ...w, level: lvl }));
+          const levelWords = (vocabDataRef.current || []).map(w => ({ ...w, level: lvl }));
           const allIds = levelWords.map(w => `${lvl}_${w.id}`);
           const dueIds = new Set(getDueVocabWords(allIds));
           const deck = levelWords
@@ -2705,7 +2736,7 @@ export default function DailyMissionPage() {
           </div>
         );
       })()}
-    </div>
+    </PageShell>
   </LevelLock>
 );
 }

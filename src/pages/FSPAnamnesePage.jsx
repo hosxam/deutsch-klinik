@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ListChecks, ChevronLeft, ChevronDown, ChevronUp } from 'lucide-react';
+import { PageShell, SectionHeader, Card } from '../components/ui';
 
 export default function FSPAnamnesePage() {
   const [anamnese, setAnamnese] = useState([]);
@@ -25,20 +26,20 @@ export default function FSPAnamnesePage() {
   const filtered = selectedCategory === 'all' ? anamnese : anamnese.filter(a => a.category === selectedCategory);
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <PageShell>
       <Link to="/medical-fsp" className="inline-flex items-center gap-1 text-xs mb-4" style={{ color: 'var(--accent)' }}>
         <ChevronLeft size={14} /> Back to FSP Hub
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(6,182,212,0.15)' }}>
-          <ListChecks size={18} style={{ color: '#06b6d4' }} />
-        </div>
-        <div>
-          <h1 className="text-lg font-bold" style={{ color: 'var(--accent)' }}>Anamnese Practice</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{anamnese.length} structured history-taking prompts</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Anamnese Practice"
+        subtitle={`${anamnese.length} structured history-taking prompts`}
+        action={
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(6,182,212,0.15)' }}>
+            <ListChecks size={18} style={{ color: '#06b6d4' }} />
+          </div>
+        }
+      />
 
       {/* Category filter */}
       {categories.length > 0 && (
@@ -74,7 +75,7 @@ export default function FSPAnamnesePage() {
       ) : (
         <div className="space-y-2">
           {filtered.map(item => (
-            <div key={item.id} className="rounded-xl overflow-hidden" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={item.id} className="overflow-hidden p-0">
               <button
                 onClick={() => setExpanded(prev => ({ ...prev, [item.id]: !prev[item.id] }))}
                 className="w-full flex items-center justify-between p-3 text-left"
@@ -118,10 +119,10 @@ export default function FSPAnamnesePage() {
                   )}
                 </div>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
-    </div>
+    </PageShell>
   );
 }

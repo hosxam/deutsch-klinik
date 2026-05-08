@@ -7,6 +7,7 @@ import {
   Monitor, MessageSquare, HeartPulse, Syringe, Bone, Ambulance, Baby, Brain, FlaskConical,
   Layers, ChevronLeft, ChevronRight as ChevronRightIcon
 } from 'lucide-react';
+import { PageShell, SectionHeader, FeatureCard, Card, Badge, Button } from '../components/ui';
 
 // FSP progress counts (static for now, will be dynamic with localStorage later)
 const progressDefaults = {
@@ -88,20 +89,20 @@ export default function MedicalFSPHubPage() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <PageShell maxWidth="max-w-6xl">
       {/* Header */}
-      <div className="flex items-center gap-3 mb-2">
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.15)' }}>
-          <Stethoscope size={24} style={{ color: '#8b5cf6' }} />
-        </div>
-        <div>
-          <h1 className="text-xl font-bold" style={{ color: 'var(--accent)' }}>Medical German / FSP Hub</h1>
-          <p className="text-xs" style={{ color: 'var(--text-muted)' }}>Focused preparation for the Fachsprachpruefung</p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Medical German / FSP Hub"
+        subtitle="Focused preparation for the Fachsprachpruefung"
+        action={
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(139,92,246,0.15)' }}>
+            <Stethoscope size={24} style={{ color: '#8b5cf6' }} />
+          </div>
+        }
+      />
 
       {/* FSP Track Description */}
-      <div className="rounded-xl p-5 mb-5" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid rgba(139,92,246,0.2)' }}>
+      <Card className="mb-5" style={{ border: '1px solid rgba(139,92,246,0.2)' }}>
         <h2 className="text-sm font-semibold mb-3 flex items-center gap-2" style={{ color: '#8b5cf6' }}>
           <GraduationCap size={16} /> What is the FSP?
         </h2>
@@ -120,27 +121,31 @@ export default function MedicalFSPHubPage() {
             <span className="text-xs">20 modules &middot; 40 lessons &middot; 9 skill areas</span>
           </span>
         </div>
-      </div>
+      </Card>
 
       {/* C1 lock warning */}
       {!c1Unlocked && (
-        <div className="rounded-xl p-3 mb-5 flex items-start gap-2" style={{ backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.25)' }}>
-          <AlertTriangle size={16} style={{ color: '#ff3355', flexShrink: 0, marginTop: '2px' }} />
-          <div>
-            <p className="text-xs font-semibold" style={{ color: '#ff3355' }}>C1 content not yet unlocked</p>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--text-secondary)' }}>
-              You can still use FSP materials. We recommend completing B1-B2 first for best results.
-            </p>
+        <Card className="mb-5" style={{ backgroundColor: 'rgba(255,51,85,0.08)', border: '1px solid rgba(255,51,85,0.25)', padding: '0.75rem' }}>
+          <div className="flex items-start gap-2">
+            <AlertTriangle size={16} style={{ color: '#ff3355', flexShrink: 0, marginTop: '2px' }} />
+            <div>
+              <p className="text-xs font-semibold" style={{ color: '#ff3355' }}>C1 content not yet unlocked</p>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--text-secondary)' }}>
+                You can still use FSP materials. We recommend completing B1-B2 first for best results.
+              </p>
+            </div>
           </div>
-        </div>
+        </Card>
       )}
 
       {/* Progress Cards */}
       <div className="mb-5">
-        <div className="flex items-center gap-2 mb-3">
-          <ClipboardCheck size={16} style={{ color: '#22c55e' }} />
-          <h2 className="text-sm font-semibold" style={{ color: '#22c55e' }}>Progress Overview</h2>
-        </div>
+        <SectionHeader title="" subtitle="" action={
+          <div className="flex items-center gap-2">
+            <ClipboardCheck size={16} style={{ color: '#22c55e' }} />
+            <h2 className="text-sm font-semibold" style={{ color: '#22c55e' }}>Progress Overview</h2>
+          </div>
+        } />
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
           {[
             { label: 'Vocabulary', icon: BookOpen, color: '#3b82f6', current: progress.vocabulary, total: '1,000+' },
@@ -153,24 +158,26 @@ export default function MedicalFSPHubPage() {
             { label: 'Grammar', icon: Star, color: '#a855f7', current: progress.grammar, total: '150+' },
             { label: 'Mock Exams', icon: CalendarCheck, color: '#ef4444', current: progress.mockExams, total: '10' },
           ].map(stat => (
-            <div key={stat.label} className="rounded-xl p-3 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+            <Card key={stat.label} className="text-center p-3">
               <div className="flex justify-center mb-1">
                 <stat.icon size={16} style={{ color: stat.color }} />
               </div>
               <div className="text-lg font-bold" style={{ color: stat.color }}>{stat.current}</div>
               <div className="text-[10px]" style={{ color: 'var(--text-muted)' }}>{stat.label}</div>
               <div className="text-[9px]" style={{ color: 'var(--text-muted)' }}>Target: {stat.total}</div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
 
       {/* Skill Area Links */}
       <div className="mb-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Target size={16} style={{ color: '#ffaa33' }} />
-          <h2 className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Skill Areas</h2>
-        </div>
+        <SectionHeader title="" subtitle="" action={
+          <div className="flex items-center gap-2">
+            <Target size={16} style={{ color: '#ffaa33' }} />
+            <h2 className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Skill Areas</h2>
+          </div>
+        } />
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
           {SKILL_LINKS.map(btn => {
             const Icon = btn.icon;
@@ -191,10 +198,12 @@ export default function MedicalFSPHubPage() {
 
       {/* FSP Module Grid */}
       <div className="mb-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Layers size={16} style={{ color: '#8b5cf6' }} />
-          <h2 className="text-sm font-semibold" style={{ color: '#8b5cf6' }}>FSP Modules (20 Modules, 40 Lessons)</h2>
-        </div>
+        <SectionHeader title="" subtitle="" action={
+          <div className="flex items-center gap-2">
+            <Layers size={16} style={{ color: '#8b5cf6' }} />
+            <h2 className="text-sm font-semibold" style={{ color: '#8b5cf6' }}>FSP Modules (20 Modules, 40 Lessons)</h2>
+          </div>
+        } />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {FSP_MODULES.map(mod => {
             const Icon = mod.icon;
@@ -261,10 +270,12 @@ export default function MedicalFSPHubPage() {
 
       {/* Quick Actions */}
       <div className="mb-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Target size={16} style={{ color: '#ffaa33' }} />
-          <h2 className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Quick Actions</h2>
-        </div>
+        <SectionHeader title="" subtitle="" action={
+          <div className="flex items-center gap-2">
+            <Target size={16} style={{ color: '#ffaa33' }} />
+            <h2 className="text-sm font-semibold" style={{ color: '#ffaa33' }}>Quick Actions</h2>
+          </div>
+        } />
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
           {quickActions.map(btn => {
             const Icon = btn.icon;
@@ -286,10 +297,12 @@ export default function MedicalFSPHubPage() {
 
       {/* Study Path */}
       <div className="mb-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Clock size={16} style={{ color: '#8b5cf6' }} />
-          <h2 className="text-sm font-semibold" style={{ color: '#8b5cf6' }}>Recommended Study Path</h2>
-        </div>
+        <SectionHeader title="" subtitle="" action={
+          <div className="flex items-center gap-2">
+            <Clock size={16} style={{ color: '#8b5cf6' }} />
+            <h2 className="text-sm font-semibold" style={{ color: '#8b5cf6' }}>Recommended Study Path</h2>
+          </div>
+        } />
         <div className="space-y-2">
           {studyPath.map(item => {
             const Icon = item.icon;
@@ -317,6 +330,6 @@ export default function MedicalFSPHubPage() {
           })}
         </div>
       </div>
-    </div>
+    </PageShell>
   );
 }
