@@ -9246,7 +9246,8 @@
             "Zu wenige Krankenhäuser",
             "Mangel an Medikamenten"
           ],
-          "answer": "Demografischer Wandel mit mehr älteren Patienten"
+          "answer": "Demografischer Wandel mit mehr älteren Patienten",
+          "explanation": "Based on the text: Das deutsche Gesundheitssystem gilt als eines der leistungsfähigsten der Welt, steht jedoch vor erhe..."
         },
         {
           "id": "qr32",
@@ -9265,7 +9266,8 @@
             "Schließung von Krankenhäusern",
             "Weniger Medikamente"
           ],
-          "answer": "Mehr Prävention und Digitalisierung"
+          "answer": "Mehr Prävention und Digitalisierung",
+          "explanation": "Based on the text: Das deutsche Gesundheitssystem gilt als eines der leistungsfähigsten der Welt, steht jedoch vor erhe..."
         },
         {
           "id": "qr34",
@@ -9277,11 +9279,18 @@
             "reformierende",
             "Reform"
           ],
-          "answer": "reformiert"
+          "answer": "reformiert",
+          "explanation": "Based on the text: Das deutsche Gesundheitssystem gilt als eines der leistungsfähigsten der Welt, steht jedoch vor erhe..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_3"
+      "lessonId": "C1_lesson_3",
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ]
     },
     {
       "id": "C1_read_2",
@@ -9298,13 +9307,15 @@
             "Aktive Sterbehilfe ist erlaubt",
             "Keine Entscheidung getroffen"
           ],
-          "answer": "Recht auf selbstbestimmtes Sterben gestärkt"
+          "answer": "Recht auf selbstbestimmtes Sterben gestärkt",
+          "explanation": "Based on the text: Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unters..."
         },
         {
           "id": "qr36",
           "type": "true-false",
           "question": "Aktive Sterbehilfe ist in Deutschland unter bestimmten Umständen erlaubt.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unters..."
         },
         {
           "id": "qr37",
@@ -9316,7 +9327,8 @@
             "keinen",
             "keinerlei"
           ],
-          "answer": "bestimmten"
+          "answer": "bestimmten",
+          "explanation": "Based on the text: Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unters..."
         },
         {
           "id": "qr38",
@@ -9328,11 +9340,18 @@
             "Ärztemangel",
             "Religiöse Überzeugungen"
           ],
-          "answer": "Patientenautonomie"
+          "answer": "Patientenautonomie",
+          "explanation": "Based on the text: Die Debatte über Sterbehilfe wird in Deutschland seit Jahren intensiv geführt. Medizinethiker unters..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_11"
+      "lessonId": "C1_lesson_11",
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.recht.ethik",
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_read_3",
@@ -9349,13 +9368,15 @@
             "Nur der Norden",
             "Nur der Osten"
           ],
-          "answer": "Ländliche Regionen"
+          "answer": "Ländliche Regionen",
+          "explanation": "Based on the text: Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschä..."
         },
         {
           "id": "qr40",
           "type": "true-false",
           "question": "Alle Maßnahmen der Regierung werden von Kritikern als ausreichend angesehen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschä..."
         },
         {
           "id": "qr41",
@@ -9367,7 +9388,8 @@
             "Ein Gesetz der Regierung",
             "Eine neue Behandlungsmethode"
           ],
-          "answer": "Eine negative Spirale von Arbeitsbelastung und Abwanderung"
+          "answer": "Eine negative Spirale von Arbeitsbelastung und Abwanderung",
+          "explanation": "Based on the text: Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschä..."
         },
         {
           "id": "qr42",
@@ -9379,11 +9401,18 @@
             "abgeschaffte",
             "komplizierte"
           ],
-          "answer": "erleichterte"
+          "answer": "erleichterte",
+          "explanation": "Based on the text: Der Fachkräftemangel im deutschen Gesundheitswesen hat sich in den letzten Jahren dramatisch verschä..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_3"
+      "lessonId": "C1_lesson_3",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ]
     },
     {
       "id": "C1_read_4",
@@ -9400,7 +9429,8 @@
             "Er finanziert Forschungsprojekte",
             "Er ersetzt die statistische Analyse"
           ],
-          "answer": "Er sichert die Qualität und Validität wissenschaftlicher Arbeiten"
+          "answer": "Er sichert die Qualität und Validität wissenschaftlicher Arbeiten",
+          "explanation": "Based on the text: Die Veröffentlichung von Forschungsergebnissen in medizinischen Fachzeitschriften unterliegt strenge..."
         },
         {
           "id": "qr44",
@@ -9419,7 +9449,8 @@
             "Die Beherrschung aller OP-Techniken",
             "Die Verwaltung von Krankenhausbudgets"
           ],
-          "answer": "Die Fähigkeit, Forschungsergebnisse kritisch zu bewerten"
+          "answer": "Die Fähigkeit, Forschungsergebnisse kritisch zu bewerten",
+          "explanation": "Based on the text: Die Veröffentlichung von Forschungsergebnissen in medizinischen Fachzeitschriften unterliegt strenge..."
         },
         {
           "id": "qr46",
@@ -9431,11 +9462,18 @@
             "Publication-Review",
             "Research-Check"
           ],
-          "answer": "Peer-Review"
+          "answer": "Peer-Review",
+          "explanation": "Based on the text: Die Veröffentlichung von Forschungsergebnissen in medizinischen Fachzeitschriften unterliegt strenge..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_1"
+      "lessonId": "C1_lesson_1",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ]
     },
     {
       "id": "C1_read_5",
@@ -9452,13 +9490,15 @@
             "Die Privatversicherung",
             "Die Pflegepersonalregelung"
           ],
-          "answer": "Die reine Fallpauschale"
+          "answer": "Die reine Fallpauschale",
+          "explanation": "Based on the text: Die deutsche Krankenhauslandschaft befindet sich in einem tiefgreifenden Umbruch. Die Einführung ein..."
         },
         {
           "id": "qr48",
           "type": "true-false",
           "question": "Das derzeitige Vergütungssystem setzt laut Kritikern Fehlanreize.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die deutsche Krankenhauslandschaft befindet sich in einem tiefgreifenden Umbruch. Die Einführung ein..."
         },
         {
           "id": "qr49",
@@ -9470,7 +9510,8 @@
             "Akutpatienten",
             "Notfallpatienten"
           ],
-          "answer": "Multimorbide Patienten"
+          "answer": "Multimorbide Patienten",
+          "explanation": "Based on the text: Die deutsche Krankenhauslandschaft befindet sich in einem tiefgreifenden Umbruch. Die Einführung ein..."
         },
         {
           "id": "qr50",
@@ -9482,11 +9523,18 @@
             "intramurale",
             "präventive"
           ],
-          "answer": "sektorenübergreifende"
+          "answer": "sektorenübergreifende",
+          "explanation": "Based on the text: Die deutsche Krankenhauslandschaft befindet sich in einem tiefgreifenden Umbruch. Die Einführung ein..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_2"
+      "lessonId": "C1_lesson_2",
+      "taughtInLessonId": "C1_lesson_5",
+      "conceptId": "c1.rhetorik.schreiben",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_read_6",
@@ -9503,7 +9551,8 @@
             "Zu wenigen Medizinstudienplätzen",
             "Einer zu langen Weiterbildungszeit"
           ],
-          "answer": "Einem Verteilungsproblem zwischen Stadt und Land"
+          "answer": "Einem Verteilungsproblem zwischen Stadt und Land",
+          "explanation": "Based on the text: Der vielbeschworene Ärztemangel in Deutschland ist weniger ein absoluter Mangel an Medizinern als vi..."
         },
         {
           "id": "qr52",
@@ -9515,7 +9564,8 @@
             "Knapp die Hälfte",
             "Mehr als zwei Drittel"
           ],
-          "answer": "Über ein Drittel"
+          "answer": "Über ein Drittel",
+          "explanation": "Based on the text: Der vielbeschworene Ärztemangel in Deutschland ist weniger ein absoluter Mangel an Medizinern als vi..."
         },
         {
           "id": "qr53",
@@ -9534,11 +9584,18 @@
             "Ambulante",
             "Präventive"
           ],
-          "answer": "Telemedizinische"
+          "answer": "Telemedizinische",
+          "explanation": "Based on the text: Der vielbeschworene Ärztemangel in Deutschland ist weniger ein absoluter Mangel an Medizinern als vi..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_4"
+      "lessonId": "C1_lesson_4",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_read_7",
@@ -9555,7 +9612,8 @@
             "Die Kosten-Nutzen-Abwägung",
             "Die ärztliche Fürsorgepflicht"
           ],
-          "answer": "Die informierte Einwilligung des Patienten"
+          "answer": "Die informierte Einwilligung des Patienten",
+          "explanation": "Based on the text: Das Prinzip der Patientenautonomie hat in den letzten Jahrzehnten einen grundlegenden Wandel im Arzt..."
         },
         {
           "id": "qr56",
@@ -9574,7 +9632,8 @@
             "Die Kosten für Behandlungen zu senken",
             "Die Arzt-Patienten-Kommunikation zu vermeiden"
           ],
-          "answer": "Selbstbestimmung zu respektieren ohne zu überfordern"
+          "answer": "Selbstbestimmung zu respektieren ohne zu überfordern",
+          "explanation": "Based on the text: Das Prinzip der Patientenautonomie hat in den letzten Jahrzehnten einen grundlegenden Wandel im Arzt..."
         },
         {
           "id": "qr58",
@@ -9586,11 +9645,18 @@
             "Die Wartezeiten",
             "Die Personalausstattung"
           ],
-          "answer": "Diagnose und Therapieoptionen"
+          "answer": "Diagnose und Therapieoptionen",
+          "explanation": "Based on the text: Das Prinzip der Patientenautonomie hat in den letzten Jahrzehnten einen grundlegenden Wandel im Arzt..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_11"
+      "lessonId": "C1_lesson_11",
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.sprachliche.nuancen",
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ]
     },
     {
       "id": "C1_read_8",
@@ -9607,7 +9673,8 @@
             "Bevorzugung randomisierter Studien ohne Ausnahme",
             "Vollständige Digitalisierung der Patientenversorgung"
           ],
-          "answer": "Verbindung klinischer Erfahrung mit externer Evidenz"
+          "answer": "Verbindung klinischer Erfahrung mit externer Evidenz",
+          "explanation": "Based on the text: Die evidenzbasierte Medizin hat sich als Leitparadigma der klinischen Praxis etabliert. Ihr Kern bes..."
         },
         {
           "id": "qr60",
@@ -9626,7 +9693,8 @@
             "Sie sind zu umfangreich",
             "Sie werden nicht aktualisiert"
           ],
-          "answer": "Sie werden als starre Vorschriften missverstanden"
+          "answer": "Sie werden als starre Vorschriften missverstanden",
+          "explanation": "Based on the text: Die evidenzbasierte Medizin hat sich als Leitparadigma der klinischen Praxis etabliert. Ihr Kern bes..."
         },
         {
           "id": "qr62",
@@ -9638,11 +9706,18 @@
             "Basisniveau",
             "Mindestanforderung"
           ],
-          "answer": "Goldstandard"
+          "answer": "Goldstandard",
+          "explanation": "Based on the text: Die evidenzbasierte Medizin hat sich als Leitparadigma der klinischen Praxis etabliert. Ihr Kern bes..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_6"
+      "lessonId": "C1_lesson_6",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_9",
@@ -9659,7 +9734,8 @@
             "Abschaffung der Papierakte",
             "Senkung der Medikamentenkosten"
           ],
-          "answer": "Vermeidung von Doppeluntersuchungen"
+          "answer": "Vermeidung von Doppeluntersuchungen",
+          "explanation": "Based on the text: Die Einführung der elektronischen Patientenakte in Deutschland hat eine kontroverse Debatte über Nut..."
         },
         {
           "id": "qr64",
@@ -9678,7 +9754,8 @@
             "Von der Anzahl der Krankenhäuser",
             "Von der Finanzierung durch die Krankenkassen"
           ],
-          "answer": "Von der Akzeptanz der Nutzer und Benutzerfreundlichkeit"
+          "answer": "Von der Akzeptanz der Nutzer und Benutzerfreundlichkeit",
+          "explanation": "Based on the text: Die Einführung der elektronischen Patientenakte in Deutschland hat eine kontroverse Debatte über Nut..."
         },
         {
           "id": "qr66",
@@ -9690,11 +9767,18 @@
             "Zeitaufwand",
             "Kompatibilitäts"
           ],
-          "answer": "Datenschutz"
+          "answer": "Datenschutz",
+          "explanation": "Based on the text: Die Einführung der elektronischen Patientenakte in Deutschland hat eine kontroverse Debatte über Nut..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_7"
+      "lessonId": "C1_lesson_7",
+      "taughtInLessonId": "C1_lesson_9",
+      "conceptId": "c1.literatur.interpretation",
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ]
     },
     {
       "id": "C1_read_10",
@@ -9711,7 +9795,8 @@
             "Die Notaufnahme",
             "Das Gesundheitsamt"
           ],
-          "answer": "Das Tumorboard"
+          "answer": "Das Tumorboard",
+          "explanation": "Based on the text: Die zunehmende Spezialisierung in der Medizin erfordert eine enge interdisziplinäre Zusammenarbeit. ..."
         },
         {
           "id": "qr68",
@@ -9730,7 +9815,8 @@
             "Mangel an Spezialisten",
             "Zu hohe Kosten"
           ],
-          "answer": "Unterschiedliche Fachsprachen und Hierarchiedenken"
+          "answer": "Unterschiedliche Fachsprachen und Hierarchiedenken",
+          "explanation": "Based on the text: Die zunehmende Spezialisierung in der Medizin erfordert eine enge interdisziplinäre Zusammenarbeit. ..."
         },
         {
           "id": "qr70",
@@ -9742,11 +9828,18 @@
             "Gesprächs",
             "Diskussions"
           ],
-          "answer": "Feedback"
+          "answer": "Feedback",
+          "explanation": "Based on the text: Die zunehmende Spezialisierung in der Medizin erfordert eine enge interdisziplinäre Zusammenarbeit. ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_8"
+      "lessonId": "C1_lesson_8",
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ]
     },
     {
       "id": "C1_read_11",
@@ -9763,13 +9856,15 @@
             "Eine präventive Kultur",
             "Eine Lernkultur"
           ],
-          "answer": "Eine Schuldzuweisungskultur"
+          "answer": "Eine Schuldzuweisungskultur",
+          "explanation": "Based on the text: Jährlich ereignen sich in deutschen Krankenhäusern tausende unerwünschte Ereignisse, von denen ein e..."
         },
         {
           "id": "qr72",
           "type": "true-false",
           "question": "Fehlermeldesysteme ermöglichen eine anonyme Berichterstattung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Jährlich ereignen sich in deutschen Krankenhäusern tausende unerwünschte Ereignisse, von denen ein e..."
         },
         {
           "id": "qr73",
@@ -9781,7 +9876,8 @@
             "Mehr Betten pro Station",
             "Höhere Fallpauschalen"
           ],
-          "answer": "OP-Checklisten und Simulationstrainings"
+          "answer": "OP-Checklisten und Simulationstrainings",
+          "explanation": "Based on the text: Jährlich ereignen sich in deutschen Krankenhäusern tausende unerwünschte Ereignisse, von denen ein e..."
         },
         {
           "id": "qr74",
@@ -9793,11 +9889,18 @@
             "disziplinarische",
             "finanzielle"
           ],
-          "answer": "präventive"
+          "answer": "präventive",
+          "explanation": "Based on the text: Jährlich ereignen sich in deutschen Krankenhäusern tausende unerwünschte Ereignisse, von denen ein e..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_5"
+      "lessonId": "C1_lesson_5",
+      "taughtInLessonId": "C1_lesson_11",
+      "conceptId": "c1.kognitive.linguistik",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ]
     },
     {
       "id": "C1_read_12",
@@ -9814,7 +9917,8 @@
             "Über zwanzig Prozent",
             "Etwa dreißig Prozent"
           ],
-          "answer": "Rund zwölf Prozent"
+          "answer": "Rund zwölf Prozent",
+          "explanation": "Based on the text: Deutschland ist auf die Zuwanderung ausländischer Ärztinnen und Ärzte angewiesen, um den steigenden ..."
         },
         {
           "id": "qr76",
@@ -9826,13 +9930,15 @@
             "Mangel an Wohnraum",
             "Fehlende Operationsmöglichkeiten"
           ],
-          "answer": "Sprachliche Hürden und bürokratische Anerkennungsverfahren"
+          "answer": "Sprachliche Hürden und bürokratische Anerkennungsverfahren",
+          "explanation": "Based on the text: Deutschland ist auf die Zuwanderung ausländischer Ärztinnen und Ärzte angewiesen, um den steigenden ..."
         },
         {
           "id": "qr77",
           "type": "true-false",
           "question": "Eine gelungene Integration verbessert die Versorgungsqualität in multikulturellen Teams.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Deutschland ist auf die Zuwanderung ausländischer Ärztinnen und Ärzte angewiesen, um den steigenden ..."
         },
         {
           "id": "qr78",
@@ -9844,11 +9950,18 @@
             "Forschungs",
             "Management"
           ],
-          "answer": "Integrations"
+          "answer": "Integrations",
+          "explanation": "Based on the text: Deutschland ist auf die Zuwanderung ausländischer Ärztinnen und Ärzte angewiesen, um den steigenden ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_9"
+      "lessonId": "C1_lesson_9",
+      "taughtInLessonId": "C1_lesson_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_read_13",
@@ -9865,13 +9978,15 @@
             "Auf die Reduzierung der Behandlungskosten",
             "Auf die Verlängerung der Krankenhausaufenthalte"
           ],
-          "answer": "Auf die Verbesserung der Lebensqualität"
+          "answer": "Auf die Verbesserung der Lebensqualität",
+          "explanation": "Based on the text: Die Palliativmedizin stellt Ärzte vor besondere ethische und kommunikative Herausforderungen. Wenn k..."
         },
         {
           "id": "qr80",
           "type": "true-false",
           "question": "Advance Care Planning bezeichnet die vorausschaünde Behandlungsplanung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Palliativmedizin stellt Ärzte vor besondere ethische und kommunikative Herausforderungen. Wenn k..."
         },
         {
           "id": "qr81",
@@ -9883,7 +9998,8 @@
             "Krankschreibungen and Rezepte",
             "Überweisungsscheine"
           ],
-          "answer": "Patientenverfügungen und Vorsorgevollmachten"
+          "answer": "Patientenverfügungen und Vorsorgevollmachten",
+          "explanation": "Based on the text: Die Palliativmedizin stellt Ärzte vor besondere ethische und kommunikative Herausforderungen. Wenn k..."
         },
         {
           "id": "qr82",
@@ -9895,11 +10011,18 @@
             "standardisierte",
             "juristisch präzise"
           ],
-          "answer": "rechtzeitige und einfühlsame"
+          "answer": "rechtzeitige und einfühlsame",
+          "explanation": "Based on the text: Die Palliativmedizin stellt Ärzte vor besondere ethische und kommunikative Herausforderungen. Wenn k..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_10"
+      "lessonId": "C1_lesson_10",
+      "taughtInLessonId": "C1_lesson_13",
+      "conceptId": "c1.medizinethik",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_14",
@@ -9916,13 +10039,15 @@
             "Die Wartezeiten zu verkürzen",
             "Die Medikamentendosis zu erhöhen"
           ],
-          "answer": "Das Vertrauen des Patienten nicht zu verlieren"
+          "answer": "Das Vertrauen des Patienten nicht zu verlieren",
+          "explanation": "Based on the text: Medizinische Entscheidungen sind häufig mit Unsicherheit behaftet, da diagnostische Verfahren nicht ..."
         },
         {
           "id": "qr84",
           "type": "true-false",
           "question": "Ärzte neigen dazu, Unsicherheiten in der Praxis offen zu thematisieren.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Medizinische Entscheidungen sind häufig mit Unsicherheit behaftet, da diagnostische Verfahren nicht ..."
         },
         {
           "id": "qr85",
@@ -9934,7 +10059,8 @@
             "Längere Krankenhausaufenthalte",
             "Mehr Facharzttermine"
           ],
-          "answer": "Entscheidungsalgorithmen und Risikomodelle"
+          "answer": "Entscheidungsalgorithmen und Risikomodelle",
+          "explanation": "Based on the text: Medizinische Entscheidungen sind häufig mit Unsicherheit behaftet, da diagnostische Verfahren nicht ..."
         },
         {
           "id": "qr86",
@@ -9946,11 +10072,18 @@
             "Diagnose",
             "Prognose"
           ],
-          "answer": "Unsicherheit"
+          "answer": "Unsicherheit",
+          "explanation": "Based on the text: Medizinische Entscheidungen sind häufig mit Unsicherheit behaftet, da diagnostische Verfahren nicht ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_12"
+      "lessonId": "C1_lesson_12",
+      "taughtInLessonId": "C1_lesson_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ]
     },
     {
       "id": "C1_read_15",
@@ -9967,13 +10100,15 @@
             "Nur über die Kosten der Behandlung",
             "Nur über die Erfolgsaussichten"
           ],
-          "answer": "Über unmittelbare Risiken, langfristige Folgen und Alternativen"
+          "answer": "Über unmittelbare Risiken, langfristige Folgen und Alternativen",
+          "explanation": "Based on the text: Die Aufklärung eines Patienten vor einem operativen Eingriff ist nicht nur eine rechtliche Verpflich..."
         },
         {
           "id": "qr88",
           "type": "true-false",
           "question": "Patienten behalten und verstehen in der Regel alle Informationen aus dem Aufklärungsgespräch.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Aufklärung eines Patienten vor einem operativen Eingriff ist nicht nur eine rechtliche Verpflich..."
         },
         {
           "id": "qr89",
@@ -9985,7 +10120,8 @@
             "Rechtliche Beratung durch Anwälte",
             "Kürzere Aufklärungszeiten"
           ],
-          "answer": "Strukturierte Aufklärungsbögen und digitale Informationsmaterialien"
+          "answer": "Strukturierte Aufklärungsbögen und digitale Informationsmaterialien",
+          "explanation": "Based on the text: Die Aufklärung eines Patienten vor einem operativen Eingriff ist nicht nur eine rechtliche Verpflich..."
         },
         {
           "id": "qr90",
@@ -9997,11 +10133,18 @@
             "Option",
             "Möglichkeit"
           ],
-          "answer": "Verpflichtung"
+          "answer": "Verpflichtung",
+          "explanation": "Based on the text: Die Aufklärung eines Patienten vor einem operativen Eingriff ist nicht nur eine rechtliche Verpflich..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_13"
+      "lessonId": "C1_lesson_13",
+      "taughtInLessonId": "C1_lesson_15",
+      "conceptId": "c1.kulturkritik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_16",
@@ -10018,13 +10161,15 @@
             "In der operativen Durchführung",
             "In der Medikamentenentwicklung"
           ],
-          "answer": "In der Bildgebung und Erkennung von Tumoren"
+          "answer": "In der Bildgebung und Erkennung von Tumoren",
+          "explanation": "Based on the text: Künstliche Intelligenz hält zunehmend Einzug in die medizinische Diagnostik. Algorithmen des maschin..."
         },
         {
           "id": "qr92",
           "type": "true-false",
           "question": "Die Entscheidungsprozesse von KI-Algorithmen sind vollständig transparent.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Künstliche Intelligenz hält zunehmend Einzug in die medizinische Diagnostik. Algorithmen des maschin..."
         },
         {
           "id": "qr93",
@@ -10036,7 +10181,8 @@
             "Die Frage nach der Akzeptanz bei Patienten",
             "Die Frage nach der Ausbildungsdaür"
           ],
-          "answer": "Die Haftungsfrage bei falschen Diagnosen"
+          "answer": "Die Haftungsfrage bei falschen Diagnosen",
+          "explanation": "Based on the text: Künstliche Intelligenz hält zunehmend Einzug in die medizinische Diagnostik. Algorithmen des maschin..."
         },
         {
           "id": "qr94",
@@ -10048,11 +10194,18 @@
             "rechtliche",
             "ethische"
           ],
-          "answer": "ärztliche"
+          "answer": "ärztliche",
+          "explanation": "Based on the text: Künstliche Intelligenz hält zunehmend Einzug in die medizinische Diagnostik. Algorithmen des maschin..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_14"
+      "lessonId": "C1_lesson_14",
+      "taughtInLessonId": "C1_lesson_16",
+      "conceptId": "c1.philosophie.existenz",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_17",
@@ -10069,7 +10222,8 @@
             "Die Tokio-Deklaration",
             "Die Lissabon-Deklaration"
           ],
-          "answer": "Die Helsinki-Deklaration"
+          "answer": "Die Helsinki-Deklaration",
+          "explanation": "Based on the text: Die Durchführung klinischer Studien ist an strenge ethische Standards gebunden, die aus den historis..."
         },
         {
           "id": "qr96",
@@ -10081,13 +10235,15 @@
             "Erwachsene Männer",
             "Privatversicherte Patienten"
           ],
-          "answer": "Kinder, Schwangere und kognitiv eingeschränkte Personen"
+          "answer": "Kinder, Schwangere und kognitiv eingeschränkte Personen",
+          "explanation": "Based on the text: Die Durchführung klinischer Studien ist an strenge ethische Standards gebunden, die aus den historis..."
         },
         {
           "id": "qr97",
           "type": "true-false",
           "question": "Ethikkommissionen prüfen Studienprotokolle ausschließlich vor Beginn der Studie.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Durchführung klinischer Studien ist an strenge ethische Standards gebunden, die aus den historis..."
         },
         {
           "id": "qr98",
@@ -10099,11 +10255,18 @@
             "Forschers",
             "Sponsors"
           ],
-          "answer": "Probanden"
+          "answer": "Probanden",
+          "explanation": "Based on the text: Die Durchführung klinischer Studien ist an strenge ethische Standards gebunden, die aus den historis..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_15"
+      "lessonId": "C1_lesson_15",
+      "taughtInLessonId": "C1_lesson_17",
+      "conceptId": "c1.psycholinguistik",
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_read_18",
@@ -10120,13 +10283,15 @@
             "Das Dringlichkeitsprinzip",
             "Das Gleichheitsprinzip"
           ],
-          "answer": "Das Dringlichkeitsprinzip"
+          "answer": "Das Dringlichkeitsprinzip",
+          "explanation": "Based on the text: Die Verteilung knapper medizinischer Ressourcen stellt Kliniken täglich vor ethische und organisator..."
         },
         {
           "id": "qr100",
           "type": "true-false",
           "question": "Die Verteilung medizinischer Ressourcen ist ausschließlich eine organisatorische, keine ethische Frage.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Verteilung knapper medizinischer Ressourcen stellt Kliniken täglich vor ethische und organisator..."
         },
         {
           "id": "qr101",
@@ -10138,7 +10303,8 @@
             "Mehr finanzielle Mittel",
             "Automatische Zuteilungssysteme"
           ],
-          "answer": "Transparente und nachvollziehbare Entscheidungskriterien"
+          "answer": "Transparente und nachvollziehbare Entscheidungskriterien",
+          "explanation": "Based on the text: Die Verteilung knapper medizinischer Ressourcen stellt Kliniken täglich vor ethische und organisator..."
         },
         {
           "id": "qr102",
@@ -10150,11 +10316,18 @@
             "Dokumentations",
             "Evaluations"
           ],
-          "answer": "Triage"
+          "answer": "Triage",
+          "explanation": "Based on the text: Die Verteilung knapper medizinischer Ressourcen stellt Kliniken täglich vor ethische und organisator..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_18",
+      "conceptId": "c1.politische.philosophie",
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_read_19",
@@ -10171,13 +10344,15 @@
             "Krankheitsverständnis, Erwartungen und Rolle der Familie",
             "Nur die Religion"
           ],
-          "answer": "Krankheitsverständnis, Erwartungen und Rolle der Familie"
+          "answer": "Krankheitsverständnis, Erwartungen und Rolle der Familie",
+          "explanation": "Based on the text: In einer zunehmend multikulturellen Gesellschaft sind Ärzte täglich mit Patienten aus unterschiedlic..."
         },
         {
           "id": "qr104",
           "type": "true-false",
           "question": "Interkulturelle Kompetenz erfordert, jede kulturelle Besonderheit im Detail zu kennen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: In einer zunehmend multikulturellen Gesellschaft sind Ärzte täglich mit Patienten aus unterschiedlic..."
         },
         {
           "id": "qr105",
@@ -10189,7 +10364,8 @@
             "Kürzere Gesprächszeiten",
             "Schriftliche Aufklärung in mehreren Sprachen"
           ],
-          "answer": "Sprachmittler und interkulturelle Trainings"
+          "answer": "Sprachmittler und interkulturelle Trainings",
+          "explanation": "Based on the text: In einer zunehmend multikulturellen Gesellschaft sind Ärzte täglich mit Patienten aus unterschiedlic..."
         },
         {
           "id": "qr106",
@@ -10201,11 +10377,18 @@
             "Traditionen",
             "Normen"
           ],
-          "answer": "Unterschiede"
+          "answer": "Unterschiede",
+          "explanation": "Based on the text: In einer zunehmend multikulturellen Gesellschaft sind Ärzte täglich mit Patienten aus unterschiedlic..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_17"
+      "lessonId": "C1_lesson_17",
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.tempus.aspekt",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ]
     },
     {
       "id": "C1_read_20",
@@ -10222,13 +10405,15 @@
             "Fehler zu bestrafen",
             "Fehler zu dokumentieren"
           ],
-          "answer": "Fehler zu verschweigen oder zu beschönigen"
+          "answer": "Fehler zu verschweigen oder zu beschönigen",
+          "explanation": "Based on the text: Der Umgang mit Behandlungsfehlern gehört zu den schwierigsten Situationen im ärztlichen Berufsalltag..."
         },
         {
           "id": "qr108",
           "type": "true-false",
           "question": "Eine offene Fehlermitteilung beschädigt das Vertrauensverhältnis in der Regel nachhaltig.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Der Umgang mit Behandlungsfehlern gehört zu den schwierigsten Situationen im ärztlichen Berufsalltag..."
         },
         {
           "id": "qr109",
@@ -10240,7 +10425,8 @@
             "Eine strafrechtliche Verfolgung des Arztes",
             "Eine Überweisung an einen Spezialisten"
           ],
-          "answer": "Eine aufrichtige Entschuldigung und eine Erklärung"
+          "answer": "Eine aufrichtige Entschuldigung und eine Erklärung",
+          "explanation": "Based on the text: Der Umgang mit Behandlungsfehlern gehört zu den schwierigsten Situationen im ärztlichen Berufsalltag..."
         },
         {
           "id": "qr110",
@@ -10252,11 +10438,18 @@
             "Arzneimittelgesetz",
             "Sozialgesetzbuch"
           ],
-          "answer": "Patientenrechtegesetz"
+          "answer": "Patientenrechtegesetz",
+          "explanation": "Based on the text: Der Umgang mit Behandlungsfehlern gehört zu den schwierigsten Situationen im ärztlichen Berufsalltag..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_18"
+      "lessonId": "C1_lesson_18",
+      "taughtInLessonId": "C1_lesson_20",
+      "conceptId": "c1.wissenschaftssoziologie",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ]
     },
     {
       "id": "C1_read_21",
@@ -10273,13 +10466,15 @@
             "Ärztliche Freiheit versus Patientenwille",
             "Kurative versus palliative Behandlung"
           ],
-          "answer": "Leben erhalten versus Leiden vermeiden"
+          "answer": "Leben erhalten versus Leiden vermeiden",
+          "explanation": "Based on the text: Die medizinische Behandlung am Lebensende wirft komplexe ethische Fragen auf. Im Mittelpunkt steht d..."
         },
         {
           "id": "qr112",
           "type": "true-false",
           "question": "Patientenverfügungen sind meist präzise genug für eindeutige Entscheidungen in konkreten Situationen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die medizinische Behandlung am Lebensende wirft komplexe ethische Fragen auf. Im Mittelpunkt steht d..."
         },
         {
           "id": "qr113",
@@ -10291,7 +10486,8 @@
             "Ein standardisiertes Formular",
             "Eine richterliche Entscheidung"
           ],
-          "answer": "Advance Care Planning als vorausschaünde Behandlungsplanung"
+          "answer": "Advance Care Planning als vorausschaünde Behandlungsplanung",
+          "explanation": "Based on the text: Die medizinische Behandlung am Lebensende wirft komplexe ethische Fragen auf. Im Mittelpunkt steht d..."
         },
         {
           "id": "qr114",
@@ -10303,11 +10499,18 @@
             "Flexibilität",
             "Lesbarkeit"
           ],
-          "answer": "Verbindlichkeit"
+          "answer": "Verbindlichkeit",
+          "explanation": "Based on the text: Die medizinische Behandlung am Lebensende wirft komplexe ethische Fragen auf. Im Mittelpunkt steht d..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_19"
+      "lessonId": "C1_lesson_19",
+      "taughtInLessonId": "C1_lesson_21",
+      "conceptId": "c1.semantik.pragmatik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_22",
@@ -10324,13 +10527,15 @@
             "Unzureichende Krankenhaushygiene",
             "Fehlende Impfungen"
           ],
-          "answer": "Übermäßiger und unsachgemäßer Einsatz von Antibiotika"
+          "answer": "Übermäßiger und unsachgemäßer Einsatz von Antibiotika",
+          "explanation": "Based on the text: Die zunehmende Verbreitung antibiotikaresistenter Erreger stellt eine der größten Herausforderungen ..."
         },
         {
           "id": "qr116",
           "type": "true-false",
           "question": "Antibiotic Stewardship-Programme fördern den unkontrollierten Einsatz von Antibiotika.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die zunehmende Verbreitung antibiotikaresistenter Erreger stellt eine der größten Herausforderungen ..."
         },
         {
           "id": "qr117",
@@ -10342,7 +10547,8 @@
             "Radiologen und Pathologen",
             "Hausärzte und Internisten"
           ],
-          "answer": "Infektiologen, klinische Pharmazeuten und Mikrobiologen"
+          "answer": "Infektiologen, klinische Pharmazeuten und Mikrobiologen",
+          "explanation": "Based on the text: Die zunehmende Verbreitung antibiotikaresistenter Erreger stellt eine der größten Herausforderungen ..."
         },
         {
           "id": "qr118",
@@ -10354,11 +10560,18 @@
             "Finanzierung",
             "Dokumentation"
           ],
-          "answer": "Zusammenarbeit"
+          "answer": "Zusammenarbeit",
+          "explanation": "Based on the text: Die zunehmende Verbreitung antibiotikaresistenter Erreger stellt eine der größten Herausforderungen ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_20"
+      "lessonId": "C1_lesson_20",
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_23",
@@ -10375,13 +10588,15 @@
             "Die operative Behandlung",
             "Die stationäre Aufnahme"
           ],
-          "answer": "Das langfristige Krankheitsmanagement"
+          "answer": "Das langfristige Krankheitsmanagement",
+          "explanation": "Based on the text: Die Behandlung chronischer Erkrankungen wie Diabetes mellitus, Hypertonie oder COPD erfordert ein Um..."
         },
         {
           "id": "qr120",
           "type": "true-false",
           "question": "Chronisch kranke Patienten verbringen den Großteil ihrer Zeit in ärztlicher Behandlung.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Behandlung chronischer Erkrankungen wie Diabetes mellitus, Hypertonie oder COPD erfordert ein Um..."
         },
         {
           "id": "qr121",
@@ -10393,7 +10608,8 @@
             "Ausschließlich Ernährungsberatung",
             "Nur Bewegungsprogramme"
           ],
-          "answer": "Wissen, praktische Fertigkeiten und psychosoziale Unterstützung"
+          "answer": "Wissen, praktische Fertigkeiten und psychosoziale Unterstützung",
+          "explanation": "Based on the text: Die Behandlung chronischer Erkrankungen wie Diabetes mellitus, Hypertonie oder COPD erfordert ein Um..."
         },
         {
           "id": "qr122",
@@ -10405,11 +10621,18 @@
             "Beobachter",
             "Zahler"
           ],
-          "answer": "Partner"
+          "answer": "Partner",
+          "explanation": "Based on the text: Die Behandlung chronischer Erkrankungen wie Diabetes mellitus, Hypertonie oder COPD erfordert ein Um..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_21"
+      "lessonId": "C1_lesson_21",
+      "taughtInLessonId": "C1_lesson_23",
+      "conceptId": "c1.digital.humanities",
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_read_24",
@@ -10426,13 +10649,15 @@
             "Nur Chirurgen und Anästhesisten",
             "Nur Pflegekräfte und Sozialarbeiter"
           ],
-          "answer": "Orthopäden, Physiotherapeuten, Ergotherapeuten und Psychologen"
+          "answer": "Orthopäden, Physiotherapeuten, Ergotherapeuten und Psychologen",
+          "explanation": "Based on the text: Die postoperative Rehabilitation ist ein entscheidender Faktor für den Langzeiterfolg orthopädischer..."
         },
         {
           "id": "qr124",
           "type": "true-false",
           "question": "Die Rehabilitation beginnt erst Wochen nach der Operation.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die postoperative Rehabilitation ist ein entscheidender Faktor für den Langzeiterfolg orthopädischer..."
         },
         {
           "id": "qr125",
@@ -10444,7 +10669,8 @@
             "Sie erhöht das Infektionsrisiko",
             "Sie ist nur bei jungen Patienten wirksam"
           ],
-          "answer": "Sie beschleunigt die Rückkehr zur Arbeitsfähigkeit und verbessert die Lebensqualität"
+          "answer": "Sie beschleunigt die Rückkehr zur Arbeitsfähigkeit und verbessert die Lebensqualität",
+          "explanation": "Based on the text: Die postoperative Rehabilitation ist ein entscheidender Faktor für den Langzeiterfolg orthopädischer..."
         },
         {
           "id": "qr126",
@@ -10456,11 +10682,18 @@
             "Schnelligkeit",
             "Koordination"
           ],
-          "answer": "Kraft"
+          "answer": "Kraft",
+          "explanation": "Based on the text: Die postoperative Rehabilitation ist ein entscheidender Faktor für den Langzeiterfolg orthopädischer..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_22"
+      "lessonId": "C1_lesson_22",
+      "taughtInLessonId": "C1_lesson_24",
+      "conceptId": "c1.kunst.aesthetik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_read_25",
@@ -10477,13 +10710,15 @@
             "Durch die Länge der Berufserfahrung",
             "Durch die Anzahl der behandelten Patienten"
           ],
-          "answer": "Durch kompetentes, empathisches und transparentes Handeln"
+          "answer": "Durch kompetentes, empathisches und transparentes Handeln",
+          "explanation": "Based on the text: Das Vertrauensverhältnis zwischen Arzt und Patient gilt als eine der tragenden Säulen einer erfolgre..."
         },
         {
           "id": "qr128",
           "type": "true-false",
           "question": "Die Ökonomisierung des Gesundheitswesens hat keinen Einfluss auf das Vertrauensverhältnis.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Das Vertrauensverhältnis zwischen Arzt und Patient gilt als eine der tragenden Säulen einer erfolgre..."
         },
         {
           "id": "qr129",
@@ -10495,7 +10730,8 @@
             "Höhere Behandlungskosten",
             "Mehr Überweisungen an Spezialisten"
           ],
-          "answer": "Positive Wirkung auf Therapietreü und Behandlungserfolg"
+          "answer": "Positive Wirkung auf Therapietreü und Behandlungserfolg",
+          "explanation": "Based on the text: Das Vertrauensverhältnis zwischen Arzt und Patient gilt als eine der tragenden Säulen einer erfolgre..."
         },
         {
           "id": "qr130",
@@ -10507,11 +10743,19 @@
             "Bildung",
             "Versicherung"
           ],
-          "answer": "Verletzlichkeit"
+          "answer": "Verletzlichkeit",
+          "explanation": "Based on the text: Das Vertrauensverhältnis zwischen Arzt und Patient gilt als eine der tragenden Säulen einer erfolgre..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_23"
+      "lessonId": "C1_lesson_23",
+      "taughtInLessonId": "C1_lesson_25",
+      "conceptId": "c1.globale.gerechtigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_read_26",
@@ -10528,13 +10772,15 @@
             "Etwa die Hälfte",
             "Fast alle"
           ],
-          "answer": "Etwa ein Drittel"
+          "answer": "Etwa ein Drittel",
+          "explanation": "Based on the text: Der ärztliche Beruf zählt zu den Berufsgruppen mit dem höchsten Burnout-Risiko. Lange Arbeitszeiten,..."
         },
         {
           "id": "qr132",
           "type": "true-false",
           "question": "Burnout bei Ärzten hat keine Auswirkungen auf die Patientensicherheit.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Der ärztliche Beruf zählt zu den Berufsgruppen mit dem höchsten Burnout-Risiko. Lange Arbeitszeiten,..."
         },
         {
           "id": "qr133",
@@ -10546,7 +10792,8 @@
             "Mehr Gehalt",
             "Weniger Patienten"
           ],
-          "answer": "Balint-Gruppen, Supervision und Achtsamkeitstrainings"
+          "answer": "Balint-Gruppen, Supervision und Achtsamkeitstrainings",
+          "explanation": "Based on the text: Der ärztliche Beruf zählt zu den Berufsgruppen mit dem höchsten Burnout-Risiko. Lange Arbeitszeiten,..."
         },
         {
           "id": "qr134",
@@ -10558,11 +10805,18 @@
             "Entscheidungs",
             "Führungs"
           ],
-          "answer": "Empathie"
+          "answer": "Empathie",
+          "explanation": "Based on the text: Der ärztliche Beruf zählt zu den Berufsgruppen mit dem höchsten Burnout-Risiko. Lange Arbeitszeiten,..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_24"
+      "lessonId": "C1_lesson_24",
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ]
     },
     {
       "id": "C1_read_27",
@@ -10581,13 +10835,15 @@
               "Mit der Organisation von Krankenhäusern"
             ]
           ],
-          "answer": "Mit der effizienten Allokation knapper Ressourcen im Gesundheitswesen"
+          "answer": "Mit der effizienten Allokation knapper Ressourcen im Gesundheitswesen",
+          "explanation": "Based on the text: Die Gesundheitsökonomie befasst sich mit der effizienten Allokation knapper Ressourcen im Gesundheit..."
         },
         {
           "id": "qr136",
           "type": "true-false",
           "question": "Das IQWiG prüft den Zusatznutzen neuer Arzneimittel.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Gesundheitsökonomie befasst sich mit der effizienten Allokation knapper Ressourcen im Gesundheit..."
         },
         {
           "id": "qr137",
@@ -10599,7 +10855,8 @@
             "Dass sie zu langsam sind",
             "Dass sie nur für Krankenhäuser gelten"
           ],
-          "answer": "Dass sie die individülle Patientensituation nicht ausreichend berücksichtigen"
+          "answer": "Dass sie die individülle Patientensituation nicht ausreichend berücksichtigen",
+          "explanation": "Based on the text: Die Gesundheitsökonomie befasst sich mit der effizienten Allokation knapper Ressourcen im Gesundheit..."
         },
         {
           "id": "qr138",
@@ -10611,11 +10868,18 @@
             "Zulassungs",
             "Studien"
           ],
-          "answer": "Erstattungs"
+          "answer": "Erstattungs",
+          "explanation": "Based on the text: Die Gesundheitsökonomie befasst sich mit der effizienten Allokation knapper Ressourcen im Gesundheit..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.recht.ethik",
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_read_28",
@@ -10634,13 +10898,15 @@
               "Die Marktlösung"
             ]
           ],
-          "answer": "Die erweiterte Zustimmungslösung"
+          "answer": "Die erweiterte Zustimmungslösung",
+          "explanation": "Based on the text: Die Organtransplantation ist eines der komplexesten Gebiete der modernen Medizin. Der Mangel an verf..."
         },
         {
           "id": "qr140",
           "type": "true-false",
           "question": "Die Organverteilung erfolgt nach medizinischen Kriterien durch Eurotransplant.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Organtransplantation ist eines der komplexesten Gebiete der modernen Medizin. Der Mangel an verf..."
         },
         {
           "id": "qr141",
@@ -10654,7 +10920,8 @@
               "Versicherungsstatus"
             ]
           ],
-          "answer": "Dringlichkeit, Erfolgsaussicht und Wartezeit"
+          "answer": "Dringlichkeit, Erfolgsaussicht und Wartezeit",
+          "explanation": "Based on the text: Die Organtransplantation ist eines der komplexesten Gebiete der modernen Medizin. Der Mangel an verf..."
         },
         {
           "id": "qr142",
@@ -10666,11 +10933,18 @@
             "Bedarf",
             "Zugang"
           ],
-          "answer": "Mangel"
+          "answer": "Mangel",
+          "explanation": "Based on the text: Die Organtransplantation ist eines der komplexesten Gebiete der modernen Medizin. Der Mangel an verf..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_1"
+      "lessonId": "C1_lesson_1",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ]
     },
     {
       "id": "C1_read_29",
@@ -10689,13 +10963,15 @@
               "In der Pädiatrie"
             ]
           ],
-          "answer": "In der Onkologie"
+          "answer": "In der Onkologie",
+          "explanation": "Based on the text: Die Entschlüsselung des menschlichen Genoms hat der Medizin völlig neue Möglichkeiten eröffnet. Heut..."
         },
         {
           "id": "qr144",
           "type": "true-false",
           "question": "Das Gendiagnostikgesetz schützt die informationelle Selbstbestimmung der Patienten.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Entschlüsselung des menschlichen Genoms hat der Medizin völlig neue Möglichkeiten eröffnet. Heut..."
         },
         {
           "id": "qr145",
@@ -10709,7 +10985,8 @@
               "Auswahl der Gene"
             ]
           ],
-          "answer": "Nutzung genetischer Daten durch Arbeitgeber und Umgang mit Zufallsfunden"
+          "answer": "Nutzung genetischer Daten durch Arbeitgeber und Umgang mit Zufallsfunden",
+          "explanation": "Based on the text: Die Entschlüsselung des menschlichen Genoms hat der Medizin völlig neue Möglichkeiten eröffnet. Heut..."
         },
         {
           "id": "qr146",
@@ -10721,11 +10998,18 @@
             "Operation",
             "Prognose"
           ],
-          "answer": "Diagnostik"
+          "answer": "Diagnostik",
+          "explanation": "Based on the text: Die Entschlüsselung des menschlichen Genoms hat der Medizin völlig neue Möglichkeiten eröffnet. Heut..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_2"
+      "lessonId": "C1_lesson_2",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ]
     },
     {
       "id": "C1_read_30",
@@ -10744,13 +11028,15 @@
               "Die Kosten medizinischer Behandlungen zu senken"
             ]
           ],
-          "answer": "Behandlungen auf individülle genetische und molekulare Besonderheiten abzustimmen"
+          "answer": "Behandlungen auf individülle genetische und molekulare Besonderheiten abzustimmen",
+          "explanation": "Based on the text: Die personalisierte Medizin zielt darauf ab, Behandlungen individüll auf die genetischen, molekulare..."
         },
         {
           "id": "qr148",
           "type": "true-false",
           "question": "In der Kardiologie ist die personalisierte Medizin bereits weit fortgeschritten.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die personalisierte Medizin zielt darauf ab, Behandlungen individüll auf die genetischen, molekulare..."
         },
         {
           "id": "qr149",
@@ -10764,7 +11050,8 @@
               "Mangel an Patientenzustimmung"
             ]
           ],
-          "answer": "Hohe Kosten der Genomanalysen und Mangel an validierten Biomarkern"
+          "answer": "Hohe Kosten der Genomanalysen und Mangel an validierten Biomarkern",
+          "explanation": "Based on the text: Die personalisierte Medizin zielt darauf ab, Behandlungen individüll auf die genetischen, molekulare..."
         },
         {
           "id": "qr150",
@@ -10776,11 +11063,18 @@
             "Bestrahlungen",
             "Diäten"
           ],
-          "answer": "Medikamente"
+          "answer": "Medikamente",
+          "explanation": "Based on the text: Die personalisierte Medizin zielt darauf ab, Behandlungen individüll auf die genetischen, molekulare..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_3"
+      "lessonId": "C1_lesson_3",
+      "taughtInLessonId": "C1_lesson_5",
+      "conceptId": "c1.rhetorik.schreiben",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_read_31",
@@ -10799,13 +11093,15 @@
               "Die administrative Erfahrung"
             ]
           ],
-          "answer": "Verantwortungsbewusstsein, Integrität und Empathie"
+          "answer": "Verantwortungsbewusstsein, Integrität und Empathie",
+          "explanation": "Based on the text: Ärztliche Professionalität umfasst weit mehr als fachliche Kompetenz. Sie beinhaltet eine Haltung, d..."
         },
         {
           "id": "qr152",
           "type": "true-false",
           "question": "Eine starke professionelle Identität macht Ärzte anfälliger für Burnout.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Ärztliche Professionalität umfasst weit mehr als fachliche Kompetenz. Sie beinhaltet eine Haltung, d..."
         },
         {
           "id": "qr153",
@@ -10819,7 +11115,8 @@
               "Fehlende Technologie"
             ]
           ],
-          "answer": "Ökonomischer Druck, Zeitknappheit und bürokratische Anforderungen"
+          "answer": "Ökonomischer Druck, Zeitknappheit und bürokratische Anforderungen",
+          "explanation": "Based on the text: Ärztliche Professionalität umfasst weit mehr als fachliche Kompetenz. Sie beinhaltet eine Haltung, d..."
         },
         {
           "id": "qr154",
@@ -10831,11 +11128,18 @@
             "Protokoll",
             "Statut"
           ],
-          "answer": "Gelöbnis"
+          "answer": "Gelöbnis",
+          "explanation": "Based on the text: Ärztliche Professionalität umfasst weit mehr als fachliche Kompetenz. Sie beinhaltet eine Haltung, d..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_4"
+      "lessonId": "C1_lesson_4",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_read_32",
@@ -10854,13 +11158,15 @@
               "Gleichgültigkeit"
             ]
           ],
-          "answer": "Eigene emotionale Krisen"
+          "answer": "Eigene emotionale Krisen",
+          "explanation": "Based on the text: Die Kommunikation mit Angehörigen kritisch kranker Patienten ist eine der anspruchsvollsten Aufgaben..."
         },
         {
           "id": "qr156",
           "type": "true-false",
           "question": "Regelmäßige Angehörigengespräche reduzieren nachweislich Konflikte.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Kommunikation mit Angehörigen kritisch kranker Patienten ist eine der anspruchsvollsten Aufgaben..."
         },
         {
           "id": "qr157",
@@ -10874,7 +11180,8 @@
               "Das FOUR-Modell"
             ]
           ],
-          "answer": "Das SPIKES-Modell"
+          "answer": "Das SPIKES-Modell",
+          "explanation": "Based on the text: Die Kommunikation mit Angehörigen kritisch kranker Patienten ist eine der anspruchsvollsten Aufgaben..."
         },
         {
           "id": "qr158",
@@ -10886,11 +11193,18 @@
             "seltensten",
             "unnötigsten"
           ],
-          "answer": "anspruchsvollsten"
+          "answer": "anspruchsvollsten",
+          "explanation": "Based on the text: Die Kommunikation mit Angehörigen kritisch kranker Patienten ist eine der anspruchsvollsten Aufgaben..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_5"
+      "lessonId": "C1_lesson_5",
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.sprachliche.nuancen",
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ]
     },
     {
       "id": "C1_read_33",
@@ -10909,13 +11223,15 @@
               "Mangel an verfügbaren Informationen"
             ]
           ],
-          "answer": "Fehlinformationen und nicht evidenzbasierte Inhalte"
+          "answer": "Fehlinformationen und nicht evidenzbasierte Inhalte",
+          "explanation": "Based on the text: Die zunehmende Digitalisierung des Gesundheitswesens stellt neue Anforderungen an die Gesundheitskom..."
         },
         {
           "id": "qr160",
           "type": "true-false",
           "question": "Die digitale Gesundheitskompetenz ist in der Bevölkerung gleichmäßig verteilt.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die zunehmende Digitalisierung des Gesundheitswesens stellt neue Anforderungen an die Gesundheitskom..."
         },
         {
           "id": "qr161",
@@ -10929,7 +11245,8 @@
               "Digitale Angebote zu entwickeln"
             ]
           ],
-          "answer": "Patienten bei der Bewertung digitaler Gesundheitsinformationen zu unterstützen"
+          "answer": "Patienten bei der Bewertung digitaler Gesundheitsinformationen zu unterstützen",
+          "explanation": "Based on the text: Die zunehmende Digitalisierung des Gesundheitswesens stellt neue Anforderungen an die Gesundheitskom..."
         },
         {
           "id": "qr162",
@@ -10941,11 +11258,18 @@
             "Versorgung",
             "Kommunikation"
           ],
-          "answer": "Gesundheitskompetenz"
+          "answer": "Gesundheitskompetenz",
+          "explanation": "Based on the text: Die zunehmende Digitalisierung des Gesundheitswesens stellt neue Anforderungen an die Gesundheitskom..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_6"
+      "lessonId": "C1_lesson_6",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_34",
@@ -10964,13 +11288,15 @@
               "Zu mehr Forschung"
             ]
           ],
-          "answer": "Zu Verunsicherung und sinkendem Vertrauen in Institutionen"
+          "answer": "Zu Verunsicherung und sinkendem Vertrauen in Institutionen",
+          "explanation": "Based on the text: Die Kommunikation von Gesundheitsrisiken an die breite Öffentlichkeit ist eine komplexe Aufgabe, die..."
         },
         {
           "id": "qr164",
           "type": "true-false",
           "question": "Die COVID-19-Pandemie hat die Bedeutung guter Risikokommunikation gezeigt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Kommunikation von Gesundheitsrisiken an die breite Öffentlichkeit ist eine komplexe Aufgabe, die..."
         },
         {
           "id": "qr165",
@@ -10984,7 +11310,8 @@
               "Einheitliche Sprachregelungen"
             ]
           ],
-          "answer": "Zielgruppenspezifische Ansprache und Einsatz verschiedener Medienkanäle"
+          "answer": "Zielgruppenspezifische Ansprache und Einsatz verschiedener Medienkanäle",
+          "explanation": "Based on the text: Die Kommunikation von Gesundheitsrisiken an die breite Öffentlichkeit ist eine komplexe Aufgabe, die..."
         },
         {
           "id": "qr166",
@@ -10996,11 +11323,18 @@
             "Bildung",
             "Technologie"
           ],
-          "answer": "Gesundheitskompetenz"
+          "answer": "Gesundheitskompetenz",
+          "explanation": "Based on the text: Die Kommunikation von Gesundheitsrisiken an die breite Öffentlichkeit ist eine komplexe Aufgabe, die..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_7"
+      "lessonId": "C1_lesson_7",
+      "taughtInLessonId": "C1_lesson_9",
+      "conceptId": "c1.literatur.interpretation",
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ]
     },
     {
       "id": "C1_read_35",
@@ -11019,13 +11353,15 @@
               "Keine Rolle"
             ]
           ],
-          "answer": "Eine zentrale Rolle"
+          "answer": "Eine zentrale Rolle",
+          "explanation": "Based on the text: Die Erfahrungen der COVID-19-Pandemie haben die Notwendigkeit einer systematischen Pandemievorsorge ..."
         },
         {
           "id": "qr168",
           "type": "true-false",
           "question": "Die Digitalisierung der Meldewege war während der Pandemie optimal.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Erfahrungen der COVID-19-Pandemie haben die Notwendigkeit einer systematischen Pandemievorsorge ..."
         },
         {
           "id": "qr169",
@@ -11039,7 +11375,8 @@
               "Zu viele Ärzte"
             ]
           ],
-          "answer": "Personalmangel in Gesundheitsämtern und unzureichende Digitalisierung"
+          "answer": "Personalmangel in Gesundheitsämtern und unzureichende Digitalisierung",
+          "explanation": "Based on the text: Die Erfahrungen der COVID-19-Pandemie haben die Notwendigkeit einer systematischen Pandemievorsorge ..."
         },
         {
           "id": "qr170",
@@ -11051,11 +11388,18 @@
             "finanziellen",
             "organisatorischen"
           ],
-          "answer": "politischen"
+          "answer": "politischen",
+          "explanation": "Based on the text: Die Erfahrungen der COVID-19-Pandemie haben die Notwendigkeit einer systematischen Pandemievorsorge ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_8"
+      "lessonId": "C1_lesson_8",
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ]
     },
     {
       "id": "C1_read_36",
@@ -11074,13 +11418,15 @@
               "Die Kassenärztliche Bundesvereinigung"
             ]
           ],
-          "answer": "Der Gemeinsame Bundesausschuss"
+          "answer": "Der Gemeinsame Bundesausschuss",
+          "explanation": "Based on the text: Qualitätsmanagement in Krankenhäusern hat sich von einer freiwilligen Initiative zu einer gesetzlich..."
         },
         {
           "id": "qr172",
           "type": "true-false",
           "question": "Qualitätsmanagement ist im Krankenhaus heute eine freiwillige Initiative.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Qualitätsmanagement in Krankenhäusern hat sich von einer freiwilligen Initiative zu einer gesetzlich..."
         },
         {
           "id": "qr173",
@@ -11094,7 +11440,8 @@
               "Mehr Bettenkapazität"
             ]
           ],
-          "answer": "Critical-Incident-Reporting-Systeme, Risikoanalysen und OP-Checklisten"
+          "answer": "Critical-Incident-Reporting-Systeme, Risikoanalysen und OP-Checklisten",
+          "explanation": "Based on the text: Qualitätsmanagement in Krankenhäusern hat sich von einer freiwilligen Initiative zu einer gesetzlich..."
         },
         {
           "id": "qr174",
@@ -11106,11 +11453,18 @@
             "Bewertungs",
             "Dokumentations"
           ],
-          "answer": "Verbesserungs"
+          "answer": "Verbesserungs",
+          "explanation": "Based on the text: Qualitätsmanagement in Krankenhäusern hat sich von einer freiwilligen Initiative zu einer gesetzlich..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_9"
+      "lessonId": "C1_lesson_9",
+      "taughtInLessonId": "C1_lesson_11",
+      "conceptId": "c1.kognitive.linguistik",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ]
     },
     {
       "id": "C1_read_37",
@@ -11129,13 +11483,15 @@
               "Verwaltung der Publikationsdatenbank"
             ]
           ],
-          "answer": "Bewertung methodischer Qualität, Originalität und Relevanz"
+          "answer": "Bewertung methodischer Qualität, Originalität und Relevanz",
+          "explanation": "Based on the text: Der Peer-Review-Prozess ist das etablierte Verfahren zur Qualitätssicherung wissenschaftlicher Publi..."
         },
         {
           "id": "qr176",
           "type": "true-false",
           "question": "Publikationsbias bedeutet, dass negative Ergebnisse bevorzugt veröffentlicht werden.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Der Peer-Review-Prozess ist das etablierte Verfahren zur Qualitätssicherung wissenschaftlicher Publi..."
         },
         {
           "id": "qr177",
@@ -11149,7 +11505,8 @@
               "Mehr Verlage"
             ]
           ],
-          "answer": "Open-Access-Modelle und Checklisten wie CONSORT"
+          "answer": "Open-Access-Modelle und Checklisten wie CONSORT",
+          "explanation": "Based on the text: Der Peer-Review-Prozess ist das etablierte Verfahren zur Qualitätssicherung wissenschaftlicher Publi..."
         },
         {
           "id": "qr178",
@@ -11161,11 +11518,18 @@
             "Motivation",
             "Spezialisierung"
           ],
-          "answer": "Überlastung"
+          "answer": "Überlastung",
+          "explanation": "Based on the text: Der Peer-Review-Prozess ist das etablierte Verfahren zur Qualitätssicherung wissenschaftlicher Publi..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_10"
+      "lessonId": "C1_lesson_10",
+      "taughtInLessonId": "C1_lesson_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_read_38",
@@ -11184,13 +11548,15 @@
               "Nur unethische Studien"
             ]
           ],
-          "answer": "Datenfälschung, Plagiat und unethische Studien"
+          "answer": "Datenfälschung, Plagiat und unethische Studien",
+          "explanation": "Based on the text: Die Sicherung wissenschaftlicher Integrität ist eine Grundvoraussetzung für vertrauenswürdige medizi..."
         },
         {
           "id": "qr180",
           "type": "true-false",
           "question": "Ombudspersonen sind Anlaufstellen für Hinweise auf wissenschaftliches Fehlverhalten.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Sicherung wissenschaftlicher Integrität ist eine Grundvoraussetzung für vertrauenswürdige medizi..."
         },
         {
           "id": "qr181",
@@ -11204,7 +11570,8 @@
               "Fehlende technische Ausstattung"
             ]
           ],
-          "answer": "Der Publikationsdruck auf junge Wissenschaftler"
+          "answer": "Der Publikationsdruck auf junge Wissenschaftler",
+          "explanation": "Based on the text: Die Sicherung wissenschaftlicher Integrität ist eine Grundvoraussetzung für vertrauenswürdige medizi..."
         },
         {
           "id": "qr182",
@@ -11216,11 +11583,18 @@
             "Methodik",
             "Ethik"
           ],
-          "answer": "Praxis"
+          "answer": "Praxis",
+          "explanation": "Based on the text: Die Sicherung wissenschaftlicher Integrität ist eine Grundvoraussetzung für vertrauenswürdige medizi..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_11"
+      "lessonId": "C1_lesson_11",
+      "taughtInLessonId": "C1_lesson_13",
+      "conceptId": "c1.medizinethik",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_39",
@@ -11239,13 +11613,15 @@
               "Die Nutzung medizinischer Geräte"
             ]
           ],
-          "answer": "Sekundäre Interessen, die das Patientenwohl beeinflussen können"
+          "answer": "Sekundäre Interessen, die das Patientenwohl beeinflussen können",
+          "explanation": "Based on the text: Interessenkonflikte entstehen, wenn sekundäre Interessen wie finanzielle Anreize oder Karrierewünsch..."
         },
         {
           "id": "qr184",
           "type": "true-false",
           "question": "Interessenkonflikte sind in der Medizin selten und werden offen diskutiert.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Interessenkonflikte entstehen, wenn sekundäre Interessen wie finanzielle Anreize oder Karrierewünsch..."
         },
         {
           "id": "qr185",
@@ -11259,7 +11635,8 @@
               "Höhere Gehälter für Ärzte"
             ]
           ],
-          "answer": "Die Offenlegung potenzieller Interessenkonflikte"
+          "answer": "Die Offenlegung potenzieller Interessenkonflikte",
+          "explanation": "Based on the text: Interessenkonflikte entstehen, wenn sekundäre Interessen wie finanzielle Anreize oder Karrierewünsch..."
         },
         {
           "id": "qr186",
@@ -11271,11 +11648,18 @@
             "trainiert",
             "informiert"
           ],
-          "answer": "sensibilisiert"
+          "answer": "sensibilisiert",
+          "explanation": "Based on the text: Interessenkonflikte entstehen, wenn sekundäre Interessen wie finanzielle Anreize oder Karrierewünsch..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_12"
+      "lessonId": "C1_lesson_12",
+      "taughtInLessonId": "C1_lesson_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ]
     },
     {
       "id": "C1_read_40",
@@ -11294,13 +11678,15 @@
               "Verwaltungskompetenzen"
             ]
           ],
-          "answer": "Handlungskompetenzen, Kommunikation und interprofessionelle Zusammenarbeit"
+          "answer": "Handlungskompetenzen, Kommunikation und interprofessionelle Zusammenarbeit",
+          "explanation": "Based on the text: Das Medizinstudium in Deutschland befindet sich in einem grundlegenden Reformprozess. Der Nationale ..."
         },
         {
           "id": "qr188",
           "type": "true-false",
           "question": "Die neue Ärztliche Approbationsordnung gewichtet praktische Fertigkeiten stärker.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Das Medizinstudium in Deutschland befindet sich in einem grundlegenden Reformprozess. Der Nationale ..."
         },
         {
           "id": "qr189",
@@ -11314,7 +11700,8 @@
               "Klausuren und Prüfungen"
             ]
           ],
-          "answer": "Simulationspatienten, Skills Labs und digitale Lernplattformen"
+          "answer": "Simulationspatienten, Skills Labs und digitale Lernplattformen",
+          "explanation": "Based on the text: Das Medizinstudium in Deutschland befindet sich in einem grundlegenden Reformprozess. Der Nationale ..."
         },
         {
           "id": "qr190",
@@ -11326,11 +11713,18 @@
             "organisatorischen",
             "räumlichen"
           ],
-          "answer": "strukturellen"
+          "answer": "strukturellen",
+          "explanation": "Based on the text: Das Medizinstudium in Deutschland befindet sich in einem grundlegenden Reformprozess. Der Nationale ..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_13"
+      "lessonId": "C1_lesson_13",
+      "taughtInLessonId": "C1_lesson_15",
+      "conceptId": "c1.kulturkritik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_41",
@@ -11349,13 +11743,15 @@
               "Tierexperimentelle Studien"
             ]
           ],
-          "answer": "Systematische Übersichtsarbeiten und Metaanalysen"
+          "answer": "Systematische Übersichtsarbeiten und Metaanalysen",
+          "explanation": "Based on the text: In der evidenzbasierten Medizin werden Studiendesigns nach ihrer Aussagekraft hierarchisch geordnet...."
         },
         {
           "id": "qr192",
           "type": "true-false",
           "question": "Für alle klinischen Fragestellungen liegen randomisierte Studien vor.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: In der evidenzbasierten Medizin werden Studiendesigns nach ihrer Aussagekraft hierarchisch geordnet...."
         },
         {
           "id": "qr193",
@@ -11369,7 +11765,8 @@
               "Die CONSORT-Methodik"
             ]
           ],
-          "answer": "Die GRADE-Methodik"
+          "answer": "Die GRADE-Methodik",
+          "explanation": "Based on the text: In der evidenzbasierten Medizin werden Studiendesigns nach ihrer Aussagekraft hierarchisch geordnet...."
         },
         {
           "id": "qr194",
@@ -11381,11 +11778,18 @@
             "Verordnung",
             "Richtlinie"
           ],
-          "answer": "Orientierungshilfe"
+          "answer": "Orientierungshilfe",
+          "explanation": "Based on the text: In der evidenzbasierten Medizin werden Studiendesigns nach ihrer Aussagekraft hierarchisch geordnet...."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_14"
+      "lessonId": "C1_lesson_14",
+      "taughtInLessonId": "C1_lesson_16",
+      "conceptId": "c1.philosophie.existenz",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_42",
@@ -11404,13 +11808,15 @@
               "Genetische Marker"
             ]
           ],
-          "answer": "Subjektive Aspekte wie Lebensqualität und Schmerzintensität"
+          "answer": "Subjektive Aspekte wie Lebensqualität und Schmerzintensität",
+          "explanation": "Based on the text: Patient-Reported Outcome Measures erfassen die Gesundheitssituation aus der Perspektive des Patiente..."
         },
         {
           "id": "qr196",
           "type": "true-false",
           "question": "PROMs sind im klinischen Alltag einfach zu integrieren.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Patient-Reported Outcome Measures erfassen die Gesundheitssituation aus der Perspektive des Patiente..."
         },
         {
           "id": "qr197",
@@ -11424,7 +11830,8 @@
               "Der MOCA und der MMST"
             ]
           ],
-          "answer": "Der SF-36 und der EQ-5D"
+          "answer": "Der SF-36 und der EQ-5D",
+          "explanation": "Based on the text: Patient-Reported Outcome Measures erfassen die Gesundheitssituation aus der Perspektive des Patiente..."
         },
         {
           "id": "qr198",
@@ -11436,11 +11843,18 @@
             "Erfahrung",
             "Meinung"
           ],
-          "answer": "Perspektive"
+          "answer": "Perspektive",
+          "explanation": "Based on the text: Patient-Reported Outcome Measures erfassen die Gesundheitssituation aus der Perspektive des Patiente..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_15"
+      "lessonId": "C1_lesson_15",
+      "taughtInLessonId": "C1_lesson_17",
+      "conceptId": "c1.psycholinguistik",
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_read_43",
@@ -11459,13 +11873,15 @@
               "Weniger Arztbesuche"
             ]
           ],
-          "answer": "Falsch-positive Befunde und Überdiagnosen"
+          "answer": "Falsch-positive Befunde und Überdiagnosen",
+          "explanation": "Based on the text: Screening-Programme zur Früherkennung von Erkrankungen wie Brustkrebs oder Darmkrebs versprechen ein..."
         },
         {
           "id": "qr200",
           "type": "true-false",
           "question": "Der potenzielle Nutzen eines Screenings muss die möglichen Schäden überwiegen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Screening-Programme zur Früherkennung von Erkrankungen wie Brustkrebs oder Darmkrebs versprechen ein..."
         },
         {
           "id": "qr201",
@@ -11479,7 +11895,8 @@
               "Eine Kostenübernahme"
             ]
           ],
-          "answer": "Eine verständliche Aufklärung über Nutzen und Risiken"
+          "answer": "Eine verständliche Aufklärung über Nutzen und Risiken",
+          "explanation": "Based on the text: Screening-Programme zur Früherkennung von Erkrankungen wie Brustkrebs oder Darmkrebs versprechen ein..."
         },
         {
           "id": "qr202",
@@ -11491,11 +11908,18 @@
             "Spätdiagnosen",
             "Frühdiagnosen"
           ],
-          "answer": "Überdiagnosen"
+          "answer": "Überdiagnosen",
+          "explanation": "Based on the text: Screening-Programme zur Früherkennung von Erkrankungen wie Brustkrebs oder Darmkrebs versprechen ein..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_18",
+      "conceptId": "c1.politische.philosophie",
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_read_44",
@@ -11514,13 +11938,15 @@
               "Die vollständige Heilung einer Erkrankung"
             ]
           ],
-          "answer": "Das gleichzeitige Vorliegen mehrerer chronischer Erkrankungen"
+          "answer": "Das gleichzeitige Vorliegen mehrerer chronischer Erkrankungen",
+          "explanation": "Based on the text: Die Behandlung multimorbider älterer Patienten stellt eine der größten Herausforderungen der moderne..."
         },
         {
           "id": "qr204",
           "type": "true-false",
           "question": "Leitlinien sind in der Regel für multimorbide Patienten gut geeignet.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Behandlung multimorbider älterer Patienten stellt eine der größten Herausforderungen der moderne..."
         },
         {
           "id": "qr205",
@@ -11534,7 +11960,8 @@
               "Der Blutdruckmessung"
             ]
           ],
-          "answer": "Das geriatrische Assessment"
+          "answer": "Das geriatrische Assessment",
+          "explanation": "Based on the text: Die Behandlung multimorbider älterer Patienten stellt eine der größten Herausforderungen der moderne..."
         },
         {
           "id": "qr206",
@@ -11546,11 +11973,18 @@
             "Überdosierung",
             "Unterversorgung"
           ],
-          "answer": "Polypharmazie"
+          "answer": "Polypharmazie",
+          "explanation": "Based on the text: Die Behandlung multimorbider älterer Patienten stellt eine der größten Herausforderungen der moderne..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_17"
+      "lessonId": "C1_lesson_17",
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.tempus.aspekt",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ]
     },
     {
       "id": "C1_read_45",
@@ -11569,13 +12003,15 @@
               "Durch die Entscheidung der Angehörigen"
             ]
           ],
-          "answer": "Durch einen gemeinsamen Entscheidungsprozess von Arzt und Patient"
+          "answer": "Durch einen gemeinsamen Entscheidungsprozess von Arzt und Patient",
+          "explanation": "Based on the text: Das Konzept der partizipativen Entscheidungsfindung hat sich in den letzten Jahrzehnten als Ideal me..."
         },
         {
           "id": "qr208",
           "type": "true-false",
           "question": "Die Umsetzung von Shared Decision Making scheitert oft an Zeitmangel.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Das Konzept der partizipativen Entscheidungsfindung hat sich in den letzten Jahrzehnten als Ideal me..."
         },
         {
           "id": "qr209",
@@ -11589,7 +12025,8 @@
               "Krankenhauseinweisungen"
             ]
           ],
-          "answer": "Entscheidungshilfen für Patienten"
+          "answer": "Entscheidungshilfen für Patienten",
+          "explanation": "Based on the text: Das Konzept der partizipativen Entscheidungsfindung hat sich in den letzten Jahrzehnten als Ideal me..."
         },
         {
           "id": "qr210",
@@ -11601,11 +12038,18 @@
             "Behandlungsdaür",
             "Kosten"
           ],
-          "answer": "Zufriedenheit"
+          "answer": "Zufriedenheit",
+          "explanation": "Based on the text: Das Konzept der partizipativen Entscheidungsfindung hat sich in den letzten Jahrzehnten als Ideal me..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_18"
+      "lessonId": "C1_lesson_18",
+      "taughtInLessonId": "C1_lesson_20",
+      "conceptId": "c1.wissenschaftssoziologie",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ]
     },
     {
       "id": "C1_read_46",
@@ -11624,13 +12068,15 @@
               "Das kognitive Modell"
             ]
           ],
-          "answer": "Das biopsychosoziale Modell"
+          "answer": "Das biopsychosoziale Modell",
+          "explanation": "Based on the text: Die Behandlung chronischer Schmerzen erfordert einen multimodalen Ansatz, der über die reine Medikam..."
         },
         {
           "id": "qr212",
           "type": "true-false",
           "question": "Chronische Schmerzen sind ein rein biologisches Phänomen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Behandlung chronischer Schmerzen erfordert einen multimodalen Ansatz, der über die reine Medikam..."
         },
         {
           "id": "qr213",
@@ -11644,7 +12090,8 @@
               "Nur Psychotherapie"
             ]
           ],
-          "answer": "Medikamente, Physiotherapie, Psychotherapie und Edukation"
+          "answer": "Medikamente, Physiotherapie, Psychotherapie und Edukation",
+          "explanation": "Based on the text: Die Behandlung chronischer Schmerzen erfordert einen multimodalen Ansatz, der über die reine Medikam..."
         },
         {
           "id": "qr214",
@@ -11656,11 +12103,18 @@
             "Praxen",
             "Ambulanzen"
           ],
-          "answer": "Schmerzzentren"
+          "answer": "Schmerzzentren",
+          "explanation": "Based on the text: Die Behandlung chronischer Schmerzen erfordert einen multimodalen Ansatz, der über die reine Medikam..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_19"
+      "lessonId": "C1_lesson_19",
+      "taughtInLessonId": "C1_lesson_21",
+      "conceptId": "c1.semantik.pragmatik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_read_47",
@@ -11679,13 +12133,15 @@
               "Nur über die Dauer des Krankenhausaufenthalts"
             ]
           ],
-          "answer": "Über die Operation, Risiken, Erfolgsaussichten und Alternativen"
+          "answer": "Über die Operation, Risiken, Erfolgsaussichten und Alternativen",
+          "explanation": "Based on the text: Die präoperative Aufklärung eines Patienten über Operationsrisiken ist nicht nur rechtlich vorgeschr..."
         },
         {
           "id": "qr216",
           "type": "true-false",
           "question": "Die Verwendung von Prozentangaben verbessert das Verständnis von Risiken.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die präoperative Aufklärung eines Patienten über Operationsrisiken ist nicht nur rechtlich vorgeschr..."
         },
         {
           "id": "qr217",
@@ -11699,7 +12155,8 @@
               "Digitale Aufklärungsvideos"
             ]
           ],
-          "answer": "Mündliche Aufklärung kombiniert mit schriftlichen Informationen"
+          "answer": "Mündliche Aufklärung kombiniert mit schriftlichen Informationen",
+          "explanation": "Based on the text: Die präoperative Aufklärung eines Patienten über Operationsrisiken ist nicht nur rechtlich vorgeschr..."
         },
         {
           "id": "qr218",
@@ -11711,11 +12168,18 @@
             "vollständig",
             "objektiv"
           ],
-          "answer": "verzerrt"
+          "answer": "verzerrt",
+          "explanation": "Based on the text: Die präoperative Aufklärung eines Patienten über Operationsrisiken ist nicht nur rechtlich vorgeschr..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_20"
+      "lessonId": "C1_lesson_20",
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_read_48",
@@ -11734,13 +12198,15 @@
               "Das Sozialgesetzbuch"
             ]
           ],
-          "answer": "Die Europäische Datenschutz-Grundverordnung"
+          "answer": "Die Europäische Datenschutz-Grundverordnung",
+          "explanation": "Based on the text: Die Nutzung von Patientendaten für die medizinische Forschung ist ein Spannungsfeld zwischen Datensc..."
         },
         {
           "id": "qr220",
           "type": "true-false",
           "question": "Die informierte Einwilligung ist das zentrale Instrument zur Legitimation der Datennutzung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die Nutzung von Patientendaten für die medizinische Forschung ist ein Spannungsfeld zwischen Datensc..."
         },
         {
           "id": "qr221",
@@ -11754,7 +12220,8 @@
               "Der Verzicht auf Forschung"
             ]
           ],
-          "answer": "Der Widerspruch und die Treuhandstelle"
+          "answer": "Der Widerspruch und die Treuhandstelle",
+          "explanation": "Based on the text: Die Nutzung von Patientendaten für die medizinische Forschung ist ein Spannungsfeld zwischen Datensc..."
         },
         {
           "id": "qr222",
@@ -11766,11 +12233,18 @@
             "Löschung",
             "Veröffentlichung"
           ],
-          "answer": "Pseudonymisierung"
+          "answer": "Pseudonymisierung",
+          "explanation": "Based on the text: Die Nutzung von Patientendaten für die medizinische Forschung ist ein Spannungsfeld zwischen Datensc..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_21"
+      "lessonId": "C1_lesson_21",
+      "taughtInLessonId": "C1_lesson_23",
+      "conceptId": "c1.digital.humanities",
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_read_49",
@@ -11789,13 +12263,15 @@
               "Eine Reduzierung der Medikamente"
             ]
           ],
-          "answer": "Informationsverluste und Versorgungsbrüche"
+          "answer": "Informationsverluste und Versorgungsbrüche",
+          "explanation": "Based on the text: Die Verzahnung ambulanter und stationärer Versorgung gilt als eine der größten Baustellen des deutsc..."
         },
         {
           "id": "qr224",
           "type": "true-false",
           "question": "Die elektronische Patientenakte ist bereits flächendeckend wirksam.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the text: Die Verzahnung ambulanter und stationärer Versorgung gilt als eine der größten Baustellen des deutsc..."
         },
         {
           "id": "qr225",
@@ -11809,7 +12285,8 @@
               "Nur die Pflegeplanung"
             ]
           ],
-          "answer": "Entlassmanagement, Überleitungsbögen und Einbindung von Hausärzten"
+          "answer": "Entlassmanagement, Überleitungsbögen und Einbindung von Hausärzten",
+          "explanation": "Based on the text: Die Verzahnung ambulanter und stationärer Versorgung gilt als eine der größten Baustellen des deutsc..."
         },
         {
           "id": "qr226",
@@ -11821,11 +12298,18 @@
             "privater",
             "öffentlicher"
           ],
-          "answer": "stationärer"
+          "answer": "stationärer",
+          "explanation": "Based on the text: Die Verzahnung ambulanter und stationärer Versorgung gilt als eine der größten Baustellen des deutsc..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_22"
+      "lessonId": "C1_lesson_22",
+      "taughtInLessonId": "C1_lesson_24",
+      "conceptId": "c1.kunst.aesthetik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_read_50",
@@ -11844,13 +12328,15 @@
               "Nur das Rezept"
             ]
           ],
-          "answer": "Aufnahmebefund, Verlaufsdokumentation, OP-Berichte und Arztbriefe"
+          "answer": "Aufnahmebefund, Verlaufsdokumentation, OP-Berichte und Arztbriefe",
+          "explanation": "Based on the text: Die ärztliche Dokumentation ist nicht nur eine lästige Pflicht, sondern ein zentrales Instrument der..."
         },
         {
           "id": "qr228",
           "type": "true-false",
           "question": "Der Arztbrief ist die zentrale Schnittstelle zwischen stationärer und ambulanter Versorgung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the text: Die ärztliche Dokumentation ist nicht nur eine lästige Pflicht, sondern ein zentrales Instrument der..."
         },
         {
           "id": "qr229",
@@ -11864,7 +12350,8 @@
               "Die Länge der Dokumentation"
             ]
           ],
-          "answer": "Die korrekte medizinische Fachsprache in der Dokumentation"
+          "answer": "Die korrekte medizinische Fachsprache in der Dokumentation",
+          "explanation": "Based on the text: Die ärztliche Dokumentation ist nicht nur eine lästige Pflicht, sondern ein zentrales Instrument der..."
         },
         {
           "id": "qr230",
@@ -11876,11 +12363,19 @@
             "Termine",
             "Kosten"
           ],
-          "answer": "Diagnosen"
+          "answer": "Diagnosen",
+          "explanation": "Based on the text: Die ärztliche Dokumentation ist nicht nur eine lästige Pflicht, sondern ein zentrales Instrument der..."
         }
       ],
       "level": "C1",
-      "lessonId": "C1_lesson_23"
+      "lessonId": "C1_lesson_23",
+      "taughtInLessonId": "C1_lesson_25",
+      "conceptId": "c1.globale.gerechtigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     }
   ]
 }

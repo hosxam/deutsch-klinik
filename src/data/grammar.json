@@ -23025,7 +23025,10 @@
       "level": "C1",
       "lessonId": "C1_lesson_6",
       "topic": "Nominal Style",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_2",
@@ -23042,7 +23045,11 @@
       "level": "C1",
       "lessonId": "C1_lesson_6",
       "topic": "Nominal Style",
-      "explanation": "Empfindlicher Dativ: taugen + Dativ."
+      "explanation": "Empfindlicher Dativ: taugen + Dativ.",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_3",
@@ -23054,7 +23061,10 @@
       "level": "C1",
       "lessonId": "C1_lesson_6",
       "topic": "Sentence Transformation",
-      "taughtInLessonId": "C1_lesson_2"
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_4",
@@ -23072,7 +23082,10 @@
       "lessonId": "C1_lesson_7",
       "topic": "Advanced Relatives",
       "explanation": "Präposition beim Dativ bleibt erhalten.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_5",
@@ -23090,7 +23103,10 @@
       "lessonId": "C1_lesson_7",
       "topic": "Advanced Relatives",
       "explanation": "Teil-Ganzes-Beziehung im Genitiv.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_6",
@@ -23101,7 +23117,11 @@
       "explanation": "Irrealis wish: wenn + Konjunktiv II.",
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "topic": "Irrealis Wishes"
+      "topic": "Irrealis Wishes",
+      "taughtInLessonId": "C1_lesson_5",
+      "conceptId": "c1.word.order.variation",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_7",
@@ -23112,7 +23132,11 @@
       "explanation": "zu + infinitive as modal adjective: 'the patient who needs to be treated'.",
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "topic": "Modal Participles"
+      "topic": "Modal Participles",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_8",
@@ -23123,7 +23147,11 @@
       "explanation": "zu + infinitive extended adjective.",
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "topic": "Modal Participles"
+      "topic": "Modal Participles",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_9",
@@ -23141,7 +23169,10 @@
       "lessonId": "C1_lesson_1",
       "topic": "Academic Connectors",
       "explanation": "Verben mit Dativ und Akkusativ.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_10",
@@ -23159,7 +23190,10 @@
       "lessonId": "C1_lesson_1",
       "topic": "Academic Connectors",
       "explanation": "So + Adjektiv + dass = Konsekutivsatz.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_11",
@@ -23170,7 +23204,11 @@
       "explanation": "Use active verb instead of passive construction.",
       "level": "C1",
       "lessonId": "C1_lesson_6",
-      "topic": "Passive Alternatives"
+      "topic": "Passive Alternatives",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_12",
@@ -23181,7 +23219,11 @@
       "explanation": "Gerundive: zu + infinitive + d adjective ending = necessity.",
       "level": "C1",
       "lessonId": "C1_lesson_6",
-      "topic": "Gerundive"
+      "topic": "Gerundive",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_13",
@@ -23198,7 +23240,11 @@
       "explanation": "Konjunktiv I for indirect speech when present tense.",
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "topic": "Indirect Speech"
+      "topic": "Indirect Speech",
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_14",
@@ -23215,7 +23261,11 @@
       "level": "C1",
       "lessonId": "C1_lesson_2",
       "topic": "Complex Prepositions",
-      "explanation": "des- statt welch- für Genitiv Plural."
+      "explanation": "des- statt welch- für Genitiv Plural.",
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_15",
@@ -23233,7 +23283,10 @@
       "lessonId": "C1_lesson_1",
       "topic": "C1 Connectors",
       "explanation": "Konsekutiv: als dass mit zu + Adj.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_16",
@@ -23251,7 +23304,10 @@
       "lessonId": "C1_lesson_1",
       "topic": "C1 Connectors",
       "explanation": "Reziprokes Pronomen: einander = each other.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_17",
@@ -23262,7 +23318,11 @@
       "explanation": "-ung nominalization of verb stem.",
       "level": "C1",
       "lessonId": "C1_lesson_5",
-      "topic": "Word Formation"
+      "topic": "Word Formation",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_18",
@@ -23273,7 +23333,11 @@
       "explanation": "-haft suffix creates adjectives from nouns.",
       "level": "C1",
       "lessonId": "C1_lesson_5",
-      "topic": "Word Formation"
+      "topic": "Word Formation",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_19",
@@ -23291,7 +23355,10 @@
       "level": "C1",
       "lessonId": "C1_lesson_1",
       "topic": "Mood and Register",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_20",
@@ -23309,7 +23376,10 @@
       "level": "C1",
       "lessonId": "C1_lesson_1",
       "topic": "Text Cohesion",
-      "taughtInLessonId": "C1_lesson_19"
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_21",
@@ -23327,7 +23397,10 @@
         "Durch den Anstieg",
         "Trotz Anstieg"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_22",
@@ -23339,7 +23412,10 @@
       "prompt": "Nominal: 'Zur ___ (improvement) der Ergebnisse wurde die Dosis angepasst.'",
       "answer": "Verbesserung",
       "explanation": "-ung nominalisiert verbessern.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_23",
@@ -23351,7 +23427,10 @@
       "prompt": "Nominal: 'Bei ___ (examination) der Laborwerte fiel eine Anomalie auf.'",
       "answer": "der Prüfung",
       "explanation": "Bei + Nomen statt indem-Satz.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_24",
@@ -23363,7 +23442,10 @@
       "prompt": "Nominal: 'Die ___ (treatment) der Patienten erfolgt stationär.'",
       "answer": "Behandlung",
       "explanation": "Behandlung von behandeln.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_25",
@@ -23375,7 +23457,10 @@
       "prompt": "Nominal: 'Nach ___ (completion) der Studie wurden die Ergebnisse publiziert.'",
       "answer": "Abschluss",
       "explanation": "Nach + Nomen statt nachdem.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_26",
@@ -23393,7 +23478,10 @@
         "Durch die Bewertung",
         "Zur Bewertung"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_27",
@@ -23405,7 +23493,10 @@
       "prompt": "Nominal: 'Der ___ (development) des Impfstoffs dauerte Jahre.'",
       "answer": "Entwicklung",
       "explanation": "Entwicklung von entwickeln.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_28",
@@ -23416,7 +23507,11 @@
       "type": "sentence-correction",
       "prompt": "Rewrite: 'Weil die Kosten gestiegen sind, sinkt die Rentabilität.'",
       "answer": "Aufgrund der gestiegenen Kosten sinkt die Rentabilität.",
-      "explanation": "weil > aufgrund + Genitiv + Partizip II."
+      "explanation": "weil > aufgrund + Genitiv + Partizip II.",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_29",
@@ -23427,7 +23522,11 @@
       "type": "sentence-correction",
       "prompt": "Rewrite: 'Dadurch, dass der Personalabbau fortschreitet, sinkt die Motivation.'",
       "answer": "Durch den fortschreitenden Personalabbau sinkt die Motivation.",
-      "explanation": "durch + Partizip I ersetzt dadurch dass."
+      "explanation": "durch + Partizip I ersetzt dadurch dass.",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_30",
@@ -23438,7 +23537,11 @@
       "type": "sentence-correction",
       "prompt": "Rewrite: 'Indem man evidenzbasiert arbeitet, vermeidet man Fehler.'",
       "answer": "Durch evidenzbasiertes Arbeiten vermeidet man Fehler.",
-      "explanation": "Indem > durch + nominal. Adjektiv + Infinitiv."
+      "explanation": "Indem > durch + nominal. Adjektiv + Infinitiv.",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_31",
@@ -23455,7 +23558,11 @@
         "rollen",
         "geben",
         "haben"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_32",
@@ -23472,7 +23579,11 @@
         "machen",
         "geben",
         "legen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_33",
@@ -23489,7 +23600,11 @@
         "geben",
         "kaufen",
         "bringen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_34",
@@ -23506,7 +23621,11 @@
         "machen",
         "nehmen",
         "stellen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_35",
@@ -23523,7 +23642,11 @@
         "nehmen",
         "geben",
         "stellen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_36",
@@ -23540,7 +23663,11 @@
         "nehmen",
         "stellen",
         "durchführen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_37",
@@ -23557,7 +23684,11 @@
         "setzen",
         "stellen",
         "geben"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_38",
@@ -23574,7 +23705,11 @@
         "bringen",
         "leisten",
         "machen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_39",
@@ -23585,7 +23720,11 @@
       "type": "fill-blank",
       "prompt": "Collocation: 'zur ___ bringen' (to complete/finalise)",
       "answer": "Vollendung",
-      "explanation": "Zur Vollendung bringen = zu Ende führen."
+      "explanation": "Zur Vollendung bringen = zu Ende führen.",
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_40",
@@ -23602,7 +23741,11 @@
         "Zur Debatte bringen",
         "Zur Sprache bringen",
         "In Frage stellen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_41",
@@ -23614,7 +23757,10 @@
       "prompt": "Replace: 'Es wird angenommen, dass die Theorie stimmt.' (Aktiv)",
       "answer": "Man nimmt an, dass die Theorie stimmt.",
       "explanation": "Man + Aktiv ersetzt unpersönliches Passiv.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_42",
@@ -23626,7 +23772,10 @@
       "prompt": "Replace: 'Das Zertifikat wird von der Kammer ausgestellt.' (Aktiv)",
       "answer": "Die Kammer stellt das Zertifikat aus.",
       "explanation": "Aktiv mit Agens ist direkter.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_43",
@@ -23644,7 +23793,10 @@
         "leicht zu verstehen",
         "leicht verständigt"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_44",
@@ -23656,7 +23808,10 @@
       "prompt": "Replace: 'Das muss noch geprüft werden.' (sich lassen)",
       "answer": "Das muss sich noch prüfen lassen.",
       "explanation": "Sich lassen + Infinitiv = Passivalternative.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_45",
@@ -23674,7 +23829,10 @@
         "ist",
         "kann"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_46",
@@ -23686,7 +23844,10 @@
       "prompt": "Bekommen-Passiv: 'Ihm wurde geholfen.'",
       "answer": "Er bekam geholfen.",
       "explanation": "Bekommen-Passiv = Rezipientenpassiv.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_47",
@@ -23698,7 +23859,10 @@
       "prompt": "Kriegen-Passiv: 'Ihm wurde das Auto gestohlen.'",
       "answer": "Er kriegte das Auto gestohlen.",
       "explanation": "Kriegen-Passiv = informelle Alternative.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_48",
@@ -23716,7 +23880,10 @@
         "hat",
         "ist"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_49",
@@ -23734,7 +23901,10 @@
         "erwähnt",
         "erwähnend"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_50",
@@ -23752,7 +23922,10 @@
         "zu lesen",
         "lesend"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_51",
@@ -23769,7 +23942,11 @@
         "wird",
         "wurde",
         "war"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_52",
@@ -23786,7 +23963,11 @@
         "war",
         "ist",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_53",
@@ -23803,7 +23984,11 @@
         "wird",
         "wurde",
         "war"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_54",
@@ -23820,7 +24005,11 @@
         "ist",
         "war",
         "wurde"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_55",
@@ -23837,7 +24026,11 @@
         "wird",
         "war",
         "hat"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_56",
@@ -23848,7 +24041,11 @@
       "type": "sentence-correction",
       "prompt": "Translate: 'The documents are signed.' (Zustandspassiv)",
       "answer": "Die Unterlagen sind unterschrieben.",
-      "explanation": "Sein + Partizip II = Zustand."
+      "explanation": "Sein + Partizip II = Zustand.",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_57",
@@ -23865,7 +24062,11 @@
         "war",
         "ist",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_58",
@@ -23882,7 +24083,11 @@
         "wurde bereits",
         "wird bereits",
         "hat bereits"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_59",
@@ -23899,7 +24104,11 @@
         "ist gerade",
         "war gerade",
         "war bereits"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_60",
@@ -23910,7 +24119,11 @@
       "type": "sentence-correction",
       "prompt": "Translate: 'The wound was (already) closed.' (Zustandspassiv)",
       "answer": "Die Wunde war bereits geschlossen.",
-      "explanation": "Zustandspassiv Vergangenheit = war + Partizip II."
+      "explanation": "Zustandspassiv Vergangenheit = war + Partizip II.",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_61",
@@ -23921,7 +24134,11 @@
       "type": "fill-blank",
       "prompt": "Partizip I: 'Der ___ (winken) Mann rief mich.'",
       "answer": "winkende",
-      "explanation": "Partizip I = aktiv, gleichzeitig."
+      "explanation": "Partizip I = aktiv, gleichzeitig.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_62",
@@ -23932,7 +24149,11 @@
       "type": "fill-blank",
       "prompt": "Partizip I: 'Die ___ (ankommen) Gäste wurden begrüsst.'",
       "answer": "ankommenden",
-      "explanation": "Partizip I von ankommen + Endung."
+      "explanation": "Partizip I von ankommen + Endung.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_63",
@@ -23943,7 +24164,11 @@
       "type": "fill-blank",
       "prompt": "Partizip II: 'Ein ___ (verletzen) Vogel lag am Boden.'",
       "answer": "verletzter",
-      "explanation": "Partizip II = passivische Bedeutung."
+      "explanation": "Partizip II = passivische Bedeutung.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_64",
@@ -23954,7 +24179,11 @@
       "type": "fill-blank",
       "prompt": "Replace: 'Der Mann, der lacht, ist mein Kollege.' -> 'Der ___ Mann'",
       "answer": "lachende",
-      "explanation": "Relativsatz durch Partizip I ersetzt."
+      "explanation": "Relativsatz durch Partizip I ersetzt.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_65",
@@ -23965,7 +24194,11 @@
       "type": "fill-blank",
       "prompt": "Replace: 'Das Buch, das gelesen wurde, ist alt.' -> 'Das ___ Buch'",
       "answer": "gelesene",
-      "explanation": "Passivischer Relativsatz durch Partizip II."
+      "explanation": "Passivischer Relativsatz durch Partizip II.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_66",
@@ -23976,7 +24209,11 @@
       "type": "fill-blank",
       "prompt": "Extended: 'Der ___ (seit Jahren in Berlin leben) Künstler'",
       "answer": "seit Jahren in Berlin lebende",
-      "explanation": "Erweitertes Partizip I mit Adverbial."
+      "explanation": "Erweitertes Partizip I mit Adverbial.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_67",
@@ -23987,7 +24224,11 @@
       "type": "sentence-correction",
       "prompt": "Replace: 'Nachdem er den Brief gelesen hatte, rief er an.' (Partizip)",
       "answer": "Den Brief gelesen habend, rief er an.",
-      "explanation": "Perfekt Partizipialkonstruktion (sehr formal)."
+      "explanation": "Perfekt Partizipialkonstruktion (sehr formal).",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_68",
@@ -23999,7 +24240,10 @@
       "prompt": "Extended: 'Die ___ (vom Arzt verschreiben) Medikamente'",
       "answer": "vom Arzt verschriebenen",
       "explanation": "Erweitertes Partizip II mit Agens.",
-      "taughtInLessonId": "C1_lesson_6"
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_69",
@@ -24010,7 +24254,11 @@
       "type": "fill-blank",
       "prompt": "Translate: 'the newly built hospital' -> 'Das ___ Krankenhaus'",
       "answer": "neu gebaute",
-      "explanation": "Partizip II mit Adverb."
+      "explanation": "Partizip II mit Adverb.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_70",
@@ -24027,7 +24275,11 @@
         "importierter aus Italien",
         "Italien importierender",
         "aus Italien importiert"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_71",
@@ -24038,7 +24290,11 @@
       "type": "fill-blank",
       "prompt": "Gerundiv: 'Eine ___ (durchführen) Untersuchung.' (to be carried out)",
       "answer": "durchzuführende",
-      "explanation": "zu + Infinitiv + d-Endung = Notwendigkeit."
+      "explanation": "zu + Infinitiv + d-Endung = Notwendigkeit.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_72",
@@ -24049,7 +24305,11 @@
       "type": "fill-blank",
       "prompt": "Gerundiv: 'Ein ___ (beachten) Detail.' (a detail to note)",
       "answer": "zu beachtendes",
-      "explanation": "zu beachten + -es (Neutrum Nom)."
+      "explanation": "zu beachten + -es (Neutrum Nom).",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_73",
@@ -24061,7 +24321,10 @@
       "prompt": "Gerundiv: 'Der ___ (lösen) Konflikt.' (must be resolved)",
       "answer": "zu lösende",
       "explanation": "zu lösen + maskuline Endung.",
-      "taughtInLessonId": "C1_lesson_22"
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_74",
@@ -24072,7 +24335,11 @@
       "type": "fill-blank",
       "prompt": "Gerundiv: 'Das ___ (erledigen) Projekt.' (to be finished)",
       "answer": "zu erledigende",
-      "explanation": "zu + Infinitiv = notwendige Handlung."
+      "explanation": "zu + Infinitiv = notwendige Handlung.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_75",
@@ -24084,7 +24351,10 @@
       "prompt": "Gerundiv: 'Die ___ (klären) Fragen.' (to be clarified)",
       "answer": "zu klärenden",
       "explanation": "zu klären + Pluralendung.",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_76",
@@ -24101,7 +24371,11 @@
         "vermuteter",
         "vermutender",
         "zu vermuten"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_77",
@@ -24112,7 +24386,11 @@
       "type": "sentence-correction",
       "prompt": "Rewrite: 'Die Aufgaben, die erledigt werden müssen, sind komplex.'",
       "answer": "Die zu erledigenden Aufgaben sind komplex.",
-      "explanation": "Relativsatz mit müssen zu Gerundivum."
+      "explanation": "Relativsatz mit müssen zu Gerundivum.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_78",
@@ -24123,7 +24401,11 @@
       "type": "fill-blank",
       "prompt": "Translate: 'the steps to be taken' -> 'Die zu ___ Schritte'",
       "answer": "unternehmenden",
-      "explanation": "zu unternehmen + Pluralendung."
+      "explanation": "zu unternehmen + Pluralendung.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_79",
@@ -24134,7 +24416,11 @@
       "type": "fill-blank",
       "prompt": "Gerundiv: 'Ein ___ (berücksichtigen) Faktor.' (a factor to consider)",
       "answer": "zu berücksichtigender",
-      "explanation": "zu berücksichtigen + maskulin."
+      "explanation": "zu berücksichtigen + maskulin.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_80",
@@ -24145,7 +24431,11 @@
       "type": "fill-blank",
       "prompt": "Gerundiv: 'Die ___ (überprüfen) Ergebnisse.' (findings to verify)",
       "answer": "zu überprüfenden",
-      "explanation": "zu überprüfen + Plural."
+      "explanation": "zu überprüfen + Plural.",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_81",
@@ -24157,7 +24447,10 @@
       "prompt": "Extend: 'Der ___ Mann' (mit dem Auto fahren)",
       "answer": "mit dem Auto fahrende",
       "explanation": "Partizip I mit Präpositionalobjekt.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_82",
@@ -24169,7 +24462,10 @@
       "prompt": "Extend: 'Die ___ Studie' (von Experten prüfen)",
       "answer": "von Experten zu prüfende",
       "explanation": "Gerundivum mit Agens.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_83",
@@ -24181,7 +24477,10 @@
       "prompt": "Extend: 'Ein ___ Freund' (schon lange nicht mehr sehen)",
       "answer": "schon lange nicht mehr gesehener",
       "explanation": "Partizip II mit temporalen Adverbialen.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_84",
@@ -24193,7 +24492,10 @@
       "prompt": "Rewrite: 'Die Studie, die vor kurzem veröffentlicht wurde, ist wichtig.'",
       "answer": "Die vor kurzem veröffentlichte Studie ist wichtig.",
       "explanation": "Relativsatz zu erweitertem Attribut.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_85",
@@ -24205,7 +24507,10 @@
       "prompt": "Translate: 'the recently published article' -> 'Der ___ Artikel'",
       "answer": "vor kurzem veröffentlichte",
       "explanation": "Adverb + Partizip II + Endung.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_86",
@@ -24217,7 +24522,10 @@
       "prompt": "Extend: 'Die ___ Zahlen' (in dem Bericht erwähnen)",
       "answer": "in dem Bericht erwähnten",
       "explanation": "Partizip II mit Präpositionalobjekt.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_87",
@@ -24229,7 +24537,10 @@
       "prompt": "Extend: 'Ein ___ Faktor' (in dieser Hinsicht wichtig sein)",
       "answer": "in dieser Hinsicht wichtiger",
       "explanation": "Adjektiv mit Präpositionalphrase.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_88",
@@ -24241,7 +24552,10 @@
       "prompt": "Extend: 'Das ___ Haus' (dem Patienten gehören)",
       "answer": "dem Patienten gehörende",
       "explanation": "Partizip I mit Dativobjekt.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_89",
@@ -24253,7 +24567,10 @@
       "prompt": "Extend: 'Die ___ Studie' (im letzten Jahr veröffentlicht)",
       "answer": "im letzten Jahr veröffentlichte",
       "explanation": "Partizip II mit temporaler Angabe.",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_90",
@@ -24265,7 +24582,10 @@
       "prompt": "Extend: 'Der ___ Vertrag' (von beiden Seiten unterzeichnen)",
       "answer": "von beiden Seiten unterzeichnete",
       "explanation": "Partizip II mit Agens und Plural.",
-      "taughtInLessonId": "C1_lesson_10"
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_91",
@@ -24283,7 +24603,10 @@
         "mit dem",
         "an den"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_92",
@@ -24301,7 +24624,10 @@
         "denen",
         "der"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_93",
@@ -24319,7 +24645,10 @@
         "denen",
         "die"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_94",
@@ -24337,7 +24666,10 @@
         "Wen",
         "Wem"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_95",
@@ -24355,7 +24687,10 @@
         "Wem",
         "Den"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_96",
@@ -24373,7 +24708,10 @@
         "damit",
         "mit den"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_97",
@@ -24391,7 +24729,10 @@
         "denen",
         "deren"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_98",
@@ -24409,7 +24750,10 @@
         "wovon",
         "worum"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_99",
@@ -24427,7 +24771,10 @@
         "darin",
         "worein"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_100",
@@ -24445,7 +24792,10 @@
         "der",
         "denen"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_101",
@@ -24462,7 +24812,11 @@
         "ist",
         "war",
         "wäre"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_102",
@@ -24479,7 +24833,11 @@
         "hat",
         "hätte",
         "hatte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_103",
@@ -24496,7 +24854,11 @@
         "hat",
         "hätte",
         "hatte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_104",
@@ -24513,7 +24875,11 @@
         "wird",
         "würde",
         "worden"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_105",
@@ -24530,7 +24896,11 @@
         "war",
         "wäre",
         "ist"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_106",
@@ -24547,7 +24917,11 @@
         "belegt",
         "belegte",
         "belegen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_107",
@@ -24564,7 +24938,11 @@
         "konnte",
         "kann",
         "könnte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_108",
@@ -24581,7 +24959,11 @@
         "sind",
         "wären",
         "waren"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_109",
@@ -24598,7 +24980,11 @@
         "wirken",
         "würden wirken",
         "gewirkt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_110",
@@ -24615,7 +25001,11 @@
         "sind",
         "wären",
         "waren"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_111",
@@ -24632,7 +25022,11 @@
         "habe",
         "hatte",
         "hat"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_112",
@@ -24649,7 +25043,11 @@
         "kann",
         "konnte",
         "kannst"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_113",
@@ -24666,7 +25064,11 @@
         "sollen",
         "müssten",
         "mussen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_114",
@@ -24683,7 +25085,11 @@
         "habe",
         "hatte",
         "hat"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_115",
@@ -24700,7 +25106,11 @@
         "mag",
         "magst",
         "mochte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_116",
@@ -24717,7 +25127,11 @@
         "Konnten",
         "Kannst",
         "Konntet"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_117",
@@ -24734,7 +25148,11 @@
         "Idee",
         "Idealisierung",
         "Ideales"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_118",
@@ -24751,7 +25169,11 @@
         "wünsche",
         "wollte",
         "will"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_119",
@@ -24768,7 +25190,11 @@
         "muss",
         "musste",
         "mussen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_120",
@@ -24779,7 +25205,11 @@
       "type": "sentence-correction",
       "prompt": "Rewrite hedging: 'Die Lösung ist falsch.' (weak claim)",
       "answer": "Die Lösung könnte falsch sein.",
-      "explanation": "KII für vorsichtige Behauptung."
+      "explanation": "KII für vorsichtige Behauptung.",
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_121",
@@ -24796,7 +25226,11 @@
         "zu bestätigende",
         "bestätigende",
         "bestätigter"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_122",
@@ -24813,7 +25247,11 @@
         "zu dokumentierende",
         "dokumentierender",
         "Dokument"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_123",
@@ -24830,7 +25268,11 @@
         "Die noch zu klärende Frage",
         "Die klärende Frage",
         "Die klaren Fragen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_124",
@@ -24847,7 +25289,11 @@
         "zu behandelnde",
         "behandelnde",
         "behandelnder"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_125",
@@ -24865,7 +25311,10 @@
         "berücksichtigende",
         "berücksichtigen"
       ],
-      "taughtInLessonId": "C1_lesson_19"
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_126",
@@ -24883,7 +25332,10 @@
         "dringend empfohlene",
         "empfehlende"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_127",
@@ -24901,7 +25353,10 @@
         "Der Behandlungsansatz seit Jahren bewärt",
         "Seit Jahren der bewärte Behandlungsansatz"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_128",
@@ -24919,7 +25374,10 @@
         "im Labor sorgfältig analysierte",
         "analysiert im Labor"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_129",
@@ -24937,7 +25395,10 @@
         "von der WHO anerkanntes",
         "von der WHO offiziell anerkanntes"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_130",
@@ -24955,7 +25416,10 @@
         "Die Dosierung dem Patienten verschrieben",
         "Die verschriebene dem Patienten Dosierung"
       ],
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.adj.noun.phrases",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_131",
@@ -24973,7 +25437,10 @@
         "der",
         "welcher"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_132",
@@ -24991,7 +25458,10 @@
         "dem",
         "der"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_133",
@@ -25009,7 +25479,10 @@
         "Die Methode, deren wir uns bedienten",
         "Die Methode, die wir uns bedienten"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.sprachliche.nuancen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_134",
@@ -25026,7 +25499,11 @@
         "zutreffe",
         "zuträfe",
         "würde zutreffen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_135",
@@ -25043,7 +25520,11 @@
         "nehme",
         "nähme",
         "würde nehmen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_136",
@@ -25060,7 +25541,11 @@
         "fliege",
         "flöge",
         "würde fliegen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_137",
@@ -25077,7 +25562,11 @@
         "habe",
         "hätte",
         "wurde"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.konjunktiv1.formal",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_138",
@@ -25095,7 +25584,10 @@
         "denn",
         "da"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_139",
@@ -25113,7 +25605,10 @@
         "und Daten fehlen",
         "denn Daten fehlen"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_140",
@@ -25131,7 +25626,10 @@
         "denn",
         "obwohl"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_141",
@@ -25148,7 +25646,11 @@
         "Weil",
         "Während",
         "Trotz"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_142",
@@ -25165,7 +25667,11 @@
         "weil",
         "denn",
         "sodass"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_143",
@@ -25182,7 +25688,11 @@
         "Weil die Situation schwierig ist",
         "Wenn die Situation schwierig ist",
         "Die Situation ist schwierig, denn"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_144",
@@ -25199,7 +25709,11 @@
         "Obwohl Einwände",
         "Trotz Einwände",
         "Zum Trotz"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_145",
@@ -25216,7 +25730,11 @@
         "um",
         "weil",
         "denn"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_146",
@@ -25233,7 +25751,11 @@
         "damit",
         "sodass",
         "weil"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_147",
@@ -25250,7 +25772,11 @@
         "sodass der Patient eingeliefert wurde",
         "damit der Patient behandelt wird",
         "obwohl der Patient Medikamente nahm"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_148",
@@ -25267,7 +25793,11 @@
         "um",
         "sodass",
         "denn"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_149",
@@ -25284,7 +25814,11 @@
         "Weil die Prognose pessimistisch war",
         "Obwohl die Prognose pessimistisch war",
         "Während die Prognose pessimistisch war"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_150",
@@ -25301,7 +25835,11 @@
         "Falls",
         "Obwohl",
         "Nachdem"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_151",
@@ -25318,7 +25856,11 @@
         "Falls die Werte auffällig waren",
         "Obwohl die Werte auffällig waren",
         "Während die Werte auffällig waren"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_152",
@@ -25335,7 +25877,11 @@
         "Trotz",
         "Ob",
         "Falls"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_153",
@@ -25352,7 +25898,11 @@
         "Weil",
         "Obwohl",
         "Nachdem"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_154",
@@ -25363,7 +25913,11 @@
       "prompt": "Transformieren: 'Der Arzt untersucht den Patienten.' -> 'Der Patient ...'",
       "answer": "wird vom Arzt untersucht",
       "explanation": "Aktiv -> Passiv.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_155",
@@ -25374,7 +25928,11 @@
       "prompt": "Transformieren: 'Man sagt, dass die Methode wirksam ist.' -> Passiversatz",
       "answer": "Die Methode soll wirksam sein.",
       "explanation": "Soll + Infinitiv = indirekte Rede.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_156",
@@ -25385,7 +25943,11 @@
       "prompt": "Ersetzen Sie: 'Obwohl er krank war, arbeitete er.' -> 'Trotz ...'",
       "answer": "Trotz seiner Krankheit arbeitete er",
       "explanation": "Obwohl -> Trotz + Genitiv.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_157",
@@ -25396,7 +25958,11 @@
       "prompt": "Transformieren: 'Die Studien, die vor kurzem veröfentlicht wurden' -> Partizip",
       "answer": "die vor kurzem veröfentlichten Studien",
       "explanation": "Relativsatz -> Partizipialattribut.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_158",
@@ -25408,7 +25974,10 @@
       "answer": "Aufgrund seiner Verspätung",
       "explanation": "Weil + Satz -> Aufgrund + Genitiv.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_159",
@@ -25419,7 +25988,11 @@
       "prompt": "Ersetzen Sie: 'Sie rief an, um zu fragen.' -> 'Sie rief an, ...'",
       "answer": "mit der Frage",
       "explanation": "Um zu -> Präposition + Nomen.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_160",
@@ -25430,7 +26003,11 @@
       "prompt": "Transformieren: 'Er verlies die Sitzung, während er schimpfte.' -> Partizip",
       "answer": "schimpfend die Sitzung",
       "explanation": "Während + Satz -> Partizip Präsens.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_161",
@@ -25441,7 +26018,11 @@
       "prompt": "Bilden Sie einen Satz mit 'lassen': 'Man kann das Problem lösen.'",
       "answer": "Das Problem lässt sich lösen.",
       "explanation": "Passiv mit sich lassen.",
-      "lessonId": "C1_lesson_16"
+      "lessonId": "C1_lesson_16",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_162",
@@ -25453,7 +26034,10 @@
       "answer": "Der Arzt sagte, der Patient habe sich erholt.",
       "explanation": "Konjunktiv I.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.denominalisierung",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_163",
@@ -25465,7 +26049,10 @@
       "answer": "Der Patient verweigert die Nahrungsaufnahme.",
       "explanation": "Medizinisches Register.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_164",
@@ -25477,7 +26064,10 @@
       "answer": "Eine Besserung wurde beobachtet.",
       "explanation": "Passiv statt man.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_165",
@@ -25495,7 +26085,10 @@
         "sehen",
         "machen"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_166",
@@ -25507,7 +26100,10 @@
       "answer": "Die Werte haben sich verbessert.",
       "explanation": "Sich verbessern statt besser werden.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_167",
@@ -25519,7 +26115,10 @@
       "answer": "Bei dem Patienten wurde eine Krebserkrankung diagnostiziert.",
       "explanation": "Med. Register.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_168",
@@ -25537,7 +26136,10 @@
         "gross",
         "wichtig"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_169",
@@ -25549,7 +26151,10 @@
       "answer": "Der Test ergab keine verwertbaren Ergebnisse.",
       "explanation": "Umgangssprache korrigieren.",
       "lessonId": "C1_lesson_16",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_170",
@@ -25567,7 +26172,10 @@
         "In dieser Arbeit geht es um",
         "Ich schreibe über"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_171",
@@ -25585,7 +26193,10 @@
         "suchen",
         "sehen"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_172",
@@ -25602,7 +26213,11 @@
         "Diese",
         "Solche",
         "Welche"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_173",
@@ -25619,7 +26234,11 @@
         "Das",
         "Denen",
         "Die"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_174",
@@ -25636,7 +26255,11 @@
         "Weil",
         "Obwohl",
         "Deshalb"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_175",
@@ -25653,7 +26276,11 @@
         "Trotzdem",
         "Allerdings",
         "Zunächst"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_176",
@@ -25670,7 +26297,11 @@
         "Jene",
         "Erstere",
         "Letzteres"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_177",
@@ -25687,7 +26318,11 @@
         "Wird",
         "Ist",
         "Habe"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_178",
@@ -25704,7 +26339,11 @@
         "wie vorher",
         "wie neu",
         "wie oben nicht"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_179",
@@ -25721,7 +26360,11 @@
         "Weil",
         "Denn",
         "Folglich"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_180",
@@ -25738,7 +26381,11 @@
         "Weil",
         "Obwohl",
         "Trotz"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_181",
@@ -25756,7 +26403,10 @@
         "ganz",
         "auch"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_182",
@@ -25774,7 +26424,10 @@
         "nur",
         "schon"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_183",
@@ -25792,7 +26445,10 @@
         "auch",
         "eben"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_184",
@@ -25810,7 +26466,10 @@
         "eben",
         "schon"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_185",
@@ -25828,7 +26487,10 @@
         "Nämlich",
         "Denn"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_186",
@@ -25846,7 +26508,10 @@
         "eben",
         "auch"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_187",
@@ -25864,7 +26529,10 @@
         "dass",
         "denn"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_188",
@@ -25882,7 +26550,10 @@
         "Die Theorie war richtig",
         "Die Theorie wird richtig"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_189",
@@ -25899,7 +26570,11 @@
         "Wegen",
         "Trotz",
         "Dank"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_190",
@@ -25916,7 +26591,11 @@
         "Trotz",
         "Mittels",
         "Behufs"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_191",
@@ -25933,7 +26612,11 @@
         "Wegen",
         "Trotz",
         "Aufgrund"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_192",
@@ -25950,7 +26633,11 @@
         "wegen",
         "trotz",
         "dank"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_193",
@@ -25967,7 +26654,11 @@
         "Laut",
         "Gemäss",
         "Mangels"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_194",
@@ -25984,7 +26675,11 @@
         "Hinsichtlich die Kosten",
         "In Hinblick die Kosten",
         "Im Hinblick der Kosten"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_195",
@@ -26001,7 +26696,11 @@
         "Wegen",
         "Aufgrund",
         "Dank"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_196",
@@ -26018,7 +26717,11 @@
         "Trotz",
         "Wegen",
         "Mangels"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_197",
@@ -26035,7 +26738,11 @@
         "Fieber",
         "Husten",
         "Kopfweh"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_198",
@@ -26047,7 +26754,10 @@
       "answer": "Der Patient gab Schmerzen im Bereich der linken Schulter an.",
       "explanation": "Standardformel.",
       "lessonId": "C1_lesson_18",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_199",
@@ -26064,7 +26774,11 @@
         "sagte",
         "erzählte",
         "sprach"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_200",
@@ -26081,7 +26795,11 @@
         "schlecht",
         "nicht gut",
         "unbefriedigend"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_201",
@@ -26098,7 +26816,11 @@
         "wach",
         "wach und klar",
         "orientiert"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_202",
@@ -26109,7 +26831,11 @@
       "prompt": "Formulieren Sie: 'Dem Patienten geht es besser' im Arztbrief.",
       "answer": "Der Patient zeigte eine klinische Besserung.",
       "explanation": "Standardformel.",
-      "lessonId": "C1_lesson_18"
+      "lessonId": "C1_lesson_18",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_203",
@@ -26127,7 +26853,10 @@
         "ausgezeichnet",
         "problemlos"
       ],
-      "taughtInLessonId": "C1_lesson_10"
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_204",
@@ -26144,7 +26873,11 @@
         "Endlich",
         "Letztlich",
         "Schlussendlich"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_205",
@@ -26161,7 +26894,11 @@
         "für",
         "zurück",
         "nach"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_206",
@@ -26178,7 +26915,11 @@
         "Lungenentzündung",
         "Pneumonitis",
         "Bronchitis"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_207",
@@ -26195,7 +26936,11 @@
         "schnell",
         "bald",
         "sofort"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_208",
@@ -26212,7 +26957,11 @@
         "Mittel",
         "Präparat",
         "Dosis"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_209",
@@ -26229,7 +26978,11 @@
         "Neue",
         "Weitere",
         "Zusätzliche"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_210",
@@ -26246,7 +26999,11 @@
         "43 alte",
         "jungen",
         "erwachsenen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_211",
@@ -26263,7 +27020,11 @@
         "vieler",
         "grosser",
         "schlimmer"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_212",
@@ -26280,7 +27041,11 @@
         "Vorher",
         "Danach nicht",
         "Nach"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_213",
@@ -26297,7 +27062,11 @@
         "Laufe",
         "Klinik",
         "Befund"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_214",
@@ -26314,7 +27083,11 @@
         "Messung",
         "Bildgebung",
         "Diagnose"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_215",
@@ -26331,7 +27104,11 @@
         "Der Patient war 55",
         "Eine 55-jährige Patientin kam",
         "Die Patientin hatte einen Herzinfarkt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_216",
@@ -26348,7 +27125,11 @@
         "aktuellen",
         "neuen",
         "wichtigen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_217",
@@ -26365,7 +27146,11 @@
         "Idee",
         "Punkt",
         "Sache"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_218",
@@ -26383,7 +27168,10 @@
         "ersten Kapitel",
         "Buch"
       ],
-      "taughtInLessonId": "C1_lesson_6"
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_219",
@@ -26400,7 +27188,11 @@
         "Datensammlung",
         "Befragung",
         "Umfrage"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_220",
@@ -26417,7 +27209,11 @@
         "Besprechung",
         "Sprechen",
         "Rede"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_221",
@@ -26434,7 +27230,11 @@
         "Dann",
         "Nachher",
         "Sofort"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_222",
@@ -26451,7 +27251,11 @@
         "Die Leute wurden zufällig in zwei Gruppen eingeteilt",
         "Man hat die Leute in Gruppen getan",
         "Die Gruppe wurde randomisiert"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_223",
@@ -26468,7 +27272,11 @@
         "Resultate",
         "Zahlen",
         "Dinge"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_224",
@@ -26485,7 +27293,11 @@
         "macht klar",
         "beweist",
         "demonstriert"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_225",
@@ -26502,7 +27314,11 @@
         "Wegen",
         "Dank",
         "Mittels"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_226",
@@ -26519,7 +27335,11 @@
         "dagegen",
         "aber",
         "jedoch"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_227",
@@ -26536,7 +27356,11 @@
         "Für die These",
         "Zudem",
         "Weiterhin"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_228",
@@ -26553,7 +27377,11 @@
         "Erstens möchte ich sagen",
         "Ich finde auch",
         "Die Theorie sagt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_229",
@@ -26570,7 +27398,11 @@
         "Grund",
         "Beweis",
         "Punkt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_230",
@@ -26587,7 +27419,11 @@
         "Danach",
         "Vorher",
         "Später"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_231",
@@ -26604,7 +27440,11 @@
         "steht",
         "liegt",
         "baut"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_232",
@@ -26621,7 +27461,11 @@
         "ist gut",
         "ist richtig",
         "stimmt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_233",
@@ -26638,7 +27482,11 @@
         "Zunächst ist festzustellen",
         "Ferner ist festzustellen",
         "Auch ist festzustellen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_234",
@@ -26650,7 +27498,10 @@
       "answer": "Weil der Patient krank war, blieb er zu Hause.",
       "explanation": "Wegen + Genitiv, nicht Nebensatz.",
       "lessonId": "C1_lesson_25",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_235",
@@ -26661,7 +27512,11 @@
       "prompt": "Korrigieren Sie: 'Trotz er hat kein Geld, kauft er das Auto.'",
       "answer": "Obwohl er kein Geld hat, kauft er das Auto.",
       "explanation": "Trotz + Nomen, nicht Nebensatz.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_236",
@@ -26672,7 +27527,11 @@
       "prompt": "Korrigieren Sie: 'Das ist das Haus wo er wohnt.'",
       "answer": "Das ist das Haus, in dem er wohnt.",
       "explanation": "Wo = Fragewort, nicht Relativpronomen für Sachen.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_237",
@@ -26683,7 +27542,11 @@
       "prompt": "Korrigieren Sie: 'Ich habe Angst vor den Hund.'",
       "answer": "Ich habe Angst vor dem Hund.",
       "explanation": "Angst vor + Dativ.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_238",
@@ -26694,7 +27557,11 @@
       "prompt": "Korrigieren Sie: 'Er hat den Brief geschrieben von seinem Vater.'",
       "answer": "Er hat den Brief von seinem Vater geschrieben.",
       "explanation": "Präpositionalphrase vor Partizip.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_239",
@@ -26706,7 +27573,10 @@
       "answer": "Ich möchte, dass du kommst und das Buch mitbringst.",
       "explanation": "Verbklammer im Nebensatz.",
       "lessonId": "C1_lesson_25",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_240",
@@ -26717,7 +27587,11 @@
       "prompt": "Korrigieren Sie: 'Das Buch, welches ich gelesen habe, war interessant.'",
       "answer": "Das Buch, das ich gelesen habe, war interessant.",
       "explanation": "Welches ist stilistisch schwach. Das ist richtig.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_241",
@@ -26729,7 +27603,10 @@
       "answer": "Er hat vorgeschlagen, dass wir nach Hause gehen.",
       "explanation": "Verb am Ende im Nebensatz.",
       "lessonId": "C1_lesson_25",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_242",
@@ -26740,7 +27617,11 @@
       "prompt": "Korrigieren Sie: 'Sie ist die Frau welcher ich geholfen habe.'",
       "answer": "Sie ist die Frau, der ich geholfen habe.",
       "explanation": "Helfen + Dativ: der, nicht welcher.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_243",
@@ -26757,7 +27638,11 @@
         "dagegen",
         "nichts",
         "kaum"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_244",
@@ -26774,7 +27659,11 @@
         "Am Anfang",
         "Vorher",
         "Endlich"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_245",
@@ -26791,7 +27680,11 @@
         "Rechnung",
         "Antwort",
         "Look"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_246",
@@ -26808,7 +27701,11 @@
         "Gegenteil",
         "Kontrast",
         "Fall"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_247",
@@ -26825,7 +27722,11 @@
         "Endlich",
         "Schlussendlich",
         "Fazit"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_248",
@@ -26843,7 +27744,10 @@
         "gibt",
         "hat"
       ],
-      "taughtInLessonId": "C1_lesson_6"
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_249",
@@ -26860,7 +27764,11 @@
         "schlechte Qualität",
         "wenige",
         "limitierte Grösse"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_250",
@@ -26878,7 +27786,10 @@
         "gut",
         "schnell"
       ],
-      "taughtInLessonId": "C1_lesson_6"
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_251",
@@ -26896,7 +27807,10 @@
         "Auch",
         "Zudem"
       ],
-      "taughtInLessonId": "C1_lesson_19"
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_252",
@@ -26908,7 +27822,10 @@
       "answer": "Der Patient, den wir behandelt haben.",
       "explanation": "Akkusativ, nicht welcher.",
       "lessonId": "C1_lesson_24",
-      "taughtInLessonId": "C1_lesson_3"
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_253",
@@ -26919,7 +27836,11 @@
       "prompt": "Korrigieren Sie: 'Ich interessiere mich dafür.' -> richtige Wortstellung",
       "answer": "Dafür interessiere ich mich.",
       "explanation": "Verb an Position 2.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_254",
@@ -26931,7 +27852,10 @@
       "answer": "Er hat gesagt, dass er morgen kommt.",
       "explanation": "Verb-Endstellung.",
       "lessonId": "C1_lesson_25",
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_255",
@@ -26942,7 +27866,11 @@
       "prompt": "Korrigieren Sie: 'Das ist die Idee von was ich dir erzählt habe.'",
       "answer": "Das ist die Idee, von der ich dir erzählt habe.",
       "explanation": "Von der nicht von was.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_256",
@@ -26953,7 +27881,11 @@
       "prompt": "Korrigieren Sie: 'Wegen des Wetters, wir bleiben zu Hause.'",
       "answer": "Wegen des Wetters bleiben wir zu Hause.",
       "explanation": "Verb an Position 2.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_257",
@@ -26965,7 +27897,10 @@
       "answer": "Bevor er geht, macht er das Licht aus.",
       "explanation": "Verb nach Hauptsatzposition 2.",
       "lessonId": "C1_lesson_25",
-      "taughtInLessonId": "C1_lesson_18"
+      "taughtInLessonId": "C1_lesson_18",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_258",
@@ -26982,7 +27917,11 @@
         "Auswertung",
         "Wertung",
         "Auswert"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_259",
@@ -26999,7 +27938,11 @@
         "erklären",
         "Erklärens",
         "Erklärt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_260",
@@ -27016,7 +27959,11 @@
         "Überweisen",
         "Weisung",
         "Überweis"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_261",
@@ -27033,7 +27980,11 @@
         "Schatzung",
         "Einschätzen",
         "Schatz"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_262",
@@ -27050,7 +28001,11 @@
         "Betrachtung",
         "Ziehung",
         "Betracht"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_263",
@@ -27067,7 +28022,11 @@
         "machte",
         "gab",
         "stellte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_264",
@@ -27084,7 +28043,11 @@
         "machten",
         "gaben",
         "legten"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_265",
@@ -27101,7 +28064,11 @@
         "zeigen",
         "machen",
         "geben"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_266",
@@ -27118,7 +28085,11 @@
         "half",
         "sah",
         "machte"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_267",
@@ -27135,7 +28106,11 @@
         "machte",
         "schuf",
         "gab"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.prapositionale.kollokationen",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_268",
@@ -27152,7 +28127,11 @@
         "lässt",
         "hat",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_269",
@@ -27169,7 +28148,11 @@
         "Das Problem ist nicht zu unterschätzen",
         "Das Problem unterschätzt",
         "Das Problem hat unterschätzt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_270",
@@ -27186,7 +28169,11 @@
         "lässt",
         "hat",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_271",
@@ -27203,7 +28190,11 @@
         "lässt",
         "kann",
         "hat"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_272",
@@ -27220,7 +28211,11 @@
         "gereinigt worden",
         "rein",
         "reinigen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_273",
@@ -27237,7 +28232,11 @@
         "verschlossen worden",
         "schliessen",
         "zugemacht"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_274",
@@ -27254,7 +28253,11 @@
         "Zustandspassiv",
         "Aktiv",
         "Futur"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_275",
@@ -27271,7 +28274,11 @@
         "ist",
         "wurde",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_276",
@@ -27288,7 +28295,11 @@
         "wurde",
         "ist",
         "wird"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_277",
@@ -27305,7 +28316,11 @@
         "gesessene",
         "sitzender",
         "Sitzung"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_278",
@@ -27322,7 +28337,11 @@
         "gewachsener",
         "wachsen",
         "gewachsen"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_279",
@@ -27339,7 +28358,11 @@
         "geheilte",
         "heilen",
         "Heilung"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_280",
@@ -27356,7 +28379,11 @@
         "behandelte",
         "Behandlung",
         "behandeln"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_281",
@@ -27373,7 +28400,11 @@
         "gelesener",
         "lesen",
         "Lesung"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.participial.constructions",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_282",
@@ -27390,7 +28421,11 @@
         "Trotz",
         "Wegen",
         "Allen ... zum Trotz"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.connectors.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_283",
@@ -27407,7 +28442,11 @@
         "fünfte",
         "fünft",
         "5"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_284",
@@ -27424,7 +28463,11 @@
         "teilt",
         "trennt",
         "unterteilt"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_285",
@@ -27441,7 +28484,11 @@
         "Ich schreibe über...",
         "In diesem Text geht es um...",
         "Hier steht etwas über..."
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_286",
@@ -27458,7 +28505,11 @@
         "Beziehung",
         "Verhältnis",
         "Zusammenhang"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_287",
@@ -27469,7 +28520,11 @@
       "prompt": "Korrigieren: 'Mein Freund hat ein Auto, was sehr schnell ist.'",
       "answer": "Mein Freund hat ein Auto, das sehr schnell ist.",
       "explanation": "Das, nicht was für Sachen.",
-      "lessonId": "C1_lesson_21"
+      "lessonId": "C1_lesson_21",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_288",
@@ -27480,7 +28535,11 @@
       "prompt": "Korrigieren: 'Ich freue mich auf den Sommerferien.'",
       "answer": "Ich freue mich auf die Sommerferien.",
       "explanation": "Sich freuen auf + Akkusativ (die).",
-      "lessonId": "C1_lesson_22"
+      "lessonId": "C1_lesson_22",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_289",
@@ -27491,7 +28550,11 @@
       "prompt": "Korrigieren: 'Er ist grösser wie ich.'",
       "answer": "Er ist grösser als ich.",
       "explanation": "Komparativ mit als, nicht wie.",
-      "lessonId": "C1_lesson_23"
+      "lessonId": "C1_lesson_23",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_290",
@@ -27502,7 +28565,11 @@
       "prompt": "Korrigieren: 'Sie hat ihm den Brief nicht geschickt, denn sie hatte vergessen.'",
       "answer": "Sie hat ihm den Brief nicht geschickt, denn sie hatte es vergessen.",
       "explanation": "Es als Objekt.",
-      "lessonId": "C1_lesson_24"
+      "lessonId": "C1_lesson_24",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_291",
@@ -27514,7 +28581,10 @@
       "answer": "Wenn ich Zeit habe, werde ich kommen.",
       "explanation": "Tempuskongrünz.",
       "lessonId": "C1_lesson_21",
-      "taughtInLessonId": "C1_lesson_2"
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_292",
@@ -27525,7 +28595,11 @@
       "prompt": "Korrigieren: 'Trotzdem es regnet, gehen wir spazieren.'",
       "answer": "Obwohl es regnet, gehen wir spazieren.",
       "explanation": "Trotzdem ist Adverb, nicht Konjunktion.",
-      "lessonId": "C1_lesson_22"
+      "lessonId": "C1_lesson_22",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_293",
@@ -27536,7 +28610,11 @@
       "prompt": "Korrigieren: 'Er hat die Absicht, dass er morgen abreist.'",
       "answer": "Er hat die Absicht, morgen abzureisen.",
       "explanation": "Umformung: dass-Satz -> zu + Infinitiv.",
-      "lessonId": "C1_lesson_23"
+      "lessonId": "C1_lesson_23",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_294",
@@ -27547,7 +28625,11 @@
       "prompt": "Korrigieren: 'Der Film, den ich gesehen habe, war langweilig.'",
       "answer": "Der Film, den ich gesehen habe, war langweilig.",
       "explanation": "Ist bereits korrekt.",
-      "lessonId": "C1_lesson_24"
+      "lessonId": "C1_lesson_24",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_295",
@@ -27558,7 +28640,11 @@
       "prompt": "Korrigieren: 'Sie fragte, ob ich kann morgen kommen.'",
       "answer": "Sie fragte, ob ich morgen kommen kann.",
       "explanation": "Verb-Endstellung im Nebensatz.",
-      "lessonId": "C1_lesson_25"
+      "lessonId": "C1_lesson_25",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_296",
@@ -27575,7 +28661,11 @@
         "Trotz",
         "Wegen",
         "Dank"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_297",
@@ -27593,7 +28683,10 @@
         "Weiter",
         "Und"
       ],
-      "taughtInLessonId": "C1_lesson_1"
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_298",
@@ -27610,7 +28703,11 @@
         "Weil",
         "Denn",
         "Und"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_299",
@@ -27627,7 +28724,11 @@
         "Das",
         "Es",
         "Jenes"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.nominalisierung.advanced",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_300",
@@ -27645,7 +28746,10 @@
         "nur",
         "eben"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_301",
@@ -27663,7 +28767,10 @@
         "total",
         "ganz"
       ],
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.modalverben.subjektiv",
+      "difficulty": 5,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_302",
@@ -27680,7 +28787,11 @@
         "ist gebaut",
         "wird gebaut",
         "hat gebaut"
-      ]
+      ],
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.passive.alternatives",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_303",
@@ -27692,7 +28803,10 @@
       "answer": "Bei dem Patienten besteht eine arterielle Hypertonie.",
       "explanation": "Medizinisches Register.",
       "lessonId": "C1_lesson_20",
-      "taughtInLessonId": "C1_lesson_7"
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     },
     {
       "id": "C1_gr_304",
@@ -27703,7 +28817,11 @@
       "prompt": "Formulieren Sie medizinisch: 'Das Bein tut weh'",
       "answer": "Der Patient gibt Schmerzen im Bereich des rechten Beins an.",
       "explanation": "Standard.",
-      "lessonId": "C1_lesson_20"
+      "lessonId": "C1_lesson_20",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "difficulty": 4,
+      "skillType": "grammar"
     }
   ]
 }

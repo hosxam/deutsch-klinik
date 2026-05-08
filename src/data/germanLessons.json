@@ -19869,6 +19869,11 @@
       "Demzufolge muss die Methodik überdacht werden.",
       "Insofern die Datenlage dies zulässt, lassen sich folgende Schlüsse ziehen.",
       "Nichtsdestotrotz bleibt die Frage nach der Validität offen.",
+      "Es ist davon auszugehen, dass weitere Studien notwendig sind.",
+      "In Anbetracht der aktüllen Forschungslage ist diese These fragwürdig.",
+      "Demzufolge muss die Methodik überdacht werden.",
+      "Insofern die Datenlage dies zulässt, lassen sich folgende Schlüsse ziehen.",
+      "Nichtsdestotrotz bleibt die Frage nach der Validität offen.",
       "Es ist davon auszugehen, dass weitere Studien notwendig sind."
     ],
     "vocabulary": [
@@ -19931,7 +19936,185 @@
     "readingTask": "Read: 'Die Studie kommt zu dem Schluss, dass der Faktor X signifikant ist. Insofern die Stichprobengrösse ausreichend war, sind die Ergebnisse generalisierbar.'",
     "speakingTask": "Record a 2-minute academic presentation on a research topic. Use formal register.",
     "writingTask": "Write an academic argument (150 words) using 5+ advanced connectors.",
-    "reviewSummary": "You learned academic vocabulary, advanced connectors, and formal register for academic writing."
+    "reviewSummary": "You learned academic vocabulary, advanced connectors, and formal register for academic writing.",
+    "conceptId": "c1.argumentation.advanced",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.argumentation.advanced",
+      "c1.connectors.advanced",
+      "c1.nominal.style"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.konnektoren.formal",
+      "b2.nominalisierung"
+    ],
+    "commonMistakes": [
+      "Using deshalb instead of formal demzufolge in academic writing",
+      "Confusing insofern (insofar as) with insoweit (to the extent that)",
+      "Overusing ich denke instead of impersonal constructions",
+      "Incorrect case after trotz (genitive not dative) in formal register"
+    ],
+    "formsTables": [
+      {
+        "title": "Advanced Connectors Overview",
+        "rows": [
+          [
+            "insofern / insofern als",
+            "The conjunction that expresses a condition with restriction",
+            "Insofern die Daten stimmen, ist die These haltbar."
+          ],
+          [
+            "demzufolge / folglich",
+            "Consequently / therefore (formal)",
+            "Demzufolge muss die Methodik revidiert werden."
+          ],
+          [
+            "in Anbetracht dessen",
+            "In view of this",
+            "In Anbetracht dessen sind weitere Studien noetig."
+          ],
+          [
+            "nichtsdestotrotz",
+            "Nevertheless (formal register)",
+            "Nichtsdestotrotz bleibt die Frage offen."
+          ],
+          [
+            "dahingehend, dass",
+            "To the effect that",
+            "Die Argumentation dahingehend, dass die Theorie veraltet sei, ueberzeugt nicht."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Use demzufolge in a sentence about methodology.",
+        "a": "Demzufolge muss die Forschungsmethodik ueberdacht werden."
+      },
+      {
+        "q": "Replace deshalb with the formal equivalent.",
+        "a": "demzufolge / folglich / dementsprechend"
+      },
+      {
+        "q": "Complete: ___ der aktuellen Forschungslage ist die Theorie fragwuerdig.",
+        "a": "In Anbetracht"
+      },
+      {
+        "q": "Build impersonal: it is feared that...",
+        "a": "Es ist zu befuerchten, dass..."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "academic",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_1",
+      "C1_gr_2",
+      "C1_gr_4",
+      "C1_gr_5",
+      "C1_gr_9",
+      "C1_gr_10",
+      "C1_gr_14",
+      "C1_gr_15",
+      "C1_gr_16",
+      "C1_gr_20",
+      "C1_gr_21",
+      "C1_gr_22",
+      "C1_gr_23",
+      "C1_gr_24",
+      "C1_gr_25",
+      "C1_gr_26",
+      "C1_gr_27",
+      "C1_gr_28",
+      "C1_gr_29",
+      "C1_gr_30",
+      "C1_gr_41",
+      "C1_gr_42",
+      "C1_gr_43",
+      "C1_gr_44",
+      "C1_gr_45",
+      "C1_gr_46",
+      "C1_gr_47",
+      "C1_gr_48",
+      "C1_gr_49",
+      "C1_gr_50",
+      "C1_gr_75",
+      "C1_gr_91",
+      "C1_gr_92",
+      "C1_gr_93",
+      "C1_gr_94",
+      "C1_gr_95",
+      "C1_gr_96",
+      "C1_gr_97",
+      "C1_gr_98",
+      "C1_gr_99",
+      "C1_gr_100",
+      "C1_gr_131",
+      "C1_gr_132",
+      "C1_gr_133",
+      "C1_gr_138",
+      "C1_gr_139",
+      "C1_gr_140",
+      "C1_gr_141",
+      "C1_gr_142",
+      "C1_gr_143",
+      "C1_gr_144",
+      "C1_gr_145",
+      "C1_gr_146",
+      "C1_gr_147",
+      "C1_gr_148",
+      "C1_gr_149",
+      "C1_gr_150",
+      "C1_gr_151",
+      "C1_gr_152",
+      "C1_gr_153",
+      "C1_gr_163",
+      "C1_gr_164",
+      "C1_gr_165",
+      "C1_gr_166",
+      "C1_gr_167",
+      "C1_gr_168",
+      "C1_gr_169",
+      "C1_gr_170",
+      "C1_gr_171",
+      "C1_gr_172",
+      "C1_gr_173",
+      "C1_gr_174",
+      "C1_gr_175",
+      "C1_gr_176",
+      "C1_gr_177",
+      "C1_gr_178",
+      "C1_gr_179",
+      "C1_gr_180",
+      "C1_gr_225",
+      "C1_gr_226",
+      "C1_gr_227",
+      "C1_gr_228",
+      "C1_gr_229",
+      "C1_gr_230",
+      "C1_gr_231",
+      "C1_gr_232",
+      "C1_gr_233",
+      "C1_gr_239",
+      "C1_gr_241",
+      "C1_gr_243",
+      "C1_gr_244",
+      "C1_gr_251",
+      "C1_gr_254",
+      "C1_gr_258",
+      "C1_gr_259",
+      "C1_gr_260",
+      "C1_gr_261",
+      "C1_gr_262",
+      "C1_gr_282",
+      "C1_gr_296",
+      "C1_gr_297",
+      "C1_gr_298",
+      "C1_gr_299"
+    ]
   },
   {
     "level": "C1",
@@ -19941,6 +20124,11 @@
     "objective": "Discuss legal and ethical issüs using differential subjunctive and formal argumentation.",
     "explanation": "The differential subjunctive distinguishes Konjunktiv I (reported speech) from Konjunktiv II (unreal situations). In legal contexts, Konjunktiv II is used for hypothetical cases. 'Wenn dies der Fall wäre, müsste das Gericht anders entscheiden.'",
     "examples": [
+      "Wenn dies der Fall wäre, müsste anders entschieden werden.",
+      "Das Gericht könnte zu dem Schluss kommen, dass die Klage abzuweisen sei.",
+      "Angenommen, der Sachverhalt stellte sich anders dar...",
+      "Es wäre zu präfen, ob die Vorschrift anwendbar ist.",
+      "Selbst wenn die Rechtslage eindeutig wäre, bleiben ethische Fragen.",
       "Wenn dies der Fall wäre, müsste anders entschieden werden.",
       "Das Gericht könnte zu dem Schluss kommen, dass die Klage abzuweisen sei.",
       "Angenommen, der Sachverhalt stellte sich anders dar...",
@@ -20007,7 +20195,89 @@
     "readingTask": "Read: 'Das Bundesverfassungsgericht hat geurteilt, dass das Gesetz verfassungskonform sei. Dennoch bleiben ethische Bedenken.'",
     "speakingTask": "Record a 2-minute discussion of an ethical dilemma using the subjunctive.",
     "writingTask": "Write a legal opinion (150 words) using differential subjunctive.",
-    "reviewSummary": "You learned legal vocabulary, differential subjunctive, and formal legal argumentation."
+    "reviewSummary": "You learned legal vocabulary, differential subjunctive, and formal legal argumentation.",
+    "conceptId": "c1.recht.ethik",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.recht.ethik",
+      "c1.konjunktiv1.formal",
+      "c1.reported.speech"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.indirekte.rede",
+      "b2.recht.gerechtigkeit"
+    ],
+    "commonMistakes": [
+      "Mixing up Konjunktiv I and II in reported speech",
+      "Using wuerde + Infinitiv instead of Konjunktiv I for formal reporting",
+      "Incorrect subjunctive forms of strong verbs in legal contexts"
+    ],
+    "formsTables": [
+      {
+        "title": "Konjunktiv I in Legal Contexts",
+        "rows": [
+          [
+            "Er sagte, das Urteil sei rechtskraeftig.",
+            "Konjunktiv I (sein)",
+            "Reported speech in formal context"
+          ],
+          [
+            "Der Anwalt behauptete, der Mandant habe ein Alibi.",
+            "Konjunktiv I (haben)",
+            "Legal argumentation"
+          ],
+          [
+            "Das Gericht entschied, die Klage werde abgewiesen.",
+            "Konjunktiv I (werden)",
+            "Court decision report"
+          ],
+          [
+            "Die Richterin erklaerte, der Paragraph finde keine Anwendung.",
+            "Konjunktiv I (finden)",
+            "Legal interpretation"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Convert: Das Urteil ist rechtskraeftig (Der Richter sagte, ...)",
+        "a": "Der Richter sagte, das Urteil sei rechtskraeftig."
+      },
+      {
+        "q": "Form Konjunktiv I for haben in 3rd person plural.",
+        "a": "sie haben"
+      },
+      {
+        "q": "Correct: Der Anwalt sagte, der Mandant haette ein Alibi.",
+        "a": "Der Anwalt sagte, der Mandant habe ein Alibi. (Konjunktiv I not II)"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "legal",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_3",
+      "C1_gr_13",
+      "C1_gr_101",
+      "C1_gr_102",
+      "C1_gr_103",
+      "C1_gr_104",
+      "C1_gr_105",
+      "C1_gr_106",
+      "C1_gr_107",
+      "C1_gr_108",
+      "C1_gr_109",
+      "C1_gr_110",
+      "C1_gr_134",
+      "C1_gr_135",
+      "C1_gr_136",
+      "C1_gr_137",
+      "C1_gr_291"
+    ]
   },
   {
     "level": "C1",
@@ -20017,6 +20287,11 @@
     "objective": "Discuss healthcare systems and medical ethics using C1-level vocabulary and structures.",
     "explanation": "Healthcare discussions require formal vocabulary. Use extended noun phrases and compound words. 'Die gesetzliche Krankenversicherung' (statutory health insurance), 'der medizinische Fortschritt' (medical progress). Discuss pros/cons using complex sentence structures.",
     "examples": [
+      "Das deutsche Gesundheitssystem basiert auf dem Solidaritätsprinzip.",
+      "Der medizinische Fortschritt wirft ethische Fragen auf.",
+      "Die Patientenversorgung steht vor grossen Herausforderungen.",
+      "Die Digitalisierung im Gesundheitswesen schreitet voran.",
+      "Eine Grundeinscheidung zwischen Prävention und Kuration ist erforderlich.",
       "Das deutsche Gesundheitssystem basiert auf dem Solidaritätsprinzip.",
       "Der medizinische Fortschritt wirft ethische Fragen auf.",
       "Die Patientenversorgung steht vor grossen Herausforderungen.",
@@ -20083,7 +20358,138 @@
     "readingTask": "Read: 'Die Digitalisierung im Gesundheitswesen bietet Chancen aber auch Risiken. Die elektronische Patientenakte soll die Versorgung verbessern.'",
     "speakingTask": "Record a 2-minute discussion of healthcare challenges in your country.",
     "writingTask": "Write a position paper (150 words) on digitalization in healthcare.",
-    "reviewSummary": "You learned healthcare vocabulary, complex nominal groups, and discussing medical systems."
+    "reviewSummary": "You learned healthcare vocabulary, complex nominal groups, and discussing medical systems.",
+    "conceptId": "c1.medizin.gesundheit",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.medizin.gesundheit",
+      "c1.passive.alternatives",
+      "c1.bekommen.passiv"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.passive.alternatives",
+      "b2.prapositionale.verben"
+    ],
+    "commonMistakes": [
+      "Using koennen instead of lassen sich for passive alternatives",
+      "Confusing sein+zu (necessity) with haben+zu (obligation of subject)",
+      "Overusing werden-Passiv instead of elegant alternatives in medical texts"
+    ],
+    "formsTables": [
+      {
+        "title": "Passive Alternatives in Healthcare",
+        "rows": [
+          [
+            "sein + zu + Infinitiv",
+            "Die Diagnose ist zu ueberpruefen.",
+            "Necessity (must be checked)"
+          ],
+          [
+            "lassen + sich + Infinitiv",
+            "Die Symptome lassen sich behandeln.",
+            "Possibility (can be treated)"
+          ],
+          [
+            "bekommen-Passiv",
+            "Der Patient bekommt die Medikamente verschrieben.",
+            "Recipient passive"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Convert to sein+zu: Man muss den Patienten untersuchen.",
+        "a": "Der Patient ist zu untersuchen."
+      },
+      {
+        "q": "Use lassen-sich: Die Symptome koennen behandelt werden.",
+        "a": "Die Symptome lassen sich behandeln."
+      },
+      {
+        "q": "Create bekommen-Passiv: Der Arzt verschreibt dem Patienten Medikamente.",
+        "a": "Der Patient bekommt Medikamente verschrieben."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "healthcare",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_1",
+      "C1_gr_11",
+      "C1_gr_21",
+      "C1_gr_22",
+      "C1_gr_23",
+      "C1_gr_24",
+      "C1_gr_25",
+      "C1_gr_26",
+      "C1_gr_27",
+      "C1_gr_41",
+      "C1_gr_42",
+      "C1_gr_43",
+      "C1_gr_44",
+      "C1_gr_45",
+      "C1_gr_46",
+      "C1_gr_47",
+      "C1_gr_48",
+      "C1_gr_49",
+      "C1_gr_50",
+      "C1_gr_51",
+      "C1_gr_52",
+      "C1_gr_53",
+      "C1_gr_54",
+      "C1_gr_55",
+      "C1_gr_56",
+      "C1_gr_57",
+      "C1_gr_58",
+      "C1_gr_59",
+      "C1_gr_60",
+      "C1_gr_81",
+      "C1_gr_82",
+      "C1_gr_83",
+      "C1_gr_84",
+      "C1_gr_85",
+      "C1_gr_86",
+      "C1_gr_87",
+      "C1_gr_88",
+      "C1_gr_89",
+      "C1_gr_126",
+      "C1_gr_127",
+      "C1_gr_128",
+      "C1_gr_129",
+      "C1_gr_130",
+      "C1_gr_162",
+      "C1_gr_197",
+      "C1_gr_198",
+      "C1_gr_199",
+      "C1_gr_200",
+      "C1_gr_201",
+      "C1_gr_202",
+      "C1_gr_203",
+      "C1_gr_204",
+      "C1_gr_205",
+      "C1_gr_206",
+      "C1_gr_207",
+      "C1_gr_208",
+      "C1_gr_209",
+      "C1_gr_234",
+      "C1_gr_252",
+      "C1_gr_268",
+      "C1_gr_269",
+      "C1_gr_270",
+      "C1_gr_271",
+      "C1_gr_272",
+      "C1_gr_273",
+      "C1_gr_274",
+      "C1_gr_275",
+      "C1_gr_276",
+      "C1_gr_302",
+      "C1_gr_303",
+      "C1_gr_304"
+    ]
   },
   {
     "level": "C1",
@@ -20093,6 +20499,11 @@
     "objective": "Analyze global issüs and sustainability using figurative language and idioms.",
     "explanation": "C1 speakers use idioms and figurative language naturally. 'Das Fass zum Überlaufen bringen' (to be the last straw), 'den Nagel auf den Kopf treffen' (to hit the nail on the head). Use these to add nuance to discussions of global challenges.",
     "examples": [
+      "Die Globalisierung ist ein zweischneidiges Schwert.",
+      "Der Klimawandel bringt das Fass zum Überlaufen.",
+      "Nachhaltigkeit ist in aller Munde, aber was steckt dahinter?",
+      "Wir dürfen nicht langer die Augen vor der Realität verschliessen.",
+      "Die Zeit drückt - wir müssen jetzt handeln.",
       "Die Globalisierung ist ein zweischneidiges Schwert.",
       "Der Klimawandel bringt das Fass zum Überlaufen.",
       "Nachhaltigkeit ist in aller Munde, aber was steckt dahinter?",
@@ -20159,7 +20570,100 @@
     "readingTask": "Read: 'Der Klimawandel ist eine existenzielle Bedrohung. Experten warnen, dass die Zeit drückt.'",
     "speakingTask": "Record a 2-minute speech on sustainability using idiomatic expressions.",
     "writingTask": "Write an opinion essay (180 words) on balancing economic growth and sustainability.",
-    "reviewSummary": "You learned sustainability vocabulary, German idioms, and how to use figurative language naturally."
+    "reviewSummary": "You learned sustainability vocabulary, German idioms, and how to use figurative language naturally.",
+    "conceptId": "c1.globalisierung.nachhaltigkeit",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.globalisierung.nachhaltigkeit",
+      "c1.participial.constructions",
+      "c1.extended.attributes"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.nachhaltigkeit",
+      "b2.globalisierung"
+    ],
+    "commonMistakes": [
+      "Creating overly long extended attributes that lose clarity",
+      "Wrong participle form based on active/passive meaning",
+      "Forgetting article/noun agreement after extended adjective phrases"
+    ],
+    "formsTables": [
+      {
+        "title": "Participial Constructions",
+        "rows": [
+          [
+            "Partizip I + Nomen",
+            "die steigenden Temperaturen",
+            "Current action"
+          ],
+          [
+            "Partizip II + Nomen",
+            "die reduzierten Emissionen",
+            "Completed action"
+          ],
+          [
+            "Extended attribute",
+            "die im letzten Jahr drastisch gestiegenen Temperaturen",
+            "Complex attribute"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Replace relative clause: die Temperaturen, die gestiegen sind",
+        "a": "die gestiegenen Temperaturen"
+      },
+      {
+        "q": "Partizip I or II: die ___ Massnahmen (ergriffen werden)",
+        "a": "die ergriffenen Massnahmen (Partizip II)"
+      },
+      {
+        "q": "Build extended attribute: die Ressourcen, die nachhaltig genutzt werden",
+        "a": "die nachhaltig genutzten Ressourcen"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "environment",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_7",
+      "C1_gr_8",
+      "C1_gr_12",
+      "C1_gr_61",
+      "C1_gr_62",
+      "C1_gr_63",
+      "C1_gr_64",
+      "C1_gr_65",
+      "C1_gr_66",
+      "C1_gr_67",
+      "C1_gr_68",
+      "C1_gr_69",
+      "C1_gr_70",
+      "C1_gr_71",
+      "C1_gr_72",
+      "C1_gr_73",
+      "C1_gr_74",
+      "C1_gr_75",
+      "C1_gr_76",
+      "C1_gr_77",
+      "C1_gr_78",
+      "C1_gr_79",
+      "C1_gr_80",
+      "C1_gr_121",
+      "C1_gr_122",
+      "C1_gr_123",
+      "C1_gr_124",
+      "C1_gr_125",
+      "C1_gr_277",
+      "C1_gr_278",
+      "C1_gr_279",
+      "C1_gr_280",
+      "C1_gr_281"
+    ]
   },
   {
     "level": "C1",
@@ -20169,6 +20673,11 @@
     "objective": "Use rhetorical devices and write persuasively in formal and creative contexts.",
     "explanation": "Rhetorical devices (rhetorische Mittel) elevate writing: Alliteration, Metapher, rhetorische Frage, Antithese, Dreierfigur (rule of three). Use these in formal presentations, essays, and creative writing. Vary sentence length for rhythm and emphasis.",
     "examples": [
+      "Rhetorische Frage: Ist das etwa die Zukunft, die wir wollen?",
+      "Antithese: Nicht die Starken, sondern die Schwachen brauchen unseren Schutz.",
+      "Dreierfigur: Freiheit, Gleichheit, Brüderlichkeit.",
+      "Alliteration: Milde Macht und mässiges Mass.",
+      "Metapher: Die Wellen der Globalisierung schwappen über alle Grenzen.",
       "Rhetorische Frage: Ist das etwa die Zukunft, die wir wollen?",
       "Antithese: Nicht die Starken, sondern die Schwachen brauchen unseren Schutz.",
       "Dreierfigur: Freiheit, Gleichheit, Brüderlichkeit.",
@@ -20235,7 +20744,68 @@
     "readingTask": "Read a German political speech excerpt and identify 3 rhetorical devices.",
     "speakingTask": "Record a 3-minute persuasive speech on a topic of your choice. Use rhetorical devices.",
     "writingTask": "Write a persuasive essay (200 words) using rhetorical qüstions, antithesis, and Dreierfigur.",
-    "reviewSummary": "You learned rhetorical devices (Alliteration, Metapher, Antithese, Dreierfigur, rhetorische Frage) and how to write persuasively."
+    "reviewSummary": "You learned rhetorical devices (Alliteration, Metapher, Antithese, Dreierfigur, rhetorische Frage) and how to write persuasively.",
+    "conceptId": "c1.rhetorik.schreiben",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.rhetorik.schreiben",
+      "c1.word.order.variation",
+      "c1.stylistic.inversion"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.satzbau",
+      "b2.nominalstil"
+    ],
+    "commonMistakes": [
+      "Creating ambiguity by fronting wrong element",
+      "Overusing inversion to the point of sounding unnatural",
+      "Confusing rhetorical with genuine questions in academic context"
+    ],
+    "formsTables": [
+      {
+        "title": "Stylistic Word Order",
+        "rows": [
+          [
+            "Standard SVO",
+            "Wir koennen diese Behauptung nicht bestaetigen.",
+            "Neutral"
+          ],
+          [
+            "Fronting for emphasis",
+            "Diese Behauptung koennen wir nicht bestaetigen.",
+            "Object fronted"
+          ],
+          [
+            "Verb-first conditional",
+            "Haetten wir frueher davon gewusst ...",
+            "V1 as conditional"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Front the object: Wir koennen diese These nicht akzeptieren.",
+        "a": "Diese These koennen wir nicht akzeptieren."
+      },
+      {
+        "q": "Create a V1 conditional without wenn.",
+        "a": "Haetten wir die Daten frueher gehabt, waere die Analyse praeziser gewesen."
+      },
+      {
+        "q": "Correct: Er hat der These unterzogen einer gruendlichen Pruefung.",
+        "a": "Er hat die These einer gruendlichen Pruefung unterzogen."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "creative",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_6"
+    ]
   },
   {
     "level": "C1",
@@ -20248,7 +20818,13 @@
       "In Anbetracht der Ergebnisse lässt sich Folgendes konstatieren.",
       "Demzufolge bedarf die Methodik einer Revision.",
       "Insofern die Datenlage robust ist, sind die Schlussfolgerungen valide.",
-      "Es ist anzunehmen, dass weitere Studien notwendig sind."
+      "Es ist anzunehmen, dass weitere Studien notwendig sind.",
+      "In Anbetracht der Ergebnisse lässt sich Folgendes konstatieren.",
+      "Demzufolge bedarf die Methodik einer Revision.",
+      "Insofern die Datenlage robust ist, sind die Schlussfolgerungen valide.",
+      "Es ist anzunehmen, dass weitere Studien notwendig sind.",
+      "In Anbetracht der Ergebnisse lässt sich Folgendes konstatieren.",
+      "Demzufolge bedarf die Methodik einer Revision."
     ],
     "grammarFocus": "Academic writing skills",
     "vocabulary": [
@@ -20349,7 +20925,133 @@
     "speakingTask": {
       "prompt": "Present the structure of your academic paper."
     },
-    "reviewSummary": "die Analyse, die These, die Methodik, die Schlussfolgerung, die Validität"
+    "reviewSummary": "die Analyse, die These, die Methodik, die Schlussfolgerung, die Validität",
+    "conceptId": "c1.wissenschaft.schreiben",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.wissenschaft.schreiben",
+      "c1.nominalisierung.advanced",
+      "c1.denominalisierung"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.nominalisierung",
+      "b2.ethik.wissenschaft"
+    ],
+    "commonMistakes": [
+      "Over-nominalizing to the point of clumsiness (Nominalstau)",
+      "Forgetting article for nominalized verbs (das Schreiben, die Analyse)",
+      "Using nominal style where verbal style is more appropriate"
+    ],
+    "formsTables": [
+      {
+        "title": "Nominal vs Verbal Style",
+        "rows": [
+          [
+            "Verbal",
+            "Weil die Daten ueberprueft wurden ...",
+            "Causal"
+          ],
+          [
+            "Nominal",
+            "Aufgrund der Ueberpruefung der Daten ...",
+            "Formal Causal"
+          ],
+          [
+            "Verbal",
+            "Wir analysieren die Ergebnisse.",
+            "Standard"
+          ],
+          [
+            "Nominal",
+            "Die Analyse der Ergebnisse erfolgte.",
+            "Process description"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Convert to nominal: Weil die Finanzierung gesichert wurde, ...",
+        "a": "Aufgrund der Sicherung der Finanzierung ..."
+      },
+      {
+        "q": "Convert to nominal: Wir untersuchen den Zusammenhang.",
+        "a": "Die Untersuchung des Zusammenhangs erfolgte."
+      },
+      {
+        "q": "Convert to verbal: Aufgrund der Analyse der Daten ...",
+        "a": "Weil die Daten analysiert wurden ..."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "academic",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_1",
+      "C1_gr_2",
+      "C1_gr_3",
+      "C1_gr_17",
+      "C1_gr_18",
+      "C1_gr_20",
+      "C1_gr_21",
+      "C1_gr_22",
+      "C1_gr_23",
+      "C1_gr_24",
+      "C1_gr_25",
+      "C1_gr_26",
+      "C1_gr_27",
+      "C1_gr_28",
+      "C1_gr_29",
+      "C1_gr_30",
+      "C1_gr_68",
+      "C1_gr_154",
+      "C1_gr_155",
+      "C1_gr_156",
+      "C1_gr_157",
+      "C1_gr_158",
+      "C1_gr_159",
+      "C1_gr_160",
+      "C1_gr_161",
+      "C1_gr_162",
+      "C1_gr_172",
+      "C1_gr_173",
+      "C1_gr_174",
+      "C1_gr_175",
+      "C1_gr_176",
+      "C1_gr_177",
+      "C1_gr_178",
+      "C1_gr_179",
+      "C1_gr_180",
+      "C1_gr_216",
+      "C1_gr_217",
+      "C1_gr_218",
+      "C1_gr_219",
+      "C1_gr_220",
+      "C1_gr_221",
+      "C1_gr_222",
+      "C1_gr_223",
+      "C1_gr_224",
+      "C1_gr_245",
+      "C1_gr_246",
+      "C1_gr_247",
+      "C1_gr_248",
+      "C1_gr_249",
+      "C1_gr_250",
+      "C1_gr_258",
+      "C1_gr_259",
+      "C1_gr_260",
+      "C1_gr_261",
+      "C1_gr_262",
+      "C1_gr_283",
+      "C1_gr_284",
+      "C1_gr_285",
+      "C1_gr_286",
+      "C1_gr_298",
+      "C1_gr_299"
+    ]
   },
   {
     "level": "C1",
@@ -20362,7 +21064,13 @@
       "Der Minister erklärte, die Reform sei notwendig.",
       "Man könnte argumentieren, dass der Ansatz zu kurz greift.",
       "Es sei darauf hingewiesen, dass die Daten vorläufig sind.",
-      "Ich bitte ergebenst um Stellungnahme."
+      "Ich bitte ergebenst um Stellungnahme.",
+      "Der Minister erklärte, die Reform sei notwendig.",
+      "Man könnte argumentieren, dass der Ansatz zu kurz greift.",
+      "Es sei darauf hingewiesen, dass die Daten vorläufig sind.",
+      "Ich bitte ergebenst um Stellungnahme.",
+      "Der Minister erklärte, die Reform sei notwendig.",
+      "Man könnte argumentieren, dass der Ansatz zu kurz greift."
     ],
     "grammarFocus": "Register and style in German",
     "vocabulary": [
@@ -20463,7 +21171,114 @@
     "speakingTask": {
       "prompt": "Explain the difference between formal and informal register to a learner."
     },
-    "reviewSummary": "die indirekte Rede, der Konjunktiv, die Stellungnahme, das Register"
+    "reviewSummary": "die indirekte Rede, der Konjunktiv, die Stellungnahme, das Register",
+    "conceptId": "c1.sprachliche.nuancen",
+    "estimatedMinutes": 60,
+    "conceptsTaught": [
+      "c1.sprachliche.nuancen",
+      "c1.modalverben.subjektiv",
+      "c1.register.sensitivity"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.modalverben.subjektiv",
+      "b2.indirekte.rede"
+    ],
+    "commonMistakes": [
+      "Using muss for assumption instead of duerfte or muesste",
+      "Confusing subjunctive modal forms",
+      "Using same register across all communication contexts"
+    ],
+    "formsTables": [
+      {
+        "title": "Subjective Modal Verbs",
+        "rows": [
+          [
+            "duerfte (80-90%)",
+            "Das duerfte der richtige Ansatz sein.",
+            "Strong assumption"
+          ],
+          [
+            "muesste (90+%)",
+            "Die Ursache muesste in der Stichprobe liegen.",
+            "Logical conclusion"
+          ],
+          [
+            "koennte (40-60%)",
+            "Der Fehler koennte durch die Methodik bedingt sein.",
+            "Open possibility"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Use duerfte: 80-90% assumption about the approach",
+        "a": "Das duerfte der richtige Ansatz sein."
+      },
+      {
+        "q": "Complete: Die Ursache ___ in der Stichprobe liegen. (logical conclusion 90+%)",
+        "a": "muesste"
+      },
+      {
+        "q": "Express open possibility: Der Fehler ... durch die Methodik bedingt sein.",
+        "a": "koennte"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "nuance",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_4",
+      "C1_gr_5",
+      "C1_gr_19",
+      "C1_gr_91",
+      "C1_gr_92",
+      "C1_gr_93",
+      "C1_gr_94",
+      "C1_gr_95",
+      "C1_gr_96",
+      "C1_gr_97",
+      "C1_gr_98",
+      "C1_gr_99",
+      "C1_gr_100",
+      "C1_gr_111",
+      "C1_gr_112",
+      "C1_gr_113",
+      "C1_gr_114",
+      "C1_gr_115",
+      "C1_gr_116",
+      "C1_gr_117",
+      "C1_gr_118",
+      "C1_gr_119",
+      "C1_gr_120",
+      "C1_gr_131",
+      "C1_gr_132",
+      "C1_gr_133",
+      "C1_gr_158",
+      "C1_gr_163",
+      "C1_gr_164",
+      "C1_gr_165",
+      "C1_gr_166",
+      "C1_gr_167",
+      "C1_gr_168",
+      "C1_gr_169",
+      "C1_gr_170",
+      "C1_gr_171",
+      "C1_gr_181",
+      "C1_gr_182",
+      "C1_gr_183",
+      "C1_gr_184",
+      "C1_gr_185",
+      "C1_gr_186",
+      "C1_gr_187",
+      "C1_gr_188",
+      "C1_gr_300",
+      "C1_gr_301",
+      "C1_gr_303"
+    ]
   },
   {
     "level": "C1",
@@ -20476,7 +21291,13 @@
       "Sprache konstruiert Wirklichkeit.",
       "Der Begriff \"Reform\" impliziert Fortschritt.",
       "Framing beeinflusst die Wahrnehmung.",
-      "Diskursanalyse deckt Machtstrukturen auf."
+      "Diskursanalyse deckt Machtstrukturen auf.",
+      "Sprache konstruiert Wirklichkeit.",
+      "Der Begriff \"Reform\" impliziert Fortschritt.",
+      "Framing beeinflusst die Wahrnehmung.",
+      "Diskursanalyse deckt Machtstrukturen auf.",
+      "Sprache konstruiert Wirklichkeit.",
+      "Der Begriff \"Reform\" impliziert Fortschritt."
     ],
     "grammarFocus": "Critical discourse analysis vocabulary",
     "vocabulary": [
@@ -20577,7 +21398,91 @@
     "speakingTask": {
       "prompt": "Present and discuss your discourse analysis."
     },
-    "reviewSummary": "der Diskurs, das Framing, die Ideologie, die Wortwahl, die Wahrnehmung"
+    "reviewSummary": "der Diskurs, das Framing, die Ideologie, die Wortwahl, die Wahrnehmung",
+    "conceptId": "c1.diskursanalyse",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.diskursanalyse",
+      "c1.sentence.restructuring",
+      "c1.focus.emphasis"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.medien",
+      "b2.politik.gesellschaft"
+    ],
+    "commonMistakes": [
+      "Overusing cleft sentences to the point of being distracting",
+      "Forgetting verb-second rule after fronted elements",
+      "Using colloquial discourse markers in formal critical analysis"
+    ],
+    "formsTables": [
+      {
+        "title": "Sentence Restructuring",
+        "rows": [
+          [
+            "Neutral",
+            "Die Medien beeinflussen die oeffentliche Meinung.",
+            "Standard"
+          ],
+          [
+            "Topicalization",
+            "Was die Medien betrifft, so beeinflussen sie ...",
+            "Emphatic"
+          ],
+          [
+            "Predicate fronting",
+            "Einseitig ist der Diskurs, nicht ausgewogen.",
+            "Emphasis"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Topicalize: Die Medien beeinflussen die oeffentliche Meinung.",
+        "a": "Was die Medien betrifft, so beeinflussen sie die oeffentliche Meinung."
+      },
+      {
+        "q": "Front the predicate: Der Diskurs ist einseitig.",
+        "a": "Einseitig ist der Diskurs, nicht ausgewogen."
+      },
+      {
+        "q": "Negation for contrast: Die Regierung sagt die Wahrheit.",
+        "a": "Nicht die Wahrheit sagt die Regierung, sondern ..."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "media",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_234",
+      "C1_gr_235",
+      "C1_gr_236",
+      "C1_gr_237",
+      "C1_gr_238",
+      "C1_gr_239",
+      "C1_gr_240",
+      "C1_gr_241",
+      "C1_gr_242",
+      "C1_gr_252",
+      "C1_gr_253",
+      "C1_gr_254",
+      "C1_gr_255",
+      "C1_gr_256",
+      "C1_gr_257",
+      "C1_gr_287",
+      "C1_gr_288",
+      "C1_gr_289",
+      "C1_gr_290",
+      "C1_gr_291",
+      "C1_gr_292",
+      "C1_gr_293",
+      "C1_gr_294",
+      "C1_gr_295"
+    ]
   },
   {
     "level": "C1",
@@ -20590,7 +21495,13 @@
       "Göthes Faust ist ein Schlüsselwerk der Weltliteratur.",
       "Kafkas Erzählungen sind vieldeutig.",
       "Die Romantik betont das Gefühl.",
-      "Ein Leitmotiv durchzieht das gesamte Werk."
+      "Ein Leitmotiv durchzieht das gesamte Werk.",
+      "Göthes Faust ist ein Schlüsselwerk der Weltliteratur.",
+      "Kafkas Erzählungen sind vieldeutig.",
+      "Die Romantik betont das Gefühl.",
+      "Ein Leitmotiv durchzieht das gesamte Werk.",
+      "Göthes Faust ist ein Schlüsselwerk der Weltliteratur.",
+      "Kafkas Erzählungen sind vieldeutig."
     ],
     "grammarFocus": "Literary analysis vocabulary",
     "vocabulary": [
@@ -20691,7 +21602,82 @@
     "speakingTask": {
       "prompt": "Present the analysis of a literary device in a German text."
     },
-    "reviewSummary": "die Metapher, das Symbol, das Leitmotiv, die Interpretation, der Roman"
+    "reviewSummary": "die Metapher, das Symbol, das Leitmotiv, die Interpretation, der Roman",
+    "conceptId": "c1.literatur.interpretation",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.literatur.interpretation",
+      "c1.adj.noun.phrases",
+      "c1.extended.adj.phrases"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.nominalstil",
+      "b2.kultur.leben"
+    ],
+    "commonMistakes": [
+      "Forgetting adjective declension after extended attributes",
+      "Creating excessively long noun phrases that lose syntactic clarity",
+      "Confusing strong vs weak declension after determiners"
+    ],
+    "formsTables": [
+      {
+        "title": "Extended Adjective and Noun Phrases",
+        "rows": [
+          [
+            "Simple NP",
+            "die Interpretation",
+            "Basic"
+          ],
+          [
+            "Extended NP",
+            "die vielschichtige Interpretation des Textes",
+            "With genitive"
+          ],
+          [
+            "Participial",
+            "die aus wechselnden Perspektiven erzaehlte Geschichte",
+            "Attribute"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Extend: die Interpretation (with vielschichtig and des Textes)",
+        "a": "die vielschichtige Interpretation des Textes"
+      },
+      {
+        "q": "Add participial attribute: die Geschichte (aus wechselnden Perspektiven erzaehlt)",
+        "a": "die aus wechselnden Perspektiven erzaehlte Geschichte"
+      },
+      {
+        "q": "Extend: das Motiv des Todes (in mehreren Werken wiederkehrend)",
+        "a": "das in mehreren Werken wiederkehrende Motiv des Todes"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "literature",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_81",
+      "C1_gr_82",
+      "C1_gr_83",
+      "C1_gr_84",
+      "C1_gr_85",
+      "C1_gr_86",
+      "C1_gr_87",
+      "C1_gr_88",
+      "C1_gr_89",
+      "C1_gr_90",
+      "C1_gr_126",
+      "C1_gr_127",
+      "C1_gr_128",
+      "C1_gr_129",
+      "C1_gr_130"
+    ]
   },
   {
     "level": "C1",
@@ -20704,7 +21690,13 @@
       "Wir sehen hier noch Verhandlungsspielraum.",
       "Können Sie uns entgegenkommen?",
       "An dieser Position müssen wir festhalten.",
-      "Ein Kompromiss wäre im beiderseitigen Interesse."
+      "Ein Kompromiss wäre im beiderseitigen Interesse.",
+      "Wir sehen hier noch Verhandlungsspielraum.",
+      "Können Sie uns entgegenkommen?",
+      "An dieser Position müssen wir festhalten.",
+      "Ein Kompromiss wäre im beiderseitigen Interesse.",
+      "Wir sehen hier noch Verhandlungsspielraum.",
+      "Können Sie uns entgegenkommen?"
     ],
     "grammarFocus": "Business negotiation vocabulary",
     "vocabulary": [
@@ -20805,7 +21797,101 @@
     "speakingTask": {
       "prompt": "Role-play a business negotiation in German."
     },
-    "reviewSummary": "die Verhandlung, der Kompromiss, das Angebot, die Konditionen"
+    "reviewSummary": "die Verhandlung, der Kompromiss, das Angebot, die Konditionen",
+    "conceptId": "c1.wirtschaft.verhandlungen",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.wirtschaft.verhandlungen",
+      "c1.prapositionale.kollokationen",
+      "c1.idiomatic.collocations"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.prapositionale.verben",
+      "b2.finanzen.wirtschaft"
+    ],
+    "commonMistakes": [
+      "Using wrong preposition with verb",
+      "Confusing dative and accusative after prepositions in business context",
+      "Overusing machen instead of precise business verbs"
+    ],
+    "formsTables": [
+      {
+        "title": "Prepositional Verbs",
+        "rows": [
+          [
+            "bestehen auf + Dat",
+            "Ich bestehe auf einer schriftlichen Bestaetigung.",
+            "Insist on"
+          ],
+          [
+            "verzichten auf + Akk",
+            "Wir verzichten auf eine weitere Verhandlung.",
+            "Forgo"
+          ],
+          [
+            "hinweisen auf + Akk",
+            "Der Anwalt wies auf die Vertragsklausel hin.",
+            "Point out"
+          ],
+          [
+            "beitragen zu + Dat",
+            "Diese Massnahme traegt zur Kostensenkung bei.",
+            "Contribute to"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Ich bestehe ___ einer schriftlichen Bestaetigung. (preposition + case)",
+        "a": "auf + Dativ"
+      },
+      {
+        "q": "Wir verzichten ___ eine weitere Verhandlung. (preposition + case)",
+        "a": "auf + Akkusativ"
+      },
+      {
+        "q": "Complete: Der Anwalt wies ___ die Vertragsklausel hin.",
+        "a": "auf"
+      },
+      {
+        "q": "Diese Massnahme traegt zur Kostensenkung ___ .",
+        "a": "bei"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "business",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_31",
+      "C1_gr_32",
+      "C1_gr_33",
+      "C1_gr_34",
+      "C1_gr_35",
+      "C1_gr_36",
+      "C1_gr_37",
+      "C1_gr_38",
+      "C1_gr_39",
+      "C1_gr_40",
+      "C1_gr_90",
+      "C1_gr_189",
+      "C1_gr_190",
+      "C1_gr_191",
+      "C1_gr_192",
+      "C1_gr_193",
+      "C1_gr_194",
+      "C1_gr_195",
+      "C1_gr_196",
+      "C1_gr_203",
+      "C1_gr_263",
+      "C1_gr_264",
+      "C1_gr_265",
+      "C1_gr_266",
+      "C1_gr_267"
+    ]
   },
   {
     "level": "C1",
@@ -20818,7 +21904,13 @@
       "Sprache formt unser Denken.",
       "Metaphern sind kognitive Konzepte.",
       "Die Sapir-Whorf-Hypothese ist umstritten.",
-      "Jede Sprache hat eine eigene Weltsicht."
+      "Jede Sprache hat eine eigene Weltsicht.",
+      "Sprache formt unser Denken.",
+      "Metaphern sind kognitive Konzepte.",
+      "Die Sapir-Whorf-Hypothese ist umstritten.",
+      "Jede Sprache hat eine eigene Weltsicht.",
+      "Sprache formt unser Denken.",
+      "Metaphern sind kognitive Konzepte."
     ],
     "grammarFocus": "Cognitive linguistics vocabulary",
     "vocabulary": [
@@ -20919,7 +22011,65 @@
     "speakingTask": {
       "prompt": "Discuss: Dös language shape thought or vice versa?"
     },
-    "reviewSummary": "die Kognition, die Linguistik, die Hypothese, die Metapher, die Wahrnehmung"
+    "reviewSummary": "die Kognition, die Linguistik, die Hypothese, die Metapher, die Wahrnehmung",
+    "conceptId": "c1.kognitive.linguistik",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.kognitive.linguistik",
+      "c1.academic.reading"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.medien",
+      "b2.psychologie"
+    ],
+    "commonMistakes": [
+      "Confusing cognitive linguistics terms between German and English",
+      "Using simplified sentences for complex theoretical concepts",
+      "Misunderstanding metaphor extensions in German vs English"
+    ],
+    "formsTables": [
+      {
+        "title": "Cognitive Linguistics Key Terms",
+        "rows": [
+          [
+            "Kognitive Linguistik",
+            "Study of language-cognition relationship",
+            "Die kognitive Linguistik untersucht den Zusammenhang zwischen Sprache, Denken und Erfahrung."
+          ],
+          [
+            "Prototypensemantik",
+            "Category based on prototypes",
+            "Ein Vogel ist ein prototypisches Mitglied der Kategorie //Vogel//."
+          ],
+          [
+            "Conceptual Metaphor",
+            "Understanding one domain via another",
+            "Zeit ist Geld ist eine konzeptuelle Metapher."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "What is the main difference between metaphor in German and English?",
+        "a": "German metaphors often have different conceptual mappings and may not translate directly. For example 'den Nagel auf den Kopf treffen' (hit the nail on the head) works similarly, but German uses more body-based metaphors."
+      },
+      {
+        "q": "Define kognitive Linguistik in German.",
+        "a": "Die kognitive Linguistik untersucht den Zusammenhang zwischen Sprache, Denken und Erfahrung, insbesondere wie sprachliche Strukturen kognitive Prozesse widerspiegeln."
+      },
+      {
+        "q": "Explain the term Prototypensemantik.",
+        "a": "Die Prototypensemantik besagt, dass Kategorien nicht durch feste Grenzen, sondern durch prototypische Mitglieder definiert werden."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "linguistics",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -20932,7 +22082,13 @@
       "Die Menschenwürde ist unantastbar.",
       "Naturrecht beruft sich auf universelle Prinzipien.",
       "Der Rechtspositivismus trennt Recht und Moral.",
-      "Das Grundgesetz steht über einfachen Gesetzen."
+      "Das Grundgesetz steht über einfachen Gesetzen.",
+      "Die Menschenwürde ist unantastbar.",
+      "Naturrecht beruft sich auf universelle Prinzipien.",
+      "Der Rechtspositivismus trennt Recht und Moral.",
+      "Das Grundgesetz steht über einfachen Gesetzen.",
+      "Die Menschenwürde ist unantastbar.",
+      "Naturrecht beruft sich auf universelle Prinzipien."
     ],
     "grammarFocus": "Legal philosophy vocabulary",
     "vocabulary": [
@@ -21033,7 +22189,65 @@
     "speakingTask": {
       "prompt": "Discuss: Can a law be just but illegal, or unjust but legal?"
     },
-    "reviewSummary": "die Rechtsphilosophie, die Menschenwürde, das Grundgesetz, die Gerechtigkeit"
+    "reviewSummary": "die Rechtsphilosophie, die Menschenwürde, das Grundgesetz, die Gerechtigkeit",
+    "conceptId": "c1.jura.rechtsphilosophie",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.jura.rechtsphilosophie",
+      "c1.legal.argumentation"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.recht.gerechtigkeit",
+      "b2.ethik.wissenschaft"
+    ],
+    "commonMistakes": [
+      "Confusing Recht (law/right) Gesetz (statute) and Anspruch (entitlement)",
+      "Using Recht haben instead of im Recht sein in formal legal contexts",
+      "Misunderstanding the German concept of Menschenwuerde"
+    ],
+    "formsTables": [
+      {
+        "title": "German Legal Terminology",
+        "rows": [
+          [
+            "das Recht / die Rechte",
+            "Abstract law / individual rights",
+            "Das Recht auf Meinungsfreiheit ist ein Grundrecht."
+          ],
+          [
+            "das Gesetz / die Gesetze",
+            "Specific statute/law",
+            "Das Gesetz regelt die Zulässigkeit von Kündigungen."
+          ],
+          [
+            "der Anspruch / die Ansprüche",
+            "Legal entitlement / claim",
+            "Der Kläger hat Anspruch auf Schadensersatz."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Distinguish Recht and Gesetz.",
+        "a": "Recht = law/right in abstract sense (Menschenrecht), Gesetz = specific statute/act (das Grundgesetz). Ein Recht kann durch ein Gesetz geschützt sein."
+      },
+      {
+        "q": "Use im Recht sein in a sentence.",
+        "a": "Der Kläger ist im Recht, weil die Kündigung nicht rechtskonform war."
+      },
+      {
+        "q": "Explain the German concept of Menschenwürde.",
+        "a": "Die Menschenwürde ist nach Art. 1 GG unantastbar. Sie bedeutet, dass jeder Mensch um seiner selbst willen Achtung verdient, unabhängig von Nutzen oder Leistung."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "legal",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21046,7 +22260,13 @@
       "Die Patientenautonomie ist ein hohes Gut.",
       "Aktive Sterbehilfe ist in Deutschland verboten.",
       "Die Organspende wirft ethische Fragen auf.",
-      "Die Pränataldiagnostik erfordert verantwortungsvollen Umgang."
+      "Die Pränataldiagnostik erfordert verantwortungsvollen Umgang.",
+      "Die Patientenautonomie ist ein hohes Gut.",
+      "Aktive Sterbehilfe ist in Deutschland verboten.",
+      "Die Organspende wirft ethische Fragen auf.",
+      "Die Pränataldiagnostik erfordert verantwortungsvollen Umgang.",
+      "Die Patientenautonomie ist ein hohes Gut.",
+      "Aktive Sterbehilfe ist in Deutschland verboten."
     ],
     "grammarFocus": "Medical ethics vocabulary",
     "vocabulary": [
@@ -21147,7 +22367,65 @@
     "speakingTask": {
       "prompt": "Debate the pros and cons of organ donation opt-out systems."
     },
-    "reviewSummary": "die Medizinethik, die Autonomie, die Sterbehilfe, die Patientenverfügung"
+    "reviewSummary": "die Medizinethik, die Autonomie, die Sterbehilfe, die Patientenverfügung",
+    "conceptId": "c1.medizinethik",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.medizinethik",
+      "c1.stellungnahme.ethics"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.ethik.wissenschaft",
+      "b2.satzbau"
+    ],
+    "commonMistakes": [
+      "Using Patient selber bestimmen instead of Patientenautonomie",
+      "Confusing Einwilligung (consent) with Zustimmung (agreement)",
+      "Using simplified ethical arguments without nuance"
+    ],
+    "formsTables": [
+      {
+        "title": "Medical Ethics Key Terms",
+        "rows": [
+          [
+            "die Patientenautonomie",
+            "Patient autonomy / self-determination",
+            "Die Patientenautonomie ist ein zentrales Prinzip der Medizinethik."
+          ],
+          [
+            "die Einwilligung / -en",
+            "Informed consent",
+            "Vor der Operation ist die Einwilligung des Patienten erforderlich."
+          ],
+          [
+            "der Nutzen / die Risiken",
+            "Benefits vs risks",
+            "Arzt und Patient wägen Nutzen und Risiken der Behandlung ab."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Patientenautonomie.",
+        "a": "Patientenautonomie bedeutet das Recht des Patienten, nach umfassender Aufklärung selbst über medizinische Maßnahmen zu entscheiden."
+      },
+      {
+        "q": "Distinguish Einwilligung and Zustimmung.",
+        "a": "Einwilligung = informed consent in medical context (rechtlich bindend), Zustimmung = general agreement (nicht immer rechtlich bindend)."
+      },
+      {
+        "q": "Write a sentence about informed consent.",
+        "a": "Vor jedem chirurgischen Eingriff ist die informierte Einwilligung des Patienten einzuholen."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "ethics",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21160,7 +22438,13 @@
       "Wir tragen Verantwortung für zukünftige Generationen.",
       "Der ökologische Imperativ verlangt vorausschaündes Handeln.",
       "Die Grenzen des Wachstums sind erreicht.",
-      "Nachhaltigkeit erfordert strukturelle Veränderungen."
+      "Nachhaltigkeit erfordert strukturelle Veränderungen.",
+      "Wir tragen Verantwortung für zukünftige Generationen.",
+      "Der ökologische Imperativ verlangt vorausschaündes Handeln.",
+      "Die Grenzen des Wachstums sind erreicht.",
+      "Nachhaltigkeit erfordert strukturelle Veränderungen.",
+      "Wir tragen Verantwortung für zukünftige Generationen.",
+      "Der ökologische Imperativ verlangt vorausschaündes Handeln."
     ],
     "grammarFocus": "Environmental ethics vocabulary",
     "vocabulary": [
@@ -21261,7 +22545,65 @@
     "speakingTask": {
       "prompt": "Discuss: How can the ecological imperative guide policy today?"
     },
-    "reviewSummary": "die Nachhaltigkeitsethik, die Verantwortung, der Imperativ, die Transformation"
+    "reviewSummary": "die Nachhaltigkeitsethik, die Verantwortung, der Imperativ, die Transformation",
+    "conceptId": "c1.nachhaltigkeitsethik",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.nachhaltigkeitsethik",
+      "c1.structured.presentation"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.nachhaltigkeit",
+      "b2.energie.klima"
+    ],
+    "commonMistakes": [
+      "Confusing Nachhaltigkeit with only environmental meaning",
+      "Using Oekologie when Umweltpolitik is meant",
+      "Presenting one-sided arguments without counterpositions"
+    ],
+    "formsTables": [
+      {
+        "title": "Sustainability Ethics Terms",
+        "rows": [
+          [
+            "Drei Säulen der Nachhaltigkeit",
+            "Three pillars: ecological, economic, social",
+            "Nachhaltigkeit umfasst ökologische, ökonomische und soziale Aspekte."
+          ],
+          [
+            "Generationengerechtigkeit",
+            "Intergenerational justice",
+            "Die Ressourcen heutiger Generationen dürfen die Bedürfnisse zukünftiger Generationen nicht gefährden."
+          ],
+          [
+            "Das Vorsorgeprinzip",
+            "Precautionary principle",
+            "Bei Unsicherheit über Umweltschäden sollten vorsorgliche Maßnahmen ergriffen werden."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Nachhaltigkeit beyond environmental meaning.",
+        "a": "Nachhaltigkeit umfasst drei Säulen: ökologische, ökonomische und soziale Nachhaltigkeit. Es geht um generationenübergreifende Gerechtigkeit."
+      },
+      {
+        "q": "Complete: Die ethische Verantwortung gegenüber zukünftigen Generationen ___ .",
+        "a": "erfordert ein Umdenken in der Ressourcennutzung."
+      },
+      {
+        "q": "Present a counterargument to strong sustainability.",
+        "a": "Kritiker argumentieren, dass technologischer Fortschritt Umweltprobleme lösen kann, ohne dass Wirtschaftswachstum eingeschränkt werden muss."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "environment",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21274,7 +22616,13 @@
       "Die Kulturindustrie produziert standardisierte Ware.",
       "Adorno kritisierte die Vermarktung von Kunst.",
       "Habermas entwickelte die Theorie des kommunikativen Handelns.",
-      "Die Dialektik der Aufklärung analysiert den Fortschritt."
+      "Die Dialektik der Aufklärung analysiert den Fortschritt.",
+      "Die Kulturindustrie produziert standardisierte Ware.",
+      "Adorno kritisierte die Vermarktung von Kunst.",
+      "Habermas entwickelte die Theorie des kommunikativen Handelns.",
+      "Die Dialektik der Aufklärung analysiert den Fortschritt.",
+      "Die Kulturindustrie produziert standardisierte Ware.",
+      "Adorno kritisierte die Vermarktung von Kunst."
     ],
     "grammarFocus": "Culture critiqü vocabulary",
     "vocabulary": [
@@ -21375,7 +22723,65 @@
     "speakingTask": {
       "prompt": "Discuss: Has art lost its critical function in the digital age?"
     },
-    "reviewSummary": "die Kulturkritik, die Kulturindustrie, die instrumentelle Vernunft, die Dialektik"
+    "reviewSummary": "die Kulturkritik, die Kulturindustrie, die instrumentelle Vernunft, die Dialektik",
+    "conceptId": "c1.kulturkritik",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.kulturkritik",
+      "c1.critical.analysis"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.kultur.leben",
+      "b2.politik.gesellschaft"
+    ],
+    "commonMistakes": [
+      "Confusing Kulturindustrie with Kulturbranche",
+      "Simplified binary analysis instead of nuanced critique",
+      "Using critical theory terms without German intellectual context"
+    ],
+    "formsTables": [
+      {
+        "title": "Critical Theory Concepts",
+        "rows": [
+          [
+            "Die Kulturindustrie",
+            "Term coined by Adorno/Horkheimer",
+            "Die Kulturindustrie standardisiert Kultur zur Ware."
+          ],
+          [
+            "Der Fetischcharakter",
+            "Marxian concept applied to culture",
+            "Der Fetischcharakter der Ware verschleiert soziale Verhältnisse."
+          ],
+          [
+            "Die Dialektik der Aufklärung",
+            "Horkheimer/Adorno",
+            "Fortschritt kann in neue Formen der Unterdrückung umschlagen."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Kulturkritik in German.",
+        "a": "Kulturkritik ist die kritische Auseinandersetzung mit kulturellen Phänomenen, oft mit dem Fokus auf Machtverhältnisse, Ideologien und gesellschaftliche Widersprüche."
+      },
+      {
+        "q": "What does Adorno mean by Kulturindustrie?",
+        "a": "Kulturindustrie bedeutet nach Adorno die Vermarktlichung und Standardisierung von Kultur unter kapitalistischen Bedingungen, die kritische Subjekte zu passiven Konsumenten macht."
+      },
+      {
+        "q": "Distinguish Kulturindustrie and Kulturbranche.",
+        "a": "Kulturindustrie ist ein kritischer Begriff (Frankfurter Schule), Kulturbranche ist neutral und beschreibt den Wirtschaftszweig Kultur."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "culture",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21388,7 +22794,13 @@
       "Zu den Sachen selbst. (Husserl)",
       "Existenz kommt vor Essenz. (Sartre)",
       "Der Mensch ist zur Freiheit verurteilt. (Sartre)",
-      "Das Dasein ist In-der-Welt-Sein. (Heidegger)"
+      "Das Dasein ist In-der-Welt-Sein. (Heidegger)",
+      "Zu den Sachen selbst. (Husserl)",
+      "Existenz kommt vor Essenz. (Sartre)",
+      "Der Mensch ist zur Freiheit verurteilt. (Sartre)",
+      "Das Dasein ist In-der-Welt-Sein. (Heidegger)",
+      "Zu den Sachen selbst. (Husserl)",
+      "Existenz kommt vor Essenz. (Sartre)"
     ],
     "grammarFocus": "Phenomenology and existentialism vocabulary",
     "vocabulary": [
@@ -21489,7 +22901,65 @@
     "speakingTask": {
       "prompt": "Discuss: Are humans truly free or determined by circumstances?"
     },
-    "reviewSummary": "der Existenzialismus, das Dasein, die Freiheit, die Verantwortung, die Authentizität"
+    "reviewSummary": "der Existenzialismus, das Dasein, die Freiheit, die Verantwortung, die Authentizität",
+    "conceptId": "c1.philosophie.existenz",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.philosophie.existenz",
+      "c1.philosophical.reading"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "commonMistakes": [
+      "Confusing Husserls Phaenomenologie with Hegels Phaenomenologie",
+      "Misusing Dasein outside Heideggerian context",
+      "Using philosophical terms imprecisely in German"
+    ],
+    "formsTables": [
+      {
+        "title": "Phenomenology Key Terms",
+        "rows": [
+          [
+            "Die Phänomenologie / Husserl",
+            "Study of structures of consciousness",
+            "Die Phänomenologie beschreibt Phänomene, wie sie sich dem Bewusstsein zeigen."
+          ],
+          [
+            "Das Dasein / Heidegger",
+            "Human being as being-in-the-world",
+            "Das Dasein ist durch Sorge und Selbstbewusstsein gekennzeichnet."
+          ],
+          [
+            "Die Intentionalität",
+            "Structure of consciousness as directedness",
+            "Jedes Bewusstsein ist intentional: Bewusstsein von etwas."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Phänomenologie.",
+        "a": "Die Phänomenologie ist eine philosophische Richtung (Husserl), die die Strukturen des Bewusstseins und die Art und Weise untersucht, wie Phänomene erscheinen."
+      },
+      {
+        "q": "What is Dasein in Heidegger's philosophy?",
+        "a": "Dasein ist Heideggers Begriff für das menschliche Sein, das sich durch Selbstbewusstsein, Sorge und die Fähigkeit zur Frage nach dem Sein auszeichnet."
+      },
+      {
+        "q": "Use Dasein in a sentence about Existentialismus.",
+        "a": "Das Dasein ist nach Heidegger ein In-der-Welt-Sein, das sich zu seinem eigenen Sein verhalten kann."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "philosophy",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21502,7 +22972,13 @@
       "Broca-Aphasie betrifft die Sprachproduktion.",
       "Wernicke-Aphasie betrifft das Sprachverständnis.",
       "Spracherwerb ist ein kognitiver Wettbewerb.",
-      "Das mentale Lexikon organisiert Wortwissen."
+      "Das mentale Lexikon organisiert Wortwissen.",
+      "Broca-Aphasie betrifft die Sprachproduktion.",
+      "Wernicke-Aphasie betrifft das Sprachverständnis.",
+      "Spracherwerb ist ein kognitiver Wettbewerb.",
+      "Das mentale Lexikon organisiert Wortwissen.",
+      "Broca-Aphasie betrifft die Sprachproduktion.",
+      "Wernicke-Aphasie betrifft das Sprachverständnis."
     ],
     "grammarFocus": "Psycholinguistics vocabulary",
     "vocabulary": [
@@ -21603,7 +23079,65 @@
     "speakingTask": {
       "prompt": "Explain the difference between Broca and Wernicke aphasia."
     },
-    "reviewSummary": "die Psycholinguistik, die Aphasie, der Spracherwerb, die Kognition"
+    "reviewSummary": "die Psycholinguistik, die Aphasie, der Spracherwerb, die Kognition",
+    "conceptId": "c1.psycholinguistik",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.psycholinguistik",
+      "c1.scientific.listening"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.psychologie",
+      "b2.medien"
+    ],
+    "commonMistakes": [
+      "Confusing Aphasie with Dysarthrie",
+      "Using simplified sentences when presenting scientific findings",
+      "Errors in compound noun formation"
+    ],
+    "formsTables": [
+      {
+        "title": "Psycholinguistics Terminology",
+        "rows": [
+          [
+            "Die Aphasie / -n",
+            "Acquired language disorder",
+            "Aphasie ist eine erworbene Sprachstörung nach Hirnschädigung."
+          ],
+          [
+            "Die Broca-Aphasie",
+            "Motor aphasia (production disorder)",
+            "Broca-Patienten verstehen Sprache, können aber kaum produzieren."
+          ],
+          [
+            "Die Wernicke-Aphasie",
+            "Sensory aphasia (comprehension disorder)",
+            "Wernicke-Patienten sprechen fließend, aber sinnentstellt."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Aphasie.",
+        "a": "Aphasie ist eine erworbene Sprachstörung aufgrund von Hirnschädigung, die das Sprachverständnis und die Sprachproduktion beeinträchtigt."
+      },
+      {
+        "q": "Distinguish Aphasie and Dysarthrie.",
+        "a": "Aphasie betrifft die Sprache als kognitives System (Wortfindung, Satzbau), Dysarthrie betrifft die Artikulation (motorische Sprechstörung)."
+      },
+      {
+        "q": "Name three types of aphasia.",
+        "a": "Broca-Aphasie (motorisch), Wernicke-Aphasie (sensorisch), globale Aphasie (schwerste Form mit starken Einschränkungen)."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "science",
+      "listening"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21616,7 +23150,13 @@
       "Der Schleier des Nichtwissens garantiert Fairness.",
       "Gerechtigkeit ist Fairness.",
       "Ungleichheit ist nur legitim, wenn sie allen nützt.",
-      "Grundfreiheiten sind unveräußerlich."
+      "Grundfreiheiten sind unveräußerlich.",
+      "Der Schleier des Nichtwissens garantiert Fairness.",
+      "Gerechtigkeit ist Fairness.",
+      "Ungleichheit ist nur legitim, wenn sie allen nützt.",
+      "Grundfreiheiten sind unveräußerlich.",
+      "Der Schleier des Nichtwissens garantiert Fairness.",
+      "Gerechtigkeit ist Fairness."
     ],
     "grammarFocus": "Political philosophy vocabulary",
     "vocabulary": [
@@ -21717,7 +23257,68 @@
     "speakingTask": {
       "prompt": "Debate: Is inequality always unjust?"
     },
-    "reviewSummary": "die Gerechtigkeit, der Schleier des Nichtwissens, die Fairness, das Prinzip"
+    "reviewSummary": "die Gerechtigkeit, der Schleier des Nichtwissens, die Fairness, das Prinzip",
+    "conceptId": "c1.politische.philosophie",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.politische.philosophie",
+      "c1.structured.debate",
+      "c1.political.argumentation"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "commonMistakes": [
+      "Confusing Gesellschaftsvertrag with Sozialvertrag",
+      "Lack of counterargument when debating political positions",
+      "Oversimplifying complex political theory"
+    ],
+    "formsTables": [
+      {
+        "title": "Political Philosophy Key Concepts",
+        "rows": [
+          [
+            "Der Gesellschaftsvertrag",
+            "Social contract (Hobbes, Locke, Rousseau)",
+            "Der Gesellschaftsvertrag legitimiert staatliche Herrschaft."
+          ],
+          [
+            "Die Gerechtigkeit als Fairness",
+            "Rawls theory of justice",
+            "Das Differenzprinzip verlangt: Ungleichheiten müssen den Ärmsten nutzen."
+          ],
+          [
+            "Die deliberative Demokratie",
+            "Habermas",
+            "Legitime Entscheidungen entstehen durch öffentlichen Vernunftgebrauch."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Gesellschaftsvertrag in German.",
+        "a": "Der Gesellschaftsvertrag ist ein hypothetischer Vertrag, den Staatsbürger eingehen, um Freiheit gegen Sicherheit einzutauschen. Wichtige Theoretiker: Hobbes, Locke, Rousseau, Rawls."
+      },
+      {
+        "q": "Distinguish Gesellschaftsvertrag and Sozialvertrag.",
+        "a": "Gesellschaftsvertrag = politische Theorie (Hobbes/Rousseau), Sozialvertrag = wirtschaftspolitisches Konzept (Tarifpartnerschaft)."
+      },
+      {
+        "q": "Summarize Rawls' theory of justice.",
+        "a": "Rawls' Gerechtigkeit als Fairness basiert auf zwei Prinzipien: gleiche Grundfreiheiten und die Differenz soziale Ungleichheiten kommen den am wenigsten Begünstigten zugute."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "politics",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_257"
+    ]
   },
   {
     "level": "C1",
@@ -21730,7 +23331,13 @@
       "Er arbeitet seit drei Jahren hier.",
       "Er war am Arbeiten, als ich kam.",
       "Sie hatte das Buch schon gelesen.",
-      "Wenn ich das gewusst hätte, wäre ich gekommen."
+      "Wenn ich das gewusst hätte, wäre ich gekommen.",
+      "Er arbeitet seit drei Jahren hier.",
+      "Er war am Arbeiten, als ich kam.",
+      "Sie hatte das Buch schon gelesen.",
+      "Wenn ich das gewusst hätte, wäre ich gekommen.",
+      "Er arbeitet seit drei Jahren hier.",
+      "Er war am Arbeiten, als ich kam."
     ],
     "grammarFocus": "Tense and aspect in German",
     "vocabulary": [
@@ -21831,7 +23438,70 @@
     "speakingTask": {
       "prompt": "Explain the difference between Präteritum and Perfekt to a learner."
     },
-    "reviewSummary": "das Tempus, der Aspekt, das Präteritum, das Perfekt, der Progressiv"
+    "reviewSummary": "das Tempus, der Aspekt, das Präteritum, das Perfekt, der Progressiv",
+    "conceptId": "c1.tempus.aspekt",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.tempus.aspekt",
+      "c1.advanced.temporal",
+      "c1.aspect.distinction"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.satzbau",
+      "b2.modalverben.subjektiv"
+    ],
+    "commonMistakes": [
+      "Confusing Praeteritum with Perfekt in formal writing",
+      "Using Plusquamperfekt without clear temporal reference",
+      "Forgetting aspectual distinctions (setzen/sitzen vs legen/liegen)"
+    ],
+    "formsTables": [
+      {
+        "title": "Tense and Aspect Distinctions",
+        "rows": [
+          [
+            "Präteritum (narrative past)",
+            "Used in formal writing and narration",
+            "Der Wissenschaftler präsentierte seine Ergebnisse und diskutierte sie anschließend mit dem Publikum."
+          ],
+          [
+            "Perfekt (conversational past)",
+            "Used in spoken language",
+            "Der Wissenschaftler hat seine Ergebnisse präsentiert."
+          ],
+          [
+            "Plusquamperfekt (past perfect)",
+            "Expresses anteriority relative to past event",
+            "Nachdem er die Daten ausgewertet hatte, veröffentlichte er die Studie."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Distinguish Perfekt and Präteritum in formal writing.",
+        "a": "In formal written German (wissenschaftlich, literarisch) dominiert Präteritum. Perfekt wird eher in gesprochener Sprache verwendet."
+      },
+      {
+        "q": "When is Plusquamperfekt required?",
+        "a": "Plusquamperfekt drückt Vorzeitigkeit aus und erfordert einen temporalen Referenzpunkt in der Vergangenheit. Nachdem er gegessen hatte, ging er spazieren."
+      },
+      {
+        "q": "Distinguish setzen/sitzen and legen/liegen.",
+        "a": "setzen (legen) = positionieren (transitiv, Handlung), sitzen (liegen) = Position sein (Zustand). Er setzt sich / Er sitzt / Er hat gesessen."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "grammar",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_20",
+      "C1_gr_125",
+      "C1_gr_251"
+    ]
   },
   {
     "level": "C1",
@@ -21844,7 +23514,13 @@
       "Wissenschaftliche Revolutionen verändern Paradigmen.",
       "Ein Paradigma prägt die Forschung.",
       "Normale Wissenschaft löst Rätsel im Paradigma.",
-      "Paradigmenwechsel sind nicht rein rational."
+      "Paradigmenwechsel sind nicht rein rational.",
+      "Wissenschaftliche Revolutionen verändern Paradigmen.",
+      "Ein Paradigma prägt die Forschung.",
+      "Normale Wissenschaft löst Rätsel im Paradigma.",
+      "Paradigmenwechsel sind nicht rein rational.",
+      "Wissenschaftliche Revolutionen verändern Paradigmen.",
+      "Ein Paradigma prägt die Forschung."
     ],
     "grammarFocus": "Sociology of science vocabulary",
     "vocabulary": [
@@ -21945,7 +23621,65 @@
     "speakingTask": {
       "prompt": "Discuss: Is science objective or socially constructed?"
     },
-    "reviewSummary": "das Paradigma, der Paradigmenwechsel, die Revolution, die Wissenschaftssoziologie"
+    "reviewSummary": "das Paradigma, der Paradigmenwechsel, die Revolution, die Wissenschaftssoziologie",
+    "conceptId": "c1.wissenschaftssoziologie",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.wissenschaftssoziologie",
+      "c1.research.summary"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.ethik.wissenschaft",
+      "b2.digitalisierung"
+    ],
+    "commonMistakes": [
+      "Oversimplifying Kuhns Paradigmenwechsel in German discourse",
+      "Confusing Wissenschaftssoziologie with Wissenschaftstheorie",
+      "Using Fakten when wissenschaftliche Erkenntnisse is more precise"
+    ],
+    "formsTables": [
+      {
+        "title": "Sociology of Science Terms",
+        "rows": [
+          [
+            "Der Paradigmenwechsel",
+            "Kuhn: scientific revolution",
+            "Kuhn beschreibt die Ablösung eines Paradigmas durch ein neues als wissenschaftliche Revolution."
+          ],
+          [
+            "Die Normalwissenschaft",
+            "Kuhn: puzzle-solving within paradigm",
+            "In der Normalwissenschaft werden Probleme innerhalb des bestehenden Paradigmas gelöst."
+          ],
+          [
+            "Das Falsifikationsprinzip",
+            "Popper: scientific demarcation",
+            "Nach Popper ist eine Theorie nur dann wissenschaftlich, wenn sie falsifizierbar ist."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Wissenschaftssoziologie.",
+        "a": "Die Wissenschaftssoziologie untersucht die sozialen Bedingungen und Folgen wissenschaftlicher Erkenntnisproduktion."
+      },
+      {
+        "q": "What is Kuhns Paradigmenwechsel in German?",
+        "a": "Kuhns Paradigmenwechsel beschreibt die Ablösung eines wissenschaftlichen Paradigmas durch ein neues, inkommensurables Paradigma nach einer Phase wissenschaftlicher Revolution."
+      },
+      {
+        "q": "Distinguish Wissenschaftstheorie and Wissenschaftssoziologie.",
+        "a": "Wissenschaftstheorie fragt nach der Logik und Methode wissenschaftlicher Erkenntnis, Wissenschaftssoziologie nach den sozialen Bedingungen ihrer Entstehung."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "science",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -21958,7 +23692,13 @@
       "\"Es zieht\" impliziert: Mach das Fenster zu.",
       "Die Maxime der Relevanz steuert Gespräche.",
       "Wörtliche Bedeutung und Sprecherbedeutung können differieren.",
-      "Pragmatik erklärt, wie Kontext Bedeutung erzeugt."
+      "Pragmatik erklärt, wie Kontext Bedeutung erzeugt.",
+      "\"Es zieht\" impliziert: Mach das Fenster zu.",
+      "Die Maxime der Relevanz steuert Gespräche.",
+      "Wörtliche Bedeutung und Sprecherbedeutung können differieren.",
+      "Pragmatik erklärt, wie Kontext Bedeutung erzeugt.",
+      "\"Es zieht\" impliziert: Mach das Fenster zu.",
+      "Die Maxime der Relevanz steuert Gespräche."
     ],
     "grammarFocus": "Semantics and pragmatics vocabulary",
     "vocabulary": [
@@ -22059,7 +23799,65 @@
     "speakingTask": {
       "prompt": "Explain how context changes meaning with examples."
     },
-    "reviewSummary": "die Semantik, die Pragmatik, die Implikatur, der Kontext, die Relevanz"
+    "reviewSummary": "die Semantik, die Pragmatik, die Implikatur, der Kontext, die Relevanz",
+    "conceptId": "c1.semantik.pragmatik",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.semantik.pragmatik",
+      "c1.theoretical.reading"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.kultur.leben",
+      "b2.satzbau"
+    ],
+    "commonMistakes": [
+      "Confusing Semantik (meaning) with Pragmatik (use in context)",
+      "Misunderstanding Gricean maxims in German discourse",
+      "Overlooking culture-specific implicatures"
+    ],
+    "formsTables": [
+      {
+        "title": "Semantics vs Pragmatics",
+        "rows": [
+          [
+            "Semantik",
+            "Study of literal meaning",
+            "Die Semantik untersucht die wörtliche Bedeutung von Wörtern und Sätzen."
+          ],
+          [
+            "Pragmatik",
+            "Study of meaning in context",
+            "Die Pragmatik untersucht, was Sprecher in konkreten Situationen meinen."
+          ],
+          [
+            "Implikatur",
+            "Grice: implied meaning",
+            "Wenn jemand auf die Frage Wie war das Essen? mit //Es war essbar// antwortet, ist die Implikatur kritisch."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Distinguish Semantik and Pragmatik.",
+        "a": "Semantik untersucht die wörtliche Bedeutung sprachlicher Ausdrücke, Pragmatik untersucht die Bedeutung im Kontext der Verwendung (Sprechakte, Implikaturen)."
+      },
+      {
+        "q": "Name Grice's four conversational maxims.",
+        "a": "Quantität (informativ genug, nicht zu viel), Qualität (wahrheitsgemäß), Relation (relevant), Modalität (klar, eindeutig, kurz)."
+      },
+      {
+        "q": "Give an example of implicature in German.",
+        "a": "A: 'Magst du das Essen?' B: 'Es ist interessant.' -> Implikatur: A schmeckt es nicht, aber B sagt es nicht direkt."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "linguistics",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -22072,7 +23870,13 @@
       "Der Mediator ist allparteilich.",
       "Aktives Zuhören ist die Basis.",
       "Ich-Botschaften vermeiden Vorwürfe.",
-      "Die Lösung muss von den Parteien kommen."
+      "Die Lösung muss von den Parteien kommen.",
+      "Der Mediator ist allparteilich.",
+      "Aktives Zuhören ist die Basis.",
+      "Ich-Botschaften vermeiden Vorwürfe.",
+      "Die Lösung muss von den Parteien kommen.",
+      "Der Mediator ist allparteilich.",
+      "Aktives Zuhören ist die Basis."
     ],
     "grammarFocus": "Mediation vocabulary",
     "vocabulary": [
@@ -22173,7 +23977,74 @@
     "speakingTask": {
       "prompt": "Role-play a mediation session."
     },
-    "reviewSummary": "die Mediation, der Konflikt, der Mediator, die Vereinbarung, aktives Zuhören"
+    "reviewSummary": "die Mediation, der Konflikt, der Mediator, die Vereinbarung, aktives Zuhören",
+    "conceptId": "c1.mediation.konflikt",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.mediation.konflikt",
+      "c1.negotiation.speaking",
+      "c1.conflict.resolution"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.prapositionale.verben",
+      "b2.politik.gesellschaft"
+    ],
+    "commonMistakes": [
+      "Using Schlichter (arbitrator) instead of Mediator (facilitator)",
+      "Using directive language where open questions are needed",
+      "Confusing positions with interests in negotiation"
+    ],
+    "formsTables": [
+      {
+        "title": "Mediation Phrases",
+        "rows": [
+          [
+            "Eröffnungsphase",
+            "Ich freue mich, dass Sie beide hier sind.",
+            "Lassen Sie uns die Gesprächsregeln klären."
+          ],
+          [
+            "Konfliktklärung",
+            "Können Sie bitte Ihre Sicht der Dinge schildern?",
+            "Was ist Ihnen in dieser Situation wichtig?"
+          ],
+          [
+            "Lösungsphase",
+            "Was brauchen Sie, um einer Lösung zustimmen zu können?",
+            "Können wir gemeinsam nach einem Weg suchen?"
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Distinguish Schlichter and Mediator.",
+        "a": "Ein Schlichter (Schiedsrichter) entscheidet verbindlich, ein Mediator moderiert und begleitet die Konfliktparteien zu einer eigenen Lösung."
+      },
+      {
+        "q": "Complete the mediation phrase: Ich habe den Eindruck, dass wir ___ .",
+        "a": "Ich habe den Eindruck, dass wir aneinander vorbeireden."
+      },
+      {
+        "q": "Convert a directive to an open question for mediation.",
+        "a": "Instead of 'Sie müssen nachgeben', use 'Was brauchen Sie, damit eine Einigung möglich wird?'"
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "professional",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": [
+      "C1_gr_73",
+      "C1_gr_210",
+      "C1_gr_211",
+      "C1_gr_212",
+      "C1_gr_213",
+      "C1_gr_214",
+      "C1_gr_215"
+    ]
   },
   {
     "level": "C1",
@@ -22186,7 +24057,13 @@
       "Digital Humanities nutzen Algorithmen für Textanalyse.",
       "Stilometrie kann Autorschaft bestimmen.",
       "Korpora ermöglichen große Sprachstudien.",
-      "Die Digitalisierung verändert die Geisteswissenschaften."
+      "Die Digitalisierung verändert die Geisteswissenschaften.",
+      "Digital Humanities nutzen Algorithmen für Textanalyse.",
+      "Stilometrie kann Autorschaft bestimmen.",
+      "Korpora ermöglichen große Sprachstudien.",
+      "Die Digitalisierung verändert die Geisteswissenschaften.",
+      "Digital Humanities nutzen Algorithmen für Textanalyse.",
+      "Stilometrie kann Autorschaft bestimmen."
     ],
     "grammarFocus": "Digital humanities vocabulary",
     "vocabulary": [
@@ -22287,7 +24164,65 @@
     "speakingTask": {
       "prompt": "Discuss the opportunities and risks of Digital Humanities."
     },
-    "reviewSummary": "die Digital Humanities, das Text Mining, die Stilometrie, die Korpuslinguistik"
+    "reviewSummary": "die Digital Humanities, das Text Mining, die Stilometrie, die Korpuslinguistik",
+    "conceptId": "c1.digital.humanities",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.digital.humanities",
+      "c1.technology.discourse"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.digitalisierung",
+      "b2.medien"
+    ],
+    "commonMistakes": [
+      "Confusing Digital Humanities with Digitale Medien",
+      "Using English terms excessively instead of German alternatives",
+      "Overestimating technology role in humanities research"
+    ],
+    "formsTables": [
+      {
+        "title": "Digital Humanities Terms",
+        "rows": [
+          [
+            "Text Mining",
+            "Computergestützte Textanalyse",
+            "Text Mining extrahiert Muster aus großen Textmengen."
+          ],
+          [
+            "Stilometrie",
+            "Statistical authorship analysis",
+            "Stilometrie bestimmt Autorschaft durch Analyse von Stilmerkmalen."
+          ],
+          [
+            "Korpuslinguistik",
+            "Corpus-based linguistic research",
+            "Korpora ermöglichen empirische linguistische Forschung."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Digital Humanities in German.",
+        "a": "Digital Humanities verbinden geisteswissenschaftliche Forschung mit computergestützten Methoden wie Text Mining, Stilometrie und Netzwerkanalyse."
+      },
+      {
+        "q": "What is Stilometrie used for?",
+        "a": "Stilometrie analysiert Autorschaft durch statistische Untersuchung von Stilmerkmalen wie Wortlängen, Satzlängen und Funktionswortfrequenzen."
+      },
+      {
+        "q": "Name a German Digital Humanities project.",
+        "a": "Das Deutsche Textarchiv (DTA) ist ein Digital-Humanities-Projekt, das historische deutsche Texte digital erschließt."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "technology",
+      "reading"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -22300,7 +24235,13 @@
       "Das Schöne gefällt ohne Interesse.",
       "Kunst ist das sinnliche Scheinen der Idee.",
       "Das Kunstwerk verliert seine Aura.",
-      "Kunst ist gesellschaftliches Bewusstsein."
+      "Kunst ist gesellschaftliches Bewusstsein.",
+      "Das Schöne gefällt ohne Interesse.",
+      "Kunst ist das sinnliche Scheinen der Idee.",
+      "Das Kunstwerk verliert seine Aura.",
+      "Kunst ist gesellschaftliches Bewusstsein.",
+      "Das Schöne gefällt ohne Interesse.",
+      "Kunst ist das sinnliche Scheinen der Idee."
     ],
     "grammarFocus": "Art theory vocabulary",
     "vocabulary": [
@@ -22401,7 +24342,65 @@
     "speakingTask": {
       "prompt": "Discuss: Is a digital NFT art? Dös it have aura?"
     },
-    "reviewSummary": "die Ästhetik, die Aura, das Kunstwerk, die Reproduktion, die Autonomie"
+    "reviewSummary": "die Ästhetik, die Aura, das Kunstwerk, die Reproduktion, die Autonomie",
+    "conceptId": "c1.kunst.aesthetik",
+    "estimatedMinutes": 50,
+    "conceptsTaught": [
+      "c1.kunst.aesthetik",
+      "c1.formal.analysis"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.kultur.leben",
+      "b2.nominalstil"
+    ],
+    "commonMistakes": [
+      "Using schoen instead of precise aesthetic terminology",
+      "Simplifying Kants aesthetics in German",
+      "Confusing art criticism terminology between languages"
+    ],
+    "formsTables": [
+      {
+        "title": "Aesthetic Key Terms",
+        "rows": [
+          [
+            "Das interesselose Wohlgefallen",
+            "Kant: pure aesthetic pleasure",
+            "Ästhetisches Urteil ist nach Kant interesselos und zweckfrei."
+          ],
+          [
+            "Die Erhabenheit / das Erhabene",
+            "The sublime (Kant, Schiller)",
+            "Das Erhabene überwältigt uns durch seine Größe."
+          ],
+          [
+            "Die Mimesis",
+            "Aristotelian concept of imitation",
+            "Kunst als Mimesis der Natur ist ein klassisches ästhetisches Prinzip."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define ästhetisch in a sentence.",
+        "a": "Die ästhetische Erfahrung eines Kunstwerks umfasst sinnliche Wahrnehmung und intellektuelle Reflexion gleichermaßen."
+      },
+      {
+        "q": "What is Kants 'interesseloses Wohlgefallen'?",
+        "a": "Kants interesseloses Wohlgefallen bedeutet, dass ästhetisches Urteil unabhängig vom persönlichen Nutzen oder Interesse am Objekt gefällt wird."
+      },
+      {
+        "q": "Distinguish schon and ästhetisch.",
+        "a": "'schön' ist alltagssprachlich, 'ästhetisch' ist der philosophische Begriff. Ein Kunstwerk kann ästhetisch ansprechend sein, ohne einfach 'schön' zu sein."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "arts",
+      "writing"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   },
   {
     "level": "C1",
@@ -22414,7 +24413,13 @@
       "Singers Teich-Analogie verpflichtet zur Hilfe.",
       "Kosmopolitismus fordert globale Verteilungsgerechtigkeit.",
       "Nationalisten begrenzen Gerechtigkeit auf Staaten.",
-      "Globale Armut ist ein moralisches Versagen."
+      "Globale Armut ist ein moralisches Versagen.",
+      "Singers Teich-Analogie verpflichtet zur Hilfe.",
+      "Kosmopolitismus fordert globale Verteilungsgerechtigkeit.",
+      "Nationalisten begrenzen Gerechtigkeit auf Staaten.",
+      "Globale Armut ist ein moralisches Versagen.",
+      "Singers Teich-Analogie verpflichtet zur Hilfe.",
+      "Kosmopolitismus fordert globale Verteilungsgerechtigkeit."
     ],
     "grammarFocus": "Global justice vocabulary",
     "vocabulary": [
@@ -22515,6 +24520,66 @@
     "speakingTask": {
       "prompt": "Debate: Do we have a duty to help people in other countries?"
     },
-    "reviewSummary": "die globale Gerechtigkeit, der Kosmopolitismus, die Verteilungsgerechtigkeit, die Armut"
+    "reviewSummary": "die globale Gerechtigkeit, der Kosmopolitismus, die Verteilungsgerechtigkeit, die Armut",
+    "conceptId": "c1.globale.gerechtigkeit",
+    "estimatedMinutes": 55,
+    "conceptsTaught": [
+      "c1.globale.gerechtigkeit",
+      "c1.complex.argumentation",
+      "c1.global.ethics"
+    ],
+    "prerequisiteConceptIds": [
+      "b2.nachhaltigkeit",
+      "b2.politik.gesellschaft",
+      "b2.recht.gerechtigkeit"
+    ],
+    "commonMistakes": [
+      "Oversimplifying complex global justice debates",
+      "Using Menschenrechte rhetorically without legal understanding",
+      "Confusing Kosmopolitismus with Internationalismus"
+    ],
+    "formsTables": [
+      {
+        "title": "Global Justice Discourse",
+        "rows": [
+          [
+            "Globale Gerechtigkeit",
+            "Global justice / distributive justice",
+            "Globale Gerechtigkeit fragt nach fairer Verteilung von Ressourcen weltweit."
+          ],
+          [
+            "Kosmopolitismus",
+            "Cosmopolitanism",
+            "Kosmopolitismus vertritt die moralische Gleichheit aller Menschen."
+          ],
+          [
+            "Menschenrechte",
+            "Human rights / universal legal standards",
+            "Menschenrechte sind unveräußerlich und universell gültig."
+          ]
+        ]
+      }
+    ],
+    "miniDrills": [
+      {
+        "q": "Define Kosmopolitismus.",
+        "a": "Kosmopolitismus ist die philosophische Position, dass alle Menschen unabhängig von nationaler Zugehörigkeit moralisch gleichwertig sind und globale Verantwortung tragen."
+      },
+      {
+        "q": "Distinguish Kosmopolitismus and Internationalismus.",
+        "a": "Kosmopolitismus betont die moralische Gleichheit aller Menschen (ethisch), Internationalismus betont die Zusammenarbeit zwischen Nationalstaaten (politisch)."
+      },
+      {
+        "q": "Present a counterargument: Kritik am Kosmopolitismus.",
+        "a": "Kritiker argumentieren, dass Kosmopolitismus konkrete nationale Verpflichtungen und demokratische Legitimation vernachlässigt und zu abstrakt bleibt."
+      }
+    ],
+    "trackTags": [
+      "c1",
+      "global",
+      "speaking"
+    ],
+    "lessonDepthVersion": "2.0",
+    "linkedQuestionIds": []
   }
 ]

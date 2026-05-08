@@ -8832,13 +8832,15 @@
             "Seit fünf Jahren",
             "Seit sechs Monaten"
           ],
-          "answer": "Seit zwei Jahren"
+          "answer": "Seit zwei Jahren",
+          "explanation": "Based on the listening passage about Interview: Digitalisierung im Krankenhaus."
         },
         {
           "id": "lq32",
           "type": "true-false",
           "question": "Die Digitalisierung hat alle Probleme gelöst.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Interview: Digitalisierung im Krankenhaus."
         },
         {
           "id": "lq33",
@@ -8850,12 +8852,19 @@
             "Weniger Wartezeit",
             "Günstigere Behandlung"
           ],
-          "answer": "Verfügbarkeit von Daten im Notfall"
+          "answer": "Verfügbarkeit von Daten im Notfall",
+          "explanation": "Based on the listening passage about Interview: Digitalisierung im Krankenhaus."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_3",
-      "audio": "audio/listening/c1-listen-1.mp3"
+      "audio": "audio/listening/c1-listen-1.mp3",
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ]
     },
     {
       "id": "C1_listen_2",
@@ -8872,7 +8881,8 @@
             "Nur Deutschland",
             "Asiatische Länder"
           ],
-          "answer": "Deutschland und andere Länder"
+          "answer": "Deutschland und andere Länder",
+          "explanation": "Based on the listening passage about Vortrag: Medizintourismus."
         },
         {
           "id": "lq35",
@@ -8884,18 +8894,26 @@
             "Psychiatrie und Neurologie",
             "Dermatologie und Pädiatrie"
           ],
-          "answer": "Orthopädie, Onkologie und Kardiologie"
+          "answer": "Orthopädie, Onkologie und Kardiologie",
+          "explanation": "Based on the listening passage about Vortrag: Medizintourismus."
         },
         {
           "id": "lq36",
           "type": "true-false",
           "question": "Der Medizintourismus birgt keine Risiken für die lokale Gesundheitsversorgung.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Vortrag: Medizintourismus."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_6",
-      "audio": "audio/listening/c1-listen-2.mp3"
+      "audio": "audio/listening/c1-listen-2.mp3",
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.recht.ethik",
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_listen_3",
@@ -8912,7 +8930,8 @@
             "Über 50.000",
             "Über 100.000"
           ],
-          "answer": "Über 50.000"
+          "answer": "Über 50.000",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Approbation für ausländische Ärzte."
         },
         {
           "id": "lq38",
@@ -8924,13 +8943,15 @@
             "Die Wohnungssuche",
             "Die Visumbeantragung"
           ],
-          "answer": "Die Fachsprachprüfung"
+          "answer": "Die Fachsprachprüfung",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Approbation für ausländische Ärzte."
         },
         {
           "id": "lq39",
           "type": "true-false",
           "question": "Dr. Öztürk findet den Anerkennungsprozess gut strukturiert.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Approbation für ausländische Ärzte."
         },
         {
           "id": "lq40",
@@ -8942,12 +8963,19 @@
             "Kürzere Prüfungen",
             "Mehr Sprachkurse"
           ],
-          "answer": "Digitalisierung und mehr Transparenz"
+          "answer": "Digitalisierung und mehr Transparenz",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Approbation für ausländische Ärzte."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_3",
-      "audio": "audio/listening/c1-listen-3.mp3"
+      "audio": "audio/listening/c1-listen-3.mp3",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ]
     },
     {
       "id": "C1_listen_4",
@@ -8966,13 +8994,15 @@
               "Tierexperimentelle Studien"
             ]
           ],
-          "answer": "Randomisierte kontrollierte Studien"
+          "answer": "Randomisierte kontrollierte Studien",
+          "explanation": "Based on the listening passage about Vorlesung: Grundlagen der evidenzbasierten Medizin."
         },
         {
           "id": "ql42",
           "type": "true-false",
           "question": "In der Chirurgie sind randomisierte Studien immer durchführbar.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Vorlesung: Grundlagen der evidenzbasierten Medizin."
         },
         {
           "id": "ql43",
@@ -8986,18 +9016,26 @@
               "Eine Patientenabfrage"
             ]
           ],
-          "answer": "Systematische Übersichtsarbeiten und Metaanalysen"
+          "answer": "Systematische Übersichtsarbeiten und Metaanalysen",
+          "explanation": "Based on the listening passage about Vorlesung: Grundlagen der evidenzbasierten Medizin."
         },
         {
           "id": "ql44",
           "type": "true-false",
           "question": "Evidenz muss auf die individülle Patientensituation angewendet werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Vorlesung: Grundlagen der evidenzbasierten Medizin."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_1",
-      "audio": "audio/listening/c1-listen-4.mp3"
+      "audio": "audio/listening/c1-listen-4.mp3",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ]
     },
     {
       "id": "C1_listen_5",
@@ -9016,13 +9054,15 @@
               "Eine Einzelleistungsvergütung"
             ]
           ],
-          "answer": "Ein System mit gestaffelten Leistungsgruppen"
+          "answer": "Ein System mit gestaffelten Leistungsgruppen",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Krankenhausreform."
         },
         {
           "id": "ql46",
           "type": "true-false",
           "question": "Professor Neumann hält den Personalmangel für das dringendste Problem.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Krankenhausreform."
         },
         {
           "id": "ql47",
@@ -9036,7 +9076,8 @@
               "Investitionen sind unnötig"
             ]
           ],
-          "answer": "Personalmangel ist ein entscheidendes Problem"
+          "answer": "Personalmangel ist ein entscheidendes Problem",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Krankenhausreform."
         },
         {
           "id": "ql48",
@@ -9048,12 +9089,19 @@
             "Defizite",
             "Fehlentscheidungen"
           ],
-          "answer": "Fehlanreize"
+          "answer": "Fehlanreize",
+          "explanation": "Based on the listening passage about Podiumsdiskussion: Krankenhausreform."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_2",
-      "audio": "audio/listening/c1-listen-5.mp3"
+      "audio": "audio/listening/c1-listen-5.mp3",
+      "taughtInLessonId": "C1_lesson_5",
+      "conceptId": "c1.rhetorik.schreiben",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_listen_6",
@@ -9072,13 +9120,15 @@
               "In privaten Praxen"
             ]
           ],
-          "answer": "In ländlichen Regionen"
+          "answer": "In ländlichen Regionen",
+          "explanation": "Based on the listening passage about Interview: Wege gegen den Ärztemangel."
         },
         {
           "id": "ql50",
           "type": "true-false",
           "question": "Die junge Ärztegeneration ist bereit für eine 60-Stunden-Woche.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Interview: Wege gegen den Ärztemangel."
         },
         {
           "id": "ql51",
@@ -9092,7 +9142,8 @@
               "Automatisierung aller Arztpraxen"
             ]
           ],
-          "answer": "Landarztquote, finanzielle Anreize und Telemedizin"
+          "answer": "Landarztquote, finanzielle Anreize und Telemedizin",
+          "explanation": "Based on the listening passage about Interview: Wege gegen den Ärztemangel."
         },
         {
           "id": "ql52",
@@ -9104,12 +9155,19 @@
             "Bezahlung",
             "Rekrutierung"
           ],
-          "answer": "Integration"
+          "answer": "Integration",
+          "explanation": "Based on the listening passage about Interview: Wege gegen den Ärztemangel."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_4",
-      "audio": "audio/listening/c1-listen-6.mp3"
+      "audio": "audio/listening/c1-listen-6.mp3",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_listen_7",
@@ -9128,13 +9186,15 @@
               "Ob die Medikamente reduziert werden sollen"
             ]
           ],
-          "answer": "Ob eine Magensonde bei einer Patientin mit Demenz indiziert ist"
+          "answer": "Ob eine Magensonde bei einer Patientin mit Demenz indiziert ist",
+          "explanation": "Based on the listening passage about Ethikkommission: Fallberatung."
         },
         {
           "id": "ql54",
           "type": "true-false",
           "question": "Die Patientin hat eine Patientenverfügung hinterlassen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Ethikkommission: Fallberatung."
         },
         {
           "id": "ql55",
@@ -9148,7 +9208,8 @@
               "Die räumlichen Gegebenheiten"
             ]
           ],
-          "answer": "Der mutmaßliche Wille der Patientin und der umstrittene medizinische Nutzen"
+          "answer": "Der mutmaßliche Wille der Patientin und der umstrittene medizinische Nutzen",
+          "explanation": "Based on the listening passage about Ethikkommission: Fallberatung."
         },
         {
           "id": "ql56",
@@ -9160,12 +9221,19 @@
             "intensivmedizinische",
             "häusliche"
           ],
-          "answer": "palliative"
+          "answer": "palliative",
+          "explanation": "Based on the listening passage about Ethikkommission: Fallberatung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_11",
-      "audio": "audio/listening/c1-listen-7.mp3"
+      "audio": "audio/listening/c1-listen-7.mp3",
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.sprachliche.nuancen",
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ]
     },
     {
       "id": "C1_listen_8",
@@ -9184,13 +9252,15 @@
               "Der Endpunkt ist falsch gewählt"
             ]
           ],
-          "answer": "Die Einschlusskriterien schränken die Übertragbarkeit ein"
+          "answer": "Die Einschlusskriterien schränken die Übertragbarkeit ein",
+          "explanation": "Based on the listening passage about Seminar: Studien kritisch bewerten."
         },
         {
           "id": "ql58",
           "type": "true-false",
           "question": "Die Studie wurde von einem Pharmaunternehmen finanziert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Seminar: Studien kritisch bewerten."
         },
         {
           "id": "ql59",
@@ -9204,7 +9274,8 @@
               "Patienten mit Diabetes"
             ]
           ],
-          "answer": "Patienten über 75 Jahre und mit Vorerkrankungen"
+          "answer": "Patienten über 75 Jahre und mit Vorerkrankungen",
+          "explanation": "Based on the listening passage about Seminar: Studien kritisch bewerten."
         },
         {
           "id": "ql60",
@@ -9216,12 +9287,19 @@
             "Krankenhausaufenthalt",
             "Nierenversagen"
           ],
-          "answer": "Tod"
+          "answer": "Tod",
+          "explanation": "Based on the listening passage about Seminar: Studien kritisch bewerten."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_6",
-      "audio": "audio/listening/c1-listen-8.mp3"
+      "audio": "audio/listening/c1-listen-8.mp3",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_9",
@@ -9240,13 +9318,15 @@
               "Bei der Krankenhaussoftware"
             ]
           ],
-          "answer": "Beim Menschen, nicht bei der Technik"
+          "answer": "Beim Menschen, nicht bei der Technik",
+          "explanation": "Based on the listening passage about Podcast: Datenschutz in der Patientenversorgung."
         },
         {
           "id": "ql62",
           "type": "true-false",
           "question": "Patientendaten zu Behandlungszwecken dürfen auf Wunsch gelöscht werden.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Podcast: Datenschutz in der Patientenversorgung."
         },
         {
           "id": "ql63",
@@ -9260,18 +9340,26 @@
               "Gemeinsame Passwörter"
             ]
           ],
-          "answer": "Verschlüsselte Netzwerke, Zugriffsberechtigungen und Sicherheitsaudits"
+          "answer": "Verschlüsselte Netzwerke, Zugriffsberechtigungen und Sicherheitsaudits",
+          "explanation": "Based on the listening passage about Podcast: Datenschutz in der Patientenversorgung."
         },
         {
           "id": "ql64",
           "type": "true-false",
           "question": "Mitarbeiter werden im Umgang mit Patientendaten geschult.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Podcast: Datenschutz in der Patientenversorgung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "audio": "audio/listening/c1-listen-9.mp3"
+      "audio": "audio/listening/c1-listen-9.mp3",
+      "taughtInLessonId": "C1_lesson_9",
+      "conceptId": "c1.literatur.interpretation",
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ]
     },
     {
       "id": "C1_listen_10",
@@ -9290,13 +9378,15 @@
               "Verbrennungen und Schnittverletzungen"
             ]
           ],
-          "answer": "Mehrfachfrakturen, Milzruptur und Thoraxtrauma"
+          "answer": "Mehrfachfrakturen, Milzruptur und Thoraxtrauma",
+          "explanation": "Based on the listening passage about Fallkonferenz: Polytrauma-Patient."
         },
         {
           "id": "ql66",
           "type": "true-false",
           "question": "Die Radiologie hat eine beginnende Pneumonie festgestellt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Fallkonferenz: Polytrauma-Patient."
         },
         {
           "id": "ql67",
@@ -9310,7 +9400,8 @@
               "Eine Wundinfektion"
             ]
           ],
-          "answer": "Eine beginnende Pneumonie"
+          "answer": "Eine beginnende Pneumonie",
+          "explanation": "Based on the listening passage about Fallkonferenz: Polytrauma-Patient."
         },
         {
           "id": "ql68",
@@ -9322,12 +9413,19 @@
             "Wundschmerzpflaster",
             "Muskelrelaxans"
           ],
-          "answer": "Periduralkatheter"
+          "answer": "Periduralkatheter",
+          "explanation": "Based on the listening passage about Fallkonferenz: Polytrauma-Patient."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_8",
-      "audio": "audio/listening/c1-listen-10.mp3"
+      "audio": "audio/listening/c1-listen-10.mp3",
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ]
     },
     {
       "id": "C1_listen_11",
@@ -9346,13 +9444,15 @@
               "Personalausfall"
             ]
           ],
-          "answer": "Stürze auf der Station"
+          "answer": "Stürze auf der Station",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Patientensicherheit."
         },
         {
           "id": "ql70",
           "type": "true-false",
           "question": "Die Sturznachsorge wurde nach dem Vorfall nicht durchgeführt.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Patientensicherheit."
         },
         {
           "id": "ql71",
@@ -9366,18 +9466,26 @@
               "Eine Fixierung aller Risikopatienten"
             ]
           ],
-          "answer": "Eine zusätzliche nächtliche Visite für sturzgefährdete Patienten"
+          "answer": "Eine zusätzliche nächtliche Visite für sturzgefährdete Patienten",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Patientensicherheit."
         },
         {
           "id": "ql72",
           "type": "true-false",
           "question": "Die Sturzrisikoeinschätzung des Patienten war bei Aufnahme dokumentiert.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Patientensicherheit."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_5",
-      "audio": "audio/listening/c1-listen-11.mp3"
+      "audio": "audio/listening/c1-listen-11.mp3",
+      "taughtInLessonId": "C1_lesson_11",
+      "conceptId": "c1.kognitive.linguistik",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ]
     },
     {
       "id": "C1_listen_12",
@@ -9396,13 +9504,15 @@
               "Die Kollegen"
             ]
           ],
-          "answer": "Die medizinische Fachsprache und die Dokumentation"
+          "answer": "Die medizinische Fachsprache und die Dokumentation",
+          "explanation": "Based on the listening passage about Bericht: Integration internationaler Ärzte."
         },
         {
           "id": "ql74",
           "type": "true-false",
           "question": "Frau Dr. Kowalski hatte einen Mentor zur Unterstützung.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Bericht: Integration internationaler Ärzte."
         },
         {
           "id": "ql75",
@@ -9416,7 +9526,8 @@
               "Ein Jahr"
             ]
           ],
-          "answer": "Mindestens drei Monate"
+          "answer": "Mindestens drei Monate",
+          "explanation": "Based on the listening passage about Bericht: Integration internationaler Ärzte."
         },
         {
           "id": "ql76",
@@ -9428,12 +9539,19 @@
             "Arbeitszeiten",
             "Urlaubsregelungen"
           ],
-          "answer": "Hierarchien"
+          "answer": "Hierarchien",
+          "explanation": "Based on the listening passage about Bericht: Integration internationaler Ärzte."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_9",
-      "audio": "audio/listening/c1-listen-12.mp3"
+      "audio": "audio/listening/c1-listen-12.mp3",
+      "taughtInLessonId": "C1_lesson_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_listen_13",
@@ -9452,13 +9570,15 @@
               "Die Physiotherapie"
             ]
           ],
-          "answer": "Die Chemotherapie"
+          "answer": "Die Chemotherapie",
+          "explanation": "Based on the listening passage about Palliativvisite: Gespräch mit Angehörigen."
         },
         {
           "id": "ql78",
           "type": "true-false",
           "question": "Das Ärzteteam empfiehlt eine weitere aggressive Therapie.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Palliativvisite: Gespräch mit Angehörigen."
         },
         {
           "id": "ql79",
@@ -9472,7 +9592,8 @@
               "Auf eine Verlegung in ein anderes Krankenhaus"
             ]
           ],
-          "answer": "Auf die Lebensqualität und Symptomkontrolle"
+          "answer": "Auf die Lebensqualität und Symptomkontrolle",
+          "explanation": "Based on the listening passage about Palliativvisite: Gespräch mit Angehörigen."
         },
         {
           "id": "ql80",
@@ -9484,12 +9605,19 @@
             "Chirurgenteam",
             "Psychologenteam"
           ],
-          "answer": "Palliativteam"
+          "answer": "Palliativteam",
+          "explanation": "Based on the listening passage about Palliativvisite: Gespräch mit Angehörigen."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_10",
-      "audio": "audio/listening/c1-listen-13.mp3"
+      "audio": "audio/listening/c1-listen-13.mp3",
+      "taughtInLessonId": "C1_lesson_13",
+      "conceptId": "c1.medizinethik",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_14",
@@ -9506,13 +9634,15 @@
             "In der Sonographie",
             "In der Nuklearmedizin"
           ],
-          "answer": "In Mammographie-Screening-Programmen"
+          "answer": "In Mammographie-Screening-Programmen",
+          "explanation": "Based on the listening passage about Vortrag: KI in der radiologischen Diagnostik."
         },
         {
           "id": "ql82",
           "type": "true-false",
           "question": "Der Referent glaubt, dass KI den Radiologen ersetzen wird.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Vortrag: KI in der radiologischen Diagnostik."
         },
         {
           "id": "ql83",
@@ -9524,7 +9654,8 @@
             "Die Anschaffungskosten",
             "Die Stromversorgung"
           ],
-          "answer": "Die Validierung der Algorithmen an realen Patientendaten"
+          "answer": "Die Validierung der Algorithmen an realen Patientendaten",
+          "explanation": "Based on the listening passage about Vortrag: KI in der radiologischen Diagnostik."
         },
         {
           "id": "ql84",
@@ -9536,12 +9667,19 @@
             "Krankenhausträger",
             "Patient"
           ],
-          "answer": "Arzt"
+          "answer": "Arzt",
+          "explanation": "Based on the listening passage about Vortrag: KI in der radiologischen Diagnostik."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_12",
-      "audio": "audio/listening/c1-listen-14.mp3"
+      "audio": "audio/listening/c1-listen-14.mp3",
+      "taughtInLessonId": "C1_lesson_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ]
     },
     {
       "id": "C1_listen_15",
@@ -9558,13 +9696,15 @@
             "Ein neues Diagnoseverfahren",
             "Eine neue Physiotherapiemethode"
           ],
-          "answer": "Ein neues Medikament gegen Rheumatoide Arthritis"
+          "answer": "Ein neues Medikament gegen Rheumatoide Arthritis",
+          "explanation": "Based on the listening passage about Aufklärungsgespräch: Klinische Studie."
         },
         {
           "id": "ql86",
           "type": "true-false",
           "question": "Die Studie ist doppelblind, das heißt Arzt und Patient kennen die Gruppenzuteilung nicht.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Aufklärungsgespräch: Klinische Studie."
         },
         {
           "id": "ql87",
@@ -9576,7 +9716,8 @@
             "Das Studienmedikament selbst wählen",
             "Die Ergebnisse einsehen"
           ],
-          "answer": "Jederzeit ohne Angabe von Gründen zurücktreten"
+          "answer": "Jederzeit ohne Angabe von Gründen zurücktreten",
+          "explanation": "Based on the listening passage about Aufklärungsgespräch: Klinische Studie."
         },
         {
           "id": "ql88",
@@ -9588,12 +9729,19 @@
             "einfachblind",
             "kontrolliert"
           ],
-          "answer": "doppelblind"
+          "answer": "doppelblind",
+          "explanation": "Based on the listening passage about Aufklärungsgespräch: Klinische Studie."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_13",
-      "audio": "audio/listening/c1-listen-15.mp3"
+      "audio": "audio/listening/c1-listen-15.mp3",
+      "taughtInLessonId": "C1_lesson_15",
+      "conceptId": "c1.kulturkritik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_16",
@@ -9610,13 +9758,15 @@
             "Nach dem Zufallsprinzip",
             "Nach der Krankenkassenzugehörigkeit"
           ],
-          "answer": "Nach dem Dringlichkeitsprinzip"
+          "answer": "Nach dem Dringlichkeitsprinzip",
+          "explanation": "Based on the listening passage about Debatte: Verteilung knapper Intensivbetten."
         },
         {
           "id": "ql90",
           "type": "true-false",
           "question": "Professor Meier fordert transparente, im Vorfeld festgelegte Kriterien.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Debatte: Verteilung knapper Intensivbetten."
         },
         {
           "id": "ql91",
@@ -9628,18 +9778,26 @@
             "Versicherungsstatus, Herkunft und sozialer Status",
             "Kosten, Nutzen und Effizienz"
           ],
-          "answer": "Medizinische Dringlichkeit, Erfolgsaussicht und Gleichbehandlung"
+          "answer": "Medizinische Dringlichkeit, Erfolgsaussicht und Gleichbehandlung",
+          "explanation": "Based on the listening passage about Debatte: Verteilung knapper Intensivbetten."
         },
         {
           "id": "ql92",
           "type": "true-false",
           "question": "Die Priorisierung war vor der Pandemie nie ein Problem.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Debatte: Verteilung knapper Intensivbetten."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_14",
-      "audio": "audio/listening/c1-listen-16.mp3"
+      "audio": "audio/listening/c1-listen-16.mp3",
+      "taughtInLessonId": "C1_lesson_16",
+      "conceptId": "c1.philosophie.existenz",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_17",
@@ -9656,13 +9814,15 @@
             "Das Einkommen",
             "Die Krankenversicherung"
           ],
-          "answer": "Das kulturelle Verständnis von Krankheit und Gesundheit"
+          "answer": "Das kulturelle Verständnis von Krankheit und Gesundheit",
+          "explanation": "Based on the listening passage about Workshop: Interkulturelle Kompetenz im Krankenhaus."
         },
         {
           "id": "ql94",
           "type": "true-false",
           "question": "Professionelle Dolmetscher werden als problematisch für die Verständigung angesehen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Workshop: Interkulturelle Kompetenz im Krankenhaus."
         },
         {
           "id": "ql95",
@@ -9674,7 +9834,8 @@
             "Die Familie hat kein Mitspracherecht",
             "Die Familie sollte immer anwesend sein"
           ],
-          "answer": "Die Einbeziehung der Familie ist in vielen Kulturen zentral"
+          "answer": "Die Einbeziehung der Familie ist in vielen Kulturen zentral",
+          "explanation": "Based on the listening passage about Workshop: Interkulturelle Kompetenz im Krankenhaus."
         },
         {
           "id": "ql96",
@@ -9686,12 +9847,19 @@
             "Begleiten",
             "Beraten"
           ],
-          "answer": "Übersetzen"
+          "answer": "Übersetzen",
+          "explanation": "Based on the listening passage about Workshop: Interkulturelle Kompetenz im Krankenhaus."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_15",
-      "audio": "audio/listening/c1-listen-17.mp3"
+      "audio": "audio/listening/c1-listen-17.mp3",
+      "taughtInLessonId": "C1_lesson_17",
+      "conceptId": "c1.psycholinguistik",
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_listen_18",
@@ -9708,13 +9876,15 @@
             "Ein abgelaufenes Medikament",
             "Eine zu hohe Dosis"
           ],
-          "answer": "Ein für einen anderen Patienten bestimmtes Medikament"
+          "answer": "Ein für einen anderen Patienten bestimmtes Medikament",
+          "explanation": "Based on the listening passage about Gespräch nach einem Zwischenfall."
         },
         {
           "id": "ql98",
           "type": "true-false",
           "question": "Der Patient hat durch den Fehler gesundheitliche Schäden davongetragen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Gespräch nach einem Zwischenfall."
         },
         {
           "id": "ql99",
@@ -9726,18 +9896,26 @@
             "Das Medikament aus dem Verkehr gezogen",
             "Die Station geschlossen"
           ],
-          "answer": "Den Vorfall dokumentiert und die Prozesse überprüft"
+          "answer": "Den Vorfall dokumentiert und die Prozesse überprüft",
+          "explanation": "Based on the listening passage about Gespräch nach einem Zwischenfall."
         },
         {
           "id": "ql100",
           "type": "true-false",
           "question": "Der Oberarzt hat sich für den Vorfall entschuldigt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Gespräch nach einem Zwischenfall."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_16",
-      "audio": "audio/listening/c1-listen-18.mp3"
+      "audio": "audio/listening/c1-listen-18.mp3",
+      "taughtInLessonId": "C1_lesson_18",
+      "conceptId": "c1.politische.philosophie",
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_listen_19",
@@ -9754,13 +9932,15 @@
             "Pseudomonas und Acinetobacter",
             "Clostridium difficile"
           ],
-          "answer": "MRSA und ESBL-bildende Bakterien"
+          "answer": "MRSA und ESBL-bildende Bakterien",
+          "explanation": "Based on the listening passage about ABS-Roundtable: Rationaler Antibiotikäinsatz."
         },
         {
           "id": "ql102",
           "type": "true-false",
           "question": "Breitbandantibiotika sollten ohne Erregernachweis eingesetzt werden.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about ABS-Roundtable: Rationaler Antibiotikäinsatz."
         },
         {
           "id": "ql103",
@@ -9772,7 +9952,8 @@
             "Die Einnahme nüchtern",
             "Die Kombination mit Alkohol"
           ],
-          "answer": "Die Anpassung bei Niereninsuffizienz"
+          "answer": "Die Anpassung bei Niereninsuffizienz",
+          "explanation": "Based on the listening passage about ABS-Roundtable: Rationaler Antibiotikäinsatz."
         },
         {
           "id": "ql104",
@@ -9784,12 +9965,19 @@
             "Allergietest",
             "Röntgen"
           ],
-          "answer": "Erregernachweis"
+          "answer": "Erregernachweis",
+          "explanation": "Based on the listening passage about ABS-Roundtable: Rationaler Antibiotikäinsatz."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_17",
-      "audio": "audio/listening/c1-listen-19.mp3"
+      "audio": "audio/listening/c1-listen-19.mp3",
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.tempus.aspekt",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ]
     },
     {
       "id": "C1_listen_20",
@@ -9806,13 +9994,15 @@
             "Übelkeit und Erbrechen",
             "Durst und häufiges Wasserlassen"
           ],
-          "answer": "Zittern, Schwitzen, Herzklopfen und Heißhunger"
+          "answer": "Zittern, Schwitzen, Herzklopfen und Heißhunger",
+          "explanation": "Based on the listening passage about Schulung: Diabetes-Selbstmanagement."
         },
         {
           "id": "ql106",
           "type": "true-false",
           "question": "Bei einem Blutzucker unter 70 mg/dl sollte man schnell wirksame Kohlenhydrate zu sich nehmen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Schulung: Diabetes-Selbstmanagement."
         },
         {
           "id": "ql107",
@@ -9824,18 +10014,26 @@
             "Nur einmal täglich essen",
             "Viel Fett essen"
           ],
-          "answer": "Regelmäßige Mahlzeiten, angepasste Insulin- und Bewegungsdosis"
+          "answer": "Regelmäßige Mahlzeiten, angepasste Insulin- und Bewegungsdosis",
+          "explanation": "Based on the listening passage about Schulung: Diabetes-Selbstmanagement."
         },
         {
           "id": "ql108",
           "type": "true-false",
           "question": "Diabetiker müssen vollständig auf Süßes verzichten.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Schulung: Diabetes-Selbstmanagement."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_18",
-      "audio": "audio/listening/c1-listen-20.mp3"
+      "audio": "audio/listening/c1-listen-20.mp3",
+      "taughtInLessonId": "C1_lesson_20",
+      "conceptId": "c1.wissenschaftssoziologie",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ]
     },
     {
       "id": "C1_listen_21",
@@ -9852,13 +10050,15 @@
             "Nach zwei Wochen",
             "Nach einem Monat"
           ],
-          "answer": "Am ersten Tag nach der OP"
+          "answer": "Am ersten Tag nach der OP",
+          "explanation": "Based on the listening passage about Rehaplanung nach Hüft-OP."
         },
         {
           "id": "ql110",
           "type": "true-false",
           "question": "Bei einem minimalinvasiven Eingriff sind Krücken oft nur zwei bis drei Wochen nötig.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Rehaplanung nach Hüft-OP."
         },
         {
           "id": "ql111",
@@ -9870,7 +10070,8 @@
             "Nach drei Monaten",
             "Nach einem Jahr"
           ],
-          "answer": "Nach etwa sechs Wochen"
+          "answer": "Nach etwa sechs Wochen",
+          "explanation": "Based on the listening passage about Rehaplanung nach Hüft-OP."
         },
         {
           "id": "ql112",
@@ -9882,12 +10083,19 @@
             "Zeitpunkt",
             "Beginn"
           ],
-          "answer": "Erfolg"
+          "answer": "Erfolg",
+          "explanation": "Based on the listening passage about Rehaplanung nach Hüft-OP."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_19",
-      "audio": "audio/listening/c1-listen-21.mp3"
+      "audio": "audio/listening/c1-listen-21.mp3",
+      "taughtInLessonId": "C1_lesson_21",
+      "conceptId": "c1.semantik.pragmatik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_22",
@@ -9904,13 +10112,15 @@
             "Vertrauen verschlechtert die Ergebnisse",
             "Vertrauen ist nur für die Psyche wichtig"
           ],
-          "answer": "Vertraünsvolle Patienten erzielen bessere Behandlungsergebnisse"
+          "answer": "Vertraünsvolle Patienten erzielen bessere Behandlungsergebnisse",
+          "explanation": "Based on the listening passage about Radiobeitrag: Vertrauen in die Arzt-Patienten-Beziehung."
         },
         {
           "id": "ql114",
           "type": "true-false",
           "question": "Zeitdruck gefährdet das Vertrauensverhältnis zwischen Arzt und Patient.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Radiobeitrag: Vertrauen in die Arzt-Patienten-Beziehung."
         },
         {
           "id": "ql115",
@@ -9922,18 +10132,26 @@
             "Weniger Gespräche mit Patienten",
             "Schnellere Diagnosen stellen"
           ],
-          "answer": "Auf Augenhöhe begegnen, aktiv zuhören, transparent entscheiden"
+          "answer": "Auf Augenhöhe begegnen, aktiv zuhören, transparent entscheiden",
+          "explanation": "Based on the listening passage about Radiobeitrag: Vertrauen in die Arzt-Patienten-Beziehung."
         },
         {
           "id": "ql116",
           "type": "true-false",
           "question": "Eine vertraünsvolle Beziehung entsteht über Nacht.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Radiobeitrag: Vertrauen in die Arzt-Patienten-Beziehung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_20",
-      "audio": "audio/listening/c1-listen-22.mp3"
+      "audio": "audio/listening/c1-listen-22.mp3",
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_23",
@@ -9950,13 +10168,15 @@
             "Etwa die Hälfte",
             "Fast alle"
           ],
-          "answer": "Etwa ein Drittel"
+          "answer": "Etwa ein Drittel",
+          "explanation": "Based on the listening passage about Arbeitsbelastung und Burnout bei Medizinern."
         },
         {
           "id": "ql118",
           "type": "true-false",
           "question": "Intensivmediziner und Notfallmediziner sind besonders burn-out-gefährdet.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Arbeitsbelastung und Burnout bei Medizinern."
         },
         {
           "id": "ql119",
@@ -9968,7 +10188,8 @@
             "Längere Schichten und mehr Patienten",
             "Weniger Fortbildungen"
           ],
-          "answer": "Bessere Arbeitszeitmodelle, mehr Personal und Entlastung von Bürokratie"
+          "answer": "Bessere Arbeitszeitmodelle, mehr Personal und Entlastung von Bürokratie",
+          "explanation": "Based on the listening passage about Arbeitsbelastung und Burnout bei Medizinern."
         },
         {
           "id": "ql120",
@@ -9980,12 +10201,19 @@
             "Risikomanagement",
             "Beschwerdemanagement"
           ],
-          "answer": "Gesundheitsmanagement"
+          "answer": "Gesundheitsmanagement",
+          "explanation": "Based on the listening passage about Arbeitsbelastung und Burnout bei Medizinern."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_21",
-      "audio": "audio/listening/c1-listen-23.mp3"
+      "audio": "audio/listening/c1-listen-23.mp3",
+      "taughtInLessonId": "C1_lesson_23",
+      "conceptId": "c1.digital.humanities",
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_listen_24",
@@ -10002,13 +10230,15 @@
             "Der APACHE-II-Score",
             "Der Barthel-Index"
           ],
-          "answer": "Der qSOFA-Score"
+          "answer": "Der qSOFA-Score",
+          "explanation": "Based on the listening passage about Fortbildung: Sepsis-Protokoll."
         },
         {
           "id": "ql122",
           "type": "true-false",
           "question": "Das Sepsis-Bundle muss innerhalb von 60 Minuten abgeschlossen sein.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Fortbildung: Sepsis-Protokoll."
         },
         {
           "id": "ql123",
@@ -10020,7 +10250,8 @@
             "Leukozyten, CRP und Procalcitonin",
             "Alter, Geschlecht und Vorerkrankungen"
           ],
-          "answer": "Atemfrequenz, Bewusstsein und systolischer Blutdruck"
+          "answer": "Atemfrequenz, Bewusstsein und systolischer Blutdruck",
+          "explanation": "Based on the listening passage about Fortbildung: Sepsis-Protokoll."
         },
         {
           "id": "ql124",
@@ -10032,12 +10263,19 @@
             "Dialyse",
             "Operation"
           ],
-          "answer": "Volumentherapie"
+          "answer": "Volumentherapie",
+          "explanation": "Based on the listening passage about Fortbildung: Sepsis-Protokoll."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_22",
-      "audio": "audio/listening/c1-listen-24.mp3"
+      "audio": "audio/listening/c1-listen-24.mp3",
+      "taughtInLessonId": "C1_lesson_24",
+      "conceptId": "c1.kunst.aesthetik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_listen_25",
@@ -10054,13 +10292,15 @@
             "Niedrigere Löhne und weniger Patienten",
             "Weniger Krankenhäuser und niedrigere Beiträge"
           ],
-          "answer": "Ältere Bevölkerung, teurere Leistungen, mehr chronisch Kranke"
+          "answer": "Ältere Bevölkerung, teurere Leistungen, mehr chronisch Kranke",
+          "explanation": "Based on the listening passage about Diskussion: Reform der gesetzlichen Krankenversicherung."
         },
         {
           "id": "ql126",
           "type": "true-false",
           "question": "Die Privatversicherung ist von der demografischen Entwicklung nicht betroffen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Diskussion: Reform der gesetzlichen Krankenversicherung."
         },
         {
           "id": "ql127",
@@ -10072,7 +10312,8 @@
             "Das Krankengeldmodell",
             "Die Prämienentlastung"
           ],
-          "answer": "Die Bürgererversicherung"
+          "answer": "Die Bürgererversicherung",
+          "explanation": "Based on the listening passage about Diskussion: Reform der gesetzlichen Krankenversicherung."
         },
         {
           "id": "ql128",
@@ -10084,12 +10325,20 @@
             "Höheren Löhnen",
             "Mehr Betten"
           ],
-          "answer": "Rationalisierung"
+          "answer": "Rationalisierung",
+          "explanation": "Based on the listening passage about Diskussion: Reform der gesetzlichen Krankenversicherung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_23",
-      "audio": "audio/listening/c1-listen-25.mp3"
+      "audio": "audio/listening/c1-listen-25.mp3",
+      "taughtInLessonId": "C1_lesson_25",
+      "conceptId": "c1.globale.gerechtigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_listen_26",
@@ -10106,13 +10355,15 @@
             "Ab 40",
             "Ab 50"
           ],
-          "answer": "Ab 35"
+          "answer": "Ab 35",
+          "explanation": "Based on the listening passage about Check-up-Gespräch: Primärprävention."
         },
         {
           "id": "ql130",
           "type": "true-false",
           "question": "Die Hautkrebsvorsorge wird alle zwei Jahre empfohlen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Check-up-Gespräch: Primärprävention."
         },
         {
           "id": "ql131",
@@ -10124,7 +10375,8 @@
             "Allergietest und Schilddrüsensonographie",
             "Belastungs-EKG und Lungenfunktion"
           ],
-          "answer": "Cholesterinwert und Darmkrebsvorsorge"
+          "answer": "Cholesterinwert und Darmkrebsvorsorge",
+          "explanation": "Based on the listening passage about Check-up-Gespräch: Primärprävention."
         },
         {
           "id": "ql132",
@@ -10136,12 +10388,19 @@
             "Ultraschalluntersuchung",
             "EKG-Ableitung"
           ],
-          "answer": "Urinanalyse"
+          "answer": "Urinanalyse",
+          "explanation": "Based on the listening passage about Check-up-Gespräch: Primärprävention."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_24",
-      "audio": "audio/listening/c1-listen-26.mp3"
+      "audio": "audio/listening/c1-listen-26.mp3",
+      "taughtInLessonId": "C1_lesson_1",
+      "conceptId": "c1.argumentation.advanced",
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ]
     },
     {
       "id": "C1_listen_27",
@@ -10158,13 +10417,15 @@
             "Ohrenschmerzen und Schwindel",
             "Bauchschmerzen und Übelkeit"
           ],
-          "answer": "Halsschmerzen und Schluckbeschwerden seit drei Tagen"
+          "answer": "Halsschmerzen und Schluckbeschwerden seit drei Tagen",
+          "explanation": "Based on the listening passage about Telemedizin-Sprechstunde."
         },
         {
           "id": "ql134",
           "type": "true-false",
           "question": "Der Patient bekommt ein Antibiotikum verschrieben.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Telemedizin-Sprechstunde."
         },
         {
           "id": "ql135",
@@ -10176,7 +10437,8 @@
             "Für eine Woche",
             "Gar keine"
           ],
-          "answer": "Für zwei Tage"
+          "answer": "Für zwei Tage",
+          "explanation": "Based on the listening passage about Telemedizin-Sprechstunde."
         },
         {
           "id": "ql136",
@@ -10188,12 +10450,19 @@
             "Notaufnahme",
             "Reha-Klinik"
           ],
-          "answer": "Praxis"
+          "answer": "Praxis",
+          "explanation": "Based on the listening passage about Telemedizin-Sprechstunde."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_25",
-      "audio": "audio/listening/c1-listen-27.mp3"
+      "audio": "audio/listening/c1-listen-27.mp3",
+      "taughtInLessonId": "C1_lesson_2",
+      "conceptId": "c1.recht.ethik",
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_listen_28",
@@ -10210,13 +10479,15 @@
             "Eine qualitative Befragungsstudie",
             "Eine tierexperimentelle Studie"
           ],
-          "answer": "Eine retrospektive Studie über ECMO bei ARDS"
+          "answer": "Eine retrospektive Studie über ECMO bei ARDS",
+          "explanation": "Based on the listening passage about Forschungskolloquium: Ethikvotum."
         },
         {
           "id": "ql138",
           "type": "true-false",
           "question": "Für die Studie ist ein Ethikvotum erforderlich.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Forschungskolloquium: Ethikvotum."
         },
         {
           "id": "ql139",
@@ -10228,18 +10499,26 @@
             "Veröffentlichung aller Daten",
             "Löschung der Akten nach Auswertung"
           ],
-          "answer": "Pseudonymisierung der Patientendaten"
+          "answer": "Pseudonymisierung der Patientendaten",
+          "explanation": "Based on the listening passage about Forschungskolloquium: Ethikvotum."
         },
         {
           "id": "ql140",
           "type": "true-false",
           "question": "Für die retrospektive Studie werden Patienten zusätzlich untersucht.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Forschungskolloquium: Ethikvotum."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_1",
-      "audio": "audio/listening/c1-listen-28.mp3"
+      "audio": "audio/listening/c1-listen-28.mp3",
+      "taughtInLessonId": "C1_lesson_3",
+      "conceptId": "c1.medizin.gesundheit",
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ]
     },
     {
       "id": "C1_listen_29",
@@ -10256,13 +10535,15 @@
             "Eine schriftliche Übergabe per E-Mail",
             "Eine Aufnahme per Telefon"
           ],
-          "answer": "Eine strukturierte Übergabe mit Identifikation, Situation und Vitalwerten (ISBAR-ähnlich)"
+          "answer": "Eine strukturierte Übergabe mit Identifikation, Situation und Vitalwerten (ISBAR-ähnlich)",
+          "explanation": "Based on the listening passage about Übergabe im Schichtdienst: ISBAR."
         },
         {
           "id": "ql142",
           "type": "true-false",
           "question": "Der Patient hatte in der Nacht starke Schmerzen und bekam ein Schmerzmittel.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Übergabe im Schichtdienst: ISBAR."
         },
         {
           "id": "ql143",
@@ -10274,7 +10555,8 @@
             "Vor Medikation 5 von 10, danach 5 von 10",
             "Keine Angabe"
           ],
-          "answer": "Vor Medikation 7 von 10, danach 3 von 10"
+          "answer": "Vor Medikation 7 von 10, danach 3 von 10",
+          "explanation": "Based on the listening passage about Übergabe im Schichtdienst: ISBAR."
         },
         {
           "id": "ql144",
@@ -10286,12 +10568,19 @@
             "operiert",
             "verlegt"
           ],
-          "answer": "mobilisiert"
+          "answer": "mobilisiert",
+          "explanation": "Based on the listening passage about Übergabe im Schichtdienst: ISBAR."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_2",
-      "audio": "audio/listening/c1-listen-29.mp3"
+      "audio": "audio/listening/c1-listen-29.mp3",
+      "taughtInLessonId": "C1_lesson_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ]
     },
     {
       "id": "C1_listen_30",
@@ -10308,13 +10597,15 @@
             "Grün",
             "Blau"
           ],
-          "answer": "Gelb"
+          "answer": "Gelb",
+          "explanation": "Based on the listening passage about Notaufnahme: Triage-Priorisierung."
         },
         {
           "id": "ql146",
           "type": "true-false",
           "question": "Die Patientin hat Unterbauchschmerzen mit Fieber und Übelkeit.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Notaufnahme: Triage-Priorisierung."
         },
         {
           "id": "ql147",
@@ -10326,7 +10617,8 @@
             "MRT und EKG",
             "Koloskopie und Gastroskopie"
           ],
-          "answer": "Blutabnahme und Ultraschall"
+          "answer": "Blutabnahme und Ultraschall",
+          "explanation": "Based on the listening passage about Notaufnahme: Triage-Priorisierung."
         },
         {
           "id": "ql148",
@@ -10338,12 +10630,19 @@
             "Stunden",
             "Tage"
           ],
-          "answer": "Minuten"
+          "answer": "Minuten",
+          "explanation": "Based on the listening passage about Notaufnahme: Triage-Priorisierung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_3",
-      "audio": "audio/listening/c1-listen-30.mp3"
+      "audio": "audio/listening/c1-listen-30.mp3",
+      "taughtInLessonId": "C1_lesson_5",
+      "conceptId": "c1.rhetorik.schreiben",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_listen_31",
@@ -10360,13 +10659,15 @@
             "Ciprofloxacin",
             "Novalgin"
           ],
-          "answer": "Marcumar"
+          "answer": "Marcumar",
+          "explanation": "Based on the listening passage about Pharmakologische Visite: Medikationscheck."
         },
         {
           "id": "ql150",
           "type": "true-false",
           "question": "Ciprofloxacin kann die Wirkung von Marcumar verstärken.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Pharmakologische Visite: Medikationscheck."
         },
         {
           "id": "ql151",
@@ -10378,7 +10679,8 @@
             "Herzinsuffizienz, COPD und Gicht",
             "Demenz, Osteoporose und Anämie"
           ],
-          "answer": "Vorhofflimmern, Hypertonie und Niereninsuffizienz"
+          "answer": "Vorhofflimmern, Hypertonie und Niereninsuffizienz",
+          "explanation": "Based on the listening passage about Pharmakologische Visite: Medikationscheck."
         },
         {
           "id": "ql152",
@@ -10390,12 +10692,19 @@
             "Blutzucker",
             "Blutdruck"
           ],
-          "answer": "INR"
+          "answer": "INR",
+          "explanation": "Based on the listening passage about Pharmakologische Visite: Medikationscheck."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_4",
-      "audio": "audio/listening/c1-listen-31.mp3"
+      "audio": "audio/listening/c1-listen-31.mp3",
+      "taughtInLessonId": "C1_lesson_6",
+      "conceptId": "c1.wissenschaft.schreiben",
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_listen_32",
@@ -10412,13 +10721,15 @@
             "Eine Reha-Maßnahme",
             "Ein ambulanter Pflegedienst"
           ],
-          "answer": "Eine Kurzzeitpflege im Pflegeheim"
+          "answer": "Eine Kurzzeitpflege im Pflegeheim",
+          "explanation": "Based on the listening passage about Sozialdienst: Entlassungsmanagement."
         },
         {
           "id": "ql154",
           "type": "true-false",
           "question": "Der Patient hat eine Vorsorgevollmacht für seine Tochter.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Sozialdienst: Entlassungsmanagement."
         },
         {
           "id": "ql155",
@@ -10430,7 +10741,8 @@
             "Umzug ins betreute Wohnen",
             "Häusliche Pflege durch die Ehefrau"
           ],
-          "answer": "Pflegedienst und Essen auf Rädern"
+          "answer": "Pflegedienst und Essen auf Rädern",
+          "explanation": "Based on the listening passage about Sozialdienst: Entlassungsmanagement."
         },
         {
           "id": "ql156",
@@ -10442,12 +10754,19 @@
             "geringen Teil",
             "keinen"
           ],
-          "answer": "Teil"
+          "answer": "Teil",
+          "explanation": "Based on the listening passage about Sozialdienst: Entlassungsmanagement."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_5",
-      "audio": "audio/listening/c1-listen-32.mp3"
+      "audio": "audio/listening/c1-listen-32.mp3",
+      "taughtInLessonId": "C1_lesson_7",
+      "conceptId": "c1.sprachliche.nuancen",
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ]
     },
     {
       "id": "C1_listen_33",
@@ -10464,13 +10783,15 @@
             "Den COVID-Impfungen",
             "Den Tetanusimpfungen"
           ],
-          "answer": "Den Masernimpfquoten"
+          "answer": "Den Masernimpfquoten",
+          "explanation": "Based on the listening passage about Epidemiologische Tagung: Impfquoten."
         },
         {
           "id": "ql158",
           "type": "true-false",
           "question": "Die größten Defizite liegen bei den Erstimpfungen von Kleinkindern.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Epidemiologische Tagung: Impfquoten."
         },
         {
           "id": "ql159",
@@ -10482,7 +10803,8 @@
             "Höhere Strafen für Impfgegner",
             "Mehr Impfstoffproduktion"
           ],
-          "answer": "Impfregister, Einladungssysteme und niedrigschwellige Angebote"
+          "answer": "Impfregister, Einladungssysteme und niedrigschwellige Angebote",
+          "explanation": "Based on the listening passage about Epidemiologische Tagung: Impfquoten."
         },
         {
           "id": "ql160",
@@ -10494,12 +10816,19 @@
             "zehn",
             "zwanzig"
           ],
-          "answer": "fünf"
+          "answer": "fünf",
+          "explanation": "Based on the listening passage about Epidemiologische Tagung: Impfquoten."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_6",
-      "audio": "audio/listening/c1-listen-33.mp3"
+      "audio": "audio/listening/c1-listen-33.mp3",
+      "taughtInLessonId": "C1_lesson_8",
+      "conceptId": "c1.diskursanalyse",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_34",
@@ -10516,13 +10845,15 @@
             "Kurative Intensivtherapie",
             "Alternative Medizin"
           ],
-          "answer": "Ganzheitliche Palliativversorgung"
+          "answer": "Ganzheitliche Palliativversorgung",
+          "explanation": "Based on the listening passage about Hospiz: Begleitung am Lebensende."
         },
         {
           "id": "ql162",
           "type": "true-false",
           "question": "Der Hospizdienst ist nur für den Patienten da, nicht für die Angehörigen.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Hospiz: Begleitung am Lebensende."
         },
         {
           "id": "ql163",
@@ -10534,7 +10865,8 @@
             "Medikamentöse Behandlung",
             "Physiotherapie und Ergotherapie"
           ],
-          "answer": "Schmerzlinderung, Angstabbau und spiritülle Begleitung"
+          "answer": "Schmerzlinderung, Angstabbau und spiritülle Begleitung",
+          "explanation": "Based on the listening passage about Hospiz: Begleitung am Lebensende."
         },
         {
           "id": "ql164",
@@ -10546,12 +10878,19 @@
             "schlafen",
             "genesen"
           ],
-          "answer": "gehen"
+          "answer": "gehen",
+          "explanation": "Based on the listening passage about Hospiz: Begleitung am Lebensende."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_11",
-      "audio": "audio/listening/c1-listen-34.mp3"
+      "audio": "audio/listening/c1-listen-34.mp3",
+      "taughtInLessonId": "C1_lesson_9",
+      "conceptId": "c1.literatur.interpretation",
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ]
     },
     {
       "id": "C1_listen_35",
@@ -10568,13 +10907,15 @@
             "Frühe vs. späte Mobilisation",
             "Zwei verschiedene Implantat-Modelle"
           ],
-          "answer": "Computerassistierte Navigation vs. konventionelle Technik bei Knie-TEP"
+          "answer": "Computerassistierte Navigation vs. konventionelle Technik bei Knie-TEP",
+          "explanation": "Based on the listening passage about Journal Club: Aktuelle Publikation."
         },
         {
           "id": "ql166",
           "type": "true-false",
           "question": "Die navigierte OP zeigte signifikant bessere klinische Ergebnisse.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Journal Club: Aktuelle Publikation."
         },
         {
           "id": "ql167",
@@ -10586,18 +10927,26 @@
             "Höhere Patientenzufriedenheit",
             "Schnellere Entlassung"
           ],
-          "answer": "Geringere Rate an Fehlstellungen"
+          "answer": "Geringere Rate an Fehlstellungen",
+          "explanation": "Based on the listening passage about Journal Club: Aktuelle Publikation."
         },
         {
           "id": "ql168",
           "type": "true-false",
           "question": "Der Fellow empfiehlt, die Navigation weiter einzusetzen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Journal Club: Aktuelle Publikation."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_7",
-      "audio": "audio/listening/c1-listen-35.mp3"
+      "audio": "audio/listening/c1-listen-35.mp3",
+      "taughtInLessonId": "C1_lesson_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ]
     },
     {
       "id": "C1_listen_36",
@@ -10614,13 +10963,15 @@
             "25",
             "50"
           ],
-          "answer": "15"
+          "answer": "15",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Medikationsfehler vermeiden."
         },
         {
           "id": "ql170",
           "type": "true-false",
           "question": "Ähnlich klingende Medikamentennamen sind eine häufige Fehlerursache.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Medikationsfehler vermeiden."
         },
         {
           "id": "ql171",
@@ -10632,18 +10983,26 @@
             "Weniger Medikamente verschreiben",
             "Längere Arbeitszeiten"
           ],
-          "answer": "Doppel-Check-Pflicht, getrennte Lagerung, Scannen am Patientenbett"
+          "answer": "Doppel-Check-Pflicht, getrennte Lagerung, Scannen am Patientenbett",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Medikationsfehler vermeiden."
         },
         {
           "id": "ql172",
           "type": "true-false",
           "question": "Die Maßnahmen sollen sofort im gesamten Krankenhaus eingeführt werden.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Qualitätszirkel: Medikationsfehler vermeiden."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_8",
-      "audio": "audio/listening/c1-listen-36.mp3"
+      "audio": "audio/listening/c1-listen-36.mp3",
+      "taughtInLessonId": "C1_lesson_11",
+      "conceptId": "c1.kognitive.linguistik",
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ]
     },
     {
       "id": "C1_listen_37",
@@ -10660,13 +11019,15 @@
             "Sie wissen nicht, wo es den Ausweis gibt",
             "Sie sind dagegen"
           ],
-          "answer": "Sie können sich nicht entscheiden"
+          "answer": "Sie können sich nicht entscheiden",
+          "explanation": "Based on the listening passage about Kampagne: Organspende."
         },
         {
           "id": "ql174",
           "type": "true-false",
           "question": "In Österreich gilt die Widerspruchslösung für Organspenden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Kampagne: Organspende."
         },
         {
           "id": "ql175",
@@ -10678,7 +11039,8 @@
             "Nur registrierte Personen dürfen spenden",
             "Die Angehörigen entscheiden"
           ],
-          "answer": "Jeder gilt als Organspender, der nicht widersprochen hat"
+          "answer": "Jeder gilt als Organspender, der nicht widersprochen hat",
+          "explanation": "Based on the listening passage about Kampagne: Organspende."
         },
         {
           "id": "ql176",
@@ -10690,12 +11052,19 @@
             "Ärzte",
             "Krankenkasse"
           ],
-          "answer": "Angehörigen"
+          "answer": "Angehörigen",
+          "explanation": "Based on the listening passage about Kampagne: Organspende."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_9",
-      "audio": "audio/listening/c1-listen-37.mp3"
+      "audio": "audio/listening/c1-listen-37.mp3",
+      "taughtInLessonId": "C1_lesson_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ]
     },
     {
       "id": "C1_listen_38",
@@ -10712,13 +11081,15 @@
             "Zwischen 3,0 und 4,0",
             "Zwischen 4,0 und 5,0"
           ],
-          "answer": "Zwischen 2,0 und 3,0"
+          "answer": "Zwischen 2,0 und 3,0",
+          "explanation": "Based on the listening passage about Patientenschulung: INR-Selbstmessung."
         },
         {
           "id": "ql178",
           "type": "true-false",
           "question": "Ein INR über 5,0 erfordert den sofortigen Besuch in der Praxis.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Patientenschulung: INR-Selbstmessung."
         },
         {
           "id": "ql179",
@@ -10730,7 +11101,8 @@
             "Über 5,0",
             "Über 6,0"
           ],
-          "answer": "Über 4,0"
+          "answer": "Über 4,0",
+          "explanation": "Based on the listening passage about Patientenschulung: INR-Selbstmessung."
         },
         {
           "id": "ql180",
@@ -10742,12 +11114,19 @@
             "drei",
             "vier"
           ],
-          "answer": "zwei"
+          "answer": "zwei",
+          "explanation": "Based on the listening passage about Patientenschulung: INR-Selbstmessung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_10",
-      "audio": "audio/listening/c1-listen-38.mp3"
+      "audio": "audio/listening/c1-listen-38.mp3",
+      "taughtInLessonId": "C1_lesson_13",
+      "conceptId": "c1.medizinethik",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_39",
@@ -10764,13 +11143,15 @@
             "Eine Fall-Kontroll-Studie",
             "Eine qualitative Studie"
           ],
-          "answer": "Eine prospektive Kohortenstudie"
+          "answer": "Eine prospektive Kohortenstudie",
+          "explanation": "Based on the listening passage about Posterpräsentation: Kongress."
         },
         {
           "id": "ql182",
           "type": "true-false",
           "question": "Die Interventionsgruppe zeigte eine signifikant bessere Verbesserung als die Kontrollgruppe.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Posterpräsentation: Kongress."
         },
         {
           "id": "ql183",
@@ -10782,7 +11163,8 @@
             "Der Endpunkt war ungeeignet",
             "Die Nachbeobachtungszeit war zu kurz"
           ],
-          "answer": "Die Studie war nicht randomisiert"
+          "answer": "Die Studie war nicht randomisiert",
+          "explanation": "Based on the listening passage about Posterpräsentation: Kongress."
         },
         {
           "id": "ql184",
@@ -10794,12 +11176,19 @@
             "vorhanden",
             "messbar"
           ],
-          "answer": "nachweisbar"
+          "answer": "nachweisbar",
+          "explanation": "Based on the listening passage about Posterpräsentation: Kongress."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_12",
-      "audio": "audio/listening/c1-listen-39.mp3"
+      "audio": "audio/listening/c1-listen-39.mp3",
+      "taughtInLessonId": "C1_lesson_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ]
     },
     {
       "id": "C1_listen_40",
@@ -10816,13 +11205,15 @@
             "Medizinische Geräte",
             "Patientendaten von Krankenkassen"
           ],
-          "answer": "Menschliches Probenmaterial für Forschungszwecke"
+          "answer": "Menschliches Probenmaterial für Forschungszwecke",
+          "explanation": "Based on the listening passage about Vortrag: Biobanken in der medizinischen Forschung."
         },
         {
           "id": "ql186",
           "type": "true-false",
           "question": "Spender können jederzeit ihre Einwilligung zurückziehen.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Vortrag: Biobanken in der medizinischen Forschung."
         },
         {
           "id": "ql187",
@@ -10834,7 +11225,8 @@
             "Unverschlüsselt aber passwortgeschützt",
             "Nicht geschützt"
           ],
-          "answer": "Pseudonymisiert mit Treuhänder für die Zuordnung"
+          "answer": "Pseudonymisiert mit Treuhänder für die Zuordnung",
+          "explanation": "Based on the listening passage about Vortrag: Biobanken in der medizinischen Forschung."
         },
         {
           "id": "ql188",
@@ -10846,12 +11238,19 @@
             "traditionellen",
             "präventiven"
           ],
-          "answer": "personalisierten"
+          "answer": "personalisierten",
+          "explanation": "Based on the listening passage about Vortrag: Biobanken in der medizinischen Forschung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_13",
-      "audio": "audio/listening/c1-listen-40.mp3"
+      "audio": "audio/listening/c1-listen-40.mp3",
+      "taughtInLessonId": "C1_lesson_15",
+      "conceptId": "c1.kulturkritik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_41",
@@ -10868,13 +11267,15 @@
             "Fünf",
             "Zehn"
           ],
-          "answer": "Drei"
+          "answer": "Drei",
+          "explanation": "Based on the listening passage about Chirurgische Qualitätskonferenz."
         },
         {
           "id": "ql190",
           "type": "true-false",
           "question": "Die Anastomoseninsuffizienz trat am fünften postoperativen Tag auf.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Chirurgische Qualitätskonferenz."
         },
         {
           "id": "ql191",
@@ -10886,7 +11287,8 @@
             "Ileus, Perforation und Abszess",
             "Fistel, Stenose und Rezidiv"
           ],
-          "answer": "Anastomoseninsuffizienz, Wundinfektion und Nachblutung"
+          "answer": "Anastomoseninsuffizienz, Wundinfektion und Nachblutung",
+          "explanation": "Based on the listening passage about Chirurgische Qualitätskonferenz."
         },
         {
           "id": "ql192",
@@ -10898,12 +11300,19 @@
             "abgelehnt",
             "besprochen"
           ],
-          "answer": "erwogen"
+          "answer": "erwogen",
+          "explanation": "Based on the listening passage about Chirurgische Qualitätskonferenz."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_14",
-      "audio": "audio/listening/c1-listen-41.mp3"
+      "audio": "audio/listening/c1-listen-41.mp3",
+      "taughtInLessonId": "C1_lesson_16",
+      "conceptId": "c1.philosophie.existenz",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_42",
@@ -10920,13 +11329,15 @@
             "Weil es am einfachsten umsetzbar ist",
             "Weil die Lehrer Zeit haben"
           ],
-          "answer": "Weil hier die Weichen für ein gesundes Leben gestellt werden"
+          "answer": "Weil hier die Weichen für ein gesundes Leben gestellt werden",
+          "explanation": "Based on the listening passage about Gesundheitsprojekt: Schule und Bewegung."
         },
         {
           "id": "ql194",
           "type": "true-false",
           "question": "Das Projekt wird von der Schule selbst finanziert.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Gesundheitsprojekt: Schule und Bewegung."
         },
         {
           "id": "ql195",
@@ -10938,7 +11349,8 @@
             "Mit Ernährungsberatern",
             "Mit Psychologen und Sozialarbeitern"
           ],
-          "answer": "Mit Physiotherapeuten und Sportwissenschaftlern"
+          "answer": "Mit Physiotherapeuten und Sportwissenschaftlern",
+          "explanation": "Based on the listening passage about Gesundheitsprojekt: Schule und Bewegung."
         },
         {
           "id": "ql196",
@@ -10950,12 +11362,19 @@
             "Allergien",
             "Infektionen"
           ],
-          "answer": "Übergewicht und Diabetes"
+          "answer": "Übergewicht und Diabetes",
+          "explanation": "Based on the listening passage about Gesundheitsprojekt: Schule und Bewegung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_15",
-      "audio": "audio/listening/c1-listen-42.mp3"
+      "audio": "audio/listening/c1-listen-42.mp3",
+      "taughtInLessonId": "C1_lesson_17",
+      "conceptId": "c1.psycholinguistik",
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_listen_43",
@@ -10972,13 +11391,15 @@
             "Die Barthel-Skala",
             "Die WHO-Skala"
           ],
-          "answer": "Die Braden-Skala"
+          "answer": "Die Braden-Skala",
+          "explanation": "Based on the listening passage about Klinisches Audit: Dekubitusprophylaxe."
         },
         {
           "id": "ql198",
           "type": "true-false",
           "question": "Die regelmäßige Umlagerung ist bei allen Risikopatienten dokumentiert.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Klinisches Audit: Dekubitusprophylaxe."
         },
         {
           "id": "ql199",
@@ -10990,7 +11411,8 @@
             "Fehlende Hilfsmittel",
             "Unwilligkeit des Personals"
           ],
-          "answer": "Personalknappheit in der Nacht"
+          "answer": "Personalknappheit in der Nacht",
+          "explanation": "Based on the listening passage about Klinisches Audit: Dekubitusprophylaxe."
         },
         {
           "id": "ql200",
@@ -11002,12 +11424,19 @@
             "Verbände",
             "Lagerungen"
           ],
-          "answer": "Matratzen"
+          "answer": "Matratzen",
+          "explanation": "Based on the listening passage about Klinisches Audit: Dekubitusprophylaxe."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_16",
-      "audio": "audio/listening/c1-listen-43.mp3"
+      "audio": "audio/listening/c1-listen-43.mp3",
+      "taughtInLessonId": "C1_lesson_18",
+      "conceptId": "c1.politische.philosophie",
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     },
     {
       "id": "C1_listen_44",
@@ -11024,13 +11453,15 @@
             "Die G 40 Untersuchung für Nachtschicht",
             "Die G 50 Untersuchung für Führerschein"
           ],
-          "answer": "Die G 25 Untersuchung für Lärm- und Gefahrstoffexposition"
+          "answer": "Die G 25 Untersuchung für Lärm- und Gefahrstoffexposition",
+          "explanation": "Based on the listening passage about Betriebsärztliche Untersuchung."
         },
         {
           "id": "ql202",
           "type": "true-false",
           "question": "Die Untersuchung ist gesetzlich vorgeschrieben.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Betriebsärztliche Untersuchung."
         },
         {
           "id": "ql203",
@@ -11042,7 +11473,8 @@
             "Sehtest und Röntgen",
             "Blutbild und Urinanalyse"
           ],
-          "answer": "Gehörtest, Lungenfunktionstest und Hautprüfung"
+          "answer": "Gehörtest, Lungenfunktionstest und Hautprüfung",
+          "explanation": "Based on the listening passage about Betriebsärztliche Untersuchung."
         },
         {
           "id": "ql204",
@@ -11054,12 +11486,19 @@
             "Unfallursache",
             "Arbeitsunzeit"
           ],
-          "answer": "Berufskrankheit"
+          "answer": "Berufskrankheit",
+          "explanation": "Based on the listening passage about Betriebsärztliche Untersuchung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_17",
-      "audio": "audio/listening/c1-listen-44.mp3"
+      "audio": "audio/listening/c1-listen-44.mp3",
+      "taughtInLessonId": "C1_lesson_19",
+      "conceptId": "c1.tempus.aspekt",
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ]
     },
     {
       "id": "C1_listen_45",
@@ -11076,13 +11515,15 @@
             "In der 36. SSW",
             "In der 40. SSW"
           ],
-          "answer": "In der 32. SSW"
+          "answer": "In der 32. SSW",
+          "explanation": "Based on the listening passage about Geburtsplanungsgespräch."
         },
         {
           "id": "ql206",
           "type": "true-false",
           "question": "Der Ehemann darf bei der Geburt nicht dabei sein.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Geburtsplanungsgespräch."
         },
         {
           "id": "ql207",
@@ -11094,7 +11535,8 @@
             "Nur Medikamente",
             "Nur Atemtechniken"
           ],
-          "answer": "Atemtechniken, Bewegung, warme Bäder und PDA"
+          "answer": "Atemtechniken, Bewegung, warme Bäder und PDA",
+          "explanation": "Based on the listening passage about Geburtsplanungsgespräch."
         },
         {
           "id": "ql208",
@@ -11106,12 +11548,19 @@
             "Geburtshaus",
             "Gesundheitszentrum"
           ],
-          "answer": "Perinatalzentrum"
+          "answer": "Perinatalzentrum",
+          "explanation": "Based on the listening passage about Geburtsplanungsgespräch."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_18",
-      "audio": "audio/listening/c1-listen-45.mp3"
+      "audio": "audio/listening/c1-listen-45.mp3",
+      "taughtInLessonId": "C1_lesson_20",
+      "conceptId": "c1.wissenschaftssoziologie",
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ]
     },
     {
       "id": "C1_listen_46",
@@ -11128,13 +11577,15 @@
             "Das hohe Alter",
             "Die fehlende Mobilität"
           ],
-          "answer": "Die Polypharmazie mit zwölf Medikamenten"
+          "answer": "Die Polypharmazie mit zwölf Medikamenten",
+          "explanation": "Based on the listening passage about Geriatrische Fallkonferenz."
         },
         {
           "id": "ql210",
           "type": "true-false",
           "question": "Der Apotheker empfiehlt, alle Medikamente beizubehalten.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Geriatrische Fallkonferenz."
         },
         {
           "id": "ql211",
@@ -11146,7 +11597,8 @@
             "Schmerzmittel und Antidepressivum",
             "Insulin und Metformin"
           ],
-          "answer": "Protonenpumpenhemmer und Antihistaminikum"
+          "answer": "Protonenpumpenhemmer und Antihistaminikum",
+          "explanation": "Based on the listening passage about Geriatrische Fallkonferenz."
         },
         {
           "id": "ql212",
@@ -11158,12 +11610,19 @@
             "normales",
             "unverändertes"
           ],
-          "answer": "erhöhtes"
+          "answer": "erhöhtes",
+          "explanation": "Based on the listening passage about Geriatrische Fallkonferenz."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_19",
-      "audio": "audio/listening/c1-listen-46.mp3"
+      "audio": "audio/listening/c1-listen-46.mp3",
+      "taughtInLessonId": "C1_lesson_21",
+      "conceptId": "c1.semantik.pragmatik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ]
     },
     {
       "id": "C1_listen_47",
@@ -11180,13 +11639,15 @@
             "Rufen, Drücken, Beatmen",
             "Beatmen, Prüfen, Rufen"
           ],
-          "answer": "Prüfen, Rufen, Drücken"
+          "answer": "Prüfen, Rufen, Drücken",
+          "explanation": "Based on the listening passage about Reanimationstraining: Basic Life Support."
         },
         {
           "id": "ql214",
           "type": "true-false",
           "question": "Die Herzdruckmassage soll mit einer Frequenz von 100 bis 120 pro Minute durchgeführt werden.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Reanimationstraining: Basic Life Support."
         },
         {
           "id": "ql215",
@@ -11198,7 +11659,8 @@
             "Sieben bis acht Zentimeter",
             "Zehn Zentimeter"
           ],
-          "answer": "Mindestens fünf Zentimeter"
+          "answer": "Mindestens fünf Zentimeter",
+          "explanation": "Based on the listening passage about Reanimationstraining: Basic Life Support."
         },
         {
           "id": "ql216",
@@ -11210,12 +11672,19 @@
             "Absauggerät",
             "Monitor"
           ],
-          "answer": "AED"
+          "answer": "AED",
+          "explanation": "Based on the listening passage about Reanimationstraining: Basic Life Support."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_20",
-      "audio": "audio/listening/c1-listen-47.mp3"
+      "audio": "audio/listening/c1-listen-47.mp3",
+      "taughtInLessonId": "C1_lesson_22",
+      "conceptId": "c1.mediation.konflikt",
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ]
     },
     {
       "id": "C1_listen_48",
@@ -11232,13 +11701,15 @@
             "500.000 Euro",
             "1 Million Euro"
           ],
-          "answer": "350.000 Euro"
+          "answer": "350.000 Euro",
+          "explanation": "Based on the listening passage about Krankenhaus-Controlling: Budgetverhandlung."
         },
         {
           "id": "ql218",
           "type": "true-false",
           "question": "Die Verweildaür der Patienten liegt über dem Landesdurchschnitt.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Krankenhaus-Controlling: Budgetverhandlung."
         },
         {
           "id": "ql219",
@@ -11250,7 +11721,8 @@
             "Schließung von Betten",
             "Reduzierung der Operationen"
           ],
-          "answer": "Optimierung der Kodierung und eine Kodierfachkraft"
+          "answer": "Optimierung der Kodierung und eine Kodierfachkraft",
+          "explanation": "Based on the listening passage about Krankenhaus-Controlling: Budgetverhandlung."
         },
         {
           "id": "ql220",
@@ -11262,12 +11734,19 @@
             "Pflege",
             "Verwaltung"
           ],
-          "answer": "Case-Management"
+          "answer": "Case-Management",
+          "explanation": "Based on the listening passage about Krankenhaus-Controlling: Budgetverhandlung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_21",
-      "audio": "audio/listening/c1-listen-48.mp3"
+      "audio": "audio/listening/c1-listen-48.mp3",
+      "taughtInLessonId": "C1_lesson_23",
+      "conceptId": "c1.digital.humanities",
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ]
     },
     {
       "id": "C1_listen_49",
@@ -11284,13 +11763,15 @@
             "Typhus",
             "Hepatitis"
           ],
-          "answer": "Malaria"
+          "answer": "Malaria",
+          "explanation": "Based on the listening passage about Vorlesung: Tropenmedizin."
         },
         {
           "id": "ql222",
           "type": "true-false",
           "question": "Der dicke Tropfen und ein Schnelltest bestätigen die Malaria-Diagnose.",
-          "answer": "true"
+          "answer": "true",
+          "explanation": "Based on the listening passage about Vorlesung: Tropenmedizin."
         },
         {
           "id": "ql223",
@@ -11302,7 +11783,8 @@
             "Blutbild, Urinstatus und Röntgen",
             "PCR, Kultur und Serologie"
           ],
-          "answer": "Reiseanamnese, Inkubationszeit und typische Symptome"
+          "answer": "Reiseanamnese, Inkubationszeit und typische Symptome",
+          "explanation": "Based on the listening passage about Vorlesung: Tropenmedizin."
         },
         {
           "id": "ql224",
@@ -11314,12 +11796,19 @@
             "Chemoprophylaxe",
             "Reiseverzicht"
           ],
-          "answer": "Mückenschutz"
+          "answer": "Mückenschutz",
+          "explanation": "Based on the listening passage about Vorlesung: Tropenmedizin."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_22",
-      "audio": "audio/listening/c1-listen-49.mp3"
+      "audio": "audio/listening/c1-listen-49.mp3",
+      "taughtInLessonId": "C1_lesson_24",
+      "conceptId": "c1.kunst.aesthetik",
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ]
     },
     {
       "id": "C1_listen_50",
@@ -11336,13 +11825,15 @@
             "Weil die Krankenkasse keine weitere Behandlung bezahlt",
             "Weil die Ärzte keine Therapie mehr durchführen wollen"
           ],
-          "answer": "Weil Symptome trotz maximaler palliativer Therapie nicht kontrollierbar sind"
+          "answer": "Weil Symptome trotz maximaler palliativer Therapie nicht kontrollierbar sind",
+          "explanation": "Based on the listening passage about Ethische Fallbesprechung: Palliative Sedierung."
         },
         {
           "id": "ql226",
           "type": "true-false",
           "question": "Die palliative Sedierung zielt darauf ab, den Patienten zu töten.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Ethische Fallbesprechung: Palliative Sedierung."
         },
         {
           "id": "ql227",
@@ -11354,18 +11845,27 @@
             "Verlängerung des Lebens",
             "Aktive Sterbehilfe"
           ],
-          "answer": "Lindern von Schmerzen und Atemnot"
+          "answer": "Lindern von Schmerzen und Atemnot",
+          "explanation": "Based on the listening passage about Ethische Fallbesprechung: Palliative Sedierung."
         },
         {
           "id": "ql228",
           "type": "true-false",
           "question": "Die Angehörigen dürfen während der Sedierung nicht dabei sein.",
-          "answer": "false"
+          "answer": "false",
+          "explanation": "Based on the listening passage about Ethische Fallbesprechung: Palliative Sedierung."
         }
       ],
       "level": "C1",
       "lessonId": "C1_lesson_23",
-      "audio": "audio/listening/c1-listen-50.mp3"
+      "audio": "audio/listening/c1-listen-50.mp3",
+      "taughtInLessonId": "C1_lesson_25",
+      "conceptId": "c1.globale.gerechtigkeit",
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ]
     }
   ]
 }

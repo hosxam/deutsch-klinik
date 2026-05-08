@@ -30957,19 +30957,28 @@
       "skill": "lesson",
       "title": "Akademische Diskurse führen",
       "topic": "akademische diskurse fhren",
-      "estimatedMinutes": 15,
-      "conceptId": "c1_lesson_1",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
-        "c1_lesson_1"
+        "c1.argumentation.advanced",
+        "c1.connectors.advanced",
+        "c1.nominal.style"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [],
       "linkedLessonIds": [
         "C1_lesson_1"
       ],
       "linkedQuestionIds": [],
       "order": 1,
-      "tags": []
+      "tags": [
+        "c1",
+        "academic",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les1",
@@ -31124,11 +31133,14 @@
       "title": "Advanced Relatives",
       "topic": "Advanced Relatives",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les1",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_grammar_les1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -31189,11 +31201,14 @@
       "title": "Das deutsche Gesundheitssystem im Wandel",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_1",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_read_1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -31217,11 +31232,14 @@
       "title": "Interview: Digitalisierung im Krankenhaus",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_1",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_listen_1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -31244,11 +31262,14 @@
       "title": "C1 Forum: Soziale Medien und Gesundheit",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_1",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_write_1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -31265,11 +31286,14 @@
       "title": "Vortrag: Präzisionsmedizin",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_1",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_speak_1"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -31286,12 +31310,17 @@
       "skill": "lesson",
       "title": "Recht und Ethik diskutieren",
       "topic": "recht und ethik diskutieren",
-      "estimatedMinutes": 15,
-      "conceptId": "c1_lesson_2",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
-        "c1_lesson_2"
+        "c1.recht.ethik",
+        "c1.konjunktiv1.formal",
+        "c1.reported.speech"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -31300,7 +31329,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 2,
-      "tags": []
+      "tags": [
+        "c1",
+        "legal",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les2",
@@ -31399,11 +31432,14 @@
       "title": "Sentence Transformation",
       "topic": "Sentence Transformation",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les2",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_grammar_les2"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -31431,11 +31467,14 @@
       "title": "Ethische Fragen am Lebensende",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_2",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_read_2"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -31459,11 +31498,14 @@
       "title": "Vortrag: Medizintourismus",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_2",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_listen_2"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -31486,11 +31528,14 @@
       "title": "Formelle Beschwerde: Behandlungsfehler",
       "topic": "Medizinethik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_2",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_write_2"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -31508,11 +31553,14 @@
       "title": "Diskussion: Ethische Fragen der Gentechnik",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_2",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_speak_2"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -31529,12 +31577,17 @@
       "skill": "lesson",
       "title": "Medizin und Gesundheitssystem",
       "topic": "medizin und gesundheitssystem",
-      "estimatedMinutes": 15,
-      "conceptId": "c1_lesson_3",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
-        "c1_lesson_3"
+        "c1.medizin.gesundheit",
+        "c1.passive.alternatives",
+        "c1.bekommen.passiv"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_2"
       ],
@@ -31543,7 +31596,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 3,
-      "tags": []
+      "tags": [
+        "c1",
+        "healthcare",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les3",
@@ -31718,11 +31775,14 @@
       "title": "Nominal Style",
       "topic": "Nominal Style",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les3",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_grammar_les3"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -31773,11 +31833,14 @@
       "title": "Fachkräftemangel im Gesundheitswesen",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_3",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_read_3"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -31801,11 +31864,14 @@
       "title": "Podiumsdiskussion: Approbation für ausländische Ärzte",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_3",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_listen_3"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -31829,11 +31895,14 @@
       "title": "Stellungnahme: Organspende",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_3",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_write_3"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -31851,11 +31920,14 @@
       "title": "Vortrag: Gesundheitsökonomie",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_3",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_speak_3"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -31872,12 +31944,17 @@
       "skill": "lesson",
       "title": "Globalisierung und Nachhaltigkeit",
       "topic": "globalisierung und nachhaltigkeit",
-      "estimatedMinutes": 15,
-      "conceptId": "c1_lesson_4",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
-        "c1_lesson_4"
+        "c1.globalisierung.nachhaltigkeit",
+        "c1.participial.constructions",
+        "c1.extended.attributes"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_3"
       ],
@@ -31886,7 +31963,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 4,
-      "tags": []
+      "tags": [
+        "c1",
+        "environment",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les4",
@@ -31940,11 +32021,14 @@
       "title": "Verb-Noun Collocations",
       "topic": "Verb-Noun Collocations",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_grammar_les4"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -31969,11 +32053,14 @@
       "title": "Wissenschaftliches Publizieren in der Medizin",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_read_4"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -31996,11 +32083,14 @@
       "title": "Vorlesung: Grundlagen der evidenzbasierten Medizin",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_listen_4"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -32023,11 +32113,14 @@
       "title": "Antwort auf einen offenen Brief",
       "topic": "Medizinethik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_write_4"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -32045,11 +32138,14 @@
       "title": "Diskussion: Ärztliche Schweigepflicht",
       "topic": "Medizinethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_4",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_speak_4"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -32066,12 +32162,17 @@
       "skill": "lesson",
       "title": "Rhetorik und kreatives Schreiben",
       "topic": "rhetorik und kreatives schreiben",
-      "estimatedMinutes": 15,
-      "conceptId": "c1_lesson_5",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
-        "c1_lesson_5"
+        "c1.rhetorik.schreiben",
+        "c1.word.order.variation",
+        "c1.stylistic.inversion"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_4"
       ],
@@ -32080,7 +32181,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 5,
-      "tags": []
+      "tags": [
+        "c1",
+        "creative",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les5",
@@ -32117,11 +32222,14 @@
       "title": "Word Formation",
       "topic": "Word Formation",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les5",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_grammar_les5"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -32148,11 +32256,14 @@
       "title": "Reformbedarf im Krankenhaussektor",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_5",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_read_5"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -32176,11 +32287,14 @@
       "title": "Podiumsdiskussion: Krankenhausreform",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_5",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_listen_5"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -32204,11 +32318,14 @@
       "title": "Zusammenfassung und Stellungnahme",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_5",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_write_5"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -32226,11 +32343,14 @@
       "title": "Vortrag: Fehlerkultur in der Medizin",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_5",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_speak_5"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -32247,12 +32367,17 @@
       "skill": "lesson",
       "title": "Wissenschaftliches Schreiben",
       "topic": "wissenschaftliches schreiben",
-      "estimatedMinutes": 18,
-      "conceptId": "c1_lesson_6",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
-        "c1_lesson_6"
+        "c1.wissenschaft.schreiben",
+        "c1.nominalisierung.advanced",
+        "c1.denominalisierung"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_5"
       ],
@@ -32261,7 +32386,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 6,
-      "tags": []
+      "tags": [
+        "c1",
+        "academic",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les6",
@@ -32384,11 +32513,14 @@
       "title": "Nominal Style",
       "topic": "Nominal Style",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les6",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_grammar_les6"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -32420,11 +32552,14 @@
       "title": "Ärztemangel und strategische Personalplanung",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_6",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_read_6"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -32448,11 +32583,14 @@
       "title": "Interview: Wege gegen den Ärztemangel",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_6",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_listen_6"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -32476,11 +32614,14 @@
       "title": "LC1 Formal: Projektvorschlag",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_6",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_write_6"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -32497,11 +32638,14 @@
       "title": "Selbstständige Präsentation wählen",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_6",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_speak_6"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -32517,12 +32661,17 @@
       "skill": "lesson",
       "title": "Sprachliche Nuancen und Register",
       "topic": "sprachliche nuancen und register",
-      "estimatedMinutes": 18,
-      "conceptId": "c1_lesson_7",
+      "estimatedMinutes": 60,
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
-        "c1_lesson_7"
+        "c1.sprachliche.nuancen",
+        "c1.modalverben.subjektiv",
+        "c1.register.sensitivity"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_6"
       ],
@@ -32531,7 +32680,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 7,
-      "tags": []
+      "tags": [
+        "c1",
+        "nuance",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les7",
@@ -32605,11 +32758,14 @@
       "title": "Irrealis Wishes",
       "topic": "Irrealis Wishes",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les7",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_grammar_les7"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -32660,11 +32816,14 @@
       "title": "Patientenautonomie in der modernen Medizin",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_7",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_read_7"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -32688,11 +32847,14 @@
       "title": "Ethikkommission: Fallberatung",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_7",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_listen_7"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -32716,11 +32878,14 @@
       "title": "Leserkommentar: KI in der Medizin",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_7",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_write_7"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -32738,11 +32903,14 @@
       "title": "Debatte: Import von Ärzten",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_7",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_speak_7"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -32759,12 +32927,17 @@
       "skill": "lesson",
       "title": "Kritische Diskursanalyse",
       "topic": "kritische diskursanalyse",
-      "estimatedMinutes": 18,
-      "conceptId": "c1_lesson_8",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
-        "c1_lesson_8"
+        "c1.diskursanalyse",
+        "c1.sentence.restructuring",
+        "c1.focus.emphasis"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_7"
       ],
@@ -32773,7 +32946,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 8,
-      "tags": []
+      "tags": [
+        "c1",
+        "media",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les8",
@@ -32818,11 +32995,14 @@
       "title": "Nominal Style",
       "topic": "Nominal Style",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les8",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_grammar_les8"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -32847,11 +33027,14 @@
       "title": "Evidenzbasierte Medizin zwischen Anspruch und Wirklichkeit",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_8",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_read_8"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -32875,11 +33058,14 @@
       "title": "Seminar: Studien kritisch bewerten",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_8",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_listen_8"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -32903,11 +33089,14 @@
       "title": "Erörterung: Nachhaltigkeit im Krankenhaus",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_8",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_write_8"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -32925,11 +33114,14 @@
       "title": "Diskussion: Palliativmedizin",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_8",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_speak_8"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -32946,12 +33138,17 @@
       "skill": "lesson",
       "title": "Literaturinterpretation",
       "topic": "literaturinterpretation",
-      "estimatedMinutes": 18,
-      "conceptId": "c1_lesson_9",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
-        "c1_lesson_9"
+        "c1.literatur.interpretation",
+        "c1.adj.noun.phrases",
+        "c1.extended.adj.phrases"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_8"
       ],
@@ -32960,7 +33157,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 9,
-      "tags": []
+      "tags": [
+        "c1",
+        "literature",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les9",
@@ -32995,11 +33196,14 @@
       "title": "Nominal Style",
       "topic": "Nominal Style",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les9",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_grammar_les9"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -33025,11 +33229,14 @@
       "title": "Digitale Patientenakte und Datenschutz im Gesundheitswesen",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_9",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_read_9"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -33053,11 +33260,14 @@
       "title": "Podcast: Datenschutz in der Patientenversorgung",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_9",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_listen_9"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -33081,11 +33291,14 @@
       "title": "Formelle E-Mail: Kooperationsanfrage",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_9",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_write_9"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -33102,11 +33315,14 @@
       "title": "Vortrag: Interkulturelle Kompetenz",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_9",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_speak_9"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -33123,12 +33339,17 @@
       "skill": "lesson",
       "title": "Wirtschaftsdeutsch und Verhandlungen",
       "topic": "wirtschaftsdeutsch und verhandlungen",
-      "estimatedMinutes": 18,
-      "conceptId": "c1_lesson_10",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
-        "c1_lesson_10"
+        "c1.wirtschaft.verhandlungen",
+        "c1.prapositionale.kollokationen",
+        "c1.idiomatic.collocations"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9"
       ],
@@ -33137,7 +33358,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 10,
-      "tags": []
+      "tags": [
+        "c1",
+        "business",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les10",
@@ -33254,11 +33479,14 @@
       "title": "Nominal Style",
       "topic": "Nominal Style",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_grammar_les10"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -33286,11 +33514,14 @@
       "title": "Interdisziplinäre Zusammenarbeit in der Patientenversorgung",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_read_10"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -33314,11 +33545,14 @@
       "title": "Fallkonferenz: Polytrauma-Patient",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_listen_10"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -33342,11 +33576,14 @@
       "title": "Diskussionsbeitrag: Integration ausländischer Ärzte",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_write_10"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -33364,11 +33601,14 @@
       "title": "Übergabe eines Patienten (Arztbrief)",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 10,
-      "conceptId": "c1_speak_10",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_speak_10"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -33385,12 +33625,16 @@
       "skill": "lesson",
       "title": "Kognitive Linguistik",
       "topic": "kognitive linguistik",
-      "estimatedMinutes": 20,
-      "conceptId": "c1_lesson_11",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
-        "c1_lesson_11"
+        "c1.kognitive.linguistik",
+        "c1.academic.reading"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_10"
       ],
@@ -33399,7 +33643,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 11,
-      "tags": []
+      "tags": [
+        "c1",
+        "linguistics",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les11",
@@ -33471,11 +33719,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les11",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_grammar_les11"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -33509,11 +33760,14 @@
       "title": "Fehlerkultur und Patientensicherheit im Krankenhaus",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_11",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_read_11"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -33537,11 +33791,14 @@
       "title": "Qualitätszirkel: Patientensicherheit",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_11",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_listen_11"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -33565,11 +33822,14 @@
       "title": "Essay: Evidenzbasierte Medizin",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_11",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_write_11"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -33587,11 +33847,14 @@
       "title": "FSP: Akutes Abdomen",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_11",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_speak_11"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -33608,12 +33871,16 @@
       "skill": "lesson",
       "title": "Jura: Rechtsphilosophie",
       "topic": "jura rechtsphilosophie",
-      "estimatedMinutes": 20,
-      "conceptId": "c1_lesson_12",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
-        "c1_lesson_12"
+        "c1.jura.rechtsphilosophie",
+        "c1.legal.argumentation"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_11"
       ],
@@ -33622,7 +33889,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 12,
-      "tags": []
+      "tags": [
+        "c1",
+        "legal",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les12",
@@ -33671,11 +33942,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les12",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_grammar_les12"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -33705,11 +33979,14 @@
       "title": "Migration von Ärzten und berufliche Integration",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_read_12"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -33733,11 +34010,14 @@
       "title": "Bericht: Integration internationaler Ärzte",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_listen_12"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -33761,11 +34041,14 @@
       "title": "Formeller Brief: Krankenhausreform",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_write_12"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -33783,11 +34066,14 @@
       "title": "Patientenberatung: OP-Risiken",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_12",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_speak_12"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -33804,12 +34090,16 @@
       "skill": "lesson",
       "title": "Medizinethik",
       "topic": "medizinethik",
-      "estimatedMinutes": 20,
-      "conceptId": "c1_lesson_13",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
-        "c1_lesson_13"
+        "c1.medizinethik",
+        "c1.stellungnahme.ethics"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_12"
       ],
@@ -33818,7 +34108,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 13,
-      "tags": []
+      "tags": [
+        "c1",
+        "ethics",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les13",
@@ -33884,11 +34178,14 @@
       "title": "Indirect Speech",
       "topic": "Indirect Speech",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les13",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_grammar_les13"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -33921,11 +34218,14 @@
       "title": "Entscheidungsfindung in der Palliativmedizin",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_13",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_read_13"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -33949,11 +34249,14 @@
       "title": "Palliativvisite: Gespräch mit Angehörigen",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_13",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_listen_13"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -33977,11 +34280,14 @@
       "title": "Forschungsantrag: Zusammenfassung",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_13",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_write_13"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -33999,11 +34305,14 @@
       "title": "Ethikdiskussion: Therapietreü",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_13",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_speak_13"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -34020,12 +34329,16 @@
       "skill": "lesson",
       "title": "Nachhaltigkeitsethik",
       "topic": "nachhaltigkeitsethik",
-      "estimatedMinutes": 20,
-      "conceptId": "c1_lesson_14",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
-        "c1_lesson_14"
+        "c1.nachhaltigkeitsethik",
+        "c1.structured.presentation"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_13"
       ],
@@ -34034,7 +34347,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 14,
-      "tags": []
+      "tags": [
+        "c1",
+        "environment",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les14",
@@ -34170,11 +34487,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les14",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_grammar_les14"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -34208,11 +34528,14 @@
       "title": "Wissenschaftliche Unsicherheit in der klinischen Entscheidungsfindung",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_read_14"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -34236,11 +34559,14 @@
       "title": "Vortrag: KI in der radiologischen Diagnostik",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_listen_14"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -34264,11 +34590,14 @@
       "title": "Kommentar: KI in der Radiologie",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_write_14"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -34286,11 +34615,14 @@
       "title": "Vortrag: Evidenzbasierte Medizin",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_14",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_speak_14"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -34307,12 +34639,16 @@
       "skill": "lesson",
       "title": "Kulturkritik und Gesellschaftsanalyse",
       "topic": "kulturkritik und gesellschaftsanalyse",
-      "estimatedMinutes": 20,
-      "conceptId": "c1_lesson_15",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
-        "c1_lesson_15"
+        "c1.kulturkritik",
+        "c1.critical.analysis"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_14"
       ],
@@ -34321,7 +34657,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 15,
-      "tags": []
+      "tags": [
+        "c1",
+        "culture",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les15",
@@ -34375,11 +34715,14 @@
       "title": "Indirect Speech",
       "topic": "Indirect Speech",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les15",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_grammar_les15"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -34416,11 +34759,14 @@
       "title": "Informierte Einwilligung bei komplexen Eingriffen",
       "topic": "Medizinethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_15",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_read_15"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -34444,11 +34790,14 @@
       "title": "Aufklärungsgespräch: Klinische Studie",
       "topic": "Medizinethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_15",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_listen_15"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -34472,11 +34821,14 @@
       "title": "Beschwerdeantwort: Verzögerte Behandlung",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_15",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_write_15"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -34494,11 +34846,14 @@
       "title": "Interdisziplinäre Übergabe",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 10,
-      "conceptId": "c1_speak_15",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_speak_15"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -34515,12 +34870,16 @@
       "skill": "lesson",
       "title": "Phänomenologie und Existenzialismus",
       "topic": "phnomenologie und existenzialismus",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_16",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
-        "c1_lesson_16"
+        "c1.philosophie.existenz",
+        "c1.philosophical.reading"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_15"
       ],
@@ -34529,7 +34888,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 16,
-      "tags": []
+      "tags": [
+        "c1",
+        "philosophy",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les16",
@@ -34563,11 +34926,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les16",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_grammar_les16"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -34601,11 +34967,14 @@
       "title": "Künstliche Intelligenz in der medizinischen Diagnostik",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_16",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_read_16"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -34629,11 +34998,14 @@
       "title": "Debatte: Verteilung knapper Intensivbetten",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_16",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_listen_16"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -34657,11 +35029,14 @@
       "title": "Positionspapier: Patientenautonomie",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_16",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_write_16"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -34679,11 +35054,14 @@
       "title": "Rollenspiel: Diagnostische Unsicherheit",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_16",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_speak_16"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -34700,12 +35078,16 @@
       "skill": "lesson",
       "title": "Psycholinguistik und Sprachstörungen",
       "topic": "psycholinguistik und sprachstrungen",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_17",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
-        "c1_lesson_17"
+        "c1.psycholinguistik",
+        "c1.scientific.listening"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_16"
       ],
@@ -34714,7 +35096,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 17,
-      "tags": []
+      "tags": [
+        "c1",
+        "science",
+        "listening"
+      ]
     },
     {
       "id": "C1_grammar_les17",
@@ -34723,11 +35109,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les17",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_grammar_les17"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -34761,11 +35150,14 @@
       "title": "Ethik klinischer Studien und Probandenschutz",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_17",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_read_17"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -34789,11 +35181,14 @@
       "title": "Workshop: Interkulturelle Kompetenz im Krankenhaus",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_17",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_listen_17"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -34817,11 +35212,14 @@
       "title": "Ethikreflexion: Organspende",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_17",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_write_17"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -34839,11 +35237,14 @@
       "title": "Diskussion: KI in der Klinik",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_17",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_speak_17"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -34860,12 +35261,17 @@
       "skill": "lesson",
       "title": "Politische Philosophie der Moderne",
       "topic": "politische philosophie der moderne",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_18",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
-        "c1_lesson_18"
+        "c1.politische.philosophie",
+        "c1.structured.debate",
+        "c1.political.argumentation"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_17"
       ],
@@ -34874,7 +35280,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 18,
-      "tags": []
+      "tags": [
+        "c1",
+        "politics",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les18",
@@ -34960,11 +35370,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les18",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_grammar_les18"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -35004,11 +35417,14 @@
       "title": "Ressourcenallokation im Krankenhausalltag",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_18",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_read_18"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -35032,11 +35448,14 @@
       "title": "Gespräch nach einem Zwischenfall",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_18",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_listen_18"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -35060,11 +35479,14 @@
       "title": "E-Mail: Interdisziplinäre Kooperation",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_18",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_write_18"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -35082,11 +35504,14 @@
       "title": "Palliativgespräch: Angehörige",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_18",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_speak_18"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -35103,12 +35528,17 @@
       "skill": "lesson",
       "title": "Tempus und Aspekt im Deutschen",
       "topic": "tempus und aspekt im deutschen",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_19",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
-        "c1_lesson_19"
+        "c1.tempus.aspekt",
+        "c1.advanced.temporal",
+        "c1.aspect.distinction"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_18"
       ],
@@ -35117,7 +35547,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 19,
-      "tags": []
+      "tags": [
+        "c1",
+        "grammar",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les19",
@@ -35155,11 +35589,14 @@
       "title": "Text Cohesion",
       "topic": "Text Cohesion",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les19",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_grammar_les19"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -35198,11 +35635,14 @@
       "title": "Interkulturelle Kommunikation in der medizinischen Versorgung",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_19",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_read_19"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -35226,11 +35666,14 @@
       "title": "ABS-Roundtable: Rationaler Antibiotikäinsatz",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_19",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_listen_19"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -35254,11 +35697,14 @@
       "title": "Zusammenfassung: Leitlinie",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_19",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_write_19"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -35276,11 +35722,14 @@
       "title": "Fehlergespräch: Verspätete Diagnose",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_19",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_speak_19"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -35297,12 +35746,16 @@
       "skill": "lesson",
       "title": "Wissenschaftssoziologie",
       "topic": "wissenschaftssoziologie",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_20",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
-        "c1_lesson_20"
+        "c1.wissenschaftssoziologie",
+        "c1.research.summary"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_19"
       ],
@@ -35311,7 +35764,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 20,
-      "tags": []
+      "tags": [
+        "c1",
+        "science",
+        "writing"
+      ]
     },
     {
       "id": "C1_grammar_les20",
@@ -35320,11 +35777,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les20",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_grammar_les20"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -35358,11 +35818,14 @@
       "title": "Offenlegung medizinischer Behandlungsfehler",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_20",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_read_20"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -35386,11 +35849,14 @@
       "title": "Schulung: Diabetes-Selbstmanagement",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_20",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_listen_20"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -35414,11 +35880,14 @@
       "title": "Argumentation: Datenschutz in der Medizin",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_20",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_write_20"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -35436,11 +35905,14 @@
       "title": "Vortrag: Ärztemangel",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_20",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_speak_20"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -35457,12 +35929,16 @@
       "skill": "lesson",
       "title": "Semantik und Pragmatik",
       "topic": "semantik und pragmatik",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_21",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
-        "c1_lesson_21"
+        "c1.semantik.pragmatik",
+        "c1.theoretical.reading"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_20"
       ],
@@ -35471,7 +35947,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 21,
-      "tags": []
+      "tags": [
+        "c1",
+        "linguistics",
+        "reading"
+      ]
     },
     {
       "id": "C1_grammar_les21",
@@ -35480,11 +35960,14 @@
       "title": "Argumentation and Counter",
       "topic": "Argumentation and Counter",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les21",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_grammar_les21"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -35519,11 +36002,14 @@
       "title": "Entscheidungen am Lebensende und Patientenverfügung",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_21",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_read_21"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -35547,11 +36033,14 @@
       "title": "Rehaplanung nach Hüft-OP",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_21",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_listen_21"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -35575,11 +36064,14 @@
       "title": "Abstract: Patientensicherheit",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_21",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_write_21"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -35597,11 +36089,14 @@
       "title": "FSP: Verdacht auf Lungenembolie",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_21",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_speak_21"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -35618,12 +36113,17 @@
       "skill": "lesson",
       "title": "Mediationsverfahren und Konfliktlösung",
       "topic": "mediationsverfahren und konfliktlsung",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_22",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
-        "c1_lesson_22"
+        "c1.mediation.konflikt",
+        "c1.negotiation.speaking",
+        "c1.conflict.resolution"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_21"
       ],
@@ -35632,7 +36132,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 22,
-      "tags": []
+      "tags": [
+        "c1",
+        "professional",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les22",
@@ -35666,11 +36170,14 @@
       "title": "Gerundive Constructions",
       "topic": "Gerundive Constructions",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les22",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_grammar_les22"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -35701,11 +36208,14 @@
       "title": "Antibiotikaresistenzen und rationale Antibiotikatherapie",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_22",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_read_22"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -35729,11 +36239,14 @@
       "title": "Radiobeitrag: Vertrauen in die Arzt-Patienten-Beziehung",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_22",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_listen_22"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -35757,11 +36270,14 @@
       "title": "Bericht: Arbeitsbelastung im Klinikalltag",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_22",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_write_22"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -35779,11 +36295,14 @@
       "title": "Patientenberatung: Antikoagulation",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_22",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_speak_22"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -35800,12 +36319,16 @@
       "skill": "lesson",
       "title": "Digital Humanities",
       "topic": "digital humanities",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_23",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
-        "c1_lesson_23"
+        "c1.digital.humanities",
+        "c1.technology.discourse"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_22"
       ],
@@ -35814,7 +36337,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 23,
-      "tags": []
+      "tags": [
+        "c1",
+        "technology",
+        "reading"
+      ]
     },
     {
       "id": "C1_vocab_les23",
@@ -35861,11 +36388,14 @@
       "title": "Scientific Writing",
       "topic": "Scientific Writing",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les23",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_grammar_les23"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -35892,11 +36422,14 @@
       "title": "Chronisches Krankheitsmanagement und Patientenschulung",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_23",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_read_23"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -35920,11 +36453,14 @@
       "title": "Arbeitsbelastung und Burnout bei Medizinern",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_23",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_listen_23"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -35948,11 +36484,14 @@
       "title": "Kritische Würdigung: Klinische Studie",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_23",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_write_23"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -35970,11 +36509,14 @@
       "title": "Diskussion: Ressourcenverteilung",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_23",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_speak_23"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -35991,12 +36533,16 @@
       "skill": "lesson",
       "title": "Kunsttheorie und Ästhetik",
       "topic": "kunsttheorie und sthetik",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_24",
+      "estimatedMinutes": 50,
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
-        "c1_lesson_24"
+        "c1.kunst.aesthetik",
+        "c1.formal.analysis"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_23"
       ],
@@ -36005,7 +36551,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 24,
-      "tags": []
+      "tags": [
+        "c1",
+        "arts",
+        "writing"
+      ]
     },
     {
       "id": "C1_vocab_les24",
@@ -36042,11 +36592,14 @@
       "title": "Scientific Writing",
       "topic": "Scientific Writing",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les24",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_grammar_les24"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -36071,11 +36624,14 @@
       "title": "Rehabilitation nach orthopädischen Operationen",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_24",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_read_24"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -36099,11 +36655,14 @@
       "title": "Fortbildung: Sepsis-Protokoll",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_24",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_listen_24"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -36127,11 +36686,14 @@
       "title": "Stellungnahme: Aufklärungspflicht",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_24",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_write_24"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -36149,11 +36711,14 @@
       "title": "Vortrag: Wissenschaftliche Redlichkeit",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_24",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_speak_24"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -36170,12 +36735,18 @@
       "skill": "lesson",
       "title": "Globale Gerechtigkeit",
       "topic": "globale gerechtigkeit",
-      "estimatedMinutes": 22,
-      "conceptId": "c1_lesson_25",
+      "estimatedMinutes": 55,
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
-        "c1_lesson_25"
+        "c1.globale.gerechtigkeit",
+        "c1.complex.argumentation",
+        "c1.global.ethics"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_24"
       ],
@@ -36184,7 +36755,11 @@
       ],
       "linkedQuestionIds": [],
       "order": 25,
-      "tags": []
+      "tags": [
+        "c1",
+        "global",
+        "speaking"
+      ]
     },
     {
       "id": "C1_vocab_les25",
@@ -36218,11 +36793,15 @@
       "title": "Error Correction",
       "topic": "Error Correction",
       "estimatedMinutes": 10,
-      "conceptId": "c1_grammar_les25",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_grammar_les25"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_25",
         "C1_lesson_24"
@@ -36254,11 +36833,15 @@
       "title": "Vertrauen als Grundlage der Arzt-Patienten-Beziehung",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_25",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_read_25"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -36282,11 +36865,15 @@
       "title": "Diskussion: Reform der gesetzlichen Krankenversicherung",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_25",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_listen_25"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -36310,11 +36897,15 @@
       "title": "Policy Memo: Digitale Gesundheitskompetenz",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_25",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_write_25"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -36332,11 +36923,15 @@
       "title": "Angehörigengespräch: Therapiezieländerung",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_25",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_speak_25"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -36354,11 +36949,14 @@
       "title": "Burnout-Prävention im ärztlichen Beruf",
       "topic": "Kunsttheorie und Ästhetik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_26",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_read_26"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -36382,11 +36980,14 @@
       "title": "Check-up-Gespräch: Primärprävention",
       "topic": "Kunsttheorie und Ästhetik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_26",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_listen_26"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -36410,11 +37011,14 @@
       "title": "Essay: Interkulturelle Kommunikation",
       "topic": "Digital Humanities",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_26",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_write_26"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -36432,11 +37036,14 @@
       "title": "Diskussion: Entlassungsmanagement",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_26",
+      "conceptId": "c1.argumentation.advanced",
       "taughtConcepts": [
         "c1_speak_26"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.konnektoren.formal",
+        "b2.nominalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -36454,11 +37061,14 @@
       "title": "Gesundheitsökonomische Bewertung medizinischer Leistungen",
       "topic": "Globale Gerechtigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_27",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_read_27"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_25",
         "C1_lesson_24"
@@ -36482,11 +37092,14 @@
       "title": "Telemedizin-Sprechstunde",
       "topic": "Globale Gerechtigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_27",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_listen_27"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_25",
         "C1_lesson_24"
@@ -36510,11 +37123,14 @@
       "title": "E-Mail: Ethikkommission",
       "topic": "Kunsttheorie und Ästhetik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_27",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_write_27"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -36532,11 +37148,14 @@
       "title": "FSP: Postoperative Komplikation",
       "topic": "Kunsttheorie und Ästhetik",
       "estimatedMinutes": 10,
-      "conceptId": "c1_speak_27",
+      "conceptId": "c1.recht.ethik",
       "taughtConcepts": [
         "c1_speak_27"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.indirekte.rede",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -36554,11 +37173,14 @@
       "title": "Organtransplantation und Wartelistenmanagement",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_28",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_read_28"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -36581,11 +37203,14 @@
       "title": "Forschungskolloquium: Ethikvotum",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_28",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_listen_28"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -36608,11 +37233,14 @@
       "title": "Leitlinienzusammenfassung: Antibiotic Stewardship",
       "topic": "Globale Gerechtigkeit",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_28",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_write_28"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_25",
         "C1_lesson_24"
@@ -36630,11 +37258,14 @@
       "title": "Ethikdiskussion: Genetische Zufallsbefunde",
       "topic": "Globale Gerechtigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_28",
+      "conceptId": "c1.medizin.gesundheit",
       "taughtConcepts": [
         "c1_speak_28"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.passive.alternatives",
+        "b2.prapositionale.verben"
+      ],
       "requiredLessons": [
         "C1_lesson_25",
         "C1_lesson_24"
@@ -36652,11 +37283,14 @@
       "title": "Genomische Medizin und personalisierte Diagnostik",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_29",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_read_29"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -36680,11 +37314,14 @@
       "title": "Übergabe im Schichtdienst: ISBAR",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_29",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_listen_29"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -36708,11 +37345,14 @@
       "title": "Argumentation: Ressourcenverteilung",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_29",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_write_29"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -36730,11 +37370,14 @@
       "title": "Vortrag: Burnout-Prävention",
       "topic": "Akademische Diskurse führen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_29",
+      "conceptId": "c1.globalisierung.nachhaltigkeit",
       "taughtConcepts": [
         "c1_speak_29"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.globalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_1"
       ],
@@ -36751,11 +37394,14 @@
       "title": "Personalisierte Medizin in der klinischen Praxis",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_30",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_read_30"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -36779,11 +37425,14 @@
       "title": "Notaufnahme: Triage-Priorisierung",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_30",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_listen_30"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -36807,11 +37456,14 @@
       "title": "Entlassungsdokumentation: Komplexer Fall",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_30",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_write_30"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -36829,11 +37481,14 @@
       "title": "Rollenspiel: Patientenbeschwerde",
       "topic": "Medizin und Gesundheitssystem",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_30",
+      "conceptId": "c1.rhetorik.schreiben",
       "taughtConcepts": [
         "c1_speak_30"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_3",
         "C1_lesson_2"
@@ -36851,11 +37506,14 @@
       "title": "Ärztliche Professionalität und Berufsethos",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_31",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_read_31"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -36879,11 +37537,14 @@
       "title": "Pharmakologische Visite: Medikationscheck",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_31",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_listen_31"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -36907,11 +37568,14 @@
       "title": "Editorial: KI-Regulierung",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_31",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_write_31"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -36929,11 +37593,14 @@
       "title": "FSP: Akuter Thoraxschmerz",
       "topic": "Recht und Ethik diskutieren",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_31",
+      "conceptId": "c1.wissenschaft.schreiben",
       "taughtConcepts": [
         "c1_speak_31"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalisierung",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_2",
         "C1_lesson_1"
@@ -36951,11 +37618,14 @@
       "title": "Kommunikation mit Angehörigen kritisch kranker Patienten",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_32",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_read_32"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -36979,11 +37649,14 @@
       "title": "Sozialdienst: Entlassungsmanagement",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_32",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_listen_32"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -37007,11 +37680,14 @@
       "title": "Widerspruch: Kostenerstattung",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_32",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_write_32"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -37029,11 +37705,14 @@
       "title": "Patientenberatung: Therapieverweigerung",
       "topic": "Globalisierung und Nachhaltigkeit",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_32",
+      "conceptId": "c1.sprachliche.nuancen",
       "taughtConcepts": [
         "c1_speak_32"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.modalverben.subjektiv",
+        "b2.indirekte.rede"
+      ],
       "requiredLessons": [
         "C1_lesson_4",
         "C1_lesson_3"
@@ -37051,11 +37730,14 @@
       "title": "Digitale Gesundheitskompetenz von Patienten",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_33",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_read_33"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -37079,11 +37761,14 @@
       "title": "Epidemiologische Tagung: Impfquoten",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_33",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_listen_33"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -37107,11 +37792,14 @@
       "title": "Arztbrief: Multimorbide Patientin",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_33",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_write_33"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -37129,11 +37817,14 @@
       "title": "Diskussion: Evidenzhierarchie",
       "topic": "Rhetorik und kreatives Schreiben",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_33",
+      "conceptId": "c1.diskursanalyse",
       "taughtConcepts": [
         "c1_speak_33"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_5",
         "C1_lesson_4"
@@ -37151,11 +37842,14 @@
       "title": "Risikokommunikation in der öffentlichen Gesundheit",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_34",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_read_34"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -37179,11 +37873,14 @@
       "title": "Hospiz: Begleitung am Lebensende",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_34",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_listen_34"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -37207,11 +37904,14 @@
       "title": "Literaturübersicht: Chronischer Schmerz",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_34",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_write_34"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -37229,11 +37929,14 @@
       "title": "Rollenspiel: Inzidenteller Zufallsbefund",
       "topic": "Wissenschaftliches Schreiben",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_34",
+      "conceptId": "c1.literatur.interpretation",
       "taughtConcepts": [
         "c1_speak_34"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nominalstil",
+        "b2.kultur.leben"
+      ],
       "requiredLessons": [
         "C1_lesson_6",
         "C1_lesson_5"
@@ -37251,11 +37954,14 @@
       "title": "Pandemievorsorge und Infektionsschutz",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_35",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_read_35"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -37279,11 +37985,14 @@
       "title": "Journal Club: Aktuelle Publikation",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_35",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_listen_35"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -37307,11 +38016,14 @@
       "title": "Reflexion: Umgang mit Behandlungsfehler",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_35",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_write_35"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -37329,11 +38041,14 @@
       "title": "Interdisziplinäre Besprechung: Geriatrie",
       "topic": "Sprachliche Nuancen und Register",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_35",
+      "conceptId": "c1.wirtschaft.verhandlungen",
       "taughtConcepts": [
         "c1_speak_35"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.finanzen.wirtschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_7",
         "C1_lesson_6"
@@ -37351,11 +38066,14 @@
       "title": "Qualitätsmanagement und klinisches Risikomanagement",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_36",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_read_36"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -37379,11 +38097,14 @@
       "title": "Qualitätszirkel: Medikationsfehler vermeiden",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_36",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_listen_36"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -37407,11 +38128,14 @@
       "title": "Positionspapier: Genommedizin",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_36",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_write_36"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -37429,11 +38153,14 @@
       "title": "Vortrag: Qualitätsindikatoren",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_36",
+      "conceptId": "c1.kognitive.linguistik",
       "taughtConcepts": [
         "c1_speak_36"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.medien",
+        "b2.psychologie"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -37451,11 +38178,14 @@
       "title": "Herausforderungen des wissenschaftlichen Peer-Review-Prozesses",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_37",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_read_37"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -37479,11 +38209,14 @@
       "title": "Kampagne: Organspende",
       "topic": "Literaturinterpretation",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_37",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_listen_37"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_9",
         "C1_lesson_8"
@@ -37507,11 +38240,14 @@
       "title": "Projektantrag: Qualitätsverbesserung",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_37",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_write_37"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -37529,11 +38265,14 @@
       "title": "Ethikdiskussion: Screening-Überdiagnostik",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_37",
+      "conceptId": "c1.jura.rechtsphilosophie",
       "taughtConcepts": [
         "c1_speak_37"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.recht.gerechtigkeit",
+        "b2.ethik.wissenschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -37551,11 +38290,14 @@
       "title": "Wissenschaftliche Integrität in der medizinischen Forschung",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_38",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_read_38"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -37579,11 +38321,14 @@
       "title": "Patientenschulung: INR-Selbstmessung",
       "topic": "Wirtschaftsdeutsch und Verhandlungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_38",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_listen_38"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_10",
         "C1_lesson_9"
@@ -37607,11 +38352,14 @@
       "title": "Vergleich: Behandlungsleitlinien",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_38",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_write_38"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -37629,11 +38377,14 @@
       "title": "Angehörigengespräch: Delir",
       "topic": "Kognitive Linguistik",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_38",
+      "conceptId": "c1.medizinethik",
       "taughtConcepts": [
         "c1_speak_38"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_11",
         "C1_lesson_10"
@@ -37651,11 +38402,14 @@
       "title": "Interessenkonflikte in der medizinischen Versorgung",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_39",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_read_39"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -37679,11 +38433,14 @@
       "title": "Posterpräsentation: Kongress",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_39",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_listen_39"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -37707,11 +38464,14 @@
       "title": "E-Mail: Sektorenübergreifende Versorgung",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_39",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_write_39"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -37729,11 +38489,14 @@
       "title": "Diskussion: Interessenkonflikte",
       "topic": "Jura: Rechtsphilosophie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_39",
+      "conceptId": "c1.nachhaltigkeitsethik",
       "taughtConcepts": [
         "c1_speak_39"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.energie.klima"
+      ],
       "requiredLessons": [
         "C1_lesson_12",
         "C1_lesson_11"
@@ -37751,11 +38514,14 @@
       "title": "Medizinstudium im Wandel: Kompetenzorientierte Ausbildung",
       "topic": "Medizinethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_40",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_read_40"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -37779,11 +38545,14 @@
       "title": "Vortrag: Biobanken in der medizinischen Forschung",
       "topic": "Medizinethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_40",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_listen_40"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -37807,11 +38576,14 @@
       "title": "Essay: Empathie im Klinikalltag",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_40",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_write_40"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -37829,11 +38601,14 @@
       "title": "FSP: Verdacht auf Sepsis",
       "topic": "Medizinethik",
       "estimatedMinutes": 10,
-      "conceptId": "c1_speak_40",
+      "conceptId": "c1.kulturkritik",
       "taughtConcepts": [
         "c1_speak_40"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_13",
         "C1_lesson_12"
@@ -37851,11 +38626,14 @@
       "title": "Evidenzhierarchien und die Grenzen der Evidenzbasierung",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_41",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_read_41"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -37879,11 +38657,14 @@
       "title": "Chirurgische Qualitätskonferenz",
       "topic": "Nachhaltigkeitsethik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_41",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_listen_41"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_14",
         "C1_lesson_13"
@@ -37907,11 +38688,14 @@
       "title": "Stellungnahme: Sterbehilfe",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_41",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_write_41"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -37929,11 +38713,14 @@
       "title": "FSP: Akutes neurologisches Defizit",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 13,
-      "conceptId": "c1_speak_41",
+      "conceptId": "c1.philosophie.existenz",
       "taughtConcepts": [
         "c1_speak_41"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -37951,11 +38738,14 @@
       "title": "Patientenberichtete Endpunkte in der Versorgungsforschung",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_42",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_read_42"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -37979,11 +38769,14 @@
       "title": "Gesundheitsprojekt: Schule und Bewegung",
       "topic": "Kulturkritik und Gesellschaftsanalyse",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_42",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_listen_42"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_15",
         "C1_lesson_14"
@@ -38007,11 +38800,14 @@
       "title": "Essay: Krankenhausprivatisierung",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_42",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_write_42"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -38029,11 +38825,14 @@
       "title": "Patientenberatung: Reha nach Huft-OP",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_42",
+      "conceptId": "c1.psycholinguistik",
       "taughtConcepts": [
         "c1_speak_42"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.psychologie",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -38051,11 +38850,14 @@
       "title": "Ethische Aspekte bevölkerungsbezogener Screening-Programme",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_43",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_read_43"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -38079,11 +38881,14 @@
       "title": "Klinisches Audit: Dekubitusprophylaxe",
       "topic": "Phänomenologie und Existenzialismus",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_43",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_listen_43"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_16",
         "C1_lesson_15"
@@ -38107,11 +38912,14 @@
       "title": "Fallbericht: Orthopädisches Trauma",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_43",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_write_43"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -38129,11 +38937,14 @@
       "title": "Vortrag: Patient-Reported Outcomes",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_43",
+      "conceptId": "c1.politische.philosophie",
       "taughtConcepts": [
         "c1_speak_43"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -38151,11 +38962,14 @@
       "title": "Multimorbidität und Komplexität in der Geriatrie",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_44",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_read_44"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -38179,11 +38993,14 @@
       "title": "Betriebsärztliche Untersuchung",
       "topic": "Psycholinguistik und Sprachstörungen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_44",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_listen_44"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_17",
         "C1_lesson_16"
@@ -38207,11 +39024,14 @@
       "title": "E-Mail: Interdisziplinäre Fallkonferenz",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_44",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_write_44"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -38229,11 +39049,14 @@
       "title": "Rollenspiel: Datenschutz in der Forschung",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_44",
+      "conceptId": "c1.tempus.aspekt",
       "taughtConcepts": [
         "c1_speak_44"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.satzbau",
+        "b2.modalverben.subjektiv"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -38251,11 +39074,14 @@
       "title": "Shared Decision Making in der klinischen Praxis",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_45",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_read_45"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -38279,11 +39105,14 @@
       "title": "Geburtsplanungsgespräch",
       "topic": "Politische Philosophie der Moderne",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_45",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_listen_45"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_18",
         "C1_lesson_17"
@@ -38307,11 +39136,14 @@
       "title": "Kritik: Präventionsgesetz",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_45",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_write_45"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -38329,11 +39161,14 @@
       "title": "Diskussion: Sektorenübergreifende Versorgung",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_45",
+      "conceptId": "c1.wissenschaftssoziologie",
       "taughtConcepts": [
         "c1_speak_45"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.ethik.wissenschaft",
+        "b2.digitalisierung"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -38351,11 +39186,14 @@
       "title": "Multimodale Schmerztherapie bei chronischen Schmerzen",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_46",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_read_46"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -38379,11 +39217,14 @@
       "title": "Geriatrische Fallkonferenz",
       "topic": "Tempus und Aspekt im Deutschen",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_46",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_listen_46"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_19",
         "C1_lesson_18"
@@ -38407,11 +39248,14 @@
       "title": "Argumentation: Impfpflicht für Pflegekräfte",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_46",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_write_46"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -38429,11 +39273,14 @@
       "title": "Ethikdiskussion: Palliative Sedierung",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_46",
+      "conceptId": "c1.semantik.pragmatik",
       "taughtConcepts": [
         "c1_speak_46"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.satzbau"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -38451,11 +39298,14 @@
       "title": "Aufklärung über Operationsrisiken und realistische Erwartungen",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_47",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_read_47"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -38479,11 +39329,14 @@
       "title": "Reanimationstraining: Basic Life Support",
       "topic": "Wissenschaftssoziologie",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_47",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_listen_47"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_20",
         "C1_lesson_19"
@@ -38507,11 +39360,14 @@
       "title": "Ethikantrag: Zusammenfassung",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_47",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_write_47"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -38529,11 +39385,14 @@
       "title": "Angehörigengespräch: Postoperative Komplikation",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 11,
-      "conceptId": "c1_speak_47",
+      "conceptId": "c1.mediation.konflikt",
       "taughtConcepts": [
         "c1_speak_47"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.prapositionale.verben",
+        "b2.politik.gesellschaft"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -38551,11 +39410,14 @@
       "title": "Datenschutz und Forschungsdatenmanagement",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_48",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_read_48"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -38579,11 +39441,14 @@
       "title": "Krankenhaus-Controlling: Budgetverhandlung",
       "topic": "Semantik und Pragmatik",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_48",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_listen_48"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_21",
         "C1_lesson_20"
@@ -38607,11 +39472,14 @@
       "title": "Beschwerdeantwort: Kommunikationsdefizit",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_48",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_write_48"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -38629,11 +39497,14 @@
       "title": "Diskussion: Medizinstudium-Reform",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_48",
+      "conceptId": "c1.digital.humanities",
       "taughtConcepts": [
         "c1_speak_48"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.digitalisierung",
+        "b2.medien"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -38651,11 +39522,14 @@
       "title": "Sektorenübergreifende Versorgung und Schnittstellenmanagement",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_49",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_read_49"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -38679,11 +39553,14 @@
       "title": "Vorlesung: Tropenmedizin",
       "topic": "Mediationsverfahren und Konfliktlösung",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_49",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_listen_49"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_22",
         "C1_lesson_21"
@@ -38707,11 +39584,14 @@
       "title": "Essay: Ärztemigration",
       "topic": "Digital Humanities",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_49",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_write_49"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -38729,11 +39609,14 @@
       "title": "Vortrag: Partizipative Entscheidungsfindung",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_speak_49",
+      "conceptId": "c1.kunst.aesthetik",
       "taughtConcepts": [
         "c1_speak_49"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.kultur.leben",
+        "b2.nominalstil"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -38751,11 +39634,15 @@
       "title": "Ärztliche Dokumentation im Krankenhausalltag",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_read_50",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_read_50"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -38779,11 +39666,15 @@
       "title": "Ethische Fallbesprechung: Palliative Sedierung",
       "topic": "Digital Humanities",
       "estimatedMinutes": 12,
-      "conceptId": "c1_listen_50",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_listen_50"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_23",
         "C1_lesson_22"
@@ -38807,11 +39698,15 @@
       "title": "Verlaufsdokumentation: Postoperative Komplikation",
       "topic": "Kunsttheorie und Ästhetik",
       "estimatedMinutes": 18,
-      "conceptId": "c1_write_50",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_write_50"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_24",
         "C1_lesson_23"
@@ -38829,11 +39724,15 @@
       "title": "FSP: Polytrauma Übergabe",
       "topic": "Kritische Diskursanalyse",
       "estimatedMinutes": 10,
-      "conceptId": "c1_speak_50",
+      "conceptId": "c1.globale.gerechtigkeit",
       "taughtConcepts": [
         "c1_speak_50"
       ],
-      "requiredConcepts": [],
+      "requiredConcepts": [
+        "b2.nachhaltigkeit",
+        "b2.politik.gesellschaft",
+        "b2.recht.gerechtigkeit"
+      ],
       "requiredLessons": [
         "C1_lesson_8",
         "C1_lesson_7"
@@ -57702,7 +58601,8 @@
         "b2.grammar.advanced.passive",
         "b2.grammar.vorgangspassiv",
         "b2.grammar.zustandspassiv"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.passive.alternatives",
@@ -57717,7 +58617,8 @@
         "b2.grammar.passivalternativen",
         "b2.grammar.sein.zu",
         "b2.grammar.sich.lassen"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.prapositionale.verben",
@@ -57731,7 +58632,8 @@
       "topics": [
         "b2.grammar.verb.preposition.fixed",
         "b2.grammar.da.compounds"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.modalverben.subjektiv",
@@ -57744,7 +58646,8 @@
       "topics": [
         "b2.grammar.modal.subjective",
         "b2.grammar.modal.particle"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.nominalisierung",
@@ -57758,7 +58661,8 @@
         "b2.grammar.nominalization",
         "b2.grammar.function.verb",
         "b2.grammar.nomen.verb.verbindung"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.konnektoren.formal",
@@ -57773,7 +58677,8 @@
         "b2.grammar.komplexe.konnektoren",
         "b2.grammar.doppel.konnektoren",
         "b2.grammar.konnektoren.formal"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.relativsaetze",
@@ -57788,7 +58693,8 @@
         "b2.grammar.relative.extended",
         "b2.grammar.relative.wo.compounds",
         "b2.grammar.relative.genitive"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.indirekte.rede",
@@ -57803,7 +58709,8 @@
         "b2.grammar.konjunktiv1",
         "b2.grammar.indirekte.rede",
         "b2.grammar.indirekte.fragen"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.nominalstil",
@@ -57817,7 +58724,8 @@
         "b2.grammar.nominalstil",
         "b2.grammar.partizipialattribute",
         "b2.grammar.satzverkuerzung"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.satzbau",
@@ -57832,7 +58740,8 @@
         "b2.grammar.klammer",
         "b2.grammar.ausklammerung",
         "b2.grammar.stellungsfelder"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.globalisierung",
@@ -57846,7 +58755,8 @@
       "topics": [
         "b2.thema.globalisierung",
         "b2.diskussion.wirtschaftsdeutsch"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.ethik.wissenschaft",
@@ -57859,7 +58769,8 @@
       "topics": [
         "b2.thema.wissenschaftsethik",
         "b2.argumentation.formal"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.bewerbung",
@@ -57872,7 +58783,8 @@
       "topics": [
         "b2.thema.bewerbung",
         "b2.praesentation.formell"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.nachhaltigkeit",
@@ -57885,7 +58797,8 @@
       "topics": [
         "b2.thema.nachhaltigkeit",
         "b2.thema.umwelt"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.finanzen.wirtschaft",
@@ -57898,7 +58811,8 @@
       "topics": [
         "b2.thema.wirtschaft",
         "b2.thema.finanzen"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.migration.integration",
@@ -57911,7 +58825,8 @@
       "topics": [
         "b2.thema.migration",
         "b2.thema.integration"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.recht.gerechtigkeit",
@@ -57924,7 +58839,8 @@
       "topics": [
         "b2.thema.recht",
         "b2.thema.grundgesetz"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.medien",
@@ -57938,7 +58854,8 @@
       "topics": [
         "b2.thema.medien",
         "b2.thema.journalismus"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.psychologie",
@@ -57952,7 +58869,8 @@
         "b2.thema.psychologie",
         "b2.thema.lernen",
         "b2.thema.motivation"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.tourismus",
@@ -57965,7 +58883,8 @@
       "topics": [
         "b2.thema.tourismus",
         "b2.thema.kultur.reisen"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.digitalisierung",
@@ -57979,7 +58898,8 @@
         "b2.thema.digitalisierung",
         "b2.thema.ki",
         "b2.thema.arbeitswelt"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.politik.gesellschaft",
@@ -57992,7 +58912,8 @@
       "topics": [
         "b2.thema.politik",
         "b2.thema.demokratie"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.smart.cities",
@@ -58005,7 +58926,8 @@
       "topics": [
         "b2.thema.stadtentwicklung",
         "b2.thema.smart.cities"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.energie.klima",
@@ -58018,7 +58940,8 @@
       "topics": [
         "b2.thema.energiepolitik",
         "b2.thema.klimawandel"
-      ]
+      ],
+      "skill": "lesson"
     },
     {
       "id": "b2.kultur.leben",
@@ -58031,10 +58954,1034 @@
       "topics": [
         "b2.thema.kultur",
         "b2.thema.lebensstil"
-      ]
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.argumentation.advanced",
+      "level": "C1",
+      "description": "c1 argumentation advanced",
+      "tags": [
+        "c1",
+        "academic",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.recht.ethik",
+      "level": "C1",
+      "description": "c1 recht ethik",
+      "tags": [
+        "c1",
+        "legal",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.medizin.gesundheit",
+      "level": "C1",
+      "description": "c1 medizin gesundheit",
+      "tags": [
+        "c1",
+        "healthcare",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.globalisierung.nachhaltigkeit",
+      "level": "C1",
+      "description": "c1 globalisierung nachhaltigkeit",
+      "tags": [
+        "c1",
+        "environment",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.rhetorik.schreiben",
+      "level": "C1",
+      "description": "c1 rhetorik schreiben",
+      "tags": [
+        "c1",
+        "creative",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.wissenschaft.schreiben",
+      "level": "C1",
+      "description": "c1 wissenschaft schreiben",
+      "tags": [
+        "c1",
+        "academic",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.sprachliche.nuancen",
+      "level": "C1",
+      "description": "c1 sprachliche nuancen",
+      "tags": [
+        "c1",
+        "nuance",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.diskursanalyse",
+      "level": "C1",
+      "description": "c1 diskursanalyse",
+      "tags": [
+        "c1",
+        "media",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.literatur.interpretation",
+      "level": "C1",
+      "description": "c1 literatur interpretation",
+      "tags": [
+        "c1",
+        "literature",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.wirtschaft.verhandlungen",
+      "level": "C1",
+      "description": "c1 wirtschaft verhandlungen",
+      "tags": [
+        "c1",
+        "business",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.kognitive.linguistik",
+      "level": "C1",
+      "description": "c1 kognitive linguistik",
+      "tags": [
+        "c1",
+        "linguistics",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.jura.rechtsphilosophie",
+      "level": "C1",
+      "description": "c1 jura rechtsphilosophie",
+      "tags": [
+        "c1",
+        "legal",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.medizinethik",
+      "level": "C1",
+      "description": "c1 medizinethik",
+      "tags": [
+        "c1",
+        "ethics",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.nachhaltigkeitsethik",
+      "level": "C1",
+      "description": "c1 nachhaltigkeitsethik",
+      "tags": [
+        "c1",
+        "environment",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.kulturkritik",
+      "level": "C1",
+      "description": "c1 kulturkritik",
+      "tags": [
+        "c1",
+        "culture",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.philosophie.existenz",
+      "level": "C1",
+      "description": "c1 philosophie existenz",
+      "tags": [
+        "c1",
+        "philosophy",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.psycholinguistik",
+      "level": "C1",
+      "description": "c1 psycholinguistik",
+      "tags": [
+        "c1",
+        "science",
+        "listening"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.politische.philosophie",
+      "level": "C1",
+      "description": "c1 politische philosophie",
+      "tags": [
+        "c1",
+        "politics",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.tempus.aspekt",
+      "level": "C1",
+      "description": "c1 tempus aspekt",
+      "tags": [
+        "c1",
+        "grammar",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.wissenschaftssoziologie",
+      "level": "C1",
+      "description": "c1 wissenschaftssoziologie",
+      "tags": [
+        "c1",
+        "science",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.semantik.pragmatik",
+      "level": "C1",
+      "description": "c1 semantik pragmatik",
+      "tags": [
+        "c1",
+        "linguistics",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.mediation.konflikt",
+      "level": "C1",
+      "description": "c1 mediation konflikt",
+      "tags": [
+        "c1",
+        "professional",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.digital.humanities",
+      "level": "C1",
+      "description": "c1 digital humanities",
+      "tags": [
+        "c1",
+        "technology",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.kunst.aesthetik",
+      "level": "C1",
+      "description": "c1 kunst aesthetik",
+      "tags": [
+        "c1",
+        "arts",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.globale.gerechtigkeit",
+      "level": "C1",
+      "description": "c1 globale gerechtigkeit",
+      "tags": [
+        "c1",
+        "global",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.connectors.advanced",
+      "level": "C1",
+      "description": "Advanced academic connectors and discourse markers",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.nominal.style",
+      "level": "C1",
+      "description": "Nominal style in academic German",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.konjunktiv1.formal",
+      "level": "C1",
+      "description": "Konjunktiv I for formal reported speech",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.reported.speech",
+      "level": "C1",
+      "description": "Advanced reported speech structures",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.passive.alternatives",
+      "level": "C1",
+      "description": "Passive alternatives: sein+zu, lassen+sich, bekommen-Passiv",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.bekommen.passiv",
+      "level": "C1",
+      "description": "The bekommen-Passiv (recipient passive)",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.participial.constructions",
+      "level": "C1",
+      "description": "Participial constructions as extended attributes",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.extended.attributes",
+      "level": "C1",
+      "description": "Extended adjectival attributes replacing relative clauses",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.word.order.variation",
+      "level": "C1",
+      "description": "Stylistic word order variation and inversion",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.stylistic.inversion",
+      "level": "C1",
+      "description": "Inversion for emphasis and rhetorical effect",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.nominalisierung.advanced",
+      "level": "C1",
+      "description": "Advanced nominalization techniques",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.denominalisierung",
+      "level": "C1",
+      "description": "Converting nominal style back to verbal",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.modalverben.subjektiv",
+      "level": "C1",
+      "description": "Modal verbs for subjective meaning and speculation",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.register.sensitivity",
+      "level": "C1",
+      "description": "Register sensitivity in formal vs informal contexts",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.sentence.restructuring",
+      "level": "C1",
+      "description": "Sentence restructuring for discourse analysis",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.focus.emphasis",
+      "level": "C1",
+      "description": "Focus and emphasis through cleft sentences and fronting",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.adj.noun.phrases",
+      "level": "C1",
+      "description": "Extended adjective and noun phrase structures",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.extended.adj.phrases",
+      "level": "C1",
+      "description": "Complex extended adjective phrases for literary analysis",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.prapositionale.kollokationen",
+      "level": "C1",
+      "description": "Prepositional verbs and idiomatic collocations",
+      "tags": [
+        "c1",
+        "vocabulary"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.idiomatic.collocations",
+      "level": "C1",
+      "description": "Idiomatic collocations in business German",
+      "tags": [
+        "c1",
+        "vocabulary"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.academic.reading",
+      "level": "C1",
+      "description": "Academic reading comprehension strategies",
+      "tags": [
+        "c1",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.legal.argumentation",
+      "level": "C1",
+      "description": "Legal argumentation structures in German",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.stellungnahme.ethics",
+      "level": "C1",
+      "description": "Formulating Stellungnahmen on ethical issues",
+      "tags": [
+        "c1",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.structured.presentation",
+      "level": "C1",
+      "description": "Structured presentations on complex topics",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.critical.analysis",
+      "level": "C1",
+      "description": "Critical analysis of cultural texts",
+      "tags": [
+        "c1",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.philosophical.reading",
+      "level": "C1",
+      "description": "Reading philosophical texts in German",
+      "tags": [
+        "c1",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.scientific.listening",
+      "level": "C1",
+      "description": "Listening to scientific presentations",
+      "tags": [
+        "c1",
+        "listening"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.structured.debate",
+      "level": "C1",
+      "description": "Structured debate on political philosophy",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.political.argumentation",
+      "level": "C1",
+      "description": "Political argumentation techniques",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.advanced.temporal",
+      "level": "C1",
+      "description": "Advanced temporal reference and aspect",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.aspect.distinction",
+      "level": "C1",
+      "description": "Aspectual distinctions in German verbs",
+      "tags": [
+        "c1",
+        "grammar"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.research.summary",
+      "level": "C1",
+      "description": "Summarizing research texts",
+      "tags": [
+        "c1",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.theoretical.reading",
+      "level": "C1",
+      "description": "Reading theoretical/semantic texts",
+      "tags": [
+        "c1",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.negotiation.speaking",
+      "level": "C1",
+      "description": "Negotiation and mediation speaking skills",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.conflict.resolution",
+      "level": "C1",
+      "description": "Conflict resolution language",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.technology.discourse",
+      "level": "C1",
+      "description": "Discourse on digital technology and humanities",
+      "tags": [
+        "c1",
+        "reading"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.formal.analysis",
+      "level": "C1",
+      "description": "Formal analysis of artworks",
+      "tags": [
+        "c1",
+        "writing"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.complex.argumentation",
+      "level": "C1",
+      "description": "Complex argumentation on global ethics",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
+    },
+    {
+      "id": "c1.global.ethics",
+      "level": "C1",
+      "description": "Global ethics discourse and debate",
+      "tags": [
+        "c1",
+        "speaking"
+      ],
+      "skill": "lesson"
     }
   ],
-  "prerequisiteGraph": [],
+  "prerequisiteGraph": [
+    {
+      "from": "c1.argumentation.advanced",
+      "to": "b2.konnektoren.formal",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.argumentation.advanced"
+    },
+    {
+      "from": "c1.argumentation.advanced",
+      "to": "b2.nominalisierung",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.argumentation.advanced"
+    },
+    {
+      "from": "c1.recht.ethik",
+      "to": "b2.indirekte.rede",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.recht.ethik"
+    },
+    {
+      "from": "c1.recht.ethik",
+      "to": "b2.recht.gerechtigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.recht.ethik"
+    },
+    {
+      "from": "c1.medizin.gesundheit",
+      "to": "b2.passive.alternatives",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.medizin.gesundheit"
+    },
+    {
+      "from": "c1.medizin.gesundheit",
+      "to": "b2.prapositionale.verben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.medizin.gesundheit"
+    },
+    {
+      "from": "c1.globalisierung.nachhaltigkeit",
+      "to": "b2.nachhaltigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.globalisierung.nachhaltigkeit"
+    },
+    {
+      "from": "c1.globalisierung.nachhaltigkeit",
+      "to": "b2.globalisierung",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.globalisierung.nachhaltigkeit"
+    },
+    {
+      "from": "c1.rhetorik.schreiben",
+      "to": "b2.satzbau",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.rhetorik.schreiben"
+    },
+    {
+      "from": "c1.rhetorik.schreiben",
+      "to": "b2.nominalstil",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.rhetorik.schreiben"
+    },
+    {
+      "from": "c1.wissenschaft.schreiben",
+      "to": "b2.nominalisierung",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wissenschaft.schreiben"
+    },
+    {
+      "from": "c1.wissenschaft.schreiben",
+      "to": "b2.ethik.wissenschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wissenschaft.schreiben"
+    },
+    {
+      "from": "c1.sprachliche.nuancen",
+      "to": "b2.modalverben.subjektiv",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.sprachliche.nuancen"
+    },
+    {
+      "from": "c1.sprachliche.nuancen",
+      "to": "b2.indirekte.rede",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.sprachliche.nuancen"
+    },
+    {
+      "from": "c1.diskursanalyse",
+      "to": "b2.medien",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.diskursanalyse"
+    },
+    {
+      "from": "c1.diskursanalyse",
+      "to": "b2.politik.gesellschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.diskursanalyse"
+    },
+    {
+      "from": "c1.literatur.interpretation",
+      "to": "b2.nominalstil",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.literatur.interpretation"
+    },
+    {
+      "from": "c1.literatur.interpretation",
+      "to": "b2.kultur.leben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.literatur.interpretation"
+    },
+    {
+      "from": "c1.wirtschaft.verhandlungen",
+      "to": "b2.prapositionale.verben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wirtschaft.verhandlungen"
+    },
+    {
+      "from": "c1.wirtschaft.verhandlungen",
+      "to": "b2.finanzen.wirtschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wirtschaft.verhandlungen"
+    },
+    {
+      "from": "c1.kognitive.linguistik",
+      "to": "b2.medien",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kognitive.linguistik"
+    },
+    {
+      "from": "c1.kognitive.linguistik",
+      "to": "b2.psychologie",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kognitive.linguistik"
+    },
+    {
+      "from": "c1.jura.rechtsphilosophie",
+      "to": "b2.recht.gerechtigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.jura.rechtsphilosophie"
+    },
+    {
+      "from": "c1.jura.rechtsphilosophie",
+      "to": "b2.ethik.wissenschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.jura.rechtsphilosophie"
+    },
+    {
+      "from": "c1.medizinethik",
+      "to": "b2.ethik.wissenschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.medizinethik"
+    },
+    {
+      "from": "c1.medizinethik",
+      "to": "b2.satzbau",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.medizinethik"
+    },
+    {
+      "from": "c1.nachhaltigkeitsethik",
+      "to": "b2.nachhaltigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.nachhaltigkeitsethik"
+    },
+    {
+      "from": "c1.nachhaltigkeitsethik",
+      "to": "b2.energie.klima",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.nachhaltigkeitsethik"
+    },
+    {
+      "from": "c1.kulturkritik",
+      "to": "b2.kultur.leben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kulturkritik"
+    },
+    {
+      "from": "c1.kulturkritik",
+      "to": "b2.politik.gesellschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kulturkritik"
+    },
+    {
+      "from": "c1.philosophie.existenz",
+      "to": "b2.kultur.leben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.philosophie.existenz"
+    },
+    {
+      "from": "c1.philosophie.existenz",
+      "to": "b2.satzbau",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.philosophie.existenz"
+    },
+    {
+      "from": "c1.psycholinguistik",
+      "to": "b2.psychologie",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.psycholinguistik"
+    },
+    {
+      "from": "c1.psycholinguistik",
+      "to": "b2.medien",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.psycholinguistik"
+    },
+    {
+      "from": "c1.politische.philosophie",
+      "to": "b2.politik.gesellschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.politische.philosophie"
+    },
+    {
+      "from": "c1.politische.philosophie",
+      "to": "b2.recht.gerechtigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.politische.philosophie"
+    },
+    {
+      "from": "c1.tempus.aspekt",
+      "to": "b2.satzbau",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.tempus.aspekt"
+    },
+    {
+      "from": "c1.tempus.aspekt",
+      "to": "b2.modalverben.subjektiv",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.tempus.aspekt"
+    },
+    {
+      "from": "c1.wissenschaftssoziologie",
+      "to": "b2.ethik.wissenschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wissenschaftssoziologie"
+    },
+    {
+      "from": "c1.wissenschaftssoziologie",
+      "to": "b2.digitalisierung",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.wissenschaftssoziologie"
+    },
+    {
+      "from": "c1.semantik.pragmatik",
+      "to": "b2.kultur.leben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.semantik.pragmatik"
+    },
+    {
+      "from": "c1.semantik.pragmatik",
+      "to": "b2.satzbau",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.semantik.pragmatik"
+    },
+    {
+      "from": "c1.mediation.konflikt",
+      "to": "b2.prapositionale.verben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.mediation.konflikt"
+    },
+    {
+      "from": "c1.mediation.konflikt",
+      "to": "b2.politik.gesellschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.mediation.konflikt"
+    },
+    {
+      "from": "c1.digital.humanities",
+      "to": "b2.digitalisierung",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.digital.humanities"
+    },
+    {
+      "from": "c1.digital.humanities",
+      "to": "b2.medien",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.digital.humanities"
+    },
+    {
+      "from": "c1.kunst.aesthetik",
+      "to": "b2.kultur.leben",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kunst.aesthetik"
+    },
+    {
+      "from": "c1.kunst.aesthetik",
+      "to": "b2.nominalstil",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.kunst.aesthetik"
+    },
+    {
+      "from": "c1.globale.gerechtigkeit",
+      "to": "b2.nachhaltigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.globale.gerechtigkeit"
+    },
+    {
+      "from": "c1.globale.gerechtigkeit",
+      "to": "b2.politik.gesellschaft",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.globale.gerechtigkeit"
+    },
+    {
+      "from": "c1.globale.gerechtigkeit",
+      "to": "b2.recht.gerechtigkeit",
+      "relationship": "requires",
+      "level": "C1",
+      "conceptId": "c1.globale.gerechtigkeit"
+    }
+  ],
   "B2": [
     {
       "id": "B2_lesson_1",
