@@ -10223,15 +10223,18 @@
     "speakingTask": "Record yourself giving your opinion on the internet's impact on society (1 minute).",
     "writingTask": "Write a paragraph (80-100 words) arguing for or against: 'Social media dös more harm than good.'",
     "reviewSummary": "You learned opinion expressions (Ich finde dass, Meiner Meinung nach), subordinate clauses with dass/weil/obwohl.",
-    "conceptId": "b1.opinion.media",
+    "conceptId": "b1.subordinate.obwohl",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "a2.opinions.dass",
-      "a2.connectors.weil"
+      "A2_lesson_5",
+      "A2_lesson_9"
     ],
     "conceptsTaught": [
-      "b1.opinion.media",
-      "b1.subordinate.obwohl"
+      "b1.subordinate.obwohl",
+      "b1.subordinate.dass",
+      "b1.subordinate.weil",
+      "b1.subordinate.wenn",
+      "b1.connectors.complex"
     ],
     "trackTags": [
       "goethe",
@@ -10383,16 +10386,16 @@
     "speakingTask": "Record a 1-minute statement on what you personally do for the environment.",
     "writingTask": "Write 8-10 tips for sustainable living using 'man sollte' and relative clauses.",
     "reviewSummary": "You learned environmental vocabulary, relative clauses (der/die/das), and 'man sollte'.",
-    "conceptId": "b1.environment.daily",
+    "conceptId": "b1.connectors.cause.effect",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.environment.basic",
-      "a2.connectors.coordinating"
+      "A2_lesson_13",
+      "A2_lesson_16"
     ],
     "conceptsTaught": [
-      "b1.environment.daily",
-      "b1.connectors.complex",
-      "b1.damit.clauses"
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors",
+      "b1.connectors.complex"
     ],
     "trackTags": [
       "goethe",
@@ -10536,16 +10539,16 @@
     "speakingTask": "Record yourself: What would you do if you had a free year? Use Konjunktiv II.",
     "writingTask": "Write a paragraph (80 words) about your ideal learning experience using Konjunktiv II.",
     "reviewSummary": "You learned German school system vocabulary, Konjunktiv II (würde, hätte, wäre), and how to express wishes.",
-    "conceptId": "b1.education.future",
+    "conceptId": "b1.comparisons.complex",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.education.school",
-      "a2.comparisons.basic"
+      "A2_lesson_14",
+      "A2_lesson_9"
     ],
     "conceptsTaught": [
-      "b1.education.system",
       "b1.comparisons.complex",
-      "b1.indirect.questions"
+      "b1.indirect.questions",
+      "b1.word.order.complex"
     ],
     "trackTags": [
       "goethe",
@@ -10693,15 +10696,16 @@
     "speakingTask": "Record yourself describing a festival from your culture using passive constructions.",
     "writingTask": "Write a paragraph about a German tradition using at least 5 passive sentences.",
     "reviewSummary": "You learned about German traditions, passive voice (werden + Partizip II), and describing cultural events.",
-    "conceptId": "b1.culture.festivals",
+    "conceptId": "b1.konjunktiv2.politeness",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.culture.holidays",
-      "a2.modal.verbs"
+      "A2_lesson_15",
+      "A2_lesson_16"
     ],
     "conceptsTaught": [
-      "b1.culture.german.festivals",
-      "b1.konjunktiv2.politeness"
+      "b1.konjunktiv2.politeness",
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.modal"
     ],
     "trackTags": [
       "goethe",
@@ -10852,15 +10856,15 @@
     "speakingTask": "Record a 1-minute prediction: How will technology change education?",
     "writingTask": "Write a short essay (100 words) predicting how tech will change daily life.",
     "reviewSummary": "You learned future tech vocabulary, Futur I (werden + infinitive), and how to make predictions.",
-    "conceptId": "b1.technology.future",
+    "conceptId": "b1.word.order.complex",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.technology.basic",
-      "a2.future.tenses"
+      "A2_lesson_20",
+      "A2_lesson_21"
     ],
     "conceptsTaught": [
-      "b1.future.technology",
-      "b1.futur1"
+      "b1.word.order.complex",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -10942,7 +10946,8 @@
       "Ich war letzte Woche auf einer Konferenz in Berlin.",
       "Konnten Sie mich gestern Abend erreichen?",
       "Wir mussten den Termin leider verschieben.",
-      "Hatten Sie schon Gelegenheit die Unterlagen zu pruefen?"
+      "Hatten Sie schon Gelegenheit die Unterlagen zu pruefen?",
+      "Könnten Sie mich bitte mit Frau Doktor Wagner verbinden?"
     ],
     "grammarFocus": "Formal phone communication and connector \"dass\"",
     "vocabulary": [
@@ -11048,15 +11053,16 @@
       "prompt": "Practice two phone scenarios: formal (business) and informal (friend)."
     },
     "reviewSummary": "\"verbinden\" = to connect. \"im Hause sein\" = to be in the office. \"dass\" + subordinate clause: \"Sagen Sie ihm, dass ich angerufen habe.\"",
-    "conceptId": "b1.telephone.formal",
+    "conceptId": "b1.temporal.connectors",
     "estimatedMinutes": 40,
     "prerequisiteConceptIds": [
-      "a2.telephone.basic",
-      "a2.prateritum.haben.sein"
+      "A2_lesson_2",
+      "A1_lesson_11"
     ],
     "conceptsTaught": [
-      "b1.telephone.communication",
-      "b1.prateritum.haben.sein.modal"
+      "b1.temporal.connectors",
+      "b1.prepositions.fixed.case",
+      "b1.grammar.general"
     ],
     "trackTags": [
       "goethe",
@@ -11142,7 +11148,8 @@
       "Im Anhang finden Sie meinen Lebenslauf und meine Zeugnisse.",
       "Ich habe bereits drei Jahre Berufserfahrung in diesem Bereich.",
       "Meine Deutschkenntnisse auf B1-Niveau moechte ich anwenden.",
-      "Ueber eine positive Rueckmeldung wuerde ich mich sehr freuen."
+      "Ueber eine positive Rueckmeldung wuerde ich mich sehr freuen.",
+      "Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um die Stelle."
     ],
     "grammarFocus": "Formal job application language",
     "vocabulary": [
@@ -11248,15 +11255,16 @@
       "prompt": "Present yourself in a mock job interview."
     },
     "reviewSummary": "\"Hiermit bewerbe ich mich um...\" = I hereby apply for... \"Mit freundlichen Grüssen\" = standard formal closing. \"der Lebenslauf\" = CV.",
-    "conceptId": "b1.job.application",
+    "conceptId": "b1.prepositions.fixed.case",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "a2.jobs.professions",
-      "a2.formal.letter.basic"
+      "A2_lesson_8",
+      "A2_lesson_6"
     ],
     "conceptsTaught": [
-      "b1.job.application.formal",
-      "b1.formal.letter.complex"
+      "b1.prepositions.fixed.case",
+      "b1.sentence.transformation",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -11339,7 +11347,8 @@
       "Der Beitrag wurde von der Community gemeldet.",
       "Persoenliche Daten werden oft ohne Zustimmung gesammelt.",
       "Es wird immer mehr ueber Datenschutz diskutiert.",
-      "Fake News werden in sozialen Medien schnell verbreitet."
+      "Fake News werden in sozialen Medien schnell verbreitet.",
+      "In sozialen Medien werden täglich Millionen von Fotos hochgeladen."
     ],
     "grammarFocus": "Social media vocabulary and reflexive verbs",
     "vocabulary": [
@@ -11449,15 +11458,16 @@
       "prompt": "Discuss the pros and cons of social media with a partner."
     },
     "reviewSummary": "\"soziale Medien\" (pl., always with article \"die\"). \"hochladen\" = upload (separable). \"die Privatsphäre\" = privacy. \"das Profil\" = profile.",
-    "conceptId": "b1.social.media",
+    "conceptId": "b1.passiv.praesens",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.social.media.basic",
-      "a2.present.passive.basic"
+      "A2_lesson_20",
+      "A2_lesson_21"
     ],
     "conceptsTaught": [
-      "b1.social.media",
-      "b1.passiv.praesens"
+      "b1.passiv.praesens",
+      "b1.passiv.prateritum",
+      "b1.lassen.usage"
     ],
     "trackTags": [
       "goethe",
@@ -11542,7 +11552,8 @@
       "Er geht zur Arbeit zu Fuss um Geld und Energie zu sparen.",
       "Anstatt Plastik zu kaufen benutzt sie Stoffbeutel.",
       "Viele schalten das Licht aus ohne daran zu denken.",
-      "Um die Natur zu schuetzen sollten wir weniger Fleisch essen."
+      "Um die Natur zu schuetzen sollten wir weniger Fleisch essen.",
+      "Wir pflanzen Bäume, um das Stadtklima zu verbessern."
     ],
     "grammarFocus": "Environmental vocabulary and modal verbs (müssen/dürfen)",
     "vocabulary": [
@@ -11648,15 +11659,15 @@
       "prompt": "Discuss environmental issüs and what individuals can do."
     },
     "reviewSummary": "\"die Umwelt schützen\" = to protect the environment. \"nachhaltig\" = sustainable. \"der Umweltschutz\" = environmental protection.",
-    "conceptId": "b1.environment.protection",
+    "conceptId": "b1.umzu.clauses",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.environment.action",
-      "a2.infinitiv.zu"
+      "B1_lesson_2",
+      "A2_lesson_21"
     ],
     "conceptsTaught": [
-      "b1.environment.conservation",
-      "b1.umzu.clauses"
+      "b1.umzu.clauses",
+      "b1.connectors.cause.effect"
     ],
     "trackTags": [
       "goethe",
@@ -11739,7 +11750,8 @@
       "Sie ist jeden Tag mit dem Zug zur Arbeit gefahren.",
       "Hast du schon Erfahrung in einem Buero gesammelt?",
       "Wir haben viel ueber die Arbeitsablaeufe gelernt.",
-      "Mein Kollege hat mir bei den ersten Aufgaben geholfen."
+      "Mein Kollege hat mir bei den ersten Aufgaben geholfen.",
+      "Letztes Jahr habe ich ein dreimonatiges Praktikum bei Siemens gemacht."
     ],
     "grammarFocus": "Career and internship vocabulary",
     "vocabulary": [
@@ -11845,15 +11857,16 @@
       "prompt": "Describe your work experience or internship plans."
     },
     "reviewSummary": "\"ein Praktikum absolvieren/machen\" = to do an internship. \"betreün\" = to supervise. \"die Abteilung\" = department. \"der Berufseinstieg\" = career start.",
-    "conceptId": "b1.internship",
+    "conceptId": "b1.participle.adjectives",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.work.experience",
-      "a2.perfekt.basic"
+      "A2_lesson_8",
+      "A2_lesson_3"
     ],
     "conceptsTaught": [
-      "b1.internship.experience",
-      "b1.perfekt.complex"
+      "b1.participle.adjectives",
+      "b1.temporal.connectors",
+      "b1.grammar.general"
     ],
     "trackTags": [
       "goethe",
@@ -11937,7 +11950,8 @@
       "Die Schauspielerin die in diesem Film mitspielt ist bekannt.",
       "Ein Film der zum Nachdenken anregt gefaellt mir am besten.",
       "Das Drehbuch das der Autor geschrieben hat ist preisgekroent.",
-      "Kennst du den Film ueber den alle sprechen?"
+      "Kennst du den Film ueber den alle sprechen?",
+      "Der Film, den wir gestern gesehen haben, war wirklich spannend."
     ],
     "grammarFocus": "Film analysis vocabulary and Konjunktiv II for recommendations",
     "vocabulary": [
@@ -12047,15 +12061,16 @@
       "prompt": "Discuss a movie with a partner. Give your opinion and recommendation."
     },
     "reviewSummary": "\"Ich würde den Film empfehlen\" = I would recommend the film. \"fesselnd\" = captivating. \"überzeugend\" = convincing. \"die Handlung\" = plot.",
-    "conceptId": "b1.film.discussion",
+    "conceptId": "b1.relative.clauses.nom",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.entertainment.hobbies",
-      "a2.relative.clauses.basic"
+      "B1_lesson_1",
+      "A2_lesson_21"
     ],
     "conceptsTaught": [
-      "b1.film.culture",
-      "b1.relative.clauses.nom.acc"
+      "b1.relative.clauses.nom",
+      "b1.relative.clauses.acc",
+      "b1.relative.clauses.general"
     ],
     "trackTags": [
       "goethe",
@@ -12128,7 +12143,9 @@
       "Der Salat dem ich Olivenoel hinzugefuegt habe schmeckt besser.",
       "Die Zutaten mit denen ich koche sind alle biologisch.",
       "Der Bauer von dem wir das Gemsue kaufen liefert frisch.",
-      "Das Restaurant dessen Speisekarte vegetarisch ist hat tolles Essen."
+      "Das Restaurant dessen Speisekarte vegetarisch ist hat tolles Essen.",
+      "Eine ausgewogene Ernährung ist wichtig für die Gesundheit.",
+      "Lebensmittel, die viele Vitamine enthalten, sind besonders wertvoll."
     ],
     "grammarFocus": "Nutrition vocabulary and \"sollte\" (should)",
     "vocabulary": [
@@ -12238,15 +12255,16 @@
       "prompt": "Discuss healthy eating: diet, habits, changes you want to make."
     },
     "reviewSummary": "\"sollte\" = should (Konjunktiv II). \"sich ernähren\" = to eat/nourish oneself. \"ausgewogen\" = balanced.",
-    "conceptId": "b1.nutrition.healthy",
+    "conceptId": "b1.relative.clauses.dat",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.food.ordering",
-      "a2.relative.clauses.nom.acc"
+      "A2_lesson_7",
+      "B1_lesson_11"
     ],
     "conceptsTaught": [
-      "b1.healthy.nutrition",
-      "b1.relative.clauses.dat.gen"
+      "b1.relative.clauses.dat",
+      "b1.n.declension",
+      "b1.relative.clauses.general"
     ],
     "trackTags": [
       "goethe",
@@ -12316,7 +12334,9 @@
       "Wenn ich mehr Zeit haette wuerde ich ein Instrument lernen.",
       "Ich wuenschte ich koennte naechstes Jahr nach Japan reisen.",
       "Waere ich doch nur frueher aufgestanden.",
-      "Haette ich das Ticket doch frueher gebucht."
+      "Haette ich das Ticket doch frueher gebucht.",
+      "Wenn ich mehr Zeit hätte, würde ich ein Musikinstrument lernen.",
+      "Ich wünschte, ich könnte nächstes Jahr nach Japan reisen."
     ],
     "grammarFocus": "Future tense with \"werden\" and \"hoffen\"",
     "vocabulary": [
@@ -12422,15 +12442,16 @@
       "prompt": "Discuss your future plans and goals with a partner."
     },
     "reviewSummary": "\"werden\" + Infinitiv = future tense. \"Ich hoffe, dass...\" = I hope that... \"Möchte\" = polite \"want to.\" \"das Ziel\" = goal.",
-    "conceptId": "b1.future.plans",
+    "conceptId": "b1.konjunktiv2.general",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "b1.future.technology",
-      "b1.futur1"
+      "B1_lesson_5",
+      "B1_lesson_1"
     ],
     "conceptsTaught": [
-      "b1.future.plans",
-      "b1.konjunktiv2.wishes"
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.modal",
+      "b1.word.order.complex"
     ],
     "trackTags": [
       "goethe",
@@ -12501,7 +12522,9 @@
       "Die Wohnung ist laut der Beschreibung sehr modern.",
       "Wegen des Laerms kann ich nicht schlafen.",
       "Ich wohne seit drei Monaten in der neuen Wohnung.",
-      "Die Kaution betraegt laut Vertrag drei Kaltmieten."
+      "Die Kaution betraegt laut Vertrag drei Kaltmieten.",
+      "Laut dem Mietvertrag ist die Kaution drei Monatsmieten.",
+      "Während der Besichtigung sollten Sie Fragen zur Wohnung stellen."
     ],
     "grammarFocus": "Rental vocabulary and prepositions with Dativ",
     "vocabulary": [
@@ -12611,15 +12634,15 @@
       "prompt": "Role play: discuss a rental contract with a potential tenant."
     },
     "reviewSummary": "\"vermieten\" = to rent out. \"kündigen\" = to cancel. \"die Kündigungsfrist\" = notice period. \"die Kaution\" = deposit.",
-    "conceptId": "b1.rental.housing",
+    "conceptId": "b1.prepositions.fixed.case",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "a2.housing.vocab",
-      "a2.prepositions.basic"
+      "A2_lesson_10",
+      "A2_lesson_6"
     ],
     "conceptsTaught": [
-      "b1.rental.housing",
-      "b1.prepositions.fixed.case"
+      "b1.prepositions.fixed.case",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -12690,7 +12713,9 @@
       "Der Fahrpreis des Busses ist gestiegen.",
       "Waehrend der Fahrt kann man lesen.",
       "Die Abfahrt des Zuges verspaetet sich.",
-      "Das ist das Ende der Linie."
+      "Das ist das Ende der Linie.",
+      "Die Fahrkarte des Regionalzugs kostet weniger als der ICE.",
+      "Wegen des Streiks fahren heute viele Züge nicht."
     ],
     "grammarFocus": "Public transport vocabulary",
     "vocabulary": [
@@ -12800,15 +12825,16 @@
       "prompt": "Give directions using public transport to a tourist."
     },
     "reviewSummary": "\"die Verspätung\" = delay. \"der Fahrschein\" = ticket. \"die Haltestelle\" = stop. \"die Linie\" = line.",
-    "conceptId": "b1.public.transport",
+    "conceptId": "b1.genitive.intro",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.travel.vocab",
-      "a2.directions"
+      "A2_lesson_4",
+      "A2_lesson_23"
     ],
     "conceptsTaught": [
-      "b1.public.transport",
-      "b1.genitive.intro"
+      "b1.genitive.intro",
+      "b1.n.declension",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -12873,7 +12899,9 @@
       "Ich freue mich auf die Party naechstes Wochenende.",
       "Wir treffen uns um acht Uhr vor dem Club.",
       "Er aergert sich ueber die laute Musik.",
-      "Sie bedankt sich fuer die Einladung."
+      "Sie bedankt sich fuer die Einladung.",
+      "Ich freue mich sehr auf die Party am Samstag.",
+      "Kannst du dich um die Getränke kümmern?"
     ],
     "grammarFocus": "Party and socializing vocabulary",
     "vocabulary": [
@@ -12979,15 +13007,16 @@
       "prompt": "Practice small talk at a party with a partner."
     },
     "reviewSummary": "\"Prost!\" = Cheers! \"sich wohlfühlen\" = to feel comfortable. \"der Gastgeber\" = host. \"die Stimmung\" = atmosphere/mood.",
-    "conceptId": "b1.party.social",
+    "conceptId": "b1.reflexive.verbs.extended",
     "estimatedMinutes": 40,
     "prerequisiteConceptIds": [
-      "a2.invitations",
-      "a2.reflexive.basic"
+      "A2_lesson_15",
+      "A2_lesson_17"
     ],
     "conceptsTaught": [
-      "b1.party.social",
-      "b1.reflexive.verbs.extended"
+      "b1.reflexive.verbs.extended",
+      "b1.pronominal.adverbs",
+      "b1.prepositions.fixed.case"
     ],
     "trackTags": [
       "goethe",
@@ -13057,7 +13086,9 @@
       "Der Praesident wurde gestern im Fernsehen interviewt.",
       "Die neue Bruecke wurde letztes Jahr gebaut.",
       "Die Tuer wurde von einem Mitarbeiter geoeffnet.",
-      "Die Verhandlungen wurden erfolgreich abgeschlossen."
+      "Die Verhandlungen wurden erfolgreich abgeschlossen.",
+      "Der Präsident wurde gestern im Fernsehen interviewt.",
+      "Die Wahl wurde von der Mehrheit der Bürger gewonnen."
     ],
     "grammarFocus": "News vocabulary and reported speech",
     "vocabulary": [
@@ -13163,15 +13194,16 @@
       "prompt": "Discuss a current news topic with a partner."
     },
     "reviewSummary": "\"berichten von/über\" = to report on. \"laut\" + Dativ/Genitiv = according to. \"die Schlagzeile\" = headline. \"die Qülle\" = source.",
-    "conceptId": "b1.news.understanding",
+    "conceptId": "b1.passiv.prateritum",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "b1.social.media",
-      "b1.passiv.praesens"
+      "B1_lesson_8",
+      "B1_lesson_5"
     ],
     "conceptsTaught": [
-      "b1.news.understanding",
-      "b1.passiv.prateritum"
+      "b1.passiv.prateritum",
+      "b1.sentence.transformation",
+      "b1.passiv.praesens"
     ],
     "trackTags": [
       "goethe",
@@ -13233,7 +13265,9 @@
       "Ich moechte mich ueber das kalte Essen beschweren.",
       "Der Kellner war leider sehr unaufmerksam.",
       "Ich hatte mir mehr von diesem Restaurant versprochen.",
-      "Die Suppe war versalzen und das Fleisch zaeh."
+      "Die Suppe war versalzen und das Fleisch zaeh.",
+      "Die Suppe ist leider kalt. Könnten Sie sie bitte erwärmen?",
+      "Ich hatte mir das Steak etwas anders vorgestellt."
     ],
     "grammarFocus": "Restaurant complaints and polite criticism",
     "vocabulary": [
@@ -13339,15 +13373,16 @@
       "prompt": "Role play: complain about food/service at a restaurant."
     },
     "reviewSummary": "\"reklamieren\" = to complain/complain about. \"durchgebraten\" = well done. \"die Beschwerde\" = complaint. \"zurücknehmen\" = to take back.",
-    "conceptId": "b1.restaurant.critique",
+    "conceptId": "b1.konjunktiv2.politeness",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.restaurant.ordering",
-      "a2.complaint.simple"
+      "A2_lesson_7",
+      "A2_lesson_5"
     ],
     "conceptsTaught": [
-      "b1.restaurant.critique",
-      "b1.complaint.formal"
+      "b1.konjunktiv2.politeness",
+      "b1.prepositions.fixed.case",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -13408,7 +13443,9 @@
       "Zuerst habe ich den Flug gebucht dann das Hotel.",
       "Ich bin letztes Jahr nach Oesterreich gefahren.",
       "Am ersten Tag haben wir die Altstadt besichtigt.",
-      "Das Essen im Hotel war ausgezeichnet."
+      "Das Essen im Hotel war ausgezeichnet.",
+      "Vor der Reise sollten Sie die Unterkunft buchen.",
+      "Während der Reise haben wir viele interessante Leute kennengelernt."
     ],
     "grammarFocus": "Travel planning vocabulary",
     "vocabulary": [
@@ -13514,15 +13551,16 @@
       "prompt": "Present your travel plans to your partner."
     },
     "reviewSummary": "\"buchen\" = to book. \"der Reisepass\" = passport. \"die Reiseversicherung\" = travel insurance. \"packen\" = to pack.",
-    "conceptId": "b1.travel.preparation",
+    "conceptId": "b1.pronominal.adverbs",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "a2.travel.vocab",
-      "b1.public.transport"
+      "B1_lesson_15",
+      "A2_lesson_4"
     ],
     "conceptsTaught": [
-      "b1.travel.preparation",
-      "b1.experience.reports"
+      "b1.pronominal.adverbs",
+      "b1.sentence.transformation",
+      "b1.prepositions.fixed.case"
     ],
     "trackTags": [
       "goethe",
@@ -13587,7 +13625,9 @@
       "Er engagiert sich ehrenamtlich im Tierschutz.",
       "Ohne eine Gegenleistung zu erwarten hilft sie anderen.",
       "Anstatt zu Hause zu sitzen macht er Strassen sauber.",
-      "Viele Menschen spenden Zeit ohne Geld zu nehmen."
+      "Viele Menschen spenden Zeit ohne Geld zu nehmen.",
+      "Ohne zu zögern, meldete er sich freiwillig für die Aktion.",
+      "Anstatt nur zu kritisieren, sollte man selbst mit anpacken."
     ],
     "grammarFocus": "Volunteering and social engagement vocabulary",
     "vocabulary": [
@@ -13693,15 +13733,16 @@
       "prompt": "Discuss the importance of volunteer work with a partner."
     },
     "reviewSummary": "\"sich engagieren\" = to be involved/committed. \"ehrenamtlich\" = on a voluntary basis. \"beitragen\" = to contribute (separable). \"erfüllend\" = fulfilling.",
-    "conceptId": "b1.volunteering",
+    "conceptId": "b1.umzu.clauses",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "b1.environment.conservation",
-      "b1.umzu.clauses"
+      "B1_lesson_9",
+      "A2_lesson_22"
     ],
     "conceptsTaught": [
-      "b1.volunteering",
-      "b1.ohne.zu.anstatt.zu"
+      "b1.umzu.clauses",
+      "b1.connectors.cause.effect",
+      "b1.temporal.connectors"
     ],
     "trackTags": [
       "goethe",
@@ -13763,7 +13804,9 @@
       "Das Studium an der Universitaet Heidelberg ist anspruchsvoll.",
       "Die Einschreibung erfolgt online ueber das Portal.",
       "Die Vorlesung findet im Hoersaal statt.",
-      "Die Zusammenarbeit mit Kommilitonen ist wichtig."
+      "Die Zusammenarbeit mit Kommilitonen ist wichtig.",
+      "Das Studium der Medizin erfordert viel Disziplin.",
+      "Die Bewerbung für einen Studienplatz muss bis Juli eingereicht werden."
     ],
     "grammarFocus": "University vocabulary",
     "vocabulary": [
@@ -13873,15 +13916,17 @@
       "prompt": "Describe your university experience or academic plans."
     },
     "reviewSummary": "\"studieren\" = to study at university. \"die Vorlesung\" = lecture. \"die Prüfung\" = exam. \"die Hausarbeit\" = term paper.",
-    "conceptId": "b1.university.studies",
+    "conceptId": "b1.word.order.complex",
     "estimatedMinutes": 55,
     "prerequisiteConceptIds": [
-      "b1.education.system",
-      "a2.study.vocab"
+      "B1_lesson_3",
+      "A2_lesson_9"
     ],
     "conceptsTaught": [
-      "b1.university.studies",
-      "b1.nominalization"
+      "b1.word.order.complex",
+      "b1.indirect.questions",
+      "b1.sentence.transformation",
+      "b1.pronominal.adverbs"
     ],
     "trackTags": [
       "goethe",
@@ -13943,7 +13988,9 @@
       "Das Buch das ich gerade lese ist sehr spannend.",
       "Alles was der Autor schreibt ist lesenswert.",
       "Worueber schreibt der Autor in diesem Kapitel?",
-      "Die Geschichte mit der ich mich identifizieren kann ist beruehrend."
+      "Die Geschichte mit der ich mich identifizieren kann ist beruehrend.",
+      "Das Buch, worüber wir gesprochen haben, ist ein Bestseller.",
+      "Alles, was ich über Geschichte weiß, habe ich aus Büchern."
     ],
     "grammarFocus": "Books and reading vocabulary",
     "vocabulary": [
@@ -14057,15 +14104,16 @@
       "prompt": "Recommend a book to your partner and explain why you liked it."
     },
     "reviewSummary": "\"fesseln\" = to captivate. \"der Krimi\" = crime novel. \"empfehlen\" = to recommend. \"der Schreibstil\" = writing style.",
-    "conceptId": "b1.reading.literature",
+    "conceptId": "b1.relative.clauses.general",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "b1.film.culture",
-      "b1.relative.clauses.nom.acc"
+      "B1_lesson_11",
+      "B1_lesson_12"
     ],
     "conceptsTaught": [
-      "b1.reading.literature",
-      "b1.relative.clauses.wo.was"
+      "b1.relative.clauses.general",
+      "b1.pronominal.adverbs",
+      "b1.relative.clauses.nom"
     ],
     "trackTags": [
       "goethe",
@@ -14131,7 +14179,9 @@
       "Das Fussballspiel endete 2:1 fuer die Heimmannschaft.",
       "Der Sportler trainierte taeglich fuer den Wettkampf.",
       "Die Zuschauer feierten den Sieg ausgelassen.",
-      "Zuerst kam das Aufwaermen dann das Rennen."
+      "Zuerst kam das Aufwaermen dann das Rennen.",
+      "Das Finale war gestern. Die Heimmannschaft hat mit 3:1 gewonnen.",
+      "Der Marathon, der jedes Jahr stattfindet, ist sehr beliebt."
     ],
     "grammarFocus": "Sports events vocabulary",
     "vocabulary": [
@@ -14245,15 +14295,16 @@
       "prompt": "Discuss a sports event: teams, score, atmosphere, result."
     },
     "reviewSummary": "\"der Sieg\" = victory. \"die Niederlage\" = defeat. \"das Unentschieden\" = draw. \"der Zuschaür\" = spectator.",
-    "conceptId": "b1.sports.events",
+    "conceptId": "b1.temporal.connectors",
     "estimatedMinutes": 45,
     "prerequisiteConceptIds": [
-      "a2.sports.vocab",
-      "a2.hobbies"
+      "A2_lesson_14",
+      "A2_lesson_17"
     ],
     "conceptsTaught": [
-      "b1.sports.events",
-      "b1.written.reports"
+      "b1.temporal.connectors",
+      "b1.sentence.transformation",
+      "b1.prepositions.fixed.case"
     ],
     "trackTags": [
       "goethe",
@@ -14314,7 +14365,9 @@
       "Ich stehe jeden Morgen im Stau auf der A9.",
       "Der oeffentliche Nahverkehr ist eine gute Alternative.",
       "Bei rotem Licht muss man warten.",
-      "Die neue Umgehungsstrasse entlastet die Innenstadt."
+      "Die neue Umgehungsstrasse entlastet die Innenstadt.",
+      "Im Stau zu stehen ist extrem frustrierend.",
+      "Die neue Straße wird die Verkehrssituation in der Stadt verbessern."
     ],
     "grammarFocus": "Traffic and commuting vocabulary",
     "vocabulary": [
@@ -14420,15 +14473,16 @@
       "prompt": "Discuss traffic problems and possible solutions."
     },
     "reviewSummary": "\"im Stau stehen/stecken\" = to be in traffic. \"die Umleitung\" = detour. \"gesperrt\" = closed. \"der Berufsverkehr\" = rush hour.",
-    "conceptId": "b1.traffic.jam",
+    "conceptId": "b1.adjective.endings.nom",
     "estimatedMinutes": 40,
     "prerequisiteConceptIds": [
-      "b1.public.transport",
-      "b1.genitive.intro"
+      "B1_lesson_15",
+      "B1_lesson_3"
     ],
     "conceptsTaught": [
-      "b1.traffic.jam",
-      "b1.adjective.endings.consolidation"
+      "b1.adjective.endings.nom",
+      "b1.adjective.endings.acc",
+      "b1.adjective.endings.dat"
     ],
     "trackTags": [
       "goethe",
@@ -14494,7 +14548,9 @@
       "Wenn ich mehr Geld haette wuerde ich in eine groessere Wohnung ziehen.",
       "Ich wuenschte ich haette frueher mit dem Sparen angefangen.",
       "Waere ich doch nicht so viel ausgegangen.",
-      "Die Inflation hat meine Ersparnisse reduziert."
+      "Die Inflation hat meine Ersparnisse reduziert.",
+      "Wenn ich mehr sparen würde, hätte ich jetzt genug Geld für ein Auto.",
+      "Ich würde gern in Aktien investieren, aber ich habe keine Erfahrung."
     ],
     "grammarFocus": "Personal finance vocabulary",
     "vocabulary": [
@@ -14600,15 +14656,16 @@
       "prompt": "Discuss personal finance: budgeting, saving, investing."
     },
     "reviewSummary": "\"sparen\" = to save. \"die Ausgaben\" = expenses. \"die Einnahmen\" = income. \"die Altersvorsorge\" = retirement provision.",
-    "conceptId": "b1.finance.saving",
+    "conceptId": "b1.konjunktiv2.general",
     "estimatedMinutes": 50,
     "prerequisiteConceptIds": [
-      "a2.money.vocab",
-      "b1.konjunktiv2.wishes"
+      "B1_lesson_13",
+      "A2_lesson_6"
     ],
     "conceptsTaught": [
-      "b1.finance.saving",
-      "b1.konjunktiv2.unreal"
+      "b1.konjunktiv2.general",
+      "b1.konjunktiv2.modal",
+      "b1.word.order.complex"
     ],
     "trackTags": [
       "goethe",
