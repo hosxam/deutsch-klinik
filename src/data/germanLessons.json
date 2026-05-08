@@ -10153,7 +10153,14 @@
       "Meiner Meinung nach ist das Internet eine gute Erfindung.",
       "Ich stimme dir zu, weil die Nachrichten oft übertreiben.",
       "Obwohl ich viel lese, vertraue ich nicht allen Qüllen.",
-      "Was ist deine Meinung zu diesem Thema?"
+      "Was ist deine Meinung zu diesem Thema?",
+      "Ich bin der Meinung dass Social Media negative Auswirkungen hat.",
+      "Was denkst du ueber die aktuelle politische Lage?",
+      "Aus meiner Sicht ist die Berichterstattung oft einseitig.",
+      "Ich moechte meinen Standpunkt dazu erklaeren.",
+      "Glaubst du dass die Nachrichten vertrauenswuerdig sind?",
+      "Koennen wir dieses Thema spaeter diskutieren?",
+      "Ich bin ueberzeugt dass die Medien objektiv berichten sollten."
     ],
     "vocabulary": [
       {
@@ -10215,7 +10222,86 @@
     "readingTask": "Read: 'Eine Studie zeigt, dass 70% der Jugendlichen soziale Medien täglich nutzen. Obwohl viele die Vorteile sehen, warnen Experten vor Suchtgefahr.'",
     "speakingTask": "Record yourself giving your opinion on the internet's impact on society (1 minute).",
     "writingTask": "Write a paragraph (80-100 words) arguing for or against: 'Social media dös more harm than good.'",
-    "reviewSummary": "You learned opinion expressions (Ich finde dass, Meiner Meinung nach), subordinate clauses with dass/weil/obwohl."
+    "reviewSummary": "You learned opinion expressions (Ich finde dass, Meiner Meinung nach), subordinate clauses with dass/weil/obwohl.",
+    "conceptId": "b1.opinion.media",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.opinions.dass",
+      "a2.connectors.weil"
+    ],
+    "conceptsTaught": [
+      "b1.opinion.media",
+      "b1.subordinate.obwohl"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "opinion",
+      "media"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_1",
+      "B1_gr_3",
+      "B1_gr_5",
+      "B1_gr_11",
+      "B1_gr_15",
+      "B1_gr_28",
+      "B1_gr_31",
+      "B1_gr_43",
+      "B1_gr_22"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "dass-clause verb-end: \"Ich denke, dass es wichtig ist.\"",
+      "weil verb-end: \"weil ich keine Zeit habe.\"",
+      "obwohl verb-final order",
+      "\"Meiner Meinung nach\" verb position 2",
+      "Comma before subordinate clauses"
+    ],
+    "formsTable": [
+      {
+        "form": "Ich finde, dass ...",
+        "use": "state opinion with dass-clause",
+        "example": "Ich finde, dass die Medien oft uebertreiben."
+      },
+      {
+        "form": "..., weil ...",
+        "use": "give a reason",
+        "example": "Ich lese Nachrichten, weil ich informiert bleiben moechte."
+      },
+      {
+        "form": "..., obwohl ...",
+        "use": "express contrast",
+        "example": "Obwohl es Fake News gibt, vertraue ich Medien."
+      },
+      {
+        "form": "Meiner Meinung nach ...",
+        "use": "express personal opinion",
+        "example": "Meiner Meinung nach sind soziale Medien gefaehrlich."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich glaube, ___ Deutsch eine schoene Sprache ist. (dass)",
+        "answer": "dass"
+      },
+      {
+        "question": "Ich hoere Podcasts, ___ ich mein Hoerverstaendnis verbessern moechte. (weil)",
+        "answer": "weil"
+      },
+      {
+        "question": "___ ich muede bin, gehe ich trotzdem zum Kurs. (obwohl)",
+        "answer": "Obwohl"
+      },
+      {
+        "question": "Meiner Meinung ___ ist Social Media problematisch. (nach)",
+        "answer": "nach"
+      },
+      {
+        "question": "Er denkt, ___ die Nachrichten nicht objektiv sind. (dass)",
+        "answer": "dass"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10229,7 +10315,12 @@
       "Die Umwelt, die wir schützen müssen, ist in Gefahr.",
       "Mülltrennung ist wichtig, weil sie die Umwelt schont.",
       "Das ist ein Problem, das uns alle betrifft.",
-      "Wir müssen nachhaltiger leben."
+      "Wir müssen nachhaltiger leben.",
+      "Wir sollten oefter das Fahrrad nehmen um CO2 zu sparen.",
+      "Ich trenne meinen Muell damit weniger Abfall verbrannt wird.",
+      "Nicht nur Plastik sondern auch Glas kann recycelt werden.",
+      "Entweder wir handeln jetzt oder es ist zu spaet.",
+      "Je mehr Menschen mitmachen desto besser fuer die Umwelt."
     ],
     "vocabulary": [
       {
@@ -10291,7 +10382,79 @@
     "readingTask": "Read: 'Deutschland ist bekannt für seine Mülltrennung. Es gibt verschiedene Tonnen: Gelb für Plastik, Blau für Papier, Braun für Bio-Müll.'",
     "speakingTask": "Record a 1-minute statement on what you personally do for the environment.",
     "writingTask": "Write 8-10 tips for sustainable living using 'man sollte' and relative clauses.",
-    "reviewSummary": "You learned environmental vocabulary, relative clauses (der/die/das), and 'man sollte'."
+    "reviewSummary": "You learned environmental vocabulary, relative clauses (der/die/das), and 'man sollte'.",
+    "conceptId": "b1.environment.daily",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.environment.basic",
+      "a2.connectors.coordinating"
+    ],
+    "conceptsTaught": [
+      "b1.environment.daily",
+      "b1.connectors.complex",
+      "b1.damit.clauses"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "environment",
+      "connectors"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_7",
+      "B1_gr_22",
+      "B1_gr_33",
+      "B1_gr_35",
+      "B1_gr_36"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "um...zu same subject only",
+      "damit as subordinating conj verb-end",
+      "Comma before um...zu/damit",
+      "Nicht nur at position 0 then verb-2",
+      "Confusing um...zu with zu+infinitive"
+    ],
+    "formsTable": [
+      {
+        "form": "..., um ... zu + Infinitiv",
+        "use": "purpose (same subject)",
+        "example": "Ich fahre mit dem Bus, um CO2 zu sparen."
+      },
+      {
+        "form": "..., damit ...",
+        "use": "purpose (diff subject)",
+        "example": "Ich trenne Muell, damit die Anlage arbeiten kann."
+      },
+      {
+        "form": "..., nicht nur ..., sondern auch ...",
+        "use": "add information",
+        "example": "Ich spare nicht nur Energie, sondern auch Geld."
+      },
+      {
+        "form": "Entweder ... oder ...",
+        "use": "alternatives",
+        "example": "Entweder wir recyceln oder die Umwelt leidet."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich kaufe regional, ___ die Umwelt ___ schonen. (um...zu)",
+        "answer": "um ... zu"
+      },
+      {
+        "question": "Wir pflanzen Baeume, ___ das Klima sich verbessert. (damit)",
+        "answer": "damit"
+      },
+      {
+        "question": "Er faehrt Fahrrad, ___ fit ___ bleiben. (um...zu)",
+        "answer": "um ... zu"
+      },
+      {
+        "question": "___ ich Strom, ___ auch Wasser. (nicht nur..., sondern auch)",
+        "answer": "Nicht nur ... spare, sondern auch"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10305,7 +10468,12 @@
       "Wenn ich mehr Zeit hätte, würde ich Deutsch lernen.",
       "Ich wünschte, ich könnte besser Deutsch sprechen.",
       "Das wäre toll!",
-      "Köntest du mir bitte helfen?"
+      "Köntest du mir bitte helfen?",
+      "In Deutschland gibt es verschiedene Schularten.",
+      "Das Abitur ist vergleichbar mit dem High-School-Abschluss.",
+      "Mein Bruder ist aelter als ich und studiert bereits.",
+      "Die Universitaet bietet mehr Kurse an als die Fachhochschule.",
+      "Je fleissiger du lernst desto besser werden deine Noten."
     ],
     "vocabulary": [
       {
@@ -10367,7 +10535,83 @@
     "readingTask": "Read: 'In Deutschland gehen Kinder mit 6 Jahren in die Grundschule. Nach der 4. Klasse wechseln sie auf verschiedene Schulformen.'",
     "speakingTask": "Record yourself: What would you do if you had a free year? Use Konjunktiv II.",
     "writingTask": "Write a paragraph (80 words) about your ideal learning experience using Konjunktiv II.",
-    "reviewSummary": "You learned German school system vocabulary, Konjunktiv II (würde, hätte, wäre), and how to express wishes."
+    "reviewSummary": "You learned German school system vocabulary, Konjunktiv II (würde, hätte, wäre), and how to express wishes.",
+    "conceptId": "b1.education.future",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.education.school",
+      "a2.comparisons.basic"
+    ],
+    "conceptsTaught": [
+      "b1.education.system",
+      "b1.comparisons.complex",
+      "b1.indirect.questions"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "education",
+      "comparison"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_8",
+      "B1_gr_14",
+      "B1_gr_18",
+      "B1_gr_60",
+      "B1_gr_61",
+      "B1_gr_62",
+      "B1_gr_63",
+      "B1_gr_64",
+      "B1_gr_65",
+      "B1_gr_66"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "als takes nominative: \"groesser als ich\"",
+      "Je...desto verb-final both clauses",
+      "Umlaut in comparatives: gross->groesser",
+      "am + -(e)sten for superlative"
+    ],
+    "formsTable": [
+      {
+        "form": "so ... wie",
+        "use": "positive comparison",
+        "example": "Das Gymnasium ist so anspruchsvoll wie die Realschule."
+      },
+      {
+        "form": "groesser als / besser als",
+        "use": "comparative",
+        "example": "Das Abitur ist hoher als der Hauptschulabschluss."
+      },
+      {
+        "form": "am groessten / am besten",
+        "use": "superlative",
+        "example": "Die Universitaet ist die groesste in der Stadt."
+      },
+      {
+        "form": "je ..., desto/umso ...",
+        "use": "proportional",
+        "example": "Je mehr du lernst, desto besser wirst du."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ein Studium ist ___ anstrengend ___ eine Ausbildung. (so...wie)",
+        "answer": "so ... wie"
+      },
+      {
+        "question": "Das Abitur ist ___ (schwer) als der Hauptschulabschluss.",
+        "answer": "schwerer"
+      },
+      {
+        "question": "___ mehr Praxis ___ besser die Chancen. (je..., desto)",
+        "answer": "Je ... desto"
+      },
+      {
+        "question": "Welches Fach findest du ___ (interessant)? (superlativ)",
+        "answer": "am interessantesten"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10381,7 +10625,12 @@
       "Der Baum wird geschmückt.",
       "Die Geschenke werden am 24. Dezember geöffnet.",
       "Hier wird viel Wert auf Tradition gelegt.",
-      "Das Oktoberfest wird jedes Jahr in München gefeiert."
+      "Das Oktoberfest wird jedes Jahr in München gefeiert.",
+      "Das Oktoberfest ist das bekannteste deutsche Fest.",
+      "Zu Weihnachten feiern die Deutschen mit der Familie.",
+      "An Silvester gibt es ein grosses Feuerwerk.",
+      "In vielen Regionen Deutschlands gibt es eigene Traditionen.",
+      "Koennten Sie mir mehr ueber die Braeuche in Bayern erzaehlen?"
     ],
     "vocabulary": [
       {
@@ -10443,7 +10692,85 @@
     "readingTask": "Read: 'In Deutschland wird der Advent gefeiert. An vier Sonntagen vor Weihnachten wird eine Kerze am Adventskranz angezündet.'",
     "speakingTask": "Record yourself describing a festival from your culture using passive constructions.",
     "writingTask": "Write a paragraph about a German tradition using at least 5 passive sentences.",
-    "reviewSummary": "You learned about German traditions, passive voice (werden + Partizip II), and describing cultural events."
+    "reviewSummary": "You learned about German traditions, passive voice (werden + Partizip II), and describing cultural events.",
+    "conceptId": "b1.culture.festivals",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.culture.holidays",
+      "a2.modal.verbs"
+    ],
+    "conceptsTaught": [
+      "b1.culture.german.festivals",
+      "b1.konjunktiv2.politeness"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "culture",
+      "festivals",
+      "konjunktiv"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_19",
+      "B1_gr_24",
+      "B1_gr_38",
+      "B1_gr_89",
+      "B1_gr_90",
+      "B1_gr_91",
+      "B1_gr_92",
+      "B1_gr_93",
+      "B1_gr_94",
+      "B1_gr_95",
+      "B1_gr_96",
+      "B1_gr_97"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "KII politer than Praesens",
+      "haette not \"haben wuerde\"",
+      "Modal verbs have own KII forms",
+      "No \"wuerde\" with modals: \"ich koennte\""
+    ],
+    "formsTable": [
+      {
+        "form": "Koennten Sie ...?",
+        "use": "polite request KII",
+        "example": "Koennten Sie mir sagen, wann das Fest beginnt?"
+      },
+      {
+        "form": "Ich wuerde gern ...",
+        "use": "polite wish",
+        "example": "Ich wuerde gern mehr ueber Braeuche erfahren."
+      },
+      {
+        "form": "Waere es moeglich ...?",
+        "use": "polite question",
+        "example": "Waere es moeglich, eine Fuehrung zu bekommen?"
+      },
+      {
+        "form": "Duefte ich ...?",
+        "use": "very polite request",
+        "example": "Duefte ich ein Foto von der Tradition machen?"
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "___ Sie mir bitte helfen? (koennen KII)",
+        "answer": "Koennten"
+      },
+      {
+        "question": "Ich ___ gern ein Ticket kaufen. (moechten KII)",
+        "answer": "moechte"
+      },
+      {
+        "question": "___ es moeglich den Termin zu verschieben? (sein KII)",
+        "answer": "Waere"
+      },
+      {
+        "question": "Wir ___ gern an der Fuehrung teilnehmen. (wuerden)",
+        "answer": "wuerden"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10457,7 +10784,12 @@
       "Ich werde nächstes Jahr mein Deutsch verbessern.",
       "Wird Künstliche Intelligenz die Welt verändern?",
       "Die Technologie wird sich weiterentwickeln.",
-      "Wir werden bald autonome Autos haben."
+      "Wir werden bald autonome Autos haben.",
+      "In Zukunft werden Roboter viele Arbeiten uebernehmen.",
+      "Wirst du dir ein Elektroauto kaufen?",
+      "Die Technologie wird sich in den naechsten Jahren stark veraendern.",
+      "Bis 2040 werden die meisten Autos autonom fahren.",
+      "Ich glaube dass die Digitalisierung unser Leben verbessern wird."
     ],
     "vocabulary": [
       {
@@ -10519,7 +10851,80 @@
     "readingTask": "Read: 'Experten sagen, dass KI in den nächsten 10 Jahren viele Branchen verändern wird.'",
     "speakingTask": "Record a 1-minute prediction: How will technology change education?",
     "writingTask": "Write a short essay (100 words) predicting how tech will change daily life.",
-    "reviewSummary": "You learned future tech vocabulary, Futur I (werden + infinitive), and how to make predictions."
+    "reviewSummary": "You learned future tech vocabulary, Futur I (werden + infinitive), and how to make predictions.",
+    "conceptId": "b1.technology.future",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.technology.basic",
+      "a2.future.tenses"
+    ],
+    "conceptsTaught": [
+      "b1.future.technology",
+      "b1.futur1"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "technology",
+      "future"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_9",
+      "B1_gr_27",
+      "B1_gr_111",
+      "B1_gr_112",
+      "B1_gr_113",
+      "B1_gr_114",
+      "B1_gr_115",
+      "B1_gr_20"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "werden auxiliary + Inf at end",
+      "Praesens OK for planned events",
+      "werden to end in Nebensatz",
+      "werden auxiliary vs full verb"
+    ],
+    "formsTable": [
+      {
+        "form": "werden + Infinitiv",
+        "use": "future action",
+        "example": "Die Technologie wird sich weiterentwickeln."
+      },
+      {
+        "form": "werden + Infinitiv (Vermutung)",
+        "use": "assumption",
+        "example": "Er wird schon zu Hause sein."
+      },
+      {
+        "form": "wenn ..., dann ...",
+        "use": "conditional future",
+        "example": "Wenn die KI sich verbessert, werden Jobs automatisiert."
+      },
+      {
+        "form": "bis + Futur",
+        "use": "future deadline",
+        "example": "Bis 2030 werden die Autos elektrisch sein."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "In Zukunft ___ es mehr Technologie geben. (werden)",
+        "answer": "wird"
+      },
+      {
+        "question": "Die Menschen ___ laenger leben. (werden)",
+        "answer": "werden"
+      },
+      {
+        "question": "___ du naechstes Jahr studieren? (werden)",
+        "answer": "Wirst"
+      },
+      {
+        "question": "Er ___ wahrscheinlich zu spaet kommen. (werden)",
+        "answer": "wird"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10532,7 +10937,12 @@
       "Firma Schmidt, guten Tag.",
       "Hier spricht Anna Weber.",
       "Kann ich Sie bitte mit Herrn Müller verbinden?",
-      "Ich rufe wegen einer Bestellung an."
+      "Ich rufe wegen einer Bestellung an.",
+      "Gestern hatte ich ein langes Telefonat mit der Firma.",
+      "Ich war letzte Woche auf einer Konferenz in Berlin.",
+      "Konnten Sie mich gestern Abend erreichen?",
+      "Wir mussten den Termin leider verschieben.",
+      "Hatten Sie schon Gelegenheit die Unterlagen zu pruefen?"
     ],
     "grammarFocus": "Formal phone communication and connector \"dass\"",
     "vocabulary": [
@@ -10637,7 +11047,84 @@
     "speakingTask": {
       "prompt": "Practice two phone scenarios: formal (business) and informal (friend)."
     },
-    "reviewSummary": "\"verbinden\" = to connect. \"im Hause sein\" = to be in the office. \"dass\" + subordinate clause: \"Sagen Sie ihm, dass ich angerufen habe.\""
+    "reviewSummary": "\"verbinden\" = to connect. \"im Hause sein\" = to be in the office. \"dass\" + subordinate clause: \"Sagen Sie ihm, dass ich angerufen habe.\"",
+    "conceptId": "b1.telephone.formal",
+    "estimatedMinutes": 40,
+    "prerequisiteConceptIds": [
+      "a2.telephone.basic",
+      "a2.prateritum.haben.sein"
+    ],
+    "conceptsTaught": [
+      "b1.telephone.communication",
+      "b1.prateritum.haben.sein.modal"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "telephone",
+      "formal",
+      "prateritum"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_4",
+      "B1_gr_12",
+      "B1_gr_23",
+      "B1_gr_126",
+      "B1_gr_127",
+      "B1_gr_128",
+      "B1_gr_129",
+      "B1_gr_130",
+      "B1_gr_131",
+      "B1_gr_132"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "hatte not habte",
+      "war not \"sein gehabt\"",
+      "Praet. for haben/sein in writing",
+      "Modal Praet.: konnte, musste, sollte",
+      "Formal Sie on phone"
+    ],
+    "formsTable": [
+      {
+        "form": "Ich hatte ...",
+        "use": "Prateritum haben",
+        "example": "Ich hatte gestern ein wichtiges Gespraech."
+      },
+      {
+        "form": "Ich war ...",
+        "use": "Prateritum sein",
+        "example": "Ich war den ganzen Tag im Buero."
+      },
+      {
+        "form": "Konnten Sie ...?",
+        "use": "past ability polite",
+        "example": "Konnten Sie mich gestern verstehen?"
+      },
+      {
+        "form": "Ich musste ...",
+        "use": "past necessity",
+        "example": "Ich musste die Nachricht weiterleiten."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Gestern ___ ich einen wichtigen Anruf. (haben Praet.)",
+        "answer": "hatte"
+      },
+      {
+        "question": "Wir ___ nicht im Buero. (sein Praet.)",
+        "answer": "waren"
+      },
+      {
+        "question": "___ Sie mich verstehen? (koennen Praet.)",
+        "answer": "Konnten"
+      },
+      {
+        "question": "Er ___ die Nachricht verstehen. (koennen Praet.)",
+        "answer": "konnte"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10650,7 +11137,12 @@
       "Hiermit bewerbe ich mich um die Stelle.",
       "Ich habe drei Jahre Berufserfahrung.",
       "Meine Stärken sind Teamarbeit und Flexibilität.",
-      "Mit freundlichen Grüssen, ..."
+      "Mit freundlichen Grüssen, ...",
+      "Hiermit bewerbe ich mich um die Stelle als Buchhalter.",
+      "Im Anhang finden Sie meinen Lebenslauf und meine Zeugnisse.",
+      "Ich habe bereits drei Jahre Berufserfahrung in diesem Bereich.",
+      "Meine Deutschkenntnisse auf B1-Niveau moechte ich anwenden.",
+      "Ueber eine positive Rueckmeldung wuerde ich mich sehr freuen."
     ],
     "grammarFocus": "Formal job application language",
     "vocabulary": [
@@ -10755,7 +11247,81 @@
     "speakingTask": {
       "prompt": "Present yourself in a mock job interview."
     },
-    "reviewSummary": "\"Hiermit bewerbe ich mich um...\" = I hereby apply for... \"Mit freundlichen Grüssen\" = standard formal closing. \"der Lebenslauf\" = CV."
+    "reviewSummary": "\"Hiermit bewerbe ich mich um...\" = I hereby apply for... \"Mit freundlichen Grüssen\" = standard formal closing. \"der Lebenslauf\" = CV.",
+    "conceptId": "b1.job.application",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.jobs.professions",
+      "a2.formal.letter.basic"
+    ],
+    "conceptsTaught": [
+      "b1.job.application.formal",
+      "b1.formal.letter.complex"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "job",
+      "application",
+      "formal-writing"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_25",
+      "B1_gr_35",
+      "B1_gr_42",
+      "B1_gr_134",
+      "B1_gr_135",
+      "B1_gr_136",
+      "B1_gr_137"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "No du in formal letters",
+      "Date format TT.MM.JJJJ",
+      "Letter starts lowercase after salutation",
+      "Betreff without period",
+      "Verb-second in main clauses"
+    ],
+    "formsTable": [
+      {
+        "form": "Sehr geehrte Damen und Herren,",
+        "use": "formal salutation",
+        "example": "Sehr geehrte Damen und Herren, hiermit bewerbe ich mich ..."
+      },
+      {
+        "form": "Ich bewerbe mich um ...",
+        "use": "state position",
+        "example": "Ich bewerbe mich um die Stelle als Marketingassistent."
+      },
+      {
+        "form": "Ich habe Erfahrung in ...",
+        "use": "state experience",
+        "example": "Ich habe Erfahrung in der Kundenbetreuung."
+      },
+      {
+        "form": "Ueber eine Einladung wuerde ich mich freuen.",
+        "use": "polite closing",
+        "example": "Ueber eine Einladung wuerde ich mich freuen."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "___ geehrte Damen und Herren",
+        "answer": "Sehr"
+      },
+      {
+        "question": "Ich bewerbe ___ um die Stelle.",
+        "answer": "mich"
+      },
+      {
+        "question": "Ich habe Erfahrung ___ der Arbeit. (in)",
+        "answer": "in"
+      },
+      {
+        "question": "___ Anschreiben finden Sie den Lebenslauf. (im)",
+        "answer": "Im"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10768,7 +11334,12 @@
       "Ich nutze täglich soziale Medien.",
       "Wieviel Zeit verbringst du auf Instagram?",
       "Man sollte auf die Privatsphäre achten.",
-      "Sein Beitrag wurde tausendmal geteilt."
+      "Sein Beitrag wurde tausendmal geteilt.",
+      "In sozialen Netzwerken werden taeglich Millionen Fotos geteilt.",
+      "Der Beitrag wurde von der Community gemeldet.",
+      "Persoenliche Daten werden oft ohne Zustimmung gesammelt.",
+      "Es wird immer mehr ueber Datenschutz diskutiert.",
+      "Fake News werden in sozialen Medien schnell verbreitet."
     ],
     "grammarFocus": "Social media vocabulary and reflexive verbs",
     "vocabulary": [
@@ -10877,7 +11448,83 @@
     "speakingTask": {
       "prompt": "Discuss the pros and cons of social media with a partner."
     },
-    "reviewSummary": "\"soziale Medien\" (pl., always with article \"die\"). \"hochladen\" = upload (separable). \"die Privatsphäre\" = privacy. \"das Profil\" = profile."
+    "reviewSummary": "\"soziale Medien\" (pl., always with article \"die\"). \"hochladen\" = upload (separable). \"die Privatsphäre\" = privacy. \"das Profil\" = profile.",
+    "conceptId": "b1.social.media",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.social.media.basic",
+      "a2.present.passive.basic"
+    ],
+    "conceptsTaught": [
+      "b1.social.media",
+      "b1.passiv.praesens"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "social-media",
+      "media",
+      "passive"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_2",
+      "B1_gr_13",
+      "B1_gr_29",
+      "B1_gr_155",
+      "B1_gr_156",
+      "B1_gr_157",
+      "B1_gr_158",
+      "B1_gr_159",
+      "B1_gr_160",
+      "B1_gr_162"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Passiv uses werden not sein",
+      "Partizip II at end",
+      "Only transitive verbs form passive",
+      "In Nebensatz werden before Partizip"
+    ],
+    "formsTable": [
+      {
+        "form": "wird + Partizip II",
+        "use": "Passiv Praesens sing.",
+        "example": "Der Beitrag wird geloescht."
+      },
+      {
+        "form": "werden + Partizip II",
+        "use": "Passiv Praesens pl.",
+        "example": "Die Daten werden gespeichert."
+      },
+      {
+        "form": "von + Dativ",
+        "use": "agent in passive",
+        "example": "Das Video wird von Millionen gesehen."
+      },
+      {
+        "form": "Es wird ...",
+        "use": "impersonal passive",
+        "example": "Es wird viel ueber soziale Medien diskutiert."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "In sozialen Medien ___ viele Fotos ___ (hochladen)",
+        "answer": "werden ... hochgeladen"
+      },
+      {
+        "question": "Der Beitrag ___ von der Community ___ (melden)",
+        "answer": "wird ... gemeldet"
+      },
+      {
+        "question": "Hier ___ Deutsch ___ (sprechen unpersoenlich)",
+        "answer": "wird ... gesprochen"
+      },
+      {
+        "question": "Die Daten ___ regelmaessig ___ (aktualisieren)",
+        "answer": "werden ... aktualisiert"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -10890,7 +11537,12 @@
       "Wir müssen die Umwelt schützen.",
       "Was kann ich für den Klimaschutz tun?",
       "Ich trenne meinen Müll.",
-      "Erneürbare Energien sind wichtig."
+      "Erneürbare Energien sind wichtig.",
+      "Wir pflanzen Baeume um das Klima zu verbessern.",
+      "Er geht zur Arbeit zu Fuss um Geld und Energie zu sparen.",
+      "Anstatt Plastik zu kaufen benutzt sie Stoffbeutel.",
+      "Viele schalten das Licht aus ohne daran zu denken.",
+      "Um die Natur zu schuetzen sollten wir weniger Fleisch essen."
     ],
     "grammarFocus": "Environmental vocabulary and modal verbs (müssen/dürfen)",
     "vocabulary": [
@@ -10995,7 +11647,81 @@
     "speakingTask": {
       "prompt": "Discuss environmental issüs and what individuals can do."
     },
-    "reviewSummary": "\"die Umwelt schützen\" = to protect the environment. \"nachhaltig\" = sustainable. \"der Umweltschutz\" = environmental protection."
+    "reviewSummary": "\"die Umwelt schützen\" = to protect the environment. \"nachhaltig\" = sustainable. \"der Umweltschutz\" = environmental protection.",
+    "conceptId": "b1.environment.protection",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.environment.action",
+      "a2.infinitiv.zu"
+    ],
+    "conceptsTaught": [
+      "b1.environment.conservation",
+      "b1.umzu.clauses"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "environment",
+      "nature",
+      "purpose"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_20",
+      "B1_gr_36",
+      "B1_gr_175",
+      "B1_gr_176",
+      "B1_gr_178",
+      "B1_gr_179",
+      "B1_gr_68",
+      "B1_gr_69"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "um...zu same subject only",
+      "With separable: zu between prefix/verb",
+      "Ohne/Anstatt + zu same subject",
+      "Not confusing um...zu with damit"
+    ],
+    "formsTable": [
+      {
+        "form": "..., um ... zu + Infinitiv",
+        "use": "purpose",
+        "example": "Wir recyceln, um die Umwelt zu schuetzen."
+      },
+      {
+        "form": "..., ohne ... zu + Infinitiv",
+        "use": "without doing",
+        "example": "Er geht, ohne das Licht auszuschalten."
+      },
+      {
+        "form": "Anstatt ... zu + Infinitiv",
+        "use": "instead of",
+        "example": "Anstatt Auto zu fahren, nimmt er das Fahrrad."
+      },
+      {
+        "form": "um ... zu with separable",
+        "use": "zu between prefix/verb",
+        "example": "..., um richtig mitzumachen."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Wir sparen Energie ___ die Umwelt ___ schuetzen. (um...zu)",
+        "answer": "um ... zu"
+      },
+      {
+        "question": "Er faehrt Bus ___ das Klima ___ schonen. (um...zu)",
+        "answer": "um ... zu"
+      },
+      {
+        "question": "Sie geht ___ eine Tasche ___ kaufen. (ohne...zu)",
+        "answer": "ohne ... zu"
+      },
+      {
+        "question": "___ mit dem Auto zu fahren nimmt er den Zug. (anstatt...zu)",
+        "answer": "Anstatt ..."
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11008,7 +11734,12 @@
       "Ich mache ein Praktikum bei Siemens.",
       "Meine Aufgaben sind vielfältig.",
       "Das Praktikum dauert drei Monate.",
-      "Ich sammle wertvolle Berufserfahrung."
+      "Ich sammle wertvolle Berufserfahrung.",
+      "Ich habe im Sommer ein Praktikum bei einer Bank gemacht.",
+      "Sie ist jeden Tag mit dem Zug zur Arbeit gefahren.",
+      "Hast du schon Erfahrung in einem Buero gesammelt?",
+      "Wir haben viel ueber die Arbeitsablaeufe gelernt.",
+      "Mein Kollege hat mir bei den ersten Aufgaben geholfen."
     ],
     "grammarFocus": "Career and internship vocabulary",
     "vocabulary": [
@@ -11113,7 +11844,82 @@
     "speakingTask": {
       "prompt": "Describe your work experience or internship plans."
     },
-    "reviewSummary": "\"ein Praktikum absolvieren/machen\" = to do an internship. \"betreün\" = to supervise. \"die Abteilung\" = department. \"der Berufseinstieg\" = career start."
+    "reviewSummary": "\"ein Praktikum absolvieren/machen\" = to do an internship. \"betreün\" = to supervise. \"die Abteilung\" = department. \"der Berufseinstieg\" = career start.",
+    "conceptId": "b1.internship",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.work.experience",
+      "a2.perfekt.basic"
+    ],
+    "conceptsTaught": [
+      "b1.internship.experience",
+      "b1.perfekt.complex"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "internship",
+      "work",
+      "perfekt"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_17",
+      "B1_gr_26",
+      "B1_gr_45",
+      "B1_gr_193",
+      "B1_gr_194",
+      "B1_gr_195",
+      "B1_gr_196",
+      "B1_gr_197",
+      "B1_gr_198"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Movement verbs use sein",
+      "bleiben uses sein",
+      "Separable: anrufen->angerufen",
+      "Inseparable: no ge- (verstanden)"
+    ],
+    "formsTable": [
+      {
+        "form": "haben + Partizip II",
+        "use": "Perfekt with haben",
+        "example": "Ich habe ein Praktikum gemacht."
+      },
+      {
+        "form": "sein + Partizip II",
+        "use": "Perfekt with sein",
+        "example": "Ich bin ins Buero gefahren."
+      },
+      {
+        "form": "Partizip II separable",
+        "use": "prefix + ge- + stem",
+        "example": "Ich habe mitgemacht."
+      },
+      {
+        "form": "Partizip II irregular",
+        "use": "common irregular",
+        "example": "Ich habe genommen, geschrieben, gesprochen."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich ___ ein Praktikum ___ (machen)",
+        "answer": "habe ... gemacht"
+      },
+      {
+        "question": "Er ___ nach Berlin ___ (fahren)",
+        "answer": "ist ... gefahren"
+      },
+      {
+        "question": "Wir ___ viel ___ (lernen)",
+        "answer": "haben ... gelernt"
+      },
+      {
+        "question": "Sie ___ im Team ___ (arbeiten)",
+        "answer": "hat ... gearbeitet"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11126,7 +11932,12 @@
       "Die Handlung war sehr fesselnd.",
       "Der Schauspieler hat überzeugend gespielt.",
       "Ich würde den Film auf jeden Fall empfehlen.",
-      "Die Kameraarbeit war beeindruckend."
+      "Die Kameraarbeit war beeindruckend.",
+      "Der Film den ich gestern gesehen habe war sehr emotional.",
+      "Die Schauspielerin die in diesem Film mitspielt ist bekannt.",
+      "Ein Film der zum Nachdenken anregt gefaellt mir am besten.",
+      "Das Drehbuch das der Autor geschrieben hat ist preisgekroent.",
+      "Kennst du den Film ueber den alle sprechen?"
     ],
     "grammarFocus": "Film analysis vocabulary and Konjunktiv II for recommendations",
     "vocabulary": [
@@ -11235,7 +12046,72 @@
     "speakingTask": {
       "prompt": "Discuss a movie with a partner. Give your opinion and recommendation."
     },
-    "reviewSummary": "\"Ich würde den Film empfehlen\" = I would recommend the film. \"fesselnd\" = captivating. \"überzeugend\" = convincing. \"die Handlung\" = plot."
+    "reviewSummary": "\"Ich würde den Film empfehlen\" = I would recommend the film. \"fesselnd\" = captivating. \"überzeugend\" = convincing. \"die Handlung\" = plot.",
+    "conceptId": "b1.film.discussion",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.entertainment.hobbies",
+      "a2.relative.clauses.basic"
+    ],
+    "conceptsTaught": [
+      "b1.film.culture",
+      "b1.relative.clauses.nom.acc"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "film",
+      "entertainment",
+      "relative-clauses"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_206",
+      "B1_gr_207",
+      "B1_gr_208",
+      "B1_gr_209"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Relative pronoun: gender/number=antecedent, case=function",
+      "den (acc m) vs der (nom m)",
+      "was for alles/nichts not specific nouns",
+      "Comma before relative clause"
+    ],
+    "formsTable": [
+      {
+        "form": "der/die/das (Nominativ)",
+        "use": "relative subject",
+        "example": "Der Film, der gestern lief, war spannend."
+      },
+      {
+        "form": "den/die/das (Akkusativ)",
+        "use": "relative object",
+        "example": "Der Film, den ich sah, war gut."
+      },
+      {
+        "form": "Relativpronomen nach Praep.",
+        "use": "relative with prep",
+        "example": "Der Film, ueber den wir sprachen, laeuft heute."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Der Film ___ gestern lief war super. (Nom mask)",
+        "answer": "der"
+      },
+      {
+        "question": "Die Schauspielerin ___ ich toll finde kommt aus FR. (Akk fem)",
+        "answer": "die"
+      },
+      {
+        "question": "Das Buch ___ ich gelesen habe war langweilig. (Akk neut)",
+        "answer": "das"
+      },
+      {
+        "question": "Der Regisseur ___ einen Oscar gewann ist beruehmt. (Nom mask)",
+        "answer": "der"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11248,7 +12124,11 @@
       "Eine ausgewogene Ernährung ist wichtig.",
       "Ich versuche, weniger Zucker zu essen.",
       "Viel Obst und Gemüse ist gesund.",
-      "Frühstueck ist die wichtigste Mahlzeit."
+      "Frühstueck ist die wichtigste Mahlzeit.",
+      "Der Salat dem ich Olivenoel hinzugefuegt habe schmeckt besser.",
+      "Die Zutaten mit denen ich koche sind alle biologisch.",
+      "Der Bauer von dem wir das Gemsue kaufen liefert frisch.",
+      "Das Restaurant dessen Speisekarte vegetarisch ist hat tolles Essen."
     ],
     "grammarFocus": "Nutrition vocabulary and \"sollte\" (should)",
     "vocabulary": [
@@ -11357,7 +12237,69 @@
     "speakingTask": {
       "prompt": "Discuss healthy eating: diet, habits, changes you want to make."
     },
-    "reviewSummary": "\"sollte\" = should (Konjunktiv II). \"sich ernähren\" = to eat/nourish oneself. \"ausgewogen\" = balanced."
+    "reviewSummary": "\"sollte\" = should (Konjunktiv II). \"sich ernähren\" = to eat/nourish oneself. \"ausgewogen\" = balanced.",
+    "conceptId": "b1.nutrition.healthy",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.food.ordering",
+      "a2.relative.clauses.nom.acc"
+    ],
+    "conceptsTaught": [
+      "b1.healthy.nutrition",
+      "b1.relative.clauses.dat.gen"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "nutrition",
+      "health",
+      "food",
+      "relative-clauses"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_210",
+      "B1_gr_211",
+      "B1_gr_212",
+      "B1_gr_213",
+      "B1_gr_214"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Dativ: dem/der/denen",
+      "Genitiv: dessen/deren",
+      "Not confusing Dativ Relativ with Demonstrativ",
+      "Verb-final in relative clause"
+    ],
+    "formsTable": [
+      {
+        "form": "dem/der/denen (Dativ)",
+        "use": "relative dative",
+        "example": "Der Mann, dem ich half, kocht gern."
+      },
+      {
+        "form": "dessen/deren (Genitiv)",
+        "use": "relative possessive",
+        "example": "Die Frau, deren Kochbuch bekannt ist."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Der Freund ___ ich das Rezept gab kocht gern. (Dat mask)",
+        "answer": "dem"
+      },
+      {
+        "question": "Die Kollegin ___ ich den Salat empfehle ist Vegi. (Dat fem)",
+        "answer": "der"
+      },
+      {
+        "question": "Die Frau ___ Kochbuch beruehmt ist gibt Seminar. (Gen fem)",
+        "answer": "deren"
+      },
+      {
+        "question": "Das Restaurant ___ Kueche ausgezeichnet ist liegt Altstadt. (Gen neut)",
+        "answer": "dessen"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11370,7 +12312,11 @@
       "Ich werde nächstes Jahr mein Studium abschliessen.",
       "Mein Ziel ist es, als Arzt zu arbeiten.",
       "In fünf Jahren möchte ich im Ausland leben.",
-      "Ich hoffe, dass alles klappt."
+      "Ich hoffe, dass alles klappt.",
+      "Wenn ich mehr Zeit haette wuerde ich ein Instrument lernen.",
+      "Ich wuenschte ich koennte naechstes Jahr nach Japan reisen.",
+      "Waere ich doch nur frueher aufgestanden.",
+      "Haette ich das Ticket doch frueher gebucht."
     ],
     "grammarFocus": "Future tense with \"werden\" and \"hoffen\"",
     "vocabulary": [
@@ -11475,7 +12421,70 @@
     "speakingTask": {
       "prompt": "Discuss your future plans and goals with a partner."
     },
-    "reviewSummary": "\"werden\" + Infinitiv = future tense. \"Ich hoffe, dass...\" = I hope that... \"Möchte\" = polite \"want to.\" \"das Ziel\" = goal."
+    "reviewSummary": "\"werden\" + Infinitiv = future tense. \"Ich hoffe, dass...\" = I hope that... \"Möchte\" = polite \"want to.\" \"das Ziel\" = goal.",
+    "conceptId": "b1.future.plans",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "b1.future.technology",
+      "b1.futur1"
+    ],
+    "conceptsTaught": [
+      "b1.future.plans",
+      "b1.konjunktiv2.wishes"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "future",
+      "plans",
+      "konjunktiv"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_9",
+      "B1_gr_24",
+      "B1_gr_37"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Simple KII forms preferred: haette not wuerde haben",
+      "KII for unreal wishes: Wenn ich Zeit haette",
+      "Not indicative for hypothetical"
+    ],
+    "formsTable": [
+      {
+        "form": "Wenn ich ... haette, wuerde ich ...",
+        "use": "unreal wish",
+        "example": "Wenn ich mehr Zeit haette, wuerde ich reisen."
+      },
+      {
+        "form": "Ich wuenschte, ...",
+        "use": "wish statement",
+        "example": "Ich wuenschte, ich koennte fliegen."
+      },
+      {
+        "form": "waere/haette + gern",
+        "use": "polite wish",
+        "example": "Ich haette gern mehr Urlaub."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Wenn ich mehr Zeit ___. (haben KII)",
+        "answer": "haette"
+      },
+      {
+        "question": "Ich ___ gern verreisen. (wuerde)",
+        "answer": "wuerde"
+      },
+      {
+        "question": "Wenn ich Geld ___, wuerde ich ein Haus kaufen. (haben KII)",
+        "answer": "haette"
+      },
+      {
+        "question": "Ich wuenschte ich ___ jung. (sein KII)",
+        "answer": "waere"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11488,7 +12497,11 @@
       "Ich vermiete mein Zimmer unter.",
       "Der Mietvertrag gilt für 12 Monate.",
       "Die Kündigungsfrist beträgt 3 Monate.",
-      "In den Nebenkosten sind Wasser und Heizung enthalten."
+      "In den Nebenkosten sind Wasser und Heizung enthalten.",
+      "Die Wohnung ist laut der Beschreibung sehr modern.",
+      "Wegen des Laerms kann ich nicht schlafen.",
+      "Ich wohne seit drei Monaten in der neuen Wohnung.",
+      "Die Kaution betraegt laut Vertrag drei Kaltmieten."
     ],
     "grammarFocus": "Rental vocabulary and prepositions with Dativ",
     "vocabulary": [
@@ -11597,7 +12610,70 @@
     "speakingTask": {
       "prompt": "Role play: discuss a rental contract with a potential tenant."
     },
-    "reviewSummary": "\"vermieten\" = to rent out. \"kündigen\" = to cancel. \"die Kündigungsfrist\" = notice period. \"die Kaution\" = deposit."
+    "reviewSummary": "\"vermieten\" = to rent out. \"kündigen\" = to cancel. \"die Kündigungsfrist\" = notice period. \"die Kaution\" = deposit.",
+    "conceptId": "b1.rental.housing",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.housing.vocab",
+      "a2.prepositions.basic"
+    ],
+    "conceptsTaught": [
+      "b1.rental.housing",
+      "b1.prepositions.fixed.case"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "housing",
+      "daily-life"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_3",
+      "B1_gr_32",
+      "B1_gr_44"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Fixed case after prepositions",
+      "trotz (gen) vs trotzdem (adv)",
+      "wegen + genitive in formal",
+      "aus/by/mit + dative"
+    ],
+    "formsTable": [
+      {
+        "form": "aus, bei, mit, nach, seit, von, zu",
+        "use": "dative prepositions",
+        "example": "Ich wohne bei meinen Eltern."
+      },
+      {
+        "form": "durch, fuer, gegen, ohne, um",
+        "use": "accusative prepositions",
+        "example": "Wir kaempfen fuer die Umwelt."
+      },
+      {
+        "form": "trotz, wegen, waehrend (Genitiv)",
+        "use": "genitive prepositions",
+        "example": "Wegen des Larms ziehe ich um."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich wohne ___ meinen Eltern. (bei + Dativ)",
+        "answer": "bei"
+      },
+      {
+        "question": "Das Geschenk ist ___ meinen Freund. (fuer + Akk)",
+        "answer": "fuer"
+      },
+      {
+        "question": "___ des Regens gehen wir spazieren. (trotz + Gen)",
+        "answer": "Trotz"
+      },
+      {
+        "question": "Ich komme ___ der Arbeit. (von + Dat)",
+        "answer": "von"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11610,7 +12686,11 @@
       "Wann kommt die nächste U-Bahn?",
       "Der Zug hat 10 Minuten Verspätung.",
       "Ich habe eine Monatskarte.",
-      "Entschuldigung, ist hier noch frei?"
+      "Entschuldigung, ist hier noch frei?",
+      "Der Fahrpreis des Busses ist gestiegen.",
+      "Waehrend der Fahrt kann man lesen.",
+      "Die Abfahrt des Zuges verspaetet sich.",
+      "Das ist das Ende der Linie."
     ],
     "grammarFocus": "Public transport vocabulary",
     "vocabulary": [
@@ -11719,7 +12799,64 @@
     "speakingTask": {
       "prompt": "Give directions using public transport to a tourist."
     },
-    "reviewSummary": "\"die Verspätung\" = delay. \"der Fahrschein\" = ticket. \"die Haltestelle\" = stop. \"die Linie\" = line."
+    "reviewSummary": "\"die Verspätung\" = delay. \"der Fahrschein\" = ticket. \"die Haltestelle\" = stop. \"die Linie\" = line.",
+    "conceptId": "b1.public.transport",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.travel.vocab",
+      "a2.directions"
+    ],
+    "conceptsTaught": [
+      "b1.public.transport",
+      "b1.genitive.intro"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "transport",
+      "daily-life"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_6",
+      "B1_gr_33",
+      "B1_gr_47"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Genitive vs vom",
+      "Weak masculine: der Herr -> den Herrn",
+      "Genitive s for m/n: des Bahnhofs"
+    ],
+    "formsTable": [
+      {
+        "form": "des/der + Nomen + s",
+        "use": "genitive possession",
+        "example": "Das ist das Auto des Chefs."
+      },
+      {
+        "form": "waehrend + Genitiv",
+        "use": "during (genitive)",
+        "example": "Waehrend des Tages bin ich unterwegs."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Das ist das Auto ___ Chefs. (Gen mask)",
+        "answer": "des"
+      },
+      {
+        "question": "___ des Tages bin ich unterwegs. (waehrend Gen)",
+        "answer": "Waehrend"
+      },
+      {
+        "question": "Der Preis ___ Tickets ist hoch. (Gen neut)",
+        "answer": "des"
+      },
+      {
+        "question": "Die Arbeit ___ Mitarbeiter ist wichtig. (Gen pl)",
+        "answer": "der"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11732,7 +12869,11 @@
       "Danke für die Einladung!",
       "Prost!",
       "Lass uns tanzen gehen.",
-      "Kennst du viele Leute hier?"
+      "Kennst du viele Leute hier?",
+      "Ich freue mich auf die Party naechstes Wochenende.",
+      "Wir treffen uns um acht Uhr vor dem Club.",
+      "Er aergert sich ueber die laute Musik.",
+      "Sie bedankt sich fuer die Einladung."
     ],
     "grammarFocus": "Party and socializing vocabulary",
     "vocabulary": [
@@ -11837,7 +12978,69 @@
     "speakingTask": {
       "prompt": "Practice small talk at a party with a partner."
     },
-    "reviewSummary": "\"Prost!\" = Cheers! \"sich wohlfühlen\" = to feel comfortable. \"der Gastgeber\" = host. \"die Stimmung\" = atmosphere/mood."
+    "reviewSummary": "\"Prost!\" = Cheers! \"sich wohlfühlen\" = to feel comfortable. \"der Gastgeber\" = host. \"die Stimmung\" = atmosphere/mood.",
+    "conceptId": "b1.party.social",
+    "estimatedMinutes": 40,
+    "prerequisiteConceptIds": [
+      "a2.invitations",
+      "a2.reflexive.basic"
+    ],
+    "conceptsTaught": [
+      "b1.party.social",
+      "b1.reflexive.verbs.extended"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "social",
+      "party"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_34",
+      "B1_gr_40",
+      "B1_gr_48"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Reflexive pronoun case: mich vs mir",
+      "sich required for sich-Verben",
+      "sich position with modal verbs"
+    ],
+    "formsTable": [
+      {
+        "form": "sich + Akkusativ",
+        "use": "reflexive direct",
+        "example": "Ich wasche mich."
+      },
+      {
+        "form": "sich + Dativ",
+        "use": "reflexive indirect",
+        "example": "Ich wasche mir die Haende."
+      },
+      {
+        "form": "sich-Verben mit Modal",
+        "use": "reflexive with modals",
+        "example": "Ich kann mich erinnern."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich wasche ___ die Haende. (Dativ)",
+        "answer": "mir"
+      },
+      {
+        "question": "Er erinnert ___ an den Termin. (Akkusativ)",
+        "answer": "sich"
+      },
+      {
+        "question": "Wir freuen ___ auf den Urlaub.",
+        "answer": "uns"
+      },
+      {
+        "question": "Sie kaemmt ___ vor dem Spiegel.",
+        "answer": "sich"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11850,7 +13053,11 @@
       "Hast du die Nachrichten gehört?",
       "Der Artikel handelt von der neuen Steuerreform.",
       "Laut einer Studie steigen die Temperaturen.",
-      "Die Berichterstattung ist nicht ausgewogen."
+      "Die Berichterstattung ist nicht ausgewogen.",
+      "Der Praesident wurde gestern im Fernsehen interviewt.",
+      "Die neue Bruecke wurde letztes Jahr gebaut.",
+      "Die Tuer wurde von einem Mitarbeiter geoeffnet.",
+      "Die Verhandlungen wurden erfolgreich abgeschlossen."
     ],
     "grammarFocus": "News vocabulary and reported speech",
     "vocabulary": [
@@ -11955,7 +13162,61 @@
     "speakingTask": {
       "prompt": "Discuss a current news topic with a partner."
     },
-    "reviewSummary": "\"berichten von/über\" = to report on. \"laut\" + Dativ/Genitiv = according to. \"die Schlagzeile\" = headline. \"die Qülle\" = source."
+    "reviewSummary": "\"berichten von/über\" = to report on. \"laut\" + Dativ/Genitiv = according to. \"die Schlagzeile\" = headline. \"die Qülle\" = source.",
+    "conceptId": "b1.news.understanding",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "b1.social.media",
+      "b1.passiv.praesens"
+    ],
+    "conceptsTaught": [
+      "b1.news.understanding",
+      "b1.passiv.prateritum"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "news",
+      "media",
+      "passive"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_2",
+      "B1_gr_13",
+      "B1_gr_29"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "wurde gemacht not \"ward gemacht\"",
+      "von + Dativ for agent",
+      "Passiv vs Aktiv register choice"
+    ],
+    "formsTable": [
+      {
+        "form": "wurde + Partizip II",
+        "use": "Passiv Prateritum",
+        "example": "Der Artikel wurde gestern veroeeffentlicht."
+      },
+      {
+        "form": "wurden + Partizip II",
+        "use": "Passiv Prateritum pl.",
+        "example": "Die Fenster wurden geoeffnet."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Der Artikel ___ gestern ___ (veroeffentlichen Passiv Praet.)",
+        "answer": "wurde ... veroeffentlicht"
+      },
+      {
+        "question": "Die Fenster ___ geoeffnet. (werden Praet. pl)",
+        "answer": "wurden"
+      },
+      {
+        "question": "Das Haus ___ 1990 ___ (bauen Passiv Praet.)",
+        "answer": "wurde ... gebaut"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -11968,7 +13229,11 @@
       "Das Essen ist leider kalt.",
       "Ich habe etwas anderes bestellt.",
       "Die Bedienung war sehr langsam.",
-      "Das Fleisch ist nicht durchgebraten."
+      "Das Fleisch ist nicht durchgebraten.",
+      "Ich moechte mich ueber das kalte Essen beschweren.",
+      "Der Kellner war leider sehr unaufmerksam.",
+      "Ich hatte mir mehr von diesem Restaurant versprochen.",
+      "Die Suppe war versalzen und das Fleisch zaeh."
     ],
     "grammarFocus": "Restaurant complaints and polite criticism",
     "vocabulary": [
@@ -12073,7 +13338,60 @@
     "speakingTask": {
       "prompt": "Role play: complain about food/service at a restaurant."
     },
-    "reviewSummary": "\"reklamieren\" = to complain/complain about. \"durchgebraten\" = well done. \"die Beschwerde\" = complaint. \"zurücknehmen\" = to take back."
+    "reviewSummary": "\"reklamieren\" = to complain/complain about. \"durchgebraten\" = well done. \"die Beschwerde\" = complaint. \"zurücknehmen\" = to take back.",
+    "conceptId": "b1.restaurant.critique",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.restaurant.ordering",
+      "a2.complaint.simple"
+    ],
+    "conceptsTaught": [
+      "b1.restaurant.critique",
+      "b1.complaint.formal"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "restaurant",
+      "complaint"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_25",
+      "B1_gr_35",
+      "B1_gr_49"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "KII for polite complaints",
+      "Formal complaint structure",
+      "Avoid overly aggressive criticism"
+    ],
+    "formsTable": [
+      {
+        "form": "Ich moechte mich beschweren, weil ...",
+        "use": "start complaint",
+        "example": "Ich moechte mich beschweren, weil das Essen kalt war."
+      },
+      {
+        "form": "Leider war ... nicht zufriedenstellend.",
+        "use": "polite criticism",
+        "example": "Leider war der Service nicht zufriedenstellend."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich moechte ___ beschweren.",
+        "answer": "mich"
+      },
+      {
+        "question": "Leider ___ der Service nicht gut. (sein Praet.)",
+        "answer": "war"
+      },
+      {
+        "question": "Das Essen ___ kalt. (sein Praet.)",
+        "answer": "war"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12086,7 +13404,11 @@
       "Ich buche einen Flug nach Thailand.",
       "Hast du eine Reiseversicherung abgeschlossen?",
       "Der Koffer ist gepackt.",
-      "Hast du an den Reisepass gedacht?"
+      "Hast du an den Reisepass gedacht?",
+      "Zuerst habe ich den Flug gebucht dann das Hotel.",
+      "Ich bin letztes Jahr nach Oesterreich gefahren.",
+      "Am ersten Tag haben wir die Altstadt besichtigt.",
+      "Das Essen im Hotel war ausgezeichnet."
     ],
     "grammarFocus": "Travel planning vocabulary",
     "vocabulary": [
@@ -12191,7 +13513,64 @@
     "speakingTask": {
       "prompt": "Present your travel plans to your partner."
     },
-    "reviewSummary": "\"buchen\" = to book. \"der Reisepass\" = passport. \"die Reiseversicherung\" = travel insurance. \"packen\" = to pack."
+    "reviewSummary": "\"buchen\" = to book. \"der Reisepass\" = passport. \"die Reiseversicherung\" = travel insurance. \"packen\" = to pack.",
+    "conceptId": "b1.travel.preparation",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.travel.vocab",
+      "b1.public.transport"
+    ],
+    "conceptsTaught": [
+      "b1.travel.preparation",
+      "b1.experience.reports"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "travel",
+      "daily-life"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_38",
+      "B1_gr_43",
+      "B1_gr_50"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "nach vs in for destinations",
+      "mit dem Zug not bei dem Zug",
+      "Time-manner-place word order"
+    ],
+    "formsTable": [
+      {
+        "form": "Ich bin nach/in ... gefahren.",
+        "use": "travel destination",
+        "example": "Ich bin nach Berlin gefahren."
+      },
+      {
+        "form": "Zuerst habe ich ..., dann ...",
+        "use": "sequence",
+        "example": "Zuerst habe ich das Hotel gebucht, dann den Flug."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Ich ___ nach Berlin ___ (fahren Perfekt)",
+        "answer": "bin ... gefahren"
+      },
+      {
+        "question": "Zuerst ___ ich das Hotel ___ (buchen)",
+        "answer": "habe ... gebucht"
+      },
+      {
+        "question": "Wir ___ im Hotel ___ (sein Perfekt)",
+        "answer": "sind ... gewesen"
+      },
+      {
+        "question": "___ hast du den Urlaub ___ (verbringen)",
+        "answer": "Wie ... verbracht"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12204,7 +13583,11 @@
       "Ich engagiere mich ehrenamtlich.",
       "Ich helfe jeden Samstag im Tierheim.",
       "Wir sammeln Spenden für die Tafel.",
-      "Freiwilligenarbeit macht mir viel Freude."
+      "Freiwilligenarbeit macht mir viel Freude.",
+      "Er engagiert sich ehrenamtlich im Tierschutz.",
+      "Ohne eine Gegenleistung zu erwarten hilft sie anderen.",
+      "Anstatt zu Hause zu sitzen macht er Strassen sauber.",
+      "Viele Menschen spenden Zeit ohne Geld zu nehmen."
     ],
     "grammarFocus": "Volunteering and social engagement vocabulary",
     "vocabulary": [
@@ -12309,7 +13692,61 @@
     "speakingTask": {
       "prompt": "Discuss the importance of volunteer work with a partner."
     },
-    "reviewSummary": "\"sich engagieren\" = to be involved/committed. \"ehrenamtlich\" = on a voluntary basis. \"beitragen\" = to contribute (separable). \"erfüllend\" = fulfilling."
+    "reviewSummary": "\"sich engagieren\" = to be involved/committed. \"ehrenamtlich\" = on a voluntary basis. \"beitragen\" = to contribute (separable). \"erfüllend\" = fulfilling.",
+    "conceptId": "b1.volunteering",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "b1.environment.conservation",
+      "b1.umzu.clauses"
+    ],
+    "conceptsTaught": [
+      "b1.volunteering",
+      "b1.ohne.zu.anstatt.zu"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "volunteering",
+      "community"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_36",
+      "B1_gr_46",
+      "B1_gr_14",
+      "B1_gr_68"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "ohne...zu needs verb complement",
+      "anstatt = statt (more formal)",
+      "Comma with infinitive clauses"
+    ],
+    "formsTable": [
+      {
+        "form": "..., ohne ... zu + Infinitiv",
+        "use": "without doing",
+        "example": "Er hilft, ohne Geld zu nehmen."
+      },
+      {
+        "form": "Anstatt ... zu + Infinitiv",
+        "use": "instead of",
+        "example": "Anstatt zu klagen, handelt er."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Er hilft ___ Geld ___ nehmen. (ohne...zu)",
+        "answer": "ohne ... zu"
+      },
+      {
+        "question": "___ zu klagen handelt er. (anstatt...zu)",
+        "answer": "Anstatt ..."
+      },
+      {
+        "question": "Sie arbeitet ___ eine Pause ___ machen. (ohne...zu)",
+        "answer": "ohne ... zu"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12322,7 +13759,11 @@
       "Ich studiere im 5. Semester.",
       "Die Vorlesung beginnt um 10:15 Uhr.",
       "Ich muss eine Hausarbeit über Göthe schreiben.",
-      "Die Prüfungszeit ist sehr stressig."
+      "Die Prüfungszeit ist sehr stressig.",
+      "Das Studium an der Universitaet Heidelberg ist anspruchsvoll.",
+      "Die Einschreibung erfolgt online ueber das Portal.",
+      "Die Vorlesung findet im Hoersaal statt.",
+      "Die Zusammenarbeit mit Kommilitonen ist wichtig."
     ],
     "grammarFocus": "University vocabulary",
     "vocabulary": [
@@ -12431,7 +13872,61 @@
     "speakingTask": {
       "prompt": "Describe your university experience or academic plans."
     },
-    "reviewSummary": "\"studieren\" = to study at university. \"die Vorlesung\" = lecture. \"die Prüfung\" = exam. \"die Hausarbeit\" = term paper."
+    "reviewSummary": "\"studieren\" = to study at university. \"die Vorlesung\" = lecture. \"die Prüfung\" = exam. \"die Hausarbeit\" = term paper.",
+    "conceptId": "b1.university.studies",
+    "estimatedMinutes": 55,
+    "prerequisiteConceptIds": [
+      "b1.education.system",
+      "a2.study.vocab"
+    ],
+    "conceptsTaught": [
+      "b1.university.studies",
+      "b1.nominalization"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "education",
+      "university",
+      "academic"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_22",
+      "B1_gr_40",
+      "B1_gr_46"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Nominalized verbs always neuter",
+      "-ung ending feminine",
+      "zu+Inf vs nominalized form register"
+    ],
+    "formsTable": [
+      {
+        "form": "das + Verb (nominalisiert)",
+        "use": "nominalized verb",
+        "example": "Das Lernen macht mir Spass."
+      },
+      {
+        "form": "die + Verb + ung",
+        "use": "-ung nominalization",
+        "example": "Die Prufung findet morgen statt."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Das ___ macht mir Spass. (lernen, nominalisiert)",
+        "answer": "Lernen"
+      },
+      {
+        "question": "Die ___ findet morgen statt. (pruefen, nominalisiert)",
+        "answer": "Pruefung"
+      },
+      {
+        "question": "Die ___ des Projekts dauert lange. (durchfuehren)",
+        "answer": "Durchfuehrung"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12444,7 +13939,11 @@
       "Ich lese gern historische Romane.",
       "Das Buch hat mich sehr gefesselt.",
       "Der Schreibstil ist mitreissend.",
-      "Kannst du mir ein Buch empfehlen?"
+      "Kannst du mir ein Buch empfehlen?",
+      "Das Buch das ich gerade lese ist sehr spannend.",
+      "Alles was der Autor schreibt ist lesenswert.",
+      "Worueber schreibt der Autor in diesem Kapitel?",
+      "Die Geschichte mit der ich mich identifizieren kann ist beruehrend."
     ],
     "grammarFocus": "Books and reading vocabulary",
     "vocabulary": [
@@ -12557,7 +14056,65 @@
     "speakingTask": {
       "prompt": "Recommend a book to your partner and explain why you liked it."
     },
-    "reviewSummary": "\"fesseln\" = to captivate. \"der Krimi\" = crime novel. \"empfehlen\" = to recommend. \"der Schreibstil\" = writing style."
+    "reviewSummary": "\"fesseln\" = to captivate. \"der Krimi\" = crime novel. \"empfehlen\" = to recommend. \"der Schreibstil\" = writing style.",
+    "conceptId": "b1.reading.literature",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "b1.film.culture",
+      "b1.relative.clauses.nom.acc"
+    ],
+    "conceptsTaught": [
+      "b1.reading.literature",
+      "b1.relative.clauses.wo.was"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "reading",
+      "literature",
+      "culture"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_1",
+      "B1_gr_30",
+      "B1_gr_39"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "was for alles/nichts not specific",
+      "wo compounds: womit, woran",
+      "Preposition choice in wo-compounds"
+    ],
+    "formsTable": [
+      {
+        "form": "wo + Praeposition (womit, woran)",
+        "use": "wo-compounds",
+        "example": "Womit hast du das gemacht?"
+      },
+      {
+        "form": "was als Relativpronomen",
+        "use": "was for alles/nichts",
+        "example": "Alles, was ich mag, ist hier."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "___ hast du das gemacht? (wo + mit)",
+        "answer": "Womit"
+      },
+      {
+        "question": "Alles ___ ich mag ist hier. (was)",
+        "answer": "was"
+      },
+      {
+        "question": "___ denkst du? (wo + an)",
+        "answer": "Woran"
+      },
+      {
+        "question": "Nichts ___ er sagt ist wahr. (was)",
+        "answer": "was"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12570,7 +14127,11 @@
       "Welche Mannschaften spielen heute?",
       "Das Spiel endete 2:2 Unentschieden.",
       "Deutschland hat die Meisterschaft gewonnen.",
-      "Im Stadion war eine tolle Atmosphäre."
+      "Im Stadion war eine tolle Atmosphäre.",
+      "Das Fussballspiel endete 2:1 fuer die Heimmannschaft.",
+      "Der Sportler trainierte taeglich fuer den Wettkampf.",
+      "Die Zuschauer feierten den Sieg ausgelassen.",
+      "Zuerst kam das Aufwaermen dann das Rennen."
     ],
     "grammarFocus": "Sports events vocabulary",
     "vocabulary": [
@@ -12683,7 +14244,60 @@
     "speakingTask": {
       "prompt": "Discuss a sports event: teams, score, atmosphere, result."
     },
-    "reviewSummary": "\"der Sieg\" = victory. \"die Niederlage\" = defeat. \"das Unentschieden\" = draw. \"der Zuschaür\" = spectator."
+    "reviewSummary": "\"der Sieg\" = victory. \"die Niederlage\" = defeat. \"das Unentschieden\" = draw. \"der Zuschaür\" = spectator.",
+    "conceptId": "b1.sports.events",
+    "estimatedMinutes": 45,
+    "prerequisiteConceptIds": [
+      "a2.sports.vocab",
+      "a2.hobbies"
+    ],
+    "conceptsTaught": [
+      "b1.sports.events",
+      "b1.written.reports"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "sports",
+      "events"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_12",
+      "B1_gr_23",
+      "B1_gr_45"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Praet. for past event reports",
+      "Temporal sequence words",
+      "Perfekt not Praet. in formal written"
+    ],
+    "formsTable": [
+      {
+        "form": "Zuerst ..., dann ..., schliesslich ...",
+        "use": "temporal sequence",
+        "example": "Zuerst warmlaufen, dann starten."
+      },
+      {
+        "form": "Das Spiel endete ...",
+        "use": "result statement",
+        "example": "Das Spiel endete 3:1."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "___ warmlaufen ___ starten. (zuerst, dann)",
+        "answer": "Zuerst ... dann"
+      },
+      {
+        "question": "Das Spiel ___ 3:1. (enden Praet.)",
+        "answer": "endete"
+      },
+      {
+        "question": "Die Mannschaft ___ gut ___ (spielen Praet.)",
+        "answer": "spielte ... gut"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12696,7 +14310,11 @@
       "Ich stecke im Stau fest.",
       "Der Berufsverkehr ist unerträglich.",
       "Wegen eines Unfalls ist die Autobahn gesperrt.",
-      "Ich brauche täglich eine Stunde zur Arbeit."
+      "Ich brauche täglich eine Stunde zur Arbeit.",
+      "Ich stehe jeden Morgen im Stau auf der A9.",
+      "Der oeffentliche Nahverkehr ist eine gute Alternative.",
+      "Bei rotem Licht muss man warten.",
+      "Die neue Umgehungsstrasse entlastet die Innenstadt."
     ],
     "grammarFocus": "Traffic and commuting vocabulary",
     "vocabulary": [
@@ -12801,7 +14419,65 @@
     "speakingTask": {
       "prompt": "Discuss traffic problems and possible solutions."
     },
-    "reviewSummary": "\"im Stau stehen/stecken\" = to be in traffic. \"die Umleitung\" = detour. \"gesperrt\" = closed. \"der Berufsverkehr\" = rush hour."
+    "reviewSummary": "\"im Stau stehen/stecken\" = to be in traffic. \"die Umleitung\" = detour. \"gesperrt\" = closed. \"der Berufsverkehr\" = rush hour.",
+    "conceptId": "b1.traffic.jam",
+    "estimatedMinutes": 40,
+    "prerequisiteConceptIds": [
+      "b1.public.transport",
+      "b1.genitive.intro"
+    ],
+    "conceptsTaught": [
+      "b1.traffic.jam",
+      "b1.adjective.endings.consolidation"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "traffic",
+      "transport",
+      "daily-life"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_7",
+      "B1_gr_28",
+      "B1_gr_47"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "Adj endings: der gute, ein guter, guter",
+      "Weak vs mixed declension",
+      "Strong after alles/viele/manche"
+    ],
+    "formsTable": [
+      {
+        "form": "der gute, ein guter, guter",
+        "use": "adj endings def/indef/none",
+        "example": "Der schnelle Bus, ein schneller Bus, schneller Bus."
+      },
+      {
+        "form": "Adjektivendungen im Dativ",
+        "use": "dative adjective endings",
+        "example": "Mit dem schnellen Bus."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Der ___ Bus kommt um 8 Uhr. (schnell)",
+        "answer": "schnelle"
+      },
+      {
+        "question": "Ein ___ Bus kommt um 9. (schnell)",
+        "answer": "schneller"
+      },
+      {
+        "question": "Mit dem ___ Bus fahren wir. (schnell)",
+        "answer": "schnellen"
+      },
+      {
+        "question": "___ alte Auto steht in der Garage. (das)",
+        "answer": "Das"
+      }
+    ]
   },
   {
     "level": "B1",
@@ -12814,7 +14490,11 @@
       "Ich lege jeden Monat Geld zur Seite.",
       "Man sollte ein Budget erstellen.",
       "Ich investiere in ETFs.",
-      "Eine finanzielle Reserve ist wichtig."
+      "Eine finanzielle Reserve ist wichtig.",
+      "Wenn ich mehr Geld haette wuerde ich in eine groessere Wohnung ziehen.",
+      "Ich wuenschte ich haette frueher mit dem Sparen angefangen.",
+      "Waere ich doch nicht so viel ausgegangen.",
+      "Die Inflation hat meine Ersparnisse reduziert."
     ],
     "grammarFocus": "Personal finance vocabulary",
     "vocabulary": [
@@ -12919,7 +14599,66 @@
     "speakingTask": {
       "prompt": "Discuss personal finance: budgeting, saving, investing."
     },
-    "reviewSummary": "\"sparen\" = to save. \"die Ausgaben\" = expenses. \"die Einnahmen\" = income. \"die Altersvorsorge\" = retirement provision."
+    "reviewSummary": "\"sparen\" = to save. \"die Ausgaben\" = expenses. \"die Einnahmen\" = income. \"die Altersvorsorge\" = retirement provision.",
+    "conceptId": "b1.finance.saving",
+    "estimatedMinutes": 50,
+    "prerequisiteConceptIds": [
+      "a2.money.vocab",
+      "b1.konjunktiv2.wishes"
+    ],
+    "conceptsTaught": [
+      "b1.finance.saving",
+      "b1.konjunktiv2.unreal"
+    ],
+    "trackTags": [
+      "goethe",
+      "telc",
+      "finance",
+      "saving",
+      "konjunktiv"
+    ],
+    "linkedQuestionIds": [
+      "B1_gr_24",
+      "B1_gr_37",
+      "B1_gr_50"
+    ],
+    "lessonDepthVersion": "2.0",
+    "commonMistakes": [
+      "KII not indicative for unreal",
+      "wuerde + Inf not wuerde + Praet.",
+      "haette/waere not hatte/war",
+      "Verb-end in wenn-clause then verb-first"
+    ],
+    "formsTable": [
+      {
+        "form": "Wenn ich Geld haette, wuerde ich ...",
+        "use": "unreal condition",
+        "example": "Wenn ich Geld haette, wuerde ich reisen."
+      },
+      {
+        "form": "Ich wuenschte, ich waere ...",
+        "use": "unreal wish",
+        "example": "Ich wuenschte, ich waere reich."
+      }
+    ],
+    "miniDrills": [
+      {
+        "question": "Wenn ich Geld ___ wuerde ich reisen. (haben KII)",
+        "answer": "haette"
+      },
+      {
+        "question": "Ich wuenschte ich ___ reich. (sein KII)",
+        "answer": "waere"
+      },
+      {
+        "question": "Wenn ich mehr verdienen ___ koennte ich sparen. (wuerde)",
+        "answer": "wuerde"
+      },
+      {
+        "question": "Er ___ gern ein Haus kaufen. (wuerde)",
+        "answer": "wuerde"
+      }
+    ]
   },
   {
     "level": "B2",
