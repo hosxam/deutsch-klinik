@@ -3212,7 +3212,39 @@
       "instructions": "Stellen Sie sich vor, nennen Sie Ihre Qualifikationen, erklären Sie Ihr Interesse.",
       "wordLimit": 150,
       "tips": "Sehr geehrte Damen und Herren, hiermit bewerbe ich mich um ein Praktikum ... Ich bin Arzt mit Erfahrung in ...",
-      "lessonId": "B1_lesson_10"
+      "lessonId": "B1_lesson_10",
+      "conceptId": "b1.internship",
+      "taughtInLessonId": "B1_lesson_10",
+      "requiredConcepts": [
+        "a2.work.experience",
+        "a2.perfekt.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin sehr motiviert und moechte mich in diesem Bereich weiterentwickeln.",
+        "Ueber eine Einladung zu einem Vorstellungsgespraech wuerde ich mich freuen."
+      ]
     },
     {
       "id": "B1_write_2",
@@ -3221,7 +3253,39 @@
       "instructions": "Geben Sie Ihre Meinung, nennen Sie 2-3 Argumente.",
       "wordLimit": 120,
       "tips": "Meiner Meinung nach ... Einerseits ..., andererseits ...",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_3",
@@ -3230,7 +3294,39 @@
       "instructions": "Beschreiben Sie das Problem, sagen Sie, was Sie erwarten.",
       "wordLimit": 100,
       "tips": "Sehr geehrte Damen und Herren, am ... habe ich bei Ihnen gegessen. Leider war ...",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich moechte mich hoeflich aber deutlich ueber folgendes beschweren.",
+        "Ich erwarte Ihre Stellungnahme bis zum naechsten Freitag."
+      ]
     },
     {
       "id": "B1_write_4",
@@ -3239,7 +3335,39 @@
       "instructions": "Was haben Sie gelernt? Was war besonders? Was war schwierig?",
       "wordLimit": 150,
       "tips": "In meiner Zeit in der Orthopädie habe ich gelernt, dass ... Besonders interessant war ...",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_5",
@@ -3248,7 +3376,39 @@
       "instructions": "Geben Sie 2-3 Ratschläge.",
       "wordLimit": 100,
       "tips": "Ich empfehle dir, einen Orthopäden aufzusuchen. Du solltest auch ...",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_6",
@@ -3257,7 +3417,39 @@
       "instructions": "Bedanken Sie sich, nennen Sie den konkreten Grund, bieten Sie Hilfe an.",
       "wordLimit": 100,
       "tips": "Lieber Kollege, ich möchte mich herzlich für deine Hilfe bei der Operation gestern bedanken.",
-      "lessonId": "B1_lesson_2"
+      "lessonId": "B1_lesson_2",
+      "conceptId": "b1.environment.daily",
+      "taughtInLessonId": "B1_lesson_2",
+      "requiredConcepts": [
+        "a2.environment.basic",
+        "a2.connectors.coordinating"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_7",
@@ -3266,7 +3458,39 @@
       "instructions": "Nennen Sie zwei Vorteile und zwei Nachteile.",
       "wordLimit": 120,
       "tips": "Ein Vorteil von Homeoffice ist ... Ein Nachteil ist jedoch ...",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Meiner Meinung nach gibt es sowohl Vor- als auch Nachteile.",
+        "Einerseits ... andererseits muss man auch bedenken dass ..."
+      ]
     },
     {
       "id": "B1_write_8",
@@ -3275,7 +3499,39 @@
       "instructions": "Erzählen Sie von Ihren Plänen und Träumen.",
       "wordLimit": 100,
       "tips": "Lieber ..., ich habe mich entschieden, nach Deutschland zu gehen. Ich möchte dort Orthopäde werden.",
-      "lessonId": "B1_lesson_3"
+      "lessonId": "B1_lesson_3",
+      "conceptId": "b1.education.future",
+      "taughtInLessonId": "B1_lesson_3",
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_9",
@@ -3284,7 +3540,39 @@
       "instructions": "Schreiben Sie den Satz in Ihren eigenen Worten.",
       "wordLimit": 40,
       "tips": "Laut WHO sollten Erwachsene sich pro Woche mindestens 150 Minuten bewegen.",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "conceptId": "b1.reading.literature",
+      "taughtInLessonId": "B1_lesson_22",
+      "requiredConcepts": [
+        "b1.film.culture",
+        "b1.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_10",
@@ -3293,7 +3581,39 @@
       "instructions": "Beschreiben Sie Ihre Idee und begründen Sie sie.",
       "wordLimit": 120,
       "tips": "Ich schlage vor, dass wir ... Dies wäre vorteilhaft, weil ...",
-      "lessonId": "B1_lesson_4"
+      "lessonId": "B1_lesson_4",
+      "conceptId": "b1.culture.festivals",
+      "taughtInLessonId": "B1_lesson_4",
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_11",
@@ -3302,7 +3622,39 @@
       "instructions": "Nennen Sie Ihre Ausbildung, Erfahrung (auch wenn aus dem Heimatland), Sprachkenntnisse und warum Sie in Deutschland arbeiten möchten.",
       "wordLimit": 160,
       "tips": "Sehr geehrte Damen und Herren, mit großem Interesse habe ich Ihre Stellenanzeige gelesen ... Ich bin ausgebildete/r Medizinische/r Fachangestellte/r und verfüge über ... Jahre Berufserfahrung in ...",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin sehr motiviert und moechte mich in diesem Bereich weiterentwickeln.",
+        "Ueber eine Einladung zu einem Vorstellungsgespraech wuerde ich mich freuen."
+      ]
     },
     {
       "id": "B1_write_12",
@@ -3311,7 +3663,39 @@
       "instructions": "Beschreiben Sie das Problem genau (welcher Raum, wie lange schon), erklären Sie, warum es dringend ist, und schlagen Sie einen Termin für die Besichtigung vor.",
       "wordLimit": 120,
       "tips": "Betreff: Schimmelbefall in der Wohnung ... Sehr geehrter Herr ... leider muss ich Ihnen mitteilen, dass sich in meinem Schlafzimmer Schimmel gebildet hat ... Ich bitte um eine zeitnahe Behebung des Problems.",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_13",
@@ -3320,7 +3704,39 @@
       "instructions": "Stellen Sie Ihre Idee vor (z.B. Grillfest, Sportturnier, Flohmarkt), erklären Sie, warum das gut für den Verein wäre, und fragen Sie nach Meinungen der anderen Mitglieder.",
       "wordLimit": 100,
       "tips": "Hallo zusammen, ich habe eine Idee für das diesjährige Sommerfest ... Was haltet ihr davon? ... Ich freue mich auf eure Rückmeldungen.",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "conceptId": "b1.technology.future",
+      "taughtInLessonId": "B1_lesson_5",
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_14",
@@ -3329,7 +3745,39 @@
       "instructions": "Beziehen Sie sich auf die Rechnungsnummer, erklären Sie, was Ihrer Meinung nach falsch ist, und bitten Sie um eine erneute Prüfung.",
       "wordLimit": 120,
       "tips": "Betreff: Rechnungskorrektur Nr. ... fehlerhaft ... Sehr geehrte Damen und Herren, ich habe Ihre korrigierte Rechnung erhalten, möchte aber darauf hinweisen, dass der berechnete Betrag nicht korrekt ist.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_15",
@@ -3338,7 +3786,39 @@
       "instructions": "Nennen Sie Reisezeit, gewünschte Region, Art der Unterkunft (Hotel oder Ferienwohnung), Budget und fragen Sie nach Freizeitmöglichkeiten.",
       "wordLimit": 130,
       "tips": "Betreff: Angebot für eine Reise nach Österreich ... Guten Tag, wir planen eine Reise nach ... und möchten Sie um ein Angebot bitten. Wir reisen zu zweit und möchten gerne ...",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_16",
@@ -3347,7 +3827,39 @@
       "instructions": "Nennen Sie Bestellnummer, Titel des bestellten Buches, Titel des gelieferten Buches, und sagen Sie, was Sie jetzt erwarten (Rückerstattung oder richtige Lieferung).",
       "wordLimit": 100,
       "tips": "Betreff: Falsche Lieferung - Bestellung Nr. ... Sehr geehrte Damen und Herren, leider habe ich heute ein falsches Buch erhalten. Bestellt hatte ich ... geliefert wurde jedoch ...",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich moechte mich hoeflich aber deutlich ueber folgendes beschweren.",
+        "Ich erwarte Ihre Stellungnahme bis zum naechsten Freitag."
+      ]
     },
     {
       "id": "B1_write_17",
@@ -3356,7 +3868,39 @@
       "instructions": "Beschreiben Sie Ihre Gefühle (nervös, aufgeregt), was Sie erlebt haben (Vorstellung, Einarbeitung) und wie Ihre Kollegen waren.",
       "wordLimit": 120,
       "tips": "Liebes Tagebuch, heute war mein erster Tag in der neuen Arbeit ... Ich war sehr aufgeregt, aber meine Kollegen waren alle sehr nett ... Ich habe viel Neues gelernt ...",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin sehr motiviert und moechte mich in diesem Bereich weiterentwickeln.",
+        "Ueber eine Einladung zu einem Vorstellungsgespraech wuerde ich mich freuen."
+      ]
     },
     {
       "id": "B1_write_18",
@@ -3365,7 +3909,39 @@
       "instructions": "Nennen Sie den Grund der Abwesenheit, wie lange Sie voraussichtlich fehlen werden, ob Sie eine Krankschreibung haben und ob es dringende Aufgaben gibt, die jemand übernehmen muss.",
       "wordLimit": 100,
       "tips": "Betreff: Krankmeldung ... Sehr geehrter Herr ... leider muss ich mich heute krankmelden. Ich habe ... und war heute beim Arzt. Voraussichtlich werde ich ... fehlen.",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_19",
@@ -3374,7 +3950,39 @@
       "instructions": "Nennen Sie Datum, Uhrzeit, Ort, was Sie planen (Essen, Spiele, Musik) und bitten Sie um Rückmeldung, wer kommen kann.",
       "wordLimit": 100,
       "tips": "Hey zusammen, ich werde am ... ... Jahre alt und möchte mit euch feiern ... Bringt gute Laune mit, für Essen und Getränke ist gesorgt! Bitte sagt bis ... Bescheid.",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_20",
@@ -3383,7 +3991,39 @@
       "instructions": "Stellen Sie sich kurz vor, nennen Sie Ihre Verfügbarkeit und warum Sie geeignet sind (auch ohne Erfahrung, wenn Sie motiviert sind).",
       "wordLimit": 100,
       "tips": "Betreff: Bewerbung als Aushilfe ... Sehr geehrte Damen und Herren, ich habe Ihre Anzeige gelesen und bewerbe mich hiermit als Aushilfe in Ihrem Café ... Ich bin flexibel und habe Erfahrung im Service.",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin sehr motiviert und moechte mich in diesem Bereich weiterentwickeln.",
+        "Ueber eine Einladung zu einem Vorstellungsgespraech wuerde ich mich freuen."
+      ]
     },
     {
       "id": "B1_write_21",
@@ -3392,7 +4032,39 @@
       "instructions": "Nennen Sie den gewünschten Zeitraum, den Grund (falls nötig) und bieten Sie an, dass Sie wichtige Aufgaben vorher erledigen.",
       "wordLimit": 100,
       "tips": "Betreff: Urlaubsantrag ... Sehr geehrte Frau ... hiermit beantrage ich meinen Jahresurlaub vom ... bis zum ... Während meiner Abwesenheit werde ich mein E-Mail-Postfach nicht regelmäßig prüfen.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_22",
@@ -3401,7 +4073,39 @@
       "instructions": "Nennen Sie Vorteile (neue Kultur, Sprachkenntnisse, Selbstständigkeit), Nachteile (Kosten, Heimweh) und geben Sie eine Empfehlung.",
       "wordLimit": 130,
       "tips": "Hallo ... ich finde die Idee, im Ausland zu studieren, super! ... Natürlich gibt es auch Herausforderungen wie ... Aber insgesamt glaube ich, dass es eine Erfahrung ist, die man nie vergisst.",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Meiner Meinung nach gibt es sowohl Vor- als auch Nachteile.",
+        "Einerseits ... andererseits muss man auch bedenken dass ..."
+      ]
     },
     {
       "id": "B1_write_23",
@@ -3410,7 +4114,39 @@
       "instructions": "Schreiben Sie ein kurzes, sachliches Protokoll mit Datum, Teilnehmern, besprochenen Punkten und Ergebnissen.",
       "wordLimit": 120,
       "tips": "Teambesprechung am ... Teilnehmer: ... TOP 1: Neues Projekt - Wir haben beschlossen, dass ... TOP 2: Urlaubsplanung ... Nächste Besprechung: ...",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_24",
@@ -3419,7 +4155,39 @@
       "instructions": "Nennen Sie Ihre Mitgliedsnummer, das Kündigungsdatum, den Grund und bitten Sie um eine schriftliche Bestätigung der Kündigung.",
       "wordLimit": 80,
       "tips": "Betreff: Kündigung meines Mitgliedsvertrags Nr. ... Sehr geehrte Damen und Herren, hiermit kündige ich meinen Vertrag zum nächstmöglichen Zeitpunkt. Grund ist mein Umzug in eine andere Stadt.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_25",
@@ -3428,7 +4196,39 @@
       "instructions": "Stellen Sie sich kurz vor, nennen Sie die konkrete Frage und bitten Sie um Hilfe.",
       "wordLimit": 80,
       "tips": "Betreff: Frage zur Hausaufgabe ... Guten Tag Herr ... ich bin Teilnehmer Ihres B1-Kurses. Ich habe eine Frage zu Aufgabe 3 auf Seite ... Ich verstehe nicht, warum hier ...",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_26",
@@ -3437,7 +4237,39 @@
       "instructions": "Stellen Sie sich vor, nennen Sie Ihre Kriterien (Größe, Stadtteil, max. Miete, Einzugsdatum), und bitten Sie um Tipps oder Angebote.",
       "wordLimit": 100,
       "tips": "Hallo zusammen, ich suche dringend eine Wohnung in ... Ideal wären 2 Zimmer, max. ... Euro warm. Ich bin ... Jahre alt und arbeite als ... über jeden Tipp bin ich dankbar!",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_27",
@@ -3446,7 +4278,39 @@
       "instructions": "Erzählen Sie von Ihren positiven und negativen Erfahrungen, geben Sie Tipps zu Rückgaberecht und Bezahlmethoden.",
       "wordLimit": 130,
       "tips": "Ich bestelle schon seit Jahren online und habe meistens gute Erfahrungen gemacht. Besonders wichtig ist das Widerrufsrecht von 14 Tagen ... Meine Lieblingsseiten sind ...",
-      "lessonId": "B1_lesson_8"
+      "lessonId": "B1_lesson_8",
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_28",
@@ -3455,7 +4319,39 @@
       "instructions": "Fragen Sie nach freien Plätzen, Kosten, Kurszeiten und ob ein Einstufungstest nötig ist.",
       "wordLimit": 100,
       "tips": "Betreff: Anmeldung B2-Deutschkurs ... Guten Tag, ich möchte mich für den B2-Deutschkurs anmelden ... Bitte senden Sie mir Informationen zu den Kurszeiten, Kosten und zur Anmeldung.",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_29",
@@ -3464,7 +4360,39 @@
       "instructions": "Entschuldigen Sie sich, erklären Sie den Grund, und schlagen Sie einen neuen Termin vor.",
       "wordLimit": 80,
       "tips": "Hey ... tut mir wirklich leid, dass ich zu spät gekommen bin! Mein Zug hatte 30 Minuten Verspätung ... Können wir morgen um die gleiche Zeit nochmal versuchen?",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_30",
@@ -3473,7 +4401,39 @@
       "instructions": "Bewerten Sie das Essen, den Service, die Atmosphäre und das Preis-Leistungs-Verhältnis. Geben Sie eine Gesamtbewertung (z.B. 4 von 5 Sternen).",
       "wordLimit": 100,
       "tips": "Ich war gestern im Restaurant ... und war insgesamt zufrieden. Das Essen war sehr lecker, besonders die ... Der Service war freundlich, aber etwas langsam ... 4 von 5 Sternen.",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_31",
@@ -3482,7 +4442,39 @@
       "instructions": "Stellen Sie sich vor, nennen Sie Ihre Adresse, erklären Sie Ihr Anliegen und fragen Sie konkret nach den nötigen Dokumenten und Gebühren.",
       "wordLimit": 100,
       "tips": "Betreff: Anfrage zu Anwohnerparkausweis ... Sehr geehrte Damen und Herren, ich wohne in der ... und möchte einen Anwohnerparkausweis beantragen. Welche Unterlagen benötige ich dafür?",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "conceptId": "b1.volunteering",
+      "taughtInLessonId": "B1_lesson_20",
+      "requiredConcepts": [
+        "b1.environment.conservation",
+        "b1.umzu.clauses"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_32",
@@ -3491,7 +4483,39 @@
       "instructions": "Schreiben Sie eine freundliche Nachricht an Ihre Mitbewohner, erklären Sie das Problem und schlagen Sie eine Lösung vor.",
       "wordLimit": 80,
       "tips": "Hallo zusammen, mir ist aufgefallen, dass in der Küche oft schmutziges Geschirr stehen bleibt ... Können wir vereinbaren, dass jeder sein Geschirr gleich nach dem Essen abwäscht?",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_33",
@@ -3500,7 +4524,39 @@
       "instructions": "Nennen Sie, dass Sie ein Fahrzeug anmelden möchten, fragen Sie nach den benötigten Dokumenten und ob ein Termin erforderlich ist.",
       "wordLimit": 80,
       "tips": "Betreff: Termin zur KFZ-Zulassung ... Guten Tag, ich möchte mein Fahrzeug (Marke, Kennzeichen ...) anmelden. Benötigt man einen Termin oder kann ich einfach vorbeikommen? Welche Unterlagen muss ich mitbringen?",
-      "lessonId": "B1_lesson_25"
+      "lessonId": "B1_lesson_25",
+      "conceptId": "b1.finance.saving",
+      "taughtInLessonId": "B1_lesson_25",
+      "requiredConcepts": [
+        "a2.money.vocab",
+        "b1.konjunktiv2.wishes"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_34",
@@ -3509,7 +4565,39 @@
       "instructions": "Nennen Sie die Jahreszeit, beschreiben Sie das Wetter, typische Aktivitäten und warum diese Jahreszeit für Sie besonders ist.",
       "wordLimit": 130,
       "tips": "Meine Lieblingsjahreszeit ist der Herbst. Ich liebe die bunten Blätter an den Bäumen und die frische, kühle Luft ... Im Herbst kann man schön spazieren gehen und danach einen heißen Tee trinken.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_35",
@@ -3518,7 +4606,39 @@
       "instructions": "Stellen Sie sich vor, erklären Sie das Problem, schlagen Sie eine Lösung vor und bleiben Sie freundlich.",
       "wordLimit": 100,
       "tips": "Lieber Herr ... ich möchte Sie höflich bitten, die Musik ab 22 Uhr etwas leiser zu stellen ... Ich muss morgens früh zur Arbeit und kann leider bei lauter Musik nicht schlafen.",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich moechte mich hoeflich aber deutlich ueber folgendes beschweren.",
+        "Ich erwarte Ihre Stellungnahme bis zum naechsten Freitag."
+      ]
     },
     {
       "id": "B1_write_36",
@@ -3527,7 +4647,39 @@
       "instructions": "Nennen Sie Ihre Buchungsnummer, den Zeitraum, den Grund der Stornierung und fragen Sie, ob Kosten anfallen.",
       "wordLimit": 80,
       "tips": "Betreff: Stornierung Buchung Nr. ... Sehr geehrte Damen und Herren, leider muss ich meine Buchung vom ... bis ... stornieren. Bitte teilen Sie mir mit, ob Stornogebühren anfallen.",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_37",
@@ -3536,7 +4688,39 @@
       "instructions": "Empfehlen Sie Methoden (Filme schauen, Podcasts, Sprachpartner), erklären Sie, was Ihnen geholfen hat, und ermutigen Sie den Fragesteller.",
       "wordLimit": 120,
       "tips": "Hallo, ich habe Deutsch gelernt, indem ich deutsche Serien geschaut und Podcasts gehört habe ... Am wichtigsten ist, jeden Tag ein bisschen zu üben ... Viel Erfolg!",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_38",
@@ -3545,7 +4729,39 @@
       "instructions": "Fragen Sie nach freien Plätzen, Kurszeiten, Kosten, und ob man Vorkenntnisse braucht.",
       "wordLimit": 80,
       "tips": "Betreff: Anmeldung Yoga-Kurs ... Guten Tag, ich möchte mich für den Yoga-Kurs anmelden. Wann findet der Kurs statt und wie viel kostet er? Benötigt man eigene Matte oder wird sie gestellt?",
-      "lessonId": "B1_lesson_23"
+      "lessonId": "B1_lesson_23",
+      "conceptId": "b1.sports.events",
+      "taughtInLessonId": "B1_lesson_23",
+      "requiredConcepts": [
+        "a2.sports.vocab",
+        "a2.hobbies"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_39",
@@ -3554,7 +4770,39 @@
       "instructions": "Nennen Sie Datum, Uhrzeit, Ort, Referenten und warum das Seminar interessant ist.",
       "wordLimit": 100,
       "tips": "Betreff: Einladung zum Seminar 'Gesunde Ernährung' ... Liebe Kollegen, ich möchte euch herzlich zu unserem Seminar einladen. Es findet am ... um ... in Raum ... statt. Referent ist ...",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_40",
@@ -3563,7 +4811,39 @@
       "instructions": "Bedanken Sie sich für die Bestätigung, weisen Sie auf den Fehler hin, nennen Sie das richtige Datum und bitten Sie um eine korrigierte Bestätigung.",
       "wordLimit": 80,
       "tips": "Betreff: Korrektur Kündigungsbestätigung ... Sehr geehrte Damen und Herren, vielen Dank für Ihre Bestätigung. Leider ist das angegebene Kündigungsdatum falsch. Richtig ist der ... Bitte senden Sie mir eine korrigierte Version.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_41",
@@ -3572,7 +4852,39 @@
       "instructions": "Nennen Sie die Zutaten, erklären Sie die Schritte einfach und in der richtigen Reihenfolge, geben Sie einen Tipp.",
       "wordLimit": 130,
       "tips": "Mein Lieblingsgericht ist ... Sie brauchen: ... Zürst ... Dann ... Zum Schluss ... Ein Tipp: ...",
-      "lessonId": "B1_lesson_17"
+      "lessonId": "B1_lesson_17",
+      "conceptId": "b1.news.understanding",
+      "taughtInLessonId": "B1_lesson_17",
+      "requiredConcepts": [
+        "b1.social.media",
+        "b1.passiv.praesens"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_42",
@@ -3581,7 +4893,39 @@
       "instructions": "Nennen Sie Ihre Versicherungsnummer, Datum und Ort des Diebstahls, eine Beschreibung des Fahrrads und ob Sie bereits eine Anzeige bei der Polizei gemacht haben.",
       "wordLimit": 100,
       "tips": "Betreff: Schadensmeldung - Fahrraddiebstahl ... Sehr geehrte Damen und Herren, hiermit melde ich einen Schadensfall. Mein Fahrrad wurde am ... in ... gestohlen. Ich habe bereits Anzeige bei der Polizei erstattet.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_43",
@@ -3590,7 +4934,39 @@
       "instructions": "Nennen Sie Argumente für oder gegen Tierversuche, geben Sie Ihre persönliche Meinung und begründen Sie sie.",
       "wordLimit": 130,
       "tips": "Das Thema Tierversuche ist sehr komplex. Einerseits helfen sie, neue Medikamente zu entwickeln ... Andererseits leiden die Tiere darunter ... Meiner Meinung nach sollte man Alternativen fördern.",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Meiner Meinung nach gibt es sowohl Vor- als auch Nachteile.",
+        "Einerseits ... andererseits muss man auch bedenken dass ..."
+      ]
     },
     {
       "id": "B1_write_44",
@@ -3599,7 +4975,39 @@
       "instructions": "Beschreiben Sie das Problem, wann es passiert ist und bitten Sie um einen Handwerker.",
       "wordLimit": 80,
       "tips": "Betreff: Defekte Spülmaschine ... Sehr geehrter Herr ... leider funktioniert unsere Spülmaschine seit gestern nicht mehr. Das Wasser läuft nicht ab. Bitte schicken Sie einen Techniker.",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_45",
@@ -3608,7 +5016,39 @@
       "instructions": "Entschuldigen Sie sich, nennen Sie den Grund und schlagen Sie ein konkretes Zahlungsdatum vor.",
       "wordLimit": 80,
       "tips": "Betreff: Bitte um Zahlungsaufschub - Rechnung Nr. ... Sehr geehrte Damen und Herren, leider kann ich Ihre Rechnung nicht fristgerecht bezahlen. Ich bitte um Zahlungsaufschub bis zum ...",
-      "lessonId": "B1_lesson_8"
+      "lessonId": "B1_lesson_8",
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_46",
@@ -3617,7 +5057,39 @@
       "instructions": "Nennen Sie den Titel, den Autor, worum es geht und warum es für B1-Lerner geeignet ist.",
       "wordLimit": 120,
       "tips": "Ich kann das Buch '...' von ... sehr empfehlen. Es ist spannend und in einfacher Sprache geschrieben ... Die Geschichte handelt von ... Perfekt für B1-Lerner!",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "conceptId": "b1.reading.literature",
+      "taughtInLessonId": "B1_lesson_22",
+      "requiredConcepts": [
+        "b1.film.culture",
+        "b1.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_47",
@@ -3626,7 +5098,39 @@
       "instructions": "Nennen Sie Ihre Versichertennummer, die alte und die neue Adresse, und bitten Sie um Bestätigung der Änderung.",
       "wordLimit": 60,
       "tips": "Betreff: Adressänderung ... Versichertennummer: ... Sehr geehrte Damen und Herren, hiermit teile ich Ihnen meine neue Adresse mit. Alte Adresse: ... Neue Adresse: ...",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     },
     {
       "id": "B1_write_48",
@@ -3635,7 +5139,39 @@
       "instructions": "Beschreiben Sie, was passiert ist, wo es war, wie Sie sich gefühlt haben und warum dieses Erlebnis besonders war.",
       "wordLimit": 130,
       "tips": "Liebes Tagebuch, heute hatte ich ein wirklich besonderes Erlebnis ... Ich war ... und habe ... Zum ersten Mal in meinem Leben ... Ich war so glücklich/stolz/aufgeregt ...",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_49",
@@ -3644,7 +5180,39 @@
       "instructions": "Bedanken Sie sich, nennen Sie, was Ihnen gut gefallen hat, was verbessert werden könnte und wie es für Sie insgesamt war.",
       "wordLimit": 100,
       "tips": "Betreff: Feedback zum B1-Kurs ... Lieber Herr ... ich möchte mich herzlich für den Kurs bedanken. Besonders gut fand ich ... Ein Verbesserungsvorschlag wäre ...",
-      "lessonId": "B1_lesson_21"
+      "lessonId": "B1_lesson_21",
+      "conceptId": "b1.university.studies",
+      "taughtInLessonId": "B1_lesson_21",
+      "requiredConcepts": [
+        "b1.education.system",
+        "a2.study.vocab"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Ich bin der Meinung dass ...",
+        "Ich wuerde mich freuen bald von Ihnen zu hoeren."
+      ]
     },
     {
       "id": "B1_write_50",
@@ -3653,7 +5221,39 @@
       "instructions": "Stellen Sie Ihre Idee vor, erklären Sie den Nutzen für das Team und bieten Sie an, das Projekt zu leiten.",
       "wordLimit": 120,
       "tips": "Betreff: Projektvorschlag ... Sehr geehrter Herr ... ich möchte Ihnen eine Idee vorstellen, die unsere Arbeitsabläufe verbessern könnte ... Konkret schlage ich vor ... Ich würde mich freuen, dieses Projekt zu leiten.",
-      "lessonId": "B1_lesson_6"
+      "lessonId": "B1_lesson_6",
+      "conceptId": "b1.telephone.formal",
+      "taughtInLessonId": "B1_lesson_6",
+      "requiredConcepts": [
+        "a2.telephone.basic",
+        "a2.prateritum.haben.sein"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ],
+      "usefulPhrases": [
+        "Mit freundlichen Gruessen",
+        "Ich bedanke mich im Voraus fuer Ihre Bemuehungen."
+      ]
     }
   ],
   "B2": [

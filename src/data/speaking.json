@@ -4780,7 +4780,35 @@
         "In Zukunft möchte ich ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_2",
@@ -4797,7 +4825,35 @@
         "Das sehe ich anders, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_3",
@@ -4814,7 +4870,35 @@
         "Ich erwarte, dass ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_4",
@@ -4831,7 +4915,35 @@
         "Im Vergleich zu ... ist dieser Kurs ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_5",
@@ -4848,7 +4960,35 @@
         "Sind wir uns einig, dass ...?"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_6",
@@ -4865,7 +5005,35 @@
         "Was ich an meiner Stadt mag, ist ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_7",
@@ -4882,7 +5050,35 @@
         "Wie waren deine Erfahrungen?"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_8",
@@ -4899,7 +5095,35 @@
         "Haben Sie noch Fragen?"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_9",
@@ -4916,7 +5140,35 @@
         " Ich persönlich bevorzuge ..., weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_10",
@@ -4933,7 +5185,35 @@
         "Ich hoffe, dass ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_13"
+      "lessonId": "B1_lesson_13",
+      "conceptId": "b1.future.plans",
+      "taughtInLessonId": "B1_lesson_13",
+      "requiredConcepts": [
+        "b1.future.technology",
+        "b1.futur1"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_11",
@@ -4950,7 +5230,35 @@
         "Wenn ich ... bin, kann ich abschalten."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_12",
@@ -4968,7 +5276,35 @@
         "Da stimme ich dir zu, aber ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_13",
@@ -4986,7 +5322,35 @@
         "Einverstanden, dann machen wir ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_14",
@@ -5003,7 +5367,35 @@
         "Ich glaube, dass ... mich beeindrucken würde."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_15",
@@ -5021,7 +5413,35 @@
         "Ich möchte mich beschweren, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_16",
@@ -5038,7 +5458,35 @@
         "Was mich besonders reizt, ist ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_7"
+      "lessonId": "B1_lesson_7",
+      "conceptId": "b1.job.application",
+      "taughtInLessonId": "B1_lesson_7",
+      "requiredConcepts": [
+        "a2.jobs.professions",
+        "a2.formal.letter.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_17",
@@ -5056,7 +5504,35 @@
         "Zusammenfassend kann man sagen ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_8"
+      "lessonId": "B1_lesson_8",
+      "conceptId": "b1.social.media",
+      "taughtInLessonId": "B1_lesson_8",
+      "requiredConcepts": [
+        "a2.social.media.basic",
+        "a2.present.passive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_18",
@@ -5074,7 +5550,35 @@
         "Einigen wir uns auf ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_19",
@@ -5091,7 +5595,35 @@
         "Rückblickend hat mich dieses Erlebnis gelehrt, dass ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_4"
+      "lessonId": "B1_lesson_4",
+      "conceptId": "b1.culture.festivals",
+      "taughtInLessonId": "B1_lesson_4",
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_20",
@@ -5108,7 +5640,35 @@
         "Zusammenfassend denke ich, dass ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_21",
@@ -5126,7 +5686,35 @@
         "Okay, dann kaufen wir zürst ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_22",
@@ -5143,7 +5731,35 @@
         "Für Leute, die ... ist es besonders geeignet."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_23",
@@ -5160,7 +5776,35 @@
         "Diese Reise werde ich nie vergessen, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_24",
@@ -5178,7 +5822,35 @@
         "Vielleicht können wir uns abwechseln?"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_25",
@@ -5196,7 +5868,35 @@
         "Wenn alle ... würden, wäre das schon viel."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_9"
+      "lessonId": "B1_lesson_9",
+      "conceptId": "b1.environment.protection",
+      "taughtInLessonId": "B1_lesson_9",
+      "requiredConcepts": [
+        "a2.environment.action",
+        "a2.infinitiv.zu"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_26",
@@ -5214,7 +5914,35 @@
         "Dann machen wir ... und du organisierst ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_4"
+      "lessonId": "B1_lesson_4",
+      "conceptId": "b1.culture.festivals",
+      "taughtInLessonId": "B1_lesson_4",
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_27",
@@ -5232,7 +5960,35 @@
         "Vielleicht sollten wir beide ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_28",
@@ -5250,7 +6006,35 @@
         "Ich bin ihr sehr dankbar für ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_4"
+      "lessonId": "B1_lesson_4",
+      "conceptId": "b1.culture.festivals",
+      "taughtInLessonId": "B1_lesson_4",
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_29",
@@ -5268,7 +6052,35 @@
         "Prima, das setzen wir um."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_30",
@@ -5286,7 +6098,35 @@
         "Ich kann diesen Film empfehlen, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_11"
+      "lessonId": "B1_lesson_11",
+      "conceptId": "b1.film.discussion",
+      "taughtInLessonId": "B1_lesson_11",
+      "requiredConcepts": [
+        "a2.entertainment.hobbies",
+        "a2.relative.clauses.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_31",
@@ -5303,7 +6143,35 @@
         "Ich kann das Buch jedem empfehlen, der ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_22"
+      "lessonId": "B1_lesson_22",
+      "conceptId": "b1.reading.literature",
+      "taughtInLessonId": "B1_lesson_22",
+      "requiredConcepts": [
+        "b1.film.culture",
+        "b1.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_32",
@@ -5321,7 +6189,35 @@
         "Am Ende kommt es darauf an, wo man wohnt."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_33",
@@ -5339,7 +6235,35 @@
         "Dann holen wir die Zutaten im Supermarkt."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_34",
@@ -5357,7 +6281,35 @@
         "An diesem Tag isst man traditionell ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_4"
+      "lessonId": "B1_lesson_4",
+      "conceptId": "b1.culture.festivals",
+      "taughtInLessonId": "B1_lesson_4",
+      "requiredConcepts": [
+        "a2.culture.holidays",
+        "a2.modal.verbs"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_35",
@@ -5375,7 +6327,35 @@
         "Können Sie mir sagen, wie das weitere Vorgehen ist?"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_18"
+      "lessonId": "B1_lesson_18",
+      "conceptId": "b1.restaurant.critique",
+      "taughtInLessonId": "B1_lesson_18",
+      "requiredConcepts": [
+        "a2.restaurant.ordering",
+        "a2.complaint.simple"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_36",
@@ -5393,7 +6373,35 @@
         "Ich könnte mir vorstellen, auf dem Land zu wohnen, wenn ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_37",
@@ -5411,7 +6419,35 @@
         "Hauptsache, sie freut sich!"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_16"
+      "lessonId": "B1_lesson_16",
+      "conceptId": "b1.party.social",
+      "taughtInLessonId": "B1_lesson_16",
+      "requiredConcepts": [
+        "a2.invitations",
+        "a2.reflexive.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_38",
@@ -5429,7 +6465,35 @@
         "Wenn ich gestresst bin, hilft es mir, ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_12"
+      "lessonId": "B1_lesson_12",
+      "conceptId": "b1.nutrition.healthy",
+      "taughtInLessonId": "B1_lesson_12",
+      "requiredConcepts": [
+        "a2.food.ordering",
+        "a2.relative.clauses.nom.acc"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_39",
@@ -5447,7 +6511,35 @@
         "Ich bin geteilter Meinung, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_40",
@@ -5465,7 +6557,35 @@
         "Das ist eine tolle Idee, lass uns das machen!"
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_20"
+      "lessonId": "B1_lesson_20",
+      "conceptId": "b1.volunteering",
+      "taughtInLessonId": "B1_lesson_20",
+      "requiredConcepts": [
+        "b1.environment.conservation",
+        "b1.umzu.clauses"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_41",
@@ -5483,7 +6603,35 @@
         "Es schmeckt am besten, wenn ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_19"
+      "lessonId": "B1_lesson_19",
+      "conceptId": "b1.travel.preparation",
+      "taughtInLessonId": "B1_lesson_19",
+      "requiredConcepts": [
+        "a2.travel.vocab",
+        "b1.public.transport"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_42",
@@ -5501,7 +6649,35 @@
         "Ich könnte mir vorstellen, bei ... mitzumachen."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_43",
@@ -5519,7 +6695,35 @@
         "Mein Ziel ist es, in ... Deutsch zu können."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_44",
@@ -5537,7 +6741,35 @@
         "Bei Konflikten reden wir einfach miteinander."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_14"
+      "lessonId": "B1_lesson_14",
+      "conceptId": "b1.rental.housing",
+      "taughtInLessonId": "B1_lesson_14",
+      "requiredConcepts": [
+        "a2.housing.vocab",
+        "a2.prepositions.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_45",
@@ -5555,7 +6787,35 @@
         "Ich bin zuversichtlich, dass ich es schaffe, weil ..."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_46",
@@ -5573,7 +6833,35 @@
         "Am Ende kommt es auf den Job an."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_47",
@@ -5591,7 +6879,35 @@
         "Am besten fliegen wir nach ... und reisen dann weiter."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_24"
+      "lessonId": "B1_lesson_24",
+      "conceptId": "b1.traffic.jam",
+      "taughtInLessonId": "B1_lesson_24",
+      "requiredConcepts": [
+        "b1.public.transport",
+        "b1.genitive.intro"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_48",
@@ -5609,7 +6925,35 @@
         "Insgesamt überwiegen die Vorteile."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_5"
+      "lessonId": "B1_lesson_5",
+      "conceptId": "b1.technology.future",
+      "taughtInLessonId": "B1_lesson_5",
+      "requiredConcepts": [
+        "a2.technology.basic",
+        "a2.future.tenses"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_49",
@@ -5627,7 +6971,35 @@
         "Wichtig ist, respektvoll zu bleiben, auch wenn man anderer Meinung ist."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_1"
+      "lessonId": "B1_lesson_1",
+      "conceptId": "b1.opinion.media",
+      "taughtInLessonId": "B1_lesson_1",
+      "requiredConcepts": [
+        "a2.opinions.dass",
+        "a2.connectors.weil"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     },
     {
       "id": "B1_speak_50",
@@ -5645,7 +7017,35 @@
         "Ich bin froh, dass ich diese Erfahrungen machen durfte."
       ],
       "level": "B1",
-      "lessonId": "B1_lesson_3"
+      "lessonId": "B1_lesson_3",
+      "conceptId": "b1.education.future",
+      "taughtInLessonId": "B1_lesson_3",
+      "requiredConcepts": [
+        "a2.education.school",
+        "a2.comparisons.basic"
+      ],
+      "rubric": [
+        {
+          "criterion": "Structure",
+          "description": "Logical organization and coherence",
+          "points": 5
+        },
+        {
+          "criterion": "Content",
+          "description": "Relevance and depth of ideas",
+          "points": 5
+        },
+        {
+          "criterion": "Language",
+          "description": "Grammar, vocabulary, and accuracy",
+          "points": 5
+        },
+        {
+          "criterion": "Task Completion",
+          "description": "All parts of the task addressed",
+          "points": 5
+        }
+      ]
     }
   ],
   "B2": [
