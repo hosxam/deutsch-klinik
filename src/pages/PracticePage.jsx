@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useCallback } from 'react';
-import { recordVocabAnswer, updateLevelProgress, getVocabMastery, getState } from '../utils/store';
+import { recordVocabAnswer, updateLevelProgress, getState, getLocalDateKey } from '../utils/store';
 import { recordPracticeAttempt } from '../utils/practiceProgress';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
@@ -65,6 +65,69 @@ function getTopics(level) {
     if (w.topic && w.topic.trim()) topics.add(w.topic.trim());
   });
   return [...topics].sort();
+}
+
+/**
+ * Filter questions through SRS queue and practice progress.
+ * Priority: due reviews > mistake cards > new cards.
+ * Excludes mastered not-due items. Caps at sessionSize.
+ */
+/* eslint-disable no-unused-vars */
+function getPracticeProgressFallback() {
+  try {
+    return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}');
+  } catch (e) {
+    return {};
+  }
+}
+/* eslint-enable no-unused-vars */
+
+function filterBySrsQueue(questions, level, sessionSize) {
+  const state = getState();
+  const today = getLocalDateKey();
+  const mastery = state.vocabularyMastery || {};
+
+  // Load practiceProgress_v1 as secondary filter
+  let ppData = getPracticeProgressFallback();
+  const ppVocab = ppData.vocabulary || {};
+
+  const dueReviews = [];
+  const mistakeCards = [];
+  const newCards = [];
+
+  questions.forEach(q => {
+    const sw = q.sourceWord;
+    if (!sw || !sw.id) {
+      // fallback: include items without sourceWord
+      newCards.push(q);
+      return;
+    }
+    const wordId = `${sw._level || level}_${sw.id}`;
+    const m = mastery[wordId];
+    const pp = ppVocab[wordId] || {};
+
+    // Exclude mastered + not yet due
+    if (m && m.mastered && m.due && m.due > today) return;
+
+    // Exclude practiceProgress completed_correct without SM-2 data (assumed already done)
+    if (pp.status === 'completed_correct' && !m) return;
+
+    // Exclude practiceProgress completed_correct with SM-2 mastered + not due
+    if (pp.status === 'completed_correct' && m && m.mastered && m.due && m.due > today) return;
+
+    // Categorize by SRS priority
+    if (m && m.incorrect >= 2) {
+      mistakeCards.push(q);
+    } else if (m && m.due <= today && !m.mastered) {
+      dueReviews.push(q);
+    } else {
+      newCards.push(q);
+    }
+  });
+
+  // Priority order: due reviews, then mistake cards, then new cards, capped at sessionSize
+  const ordered = [...dueReviews, ...mistakeCards, ...newCards];
+  return ordered.slice(0, Math.min(sessionSize, ordered.length));
 }
 
 // Filter a word array by topic (empty string or 'all' means no filter)
@@ -241,7 +304,8 @@ export default function PracticePage() {
     }
 
     qs = shuffleArray(qs);
-    setQuestions(qs.slice(0, questionCount));
+    const filteredQ = filterBySrsQueue(qs, selectedLevel, questionCount);
+    setQuestions(filteredQ);
     setCurrentIndex(0);
     setScore(0);
     setTotalAnswered(0);
@@ -584,7 +648,8 @@ export default function PracticePage() {
 
     if (qs.length > 0) {
       const shuffled = shuffleArray(qs);
-      setQuestions(shuffled.slice(0, questionCount));
+      const filteredQ = filterBySrsQueue(shuffled, selectedLevel, questionCount);
+      setQuestions(filteredQ);
     } else {
       return (
         <LevelLock levelId={selectedLevel}>
@@ -831,12 +896,31 @@ export default function PracticePage() {
     );
   }
 
-  // No questions loaded yet
+  // No questions loaded yet (SRS filtered empty state)
   if (!currentQ) {
+    const modeLabel = PRACTICE_MODES.find(m => m.key === mode)?.label || mode;
+    const topicLabel = selectedTopic === 'all' ? '' : ` for "${selectedTopic}"`;
     return (
       <LevelLock levelId={selectedLevel}>
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '1rem', textAlign: 'center' }}>
-          <p style={{ color: 'var(--text-muted)' }}>Loading questions...</p>
+          <CheckCircle size={36} color="var(--text-muted)" />
+          <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', marginTop: '0.75rem' }}>
+            All Caught Up!
+          </h3>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem', lineHeight: 1.5 }}>
+            No new {modeLabel.toLowerCase()} questions available{topicLabel} at {selectedLevel}.
+            Review flashcards or complete more lessons to unlock new vocabulary.
+          </p>
+          <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginTop: '1rem', flexWrap: 'wrap' }}>
+            <button style={s.btn} onClick={() => setMode(null)}>
+              <List size={14} style={{ marginRight: '0.3rem' }} />Pick Another Mode
+            </button>
+            <Link to={`/level/${selectedLevel}/flashcards`}>
+              <button style={{ ...s.btn, borderColor: 'var(--accent)', color: 'var(--accent)' }}>
+                <RefreshCw size={14} style={{ marginRight: '0.3rem' }} />Flashcards
+              </button>
+            </Link>
+          </div>
         </div>
       </LevelLock>
     );

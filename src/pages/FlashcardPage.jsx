@@ -94,7 +94,7 @@ function displayWord(card) {
 
 export default function FlashcardPage() {
   const { levelId } = useParams();
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('due');
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(false);

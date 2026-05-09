@@ -17,7 +17,8 @@
     "validate-curriculum": "node scripts/validate-curriculum-map.cjs",
     "validate-teach-before-test": "node scripts/validate-teach-before-test.cjs",
     "build-pilot-curriculum": "node scripts/build-pilot-curriculum.cjs",
-    "validate-fsp-quality": "node scripts/validate-fsp-quality.cjs"
+    "validate-fsp-quality": "node scripts/validate-fsp-quality.cjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",
@@ -39,6 +40,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "gh-pages": "^6.3.0",
     "globals": "^17.5.0",
-    "vite": "^8.0.10"
+    "jsdom": "^29.1.1",
+    "vite": "^8.0.10",
+    "vitest": "^4.1.5"
   }
 }

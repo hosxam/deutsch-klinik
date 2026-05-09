@@ -517,6 +517,47 @@ export function getDailyFlashcardQueue(wordIds) {
   return getDueVocabWords(wordIds);
 }
 
+/**
+ * Build a vocabulary queue for PracticePage respecting SRS state.
+ * Returns { dueReviews, mistakeCards, newCards, totalAvailable }.
+ * This is the source-of-truth queue for vocabulary practice sessions.
+ */
+export function getVocabQueue(wordIds) {
+  const today = getLocalDateKey();
+  const dueReviews = [];
+  const mistakeCards = [];
+  const newCards = [];
+
+  wordIds.forEach(id => {
+    const m = state.vocabularyMastery[id];
+    if (!m) {
+      newCards.push(id);
+    } else if (m.mastered && m.due > today) {
+      // mastered and not yet due = skip
+    } else if (m.incorrect > m.correct && m.incorrect >= 2) {
+      mistakeCards.push(id);
+    } else if (m.due <= today && !m.mastered) {
+      dueReviews.push(id);
+    } else {
+      dueReviews.push(id);
+    }
+  });
+
+  const all = [...dueReviews, ...mistakeCards, ...newCards];
+  return { dueReviews, mistakeCards, newCards, totalAvailable: all.length };
+}
+
+/**
+ * Check if a word should be excluded from practice based on SRS state.
+ * Returns true if the word should NOT be practiced.
+ */
+export function isVocabPracticeExcluded(wordId) {
+  const m = state.vocabularyMastery[wordId];
+  if (!m) return false; // never seen = include
+  const today = getLocalDateKey();
+  return m.mastered && m.due > today;
+}
+
 export function recordStudyMinutes({ level, type, minutes, id }) {
   const entry = {
     level,
@@ -730,7 +771,7 @@ export function isLevelUnlocked(levelId, levelsData) {
 
 // ===== STREAK =====
 
-function getLocalDateKey(offsetDays = 0) {
+export function getLocalDateKey(offsetDays = 0) {
   const d = new Date();
   if (offsetDays) d.setDate(d.getDate() + offsetDays);
   return getLocalDateKeyFromDate(d);
