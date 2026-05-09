@@ -7,7 +7,7 @@
 import {
   getState, updateState, resetAllProgress,
   completeLesson, getCompletedLessons,
-  completeListening, completeReading,
+  completeListening, completeReading, completeWriting,
   getGrammarMastery, recordGrammarAnswer,
   getVocabMastery, recordVocabAnswer,
   updateStreak, recordStudyMinutes, recordStudyTime,
@@ -35,6 +35,7 @@ export const localStorageAdapter = {
 
   completeListening(level, exerciseId) { completeListening(level, exerciseId); },
   completeReading(level, exerciseId) { completeReading(level, exerciseId); },
+  completeWriting(level, exerciseId) { completeWriting(level, exerciseId); },
 
   updateStreak() { updateStreak(); },
   recordStudyMinutes(data) { recordStudyMinutes(data); },

@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState, updateLevelProgress } from '../utils/store';
-import { recordPracticeAttempt } from '../utils/practiceProgress';
+import { getState, updateState, updateLevelProgress, recordAnswer, completeWriting } from '../utils/store';
+import { recordPracticeAttempt, getPracticeItemStatus } from '../utils/practiceProgress';
 import writingData from '../data/writing.json';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
-import { Copy, ClipboardCheck, Sparkles, Loader2, CheckCircle2, XCircle, ShieldCheck } from 'lucide-react';
+import { Copy, ClipboardCheck, Sparkles, Loader2, CheckCircle2, XCircle, ShieldCheck, CheckCircle } from 'lucide-react';
 import { correctWriting, isCorrectionEnabled } from '../utils/aiCorrection';
 
 export default function WritingPage() {
@@ -43,15 +43,61 @@ export default function WritingPage() {
     setTimerActive(true);
   };
 
+  const recordWritingResult = (result, errMsg) => {
+    // Always record through practiceProgress, even on AI failure
+    if (result && result.score !== null && result.score !== undefined) {
+      const score = result.score;
+      const wasCorrect = score >= 8;
+      recordPracticeAttempt('writing', prompt.id, {
+        correct: wasCorrect,
+        score: score,
+        maxScore: 10,
+        level: levelId,
+        topic: prompt.title || 'Writing',
+        userAnswer: text,
+      });
+      // Track in store.js writingCompleted for exam unlock counting
+      if (wasCorrect) {
+        completeWriting(levelId, prompt.id);
+      }
+      // Record mistakes in store.js for MistakeNotebook if score < 8
+      if (!wasCorrect) {
+        let wrongIndex = 0;
+        (result.mistakes || []).slice(0, 5).forEach((m) => {
+          wrongIndex++;
+          recordAnswer(
+            levelId,
+            `${prompt.id}_mistake_${wrongIndex}`,
+            m.original || 'self-check needed',
+            m.corrected || 'review needed',
+            prompt.title || 'Writing',
+            false,
+            'writing'
+          );
+        });
+      }
+    } else {
+      // No score available (AI failed or no score in result) - record as needs review
+      recordPracticeAttempt('writing', prompt.id, {
+        correct: false,
+        score: errMsg ? 0 : 5,
+        maxScore: 10,
+        level: levelId,
+        topic: prompt.title || 'Writing',
+        userAnswer: text,
+      });
+    }
+  };
+
   const submitWriting = () => {
     setTimerActive(false);
     setSubmitted(true);
     setAiLoading(true);
     setAiError('');
     setAiResult(null);
-    const state = getState();
+    const s = getState();
     const writings = [
-      ...(state.writings || []),
+      ...(s.writings || []),
       {
         id: Date.now(),
         level: levelId,
@@ -70,18 +116,11 @@ export default function WritingPage() {
       userAnswer: text,
     }).then((result) => {
       setAiResult(result);
-      // Record via unified practice model
-      const score = result?.score ?? (result?.correctedText ? 8 : 5);
-      recordPracticeAttempt('writing', prompt.id, {
-        correct: score >= 8,
-        score: score,
-        maxScore: 10,
-        level: levelId,
-        topic: prompt.title || 'Writing',
-        userAnswer: text,
-      });
+      recordWritingResult(result, null);
     }).catch((err) => {
       setAiError(err.message);
+      // Record fallback attempt even when AI fails
+      recordWritingResult(null, err.message);
     }).finally(() => {
       setAiLoading(false);
     });
@@ -335,6 +374,21 @@ export default function WritingPage() {
         </div>
       </div>
 
+      {/* Status summary bar */}
+      {(() => {
+        const completed = prompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
+        const needsReview = prompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_incorrect').length;
+        const remaining = prompts.length - completed - needsReview;
+        if (completed + needsReview === 0) return null;
+        return (
+          <div className="flex gap-3 mb-4 text-xs" style={{ color: 'var(--text-muted)' }}>
+            {completed > 0 && <span style={{ color: '#3bff9e' }}>{completed} completed</span>}
+            {needsReview > 0 && <span style={{ color: '#ff3355' }}>{needsReview} needs review</span>}
+            {remaining > 0 && <span>{remaining} remaining</span>}
+          </div>
+        );
+      })()}
+
       <textarea
         ref={writingRef}
         aria-label="Writing response"
@@ -404,9 +458,21 @@ export default function WritingPage() {
         <select onChange={(e) => setCurrentIndex(Number(e.target.value))} value={currentIndex}
           aria-label="Select writing prompt"
           className="px-3 py-2 rounded-lg text-sm outline-none" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}>
-          {prompts.map((p, i) => (
-            <option key={p.id} value={i}>{p.title}</option>
-          ))}
+          {prompts.map((p, i) => {
+            const ps = getPracticeItemStatus('writing', p.id);
+            let prefix = '';
+            let optStyle = {};
+            if (ps.status === 'completed_correct') {
+              prefix = '✓ ';
+              optStyle = { color: '#3bff9e' };
+            } else if (ps.status === 'completed_incorrect') {
+              prefix = '⚠ ';
+              optStyle = { color: '#ff3355' };
+            }
+            return (
+              <option key={p.id} value={i} style={optStyle}>{prefix}{p.title}</option>
+            );
+          })}
         </select>
       </div>
 

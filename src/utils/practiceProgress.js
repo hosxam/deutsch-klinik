@@ -58,6 +58,8 @@ export function recordPracticeAttempt(skill, itemId, result = {}) {
     cur.status = result.correct ? 'completed_correct' : 'completed_incorrect';
   }
   if (result.score !== undefined) {
+    cur.score = result.score;
+    cur.maxScore = result.maxScore || 10;
     cur.status = result.score >= 8 ? 'completed_correct' : 'completed_incorrect';
   }
   // Set dueDate for scheduling
