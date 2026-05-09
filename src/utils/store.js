@@ -808,6 +808,11 @@ export function markMistakeMasteredById(level, exerciseId) {
   state.mistakeNotebook = Object.fromEntries(Object.entries(state.mistakeNotebook || {}).filter(([, m]) => (
     m.exerciseId !== exerciseId
   )));
+  // Also remove the SRS vocabularyMastery entry for this mistake
+  const mistakeId = 'mistake_' + level + '_' + exerciseId;
+  if (state.vocabularyMastery && state.vocabularyMastery[mistakeId]) {
+    delete state.vocabularyMastery[mistakeId];
+  }
   if (state.incorrectAnswers[level].length < before) saveState(state);
 }
 
@@ -891,7 +896,7 @@ function getSpeakingPassedCount(level) {
 /**
  * Count due (unresolved) mistakes for a level.
  */
-function getDueMistakeCount(level) {
+export function getDueMistakeCount(level) {
   const today = getLocalDateKey();
   const mistakes = state.incorrectAnswers[level] || [];
   if (!Array.isArray(mistakes)) return 0;

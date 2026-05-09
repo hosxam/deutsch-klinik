@@ -30,6 +30,9 @@ export default function MistakeNotebookPage() {
   const [filterSkill, setFilterSkill] = useState('all');
   const [activeTab, setActiveTab] = useState('mistakes');
   const [expandedMistake, setExpandedMistake] = useState(null);
+  const [currentReviewIdx, setCurrentReviewIdx] = useState(null);
+  const [reviewQueue, setReviewQueue] = useState([]);
+  const [lastRatingFeedback, setLastRatingFeedback] = useState(null);
 
   useEffect(() => {
     const i = setInterval(() => setState({ ...getState() }), 1000);
@@ -90,22 +93,136 @@ export default function MistakeNotebookPage() {
 
   // Get due count for today
   const today = getLocalDateKey();
+
+  // Helper: check if a single mistake is due today
+  function isMistakeDueToday(lvl, m) {
+    const mistakeId = 'mistake_' + lvl + '_' + (m.exerciseId || '');
+    const vm = getVocabMastery(mistakeId);
+    if (vm && vm.due && vm.due <= today) return true;
+    if (!vm || !vm.due) return true; // No SRS data yet = due
+    return false;
+  }
+
   const dueMistakeCount = (() => {
     let count = 0;
     Object.entries(allMistakes).forEach(([lvl, ms]) => {
       ms.forEach(m => {
-        const mistakeId = 'mistake_' + lvl + '_' + (m.exerciseId || '');
-        const vm = getVocabMastery(mistakeId);
-        if (vm && vm.due && vm.due <= today) {
-          count++;
-        } else if (!vm || !vm.due) {
-          // No SRS data yet = due (pending first review)
-          count++;
-        }
+        if (isMistakeDueToday(lvl, m)) count++;
       });
     });
     return count;
   })();
+
+  // Build the due review queue: flat array of { level, mistake } sorted by level
+  function buildDueQueue() {
+    const queue = [];
+    Object.entries(allMistakes).forEach(([lvl, ms]) => {
+      ms.forEach(m => {
+        if (isMistakeDueToday(lvl, m)) {
+          queue.push({ level: lvl, mistake: m });
+        }
+      });
+    });
+    return queue;
+  }
+
+  // Start review mode: compute due queue, set index to 0
+  function startReview() {
+    const q = buildDueQueue();
+    setReviewQueue(q);
+    setCurrentReviewIdx(q.length > 0 ? 0 : null);
+    setLastRatingFeedback(null);
+  }
+
+  // Get readable next review label from SRS object
+  function getNextReviewLabel(mistakeId) {
+    const vm = getVocabMastery(mistakeId);
+    if (!vm || !vm.due) return 'now';
+    const d = vm.due;
+    if (d === today) return 'today';
+    if (d < today) return 'now';
+    const parts = d.split('-');
+    if (parts.length === 3) return `${parts[2]}.${parts[1]}.${parts[0]}`;
+    return d;
+  }
+
+  // Handle rating: update SRS, show feedback, advance queue
+  function handleRating(level, mistake, rating) {
+    const mistakeId = 'mistake_' + level + '_' + (mistake.exerciseId || '');
+    recordVocabAnswer(mistakeId, rating, {
+      level,
+      userAnswer: mistake.userAnswer || '',
+      correctAnswer: mistake.correctAnswer || '',
+      topic: mistake.topic || (mistake.skill || 'general'),
+    });
+
+    const labels = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
+    const nextLabel = getNextReviewLabel(mistakeId);
+    setLastRatingFeedback({
+      text: `${labels[rating] || 'Rated'} - next review: ${nextLabel}`,
+      color: rating === 1 ? '#ff3355' : rating === 2 ? '#ffaa33' : rating === 3 ? '#3bff9e' : 'var(--accent)',
+    });
+
+    const advanced = advanceToNextDue(level, mistake.exerciseId || '');
+    // Re-read state to update derived values (due count, etc.)
+    setTimeout(() => setState({ ...getState() }), 0);
+  }
+
+  // Advance review queue past the current card
+  function advanceToNextDue(skipLevel, skipExerciseId) {
+    const skipId = 'mistake_' + skipLevel + '_' + skipExerciseId;
+    // Find next card in the current queue that is still due
+    const startIdx = currentReviewIdx !== null ? currentReviewIdx + 1 : 0;
+    for (let i = startIdx; i < reviewQueue.length; i++) {
+      const item = reviewQueue[i];
+      const itemId = 'mistake_' + item.level + '_' + (item.mistake.exerciseId || '');
+      if (itemId !== skipId && isMistakeDueToday(item.level, item.mistake)) {
+        setCurrentReviewIdx(i);
+        return true;
+      }
+    }
+    // Nothing found in current queue, try a full rebuild
+    const q = buildDueQueue();
+    setReviewQueue(q);
+    if (q.length > 0) {
+      // Find first item not the one we just rated
+      for (let i = 0; i < q.length; i++) {
+        const itemId = 'mistake_' + q[i].level + '_' + (q[i].mistake.exerciseId || '');
+        if (itemId !== skipId) {
+          setCurrentReviewIdx(i);
+          return true;
+        }
+      }
+    }
+    // Queue empty or only contains the rated card (which may still be due for Again)
+    setCurrentReviewIdx(null);
+    return false;
+  }
+
+  // Handle Mark as Mastered
+  function handleMasteredAndAdvance(level, exerciseId) {
+    markMistakeMasteredById(level, exerciseId);
+    setState({ ...getState() });
+    setLastRatingFeedback({ text: 'Marked as mastered', color: '#3bff9e' });
+    const advanced = advanceToNextDue(level, exerciseId || '');
+    if (!advanced) setCurrentReviewIdx(null);
+  }
+
+  // Handle Remove
+  function handleRemoveAndAdvance(level, mistake) {
+    const storeMistakes = getMistakesByLevel(level) || [];
+    const actualIdx = storeMistakes.findIndex(m =>
+      (mistake.exerciseId && m.exerciseId === mistake.exerciseId) ||
+      (mistake.date && m.date === mistake.date)
+    );
+    if (actualIdx >= 0) {
+      clearMistakeByIndex(level, actualIdx);
+      setState({ ...getState() });
+    }
+    setLastRatingFeedback({ text: 'Removed', color: 'var(--text-muted)' });
+    const advanced = advanceToNextDue(level, mistake.exerciseId || '');
+    if (!advanced) setCurrentReviewIdx(null);
+  }
 
   return (
     <PageShell>
@@ -177,45 +294,200 @@ export default function MistakeNotebookPage() {
       {/* Tab: Mistakes */}
       {activeTab === 'mistakes' && (
         <div>
-          {/* Filters */}
+          {/* Filters + Review Mode toggle */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
-            <Filter size={14} style={{ color: 'var(--text-muted)' }} />
-            <select
-              value={filterLevel}
-              onChange={e => setFilterLevel(e.target.value)}
-              style={{
-                padding: '6px 12px', borderRadius: '6px', fontSize: '13px',
-                backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
-                color: 'var(--text-primary)', outline: 'none',
-              }}
-            >
-              <option value="all">All Levels</option>
-              {levels.map(l => (
-                <option key={l} value={l}>{l} ({mistakeness[l] || 0})</option>
-              ))}
-            </select>
-            <select
-              value={filterSkill}
-              onChange={e => setFilterSkill(e.target.value)}
-              style={{
-                padding: '6px 12px', borderRadius: '6px', fontSize: '13px',
-                backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
-                color: 'var(--text-primary)', outline: 'none',
-              }}
-            >
-              {skillOptions.map(opt => (
-                <option key={opt.value} value={opt.value}>{opt.label} {opt.value !== 'all' && skillCounts[opt.value] ? `(${skillCounts[opt.value]})` : ''}</option>
-              ))}
-            </select>
+            {currentReviewIdx === null ? (
+              <>
+                <Filter size={14} style={{ color: 'var(--text-muted)' }} />
+                <select
+                  value={filterLevel}
+                  onChange={e => setFilterLevel(e.target.value)}
+                  style={{
+                    padding: '6px 12px', borderRadius: '6px', fontSize: '13px',
+                    backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+                    color: 'var(--text-primary)', outline: 'none',
+                  }}
+                >
+                  <option value="all">All Levels</option>
+                  {levels.map(l => (
+                    <option key={l} value={l}>{l} ({mistakeness[l] || 0})</option>
+                  ))}
+                </select>
+                <select
+                  value={filterSkill}
+                  onChange={e => setFilterSkill(e.target.value)}
+                  style={{
+                    padding: '6px 12px', borderRadius: '6px', fontSize: '13px',
+                    backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)',
+                    color: 'var(--text-primary)', outline: 'none',
+                  }}
+                >
+                  {skillOptions.map(opt => (
+                    <option key={opt.value} value={opt.value}>{opt.label} {opt.value !== 'all' && skillCounts[opt.value] ? `(${skillCounts[opt.value]})` : ''}</option>
+                  ))}
+                </select>
+                {dueMistakeCount > 0 && (
+                  <Button
+                    onClick={() => {
+                      setExpandedMistake(null);
+                      startReview();
+                    }}
+                    size="sm"
+                    variant="primary"
+                    style={{ marginLeft: 'auto', backgroundColor: '#3bff9e', color: '#000' }}
+                  >
+                    Review {dueMistakeCount} due cards
+                  </Button>
+                )}
+              </>
+            ) : (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', width: '100%' }}>
+                <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
+                  Reviewing mistakes ({currentReviewIdx + 1} of {reviewQueue.length})
+                </span>
+                <Button
+                  onClick={() => {
+                    setCurrentReviewIdx(null);
+                    setReviewQueue([]);
+                    setLastRatingFeedback(null);
+                    setExpandedMistake(null);
+                  }}
+                  size="sm"
+                  variant="ghost"
+                  style={{ marginLeft: 'auto', color: 'var(--text-muted)' }}
+                >
+                  X Exit review
+                </Button>
+              </div>
+            )}
           </div>
 
-          {Object.keys(groupByLevel).length === 0 ? (
+          {/* Review Mode: one card at a time */}
+          {currentReviewIdx !== null && reviewQueue[currentReviewIdx] && (() => {
+            const item = reviewQueue[currentReviewIdx];
+            const lvl = item.level;
+            const mistake = item.mistake;
+
+            return (
+              <Card key={'review_' + currentReviewIdx + '_' + (mistake.exerciseId || '')} style={{ padding: '16px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                  <LevelBadge level={lvl} size="sm" />
+                  {mistake.skill && <Badge label={mistake.skill} color="#8b5cf6" />}
+                </div>
+
+                {/* Front: what went wrong */}
+                <div style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '12px', lineHeight: '1.5' }}>
+                  {mistake.question || mistake.prompt || 'Mistake review'}
+                </div>
+                <div style={{ display: 'flex', gap: '12px', fontSize: '12px', flexWrap: 'wrap', marginBottom: '10px' }}>
+                  <span style={{ color: '#ff3355' }}>
+                    Your answer: <strong>{mistake.userAnswer || mistake.wrongAnswer || 'N/A'}</strong>
+                  </span>
+                  <span style={{ color: '#3bff9e' }}>
+                    Correct: <strong>{mistake.correctAnswer || 'N/A'}</strong>
+                  </span>
+                </div>
+
+                {/* Correct answer box */}
+                <div style={{
+                  padding: '12px', borderRadius: '8px', marginBottom: '14px',
+                  backgroundColor: 'rgba(59,255,158,0.06)', border: '1px solid rgba(59,255,158,0.2)',
+                  fontSize: '0.9rem', color: 'var(--text-primary)',
+                }}>
+                  <div style={{ fontWeight: 600, color: '#3bff9e', marginBottom: '4px' }}>
+                    Correct answer:
+                  </div>
+                  <div>{mistake.correctAnswer || 'N/A'}</div>
+                </div>
+
+                {/* Feedback banner */}
+                {lastRatingFeedback && (
+                  <div style={{
+                    padding: '8px 12px', borderRadius: '8px', marginBottom: '12px',
+                    backgroundColor: lastRatingFeedback.color + '18',
+                    color: lastRatingFeedback.color, fontWeight: 600, fontSize: '13px',
+                    textAlign: 'center',
+                  }}>
+                    {lastRatingFeedback.text}
+                  </div>
+                )}
+
+                {/* SM-2 rating buttons */}
+                <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>
+                  <button
+                    onClick={() => handleRating(lvl, mistake, 1)}
+                    style={{ ...smBtnStyle, background: 'rgba(255,51,85,0.12)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.25)' }}
+                    title="Forgot: comes back in ~10 min"
+                  >
+                    <RotateCcw size={12} /> Again
+                  </button>
+                  <button
+                    onClick={() => handleRating(lvl, mistake, 2)}
+                    style={{ ...smBtnStyle, background: 'rgba(255,170,51,0.1)', color: '#ffaa33', border: '1px solid rgba(255,170,51,0.25)' }}
+                    title="Remembered with effort: shorter interval"
+                  >
+                    <RefreshCw size={12} /> Hard
+                  </button>
+                  <button
+                    onClick={() => handleRating(lvl, mistake, 3)}
+                    style={{ ...smBtnStyle, background: 'rgba(59,255,158,0.1)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.25)' }}
+                    title="Remembered: normal SM-2 interval"
+                  >
+                    <Star size={12} /> Good
+                  </button>
+                  <button
+                    onClick={() => handleRating(lvl, mistake, 4)}
+                    style={{ ...smBtnStyle, background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', border: '1px solid rgba(0,240,255,0.2)' }}
+                    title="Easy: 1.3x bonus interval"
+                  >
+                    <CheckCircle size={12} /> Easy
+                  </button>
+                </div>
+
+                {/* Mark as mastered / Remove */}
+                <div style={{ display: 'flex', gap: '8px', justifyContent: 'center' }}>
+                  <Button
+                    onClick={() => handleMasteredAndAdvance(lvl, mistake.exerciseId)}
+                    size="sm"
+                    variant="ghost"
+                    style={{ border: '1px solid #3bff9e', color: '#3bff9e' }}
+                  >
+                    <Star size={12} style={{ marginRight: '4px' }} /> Mark as mastered
+                  </Button>
+                  <Button
+                    onClick={() => handleRemoveAndAdvance(lvl, mistake)}
+                    size="sm"
+                    variant="danger"
+                  >
+                    <Trash2 size={12} style={{ marginRight: '4px' }} /> Remove
+                  </Button>
+                </div>
+              </Card>
+            );
+          })()}
+
+          {/* Review mode: empty state - queue empty after all rated */}
+          {currentReviewIdx !== null && (!reviewQueue.length || currentReviewIdx >= reviewQueue.length || (reviewQueue.length > 0 && !reviewQueue[currentReviewIdx])) && (
+            <EmptyState
+              icon="🎉"
+              title="No more mistake cards due today"
+              description={
+                lastRatingFeedback
+                  ? `All due mistakes reviewed. ${lastRatingFeedback.text}`
+                  : 'All caught up! No mistake cards due for review today.'
+              }
+            />
+          )}
+
+          {/* Browse mode: show all mistakes (when not in review) */}
+          {currentReviewIdx === null && Object.keys(groupByLevel).length === 0 && (
             <EmptyState
               icon="✅"
               title="No mistakes found"
               description="No mistakes found with current filters. Keep practicing!"
             />
-          ) : (
+          )}
+          {currentReviewIdx === null && Object.keys(groupByLevel).length > 0 && (
             Object.entries(groupByLevel).map(([level, mistakes]) => (
               <div key={level} style={{ marginBottom: '20px' }}>
                 <h3 style={{
@@ -261,11 +533,6 @@ export default function MistakeNotebookPage() {
 
                         {isExpanded && (
                           <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
-                            {/* SM-2 Flashcard-style review — primary interaction */}
-                            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                              Review this mistake:
-                            </p>
-
                             {/* Show correct answer as flashcard back */}
                             <div style={{
                               padding: '12px', borderRadius: '8px', marginBottom: '10px',
@@ -278,11 +545,11 @@ export default function MistakeNotebookPage() {
                               <div>{mistake.correctAnswer || 'N/A'}</div>
                             </div>
 
-                            {/* SM-2 rating buttons (same as Flashcards: 1=Again, 2=Hard, 3=Good, 4=Easy) */}
+                            {/* SM-2 rating buttons */}
                             <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>
                               <button
                                 onClick={() => {
-                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  const mistakeId = 'mistake_' + level + '_' + mistake.exerciseId;
                                   recordVocabAnswer(mistakeId, 1, {
                                     level,
                                     userAnswer: mistake.userAnswer || 'Did not know',
@@ -298,7 +565,7 @@ export default function MistakeNotebookPage() {
                               </button>
                               <button
                                 onClick={() => {
-                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  const mistakeId = 'mistake_' + level + '_' + mistake.exerciseId;
                                   recordVocabAnswer(mistakeId, 2, {
                                     level,
                                     userAnswer: mistake.userAnswer || 'Remembered with effort',
@@ -314,7 +581,7 @@ export default function MistakeNotebookPage() {
                               </button>
                               <button
                                 onClick={() => {
-                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  const mistakeId = 'mistake_' + level + '_' + mistake.exerciseId;
                                   recordVocabAnswer(mistakeId, 3, {
                                     level,
                                     userAnswer: mistake.userAnswer || 'Knew it',
@@ -330,7 +597,7 @@ export default function MistakeNotebookPage() {
                               </button>
                               <button
                                 onClick={() => {
-                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  const mistakeId = 'mistake_' + level + '_' + mistake.exerciseId;
                                   recordVocabAnswer(mistakeId, 4, {
                                     level,
                                     userAnswer: mistake.userAnswer || 'Easy',

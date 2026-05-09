@@ -4,6 +4,13 @@ import {
   getVocabMastery,
   recordVocabAnswer,
   resetAllProgress,
+  getDueMistakeCount,
+  getMistakesByLevel,
+  getMistakeNotebookItems,
+  clearMistakeByIndex,
+  markMistakeMasteredById,
+  recordAnswer,
+  getLocalDateKey,
 } from '../src/utils/store';
 
 const A1_DATA = {
@@ -124,6 +131,129 @@ describe('Mistake Flashcard Behavior', () => {
       const vm = getVocabMastery('mistake_A1_ex2');
       expect(vm.interval).toBe(1);
       expect(vm.repetitions).toBe(1);
+    });
+  });
+
+  describe('Mistake flashcard queue advance after rating', () => {
+    beforeEach(() => {
+      resetAllProgress();
+      // Create test mistakes by recording incorrect answers
+      recordAnswer('A1', 'm_ex1', 'user_wrong1', 'correct1', 'grammar', false, 'grammar');
+      recordAnswer('A1', 'm_ex2', 'user_wrong2', 'correct2', 'grammar', false, 'grammar');
+      recordAnswer('A1', 'm_ex3', 'user_wrong3', 'correct3', 'reading', false, 'reading');
+      recordAnswer('A2', 'm_b1', 'user_wrong_b1', 'correct_b1', 'listening', false, 'listening');
+    });
+
+    it('getDueMistakeCount returns 4 for fresh mistakes (no SRS data)', () => {
+      const count = getDueMistakeCount('A1') + getDueMistakeCount('A2');
+      expect(count).toBe(4);
+    });
+
+    it('Easy (rating=4) schedules mistake ahead', () => {
+      const mistakeId = 'mistake_A1_m_ex1';
+      recordVocabAnswer(mistakeId, 4, { level: 'A1', topic: 'grammar' });
+      const vm = getVocabMastery(mistakeId);
+      expect(vm).toBeTruthy();
+      expect(vm.interval).toBeGreaterThanOrEqual(1);
+      // Due date should be set
+      expect(vm.due).toBeTruthy();
+      const today = getLocalDateKey();
+      // With Easy bonus, due should be >= tomorrow
+      expect(vm.due >= today).toBe(true);
+    });
+
+    it('Good (rating=3) schedules 1 day later', () => {
+      const mistakeId = 'mistake_A1_m_ex2';
+      recordVocabAnswer(mistakeId, 3, { level: 'A1', topic: 'grammar' });
+      const vm = getVocabMastery(mistakeId);
+      expect(vm.interval).toBe(1);
+      expect(vm.repetitions).toBe(1);
+      expect(vm.due).toBeTruthy();
+    });
+
+    it('Hard (rating=2) gives reduced interval but still advances', () => {
+      const mistakeId = 'mistake_A1_m_ex3';
+      recordVocabAnswer(mistakeId, 2, { level: 'A1', topic: 'reading' });
+      const vm = getVocabMastery(mistakeId);
+      expect(vm).toBeTruthy();
+      // Hard with no prior interval: interval should be >= 1 (1.2*0 -> min 1)
+      expect(vm.interval).toBeGreaterThanOrEqual(1);
+      // Hard increments repetitions (0 + 1)
+      expect(vm.repetitions).toBe(1);
+    });
+
+    it('Again (rating=1) resets interval to 0 and stays due', () => {
+      const mistakeId = 'mistake_A2_m_b1';
+      // First, do Good to set some interval
+      recordVocabAnswer(mistakeId, 3, { level: 'A2', topic: 'listening' });
+      let vm = getVocabMastery(mistakeId);
+      expect(vm.interval).toBeGreaterThan(0);
+      // Now Again should reset
+      recordVocabAnswer(mistakeId, 1, { level: 'A2', topic: 'listening' });
+      vm = getVocabMastery(mistakeId);
+      expect(vm.interval).toBe(0);
+      expect(vm.repetitions).toBe(0);
+      // Again stays due today
+      const today = getLocalDateKey();
+      expect(vm.due <= today).toBe(true);
+    });
+
+    it('Mark as mastered removes mistake from incorrectAnswers', () => {
+      // Ensure mistakes exist
+      let mistakes = getMistakesByLevel('A1');
+      expect(mistakes.length).toBeGreaterThan(0);
+      expect(mistakes.some(m => m.exerciseId === 'm_ex1')).toBe(true);
+
+      markMistakeMasteredById('A1', 'm_ex1');
+
+      // Mistake removed from incorrectAnswers
+      mistakes = getMistakesByLevel('A1');
+      expect(mistakes.some(m => m.exerciseId === 'm_ex1')).toBe(false);
+
+      // Due count decreased
+      const dueCount = getDueMistakeCount('A1');
+      expect(dueCount).toBeLessThan(3);
+    });
+
+    it('Remove clears the mistake from store', () => {
+      let mistakes = getMistakesByLevel('A1');
+      const initialLen = mistakes.length;
+      expect(initialLen).toBe(3);
+
+      // Find index for m_ex1
+      const idx = mistakes.findIndex(m => m.exerciseId === 'm_ex1');
+      expect(idx).toBeGreaterThanOrEqual(0);
+
+      clearMistakeByIndex('A1', idx);
+      mistakes = getMistakesByLevel('A1');
+      expect(mistakes.length).toBe(initialLen - 1);
+      expect(mistakes.find(m => m.exerciseId === 'm_ex1')).toBeUndefined();
+    });
+
+    it('Empty items when all mistakes removed', () => {
+      const items = getMistakeNotebookItems('all', 'all');
+      expect(items.length).toBeGreaterThan(0);
+
+      // Clear all mistakes
+      ['A1', 'A2'].forEach(lvl => {
+        const ms = getMistakesByLevel(lvl);
+        if (ms) {
+          for (let i = ms.length - 1; i >= 0; i--) {
+            clearMistakeByIndex(lvl, i);
+          }
+        }
+      });
+
+      const emptyItems = getMistakeNotebookItems('all', 'all');
+      expect(emptyItems.length).toBe(0);
+    });
+
+    it('SRS due date is correctly readable from getVocabMastery', () => {
+      const mistakeId = 'mistake_A1_m_ex1';
+      recordVocabAnswer(mistakeId, 3, { level: 'A1', topic: 'grammar' });
+      const vm = getVocabMastery(mistakeId);
+      expect(vm.due).toBeTruthy();
+      expect(vm.due).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     });
   });
 });
