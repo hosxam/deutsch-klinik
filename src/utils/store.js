@@ -723,23 +723,6 @@ export function completeSpeaking(level, exerciseId) {
   saveState(state);
 }
 
-// ===== C1 READINESS =====
-
-export function saveReadinessScores(scores) {
-  scores.lastUpdated = new Date().toISOString();
-  scores.completed = true;
-  // Calculate overall as average of all categories
-  const categories = ['reading', 'listening', 'writing', 'speaking', 'grammar', 'vocabulary', 'timeManagement'];
-  const total = categories.reduce((sum, cat) => sum + (scores[cat] || 0), 0);
-  scores.overall = Math.round(total / categories.length);
-  state.readinessScores = scores;
-  saveState(state);
-}
-
-export function getReadinessScores() {
-  return state.readinessScores;
-}
-
 // ===== REVIEW MODE =====
 
 export function getWeakTopics() {

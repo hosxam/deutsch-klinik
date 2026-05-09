@@ -28,6 +28,7 @@ export default function SettingsPage() {
     s.targetDate = targetDate || null;
     s.targetLevel = targetLevel;
     updateState(s);
+    window.dispatchEvent(new CustomEvent('deutsch-klinik-progress-changed'));
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   };

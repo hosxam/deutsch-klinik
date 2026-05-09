@@ -109,4 +109,30 @@ test.describe('Production smoke tests', () => {
     await expect(page.locator('body')).not.toHaveText(/Error|not found|crash/i);
   });
 
-});
+  test('C1 Ready tab is removed from nav', async ({ page }) => {
+    await goto(page, '/');
+    const body = await page.locator('body').textContent();
+    // C1 curriculum should still exist (as level selector option or link)
+    expect(body).toContain('C1');
+    // But NOT "C1 Ready" nav text
+    expect(body).not.toMatch(/C1\s+Ready/i);
+  });
+
+  test('C1 level page loads', async ({ page }) => {
+    await goto(page, '/level/C1');
+    await page.waitForTimeout(1000);
+    // C1 page should render, not 404 or error
+    await expect(page.locator('body')).not.toHaveText(/404|Error|not found/i);
+    // Should show C1 content
+    const bodyText = await page.locator('body').textContent();
+    expect(bodyText.length).toBeGreaterThan(50);
+  });
+
+  test('account page renders without supabase config', async ({ page }) => {
+    await goto(page, '/settings/account');
+    await page.waitForTimeout(1000);
+    await expect(page.locator('body')).toBeAttached({ timeout: 5000 });
+    // Should show some account/settings content
+    const bodyText = await page.locator('body').textContent();
+    expect(bodyText.length).toBeGreaterThan(50);
+  });

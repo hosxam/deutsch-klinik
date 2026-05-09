@@ -19,7 +19,7 @@ const ResourcesPage = lazy(() => import('./pages/ResourcesPage'));
 const MedicalPage = lazy(() => import('./pages/MedicalPage'));
 const PlacementTest = lazy(() => import('./pages/PlacementTest'));
 const FlashcardPage = lazy(() => import('./pages/FlashcardPage'));
-const C1ReadinessPage = lazy(() => import('./pages/C1ReadinessPage'));
+
 const DailyMissionPage = lazy(() => import('./pages/DailyMissionPage'));
 const LessonsPage = lazy(() => import('./pages/LessonsPage'));
 const LessonDetailPage = lazy(() => import('./pages/LessonDetailPage'));
@@ -296,13 +296,7 @@ export default function App() {
                 </RouteGuard>
               </Suspense>
             } />
-            <Route path="c1-readiness" element={
-              <Suspense fallback={<Loading />}>
-                <RouteGuard>
-                  <C1ReadinessPage />
-                </RouteGuard>
-              </Suspense>
-            } />
+
             <Route path="practice" element={
               <Suspense fallback={<Loading />}>
                 <RouteGuard>

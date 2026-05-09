@@ -1,11 +1,20 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
+import { mergeProgress } from '../utils/supabaseSync';
+import { updateState } from '../utils/store';
 import {
   User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
   Loader2, CloudOff, KeyRound, Mail, RefreshCw, ArrowLeft
 } from 'lucide-react';
 
-const PROGRESS_KEY = 'deutsch_klinik_state';
+// Use the same key logic as store.js to read/write profile-specific state
+function getActiveProfile() {
+  try { return localStorage.getItem('dk_active_profile') || 'default'; } catch { return 'default'; }
+}
+function getStoreKey() {
+  return 'deutsch_klinik_state_' + getActiveProfile();
+}
+const PROGRESS_KEY = getStoreKey; // Now a function call
 const SYNC_META_KEY = 'deutsch_klinik_sync_meta';
 const SETTINGS_KEYS = [
   'deutsch_klinik_study_goal',
@@ -28,7 +37,7 @@ function getLocalSettings() {
 
 function getLocalProgress() {
   try {
-    const raw = localStorage.getItem(PROGRESS_KEY);
+    const raw = localStorage.getItem(PROGRESS_KEY());
     if (!raw) return null;
     return JSON.parse(raw);
   } catch {
@@ -38,7 +47,7 @@ function getLocalProgress() {
 
 function setLocalProgress(progress) {
   try {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+    localStorage.setItem(PROGRESS_KEY(), JSON.stringify(progress));
   } catch (e) {
     console.warn('Failed to write local progress.', e);
   }
@@ -138,8 +147,11 @@ function useAutoSync(session, conflict, isManualOperation, onMetaChange) {
       .from('user_progress')
       .upsert({
         user_id: session.user.id,
-        progress,
+        current_level: progress.currentLevel || 'A1',
+        levels: progress.levels || {},
+        payload: progress,
         settings,
+        profile: getActiveProfile(),
         updated_at: new Date().toISOString(),
       }, { onConflict: 'user_id' });
 
@@ -362,13 +374,18 @@ export default function AuthPanel() {
       setSession(s);
       if (s) {
         setSyncMetaState(getSyncMeta());
+        // Auto-load cloud progress on mount if logged in
+        checkCloudProgress(s);
       }
     });
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, s) => {
-      setSession(s);
       if (s) {
+        setSession(s);
         setSyncMetaState(getSyncMeta());
+        // Auto-load cloud progress on login across tabs
+        checkCloudProgress(s);
       } else {
+        setSession(null);
         setCloudData(null);
         setConflict(null);
         setSyncStatus('');
@@ -464,13 +481,14 @@ export default function AuthPanel() {
     setMessage('');
   }
 
-  async function checkCloudProgress() {
-    if (!session?.user?.id) return;
+  async function checkCloudProgress(overrideSession) {
+    const s = overrideSession || session;
+    if (!s?.user?.id) return;
     setSyncStatus('Checking cloud...');
     const { data, error } = await supabase
       .from('user_progress')
       .select('*')
-      .eq('user_id', session.user.id)
+      .eq('user_id', s.user.id)
       .maybeSingle();
     if (error) {
       setSyncStatus('Error checking cloud.');
@@ -479,17 +497,58 @@ export default function AuthPanel() {
     if (data) {
       setCloudData(data);
       const local = getLocalProgress();
-      if (local && Object.keys(local).length > 0) {
+      const hasLocal = local && Object.keys(local).length > 3; // more than default state
+      if (hasLocal) {
         setConflict({ cloud: data, local });
         setSyncStatus('Conflict found. Choose what to keep.');
       } else {
-        setSyncStatus('Cloud progress found. Download available.');
+        // No meaningful local progress - auto-hydrate from cloud
+        setSyncStatus('Loading cloud progress...');
+        setLocalProgress(data.payload || data.progress || {});
+        // Also restore settings if available
+        if (data.settings) {
+          try {
+            Object.entries(data.settings).forEach(([key, val]) => {
+              localStorage.setItem(key, JSON.stringify(val));
+            });
+          } catch { /* best effort */ }
+        }
+        updateState(data.payload || data.progress || {});
+        flash('Cloud progress loaded into app.');
+        setSyncStatus('Cloud progress downloaded and applied.');
+        setSyncMeta({ lastDownloadAt: new Date().toISOString() });
+        setSyncMetaState(getSyncMeta());
       }
     } else {
       setCloudData(null);
       const local = getLocalProgress();
-      if (local && Object.keys(local).length > 0) {
-        setSyncStatus('No cloud progress yet. Upload your local data?');
+      const hasLocal = local && Object.keys(local).length > 3;
+      if (hasLocal) {
+        // Merge separate onboarding data into payload
+        const payload = { ...local };
+        try {
+          const onboardingRaw = localStorage.getItem('dk_onboarding');
+          if (onboardingRaw) payload._onboarding = JSON.parse(onboardingRaw);
+        } catch { /* best-effort */ }
+        // Auto-upload local progress on first login
+        const { error: uploadError } = await supabase
+          .from('user_progress')
+          .upsert({
+            user_id: s.user.id,
+            current_level: local.currentLevel || 'A1',
+            levels: local.levels || {},
+            payload,
+            settings: getLocalSettings(),
+            profile: getActiveProfile(),
+            updated_at: new Date().toISOString(),
+          }, { onConflict: 'user_id' });
+        if (!uploadError) {
+          setSyncStatus('Local progress uploaded to cloud.');
+          setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'auto' });
+          setSyncMetaState(getSyncMeta());
+        } else {
+          setSyncStatus('No cloud progress yet. Could not auto-upload.');
+        }
       } else {
         setSyncStatus('No progress to sync yet.');
       }
@@ -502,21 +561,30 @@ export default function AuthPanel() {
     setLoading(true);
     setMessage('');
 
-    const progress = getLocalProgress();
+    let progress = getLocalProgress();
     if (!progress) {
       flash('No local progress found to upload.');
       setLoading(false);
       setIsManualOp(false);
       return;
     }
+    // Merge separate onboarding data into payload
+    progress = { ...progress };
+    try {
+      const onboardingRaw = localStorage.getItem('dk_onboarding');
+      if (onboardingRaw) progress._onboarding = JSON.parse(onboardingRaw);
+    } catch { /* best-effort */ }
 
     const settings = getLocalSettings();
     const { error } = await supabase
       .from('user_progress')
       .upsert({
         user_id: session.user.id,
-        progress,
+        current_level: progress.currentLevel || 'A1',
+        levels: progress.levels || {},
+        payload: progress,
         settings,
+        profile: getActiveProfile(),
         updated_at: new Date().toISOString(),
       }, { onConflict: 'user_id' });
 
@@ -544,14 +612,17 @@ export default function AuthPanel() {
     setLoading(true);
     setMessage('');
 
-    if (cloudData.progress && typeof cloudData.progress === 'object') {
-      setLocalProgress(cloudData.progress);
+    // Read from payload first (new column), fall back to progress (legacy)
+    const cloudPayload = cloudData.payload || cloudData.progress || {};
+    if (typeof cloudPayload === 'object' && Object.keys(cloudPayload).length > 0) {
+      setLocalProgress(cloudPayload);
+      updateState(cloudPayload);
     }
     if (cloudData.settings && typeof cloudData.settings === 'object') {
       setLocalSettings(cloudData.settings);
     }
 
-    flash('Cloud progress downloaded. Refresh page to reload progress.');
+    flash('Cloud progress downloaded and applied.');
     setSyncStatus('Cloud progress downloaded to local.');
     setConflict(null);
     setSyncMeta({ lastDownloadAt: new Date().toISOString() });
@@ -565,11 +636,25 @@ export default function AuthPanel() {
   }
 
   function handleReplaceWithCloud() {
-    if (!cloudData?.progress) return;
-    setLocalProgress(cloudData.progress);
+    const cloudPayload = cloudData?.payload || cloudData?.progress;
+    if (!cloudPayload) return;
+    setLocalProgress(cloudPayload);
+    updateState(cloudPayload);
     if (cloudData.settings) setLocalSettings(cloudData.settings);
-    flash('Cloud progress applied. Refresh page to reload progress.');
+    flash('Cloud progress applied.');
     setSyncStatus('Using cloud progress locally.');
+    setConflict(null);
+  }
+
+  function handleMerge() {
+    const cloudPayload = cloudData?.payload || cloudData?.progress;
+    const local = getLocalProgress();
+    const merged = mergeProgress(local, cloudPayload);
+    setLocalProgress(merged);
+    updateState(merged);
+    if (cloudData.settings) setLocalSettings(cloudData.settings);
+    flash('Progress merged and applied.');
+    setSyncStatus('Progress merged.');
     setConflict(null);
   }
 
@@ -659,6 +744,14 @@ export default function AuthPanel() {
             </div>
           )}
 
+          {/* Last synced time */}
+          {autoSyncState === 'idle' && syncMeta?.lastUploadAt && (
+            <div className="flex items-center gap-1.5 text-xs text-gray-500">
+              <CheckCircle size={12} className="text-green-500/70" />
+              <span>Last saved: {formatDate(syncMeta.lastUploadAt)}</span>
+            </div>
+          )}
+
           {/* Sync status */}
           <div className="flex items-center gap-2 text-gray-400 text-xs">
             {syncStatus.includes('Checking') && <Loader2 size={14} className="animate-spin" />}
@@ -697,6 +790,14 @@ export default function AuthPanel() {
                 >
                   <Download size={14} />
                   Use cloud data
+                </button>
+                <button
+                  onClick={handleMerge}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-green-700 hover:bg-green-600 text-white rounded transition-colors"
+                >
+                  <CheckCircle size={14} />
+                  Merge both
                 </button>
               </div>
             </div>

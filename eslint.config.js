@@ -11,6 +11,7 @@ export default defineConfig([
     'serve_root',
     'playwright-report',
     'test-results',
+    'tests',
     'worker/.wrangler-out',
     'src/data/.german-backup',
     'live_dmp.js',

@@ -36,6 +36,10 @@ create table if not exists user_progress (
   user_id      uuid        not null primary key references auth.users(id) on delete cascade,
   current_level text       not null default 'A1',
   levels       jsonb       not null default '{}'::jsonb,
+  payload      jsonb       not null default '{}'::jsonb,
+  settings     jsonb       not null default '{}'::jsonb,
+  version      int         not null default 1,
+  profile      text,
   created_at   timestamptz not null default now(),
   updated_at   timestamptz not null default now()
 );

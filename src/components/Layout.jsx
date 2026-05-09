@@ -1,7 +1,7 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentProfileName, getState, signOutProfile, updateState } from '../utils/store';
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, GraduationCap, Home, ExternalLink, Stethoscope, ChevronRight, ClipboardCheck, AlertTriangle, Dumbbell, Settings } from 'lucide-react';
+import { Menu, X, Sun, Moon, GraduationCap, Home, ExternalLink, Stethoscope, ChevronRight, AlertTriangle, Dumbbell, Settings } from 'lucide-react';
 import ErrorBoundary from './ErrorBoundary';
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -32,7 +32,6 @@ export default function Layout() {
   ];
   const extraNavLinks = [
     { to: '/medical', label: 'Medical', icon: Stethoscope, accent: getState().medicalUnlocked ? '#3bff9e' : 'var(--text-muted)' },
-    { to: '/c1-readiness', label: 'C1 Ready', icon: ClipboardCheck, accent: 'var(--accent)' },
     { to: '/', label: 'Settings / Goal', icon: Settings, accent: 'var(--accent)' },
   ];
   const activeLevel = levels.find(l => location.pathname.startsWith(`/level/${l}`)) || getState().currentLevel || 'A1';
@@ -84,16 +83,7 @@ export default function Layout() {
               >
                 <Stethoscope size={14} /> Medical
               </Link>
-              <Link
-                to="/c1-readiness"
-                className="px-3 py-1.5 rounded-lg text-sm transition-colors flex items-center gap-1"
-                style={{
-                  backgroundColor: location.pathname === '/c1-readiness' ? 'var(--bg-hover)' : 'transparent',
-                  color: location.pathname === '/c1-readiness' ? 'var(--accent)' : 'var(--text-secondary)',
-                }}
-              >
-                <ClipboardCheck size={14} /> C1 Ready
-              </Link>
+
             </div>
 
             <div className="flex items-center gap-2">
