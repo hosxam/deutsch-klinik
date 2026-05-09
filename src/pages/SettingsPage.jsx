@@ -1,9 +1,9 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { updateState, getState } from '../utils/store';
 import { clearOnboardingState } from '../utils/onboardingState';
 import { isSupabaseConfigured } from '../lib/supabaseClient';
-import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, Badge } from '../components/ui';
+import { PageShell, SectionHeader, Card, Button, LevelBadge } from '../components/ui';
 
 const DAILY_MINUTES_OPTIONS = [15, 30, 45, 60, 90];
 const DAYS_PER_WEEK_OPTIONS = [3, 4, 5, 6, 7];
@@ -18,6 +18,7 @@ export default function SettingsPage() {
   const [targetDate, setTargetDate] = useState(state.targetDate || '');
   const [targetLevel, setTargetLevel] = useState(state.targetLevel || 'C1');
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [saved, setSaved] = useState(false);
 
   const handleSaveGoal = () => {
@@ -84,6 +85,11 @@ export default function SettingsPage() {
     setShowResetConfirm(false);
     window.location.reload();
   };
+
+  const handleClearAndRestart = useCallback(() => {
+    localStorage.clear();
+    window.location.reload();
+  }, []);
 
   const startLevel = state.startLevel || 'A1';
   const estimate = useMemo(() => {
@@ -231,6 +237,47 @@ export default function SettingsPage() {
             </div>
           </div>
         )}
+      </Card>
+
+      {/* About */}
+      <Card className="mb-6">
+        <h2 className="text-sm font-semibold mb-3">About</h2>
+        <div className="space-y-2 text-xs" style={{ color: 'var(--text-muted)' }}>
+          <div className="flex justify-between">
+            <span>App</span>
+            <span style={{ color: 'var(--text-primary)' }}>Deutsch Klinik C1 Trainer</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Release Phase</span>
+            <span style={{ color: 'var(--accent)' }}>Phase 17 complete</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Commit</span>
+            <span style={{ color: 'var(--text-primary)', fontFamily: 'monospace', fontSize: '0.7rem' }}>2e405bf</span>
+          </div>
+        </div>
+
+        <div className="mt-4">
+          {!showClearConfirm ? (
+            <Button onClick={() => setShowClearConfirm(true)} variant="ghost" className="w-full">
+              <span className="font-semibold" style={{ color: '#ff3355' }}>Clear Local App Data and Restart</span>
+            </Button>
+          ) : (
+            <div className="text-center">
+              <p className="text-xs mb-3" style={{ color: 'var(--text-muted)' }}>
+                This will clear all localStorage data including progress, settings, and session state. The page will reload.
+              </p>
+              <div className="flex gap-2">
+                <Button onClick={() => setShowClearConfirm(false)} variant="secondary" className="flex-1">
+                  Cancel
+                </Button>
+                <Button onClick={handleClearAndRestart} variant="danger" className="flex-1">
+                  Clear and Restart
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
       </Card>
     </PageShell>
   );
