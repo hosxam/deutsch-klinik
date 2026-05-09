@@ -4,6 +4,7 @@ import {
   getState, updateState, setLevelProgress, getLevelProgress,
   recordGrammarAnswer, recordAnswer, getGrammarMastery, getCompletedLessons,
   updateStreak, completeLesson, completeListening, completeReading,
+  completeWriting, completeSpeaking,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
   getNextGrammarLesson, recordStudyMinutes, recordStudyTime, addRemediationRecommendation,
   getDueVocabWords
@@ -59,7 +60,7 @@ function lessonText(item) {
 import {
   CheckCircle, XCircle, BarChart3, BookOpen, FileText, PenTool, Mic,
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronLeft, ChevronRight,
-  Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, RefreshCw,
+  Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, AlertTriangle, RefreshCw,
   Volume2, MessageSquare, BookMarked,
   Square, Lightbulb
 } from 'lucide-react';
@@ -809,8 +810,9 @@ export default function DailyMissionPage() {
       const ll = ld[lvl] || {};
       setLrc(prev => {
         const trueCount = prev + (correct ? 1 : 0);
+        const allCorrect = trueCount === totalQ;
         updateState({ levels: { ...ld, [lvl]: { ...ll, listeningResults: { ...(ll.listeningResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
-        if (trueCount / Math.max(totalQ, 1) < 0.6) {
+        if (!allCorrect) {
           addRemediationRecommendation({
             level: lvl,
             skill: 'listening',
@@ -819,6 +821,17 @@ export default function DailyMissionPage() {
             route: `/level/${lvl}/listening`,
           });
         }
+        const listeningId = `listening_${lvl}_${item.id}`;
+        if (allCorrect) {
+          completeListening(lvl, item.id);
+        }
+        recordPracticeAttempt('listening', listeningId, {
+          correct: allCorrect,
+          score: trueCount,
+          maxScore: totalQ,
+          level: lvl,
+          topic: item.title || 'Listening',
+        });
         return trueCount;
       });
       refresh();
@@ -910,8 +923,9 @@ export default function DailyMissionPage() {
       const ll = ld[lvl] || {};
       setRrc(prev => {
         const trueCount = prev + (correct ? 1 : 0);
+        const allCorrect = trueCount === totalQ;
         updateState({ levels: { ...ld, [lvl]: { ...ll, readingResults: { ...(ll.readingResults || {}), [item.id]: { completed: true, correct: trueCount, total: totalQ, date: new Date().toISOString() } } } } });
-        if (trueCount / Math.max(totalQ, 1) < 0.6) {
+        if (!allCorrect) {
           addRemediationRecommendation({
             level: lvl,
             skill: 'reading',
@@ -920,6 +934,17 @@ export default function DailyMissionPage() {
             route: `/level/${lvl}/reading`,
           });
         }
+        const readingId = `reading_${lvl}_${item.id}`;
+        if (allCorrect) {
+          completeReading(lvl, item.id);
+        }
+        recordPracticeAttempt('reading', readingId, {
+          correct: allCorrect,
+          score: trueCount,
+          maxScore: totalQ,
+          level: lvl,
+          topic: item.title || 'Reading',
+        });
         return trueCount;
       });
       refresh();
@@ -971,6 +996,35 @@ export default function DailyMissionPage() {
         setWtAiResult(null);
       }
       setWtAiLoading(false);
+    }
+    // Record progress: use AI score if available, otherwise mark as incomplete attempt
+    const wtScore = wtAiResult && wtAiResult.score !== null && wtAiResult.score !== undefined
+      ? Number(wtAiResult.score) : null;
+    const wtPassing = wtScore !== null && wtScore >= 8;
+    if (item) {
+      if (wtScore !== null) {
+        recordPracticeAttempt('writing', item.id, {
+          correct: wtPassing,
+          score: wtScore,
+          maxScore: 10,
+          level: lvl,
+          topic: item.title || 'Writing',
+        });
+        if (wtPassing) {
+          completeWriting(lvl, item.id);
+        } else {
+          recordAnswer(lvl, item.id, wtText, '', item.title || 'Writing', false, 'writing');
+        }
+      } else {
+        // AI unavailable or failed: record as attempt with score=0
+        recordPracticeAttempt('writing', item.id, {
+          correct: false,
+          score: 0,
+          maxScore: 10,
+          level: lvl,
+          topic: item.title || 'Writing',
+        });
+      }
     }
     setWtDone(true);
   };
@@ -1066,6 +1120,35 @@ export default function DailyMissionPage() {
       }
       setSpAiLoading(false);
     }
+    // Record progress: use AI score if available, otherwise fallback
+    const spScore = spAiResult && spAiResult.score !== null && spAiResult.score !== undefined
+      ? Number(spAiResult.score) : null;
+    const spPassing = spScore !== null && spScore >= 8;
+    if (item) {
+      if (spScore !== null) {
+        recordPracticeAttempt('speaking', item.id, {
+          correct: spPassing,
+          score: spScore,
+          maxScore: 10,
+          level: lvl,
+          topic: item.title || 'Speaking',
+        });
+        if (spPassing) {
+          completeSpeaking(lvl, item.id);
+        } else {
+          recordAnswer(lvl, item.id, spText, '', item.title || 'Speaking', false, 'speaking');
+        }
+      } else {
+        // AI unavailable: record as attempt with fallback score
+        recordPracticeAttempt('speaking', item.id, {
+          correct: false,
+          score: 0,
+          maxScore: 10,
+          level: lvl,
+          topic: item.title || 'Speaking',
+        });
+      }
+    }
     setSpDone(true);
   };
   const hSpSk = () => advance('speaking', { skipped: true });
@@ -1102,16 +1185,28 @@ export default function DailyMissionPage() {
       .map(id => vocabData.find(w => String(w.id) === String(id)))
       .filter(Boolean)
       .slice(0, 10);
-    const fallbackWords = words.length > 0 ? words : vocabData.slice(0, 5);
     const sourceCount = vocabMistakes.length || mistakes.length || weakIds.length;
     const skill = rec?.skill || (vocabMistakes.length ? 'Vocabulary' : 'Review');
+    if (words.length === 0) {
+      return {
+        rec,
+        skill,
+        items: [],
+        source: 'No recent mistakes or weak vocabulary items found.',
+        target: 'Complete more lessons and practice to generate targeted remediation.',
+        action: 'Skip remediation for now',
+        result: 'No items to review at this time.',
+        why: rec?.why || 'No weak areas detected.',
+        empty: true,
+      };
+    }
     return {
       rec,
       skill,
-      items: fallbackWords,
-      source: sourceCount > 0 ? `Based on ${sourceCount} recent mistakes or weak review items` : 'Based on your current level review queue',
+      items: words,
+      source: `Based on ${sourceCount} recent mistakes or weak review items`,
       target: skill === 'Vocabulary' ? 'Review weak vocabulary from your mistakes, due flashcards, and current level words.' : (rec?.task || 'Repeat the weakest recent task and review mistakes.'),
-      action: skill === 'Vocabulary' ? `Start ${Math.min(fallbackWords.length, 10)}-word targeted vocab review` : 'Start targeted review task',
+      action: skill === 'Vocabulary' ? `Start ${Math.min(words.length, 10)}-word targeted vocab review` : 'Start targeted review task',
       result: skill === 'Vocabulary' ? 'Correct answers update vocabulary mastery and can move mistake words out of your weak queue.' : 'Completion logs remediation minutes and keeps this weak area visible for follow-up.',
       why: rec?.why || 'A recent answer or score showed a weak area.',
     };
@@ -1250,13 +1345,33 @@ export default function DailyMissionPage() {
   const practiceProgressData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
   const todayStr = new Date().getFullYear()+'-'+String(new Date().getMonth()+1).padStart(2,'0')+'-'+String(new Date().getDate()).padStart(2,'0');
 
+  /**
+   * Check if a reading/listening item ID has a matching practiceProgress entry.
+   * Handles two key formats:
+   *   1. reading_${level}_${index}  (from standalone ReadingPage/LISTENINGPage)
+   *   2. reading_${level}_${item.id} (from DailyMissionPage)
+   */
+  const ppHasItem = (entries, skill, level, itemId) => {
+    // Check direct prefixed key (daily mission format)
+    const prefixedKey = `${skill}_${level}_${itemId}`;
+    if (entries.has(prefixedKey)) return true;
+    // Check any key that starts with skill_level_ (standalone page index-based format)
+    // The only way to match is via the item's position in the data, but we can't know
+    // the index from the item ID. Fall back to checking if the itemId is in any entry.
+    // This handles the case where standalone pages store by index.
+    for (const key of entries) {
+      if (key.startsWith(`${skill}_${level}_`) && key.includes(itemId)) return true;
+    }
+    return false;
+  };
+
   // Current mission items from data (curriculum-aware) - uses state snapshots to avoid ref access during render
   const getNextListening = (level) => {
     const s = getState();
     const completed = new Set((s.listeningCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
     const ppNotDue = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate > todayStr).map(([id]) => id));
-    let items = listeningData.filter(item => !completed.has(item.id) && !ppCompleted.has(`listening_${level}_${item.id}`) && !ppNotDue.has(`listening_${level}_${item.id}`));
+    let items = listeningData.filter(item => !completed.has(item.id) && !ppHasItem(ppCompleted, 'listening', level, item.id) && !ppHasItem(ppNotDue, 'listening', level, item.id));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isListeningUnlocked(item.id, s));
@@ -1274,7 +1389,7 @@ export default function DailyMissionPage() {
     const completed = new Set((s.readingCompleted?.[level] || []).map(x => typeof x === 'string' ? x : (x.id || x.exerciseId)));
     const ppCompleted = new Set((Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id)));
     const ppNotDue = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate > todayStr).map(([id]) => id));
-    let items = readingData.filter(item => !completed.has(item.id) && !ppCompleted.has(`reading_${level}_${item.id}`) && !ppNotDue.has(`reading_${level}_${item.id}`));
+    let items = readingData.filter(item => !completed.has(item.id) && !ppHasItem(ppCompleted, 'reading', level, item.id) && !ppHasItem(ppNotDue, 'reading', level, item.id));
     // Curriculum filter: if level has curriculum map, only show unlocked items
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isReadingUnlocked(item.id, s));
@@ -2305,6 +2420,20 @@ export default function DailyMissionPage() {
       {/* REMEDIATION MISSION */}
       {cm.type === 'remediation' && (() => {
         const session = buildRemediationSession();
+        if (session.empty) {
+          return (
+            <Card>
+              <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+                <AlertTriangle size={40} style={{ color: '#ff3355', marginBottom: '0.75rem' }} />
+                <p style={{ color: 'var(--text-muted)', marginBottom: '0.5rem' }}>No remediation items needed right now.</p>
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Complete more lessons and practice to generate targeted review material.</p>
+                <button style={sBtn} onClick={() => { advance('remediation', { skipped: true }); }}>
+                  <SkipForward size={14} /> Skip for now
+                </button>
+              </div>
+            </Card>
+          );
+        }
         const item = session.items[remIndex];
         return (
           <Card>
