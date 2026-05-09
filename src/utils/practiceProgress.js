@@ -1,5 +1,28 @@
 const KEY = 'practiceProgress_v1';
 
+/**
+ * Get today's date as YYYY-MM-DD string for dueDate comparisons.
+ */
+function getTodayDateKey() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+/**
+ * Add days to today and return YYYY-MM-DD.
+ */
+function addDays(n) {
+  const d = new Date();
+  d.setDate(d.getDate() + n);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 function load() {
   try {
     return JSON.parse(localStorage.getItem(KEY) || '{}');
@@ -17,6 +40,14 @@ export function getPracticeItemStatus(skill, itemId) {
   return data[skill]?.[itemId] || { status: 'unattempted' };
 }
 
+/**
+ * Record a practice attempt.
+ *
+ * When `dueDate` is provided, it is stored directly.
+ * When `dueDate` is NOT provided, a default is computed:
+ *   - correct: 14 days from now
+ *   - incorrect: 1 day from now
+ */
 export function recordPracticeAttempt(skill, itemId, result = {}) {
   const data = load();
   if (!data[skill]) data[skill] = {};
@@ -28,6 +59,14 @@ export function recordPracticeAttempt(skill, itemId, result = {}) {
   }
   if (result.score !== undefined) {
     cur.status = result.score >= 8 ? 'completed_correct' : 'completed_incorrect';
+  }
+  // Set dueDate for scheduling
+  if (result.dueDate !== undefined) {
+    cur.dueDate = result.dueDate;
+  } else if (cur.status === 'completed_correct') {
+    cur.dueDate = addDays(14);
+  } else if (cur.status === 'completed_incorrect') {
+    cur.dueDate = addDays(1);
   }
   data[skill][itemId] = cur;
   save(data);
@@ -41,4 +80,30 @@ export function isPracticeItemCompleted(skill, itemId) {
 
 export function shouldExcludeFromDailyPractice(skill, itemId) {
   return isPracticeItemCompleted(skill, itemId);
+}
+
+/**
+ * Get items for a skill that are due for review (status='completed_incorrect' and dueDate <= today).
+ * This drives remediation scheduling in Today's Plan.
+ */
+export function getDuePracticeItems(skill) {
+  const data = load();
+  const skillData = data[skill] || {};
+  const today = getTodayDateKey();
+  return Object.entries(skillData)
+    .filter(([, v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= today)
+    .map(([id]) => id);
+}
+
+/**
+ * Get items for a skill that are in practice progress but NOT due yet.
+ * Used to exclude correctly-completed items from Today's Plan.
+ */
+export function getNotDuePracticeItems(skill) {
+  const data = load();
+  const skillData = data[skill] || {};
+  const today = getTodayDateKey();
+  return Object.entries(skillData)
+    .filter(([, v]) => v.status === 'completed_correct' && v.dueDate && v.dueDate > today)
+    .map(([id]) => id);
 }

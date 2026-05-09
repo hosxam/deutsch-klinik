@@ -9,6 +9,7 @@ import {
   getDueVocabWords
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
+import { recordPracticeAttempt } from '../utils/practiceProgress';
 
 import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
@@ -637,6 +638,7 @@ export default function DailyMissionPage() {
     if (!ex) return;
     const correct = normalizeAnswer(ans) === normalizeAnswer(ex.answer);
     recordGrammarAnswer(ex.id, correct);
+    recordPracticeAttempt('grammar', ex.id, { correct });
     recordAnswer(lvl, ex.id, ans, ex.answer, ex.topic || 'grammar', correct, 'grammar');
     const existing = (state.levels?.[lvl]?.grammar || []).filter((x) => x !== ex.id);
     setLevelProgress(lvl, 'grammar', [ex.id, ...existing]);
@@ -661,7 +663,12 @@ export default function DailyMissionPage() {
     const all = grammarDataRef.current || [];
     const done = state.levels?.[lvl]?.grammar || [];
     const ppData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
+    const today = new Date();
+    const todayStr = today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+    // completed_correct items are done and excluded from plan
     const ppDone = new Set(Object.entries(ppData?.grammar || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id));
+    // completed_incorrect items are excluded if their dueDate is in the future
+    const ppNotDue = new Set(Object.entries(ppData?.grammar || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate > todayStr).map(([id]) => id));
     const context = getPracticeContext(lvl, sesh, state);
     let unlockedPool;
     if (hasCurriculumMap(lvl) && !context.isFreePractice) {
@@ -671,7 +678,7 @@ export default function DailyMissionPage() {
     } else {
       unlockedPool = all;
     }
-    const unmastered = unlockedPool.filter((x) => !ppDone.has(x.id) && (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
+    const unmastered = unlockedPool.filter((x) => !ppDone.has(x.id) && !ppNotDue.has(x.id) && (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
     const count = Math.min(cm.target, unmastered.length);
 
     // Prefer practice from lessons completed earlier in today's generated plan,
