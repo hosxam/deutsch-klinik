@@ -6,6 +6,7 @@ import { getPracticeItemStatus } from '../utils/practiceProgress';
 import levelsData from '../data/levels.json';
 import '../data/curriculum.json';
 import writingData from '../data/writing.json';
+import speakingData from '../data/speaking.json';
 import { BookOpen, PenTool, Mic, Headphones, FileText, ShieldCheck, Lock, ChevronRight, BookMarked, GraduationCap, ArrowRight } from 'lucide-react';
 
 const skills = [
@@ -42,6 +43,9 @@ export default function LevelPage() {
   // Count writing prompts that are completed_correct via practiceProgress
   const levelPrompts = (writingData[levelId] || []);
   const writingCompletedCount = levelPrompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
+  const levelSpeakingPrompts = speakingData[levelId] || [];
+  const speakingCompletedCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
+  const speakingNeedsReviewCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_incorrect').length;
 
   // Compute missing exam requirements for locked messaging
   const requirements = [
@@ -49,7 +53,7 @@ export default function LevelPage() {
     { label: 'Vocabulary', current: prog.vocab?.length || 0, target: levelData?.vocabularyUnits || 10 },
     { label: 'Lessons', current: completedLessons.length, target: 10 },
     { label: 'Writing', current: writingCompletedCount, target: levelData?.minWritingTasks || 10 },
-    { label: 'Speaking', current: (state.speakingRecordings[levelId] || []).length, target: levelData?.minSpeakingTasks || 10 },
+    { label: 'Speaking', current: speakingCompletedCount, target: levelData?.minSpeakingTasks || 10 },
     { label: 'Listening', current: prog.listening?.length || 0, target: levelData?.minListeningTests || 5 },
     { label: 'Reading', current: prog.reading?.length || 0, target: levelData?.minReadingTests || 5 },
   ];
@@ -113,7 +117,7 @@ export default function LevelPage() {
           if (skill.key === 'writing') {
             displayCount = levelPrompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
           } else if (skill.key === 'speaking') {
-            displayCount = (state.speakingRecordings?.[levelId] || []).length;
+            displayCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
           }
           
           return (
@@ -203,7 +207,7 @@ export default function LevelPage() {
             <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
             <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
             <Requirement label="Writing Tasks" current={writingCompletedCount} target={levelData.minWritingTasks} />
-            <Requirement label="Speaking Tasks" current={(state.speakingRecordings[levelId] || []).length} target={levelData.minSpeakingTasks} />
+            <Requirement label="Speaking Tasks" current={speakingCompletedCount} target={levelData.minSpeakingTasks} />
             <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
             <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
           </div>

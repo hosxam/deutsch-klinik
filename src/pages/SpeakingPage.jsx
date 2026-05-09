@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState, recordAnswer, updateLevelProgress } from '../utils/store';
-import { recordPracticeAttempt } from '../utils/practiceProgress';
+import { getState, updateState, recordAnswer, updateLevelProgress, completeSpeaking } from '../utils/store';
+import { getPracticeItemStatus, recordPracticeAttempt } from '../utils/practiceProgress';
 import speakingData from '../data/speaking.json';
 import {
   Mic, Square, Clock, Lightbulb, Copy, ClipboardCheck,
-  Sparkles, Loader2, AlertCircle, CheckCircle2, XCircle, StopCircle, Volume2, MessageSquare
+  Sparkles, Loader2, AlertCircle, CheckCircle, XCircle, StopCircle, Volume2, MessageSquare
 } from 'lucide-react';
 import LevelLock from '../components/LevelLock';
 import GermanCharHelper from '../components/GermanCharHelper';
@@ -257,17 +257,46 @@ export default function SpeakingPage() {
       
       // Record via unified practice model
       const score = Number(result?.score) || 0;
+      const isPassing = score >= 8;
+      const dueDate = new Date(Date.now() + (isPassing ? 14 : 1) * 86400000).toISOString().slice(0, 10);
       recordPracticeAttempt('speaking', prompt.id, {
-        correct: score >= 8,
+        correct: isPassing,
         score: score,
         maxScore: 10,
         level: levelId,
         topic: prompt.title || 'Speaking',
         userAnswer: transcript || '[speaking]',
         correctAnswer: result?.correctedTranscript || result?.strongerAnswer || '',
+        dueDate,
       });
+      if (isPassing) {
+        completeSpeaking(levelId, prompt.id);
+      }
+      if (!isPassing) {
+        recordAnswer(
+          levelId,
+          prompt.id,
+          transcript || '[speaking attempt]',
+          result?.correctedTranscript || result?.strongerAnswer || 'Review speaking feedback',
+          prompt.title || 'Speaking',
+          false,
+          'speaking'
+        );
+      }
+      // Force re-render to update status colors
+      setCurrentIndex(prev => prev + 0);
     } catch (err) {
       setAiError(err.message);
+      // Record attempt even on AI failure
+      recordPracticeAttempt('speaking', prompt.id, {
+        correct: false,
+        score: 0,
+        maxScore: 10,
+        level: levelId,
+        topic: prompt.title || 'Speaking',
+        userAnswer: transcript || '[speaking]',
+        dueDate: new Date(Date.now() + 86400000).toISOString().slice(0, 10),
+      });
     } finally {
       setAiLoading(false);
     }
@@ -306,11 +335,27 @@ export default function SpeakingPage() {
         <select onChange={(e) => changePrompt(Number(e.target.value))} value={currentIndex}
           aria-label="Select speaking prompt"
           className="px-3 py-1.5 rounded-lg text-sm outline-none" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)', color: 'var(--text-primary)' }}>
-          {prompts.map((p, i) => (
-            <option key={p.id} value={i}>{p.title}</option>
-          ))}
+          {prompts.map((p, i) => {
+            const st = getPracticeItemStatus('speaking', p.id);
+            const prefix = st.status === 'completed_correct' ? '✅ ' : st.status === 'completed_incorrect' ? '⚠️ ' : '';
+            return <option key={p.id} value={i}>{prefix}{p.title}</option>;
+          })}
         </select>
       </div>
+
+      {/* Status summary bar */}
+      {prompts.some(p => getPracticeItemStatus('speaking', p.id).status !== 'unattempted') && (() => {
+        const completed = prompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
+        const needsReview = prompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_incorrect').length;
+        const remaining = prompts.length - completed - needsReview;
+        return (
+          <div className="mb-3 flex items-center gap-4 text-xs px-3 py-2 rounded-lg" style={{ backgroundColor: 'var(--bg-hover)', border: '1px solid var(--border)' }}>
+            <span style={{ color: '#3bff9e' }}><CheckCircle size={12} className="inline mr-1" />{completed} completed</span>
+            {needsReview > 0 && <span style={{ color: '#ff3355' }}><AlertCircle size={12} className="inline mr-1" />{needsReview} needs review</span>}
+            <span style={{ color: 'var(--text-muted)' }}>{remaining} remaining</span>
+          </div>
+        );
+      })()}
 
       <div className="rounded-xl p-6" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <div className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>Level {levelId} | Prep: {prompt.prepTime}s | Talk: {prompt.talkTime}s</div>
@@ -514,11 +559,32 @@ export default function SpeakingPage() {
                 )}
               </button>
             ) : (
-              <div className="rounded-xl p-4" style={{ backgroundColor: 'rgba(245,158,11,0.08)', border: '1px solid #f59e0b' }}>
-                <p className="text-xs flex items-center gap-1" style={{ color: '#f59e0b' }}>
-                  <AlertCircle size={12} />
-                  Live speaking feedback is not configured yet. Type or paste your transcript and use a manual AI tool instead.
-                </p>
+              <div className="space-y-3">
+                <div className="rounded-xl p-4" style={{ backgroundColor: 'rgba(245,158,11,0.08)', border: '1px solid #f59e0b' }}>
+                  <p className="text-xs flex items-center gap-1" style={{ color: '#f59e0b' }}>
+                    <AlertCircle size={12} />
+                    Live AI speaking feedback is not configured yet.
+                  </p>
+                </div>
+                {transcript.trim() && (
+                  <button
+                    onClick={() => {
+                      // Record attempt as ungraded (score=5, needs review)
+                      recordPracticeAttempt('speaking', prompt.id, {
+                        correct: false,
+                        score: 5,
+                        maxScore: 10,
+                        level: levelId,
+                        topic: prompt.title || 'Speaking',
+                        userAnswer: transcript || '[speaking]',
+                        dueDate: new Date(Date.now() + 86400000).toISOString().slice(0, 10),
+                      });
+                    }}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg mx-auto text-xs"
+                    style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--accent)', border: '1px solid var(--border)' }}>
+                    Record speaking attempt (manual mode)
+                  </button>
+                )}
               </div>
             )}
           </div>
@@ -656,7 +722,7 @@ export default function SpeakingPage() {
 
               {/* Success indicator */}
               <div className="flex items-center gap-1 text-xs justify-center" style={{ color: '#3bff9e' }}>
-                <CheckCircle2 size={12} /> Speaking feedback complete
+                <CheckCircle size={12} /> Speaking feedback complete
               </div>
             </div>
           )}

@@ -102,6 +102,9 @@ const defaultState = {
   // Writing completed per level: { A1: ['A1_write_1', ...] }
   writingCompleted: {},
 
+  // Speaking completed per level: { A1: ['A1_speak_1', ...] }
+  speakingCompleted: {},
+
   // Completed grammar curriculum lessons per level: { A1: ['A1_gc_1', 'A1_gc_2'], ... }
   completedGrammarLessons: {},
 
@@ -666,6 +669,16 @@ export function completeWriting(level, exerciseId) {
   saveState(state);
 }
 
+export function completeSpeaking(level, exerciseId) {
+  if (!state.speakingCompleted[level]) {
+    state.speakingCompleted[level] = [];
+  }
+  if (!state.speakingCompleted[level].includes(exerciseId)) {
+    state.speakingCompleted[level].push(exerciseId);
+  }
+  saveState(state);
+}
+
 // ===== C1 READINESS =====
 
 export function saveReadinessScores(scores) {
@@ -764,7 +777,7 @@ export function isExamUnlocked(level, levelData) {
   const grammarDone = (prog.grammar && prog.grammar.length >= levelData.grammarUnits) || false;
   const vocabDone = (prog.vocab && prog.vocab.length >= levelData.vocabularyUnits) || false;
   const writingsDone = (state.writingCompleted[level] || []).length >= levelData.minWritingTasks;
-  const speakingDone = (state.speakingRecordings[level] || []).length >= levelData.minSpeakingTasks;
+  const speakingDone = (state.speakingCompleted[level] || []).length >= levelData.minSpeakingTasks;
   const listeningDone = (prog.listening || []).length >= levelData.minListeningTests;
   const readingDone = (prog.reading || []).length >= levelData.minReadingTests;
 
