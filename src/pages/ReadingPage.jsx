@@ -86,6 +86,21 @@ export default function ReadingPage() {
         </div>
       </div>
 
+      {/* Status summary bar */}
+      {(() => {
+        const completed = readingStatuses.filter(s => s.status === 'completed_correct' || s.status === 'mastered').length;
+        const needsReview = readingStatuses.filter(s => s.status === 'completed_incorrect').length;
+        const remaining = exercises.length - completed - needsReview;
+        if (completed === 0 && needsReview === 0) return null;
+        return (
+          <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.5rem', marginBottom: '1rem', padding: '0.5rem 0.75rem', borderRadius: '8px', backgroundColor: 'var(--bg-secondary)', fontSize: '0.75rem' }}>
+            {completed > 0 && <span style={{ color: '#22c55e' }}>{completed} completed</span>}
+            {needsReview > 0 && <span style={{ color: '#ef4444' }}>{needsReview} needs review</span>}
+            <span style={{ color: 'var(--text-muted)' }}>{remaining} remaining</span>
+          </div>
+        );
+      })()}
+
       <div className="rounded-xl p-5 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
         <h2 className="font-semibold mb-3" style={{ color: 'var(--accent)' }}>{ex.title}</h2>
         <div className="text-sm leading-relaxed whitespace-pre-line break-words" style={{ color: 'var(--text-secondary)' }}>{ex.text}</div>
