@@ -62,7 +62,7 @@ import {
   SkipForward, Home, GraduationCap, Headphones, Play, ChevronLeft, ChevronRight,
   Sparkles, Copy, ClipboardCheck, ShieldCheck, AlertCircle, AlertTriangle, RefreshCw,
   Volume2, MessageSquare, BookMarked,
-  Square, Lightbulb
+  Square, Lightbulb, RotateCcw, ThumbsUp, ThumbsDown
 } from 'lucide-react';
 import { PageShell, SectionHeader, Card, StatCard, Button, LoadingState, EmptyState, ProgressRing, PracticeStepper, LevelBadge, Badge } from '../components/ui';
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
@@ -2292,17 +2292,19 @@ export default function DailyMissionPage() {
         // Inline flashcard step
         if (fcStarted && fcCards.length > 0 && fcIdx < fcCards.length) {
           const current = fcCards[fcIdx];
-          const handleAnswer = (knew) => {
-            recordVocabAnswer(`${lvl}_${current.id}`, knew, {
+          // SM-2 rating: 1=Again, 2=Hard, 3=Good, 4=Easy
+          // Matches behavior in FlashcardPage exactly
+          const handleFlashcardRating = (rating) => {
+            recordVocabAnswer(`${lvl}_${current.id}`, rating, {
               level: lvl,
-              userAnswer: knew ? (current.translation || current.english || 'Knew it') : 'Still learning',
+              userAnswer: rating >= 3 ? (current.translation || current.english || 'Knew it') : '[flashcard]',
               correctAnswer: current.translation || current.english || '',
               topic: current.topic || 'Vocabulary',
             });
             const existing = (getLevelProgress(lvl, 'vocab') || [])
               .flatMap(item => typeof item === 'string' ? [item] : (item?.wordIds || []));
             setLevelProgress(lvl, 'vocab', [...new Set([...existing, `${lvl}_${current.id}`])]);
-            if (!knew) {
+            if (rating < 3) {
               recordAnswer(lvl, `${lvl}_${current.id}`, '[flashcard]', current.word, 'Vocabulary', false, 'vocab');
             }
             if (fcIdx + 1 >= fcCards.length) {
@@ -2354,18 +2356,34 @@ export default function DailyMissionPage() {
                   {fcIdx + 1} / {fcCards.length}
                 </p>
                 {fcFlipped && (
-                  <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
+                  <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <button
-                      onClick={() => handleAnswer(false)}
-                      style={{ ...sBp, background: 'rgba(255,51,85,0.15)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.3)' }}
+                      onClick={() => handleFlashcardRating(1)}
+                      style={{ ...sBs, background: 'rgba(255,51,85,0.12)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.25)' }}
+                      title="Forgot: card comes back in ~10 min"
                     >
-                      <XCircle size={16} /> Didn&apos;t Know
+                      <RotateCcw size={12} /> Again
                     </button>
                     <button
-                      onClick={() => handleAnswer(true)}
-                      style={{ ...sBp, background: 'rgba(59,255,158,0.15)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.3)' }}
+                      onClick={() => handleFlashcardRating(2)}
+                      style={{ ...sBs, background: 'rgba(255,170,51,0.1)', color: '#ffaa33', border: '1px solid rgba(255,170,51,0.25)' }}
+                      title="Remembered with effort: shorter interval"
                     >
-                      <CheckCircle size={16} /> Knew It
+                      <ThumbsDown size={12} /> Hard
+                    </button>
+                    <button
+                      onClick={() => handleFlashcardRating(3)}
+                      style={{ ...sBs, background: 'rgba(59,255,158,0.1)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.25)' }}
+                      title="Remembered: normal SM-2 interval"
+                    >
+                      <ThumbsUp size={12} /> Good
+                    </button>
+                    <button
+                      onClick={() => handleFlashcardRating(4)}
+                      style={{ ...sBs, background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', border: '1px solid rgba(0,240,255,0.2)' }}
+                      title="Easy: 1.3x bonus interval"
+                    >
+                      <RefreshCw size={12} /> Easy
                     </button>
                   </div>
                 )}

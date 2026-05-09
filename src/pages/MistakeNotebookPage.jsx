@@ -261,44 +261,58 @@ export default function MistakeNotebookPage() {
 
                         {isExpanded && (
                           <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
-                            {/* Retry section */}
-                            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                              Try again:
-                            </p>
-                            <div style={{ display: 'flex', gap: '8px' }}>
-                              <input
-                                type="text"
-                                value={retryAnswers[key] || ''}
-                                onChange={e => handleMistakeRetry(key, e.target.value)}
-                                placeholder="Type correct answer..."
-                                disabled={retryResults[key] !== undefined}
-                                style={{
-                                  flex: 1, padding: '8px 12px', borderRadius: '6px', fontSize: '13px',
-                                  border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)',
-                                  color: 'var(--text-primary)', outline: 'none',
-                                }}
-                              />
-                              {retryResults[key] === undefined && (
-                                <Button
-                                  onClick={() => checkMistakeRetry(mistake, key)}
-                                  disabled={!retryAnswers[key]}
-                                  size="sm"
-                                  style={{ backgroundColor: levelColors[level] || 'var(--accent)', opacity: retryAnswers[key] ? 1 : 0.5 }}
-                                >
-                                  <RefreshCw size={12} style={{ marginRight: '6px' }} />
-                                  Check
-                                </Button>
-                              )}
-                            </div>
-                            {retryResults[key] !== undefined && (
+                            {/* Retry section — only show input/check if a correctAnswer exists */}
+                            {mistake.correctAnswer && String(mistake.correctAnswer).trim().length > 0 ? (
+                              <>
+                                <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                                  Try again:
+                                </p>
+                                <div style={{ display: 'flex', gap: '8px' }}>
+                                  <input
+                                    type="text"
+                                    value={retryAnswers[key] || ''}
+                                    onChange={e => handleMistakeRetry(key, e.target.value)}
+                                    placeholder="Type correct answer..."
+                                    disabled={retryResults[key] !== undefined}
+                                    style={{
+                                      flex: 1, padding: '8px 12px', borderRadius: '6px', fontSize: '13px',
+                                      border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)',
+                                      color: 'var(--text-primary)', outline: 'none',
+                                    }}
+                                  />
+                                  {retryResults[key] === undefined && (
+                                    <Button
+                                      onClick={() => checkMistakeRetry(mistake, key)}
+                                      disabled={!retryAnswers[key]}
+                                      size="sm"
+                                      style={{ backgroundColor: levelColors[level] || 'var(--accent)', opacity: retryAnswers[key] ? 1 : 0.5 }}
+                                    >
+                                      <RefreshCw size={12} style={{ marginRight: '6px' }} />
+                                      Check
+                                    </Button>
+                                  )}
+                                </div>
+                                {retryResults[key] !== undefined && (
+                                  <div style={{
+                                    marginTop: '8px', padding: '8px', borderRadius: '6px', fontSize: '13px',
+                                    backgroundColor: retryResults[key] ? 'rgba(59,255,158,0.1)' : 'rgba(255,51,85,0.1)',
+                                    color: retryResults[key] ? '#3bff9e' : '#ff3355',
+                                    fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px',
+                                  }}>
+                                    {retryResults[key] ? <Check size={16} /> : <X size={16} />}
+                                    {retryResults[key] ? 'Correct this time!' : 'Still incorrect. Keep practicing!'}
+                                  </div>
+                                )}
+                              </>
+                            ) : (
                               <div style={{
-                                marginTop: '8px', padding: '8px', borderRadius: '6px', fontSize: '13px',
-                                backgroundColor: retryResults[key] ? 'rgba(59,255,158,0.1)' : 'rgba(255,51,85,0.1)',
-                                color: retryResults[key] ? '#3bff9e' : '#ff3355',
-                                fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px',
+                                padding: '10px 12px', borderRadius: '8px', marginBottom: '12px',
+                                backgroundColor: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)',
+                                fontSize: '0.82rem', color: 'var(--text-secondary)',
                               }}>
-                                {retryResults[key] ? <Check size={16} /> : <X size={16} />}
-                                {retryResults[key] ? 'Correct this time!' : 'Still incorrect. Keep practicing!'}
+                                <span style={{ fontWeight: 600, color: '#f59e0b' }}>Cannot type-check this mistake.</span>
+                                {' '}No expected answer was stored (e.g. writing/speaking feedback without a specific correction).
+                                You can mark it as mastered, remove it, or review the source material.
                               </div>
                             )}
 

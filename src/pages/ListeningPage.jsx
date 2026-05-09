@@ -278,6 +278,7 @@ export default function ListeningPage() {
 
   const submitAll = () => {
     if (submittedRef.current) return;
+    if (!ex || !ex.questions) return;
     submittedRef.current = true;
     let s = 0;
     ex.questions.forEach(q => {
@@ -293,7 +294,8 @@ export default function ListeningPage() {
     setShowTranscript(true);
     
     const allCorrect = s === ex.questions.length;
-    const listeningId = `listening_${levelId}_${ex.id || currentEx}`;
+    // Use index-based key (matching status lookup format) for consistent progress tracking
+    const listeningId = `listening_${levelId}_${currentEx}`;
     
     if (allCorrect) {
       completeListening(levelId, listeningId);

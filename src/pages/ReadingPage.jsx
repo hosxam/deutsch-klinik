@@ -27,6 +27,18 @@ export default function ReadingPage() {
     );
   }
 
+  // Guard against stale/null exercise (Back navigation edge case)
+  if (!ex) {
+    return (
+      <LevelLock levelId={levelId}>
+      <div className="text-center py-12">
+        <p style={{ color: 'var(--text-muted)' }}>Exercise not found</p>
+        <Link to={`/level/${levelId}`} className="text-sm mt-4 inline-block" style={{ color: 'var(--accent)' }}>Back</Link>
+      </div>
+      </LevelLock>
+    );
+  }
+
   const handleAnswer = (qId, ans) => {
     setAnswers({ ...answers, [qId]: ans });
   };

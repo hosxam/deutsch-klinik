@@ -339,6 +339,21 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
       };
     }
 
+    // Create SM-2 vocabulary mastery entry for mistake so it appears in flashcard review queue
+    const mistakeReviewId = `mistake_${level}_${exerciseId}`;
+    if (!state.vocabularyMastery[mistakeReviewId]) {
+      state.vocabularyMastery[mistakeReviewId] = {
+        correct: 0, incorrect: 1, repetitions: 0, interval: 0, ease: 2.5, due: getLocalDateKey(),
+        mastered: false, mistakeTopic: topic, mistakeSkill: skill || topic || 'general',
+      };
+    } else {
+      state.vocabularyMastery[mistakeReviewId].incorrect += 1;
+      state.vocabularyMastery[mistakeReviewId].repetitions = 0;
+      state.vocabularyMastery[mistakeReviewId].interval = 0;
+      state.vocabularyMastery[mistakeReviewId].due = getLocalDateKey();
+      state.vocabularyMastery[mistakeReviewId].ease = Math.max(1.3, (state.vocabularyMastery[mistakeReviewId].ease || 2.5) - 0.2);
+    }
+
     // Update topic weakness
     if (!state.topicWeakness[topic]) {
       state.topicWeakness[topic] = { correct: 0, incorrect: 0, status: 'weak' };

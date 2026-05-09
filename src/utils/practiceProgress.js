@@ -60,7 +60,14 @@ export function recordPracticeAttempt(skill, itemId, result = {}) {
   if (result.score !== undefined) {
     cur.score = result.score;
     cur.maxScore = result.maxScore || 10;
-    cur.status = result.score >= 8 ? 'completed_correct' : 'completed_incorrect';
+    // Only overwrite status from score if correct flag was NOT explicitly passed.
+    // This prevents small-question-count scales (e.g. 4/4 reading) from being
+    // misclassified by the absolute >= 8 threshold designed for writing/speaking.
+    if (result.correct === undefined) {
+      // Use proportional threshold for score-based status
+      const pct = cur.maxScore > 0 ? result.score / cur.maxScore : 0;
+      cur.status = pct >= 0.8 ? 'completed_correct' : 'completed_incorrect';
+    }
   }
   // Set dueDate for scheduling
   if (result.dueDate !== undefined) {
