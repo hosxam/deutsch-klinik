@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import {  updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
 import vocabData from '../data/germanVocabulary.json';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, CheckCircle, Brain, Search, Filter, X, Hash, RotateCcw } from 'lucide-react';
+import { Shuffle, CheckCircle, Brain, Search, Filter, X, Hash, RotateCcw, BookMarked } from 'lucide-react';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -465,8 +465,8 @@ export default function VocabularyPage() {
           <button style={s.btn} onClick={() => setCurrentIndex(Math.floor(Math.random() * words.length))}>
             <Shuffle size={14} style={{ marginRight: '0.4rem' }} />Random
           </button>
-          <button style={s.btnPrimary} onClick={() => navigate(`/level/${levelId}/vocabulary/practice`)}>
-            <Hash size={14} style={{ marginRight: '0.4rem' }} />Practice
+          <button style={s.btnPrimary} onClick={() => navigate(`/level/${levelId}/vocabulary/flashcards`)}>
+            <BookMarked size={14} style={{ marginRight: '0.4rem' }} />Flashcards
           </button>
           <button style={s.btnPrimary} onClick={() => setMode('quiz')}>
             <Brain size={14} style={{ marginRight: '0.4rem' }} />Start Quiz

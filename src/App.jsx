@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate, useLocation, useParams } from 'react-router-dom';
 import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
 import { getCurrentProfileName, getState } from './utils/store';
@@ -24,7 +24,6 @@ const DailyMissionPage = lazy(() => import('./pages/DailyMissionPage'));
 const LessonsPage = lazy(() => import('./pages/LessonsPage'));
 const LessonDetailPage = lazy(() => import('./pages/LessonDetailPage'));
 const MistakeNotebookPage = lazy(() => import('./pages/MistakeNotebookPage'));
-const PracticePage = lazy(() => import('./pages/PracticePage'));
 const MedicalFSPHubPage = lazy(() => import('./pages/MedicalFSPHubPage'));
 const FSPVocabPage = lazy(() => import('./pages/FSPVocabPage'));
 const FSPAnamnesePage = lazy(() => import('./pages/FSPAnamnesePage'));
@@ -47,6 +46,12 @@ const ONBOARDING_ALLOWED = [
   '/placement-test',
   '/goal-setup',
 ];
+
+// Redirect old vocabulary practice route to flashcards
+function VocabPracticeRedirect() {
+  const { levelId } = useParams();
+  return <Navigate to={`/level/${levelId}/vocabulary/flashcards`} replace />;
+}
 
 function Loading() {
   const [dots, setDots] = useState('');
@@ -217,7 +222,7 @@ export default function App() {
             <Route path="level/:levelId/vocabulary/practice" element={
               <Suspense fallback={<Loading />}>
                 <RouteGuard>
-                  <PracticePage />
+                  <VocabPracticeRedirect />
                 </RouteGuard>
               </Suspense>
             } />

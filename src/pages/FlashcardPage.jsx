@@ -1,17 +1,19 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useEffect } from 'react';
-import { getState, updateState, updateLevelProgress, recordVocabAnswer, getDailyFlashcardQueue } from '../utils/store';
+import { getState, updateLevelProgress, recordVocabAnswer, getDailyFlashcardQueue, getVocabMastery, getLocalDateKey } from '../utils/store';
 import fullVocabData from '../data/germanVocabulary.json';
-import { RefreshCw, ThumbsUp, ThumbsDown, RotateCcw, Search, X, ChevronRight } from 'lucide-react';
-import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, LoadingState } from '../components/ui';
+import { RefreshCw, ThumbsUp, ThumbsDown, RotateCcw, Search, X, BookMarked } from 'lucide-react';
+import { PageShell, SectionHeader, Card, Button, LevelBadge, LoadingState } from '../components/ui';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const SESSION_SIZES = [5, 10, 15, 20, 25];
+const DEFAULT_SESSION_SIZE = 20;
+const MAX_NEW_CARDS = 10;
+const MAX_TOTAL_CARDS = 25;
 
-const FILTERS = [
-  { key: 'all', label: 'All Cards' },
-  { key: 'due', label: 'Due Today' },
-  { key: 'weak', label: 'Weak Cards' },
-];
+// Card type concepts for noun-specific practice
+const CARD_TYPES = ['meaning', 'article', 'plural'];
+const CARD_TYPE_LABELS = { meaning: 'Meaning', article: 'Article', plural: 'Plural' };
 
 // Medical keywords (same logic as VocabularyPage)
 const MEDICAL_KEYWORDS = [
@@ -67,12 +69,148 @@ function isMedicalWord(word) {
   return MEDICAL_KEYWORDS.some(kw => searchText.includes(kw.toLowerCase()));
 }
 
-function getLocalDateKey() {
-  const d = new Date();
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Generate card types for a given word
+// Returns array of { cardId, front, back, cardType, wordRef }
+function generateCardTypes(word) {
+  const art = word.article || '';
+  const baseWord = word.word || '';
+  const translation = word.translation || '';
+  const isNoun = word.partOfSpeech === 'noun' || !!art;
+  const cards = [];
+
+  // Meaning card: always generated
+  const meaningFront = art ? `${art} ${baseWord}` : baseWord;
+  if (word.plural && isNoun) {
+    cards.push({
+      cardId: `${word._level}_${word.id}_meaning`,
+      front: `${meaningFront} (${word.plural})`,
+      back: translation,
+      cardType: 'meaning',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  } else {
+    cards.push({
+      cardId: `${word._level}_${word.id}_meaning`,
+      front: meaningFront,
+      back: translation,
+      cardType: 'meaning',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  // Article card: only for nouns
+  if (isNoun) {
+    const cleanWord = baseWord.replace(/^(der|die|das)\s+/i, '').trim();
+    cards.push({
+      cardId: `${word._level}_${word.id}_article`,
+      front: `Article of "${cleanWord}"?`,
+      back: art ? `${art} ${cleanWord}` : cleanWord,
+      cardType: 'article',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  // Plural card: only for nouns with plural form
+  if (isNoun && word.plural) {
+    const cleanWord = baseWord.replace(/^(der|die|das)\s+/i, '').trim();
+    cards.push({
+      cardId: `${word._level}_${word.id}_plural`,
+      front: `Plural of "${art} ${cleanWord}"?`,
+      back: word.plural,
+      cardType: 'plural',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  return cards;
+}
+
+/**
+ * Build the SRS queue for flashcards.
+ * Returns structured queue with card types generated from eligible words.
+ */
+function buildFlashcardQueue(words, sessionSize) {
+  const state = getState();
+  const today = getLocalDateKey();
+  const mastery = state.vocabularyMastery || {};
+  const qDue = [];
+  const qMistake = [];
+  const qNew = [];
+
+  words.forEach(w => {
+    const id = `${w._level}_${w.id}`;
+    const m = mastery[id];
+    if (!m) {
+      qNew.push(w);
+    } else if (m.incorrect > m.correct && m.incorrect >= 2) {
+      qMistake.push(w);
+    } else if (!m.mastered || m.due <= today) {
+      qDue.push(w);
+    }
+  });
+
+  // Generate card types for each word in priority order
+  const cards = [];
+  const generateCards = (wordList, limit) => {
+    const result = [];
+    for (const w of wordList) {
+      if (result.length >= limit) break;
+      const types = generateCardTypes(w);
+      // For due/mistake cards, include ALL card types the word supports
+      // For new cards, only meaning card (simpler intro)
+      const eligible = (wordList === qNew)
+        ? types.filter(t => t.cardType === 'meaning')
+        : types;
+      for (const t of eligible) {
+        if (result.length < limit) result.push(t);
+      }
+    }
+    return result;
+  };
+
+  // Priority: due reviews > mistake cards > new cards
+  cards.push(...generateCards(qDue, sessionSize));
+  if (cards.length < sessionSize) {
+    cards.push(...generateCards(qMistake, sessionSize - cards.length));
+  }
+  if (cards.length < sessionSize) {
+    const newRoom = Math.min(MAX_NEW_CARDS, sessionSize - cards.length);
+    cards.push(...generateCards(qNew, newRoom));
+  }
+
+  return cards;
+}
+
+// Count queue stats
+function getQueueStats(wordIds) {
+  const state = getState();
+  const today = getLocalDateKey();
+  const mastery = state.vocabularyMastery || {};
+  let dueCount = 0;
+  let newCount = 0;
+  let mistakeCount = 0;
+
+  wordIds.forEach(id => {
+    const m = mastery[id];
+    if (!m) {
+      newCount++;
+    } else if (m.incorrect > m.correct && m.incorrect >= 2) {
+      mistakeCount++;
+    } else if (!m.mastered || m.due <= today) {
+      dueCount++;
+    }
+  });
+
+  return { dueCount, newCount, mistakeCount };
 }
 
 // All words from all levels with level info attached
@@ -80,25 +218,16 @@ const allWords = LEVELS.flatMap(level =>
   (fullVocabData[level] || []).map(w => ({ ...w, _level: level }))
 );
 
-// Build display fields from germanVocabulary structure
-function displayWord(card) {
-  const w = card.word || '';
-  const art = card.article || '';
-  const hasArticleInWord = /^(der|die|das)\s+/i.test(w.trim());
-  let result = art && !hasArticleInWord ? `${art} ${w}` : w;
-  if (card.partOfSpeech === 'noun' && card.plural) {
-    result += ` (${card.plural})`;
-  }
-  return result;
-}
-
 export default function FlashcardPage() {
   const { levelId } = useParams();
   const [filter, setFilter] = useState('due');
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(false);
+  const [sessionCards, setSessionCards] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const [sessionSize, setSessionSize] = useState(DEFAULT_SESSION_SIZE);
+  const [sessionStarted, setSessionStarted] = useState(false);
 
   // Search & filter state
   const [search, setSearch] = useState('');
@@ -109,17 +238,6 @@ export default function FlashcardPage() {
   useEffect(() => {
     if (levelId) setLevelFilter(levelId);
   }, [levelId]);
-
-  const s = {
-    input: { width: '100%', padding: '0.6rem 0.8rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.9rem', outline: 'none' },
-    select: { padding: '0.5rem 0.6rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.8rem', outline: 'none', cursor: 'pointer', minWidth: '80px' },
-    filterBtn: (active) => ({
-      padding: '0.4rem 0.8rem', borderRadius: '6px', border: active ? '1px solid var(--accent)' : '1px solid var(--border)',
-      background: active ? 'rgba(0,240,255,0.1)' : 'var(--bg-hover)',
-      color: active ? 'var(--accent)' : 'var(--text-secondary)',
-      cursor: 'pointer', fontSize: '0.75rem', fontWeight: active ? 600 : 400,
-    }),
-  };
 
   // All words for the current level filter
   const sourceWords = useMemo(() => {
@@ -150,85 +268,62 @@ export default function FlashcardPage() {
     return words;
   }, [sourceWords, search, medicalOnly]);
 
-  // Filtered and queued cards
-  const words = useMemo(() => {
-    const state = getState();
-    const today = getLocalDateKey();
-    let filtered = [...searchedWords];
+  // Queue stats for session setup display
+  const wordIds = useMemo(() => searchedWords.map(w => `${w._level}_${w.id}`), [searchedWords]);
+  const stats = useMemo(() => getQueueStats(wordIds), [wordIds]);
 
-    if (filter === 'due') {
-      filtered = filtered.filter(w => {
-        const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
-        return !card || card.due <= today || !card.mastered;
-      });
-      // Apply daily queue for "due" filter
-      const ids = filtered.map(w => `${w._level}_${w.id}`);
-      const queuedIds = new Set(getDailyFlashcardQueue(ids));
-      filtered = filtered.filter(w => queuedIds.has(`${w._level}_${w.id}`));
-    } else if (filter === 'weak') {
-      filtered = filtered.filter(w => {
-        const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
-        return card && (card.repetitions < 2 || card.ease < 2.3);
-      });
-    }
+  // Build the session cards when starting
+  const buildSession = (size) => {
+    const cards = buildFlashcardQueue(searchedWords, size);
+    setSessionCards(cards);
+    setIndex(0);
+    setFlipped(false);
+    setDone(false);
+    setReviews([]);
+    setSessionStarted(true);
+    setSessionSize(size);
+  };
 
-    return filtered.sort((a, b) => `${a._level}_${a.id}`.localeCompare(`${b._level}_${b.id}`));
-  }, [searchedWords, filter]);
+  // Handle review rating: 1=Again, 2=Hard, 3=Good, 4=Easy
+  const handleReview = (rating) => {
+    const card = sessionCards[index];
+    const labels = ['', 'Again', 'Hard', 'Good', 'Easy'];
 
-  // Compute stats for StatCards
-  const stats = useMemo(() => {
-    const state = getState();
-    const today = getLocalDateKey();
-    let dueCount = 0;
-    let newCount = 0;
-    let reviewCount = 0;
-
-    searchedWords.forEach(w => {
-      const card = state.vocabularyMastery[w.id] || state.flashcards?.[`${w._level}_${w.id}`];
-      if (!card) {
-        newCount++;
-        dueCount++;
-      } else if (!card.mastered || card.due <= today) {
-        dueCount++;
-      }
-      if (card && card.repetitions > 0) {
-        reviewCount++;
-      }
+    // Record the answer using the wordRef (base word id, not card-specific id)
+    recordVocabAnswer(card.wordRef, rating, {
+      level: levelFilter !== 'all' ? levelFilter : card.wordRef.split('_')[0],
+      userAnswer: rating >= 3 ? 'Knew it' : '[flashcard]',
+      correctAnswer: card.back || '',
+      translation: card.back,
+      topic: 'Vocabulary',
     });
-
-    return { dueCount, newCount, reviewCount };
-  }, [searchedWords]);
-
-  const handleFilterChange = (newFilter) => {
-    setFilter(newFilter);
-    setIndex(0);
-    setFlipped(false);
-    setDone(false);
-    setReviews([]);
+    updateLevelProgress(
+      levelFilter !== 'all' ? levelFilter : card.wordRef.split('_')[0],
+      'vocab',
+      {
+        date: new Date().toISOString(),
+        wordId: card.wordRef,
+        correct: rating >= 3,
+      }
+    );
+    setReviews([...reviews, { cardId: card.cardId, wordRef: card.wordRef, cardType: card.cardType, rating, label: labels[rating] }]);
+    if (index < sessionCards.length - 1) {
+      setIndex(index + 1);
+      setFlipped(false);
+    } else {
+      setDone(true);
+    }
   };
 
-  const handleLevelChange = (newLevel) => {
-    setLevelFilter(newLevel);
-    setIndex(0);
-    setFlipped(false);
-    setDone(false);
-    setReviews([]);
-  };
-
-  const handleSearchChange = (value) => {
-    setSearch(value);
-    setIndex(0);
-    setFlipped(false);
-    setDone(false);
-    setReviews([]);
-  };
-
-  const toggleMedical = () => {
-    setMedicalOnly(!medicalOnly);
-    setIndex(0);
-    setFlipped(false);
-    setDone(false);
-    setReviews([]);
+  const s = {
+    input: { width: '100%', padding: '0.6rem 0.8rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.9rem', outline: 'none' },
+    select: { padding: '0.5rem 0.6rem', borderRadius: '8px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', fontSize: '0.8rem', outline: 'none', cursor: 'pointer', minWidth: '80px' },
+    filterBtn: (active) => ({
+      padding: '0.4rem 0.8rem', borderRadius: '6px', border: active ? '1px solid var(--accent)' : '1px solid var(--border)',
+      background: active ? 'rgba(0,240,255,0.1)' : 'var(--bg-hover)',
+      color: active ? 'var(--accent)' : 'var(--text-secondary)',
+      cursor: 'pointer', fontSize: '0.75rem', fontWeight: active ? 600 : 400,
+    }),
   };
 
   if (sourceWords.length === 0 && levelFilter !== 'all') {
@@ -242,38 +337,125 @@ export default function FlashcardPage() {
     );
   }
 
-  // Handle review rating: 1=Again, 2=Hard, 3=Good, 4=Easy
-  const handleReview = (rating) => {
-    const word = words[index];
-    const labels = ['', 'Again', 'Hard', 'Good', 'Easy'];
-    recordVocabAnswer(`${word._level}_${word.id}`, rating, {
-      level: word._level,
-      userAnswer: rating >= 3 ? 'Knew it' : '[flashcard]',
-      correctAnswer: word.translation || word.english || word.word || '',
-      translation: word.translation,
-      topic: word.topic || 'Vocabulary',
-    });
-    updateLevelProgress(word._level, 'vocab', {
-      date: new Date().toISOString(),
-      wordId: word.id,
-      correct: rating >= 3,
-    });
-    setReviews([...reviews, { wordId: word.id, level: word._level, rating, label: labels[rating] }]);
-    if (index < words.length - 1) {
-      setIndex(index + 1);
-      setFlipped(false);
-    } else {
-      setDone(true);
-    }
-  };
+  // Session setup screen (before cards start)
+  if (!sessionStarted) {
+    return (
+      <PageShell maxWidth="max-w-lg">
+        <div className="mb-6">
+          <SectionHeader
+            title="Flashcards"
+            subtitle="Spaced repetition vocabulary"
+            action={
+              <Link to="/practice" style={{ color: 'var(--accent)', fontSize: '0.85rem' }}>&larr; Practice Hub</Link>
+            }
+          />
+        </div>
 
+        <div className="rounded-xl p-6 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+          <div className="flex items-center gap-3 mb-4">
+            <BookMarked size={24} style={{ color: '#06b6d4' }} />
+            <div>
+              <div className="font-bold" style={{ color: 'var(--text-primary)' }}>{levelFilter !== 'all' ? `Level ${levelFilter}` : 'All Levels'}</div>
+              <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
+                {searchedWords.length} available words
+                {medicalOnly ? ' (Medical)' : ''}
+              </div>
+            </div>
+          </div>
+
+          {/* Quick queue stats */}
+          <div className="grid grid-cols-3 gap-3 mb-4 text-center text-xs">
+            <div className="p-2 rounded" style={{ backgroundColor: 'rgba(59,255,158,0.08)', color: '#3bff9e' }}>
+              <div className="text-lg font-bold">{stats.dueCount}</div>
+              Due
+            </div>
+            <div className="p-2 rounded" style={{ backgroundColor: 'rgba(6,182,212,0.08)', color: '#06b6d4' }}>
+              <div className="text-lg font-bold">{stats.newCount}</div>
+              New
+            </div>
+            <div className="p-2 rounded" style={{ backgroundColor: 'rgba(255,170,51,0.08)', color: '#ffaa33' }}>
+              <div className="text-lg font-bold">{stats.mistakeCount}</div>
+              Mistakes
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <div className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Cards per session</div>
+            <div className="flex gap-2 flex-wrap">
+              {SESSION_SIZES.map(s => (
+                <button
+                  key={s}
+                  onClick={() => setSessionSize(s)}
+                  className="px-3 py-1.5 rounded-lg text-sm transition-all"
+                  style={{
+                    backgroundColor: sessionSize === s ? 'var(--accent)' : 'var(--bg-hover)',
+                    color: sessionSize === s ? '#000' : 'var(--text-primary)',
+                    border: `1px solid ${sessionSize === s ? 'var(--accent)' : 'var(--border)'}`,
+                    fontWeight: sessionSize === s ? 700 : 400,
+                  }}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Card type toggle */}
+          <div className="mb-3">
+            <div className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Card types</div>
+            <div className="text-xs" style={{ color: 'var(--text-muted)' }}>
+              Nouns get article and plural cards automatically. All words get meaning recall cards.
+            </div>
+          </div>
+        </div>
+
+        {/* Search + filter options */}
+        <div className="rounded-xl p-4 mb-4" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+          <div className="mb-3">
+            <div style={{ position: 'relative' }}>
+              <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+              <input
+                type="text"
+                placeholder="Search words..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                style={{ ...s.input, paddingLeft: '2.2rem', fontSize: '0.85rem' }}
+              />
+              {search && (
+                <button onClick={() => setSearch('')} style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer' }}>
+                  <X size={16} />
+                </button>
+              )}
+            </div>
+          </div>
+          <div className="flex gap-2 flex-wrap items-center">
+            <select value={levelFilter} onChange={e => setLevelFilter(e.target.value)} style={s.select}>
+              <option value="all">All Levels</option>
+              {LEVELS.map(l => (
+                <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
+              ))}
+            </select>
+            <button onClick={() => setMedicalOnly(!medicalOnly)} style={s.filterBtn(medicalOnly)}>
+              {medicalOnly ? '✓ ' : ''}Medical
+            </button>
+          </div>
+        </div>
+
+        <Button variant="primary" onClick={() => buildSession(sessionSize)} className="w-full py-3 text-base">
+          Start {sessionSize} Card{ sessionSize > 1 ? 's' : '' }
+        </Button>
+      </PageShell>
+    );
+  }
+
+  // Done screen
   if (done) {
     return (
       <PageShell maxWidth="max-w-lg">
-        <div className="text-center py-12">
+        <div className="text-center py-10">
           <div className="text-5xl mb-4">🎴</div>
           <h2 className="text-xl font-bold mb-2" style={{ color: 'var(--accent)' }}>Session Complete!</h2>
-          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>{words.length} cards reviewed</p>
+          <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>{sessionCards.length} cards reviewed</p>
           <div className="mb-6">
             <div className="text-sm font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Ratings breakdown:</div>
             <div className="grid grid-cols-4 gap-2 text-xs text-center">
@@ -295,111 +477,63 @@ export default function FlashcardPage() {
               </div>
             </div>
           </div>
-          <Link to={`/level/${levelId}/vocabulary`} className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--accent)', color: '#fff' }}>
-            Back to Vocabulary
-          </Link>
+          <div className="flex gap-3 justify-center flex-wrap">
+            <Button variant="primary" onClick={() => { setSessionStarted(false); setDone(false); }}>
+              New Session
+            </Button>
+            <Link to="/practice" className="px-4 py-2 rounded-lg text-sm" style={{ backgroundColor: 'var(--bg-hover)', color: 'var(--text-secondary)' }}>
+              Practice Hub
+            </Link>
+          </div>
         </div>
       </PageShell>
     );
   }
 
-  if (words.length === 0) {
+  // Empty cards
+  if (sessionCards.length === 0) {
     return (
       <PageShell maxWidth="max-w-lg">
         <div className="mb-4">
           <SectionHeader
             title="Flashcards"
-            subtitle={
-              <div className="flex items-center gap-2">
-                {levelFilter !== 'all' && <LevelBadge level={levelFilter} />}
-                <span>0 cards</span>
-              </div>
-            }
+            subtitle="0 cards"
             action={
-              <Link to={`/level/${levelId}/vocabulary`} style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+              <button onClick={() => setSessionStarted(false)} style={{ color: 'var(--accent)', cursor: 'pointer', background: 'none', border: 'none' }}>&larr; Back</button>
             }
           />
         </div>
-
-        <div className="grid grid-cols-3 gap-3 mb-6">
-          <Button variant="primary" size="sm">Due ({stats.dueCount})</Button>
-          <Button variant="success" size="sm">New ({stats.newCount})</Button>
-          <Button variant="ghost" size="sm">Reviews ({stats.reviewCount})</Button>
-        </div>
-
-        <div className="flex gap-2 justify-center mb-4 flex-wrap">
-          {FILTERS.map(f => (
-            <Button
-              key={f.key}
-              variant={filter === f.key ? 'primary' : 'ghost'}
-              size="sm"
-              onClick={() => handleFilterChange(f.key)}
-            >
-              {f.label}
-            </Button>
-          ))}
-        </div>
-
-        <div style={{ marginBottom: '0.75rem' }}>
-          <div style={{ position: 'relative' }}>
-            <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-            <input
-              type="text"
-              aria-label="Search flashcards"
-              placeholder="Search cards..."
-              value={search}
-              onChange={e => handleSearchChange(e.target.value)}
-              style={{ ...s.input, paddingLeft: '2.2rem' }}
-            />
-            {search && (
-              <button
-                type="button"
-                aria-label="Clear flashcard search"
-                onClick={() => handleSearchChange('')}
-                style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}
-              >
-                <X size={16} />
-              </button>
-            )}
-          </div>
-        </div>
-
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
-          <select aria-label="Filter flashcards by level" value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
-            <option value="all">All Levels</option>
-            {LEVELS.map(l => (
-              <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
-            ))}
-          </select>
-          <button type="button" aria-pressed={medicalOnly} onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
-            {medicalOnly ? '✓ ' : ''}Medical
-          </button>
-        </div>
-
         <div className="rounded-xl p-8 text-center" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
-          <div className="text-3xl mb-3">🔍</div>
-          <p className="text-sm mb-2" style={{ color: 'var(--text-primary)' }}>No flashcards match these filters</p>
+          <div className="text-3xl mb-3">🎉</div>
+          <p className="text-sm mb-2" style={{ color: 'var(--text-primary)' }}>All caught up!</p>
           <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>
-            Try adjusting your search or filter criteria.
+            No cards due for this level. Check back later or try a different level.
           </p>
-          <Button
-            variant="primary"
-            size="sm"
-            onClick={() => { handleSearchChange(''); setMedicalOnly(false); handleLevelChange(levelId || 'all'); }}
-          >
-            Clear Filters
+          <Button variant="primary" size="sm" onClick={() => setSessionStarted(false)}>
+            Change Settings
           </Button>
         </div>
       </PageShell>
     );
   }
 
-  const word = words[index];
-  const displayGerman = displayWord(word);
-  const displayEnglish = word.translation || '';
-  const displayExample = word.example || '';
-  const displayExampleTranslation = word.exampleTranslation || '';
-  const progressPct = words.length > 0 ? ((index) / words.length) * 100 : 0;
+  // Active card session
+  const card = sessionCards[index];
+
+  // Build the front/back display
+  const getCardDisplay = () => {
+    if (card.cardType === 'article') {
+      return { front: card.front, back: card.back };
+    }
+    if (card.cardType === 'plural') {
+      return { front: card.front, back: card.back };
+    }
+    // Meaning card
+    return { front: card.front, back: card.back };
+  };
+
+  const display = getCardDisplay();
+  const totalCards = sessionCards.length;
 
   return (
     <PageShell maxWidth="max-w-lg">
@@ -408,16 +542,25 @@ export default function FlashcardPage() {
           title="Flashcards"
           subtitle={
             <div className="flex items-center gap-2">
-              {word._level && <LevelBadge level={word._level} />}
-              <span>{index + 1}/{words.length}</span>
+              {levelFilter !== 'all' && <LevelBadge level={levelFilter} />}
+              <span style={{ fontSize: '0.85rem' }}>{index + 1}/{totalCards}</span>
             </div>
           }
           action={
-            <Link to={`/level/${levelId}/vocabulary`} style={{ color: 'var(--accent)' }}>&larr; Back</Link>
+            <button onClick={() => setSessionStarted(false)} style={{ color: 'var(--accent)', cursor: 'pointer', background: 'none', border: 'none', fontSize: '0.85rem' }}>&larr; Exit</button>
           }
         />
       </div>
 
+      {/* Session progress bar */}
+      <div className="w-full h-1 rounded mb-3" style={{ backgroundColor: 'var(--bg-hover)' }}>
+        <div
+          className="h-full rounded transition-all"
+          style={{ width: `${((index + 1) / totalCards) * 100}%`, backgroundColor: 'var(--accent)' }}
+        />
+      </div>
+
+      {/* Reviews mini-bar */}
       {index > 0 && reviews.length > 0 && (
         <div className="grid grid-cols-4 gap-2 mb-3 text-xs text-center">
           <div className="p-1 rounded" style={{ backgroundColor: 'rgba(255,51,85,0.08)', color: '#ff3355' }}>
@@ -435,55 +578,25 @@ export default function FlashcardPage() {
         </div>
       )}
 
-      {/* Filter bar */}
-      <div className="flex gap-2 justify-center mb-3 flex-wrap">
-        {FILTERS.map(f => (
-          <Button
-            key={f.key}
-            variant={filter === f.key ? 'primary' : 'ghost'}
-            size="sm"
-            onClick={() => handleFilterChange(f.key)}
-          >
-            {f.label}
-          </Button>
-        ))}
-        <span className="text-xs px-2 py-1" style={{ color: 'var(--text-muted)' }}>
-          {words.length} cards
+      {/* Card type badge */}
+      <div className="text-center mb-2">
+        <span
+          className="inline-block px-2 py-0.5 rounded text-xs font-medium"
+          style={{
+            backgroundColor: card.cardType === 'article' ? 'rgba(255,170,51,0.12)' :
+              card.cardType === 'plural' ? 'rgba(139,92,246,0.12)' :
+                'rgba(6,182,212,0.12)',
+            color: card.cardType === 'article' ? '#ffaa33' :
+              card.cardType === 'plural' ? '#8b5cf6' : 'var(--accent)',
+          }}
+        >
+          {CARD_TYPE_LABELS[card.cardType] || 'Meaning'}
         </span>
-      </div>
-
-      <div style={{ marginBottom: '0.75rem' }}>
-        <div style={{ position: 'relative' }}>
-          <Search size={16} style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-          <input
-            type="text"
-            aria-label="Search flashcards"
-            placeholder="Search cards..."
-            value={search}
-            onChange={e => handleSearchChange(e.target.value)}
-            style={{ ...s.input, paddingLeft: '2.2rem' }}
-          />
-          {search && (
-            <button aria-label="Clear flashcard search" onClick={() => handleSearchChange('')} style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.25rem' }}><X size={16} /></button>
-          )}
-        </div>
-      </div>
-
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem', alignItems: 'center' }}>
-        <select aria-label="Filter flashcards by level" value={levelFilter} onChange={e => handleLevelChange(e.target.value)} style={s.select}>
-          <option value="all">All Levels</option>
-          {LEVELS.map(l => (
-            <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
-          ))}
-        </select>
-        <button type="button" aria-pressed={medicalOnly} onClick={toggleMedical} style={s.filterBtn(medicalOnly)}>
-          {medicalOnly ? '✓ ' : ''}Medical
-        </button>
       </div>
 
       {/* Flashcard */}
       <Card
-        className="cursor-pointer min-h-[220px] flex items-center justify-center text-center p-10"
+        className="cursor-pointer min-h-[200px] flex items-center justify-center text-center p-8"
         style={{
           borderColor: flipped ? '#8b5cf6' : 'var(--border)',
           boxShadow: flipped ? '0 0 30px rgba(139,92,246,0.15)' : 'none',
@@ -492,21 +605,12 @@ export default function FlashcardPage() {
         hover={false}
       >
         <div>
-          <div className="text-2xl font-bold mb-2 break-words">{flipped ? displayEnglish : displayGerman}</div>
-          <div className="text-sm mt-2" style={{ color: 'var(--text-muted)' }}>
-            {flipped ? (
-              <div>
-                <div>{word.word}</div>
-                {word.example && <div className="mt-2 italic">{displayExample}</div>}
-                {word.exampleTranslation && <div className="mt-1 text-xs">{displayExampleTranslation}</div>}
-              </div>
-            ) : (
-              <div>
-                {word.partOfSpeech && <span className="inline-block px-2 py-0.5 rounded text-xs" style={{ backgroundColor: 'rgba(139,92,246,0.1)', color: 'var(--accent)' }}>{word.partOfSpeech}</span>}
-                <div className="mt-2">Click to reveal translation</div>
-              </div>
-            )}
-          </div>
+          <div className="text-xl font-bold mb-3 break-words">{flipped ? display.back : display.front}</div>
+          {!flipped && (
+            <div className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
+              Click to reveal answer
+            </div>
+          )}
         </div>
       </Card>
 

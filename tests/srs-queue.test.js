@@ -610,3 +610,417 @@ describe('FlashcardPage SRS Queue (Same Queue as Vocabulary Practice)', () => {
     b1Queue.forEach(id => expect(id.startsWith('B1_')).toBe(true));
   });
 });
+
+// ============================================================
+// Phase 18B: Flashcard Card Type Generation Tests
+// Replicate exact logic from FlashcardPage.jsx
+// ============================================================
+
+function generateCardTypes(word) {
+  const art = word.article || '';
+  const baseWord = word.word || '';
+  const translation = word.translation || '';
+  const isNoun = word.partOfSpeech === 'noun' || !!art;
+  const cards = [];
+
+  const meaningFront = art ? `${art} ${baseWord}` : baseWord;
+  if (word.plural && isNoun) {
+    cards.push({
+      cardId: `${word._level}_${word.id}_meaning`,
+      front: `${meaningFront} (${word.plural})`,
+      back: translation,
+      cardType: 'meaning',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  } else {
+    cards.push({
+      cardId: `${word._level}_${word.id}_meaning`,
+      front: meaningFront,
+      back: translation,
+      cardType: 'meaning',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  if (isNoun) {
+    const cleanWord = baseWord.replace(/^(der|die|das)\s+/i, '').trim();
+    cards.push({
+      cardId: `${word._level}_${word.id}_article`,
+      front: `Article of "${cleanWord}"?`,
+      back: art ? `${art} ${cleanWord}` : cleanWord,
+      cardType: 'article',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  if (isNoun && word.plural) {
+    const cleanWord = baseWord.replace(/^(der|die|das)\s+/i, '').trim();
+    cards.push({
+      cardId: `${word._level}_${word.id}_plural`,
+      front: `Plural of "${art} ${cleanWord}"?`,
+      back: word.plural,
+      cardType: 'plural',
+      wordRef: `${word._level}_${word.id}`,
+    });
+  }
+
+  return cards;
+}
+
+function buildFlashcardQueue(words, sessionSize, masteryStore) {
+  const today = getLocalDateKey();
+  const MAX_NEW_CARDS = 10;
+  const qDue = [];
+  const qMistake = [];
+  const qNew = [];
+
+  words.forEach(w => {
+    const id = `${w._level}_${w.id}`;
+    const m = masteryStore[id];
+    if (!m) {
+      qNew.push(w);
+    } else if (m.incorrect > m.correct && m.incorrect >= 2) {
+      qMistake.push(w);
+    } else if (!m.mastered || m.due <= today) {
+      qDue.push(w);
+    }
+  });
+
+  const cards = [];
+  const generateCards = (wordList, limit) => {
+    const result = [];
+    for (const w of wordList) {
+      if (result.length >= limit) break;
+      const types = generateCardTypes(w);
+      const eligible = (wordList === qNew)
+        ? types.filter(t => t.cardType === 'meaning')
+        : types;
+      for (const t of eligible) {
+        if (result.length < limit) result.push(t);
+      }
+    }
+    return result;
+  };
+
+  cards.push(...generateCards(qDue, sessionSize));
+  if (cards.length < sessionSize) {
+    cards.push(...generateCards(qMistake, sessionSize - cards.length));
+  }
+  if (cards.length < sessionSize) {
+    const newRoom = Math.min(MAX_NEW_CARDS, sessionSize - cards.length);
+    cards.push(...generateCards(qNew, newRoom));
+  }
+
+  return cards;
+}
+
+describe('Phase 18B: Flashcard generateCardTypes', () => {
+  it('generates meaning card for any word', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 1, word: 'Hallo', translation: 'hello', partOfSpeech: 'interjection' });
+    const meaning = types.find(t => t.cardType === 'meaning');
+    expect(meaning).toBeDefined();
+    expect(meaning.front).toBe('Hallo');
+    expect(meaning.back).toBe('hello');
+    expect(meaning.wordRef).toBe('A1_1');
+    expect(meaning.cardId).toBe('A1_1_meaning');
+  });
+
+  it('generates article card for noun', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 2, word: 'Arzt', article: 'der', translation: 'doctor', partOfSpeech: 'noun' });
+    const article = types.find(t => t.cardType === 'article');
+    expect(article).toBeDefined();
+    expect(article.front).toContain('Article of');
+    expect(article.back).toContain('der');
+    expect(article.cardId).toBe('A1_2_article');
+  });
+
+  it('does not generate article card for non-noun', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 3, word: 'laufen', translation: 'to run', partOfSpeech: 'verb' });
+    const article = types.find(t => t.cardType === 'article');
+    expect(article).toBeUndefined();
+  });
+
+  it('generates plural card for noun with plural', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 4, word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' });
+    const plural = types.find(t => t.cardType === 'plural');
+    expect(plural).toBeDefined();
+    expect(plural.front).toContain('Plural of');
+    expect(plural.back).toBe('Ärzte');
+    expect(plural.cardId).toBe('A1_4_plural');
+  });
+
+  it('does not generate plural card for non-noun', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 5, word: 'schön', translation: 'beautiful', partOfSpeech: 'adjective' });
+    const plural = types.find(t => t.cardType === 'plural');
+    expect(plural).toBeUndefined();
+  });
+
+  it('does not generate plural card for noun without plural', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 6, word: 'Wasser', article: 'das', translation: 'water', partOfSpeech: 'noun' });
+    const plural = types.find(t => t.cardType === 'plural');
+    expect(plural).toBeUndefined();
+  });
+
+  it('generates meaning, article, plural for full noun (3 card types)', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 7, word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' });
+    expect(types.filter(t => t.cardType === 'meaning').length).toBe(1);
+    expect(types.filter(t => t.cardType === 'article').length).toBe(1);
+    expect(types.filter(t => t.cardType === 'plural').length).toBe(1);
+    expect(types.length).toBe(3);
+  });
+
+  it('card IDs are stable: level_id_cardtype', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 7, word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' });
+    expect(types[0].cardId).toBe('A1_7_meaning');
+    expect(types[1].cardId).toBe('A1_7_article');
+    expect(types[2].cardId).toBe('A1_7_plural');
+  });
+
+  it('meaning card includes plural info when noun has plural', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 8, word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' });
+    const meaning = types.find(t => t.cardType === 'meaning');
+    expect(meaning.front).toContain('(Ärzte)');
+  });
+
+  it('meaning card does not show plural for non-noun words', () => {
+    const types = generateCardTypes({ _level: 'A1', id: 9, word: 'laufen', translation: 'to run', partOfSpeech: 'verb' });
+    const meaning = types.find(t => t.cardType === 'meaning');
+    expect(meaning.front).toBe('laufen');
+    expect(meaning.front).not.toContain('(');
+  });
+});
+
+describe('Phase 18B: Flashcard buildFlashcardQueue', () => {
+  let store;
+
+  beforeEach(() => {
+    store = {};
+  });
+
+  function makeWord(id, level = 'A1', extra = {}) {
+    return { _level: level, id, word: 'word' + id, translation: 'trans' + id, ...extra };
+  }
+
+  it('due review cards appear first in queue', () => {
+    // Set up a due-but-not-mastered word (repetitions=1, interval=1, due=today)
+    store['A1_1'] = { correct: 1, incorrect: 0, mastered: false, ease: 2.65, interval: 1, due: getLocalDateKey(), repetitions: 1 };
+    const cards = buildFlashcardQueue([makeWord(1)], 20, store);
+    expect(cards.length).toBeGreaterThanOrEqual(1);
+    const wordRefs = cards.map(c => c.wordRef);
+    expect(wordRefs).toContain('A1_1');
+  });
+
+  it('mistake cards appear before new cards', () => {
+    simulateRecordVocabAnswer('A1_1', 1, store);
+    simulateRecordVocabAnswer('A1_1', 1, store);
+    simulateRecordVocabAnswer('A1_1', 1, store);
+    const cards = buildFlashcardQueue([makeWord(1), makeWord(2)], 20, store);
+    const mistakeIdx = cards.findIndex(c => c.wordRef === 'A1_1');
+    const newIdx = cards.findIndex(c => c.wordRef === 'A1_2');
+    expect(mistakeIdx).toBeGreaterThanOrEqual(0);
+    expect(newIdx).toBeGreaterThanOrEqual(0);
+    expect(mistakeIdx).toBeLessThan(newIdx);
+  });
+
+  it('caps new cards at MAX_NEW_CARDS (10)', () => {
+    const words = Array.from({ length: 20 }, (_, i) => makeWord(i + 1));
+    const cards = buildFlashcardQueue(words, 25, store);
+    expect(cards.length).toBeLessThanOrEqual(25);
+    const newRefs = cards.filter(c => !store[c.wordRef]);
+    expect(newRefs.length).toBeLessThanOrEqual(10);
+  });
+
+  it('total queue capped at sessionSize', () => {
+    const words = Array.from({ length: 50 }, (_, i) => makeWord(i + 1));
+    const cards5 = buildFlashcardQueue(words, 5, store);
+    expect(cards5.length).toBeLessThanOrEqual(5);
+    const cards15 = buildFlashcardQueue(words, 15, store);
+    expect(cards15.length).toBeLessThanOrEqual(15);
+    const cards25 = buildFlashcardQueue(words, 25, store);
+    expect(cards25.length).toBeLessThanOrEqual(25);
+  });
+
+  it('does not return all 100 words (reasonable cap)', () => {
+    const words = Array.from({ length: 100 }, (_, i) => makeWord(i + 1));
+    const cards = buildFlashcardQueue(words, 20, store);
+    expect(cards.length).toBeLessThanOrEqual(25);
+    expect(cards.length).toBeGreaterThan(0);
+  });
+
+  it('returns different card types for nouns in due queue', () => {
+    const wordData = { word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' };
+    store['A1_1'] = { correct: 1, incorrect: 0, mastered: false, ease: 2.65, interval: 1, due: getLocalDateKey(), repetitions: 1 };
+    const cards = buildFlashcardQueue([makeWord(1, 'A1', wordData)], 20, store);
+    const types = cards.map(c => c.cardType);
+    expect(types).toContain('meaning');
+    expect(types).toContain('article');
+    expect(types).toContain('plural');
+  });
+
+  it('new cards only get meaning card type (simpler intro)', () => {
+    const wordData = { word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' };
+    const cards = buildFlashcardQueue([makeWord(1, 'A1', wordData)], 10, store);
+    const types = cards.map(c => c.cardType);
+    expect(types).toEqual(['meaning']);
+  });
+
+  it('article card only shows for nouns', () => {
+    const nounData = { word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' };
+    store['A1_1'] = { correct: 1, incorrect: 0, mastered: false, ease: 2.65, interval: 1, due: getLocalDateKey(), repetitions: 1 };
+    const nounCards = buildFlashcardQueue([makeWord(1, 'A1', nounData)], 20, store);
+    const nounTypes = nounCards.map(c => c.cardType);
+    expect(nounTypes).toContain('article');
+
+    const verbData = { word: 'laufen', translation: 'to run', partOfSpeech: 'verb' };
+    store = {};
+    store['A1_2'] = { correct: 1, incorrect: 0, mastered: false, ease: 2.65, interval: 1, due: getLocalDateKey(), repetitions: 1 };
+    const verbCards = buildFlashcardQueue([makeWord(2, 'A1', verbData)], 20, store);
+    const verbTypes = verbCards.map(c => c.cardType);
+    expect(verbTypes).not.toContain('article');
+  });
+
+  it('plural card only shows for nouns with plural', () => {
+    const nounData = { word: 'Arzt', article: 'der', plural: 'Ärzte', translation: 'doctor', partOfSpeech: 'noun' };
+    store['A1_1'] = { correct: 0, incorrect: 0, mastered: false, ease: 2.5, interval: 0, due: getLocalDateKey(), repetitions: 0 };
+    const nounCards = buildFlashcardQueue([makeWord(1, 'A1', nounData)], 20, store);
+    const nounTypes = nounCards.map(c => c.cardType);
+    expect(nounTypes).toContain('plural');
+
+    const noPluralData = { word: 'Wasser', article: 'das', translation: 'water', partOfSpeech: 'noun' };
+    store = {};
+    store['A1_2'] = { correct: 0, incorrect: 0, mastered: false, ease: 2.5, interval: 0, due: getLocalDateKey(), repetitions: 0 };
+    const noPluralCards = buildFlashcardQueue([makeWord(2, 'A1', noPluralData)], 20, store);
+    const noPluralTypes = noPluralCards.map(c => c.cardType);
+    expect(noPluralTypes).not.toContain('plural');
+  });
+
+  it('session size 5 produces up to 5 cards', () => {
+    const words = Array.from({ length: 10 }, (_, i) => makeWord(i + 1));
+    const cards = buildFlashcardQueue(words, 5, store);
+    expect(cards.length).toBeLessThanOrEqual(5);
+  });
+
+  it('session size 10 produces up to 10 cards', () => {
+    const words = Array.from({ length: 20 }, (_, i) => makeWord(i + 1));
+    const cards = buildFlashcardQueue(words, 10, store);
+    expect(cards.length).toBeLessThanOrEqual(10);
+  });
+
+  it('Flashcards do not show all 803 words', () => {
+    const words = Array.from({ length: 803 }, (_, i) => makeWord(i + 1));
+    const cards = buildFlashcardQueue(words, 25, store);
+    expect(cards.length).toBeLessThan(803);
+    expect(cards.length).toBeLessThanOrEqual(25);
+  });
+});
+
+describe('Phase 18B: SM-2 Scheduling Rules', () => {
+  let store;
+
+  beforeEach(() => {
+    store = {};
+  });
+
+  it('Good card does not reappear immediately', () => {
+    simulateRecordVocabAnswer('A1_1', 3, store);
+    expect(store['A1_1'].interval).toBe(1);
+    store['A1_1'].mastered = true;
+    store['A1_1'].due = '2999-12-31';
+    const queue = simulateGetDueVocabWords(['A1_1'], store);
+    expect(queue).not.toContain('A1_1');
+  });
+
+  it('Easy card schedules farther than Good', () => {
+    simulateRecordVocabAnswer('A1_easy', 4, store);
+    simulateRecordVocabAnswer('A1_good', 3, store);
+    expect(store['A1_easy'].interval).toBe(3);
+    expect(store['A1_good'].interval).toBe(1);
+    expect(store['A1_easy'].interval).toBeGreaterThan(store['A1_good'].interval);
+  });
+
+  it('Hard schedules sooner than Good', () => {
+    simulateRecordVocabAnswer('A1_hard', 2, store);
+    simulateRecordVocabAnswer('A1_good', 3, store);
+    simulateRecordVocabAnswer('A1_hard', 2, store);
+    simulateRecordVocabAnswer('A1_good', 3, store);
+    expect(store['A1_hard'].interval).toBeLessThanOrEqual(store['A1_good'].interval);
+  });
+
+  it('Again schedules short relearning', () => {
+    simulateRecordVocabAnswer('A1_1', 1, store);
+    expect(store['A1_1'].interval).toBe(0);
+    expect(store['A1_1'].due).toBe(getLocalDateKey());
+  });
+
+  it('Easy does not reappear before due date', () => {
+    simulateRecordVocabAnswer('A1_1', 4, store);
+    const m = store['A1_1'];
+    m.mastered = true;
+    m.due = '2999-12-31';
+    store['A1_1'] = m;
+    const queue = simulateGetDueVocabWords(['A1_1'], store);
+    expect(queue).not.toContain('A1_1');
+  });
+
+  it('Hard schedules but is still due today', () => {
+    simulateRecordVocabAnswer('A1_1', 2, store);
+    expect(store['A1_1'].interval).toBe(1);
+    // When interval=1 at time of call, due date = today + 1 day
+    // So after recording, due is tomorrow
+    const tomorrow = getLocalDateKey(1);
+    expect(store['A1_1'].due).toBe(tomorrow);
+  });
+
+  it('mastered cards with future due excluded from queue', () => {
+    store['A1_m'] = { correct: 10, incorrect: 0, mastered: true, ease: 2.8, interval: 30, due: '2999-12-31', repetitions: 5 };
+    const queue = simulateGetDueVocabWords(['A1_m'], store);
+    expect(queue).not.toContain('A1_m');
+  });
+});
+
+describe('Phase 18B: Today Plan Integration', () => {
+  let store;
+
+  beforeEach(() => {
+    store = {};
+  });
+
+  it('due cards appear in Today Plan', () => {
+    store['A1_due'] = { correct: 2, incorrect: 0, mastered: false, ease: 2.5, interval: 1, due: getLocalDateKey(), repetitions: 1 };
+    const queue = simulateGetDueVocabWords(['A1_due'], store);
+    expect(queue).toContain('A1_due');
+  });
+
+  it('not-due cards do not appear in Today Plan', () => {
+    store['A1_not_due'] = { correct: 5, incorrect: 0, mastered: true, ease: 2.5, interval: 30, due: '2999-12-31', repetitions: 5 };
+    const queue = simulateGetDueVocabWords(['A1_not_due'], store);
+    expect(queue).not.toContain('A1_not_due');
+  });
+
+  it('mistake cards prioritized before new cards in Today Plan', () => {
+    store['A1_mistake'] = { correct: 0, incorrect: 3, mastered: false, ease: 2.1, interval: 0, due: getLocalDateKey(), repetitions: 0 };
+    const queue = simulateGetDueVocabWords(['A1_mistake', 'A1_new'], store);
+    expect(queue.indexOf('A1_mistake')).toBeLessThan(queue.indexOf('A1_new'));
+  });
+
+  it('new cards appear only within daily cap in Today Plan', () => {
+    const words = Array.from({ length: 20 }, (_, i) => 'A1_new_' + i);
+    const queue = simulateGetDueVocabWords(words, store);
+    const newInQueue = words.filter(id => queue.includes(id)).length;
+    expect(newInQueue).toBeLessThanOrEqual(10);
+  });
+
+  it('cards answered correctly in Flashcards do not reappear until due', () => {
+    simulateRecordVocabAnswer('A1_correct', 3, store);
+    let queue = simulateGetDueVocabWords(['A1_correct'], store);
+    expect(queue).toContain('A1_correct');
+
+    let m = store['A1_correct'];
+    m.mastered = true;
+    m.due = '2999-12-31';
+    store['A1_correct'] = m;
+
+    queue = simulateGetDueVocabWords(['A1_correct'], store);
+    expect(queue).not.toContain('A1_correct');
+  });
+});

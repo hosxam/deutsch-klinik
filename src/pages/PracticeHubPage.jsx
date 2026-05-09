@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PageShell, Card, FeatureCard } from '../components/ui';
 import { getState, getCurrentStudyLevel } from '../utils/store';
 import {
-  BookOpen, BarChart3, FileText, Headphones, PenTool, Mic, BookMarked, AlertTriangle, Sparkles
+  BarChart3, FileText, Headphones, PenTool, Mic, BookMarked, AlertTriangle, Sparkles
 } from 'lucide-react';
 
 export default function PracticeHubPage() {
@@ -20,13 +20,6 @@ export default function PracticeHubPage() {
       icon: <Sparkles size={28} />,
       accent: '#8b5cf6',
       to: mistakesCount > 0 ? '/mistake-notebook' : `/level/${level}/daily`,
-    },
-    {
-      title: 'Vocabulary Practice',
-      description: `Build your vocabulary for level ${level}`,
-      icon: <BookOpen size={28} />,
-      accent: '#3bff9e',
-      to: `/level/${level}/vocabulary`,
     },
     {
       title: 'Grammar Practice',
