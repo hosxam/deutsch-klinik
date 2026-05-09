@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   getState, getMistakesByLevel, getMistakeNotebookItems, getWeakTopics,
-  recordAnswer,
+  recordAnswer, recordVocabAnswer,
   markMistakeMasteredById, clearMistakeByIndex,
 } from '../utils/store';
 import {
@@ -85,19 +85,8 @@ export default function MistakeNotebookPage() {
 
 
 
-  const handleMistakeRetry = (mistakeKey, answer) => {
-    setRetryAnswers(prev => ({ ...prev, [mistakeKey]: answer }));
-  };
-
-  const checkMistakeRetry = (mistake, mistakeKey) => {
-    const answer = retryAnswers[mistakeKey];
-    if (!answer) return;
-    const correct = answer.toLowerCase().trim() === mistake.correctAnswer.toLowerCase().trim();
-    setRetryResults(prev => ({ ...prev, [mistakeKey]: correct }));
-    if (correct) setRetryCorrectCount(c => c + 1);
-    recordAnswer(mistake.level, 'mistake-retry-' + mistakeKey, answer, mistake.correctAnswer, 'mistakeNotebook', correct, 'mistake-retry');
-    setState({ ...getState() });
-  };
+  // Shared style for SM-2 rating buttons (matches FlashcardPage / DailyMissionPage style)
+  const smBtnStyle = { padding: '0.4rem 0.7rem', borderRadius: '6px', border: '1px solid var(--border)', background: 'var(--bg-hover)', color: 'var(--text-primary)', cursor: 'pointer', fontSize: '0.75rem', display: 'inline-flex', alignItems: 'center', gap: '0.3rem', textDecoration: 'none' };
 
   const handleMarkMasteredById = (level, exerciseId) => {
     markMistakeMasteredById(level, exerciseId);
@@ -261,66 +250,152 @@ export default function MistakeNotebookPage() {
 
                         {isExpanded && (
                           <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
-                            {/* Retry section — only show input/check if a correctAnswer exists */}
-                            {mistake.correctAnswer && String(mistake.correctAnswer).trim().length > 0 ? (
-                              <>
-                                <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                                  Try again:
+                            {/* SM-2 Flashcard-style review — primary interaction */}
+                            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                              Review this mistake:
+                            </p>
+
+                            {/* Show correct answer as flashcard back */}
+                            <div style={{
+                              padding: '12px', borderRadius: '8px', marginBottom: '10px',
+                              backgroundColor: 'rgba(59,255,158,0.06)', border: '1px solid rgba(59,255,158,0.2)',
+                              fontSize: '0.9rem', color: 'var(--text-primary)',
+                            }}>
+                              <div style={{ fontWeight: 600, color: '#3bff9e', marginBottom: '4px' }}>
+                                Correct answer:
+                              </div>
+                              <div>{mistake.correctAnswer || 'N/A'}</div>
+                            </div>
+
+                            {/* SM-2 rating buttons (same as Flashcards: 1=Again, 2=Hard, 3=Good, 4=Easy) */}
+                            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>
+                              <button
+                                onClick={() => {
+                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  recordVocabAnswer(mistakeId, 1, {
+                                    level,
+                                    userAnswer: mistake.userAnswer || 'Did not know',
+                                    correctAnswer: mistake.correctAnswer || '',
+                                    topic: mistake.topic || (mistake.skill || 'general'),
+                                  });
+                                  setState({ ...getState() });
+                                }}
+                                style={{ ...smBtnStyle, background: 'rgba(255,51,85,0.12)', color: '#ff3355', border: '1px solid rgba(255,51,85,0.25)' }}
+                                title="Forgot: comes back in ~10 min"
+                              >
+                                <RotateCcw size={12} /> Again
+                              </button>
+                              <button
+                                onClick={() => {
+                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  recordVocabAnswer(mistakeId, 2, {
+                                    level,
+                                    userAnswer: mistake.userAnswer || 'Remembered with effort',
+                                    correctAnswer: mistake.correctAnswer || '',
+                                    topic: mistake.topic || (mistake.skill || 'general'),
+                                  });
+                                  setState({ ...getState() });
+                                }}
+                                style={{ ...smBtnStyle, background: 'rgba(255,170,51,0.1)', color: '#ffaa33', border: '1px solid rgba(255,170,51,0.25)' }}
+                                title="Remembered with effort: shorter interval"
+                              >
+                                <RefreshCw size={12} /> Hard
+                              </button>
+                              <button
+                                onClick={() => {
+                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  recordVocabAnswer(mistakeId, 3, {
+                                    level,
+                                    userAnswer: mistake.userAnswer || 'Knew it',
+                                    correctAnswer: mistake.correctAnswer || '',
+                                    topic: mistake.topic || (mistake.skill || 'general'),
+                                  });
+                                  setState({ ...getState() });
+                                }}
+                                style={{ ...smBtnStyle, background: 'rgba(59,255,158,0.1)', color: '#3bff9e', border: '1px solid rgba(59,255,158,0.25)' }}
+                                title="Remembered: normal SM-2 interval"
+                              >
+                                <Star size={12} /> Good
+                              </button>
+                              <button
+                                onClick={() => {
+                                  const mistakeId = `mistake_${level}_${mistake.exerciseId}`;
+                                  recordVocabAnswer(mistakeId, 4, {
+                                    level,
+                                    userAnswer: mistake.userAnswer || 'Easy',
+                                    correctAnswer: mistake.correctAnswer || '',
+                                    topic: mistake.topic || (mistake.skill || 'general'),
+                                  });
+                                  setState({ ...getState() });
+                                }}
+                                style={{ ...smBtnStyle, background: 'rgba(0,240,255,0.08)', color: 'var(--accent)', border: '1px solid rgba(0,240,255,0.2)' }}
+                                title="Easy: 1.3x bonus interval"
+                              >
+                                <CheckCircle size={12} /> Easy
+                              </button>
+                            </div>
+
+                            {/* Keep optional typed retry as secondary, with leak-free state */}
+                            {mistake.correctAnswer && String(mistake.correctAnswer).trim().length > 0 && (
+                              <div style={{ marginTop: '4px', marginBottom: '10px' }}>
+                                <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                                  Or type the answer:
                                 </p>
-                                <div style={{ display: 'flex', gap: '8px' }}>
+                                <div style={{ display: 'flex', gap: '6px' }}>
                                   <input
                                     type="text"
                                     value={retryAnswers[key] || ''}
-                                    onChange={e => handleMistakeRetry(key, e.target.value)}
+                                    onChange={e => setRetryAnswers(prev => ({ ...prev, [key]: e.target.value }))}
                                     placeholder="Type correct answer..."
                                     disabled={retryResults[key] !== undefined}
                                     style={{
-                                      flex: 1, padding: '8px 12px', borderRadius: '6px', fontSize: '13px',
+                                      flex: 1, padding: '6px 10px', borderRadius: '6px', fontSize: '12px',
                                       border: '1px solid var(--border)', backgroundColor: 'var(--bg-card)',
                                       color: 'var(--text-primary)', outline: 'none',
                                     }}
                                   />
                                   {retryResults[key] === undefined && (
                                     <Button
-                                      onClick={() => checkMistakeRetry(mistake, key)}
+                                      onClick={() => {
+                                        const answer = retryAnswers[key];
+                                        if (!answer) return;
+                                        const correct = answer.toLowerCase().trim() === mistake.correctAnswer.toLowerCase().trim();
+                                        setRetryResults(prev => ({ ...prev, [key]: correct }));
+                                        if (correct) setRetryCorrectCount(c => c + 1);
+                                        recordAnswer(mistake.level, 'mistake-retry-' + key, answer, mistake.correctAnswer, 'mistakeNotebook', correct, 'mistake-retry');
+                                        setState({ ...getState() });
+                                      }}
                                       disabled={!retryAnswers[key]}
                                       size="sm"
                                       style={{ backgroundColor: levelColors[level] || 'var(--accent)', opacity: retryAnswers[key] ? 1 : 0.5 }}
                                     >
-                                      <RefreshCw size={12} style={{ marginRight: '6px' }} />
+                                      <Check size={12} style={{ marginRight: '4px' }} />
                                       Check
                                     </Button>
                                   )}
                                 </div>
                                 {retryResults[key] !== undefined && (
                                   <div style={{
-                                    marginTop: '8px', padding: '8px', borderRadius: '6px', fontSize: '13px',
+                                    marginTop: '6px', padding: '6px 10px', borderRadius: '6px', fontSize: '12px',
                                     backgroundColor: retryResults[key] ? 'rgba(59,255,158,0.1)' : 'rgba(255,51,85,0.1)',
                                     color: retryResults[key] ? '#3bff9e' : '#ff3355',
                                     fontWeight: 600, display: 'flex', alignItems: 'center', gap: '6px',
                                   }}>
-                                    {retryResults[key] ? <Check size={16} /> : <X size={16} />}
-                                    {retryResults[key] ? 'Correct this time!' : 'Still incorrect. Keep practicing!'}
+                                    {retryResults[key] ? <Check size={14} /> : <X size={14} />}
+                                    {retryResults[key] ? 'Correct this time!' : 'Still incorrect.'}
                                   </div>
                                 )}
-                              </>
-                            ) : (
-                              <div style={{
-                                padding: '10px 12px', borderRadius: '8px', marginBottom: '12px',
-                                backgroundColor: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.2)',
-                                fontSize: '0.82rem', color: 'var(--text-secondary)',
-                              }}>
-                                <span style={{ fontWeight: 600, color: '#f59e0b' }}>Cannot type-check this mistake.</span>
-                                {' '}No expected answer was stored (e.g. writing/speaking feedback without a specific correction).
-                                You can mark it as mastered, remove it, or review the source material.
                               </div>
                             )}
 
-                            {/* Mark as mastered */}
-                            <div style={{ marginTop: '12px', display: 'flex', gap: '8px' }}>
+                            {/* Mark as mastered / Remove */}
+                            <div style={{ marginTop: '8px', display: 'flex', gap: '8px' }}>
                               <Button
                                 onClick={() => {
                                   handleMarkMasteredById(level, mistake.exerciseId);
+                                  // Clear stale typed state for this key to prevent leakage
+                                  setRetryAnswers(prev => { const n = { ...prev }; delete n[key]; return n; });
+                                  setRetryResults(prev => { const n = { ...prev }; delete n[key]; return n; });
                                 }}
                                 size="sm"
                                 variant="ghost"
@@ -336,6 +411,9 @@ export default function MistakeNotebookPage() {
                                     clearMistakeByIndex(level, actualIdx);
                                     setState({ ...getState() });
                                   }
+                                  // Clear stale typed state
+                                  setRetryAnswers(prev => { const n = { ...prev }; delete n[key]; return n; });
+                                  setRetryResults(prev => { const n = { ...prev }; delete n[key]; return n; });
                                 }}
                                 size="sm"
                                 variant="danger"

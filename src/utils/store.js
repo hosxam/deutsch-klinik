@@ -51,13 +51,8 @@ const defaultState = {
     // { 'A1_voc_1': { ease: 2.5, interval: 1, due: '2026-04-30', repetitions: 1 } }
   },
   // Weak areas detected per level
-  weakAreas: {
-    A1: { grammar: false, vocab: false, reading: false, listening: false, writing: false, speaking: false },
-    A2: { grammar: false, vocab: false, reading: false, listening: false, writing: false, speaking: false },
-    B1: { grammar: false, vocab: false, reading: false, listening: false, writing: false, speaking: false },
-    B2: { grammar: false, vocab: false, reading: false, listening: false, writing: false, speaking: false },
-    C1: { grammar: false, vocab: false, reading: false, listening: false, writing: false, speaking: false },
-  },
+  // weakAreas must always be an array. Old/corrupted data (object, string, null) is normalized in loadState.
+  weakAreas: [],
   // Placement test result
   placementResult: null,
   // Medical German unlocked
@@ -132,17 +127,49 @@ const defaultState = {
   remediationQueue: [],
 };
 
+function normalizeState(st) {
+  // weakAreas: must be array. Normalize old object/corrupt data.
+  if (!Array.isArray(st.weakAreas)) {
+    st.weakAreas = [];
+  }
+  // vocabularyMastery: ensure all entries have required SM-2 fields
+  if (st.vocabularyMastery && typeof st.vocabularyMastery === 'object') {
+    Object.keys(st.vocabularyMastery).forEach(k => {
+      const m = st.vocabularyMastery[k];
+      if (!m || typeof m !== 'object') {
+        delete st.vocabularyMastery[k];
+        return;
+      }
+      // Ensure numeric fields
+      if (typeof m.ease !== 'number') m.ease = 2.5;
+      if (typeof m.interval !== 'number') m.interval = 0;
+      if (typeof m.repetitions !== 'number') m.repetitions = 0;
+      if (typeof m.correct !== 'number') m.correct = 0;
+      if (typeof m.incorrect !== 'number') m.incorrect = 0;
+      // Ensure due date exists
+      if (!m.due || typeof m.due !== 'string') m.due = getLocalDateKey();
+      // Ensure mastered is boolean
+      if (typeof m.mastered !== 'boolean') m.mastered = false;
+    });
+  }
+  // Ensure flashcards object exists
+  if (!st.flashcards || typeof st.flashcards !== 'object' || Array.isArray(st.flashcards)) {
+    st.flashcards = {};
+  }
+  return st;
+}
+
 function loadState() {
   try {
     const raw = localStorage.getItem(getStoreKey());
     if (raw) {
       const parsed = JSON.parse(raw);
-      return mergeState(JSON.parse(JSON.stringify(defaultState)), parsed);
+      return normalizeState(mergeState(JSON.parse(JSON.stringify(defaultState)), parsed));
     }
   } catch (e) {
     console.warn('Failed to load state, resetting.', e);
   }
-  return JSON.parse(JSON.stringify(defaultState));
+  return normalizeState(JSON.parse(JSON.stringify(defaultState)));
 }
 
 function isPlainObject(value) {
@@ -495,8 +522,10 @@ export function getDueVocabWords(wordIds) {
     if (!m) {
       // Never seen before = new card
       newCards.push(id);
-    } else if (!m.mastered || m.due <= today) {
-      // Card is due (not mastered or past due date)
+    } else if (m.due <= today) {
+      // Card is due for review (past its scheduled due date)
+      // Note: !m.mastered alone does NOT mean due — a card with future due date
+      // should NOT appear until that date, even if not yet "mastered".
       if (m.incorrect > m.correct && m.incorrect >= 2) {
         // More wrong than right = mistake priority
         mistakeCards.push(id);
@@ -530,7 +559,7 @@ export function getDueByDate(wordIds, targetDate) {
   return wordIds.filter(id => {
     const m = state.vocabularyMastery[id];
     if (!m) return true; // never seen = due by default
-    return !m.mastered || (m.due && m.due <= targetDate);
+    return m.due && m.due <= targetDate;
   });
 }
 
@@ -553,15 +582,15 @@ export function getVocabQueue(wordIds) {
     const m = state.vocabularyMastery[id];
     if (!m) {
       newCards.push(id);
-    } else if (m.mastered && m.due > today) {
-      // mastered and not yet due = skip
+    } else if (m.due > today) {
+      // Not yet due — skip regardless of mastered status
+      // A non-mastered card with a future due date should NOT appear
     } else if (m.incorrect > m.correct && m.incorrect >= 2) {
       mistakeCards.push(id);
-    } else if (m.due <= today && !m.mastered) {
-      dueReviews.push(id);
-    } else {
+    } else if (m.due <= today) {
       dueReviews.push(id);
     }
+    // Cards past due but mastered: still include for review (maintenance)
   });
 
   const all = [...dueReviews, ...mistakeCards, ...newCards];
@@ -576,7 +605,7 @@ export function isVocabPracticeExcluded(wordId) {
   const m = state.vocabularyMastery[wordId];
   if (!m) return false; // never seen = include
   const today = getLocalDateKey();
-  return m.mastered && m.due > today;
+  return m.due > today;
 }
 
 export function recordStudyMinutes({ level, type, minutes, id }) {

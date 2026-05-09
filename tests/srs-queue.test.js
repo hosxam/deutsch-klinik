@@ -102,13 +102,15 @@ function simulateGetDueVocabWords(wordIds, masteryStore) {
     const m = masteryStore[id];
     if (!m) {
       newCards.push(id);
-    } else if (!m.mastered || m.due <= today) {
+    } else if (m.due <= today) {
+      // Card is due — past its scheduled review date
       if (m.incorrect > m.correct && m.incorrect >= 2) {
         mistakeCards.push(id);
       } else {
         dueReview.push(id);
       }
     }
+    // Cards with future due dates are skipped regardless of mastered status
   });
 
   const MAX_DAILY_QUEUE = 25;
@@ -201,19 +203,16 @@ describe('SM-2 SRS: Rating Behavior', () => {
     const today = getLocalDateKey();
 
     simulateRecordVocabAnswer('A1_1', 3, store);
-    // Due date should be today+1
+    // Due date should be today+1 (interval=1 for first Good)
     const due = store['A1_1'].due;
-    expect(due >= today).toBe(true);
+    expect(due).toBe(getLocalDateKey(1));
 
-    // It should be in the queue today (due <= today)
+    // Card was just answered. Due date is tomorrow, so it should NOT
+    // appear in today's queue.
     const queue = simulateGetDueVocabWords(['A1_1'], store);
-    expect(queue).toContain('A1_1');
+    expect(queue).not.toContain('A1_1');
 
-    // Simulate "tomorrow" — the due date is tomorrow,
-    // but getDueVocabWords checks due <= today for today's date
-    // So after today, as long as due <= today, it will appear.
-    // The key test: if mastered and due is in the future, it's excluded.
-    // Mark it mastered with future due
+    // Simulate a far future due — definitely excluded
     let m = store['A1_1'];
     m.mastered = true;
     m.due = '2999-12-31';
@@ -240,10 +239,20 @@ describe('SM-2 SRS: Rating Behavior', () => {
   });
 
   it('due cards appear in queue', () => {
+    // Create a card due today (past due date)
+    store['A1_due'] = {
+      correct: 2, incorrect: 0, mastered: false,
+      ease: 2.5, interval: 1, due: getLocalDateKey(), repetitions: 1,
+    };
+    const queue = simulateGetDueVocabWords(['A1_due'], store);
+    expect(queue).toContain('A1_due');
+  });
+
+  it('just-answered card does not reappear same day (due=tomorrow)', () => {
     simulateRecordVocabAnswer('A1_1', 3, store);
-    // Due should be today or tomorrow, so it appears
+    // After Good, interval=1, due=tomorrow. Should NOT appear in today's queue.
     const queue = simulateGetDueVocabWords(['A1_1'], store);
-    expect(queue).toContain('A1_1');
+    expect(queue).not.toContain('A1_1');
   });
 });
 
@@ -450,7 +459,11 @@ describe('Today Plan Vocabulary Filtering (SRS-based)', () => {
   });
 
   it('due SRS vocabulary appears in Today Plan', () => {
-    simulateRecordVocabAnswer('A1_due_word', 3, store);
+    // Create a card due today
+    store['A1_due_word'] = {
+      correct: 2, incorrect: 0, mastered: false,
+      ease: 2.5, interval: 1, due: getLocalDateKey(), repetitions: 1,
+    };
     const queue = simulateGetDueVocabWords(['A1_due_word'], store);
     expect(queue).toContain('A1_due_word');
   });
@@ -540,16 +553,20 @@ describe('FlashcardPage SRS Queue (Same Queue as Vocabulary Practice)', () => {
 
   it('FlashcardPage due filter uses same queue (getDueVocabWords)', () => {
     const wordIds = ['A1_a', 'A1_b', 'A1_c'];
+    // A1_a: rated Good = due tomorrow -> NOT due today
     simulateRecordVocabAnswer('A1_a', 3, store);
+    // A1_b: rated Again twice = mistake, interval 0 -> due today
     simulateRecordVocabAnswer('A1_b', 1, store);
     simulateRecordVocabAnswer('A1_b', 1, store);
+    // A1_c: new, never seen
 
     const queue = simulateGetDueVocabWords(wordIds, store);
 
-    expect(queue).toContain('A1_a');
+    // A1_a answered Good, due=tomorrow, should NOT appear in today's queue
+    expect(queue).not.toContain('A1_a');
     expect(queue).toContain('A1_b');
     expect(queue).toContain('A1_c');
-    expect(queue.indexOf('A1_a')).toBeLessThan(queue.indexOf('A1_b'));
+    // A1_b is a mistake card, A1_c is new. Mistakes before new.
     expect(queue.indexOf('A1_b')).toBeLessThan(queue.indexOf('A1_c'));
   });
 
@@ -1012,9 +1029,12 @@ describe('Phase 18B: Today Plan Integration', () => {
 
   it('cards answered correctly in Flashcards do not reappear until due', () => {
     simulateRecordVocabAnswer('A1_correct', 3, store);
+    // After Good (rating 3), interval=1 and due=tomorrow.
+    // The card should NOT be in today's queue.
     let queue = simulateGetDueVocabWords(['A1_correct'], store);
-    expect(queue).toContain('A1_correct');
+    expect(queue).not.toContain('A1_correct');
 
+    // Simulate setting future due far away
     let m = store['A1_correct'];
     m.mastered = true;
     m.due = '2999-12-31';

@@ -2281,6 +2281,7 @@ export default function DailyMissionPage() {
         if (fcCards.length === 0 && !fcDone && !fcStarted) {
           const levelWords = vocabData.map(w => ({ ...w, level: lvl }));
           const allIds = levelWords.map(w => `${lvl}_${w.id}`);
+          // Use shared SRS queue: includes due reviews, mistake-priority cards, and new cards
           const dueIds = new Set(getDueVocabWords(allIds));
           const deck = levelWords
             .filter(w => dueIds.has(`${lvl}_${w.id}`))

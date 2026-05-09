@@ -153,7 +153,7 @@ function buildFlashcardQueue(words, sessionSize) {
       qNew.push(w);
     } else if (m.incorrect > m.correct && m.incorrect >= 2) {
       qMistake.push(w);
-    } else if (!m.mastered || m.due <= today) {
+    } else if (m.due <= today) {
       qDue.push(w);
     }
   });
@@ -205,7 +205,7 @@ function getQueueStats(wordIds) {
       newCount++;
     } else if (m.incorrect > m.correct && m.incorrect >= 2) {
       mistakeCount++;
-    } else if (!m.mastered || m.due <= today) {
+    } else if (m.due <= today) {
       dueCount++;
     }
   });
