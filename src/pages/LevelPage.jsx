@@ -215,21 +215,28 @@ export default function LevelPage() {
       )}
 
       {/* Weak Areas for this level */}
-      {(state.weakAreas || []).filter(w => w.level === levelId || !w.level).length > 0 && (
+      {(() => {
+        // Defensive: always coerce weakAreas to array (survives corrupt localStorage)
+        const w = Array.isArray(state.weakAreas) ? state.weakAreas : [];
+        return w.filter(i => i.level === levelId || !i.level).length > 0;
+      })() && (
         <Card className="mt-4" style={{ border: '1px solid rgba(255,51,85,0.3)' }}>
           <SectionHeader
             title={<span className="flex items-center gap-2" style={{ color: '#ff3355', fontSize: '0.85rem' }}>Weak Areas</span>}
           />
           <div className="space-y-2">
-            {state.weakAreas
-              .filter(w => w.level === levelId || !w.level)
-              .slice(0, 10)
-              .map((weak, idx) => (
+            {(() => {
+              const safeAreas = Array.isArray(state.weakAreas) ? state.weakAreas : [];
+              return safeAreas
+                .filter(w => w.level === levelId || !w.level)
+                .slice(0, 10)
+                .map((weak, idx) => (
                 <div key={idx} className="flex items-center justify-between py-1.5 px-3 rounded-lg text-xs" style={{ backgroundColor: 'var(--bg-hover)' }}>
                   <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>{weak.topic}</span>
                   <span className="text-xs" style={{ color: 'var(--text-muted)' }}>{weak.count || 1} {weak.count === 1 ? 'error' : 'errors'}</span>
                 </div>
-              ))}
+              ));
+            })()}
           </div>
           <Link
             to="/mistake-notebook"
