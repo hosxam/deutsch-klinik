@@ -813,20 +813,233 @@ export function markMistakeMasteredById(level, exerciseId) {
 
 // ===== EXAM UNLOCK CHECK =====
 
+/**
+ * Count mastered vocabulary words for a given level.
+ * A word is mastered when vocabularyMastery[id].mastered === true
+ * or when it has been rated Good/Easy enough times (repetitions >= 2 && interval > 0).
+ */
+function getVocabMasteredCount(level) {
+  if (!state.vocabularyMastery || typeof state.vocabularyMastery !== 'object') return 0;
+  let count = 0;
+  Object.entries(state.vocabularyMastery).forEach(([id, m]) => {
+    if (!id.startsWith(level + '_')) return;
+    // Skip mistake-tagged entries — they are reviewed, not mastered vocab
+    if (id.startsWith('mistake_')) return;
+    if (m.mastered === true) {
+      count++;
+    } else if (typeof m.repetitions === 'number' && m.repetitions >= 2 && m.interval > 0) {
+      // Also count words with enough successful reviews
+      count++;
+    }
+  });
+  return count;
+}
+
+/**
+ * Count correctly completed grammar items for a level.
+ * Uses grammarMastery[exerciseId] where mastered=true OR correct > 0 AND no incorrect.
+ */
+function getGrammarCorrectCount(level) {
+  if (!state.grammarMastery || typeof state.grammarMastery !== 'object') return 0;
+  let count = 0;
+  Object.entries(state.grammarMastery).forEach(([id, m]) => {
+    if (!id.startsWith(level + '_')) return;
+    if (m.mastered === true) {
+      count++;
+    } else if (typeof m.correct === 'number' && m.correct > 0 && (!m.incorrect || m.incorrect === 0)) {
+      count++;
+    }
+  });
+  return count;
+}
+
+/**
+ * Count reading items completed all-correct for a level.
+ */
+function getReadingCorrectCount(level) {
+  if (!state.readingCompleted || !state.readingCompleted[level]) return 0;
+  return state.readingCompleted[level].length;
+}
+
+/**
+ * Count listening items completed all-correct for a level.
+ */
+function getListeningCorrectCount(level) {
+  if (!state.listeningCompleted || !state.listeningCompleted[level]) return 0;
+  return state.listeningCompleted[level].length;
+}
+
+/**
+ * Count writing items completed with passing score (>= 8) for a level.
+ */
+function getWritingPassedCount(level) {
+  if (!state.writings) return 0;
+  return state.writings.filter(w => w.level === level && typeof w.score === 'number' && w.score >= 8).length;
+}
+
+/**
+ * Count speaking items completed with passing score (>= 8) for a level.
+ */
+function getSpeakingPassedCount(level) {
+  if (!state.speakingRecordings || !state.speakingRecordings[level]) return 0;
+  // speakingRecordings[level] is array of { id, date, score? }
+  const items = state.speakingRecordings[level];
+  if (!Array.isArray(items)) return 0;
+  return items.filter(r => typeof r.score === 'number' ? r.score >= 8 : true).length;
+}
+
+/**
+ * Count due (unresolved) mistakes for a level.
+ */
+function getDueMistakeCount(level) {
+  const today = getLocalDateKey();
+  const mistakes = state.incorrectAnswers[level] || [];
+  if (!Array.isArray(mistakes)) return 0;
+  let dueCount = 0;
+  mistakes.forEach(m => {
+    // Check if this mistake has an SM-2 entry indicating it's due
+    const mistakeId = 'mistake_' + level + '_' + (m.exerciseId || '');
+    const vm = state.vocabularyMastery && state.vocabularyMastery[mistakeId];
+    if (vm && vm.due && vm.due <= today && !vm.mastered) {
+      dueCount++;
+    } else if (!vm && m.dueDate && m.dueDate <= today) {
+      dueCount++;
+    } else if (!vm && !m.dueDate) {
+      // Old-style mistake with no SRS data yet, counts as pending review
+      dueCount++;
+    }
+  });
+  return dueCount;
+}
+
+/**
+ * Get all exam requirements for a level.
+ * Returns structured requirement definitions with sensible defaults.
+ */
+function getLevelExamRequirementDefs(levelData) {
+  return {
+    lessons: { required: levelData.lessonCount || 25 },
+    grammar: { required: levelData.grammarCorrectRequired || 60 },
+    reading: { required: levelData.readingCorrectRequired || 25 },
+    listening: { required: levelData.listeningCorrectRequired || 25 },
+    writing: { required: levelData.minWritingTasks || 10 },
+    speaking: { required: levelData.minSpeakingTasks || 10 },
+    flashcards: { required: levelData.vocabMasteredRequired || 100 },
+    reviews: { requiredDue: 0 },
+  };
+}
+
+/**
+ * Get progress toward exam unlock for a level.
+ * Returns { level, unlocked, requirements } shape with current/required/complete per category.
+ */
+export function getLevelExamProgress(level, levelData) {
+  if (!levelData) {
+    return { level, unlocked: false, requirements: {} };
+  }
+
+  const reqDefs = getLevelExamRequirementDefs(levelData);
+  const completedLessons = getCompletedLessons(level).length;
+  const grammarCorrect = getGrammarCorrectCount(level);
+  const readingCorrect = getReadingCorrectCount(level);
+  const listeningCorrect = getListeningCorrectCount(level);
+  const writingPassed = getWritingPassedCount(level);
+  const speakingPassed = getSpeakingPassedCount(level);
+  const vocabMastered = getVocabMasteredCount(level);
+  const dueMistakes = getDueMistakeCount(level);
+
+  const requirements = {
+    lessons: {
+      current: completedLessons,
+      required: reqDefs.lessons.required,
+      complete: completedLessons >= reqDefs.lessons.required,
+    },
+    grammar: {
+      current: grammarCorrect,
+      required: reqDefs.grammar.required,
+      complete: grammarCorrect >= reqDefs.grammar.required,
+    },
+    reading: {
+      current: readingCorrect,
+      required: reqDefs.reading.required,
+      complete: readingCorrect >= reqDefs.reading.required,
+    },
+    listening: {
+      current: listeningCorrect,
+      required: reqDefs.listening.required,
+      complete: listeningCorrect >= reqDefs.listening.required,
+    },
+    writing: {
+      current: writingPassed,
+      required: reqDefs.writing.required,
+      complete: writingPassed >= reqDefs.writing.required,
+    },
+    speaking: {
+      current: speakingPassed,
+      required: reqDefs.speaking.required,
+      complete: speakingPassed >= reqDefs.speaking.required,
+    },
+    flashcards: {
+      current: vocabMastered,
+      required: reqDefs.flashcards.required,
+      complete: vocabMastered >= reqDefs.flashcards.required,
+    },
+    reviews: {
+      currentDue: dueMistakes,
+      requiredDue: reqDefs.reviews.requiredDue,
+      complete: true, // Mistakes do not block exam unlock (informational only)
+    },
+  };
+
+  const allComplete = Object.values(requirements).every(r => r.complete !== false);
+  return {
+    level,
+    unlocked: allComplete,
+    requirements,
+  };
+}
+
+/**
+ * Returns the list of missing requirements (those not yet complete).
+ */
+export function getMissingExamRequirements(level, levelData) {
+  const progress = getLevelExamProgress(level, levelData);
+  if (progress.unlocked) return [];
+  const missing = [];
+  Object.entries(progress.requirements).forEach(([key, req]) => {
+    if (req.complete === false) {
+      missing.push({
+        key,
+        label: getRequirementLabel(key),
+        current: req.current,
+        required: req.required,
+      });
+    }
+  });
+  return missing;
+}
+
+function getRequirementLabel(key) {
+  const labels = {
+    lessons: 'Lessons',
+    grammar: 'Grammar',
+    reading: 'Reading',
+    listening: 'Listening',
+    writing: 'Writing',
+    speaking: 'Speaking',
+    flashcards: 'Flashcards Mastered',
+    reviews: 'Unresolved Review Items',
+  };
+  return labels[key] || key;
+}
+
+/**
+ * Legacy wrapper: returns true/false only.
+ */
 export function isExamUnlocked(level, levelData) {
   if (!levelData) return false;
-  const prog = state.levels[level];
-  if (!prog) return false;
-
-  const grammarDone = (prog.grammar && prog.grammar.length >= levelData.grammarUnits) || false;
-  const vocabDone = (prog.vocab && prog.vocab.length >= levelData.vocabularyUnits) || false;
-  const writingsDone = (state.writingCompleted[level] || []).length >= levelData.minWritingTasks;
-  const speakingDone = (state.speakingCompleted[level] || []).length >= levelData.minSpeakingTasks;
-  const listeningDone = (prog.listening || []).length >= levelData.minListeningTests;
-  const readingDone = (prog.reading || []).length >= levelData.minReadingTests;
-
-  const lessonsCompleted = getCompletedLessons(level).length;
-  return grammarDone && vocabDone && lessonsCompleted >= 10 && writingsDone && speakingDone && listeningDone && readingDone;
+  const progress = getLevelExamProgress(level, levelData);
+  return progress.unlocked;
 }
 
 // ===== LEVEL UNLOCK CHECK =====

@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { getState, updateState, isExamUnlocked } from '../utils/store';
+import { getState, updateState, getLevelExamProgress } from '../utils/store';
 import levelsData from '../data/levels.json';
 import examsData from '../data/exams.json';
 import LevelLock from '../components/LevelLock';
@@ -24,18 +24,25 @@ export default function ExamPage() {
   const [showTranscript, setShowTranscript] = useState({});
 
   const writingRef = useRef(null);
-  const unlocked = levelData ? isExamUnlocked(levelId, levelData) : false;
-  const state = getState();
-  const levelProgress = state.levels?.[levelId] || {};
-  const examRequirements = levelData ? [
-    { label: 'Grammar', current: levelProgress.grammar?.length || 0, target: levelData.grammarUnits || 10 },
-    { label: 'Vocabulary', current: levelProgress.vocab?.length || 0, target: levelData.vocabularyUnits || 10 },
-    { label: 'Writing', current: (state.writings || []).filter(w => w.level === levelId).length, target: levelData.minWritingTasks || 10 },
-    { label: 'Speaking', current: (state.speakingRecordings?.[levelId] || []).length, target: levelData.minSpeakingTasks || 10 },
-    { label: 'Listening', current: levelProgress.listening?.length || 0, target: levelData.minListeningTests || 5 },
-    { label: 'Reading', current: levelProgress.reading?.length || 0, target: levelData.minReadingTests || 5 },
-  ] : [];
-  const missingExamRequirements = examRequirements.filter(r => r.current < r.target);
+  const examProgress = levelData ? getLevelExamProgress(levelId, levelData) : { unlocked: false, requirements: {} };
+  const unlocked = examProgress.unlocked;
+  const missingExamRequirements = !unlocked ? Object.entries(examProgress.requirements)
+    .filter(([, r]) => r.complete === false)
+    .map(([key, r]) => ({
+      key,
+      label: getReqLabel(key),
+      current: r.current,
+      required: r.required,
+    })) : [];
+
+  function getReqLabel(key) {
+    const labels = {
+      lessons: 'Lessons', grammar: 'Grammar', reading: 'Reading',
+      listening: 'Listening', writing: 'Writing', speaking: 'Speaking',
+      flashcards: 'Flashcards', reviews: 'Reviews',
+    };
+    return labels[key] || key;
+  }
 
   function normalizeAnswer(value) {
     return String(value || '')
@@ -101,9 +108,9 @@ export default function ExamPage() {
         {!unlocked && missingExamRequirements.length > 0 && (
           <div className="max-w-md mx-auto mb-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
             {missingExamRequirements.map(r => (
-              <div key={r.label} className="flex items-center justify-between px-3 py-2 rounded-lg" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
+              <div key={r.key} className="flex items-center justify-between px-3 py-2 rounded-lg" style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
                 <span style={{ color: 'var(--text-secondary)' }}>{r.label}</span>
-                <span style={{ color: r.current === 0 ? '#ef4444' : 'var(--accent)', fontWeight: 600 }}>{r.current}/{r.target}</span>
+                <span style={{ color: r.current === 0 ? '#ef4444' : 'var(--accent)', fontWeight: 600 }}>{r.current}/{r.required}</span>
               </div>
             ))}
           </div>

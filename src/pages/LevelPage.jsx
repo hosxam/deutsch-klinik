@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { PageShell, SectionHeader, Card, Button, LevelBadge, ProgressRing, FeatureCard } from '../components/ui';
-import { getState, getLevelProgress, isExamUnlocked, getCompletedLessons } from '../utils/store';
+import { PageShell, SectionHeader, Card, Button, LevelBadge } from '../components/ui';
+import { getState, getLevelProgress, getCompletedLessons, getLevelExamProgress, getMissingExamRequirements } from '../utils/store';
 import { getPracticeItemStatus } from '../utils/practiceProgress';
 import levelsData from '../data/levels.json';
 import '../data/curriculum.json';
@@ -35,29 +35,25 @@ export default function LevelPage() {
     return <PageShell><div className="text-center py-12" style={{ color: 'var(--text-muted)' }}>Level not found</div></PageShell>;
   }
 
-  const prog = state.levels[levelId] || {};
-  const examUnlocked = isExamUnlocked(levelId, levelData);
+  const examProgress = getLevelExamProgress(levelId, levelData);
+  const examUnlocked = examProgress.unlocked;
 
   const completedLessons = getCompletedLessons(levelId);
 
-  // Count writing prompts that are completed_correct via practiceProgress
-  const levelPrompts = (writingData[levelId] || []);
-  const writingCompletedCount = levelPrompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
-  const levelSpeakingPrompts = speakingData[levelId] || [];
-  const speakingCompletedCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
-  const speakingNeedsReviewCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_incorrect').length;
+  // Computing missing exam requirements
+  const missingRequirements = getMissingExamRequirements(levelId, levelData);
 
-  // Compute missing exam requirements for locked messaging
-  const requirements = [
-    { label: 'Grammar', current: prog.grammar?.length || 0, target: levelData?.grammarUnits || 10 },
-    { label: 'Vocabulary', current: prog.vocab?.length || 0, target: levelData?.vocabularyUnits || 10 },
-    { label: 'Lessons', current: completedLessons.length, target: 10 },
-    { label: 'Writing', current: writingCompletedCount, target: levelData?.minWritingTasks || 10 },
-    { label: 'Speaking', current: speakingCompletedCount, target: levelData?.minSpeakingTasks || 10 },
-    { label: 'Listening', current: prog.listening?.length || 0, target: levelData?.minListeningTests || 5 },
-    { label: 'Reading', current: prog.reading?.length || 0, target: levelData?.minReadingTests || 5 },
-  ];
-  const missingRequirements = requirements.filter(r => r.current < r.target);
+  // Helper to format requirement display label
+  const reqLabels = {
+    lessons: 'Lessons',
+    grammar: 'Grammar',
+    reading: 'Reading',
+    listening: 'Listening',
+    writing: 'Writing',
+    speaking: 'Speaking',
+    flashcards: 'Flashcards',
+    reviews: 'Reviews',
+  };
 
   return (
     <PageShell>
@@ -115,9 +111,11 @@ export default function LevelPage() {
           // Writing and speaking use different storage paths than getLevelProgress
           let displayCount = doneCount;
           if (skill.key === 'writing') {
-            displayCount = levelPrompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
+            const lvlPrompts = (writingData[levelId] || []);
+            displayCount = lvlPrompts.filter(p => getPracticeItemStatus('writing', p.id).status === 'completed_correct').length;
           } else if (skill.key === 'speaking') {
-            displayCount = levelSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
+            const lvlSpeakingPrompts = speakingData[levelId] || [];
+            displayCount = lvlSpeakingPrompts.filter(p => getPracticeItemStatus('speaking', p.id).status === 'completed_correct').length;
           }
           
           return (
@@ -178,7 +176,7 @@ export default function LevelPage() {
         </Card>
       </div>
 
-      {/* Missing requirements card — only shown when exam is locked */}
+      {/* Missing requirements card — always shown with progress when exam is locked */}
       {!examUnlocked && missingRequirements.length > 0 && (
         <Card className="mb-4" style={{ border: '1px solid #ef4444' }}>
           <SectionHeader
@@ -186,12 +184,12 @@ export default function LevelPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
             {missingRequirements.map(r => (
-              <div key={r.label} className="flex items-center justify-between py-1 px-2 rounded" style={{
+              <div key={r.key} className="flex items-center justify-between py-1 px-2 rounded" style={{
                 backgroundColor: 'var(--bg-hover)',
               }}>
-                <span style={{ color: 'var(--text-secondary)' }}>{r.label}</span>
+                <span style={{ color: 'var(--text-secondary)' }}>{reqLabels[r.key] || r.label || r.key}</span>
                 <span style={{ fontWeight: 600, color: r.current === 0 ? '#ef4444' : 'var(--accent)' }}>
-                  {r.current}/{r.target}
+                  {r.current}/{r.required}
                 </span>
               </div>
             ))}
@@ -199,20 +197,20 @@ export default function LevelPage() {
         </Card>
       )}
 
-      {/* Exam Requirements Progress */}
-      {examUnlocked && (
-        <Card>
-          <SectionHeader title="Exam Requirements" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-            <Requirement label="Grammar Units" current={prog.grammar?.length || 0} target={levelData.grammarUnits} />
-            <Requirement label="Vocabulary Units" current={prog.vocab?.length || 0} target={levelData.vocabularyUnits} />
-            <Requirement label="Writing Tasks" current={writingCompletedCount} target={levelData.minWritingTasks} />
-            <Requirement label="Speaking Tasks" current={speakingCompletedCount} target={levelData.minSpeakingTasks} />
-            <Requirement label="Listening Tests" current={prog.listening?.length || 0} target={levelData.minListeningTests} />
-            <Requirement label="Reading Tests" current={prog.reading?.length || 0} target={levelData.minReadingTests} />
-          </div>
-        </Card>
-      )}
+      {/* All requirements progress — shown even when unlocked for completeness */}
+      {examUnlocked && (() => {
+        const reqs = examProgress.requirements;
+        return (
+          <Card>
+            <SectionHeader title="Exam Requirements Completed" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+              {Object.entries(reqs).map(([key, r]) => (
+                <Requirement label={reqLabels[key] || key} current={r.current} target={r.required} key={key} />
+              ))}
+            </div>
+          </Card>
+        );
+      })()}
 
       {/* Weak Areas for this level */}
       {(() => {
