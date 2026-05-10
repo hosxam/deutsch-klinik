@@ -328,3 +328,188 @@ export function hasSyncBackup() {
 
 export function clearSyncBackup() {
   try { localStorage.removeItem(SYNC_BACKUP_KEY); } catch { /* ignore */ }}
+
+const RESET_BACKUP_KEY = 'dk_reset_backup';
+
+/**
+ * Create a snapshot of current progress for potential restore.
+ * Used before destructive operations like reset.
+ */
+export function createProgressBackup(label) {
+  try {
+    const raw = localStorage.getItem(getStoreKey());
+    const progress = raw ? JSON.parse(raw) : null;
+    const settings = {};
+    const settingsKeys = [
+      'deutsch_klinik_study_goal',
+      'deutsch_klinik_vocab_filters',
+      'deutsch_klinik_dashboard_collapsed',
+    ];
+    for (const key of settingsKeys) {
+      try {
+        const raw2 = localStorage.getItem(key);
+        if (raw2) settings[key] = JSON.parse(raw2);
+      } catch {}
+    }
+    const backup = {
+      label: label || 'manual',
+      timestamp: new Date().toISOString(),
+      progress,
+      settings,
+    };
+    localStorage.setItem(RESET_BACKUP_KEY, JSON.stringify(backup));
+    return backup;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Export backup as downloadable JSON blob.
+ */
+export function exportBackupAsJson() {
+  try {
+    const raw = localStorage.getItem(RESET_BACKUP_KEY);
+    if (!raw) return null;
+    return raw;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Upload a clean default progress payload to Supabase for the current user.
+ * Does NOT delete the user account. Only resets user_progress row.
+ * Creates a backup snapshot before resetting.
+ * Returns { success, backup, errors }
+ */
+export async function resetCloudProgress(supabaseClient) {
+  const errors = [];
+  let backup = null;
+
+  if (!supabaseClient) {
+    return { success: false, errors: ['Supabase client not provided'] };
+  }
+
+  try {
+    const { data: { user } } = await supabaseClient.auth.getUser();
+    if (!user) {
+      return { success: false, errors: ['Not authenticated'] };
+    }
+
+    // Create backup
+    backup = createProgressBackup('cloud-reset');
+
+    // Write a clean default payload to cloud
+    const cleanPayload = {
+      currentLevel: 'A1',
+      levels: {},
+      exams: {},
+      writings: [],
+      speakingRecordings: {},
+      flashcards: {},
+      weakAreas: [],
+      placementResult: null,
+      medicalUnlocked: false,
+      onboardingComplete: false,
+      startLevel: null,
+      targetLevel: null,
+      dailyMinutes: 30,
+      daysPerWeek: 5,
+      targetDate: null,
+      estimatedFinishDate: null,
+      goalSetupComplete: false,
+      completedLessons: {},
+      incorrectAnswers: {},
+      repeatedMistakes: {},
+      mistakeNotebook: {},
+      vocabularyMastery: {},
+      grammarMastery: {},
+      listeningCompleted: {},
+      readingCompleted: {},
+      writingCompleted: {},
+      speakingCompleted: {},
+      completedGrammarLessons: {},
+      readinessScores: {
+        reading: 0,
+        listening: 0,
+        writing: 0,
+        speaking: 0,
+        grammar: 0,
+        vocabulary: 0,
+        timeManagement: 0,
+        overall: 0,
+        completed: false,
+        lastUpdated: null,
+      },
+      topicWeakness: {},
+      dailyStudyLog: [],
+      studyLog: {},
+      remediationQueue: [],
+      streak: { count: 0, lastDate: null },
+      theme: 'dark',
+    };
+
+    const profile = (() => {
+      try { return localStorage.getItem('dk_active_profile') || 'default'; } catch { return 'default'; }
+    })();
+
+    const { error } = await supabaseClient
+      .from('user_progress')
+      .upsert({
+        user_id: user.id,
+        current_level: 'A1',
+        levels: {},
+        payload: cleanPayload,
+        settings: {},
+        profile,
+        updated_at: new Date().toISOString(),
+      }, { onConflict: 'user_id' });
+
+    if (error) errors.push('reset: ' + error.message);
+  } catch (e) {
+    errors.push('reset: ' + e.message);
+  }
+
+  return {
+    success: errors.length === 0,
+    backup,
+    errors: errors.length > 0 ? errors : undefined,
+  };
+}
+
+/**
+ * Clear local progress and reset to default state.
+ * Clears localStorage for state, onboarding, goals, settings keys.
+ * Creates a backup snapshot before resetting.
+ * Returns { success, backup }
+ */
+export function resetLocalProgress() {
+  const backup = createProgressBackup('local-reset');
+
+  try {
+    // Reset state key
+    const key = getStoreKey();
+    localStorage.removeItem(key);
+
+    // Clear all known keys
+    const keys = [
+      'deutsch_klinik_state_default',
+      'deutsch_klinik_study_goal',
+      'deutsch_klinik_vocab_filters',
+      'deutsch_klinik_dashboard_collapsed',
+      'dk_onboarding',
+      'dk_daily_mission_completed',
+      'dk_sync_meta',
+      'deutsch_klinik_sync_meta',
+      'dk_active_profile',
+      'dk_sync_backup',
+      'dk_cloud_snapshot',
+    ];
+    for (const k of keys) {
+      try { localStorage.removeItem(k); } catch {}
+    }
+  } catch {}
+
+  return { success: true, backup };
+}

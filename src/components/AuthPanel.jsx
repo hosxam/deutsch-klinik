@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { supabase, isSupabaseEnabled } from '../lib/supabaseClient';
-import { mergeProgress } from '../utils/supabaseSync';
+import { mergeProgress, resetCloudProgress, resetLocalProgress, createProgressBackup, exportBackupAsJson } from '../utils/supabaseSync';
 import { updateState } from '../utils/store';
 import {
   User, LogIn, LogOut, Upload, Download, AlertTriangle, CheckCircle,
@@ -335,6 +335,10 @@ export default function AuthPanel() {
   const [resetSent, setResetSent] = useState(false);
   const [signInLoading, setSignInLoading] = useState(false);
   const [signUpLoading, setSignUpLoading] = useState(false);
+  const [showProgressReset, setShowProgressReset] = useState(false);
+  const [resetConfirmText, setResetConfirmText] = useState('');
+  const [resetInProgress, setResetInProgress] = useState(false);
+  const [resetDone, setResetDone] = useState(false);
 
   const enabled = isSupabaseEnabled();
   const autoSyncState = useAutoSync(session, null, isManualOp, setSyncMetaState);
@@ -615,6 +619,62 @@ export default function AuthPanel() {
     setLoading(false);
   }
 
+  async function handleResetCloud() {
+    setResetInProgress(true);
+    setMessage('');
+
+    try {
+      // Backup local first via the utility (also creates dk_reset_backup)
+      createProgressBackup('cloud-reset');
+
+      // Reset cloud (overwrites with clean default payload)
+      const result = await resetCloudProgress(supabase);
+
+      if (result.success) {
+        // Clear local progress entirely and reboot to default state
+        resetLocalProgress();
+
+        // Clear component state
+        setCloudData(null);
+        setSyncStatus('Progress reset. Sign in to start fresh.');
+        setSyncMetaState(null);
+        clearSyncMeta();
+        setResetConfirmText('');
+        setResetDone(true);
+
+        flash('Cloud and local progress have been reset. Restart onboarding to set your goals.');
+
+        // Force reload so store initializes from scratch
+        setTimeout(() => window.location.reload(), 1500);
+      } else {
+        flash('Reset failed: ' + (result.errors || ['Unknown error']).join(', '));
+      }
+    } catch (err) {
+      flash('Reset failed: ' + err.message);
+    }
+    setResetInProgress(false);
+  }
+
+  async function handleResetLocal() {
+    setResetInProgress(true);
+    setMessage('');
+
+    try {
+      const result = resetLocalProgress();
+      if (result.success) {
+        setCloudData(null);
+        setSyncStatus('');
+        setSyncMetaState(null);
+        clearSyncMeta();
+        flash('Local progress has been reset. Page will reload to start fresh.');
+        setTimeout(() => window.location.reload(), 1500);
+      }
+    } catch (err) {
+      flash('Reset failed: ' + err.message);
+    }
+    setResetInProgress(false);
+  }
+
   async function handleMerge() {
     if (!cloudData) return;
     setIsManualOp(true);
@@ -715,6 +775,104 @@ export default function AuthPanel() {
             Local mode saves progress on this device. Account mode will sync lessons, goals, mistakes, flashcards, and exam results across devices when enabled.
           </p>
         </div>
+
+        {/* Local-only reset */}
+        {!showProgressReset ? (
+          <div className="border-t border-red-800/40 pt-3 mt-3">
+            <p className="text-xs text-gray-500 mb-2 font-medium">Danger Zone</p>
+            <button
+              onClick={() => { setShowProgressReset(true); setResetDone(false); setResetConfirmText(''); }}
+              className="flex items-center gap-1 px-3 py-1.5 text-xs bg-red-800/50 hover:bg-red-700/60 text-red-300 rounded transition-colors"
+            >
+              <AlertTriangle size={14} />
+              Reset local progress
+            </button>
+          </div>
+        ) : resetDone ? (
+          <div className="border-t border-red-800/40 pt-3 mt-3">
+            <div className="rounded-lg border border-green-500/30 bg-green-500/10 p-3">
+              <div className="flex items-center gap-2 text-green-300 text-xs font-medium mb-1">
+                <CheckCircle size={14} />
+                <span>Local progress reset complete</span>
+              </div>
+              <p className="text-xs text-green-200/70">
+                Your local progress has been reset. Restart onboarding to set up your goals.
+              </p>
+              <button
+                onClick={() => { setShowProgressReset(false); setResetDone(false); setResetConfirmText(''); }}
+                className="mt-2 text-xs text-blue-400 hover:text-blue-300 underline"
+              >
+                Dismiss
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="border-t border-red-800/40 pt-3 mt-3">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-xs text-red-400 font-medium">Reset Local Progress</p>
+              <button
+                onClick={() => { setShowProgressReset(false); setResetConfirmText(''); }}
+                className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-300"
+              >
+                <ArrowLeft size={14} />
+                Back
+              </button>
+            </div>
+            <div className="rounded-lg border border-red-800/50 bg-red-950/30 p-3 space-y-2">
+              <p className="text-xs text-red-200">
+                This will delete your saved learning progress (lessons, vocabulary, flashcards, mistakes, and goals) from this device.
+              </p>
+              <ul className="text-xs text-red-200/70 list-disc pl-4 space-y-0.5">
+                <li>Your curriculum data will NOT be affected.</li>
+                <li>A backup snapshot will be saved on this device before resetting.</li>
+                <li>This cannot be undone once the page reloads.</li>
+              </ul>
+              {(function() {
+                const raw = exportBackupAsJson();
+                if (raw) {
+                  try {
+                    const p = JSON.parse(raw);
+                    const when = p.timestamp ? new Date(p.timestamp).toLocaleString() : 'unknown';
+                    return (
+                      <div className="mt-2 p-2 rounded bg-gray-800 border border-gray-700 text-xs text-gray-400">
+                        <p>Existing backup found (created: {when})</p>
+                      </div>
+                    );
+                  } catch {}
+                }
+                return null;
+              })()}
+              <div className="pt-1">
+                <label className="block text-xs text-red-300 mb-1">
+                  Type <span className="font-mono font-bold">RESET</span> to confirm:
+                </label>
+                <input
+                  type="text"
+                  placeholder="Type RESET to confirm"
+                  value={resetConfirmText}
+                  onChange={(e) => setResetConfirmText(e.target.value)}
+                  className="w-full px-2 py-1.5 text-xs bg-gray-800 border border-red-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-500 mb-2"
+                />
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={handleResetLocal}
+                    disabled={resetConfirmText !== 'RESET' || resetInProgress}
+                    className="flex items-center gap-1 px-3 py-1.5 text-xs bg-red-700 hover:bg-red-600 text-white rounded transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  >
+                    {resetInProgress ? <Loader2 size={14} className="animate-spin" /> : <AlertTriangle size={14} />}
+                    {resetInProgress ? 'Resetting...' : 'Confirm Reset'}
+                  </button>
+                  <button
+                    onClick={() => { setShowProgressReset(false); setResetConfirmText(''); }}
+                    className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-700 hover:bg-gray-600 text-gray-300 rounded transition-colors"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -828,6 +986,107 @@ export default function AuthPanel() {
           {message && <p className="text-xs text-gray-300">{message}</p>}
 
           <SyncHistory meta={syncMeta} onClear={() => { clearSyncMeta(); setSyncMetaState(null); }} />
+
+          {/* --- Danger Zone: Progress Reset --- */}
+          {!showProgressReset ? (
+            <div className="border-t border-red-800/40 pt-3 mt-4">
+              <p className="text-xs text-gray-500 mb-2 font-medium">Danger Zone</p>
+              <button
+                onClick={() => { setShowProgressReset(true); setResetDone(false); setResetConfirmText(''); }}
+                className="flex items-center gap-1 px-3 py-1.5 text-xs bg-red-800/50 hover:bg-red-700/60 text-red-300 rounded transition-colors"
+              >
+                <AlertTriangle size={14} />
+                Reset cloud progress
+              </button>
+            </div>
+          ) : resetDone ? (
+            <div className="border-t border-red-800/40 pt-3 mt-4">
+              <div className="rounded-lg border border-green-500/30 bg-green-500/10 p-3">
+                <div className="flex items-center gap-2 text-green-300 text-xs font-medium mb-1">
+                  <CheckCircle size={14} />
+                  <span>Progress reset complete</span>
+                </div>
+                <p className="text-xs text-green-200/70">
+                  Your cloud and local progress have been reset. Restart onboarding to set up your goals.
+                </p>
+                <button
+                  onClick={() => { setShowProgressReset(false); setResetDone(false); setResetConfirmText(''); }}
+                  className="mt-2 text-xs text-blue-400 hover:text-blue-300 underline"
+                >
+                  Dismiss
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="border-t border-red-800/40 pt-3 mt-4">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs text-red-400 font-medium">Reset Cloud Progress</p>
+                <button
+                  onClick={() => { setShowProgressReset(false); setResetConfirmText(''); }}
+                  className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-300"
+                >
+                  <ArrowLeft size={14} />
+                  Back
+                </button>
+              </div>
+              <div className="rounded-lg border border-red-800/50 bg-red-950/30 p-3 space-y-2">
+                <p className="text-xs text-red-200">
+                  This will delete your saved learning progress (lessons, vocabulary, flashcards, mistakes, exam results, and goals).
+                </p>
+                <ul className="text-xs text-red-200/70 list-disc pl-4 space-y-0.5">
+                  <li>Your login and account will NOT be deleted.</li>
+                  <li>Your curriculum data will NOT be affected.</li>
+                  <li>A backup snapshot will be saved on this device before resetting.</li>
+                  <li>This cannot be undone from the cloud once processed.</li>
+                </ul>
+                {(function() {
+                  const backupRaw = exportBackupAsJson();
+                  if (backupRaw) {
+                    try {
+                      const parsed = JSON.parse(backupRaw);
+                      const when = parsed.timestamp ? new Date(parsed.timestamp).toLocaleString() : 'unknown';
+                      const label = parsed.label || 'unknown';
+                      return (
+                        <div className="mt-2 p-2 rounded bg-gray-800 border border-gray-700 text-xs text-gray-400">
+                          <p>Existing backup found (label: {label}, created: {when})</p>
+                        </div>
+                      );
+                    } catch {}
+                  }
+                  return null;
+                })()}
+                <div className="pt-1">
+                  <label className="block text-xs text-red-300 mb-1">
+                    Type <span className="font-mono font-bold">RESET</span> to confirm:
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Type RESET to confirm"
+                    value={resetConfirmText}
+                    onChange={(e) => setResetConfirmText(e.target.value)}
+                    className="w-full px-2 py-1.5 text-xs bg-gray-800 border border-red-800 rounded text-white placeholder-gray-500 focus:outline-none focus:border-red-500 mb-2"
+                  />
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={handleResetCloud}
+                      disabled={resetConfirmText !== 'RESET' || resetInProgress}
+                      className="flex items-center gap-1 px-3 py-1.5 text-xs bg-red-700 hover:bg-red-600 text-white rounded transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      {resetInProgress ? <Loader2 size={14} className="animate-spin" /> : <AlertTriangle size={14} />}
+                      {resetInProgress ? 'Resetting...' : 'Confirm Reset'}
+                    </button>
+                    <button
+                      onClick={() => { setShowProgressReset(false); setResetConfirmText(''); }}
+                      className="flex items-center gap-1 px-3 py-1.5 text-xs bg-gray-700 hover:bg-gray-600 text-gray-300 rounded transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                  {message && <p className="text-xs text-gray-300 mt-2">{message}</p>}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       ) : showReset ? (
         <div className="space-y-3">

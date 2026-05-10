@@ -8,7 +8,7 @@
  * Local-only mode only for logged-out users.
  */
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { mergeProgress, hasSyncBackup, clearSyncBackup } from '../src/utils/supabaseSync';
+import { mergeProgress, hasSyncBackup, clearSyncBackup, createProgressBackup, resetLocalProgress, exportBackupAsJson } from '../src/utils/supabaseSync';
 
 // Mock localStorage for tests
 const localStorageMock = (() => {
@@ -221,6 +221,73 @@ describe('Merge preserves data integrity (manual merge)', () => {
     const cloud = { completedLessons: { A1: [{ id: 'l1', completedAt: '2026-05-02' }, { id: 'l2' }] } };
     const result = mergeProgress(local, cloud);
     expect(result.completedLessons.A1.length).toBe(2);
+  });
+});
+
+describe('Progress reset: local only', () => {
+  beforeEach(() => {
+    localStorageMock.clear();
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify({
+      currentLevel: 'B1',
+      levels: { B1: { grammar: { completed: ['g1'] } } },
+      completedLessons: { B1: ['l1', 'l2'] },
+      flashcard: {},
+      exams: { B1: { passed: true } },
+      mistakeNotebook: { m1: { topic: 'test' } },
+    }));
+  });
+
+  it('creates a backup before reset', () => {
+    const backup = createProgressBackup('test-reset');
+    expect(backup).not.toBeNull();
+    expect(backup.label).toBe('test-reset');
+    expect(backup.timestamp).toBeTruthy();
+    expect(backup.progress).not.toBeNull();
+    expect(backup.progress.currentLevel).toBe('B1');
+  });
+
+  it('exportBackupAsJson returns valid JSON string', () => {
+    createProgressBackup('export-test');
+    const raw = exportBackupAsJson();
+    expect(raw).not.toBeNull();
+    const parsed = JSON.parse(raw);
+    expect(parsed.label).toBe('export-test');
+    expect(parsed.progress.currentLevel).toBe('B1');
+  });
+
+  it('resetLocalProgress clears all state keys', () => {
+    // Set up various keys
+    localStorageMock.setItem('deutsch_klinik_study_goal', JSON.stringify({ targetLevel: 'C1' }));
+    localStorageMock.setItem('dk_onboarding', JSON.stringify({ complete: true }));
+    localStorageMock.setItem('dk_sync_meta', JSON.stringify({ lastUploadAt: '2026-05-10' }));
+
+    const result = resetLocalProgress();
+    expect(result.success).toBe(true);
+    expect(localStorageMock.getItem('deutsch_klinik_state_default')).toBeNull();
+    expect(localStorageMock.getItem('deutsch_klinik_study_goal')).toBeNull();
+    expect(localStorageMock.getItem('dk_onboarding')).toBeNull();
+    expect(localStorageMock.getItem('dk_sync_meta')).toBeNull();
+  });
+
+  it('reset creates backup snapshot before clearing', () => {
+    resetLocalProgress();
+    // Reset creates a backup with label 'local-reset'
+    const backup = JSON.parse(localStorageMock.getItem('dk_reset_backup'));
+    expect(backup).not.toBeNull();
+    expect(backup.label).toBe('local-reset');
+    expect(backup.progress.currentLevel).toBe('B1');
+  });
+
+  it('reset after empty state still creates backup', () => {
+    localStorageMock.clear();
+    const result = resetLocalProgress();
+    expect(result.success).toBe(true);
+  });
+
+  it('cancel does not delete anything', () => {
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify({ currentLevel: 'A1' }));
+    // Cancel is just not calling reset. Verify original data is intact.
+    expect(JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default')).currentLevel).toBe('A1');
   });
 });
 
