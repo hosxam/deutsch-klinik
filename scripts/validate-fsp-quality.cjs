@@ -345,8 +345,8 @@ function checkRequiredFields(item, itemIndex, fileName, requiredFields) {
 (function validateCases() {
   const { items: cases } = readJson('fspCases.json');
 
-  if (cases.length !== 100) {
-    fail(`fspCases.json: expected 100 items, got ${cases.length}`);
+  if (cases.length !== 130) {
+    fail(`fspCases.json: expected 130 items, got ${cases.length}`);
   } else {
     pass(`fspCases.json: has ${cases.length} case items`);
   }
@@ -397,8 +397,8 @@ function checkRequiredFields(item, itemIndex, fileName, requiredFields) {
 (function validateSpeaking() {
   const { items: speaking } = readJson('fspSpeaking.json');
 
-  if (speaking.length !== 50) {
-    fail(`fspSpeaking.json: expected 50 items, got ${speaking.length}`);
+  if (speaking.length !== 80) {
+    fail(`fspSpeaking.json: expected 80 items, got ${speaking.length}`);
   } else {
     pass(`fspSpeaking.json: has ${speaking.length} speaking items`);
   }

@@ -41333,45 +41333,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_011",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Medication Reconciliation",
-      "topic": "Medication and Allergies",
-      "order": 611,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_011"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "medication",
-        "reconciliation",
-        "compliance",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_012",
       "level": "FSP",
       "skill": "lesson",
@@ -41529,45 +41490,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_012",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Allergies and Adverse Reactions",
-      "topic": "Medication and Allergies",
-      "order": 612,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_012"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "allergies",
-        "adverse reactions",
-        "medication",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_013",
       "level": "FSP",
       "skill": "lesson",
@@ -41624,47 +41546,6 @@
       "requiredConcepts": [
         "b2.krankheit.symptome",
         "b2.koerperteile"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_013"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "family history",
-        "genetic",
-        "risk",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_013",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Family History and Genetic Risk",
-      "topic": "Family and Social History",
-      "order": 613,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -41857,47 +41738,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_014",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Social History and Lifestyle",
-      "topic": "Family and Social History",
-      "order": 614,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_014"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "social history",
-        "lifestyle",
-        "occupation",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_015",
       "level": "FSP",
       "skill": "lesson",
@@ -41956,49 +41796,6 @@
       "requiredConcepts": [
         "b2.krankheit.symptome",
         "b2.koerperteile"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_015"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "ROS",
-        "systems",
-        "review",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_015",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Systematic Review of Body Systems",
-      "topic": "Review of Systems",
-      "order": 615,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -42115,49 +41912,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_016",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Red Flags and Urgent Findings",
-      "topic": "Review of Systems",
-      "order": 616,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_016"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "ROS",
-        "red flags",
-        "urgent",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_017",
       "level": "FSP",
       "skill": "lesson",
@@ -42218,51 +41972,6 @@
       "requiredConcepts": [
         "c1.medizinische.fachsprache",
         "b2.medikamente"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_017"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "examination",
-        "commands",
-        "instructions",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_017",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Examination Instructions and Commands",
-      "topic": "Physical Examination Language",
-      "order": 617,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -42475,51 +42184,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_018",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Describing Examination Findings",
-      "topic": "Physical Examination Language",
-      "order": 618,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_018"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "examination",
-        "findings",
-        "documentation",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_019",
       "level": "FSP",
       "skill": "lesson",
@@ -42676,53 +42340,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_019"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "diagnostics",
-        "lab",
-        "tests",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_019",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Laboratory Tests and Results",
-      "topic": "Diagnostics and Investigations",
-      "order": 619,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -42945,53 +42562,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_020",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Imaging and Special Investigations",
-      "topic": "Diagnostics and Investigations",
-      "order": 620,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_020"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "diagnostics",
-        "imaging",
-        "procedures",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_021",
       "level": "FSP",
       "skill": "lesson",
@@ -43104,55 +42674,6 @@
       ],
       "requiredConcepts": [
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_021"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "diagnosis",
-        "communication",
-        "empathy",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_021",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Communicating a Diagnosis",
-      "topic": "Explaining Diagnoses",
-      "order": 621,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -43433,55 +42954,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_022",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Differential Diagnosis Discussion",
-      "topic": "Explaining Diagnoses",
-      "order": 622,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_022"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "diagnosis",
-        "differential",
-        "uncertainty",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_023",
       "level": "FSP",
       "skill": "lesson",
@@ -43700,57 +43172,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_023"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "treatment",
-        "plan",
-        "therapy",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_023",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Developing and Explaining a Treatment Plan",
-      "topic": "Treatment Plan",
-      "order": 623,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -44043,57 +43464,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_024",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Lifestyle Modifications and Follow-Up",
-      "topic": "Treatment Plan",
-      "order": 624,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_024"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "treatment",
-        "lifestyle",
-        "follow-up",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_025",
       "level": "FSP",
       "skill": "lesson",
@@ -44320,59 +43690,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_025"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "consent",
-        "procedure",
-        "informed",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_025",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Explaining Procedures and Obtaining Consent",
-      "topic": "Informed Consent and Risk Communication",
-      "order": 625,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -44677,59 +43994,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_026",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Risk Communication and Shared Decision Making",
-      "topic": "Informed Consent and Risk Communication",
-      "order": 626,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_026"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "consent",
-        "risk",
-        "shared decision",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_027",
       "level": "FSP",
       "skill": "lesson",
@@ -44949,61 +44213,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_027",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: ISBAR Structured Handover",
-      "topic": "Doctor-to-Doctor Handover",
-      "order": 627,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_027"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "handover",
-        "ISBAR",
-        "communication",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_028",
       "level": "FSP",
       "skill": "lesson",
@@ -45182,61 +44391,6 @@
       ],
       "requiredConcepts": [
         "c1.arzt.patient.kommunikation"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_028"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "handover",
-        "presentation",
-        "colleagues",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_028",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Case Presentation to Colleagues",
-      "topic": "Doctor-to-Doctor Handover",
-      "order": 628,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -45520,63 +44674,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_029"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "arztbrief",
-        "admission",
-        "documentation",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_029",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Writing the Admission Note",
-      "topic": "Arztbrief Structure",
-      "order": 629,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -45905,63 +45002,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_030",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Writing the Discharge Summary",
-      "topic": "Arztbrief Structure",
-      "order": 630,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_030"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "arztbrief",
-        "discharge",
-        "summary",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_lesson_fsp_l_031",
       "level": "FSP",
       "skill": "lesson",
@@ -46154,65 +45194,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_031"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "internal medicine",
-        "cardiology",
-        "respiratory",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_031",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Cardiovascular and Respiratory Cases",
-      "topic": "Common Internal Medicine Cases",
-      "order": 631,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -46554,65 +45535,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_032",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Endocrine and Gastrointestinal Cases",
-      "topic": "Common Internal Medicine Cases",
-      "order": 632,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_032"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "internal medicine",
-        "endocrine",
-        "GI",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_case_fsp_l_032",
       "level": "FSP",
       "skill": "case",
@@ -46870,67 +45792,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_033"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "surgical",
-        "pre-operative",
-        "post-operative",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_033",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Common Surgical Cases",
-      "topic": "Surgical and Orthopedic Cases",
-      "order": 633,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -47284,67 +46145,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_034",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Orthopedic and Trauma Cases",
-      "topic": "Surgical and Orthopedic Cases",
-      "order": 634,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_034"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "orthopedic",
-        "trauma",
-        "fracture",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_case_fsp_l_034",
       "level": "FSP",
       "skill": "case",
@@ -47546,69 +46346,6 @@
       ],
       "requiredConcepts": [
         "c1.arzt.patient.kommunikation"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_035"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "emergency",
-        "urgency",
-        "triage",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_035",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Emergency Communication and Urgency",
-      "topic": "Emergency and Red Flag Communication",
-      "order": 635,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -47910,69 +46647,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_036",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Breaking Bad News",
-      "topic": "Emergency and Red Flag Communication",
-      "order": 636,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_036"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "emergency",
-        "bad news",
-        "SPIKES",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_case_fsp_l_036",
       "level": "FSP",
       "skill": "case",
@@ -48180,71 +46854,6 @@
       ],
       "requiredConcepts": [
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034",
-        "fsp_l_035",
-        "fsp_l_036"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_037"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "pediatric",
-        "geriatric",
-        "communication",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_037",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Pediatric and Geriatric Communication",
-      "topic": "Pediatric, Geriatric, Psychiatric Contexts",
-      "order": 637,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -48686,71 +47295,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_038",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Psychiatric History and Communication",
-      "topic": "Pediatric, Geriatric, Psychiatric Contexts",
-      "order": 638,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034",
-        "fsp_l_035",
-        "fsp_l_036"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_038"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "psychiatric",
-        "mental health",
-        "sensitive",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_case_fsp_l_038",
       "level": "FSP",
       "skill": "case",
@@ -49100,73 +47644,6 @@
       "requiredConcepts": [
         "c1.aerztlicher.brief",
         "c1.medizinische.fachsprache"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034",
-        "fsp_l_035",
-        "fsp_l_036",
-        "fsp_l_037",
-        "fsp_l_038"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_039"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "simulation",
-        "internal medicine",
-        "full exam",
-        "fsp"
-      ]
-    },
-    {
-      "id": "fsp_speak_fsp_l_039",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Internal Medicine FSP Simulation",
-      "topic": "Full FSP Simulation",
-      "order": 639,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
       ],
       "requiredLessons": [
         "fsp_l_001",
@@ -49624,73 +48101,6 @@
       ]
     },
     {
-      "id": "fsp_speak_fsp_l_040",
-      "level": "FSP",
-      "skill": "speaking",
-      "title": "Speaking: Surgical FSP Simulation and Final Review",
-      "topic": "Full FSP Simulation",
-      "order": 640,
-      "estimatedMinutes": 30,
-      "conceptId": "fsp.speaking.patient",
-      "taughtConcepts": [
-        "fsp.speaking.patient"
-      ],
-      "requiredConcepts": [
-        "c1.arzt.patient.kommunikation",
-        "b2.patient.doctor"
-      ],
-      "requiredLessons": [
-        "fsp_l_001",
-        "fsp_l_002",
-        "fsp_l_003",
-        "fsp_l_004",
-        "fsp_l_005",
-        "fsp_l_006",
-        "fsp_l_007",
-        "fsp_l_008",
-        "fsp_l_009",
-        "fsp_l_010",
-        "fsp_l_011",
-        "fsp_l_012",
-        "fsp_l_013",
-        "fsp_l_014",
-        "fsp_l_015",
-        "fsp_l_016",
-        "fsp_l_017",
-        "fsp_l_018",
-        "fsp_l_019",
-        "fsp_l_020",
-        "fsp_l_021",
-        "fsp_l_022",
-        "fsp_l_023",
-        "fsp_l_024",
-        "fsp_l_025",
-        "fsp_l_026",
-        "fsp_l_027",
-        "fsp_l_028",
-        "fsp_l_029",
-        "fsp_l_030",
-        "fsp_l_031",
-        "fsp_l_032",
-        "fsp_l_033",
-        "fsp_l_034",
-        "fsp_l_035",
-        "fsp_l_036",
-        "fsp_l_037",
-        "fsp_l_038"
-      ],
-      "linkedLessonIds": [
-        "fsp_l_040"
-      ],
-      "linkedQuestionIds": [],
-      "tags": [
-        "simulation",
-        "surgical",
-        "full exam",
-        "fsp"
-      ]
-    },
-    {
       "id": "fsp_case_fsp_l_040",
       "level": "FSP",
       "skill": "case",
@@ -49754,6 +48164,3000 @@
         "simulation",
         "surgical",
         "full exam",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_001",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: General Orientation",
+      "topic": "FSP Clinical Cases",
+      "order": 741,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.orientation.exam",
+      "taughtConcepts": [
+        "fsp.orientation.exam"
+      ],
+      "requiredConcepts": [
+        "fsp.orientation.exam"
+      ],
+      "requiredLessons": [
+        "fsp_l_001"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_001"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_101"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "vorstellung",
+        "check-up",
+        "neupatient"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_002",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: FSP Strategy",
+      "topic": "FSP Clinical Cases",
+      "order": 742,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.orientation.strategy",
+      "taughtConcepts": [
+        "fsp.orientation.strategy"
+      ],
+      "requiredConcepts": [
+        "fsp.orientation.strategy"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_002"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_102"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "pruefungsangst",
+        "vorbereitung",
+        "strategie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_003",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Language Barriers",
+      "topic": "FSP Clinical Cases",
+      "order": 743,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.rapport.greeting",
+      "taughtConcepts": [
+        "fsp.rapport.greeting"
+      ],
+      "requiredConcepts": [
+        "fsp.rapport.greeting"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_003"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_103"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "sprachbarriere",
+        "kultur",
+        "anamnese"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_004",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: PTSD and Examination Fear",
+      "topic": "FSP Clinical Cases",
+      "order": 744,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.rapport.active.listening",
+      "taughtConcepts": [
+        "fsp.rapport.active.listening",
+        "fsp.rapport.empathy"
+      ],
+      "requiredConcepts": [
+        "fsp.rapport.active.listening",
+        "fsp.rapport.empathy"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_004"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_104"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "angst",
+        "empathie",
+        "untersuchung"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_005",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Chest Pain — SOCRATES",
+      "topic": "FSP Clinical Cases",
+      "order": 745,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.complaint.socrates",
+      "taughtConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_005"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_105"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "brustschmerz",
+        "ACS",
+        "notfall"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_006",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Abdominal Pain Documentation",
+      "topic": "FSP Clinical Cases",
+      "order": 746,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.complaint.documentation",
+      "taughtConcepts": [
+        "fsp.complaint.documentation"
+      ],
+      "requiredConcepts": [
+        "fsp.complaint.documentation"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_006"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_106"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "bauchschmerz",
+        "gallenblase",
+        "dokumentation"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_007",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Back Pain — OPQRST",
+      "topic": "FSP Clinical Cases",
+      "order": 747,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.pain.characteristics",
+      "taughtConcepts": [
+        "fsp.pain.characteristics"
+      ],
+      "requiredConcepts": [
+        "fsp.pain.characteristics"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_007"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_107"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "rueckenschmerz",
+        "bandscheibe",
+        "OPQRST"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_008",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Knee Arthritis Pain Therapy",
+      "topic": "FSP Clinical Cases",
+      "order": 748,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.pain.triggers",
+      "taughtConcepts": [
+        "fsp.pain.triggers"
+      ],
+      "requiredConcepts": [
+        "fsp.pain.triggers"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_008"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_108"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "arthrose",
+        "knie",
+        "schmerztherapie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_009",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Polymorbid Patient History",
+      "topic": "FSP Clinical Cases",
+      "order": 749,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.pmh.chronic",
+      "taughtConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_009"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_109"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "eigenanamnese",
+        "chronisch",
+        "polymorbid"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_010",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: New-Onset Diabetes",
+      "topic": "FSP Clinical Cases",
+      "order": 750,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.pmh.chronic",
+      "taughtConcepts": [
+        "fsp.pmh.chronic",
+        "fsp.pmh.risk.factors"
+      ],
+      "requiredConcepts": [
+        "fsp.pmh.chronic",
+        "fsp.pmh.risk.factors"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_010"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_110"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "diabetes",
+        "neudiagnose",
+        "stoffwechsel"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_011",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Polypharmacy and Falls",
+      "topic": "FSP Clinical Cases",
+      "order": 751,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.medication.reconciliation",
+      "taughtConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_011"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_111"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "polypharmazie",
+        "sturz",
+        "medikament"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_012",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Anaphylaxis Allergy Assessment",
+      "topic": "FSP Clinical Cases",
+      "order": 752,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.allergy.assessment",
+      "taughtConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_012"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_112"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "allergie",
+        "anaphylaxie",
+        "antibiotikum"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_013",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Familial Breast Cancer Risk",
+      "topic": "FSP Clinical Cases",
+      "order": 753,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.family.genetic.risk",
+      "taughtConcepts": [
+        "fsp.family.genetic.risk"
+      ],
+      "requiredConcepts": [
+        "fsp.family.genetic.risk"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_013"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_113"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "familienanamnese",
+        "genetik",
+        "brustkrebs"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_014",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Social History Work Injury",
+      "topic": "FSP Clinical Cases",
+      "order": 754,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.social.lifestyle",
+      "taughtConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_014"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_114"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "sozialanamnese",
+        "beruf",
+        "rueckenschmerz"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_015",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: B-Symptom ROS",
+      "topic": "FSP Clinical Cases",
+      "order": 755,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.ros.systematic",
+      "taughtConcepts": [
+        "fsp.ros.systematic"
+      ],
+      "requiredConcepts": [
+        "fsp.ros.systematic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_015"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_115"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "ROS",
+        "B-symptomatik",
+        "gewichtsverlust"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_016",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Thunderclap Headache Red Flags",
+      "topic": "FSP Clinical Cases",
+      "order": 756,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.red.flags.urgent",
+      "taughtConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_016"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_116"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "kopfschmerz",
+        "sab",
+        "notfall"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_017",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Cardiac Decompensation",
+      "topic": "FSP Clinical Cases",
+      "order": 757,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.emergency.cardiac",
+      "taughtConcepts": [
+        "fsp.specific.emergency.cardiac"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.emergency.cardiac"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_017"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_117"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "atemnot",
+        "herzinsuffizienz",
+        "dekompensation"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_018",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Acute Stroke FAST Assessment",
+      "topic": "FSP Clinical Cases",
+      "order": 758,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.red.flags.urgent",
+      "taughtConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_018"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_118"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "schlaganfall",
+        "apoplex",
+        "neurologie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_019",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Paediatric Fever",
+      "topic": "FSP Clinical Cases",
+      "order": 759,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_019"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_119"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "fieber",
+        "kind",
+        "paediatrie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_020",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Depression Screening",
+      "topic": "FSP Clinical Cases",
+      "order": 760,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_020"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_120"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "depression",
+        "psychiatrie",
+        "suizid"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_021",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Asthma Exacerbation",
+      "topic": "FSP Clinical Cases",
+      "order": 761,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_021"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_121"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "asthma",
+        "notfall"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_022",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Paediatric GE Dehydration",
+      "topic": "FSP Clinical Cases",
+      "order": 762,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_022"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_122"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "gastroenteritis",
+        "kind"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_023",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Post-Op Wound Hip TEP",
+      "topic": "FSP Clinical Cases",
+      "order": 763,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.procedures",
+      "taughtConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_023"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_123"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "wundkontrolle",
+        "infektion"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_024",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Pre-Op Inguinal Hernia",
+      "topic": "FSP Clinical Cases",
+      "order": 764,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.procedures",
+      "taughtConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_024"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_124"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "aufklaerung",
+        "hernie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_025",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Chronic Pain Psychosomatic",
+      "topic": "FSP Clinical Cases",
+      "order": 765,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_025"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_125"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "chronischer-schmerz",
+        "psychosomatisch"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_026",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: UTI Elderly",
+      "topic": "FSP Clinical Cases",
+      "order": 766,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_026"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_126"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "hwi",
+        "urin"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_027",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Allergic Reaction Peanut",
+      "topic": "FSP Clinical Cases",
+      "order": 767,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.allergy.assessment",
+      "taughtConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_027"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_127"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "allergie",
+        "anaphylaxie"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_028",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Skin Cancer Screening",
+      "topic": "FSP Clinical Cases",
+      "order": 768,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_028"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_128"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "vorsorge",
+        "hautkrebs"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_029",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Tinnitus Noise",
+      "topic": "FSP Clinical Cases",
+      "order": 769,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_029"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_129"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "tinnitus",
+        "hno"
+      ]
+    },
+    {
+      "id": "fsp_case_fsp_l_030",
+      "level": "FSP",
+      "skill": "case",
+      "title": "Case: Thyroid Nodule",
+      "topic": "FSP Clinical Cases",
+      "order": 770,
+      "estimatedMinutes": 45,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_030"
+      ],
+      "linkedQuestionIds": [
+        "fsp_c_130"
+      ],
+      "tags": [
+        "clinical case",
+        "fsp",
+        "schilddruese",
+        "knoten"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_011",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Schwindel History",
+      "topic": "FSP Speaking Practice",
+      "order": 771,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.complaint.socrates",
+      "taughtConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_011"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_051"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_012",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Hypertension Education",
+      "topic": "FSP Speaking Practice",
+      "order": 772,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.pmh.chronic",
+      "taughtConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_012"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_052"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_013",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Pre-Op Med Reconciliation",
+      "topic": "FSP Speaking Practice",
+      "order": 773,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.medication.reconciliation",
+      "taughtConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_013"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_053"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_014",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Familial Cancer Risk",
+      "topic": "FSP Speaking Practice",
+      "order": 774,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.family.genetic.risk",
+      "taughtConcepts": [
+        "fsp.family.genetic.risk"
+      ],
+      "requiredConcepts": [
+        "fsp.family.genetic.risk"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_014"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_054"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_015",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: COPD Social History",
+      "topic": "FSP Speaking Practice",
+      "order": 775,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.lifestyle",
+      "taughtConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_015"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_055"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_016",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: B-Symptom ROS",
+      "topic": "FSP Speaking Practice",
+      "order": 776,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.ros.systematic",
+      "taughtConcepts": [
+        "fsp.ros.systematic"
+      ],
+      "requiredConcepts": [
+        "fsp.ros.systematic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_016"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_056"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_017",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Acute Asthma",
+      "topic": "FSP Speaking Practice",
+      "order": 777,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_017"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_057"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_018",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Stroke Neuro Exam",
+      "topic": "FSP Speaking Practice",
+      "order": 778,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.red.flags.urgent",
+      "taughtConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_018"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_058"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_019",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Child Vaccination",
+      "topic": "FSP Speaking Practice",
+      "order": 779,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_019"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_059"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_020",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Suicidal Crisis Intervention",
+      "topic": "FSP Speaking Practice",
+      "order": 780,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_020"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_060"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_021",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: GI History",
+      "topic": "FSP Speaking Practice",
+      "order": 781,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.complaint.socrates",
+      "taughtConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_021"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_061"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_022",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Child Dehydration Education",
+      "topic": "FSP Speaking Practice",
+      "order": 782,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.allergic.emergency",
+      "taughtConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.allergic.emergency"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_022"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_062"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_023",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Wound Care",
+      "topic": "FSP Speaking Practice",
+      "order": 783,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.other.procedures",
+      "taughtConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_023"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_063"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_024",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Pre-Op Education",
+      "topic": "FSP Speaking Practice",
+      "order": 784,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.other.procedures",
+      "taughtConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.procedures"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_024"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_064"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_025",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Chronic Pain Biopsychosocial",
+      "topic": "FSP Speaking Practice",
+      "order": 785,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_025"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_065"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_026",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: UTI Elderly",
+      "topic": "FSP Speaking Practice",
+      "order": 786,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.medication.reconciliation",
+      "taughtConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredConcepts": [
+        "fsp.medication.reconciliation"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_026"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_066"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_027",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Allergy Emergency Plan",
+      "topic": "FSP Speaking Practice",
+      "order": 787,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.allergy.assessment",
+      "taughtConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredConcepts": [
+        "fsp.allergy.assessment"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_027"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_067"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_028",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Sun Protection Screening",
+      "topic": "FSP Speaking Practice",
+      "order": 788,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.red.flags.urgent",
+      "taughtConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_028"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_068"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_029",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Ear Foreign Body",
+      "topic": "FSP Speaking Practice",
+      "order": 789,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_029"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_069"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_030",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Thyroid Nodule",
+      "topic": "FSP Speaking Practice",
+      "order": 790,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.specific.other.geriatric",
+      "taughtConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredConcepts": [
+        "fsp.specific.other.geriatric"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_030"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_070"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_031",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Acute Chest Pain",
+      "topic": "FSP Speaking Practice",
+      "order": 791,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.complaint.socrates",
+      "taughtConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredConcepts": [
+        "fsp.complaint.socrates"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_031"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_071"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_032",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Geriatric Depression",
+      "topic": "FSP Speaking Practice",
+      "order": 792,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_032"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_072"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_033",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Anticoagulation Education",
+      "topic": "FSP Speaking Practice",
+      "order": 793,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.pmh.chronic",
+      "taughtConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_033"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_073"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_034",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Cancer Diagnosis Conversation",
+      "topic": "FSP Speaking Practice",
+      "order": 794,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_034"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_074"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_035",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Alcohol Addiction History",
+      "topic": "FSP Speaking Practice",
+      "order": 795,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.lifestyle",
+      "taughtConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_035"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_075"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_036",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Heart Failure Therapy",
+      "topic": "FSP Speaking Practice",
+      "order": 796,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.pmh.chronic",
+      "taughtConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredConcepts": [
+        "fsp.pmh.chronic"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035",
+        "fsp_l_036"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_036"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_076"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_037",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Organ Donation Conversation",
+      "topic": "FSP Speaking Practice",
+      "order": 797,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.mental.health",
+      "taughtConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredConcepts": [
+        "fsp.social.mental.health"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035",
+        "fsp_l_036",
+        "fsp_l_037"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_037"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_077"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_038",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Angry Patient De-escalation",
+      "topic": "FSP Speaking Practice",
+      "order": 798,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.rapport.active.listening",
+      "taughtConcepts": [
+        "fsp.rapport.active.listening"
+      ],
+      "requiredConcepts": [
+        "fsp.rapport.active.listening"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035",
+        "fsp_l_036",
+        "fsp_l_037",
+        "fsp_l_038"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_038"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_078"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_039",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Lung Nodule Incidentaloma",
+      "topic": "FSP Speaking Practice",
+      "order": 799,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.red.flags.urgent",
+      "taughtConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredConcepts": [
+        "fsp.red.flags.urgent"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035",
+        "fsp_l_036",
+        "fsp_l_037",
+        "fsp_l_038",
+        "fsp_l_039"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_039"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_079"
+      ],
+      "tags": [
+        "speaking",
+        "fsp"
+      ]
+    },
+    {
+      "id": "fsp_speak_fsp_l_040",
+      "level": "FSP",
+      "skill": "speaking",
+      "title": "Speaking: Rehab Discharge Summary",
+      "topic": "FSP Speaking Practice",
+      "order": 800,
+      "estimatedMinutes": 30,
+      "conceptId": "fsp.social.lifestyle",
+      "taughtConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredConcepts": [
+        "fsp.social.lifestyle"
+      ],
+      "requiredLessons": [
+        "fsp_l_001",
+        "fsp_l_002",
+        "fsp_l_003",
+        "fsp_l_004",
+        "fsp_l_005",
+        "fsp_l_006",
+        "fsp_l_007",
+        "fsp_l_008",
+        "fsp_l_009",
+        "fsp_l_010",
+        "fsp_l_011",
+        "fsp_l_012",
+        "fsp_l_013",
+        "fsp_l_014",
+        "fsp_l_015",
+        "fsp_l_016",
+        "fsp_l_017",
+        "fsp_l_018",
+        "fsp_l_019",
+        "fsp_l_020",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_023",
+        "fsp_l_024",
+        "fsp_l_025",
+        "fsp_l_026",
+        "fsp_l_027",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030",
+        "fsp_l_031",
+        "fsp_l_032",
+        "fsp_l_033",
+        "fsp_l_034",
+        "fsp_l_035",
+        "fsp_l_036",
+        "fsp_l_037",
+        "fsp_l_038",
+        "fsp_l_039",
+        "fsp_l_040"
+      ],
+      "linkedLessonIds": [
+        "fsp_l_040"
+      ],
+      "linkedQuestionIds": [
+        "fsp_s_080"
+      ],
+      "tags": [
+        "speaking",
         "fsp"
       ]
     }
@@ -70384,6 +71788,191 @@
       "skill": "lesson",
       "label": "Surgical FSP Simulation and Final Review",
       "description": "Complete mock FSP exam with a surgical case and comprehensive review of all modules."
+    },
+    {
+      "id": "fsp.pmh.risk.factors",
+      "name": "Risk factors in patient history",
+      "description": "Identifying and documenting cardiovascular, metabolic, and lifestyle risk factors",
+      "prerequisites": [
+        "fsp.pmh.chronic"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_010"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.allergy.assessment",
+      "name": "Allergy assessment",
+      "description": "Structured allergy history including onset, severity, cross-reactivity",
+      "prerequisites": [
+        "fsp.rapport.greeting"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_012",
+        "fsp_l_027"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.family.genetic.risk",
+      "name": "Family history and genetic risk",
+      "description": "Structured family history, pedigree construction, genetic risk assessment",
+      "prerequisites": [
+        "fsp.pmh.chronic"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_013"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.ros.systematic",
+      "name": "Review of systems",
+      "description": "Systematic organ-system-based review of symptoms including B-symptom inquiry",
+      "prerequisites": [
+        "fsp.complaint.socrates"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_015"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.red.flags.urgent",
+      "name": "Recognising urgent red flags",
+      "description": "Identification of alarm symptoms requiring immediate investigation or referral",
+      "prerequisites": [
+        "fsp.complaint.priority"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_016",
+        "fsp_l_018"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.social.mental.health",
+      "name": "Mental health and psychosocial assessment",
+      "description": "Depression screening, suicide risk assessment, psychosocial history, crisis intervention",
+      "prerequisites": [
+        "fsp.social.lifestyle"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_020",
+        "fsp_l_025",
+        "fsp_l_032",
+        "fsp_l_034"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.specific.allergic.emergency",
+      "name": "Allergic emergencies and paediatric assessment",
+      "description": "Anaphylaxis management, paediatric fever/dehydration assessment, asthma exacerbation",
+      "prerequisites": [
+        "fsp.allergy.assessment",
+        "fsp.red.flags.urgent"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_019",
+        "fsp_l_021",
+        "fsp_l_022",
+        "fsp_l_027"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.specific.emergency.cardiac",
+      "name": "Cardiac emergencies",
+      "description": "Acute coronary syndrome, cardiac decompensation, emergency cardiac management",
+      "prerequisites": [
+        "fsp.complaint.socrates",
+        "fsp.red.flags.urgent"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_017"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.specific.other.geriatric",
+      "name": "Geriatric and specialty assessments",
+      "description": "Geriatric assessment, HWI, tinnitus, thyroid, dermatology, ENT-specific histories",
+      "prerequisites": [
+        "fsp.pmh.chronic",
+        "fsp.medication.reconciliation"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_026",
+        "fsp_l_028",
+        "fsp_l_029",
+        "fsp_l_030"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
+    },
+    {
+      "id": "fsp.specific.other.procedures",
+      "name": "Procedural and pre-operative assessment",
+      "description": "Pre-operative evaluation, wound assessment, hernia, surgical informed consent",
+      "prerequisites": [
+        "fsp.medication.reconciliation"
+      ],
+      "suggestions": [],
+      "taughtInLessons": [
+        "fsp_l_023",
+        "fsp_l_024"
+      ],
+      "practices": [
+        "fsp.speaking"
+      ],
+      "level": "FSP",
+      "skill": "case"
     }
   ],
   "prerequisiteGraph": [

@@ -5187,5 +5187,1643 @@
     ],
     "conceptId": "fsp.case.100",
     "taughtInLessonId": "fsp_l_040"
+  },
+  {
+    "id": "fsp_c_101",
+    "title": "Erstgespräch — allgemeine Vorstellung",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "35",
+      "gender": "weiblich",
+      "chiefComplaint": "Neu in Praxis, allgemeiner Check-up",
+      "history": "Neu zugezogen, sucht Hausarzt. Keine akuten Beschwerden.",
+      "medications": "Keine",
+      "allergies": "Penicillin (Ausschlag)",
+      "pastHistory": "Keine",
+      "familyHistory": "Mutter: DM Typ 2, Vater: Hypertonie",
+      "socialHistory": "Büroangestellte, Nichtraucherin"
+    },
+    "doctorTasks": [
+      "Begrüßen und vorstellen",
+      "Grund des Besuchs erfragen",
+      "Allgemeine Anamnese",
+      "Check-up besprechen"
+    ],
+    "mustAsk": [
+      "Haben Sie Sorgen?",
+      "Welche Impfungen haben Sie?",
+      "Nehmen Sie Medikamente?"
+    ],
+    "redFlags": [
+      "Keine akuten Beschwerden"
+    ],
+    "usefulPhrases": [
+      "Schön, dass Sie da sind.",
+      "Ich mache eine allgemeine Untersuchung."
+    ],
+    "doctorToDoctorSummary": "35-jährige Patientin, neu in Praxis. Wünscht Check-up. Penicillin-Allergie.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Keine",
+      "patientLanguage": "Freundlich",
+      "structure": "Vorstellung->Planung",
+      "medicalLogic": "Vollständig"
+    },
+    "tags": [
+      "vorstellung",
+      "check-up",
+      "neupatient"
+    ],
+    "conceptId": "fsp.case.101",
+    "taughtInLessonId": "fsp_l_001",
+    "requiredConcepts": [
+      "fsp.orientation.exam"
+    ]
+  },
+  {
+    "id": "fsp_c_102",
+    "title": "Prüfungsangst FSP — Strategiegespräch",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "42",
+      "gender": "männlich",
+      "chiefComplaint": "Nervosität vor FSP",
+      "history": "6 Monate Vorbereitung, unsicher bei Anamnese und Arztbrief. B2 bestanden.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "Keine",
+      "socialHistory": "Arzt aus Syrien, 3 Jahre in DE, Assistenzarzt"
+    },
+    "doctorTasks": [
+      "Nach spezifischen Ängsten fragen",
+      "Prüfungsstruktur besprechen",
+      "Tipps geben",
+      "Übungsstrategien empfehlen"
+    ],
+    "mustAsk": [
+      "Welcher Teil macht Sorgen?",
+      "Probeprüfungen gemacht?",
+      "Schwachpunkt?"
+    ],
+    "redFlags": [
+      "Nervosität kann Leistung beeinträchtigen"
+    ],
+    "usefulPhrases": [
+      "Die Prüfung prüft Kommunikation.",
+      "Üben Sie mit Kollegen."
+    ],
+    "doctorToDoctorSummary": "42-jähriger Kollege mit Prüfungsangst. Unsicher bei Anamnese und Arztbrief.",
+    "scoringRubric": {
+      "historyTaking": "Gezielt",
+      "redFlags": "Keine medizinischen Probleme",
+      "patientLanguage": "Unterstützend",
+      "structure": "Angst->Analyse->Lösungen",
+      "medicalLogic": "Angemessen"
+    },
+    "tags": [
+      "pruefungsangst",
+      "vorbereitung",
+      "strategie"
+    ],
+    "conceptId": "fsp.case.102",
+    "taughtInLessonId": "fsp_l_002",
+    "requiredConcepts": [
+      "fsp.orientation.strategy"
+    ]
+  },
+  {
+    "id": "fsp_c_103",
+    "title": "Sprachbarriere in der Anamnese",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "55",
+      "gender": "männlich",
+      "chiefComplaint": "Bauchschmerzen seit 1 Woche",
+      "history": "Gebrochenes Deutsch. Versteht Fachbegriffe nicht. Nervös.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Unbekannt",
+      "socialHistory": "Flüchtling, Gemeinschaftsunterkunft"
+    },
+    "doctorTasks": [
+      "Langsam und freundlich begrüßen",
+      "Zeit geben",
+      "Einfache Sprache + Gestik",
+      "Verständnis prüfen"
+    ],
+    "mustAsk": [
+      "Wo tut es weh? (Zeigen)",
+      "Seit wann?",
+      "Verstehen Sie? (Bitte wiederholen)"
+    ],
+    "redFlags": [
+      "Sprachbarriere erschwert Anamnese"
+    ],
+    "usefulPhrases": [
+      "Keine Sorge, wir haben Zeit.",
+      "Zeigen Sie bitte."
+    ],
+    "doctorToDoctorSummary": "55-jähriger Patient, Sprachbarriere. Bauchschmerzen. Bildgestützte Befragung.",
+    "scoringRubric": {
+      "historyTaking": "An Sprachbarriere angepasst",
+      "redFlags": "Akutes Abdomen ausgeschlossen",
+      "patientLanguage": "Einfach",
+      "structure": "Rapport->Fragen->Verständnis",
+      "medicalLogic": "Symptomorientiert"
+    },
+    "tags": [
+      "sprachbarriere",
+      "kultur",
+      "anamnese"
+    ],
+    "conceptId": "fsp.case.103",
+    "taughtInLessonId": "fsp_l_003",
+    "requiredConcepts": [
+      "fsp.rapport.greeting"
+    ]
+  },
+  {
+    "id": "fsp_c_104",
+    "title": "Untersuchungsangst — empathische Führung",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "28",
+      "gender": "weiblich",
+      "chiefComplaint": "Unterleibsschmerzen seit 3 Tagen",
+      "history": "Sehr ängstlich, zittert. Früher schlechte Arzterfahrungen.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Studentin, alleinlebend"
+    },
+    "doctorTasks": [
+      "Zeit für Rapport nehmen",
+      "Frühere Erfahrungen erfragen",
+      "Schritte vorher erklären",
+      "Pause anbieten"
+    ],
+    "mustAsk": [
+      "Schlechte Erfahrungen?",
+      "Darf ich erklären?",
+      "Soll Kollegin dabei sein?"
+    ],
+    "redFlags": [
+      "Angst beeinträchtigt Untersuchung — empathisch vorgehen"
+    ],
+    "usefulPhrases": [
+      "Ich verstehe das.",
+      "Schritt für Schritt.",
+      "Sie können Stopp sagen."
+    ],
+    "doctorToDoctorSummary": "28-jährige Patientin mit Untersuchungsangst bei Unterleibsschmerzen. Empathische Führung.",
+    "scoringRubric": {
+      "historyTaking": "Angst adressiert",
+      "redFlags": "Keine akuten Zeichen",
+      "patientLanguage": "Sehr einfühlsam",
+      "structure": "Rapport->Aufklärung->Untersuchung",
+      "medicalLogic": "Angemessen"
+    },
+    "tags": [
+      "angst",
+      "empathie",
+      "untersuchung"
+    ],
+    "conceptId": "fsp.case.104",
+    "taughtInLessonId": "fsp_l_004",
+    "requiredConcepts": [
+      "fsp.rapport.active.listening",
+      "fsp.rapport.empathy"
+    ]
+  },
+  {
+    "id": "fsp_c_105",
+    "title": "Akuter Brustschmerz — SOCRATES",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "62",
+      "gender": "männlich",
+      "chiefComplaint": "Plötzlicher Brustschmerz vor 30 Min",
+      "history": "Gartenarbeit, plötzlich Druck Brustbein. Ausstrahlung linker Arm. Übelkeit, Schweiß.",
+      "medications": "ASS 100 mg, Metformin",
+      "allergies": "Keine",
+      "pastHistory": "DM Typ 2, Hypertonie",
+      "familyHistory": "Vater Herzinfarkt 60",
+      "socialHistory": "Gärtner, Raucher 30 PY"
+    },
+    "doctorTasks": [
+      "SOCRATES anwenden",
+      "Kardiovaskuläre RF erfragen",
+      "Vitalparameter",
+      "Nächste Schritte erklären"
+    ],
+    "mustAsk": [
+      "Wo? (Site)",
+      "Wann angefangen? (Onset)",
+      "Wie fühlt es sich an? (Character)",
+      "Ausstrahlung? (Radiation)",
+      "Skala 1-10? (Severity)"
+    ],
+    "redFlags": [
+      "Ausstrahlung linker Arm",
+      "Übelkeit, Schweiß",
+      "Rauchen, DM",
+      "Positive Familienanamnese"
+    ],
+    "usefulPhrases": [
+      "Sofort EKG.",
+      "Schmerz könnte vom Herzen kommen.",
+      "Blutabnahme.",
+      "Bitte ruhig liegen."
+    ],
+    "doctorToDoctorSummary": "62-jähriger Patient mit retrosternalem Schmerz, Ausstrahlung Arm, Übelkeit. RF: DM, Hypertonie, Rauchen. V. a. ACS.",
+    "scoringRubric": {
+      "historyTaking": "Vollständige SOCRATES",
+      "redFlags": "Alle kardialen RF erkannt",
+      "patientLanguage": "Klare Kommunikation",
+      "structure": "SOCRATES->RF->nächste Schritte",
+      "medicalLogic": "Korrekt: ACS vermutet"
+    },
+    "tags": [
+      "brustschmerz",
+      "ACS",
+      "notfall",
+      "SOCRATES",
+      "kardial"
+    ],
+    "conceptId": "fsp.case.105",
+    "taughtInLessonId": "fsp_l_005",
+    "requiredConcepts": [
+      "fsp.complaint.socrates"
+    ]
+  },
+  {
+    "id": "fsp_c_106",
+    "title": "Leitsymptom-Dokumentation — Oberbauchschmerz",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "48",
+      "gender": "weiblich",
+      "chiefComplaint": "Oberbauchschmerzen seit 3 Wochen",
+      "history": "Dumpfer Schmerz rechter Oberbauch, nach fettigem Essen. Keine Ausstrahlung. Kein Fieber.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Mutter: Gallensteine",
+      "socialHistory": "Lehrerin, BMI 31"
+    },
+    "doctorTasks": [
+      "Leitsymptom dokumentieren",
+      "Auslöser erfragen",
+      "Begleitsymptome",
+      "Risikofaktoren notieren"
+    ],
+    "mustAsk": [
+      "Bestimmte Speisen?",
+      "Fieber?",
+      "Stuhlgang normal?",
+      "Gelbsucht?"
+    ],
+    "redFlags": [
+      "Fieber/Schüttelfrost = Cholangitis-Verdacht",
+      "Plötzliche Verschlimmerung"
+    ],
+    "usefulPhrases": [
+      "Schmerzen könnten von Gallenblase kommen.",
+      "Ultraschall wird gemacht."
+    ],
+    "doctorToDoctorSummary": "48-jährige Patientin mit Oberbauchschmerzen postprandial. Kein Fieber. V. a. Cholelithiasis.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Korrekt erkannt",
+      "patientLanguage": "Klar",
+      "structure": "Symptom->Auslöser->Begleit-S->RF",
+      "medicalLogic": "Korrekte DD Gallenblase"
+    },
+    "tags": [
+      "bauchschmerz",
+      "gallenblase",
+      "dokumentation"
+    ],
+    "conceptId": "fsp.case.106",
+    "taughtInLessonId": "fsp_l_006",
+    "requiredConcepts": [
+      "fsp.complaint.documentation"
+    ]
+  },
+  {
+    "id": "fsp_c_107",
+    "title": "Chronische Rückenschmerzen — OPQRST",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "52",
+      "gender": "männlich",
+      "chiefComplaint": "Rückenschmerzen seit 8 Wochen",
+      "history": "Schmerzen unterer Rücken, Ausstrahlung rechtes Bein, Kribbeln Fuß. Sitzen schlimmer.",
+      "medications": "Ibuprofen 400 mg Bedarf",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "LKW-Fahrer, viel Sitzen"
+    },
+    "doctorTasks": [
+      "OPQRST anwenden",
+      "Ausstrahlung/Sensibilität erfragen",
+      "Besserung/Verschlechterung",
+      "Berufsanamnese"
+    ],
+    "mustAsk": [
+      "Wann angefangen? (Onset)",
+      "Besser/schlimmer? (Provocation)",
+      "Schmerzart? (Quality)",
+      "Ausstrahlung? (Radiation)",
+      "Taubheitsgefühl?",
+      "Blasen-/Mastdarmstörung?"
+    ],
+    "redFlags": [
+      "Cauda-equina-Syndrom",
+      "Progressives motorisches Defizit"
+    ],
+    "usefulPhrases": [
+      "Ursache eingrenzen.",
+      "Neurologische Untersuchung.",
+      "Überweisung Orthopäde."
+    ],
+    "doctorToDoctorSummary": "52-jähriger Patient mit lumbalem Schmerz, Ausstrahlung Bein. V. a. Bandscheibenvorfall L4/L5.",
+    "scoringRubric": {
+      "historyTaking": "Vollständige OPQRST",
+      "redFlags": "Cauda equina erfragt",
+      "patientLanguage": "Klar",
+      "structure": "OPQRST->Neuro->Beruf",
+      "medicalLogic": "Korrekte DD"
+    },
+    "tags": [
+      "rueckenschmerz",
+      "bandscheibe",
+      "OPQRST",
+      "neurologie"
+    ],
+    "conceptId": "fsp.case.107",
+    "taughtInLessonId": "fsp_l_007",
+    "requiredConcepts": [
+      "fsp.pain.characteristics"
+    ]
+  },
+  {
+    "id": "fsp_c_108",
+    "title": "Schmerztherapie bei Kniearthrose",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "74",
+      "gender": "weiblich",
+      "chiefComplaint": "Knieschmerzen, Bewegungseinschränkung",
+      "history": "Jahrelange Kniearthrose. Schlimmer letzte Wochen. Ibuprofen mit Magenschmerzen.",
+      "medications": "Ibuprofen 600 mg Bedarf, Ramipril",
+      "allergies": "Keine",
+      "pastHistory": "Hypertonie, Kniearthrose",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Rentnerin, Tochter hilft"
+    },
+    "doctorTasks": [
+      "Schmerzcharakter und Auslöser",
+      "Therapieerfahrung",
+      "Konservative Optionen",
+      "OP-Optionen",
+      "Vor-/Nachteile"
+    ],
+    "mustAsk": [
+      "Hilft Ibuprofen?",
+      "Magenbeschwerden?",
+      "Physiotherapie versucht?",
+      "Ängste vor OP?"
+    ],
+    "redFlags": [
+      "Aktivierte Arthrose",
+      "Unkontrollierbarer Schmerz"
+    ],
+    "usefulPhrases": [
+      "OP nicht erster Schritt.",
+      "Erst Physiotherapie.",
+      "Magenschonendere Medikamente."
+    ],
+    "doctorToDoctorSummary": "74-jährige Patientin mit Kniearthrose, Ibuprofen-Magenprobleme. Konservativ vs. TEP besprochen.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Aktivierte Arthrose erwogen",
+      "patientLanguage": "Verständlich",
+      "structure": "Schmerz->Therapie->Optionen",
+      "medicalLogic": "Stufentherapie korrekt"
+    },
+    "tags": [
+      "arthrose",
+      "knie",
+      "schmerztherapie",
+      "orthopaedie"
+    ],
+    "conceptId": "fsp.case.108",
+    "taughtInLessonId": "fsp_l_008",
+    "requiredConcepts": [
+      "fsp.pain.triggers"
+    ]
+  },
+  {
+    "id": "fsp_c_109",
+    "title": "Strukturierte Eigenanamnese bei Polymorbidität",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "70",
+      "gender": "männlich",
+      "chiefComplaint": "Routinekontrolle",
+      "history": "DM2 seit 15 J, Z.n. MI 2019, Z.n. CABG 2020, COPD GOLD II. Regelmäßige Kontrolle.",
+      "medications": "Metformin, Ramipril, Bisoprolol, ASS, Simvastatin, Salbutamol",
+      "allergies": "Keine",
+      "pastHistory": "MI, CABG, COPD, DM2, Hypertonie",
+      "familyHistory": "Vater: DM + MI",
+      "socialHistory": "Rentner, Ex-Raucher, lebt mit Ehefrau"
+    },
+    "doctorTasks": [
+      "Strukturierte Eigenanamnese",
+      "Verlauf erfragen",
+      "Compliance prüfen",
+      "Frühere Aufenthalte dokumentieren"
+    ],
+    "mustAsk": [
+      "Allgemeinbefinden?",
+      "Neue Beschwerden?",
+      "Medikamente regelmäßig?",
+      "KH-Aufenthalt?",
+      "Brustschmerz/Atemnot?"
+    ],
+    "redFlags": [
+      "Neue Brustschmerzen/Atemnot",
+      "Gewichtsverlust",
+      "Verschlechterte Belastbarkeit"
+    ],
+    "usefulPhrases": [
+      "Mehrere Erkrankungen gut im Griff.",
+      "Blutzuckertagebuch bitte.",
+      "Heute EKG, Blutdruck, Labor."
+    ],
+    "doctorToDoctorSummary": "70-jähriger Patient mit Mehrfach-Morbidität zur Kontrolle. Keine neuen Symptome.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Aktuelle Symptome erfragt",
+      "patientLanguage": "Klare Zusammenfassung",
+      "structure": "Befinden->Chronologie->Compliance->Check",
+      "medicalLogic": "Vollständig"
+    },
+    "tags": [
+      "eigenanamnese",
+      "chronisch",
+      "polymorbid",
+      "kontrolle"
+    ],
+    "conceptId": "fsp.case.109",
+    "taughtInLessonId": "fsp_l_009",
+    "requiredConcepts": [
+      "fsp.pmh.chronic"
+    ]
+  },
+  {
+    "id": "fsp_c_110",
+    "title": "Erstmanifestation Diabetes Typ 2",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "55",
+      "gender": "männlich",
+      "chiefComplaint": "Durst, häufiges Wasserlassen, Müdigkeit seit 4 Wo",
+      "history": "Polydipsie, Polyurie, Nykturie, Gewichtsverlust 5 kg. Vater hat Diabetes.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "BMI 34, Fettleber",
+      "familyHistory": "Vater: DM2",
+      "socialHistory": "LKW-Fahrer, Raucher 20 PY"
+    },
+    "doctorTasks": [
+      "Diabetes-Symptome erfragen",
+      "Risikofaktoren",
+      "Diagnostik besprechen",
+      "Aufklärung",
+      "Lifestyle-Maßnahmen"
+    ],
+    "mustAsk": [
+      "Nachts zur Toilette?",
+      "Abgenommen?",
+      "Verschwommenes Sehen?",
+      "Kribbeln in Füßen?"
+    ],
+    "redFlags": [
+      "Gewichtsverlust+Polydipsie+Polyurie = klassisch",
+      "Ketoazidose prüfen"
+    ],
+    "usefulPhrases": [
+      "Körper kann Zucker nicht verarbeiten.",
+      "Ernährung + Bewegung helfen."
+    ],
+    "doctorToDoctorSummary": "55-jähriger Patient mit Diabetes-Symptomen. V. a. neu manifestierten DM2.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Ketoazidose erwogen",
+      "patientLanguage": "Gute Aufklärung",
+      "structure": "Symptome->RF->Diagnostik->Aufklärung",
+      "medicalLogic": "Korrekt"
+    },
+    "tags": [
+      "diabetes",
+      "neudiagnose",
+      "stoffwechsel",
+      "adipositas"
+    ],
+    "conceptId": "fsp.case.110",
+    "taughtInLessonId": "fsp_l_010",
+    "requiredConcepts": [
+      "fsp.pmh.chronic",
+      "fsp.pmh.risk.factors"
+    ]
+  },
+  {
+    "id": "fsp_c_111",
+    "title": "Polypharmazie mit Sturz — Medikamentenanamnese",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "82",
+      "gender": "weiblich",
+      "chiefComplaint": "Schwindel, Sturz vor 2 Tagen",
+      "history": "Gestürzt, kein Trauma, aber Schwindel seitdem. 9 Medikamente. Tochter hilft.",
+      "medications": "Ramipril, Bisoprolol, Torasemid, ASS, Simvastatin, Pantoprazol, Metformin, Zopiclon",
+      "allergies": "Keine",
+      "pastHistory": "Hypertonie, DM2, HI NYHA II, KHK, Z.n. TIA 2021",
+      "familyHistory": "Unbekannt",
+      "socialHistory": "Witwe, alleinlebend, Tochter 20 km"
+    },
+    "doctorTasks": [
+      "Medikamentenliste erstellen",
+      "Interaktionen prüfen",
+      "Sturzfördernde Medikamente identifizieren",
+      "Reduktion besprechen"
+    ],
+    "mustAsk": [
+      "Welche Medikamente genau?",
+      "Medikamentenplan?",
+      "Wer hilft?",
+      "Neue Medikamente?"
+    ],
+    "redFlags": [
+      "Sturzrisiko durch Polypharmazie+Zopiclon+Antihypertensiva"
+    ],
+    "usefulPhrases": [
+      "Medikamente gemeinsam durchgehen.",
+      "Einige reduzieren.",
+      "Bitte alle Medikamente mitbringen."
+    ],
+    "doctorToDoctorSummary": "82-jährige Patientin, Sturz bei Polypharmazie. Zopiclon erhöht Sturzrisiko.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig",
+      "redFlags": "Sturzrisiko erkannt",
+      "patientLanguage": "Klare Anweisungen",
+      "structure": "Liste->Interaktionen->Risiko->Reduktion",
+      "medicalLogic": "Korrekt"
+    },
+    "tags": [
+      "polypharmazie",
+      "sturz",
+      "medikament",
+      "geriatrie"
+    ],
+    "conceptId": "fsp.case.111",
+    "taughtInLessonId": "fsp_l_011",
+    "requiredConcepts": [
+      "fsp.medication.reconciliation"
+    ]
+  },
+  {
+    "id": "fsp_c_112",
+    "title": "Anaphylaxie nach Amoxicillin",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "30",
+      "gender": "weiblich",
+      "chiefComplaint": "Ausschlag + Atemnot nach Antibiotikum",
+      "history": "Zahn-OP, Amoxicillin. 30 Min später: Juckreiz, Lippenschwellung, leichte Atemnot.",
+      "medications": "Amoxicillin 1g (1 Dosis)",
+      "allergies": "Bisher keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Mutter: Penicillin-Allergie",
+      "socialHistory": "Büroangestellte"
+    },
+    "doctorTasks": [
+      "Allergieanamnese",
+      "Reaktionsablauf dokumentieren",
+      "Schweregrad klassifizieren",
+      "Allergiepass",
+      "Notfallset"
+    ],
+    "mustAsk": [
+      "Welches Medikament?",
+      "Wann Reaktion?",
+      "Atemnot/Schluckbeschwerden?",
+      "Frühere Reaktionen?"
+    ],
+    "redFlags": [
+      "Atemnot+Lippenschwellung = Anaphylaxie",
+      "Sofortige Therapie"
+    ],
+    "usefulPhrases": [
+      "Allergische Reaktion.",
+      "Wir behandeln sofort.",
+      "Kein Penicillin mehr.",
+      "Allergiepass."
+    ],
+    "doctorToDoctorSummary": "30-jährige Patientin mit anaphylaktischer Reaktion nach Amoxicillin. Allergiepass ausgestellt.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig+Zeitverlauf",
+      "redFlags": "Anaphylaxie korrekt eingestuft",
+      "patientLanguage": "Klare Aufklärung",
+      "structure": "Ablauf->Klassifikation->Therapie->Prävention",
+      "medicalLogic": "Korrekt"
+    },
+    "tags": [
+      "allergie",
+      "anaphylaxie",
+      "antibiotikum",
+      "notfall"
+    ],
+    "conceptId": "fsp.case.112",
+    "taughtInLessonId": "fsp_l_012",
+    "requiredConcepts": [
+      "fsp.allergy.assessment"
+    ]
+  },
+  {
+    "id": "fsp_c_113",
+    "title": "Familienanamnese bei Brustkrebsrisiko",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "38",
+      "gender": "weiblich",
+      "chiefComplaint": "Mutter neu mit Brustkrebs, möchte Risiko abklären",
+      "history": "Mutter 55 mit Brustkrebs. Tante ebenfalls mit 50. Patientin macht sich Sorgen.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Gesund, regelmäßige Vorsorge",
+      "familyHistory": "Mutter: Brustkrebs 55, Tante: Brustkrebs 50",
+      "socialHistory": "Lehrerin, verheiratet, 2 Kinder"
+    },
+    "doctorTasks": [
+      "Familienanamnese strukturiert",
+      "Stammbaum",
+      "Risiko bewerten",
+      "Gentest erklären",
+      "Vorsorgeoptionen"
+    ],
+    "mustAsk": [
+      "Erkrankungen in Familie?",
+      "Alter bei Diagnose?",
+      "Brustkrebs väterliche Seite?",
+      "Gentest bei Mutter?"
+    ],
+    "redFlags": [
+      "Zwei Verwandte mit Brustkrebs, Alter <50. Indikation für genetische Beratung."
+    ],
+    "usefulPhrases": [
+      "Familiengeschichte muss abgeklärt werden.",
+      "Genetische Beratung empfohlen."
+    ],
+    "doctorToDoctorSummary": "38-jährige Patientin, erhöhtes familiäres Brustkrebsrisiko. Genetische Beratung empfohlen.",
+    "scoringRubric": {
+      "historyTaking": "Vollständig mit Stammbaum",
+      "redFlags": "Risikokonstellation erkannt",
+      "patientLanguage": "Einfühlsam",
+      "structure": "Familie->Risiko->Optionen",
+      "medicalLogic": "Korrekte Überweisungsindikation"
+    },
+    "tags": [
+      "familienanamnese",
+      "genetik",
+      "brustkrebs",
+      "risiko"
+    ],
+    "conceptId": "fsp.case.113",
+    "taughtInLessonId": "fsp_l_013",
+    "requiredConcepts": [
+      "fsp.family.genetic.risk"
+    ]
+  },
+  {
+    "id": "fsp_c_114",
+    "title": "Sozialanamnese bei berufsbedingten Rückenschmerzen",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "45",
+      "gender": "männlich",
+      "chiefComplaint": "Rückenschmerzen, Sorge um Arbeitsfähigkeit",
+      "history": "Gerüstbauer, 3 Mo Rückenschmerzen. Kann nicht mehr schwer heben. Angst um Job. Schlechter Schlaf.",
+      "medications": "Ibuprofen 600 mg",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Gerüstbauer, 3 Kinder, Hauptverdiener, Raucher"
+    },
+    "doctorTasks": [
+      "Berufliche Belastung detailliert",
+      "Arbeitsunfähigkeit besprechen",
+      "Soziale Unterstützung",
+      "Psychosoziale Belastung"
+    ],
+    "mustAsk": [
+      "Was genau bei der Arbeit?",
+      "Seit wann AU?",
+      "Wer hilft zu Hause?",
+      "Sorgen um Finanzen?",
+      "Wie schlafen Sie?"
+    ],
+    "redFlags": [
+      "Chronische Schmerzen + Arbeitsplatzverlust-Risiko = psychosoziale Belastung"
+    ],
+    "usefulPhrases": [
+      "Wir finden eine Lösung.",
+      "Möglicherweise Umschulung.",
+      "Physiotherapie + ggf. Psychotherapie."
+    ],
+    "doctorToDoctorSummary": "45-jähriger Gerüstbauer mit Rückenschmerzen und Arbeitsunfähigkeit. Hohe psychosoziale Belastung.",
+    "scoringRubric": {
+      "historyTaking": "Vollständige Sozialanamnese",
+      "redFlags": "Psychosoziale Belastung erkannt",
+      "patientLanguage": "Einfühlsam",
+      "structure": "Beruf->AU->Soziales->Psyche",
+      "medicalLogic": "Ganzheitlich"
+    },
+    "tags": [
+      "sozialanamnese",
+      "beruf",
+      "rueckenschmerz",
+      "psychosozial"
+    ],
+    "conceptId": "fsp.case.114",
+    "taughtInLessonId": "fsp_l_014",
+    "requiredConcepts": [
+      "fsp.social.lifestyle"
+    ]
+  },
+  {
+    "id": "fsp_c_115",
+    "title": "Systematische Anamnese — Review of Systems",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "50",
+      "gender": "männlich",
+      "chiefComplaint": "Allgemeines Unwohlsein, Gewichtsverlust 8 kg in 3 Mo",
+      "history": "Keine genauen Beschwerden, fühlt sich einfach krank. Gewichtsverlust ungewollt. Nachtschweiß.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Keine relevanten",
+      "socialHistory": "Angestellter, Nichtraucher, wenig Alkohol"
+    },
+    "doctorTasks": [
+      "Systematische ROS nach Organsystemen",
+      "Nachtschweiß/Klarifizieren",
+      "Gewichtsverlust erfragen",
+      "Fieber?",
+      "B-Symptomatik"
+    ],
+    "mustAsk": [
+      "Fieber oder Nachtschweiß?",
+      "Appetit?",
+      "Stuhl/Urin verändert?",
+      "Husten?",
+      "Hautveränderungen?",
+      "Gelenkschmerzen?"
+    ],
+    "redFlags": [
+      "B-Symptomatik (Fieber, Nachtschweiß, Gewichtsverlust) = Malignom/Infektion abklären"
+    ],
+    "usefulPhrases": [
+      "Das könnte verschiedene Ursachen haben.",
+      "Wir machen eine gründliche Untersuchung."
+    ],
+    "doctorToDoctorSummary": "50-jähriger Patient mit B-Symptomatik (Gewichtsverlust, Nachtschweiß). ROS erforderlich.",
+    "scoringRubric": {
+      "historyTaking": "Vollständige ROS",
+      "redFlags": "B-Symptomatik erkannt",
+      "patientLanguage": "Klare Kommunikation",
+      "structure": "ROS->B-Symptome->Diagnostik",
+      "medicalLogic": "Korrekt: Malignom/Infektion abklären"
+    },
+    "tags": [
+      "ROS",
+      "B-symptomatik",
+      "gewichtsverlust",
+      "nachtschweiss"
+    ],
+    "conceptId": "fsp.case.115",
+    "taughtInLessonId": "fsp_l_015",
+    "requiredConcepts": [
+      "fsp.ros.systematic"
+    ]
+  },
+  {
+    "id": "fsp_c_116",
+    "title": "Rote Flaggen erkennen — Kopfschmerz mit Alarmzeichen",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "65",
+      "gender": "weiblich",
+      "chiefComplaint": "Plötzlicher heftigster Kopfschmerz (Donnerschlag)",
+      "history": "Vernichtendste Kopfschmerzen ihres Lebens. Vor 2 Stunden beim Bücken plötzlich aufgetreten. Nackensteifigkeit. Einmal erbrochen.",
+      "medications": "Ramipril 5 mg",
+      "allergies": "Keine",
+      "pastHistory": "Hypertonie",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Rentnerin"
+    },
+    "doctorTasks": [
+      "Donnerschlag-Kopfschmerz erkennen",
+      "Nackensteifigkeit prüfen",
+      "Neurologische Untersuchung",
+      "Sofortige Bildgebung veranlassen"
+    ],
+    "mustAsk": [
+      "War der Schmerz plötzlich da?",
+      "Stärkste Kopfschmerzen je?",
+      "Nackensteifigkeit?",
+      "Lichtempfindlichkeit?",
+      "Neurologische Ausfälle?"
+    ],
+    "redFlags": [
+      "Donnerschlag-Kopfschmerz = SAB bis Beweis des Gegenteils",
+      "Sofort cCT + ggf. LP"
+    ],
+    "usefulPhrases": [
+      "Sie haben plötzlich starke Kopfschmerzen bekommen.",
+      "Wir müssen sofort ein CT machen."
+    ],
+    "doctorToDoctorSummary": "65-jährige Patientin mit Donnerschlag-Kopfschmerz, Nackensteifigkeit, Erbrechen. V. a. Subarachnoidalblutung.",
+    "scoringRubric": {
+      "historyTaking": "Fokussiert auf Red Flags",
+      "redFlags": "SAB korrekt erkannt",
+      "patientLanguage": "Dringlich, aber ruhig",
+      "structure": "Symptome->Red Flags->Sofort-Diagnostik",
+      "medicalLogic": "Korrekt: SAB bis Beweis des Gegenteils"
+    },
+    "tags": [
+      "kopfschmerz",
+      "sab",
+      "notfall",
+      "red-flags",
+      "neurologie"
+    ],
+    "conceptId": "fsp.case.116",
+    "taughtInLessonId": "fsp_l_016",
+    "requiredConcepts": [
+      "fsp.red.flags.urgent"
+    ]
+  },
+  {
+    "id": "fsp_c_117",
+    "title": "Kardiale Dekompensation — Leitsymptom Atemnot",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "78",
+      "gender": "männlich",
+      "chiefComplaint": "Zunehmende Atemnot seit 3 Tagen, kann nicht liegen",
+      "history": "Bekannte Herzinsuffizienz. Seit 3 Tagen zunehmende Atemnot, Orthopnoe, nächtliche Dyspnoe. Geschwollene Knöchel. 3 kg Gewichtszunahme in 1 Woche.",
+      "medications": "Ramipril, Bisoprolol, Torasemid, ASS",
+      "allergies": "Keine",
+      "pastHistory": "HI NYHA II-III, KHK, Hypertonie",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Rentner, Ex-Raucher"
+    },
+    "doctorTasks": [
+      "Leitsymptom Atemnot systematisch erfragen",
+      "Orthopnoe/Nächtliche Dyspnoe",
+      "Ödeme/Flüssigkeitsstatus",
+      "Medikamentencompliance prüfen",
+      "Notfalltherapie einleiten"
+    ],
+    "mustAsk": [
+      "Können Sie flach liegen?",
+      "Wie viele Kissen?",
+      "Wachen Sie nachts auf?",
+      "Zugenommen?",
+      "Geschwollene Beine?"
+    ],
+    "redFlags": [
+      "Akute Dekompensation = sofortige i.v.-Diurese + ggf. CPAP",
+      "Orthopnoe + Ödeme + Gewichtszunahme = klassisch"
+    ],
+    "usefulPhrases": [
+      "Sie haben Wasser in der Lunge.",
+      "Wir müssen schnell entwässern.",
+      "Sie kommen auf die Überwachungsstation."
+    ],
+    "doctorToDoctorSummary": "78-jähriger Patient mit kardialer Dekompensation. Orthopnoe, Ödeme, Gewichtszunahme. i.v.-Diurese eingeleitet.",
+    "scoringRubric": {
+      "historyTaking": "Akute Symptome erfasst",
+      "redFlags": "Dekompensation korrekt erkannt",
+      "patientLanguage": "Dringlich, klar",
+      "structure": "Atemnot->Flüssigkeitsstatus->Therapie",
+      "medicalLogic": "Korrekt: sofortige i.v.-Therapie"
+    },
+    "tags": [
+      "atemnot",
+      "herzinsuffizienz",
+      "dekompensation",
+      "notfall",
+      "kardial"
+    ],
+    "conceptId": "fsp.case.117",
+    "taughtInLessonId": "fsp_l_017",
+    "requiredConcepts": [
+      "fsp.specific.emergency.cardiac"
+    ]
+  },
+  {
+    "id": "fsp_c_118",
+    "title": "Akute Halbseitensymptomatik — Schlaganfall-Algorhythmus",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "72",
+      "gender": "weiblich",
+      "chiefComplaint": "Seit 1 Stunde Schwäche rechte Seite, Sprachstörung",
+      "history": "Beim Mittagessen plötzlich hängender Mundwinkel rechts, kann rechten Arm nicht heben. Verwaschene Sprache. Ehemann hat sofort den Notarzt gerufen.",
+      "medications": "Metformin, Atorvastatin",
+      "allergies": "Keine",
+      "pastHistory": "DM Typ 2, Hypercholesterinämie",
+      "familyHistory": "Vater: Schlaganfall mit 70",
+      "socialHistory": "Rentnerin"
+    },
+    "doctorTasks": [
+      "FAST-Schema anwenden",
+      "Symptombeginn exakt dokumentieren",
+      "Letzte Normalität erfragen",
+      "Sofortige Bildgebung veranlassen",
+      "Therapieoptionen (Lyse/Thrombekomie) prüfen"
+    ],
+    "mustAsk": [
+      "Gesicht: Hängt eine Seite? (Face)",
+      "Arm: Können Sie beide Arme heben? (Arms)",
+      "Sprache: Können Sie einen Satz nachsprechen? (Speech)",
+      "Wann genau angefangen? (Time)"
+    ],
+    "redFlags": [
+      "FAST positiv = akuter Schlaganfall",
+      "Zeitfenster <4.5h = Lyse möglich",
+      "Sofort cCT + Gefäßstatus + NIHSS"
+    ],
+    "usefulPhrases": [
+      "Sie haben einen Schlaganfall.",
+      "Wir müssen sofort ein CT machen.",
+      "Jede Minute zählt."
+    ],
+    "doctorToDoctorSummary": "72-jährige Patientin mit akuter Halbseitensymptomatik rechts + Aphasie seit 1h. FAST positiv. Time Window für Lyse gegeben.",
+    "scoringRubric": {
+      "historyTaking": "FAST-konform",
+      "redFlags": "Schlaganfall korrekt erkannt",
+      "patientLanguage": "Schnelle klare Kommunikation",
+      "structure": "FAST->Zeitfenster->Bildgebung->Therapie",
+      "medicalLogic": "Korrekt: Lyse-Fenster prüfen"
+    },
+    "tags": [
+      "schlaganfall",
+      "apoplex",
+      "neurologie",
+      "notfall",
+      "FAST"
+    ],
+    "conceptId": "fsp.case.118",
+    "taughtInLessonId": "fsp_l_018",
+    "requiredConcepts": [
+      "fsp.red.flags.urgent"
+    ]
+  },
+  {
+    "id": "fsp_c_119",
+    "title": "Pädiatrisches Fieber — Anamnese bei Kleinkind",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "2",
+      "gender": "männlich",
+      "chiefComplaint": "Fieber seit 2 Tagen, weint viel, trinkt wenig",
+      "history": "Mutter besorgt: Kind seit 2 Tagen Fieber bis 39.5°C. Trinkt weniger, keine nassen Windeln seit 6h. Weint viel und ist teilnahmslos.",
+      "medications": "Paracetamol-Saft (nicht gut vertragen)",
+      "allergies": "Keine bekannten",
+      "pastHistory": "Gesund, alle Impfungen",
+      "familyHistory": "Unauffällig",
+      "socialHistory": "Eltern besorgt, erstes Kind"
+    },
+    "doctorTasks": [
+      "Altersgerechte Kommunikation mit Kind und Eltern",
+      "Fieberverlauf erfragen",
+      "Trinkmenge/Urin",
+      "Red Flags bei Fieber",
+      "Impfstatus"
+    ],
+    "mustAsk": [
+      "Wie hoch war das Fieber?",
+      "Wie viel trinkt er?",
+      "Wie oft nasse Windeln?",
+      "Ist er weckbar?",
+      "Hatte er schon Fieberkrämpfe?"
+    ],
+    "redFlags": [
+      "Trinkverweigerung + reduzierte Urimenge = Dehydratationsrisiko",
+      "Teilnahmslosigkeit = besorgniserregend"
+    ],
+    "usefulPhrases": [
+      "Wir müssen das Kind untersuchen.",
+      "Bei Fieber viel trinken.",
+      "Wenn er nicht trinkt, müssen wir kommen."
+    ],
+    "doctorToDoctorSummary": "2-jähriges Kind mit Fieber, reduziertem Trinken, wenigen nassen Windeln. Vorsicht bei Dehydratation.",
+    "scoringRubric": {
+      "historyTaking": "Kindgerecht + Eltern einbezogen",
+      "redFlags": "Dehydratation und Teilnahmslosigkeit erkannt",
+      "patientLanguage": "Einfühlsam, an Eltern gerichtet",
+      "structure": "Fieber->Trinkmenge->Red Flags",
+      "medicalLogic": "Korrekte pädiatrische Risikoeinschätzung"
+    },
+    "tags": [
+      "fieber",
+      "kind",
+      "paediatrie",
+      "dehydratation",
+      "impfung"
+    ],
+    "conceptId": "fsp.case.119",
+    "taughtInLessonId": "fsp_l_019",
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ]
+  },
+  {
+    "id": "fsp_c_120",
+    "title": "Depression erkennen — psychosoziale Anamnese",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "34",
+      "gender": "weiblich",
+      "chiefComplaint": "Seit Monaten antriebslos, Schlafstörungen, niedergeschlagen",
+      "history": "Seit etwa 4 Monaten zunehmend antriebslos. Schläft schlecht, wacht früh auf. Keine Freude mehr an Dingen. Konzentrationsprobleme bei der Arbeit. Wenig soziale Kontakte. Suizidgedanken verneint aktuell.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine psychiatrische Vorgeschichte",
+      "familyHistory": "Mutter: Depression",
+      "socialHistory": "Altenpflegerin, alleinlebend, wenig Hobbys, kein Sport"
+    },
+    "doctorTasks": [
+      "Depressionsscreening (PHQ-2/PHQ-9)",
+      "Verlauf der Symptome",
+      "Schlaf/Appetit/Konzentration",
+      "Suizidalität erfragen",
+      "Überweisung Psychotherapie"
+    ],
+    "mustAsk": [
+      "Seit wann fühlen Sie sich so?",
+      "Haben Sie Suizidgedanken?",
+      "Haben Sie schon mal Gedanken gehabt, sich zu verletzen?",
+      "Wie ist der Schlaf?",
+      "Appetit verändert?"
+    ],
+    "redFlags": [
+      "Bei Suizidgedanken = sofortige psychiatrische Vorstellung",
+      "Appetitlosigkeit + Gewichtsverlust = körperliche Ursachen ausschließen"
+    ],
+    "usefulPhrases": [
+      "Das klingt nach einer Depression.",
+      "Das ist eine ernsthafte, aber behandelbare Erkrankung.",
+      "Wir werden Sie überweisen."
+    ],
+    "doctorToDoctorSummary": "34-jährige Patientin mit depressiver Episode: Antriebslosigkeit, Schlafstörungen, Anhedonie. Keine aktuellen Suizidgedanken. Überweisung Psychotherapie + ggf. medikamentöse Therapie.",
+    "scoringRubric": {
+      "historyTaking": "Vollständiges Depressions-Screening",
+      "redFlags": "Suizidalität korrekt erfragt",
+      "patientLanguage": "Einfühlsame Psychoedukation",
+      "structure": "Symptome->Screening->Suizidalität->Therapie",
+      "medicalLogic": "Korrekt: Suizid abfragen, Überweisung einleiten"
+    },
+    "tags": [
+      "depression",
+      "psychiatrie",
+      "suizid",
+      "psychosozial",
+      "pychotherapie"
+    ],
+    "conceptId": "fsp.case.120",
+    "taughtInLessonId": "fsp_l_020",
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ]
+  },
+  {
+    "id": "fsp_c_121",
+    "title": "Asthma-Exazerbation",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "35",
+      "gender": "weiblich",
+      "chiefComplaint": "Akute Atemnot, bekanntes Asthma",
+      "history": "Asthma seit Kindheit. Nach Katzenkontakt pfeifende Atmung. Spray wenig Wirkung.",
+      "medications": "Salbutamol,Budesonid",
+      "allergies": "Katzenhaare,Pollen",
+      "pastHistory": "Asthma,Heuschnupfen",
+      "familyHistory": "Mutter:Asthma",
+      "socialHistory": "Tierarztpraxis"
+    },
+    "doctorTasks": [
+      "Dyspnoe einschätzen",
+      "PEF-Messung",
+      "Spray-Ansprechen",
+      "Schweregrad",
+      "Stufentherapie"
+    ],
+    "mustAsk": [
+      "Asthmaanfall?",
+      "Spray benutzt?",
+      "Sätze sprechen?",
+      "Fieber?"
+    ],
+    "redFlags": [
+      "Satzweise=mittel,Einzelwörter=schwer,Silent chest=lebensbedrohlich"
+    ],
+    "usefulPhrases": [
+      "Bleiben ruhig.",
+      "Langsam ausatmen.",
+      "Sauerstoff+Inhalation."
+    ],
+    "doctorToDoctorSummary": "Asthma-Exazerbation nach Katzenkontakt. Mittelschwer. Therapie eingeleitet.",
+    "scoringRubric": {
+      "historyTaking": "Akut",
+      "redFlags": "Schweregrad korrekt",
+      "patientLanguage": "Beruhigend"
+    },
+    "tags": [
+      "asthma",
+      "notfall"
+    ],
+    "conceptId": "fsp.cases.121",
+    "taughtInLessonId": "fsp_l_021",
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ]
+  },
+  {
+    "id": "fsp_c_122",
+    "title": "Gastroenteritis Kind Dehydratation",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "3",
+      "gender": "maennlich",
+      "chiefComplaint": "Erbrechen+Durchfall 2 Tage",
+      "history": "Durchfall 5-6x/Tag, Erbrechen 3x. Heute 1 nasse Windel. Fieber 38.5.",
+      "medications": "Paracetamol",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "oB",
+      "socialHistory": "Mutter Elternzeit"
+    },
+    "doctorTasks": [
+      "Dehydratationsgrad",
+      "Trinkmenge/Urin",
+      "Red Flags",
+      "Rehydratation",
+      "KH"
+    ],
+    "mustAsk": [
+      "Nasse Windeln?",
+      "Trinkt?",
+      "Traenen beim Weinen?"
+    ],
+    "redFlags": [
+      "<4 nasse Windeln/Tag, keine Traenen = schwere Dehydratation"
+    ],
+    "usefulPhrases": [
+      "Mehr trinken.",
+      "Elektrolytloesung.",
+      "Wenn nicht: KH."
+    ],
+    "doctorToDoctorSummary": "Kind mit GE, Dehydratation. Orale Rehydratation.",
+    "scoringRubric": {
+      "historyTaking": "Kindgerecht",
+      "redFlags": "Dehydratation erkannt",
+      "patientLanguage": "Verstaendlich"
+    },
+    "tags": [
+      "gastroenteritis",
+      "kind"
+    ],
+    "conceptId": "fsp.cases.122",
+    "taughtInLessonId": "fsp_l_022",
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ]
+  },
+  {
+    "id": "fsp_c_123",
+    "title": "Wundkontrolle Hueft-TEP",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "60",
+      "gender": "maennlich",
+      "chiefComplaint": "Wundkontrolle, Roetung+Schwellung",
+      "history": "Z.n. Hueft-TEP vor 10 Tagen. Wunde gerotet, warm, naessend. 37.8C.",
+      "medications": "ASS 100mg,Pantoprazol,Metamizol",
+      "allergies": "Keine",
+      "pastHistory": "Koxarthrose,Hypertonie",
+      "familyHistory": "oB",
+      "socialHistory": "Rentner"
+    },
+    "doctorTasks": [
+      "Wundinspektion",
+      "Infektionszeichen",
+      "Dokumentation",
+      "Antibiotika"
+    ],
+    "mustAsk": [
+      "Wunde schmerzhafter?",
+      "Fieber?",
+      "Eitrig?",
+      "Roetung ausgebreitet?"
+    ],
+    "redFlags": [
+      "Eitrig+Roetung+Fieber=Wundinfektion"
+    ],
+    "usefulPhrases": [
+      "Wunde gereizt.",
+      "Abstrich.",
+      "Vorsorglich Antibiotikum."
+    ],
+    "doctorToDoctorSummary": "Z.n. Hueft-TEP mit lokalen Infektionszeichen.",
+    "scoringRubric": {
+      "historyTaking": "Fokussiert",
+      "redFlags": "Wundinfektion erkannt",
+      "patientLanguage": "Beruhigend"
+    },
+    "tags": [
+      "wundkontrolle",
+      "infektion"
+    ],
+    "conceptId": "fsp.cases.123",
+    "taughtInLessonId": "fsp_l_023",
+    "requiredConcepts": [
+      "fsp.specific.other.procedures"
+    ]
+  },
+  {
+    "id": "fsp_c_124",
+    "title": "Praeoperative Aufklaerung",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "48",
+      "gender": "maennlich",
+      "chiefComplaint": "Leistenhernie, OP-Aufklaerung",
+      "history": "Schwellung rechte Leiste beim Heben. OP empfohlen.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "oB",
+      "socialHistory": "Handwerker,2 Kinder"
+    },
+    "doctorTasks": [
+      "OP-Methode",
+      "Risiken",
+      "Narkose",
+      "Nachsorge",
+      "AU-Dauer"
+    ],
+    "mustAsk": [
+      "Wissen was gemacht wird?",
+      "Schonmal Narkose?",
+      "Blutverdunner?"
+    ],
+    "redFlags": [
+      "Risiken: Blutung,Infektion,Rezidiv,Nerven"
+    ],
+    "usefulPhrases": [
+      "OP Routine.",
+      "2-3 Wo AU.",
+      "Schwer heben 6 Wo."
+    ],
+    "doctorToDoctorSummary": "Leistenhernie, Aufklaerung erfolgt. AU 2-3 Wo.",
+    "scoringRubric": {
+      "historyTaking": "Praeoperativ",
+      "redFlags": "Risiken aufgeklaert",
+      "patientLanguage": "Verstaendlich"
+    },
+    "tags": [
+      "aufklaerung",
+      "hernie"
+    ],
+    "conceptId": "fsp.cases.124",
+    "taughtInLessonId": "fsp_l_024",
+    "requiredConcepts": [
+      "fsp.specific.other.procedures"
+    ]
+  },
+  {
+    "id": "fsp_c_125",
+    "title": "Rueckenschmerz psychosomatisch",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "38",
+      "gender": "weiblich",
+      "chiefComplaint": "Rueckenschmerzen 6 Mo, organisch oB",
+      "history": "MRT,Roentgen oB. Schlimmer bei Stress. Berufsdruck.",
+      "medications": "Ibuprofen",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Vater Bandscheiben",
+      "socialHistory": "Abteilungsleiterin,kein Sport"
+    },
+    "doctorTasks": [
+      "Organische Ursachen bestaetigt",
+      "Psychosoziale Belastung",
+      "Biopsychosoziales Modell",
+      "Multimodal"
+    ],
+    "mustAsk": [
+      "Berufliche Belastung?",
+      "Stimmung?",
+      "Was hilft?"
+    ],
+    "redFlags": [
+      "Chronischer Schmerz >3 Mo ohne Ursache=biopsychosozial"
+    ],
+    "usefulPhrases": [
+      "Keine gefaehrliche Ursache.",
+      "Stress beeinflusst.",
+      "Kombinierte Therapie."
+    ],
+    "doctorToDoctorSummary": "Chronische Rueckenschmerzen ohne organisches Korrelat.",
+    "scoringRubric": {
+      "historyTaking": "Biopsychosozial",
+      "redFlags": "Organisch ausgeschlossen",
+      "patientLanguage": "Validierend"
+    },
+    "tags": [
+      "chronischer-schmerz",
+      "psychosomatisch"
+    ],
+    "conceptId": "fsp.cases.125",
+    "taughtInLessonId": "fsp_l_025",
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ]
+  },
+  {
+    "id": "fsp_c_126",
+    "title": "HWI aeltere Patientin",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "75",
+      "gender": "weiblich",
+      "chiefComplaint": "Brennen Wasserlassen 3 Tage",
+      "history": "Dysurie,Pollakisurie. Kein Fieber. 2 HWI in 6 Mo.",
+      "medications": "Ramipril,ASS",
+      "allergies": "Keine",
+      "pastHistory": "Hypertonie",
+      "familyHistory": "oB",
+      "socialHistory": "Rentnerin,trinkt wenig"
+    },
+    "doctorTasks": [
+      "Symptome",
+      "Urindiagnostik",
+      "Antibiotika",
+      "Rezidivprophylaxe"
+    ],
+    "mustAsk": [
+      "Brennen?",
+      "Fieber?",
+      "Rueckenschmerzen?"
+    ],
+    "redFlags": [
+      "Fieber+Flanken=Pyelonephritis",
+      ">65=komplizierter HWI"
+    ],
+    "usefulPhrases": [
+      "HWI.",
+      "Antibiotikum.",
+      "Viel trinken."
+    ],
+    "doctorToDoctorSummary": "Unkomplizierter HWI. Rezidivprophylaxe.",
+    "scoringRubric": {
+      "historyTaking": "Vollstaendig",
+      "redFlags": "Pyelo ausgeschlossen",
+      "patientLanguage": "Klar"
+    },
+    "tags": [
+      "hwi",
+      "urin"
+    ],
+    "conceptId": "fsp.cases.126",
+    "taughtInLessonId": "fsp_l_026",
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ]
+  },
+  {
+    "id": "fsp_c_127",
+    "title": "Allergische Reaktion",
+    "setting": "emergency",
+    "patientRole": {
+      "age": "22",
+      "gender": "maennlich",
+      "chiefComplaint": "Nach Erdnuss: Kribbeln+Urtikaria",
+      "history": "Erdnussallergie bekannt. 15 Min nach Essen: Kribbeln Mund,Urtikaria.",
+      "medications": "Cetirizin,AI dabei",
+      "allergies": "Erdnuss",
+      "pastHistory": "Ekzem,Asthma",
+      "familyHistory": "Vater Heuschnupfen",
+      "socialHistory": "Student"
+    },
+    "doctorTasks": [
+      "Reaktion klassifizieren",
+      "Zeitverlauf",
+      "Notfallplan"
+    ],
+    "mustAsk": [
+      "Kribbeln?",
+      "Lippen geschwollen?",
+      "Atemnot?"
+    ],
+    "redFlags": [
+      "Kribbeln+Urtikaria=Grad I",
+      "Atemnot=Grad II"
+    ],
+    "usefulPhrases": [
+      "Beginnende Reaktion.",
+      "Alles richtig gemacht.",
+      "AHi+Kortison+AI."
+    ],
+    "doctorToDoctorSummary": "Milde ER nach Erdnuss. Notfallplan besprochen.",
+    "scoringRubric": {
+      "historyTaking": "Allergiefokussiert",
+      "redFlags": "Grad korrekt",
+      "patientLanguage": "Klare Anweisungen"
+    },
+    "tags": [
+      "allergie",
+      "anaphylaxie"
+    ],
+    "conceptId": "fsp.cases.127",
+    "taughtInLessonId": "fsp_l_027",
+    "requiredConcepts": [
+      "fsp.allergy.assessment"
+    ]
+  },
+  {
+    "id": "fsp_c_128",
+    "title": "Hautkrebsscreening",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "55",
+      "gender": "maennlich",
+      "chiefComplaint": "Vorsorge+HK-Screening",
+      "history": "Berufliche UV-Exposition, Sonnenbraende. Viele Muttermale.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "Kein HK",
+      "socialHistory": "Gaertner"
+    },
+    "doctorTasks": [
+      "Hautinspektion",
+      "ABCDE",
+      "UV-Schutz",
+      "Intervall"
+    ],
+    "mustAsk": [
+      "Hautveraenderungen?",
+      "Jucken/Bluten?",
+      "Sonnenbraende?"
+    ],
+    "redFlags": [
+      "ABCDE: Asymmetrie,Begrenzung,Colour,Durchmesser,Entwicklung"
+    ],
+    "usefulPhrases": [
+      "Meist unauffaellig.",
+      "Sonnenschutz wichtig."
+    ],
+    "doctorToDoctorSummary": "Screening unauffaellig. Ein Muttermal kontrolliert.",
+    "scoringRubric": {
+      "historyTaking": "Vorsorge",
+      "redFlags": "Keine suspekt",
+      "patientLanguage": "Klar"
+    },
+    "tags": [
+      "vorsorge",
+      "hautkrebs"
+    ],
+    "conceptId": "fsp.cases.128",
+    "taughtInLessonId": "fsp_l_028",
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ]
+  },
+  {
+    "id": "fsp_c_129",
+    "title": "Tinnitus nach Laerm",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "45",
+      "gender": "maennlich",
+      "chiefComplaint": "Pfeifen Ohr links 2 Wochen",
+      "history": "Nach Konzert (neben Lautsprecher). Kein Schwindel. Belastend.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Gesund",
+      "familyHistory": "oB",
+      "socialHistory": "Buero,kein Gehoerschutz"
+    },
+    "doctorTasks": [
+      "Tinnitus-Charakter",
+      "Begleitsymptome",
+      "Ausloeser",
+      "HNO"
+    ],
+    "mustAsk": [
+      "Pfeifen/Rauschen?",
+      "Seit wann?",
+      "Schwindel?"
+    ],
+    "redFlags": [
+      "Akut <3 Mo gute Prognose",
+      "Einseitig+Hoerverlust=Hoersturz"
+    ],
+    "usefulPhrases": [
+      "Unangenehm, meist voruebergehend.",
+      "Laute vermeiden.",
+      "HNO."
+    ],
+    "doctorToDoctorSummary": "Akuter Tinnitus nach Laerm. HNO-Ueberweisung.",
+    "scoringRubric": {
+      "historyTaking": "Tinnitus-vollstaendig",
+      "redFlags": "Hoersturz ausgeschlossen",
+      "patientLanguage": "Beruhigend"
+    },
+    "tags": [
+      "tinnitus",
+      "hno"
+    ],
+    "conceptId": "fsp.cases.129",
+    "taughtInLessonId": "fsp_l_029",
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ]
+  },
+  {
+    "id": "fsp_c_130",
+    "title": "Schilddruesenknoten",
+    "setting": "clinic",
+    "patientRole": {
+      "age": "52",
+      "gender": "weiblich",
+      "chiefComplaint": "Knoten Hals tastbar, Zufallsbefund",
+      "history": "Beim Schlucken Knoten getastet. Fest, kein Schmerz. SD-Werte oB.",
+      "medications": "Keine",
+      "allergies": "Keine",
+      "pastHistory": "Keine",
+      "familyHistory": "Mutter SD-OP gutartig",
+      "socialHistory": "Lehrerin"
+    },
+    "doctorTasks": [
+      "Knoten-Charakter",
+      "B-Symptome",
+      "SD-Werte",
+      "Sonographie",
+      "TIRADS"
+    ],
+    "mustAsk": [
+      "Wann bemerkt?",
+      "Schmerzen?",
+      "Heiserkeit?",
+      "Gewichtsveraenderung?"
+    ],
+    "redFlags": [
+      "Fest+nicht verschieblich+Heiserkeit=Malignom-Verdacht",
+      "TIRADS 4/5=Punktion"
+    ],
+    "usefulPhrases": [
+      "Meist gutartig.",
+      "Ultraschall.",
+      "Dann Punktion."
+    ],
+    "doctorToDoctorSummary": "Tastbarer SD-Knoten. Sono+TIRADS+Punktion geplant.",
+    "scoringRubric": {
+      "historyTaking": "Strukturierte SD-Anamnese",
+      "redFlags": "Malignom erwogen",
+      "patientLanguage": "Beruhigend"
+    },
+    "tags": [
+      "schilddruese",
+      "knoten"
+    ],
+    "conceptId": "fsp.cases.130",
+    "taughtInLessonId": "fsp_l_030",
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ]
   }
 ]

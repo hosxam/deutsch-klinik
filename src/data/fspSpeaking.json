@@ -1409,5 +1409,860 @@
     ],
     "taughtInLessonId": "fsp_l_010",
     "conceptId": "fsp.speaking.050"
+  },
+  {
+    "id": "fsp_s_051",
+    "task": "Anamnese bei Schwindel",
+    "role": "Hausarzt/-ärztin",
+    "patientCase": "Ein 68-jähriger Patient kommt mit Drehschwindel seit gestern. Bei Kopfbewegungen, Übelkeit. Führen Sie eine strukturierte Anamnese durch.",
+    "expectedAnswerPoints": [
+      "Schwindelart",
+      "Zeitlicher Verlauf",
+      "Auslöser",
+      "Begleitsymptome",
+      "Vorerkrankungen/Medikamente",
+      "Sturzrisiko"
+    ],
+    "usefulPhrases": [
+      "Dreh- oder Schwankschwindel?",
+      "Schlimmer bei Bewegung?",
+      "Übelkeit/Erbrechen?",
+      "Ohrensausen?"
+    ],
+    "rubric": {
+      "historyTaking": "Strukturiert nach Art, Verlauf, Auslöser",
+      "redFlags": "Sturzrisiko erfasst",
+      "patientLanguage": "Verständlich"
+    },
+    "requiredConcepts": [
+      "fsp.complaint.socrates"
+    ],
+    "taughtInLessonId": "fsp_l_011",
+    "conceptId": "fsp.speaking.051"
+  },
+  {
+    "id": "fsp_s_052",
+    "task": "Aufklärung über Bluthochdruck",
+    "role": "Krankenhausarzt/-ärztin",
+    "patientCase": "Ein 45-jähriger Patient mit 170/100 mmHg. Übergewichtig, keine Medikamente. Verunsichert. Klären Sie ihn auf.",
+    "expectedAnswerPoints": [
+      "Befund mitteilen",
+      "Bedeutung erklären",
+      "Risikofaktoren",
+      "Therapie: Lebensstil + ggf. Medikamente",
+      "Ziele"
+    ],
+    "usefulPhrases": [
+      "Ihr Blutdruck ist zu hoch.",
+      "Wir behandeln gut.",
+      "Erst Lebensstil, dann Tabletten."
+    ],
+    "rubric": {
+      "historyTaking": "RF erfasst",
+      "redFlags": "Endorganschäden erwogen",
+      "patientLanguage": "Verständlich, ohne Panik"
+    },
+    "requiredConcepts": [
+      "fsp.pmh.chronic"
+    ],
+    "taughtInLessonId": "fsp_l_012",
+    "conceptId": "fsp.speaking.052"
+  },
+  {
+    "id": "fsp_s_053",
+    "task": "Präoperative Medikamentenanamnese",
+    "role": "Chirurgische Ambulanz",
+    "patientCase": "70-jähriger Patient, morgen Knie-TEP. Vollständige Medikamentenanamnese inkl. Blutverdünner.",
+    "expectedAnswerPoints": [
+      "Medikamentenliste vollständig",
+      "Blutverdünner identifizieren",
+      "Absetzfristen",
+      "Perioperatives Management"
+    ],
+    "usefulPhrases": [
+      "Welche Medikamente?",
+      "Blutverdünner?",
+      "Wann letzte Einnahme?"
+    ],
+    "rubric": {
+      "historyTaking": "Präoperativ vollständig",
+      "redFlags": "Blutverdünner korrekt identifiziert",
+      "patientLanguage": "Klare Anweisungen"
+    },
+    "requiredConcepts": [
+      "fsp.medication.reconciliation"
+    ],
+    "taughtInLessonId": "fsp_l_013",
+    "conceptId": "fsp.speaking.053"
+  },
+  {
+    "id": "fsp_s_054",
+    "task": "Familienanamnese bei Krebsrisiko",
+    "role": "Onkologische Ambulanz",
+    "patientCase": "35-jährige Patientin, Vater Darmkrebs mit 55, Onkel ebenfalls. Sorgen um eigenes Risiko.",
+    "expectedAnswerPoints": [
+      "Strukturierte Familienanamnese",
+      "Stammbaum",
+      "Risikobewertung",
+      "Früherkennung",
+      "Genetische Beratung"
+    ],
+    "usefulPhrases": [
+      "Welche Krebserkrankungen?",
+      "In welchem Alter?",
+      "Gentest beim Vater?"
+    ],
+    "rubric": {
+      "historyTaking": "Vollständig + Stammbaum",
+      "redFlags": "Erhöhtes Risiko erkannt",
+      "patientLanguage": "Empathisch, sachlich"
+    },
+    "requiredConcepts": [
+      "fsp.family.genetic.risk"
+    ],
+    "taughtInLessonId": "fsp_l_014",
+    "conceptId": "fsp.speaking.054"
+  },
+  {
+    "id": "fsp_s_055",
+    "task": "Sozialanamnese bei COPD",
+    "role": "Reha-Klinik",
+    "patientCase": "50-jähriger COPD GOLD II, Bauarbeiter, 35 PY Raucher, 3. Stock kein Fahrstuhl, Familie. Reha-Antrag.",
+    "expectedAnswerPoints": [
+      "Berufliche Situation",
+      "Wohnsituation",
+      "Familie/Unterstützung",
+      "Finanzen",
+      "Rauchen aktuell",
+      "Reha-Ziele"
+    ],
+    "usefulPhrases": [
+      "Beruf?",
+      "Wohnung?",
+      "Hilfe zu Hause?",
+      "Rauchen Sie noch?"
+    ],
+    "rubric": {
+      "historyTaking": "Sozial vollständig",
+      "redFlags": "Berufliche + wohnliche Belastung erkannt",
+      "patientLanguage": "Wertschätzend"
+    },
+    "requiredConcepts": [
+      "fsp.social.lifestyle"
+    ],
+    "taughtInLessonId": "fsp_l_015",
+    "conceptId": "fsp.speaking.055"
+  },
+  {
+    "id": "fsp_s_056",
+    "task": "Review of Systems durchführen",
+    "role": "Allgemeinmedizin",
+    "patientCase": "60-jähriger Patient mit unklarer Müdigkeit seit Wochen. Allgemeinanamnese erfolgt. ROS durchführen.",
+    "expectedAnswerPoints": [
+      "Allgemein: Fieber, Nachtschweiß, Gewicht",
+      "Kardio/pulmonal: Husten, Dyspnoe",
+      "GI: Appetit, Stuhl",
+      "Neuro: Kopfschmerz",
+      "Haut"
+    ],
+    "usefulPhrases": [
+      "Fieber/Nachtschweiß?",
+      "Gewichtsverlust?",
+      "Appetit?",
+      "Husten?",
+      "Hautveränderungen?"
+    ],
+    "rubric": {
+      "historyTaking": "Vollständige ROS",
+      "redFlags": "B-Symptomatik erfasst",
+      "patientLanguage": "Systematische Fragen"
+    },
+    "requiredConcepts": [
+      "fsp.ros.systematic"
+    ],
+    "taughtInLessonId": "fsp_l_016",
+    "conceptId": "fsp.speaking.056"
+  },
+  {
+    "id": "fsp_s_057",
+    "task": "Akute Atemnot bei Asthma",
+    "role": "Notarzt/-ärztin",
+    "patientCase": "30-jähriger Patient mit akuter Atemnot, Giemen, kann nur kurze Sätze. Erstversorgung.",
+    "expectedAnswerPoints": [
+      "Dringlichkeit",
+      "Sauerstoff",
+      "Salbutamol-Inhalation",
+      "Schweregrad",
+      "Kortikosteroide",
+      "Monitoring"
+    ],
+    "usefulPhrases": [
+      "Sätze sprechen?",
+      "Spray benutzt?",
+      "Cortison zu Hause?"
+    ],
+    "rubric": {
+      "historyTaking": "Akut fokussiert",
+      "redFlags": "Lebensbedrohliches Asthma erkannt",
+      "patientLanguage": "Ruhig, direktiv"
+    },
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ],
+    "taughtInLessonId": "fsp_l_017",
+    "conceptId": "fsp.speaking.057"
+  },
+  {
+    "id": "fsp_s_058",
+    "task": "Neurologische Untersuchung Schlaganfall",
+    "role": "Stroke Unit",
+    "patientCase": "75-jährige Patientin V. a. Schlaganfall, Symptome seit 2h. Neurologische Untersuchung.",
+    "expectedAnswerPoints": [
+      "FAST-Test",
+      "NIHSS-Screening",
+      "Hirnnerven",
+      "Motorik/Sensibilität",
+      "Sprache/Kognition"
+    ],
+    "usefulPhrases": [
+      "Bitte lächeln.",
+      "Arme heben.",
+      "Satz nachsprechen."
+    ],
+    "rubric": {
+      "historyTaking": "FAST + NIHSS",
+      "redFlags": "Schlaganfall korrekt, Zeitfenster dokumentiert",
+      "patientLanguage": "Klare Anweisungen"
+    },
+    "requiredConcepts": [
+      "fsp.red.flags.urgent"
+    ],
+    "taughtInLessonId": "fsp_l_018",
+    "conceptId": "fsp.speaking.058"
+  },
+  {
+    "id": "fsp_s_059",
+    "task": "Aufklärung Impfungen Kind",
+    "role": "Kinderarzt/-ärztin",
+    "patientCase": "Mutter mit 4-Monats-Kind zur 2. Impfung. Bedenken wegen Impfreaktionen. Empathisch aufklären.",
+    "expectedAnswerPoints": [
+      "Impfplan erklären",
+      "Krankheitsschutz",
+      "Impfreaktionen",
+      "Nutzen-Risiko",
+      "Nächste Impfung"
+    ],
+    "usefulPhrases": [
+      "Ich verstehe Ihre Bedenken.",
+      "Schützt vor gefährlichen Krankheiten.",
+      "Fieber ist normal und harmlos."
+    ],
+    "rubric": {
+      "historyTaking": "Vorerkrankungen,Allergien, frühere Reaktionen",
+      "redFlags": "Allergien beachtet",
+      "patientLanguage": "Empathisch, evidenzbasiert"
+    },
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ],
+    "taughtInLessonId": "fsp_l_019",
+    "conceptId": "fsp.speaking.059"
+  },
+  {
+    "id": "fsp_s_060",
+    "task": "Psychosoziale Krisenintervention",
+    "role": "Notaufnahme",
+    "patientCase": "22-jähriger nach Suizidversuch, somatisch stabil. Psychisch akut belastet. Erstgespräch.",
+    "expectedAnswerPoints": [
+      "Psychische Verfassung",
+      "Suizidrisiko evaluieren",
+      "Lösungsorientierte Fragen",
+      "Soziales Netz",
+      "Stationäre Behandlung"
+    ],
+    "usefulPhrases": [
+      "Was ist passiert?",
+      "Aktuell Gedanken sich zu verletzen?",
+      "Gibt es Menschen die helfen?"
+    ],
+    "rubric": {
+      "historyTaking": "Suizidalität strukturiert erfragt",
+      "redFlags": "Aktuelles Risiko evaluiert",
+      "patientLanguage": "Ruhig, zugewandt"
+    },
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ],
+    "taughtInLessonId": "fsp_l_020",
+    "conceptId": "fsp.speaking.060"
+  },
+  {
+    "id": "fsp_s_061",
+    "task": "Gastroenterologische Anamnese",
+    "role": "Hausarzt/-ärztin",
+    "patientCase": "35-jähriger mit Oberbauchschmerzen und Sodbrennen seit 4 Wochen, nach Essen, Antazida gelegentlich.",
+    "expectedAnswerPoints": [
+      "Schmerzcharakter,Lokalisation",
+      "Essensabhängigkeit",
+      "Übelkeit,Erbrechen,Sodbrennen",
+      "NSAR?",
+      "Gewichtsveränderung",
+      "Stuhlgang"
+    ],
+    "usefulPhrases": [
+      "Wo genau?",
+      "Nach dem Essen?",
+      "Schmerzmittel?",
+      "Stuhlgang normal?"
+    ],
+    "rubric": {
+      "historyTaking": "GI-vollständig",
+      "redFlags": "Alarmsymptome erfragt",
+      "patientLanguage": "Verständlich"
+    },
+    "requiredConcepts": [
+      "fsp.complaint.socrates"
+    ],
+    "taughtInLessonId": "fsp_l_021",
+    "conceptId": "fsp.speaking.061"
+  },
+  {
+    "id": "fsp_s_062",
+    "task": "Dehydratation Kind aufklären",
+    "role": "Kinderarzt/-ärztin",
+    "patientCase": "2-jähriges Kind mit GE+Fieber. Mutter sorgt sich um Dehydratation.",
+    "expectedAnswerPoints": [
+      "Flüssigkeitsbilanz",
+      "Warnsymptome",
+      "Elektrolytlösung",
+      "Wann Klinik",
+      "Fiebermanagement"
+    ],
+    "usefulPhrases": [
+      "Auf nasse Windeln achten.",
+      "Weniger als 4/Tag = kommen.",
+      "Kleine Schlucke Elektrolyt."
+    ],
+    "rubric": {
+      "historyTaking": "Hydratation erfragt",
+      "redFlags": "WS erklärt",
+      "patientLanguage": "Einfach"
+    },
+    "requiredConcepts": [
+      "fsp.specific.allergic.emergency"
+    ],
+    "taughtInLessonId": "fsp_l_022",
+    "conceptId": "fsp.speaking.062"
+  },
+  {
+    "id": "fsp_s_063",
+    "task": "Wundversorgung erklären",
+    "role": "Chirurgie-Ambulanz",
+    "patientCase": "Patient mit genähter Platzwunde Unterarm, 5 Stiche. Nachsorge erklären.",
+    "expectedAnswerPoints": [
+      "Wundhygiene",
+      "Verbandwechsel",
+      "Wundheilungsdauer",
+      "Infektionszeichen",
+      "Fadenzug-Termin"
+    ],
+    "usefulPhrases": [
+      "Alle 2 Tage neuer Verband.",
+      "48h nicht nass.",
+      "Rötung? Schwellung? Eiter?"
+    ],
+    "rubric": {
+      "historyTaking": "Unfallhergang",
+      "redFlags": "Infektionszeichen erklärt",
+      "patientLanguage": "Schritt für Schritt"
+    },
+    "requiredConcepts": [
+      "fsp.specific.other.procedures"
+    ],
+    "taughtInLessonId": "fsp_l_023",
+    "conceptId": "fsp.speaking.063"
+  },
+  {
+    "id": "fsp_s_064",
+    "task": "Präoperative Aufklärung",
+    "role": "Chirurg/in",
+    "patientCase": "60-jähriger, Leistenhernie-OP. Selbstständig, will AU-Dauer wissen.",
+    "expectedAnswerPoints": [
+      "Diagnose erklären",
+      "OP-Methode",
+      "Risiken",
+      "Narkose",
+      "Nachsorge/AU",
+      "Einwilligung"
+    ],
+    "usefulPhrases": [
+      "laparoskopisch.",
+      "Risiken gering.",
+      "2-3 Wo AU.",
+      "Schwer heben 6 Wo."
+    ],
+    "rubric": {
+      "historyTaking": "Vorerkr./Medis erfragt",
+      "redFlags": "Blutverdünner/Allergien",
+      "patientLanguage": "Verständlich"
+    },
+    "requiredConcepts": [
+      "fsp.specific.other.procedures"
+    ],
+    "taughtInLessonId": "fsp_l_024",
+    "conceptId": "fsp.speaking.064"
+  },
+  {
+    "id": "fsp_s_065",
+    "task": "Chronische Schmerzen biopsychosozial",
+    "role": "Schmerzzentrum",
+    "patientCase": "40-jährige mit chronischen Rückenschmerzen >6 Mo. Alle Untersuchungen oB. Frustriert.",
+    "expectedAnswerPoints": [
+      "Leidensdruck würdigen",
+      "Kein organischer Befund = gute Nachricht",
+      "Schmerz-Stress-Zusammenhang",
+      "Multimodal",
+      "Entspannung"
+    ],
+    "usefulPhrases": [
+      "Das belastet Sie.",
+      "Nichts gefunden = gut.",
+      "Stress verstärkt Schmerz."
+    ],
+    "rubric": {
+      "historyTaking": "Vollständig+psychosozial",
+      "redFlags": "Chronifizierung erkannt",
+      "patientLanguage": "Validierend, klar"
+    },
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ],
+    "taughtInLessonId": "fsp_l_025",
+    "conceptId": "fsp.speaking.065"
+  },
+  {
+    "id": "fsp_s_066",
+    "task": "HWI bei älterer Frau",
+    "role": "Hausarzt/-ärztin",
+    "patientCase": "78-jährige mit Brennen/Harndrang, verwirrt. Tochter dabei.",
+    "expectedAnswerPoints": [
+      "Anamnese über Tochter",
+      "Dysurie,Pollakisurie,Fieber",
+      "Flankenschmerz?",
+      "Verwirrtheit als HWI-Symptom bei Älteren"
+    ],
+    "usefulPhrases": [
+      "Seit wann?",
+      "Fieber?",
+      "Verwirrter als sonst?"
+    ],
+    "rubric": {
+      "historyTaking": "Über Angehörige",
+      "redFlags": "Delir bei HWI erwogen",
+      "patientLanguage": "An Tochter, klar"
+    },
+    "requiredConcepts": [
+      "fsp.medication.reconciliation"
+    ],
+    "taughtInLessonId": "fsp_l_026",
+    "conceptId": "fsp.speaking.066"
+  },
+  {
+    "id": "fsp_s_067",
+    "task": "Notfallplan Allergie",
+    "role": "Allergie-Ambulanz",
+    "patientCase": "20-jähriger mit Anaphylaxie auf Erdnüsse. Notfallset verschreiben + Anwendung erklären.",
+    "expectedAnswerPoints": [
+      "Stufenplan",
+      "Antihistaminikum leicht",
+      "Kortison mittel",
+      "Adrenalin-AI schwer (Atemnot/Kreislauf)",
+      "Pen-Anwendung zeigen",
+      "Allergiepass"
+    ],
+    "usefulPhrases": [
+      "AI fest gegen Oberschenkel.",
+      "Immer Notruf 112."
+    ],
+    "rubric": {
+      "historyTaking": "Auslöser+Reaktionen dokumentiert",
+      "redFlags": "Anaphylaxie-Risiko+Schulungsbedarf",
+      "patientLanguage": "Schritt für Schritt"
+    },
+    "requiredConcepts": [
+      "fsp.allergy.assessment"
+    ],
+    "taughtInLessonId": "fsp_l_027",
+    "conceptId": "fsp.speaking.067"
+  },
+  {
+    "id": "fsp_s_068",
+    "task": "Sonnenschutz+HK-Vorsorge",
+    "role": "Hautarzt/-ärztin",
+    "patientCase": "50-jähriger beruflich viel draußen. Hautkrebsvorsorge + Sonnenschutz.",
+    "expectedAnswerPoints": [
+      "UV-Schutz: Creme,Kleidung,Schatten",
+      "Mittagssonne meiden",
+      "ABCDE-Regel",
+      "Jährliche Kontrolle"
+    ],
+    "usefulPhrases": [
+      "LSF 50.",
+      "11-15 Uhr meiden.",
+      "Haut selbst untersuchen."
+    ],
+    "rubric": {
+      "historyTaking": "Sonnenbrände+Exposition erfasst",
+      "redFlags": "Keine suspekten Läsionen",
+      "patientLanguage": "Freundlich,eindringlich"
+    },
+    "requiredConcepts": [
+      "fsp.red.flags.urgent"
+    ],
+    "taughtInLessonId": "fsp_l_028",
+    "conceptId": "fsp.speaking.068"
+  },
+  {
+    "id": "fsp_s_069",
+    "task": "Fremdkörper Ohr Kind",
+    "role": "HNO-Ambulanz",
+    "patientCase": "Mutter mit 4-jährigem Kind, Perle im Ohr, Schmerzen, unruhig.",
+    "expectedAnswerPoints": [
+      "Fremdkörper lokalisieren",
+      "Kind geduldig untersuchen",
+      "Entfernung+geringe Schmerzen",
+      "Trommelfellverletzung?",
+      "Nachsorge"
+    ],
+    "usefulPhrases": [
+      "Lass mich kurz schauen.",
+      "Perle muss raus.",
+      "Kurzes Ziepen."
+    ],
+    "rubric": {
+      "historyTaking": "Unfallhergang",
+      "redFlags": "Trommelfellverletzung erwogen",
+      "patientLanguage": "Kindgerecht, Mutter einbeziehen"
+    },
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ],
+    "taughtInLessonId": "fsp_l_029",
+    "conceptId": "fsp.speaking.069"
+  },
+  {
+    "id": "fsp_s_070",
+    "task": "Schilddrüsenknoten TIRADS 3",
+    "role": "Endokrinologe/-in",
+    "patientCase": "55-jährige, tastbarer Knoten, Sono TIRADS 3. Bedeutung+Verlauf erklären.",
+    "expectedAnswerPoints": [
+      "Befund mitteilen",
+      "TIRADS einfach",
+      "Meist gutartig",
+      "Kontrollsono 6 Mo",
+      "Feinnadelpunktion bei Wachstum",
+      "Jod"
+    ],
+    "usefulPhrases": [
+      "Sieht gutartig aus.",
+      "Kontrolle in 6 Mo.",
+      "Bei Wachstum punktieren."
+    ],
+    "rubric": {
+      "historyTaking": "SD-Funktion/Symptome",
+      "redFlags": "Heiserkeit/Schluckbeschwerden als WS",
+      "patientLanguage": "Beruhigend, informativ"
+    },
+    "requiredConcepts": [
+      "fsp.specific.other.geriatric"
+    ],
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.speaking.070"
+  },
+  {
+    "id": "fsp_s_071",
+    "task": "Akuter Thoraxschmerz",
+    "role": "Notaufnahme",
+    "patientCase": "55-jähriger retrosternal druckschmerz seit 1h. Blass, schwitzt.",
+    "expectedAnswerPoints": [
+      "SOCRATES komplett",
+      "Kardiale RF",
+      "Begleitsymptome",
+      "EKG",
+      "Nitrogabe"
+    ],
+    "usefulPhrases": [
+      "Wann?",
+      "Ausstrahlung?",
+      "Skala?",
+      "RF: Rauchen?DM?HT?"
+    ],
+    "rubric": {
+      "historyTaking": "Vollständig+kardiale RF",
+      "redFlags": "ACS-Verdacht",
+      "patientLanguage": "Ruhig,schnell"
+    },
+    "requiredConcepts": [
+      "fsp.complaint.socrates"
+    ],
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.speaking.071"
+  },
+  {
+    "id": "fsp_s_072",
+    "task": "Depression bei Älteren",
+    "role": "Geriatrie",
+    "patientCase": "80-jähriger, Frau gestorben vor 6 Mo, antriebslos, isst wenig. Tochter besorgt.",
+    "expectedAnswerPoints": [
+      "Anhedonie,Antrieb,Schlaf,Appetit,Konzentration",
+      "Suizidgedanken",
+      "Depression vs. Trauer vs. Demenz",
+      "Überweisung",
+      "Medikamente?"
+    ],
+    "usefulPhrases": [
+      "Seit wann?",
+      "Freuen Sie sich noch?",
+      "Gedanken nicht mehr leben zu wollen?"
+    ],
+    "rubric": {
+      "historyTaking": "PHQ-2/9 orientiert",
+      "redFlags": "Suizidalität erfragt",
+      "patientLanguage": "Respektvoll, altersgerecht"
+    },
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ],
+    "taughtInLessonId": "fsp_l_032",
+    "conceptId": "fsp.speaking.072"
+  },
+  {
+    "id": "fsp_s_073",
+    "task": "Antikoagulation-Aufklärung",
+    "role": "Hausarzt/-ärztin",
+    "patientCase": "65-jähriger VHF + Z.n. TIA. Hat Angst vor Blutungen. Antikoagulation erklären.",
+    "expectedAnswerPoints": [
+      "Schlaganfallrisiko (CHADS-VASc)",
+      "Antikoagulation als Schutz",
+      "Blutungsrisiko vs. Nutzen",
+      "DOAK vs. Marcumar",
+      "Kontrollen"
+    ],
+    "usefulPhrases": [
+      "Risiko erhöht.",
+      "Blutverdünner senkt Risiko.",
+      "Blutungen selten/harmlos."
+    ],
+    "rubric": {
+      "historyTaking": "Blutungsrisiko,Niere,Sturz",
+      "redFlags": "KI geprüft",
+      "patientLanguage": "Nutzen-Risiko klar"
+    },
+    "requiredConcepts": [
+      "fsp.pmh.chronic"
+    ],
+    "taughtInLessonId": "fsp_l_033",
+    "conceptId": "fsp.speaking.073"
+  },
+  {
+    "id": "fsp_s_074",
+    "task": "Krebsdiagnose mitteilen",
+    "role": "Onkologie",
+    "patientCase": "60-jähriger, Koloskopie: Adenokarzinom Colon sigmoideum Stadium II. Allein.",
+    "expectedAnswerPoints": [
+      "Setting vorbereiten",
+      "Diagnose klar+Pause",
+      "Gefühle zulassen",
+      "Nächste Schritte: Chirurgie+ggf. Chemo",
+      "Hoffnung"
+    ],
+    "usefulPhrases": [
+      "Diagnose: Krebs aber gut behandelbar.",
+      "Früh erkannt.",
+      "Alles dafür tun."
+    ],
+    "rubric": {
+      "historyTaking": "Vorerkr.,soziales Netz",
+      "redFlags": "Psychoonkologie anbieten",
+      "patientLanguage": "Einfühlsam,ehrlich,hoffnungsvoll"
+    },
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ],
+    "taughtInLessonId": "fsp_l_034",
+    "conceptId": "fsp.speaking.074"
+  },
+  {
+    "id": "fsp_s_075",
+    "task": "Sucht-Anamnese Alkohol",
+    "role": "Sucht-Zentrum",
+    "patientCase": "45-jähriger trinkt 1,5-2l Bier/Tag seit 15 Jahren. Will aufhören. Zittern/Schwitzen.",
+    "expectedAnswerPoints": [
+      "Trinkmenge/Typ/Dauer",
+      "Entzugssymptome",
+      "Bisherige Versuche",
+      "CAGE",
+      "Folgeschäden",
+      "Entzug/Reha"
+    ],
+    "usefulPhrases": [
+      "Wie lange?",
+      "Entzugsversuche?",
+      "Zittern ohne Alk?",
+      "Morgens schon getrunken?"
+    ],
+    "rubric": {
+      "historyTaking": "Vollständige Suchtanamnese",
+      "redFlags": "Delir-Risiko erkannt",
+      "patientLanguage": "Nicht wertend"
+    },
+    "requiredConcepts": [
+      "fsp.social.lifestyle"
+    ],
+    "taughtInLessonId": "fsp_l_035",
+    "conceptId": "fsp.speaking.075"
+  },
+  {
+    "id": "fsp_s_076",
+    "task": "HI-Therapieanpassung",
+    "role": "Kardiologie",
+    "patientCase": "72-jähriger trotz Therapie zunehmend Luftnot+geschwollene Knöchel. NYHA II-III.",
+    "expectedAnswerPoints": [
+      "Aktuelle Symptome",
+      "Medikamente+Dosierung",
+      "Gewicht",
+      "Ödeme",
+      "Diuretika erhöhen/stationär"
+    ],
+    "usefulPhrases": [
+      "Wie viel Treppe?",
+      "Gewicht?",
+      "Beine geschwollen?"
+    ],
+    "rubric": {
+      "historyTaking": "Kardial vollständig",
+      "redFlags": "Dekompensation erkannt",
+      "patientLanguage": "Einbeziehend"
+    },
+    "requiredConcepts": [
+      "fsp.pmh.chronic"
+    ],
+    "taughtInLessonId": "fsp_l_036",
+    "conceptId": "fsp.speaking.076"
+  },
+  {
+    "id": "fsp_s_077",
+    "task": "Organspende-Gespräch",
+    "role": "ITS",
+    "patientCase": "30-jähriger hirntot nach SAB. Kein Ausweis. Gespräch mit Angehörigen.",
+    "expectedAnswerPoints": [
+      "Anteilnahme",
+      "Hirntod erklären",
+      "Organspende vorschlagen",
+      "Ablauf",
+      "Kein Druck",
+      "Unterstützung"
+    ],
+    "usefulPhrases": [
+      "Es tut mir leid.",
+      "Hirntod, Herz schlägt durch Maschinen.",
+      "Hätte er Spender sein wollen?"
+    ],
+    "rubric": {
+      "historyTaking": "Keine klassische Anamnese",
+      "redFlags": "Seelsorge anbieten",
+      "patientLanguage": "Behutsam,respektvoll"
+    },
+    "requiredConcepts": [
+      "fsp.social.mental.health"
+    ],
+    "taughtInLessonId": "fsp_l_037",
+    "conceptId": "fsp.speaking.077"
+  },
+  {
+    "id": "fsp_s_078",
+    "task": "Wütender Patient deeskalieren",
+    "role": "Notaufnahme",
+    "patientCase": "Patient wartet 3h in NA, wütend+laut, starke Schmerzen. Deeskalieren.",
+    "expectedAnswerPoints": [
+      "Ruhe bewahren",
+      "Zuhören+Verständnis",
+      "Entschuldigung",
+      "Schmerz anerkennen",
+      "Lösung anbieten"
+    ],
+    "usefulPhrases": [
+      "Verstehe Ihre Wut.",
+      "Leid, dass Sie warten mussten.",
+      "Kümmere mich jetzt."
+    ],
+    "rubric": {
+      "historyTaking": "Schmerz+Dringlichkeit",
+      "redFlags": "Bei Aggression Sicherheit",
+      "patientLanguage": "Ruhig,deeskalierend"
+    },
+    "requiredConcepts": [
+      "fsp.rapport.active.listening"
+    ],
+    "taughtInLessonId": "fsp_l_038",
+    "conceptId": "fsp.speaking.078"
+  },
+  {
+    "id": "fsp_s_079",
+    "task": "Lungenrundherd Zufallsbefund",
+    "role": "Krankenhaus",
+    "patientCase": "CT: 8mm Lungenrundherd bei Raucher. Befund mitteilen + weiteres Vorgehen.",
+    "expectedAnswerPoints": [
+      "Zufallsbefund erklären",
+      "Meist gutartig",
+      "Raucheranamnese",
+      "Verlaufskontrolle vs. Bronchoskopie/Biopsie"
+    ],
+    "usefulPhrases": [
+      "Kleiner Knoten in Lunge.",
+      "Häufig, meist gutartig.",
+      "Müssen abklären."
+    ],
+    "rubric": {
+      "historyTaking": "Rauchen+B-Symptome+Beruf",
+      "redFlags": "Malignom-Verdacht ernst, keine Panik",
+      "patientLanguage": "Ehrlich, ohne Panik"
+    },
+    "requiredConcepts": [
+      "fsp.red.flags.urgent"
+    ],
+    "taughtInLessonId": "fsp_l_039",
+    "conceptId": "fsp.speaking.079"
+  },
+  {
+    "id": "fsp_s_080",
+    "task": "Reha-Abschlussgespräch",
+    "role": "Reha-Klinik",
+    "patientCase": "Patient hat stationäre Reha abgeschlossen. Abschluss+Empfehlungen.",
+    "expectedAnswerPoints": [
+      "Therapieverlauf",
+      "Erfolge",
+      "Bewegung+Sport",
+      "Ernährung",
+      "Medikamente",
+      "Kontrolltermine",
+      "Ansprechpartner"
+    ],
+    "usefulPhrases": [
+      "Viel erreicht.",
+      "Bleiben in Bewegung.",
+      "6 Mo Kontrolle.",
+      "Bei Problemen anrufen."
+    ],
+    "rubric": {
+      "historyTaking": "Verlauf+Soziales",
+      "redFlags": "Rückfall-Risiken benannt",
+      "patientLanguage": "Motivierend,konkret"
+    },
+    "requiredConcepts": [
+      "fsp.social.lifestyle"
+    ],
+    "taughtInLessonId": "fsp_l_040",
+    "conceptId": "fsp.speaking.080"
   }
 ]

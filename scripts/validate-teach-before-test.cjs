@@ -96,6 +96,23 @@ for (const level of VALID_LEVELS) {
   }
 }
 
+// Also index FSP data items for curriculum map cross-referencing
+const fspReading = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspReading.json'), 'utf-8'));
+const fspListening = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspListening.json'), 'utf-8'));
+const fspWriting = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspWriting.json'), 'utf-8'));
+const fspSpeaking = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspSpeaking.json'), 'utf-8'));
+const fspCases = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspCases.json'), 'utf-8'));
+
+for (const item of [...fspCases, ...fspSpeaking, ...fspWriting, ...fspReading, ...fspListening]) {
+  allDataItemsById[item.id] = { ...item, dataLevel: 'FSP', dataKey: 'fsp' };
+  if (item.questions) {
+    for (const q of item.questions) {
+      allDataItemsById[`${item.id}_${q.id}`] = { id: q.id, parentId: item.id, dataLevel: 'FSP', dataKey: 'fsp' };
+      allDataItemsById[q.id] = { id: q.id, parentId: item.id, dataLevel: 'FSP', dataKey: 'fsp' };
+    }
+  }
+}
+
 for (const unit of units) {
   for (const qid of (unit.linkedQuestionIds || [])) {
     if (qid && qid !== 'string' && !allDataItemsById[qid]) {
@@ -112,14 +129,7 @@ for (const unit of units) {
   }
 }
 
-// Load FSP data for cross-referencing
-const fspReading = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspReading.json'), 'utf-8'));
-const fspListening = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspListening.json'), 'utf-8'));
-const fspWriting = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspWriting.json'), 'utf-8'));
-const fspSpeaking = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspSpeaking.json'), 'utf-8'));
-const fspCases = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspCases.json'), 'utf-8'));
-
-// Check reading items
+// Check FSP and main reading items
 for (const level of VALID_LEVELS) {
   for (const item of (reading[level] || [])) {
     const lid = item.lessonId;
