@@ -290,12 +290,16 @@ export default function FlashcardPage() {
     const labels = ['', 'Again', 'Hard', 'Good', 'Easy'];
 
     // Record the answer using the wordRef (base word id, not card-specific id)
+    // Pass cardType and wordText for rich mistake flashcard context
+    const wordText = card.front ? card.front.replace(/^Article of "(.*?)"\?$/, '$1').replace(/^Plural of "(.*?)"\?$/, '$1').split(' (')[0] : card.wordRef;
     recordVocabAnswer(card.wordRef, rating, {
       level: levelFilter !== 'all' ? levelFilter : card.wordRef.split('_')[0],
       userAnswer: rating >= 3 ? 'Knew it' : '[flashcard]',
       correctAnswer: card.back || '',
       translation: card.back,
       topic: 'Vocabulary',
+      cardType: card.cardType,
+      wordText: wordText,
     });
     updateLevelProgress(
       levelFilter !== 'all' ? levelFilter : card.wordRef.split('_')[0],

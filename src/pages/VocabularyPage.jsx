@@ -432,6 +432,9 @@ export default function VocabularyPage() {
       userAnswer: correct ? 'Knew it' : 'Wrong answer',
       correctAnswer: word.translation || word.english || word.word || word.german,
       topic: word.topic || 'Vocabulary',
+      cardType: 'meaning',
+      wordText: word.word || word.german || '',
+      exampleSentence: word.example || '',
     });
     setTimeout(() => {
       if (currentIndex < words.length - 1) {

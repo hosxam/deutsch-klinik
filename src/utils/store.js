@@ -349,24 +349,47 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
     if (!state.incorrectAnswers[level]) {
       state.incorrectAnswers[level] = [];
     }
-    state.incorrectAnswers[level].push({
-      exerciseId,
-      userAnswer,
-      correctAnswer,
-      topic,
-      skill: skill || topic || 'general',
-      date: new Date().toISOString(),
-      // Optional context fields for rich mistake flashcard rendering
-      sourcePrompt: context?.sourcePrompt || null,
-      sourceQuestion: context?.sourceQuestion || null,
-      sourceOptions: context?.sourceOptions || null,
-      sourceSentence: context?.sourceSentence || null,
-      sourceType: context?.sourceType || null,
-      explanation: context?.explanation || null,
-      correctedSentence: context?.correctedSentence || null,
-      sourceItemId: context?.sourceItemId || null,
-      sourceTitle: context?.sourceTitle || null,
-    });
+    // Dedup: if same exerciseId already exists, update latest entry instead of creating duplicate
+    const existingIdx = state.incorrectAnswers[level].findLastIndex(m => m.exerciseId === exerciseId);
+    if (existingIdx >= 0) {
+      state.incorrectAnswers[level][existingIdx] = {
+        exerciseId,
+        userAnswer,
+        correctAnswer,
+        topic,
+        skill: skill || topic || 'general',
+        date: new Date().toISOString(),
+        count: (state.incorrectAnswers[level][existingIdx].count || 1) + 1,
+        sourcePrompt: context?.sourcePrompt || null,
+        sourceQuestion: context?.sourceQuestion || null,
+        sourceOptions: context?.sourceOptions || null,
+        sourceSentence: context?.sourceSentence || null,
+        sourceType: context?.sourceType || null,
+        explanation: context?.explanation || null,
+        correctedSentence: context?.correctedSentence || null,
+        sourceItemId: context?.sourceItemId || null,
+        sourceTitle: context?.sourceTitle || null,
+      };
+    } else {
+      state.incorrectAnswers[level].push({
+        exerciseId,
+        userAnswer,
+        correctAnswer,
+        topic,
+        skill: skill || topic || 'general',
+        date: new Date().toISOString(),
+        // Optional context fields for rich mistake flashcard rendering
+        sourcePrompt: context?.sourcePrompt || null,
+        sourceQuestion: context?.sourceQuestion || null,
+        sourceOptions: context?.sourceOptions || null,
+        sourceSentence: context?.sourceSentence || null,
+        sourceType: context?.sourceType || null,
+        explanation: context?.explanation || null,
+        correctedSentence: context?.correctedSentence || null,
+        sourceItemId: context?.sourceItemId || null,
+        sourceTitle: context?.sourceTitle || null,
+      });
+    }
 
     // Track repeated mistakes
     const mistakeKey = `${level}_${exerciseId}`;
@@ -537,6 +560,12 @@ export function recordVocabAnswer(wordId, rating, meta = {}) {
   state.vocabularyMastery[wordId] = mastery;
   if (!isCorrect) {
     const level = meta.level || String(wordId).split('_')[0] || 'A1';
+    // Pass vocab-specific context for rich mistake flashcard rendering
+    const cardType = meta.cardType || 'meaning';
+    const sourceSentence = meta.exampleSentence || '';
+    const sourceType = cardType === 'article' ? 'article' : cardType === 'plural' ? 'plural' : 'meaning';
+    const sourceTitle = meta.wordText || wordId;
+    const questionPrefix = cardType === 'article' ? 'What is the article of ' : cardType === 'plural' ? 'What is the plural of ' : 'What is the meaning of ';
     recordAnswer(
       level,
       wordId,
@@ -544,7 +573,14 @@ export function recordVocabAnswer(wordId, rating, meta = {}) {
       meta.correctAnswer || meta.translation || meta.english || '',
       meta.topic || 'Vocabulary',
       false,
-      'vocab'
+      'vocab',
+      {
+        sourceQuestion: questionPrefix + sourceTitle,
+        sourceSentence: sourceSentence,
+        sourceType: sourceType,
+        sourceTitle: sourceTitle,
+        sourceItemId: wordId,
+      }
     );
   }
   saveState(state);
