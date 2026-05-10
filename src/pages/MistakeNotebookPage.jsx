@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { buildMistakeCard } from '../utils/buildMistakeCard';
 import {
   getState, getMistakesByLevel, getMistakeNotebookItems, getWeakTopics,
   recordVocabAnswer,
@@ -367,28 +368,81 @@ export default function MistakeNotebookPage() {
             const item = reviewQueue[currentReviewIdx];
             const lvl = item.level;
             const mistake = item.mistake;
+            const card = buildMistakeCard(mistake, lvl);
 
             return (
               <Card key={'review_' + currentReviewIdx + '_' + (mistake.exerciseId || '')} style={{ padding: '16px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                   <LevelBadge level={lvl} size="sm" />
-                  {mistake.skill && <Badge label={mistake.skill} color="#8b5cf6" />}
+                  {card.skill && <Badge label={card.skill} color="#8b5cf6" />}
                 </div>
 
-                {/* Front: what went wrong */}
-                <div style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '12px', lineHeight: '1.5' }}>
-                  {mistake.question || mistake.prompt || 'Mistake review'}
+                {/* Front: what went wrong — rich context */}
+                <div style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '8px', lineHeight: '1.5', whiteSpace: 'pre-wrap' }}>
+                  {card.front.split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line.startsWith('Your answer:') ? (
+                        <span style={{ color: '#ff3355' }}>{line}</span>
+                      ) : line.startsWith('Context missing') ? (
+                        <em style={{ color: 'var(--text-muted)' }}>{line}</em>
+                      ) : (
+                        line
+                      )}
+                      {i < card.front.split('\n').length - 1 && <br />}
+                    </span>
+                  ))}
                 </div>
+
+                {/* Show context-missing fallback for old mistakes */}
+                {card.contextMissing && (
+                  <div style={{
+                    fontSize: '12px', color: 'var(--text-muted)', marginBottom: '8px',
+                    padding: '6px 10px', borderRadius: '6px', backgroundColor: 'rgba(255,255,255,0.03)',
+                    fontStyle: 'italic',
+                  }}>
+                    Context not available for this older mistake. Only the isolated answer was saved.
+                    Future mistakes will include full exercise context.
+                  </div>
+                )}
+
+                {/* Source options for multiple choice */}
+                {card.sourceOptions && Array.isArray(card.sourceOptions) && (
+                  <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap', marginBottom: '8px' }}>
+                    {card.sourceOptions.map((opt, i) => (
+                      <span key={i} style={{
+                        padding: '2px 8px', borderRadius: '4px', fontSize: '12px',
+                        backgroundColor: opt === mistake.correctAnswer
+                          ? 'rgba(59,255,158,0.12)'
+                          : opt === mistake.userAnswer
+                          ? 'rgba(255,51,85,0.12)'
+                          : 'var(--bg-hover)',
+                        color: opt === mistake.correctAnswer
+                          ? '#3bff9e'
+                          : opt === mistake.userAnswer
+                          ? '#ff3355'
+                          : 'var(--text-secondary)',
+                        border: opt === mistake.correctAnswer
+                          ? '1px solid rgba(59,255,158,0.3)'
+                          : opt === mistake.userAnswer
+                          ? '1px solid rgba(255,51,85,0.3)'
+                          : '1px solid var(--border)',
+                      }}>
+                        {opt}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 <div style={{ display: 'flex', gap: '12px', fontSize: '12px', flexWrap: 'wrap', marginBottom: '10px' }}>
                   <span style={{ color: '#ff3355' }}>
-                    Your answer: <strong>{mistake.userAnswer || mistake.wrongAnswer || 'N/A'}</strong>
+                    Your answer: <strong>{card.userAnswer || 'N/A'}</strong>
                   </span>
                   <span style={{ color: '#3bff9e' }}>
-                    Correct: <strong>{mistake.correctAnswer || 'N/A'}</strong>
+                    Correct: <strong>{card.correctAnswer || 'N/A'}</strong>
                   </span>
                 </div>
 
-                {/* Correct answer box */}
+                {/* Correct answer box with explanation */}
                 <div style={{
                   padding: '12px', borderRadius: '8px', marginBottom: '14px',
                   backgroundColor: 'rgba(59,255,158,0.06)', border: '1px solid rgba(59,255,158,0.2)',
@@ -397,7 +451,23 @@ export default function MistakeNotebookPage() {
                   <div style={{ fontWeight: 600, color: '#3bff9e', marginBottom: '4px' }}>
                     Correct answer:
                   </div>
-                  <div>{mistake.correctAnswer || 'N/A'}</div>
+                  <div>{card.correctAnswer || 'N/A'}</div>
+                  {card.correctedSentence && (
+                    <div style={{ marginTop: '8px', padding: '8px 10px', borderRadius: '6px', backgroundColor: 'rgba(59,255,158,0.04)', borderLeft: '3px solid #3bff9e' }}>
+                      <div style={{ fontWeight: 500, fontSize: '11px', color: '#3bff9e', marginBottom: '2px' }}>
+                        Full sentence:
+                      </div>
+                      <div style={{ fontSize: '14px' }}>{card.correctedSentence}</div>
+                    </div>
+                  )}
+                  {card.explanation && (
+                    <div style={{ marginTop: '6px', padding: '6px 10px', borderRadius: '6px', backgroundColor: 'rgba(139,92,246,0.06)', borderLeft: '3px solid #8b5cf6' }}>
+                      <div style={{ fontWeight: 500, fontSize: '11px', color: '#8b5cf6', marginBottom: '2px' }}>
+                        Explanation:
+                      </div>
+                      <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>{card.explanation}</div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Feedback banner */}
@@ -509,8 +579,22 @@ export default function MistakeNotebookPage() {
                           style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}
                         >
                           <div style={{ flex: 1 }}>
-                            <div style={{ fontSize: '13px', color: 'var(--text-primary)', marginBottom: '4px' }}>
-                              {mistake.question || mistake.prompt || 'Question'}
+                            <div style={{ fontSize: '13px', color: 'var(--text-primary)', marginBottom: '4px', lineHeight: '1.5' }}>
+                              {(() => {
+                                const c = buildMistakeCard(mistake, level);
+                                return c.front.split('\n').map((line, li) => (
+                                  <span key={li}>
+                                    {line.startsWith('Your answer:') ? (
+                                      <span style={{ color: '#ff3355' }}>{line}</span>
+                                    ) : line.startsWith('Context missing') ? (
+                                      <em style={{ color: 'var(--text-muted)' }}>{line}</em>
+                                    ) : (
+                                      line
+                                    )}
+                                    {li < c.front.split('\n').length - 1 && <br />}
+                                  </span>
+                                ));
+                              })()}
                             </div>
                             <div style={{ display: 'flex', gap: '12px', fontSize: '12px', flexWrap: 'wrap' }}>
                               <span style={{ color: '#ff3355' }}>
@@ -533,17 +617,74 @@ export default function MistakeNotebookPage() {
 
                         {isExpanded && (
                           <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
-                            {/* Show correct answer as flashcard back */}
-                            <div style={{
-                              padding: '12px', borderRadius: '8px', marginBottom: '10px',
-                              backgroundColor: 'rgba(59,255,158,0.06)', border: '1px solid rgba(59,255,158,0.2)',
-                              fontSize: '0.9rem', color: 'var(--text-primary)',
-                            }}>
-                              <div style={{ fontWeight: 600, color: '#3bff9e', marginBottom: '4px' }}>
-                                Correct answer:
-                              </div>
-                              <div>{mistake.correctAnswer || 'N/A'}</div>
-                            </div>
+                            {/* Build expanded card context */}
+                            {(() => {
+                              const c = buildMistakeCard(mistake, level);
+                              return (
+                                <>
+                                  {/* Show context-missing note */}
+                                  {c.contextMissing && (
+                                    <div style={{
+                                      fontSize: '12px', color: 'var(--text-muted)', marginBottom: '8px',
+                                      padding: '6px 10px', borderRadius: '6px', backgroundColor: 'rgba(255,255,255,0.03)',
+                                      fontStyle: 'italic',
+                                    }}>
+                                      Context not available for this older mistake.
+                                    </div>
+                                  )}
+                                  {/* Source options */}
+                                  {c.sourceOptions && Array.isArray(c.sourceOptions) && (
+                                    <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap', marginBottom: '8px' }}>
+                                      {c.sourceOptions.map((opt, i) => (
+                                        <span key={i} style={{
+                                          padding: '2px 7px', borderRadius: '4px', fontSize: '12px',
+                                          backgroundColor: opt === c.correctAnswer
+                                            ? 'rgba(59,255,158,0.12)'
+                                            : opt === c.userAnswer
+                                            ? 'rgba(255,51,85,0.12)'
+                                            : 'var(--bg-hover)',
+                                          color: opt === c.correctAnswer
+                                            ? '#3bff9e'
+                                            : opt === c.userAnswer
+                                            ? '#ff3355'
+                                            : 'var(--text-secondary)',
+                                          border: '1px solid var(--border)',
+                                        }}>
+                                          {opt}
+                                        </span>
+                                      ))}
+                                    </div>
+                                  )}
+                                  {/* Correct answer box */}
+                                  <div style={{
+                                    padding: '12px', borderRadius: '8px', marginBottom: '10px',
+                                    backgroundColor: 'rgba(59,255,158,0.06)', border: '1px solid rgba(59,255,158,0.2)',
+                                    fontSize: '0.9rem', color: 'var(--text-primary)',
+                                  }}>
+                                    <div style={{ fontWeight: 600, color: '#3bff9e', marginBottom: '4px' }}>
+                                      Correct answer:
+                                    </div>
+                                    <div>{c.correctAnswer || 'N/A'}</div>
+                                    {c.correctedSentence && (
+                                      <div style={{ marginTop: '8px', padding: '8px 10px', borderRadius: '6px', backgroundColor: 'rgba(59,255,158,0.04)', borderLeft: '3px solid #3bff9e' }}>
+                                        <div style={{ fontWeight: 500, fontSize: '11px', color: '#3bff9e', marginBottom: '2px' }}>
+                                          Full sentence:
+                                        </div>
+                                        <div style={{ fontSize: '14px' }}>{c.correctedSentence}</div>
+                                      </div>
+                                    )}
+                                    {c.explanation && (
+                                      <div style={{ marginTop: '6px', padding: '6px 10px', borderRadius: '6px', backgroundColor: 'rgba(139,92,246,0.06)', borderLeft: '3px solid #8b5cf6' }}>
+                                        <div style={{ fontWeight: 500, fontSize: '11px', color: '#8b5cf6', marginBottom: '2px' }}>
+                                          Explanation:
+                                        </div>
+                                        <div style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>{c.explanation}</div>
+                                      </div>
+                                    )}
+                                  </div>
+                                </>
+                              );
+                            })()}
 
                             {/* SM-2 rating buttons */}
                             <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '12px' }}>

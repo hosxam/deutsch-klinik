@@ -59,7 +59,13 @@ export default function ReadingPage() {
       // Record wrong answers as mistakes
       ex.questions.forEach(q => {
         if (answers[q.id] !== q.answer) {
-          recordAnswer(levelId, readingId, answers[q.id] || '', q.answer, 'reading', false, 'reading');
+          recordAnswer(levelId, readingId, answers[q.id] || '', q.answer, 'reading', false, 'reading', {
+            sourceQuestion: q.question || null,
+            sourceOptions: q.options || null,
+            sourceTitle: ex.title || 'Reading',
+            sourceType: q.options ? 'mcq' : 'true-false',
+            sourceItemId: `${readingId}_${q.id}`,
+          });
         }
       });
     }

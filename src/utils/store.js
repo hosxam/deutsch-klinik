@@ -322,7 +322,28 @@ export function getRawCompletedLessons(level) {
 
 // ===== ANSWER TRACKING =====
 
-export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic, isCorrect, skill) {
+/**
+ * Record an answer attempt and track mistakes with optional exercise context.
+ *
+ * @param {string} level - A1/A2/B1/B2/C1
+ * @param {string} exerciseId - unique id for the exercise
+ * @param {string} userAnswer - what the user typed/selected
+ * @param {string} correctAnswer - the correct answer
+ * @param {string} topic - topic label (e.g. 'Articles', 'Reading', 'Vocabulary')
+ * @param {boolean} isCorrect - whether the answer was right
+ * @param {string} skill - skill domain (grammar/reading/listening/writing/speaking/vocab)
+ * @param {object} [context] - optional context for rich mistake flashcard rendering
+ * @param {string} [context.sourcePrompt] - original fill-in-blank sentence or prompt
+ * @param {string} [context.sourceQuestion] - original question text for mcq/etc
+ * @param {string[]} [context.sourceOptions] - available options for multiple choice
+ * @param {string} [context.sourceSentence] - full sentence context
+ * @param {string} [context.sourceType] - exercise type (fill-blank, mcq, article-select, etc.)
+ * @param {string} [context.explanation] - why the correct answer is correct
+ * @param {string} [context.correctedSentence] - full corrected sentence
+ * @param {string} [context.sourceItemId] - original source item ID
+ * @param {string} [context.sourceTitle] - title of the source exercise/reading/listening
+ */
+export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic, isCorrect, skill, context) {
   // Track incorrect answers
   if (!isCorrect) {
     if (!state.incorrectAnswers[level]) {
@@ -335,6 +356,16 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
       topic,
       skill: skill || topic || 'general',
       date: new Date().toISOString(),
+      // Optional context fields for rich mistake flashcard rendering
+      sourcePrompt: context?.sourcePrompt || null,
+      sourceQuestion: context?.sourceQuestion || null,
+      sourceOptions: context?.sourceOptions || null,
+      sourceSentence: context?.sourceSentence || null,
+      sourceType: context?.sourceType || null,
+      explanation: context?.explanation || null,
+      correctedSentence: context?.correctedSentence || null,
+      sourceItemId: context?.sourceItemId || null,
+      sourceTitle: context?.sourceTitle || null,
     });
 
     // Track repeated mistakes
@@ -363,6 +394,15 @@ export function recordAnswer(level, exerciseId, userAnswer, correctAnswer, topic
         skill: skill || topic || 'general',
         date: new Date().toISOString(),
         repeated: state.repeatedMistakes[mistakeKey].count,
+        sourcePrompt: context?.sourcePrompt || null,
+        sourceQuestion: context?.sourceQuestion || null,
+        sourceOptions: context?.sourceOptions || null,
+        sourceSentence: context?.sourceSentence || null,
+        sourceType: context?.sourceType || null,
+        explanation: context?.explanation || null,
+        correctedSentence: context?.correctedSentence || null,
+        sourceItemId: context?.sourceItemId || null,
+        sourceTitle: context?.sourceTitle || null,
       };
     }
 

@@ -640,7 +640,18 @@ export default function DailyMissionPage() {
     const correct = normalizeAnswer(ans) === normalizeAnswer(ex.answer);
     recordGrammarAnswer(ex.id, correct);
     recordPracticeAttempt('grammar', ex.id, { correct });
-    recordAnswer(lvl, ex.id, ans, ex.answer, ex.topic || 'grammar', correct, 'grammar');
+    recordAnswer(lvl, ex.id, ans, ex.answer, ex.topic || 'grammar', correct, 'grammar', {
+      sourcePrompt: ex.prompt || null,
+      sourceQuestion: ex.question || null,
+      sourceOptions: ex.options || null,
+      sourceSentence: ex.sentence || null,
+      sourceType: ex.type || null,
+      explanation: ex.explanation || null,
+      correctedSentence: (ex.prompt && ex.answer)
+        ? ex.prompt.replace(/_{3,}|___|__|_/g, ex.answer)
+        : null,
+      sourceItemId: ex.id,
+    });
     const existing = (state.levels?.[lvl]?.grammar || []).filter((x) => x !== ex.id);
     setLevelProgress(lvl, 'grammar', [ex.id, ...existing]);
     setGr({ userAnswer: ans, answer: ex.answer, correct });
@@ -1013,7 +1024,12 @@ export default function DailyMissionPage() {
         if (wtPassing) {
           completeWriting(lvl, item.id);
         } else {
-          recordAnswer(lvl, item.id, wtText, '', item.title || 'Writing', false, 'writing');
+          recordAnswer(lvl, item.id, wtText, '', item.title || 'Writing', false, 'writing', {
+            sourcePrompt: item.description || item.title || null,
+            sourceTitle: item.title || 'Writing',
+            sourceType: 'writing-correction',
+            sourceItemId: item.id,
+          });
         }
       } else {
         // AI unavailable or failed: record as attempt with score=0
@@ -1136,7 +1152,12 @@ export default function DailyMissionPage() {
         if (spPassing) {
           completeSpeaking(lvl, item.id);
         } else {
-          recordAnswer(lvl, item.id, spText, '', item.title || 'Speaking', false, 'speaking');
+          recordAnswer(lvl, item.id, spText, '', item.title || 'Speaking', false, 'speaking', {
+            sourcePrompt: item.situation || item.description || item.title || null,
+            sourceTitle: item.title || 'Speaking',
+            sourceType: 'speaking-correction',
+            sourceItemId: item.id,
+          });
         }
       } else {
         // AI unavailable: record as attempt with fallback score
@@ -2306,7 +2327,12 @@ export default function DailyMissionPage() {
               .flatMap(item => typeof item === 'string' ? [item] : (item?.wordIds || []));
             setLevelProgress(lvl, 'vocab', [...new Set([...existing, `${lvl}_${current.id}`])]);
             if (rating < 3) {
-              recordAnswer(lvl, `${lvl}_${current.id}`, '[flashcard]', current.word, 'Vocabulary', false, 'vocab');
+              recordAnswer(lvl, `${lvl}_${current.id}`, '[flashcard]', current.word, 'Vocabulary', false, 'vocab', {
+                sourcePrompt: current.word || null,
+                sourceQuestion: current.english || current.translation || null,
+                sourceType: 'vocab-flashcard',
+                sourceItemId: current.id,
+              });
             }
             if (fcIdx + 1 >= fcCards.length) {
               setFcDone(true);

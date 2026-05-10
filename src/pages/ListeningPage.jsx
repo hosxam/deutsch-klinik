@@ -286,7 +286,13 @@ export default function ListeningPage() {
       if (correct) {
         s++;
       } else {
-        recordAnswer(levelId, `${ex.id}_${q.id}`, answers[q.id] || '', q.answer, ex.title || 'Listening', false, 'listening');
+        recordAnswer(levelId, `${ex.id}_${q.id}`, answers[q.id] || '', q.answer, ex.title || 'Listening', false, 'listening', {
+          sourceQuestion: q.question || null,
+          sourceOptions: q.options || null,
+          sourceTitle: ex.title || 'Listening',
+          sourceType: q.options ? 'mcq' : 'fill-blank',
+          sourceItemId: `${ex.id}_${q.id}`,
+        });
       }
     });
     setScore(s);

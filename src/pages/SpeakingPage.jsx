@@ -80,7 +80,15 @@ export default function SpeakingPage() {
       aiResult.correctedTranscript || aiResult.strongerAnswer || 'Review speaking feedback',
       prompt.title || 'Speaking',
       false,
-      'speaking'
+      'speaking',
+      {
+        sourcePrompt: prompt.situation || prompt.description || null,
+        explanation: aiResult.feedback || aiResult.hints?.join('; ') || null,
+        correctedSentence: aiResult.correctedTranscript || null,
+        sourceTitle: prompt.title || 'Speaking',
+        sourceType: 'speaking-correction',
+        sourceItemId: prompt.id,
+      }
     );
   }, [aiResult, levelId, prompt, transcript]);
 
@@ -280,7 +288,15 @@ export default function SpeakingPage() {
           result?.correctedTranscript || result?.strongerAnswer || 'Review speaking feedback',
           prompt.title || 'Speaking',
           false,
-          'speaking'
+          'speaking',
+          {
+            sourcePrompt: prompt.situation || prompt.description || null,
+            explanation: result?.feedback || result?.hints?.join('; ') || null,
+            correctedSentence: result?.correctedTranscript || null,
+            sourceTitle: prompt.title || 'Speaking',
+            sourceType: 'speaking-correction',
+            sourceItemId: prompt.id,
+          }
         );
       }
       // Force re-render to update status colors

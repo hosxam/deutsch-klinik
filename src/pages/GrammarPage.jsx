@@ -208,8 +208,20 @@ export default function GrammarPage() {
     // 2. Track in practiceProgress.js with dueDate scheduling
     recordPracticeAttempt('grammar', ex.id, { correct });
 
-    // 3. Track mistakes for Mistake Notebook
-    recordAnswer(levelId, ex.id, ans, ex.answer, ex.topic || ex.type, correct, 'grammar');
+    // 3. Track mistakes for Mistake Notebook (with context for rich cards)
+    recordAnswer(levelId, ex.id, ans, ex.answer, ex.topic || ex.type, correct, 'grammar', {
+      sourcePrompt: ex.prompt || null,
+      sourceQuestion: ex.question || null,
+      sourceOptions: ex.options || null,
+      sourceSentence: ex.sentence || null,
+      sourceType: ex.type || null,
+      explanation: ex.explanation || null,
+      // Build full corrected sentence if it's a fill-blank or article-select
+      correctedSentence: (ex.prompt && ex.answer)
+        ? ex.prompt.replace(/_{3,}|___|__|_/g, ex.answer)
+        : null,
+      sourceItemId: ex.id,
+    });
 
     // 4. Update level progress
     const existing = getLevelProgress(levelId, 'grammar');

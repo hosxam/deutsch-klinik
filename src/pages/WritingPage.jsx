@@ -72,7 +72,15 @@ export default function WritingPage() {
             m.corrected || 'review needed',
             prompt.title || 'Writing',
             false,
-            'writing'
+            'writing',
+            {
+              sourcePrompt: m.original || prompt.description || prompt.title || null,
+              explanation: m.hint || result.feedback || null,
+              correctedSentence: m.corrected || null,
+              sourceTitle: prompt.title || 'Writing',
+              sourceType: 'writing-correction',
+              sourceItemId: `${prompt.id}_mistake_${wrongIndex}`,
+            }
           );
         });
       }
