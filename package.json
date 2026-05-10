@@ -18,6 +18,7 @@
     "validate-teach-before-test": "node scripts/validate-teach-before-test.cjs",
     "build-pilot-curriculum": "node scripts/build-pilot-curriculum.cjs",
     "validate-fsp-quality": "node scripts/validate-fsp-quality.cjs",
+    "validate-vocab-metadata": "node scripts/validate-vocab-metadata.cjs",
     "test": "vitest run"
   },
   "dependencies": {
