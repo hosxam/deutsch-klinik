@@ -230,6 +230,26 @@ function autoSyncStatusColor(state) {
 }
 
 /** Map Supabase error messages to friendlier text */
+function formatTimeAgo(iso) {
+  if (!iso) return null;
+  try {
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return null;
+    const now = new Date();
+    const diffMs = now - d;
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 1) return 'just now';
+    if (diffMins < 60) return diffMins + 'm ago';
+    const diffHrs = Math.floor(diffMins / 60);
+    if (diffHrs < 24) return diffHrs + 'h ago';
+    const diffDays = Math.floor(diffHrs / 24);
+    if (diffDays < 7) return diffDays + 'd ago';
+    return formatDate(iso);
+  } catch {
+    return null;
+  }
+}
+
 function formatTime(iso) {
   if (!iso) return null;
   try {
@@ -481,6 +501,26 @@ export default function AuthPanel() {
     setMessage('');
   }
 
+  /** Quick fuzzy hash of progress to compare local vs cloud without full JSON diff */
+  function hashProgress(obj) {
+    if (!obj) return 0;
+    const raw = JSON.stringify({ p: obj, _v: 2 });
+    let hash = 0;
+    for (let i = 0; i < raw.length; i++) {
+      const chr = raw.charCodeAt(i);
+      hash = ((hash << 5) - hash) + chr;
+      hash |= 0;
+    }
+    return hash;
+  }
+
+  /**
+   * Check cloud progress and determine sync strategy:
+   * - Cloud exists + local empty: download cloud (never overwrite)
+   * - Cloud exists + local has data: show conflict popup with 3 choices
+   * - No cloud + local has data: auto-upload (first-time sync)
+   * - Neither: nothing to do
+   */
   async function checkCloudProgress(overrideSession) {
     const s = overrideSession || session;
     if (!s?.user?.id) return;
@@ -491,67 +531,90 @@ export default function AuthPanel() {
       .eq('user_id', s.user.id)
       .maybeSingle();
     if (error) {
-      setSyncStatus('Error checking cloud.');
+      setSyncStatus('Error checking cloud: ' + friendlyAuthError(error.message));
       return;
     }
-    if (data) {
+
+    const local = getLocalProgress();
+    const hasLocal = local && Object.keys(local).length > 3;
+    const cloudPayload = data ? (data.payload || data.progress || {}) : null;
+    const hasCloud = cloudPayload && typeof cloudPayload === 'object' && Object.keys(cloudPayload).length > 3;
+
+    // Backup current local state before any sync operation
+    try {
+      if (local) {
+        localStorage.setItem('dk_sync_backup', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          progress: local,
+        }));
+      }
+    } catch { /* best-effort */ }
+
+    if (hasCloud && !hasLocal) {
+      // Case 1: Cloud has data, local is empty/trivial. Download cloud.
       setCloudData(data);
-      const local = getLocalProgress();
-      const hasLocal = local && Object.keys(local).length > 3; // more than default state
-      if (hasLocal) {
-        setConflict({ cloud: data, local });
-        setSyncStatus('Conflict found. Choose what to keep.');
-      } else {
-        // No meaningful local progress - auto-hydrate from cloud
-        setSyncStatus('Loading cloud progress...');
-        setLocalProgress(data.payload || data.progress || {});
-        // Also restore settings if available
-        if (data.settings) {
-          try {
-            Object.entries(data.settings).forEach(([key, val]) => {
-              localStorage.setItem(key, JSON.stringify(val));
-            });
-          } catch { /* best effort */ }
-        }
-        updateState(data.payload || data.progress || {});
-        flash('Cloud progress loaded into app.');
-        setSyncStatus('Cloud progress downloaded and applied.');
-        setSyncMeta({ lastDownloadAt: new Date().toISOString() });
+      setSyncStatus('Loading cloud progress...');
+      setLocalProgress(cloudPayload);
+      if (data.settings) {
+        try {
+          Object.entries(data.settings).forEach(([key, val]) => {
+            localStorage.setItem(key, JSON.stringify(val));
+          });
+        } catch { /* best effort */ }
+      }
+      updateState(cloudPayload);
+      flash('Cloud progress loaded into app.');
+      setSyncStatus('Cloud progress downloaded and applied.');
+      setSyncMeta({ lastDownloadAt: new Date().toISOString() });
+      setSyncMetaState(getSyncMeta());
+    } else if (hasCloud && hasLocal) {
+      // Case 2: Both have data. Show conflict popup.
+      setCloudData(data);
+      setConflict({
+        localHash: hashProgress(local),
+        cloudHash: hashProgress(cloudPayload),
+        localLevel: local.currentLevel || '?',
+        cloudLevel: cloudPayload.currentLevel || '?',
+      });
+      // Backup cloud snapshot locally so user can pick
+      try {
+        localStorage.setItem('dk_cloud_snapshot', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          progress: cloudPayload,
+          settings: data.settings || null,
+        }));
+      } catch { /* best-effort */ }
+      setSyncStatus('Conflict: local and cloud progress differ.');
+    } else if (!hasCloud && hasLocal) {
+      // Case 3: No cloud data, has local. First-time upload.
+      setCloudData(null);
+      const payload = { ...local };
+      try {
+        const onboardingRaw = localStorage.getItem('dk_onboarding');
+        if (onboardingRaw) payload._onboarding = JSON.parse(onboardingRaw);
+      } catch { /* best-effort */ }
+      const { error: uploadError } = await supabase
+        .from('user_progress')
+        .upsert({
+          user_id: s.user.id,
+          current_level: local.currentLevel || 'A1',
+          levels: local.levels || {},
+          payload,
+          settings: getLocalSettings(),
+          profile: getActiveProfile(),
+          updated_at: new Date().toISOString(),
+        }, { onConflict: 'user_id' });
+      if (!uploadError) {
+        setSyncStatus('Local progress uploaded to cloud.');
+        setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'auto' });
         setSyncMetaState(getSyncMeta());
+      } else {
+        setSyncStatus('No cloud progress yet. Could not auto-upload.');
       }
     } else {
+      // Case 4: No data anywhere
       setCloudData(null);
-      const local = getLocalProgress();
-      const hasLocal = local && Object.keys(local).length > 3;
-      if (hasLocal) {
-        // Merge separate onboarding data into payload
-        const payload = { ...local };
-        try {
-          const onboardingRaw = localStorage.getItem('dk_onboarding');
-          if (onboardingRaw) payload._onboarding = JSON.parse(onboardingRaw);
-        } catch { /* best-effort */ }
-        // Auto-upload local progress on first login
-        const { error: uploadError } = await supabase
-          .from('user_progress')
-          .upsert({
-            user_id: s.user.id,
-            current_level: local.currentLevel || 'A1',
-            levels: local.levels || {},
-            payload,
-            settings: getLocalSettings(),
-            profile: getActiveProfile(),
-            updated_at: new Date().toISOString(),
-          }, { onConflict: 'user_id' });
-        if (!uploadError) {
-          setSyncStatus('Local progress uploaded to cloud.');
-          setSyncMeta({ lastUploadAt: new Date().toISOString(), lastUploadType: 'auto' });
-          setSyncMetaState(getSyncMeta());
-        } else {
-          setSyncStatus('No cloud progress yet. Could not auto-upload.');
-        }
-      } else {
-        setSyncStatus('No progress to sync yet.');
-      }
+      setSyncStatus('No progress to sync yet.');
     }
   }
 
@@ -632,16 +695,36 @@ export default function AuthPanel() {
 
   // Conflict resolution actions
   async function handleKeepLocal() {
+    // Backup cloud snapshot before overwriting
+    try {
+      if (cloudData) {
+        localStorage.setItem('dk_cloud_snapshot', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          progress: cloudData.payload || cloudData.progress,
+          settings: cloudData.settings,
+        }));
+      }
+    } catch { /* best-effort */ }
     await handleUpload();
   }
 
   function handleReplaceWithCloud() {
     const cloudPayload = cloudData?.payload || cloudData?.progress;
     if (!cloudPayload) return;
+    // Backup local before overwriting
+    try {
+      const local = getLocalProgress();
+      if (local) {
+        localStorage.setItem('dk_sync_backup', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          progress: local,
+        }));
+      }
+    } catch { /* best-effort */ }
     setLocalProgress(cloudPayload);
     updateState(cloudPayload);
     if (cloudData.settings) setLocalSettings(cloudData.settings);
-    flash('Cloud progress applied.');
+    flash('Cloud progress applied. Local was backed up.');
     setSyncStatus('Using cloud progress locally.');
     setConflict(null);
   }
@@ -650,10 +733,19 @@ export default function AuthPanel() {
     const cloudPayload = cloudData?.payload || cloudData?.progress;
     const local = getLocalProgress();
     const merged = mergeProgress(local, cloudPayload);
+    // Backup local before overwriting
+    try {
+      if (local) {
+        localStorage.setItem('dk_sync_backup', JSON.stringify({
+          timestamp: new Date().toISOString(),
+          progress: local,
+        }));
+      }
+    } catch { /* best-effort */ }
     setLocalProgress(merged);
     updateState(merged);
     if (cloudData.settings) setLocalSettings(cloudData.settings);
-    flash('Progress merged and applied.');
+    flash('Progress merged and applied. Local was backed up.');
     setSyncStatus('Progress merged.');
     setConflict(null);
   }
@@ -745,10 +837,55 @@ export default function AuthPanel() {
           )}
 
           {/* Last synced time */}
-          {autoSyncState === 'idle' && syncMeta?.lastUploadAt && (
+          {!conflict && autoSyncState === 'idle' && syncMeta?.lastUploadAt && (
             <div className="flex items-center gap-1.5 text-xs text-gray-500">
               <CheckCircle size={12} className="text-green-500/70" />
               <span>Last saved: {formatDate(syncMeta.lastUploadAt)}</span>
+            </div>
+          )}
+
+          {/* Conflict resolution banner */}
+          {conflict && (
+            <div className="border border-amber-500/40 rounded-lg p-3 bg-amber-500/10 space-y-3">
+              <div className="flex items-center gap-2 text-amber-300 font-medium text-xs">
+                <AlertTriangle size={16} />
+                <span>Progress conflict detected</span>
+              </div>
+              <p className="text-xs text-gray-300">
+                Your local progress differs from what we have in the cloud.
+                Choose how to proceed:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={handleKeepLocal}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-2 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50"
+                >
+                  {loading ? <Loader2 size={14} className="animate-spin" /> : <Upload size={14} />}
+                  Upload local (keep local)
+                </button>
+                <button
+                  onClick={handleReplaceWithCloud}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-2 text-xs bg-amber-600 hover:bg-amber-500 text-white rounded transition-colors disabled:opacity-50"
+                >
+                  {loading ? <Loader2 size={14} className="animate-spin" /> : <Download size={14} />}
+                  Download cloud (use cloud)
+                </button>
+                <button
+                  onClick={handleMerge}
+                  disabled={loading}
+                  className="flex items-center gap-1 px-3 py-2 text-xs bg-green-700 hover:bg-green-600 text-white rounded transition-colors disabled:opacity-50"
+                >
+                  {loading ? <Loader2 size={14} className="animate-spin" /> : <RefreshCw size={14} />}
+                  Merge both
+                </button>
+              </div>
+              <div className="text-xs text-gray-500 space-y-0.5">
+                <span>Local level: {conflict.localLevel}</span>
+                <span className="mx-2">|</span>
+                <span>Cloud level: {conflict.cloudLevel}</span>
+              </div>
             </div>
           )}
 
@@ -767,45 +904,8 @@ export default function AuthPanel() {
             )}
           </div>
 
-          {/* Conflict resolution */}
-          {conflict && (
-            <div className="border border-yellow-600 bg-yellow-900/20 rounded p-3 space-y-2">
-              <div className="flex items-center gap-1 text-yellow-400 text-xs font-medium">
-                <AlertTriangle size={14} />
-                Cloud and local data differ
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={handleKeepLocal}
-                  disabled={loading}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors"
-                >
-                  <Upload size={14} />
-                  Keep local & upload
-                </button>
-                <button
-                  onClick={handleReplaceWithCloud}
-                  disabled={loading}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-amber-600 hover:bg-amber-500 text-white rounded transition-colors"
-                >
-                  <Download size={14} />
-                  Use cloud data
-                </button>
-                <button
-                  onClick={handleMerge}
-                  disabled={loading}
-                  className="flex items-center gap-1 px-3 py-1.5 text-xs bg-green-700 hover:bg-green-600 text-white rounded transition-colors"
-                >
-                  <CheckCircle size={14} />
-                  Merge both
-                </button>
-              </div>
-            </div>
-          )}
-
           {/* Manual sync buttons */}
-          {!conflict && (
-            <div className="flex flex-wrap gap-2 pt-1">
+          <div className="flex flex-wrap gap-2 pt-1">
               <button
                 onClick={handleUpload}
                 disabled={loading}
@@ -825,7 +925,6 @@ export default function AuthPanel() {
                 </button>
               )}
             </div>
-          )}
 
           {message && <p className="text-xs text-gray-300">{message}</p>}
 

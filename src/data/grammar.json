@@ -1181,23 +1181,6 @@
       "remediationLessonId": "A1_lesson_6"
     },
     {
-      "id": "A1_gr_158",
-      "topic": "Irregular Present Tense",
-      "type": "fill-blank",
-      "prompt": "Ich ___ (lesen) ein Buch.",
-      "answer": "lese",
-      "explanation": "Irregular: lesen - Ich lese (e stays).",
-      "level": "A1",
-      "conceptId": "a1_present_tense_irregular_intro",
-      "taughtInLessonId": "A1_lesson_6",
-      "prerequisiteConceptIds": [
-        "a1_present_tense_regular"
-      ],
-      "difficulty": "review",
-      "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_6"
-    },
-    {
       "id": "A1_gr_159",
       "topic": "Irregular Present Tense",
       "type": "fill-blank",
@@ -1499,21 +1482,6 @@
       "prompt": "___ Sonne (the sun) scheint.",
       "answer": "Die",
       "explanation": "Sonne is feminine, so die is correct.",
-      "level": "A1",
-      "conceptId": "a1_articles_definite",
-      "taughtInLessonId": "A1_lesson_3",
-      "prerequisiteConceptIds": [],
-      "difficulty": "core",
-      "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_3"
-    },
-    {
-      "id": "A1_gr_176",
-      "topic": "Definite Articles",
-      "type": "fill-blank",
-      "prompt": "___ Wasser ist kalt.",
-      "answer": "Das",
-      "explanation": "Wasser is neuter, so das is correct.",
       "level": "A1",
       "conceptId": "a1_articles_definite",
       "taughtInLessonId": "A1_lesson_3",
@@ -2165,23 +2133,6 @@
       "difficulty": "core",
       "skillType": "grammar",
       "remediationLessonId": "A1_lesson_10"
-    },
-    {
-      "id": "A1_gr_211",
-      "topic": "Accusative Case",
-      "type": "fill-blank",
-      "prompt": "Ich sehe ___ (der) Mann.",
-      "answer": "den",
-      "explanation": "Der Mann -> accusative: den Mann.",
-      "level": "A1",
-      "conceptId": "a1_accusative_basics",
-      "taughtInLessonId": "A1_lesson_4",
-      "prerequisiteConceptIds": [
-        "a1_articles_definite"
-      ],
-      "difficulty": "review",
-      "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_4"
     },
     {
       "id": "A1_gr_212",
@@ -5972,29 +5923,6 @@
       "remediationLessonId": "A1_lesson_16"
     },
     {
-      "id": "A1_gr_414",
-      "unit": "Possessive Adjectives",
-      "type": "fill-blank",
-      "prompt": "Das ist ___ (mein) Mutter.",
-      "answer": "meine",
-      "explanation": "Mutter feminine -> meine.",
-      "options": [
-        "meine",
-        "mein",
-        "meinen",
-        "meiner"
-      ],
-      "level": "A1",
-      "topic": "Possessive Adjectives",
-      "lessonId": "A1_lesson_13",
-      "taughtInLessonId": "A1_lesson_13",
-      "conceptId": "a1_possessive_adjectives",
-      "prerequisiteConceptIds": [],
-      "difficulty": "core",
-      "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_13"
-    },
-    {
       "id": "A1_gr_415",
       "unit": "Possessive Adjectives",
       "type": "fill-blank",
@@ -6200,29 +6128,6 @@
       "difficulty": "core",
       "skillType": "grammar",
       "remediationLessonId": "A1_lesson_13"
-    },
-    {
-      "id": "A1_gr_424",
-      "unit": "nicht vs kein",
-      "type": "fill-blank",
-      "prompt": "Ich habe ___ Auto.",
-      "answer": "kein",
-      "explanation": "No article + noun -> kein.",
-      "options": [
-        "kein",
-        "keine",
-        "nicht",
-        "nein"
-      ],
-      "level": "A1",
-      "topic": "nicht vs kein",
-      "lessonId": "A1_lesson_11",
-      "taughtInLessonId": "A1_lesson_11",
-      "conceptId": "a1_negation_nicht_kein",
-      "prerequisiteConceptIds": [],
-      "difficulty": "core",
-      "skillType": "grammar",
-      "remediationLessonId": "A1_lesson_11"
     },
     {
       "id": "A1_gr_425",
