@@ -26,16 +26,36 @@ function getLocalProgress() {
   try {
     const raw = localStorage.getItem(getStoreKey());
     if (!raw) return null;
-    return JSON.parse(raw);
+    const progress = JSON.parse(raw);
+    // Merge separate practice progress key into payload for sync
+    try {
+      const practiceRaw = localStorage.getItem('practiceProgress_v1');
+      if (practiceRaw) {
+        const practiceData = JSON.parse(practiceRaw);
+        if (typeof practiceData === 'object' && Object.keys(practiceData).length > 0) {
+          progress.practiceProgress_v1 = practiceData;
+        }
+      }
+    } catch {}
+    return progress;
   } catch { return null; }
 }
 
 /**
  * Write full app state to localStorage.
+ * Extracts practiceProgress_v1 to its own key if present.
  */
 function setLocalProgress(progress) {
   try {
-    localStorage.setItem(getStoreKey(), JSON.stringify(progress));
+    if (progress && progress.practiceProgress_v1) {
+      try {
+        localStorage.setItem('practiceProgress_v1', JSON.stringify(progress.practiceProgress_v1));
+      } catch {}
+      const { practiceProgress_v1, ...mainState } = progress;
+      localStorage.setItem(getStoreKey(), JSON.stringify(mainState));
+    } else {
+      localStorage.setItem(getStoreKey(), JSON.stringify(progress));
+    }
   } catch { /* best-effort */ }
 }
 
@@ -337,8 +357,8 @@ const RESET_BACKUP_KEY = 'dk_reset_backup';
  */
 export function createProgressBackup(label) {
   try {
-    const raw = localStorage.getItem(getStoreKey());
-    const progress = raw ? JSON.parse(raw) : null;
+    // Use getLocalProgress to capture practiceProgress_v1 from separate key
+    const progress = getLocalProgress();
     const settings = {};
     const settingsKeys = [
       'deutsch_klinik_study_goal',
@@ -492,7 +512,7 @@ export function resetLocalProgress() {
     const key = getStoreKey();
     localStorage.removeItem(key);
 
-    // Clear all known keys
+    // Clear all known keys including practiceProgress_v1
     const keys = [
       'deutsch_klinik_state_default',
       'deutsch_klinik_study_goal',
@@ -505,6 +525,7 @@ export function resetLocalProgress() {
       'dk_active_profile',
       'dk_sync_backup',
       'dk_cloud_snapshot',
+      'practiceProgress_v1',
     ];
     for (const k of keys) {
       try { localStorage.removeItem(k); } catch {}

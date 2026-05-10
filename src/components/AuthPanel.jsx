@@ -36,13 +36,34 @@ function getLocalProgress() {
   try {
     const raw = localStorage.getItem(PROGRESS_KEY());
     if (!raw) return null;
-    return JSON.parse(raw);
+    const progress = JSON.parse(raw);
+    // Merge separate practice progress key into payload for sync
+    try {
+      const practiceRaw = localStorage.getItem('practiceProgress_v1');
+      if (practiceRaw) {
+        const practiceData = JSON.parse(practiceRaw);
+        if (typeof practiceData === 'object' && Object.keys(practiceData).length > 0) {
+          progress.practiceProgress_v1 = practiceData;
+        }
+      }
+    } catch {}
+    return progress;
   } catch { return null; }
 }
 
 function setLocalProgress(progress) {
   try {
-    localStorage.setItem(PROGRESS_KEY(), JSON.stringify(progress));
+    // Extract separate practice progress key before writing main state
+    if (progress && progress.practiceProgress_v1) {
+      try {
+        localStorage.setItem('practiceProgress_v1', JSON.stringify(progress.practiceProgress_v1));
+      } catch {}
+      // Remove from main payload to avoid double-storage (main state doesn't know about it)
+      const { practiceProgress_v1, ...mainState } = progress;
+      localStorage.setItem(PROGRESS_KEY(), JSON.stringify(mainState));
+    } else {
+      localStorage.setItem(PROGRESS_KEY(), JSON.stringify(progress));
+    }
   } catch (e) {
     console.warn('Failed to write local progress.', e);
   }
@@ -89,9 +110,14 @@ function clearSyncMeta() {
 }
 
 function computeSnapshotHash() {
-  const progress = getLocalProgress();
+  const mainProgress = getLocalProgress();
+  let practiceProgress = null;
+  try {
+    const raw = localStorage.getItem('practiceProgress_v1');
+    if (raw) practiceProgress = JSON.parse(raw);
+  } catch {}
   const settings = getLocalSettings();
-  const raw = JSON.stringify({ p: progress, s: settings });
+  const raw = JSON.stringify({ p: mainProgress, pp: practiceProgress, s: settings });
   let hash = 0;
   for (let i = 0; i < raw.length; i++) {
     const chr = raw.charCodeAt(i);
@@ -515,6 +541,14 @@ export default function AuthPanel() {
 
       flash('Cloud progress loaded.');
 
+      // Reload page so all components re-initialize from fresh localStorage.
+      // Without this, components like Dashboard that grab state once via
+      // useState(getState()) would still show old default data.
+      if (!hasLocal) {
+        // Only reload when this is the first download (empty local + existing cloud)
+        setTimeout(() => window.location.reload(), 1000);
+      }
+
     } else if (hasLocal) {
       // No cloud data, has local. First-time upload.
       const payload = { ...localProgress };
@@ -612,11 +646,13 @@ export default function AuthPanel() {
       setLocalSettings(cloudData.settings);
     }
 
-    flash('Cloud progress downloaded and applied.');
+    flash('Cloud progress downloaded. Reloading to apply...');
     setSyncStatus('Cloud progress active. Your progress syncs across devices.');
     setSyncMeta({ lastDownloadAt: new Date().toISOString() });
     setSyncMetaState(getSyncMeta());
     setLoading(false);
+    // Reload so all components re-initialize from fresh localStorage
+    setTimeout(() => window.location.reload(), 1000);
   }
 
   async function handleResetCloud() {
@@ -932,6 +968,49 @@ export default function AuthPanel() {
             <div className="flex items-center gap-1.5 text-xs text-gray-500">
               <Download size={12} className="text-blue-500/70" />
               <span>Last downloaded: {formatDate(syncMeta.lastDownloadAt)}</span>
+            </div>
+          )}
+
+          {/* Debug info */}
+          {cloudData && (
+            <div className="rounded-lg border border-gray-700/50 bg-gray-800/40 p-2.5 text-[10px] leading-relaxed text-gray-400 font-mono">
+              <div className="flex items-center gap-2 text-gray-500 font-medium mb-1">
+                <span>Cloud debug info</span>
+              </div>
+              <div className="grid grid-cols-2 gap-x-3 gap-y-0.5">
+                <span>User:</span>
+                <span className="text-gray-300 truncate">{session.user.email}</span>
+                <span>User ID:</span>
+                <span className="text-gray-300 text-[9px]">{session.user.id?.slice(0, 16)}...</span>
+                <span>Payload size:</span>
+                <span className="text-gray-300">
+                  {cloudData?.payload
+                    ? (new TextEncoder().encode(JSON.stringify(cloudData.payload)).length / 1024).toFixed(1) + ' KB'
+                    : 'N/A'}
+                </span>
+                <span>Payload keys:</span>
+                <span className="text-gray-300">
+                  {cloudData?.payload
+                    ? Object.keys(cloudData.payload).length.toString()
+                    : '0'}
+                </span>
+                <span>Updated at:</span>
+                <span className="text-gray-300">
+                  {cloudData?.updated_at
+                    ? formatDate(cloudData.updated_at)
+                    : 'N/A'}
+                </span>
+                <span>Level:</span>
+                <span className="text-gray-300">
+                  {cloudData?.current_level || 'N/A'}
+                </span>
+                <span>Settings keys:</span>
+                <span className="text-gray-300">
+                  {cloudData?.settings
+                    ? Object.keys(cloudData.settings).length.toString()
+                    : '0'}
+                </span>
+              </div>
             </div>
           )}
 

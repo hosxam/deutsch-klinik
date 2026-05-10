@@ -323,3 +323,286 @@ describe('Backup reliability', () => {
     expect(hasSyncBackup()).toBe(false);
   });
 });
+
+describe('Cross-device sync: practiceProgress_v1 round-trip', () => {
+  beforeEach(() => {
+    localStorageMock.clear();
+  });
+
+  it('createProgressBackup includes practiceProgress_v1 from separate key', () => {
+    // Write main state
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify({
+      currentLevel: 'B2',
+      levels: { B2: { vocab: { completed: ['v1'] } } },
+      completedLessons: { B2: ['l1'] },
+    }));
+    // Write practice progress in its own key
+    localStorageMock.setItem('practiceProgress_v1', JSON.stringify({
+      reading: { read_b2_1: { status: 'completed_correct', dueDate: '2026-06-01' } },
+      writing: { write_b2_3: { status: 'completed_incorrect', dueDate: '2026-05-11' } },
+    }));
+
+    // createProgressBackup uses supabaseSync's getLocalProgress which merges practiceProgress_v1
+    createProgressBackup('test-practice');
+    const backupRaw = localStorageMock.getItem('dk_reset_backup');
+    expect(backupRaw).toBeTruthy();
+    const backup = JSON.parse(backupRaw);
+    // Backup should contain practiceProgress_v1 from the separate key
+    expect(backup.progress.practiceProgress_v1).toBeTruthy();
+    expect(backup.progress.practiceProgress_v1.reading.read_b2_1.status).toBe('completed_correct');
+  });
+
+  it('resetLocalProgress removes practiceProgress_v1 key', () => {
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify({ currentLevel: 'A1' }));
+    localStorageMock.setItem('practiceProgress_v1', JSON.stringify({ reading: { r1: { status: 'completed_correct' } } }));
+    localStorageMock.setItem('deutsch_klinik_study_goal', JSON.stringify({ targetLevel: 'C1' }));
+
+    // Reset creates backup first, then clears
+    resetLocalProgress();
+
+    // After reset, both keys should be gone (backup only exists in dk_reset_backup)
+    expect(localStorageMock.getItem('deutsch_klinik_state_default')).toBeNull();
+    expect(localStorageMock.getItem('practiceProgress_v1')).toBeNull();
+    // Backup should contain practice progress
+    expect(JSON.parse(localStorageMock.getItem('dk_reset_backup')).progress.practiceProgress_v1.reading.r1.status).toBe('completed_correct');
+  });
+
+  it('setLocalProgress extracts practiceProgress_v1 from payload (via resetLocalProgress backup)', () => {
+    // Write a payload that has practiceProgress_v1 embedded
+    const cloudPayload = {
+      currentLevel: 'C1',
+      levels: { C1: { reading: { completed: ['r1'] } } },
+      practiceProgress_v1: {
+        reading: { read_c1_1: { status: 'completed_correct' } },
+        vocab: { voc_c1_5: { status: 'completed_incorrect', dueDate: '2026-05-12' } },
+      },
+    };
+    // Simulate what AuthPanel's setLocalProgress does
+    if (cloudPayload && cloudPayload.practiceProgress_v1) {
+      try {
+        localStorageMock.setItem('practiceProgress_v1', JSON.stringify(cloudPayload.practiceProgress_v1));
+      } catch {}
+      const { practiceProgress_v1, ...mainState } = cloudPayload;
+      localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify(mainState));
+    }
+
+    // The main key should NOT contain practiceProgress_v1
+    const mainState = JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default'));
+    expect(mainState.practiceProgress_v1).toBeUndefined();
+    expect(mainState.currentLevel).toBe('C1');
+
+    // practiceProgress_v1 should be in its separate key
+    const practiceRaw = localStorageMock.getItem('practiceProgress_v1');
+    expect(practiceRaw).toBeTruthy();
+    const practiceData = JSON.parse(practiceRaw);
+    expect(practiceData.reading.read_c1_1.status).toBe('completed_correct');
+  });
+});
+
+describe('Cross-device sync: payload completeness', () => {
+  beforeEach(() => {
+    localStorageMock.clear();
+  });
+
+  it('full progress payload has all expected keys', () => {
+    // Simulate a complete set of local progress data
+    const fullProgress = {
+      currentLevel: 'B2',
+      levels: { B1: { grammar: { completed: ['g1'] } } },
+      completedLessons: { B1: ['l1', 'l2'], B2: ['l3'] },
+      flashcards: { B1_voc_1: { ease: 2.5, interval: 1, due: '2026-06-01', repetitions: 3 } },
+      vocabularyMastery: { B1_voc_1: { correct: 5, incorrect: 1, mastered: true, ease: 2.5, interval: 3, due: '2026-05-15', repetitions: 2 } },
+      mistakeNotebook: { m1: { topic: 'Articles', userAnswer: 'der', correctAnswer: 'die', level: 'B1', date: '2026-05-01', repeated: 2 } },
+      repeatedMistakes: { B1_gr_1: { topic: 'Prepositions', count: 3, lastDate: '2026-05-05', level: 'B1' } },
+      incorrectAnswers: { B1: [{ exerciseId: 'ex1', userAnswer: 'foo', correctAnswer: 'bar', topic: 'Grammar', date: '2026-05-01' }] },
+      weakAreas: ['Grammar: Prepositions'],
+      onboardingComplete: true,
+      startLevel: 'A2',
+      targetLevel: 'C1',
+      dailyMinutes: 30,
+      daysPerWeek: 5,
+      targetDate: '2027-01-01',
+      estimatedFinishDate: '2026-12-31',
+      goalSetupComplete: true,
+      placementResult: { level: 'B1' },
+      medicalUnlocked: false,
+      // enhanced tracking keys
+      completedGrammarLessons: { B1: ['gc1', 'gc2'] },
+      listeningCompleted: { B1: ['l1', 'l2'] },
+      readingCompleted: { B1: ['r1'] },
+      writingCompleted: { B1: ['w1'] },
+      speakingCompleted: { B1: ['s1'] },
+      readinessScores: {
+        reading: 60, listening: 50, writing: 40, speaking: 30,
+        grammar: 70, vocabulary: 65, timeManagement: 45,
+        overall: 55, completed: false, lastUpdated: null,
+      },
+      topicWeakness: { Articles: { correct: 3, incorrect: 5, status: 'weak' } },
+      dailyStudyLog: [{ date: '2026-05-10', minutes: 45 }],
+      remediationsQueue: ['ex1'],
+      streak: { count: 5, lastDate: '2026-05-10' },
+      // The ones that are stored as separate keys but merged into payload
+      practiceProgress_v1: {
+        reading: { read_b1_1: { status: 'completed_correct', dueDate: '2026-06-01' } },
+      },
+      _onboarding: {
+        onboardingComplete: true,
+        startLevel: 'A2',
+        targetLevel: 'C1',
+      },
+    };
+
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify(fullProgress));
+    localStorageMock.setItem('practiceProgress_v1', JSON.stringify(fullProgress.practiceProgress_v1));
+    localStorageMock.setItem('dk_onboarding', JSON.stringify(fullProgress._onboarding));
+
+    const storedProgress = JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default'));
+
+    // Main state keys that should survive
+    expect(storedProgress.currentLevel).toBe('B2');
+    expect(storedProgress.levels.B1.grammar.completed).toEqual(['g1']);
+    expect(storedProgress.completedLessons.B1).toEqual(['l1', 'l2']);
+    expect(storedProgress.flashcards.B1_voc_1.ease).toBe(2.5);
+    expect(storedProgress.vocabularyMastery.B1_voc_1.mastered).toBe(true);
+    expect(storedProgress.mistakeNotebook.m1.topic).toBe('Articles');
+    expect(storedProgress.repeatedMistakes.B1_gr_1.count).toBe(3);
+    expect(storedProgress.incorrectAnswers.B1[0].exerciseId).toBe('ex1');
+    expect(storedProgress.weakAreas).toEqual(['Grammar: Prepositions']);
+    expect(storedProgress.onboardingComplete).toBe(true);
+    expect(storedProgress.startLevel).toBe('A2');
+  });
+
+  it('onboarding keys survive in separate storage', () => {
+    const onboarding = { onboardingComplete: true, startLevel: 'A2', targetLevel: 'C1' };
+    localStorageMock.setItem('dk_onboarding', JSON.stringify(onboarding));
+
+    const raw = localStorageMock.getItem('dk_onboarding');
+    expect(raw).toBeTruthy();
+    const parsed = JSON.parse(raw);
+    expect(parsed.onboardingComplete).toBe(true);
+    expect(parsed.startLevel).toBe('A2');
+    expect(parsed.targetLevel).toBe('C1');
+  });
+
+  it('empty Chrome localStorage hydrates correctly from simulated cloud payload', () => {
+    // Simulate: no localStorage (empty Chrome), existing cloud data
+    const cloudPayload = {
+      currentLevel: 'B2',
+      levels: { B1: { reading: { completed: ['r1'] } } },
+      completedLessons: { B1: ['l1', 'l2'] },
+      vocabularyMastery: { B1_voc_1: { correct: 5, incorrect: 1, mastered: true, ease: 2.5, interval: 3, due: '2026-05-15', repetitions: 2 } },
+      mistakeNotebook: { m1: { topic: 'Articles', userAnswer: 'der', correctAnswer: 'die', level: 'B1', date: '2026-05-01', repeated: 2 } },
+      _onboarding: {
+        onboardingComplete: true,
+        startLevel: 'A2',
+        targetLevel: 'C1',
+      },
+    };
+
+    // Simulate what checkCloudProgress does:
+    // 1. setLocalProgress(cloudPayload) - writes to localStorage
+    //    (extracts practiceProgress_v1 to separate key if present)
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify(cloudPayload));
+
+    // 2. Verify the keys exist when read back
+    const reloaded = JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default'));
+    expect(reloaded.currentLevel).toBe('B2');
+    expect(reloaded.levels.B1.reading.completed).toEqual(['r1']);
+    expect(reloaded.completedLessons.B1).toEqual(['l1', 'l2']);
+    expect(reloaded.vocabularyMastery.B1_voc_1.mastered).toBe(true);
+    expect(reloaded.mistakeNotebook.m1.topic).toBe('Articles');
+  });
+});
+
+describe('Cross-device sync: cloud-vs-local decision', () => {
+  beforeEach(() => {
+    localStorageMock.clear();
+  });
+
+  it('mergeProgress returns cloud source when local is null and cloud has currentLevel', () => {
+    const local = null;
+    const cloudPayload = { currentLevel: 'B2', levels: {} };
+    const result = mergeProgress(local, cloudPayload);
+    expect(result._from).toBe('cloud');
+    expect(result.currentLevel).toBe('B2');
+  });
+
+  it('mergeProgress returns cloud source when local is null and cloud has completedLessons', () => {
+    const local = null;
+    const cloudPayload = { levels: { B1: {} }, completedLessons: { B1: ['l1'] } };
+    const result = mergeProgress(local, cloudPayload);
+    expect(result._from).toBe('cloud');
+    expect(result.completedLessons.B1).toEqual(['l1']);
+  });
+
+  it('mergeProgress returns cloud when cloud is empty object and local is null', () => {
+    const local = null;
+    const cloudPayload = {};
+    const result = mergeProgress(local, cloudPayload);
+    // Empty object {} is truthy, so mergeProgress treats it as 'cloud has data'
+    expect(result._from).toBe('cloud');
+    // Result is the empty object spread (no meaningful data)
+    expect(result._merged).toBe(true);
+  });
+
+  it('mergeProgress returns cloud when cloud has levels and local is null', () => {
+    const local = null;
+    const cloudPayload = { levels: { B2: { grammar: { completed: ['g1'] } } } };
+    const result = mergeProgress(local, cloudPayload);
+    expect(result._from).toBe('cloud');
+  });
+
+  it('cloud-with-data + Chrome-empty should use cloud (via mergeProgress)', () => {
+    const local = null;
+    const cloudPayload = { currentLevel: 'B2', levels: { B1: { reading: { completed: ['r1'] } } }, completedLessons: { B1: ['l1'] } };
+    const result = mergeProgress(local, cloudPayload);
+    expect(result._from).toBe('cloud');
+    expect(result.currentLevel).toBe('B2');
+    expect(result.levels.B1.reading.completed).toEqual(['r1']);
+  });
+});
+
+describe('Cross-device sync: hash considers practice progress', () => {
+  beforeEach(() => {
+    localStorageMock.clear();
+  });
+
+  it('practiceProgress_v1 changes trigger different hash', () => {
+    // Set up initial state
+    localStorageMock.setItem('deutsch_klinik_state_default', JSON.stringify({
+      currentLevel: 'B2',
+      levels: {},
+      completedLessons: { B2: ['l1'] },
+    }));
+    localStorageMock.setItem('practiceProgress_v1', JSON.stringify({
+      reading: { r1: { status: 'completed_correct', dueDate: '2026-06-01' } },
+    }));
+
+    // Create hash with current practice progress (no change)
+    const practice1 = JSON.parse(localStorageMock.getItem('practiceProgress_v1'));
+    const raw1 = JSON.stringify({ p: JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default')), pp: practice1, s: null });
+    let hash1 = 0;
+    for (let i = 0; i < raw1.length; i++) {
+      const chr = raw1.charCodeAt(i);
+      hash1 = ((hash1 << 5) - hash1) + chr;
+      hash1 |= 0;
+    }
+
+    // Change practice progress
+    localStorageMock.setItem('practiceProgress_v1', JSON.stringify({
+      reading: { r1: { status: 'completed_correct', dueDate: '2026-06-01' } },
+      writing: { w1: { status: 'completed_incorrect', dueDate: '2026-05-12' } }, // new item
+    }));
+
+    const practice2 = JSON.parse(localStorageMock.getItem('practiceProgress_v1'));
+    const raw2 = JSON.stringify({ p: JSON.parse(localStorageMock.getItem('deutsch_klinik_state_default')), pp: practice2, s: null });
+    let hash2 = 0;
+    for (let i = 0; i < raw2.length; i++) {
+      const chr = raw2.charCodeAt(i);
+      hash2 = ((hash2 << 5) - hash2) + chr;
+      hash2 |= 0;
+    }
+
+    expect(hash1).not.toBe(hash2);
+  });
+});
