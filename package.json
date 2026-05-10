@@ -19,6 +19,7 @@
     "build-pilot-curriculum": "node scripts/build-pilot-curriculum.cjs",
     "validate-fsp-quality": "node scripts/validate-fsp-quality.cjs",
     "validate-vocab-metadata": "node scripts/validate-vocab-metadata.cjs",
+"validate-lesson-completeness": "node scripts/validate-lesson-completeness.cjs",
     "test": "vitest run"
   },
   "dependencies": {

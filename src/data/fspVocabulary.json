@@ -23994,7 +23994,9 @@
     "license": "custom/original",
     "category": "Cardiovascular",
     "id": "fsp_v_1001",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.die.koronarangiographie"
   },
   {
     "word": "die EKG-Veränderung",
@@ -24015,7 +24017,9 @@
     "license": "custom/original",
     "category": "Cardiovascular",
     "id": "fsp_v_1002",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.die.ekg.veränderung"
   },
   {
     "word": "die Koloskopie",
@@ -24036,7 +24040,9 @@
     "license": "custom/original",
     "category": "Gastrointestinal",
     "id": "fsp_v_1003",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.die.koloskopie"
   },
   {
     "word": "die Nierenfunktion",
@@ -24057,7 +24063,9 @@
     "license": "custom/original",
     "category": "Urology",
     "id": "fsp_v_1004",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.die.nierenfunktion"
   },
   {
     "word": "der Kreatininwert",
@@ -24078,7 +24086,9 @@
     "license": "custom/original",
     "category": "Urology",
     "id": "fsp_v_1005",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.der.kreatininwert"
   },
   {
     "word": "der Blasenkatheter",
@@ -24099,7 +24109,9 @@
     "license": "custom/original",
     "category": "Urology",
     "id": "fsp_v_1006",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.der.blasenkatheter"
   },
   {
     "word": "die Miktion",
@@ -24120,7 +24132,9 @@
     "license": "custom/original",
     "category": "Urology",
     "id": "fsp_v_1007",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.die.miktion"
   },
   {
     "word": "das Tumorstaging",
@@ -24141,7 +24155,9 @@
     "license": "custom/original",
     "category": "Oncology",
     "id": "fsp_v_1008",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_035",
+    "conceptId": "fsp.vocab.das.tumorstaging"
   },
   {
     "word": "die Palliativmedizin",
@@ -24162,7 +24178,9 @@
     "license": "custom/original",
     "category": "Oncology",
     "id": "fsp_v_1009",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_035",
+    "conceptId": "fsp.vocab.die.palliativmedizin"
   },
   {
     "word": "die Therapieoption",
@@ -24183,7 +24201,9 @@
     "license": "custom/original",
     "category": "Procedures",
     "id": "fsp_v_1010",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_035",
+    "conceptId": "fsp.vocab.die.therapieoption"
   },
   {
     "word": "der Entlassbrief",
@@ -24204,7 +24224,9 @@
     "license": "custom/original",
     "category": "Discharge",
     "id": "fsp_v_1011",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_040",
+    "conceptId": "fsp.vocab.der.entlassbrief"
   },
   {
     "word": "der Thorax",
@@ -24225,7 +24247,9 @@
     "license": "custom/original",
     "category": "Respiratory",
     "id": "fsp_v_1012",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.vocab.der.thorax"
   },
   {
     "word": "die Perkussion",
@@ -24246,7 +24270,9 @@
     "license": "custom/original",
     "category": "Diagnostics",
     "id": "fsp_v_1013",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.vocab.die.perkussion"
   },
   {
     "word": "die Auskultation",
@@ -24267,7 +24293,9 @@
     "license": "custom/original",
     "category": "Diagnostics",
     "id": "fsp_v_1014",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_001",
+    "conceptId": "fsp.vocab.die.auskultation"
   },
   {
     "word": "die Hämaturie",
@@ -24288,7 +24316,9 @@
     "license": "custom/original",
     "category": "Urology",
     "id": "fsp_v_1015",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.die.hämaturie"
   },
   {
     "word": "der Ikterus",
@@ -24309,7 +24339,9 @@
     "license": "custom/original",
     "category": "Gastrointestinal",
     "id": "fsp_v_1016",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_031",
+    "conceptId": "fsp.vocab.der.ikterus"
   },
   {
     "word": "der Ösophagus",
@@ -24330,7 +24362,9 @@
     "license": "custom/original",
     "category": "Gastrointestinal",
     "id": "fsp_v_1017",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.der.ösophagus"
   },
   {
     "word": "die Cholezystektomie",
@@ -24351,7 +24385,9 @@
     "license": "custom/original",
     "category": "Procedures",
     "id": "fsp_v_1018",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_036",
+    "conceptId": "fsp.vocab.die.cholezystektomie"
   },
   {
     "word": "die Peritonitis",
@@ -24372,7 +24408,9 @@
     "license": "custom/original",
     "category": "Gastrointestinal",
     "id": "fsp_v_1019",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_036",
+    "conceptId": "fsp.vocab.die.peritonitis"
   },
   {
     "word": "die Extrasystole",
@@ -24393,7 +24431,9 @@
     "license": "custom/original",
     "category": "Cardiovascular",
     "id": "fsp_v_1020",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.die.extrasystole"
   },
   {
     "word": "der Myokardinfarkt",
@@ -24414,7 +24454,9 @@
     "license": "custom/original",
     "category": "Cardiovascular",
     "id": "fsp_v_1021",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.der.myokardinfarkt"
   },
   {
     "word": "die Endokarditis",
@@ -24435,6 +24477,8 @@
     "license": "custom/original",
     "category": "Cardiovascular",
     "id": "fsp_v_1022",
-    "level": "FSP"
+    "level": "FSP",
+    "taughtInLessonId": "fsp_l_030",
+    "conceptId": "fsp.vocab.die.endokarditis"
   }
 ]

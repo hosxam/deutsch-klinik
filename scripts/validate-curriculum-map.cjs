@@ -21,7 +21,7 @@ const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 const curriculumMap = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'curriculumMap.json'), 'utf-8'));
 
 const VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'FSP'];
-const VALID_SKILLS = ['lesson', 'vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking'];
+const VALID_SKILLS = ['lesson', 'vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking', 'case'];
 
 const errors = [];
 const warnings = [];

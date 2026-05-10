@@ -15,7 +15,9 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 
 const curriculumMap = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'curriculumMap.json'), 'utf-8'));
-const lessons = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'germanLessons.json'), 'utf-8'));
+const mainLessons = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'germanLessons.json'), 'utf-8'));
+const fspLessons = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspLessons.json'), 'utf-8'));
+const allLessons = [...mainLessons, ...(Array.isArray(fspLessons) ? fspLessons : Object.values(fspLessons))];
 const vocab = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'germanVocabulary.json'), 'utf-8'));
 const grammar = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'grammar.json'), 'utf-8'));
 const reading = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'reading.json'), 'utf-8'));
@@ -30,9 +32,9 @@ const warnings = [];
 function error(msg) { errors.push(msg); }
 function warn(msg) { warnings.push(msg); }
 
-// Build a map from lessonId -> lesson
+// Build a map from lessonId -> lesson (includes both germanLessons and fspLessons)
 const lessonById = {};
-for (const lesson of lessons) {
+for (const lesson of allLessons) {
   lessonById[lesson.id] = lesson;
 }
 
@@ -110,6 +112,13 @@ for (const unit of units) {
   }
 }
 
+// Load FSP data for cross-referencing
+const fspReading = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspReading.json'), 'utf-8'));
+const fspListening = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspListening.json'), 'utf-8'));
+const fspWriting = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspWriting.json'), 'utf-8'));
+const fspSpeaking = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspSpeaking.json'), 'utf-8'));
+const fspCases = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'fspCases.json'), 'utf-8'));
+
 // Check reading items
 for (const level of VALID_LEVELS) {
   for (const item of (reading[level] || [])) {
@@ -184,7 +193,9 @@ for (const cid of conceptIds) {
 console.log('=== Teach-Before-Test Validation ===');
 console.log(`Curriculum units: ${units.length}`);
 console.log(`A1 units: ${a1Units.length}`);
-console.log(`Lessons in DB: ${lessons.length}`);
+console.log(`Lessons (main): ${mainLessons.length}`);
+console.log(`Lessons (FSP): ${Array.isArray(fspLessons) ? fspLessons.length : Object.values(fspLessons).length}`);
+console.log(`Lessons (total): ${allLessons.length}`);
 console.log(`Concepts: ${curriculumMap.concepts?.length || 0}`);
 
 if (errors.length === 0 && warnings.length === 0) {
