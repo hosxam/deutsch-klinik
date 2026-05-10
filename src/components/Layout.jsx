@@ -134,7 +134,7 @@ export default function Layout() {
                 key={link.to}
                 to={link.to}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-2 py-2 px-3 rounded-lg text-sm"
+                className="flex items-center gap-2 py-3 px-3 rounded-lg text-sm"
                 style={{
                   backgroundColor: location.pathname === link.to ? 'var(--bg-hover)' : 'transparent',
                   color: location.pathname === link.to ? 'var(--accent)' : 'var(--text-secondary)',

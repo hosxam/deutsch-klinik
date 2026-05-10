@@ -458,22 +458,22 @@ export default function FlashcardPage() {
           <p className="mb-6" style={{ color: 'var(--text-secondary)' }}>{sessionCards.length} cards reviewed</p>
           <div className="mb-6">
             <div className="text-sm font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Ratings breakdown:</div>
-            <div className="grid grid-cols-4 gap-2 text-xs text-center">
-              <div className="p-2 rounded" style={{ backgroundColor: 'rgba(255,51,85,0.1)', color: '#ff3355' }}>
-                <div className="font-bold">{reviews.filter(r => r.rating === 1).length}</div>
-                <div>Again</div>
+            <div className="grid grid-cols-4 gap-1 sm:gap-2 text-xs text-center">
+              <div className="p-1.5 sm:p-2 rounded" style={{ backgroundColor: 'rgba(255,51,85,0.1)', color: '#ff3355' }}>
+                <div className="font-bold text-sm sm:text-base">{reviews.filter(r => r.rating === 1).length}</div>
+                <div className="text-[10px] sm:text-xs">Again</div>
               </div>
-              <div className="p-2 rounded" style={{ backgroundColor: 'rgba(255,170,51,0.1)', color: '#ffaa33' }}>
-                <div className="font-bold">{reviews.filter(r => r.rating === 2).length}</div>
-                <div>Hard</div>
+              <div className="p-1.5 sm:p-2 rounded" style={{ backgroundColor: 'rgba(255,170,51,0.1)', color: '#ffaa33' }}>
+                <div className="font-bold text-sm sm:text-base">{reviews.filter(r => r.rating === 2).length}</div>
+                <div className="text-[10px] sm:text-xs">Hard</div>
               </div>
-              <div className="p-2 rounded" style={{ backgroundColor: 'rgba(59,255,158,0.1)', color: '#3bff9e' }}>
-                <div className="font-bold">{reviews.filter(r => r.rating === 3).length}</div>
-                <div>Good</div>
+              <div className="p-1.5 sm:p-2 rounded" style={{ backgroundColor: 'rgba(59,255,158,0.1)', color: '#3bff9e' }}>
+                <div className="font-bold text-sm sm:text-base">{reviews.filter(r => r.rating === 3).length}</div>
+                <div className="text-[10px] sm:text-xs">Good</div>
               </div>
-              <div className="p-2 rounded" style={{ backgroundColor: 'rgba(0,240,255,0.1)', color: 'var(--accent)' }}>
-                <div className="font-bold">{reviews.filter(r => r.rating === 4).length}</div>
-                <div>Easy</div>
+              <div className="p-1.5 sm:p-2 rounded" style={{ backgroundColor: 'rgba(0,240,255,0.1)', color: 'var(--accent)' }}>
+                <div className="font-bold text-sm sm:text-base">{reviews.filter(r => r.rating === 4).length}</div>
+                <div className="text-[10px] sm:text-xs">Easy</div>
               </div>
             </div>
           </div>

@@ -105,7 +105,7 @@ export default function GoalSetupPage() {
       {/* Target Level */}
       <Card className="mb-4">
         <label className="text-sm font-semibold mb-3 block">Target Level</label>
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
           {LEVEL_ORDER.map(lvl => {
             const isBefore = LEVEL_ORDER.indexOf(lvl) < LEVEL_ORDER.indexOf(startLevel);
             const isSelected = targetLevel === lvl;
@@ -137,7 +137,7 @@ export default function GoalSetupPage() {
       {/* Daily Minutes */}
       <Card className="mb-4">
         <label className="text-sm font-semibold mb-3 block">Minutes per day</label>
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
           {DAILY_MINUTES_OPTIONS.map(m => (
             <button
               key={m}
@@ -158,7 +158,7 @@ export default function GoalSetupPage() {
       {/* Days Per Week */}
       <Card className="mb-4">
         <label className="text-sm font-semibold mb-3 block">Days per week</label>
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
           {DAYS_PER_WEEK_OPTIONS.map(d => (
             <button
               key={d}

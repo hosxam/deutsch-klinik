@@ -23,3 +23,8 @@ src/data/archive/
 
 # Phase 4 backup artifacts
 backup/
+
+# Playwright test artifacts
+mobile-*.png
+*.diff.png
+*.actual.png

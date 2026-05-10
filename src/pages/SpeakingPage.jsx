@@ -641,7 +641,7 @@ export default function SpeakingPage() {
                   <div className="space-y-1.5 text-xs">
                     {Object.entries(aiResult.rubric).map(([key, val]) => (
                       <div key={key} className="flex gap-2">
-                        <span className="font-medium capitalize min-w-[120px]" style={{ color: 'var(--text-secondary)' }}>
+                        <span className="font-medium capitalize min-w-[80px] sm:min-w-[120px] flex-shrink-0" style={{ color: 'var(--text-secondary)' }}>
                           {key.replace(/([A-Z])/g, ' $1').trim()}:
                         </span>
                         <span style={{ color: 'var(--text-primary)' }}>{val}</span>

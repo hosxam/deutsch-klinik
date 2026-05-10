@@ -792,7 +792,7 @@ export default function FSPExamPage() {
               {totalScore >= 80 ? 'Excellent' : totalScore >= 60 ? 'Good' : totalScore >= 40 ? 'Needs work' : 'Keep practicing'}
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-3 text-center">
+          <div className="grid grid-cols-3 gap-1 sm:gap-3 text-center">
             <div className="p-2 rounded-lg" style={{ backgroundColor: 'rgba(139,92,246,0.08)' }}>
               <p className="text-[10px]" style={{ color: '#8b5cf6' }}>Anamnese</p>
               <p className="text-base font-bold" style={{ color: '#8b5cf6' }}>{scores.stage1 || 0}%</p>

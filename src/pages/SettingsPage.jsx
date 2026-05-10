@@ -120,7 +120,7 @@ export default function SettingsPage() {
         <h2 className="text-sm font-semibold mb-3">Study Goal</h2>
 
         <label className="text-xs mb-2 block" style={{ color: 'var(--text-muted)' }}>Target Level</label>
-        <div className="grid grid-cols-5 gap-2 mb-4">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-4">
           {LEVEL_ORDER.map(lvl => (
             <button key={lvl}
               onClick={() => setTargetLevel(lvl)}
@@ -135,7 +135,7 @@ export default function SettingsPage() {
         </div>
 
         <label className="text-xs mb-2 block" style={{ color: 'var(--text-muted)' }}>Minutes per day</label>
-        <div className="grid grid-cols-5 gap-2 mb-4">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-4">
           {DAILY_MINUTES_OPTIONS.map(m => (
             <button key={m} onClick={() => setDailyMinutes(m)}
               className="py-2 rounded-lg text-sm font-bold transition-all"
@@ -149,7 +149,7 @@ export default function SettingsPage() {
         </div>
 
         <label className="text-xs mb-2 block" style={{ color: 'var(--text-muted)' }}>Days per week</label>
-        <div className="grid grid-cols-5 gap-2 mb-3">
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-3">
           {DAYS_PER_WEEK_OPTIONS.map(d => (
             <button key={d} onClick={() => setDaysPerWeek(d)}
               className="py-2 rounded-lg text-sm font-bold transition-all"
