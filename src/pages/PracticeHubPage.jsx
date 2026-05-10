@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PageShell, Card, FeatureCard } from '../components/ui';
 import { getState, getCurrentStudyLevel } from '../utils/store';
 import {
-  BarChart3, FileText, Headphones, PenTool, Mic, BookMarked, AlertTriangle, Sparkles
+  BarChart3, FileText, Headphones, PenTool, Mic, BookMarked, AlertTriangle, Sparkles, MessageSquare
 } from 'lucide-react';
 
 export default function PracticeHubPage() {
@@ -62,6 +62,13 @@ export default function PracticeHubPage() {
       icon: <BookMarked size={28} />,
       accent: '#06b6d4',
       to: `/level/${level}/vocabulary/flashcards`,
+    },
+    {
+      title: 'Conversation Practice',
+      description: 'Practice roleplay scenarios for real conversations',
+      icon: <MessageSquare size={28} />,
+      accent: '#ff6b00',
+      to: '/conversation',
     },
     {
       title: 'Mistake Review',

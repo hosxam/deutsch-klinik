@@ -14,6 +14,7 @@ const ReadingPage = lazy(() => import('./pages/ReadingPage'));
 const ListeningPage = lazy(() => import('./pages/ListeningPage'));
 const WritingPage = lazy(() => import('./pages/WritingPage'));
 const SpeakingPage = lazy(() => import('./pages/SpeakingPage'));
+const RoleplayPage = lazy(() => import('./pages/RoleplayPage'));
 const ExamPage = lazy(() => import('./pages/ExamPage'));
 const ResourcesPage = lazy(() => import('./pages/ResourcesPage'));
 const MedicalPage = lazy(() => import('./pages/MedicalPage'));
@@ -301,6 +302,13 @@ export default function App() {
               <Suspense fallback={<Loading />}>
                 <RouteGuard>
                   <PracticeHubPage />
+                </RouteGuard>
+              </Suspense>
+            } />
+            <Route path="conversation" element={
+              <Suspense fallback={<Loading />}>
+                <RouteGuard>
+                  <RoleplayPage />
                 </RouteGuard>
               </Suspense>
             } />
