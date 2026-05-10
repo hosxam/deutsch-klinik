@@ -86,9 +86,18 @@ function fixEntry(e,lvl){
 
   // Uncountable (mass nouns, non-countable)
   if(UC.has(w)){
-    // Only clear plural if it's not the word itself (e.g., "die Begleitsymptome" is already plural)
-    if(e.plural && SA(e.plural)===w+"n" && w.endsWith("e")){/* skip - already plural form */} 
-    else if(e.plural){e.plural='';act.push('clr-pl');}
+    // Preserve plural only for plural-only nouns (Eltern, Leute, Ferien, Geschwister)
+    // that are in the UC list because they don't have a singular form
+    const isPluralOnlyWord = e.plural && SA(e.plural)===w && PO.has(w);
+    // Preserve plural if word IS already its own plural form (word is already plural,
+    // e.g. "die Begleitsymptome" where the word looks plural but is used as-is)
+    // Detect: stored plural matches the word itself (no suffix added)
+    const isSelfPlural = e.plural && SA(e.plural)===w && w!==SA(e.article||'')+'n';
+    if(isPluralOnlyWord || isSelfPlural){
+      // Keep the plural as-is
+    } else if(e.plural){
+      e.plural='';act.push('clr-pl');
+    }
     e.countability='uncountable';act.push('cnt-unc');
     e.pluralStatus='not-applicable';act.push('ps-unc');
     return act.join(',')||null;
