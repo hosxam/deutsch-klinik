@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import { updateLevelProgress, recordAnswer, completeListening } from '../utils/store';
 import { getPracticeItemStatus, recordPracticeAttempt } from '../utils/practiceProgress';
 import listeningData from '../data/listening.json';
+import { verifyAudioMatch } from '../utils/audioGuard';
 import LevelLock from '../components/LevelLock';
 import { Play, Square, Volume2, Mic, ChevronDown, ChevronUp, CheckCircle, XCircle, FileAudio } from 'lucide-react';
 
@@ -110,11 +111,22 @@ export default function ListeningPage() {
   // Audio file playback
   const playAudio = (rate) => {
     if (!ex || !ex.audio) return;
+
+    // Guard: verify audio file matches current item before playing
+    const audioUrl = resolveAudioPath(ex.audio);
+    const matchCheck = verifyAudioMatch(audioUrl, ex);
+    if (!matchCheck.ok) {
+      if (import.meta.env.DEV) {
+        console.warn('[AudioGuard] ' + matchCheck.reason + ' — falling back to TTS/script.');
+      }
+      handleAudioError();
+      return;
+    }
+
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current = null;
     }
-    const audioUrl = resolveAudioPath(ex.audio);
     const audio = new Audio(audioUrl);
     audio.preload = 'metadata';
     audio.playbackRate = rate || 1;

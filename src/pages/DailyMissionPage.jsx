@@ -990,7 +990,12 @@ export default function DailyMissionPage() {
         const result = await correctWriting({
           level: lvl,
           task: (item?.prompt || '') + (item?.instructions ? ' -- ' + item.instructions : ''),
-          userAnswer: wtText
+          userAnswer: wtText,
+          track: item?.track || 'goethe',
+          title: item?.title || '',
+          instructions: item?.instructions || '',
+          wordLimit: item?.wordLimit || null,
+          rubric: item?.rubric || null,
         });
         setWtAiResult(result);
         if (Number(result.score) < 6) {

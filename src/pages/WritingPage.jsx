@@ -122,6 +122,11 @@ export default function WritingPage() {
       level: levelId,
       task: prompt.prompt,
       userAnswer: text,
+      track: prompt.track || 'goethe',
+      title: prompt.title || '',
+      instructions: prompt.instructions || '',
+      wordLimit: prompt.wordLimit || null,
+      rubric: prompt.rubric || null,
     }).then((result) => {
       setAiResult(result);
       recordWritingResult(result, null);

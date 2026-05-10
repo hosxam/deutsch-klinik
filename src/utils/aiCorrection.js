@@ -187,7 +187,7 @@ export async function getAIHealth() {
 // Core AI functions
 // ────────────────────────────────────────────
 
-export async function correctWriting({ level, task, userAnswer }) {
+export async function correctWriting({ level, task, userAnswer, track, title, instructions, wordLimit, rubric }) {
   if (!userAnswer || userAnswer.trim().length < 2) {
     throw new Error('Write an answer first.');
   }
@@ -207,6 +207,11 @@ export async function correctWriting({ level, task, userAnswer }) {
       level,
       task,
       userAnswer,
+      track: track || 'goethe',
+      title: title || '',
+      instructions: instructions || '',
+      wordLimit: wordLimit || null,
+      rubric: rubric || null,
     });
     incrementUsageCounter('correction');
     return normalizeWritingResponse(data);

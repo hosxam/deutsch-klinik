@@ -220,7 +220,7 @@ async function handleCorrectWriting(request, cors) {
     return errorResponse('Invalid JSON body.', 400, cors);
   }
 
-  const { level, task, userAnswer } = body;
+  const { level, task, userAnswer, track, title, instructions, wordLimit, rubric } = body;
   if (!userAnswer || typeof userAnswer !== 'string' || userAnswer.trim().length < 2) {
     return errorResponse('userAnswer is required (min 2 characters).', 400, cors);
   }
@@ -232,11 +232,34 @@ async function handleCorrectWriting(request, cors) {
   }
 
   try {
+    const trackType = (track || 'goethe').trim().toLowerCase();
+    const promptContext = trackType === 'goethe' ? [
+      `Task context: general German language practice (Goethe-style).`,
+      `Do NOT evaluate as medical/FSP writing unless the task explicitly asks for medical content.`,
+    ] : trackType === 'medical' ? [
+      `Task context: medical German writing. Evaluate for medical accuracy, terminology, and professional tone.`,
+    ] : trackType === 'fsp' ? [
+      `Task context: FSP (Fachsprachprüfung) exam preparation. Evaluate for medical terminology, patient communication, and formal structure.`,
+    ] : [
+      `Task context: general German language practice.`,
+      `Do NOT assume medical context unless the task explicitly requires it.`,
+    ];
+
+    const rubricContext = rubric ? (
+      Array.isArray(rubric) ? rubric.map(r => typeof r === 'object' ? `- ${r.criterion || r.criteria || ''}: ${r.description || ''} (${r.points || r.maxPoints || ''} pts)` : `- ${r}`).join('\n')
+      : typeof rubric === 'object' ? Object.entries(rubric).map(([k, v]) => `- ${k}: ${v}`).join('\n')
+      : `- ${rubric}`
+    ) : 'Use standard CEFR rubric for this level.';
+
     const result = await aiChatCompletion([
       {
         role: 'system',
         content: [
           'You are a German language tutor. Given a student\'s writing, provide structured feedback.',
+          'IMPORTANT: Evaluate ONLY against the provided task prompt, track, and rubric.',
+          'Do NOT assume medical or FSP context unless the track is explicitly "medical" or "fsp".',
+          'If the task is a birthday invitation, social message, or personal letter, evaluate it as general German.',
+          'Do not reference patient history, diagnoses, treatments, or clinical contexts in non-medical tasks.',
           'Respond with valid JSON only (no extra text). Use this exact schema:',
           JSON.stringify({
             score: 'number (1-10)',
@@ -261,9 +284,15 @@ async function handleCorrectWriting(request, cors) {
         role: 'user',
         content: [
           `CEFR level: ${level || 'A1'}`,
-          `Task: ${task || 'Writing task'}`,
+          `Task title: ${title || 'Writing task'}`,
+          `Task instructions: ${task || ''}`,
+          `Track: ${trackType}`,
+          ...promptContext,
+          instructions ? `Detailed instructions: ${instructions}` : '',
+          wordLimit ? `Word limit: ${wordLimit}` : '',
+          `Rubric/checklist:\n${rubricContext}`,
           `Student text: ${userAnswer}`,
-        ].join('\n'),
+        ].filter(Boolean).join('\n'),
       },
     ], 0.5, 2000);
 
