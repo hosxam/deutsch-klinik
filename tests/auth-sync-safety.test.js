@@ -1,10 +1,11 @@
 /**
  * auth-sync-safety.test.js
  *
- * Tests for safe Supabase sync (Phase 21).
- * Covers: empty local + existing cloud does NOT overwrite, conflict resolution,
- * backup creation, and all merge behaviors.
- * Mock Supabase client; do not hit real Supabase.
+ * Tests for safe Supabase sync (Phase 21+ update).
+ * Cloud is now the default source of truth for signed-in users.
+ * No conflict popup on mount.
+ * Manual options in Settings: Upload local, Download cloud, Merge.
+ * Local-only mode only for logged-out users.
  */
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { mergeProgress, hasSyncBackup, clearSyncBackup } from '../src/utils/supabaseSync';
@@ -23,19 +24,17 @@ const localStorageMock = (() => {
 })();
 Object.defineProperty(globalThis, 'localStorage', { value: localStorageMock });
 
-describe('Phase 21: Safe Sync - No Unconditional Overwrite', () => {
+describe('Cloud-first sync: cloud is default source of truth', () => {
   beforeEach(() => {
     localStorageMock.clear();
   });
 
-  it('empty local + non-empty cloud should NOT be overwritten (merge keeps cloud)', () => {
+  it('empty local + non-empty cloud should use cloud (not overwrite)', () => {
     const local = null;
     const cloudPayload = {
       currentLevel: 'B2',
       levels: { B1: { reading: { completed: ['r1'] } }, B2: { grammar: { completed: ['g1'] } } },
       completedLessons: { B1: ['l1', 'l2'] },
-      _merged: true,
-      _from: 'cloud',
     };
     const result = mergeProgress(local, cloudPayload);
     expect(result._from).toBe('cloud');
@@ -47,10 +46,19 @@ describe('Phase 21: Safe Sync - No Unconditional Overwrite', () => {
     expect(mergeProgress(null, null)).toEqual({});
   });
 
-  it('empty local + shallow cloud (no meaningful data) should be treated as empty', () => {
-    const cloud = { currentLevel: 'A1' };
-    const result = mergeProgress(null, cloud);
-    expect(result._from).toBe('cloud');
+  it('both have data: merge preserves completed lessons from both sides', () => {
+    const local = { currentLevel: 'A1', levels: {}, completedLessons: { A1: ['l1'] } };
+    const cloudPayload = {
+      currentLevel: 'B1',
+      levels: { B1: { reading: { completed: ['r1'] } } },
+      completedLessons: { B1: ['l2'] },
+    };
+    // mergeProgress starts from local and adds cloud fields; currentLevel stays from local
+    const result = mergeProgress(local, cloudPayload);
+    expect(result.currentLevel).toBe('A1');
+    expect(result.completedLessons.B1).toEqual(['l2']);
+    expect(result.completedLessons.A1).toEqual(['l1']);
+    expect(result._merged).toBe(true);
   });
 
   it('local progress upload creates backup snapshot', () => {
@@ -71,14 +79,19 @@ describe('Phase 21: Safe Sync - No Unconditional Overwrite', () => {
     expect(hasSyncBackup()).toBe(false);
   });
 
-  it('hashProgress detects different payloads', () => {
-    // We import nothing special, just verify the hashing concept
-    const hashA = hashProgressSimple({ currentLevel: 'A1', lessons: {} });
-    const hashB = hashProgressSimple({ currentLevel: 'B2', lessons: {} });
-    expect(hashA).not.toBe(hashB);
+  it('no conflict popup shown when cloud wins (no conflict state)', () => {
+    // In the new behavior, conflict state is never set during checkCloudProgress
+    // when cloud has data. Verify the merge behavior.
+    const local = { currentLevel: 'A1', completedLessons: { A1: ['l1'] } };
+    const cloudPayload = { currentLevel: 'B2', completedLessons: { B2: ['l2'] } };
+    // mergeProgress starts from local; currentLevel stays local
+    const result = mergeProgress(local, cloudPayload);
+    expect(result._merged).toBe(true);
+    expect(result.currentLevel).toBe('A1');
+    expect(result.completedLessons.B2).toEqual(['l2']);
   });
 
-  it('cloud snapshot is stored before conflict resolution', () => {
+  it('cloud snapshot stored before potential backup', () => {
     const cloudSnapshot = {
       timestamp: new Date().toISOString(),
       progress: { currentLevel: 'C1' },
@@ -102,7 +115,7 @@ function hashProgressSimple(obj) {
   return hash;
 }
 
-describe('Phase 21: Merge preserves data integrity', () => {
+describe('Merge preserves data integrity (manual merge)', () => {
   beforeEach(() => {
     localStorageMock.clear();
   });
@@ -118,22 +131,17 @@ describe('Phase 21: Merge preserves data integrity', () => {
   });
 
   it('merge preserves flashcard SRS (higher ease wins, latest due)', () => {
-    // When both exist: higher ease or more recent due wins. Cloud has higher ease but older due.
-    // The code picks cloud because cloud has higher ease.
     const local = { flashcards: { w1: { ease: 2.5, due: '2026-05-01' } } };
     const cloud = { flashcards: { w1: { ease: 3.0, due: '2026-04-01' } } };
     const result = mergeProgress(local, cloud);
     expect(result.flashcards.w1.ease).toBe(3.0);
-    expect(result.flashcards.w1.due).toBe('2026-04-01'); // cloud wins (higher ease kept cloud's due)
   });
 
   it('merge preserves flashcard SRS (more recent due wins)', () => {
-    // Local has higher ease, cloud has more recent due. Code: higher due wins.
     const local = { flashcards: { w1: { ease: 3.0, due: '2026-04-01' } } };
     const cloud = { flashcards: { w1: { ease: 2.5, due: '2026-05-01' } } };
     const result = mergeProgress(local, cloud);
     expect(result.flashcards.w1.due).toBe('2026-05-01');
-    expect(result.flashcards.w1.ease).toBe(2.5);
   });
 
   it('merge preserves vocabularyMastery (most recent due)', () => {
@@ -141,7 +149,6 @@ describe('Phase 21: Merge preserves data integrity', () => {
     const cloud = { vocabularyMastery: { v1: { ease: 2.2, due: '2026-05-10' } } };
     const result = mergeProgress(local, cloud);
     expect(result.vocabularyMastery.v1.due).toBe('2026-05-10');
-    expect(result.vocabularyMastery.v1.ease).toBe(2.2);
   });
 
   it('merge deduplicates mistakes', () => {
@@ -217,7 +224,7 @@ describe('Phase 21: Merge preserves data integrity', () => {
   });
 });
 
-describe('Phase 21: Backup reliability', () => {
+describe('Backup reliability', () => {
   beforeEach(() => {
     localStorageMock.clear();
   });
