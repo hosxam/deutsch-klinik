@@ -312,8 +312,8 @@ export default function ListeningPage() {
     setShowTranscript(true);
     
     const allCorrect = s === ex.questions.length;
-    // Use index-based key (matching status lookup format) for consistent progress tracking
-    const listeningId = `listening_${levelId}_${currentEx}`;
+    // Use stable item ID for progress tracking (not index-based)
+    const listeningId = `listening_${levelId}_${ex.id}`;
     
     if (allCorrect) {
       completeListening(levelId, listeningId);
@@ -373,7 +373,8 @@ export default function ListeningPage() {
 
   // Audio source indicator text
   const sourceLabel = hasAudio ? 'Audio file' : (TTS_AVAILABLE ? 'Browser voice' : 'Unavailable');
-  const listeningStatuses = exercises.map((_, i) => getPracticeItemStatus('listening', `listening_${levelId}_${i}`));
+  // Read practice status from persistent storage using stable item IDs
+  const listeningStatuses = exercises.map((item) => getPracticeItemStatus('listening', `listening_${levelId}_${item.id}`));
 
   return (
     <LevelLock levelId={levelId}>

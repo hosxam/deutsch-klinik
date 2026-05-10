@@ -275,6 +275,74 @@ describe('Phase 18D: DailyMissionPage Filtering', () => {
     expect(available.find(x => x.id === 'l1')).toBeDefined();
   });
 
+  it('listening uses stable item ID key (not index) for practiceStatus', () => {
+    // The fix: ListeningPage now uses listening_${levelId}_${ex.id} (stable item ID)
+    // NOT listening_${levelId}_${index} (fragile index-based key)
+    const levelId = 'A1';
+    const itemId = 'A1_listen_1';
+    const key = `listening_${levelId}_${itemId}`;
+
+    // Write using stable item ID key
+    simulateRecordPracticeAttempt(store, 'listening', key, true);
+
+    // Read back using same stable item ID key
+    const status = store?.listening?.[key]?.status;
+    expect(status).toBe('completed_correct');
+
+    // The key should be listenable by getPracticeItemStatus
+    // Simulate: ppCompleted build uses full key (not just item.id)
+    const { ppCompleted } = buildPPSets(store, 'listening');
+    expect(ppCompleted.has(key)).toBe(true);
+
+    // DailyMissionPage prefixedKey format: listening_${level}_${item.id}
+    const dailyMissionKey = `listening_${levelId}_${itemId}`;
+    expect(dailyMissionKey).toBe(key);
+  });
+
+  it('listening status persists across simulated remount/reload', () => {
+    const levelId = 'A1';
+    const key1 = `listening_${levelId}_A1_listen_1`;
+    const key2 = `listening_${levelId}_A1_listen_2`;
+
+    // Write correct for listen_1, incorrect for listen_2
+    simulateRecordPracticeAttempt(store, 'listening', key1, true);
+    simulateRecordPracticeAttempt(store, 'listening', key2, false);
+
+    // Simulate remount: fresh read from store
+    const freshStore = JSON.parse(JSON.stringify(store));
+
+    expect(freshStore.listening[key1].status).toBe('completed_correct');
+    expect(freshStore.listening[key2].status).toBe('completed_incorrect');
+
+    // Verify Today's Plan filtering works after reload
+    const { ppCompleted, ppNotDue } = buildPPSets(freshStore, 'listening');
+    expect(ppCompleted.has(key1)).toBe(true);
+    expect(ppNotDue.has(key2)).toBe(true); // due tomorrow (not today)
+
+    const listenItems = [{ id: 'A1_listen_1' }, { id: 'A1_listen_2' }, { id: 'A1_listen_3' }];
+
+    // Simulate DailyMissionPage ppHasItem: it uses prefixed key format
+    // which now matches the stable item ID key from ListeningPage
+    const completedSet = new Set(
+      Object.entries(freshStore.listening || {})
+        .filter(([, v]) => v.status === 'completed_correct' || v.status === 'mastered')
+        .map(([id]) => id)
+    );
+    const notDueSet = new Set(
+      Object.entries(freshStore.listening || {})
+        .filter(([, v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate > getLocalDateKey())
+        .map(([id]) => id)
+    );
+
+    // listen_1 is in ppCompleted
+    expect(completedSet.has(key1)).toBe(true);
+    // listen_2 is in ppNotDue (due tomorrow)
+    expect(notDueSet.has(key2)).toBe(true);
+    // listen_3 is not in either
+    expect(completedSet.has(`listening_A1_A1_listen_3`)).toBe(false);
+    expect(notDueSet.has(`listening_A1_A1_listen_3`)).toBe(false);
+  });
+
   it('completing reading then correcting works (correct → incorrect → correct)', () => {
     // Simulate: user gets it wrong first, then corrects on review
     simulateRecordPracticeAttempt(store, 'reading', 'r1', false);

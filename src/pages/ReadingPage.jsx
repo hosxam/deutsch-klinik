@@ -14,7 +14,8 @@ export default function ReadingPage() {
   const [score, setScore] = useState(0);
 
   const ex = exercises[currentEx];
-  const readingStatuses = exercises.map((_, i) => getPracticeItemStatus('reading', `reading_${levelId}_${i}`));
+  // Read practice status from persistent storage using stable item IDs
+  const readingStatuses = exercises.map((item) => getPracticeItemStatus('reading', `reading_${levelId}_${item.id}`));
 
   if (exercises.length === 0) {
     return (
@@ -51,7 +52,8 @@ export default function ReadingPage() {
     setScore(s);
     setSubmitted(true);
     const allCorrect = s === ex.questions.length;
-    const readingId = `reading_${levelId}_${currentEx}`;
+    // Use stable item ID for progress tracking (not index-based)
+    const readingId = `reading_${levelId}_${ex.id}`;
     
     if (allCorrect) {
       completeReading(levelId, readingId);
