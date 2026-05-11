@@ -12,7 +12,8 @@ import {
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { recordPracticeAttempt } from '../utils/practiceProgress';
 
-import { buildAdaptiveTargets, MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
+import { MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
+import { buildDailyPlan } from '../utils/buildDailyPlan';
 import { hasCurriculumMap, getUnlockedItems } from '../utils/teachBeforeTest';
 import {
   isReadingUnlocked,
@@ -153,136 +154,27 @@ function clearSession() {
   try { localStorage.removeItem(SESSION_KEY); } catch { /* empty */ }
 }
 
-const TIME_BUDGET = {
-  lesson: 0.25,
-  grammar: 0.20,
-  flashcard: 0.20,
-  reading: 0.15,
-  listening: 0.12,
-  writing: 0.08,
-};
-
-const MINS_PER_ITEM = {
-  lesson: 8,
-  grammar: 1.5,
-  flashcard: 0.5,
-  reading: 5,
-  listening: 4,
-  writing: 7,
-  speaking: 6,
-};
-
-function generatePlan(dailyMinutes, currentLevel, goal) {
-  const minutes = Math.max(15, Number(dailyMinutes) || 30);
-  const plan = [];
-
-  for (const [skill, fraction] of Object.entries(TIME_BUDGET)) {
-    const allocated = minutes * fraction;
-    const count = Math.max(1, Math.floor(allocated / MINS_PER_ITEM[skill]));
-    plan.push({ skill, count });
-  }
-
-  if (goal?.targetLevel === 'Medical FSP') {
-    plan.push({ skill: 'fsp_anamnese', count: 1 });
-    plan.push({ skill: 'fsp_vocab', count: 10 });
-  }
-
-  return plan;
-}
+// NOTE: TIME_BUDGET, MINS_PER_ITEM, and generatePlan have been replaced
+// by buildDailyPlan() in src/utils/buildDailyPlan.js — the single source of truth.
 
 function calculateDailyTargets(levelId, state, goal) {
-  const baseTargets = buildAdaptiveTargets(levelId, state, goal);
-  const dailyMinutes = Math.max(15, Number(goal?.dailyMinutes) || 30);
-  const plan = generatePlan(dailyMinutes, levelId, goal);
-  const targets = {
-    ...baseTargets,
+  // Use the single source of truth: buildDailyPlan
+  const plan = buildDailyPlan(levelId, state, goal);
+  // Extract target counts as expected by downstream consumers (buildMissions, etc.)
+  return {
     lesson: 0,
-    grammar: 0,
-    flashcards: 0,
-    reading: 0,
-    listening: 0,
-    writing: 0,
-    estimatedMinutes: dailyMinutes,
+    grammarLesson: 0,
+    grammar: plan.targets.grammar,
+    vocab: plan.targets.vocabulary,
+    flashcards: plan.targets.flashcards,
+    reading: plan.targets.reading,
+    listening: plan.targets.listening,
+    writing: plan.targets.writing,
+    speaking: plan.targets.speaking,
+    remediation: plan.targets.remediation || 0,
+    estimatedMinutes: plan.estimatedMinutes,
+    intensity: plan.intensity,
   };
-
-  for (const item of plan) {
-    if (item.skill === 'flashcard') {
-      targets.flashcards = item.count;
-    } else if (item.skill === 'fsp_anamnese') {
-      targets.speaking = Math.max(targets.speaking || 0, item.count);
-    } else if (item.skill === 'fsp_vocab') {
-      targets.vocab = Math.max(targets.vocab || 0, item.count);
-    } else if (item.skill in targets) {
-      targets[item.skill] = item.count;
-    }
-  }
-
-  // === WEAK-AREA INJECTION ===
-  // Boost practice weight for skills where the user has mistakes or weak scores.
-  if (state.incorrectAnswers) {
-    const levelMistakes = state.incorrectAnswers[levelId] || [];
-    if (levelMistakes.length >= 3) {
-      // Count mistakes by skill
-      const skillCounts = {};
-      levelMistakes.forEach(m => {
-        const s = (m.skill || m.topic || 'general').toLowerCase();
-        skillCounts[s] = (skillCounts[s] || 0) + 1;
-      });
-      // Boost grammar practice if grammar mistakes are prominent
-      if ((skillCounts['grammar'] || 0) >= 3 && targets.estimatedMinutes >= 30) {
-        targets.grammar = Math.max(targets.grammar || 0, Math.min(targets.grammar + 4, targets.grammar * 1.5));
-      }
-      // Boost vocab/flashcards if vocab mistakes are prominent
-      if ((skillCounts['vocab'] || 0) >= 3) {
-        targets.flashcards = Math.max(targets.flashcards || 0, Math.min(targets.flashcards + 5, targets.flashcards * 1.5));
-      }
-      // Boost listening if listening mistakes are prominent (only if plan has listening)
-      if ((skillCounts['listening'] || 0) >= 2 && targets.listening > 0) {
-        targets.listening = Math.min(targets.listening + 1, 2);
-      }
-      // Boost reading if reading mistakes are prominent
-      if ((skillCounts['reading'] || 0) >= 2 && targets.reading > 0) {
-        targets.reading = Math.min(targets.reading + 1, 2);
-      }
-    }
-  }
-
-  // === ACTIVE/PASSIVE WEIGHTING BY LEVEL ===
-  // Adjust writing/speaking count based on level
-  // A1-A2: passive 70%, active 30%
-  // B1:     passive 55%, active 45%
-  // B2-C1:  passive 40%, active 60%
-  // FSP:    passive 25%, active 75%
-  const levelBase = levelId || 'A1';
-  const isFspTrack = goal?.targetLevel === 'Medical FSP' || goal?.track === 'medical-fsp';
-  let activeBoost = 0;
-  if (isFspTrack) {
-    // FSP track: writing + speaking are heavily weighted
-    if (dailyMinutes >= 30) {
-      targets.writing = Math.max(targets.writing || 0, 1);
-      targets.speaking = Math.max(targets.speaking || 0, 2);
-    }
-  } else if (['B1', 'B2', 'C1'].includes(levelBase)) {
-    // B1+ needs more active production
-    if (dailyMinutes >= 30) {
-      targets.writing = Math.max(targets.writing || 0, 1);
-    }
-    if (dailyMinutes >= 60) {
-      targets.speaking = Math.max(targets.speaking || 0, 1);
-    }
-    if (levelBase === 'B2' || levelBase === 'C1') {
-      // B2-C1: writing/speaking even in shorter plans
-      if (dailyMinutes >= 30) {
-        targets.speaking = Math.max(targets.speaking || 0, 1);
-      }
-      // Increase writing task for C1
-      if (levelBase === 'C1' && dailyMinutes >= 45) {
-        targets.writing = Math.max(targets.writing || 0, 2);
-      }
-    }
-  }
-
-  return targets;
 }
 
 function getLessonIds(value) {

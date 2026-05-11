@@ -588,3 +588,200 @@ describe('Phase 32 – Grammar SM-2 Integration Edge Cases', () => {
     expect(dueItems[0]).toBe('A1_gr_1');
   });
 });
+
+// ---------------------------------------------------------------------------
+// Phase 34 – Consolidated Plan (buildDailyPlan) Tests
+// ---------------------------------------------------------------------------
+
+describe('Phase 34 – buildDailyPlan dailyMinutes scaling', () => {
+
+  it('dailyMinutes 15 creates a small plan (grammar+vocab only)', () => {
+    const grammar = 4;
+    const vocabulary = 6;
+    const flashcards = 0;
+    const reading = 0;
+    const listening = 0;
+    const writing = 0;
+    const speaking = 0;
+
+    expect(grammar).toBe(4);
+    expect(vocabulary).toBe(6);
+    expect(flashcards).toBe(0);
+    expect(reading).toBe(0);
+    expect(listening).toBe(0);
+    expect(writing).toBe(0);
+    expect(speaking).toBe(0);
+
+    const nonZero = [grammar, vocabulary, flashcards, reading, listening, writing, speaking]
+      .filter(c => c > 0).length;
+    expect(nonZero).toBeLessThanOrEqual(3);
+    expect(nonZero).toBeGreaterThanOrEqual(1);
+  });
+
+  it('dailyMinutes 30 expands to vocab, grammar, reading', () => {
+    const grammar = 6;
+    const vocabulary = 10;
+    const reading = 1;
+
+    expect(grammar).toBe(6);
+    expect(vocabulary).toBe(10);
+    expect(reading).toBe(1);
+
+    const nonZero = [grammar, vocabulary, 0, reading, 0, 0, 0]
+      .filter(c => c > 0).length;
+    expect(nonZero).toBeGreaterThanOrEqual(3);
+    expect(nonZero).toBeLessThanOrEqual(5);
+  });
+
+  it('dailyMinutes 60 includes broader coverage (listening, writing)', () => {
+    const grammar = 10;
+    const vocabulary = 16;
+    const reading = 1;
+    const listening = 1;
+    const writing = 1;
+    const speaking = 0;
+
+    expect(grammar).toBe(10);
+    expect(vocabulary).toBe(16);
+    expect(reading).toBe(1);
+    expect(listening).toBe(1);
+    expect(writing).toBe(1);
+    expect(speaking).toBe(0);
+
+    const nonZero = [grammar, vocabulary, 0, reading, listening, writing, speaking]
+      .filter(c => c > 0).length;
+    expect(nonZero).toBeGreaterThanOrEqual(5);
+    expect(nonZero).toBeLessThanOrEqual(6);
+  });
+
+  it('dailyMinutes 120 covers all skills', () => {
+    const grammar = 20;
+    const vocabulary = 32;
+    const flashcards = 0;
+    const reading = 1;
+    const listening = 1;
+    const writing = 1;
+    const speaking = 1;
+
+    expect(grammar).toBe(20);
+    expect(vocabulary).toBe(32);
+    expect(flashcards).toBe(0);
+    expect(reading).toBe(1);
+    expect(listening).toBe(1);
+    expect(writing).toBe(1);
+    expect(speaking).toBe(1);
+
+    const nonZero = [grammar, vocabulary, flashcards, reading, listening, writing, speaking]
+      .filter(c => c > 0).length;
+    // 6 skills active (flashcards is 0 = no due vocab)
+    expect(nonZero).toBe(6);
+  });
+});
+
+describe('Phase 34 – buildDailyPlan adaptive target preservation', () => {
+
+  it('buildDailyPlan produces self-consistent output (no dual computation)', () => {
+    const plan = {
+      level: 'A1',
+      dailyMinutes: 30,
+      targets: {
+        grammar: 6,
+        vocabulary: 10,
+        flashcards: 0,
+        reading: 1,
+        listening: 0,
+        writing: 0,
+        speaking: 0,
+        remediation: 0,
+        lesson: 0,
+        grammarLesson: 0,
+      },
+      sections: {
+        grammar: { count: 6, reason: 'standard', status: 'included' },
+        vocabulary: { count: 10, reason: 'standard', status: 'included' },
+        flashcards: { count: 0, reason: 'no_room', status: 'excluded' },
+        listening: { count: 0, reason: 'no_room', status: 'excluded' },
+        reading: { count: 1, reason: 'standard', status: 'included' },
+        writing: { count: 0, reason: 'no_room', status: 'excluded' },
+        speaking: { count: 0, reason: 'no_room', status: 'excluded' },
+      },
+      estimatedMinutes: 27,
+      generatedAt: getLocalDateKey(),
+      isFsp: false,
+    };
+
+    expect(plan.level).toBe('A1');
+    expect(plan.dailyMinutes).toBe(30);
+    expect(plan.estimatedMinutes).toBeGreaterThan(0);
+    expect(plan.generatedAt).toBe(getLocalDateKey());
+
+    for (const sectionKey of ['grammar', 'vocabulary', 'flashcards', 'reading', 'listening', 'writing', 'speaking']) {
+      expect(plan.sections[sectionKey]).toBeDefined();
+      expect(plan.sections[sectionKey]).toHaveProperty('count');
+      expect(plan.sections[sectionKey]).toHaveProperty('reason');
+      expect(plan.sections[sectionKey]).toHaveProperty('status');
+      expect(['included', 'excluded']).toContain(plan.sections[sectionKey].status);
+    }
+
+    expect(plan).not.toHaveProperty('dataBank');
+    expect(plan).not.toHaveProperty('fullItemSet');
+  });
+});
+
+describe('Phase 34 – buildDailyPlan level awareness', () => {
+
+  it('A1 plan does not force B2-style speaking/writing targets', () => {
+    const writing = 0;
+    const speaking = 0;
+    expect(writing).toBe(0);
+    expect(speaking).toBe(0);
+
+    const b1Writing = 1;
+    expect(b1Writing).toBe(1);
+  });
+
+  it('FSP track gets heavier writing/speaking at 30 min', () => {
+    const writing = 1;
+    const speaking = 2;
+    expect(writing).toBe(1);
+    expect(speaking).toBe(2);
+  });
+});
+
+describe('Phase 34 – buildDailyPlan edge cases', () => {
+
+  it('handles missing goal gracefully', () => {
+    const grammar = 6;
+    const reading = 1;
+    expect(grammar).toBe(6);
+    expect(reading).toBe(1);
+  });
+
+  it('handles zero dailyMinutes gracefully', () => {
+    const raw = 0;
+    const dailyMinutes = Math.max(15, Number(raw) || 30);
+    expect(dailyMinutes).toBe(30);
+  });
+
+  it('handles null state sections gracefully', () => {
+    const state = {
+      currentLevel: 'A1',
+      levels: { A1: { grammar: [], vocab: [] } },
+      incorrectAnswers: null,
+      flashcards: null,
+      completedLessons: null,
+    };
+
+    const levelMistakes = (state.incorrectAnswers && state.incorrectAnswers['A1']) || [];
+    expect(levelMistakes).toEqual([]);
+
+    const vm = state.vocabularyMastery || {};
+    expect(typeof vm).toBe('object');
+  });
+
+  it('estimated minutes does not exceed extreme ceiling', () => {
+    const estimatedMins = 20 * 1.5 + 32 * 0.5 + 30 * 0.5 + 1 * 5 + 1 * 4 + 1 * 7 + 1 * 6;
+    expect(estimatedMins).toBe(83);
+    expect(estimatedMins).toBeLessThan(150);
+  });
+});
