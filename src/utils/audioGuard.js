@@ -86,3 +86,38 @@ export function getExpectedAudioPath(ex) {
   const name = getExpectedAudioFileName(ex);
   return name ? `audio/listening/${name}` : '';
 }
+
+/**
+ * Get a standardized listening exercise payload used by both ListeningPage and
+ * DailyMissionPage. Ensures audio, transcript, questions, answers, and ID
+ * always come from the same item object.
+ *
+ * @param {object} item - listening exercise item from listeningData
+ * @param {string} levelId - e.g. 'A1', 'A2'
+ * @param {object} [options]
+ * @param {string} [options.voiceName] - voice name for TTS cache key
+ * @param {number} [options.speed] - playback speed for cache key
+ * @returns {{ id: string|null, level: string, title: string, script: string, questions: Array, ttsText: string, audioCacheKey: string }}
+ */
+export function getListeningExercisePayload(item, levelId, { voiceName, speed } = {}) {
+  if (!item || !item.id) {
+    return {
+      id: null,
+      level: levelId || '',
+      title: '',
+      script: '',
+      questions: [],
+      ttsText: '',
+      audioCacheKey: '',
+    };
+  }
+  return {
+    id: item.id,
+    level: levelId || '',
+    title: item.title || '',
+    script: item.script || '',
+    questions: item.questions || [],
+    ttsText: item.script || '',
+    audioCacheKey: buildAudioCacheKey(levelId || '', item, { voiceName, speed }),
+  };
+}

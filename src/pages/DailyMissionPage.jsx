@@ -66,6 +66,7 @@ import {
 } from 'lucide-react';
 import { PageShell, SectionHeader, Card, StatCard, Button, LoadingState, EmptyState, ProgressRing, PracticeStepper, LevelBadge, Badge } from '../components/ui';
 import { correctWriting, correctSpeaking, isCorrectionEnabled, transcribeAudio } from '../utils/aiCorrection';
+import { getListeningExercisePayload, computeTextSignature } from '../utils/audioGuard';
 
 function normalizeAnswer(str) {
   return (str || '').trim().toLowerCase()
@@ -926,10 +927,23 @@ export default function DailyMissionPage() {
 
   const hLrnTTS = () => {
     if (!ttsAvailable) return;
-    const items = listeningDataRef.current || [];
-    const ni = state.levels?.[lvl]?.listening?.length || 0;
-    const item = items[ni];
+    // Use the render-computed listeningItem, same as transcript and questions.
+    // This is the single source of truth for all listening display.
+    const item = listeningItem;
     if (!item || !item.script) return;
+    // Mismatch guard: verify cache key consistency before playing.
+    // If the stored cache key doesn't match the current item, log a warning
+    // (playback still proceeds with the correct item's script).
+    if (typeof window !== 'undefined' && window.sessionStorage) {
+      try {
+        const cachedKey = window.sessionStorage.getItem('dmp_listening_cache_key');
+        const currentKey = `listening:${lvl}:${item.id}:${computeTextSignature(item.script || '')}`;
+        if (cachedKey && cachedKey !== currentKey) {
+          console.info('[DailyMissionPage] Listening item changed (old cache key). TTS will use the correct script.');
+        }
+        window.sessionStorage.setItem('dmp_listening_cache_key', currentKey);
+      } catch {}
+    }
     window.speechSynthesis.cancel();
     const utter = new SpeechSynthesisUtterance(item.script);
     utter.lang = 'de-DE';
