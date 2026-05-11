@@ -7,7 +7,7 @@ import {
   completeWriting, completeSpeaking,
   recordVocabAnswer, completeGrammarLesson, getCompletedGrammarLessons,
   getNextGrammarLesson, recordStudyMinutes, recordStudyTime, addRemediationRecommendation,
-  getDueVocabWords
+  getDueVocabWords, isGrammarDueForReview, getDueGrammarItems, getNotDueGrammarItems
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
 import { recordPracticeAttempt } from '../utils/practiceProgress';
@@ -213,6 +213,71 @@ function calculateDailyTargets(levelId, state, goal) {
       targets.vocab = Math.max(targets.vocab || 0, item.count);
     } else if (item.skill in targets) {
       targets[item.skill] = item.count;
+    }
+  }
+
+  // === WEAK-AREA INJECTION ===
+  // Boost practice weight for skills where the user has mistakes or weak scores.
+  if (state.incorrectAnswers) {
+    const levelMistakes = state.incorrectAnswers[levelId] || [];
+    if (levelMistakes.length >= 3) {
+      // Count mistakes by skill
+      const skillCounts = {};
+      levelMistakes.forEach(m => {
+        const s = (m.skill || m.topic || 'general').toLowerCase();
+        skillCounts[s] = (skillCounts[s] || 0) + 1;
+      });
+      // Boost grammar practice if grammar mistakes are prominent
+      if ((skillCounts['grammar'] || 0) >= 3 && targets.estimatedMinutes >= 30) {
+        targets.grammar = Math.max(targets.grammar || 0, Math.min(targets.grammar + 4, targets.grammar * 1.5));
+      }
+      // Boost vocab/flashcards if vocab mistakes are prominent
+      if ((skillCounts['vocab'] || 0) >= 3) {
+        targets.flashcards = Math.max(targets.flashcards || 0, Math.min(targets.flashcards + 5, targets.flashcards * 1.5));
+      }
+      // Boost listening if listening mistakes are prominent (only if plan has listening)
+      if ((skillCounts['listening'] || 0) >= 2 && targets.listening > 0) {
+        targets.listening = Math.min(targets.listening + 1, 2);
+      }
+      // Boost reading if reading mistakes are prominent
+      if ((skillCounts['reading'] || 0) >= 2 && targets.reading > 0) {
+        targets.reading = Math.min(targets.reading + 1, 2);
+      }
+    }
+  }
+
+  // === ACTIVE/PASSIVE WEIGHTING BY LEVEL ===
+  // Adjust writing/speaking count based on level
+  // A1-A2: passive 70%, active 30%
+  // B1:     passive 55%, active 45%
+  // B2-C1:  passive 40%, active 60%
+  // FSP:    passive 25%, active 75%
+  const levelBase = levelId || 'A1';
+  const isFspTrack = goal?.targetLevel === 'Medical FSP' || goal?.track === 'medical-fsp';
+  let activeBoost = 0;
+  if (isFspTrack) {
+    // FSP track: writing + speaking are heavily weighted
+    if (dailyMinutes >= 30) {
+      targets.writing = Math.max(targets.writing || 0, 1);
+      targets.speaking = Math.max(targets.speaking || 0, 2);
+    }
+  } else if (['B1', 'B2', 'C1'].includes(levelBase)) {
+    // B1+ needs more active production
+    if (dailyMinutes >= 30) {
+      targets.writing = Math.max(targets.writing || 0, 1);
+    }
+    if (dailyMinutes >= 60) {
+      targets.speaking = Math.max(targets.speaking || 0, 1);
+    }
+    if (levelBase === 'B2' || levelBase === 'C1') {
+      // B2-C1: writing/speaking even in shorter plans
+      if (dailyMinutes >= 30) {
+        targets.speaking = Math.max(targets.speaking || 0, 1);
+      }
+      // Increase writing task for C1
+      if (levelBase === 'C1' && dailyMinutes >= 45) {
+        targets.writing = Math.max(targets.writing || 0, 2);
+      }
     }
   }
 
@@ -690,24 +755,30 @@ export default function DailyMissionPage() {
     } else {
       unlockedPool = all;
     }
-    const unmastered = unlockedPool.filter((x) => !ppDone.has(x.id) && !ppNotDue.has(x.id) && (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
-    const count = Math.min(cm.target, unmastered.length);
+    // Split unlocked pool into: due-for-review vs new/unlocked-for-practice
+    const allUnlocked = unlockedPool.filter((x) => !ppDone.has(x.id) && !ppNotDue.has(x.id));
+    const dueReview = allUnlocked.filter(x => isGrammarDueForReview(x.id));
+    const unmastered = allUnlocked.filter(x => !isGrammarDueForReview(x.id) && (done.includes(x.id) ? grammarMasteryRatio(x.id) < 0.7 : true));
 
-    // Prefer practice from lessons completed earlier in today's generated plan,
-    // then review concepts from lessons completed before today.
+    const availableCount = dueReview.length + unmastered.length;
+    const count = Math.min(cm.target, availableCount);
+
+    // Priority order: 1) due review items (capped at 5), 2) topic-preferred, 3) general pool
     const topicPreferred = unmastered.filter(x => context.todayLessonIds.includes(getQuestionLessonId(x)));
     const reviewPool = unmastered.filter(x => !topicPreferred.includes(x));
 
-    let selected;
-    if (topicPreferred.length >= count) {
-      selected = shuffleArray(topicPreferred).slice(0, count).map((x) => x.id);
-    } else if (topicPreferred.length > 0) {
-      selected = [
-        ...shuffleArray(topicPreferred).map((x) => x.id),
-        ...shuffleArray(reviewPool).slice(0, count - topicPreferred.length).map((x) => x.id)
-      ];
-    } else {
-      selected = shuffleArray(unmastered).slice(0, count).map((x) => x.id);
+    let selected = [];
+
+    const dueReviewCount = Math.min(dueReview.length, Math.min(count, 5));
+    selected.push(...shuffleArray(dueReview).slice(0, dueReviewCount).map((x) => x.id));
+
+    const remaining = count - selected.length;
+    if (remaining > 0) {
+      selected.push(...shuffleArray(topicPreferred).slice(0, remaining).map((x) => x.id));
+    }
+
+    if (selected.length < count) {
+      selected.push(...shuffleArray(reviewPool).slice(0, count - selected.length).map((x) => x.id));
     }
 
     const todayLessonTitles = germanLessons
@@ -768,18 +839,21 @@ export default function DailyMissionPage() {
     }
     const ppData = (() => { try { return JSON.parse(localStorage.getItem('practiceProgress_v1') || '{}'); } catch { return {}; } })();
     const ppDone = new Set(Object.entries(ppData?.vocabulary || {}).filter(([,v]) => v.status === 'completed_correct' || v.status === 'mastered').map(([id]) => id));
+    // Topic-grouped: prefer words from today's lesson first
     const todayWords = introduced.filter((x) => context.todayLessonIds.includes(getWordLessonId(x)));
     const reviewWords = introduced.filter((x) => !context.todayLessonIds.includes(getWordLessonId(x)));
     const unseenToday = todayWords.filter((x) => !done.includes(x.id) && !ppDone.has(`${lvl}_${x.id}`));
     const unseenReview = reviewWords.filter((x) => !done.includes(x.id) && !ppDone.has(`${lvl}_${x.id}`));
+
+    // Build ordered pool: topics first, then general review
     const seenWordIds = new Set();
-    const pool = [...unseenToday, ...unseenReview, ...todayWords, ...reviewWords].filter((word) => {
+    const pool = [...unseenToday, ...shuffleArray(unseenReview).slice(0, Math.max(cm.target, 5))].filter((word) => {
       if (seenWordIds.has(word.id)) return false;
       seenWordIds.add(word.id);
       return true;
     });
     const count = Math.min(cm.target, pool.length);
-    const selected = shuffleArray(pool).slice(0, count).map((x) => x.id);
+    const selected = pool.slice(0, count).map((x) => x.id);
     if (selected.length === 0) {
       setVEmpty(true);
       const ld = loadSession(lvl) || sesh;
@@ -1391,6 +1465,23 @@ export default function DailyMissionPage() {
     return false;
   };
 
+  /**
+   * Get topic-related items from an available pool.
+   * Prioritizes items whose ID/lessonId matches today's lesson topics.
+   */
+  const preferTopicItems = (items, sesh, level) => {
+    if (!items || items.length === 0) return items;
+    const context = getPracticeContext(level, sesh, getState());
+    const topicIds = context.todayLessonIds || [];
+    if (topicIds.length === 0) return items;
+    const topicMatches = items.filter(item => {
+      const itemLessonId = item.lessonId || item.lesson || item.id?.split('_').slice(0, -1).join('_') || '';
+      return topicIds.some(tid => itemLessonId.includes(tid) || item.id?.includes(tid));
+    });
+    if (topicMatches.length > 0) return topicMatches;
+    return items;
+  };
+
   // Current mission items from data (curriculum-aware) - uses state snapshots to avoid ref access during render
   const getNextListening = (level) => {
     const s = getState();
@@ -1402,12 +1493,32 @@ export default function DailyMissionPage() {
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isListeningUnlocked(item.id, s));
     }
+    // Topic-grouped: prefer items matching today's lesson topics
+    if (sesh?.planLessonIds?.length > 0) {
+      const topicSelected = preferTopicItems(items, sesh, level);
+      if (topicSelected.length > 0) items = topicSelected;
+    }
     // Sort by difficulty so easier items come first
     items.sort((a, b) => {
       const scoreA = (a.script?.length || 0) + (a.questions?.length || 0) * 50;
       const scoreB = (b.script?.length || 0) + (b.questions?.length || 0) * 50;
       return scoreA - scoreB;
     });
+    // === REVISIT LOGIC ===
+    // If no new items available, check practiceProgress for due revisits
+    if (items.length === 0) {
+      const ppDue = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const revisitItems = listeningData.filter(item => ppHasItem(ppDue, 'listening', level, item.id) || ppHasItem(ppDue, 'listening', level, item.id));
+      if (revisitItems.length > 0) {
+        return shuffleArray(revisitItems)[0];
+      }
+      // Also allow revisit of correct items after 14+ days
+      const oldCompleted = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const oldItems = listeningData.filter(item => ppHasItem(oldCompleted, 'listening', level, item.id));
+      if (oldItems.length > 0) {
+        return shuffleArray(oldItems)[0];
+      }
+    }
     return items[0] || null;
   };
   const getNextReading = (level) => {
@@ -1420,11 +1531,29 @@ export default function DailyMissionPage() {
     if (hasCurriculumMap(level)) {
       items = items.filter(item => isReadingUnlocked(item.id, s));
     }
+    // Topic-grouped: prefer items matching today's lesson topics
+    if (sesh?.planLessonIds?.length > 0) {
+      const topicSelected = preferTopicItems(items, sesh, level);
+      if (topicSelected.length > 0) items = topicSelected;
+    }
     items.sort((a, b) => {
       const scoreA = (a.text?.length || 0) + (a.questions?.length || 0) * 50;
       const scoreB = (b.text?.length || 0) + (b.questions?.length || 0) * 50;
       return scoreA - scoreB;
     });
+    // === REVISIT LOGIC ===
+    if (items.length === 0) {
+      const ppDue = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const revisitItems = readingData.filter(item => ppHasItem(ppDue, 'reading', level, item.id));
+      if (revisitItems.length > 0) {
+        return shuffleArray(revisitItems)[0];
+      }
+      const oldCompleted = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const oldItems = readingData.filter(item => ppHasItem(oldCompleted, 'reading', level, item.id));
+      if (oldItems.length > 0) {
+        return shuffleArray(oldItems)[0];
+      }
+    }
     return items[0] || null;
   };
   const getNextWriting = (level) => {
@@ -1435,9 +1564,18 @@ export default function DailyMissionPage() {
     let data = writingData.filter(item => !ppCompleted.has(item.id) && !ppNotDue.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isWritingUnlocked(item.id, s));
-      return data[0] || null;
+    } else {
+      data = data.filter(item => !completed.has(item.id));
     }
-    return data.find(item => !completed.has(item.id)) || data[0] || null;
+    // Topic-grouped: prefer items matching today's lesson topics
+    if (sesh?.planLessonIds?.length > 0) {
+      const topicMatched = data.filter(item => {
+        const itemLessonId = item.lessonId || item.lesson || item.id?.split('_').slice(0, -1).join('_') || '';
+        return sesh.planLessonIds.some(tid => itemLessonId.includes(tid) || item.id?.includes(tid));
+      });
+      if (topicMatched.length > 0) data = topicMatched;
+    }
+    return data[0] || null;
   };
   const getNextSpeaking = (level) => {
     const s = getState();
@@ -1447,9 +1585,18 @@ export default function DailyMissionPage() {
     let data = speakingData.filter(item => !ppCompleted.has(item.id) && !ppNotDue.has(item.id));
     if (hasCurriculumMap(level)) {
       data = data.filter(item => !completed.has(item.id) && isSpeakingUnlocked(item.id, s));
-      return data[0] || null;
+    } else {
+      data = data.filter(item => !completed.has(item.id));
     }
-    return data.find(item => !completed.has(item.id)) || data[0] || null;
+    // Topic-grouped: prefer items matching today's lesson topics
+    if (sesh?.planLessonIds?.length > 0) {
+      const topicMatched = data.filter(item => {
+        const itemLessonId = item.lessonId || item.lesson || item.id?.split('_').slice(0, -1).join('_') || '';
+        return sesh.planLessonIds.some(tid => itemLessonId.includes(tid) || item.id?.includes(tid));
+      });
+      if (topicMatched.length > 0) data = topicMatched;
+    }
+    return data[0] || null;
   };
   const listeningItem = cm.type === 'listening' ? getNextListening(lvl) : null;
   const readingItem = cm.type === 'reading' ? getNextReading(lvl) : null;

@@ -85,7 +85,8 @@ const defaultState = {
   // Vocabulary mastery per word: { 'A1_voc_1': { correct: 5, incorrect: 1, mastered: false, ease: 2.5, interval: 1, due: '2026-05-01', repetitions: 1 } }
   vocabularyMastery: {},
 
-  // Grammar mastery per exercise: { 'A1_gr_1': { correct: 3, incorrect: 0, mastered: true } }
+  // Grammar mastery (SM-2 scheduling) per exercise: { 'A1_gr_1': { correct: 3, incorrect: 0, mastered: false,
+  //   ease: 2.5, interval: 0, due: '2026-05-11', repetitions: 0, lapses: 0 } }
   grammarMastery: {},
 
   // Listening completed per level: { A1: ['A1_listen_1', ...] }
@@ -150,6 +151,24 @@ function normalizeState(st) {
       if (!m.due || typeof m.due !== 'string') m.due = getLocalDateKey();
       // Ensure mastered is boolean
       if (typeof m.mastered !== 'boolean') m.mastered = false;
+    });
+  }
+  // grammarMastery: ensure all entries have SM-2 fields
+  if (st.grammarMastery && typeof st.grammarMastery === 'object') {
+    Object.keys(st.grammarMastery).forEach(k => {
+      const m = st.grammarMastery[k];
+      if (!m || typeof m !== 'object') {
+        delete st.grammarMastery[k];
+        return;
+      }
+      if (typeof m.ease !== 'number') m.ease = 2.5;
+      if (typeof m.interval !== 'number') m.interval = 0;
+      if (typeof m.repetitions !== 'number') m.repetitions = 0;
+      if (typeof m.lapses !== 'number') m.lapses = 0;
+      if (typeof m.correct !== 'number') m.correct = 0;
+      if (typeof m.incorrect !== 'number') m.incorrect = 0;
+      if (typeof m.mastered !== 'boolean') m.mastered = false;
+      if (!m.due || typeof m.due !== 'string') m.due = getLocalDateKey();
     });
   }
   // Ensure flashcards object exists
@@ -744,17 +763,95 @@ export function addRemediationRecommendation(recommendation) {
 // ===== GRAMMAR MASTERY =====
 
 export function getGrammarMastery(exerciseId) {
-  return state.grammarMastery[exerciseId] || { correct: 0, incorrect: 0, mastered: false };
+  const m = state.grammarMastery[exerciseId];
+  if (!m) {
+    return { correct: 0, incorrect: 0, mastered: false, ease: 2.5, interval: 0, repetitions: 0, lapses: 0, due: getLocalDateKey() };
+  }
+  return m;
 }
 
+function computeGrammarDueDate(intervalDays) {
+  const d = new Date();
+  d.setDate(d.getDate() + intervalDays);
+  return getLocalDateKeyFromDate(d);
+}
+
+/**
+ * Record a grammar answer with SM-2 scheduling.
+ * Correct answers extend interval; incorrect answers reset it.
+ * Grammar review items respect: due, ease, interval, repetitions, lapses.
+ * Mastered threshold: 3 correct with >=70% accuracy AND ease >= 2.0.
+ */
 export function recordGrammarAnswer(exerciseId, isCorrect) {
   const mastery = getGrammarMastery(exerciseId);
   mastery.correct += isCorrect ? 1 : 0;
   mastery.incorrect += isCorrect ? 0 : 1;
-  mastery.mastered = mastery.correct >= 3 && mastery.correct / Math.max(mastery.correct + mastery.incorrect, 1) >= 0.7;
+
+  if (isCorrect) {
+    // SM-2 style scheduling for correct answers
+    if (mastery.repetitions === 0) {
+      mastery.interval = 1;
+    } else if (mastery.repetitions === 1) {
+      mastery.interval = 3;
+    } else {
+      mastery.interval = Math.round(mastery.interval * (mastery.ease || 2.5));
+    }
+    mastery.repetitions += 1;
+    mastery.ease = Math.min(3.0, (mastery.ease || 2.5) + 0.15);
+  } else {
+    // Incorrect: reset interval, increase lapses
+    mastery.lapses = (mastery.lapses || 0) + 1;
+    mastery.interval = 0;
+    mastery.repetitions = 0;
+    mastery.ease = Math.max(1.3, (mastery.ease || 2.5) - 0.2);
+  }
+
+  // Mastered: 3+ correct, >=70% accuracy, ease >= 2.0
+  const total = Math.max(mastery.correct + mastery.incorrect, 1);
+  mastery.mastered = mastery.correct >= 3 && (mastery.correct / total) >= 0.7 && (mastery.ease || 2.5) >= 2.0;
+
+  // Set due date for next review
+  mastery.due = computeGrammarDueDate(mastery.interval);
+
   state.grammarMastery[exerciseId] = mastery;
   saveState(state);
   return mastery;
+}
+
+/**
+ * Get grammar items that are due for review (not mastered and due <= today).
+ */
+export function getDueGrammarItems(allExerciseIds) {
+  const today = getLocalDateKey();
+  return allExerciseIds.filter(id => {
+    const m = state.grammarMastery[id];
+    if (!m) return false; // never answered = not due for review
+    if (m.mastered && m.interval > 30) return false; // well-mastered: skip
+    return m.due && m.due <= today;
+  });
+}
+
+/**
+ * Check if a grammar item is due for review.
+ */
+export function isGrammarDueForReview(exerciseId) {
+  const m = state.grammarMastery[exerciseId];
+  if (!m) return false;
+  if (m.mastered && m.interval > 30) return false;
+  const today = getLocalDateKey();
+  return m.due && m.due <= today;
+}
+
+/**
+ * Get grammar items that are NOT due for review (future due date).
+ */
+export function getNotDueGrammarItems(allExerciseIds) {
+  const today = getLocalDateKey();
+  return allExerciseIds.filter(id => {
+    const m = state.grammarMastery[id];
+    if (!m) return true; // never answered = not due (new item)
+    return m.due && m.due > today;
+  });
 }
 
 // ===== LISTENING / READING COMPLETION =====

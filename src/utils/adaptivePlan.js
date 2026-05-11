@@ -136,8 +136,47 @@ export function getGoalEstimate(state, goal) {
   }).length;
   const mistakeBacklog = Object.values(state.incorrectAnswers || {}).reduce((sum, arr) => sum + countArray(arr), 0);
 
+  // Performance factor: adjust estimate based on user's typical accuracy
+  // Calculate average accuracy across all skills
+  let totalAnswers = 0;
+  let totalCorrect = 0;
+  for (const level of levels) {
+    const prog = state.levels?.[level] || {};
+    for (const key of ['grammar', 'vocab']) {
+      if (Array.isArray(prog[key])) {
+        prog[key].forEach(item => {
+          if (item && typeof item === 'object' && typeof item.correct === 'number') {
+            totalAnswers += item.correct + (item.incorrect || 0);
+            totalCorrect += item.correct;
+          }
+        });
+      }
+    }
+    // Also check grammarMastery
+    if (state.grammarMastery) {
+      Object.values(state.grammarMastery).forEach(m => {
+        if (m && typeof m.correct === 'number') {
+          totalAnswers += m.correct + (m.incorrect || 0);
+          totalCorrect += m.correct;
+        }
+      });
+    }
+  }
+  const accuracy = totalAnswers > 0 ? totalCorrect / totalAnswers : 0.7;
+  // Performance multiplier: high accuracy (>=85%) = 0.9x (faster), low (<50%) = 1.4x (slower)
+  let performanceFactor = 1.0;
+  if (accuracy >= 0.85) performanceFactor = 0.9;
+  else if (accuracy >= 0.80) performanceFactor = 0.95;
+  else if (accuracy >= 0.65) performanceFactor = 1.0;
+  else if (accuracy >= 0.50) performanceFactor = 1.15;
+  else performanceFactor = 1.4;
+
+  // Overdue review backlog: each overdue item adds a penalty
+  const overdueBacklog = Math.min(Math.max(0, dueFlashcards - 20), 100);
+  const backlogPenalty = overdueBacklog * 0.5; // half minute per overdue item
+
   const minutesRemaining =
-    remaining.lesson * MINUTES.lesson +
+    (remaining.lesson * MINUTES.lesson +
     remaining.grammar * MINUTES.grammar +
     remaining.vocabulary * MINUTES.vocabulary +
     remaining.reading * MINUTES.reading +
@@ -145,7 +184,7 @@ export function getGoalEstimate(state, goal) {
     remaining.writing * MINUTES.writing +
     remaining.speaking * MINUTES.speaking +
     Math.min(dueFlashcards, 80) * 1 +
-    Math.min(mistakeBacklog, 40) * 3;
+    Math.min(mistakeBacklog, 40) * 3) * performanceFactor + backlogPenalty;
 
   const daysNeeded = Math.max(1, Math.ceil(minutesRemaining / dailyMinutes));
   const predictedFinishDate = getLocalDateString(addDays(new Date(), daysNeeded));
