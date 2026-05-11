@@ -5,7 +5,7 @@
  * level-specific JSON files into separate chunks.
  *
  * Usage:
- *   import { loadLevelVocabulary, clearDataCache } from '../utils/dataLoaders';
+ *   import { loadLevelVocabulary, loadAllVocabulary, clearDataCache } from '../utils/dataLoaders';
  *   const vocab = await loadLevelVocabulary('A1');
  */
 
@@ -140,6 +140,36 @@ export async function loadLevelPracticeData(level) {
       loadLevelSpeaking(level),
     ]);
   return { vocabulary, grammar, reading, listening, writing, speaking };
+}
+
+/** Load all vocabulary across all levels. Returns { A1: [...], A2: [...], B1: [...], B2: [...], C1: [...] }. */
+export async function loadAllVocabulary() {
+  const key = 'vocab_all';
+  if (cache.has(key)) return cache.get(key);
+  const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  const results = await Promise.all(levels.map(l => loadLevelVocabulary(l)));
+  const data = {};
+  levels.forEach((l, i) => { data[l] = results[i]; });
+  cache.set(key, data);
+  return data;
+}
+
+/**
+ * Preload vocabulary for the given level (async fire-and-forget).
+ * Useful for predictive loading before the user navigates to a vocab page.
+ */
+export function preloadVocabularyForCurrentLevel(level) {
+  loadLevelVocabulary(level).catch(() => {});
+}
+
+/** Load FSP vocabulary via dynamic import. Returns array of word objects. */
+export async function loadFspVocabulary() {
+  const key = 'fsp_vocab';
+  if (cache.has(key)) return cache.get(key);
+  const mod = await import(`../data/fspVocabulary.json`);
+  const data = mod.default || mod;
+  cache.set(key, data);
+  return data;
 }
 
 /** Clear all cached data. Useful on level change. */

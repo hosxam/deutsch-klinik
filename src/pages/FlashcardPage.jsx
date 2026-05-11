@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useEffect } from 'react';
-import { getState, updateLevelProgress, recordVocabAnswer, getDailyFlashcardQueue, getVocabMastery, getLocalDateKey } from '../utils/store';
-import fullVocabData from '../data/germanVocabulary.json';
+import { getState, updateLevelProgress, recordVocabAnswer, getLocalDateKey } from '../utils/store';
+import { loadLevelVocabulary, loadAllVocabulary } from '../utils/dataLoaders';
 import { RefreshCw, ThumbsUp, ThumbsDown, RotateCcw, Search, X, BookMarked } from 'lucide-react';
 import { PageShell, SectionHeader, Card, Button, LevelBadge, LoadingState } from '../components/ui';
 
@@ -213,10 +213,7 @@ function getQueueStats(wordIds) {
   return { dueCount, newCount, mistakeCount };
 }
 
-// All words from all levels with level info attached
-const allWords = LEVELS.flatMap(level =>
-  (fullVocabData[level] || []).map(w => ({ ...w, _level: level }))
-);
+// allWords is now loaded dynamically via loadAllVocabulary() inside the component
 
 export default function FlashcardPage() {
   const { levelId } = useParams();
@@ -229,10 +226,42 @@ export default function FlashcardPage() {
   const [sessionSize, setSessionSize] = useState(DEFAULT_SESSION_SIZE);
   const [sessionStarted, setSessionStarted] = useState(false);
 
+  // Dynamic vocabulary loading
+  const [vocabData, setVocabData] = useState(null);
+  const [vocabLoading, setVocabLoading] = useState(true);
+
   // Search & filter state
   const [search, setSearch] = useState('');
   const [levelFilter, setLevelFilter] = useState(levelId || 'all');
   const [medicalOnly, setMedicalOnly] = useState(false);
+
+  // Load vocabulary for current level filter
+  useEffect(() => {
+    let cancelled = false;
+    setVocabLoading(true);
+    async function load() {
+      try {
+        let data;
+        if (levelFilter === 'all') {
+          data = await loadAllVocabulary();
+        } else {
+          const arr = await loadLevelVocabulary(levelFilter);
+          data = { [levelFilter]: arr };
+        }
+        if (!cancelled) {
+          setVocabData(data);
+          setVocabLoading(false);
+        }
+      } catch {
+        if (!cancelled) {
+          setVocabData(null);
+          setVocabLoading(false);
+        }
+      }
+    }
+    load();
+    return () => { cancelled = true; };
+  }, [levelFilter]);
 
   // When route levelId changes, sync the level filter
   useEffect(() => {
@@ -241,9 +270,14 @@ export default function FlashcardPage() {
 
   // All words for the current level filter
   const sourceWords = useMemo(() => {
-    if (levelFilter === 'all') return allWords;
-    return (fullVocabData[levelFilter] || []).map(w => ({ ...w, _level: levelFilter }));
-  }, [levelFilter]);
+    if (!vocabData) return [];
+    if (levelFilter === 'all') {
+      return LEVELS.flatMap(level =>
+        (vocabData[level] || []).map(w => ({ ...w, _level: level }))
+      );
+    }
+    return (vocabData[levelFilter] || []).map(w => ({ ...w, _level: levelFilter }));
+  }, [levelFilter, vocabData]);
 
   // Apply search + medical filter
   const searchedWords = useMemo(() => {
@@ -329,6 +363,14 @@ export default function FlashcardPage() {
       cursor: 'pointer', fontSize: '0.75rem', fontWeight: active ? 600 : 400,
     }),
   };
+
+  if (vocabLoading) {
+    return (
+      <PageShell maxWidth="max-w-4xl">
+        <LoadingState message="Loading vocabulary..." />
+      </PageShell>
+    );
+  }
 
   if (sourceWords.length === 0 && levelFilter !== 'all') {
     return (
@@ -436,7 +478,7 @@ export default function FlashcardPage() {
             <select value={levelFilter} onChange={e => setLevelFilter(e.target.value)} style={s.select}>
               <option value="all">All Levels</option>
               {LEVELS.map(l => (
-                <option key={l} value={l}>{l} ({(fullVocabData[l] || []).length})</option>
+                <option key={l} value={l}>{l} ({((vocabData && vocabData[l]) || []).length})</option>
               ))}
             </select>
             <button onClick={() => setMedicalOnly(!medicalOnly)} style={s.filterBtn(medicalOnly)}>

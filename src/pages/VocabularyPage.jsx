@@ -1,9 +1,9 @@
 import { useParams, Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import {  updateLevelProgress, recordVocabAnswer, getVocabMastery } from '../utils/store';
-import vocabData from '../data/germanVocabulary.json';
+import { loadAllVocabulary } from '../utils/dataLoaders';
 import LevelLock from '../components/LevelLock';
-import { Shuffle, CheckCircle, Brain, Search, Filter, X, Hash, RotateCcw, BookMarked } from 'lucide-react';
+import { Shuffle, CheckCircle, Brain, Search, Filter, X, RotateCcw, BookMarked } from 'lucide-react';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -116,9 +116,7 @@ function displayWord(word) {
   return { display: word.word, article: wordNounArticle(word) };
 }
 
-const allWords = LEVELS.flatMap(level =>
-  (vocabData[level] || []).map(w => ({ ...w, _level: level }))
-);
+// allWords is now loaded dynamically via loadAllVocabulary() inside the component
 
 function validateFilter(key, value, allowed) {
   if (value === undefined || value === null) return false;
@@ -135,6 +133,31 @@ export default function VocabularyPage() {
 
   // In daily mode, start in practice mode with a limited set of words
   const initialMode = isDaily ? 'quiz' : 'browse';
+
+  const [vocabData, setVocabData] = useState(null);
+  const [vocabLoading, setVocabLoading] = useState(true);
+
+  // Load vocabulary dynamically
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      setVocabLoading(true);
+      try {
+        const data = await loadAllVocabulary();
+        if (!cancelled) {
+          setVocabData(data);
+          setVocabLoading(false);
+        }
+      } catch {
+        if (!cancelled) {
+          setVocabData(null);
+          setVocabLoading(false);
+        }
+      }
+    }
+    load();
+    return () => { cancelled = true; };
+  }, []);
 
   const [mode, setMode] = useState(initialMode);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -187,9 +210,14 @@ export default function VocabularyPage() {
 
   // Derive which words to show based on level filter
   const levelWords = useMemo(() => {
-    if (levelFilter === 'all') return allWords;
+    if (!vocabData) return [];
+    if (levelFilter === 'all') {
+      return LEVELS.flatMap(level =>
+        (vocabData[level] || []).map(w => ({ ...w, _level: level }))
+      );
+    }
     return (vocabData[levelFilter] || []).map(w => ({ ...w, _level: levelFilter }));
-  }, [levelFilter]);
+  }, [levelFilter, vocabData]);
 
   // Validate lesson filter when level changes
   const validLessonFilter = useMemo(() => {
@@ -333,8 +361,8 @@ export default function VocabularyPage() {
   };
 
   // Quiz mode
+  const allLevelWords = vocabData ? (vocabData[levelId] || []) : [];
   if (mode === 'quiz') {
-    const allLevelWords = vocabData[levelId] || [];
     // In daily mode, pick dailyLimit words; otherwise use all words
     const words = isDaily
       ? [...allLevelWords].sort(() => Math.random() - 0.5).slice(0, Math.min(dailyLimit, allLevelWords.length))
@@ -407,7 +435,18 @@ export default function VocabularyPage() {
   }
 
   // Browse mode
-  const words = (vocabData[levelId] || []);
+  const words = vocabData ? (vocabData[levelId] || []) : [];
+
+  // Loading state
+  if (vocabLoading) {
+    return (
+      <LevelLock levelId={levelId}>
+      <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
+        <p style={{ color: 'var(--text-muted)' }}>Loading vocabulary...</p>
+      </div>
+      </LevelLock>
+    );
+  }
 
   // Empty vocab check
   if (words.length === 0) {
@@ -515,7 +554,7 @@ export default function VocabularyPage() {
         >
           <option value="all">All Levels</option>
           {LEVELS.map(l => (
-            <option key={l} value={l}>{l} ({(vocabData[l] || []).length})</option>
+            <option key={l} value={l}>{l} ({((vocabData && vocabData[l]) || []).length})</option>
           ))}
         </select>
 
