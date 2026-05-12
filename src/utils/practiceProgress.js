@@ -116,3 +116,55 @@ export function getNotDuePracticeItems(skill) {
     .filter(([, v]) => v.status === 'completed_correct' && v.dueDate && v.dueDate > today)
     .map(([id]) => id);
 }
+
+/**
+ * Mark a practice item as having been shown for revisit.
+ * Sets revisitDone=true and extends the next dueDate so the item does not
+ * reappear immediately.
+ */
+export function markRevisitDone(skill, itemId) {
+  const data = load();
+  if (!data[skill] || !data[skill][itemId]) return;
+  data[skill][itemId].revisitDone = true;
+  data[skill][itemId].revisitDate = getTodayDateKey();
+  // Extend the due date: 7 days for future cooldown
+  data[skill][itemId].dueDate = addDays(7);
+  save(data);
+}
+
+/**
+ * Get old completed items (14+ days cooldown) that are due for revisit.
+ * Returns entries where status is completed_correct/mastered, dueDate <= today,
+ * and revisitDone is NOT true (or not set).
+ */
+export function getOldCompletedDueRevisit(skill) {
+  const data = load();
+  const skillData = data[skill] || {};
+  const today = getTodayDateKey();
+  return Object.entries(skillData)
+    .filter(([, v]) =>
+      (v.status === 'completed_correct' || v.status === 'mastered') &&
+      v.dueDate &&
+      v.dueDate <= today &&
+      !v.revisitDone
+    )
+    .map(([id]) => id);
+}
+
+/**
+ * Get due-for-revisit items (completed_incorrect with past dueDate).
+ * Filters ONLY items that have NOT been marked revisitDone.
+ */
+export function getDueIncorrectRevisit(skill) {
+  const data = load();
+  const skillData = data[skill] || {};
+  const today = getTodayDateKey();
+  return Object.entries(skillData)
+    .filter(([, v]) =>
+      v.status === 'completed_incorrect' &&
+      v.dueDate &&
+      v.dueDate <= today &&
+      !v.revisitDone
+    )
+    .map(([id]) => id);
+}

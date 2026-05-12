@@ -10,7 +10,7 @@ import {
   getDueVocabWords, isGrammarDueForReview, getDueGrammarItems, getNotDueGrammarItems
 } from '../utils/store';
 import { getStudyGoal } from '../components/StudyGoalTracker';
-import { recordPracticeAttempt } from '../utils/practiceProgress';
+import { recordPracticeAttempt, markRevisitDone } from '../utils/practiceProgress';
 
 import { MINUTES, getRemediationRecommendation } from '../utils/adaptivePlan';
 import { buildDailyPlan } from '../utils/buildDailyPlan';
@@ -1413,16 +1413,26 @@ export default function DailyMissionPage() {
     // === REVISIT LOGIC ===
     // If no new items available, check practiceProgress for due revisits
     if (items.length === 0) {
-      const ppDue = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
-      const revisitItems = listeningData.filter(item => ppHasItem(ppDue, 'listening', level, item.id) || ppHasItem(ppDue, 'listening', level, item.id));
+      const ppDue = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr).map(([id]) => id));
+      let revisitItems = listeningData.filter(item => ppHasItem(ppDue, 'listening', level, item.id));
+      // Prefer topic-matched revisits
+      const topicRevisits = revisitItems.filter(item => {
+        const lid = item.lessonId || '';
+        return sesh?.planLessonIds?.some(tid => lid === tid || lid.includes(tid));
+      });
+      if (topicRevisits.length > 0) revisitItems = topicRevisits;
       if (revisitItems.length > 0) {
-        return shuffleArray(revisitItems)[0];
+        const item = shuffleArray(revisitItems)[0];
+        markRevisitDone('listening', `listening_${level}_${item.id}`);
+        return item;
       }
       // Also allow revisit of correct items after 14+ days
       const oldCompleted = new Set(Object.entries(practiceProgressData?.listening || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
       const oldItems = listeningData.filter(item => ppHasItem(oldCompleted, 'listening', level, item.id));
       if (oldItems.length > 0) {
-        return shuffleArray(oldItems)[0];
+        const item = shuffleArray(oldItems)[0];
+        markRevisitDone('listening', `listening_${level}_${item.id}`);
+        return item;
       }
     }
     return items[0] || null;
@@ -1449,15 +1459,25 @@ export default function DailyMissionPage() {
     });
     // === REVISIT LOGIC ===
     if (items.length === 0) {
-      const ppDue = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
-      const revisitItems = readingData.filter(item => ppHasItem(ppDue, 'reading', level, item.id));
+      const ppDue = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr).map(([id]) => id));
+      let revisitItems = readingData.filter(item => ppHasItem(ppDue, 'reading', level, item.id));
+      // Prefer topic-matched revisits
+      const topicRevisits = revisitItems.filter(item => {
+        const lid = item.lessonId || '';
+        return sesh?.planLessonIds?.some(tid => lid === tid || lid.includes(tid));
+      });
+      if (topicRevisits.length > 0) revisitItems = topicRevisits;
       if (revisitItems.length > 0) {
-        return shuffleArray(revisitItems)[0];
+        const item = shuffleArray(revisitItems)[0];
+        markRevisitDone('reading', `reading_${level}_${item.id}`);
+        return item;
       }
       const oldCompleted = new Set(Object.entries(practiceProgressData?.reading || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
       const oldItems = readingData.filter(item => ppHasItem(oldCompleted, 'reading', level, item.id));
       if (oldItems.length > 0) {
-        return shuffleArray(oldItems)[0];
+        const item = shuffleArray(oldItems)[0];
+        markRevisitDone('reading', `reading_${level}_${item.id}`);
+        return item;
       }
     }
     return items[0] || null;
@@ -1481,6 +1501,31 @@ export default function DailyMissionPage() {
       });
       if (topicMatched.length > 0) data = topicMatched;
     }
+    // === REVISIT LOGIC ===
+    // If no new items available, check practiceProgress for due revisits
+    if (data.length === 0) {
+      const ppDue = new Set(Object.entries(practiceProgressData?.writing || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr).map(([id]) => id));
+      let revisitItems = writingData.filter(item => ppHasItem(ppDue, 'writing', level, item.id));
+      // Prefer topic-matched revisits
+      const topicRevisits = revisitItems.filter(item => {
+        const lid = item.lessonId || '';
+        return sesh?.planLessonIds?.some(tid => lid === tid || lid.includes(tid));
+      });
+      if (topicRevisits.length > 0) revisitItems = topicRevisits;
+      if (revisitItems.length > 0) {
+        const item = shuffleArray(revisitItems)[0];
+        markRevisitDone('writing', `writing_${level}_${item.id}`);
+        return item;
+      }
+      // Also allow revisit of correct items after 14+ days
+      const oldCompleted = new Set(Object.entries(practiceProgressData?.writing || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const oldItems = writingData.filter(item => ppHasItem(oldCompleted, 'writing', level, item.id));
+      if (oldItems.length > 0) {
+        const item = shuffleArray(oldItems)[0];
+        markRevisitDone('writing', `writing_${level}_${item.id}`);
+        return item;
+      }
+    }
     return data[0] || null;
   };
   const getNextSpeaking = (level) => {
@@ -1501,6 +1546,31 @@ export default function DailyMissionPage() {
         return sesh.planLessonIds.some(tid => itemLessonId.includes(tid) || item.id?.includes(tid));
       });
       if (topicMatched.length > 0) data = topicMatched;
+    }
+    // === REVISIT LOGIC ===
+    // If no new items available, check practiceProgress for due revisits
+    if (data.length === 0) {
+      const ppDue = new Set(Object.entries(practiceProgressData?.speaking || {}).filter(([,v]) => v.status === 'completed_incorrect' && v.dueDate && v.dueDate <= todayStr).map(([id]) => id));
+      let revisitItems = speakingData.filter(item => ppHasItem(ppDue, 'speaking', level, item.id));
+      // Prefer topic-matched revisits
+      const topicRevisits = revisitItems.filter(item => {
+        const lid = item.lessonId || '';
+        return sesh?.planLessonIds?.some(tid => lid === tid || lid.includes(tid));
+      });
+      if (topicRevisits.length > 0) revisitItems = topicRevisits;
+      if (revisitItems.length > 0) {
+        const item = shuffleArray(revisitItems)[0];
+        markRevisitDone('speaking', `speaking_${level}_${item.id}`);
+        return item;
+      }
+      // Also allow revisit of correct items after 14+ days
+      const oldCompleted = new Set(Object.entries(practiceProgressData?.speaking || {}).filter(([,v]) => (v.status === 'completed_correct' || v.status === 'mastered') && v.dueDate && v.dueDate <= todayStr && !v.revisitDone).map(([id]) => id));
+      const oldItems = speakingData.filter(item => ppHasItem(oldCompleted, 'speaking', level, item.id));
+      if (oldItems.length > 0) {
+        const item = shuffleArray(oldItems)[0];
+        markRevisitDone('speaking', `speaking_${level}_${item.id}`);
+        return item;
+      }
     }
     return data[0] || null;
   };
@@ -2362,9 +2432,20 @@ export default function DailyMissionPage() {
           const allIds = levelWords.map(w => `${lvl}_${w.id}`);
           // Use shared SRS queue: includes due reviews, mistake-priority cards, and new cards
           const dueIds = new Set(getDueVocabWords(allIds));
-          const deck = levelWords
-            .filter(w => dueIds.has(`${lvl}_${w.id}`))
-            .slice(0, target);
+          let dueWords = levelWords.filter(w => dueIds.has(`${lvl}_${w.id}`));
+          // Topic-grouped: prefer flashcard words matching today's lesson topics
+          if (sesh?.planLessonIds?.length > 0 && dueWords.length > 0) {
+            const topicWords = dueWords.filter(w => {
+              const wid = w.id || '';
+              return sesh.planLessonIds.some(tid => wid.includes(tid) || (w.lessonId && w.lessonId.includes(tid)));
+            });
+            if (topicWords.length > 0) {
+              // Take topic words first, fill remaining slots from pool
+              const remaining = dueWords.filter(w => !topicWords.includes(w));
+              dueWords = [...topicWords, ...remaining];
+            }
+          }
+          const deck = dueWords.slice(0, target);
           // Async set outside render - use effect-equivalent timeout
           setTimeout(() => setFcCards(deck), 0);
         }
